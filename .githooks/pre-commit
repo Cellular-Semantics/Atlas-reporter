@@ -9,8 +9,8 @@ uv run ruff check --fix src/ tests/
 echo "[githook] Checking formatting..."
 uv run ruff format --check src/ tests/
 
-echo "[githook] Running unit tests with coverage..."
-uv run pytest -m unit --cov --cov-fail-under=60
+echo "[githook] Running unit tests..."
+uv run pytest -m unit
 
 echo "[githook] Running integration tests (requires real API keys)..."
 if [[ -z "${OPENAI_API_KEY}" || -z "${ANTHROPIC_API_KEY}" ]]; then

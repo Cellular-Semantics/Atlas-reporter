@@ -15,7 +15,6 @@ The script is idempotent — safe to run more than once.
 from __future__ import annotations
 
 import argparse
-import re
 import sys
 from pathlib import Path
 
@@ -113,7 +112,8 @@ def graduate_to_ring1() -> None:
     else:
         if _patch(
             pyproject,
-            "# Ring 0 default — run scripts/graduate-ring.py --to 1 to raise this to 80\nfail_under = 60",
+            "# Ring 0 default — run scripts/graduate-ring.py"
+            " --to 1 to raise this to 80\nfail_under = 60",
             "# Ring 1 enforcement\nfail_under = 80",
             "pyproject.toml: raise coverage fail_under 60 → 80",
         ):

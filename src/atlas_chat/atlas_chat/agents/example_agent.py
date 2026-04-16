@@ -1,7 +1,8 @@
 """Example agent demonstrating infrastructure patterns.
 
 EXAMPLE: Replace this entire file with your domain-specific agent logic.
-INFRASTRUCTURE: The patterns shown here (schema-first, prompt-first, co-located prompts) are standard.
+INFRASTRUCTURE: The patterns shown here (schema-first, prompt-first,
+co-located prompts) are standard.
 """
 
 from __future__ import annotations
@@ -96,8 +97,8 @@ def run_example_agent(input_data: ExampleInput) -> ExampleOutput:
     # - Return validated output
 
     # For now, just demonstrate the pattern
-    system_prompt = prompt_config["system_prompt"]
-    user_prompt = prompt_config["user_prompt"].format(query=input_data.query)
+    _ = prompt_config["system_prompt"]
+    _ = prompt_config["user_prompt"].format(query=input_data.query)
 
     # Simulated processing (replace with real logic)
     result = ExampleOutput(
@@ -106,7 +107,9 @@ def run_example_agent(input_data: ExampleInput) -> ExampleOutput:
         metadata={
             "max_results": input_data.max_results,
             "prompt_used": "example_agent.prompt.yaml",
-            "model": prompt_config.get("presets", {}).get("openai-gpt4", {}).get("model", "unknown"),
+            "model": prompt_config.get("presets", {})
+            .get("openai-gpt4", {})
+            .get("model", "unknown"),
         },
     )
 
@@ -127,12 +130,4 @@ def validate_agent_prerequisites() -> bool:
     """
     # Check prompt file exists
     prompt_path = Path(__file__).parent / "example_agent.prompt.yaml"
-    if not prompt_path.exists():
-        return False
-
-    # Add other prerequisite checks as needed
-    # - API keys present
-    # - Required services available
-    # - Configuration valid
-
-    return True
+    return prompt_path.exists()

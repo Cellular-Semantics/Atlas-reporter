@@ -1,0 +1,8 @@
+{
+  "label": "c1",
+  "resolved_names": ["Undifferentiated keratinocyte", "Basal keratinocyte"],
+  "scope": "adult",
+  "tissue_context": "adult skin",
+  "confidence": "high",
+  "evidence": "Reynolds et al. (2021) identified 34 cell states in healthy adult skin by scRNA-seq, including four keratinocyte groups: undifferentiated, proliferating, differentiated, and inflammatory differentiated. The c1-c8 labels correspond to fine Leiden clusters within keratinocytes in the adult skin dataset. c1 belongs to the undifferentiated keratinocyte group, characterised by expression of basal epidermal proteins KRT5 and KRT14, abundance in the CD49fhi FACS gate, and expression of stem cell genes TP63, PPP3CA and CAV1/2. These adult skin annotations were integrated into Gopee et al. (2024) for cross-age comparative analysis."
+}

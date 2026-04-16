@@ -47,7 +47,7 @@ def main() -> int:
     # Check pattern: projects/{name}/reports/{cell_type}.md
     if len(parts) <= proj_idx + 3:
         return 0
-    if parts[proj_idx + 2] != "reports" or not file_path.suffix == ".md":
+    if parts[proj_idx + 2] != "reports" or file_path.suffix != ".md":
         return 0
 
     # Derive traversal_dir from the report path

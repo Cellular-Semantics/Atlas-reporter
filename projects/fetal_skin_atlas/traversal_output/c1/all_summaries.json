@@ -1,0 +1,89 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "We characterized four groups of keratinocytes: undifferentiated, proliferating, differentiated and inflammatory differentiated cells (Differentiated KC*)",
+      "Undifferentiated keratinocytes transcribe basal epidermal proteins (KRT5, KRT14) and are abundant in the CD49fhi FACS gate",
+      "Force-directed graph (FDG) and PAGA analyses reveal dual inferred differentiation trajectories from the stem cell genes (TP63, PPP3CA and CAV1/2)-enriched basal keratinocytes into terminally differentiated keratinocytes expressing CNFN, FLG and IVL",
+      "One arm expresses high levels of lamellar body (LB)-related transcripts such as ABCA12, CKAP4 and CLIP1 that characterize late epidermal differentiation and the other arm lower levels of LB-related transcripts",
+      "IRF1 and SOX9, transcription factors that are differentially expressed in the two pathways, mark distinct cells by immunofluorescence analysis of healthy skin"
+    ],
+    "summary": "Reynolds et al. classified adult skin keratinocytes into four groups. c1 belongs to the undifferentiated group, which expresses basal markers KRT5 and KRT14. These cells are enriched for stem cell genes (TP63, PPP3CA, CAV1/2) and sit at the origin of dual differentiation trajectories toward terminal differentiation. The two trajectories are distinguished by levels of lamellar body transcripts and differentially expressed transcription factors IRF1 and SOX9.",
+    "categories": ["markers", "function", "development"],
+    "source_corpus_id": "CorpusId:231666430",
+    "source_title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "source_authors": "G. Reynolds et al.",
+    "source_year": 2021,
+    "snippet": "We characterized four groups of keratinocytes: undifferentiated, proliferating, differentiated and inflammatory differentiated cells (Differentiated KC*) (Fig. 4A). Undifferentiated keratinocytes transcribe basal epidermal proteins (KRT5, KRT14) and are abundant in the CD49fhi FACS gate (Fig. 1C). Proliferating keratinocytes (CDK1+,PCNA+) have lower expression of suprabasal cell transcripts e.g. KRT1, KRT10 that characterize differentiated keratinocytes (Fig. 4B). Inflammatory differentiated keratinocytes co-express lower levels of undifferentiated (TP63, ITGA6) and differentiated (KRT1, KRT10) transcripts but additionally express ICAM1, TNF and CCL20 (Fig. 4B). Force-directed graph (FDG) and PAGA analyses reveal dual inferred differentiation trajectories from the stem cell genes (TP63, PPP3CA and CAV1/2)-enriched basal keratinocytes into terminally differentiated keratinocytes expressing CNFN, FLG and IVL. One arm expresses high levels of lamellar body (LB)-related transcripts such as ABCA12, CKAP4 and CLIP1 that characterize late epidermal differentiation and the other arm lower levels of LB-related transcripts. IRF1 and SOX9, transcription factors that are differentially expressed in the two pathways, mark distinct cells by immunofluorescence analysis of healthy skin."
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "undifferentiated basal keratinocytes had high expression of basal epidermal proteins (KRT5 and KRT14), hemidesmosome molecules [integrin alpha-6, ITGA6; and collagen alpha-1 (XVII) chain, COL17A1] and stemness factor (tumor protein 63, TP63)",
+      "Cell subtype identification of keratinocytes was consistent across various papers"
+    ],
+    "summary": "Liu et al. reviewed multiple scRNA-seq studies and confirmed that undifferentiated basal keratinocytes are consistently identified across studies by high expression of KRT5, KRT14, ITGA6, COL17A1 and TP63. Three main keratinocyte subpopulations map to the stereotyped differentiation process: basal, spinous, and granular.",
+    "categories": ["markers", "development"],
+    "source_corpus_id": "CorpusId:249628397",
+    "source_title": "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells",
+    "source_authors": "Baoyi Liu et al.",
+    "source_year": 2022,
+    "snippet": "Cell subtype identification of keratinocytes was consistent across various papers. Three subpopulations were separated corresponding to their stereotyped differentiation process in the normal epidermis: undifferentiated basal keratinocytes had high expression of basal epidermal proteins (KRT5 and KRT14), hemidesmosome molecules [integrin alpha-6, ITGA6; and collagen alpha-1 (XVII) chain, COL17A1] and stemness factor (tumor protein 63, TP63); upper spinous keratinocytes expressed suprabasal cell transcripts (KRT1 and KRT10); and granular keratinocytes expressed KRT2, KLK11, and late differentiation markers (Loricrin, LOR; Filaggrin, FLG; and serine protease inhibitor Kazal-type 5, SPINK5)."
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "the authors identified a cluster of undifferentiated (KRT14+ and KRT5+), one of differentiated (KRT1+ and KRT10+), and one of proliferating cells(CDK1+ and PCNA+)",
+      "Trajectory analysis suggested that the undifferentiated cluster contains SCs, which give rise to proliferating progenitors and differentiated cells"
+    ],
+    "summary": "Polito et al. reviewed single-cell studies of the human epidermis, confirming the identification of undifferentiated (KRT14+/KRT5+), differentiated (KRT1+/KRT10+) and proliferating (CDK1+/PCNA+) keratinocyte clusters. Trajectory analysis positions the undifferentiated cluster as containing stem cells that give rise to both progenitors and differentiated cells.",
+    "categories": ["markers", "function", "development"],
+    "source_corpus_id": "CorpusId:258648987",
+    "source_title": "Decoding the Human Epidermal Complexity at Single-Cell Resolution",
+    "source_authors": "Maria Pia Polito et al.",
+    "source_year": 2023,
+    "snippet": "Among the adult keratinocytes, the authors identified a cluster of undifferentiated (KRT14+ and KRT5+), one of differentiated (KRT1+ and KRT10+), and one of proliferating cells(CDK1+ and PCNA+), as previously reported. Fetal-derived keratinocytes differed from the adult ones due to the expression of KRT8, KRT18, and KRT19. Trajectory analysis suggested that the undifferentiated cluster contains SCs, which give rise to proliferating progenitors and differentiated cells."
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "Undifferentiated keratinocytes in the interfollicular epidermis originate from mitotically active cells in the basal layer of the epidermis, where two distinct cell subpopulations, namely keratinocyte stem cells and transit amplifying cells, can be identified",
+      "Keratinocyte stem cells are capable of nearly unlimited self-renewal, though they typically exist in a quiescent state and rarely divide",
+      "Transit-amplifying cells, which originate from stem cells, demonstrate high proliferative capacity and multipotency, undergoing multiple rounds of cell division prior to differentiation"
+    ],
+    "summary": "Szabó et al. describe undifferentiated keratinocytes as originating from the basal layer, composed of two subpopulations: quiescent stem cells (capable of nearly unlimited self-renewal) and transit-amplifying cells (high proliferative capacity). DNA methylation via Dnmt1 maintains progenitor cell status in the basal layer.",
+    "categories": ["function", "location", "development"],
+    "source_corpus_id": "CorpusId:275400555",
+    "source_title": "Epigenetic Regulatory Processes Involved in the Establishment and Maintenance of Skin Homeostasis—The Role of Microbiota",
+    "source_authors": "K. Szabó et al.",
+    "source_year": 2025,
+    "snippet": "Undifferentiated keratinocytes in the interfollicular epidermis originate from mitotically active cells in the basal layer of the epidermis, where two distinct cell subpopulations, namely keratinocyte stem cells and transit amplifying cells, can be identified. Keratinocyte stem cells are capable of nearly unlimited self-renewal, though they typically exist in a quiescent state and rarely divide. Transit-amplifying cells, which originate from stem cells, demonstrate high proliferative capacity and multipotency, undergoing multiple rounds of cell division prior to differentiation."
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "the expression of KRT14-KRT5 is considered to be the hallmark of basal keratinocytes including a cluster of progenitor cells, whereas the expression of KRT10-KRT1 reflects the early differentiation stage of keratinocytes",
+      "In normal skin epidermis, basal keratinocytes express type I and type II keratin pair KRT14 (K14)-KRT5 (K5), which is necessary for maintaining keratinocyte proliferation by increasing AKT phosphorylation, promoting cell cycle progression and inhibiting spontaneous differentiation of keratinocytes"
+    ],
+    "summary": "Zhang et al. describe the KRT14-KRT5 pair as the hallmark of basal keratinocytes. Functionally, K14-K5 maintains keratinocyte proliferation by increasing AKT phosphorylation and promoting cell cycle progression while inhibiting spontaneous differentiation.",
+    "categories": ["markers", "function"],
+    "source_corpus_id": "CorpusId:199388802",
+    "source_title": "Keratin 6, 16 and 17—Critical Barrier Alarmin Molecules in Skin Wounds and Psoriasis",
+    "source_authors": "Xiaowei Zhang et al.",
+    "source_year": 2019,
+    "snippet": "the expression of KRT14-KRT5 is considered to be the hallmark of basal keratinocytes including a cluster of progenitor cells, whereas the expression of KRT10-KRT1 reflects the early differentiation stage of keratinocytes. In normal skin epidermis, basal keratinocytes express type I and type II keratin pair KRT14 (K14)-KRT5 (K5), which is necessary for maintaining keratinocyte proliferation by increasing AKT phosphorylation, promoting cell cycle progression and inhibiting spontaneous differentiation of keratinocytes."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "The renewal of the cutaneous barrier occurs via the spinous transition of basal cells in mature skin in parallel with changes in gene expression (e.g., the down-regulation of Keratin5/14 and up-regulation of Keratin1/10) controlled by p63 and the canonical Notch pathway"
+    ],
+    "summary": "Gerasymchuk et al. describe the renewal process: basal cells transition through the spinous layer with downregulation of KRT5/KRT14 and upregulation of KRT1/KRT10, controlled by p63 (TP63) and the canonical Notch pathway.",
+    "categories": ["function", "development"],
+    "source_corpus_id": "CorpusId:220851202",
+    "source_title": "The Role of microRNAs in Organismal and Skin Aging",
+    "source_authors": "M. Gerasymchuk et al.",
+    "source_year": 2020,
+    "snippet": "Three distinct pools of stem cells are located in the interfollicular epidermis, the bulge, and the sebaceous gland supporting epidermal homeostasis. Skin stem cells undergo continuous self-renewal and differentiation into the required cell lineages to replenish cells such as keratinocytes, which die due to programmed termination or injury. The renewal of the cutaneous barrier occurs via the spinous transition of basal cells in mature skin in parallel with changes in gene expression (e.g., the down-regulation of Keratin5/14 and up-regulation of Keratin1/10) controlled by p63 and the canonical Notch pathway."
+  }
+]

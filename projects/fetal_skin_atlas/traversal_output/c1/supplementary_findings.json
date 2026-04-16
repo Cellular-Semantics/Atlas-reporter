@@ -1,0 +1,41 @@
+{
+  "markers": [
+    {"gene": "KRT5", "evidence_type": "DE analysis", "source_table": "Reynolds et al. Table S1"},
+    {"gene": "KRT14", "evidence_type": "DE analysis", "source_table": "Reynolds et al. Table S1"},
+    {"gene": "TP63", "evidence_type": "DE analysis / stem cell gene", "source_table": "Reynolds et al. Fig 4D"},
+    {"gene": "PPP3CA", "evidence_type": "DE analysis / stem cell gene", "source_table": "Reynolds et al. Fig 4D"},
+    {"gene": "CAV1", "evidence_type": "DE analysis / stem cell gene", "source_table": "Reynolds et al. Fig 4D"},
+    {"gene": "CAV2", "evidence_type": "DE analysis / stem cell gene", "source_table": "Reynolds et al. Fig 4D"},
+    {"gene": "ITGA6", "evidence_type": "hemidesmosome/basal marker", "source_table": "Liu et al. (2022)"},
+    {"gene": "COL17A1", "evidence_type": "hemidesmosome/basal marker", "source_table": "Liu et al. (2022)"}
+  ],
+  "other_findings": [
+    {
+      "finding": "c1 is at the origin of dual inferred differentiation trajectories from basal keratinocytes into terminally differentiated keratinocytes expressing CNFN, FLG and IVL. One trajectory arm expresses high levels of lamellar body-related transcripts (ABCA12, CKAP4, CLIP1), while the other expresses lower levels. IRF1 and SOX9 are transcription factors differentially expressed between the two pathways.",
+      "category": "differentiation",
+      "source_table": "Reynolds et al. Fig 4D-F"
+    },
+    {
+      "finding": "Reynolds adult skin supplements (PMC7611557) were not accessible through PMC supplemental material API. Evidence was derived from the full text PDF of the paper.",
+      "category": "data_access",
+      "source_table": "N/A"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "We characterized four groups of keratinocytes: undifferentiated, proliferating, differentiated and inflammatory differentiated cells (Differentiated KC*)",
+      "source_file": "Reynolds et al. (2021) full text",
+      "context": "Keratinocyte classification in adult skin atlas"
+    },
+    {
+      "quote": "Undifferentiated keratinocytes transcribe basal epidermal proteins (KRT5, KRT14) and are abundant in the CD49fhi FACS gate",
+      "source_file": "Reynolds et al. (2021) full text",
+      "context": "Marker gene identification for undifferentiated keratinocytes"
+    },
+    {
+      "quote": "Force-directed graph (FDG) and PAGA analyses reveal dual inferred differentiation trajectories from the stem cell genes (TP63, PPP3CA and CAV1/2)-enriched basal keratinocytes into terminally differentiated keratinocytes expressing CNFN, FLG and IVL",
+      "source_file": "Reynolds et al. (2021) full text",
+      "context": "Differentiation trajectory analysis"
+    }
+  ]
+}

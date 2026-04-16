@@ -1,0 +1,65 @@
+{
+  "DOI:10.1126/science.aba6500": {
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "authors": ["G. Reynolds", "Peter Vegh", "J. Fletcher", "Elizabeth Poyner", "Emily Stephenson", "Issac Goh", "R. Botting", "N. Huang", "B. Olabi", "A. Dubois", "D. Dixon", "Kile Green", "Daniel Maunder", "J. Engelbert", "M. Efremova", "K. Polański", "Laura Jardine", "Claire Jones", "T. Ness", "D. Horsfall", "J. McGrath", "Christopher D. Carey", "Dorin-Mirel Popescu", "S. Webb", "Xiao-nong Wang", "Ben Sayer", "Jong-Eun Park", "V. A. Negri", "D. Belokhvostova", "M. Lynch", "David McDonald", "A. Filby", "T. Hagai", "K. Meyer", "A. Husain", "J. Coxhead", "R. Vento-Tormo", "S. Behjati", "S. Lisgo", "A. Villani", "J. Bacardit", "P. Jones", "E. O'Toole", "G. Ogg", "N. Rajan", "N. Reynolds", "S. Teichmann", "F. Watt", "M. Haniffa"],
+    "year": 2021,
+    "venue": "Science",
+    "doi": "10.1126/science.aba6500",
+    "pmid": "33479125",
+    "url": "https://www.semanticscholar.org/paper/d9179b989f4fd60ecbe0f17814401e245cdb1db5"
+  },
+  "DOI:10.1038/s41586-024-08002-x": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": ["N. Gopee", "Elena Winheim", "B. Olabi", "Chloe Admane", "A. Foster", "Ni Huang", "R. Botting", "Fereshteh Torabi", "D. Sumanaweera", "Anh Phuong Le", "Jin Kim", "L. Verger", "Emily Stephenson", "Sara A Teichmann", "M. Haniffa"],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "pmid": "39415002",
+    "url": "https://www.semanticscholar.org/paper/4fa361732b6949fb708120c7977c9e753b76ff51"
+  },
+  "CorpusId:249628397": {
+    "title": "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells",
+    "authors": ["Baoyi Liu", "Ang Li", "Jingkai Xu", "Yong Cui"],
+    "year": 2022,
+    "venue": "Frontiers in Surgery",
+    "doi": "10.3389/fsurg.2022.935107",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/da45167a21719b5054aed1efc6df7b7e9a6cb858"
+  },
+  "CorpusId:258648987": {
+    "title": "Decoding the Human Epidermal Complexity at Single-Cell Resolution",
+    "authors": ["Maria Pia Polito", "Grazia Marini", "Michele Palamenghi", "E. Enzo"],
+    "year": 2023,
+    "venue": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms24108544",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/ab68f1d27f86b8a583933ed3b6b0ef460567126c"
+  },
+  "CorpusId:275400555": {
+    "title": "Epigenetic Regulatory Processes Involved in the Establishment and Maintenance of Skin Homeostasis—The Role of Microbiota",
+    "authors": ["K. Szabó", "Fanni Balogh", "Dóra Romhányi", "L. Erdei", "B. Toldi", "R. Gyulai", "L. Kemény", "G. Groma"],
+    "year": 2025,
+    "venue": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms26020553",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/82e7848f24d58002eba9c5bad156bbe30e880703"
+  },
+  "CorpusId:199388802": {
+    "title": "Keratin 6, 16 and 17—Critical Barrier Alarmin Molecules in Skin Wounds and Psoriasis",
+    "authors": ["Xiaowei Zhang", "Meimei Yin", "Ling-juan Zhang"],
+    "year": 2019,
+    "venue": "Cells",
+    "doi": "10.3390/cells8080807",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/d2ad2bc0830c740333e9c9bfbabb3dc572dd98ab"
+  },
+  "CorpusId:220851202": {
+    "title": "The Role of microRNAs in Organismal and Skin Aging",
+    "authors": ["M. Gerasymchuk", "V. Cherkasova", "O. Kovalchuk", "I. Kovalchuk"],
+    "year": 2020,
+    "venue": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms21155281",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/a1cd35f22a8cf459b3e5ccfa2c1f4d7fe2e6a06e"
+  }
+}
