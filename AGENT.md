@@ -45,6 +45,14 @@ workflow and the programmatic Python graph.
    large results as single-line JSON, use `python3 -c "import json..."` to
    extract and search — do not grep raw JSON files.
 
+7. **Never guess or fabricate DOIs.** Every DOI in the paper catalogue must
+   come from an MCP tool response — `get_paper`, `get_paper_batch`,
+   `get_europepmc_paper_by_id`, or `get_all_identifiers_from_europepmc`.
+   If Semantic Scholar does not return a DOI for a paper, look it up via
+   Europe PMC (using the PMCID or PMID from the Semantic Scholar response)
+   before writing the catalogue entry. If no DOI can be resolved from any
+   source, leave the `doi` field as an empty string — never invent one.
+
 ---
 
 ## Workflow Sequence

@@ -94,7 +94,27 @@ The project has an oddly nested structure from early development, with some dupl
 
 **Risk:** High if done carelessly — broken imports, missing prompt files, or stale paths in AGENT.md/CHAT.md could silently break workflows. The careful branch + full test pass mitigates this.
 
-## 5. Project generation workflow
+## 5. Separate provenance from synthesis
+
+**Status:** Not started — needs design
+
+The paper catalogue is currently built by the same agent that writes the report. This means validation is circular: the agent can write a fabricated DOI into the catalogue and the report, and `check_references` will pass because it only checks consistency between the two files. This already caused a real bug — a hallucinated DOI for Szabó et al. (2025) passed validation because both the catalogue and report contained the same wrong string.
+
+**Goal:** The catalogue should be built exclusively from MCP tool responses, not from agent memory or guesswork. The synthesis step should consume the catalogue as read-only input, never write to it.
+
+**How it would work:**
+1. **Catalogue-building step** runs tool calls (`get_paper_batch`, `get_all_identifiers_from_europepmc`) and writes `paper_catalogue.json`. DOIs come directly from API responses. If a DOI is unavailable from any source, the field is left empty.
+2. **Validation verifies DOIs externally** — `check_references` resolves each DOI against doi.org or Europe PMC rather than just checking the catalogue. This breaks the circular dependency.
+3. **Synthesis receives catalogue as read-only context** — the report synthesizer can only cite papers already in the catalogue; it cannot add entries.
+
+**What this prevents:**
+- Hallucinated DOIs passing validation
+- Fabricated paper metadata in the catalogue
+- Circular consistency checks that prove nothing
+
+**Effort:** Medium. Requires refactoring the agentic workflow to separate catalogue writes from report synthesis, and adding an external DOI check to `report_checker.py`.
+
+## 6. Project generation workflow
 
 **Status:** Not started — needs design
 
