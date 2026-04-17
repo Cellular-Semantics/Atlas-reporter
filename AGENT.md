@@ -69,7 +69,22 @@ Read `projects/{project}/cell_type_annotations.json`:
   from Reynolds integrated into Gopee), identify the source atlas early and
   pivot supplementary fetching to that paper.
 
-### 2. Fetch Supplementary Material
+### 2. Fetch Full Text and Supplementary Material
+
+**Full text retrieval — read the complete document.** Cluster-to-name
+mappings, marker gene lists, and annotation details are often in **figure
+legends**, which in PMC author manuscripts appear at the end of the document
+(after the references). Do not truncate the download arbitrarily.
+
+1. Try `get_europepmc_full_text(doi)` first (structured XML, fastest).
+2. If that returns empty, use `get_europepmc_pdf_as_markdown(doi)` **without
+   a character limit** to get the full document. If the result is too large
+   for context, make multiple offset calls to cover the entire document —
+   do not stop after the first chunk.
+3. Search the full text for the cell type label, cluster numbering, and
+   annotation tables before concluding that information is missing.
+
+**Supplementary material:**
 
 Use MCP tools directly (single call, no subagent needed):
 1. `get_all_identifiers_from_europepmc(doi)` → get PMCID
@@ -106,6 +121,21 @@ and returns relevance-ranked text.
 }
 ```
 
+**Name resolution is a gate, not a pass-through.** If `resolved_names` is empty
+and `confidence` is "low", do NOT proceed to citation traverse or synthesis.
+Instead:
+
+1. Report clearly what is missing (e.g. "Reynolds Table S1 is required to map
+   c2 to a named keratinocyte state").
+2. List alternative access routes tried and available (supplement API, PDF,
+   full text search, web portal).
+3. Ask the user whether to: (a) provide the supplementary data manually,
+   (b) try an alternative access route, or (c) skip this cell type.
+
+A report built on an unresolved identity is not useful — it will either guess
+wrong or pad out a "we don't know" with irrelevant background. Failing fast
+with a clear explanation respects the user's time.
+
 ### 4. Parallel: Scan Supplements + Citation Traverse
 
 These two steps are independent after name resolution. Run them in parallel.
@@ -133,6 +163,23 @@ These two steps are independent after name resolution. Run them in parallel.
 - Seed paper ID (CorpusId from snippet metadata, or `DOI:{doi}`)
 - Query: `"{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers"`
 - Depth: 1 (default), configurable up to 3
+
+**Evidence sourcing priority:**
+
+1. **Depth 1 (always):** `snippet_search` scoped to the seed paper
+   (`paper_ids`), then follow `matchedPaperCorpusId` references to search
+   within cited/citing papers.
+2. **Depth 2 (fallback):** If depth 1 yields fewer than ~3 relevant summaries,
+   extend to references-of-references — papers cited by the depth-1 papers.
+   For adult-scope annotations integrated from a source atlas (e.g. Reynolds),
+   the source atlas's own references are the natural depth-2 pool.
+3. **Free snippet search (last resort):** Unscoped `snippet_search` (no
+   `paper_ids`) may be used when citation traverse at depth ≤2 returns
+   insufficient evidence. **Every paper discovered this way must be flagged**
+   in the paper catalogue with `"source": "free_search"` so that downstream
+   consumers can distinguish atlas-linked evidence from background literature.
+
+Papers found via citation traverse should be marked `"source": "citation_traverse"` in the catalogue. The report synthesizer should prefer citation-traversed papers and use free-search papers only for supplementary context.
 
 **Output:**
 - `projects/{project}/traversal_output/{cell_type}/all_summaries.json`
