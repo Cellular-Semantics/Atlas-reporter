@@ -248,6 +248,61 @@ report header block (between the title line and `## Summary`). Read
 The PURL format is `http://purl.obolibrary.org/obo/CL_NNNNNNN` (underscore,
 not colon).
 
+### 9. Draft CL Term Request (conditional) → subagent: `cl-term-request`
+
+**Only run this step if** `cl_mapping.json` has `"new_term_needed": true`.
+
+**Input:**
+- Report path from step 5
+- CL mapping path from step 7
+- Output path: `projects/{project}/traversal_output/{cell_type}/cl_term_request.json`
+
+**Output:** `projects/{project}/traversal_output/{cell_type}/cl_term_request.json`
+
+The subagent generates a draft new term request following:
+- CL definition guidelines (`docs/LLM_prompt_guidelines_for_CL_definitions.md`)
+- CL relations guide (`docs/relations_guide.md`)
+- CL NTR issue template (`docs/cl_new_term_request_template.md`)
+
+Output includes structured JSON (definition, parent, axioms, synonyms,
+references) and a pre-rendered `ntr_markdown` field ready to paste into a
+GitHub issue on `obophenotype/cell-ontology`. The JSON is validated by a
+PostToolUse hook against the schema at
+`src/atlas_chat/atlas_chat/schemas/cl_term_request.schema.json`.
+
+### 10. Post CL Term Request to GitHub (conditional, requires confirmation)
+
+**Only run this step if:**
+- Step 9 produced a `cl_term_request.json`
+- `gh auth status` confirms a valid GitHub token
+- The user explicitly confirms they want to post
+
+**This step modifies an external shared repository. Always ask the user
+before posting.** Show them the `ntr_markdown` content and the target repo
+first.
+
+**Procedure:**
+
+1. Check `gh auth status`. If not authenticated, inform the user and skip.
+2. Read `cl_term_request.json` and extract `suggested_label` and `ntr_markdown`.
+3. Show the user the draft issue title and body for review.
+4. On confirmation, post:
+
+```bash
+gh issue create \
+  --repo obophenotype/cell-ontology \
+  --title "[NTR] {suggested_label}" \
+  --label "new term request" \
+  --body "$ntr_markdown"
+```
+
+5. Record the returned issue URL in the report header, appending it to the
+   Cell Ontology line:
+   `Cell Ontology: ... (broad match — NTR: obophenotype/cell-ontology#NNN)`
+
+**Never post without user confirmation.** This creates a public issue on an
+external repository.
+
 ---
 
 ## Output Layout
@@ -260,7 +315,8 @@ projects/{project}/
 │   ├── supplementary_findings.json
 │   ├── all_summaries.json
 │   ├── paper_catalogue.json
-│   └── cl_mapping.json
+│   ├── cl_mapping.json
+│   └── cl_term_request.json  (only if new_term_needed)
 └── reports/
     └── {cell_type}.md
 ```

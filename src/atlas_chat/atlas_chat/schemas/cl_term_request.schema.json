@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CLTermRequest",
+  "description": "Draft new term request for the Cell Ontology (CL). Produced when ontology-term-lookup finds no exact match. Includes both structured data and a pre-rendered markdown body matching the CL GitHub NTR issue template.",
+  "type": "object",
+  "properties": {
+    "cell_type_label": {
+      "type": "string",
+      "description": "The atlas cell type label that triggered this request."
+    },
+    "suggested_label": {
+      "type": "string",
+      "description": "Proposed CL term label, following CL naming conventions (lowercase, anatomical context where relevant)."
+    },
+    "definition": {
+      "type": "string",
+      "description": "Proposed textual definition, 80-120 words, following CL definition guidelines. Starts with general classification, then distinguishing characteristics. Inline references in PMID:XXXXXX or DOI format."
+    },
+    "parent_term": {
+      "$ref": "#/$defs/CLReference",
+      "description": "The immediate parent term (typically the broad match from CL mapping)."
+    },
+    "anatomical_location": {
+      "$ref": "#/$defs/UBERONReference",
+      "description": "Anatomical structure where this cell type is found (UBERON term)."
+    },
+    "logical_axioms": {
+      "type": "array",
+      "description": "Proposed OWL subClassOf axioms using CL relations vocabulary.",
+      "items": { "$ref": "#/$defs/Axiom" },
+      "minItems": 1
+    },
+    "synonyms": {
+      "type": "array",
+      "description": "Suggested synonyms with scope and supporting reference.",
+      "items": { "$ref": "#/$defs/Synonym" }
+    },
+    "references": {
+      "type": "array",
+      "description": "Key references supporting the definition and axioms.",
+      "items": { "$ref": "#/$defs/Reference" },
+      "minItems": 1
+    },
+    "justification": {
+      "type": "string",
+      "description": "Why this term is needed in CL — what gap it fills, how it relates to existing terms."
+    },
+    "ntr_markdown": {
+      "type": "string",
+      "description": "Pre-rendered markdown body matching the CL GitHub NTR issue template (docs/cl_new_term_request_template.md). Ready to paste into a GitHub issue."
+    }
+  },
+  "required": [
+    "cell_type_label",
+    "suggested_label",
+    "definition",
+    "parent_term",
+    "anatomical_location",
+    "logical_axioms",
+    "synonyms",
+    "references",
+    "justification",
+    "ntr_markdown"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "CLReference": {
+      "type": "object",
+      "properties": {
+        "cl_id": {
+          "type": "string",
+          "description": "CL CURIE, e.g. CL:0002187.",
+          "pattern": "^CL:\\d{7}$"
+        },
+        "cl_term": {
+          "type": "string",
+          "description": "CL term label."
+        }
+      },
+      "required": ["cl_id", "cl_term"],
+      "additionalProperties": false
+    },
+    "UBERONReference": {
+      "type": "object",
+      "properties": {
+        "uberon_id": {
+          "type": "string",
+          "description": "UBERON CURIE, e.g. UBERON:0001003.",
+          "pattern": "^UBERON:\\d{7}$"
+        },
+        "uberon_term": {
+          "type": "string",
+          "description": "UBERON term label."
+        }
+      },
+      "required": ["uberon_id", "uberon_term"],
+      "additionalProperties": false
+    },
+    "Axiom": {
+      "type": "object",
+      "description": "A proposed OWL subClassOf axiom.",
+      "properties": {
+        "relation": {
+          "type": "string",
+          "description": "Relation label, e.g. 'part of', 'capable of', 'has plasma membrane part', 'expresses', 'develops from'."
+        },
+        "relation_id": {
+          "type": "string",
+          "description": "Relation CURIE from RO/BFO, e.g. BFO:0000050, RO:0002215."
+        },
+        "filler": {
+          "type": "string",
+          "description": "The object of the axiom — a term label."
+        },
+        "filler_id": {
+          "type": "string",
+          "description": "CURIE for the filler term, e.g. UBERON:0001003, GO:0008283."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional clarification of why this axiom is included."
+        }
+      },
+      "required": ["relation", "relation_id", "filler", "filler_id"],
+      "additionalProperties": false
+    },
+    "Synonym": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "description": "The synonym text."
+        },
+        "scope": {
+          "type": "string",
+          "enum": ["exact", "related", "broad", "narrow"],
+          "description": "OBO synonym scope."
+        },
+        "reference": {
+          "type": "string",
+          "description": "Supporting reference for this synonym (PMID or DOI)."
+        }
+      },
+      "required": ["value", "scope"],
+      "additionalProperties": false
+    },
+    "Reference": {
+      "type": "object",
+      "properties": {
+        "doi": {
+          "type": "string",
+          "description": "DOI of the reference."
+        },
+        "pmid": {
+          "type": "string",
+          "description": "PubMed ID in PMID:XXXXXX format."
+        },
+        "citation": {
+          "type": "string",
+          "description": "Short citation, e.g. 'Reynolds et al. (2021)'."
+        },
+        "supports": {
+          "type": "string",
+          "description": "What aspect of the term request this reference supports."
+        }
+      },
+      "required": ["citation", "supports"],
+      "additionalProperties": false
+    }
+  }
+}

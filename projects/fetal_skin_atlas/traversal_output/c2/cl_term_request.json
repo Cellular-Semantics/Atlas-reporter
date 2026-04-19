@@ -1,0 +1,86 @@
+{
+  "cell_type_label": "Proliferating Keratinocyte",
+  "suggested_label": "transit-amplifying cell of epidermis",
+  "definition": "A basal cell of the epidermis that is actively dividing to amplify the keratinocyte pool before terminal differentiation. Located primarily within the stratum basale, this cell is distinguished from quiescent epidermal stem cells by high expression of cell cycle genes including CDK1, PCNA, and MKI67 in humans (PMID:33479125; PMID:30355494). It retains intermediate levels of basal keratins KRT5 and KRT14 but shows low expression of suprabasal differentiation markers KRT1 and KRT10 (PMID:30355494). This population sustains epidermal homeostasis through transit amplification and is markedly expanded in hyperproliferative skin diseases such as psoriasis (PMID:30355494; PMID:33479125).",
+  "parent_term": {
+    "cl_id": "CL:0002187",
+    "cl_term": "basal cell of epidermis"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0002025",
+    "uberon_term": "stratum basale of epidermis"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "stratum basale of epidermis",
+      "filler_id": "UBERON:0002025",
+      "notes": "Located primarily in the basal layer of the epidermis, though cell cycle activity may extend into suprabasal layers."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "epidermal cell division",
+      "filler_id": "GO:0010481",
+      "notes": "Actively dividing cells, defined by high expression of cell cycle markers CDK1, PCNA, and MKI67."
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "keratinocyte differentiation",
+      "filler_id": "GO:0030216",
+      "notes": "Transit-amplifying cells participate in the early stages of keratinocyte differentiation before terminal differentiation occurs in suprabasal layers."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "proliferating keratinocyte",
+      "scope": "exact",
+      "reference": "PMID:33479125"
+    },
+    {
+      "value": "cycling basal keratinocyte",
+      "scope": "exact",
+      "reference": "PMID:35570025"
+    },
+    {
+      "value": "mitotic keratinocyte",
+      "scope": "related",
+      "reference": "PMID:30355494"
+    },
+    {
+      "value": "transit-amplifying keratinocyte",
+      "scope": "exact",
+      "reference": "PMID:35570025"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1126/science.aba6500",
+      "pmid": "PMID:33479125",
+      "citation": "Reynolds et al. (2021)",
+      "supports": "Definition of proliferating keratinocyte cluster (c2) by CDK1+/PCNA+ markers, location in basal compartment, and disease-associated expansion in psoriasis and atopic dermatitis."
+    },
+    {
+      "doi": "10.1016/j.celrep.2018.09.006",
+      "pmid": "PMID:30355494",
+      "citation": "Cheng et al. (2018)",
+      "supports": "Identification of 'mitotic' keratinocyte cluster by cell cycle gene signature (PCNA, KI67), intermediate basal keratin levels, and expansion in psoriatic epidermis."
+    },
+    {
+      "doi": "10.1016/j.jid.2022.04.003",
+      "pmid": "PMID:35570025",
+      "citation": "Negri and Watt (2022)",
+      "supports": "Confirmation of proliferation cluster in basal layer expressing CDK1 and MKI67, and interpretation as transit-amplifying cell population."
+    },
+    {
+      "doi": "10.1038/s41586-024-08002-x",
+      "pmid": "PMID:39415002",
+      "citation": "Gopee et al. (2024)",
+      "supports": "Atlas context: integration of Reynolds et al. adult skin keratinocyte clusters into the prenatal skin atlas."
+    }
+  ],
+  "justification": "No CL term exists for the transit-amplifying cell of the epidermis. CL has a general 'transit amplifying cell' (CL:0009010) and tissue-specific subtypes for the gut (CL:0009011, CL:0009027), but no epidermal counterpart. The existing 'basal cell of epidermis' (CL:0002187) covers the entire heterogeneous basal layer including quiescent stem cells, while 'keratinocyte stem cell' (CL:0002337) is defined as quiescent. The proliferating keratinocyte population identified in multiple independent human epidermal scRNA-seq studies (Reynolds et al. 2021, Cheng et al. 2018, Negri and Watt 2022) represents a reproducible, transcriptionally distinct cell state that warrants its own CL term. This new term would be a child of CL:0002187 and logically related to the general transit amplifying cell concept (CL:0009010).",
+  "ntr_markdown": "**Preferred term label**\ntransit-amplifying cell of epidermis\n\n**Synonyms** (add reference(s), please)\nproliferating keratinocyte (exact) \u2014 PMID:33479125\ncycling basal keratinocyte (exact) \u2014 PMID:35570025\nmitotic keratinocyte (related) \u2014 PMID:30355494\ntransit-amplifying keratinocyte (exact) \u2014 PMID:35570025\n\n**Definition** (free text, with reference(s), please. PubMed ID format is PMID:XXXXXX)\nA basal cell of the epidermis that is actively dividing to amplify the keratinocyte pool before terminal differentiation. Located primarily within the stratum basale, this cell is distinguished from quiescent epidermal stem cells by high expression of cell cycle genes including CDK1, PCNA, and MKI67 in humans (PMID:33479125; PMID:30355494). It retains intermediate levels of basal keratins KRT5 and KRT14 but shows low expression of suprabasal differentiation markers KRT1 and KRT10 (PMID:30355494). This population sustains epidermal homeostasis through transit amplification and is markedly expanded in hyperproliferative skin diseases such as psoriasis (PMID:30355494; PMID:33479125).\n\n**Parent cell type term** (check the hierarchy here https://www.ebi.ac.uk/ols4/ontologies/cl)\nbasal cell of epidermis (CL:0002187) \u2014 https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0002187\n\n**Anatomical structure where the cell type is found** (check Uberon for anatomical structures: https://www.ebi.ac.uk/ols4/ontologies/uberon)\nstratum basale of epidermis (UBERON:0002025) \u2014 https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0002025\n\n**Your ORCID**\n[To be added by submitter]\n\n**Additional notes or concerns**\nNo CL term exists for the transit-amplifying cell of the epidermis. CL has a general 'transit amplifying cell' (CL:0009010) and tissue-specific subtypes for the gut, but no epidermal counterpart. The existing 'basal cell of epidermis' (CL:0002187) covers the entire heterogeneous basal layer including quiescent stem cells. This proliferating keratinocyte population has been independently identified in multiple human epidermal scRNA-seq studies and represents a reproducible, transcriptionally distinct cell state.\n\nProposed logical axioms:\n- subClassOf 'part of' some 'stratum basale of epidermis' (UBERON:0002025)\n- subClassOf 'capable of' some 'epidermal cell division' (GO:0010481)\n- subClassOf 'capable of part of' some 'keratinocyte differentiation' (GO:0030216)\n\nKey references:\n- Reynolds G et al. (2021) \u2014 DOI:10.1126/science.aba6500 \u2014 supports: CDK1+/PCNA+ proliferating keratinocyte cluster definition and disease expansion\n- Cheng JB et al. (2018) \u2014 DOI:10.1016/j.celrep.2018.09.006 \u2014 supports: 'mitotic' cluster identification, cell cycle gene signature, psoriasis expansion\n- Negri VA, Watt FM (2022) \u2014 DOI:10.1016/j.jid.2022.04.003 \u2014 supports: basal layer localization, transit-amplifying cell interpretation\n- Gopee NH et al. (2024) \u2014 DOI:10.1038/s41586-024-08002-x \u2014 supports: atlas integration context\n\n---\n*Draft generated by atlas-chat from: projects/fetal_skin_atlas/reports/c2.md*"
+}
