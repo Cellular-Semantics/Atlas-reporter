@@ -22,6 +22,11 @@
       "command": "uvx",
       "args": ["paper-search-mcp"],
       "tools": ["*"]
+    },
+    "ols4": {
+      "type": "http",
+      "url": "http://www.ebi.ac.uk/ols4/api/mcp",
+      "tools": ["*"]
     }
   }
 }

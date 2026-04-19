@@ -1,0 +1,36 @@
+{
+  "cell_type_label": "Proliferating Keratinocyte",
+  "working_definition": "An actively dividing keratinocyte located in the basal layer of the epidermis, characterised by high expression of cell-cycle genes CDK1, PCNA, and MKI67, intermediate levels of basal keratins KRT5/KRT14, and low expression of suprabasal differentiation markers such as KRT1 and KRT10. This population corresponds to the transit-amplifying fraction of the basal compartment that sustains epidermal homeostasis by amplifying the keratinocyte pool before terminal differentiation.",
+  "searches_performed": [
+    "proliferating keratinocyte (CL, OLS4 searchClasses)",
+    "transit amplifying keratinocyte (CL, OLS4 searchClasses)",
+    "cycling basal keratinocyte epidermis (CL, OLS4 searchClasses)",
+    "children of keratinocyte CL:0000312 (OLS4 getChildren)",
+    "children of epidermal keratinocyte CL:4052061 (OLS4 getChildren)"
+  ],
+  "best_match": {
+    "cl_term": "basal cell of epidermis",
+    "cl_id": "CL:0002187",
+    "cl_definition": "A mitotically active, columnar-shaped keratinocyte located in the stratum basale of the epidermis and attached to the basement membrane. This cell exhibits heterogeneity, encompassing stem and progenitor subpopulations with distinct molecular and proliferative characteristics, and serves as the primary source of new keratinocytes for epidermal renewal, homeostasis, and regeneration.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "No CL term exists for 'proliferating keratinocyte' or 'transit-amplifying keratinocyte of epidermis'. The c2 cluster is a transcriptional/cell-cycle state (CDK1+, PCNA+, MKI67+, intermediate KRT5/KRT14) within the basal layer, interpreted by Reynolds et al. (2021) as the actively dividing fraction of the epidermis and by Negri and Watt (2022) as transit-amplifying cells. CL:0002187 'basal cell of epidermis' is the closest available term: its definition explicitly states it is 'mitotically active' and 'encompasses stem and progenitor subpopulations with distinct molecular and proliferative characteristics'. However, this term covers the whole heterogeneous basal layer (including quiescent stem cells), so it is a broad match rather than an exact match. The keratinocyte stem cell (CL:0002337) was rejected because it is defined as quiescent. No skin-specific transit-amplifying keratinocyte term exists in CL.",
+  "other_candidates": [
+    {
+      "cl_term": "keratinocyte stem cell",
+      "cl_id": "CL:0002337",
+      "cl_definition": "A stem cell found in the basal layer of the epidermis, hair follicle, and sebaceous gland, characterised by its quiescent nature, high proliferative potential, and capacity for long-term self-renewal.",
+      "reason_rejected": "Defined as quiescent and self-renewing; the c2 cluster is the actively cycling transit-amplifying fraction, not the quiescent stem cell population."
+    },
+    {
+      "cl_term": "epidermal keratinocyte",
+      "cl_id": "CL:4052061",
+      "cl_definition": "A keratinocyte of the skin epidermis that synthesizes keratin and undergoes successive stages of differentiation as it migrates from the basal layer to the cornified layer.",
+      "reason_rejected": "Too broad; encompasses all epidermal keratinocyte differentiation stages and does not specifically capture the proliferating/cycling character of this cluster."
+    }
+  ],
+  "recommendation": "Use CL:0002187 (basal cell of epidermis) as a broad match. A new term 'transit-amplifying keratinocyte of epidermis' or 'cycling basal keratinocyte' would better represent this population and should be requested from the CL editors.",
+  "new_term_needed": true
+}

@@ -215,6 +215,39 @@ passed, errors = validate_report(report_path, traversal_dir)
 an *optional extra guard* for interactive sessions — it is NOT the primary
 validation mechanism. The correction loop must work without it.
 
+### 7. Map to Cell Ontology → subagent: `ontology-term-lookup`
+
+After the report passes validation, map the cell type to the Cell Ontology.
+
+**Input:**
+- Report path from step 5
+- Cell type label
+- Output path: `projects/{project}/traversal_output/{cell_type}/cl_mapping.json`
+
+**Output:** `projects/{project}/traversal_output/{cell_type}/cl_mapping.json`
+
+The subagent searches OLS4 for CL terms, compares definitions against the
+report content, and classifies the match as exact, broad, narrow, or none
+using SKOS vocabulary. Output conforms to the JSON Schema at
+`src/atlas_chat/atlas_chat/schemas/cl_mapping.schema.json` and is validated
+by a PostToolUse hook.
+
+### 8. Insert CL Mapping into Report Header
+
+After the CL mapping JSON is written, insert the mapping metadata into the
+report header block (between the title line and `## Summary`). Read
+`cl_mapping.json` and add a `Cell Ontology` line:
+
+- **Exact match:**
+  `Cell Ontology: [basal cell of epidermis](http://purl.obolibrary.org/obo/CL_0002187) (CL:0002187, exact match)`
+- **Broad match:**
+  `Cell Ontology: [keratinocyte](http://purl.obolibrary.org/obo/CL_0000312) (CL:0000312, broad match — no exact CL term)`
+- **No match:**
+  `Cell Ontology: No CL term (new term needed)`
+
+The PURL format is `http://purl.obolibrary.org/obo/CL_NNNNNNN` (underscore,
+not colon).
+
 ---
 
 ## Output Layout
@@ -226,7 +259,8 @@ projects/{project}/
 │   ├── name_resolution.json
 │   ├── supplementary_findings.json
 │   ├── all_summaries.json
-│   └── paper_catalogue.json
+│   ├── paper_catalogue.json
+│   └── cl_mapping.json
 └── reports/
     └── {cell_type}.md
 ```
@@ -245,6 +279,10 @@ instructions. Key conventions:
 
 ```markdown
 # Iron-Recycling Macrophages in Prenatal Human Skin
+
+Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
+Scope: fetal
+Cell Ontology: [macrophage](http://purl.obolibrary.org/obo/CL_0000235) (CL:0000235, broad match — no exact CL term)
 
 ## Summary
 Iron-recycling macrophages are one of four macrophage subsets identified in
