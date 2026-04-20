@@ -1,0 +1,10 @@
+{
+  "label": "LC_1",
+  "resolved_names": [
+    "Langerhans cell 1"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin (epidermis)",
+  "confidence": "high",
+  "evidence": "In the Supplementary Table 4 (\u2018Cell type annotation table\u2019), 'LC_1' is mapped to 'Langerhans cell 1'. The main text and supplementary figures (e.g., Extended Data Fig. 4, Supp Table\u00a04) refer to 'LC_1' as a Langerhans cell cluster identified by the authors in both adult and prenatal skin datasets. This granularity matches the label\u2019s usage in the fine cluster context."
+}

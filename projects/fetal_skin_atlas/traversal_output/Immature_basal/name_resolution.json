@@ -1,0 +1,10 @@
+{
+  "label": "Immature basal",
+  "resolved_names": [
+    "Immature basal keratinocyte"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The label 'Immature basal' is used in the Gopee et al. (2024) prenatal skin atlas (Supplementary Table 6) as a fine-grained cell type annotation in the fetal scope. Resolved to 'Immature basal keratinocyte' based on atlas text, figures, and supplementary data."
+}

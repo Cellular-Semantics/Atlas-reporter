@@ -1,0 +1,20 @@
+{
+  "cell_type": "moDC_1",
+  "summaries": [
+    {
+      "paper": "Reynolds et al. (2021)",
+      "doi": "10.1126/science.aba6500",
+      "summary": "Identifies moDC_1 as a subtype of monocyte-derived dendritic cells in adult human skin. MoDCs are part of a differentiation branch distinct from LCs and myeloid DCs (DC1/DC2). Epidermal moDCs are HLA-DR+CD1a-CD11c+CD1c+ and are potent T cell stimulators."
+    },
+    {
+      "paper": "McGovern et al. (2014)",
+      "doi": "10.1016/j.immuni.2014.08.006",
+      "summary": "Demonstrates that human dermal CD14+ cells are a transient population of monocyte-derived macrophages with a short half-life. Establishes the monocyte origin of CD14+ cells in human skin and their distinction from bona fide DCs."
+    },
+    {
+      "paper": "Gopee et al. (2024)",
+      "doi": "10.1038/s41586-024-08002-x",
+      "summary": "Integrates adult skin dataset from Reynolds et al. (2021) including moDC annotations for cross-developmental comparison with prenatal skin."
+    }
+  ]
+}

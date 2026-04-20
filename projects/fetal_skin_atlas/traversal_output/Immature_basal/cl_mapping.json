@@ -1,0 +1,26 @@
+{
+  "cell_type_label": "Immature basal keratinocyte",
+  "working_definition": "An early fetal basal keratinocyte of the interfollicular epidermis, present from 7 PCW and decreasing after 11 PCW during the embryonic-to-fetal skin transition. Expresses basal keratins KRT5 and KRT14 alongside embryonic keratins KRT18, KRT17, and KRT19 not found in adult interfollicular epidermis, reflecting an immature, incompletely committed differentiation state.",
+  "searches_performed": [
+    "basal cell of epidermis (CL, pageSize=10)",
+    "keratinocyte stem cell (CL)"
+  ],
+  "best_match": {
+    "cl_term": "basal cell of epidermis",
+    "cl_id": "CL:0002187",
+    "cl_definition": "A mitotically active, columnar-shaped keratinocyte located in the stratum basale of the epidermis and attached to the basement membrane.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0002187 describes the general basal cell of epidermis. The 'Immature basal' cluster represents the early fetal subset of this population, distinguished by co-expression of embryonic keratins (KRT18, KRT17, KRT19) and temporal restriction to early gestation (<11 PCW). The CL term does not distinguish fetal from adult basal cells, making this a broad match.",
+  "other_candidates": [
+    {
+      "cl_term": "keratinocyte stem cell",
+      "cl_id": "CL:0002337",
+      "reason_rejected": "Too narrow: the immature basal population includes transit-amplifying cells and is defined by its early developmental timing, not exclusively by stem cell quiescence."
+    }
+  ],
+  "recommendation": "Use CL:0002187 (basal cell of epidermis) as a broad match. A more specific term capturing the early fetal basal keratinocyte state with embryonic keratin co-expression could be considered.",
+  "new_term_needed": false
+}

@@ -1,0 +1,48 @@
+{
+  "markers": [
+    {
+      "gene": "C7",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "gene": "MFAP4",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "gene": "FMO2",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 2"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Dermal fibroblast 3 was predominantly located in the reticular dermis (see Supplementary Fig. 5b).",
+      "category": "spatial location",
+      "source_table": "Supplementary Figure 5b"
+    },
+    {
+      "finding": "F3 is functionally annotated with extracellular matrix organization.",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table 4"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Representative marker genes for F3 included C7, MFAP4, and FMO2 (see Supplementary Table 2).",
+      "source_file": "Supplementary Table 2",
+      "context": "Cluster marker gene list (top DE genes)"
+    },
+    {
+      "quote": "Dermal fibroblast 3 was predominantly located in the reticular dermis (see Supplementary Fig. 5b).",
+      "source_file": "Supplementary Figure 5b",
+      "context": "Spatial mapping of cell types"
+    },
+    {
+      "quote": "GO term enrichment for F3: extracellular matrix organization",
+      "source_file": "Supplementary Table 4",
+      "context": "Functional annotation/GO analysis"
+    }
+  ]
+}

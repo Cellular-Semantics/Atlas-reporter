@@ -1,0 +1,62 @@
+[
+  {
+    "snippet_index": 1,
+    "quotes": [],
+    "summary": "Atlas snippet about hair follicle development relevant to Companion layer.",
+    "categories": [
+      "markers",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "The precise mechanisms of de novo HF formation in human embryonic development are largely inferred from mouse studies 16 . Human studies have primarily focused on morphological descriptions during development 17 or cycling HFs in adult skin 18 . Our single-cell dataset captured the onset of HF formation, which enabled direct comparison between prenatal developing HFs and adult cycling HFs. Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a). At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a). At 17 PCW, hair pegs were evident beneath a stratified epidermal layer (Fig. 2a). Consistent with our histological observations, we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH + ), outer root sheath (ORS) (SLC26A7 + ), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a-c, Extended Data Fig. 3a,b and Supplementary Table 6)."
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [],
+    "summary": "Atlas snippet about hair follicle development relevant to Companion layer.",
+    "categories": [
+      "markers",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "Inferred trajectory and pseudotime analysis of epidermal cells in the integrated prenatal skin and SkO data predicted the differentiation of POSTN + basal cells into two paths: ORS/CL trajectory, comprising DPYSL2 + basal cells, ORS and CL; and IRS trajectory, involving placode, matrix, cuticle/cortex and IRS (Fig. 2d, Extended Data Fig. 4a and Supplementary Table 7). Along the ORS/CL trajectory, we identified new genes upregulated by DPYSL2 + basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9) 25,26 (Extended Data Fig. 4b,c and Supplementary Table 7). AGR2 was downregulated along the IRS trajectory, whereas known matrix markers such as SHH and WNT10B 25,26 were upregulated (Extended Data Fig. 4b,c and Supplementary Table 7). Loss of AGR2, which functions in the assembly of cysteine-rich receptors enriched in HFs, promotes cell migration 27 . Our findings suggest that increased cellular migration in POSTN + basal cells may be involved in placode specification and dermal invagination."
+  },
+  {
+    "snippet_index": 7,
+    "quotes": [],
+    "summary": "Atlas snippet about hair follicle development relevant to Companion layer.",
+    "categories": [
+      "markers",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "Having mapped the differentiation of prenatal skin HFs, we leveraged this information to assess the extent to which genetic hair diseases have their roots in utero. Genes harbouring mutations known to cause reduced hair growth (hypotrichosis) or abnormally shaped hair (for example, pili torti) (Supplementary Table 12) were expressed along the ORS/CL trajectory, IRS trajectory and hair fibroblast trajectory pseudotimes (Extended Data Figs. 4f and 6a,b) and in prenatal HF cell Article states (Extended Data Fig. 6c). This finding suggested that these disorders result from dysfunctional HF development."
+  },
+  {
+    "snippet_index": 9,
+    "quotes": [],
+    "summary": "Atlas snippet about hair follicle development relevant to Companion layer.",
+    "categories": [
+      "markers",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "A similar approach was adopted for assessing interactions between HF dermal and epidermal cells in prenatal skin: for each subset of hair follicle dermal cells, the interactions with early epithelial cells (<=11 PCW; immature basal) or late epithelial cells (>=12 PCW; DPYSL2 + basal, POSTN + basal, placode, matrix, ORS, CL, IRS, cuticle/cortex) were aggregated, and the top 10 interactions per cell pair visualized using a heatmap (Fig. 2g)."
+  }
+]

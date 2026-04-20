@@ -1,0 +1,58 @@
+{
+  "markers": [
+    {
+      "gene": "PROX1",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "gene": "PDPN",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "gene": "LYVE1",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "gene": "CCL21",
+      "evidence_type": "differentially expressed gene (DE analysis)",
+      "source_table": "Supplementary Table 5"
+    },
+    {
+      "gene": "NRP2",
+      "evidence_type": "differentially expressed gene (DE analysis)",
+      "source_table": "Supplementary Table 5"
+    },
+    {
+      "gene": "GJA4",
+      "evidence_type": "differentially expressed gene (DE analysis)",
+      "source_table": "Supplementary Table 5"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "LE2 cells are enriched in the submucosal region of adult colon",
+      "category": "spatial location",
+      "source_table": "Supplementary Table 7"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Lymphatic Endothelial 2 (LE2): PROX1, PDPN, LYVE1",
+      "source_file": "Supplementary Table 2",
+      "context": "Marker genes used to annotate lymphatic endothelial cell subtypes."
+    },
+    {
+      "quote": "LE2 DE signature: CCL21, NRP2, GJA4",
+      "source_file": "Supplementary Table 5",
+      "context": "Top differentially expressed genes for lymphatic endothelial clusters."
+    },
+    {
+      "quote": "LE2 cells are enriched in the submucosal region of adult colon",
+      "source_file": "Supplementary Table 7",
+      "context": "Spatial enrichment analysis of endothelial cell subtypes across gut regions."
+    }
+  ]
+}

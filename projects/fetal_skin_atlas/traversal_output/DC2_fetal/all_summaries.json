@@ -1,0 +1,134 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses",
+      "Bar plot showing cell type co-location ... for selected cell type pairs (pre-dermal condensate and immune cells: DC1, DC2, LTi and ILC3)"
+    ],
+    "summary": "The atlas paper identifies DC2 as one of the immune cell types that co-locates with pre-dermal condensate cells in prenatal skin spatial transcriptomics (Visium) data. This spatial association suggests DC2 may participate in the microenvironment supporting early hair follicle formation.",
+    "categories": ["location", "function"],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "Gopee et al.",
+    "source_year": 2024
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "Mature adult skin contains the dendritic cell (DC) subsets DC1 and DC2, as well as macrophages, all of which have been identified in first-trimester human skin and closely resemble their adult counterparts.",
+      "DC1 and DC2 have been identified in fetal skin prior to bone marrow production",
+      "as such they may originate from both fetal liver- and bone marrow-derived precursors"
+    ],
+    "summary": "Botting & Haniffa (2020) confirm that DC2 is present in first-trimester human skin and closely resembles adult DC2. DC2 is identified before bone marrow production begins, suggesting dual origin from fetal liver and later bone marrow precursors.",
+    "categories": ["location", "development"],
+    "source_corpus_id": "CorpusId:218615208",
+    "source_title": "The developing immune network in human prenatal skin",
+    "source_authors": "R. Botting, M. Haniffa",
+    "source_year": 2020
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "Major human dendritic cell (DC) subsets include plasmacytoid DCs (pDC), conventional DC1 (cDC1) and DC2 (cDC2), monocyte-derived DCs (moDC), and Langerhans cells (LCs)",
+      "fetal DCs have been observed as early as 6 PCW, suggesting that FL HSCs may also generate DCs",
+      "Compared to adult DCs, fetal DCs possess an immature phenotype but can induce allogeneic T-cell proliferation upon culture",
+      "Their presence during early development is attributed to ensuring tolerogenic responses to self and maternal antigens"
+    ],
+    "summary": "Miah et al. (2021) review that cDC2 is a major human DC subset present from early prenatal development. Fetal DCs, including cDC2, have an immature phenotype compared to adult counterparts but retain functional capacity. Their early presence is attributed to tolerogenic functions.",
+    "categories": ["markers", "development", "function"],
+    "source_corpus_id": "CorpusId:233175971",
+    "source_title": "Prenatal Development and Function of Human Mononuclear Phagocytes",
+    "source_authors": "M. Miah, Issac Goh, M. Haniffa",
+    "source_year": 2021
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "we found the transcriptional profiles of DC subsets were conserved between adult and prenatal counterparts",
+      "DCs increased in proportional abundance across multiple tissues as previously described"
+    ],
+    "summary": "Suo et al. (2022) show through cross-organ prenatal atlas analysis that DC subsets (including cDC2) have conserved transcriptional profiles between prenatal and adult life, and that DCs increase in abundance across gestation in multiple tissues.",
+    "categories": ["development"],
+    "source_corpus_id": "CorpusId:248122197",
+    "source_title": "Mapping the developing human immune system across organs",
+    "source_authors": "Suo et al.",
+    "source_year": 2022
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "in early life, when the immune system develops, cDC2 exhibit a dual hematopoietic origin and, like other myeloid and lymphoid cells, develop in waves",
+      "cDC2 in early and adult life, however, are exposed to distinct cytokine environments that shape their transcriptional profile and alter their ability to sense pathogens, secrete cytokines and polarize T cells",
+      "cDC2 in early life, despite being distinct from cDC2 in adult life, are functionally competent and can induce T cell responses"
+    ],
+    "summary": "Papaioannou et al. (2021) demonstrate in mice that early life cDC2 have dual hematopoietic origins and develop in waves. Despite being exposed to distinct cytokine environments compared to adult cDC2, they are functionally competent and can induce T cell responses. Environmental signals, rather than ontogeny, primarily shape cDC2 function.",
+    "categories": ["development", "function"],
+    "source_corpus_id": "CorpusId:256688953",
+    "source_title": "Environmental signals rather than layered ontogeny imprint the function of type 2 conventional dendritic cells in young and adult mice",
+    "source_authors": "Papaioannou et al.",
+    "source_year": 2021
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "The major population of myeloid cDC in human blood, tissues and lymphoid organs are characterized as myeloid cDC2 expressing CD1c, CD2, FceR1, SIRPA and the myeloid antigens CD11b, CD11c, CD13 and CD33",
+      "Recent transcriptional profiling has identified CLEC10A (CD301a), VEGFA and FCGR2A (CD32A) as consistent cDC2 markers"
+    ],
+    "summary": "Collin & Bigley (2018) define cDC2 as the major myeloid cDC population expressing CD1c, CD2, FceR1, SIRPA, CD11b, CD11c, CD13, and CD33. CLEC10A is identified as a consistent cDC2 marker. Two subsets exist: a 'DC-like' CD5-high and a 'monocyte-like' CD14-expressing subset.",
+    "categories": ["markers"],
+    "source_corpus_id": "CorpusId:4910432",
+    "source_title": "Human dendritic cell subsets: an update",
+    "source_authors": "M. Collin, V. Bigley",
+    "source_year": 2018
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [
+      "we identified CLEC10A (CD301, macrophage galactose-type C-type lectin) as a specific marker for human CD1c+ DCs",
+      "CLEC10A rapidly internalizes into human CD1c+ DCs upon binding of a monoclonal antibody directed against CLEC10A"
+    ],
+    "summary": "Heger et al. (2018) identify CLEC10A as a specific marker for human CD1c+ cDC2, demonstrating its rapid internalization and role in enhancing TLR7/8-induced cytokine secretion (TNFalpha, IL-8, IL-10).",
+    "categories": ["markers", "function"],
+    "source_corpus_id": "CorpusId:13708172",
+    "source_title": "CLEC10A Is a Specific Marker for Human CD1c+ Dendritic Cells and Enhances Their Toll-Like Receptor 7/8-Induced Cytokine Secretion",
+    "source_authors": "L. Heger et al.",
+    "source_year": 2018
+  },
+  {
+    "snippet_index": 7,
+    "quotes": [
+      "CD1c+ CLEC10A+ CLEC4Alo cDC2 and CD1clo CLEC10A- CLEC4Ahi cDC2s are human counterparts of cDC2B and cDC2A, respectively"
+    ],
+    "summary": "Brown et al. (2019) identify two transcriptionally distinct cDC2 subsets in human spleen: cDC2A (CLEC10A-negative, CLEC4A-high) and cDC2B (CD1c+, CLEC10A+), which differ in T-bet expression and functional properties.",
+    "categories": ["markers"],
+    "source_corpus_id": "CorpusId:204851425",
+    "source_title": "Transcriptional Basis of Mouse and Human Dendritic Cell Heterogeneity",
+    "source_authors": "Brown et al.",
+    "source_year": 2019
+  },
+  {
+    "snippet_index": 8,
+    "quotes": [
+      "CD301b+ type 2 conventional dendritic cells (DC) as a subset in neonatal skin specifically capable of uptake, presentation and generation of regulatory T cells (Tregs) to commensal antigens",
+      "approximately two thirds of neonatal skin DC2s were CD301b+ by surface staining"
+    ],
+    "summary": "Weckel et al. (2022) identify CD301b+ cDC2 in neonatal skin as a critical subset for generating regulatory T cells specific to commensal bacteria. Approximately two-thirds of neonatal skin DC2s express CD301b, and these cells are enriched for phagocytic and tolerogenic markers.",
+    "categories": ["function", "markers"],
+    "source_corpus_id": "CorpusId:250094015",
+    "source_title": "Early life tolerance depends on a subset of specialized dendritic cells and is reinforced by the skin microbiota",
+    "source_authors": "Weckel et al.",
+    "source_year": 2022
+  },
+  {
+    "snippet_index": 9,
+    "quotes": [
+      "we found a distinction between CD206+CD1c+CD11c+ DDCs and CD206+CD209+CD1c- skin macrophages by 9 weeks estimated gestational age (EGA)"
+    ],
+    "summary": "Schuster et al. (2012) demonstrate that CD1c-positive dermal dendritic cells (consistent with DC2/cDC2) can be distinguished from macrophages by 9 weeks gestational age in prenatal human skin, establishing early presence of this DC subset.",
+    "categories": ["markers", "development"],
+    "source_corpus_id": "CorpusId:7818908",
+    "source_title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
+    "source_authors": "Schuster et al.",
+    "source_year": 2012
+  }
+]

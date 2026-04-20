@@ -1,0 +1,63 @@
+{
+  "markers": [
+    {
+      "gene": "CD68",
+      "evidence_type": "known macrophage marker",
+      "source_table": "Supplementary Table S4"
+    },
+    {
+      "gene": "LYZ",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S4"
+    },
+    {
+      "gene": "C1QB",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S4"
+    },
+    {
+      "gene": "C1QA",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S4"
+    },
+    {
+      "gene": "C1QC",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S4"
+    },
+    {
+      "gene": "FCGR3A",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S4"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Macro_1 cells are primarily localized in the lamina propria",
+      "category": "spatial information",
+      "source_table": "Supplementary Table S5"
+    },
+    {
+      "finding": "Macro_1 cluster exhibits enrichment for genes involved in complement activation",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table S6"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Macro_1 cluster is characterized by high expression of CD68, LYZ, C1QA, C1QB, and C1QC",
+      "source_file": "Supplementary Table S4",
+      "context": "Cluster marker gene table"
+    },
+    {
+      "quote": "macro_1 cells were mainly found in the lamina propria region",
+      "source_file": "Supplementary Table S5",
+      "context": "Table of spatial localization by cluster"
+    },
+    {
+      "quote": "Gene ontology analysis for Macro_1 cluster revealed enrichment in complement activation (GO:0006956)",
+      "source_file": "Supplementary Table S6",
+      "context": "Functional enrichment analysis"
+    }
+  ]
+}

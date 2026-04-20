@@ -1,0 +1,10 @@
+{
+  "label": "Placode",
+  "resolved_names": [
+    "Placode"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Cell type 'Placode' identified in the prenatal skin atlas (Gopee et al., 2024)."
+}

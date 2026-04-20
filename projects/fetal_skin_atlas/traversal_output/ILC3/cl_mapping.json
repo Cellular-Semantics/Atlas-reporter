@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "ILC3",
+  "working_definition": "A group 3 innate lymphoid cell present in prenatal human skin from early gestation, characterized by expression of the transcription factor RORgammat (RORC). In this atlas, ILC3 cells are predicted to co-locate and interact with pre-dermal condensate cells through CXCL12-CXCR4 and CXCL12-DPP4 ligand-receptor signals, suggesting a role in hair follicle morphogenesis. ILC3 are RORgammat-dependent innate lymphoid cells capable of producing IL-17 and/or IL-22.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'group 3 innate lymphoid cell' in CL ontology",
+    "snippet_search: 'ILC3 innate lymphoid cell type 3 prenatal skin' scoped to atlas DOI:10.1038/s41586-024-08002-x",
+    "snippet_search: 'ILC3 group 3 innate lymphoid cell fetal prenatal skin RORC RORgammat development hair follicle' broad search"
+  ],
+  "best_match": {
+    "cl_term": "group 3 innate lymphoid cell",
+    "cl_id": "CL:0001071",
+    "cl_definition": "An innate lymphoid cell that constituitively expresses RORgt and is capable of expressing IL17A and/or IL-22.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The ILC3 population identified in the prenatal skin atlas is characterized as an RORgammat-dependent innate lymphoid cell that co-locates with pre-dermal condensate cells. The CL:0001071 definition describes an innate lymphoid cell that constitutively expresses RORgammat and is capable of expressing IL-17A and/or IL-22, which matches the atlas ILC3 identity. While the atlas ILC3 population likely includes both LTi-like and non-LTi subsets (as shown by Liu et al., 2021 in fetal tissues), the general CL:0001071 term appropriately captures the cell type identity at the resolution provided in this atlas.",
+  "other_candidates": [],
+  "recommendation": "Map to CL:0001071 (group 3 innate lymphoid cell). No new CL term is needed.",
+  "new_term_needed": false
+}

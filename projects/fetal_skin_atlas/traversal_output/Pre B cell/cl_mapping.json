@@ -1,0 +1,33 @@
+{
+  "cell_type_label": "Pre B cell",
+  "working_definition": "A late B cell precursor identified in fetal skin, characterized by expression of the pre-B cell receptor (surrogate light chain paired with mu heavy chain) and cytoplasmic IgM. Pre-B cells are detected in fetal skin from as early as 7-8 PCW in related fetal haematopoiesis studies.",
+  "searches_performed": [
+    "pre-B cell (CL, OLS4)",
+    "precursor B cell (CL)"
+  ],
+  "best_match": {
+    "cl_term": "precursor B cell",
+    "cl_id": "CL:0000817",
+    "cl_definition": "A precursor B cell is a B cell with the phenotype CD19-positive.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000817 'precursor B cell' (also known as pre-B cell) is an exact match for the 'Pre B cell' annotation in the fetal skin atlas. The CL term represents the developmental stage at which the pre-BCR is expressed and light chain rearrangement is initiated. The atlas annotation corresponds to this well-established B cell developmental stage.",
+  "other_candidates": [
+    {
+      "cl_term": "large pre-B-II cell",
+      "cl_id": "CL:0000957",
+      "cl_definition": "A large pre-B-II cell expressing the pre-BCR and undergoing clonal expansion.",
+      "reason_rejected": "Too specific: the atlas annotation 'Pre B cell' likely encompasses both large and small pre-B cell stages."
+    },
+    {
+      "cl_term": "pre-B-I cell",
+      "cl_id": "CL:0000956",
+      "cl_definition": "A pre-B-I cell at the earliest pre-B stage.",
+      "reason_rejected": "Too specific: the atlas does not distinguish pre-B-I from pre-B-II stages."
+    }
+  ],
+  "recommendation": "Use CL:0000817 (precursor B cell). This is the standard CL term for the pre-B cell stage.",
+  "new_term_needed": false
+}

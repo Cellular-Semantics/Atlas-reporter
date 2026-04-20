@@ -1,0 +1,11 @@
+{
+  "label": "MEMP - Early erythroid",
+  "resolved_names": [
+    "MEMP - Early erythroid",
+    "megakaryocyte-erythroid-mast cell progenitor biased toward erythroid lineage"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "MEMP defined in atlas as megakaryocyte-erythroid-mast cell progenitor; Early erythroid suffix indicates erythroid-biased substate"
+}

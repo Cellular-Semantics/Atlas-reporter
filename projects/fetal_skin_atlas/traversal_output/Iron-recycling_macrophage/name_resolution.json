@@ -1,0 +1,8 @@
+{
+  "label": "Iron-recycling macrophage",
+  "resolved_names": ["Iron-recycling macrophage", "iron-recycling macrophage", "iron-recycling"],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas paper Gopee et al. (2024) explicitly names 'iron-recycling' as one of four macrophage subsets in prenatal skin (alongside LYVE1+, MHCII+, and TML macrophages). The macrophage subset annotations were derived from marker genes from Suo et al. (2022). The term 'iron-recycling macrophage' appears in figure legends (Extended Data Fig. 8c) and in the main text section 'Macrophages support prenatal skin angiogenesis'."
+}

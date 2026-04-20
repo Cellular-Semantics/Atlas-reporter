@@ -1,0 +1,10 @@
+{
+  "label": "Inner root sheath",
+  "resolved_names": [
+    "inner root sheath cell"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "The atlas identifies IRS cells in both prenatal skin and SkO as part of the hair follicle. CL term inner root sheath cell (CL:0002560) is an exact match."
+}

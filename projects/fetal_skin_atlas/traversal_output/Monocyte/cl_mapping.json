@@ -1,0 +1,33 @@
+{
+  "cell_type_label": "Monocyte",
+  "working_definition": "A myeloid mononuclear leukocyte present in prenatal human skin dermis from early gestation, characterised by expression of CD14, S100A8, S100A9, and FCN1. In prenatal tissues, monocytes undergo a CXCR4hi-to-CCR2hi transition accompanying egress from bone marrow, followed by further maturation to an IL1Bhi phenotype in peripheral tissues including skin.",
+  "searches_performed": [
+    "monocyte (CL, OLS4 searchClasses, pageSize=10)",
+    "classical monocyte (CL, OLS4 searchClasses)"
+  ],
+  "best_match": {
+    "cl_term": "classical monocyte",
+    "cl_id": "CL:0000860",
+    "cl_definition": "A monocyte that responds rapidly to microbial stimuli by secreting cytokines and antimicrobial factors and which is characterized by high expression of CCR2 in both rodents and humans, negative for the lineage markers CD3, CD19, and CD20, and of larger size than non-classical monocytes.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The 'Monocyte' label in the Gopee et al. atlas likely encompasses the CCR2hi/IL1Bhi monocyte populations identified by Suo et al. (2022), which correspond to classical monocytes (CD14++CD16-). However, in prenatal skin, the monocyte population may include developmental intermediates (CXCR4hi) and tissue-adapted states (IL1Bhi) that span a broader range than the adult 'classical monocyte' definition. CL:0000860 is used as a broad match because it captures the predominant monocyte subset but the atlas label may encompass additional developmental monocyte states.",
+  "other_candidates": [
+    {
+      "cl_term": "monocyte",
+      "cl_id": "CL:0000576",
+      "cl_definition": "Myeloid mononuclear recirculating leukocyte that can act as a precursor of tissue macrophages, osteoclasts and some populations of tissue dendritic cells.",
+      "reason_rejected": "Too broad; encompasses all monocyte subsets including non-classical and intermediate monocytes."
+    },
+    {
+      "cl_term": "CD14-positive monocyte",
+      "cl_id": "CL:0001054",
+      "cl_definition": "A monocyte that expresses CD14 and is negative for the lineage markers CD3, CD19, and CD20.",
+      "reason_rejected": "Reasonable alternative but defined primarily by surface marker rather than functional characteristics. CL:0000860 better captures the CCR2+ classical monocyte identity."
+    }
+  ],
+  "recommendation": "Use CL:0000860 (classical monocyte) as a broad match. The prenatal skin monocyte population likely corresponds predominantly to classical monocytes but may include developmental intermediates.",
+  "new_term_needed": false
+}

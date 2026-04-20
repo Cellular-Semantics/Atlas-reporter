@@ -1,0 +1,48 @@
+{
+  "markers": [
+    {
+      "gene": "CD14",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "LYZ",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "FCN1",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 4"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Monocytes are predominantly located in the peripheral blood compartment and are rare in tissue samples.",
+      "category": "spatial location",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "finding": "Differential expression analysis identified monocyte-specific genes including FCN1 and LYZ.",
+      "category": "differential expression",
+      "source_table": "Supplementary Table 4"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Monocyte cluster markers include CD14 and LYZ.",
+      "source_file": "Supplementary Table 3",
+      "context": "Cluster annotation"
+    },
+    {
+      "quote": "Monocytes are predominantly located in the peripheral blood compartment and are rare in tissue samples.",
+      "source_file": "Supplementary Table 2",
+      "context": "Cell type spatial distribution"
+    },
+    {
+      "quote": "Differential expression analysis identified monocyte-specific genes including FCN1 and LYZ.",
+      "source_file": "Supplementary Table 4",
+      "context": "DEG results for adult immune cells"
+    }
+  ]
+}

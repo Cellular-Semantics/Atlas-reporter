@@ -1,0 +1,10 @@
+{
+  "label": "VE1",
+  "resolved_names": [
+    "Vascular endothelial 1"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "Cluster label 'VE1' is mapped to 'Vascular endothelial 1' in Extended Data Table 6 and figure legends (e.g., Extended Data Fig. 6, main text, and Supplementary Table 3) where endothelial cell subclusters are described. The authors use 'VE1' as an abbreviation for 'Vascular endothelial 1' in both prenatal and adult skin comparisons."
+}

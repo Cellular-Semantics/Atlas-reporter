@@ -1,0 +1,42 @@
+[
+  {
+    "corpusId": "273400864",
+    "summary": "The prenatal skin atlas identifies Innate T type1 as a fetal-scope cell type in the T cell lineage. T cells emerged later in gestation accompanying thymus, bone marrow and spleen formation from around 10 PCW. Single-cell TCR sequencing was used to resolve T cell subsets. Pre-dermal condensate cells co-located with dendritic and lymphoid cells. Innate immune cells were present from early gestation.",
+    "key_quotes": [
+      "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW",
+      "Single-cell alphabeta T cell receptor (TCR) sequencing data were generated to accurately resolve T cell subsets",
+      "pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses"
+    ]
+  },
+  {
+    "corpusId": "248122197",
+    "summary": "Suo et al. comprehensively characterize unconventional T cells in the developing human immune system. Type 1 and 3 innate T cells were almost negligible in postnatal thymus, indicating they are developmental-specific unconventional T cells. Type 1 innate T cells colocalized with type 1 DCs (DC1) near the cortico-medullary junction in the thymic medulla. SP_T cells differentiated in vitro were dominated by ZBTB16-expressing unconventional T cells most similar to in vivo type 1 innate T cells, supporting the thymocyte-thymocyte (T-T) selection origin hypothesis. Unconventional T cells expressed a varied alpha-beta TCR repertoire with PLZF (ZBTB16) expression.",
+    "key_quotes": [
+      "Type 1 and 3 innate T cells were almost negligible in postnatal thymus, whereas CD8AA T cell abundance rebounded in pediatric age groups before a further decline in adulthood. Thus, type 1 and 3 innate T cells, but not CD8AA, appear to be developmentalspecific unconventional T cells.",
+      "CD8AA and type 1 innate T cells colocalized with type 1 DCs (DC1) near the cortico-medullary junction",
+      "SP_T cells differentiated in vitro were dominated by ZBTB16-expressing unconventional T cells. Both label transfer and similarity scoring on merged embeddings showed that the in vitro SP_T were most similar to in vivo type 1 innate T cells. Thus, our in vitro experiments support the T-T origin hypothesis of unconventional T cells.",
+      "both innate-like B and T cells were abundant during early development and their precise role at this developmental time-point warrants further investigations. Their reported debris-removal, antigen-reactivity, and regulatory functions may confer these prenatal innate-like B and T cells with tissue-homeostatic and important immunological roles."
+    ]
+  },
+  {
+    "corpusId": "227334677",
+    "summary": "Dhariwala et al. studied the immune landscape of developing human skin (fetal vs adult) using CyTOF. They note that their ability to comment on innate-type T cells (MAIT, gamma-delta, NKT) in fetal skin was limited by existing hurdles. However, they demonstrated that fetal skin contains lymphocytes with a memory signature.",
+    "key_quotes": [
+      "Our ability to comment on innate-type T cells (i.e., MAIT, gd, and NK T cells) in fetal skin was also limited by existing hurdles in combining tetramers with CyTOF and by the total number of fetal skin leukocytes we had to analyze."
+    ]
+  },
+  {
+    "corpusId": "215516424",
+    "summary": "Rackaityte and Halkias review fetal T cell tolerance and immune regulation, detailing how innate-like T cells (gamma-delta, iNKT, MAIT) are present in the fetus. These cells share a semi-invariant TCR repertoire, non-classical MHC restriction, and rapid production of inflammatory cytokines. Fetal PLZF+CD4+ T cells share attributes with both conventional and innate-like T cells.",
+    "key_quotes": [
+      "A number of innate-like T cells capable of Th1 cytokine production are present in the human fetus, including gammadelta T cells, invariant natural killer T (iNKT) cells, and mucosa-associated invariant T (MAIT) cells. These cells share certain key features: a semi-invariant TCR repertoire, non-classical MHC restriction, and rapid production of inflammatory cytokines such as IFN-gamma and TNF-alpha"
+    ]
+  },
+  {
+    "corpusId": "266163732",
+    "summary": "Loh et al. explore the transcriptional landscape of innate-like T cells (Tinn) compared to conventional T cells (Tconv) using single-cell RNA sequencing. In human blood, the majority of Tinn cells share an effector program with unique chemokine/cytokine receptors and cytotoxic molecules. Unlike in mouse, human Tinn cells do not differentiate into multiple effector subsets but develop a mixed type I/type III effector potential.",
+    "key_quotes": [
+      "Unlike the mouse, human Tinn cells do not differentiate into multiple effector subsets but develop a mixed type I/type III effector potential."
+    ]
+  }
+]

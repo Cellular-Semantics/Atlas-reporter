@@ -1,0 +1,71 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "undifferentiated KC (clusters 1, 5), proliferating (cluster 2), differentiated KC (clusters 3, 4, 6, 7), differentiated KC* (cluster 8)",
+      "Proliferating keratinocytes (CDK1+,PCNA+) have lower expression of suprabasal cell transcripts e.g. KRT1, KRT10 that characterize differentiated keratinocytes"
+    ],
+    "summary": "Reynolds et al. Figure 4d legend provides the complete cluster-to-group mapping: c2 is the proliferating keratinocyte cluster, defined by CDK1 and PCNA expression with lower levels of suprabasal keratins KRT1/KRT10.",
+    "categories": ["markers", "development"],
+    "source_corpus_id": "CorpusId:231666430",
+    "source_title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "source_authors": "G. Reynolds et al.",
+    "source_year": 2021,
+    "snippet": "FDG in (a) annotated by Leiden clustering of eight groups; undifferentiated KC (clusters 1, 5), proliferating (cluster 2), differentiated KC (clusters 3, 4, 6, 7), differentiated KC* (cluster 8). Proliferating keratinocytes (CDK1+,PCNA+) have lower expression of suprabasal cell transcripts e.g. KRT1, KRT10 that characterize differentiated keratinocytes."
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "One showed coordinate elevation of more than a dozen well-recognized DNA synthesis and cell division transcripts, such as PCNA and KI67. We therefore termed this cluster 'mitotic.'",
+      "The four remaining keratinocyte clusters all showed intermediate levels of KRT5 and KRT14"
+    ],
+    "summary": "Cheng et al. identified the equivalent 'mitotic' cluster in their earlier epidermal scRNA-seq, characterised by coordinate elevation of DNA synthesis and cell division transcripts (PCNA, KI67). These cells have intermediate KRT5/KRT14 levels — neither fully basal nor suprabasal.",
+    "categories": ["markers", "function"],
+    "source_corpus_id": "CorpusId:53025174",
+    "source_title": "Transcriptional Programming of Normal and Inflamed Human Epidermis at Single-Cell Resolution",
+    "source_authors": "Jeffrey B. Cheng et al.",
+    "source_year": 2018,
+    "snippet": "The four remaining keratinocyte clusters all showed intermediate levels of KRT5 and KRT14. One showed coordinate elevation of more than a dozen well-recognized DNA synthesis and cell division transcripts, such as PCNA and KI67. We therefore termed this cluster 'mitotic.'"
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "The proliferation cluster expresses high levels of cycling cells, including CDK1 and MKI67",
+      "On the basis of the expression of K5 and K14, we could assign four clusters to the basal layerdbasal I, II, and III, and proliferationdin good agreement with scRNA-seq of neonatal foreskin keratinocytes"
+    ],
+    "summary": "Negri & Watt's re-analysis of the Reynolds dataset confirmed the proliferation cluster (CDK1+/MKI67+) as one of four basal-layer clusters alongside basal I, II, and III. This places proliferating keratinocytes within the basal compartment.",
+    "categories": ["markers", "location"],
+    "source_corpus_id": "CorpusId:248783831",
+    "source_title": "Understanding Human Epidermal Stem Cells at Single-Cell Resolution",
+    "source_authors": "V. A. Negri, F. Watt",
+    "source_year": 2022,
+    "snippet": "We were able to identify 13 distinct keratinocyte clusters. On the basis of the expression of K5 and K14, we could assign four clusters to the basal layerdbasal I, II, and III, and proliferationdin good agreement with scRNA-seq of neonatal foreskin keratinocytes. The proliferation cluster expresses high levels of cycling cells, including CDK1 and MKI67."
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "psoriatic epidermis is remarkable for expansion of the mitotic subfraction",
+      "charting these cell cycle-related transcripts against KRT10 expression in our data suggests that they remain active well into suprabasal layers"
+    ],
+    "summary": "Cheng et al. found that the mitotic (proliferating) keratinocyte fraction is markedly expanded in psoriatic epidermis, and that cell cycle activity extends into suprabasal layers rather than being confined to the basal layer.",
+    "categories": ["function", "location"],
+    "source_corpus_id": "CorpusId:53025174",
+    "source_title": "Transcriptional Programming of Normal and Inflamed Human Epidermis at Single-Cell Resolution",
+    "source_authors": "Jeffrey B. Cheng et al.",
+    "source_year": 2018,
+    "snippet": "In addition to enrichment for channel cells, psoriatic epidermis is remarkable for expansion of the mitotic subfraction. Although the dividing fraction of keratinocytes is commonly assigned to the stratum basale, charting these cell cycle-related transcripts against KRT10 expression in our data suggests that they remain active well into suprabasal layers."
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "slowly cycling stem cell that produces daughterdtransit-amplifyingdcells that undergo a few rounds of divisions before moving into the suprabasal layers and undergoing terminal differentiation"
+    ],
+    "summary": "Negri & Watt review the classical model of epidermal proliferation: slowly cycling stem cells produce transit-amplifying daughter cells that undergo a few rounds of division before suprabasal migration and terminal differentiation. The proliferating (c2) cluster likely captures these actively dividing transit-amplifying cells.",
+    "categories": ["function", "development"],
+    "source_corpus_id": "CorpusId:248783831",
+    "source_title": "Understanding Human Epidermal Stem Cells at Single-Cell Resolution",
+    "source_authors": "V. A. Negri, F. Watt",
+    "source_year": 2022,
+    "snippet": "Basal cells at the center of each column divide less frequently than those at the periphery, leading to the concept of a central, slowly cycling stem cell that produces daughterdtransit-amplifyingdcells that undergo a few rounds of divisions before moving into the suprabasal layers and undergoing terminal differentiation."
+  }
+]

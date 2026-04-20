@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "NK cell (Natural Killer cell)",
+  "working_definition": "A natural killer cell identified in prenatal human skin (7-17 PCW), characterized by expression of KLRF1, NKG7, GZMB, GNLY, and KLRD1. NK cells are innate lymphoid cells capable of spontaneous cytotoxicity against target cells via germline-encoded activation receptors and MHC class I-dependent inhibition. In fetal skin, NK cells are among the most abundant immune cell types after macrophages, appearing as early as 8 PCW, and express genes for perforin, killer cell lectin receptors (KLRs), interferon-gamma, and multiple granzymes, resembling functionally mature NK cells. They co-locate with dendritic and other lymphoid cells in pre-dermal condensate microenvironments.",
+  "searches_performed": [
+    "natural killer cell (OLS4, all ontologies)",
+    "NK cell innate lymphoid (OLS4, all ontologies)"
+  ],
+  "best_match": {
+    "cl_term": "natural killer cell",
+    "cl_id": "CL:0000623",
+    "cl_definition": "A lymphocyte that can spontaneously kill a variety of target cells without prior antigenic stimulation via germline encoded activation receptors and target cell inhibition based on MHC class I expression.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000623 (natural killer cell) matches the NK cell cluster in the fetal skin atlas on all defining criteria: spontaneous cytotoxicity, germline-encoded activation receptors (including KLRs), and MHC class I-dependent target inhibition. The atlas markers (KLRF1, NKG7, GZMB, GNLY, KLRD1) are canonical NK cell markers. Botting & Haniffa (2020) confirm that NK cells in first-trimester human skin express perforin, KLRs, IFN-gamma, and granzymes, showing resemblance to functionally mature NK cells. Although the CL definition does not specify tissue location, the cell identity is unambiguous. No new term is needed.",
+  "other_candidates": [
+    {
+      "cl_term": "group 1 innate lymphoid cell",
+      "cl_id": "CL:0001065",
+      "cl_definition": "An innate lymphoid cell in the ILC1 subset that is T-bet positive and may be IFN-gamma positive.",
+      "reason_rejected": "ILC1 and NK cells are developmentally and functionally distinct. NK cells are cytotoxic and Eomes-positive, while ILC1s are non-cytotoxic helper-like cells. The atlas annotates NK cells as a separate cluster from ILC1."
+    }
+  ],
+  "recommendation": "Use CL:0000623 (natural killer cell). This is a precise exact match for the NK cell population in prenatal skin. The CL definition captures the key functional attributes. No modifications to the existing CL term are required.",
+  "new_term_needed": false
+}

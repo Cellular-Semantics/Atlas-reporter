@@ -1,0 +1,48 @@
+{
+  "markers": [
+    {
+      "gene": "CD68",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table S6"
+    },
+    {
+      "gene": "CD163",
+      "evidence_type": "differential expression (DE) analysis",
+      "source_table": "Supplementary Table S6"
+    },
+    {
+      "gene": "MSR1",
+      "evidence_type": "differential expression (DE) analysis",
+      "source_table": "Supplementary Table S6"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Macro_2 is spatially localized in the dermis layer of adult skin",
+      "category": "spatial location",
+      "source_table": "Supplementary Table S8"
+    },
+    {
+      "finding": "Macro_2 cluster exhibits increased expression of antigen-presentation genes, consistent with immune surveillance function",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table S7"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Macro_2: (CD68, CD163, MSR1)",
+      "source_file": "Supplementary Table S6",
+      "context": "Marker genes identified for each macrophage subtype based on DE analysis results."
+    },
+    {
+      "quote": "Macro_2 is primarily located in the dermis layer of adult skin, as identified by spatial transcriptomics.",
+      "source_file": "Supplementary Table S8",
+      "context": "Spatial distribution of major skin cell types."
+    },
+    {
+      "quote": "The Macro_2 cluster exhibits increased expression of genes associated with antigen processing and presentation (e.g., HLA-DRA, CD74), consistent with a role in immune surveillance.",
+      "source_file": "Supplementary Table S7",
+      "context": "Functional enrichment analysis of cell type clusters."
+    }
+  ]
+}

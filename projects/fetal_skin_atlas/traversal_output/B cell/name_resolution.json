@@ -1,0 +1,11 @@
+{
+  "label": "B cell",
+  "resolved_names": [
+    "B cell",
+    "B lymphocyte"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The label 'B cell' is used by the authors in the main text (Gopee et al., 2024, doi:10.1038/s41586-024-08002-x) and supplementary material. The paper states: 'B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW'. B cells are annotated as a fine-grained cell state within the fetal scope of the atlas."
+}

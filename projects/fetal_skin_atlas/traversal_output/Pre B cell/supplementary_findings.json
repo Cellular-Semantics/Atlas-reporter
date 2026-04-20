@@ -1,0 +1,16 @@
+{
+  "markers": [
+    "Cytoplasmic IgM (mu heavy chain)", "Pre-BCR (surrogate light chain)", "CD19", "B220 (PTPRC)"
+  ],
+  "other_findings": [
+    "Pre-B cells are detected between 7-8 PCW in fetal liver, but mature B cells only after 9 PCW (Popescu et al., 2019)",
+    "Pre-B cells represent a late precursor stage before immature B cell formation",
+    "Express the pre-B cell receptor on the membrane",
+    "Pre-B cells in NLT (non-lymphoid tissues including skin) are present (Popescu et al., 2019)",
+    "Pre-B cells undergo Ig light chain rearrangement"
+  ],
+  "evidence_quotes": [
+    "Pre-B cells are detected between 7-8 PCW, but mature B cells only after 9 PCW",
+    "Comparing liver with yolk sac and NLT, pro-B, pre-B and B cells are present in NLT but HSC/MPPs and pre pro-B cells are absent"
+  ]
+}

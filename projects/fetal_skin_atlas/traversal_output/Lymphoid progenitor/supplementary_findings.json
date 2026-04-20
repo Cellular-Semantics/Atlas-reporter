@@ -1,0 +1,31 @@
+{
+  "markers": [],
+  "other_findings": [
+    "Lymphoid progenitors detected in first-trimester fetal skin by scRNAseq (Popescu et al., 2019)",
+    "Lymphocyte precursors were more abundant in embryonic than fetal skin",
+    "ILC precursors identified in fetal skin from 8 PCW",
+    "Lymphoid progenitors may differentiate in situ within the fetal dermis"
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "While T-cells were only detected in fetal skin after thymic production, natural killer (NK) cells and innate lymphoid cell (ILC) precursors have been identified in skin as early as 8 PCW.",
+      "source_file": "Botting and Haniffa 2020 (CorpusId:218615208)",
+      "context": "ILC precursors detected in fetal skin from 8 PCW"
+    },
+    {
+      "quote": "s well as ILC precursors, lymphocyte precursors were also identified in first-trimester skin by scRNAseq, where they were found to be more abundant in embryonic than fetal skin.",
+      "source_file": "Botting and Haniffa 2020 (CorpusId:218615208)",
+      "context": "Lymphocyte precursors in first-trimester fetal skin"
+    },
+    {
+      "quote": "The presence of megakaryocyte-erythrocyte-mast cell progenitors (MEMPs), lymphocyte precursors, B-cell progenitors, ILC precursors and their progeny 41 indicates differentiation of these lineages may be supported within developing dermis.",
+      "source_file": "Botting and Haniffa 2020 (CorpusId:218615208)",
+      "context": "Multiple progenitor lineages differentiating in fetal dermis"
+    },
+    {
+      "quote": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW",
+      "source_file": "Gopee et al. 2024 (CorpusId:273400864)",
+      "context": "Temporal immune cell composition in prenatal skin"
+    }
+  ]
+}

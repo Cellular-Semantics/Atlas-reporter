@@ -1,0 +1,12 @@
+{
+  "cell_type": "Pericytes",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Supplementary Table 3 provides DEGs used to annotate Pericytes in prenatal skin. Listed as fine-grained annotation under broad 'Mural cell' category.",
+    "organoid_comparison": "Even after 19 weeks of culture, mural cells (including pericytes) had a low probability of correspondence to adult skin cell states (Extended Data Fig. 2d, Supplementary Table 5).",
+    "microenvironment": "Mural cells co-locate with endothelial and neural cells in vascular microenvironments in prenatal skin.",
+    "macrophage_interactions": "Macrophage subsets co-locate with fibroblasts, neural cells and vascular cells (including mural cells) in distinct tissue microenvironments (Fig. 1d). LYVE1+ macrophages co-located with vascular cells and were predicted to interact through PDGFs and corresponding receptors (PDGFRalpha and PDGFRbeta).",
+    "temporal_presence": "Mural cells are present throughout gestation (Fig. 1c, Extended Data Fig. 1d, Supplementary Table 4)."
+  }
+}

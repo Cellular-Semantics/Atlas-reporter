@@ -1,0 +1,28 @@
+{
+  "cell_type_label": "moDC_3",
+  "working_definition": "A terminally mature monocyte-derived dendritic cell in adult human skin, identified by Reynolds et al. (2021) as the most differentiated moDC state at the convergence of the LC, myeloid DC, and mo-DC differentiation branches. Expresses DC maturation markers (CD83, CCR7, LAMP3, CD40, CD86), immunoregulatory genes (CD274, IDO1, CD200, PDCD1LG2, SOCS1), and migration genes (FSCN1, PLGRKT, TRAF1, BCL2A1, CFLAR, REL). This state represents the acquisition of a migratory DC signature with concurrent loss of subset identity genes.",
+  "searches_performed": [
+    "monocyte-derived dendritic cell (CL, OLS4)",
+    "myeloid dendritic cell (CL)",
+    "migratory dendritic cell (CL)"
+  ],
+  "best_match": {
+    "cl_term": "monocyte-derived dendritic cell",
+    "cl_id": "CL:0011031",
+    "cl_definition": "A dendritic cell that is derived from a monocyte.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0011031 (monocyte-derived dendritic cell) is the parent term for all monocyte-derived DCs. moDC_3 represents the terminally mature migratory state of this lineage, expressing a shared maturation/migration gene signature with LC4 and migratory DC. While the migratory phenotype is distinctive, it represents a convergent maturation state rather than a fundamentally distinct cell type, so the parent moDC term is appropriate.",
+  "other_candidates": [
+    {
+      "cl_term": "myeloid dendritic cell",
+      "cl_id": "CL:0000782",
+      "cl_definition": "A dendritic cell of the myeloid lineage.",
+      "reason_rejected": "Too broad; moDCs are a specific subset within myeloid DCs distinguished by their monocyte origin"
+    }
+  ],
+  "recommendation": "Use CL:0011031 (monocyte-derived dendritic cell) as a broad match. No new CL term is needed since moDC_3 represents a maturation state along the moDC continuum rather than a distinct cell type.",
+  "new_term_needed": false
+}

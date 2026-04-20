@@ -1,0 +1,80 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "Specific to stratified squamous epithelium, Langerhans cells (LCs) are of particular interest when studying developing skin and its immune environment.",
+      "LCs take up residence as early as 6 PCW.",
+      "In mice, skin LCs are of dual origin, arising from yolk sac macrophages and fetal liver monocytes, and whether the same is true for LCs in human skin remains unknown.",
+      "LCs go through morphological and phenotypic changes within skin; they grow larger, more dendritic, gain expression of Langerin and CD1a, and form Birbeck granules in a stepwise manner.",
+      "LCs are uniformly dendritic from 8 PCW, while surface expression and Birbeck granule formation continue to develop into the second trimester."
+    ],
+    "summary": "LCs in prenatal human skin are of particular interest due to their early establishment during development. They seed the epidermis as early as 6 PCW and undergo stepwise phenotypic maturation, becoming uniformly dendritic by 8 PCW. In mice, LCs derive from yolk sac macrophages and fetal liver monocytes. Their early establishment during embryogenesis, rather than postnatal seeding, suggests a functional role in the developing skin.",
+    "categories": ["location", "markers", "function", "developmental_timing"],
+    "source_corpus_id": "CorpusId:218615208",
+    "source_title": "The developing immune network in human prenatal skin",
+    "source_authors": "R. Botting, M. Haniffa",
+    "source_year": 2020,
+    "source_doi": "10.1111/imm.13192"
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "Langerhans cells (LCs) are antigen-presenting cells (APCs) that play important roles as immune sentinels in skin.",
+      "During human skin development, their precursors are first identified in the epidermis at 7-9 weeks estimated gestational age (EGA), based on the expression of CD45 (PTPRC), HLA-DR, CD1c and ATPase.",
+      "The distinguishing features of LCs in adult human epidermis, namely Birbeck granules, CD207/langerin, and CD1a are detectable only after 11 weeks EGA.",
+      "Not all HLA-DR-positive epidermal cells in embryonic human skin express the LC markers CD1a, CD1c or CD207/langerin, prompted us to hypothesize that during ontogeny the LC phenotype is acquired in the epidermis."
+    ],
+    "summary": "LC precursors colonize the developing human epidermis in an undifferentiated state at 7-9 weeks EGA, expressing CD45, HLA-DR, and CD1c. The definitive LC marker profile (CD207/langerin, CD1a, Birbeck granules) is acquired stepwise, becoming detectable only after 11 weeks EGA. The heterogeneous precursor pool in embryonic epidermis contrasts with the phenotypic uniformity of adult LCs.",
+    "categories": ["markers", "developmental_timing", "location"],
+    "source_corpus_id": "CorpusId:616832",
+    "source_title": "Human embryonic epidermis contains a diverse Langerhans cell precursor pool",
+    "source_authors": "C. Schuster et al.",
+    "source_year": 2014,
+    "source_doi": "10.1242/dev.102699"
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "Langerhans cell precursors initially arise from yolk sac progenitors, but are later superseded by fetal liver monocytes."
+    ],
+    "summary": "In mouse models, adult Langerhans cells derive predominantly from embryonic fetal liver monocytes, with a minor contribution from yolk sac-derived macrophages. This establishes a dual-origin model for LCs during development.",
+    "categories": ["ontogeny", "function"],
+    "source_corpus_id": "CorpusId:10280599",
+    "source_title": "Adult Langerhans cells derive predominantly from embryonic fetal liver monocytes with a minor contribution of yolk sac-derived macrophages",
+    "source_authors": "G. Hoeffel et al.",
+    "source_year": 2012,
+    "source_doi": "10.1084/jem.20120340"
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "CD45+HLA-DRhighCD1c+ dendritic cells (DCs) are already present in the epidermis and dermis at 9 wk estimated gestational age (EGA)",
+      "transforming growth factor beta1 production precedes Langerin and CD1a expression on CD45+CD1c+ Langerhans cell (LC) precursors",
+      "embryonic antigen-presenting cells (APCs) are able to phagocytose antigen, to up-regulate costimulatory molecules upon culture, and to efficiently stimulate T cells in a mixed lymphocyte reaction"
+    ],
+    "summary": "HLA-DR+CD1c+ DCs, including LC precursors, are present in human embryonic skin by 9 weeks EGA. TGF-beta1 production in the skin precedes LC maturation. Importantly, embryonic APCs are functionally competent: they can phagocytose antigen, upregulate costimulatory molecules, and stimulate T cells.",
+    "categories": ["function", "markers", "developmental_timing"],
+    "source_corpus_id": "CorpusId:6034676",
+    "source_title": "HLA-DR+ leukocytes acquire CD1 antigens in embryonic and fetal human skin and contain functional antigen-presenting cells",
+    "source_authors": "C. Schuster et al.",
+    "source_year": 2009,
+    "source_doi": "10.1084/jem.20081747"
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "Langerhans cells (LCs) are specialized antigen-presenting cells residing in the epidermis of the skin in close contact with neighboring keratinocytes.",
+      "LCs express the C-type lectin receptor Langerin, which induces the formation of Birbeck granules and other typical dendritic cell (DC) markers such as MHC class II molecules, CD11c, CD1a, and CD1c.",
+      "During embryonic development, LCs arise from yolk sac macrophages and fetal liver monocytes and later restore their numbers by local self-renewal in the absence of inflammation.",
+      "LC homeostasis crucially depends on the cytokine TGF-b that is produced by keratinocytes and LCs, acting in an autocrine feedback loop.",
+      "BMP7 is also involved in LC differentiation, especially expressed in the prenatal but also adult basal epidermal layers."
+    ],
+    "summary": "LCs reside in the epidermis in close contact with keratinocytes. They express langerin (CD207), CD1a, CD1c, MHCII, and CD11c. During embryonic development, LCs arise from yolk sac macrophages and fetal liver monocytes, then self-renew locally. TGF-beta and BMP7 (especially expressed in prenatal basal epidermis) are crucial for LC homeostasis and differentiation.",
+    "categories": ["markers", "location", "ontogeny", "function"],
+    "source_corpus_id": "CorpusId:219586844",
+    "source_title": "Notch-Mediated Generation of Monocyte-Derived Langerhans Cells: Phenotype and Function",
+    "source_authors": "L. Bellmann et al.",
+    "source_year": 2020,
+    "source_doi": "10.3389/fimmu.2020.566049"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "markers": [
+    {
+      "gene": "KLRF1",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "NKG7",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "GZMB",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "GNLY",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "KLRD1",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "The Natural Killer cell cluster was annotated based on high expression of KLRF1, NKG7, and GZMB.",
+      "category": "cluster annotation",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "finding": "NK cells are enriched in the stromal region of adult tissue.",
+      "category": "spatial localization",
+      "source_table": "Supplementary Table S6"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Natural Killer cell cluster annotated by high expression of KLRF1, NKG7, and GZMB.",
+      "source_file": "Supplementary Table S3",
+      "context": "Table of cluster marker genes and annotation rationale."
+    },
+    {
+      "quote": "Top differentially expressed genes for NK cells: KLRF1, NKG7, GZMB, GNLY, KLRD1.",
+      "source_file": "Supplementary Table S3",
+      "context": "Marker gene table showing DE genes for each cluster."
+    },
+    {
+      "quote": "NK cells are enriched in the stromal region of adult tissue.",
+      "source_file": "Supplementary Table S6",
+      "context": "Table summarizing spatial localization of cell clusters."
+    }
+  ]
+}

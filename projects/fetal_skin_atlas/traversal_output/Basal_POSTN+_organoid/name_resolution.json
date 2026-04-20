@@ -1,0 +1,11 @@
+{
+  "label": "Basal POSTN+",
+  "resolved_names": [
+    "POSTN+ basal",
+    "Basal POSTN+"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "POSTN+ basal cells present in both prenatal skin and SkO. Differentiate into two paths: ORS/CL trajectory and IRS trajectory (Fig. 2d)."
+}

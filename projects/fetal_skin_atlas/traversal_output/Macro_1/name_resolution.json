@@ -1,0 +1,10 @@
+{
+  "label": "Macro_1",
+  "resolved_names": [
+    "Macrophage 1"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "medium",
+  "evidence": "The paper and supplementary materials discuss macrophage subclusters with labels like 'Macro_1', derived from single-cell RNA-seq clustering. In Extended Data Figure 3 and supplementary tables, the authors reference clusters such as 'Macro_1', 'Macro_2', etc., corresponding to subclusters of skin macrophages. However, they are typically described as 'Macrophage 1', 'Macrophage 2', etc., in text and figures rather than with functional names."
+}

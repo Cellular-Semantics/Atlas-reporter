@@ -1,0 +1,65 @@
+[
+  {
+    "corpusId": "273400864",
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee NH et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "source": "seed_paper"
+  },
+  {
+    "corpusId": "248122197",
+    "title": "Mapping the developing human immune system across organs",
+    "authors": "Suo C et al.",
+    "year": 2022,
+    "journal": "Science",
+    "doi": "10.1126/science.abo0510",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "254895721",
+    "title": "Embryonic ILC-poiesis across tissues",
+    "authors": "Hernandez-Torres D, Stehle C",
+    "year": 2022,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.1040624",
+    "source": "free_search"
+  },
+  {
+    "corpusId": "53032947",
+    "title": "Innate Lymphoid Cells in the Maternal and Fetal Compartments",
+    "authors": "Miller D et al.",
+    "year": 2018,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2018.02396",
+    "source": "free_search"
+  },
+  {
+    "corpusId": "18634193",
+    "title": "Functional and phenotypic heterogeneity of group 3 innate lymphoid cells",
+    "authors": "Melo-Gonzalez F, Hepworth MR",
+    "year": 2017,
+    "journal": "Immunology",
+    "doi": "10.1111/imm.12697",
+    "source": "free_search"
+  },
+  {
+    "corpusId": "235778803",
+    "title": "Delineating spatiotemporal and hierarchical development of human fetal innate lymphoid cells",
+    "authors": "Liu C et al.",
+    "year": 2021,
+    "journal": "Cell Research",
+    "doi": "10.1038/s41422-021-00529-w",
+    "source": "free_search"
+  },
+  {
+    "corpusId": "211032996",
+    "title": "Immunoregulatory Sensory Circuits in Group 3 Innate Lymphoid Cell (ILC3) Function and Tissue Homeostasis",
+    "authors": "Domingues RG, Hepworth MR",
+    "year": 2020,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2020.00116",
+    "source": "free_search"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "cell_type_label": "CD8 T cell",
+  "working_definition": "A CD8-positive, alpha-beta T cell identified in prenatal human skin (7-17 PCW). CD8+ T cells emerge in fetal skin later in gestation (from around 10 PCW), accompanying thymus development. In the fetal context, CD8+ T cells are predominantly naive and proliferative, characterized by high expression of CD45RA, CD27, Ki-67, and CD31 (a marker of recent thymic emigrants). A minor subset demonstrates memory-like features (CD45RO+) with enriched capacity for IFN-gamma production. Fetal skin CD8+ T cells have markedly reduced cytotoxic effector capacity compared to adult skin CD8+ T cells, with lower TNF-alpha production and limited granzyme B expression. This population is distinct from the adult 'Tc' (cytotoxic T cell) cluster, which expresses high levels of GZMA, GZMK, and PRF1.",
+  "searches_performed": [
+    "CD8-positive cytotoxic T cell (OLS4, CL ontology)",
+    "CD8-positive alpha-beta T cell (OLS4, CL ontology)",
+    "naive thymus-derived CD8-positive alpha-beta T cell (OLS4, CL ontology)"
+  ],
+  "best_match": {
+    "cl_term": "CD8-positive, alpha-beta T cell",
+    "cl_id": "CL:0000625",
+    "cl_definition": "A T cell expressing an alpha-beta T cell receptor and the CD8 coreceptor.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000625 (CD8-positive, alpha-beta T cell) is the most appropriate match for the fetal skin 'CD8 T cell' annotation because it encompasses both naive and memory-like subpopulations present in the fetal context. The atlas annotation is not restricted to cytotoxic cells (CL:0000794), which would be inappropriate since fetal CD8+ T cells have markedly reduced cytotoxic capacity (Dhariwala et al., 2020; Schreurs et al., 2021). While the majority of fetal skin CD8+ T cells are naive (fitting CL:0000900), the annotation also includes the CD45RO+ memory-like subset, so the broader parent term CL:0000625 is the best fit. The atlas used single-cell alpha-beta TCR sequencing to resolve T cell subsets, confirming these are alpha-beta T cells.",
+  "other_candidates": [
+    {
+      "cl_term": "naive thymus-derived CD8-positive, alpha-beta T cell",
+      "cl_id": "CL:0000900",
+      "cl_definition": "A CD8-positive, alpha-beta T cell that has not experienced activation via antigen contact and has the phenotype CD45RA-positive, CCR7-positive and CD127-positive.",
+      "reason_rejected": "Fits the majority of fetal skin CD8+ T cells (predominantly naive, CD45RA+, CD31+ recent thymic emigrants), but the atlas 'CD8 T cell' annotation encompasses both naive and memory-like (CD45RO+) subpopulations, so this more specific term does not capture the full cluster."
+    },
+    {
+      "cl_term": "CD8-positive, alpha-beta cytotoxic T cell",
+      "cl_id": "CL:0000794",
+      "cl_definition": "A CD8-positive, alpha-beta T cell that is capable of killing target cells in an antigen specific manner with the phenotype perforin-positive and granzyme B-positive.",
+      "reason_rejected": "This term matches the adult counterpart cluster ('Tc') but not the fetal 'CD8 T cell' population, which has reduced cytotoxic capacity with low granzyme B and perforin expression (Dhariwala et al., 2020; Schreurs et al., 2021)."
+    }
+  ],
+  "recommendation": "Use CL:0000625 (CD8-positive, alpha-beta T cell) as a broad match. The fetal CD8+ T cell population differs substantially from adult cytotoxic T cells in functional profile, being predominantly naive with limited cytotoxicity. No new CL term is needed, but the distinction between fetal and adult CD8+ T cell states could benefit from annotation with developmental stage qualifiers.",
+  "new_term_needed": false
+}

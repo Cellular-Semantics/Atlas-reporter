@@ -1,0 +1,16 @@
+{
+  "markers": [
+    "MS4A1 (CD20)", "CD79B", "DNTT", "HLA-DRA"
+  ],
+  "other_findings": [
+    "Pro-B cells represent an intermediate B cell developmental stage in fetal skin",
+    "Characterized by VDJ heavy chain rearrangement",
+    "Express increasing levels of B cell transcripts compared to pre-pro-B cells",
+    "Pro/pre-B cell clusters have high nuclear to cytoplasmic ratio, immature chromatin and nucleoli (Popescu et al., 2019)",
+    "Differentially regulated genes in the HSC/MPP to B cell transition include SPIB, SP100 and CTSS"
+  ],
+  "evidence_quotes": [
+    "'Pro/pre-B' cell clusters have high nuclear to cytoplasmic ratio, immature chromatin and nucleoli",
+    "Differentially regulated genes in the HSC/MPPs to B cell transition include SPIB, SP100 and CTSS"
+  ]
+}

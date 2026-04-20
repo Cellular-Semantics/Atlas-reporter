@@ -1,0 +1,10 @@
+{
+  "label": "Neuroendocrine",
+  "resolved_names": [
+    "Merkel cell (Neuroendocrine)"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The label 'Neuroendocrine' is used in the Gopee et al. (2024) prenatal skin atlas (Supplementary Table 6) as a fine-grained cell type annotation in the fetal scope. Resolved to 'Merkel cell (Neuroendocrine)' based on atlas text, figures, and supplementary data."
+}

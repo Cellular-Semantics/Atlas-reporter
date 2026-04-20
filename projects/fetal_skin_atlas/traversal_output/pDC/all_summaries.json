@@ -1,0 +1,117 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "plasmacytoid DCs, monocytes, monocyte-DCs (having both a monocyte and DC gene signature) and a neutrophil-myeloid precursor have also recently been identified in first-trimester human skin using single-cell RNA sequencing (scRNAseq).",
+      "Unlike macrophages and LCs, very little is known about dermal DCs in developing skin beyond their presence."
+    ],
+    "summary": "Review by Botting & Haniffa (2020) confirms the presence of plasmacytoid DCs in first-trimester human prenatal skin, identified by scRNA-seq. The review notes that very little is known about dermal DCs in developing skin beyond confirming their presence.",
+    "categories": ["location", "development"],
+    "source_corpus_id": "CorpusId:218615208",
+    "source_title": "The developing immune network in human prenatal skin",
+    "source_authors": "Botting RA, Haniffa M.",
+    "source_year": 2020,
+    "snippet": "Furthermore, plasmacytoid DCs, monocytes, monocyte-DCs (having both a monocyte and DC gene signature) and a neutrophil-myeloid precursor have also recently been identified in first-trimester human skin using single-cell RNA sequencing (scRNAseq)."
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "Plasmacytoid dendritic cells (pDCs) are specialized type I interferon (IFN-\u03b1/\u03b2)-producing cells.",
+      "They express intracellular TLRs TLR7 and TLR9 that mediate recognition of viral nucleic acids.",
+      "pDCs have been observed to infiltrate both murine and human skin wounds to produce type I IFNs via TLR7-and TLR9-dependent recognition of nucleic acids.",
+      "pDCs significantly secrete IL-6, an inflammatory cytokine indirectly involved in the re-epithelization of skin wounds."
+    ],
+    "summary": "Review describing pDCs as specialized type I interferon producing cells that express TLR7 and TLR9. They infiltrate skin wounds and promote re-epithelialization through type I IFN and IL-6 secretion.",
+    "categories": ["function", "markers"],
+    "source_corpus_id": "CorpusId:199028201",
+    "source_title": "The regenerative potential of skin and the immune system",
+    "source_authors": "Tsepkolenko A et al.",
+    "source_year": 2019,
+    "snippet": "Plasmacytoid dendritic cells (pDCs) are specialized type I interferon (IFN-\u03b1/\u03b2)-producing cells. They express intracellular TLRs TLR7 and TLR9 that mediate recognition of viral nucleic acids."
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "Cutaneous injury in mice drives transient TLR7- and TLR9-mediated production of type I interferon by plasmacytoid dendritic cells, which is required for re-epithelialization of the skin."
+    ],
+    "summary": "Seminal paper demonstrating that pDCs sense skin injury and promote wound healing through type I interferons, mediated by TLR7 and TLR9.",
+    "categories": ["function"],
+    "source_corpus_id": "CorpusId:14508257",
+    "source_title": "Plasmacytoid dendritic cells sense skin injury and promote wound healing through type I interferons",
+    "source_authors": "Gregorio J et al.",
+    "source_year": 2010,
+    "snippet": "Cutaneous injury in mice drives transient TLR7- and TLR9-mediated production of type I interferon by plasmacytoid dendritic cells, which is required for re-epithelialization of the skin."
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "Plasmacytoid dendritic cells have an eccentric nucleus and prominent endoplasmic reticulum and golgi (resembling a plasma cell) for the production of type I interferon.",
+      "They retain expression of the GMDP markers CD123 (IL-3R) and CD45RA",
+      "pDC have an array of surface receptors... These include the well-known human pDC markers CD303 (CLEC4C; BDCA-2), CD304 (neuropilin; BDCA-4) CD85k (ILT3) and CD85g (ILT7)",
+      "The transcription factor 4 (TCF4) is required for pDC development and for lineage identity"
+    ],
+    "summary": "Comprehensive review of human DC subsets including detailed phenotypic characterisation of pDCs: CD123+, CD45RA+, CD303 (CLEC4C/BDCA-2)+, CD304 (BDCA-4)+, with plasma cell-like morphology. TCF4 is the master transcription factor for pDC identity.",
+    "categories": ["markers", "development"],
+    "source_corpus_id": "CorpusId:4910432",
+    "source_title": "Human dendritic cell subsets: an update",
+    "source_authors": "Collin M, Bigley V.",
+    "source_year": 2018,
+    "snippet": "Plasmacytoid dendritic cells have an eccentric nucleus and prominent endoplasmic reticulum and golgi (resembling a plasma cell) for the production of type I interferon... pDC have an array of surface receptors... CD303 (CLEC4C; BDCA-2), CD304 (neuropilin; BDCA-4) CD85k (ILT3) and CD85g (ILT7)"
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "Plasmacytoid dendritic cells (pDCs) were first described as interferon-producing cells",
+      "do these cells serve mainly as a major source of type I interferons or do they also make other important contributions to immune responses?"
+    ],
+    "summary": "Viewpoint from five leaders discussing pDC development and functions -- whether they serve solely as IFN producers or have broader immune roles.",
+    "categories": ["function", "development"],
+    "source_corpus_id": "CorpusId:1598750",
+    "source_title": "Plasmacytoid dendritic cells: one-trick ponies or workhorses of the immune system?",
+    "source_authors": "Reizis B et al.",
+    "source_year": 2011,
+    "snippet": "Plasmacytoid dendritic cells (pDCs) were first described as interferon-producing cells and, for many years, their overlapping characteristics with both lymphocytes and classical dendritic cells (cDCs) created confusion over their exact ontogeny."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "Plasmacytoid dendritic cells (pDCs), a BDCA-2-expressing dendritic cell (DC) subset, are generally not found in healthy human skin",
+      "they have been reported to infiltrate skin during viral infection, inflammatory diseases, or skin injuries",
+      "Cathelicidins can form complexes with DNAs and RNAs released from the dying cells, which then serve as TLR7 and TLR9 agonists to be captured by skin-infiltrated pDCs"
+    ],
+    "summary": "Paper on BDCA-2+ DCs in skin inflammation. Confirms pDCs are generally absent from healthy adult skin but infiltrate during injury. Key mechanism: cathelicidin-nucleic acid complexes activate pDC via TLR7/TLR9.",
+    "categories": ["location", "function"],
+    "source_corpus_id": "CorpusId:209230037",
+    "source_title": "Re-evaluation of human BDCA-2+ DC during acute sterile skin inflammation",
+    "source_authors": "Chen YL et al.",
+    "source_year": 2020,
+    "snippet": "Plasmacytoid dendritic cells (pDCs), a BDCA-2-expressing dendritic cell (DC) subset, are generally not found in healthy human skin... they have been reported to infiltrate skin during viral infection, inflammatory diseases, or skin injuries."
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [
+      "Immature PDCs have been found in human LN, tonsils, peripheral blood, cord blood, adult and fetal thymus, fetal liver, and fetal bone marrow."
+    ],
+    "summary": "Early characterisation of BDCA-2 as a pDC-specific marker. Documents the presence of immature pDCs in fetal tissues including fetal thymus, fetal liver, and fetal bone marrow.",
+    "categories": ["markers", "location", "development"],
+    "source_corpus_id": "CorpusId:11461575",
+    "source_title": "BDCA-2, a Novel Plasmacytoid Dendritic Cell-specific Type II C-type Lectin, Mediates Antigen Capture and Is a Potent Inhibitor of Interferon \u03b1/\u03b2 Induction",
+    "source_authors": "Dzionek A et al.",
+    "source_year": 2001,
+    "snippet": "Immature PDCs have been found in human LN, tonsils, peripheral blood, cord blood, adult and fetal thymus, fetal liver, and fetal bone marrow."
+  },
+  {
+    "snippet_index": 7,
+    "quotes": [
+      "TCF4 as one of the master regulator transcription factors (TF) for plasmacytoid dendritic cells (pDC) was found to be expressed in our dataset.",
+      "RHEX, CLEC4C, and LILRA4 were also expressed by pDC."
+    ],
+    "summary": "Single-cell study identifying key pDC markers in transcriptomic data: TCF4, CLEC4C (CD303/BDCA-2), LILRA4 (ILT7), and RHEX.",
+    "categories": ["markers"],
+    "source_corpus_id": "CorpusId:279309960",
+    "source_title": "Maintenance of chronic neuroinflammation in multiple sclerosis via interferon signaling and CD8 T cell-mediated cytotoxicity",
+    "source_authors": "Raza SA et al.",
+    "source_year": 2025,
+    "snippet": "TCF4 as one of the master regulator transcription factors (TF) for plasmacytoid dendritic cells (pDC)... RHEX, CLEC4C, and LILRA4 were also expressed by pDC."
+  }
+]

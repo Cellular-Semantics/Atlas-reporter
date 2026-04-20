@@ -1,0 +1,8 @@
+{
+  "label": "c2",
+  "resolved_names": ["Proliferating keratinocyte"],
+  "scope": "adult",
+  "tissue_context": "adult skin",
+  "confidence": "high",
+  "evidence": "Reynolds et al. (2021) Figure 4d legend explicitly maps the eight keratinocyte Leiden clusters: 'undifferentiated KC (clusters 1, 5), proliferating (cluster 2), differentiated KC (clusters 3, 4, 6, 7), differentiated KC* (cluster 8)'. c2 is therefore the proliferating keratinocyte cluster, characterised by CDK1 and PCNA expression. This mapping was found in the full text PDF (character offset ~56,000, figure legends section)."
+}

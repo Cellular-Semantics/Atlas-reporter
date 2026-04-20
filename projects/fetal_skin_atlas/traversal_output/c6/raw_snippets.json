@@ -1,0 +1,713 @@
+[
+  {
+    "snippet": "Thank you very much for your helpful comments. At the suggestion of the reviewer, we examined the expression level of pro-inflammatory cytokines, as shown in Fig. 4D. The expression levels of all cytokines examined in Fig. 4D were not affected by loss of C6-S in new-born dorsal skin. In adult dorsal skin, the gene expression levels of some pro-inflammatory cytokines were increased by loss of C6-S. These results suggest that ablation of C6st-1 does not directly activate intrinsic pro-inflammatory signaling but might set the epidermis in a primed pro-inflammatory state because of impaired barrier function. (p. 6, l. 167-) 2. A striking feature of the data is how similar the heterozygote mice are to the full knockout of the C6-sulfotransferase. The authors' analysis shows that the amount of C6-S in heterozygote skin is approximately one-third of the wild type. Have the authors checked to assess whether CS-56 staining of the heterozygote dermal-epidermal junction is negative? This would be interesting in light of the accompanying data.",
+    "paper_id": "231712171",
+    "title": "Chondroitin 6-sulfate represses keratinocyte proliferation in mouse skin, which is associated with psoriasis",
+    "authors": [
+      "K. Kitazawa",
+      "S. Nadanaka",
+      "K. Kadomatsu",
+      "H. Kitagawa"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.41068202284766653,
+    "depth": 0,
+    "corpus_id": "CorpusId:231712171"
+  },
+  {
+    "snippet": "The following revisions have been made. The cited page numbers etc are for the PDF file for your review, where revisions are indicated in red. \n\nReviewer #1 (Remarks to the Author): \n\nThis manuscript concerns the role of a specific isoform of chondroitin sulfate, namely chondroitin 6-sulfate and its influence on proliferation of keratinocytes. Using a variety of techniques, but focussing largely on heterozygote and knockout mice for the relevant 6-O-sulfotransferase, the authors report defects in differentiation, increased proliferation and increased susceptibility to imiquimod, a topical agent that triggers a psoriasis-like effect in mice. Further molecular studies infer that C6-S affects the epidermal growth factor receptor and its signaling, perhaps through direct interactions, though the precise mechanism remains unknown currently. This is an interesting and novel set of data, particularly since there may be a linkage to a common skin disease. The work is supported by a large set of figures and is well presented. While the presence of C6-S in the basement membrane underlying the epidermis has been known for around 30 years, its role(s) have remained largely unknown. This study provides a new and potentially important insight. There are a few major areas where further data or explanation seem necessary. In addition, there are some minor points, largely errors or ommissions. \n\nMajor Points: \n\n1. Inflammation. The authors point out the possible association of C6-S with the inflammatory skin disease, psoriasis. The title of the manuscript strongly links the two. \n\nIn the discussion it is stated that the C6-S null mouse reports on the effects of the absence of this glycosaminoglycan in a \"normal\" context, but this is not shown. However, the authors do convincingly show that differentiation, including cell adhesion and the permeability barrier are compromised, resulting in increased transepidermal water loss. There is hyperproliferation and suprabasal mitosis. All of these features can be seen in inflammatory diseases. The authors should show whether or not the null mouse skin expresses inflammatory markers.",
+    "paper_id": "231712171",
+    "title": "Chondroitin 6-sulfate represses keratinocyte proliferation in mouse skin, which is associated with psoriasis",
+    "authors": [
+      "K. Kitazawa",
+      "S. Nadanaka",
+      "K. Kadomatsu",
+      "H. Kitagawa"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.41007730698804573,
+    "depth": 0,
+    "corpus_id": "CorpusId:231712171"
+  },
+  {
+    "snippet": "In summary, our data add to the evidence that Cldn6, and in particular the C-terminal half of the Cldn6 tail, contribute to the regulation of epidermal differentiation and skin barrier function throughout life. They also support the utility of the Inv-Cldn6-CD196 mouse model for studies aimed at understanding intrinsic changes in the aging epidermis and point towards a need to investigate Cldn expression profiles in the aging human epidermis.",
+    "paper_id": "16913410",
+    "title": "Dermatitis and Aging-Related Barrier Dysfunction in Transgenic Mice Overexpressing an Epidermal-Targeted Claudin 6 Tail Deletion Mutant",
+    "authors": [
+      "T. Troy",
+      "A. Arabzadeh",
+      "N. Larivi\u00e8re",
+      "Adebola Enikanolaiye",
+      "K. Turksen"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.4024982055363106,
+    "depth": 0,
+    "corpus_id": "CorpusId:16913410"
+  },
+  {
+    "snippet": "in assessing 3D skin constituents compared to acquiring 3 or 4 ROIs per zone per volunteer.\n\nAging differences in 3D skin morphology. As illustrated by the 3D reconstructions of epidermal and dermal volumes acquired within dorsal forearm and face temple areas (Fig. 4a), multiphoton microscopy can evidence changes in both epidermal thickness and DEJ undulation (dermal surface) with aging. We quantified three morphological parameters: 3D mean epidermal thickness (Fig. 4b1-b3), 3D mean DEJ undulation (Fig. 4c1-c3) and 3D mean stratum corneum thickness (Fig. 4d1-d3). The highest aging modulations are observed between 18 and 25 and 70-75 year-old groups on all areas with an expected thinning of the epidermis and a flattening of the DEJ in older volunteers (studies II and III, Fig. 4b2,b3,c2,c3) making them strong markers of intrinsic aging. Between closer and less extreme age groups (30-40 vs 55-65, study I, Fig. 4b1,c1), we observed no changes in these parameters. However, the higher epidermal thickness and more undulated DEJ in \"tan\" skin ITA group, better protected against chronic exposure compared to \"light\" skin ITA group, suggest that these parameters are also, probably to a lesser extent, modulated by photoaging. The higher decrease in epidermal thickness on temple area with aging, more exposed as compared to dorsal forearm, is a second argument in this sense (study III).\n\nRegarding the 3D mean thickness of the SC layer, the main difference is observed between face and forearm, with a clear thinner SC layer on the temple (Fig. 4d3). Total epidermal thickness being equivalent between these two zones, it results in a thicker living epidermis on the face, probably due to an intrinsic structural difference. A thinner SC was also measured in \"light\" compared to \"tan\" skin ITA phototypes in the 30-40yo age group (Fig. 4d1). With aging, on ventral forearm, a small decrease in SC layer thickness was observed between the 18-25 and 70-75 year-old groups (study",
+    "paper_id": "252009072",
+    "title": "In vivo multiphoton multiparametric 3D quantification of human skin aging on forearm and face",
+    "authors": [
+      "Ana\u2010Maria Pena",
+      "T. Baldeweck",
+      "Etienne Decenci\u00e8re",
+      "S. Koudoro",
+      "S. Victorin",
+      "E. Raynaud",
+      "Blandine Ngo",
+      "P. Bastien",
+      "S. Brizion",
+      "E. Tancr\u00e8de\u2010Bohin"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.38704866882156796,
+    "depth": 0,
+    "corpus_id": "CorpusId:252009072"
+  },
+  {
+    "snippet": "Departme111 ofDerma10/ogy. Free University Hospital, De Boelelaan ///7, 1081 HV Amsterdam. The Netherlands Abstract. lmmunotluorescence studies were performed on the sun-exposed (S) and not-sun-cxposed (N) skin of 25 healthy volunteers regarding the incidence of the five lg classes, albumin. fibrinogen. Clq, C4. C3B, C3c, C3d. C5, C3PA and properdin. In addition a comparative study of two so-called anti-complement antisera was made, one (C I) containing anti-(C4+C3a+C3d), the other (C Il) anti (C3B+C3c). In all biopsies the 'epidermal basement mem brane (BM) was stained positively with anti-C3d in a fibrillar, inter r upted linear. or granular pattern. A band like picture of the BM was observed with anti-lgG, anti albumin and anti-fibrinogen in three biopsies of the S skin. \n\nIn two other S skin biopsies a lich @noid pattem was found with anti-fibrinogen. anti-C3d and lgM. The latte'r' an tisen. 1m caused a weakly positive band-like picture of the BM, occasionaJJy together with granular deposits. morc often in the S skin (11) than in the N skin (4). In the capillary walls, gramilar deposits of [gM, C3d and occa sionally C3c were seen in both the S skin (7) and the N skin (13). In lhe subjacent vessels, globular deposits posi tive with anJi-C3d, C5 and C3c were found predominandy in the S skin. In the M. arrector pili, granular deposits of C3d and, less obviously. C5, properdin and lgM were f r equently observed. A band-like, linear.",
+    "paper_id": "31722400",
+    "title": "Immunofluorescence patterns in sun-exposed and not-sun-exposed skin of healthy individuals.",
+    "authors": [
+      "C. Nieboer"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3832814172581209,
+    "depth": 0,
+    "corpus_id": "CorpusId:31722400"
+  },
+  {
+    "snippet": "At the suggestion of the reviewer, we examined the expression of C6-S in C6st-1 HE and C6st-1 KO mice in addition to C6st-1 WT mice by using CS-56 antibody staining, as shown in Fig. 1D. C6-S was expressed beneath the keratin 14 (K14)-positive stem cells of the epidermal basal layer in C6st-1 WT mice. In contrast, C6-S was not detected in epidermal basal layer of C6st-1 HE and C6st-1 KO mice. (p. 3, l. 93-) 2. Comments on the differences in thickness observed between Newborn and 8 weeks old mice skin should be added. Explanation of the procedure used to measure epidermal thickness is missing. Same for Figure 2 (b) providing information about the basal layer thickness. The Y-axis must be better renamed.",
+    "paper_id": "231712171",
+    "title": "Chondroitin 6-sulfate represses keratinocyte proliferation in mouse skin, which is associated with psoriasis",
+    "authors": [
+      "K. Kitazawa",
+      "S. Nadanaka",
+      "K. Kadomatsu",
+      "H. Kitagawa"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.37955109953353117,
+    "depth": 0,
+    "corpus_id": "CorpusId:231712171"
+  },
+  {
+    "snippet": "In order to assess the effects of intrinsic aging on the skin proteome we also performed a comparative analysis between underarm skin in young and aged patients. Differences in anatomical locations likely result in alterations in protein composition and the response to aging. While the overall trend of lower collagen and other structural ECM component abundance with age seen in hip skin was consistent with underarm comparisons, fewer components were significantly reduced in aged samples (Fig. 6A). ECM core structural components observed at significantly reduced abundance in aged underarm samples include, COL11A2 (FC = \u22127.9), matrilin-4 (MATN4, FC = \u22127.9) and MFAP4 (FC = \u22128.21) (Fig. 6A). Other ECM structural components, including COL1A1 (FC = \u22121.7), COL1A2 (FC = \u22121.7), COL2A1 (FC = \u22122.0), COL7A1 (FC = \u22122.2), matrilin-2 (MATN2, FC = \u22121.8), and dermatopontin (DPT, FC = \u22121.7) were reduced in aged samples but did not reach significance. Although no elastic fiber components were significantly enriched in either underarm age group, FBLN5 (FC = \u22123.4) and FBN2 (FC = \u22121.5) were observed at lower intensities in aged samples. However, the increase in elastin content with age seen in the hip skin is maintained in this comparison, with ELN detected at 2.1-fold higher intensities in aged underarm skin. Proteoglycan ECM components DCN (FC = \u22121.7) and prolargin (PRELP, FC = \u22122.7) were significantly decreased in aged underarm samples, with other proteoglycans FMOD (FC = \u22122.6), BGN (FC = \u22121.9), OGN (FC = \u22121.7), and LUM (FC = \u22121.4) displaying depletion in aged samples that did not reach the significance cutoff (Fig. 6A).",
+    "paper_id": "225695921",
+    "title": "Alterations in extracellular matrix composition during aging and photoaging of the skin",
+    "authors": [
+      "Maxwell C. McCabe",
+      "Ryan C. Hill",
+      "K. Calderone",
+      "Yilei Cui",
+      "Yan Yan",
+      "T. Quan",
+      "G. Fisher",
+      "K. Hansen"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.37955109953353117,
+    "depth": 0,
+    "corpus_id": "CorpusId:225695921"
+  },
+  {
+    "snippet": "Epidermal structure, function, and composition are different in white infants and adults. We investigated whether ethnicity and location contribute to differences in functional and clinical measurements of skin barrier function during the first years of life and in adults.",
+    "paper_id": "9477671",
+    "title": "Water\u2010Holding and Transport Properties of Skin Stratum Corneum of Infants and Toddlers Are Different from Those of Adults: Studies in Three Geographical Regions and Four Ethnic Groups",
+    "authors": [
+      "M. C. Mack",
+      "M. Chu",
+      "N. Tierney",
+      "E. Ruvolo",
+      "G. Stamatas",
+      "N. Kollias",
+      "Kamlesh V Bhagat",
+      "Lin Ma",
+      "K. Martin"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.37501925122329416,
+    "depth": 0,
+    "corpus_id": "CorpusId:9477671"
+  },
+  {
+    "snippet": "TLR expression profile of human skin before and after birth. (A)\uf020Embryonic (9-11 weeks EGA), fetal (12-13 weeks EGA) and adult (18-45 years) skin specimens were investigated (n\uf03d6-9 donors/group) for the indicated TLR expression levels using quantitative RT-PCR. Reactions were executed in duplicates and data were normalized to the housekeeping gene B2M. (B)\uf020Epidermis was separated from the dermis of skin samples from infants (3-10 months), children (5-12 years) and adults (18-31 years) (n\uf03d4-8 donors/group) using ammonium thiocyanate. Indicated TLR expression levels were determined using quantitative RT-PCR. Reactions were executed in duplicates and data were normalized to the housekeeping gene GAPDH. Bars represent the mean of investigated groups. The x-and y-axis indicate selected age groups and relative mRNA expression, respectively. *P<0.05, **P<0.01, ***P<0.001. (C)\uf020Immunofluorescence double labeling of cryostat sections from embryonic, fetal and adult skin samples (n\uf03d3 donors/group) revealed CD1c + TLR3 -TLR6 -dendritic cells in prenatal and adult skin (inserts). The arrows denote epidermal LCs and the arrowheads identify DDCs. Nuclear counterstain was performed with DAPI. Scale bars: 100\uf020\uf06dm in C; 20\uf020\uf06dm in inserts. \n\nDEVELOPMENT (Schuster et al., 2009;Schuster et al., 2012) or CD207. We identified CD1c + epidermal (Fig. 1C, arrows) and dermal (Fig. 1C, arrowheads) dendritic cells in embryonic and fetal skin and higher frequencies of these cells in adult skin, thus confirming our previous reported results (Schuster et al., 2009;Schuster et al., 2012). Surprisingly, neither LCs and DDCs in adult skin, nor LC precursors and DDCs in prenatal skin expressed TLRs 3 and 6 at detectable levels (Fig. 1C, inserts; supplementary material Fig. S2).",
+    "paper_id": "1705676",
+    "title": "Age-related changes in expression and function of Toll-like receptors in human skin",
+    "authors": [
+      "Nousheen Iram",
+      "M. Mildner",
+      "Marion Prior",
+      "P. Petzelbauer",
+      "C. Fiala",
+      "S. Hacker",
+      "Alice Sch\u00f6ppl",
+      "E. Tschachler",
+      "A. Elbe-B\u00fcrger"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3721991141151649,
+    "depth": 0,
+    "corpus_id": "CorpusId:1705676"
+  },
+  {
+    "snippet": "The skin measures approximately 7,600 sq cm on the average adult and weights 15% of body weight and has a third of the circulating blood volume. 2 The skin surrounds the body and forms a physical barrier against the extracorporeal environment and protects against desiccation and invasion by pathogens and toxins. The skin fulfils many functions which include: homeostasis; immunological and pathogenic defense; sensory perception; temperature and pH regulation; protection against ultraviolet radiation; regulation of transepidermal water loss (TEWL) and skin water content; synthesis of vitamin D and cosmesis. 2,3 The skin is divided into three layers: the epidermis, dermis and hypodermis. However, it is the epidermis and specifically the stratum corneum or the outer 'horny' layer, which is on view to the world and thus, the focus of skin inspection and primarily this review. The keratinocytes that form in the stratum germinativum or basal layer migrate up through the stratum spinosum, stratum granulosum, stratum lucidum (absent in some anatomical skin locations) into the stratum corneum where they are transformed into non-viable, anucleate, protein-dense corneocytes. 3,4 These are flat hexagonal cells that comprise 15-25 layers of compressed corneocytes. 4 he construction of the stratum corneum is said to resemble a brick wall structure. 4,5 The corneocytes are the bricks which are linked together by corneodesmosomes and the 'mortar' that surrounds these junctions is comprised of the natural moisturising factor (NMF) and lipids. 4,5 The NMF is derived from filaggrin proteolysis and is composed of amino acids, amino acid derivatives, lactic acids, urea and salts. 4 The NMF is essential for stratum corneum hydration, desquamation, and plasticity. 6,7 While the lipids consist of ceramides, acylceramides, cholesterol, cholesterol esters and free fatty acids. 5",
+    "paper_id": "268704556",
+    "title": "Changes in the integument across the lifespan",
+    "authors": [
+      "K. Carville"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.37100124671547635,
+    "depth": 0,
+    "corpus_id": "CorpusId:268704556"
+  },
+  {
+    "snippet": "Langerhans cells (LCs) are antigen-presenting cells (APCs) that play important roles as immune sentinels in skin (Romani et al., 2012a). During human skin development, their precursors are first identified in the epidermis at 7-9 weeks estimated gestational age (EGA), based on the expression of CD45 (PTPRC -HGNC), HLA-DR, CD1c and ATPase (Foster et al., 1986;Fujita et al., 1991;Schuster et al., 2009). The distinguishing features of LCs in adult human epidermis, namely Birbeck granules, CD207/langerin, and CD1a are detectable only after 11 weeks EGA (Foster et al., 1986;Schuster et al., 2009). Our observation that not all HLA-DR-positive (HLA-DR + ) epidermal cells in embryonic human skin express the LC markers CD1a, CD1c or CD207/langerin, prompted us to hypothesize that during ontogeny the LC phenotype is acquired in the epidermis (Schuster et al., 2009), a notion that was recently validated in the murine system (Ser\u00e9 et al., 2012). Owing to this stepwise development of the LC phenotype, it is conceivable that other molecular structures required for the initiation of immune responses including MHC-II molecules (e.g. HLA-DR) may also be acquired in the epidermis. Thus, by looking at early stages of development the original phenotype of LC precursors could be unravelled. Indeed, an earlier study identified dendritic or round epidermal cells in the first trimester that expressed the scavenger receptor CD36 (Fujita et al., 1991). Concomitant with HLA-DR + epidermal cells becoming more frequent, CD36 + cells in the human epidermis decrease in numbers and are -as in healthy adult skinnot detectable at the end of the first trimester. Their origin, precise phenotype and ultimate fate have yet to be elucidated.",
+    "paper_id": "616832",
+    "title": "Human embryonic epidermis contains a diverse Langerhans cell precursor pool",
+    "authors": [
+      "C. Schuster",
+      "M. Mildner",
+      "Mario Mairhofer",
+      "W. Bauer",
+      "C. Fiala",
+      "Marion Prior",
+      "W. Eppel",
+      "A. Kolbus",
+      "E. Tschachler",
+      "G. Stingl",
+      "A. Elbe-B\u00fcrger"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3696967498019984,
+    "depth": 0,
+    "corpus_id": "CorpusId:616832"
+  },
+  {
+    "snippet": "Expression of the et6-integrin subunit was analyzed in the skin of normal adults and moderately affected adults of line VI-6-32 (Fig. 8). Immunostaining for this integrin subunit in normal adult epidermis was largely confined to the basal layer with the strongest reactivity towards the basal lamina and weaker staining in the lateral domains (Fig. 8, a and a'). In acanthotic epidermis from moderately affected transgenic adults, there was generally stronger staining for ct6-integrin in the basal layer of the epidermis and additional staining in suprabasal cells of interfollicular epidermis. The intensity of the staining both in basal and suprabasal cells correlated with the degree of epidermal thickening (Fig. 8, b and b'). \n\nExpression of the basal type keratin 14, the suprabasal differentiation markers keratins 1 and 10 and the hyperproliferative marker keratin 6 were analyzed in severely affected neonatal founders and in moderately affected adults of lines VI-6-1 and VI-6-32. There were no apparent aberrations in the patterns of expression of keratins 1, 10, and 14 in severely affected neonatal transgenic founders when compared to normal neonates. Keratin 14 was predominantly expressed in the basal layer and keratins 1 and 10 were expressed in suprabasal layers (data not shown). Moderately affected adults of lines VI-6-1 and VI-6-32, however, displayed aberrant expression of keratins 1, 10, and 14 (Fig. 9). Unusually thickened epidermis showed expansion of the keratin 14 expression domain from the basal compartment into suprabasal layers including the stratum corneum. In parallel, there was focal repression of the differentiation specific keratins 1 and 10 (Fig. 9, a-b\"). Expression of the stress keratin 6 was similar in the epidermis of severely affected transgenic founders and normal neonates.",
+    "paper_id": "2164314",
+    "title": "Overexpression of bone morphogenetic protein-6 (BMP-6) in the epidermis of transgenic mice: inhibition or stimulation of proliferation depending on the pattern of transgene expression and formation of psoriatic lesions",
+    "authors": [
+      "M. Blessing",
+      "P. Schirmacher",
+      "S. Kaiser"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3685763966626367,
+    "depth": 0,
+    "corpus_id": "CorpusId:2164314"
+  },
+  {
+    "snippet": "ified squamous epithelia 11 . We therefore compared the morphology of unchallenged squamous epithelia between C4.4A \u2212/\u2212 and the corresponding C4.4A +/+ littermates at various locations in young (1, 2 and 3 weeks old), adult (7,8,12 and 13 weeks old) and old (30 and 52 weeks old) mice. No profound pathological changes were found, as illustrated by haematoxylin and eosin (H&E) staining of back skin, hair follicles, footpads, tongue, esophagus, non-glandular stomach, vagina and cornea of the eye from 52 weeks old female mice (Fig. 4). Since C4.4A is a marker of squamous differentiation, we also analysed if the conventional markers of differentiation, i.e. cytokeratin (CK) 14 (stratum basale), CK10 (suprabasal layers), loricrin (stratum granulosum and stratum corneum) as well as the structural homologue Haldisin 23 (stratum granulosum) were dysregulated in back skin of young, adult and old C4.4A \u2212/\u2212 mice. C4.4A deficiency did not result in obvious differences in the expression of these epidermal differentiation markers, when analysed by immunohistochemistry (data not shown).\n\nFurther, we examined if any ultrastructural abnormalities were present in the C4.4A \u2212/\u2212 mice by transmission electron microscopy. Initially, the subcellular localization of C4.4A was visualized by immunogold labelling on cryosections from mouse footpads. As expected, C4.4A was found associated to the cell membrane, but it was specifically excluded from the desmosomes bridging the keratinocytes (Fig. 5A). As an internal control for specificity, C4.4A \u2212/\u2212 footpads were analysed in parallel (Fig. 5B). Epon-embedded tissues from littermate C4.4A \u2212/\u2212 and C4.4A +/+ male and female mice containing squamous epithelia",
+    "paper_id": "205697289",
+    "title": "C4.4A gene ablation is compatible with normal epidermal development and causes modest overt phenotypes",
+    "authors": [
+      "M. Kriegbaum",
+      "Benedikte Jacobsen",
+      "A. F\u00fcchtbauer",
+      "G. Hansen",
+      "I. Christensen",
+      "C. F. Rundsten",
+      "Morten Persson",
+      "L. Engelholm",
+      "A. N. Madsen",
+      "I. Di Meo",
+      "I. Lund",
+      "B. Holst",
+      "A. Kjaer",
+      "O. D. L\u00e6rum",
+      "E. F\u00fcchtbauer",
+      "M. Ploug"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3667536210938273,
+    "depth": 0,
+    "corpus_id": "CorpusId:205697289"
+  },
+  {
+    "snippet": "Immunohistochemical analysis was performed to evaluate the expression of inflammatory markers in the epidermal and dermal layers, as well as in the skin appendages. The semiquantitative analysis revealed no statistically significant differences in marker expression between the two groups. Specifically, IL-6 levels were 1.32\u00b10.71 in the MC-rich group and 1.56 \u00b10.91 in the MC-poor group (P=0.519); LL-37 levels were 0.8\u00b10.55 in the MC-rich group and 1.0 \u00b10.59 in the MC-poor group (P=0.443); TNF-\u03b1 levels were 0.84\u00b10.65 in the MC-rich group and 1.04\u00b10.32 in the MC-poor group (P=0.400). Table 2 provides additional details on the distribution patterns of these markers across different skin compartments.",
+    "paper_id": "276587713",
+    "title": "No difference in inflammatory mediator expression between mast cell-rich and mast cell-poor rosacea lesions in Korean patients: a comparative study",
+    "authors": [
+      "Jin Ju Lee",
+      "Bo Ram Kwon",
+      "Min Young Lee",
+      "J. Byun",
+      "J. Roh",
+      "Hae Young Choi",
+      "You Won Choi"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.36498851303176744,
+    "depth": 0,
+    "corpus_id": "CorpusId:276587713"
+  },
+  {
+    "snippet": "Despite the importance of the skin barrier to the survival of the mammalian species, the molecular mechanisms governing its formation and maintenance are not well-understood, nor are the changes that occur during the intrinsic aging process of the skin. In humans, aging-related changes in the skin are widespread and result from both intrinsic (gene mutations, hormonal changes, cellular metabolism) and extrinsic (UV exposure, chemicals, pollutants) factors. While extrinsic factors affect mainly the dermis, the epidermis is the main target of intrinsic skin aging processes where, especially in sun-exposed skin, changes occur often with initial generalized epidermal thickening, indicative of epidermal hyperplasia and reduced capacity to repair, such that the epidermis becomes prone to a number of skin conditions including dermatitis, eczema and ulceration [6,7,[45][46][47][48][49]. Only recently has it been appreciated that abnormal skin barrier function might underlie these skin conditions [50], although no analysis of Cldn expression has been reported. The murine epidermis, however, does not normally undergo comparable aging-related changes; in fact, once the mouse epidermis is matured it maintains a homeostatic balance and undergoes morphological and biochemical changes only in response to injury or disease. Thus, it was extremely interesting to note that in spite of the fact that Inv-Cldn6-CD196 mice achieve a normal-appearing epidermis by onemonth of age (by morphology and biochemical markers), with aging they have a high propensity for epidermal injury and a diminished ability to repair lesions, leading eventually to severe dermatitis with associated changes in skin barrier function. It should be noted that this sensitivity to injury and inefficient repair were seen also in young mice subjected to acute injury by application of the irritant TPA (data not shown).",
+    "paper_id": "16913410",
+    "title": "Dermatitis and Aging-Related Barrier Dysfunction in Transgenic Mice Overexpressing an Epidermal-Targeted Claudin 6 Tail Deletion Mutant",
+    "authors": [
+      "T. Troy",
+      "A. Arabzadeh",
+      "N. Larivi\u00e8re",
+      "Adebola Enikanolaiye",
+      "K. Turksen"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.36498851303176744,
+    "depth": 0,
+    "corpus_id": "CorpusId:16913410"
+  },
+  {
+    "snippet": "Furthermore, studies by Beddoes et al., proved that extracellular lipid matrix composition is rather solid and barrier function is resistant to a certain threshold of change (Beddoes et al., 2021). This observation, along with the variety of epidermal lipid composition, gives a further idea of how highly complex and dynamic the structure of the epidermis in fact is. The amount of ceramides depends on the age, location of the skin site, season and ultraviolet irradiation (Akutsu et al., 2009;Li et al., 2020;Boireau-Adamezyk et al., 2014;Harding et al., 1996). Other authors have found that children (about 6 years) have more CERs than adults in the epidermis (Li et al., 2020), and we also observed a similar trend. In children, the process of epidermal keratosis occurs much faster and the corneocytes formed in the SC layer become smaller and smaller (Akutsu et al., 2009), so the lipid content in the external matrix is also lower. Smaller corneocytes indicate a more frequent replacement of the callous epidermis in children than in adults. Also, smaller corneocytes are on the part of the body that is more exposed to damaging external factors, such as UV radiation (Akutsu et al., 2009). In adults, corneocytes are much larger and the desquamation process takes place more slowly (Boireau-Adamezyk et al., 2014;Akutsu et al., 2009), therefore the accumulation of VLCFA and ceramide fractions may occur. At the same time, some authors indicate a lower activity of CER synthase in adults (Boireau-Adamezyk et al., 2014). This may explain the faster process of keratinization in children and the accumulation of VLCFAs in adults. VCLFAs predominate in CER and glucosylceramides and only trace levels are observed in SM in the epidermis (Uchida, 2011), which was also observed in our study.",
+    "paper_id": "252221774",
+    "title": "Fatty acid profiles in various lipid fractions in the female epidermis. Does the body site and age matter?",
+    "authors": [
+      "A. Mika",
+      "A. Pakiet",
+      "O. Szczygielski",
+      "K. Wo\u017aniak",
+      "Katarzyna Osipowicz",
+      "C. Kowalewski",
+      "N. Krzesniak",
+      "B. Noszczyk",
+      "K. Wertheim-Tysarowska"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.363692427801747,
+    "depth": 0,
+    "corpus_id": "CorpusId:252221774"
+  },
+  {
+    "snippet": "Spatial proteomic analyses [100] may offer further insights into the localization and accumulation of mesoglycan components within specific skin compartments. \n\nWhile mesoglycan has primarily been studied for its systemic effects in vascular, fibrotic, and metabolic disorders like chronic venous insufficiency, thrombophlebitis, and diabetic microangiopathy [25,34,101], our findings extend its therapeutic relevance to human skin aging. Previous studies have shown mesoglycan's ability to enhance microcirculation, reduce endothelial dysfunction, and provide anti-inflammatory and cytoprotective effects [25]. In our study, we observed similar improvements in dermal vascular markers (CD31, VEGF-A, VEGFR2), mitochondrial function (PGC1\u03b1, MTCO-1, VDAC/porin), and antioxidant defenses (NRF-2, HO-1, PRDX). These findings suggest that mesoglycan acts through mechanisms common to both vascular and skin aging, supporting its potential as senotherapeutic agent in dermatology. Importantly, our study also addresses key gaps in the literature by demonstrating mesoglycan's impact on skin architecture, pigmentation, and cellular senescence-areas that have been largely unexplored in the mesoglycan literature. Enhancements in melanocyte-associated markers such as gp100, MITF, and c-KIT indicate potential applications for treating hyperpigmentation and uneven skin tone, expanding mesoglycan's potential beyond anti-aging to more cosmetic uses. Although improved pigmentation is very likely to reflect restoration of melanocyte function in aged epidermis [19,85,102,103] and will provide improved photoaging protection, future clinical trials will have to assess the possibility of cosmetically undesired hyperpigmentation. \n\nMesoglycan's ability to suppress aging-associated markers like p16 INK4A and p-S6 while upregulating proteins such as Lamin B1, SIRT1, and collagen 17A1 positions it as a promising candidate in the growing class of senotherapeutic agents.",
+    "paper_id": "279552567",
+    "title": "Preclinical Evidence That Mesoglycan Unfolds Complex Anti-Aging Effects in Photoaged Female Facial Skin",
+    "authors": [
+      "A. Zeltzer",
+      "A. Keren",
+      "Ralf Paus",
+      "A. Gilhar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3633631957729412,
+    "depth": 0,
+    "corpus_id": "CorpusId:279552567"
+  },
+  {
+    "snippet": "To further understand how C3 might be promoting tumor development in an inflammatory microenvironment, we investigated the role of C3 during TPA-driven skin inflammation without the application of carcinogen. We detected enhanced C3 deposition in the dermis when TPA was applied repeatedly (four times over 2 weeks) on the dorsal ear skin (Figure 3a). An increase of C3 transcript, especially in the dermis, was already detectable at 6 hours after a single TPA treatment, indicating that C3 protein was being synthesized locally (Figure 3b). Histological examination of the ear skin revealed that the epidermal hyperplasia triggered by the TPA application was significantly reduced in C3 \u00c0/\u00c0 mice (Figure 3c). To confirm that this proliferative effect on skin ECs was mediated by C3 only and not the result of downstream complement activation effects, we exposed C5ar1 \u00c0/\u00c0 , C5ar2 \u00c0/\u00c0 (Figure 3d), and C6 \u00c0/\u00c0 (Figure 3e) mice to the same TPA treatment and found no difference in epidermal hyperplasia compared with controls. Taken together, these results indicate that only C3 plays a key role in EC growth and the development of epidermal hyperplasia during TPA-induced skin inflammation.",
+    "paper_id": "220652799",
+    "title": "C3 Drives Inflammatory Skin Carcinogenesis Independently of C5",
+    "authors": [
+      "W. Jackson",
+      "A. Gulino",
+      "L. Fossati-Jimack",
+      "R. Castro Seoane",
+      "Kunyuan Tian",
+      "Katie Best",
+      "J. K\u00f6hl",
+      "B. Belmonte",
+      "J. Strid",
+      "M. Botto"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3614349632155474,
+    "depth": 0,
+    "corpus_id": "CorpusId:220652799"
+  },
+  {
+    "snippet": "Extracellular matrix (ECM) remodeling of the skin is a continuous process necessary for maintaining tissue homeostasis. Type VI collagen (COL6) is characterized as a beaded filament, located in the dermal ECM, where COL6-\u03b16-chain has been demonstrated upregulated in atopic dermatitis. The aim of this study was to develop and validate a competitive ELISA, targeting the N-terminal of COL6-\u03b16-chain, named C6A6, and evaluate its associations with the dermatological condition\u2019s atopic dermatitis, psoriasis, hidradenitis suppurativa, systemic lupus erythematosus, systemic sclerosis, urticaria, vitiligo, and cutaneous malignant melanoma in comparison, to healthy controls. A monoclonal antibody was raised and employed in an ELISA assay. The assay was developed, technically validated, and evaluated in two independent patient cohorts. Cohort 1 showed C6A6 was significantly elevated in patients with atopic dermatitis ( p \u2009<\u20090.0001), psoriasis ( p \u2009<\u20090.0001), hidradenitis suppurativa ( p \u2009=\u20090.0095), systemic lupus erythematosus ( p \u2009=\u20090.0032) and melanoma ( p \u2009<\u20090.0001) compared to healthy donors. Cohort 2 confirmed C6A6 being upregulated in atopic dermatitis compared to healthy controls ( p \u2009<\u20090.0001), but also associated with disease severity (SCORAD, p \u2009=\u20090.046) and lowered in patients receiving calcineurin inhibitors ( p \u2009=\u20090.014). These findings are hypothesis generating, and the utility of the C6A6 biomarker for disease severity and treatment response needs to be validated in larger cohorts and longitudinal studies.",
+    "paper_id": "257055231",
+    "title": "A fragment of type VI collagen alpha-6 chain is elevated in serum from patients with atopic dermatitis, psoriasis, hidradenitis suppurativa, systemic lupus erythematosus and melanoma",
+    "authors": [
+      "S. Holm Nielsen",
+      "H. Port",
+      "Cecilie M\u00f8ller Hausgaard",
+      "J. G. Holm",
+      "J. P. Thyssen",
+      "S. S. Groen",
+      "M. Karsdal",
+      "V. Nielsen",
+      "A. Egeberg",
+      "A. Bay\u2010Jensen",
+      "S. Thomsen"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3614349632155474,
+    "depth": 0,
+    "corpus_id": "CorpusId:257055231"
+  },
+  {
+    "snippet": "D6 is a scavenging-receptor for inflammatory CC chemokines that are essential for resolution of inflammatory responses in mice. Here, we demonstrate that D6 plays a central role in controlling cutaneous inflammation, and that D6 deficiency is associated with development of a psoriasis-like pathology in response to varied inflammatory stimuli in mice. Examination of D6 expression in human psoriatic skin revealed markedly elevated expression in both the epidermis and lymphatic endothelium in \"uninvolved\" psoriatic skin (ie, skin that was more than 8 cm distant from psoriatic plaques). Notably, this increased D6 expression is associated with elevated inflammatory chemokine expression, but an absence of plaque development, in uninvolved skin. Along with our previous observations of the ability of epidermally expressed transgenic D6 to impair cutaneous inflammatory responses, our data support a role for elevated D6 levels in suppressing inflammatory chemokine action and lesion development in uninvolved psoriatic skin. D6 expression consistently dropped in perilesional and lesional skin, coincident with development of psoriatic plaques. D6 expression in uninvolved skin also was reduced after trauma, indicative of a role for trauma-mediated reduction in D6 expression in triggering lesion development. Importantly, D6 is also elevated in peripheral blood leukocytes in psoriatic patients, indicating that upregulation may be a general protective response to inflammation. Together our data demonstrate a novel role for D6 as a regulator of the transition from uninvolved to lesional skin in psoriasis.",
+    "paper_id": "19292469",
+    "title": "Elevated expression of the chemokine-scavenging receptor D6 is associated with impaired lesion development in psoriasis.",
+    "authors": [
+      "Mark D. Singh",
+      "V. King",
+      "H. Baldwin",
+      "D. Burden",
+      "A. Thorrat",
+      "S. Holmes",
+      "I. McInnes",
+      "R. Nicoll",
+      "K. Shams",
+      "Kenneth J Pallas",
+      "T. Jamieson",
+      "K. M. Lee",
+      "J. Carballido",
+      "A. Rot",
+      "G. Graham"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3614349632155474,
+    "depth": 0,
+    "corpus_id": "CorpusId:19292469"
+  },
+  {
+    "snippet": "In the skin of EBA patients, deposition of different complement components, including MAC, are found with an incidence ranging from 40 to 100%. In addition, direct IF microscopy of perilesional skin showed linear deposits of MAC at the dermal-epidermal junction of mice injected with antibodies to murine COL7 (6). C6 is the   first among terminal complement components that associates with C5b to initiate the assembly of MAC. To study the implication of complement in tissue destruction via C5b-9, mice deficient in C6 and wild-type mice were injected with rabbit antibodies to murine COL7. Both C6-deficient and control mice developed widespread blistering disease (Figure 2), to a similar extent, indicating that MAC is dispensable for blister formation in this model.",
+    "paper_id": "3920233",
+    "title": "Specific Inhibition of Complement Activation Significantly Ameliorates Autoimmune Blistering Disease in Mice",
+    "authors": [
+      "Sidonia Mihai",
+      "M. Hirose",
+      "Yi Wang",
+      "J. Thurman",
+      "V. Holers",
+      "B. Morgan",
+      "J. K\u00f6hl",
+      "D. Zillikens",
+      "R. Ludwig",
+      "F. Nimmerjahn"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.34613509643263835,
+    "depth": 1,
+    "corpus_id": "CorpusId:3920233"
+  },
+  {
+    "snippet": "C6A6 is elevated in patients with selected skin diseases compared to healthy controls. Cohort 1 included patients with atopic dermatitis (mean age: 52.3 years, 10% male), psoriasis (mean age: 50.7 years, 10% male), hidradenitis suppurativa (mean age: 49.5 years, 0% male), systemic lupus erythematosus (mean age: 50.5 years, 16.7% male), systemic sclerosis (mean age: 54.4 years, 5.6% male), urticaria (mean age: 43.6 years, 20% male), vitiligo (mean age: 56.9 years, 25% male) and melanoma (mean age: 55.6 years, 10% male), Table 3. C6A6 was significantly elevated in serum from patients with atopic dermatitis (p < 0.0001), psoriasis (p < 0.0001), hidradenitis suppurativa (p = 0.0095), systemic lupus erythematosus (p = 0.0032) and melanoma (p < 0.0001) compared to healthy donors (Fig. 2). No significant difference was found between patients with systemic sclerosis, urticaria, and vitiligo and healthy controls (p > 0.1).",
+    "paper_id": "257055231",
+    "title": "A fragment of type VI collagen alpha-6 chain is elevated in serum from patients with atopic dermatitis, psoriasis, hidradenitis suppurativa, systemic lupus erythematosus and melanoma",
+    "authors": [
+      "S. Holm Nielsen",
+      "H. Port",
+      "Cecilie M\u00f8ller Hausgaard",
+      "J. G. Holm",
+      "J. P. Thyssen",
+      "S. S. Groen",
+      "M. Karsdal",
+      "V. Nielsen",
+      "A. Egeberg",
+      "A. Bay\u2010Jensen",
+      "S. Thomsen"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3441653753236377,
+    "depth": 1,
+    "corpus_id": "CorpusId:257055231"
+  },
+  {
+    "snippet": "Changes in skin and subcutaneous tissue secondary to chronic venous disease C4a Pigmentation or eczema C4b \n\nLipodermatosclerosis or atrophie blanche C4c \n\nCorona phlebectatica C5 \n\nHealed ulcer C6 \n\nActive venous ulcer C6r \n\nRecurrent active venous ulcer",
+    "paper_id": "256933389",
+    "title": "An Overview of Specific Considerations in Chronic Venous Disease and Iliofemoral Venous Stenting",
+    "authors": [
+      "T. Saleem"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.33445394611696155,
+    "depth": 1,
+    "corpus_id": "CorpusId:256933389"
+  },
+  {
+    "snippet": "In this section, C6 was used to prepare C6-loaded NPs (CY-C6, CR-C6, CU-C6) with CY, CR or CU because of the weak fluorescence of CTS and CTS-peptide conjugates in Confocal laser microscope (CLSM) analysis. Skin samples were processed similarly to quantitative skin penetration studies. After 6 h, skin samples were carefully extracted, rinsed with PBS, and subsequently fixed in 4 % paraformaldehyde. Following fixation, the skin samples were sliced into sections with a thickness of 6 \u03bcm using a Cryostat slicer (Thermo Cryotome E, America). The penetration of C6 into the skin was then observed using a CLSM (ZEISS, CLSM 880, Germany) with an emission wavelength of 475 nm. Furthermore, to better assess the penetration ability of each formula through the skin, the average fluorescence intensity of the skin in each group was calculated using ImageJ software.",
+    "paper_id": "271389823",
+    "title": "Carrier-free cryptotanshinone-peptide conjugates self-assembled nanoparticles: An efficient and low-risk strategy for acne vulgaris",
+    "authors": [
+      "Quanfu Zeng",
+      "Hongkai Chen",
+      "Zhuxian Wang",
+      "Yinglin Guo",
+      "Yufan Wu",
+      "Yi Hu",
+      "Peiyi Liang",
+      "Zeying Zheng",
+      "Tao Liang",
+      "Dan Zhai",
+      "Yaling Guo",
+      "Li Liu",
+      "Chu-Meng Shen",
+      "Cuiping Jiang",
+      "Qun-Jie Shen",
+      "Yan-kui Yi",
+      "Qiang Liu"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3294917794704515,
+    "depth": 1,
+    "corpus_id": "CorpusId:271389823"
+  },
+  {
+    "snippet": "Results in the control group were not shown.In the C6 treatment group (Fig. 4D), the fluorescence intensity of C6 was not obviously detected from mouse skin after 6 and 24 h treatment.However, in the C6-ethosomes treatment group (Fig. 4E), the fluorescence intensity of C6 was visible at 6 h and significantly declined at 24 h.Additionally, the fluorescence signals were quantified in each group using the mean gray value by ImageJ (Fig. 4F).The mean gray value in the C6-ethosomes treatment group at 6 h was almost 10-fold greater than that in C6.Our findings indicate no significant difference between the two groups at 24 h.However, our study showed that C6-ethosomes had a remarkable drug delivery effectiveness through transdermal administration in mice compared to ordinary drug C6.",
+    "paper_id": "268040659",
+    "title": "Transdermal administration of farnesol-ethosomes enhances the treatment of cutaneous candidiasis induced by Candida albicans in mice",
+    "authors": [
+      "Ting Shen",
+      "Baocheng Tian",
+      "Wei Liu",
+      "Xuesong Yang",
+      "Qi Sheng",
+      "Mengxin Li",
+      "Haiyan Wang",
+      "Xiuwen Wang",
+      "Huihui Zhou",
+      "Yanchun Han",
+      "Chen Ding",
+      "Sixiang Sai"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3245238094775771,
+    "depth": 1,
+    "corpus_id": "CorpusId:268040659"
+  },
+  {
+    "snippet": "\u2022 C Skin",
+    "paper_id": "273294281",
+    "title": "Exploration of the Conditions for Occurrence of Photoplethysmographic Signal Inversion above the Dorsalis Pedis Artery",
+    "authors": [
+      "Fredrik Wilsbeck Jerve",
+      "Dag Roar Hjelme",
+      "H. Kalv\u00f8y",
+      "John Allen",
+      "C. Tronstad"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3244780451268607,
+    "depth": 1,
+    "corpus_id": "CorpusId:273294281"
+  },
+  {
+    "snippet": "The intensity of the green color, corresponding to the accumulation of C6, was greater in the epidermis and in the upper part of the hair follicle, and decreased with increasing depth in the skin. The images obtained by confocal microscopy seem to indicate that the in vitro skin penetration by C6 in the LPNCs accumulated on the epidermis and the hair follicle infundibulum, but did not penetrate into the deepest parts of hair follicles. This fact suggests that C6 is released when it comes into contact with the stratum corneum lipids, due to its hydrophobic nature, leading to greater accumulation in less deep areas. \n\nThe intensity in red color, corresponding to LRB, was less than that of C6 in the epidermis but greater than that of C6 when analyzing the profile deeper into the hair follicle. The fact that an accumulation of LRB was observed at these depths suggests that this fluorophore is found in the lipid nucleus of the nanoparticles and travels with them towards the bulb of the follicle. As described in the literature, ethyl cellulose polymer nanoparticles accumulate in skin annexes, due to their geometry and size, and can deliver small molecules to hair follicles through the transfollicular route, limiting distribution to the rest of the skin and to systemic circulation [33].",
+    "paper_id": "233397126",
+    "title": "Dexamethasone-Loaded Lipomers: Development, Characterization, and Skin Biodistribution Studies",
+    "authors": [
+      "Eloy Pena-Rodr\u00edguez",
+      "Maria Lajarin-Reinares",
+      "Aida Mata-Ventosa",
+      "S. P\u00e9rez-Torras",
+      "F. Fern\u00e1ndez-Campos"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3233171911861015,
+    "depth": 1,
+    "corpus_id": "CorpusId:233397126"
+  },
+  {
+    "snippet": "Subsequently, we assessed the permeability of LR@HBn-G in the auricular epidermis of both normal and psoriatic murine models. C6 was utilized as a fluorescent marker to monitor and visualize the infiltration process of nanoparticles. After 12 h of topical application, ear samples were collected and examined (Fig. 5A). Minimal fluorescence was observed in both the C6-G and C6@HBn-G groups within the normal ear skin. However, in the psoriatic model, both C6-G and C6@HBn-G exhibited significant fluorescence, with C6@HBn-G demonstrating notably deeper penetration. The 3D reconstruction visually confirmed this difference (Fig. 5B), and Z-axis quantification revealed that C6@HBn-G reached depths up to 180 \u03bcm, significantly deeper than C6-G (Fig. 5C). The enhanced skin penetration of C6@HBn-G was attributed to its nanoscale size and surface characteristics, which allow it to exploit the disrupted skin barrier in psoriatic lesions. Moreover, the inflammatory and hypervascular nature of psoriatic skin may trigger an EPRlike effect, enhancing both nanoparticle penetration and retention, surpassing the performance of small-molecule C6 [48]. Employing the same methodology, we further investigated the penetration efficacy of the solution dosage form on ear skin (Fig. S8A-C). The solution showed weaker penetration, likely due to poorer adhesion and easier removal. These results indicate that healthy skin effectively blocks exogenous substances. Additionally, C6@HBn-G demonstrated a deeper delivery effect compared to C6@HBn solution, potentially due to its prolonged adhesion to the skin surface, facilitating continuous nanoparticle release. \n\nSubsequently, we performed a comprehensive evaluation of the retention of LR@HBn-G in psoriatic skin using DiR as a probe within an in vivo imaging system (Fig. 5D). DiR and DiR@HBn-G were topically applied to normal dorsal skin and psoriatic dorsal skin for 6 h. The retention of fluorescence signals was monitored at 6, 12, 24, 48, and 72 h post-application.",
+    "paper_id": "283232431",
+    "title": "Simultaneous targeting of multiple etiological using a nanosized strategy for psoriasis management",
+    "authors": [
+      "Xinyu Jiang",
+      "Minghui Wang",
+      "Linyi Zhang",
+      "Zihao Huang",
+      "Pengfei Mao",
+      "Yingyi Zhao",
+      "Zihao Tao",
+      "Yuqi Han",
+      "Leer Cai",
+      "Kaiying Zhang",
+      "Shisheng Chen",
+      "Zhenzhen Zhao",
+      "Guangyong Lin",
+      "Ruijie Chen",
+      "Longfa Kou"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.32075480741253243,
+    "depth": 1,
+    "corpus_id": "CorpusId:283232431"
+  },
+  {
+    "snippet": "The Northern Finland Birth Cohort 1966 (NFBC1966) is an epidemiological and longitudinal research program in the two northernmost provinces in Finland (Oulu and Lapland). The NFBC1966 comprised the offspring of the mothers, who lived in either province and whose expected delivery date fell between 1st January and 31st December 1966 [25]. The surviving parents of the subjects in the NFBC1966 have participated in a comprehensive health study called NFBC-PS and invited to take part in a diverse health questionnaire (Ker\u00e4nen et al., unpublished observations) [26]. All participants living in the Oulu area (n=1239) were also invited to participate in the clinical examination, including total body skin examination. \n\nA skin examination was performed on in 552 participants (346 females and 206 males) and this subpopulation was included in the final skin study analysis. The skin data was collected between May 2018 and March 2019 on the premises of the Faculty of Medicine of the University of Oulu [26]. \n\nThe comprehensive clinical survey included a thorough 20-minute whole-skin examination performed by experienced dermatologist. All areas of the skin were observed including the nails, hair and scalp, with a detailed inspection of the legs. CVD was categorized using the clinical CEAP classification [24]: C0 No visible or palpable signs of venous disease, C1 telangiectasias or reticular veins, C2 varicose veins (distinguished from reticular veins by a diameter of 3 mm or more), C3 edema, C4 changes in skin and subcutaneous tissue secondary to CVD, pigmentation or eczema, lipodermatosclerosis or atrophie blanche, C5 healed venous ulcer and C6 active venous ulcer (Fig 1). Stages C1-C3 were categorized as mild or moderate disease and stages C4-C6 as severe disease (CVI refers to an advanced form of CVD with skin changes and ulceration [CEAP, severe diseases C4-C6]).",
+    "paper_id": "238749260",
+    "title": "The association between chronic venous disease and measures of physical performance in older people: a population-based study",
+    "authors": [
+      "S. Sinikumpu",
+      "Maija-Helena Ker\u00e4nen",
+      "J. Jokelainen",
+      "S. Kein\u00e4nen-Kiukaanniemi",
+      "L. Huilaja"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3199725452275322,
+    "depth": 1,
+    "corpus_id": "CorpusId:238749260"
+  },
+  {
+    "snippet": "Validation of interventions for risk of impaired skin integrity in adult and aged patients.",
+    "paper_id": "220288729",
+    "title": "Validation of interventions for risk of impaired skin integrity in adult and aged patients.",
+    "authors": [
+      "L. B. Meneses",
+      "F. D. A. L. Medeiros",
+      "Jacira dos Santos Oliveira",
+      "M. M. L. N\u00f3brega",
+      "Mirian Alves da Silva",
+      "M. J. G. Soares"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3186706041940306,
+    "depth": 1,
+    "corpus_id": "CorpusId:220288729"
+  },
+  {
+    "snippet": "The Franz diffusion cell system was used to assess the ability of each group of formulations to penetrate the skin separated from nude mice (Fig. 6). For the qualitative assay, the skin from each group of C6 formulation was collected following incubation in the Franz diffusion cell for 4 h. Fluorescence images of the skin are presented in Fig. 6A, which show that skin samples of the free C6 group exhibited only a weak C6 fluorescence signal following incubation for 4 h. In contrast, there were enhanced C6 fluorescence signals in the skin of all groups with C6-loaded transfersomes. Furthermore, more pronounced C6 fluorescence was observed in both the epidermis and dermis of C6@STFs-CPP and C6@DTFs-CPP groups, suggesting that R5H3 peptide could facilitate the penetration of the carrier into the deep layers of the skin. \n\nFor quantitative analysis of skin penetration in vitro, various LR (200 \u03bcg/mL) formulations (0.5 mL) were deposited on the skin surface of the donor chamber. The concentrations of LR were determined by sampling from the receptor chamber at 0.5, 1, 2, 4, 6, 8, 10, and 12 h. After calculating Q n , the LR transdermal penetration curve for each group was plotted (Fig. 6B). After sampling at 12 h, the cumulative permeation of LR per unit area (Q 8 ) in the LR-loaded transfersome groups (LR@STFs and LR@DTFs) was 7.33 and 13.02 \u03bcg/cm 2 , respectively, both significantly (p < 0.05 and p < 0.001, respectively) higher than that in the free LR group (1.71 \u03bcg/cm 2 ). This might be because the surfactants of transfersomes could change the crystal arrangement and increase the mobility of lipid molecules in the stratum corneum, thus enhancing the skin penetration of transfersomes. In addition, the high deformability of the transfersomes allowed them to squeeze between the stratum corneum and penetrate the skin, thus exhibiting enhanced penetration.",
+    "paper_id": "258357665",
+    "title": "Lycorine transfersomes modified with cell-penetrating peptides for topical treatment of cutaneous squamous cell carcinoma",
+    "authors": [
+      "Ying Li",
+      "Zongguang Tai",
+      "Jinyuan Ma",
+      "Fengze Miao",
+      "Rujuan Xin",
+      "Cui-chan Shen",
+      "Min Shen",
+      "Quangang Zhu",
+      "Zhongjian Chen"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.31517571595423155,
+    "depth": 1,
+    "corpus_id": "CorpusId:258357665"
+  },
+  {
+    "snippet": "Presents chronic venous insufficiency, according to CEAP classification, C6: skin changes with active ulcer.",
+    "paper_id": "238034278",
+    "title": "Approach to an Ulcer of Venous Etiology in a Primary Care Nursing Consultation",
+    "authors": [
+      "Mar\u00eda Jos\u00e9 Gil Mosteo"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.313503536865218,
+    "depth": 1,
+    "corpus_id": "CorpusId:238034278"
+  },
+  {
+    "snippet": "Skin, a multidimensional organ, is vital in preserving physical harmony by defending against external threats, regulating fluid balance, controlling temperature, sensing stimuli, and combating pathogens. Humans represent a minority compared to the microbes inhabiting our skin, as shown in Table 1 [34,35]. The first contact begins with vaginal birth, while c-section offers a more sterile environment [36]. After that, different relationships between the human skin and microorganisms develop, encompassing mutualistic, communal, saprophytic, and parasitic interactions. The skin microbiome varies significantly across different body regions and changes with genome, gender, age, and environmental factors such as living conditions, antibiotic use, sun exposure, and diet. \n\nThe stratum corneum, consisting of corneocytes surrounded by lipid layers, creates a resilient physical barrier that prevents water loss and protects against external threats [37,38]. Lower temperature, fatty acid production, and sweat gland secretion of lactic acid maintain acidity, supporting beneficial bacteria while inhibiting pathogenic strains like Staphylococcus aureus [39,40]. Most skin areas are dry, which is generally an unfavorable environment for bacterial growth. The continuous shedding of epithelial cells in the stratum corneum renews the skin surface and removes adhering microorganisms [41]. The skin's defense also includes a chemical barrier of antimicrobial peptides, proteases, cytokines, and chemokines, which can directly inhibit microbial growth or activate immune responses [42]. \n\nAge significantly affects the diversity and composition of skin microbiota. Studies suggest that adults have higher microbial diversity than adolescents and the elderly. The increased microbial diversity in adults can be explained by the accumulation of several factors, such as hormonal stabilization, cumulative exposure to a wide range of environments and external factors throughout life, lower use of antibiotics compared to adolescents, and better skin barrier integrity than in older people. Furthermore, the daily activities and diversity of human interactions in which adults are involved, compared to older people, may contribute to the maintenance and diversification of the skin microbiome. Skin moisture retention and sebum production are influenced not only by age but also by gender.",
+    "paper_id": "277984214",
+    "title": "The Microbiota\u2013Human Health Axis",
+    "authors": [
+      "Harrie Toms John",
+      "Treesa Clare Thomas",
+      "Ezenwa Collins Chukwuebuka",
+      "Alishum Ali",
+      "Reggani Anass",
+      "Yididiya Yilma Tefera",
+      "Bency Babu",
+      "N. Negrut",
+      "Anca Ferician",
+      "Paula Marian"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3045149685656595,
+    "depth": 1,
+    "corpus_id": "CorpusId:277984214"
+  },
+  {
+    "snippet": "At depths of 200 \u00b5m, the intensity of C6 drops to 50 AU and, as the depth increases, the intensity of the green channel continues to decrease, to about 20 AU at 400 \u00b5m (corresponding to the hair follicle isthmus). Beyond 500 \u00b5m, in depth (i.e., in the suprabulbar region), the intensity of C6 was low (<10AU), which seems to indicate that C6 does not accumulate in the deeper parts of the follicle. Regarding the intensity in the red color, corresponding to the presence of LRB, a different behavior can be observed. The profile of the center of the follicle (Figure 5A, Line 1) shows an intensity value around 50 AU from the skin surface to 700-800 \u00b5m deep. The profile of the border of the follicle (Figure 5A, Line 2) shows a similar profile, with the intensity of the LRB up to 700 \u00b5m being around 65 AU. Due to the narrowing of the follicle, the line is outside the follicle, around 1000 \u00b5m; however, near the follicle sheath (1200 \u00b5m), it can be seen that the intensity of the LRB was around 50 AU. In the non-follicle area (Figure 5A, Line 3), the C6 intensity profile was high to 200 \u00b5m in depth, but then decreased quickly, suggesting the accumulation of C6 in the epidermis. It can also be seen that the intensity of LRB outside the follicle at depths greater than 200 \u00b5m was clearly lower than that of the follicle lines. In the epidermis, a yellow color can be observed, corresponding to the co-localization of both fluorochromes in this region. In other words, LRB had accumulated throughout the follicle at depths greater than C6. \n\nIn Figure 5B, corresponding to another skin section of the permeation with C6-LRB-LPNCs, a section of the hair follicle can be seen. In this case, the section is not longitudinal but a cross-section.",
+    "paper_id": "233397126",
+    "title": "Dexamethasone-Loaded Lipomers: Development, Characterization, and Skin Biodistribution Studies",
+    "authors": [
+      "Eloy Pena-Rodr\u00edguez",
+      "Maria Lajarin-Reinares",
+      "Aida Mata-Ventosa",
+      "S. P\u00e9rez-Torras",
+      "F. Fern\u00e1ndez-Campos"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3032157097813872,
+    "depth": 1,
+    "corpus_id": "CorpusId:233397126"
+  },
+  {
+    "snippet": "In this part, C6 was used to as a substitute for LA to prepare C6-loaded skin keratin liposomes (C6L) [31]. As shown in Figure 4a, the fluorescence signal in the C6L groups was first visualized in the hair follicles before it was distributed uniformly in the skin after 1 h. The fluorescence intensities and penetration rates in the C6L-treated skin were all significantly higher than those of the C6 group at all time points. After 1 h, C6 delivered by skin keratin liposomes can permeate into the entire hair follicle and deposit at the follicle's root. The result demonstrated that hair follicles were the main penetration pathways of the C6L. \n\nMolecules 2022, 27, x FOR PEER REVIEW 6 of 13 root. The result demonstrated that hair follicles were the main penetration pathways of the C6L. Moreover, the C6L penetrated deeply into the skin in a time-dependent manner (Figure 4b). The fluorescence intensities of the C6L into the skin at 50 min and 60 min were significantly higher than those of the free C6. The LA fluorescence mainly accumulated into the hair follicles at different times [30]. This indicated that the hair follicle served as a drug reservoir for sustained drug release. These findings were consistent with the results of the in vitro penetration [32]. This further demonstrated that skin keratin liposomes are effective vehicles for LA delivery into the deeper skin layers through hair-follicle pathways.",
+    "paper_id": "248191723",
+    "title": "Mechanisms of Penetration Enhancement and Transport Utilizing Skin Keratine Liposomes for the Topical Delivery of Licochalcone A",
+    "authors": [
+      "Wenfeng Wu",
+      "Zhuxian Wang",
+      "Yufan Wu",
+      "Huiyi Wu",
+      "Tingting Chen",
+      "Yaqi Xue",
+      "Yuanyuan Wang",
+      "Cuiping Jiang",
+      "Chu-Meng Shen",
+      "Li Liu",
+      "Hongxia Zhu",
+      "Qiang Liu"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.29729875002481315,
+    "depth": 1,
+    "corpus_id": "CorpusId:248191723"
+  },
+  {
+    "snippet": "Our in vitro findings indicated that the anticancer effect and skin penetration of LR-loaded CPP-modified transfersomes were superior to those of the unmodified counterparts. Therefore, the former carriers were evaluated in further in vivo studies. To improve the retention capacity of CPP-modified transfersomes on the skin of cSCC-bearing nude mice, carbomer gel was applied as a reservoir for loading them. The image of the prepared LR@DTFs-CPP Gel is shown in Additional file 4. \n\nAfter topical treatment of tumor-bearing nude mice with various C6 formulations, microdistribution of the preparations in the skin and tumor tissue was evaluated. Free C6, C6@DTFs-CPP, free C6 Gel, C6@STFs-CPP Gel, and C6@DTFs-CPP Gel were applied to the skin directly above the tumor twice a day. The mice were sacrificed after 2 days of treatment, the skin layer and subcutaneous tumor were collected, and tissue sections were prepared. The tissue sections of mice in each group were examined using fluorescence microscopy (Fig. 7). The C6 signals in the skin layer and tumor area after treatment with free C6 Gel and C6@DTFs-CPP Gel were more robust than those after treatment with free C6 and C6@DTFs-CPP. This indicated that incorporating transfersomes into the gel enhanced their transdermal delivery capacity after topical treatment as a patch on the skin directly above the tumor with prolonged retention time. The C6@ STFs-CPP and C6@DTFs-CPP Gel showed significantly enhanced C6 signals in the skin layer and tumor area compared to free C6 Gel, indicating that the CPP-modified transfersome formulations promoted skin and tumor penetration in vivo. \n\nAs a CPP, the skin penetration mechanism of the R5H3 peptide is presumably associated with the transcellular and paracellular pathways. For transcellular pathways, the R5H3 peptide (rich in positively charged arginine) strongly interacts with phosphate groups on both sides of the membrane.",
+    "paper_id": "258357665",
+    "title": "Lycorine transfersomes modified with cell-penetrating peptides for topical treatment of cutaneous squamous cell carcinoma",
+    "authors": [
+      "Ying Li",
+      "Zongguang Tai",
+      "Jinyuan Ma",
+      "Fengze Miao",
+      "Rujuan Xin",
+      "Cui-chan Shen",
+      "Min Shen",
+      "Quangang Zhu",
+      "Zhongjian Chen"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.2970979054281581,
+    "depth": 1,
+    "corpus_id": "CorpusId:258357665"
+  }
+]

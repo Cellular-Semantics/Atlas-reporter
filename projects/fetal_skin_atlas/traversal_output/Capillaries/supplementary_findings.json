@@ -1,0 +1,12 @@
+{
+  "cell_type": "Capillaries",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Supplementary Table 3 provides DEGs used to annotate Capillaries in prenatal skin. Listed as fine-grained annotation under broad 'Vascular endothelium' category.",
+    "trajectory": "Capillaries are positioned early on the arteriolar differentiation pathway: early endothelial cells -> capillaries -> capillary arterioles -> arterioles (Fig. 4d, Extended Data Fig. 10a-c).",
+    "sprouting_angiogenesis": "Sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, is increased in prenatal skin capillary cells (Extended Data Fig. 10g,h).",
+    "macrophage_interactions": "Macrophage subsets interact with capillary endothelial cells. Aggregated macrophage-endothelial ligand-receptor interactions were assessed (Extended Data Fig. 9a, Supplementary Table 28).",
+    "temporal_presence": "Endothelial cells are present throughout gestation (Fig. 1c, Extended Data Fig. 1d, Supplementary Table 4)."
+  }
+}

@@ -1,0 +1,408 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "migDCs in the LN (including Langerin + CD103 + cross-presenting DCs) are not required for CD4 + T cell effector function, despite having greater efficiency of s.c. protein capture in the LN than resident CD8\ue061 cDCs.",
+      "Impairing DC migration from skin to the sdLN via knockout of the CCR7 receptor and deletion of migDC subsets including Langerin + CD103 + DCs enhanced, not diminished, immune priming.",
+      "Transcriptomics in mouse and human reveal migDC subsets from skin relate most closely to each other and share gene signatures related to dampening of DC and T cell activation."
+    ],
+    "summary": "Migratory dendritic cells (migDCs), including Langerin+ CD103+ subsets, are efficient at protein capture in lymph nodes but are not required for CD4+ T cell effector function. Depletion of migDCs and impaired migration can actually enhance immune priming, and transcriptomic analysis indicates skin migDCs share gene signatures linked to suppression of DC and T cell activity.",
+    "categories": [
+      "function",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:655666",
+    "source_title": "Classical Flt3L-dependent dendritic cells control immunity to protein vaccine",
+    "source_authors": "N. Anandasabapathy et al.",
+    "source_year": null,
+    "snippet": "find that irrespective of Flt3L treatment, migDCs in the LN (including Langerin + CD103 + cross-presenting DCs) are not required for CD4 + T cell effector function, despite having greater efficiency of s.c. protein capture in the LN than resident CD8\ue061 cDCs. Impairing DC migration from skin to the sdLN via knockout of the CCR7 receptor and deletion of migDC subsets including Langerin + CD103 + DCs enhanced, not diminished, immune priming. Rather, the immune response develops through CD11c + ZBTB46-dependent cDCs. Transcriptomics in mouse and human reveal migDC subsets from skin relate most closely to each other and share gene signatures related to dampening of DC and T cell activation. Thus, we demonstrate that the immune response is controlled by cDCs in lymphoid tissue and that tissue microenvironment may confer immunosuppressive DC function in vivo."
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "FITC+ve cells in the lymph node had the phenotype of migratory DC subsets, which we infer had transported FITC from skin to LN."
+    ],
+    "summary": "This snippet shows that migratory dendritic cells (migDCs), including Langerhans cells, CD11b+, and CD103+ subsets, are responsible for transporting antigen (FITC) from the skin to the lymph nodes in mice, highlighting their role in antigen migration and presentation.",
+    "categories": [
+      "function",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:16510077",
+    "source_title": "Epithelium Expressing the E7 Oncoprotein of HPV16 Attracts Immune-Modulatory Dendritic Cells to the Skin and Suppresses Their Antigen-Processing Capacity",
+    "source_authors": "J. Chandra et al.",
+    "source_year": null,
+    "snippet": "K14.E7 DCs take up antigen in the skin and migrate to draining lymph node APC subsets take up antigen in the tissue, process it for presentation, migrate to draining lymph nodes and mature to express co-stimulatory molecules and cytokines in order to effectively induce a cell-mediated response. To examine this process in more detail in K14.E7 mice, we painted skin of non-transgenic and K14.E7 mice with FITC, and monitored antigen uptake and delivery by APCs to the draining lymph node (Fig 4A). We assessed both migratory DC subsets (migDCs) (LCs, CD11b + migDCs and CD103 + migDCs) and LN-resident DC subsets (resDCs) (CD8 + resDCs and CD11b + resDCs) according to gating strategies shown in S1 Fig and Table 1. To determine whether there was direct passage of FITC from the skin to the lymph node, we assessed whether LN-resident DCs had taken up FITC, and no such uptake was observed (Fig 4A). Rather, FITC+ve cells in the lymph node had the phenotype of migratory DC subsets, which we infer had transported FITC from skin to LN. FITC median fluorescent intensity (MFI) was significantly higher in the epidermal LCs of K14.E7 mice than in nontransgenic animals, suggesting that K14.E7 epidermal LCs had a higher FITC uptake (Fig 4B). In the draining lymph node, the relative percentage of FITC+ DCs from all DC subsets was decreased in K14.E7 mice (Fig 4A). But of more biological relevance, the FITC MFI in the migratory FITC + DC subsets was comparable in K14.E7 and non-transgenic mice, and an increased absolute number of FITC + migratory DCs was found in the lymph node of K14.E7 mice (Fig 4C)."
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "In the SDLN, CD11c lo/hi MHCII hi migratory DCs (migDCs) were comprised of the same four DC subsets with different relative prevalence"
+    ],
+    "summary": "In the skin-draining lymph node (SDLN), migratory dendritic cells (migDCs) are composed of several DC subsets, suggesting a maintained diversity after migration from skin tissue.",
+    "categories": [
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:250094015",
+    "source_title": "Early life tolerance depends on a subset of specialized dendritic cells and is reinforced by the skin microbiota",
+    "source_authors": "Antonin Weckel et al.",
+    "source_year": null,
+    "snippet": "-seq) on D10 mice. This confirmed Epcam hi Langerhans cells (LC), Xcr1 hi CD103 hi type 1 conventional dendritic cells (DC1) and Itgam hi and Itgam lo type 2 conventional dendritic cells (CD11b hi and CD11b lo DC2s) as the four main skin DC types, with a separate small cluster of DCs that contain a mix of these markers but are defined primarily by their CCR7 + status (Figs. 1C-D, S1C). In the SDLN, CD11c lo/hi MHCII hi migratory DCs (migDCs) were comprised of the same four DC subsets with different relative prevalence (Figs. S1D-E). Of note, the C-type lectin CD301b, encoded by Mgl2, is known to mark a portion of DC2 in adult murine skin and other tissues (Kumamoto et al., 2013;Linehan et al., 2015;Shin et al., 2016;Tatsumi et al., 2021). Our CITE-seq data confirmed enrichment of Mgl2 and CD301b expression in both skin CD11b hi DC2 and CD11b lo DC2 clusters (Fig. 1E), with similar enrichment of CD301b protein but not RNA-level expression in SDLN migDC2 (Fig. S1F). Flow cytometry revealed that approximately two thirds of neonatal skin DC2s were CD301b + by surface staining (Fig. 1F, S1G-I).\n\nTo systematically assess if a specific DC subset preferentially supports generation of Tregs specific for skin commensal antigens, we next used three complementary models to temporarily deplete each of the major skin DC subsets in the neonatal window during S. epi-2w colonization ( Fig. 1G). As reported in adult mice (Yamazaki et al., 2013a), diptheria toxin (DT) administration to Xcr1 DTR mice led to preferential depletion of DC1 in the skin and SDLN (Fig. S1J). Likewise, Hu-Lang DTR mice"
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "Migratory DCs (migDCs, also termed DC3 [37,69], mregDC [70,71], LAMP3 + DCs [72]) represent a distinct mature cell state that can arise in both cDC1s and cDC2s upon antigen sensing or uptake [70,71].",
+      "Typically, migDCs are characterized in mice and humans by the expression of CCR7 [58,73] which is the chemotactic driver that can guide them towards the LNs [58,71] and LAMP3 (only in humans) [72].",
+      "MigDCs are non-lymphoid tissue DCs that can migrate to the tdLN via the lymphatic system rather than the blood.",
+      "migDCs loaded with antigen migrate to the T-cell zones of the LNs wherein they can prime CD4 + and CD8 + T cells.",
+      "This migratory phenotype is also characterized by the upregulation of MHC-II, costimulatory molecules, and secretion of inflammatory cytokines, which further drive the inflammatory T-cell responses [58,74].",
+      "migDCs can also transfer their antigens to the LN resident DC, which can prime T cells [74]."
+    ],
+    "summary": "Migratory dendritic cells (migDCs) are a mature cell state arising from cDC1s or cDC2s, marked by CCR7 expression and able to migrate from non-lymphoid tissues to lymph nodes via lymphatics. They upregulate MHC-II and costimulatory molecules, secrete inflammatory cytokines, prime T cells, and can transfer antigen to LN-resident DCs.",
+    "categories": [
+      "function",
+      "markers",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:251757051",
+    "source_title": "Dendritic Cell Vaccines: A Promising Approach in the Fight against Ovarian Cancer",
+    "source_authors": "A. Caro et al.",
+    "source_year": null,
+    "snippet": "Migratory DCs (migDCs, also termed DC3 [37,69], mregDC [70,71], LAMP3 + DCs [72]) represent a distinct mature cell state that can arise in both cDC1s and cDC2s upon antigen sensing or uptake [70,71]. Typically, migDCs are characterized in mice and humans by the expression of CCR7 [58,73] which is the chemotactic driver that can guide them towards the LNs [58,71] and LAMP3 (only in humans) [72]. MigDCs are non-lymphoid tissue DCs that can migrate to the tdLN via the lymphatic system rather than the blood. In an inflammatory setting, migDCs loaded with antigen migrate to the T-cell zones of the LNs wherein they can prime CD4 + and CD8 + T cells. This migratory phenotype is also characterized by the upregulation of MHC-II, costimulatory molecules, and secretion of inflammatory cytokines, which further drive the inflammatory T-cell responses [58,74]. Besides directly priming T cells in the LNs, migDCs can also transfer their antigens to the LN resident DC, which can prime T cells [74]."
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "We have determined migDC group together by hierarchy clustering.",
+      "Langerin+CD103+ DC group more closely with other migDC than with their lymphoid developmental and functional equivalents-CD8\u03b1 cDC.",
+      "This work suggests the previously overlooked Langerin-CD11b\u2212 DC subset contains a distinct, previously uncharacterized Flt3L-responsive migratory population with many properties of cDC.",
+      "As such, Langerin-CD11b\u2212 DC may serve as a potential target of therapeutics aimed to enhance cutaneous immunity and as a mediator of the cutaneous immune response."
+    ],
+    "summary": "Migratory dendritic cells (migDCs) and related Langerin+CD103+ DCs cluster together by gene expression analysis, distinct from lymphoid-resident DCs. The Langerin-CD11b\u2212 subset constitutes a previously uncharacterized Flt3L-responsive migratory population with classical DC properties and potential importance in cutaneous immunity.",
+    "categories": [
+      "development",
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:17679745",
+    "source_title": "Flt3L-dependence helps define an uncharacterized subset of murine cutaneous dendritic cells",
+    "source_authors": "Shamim A. Mollah et al.",
+    "source_year": null,
+    "snippet": ", and CD11c-DTR) cannot selectively isolate Langerin-CD11b\u2212 migDC at this time; therefore it will be difficult to immediately resolve their in vivo role in mediating cutaneous immunity. It is possible that when licensed to prime, DC subset activity in the skin could relate to specialization or non-redundant coverage of various pathogens.\n\nDiffering susceptibility of DC subsets to infection may permit discrete roles in antigen presentation, as observed for tissue resident CD103+ DC vs. alveolar macrophages during influenza infection (Helft et al., 2012).\n\nWe have determined migDC group together by hierarchy clustering. These data suggest three dermal DC subsets are closely related at the transcriptome level to each other and may suggest that tissue microenvironment impacts terminal DC differentiation. As such, Langerin+CD103+ DC group more closely with other migDC than with their lymphoid developmental and functional equivalents-CD8\u03b1 cDC. Perhaps in the steady state tissue resident migDC may act in concert. Intriguingly LN CD205+ cDC from LPS treated mice cluster with LPS-treated DC such as DC-SIGN+ monocyte-derived DC than to cDC. The dominant gene signatures relating these subsets in this context are likely related to LPS treatment.\n\nA lack of clarity surrounding the function and development of diverse DC subsets present in the skin and skin draining LN has long hindered the development of vaccines and clinical therapeutics to skin cancer. This work suggests the previously overlooked Langerin-CD11b\u2212 DC subset contains a distinct, previously uncharacterized Flt3L-responsive migratory population with many properties of cDC. As such, Langerin-CD11b\u2212 DC may serve as a potential target of therapeutics aimed to enhance cutaneous immunity and as a mediator of the cutaneous immune response."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "we sorted three subsets of migDCs and CD8\ue061 + cDCs from the skin-draining LNs from Flt3L-treated mice, seeking transcripts commonly expressed across three migDCs subsets at twofold differential expression when compared with LN-resident CD8\ue061 + DCs.",
+      "We identified common up-regulation of genes associated with immune suppression across all skin DC subsets when compared with lymphoid-resident crosspresenting DCs mouse (Fig. 7 C).",
+      "Also, collective blockade of skin DC migration enhanced the immune response to priming in vivo; this appeared to occur irrespective of the presence of Flt3L, suggesting migratory DCs might be acting in concert to suppress immunity."
+    ],
+    "summary": "Multiple subsets of migratory dendritic cells (migDCs) in skin-draining lymph nodes share gene expression signatures associated with immune suppression, differentiating them from lymph node-resident cross-presenting DCs. Blocking migration of skin DCs enhances immune priming, indicating migDCs may help suppress immunity.",
+    "categories": [
+      "markers",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:655666",
+    "source_title": "Classical Flt3L-dependent dendritic cells control immunity to protein vaccine",
+    "source_authors": "N. Anandasabapathy et al.",
+    "source_year": null,
+    "snippet": "A). We observed similar clustering of skin-resident DCs in humans when compared with their developmental counter parts in blood (Fig. 7 B). To further investigate this, we sorted three subsets of migDCs and CD8\ue061 + cDCs from the skin-draining LNs from Flt3L-treated mice, seeking transcripts commonly expressed across three migDCs subsets at twofold differential expression when compared with LN-resident CD8\ue061 + DCs. We identified common up-regulation of genes associated with immune suppression across all skin DC subsets when compared with lymphoid-resident crosspresenting DCs mouse (Fig. 7 C). To determine if this occurs in people, we also analyzed transcripts from three subsets of human migDCs isolated from skin versus blood BDCA3 + cross-presenting DCs that were available in the NCBI Gene Expression Omnibus (GEO; see Materials and methods; Haniffa et al., 2012). We observed overlap in the genes expressed in the skin-resident or skin-migrated DCs across both species (Fig. 7 C). We performed our study in Flt3L-treated mice. Prior work has demonstrated immune dampening genes in a murine CD103 + migratory lung DC subset when compared monocyte-derived DCs, and macrophages were not required for immunization, we examined the CD11b-DTR mouse versus wild-type. We observed no significant difference in priming between groups after DT administration, further excluding the contribution of these cells (Fig. 6, D-F) and controlling for the effects of DT administration. These data suggest Zbtb46-and Flt3L-dependent cDCs mediate \ue061CD205gag-p24 priming. migDCs closely cluster and share expression of immunedampening genes, and pathways, across species We were intrigued by the surprising yet consistent observation that deletion of one or multiple subsets of Langerin + migratory DCs seemed to enhance immunity. Also, collective blockade of skin DC migration enhanced the immune response to priming in vivo; this appeared to occur irrespective of the presence of Flt3L, suggesting migratory DCs might be acting in concert to suppress immunity. We observed close principal component analysis clustering of"
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [
+      "migDC rapidly transport FITC from skin to skin draining LN.",
+      "FITC label was present only in the IAIE hi migratory cells ( Figure 2B).",
+      "Several populations of DC transported FITC to the skin draining LN, yet a greater fraction of Langerin-CD11b\u2212 and Langerin-CD11b+ DC subsets were present that labeled with FITC when compared to all migDC after FITC painting ( Figure 2B).",
+      "These data suggest Langerin-CD11b\u2212 DC like other migDC can transport FITC from the skin to the skin draining LN."
+    ],
+    "summary": "Migratory dendritic cells (migDCs), including Langerin-CD11b\u2212 and Langerin-CD11b+ subsets, transport antigens (FITC) from the skin to skin-draining lymph nodes, indicating their role as migratory antigen carriers.",
+    "categories": [
+      "function",
+      "location",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:17679745",
+    "source_title": "Flt3L-dependence helps define an uncharacterized subset of murine cutaneous dendritic cells",
+    "source_authors": "Shamim A. Mollah et al.",
+    "source_year": null,
+    "snippet": "locally in skin (Figure2A, lower panel). When FITC is applied with a contact-sensitizing agent to the epidermis of mice, migDC rapidly transport FITC from skin to skin draining LN. FITC label was present only in the IAIE hi migratory cells ( Figure 2B). Examination of FITC+ migDC vs. all migDC demonstrated an enhanced representation of FITC+ Langerin-CD11b\u2212 cells during inflammation and FITC painting. Several populations of DC transported FITC to the skin draining LN, yet a greater fraction of Langerin-CD11b\u2212 and Langerin-CD11b+ DC subsets were present that labeled with FITC when compared to all migDC after FITC painting ( Figure 2B). These data suggest Langerin-CD11b\u2212 DC like other migDC can transport FITC from the skin to the skin draining LN. To visualize Langerin-CD11b\u2212 DC directly in skin immunofluorescence staining was performed in Flt3L treated and untreated mice. LC were marked in the epidermis (Langerin+ CD11b+ CD11c+). Contained within dermal CD11c+ cells, we observed Langerin-CD11b+ DC, Langerin-CD11b\u2212 DC, and Langerin+CD11b\u2212 cells ( Figure 2C)."
+  },
+  {
+    "snippet_index": 8,
+    "quotes": [
+      "Skin DC carry antigens and constitutively migrate to the skin draining lymph nodes (LN).",
+      "In mice, Langerin-CD11b\u2212 dermal DC are a low-frequency, heterogeneous, migratory DC subset that traffic to LN (Langerin-CD11b-migDC).",
+      "we build on the observation that Langerin-CD11b\u2212 migDC are Fms-like tyrosine kinase 3 ligand (Flt3L) dependent and strongly Flt3L responsive, which may relate them to classical DCs.",
+      "Examination of DC capture of FITC from painted skin, DC isolation from skin explant culture, and from the skin of CCR7 knockout mice which accumulate migDC, demonstrate these cells are cutaneous residents.",
+      "Langerin-CD11b-Flt3L responsive DC are largely CD24(+) and CX3CR1low and can be depleted from Zbtb46-DTR mice, suggesting classical DC lineage.",
+      "Langerin-CD11bmigDC present antigen with equal efficiency to other DC subsets ex vivo including classical CD8\u03b1 cDC and Langerin+CD103+ dermal DC.",
+      "transcriptome analysis suggests a close relationship to other skin DC, and a lineage relationship to other classical DC.",
+      "This work demonstrates that Langerin- CD11b\u2212 dermal DC, a previously overlooked cell subset, may be an important player in the cutaneous immune environment."
+    ],
+    "summary": "Langerin-CD11b\u2212 dermal DCs represent a low-frequency, Flt3L-dependent migratory dendritic cell subset in the skin. They are capable of antigen capture and migration to lymph nodes, express CD24 and CX3CR1low, and function similarly to classical DCs in antigen presentation, suggesting an important immunological role within the skin.",
+    "categories": [
+      "location",
+      "markers",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:17679745",
+    "source_title": "Flt3L-dependence helps define an uncharacterized subset of murine cutaneous dendritic cells",
+    "source_authors": "Shamim A. Mollah et al.",
+    "source_year": null,
+    "snippet": "Skin-derived dendritic cells (DC) are potent antigen presenting cells with critical roles in both adaptive immunity and tolerance to self. Skin DC carry antigens and constitutively migrate to the skin draining lymph nodes (LN). In mice, Langerin-CD11b\u2212 dermal DC are a low-frequency, heterogeneous, migratory DC subset that traffic to LN (Langerin-CD11b-migDC). Here, we build on the observation that Langerin-CD11b\u2212 migDC are Fms-like tyrosine kinase 3 ligand (Flt3L) dependent and strongly Flt3L responsive, which may relate them to classical DCs. Examination of DC capture of FITC from painted skin, DC isolation from skin explant culture, and from the skin of CCR7 knockout mice which accumulate migDC, demonstrate these cells are cutaneous residents. Langerin-CD11b-Flt3L responsive DC are largely CD24(+) and CX3CR1low and can be depleted from Zbtb46-DTR mice, suggesting classical DC lineage. Langerin-CD11bmigDC present antigen with equal efficiency to other DC subsets ex vivo including classical CD8\u03b1 cDC and Langerin+CD103+ dermal DC. Finally, transcriptome analysis suggests a close relationship to other skin DC, and a lineage relationship to other classical DC. This work demonstrates that Langerin- CD11b\u2212 dermal DC, a previously overlooked cell subset, may be an important player in the cutaneous immune environment."
+  },
+  {
+    "snippet_index": 9,
+    "quotes": [
+      "Analysis of CD205+ expression on migDC explants revealed Langerin-CD11b\u2212 DC contained both CD205 high and CD205 low cells in the steady state.",
+      "a higher percentage of CD11b\u2212 cells are CD205 high after treatment with Flt3L ( Figure 1F).",
+      "Skin migDC depend on CCR7 for migration to LN (Forster et al., 1999).",
+      "MigDC subsets including CD11b\u2212 cells preferentially accumulated in skin explants and expanded with Flt3L locally in skin (Figure2A, lower panel).",
+      "migDC rapidly transport FITC from skin to skin draining LN."
+    ],
+    "summary": "Skin migratory dendritic cells (migDCs), including Langerin-CD11b\u2212 subsets, express varying levels of CD205 and require CCR7 for migration to lymph nodes. Flt3L treatment increases the proportion of CD205 high cells, and migDCs are capable of quickly transporting antigens from the skin to draining lymph nodes.",
+    "categories": [
+      "markers",
+      "location",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:17679745",
+    "source_title": "Flt3L-dependence helps define an uncharacterized subset of murine cutaneous dendritic cells",
+    "source_authors": "Shamim A. Mollah et al.",
+    "source_year": null,
+    "snippet": "To ascertain if Langerin-CD11b\u2212 cells migrated to the LN from skin, or were a contaminant from LN resident populations such as CD8\u03b1 cDC, we examined skin explants in which DC are directly isolated from skin. CD11b\u2212 cell were present and expanded with Flt3L in \"crawlout\" DC isolation from skin (gating, Figure S1B). We established this in several models-in Flt3L doxycycline-inducible mice (Manfra et al., 2003) (Figure 1D), recombinant Flt3L-treated Langerin GFP mice ( Figure 1E, S1B), recombinant Flt3L-treated C57Bl/6 mice ( Figure S1C), and Flt3L secreting B16 tumor treated mice ( Figure S1D). In cDC Flt3L creates bias to CD8\u03b1 CD205+ cross-presenting cDC. Analysis of CD205+ expression on migDC explants revealed Langerin-CD11b\u2212 DC contained both CD205 high and CD205 low cells in the steady state. However, a higher percentage of CD11b\u2212 cells are CD205 high after treatment with Flt3L ( Figure 1F).\n\nSkin migDC depend on CCR7 for migration to LN (Forster et al., 1999). To further validate that Langerin-CD11b\u2212 cells in LN have migrated from the skin, we examined CCR7\u2212/\u2212 mice treated with Flt3L vs. untreated controls. Irrespective of Flt3L treatment, LNs from CCR7 knockout mice lack cells within the CD11c int IAIE hi DC migratory gate (Figure 2 A, upper panel). MigDC subsets including CD11b\u2212 cells preferentially accumulated in skin explants and expanded with Flt3L locally in skin (Figure2A, lower panel). When FITC is applied with a contact-sensitizing agent to the epidermis of mice, migDC rapidly transport FITC from skin to skin draining LN. FITC label was present only in the IAIE hi migratory cells ( Figure 2B"
+  },
+  {
+    "snippet_index": 10,
+    "quotes": [
+      "we have extensively characterized migratory DC subsets from human skin and studied how their migration and T cell-stimulatory abilities were affected by conditioning of the dermal microenvironment through cancer-related suppressive cytokines",
+      "IL-10 showed a unique ability to induce predominant migration of an immature CD14+CD141+DC-SIGN+ DC subset with low levels of co-stimulatory molecules, up-regulated expression of the co-inhibitory molecule PD-L1 and the M2-associated macrophage marker CD163",
+      "migration of immature CD14+ DDC was accompanied by increased release of IL-10, poor expansion of CD4+ and CD8+ T cells, and skewing of Th responses to favor coordinated FoxP3 and IL-10 expression and regulatory T cell differentiation and outgrowth",
+      "high levels of IL-10 impact the composition of skin-emigrated DC subsets and appear to favor migration of M2-like immature DC with functional qualities conducive to T cell tolerance"
+    ],
+    "summary": "This snippet describes how migratory dendritic cell subsets from human skin are affected by IL-10, which promotes migration of immature CD14+CD141+ DCs with regulatory markers and low co-stimulatory molecules, thereby affecting T cell responses and favoring tolerance.",
+    "categories": [
+      "markers",
+      "function",
+      "location",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:3938963",
+    "source_title": "IL-10 Conditioning of Human Skin Affects the Distribution of Migratory Dendritic Cell Subsets and Functional T Cell Differentiation",
+    "source_authors": "J. Lindenberg et al.",
+    "source_year": null,
+    "snippet": "In cancer patients pervasive systemic suppression of Dendritic Cell (DC) differentiation and maturation can hinder vaccination efficacy. In this study we have extensively characterized migratory DC subsets from human skin and studied how their migration and T cell-stimulatory abilities were affected by conditioning of the dermal microenvironment through cancer-related suppressive cytokines. To assess effects in the context of a complex tissue structure, we made use of a near-physiological skin explant model. By 4-color flow cytometry, we identified migrated Langerhans Cells (LC) and five dermis-derived DC populations in differential states of maturation. From a panel of known tumor-associated suppressive cytokines, IL-10 showed a unique ability to induce predominant migration of an immature CD14+CD141+DC-SIGN+ DC subset with low levels of co-stimulatory molecules, up-regulated expression of the co-inhibitory molecule PD-L1 and the M2-associated macrophage marker CD163. A similarly immature subset composition was observed for DC migrating from explants taken from skin overlying breast tumors. Whereas predominant migration of mature CD1a+ subsets was associated with release of IL-12p70, efficient Th cell expansion with a Th1 profile, and expansion of functional MART-1-specific CD8+ T cells, migration of immature CD14+ DDC was accompanied by increased release of IL-10, poor expansion of CD4+ and CD8+ T cells, and skewing of Th responses to favor coordinated FoxP3 and IL-10 expression and regulatory T cell differentiation and outgrowth. Thus, high levels of IL-10 impact the composition of skin-emigrated DC subsets and appear to favor migration of M2-like immature DC with functional qualities conducive to T cell tolerance."
+  },
+  {
+    "snippet_index": 11,
+    "quotes": [
+      "DCs in draining LNs were divided into conventional DCs (cDCs), migratory DCs (migDCs), and plasmacytoid DCs (pDCs) based on the relative expression of MHC II and CD11c, and migDCs were further divided into 3 subsets based on the relative expression of Langerin and CD11b",
+      "LPD but not ID delivery significantly increased migDC levels as well as AF647 + cDC and pDC levels (vs. NI group)",
+      "increased migDC levels in LPD ( Figure  4E) were mainly contributed by migDC subset III ( Figure 4H), which had the same phenotype as skin DC subset III ( Figure 3A)"
+    ],
+    "summary": "This snippet outlines phenotypic criteria for identifying migratory DCs in lymph nodes and shows how specific experimental conditions increase both the number and activation state (CD80 expression) of certain migDC subsets.",
+    "categories": [
+      "markers",
+      "function",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:232192111",
+    "source_title": "Vaccine delivery alerts innate immune systems for more immunogenic vaccination",
+    "source_authors": "Zhuofan Li et al.",
+    "source_year": null,
+    "snippet": "explored. DCs in draining LNs were divided into conventional DCs (cDCs), migratory DCs (migDCs), and plasmacytoid DCs (pDCs) based on the relative expression of MHC II and CD11c, and migDCs were further divided into 3 subsets based on the relative expression of Langerin and CD11b ( Figure 4A). Increased cDC and pDC levels were observed in LPD as compared with ID delivery at 18 hours ( Figure 4B). Higher percentage of AF647 + cDCs and pDCs were found in LPD as compared with ID delivery at 18 hours ( Figure 4C). LPD significantly increased cDC and pDC levels as well as AF647 + cDC and pDC levels at 18 hours as compared with ID delivery ( Figure 4D). LPD also significantly increased MFI of CD80 as compared with ID delivery at 18 hours ( Figure 4D). At 36 hours, LPD but not ID delivery significantly increased migDC levels as well as AF647 + cDC and pDC levels (vs. NI group). Interestingly, LPD but not ID delivery significantly increased MFI of CD80 in all DC subsets at 36 hours (Figure 4, E and F). These results indicated LPD could significantly increase antigen + cDC and pDC levels at both time points and antigen + migDC levels and maturation of all DC subsets at the later time point. Next, we tried to identify specific migDC subset(s) responsible for the enhanced migDC function in LPD (Figure 4, D and E). At 18 hours, increased MFI of CD80 in migDCs in LPD ( Figure 4D) was mainly contributed by migDC subsets II and III ( Figure 4G). At 36 hours, increased migDC levels in LPD ( Figure  4E) were mainly contributed by migDC subset III ( Figure 4H), which had the same phenotype as skin DC subset III ( Figure 3A). This result was in line with the more significant reduction of the most abundant skin DC subset III in LPD as compared with ID delivery at this time point ( Figure 3E). We further found increased MFI of CD80 in migDCs in LPD ( Figure 4E) was"
+  },
+  {
+    "snippet_index": 12,
+    "quotes": [
+      "Tissue migDCs were first characterized as MHC-II hi CD11c int cells, followed by subtyping into various functionally distinct subsets including Langerin-CD11b-, Langerin-CD11b+, Langerin+CD103+CD11b-, and Langerin +CD103-CD11b+ Langerhans cells",
+      "Intradermal injection increased the number of migDC populations compared with control treatment (p=0.0185) (Figure 4A)",
+      "superior expression of CD86 on migDCs was found in both the intradermal (p=0.0002) and intramuscular (p<0.0001) groups"
+    ],
+    "summary": "This snippet details the phenotypic markers used to define tissue migratory DCs and their subsets, and notes that different immunization routes can modulate their abundance and activation (CD86 expression).",
+    "categories": [
+      "markers",
+      "location",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:251956815",
+    "source_title": "Comparative immunogenicity analysis of intradermal versus intramuscular immunization with a recombinant human adenovirus type 5 vaccine against Ebola virus",
+    "source_authors": "Zhe Zhang et al.",
+    "source_year": null,
+    "snippet": "The skin is one of most immunologically active organs due to the presence of immune cells. To further identify how antigen presentation is influenced by different immunization routes, DCs were isolated from multiple pooled LNs and subtyped at 24 h post-vaccination. Tissue migDCs were first characterized as MHC-II hi CD11c int cells, followed by subtyping into various functionally distinct subsets including Langerin-CD11b-, Langerin-CD11b+, Langerin+CD103+CD11b-, and Langerin +CD103-CD11b+ Langerhans cells. Intradermal injection increased the number of migDC populations compared with control treatment (p=0.0185) (Figure 4A). However, superior expression of CD86 on migDCs was found in both the intradermal (p=0.0002) and intramuscular (p<0.0001) groups, meaning that intradermal injection barely differed from intramuscular injection in activating DCs (Figure 4B). Similar results were observed with further typing (Figures 4C, D). The mice in the intramuscular group had a marginal increase in the Langerin-CD11b+ migDC population compared with the mice in the control group (Figure 4E). Among all Langerin+ migDCs, both intramuscular injection and intradermal injection slightly expanded the CD103+ population but no significant different was found (Figure 4F). It seemed that intramuscular injection was capable of altering CD11b+Langerin-migDCs and CD103 +Langerin+ migDCs. Together, these findings demonstrated that intradermal injection of Ad5-EBOV recruited more migDCs than intramuscular injection, but the levels of activation were similar."
+  },
+  {
+    "snippet_index": 13,
+    "quotes": [
+      "Comparative phenotypic and functional analysis of migratory dendritic cell subsets from human oral mucosa and skin"
+    ],
+    "summary": "The title suggests the paper compares phenotypic and functional aspects of migratory dendritic cell subsets from oral mucosa and skin, implying investigations of their markers and functions across locations.",
+    "categories": [
+      "markers",
+      "function",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:9834416",
+    "source_title": "Comparative phenotypic and functional analysis of migratory dendritic cell subsets from human oral mucosa and skin",
+    "source_authors": "I. Kosten et al.",
+    "source_year": null,
+    "snippet": "Comparative phenotypic and functional analysis of migratory dendritic cell subsets from human oral mucosa and skin"
+  },
+  {
+    "snippet_index": 16,
+    "quotes": [
+      "we set out to further characterize unique functions of migDCs",
+      "we first mined the publicly available ImmGen database (25)(26)(27). We compared the transcriptomes of LN-resident migDCs (fig. S1A) against all other 64 immune cell subsets available (Fig. 1, A to C), which resulted in 13 genes that were exclusively expressed in migDCs in comparison to other DCs (Fig. 1D)",
+      "The most distinct gene transcripts were apolipoprotein 7c (Apol7c) and the voltage-gated CACNB3 (Cacnb3). Confirmatory, migDCs highly expressed the Arc/Arg3.1 gene, which we previously identified as specific marker for migDCs (fig. S1B) (7), and they were enriched for the Gene Ontology (GO) term \"antigen processing and antigen presentation\" (fig. S1C)",
+      "migDCs highly expressed the Arc/Arg3.1 gene, which we previously identified as specific marker for migDCs"
+    ],
+    "summary": "This snippet discusses unique gene expression profiles of LN-resident migratory DCs, highlighting several genes (Apol7c, CACNB3, Arc/Arg3.1) as markers and noting their enrichment for antigen presentation functions.",
+    "categories": [
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:262082953",
+    "source_title": "Calcium channel \u03b23 subunit regulates ATP-dependent migration of dendritic cells",
+    "source_authors": "M. Woo et al.",
+    "source_year": null,
+    "snippet": "Following up on our previous work (7), we set out to further characterize unique functions of migDCs. To identify exclusively expressed genes of migDCs that could give deeper insights into their function, we first mined the publicly available ImmGen database (25)(26)(27). We compared the transcriptomes of LN-resident migDCs (fig. S1A) against all other 64 immune cell subsets available (Fig. 1, A to C), which resulted in 13 genes that were exclusively expressed in migDCs in comparison to other DCs (Fig. 1D). The most distinct gene transcripts were apolipoprotein 7c (Apol7c) and the voltage-gated CACNB3 (Cacnb3). Confirmatory, migDCs highly expressed the Arc/Arg3.1 gene, which we previously identified as specific marker for migDCs (fig. S1B) (7), and they were enriched for the Gene Ontology (GO) term \"antigen processing and antigen presentation\" (fig. S1C). We further focused on Cacnb3 since this gene is highly conserved and shared among species, whereas no human orthologue exists for Apol7c. A detailed analysis of Cacnb3 expression in different DC subsets revealed the highest expression in MHCII high Langerin \u2212 CD103 + CD11b + , MHCII high Langerin \u2212 CD103 + CD11b low , MHCII high Langerin + CD103 \u2212 CD11b + , and MHCII high Langerin + CD103 + CD11b low migDCs in skin dLNs (sdLNs) (fig. S1D). In contrast, skin-resident Langerhans cells showed a weak Cacnb3 expression, suggesting a specific role for Cacnb3 in migDC subsets originating from the bone marrow. Since CACNB3 is a subunit of voltage-gated calcium channels, we next analyzed the expression of the other subunits in the ImmGen database (Fig. 1E) and by RNA sequencing of sorted migDCs (Fig. 1F)."
+  },
+  {
+    "snippet_index": 17,
+    "quotes": [
+      "resDCs and migDCs do not only show differences in their CD11c and MHC-II expression but other markers can be used to discriminate their status depending on their belonging to the cDC1 or the cDC2 subtypes",
+      "its migratory counterpart is characterized by the expression of the Integrin a E (CD103)",
+      "most of the skin-draining DCs are CD301b + [65] but a common marker of migratory or resident cDC2 is still lacking",
+      "the majority of DCs that migrate will still belong to the cDC2 type [42,68]."
+    ],
+    "summary": "This snippet distinguishes migratory DCs from resident DCs by their expression of certain markers such as CD11c, MHC-II, CD103, and CD301b, and mentions the prevalence of cDC2-type migDCs migrating from skin.",
+    "categories": [
+      "markers",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:271121188",
+    "source_title": "Dendritic cells steering antigen and leukocyte traffic in lymph nodes",
+    "source_authors": "Enrico Dotta et al.",
+    "source_year": null,
+    "snippet": "This indicates that resDCs and migDCs are not working independently from each other. Still, their contribution and coordination in the T-cell licensing are necessary to mount an efficient immune response. \n\nOf note, resDCs and migDCs do not only show differences in their CD11c and MHC-II expression but other markers can be used to discriminate their status depending on their belonging to the cDC1 or the cDC2 subtypes. resDC1 expresses univocally the CD8aa homodimer, while its migratory counterpart is characterized by the expression of the Integrin a E (CD103). For the cDC2 population instead, given its higher heterogeneity, the discrimination between migratory and resident DCs is more complicated. It was shown in mice, that most of the skin-draining DCs are CD301b + [65] but a common marker of migratory or resident cDC2 is still lacking. Based on these markers, Sokol et al. [42] showed that subcutaneous Th2 immunization promotes specific migration of the CD301b + DCs, while the Th1 immunization induces a more CD103 + DCs skewed trafficking. This finding can be partially explained by the different expression profiles of Pathogen Recognition Receptors (PRRs) between cDC1 and cDC2 [13,66,67], which can lead to different likelihood of activation (and migration) depending on the administered adjuvant. In conclusion, these articles report that the type of DCs that will bring the antigen is dependent on the contextual information of the periphery. Nevertheless, it must be taken into account that even if different types of immune responses are elicited (Th1, Th2, Th17), the majority of DCs that migrate will still belong to the cDC2 type [42,68]. This could lead to the hypothesis that even very small variations in the relative number of migDC subtypes can contribute to substantial differences in the type of immune response."
+  },
+  {
+    "snippet_index": 18,
+    "quotes": [
+      "migratory DC from healthy human gingival explants consist of the same phenotypic subsets in the same frequency distribution as DC migrating from human skin",
+      "CD1a+ Langerhans cell and interstitial DC subsets lacked CXCR4 expression in contrast to their cutaneous counterparts, pointing to different migration mechanisms",
+      "gingival explants released higher levels of inflammatory cytokines than human skin explants, resulting in higher DC migration rates and a superior ability of migrated DC to prime allogeneic T cells and to induce type-1 effector T cell differentiation",
+      "DC migrating from oral mucosa may have a propensity to induce effector T cell immunity and maintain a high state of alert against possible pathogenic intruders"
+    ],
+    "summary": "This snippet compares migratory DCs from oral mucosa and skin, highlighting differences in marker expression (CXCR4), migration rates, and functional abilities to prime T cells and drive effector immunity.",
+    "categories": [
+      "markers",
+      "location",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:9834416",
+    "source_title": "Comparative phenotypic and functional analysis of migratory dendritic cell subsets from human oral mucosa and skin",
+    "source_authors": "I. Kosten et al.",
+    "source_year": null,
+    "snippet": "Antigen exposure to oral mucosa is generally thought to lead to immune tolerance induction. However, very little is known about the subset composition and function of dendritic cells (DC) migrating from human oral mucosa. Here we show that migratory DC from healthy human gingival explants consist of the same phenotypic subsets in the same frequency distribution as DC migrating from human skin. The gingival CD1a+ Langerhans cell and interstitial DC subsets lacked CXCR4 expression in contrast to their cutaneous counterparts, pointing to different migration mechanisms, consistent with previous observations in constructed skin and gingival equivalents. Remarkably, without any exogenous conditioning, gingival explants released higher levels of inflammatory cytokines than human skin explants, resulting in higher DC migration rates and a superior ability of migrated DC to prime allogeneic T cells and to induce type-1 effector T cell differentiation. From these observations we conclude that rather than an intrinsic ability to induce T cell tolerance, DC migrating from oral mucosa may have a propensity to induce effector T cell immunity and maintain a high state of alert against possible pathogenic intruders in the steady state. These findings may have implications for oral immunization strategies."
+  },
+  {
+    "snippet_index": 19,
+    "quotes": [
+      "MigDCs captured antigen with greater efficiency than cDCs by \ue061CD205-A647 label in the proximal LNs (popliteal), irrespective of Flt3L treatment",
+      "Flt3L biases cDCs in the cutaneous LN toward CD8\ue061 CD205 + differentiation and expands migratory CD11b + , CD11b \ue032 , and CD103 + Langerin + DCs",
+      "MigDCs express high levels of CD205 + (Fig. 3 D)"
+    ],
+    "summary": "This snippet details the superior antigen-capturing capability of migDCs relative to resident cDCs in lymph nodes, and discusses their typical expression of CD205 as well as expansion of specific migratory DC subsets.",
+    "categories": [
+      "function",
+      "markers",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:655666",
+    "source_title": "Classical Flt3L-dependent dendritic cells control immunity to protein vaccine",
+    "source_authors": "N. Anandasabapathy et al.",
+    "source_year": null,
+    "snippet": "To determine if migDCs and LN-resident cDCs in the nodes have equal access to antigen in vivo, we compared fluorescently labeled \ue061CD205 capture 3 h after s.c. injection into Flt3L-treated and untreated mice (Fig. 3 F). MigDCs captured antigen with greater efficiency than cDCs by \ue061CD205-A647 label in the proximal LNs (popliteal), irrespective of Flt3L treatment. Flt3L improved \ue061CD205-A647 label by both migDCs in the distal LNs (inguinal) and cDCs in the proximal subsets include Langerhans cells (LCs), CD103 + Langerin + dermal DCs, and the very rare CD103 \ue032 Langerin + DCs. Langerin \ue032 subsets include CD11b + DCs and CD11b \ue032 DCs. Although some increase in Langerin + CD103 + DCs occurred after Flt3L treatment, we have observed the major expansion of migDCs was seen in the CD11b + and CD11b \ue032 compartment (Fig. 3 D;Mollah et al., 2014). Thus, Flt3L biases cDCs in the cutaneous LN toward CD8\ue061 CD205 + differentiation and expands migratory CD11b + , CD11b \ue032 , and CD103 + Langerin + DCs. MigDCs express high levels of CD205 + (Fig. 3 D). Vaccine priming with \ue061CD205-gag-p24 and soluble p24 at high (5 \u00b5g) and low (0.5 \u00b5g) doses in Flt3L-treated (red) versus PBS-treated (blue) mice. (A) Intracellular cytokine stain. (B) Proliferation of CD4 + T cells measured by CFSE-diluted IFN-\ue067 + cells. One representative experiment (n = 3 mice per group). Error bars show mean \u00b1 SEM. ^, P \u2264 0.1; *, P \u2264 0.05; **, P \u2264 0.01; ***, P \u2264 0.001. (C) CD8 + IFN-\ue067 + intracellular cytokine staining from individual"
+  },
+  {
+    "snippet_index": 20,
+    "quotes": [
+      "Migratory dendritic cells (migDCs) continuously patrol tissues and are activated by injury and inflammation.",
+      "migDCs can be distinguished from other DC subsets and immune cells by their expression of the voltage-gated calcium channel subunit \u03b23 (Cav\u03b23; CACNB3), which exclusively facilitates ATP-dependent migration in vitro and during tissue damage in vivo.",
+      "Cacnb3-deficient migDCs have an impaired migration after ATP exposure.",
+      "we identified CACNB3 as a master regulator of ATP-dependent migDC migration that controls tissue-specific immunological responses during injury and inflammation."
+    ],
+    "summary": "This snippet describes migDCs as tissue-patrolling cells activated by injury or inflammation. It highlights CACNB3 as a distinguishing marker and key regulator of ATP-driven migration in migDCs, implicating this process in tissue-specific immune responses.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:262082953",
+    "source_title": "Calcium channel \u03b23 subunit regulates ATP-dependent migration of dendritic cells",
+    "source_authors": "M. Woo et al.",
+    "source_year": null,
+    "snippet": "Migratory dendritic cells (migDCs) continuously patrol tissues and are activated by injury and inflammation. Extracellular adenosine triphosphate (ATP) is released by damaged cells or actively secreted during inflammation and increases migDC motility. However, the underlying molecular mechanisms by which ATP accelerates migDC migration is not understood. Here, we show that migDCs can be distinguished from other DC subsets and immune cells by their expression of the voltage-gated calcium channel subunit \u03b23 (Cav\u03b23; CACNB3), which exclusively facilitates ATP-dependent migration in vitro and during tissue damage in vivo. By contrast, CACNB3 does not regulate lipopolysaccharide-dependent migration. Mechanistically, CACNB3 regulates ATP-dependent inositol 1,4,5-trisphophate receptor\u2013controlled calcium release from the endoplasmic reticulum. This, in turn, is required for ATP-mediated suppression of adhesion molecules, their detachment, and initiation of migDC migration. Thus, Cacnb3-deficient migDCs have an impaired migration after ATP exposure. In summary, we identified CACNB3 as a master regulator of ATP-dependent migDC migration that controls tissue-specific immunological responses during injury and inflammation."
+  },
+  {
+    "snippet_index": 22,
+    "quotes": [
+      "migDC marker identification GSE37448 was downloaded from Gene Expression Omnibus.",
+      "DCs with high major histocompatibility complex II (MHCII) and CD11c expression from skin and organ dLNs were summarized as migDCs.",
+      "The transcriptome of migDCs was contrasted to any other cell population.",
+      "migDC marker genes were defined as genes that were differentially up-regulated in migDCs in each comparison."
+    ],
+    "summary": "This snippet defines migDCs as DCs with high MHCII and CD11c expression from skin and draining lymph nodes, detailing the transcriptomic distinction of migDCs from other populations and how marker genes were determined.",
+    "categories": [
+      "markers",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:262082953",
+    "source_title": "Calcium channel \u03b23 subunit regulates ATP-dependent migration of dendritic cells",
+    "source_authors": "M. Woo et al.",
+    "source_year": null,
+    "snippet": "All mice [C57BL/6J, WT (The Jackson Laboratory); C57BL/6N, Cacnb3 \u2212/\u2212 (37); C57BL/6N, LifeAct-GFP and LifeAct-GFP;Cacnb3 \u2212/\u2212 ] were kept under specific pathogen-free conditions in the central animal facility of the University Medical Center Hamburg-Eppendorf (UKE). We used adult mice (6 to 20 weeks old) from both sexes; mice were sex-and age-matched in all experiments. We did not observe sex-specific differences in any of the experiments; therefore, the sexes were reported together. migDC marker identification GSE37448 was downloaded from Gene Expression Omnibus. Differential expression analysis was performed using the standard limma pipeline (53). DCs with high major histocompatibility complex II (MHCII) and CD11c expression from skin and organ dLNs were summarized as migDCs. The transcriptome of migDCs was contrasted to any other cell population. migDC marker genes were defined as genes that were differentially up-regulated in migDCs in each comparison. Heatmaps were generated using pheatmap package and t-distributed stochastic neighbor embedding (tSNE) plots by Rtsne package."
+  },
+  {
+    "snippet_index": 23,
+    "quotes": [
+      "steady-state migration of DCs from the skin to the draining LN depends on expression of the chemokine receptor CCR7.",
+      "Mice that lack CCR7 demonstrate a complete absence of migDCs in the LN"
+    ],
+    "summary": "This snippet shows that migDCs require CCR7 to migrate from skin to draining lymph nodes. In CCR7-deficient mice, migDCs are absent from lymph nodes, confirming CCR7's essential role in their migration and antigen trafficking.",
+    "categories": [
+      "location",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:655666",
+    "source_title": "Classical Flt3L-dependent dendritic cells control immunity to protein vaccine",
+    "source_authors": "N. Anandasabapathy et al.",
+    "source_year": null,
+    "snippet": "As described, steady-state migration of DCs from the skin to the draining LN depends on expression of the chemokine receptor CCR7. Mice that lack CCR7 demonstrate a complete absence of migDCs in the LN Ohl et al., 2004) irrespective of Flt3L treatment (Fig. 5 A). To further address the contribution of migDCs to s.c. protein vaccination in the LN, we examined vaccine responses in CCR7 \ue032/\ue032 mice. This allowed us to test the contribution of all migDC subsets in the LN, including those that acquire antigen peripherally and traffic antigen to the LN, and those that have already arrived in the skin-draining LN at the time of antigen capture in the LN. Again, at both 5 and 0.5 \u00b5g of s.c. \ue061CD205-gag p24 all migDCs were dispensable. (Fig. 5 B). Absence of migDCs in the skin-draining LNs of individual CCR7 \ue032/\ue032 mice compared with B6 control mice was confirmed at the time of harvest ( Fig. 5 A and not depicted). Again, irrespective of Flt3L treatment we noted a trend of higher mean ex vivo CD4 + IFN-\ue067 responses in lymphoid organs and in tissue (spleen, LN, and lung) and in vitro recall T cell proliferation in CCR7 \ue032/\ue032 versus control mice. To ensure s.c. immunization did not bypass migratory DCs, we examined low-dose \ue061CD205-gagp24 i.d. immunization into the flank (Fig. 5 C). Mice lacking CCR7 had significantly higher CD4 + T cell IFN-\ue067 levels in the draining proximal LN (P < 0.0001) and distally in spleen (P < 0.05) and nondraining LNs (unpublished data). These data suggested that blockade of CCR7-dependent DC migration to the LN enhances, not impairs, immunity.\n\nTo determine whether migratory DCs were requisite for CD8 immunity, we also tested s.c. \ue061CD205-OVA immunization. Again, no loss of CD8"
+  },
+  {
+    "snippet_index": 24,
+    "quotes": [
+      "Human skin-draining lymph nodes contain functionally distinct subsets of resident and migratory dendritic cells."
+    ],
+    "summary": "The snippet identifies that human skin-draining lymph nodes host both resident and migratory dendritic cell subsets with distinct functions.",
+    "categories": [
+      "location",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:736695",
+    "source_title": "Characterization of resident and migratory dendritic cells in human lymph nodes",
+    "source_authors": "\u00c9. Segura et al.",
+    "source_year": null,
+    "snippet": "Human skin-draining lymph nodes contain functionally distinct subsets of resident and migratory dendritic cells."
+  }
+]

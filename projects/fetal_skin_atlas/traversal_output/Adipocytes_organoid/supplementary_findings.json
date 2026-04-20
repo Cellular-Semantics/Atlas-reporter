@@ -1,0 +1,28 @@
+{
+  "markers": [
+    {
+      "gene": "ADIPOQ",
+      "evidence_type": "known adipocyte marker",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "PPARG",
+      "evidence_type": "known adipocyte marker",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "SkO contains fat-rich dermis",
+      "category": "structure",
+      "source_table": "Lee et al. 2020 main text"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "a cyst-like skin organoid composed of stratified epidermis, fat-rich dermis and pigmented hair follicles that are equipped with sebaceous glands",
+      "source_file": "Lee et al. 2020 abstract",
+      "context": "SkO structure description"
+    }
+  ]
+}

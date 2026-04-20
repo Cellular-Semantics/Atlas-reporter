@@ -1,0 +1,12 @@
+{
+  "label": "Pre B cell",
+  "resolved_names": [
+    "Pre-B cell",
+    "Pre B cell",
+    "Precursor B cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The label 'Pre B cell' is used by the authors in the cell type annotations of the prenatal skin atlas (Gopee et al., 2024, doi:10.1038/s41586-024-08002-x). Pre-B cells represent a late precursor stage in B cell development, expressing cytoplasmic mu heavy chain and surrogate light chains forming the pre-BCR. They are detected in fetal skin from as early as 7-8 PCW in the related fetal liver study (Popescu et al., 2019)."
+}

@@ -1,0 +1,9 @@
+{
+  "cell_type_label": "HSC",
+  "cl_term": "hematopoietic stem cell",
+  "cl_id": "CL:0000037",
+  "cl_iri": "http://purl.obolibrary.org/obo/CL_0000037",
+  "match_type": "broad",
+  "match_reason": "The atlas HSC annotation refers specifically to fetal skin HSCs. CL:0000037 is the general hematopoietic stem cell term. A more specific match would be CL:0002352 (gestational hematopoietic stem cell), but these skin HSCs are not defined by gestational location alone.",
+  "new_term_needed": false
+}

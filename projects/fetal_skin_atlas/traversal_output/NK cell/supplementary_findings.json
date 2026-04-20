@@ -1,0 +1,68 @@
+{
+  "markers": [
+    {
+      "gene": "KLRF1",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "NKG7",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "GZMB",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "GNLY",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "KLRD1",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "NK cells are annotated as a distinct immune cell state in the prenatal skin atlas based on high expression of KLRF1, NKG7, and GZMB.",
+      "category": "cluster annotation",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "finding": "NK cells are present in the integrated prenatal and adult skin dataset, appearing in the UMAP visualization as a distinct cluster among immune lineages.",
+      "category": "spatial annotation",
+      "source_table": "Fig. 1e"
+    },
+    {
+      "finding": "Pre-dermal condensate cells co-located with dendritic and lymphoid cells (including NK cells) based on correlation analyses of microenvironments.",
+      "category": "microenvironment",
+      "source_table": "Fig. 1d, Extended Data Fig. 1e,f"
+    },
+    {
+      "finding": "NK cells are enriched in the stromal region of adult tissue.",
+      "category": "spatial localization",
+      "source_table": "Supplementary Table S6"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "NK cell, natural killer cells",
+      "source_file": "Fig. 1e legend",
+      "context": "UMAP visualization labels for the integrated prenatal skin, adult skin and SkO datasets."
+    },
+    {
+      "quote": "Pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses.",
+      "source_file": "Main text, Fig. 1d",
+      "context": "NMF microenvironment analysis of prenatal skin."
+    },
+    {
+      "quote": "Top differentially expressed genes for NK cells: KLRF1, NKG7, GZMB, GNLY, KLRD1.",
+      "source_file": "Supplementary Table S3",
+      "context": "Marker gene table showing DE genes for each cluster."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "label": "LTi",
+  "resolved_names": ["LTi", "lymphoid tissue inducer cell", "lymphoid tissue-inducer cell"],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "Cell type label 'LTi' is present in the fetal skin atlas annotations (Gopee et al., 2024) and is explicitly defined in the atlas figure legend as 'LTi, lymphoid tissue inducer cell'. LTi cells were predicted to co-locate and interact with pre-dermal condensate cells through CXCL12-CXCR4 and CXCL12-DPP4 ligand-receptor interactions."
+}

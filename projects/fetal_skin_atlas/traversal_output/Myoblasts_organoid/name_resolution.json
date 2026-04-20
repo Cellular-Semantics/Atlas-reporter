@@ -1,0 +1,10 @@
+{
+  "label": "Myoblasts",
+  "resolved_names": [
+    "myoblast"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Myoblasts in the SkO are muscle precursor cells associated with the arrector pili muscle lineage in skin. CL:0000056 is an exact match."
+}

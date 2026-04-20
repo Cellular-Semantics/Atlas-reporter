@@ -1,0 +1,11 @@
+{
+  "label": "pDC",
+  "resolved_names": [
+    "plasmacytoid dendritic cell",
+    "pDC"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas paper (Gopee et al., 2024; DOI: 10.1038/s41586-024-08002-x) explicitly defines 'pDC' as 'plasmacytoid dendritic cells' in the UMAP visualization legend of integrated prenatal skin, adult skin, and SkO datasets (Fig. 1e). pDC is annotated as a fine-grained fetal immune cell type in the atlas cell type annotations. The abbreviation 'pDC' is a widely accepted standard abbreviation for plasmacytoid dendritic cells in immunology."
+}

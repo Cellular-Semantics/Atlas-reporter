@@ -1,0 +1,12 @@
+{
+  "label": "Early endothelial cells",
+  "resolved_names": [
+    "Early endothelial cells",
+    "endothelial progenitor cells",
+    "early vascular endothelial cells"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) identifies 'Early endothelial cells' as a fine-grained endothelial cell annotation in prenatal skin. Trajectory analysis shows these cells as the root population from which both arteriolar (capillaries, capillary arterioles, arterioles) and venular (postcapillary venules, venules) lineages differentiate (Fig. 4d, Extended Data Fig. 10a-c). They represent the earliest/progenitor endothelial state in the fetal skin vascular tree."
+}

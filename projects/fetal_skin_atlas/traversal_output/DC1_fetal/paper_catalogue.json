@@ -1,0 +1,68 @@
+{
+  "papers": [
+    {
+      "id": "atlas",
+      "doi": "10.1038/s41586-024-08002-x",
+      "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+      "authors": "Gopee et al.",
+      "year": 2024,
+      "role": "atlas_paper"
+    },
+    {
+      "id": "botting_2020",
+      "doi": "10.1111/imm.13192",
+      "title": "The developing immune network in human prenatal skin",
+      "authors": "Botting & Haniffa",
+      "year": 2020,
+      "role": "key_reference"
+    },
+    {
+      "id": "suo_2022",
+      "doi": "10.1126/science.abo0510",
+      "title": "Mapping the developing human immune system across organs",
+      "authors": "Suo et al.",
+      "year": 2022,
+      "role": "key_reference"
+    },
+    {
+      "id": "lukowski_2021",
+      "doi": "10.1016/j.isci.2021.102462",
+      "title": "Absence of Batf3 reveals a new dimension of cell state heterogeneity within conventional dendritic cells",
+      "authors": "Lukowski et al.",
+      "year": 2021,
+      "role": "marker_evidence"
+    },
+    {
+      "id": "calmeiro_2020",
+      "doi": "10.3390/pharmaceutics12020158",
+      "title": "Dendritic Cell Vaccines for Cancer Immunotherapy: The Role of Human Conventional Type 1 Dendritic Cells",
+      "authors": "Calmeiro et al.",
+      "year": 2020,
+      "role": "marker_and_function_review"
+    },
+    {
+      "id": "schroth_2020",
+      "doi": "10.3389/fimmu.2020.00798",
+      "title": "Innate Functions of Dendritic Cell Subsets in Cardiac Allograft Tolerance",
+      "authors": "Schroth et al.",
+      "year": 2020,
+      "role": "function_evidence"
+    },
+    {
+      "id": "bachem_2012",
+      "doi": "10.3389/fimmu.2012.00214",
+      "title": "Expression of XCR1 Characterizes the Batf3-Dependent Lineage of Dendritic Cells Capable of Antigen Cross-Presentation",
+      "authors": "Bachem et al.",
+      "year": 2012,
+      "role": "marker_evidence"
+    },
+    {
+      "id": "reynolds_2021",
+      "doi": "10.1126/science.aba6500",
+      "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+      "authors": "Reynolds et al.",
+      "year": 2021,
+      "role": "adult_skin_atlas"
+    }
+  ]
+}

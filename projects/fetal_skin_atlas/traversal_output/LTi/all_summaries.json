@@ -1,0 +1,43 @@
+[
+  {
+    "corpusId": "273400864",
+    "summary": "The prenatal skin atlas identifies LTi as a fetal-scope cell type in the ILC (innate lymphoid cell) broad lineage. LTi cells were predicted to co-locate and interact with pre-dermal condensate cells through CXCL12-CXCR4 and CXCL12-DPP4 ligand-receptor signals implicated in cellular adhesion and migration. Pre-Dc cells co-located with dendritic and lymphoid cells in spatial transcriptomics.",
+    "key_quotes": [
+      "LTi, lymphoid tissue inducer cell",
+      "Notably, lymphoid tissue inducer and ILC3 cells were also predicted to co-locate and interact with pre-Dc cells through ligand-receptor signals implicated in the regulation of cellular adhesion and migration (CXCL12-CXCR4 and CXCL12-DPP4)",
+      "pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses",
+      "These observations indicated that immune cells may occupy defined microanatomical niches where they have non-immune functions during early gestation."
+    ]
+  },
+  {
+    "corpusId": "248122197",
+    "summary": "Suo et al. map the developing human immune system and observe that ILCs and NK cells include cell neighborhoods both enriched and depleted across gestation. Macrophages, mast cells and NK cells transcriptomically acquire immune effector functions between 10 and 12 pcw, with earlier signatures suggesting roles in tissue morphogenesis.",
+    "key_quotes": [
+      "human macrophages, mast cells and NK cells transcriptomically acquire immune effector functions between 10 and 12 pcw. Their transcriptomic signatures prior to this time-point suggest a role in tissue morphogenesis"
+    ]
+  },
+  {
+    "corpusId": "254895721",
+    "summary": "Hernandez-Torres and Stehle review embryonic ILC-poiesis. IL-7 regulates the pool size of IL-7R+ LTi cells that initiate lymphoid organogenesis. Fetal RORgt+ ILCs develop via mechanisms distinct from adult BM-derived CLPs. Retinoic acid signaling controls secondary lymphoid organ size and regulates RORgt expression in ILCs.",
+    "key_quotes": [
+      "IL-7 is known to play a key role in LN organogenesis by not only regulating the pool size of IL-7R+ LTi cells"
+    ]
+  },
+  {
+    "corpusId": "53032947",
+    "summary": "Miller et al. review ILCs in maternal and fetal compartments. LTi cells are critical for formation of secondary lymphoid organs and isolated lymphoid tissues during fetal development. ILC3s were divided into LTi cells and non-LTi ILC3s.",
+    "key_quotes": [
+      "Type 3 ILCs (ILC3s) were divided into two main groups: lymphoid tissue inducer (LTi) cells and non-LTi ILC3s. LTi cells are critical for the formation of secondary lymphoid organs (SLO) and isolated lymphoid tissues (i.e., Peyer's patches) during fetal development"
+    ]
+  },
+  {
+    "corpusId": "18634193",
+    "summary": "Melo-Gonzalez and Hepworth review group 3 ILC heterogeneity. ILC3s are derived from a common lymphoid progenitor with IL-7-dependent commitment. LTi cells are distinguished from other ILC3s by their role in lymphoid organogenesis.",
+    "key_quotes": []
+  },
+  {
+    "corpusId": "235778803",
+    "summary": "Liu et al. delineate the spatiotemporal development of human fetal ILCs. ILC progenitors migrate from hematopoietic organs to lymphoid and non-lymphoid tissues for final maturation.",
+    "key_quotes": []
+  }
+]

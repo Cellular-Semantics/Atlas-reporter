@@ -1,0 +1,11 @@
+{
+  "label": "Dermal condensate",
+  "resolved_names": [
+    "Dermal condensate",
+    "Dc"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Dermal condensate (Dc) identified in SkO fibroblast compartment. Hair fibroblast trajectory conserved between prenatal skin and SkO (Fig. 2e)."
+}

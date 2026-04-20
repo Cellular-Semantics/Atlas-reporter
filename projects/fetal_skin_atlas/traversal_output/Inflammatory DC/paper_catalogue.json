@@ -1,0 +1,74 @@
+{
+  "papers": [
+    {
+      "id": "atlas",
+      "doi": "10.1038/s41586-024-08002-x",
+      "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+      "authors": "Gopee et al.",
+      "year": 2024,
+      "journal": "Nature",
+      "role": "atlas_paper",
+      "relevance": "Source atlas defining the 'Inflammatory DC' cell annotation in prenatal human skin."
+    },
+    {
+      "id": "dutertre2019",
+      "doi": "10.1016/j.immuni.2019.08.008",
+      "title": "Single-Cell Analysis of Human Mononuclear Phagocytes Reveals Subset-Defining Markers and Identifies Circulating Inflammatory Dendritic Cells",
+      "authors": "Dutertre et al.",
+      "year": 2019,
+      "journal": "Immunity",
+      "role": "key_reference",
+      "relevance": "Landmark study identifying and characterizing DC3 as a distinct circulating inflammatory CD5-CD163+CD14+ dendritic cell subset within the cDC2 compartment, expanded in systemic lupus erythematosus."
+    },
+    {
+      "id": "bourdely2020",
+      "doi": "10.1016/j.immuni.2020.06.002",
+      "title": "Transcriptional and Functional Analysis of CD1c+ Human Dendritic Cells Identifies a CD163+ Subset Priming CD8+CD103+ T Cells",
+      "authors": "Bourdely et al.",
+      "year": 2020,
+      "journal": "Immunity",
+      "role": "key_reference",
+      "relevance": "Defined DC3 as immediate precursors of inflammatory CD14+CD1c+CD163+FcεRI+ DCs, developing via a GM-CSF-dependent pathway independent of both cDC-restricted and monocyte-restricted progenitors."
+    },
+    {
+      "id": "nakamizo2021",
+      "doi": "10.1084/jem.20202345",
+      "title": "Single-cell analysis of human skin identifies CD14+ type 3 dendritic cells co-producing IL1B and IL23A in psoriasis",
+      "authors": "Nakamizo et al.",
+      "year": 2021,
+      "journal": "Journal of Experimental Medicine",
+      "role": "key_reference",
+      "relevance": "Identified DC3 in human skin tissue by scRNA-seq, demonstrating their enrichment in psoriatic skin where they co-produce IL1B and IL23A."
+    },
+    {
+      "id": "suo2022",
+      "doi": "10.1126/science.abo0510",
+      "title": "Mapping the developing human immune system across organs",
+      "authors": "Suo et al.",
+      "year": 2022,
+      "journal": "Science",
+      "role": "reference",
+      "relevance": "Comprehensive cross-organ atlas of the developing human immune system (4-17 PCW) that provides context for prenatal DC subsets. DC subsets were found to be transcriptionally conserved between adult and prenatal counterparts."
+    },
+    {
+      "id": "villani2017",
+      "doi": "10.1126/science.aah4573",
+      "title": "Single-Cell RNA-Seq Reveals New Types of Human Blood Dendritic Cells, Monocytes, and Progenitors",
+      "authors": "Villani et al.",
+      "year": 2017,
+      "journal": "Science",
+      "role": "reference",
+      "relevance": "Original identification of DC2 and DC3 subpopulations within CD1c+ dendritic cells in human blood using single-cell RNA-seq."
+    },
+    {
+      "id": "segura2025",
+      "doi": null,
+      "title": "Monocyte-Derived Dendritic Cells: An Updated View on an Old Concept",
+      "authors": "Segura",
+      "year": 2025,
+      "journal": "Immunological Reviews",
+      "role": "review",
+      "relevance": "Comprehensive review of monocyte-derived DC biology, including evidence for the distinct ontogeny of DC3 from mo-DC."
+    }
+  ]
+}

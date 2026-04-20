@@ -1,0 +1,11 @@
+{
+  "label": "ILC1_NK",
+  "resolved_names": [
+    "ILC1/NK cell",
+    "innate lymphoid cell type 1/natural killer cell"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "In the figures and supplementary tables (e.g., Extended Data Fig. 8d and Supplementary Table 7) of the referenced atlas paper (10.1038/s41586-024-08002-x), the label 'ILC1_NK' maps to 'ILC1/NK cell' or 'innate lymphoid cell type 1/natural killer cell.' This nomenclature is consistent across the main immune transcriptional cluster annotation schematic and fine cell type tables, specifically identifying this population in the skin atlas context."
+}

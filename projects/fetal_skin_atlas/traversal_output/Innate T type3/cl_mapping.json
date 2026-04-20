@@ -1,0 +1,22 @@
+{
+  "cell_type_label": "Innate T type3",
+  "working_definition": "A PLZF (ZBTB16)-expressing unconventional T cell with type 3 effector potential, characterized by RORC expression and IL-17-associated effector programming. These cells arise via thymocyte-thymocyte (T-T) selection, express alpha-beta or gamma-delta TCR (with enrichment of TRGV8/TRGV10 usage), and are developmental-specific, being abundant in prenatal tissues but nearly absent postnatally. In fetal skin they are part of the T cell lineage appearing from around 10 PCW.",
+  "searches_performed": [
+    "innate T cell",
+    "type 17 T cell",
+    "unconventional T cell innate-like",
+    "gamma-delta T cell"
+  ],
+  "best_match": null,
+  "justification": "No CL term captures the concept of a 'type 3 innate T cell' as defined by Suo et al. (2022). This population is distinct from Th17 cells (which are conventional CD4+ T cells selected on thymic epithelial cells) and from ILC3s (which lack TCR expression). The CL gamma-delta T cell term (CL:0000798) is a TCR-based classification, whereas innate T type3 is an effector-function-based classification that includes both alpha-beta and gamma-delta TCR expressing cells. No existing CL term represents PLZF+ unconventional T cells classified by type 3 (IL-17) effector commitment.",
+  "other_candidates": [
+    {
+      "cl_term": "gamma-delta T cell",
+      "cl_id": "CL:0000798",
+      "cl_definition": "A T cell that expresses a gamma-delta T cell receptor complex.",
+      "reason_rejected": "TCR-based classification; innate T type3 includes both alpha-beta and gamma-delta TCR expressing cells classified by type 3 effector function"
+    }
+  ],
+  "recommendation": "A new CL term is needed for 'type 3 innate T cell' (or 'innate-like T cell with type 3 effector potential'), defined as a PLZF-expressing unconventional T cell with RORC expression and IL-17-associated effector programming, arising via thymocyte-thymocyte selection and enriched during prenatal development. This would be a sibling of the proposed 'type 1 innate T cell' term under a broader 'innate-like T cell' parent.",
+  "new_term_needed": true
+}

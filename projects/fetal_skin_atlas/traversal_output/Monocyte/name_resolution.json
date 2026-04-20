@@ -1,0 +1,8 @@
+{
+  "label": "Monocyte",
+  "resolved_names": ["Monocyte", "Classical monocyte", "CD14+ monocyte"],
+  "scope": "prenatal",
+  "tissue_context": "prenatal human skin (dermis, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "Gopee et al. (2024) identify monocytes as part of the immune cell compartment in prenatal skin (Supplementary Table 3). Suo et al. (2022) distinguished three monocyte subsets in prenatal tissues: CXCR4hi, CCR2hi, and IL1Bhi, with the latter representing peripheral tissue-matured monocytes. In the Gopee et al. atlas, monocytes are present throughout gestation as mesoderm-derived immune cells."
+}

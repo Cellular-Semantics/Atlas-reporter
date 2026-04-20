@@ -1,0 +1,26 @@
+{
+  "cell_type_label": "LTi",
+  "working_definition": "A group 3 innate lymphoid cell that expresses ROR-gamma-t, is present in fetal skin from early gestation, and interacts with pre-dermal condensate cells through CXCL12-CXCR4 and CXCL12-DPP4 signaling to regulate cellular adhesion and migration during hair follicle morphogenesis. LTi cells are classically defined by their role in initiating lymphoid tissue organogenesis through lymphotoxin and TNF signaling with mesenchymal cells.",
+  "searches_performed": [
+    "lymphoid tissue inducer cell"
+  ],
+  "best_match": {
+    "cl_term": "lymphoid tissue-inducer cell",
+    "cl_id": "CL:0011018",
+    "cl_definition": "A group 3 innate lymphoid cell that express ROR gamma t and IL-7R alpha in the absence of lineage markers (e.g. CD3, CD19, B220, CD11c, Gr-1), with the functional ability to interact with mesenchymal cells through lymphotoxin and tumor necrosis factor. Lymphoid tissue-inducer cells are key to the development of lymph nodes and Peyer's patches.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The atlas explicitly defines LTi as 'lymphoid tissue inducer cell' in the figure legend. CL:0011018 defines this as a group 3 innate lymphoid cell expressing ROR-gamma-t and IL-7R-alpha that interacts with mesenchymal cells through lymphotoxin and TNF, which aligns with the atlas annotation. The CL definition focuses on lymph node and Peyer's patch development, while the atlas additionally describes LTi interaction with pre-dermal condensate cells in skin, but this tissue-specific function does not change the cell identity.",
+  "other_candidates": [
+    {
+      "cl_term": "group 3 innate lymphoid cell",
+      "cl_id": "CL:0001071",
+      "cl_definition": "An innate lymphoid cell that constituitively expresses RORgt and is capable of expressing IL17A and/or IL-22.",
+      "reason_rejected": "Broader parent term; CL:0011018 is the specific LTi subtype of ILC3 and matches exactly"
+    }
+  ],
+  "recommendation": "Use CL:0011018 (lymphoid tissue-inducer cell) as an exact match. No new term is needed.",
+  "new_term_needed": false
+}

@@ -1,0 +1,28 @@
+{
+  "cell_type": "c8",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "source_doi": "10.1126/science.aba6500",
+  "annotation": "Differentiated KC* (cluster 8)",
+  "findings": [
+    {
+      "source": "Reynolds et al. (2021), Figure 4 legend",
+      "detail": "Cluster 8 is designated 'differentiated KC*' (asterisk), distinguished from standard differentiated KC clusters (3, 4, 6, 7)"
+    },
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "Inflammatory differentiated keratinocytes co-express lower levels of undifferentiated (TP63, ITGA6) and differentiated (KRT1, KRT10) transcripts but additionally express ICAM1, TNF and CCL20"
+    },
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "Inflammatory differentiated keratinocytes express higher levels of genes associated with inflammatory ichthyoses and severe atopy such as NIPAL4 and SPINK5 (Fig. 4E, cluster 8)"
+    },
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "Proportion of inflammatory differentiated keratinocytes is expanded in psoriasis skin"
+    },
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "Resemble previously described CCL20-expressing keratinocytes in murine inflammatory skin disease induced by subcutaneous IL-17 and TNFalpha injection"
+    }
+  ]
+}

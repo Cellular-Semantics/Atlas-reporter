@@ -1,0 +1,8 @@
+{
+  "label": "Monocyte (activated/differentiating)",
+  "resolved_names": ["Activated monocyte", "Differentiating monocyte", "IL1Bhi monocyte"],
+  "scope": "prenatal",
+  "tissue_context": "prenatal human skin (dermis, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "In the Gopee et al. (2024) atlas, an activated/differentiating monocyte population is annotated in prenatal skin. Suo et al. (2022) identified IL1Bhi monocytes as the peripheral tissue-adapted monocyte subset, characterised by upregulation of IL1B and TNF signalling genes upon tissue entry. These cells represent monocytes that have egressed from bone marrow and are undergoing activation and differentiation toward macrophage or dendritic cell fates within the tissue microenvironment."
+}

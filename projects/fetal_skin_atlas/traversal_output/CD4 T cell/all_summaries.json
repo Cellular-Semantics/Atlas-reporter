@@ -1,0 +1,66 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW",
+      "Single-cell alpha-beta T cell receptor (TCR) sequencing data were generated to accurately resolve T cell subsets",
+      "prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (Treg) cells",
+      "T reg cells are known to localize around the HF in late second trimester (around 21 PCW) and in postnatal skin"
+    ],
+    "summary": "The atlas paper establishes that T cells (including CD4+ T cells) emerge in prenatal skin from around 10 PCW, later than innate immune cells. TCR sequencing was used for T cell subset resolution. Treg cells are noted to localize around hair follicles, and CXCL14 from matrix cells may recruit Tregs during hair follicle development.",
+    "categories": ["developmental timing", "markers", "location", "function"],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "atlas paper body text and extended data"
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "prenatal conventional T cells (CD4+ T, CD8+ T, and Tregs), whereas resident and effector memory T cells did not have a developmental equivalent",
+      "T cell progenitors were restricted to the thymus, potentially reflecting more stringent niche requirements for T cell development",
+      "Conventional CD4+ T and CD8+ T cells colocalized with mTECs close to the inner medulla"
+    ],
+    "summary": "Suo et al. mapped prenatal conventional T cell populations including CD4+ T, CD8+ T, and Tregs across organs, finding that prenatal T cells could match adult naive counterparts but not resident/effector memory T cells. T cell progenitors were restricted to the thymus. In the thymus, conventional CD4+ and CD8+ T cells colocalized with medullary thymic epithelial cells.",
+    "categories": ["developmental timing", "location", "function"],
+    "source_corpus_id": "CorpusId:248122197",
+    "source_title": "Mapping the developing human immune system across organs",
+    "source_authors": "Chenqu Suo et al.",
+    "source_year": 2022,
+    "snippet": "Suo et al. body text"
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "the largest subsets of both CD4+ Tconv and CD8+ T cells in fetal skin demonstrated a largely naive, proliferative status, whereas those dominating in adult skin were enriched for markers of memory and activation",
+      "CD4+ (clusters 1 and 2) and CD8+ (cluster 4) T cells represented the bulk of lymphocytes present in fetal skin",
+      "Strikingly, up to 30% of CD4+ Tconv and slightly fewer CD8+ T cells in fetal skin were CD45RO+",
+      "CD31+ T cells were substantially enriched in fetal skin at both 17-18 and 23 weeks",
+      "the average percentage of Foxp3+ regulatory T cells (Tregs) among CD4+ cells increased significantly between 17 and 23 weeks gestation and was higher at this later fetal time point than in adult skin",
+      "Accumulation of Tregs in fetal skin occurs contemporaneously with hair follicle development, and preferentially at sites of higher hair follicle density within a given fetus, suggesting an early role for hair follicle biology in skin Treg residency."
+    ],
+    "summary": "Dhariwala et al. provided deep phenotyping of CD4+ T cells in human fetal skin using CyTOF and flow cytometry. Most fetal CD4+ Tconv cells had a naive, proliferative phenotype (high Ki-67, CD27; low CD25, CD45RO), distinct from adult memory/activated counterparts. However, a subset (~30%) expressed CD45RO, indicating memory-like features. CD31 expression indicated enrichment for recent thymic emigrants. Foxp3+ Tregs progressively increased during the second trimester, coinciding with hair follicle development.",
+    "categories": ["markers", "developmental timing", "function", "location"],
+    "source_corpus_id": "CorpusId:227334677",
+    "source_title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "source_authors": "M. Dhariwala et al.",
+    "source_year": 2020,
+    "snippet": "Dhariwala et al. body text"
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "the majority of CD3+ cells expressed CD4, thus, confirming previous results described by Di Nuzzo et al. (2009)",
+      "FoxP3 expression was found in 20.0% (SD 6.5%; n=5) of all T cells, a frequency comparable to what is found in the adult skin",
+      "the majority of skin-homing T cells in fetal skin are naive"
+    ],
+    "summary": "Schuster et al. characterized leukocytes in prenatal human dermis, finding that the majority of CD3+ T cells in fetal skin expressed CD4. FoxP3+ regulatory T cells were present at ~20% of T cells, comparable to adult skin. Fetal skin T cells were predominantly naive.",
+    "categories": ["markers", "location"],
+    "source_corpus_id": "CorpusId:7818908",
+    "source_title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
+    "source_authors": "C. Schuster et al.",
+    "source_year": 2012,
+    "snippet": "Schuster et al. body text"
+  }
+]

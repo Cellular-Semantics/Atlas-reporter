@@ -1,0 +1,121 @@
+[
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "Flow cytometry analysis confirmed that BECs express CD31, but not Podoplanin (Fig. 1a and Supplementary Fig. 1A). On the other hand, LECs expressed both CD31 and Podoplanin (Fig. 1b and Supplementary Fig. 1B). Further quantification of flow cytometry histograms indicated that 92.7% of BECs were CD31 + and PDPN \u00c0 (Figs. 1c and 1d), while 93.8% of LECs were CD31 + and PDPN \u00c0 (Figs. 1e and 1f). These data suggests that the BECs and LECs were pure population of blood and lymphatic endothelial cells, respectively."
+    ],
+    "summary": "This snippet establishes that LECs (Lymphatic Endothelial Cells), which encompass the LE2 cell type, co-express CD31 and Podoplanin, indicating these are marker proteins for this cell type.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:251434068",
+    "source_title": "Podoplanin is Responsible for the Distinct Blood and Lymphatic Capillaries",
+    "source_authors": "Donghyun Paul Jeong et al.",
+    "source_year": null,
+    "snippet": "Since both BECs and LECs were isolated from dermal skin vasculatures, 3,21 the initial study was done to first characterize the unique surface markers specific to blood and lymphatic vasculatures. Flow cytometry analysis confirmed that BECs express CD31, but not Podoplanin (Fig. 1a and Supplementary Fig. 1A). On the other hand, LECs expressed both CD31 and Podoplanin (Fig. 1b and Supplementary Fig. 1B). Further quantification of flow cytometry histograms indicated that 92.7% of BECs were CD31 + and PDPN \u00c0 (Figs. 1c and 1d), while 93.8% of LECs were CD31 + and PDPN \u00c0 (Figs. 1e and 1f). These data suggests that the BECs and LECs were pure population of blood and lymphatic endothelial cells, respectively."
+  },
+  {
+    "snippet_index": 11,
+    "quotes": [
+      "lymphatic endothelial cells (LECs) not only provide a structural framework for transportation. Recent research has shown that LECs can present antigens and express immunoregulatory molecules that modulate immune cell activation and functions (reviewed in 1,2 ).",
+      "both blood endothelial cells (BECs) and LECs from different organs show unique expression profiles and transcriptional programmes.",
+      "LECs in embryos compared with adult tissues, as well as LECs of different vascular beds, show differences concerning basic growth factor responses, but the molecular basis of this is not well understood."
+    ],
+    "summary": "This snippet highlights that lymphatic endothelial cells (LECs)\u2014potentially including the LE2 subtype\u2014can present antigens and have immunoregulatory roles beyond structural transport, show unique expression profiles depending on tissue, and display heterogeneity in growth factor responses depending on developmental stage and vascular bed.",
+    "categories": [
+      "function",
+      "markers",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:1041638",
+    "source_title": "Heterogeneity in the lymphatic vascular system and its origin",
+    "source_authors": "Maria H. Ulvmar et al.",
+    "source_year": null,
+    "snippet": "The lymphatic vasculature has long been recognized for its vital function as a unidirectional drainage system for the clearance of interstitial fluid and transport of tissue-derived immune cells and antigens to the lymph nodes. However, it is becoming increasingly appreciated that lymphatic endothelial cells (LECs) not only provide a structural framework for transportation. Recent research has shown that LECs can present antigens and express immunoregulatory molecules that modulate immune cell activation and functions (reviewed in 1,2 ). In addition, the lymphatic system plays an essential role in the uptake of dietary fat and has been implicated in clearance of cholesterol from peripheral tissues, and lymphatic dysfunction may thus contribute to the pathogenesis of obesity and arteriosclerosis (reviewed in 3 -5 ).\n\nLymphatic vessels within different organs and in different physiological and pathological processes show remarkable plasticity and heterogeneity, which likely reflects their tissue-specific specialization ( Figure 1). In support of this, both blood endothelial cells (BECs) and LECs from different organs show unique expression profiles and transcriptional programmes. 6,7 In addition, BECs differentiated from embryonic stem cells adopt different molecular features depending on which tissue they were transplanted into, 6 suggesting that endothelium possesses an inherent phenotypic plasticity that allows organspecific functional specialization. LECs in embryos compared with adult tissues, as well as LECs of different vascular beds, show differences concerning basic growth factor responses, but the molecular basis of this is not well understood. For example, postnatal deletion of vascular endothelial growth factor C (Vegfc), 8 which is the critical lymphatic growth factor during embryogenesis 9 was shown to result in regression of the specialized lacteal lymphatic vessels within the intestinal villi, without affecting the integrity or function of dermal lymphatic vessels. 8 Vascular bed-specific responses are further highlighted by the observations that Vegfc overexpression in the respiratory tract induced lymphatic vessel growth only during a critical period in perinatal development, 10 while in the skin Vegfc activated lymphangiogenesis also in adult"
+  },
+  {
+    "snippet_index": 12,
+    "quotes": [
+      "Another structural characteristic unique to the initial lymphatics is the presence of flap valves (Fig. 1D). These valves are formed by overlapping edges of ECs that open to allow influx of interstitial fluid into the initial lymphatics and prevent it from leaking into the interstitium (6).",
+      "In addition to the unique structural features that distinguish vascular endothelial cells (VECs) and LECs, there are several different molecular markers that can be used to define them (Fig. 2). Platelet endothelial cell adhesion molecule-1 (PECAM-1 or CD31) is expressed on all cells within the vascular compartment (Fig. 2), whereas the lymphatic vessel endothelial hyaluronan receptor 1 (Lyve-1), a transmembrane glycoprotein that binds hyaluronan, is exclusively on the surface of LECs (Fig. 2), sinusoidal ECs in spleen, and syncyt"
+    ],
+    "summary": "This excerpt describes key morphological features of lymphatic endothelial cells (LECs; possibly encompassing LE2), such as the absence of mural cells, specialized anchoring filaments, and presence of flap valves. It also notes the expression of molecular markers like LYVE-1 (exclusive to LECs, with some exceptions) and CD31.",
+    "categories": [
+      "morphology",
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:258470019",
+    "source_title": "Sphingosine-1-phosphate and its receptors in vascular endothelial and lymphatic barrier function",
+    "source_authors": "Cynthia Weigel et al.",
+    "source_year": null,
+    "snippet": "There are several distinct structural and molecular features that differ among vascular and lymphatic ECs. These structural differences are most striking among the vascular capillaries and the initial lymphatics, which have distinct physiological functions. The function of the vascular capillaries is to facilitate the exchange of nutrients, gases, and waste products, whereas the function of the initial lymphatics is the absorption of excess interstitial fluid and protein (5).\n\nThe initial lymphatics are blind-ended vessels that are only capable of unidirectional transport of lymph (5). Lymphatic endothelial cells (LECs) lack mural cells, such as pericytes, with an absent or incomplete basement membrane, and attach themselves to surrounding connective tissue with anchoring filaments composed of the glycoproteins Fibrillin or Emilin1 (9) (Fig. 1D). Anchoring filaments are thought to prevent collapse of lymphatic vessels and increase interstitial fluid absorption in edematous tissue by holding the vessel lumen open. Another structural characteristic unique to the initial lymphatics is the presence of flap valves (Fig. 1D). These valves are formed by overlapping edges of ECs that open to allow influx of interstitial fluid into the initial lymphatics and prevent it from leaking into the interstitium (6). To further facilitate the unidirectional transport of the fluid, the initial lymphatics drain into collecting lymphatics with intraluminal valves (Fig. 1D).\n\nIn addition to the unique structural features that distinguish vascular endothelial cells (VECs) and LECs, there are several different molecular markers that can be used to define them (Fig. 2). Platelet endothelial cell adhesion molecule-1 (PECAM-1 or CD31) is expressed on all cells within the vascular compartment (Fig. 2), whereas the lymphatic vessel endothelial hyaluronan receptor 1 (Lyve-1), a transmembrane glycoprotein that binds hyaluronan, is exclusively on the surface of LECs (Fig. 2), sinusoidal ECs in spleen, and syncyt"
+  },
+  {
+    "snippet_index": 14,
+    "quotes": [
+      "Primary human dermal lymphatic endothelial cells (HDLEC) were isolated from the skin of healthy adults undergoing elective plastic surgery at the John Radcliffe Hospital (Oxford, UK) as described previously (43) with full United Kingdom ethical approval.",
+      "Cultures were used at early passage (\u05455) and consistently displayed authentic expression of lymphatic endothelial cell markers Prox-1, LYVE-1, podoplanin, and CD31 and absence of blood endothelial cell markers PAL-E and CD44, as assessed by immunofluo-rescence microscopy and flow cytometry on a Cyan ADP Analyzer (Dako) using standard parameters."
+    ],
+    "summary": "This snippet describes the isolation and marker expression profile of human dermal lymphatic endothelial cells, which consistently express the markers Prox-1, LYVE-1, podoplanin, and CD31, while lacking blood endothelial cell markers. These markers are commonly used to identify LECs, possibly including LE2.",
+    "categories": [
+      "markers",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:1425837",
+    "source_title": "Binding of Hyaluronan to the Native Lymphatic Vessel Endothelial Receptor LYVE-1 Is Critically Dependent on Receptor Clustering and Hyaluronan Organization*",
+    "source_authors": "William I. Lawrance et al.",
+    "source_year": null,
+    "snippet": "Primary Lymphatic Endothelial Cells and Immortalized Cell Lines-Primary human dermal lymphatic endothelial cells (HDLEC) were isolated from the skin of healthy adults undergoing elective plastic surgery at the John Radcliffe Hospital (Oxford, UK) as described previously (43) with full United Kingdom ethical approval. Briefly, skin was digested overnight at 4 \u00b0C with Dispase (2 mg/ml; Calbiochem) in PBS, and dermal cells were recovered by scraping, followed by passage through a 70-m cell strainer, prior to initial adherent culture in 0.1% gelatin-coated flasks in complete medium (EGM-2 MV; Lonza). Cells were then lifted with Accutase (PAA Laboratories), and HDLEC were immunoselected using mouse anti-human LYVE-1 mAb 8C and anti-mouse IgG MACS magnetic bead preparations (Miltenyi Biotec) followed by culture in 0.1% gelatin (Sigma)-coated flasks in EGM-2 MV. Cultures were used at early passage (\u05455) and consistently displayed authentic expression of lymphatic endothelial cell markers Prox-1, LYVE-1, podoplanin, and CD31 and absence of blood endothelial cell markers PAL-E and CD44, as assessed by immunofluo-rescence microscopy and flow cytometry on a Cyan ADP Analyzer (Dako) using standard parameters. \n\nHEK293T human fibroblasts and the human Jurkat T cell line used for LYVE-1 transfections were obtained from the Cancer Research UK cell bank (Clare Hall, London, UK) and as a kind gift from Prof. S. J. Davis (Weatherall Institute of Molecular Medicine, University of Oxford), respectively."
+  },
+  {
+    "snippet_index": 19,
+    "quotes": [
+      "First specific markers were introduced only two decades ago, LYVE-1 [Banerjee et al, 1999], Prox-1 [Wigle and Oliver, 1999], and podoplanin [Breiteneder-Geleff et al, 1999]. Although not highly specific, these markers discriminate between blood and lymphatic vessels in both normal and pathological tissues.",
+      "In an effort to better characterize the molecular profile of LECs, there were identified other specific markers, like receptor 3 of vascular endothelial growth factor (VEGFR-3) or desmoplakin. Investigating how specific these markers are, it was found that LYVE-1 stained endothelial cells of hepatic sinusoids, activated macrophages, and about 10% of blood vessels from the tumor area."
+    ],
+    "summary": "This passage details the primary molecular markers used for lymphatic endothelial cells (LECs)\u2014including LYVE-1, Prox-1, podoplanin, VEGFR-3, and desmoplakin. It also notes that these markers are not absolutely specific and can sometimes be expressed in non-lymphatic cells.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:231799080",
+    "source_title": "Podoplanin: a Prognostic Marker and a Potential Target for Therapy in Bladder Cancer",
+    "source_authors": "T. Adelmann et al.",
+    "source_year": null,
+    "snippet": "Investigation of the lymphatic system although initiated more than one hundred years ago, is a relatively new acquisition in biology and medicine. This is mainly due to the lack of specific markers of the lymphatic vessels endothelium (LECs). First specific markers were introduced only two decades ago, LYVE-1 [Banerjee et al, 1999], Prox-1 [Wigle and Oliver, 1999], and podoplanin [Breiteneder-Geleff et al, 1999]. Although not highly specific, these markers discriminate between blood and lymphatic vessels in both normal and pathological tissues. After early publications on this topic, there were published many data related to the development of lymphatic vessels network in normal and pathological conditions, and particularly, in malignant tumors. Immunohistochemistry is very useful to investigate the structure, number and particular aspects of lymphatic vessels, and these characters were designated as lymphangiogenesis. \n\nLymphangiogenesis is the process of formation of new lymphatic vessels from postcapillary venules, preexisting lymphatics, and/or directly from committed mesenchymal cells. Although of great importance for pathology, the origin of newly formed lymphatics in normal and pathological conditions is not yet completely clarified [Shayan et al, 2006, He et al, 2004]. Lymphangiogenesis is frequently associated with the natural evolution and spreading of a large variety of carcinoma. After the characterization of specific markers of LECs, there were accumulated data that support their proliferative potential in normal tissues, but also in tumor specimens [Wilting et al, 2003;Jeltsch et al, 2003]. In an effort to better characterize the molecular profile of LECs, there were identified other specific markers, like receptor 3 of vascular endothelial growth factor (VEGFR-3) or desmoplakin. Investigating how specific these markers are, it was found that LYVE-1 stained endothelial cells of hepatic sinusoids, activated macrophages, and about 10% of blood vessels from the tumor area."
+  },
+  {
+    "snippet_index": 20,
+    "quotes": [],
+    "summary": "LE2 cells, referred to as normal human dermal lymphatic microvascular endothelial cells, are shown to form lymph-like capillaries characterized by CD31-negative and LYVE-1-positive marker expression within the dermis.",
+    "categories": [
+      "location",
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:248006830",
+    "source_title": "Lymphatic Tissue Bioengineering for the Treatment of Postsurgical Lymphedema",
+    "source_authors": "Cynthia Sung et al.",
+    "source_year": null,
+    "snippet": "Gibot et al. described that human lymphatic endothelial cells (LECs) cocultured with dermal fibroblasts could spontaneously organize into a stable 3D lymphatic capillary network devoid of any exogenous material such as scaffolds or growth factors [103]. In vitro-generated human lymphatic capillaries exhibit the major cellular, ultrastructural and molecular features of native human lymphatic microvasculature, including a lumen, discontinuous basement membrane, blind ends, overlapping junctions, anchoring filaments and branches in 3D. The protocol takes 6 weeks to complete, and it requires experience in cell culture techniques. Matsusaki et al. developed a human skin equivalent (HSE) containing blood and lymph-like capillary networks using a cell accumulation technique [113]. The co-sandwich culture of human umbilical vein endothelial cells and normal human dermal lymphatic microvascular endothelial cells within eight-layered dermis showed in vitro co-network formation of individual blood (CD31 + LYVE-1 \u2212 ) and lymph-like capillaries (CD31 \u2212 LYVE-1 + ) inside the dermis. This type of dermis has some great advantages such as precise controllability of the thickness, whole and homogeneous construction, and higher biological functions."
+  },
+  {
+    "snippet_index": 30,
+    "quotes": [
+      "Skin sections from patients with SSc and healthy donors were immunostained for the lymphatic endothelial cell-specific marker lymphatic vessel endothelial hyaluronan receptor-1 (LYVE-1) in combination with \u03b1-smooth muscle actin (\u03b1-SMA) as the main marker of myofibroblasts.",
+      "Lymphatic endothelial cells in intermediate stages of the Ly-EndMT process (i.e., coexpressing LYVE-1 and \u03b1-SMA) were found exclusively in the fibrotic skin of SSc patients.",
+      "the downregulation of lymphatic endothelial cell-specific markers and the parallel upregulation of myofibroblast markers"
+    ],
+    "summary": "This snippet describes that lymphatic endothelial cells (likely referring to LE2 or closely related cells) in systemic sclerosis can undergo a transition towards a myofibroblast-like phenotype, marked by loss of LYVE-1 and gain of \u03b1-SMA, indicating changes in marker expression and function.",
+    "categories": [
+      "markers",
+      "function",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:261548609",
+    "source_title": "Lymphatic Endothelial-to-Myofibroblast Transition: A Potential New Mechanism Underlying Skin Fibrosis in Systemic Sclerosis",
+    "source_authors": "I. Rosa et al.",
+    "source_year": null,
+    "snippet": "At present, only a few reports have addressed the possible contribution of the lymphatic vascular system to the pathogenesis of systemic sclerosis (SSc). Based on the evidence that blood vascular endothelial cells can undertake the endothelial-to-myofibroblast transition (EndMT) contributing to SSc-related skin fibrosis, we herein investigated whether the lymphatic endothelium might represent an additional source of profibrotic myofibroblasts through a lymphatic EndMT (Ly-EndMT) process. Skin sections from patients with SSc and healthy donors were immunostained for the lymphatic endothelial cell-specific marker lymphatic vessel endothelial hyaluronan receptor-1 (LYVE-1) in combination with \u03b1-smooth muscle actin (\u03b1-SMA) as the main marker of myofibroblasts. Commercial human adult dermal lymphatic microvascular endothelial cells (HdLy-MVECs) were challenged with recombinant human transforming growth factor-\u03b21 (TGF\u03b21) or serum from SSc patients and healthy donors. The expression of lymphatic endothelial cell/myofibroblast markers was measured by quantitative real-time PCR, Western blotting and immunofluorescence. Collagen gel contraction assay was performed to assess myofibroblast-like cell contractile ability. Lymphatic endothelial cells in intermediate stages of the Ly-EndMT process (i.e., coexpressing LYVE-1 and \u03b1-SMA) were found exclusively in the fibrotic skin of SSc patients. The culturing of HdLy-MVECs with SSc serum or profibrotic TGF\u03b21 led to the acquisition of a myofibroblast-like morphofunctional phenotype, as well as the downregulation of lymphatic endothelial cell-specific markers and the parallel upregulation of myofibroblast markers. In SSc, the Ly-EndMT might represent a previously overlooked pathogenetic process bridging peripheral microly"
+  }
+]

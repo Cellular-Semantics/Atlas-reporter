@@ -1,0 +1,14 @@
+{
+  "cell_type": "Capillary arterioles",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Supplementary Table 3 provides DEGs used to annotate Capillary arterioles in prenatal skin. Also present in SkO (organoid) annotations.",
+    "trajectory": "Capillary arterioles are a transitional state between capillaries and arterioles on the arteriolar pathway (Fig. 4d, Extended Data Fig. 10a-c). In prenatal skin, capillary arteriole cells can further differentiate into arterioles; SkO capillary arterioles cannot.",
+    "VEGF_signaling": "VEGF receptors KDR and FLT1 on SkO capillary arterioles are downregulated compared to prenatal skin (Extended Data Fig. 11b,c). These are downstream targets of GATA2.",
+    "GATA2_regulon": "GATA2 and related regulons (e.g., NFATC1) are downregulated in SkO capillary arterioles compared to prenatal skin (Extended Data Fig. 11d,e). Target genes of GATA2 and NFATC1 (e.g., VWF) are involved in endothelial differentiation.",
+    "sprouting_angiogenesis": "Sprouting angiogenesis potential ('tip' cell state) is increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h). Despite strong sprouting angiogenesis gene signature, SkO capillary arteriole cells are unable to guide stalk cells for new vessel formation.",
+    "anti_vs_pro_angiogenic": "Anti-angiogenic genes (e.g., WNT5A) are highly expressed in SkO, whereas pro-angiogenic genes (e.g., CXCL8) are upregulated in prenatal skin and primarily expressed by macrophages (Extended Data Fig. 11a, Supplementary Tables 30-34).",
+    "macrophage_VEGFA": "NicheNet identified macrophage-expressed VEGFA as a top upstream ligand regulating GATA2 expression differences between prenatal skin and SkO endothelial cells (Extended Data Fig. 11g, Supplementary Tables 35-37)."
+  }
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "The expression levels of all cytokines examined in Fig. 4D were not affected by loss of C6-S in new-born dorsal skin. In adult dorsal skin, the gene expression levels of some pro-inflammatory cytokines were increased by loss of C6-S.",
+      "A striking feature of the data is how similar the heterozygote mice are to the full knockout of the C6-sulfotransferase. The authors' analysis shows that the amount of C6-S in heterozygote skin is approximately one-third of the wild type.",
+      "Have the authors checked to assess whether CS-56 staining of the heterozygote dermal-epidermal junction is negative?"
+    ],
+    "summary": "These quotes indicate that loss of C6-S in skin affects cytokine expression in adults but not newborns, and that C6-S levels in heterozygote skin are about one-third of wild type. They also mention the use of CS-56 staining to detect C6-S at the dermal-epidermal junction.",
+    "categories": [
+      "markers",
+      "function",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:231712171",
+    "source_title": "Chondroitin 6-sulfate represses keratinocyte proliferation in mouse skin, which is associated with psoriasis",
+    "source_authors": "K. Kitazawa et al.",
+    "source_year": null,
+    "snippet": "Thank you very much for your helpful comments. At the suggestion of the reviewer, we examined the expression level of pro-inflammatory cytokines, as shown in Fig. 4D. The expression levels of all cytokines examined in Fig. 4D were not affected by loss of C6-S in new-born dorsal skin. In adult dorsal skin, the gene expression levels of some pro-inflammatory cytokines were increased by loss of C6-S. These results suggest that ablation of C6st-1 does not directly activate intrinsic pro-inflammatory signaling but might set the epidermis in a primed pro-inflammatory state because of impaired barrier function. (p. 6, l. 167-) 2. A striking feature of the data is how similar the heterozygote mice are to the full knockout of the C6-sulfotransferase. The authors' analysis shows that the amount of C6-S in heterozygote skin is approximately one-third of the wild type. Have the authors checked to assess whether CS-56 staining of the heterozygote dermal-epidermal junction is negative? This would be interesting in light of the accompanying data."
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "This manuscript concerns the role of a specific isoform of chondroitin sulfate, namely chondroitin 6-sulfate and its influence on proliferation of keratinocytes.",
+      "the authors report defects in differentiation, increased proliferation and increased susceptibility to imiquimod, a topical agent that triggers a psoriasis-like effect in mice.",
+      "Further molecular studies infer that C6-S affects the epidermal growth factor receptor and its signaling, perhaps through direct interactions, though the precise mechanism remains unknown currently.",
+      "the presence of C6-S in the basement membrane underlying the epidermis has been known for around 30 years, its role(s) have remained largely unknown.",
+      "the authors do convincingly show that differentiation, including cell adhesion and the permeability barrier are compromised, resulting in increased transepidermal water loss. There is hyperproliferation and suprabasal mitosis."
+    ],
+    "summary": "These statements describe C6-S as a chondroitin sulfate isoform influencing keratinocyte proliferation, differentiation, and skin barrier function; C6-S is present in the basement membrane, and its loss leads to hyperproliferation and compromised barrier integrity.",
+    "categories": [
+      "function",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:231712171",
+    "source_title": "Chondroitin 6-sulfate represses keratinocyte proliferation in mouse skin, which is associated with psoriasis",
+    "source_authors": "K. Kitazawa et al.",
+    "source_year": null,
+    "snippet": "The following revisions have been made. The cited page numbers etc are for the PDF file for your review, where revisions are indicated in red. \n\nReviewer #1 (Remarks to the Author): \n\nThis manuscript concerns the role of a specific isoform of chondroitin sulfate, namely chondroitin 6-sulfate and its influence on proliferation of keratinocytes. Using a variety of techniques, but focussing largely on heterozygote and knockout mice for the relevant 6-O-sulfotransferase, the authors report defects in differentiation, increased proliferation and increased susceptibility to imiquimod, a topical agent that triggers a psoriasis-like effect in mice. Further molecular studies infer that C6-S affects the epidermal growth factor receptor and its signaling, perhaps through direct interactions, though the precise mechanism remains unknown currently. This is an interesting and novel set of data, particularly since there may be a linkage to a common skin disease. The work is supported by a large set of figures and is well presented. While the presence of C6-S in the basement membrane underlying the epidermis has been known for around 30 years, its role(s) have remained largely unknown. This study provides a new and potentially important insight. There are a few major areas where further data or explanation seem necessary. In addition, there are some minor points, largely errors or ommissions. \n\nMajor Points: \n\n1. Inflammation. The authors point out the possible association of C6-S with the inflammatory skin disease, psoriasis. The title of the manuscript strongly links the two. \n\nIn the discussion it is stated that the C6-S null mouse reports on the effects of the absence of this glycosaminoglycan in a \"normal\" context, but this is not shown. However, the authors do convincingly show that differentiation, including cell adhesion and the permeability barrier are compromised, resulting in increased transepidermal water loss. There is hyperproliferation and suprabasal mitosis. All of these features can be seen in inflammatory diseases. The authors should show whether or not the null mouse skin expresses inflammatory markers."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "we examined the expression of C6-S in C6st-1 HE and C6st-1 KO mice in addition to C6st-1 WT mice by using CS-56 antibody staining, as shown in Fig. 1D.",
+      "C6-S was expressed beneath the keratin 14 (K14)-positive stem cells of the epidermal basal layer in C6st-1 WT mice.",
+      "In contrast, C6-S was not detected in epidermal basal layer of C6st-1 HE and C6st-1 KO mice."
+    ],
+    "summary": "These quotes show that C6-S is specifically located beneath K14-positive stem cells in the epidermal basal layer of wild-type mice and is absent in this location in C6st-1 heterozygote and knockout mice, as detected by CS-56 antibody.",
+    "categories": [
+      "location",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:231712171",
+    "source_title": "Chondroitin 6-sulfate represses keratinocyte proliferation in mouse skin, which is associated with psoriasis",
+    "source_authors": "K. Kitazawa et al.",
+    "source_year": null,
+    "snippet": "At the suggestion of the reviewer, we examined the expression of C6-S in C6st-1 HE and C6st-1 KO mice in addition to C6st-1 WT mice by using CS-56 antibody staining, as shown in Fig. 1D. C6-S was expressed beneath the keratin 14 (K14)-positive stem cells of the epidermal basal layer in C6st-1 WT mice. In contrast, C6-S was not detected in epidermal basal layer of C6st-1 HE and C6st-1 KO mice. (p. 3, l. 93-) 2. Comments on the differences in thickness observed between Newborn and 8 weeks old mice skin should be added. Explanation of the procedure used to measure epidermal thickness is missing. Same for Figure 2 (b) providing information about the basal layer thickness. The Y-axis must be better renamed."
+  },
+  {
+    "snippet_index": 17,
+    "quotes": [
+      "we exposed C5ar1 \u00c0/\u00c0 , C5ar2 \u00c0/\u00c0 (Figure 3d), and C6 \u00c0/\u00c0 (Figure 3e) mice to the same TPA treatment and found no difference in epidermal hyperplasia compared with controls."
+    ],
+    "summary": "The snippet describes an experiment in which C6 knockout (C6 \u00c0/\u00c0) mice were subjected to TPA-induced skin inflammation, showing that the absence of C6 did not alter the degree of epidermal hyperplasia compared to wild-type controls.",
+    "categories": [
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:220652799",
+    "source_title": "C3 Drives Inflammatory Skin Carcinogenesis Independently of C5",
+    "source_authors": "W. Jackson et al.",
+    "source_year": null,
+    "snippet": "To further understand how C3 might be promoting tumor development in an inflammatory microenvironment, we investigated the role of C3 during TPA-driven skin inflammation without the application of carcinogen. We detected enhanced C3 deposition in the dermis when TPA was applied repeatedly (four times over 2 weeks) on the dorsal ear skin (Figure 3a). An increase of C3 transcript, especially in the dermis, was already detectable at 6 hours after a single TPA treatment, indicating that C3 protein was being synthesized locally (Figure 3b). Histological examination of the ear skin revealed that the epidermal hyperplasia triggered by the TPA application was significantly reduced in C3 \u00c0/\u00c0 mice (Figure 3c). To confirm that this proliferative effect on skin ECs was mediated by C3 only and not the result of downstream complement activation effects, we exposed C5ar1 \u00c0/\u00c0 , C5ar2 \u00c0/\u00c0 (Figure 3d), and C6 \u00c0/\u00c0 (Figure 3e) mice to the same TPA treatment and found no difference in epidermal hyperplasia compared with controls. Taken together, these results indicate that only C3 plays a key role in EC growth and the development of epidermal hyperplasia during TPA-induced skin inflammation."
+  },
+  {
+    "snippet_index": 20,
+    "quotes": [
+      "C6 is the   first among terminal complement components that associates with C5b to initiate the assembly of MAC.",
+      "mice deficient in C6 and wild-type mice were injected with rabbit antibodies to murine COL7. Both C6-deficient and control mice developed widespread blistering disease (Figure 2), to a similar extent, indicating that MAC is dispensable for blister formation in this model."
+    ],
+    "summary": "C6 is a terminal complement component essential for initiating the assembly of the membrane attack complex (MAC). However, in an experimental model, mice lacking C6 still developed blistering disease, suggesting MAC formation (and thus C6) is not required for blister formation in this model.",
+    "categories": [
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:3920233",
+    "source_title": "Specific Inhibition of Complement Activation Significantly Ameliorates Autoimmune Blistering Disease in Mice",
+    "source_authors": "Sidonia Mihai et al.",
+    "source_year": null,
+    "snippet": "In the skin of EBA patients, deposition of different complement components, including MAC, are found with an incidence ranging from 40 to 100%. In addition, direct IF microscopy of perilesional skin showed linear deposits of MAC at the dermal-epidermal junction of mice injected with antibodies to murine COL7 (6). C6 is the   first among terminal complement components that associates with C5b to initiate the assembly of MAC. To study the implication of complement in tissue destruction via C5b-9, mice deficient in C6 and wild-type mice were injected with rabbit antibodies to murine COL7. Both C6-deficient and control mice developed widespread blistering disease (Figure 2), to a similar extent, indicating that MAC is dispensable for blister formation in this model."
+  },
+  {
+    "snippet_index": 30,
+    "quotes": [
+      "the skin from each group of C6 formulation was collected following incubation in the Franz diffusion cell for 4 h. Fluorescence images of the skin are presented in Fig. 6A, which show that skin samples of the free C6 group exhibited only a weak C6 fluorescence signal following incubation for 4 h. In contrast, there were enhanced C6 fluorescence signals in the skin of all groups with C6-loaded transfersomes. Furthermore, more pronounced C6 fluorescence was observed in both the epidermis and dermis of C6@STFs-CPP and C6@DTFs-CPP groups",
+      "suggesting that R5H3 peptide could facilitate the penetration of the carrier into the deep layers of the skin"
+    ],
+    "summary": "This snippet shows that C6 is used as a fluorescent marker to study skin penetration. C6 fluorescence is low when applied freely but significantly enhanced in the epidermis and dermis when delivered via transfersomes, particularly those modified with CPPs (cell-penetrating peptides), indicating improved penetration with these formulations.",
+    "categories": [
+      "function",
+      "markers",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:258357665",
+    "source_title": "Lycorine transfersomes modified with cell-penetrating peptides for topical treatment of cutaneous squamous cell carcinoma",
+    "source_authors": "Ying Li et al.",
+    "source_year": null,
+    "snippet": "The Franz diffusion cell system was used to assess the ability of each group of formulations to penetrate the skin separated from nude mice (Fig. 6). For the qualitative assay, the skin from each group of C6 formulation was collected following incubation in the Franz diffusion cell for 4 h. Fluorescence images of the skin are presented in Fig. 6A, which show that skin samples of the free C6 group exhibited only a weak C6 fluorescence signal following incubation for 4 h. In contrast, there were enhanced C6 fluorescence signals in the skin of all groups with C6-loaded transfersomes. Furthermore, more pronounced C6 fluorescence was observed in both the epidermis and dermis of C6@STFs-CPP and C6@DTFs-CPP groups, suggesting that R5H3 peptide could facilitate the penetration of the carrier into the deep layers of the skin. \n\nFor quantitative analysis of skin penetration in vitro, various LR (200 \u03bcg/mL) formulations (0.5 mL) were deposited on the skin surface of the donor chamber. The concentrations of LR were determined by sampling from the receptor chamber at 0.5, 1, 2, 4, 6, 8, 10, and 12 h. After calculating Q n , the LR transdermal penetration curve for each group was plotted (Fig. 6B). After sampling at 12 h, the cumulative permeation of LR per unit area (Q 8 ) in the LR-loaded transfersome groups (LR@STFs and LR@DTFs) was 7.33 and 13.02 \u03bcg/cm 2 , respectively, both significantly (p < 0.05 and p < 0.001, respectively) higher than that in the free LR group (1.71 \u03bcg/cm 2 ). This might be because the surfactants of transfersomes could change the crystal arrangement and increase the mobility of lipid molecules in the stratum corneum, thus enhancing the skin penetration of transfersomes. In addition, the high deformability of the transfersomes allowed them to squeeze between the stratum corneum and penetrate the skin, thus exhibiting enhanced penetration."
+  },
+  {
+    "snippet_index": 33,
+    "quotes": [
+      "At depths of 200 \u00b5m, the intensity of C6 drops to 50 AU and, as the depth increases, the intensity of the green channel continues to decrease, to about 20 AU at 400 \u00b5m (corresponding to the hair follicle isthmus). Beyond 500 \u00b5m, in depth (i.e., in the suprabulbar region), the intensity of C6 was low (<10AU), which seems to indicate that C6 does not accumulate in the deeper parts of the follicle.",
+      "In the non-follicle area (Figure 5A, Line 3), the C6 intensity profile was high to 200 \u00b5m in depth, but then decreased quickly, suggesting the accumulation of C6 in the epidermis."
+    ],
+    "summary": "This snippet uses C6 fluorescence to examine its accumulation in skin layers, indicating C6 mainly localizes in the epidermis and upper follicle but does not penetrate deeply into the hair follicle or deeper skin structures.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:233397126",
+    "source_title": "Dexamethasone-Loaded Lipomers: Development, Characterization, and Skin Biodistribution Studies",
+    "source_authors": "Eloy Pena-Rodr\u00edguez et al.",
+    "source_year": null,
+    "snippet": "At depths of 200 \u00b5m, the intensity of C6 drops to 50 AU and, as the depth increases, the intensity of the green channel continues to decrease, to about 20 AU at 400 \u00b5m (corresponding to the hair follicle isthmus). Beyond 500 \u00b5m, in depth (i.e., in the suprabulbar region), the intensity of C6 was low (<10AU), which seems to indicate that C6 does not accumulate in the deeper parts of the follicle. Regarding the intensity in the red color, corresponding to the presence of LRB, a different behavior can be observed. The profile of the center of the follicle (Figure 5A, Line 1) shows an intensity value around 50 AU from the skin surface to 700-800 \u00b5m deep. The profile of the border of the follicle (Figure 5A, Line 2) shows a similar profile, with the intensity of the LRB up to 700 \u00b5m being around 65 AU. Due to the narrowing of the follicle, the line is outside the follicle, around 1000 \u00b5m; however, near the follicle sheath (1200 \u00b5m), it can be seen that the intensity of the LRB was around 50 AU. In the non-follicle area (Figure 5A, Line 3), the C6 intensity profile was high to 200 \u00b5m in depth, but then decreased quickly, suggesting the accumulation of C6 in the epidermis. It can also be seen that the intensity of LRB outside the follicle at depths greater than 200 \u00b5m was clearly lower than that of the follicle lines. In the epidermis, a yellow color can be observed, corresponding to the co-localization of both fluorochromes in this region. In other words, LRB had accumulated throughout the follicle at depths greater than C6. \n\nIn Figure 5B, corresponding to another skin section of the permeation with C6-LRB-LPNCs, a section of the hair follicle can be seen. In this case, the section is not longitudinal but a cross-section."
+  },
+  {
+    "snippet_index": 34,
+    "quotes": [
+      "C6 was used to as a substitute for LA to prepare C6-loaded skin keratin liposomes (C6L) [31]. As shown in Figure 4a, the fluorescence signal in the C6L groups was first visualized in the hair follicles before it was distributed uniformly in the skin after 1 h. The fluorescence intensities and penetration rates in the C6L-treated skin were all significantly higher than those of the C6 group at all time points. After 1 h, C6 delivered by skin keratin liposomes can permeate into the entire hair follicle and deposit at the follicle's root. The result demonstrated that hair follicles were the main penetration pathways of the C6L.",
+      "Moreover, the C6L penetrated deeply into the skin in a time-dependent manner (Figure 4b). The fluorescence intensities of the C6L into the skin at 50 min and 60 min were significantly higher than those of the free C6."
+    ],
+    "summary": "This snippet describes C6 being used as a fluorescent marker to assess the penetration of skin keratin liposomes. C6 delivered by liposomes penetrates efficiently into hair follicles and deposits at the follicle root, with much higher rates than free C6, suggesting the key role of follicles as penetration pathways.",
+    "categories": [
+      "markers",
+      "function",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:248191723",
+    "source_title": "Mechanisms of Penetration Enhancement and Transport Utilizing Skin Keratine Liposomes for the Topical Delivery of Licochalcone A",
+    "source_authors": "Wenfeng Wu et al.",
+    "source_year": null,
+    "snippet": "In this part, C6 was used to as a substitute for LA to prepare C6-loaded skin keratin liposomes (C6L) [31]. As shown in Figure 4a, the fluorescence signal in the C6L groups was first visualized in the hair follicles before it was distributed uniformly in the skin after 1 h. The fluorescence intensities and penetration rates in the C6L-treated skin were all significantly higher than those of the C6 group at all time points. After 1 h, C6 delivered by skin keratin liposomes can permeate into the entire hair follicle and deposit at the follicle's root. The result demonstrated that hair follicles were the main penetration pathways of the C6L. \n\nMolecules 2022, 27, x FOR PEER REVIEW 6 of 13 root. The result demonstrated that hair follicles were the main penetration pathways of the C6L. Moreover, the C6L penetrated deeply into the skin in a time-dependent manner (Figure 4b). The fluorescence intensities of the C6L into the skin at 50 min and 60 min were significantly higher than those of the free C6. The LA fluorescence mainly accumulated into the hair follicles at different times [30]. This indicated that the hair follicle served as a drug reservoir for sustained drug release. These findings were consistent with the results of the in vitro penetration [32]. This further demonstrated that skin keratin liposomes are effective vehicles for LA delivery into the deeper skin layers through hair-follicle pathways."
+  },
+  {
+    "snippet_index": 35,
+    "quotes": [
+      "After topical treatment of tumor-bearing nude mice with various C6 formulations, microdistribution of the preparations in the skin and tumor tissue was evaluated. Free C6, C6@DTFs-CPP, free C6 Gel, C6@STFs-CPP Gel, and C6@DTFs-CPP Gel were applied to the skin directly above the tumor twice a day. The mice were sacrificed after 2 days of treatment, the skin layer and subcutaneous tumor were collected, and tissue sections were prepared. The tissue sections of mice in each group were examined using fluorescence microscopy (Fig. 7). The C6 signals in the skin layer and tumor area after treatment with free C6 Gel and C6@DTFs-CPP Gel were more robust than those after treatment with free C6 and C6@DTFs-CPP. This indicated that incorporating transfersomes into the gel enhanced their transdermal delivery capacity after topical treatment as a patch on the skin directly above the tumor with prolonged retention time.",
+      "The C6@ STFs-CPP and C6@DTFs-CPP Gel showed significantly enhanced C6 signals in the skin layer and tumor area compared to free C6 Gel, indicating that the CPP-modified transfersome formulations promoted skin and tumor penetration in vivo."
+    ],
+    "summary": "This snippet demonstrates that C6, when formulated in CPP-modified transfersomes and applied as a gel, achieves better skin and tumor tissue penetration than free C6. The formulation and delivery mechanism significantly affect C6's distribution and retention.",
+    "categories": [
+      "function",
+      "location",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:258357665",
+    "source_title": "Lycorine transfersomes modified with cell-penetrating peptides for topical treatment of cutaneous squamous cell carcinoma",
+    "source_authors": "Ying Li et al.",
+    "source_year": null,
+    "snippet": "Our in vitro findings indicated that the anticancer effect and skin penetration of LR-loaded CPP-modified transfersomes were superior to those of the unmodified counterparts. Therefore, the former carriers were evaluated in further in vivo studies. To improve the retention capacity of CPP-modified transfersomes on the skin of cSCC-bearing nude mice, carbomer gel was applied as a reservoir for loading them. The image of the prepared LR@DTFs-CPP Gel is shown in Additional file 4. \n\nAfter topical treatment of tumor-bearing nude mice with various C6 formulations, microdistribution of the preparations in the skin and tumor tissue was evaluated. Free C6, C6@DTFs-CPP, free C6 Gel, C6@STFs-CPP Gel, and C6@DTFs-CPP Gel were applied to the skin directly above the tumor twice a day. The mice were sacrificed after 2 days of treatment, the skin layer and subcutaneous tumor were collected, and tissue sections were prepared. The tissue sections of mice in each group were examined using fluorescence microscopy (Fig. 7). The C6 signals in the skin layer and tumor area after treatment with free C6 Gel and C6@DTFs-CPP Gel were more robust than those after treatment with free C6 and C6@DTFs-CPP. This indicated that incorporating transfersomes into the gel enhanced their transdermal delivery capacity after topical treatment as a patch on the skin directly above the tumor with prolonged retention time. The C6@ STFs-CPP and C6@DTFs-CPP Gel showed significantly enhanced C6 signals in the skin layer and tumor area compared to free C6 Gel, indicating that the CPP-modified transfersome formulations promoted skin and tumor penetration in vivo. \n\nAs a CPP, the skin penetration mechanism of the R5H3 peptide is presumably associated with the transcellular and paracellular pathways. For transcellular pathways, the R5H3 peptide (rich in positively charged arginine) strongly interacts with phosphate groups on both sides of the membrane."
+  }
+]

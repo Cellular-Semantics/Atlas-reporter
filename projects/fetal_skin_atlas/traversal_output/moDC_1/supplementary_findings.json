@@ -1,0 +1,20 @@
+{
+  "cell_type": "moDC_1",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "source_doi": "10.1126/science.aba6500",
+  "annotation": "moDC_1 (monocyte-derived dendritic cell subtype 1)",
+  "findings": [
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "14 states of mononuclear phagocytes identified in human skin, including monocyte-derived DCs (mo-DCs)"
+    },
+    {
+      "source": "Reynolds et al. (2021), Figure 3C",
+      "detail": "PAGA analysis revealed three branches of differentiation: LCs, myeloid DCs (DC1 and DC2) and monocyte-derived DCs (mo-DCs). moDC subtypes (moDC1, moDC2, moDC3) are part of the mo-DC branch"
+    },
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "In the epidermis, HLA-DR+CD1a-Lang-CD11c+CD1c+ cells are predominantly moDCs and correspond with non-LC like epidermal cells potent at stimulating T cell proliferation, pro-inflammatory cytokine production and transmission of HIV to CD4+ T cells"
+    }
+  ]
+}

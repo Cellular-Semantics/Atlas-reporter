@@ -1,0 +1,9 @@
+{
+  "proposed_label": "hair follicle placode cell",
+  "proposed_definition": "An epidermal cell that is part of the hair follicle placode, a focal thickening of the embryonic epidermal layer that initiates hair follicle formation. This cell state is specific to prenatal development and is absent in established adult hair follicles. It differentiates into hair matrix cells that express SHH and WNT10B.",
+  "parent_term": "CL:0002559 (hair follicle cell)",
+  "distinguishing_features": "Prenatal-specific epidermal thickening cell state, gives rise to hair matrix cells (SHH+), absent in adult cycling HFs",
+  "references": [
+    "DOI:10.1038/s41586-024-08002-x"
+  ]
+}

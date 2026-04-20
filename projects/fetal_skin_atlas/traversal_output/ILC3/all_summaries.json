@@ -1,0 +1,50 @@
+[
+  {
+    "source": "Gopee et al. (2024)",
+    "doi": "10.1038/s41586-024-08002-x",
+    "summary": "ILC3 and lymphoid tissue inducer (LTi) cells co-locate with pre-dermal condensate (pre-Dc) cells in prenatal skin. They interact through CXCL12-CXCR4 and CXCL12-DPP4 ligand-receptor signals, implicated in cellular adhesion and migration. ILC3 are part of the innate immune population present from early gestation. Pre-Dc cells co-located with dendritic and lymphoid cells in spatial analysis.",
+    "categories": ["location", "function", "cell-cell interactions"]
+  },
+  {
+    "source": "Suo et al. (2022)",
+    "doi": "10.1126/science.abo0510",
+    "summary": "ILC3 co-localize with B cell progenitors across multiple organs. In developing tissues, ILC3 along with LYVE1hi macrophages and NK cells are part of the cellular environment supporting B cell development. ILCs show differential abundance across gestation.",
+    "categories": ["development", "location", "function"]
+  },
+  {
+    "source": "Hernandez-Torres & Stehle (2022)",
+    "doi": "10.3389/fimmu.2022.1040624",
+    "summary": "Human CRTH2-CD117+ ILC3 can be detected in liver, intestine, spleen, skin, lung, and thymus at 12 PCW displaying LTi-related and non-LTi gene expression patterns. NKp44 expression was only observed from week 12 onward. Nrp-1 has been suggested to identify human LTi cells.",
+    "categories": ["development", "markers", "location"]
+  },
+  {
+    "source": "Liu et al. (2021)",
+    "doi": "10.1038/s41422-021-00529-2",
+    "summary": "Delineated spatiotemporal development of human fetal ILCs. ILC3 subsets include Pre-ILC3, LTi, and Non-LTi ILC3-related clusters. LTi-related ILC3 express LTA, LTB, and NRP1 and were preferentially located in lymphoid tissues and intestine. Non-LTi ILC3 express CD96, ITGAE, and CCR6.",
+    "categories": ["development", "markers", "location"]
+  },
+  {
+    "source": "Villanova et al. (2014)",
+    "doi": "10.1038/jid.2013.477",
+    "summary": "Characterized ILCs in human skin and blood. NKp44+ ILC3 are enriched in barrier tissues including skin. ILC3 subsets can be distinguished by NKp44 and NKp46 expression patterns.",
+    "categories": ["markers", "location"]
+  },
+  {
+    "source": "Cox et al. (2021)",
+    "doi": "10.3389/fimmu.2021.670471",
+    "summary": "ILC3 produce IL-17A and IL-17F for wound repair in skin. Activated ILC3 produce CCL3 to recruit monocytes, and may produce GM-CSF promoting re-epithelialization. IL-17A at low levels is pro-repair, promoting antimicrobial peptides and keratinocyte proliferation.",
+    "categories": ["function"]
+  },
+  {
+    "source": "Wei et al. (2025)",
+    "doi": "10.3389/fimmu.2025.1685633",
+    "summary": "ILC3 express RORgammat and secrete IL-17 and IL-22 with diverse functions in skin development. After skin injury, Notch1 signaling recruits ILC3 to the wound site. ILC3 contribute to hair follicle regeneration by regulating macrophage and stem cell activity through CCL3 and BMP signaling.",
+    "categories": ["function", "location"]
+  },
+  {
+    "source": "Domingues & Hepworth (2020)",
+    "doi": "10.3389/fimmu.2020.00116",
+    "summary": "ILC3 are among the first immune cells to colonize tissues during embryonic development. Fetal ILC3 (LTi) cluster with lymphoid tissue organizer cells to initiate lymphoid tissue formation. LTo cells express CXCL13, CCL19, CCL21 to recruit fetal ILC3, which express CXCR5, CCR7, and alpha4beta7.",
+    "categories": ["development", "function"]
+  }
+]

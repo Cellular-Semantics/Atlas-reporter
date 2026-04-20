@@ -1,0 +1,545 @@
+[
+  {
+    "snippet": "Vascular endothelial (VE)-cadherin is a well-recognized endothelial cell marker. One of its interacting partners, the TGF-\u03b2 receptor Alk1, is essential in endothelial cells for adult skin vasculature remodeling during hair homeostasis. Using single-cell transcriptomics, lineage tracing and gene targeting in mice, we characterize the cellular and molecular dynamics of skin VE-cadherin+ cells during hair homeostasis. We describe dynamic changes of VE-cadherin+ endothelial cells specific to blood and lymphatic vessels and uncover an atypical VE-cadherin+ cell population. The latter is not a predicted adult endovascular progenitor, but rather a non-endothelial mesenchymal perineurial cell type, which forms nerve encapsulating tubular structures that undergo remodeling during hair homeostasis. Alk1 acts in the VE-cadherin+ perineurial cells to maintain proper homeostatic nerve branching by enforcing basement membrane and extracellular matrix molecular signatures. Our work implicates the VE-cadherin/Alk1 duo, classically known as endothelial-vascular specific, in perineurial-nerve homeostasis. This has broad implications in vascular and nerve disease.",
+    "paper_id": "261703763",
+    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "authors": [
+      "Gopal Chovatiya",
+      "Kefei Li",
+      "Jonathan Li",
+      "Sangeeta Ghuwalewala",
+      "T. Tumbar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.45943160733175314,
+    "depth": 0,
+    "corpus_id": "CorpusId:261703763"
+  },
+  {
+    "snippet": "Red fonts indicate downregulated categories. j Cartoon summarizing cellular and functional dynamic changes in endothelial populations while they transit from telogen to anagen stage in vivo. If the Cdh5 + /Krt19 + cells were indeed skin EC vascular progenitors acting in the hair cycle, we reasoned they should eventually form mature vasculature. To test this, we employed lineage tracing using the Krt19-CreERT; tdTomato mice TM-induced at PD17 and stained the tissue sections at PD32 (anagen) and PD49 (telogen) with VE-cadherin, CD31 (Pecam1), CD34 and lymphatic capillary marker Lyve1 in n = 3 mice per stage. Excitingly, we did observe tdTomato + /VE-cadherin + tubular structures resembling vasculature at both hair cycle stages analyzed (Fig. 4g, h). However, to our surprise these structures never stained positive for mature EC markers CD31, CD34, and Lyve1 (Fig. 4i-k) in >45 tdTomato + tubular structures/staining/stage analyzed. Thus, our in vivo lineage tracing analysis did not support the computational prediction of Cdh5 + /Krt19 + cells as a potential EVP subpopulation that may contribute to mature vasculature formation in adult skin during the hair cycle. This left unresolved the identity and function of the Cdh5 + /Krt19 + population and of the tubular structures it formed. \n\nCdh5 + /Krt19 + cells encapsulate neurofilament-positive nerve bundles Recently, scRNA-seq of cells isolated from sciatic nerves were profiled and a Krt19 + population was reported as a putative perineurial population 37,38 , although in vivo validation was lacking. Perineurial cells are a specialized non-EC type that encases thick nerve bundles, contributing to the nerve basement membrane and to nerve structural integrity 39 .",
+    "paper_id": "261703763",
+    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "authors": [
+      "Gopal Chovatiya",
+      "Kefei Li",
+      "Jonathan Li",
+      "Sangeeta Ghuwalewala",
+      "T. Tumbar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.45721456679434785,
+    "depth": 0,
+    "corpus_id": "CorpusId:261703763"
+  },
+  {
+    "snippet": "Ample evidence pinpoints the phenotypic diversity of blood vessels (BVs) and site-specific functions of their lining endothelial cells (ECs). We harnessed single-cell RNA sequencing (scRNA-seq) to dissect the molecular heterogeneity of blood vascular endothelial cells (BECs) in healthy adult human skin and identified six different subpopulations, signifying arterioles, post-arterial capillaries, pre-venular capillaries, post-capillary venules, venules and collecting venules. Individual BEC subtypes exhibited distinctive transcriptomic landscapes associated with diverse biological pathways. These functionally distinct dermal BV segments were characterized by their unique compositions of conventional and novel markers (e.g., arteriole marker GJA5; arteriole capillary markers ASS1 and S100A4; pre-venular capillary markers SOX17 and PLAUR; venular markers EGR2 and LRG1), many of which have been implicated in vascular remodeling upon inflammatory responses. Immunofluorescence staining of human skin sections and whole-mount skin blocks confirmed the discrete expression of these markers along the blood vascular tree in situ, further corroborating BEC heterogeneity in human skin. Overall, our study molecularly refines individual BV compartments, whilst the identification of novel subtype-specific signatures provides more insights for future studies dissecting the responses of distinct vessel segments under pathological conditions.",
+    "paper_id": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": [
+      "Yuliang He",
+      "C. Tacconi",
+      "L. Dieterich",
+      "Jihye Kim",
+      "G. Restivo",
+      "Epameinondas Gousopoulos",
+      "N. Lindenblatt",
+      "M. Levesque",
+      "M. Claassen",
+      "M. Detmar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.445715590069892,
+    "depth": 0,
+    "corpus_id": "CorpusId:247731792"
+  },
+  {
+    "snippet": "hidden in less synchronous adult tissues. At anagen, the skin hypodermis significantly expands in size and becomes filled with engorging adipocytes and blood vessels that wrap around the downward growing hair follicle bulbs, while the lymphatic vessels also remodel their caliber and change their drainage capacity 14,15 (Fig. 1a). Alk1, the known VEcadherin interacting partner, acts in all skin ECs to regulate their migration and the vasculature remodeling during hair cycle 16 . Other skin structures, such as nerves and sub-cutaneous muscles, may also be remodeled during the hair cycle 17 . A thorough characterization of the cellular and functional heterogeneity of skin VE-cadherin + lineage organization during adult skin homeostasis is currently lacking. \n\nHere, we employed 10x Genomics scRNA-seq of sorted Cdh5-CreERT 2 ;tdTomato marked cells isolated from adult mouse skin at two hair cycle stages: quiescence (telogen) and growth (anagen). This data combined with genetic lineage tracing and Alk1 gene targeting in specific skin cell types allows us to refine and redefine the cellular and functional heterogeneity of the VE-cadherin + lineage during adult tissue homeostasis. We rule out a potential VE-cadherin + endovascular progenitor (EVP) that may be responsible for vasculature growth during hair cycle. Moreover, we firmly expand the VE-cadherin lineage attributes and the function of Alk1 from vascular-endothelial into other cell types and functions, including perineurial-nerve remodeling. This work opens new avenues of investigation into vascular and nerve remodeling functions in adult regenerative tissues, with potential implications to nerve and vascular diseases.",
+    "paper_id": "261703763",
+    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "authors": [
+      "Gopal Chovatiya",
+      "Kefei Li",
+      "Jonathan Li",
+      "Sangeeta Ghuwalewala",
+      "T. Tumbar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.4429951771622469,
+    "depth": 0,
+    "corpus_id": "CorpusId:261703763"
+  },
+  {
+    "snippet": "In the skin, dermis and hypodermis are richly supplied by blood and lymphatic vessels, mainly involved in thermoregulation, wound healing, and immune reactions. They can be subdivided into nutritional and thermoregulatory vessels, with the nutritional capillaries carrying less than 15% of the total of cutaneous blood flow. Particularly, the skin microvascular network is composed by capillaries, venules, arterioles, and some specialised arteriovenous shunts which act as sphincters, allowing the capillary circulation to be short-circuited when they are open. Skin capillaries are fenestrated, discontinuous, and surrounded by a simple basement membrane, whereas postcapillary venules have a multilayered basement membrane surrounded by pericytes, a type of mural cell [246]. These features allow the capillaries skin EC to form an interface between intravascular and extravascular compartment by exhibiting a selective barrier for diffusion of macromolecules and cells across the, so-called, skin-blood barrier (SBB) [247].\n\nIn health conditions, microvascular SBB EC express factor VIII, endothelial cell leukocyte adhesion molecule 1 (ELAM-1), and vascular cell adhesion molecule 1 (VCAM-1). In addition, SBB act as a secondary barrier against pathological agents and play part of the innate immune response during skin injury by expressing a range of receptors of the Toll-like family, such as TLR2, TLR4, and TLR9, which are involved in pathogen recognition [248].\n\nAnother particular function associated with EC heterogeneity in skin is related to the skin hyperpigmentation. A possible crosstalk between microvascular EC and epithelial and mesenchymal cells in the cutaneous compartment has been suggested. In physiological conditions, Endothelin-1 promotes skin pigmentation while transforming growth factor (TGF-) and Clusterin inhibit the pigmentation. All these factors are produced by dermal EC, indicating a role of them in modulating pigmentation process [249,250]. In accordance, interactions between dermal EC and melanocytes have also been observed. Kim and colleagues [",
+    "paper_id": "53212803",
+    "title": "Cellular and Molecular Heterogeneity Associated with Vessel Formation Processes",
+    "authors": [
+      "P. R. Castro",
+      "A. S. Barbosa",
+      "Jousie Michel Pereira",
+      "Hedden Ranfley",
+      "Mariane Felipetto",
+      "C. Gon\u00e7alves",
+      "I. Paiva",
+      "B. B. Berg",
+      "L. Barcelos"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.4308591166384918,
+    "depth": 0,
+    "corpus_id": "CorpusId:53212803"
+  },
+  {
+    "snippet": "The endothelia lining the lumen of arteries and veins exhibit substantial anatomical and functional differences. For instance, blood flow rates in arteries are much higher than in the venous circulation. Arterial and venous ECs thus encounter different levels of shear stress [33]. Moreover, their endothelia adopt a dissimilar organization of cell junctions to mediate intercellular adhesion and communication. While the junctions in arteries are much tighter than those in the venous vasculature, the latter manifests more loosely organized intercellular junctions to accommodate its functional requirements for leukocyte trafficking [33]. Benefiting from extensive embryonic studies on blood vascular endothelial lineage determination, an encyclopedic knowledge of the molecular specialization of vascular beds during arteriovenous differentiation has been acquired. In particular, the identities of arterial and venous ECs are marked by their differential expression of EFNB2 and its receptor EPHB4, even prior to the onset of blood circulation [36]. Since the phenotypic characteristics and functionality of distinct blood vascular compartments are finely maintained under homeostatic condition, we hereby exploited single-cell transcriptomic profiling of human dermal BVs to unveil different BEC subtypes present in adult skin and gradual changes in their marker expression patterns along the vascular tree. \n\nPost-capillary venules represent the primary sites for leukocyte trafficking and subsequently the extravasation into peripheral tissues. The characterization of the atypical chemokine receptor ACKR1 has favored the identification of intact venous vasculature in multiple murine tissues [34]. In fact, ACKR1 also represents an important molecule that distinguished the downstream venular compartments from arterioles and post-arterial capillaries in human skin, in line with recent findings that EC junctional ACKR1 was required for efficient unidirectional transmigration of neutrophils from the venular lumen during inflammation [37].",
+    "paper_id": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": [
+      "Yuliang He",
+      "C. Tacconi",
+      "L. Dieterich",
+      "Jihye Kim",
+      "G. Restivo",
+      "Epameinondas Gousopoulos",
+      "N. Lindenblatt",
+      "M. Levesque",
+      "M. Claassen",
+      "M. Detmar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.42275677494468544,
+    "depth": 0,
+    "corpus_id": "CorpusId:247731792"
+  },
+  {
+    "snippet": "To study the intricate vascular and nerve branching morphogenesis and patterning in adult skin, we focused on the ear skin as a model because of the simple and reproducible dissection for whole-mount immunohistochemical analysis. The outer and inner parts of the ear skin were peeled away from the intervening cartilage (Fig. 1A,B, Supplemental Fig. 1A,B). Our high-resolution whole-mount immunohistochemistry of the ear skin was performed with antibodies to platelet endothelial cell adhesion molecule (PECAM-1) as a pan-endothelial cell marker, neuron-specific class III \u03b2-tubulin (Tuj1) as a pan-neuronal marker, and \u03b1 smooth muscle actin (\u03b1SMA) as a VSMC marker. This method enabled us to visualize peripheral nerves and blood vessels in the deeper dermis (reticular dermis) using confocal microscopy. The outer skin has large-diameter nerve bundles (20-50 \u00b5m) aligned with remodeled large-diameter blood vessels covered with \u03b1SMA + VSMCs (20-60 \u00b5m) (Fig. 1C,D). In contrast, the inner skin has smaller-diameter nerve bundles (<20 \u00b5m) aligned with smaller-diameter but remodeled blood vessels covered with \u03b1SMA + VSMCs (<20 \u00b5m) (Supplemental Fig. 1C,D). These data suggest that the congruence of peripheral nerve and blood vessel branching pattern established during embryogenesis is maintained until adulthood. We decided to focus our further analysis on the outer ear skin because of the ease of dissection and clear nerve-vessel alignment throughout the skin.",
+    "paper_id": "3295687",
+    "title": "Whole-Mount Adult Ear Skin Imaging Reveals Defective Neuro-Vascular Branching Morphogenesis in Obese and Type 2 Diabetic Mouse Models",
+    "authors": [
+      "T. Yamazaki",
+      "Wenling Li",
+      "Ling Yang",
+      "Ping Li",
+      "Haiming Cao",
+      "S. Motegi",
+      "M. Udey",
+      "Elise Bernhard",
+      "Takahisa Nakamura",
+      "Y. Mukouyama"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.41938439444351955,
+    "depth": 0,
+    "corpus_id": "CorpusId:3295687"
+  },
+  {
+    "snippet": "Blood vessels are vital life-supporting channels penetrating almost every organ and tissue in the human body. Vascular endothelial cells (ECs), the inner lining of blood vessels, not only form the endothelial barrier to maintain vascular integrity, but also actively regulate vessel function, orchestrate the local immune response, and participate in the pathogenesis of immune-mediated inflammatory diseases (1,2). Increasing evidence demonstrates that ECs are not uniform cells, but rather have highly heterogeneous molecular and functional features along the vascular bed. Functional EC heterogeneity is particularly essential to regulating immune-cell adhesion and extravasation in many inflammatory settings, such as atherosclerosis, diabetes, and senescence (3,4). Recent studies and our previous work have revealed heterogeneity within skin ECs, which are clustered into different subtypes with specific locations and functions (5,6). However, the pathophysiologic role of endothelial heterogeneity in inflammatory dermatoses is currently unknown. \n\nDiverse EC subsets together mediate the dynamic regulation of the endothelial barrier, which is necessary for pathological progression (7). The endothelial glycocalyx is a dynamic structure of proteoglycans and glycosaminoglycans covering the inner wall of blood vessels, and together with cellular junctions of ECs, it forms the endothelial barrier (8). Endothelial glycocalyx acts as the first line of defense in limiting the pathological entry of immune cells into the skin and maintaining a homeostatic milieu for proper skin function (9). Endothelial glycocalyx integrity is affected by various factors, including angiocrine factors secreted by ECs (10,11), proteases and sheddases secreted by circulating cells (12), and mechanical and other chemical stresses within the bloodstream (13,14). EC-derived angiocrine factors tightly modulate the dynamic equilibrium of endothelial glycocalyx degradation and reconstruction.",
+    "paper_id": "257506233",
+    "title": "An IGFBP7hi endothelial cell subset drives T cell extravasation in psoriasis via endothelial glycocalyx degradation",
+    "authors": [
+      "Qingyang Li",
+      "S. Shao",
+      "Zhenlai Zhu",
+      "Jiaoling Chen",
+      "Junfeng Hao",
+      "Yaxing Bai",
+      "Bing Li",
+      "E. Dang",
+      "G. Wang"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.4147513747229216,
+    "depth": 0,
+    "corpus_id": "CorpusId:257506233"
+  },
+  {
+    "snippet": "The vascular endothelium is a single layer of flattened cells distributed in the inner layer of blood vessels. There are approximately 10 billion ECs in an adult, covering an area of more than 4000 m 2 and accounting for 1.5% of total body weight [1]. The luminal side of the endothelium directly contacts the blood or lymphatic fluid, while the basal side is connected to the subendothelial tissue by substrates (collagen, elastin, fibronectin, etc.) [2]. The unique anatomical location of the vascular endothelium allows it to not only serve as an important barrier separating the blood from tissues and organs but also integrate physical and neurohumoral signals from blood and surrounding tissues and organs to regulate vascular tone, coagulation, substance exchange, immune responses, and angiogenesis, which are important pathophysiological features of various diseases [3,4]. Under normal physiological conditions, ECs are in a long-term quiescent state, and when stimulated by ischemia, hypoxia, or inflammation, ECs exhibit migration, proliferation, and angiogenesis. In recent years, numerous studies have identified key roles of AA metabolism in vascular system lesions. In this article we discuss the most widely studied AAs and their role in the light of endothelial function.",
+    "paper_id": "248283291",
+    "title": "The Role of Amino Acids in Endothelial Biology and Function",
+    "authors": [
+      "Meng Li",
+      "Yanqing Wu",
+      "L. Ye"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.4124845015489502,
+    "depth": 0,
+    "corpus_id": "CorpusId:248283291"
+  },
+  {
+    "snippet": "are a network of thinly walled, small-caliber blood vessels surrounded by a perivascular layer of pericytes that together support exchange of oxygen, fluid, nutrients, and waste into and out of surrounding tissue.\n\nThroughout the vasculature, an inner endothelial layer forms the interface between the vessel lumen and the vessel wall. However, endothelial cells are not a homogeneous cell population: rather, endothelial cells of specialized vascular structures (that is, arteries, veins, and microvessels) express distinct molecular signatures 2 that reflect their individual location and function in the vascular tree. Moreover, acquisition of specialized endothelial cell signatures occurs prior to network formation 1,3 , suggesting that molecular specification of endothelial cells toward arterial or venous identities (termed arteriovenous specification) or other endothelial cell lineages (such as lymphatic or hemogenic) can drive the morphological reorganization of nascent vessel networks. Defects in vascular specification, proliferation, and remodeling can result in arteriovenous malformations (AVMs) that express both arterial and venous markers 4 and may even express markers of lymphatic vasculature 5 . Collectively, these data emphasize the importance of proper endothelial cell specification for normal development and function of the vascular system.",
+    "paper_id": "201157289",
+    "title": "Molecular regulation of arteriovenous endothelial cell specification",
+    "authors": [
+      "Jennifer S. Fang",
+      "K. Hirschi"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.41008733347088433,
+    "depth": 0,
+    "corpus_id": "CorpusId:201157289"
+  },
+  {
+    "snippet": "In fact, ETS1 is required for EC survival and angiogenesis, whereas MECOM specifically marks mature embryonic arteries [56,65]. It is worth noting that comparative analyses of transcriptomes and proteomes often reveal a certain extent of concordance and incongruence, as cellular functions are also tightly orchestrated by multi-layered processes of post-translational modifications [66]. Future studies are thus required to validate and examine the biological relevance of different subtype-specific transcriptional regulators in adult human skin. \n\nTwo recent studies have provided new insights into the expression profiles that underpin the heterogeneity and organotypicity of healthy human cutaneous BECs [67,68]. In line with their findings, our study provides a systematic characterization of blood vascular endothelial heterogeneity in healthy adult human skin at single-cell resolution, featuring a detailed investigation of the spatial localization of seven novel subtype-specific vascular markers via extensive immunofluorescence co-staining with conventional markers. We also noted that human adult skin samples in general exhibit strong autofluorescence in the green channel (e.g., at the epidermis and extracellular matrix; Figure S6A-D), hence special caution should be taken to avoid misinterpretation and we hope that the markers presented in this study could facilitate the discernment of dermal vessel subtypes, especially in longer fluorescence wavelengths. Moreover, our findings could, to some extent, be used to identify different blood vessel subtypes in other organs. For instance, many of our BEC subtype-specific genes (Figure 1C), including the conventional markers CXCL12, ACKR1 and SELP as well as the novel markers GJA5, S100A4 and PLAUR, are also found to be differentially expressed in the respective cluster in human lung [69]. This indicates a certain level of conservation in BEC heterogeneity among different organs. These findings thereby provide an important resource for the vascular biology community and may lay the ground for future studies dissecting the differential activation or transformation of individual BV compartments under pathological conditions.",
+    "paper_id": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": [
+      "Yuliang He",
+      "C. Tacconi",
+      "L. Dieterich",
+      "Jihye Kim",
+      "G. Restivo",
+      "Epameinondas Gousopoulos",
+      "N. Lindenblatt",
+      "M. Levesque",
+      "M. Claassen",
+      "M. Detmar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.40923397012190144,
+    "depth": 0,
+    "corpus_id": "CorpusId:247731792"
+  },
+  {
+    "snippet": ".87%), and pericytes (7%) were the main sources of CXCL12 in psoriasis lesions (revised Supplementary Fig. 7c, d).\n\nWe further find that CXC12 is increased in VE3 (vessel endothelial cell cluster 3) in psoriatic lesions compared to healthy controls (revised Supplementary Fig. 7c). VE3 was identified as the postcapillary venular cells regulating leukocyte adhesion and migration, with higher frequency in atopic dermatitis and psoriasis skin and with a reduction after treatment 106 . Moreover, we performed additional immunofluorescence co-staining of CXCL12 and the endothelial marker CD31 and fibroblast marker vimentin in psoriatic lesions and healthy skin (n = 6) to quantify CXCL12 + cells. The immunofluorescence staining further showed that CXCL12 was mainly expressed by cutaneous vascular endothelial cells and fibroblasts (revised Fig. 5d), with CXCR4 hi neutrophils in close proximity (revised Fig. 5e). Therefore, we have added this data to the Results and addressed this further in our revised Discussion.\n\nRevised Supplementary Fig. 7c, d. CXCL12 is mainly derived from vascular endothelium and fibroblasts in psoriatic lesions. (c-d) Expressions of CXCL12 in each cluster were analyzed from scRNA-seq analysis (https://developmental.cellatlas.io/diseased-skin) and the proportions were determined. The y-axis represents log-normalized expression.\n\nRevised Fig. 5d. (d) Representative immunofluorescence staining of CD31, Vimentin, and CXCL12 in inflamed psoriatic skin (n = 6). Scale bar = 50 \u00b5m, 20 \u00b5m. (e) Representative immunofluorescence staining of CD31, CXCR4, and CXCL12 in inflamed psoriatic skin (n = 6). Scale bar = 50 \u00b5m, 20 \u00b5m.\n\n3) The upregulation of surface CXCR4 after CX",
+    "paper_id": "262126195",
+    "title": "CREB1-driven CXCR4hi neutrophils promote skin inflammation in mouse models and human patients",
+    "authors": [
+      "Jiaoling Chen",
+      "Yaxing Bai",
+      "K. Xue",
+      "Zhiguo Li",
+      "Zhenlai Zhu",
+      "Qingyang Li",
+      "Chen Yu",
+      "Bing Li",
+      "S. Shen",
+      "P. Qiao",
+      "Caixia Li",
+      "Yixin Luo",
+      "Hongjiang Qiao",
+      "E. Dang",
+      "Wen Yin",
+      "J. Gudjonsson",
+      "G. Wang",
+      "S. Shao"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.40883567260818676,
+    "depth": 0,
+    "corpus_id": "CorpusId:262126195"
+  },
+  {
+    "snippet": "We identified CD157 as a marker with specific and crucial roles in the regulation of skin innate immunity. In particular, our work demonstrates that CD157 (1) is constitutively expressed at vascular blood (BEC), and lymphatic endothelial cells (LEC), in vitro and in vivo, (2) affect the levels of immune adhesion molecules, following stimulation with pro-inflammatory cytokines, (3) orchestrates adhesion of myeloid cells in vitro and in vivo. Specific aspects of this study require detailed consideration. \n\nInsufficient vascularization represents the major obstacle in the tissue engineering of large skin constructs. Rapid proliferation rate, stable endothelial phenotype, high vasculogenic potential, and appropriate interactions of EC with other cell types, during skin wound healing, in particular, immune cells, are requirements for a successful vascularization and skin regeneration process in vivo. Since CD157 has been reported to play a crucial role in the mouse neo-vascularization [25], we sought to investigate its role in human skin. \n\nWe detected, here, a relatively high expression of CD157 in human fetal and adult blood (BEC) and lymphatic endothelial cells (LEC) in the dermis. In this line, the study of Iba et al., also reported high expression of CD157 in a mouse skin endothelial cell side population (SP-EC), representing a vascular stem cell reservoir [25]. However, the data of both studies are not directly comparable, as we did not apply, in this study, the Hoechst efflux assay to specify the SP-EC of human skin [25]. \n\nFurther, Wakabayashi et al. identified CD157 expressing EC, exclusively, in largediameter vessels, in different mouse organs, but not in small-diameter capillaries [5]. Our work, however, confirmed the high expression level of CD157 in HDMEC lining smalldiameter capillaries of human skin in situ. This data comparison indicates that there is a strong variation in the expression of CD157, concerning different vessel types, in various organs of mice and humans.",
+    "paper_id": "247509310",
+    "title": "Expression Profile of CD157 Reveals Functional Heterogeneity of Capillaries in Human Dermal Skin",
+    "authors": [
+      "Katarzyna Michalak-Micka",
+      "Dominic R\u00fctsche",
+      "Lukas Johner",
+      "U. Moehrlen",
+      "T. Biedermann",
+      "Agnes S. Klar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.40762444044591445,
+    "depth": 0,
+    "corpus_id": "CorpusId:247509310"
+  },
+  {
+    "snippet": "Analysis of the skin vasculature of Vegfr2 Y1173F/+ mice revealed similar vessel density, pericyte coverage, levels of basement membrane and junctional markers as seen in the WT Vegfr2 +/+ vasculature (Supplemental Figure 3, E-J). Moreover, unprovoked, basal dermal leakage measured in mice with systemic circulation of fluorescent dextran or Evans blue, was similar between WT and Vegfr2 Y1173F/+ mice (Supplemental Figure 3, K-N), indicating that the stability of the vascular barrier in the absence of leakage agonists was unaffected by loss of pY1173 signaling. \n\nWe conclude that dermal vessel permeability and leakage of macromolecules in vivo depends on signaling downstream of the VEGFR2 Y1173 phosphosite. \n\nPLC\u03b3 signaling destabilizes the endothelial cell barrier. To pinpoint the contribution of PLC\u03b3 in the adult endothelium in vivo, Plcg1 fl/fl mice (29) were crossed with the Cdh5-CreERT2 strain to generate Plcg1 fl/fl ; Cdh5-CreERT2 mice. Cre-positive Plcg1 fl/fl mice, lacking expression of PLC\u03b3 specifically in ECs after tamoxifen administration, are referred to as Plcg1 iECKO mice (see Supplemental Figure 4, A and B for floxing efficiency in lung iECs). Plcg1 iECKO mice failed to respond to intradermal VEGFA administration with increased Evans blue extravasation, relative to cre-negative Plcg1 fl/ fl (WT) mice, demonstrating an essential role for endothelial PLC\u03b3 in regulation of vascular leakage in vivo (Figure 4, A and B). \n\nRegulation of vascular permeability by modulating endothelial adherens junction stability is a key in vivo response downstream of VEGFA/VEGFR2 activation. VE-cadherin is essential in stabilizing endothelial adherens junctions by forming homophilic complexes between ECs (30).",
+    "paper_id": "261430258",
+    "title": "Endothelial VEGFR2-PLC\u03b3 signaling regulates vascular permeability and antitumor immunity through eNOS/Src",
+    "authors": [
+      "Elin Sj\u00f6berg",
+      "M. Melssen",
+      "Mark Richards",
+      "Yindi Ding",
+      "Catarina Chanoca",
+      "Dongying Chen",
+      "E. Nwadozi",
+      "Sagnik Pal",
+      "Dominic T. Love",
+      "T. Ninchoji",
+      "M. Shibuya",
+      "M. Simons",
+      "A. Dimberg",
+      "L. Claesson-Welsh"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.40614030697476616,
+    "depth": 0,
+    "corpus_id": "CorpusId:261430258"
+  },
+  {
+    "snippet": "Along with the dynamic perfusion culture process, OECs lost immature markers like CD34 and acquired other endothelial markers, such as VE-cadherin. Our findings suggest that shear stress induced OECs differentiated into endothelial cells and increased the surface expression level of endothelial marker proteins by affecting those genes. VE-cadherin is a component of endothelial cell-to-cell adherens junctions, and it has a key role in the maintenance of vascular integrity. In the adult, it controls vascular permeability and inhibits unrestrained vascular growth [23]. Upregulation of VE-cadherin may be attributed to the formation of tube-like structures inside the pores of DBM scaffolds in SEM observation. Upregulation of VEGF demonstrated the contribution of OECs as a source of proangiogenic cytokines on 3D endothelial network formation. \n\nRecent study findings recognized that the concentration profile of extracellular growth factors, such as VEGF and basic fibroblast growth factor (bFGF), plays an important role in regulating the formation of 3D microvascular networks in vivo [24]. Our findings indicated that 3D microvessel formation in vitro can also be controlled by the concentration of extracellular growth factors generated by cells. \n\nIn contrast to common in vitro or in situ pre-vascularization strategies, our novel approach has the major advantage that microvessels can be seeded into porous scaffolds by dynamic perfusion culture of OECs within a short time period. This pre-vascularization method may be transferable to other 3D porous scaffold types, like tissue engineering skin scaffolds.",
+    "paper_id": "14633087",
+    "title": "Dynamic Perfusion Culture of Human Outgrowth Endothelial Progenitor Cells on Demineralized Bone Matrix In Vitro",
+    "authors": [
+      "Dixin Cai",
+      "Y. Quan",
+      "Peng-Ju He",
+      "Hong-bo Tan",
+      "Yong-qing Xu"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.4029951126105092,
+    "depth": 0,
+    "corpus_id": "CorpusId:14633087"
+  },
+  {
+    "snippet": "To generate a functional endothelial network, hDMEC were seeded into the preserved structures of the former blood vessels of the jejunum. The hDMEC were able to colonize the tubular structures and formed an interconnected and branched network (Fig. 4a). \n\nAfter 28 days of culture in the tailored bioreactor system, the formed re-endothelialized tubular structures were compared to the blood vessels of human skin by measuring the vessel diameters in the vascularized skin equivalent and the upper and lower plexus of human skin (Fig. 4b). The mean vessel diameter of the lower plexus (35 \u00b1 22 \u00b5m) was significantly lower than in the upper plexus of human skin (101 \u00b1 68 \u00b5m). Seeded vessels in the vascularized skin equivalent exhibited a broad diameter range with a significantly higher mean value (180 \u00b1 105 \u00b5m) than both vessel plexuses. The vascular structures were embedded in a dermal layer. Immunohistological staining revealed homogenously distributed vimentin positive cells demonstrating the presence of hDF. Moreover, cells exhibiting endothelial cell markers CD31 and vWF were only found in the vascular structures. In contrast, the cell-free BioVaSc showed no staining for the analyzed markers (Fig. 4c). and that the number of used animals is reduced to a minimum since other tissues are used for further research purposes. The developed model was composed of an epidermal and a dermal layer. Vessel structures were present within the dermal part. As the skin equivalent is based on a jejunal matrix, the general architecture of the microcirculation is expected to reflect the anatomy of the porcine gut (Yao et al., 2012). This is reflected in the histological analysis that demonstrated a significantly higher vessel diameter in the vascularized skin equivalent compared to human skin. However, the generated vascular architecture where a branched capillary network is supplied by a larger artery-vein-pair is also comparable to the architecture of skin (Braverman, 2000). In the vascularized skin equivalent, a capillary system connected a central artery and a corresponding vein. A single layer of hDMEC lined the vessel walls and formed a clear vessel lumen.",
+    "paper_id": "6188676",
+    "title": "A first vascularized skin equivalent as an alternative to animal experimentation.",
+    "authors": [
+      "F. Groeber",
+      "L. Engelhardt",
+      "Julia Lange",
+      "Szymon Kurdyn",
+      "F. F. Schmid",
+      "Christoph Ru\u0308cker",
+      "S. Mielke",
+      "H. Walles",
+      "J. Hansmann"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3998236386491787,
+    "depth": 0,
+    "corpus_id": "CorpusId:6188676"
+  },
+  {
+    "snippet": "Spatial proteomic analyses [100] may offer further insights into the localization and accumulation of mesoglycan components within specific skin compartments. \n\nWhile mesoglycan has primarily been studied for its systemic effects in vascular, fibrotic, and metabolic disorders like chronic venous insufficiency, thrombophlebitis, and diabetic microangiopathy [25,34,101], our findings extend its therapeutic relevance to human skin aging. Previous studies have shown mesoglycan's ability to enhance microcirculation, reduce endothelial dysfunction, and provide anti-inflammatory and cytoprotective effects [25]. In our study, we observed similar improvements in dermal vascular markers (CD31, VEGF-A, VEGFR2), mitochondrial function (PGC1\u03b1, MTCO-1, VDAC/porin), and antioxidant defenses (NRF-2, HO-1, PRDX). These findings suggest that mesoglycan acts through mechanisms common to both vascular and skin aging, supporting its potential as senotherapeutic agent in dermatology. Importantly, our study also addresses key gaps in the literature by demonstrating mesoglycan's impact on skin architecture, pigmentation, and cellular senescence-areas that have been largely unexplored in the mesoglycan literature. Enhancements in melanocyte-associated markers such as gp100, MITF, and c-KIT indicate potential applications for treating hyperpigmentation and uneven skin tone, expanding mesoglycan's potential beyond anti-aging to more cosmetic uses. Although improved pigmentation is very likely to reflect restoration of melanocyte function in aged epidermis [19,85,102,103] and will provide improved photoaging protection, future clinical trials will have to assess the possibility of cosmetically undesired hyperpigmentation. \n\nMesoglycan's ability to suppress aging-associated markers like p16 INK4A and p-S6 while upregulating proteins such as Lamin B1, SIRT1, and collagen 17A1 positions it as a promising candidate in the growing class of senotherapeutic agents.",
+    "paper_id": "279552567",
+    "title": "Preclinical Evidence That Mesoglycan Unfolds Complex Anti-Aging Effects in Photoaged Female Facial Skin",
+    "authors": [
+      "A. Zeltzer",
+      "A. Keren",
+      "Ralf Paus",
+      "A. Gilhar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.39763686647802265,
+    "depth": 0,
+    "corpus_id": "CorpusId:279552567"
+  },
+  {
+    "snippet": "We have previously reported that the Snail transgenic (Snail tg) mouse recapitulates many of the diagnostic features of SSc 23,24,25 . We thus investigated whether the Snail tg mouse skin could recapitulate the various aspects of vasculopathy associated with SSc. We undertook a morphometric analysis of the cutaneous vasculopathy in 2month-old adult Snail tg mice with the markers used to profile for human 26 and mouse 18,27 fibrotic skin. Staining of the back-skin of adult Snail tg mouse with the endothelial cell marker (PECAM-1, Platelet Endothelial Cell Adhesion Molecule) revealed that Snail tg skin vessels had increased morphological distortions in the form of altered vascular structures compared to its wild type counterpart (Figure 1A). Upon performing morphometric analysis, we observed a significant increase in vascular density (Figure 1B) and percentage of mean vessel area (Figure 1C) in the Snail tg skin compared to the wild type skin. Distorted vasculature is often an early driver of pathological neovascularization with hyperproliferation of endothelial cells 28 . \n\nConsistent with this, we observed a two-fold increase in the total number of endothelial cells and ~ 9-fold increase in the number of Ki67 positive endothelial cells in the Snail tg skin vasculature compared to wild type skin (Figure 1D, E and F). \n\nWe next analysed gene expression changes related to SSc vasculopathy. Endothelin-1, a marker of endothelial cell damage and dysfunction found in SSc skin 29 , 30 is increased in the Snail tg skin (Figure 1G). Another important factor that is upregulated in scleroderma patients is Platelet-derived growth factor B (PDGF-B) that is constitutively secreted from endothelial cells and affects both perivascular cells as well as activate surrounding fibroblasts 31 . PDGF-B is likewise upregulated in the whole skin and isolated dermal endothelial cells of Snail tg mouse compared to wildtype (Figure 1H).",
+    "paper_id": "264427115",
+    "title": "Angiopoietin-like protein 2 mediates vasculopathy-driven fibrogenesis in a mouse model of systemic sclerosis",
+    "authors": [
+      "D. Saha",
+      "Sujaya Thannimangalath",
+      "Neha Pincha",
+      "Ravi Kiran",
+      "Akshay Hegde",
+      "Sunny Kataria",
+      "Binita Dam",
+      "Ankita Hiwale",
+      "Venkatesh Ravula",
+      "Lekshmi Minikumari Rahulan",
+      "Neha Nigam",
+      "Neha Singh",
+      "V. Agarwal",
+      "P. Vemula",
+      "Colin Jamora"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3870798533523396,
+    "depth": 0,
+    "corpus_id": "CorpusId:264427115"
+  },
+  {
+    "snippet": "Our work re-defines the cellular and molecular heterogeneity of the essential VE-cadherin + lineage and its dynamics during homeostasis, firmly expanding its functions beyond classical endothelial vasculature remodeling 1,49 into perineurial cells and skin nerve maintenance. Most importantly, we uncovered a previously unrecognized VE-cadherin + non-endothelial perineurial cell population encapsulating the skin nerves, contributing to the nerve basement membrane, and remodeling into tubular-like structures along with the nerves during the hair cycle. We implicate Alk1, a known VE-cadherin interacting partner from the TGF-\u03b2 pathway, in the function of these perineurial cells. We show that Alk1 in the perineurium promotes production of ECM factors, deposition of nerve basement membrane, and maintenance of proper branching and organization of nerve bundles during the hair cycle. Importantly, VE-cadherin expression in a non-endothelial (perineurial) population and the implication of its endothelial partner Alk1 3,[46][47][48] , in homeostatic remodeling of nerve structures, changes the existing dogma in the field that considers these interacting factors as specific to the endothelium. Our result is supported by a decades-old, and since largely ignored VE-cadherin staining near skin nerves 41 . VEcadherin is a cell-cell contact molecule with specialized function in tubular structures that have been so-far thought of as exclusively vascular, until now. VE-cadherin is known to confer tubular EC structures flexibility, resilience, and permeability to gases, nutrients, and blood/immune cells [50][51][52] , and it'll be interesting in the future to examine its role in the perineurium. Given its known functions in endothelial cells, the identification of VE-cadherin in the non-endothelial dynamic perineurial tubes is intriguing.",
+    "paper_id": "261703763",
+    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "authors": [
+      "Gopal Chovatiya",
+      "Kefei Li",
+      "Jonathan Li",
+      "Sangeeta Ghuwalewala",
+      "T. Tumbar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3818181571993896,
+    "depth": 0,
+    "corpus_id": "CorpusId:261703763"
+  },
+  {
+    "snippet": "Interestingly, gene expression changes upon Alk1 loss are more similar in perineurial and blood vessel endothelial cells, when compared to lymphatic vessel ECs, perhaps attesting to the less dynamic nature of the latter. \n\nThat the VE-cadherin/Alk1 signaling axis, previously implicated exclusively in the endothelium 3,[46][47][48] , is present in the perineurial cells as well, may have important implications in understanding the known coordinated nerve/vasculature remodeling that has intrigued scientists for decades 58 . Nerve and vasculature structures are created by branching morphogenesis, and both structures share and respond to growth factor derived from the other compartment 58 . Moreover, they are both known to respond to signals from hair follicle epithelial cells during the hair cycle 15 . Perhaps a VE-cadherin + /Alk1 axis may be part of a general tissue network that drives the coordinated nerve/vasculature remodelling during homeostasis, with implications in vasculature and nerve disease. \n\nIn addition to shifting the dogma for the VE-cadherin + population by expanding its known heterogeneity, our data provides the first high resolution cellular and molecular characterization of vasculature dynamics in the homeostasis of a highly regenerative tissue. While many adult vascular systems are quiescent during homeostasis 59 , a few adult tissues besides skin 15 also employ dynamic vasculature changes in the absence of injury. The latter include menstruation in female endometrial homeostasis 60 , exercise in the skeletal muscle 61 , and the ongoing regeneration of lacteals in the intestine 62 . The synchronicity of hair follicle homeostatic growth and regression in skin facilitates the characterization of this system, illuminating the way for other adult regenerative tissues. Interestingly, we detected an anagen-specific increase in blood ECs at the expense of the lymphatic ECs, suggesting the two lineages are in opposite flux during skin homeostasis.",
+    "paper_id": "261703763",
+    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "authors": [
+      "Gopal Chovatiya",
+      "Kefei Li",
+      "Jonathan Li",
+      "Sangeeta Ghuwalewala",
+      "T. Tumbar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.37623428767196276,
+    "depth": 0,
+    "corpus_id": "CorpusId:261703763"
+  },
+  {
+    "snippet": "The results showed that the distance of autophagy-related LC3Bpositive cells from the microsphere core in 3:1:1 DNVUs was similar to that in 1:3:3 and 1:1:1 DNVUs. However, the number of autophagy-related LC3B-positive cells in 3:1:1 DNVUs was significantly higher than that in 1:3:3 and 1:1:1 DNVUs(Figure 7G,H). Given the significantly higher endothelial sprouting observed in 3:1:1 DNVUs, they were selected for further investigation. \n\nFibroblasts gradually accumulated within the GelMA, reinforcing the capillary-like structures formed by permeating HUVECs, with neural cells residing at the core (Figure 8A). Over time, a vascularized dermal-like tissue progressively extended into the bulk of the hydrogel. HDFs (VIM + cells) were also observed to migrate out of the DNVUs and invade the surrounding hydrogel, contributing to ECM production in the external space and stabilizing the formed microvascular structures. VIM + HDFs could proliferate in the extra-spheroid environment and produce abundant extracellular matrix proteins, including FN, COL IV, and COL I (Figure 8B). This reliable in vitro tool will enable a deeper understanding of the skin neurovascular system, shedding light on novel mechanisms behind neurovascularization and paving the way for new therapeutic avenues for treating large-volume hypoxic-ischemic flaps.",
+    "paper_id": "277819896",
+    "title": "Organoid\u2010Like Neurovascular Spheroids Promote the Recovery of Hypoxic\u2010Ischemic Skin Flaps Through the Activation of Autophagy",
+    "authors": [
+      "Junjin Jie",
+      "Jingyi Ju",
+      "Zhenxing Wang",
+      "Jun Chen",
+      "Lin-Ping Wu",
+      "Jiaming Sun"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3836285780935319,
+    "depth": 1,
+    "corpus_id": "CorpusId:277819896"
+  },
+  {
+    "snippet": "Moreover, since the coronary vasculature needs to be studied by sectioning the tissue the degree of stability of the endothelial cell-cell contacts cannot be visualized as for tissues that can be whole-mounted (skin, trachea, mesentery, diaphragm). However, we suggest that based on the reduced LV edema, the reduced fibrinogen/fibrin deposition and the changes in MPO levels and low neutrophil accumulation in the heart, combined with the reduced VE-cadherin phosphorylation on Y685, strongly indicate that the stringency of the vascular barrier is maintained in the mutant tissues including the heart, when exposed to VEGFA. In contrast, exposure to VEGFA leads to barrier breakdown in the wild-type tissues. \n\nThe data presented here complement and advance previous studies showing that VEGFA-induced phosphorylation of VEcadherin is reduced in Vegfr2 Y949F/Y949F lung ECs, correlating with reduced vascular leakage (Li et al., 2016). We now confirm this pattern in the heart, thus, VEGFA/VEGFR2 regulation of vascular permeability in the coronary vasculature appears to be similar to that in several other organs such as the brain, the pancreas, the heart and the skin. Moreover, as the vascular development, vascular density and morphology for example in the kidney and retina, was unaffected in the Vegfr2 Y949F/Y949F model (Li et al., 2016), it appears that limiting VEGFA-regulated permeability is dispensable for physiological angiogenesis and inflammation. Of note, infiltration of CD45+ cells was unaffected in the VEGFR2 mutant hearts (cf. Figure 3). In agreement, inflammatory cell infiltration in melanoma occurs to the same extent when comparing Vegfr2 Y949F/Y949F and wild-type mice (Li et al., 2016) and similarly, inflammation accompanying oxygeninduced retinopathy is unaffected by the VEGFR2 mutation (Smith et al., 2020).",
+    "paper_id": "220405072",
+    "title": "Suppressed Vascular Leakage and Myocardial Edema Improve Outcome From Myocardial Infarction",
+    "authors": [
+      "Xiujuan Li",
+      "B. Redfors",
+      "Miguel S\u00e1inz-Jaspeado",
+      "S. Shi",
+      "Pernilla Martinsson",
+      "Narendra Padhan",
+      "M. Scharin T\u00e4ng",
+      "J. Bor\u00e9n",
+      "Malin C. Levin",
+      "L. Claesson-Welsh"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.37257223599424505,
+    "depth": 1,
+    "corpus_id": "CorpusId:220405072"
+  },
+  {
+    "snippet": "Furthermore, the stimulation of VEGF has been shown to trigger a conformational change of FAK from an inactive to an active form, 57 which then interacts with VE-cadherin and catalyzes the phosphorylation of \u03b2-catenin, which is associated with VEcadherin. This process, in turn, leads to dissociation of \u03b2-catenin and \u03b1-catenin from VE-cadherin, resulting in the collapse of endothelial cell junctions. \n\nThe VEGF-VEGFR2-integrin \u03b1 v \u03b2 3 signaling pathway Integrin \u03b1\u03bd\u03b23 is expressed in human wound granulation tissue (angiogenic vascular tissue) but not in normal skin (quiescent vascular tissue), 58 suggesting that integrin \u03b1\u03bd\u03b23 plays a crucial role in angiogenesis. 0][61] Integrin \u03b1\u03bd\u03b23-deficient mice exhibit elevated levels of VEGFR2, enhanced blood vessel growth under pathological conditions, 62,63 and increased vascular permeability. 64 Inhibition of VEGFR2 activity using the neutralizing anti-Flk-1 antibody DC101 can eliminate VEGF-induced blood vessel permeability in \u03b23deficient mice. 64 These findings indicate that integrin \u03b1\u03bd\u03b23facilitated upregulation of VEGFR2 levels under these experimental conditions is responsible for VEGF-stimulated blood vessel permeability. Additionally, because integrins are also critical parts of the architecture of the cytoskeleton, blockade of integrin \u03b1v\u03b23 in mice can enhance vascular leakage, apparently because of the inhibition of endothelial cortical actin formation, 65 attributable to the side effect of blood vessel leakage when integrin \u03b1v\u03b23 activity is blocked. Moreover, because integrin interactions with matrix proteins such as fibronectin and vitronectin are important to the maintenance of endothelial barrier function, inhibition of integrin binding to these matrix proteins can lead to increased vascular permeability. 66",
+    "paper_id": "51955497",
+    "title": "Counterbalance: modulation of VEGF/VEGFR activities by TNFSF15",
+    "authors": [
+      "Gui-Li Yang",
+      "Lu-Yuan Li"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.37208300534963323,
+    "depth": 1,
+    "corpus_id": "CorpusId:51955497"
+  },
+  {
+    "snippet": "Importantly, previous investigations demonstrated that CD157 + endothelial cells (EC), derived from mouse liver, show enhanced clonal expansion, proliferation, and blood vessel formation, under physiological conditions after transplantation [5,19]. Thus, Wakabayashi et al. concluded that CD157-positive ECs' fraction in mice represent tissue-resident vascular EC stem cell population [5]. However, still, little is known about the specific function of human CD157 molecules on distinct human dermal microvascular endothelial cell (HD-MEC) subpopulations, including blood endothelial cells (BEC) and lymphatic endothelial cells (LEC). \n\nHerein, we report, for the first time, the specific expression pattern of CD157 on juvenile/adult (j/a) and fetal (f) skin HDMEC, as well as in bio-engineered prevascularized skin substitutes (vascDESS) in vivo. Moreover, CD157 + and CD157 \u2212 HDMEC were characterized with respect to their relative clonogenic and proliferative potential, as well as their inflammatory response, following cytokine treatment. Our analysis further revealed some unique immune cell-binding features for human HDMEC, positive for CD157, when compared to CD157 negative cells. Thus, our data imply heterogeneity among dermal EC subtypes, including diverse metabolic and immune functions.",
+    "paper_id": "247509310",
+    "title": "Expression Profile of CD157 Reveals Functional Heterogeneity of Capillaries in Human Dermal Skin",
+    "authors": [
+      "Katarzyna Michalak-Micka",
+      "Dominic R\u00fctsche",
+      "Lukas Johner",
+      "U. Moehrlen",
+      "T. Biedermann",
+      "Agnes S. Klar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3684543823257699,
+    "depth": 1,
+    "corpus_id": "CorpusId:247509310"
+  },
+  {
+    "snippet": "Cutaneous blood vessels contain a monolayer of endothelial cells (red) with a continous basement membrane (gray). Pericytes (blue) cover the blood vascular endothelial cells (BEC). In contrast, lymphatic endothelial cells (LEC, green) lack mural cells and have only a rudimentary basement membrane. They are linked to the extracellular matrix via fibrillincontaining anchoring filaments (green). The lumen of lymphatic vessels is significantly wider and the wall is thinner than that of blood vessels. BEC express VEGFR-1 and VEGFR-2, whereas LEC express VEGFR-2 and VEGFR-3. VEGF-A -which binds both VEGFR-1 and VEGFR-2 -can directly induce blood and lymphatic vascular remodeling. Chronic stimulation of the blood vasculature by VEGF-A leads to vascular remodeling, increased vascular permeability, increased expression of adhesion molecules and chronic skin inflammation. VEGF-C binds to VEGFR-3 and -after proteolytic processing -might also bind to VEGFR-2 (dashed arrows). In contrast, mouse VEGF-D (mVEGF-D) and VEGF-C156S are specific ligands for VEGFR-3. Stimulation of VEGFR-3 leads to lymphangiogenesis and increases lymphatic flow. An expanded network of lymphatic vessels inhibits chronic skin inflammation. Additional effects of lymphatic vessels -such as binding of chemokines (e.g. to the D6 chemokine receptor) -might contribute to the reduction of chronic inflammation. The number and size of CD31 + /LYVE-1 \u2212 blood vessels (red) is increased in lesional psoriatic skin vs. normal skin of healthy donors. CD31 + /LYVE-1 + lymphatic vessel size (green) is also increased in lesional skin of psoriasis patients. Nuclear staining is shown in blue (Hoechst); bar, 100 \u00b5m.",
+    "paper_id": "7417269",
+    "title": "The cutaneous vascular system in chronic skin inflammation",
+    "authors": [
+      "R. Huggenberger",
+      "M. Detmar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3616848592529028,
+    "depth": 1,
+    "corpus_id": "CorpusId:7417269"
+  },
+  {
+    "snippet": "Murine embryonic cells generally exhibit a strong ability to regenerate hair follicles de novo. However, the regenerative ability of adult human hair follicle stem cells often deteriorates even when the same approach is used 10 . Thus, further studies using human cells would be necessary to better replicate in vivo development and hair follicle microenvironment for clinical applications. Perivascular microenvironments are essential for the development and maintenance of stem cells in many tissues. During development, newly forming vessels approach the nascent follicles, and the vascular annulus is completely developed by birth 11 . Reconstituted hair follicles spontaneously form vascular loops around the upper bulge, recapitulating the pattern of normal hair-bearing skin 11 . Furthermore, hair growth and hair follicle size significantly correlate with perifollicular angiogenesis induced by vascular endothelial growth factor 12 . Thus, involvement of vascular endothelial cells in HFGs may be beneficial for replicating hair follicle development and improving de novo hair follicle generation. \n\nThis study aimed to determine whether vascular endothelial cells participate in the self-organization of HFGs and improve hair regeneration. We added human vascular endothelial cells to a suspension of human dermal papilla (DP) and mouse embryonic epithelial cells and allowed them to form an aggregate in a 96-well plate and custom-designed microwell array plate (Fig. 1). Localization of vascular endothelial cells in an HFG and their effects on follicular gene expression were assessed. Furthermore, we investigated the effects of vascular endothelial cells on hair regeneration in animal models. Our findings provided insight into in vitro self-organization and in vivo morphogenesis of hair follicles, thus providing a promising strategy for hair regenerative medicine.",
+    "paper_id": "231590498",
+    "title": "Hair follicle germs containing vascular endothelial cells for hair regenerative medicine",
+    "authors": [
+      "Tatsuto Kageyama",
+      "Y. Chun",
+      "J. Fukuda"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3606255950325381,
+    "depth": 1,
+    "corpus_id": "CorpusId:231590498"
+  },
+  {
+    "snippet": "On histological analysis, the mean vessel densities of area II and area III was noticeably higher in the IA group than in the control group (Fig. 3A). The skin flaps in the IA treatment group exhibited higher neovascularization and less necrosis than those in the control group (Fig. 3A). According to the H&E staining results, mean vessel densities (MVDs) were 18.50 \u00b1 1.75 and 8.3 \u00b1 1.14, respectively (Fig. 3B; p < 0.001). Endothelial cells frequently express the marker CD31. Therefore, the quantity of CD31-positive vessels directly reflects the MVDs of the two groups. In the multiterrory skin flap model, a higher number of CD31-positive vessels was found in the IA group compared to the control group (16.33 \u00b1 2.24 vs. 9.17 \u00b1 1.14, p < 0.05), as shown in Fig. 3D. \n\nPrevious research showed that choke vessels at the boundaries of the vascular territory provide blood and nutrients to the distal part of the skin flaps. On the seventh postoperative day, a whole-body angiography was carried out to visualize the vascular networks in the skin flap. The flaps in the two groups had clear, well-perfused microvessels. The microvascular imaging ranges of area II and area  III were substantially wider in the IA group than in the control group. The findings demonstrated that the iliolumbar artery had expanded its territory to serve surrounding vascular territories in the IA group as compared to the control group, resulting in greater dilatation of the choke vessel zone I. According to angiography, the choke vessels in zone II of the IA group were significantly dilated, which was not observed in the control group. However, there was a noticeable improvement in the dilation of choke arteries in the second choke zone (Fig. 3E). \n\nIA raises VEGF protein levels in skin flaps. The second choking zone was collected and a Western blot analysis was performed to investigate the impact of IA on VEGF protein expression. In comparison to the control group, both IA groups had significantly higher levels of VEGF protein (Fig. 3F; P < 0.001).",
+    "paper_id": "259522997",
+    "title": "Itaconic acid induces angiogenesis and suppresses apoptosis via Nrf2/autophagy to prolong the survival of multi-territory perforator flaps",
+    "authors": [
+      "Gaojie Luo",
+      "Zekun Zhou",
+      "Chengxiong Huang",
+      "Peiyao Zhang",
+      "Nianzhe Sun",
+      "Wei Chen",
+      "Chao-hua Deng",
+      "Xiaoxiao Li",
+      "Panfeng Wu",
+      "Ju-yu Tang",
+      "Li-ming Qing"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3580176631932441,
+    "depth": 1,
+    "corpus_id": "CorpusId:259522997"
+  },
+  {
+    "snippet": "After being stored at 37 degrees, the gelatin melted and left behind hollow tubes with attached endothelial cells. The subsequent perfusion of vascular channels led to a twofold decrease in their diffusional permeability coefficient when compared to that of bare vessels, demonstrating the establishment of an intact barrier by endothelial cells. The structural maturation of the skin model was confirmed by evaluating functional markers representative of each skin layer: filaggrin and keratin expression by the epidermis, collagen type 1 deposition by the dermis, and the storage of lipid droplets by the subcutaneous layer of the skin. \n\nLiu et al utilized a 3D bioprinting approach to produce a vascularized model of the inflammatory skin disease, atopic dermatitis (AD) [142]. The vascularized dermis was deposited by extruding the bioink composed of a mixture of neonatal fibroblasts, pericytes, and iPSC-derived endothelial cells encapsulated within a fibrin hydrogel. As a result, endothelial cells organized into defined non-perfusable tubular structures establishing vascular sprouting. The biomimicry of vascularized skin models was demonstrated by their capability to capture key clinical features of AD, including hyperplasia and upregulated expression of proinflammatory cytokines. In addition, the bioprinted AD model was exploited as a high-throughput drug-screening platform, recapitulating not only the therapeutic effects of JAK (Janus kinase) inhibitors on restoring the barrier function and the morphology of the skin, but also their side effects on destabilizing the dermal vasculature. Overall, this study indicated the significance of vasculature in enhancing the fidelity of skin disease models for testing new anti-inflammatory skin drug formulations.",
+    "paper_id": "270970847",
+    "title": "Skin-on-a-chip technologies towards clinical translation and commercialization",
+    "authors": [
+      "Nilufar Ismayilzada",
+      "Ceren Tarar",
+      "Sajjad Rahmani Dabbagh",
+      "Begum K. Tokyay",
+      "Sara Asghari Dilmani",
+      "Emel Sokullu",
+      "H. Abaci",
+      "S. Tasoglu"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3549836692901515,
+    "depth": 1,
+    "corpus_id": "CorpusId:270970847"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "label": "Venules",
+  "resolved_names": [
+    "Venules",
+    "venule endothelial cells",
+    "venular endothelial cells"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) identifies 'Venules' as a fine-grained endothelial cell annotation in prenatal skin. These are the most differentiated cells along the venular differentiation pathway from early endothelial cells, via postcapillary venules (Fig. 4d, Extended Data Fig. 10a-c). Venular cells express PLVAP as a characteristic venular marker."
+}

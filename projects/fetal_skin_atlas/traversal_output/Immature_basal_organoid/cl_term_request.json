@@ -1,0 +1,9 @@
+{
+  "proposed_label": "immature basal keratinocyte",
+  "proposed_definition": "A basal cell of the epidermis that is in an early developmental state, present in embryonic skin from approximately 7 post-conception weeks in humans. This cell expresses basal keratins (KRT5, KRT14) but lacks the molecular markers of mature basal keratinocytes (e.g., DPYSL2 expression) and is associated with early mesenchymal-epithelial signalling during hair follicle initiation. It decreases in abundance after 11 post-conception weeks during the transition from embryonic to fetal skin.",
+  "parent_term": "CL:0002187 (basal cell of epidermis)",
+  "distinguishing_features": "Immature developmental state, presence in embryonic (7-11 PCW) but not fetal skin, lacks DPYSL2 and POSTN expression that define mature basal subtypes",
+  "references": [
+    "DOI:10.1038/s41586-024-08002-x"
+  ]
+}

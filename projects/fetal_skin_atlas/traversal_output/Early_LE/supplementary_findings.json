@@ -1,0 +1,11 @@
+{
+  "cell_type": "Early LE",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Supplementary Table 3 provides DEGs used to annotate Early LE in prenatal skin. Listed as fine-grained annotation under broad 'Lymphatic endothelium' category.",
+    "abbreviation": "LE is defined as 'lymphatic endothelium' in the Fig. 1 legend.",
+    "temporal_presence": "Endothelial cells including lymphatic endothelium are present throughout gestation (Fig. 1c, Extended Data Fig. 1d, Supplementary Table 4).",
+    "microenvironment": "Endothelial cells co-locate with macrophages in neurovascular microenvironments (Fig. 1d)."
+  }
+}

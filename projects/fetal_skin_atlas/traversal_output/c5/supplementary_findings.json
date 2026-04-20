@@ -1,0 +1,43 @@
+{
+  "markers": [
+    {
+      "gene": "CCL18",
+      "evidence_type": "DE analysis (cluster marker)",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "gene": "MARCO",
+      "evidence_type": "DE analysis (cluster marker)",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "gene": "RNASE2",
+      "evidence_type": "DE analysis (cluster marker)",
+      "source_table": "Supplementary Table 2"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Cluster c5 identified as enriched for CCL18+ macrophages in adult samples.",
+      "category": "Annotation",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "finding": "c5 described as corresponding to a subset of alveolar macrophages.",
+      "category": "Functional annotation",
+      "source_table": "Supplementary Table 2"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Cluster c5 marker genes: CCL18, MARCO, RNASE2.",
+      "source_file": "Supplementary Table 2",
+      "context": "Cluster annotations and top marker genes for adult lung cell atlas"
+    },
+    {
+      "quote": "c5 (CCL18+ macrophages)",
+      "source_file": "Supplementary Table 2",
+      "context": "Cluster names and descriptions table"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "cell_type_label": "Neutrophil2",
+  "working_definition": "A neutrophil subpopulation identified in fetal skin by scRNA-seq, representing one of two transcriptionally distinct neutrophil states (Neutrophil1 and Neutrophil2) in the prenatal skin atlas. The specific marker genes distinguishing this population from Neutrophil1 are defined in the atlas supplementary tables.",
+  "searches_performed": [
+    "neutrophil (CL, OLS4)"
+  ],
+  "best_match": {
+    "cl_term": "neutrophil",
+    "cl_id": "CL:0000775",
+    "cl_definition": "Any of the immature or mature forms of a granular leukocyte that in its mature form has a nucleus with three to five lobes connected by slender threads of chromatin, and cytoplasm containing fine inconspicuous granules and stainable by neutral dyes.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000775 'neutrophil' is the closest CL term but is broader than the atlas annotation 'Neutrophil2'. The atlas defines two distinct neutrophil subpopulations, but the Cell Ontology does not currently have terms for transcriptionally defined neutrophil subtypes in fetal tissue. A broad match is appropriate as Neutrophil2 is a subtype of neutrophil.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000775 (neutrophil) as a broad match. The atlas-specific Neutrophil2 subtype does not have a dedicated CL term.",
+  "new_term_needed": false
+}

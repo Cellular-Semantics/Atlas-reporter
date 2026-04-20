@@ -1,0 +1,11 @@
+{
+  "label": "Schwann cells/Schwann precursors",
+  "resolved_names": [
+    "Schwann cell",
+    "Schwann cell precursor"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "This mixed population includes both immature Schwann cells and Schwann cell precursors. CL:0002573 (Schwann cell) is a broad match."
+}

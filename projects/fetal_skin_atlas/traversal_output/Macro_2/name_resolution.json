@@ -1,0 +1,10 @@
+{
+  "label": "Macro_2",
+  "resolved_names": [
+    "Macrophage (adult skin)"
+  ],
+  "scope": "adult",
+  "tissue_context": "Skin",
+  "confidence": "medium",
+  "evidence": "The paper primarily describes cell atlases from prenatal (fetal) and adult human skin, and uses cluster labels such as 'Macro_1', 'Macro_2', etc. In Extended Data Table 4 (supplementary material) and Figure 2 of the main text, clusters 'Macro_1' and 'Macro_2' are mapped to 'macrophage' types in the context of adult skin. However, cluster granular annotation (e.g., 'inflammatory macrophage') is not clearly given for 'Macro_2'; it is referred to generically as an adult skin macrophage state."
+}

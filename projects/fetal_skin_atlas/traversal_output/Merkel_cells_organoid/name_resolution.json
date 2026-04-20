@@ -1,0 +1,10 @@
+{
+  "label": "Merkel cells",
+  "resolved_names": [
+    "Merkel cell"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Merkel cells are mechanoreceptor cells of the epidermis. CL:0000242 is an exact match."
+}

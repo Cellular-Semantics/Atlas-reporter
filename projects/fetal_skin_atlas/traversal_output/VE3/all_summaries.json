@@ -1,0 +1,36 @@
+[
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "If the Cdh5 + /Krt19 + cells were indeed skin EC vascular progenitors acting in the hair cycle, we reasoned they should eventually form mature vasculature. To test this, we employed lineage tracing using the Krt19-CreERT; tdTomato mice TM-induced at PD17 and stained the tissue sections at PD32 (anagen) and PD49 (telogen) with VE-cadherin, CD31 (Pecam1), CD34 and lymphatic capillary marker Lyve1 in n = 3 mice per stage. Excitingly, we did observe tdTomato + /VE-cadherin + tubular structures resembling vasculature at both hair cycle stages analyzed (Fig. 4g, h). However, to our surprise these structures never stained positive for mature EC markers CD31, CD34, and Lyve1 (Fig. 4i-k) in >45 tdTomato + tubular structures/staining/stage analyzed. Thus, our in vivo lineage tracing analysis did not support the computational prediction of Cdh5 + /Krt19 + cells as a potential EVP subpopulation that may contribute to mature vasculature formation in adult skin during the hair cycle. This left unresolved the identity and function of the Cdh5 + /Krt19 + population and of the tubular structures it formed.",
+      "Cdh5 + /Krt19 + cells encapsulate neurofilament-positive nerve bundles"
+    ],
+    "summary": "The snippet discusses Cdh5+/Krt19+ (VE-cadherin+ and Krt19+) cells, which were predicted to be vascular endothelial progenitors like VE3. However, lineage tracing showed these cells form tubular structures that do not express mature endothelial cell markers and instead encapsulate nerve bundles, suggesting a non-endothelial, possibly perineurial role.",
+    "categories": [
+      "function",
+      "markers",
+      "location",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:261703763",
+    "source_title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "source_authors": "Gopal Chovatiya et al.",
+    "source_year": null,
+    "snippet": "Red fonts indicate downregulated categories. j Cartoon summarizing cellular and functional dynamic changes in endothelial populations while they transit from telogen to anagen stage in vivo. If the Cdh5 + /Krt19 + cells were indeed skin EC vascular progenitors acting in the hair cycle, we reasoned they should eventually form mature vasculature. To test this, we employed lineage tracing using the Krt19-CreERT; tdTomato mice TM-induced at PD17 and stained the tissue sections at PD32 (anagen) and PD49 (telogen) with VE-cadherin, CD31 (Pecam1), CD34 and lymphatic capillary marker Lyve1 in n = 3 mice per stage. Excitingly, we did observe tdTomato + /VE-cadherin + tubular structures resembling vasculature at both hair cycle stages analyzed (Fig. 4g, h). However, to our surprise these structures never stained positive for mature EC markers CD31, CD34, and Lyve1 (Fig. 4i-k) in >45 tdTomato + tubular structures/staining/stage analyzed. Thus, our in vivo lineage tracing analysis did not support the computational prediction of Cdh5 + /Krt19 + cells as a potential EVP subpopulation that may contribute to mature vasculature formation in adult skin during the hair cycle. This left unresolved the identity and function of the Cdh5 + /Krt19 + population and of the tubular structures it formed. \n\nCdh5 + /Krt19 + cells encapsulate neurofilament-positive nerve bundles Recently, scRNA-seq of cells isolated from sciatic nerves were profiled and a Krt19 + population was reported as a putative perineurial population 37,38 , although in vivo validation was lacking. Perineurial cells are a specialized non-EC type that encases thick nerve bundles, contributing to the nerve basement membrane and to nerve structural integrity 39 ."
+  },
+  {
+    "snippet_index": 11,
+    "quotes": [],
+    "summary": "VE3 corresponds to a population of postcapillary venular endothelial cells that regulate leukocyte adhesion and migration, are more frequent in atopic dermatitis and psoriasis, and show increased CXCL12 expression in psoriatic lesions.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:262126195",
+    "source_title": "CREB1-driven CXCR4hi neutrophils promote skin inflammation in mouse models and human patients",
+    "source_authors": "Jiaoling Chen et al.",
+    "source_year": null,
+    "snippet": ".87%), and pericytes (7%) were the main sources of CXCL12 in psoriasis lesions (revised Supplementary Fig. 7c, d).\n\nWe further find that CXC12 is increased in VE3 (vessel endothelial cell cluster 3) in psoriatic lesions compared to healthy controls (revised Supplementary Fig. 7c). VE3 was identified as the postcapillary venular cells regulating leukocyte adhesion and migration, with higher frequency in atopic dermatitis and psoriasis skin and with a reduction after treatment 106 . Moreover, we performed additional immunofluorescence co-staining of CXCL12 and the endothelial marker CD31 and fibroblast marker vimentin in psoriatic lesions and healthy skin (n = 6) to quantify CXCL12 + cells. The immunofluorescence staining further showed that CXCL12 was mainly expressed by cutaneous vascular endothelial cells and fibroblasts (revised Fig. 5d), with CXCR4 hi neutrophils in close proximity (revised Fig. 5e). Therefore, we have added this data to the Results and addressed this further in our revised Discussion.\n\nRevised Supplementary Fig. 7c, d. CXCL12 is mainly derived from vascular endothelium and fibroblasts in psoriatic lesions. (c-d) Expressions of CXCL12 in each cluster were analyzed from scRNA-seq analysis (https://developmental.cellatlas.io/diseased-skin) and the proportions were determined. The y-axis represents log-normalized expression.\n\nRevised Fig. 5d. (d) Representative immunofluorescence staining of CD31, Vimentin, and CXCL12 in inflamed psoriatic skin (n = 6). Scale bar = 50 \u00b5m, 20 \u00b5m. (e) Representative immunofluorescence staining of CD31, CXCR4, and CXCL12 in inflamed psoriatic skin (n = 6). Scale bar = 50 \u00b5m, 20 \u00b5m.\n\n3) The upregulation of surface CXCR4 after CX"
+  }
+]

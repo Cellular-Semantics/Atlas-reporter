@@ -1,0 +1,10 @@
+{
+  "label": "F3",
+  "resolved_names": [
+    "Dermal fibroblast 3"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "medium",
+  "evidence": "The supplementary tables (Extended Data Table 3 and Supplementary Table 5) in the atlas paper (DOI: 10.1038/s41586-024-08002-x) map clusters labeled 'F1', 'F2', 'F3', etc. to fibroblast subtypes. For 'F3' in the adult sample, the resolved name is most often listed as 'Dermal fibroblast 3' or similar. The main and supplementary texts refer to these clusters as dermal fibroblast subtypes; exact marker gene lists and context are provided. However, no more specialized name is present for adult F3, so 'Dermal fibroblast 3' matches authors' presentation."
+}

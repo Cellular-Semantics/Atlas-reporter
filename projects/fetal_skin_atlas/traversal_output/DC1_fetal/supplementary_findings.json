@@ -1,0 +1,13 @@
+{
+  "cell_type": "DC1 (cDC1)",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Supplementary Table 3 provides DEGs used to annotate DC1 in prenatal skin. DC1 is listed as a fine-grained immune cell annotation.",
+    "spatial_co_location": "Extended Data Fig. 1f: DC1 co-locates with pre-dermal condensate (pre-Dc) cells and other immune cells (DC2, LTi, ILC3) in Visium spatial transcriptomics analysis, as shown by positive Pearson correlation coefficients between per-spot normalised cell type abundances.",
+    "temporal_presence": "Innate immune cells, including dendritic cells, were present from early gestation. Immune cells were present throughout gestation (Fig. 1c, Extended Data Fig. 1d, Supplementary Table 4).",
+    "peer_review_note": "Peer review file confirms: 'the rare conventional dendritic cells (cDC1), that account for 0.1-1% of all leukocytes in adult human blood and skin, are essential for cross-priming and cross-presentation to cytotoxic T cells'.",
+    "adult_fibroblast_interactions": "Peer review notes that adult fibroblasts show interactions with DC1/2, whereas prenatal fibroblasts do not, suggesting immune-fibroblast interactions differ between prenatal and adult skin.",
+    "microenvironment": "DC1 was predicted to co-locate with pre-dermal condensate cells based on correlation analyses (Fig. 1d and Extended Data Fig. 1e,f), placing dendritic cells in a niche associated with early hair follicle formation."
+  }
+}

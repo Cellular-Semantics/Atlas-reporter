@@ -1,0 +1,525 @@
+{
+  "CorpusId:267114291": {
+    "title": "Hybrid lineages of CD4+ T cells: a handbook update",
+    "authors": [
+      "Antonio Bensussen",
+      "J. Torres-Magallanes",
+      "E. \u00c1lvarez-Buylla",
+      "Elena Roces De \u00c1lvarez\u2010Buylla"
+    ],
+    "year": 2024,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2024.1344078",
+    "pmid": "38312841",
+    "url": "https://www.semanticscholar.org/paper/a3bcd7c07966dc50dc5e96f31536110aa21d46f6",
+    "abstract": "CD4+ T lymphocytes have been classified into several lineages, according to their gene expression profiles and their effector responses. Interestingly, recent evidence is showing that many lineages could yield hybrid phenotypes with unique properties and functions. It has been reported that such hybrid lineages might underlie pathologies or may function as effector cells with protection capacities against molecular threats. In this work, we reviewed the characteristics of the hybrid lineages rep",
+    "tldr": "The characteristics of the hybrid lineages reported in the literature are reviewed, in order to identify the expression profiles that characterize them and the markers that could be used to identify them."
+  },
+  "CorpusId:229176627": {
+    "title": "SLAMF7 and IL-6R define distinct cytotoxic versus helper memory CD8+ T cells",
+    "authors": [
+      "L. Loyal",
+      "Sarah Warth",
+      "K. J\u00fcrchott",
+      "Felix M\u00f6lder",
+      "Christos Nikolaou",
+      "N. Babel",
+      "M. Nienen",
+      "S. Durlanik",
+      "Regina Stark",
+      "B. Kruse",
+      "M. Frentsch",
+      "R. Sabat",
+      "K. Wolk",
+      "A. Thiel"
+    ],
+    "year": 2020,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-020-19002-6",
+    "pmid": "33311473",
+    "url": "https://www.semanticscholar.org/paper/c6d7d1b1fad4c799e78201d02af978550258217e",
+    "abstract": "The prevailing \u2018division of labor\u2019 concept in cellular immunity is that CD8+ T cells primarily utilize cytotoxic functions to kill target cells, while CD4+ T cells exert helper/inducer functions. Multiple subsets of CD4+ memory T cells have been characterized by distinct chemokine receptor expression. Here, we demonstrate that analogous CD8+ memory T-cell subsets exist, characterized by identical chemokine receptor expression signatures and controlled by similar generic programs. Among them, Tc2",
+    "tldr": "It is demonstrated that distinct memory CD8+\u2009T cell subsets phenotypically inhabit CD4-T cell like populations including some with helper-like characteristics, revealing that the conventional view of CD4+ andCD8+ T cell capabilities and functions in human health and disease needs to be revised."
+  },
+  "CorpusId:278715497": {
+    "title": "A Transcriptomic Atlas of Healthy Human Skin Links Regional Identity to Inflammatory Disease",
+    "authors": [
+      "Sahiti Marella",
+      "Rachael Bogle",
+      "Jennifer Fox",
+      "L. Tsoi",
+      "Xianying Xing",
+      "Yiqian Gu",
+      "J. Kirma",
+      "M. Sarkar",
+      "Vincent van Drongelen",
+      "Benjamin Klein",
+      "Jeff H. Kozlow",
+      "Paul W. Harms",
+      "Katherine A. Gallagher",
+      "S.Chakravarthy Naik",
+      "Vito W. Rebecca",
+      "Bogi Andersen",
+      "Mio Nakamura",
+      "J. Kahlenberg",
+      "R. Modlin",
+      "A. Billi",
+      "J. Gudjonsson"
+    ],
+    "year": 2025,
+    "venue": "bioRxiv",
+    "doi": "10.1101/2025.05.10.653184",
+    "pmid": "40463060",
+    "url": "https://www.semanticscholar.org/paper/b0efad5522b30037ec342a6195a031267736175c",
+    "abstract": "Human skin is not a uniform organ but a mosaic of anatomically distinct niches, with each site finely tuned to unique environmental demands and immune pressures. Yet, the molecular determinants that define these regional identities and their relationship to site-specific vulnerability to inflammatory disease remain poorly understood. Here, we generate a high-resolution single-cell atlas of human skin, profiling 274,834 cells from 96 healthy samples across 7 anatomically distinct sites (acral, ar",
+    "tldr": "A high-resolution single-cell atlas of human skin is generated, uncovering how local immune-stromal crosstalk governs tissue homeostasis and underpins anatomical susceptibility to distinct inflammatory diseases such as systemic lupus erythematosus, atopic dermatitis, and psoriasis."
+  },
+  "CorpusId:232087588": {
+    "title": "Tissue\u2013Resident Memory T Cells in Chronic Inflammation\u2014Local Cells with Systemic Effects?",
+    "authors": [
+      "A. A. K. Samat",
+      "Jolijn van der Geest",
+      "S. Vastert",
+      "J. van Loosdregt",
+      "F. van Wijk"
+    ],
+    "year": 2021,
+    "venue": "Cells",
+    "doi": "10.3390/cells10020409",
+    "pmid": "33669367",
+    "url": "https://www.semanticscholar.org/paper/28d5ec384c8a17afc217f38f5509fdd109e89af8",
+    "abstract": "Chronic inflammatory diseases such as rheumatoid arthritis (RA), Juvenile Idiopathic Arthritis (JIA), psoriasis, and inflammatory bowel disease (IBD) are characterized by systemic as well as local tissue inflammation, often with a relapsing-remitting course. Tissue\u2013resident memory T cells (TRM) enter non-lymphoid tissue (NLT) as part of the anamnestic immune response, especially in barrier tissues, and have been proposed to fuel chronic inflammation. TRM display a distinct gene expression profil",
+    "tldr": "Memory T cells with TRM characteristics have been identified in blood from patients with chronic inflammatory disease, leading to the hypothesis that TRM egress from inflamed tissue as well, and circulating \u2018ex-TRM\u2019 may provide a vital diagnostic tool in the form of biomarkers."
+  },
+  "CorpusId:259195937": {
+    "title": "Skin-infiltrating T cells display distinct inflammatory signatures in lichen planus, bullous pemphigoid and pemphigus vulgaris",
+    "authors": [
+      "Jona Schinner",
+      "T. Cunha",
+      "Johannes U Mayer",
+      "S. H\u00f6rster",
+      "P. Kind",
+      "D. Didona",
+      "C. Keber",
+      "M. Hertl",
+      "T. Worzfeld",
+      "H. Juratli"
+    ],
+    "year": 2023,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2023.1203776",
+    "pmid": "37415985",
+    "url": "https://www.semanticscholar.org/paper/bfcb865b6df095294f8d0dac83a2da468634a6b8",
+    "abstract": "Introduction We here thought to dissect the inflammatory signature in lesions of three skin disorders, which show a common adaptive immune response against autoantigens of the skin but are characterized by diverging clinical phenotypes. Pemphigus vulgaris (PV) and bullous pemphigoid (BP) are type-2-dependent, IgG autoantibody-driven blistering disorders of mucous membranes and skin, which target desmoglein (Dsg)3 and bullous pemphigoid (BP)180, respectively. In contrast, lichen planus (LP) is a ",
+    "tldr": "The findings in inflammatory skin infiltrates clearly show a predominant type 1 signature in LP in contrast to a preponderance of type 2 T cells in PV and BP, and strongly suggest that different inflammatory cell signatures drive evolving clinically diverse phenotypes of LP, PV andBP despite common target antigens of the skin."
+  },
+  "CorpusId:275067877": {
+    "title": "Single-Cell Profiling Reveals Global Immune Responses During the Progression of Murine Epidermal Neoplasms",
+    "authors": [
+      "Xiying Fan",
+      "Tonya M Brunetti",
+      "Kelsey Jackson",
+      "Dennis R. Roop"
+    ],
+    "year": 2025,
+    "venue": "Cancers",
+    "doi": "10.3390/cancers17081379",
+    "pmid": "40282557",
+    "url": "https://www.semanticscholar.org/paper/996f11a493dcfa0208fbeaa22dd3d8ab7c2a6fd0",
+    "abstract": "Simple Summary The immune system plays a crucial role in either fighting or supporting tumor growth. In this study, we analyzed immune cells in control skins and skin tumors using single-cell RNA sequencing. We identified 15 different immune cell types and observed significant changes in their composition during skin tumor progression. Macrophages became the dominant immune cells in tumors and acted as key regulators of immune interactions, while other immune cells, including Langerhans cells an",
+    "tldr": "It is found that tumors activated specific signaling pathways, including Jak2/Stat3, and increased immune-suppressing cells like Tregs and M2 macrophages, which help tumors evade the immune system."
+  },
+  "CorpusId:190885353": {
+    "title": "Skin Acute Wound Healing: A Comprehensive Review",
+    "authors": [
+      "L. Ca\u00f1edo-Dorantes",
+      "Mara Ca\u00f1edo-Ayala"
+    ],
+    "year": 2019,
+    "venue": "International Journal of Inflammation",
+    "doi": "10.1155/2019/3706315",
+    "pmid": "31275545",
+    "url": "https://www.semanticscholar.org/paper/711ad076ffdc18ef517e678a5dada530dcf16fee",
+    "abstract": "Experimental work of the last two decades has revealed the general steps of the wound healing process. This complex network has been organized in three sequential and overlapping steps. The first step of the inflammatory phase is an immediate response to injury; primary sensory neurons sense injury and send danger signals to the brain, to stop bleeding and start inflammation. The following target of the inflammatory phase, led by the peripheral blood mononuclear cells, is to eliminate the pathog",
+    "tldr": "This review provides present day information regarding the status of the participant cells, extracellular matrix, cytokines, chemokines, and growth factors, as well as their interactions with the microenvironment during the wound healing process."
+  },
+  "CorpusId:246445817": {
+    "title": "Reduced Bordetella pertussis-specific CD4+ T-Cell Responses at Older Age",
+    "authors": [
+      "Eleonora E. Lambert",
+      "Inonge van Twillert",
+      "L. Beckers",
+      "M. Poelen",
+      "W. Han",
+      "D. Pieren",
+      "C. V. van Els"
+    ],
+    "year": 2022,
+    "venue": "Frontiers in Aging",
+    "doi": "10.3389/fragi.2021.737870",
+    "pmid": "35822011",
+    "url": "https://www.semanticscholar.org/paper/32d5c08f94dc547b809693099cf4268e266420e6",
+    "abstract": "Pertussis, a human-specific respiratory infectious disease caused by the Gram-negative bacterium Bordetella pertussis (Bp), remains endemic with epidemic years despite high vaccination coverage. Whereas pertussis vaccines and natural infection with Bp confer immune protection, the duration of protection varies and is not lifelong. Recent evidence indicates a considerable underestimation of the pertussis burden among older adults. Whereas the impact of increasing age on Bp-specific humoral immuni",
+    "tldr": "The findings show that the magnitude and functionality of the Bp-specific memory CD4+ T-cell pool decrease at older age, which is suggested to contribute to the burden of pertussis in older adults."
+  },
+  "CorpusId:246297212": {
+    "title": "Skin and heart allograft rejection solely by long-lived alloreactive TRM cells in skin of severe combined immunodeficient mice",
+    "authors": [
+      "Qianchuan Tian",
+      "Zhaoqi Zhang",
+      "L. Tan",
+      "Fan Yang",
+      "Yanan Xu",
+      "Yinan Guo",
+      "D. Wei",
+      "Chang-Le Wu",
+      "Peng Cao",
+      "J. Ji",
+      "Wei Wang",
+      "Xubiao Xie",
+      "Yong Zhao"
+    ],
+    "year": 2022,
+    "venue": "Science Advances",
+    "doi": "10.1126/sciadv.abk0270",
+    "pmid": "35080985",
+    "url": "https://www.semanticscholar.org/paper/d9fa444d5b907462011732abb06434a9649b18b6",
+    "abstract": "Whether induced tissue-resident memory T (TRM) cells in nonlymphoid organs alone can mediate allograft rejection is unknown. By grafting alloskin or heart into severe combined immunodeficient or Rag2KO mice in which a piece of induced CD4+ and/or CD8+ TRM cell\u2013containing MHC-matched or syngeneic skin was transplanted in advance, we addressed this issue. The induced CD4+ TRM cells in the skin alone acutely rejected alloskin or heart grafts. RNA-seq analysis showed that induced CD4+ TRM cells in s",
+    "tldr": "This study provides strong evidence supporting the hypothesis that long-lived alloreactive TRM cells resident in other organs/tissues substantially contribute to organ allograft rejection."
+  },
+  "CorpusId:145877307": {
+    "title": "Th9 Cells as a New Player in Inflammatory Skin Disorders.",
+    "authors": [
+      "Z. Jadali"
+    ],
+    "year": 2019,
+    "venue": "Iranian Journal of Allergy, Asthma and Immunology",
+    "doi": "10.18502/IJAAI.V18I2.915",
+    "pmid": "31066248",
+    "url": "https://www.semanticscholar.org/paper/cb28317198866833575aa3e8e6f9abab904302a7",
+    "abstract": "CD4+T cells are composed of different subpopulations that differ in developmental pathways, surface markers, and their products. Among the catalog of these cells is Th9 cell subset that has a great capacity of Interleukin (IL)-9 production. They could be involved in the pathogenic or protective immune responses. Therefore, it is important to know how Th9 cells and cytokines influence the function of the human immune system as multitasking machinery, both in isolation or after the interaction wit",
+    "tldr": "The physiological and pathophysiological functions of Th9 and its cytokines under normal conditions and inflammatory skin disorders are reviewed."
+  },
+  "CorpusId:14968951": {
+    "title": "Schistosoma mansoni Infection in Ugandan Men Is Associated with Increased Abundance and Function of HIV Target Cells in Blood, but Not the Foreskin: A Cross-sectional Study",
+    "authors": [
+      "J. Prodger",
+      "A. Ssemaganda",
+      "A. Ssetaala",
+      "P. Kitandwe",
+      "E. Muyanja",
+      "J. Mpendo",
+      "A. Nanvubya",
+      "Mathias Wambuzi",
+      "L. Nielsen",
+      "N. Kiwanuka",
+      "R. Kaul"
+    ],
+    "year": 2015,
+    "venue": "PLoS Neglected Tropical Diseases",
+    "doi": "10.1371/journal.pntd.0004067",
+    "pmid": "26335139",
+    "url": "https://www.semanticscholar.org/paper/c8ebcfa117533b5a9a7b543953e0d18600488379",
+    "abstract": "Background Schistosoma mansoni infection has been associated with an increased HIV prevalence in humans and SHIV incidence in primate models. We hypothesized that immune activation from this gastrointestinal mucosa infection would increase highly HIV-susceptible CD4 T cell subsets in the blood and the foreskin through common mucosal homing. Methodology/Principal Findings Foreskin tissue and blood were obtained from 34 HIV- and malaria-uninfected Ugandan men who volunteered for elective circumcis",
+    "tldr": "Schistosoma mansoni induced changes in T cell immunology mediated through the common mucosal immune system are not likely to increase HIV susceptibility in the foreskin."
+  },
+  "CorpusId:248927186": {
+    "title": "The Regulatory-T-Cell Memory Phenotype: What We Know",
+    "authors": [
+      "J. Khantakova",
+      "A. Bulygin",
+      "Sergey V. Sennikov"
+    ],
+    "year": 2022,
+    "venue": "Cells",
+    "doi": "10.3390/cells11101687",
+    "pmid": "35626725",
+    "url": "https://www.semanticscholar.org/paper/250280fa7f78463106d69edba7f30651e27328bf",
+    "abstract": "In immunology, the discovery of regulatory T (Treg) cells was a major breakthrough. Treg cells play a key role in pregnancy maintenance, in the prevention of autoimmune responses, and in the control of all immune responses, including responses to self cells, cancer, infection, and a transplant. It is currently unclear whether Treg cells are capable of long-term memory of an encounter with an antigen. Although the term \u201cimmunological memory\u201d usually means an enhanced ability to protect the body f",
+    "tldr": "The memory of the suppressive activity of Treg cells helps to avoid the state of generalized immunosuppression that may result from the second activation of the immune system."
+  },
+  "CorpusId:274654313": {
+    "title": "Skin autonomous antibody production regulates host\u2013microbiota interactions",
+    "authors": [
+      "I. Gribonika",
+      "Victor I. Band",
+      "Liang Chi",
+      "P. J. Perez-Chaparro",
+      "Verena M. Link",
+      "Eduard Ansaldo",
+      "Cihan Oguz",
+      "Djenet Bousbaine",
+      "Michael A. Fischbach",
+      "Yasmine Belkaid"
+    ],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08376-y",
+    "pmid": "39662506",
+    "url": "https://www.semanticscholar.org/paper/331a2ef2895086f8b692dd8a64aa73c5eef8c656",
+    "abstract": "The microbiota colonizes each barrier site and broadly controls host physiology1. However, when uncontrolled, microbial colonists can also promote inflammation and induce systemic infection2. The unique strategies used at each barrier tissue to control the coexistence of the host with its microbiota remain largely elusive. Here we uncover that, in the skin, host\u2013microbiota symbiosis depends on the ability of the skin to act as an autonomous lymphoid organ. Notably, an encounter with a new skin c",
+    "tldr": "A study reveals that the skin acts as an autonomous lymphoid organ, producing antibodies to control the local biomass of the microbiota and protect against systemic infection, maintaining homeostasis between the host and its microbiota."
+  },
+  "CorpusId:227334677": {
+    "title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "authors": [
+      "M. Dhariwala",
+      "Dhuvarakesh Karthikeyan",
+      "Kimberly S. Vasquez",
+      "S. Farhat",
+      "Antonin Weckel",
+      "Keyon Taravati",
+      "Elizabeth G. Leitner",
+      "S. Clancy",
+      "M. Pauli",
+      "M. Piper",
+      "Jarish N. Cohen",
+      "J. Ashouri",
+      "Margaret M. Lowe",
+      "M. Rosenblum",
+      "T. Scharschmidt"
+    ],
+    "year": 2020,
+    "venue": "Cell Reports Medicine",
+    "doi": "10.1016/j.xcrm.2020.100132",
+    "pmid": "33294857",
+    "url": "https://www.semanticscholar.org/paper/d534f82b4e2d279bfd9455e0c52158941661e78e",
+    "abstract": "Summary Lymphocytes in barrier tissues play critical roles in host defense and homeostasis. These cells take up residence in tissues during defined developmental windows, when they may demonstrate distinct phenotypes and functions. Here, we utilized mass and flow cytometry to elucidate early features of human skin immunity. Although most conventional \u03b1\u03b2 T (Tconv) cells in fetal skin have a naive, proliferative phenotype, a subset of CD4+ Tconv and CD8+ cells demonstrate memory-like features and ",
+    "tldr": "Mass and flow cytometry is utilized to elucidate early features of human skin immunity and identify features of prenatal skin lymphocytes that may have key implications for understanding antigen and allergen encounters in utero and in infancy."
+  },
+  "CorpusId:269713521": {
+    "title": "Heterogeneity and plasticity of tissue-resident memory T cells in skin diseases and homeostasis: a review",
+    "authors": [
+      "Guomu Liu",
+      "Ziyue Wang",
+      "Shanshan Li"
+    ],
+    "year": 2024,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2024.1378359",
+    "pmid": "38779662",
+    "url": "https://www.semanticscholar.org/paper/4a9fe262ff7d805416d65a7b88faf87f6c1d3a8e",
+    "abstract": "Skin tissue-resident memory T (Trm) cells are produced by antigenic stimulation and remain in the skin for a long time without entering the peripheral circulation. In the healthy state Trm cells can play a patrolling and surveillance role, but in the disease state Trm cells differentiate into various phenotypes associated with different diseases, exhibit different localizations, and consequently have local protective or pathogenic roles, such as disease recurrence in vitiligo and maintenance of ",
+    "tldr": "New insights are provided into the role of skin Trm cells in the treatment of autoimmune skin diseases, infectious skin diseases, and tumors and the recycling and migration potential of the Trm cell progeny are provided."
+  },
+  "CorpusId:236953497": {
+    "title": "Role of Th22 Cells in Human Viral Diseases",
+    "authors": [
+      "Jianguang Gong",
+      "Huifang Zhan",
+      "Yan Liang",
+      "Qiang He",
+      "D. Cui"
+    ],
+    "year": 2021,
+    "venue": "Frontiers in Medicine",
+    "doi": "10.3389/fmed.2021.708140",
+    "pmid": "34434945",
+    "url": "https://www.semanticscholar.org/paper/5440d0e6057a3ef950b45ed89f48272637815ca0",
+    "abstract": "Naive CD4+ T cells can differentiate into different cell subsets after receiving antigen stimulation, which secrete corresponding characteristic cytokines and thereby exert biological effects in various diseases. Th22 cells, a novel subset of CD4+ T cells, are different from Th1, Th2, Th17, and Treg cell subsets, which have been discovered in recent years. They can express CCR4, CCR6, and CCR10 molecules and secrete IL-22, IL-13, and TNF-\u03b1. They are not able to secrete IL-17, IL-4, and interfero",
+    "tldr": "IL-22 is considered as a major effector molecule of Th22 cells whose functions and mechanisms of regulating cell differentiation have been constantly improved and will provide novel insight for the prevention and treatment of viral infection in human."
+  },
+  "CorpusId:232291632": {
+    "title": "Rapid Isolation of Functional ex vivo Human Skin Tissue-Resident Memory T Lymphocytes",
+    "authors": [
+      "Weijie Du",
+      "Daniela Lenz",
+      "Ralf K\u00f6hler",
+      "Erping Zhang",
+      "Carla Cend\u00f3n",
+      "Jinchan Li",
+      "M. Massoud",
+      "J. Wachtlin",
+      "Juliane Bodo",
+      "A. Hauser",
+      "A. Radbruch",
+      "Jun Dong"
+    ],
+    "year": 2021,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.624013",
+    "pmid": "33828548",
+    "url": "https://www.semanticscholar.org/paper/b376b945c406ff99e129a1b46fb6359ec607cf71",
+    "abstract": "Studies in animal models have shown that skin tissue-resident memory T (TRM) cells provide enhanced and immediate effector function at the site of infection. However, analyses of skin TRM cells in humans have been hindered by the lack of an optimized isolation protocol. Here, we present a combinatorial strategy-the 6-h collagenase IV digestion and gentle tissue dissociation \u2013 for rapid and efficient isolation of skin TRM cells with skin tissue-specific immune features. In comparison with paired ",
+    "tldr": "A combinatorial strategy-the 6-h collagenase IV digestion and gentle tissue dissociation \u2013 is presented for rapid and efficient isolation of skin TRM cells with skin tissue-specific immune features in comparison with paired blood circulating memory T cells."
+  },
+  "CorpusId:139105305": {
+    "title": "Immunopathogenesis of Pediatric Localized Scleroderma",
+    "authors": [
+      "K. Torok",
+      "Suzanne C. Li",
+      "Heidi Jacobe",
+      "S. Taber",
+      "A. Stevens",
+      "F. Zulian",
+      "T. Lu"
+    ],
+    "year": 2019,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2019.00908",
+    "pmid": "31114575",
+    "url": "https://www.semanticscholar.org/paper/2003a8150e12ae760b15bc8a7d0b9a3167685391",
+    "abstract": "Localized scleroderma (LS) is a complex disease characterized by a mixture of inflammation and fibrosis of the skin that, especially in the pediatric population, also affects extracutaneous tissues ranging from muscle to the central nervous system. Although developmental origins have been hypothesized, evidence points to LS as a systemic autoimmune disorder, as there is a strong correlation to family history of autoimmune disease, the presence of shared HLA types with rheumatoid arthritis, high ",
+    "tldr": "Interestingly, the immune phenotype in pediatric LS resembles to some extent the healthy adult cellular phenotype, possibly supporting accelerated maturation of the immune system in LS."
+  },
+  "CorpusId:2091957": {
+    "title": "Host- and microbe determinants that may influence the success of S. aureus colonization",
+    "authors": [
+      "M. Johannessen",
+      "J. E. Sollid",
+      "A. Hanssen"
+    ],
+    "year": 2012,
+    "venue": "Front. Cell. Inf. Microbio.",
+    "doi": "10.3389/fcimb.2012.00056",
+    "pmid": "22919647",
+    "url": "https://www.semanticscholar.org/paper/3ceeac7903e915ff1f2ffe89041180fcaf486908",
+    "abstract": "Staphylococcus aureus may cause serious skin and soft tissue infections, deep abscesses, endocarditis, osteomyelitis, pneumonia, and sepsis. S. aureus persistently colonizes 25\u201330% of the adult human population, and S. aureus carriers have an increased risk for infections caused by the bacterium. The major site of colonization is the nose, i.e., the vestibulum nasi, which is covered with ordinary skin and hair follicles. Several host and microbe determinants are assumed to be associated with col",
+    "tldr": "Colonization is a complex interplay between the bacteria and its host, and an increased molecular understanding of these factors is needed."
+  },
+  "CorpusId:7735055": {
+    "title": "Hair follicle-derived IL-7 and IL-15 mediate skin-resident memory T cell homeostasis and lymphoma",
+    "authors": [
+      "T. Adachi",
+      "Tetsuro Kobayashi",
+      "E. Sugihara",
+      "Taketo Yamada",
+      "K. Ikuta",
+      "S. Pittaluga",
+      "H. Saya",
+      "M. Amagai",
+      "K. Nagao"
+    ],
+    "year": 2015,
+    "venue": "Nature Medicine",
+    "doi": "10.1038/nm.3962",
+    "pmid": "26479922",
+    "url": "https://www.semanticscholar.org/paper/b39f9d8f15bb85ceb6ed8e971536e728f3f6d6b4",
+    "abstract": "The skin harbors a variety of resident leukocyte subsets that must be tightly regulated to maintain immune homeostasis. Hair follicles are unique structures in the skin that contribute to skin dendritic cell homeostasis through chemokine production. We demonstrate that CD4+ and CD8+ skin-resident memory T cells (TRM cells), which are responsible for long-term skin immunity, reside predominantly within the hair follicle epithelium of the unperturbed epidermis. TRM cell tropism for the epidermis a",
+    "tldr": "It is demonstrated that CD4+ and CD8+ skin-resident memory T cells, which are responsible for long-term skin immunity, reside predominantly within the hair follicle epithelium of the unperturbed epidermis, and cytokines may be targeted therapeutically in inflammatory skin diseases and lymphoma."
+  },
+  "CorpusId:14602307": {
+    "title": "CD57 Expression and Cytokine Production by T Cells in Lesional and Unaffected Skin from Patients with Psoriasis",
+    "authors": [
+      "M. D. Batista",
+      "C. Tincati",
+      "J. Milush",
+      "E. Ho",
+      "L. Ndhlovu",
+      "V. York",
+      "E. Kallas",
+      "J. Kalil",
+      "S. Keating",
+      "P. Norris",
+      "David S. Chang",
+      "P. Unemori",
+      "K. Leslie",
+      "T. Maurer",
+      "W. Liao",
+      "D. Nixon"
+    ],
+    "year": 2013,
+    "venue": "PLoS ONE",
+    "doi": "10.1371/journal.pone.0052144",
+    "pmid": "23468834",
+    "url": "https://www.semanticscholar.org/paper/b150fce8e4beeecd293747694c8cb3e634f3f3d9",
+    "abstract": "Background The immunopathogenic mechanisms leading to psoriasis remain unresolved. CD57 is a marker of replicative inability and immunosenescence on CD8+ T cells and the proportion of CD57 expressing CD8+ T cells is increased in a number of inflammatory conditions. Methodology We examined the expression of CD57 on T cells in the skin of patients affected with psoriasis, comparing lesional and unaffected skin. We also assessed functionality of the T cells by evaluating the secretion of several in",
+    "tldr": "These findings suggest that T cells in unaffected skin from psoriasis patients exhibit a phenotype compatible with replicative inability, as they have a lower replicative capacity, CD57+ T cells are less frequent in lesional tissue due to the high cellular turnover."
+  },
+  "CorpusId:13784229": {
+    "title": "Reconstitution of Peripheral T Cells by Tissue-Derived CCR4+ Central Memory Cells Following HIV-1 Antiretroviral Therapy",
+    "authors": [
+      "Y. Mahnke",
+      "K. Fletez-Brant",
+      "I. Sereti",
+      "M. Roederer"
+    ],
+    "year": 2016,
+    "venue": "Pathogens and Immunity",
+    "doi": "10.20411/pai.v1i2.129",
+    "pmid": "27819062",
+    "url": "https://www.semanticscholar.org/paper/824202aec516079e7d8fc348caa2a531ba40ffee",
+    "abstract": "Background: Highly active antiretroviral therapy induces clinical benefits to HIV-1 infected individuals, which can be striking in those with progressive disease. Improved survival and decreased incidence of opportunistic infections go hand in hand with a suppression of the plasma viral load, an increase in peripheral CD4+ T-cell counts, as well as a reduction in the activation status of both CD4+ and CD8+ T cells. Methods: We investigated T-cell dynamics during ART by polychromatic flow cytomet",
+    "tldr": "The apparent long-term normalization of CD4+ T-cell numbers following ART does not comprise a normal balance of functionally distinct cells, but results in a dramatic Th2 shift of the reconstituting immune system."
+  },
+  "CorpusId:258507649": {
+    "title": "Functional heterogeneity of human skin\u2010resident memory T cells in health and disease",
+    "authors": [
+      "J. Strobl",
+      "M. Haniffa"
+    ],
+    "year": 2023,
+    "venue": "Immunological Reviews",
+    "doi": "10.1111/imr.13213",
+    "pmid": "37144705",
+    "url": "https://www.semanticscholar.org/paper/d6718651ef48af39dabb10d169f1f0280fa3eea0",
+    "abstract": "The human skin is populated by a diverse pool of memory T cells, which can act rapidly in response to pathogens and cancer antigens. Tissue\u2010resident memory T cells (TRM) have been implicated in range of allergic, autoimmune and inflammatory skin diseases. Clonal expansion of cells with TRM properties is also known to contribute to cutaneous T\u2010cell lymphoma. Here, we review the heterogeneous phenotypes, transcriptional programs, and effector functions of skin TRM. We summarize recent studies on T",
+    "tldr": "The heterogeneous phenotypes, transcriptional programs, and effector functions of skin TRM are reviewed to contextualize the findings and their role in maintaining skin homeostasis and altered functions in skin disease."
+  },
+  "CorpusId:208383371": {
+    "title": "Live Imaging of the Skin Immune Responses",
+    "authors": [
+      "Z. Chow",
+      "G. Egawa",
+      "K. Kabashima"
+    ],
+    "year": 2019,
+    "venue": "Make Life Visible",
+    "doi": "10.1007/978-981-13-7908-6_26",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/52a55bd2c2ab06d80a77373ecc2e1ccaa57e0937",
+    "abstract": "As a barrier to the harsh environment, the skin is a key organ that protects the body from external pathogens. This protection is conferred by a diverse range of immune cells that work in concert to mount an immune response against invading pathogens. Over the last two decades, advancements in microscopic imaging systems have enabled intravital imaging to document the dynamic behavior of immune cells in cutaneous immune responses. This has provided insight into the roles that these immune cells ",
+    "tldr": "This chapter will review a variety of skin immune responses and their corresponding immune cell types that have been studied via the live imaging of mouse skin and cover the different tools that are utilized for the live Imaging of skinimmune responses."
+  },
+  "CorpusId:209383456": {
+    "title": "Development of a vaccine against Staphylococcus aureus invasive infections: Evidence based on human immunity, genetics and bacterial evasion mechanisms",
+    "authors": [
+      "L. Miller",
+      "V. Fowler",
+      "S. Shukla",
+      "W. Rose",
+      "R. Proctor"
+    ],
+    "year": 2019,
+    "venue": "FEMS Microbiology Reviews",
+    "doi": "10.1093/femsre/fuz030",
+    "pmid": "31841134",
+    "url": "https://www.semanticscholar.org/paper/97842c1c9376383c6ec7c881bb82b912d1422c2e",
+    "abstract": "ABSTRACT Invasive Staphylococcus aureus infections are a leading cause of morbidity and mortality in both hospital and community settings, especially with the widespread emergence of virulent and multi-drug resistant methicillin-resistant S. aureus strains. There is an urgent and unmet clinical need for non-antibiotic immune-based approaches to treat these infections as the increasing antibiotic resistance is creating a serious threat to public health. However, all vaccination attempts aimed at ",
+    "tldr": "The evidence presented form the basis for a hypothesis that staphylococcal toxins are important virulence factors, and targeting the neutralization of these toxins are more likely to provide a therapeutic benefit in contrast to prior vaccine attempts to generate antibodies to facilitate opsonophagocytosis."
+  },
+  "CorpusId:133604269": {
+    "title": "T cell pathology in skin inflammation",
+    "authors": [
+      "R. Sabat",
+      "K. Wolk",
+      "L. Loyal",
+      "W. D\u00f6cke",
+      "K. Ghoreschi"
+    ],
+    "year": 2019,
+    "venue": "Seminars in Immunopathology",
+    "doi": "10.1007/s00281-019-00742-7",
+    "pmid": "31028434",
+    "url": "https://www.semanticscholar.org/paper/002d077f6ccdf7171806e7b55b05a934b6116df5",
+    "abstract": "Forming the outer body barrier, our skin is permanently exposed to pathogens and environmental hazards. Therefore, skin diseases are among the most common disorders. In many of them, the immune system plays a crucial pathogenetic role. For didactic and therapeutic reasons, classification of such immune-mediated skin diseases according to the underlying dominant immune mechanism rather than to their clinical manifestation appears to be reasonable. Immune-mediated skin diseases may be mediated mai",
+    "tldr": "How the increasing knowledge of the T cell biology has been comprehensively translated into the pathogenetic understanding of respective model skin diseases and, based thereon, has revolutionized their daily clinical management is shown."
+  },
+  "CorpusId:247160119": {
+    "title": "Inflammatory Microenvironment of Skin Wounds",
+    "authors": [
+      "Zhen Wang",
+      "F. Qi",
+      "Han Luo",
+      "Guangchao Xu",
+      "Dali Wang"
+    ],
+    "year": 2022,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.789274",
+    "pmid": "35300324",
+    "url": "https://www.semanticscholar.org/paper/573ac30424073226823e15aa3d0c71d1f3ca3bd0",
+    "abstract": "Wound healing is a dynamic and highly regulated process that can be separated into three overlapping and interdependent phases: inflammation, proliferation, and remodelling. This review focuses on the inflammation stage, as it is the key stage of wound healing and plays a vital role in the local immune response and determines the progression of wound healing. Inflammatory cells, the main effector cells of the inflammatory response, have been widely studied, but little attention has been paid to ",
+    "tldr": "This review attempts to deepen the understanding of the wound-healing microenvironment in the inflammatory stage by focusing on the interactions between cells and the extracellular matrix, as well as their role in regulating the immune response during theinflammatory stage."
+  }
+}

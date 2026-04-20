@@ -1,0 +1,29 @@
+{
+  "cell_type_label": "pDC",
+  "working_definition": "A plasmacytoid dendritic cell present in prenatal human skin, characterized by expression of CD123 (IL3RA), CLEC4C (CD303/BDCA-2), and the master transcription factor TCF4 (E2-2). These cells are specialized producers of type I interferons (IFN-alpha/beta) in response to viral nucleic acids sensed via TLR7 and TLR9, and are found in fetal skin from the first trimester as part of the developing innate immune network.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'plasmacytoid dendritic cell' in CL ontology",
+    "snippet_search: 'plasmacytoid dendritic cell pDC prenatal skin' scoped to atlas DOI:10.1038/s41586-024-08002-x",
+    "snippet_search: 'plasmacytoid dendritic cell prenatal human skin immune development first trimester' broad search",
+    "snippet_search: 'plasmacytoid dendritic cell fetal human development ontogeny markers CLEC4C IRF7 TCF4' broad search"
+  ],
+  "best_match": {
+    "cl_term": "plasmacytoid dendritic cell",
+    "cl_id": "CL:0000784",
+    "cl_definition": "A dendritic cell type of distinct morphology, localization, and surface marker expression (CD123-positive) from other dendritic cell types and associated with early stage immune responses, particularly the release of physiologically abundant amounts of type I interferons in response to infection.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The pDC population in the prenatal skin atlas is explicitly defined as 'plasmacytoid dendritic cells' in the UMAP legend (Fig. 1e) of Gopee et al. (2024). CL:0000784 describes a dendritic cell type that is CD123-positive and produces type I interferons, which directly matches the identity and canonical function of pDCs as characterised across the literature (Collin & Bigley 2018; Reizis et al. 2011). The prenatal developmental context does not alter the fundamental cell type identity. A more specific human term exists (CL:0001058, 'plasmacytoid dendritic cell, human') but CL:0000784 is the standard general term appropriate for atlas mapping.",
+  "other_candidates": [
+    {
+      "cl_term": "plasmacytoid dendritic cell, human",
+      "cl_id": "CL:0001058",
+      "cl_definition": "This cell type is compatible with the HIPC Lyoplate markers for 'plasmacytoid dendritic cell'. The inclusion of HLA-DRA in the definition restricts this definition to human plasmacytoid dendritic cells.",
+      "reason_rejected": "This is a more specific human-restricted term compatible with HIPC Lyoplate markers. CL:0000784 is the standard general term used for atlas annotations and is preferred for cross-species consistency."
+    }
+  ],
+  "recommendation": "Map to CL:0000784 (plasmacytoid dendritic cell). No new CL term is needed.",
+  "new_term_needed": false
+}

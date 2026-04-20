@@ -1,0 +1,152 @@
+[
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "ASDC, Axl+Siglec6+ dendritic cells"
+    ],
+    "summary": "The atlas paper defines ASDC as Axl+Siglec6+ dendritic cells within the integrated prenatal skin, adult skin, and SkO UMAP visualization. ASDC is annotated as a distinct immune cell lineage in the prenatal skin dataset.",
+    "categories": ["markers", "location"],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "ASDC, Axl+Siglec6+ dendritic cells; DC, dendritic cells; HSC, haematopoietic stem cells; LC, Langerhans cells..."
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "AXL+SIGLEC6+ DC were identified in the blood by scRNA-seq analysis as a subpopulation of CD123+ DC.",
+      "They have also been evidenced in lymphoid organs but not in steady-state peripheral tissues, and are recruited to inflamed skin and lungs.",
+      "AXL+SIGLEC6+ DC display a mixed pDC-cDC transcriptomic and phenotypic profile, however, they are closer to cDC2 functionally.",
+      "They are efficient for stimulating CD4 T cells ex vivo, and do not secrete type I IFN.",
+      "AXL+SIGLEC6+ DC are decreased in the blood of patients with a mutation in TCF4, suggesting a role for E2-2/TCF4 in their differentiation.",
+      "AXL+SIGLEC6+ DC also highly express the transcription factors BCL11A, RUNX2, and SPIB, which are involved in pDC development."
+    ],
+    "summary": "AXL+SIGLEC6+ DCs were first identified in blood as a subpopulation of CD123+ DCs by scRNA-seq. They have a mixed pDC-cDC transcriptomic profile but are functionally closer to cDC2, efficiently stimulating CD4 T cells but not secreting type I IFN. They are present in lymphoid organs, absent from steady-state peripheral tissues, but recruited to inflamed skin. Their differentiation depends on TCF4/E2-2 and they express pDC-associated transcription factors BCL11A, RUNX2, and SPIB.",
+    "categories": ["markers", "function", "location", "development"],
+    "source_corpus_id": "CorpusId:247009561",
+    "source_title": "Human dendritic cell subsets: An updated view of their ontogeny and functional specialization",
+    "source_authors": "E. Segura",
+    "source_year": 2022,
+    "snippet": "AXL+SIGLEC6+ DC were identified in the blood by scRNA-seq analysis as a subpopulation of CD123+ DC..."
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "At the time pre-DCs were described, independently, a DC subset expressing AXL, SIGLEC1, and SIGLEC6 (AS DCs), was identified as a distinct DC population that arises from the CDP progenitor.",
+      "AS DCs (also called AXL+ DCs) are also able to prime T cells but do not proliferate",
+      "they are now often referred to as transitional DCs (tDCs), a distinct population from cDCs, sharing properties with pDCs, and potentially contributing to the broader cDC2 population",
+      "AS DCs are also recruited during cutaneous inflammation"
+    ],
+    "summary": "AS DCs arise from the common dendritic cell progenitor (CDP), share markers with pDCs, and can differentiate into cDC2s. They can prime T cells but do not proliferate. The murine homolog lacks Axl expression. AS DCs are now often referred to as transitional DCs (tDCs). They are recruited during cutaneous inflammation and found in circulation of cancer patients.",
+    "categories": ["development", "function", "location"],
+    "source_corpus_id": "CorpusId:279614917",
+    "source_title": "Comparing DC subsets in solid tumors: what about DC3s?",
+    "source_authors": "Pachocki et al.",
+    "source_year": 2025,
+    "snippet": "At the time pre-DCs were described, independently, a DC subset expressing AXL, SIGLEC1, and SIGLEC6 (AS DCs)..."
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "AXL+ Siglec-6+ dendritic cells (ASDC) are novel myeloid DCs which can be subdivided into CD11c+ and CD123+ expressing subsets.",
+      "We showed for the first time that these two ASDC subsets are present in inflamed human anogenital tissues where HIV transmission occurs.",
+      "both subsets of blood ASDCs but not pDCs expressed co-stimulatory and maturation markers which were more prevalent on CD11c+ ASDCs",
+      "There was also a significant polarisation of naive T cells by both ASDC subsets toward Th2, Th9, Th22, Th17 and Treg but less toward a Th1 phenotype."
+    ],
+    "summary": "ASDCs can be subdivided into CD11c+ and CD123+ subsets that differ in function. Both subsets are present in inflamed human tissues. CD11c+ ASDCs express higher co-stimulatory and maturation markers and induce greater T cell proliferation. Both subsets polarize naive T cells toward Th2, Th9, Th22, Th17, and Treg, but less toward Th1.",
+    "categories": ["markers", "function", "location"],
+    "source_corpus_id": "CorpusId:270761460",
+    "source_title": "Characterising plasmacytoid and myeloid AXL+ SIGLEC-6+ dendritic cell functions and their interactions with HIV",
+    "source_authors": "Warner van Dijk et al.",
+    "source_year": 2024,
+    "snippet": "AXL+ Siglec-6+ dendritic cells (ASDC) are novel myeloid DCs which can be subdivided into CD11c+ and CD123+ expressing subsets..."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "ASDCs represent a noncanonical DC subset that lacks IFN-I production ability but can prime T cells (Villani et al., 2017).",
+      "The ASDCs detected herein from skin blisters were highly activated, expressing CCL22 and CD83, and may be recruited into skin in response to inflammatory cues."
+    ],
+    "summary": "ASDCs are a noncanonical DC subset that cannot produce type I IFN but can prime T cells. In skin suction blisters during acute sterile inflammation, ASDCs were found highly activated (expressing CCL22 and CD83) and appear to be recruited into skin in response to inflammatory cues. They were not observed in steady-state skin.",
+    "categories": ["function", "location"],
+    "source_corpus_id": "CorpusId:209230037",
+    "source_title": "Re-evaluation of human BDCA-2+ DC during acute sterile skin inflammation",
+    "source_authors": "Chen et al.",
+    "source_year": 2019,
+    "snippet": "ASDCs represent a noncanonical DC subset that lacks IFN-I production ability but can prime T cells..."
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [
+      "AS-DCs represent 2-3% of DCs in scRNAseq and cytometry analysis, are CD123+ CD11c-/low, co-express unique markers AXL, SIGLEC1/6 and SIGLEC2/CD22",
+      "AS-DCs also express the costimulatory molecule CD86 and HLA-DR and are able to induce CD4+ and CD8+ T-cell proliferation, while IFN-I secretion remains marginal",
+      "they are E2-2-dependent and require TCF4 for their development similarly to canonical pDCs, but they also express ID2 as cDCs"
+    ],
+    "summary": "AS-DCs represent 2-3% of DCs and are CD123+ CD11c-/low, co-expressing AXL, SIGLEC1/6, SIGLEC2/CD22. They express CD86 and HLA-DR, induce CD4+ and CD8+ T cell proliferation with marginal IFN-I secretion. Development is E2-2/TCF4-dependent (like pDCs) but they also express ID2 (like cDCs).",
+    "categories": ["markers", "function", "development"],
+    "source_corpus_id": "CorpusId:250977253",
+    "source_title": "Plasmacytoid Dendritic Cells, a Novel Target in Myeloid Neoplasms",
+    "source_authors": "Roussel et al.",
+    "source_year": 2022,
+    "snippet": "AS-DCs represent 2-3% of DCs in scRNAseq and cytometry analysis..."
+  },
+  {
+    "snippet_index": 7,
+    "quotes": [
+      "Lubin, Patel, Mackerodt, and colleagues define the circulating lifespan of conventional human dendritic cells (cDC) at steady state. They show that local inflammation recruits cDC to the site of inflammation, where Axl Siglec-6 DC (ASDC) acquires an effector phenotype.",
+      "ASDC cultured with recombinant IFNbeta adopted a more regulatory phenotype.",
+      "Blister ASDC preserved their expression of Siglec-6 and AXL, two receptors involved in phagocytosis, that may aid the clearance of the pathogen or required for efferocytosis during the resolution phase of inflammation."
+    ],
+    "summary": "During local inflammation, ASDCs are recruited and acquire an effector phenotype with a distinct IFN signature (IFI44L, IFI27). When cultured with IFN-beta, they adopt a more regulatory phenotype. They preserve Siglec-6 and AXL expression in inflamed tissue, which may aid phagocytosis/efferocytosis during inflammation resolution.",
+    "categories": ["function", "location"],
+    "source_corpus_id": "CorpusId:273402005",
+    "source_title": "The lifespan and kinetics of human dendritic cell subsets and their precursors in health and inflammation",
+    "source_authors": "Lubin et al.",
+    "source_year": 2024,
+    "snippet": "Lubin, Patel, Mackerodt, and colleagues define the circulating lifespan..."
+  },
+  {
+    "snippet_index": 8,
+    "quotes": [
+      "AXL+SIGLEC6+ pre-DCs mapped exclusively to the DC2 pathway",
+      "cDC2 (CD1c+DC) heterogeneity originates from two distinct pathways of development. The lymphoid-primed IRF8hi pathway, marked by CD123 and BTLA, carried pDC, cDC1, and DC2 trajectories"
+    ],
+    "summary": "Using an allelic series of human IRF8 deficiency, AXL+SIGLEC6+ pre-DCs were shown to map exclusively to the DC2 (not DC3) developmental pathway, within the lymphoid-primed IRF8-high pathway that also gives rise to pDC and cDC1.",
+    "categories": ["development"],
+    "source_corpus_id": "CorpusId:220908447",
+    "source_title": "Differential IRF8 Transcription Factor Requirement Defines Two Pathways of Dendritic Cell Development in Humans",
+    "source_authors": "Cytlak et al.",
+    "source_year": 2020,
+    "snippet": "AXL+SIGLEC6+ pre-DCs mapped exclusively to the DC2 pathway..."
+  },
+  {
+    "snippet_index": 9,
+    "quotes": [
+      "The adoption of these unbiased, high-dimensional profiling tools in blood and human tissues revealed a distinct subgroup of DCs, characterized by the expression of AXL and SIGLEC6 at both the transcriptional (scRNA-seq) and protein (CyTOF) levels, and consequently termed AXL+SIGLEC6+ DCs (ASDCs) or AXL+ DCs.",
+      "Unsupervised dimensionality reduction of transcriptomic and protein expression consistently placed ASDCs at the intersection of pDCs and cDC2 clusters, bridging both populations and exhibiting a spectrum from pDC-like to cDC2-like features.",
+      "Single-cell RNA-seq analyses showed that ASDCs expressed a continuum of genes and regulatory programs associated with pDCs (e.g., IL3RA, TCF4, IRF8, IGJ, NRP1, MZB) and cDC2s (e.g., ITGAX, LYZ, LY86)."
+    ],
+    "summary": "ASDCs were identified through scRNA-seq and CyTOF as a distinct DC subgroup at the intersection of pDC and cDC2 clusters, exhibiting a spectrum from pDC-like to cDC2-like features. They express a continuum of genes from both lineages. They are now increasingly recognized as transitional DCs (tDCs), a bona fide DC subset with distinct developmental trajectory.",
+    "categories": ["markers", "development"],
+    "source_corpus_id": "CorpusId:283240002",
+    "source_title": "Bridging pDCs and cDCs: The Identity of Transitional Dendritic Cells",
+    "source_authors": "Idoyaga, Ni, and Maqueda-Alfaro",
+    "source_year": 2025,
+    "snippet": "The adoption of these unbiased, high-dimensional profiling tools..."
+  },
+  {
+    "snippet_index": 10,
+    "quotes": [
+      "AS DCs (Axl+Siglec6+) were found to infiltrate human skin during wounding.",
+      "While AS DCs from HD exhibited TRAIL upon TLR triggering, such functionality was down-modulated or abrogated in circulating and tumor-infiltrating AS DCs from patients."
+    ],
+    "summary": "In melanoma, AS DCs segregate as an independent cluster. They infiltrate tumors at low levels. Their TRAIL expression upon TLR triggering is down-modulated or abrogated in both circulating and tumor-infiltrating AS DCs from patients, suggesting melanoma subverts their functions.",
+    "categories": ["function", "location"],
+    "source_corpus_id": "CorpusId:248543355",
+    "source_title": "Diversification of circulating and tumor-infiltrating plasmacytoid DCs towards the P3 (CD80+ PDL1-)-pDC subset negatively correlated with clinical outcomes in melanoma patients",
+    "source_authors": "Sosa Cuevas et al.",
+    "source_year": 2022,
+    "snippet": "AS DCs (Axl+Siglec6+) were found to infiltrate human skin during wounding..."
+  }
+]

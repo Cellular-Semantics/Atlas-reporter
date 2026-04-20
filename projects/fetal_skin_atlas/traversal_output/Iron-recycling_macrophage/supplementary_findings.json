@@ -1,0 +1,21 @@
+{
+  "markers": [
+    {"gene": "SLC40A1", "evidence_type": "known marker / functional annotation", "source_table": "Inferred from cell type name - ferroportin, the sole known cellular iron exporter; Supplementary Table 3 (DEGs for refined prenatal cell states)"},
+    {"gene": "CXCL8", "evidence_type": "functional interaction ligand", "source_table": "Main text - predicted ligand-receptor interaction CXCL8-ACKR1 between macrophages and endothelial cells (Extended Data Fig. 9a, Supplementary Table 28)"},
+    {"gene": "CCL8", "evidence_type": "functional interaction ligand", "source_table": "Main text - predicted ligand-receptor interaction CCL8-ACKR1 between macrophages and endothelial cells (Extended Data Fig. 9a, Supplementary Table 28)"}
+  ],
+  "other_findings": [
+    {"finding": "Iron-recycling macrophages are one of four macrophage subsets identified in prenatal skin (LYVE1+, MHCII+, TML, iron-recycling)", "category": "classification", "source_table": "Main text, section 'Macrophages support prenatal skin angiogenesis'"},
+    {"finding": "Iron-recycling macrophages promote endothelial cell chemotaxis (gene module expression profiles)", "category": "function", "source_table": "Extended Data Fig. 8i, Supplementary Table 27"},
+    {"finding": "All four macrophage subsets including iron-recycling expressed gene programs that drive angiogenesis", "category": "function", "source_table": "Supplementary Tables 23-26"},
+    {"finding": "Gene set enrichment analysis performed on over-expressed genes in iron-recycling macrophages using Gene Ontology Biological Process 2023 and MSigDB Hallmark 2020 databases", "category": "function", "source_table": "Extended Data Fig. 8c"},
+    {"finding": "Macrophage subsets annotated using marker genes from Suo et al. (2022)", "category": "annotation_method", "source_table": "Extended Data Fig. 7f"},
+    {"finding": "Macrophages co-located with endothelial cells in neurovascular microenvironments ME1 and ME5", "category": "location", "source_table": "Fig. 1d, Extended Data Fig. 1e"}
+  ],
+  "evidence_quotes": [
+    {"quote": "Gene ontology analysis showed that the four macrophage subsets (LYVE1 + , MHCII + , TML and iron-recycling) expressed gene programs that drive angiogenesis (Supplementary Tables 23-26).", "source_file": "atlas_paper_main_text", "context": "Section: Macrophages support prenatal skin angiogenesis"},
+    {"quote": "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1 + and TML macrophages, blood vessel morphogenesis by LYVE1 + macrophages and endothelial cell chemotaxis by iron-recycling macrophages (Extended Data Fig. 8i and Supplementary Table 27).", "source_file": "atlas_paper_main_text", "context": "Section: Macrophages support prenatal skin angiogenesis"},
+    {"quote": "Predicted ligandreceptor interactions were consistent with reciprocal communication between macrophages and endothelial cells to support angiogenesis, chemotaxis and cell migration (for example, CXCL8-ACKR1 and CCL8-ACKR1)", "source_file": "atlas_paper_main_text", "context": "Section: Macrophages support prenatal skin angiogenesis"},
+    {"quote": "Gene set enrichment analysis results of over-expressed genes (wilcoxon, two-sided, Benjamini-Hochberg adjusted) in macrophage subsets (TML, Iron-recycling, LYVE1 + and MHCII + , macrophages).", "source_file": "atlas_paper_figure_legends", "context": "Extended Data Fig. 8c legend"}
+  ]
+}

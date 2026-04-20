@@ -1,0 +1,11 @@
+{
+  "label": "Smooth muscle/Pericytes",
+  "resolved_names": [
+    "smooth muscle cell",
+    "pericyte"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "This mixed mural cell population includes both smooth muscle cells and pericytes. CL:0008034 (mural cell) is the appropriate broad match."
+}

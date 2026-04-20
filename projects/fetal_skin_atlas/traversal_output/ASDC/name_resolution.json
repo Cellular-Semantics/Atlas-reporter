@@ -1,0 +1,15 @@
+{
+  "label": "ASDC",
+  "resolved_names": [
+    "ASDC",
+    "Axl+Siglec6+ dendritic cells",
+    "AS-DC",
+    "AXL+ DC",
+    "pre-DC",
+    "transitional DC"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas paper (Gopee et al., 2024) explicitly defines ASDC as 'Axl+Siglec6+ dendritic cells' in the UMAP legend of the integrated prenatal skin, adult skin, and SkO datasets (Fig. 1e). ASDC is listed among the broad cell lineages alongside DC, LC, pDC, and other immune populations. The abbreviation is expanded directly in the figure caption: 'ASDC, Axl+Siglec6+ dendritic cells'. This cell type is identified in the prenatal skin scRNA-seq dataset as a myeloid immune population."
+}

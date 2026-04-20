@@ -1,0 +1,29 @@
+{
+  "cell_type_label": "MHCII+ macrophage",
+  "working_definition": "A tissue-resident macrophage characterized by high expression of MHC class II molecules (HLA-DPA1, HLA-DRA) and the C-type lectin receptor CLEC7A, found in prenatal human skin. This macrophage subset also expresses F13A1, CD163, and SPP1, but lacks Langerhans cell markers CD207 and CD1A. It is one of four macrophage subsets identified in developing human skin, enriched in later gestation, and implicated in angiogenesis and progressive acquisition of antigen-presentation capacity.",
+  "searches_performed": [
+    "MHCII macrophage (OLS4, CL ontology)",
+    "antigen presenting macrophage (OLS4, CL ontology)",
+    "MHC class II macrophage (OLS4, CL ontology)",
+    "tissue-resident macrophage (OLS4, CL ontology)",
+    "skin macrophage dermal (OLS4, CL ontology)"
+  ],
+  "best_match": null,
+  "justification": "No existing CL term captures the MHC class II high macrophage subset. This is a well-characterized, conserved macrophage population identified across multiple organs (Dick et al., 2022; Chakarov et al., 2019; Suo et al., 2022). It is defined by high MHC class II expression, lack of CCR2, and distinct functional and ontogenic properties compared to LYVE1+ and TLF+ macrophage subsets. The closest existing terms are 'tissue-resident macrophage' (CL:0000864) and 'macrophage' (CL:0000235), both of which are too broad.",
+  "other_candidates": [
+    {
+      "cl_term": "macrophage",
+      "cl_id": "CL:0000235",
+      "cl_definition": "A mononuclear phagocyte present in variety of tissues, typically differentiated from monocytes, capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+      "reason_rejected": "Too broad. Does not capture the MHC class II high phenotype, tissue-resident status, or the specific marker profile (CLEC7A, HLA-DPA1, HLA-DRA) that defines this subset."
+    },
+    {
+      "cl_term": "tissue-resident macrophage",
+      "cl_id": "CL:0000864",
+      "cl_definition": "A macrophage constitutively resident in a particular tissue under non-inflammatory conditions, and capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+      "reason_rejected": "Closer but still too broad. This would serve as the parent class for a new term, but does not distinguish the MHCIIhi subset from other tissue-resident macrophage populations (e.g., LYVE1+ or TML macrophages)."
+    }
+  ],
+  "recommendation": "Request a new CL term for 'MHC class II-high macrophage' as a child of 'tissue-resident macrophage' (CL:0000864). This is a conserved macrophage subset defined across multiple organs by Dick et al. (2022) and Chakarov et al. (2019), characterized by high MHC class II expression (HLA-DPA1, HLA-DRA in humans), CLEC7A positivity, CCR2 negativity, and nerve-associated niche localization. It receives moderate monocyte contribution and progressively acquires immune effector functions during prenatal development.",
+  "new_term_needed": true
+}

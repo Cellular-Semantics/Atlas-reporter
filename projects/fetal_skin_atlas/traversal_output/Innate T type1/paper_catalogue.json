@@ -1,0 +1,74 @@
+[
+  {
+    "corpusId": "273400864",
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee NH et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "source": "seed_paper"
+  },
+  {
+    "corpusId": "248122197",
+    "title": "Mapping the developing human immune system across organs",
+    "authors": "Suo C et al.",
+    "year": 2022,
+    "journal": "Science",
+    "doi": "10.1126/science.abo0510",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "227334677",
+    "title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "authors": "Dhariwala M et al.",
+    "year": 2020,
+    "journal": "Cell Reports Medicine",
+    "doi": "10.1016/j.xcrm.2020.100132",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "215516424",
+    "title": "Mechanisms of Fetal T Cell Tolerance and Immune Regulation",
+    "authors": "Rackaityte E, Halkias J",
+    "year": 2020,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2020.00588",
+    "source": "free_search"
+  },
+  {
+    "corpusId": "266163732",
+    "title": "Unraveling the Phenotypic States of Human innate-like T Cells: Comparative Insights with Conventional T Cells and Mouse Models",
+    "authors": "Loh L et al.",
+    "year": 2023,
+    "journal": "bioRxiv",
+    "doi": "10.1101/2023.12.07.570707",
+    "source": "free_search"
+  },
+  {
+    "corpusId": "259000633",
+    "title": "MAITs and their mates: Innate-like behaviors in conventional and unconventional T cells",
+    "authors": "Hackstein C, Klenerman P",
+    "year": 2023,
+    "journal": "Clinical and Experimental Immunology",
+    "doi": "10.1093/cei/uxad058",
+    "source": "free_search"
+  },
+  {
+    "corpusId": "33664874",
+    "title": "Acquisition of innate-like microbial reactivity in mucosal tissues during human fetal MAIT-cell development",
+    "authors": "Leeansyah E et al.",
+    "year": 2014,
+    "journal": "Nature Communications",
+    "doi": "10.1038/ncomms4143",
+    "source": "free_search"
+  },
+  {
+    "corpusId": "252685827",
+    "title": "Identification of distinct functional thymic programming of fetal and pediatric human gammadelta thymocytes via single-cell analysis",
+    "authors": "Sanchez Sanchez G et al.",
+    "year": 2022,
+    "journal": "Nature Communications",
+    "doi": "10.1038/s41467-022-33469-w",
+    "source": "free_search"
+  }
+]

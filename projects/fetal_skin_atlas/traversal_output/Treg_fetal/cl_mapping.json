@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "Treg",
+  "working_definition": "Regulatory T cells (Tregs) in prenatal human skin are FOXP3+, CD25 (IL2RA)+, CTLA4+ CD4-positive alpha-beta T cells that localize preferentially around developing hair follicles. They display an effector memory phenotype (CD45RO+) with elevated PD-1 and high Ki-67 among CD45RO+ cells, accumulate progressively during the second trimester coinciding with hair follicle morphogenesis, and are thought to establish immune tolerance to self and commensal antigens during fetal development.",
+  "searches_performed": [
+    "regulatory T cell",
+    "CD4-positive CD25-positive FOXP3-positive regulatory T cell"
+  ],
+  "best_match": {
+    "cl_term": "CD4-positive, CD25-positive, alpha-beta regulatory T cell",
+    "cl_id": "CL:0000792",
+    "cl_definition": "A CD4-positive, CD25-positive, alpha-beta T cell that regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "Fetal skin Tregs are defined by expression of FOXP3, CD25 (IL2RA), and CD4 as confirmed by both CyTOF/flow cytometry (Dhariwala et al., 2020) and scRNA-seq (Gopee et al., 2024). Single-cell alpha-beta TCR sequencing was used to resolve T cell subsets in the atlas, confirming alpha-beta identity. The CL definition of CL:0000792 specifies a CD4-positive, CD25-positive, alpha-beta T cell that regulates immune responses through cell-cell contact and cytokine release, which precisely matches the fetal skin Treg identity. Although fetal skin Tregs have distinctive developmental features (progressive memory acquisition, hair follicle-associated accumulation, elevated PD-1), these represent contextual properties rather than a fundamentally different cell type.",
+  "other_candidates": [
+    {
+      "cl_term": "regulatory T cell",
+      "cl_id": "CL:0000815",
+      "cl_definition": "A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.",
+      "reason_rejected": "CL:0000815 is the parent term. The more specific CL:0000792 (CD4-positive, CD25-positive, alpha-beta regulatory T cell) is available and matches the confirmed CD4+CD25+ alpha-beta phenotype of fetal skin Tregs."
+    }
+  ],
+  "recommendation": "Use CL:0000792 (CD4-positive, CD25-positive, alpha-beta regulatory T cell) as an exact match for fetal skin Tregs.",
+  "new_term_needed": false
+}

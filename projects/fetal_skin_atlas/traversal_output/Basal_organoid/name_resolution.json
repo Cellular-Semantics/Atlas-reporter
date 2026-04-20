@@ -1,0 +1,12 @@
+{
+  "label": "Basal",
+  "resolved_names": [
+    "Basal",
+    "Immature basal",
+    "Basal keratinocyte"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Basal cells identified in SkO epidermal compartment (Extended Data Fig. 2b). Accelerated keratinocyte differentiation aligns to adult states early."
+}

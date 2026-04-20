@@ -1,0 +1,12 @@
+{
+  "label": "CD4 T cell",
+  "resolved_names": [
+    "CD4-positive, alpha-beta T cell",
+    "CD4+ T cell",
+    "T helper cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas paper (10.1038/s41586-024-08002-x) identifies T cells as emerging later in prenatal skin, from around 10 PCW, accompanying thymus formation. Single-cell TCR sequencing was used to resolve T cell subsets. The atlas uses broad annotations including 'T cells' as part of the immune compartment. Supplementary Table 3 contains fine-grained annotations. Suo et al. 2022 (DOI:10.1126/science.abo0510), referenced by the atlas, identifies prenatal conventional T cells (CD4+ T, CD8+ T, and Tregs) across organs including skin. Dhariwala et al. 2020 provides detailed characterization of CD4+ T cells in human fetal skin using CyTOF and flow cytometry."
+}

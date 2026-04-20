@@ -1,0 +1,43 @@
+{
+  "markers": [
+    {
+      "gene": "NDP",
+      "evidence_type": "Dp marker",
+      "source_table": "Main text"
+    },
+    {
+      "gene": "SOX2",
+      "evidence_type": "Dp marker",
+      "source_table": "Main text, Extended Data Fig. 3h"
+    },
+    {
+      "gene": "RSPO3",
+      "evidence_type": "signaling molecule",
+      "source_table": "Fig. 2g, Supplementary Table 8"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Dp encapsulated at base of HF following invagination",
+      "category": "structure",
+      "source_table": "Main text"
+    },
+    {
+      "finding": "RSPO3 from Dp interacts with LGR4 and LGR6 on matrix cells to promote HF epithelial proliferation",
+      "category": "function",
+      "source_table": "Fig. 2g, Supplementary Table 8"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "the Dc becomes encapsulated at its base as the Dp (NDP + , SOX2 + )",
+      "source_file": "Gopee et al. 2024",
+      "context": "Dp formation"
+    },
+    {
+      "quote": "RSPO3 from the Dp was predicted to interact with LGR4 and LGR6 in overlying matrix cells to contribute to the proliferation of HF epithelial cells",
+      "source_file": "Gopee et al. 2024",
+      "context": "Dp-matrix signaling"
+    }
+  ]
+}

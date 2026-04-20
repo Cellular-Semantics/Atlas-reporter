@@ -1,0 +1,370 @@
+[
+  {
+    "snippet": "Pericytes are contractile cells that wrap around the endothelial cells of capillaries and venules throughout the body, and they share a basement membrane with endothelial cells. Pericytes have many important functions including remodeling and maturation of blood vessels [12]. They stabilize endothelial-lined vascular tubes by depositing vascular basement membrane matrix [13][14][15]. They regulate blood flow [16][17][18][19] and endothelial permeability and barrier properties [20,21]. They induce tissue inhibitor of metalloproteinases (TIMPs) to block metalloproteinases-dependent regression of vascular tubes [22]. They also induce myofibroblasts to produce extracellular matrix (ECM) during fibrosis and scar formation following injury [23,24]. Pericytes are also thought as therapeutic targets for tissue regeneration since they function as progenitor cells or multipotent mesenchymal stem cells [18,25]. \n\nWe hypothesized that the vascular immaturity and the hydropic change of molar villi are closely related to each other and the vascular immaturity can be caused by defect of pericytes. In this study, we have examined the expression of pericyte immunohistochemical markers, namely, \u03b1-SMA, PDGFR-\u03b2, and desmin, in the villous stroma and villous stromal vessels between normal placentas and CHMs. Further, ultrastructural studies were performed to determine whether pericytes surround the stromal vessels in normal and molar villi during the early stages of pregnancy to prove that defective pericyte recruitment in CHM is the major cause of persistent immaturity of villous stromal vessels, which manifests as an increased apoptosis of endothelial and stromal cells and a hydropic molar villi. We also looked for potential correlation between basophilic/chondroid stroma, immature stromal blood vessels, numerous stromal apoptosis, and hydropic villous stroma.",
+    "paper_id": "16408659",
+    "title": "Defective Pericyte Recruitment of Villous Stromal Vessels as the Possible Etiologic Cause of Hydropic Change in Complete Hydatidiform Mole",
+    "authors": [
+      "Kyu Rae Kim",
+      "C. Sung",
+      "T. Kwon",
+      "Jungbok Lee",
+      "S. Robboy"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.39857759446045876,
+    "depth": 0,
+    "corpus_id": "CorpusId:16408659"
+  },
+  {
+    "snippet": "To investigate the contribution of vascular cells towards cNF development, we performed vasculature staining using the endothelial marker Pecam on HS, HLS, and cNFs (Fig. 6a). Vascular density in cNFs remained unchanged throughout the growth and maturation phases compared to HLS, except for a modest increase in growing cNFs compared to HS (Supplementary Fig. 5a). Using the whole skin cell atlas, we analyzed the transcriptomic profiles and proportions of vascular cells in cNFs by extracting and annotating each cell type using specific markers [13] (Supplementary Fig. 5b). This analysis identified pericytes, vascular endothelial cells and lymphatic endothelial cells (Fig. 6b). Consistent with the IHC findings, the proportions of these populations remained stable across conditions (Fig. 6c). \n\nIn growing cNFs, pericytes exhibited upregulation of collagen-and matrisome-related genes compared to HLS and HS (Fig. 6d, Supplementary Fig. 5c), suggesting their involvement in ECM remodeling (Fig. 6e). In particular, ECM proteases, including Mmp14, Adam12, and Adamts1/2/9, were upregulated along with basal membrane proteins, including laminins (Lama2, Lama4, Lamb1, Lamc1), nidogens (Nid1), and proteoglycans (Tnc, Postn, Fbn1) [11]. Interestingly, Tnc and Postn upregulation in pericytes mirrored expression patterns observed in Dermal| Epi-FIB fibroblasts and Aqp1\u207aNes\u207b nmSC populations. In addition, increased expression of Loxl2, known to stabilize collagen crosslinking within the ECM [30,32], highlights the role of pericytes in ECM dynamics during cNF progression (Fig. 6e).",
+    "paper_id": "280127004",
+    "title": "Unraveling the development of cutaneous neurofibromas in neurofibromatosis type 1",
+    "authors": [
+      "Pernelle Pulh",
+      "F. Coulpier",
+      "Audrey Onfroy",
+      "L. Oubrou",
+      "Wanzhen Zhang",
+      "L\u00e9a Toledano",
+      "Elie Abou Zougheib",
+      "L. Fertitta",
+      "Pierre Wolkenstein",
+      "P. Topilko"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3908534054751986,
+    "depth": 0,
+    "corpus_id": "CorpusId:280127004"
+  },
+  {
+    "snippet": "Hence, there appears to be heterogeneity in both the surface proteome and prevalence of pericytes across tissues. We also noted CD34 + stromal cells, which were nonendothelial (CD31 \u00c0 ) and non-pericytic (CD146 \u00c0 ), and were so named due to their location in the periphery of vasa vasorum arterioles and their similarity in marker profile and location to other perivascular cells in white adipose tissue (Corselli et al., 2011;Zimmerlin et al., 2010). Our present findings corroborate the work of West et al. (2016), who characterized the stromal vascular fraction in a large cohort of human adipose tissue collected from multiple centers using flow cytometry, and reported that pericytes (CD45 \u00c0 /CD146 + /CD34 \u00c0 ) and adventitial cells (CD45 \u00c0 / CD146 \u00c0 /CD34 + ) have a prevalence of 8% and 33%, respectively, and together represent subpopulations of perivascular stem cells (West et al., 2016). \n\nThe FACS-purified and cultivated pericytes described in the present study along with those described by others who documented MSC-like behavior of pericytes do not appear to be the same as mesodermal progenitor cells (MPCs) (Caplan, 2008;Crisan et al., 2008c), a subset of MSCs in human bone marrow-derived populations that were shown to exhibit angiogenic potential (Petrini et al., 2009). Localization of our ex vivo cultured pericytes alongside branching endothelial cells in vitro is characteristic of other pericytic populations (Mayo and Bearden, 2015) and distinguishes our aortic-derived pericytes from MPCs. Furthermore, the capacity of these aortic adventitial-derived pericytes to form spontaneous spheroids and subsequent sprouting has not been previously reported for similar cell types.",
+    "paper_id": "13924119",
+    "title": "Classification and Functional Characterization of Vasa Vasorum-Associated Perivascular Progenitor Cells in Human Aorta",
+    "authors": [
+      "M. Billaud",
+      "V. Donnenberg",
+      "Bradley W. Ellis",
+      "E. Meyer",
+      "A. Donnenberg",
+      "Jennifer C. Hill",
+      "Tara D. Richards",
+      "Thomas G. Gleason",
+      "Julie A. Phillippi"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3908534054751986,
+    "depth": 0,
+    "corpus_id": "CorpusId:13924119"
+  },
+  {
+    "snippet": "Pericytes, along with endothelial cells, are required for basement membrane assembly and remodeling [18]. In the present study, we documented basement membrane remodeling in the calf muscle of patients with Stage II and Stage IV PAD. Late-stage disease is characterized by increased basement membrane thickening and diameter in association with fibrosis and greater abundances of basement membrane Collagen IV and Collagen I. Consequently, we evaluated pericyte coverage of micro-vessels in relation to progression of PAD. Slide specimens of calf muscle biopsies were labeled concurrently with antibodies specific for Collagen IV, \u03b1Smooth Muscle Actin (\u03b1SMA), and endothelial cell CD-31 (Figure 9). Pericytes were identified as \u03b1-Smooth Muscle Actin (\u03b1-SMA) fluorescence labeling intimately associated with Collagen IV labeling and endothelial cell labeling (CD-31) of micro-vessels (overall diameter < 15 \u03bcm) [19]. Because of the very labor-intensive work required for partitioning and quantification of pericyte events in each tissue section, we evaluated pericyte coverage in duplicate slide specimens of calf muscle biopsies from five control subjects, five Stage II patients and five Stage IV patients. Using Quantitative Fluorescence Microscopy, we quantified pericyte coverage as the sum of the areas occupied by pericyte segments per 40\u00d7 microscopic field. We analyzed five fields of each duplicate slide per control and patient and present the data as medians per group (Figure 9; Fence Box Plot). Medians (M) and interquartile ranges (IQR) were 126 \u00b5m 2 , 135\u00b5m 2 ; 446 \u00b5m 2 , 121 \u00b5m 2 ; and 1077 \u00b5m 2 , 564 \u00b5m 2 for control Because of the very labor-intensive work required for partitioning and quantification of pericyte events in each tissue section, we evaluated pericyte coverage in duplicate slide specimens of calf",
+    "paper_id": "221124044",
+    "title": "Abnormal Microvascular Architecture, Fibrosis, and Pericyte Characteristics in the Calf Muscle of Peripheral Artery Disease Patients with Claudication and Critical Limb Ischemia",
+    "authors": [
+      "C. Mietus",
+      "T. Lackner",
+      "P. Karvelis",
+      "Gregory T Willcockson",
+      "C. Shields",
+      "Nicholas G Lambert",
+      "P. Koutakis",
+      "M. Fuglestad",
+      "Hernan Hernandez",
+      "G. Haynatzki",
+      "J. Kim",
+      "H. Despiegelaere",
+      "I. Pipinos",
+      "G. Casale"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.38704866882156796,
+    "depth": 0,
+    "corpus_id": "CorpusId:221124044"
+  },
+  {
+    "snippet": "ATURE capillaries and postcapillary venules are comprised of two cell types-endothelial cells (ECs) 1 and pericytes. Pericytes exist in intimate association with ECs, forming a single layer that covers varying amounts of the abluminal EC surface. This arrangement, unique to small vessels, is characterized by frequent sites of contact between the ECs and pericytes. The interaction between ECs and pericytes has been extensively analyzed at both the light (43) and electron microscopic (9,34,37) levels, yet there is little evidence to support specific functional roles for these cell-cell interactions.\n\nThe pericytes' position in the capillary and their physical association with the ECs have led to the postulation of several roles for the pericyte, including regulation of permeability (12), mediation of contractility (44), maintenance of integrity (37), and control of proliferation (10,28). Although direct evidence is lacking, the localization in pericytes of CGMLPdependent protein kinase (26) and contractile elements including actin (21) and myosin (27) supports their proposed involvement in microvascular contractility. Large, acid phosphatase--containing vacuoles have been observed to be preferentially localized on the interstitial side of pericyte cytoplasm (9,37), indicating a possible phagocytic function for pericytes (5). In spite of these observations, the specific contributions of pericytes to microvascular function remain uncharacterized. The absence of pedcytes has been correlated with the on- with modulating cells over 14 d. The number of co-cultured EC was determined by the difference between total number of co-cultured cells and the number of growth-arrested modulating cells.\n\nset of neovascularization. Before the onset of new vessel growth associated with diabetes mellitus, there is a loss of pericytes, termed \"pericyte drop-out\" (12). Hemangiomas, vascular anomalies characterized by excessive EC proliferation, have few, if any, pericytes or smooth muscle cells (SMCs",
+    "paper_id": "8699128",
+    "title": "Inhibition of capillary endothelial cell growth by pericytes and smooth muscle cells",
+    "authors": [
+      "A. Orlidge",
+      "Patr icia"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.37955109953353117,
+    "depth": 0,
+    "corpus_id": "CorpusId:8699128"
+  },
+  {
+    "snippet": "Like endothelial cells, pericytes (also called mural cells or Rouget cells) can differentiate into myofibroblasts and play key roles in fibrogenesis. Pericytes are perivascular cells that are embedded in the microvascular basement membrane. They have rounded cell bodies that extend multiple long cytoplasmic processes along the length of the vessel, usually spanning several endothelial cells. The primary processes bear perpendicular secondary processes that partially encircle the vessel. Since these anatomical and morphological features can only be determined by electron microscopy, pericytes are generally identified on the basis of their general location and molecular markers such as nerve/glial antigen 2 (NG2, also known as chondroitin sulphate proteoglycan 4), platelet-derived growth factor (PDGF) receptor \u03b2 (PDGFR\u03b2), and desmin. However, it should be noted that a single pericyte-specific marker has not yet been identified. Pericytes communicate closely with their neighboring endothelial cells, either directly via specialized peg-like cytoplasmic fingers that insert into endothelial socket-like invaginations or indirectly via juxtacrine or paracrine signaling [63]. In terms of function, pericytes support the functional stability and structural integrity of the microvasculature by regulating vascular tone, blood flow [64], and capillary diameter [65], as well as by participating in basement membrane synthesis by secreting collagen IV, fibronectin, and laminin [66].",
+    "paper_id": "215606426",
+    "title": "The Vascular Involvement in Soft Tissue Fibrosis\u2014Lessons Learned from Pathological Scarring",
+    "authors": [
+      "Chenyu Huang",
+      "R. Ogawa"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.375857175152596,
+    "depth": 0,
+    "corpus_id": "CorpusId:215606426"
+  },
+  {
+    "snippet": "Pericytes are heterogenous perivascular cells mainly residing in the precapillary, capillary, and postcapillary microvasculature (Figure 1) [61].These cells closely communicate with endothelial, vascular smooth muscle cells, and collagen-producing myofibroblasts for the homeostasis of the vasculature and skin, including vascular permeability, angiogenesis, and blood flow [62].Although pericytes have been studied extensively in other pathological processes, the current understanding of the role of pericytes in SSc is limited.Pericytes differentiate from myeloid progenitors by transforming growth factor beta (TGF-\u03b2), a profibrotic cytokine during development in the skin [63].In adult skin in vivo, the stimulation of pericytes by TGF-\u03b2 and platelet-derived growth factor beta (PDGF-\u03b2) promotes angiogenesis and the differentiation of pericytes to fibroblasts, suggesting that collagen-producing mesenchymal cells in SSc may be originally from pericytes [64].This hypothesis is further supported by the overlapping cellular markers of pericytes and myofibroblasts in SSc, such as alpha-smooth muscle cell actin (\u03b1SMA), fibronectin (FN), and Thy-1 [65].\n\nHow exactly vasculopathy leads to the activation of pericytes is still elusive.Pericytes in immunohistology of skin biopsy samples of patients with early SSc overexpressed PDGF and PDGF receptors, but this was not observed in skin immunohistology from patients with Raynaud's phenomenon without skin involvement [66].This result suggests that there might be a phenotypic change in pericytes in relation to vasculopathy in the early pathogenesis of SSc, which later contributes to the development of fibrosis.",
+    "paper_id": "262136468",
+    "title": "The Pathogenesis of Systemic Sclerosis: The Origin of Fibrosis and Interlink with Vasculopathy and Autoimmunity",
+    "authors": [
+      "Junsuk Ko",
+      "M. Noviani",
+      "V. Chellamuthu",
+      "Salvatore Albani",
+      "A. Low"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.375857175152596,
+    "depth": 0,
+    "corpus_id": "CorpusId:262136468"
+  },
+  {
+    "snippet": "Research advances in pericyte function and their roles in diseases",
+    "paper_id": "213191716",
+    "title": "Research advances in pericyte function and their roles in diseases",
+    "authors": [
+      "Zi-sen Zhang",
+      "Henan Zhou",
+      "Shuang He",
+      "Mingying Xue",
+      "Tao Li",
+      "Liangming Liu"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3721991141151649,
+    "depth": 0,
+    "corpus_id": "CorpusId:213191716"
+  },
+  {
+    "snippet": "Pericytes have been isolated from the neonatal foreskin or adult female breast skin (133). After digestion with type II collagenase or dispase (134), a VLA-1 bri /CD45 \u2212 population was sorted by FACS or immunomagnetic microbeads (112,133,135). In addition, skin pericytes express Human high molecular weight-melanoma-associated antigen (HMW-MAA), PDGFR\u03b2, desmin, \u03b1SMA, \u03b11\u03b21-integrin, \u03b1and \u03b3-actin isoforms, and myosin (136).",
+    "paper_id": "255590633",
+    "title": "Approaches for the isolation and long-term expansion of pericytes from human and animal tissues",
+    "authors": [
+      "V. Alvino",
+      "Khaled Mohammed",
+      "Yue Gu",
+      "P. Madeddu"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3721991141151649,
+    "depth": 0,
+    "corpus_id": "CorpusId:255590633"
+  },
+  {
+    "snippet": "However, we are the first to further quantify changes in pericyte morphology in response to innate immune components. We have revealed that C5a, IL-33, TNF-\u03b1 and IL-18 induce changes in circumferential pericyte process length (decrease) vasa recta capillaries (Fig. 3F and 5C), whilst only increasing cell body height in rats (Fig. 3F, 5E). These findings are supported by a previous study where injection of TNF-a and IL-1\u03b2 induced a loose and non-confluent coverage of pericytes along postcapillary venules in murine cremaster muscle and ear skin (49). TNF-\u03b1 stimulation encourages an elongated migratory morphology of pericytes (50) and a retraction of pericyte processes (51). Whilst this relaxation of pericyte processes is necessary for leukocyte extravasation (52), this process could initiate the pericytemyofibroblast transition as this pericyte relaxation (52), leukocyte migration (53), and fibrotic development (54) are Rho-A/ROCK dependent, though further work is needed to elucidate this mechanism. Freitas and Attwell (19) further demonstrated how Rho-A/ROCK inihibition restores MBF fastest following IRI, and inihibits the no-reflow phenomenon specifically by activity at NG2 + pericytes. Pericytes provide stability to the capillaries on which they reside (14), and their loss induces capillary rarefaction (18) which culminates in a loss of up to 50% of the vasa recta capillaries in rodents 4weeks after ischaemia (6,55). Our data here, and others (47,48), demonstrating an early reduction of NG2 + pericytes is possibly linked to the vessel instability and rarefaction observed renal disease (14,18), with morphological changes potentially suggesting a fibrotic phenotype of these lost pericytes (14)(15)(16)(17).",
+    "paper_id": "268693336",
+    "title": "Inflammatory mediators act at renal pericytes to elicit contraction of vasa recta and reduce pericyte density along this medullary vascular network",
+    "authors": [
+      "Rebecca J. Lilley",
+      "Kirsti D. Taylor",
+      "S. Wildman",
+      "C. Peppiatt-Wildman"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3685763966626367,
+    "depth": 0,
+    "corpus_id": "CorpusId:268693336"
+  },
+  {
+    "snippet": "Both the EC-lined tubes and the recruited pericytes were located inside the tunnel spaces (Stratman et al., 2009a;Smith et al., 2013). Real-time movies revealed the dynamic nature of the EC-pericyte tube co-assembly process, and once pericytes had recruited to the EC tubes, they could be observed to be migrating up and down the tube networks, suggesting that they are migrating along the abluminal tube surfaces within the tunnel spaces. Interestingly, occasional pericytes were observed migrating in between tubes and leaving one tube and ending up along another tube surface. Additionally, the presence of pericytes markedly alters the outcome of the EC tube morphogenic process. As EC only tubes progressively get wider and shorter in length over time, pericyte recruitment to tubes leads to maintenance of the initial elongated tube structure with narrow diameters (Stratman et al., 2009a). A key difference between these two conditions, is that EC-pericyte co-cultures markedly deposit vascular basement membrane matrices on the EC abluminal surface, while EC only cultures do not (Stratman et al., 2009a). This conclusion was confirmed using transmission electron microscopy and immunofluorescence microscopy. In the latter case, immunostaining was performed using nonpermeabilized (i.e. in the absence of detergent) cultures so that only extracellular deposition of basement membrane components was examined (Stratman et al., 2009a;Smith et al., 2013). \n\nNuclear GFP-labeled pericytes were utilized to address the role of specific growth factors or peptides affecting pericyte behavior during capillary assembly. These labeled pericytes were seeded in the presence of the EC \"Factors\" without or with added ECs. Pericytes did not migrate in 3D collagen matrices in the absence of ECs as evaluated by real-time movies imaged under fluorescence where nuclear tracking was assessed over time as a measure of cell motility (Stratman et al., 2010;Kemp et al., 2020).",
+    "paper_id": "251712357",
+    "title": "Molecular basis for pericyte-induced capillary tube network assembly and maturation",
+    "authors": [
+      "Scott S. Kemp",
+      "Prisca K. Lin",
+      "Zheying Sun",
+      "Maria A. Casta\u00f1o",
+      "Ksenia Yrigoin",
+      "Marlena R. Penn",
+      "G. Davis"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.36498851303176744,
+    "depth": 0,
+    "corpus_id": "CorpusId:251712357"
+  },
+  {
+    "snippet": "Pericytes are elongated, contractile cells found wrapped about precapillary arterioles outside the basement membrane and are present in veins, arteries, and capillaries. Several pericyte markers have been identified, including SMA, non-muscle actin, nonmuscle and muscle myosin, amino peptidase-N, amino peptidase-A, and a cell surface ganglioside (3G5; Andreeva et al., 1998). Previous studies have shown that pericytes can differentiate into osteoblasts and chondrocytes (Doherty and Canfield, 1999;Farrington-Rock et al., 2004), suggesting that pericytes may be central to the etiology of vascular calcification. Further studies have shown that signaling through the Wnt/beta-catenin pathway stimulates chondrogenic and inhibits adipogenic differentiation of pericytes (Kirton et al., 2007), which may directly contribute to the development and progression of calcium deposition. In addition, pericytes can form multicellular nodules that contain a mineralized matrix, similar to those found in calcified aortae (Doherty and Canfield, 1999;Cola et al., 2004). Molecules associated with bone development and formation have been observed in these mineralized nodules, emphasizing the regulatory similarities between vascular and bone calcification (Doherty et al., 1998;Canfield et al., 2000).",
+    "paper_id": "9126149",
+    "title": "Mechanisms and Clinical Consequences of Vascular Calcification",
+    "authors": [
+      "Dongxing Zhu",
+      "N. Mackenzie",
+      "Colin Farquharson",
+      "V. E. MacRae"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.36498851303176744,
+    "depth": 0,
+    "corpus_id": "CorpusId:9126149"
+  },
+  {
+    "snippet": "The Importance of Pericytes in Healing: Wounds and other Pathologies",
+    "paper_id": "3815632",
+    "title": "The Importance of Pericytes in Healing: Wounds and other Pathologies",
+    "authors": [
+      "Hannah M. Thomas",
+      "A. Cowin",
+      "S. Mills"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3614349632155474,
+    "depth": 0,
+    "corpus_id": "CorpusId:3815632"
+  },
+  {
+    "snippet": "To assess whether macrophages in prenatal human dermis express important lineage molecules, skin of defined gestational age groups and, in parallel, of adults was immunostained for CD45, CD206, and CD209. Similar to adult skin, 1, arrows), most probably macrophages, as well as CD45 \u00fe CD206 \u00fe CD209 \u00c0 cells (Figure 1, arrrowheads) are identified already in embryonic dermis. The staining intensity of CD206 and CD209 in embryonic skin is mostly comparable to adult skin, yet some cells show only weak expression (compare Figure 2, left column, arrowhead), implying that the upregulation of these markers occurs in the skin. Of note, CD206 staining of linear structures, most likely blood vessels, is observed occasionally in prenatal but not in adult skin (Figure 1, middle column, double arrow). Epidermal CD45 \u00fe cells at all age groups investigated lack CD206 and CD209. To evaluate whether CD1c and CD209 are mutually exclusive, triple immunofluorescence staining was performed. We found virtually nonoverlapping populations of CD206 \u00fe CD1c \u00fe DDCs (Figure 2, arrowhead) and CD206 \u00fe CD209 \u00fe macrophages (arrow) already in prenatal dermis, similar to what has been reported in adult dermis, with the exception that CD1c \u00fe cells more often lack or weakly express CD206. Statistical analysis revealed that the frequency of CD1c \u00fe leukocytes significantly increases with gestational age (Figure 2b) and that CD209 \u00fe cells outnumber CD1c \u00fe cells between 9 and 14 weeks EGA, reaching adult-like ratios already by midgestation (Figure 2c). By flow cytometry, we found that in all age groups investigated CD11c \u00fe cells are detectable and that CD11c expression is restricted to CD45 \u00fe leukocytes (Figure 3a). In depth analysis of HLA-DR high CD45 \u00fe cells reveals that CD1c \u00fe CD11c \u00fe cells are already present in the developing skin.",
+    "paper_id": "7818908",
+    "title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
+    "authors": [
+      "C. Schuster",
+      "C. Vaculik",
+      "Marion Prior",
+      "C. Fiala",
+      "M. Mildner",
+      "W. Eppel",
+      "G. Stingl",
+      "A. Elbe-B\u00fcrger"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.35973638402891256,
+    "depth": 0,
+    "corpus_id": "CorpusId:7818908"
+  },
+  {
+    "snippet": "wall or connective tissue cells situated in the interstitium. The latter cells were often accumulated in the perivascular space. However, connective tissue cells were also observed that were not overtly associated with blood vessels. Interstitial fibroblasts could be subsetted into \u2423-SMA-positive/ASO2-negative cells (Fig. 2E and G and Fig. 3E and G), termed myofibroblasts, and \u2423-SMAnegative/ASO2-positive cells (Fig. 2F and H and Fig. 3F and H), termed fibroblasts. \n\nAs shown in Table 2, the expression of markers in microvascular pericytes was similar in the tumour stroma, pannus formation and cutaneous healing wounds. These cells expressed the \u24231\u24241 integrin, \u2423-SMA, PDGF \u2424-receptors, HMW-MAA and \u24235\u24241 integrin. In addition, \u24232\u24241 integrin was detected in microvascular pericytes in cutaneous healing wounds. In the normal tissue, pericytes were negative for PDGF \u2424-receptors and HMW-MAA, consistent with previous studies identifying these markers as activation markers [26,30]. \n\nConnective tissue cells in the tumour stroma of colorectal adenocarcinoma not associated with vessels expressed \u2423-SMA and integrins \u24231\u24241 and \u24235\u24241, but not the PDGF \u2424-receptor or HMW-MAA. On the basis of their expression of \u2423-SMA and the positioning relative to the vasculature, these cells were identified as myofibroblasts. The corresponding population of cells in rheumatoid arthritis and cutaneous healing wounds expressed \u24235\u24241 integrins, ASO2, the PDGF \u2424-receptor and HMW-MAA. They, however, did not express \u2423-SMA or \u24231\u24241 integrins. Because of the lack of \u2423-SMA, these cells did not meet the criteria for myofibroblasts and were therefore identified as fibroblasts. These findings provide further support that the expression of \u24231\u24241 integrins co-distributes with that of \u2423-SMA.",
+    "paper_id": "14597204",
+    "title": "Integrin \u03b11\u03b21 is involved in the differentiation into myofibroblasts in adult reactive tissues in vivo",
+    "authors": [
+      "A. Rodr\u00edguez",
+      "J. Kar\u00e9n",
+      "H. Gardner",
+      "B. Gerdin",
+      "K. Rubin",
+      "C. Sundberg"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3579152567309107,
+    "depth": 0,
+    "corpus_id": "CorpusId:14597204"
+  },
+  {
+    "snippet": "They express adhesion molecules such as VCAM-1 and E-selectin, triggering neutrophil movement and tissue migration [156][157][158][159]. Pericytes exert their anti-inflammatory effects by preventing the activation of chemokine-recruited T cells in response to specific antigens [160]. Pericytes, which undergo dedifferentiation and transform into activated fibroblasts that produce collagen, can exhibit profibrotic activity [161]. The growth of scar tissue during hypertrophic scarring may occur because pericytes or transdifferentiated myofibroblasts are more sensitive to low oxygen levels, which blocks or partially blocks small blood vessels [155,162]. Studies have indicated that normal wound healing can occur despite decreased blood vessel growth and capillary bursts [163,164]. This observation is attributed to the fact that despite having less blood vessel creation than adult skin, lesions to foetal skin and the oral mucosa heal without leaving scars [163,165]. The reduced creation of scars in foetal skin and the oral mucosa may be attributed to a weaker inflammatory response and the accelerated development of newly formed capillary networks [163]. Anti-angiogenic medications have been proposed as potential therapeutics for hypertrophic scars and keloids [163,166,167]. A study suggests that inhibiting angiogenesis during skin wound healing is potentially counterintuitive. Normal skin regeneration can still occur despite a decreased number of capillaries if tissues receive sufficient nutrients [163]. Prompt treatment of skin lesions remains challenging because of the lack of efficient wound-healing techniques. Stem cell-based therapies, particularly the use of mesenchymal stem cells (MSCs) extracted from adult and foetal tissues, have been popular for treating acute and chronic skin lesions. Stem cells can stimulate angiogenesis, promote neovascularization and accelerate wound healing [168].",
+    "paper_id": "275928557",
+    "title": "Recent advances in the role of neuroregulation in skin wound healing",
+    "authors": [
+      "Abdullah Al Mamun",
+      "Chuxiao Shao",
+      "Peiwu Geng",
+      "Shuanghua Wang",
+      "Jian-Feng Xiao"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3554946104624999,
+    "depth": 0,
+    "corpus_id": "CorpusId:275928557"
+  },
+  {
+    "snippet": "Despite their importance, capillaries are an understudied blood vessel type. They are thinly fragile, very numerous and difficult to extract from tissues and evaluate side-by-side with larger blood vessels. Capillary tube networks consist of endothelial cell-lined tubes that are invested with pericytes found on their abluminal surface (Adams and Alitalo, 2007;Bowers et al., 2016;Kemp et al., 2022;Davis and Kemp, 2023;Lin and Davis, 2023;Spurgin and Cleaver, 2024;Yrigoin and Davis, 2024). Together, ECs and pericytes co-contribute to the deposition of the capillary basement membrane matrix, an important extracellular matrix (ECM) structure necessary for capillary maturation and stabilization (Stratman et al., 2009a;Stratman and Davis, 2012;Davis and Kemp, 2023). Capillaries are critical vessels for oxygen and nutrient exchange for all vascularized tissues, but they also contribute angiocrine signals to facilitate tissue development, maturation, specialization and stabilization (Ramasamy et al., 2015;Rafii et al., 2016;Augustin and Koh, 2017). We have proposed that healthy capillaries are disease suppressors in that they can deliver signals to surrounding cell types to inhibit disease initiation by affecting processes such as inflammation, vascular permeability, hemorrhage, thrombosis, fibrosis and autoimmunity (Davis et al., 2015;Davis and Kemp, 2023). \n\nConsiderable progress has occurred in our understanding of the biology of EC morphogenesis including lumen and tube formation, EC sprouting behavior, and pericyte recruitment to EC tubes to induce basement membrane matrix assembly (Stratman and Davis, 2012;Duran et al., 2017;Lin et al., 2021;Davis and Kemp, 2023).",
+    "paper_id": "273774499",
+    "title": "Enhancing human capillary tube network assembly and maturation through upregulated expression of pericyte-derived TIMP-3",
+    "authors": [
+      "Ksenia Yrigoin",
+      "Kaitlyn N. Bernard",
+      "M. A. Casta\u00f1o",
+      "O. Cleaver",
+      "S. Sumanas",
+      "George E. Davis"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3544289123930477,
+    "depth": 0,
+    "corpus_id": "CorpusId:273774499"
+  },
+  {
+    "snippet": "Analysis of both single representative samples of adult versus neonatal skin samples (Figure 1A), multiple samples from each age group (Figure S1A,B), and pooled samples (Figures 1B,C and S1C) revealed that: (i) CD45 \u2212 dermal cells were present in higher numbers in neonatal foreskin (~90%) compared to adult breast skin (~40%), concomitant with an increase in CD45 + cells in adult skin (~55%) compared to neonatal skin (~8%; Figure 1B; p < 0.001); whereas (ii) the CD45 \u2212 CD49a bri pericyte fraction was significantly lower in older adult breast skin (4.2 \u00b1 1.1%) compared to neonatal foreskin (21.5 \u00b1 1.6%) expressed as a percentage of CD45 \u2212 dermal cells (Figure 1B; Figure S1C; Figure 1C, right panel; p < 0.0001); and (iii) the CD45 \u2212 CD49a dim fibroblast fraction was similar in both (Figure 1A, right panel; Figure 1C, left panel). Since this difference in pericyte numbers could potentially be attributed to differences in anatomical site (foreskin versus breast), adult breast skin samples from donors aged 17-61 yo were analysed by in situ immunostaining for the well accepted pericyte marker PDGFR\u03b2 (Figure 1D), quantitating the numbers of PDGF\u03b2R + cells using Image J, and restricting our analysis to a depth of 0.2 mm from the dermo-epidermal junction to ensure minimal variation. A significant decrease in pericyte numbers was observed in skin samples from donors aged over 50 years compared to skin from 17-30 yo and 31-40 yo donors (Figure 1E, left panel; 9 random fields from each of 3 donors per age group, p < 0.001), when expressed as the number of PDGFR\u03b2 + pericytes/dermal area.",
+    "paper_id": "243882700",
+    "title": "Dermal Pericytes Exhibit Declined Ability to Promote Human Skin Regeneration with Ageing in 3D Organotypic Culture Models",
+    "authors": [
+      "Lizhe Zhuang",
+      "R. Visalakshan",
+      "P. Kaur"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3544289123930477,
+    "depth": 0,
+    "corpus_id": "CorpusId:243882700"
+  },
+  {
+    "snippet": "Interestingly, expression of these genes has not been detected in pericytes, indicating an abrupt transition from arteriolar smooth muscle cells (aaSMCs) to pericytes along the arteriole-capillary boundary. Like endothelial cells, the zonal distribution of mural cells is underscored by the gene expression and physiological differences. Pericytes in adult mouse brain show abundant expression of SLC, ABC, and ATP transporters [31], which differs from lung pericytes, suggesting that brain pericytes may exhibit organotypic specialization that contributes to the formation and function of the BBB. Preliminary results suggest that the ATP transporter ATP13A5 is abundantly expressed in pericytes, similar to KCNJ8 and VTN (Table 2) [40]. \n\nIn addition, several studies have shown that pericytes of different morphologies, such as ensheathing, mesh, and thin strand, can be identified along the vascular tree contributing to BBB formation [41,42], although the molecular signatures of these pericyte subtypes remain unclear. Finally, scRNA-seq analyses also identified a unique cluster of fibroblasts, which are thought to be distinct from mural cells [43,44], that exhibit enriched expression of genes encoding fibrillary and non-fibrillary collagens, collagen-modifying enzymes, and proteins involved in collagen fibril spacing, including proteoglycan lumican (Lum) and decorin (Dcn) (Table 2). Gene ontology annotations of these fibroblast-associated genes suggest that these cells could be involved in the formation of extracellular matrix (ECM) as well as cell adhesion and migration.",
+    "paper_id": "258745987",
+    "title": "Disentangling brain vasculature in neurogenesis and neurodegeneration using single-cell transcriptomics",
+    "authors": [
+      "Elizabeth E. Crouch",
+      "Tara Joseph",
+      "Elise Marsan",
+      "E. Huang"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3544289123930477,
+    "depth": 0,
+    "corpus_id": "CorpusId:258745987"
+  },
+  {
+    "snippet": "Pericytes are mural vascular cells found predominantly on the abluminal wall of capillaries, where they contribute to the maintenance of capillary structural integrity and vascular permeability. Generally quiescent cells in the adult, pericyte activation and proliferation occur during both physiological and pathological vascular and tissue remodeling. A considerable body of research indicates that pericytes possess attributes of a multipotent adult stem cell, as they are capable of self-renewal as well as commitment and differentiation into multiple lineages. However, pericytes also display phenotypic heterogeneity and recent studies indicate that lineage potential differs between pericyte subpopulations. While numerous microenvironmental cues and cell signaling pathways are known to regulate pericyte functions, the roles that metabolic pathways play in pericyte quiescence, self-renewal or differentiation have been given limited consideration to date. This review will summarize existing data regarding pericyte metabolism and will discuss the coupling of signal pathways to shifts in metabolic pathway preferences that ultimately regulate pericyte quiescence, self-renewal and trans-differentiation. The association between dysregulated metabolic processes and development of pericyte pathologies will be highlighted. Despite ongoing debate regarding pericyte classification and their functional capacity for trans-differentiation in vivo, pericytes are increasingly exploited as a cell therapy tool to promote tissue healing and regeneration. Ultimately, the efficacy of therapeutic approaches hinges on the capacity to effectively control/optimize the fate of the implanted pericytes. Thus, we will identify knowledge gaps that need to be addressed to more effectively harness the opportunity for therapeutic manipulation of pericytes to control pathological outcomes in tissue remodeling.",
+    "paper_id": "211097888",
+    "title": "Metabolic Coordination of Pericyte Phenotypes: Therapeutic Implications",
+    "authors": [
+      "E. Nwadozi",
+      "Martina Rudnicki",
+      "T. Haas"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3544289123930477,
+    "depth": 0,
+    "corpus_id": "CorpusId:211097888"
+  },
+  {
+    "snippet_index": 25,
+    "quotes": [
+      "Inflammatory and non-inflammatory pericytes have been described and subdivided into Type-1 pericytes (PC1) and Type-2 pericytes (PC2). PC1s are non-inflammatory and tend to be the resting state of pericytes without injury or infection.",
+      "In young healthy patients, nearly all pericytes exhibit a non-inflammatory morphology. 71,85,86 However, aging results in an increase in the population of inflammatory pericytes, which is consistent with enhanced inflammation and BBB permeability associated with age. 85"
+    ],
+    "summary": "This snippet distinguishes Pericyte_1_non_inflamm (Type-1 pericytes or PC1s) as the non-inflammatory, resting state pericytes present in healthy tissues. It also notes that most pericytes in young, healthy individuals exhibit a non-inflammatory morphology, but the proportion of inflammatory pericytes increases with age.",
+    "categories": [
+      "function",
+      "morphology",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:251222572",
+    "source_title": "Targetability of the neurovascular unit in inflammatory diseases of the central nervous system",
+    "source_authors": "Brandon C. Smith et al.",
+    "source_year": null,
+    "snippet": "Similar to ECs, pericytes respond robustly to various signaling molecules. Inflammatory and non-inflammatory pericytes have been described and subdivided into Type-1 pericytes (PC1) and Type-2 pericytes (PC2). PC1s are non-inflammatory and tend to be the resting state of pericytes without injury or infection. PC2s tend to increase in frequency with and are highly responsive to inflammation. 73,85 It is likely, as is the case with astrocytes and microglia that there is a spectrum of activation states, but as the study of pericytes is still in its infancy, this has not yet been fully elucidated. In young healthy patients, nearly all pericytes exhibit a non-inflammatory morphology. 71,85,86 However, aging results in an increase in the population of inflammatory pericytes, which is consistent with enhanced inflammation and BBB permeability associated with age. 85 Both pericyte subtypes contribute to the F I G U R E 2 NVU interaction network. Cells within the NVU interact through intricate signaling mechanisms that allow for proper functioning of the BBB. ECs receive a variety of protective signals from other NVU cells that upregulate tight junction formation thus enhancing BBB integrity. These factors include, but are not limited to, TGF\u03b2, Ang-1, APOE, Shh, Wnts, glial-derived neurotrophic factor, insulin-like growth factor (IGF)-1, and retinoic acid. Contrastingly, ECs may also receive signals that downregulate tight junction proteins, particularly during inflammatory events, such as TNF\u03b1, NO, MMPs, endothelins, and glutamate that lead to increased BBB permeability. Importantly, ECs also maintain the ability to signal to pericytes through VEGF and N-cadherin, which are necessary for BBB maintenance. Immune checkpoint proteins, such as the PD-1/PD-L1 complex, regulate the cellular activity of microglia and neurons to modulate BBB integrity as well as dampen the inflammatory activity of infiltrating peripheral immune cells, which increases BBB permeability."
+  }
+]

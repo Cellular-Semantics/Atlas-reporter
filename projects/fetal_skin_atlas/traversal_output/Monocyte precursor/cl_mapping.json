@@ -1,0 +1,26 @@
+{
+  "cell_type_label": "Monocyte precursor",
+  "working_definition": "A myeloid progenitor cell present in prenatal human skin that is committed to the granulocyte and monocyte lineages. Detected as part of system-wide haematopoiesis occurring in peripheral organs during fetal development, this cell represents either a granulocyte-monocyte progenitor (GMP) or a promonocyte that has seeded the skin from the fetal liver or bone marrow.",
+  "searches_performed": [
+    "monocyte precursor promonocyte (CL, OLS4 searchClasses, pageSize=10)"
+  ],
+  "best_match": {
+    "cl_term": "promonocyte",
+    "cl_id": "CL:0000559",
+    "cl_definition": "A precursor in the monocytic series, being a cell intermediate in development between the monoblast and monocyte. This cell is CD11b-positive and has fine azurophil granules.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The 'monocyte precursor' label in the atlas could encompass both GMPs (CL:0000557) and promonocytes (CL:0000559). CL:0000559 'promonocyte' is selected as the best broad match because it represents the most committed monocyte precursor stage, being intermediate between monoblast and mature monocyte. However, the atlas label may also include earlier GMP-stage progenitors. The promonocyte definition notes fetal liver and yolk sac as developmental locations, consistent with the prenatal skin context where myeloid progenitors are detected (Suo et al., 2022).",
+  "other_candidates": [
+    {
+      "cl_term": "granulocyte monocyte progenitor cell",
+      "cl_id": "CL:0000557",
+      "cl_definition": "A hematopoietic progenitor cell that is committed to the granulocyte and monocyte lineages.",
+      "reason_rejected": "Also a valid candidate. GMPs are bipotent progenitors that give rise to both granulocytes and monocytes. The atlas label 'monocyte precursor' implies a more monocyte-committed cell, making promonocyte a slightly better match. However, given that Suo et al. 2022 detected 'myeloid progenitors' (which includes GMPs) in prenatal skin, this remains a close alternative."
+    }
+  ],
+  "recommendation": "Use CL:0000559 (promonocyte) as a broad match. GMP (CL:0000557) is an equally plausible match depending on the developmental stage of the cells captured in the atlas.",
+  "new_term_needed": false
+}

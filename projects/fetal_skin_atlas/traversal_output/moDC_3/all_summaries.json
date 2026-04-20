@@ -1,0 +1,20 @@
+{
+  "cell_type": "moDC_3",
+  "summaries": [
+    {
+      "paper": "Reynolds et al. (2021)",
+      "doi": "10.1126/science.aba6500",
+      "summary": "Identifies moDC_3 as the most mature monocyte-derived DC state in adult skin. Located at the convergence of LC, myeloid DC, and mo-DC differentiation branches. Expresses maturation markers (CD83, CCR7, LAMP3, CD40, CD86), immunoregulatory genes (CD274, IDO1, CD200, PDCD1LG2, SOCS1), and migration genes (FSCN1, PLGRKT, TRAF1, BCL2A1, CFLAR, REL). This signature is shared with LC4 and migratory DC, representing a common endpoint of DC maturation/migration."
+    },
+    {
+      "paper": "McGovern et al. (2014)",
+      "doi": "10.1016/j.immuni.2014.08.006",
+      "summary": "Establishes monocyte origin of CD14+ dermal cells in human skin, providing the developmental context for the moDC lineage."
+    },
+    {
+      "paper": "Gopee et al. (2024)",
+      "doi": "10.1038/s41586-024-08002-x",
+      "summary": "Integrates adult skin dataset from Reynolds et al. (2021) including moDC annotations for cross-developmental comparison with prenatal skin."
+    }
+  ]
+}

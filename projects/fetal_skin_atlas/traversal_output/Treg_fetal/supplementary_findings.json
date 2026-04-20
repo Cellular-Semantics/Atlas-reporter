@@ -1,0 +1,42 @@
+{
+  "markers": [
+    {"gene": "FOXP3", "evidence_type": "scRNA-seq + RNAscope validation", "source_table": "Reviewer Fig. 1.26a; Fig. 2d"},
+    {"gene": "CTLA4", "evidence_type": "scRNA-seq", "source_table": "Reviewer Fig. 1.26a"},
+    {"gene": "IL2RA", "evidence_type": "scRNA-seq", "source_table": "Reviewer Fig. 1.26a"},
+    {"gene": "CXCL14", "evidence_type": "chemokine attractant expressed by placode/matrix", "source_table": "Extended Data Fig. 3f; Reviewer Fig. 1.26a"}
+  ],
+  "other_findings": [
+    {
+      "finding": "Among the T cells, Tregs have the highest expression of FOXP3, CTLA4 and IL2RA",
+      "category": "markers",
+      "source_table": "Supplementary reviewer response, Reviewer Fig. 1.26a"
+    },
+    {
+      "finding": "CXCL14 is highly expressed in placode, matrix and POSTN+ basal cells and is predicted to recruit Tregs",
+      "category": "function",
+      "source_table": "Supplementary reviewer response, Reviewer Fig. 1.26a"
+    },
+    {
+      "finding": "RNAscope validation shows FOXP3+ Tregs localising around hair follicles at 15 PCW",
+      "category": "location",
+      "source_table": "Fig. 2d, Supplementary reviewer response"
+    },
+    {
+      "finding": "Quantification of FOXP3+ cells shows preferential localization in peri-follicular vs inter-follicular areas",
+      "category": "location",
+      "source_table": "Supplementary reviewer response point 3.7"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Among the T cells, Tregs have the highest expression of FOXP3, CTLA4 and IL2RA.",
+      "source_file": "Supplementary reviewer response",
+      "context": "Violin plot analysis of Treg marker genes in prenatal skin"
+    },
+    {
+      "quote": "peri-follicular (top right) and inter-follicular (bottom right) RNAscope images of prenatal skin (representative 15 PCW sample) demonstrating ORS (SLC26A7), matrix (SHH), dermal papilla (NDP) with Tregs (FOXP3) localising around the hair follicle",
+      "source_file": "Extended Data Fig. 3f legend / Fig. 2d",
+      "context": "Spatial validation of Treg location in prenatal skin"
+    }
+  ]
+}

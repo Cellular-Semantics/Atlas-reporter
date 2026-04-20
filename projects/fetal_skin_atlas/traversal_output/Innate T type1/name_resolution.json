@@ -1,0 +1,8 @@
+{
+  "label": "Innate T type1",
+  "resolved_names": ["Innate T type1", "type 1 innate T cell", "unconventional T cell (type 1)"],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "Cell type label 'Innate T type1' is present in the fetal skin atlas annotations (Gopee et al., 2024) and corresponds to the 'type 1 innate T cell' annotation used by Suo et al. (2022) in the developing human immune system atlas. These are PLZF-expressing unconventional T cells with type 1 (IFN-gamma-producing) effector potential, arising via thymocyte-thymocyte selection."
+}

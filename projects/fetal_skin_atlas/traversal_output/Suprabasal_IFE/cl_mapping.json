@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "Suprabasal interfollicular epidermal cell",
+  "working_definition": "A mature suprabasal keratinocyte of the fetal interfollicular epidermis, increasing after 11 PCW. Represents the terminally differentiating keratinocyte population expressing KRT1 and KRT10, positioned above the basal layer in the stratifying fetal epidermis.",
+  "searches_performed": [
+    "suprabasal cell of epidermis (CL)",
+    "interfollicular epidermal cell (CL)",
+    "suprabasal keratinocyte (CL)"
+  ],
+  "best_match": {
+    "cl_term": "suprabasal keratinocyte",
+    "cl_id": "CL:4033013",
+    "cl_definition": "A keratinocyte that resides in the epidermal suprabasal layer and expresses differentiation markers, including keratin 1 and keratin 10, in both humans and mice.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:4033013 describes a suprabasal keratinocyte expressing KRT1/KRT10, which matches the mature suprabasal IFE population. Although this is a fetal cell state, the defining features (suprabasal position, KRT1/KRT10 expression) align with the CL term.",
+  "other_candidates": [
+    {
+      "cl_term": "spinous cell of epidermis",
+      "cl_id": "CL:0000649",
+      "reason_rejected": "More specific to the stratum spinosum; the Suprabasal IFE likely encompasses both spinous and early granular differentiating cells."
+    }
+  ],
+  "recommendation": "Use CL:4033013 (suprabasal keratinocyte) as exact match.",
+  "new_term_needed": false
+}

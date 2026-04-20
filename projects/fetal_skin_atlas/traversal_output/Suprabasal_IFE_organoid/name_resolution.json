@@ -1,0 +1,10 @@
+{
+  "label": "Suprabasal IFE",
+  "resolved_names": [
+    "suprabasal keratinocyte of interfollicular epidermis"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Suprabasal IFE cells are mature differentiating keratinocytes above the basal layer. No specific CL term exists for suprabasal IFE keratinocytes."
+}

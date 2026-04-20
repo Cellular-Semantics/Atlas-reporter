@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "B cell",
+  "working_definition": "A mature B lymphocyte present in fetal skin from around 10 PCW, representing the terminal differentiation stage of the B cell lineage in the prenatal skin. These cells express surface immunoglobulin (IgM) and CD19, and are detected by scRNA-seq in the prenatal skin atlas.",
+  "searches_performed": [
+    "B cell (CL, OLS4)",
+    "B lymphocyte (CL)"
+  ],
+  "best_match": {
+    "cl_term": "B cell",
+    "cl_id": "CL:0000236",
+    "cl_definition": "A lymphocyte of B lineage that has the phenotype surface IgM-positive and is capable of B cell mediated immunity.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000236 'B cell' is an exact match for the 'B cell' annotation in the fetal skin atlas. The atlas uses standard B cell nomenclature for the mature B lymphocyte population identified by scRNA-seq. The CL term defines B cells by surface IgM expression and B cell mediated immunity capability, which aligns with the mature B cell population annotated in this atlas.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000236 (B cell). This is a precise exact match.",
+  "new_term_needed": false
+}

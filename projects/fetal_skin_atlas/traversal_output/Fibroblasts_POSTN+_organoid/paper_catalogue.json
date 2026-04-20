@@ -1,0 +1,92 @@
+[
+  {
+    "corpusId": "273400864",
+    "doi": "10.1038/s41586-024-08002-x",
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee NH et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "source": "seed_paper"
+  },
+  {
+    "corpusId": "198252242",
+    "doi": "10.1038/s41586-020-2352-3",
+    "title": "Hair-bearing human skin generated entirely from pluripotent stem cells",
+    "authors": "Lee J et al.",
+    "year": 2020,
+    "journal": "Nature",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "83463723",
+    "doi": "10.1002/exp.20180039",
+    "title": "An updated classification of hair follicle morphogenesis",
+    "authors": "Saxena N et al.",
+    "year": 2019,
+    "journal": "Experimental Dermatology",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "58587028",
+    "doi": "10.1016/j.devcel.2018.11.034",
+    "title": "Dermal Condensate Niche Fate Specification Occurs Prior to Formation and Is Placode Progenitor Dependent",
+    "authors": "Mok KW et al.",
+    "year": 2019,
+    "journal": "Developmental Cell",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "231666430",
+    "doi": "10.1126/science.abd6644",
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "authors": "Reynolds G et al.",
+    "year": 2021,
+    "journal": "Science",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "51876552",
+    "doi": "10.7554/eLife.36468",
+    "title": "Hair follicle dermal condensation forms via Fgf20 primed cell cycle exit, cell motility, and aggregation",
+    "authors": "Biggs LC et al.",
+    "year": 2018,
+    "journal": "eLife",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "4444325",
+    "doi": "10.1038/nature12783",
+    "title": "Distinct fibroblast lineages determine dermal architecture in skin development and repair",
+    "authors": "Driskell RR et al.",
+    "year": 2013,
+    "journal": "Nature",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "202845739",
+    "doi": "10.1101/2019.11.29.300111",
+    "title": "The molecular anatomy of mouse skin during hair growth and rest",
+    "authors": "Joost S et al.",
+    "year": 2019,
+    "journal": "bioRxiv",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "252399761",
+    "doi": "10.3390/ijms23105592",
+    "title": "Identification of AGR2 Gene-Specific Expression Patterns Associated with Epithelial-Mesenchymal Transition",
+    "authors": "Martisova A et al.",
+    "year": 2022,
+    "journal": "International Journal of Molecular Sciences",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "8c604391499873b176d19c8459d6adadbb70b74d",
+    "doi": "10.1038/s41556-022-01055-2",
+    "title": "Defining transcriptional signatures of human hair follicle cell states",
+    "authors": "Heitman N et al.",
+    "year": 2022,
+    "journal": "Nature Cell Biology",
+    "source": "citation_traverse"
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "papers": {
+    "Gopee2024": {
+      "doi": "10.1038/s41586-024-08002-x",
+      "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+      "authors": "Gopee et al.",
+      "year": 2024,
+      "journal": "Nature",
+      "role": "Atlas paper - primary source for TML macrophage characterization"
+    },
+    "Suo2022": {
+      "doi": "10.1126/science.abo0510",
+      "title": "Mapping the developing human immune system across organs",
+      "authors": "Suo et al.",
+      "year": 2022,
+      "journal": "Science",
+      "role": "Source of macrophage subset marker genes used for annotation; identified microglia-like TREM2hi macrophages across developing organs"
+    },
+    "Bian2020": {
+      "doi": "10.1038/s41586-020-2316-7",
+      "title": "Deciphering human macrophage development at single-cell resolution",
+      "authors": "Bian et al.",
+      "year": 2020,
+      "journal": "Nature",
+      "role": "Described yolk-sac derived TREM2+ macrophages with microglia-like expression profile in developing organs"
+    },
+    "Goh2023": {
+      "doi": "10.1038/s41586-023-06816-9",
+      "title": "Yolk sac cell atlas reveals multiorgan functions during human early development",
+      "authors": "Goh et al.",
+      "year": 2023,
+      "journal": "Nature",
+      "role": "Identified yolk-sac derived TREM2+ macrophages shared across developing organs including skin"
+    },
+    "GarciaAlonso2022": {
+      "doi": "10.1038/s41586-022-04918-4",
+      "title": "Single-cell roadmap of human gonadal development",
+      "authors": "Garcia-Alonso et al.",
+      "year": 2022,
+      "journal": "Nature",
+      "role": "Identified TREM2+ microglia-like macrophages in developing gonads with transcriptomic profile identical to brain microglia"
+    },
+    "Kolter2020": {
+      "doi": "10.4049/jimmunol.1901077",
+      "title": "Origin and Differentiation of Nerve-Associated Macrophages",
+      "authors": "Kolter et al.",
+      "year": 2020,
+      "journal": "Journal of Immunology",
+      "role": "Described nerve-associated macrophages in mouse skin that mirror functions of brain microglia"
+    },
+    "Henn2021": {
+      "doi": "10.1126/sciadv.abi4528",
+      "title": "Xenogeneic skin transplantation promotes angiogenesis and tissue regeneration through activated Trem2+ macrophages",
+      "authors": "Henn et al.",
+      "year": 2021,
+      "journal": "Science Advances",
+      "role": "Demonstrated TREM2+ macrophages promote angiogenesis and tissue regeneration in skin transplantation"
+    },
+    "Liang2024": {
+      "doi": "10.7150/thno.94121",
+      "title": "Dynamic pathological analysis reveals a protective role against skin fibrosis for TREM2-dependent macrophages",
+      "authors": "Liang et al.",
+      "year": 2024,
+      "journal": "Theranostics",
+      "role": "Showed TREM2+ macrophages protect against skin fibrosis; disease-associated TREM2+ macrophages exhibit overlapping signatures with fetal skin counterparts"
+    },
+    "Zhu2024": {
+      "doi": "10.1002/ctm2.70026",
+      "title": "Trem2 acts as a non-classical receptor of interleukin-4 to promote diabetic wound healing",
+      "authors": "Zhu et al.",
+      "year": 2024,
+      "journal": "Clinical and Translational Medicine",
+      "role": "Demonstrated macrophage-specific Trem2 regulates anti-inflammatory polarization and wound healing in skin"
+    },
+    "Du2017": {
+      "doi": "10.1002/glia.23186",
+      "title": "Synaptotagmin-11 inhibits cytokine secretion and phagocytosis in microglia",
+      "authors": "Du et al.",
+      "year": 2017,
+      "journal": "Glia",
+      "role": "Characterized SYT11 as an immunomodulatory gene in microglia regulating IL-6 production"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "cell_type_label": "Pro B cell",
+  "working_definition": "A B cell progenitor at an intermediate developmental stage in fetal skin, characterized by immunoglobulin heavy chain gene rearrangement (VDJ) and increasing expression of B cell transcripts MS4A1, CD79B, DNTT and HLA-DRA. These cells are detected by scRNA-seq in the prenatal skin atlas.",
+  "searches_performed": [
+    "pro-B cell (CL, OLS4)"
+  ],
+  "best_match": {
+    "cl_term": "pro-B cell",
+    "cl_id": "CL:0000826",
+    "cl_definition": "A precursor B cell that is CD34-positive, CD19-positive, CD22-positive, CD10-positive/negative.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000826 'pro-B cell' is an exact match for the 'Pro B cell' annotation in the fetal skin atlas. The CL term defines pro-B cells as CD34+CD19+CD22+ precursor B cells, which corresponds to the developmental stage at which immunoglobulin heavy chain VDJ rearrangement occurs. The atlas annotation aligns with this standard B cell developmental stage.",
+  "other_candidates": [
+    {
+      "cl_term": "late pro-B cell",
+      "cl_id": "CL:0002048",
+      "cl_definition": "A pro-B cell that has completed DJ rearrangement and is undergoing VDJ rearrangement.",
+      "reason_rejected": "Too specific: the atlas annotation 'Pro B cell' encompasses the full pro-B cell stage, not specifically the late pro-B cell fraction."
+    }
+  ],
+  "recommendation": "Use CL:0000826 (pro-B cell). This is a precise exact match.",
+  "new_term_needed": false
+}

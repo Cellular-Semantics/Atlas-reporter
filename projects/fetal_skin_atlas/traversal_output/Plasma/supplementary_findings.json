@@ -1,0 +1,53 @@
+{
+  "markers": [
+    {
+      "gene": "SDC1",
+      "evidence_type": "known marker",
+      "source_table": "Table S2"
+    },
+    {
+      "gene": "MZB1",
+      "evidence_type": "known marker",
+      "source_table": "Table S2"
+    },
+    {
+      "gene": "CD38",
+      "evidence_type": "known marker",
+      "source_table": "Table S2"
+    },
+    {
+      "gene": "TNFRSF17",
+      "evidence_type": "known marker",
+      "source_table": "Table S2"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Highest expression of SDC1, MZB1, CD38, and TNFRSF17 in plasma cells distinguishes them from other B lineage cells.",
+      "category": "marker expression comparison",
+      "source_table": "Table S2"
+    },
+    {
+      "finding": "Plasma cells are a minor population in adult tissues and are predominantly found in lamina propria and bone marrow.",
+      "category": "spatial distribution",
+      "source_table": "Table S1"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Plasma cells (SDC1+, MZB1+, CD38+, TNFRSF17+)",
+      "source_file": "Table S2",
+      "context": "Cell type definitions and marker genes"
+    },
+    {
+      "quote": "Highest expression of SDC1, MZB1, CD38, and TNFRSF17 in plasma cells distinguishes them from other B lineage cells.",
+      "source_file": "Table S2",
+      "context": "Marker expression comparison among B cell types"
+    },
+    {
+      "quote": "Plasma cells are a minor population in adult tissues and are predominantly found in lamina propria and bone marrow.",
+      "source_file": "Table S1",
+      "context": "Cell type distribution across tissues"
+    }
+  ]
+}

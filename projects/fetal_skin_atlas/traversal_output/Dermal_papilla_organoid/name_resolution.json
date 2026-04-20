@@ -1,0 +1,11 @@
+{
+  "label": "Dermal papilla",
+  "resolved_names": [
+    "Dermal papilla",
+    "Dp"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Dermal papilla (Dp) identified in SkO fibroblast compartment. NDP+, SOX2+ (Extended Data Fig. 3h). Trajectory alignment with prenatal skin."
+}

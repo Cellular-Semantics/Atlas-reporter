@@ -1,0 +1,31 @@
+{
+  "cell_type": "DC1 (cDC1)",
+  "scope": "fetal",
+  "summaries": [
+    {
+      "source": "Gopee et al. (2024) - atlas paper",
+      "doi": "10.1038/s41586-024-08002-x",
+      "key_findings": "DC1 is annotated as a fine-grained immune cell type in prenatal human skin (7-17 PCW). Visium spatial transcriptomics and Cell2location deconvolution show DC1 co-locating with pre-dermal condensate cells, DC2, LTi, and ILC3 in the dermis. Innate immune cells including dendritic cells were present from early gestation. The paper's focus on macrophages means DC1 receives limited direct discussion in the main text."
+    },
+    {
+      "source": "Botting & Haniffa (2020)",
+      "doi": "10.1111/imm.13192",
+      "key_findings": "DC1 and DC2 are present in first-trimester human skin and closely resemble their adult counterparts. Macrophages outnumber DCs in the first trimester but reach adult ratios by mid-gestation. DC1 and DC2 were identified prior to bone marrow production, suggesting fetal liver-derived origin. Fetal skin DCs are otherwise poorly described beyond their presence. Fetal splenic DCs, transcriptionally similar to fetal skin DCs, are immunosuppressive in an arginase-2 dependent manner."
+    },
+    {
+      "source": "Suo et al. (2022)",
+      "doi": "10.1126/science.abo0510",
+      "key_findings": "DC subset transcriptional profiles are conserved between adult and prenatal counterparts. In the thymus, CD8AA and type 1 innate T cells colocalize with type 1 DCs (DC1) near the cortico-medullary junction. Macrophages, mast cells, and NK cells transcriptomically acquire immune effector functions between 10-12 PCW, coinciding with MHCII upregulation and expansion of adaptive lymphocytes."
+    },
+    {
+      "source": "Lukowski et al. (2021)",
+      "doi": "10.1016/j.isci.2021.102462",
+      "key_findings": "cDC1 are defined by XCR1 and CLEC9A expression. Development depends on transcription factors IRF8, ID2, and Batf3. cDC1 in mice express CD8a/CD103; human counterparts express CD141. The Batf3-dependent lineage shows heterogeneity including XCR1-negative intermediates."
+    },
+    {
+      "source": "Schroth et al. (2020)",
+      "doi": "10.3389/fimmu.2020.00798",
+      "key_findings": "cDC1 development requires BATF3 and IRF8. Surface markers: XCR1+, Cadm1+, CD172a-. cDC1 present antigens to and stimulate CD8+ T cell responses. cDC2 and pDCs can retain cross-presentation ability when stimulated."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "label": "Cuticle/cortex",
+  "resolved_names": [
+    "Cuticle/cortex",
+    "Cuticle and cortex"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Cuticle/cortex cells identified in SkO along the IRS trajectory (Fig. 2d, Extended Data Fig. 4a)."
+}

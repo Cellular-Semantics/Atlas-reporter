@@ -1,0 +1,10 @@
+{
+  "label": "Dermal papilla",
+  "resolved_names": [
+    "Dermal papilla"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Cell type 'Dermal papilla' identified in the prenatal skin atlas (Gopee et al., 2024)."
+}

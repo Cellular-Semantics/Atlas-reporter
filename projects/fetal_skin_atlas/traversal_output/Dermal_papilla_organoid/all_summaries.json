@@ -1,0 +1,20 @@
+[
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "the Dc becomes encapsulated at its base as the Dp (NDP + , SOX2 + )",
+    "relevance": "Dp formation"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "RSPO3 from the Dp was predicted to interact with LGR4 and LGR6 in overlying matrix cells to contribute to the proliferation of HF epithelial cells",
+    "relevance": "Dp signaling"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "we observed a high number of matching TFs across pseudotime, which indicated that there are similar activated gene regulatory programs between prenatal skin and SkO during HF fibroblast differentiation",
+    "relevance": "SkO-prenatal alignment"
+  }
+]

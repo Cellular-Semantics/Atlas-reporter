@@ -1,0 +1,25 @@
+{
+  "markers": [],
+  "other_findings": [
+    "Intermediate maturation stage mast cell in fetal skin",
+    "CD117+ with immature granule content",
+    "Tryptase transcripts detectable but granule staining negative"
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Mast cells have been detected in fetal skin as early as 8 PCW, 41 and continue to mature and expand throughout the second trimester.",
+      "source_file": "Botting and Haniffa 2020 (CorpusId:218615208)",
+      "context": "Mast cell expansion through second trimester"
+    },
+    {
+      "quote": "Mast cells in first-and second-trimester fetal skin contain immature granules, 39,62 which is reflected in the delayed detection of positive tryptase or toluidine blue staining in the second trimester, 8,39 despite tryptase transcripts being detected from 8 PCW 41 and the presence of a distinct ª 2020 The Authors. Immunology published by John Wiley & Sons Ltd., Immunology, 160, 149-156 population of CD117 + mast cells being detected from 10 to 12 PCW.",
+      "source_file": "Botting and Haniffa 2020 (CorpusId:218615208)",
+      "context": "Mast cell granule maturation in fetal skin second trimester"
+    },
+    {
+      "quote": "Mature chymase + mast cells are not present until the end of the second trimester, and even then they are scarce in comparison to adult skin in which approximately 50% of mast cells are chymase + .",
+      "source_file": "Botting and Haniffa 2020 (CorpusId:218615208)",
+      "context": "Chymase-positive mast cell maturation timeline"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "label": "MEMP - Megak",
+  "resolved_names": [
+    "MEMP - Megak",
+    "megakaryocyte-erythroid-mast cell progenitor biased toward megakaryocyte lineage"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "MEMP defined in atlas; Megak suffix indicates megakaryocyte-biased substate"
+}

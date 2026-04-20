@@ -1,0 +1,26 @@
+{
+  "markers": [
+    {"gene": "CDK1", "evidence_type": "DE analysis", "source_table": "Reynolds et al. (2021) Fig 4b,d"},
+    {"gene": "PCNA", "evidence_type": "DE analysis", "source_table": "Reynolds et al. (2021) Fig 4b,d"},
+    {"gene": "MKI67", "evidence_type": "DE analysis", "source_table": "Negri & Watt (2022), Cheng et al. (2018)"}
+  ],
+  "other_findings": [
+    {
+      "finding": "Reynolds Supplementary Table S1, which contains per-cluster DEGs, was not accessible via the PMC supplemental material API or Europe PMC full text API. The cluster-to-group mapping was found in the Figure 4d legend of the full text PDF. Per-cluster marker genes beyond CDK1/PCNA would require Table S1 or the ArrayExpress deposit (E-MTAB-8142).",
+      "category": "data_access",
+      "source_table": "N/A"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "undifferentiated KC (clusters 1, 5), proliferating (cluster 2), differentiated KC (clusters 3, 4, 6, 7), differentiated KC* (cluster 8)",
+      "source_file": "Reynolds et al. (2021) Figure 4d legend",
+      "context": "Complete cluster-to-group mapping for all 8 keratinocyte Leiden clusters"
+    },
+    {
+      "quote": "Proliferating keratinocytes (CDK1+,PCNA+) have lower expression of suprabasal cell transcripts e.g. KRT1, KRT10 that characterize differentiated keratinocytes",
+      "source_file": "Reynolds et al. (2021) main text",
+      "context": "Marker genes for the proliferating keratinocyte group"
+    }
+  ]
+}

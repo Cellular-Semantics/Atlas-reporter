@@ -1,0 +1,14 @@
+[
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "IRS trajectory, involving placode, matrix, cuticle/cortex and IRS",
+    "relevance": "IRS trajectory"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH + ), outer root sheath (ORS) (SLC26A7 + ), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)",
+    "relevance": "Cuticle/cortex identification"
+  }
+]

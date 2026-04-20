@@ -1,0 +1,53 @@
+{
+  "markers": [
+    {
+      "gene": "IL1RL1",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "gene": "GATA3",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "gene": "IL7R",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "gene": "TNFRSF18",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 4"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "ILC2_3 cells are predominantly located in the lamina propria in adult tissue",
+      "category": "spatial location",
+      "source_table": "Supplementary Table 9"
+    },
+    {
+      "finding": "ILC2_3 was annotated as 'Type 2 innate lymphoid cell' with immune effector function",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table 2"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "ILC2_3 cluster marker genes: IL1RL1, GATA3, IL7R, TNFRSF18",
+      "source_file": "Supplementary Table 4",
+      "context": "Cluster marker gene table"
+    },
+    {
+      "quote": "ILC2_3 cells are predominantly located in the lamina propria in adult tissue",
+      "source_file": "Supplementary Table 9",
+      "context": "Summary of spatial cell type distribution"
+    },
+    {
+      "quote": "ILC2_3: annotated as 'Type 2 innate lymphoid cell' (immune effector function)",
+      "source_file": "Supplementary Table 2",
+      "context": "Cell type annotation and function summary"
+    }
+  ]
+}

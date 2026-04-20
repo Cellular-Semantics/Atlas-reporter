@@ -1,0 +1,63 @@
+{
+  "markers": [
+    {
+      "gene": "CD8A",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table S2"
+    },
+    {
+      "gene": "CD8B",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table S2"
+    },
+    {
+      "gene": "GZMA",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "GZMK",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "PRF1",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Tc cells are enriched in the stroma and periphery of adult tissue sections.",
+      "category": "spatial location",
+      "source_table": "Supplementary Table S5"
+    },
+    {
+      "finding": "Tc (CD8+ T cell) population is characterized by cytotoxic functions and IFN-gamma secretion.",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table S2"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Cytotoxic T cells (Tc, also known as CD8+ T cells) were defined by high expression of CD8A and CD8B.",
+      "source_file": "Supplementary Table S2",
+      "context": "Cluster annotations and marker gene table"
+    },
+    {
+      "quote": "Top differentially expressed genes for Tc cells include GZMA, GZMK, and PRF1.",
+      "source_file": "Supplementary Table S3",
+      "context": "DE gene summary for immune cell clusters"
+    },
+    {
+      "quote": "Tc cells are enriched in the stroma and periphery of adult tissue sections.",
+      "source_file": "Supplementary Table S5",
+      "context": "Spatial enrichment of immune cell subtypes"
+    },
+    {
+      "quote": "Tc (CD8+ T cell) population is characterized by cytotoxic functions and IFN-gamma secretion.",
+      "source_file": "Supplementary Table S2",
+      "context": "Functional annotation of annotated clusters"
+    }
+  ]
+}

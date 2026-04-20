@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "DC1 (cDC1)",
+  "working_definition": "A conventional type 1 dendritic cell (cDC1) identified in prenatal human skin (7-17 PCW), characterized by expression of CD141 (BDCA-3), XCR1, and CLEC9A. This rare dendritic cell subset, dependent on transcription factors IRF8 and BATF3 for its development, specializes in cross-presentation of exogenous antigens to CD8-positive T cells and production of interferon-beta. In the fetal skin atlas, DC1 co-locates spatially with pre-dermal condensate cells and other immune cells (DC2, LTi, ILC3), suggesting a role in the microenvironment supporting early hair follicle formation.",
+  "searches_performed": [
+    "conventional dendritic cell type 1 (OLS4, all ontologies)",
+    "cDC1 CD141-positive myeloid dendritic cell (OLS4, all ontologies)"
+  ],
+  "best_match": {
+    "cl_term": "CD141-positive myeloid dendritic cell",
+    "cl_id": "CL:0002394",
+    "cl_definition": "A myeloid dendritic cell found in the blood, lymph nodes, tonsil, bone marrow, and spleen that is CD141-positive (BDCA-3), XCR1-positive, and Clec9A-positive. This cell-type can cross-present antigen to CD8-positive T cells and can produce interferon-beta.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002394 (CD141-positive myeloid dendritic cell) matches the DC1/cDC1 cluster on all defining criteria: expression of CD141 (BDCA-3), XCR1, and CLEC9A surface markers; capacity for cross-presentation of antigens to CD8-positive T cells; and production of interferon-beta. Botting & Haniffa (2020) confirm that DC1 in first-trimester human skin 'closely resemble their adult counterparts', and Suo et al. (2022) show that DC subset transcriptional profiles are conserved between prenatal and adult. Although the CL definition lists blood, lymph nodes, tonsil, bone marrow, and spleen as locations and does not explicitly mention skin or fetal tissue, the cell identity is the same. The CL term definition may benefit from expanding its listed locations to include skin.",
+  "other_candidates": [
+    {
+      "cl_term": "CD1c-positive myeloid dendritic cell",
+      "cl_id": "CL:0002399",
+      "cl_definition": "A myeloid dendritic cell found in blood and lymphoid tissues that is CD1c-positive.",
+      "reason_rejected": "This term corresponds to cDC2 (DC2), not cDC1 (DC1). DC1 is defined by CD141/XCR1/CLEC9A expression, not CD1c."
+    }
+  ],
+  "recommendation": "Use CL:0002394 (CD141-positive myeloid dendritic cell). This is a precise exact match for the cDC1 population. The CL definition captures the key markers and function. Consider suggesting that the CL term's location list be expanded to include skin, as cDC1 are well-documented in both adult and fetal skin.",
+  "new_term_needed": false
+}

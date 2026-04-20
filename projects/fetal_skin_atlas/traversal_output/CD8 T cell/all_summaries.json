@@ -1,0 +1,105 @@
+{
+  "cell_type": "CD8 T cell",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "summaries": [
+    {
+      "source": "Gopee et al. (2024) - Atlas paper",
+      "doi": "10.1038/s41586-024-08002-x",
+      "key_findings": [
+        "CD8+ T cells are annotated as a fine-grained fetal immune cell type in prenatal skin (7-17 PCW).",
+        "T cells (including CD8+) emerge later in gestation, accompanying thymus, bone marrow and spleen formation from around 10 PCW.",
+        "Innate immune cells (macrophages, ILCs) precede adaptive immune cells (B cells, T cells) in prenatal skin.",
+        "Single-cell alpha-beta TCR sequencing was performed to resolve T cell subsets.",
+        "Pre-dermal condensate cells co-locate with dendritic and lymphoid cells, suggesting immune cell participation in early hair follicle formation niches.",
+        "Prenatal skin matrix cells express CXCL14, a chemokine that recruits Treg cells, highlighting potential immune-HF interactions."
+      ]
+    },
+    {
+      "source": "Dhariwala et al. (2020)",
+      "doi": "10.1016/j.xcrm.2020.100132",
+      "key_findings": [
+        "CyTOF and flow cytometry characterization of immune cells in human fetal skin (second trimester).",
+        "CD8+ T cells in fetal skin are predominantly naive with high Ki-67, CD27, CD31 and low CD25, CD45RO.",
+        "Up to 30% of CD8+ T cells in fetal skin are CD45RO+ (memory-like phenotype).",
+        "CD45RO+ fetal CD8+ T cells show higher Nur77 levels, suggesting antigen-dependent TCR signaling.",
+        "Fetal skin CD8+ T cells produce substantially less TNF-alpha than adult skin counterparts.",
+        "IFN-gamma production by fetal CD8+ T cells does not statistically differ from adults when populations are evaluated as a whole.",
+        "On a per-cell basis (normalized to CD45RO), fetal CD45RO+ CD8+ T cells show enriched IFN-gamma production.",
+        "CD31 expression is elevated on fetal skin T cells, suggesting enrichment for recent thymic emigrants.",
+        "The proportion of CD45RO+ cells in fetal CD8+ T cells remains relatively constant across second trimester (unlike Tregs which progressively increase)."
+      ]
+    },
+    {
+      "source": "Suo et al. (2022)",
+      "doi": "10.1126/science.abo0510",
+      "key_findings": [
+        "Cross-organ developing human immune system atlas spanning 7-17 PCW.",
+        "T cell progenitors restricted to thymus, reflecting stringent niche requirements for T cell development.",
+        "Conventional T cells (CD4+, CD8+, Tregs) identified across prenatal organs including skin.",
+        "Adult naive and central memory T cells had prenatal counterparts, but resident/effector memory T cells did not.",
+        "Broad shift from innate to adaptive immune populations across gestation.",
+        "Conserved processes of proliferation and maturation for T cells prior to migration from thymus to peripheral tissues.",
+        "Memory T cells may appear after 17 PCW."
+      ]
+    },
+    {
+      "source": "Reitermaier et al. (2021)",
+      "doi": "10.1084/jem.20201189",
+      "key_findings": [
+        "Identified a unique population of TCR alpha-beta-gamma-delta+ (DP) T cells in fetal human skin.",
+        "DP alpha-beta-gamma-delta T cells are CD4+CD8+ in early second trimester, trending toward single-positive CD4+ and CD8+ later.",
+        "DP alpha-beta-gamma-delta T cells express markers of naive cells and recent thymic emigrants (CD45RA, CD31).",
+        "SP alpha-beta T cells show stronger interactions with skin cell populations compared to DP T cells.",
+        "Fetal skin T cells were found exclusively in the dermis in situ.",
+        "Only alpha-beta TCR-expressing T cells confirmed in fetal skin (no gamma-delta-only T cells detected by earlier studies)."
+      ]
+    },
+    {
+      "source": "Botting and Haniffa (2020)",
+      "doi": "10.1111/imm.13192",
+      "key_findings": [
+        "Review of the developing immune network in prenatal skin.",
+        "Fetal skin contains both CD4+ and CD8+ T cells; naive CD4+ T cells are the most abundant and increase across development.",
+        "Fetal skin contains 4-7% the abundance of T cells found in adult skin.",
+        "Fetal skin T cells are predominantly naive, with very few memory-effector/CLA+ T cells even into the third trimester.",
+        "Lower CCL27 expression in fetal skin may partly explain reduced T cell homing.",
+        "Tregs constitute 10-20% of total T cell pool in fetal skin, comparable to adult.",
+        "Seeding of naive T cells in fetal skin occurs independently of CCL27.",
+        "Epidermal T cells have not been identified in fetal skin; T cells reside in the dermis."
+      ]
+    },
+    {
+      "source": "Schuster et al. (2012)",
+      "doi": "10.1038/jid.2012.187",
+      "key_findings": [
+        "Phenotypic characterization of leukocytes in prenatal human dermis.",
+        "Majority of fetal skin CD3+ cells express CD4; CD8+ T cells are a minor population.",
+        "Only alpha-beta TCR-expressing CD3+ cells observed in fetal skin.",
+        "Fetal skin T cell homing may occur independently of CCL27."
+      ]
+    },
+    {
+      "source": "Schreurs et al. (2021)",
+      "doi": "10.1038/s41385-021-00382-x",
+      "key_findings": [
+        "Fetal intestinal CD8+ T cells with memory phenotype detected, analogous to fetal skin findings.",
+        "Functional cytotoxic capacity (cytokine and granzyme B production) of fetal/infant CD8+ T cells markedly reduced compared to adult.",
+        "High PD-1 expression on fetal/infant effector CD8+ T cells.",
+        "Impaired CD8+ T cell functionality contributes to tolerance during foreign antigen exposure."
+      ]
+    },
+    {
+      "source": "Feyaerts et al. (2022)",
+      "doi": "10.1007/s00281-022-00931-x",
+      "key_findings": [
+        "Review of tissue-resident immune populations in the fetus.",
+        "Adaptive fetal immune memory observed after gestational week 14, following thymic emigration.",
+        "Fetal environment prioritizes immune tolerance and preferential differentiation of naive T cells into Tregs.",
+        "Fetal CD8+ T cell immunity is functional in antigen recognition, even if less potent (decreased cytotoxicity) compared to adult.",
+        "Evidence for establishing resident CD4 and CD8 memory (with unknown specificity) in gut and skin in utero.",
+        "Innate-like features of CD4+ and CD8+ T cells retained from fetal period."
+      ]
+    }
+  ]
+}

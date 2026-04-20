@@ -1,0 +1,127 @@
+[
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "Neonatal mouse pericytes, adult mouse pericytes, and adult human pericytes display differential inflammatory responses.",
+      "ICAM-1 expression after 24 h treatment with vehicle or LPS (40 ng/mL)",
+      "MCP-1 expression after 24 h treatment with vehicle or LPS (40 ng/mL)",
+      "VCAM-1 expression after 24 h treatment with vehicle or LPS (40 ng/mL)",
+      "Quantification of cytokines and chemokines released into the media via cytometric bead array (CBA) for H) IL-6, I) MCP-1, J) GM-CSF, K) G-CSF and L) RANTES between vehicle and LPS (5 ng/mL or 40 ng/mL) in adult mouse pericytes, neonatal mouse pericytes, and adult human pericytes.",
+      "suggesting partial overlap in inflammatory response pathways despite species differences."
+    ],
+    "summary": "This snippet demonstrates that pericyte subtypes, potentially including inflammatory pericytes, show differential expression of inflammatory markers (ICAM-1, VCAM-1, MCP-1, IL-6, GM-CSF, G-CSF, RANTES) in response to LPS stimulation, and that their inflammatory responses may vary between age and species, with partial overlap in the pathways involved.",
+    "categories": [
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:277917400",
+    "source_title": "Heterogeneity in pericyte inflammatory responses across age and species highlight the importance of human cell models",
+    "source_authors": "Taylor J. Stevenson et al.",
+    "source_year": null,
+    "snippet": "Fig. 1 Neonatal mouse pericytes, adult mouse pericytes, and adult human pericytes display differential inflammatory responses. Representative images of primary adult mouse pericytes, primary neonatal mouse pericytes, and primary adult human brain pericytes displaying A) PDGFR\u03b2 expression, B) ICAM-1 expression after 24 h treatment with vehicle or LPS (40 ng/mL), C) MCP-1 expression after 24 h treatment with vehicle or LPS (40 ng/mL) and D) VCAM-1 expression after 24 h treatment with vehicle or LPS (40 ng/mL). Immunocytochemistry quantification of E) ICAM-1, F) VCAM-1, and G) MCP-1 expression after treatment with vehicle or LPS (40 ng/mL) in adult mouse pericytes, neonatal mouse pericytes and adult human pericytes. Quantification of cytokines and chemokines released into the media via cytometric bead array (CBA) for H) IL-6, I) MCP-1, J) GM-CSF, K) G-CSF and L) RANTES between vehicle and LPS (5 ng/mL or 40 ng/mL) in adult mouse pericytes, neonatal mouse pericytes, and adult human pericytes. M) Nitrite concentration quantified by Griess assay in adult mouse pericytes, neonatal mouse pericytes and adult human pericytes. Data was presented as the standard error of the mean from three independent culture sets (passages 5-7) from three independent biological replicates in all experiments. Data were statistically analyzed using Graphpad Prism 8 and a two-way ANOVA with Tukey's multiple comparisons. *p < 0.05, **p < 0.01, ***p < 0.001 suggesting partial overlap in inflammatory response pathways despite species differences. \n\nLastly, we investigated nitric oxide (NO) release, a powerful pro-inflammatory agent."
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "pericytes act as a modulator of inflammatory cells, inducing the expression of adhesion molecules (ICAM-1, VCAM-1), chemokines (CXCL-1, CXCL-8), and proinflammatory molecules (TNFR-1, TNFR-2, IL-1R, TLRs, Nod-like receptors) promoting the trafficking of inflammatory cells into the site of injury [313][314][315]."
+    ],
+    "summary": "The snippet highlights pericytes' role as modulators of inflammation in skin wound healing, indicating that they induce the expression of adhesion molecules, chemokines, and various proinflammatory molecules, thereby promoting immune cell trafficking to sites of injury\u2014properties relevant to inflammatory pericyte function.",
+    "categories": [
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:53212803",
+    "source_title": "Cellular and Molecular Heterogeneity Associated with Vessel Formation Processes",
+    "source_authors": "P. R. Castro et al.",
+    "source_year": null,
+    "snippet": "In SBB, skin pericytes (SP) are located adjacent to the proliferative basal layer of the capillary network skin epidermis. In this vascular bed, they present a fusiform cell body and lateral projections with an undulated appearance and they are paralleled to the capillary course and aligned with the micro blood vessels, besides exhibiting fenestrations, essential to their role in the SBB and cell contraction [309]. SP call attention by their capacity to promote epithelial proliferation and differentiation, ECM microenvironment modification, and tissue regeneration in the absence of angiogenesis as described by Paquet-Fifield and colleagues [310]. Moreover, myeloid progenitors seem to contribute to pericyte development in embryonic skin vasculature in a mechanism TGF-signalling-dependent [311].\n\nSkin wound healing occurs with pericyte participation and they play a range of roles in this process such as angiogenic modulation, paracrine effects, and stem cell contribution to tissue [312]. During skin injury, the coagulation cascade is activated and platelets release PDGF and TGF-, activating SP detached from blood vessels and initiating a physiological process of wound healing. Therefore, pericytes act as a modulator of inflammatory cells, inducing the expression of adhesion molecules (ICAM-1, VCAM-1), chemokines (CXCL-1, CXCL-8), and proinflammatory molecules (TNFR-1, TNFR-2, IL-1R, TLRs, Nod-like receptors) promoting the trafficking of inflammatory cells into the site of injury [313][314][315]. Inflammatory cells promote the clearance of the damaged tissue and increase of growth factors levels that stimulate neovascularisation by overexpression of Ang-1 and angiogenesis. The new blood vessels formed are important to nourish the inflamed site and this vascular stabilisation is also a SP role by cell-cell interactions and paracrine signals, besides increased TGF-levels that stimulate collagen-I deposition and scar formation [316]. Furthermore, SP secrete paracrine effectors controlling the functions of parenchyma cells"
+  },
+  {
+    "snippet_index": 8,
+    "quotes": [
+      "In addition to their vascular roles, pericytes participate in immune-related regulation by secreting cytokines and chemokines, facilitating leukocyte recruitment, and extravasation under inflammatory conditions (Rustenhoven et al. 2018;Stark et al. 2013)."
+    ],
+    "summary": "This snippet describes pericytes' active participation in immune regulation by secreting cytokines and chemokines, and facilitating recruitment and extravasation of leukocytes specifically in inflammatory conditions, underscoring a key inflammatory function that may be attributed to 'inflammatory pericyte' subtypes.",
+    "categories": [
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:283140999",
+    "source_title": "Across Barriers: Blood\u2013Brain and Gut Barrier Signaling in Psychiatric Disorders",
+    "source_authors": "L. B. Binder et al.",
+    "source_year": null,
+    "snippet": "A recent single-cell transcriptomics study identified Atp13a5 as a cell-specific marker for mouse pericytes (Guo et al. 2024), enabling interrogation of pericyte heterogeneity and function (Menard et al. 2024). Pericytes also express non-cell-specific markers according to their location; for example, neural/glial antigen 2 (NG2) and \u03b1-smooth muscle cell actin (\u03b1SMA) are found on arterial pericytes, but not in pericytes ensheathing capillaries (Crisan et al. 2012). \n\nPericytes are also essential for regulating cerebral blood flow, hypoxia, and hypoglycemia response, maintaining CNS homeostasis (reviewed in Armulik et al. 2011). Loss or dysfunction of pericytes, observed in aging, neuroinflammation, and after chronic stress exposure, compromises BBB integrity and uncouples the neurogliovascular unit (Brown et al. 2019;Menard et al. 2024;Takata et al. 2021). In addition to their vascular roles, pericytes participate in immune-related regulation by secreting cytokines and chemokines, facilitating leukocyte recruitment, and extravasation under inflammatory conditions (Rustenhoven et al. 2018;Stark et al. 2013)."
+  },
+  {
+    "snippet_index": 16,
+    "quotes": [
+      "our two pericyte populations showed differing inflammatory response to well-known pro-inflammatory stimuli. When compared to the CD90 + population, the CD90 \u2212 population showed a greater pro-inflammatory response to LPS and IFN\u03b3 stimulation in terms of up-regulating ICAM1 and MCP1.",
+      "MCP1 expression and secretion were higher basally and in LPS and IFN\u03b3 stimulated conditions in the CD90 \u2212 population (Fig. 11I-L). With a report suggesting that the CD90 molecule inhibits TNF\u03b1 mediated inflammatory gene expression 69 , it will be interesting to further investigate the lower inflammatory response observed in the CD90 + population and whether knocking down CD90 might increase its inflammatory response.",
+      "the fact that two distinct pericyte-like populations elicited different levels of immunological responses is in line with our data",
+      "One cell type (CD90 + ) appears to be more na\u00efve in nature and might be primarily responsible for replenishing lost cells, remodeling vasculature during angiogenesis, and possibly involved in scar formation. The other cell type (CD90 \u2212 ) appears to be the pericytes"
+    ],
+    "summary": "This study describes two pericyte populations differing in inflammatory response, with the CD90- pericyte population (corresponding to Pericyte_2_inflamm/inflammatory pericyte) showing a stronger pro-inflammatory reaction to stimuli like LPS and IFN\u03b3, marked by upregulation of ICAM1 and MCP1. The findings support that inflammatory pericytes (CD90-) are immunologically distinct from their CD90+ counterparts.",
+    "categories": [
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:4321376",
+    "source_title": "Cultured pericytes from human brain show phenotypic and functional differences associated with differential CD90 expression",
+    "source_authors": "T. Park et al.",
+    "source_year": null,
+    "snippet": "as well as an active phagocytic role 15 . Interestingly, our two pericyte populations showed differing inflammatory response to well-known pro-inflammatory stimuli. When compared to the CD90 + population, the CD90 \u2212 population showed a greater pro-inflammatory response to LPS and IFN\u03b3 stimulation in terms of up-regulating ICAM1 and MCP1. ICAM1 up-regulation in response to proinflammatory cues has been well documented in pericytes 10,11,55,67 , and appears to be involved in extravasating peripheral leukocytes into the brain parenchyma 12 . This study also concluded that in mouse skin pericytes, the NG2 + pericytes, and not the NG2 \u2212 pericytes, orchestrated this process 12 . In our study, we could not see a large distinction in NG2 expression between the two populations (Fig. 5); however, the fact that two distinct pericyte-like populations elicited different levels of immunological responses is in line with our data. Furthermore, recent studies provided evidence that the pericytes, but not the MSCs, were mainly responsible for producing an immune response to LPS stimulation, despite appearing phenotypically indistinguishable in the perivascular region 11,68 . Moreover, MCP1 expression and secretion were higher basally and in LPS and IFN\u03b3 stimulated conditions in the CD90 \u2212 population (Fig. 11I-L). With a report suggesting that the CD90 molecule inhibits TNF\u03b1 mediated inflammatory gene expression 69 , it will be interesting to further investigate the lower inflammatory response observed in the CD90 + population and whether knocking down CD90 might increase its inflammatory response.\n\nAlthough there is a possibility of in vitro phenotypic switching, our data suggests we have two perivascular populations that are linked in terms of their origin and location but have differing roles in the neurovascular niche. One cell type (CD90 + ) appears to be more na\u00efve in nature and might be primarily responsible for replenishing lost cells, remodeling vasculature during angiogenesis, and possibly involved in scar formation. The other cell type (CD90 \u2212 ) appears to be the pericytes"
+  },
+  {
+    "snippet_index": 26,
+    "quotes": [
+      "Inflammatory and non-inflammatory pericytes have been described and subdivided into Type-1 pericytes (PC1) and Type-2 pericytes (PC2). PC1s are non-inflammatory and tend to be the resting state of pericytes without injury or infection. PC2s tend to increase in frequency with and are highly responsive to inflammation. 73,85",
+      "However, aging results in an increase in the population of inflammatory pericytes, which is consistent with enhanced inflammation and BBB permeability associated with age. 85"
+    ],
+    "summary": "The snippet describes that pericytes can be characterized as Type-2 (PC2) cells, which are highly responsive to inflammation and increase in number with age. This suggests that Pericyte 2 (inflammatory) may contribute to increased inflammation and blood-brain barrier (BBB) permeability as organisms age.",
+    "categories": [
+      "function",
+      "morphology",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:251222572",
+    "source_title": "Targetability of the neurovascular unit in inflammatory diseases of the central nervous system",
+    "source_authors": "Brandon C. Smith et al.",
+    "source_year": null,
+    "snippet": "Similar to ECs, pericytes respond robustly to various signaling molecules. Inflammatory and non-inflammatory pericytes have been described and subdivided into Type-1 pericytes (PC1) and Type-2 pericytes (PC2). PC1s are non-inflammatory and tend to be the resting state of pericytes without injury or infection. PC2s tend to increase in frequency with and are highly responsive to inflammation. 73,85 It is likely, as is the case with astrocytes and microglia that there is a spectrum of activation states, but as the study of pericytes is still in its infancy, this has not yet been fully elucidated. In young healthy patients, nearly all pericytes exhibit a non-inflammatory morphology. 71,85,86 However, aging results in an increase in the population of inflammatory pericytes, which is consistent with enhanced inflammation and BBB permeability associated with age. 85 Both pericyte subtypes contribute to the F I G U R E 2 NVU interaction network. Cells within the NVU interact through intricate signaling mechanisms that allow for proper functioning of the BBB. ECs receive a variety of protective signals from other NVU cells that upregulate tight junction formation thus enhancing BBB integrity. These factors include, but are not limited to, TGF\u03b2, Ang-1, APOE, Shh, Wnts, glial-derived neurotrophic factor, insulin-like growth factor (IGF)-1, and retinoic acid. Contrastingly, ECs may also receive signals that downregulate tight junction proteins, particularly during inflammatory events, such as TNF\u03b1, NO, MMPs, endothelins, and glutamate that lead to increased BBB permeability. Importantly, ECs also maintain the ability to signal to pericytes through VEGF and N-cadherin, which are necessary for BBB maintenance. Immune checkpoint proteins, such as the PD-1/PD-L1 complex, regulate the cellular activity of microglia and neurons to modulate BBB integrity as well as dampen the inflammatory activity of infiltrating peripheral immune cells, which increases BBB permeability."
+  },
+  {
+    "snippet_index": 30,
+    "quotes": [
+      "From these sets of genes, we identified six pro-inflammatory genes and two anti-inflammatory genes to be upregulated (Table 2) specifically in burn eschar pericytes.",
+      "We found that both interleukin-6 (IL-6; 5 fold) and interleukin-8 IL-8; 3.75 fold) protein levels were significantly higher in burn eschar pericytes than normal skin pericytes (Figure 3).",
+      "we found that TGF-\u03b21 gene expression was significantly higher (38%) in the burn eschar derived pericytes than the normal skin-derived pericytes (Figure 4a).",
+      "IL-1\u03b2is upregulated (Table 2) and a 5 fold increase in IL-6 expression (Figure 3a).",
+      "We found expression of MyD88 was increased in the burn eschar derived-pericytes compared to normal skin derived-pericytes (Figure 4b)."
+    ],
+    "summary": "This snippet shows that in the burn environment, pericytes (likely representing or overlapping with inflammatory pericytes/Pericyte_2_inflamm) upregulate multiple pro-inflammatory genes and proteins such as IL-6, IL-8, TGF-\u03b21, IL-1\u03b2, and MyD88, suggesting a strong inflammatory phenotype and function.",
+    "categories": [
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:211536964",
+    "source_title": "Characterization of Burn Eschar Pericytes",
+    "source_authors": "A. Evdokiou et al.",
+    "source_year": null,
+    "snippet": "Next, we determine whether the burn environment affected pericytes gene expression. Using RNA-seq, we identified 443 differentially expressed genes between normal-and burn eschar-derived pericytes. While comparing normal skin pericytes to normal skin fibroblasts, we identified 1021 distinct genes, however comparing burn eschar pericytes to normal skin fibroblasts we identified 2449 differential genes (Supplemental Data S1). From these sets of genes, we identified six pro-inflammatory genes and two anti-inflammatory genes to be upregulated (Table 2) specifically in burn eschar pericytes. Using an ELISA assay, we analyzed the protein expression of these genes in normal skin and burn eschar derived pericytes. We found that both interleukin-6 (IL-6; 5 fold) and interleukin-8 IL-8; 3.75 fold) protein levels were significantly higher in burn eschar pericytes than normal skin pericytes (Figure 3). Utilizing real-time RT-PCR analysis, we found that TGF-\u03b21 gene expression was significantly higher (38%) in the burn eschar derived pericytes than the normal skin-derived pericytes (Figure 4a). Rustenhoven et al. showed that TGF-\u03b21 treated pericytes induced the secretion of IL-6 [40]. In addition, they showed that pericyte stimulation with TGF-\u03b21 and IL-1\u03b2 has a synergistic release of IL-6 [40] which correlates with our finding that IL-1\u03b2is upregulated (Table 2) and a 5 fold increase in IL-6 expression (Figure 3a). MyD88, an upstream regulator of interleukin-1 (IL-1) and tumor necrosis factor-\u03b1 (TNF-\u03b1) expression [41,42] was also examined. We found expression of MyD88 was increased in the burn eschar derived-pericytes compared to normal skin derived-pericytes (Figure 4b)."
+  },
+  {
+    "snippet_index": 32,
+    "quotes": [
+      "Under inflammatory conditions, such as under LPS, TNF\u03b1, or IL-1\u03b2 stimuli or under tumor microenvironment (TME) influence, pericytes start to release inflammatory cytokines to recruit immune cells (IL-6, IL-8, CXCL1, CXCL2, CXCL3, CX3CL1, CCL5, and CCL2) and upregulate the adhesion molecules ICAM-1 and VCAM-1 (Gaceb et al., 2018)."
+    ],
+    "summary": "The snippet describes that under inflammatory conditions, pericytes take on an inflammatory phenotype and secrete cytokines such as IL-6, IL-8, chemokines, and upregulate adhesion molecules ICAM-1 and VCAM-1, consistent with the properties of inflammatory pericytes.",
+    "categories": [
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:271289135",
+    "source_title": "Pericytes: jack-of-all-trades in cancer-related inflammation",
+    "source_authors": "M. Moro et al.",
+    "source_year": null,
+    "snippet": "Specifically, FGF-2 is a potent pericyte-stimulating factor; by binding to FGFR2, it induces pericyte proliferation and orchestrates PDGFR\u03b2 signaling for vascular recruitment, as demonstrated in the tumor context (Hosaka et al., 2018). \n\nPericytes respond to different stimuli by changing their basal secretome. Under inflammatory conditions, such as under LPS, TNF\u03b1, or IL-1\u03b2 stimuli or under tumor microenvironment (TME) influence, pericytes start to release inflammatory cytokines to recruit immune cells (IL-6, IL-8, CXCL1, CXCL2, CXCL3, CX3CL1, CCL5, and CCL2) and upregulate the adhesion molecules ICAM-1 and VCAM-1 (Gaceb et al., 2018). The Ang-Tie axis plays an essential role in inflammation. Ang2-Tie2 signaling induces the expression of ICAM-1 and VCAM-1, promoting leukocyte adhesion and migration to inflamed tissues in response to inflammatory cytokines (Fiedler et al., 2006). The involvement of pericyte-derived mediators in inflammation is further elucidated in the latter part of the review."
+  }
+]

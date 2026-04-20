@@ -1,0 +1,75 @@
+{
+  "cell_type": "TML macrophage",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "markers": {
+    "defining_markers": ["TREM2", "P2RY12", "CX3CR1", "OLFML3"],
+    "functional_markers": ["GAS6", "VEGFA", "SYT11", "SEMA3C", "SEMA3E"],
+    "ligand_receptor_interactions": [
+      "GAS6-AXL (with WNT2+ fibroblasts)",
+      "VEGFA-NRP1 (with Schwann cells)",
+      "VEGFA-NRP2 (with Schwann cells)",
+      "SEMA3C-NRP2 (with Schwann cells)",
+      "SEMA3E-PLXND1 (with Schwann cells)",
+      "CXCL8-ACKR1 (with endothelial cells)",
+      "CCL8-ACKR1 (with endothelial cells)"
+    ]
+  },
+  "origin": "Yolk-sac derived",
+  "location": {
+    "tissue": "Prenatal human skin",
+    "microenvironments": [
+      "ME1 (early neurovascular microenvironment) -- with Schwann cells and endothelial cells",
+      "ME5 (late neurovascular microenvironment) -- with endothelial cells"
+    ],
+    "co_locating_cells": [
+      "WNT2+ fibroblasts (early prenatal skin, 6-8 PCW)",
+      "Schwann cells",
+      "Endothelial cells"
+    ]
+  },
+  "functions": [
+    {
+      "function": "Scarless wound healing",
+      "evidence": "Co-expressed immunomodulatory genes including immune-inhibitory receptors (CX3CR1) and regulators of IL-6 production (SYT11). IL-6 downregulation confers anti-fibrogenic properties.",
+      "source": "Gopee et al. 2024"
+    },
+    {
+      "function": "Sprouting angiogenesis",
+      "evidence": "Gene module expression profiles suggested sprouting angiogenesis promoted by LYVE1+ and TML macrophages. RNAscope showed TML macrophages in close proximity to endothelial cells.",
+      "source": "Gopee et al. 2024"
+    },
+    {
+      "function": "Neural development support",
+      "evidence": "Co-located with Schwann cells in ME1. Expressed genes related to cell migration and neural development. Predicted to interact with Schwann cells contributing to synapse formation and axon guidance.",
+      "source": "Gopee et al. 2024"
+    },
+    {
+      "function": "Immunosuppression and tissue repair",
+      "evidence": "GAS6 expressed by TML macrophages predicted to interact with AXL receptors on WNT2+ fibroblasts, inducing immunosuppression and tissue repair.",
+      "source": "Gopee et al. 2024"
+    }
+  ],
+  "key_evidence_quotes": [
+    {
+      "quote": "Prenatal skin TREM2+ microglia-like (TML) macrophages were highly correlated with embryonic brain microglia",
+      "section": "Scarless healing and potential macrophage contribution",
+      "source": "Gopee et al. 2024"
+    },
+    {
+      "quote": "sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages",
+      "section": "Macrophages support prenatal skin angiogenesis",
+      "source": "Gopee et al. 2024"
+    },
+    {
+      "quote": "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1)",
+      "section": "Macrophages in cutaneous neural differentiation",
+      "source": "Gopee et al. 2024"
+    },
+    {
+      "quote": "This is in part contributed to by yolk-sac derived TML macrophages, which suggests that these cells have broader functions outside the central nervous system in early gestation",
+      "section": "Discussion",
+      "source": "Gopee et al. 2024"
+    }
+  ],
+  "transcriptomic_correlation": "TML macrophage had the highest proportion prediction to Mac4 (embryonic brain microglia) in logistic regression model trained on embryonic data from Suo et al. 2022"
+}

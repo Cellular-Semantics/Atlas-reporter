@@ -1,0 +1,62 @@
+[
+  {
+    "snippet_index": 4,
+    "quotes": [],
+    "summary": "Atlas snippet about hair follicle development relevant to Pre-dermal condensate.",
+    "categories": [
+      "markers",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "We delineated the dermal cell types involved in crosstalk with epidermal cells during HF development and captured the precursors of the human Dc (Extended Data Figs. 2b and 3c). In mice, transitional PDGFRA + FOXD1 + SOX2 low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1 + SOX2 + ), which abuts the epithelial hair placode 26,28 . Using orthologous marker genes, we annotated pre-Dc cells and the Dc in human prenatal skin 28,29 . Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP + , SOX2 + ) 26,28 (Fig. 2c and Extended Data Fig. 3h). To infer the origin of pre-Dc cells and the Dc and Dp, we performed trajectory and pseudotime analysis of integrated prenatal skin and SkO fibroblast clusters (Fig. 2e, Extended Data Fig. 4d and Supplementary Table 7). We excluded FRZB + fibroblasts, which were primarily observed in one sample from the earliest gestation stage (7 PCW) (Extended Data Fig. 3c). Although rare in prenatal skin, FRZB-expressing fibroblasts were present in several other developing organs (Extended Data Fig. 4e). Inferred trajectory analysis predicted that HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2 + fibroblasts and PEAR1 + fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7)."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [],
+    "summary": "Atlas snippet about hair follicle development relevant to Pre-dermal condensate.",
+    "categories": [
+      "markers",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "Along the hair fibroblast pseudotime, genes involved in regulation of cell adhesion (ADAMST1), cell-cell contacts (CLDN11) and directed migration (CXCL12) were upregulated as pre-Dc cells migrated towards the epidermis, which indicated a process of collective migration 30,31,32 (Extended Data Fig. 4f and Supplementary Table 7). Genes implicated in collagen fibril formation and cell adhesion (COL6A3, MFAP4 and PTK7) were expressed as the pre-Dc cells aggregated into the Dc (Extended Data Fig. 4f and Supplementary Table 7). Formation of the Dp was characterized by genes (RSPO3 and WNT5A) (Extended Data Fig. 4f and Supplementary Table 7) that coordinate the differentiation of adjacent hair matrix cells 33,34 . We explored the mesenchymal-epithelial interactions that instruct early HF formation. Receptor-ligand analysis predicted interactions between CXCL12 expressed by pre-Dc cells (Extended Data Fig. 4g,h) with ACKR3 on epidermal basal cells (Fig. 2g and Supplementary Table 8). RNAscope analysis confirmed that these two genes co-located (Fig. 2h). This result suggests that CXCL12 probably interacts with ACKR3 to mediate the migration of pre-Dc cells 31,35 . Notably, lymphoid tissue inducer and ILC3 cells were also predicted to co-locate and interact with pre-Dc cells through ligand-receptor signals implicated in the regulation of cellular adhesion and migration (CXCL12-CXCR4 and CXCL12-DPP4) 35,36  The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion 37,38 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8). Finally, RSPO3 from the Dp was predicted to interact with LGR4 and LGR6 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8) in overlying matrix cells to contribute to the proliferation of HF epithelial cells 33 . Notably, the highlighted interactions were conserved between the mesenchymal and epithelial cells of the SkO model for corresponding stages during HF formation (Fig. 2g, Extended Data Fig. 5c and Supplementary Table 8)."
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [],
+    "summary": "Atlas snippet about hair follicle development relevant to Pre-dermal condensate.",
+    "categories": [
+      "markers",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "We also assessed the expression profiles of genes previously reported in mouse HF formation. Similar signalling pathways were upregulated, including WNT and EDA for hair placode specification, bone morphogenetic protein (BMP) and noggin to inhibit hair formation in IFE cells, and PDGFA and TGFbeta signalling for HF down growth 26 (Extended Data Fig. 5f). Additionally, similar to fibroblast differentiation in mouse skin, pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5 + early fibroblast) (Fig. 2e and Extended Data Fig. 4d). However, cross-species data integration of human and mouse HF 41 showed that human pre-Dc cells and the Dc aligned not only to their counterparts in mouse skin but also to fibroblasts in earlier stages of differentiation (Extended Data Fig. 5g-i and Supplementary Tables 10 and 11). This result suggests that for corresponding cell types, HF fibroblasts are in a more differentiated state in mouse compared to human prenatal skin."
+  },
+  {
+    "snippet_index": 8,
+    "quotes": [],
+    "summary": "Atlas snippet about hair follicle development relevant to Pre-dermal condensate.",
+    "categories": [
+      "markers",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "N. Gopee et al.",
+    "source_year": 2024,
+    "snippet": "Co-location was indicated by a high proportion of two or more cell types sharing a microenvironment (Fig. 1d) and/or by a positive correlation coefficient between cell pairs (Extended Data Fig. 1e,f). NMF can predict significant cellular co-locations that are not readily evident in conventional histopathology analyses 5,15 . Our analysis predicted distinct microenvironments in prenatal skin comprising epidermal, dermal, vascular and neural cells, each including specific types of immune cells (Fig. 1d and Extended Data Fig. 1e,f). Macrophages co-located with endothelial and neural cells in 'early and late neurovascular microenvironments' (ME1 and ME5, respectively), whereas pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses (Fig. 1d and Extended Data Fig. 1e,f). These observations indicated that immune cells may occupy defined microanatomical niches where they have non-immune functions during early gestation."
+  }
+]

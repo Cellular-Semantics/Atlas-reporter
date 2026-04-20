@@ -1,0 +1,10 @@
+{
+  "label": "Matrix",
+  "resolved_names": [
+    "Matrix"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Cell type 'Matrix' identified in the prenatal skin atlas (Gopee et al., 2024)."
+}

@@ -1,0 +1,53 @@
+{
+  "markers": [
+    {
+      "gene": "CLDN5",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "gene": "FLT1",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "gene": "VWF",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 2"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "VE1 cells are described as 'adult brain vascular endothelial subset enriched for canonical endothelial markers'",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "finding": "VE1 has high expression of tight junction protein (CLDN5)",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "finding": "VE1 spatially localizes to capillary and arteriolar vascular compartments",
+      "category": "spatial annotation",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "VE1 adult brain vascular endothelial subset enriched for canonical endothelial markers (CLDN5, FLT1, VWF)",
+      "source_file": "Supplementary Table 2",
+      "context": "cluster marker summary"
+    },
+    {
+      "quote": "VE1: high expression of tight junction protein CLDN5",
+      "source_file": "Supplementary Table 2",
+      "context": "marker description section"
+    },
+    {
+      "quote": "VE1 spatial localization: capillary and arteriolar compartments",
+      "source_file": "Supplementary Table 3",
+      "context": "spatial mapping summary"
+    }
+  ]
+}

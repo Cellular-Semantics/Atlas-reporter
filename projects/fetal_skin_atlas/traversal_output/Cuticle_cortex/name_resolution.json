@@ -1,0 +1,10 @@
+{
+  "label": "Cuticle cortex",
+  "resolved_names": [
+    "Cuticle cortex"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Cell type 'Cuticle cortex' identified in the prenatal skin atlas (Gopee et al., 2024)."
+}

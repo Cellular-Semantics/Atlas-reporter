@@ -1,0 +1,636 @@
+{
+  "CorpusId:616832": {
+    "title": "Human embryonic epidermis contains a diverse Langerhans cell precursor pool",
+    "authors": [
+      "C. Schuster",
+      "M. Mildner",
+      "Mario Mairhofer",
+      "W. Bauer",
+      "C. Fiala",
+      "Marion Prior",
+      "W. Eppel",
+      "A. Kolbus",
+      "E. Tschachler",
+      "G. Stingl",
+      "A. Elbe-B\u00fcrger"
+    ],
+    "year": 2014,
+    "venue": "Development",
+    "doi": "10.1242/dev.102699",
+    "pmid": "24496618",
+    "url": "https://www.semanticscholar.org/paper/b07a73ba8f323ca5ad214df5e2934db04679311b",
+    "abstract": "Despite intense efforts, the exact phenotype of the epidermal Langerhans cell (LC) precursors during human ontogeny has not been determined yet. These elusive precursors are believed to migrate into the embryonic skin and to express primitive surface markers, including CD36, but not typical LC markers such as CD1a, CD1c and CD207. The aim of this study was to further characterize the phenotype of LC precursors in human embryonic epidermis and to compare it with that of LCs in healthy adult skin.",
+    "tldr": "It appears that CD14- haematopoietic precursors possess a much higher differentiation potential than CD14+ precursor cells, and without additional exogenous cytokines give rise to cells that morphologically and phenotypically resemble LCs."
+  },
+  "CorpusId:268535320": {
+    "title": "Multi-dimensional characterization of apoptosis in the tumor microenvironment and therapeutic relevance in melanoma",
+    "authors": [
+      "Jing Ye",
+      "Benliang Wei",
+      "Guowei Zhou",
+      "Yantao Xu",
+      "Yilang He",
+      "Xiheng Hu",
+      "Xiang Chen",
+      "Guanxiong Zhang",
+      "Hong Liu"
+    ],
+    "year": 2024,
+    "venue": "Cellular Oncology",
+    "doi": "10.1007/s13402-024-00930-0",
+    "pmid": "38502270",
+    "url": "https://www.semanticscholar.org/paper/50ce663ecdcf459ba83d47e11486c163df95c941",
+    "abstract": "Melanoma is widely utilized as a prominent model for the development of immunotherapy, thought an inadequate immune response can occur. Moreover, the development of apoptosis-related therapies and combinations with other therapeutic strategies is impeded by the limited understanding of apoptosis\u2019s role within diverse tumor immune microenvironments (TMEs). Here, we constructed an apoptosis-related tumor microenvironment signature (ATM) and employ multi-dimensional analysis to understand the roles",
+    "tldr": "It is indicated that ATM is a prognostic factor and is associated with the immune response and drug sensitivity in melanoma, and was associated with tertiary lymphoid structures (TLS), exhibiting stronger patient stratification ability compared to classical \u201chot tumors\u201d."
+  },
+  "CorpusId:278852829": {
+    "title": "Longevity cosmeceuticals as the next frontier in cosmetic innovation: a scientific framework for substantiating product claims",
+    "authors": [
+      "Wannita Klinngam",
+      "Athit Chaiwichien",
+      "Supawadee Osotprasit",
+      "Uracha Ruktanonchai",
+      "M. Kanlayavattanakul",
+      "N. Lourith",
+      "A. Wongrakpanich",
+      "Veerawat Teeranachaideekul",
+      "Tawin Iempridee"
+    ],
+    "year": 2025,
+    "venue": "Frontiers in Aging",
+    "doi": "10.3389/fragi.2025.1586999",
+    "pmid": "40475790",
+    "url": "https://www.semanticscholar.org/paper/36993f3485fdca90b955fcce620bb5dd24d0400c",
+    "abstract": "The field of anti-aging research has made remarkable strides with the identification of geroprotectors\u2014compounds capable of extending healthspan and lifespan in animal models\u2014presenting promising implications for human longevity. Building on these advances, we propose a novel product category: longevity cosmeceutical actives and products. Unlike conventional anti-aging products that primarily target superficial signs of aging, longevity cosmeceuticals address the molecular hallmarks of aging, fu",
+    "tldr": "This review explores molecular hallmarks of skin aging, highlights geroprotective compounds with potential cosmeceutical applications, and recommends essential biomarkers for assessing prevention of rapid biological aging."
+  },
+  "CorpusId:86817275": {
+    "title": "A \u201ctraffic control\u201d role for TGF\u03b23: orchestrating dermal and epidermal cell motility during wound healing",
+    "authors": [
+      "Balaji Bandyopadhyay",
+      "Jianhua Fan",
+      "Shengxi Guan",
+      "Yong Li",
+      "Mei Chen",
+      "D. Woodley",
+      "Wei Li"
+    ],
+    "year": 2006,
+    "venue": "Journal of Cell Biology",
+    "doi": "10.1083/jcb.200507111",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/133e98f883d8804798cdfbd3ca178ff6b6b8ff61",
+    "abstract": "Cell migration is a rate-limiting event in skin wound healing. In unwounded skin, cells are nourished by plasma. When skin is wounded, resident cells encounter serum for the first time. As the wound heals, the cells experience a transition of serum back to plasma. In this study, we report that human serum selectively promotes epidermal cell migration and halts dermal cell migration. In contrast, human plasma promotes dermal but not epidermal cell migration. The on-and-off switch is operated by t",
+    "tldr": "The naturally occurring plasma\u2192serum\u2192plasma transition during wound healing orchestrates the orderly migration of dermal and epidermal cells."
+  },
+  "CorpusId:218688412": {
+    "title": "HILIC-ESI-FTMS with All Ion Fragmentation (AIF) Scans as a Tool for Fast Lipidome Investigations",
+    "authors": [
+      "G. Ventura",
+      "M. Bianco",
+      "C. Calvano",
+      "I. Losito",
+      "T. Cataldi"
+    ],
+    "year": 2020,
+    "venue": "Molecules",
+    "doi": "10.3390/molecules25102310",
+    "pmid": "32423109",
+    "url": "https://www.semanticscholar.org/paper/f95a055155c81f7f7810d70511e973f463f02f64",
+    "abstract": "Lipidomics suffers from the lack of fast and reproducible tools to obtain both structural information on intact phospholipids (PL) and fatty acyl chain composition. Hydrophilic interaction liquid chromatography with electrospray ionization coupled to an orbital-trap Fourier-transform analyzer operating using all ion fragmentation mode (HILIC-ESI-FTMS-AIF MS) is seemingly a valuable resource in this respect. Here, accurate m/z values, HILIC retention times and AIF MS scan data were combined for P",
+    "tldr": "Using AIF scans, a total of 253 intact lipid species and 18 fatty acids across 4 lipid classes were recognized in plasma samples, while FA C20:3 was confirmed as the fatty acyl chain belonging to phosphatidylinositol, which was found to be down-regulated in fibroblast samples of Parkinson\u2019s disease patients."
+  },
+  "CorpusId:255978410": {
+    "title": "Histopathology, microbiology and the inflammatory process associated with Sarcoptes scabiei infection in the Iberian ibex, Capra pyrenaica",
+    "authors": [
+      "J. Espinosa",
+      "Ari\u00e1n R\u00e1ez-Bravo",
+      "J. L\u00f3pez-Olvera",
+      "J. P\u00e9rez",
+      "S. Lav\u00edn",
+      "A. Tvarijonaviciute",
+      "F. Cano-Manuel",
+      "P. Fandos",
+      "R. Soriguer",
+      "J. Granados",
+      "D. Romero",
+      "R. Velarde"
+    ],
+    "year": 2017,
+    "venue": "Parasites & Vectors",
+    "doi": "10.1186/s13071-017-2542-5",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/b8229ad3b074fff04b4a9772826abb3290ce6e1f",
+    "abstract": "Sarcoptic mange has been identified as the most significant infectious disease affecting the Iberian ibex (Capra pyrenaica). Despite several studies on the effects of mange on ibex, the pathological and clinical picture derived from sarcoptic mange infestation is still poorly understood. To further knowledge of sarcoptic mange pathology, samples from ibex were evaluated from histological, microbiological and serological perspectives. Samples of skin, non-dermal tissues and blood were collected f",
+    "tldr": "The alteration of biomarkers of inflammation and its implication in the pathogenesis of the disease and development of lesions in non-dermal tissues and septicaemic processes are serious conditioners for the survival of the mangy ibex."
+  },
+  "CorpusId:220502242": {
+    "title": "Comprehensive flow cytometric reference intervals of leukocyte subsets from six study centers across Europe",
+    "authors": [
+      "Astrid Oras",
+      "B. Quirant-S\u00e1nchez",
+      "D. Popadic",
+      "Sarah Thunberg",
+      "O. Winqvist",
+      "S. Heck",
+      "M. Cwikowski",
+      "D. Riemann",
+      "B. Seliger",
+      "E. Mart\u00ednez C\u00e1ceres",
+      "R. Uibo",
+      "T. Giese"
+    ],
+    "year": 2020,
+    "venue": "Clinical and Experimental Immunology",
+    "doi": "10.1111/cei.13491",
+    "pmid": "32654132",
+    "url": "https://www.semanticscholar.org/paper/a8f32b3f96f31c98f8f956094ca9c9b7e329aae4",
+    "abstract": "A group of European FOCIS Centers of Excellence adapted panels of the Human Immunophenotyping Consortium (HIPC) for whole blood analysis. Using four core panels [T/regulatory T cell/B/natural killer (T/Treg/B/NK) and myeloid cells] the main leukocyte populations were analyzed in a clinical\u2013diagnostic setting in a harmonized manner across different platforms. As a first step, the consortium presents here the absolute and relative frequencies of the leukocyte subpopulations in the peripheral blood",
+    "tldr": "The consortium presents here the absolute and relative frequencies of the leukocyte subpopulations in the peripheral blood of more than 300 healthy volunteers across six different European centers."
+  },
+  "CorpusId:268413551": {
+    "title": "Primary cutaneous plasmacytosis successfully treated with topical corticosteroids and psoralen plus ultraviolet A: A case report",
+    "authors": [
+      "Thanyathorn Nuchanatanon",
+      "Settanan Plangsiri",
+      "T. Rattananukrom"
+    ],
+    "year": 2024,
+    "venue": "Clinical Case Reports",
+    "doi": "10.1002/ccr3.8624",
+    "pmid": "38487639",
+    "url": "https://www.semanticscholar.org/paper/20c540ee754c2ab6a9e658e630b90ef4471ee0ee",
+    "abstract": "We present a case of primary cutaneous plasmacytosis without systemic involvement. The patient received topical corticosteroids and psoralen plus ultraviolet A therapy, showing significant improvement. Continuous monitoring is underway despite the rarity of systemic manifestations.",
+    "tldr": "The patient received topical corticosteroids and psoralen plus ultraviolet A therapy, showing significant improvement, and continuous monitoring is underway despite the rarity of systemic manifestations."
+  },
+  "CorpusId:236531000": {
+    "title": "Know your enemy or find your friend?\u2014Induction of IgA at mucosal surfaces",
+    "authors": [
+      "M. Bemark",
+      "Davide Angeletti"
+    ],
+    "year": 2021,
+    "venue": "Immunological Reviews",
+    "doi": "10.1111/imr.13014",
+    "pmid": "34331314",
+    "url": "https://www.semanticscholar.org/paper/82f7cf72bc43935da14b09b290259579388209cf",
+    "abstract": "Most antibodies produced in the body are of the IgA class. The dominant cell population producing them are plasma cells within the lamina propria of the gastrointestinal tract, but many IgA\u2010producing cells are also found in the airways, within mammary tissues, the urogenital tract and inside the bone marrow. Most IgA antibodies are transported into the lumen by epithelial cells as part of the mucosal secretions, but they are also present in serum and other body fluids. A large part of the commen",
+    "tldr": "The distinction between the two roles of IgA - protective and balance-maintaining - not only has implications on function but also on how the production is regulated is discussed."
+  },
+  "CorpusId:227334677": {
+    "title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "authors": [
+      "M. Dhariwala",
+      "Dhuvarakesh Karthikeyan",
+      "Kimberly S. Vasquez",
+      "S. Farhat",
+      "Antonin Weckel",
+      "Keyon Taravati",
+      "Elizabeth G. Leitner",
+      "S. Clancy",
+      "M. Pauli",
+      "M. Piper",
+      "Jarish N. Cohen",
+      "J. Ashouri",
+      "Margaret M. Lowe",
+      "M. Rosenblum",
+      "T. Scharschmidt"
+    ],
+    "year": 2020,
+    "venue": "Cell Reports Medicine",
+    "doi": "10.1016/j.xcrm.2020.100132",
+    "pmid": "33294857",
+    "url": "https://www.semanticscholar.org/paper/d534f82b4e2d279bfd9455e0c52158941661e78e",
+    "abstract": "Summary Lymphocytes in barrier tissues play critical roles in host defense and homeostasis. These cells take up residence in tissues during defined developmental windows, when they may demonstrate distinct phenotypes and functions. Here, we utilized mass and flow cytometry to elucidate early features of human skin immunity. Although most conventional \u03b1\u03b2 T (Tconv) cells in fetal skin have a naive, proliferative phenotype, a subset of CD4+ Tconv and CD8+ cells demonstrate memory-like features and ",
+    "tldr": "Mass and flow cytometry is utilized to elucidate early features of human skin immunity and identify features of prenatal skin lymphocytes that may have key implications for understanding antigen and allergen encounters in utero and in infancy."
+  },
+  "CorpusId:128358387": {
+    "title": "In the Right Place, at the Right Time: Spatiotemporal Conditions Determining Plasma Cell Survival and Function",
+    "authors": [
+      "Randall L. Lindquist",
+      "R. Niesner",
+      "A. Hauser"
+    ],
+    "year": 2019,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2019.00788",
+    "pmid": "31068930",
+    "url": "https://www.semanticscholar.org/paper/c622719e71142777dece28f7173b5a996ff0bd11",
+    "abstract": "Plasma cells (PCs), the B lineage cells responsible for producing and secreting antibodies (Abs), are critical cellular components of the humoral immune system. While most of the antibody-secreting cells in the body have a rather short lifetime of a few days, some of them can become long-lived and persist in the body over the entire life span of an individual. The majority of these long-lived plasma cells secretes protective antibodies against pathogens, and are thereby crucial for the humoral c",
+    "tldr": "In order to promote the formation of protective antibody-secreting cells and to target pathogenic plasma cells, it is crucial to understand the signals which promote their longevity and allow them to exert their function."
+  },
+  "CorpusId:253206301": {
+    "title": "Smoother: a unified and modular framework for incorporating structural dependency in spatial omics data",
+    "authors": [
+      "Jiayu Su",
+      "Jean-Baptiste Reynier",
+      "Xi Fu",
+      "Guojie Zhong",
+      "Jiahao Jiang",
+      "Rydberg Supo Escalante",
+      "Yiping Wang",
+      "Benjamin Izar",
+      "David A. Knowles",
+      "Ra\u00fal Rabad\u00e1n"
+    ],
+    "year": 2023,
+    "venue": "bioRxiv",
+    "doi": "10.1186/s13059-023-03138-x",
+    "pmid": "38110959",
+    "url": "https://www.semanticscholar.org/paper/e9b00df0aad78a357f17d0ff275bbbd646cd6b21",
+    "abstract": "Spatial omics technologies can help identify spatially organized biological processes, but existing computational approaches often overlook structural dependencies in the data. Here, we introduce Smoother, a unified framework that integrates positional information into non-spatial models via modular priors and losses. In simulated and real datasets, Smoother enables accurate data imputation, cell-type deconvolution, and dimensionality reduction with remarkable efficiency. In colorectal cancer, S",
+    "tldr": "Smoother is introduced, a unified framework that integrates positional information into non-spatial models via modular priors and losses that enables accurate data imputation, cell-type deconvolution, and dimensionality reduction with remarkable efficiency in simulated and real datasets."
+  },
+  "CorpusId:15903699": {
+    "title": "Bcl-2+ tonsillar plasma cells are rescued from apoptosis by bone marrow fibroblasts",
+    "authors": [
+      "P. Merville",
+      "J. De\u0301chanet",
+      "A. Desmouli\u00e8re",
+      "I. Durand",
+      "O. Bouteiller",
+      "P. Garrone",
+      "J. Banchereau",
+      "Yong\u2010jun Liu"
+    ],
+    "year": 1996,
+    "venue": "Journal of Experimental Medicine",
+    "doi": "10.1084/JEM.183.1.227",
+    "pmid": "8551226",
+    "url": "https://www.semanticscholar.org/paper/b78b9fc2849369ec44d2062c29787e15b2c7bbd0",
+    "abstract": "Plasma cells represent the final stage of B lymphocyte differentiation. Most plasma cells in secondary lymphoid tissues live for a few days, whereas those in the lamina propria of mucosa and in bone marrow live for several weeks. To investigate the regulation of human plasma cell survival, plasma cells were isolated from tonsils according to high CD38 and low CD20 expression. Tonsillar plasma cells express CD9, CD19, CD24, CD37, CD40, CD74, and HLA-DR, but not CD10, HLA-DQ, CD28, CD56, and Fas/C",
+    "tldr": "Bone marrow fibroblasts and rheumatoid synoviocytes prevented plasma cells from undergoing apoptosis in a contact- dependent fashion, indicating that fibro Blasts may form a microenvironment favorable for plasma cell survival under normal and pathological conditions."
+  },
+  "CorpusId:248368685": {
+    "title": "Cutaneous Involvement in Diseases with Plasma Cell Differentiation: Diagnostic Approach",
+    "authors": [
+      "M. Zanelli",
+      "A. Palicelli",
+      "F. Sanguedolce",
+      "M. Zizzo",
+      "A. Filosa",
+      "L. Ricci",
+      "Camilla Cresta",
+      "Giovanni Martino",
+      "A. Bisagni",
+      "E. Zanetti",
+      "Francesco di Donato",
+      "Beatrice Melli",
+      "A. Soriano",
+      "L. Cimino",
+      "A. Cavazza",
+      "L. Vivian",
+      "S. Ascani"
+    ],
+    "year": 2022,
+    "venue": "Current Oncology",
+    "doi": "10.3390/curroncol29050246",
+    "pmid": "35621636",
+    "url": "https://www.semanticscholar.org/paper/019203ddcb6fe945e6d7851cab1c9c4e2ab70458",
+    "abstract": "Neoplasms with plasma cell differentiation may occasionally involve the skin. Cutaneous lesions may represent the first sign of an underlying systemic plasma cell malignancy, such as multiple myeloma, or the skin itself may be the primary site of occurrence of a hematological tumor with plasma cell differentiation. Starting from examples encountered in our daily practice, we discussed the diagnostic approach pathologists and clinicians should use when faced with cutaneous lesions with plasma cel",
+    "tldr": "The diagnostic approach pathologists and clinicians should use when faced with cutaneous lesions with plasma cell differentiation is discussed, focusing on the importance of the adequate patient\u2019s work-up and precise clinicopathological correlation to get to the correct diagnosis and appropriate treatment."
+  },
+  "CorpusId:258313574": {
+    "title": "Dendritic cell proliferation by primary cilium in atopic dermatitis",
+    "authors": [
+      "M. Toriyama",
+      "D. Rizaldy",
+      "Motoki Nakamura",
+      "Yukiko Atsumi",
+      "Michinori Toriyama",
+      "F. Fujita",
+      "F. Okada",
+      "A. Morita",
+      "H. Itoh",
+      "K. Ishii"
+    ],
+    "year": 2023,
+    "venue": "Frontiers in Molecular Biosciences",
+    "doi": "10.3389/fmolb.2023.1149828",
+    "pmid": "37179569",
+    "url": "https://www.semanticscholar.org/paper/f386d8aa3e4cfba4fe84ee3f39c1018d05c47f06",
+    "abstract": "Introduction: Atopic dermatitis (AD) is a common allergic eczema that affects up to 10% of adults in developed countries. Immune cells in the epidermis, namely, Langerhans cells (LCs), contribute to the pathogenesis of AD, although their exact role(s) in disease remain unclear. Methods: We performed immunostaining on human skin and peripheral blood mononuclear cells (PBMCs) and visualized primary cilium. Result and discussion: We show that human dendritic cells (DCs) and LCs have a previously un",
+    "tldr": "It is shown that human dendritic cells and LCs have a previously unknown primary cilium-like structure, which suggests that the role of primary cilts is to transduce proliferation signaling, and it is suggested that targeting the primary cils may contribute to treating AD."
+  },
+  "CorpusId:5251260": {
+    "title": "Tenascin/hexabrachion in human skin: biochemical identification and localization by light and electron microscopy",
+    "authors": [
+      "V. A. Lightner",
+      "Francine Gumkowski",
+      "D. Bigner",
+      "Harold P. Erickson"
+    ],
+    "year": 1989,
+    "venue": "Journal of Cell Biology",
+    "doi": "10.1083/JCB.108.6.2483",
+    "pmid": "2472409",
+    "url": "https://www.semanticscholar.org/paper/de892247de32c35370491b3e2196321b2260c4e7",
+    "abstract": "Tenascin/hexabrachion is a large glycoprotein of the extracellular matrix. Previous reports have demonstrated that tenascin is associated with epithelial-mesenchymal interfaces during embryogenesis and is prominent in the matrix of many tumors. However, the distribution of tenascin is more restricted in adult tissues. We have found tenascin to be present in normal human skin in a distribution distinct from other matrix proteins. Immunohistochemical studies showed staining of the papillary dermis",
+    "tldr": "This work has found tenascin to be present in normal human skin in a distribution distinct from other matrix proteins, and developed a sensitive ELISA assay that can quantitateTenascin at concentrations as low as 5 ng/ml."
+  },
+  "CorpusId:249235814": {
+    "title": "Cryo-EM structures of human A2ML1 elucidate the protease-inhibitory mechanism of the A2M family",
+    "authors": [
+      "N. S. Nielsen",
+      "A. Zarantonello",
+      "S. Harwood",
+      "K. T. Jensen",
+      "Katarzyna Kj\u00f8ge",
+      "I. Th\u00f8gersen",
+      "L. Schauser",
+      "J. Karlsen",
+      "G. Andersen",
+      "J. Enghild"
+    ],
+    "year": 2022,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-022-30758-x",
+    "pmid": "35641520",
+    "url": "https://www.semanticscholar.org/paper/2315a11738ca4c1ddee1fe9266a0d988ee5eccc1",
+    "abstract": "A2ML1 is a monomeric protease inhibitor belonging to the A2M superfamily of protease inhibitors and complement factors. Here, we investigate the protease-inhibitory mechanism of human A2ML1 and determine the structures of its native and protease-cleaved conformations. The functional inhibitory unit of A2ML1 is a monomer that depends on covalent binding of the protease (mediated by A2ML1\u2019s thioester) to achieve inhibition. In contrast to the A2M tetramer which traps proteases in two internal cham",
+    "tldr": "Structural comparisons with complement C3/C4 suggest that the A2M superfamily of proteins share this mechanism for the triggering of conformational change occurring upon proteolytic activation."
+  },
+  "CorpusId:275542773": {
+    "title": "Systems immunology integrates the complex endotypes of recessive dystrophic epidermolysis bullosa",
+    "authors": [
+      "Nell Hirt",
+      "Enzo Manchon",
+      "Qian Chen",
+      "Clara Delaroque",
+      "A. Corneau",
+      "Patrice Hemon",
+      "Safaa Saker-Delye",
+      "Pauline Bataille",
+      "Jean-David Bouaziz",
+      "Emmanuelle Bourrat",
+      "Alain Hovnanian",
+      "H\u00e9l\u00e8ne Le Buanec",
+      "Fawzi Aoudjit",
+      "H. El Costa",
+      "N. Jabrane-Ferrat",
+      "Reem Al-Daccak"
+    ],
+    "year": 2025,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-025-55934-7",
+    "pmid": "39809737",
+    "url": "https://www.semanticscholar.org/paper/7cd2c131e8f819ededd1ad2db9e220ee1f37d53c",
+    "abstract": "Endotypes are characterized by the immunological, inflammatory, metabolic, and remodelling pathways that explain the mechanisms underlying the clinical presentation (phenotype) of a disease. Recessive dystrophic epidermolysis bullosa (RDEB) is a severe blistering disease caused by COL7A1 pathogenic variants. Although underscored by animal studies, the endotypes of human RDEB are poorly understood. To fill this gap, we apply systems immunology approaches using single-cell high-dimensional techniq",
+    "tldr": "This study characterises a cohort of RDEB adults to highlight variations in immune cell phenotypes and metabolic profiles, particularly in T cells and NK cells, particularly in T cells and NK cells."
+  },
+  "CorpusId:220044674": {
+    "title": "Spatially and cell-type resolved quantitative proteomic atlas of healthy human skin",
+    "authors": [
+      "B. Dyring-Andersen",
+      "M. L\u00f8vendorf",
+      "F. Coscia",
+      "Alberto Santos",
+      "L. B. M\u00f8ller",
+      "Ana R. Cola\u00e7o",
+      "L. Niu",
+      "M. Bzorek",
+      "S. Doll",
+      "J. L. Andersen",
+      "R. Clark",
+      "L. Skov",
+      "M. Teunissen",
+      "M. Mann"
+    ],
+    "year": 2020,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-020-19383-8",
+    "pmid": "33154365",
+    "url": "https://www.semanticscholar.org/paper/24eb9ac3e767959c52fc31aa979117e6f4cba01a",
+    "abstract": "Human skin provides both physical integrity and immunological protection from the external environment using functionally distinct layers, cell types and extracellular matrix. Despite its central role in human health and disease, the constituent proteins of skin have not been systematically characterized. Here, we combine advanced tissue dissection methods, flow cytometry and state-of-the-art proteomics to describe a spatially-resolved quantitative proteomic atlas of human skin. We quantify 10,7",
+    "tldr": "A spatially-resolved quantitative proteomic atlas of the healthy human skin is presented, characterizing the protein profiles of four skin layers and nine cell types."
+  },
+  "CorpusId:282280375": {
+    "title": "Plasma Cell Predominance in Lichen Planus Pigmentosus: A Rare Case in a Young Female",
+    "authors": [
+      "Yuxi Zhou",
+      "Yingqiu Bao",
+      "Yu Fu"
+    ],
+    "year": 2025,
+    "venue": "Clinical, Cosmetic and Investigational Dermatology",
+    "doi": "10.2147/CCID.S555168",
+    "pmid": "41140473",
+    "url": "https://www.semanticscholar.org/paper/47a75678598ffa2ed7dde252fba57e7ea6b53133",
+    "abstract": "Abstract Lichen planus pigmentosus (LPP), a rare variant of lichen planus, characterized by the insidious onset of dark brown to gray macules. In this report, we present a unique case of LPP in a 30-year-old female patient who developed diffuse hyperpigmented macules with nail dystrophy. Notably, histopathology revealed classic lichenoid interface dermatitis with predominant plasma cell infiltration in the papillary dermis, confirmed by strong CD38 and CD138 immunoreactivity. Laboratory evaluati",
+    "tldr": "This case highlights the need for heightened awareness of this variant and its possible systemic associations, and underscores the importance of integrating histopathology, immunophenotyping, and laboratory workup to avoid misdiagnosis and guide clinical care."
+  },
+  "CorpusId:272853505": {
+    "title": "An Advanced Mechanically Active Osteoarthritis\u2010on\u2010Chip Model to Test Injectable Therapeutic Formulations: The SYN321 Case Study",
+    "authors": [
+      "C. Palma",
+      "Stefano Piazza",
+      "R. Visone",
+      "R. Ringom",
+      "Ulf Bj\u00f6rklund",
+      "Antonio Bermejo G\u00f3mez",
+      "M. Rasponi",
+      "P. Occhetta"
+    ],
+    "year": 2024,
+    "venue": "Advanced Healthcare Materials",
+    "doi": "10.1002/adhm.202401187",
+    "pmid": "39318108",
+    "url": "https://www.semanticscholar.org/paper/60dd983136a7774997faab7ed0c6ef9b31dee6a6",
+    "abstract": "Current treatments for osteoarthritis (OA) often fail to address the underlying pathophysiology and may have systemic side effects, particularly associated with long\u2010term use of non\u2010steroidal anti\u2010inflammatory drugs (NSAIDs). Thus, researchers are currently directing their efforts toward innovative polymer\u2010drug combinations, such as mixtures of hyaluronic acid viscoelastic hydrogels and NSAIDs like diclofenac, to ensure sustained release of the NSAID within the joint following intra\u2010articular in",
+    "tldr": "The uBeat\u00ae MultiCompress platform is presented as a novel approach for studying anti\u2010OA injectable therapeutics on human mechanically\u2010damaged OA cartilage microtissues, in a physiologically relevant environment and results indicate the platform's effectiveness in evaluating therapeutic potential."
+  },
+  "CorpusId:83027131": {
+    "title": "Characteristics of B Cells and B Cell Responses in Aged Individuals",
+    "authors": [
+      "H. Mei",
+      "Andreas Radbruch"
+    ],
+    "year": 2011,
+    "venue": "Immunosenescence",
+    "doi": "10.1007/978-3-0346-0219-8_4",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/ff28481a8e0823e72023127909971ebf8e1eaa60",
+    "abstract": "Ageing individuals are immunologically characterized by loss of immunological protection and responsiveness, and autoimmunity occurs with increased incidence. Here we review studies on specific age-related changes in B cell generation, activation, and maintenance as well as characteristics of B cell responses and antibody levels during ageing in relation to other cells and factors that are interwoven with B cell biological processes. In the elderly, fewer new B cells are generated, B cell respon",
+    "tldr": "In the elderly, fewer new B cells are generated, B cell responsiveness to antigens is impaired, and smaller and fewer germinal centers are formed within an immune response with participation of less potent T cells and follicular dendritic cells, leading to the production of reduced, often insufficient plasma cell numbers."
+  },
+  "CorpusId:239475190": {
+    "title": "Effects of Heat-Killed Lactococcus lactis Strain Plasma on Skin Homeostasis-Related Genes and the Skin Microbiome among Healthy Adults: A Randomized Controlled Double-Blind Study",
+    "authors": [
+      "T. Fujii",
+      "Takashi Fujitomo",
+      "R. Tsuji",
+      "Ryuichi Kubo",
+      "Y. Kato",
+      "O. Kanauchi"
+    ],
+    "year": 2021,
+    "venue": "Microorganisms",
+    "doi": "10.3390/microorganisms9102029",
+    "pmid": "34683350",
+    "url": "https://www.semanticscholar.org/paper/e6b0a55b9dfefadfbbadbcfff51d8ce3157a3daa",
+    "abstract": "Lactococcus lactis subsp. lactis strain plasma (LC-plasma) is a bacterial strain that activates plasmacytoid dendritic cells and induces viral resistance genes via the TLR9/MyD88 pathway. We recently showed that oral administration of LC-plasma prevents skin infection by Staphylococcus aureus, possibly by activating skin immunity. In this study, we conducted a double-blind clinical trial to investigate the effect of oral administration of heat-killed LC-plasma on the skin microbiome, gene expres",
+    "tldr": "The results suggest that administration of LC-plasma helps to maintain the skin microbiome and that it affects homeostasis-related genes."
+  },
+  "CorpusId:271492554": {
+    "title": "Impairment of Renal and Hematopoietic Stem/Progenitor Cell Compartments in Frailty Syndrome: Link With Oxidative Stress, Plasma Cytokine Profiles, and Nuclear DNA Damage",
+    "authors": [
+      "S. Bombelli",
+      "Chiara Grasselli",
+      "P. Mazzola",
+      "Valentina Veronesi",
+      "I. Morabito",
+      "Nicola Zucchini",
+      "C. Scollo",
+      "S. Blanco",
+      "S. De Marco",
+      "B. Torsello",
+      "Federica Vitarelli",
+      "L. Antolini",
+      "C. Bianchi",
+      "Valerio Leoni",
+      "G. Bellelli",
+      "R. Perego"
+    ],
+    "year": 2024,
+    "venue": "The journals of gerontology. Series A, Biological sciences and medical sciences",
+    "doi": "10.1093/gerona/glae188",
+    "pmid": "39066510",
+    "url": "https://www.semanticscholar.org/paper/7715d10127cb7beac78af0b1b12ac626bf0b518a",
+    "abstract": "Abstract Frailty is an age-related syndrome that drives multiple physiological system impairments in some older adults, and its pathophysiological mechanisms remain unclear. We evaluated whether frailty-related biological processes could impair stem cell compartments, specifically the renal stem compartment, given that kidney dysfunctions are frequent in frailty. A well-characterized in vitro nephrosphere model of human adult renal stem/progenitor cells has been instrumental to and was appropria",
+    "tldr": "Evaluating the effects of plasma from older individuals with frailty (frail plasma) on allogeneic renal stem/progenitor cells showed significant functional impairment and nuclear DNA damage in the treated cells of the renal stem compartment, highlighting the possibility of concomitant exhaustion of several stem compartments."
+  },
+  "CorpusId:278601788": {
+    "title": "Ex Vivo Removal of CD41 positive platelet microparticles from Plasma by a Medical Device containing a Galanthus nivalis agglutinin (GNA) affinity resin",
+    "authors": [
+      "Rosalia de Necochea Campion",
+      "Miguel Pesqueira",
+      "Steven P. LaRosa"
+    ],
+    "year": 2025,
+    "venue": "bioRxiv",
+    "doi": "10.1101/2025.05.09.652772",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/01e1e8d2a417be82dce31e19db1dc5c317b10564",
+    "abstract": "Background Platelet microparticles (PMP) are elevated in and associated with disease activity in a number of diseases including cancer, neurological conditions, autoimmune diseases, and infectious diseases. This finding raises the possibility of a removal of these microparticles as a therapeutic strategy. The Hemopurifier is an experimental device consisting of a plasma separator and an affinity resin containing Galanthus nivalis agglutinin (GNA) affinity resin that has previously been shown to ",
+    "tldr": "It is demonstrated that an extracorporeal device with a GNA affinity resin removes platelet microparticles from normal healthy plasma."
+  },
+  "CorpusId:279404855": {
+    "title": "Innovative micro physiological systems for vaccine development",
+    "authors": [
+      "Kendra Reynaud",
+      "Scott Atwell",
+      "Christophe V\u00e9drine",
+      "Cyril Guyard",
+      "Laurent Beloeil"
+    ],
+    "year": 2025,
+    "venue": "Human Vaccines & Immunotherapeutics",
+    "doi": "10.1080/21645515.2025.2518641",
+    "pmid": "40524674",
+    "url": "https://www.semanticscholar.org/paper/90307eb7086074b17dcf57d746094f1078d68e33",
+    "abstract": "ABSTRACT Micro Physiological systems (MPS) are biomimetic platforms that reconstitute the complex architecture of human organs and tissues in vitro. MPSs have the capacity to improve clinical development pipelines as they address certain translational limitations that exist in other pre-clinical models by providing human-relevant microenvironments. These platforms have already demonstrated their potential in vaccine development, as several variations of MPSs have recently been published that pro",
+    "tldr": "Up-and-coming devices could be used to study the interplay between vaccine reactogenicity and innate immune stimulation, and thereby derisk vaccine targets by elucidating their inflammatory profiles prior to advancement to clinical trials."
+  },
+  "CorpusId:6555450": {
+    "title": "The Role of Human Adult Peripheral and Umbilical Cord Blood Platelet-Rich Plasma on Proliferation and Migration of Human Skin Fibroblasts",
+    "authors": [
+      "S. Hashemi",
+      "Mahdokht Mahmoodi",
+      "A. Rafati",
+      "Farzad Manafi",
+      "D. Mehrabani"
+    ],
+    "year": 2017,
+    "venue": "World journal of plastic surgery",
+    "doi": "",
+    "pmid": "28713711",
+    "url": "https://www.semanticscholar.org/paper/d25861387044fb7ac347a5a2ff6e13931525c936",
+    "abstract": "BACKGROUND Wound healing is a complex and dynamic process following damage in tissue structures. Due to extensive skin damage caused by burn injuries, this study determined the role of human adult peripheral and umbilical cord blood platelet-rich plasma on proliferation and migration in human skin fibroblasts. METHODS Platelet-rich plasma (5, 10, 15, 20 and 50% PRP) from human umbilical cord blood and adult peripheral blood were provided and added to fibroblasts cultured from a human skin sample",
+    "tldr": "As PRP could promote the migration and proliferation of dermal fibroblasts, it can be safely added in cultures when treatment of chronic wounds without triggering the immune response is needed."
+  },
+  "CorpusId:256683928": {
+    "title": "Granzyme B inhibition reduces disease severity in autoimmune blistering diseases",
+    "authors": [
+      "S. Hiroyasu",
+      "Matthew R. Zeglinski",
+      "Hongyan Zhao",
+      "M. Pawluk",
+      "Christopher T. Turner",
+      "A. Kasprick",
+      "C. Tateishi",
+      "W. Nishie",
+      "A. Burleigh",
+      "Peter A. Lennox",
+      "N. Van Laeken",
+      "N. Carr",
+      "F. Petersen",
+      "R. Crawford",
+      "H. Shimizu",
+      "D. Tsuruta",
+      "R. Ludwig",
+      "D. Granville"
+    ],
+    "year": 2021,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-020-20604-3",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/e603e0cc1b79d5196f76a3f8dc1a6f9cbe025dc1",
+    "abstract": "Pemphigoid diseases refer to a group of severe autoimmune skin blistering diseases characterized by subepidermal blistering and loss of dermal-epidermal adhesion induced by autoantibody and immune cell infiltrate at the dermal-epidermal junction and upper dermis. Here, we explore the role of the immune cell-secreted serine protease, granzyme B, in pemphigoid disease pathogenesis using three independent murine models. In all models, granzyme B knockout or topical pharmacological inhibition signif",
+    "tldr": "The authors implicate granzyme B in the immunopathology in multiple in vivo models of pemphigoid diseases and utilise a topical gran enzyme B inhibitor that attenuates disease phenotypes in vivo."
+  },
+  "CorpusId:236497630": {
+    "title": "Staphylococcus aureus uses the ArlRS and MgrA cascade to regulate immune evasion during skin infection",
+    "authors": [
+      "J. Kwiecinski",
+      "Rachel M. Kratofil",
+      "C. Parlet",
+      "Bas G J Surewaard",
+      "P. Kubes",
+      "A. Horswill"
+    ],
+    "year": 2021,
+    "venue": "Cell Reports",
+    "doi": "10.1016/j.celrep.2021.109462",
+    "pmid": "34320352",
+    "url": "https://www.semanticscholar.org/paper/2012758b286ee3894025bba486f7e3603d2bdf04",
+    "abstract": "SUMMARY Skin is one of the most common sites of host immune response against Staphylococcus aureus infection. Here, through a combination of in vitro assays, mouse models, and intravital imaging, we find that S. aureus immune evasion in skin is controlled by a cascade composed of the ArlRS two-component regulatory system and its downstream effector, MgrA. S. aureus lacking either ArlRS or MgrA is less virulent and unable to form correct abscess structure due to de-repression of a giant surface p",
+    "tldr": "Skin is one of the most common sites of host immune response against Staphylococcus aureus infection and ArlRS and MgrA are the main regulators of S.\u00a0aureus immune evasion and promising treatment targets."
+  },
+  "CorpusId:244090987": {
+    "title": "Neutrophil Extracellular Traps (NETs) and Hypercoagulability in Plasma Cell Dyscrasias\u2014Is This Phenomenon Worthy of Exploration?",
+    "authors": [
+      "O. Ciepiela",
+      "M. Ma\u0142ecka-Gie\u0142dowska",
+      "Emilia Czy\u017cewska"
+    ],
+    "year": 2021,
+    "venue": "Journal of Clinical Medicine",
+    "doi": "10.3390/jcm10225243",
+    "pmid": "34830525",
+    "url": "https://www.semanticscholar.org/paper/0dc6fe8d9f1d1111a595959d2e0f7032e8672026",
+    "abstract": "Plasma cell dyscrasias (PCDs) are neoplastic diseases derived from plasma cells. Patients suffering from PCDs are at high risk of hypercoagulability and thrombosis. These conditions are associated with disease-related factors, patient-related factors, or the use of immunomodulatory drugs. As PCDs belong to neoplastic diseases, some other factors related to the cancer-associated hypercoagulability state in the course of PCDs are also considered. One of the weakest issues studied in PCDs is the pr",
+    "tldr": "How PCDs influence the release of neutrophil extracellular traps is summarized, and whether NETs contribute to hypercoagulability in PCDs patients is hypothesized."
+  },
+  "CorpusId:212730995": {
+    "title": "The OX40 Axis is Associated with Both Systemic and Local Involvement in Atopic Dermatitis",
+    "authors": [
+      "J. Elsner",
+      "Michael C. Carlsson",
+      "J. Stougaard",
+      "U. Nygaard",
+      "M. Buchner",
+      "R. F\u00f6lster-Holst",
+      "M. Hvid",
+      "C. Vestergaard",
+      "M. Deleuran",
+      "B. Deleuran"
+    ],
+    "year": 2020,
+    "venue": "Acta Dermato-Venereologica",
+    "doi": "10.2340/00015555-3452",
+    "pmid": "32176307",
+    "url": "https://www.semanticscholar.org/paper/32f5cb58f4cc3ad0b88dffa29e34755330b59611",
+    "abstract": "Atopic dermatitis (AD) is a chronic, or chronically relapsing, inflammatory skin disease associated with asthma and allergic rhinitis, and is dominated by Th2 cells. The co-stimulatory T-cell receptor OX40 and its ligand, OX40L, play a central role in the pathogenesis of AD, as their interactions are crucial for the generation of TH2 memory cells. Using enzyme-linked immunoassay (ELISA) and flow cytometry on blood samples from patients with AD and healthy volunteers, this study shows that the se",
+    "tldr": "Serum levels of sOX40 were associated with atopic diseases and, together, these results support that the OX40 system is important for chronic inflammation in AD skin."
+  }
+}

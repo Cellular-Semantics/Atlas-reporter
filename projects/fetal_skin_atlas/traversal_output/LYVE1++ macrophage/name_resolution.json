@@ -1,0 +1,11 @@
+{
+  "cell_type_label": "LYVE1++ macrophage",
+  "resolved_names": [
+    "LYVE1+ macrophage",
+    "LYVE1 hi macrophage"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas paper (Gopee et al., 2024) consistently refers to this population as 'LYVE1+' macrophages, one of four macrophage subsets (LYVE1+, MHCII+, TML and iron-recycling) identified in prenatal skin. The '++' notation in the atlas annotation likely corresponds to the 'LYVE1 hi' designation used by Suo et al. (2022) for the same broad macrophage subset identified across developing organs. Macrophage subsets were annotated using marker genes from Suo et al. (2022)."
+}

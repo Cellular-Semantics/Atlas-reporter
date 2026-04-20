@@ -1,0 +1,34 @@
+{
+  "cell_type_label": "Langerhans cell",
+  "working_definition": "An epidermal-resident antigen-presenting cell of the myeloid lineage, defined by expression of CD207 (langerin), CD1A, and EPCAM, and characterised by the presence of Birbeck granules in mature cells. In prenatal human skin (7-17 PCW), Langerhans cell precursors seed the epidermis as early as 6 PCW, initially expressing CD45, HLA-DR, and CD1c, then acquiring the definitive LC markers CD207 and CD1a in a stepwise manner after 11 weeks EGA. LCs derive from yolk sac macrophages and fetal liver monocytes during embryogenesis, and self-renew locally in steady state.",
+  "searches_performed": [
+    "Langerhans cell (OLS4, CL ontology)",
+    "getChildren CL:0000453 (CL ontology)",
+    "getAncestors CL:0000453 (CL ontology)"
+  ],
+  "best_match": {
+    "cl_term": "Langerhans cell",
+    "cl_id": "CL:0000453",
+    "cl_definition": "A Langerhans cell is a conventional dendritic cell subtype found in stratified squamous epithelia, particularly the epidermis. Classified under the mononuclear phagocyte system, it is a professional antigen-presenting cell that expresses CD207 (langerin) and forms Birbeck granules.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000453 (Langerhans cell) directly matches the atlas label 'LC', which the paper explicitly defines as 'Langerhans cells'. The atlas does not subdivide prenatal LCs into subtypes (unlike the adult skin dataset which has LC_1 through LC_4). The more specific child term CL:0002457 (epidermal Langerhans cell) requires CD45+/MHCII+/CD11b+, a marker profile that may not be fully acquired in early prenatal LC precursors (before 11 weeks EGA). The broader CL:0000453 is therefore the safest and most accurate mapping for the prenatal LC population, which spans a maturation continuum from precursor to mature Langerhans cell.",
+  "other_candidates": [
+    {
+      "cl_term": "epidermal Langerhans cell",
+      "cl_id": "CL:0002457",
+      "cl_definition": "A Langerhans cell that is in the epidermis and is CD45-positive, MHCII-positive, and CD11b-positive.",
+      "reason_rejected": "While LCs in this atlas are epidermal, the CL:0002457 definition requires CD45+/MHCII+/CD11b+ which may not be fully present in early prenatal LC precursors (before 11 weeks EGA). CL:0002457 would be appropriate for mature prenatal LCs (after 11 PCW) but the atlas clusters span the full 7-17 PCW range including immature precursors."
+    },
+    {
+      "cl_term": "CD1a-positive Langerhans cell",
+      "cl_id": "CL:0001014",
+      "cl_definition": "A Langerhans cell that is CD1a-positive and CD324-positive.",
+      "reason_rejected": "Too narrow: CD1a expression is acquired only after 11 weeks EGA. The prenatal LC population includes CD1a-negative precursors during early development."
+    }
+  ],
+  "recommendation": "Use CL:0000453 (Langerhans cell). This is an exact match for the atlas 'LC' label. It appropriately covers the full developmental spectrum of prenatal Langerhans cells, including both immature precursors and mature CD207+/CD1a+ cells present across the 7-17 PCW atlas window.",
+  "new_term_needed": false
+}

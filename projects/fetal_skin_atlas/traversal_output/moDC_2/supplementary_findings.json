@@ -1,0 +1,20 @@
+{
+  "cell_type": "moDC_2",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "source_doi": "10.1126/science.aba6500",
+  "annotation": "moDC_2 (monocyte-derived dendritic cell subtype 2)",
+  "findings": [
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "14 states of mononuclear phagocytes identified in human skin, including monocyte-derived DCs (mo-DCs)"
+    },
+    {
+      "source": "Reynolds et al. (2021), Figure 3C",
+      "detail": "PAGA analysis revealed mo-DC differentiation branch with moDC1, moDC2, moDC3 subtypes representing progressive maturation states"
+    },
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "moDC_2 is an intermediate maturation state in the mo-DC differentiation branch, positioned between moDC_1 and the fully mature moDC_3 which expresses DC maturation genes"
+    }
+  ]
+}

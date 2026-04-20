@@ -1,0 +1,10 @@
+{
+  "label": "Outer root sheath",
+  "resolved_names": [
+    "outer root sheath cell"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "The atlas identifies ORS (SLC26A7+) cells in both prenatal skin and SkO as part of the HF. CL:0002561 is an exact match."
+}

@@ -1,0 +1,8 @@
+{
+  "label": "c3",
+  "resolved_names": [],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "low",
+  "evidence": "The provided text from the atlas paper and available context focuses heavily on prenatal human skin, with substantial detail about cell type annotation and mapping in prenatal (fetal) tissue. No explicit mapping or mention of 'c3' in the context of adult skin was found in the provided information. Without additional supplementary material (e.g., cluster-to-name mapping tables for adult samples) or explicit mention in the main text, this label could not be resolved to an author-assigned cell type name. Therefore, the original label is returned as unresolved."
+}

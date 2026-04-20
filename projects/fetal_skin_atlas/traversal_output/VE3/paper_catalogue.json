@@ -1,0 +1,415 @@
+{
+  "CorpusId:247509310": {
+    "title": "Expression Profile of CD157 Reveals Functional Heterogeneity of Capillaries in Human Dermal Skin",
+    "authors": [
+      "Katarzyna Michalak-Micka",
+      "Dominic R\u00fctsche",
+      "Lukas Johner",
+      "U. Moehrlen",
+      "T. Biedermann",
+      "Agnes S. Klar"
+    ],
+    "year": 2022,
+    "venue": "Biomedicines",
+    "doi": "10.3390/biomedicines10030676",
+    "pmid": "35327478",
+    "url": "https://www.semanticscholar.org/paper/7d2f58fefe9f2872d86f7b80670b0e1f41bcb2d7",
+    "abstract": "CD157 acts as a receptor, regulating leukocyte trafficking and the binding of extracellular matrix components. However, the expression pattern and the role of CD157 in human blood (BEC) and the lymphatic endothelial cells (LEC) of human dermal microvascular cells (HDMEC), remain elusive. We demonstrated constitutive expression of CD157 on BEC and LEC, in fetal and juvenile/adult skin, in situ, as well as in isolated HDMEC. Interestingly, CD157 epitopes were mostly localized on BEC, co-expressing",
+    "tldr": "The enhanced and specific adherence of CD11b-expressing human blood myeloid cells to CD157+ HDMEC fraction is proved, using an in vitro immune-binding assay, to attribute specific roles to endothelial CD157, in the regulation of innate immunity during inflammation."
+  },
+  "CorpusId:264427115": {
+    "title": "Angiopoietin-like protein 2 mediates vasculopathy-driven fibrogenesis in a mouse model of systemic sclerosis",
+    "authors": [
+      "D. Saha",
+      "Sujaya Thannimangalath",
+      "Neha Pincha",
+      "Ravi Kiran",
+      "Akshay Hegde",
+      "Sunny Kataria",
+      "Binita Dam",
+      "Ankita Hiwale",
+      "Venkatesh Ravula",
+      "Lekshmi Minikumari Rahulan",
+      "Neha Nigam",
+      "Neha Singh",
+      "V. Agarwal",
+      "P. Vemula",
+      "Colin Jamora"
+    ],
+    "year": 2023,
+    "venue": "bioRxiv",
+    "doi": "10.1101/2023.10.16.562467",
+    "pmid": "40540411",
+    "url": "https://www.semanticscholar.org/paper/72ddb35c6831f3efdefc439b087a9861a7499711",
+    "abstract": "Vasculopathy is a common hallmark of various fibrotic disorders including systemic sclerosis (SSc), yet its underlying etiology and contribution to fibrogenesis remain ill-defined. In SSc the vasculopathy typically precedes the onset of fibrosis and we observed that this phenomenon is recapitulated in the Snail transgenic mouse model of SSc. The vascular anomalies manifest as deformed vessels, endothelial cell dysfunction and vascular leakage. Our investigation into the underlying mechanism of t",
+    "tldr": "Inhibiting endothelial cell junctional instability and consequently vascular leakage with a synthetic analog of the microbial metabolite Urolithin A (UAS03) effectively mitigated the vasculopathy and inhibited fibrogenesis and holds the potential to revolutionize the approach to the treatment of fibrotic diseases by targeting the vascular defects."
+  },
+  "CorpusId:247731792": {
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": [
+      "Yuliang He",
+      "C. Tacconi",
+      "L. Dieterich",
+      "Jihye Kim",
+      "G. Restivo",
+      "Epameinondas Gousopoulos",
+      "N. Lindenblatt",
+      "M. Levesque",
+      "M. Claassen",
+      "M. Detmar"
+    ],
+    "year": 2022,
+    "venue": "Cells",
+    "doi": "10.3390/cells11071111",
+    "pmid": "35406678",
+    "url": "https://www.semanticscholar.org/paper/c6828ff0b7e76371b79e83d4d6554043a116ef46",
+    "abstract": "Ample evidence pinpoints the phenotypic diversity of blood vessels (BVs) and site-specific functions of their lining endothelial cells (ECs). We harnessed single-cell RNA sequencing (scRNA-seq) to dissect the molecular heterogeneity of blood vascular endothelial cells (BECs) in healthy adult human skin and identified six different subpopulations, signifying arterioles, post-arterial capillaries, pre-venular capillaries, post-capillary venules, venules and collecting venules. Individual BEC subty",
+    "tldr": "This study molecularly refines individual BV compartments, whilst the identification of novel subtype-specific signatures provides more insights for future studies dissecting the responses of distinct vessel segments under pathological conditions."
+  },
+  "CorpusId:14633087": {
+    "title": "Dynamic Perfusion Culture of Human Outgrowth Endothelial Progenitor Cells on Demineralized Bone Matrix In Vitro",
+    "authors": [
+      "Dixin Cai",
+      "Y. Quan",
+      "Peng-Ju He",
+      "Hong-bo Tan",
+      "Yong-qing Xu"
+    ],
+    "year": 2016,
+    "venue": "Medical Science Monitor",
+    "doi": "10.12659/MSM.897884",
+    "pmid": "27789903",
+    "url": "https://www.semanticscholar.org/paper/e46aae60ba98ec65c62d451a0d9da32f8d50fa54",
+    "abstract": "Background The aim of this study was to investigate the proliferation, differentiation, and tube formation of human outgrowth endothelial progenitor cells (OECs) cultured with porous demineralized bone matrix (DBM) under a dynamic perfusion system in vitro. Material/Methods OECs were isolated, expanded, characterized, eGFP-transfected and seeded on DBM scaffold and cultured under static or dynamic perfusion conditions, and continuously observed under fluorescence microscope. DBM scaffolds were h",
+    "tldr": "A dynamic perfusion system can be used as an innovative method for the rapid vascularization in tissue engineering, which can accelerate the proliferation and differentiation of OECs and the vascularization of implanted scaffolds."
+  },
+  "CorpusId:6188676": {
+    "title": "A first vascularized skin equivalent as an alternative to animal experimentation.",
+    "authors": [
+      "F. Groeber",
+      "L. Engelhardt",
+      "Julia Lange",
+      "Szymon Kurdyn",
+      "F. F. Schmid",
+      "Christoph Ru\u0308cker",
+      "S. Mielke",
+      "H. Walles",
+      "J. Hansmann"
+    ],
+    "year": 2016,
+    "venue": "ALTEX",
+    "doi": "10.14573/altex.1604041",
+    "pmid": "27180196",
+    "url": "https://www.semanticscholar.org/paper/af1a20c3e1ca9b92104f39d30ed775a17c61b503",
+    "abstract": "Tissue-engineered skin equivalents mimic key aspects of the human skin, and can thus be employed as wound coverage for large skin defects or as in vitro test systems as an alternative to animal models. However, current skin equivalents lack a functional vasculature limiting clinical and research applications. This study demonstrates the generation of a vascularized skin equivalent with a perfused vascular network by combining a biological vascularized scaffold (BioVaSc) based on a decellularized",
+    "tldr": "The here shown skin equivalent has the potential for skin grafting and represents a sophisticated in vitro model for dermatological research."
+  },
+  "CorpusId:53212803": {
+    "title": "Cellular and Molecular Heterogeneity Associated with Vessel Formation Processes",
+    "authors": [
+      "P. R. Castro",
+      "A. S. Barbosa",
+      "Jousie Michel Pereira",
+      "Hedden Ranfley",
+      "Mariane Felipetto",
+      "C. Gon\u00e7alves",
+      "I. Paiva",
+      "B. B. Berg",
+      "L. Barcelos"
+    ],
+    "year": 2018,
+    "venue": "BioMed Research International",
+    "doi": "10.1155/2018/6740408",
+    "pmid": "30406137",
+    "url": "https://www.semanticscholar.org/paper/6abad603efb612356ce319c586775ea21469935f",
+    "abstract": "The microvasculature heterogeneity is a complex subject in vascular biology. The difficulty of building a dynamic and interactive view among the microenvironments, the cellular and molecular heterogeneities, and the basic aspects of the vessel formation processes make the available knowledge largely fragmented. The neovascularisation processes, termed vasculogenesis, angiogenesis, arteriogenesis, and lymphangiogenesis, are important to the formation and proper functioning of organs and tissues b",
+    "tldr": "This review intends to approach the microvasculature heterogeneity in an integrated view considering the diversity of neovascularisation processes and the cellular and molecular heterogeneity that contribute to microcirculatory homeostasis."
+  },
+  "CorpusId:279552567": {
+    "title": "Preclinical Evidence That Mesoglycan Unfolds Complex Anti-Aging Effects in Photoaged Female Facial Skin",
+    "authors": [
+      "A. Zeltzer",
+      "A. Keren",
+      "Ralf Paus",
+      "A. Gilhar"
+    ],
+    "year": 2025,
+    "venue": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms26125787",
+    "pmid": "40565250",
+    "url": "https://www.semanticscholar.org/paper/7c66981f5817f6dab1c3e776cf45acb4f5b8fc68",
+    "abstract": "Novel senotherapeutics are needed to reverse aging-related skin decline. The research question addressed was whether mesoglycan, a clinically approved glycosaminoglycan formulation known to enhance perfusion, angiogenesis, and VEGF-A signaling, possesses therapeutic potential for rejuvenating photo aged human skin. To test this, we treated full-thickness photoaged facial human skin samples (mean age: 72 \u00b1 5 years) from seven women ex vivo. The samples were treated with topical or medium-delivere",
+    "tldr": "Mesoglycan demonstrates senotherapeutic potential in photoaged human skin, acting via complementary pathways, including VEGF-A upregulation, and significantly enhanced basement membrane structure, pigmentation, mitochondrial function and antioxidant defenses, while avoiding systemic exposure, making it the safer and more feasible route for localized skin anti-aging."
+  },
+  "CorpusId:3295687": {
+    "title": "Whole-Mount Adult Ear Skin Imaging Reveals Defective Neuro-Vascular Branching Morphogenesis in Obese and Type 2 Diabetic Mouse Models",
+    "authors": [
+      "T. Yamazaki",
+      "Wenling Li",
+      "Ling Yang",
+      "Ping Li",
+      "Haiming Cao",
+      "S. Motegi",
+      "M. Udey",
+      "Elise Bernhard",
+      "Takahisa Nakamura",
+      "Y. Mukouyama"
+    ],
+    "year": 2018,
+    "venue": "Scientific Reports",
+    "doi": "10.1038/s41598-017-18581-7",
+    "pmid": "29323138",
+    "url": "https://www.semanticscholar.org/paper/3d1b3b542d01385ec5dded7ffe0cf46edd4ce5de",
+    "abstract": "Obesity and type 2 diabetes are frequently associated with peripheral neuropathy. Though there are multiple methods for diagnosis and analysis of morphological changes of peripheral nerves and blood vessels, three-dimensional high-resolution imaging is necessary to appreciate the pathogenesis with an anatomically recognizable branching morphogenesis and patterning. Here we established a novel technique for whole-mount imaging of adult mouse ear skin to visualize branching morphogenesis and patte",
+    "tldr": "W Whole-mount immunostaining of adult mouse ear skin showed that peripheral sensory and sympathetic nerves align with large-diameter blood vessels and suggest that the neuro-vascular and neuro-immune phenotypes in the animal models of obesity and diabetes are investigated."
+  },
+  "CorpusId:261430258": {
+    "title": "Endothelial VEGFR2-PLC\u03b3 signaling regulates vascular permeability and antitumor immunity through eNOS/Src",
+    "authors": [
+      "Elin Sj\u00f6berg",
+      "M. Melssen",
+      "Mark Richards",
+      "Yindi Ding",
+      "Catarina Chanoca",
+      "Dongying Chen",
+      "E. Nwadozi",
+      "Sagnik Pal",
+      "Dominic T. Love",
+      "T. Ninchoji",
+      "M. Shibuya",
+      "M. Simons",
+      "A. Dimberg",
+      "L. Claesson-Welsh"
+    ],
+    "year": 2023,
+    "venue": "Journal of Clinical Investigation",
+    "doi": "10.1172/JCI161366",
+    "pmid": "37651195",
+    "url": "https://www.semanticscholar.org/paper/cfdb1efcc4e322a2c7414cff0e182abc48d0f0a9",
+    "abstract": "Endothelial phospholipase C\u03b3 (PLC\u03b3) is essential for vascular development; however, its role in healthy, mature, or pathological vessels is unexplored. Here, we show that PLC\u03b3 was prominently expressed in vessels of several human cancer forms, notably in renal cell carcinoma (RCC). High PLC\u03b3 expression in clear cell RCC correlated with angiogenic activity and poor prognosis, while low expression correlated with immune cell activation. PLC\u03b3 was induced downstream of vascular endothelial growth fa",
+    "tldr": "This work believes that it has identified a clinically relevant endothelial PLC\u03b3 pathway downstream of VEGFR2 pY1173, which destabilizes the endothelial barrier and results in loss of antitumor immunity."
+  },
+  "CorpusId:262126195": {
+    "title": "CREB1-driven CXCR4hi neutrophils promote skin inflammation in mouse models and human patients",
+    "authors": [
+      "Jiaoling Chen",
+      "Yaxing Bai",
+      "K. Xue",
+      "Zhiguo Li",
+      "Zhenlai Zhu",
+      "Qingyang Li",
+      "Chen Yu",
+      "Bing Li",
+      "S. Shen",
+      "P. Qiao",
+      "Caixia Li",
+      "Yixin Luo",
+      "Hongjiang Qiao",
+      "E. Dang",
+      "Wen Yin",
+      "J. Gudjonsson",
+      "G. Wang",
+      "S. Shao"
+    ],
+    "year": 2023,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-023-41484-3",
+    "pmid": "37736772",
+    "url": "https://www.semanticscholar.org/paper/f66faab0aaf778faec9b7f57656efbc623581a22",
+    "abstract": "Neutrophils have a pathogenic function in inflammation via releasing pro-inflammatory mediators or neutrophil extracellular traps (NETs). However, their heterogeneity and pro-inflammatory mechanisms remain unclear. Here, we demonstrate that CXCR4hi neutrophils accumulate in the blood and inflamed skin in human psoriasis, and correlate with disease severity. Compared to CXCR4lo neutrophils, CXCR4hi neutrophils have enhanced NETs formation, phagocytic function, neutrophil degranulation, and overex",
+    "tldr": "It is demonstrated that CXCR4hi neutrophils accumulate in the blood and inflamed skin in human psoriasis, and correlate with disease severity, and CREB1 is identified as a critical regulator of CX CR4HI neutrophil development and characterizes the contribution to vascular remodeling and inflammatory responses in skin."
+  },
+  "CorpusId:201157289": {
+    "title": "Molecular regulation of arteriovenous endothelial cell specification",
+    "authors": [
+      "Jennifer S. Fang",
+      "K. Hirschi"
+    ],
+    "year": 2019,
+    "venue": "F1000Research",
+    "doi": "10.12688/f1000research.16701.1",
+    "pmid": "31448079",
+    "url": "https://www.semanticscholar.org/paper/a575a46263b7440cd69355a8a44bab37042a5ef1",
+    "abstract": "The systemic circulation depends upon a highly organized, hierarchal blood vascular network that requires the successful specification of arterial and venous endothelial cells during development. This process is driven by a cascade of signaling events (including Hedgehog, vascular endothelial growth factor (VEGF), Notch, connexin (Cx), transforming growth factor-beta (TGF- \u03b2), and COUP transcription factor 2 (COUP-TFII)) to influence endothelial cell cycle status and expression of arterial or ve",
+    "tldr": "This review provides an overview of recent findings in the field of arteriovenous specification and highlights key regulators of this process."
+  },
+  "CorpusId:261703763": {
+    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "authors": [
+      "Gopal Chovatiya",
+      "Kefei Li",
+      "Jonathan Li",
+      "Sangeeta Ghuwalewala",
+      "T. Tumbar"
+    ],
+    "year": 2023,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-023-40761-5",
+    "pmid": "37699906",
+    "url": "https://www.semanticscholar.org/paper/a6a61005143594b36aa0ec74202837a87855e547",
+    "abstract": "Vascular endothelial (VE)-cadherin is a well-recognized endothelial cell marker. One of its interacting partners, the TGF-\u03b2 receptor Alk1, is essential in endothelial cells for adult skin vasculature remodeling during hair homeostasis. Using single-cell transcriptomics, lineage tracing and gene targeting in mice, we characterize the cellular and molecular dynamics of skin VE-cadherin+ cells during hair homeostasis. We describe dynamic changes of VE-cadherin+ endothelial cells specific to blood a",
+    "tldr": "This work implicates the VE-cadherin/Alk1 duo, classically known as endothelial-vascular specific, in perineurial-nerve homeostasis, which has broad implications in vascular and nerve disease."
+  },
+  "CorpusId:257506233": {
+    "title": "An IGFBP7hi endothelial cell subset drives T cell extravasation in psoriasis via endothelial glycocalyx degradation",
+    "authors": [
+      "Qingyang Li",
+      "S. Shao",
+      "Zhenlai Zhu",
+      "Jiaoling Chen",
+      "Junfeng Hao",
+      "Yaxing Bai",
+      "Bing Li",
+      "E. Dang",
+      "G. Wang"
+    ],
+    "year": 2023,
+    "venue": "Journal of Clinical Investigation",
+    "doi": "10.1172/JCI160451",
+    "pmid": "36917196",
+    "url": "https://www.semanticscholar.org/paper/7475d60bfdb8e7cbd8f070314023a903fb33ffe3",
+    "abstract": "Dysfunction of vascular endothelial cells (ECs) facilitates imbalanced immune responses and tissue hyperinflammation. However, the heterogeneous functions of skin ECs and their underlying mechanism in dermatoses remain to be determined. Here, focusing on the pathogenic role of skin ECs in psoriasis, we characterized the molecular and functional heterogeneity of skin ECs from healthy individuals and psoriasis patients at the single-cell level. We found that endothelial glycocalyx destruction, a m",
+    "tldr": "The results depict the distinct functions of EC clusters in healthy and psoriatic skin, identify IGFBP7hi ECs as an active subset modulating vascular function and cutaneous inflammation, and indicate that targeting IGFBP 7 is a potential therapeutic strategy in psoriasis."
+  },
+  "CorpusId:248283291": {
+    "title": "The Role of Amino Acids in Endothelial Biology and Function",
+    "authors": [
+      "Meng Li",
+      "Yanqing Wu",
+      "L. Ye"
+    ],
+    "year": 2022,
+    "venue": "Cells",
+    "doi": "10.3390/cells11081372",
+    "pmid": "35456051",
+    "url": "https://www.semanticscholar.org/paper/155073811cd4bdd64df402bc6c75c1b7e61260c8",
+    "abstract": "The vascular endothelium acts as an important component of the vascular system. It is a barrier between the blood and vessel wall. It plays an important role in regulating blood vessel tone, permeability, angiogenesis, and platelet functions. Several studies have shown that amino acids (AA) are key regulators in maintaining vascular homeostasis by modulating endothelial cell (EC) proliferation, migration, survival, and function. This review summarizes the metabolic and signaling pathways of AAs ",
+    "tldr": "The challenges in understanding the role of AA in the development of cardiovascular pathophysiology are discussed and the importance of AA homeostasis in the functioning of ECs and vascularHomeostasis is discussed."
+  },
+  "CorpusId:277819896": {
+    "title": "Organoid\u2010Like Neurovascular Spheroids Promote the Recovery of Hypoxic\u2010Ischemic Skin Flaps Through the Activation of Autophagy",
+    "authors": [
+      "Junjin Jie",
+      "Jingyi Ju",
+      "Zhenxing Wang",
+      "Jun Chen",
+      "Lin-Ping Wu",
+      "Jiaming Sun"
+    ],
+    "year": 2025,
+    "venue": "Advanced Healthcare Materials",
+    "doi": "10.1002/adhm.202405154",
+    "pmid": "40237031",
+    "url": "https://www.semanticscholar.org/paper/280518bad9fa8f92fb85e3abea0445c989d4db25",
+    "abstract": "Crosstalk between nerves and blood vessels plays a crucial role in flap development, injury repair, and homeostasis maintenance. However, in most flap transplantation strategies, the interactions between nerves and blood vessels have been ignored, leading to unsatisfactory repair effects. In this study, highly sprouting organoid\u2010like neurovascular spheroids (NVUs) with P34HB porous microsphere cores embedding in a supportive microenvironment of Gelatin Methacryloyl hydrogel are developed. Cell\u2010l",
+    "tldr": "Highly sprouting organoid\u2010like neurovascular spheroids with P34HB porous microsphere cores embedding in a supportive microenvironment of Gelatin Methacryloyl hydrogel are developed and autophagy activation regulated by nerves is detected along with the assembly of vascular networks, suggesting its role in neovascularization."
+  },
+  "CorpusId:7417269": {
+    "title": "The cutaneous vascular system in chronic skin inflammation",
+    "authors": [
+      "R. Huggenberger",
+      "M. Detmar"
+    ],
+    "year": 2011,
+    "venue": "Journal of Investigative Dermatology Symposium Proceedings",
+    "doi": "10.1038/jidsymp.2011.5",
+    "pmid": "22076324",
+    "url": "https://www.semanticscholar.org/paper/156bd535a5c76c522bb51635118db5458f293814",
+    "abstract": "The blood and lymphatic vasculature play an important role in skin homeostasis. Angiogenesis and lymphangiogenesis \u2013 the growth of new vessels from existing ones - have received tremendous interest because of their role in promoting cancer spread. However, there is increasing evidence that both vessel types also play a major role in acute and chronic inflammatory disorders. Vessels change their phenotype in inflammation (vascular remodeling). In inflamed skin, vascular remodeling consists of a h",
+    "tldr": "Topical application of anti-angiogenic drugs might be ideally suited to circumvent the adverse effects of systemic therapy with angiogenesis inhibitors to treat inflammatory conditions."
+  },
+  "CorpusId:259522997": {
+    "title": "Itaconic acid induces angiogenesis and suppresses apoptosis via Nrf2/autophagy to prolong the survival of multi-territory perforator flaps",
+    "authors": [
+      "Gaojie Luo",
+      "Zekun Zhou",
+      "Chengxiong Huang",
+      "Peiyao Zhang",
+      "Nianzhe Sun",
+      "Wei Chen",
+      "Chao-hua Deng",
+      "Xiaoxiao Li",
+      "Panfeng Wu",
+      "Ju-yu Tang",
+      "Li-ming Qing"
+    ],
+    "year": 2023,
+    "venue": "Heliyon",
+    "doi": "10.1016/j.heliyon.2023.e17909",
+    "pmid": "37456049",
+    "url": "https://www.semanticscholar.org/paper/21f2aa2af88cad6ba895e4a7de9df66b068bd756",
+    "abstract": "Background Perforator flaps are widely used in hand microsurgery to reconstruct and repair soft tissue injuries. However, ischemia and subsequent ischemia-reperfusion injury may cause distal necrosis of the flap. Itaconic acid (IA) is a modulator of macrophage function, which exerts anti-inflammatory effects in macrophage activation. Methods The necrotic area of the flap was detected by measuring the flap temperature with an infrared thermometer. Flap cell apoptosis was detected by TUNEL stainin",
+    "tldr": "Itaconic acid raises VEGF protein levels in skin flaps and the number of CD31-positive vessels and attenuated apoptosis in the ischemic area of flap, and the combination of itaconic Acid and Nrf2 inhibitor ML385 reversed this beneficial effect."
+  },
+  "CorpusId:220405072": {
+    "title": "Suppressed Vascular Leakage and Myocardial Edema Improve Outcome From Myocardial Infarction",
+    "authors": [
+      "Xiujuan Li",
+      "B. Redfors",
+      "Miguel S\u00e1inz-Jaspeado",
+      "S. Shi",
+      "Pernilla Martinsson",
+      "Narendra Padhan",
+      "M. Scharin T\u00e4ng",
+      "J. Bor\u00e9n",
+      "Malin C. Levin",
+      "L. Claesson-Welsh"
+    ],
+    "year": 2020,
+    "venue": "Frontiers in Physiology",
+    "doi": "10.3389/fphys.2020.00763",
+    "pmid": "32733273",
+    "url": "https://www.semanticscholar.org/paper/f40ce59f424187e3860f263f10655de2fb308cb1",
+    "abstract": "Aim The acute phase of myocardial infarction (MI) is accompanied by edema contributing to tissue damage and disease outcome. Here, we aimed to identify the mechanism whereby vascular endothelial growth factor (VEGF)-A induces myocardial edema in the acute phase of MI to eventually promote development of therapeutics to specifically suppress VEGFA-regulated vascular permeability while preserving collateral vessel formation. Methods and Results VEGFA regulates vascular permeability and edema by ac",
+    "tldr": "Suppression of VEGFA/VEGFR2-regulated vascular permeability leads to diminished edema without affecting vascular density correlating with improved myocardial parameters and survival after MI."
+  },
+  "CorpusId:51955497": {
+    "title": "Counterbalance: modulation of VEGF/VEGFR activities by TNFSF15",
+    "authors": [
+      "Gui-Li Yang",
+      "Lu-Yuan Li"
+    ],
+    "year": 2018,
+    "venue": "Signal Transduction and Targeted Therapy",
+    "doi": "10.1038/s41392-018-0023-8",
+    "pmid": "30101034",
+    "url": "https://www.semanticscholar.org/paper/0a29cc878650b77d3eed54562058022a6d1e28cf",
+    "abstract": "Vascular hyperpermeability occurs in angiogenesis and several pathobiological conditions, producing elevated interstitial fluid pressure and lymphangiogenesis. How these closely related events are modulated is a fundamentally important question regarding the maintenance of vascular homeostasis and treatment of disease conditions such as cancer, stroke, and myocardial infarction. Signals mediated by vascular endothelial growth factor receptors, noticeably VEGFR-1, \u22122, and \u22123, are centrally involv",
+    "tldr": "The ability of tumor necrosis factor superfamily-15 (TNFSF15) protein to balance the actions of vascular endothelial growth factors (VEGFs) highlights new therapeutic strategies for the treatment of diseases that disrupt the circulatory system."
+  },
+  "CorpusId:270970847": {
+    "title": "Skin-on-a-chip technologies towards clinical translation and commercialization",
+    "authors": [
+      "Nilufar Ismayilzada",
+      "Ceren Tarar",
+      "Sajjad Rahmani Dabbagh",
+      "Begum K. Tokyay",
+      "Sara Asghari Dilmani",
+      "Emel Sokullu",
+      "H. Abaci",
+      "S. Tasoglu"
+    ],
+    "year": 2024,
+    "venue": "Biofabrication",
+    "doi": "10.1088/1758-5090/ad5f55",
+    "pmid": "38964314",
+    "url": "https://www.semanticscholar.org/paper/552963a8bbbee9a3ba4ef4a221e4c6217d4fcca7",
+    "abstract": "Skin is the largest organ of the human body which plays a critical role in thermoregulation, metabolism (e.g. synthesis of vitamin D), and protection of other organs from environmental threats, such as infections, microorganisms, ultraviolet radiation, and physical damage. Even though skin diseases are considered to be less fatal, the ubiquity of skin diseases and irritation caused by them highlights the importance of skin studies. Furthermore, skin is a promising means for transdermal drug deli",
+    "tldr": "The article reviews the most recent advances in the design and applications of skin-on-a-chip platforms for disease modeling as well as the analysis of drugs and cosmetics and identifies the existing obstacles that hinder the advancement of SoC platforms."
+  },
+  "CorpusId:231590498": {
+    "title": "Hair follicle germs containing vascular endothelial cells for hair regenerative medicine",
+    "authors": [
+      "Tatsuto Kageyama",
+      "Y. Chun",
+      "J. Fukuda"
+    ],
+    "year": 2021,
+    "venue": "Scientific Reports",
+    "doi": "10.1038/s41598-020-79722-z",
+    "pmid": "33436760",
+    "url": "https://www.semanticscholar.org/paper/69c9b31a6bac328423b15cc91000ed4ff7a95017",
+    "abstract": "Hair regenerative medicine has emerged as a promising approach for the treatment of severe hair loss. Recent advances in three-dimensional tissue engineering, such as formation of hair follicle germs (HFGs), have considerably improved hair regeneration after transplantation in animal models. Here, we proposed an approach for fabricating HFGs containing vascular endothelial cells. Epithelial, dermal papilla, and vascular endothelial cells initially formed a single aggregate, which subsequently be",
+    "tldr": "The proposed approach for fabricating HFGs containing vascular endothelial cells exhibited higher expression of hair morphogenesis-related genes in vitro, along with higher levels of hair shaft regeneration upon transplantation to the dorsal side of nude mice, than those without vascular endothelium cells."
+  }
+}

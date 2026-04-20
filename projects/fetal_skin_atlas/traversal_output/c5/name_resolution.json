@@ -1,0 +1,8 @@
+{
+  "label": "c5",
+  "resolved_names": [],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "low",
+  "evidence": "The provided excerpt does not contain explicit mapping information for the label 'c5' within the adult scope. The paper title and main text focus on prenatal and organoid skin, and there is no supplementary cluster-to-cell type mapping for adult skin clusters. The label appears to be a generic cluster ID, and without access to figures, extended data, or supplementary tables mapping cluster numbers to cell type names for the adult condition, resolution is not possible from the given information."
+}

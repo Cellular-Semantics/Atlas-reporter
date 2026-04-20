@@ -1,0 +1,10 @@
+{
+  "label": "Secreting neuron",
+  "resolved_names": [
+    "secreting neuron"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "medium",
+  "evidence": "Secreting neurons in the SkO represent a neurosecretory cell population in the skin neural compartment. No specific CL term matches this annotation."
+}

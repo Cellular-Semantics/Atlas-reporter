@@ -1,0 +1,12 @@
+{
+  "label": "CD8 T cell",
+  "resolved_names": [
+    "CD8-positive, alpha-beta T cell",
+    "CD8+ T cell",
+    "Cytotoxic T cell (fetal)"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The cell_type_annotations.json file lists 'CD8 T cell' as a fine-grained annotation with fetal scope. In the atlas paper (DOI: 10.1038/s41586-024-08002-x), T cells including CD8+ T cells emerge in prenatal skin later in gestation, accompanying thymus formation from around 10 PCW. The adult counterpart cluster is annotated as 'Tc' (Cytotoxic T cell / CD8+ T cell). Single-cell TCR sequencing was performed to resolve T cell subsets (Supplementary Tables 2 and 3). Dhariwala et al. (2020) provide detailed CyTOF phenotyping showing CD8+ T cells in fetal skin are predominantly naive with a subset showing memory-like features."
+}

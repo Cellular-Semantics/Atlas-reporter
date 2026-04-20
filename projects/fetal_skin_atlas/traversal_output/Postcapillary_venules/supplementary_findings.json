@@ -1,0 +1,11 @@
+{
+  "cell_type": "Postcapillary venules",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Supplementary Table 3 provides DEGs used to annotate Postcapillary venules in prenatal skin. Listed as fine-grained annotation under broad 'Vascular endothelium' category.",
+    "trajectory": "Postcapillary venules lie on the venular differentiation pathway from early endothelial cells: early endothelial cells -> postcapillary venules -> venules. PLVAP is a characteristic venular marker (Fig. 4d, Extended Data Fig. 10a-c).",
+    "macrophage_interactions": "Macrophage subsets interact with postcapillary venule endothelial cells. Aggregated interactions were assessed (Extended Data Fig. 9a, Supplementary Table 28).",
+    "temporal_presence": "Endothelial cells are present throughout gestation (Fig. 1c, Extended Data Fig. 1d, Supplementary Table 4)."
+  }
+}

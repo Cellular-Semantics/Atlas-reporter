@@ -1,0 +1,8 @@
+{
+  "label": "Treg",
+  "resolved_names": ["Treg", "regulatory T cell", "Foxp3+ regulatory T cell", "T reg cell"],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "Gopee et al. (2024) identify Treg cells in the prenatal skin atlas, noting that 'prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (T reg) cells' and that 'T reg cells are known to localize around the HF in late second trimester (around 21 PCW) and in postnatal skin'. Supplementary reviewer response confirms FOXP3, CTLA4, and IL2RA as Treg markers in the prenatal skin dataset, with Tregs having the highest expression among T cell populations. RNAscope validation shows FOXP3+ Tregs localising around hair follicles at 15 PCW."
+}

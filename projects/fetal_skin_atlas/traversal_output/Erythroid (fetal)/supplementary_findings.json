@@ -1,0 +1,22 @@
+{
+  "markers": [],
+  "other_findings": [
+    {
+      "finding": "Microenvironment 2 is a Myeloid/Megakaryocyte-erythroid enriched microenvironment in prenatal skin",
+      "category": "location",
+      "source_table": "Reviewer response / NMF analysis"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Why are B progenitors and HSCs in the skin? This is likely a contamination with fetal liver or bone marrow, which are the only organs that harbour these precursor and progenitor cells.",
+      "source_file": "Reviewer comments",
+      "context": "Reviewer question about presence of HSPCs in skin"
+    },
+    {
+      "quote": "Our prenatal skin samples were dissected by the trained staff at the Human Developmental Biology Resource (HDBR) based in Newcastle and London",
+      "source_file": "Author response to reviewers",
+      "context": "Authors defending sample integrity against contamination concerns"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": ["N. Gopee", "Elena Winheim", "B. Olabi", "et al."],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "url": "https://www.semanticscholar.org/paper/273400864",
+    "role": "atlas_paper"
+  },
+  "CorpusId:248122197": {
+    "title": "Mapping the developing human immune system across organs",
+    "authors": ["Chenqu Suo", "E. Dann", "Issac Goh", "et al."],
+    "year": 2022,
+    "venue": "Science",
+    "doi": "10.1126/science.abo0510",
+    "url": "https://www.semanticscholar.org/paper/a2dd0a62a986a93095201496dea847b8caccf0a8",
+    "role": "cross_organ_reference"
+  },
+  "CorpusId:227334677": {
+    "title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "authors": ["M. Dhariwala", "D. Karthikeyan", "K. Vasquez", "et al."],
+    "year": 2020,
+    "venue": "Cell Reports Medicine",
+    "doi": "10.1016/j.xcrm.2020.100132",
+    "url": "https://www.semanticscholar.org/paper/d534f82b4e2d279bfd9455e0c52158941661e78e",
+    "role": "key_fetal_skin_T_cell_study"
+  },
+  "CorpusId:231863036": {
+    "title": "alphabetagammadelta T cells play a vital role in fetal human skin development and immunity",
+    "authors": ["R. Reitermaier", "T. Krausgruber", "N. Fortelny", "et al."],
+    "year": 2021,
+    "venue": "Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20201189",
+    "url": "https://www.semanticscholar.org/paper/29ea1a12569d8feb06789f70e4534cfd96594c92",
+    "role": "fetal_skin_T_cell_development"
+  },
+  "CorpusId:218615208": {
+    "title": "The developing immune network in human prenatal skin",
+    "authors": ["R. Botting", "M. Haniffa"],
+    "year": 2020,
+    "venue": "Immunology",
+    "doi": "10.1111/imm.13192",
+    "url": "https://www.semanticscholar.org/paper/218615208",
+    "role": "review_fetal_skin_immunity"
+  },
+  "CorpusId:7818908": {
+    "title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
+    "authors": ["C. Schuster", "C. Vaculik", "M. Prior", "et al."],
+    "year": 2012,
+    "venue": "Journal of Investigative Dermatology",
+    "doi": "10.1038/jid.2012.187",
+    "url": "https://www.semanticscholar.org/paper/7818908",
+    "role": "early_fetal_skin_leukocyte_characterization"
+  },
+  "CorpusId:232375629": {
+    "title": "Intestinal CD8+ T cell responses are abundantly induced early in human development but show impaired cytotoxic effector capacities",
+    "authors": ["R. R. Schreurs", "A. Sagebiel", "F. Steinert", "et al."],
+    "year": 2021,
+    "venue": "Mucosal Immunology",
+    "doi": "10.1038/s41385-021-00382-x",
+    "url": "https://www.semanticscholar.org/paper/5608db2579ace87b987b810ff15f05e43b4c0a69",
+    "role": "fetal_CD8_T_cell_functional_characterization"
+  },
+  "CorpusId:248526247": {
+    "title": "Establishment of tissue-resident immune populations in the fetus",
+    "authors": ["D. Feyaerts", "C. Urbschat", "B. L. Gaudilliere", "I. Stelzer"],
+    "year": 2022,
+    "venue": "Seminars in Immunopathology",
+    "doi": "10.1007/s00281-022-00931-x",
+    "url": "https://www.semanticscholar.org/paper/248526247",
+    "role": "review_fetal_tissue_resident_immunity"
+  }
+}

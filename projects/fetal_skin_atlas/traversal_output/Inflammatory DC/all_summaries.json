@@ -1,0 +1,37 @@
+{
+  "cell_type": "Inflammatory DC",
+  "atlas_label": "Inflammatory DC",
+  "scope": "fetal",
+  "summaries": [
+    {
+      "paper": "Gopee et al. (2024)",
+      "doi": "10.1038/s41586-024-08002-x",
+      "summary": "The prenatal skin atlas identifies 'Inflammatory DC' as a fine-grained fetal immune cell annotation within the broad DC category. DCs in prenatal skin co-locate with pre-dermal condensate cells and lymphoid cells based on correlation analyses of spatial transcriptomics data. DC1 and DC2 are mentioned as co-localizing with pre-Dc cells through ligand-receptor interactions. The atlas notes that DC subsets including DC1 and DC2 are present from early gestation alongside ASDC and pDC. The main text does not specifically discuss 'Inflammatory DC' as a distinct population, but it is annotated in the supplementary cell state labels based on differentially expressed genes."
+    },
+    {
+      "paper": "Dutertre et al. (2019)",
+      "doi": "10.1016/j.immuni.2019.08.008",
+      "summary": "This landmark study identified DC3 as a distinct inflammatory subset within the cDC2 compartment. DC3 are defined as CD5-CD163+CD14+ cells that can be further subdivided by CD163 and CD14 expression into CD163-, CD163-CD14+, and CD163+CD14+ subsets. The CD163+CD14+ DC3 expressed high levels of inflammasome-related genes. DC3 were expanded in systemic lupus erythematosus patients, correlating with disease activity. Key markers distinguishing DC3 from monocytes include HLA-DQ and FcepsilonRIalpha, while monocytes are specifically marked by CD88 and CD89."
+    },
+    {
+      "paper": "Bourdely et al. (2020)",
+      "doi": "10.1016/j.immuni.2020.06.002",
+      "summary": "Defined circulating CD88-CD1c+CD163+ DCs (DC3s) as immediate precursors of inflammatory CD88-CD14+CD1c+CD163+FcepsilonRI+ DCs. DC3s develop via a specific GM-CSF-dependent pathway, independent of cDC-restricted (CDP) and monocyte-restricted (cMoP) progenitors. Like classical DCs but unlike monocytes, DC3s drove activation of naive T cells. DC3s displayed a distinctive ability to prime CD8+ T cells expressing the tissue homing signature and CD103 through TGF-beta signaling. DC3 infiltration in breast cancer correlated positively with CD8+CD103+CD69+ tissue-resident memory T cells."
+    },
+    {
+      "paper": "Nakamizo et al. (2021)",
+      "doi": "10.1084/jem.20202345",
+      "summary": "Identified DC3 in human skin tissue using single-cell flow cytometry and RNA-seq of index-sorted cells. DC3 were defined as CD14+CD1c+ cells with a DC3 molecular signature including EREG expression. DC3 were significantly enriched in psoriatic skin lesions compared to atopic dermatitis and healthy controls. In psoriatic skin, DC3 were one of the major cell types co-expressing IL1B and IL23A, two cytokines essential for psoriasis pathogenesis. This demonstrated that DC3 are present in human skin and play a pathogenic role in inflammatory skin disease."
+    },
+    {
+      "paper": "Suo et al. (2022)",
+      "doi": "10.1126/science.abo0510",
+      "summary": "The cross-organ prenatal immune atlas found that DC subsets were transcriptionally conserved between adult and prenatal counterparts. DCs increased in proportional abundance across multiple tissues during gestation. The myeloid compartment captured development from progenitors to macrophages, DCs, and monocytes, but the study did not specifically annotate 'Inflammatory DC' or DC3 as a separate category within prenatal tissues."
+    },
+    {
+      "paper": "Villani et al. (2017)",
+      "doi": "10.1126/science.aah4573",
+      "summary": "Original study using single-cell RNA-seq to identify DC2 and DC3 as two subpopulations within CD14-CD1c+ DCs in human blood. DC3 were characterized as CD11Clo, CD1Clo, CD163+, CD36+ and differentially expressed inflammatory genes including inflammasome-related genes and TMEM176B. Both DC2 and DC3 subsets stimulated proliferation of allogeneic CD4+ and CD8+ T cells in vitro."
+    }
+  ]
+}

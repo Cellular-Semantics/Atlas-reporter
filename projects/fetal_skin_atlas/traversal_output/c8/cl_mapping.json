@@ -1,0 +1,38 @@
+{
+  "cell_type_label": "c8 (Differentiated KC*)",
+  "working_definition": "An inflammatory differentiated keratinocyte in adult human skin, defined as cluster 8 by Reynolds et al. (2021). This cell co-expresses lower levels of undifferentiated (TP63, ITGA6) and differentiated (KRT1, KRT10) keratinocyte transcripts but additionally expresses inflammatory genes ICAM1, TNF and CCL20, as well as genes associated with inflammatory ichthyoses and severe atopy such as NIPAL4 and SPINK5. Expanded in psoriasis lesional skin.",
+  "searches_performed": [
+    "keratinocyte (CL, OLS4)",
+    "differentiated keratinocyte (CL, OLS4)",
+    "inflammatory keratinocyte (CL, OLS4)",
+    "suprabasal keratinocyte (CL)",
+    "epidermal keratinocyte (CL)",
+    "granular cell of epidermis (CL)",
+    "spinous cell of epidermis (CL)"
+  ],
+  "best_match": {
+    "cl_term": "suprabasal keratinocyte",
+    "cl_id": "CL:4033013",
+    "cl_definition": "A keratinocyte that resides in the epidermal suprabasal layer and expresses differentiation markers, including keratin 1 and keratin 10, in both humans and mice.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:4033013 (suprabasal keratinocyte) captures the differentiated, KRT1/KRT10-expressing state but does not capture the inflammatory phenotype (ICAM1, TNF, CCL20 expression, association with NIPAL4/SPINK5) that uniquely defines cluster 8 in Reynolds et al. (2021). No existing CL term represents an inflammatory differentiated keratinocyte state. The asterisk in the original annotation ('Differentiated KC*') specifically marks this cluster as distinct from standard differentiated keratinocytes.",
+  "other_candidates": [
+    {
+      "cl_term": "epidermal keratinocyte",
+      "cl_id": "CL:4052061",
+      "cl_definition": "A keratinocyte that is part of the epidermis.",
+      "reason_rejected": "Too broad; does not distinguish differentiated from undifferentiated keratinocytes or inflammatory state"
+    },
+    {
+      "cl_term": "granular cell of epidermis",
+      "cl_id": "CL:0002189",
+      "cl_definition": "A keratinocyte located in the stratum granulosum of the epidermis, characterized by the presence of keratohyalin granules containing filaggrin.",
+      "reason_rejected": "Cluster 8 cells show lower expression of terminal differentiation markers (KRT1, KRT10) than standard differentiated KC, and the inflammatory signature is not captured"
+    }
+  ],
+  "recommendation": "Use CL:4033013 (suprabasal keratinocyte) as a broad match. A new CL term for 'inflammatory differentiated keratinocyte' or 'inflammatory suprabasal keratinocyte' should be requested to capture the ICAM1/TNF/CCL20-expressing, NIPAL4/SPINK5-associated inflammatory differentiated state.",
+  "new_term_needed": true
+}

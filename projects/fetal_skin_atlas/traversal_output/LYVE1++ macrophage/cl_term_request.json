@@ -1,0 +1,82 @@
+{
+  "cell_type_label": "LYVE1++ macrophage",
+  "suggested_label": "LYVE1-positive interstitial macrophage",
+  "definition": "A tissue-resident macrophage characterized by high expression of LYVE1 and low expression of MHC class II molecules, that localizes adjacent to blood vessels in a perivascular niche within interstitial tissues. In mice, this cell is Lyve1 hi MHCII lo CX3CR1 lo and arises from Ly6C hi monocytes (DOI:10.1126/science.aau0964). In humans, perivascular macrophages of this class in the skin are CCR2-negative, CD206-high, and Lyve1-high (DOI:10.3390/biom12111659). This macrophage expresses gene programs associated with angiogenesis promotion, extracellular matrix remodeling, and anti-fibrotic functions (DOI:10.1016/j.immuni.2018.06.008). In prenatal human skin, it additionally expresses SPP1 and F13A1 and promotes blood vessel morphogenesis through interactions with endothelial cells (DOI:10.1038/s41586-024-08002-x).",
+  "parent_term": {
+    "cl_id": "CL:0000864",
+    "cl_term": "tissue-resident macrophage"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0002067",
+    "uberon_term": "dermis"
+  },
+  "logical_axioms": [
+    {
+      "relation": "has high plasma membrane amount",
+      "relation_id": "RO:0015015",
+      "filler": "LYVE1",
+      "filler_id": "PR:Q9Y2C2",
+      "notes": "Defining feature: high surface expression of LYVE1 (lymphatic vessel endothelial hyaluronan receptor 1) distinguishes this macrophage subset from MHCII-high and other tissue-resident macrophage populations."
+    },
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "dermis",
+      "filler_id": "UBERON:0002067",
+      "notes": "In prenatal and adult skin, this macrophage resides in the dermis in close proximity to blood vessels. Note: this cell type is found across multiple tissues."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "angiogenesis",
+      "filler_id": "GO:0001525",
+      "notes": "LYVE1-positive interstitial macrophages express gene programs that drive sprouting angiogenesis and blood vessel morphogenesis."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "LYVE1-high macrophage",
+      "scope": "exact",
+      "reference": "DOI:10.1126/science.abo0510"
+    },
+    {
+      "value": "LYVE1 hi MHCII lo interstitial macrophage",
+      "scope": "exact",
+      "reference": "DOI:10.1126/science.aau0964"
+    },
+    {
+      "value": "LYVE1+ macrophage",
+      "scope": "exact",
+      "reference": "DOI:10.1038/s41586-024-08002-x"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1126/science.aau0964",
+      "citation": "Chakarov S et al. (2019)",
+      "supports": "Identification of Lyve1 hi MHCII lo as a conserved interstitial macrophage population across lung, heart, fat, and dermis, localizing near blood vessels"
+    },
+    {
+      "doi": "10.1016/j.immuni.2018.06.008",
+      "citation": "Lim HY et al. (2018)",
+      "supports": "LYVE-1+ perivascular macrophages regulate arterial tone through hyaluronan-mediated control of smooth muscle cell collagen; deletion causes ECM abnormalities"
+    },
+    {
+      "doi": "10.1038/s41586-024-08002-x",
+      "citation": "Gopee N et al. (2024)",
+      "supports": "LYVE1+ macrophages in prenatal skin express SPP1 and F13A1, promote sprouting angiogenesis and blood vessel morphogenesis, and support fibroblast maintenance via IGF1 and GRN signaling"
+    },
+    {
+      "doi": "10.1126/science.abo0510",
+      "citation": "Suo C et al. (2022)",
+      "supports": "LYVE1 hi macrophages identified as a cross-organ macrophage subset with high self-renewal potential, enriched in early gestation"
+    },
+    {
+      "doi": "10.3390/biom12111659",
+      "citation": "Sim SL et al. (2022)",
+      "supports": "Perivascular macrophages in adult skin are CCR2-negative, CX3CR1-negative/low, CD206-high, Lyve1-high; their depletion hinders skin repair by reducing angiogenesis"
+    }
+  ],
+  "justification": "The LYVE1 hi interstitial macrophage is a conserved tissue-resident macrophage population identified across dermis, lung, heart, and adipose tissue by Chakarov et al. (2019, Science). It is distinguished from the MHCII hi subset by perivascular (rather than nerve-associated) niche localization, high LYVE1 expression, and low MHCII expression. Lim et al. (2018, Immunity) demonstrated its functional role in vascular homeostasis. In prenatal human tissues, Suo et al. (2022, Science) identified LYVE1 hi macrophages as enriched in early gestation with high self-renewal potential. Gopee et al. (2024, Nature) showed LYVE1+ macrophages in prenatal skin drive angiogenesis and fibroblast maintenance. The existing CL term 'perivascular macrophage' (CL:0000881) is restricted to the CNS and cannot be used for this cross-tissue population. No existing CL term captures this well-characterized macrophage subset.",
+  "ntr_markdown": "## New Term Request: LYVE1-positive interstitial macrophage\n\n### Preferred term label\nLYVE1-positive interstitial macrophage\n\n### Synonyms\n- LYVE1-high macrophage (exact)\n- LYVE1 hi MHCII lo interstitial macrophage (exact)\n- LYVE1+ macrophage (exact)\n\n### Definition\nA tissue-resident macrophage characterized by high expression of LYVE1 and low expression of MHC class II molecules, that localizes adjacent to blood vessels in a perivascular niche within interstitial tissues. In mice, this cell is Lyve1 hi MHCII lo CX3CR1 lo and arises from Ly6C hi monocytes (DOI:10.1126/science.aau0964). In humans, perivascular macrophages of this class in the skin are CCR2-negative, CD206-high, and Lyve1-high (DOI:10.3390/biom12111659). This macrophage expresses gene programs associated with angiogenesis promotion, extracellular matrix remodeling, and anti-fibrotic functions (DOI:10.1016/j.immuni.2018.06.008). In prenatal human skin, it additionally expresses SPP1 and F13A1 and promotes blood vessel morphogenesis through interactions with endothelial cells (DOI:10.1038/s41586-024-08002-x).\n\n### Parent cell type term\ntissue-resident macrophage (CL:0000864)\n\n### Anatomical structure\ndermis (UBERON:0002067)\nNote: While described here in the context of prenatal skin, this macrophage subset has been identified across multiple organs including lung, heart, and adipose tissue.\n\n### Logical axioms\n- subClassOf 'has high plasma membrane amount' some LYVE1 (PR:Q9Y2C2)\n- subClassOf 'part of' some dermis (UBERON:0002067)\n- subClassOf 'capable of' some angiogenesis (GO:0001525)\n\n### References\n1. Chakarov S et al. (2019) Two distinct interstitial macrophage populations coexist across tissues in specific subtissular niches. Science. DOI: 10.1126/science.aau0964\n2. Lim HY et al. (2018) Hyaluronan Receptor LYVE-1-Expressing Macrophages Maintain Arterial Tone through Hyaluronan-Mediated Regulation of Smooth Muscle Cell Collagen. Immunity. DOI: 10.1016/j.immuni.2018.06.008\n3. Gopee N et al. (2024) A prenatal skin atlas reveals immune regulation of human skin morphogenesis. Nature. DOI: 10.1038/s41586-024-08002-x\n4. Suo C et al. (2022) Mapping the developing human immune system across organs. Science. DOI: 10.1126/science.abo0510\n5. Sim SL et al. (2022) Macrophages in Skin Wounds: Functions and Therapeutic Potential. Biomolecules. DOI: 10.3390/biom12111659\n\n### Justification\nThe LYVE1 hi interstitial macrophage is a conserved tissue-resident macrophage population identified across dermis, lung, heart, and adipose tissue. It is distinguished from the MHCII hi subset by perivascular niche localization, high LYVE1 expression, and low MHCII expression. No existing CL term captures this well-characterized macrophage subset; the existing 'perivascular macrophage' (CL:0000881) is restricted to the CNS."
+}

@@ -1,0 +1,10 @@
+{
+  "label": "Melanocytes",
+  "resolved_names": [
+    "melanocyte"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Melanocytes in the SkO show accelerated differentiation with alignment to adult cell states as early as 4 weeks of culture. CL:0000148 is an exact match."
+}

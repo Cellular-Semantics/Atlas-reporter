@@ -1,0 +1,25 @@
+{
+  "markers": [],
+  "other_findings": [
+    "Eosinophil-basophil-mast cell progenitor cluster in fetal skin",
+    "Downstream of GMP in the myeloid differentiation hierarchy",
+    "MEMPs (megakaryocyte-erythroid-mast cell progenitors) identified in fetal skin by Popescu et al. 2019"
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "The presence of megakaryocyte-erythrocyte-mast cell progenitors (MEMPs), lymphocyte precursors, B-cell progenitors, ILC precursors and their progeny 41 indicates differentiation of these lineages may be supported within developing dermis.",
+      "source_file": "Botting and Haniffa 2020 (CorpusId:218615208)",
+      "context": "MEMPs and other progenitors in fetal dermis"
+    },
+    {
+      "quote": "MEMP, megakaryocyte-erythroidmast cell progenitor",
+      "source_file": "Gopee et al. 2024 (CorpusId:273400864)",
+      "context": "Atlas abbreviation definition for MEMP"
+    },
+    {
+      "quote": "Mast cells have been detected in fetal skin as early as 8 PCW, 41 and continue to mature and expand throughout the second trimester.",
+      "source_file": "Botting and Haniffa 2020 (CorpusId:218615208)",
+      "context": "Mast cell presence in fetal skin from 8 PCW"
+    }
+  ]
+}

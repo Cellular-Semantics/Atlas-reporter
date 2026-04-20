@@ -1,0 +1,11 @@
+{
+  "label": "Treg",
+  "resolved_names": [
+    "Regulatory T cell",
+    "Treg"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "The paper references T cells (CD4+ and CD8+) and specifically uses 'Treg' and 'regulatory T cell' in main and supplementary figures (e.g., Extended Data Fig. 11 lists 'Treg cells' as a subset, and 'Treg' is a standard label used for regulatory T cells in scRNA-seq atlases). The mapping between cluster labels and names in the supplementary tables corresponds 'Treg' directly to 'Regulatory T cell', consistent with usage in the field and this work."
+}

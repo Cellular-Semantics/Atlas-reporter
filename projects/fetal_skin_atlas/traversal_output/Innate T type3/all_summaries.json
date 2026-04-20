@@ -1,0 +1,45 @@
+[
+  {
+    "corpusId": "273400864",
+    "summary": "The prenatal skin atlas identifies Innate T type3 as a fetal-scope cell type in the T cell lineage. T cells emerged later in gestation accompanying thymus formation from around 10 PCW. Pre-dermal condensate cells co-located with dendritic and lymphoid cells.",
+    "key_quotes": [
+      "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW",
+      "pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses"
+    ]
+  },
+  {
+    "corpusId": "248122197",
+    "summary": "Suo et al. define type 3 innate T cells as PLZF-expressing unconventional T cells with type 3 effector potential. Type 1 and 3 innate T cells were developmental-specific. Treg and type 3 innate T cells were located within both thymic medullary microenvironments. A large proportion of gamma-delta T cells, particularly CD8AA and type 3 innate T cell subtypes, expressed TRGV8 or TRGV10. Unconventional T cells showed more proximal TCR gene usage than conventional T cells.",
+    "key_quotes": [
+      "Type 1 and 3 innate T cells were almost negligible in postnatal thymus, whereas CD8AA T cell abundance rebounded in pediatric age groups before a further decline in adulthood. Thus, type 1 and 3 innate T cells, but not CD8AA, appear to be developmentalspecific unconventional T cells.",
+      "Treg and type 3 innate T cells were located within both microenvironments.",
+      "there was also a large proportion of gammadelta T cells, particularly those of CD8AA and type 3 innate T cell subtypes, expressing TRGV8 or TRGV10 instead"
+    ]
+  },
+  {
+    "corpusId": "227334677",
+    "summary": "Dhariwala et al. note limitations in characterizing innate-type T cells in fetal skin but demonstrate that developing human skin contains lymphocytes with a memory signature.",
+    "key_quotes": [
+      "Our ability to comment on innate-type T cells (i.e., MAIT, gd, and NK T cells) in fetal skin was also limited by existing hurdles in combining tetramers with CyTOF and by the total number of fetal skin leukocytes we had to analyze."
+    ]
+  },
+  {
+    "corpusId": "215516424",
+    "summary": "Review of fetal T cell tolerance. Innate-like T cells with Th1 and Th17 characteristics exist in the fetus. Fetal semi-invariant gamma-delta T cells are functionally pre-programmed.",
+    "key_quotes": [
+      "A number of innate-like T cells capable of Th1 cytokine production are present in the human fetus, including gammadelta T cells, invariant natural killer T (iNKT) cells, and mucosa-associated invariant T (MAIT) cells."
+    ]
+  },
+  {
+    "corpusId": "198275850",
+    "summary": "Spidale et al. demonstrate that neonatal-derived IL-17-producing dermal gamma-delta T cells prevent spontaneous atopic dermatitis, highlighting the role of type 3 innate-like T cells in skin homeostasis.",
+    "key_quotes": []
+  },
+  {
+    "corpusId": "252685827",
+    "summary": "Sanchez Sanchez et al. identify distinct functional thymic programming of fetal gamma-delta thymocytes. Mature fetal gamma-delta thymocytes are committed to type 1, type 3, or type 2-like effector fates in a wave-like pattern depending on gestation age.",
+    "key_quotes": [
+      "Mature fetal gammadelta thymocytes (both the Vgamma9Vdelta2 and nonVgamma9Vdelta2 subsets) are committed to either a type 1, a type 3 or a type 2-like effector fate displaying a wave-like pattern depending on gestation age"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "label": "ILC1",
+  "resolved_names": [
+    "Innate lymphoid cell type 1",
+    "ILC1"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "The label 'ILC1' is used by the authors in the main text (Nature, 2024, doi:10.1038/s41586-024-08002-x) and supplementary material to refer to 'innate lymphoid cell type 1' in the context of their single-cell atlas of human skin. The paper mentions identification of ILC1 as a distinct immune subtype; the naming matches standard conventions and is explicitly used by the authors."
+}

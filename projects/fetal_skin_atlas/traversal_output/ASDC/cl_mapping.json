@@ -1,0 +1,34 @@
+{
+  "cell_type_label": "ASDC (Axl+Siglec6+ Dendritic Cells)",
+  "working_definition": "A human dendritic cell subset characterized by co-expression of AXL and SIGLEC6, exhibiting a mixed pDC-cDC transcriptomic and phenotypic profile. ASDCs are functionally closer to cDC2, efficiently stimulating CD4 and CD8 T cells but producing minimal type I IFN. They are present in blood and lymphoid organs and are recruited to inflamed skin and other tissues.",
+  "searches_performed": [
+    "Axl Siglec6 dendritic cell (OLS4)",
+    "pre-dendritic cell (OLS4)",
+    "ASDC (OLS4)"
+  ],
+  "best_match": {
+    "cl_term": "Axl+ dendritic cell, human",
+    "cl_id": "CL:0017009",
+    "cl_definition": "A human dendritic cell that expresses the AXL and SIGLEC6 genes.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0017009 'Axl+ dendritic cell, human' directly matches the ASDC population annotated in the Gopee et al. (2024) prenatal skin atlas. The CL term definition specifies expression of AXL and SIGLEC6, which are the two defining markers of ASDCs. The atlas explicitly defines ASDC as 'Axl+Siglec6+ dendritic cells'. This is the same population identified as DC5 by Villani et al. (2017) and as pre-DC by See et al. (2017), now recognized as a distinct DC subset in the Cell Ontology.",
+  "other_candidates": [
+    {
+      "cl_term": "plasmacytoid dendritic cell",
+      "cl_id": "CL:0000784",
+      "cl_definition": "A dendritic cell type of distinct morphology, localization, and surface marker expression...",
+      "reason_rejected": "ASDCs are distinct from pDCs: they do not produce type I IFN and are functionally closer to cDC2. Although they share some surface markers with pDCs (CD123, BDCA-2), they are a separate population."
+    },
+    {
+      "cl_term": "conventional dendritic cell",
+      "cl_id": "CL:0000990",
+      "cl_definition": "A dendritic cell of the conventional/classical lineage...",
+      "reason_rejected": "ASDCs are transitional between pDC and cDC2 and do not cleanly fit within the conventional DC classification. They have a distinct developmental pathway and are recognized as a separate subset."
+    }
+  ],
+  "recommendation": "Use CL:0017009 (Axl+ dendritic cell, human). This is a precise exact match for the ASDC population defined by AXL and SIGLEC6 co-expression.",
+  "new_term_needed": false
+}

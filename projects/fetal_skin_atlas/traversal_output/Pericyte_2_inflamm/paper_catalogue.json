@@ -1,0 +1,415 @@
+{
+  "CorpusId:1174050": {
+    "title": "Learning from Mother Nature: Innovative Tools to Boost Endogenous Repair of Critical or Difficult-to-Heal Large Tissue Defects",
+    "authors": [
+      "R. Cancedda",
+      "S. Bollini",
+      "F. Descalzi",
+      "M. Mastrogiacomo",
+      "Roberta Tasso"
+    ],
+    "year": 2017,
+    "venue": "Frontiers in Bioengineering and Biotechnology",
+    "doi": "10.3389/fbioe.2017.00028",
+    "pmid": "28503549",
+    "url": "https://www.semanticscholar.org/paper/415a1e72a999adede0cc7f19590dd89cd7e59d2b",
+    "abstract": "For repair of chronic or difficult-to-heal tissue lesions and defects, major constraints exist to a broad application of cell therapy and tissue engineering approaches, i.e., transplantation of \u201cex vivo\u201d expanded autologous stem/progenitor cells, alone or associated with carrier biomaterials. To enable a large number of patients to benefit, new strategies should be considered. One of the main goals of contemporary regenerative medicine is to develop new regenerative therapies, inspired from Moth",
+    "tldr": "The identification of new tools, inspired by cellular and molecular mechanisms overseeing physiological tissue healing, that could reactivate dormant endogenous regeneration mechanisms lost during evolution and ontogenesis are discussed."
+  },
+  "CorpusId:189757597": {
+    "title": "Pericytes in the infarcted heart",
+    "authors": [
+      "Linda Alex",
+      "N. Frangogiannis"
+    ],
+    "year": 2019,
+    "venue": "Vascular Biology",
+    "doi": "10.1530/VB-19-0007",
+    "pmid": "32923950",
+    "url": "https://www.semanticscholar.org/paper/e78938355845dba2359f616dc2ac020297107827",
+    "abstract": "The adult mammalian heart lacks regenerative capacity and heals through activation of an inflammatory cascade that leads to the formation of a collagen-based scar. Although scar formation is important to preserve the structural integrity of the ventricle, unrestrained inflammation and excessive fibrosis have been implicated in the pathogenesis of adverse post-infarction remodeling and heart failure. Interstitial cells play a crucial role in the regulation of cardiac repair. Although recent studi",
+    "tldr": "The role of pericytes in the regulation of inflammation, fibrosis and angiogenesis following myocardial infarction is discussed and coating of infarct neovessels with pericyte plays an important role in scar stabilization."
+  },
+  "CorpusId:283140999": {
+    "title": "Across Barriers: Blood\u2013Brain and Gut Barrier Signaling in Psychiatric Disorders",
+    "authors": [
+      "L. B. Binder",
+      "Laura Menegatti Bevilacqua",
+      "Flora Gro Lorentzen Thomassen",
+      "M. Lebel",
+      "B. A. Jensen",
+      "Caroline M\u00e9nard"
+    ],
+    "year": 2025,
+    "venue": "Journal of Neurochemistry",
+    "doi": "10.1111/jnc.70282",
+    "pmid": "41268961",
+    "url": "https://www.semanticscholar.org/paper/0aef178b511db9f03f11f07d43e476fcc0d6492c",
+    "abstract": "Psychiatric disorders affect millions of people worldwide. Despite widespread use of conventional treatments targeting monoaminergic systems, remission rates remain low, and many individuals experience treatment resistance or relapse. Consequently, there has been growing interest in the involvement of other systems, with exacerbated immune responses and barrier alterations reported in clinical settings and preclinical models. Indeed, emerging evidence supports disruption of the blood\u2013brain barri",
+    "tldr": "Key signaling pathways linked to barrier development and function are highlighted, including Wnt/\u03b2\u2010catenin, VEGF, and FGF\u20102, and argue that they may contribute to the pathophysiology of mental disorders and IBD, and could be targeted to develop innovative diagnostic tools and treatments."
+  },
+  "CorpusId:53212803": {
+    "title": "Cellular and Molecular Heterogeneity Associated with Vessel Formation Processes",
+    "authors": [
+      "P. R. Castro",
+      "A. S. Barbosa",
+      "Jousie Michel Pereira",
+      "Hedden Ranfley",
+      "Mariane Felipetto",
+      "C. Gon\u00e7alves",
+      "I. Paiva",
+      "B. B. Berg",
+      "L. Barcelos"
+    ],
+    "year": 2018,
+    "venue": "BioMed Research International",
+    "doi": "10.1155/2018/6740408",
+    "pmid": "30406137",
+    "url": "https://www.semanticscholar.org/paper/6abad603efb612356ce319c586775ea21469935f",
+    "abstract": "The microvasculature heterogeneity is a complex subject in vascular biology. The difficulty of building a dynamic and interactive view among the microenvironments, the cellular and molecular heterogeneities, and the basic aspects of the vessel formation processes make the available knowledge largely fragmented. The neovascularisation processes, termed vasculogenesis, angiogenesis, arteriogenesis, and lymphangiogenesis, are important to the formation and proper functioning of organs and tissues b",
+    "tldr": "This review intends to approach the microvasculature heterogeneity in an integrated view considering the diversity of neovascularisation processes and the cellular and molecular heterogeneity that contribute to microcirculatory homeostasis."
+  },
+  "CorpusId:4321376": {
+    "title": "Cultured pericytes from human brain show phenotypic and functional differences associated with differential CD90 expression",
+    "authors": [
+      "T. Park",
+      "V. Feisst",
+      "A. Brooks",
+      "Justin Rustenhoven",
+      "H. Monzo",
+      "S. Feng",
+      "E. Mee",
+      "Peter S. Bergin",
+      "Peter S. Bergin",
+      "Robyn L. Oldfield",
+      "E. S. Graham",
+      "M. Curtis",
+      "R. Faull",
+      "P. Dunbar",
+      "M. Dragunow"
+    ],
+    "year": 2016,
+    "venue": "Scientific Reports",
+    "doi": "10.1038/srep26587",
+    "pmid": "27215737",
+    "url": "https://www.semanticscholar.org/paper/99871a8ec9f8015335b2f41c149341b821b1cd8e",
+    "abstract": "The human brain is a highly vascular organ in which the blood-brain barrier (BBB) tightly regulates molecules entering the brain. Pericytes are an integral cell type of the BBB, regulating vascular integrity, neuroinflammation, angiogenesis and wound repair. Despite their importance, identifying pericytes amongst other perivascular cell types and deciphering their specific role in the neurovasculature remains a challenge. Using primary adult human brain cultures and fluorescent-activated cell so",
+    "tldr": "CD90 distinguishes two interrelated, yet functionally distinct pericyte populations in the adult human brain that may have discrete roles in neurovascular function, immune response and scar formation."
+  },
+  "CorpusId:195766661": {
+    "title": "Effects of pericytes and colon cancer stem cells in the tumor microenvironment",
+    "authors": [
+      "Elsa N. Garza Trevi\u00f1o",
+      "P. Gonz\u00e1lez",
+      "Carlos I. Valencia Salgado",
+      "A. Martinez Garza"
+    ],
+    "year": 2019,
+    "venue": "Cancer Cell International",
+    "doi": "10.1186/s12935-019-0888-9",
+    "pmid": "31303863",
+    "url": "https://www.semanticscholar.org/paper/82e21ecf7e972ff1de4d8f62393f1a75f7b84771",
+    "abstract": "Colorectal cancer (CRC) is one type of tumor with the highest frequency and mortality worldwide. Although current treatments increase patient survival, it is important to detect CRC in early stages; however, most CRC, despite responding favorably to treatment, develop resistance and present recurrence, a situation that will inevitably lead to death. In recent years, it has been shown that the main reason for drug resistance is the presence of colon cancer stem cells (CSC). Pericytes are also cap",
+    "tldr": "The contribution of pericytes and cancer stem cells to some classical hallmarks of cancer, namely, tumor angiogenesis, growth, metastasis, and evasion of immune destruction, are highlighted, and therapies targeting each of these components are discussed."
+  },
+  "CorpusId:247322256": {
+    "title": "Microvascular Changes in Parkinson\u2019s Disease- Focus on the Neurovascular Unit",
+    "authors": [
+      "G. Paul",
+      "Osama F Elabi"
+    ],
+    "year": 2022,
+    "venue": "Frontiers in Aging Neuroscience",
+    "doi": "10.3389/fnagi.2022.853372",
+    "pmid": "35360216",
+    "url": "https://www.semanticscholar.org/paper/04a52c5e84d30457f247982733de6a2feaf65699",
+    "abstract": "Vascular alterations emerge as a common denominator for several neurodegenerative diseases. In Parkinson\u2019s disease (PD), a number of observations have been made suggesting that the occurrence of vascular pathology is an important pathophysiological aspect of the disease. Specifically, pathological activation of pericytes, blood-brain barrier (BBB) disruption, pathological angiogenesis and vascular regression have been reported. This review summarizes the current evidence for the different vascul",
+    "tldr": "A possible sequence of vascular pathology in Parkinson\u2019s disease ranging from early pericyte activation and BBB leakage to an attempt for compensatory angiogenesis and finally vascular rarefication is suggested."
+  },
+  "CorpusId:250650149": {
+    "title": "The mechanism and relevant mediators associated with neuronal apoptosis and potential therapeutic targets in subarachnoid hemorrhage",
+    "authors": [
+      "Q. Tian",
+      "Sheng Liu",
+      "Shoumeng Han",
+      "Wei Zhang",
+      "Xian-Yao Qin",
+      "Jun-Hui Chen",
+      "Chengli Liu",
+      "Yujia Guo",
+      "Ming-chang Li"
+    ],
+    "year": 2022,
+    "venue": "Neural Regeneration Research",
+    "doi": "10.4103/1673-5374.346542",
+    "pmid": "35900398",
+    "url": "https://www.semanticscholar.org/paper/37861b9f01027941bae8835e7dde876cb8f91e31",
+    "abstract": "Subarachnoid hemorrhage (SAH) is a dominant cause of death and disability worldwide. A sharp increase in intracranial pressure after SAH leads to a reduction in cerebral perfusion and insufficient blood supply for neurons, which subsequently promotes a series of pathophysiological responses leading to neuronal death. Many previous experimental studies have reported that excitotoxicity, mitochondrial death pathways, the release of free radicals, protein misfolding, apoptosis, necrosis, autophagy,",
+    "tldr": "The existing evidence on molecules and related drugs or molecules involved in the apoptotic pathway after SAH is summarized, which provides a possible target or new strategy for the treatment of SAH."
+  },
+  "CorpusId:260733375": {
+    "title": "Skin fibroblast functional heterogeneity in health and disease",
+    "authors": [
+      "Tja\u0161a Bensa",
+      "S. Tekkela",
+      "E. Rognoni"
+    ],
+    "year": 2023,
+    "venue": "Journal of Pathology",
+    "doi": "10.1002/path.6159",
+    "pmid": "37553730",
+    "url": "https://www.semanticscholar.org/paper/6cf51c7d6f484238bec58c858e5982e1ec4a8b03",
+    "abstract": "Fibroblasts are the major cell population of connective tissue, including the skin dermis, and are best known for their function in depositing and remodelling the extracellular matrix. Besides their role in extracellular matrix homeostasis, fibroblasts have emerged as key players in many biological processes ranging from tissue immunity and wound healing to hair follicle development. Recent advances in single\u2010cell RNA\u2010sequencing technologies have revealed an astonishing transcriptional fibroblas",
+    "tldr": "The functionally distinct fibroblast subtypes identified in skin homeostasis and repair and how they evolve in fibrotic disease conditions, in particular keloid scars and cancer are discussed."
+  },
+  "CorpusId:266597456": {
+    "title": "Phosphodiesterase inhibitor ameliorates senescent changes of renal interstitial pericytes in aging kidney",
+    "authors": [
+      "H. Kim",
+      "E. N. Kim",
+      "J. Lim",
+      "Yaeni Kim",
+      "T. Ban",
+      "Hajeong Lee",
+      "Y. S. Kim",
+      "Cheol Whee Park",
+      "B. Choi"
+    ],
+    "year": 2023,
+    "venue": "Aging Cell",
+    "doi": "10.1111/acel.14075",
+    "pmid": "38155524",
+    "url": "https://www.semanticscholar.org/paper/bb60bf9853183f3f0dabd966838ecf6d74599ddc",
+    "abstract": "Pericytes are mesenchymal cells that surround endothelial cells, playing a crucial role in angiogenesis and vessel maturation. Additionally, they are associated with interstitial fibrosis as a major contributor to renal myofibroblasts. In this study, we aim to investigate whether the phosphodiesterase inhibitor, pentoxifylline (PTX), can ameliorate aging\u2010related functional and histological deterioration in the kidney. We subjected aging C57BL/6 mice, dividing into young, aging, and PTX\u2010treated a",
+    "tldr": "The phosphodiesterase inhibitor, PTX preserved microvascular density and improved renal interstitial fibrosis and inflammation in aging mice kidneys, the first report on the changes in renal interstitial pericytes in aging human kidneys is reported."
+  },
+  "CorpusId:256418567": {
+    "title": "CD146 expression profile in human skin and pre-vascularized dermo-epidermal skin substitutes in vivo",
+    "authors": [
+      "M. Nanni",
+      "Dominic R\u00fctsche",
+      "C. B\u00e4chler",
+      "L. Pontiggia",
+      "Agnes S. Klar",
+      "U. Moehrlen",
+      "T. Biedermann"
+    ],
+    "year": 2023,
+    "venue": "Journal of Biological Engineering",
+    "doi": "10.1186/s13036-023-00327-x",
+    "pmid": "36721239",
+    "url": "https://www.semanticscholar.org/paper/dd89d6dcf12d60d08b932c8e9e4dae0101acdece",
+    "abstract": "Background CD146 is a cell adhesion molecule whose expression profile in human skin has not yet been elucidated. Here, we characterize CD146 expression pattern in human skin, in particular in blood endothelial cells (BECs) and lymphatic endothelial cells (LECs), which constitute human dermal microvascular endothelial cells (HDMECs), as well as in perivascular cells. Results We demonstrated that CD146 is a specific marker of BECs, but not of LECs. Moreover, we found CD146 expression also in human",
+    "tldr": "The combination of CD146^+ pericytes with HDMECs in skin substitutes allowed to bioengineer a comprehensive 3D in vitro and in vivo model of the human dermal microvasculature."
+  },
+  "CorpusId:259162598": {
+    "title": "Biology and function of pericytes in the vascular microcirculation",
+    "authors": [
+      "Yuehua Wu",
+      "Jiaqi Fu",
+      "Yuxia Huang",
+      "Ruo-wang Duan",
+      "Wentian Zhang",
+      "Caihong Wang",
+      "Shang Wang",
+      "Xiaoyi Hu",
+      "Hui Zhao",
+      "Lan Wang",
+      "Jinming Liu",
+      "Guosheng Gao",
+      "P. Yuan"
+    ],
+    "year": 2023,
+    "venue": "Animal Models and Experimental Medicine",
+    "doi": "10.1002/ame2.12334",
+    "pmid": "37317664",
+    "url": "https://www.semanticscholar.org/paper/02ac21a4b298b1d6836b8c7323f3e5b2673390d4",
+    "abstract": "Pericytes are the main cellular components of tiny arteries and capillaries. Studies have found that pericytes can undergo morphological contraction or relaxation under stimulation by cytokines, thus affecting the contraction and relaxation of microvessels and playing an essential role in regulating vascular microcirculation. Moreover, due to the characteristics of stem cells, pericytes can differentiate into a variety of inflammatory cell phenotypes, which then affect the immune function. Addit",
+    "tldr": "The origin, biological phenotype and function of pericytes, and the potential mechanisms ofpericytes in vascular microcirculation disorders, especially in pulmonary hypertension, are discussed to provide a sound basis and direction for the prevention and treatment of vascular micro Circulation diseases."
+  },
+  "CorpusId:211536964": {
+    "title": "Characterization of Burn Eschar Pericytes",
+    "authors": [
+      "A. Evdokiou",
+      "Onur Kanisicak",
+      "S. Gierek",
+      "Amanda Barry",
+      "Malina J Ivey",
+      "Xiang Zhang",
+      "R. Bodnar",
+      "L. Satish"
+    ],
+    "year": 2020,
+    "venue": "Journal of Clinical Medicine",
+    "doi": "10.3390/jcm9020606",
+    "pmid": "32102389",
+    "url": "https://www.semanticscholar.org/paper/1eb86f3ffbb12e91ea906b2bb19a50fb678cb51a",
+    "abstract": "Pericytes are cells that reside adjacent to microvasculature and regulate vascular function. Pericytes gained great interest in the field of wound healing and regenerative medicine due to their multipotential fate and ability to enhance angiogenesis. In burn wounds, scarring and scar contractures are the major pathologic feature and cause loss of mobility. The present study investigated the influence of burn wound environment on pericytes during wound healing. Pericytes isolated from normal skin",
+    "tldr": "It is suggested that the burn wound environment promotes pericytes to differentiate into a myofibroblast-like phenotype promoting scar formation and fibrosis."
+  },
+  "CorpusId:260808783": {
+    "title": "Multiscale spatial mapping of cell populations across anatomical sites in healthy human skin and basal cell carcinoma",
+    "authors": [
+      "C. Ganier",
+      "P. Mazin",
+      "G. Herrera-Oropeza",
+      "X. Du-Harpur",
+      "M. Blakeley",
+      "J. Gabriel",
+      "Alexander V. Predeus",
+      "Batuhan Cakir",
+      "M. Prete",
+      "N. Harun",
+      "Jean-Fran\u00e7ois Darrigrand",
+      "A. Haiser",
+      "Saranya P. Wyles",
+      "Tanya J. Shaw",
+      "Sarah A. Teichmann",
+      "M. Haniffa",
+      "F. Watt",
+      "M. Lynch"
+    ],
+    "year": 2023,
+    "venue": "bioRxiv",
+    "doi": "10.1073/pnas.2313326120",
+    "pmid": "38165934",
+    "url": "https://www.semanticscholar.org/paper/1e5fa0b18bd77f00e73cf03a0dc0b995db9f6bbd",
+    "abstract": "Our understanding of how human skin cells differ according to anatomical site and tumour formation is limited. To address this we have created a multi-scale spatial atlas of healthy skin and basal cell carcinoma (BCC), incorporating in vivo optical coherence tomography, single cell RNA sequencing, spatial global transcriptional profiling and in situ sequencing. Computational spatial deconvolution and projection revealed the localisation of distinct cell populations to specific tissue contexts. A",
+    "tldr": "A comprehensive spatial atlas of adult human skin across different anatomical sites and basal cell carcinoma - the most common form of skin cancer - encompassing in vivo optical coherence tomography, single cell RNA sequencing, global spatial transcriptomic profiling and in situ sequencing is reported."
+  },
+  "CorpusId:277917400": {
+    "title": "Heterogeneity in pericyte inflammatory responses across age and species highlight the importance of human cell models",
+    "authors": [
+      "Taylor J. Stevenson",
+      "Kahee Lee",
+      "Susan Li",
+      "Johanna M. Montgomery",
+      "Kevin Y Lee",
+      "M. Dragunow"
+    ],
+    "year": 2025,
+    "venue": "Molecular Brain",
+    "doi": "10.1186/s13041-025-01209-7",
+    "pmid": "40251678",
+    "url": "https://www.semanticscholar.org/paper/62a733cf66183b6b79ff984103cf876d555bdae3",
+    "abstract": "Pericytes in the central nervous system are essential for maintaining blood-brain barrier function, regulating blood flow, modulating immune responses, and interacting closely with surrounding cells of the neurovascular unit to support brain homeostasis. Increasing evidence has highlighted their involvement in age-related neuroinflammation, where their dysfunction may contribute to sustained inflammatory states associated with neurodegenerative disorders. Here, we compared inflammatory responses",
+    "tldr": "It is indicated that neonatal mouse pericytes display heightened inflammatory activation, with elevated levels of ICAM-1 and several cytokines, compared to adult mouse pericytes reflecting a more reactive phenotype, and adult mouse pericytes exhibited a significantly reduced cytokine release profile, suggesting lower responsiveness."
+  },
+  "CorpusId:262136468": {
+    "title": "The Pathogenesis of Systemic Sclerosis: The Origin of Fibrosis and Interlink with Vasculopathy and Autoimmunity",
+    "authors": [
+      "Junsuk Ko",
+      "M. Noviani",
+      "V. Chellamuthu",
+      "Salvatore Albani",
+      "A. Low"
+    ],
+    "year": 2023,
+    "venue": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms241814287",
+    "pmid": "37762589",
+    "url": "https://www.semanticscholar.org/paper/29c232beb0a55e5741998d392d4eda5931fd1001",
+    "abstract": "Systemic sclerosis (SSc) is an autoimmune disease associated with increased mortality and poor morbidity, impairing the quality of life in patients. Whilst we know that SSc affects multiple organs via vasculopathy, inflammation, and fibrosis, its exact pathophysiology remains elusive. Microvascular injury and vasculopathy are the initial pathological features of the disease. Clinically, the vasculopathy in SSc is manifested as Raynaud\u2019s phenomenon (reversible vasospasm in reaction to the cold or",
+    "tldr": "Clinical evidence for vasculopathy is focused on the major cellular players for the pathogenesis, including pericytes, adipocytes, endothelial cells (ECs), and myofibroblasts, and their signaling pathway to elucidate the relationship among vasculopathic, inflammation, and fibrosis in SSc."
+  },
+  "CorpusId:251222572": {
+    "title": "Targetability of the neurovascular unit in inflammatory diseases of the central nervous system",
+    "authors": [
+      "Brandon C. Smith",
+      "Rachel A. Tinkey",
+      "Benjamin C. Shaw",
+      "Jessica L. Williams"
+    ],
+    "year": 2022,
+    "venue": "Immunological Reviews",
+    "doi": "10.1111/imr.13121",
+    "pmid": "35909222",
+    "url": "https://www.semanticscholar.org/paper/92916b402dacdc68a47d725e9c3acb7dd671c3fb",
+    "abstract": "The blood\u2013brain barrier (BBB) is a selectively permeable barrier separating the periphery from the central nervous system (CNS). The BBB restricts the flow of most material into and out of the CNS, including many drugs that could be used as potent therapies. BBB permeability is modulated by several cells that are collectively called the neurovascular unit (NVU). The NVU consists of specialized CNS endothelial cells (ECs), pericytes, astrocytes, microglia, and neurons. CNS ECs maintain a complex ",
+    "tldr": "Understating the complex contributions of each member of the NVU will potentially uncover novel and effective methods for delivery of neurotherapies to the CNS."
+  },
+  "CorpusId:271289135": {
+    "title": "Pericytes: jack-of-all-trades in cancer-related inflammation",
+    "authors": [
+      "M. Moro",
+      "Federica Carolina Balestrero",
+      "A. A. Grolla"
+    ],
+    "year": 2024,
+    "venue": "Frontiers in Pharmacology",
+    "doi": "10.3389/fphar.2024.1426033",
+    "pmid": "39086395",
+    "url": "https://www.semanticscholar.org/paper/d76bcdf2dcb6f3841dc22f4ab784010532400194",
+    "abstract": "Pericytes, recognized as mural cells, have long been described as components involved in blood vessel formation, playing a mere supporting role for endothelial cells (ECs). Emerging evidence strongly suggests their multifaceted roles in tissues and organs. Indeed, pericytes exhibit a remarkable ability to anticipate endothelial cell behavior and adapt their functions based on the specific cells they interact with. Pericytes can be activated by pro-inflammatory stimuli and crosstalk with immune c",
+    "tldr": "The primary evidence regarding pericyte involvement in primary tumor mass dynamics, their contributions to tumor reprogramming for invasion and migration of malignant cells, and their role in the formation of pre-metastatic niches are highlighted."
+  },
+  "CorpusId:5951604": {
+    "title": "Pericytes, Mesenchymal Stem Cells and the Wound Healing Process",
+    "authors": [
+      "S. Mills",
+      "A. Cowin",
+      "P. Kaur"
+    ],
+    "year": 2013,
+    "venue": "Cells",
+    "doi": "10.3390/cells2030621",
+    "pmid": "24709801",
+    "url": "https://www.semanticscholar.org/paper/ae2c5c863c4988ebbfb94d53820cac12c1499dd9",
+    "abstract": "Pericytes are cells that reside on the wall of the blood vessels and their primary function is to maintain the vessel integrity. Recently, it has been realized that pericytes have a much greater role than just the maintenance of vessel integrity essential for the development and formation of a vascular network. Pericytes also have stem cell-like properties and are seemingly able to differentiate into adipocytes, chondrocytes, osteoblasts and granulocytes, leading them to be identified as mesench",
+    "tldr": "The most recent data on pericytes, particularly their role in vessel formation and how they can affect the wound healing process are collated."
+  },
+  "CorpusId:233401692": {
+    "title": "Microphysiological Systems for Studying Cellular Crosstalk During the Neutrophil Response to Infection",
+    "authors": [
+      "Isaac M. Richardson",
+      "Christopher J. Calo",
+      "Laurel E. Hind"
+    ],
+    "year": 2021,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.661537",
+    "pmid": "33986752",
+    "url": "https://www.semanticscholar.org/paper/5fcc1295533bc339b86b2fa1e57e5fd3ade9204b",
+    "abstract": "Neutrophils are the primary responders to infection, rapidly migrating to sites of inflammation and clearing pathogens through a variety of antimicrobial functions. This response is controlled by a complex network of signals produced by vascular cells, tissue resident cells, other immune cells, and the pathogen itself. Despite significant efforts to understand how these signals are integrated into the neutrophil response, we still do not have a complete picture of the mechanisms regulating this ",
+    "tldr": "The in vitro models currently being used to study the neutrophil response to infection, specifically in the context of cell-cell interactions, are discussed and recommendations are provided for the future direction of the field and what important aspects of the infectious microenvironment are missing."
+  },
+  "CorpusId:267319405": {
+    "title": "Pericytes modulate endothelial inflammatory response during bacterial infection",
+    "authors": [
+      "T. Carvalho",
+      "F. Toledo",
+      "D. F. Bautista",
+      "M. F. Silva",
+      "J. B. S. Oliveira",
+      "P. A. Lima",
+      "F. B. Costa",
+      "N. Q. Ribeiro",
+      "Jee-Yon Lee",
+      "Alexander Birbrair",
+      "Tatiane A. Paix\u00e3o",
+      "R. M. Tsolis",
+      "R. L. Santos"
+    ],
+    "year": 2024,
+    "venue": "mBio",
+    "doi": "10.1128/mbio.03252-23",
+    "pmid": "38289074",
+    "url": "https://www.semanticscholar.org/paper/f67de4d70140cf3efaeaa354098bb5d47ee5d801",
+    "abstract": "ABSTRACT Pericytes are located around blood vessels, in close contact with endothelial cells. We discovered that pericytes dampen pro-inflammatory endothelial cell responses. Endothelial cells co-cultured with pericytes had markedly reduced expression of adhesion molecules (PECAM-1 and ICAM-1) and proinflammatory cytokines (CCL-2 and IL-6) in response to bacterial stimuli (Brucella ovis, Listeria monocytogenes, or Escherichia coli lipopolysaccharide). Pericyte-depleted mice intraperitoneally ino",
+    "tldr": "The results define a mechanism by which pericytes modulate inflammation during infection, which shifts the understanding of pericyte biology: from a structural cell to a pro-active player in modulating inflammation."
+  },
+  "CorpusId:218584306": {
+    "title": "Mesenchymal perivascular cells in immunity and disease",
+    "authors": [
+      "A. Benabid",
+      "L. Peduto"
+    ],
+    "year": 2020,
+    "venue": "Current Opinion in Immunology",
+    "doi": "10.1016/j.coi.2020.03.009",
+    "pmid": "32387900",
+    "url": "https://www.semanticscholar.org/paper/79dc8e794811f2ca3a13f1da430e0b7e9dfbfb31",
+    "abstract": "Highlights \u2022 Perivascular mesenchymal cells include pericytes, adventitial fibroblasts and mesenchymal stromal cells.\u2022 Perivascular mesenchymal cells have roles in the recruitment and/or activity of specific immune populations.\u2022 Subsets of perivascular mesenchymal cells act as progenitors for specialized stromal cells essential in repair and immunity.\u2022 Dysregulation of the perivascular niche contribute to chronic inflammation and fibrosis.",
+    "tldr": "The role of perivascular mesenchymal cells in the recruitment and activity of specific immune populations and their role in dysregulation of the periv vascular niche contribute to chronic inflammation and fibrosis are studied."
+  }
+}

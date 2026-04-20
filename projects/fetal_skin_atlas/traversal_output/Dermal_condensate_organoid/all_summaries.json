@@ -1,0 +1,26 @@
+[
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion",
+    "relevance": "Dc signaling"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "In mice, transitional PDGFRA + FOXD1 + SOX2 low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1 + SOX2 + ), which abuts the epithelial hair placode",
+    "relevance": "Dc formation"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "the highlighted interactions were conserved between the mesenchymal and epithelial cells of the SkO model for corresponding stages during HF formation",
+    "relevance": "SkO conservation"
+  },
+  {
+    "paper": "Biggs et al. 2018",
+    "doi": "10.7554/eLife.36468",
+    "snippet": "Mesenchymal condensation is a critical step in organogenesis, yet the underlying molecular and cellular mechanisms remain poorly understood. The hair follicle dermal condensate is the precursor to the permanent mesenchymal unit of the hair follicle, the dermal papilla",
+    "relevance": "Dc biology"
+  }
+]

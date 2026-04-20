@@ -1,0 +1,23 @@
+{
+  "cell_type": "Inflammatory DC",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "pmcid": "PMC11578897",
+  "findings": [
+    {
+      "source": "cell_type_annotations.json (project config)",
+      "detail": "Inflammatory DC is listed as a fine-grained fetal-scope cell annotation under the broad 'DC' category in the prenatal skin atlas."
+    },
+    {
+      "source": "Supplementary Table 3 (referenced in main text)",
+      "detail": "Fine-grained annotations of cell states were assigned on the basis of differentially expressed genes (DEGs). The 'Inflammatory DC' annotation is part of these fine-grained cell state labels for the fetal immune compartment."
+    },
+    {
+      "source": "Full text analysis",
+      "detail": "The atlas paper main text mentions DC1, DC2, ASDC, pDC, and LC as dendritic cell subsets in prenatal skin but does not specifically discuss 'Inflammatory DC' in the narrative. The annotation appears to come from the detailed scRNA-seq clustering (Supplementary Table 3). DCs were noted to co-locate with lymphoid cells and pre-dermal condensate cells in spatial analysis."
+    },
+    {
+      "source": "Supplementary materials (reviewer responses)",
+      "detail": "The supplementary materials reference cDC2 marker CD1c expression prior to CD1a and CD207 in prenatal skin, suggesting cDC2/DC3 lineage cells are present during fetal development."
+    }
+  ]
+}

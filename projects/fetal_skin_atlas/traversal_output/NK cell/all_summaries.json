@@ -1,0 +1,112 @@
+[
+  {
+    "snippet_index": 0,
+    "summary": "NK cells and ILC precursors are identified in fetal skin as early as 8 PCW, making them the most abundant immune cells after macrophages. Fetal skin NK cells express perforin, KLRs, IFN-gamma, and granzymes, resembling functionally mature NK cells.",
+    "categories": ["development", "markers", "location"],
+    "source_corpus_id": "CorpusId:218615208",
+    "source_title": "The developing immune network in human prenatal skin",
+    "source_authors": "R. Botting, M. Haniffa",
+    "source_year": 2020,
+    "snippet": "While T-cells were only detected in fetal skin after thymic production, natural killer (NK) cells and innate lymphoid cell (ILC) precursors have been identified in skin as early as 8 PCW. Despite being the most abundant immune cell types isolated from fetal skin after macrophages, these are otherwise poorly described. These NK cells expressed genes for perforin, killer cell lectin receptors (KLRs), interferon-c and multiple granzymes, showing resemblance to functionally mature NK cells. Ivarsson et al. phenotypically and functionally compared NK cells across fetal lung, spleen, liver, bone marrow and mesenteric lymph nodes, finding the NK cells in lung were more differentiated than the other sites. Similar to fetal skin, lungs are exposed to amniotic fluid, and after birth will be exposed to an array of potentially immunogenic factors from the external environment, therefore the NK cells in fetal skin may share a similar profile to those in fetal lung."
+  },
+  {
+    "snippet_index": 1,
+    "summary": "Human fetal NK cells differentiate early in utero and are highly responsive to cytokines but respond poorly to MHC class I-negative target cells. KIR expression renders fetal NK cells hyporesponsive, contributing to fetal-maternal tolerance.",
+    "categories": ["development", "function"],
+    "source_corpus_id": "CorpusId:16676887",
+    "source_title": "Ontogeny of Innate T Lymphocytes",
+    "source_authors": "D. Vermijlen, I. Prinz",
+    "source_year": 2014,
+    "snippet": "It has been shown recently that human fetal NK cells differentiate early in utero and are highly responsive to cytokines and antibody-mediated stimulation but respond poorly to MHC class I-negative target cells. Indeed, in contrast to adult NK cells, it appears that expression of KIRs did not educate fetal NK cells but rendered them hyporesponsive to target cells lacking MHC class I. This selective hyporesponsiveness could contribute to fetal-maternal tolerance in utero. Thus, human NK cells can be made early during gestation, but they appear to be functionally different than adult NK cells."
+  },
+  {
+    "snippet_index": 2,
+    "summary": "The most mature NK cells found in adult circulation (CD94-CD16+) are absent during fetal ontogeny. Fetal NK cells express Eomes and T-bet with immature cells expressing more Eomes and mature cells more T-bet. Tissue-specific NK maturation patterns exist during ontogeny.",
+    "categories": ["development", "markers"],
+    "source_corpus_id": "CorpusId:1719486",
+    "source_title": "Eomesodermin and T-bet mark developmentally distinct human natural killer cells",
+    "source_authors": "A. Collins et al.",
+    "source_year": 2017,
+    "snippet": "Immaturity of the immune system of human fetuses and neonates is often invoked to explain their increased susceptibility to infection; however, the development of the fetal innate immune system in early life remains incompletely explored. We now show that the most mature NK cells found in adult (or postnatal) human circulation (CD94-CD16+) are absent during ontogeny. Human fetal NK cells were found to express the 2 signature T-box transcription factors essential for the development of all murine NK and NK-like cells, eomesodermin (Eomes) and T-bet. The single-cell pattern of Eomes and T-bet expression during ontogeny, however, revealed a stereotyped pattern of reciprocal dominance, with immature NK cells expressing higher amounts of Eomes and more mature NK cells marked by greater abundance of T-bet. We also observed a stereotyped pattern of tissue-specific NK cell maturation during human ontogeny, with fetal liver being more restrictive to NK cell maturity than fetal bone barrow, spleen, or lung. These results support the hypothesis that maturation of human NK cells has a discrete restriction until postnatal life, and provide a framework to better understand the increased susceptibility of fetuses and newborns to infection."
+  },
+  {
+    "snippet_index": 3,
+    "summary": "Fetal ILC subsets including NK cells have distinct distribution, developmental kinetics, and gene expression profiles across human fetal tissues.",
+    "categories": ["development", "location"],
+    "source_corpus_id": "CorpusId:268384166",
+    "source_title": "Distinct Tissue-Dependent Composition and Gene Expression of Human Fetal Innate Lymphoid Cells",
+    "source_authors": "I. Rodahl et al.",
+    "source_year": 2024,
+    "snippet": "The human fetal immune system starts to develop in the first trimester and likely plays a crucial role in fetal development and maternal-fetal tolerance. Innate lymphoid cells (ILCs) are the earliest lymphoid cells to arise in the human fetus. ILCs consists of natural killer (NK) cells, ILC1s, ILC2s, and ILC3s that all share a common lymphoid origin. Here, we studied fetal ILC subsets, mainly NK cells and ILC3s and their potential progenitors, across human fetal tissues from the first and second trimesters. Our results show that fetal ILC subsets have distinct distribution, developmental kinetics, and gene expression profiles across human fetal tissues."
+  },
+  {
+    "snippet_index": 4,
+    "summary": "Functional NK cells exist in fetal liver at early stages of embryonic development. Fetal NK cells mediate MHC-unrestricted cytotoxicity. Unlike adult NK cells, fetal NK cells express cytoplasmic CD3 delta and epsilon proteins.",
+    "categories": ["development", "function", "markers"],
+    "source_corpus_id": "CorpusId:17278231",
+    "source_title": "Ontogeny of human natural killer (NK) cells: fetal NK cells mediate cytolytic function and express cytoplasmic CD3 epsilon,delta proteins",
+    "source_authors": "J. Phillips et al.",
+    "source_year": 1992,
+    "snippet": "Natural killer (NK) cells have been defined as CD3 epsilon-, CD16+ and/or CD56+ lymphocytes that mediate major histocompatibility complex (MHC)-unrestricted cytotoxicity against certain tumors and virus- infected cells. Unlike T lymphocytes, NK cells do not rearrange or productively express T cell antigen receptor genes. Moreover, NK cells from adults have been reported to not express CD3 gamma, delta, or epsilon proteins on the cell surface or in the cytoplasm. In this report, we demonstrate that functional NK cells exist in liver at early stages of human embryonic development. Freshly isolated fetal NK cells mediated MHC-unrestricted cytotoxicity against NK-sensitive targets and acquired the ability to lyse NK-resistant tumors after overnight culture in interleukin 2. Unlike adult NK cells, freshly isolated fetal liver NK cells and clones derived from these cells, as well as a subset of cord blood NK cells, express substantial levels of CD3 delta and CD3 epsilon proteins in the cytoplasm."
+  },
+  {
+    "snippet_index": 5,
+    "summary": "Fetal EMP-derived NK cells are highly potent cytotoxic cells, yet hyporesponsive to HLA-negative target cells compared to adult HSC-derived counterparts.",
+    "categories": ["development", "function"],
+    "source_corpus_id": "CorpusId:248526247",
+    "source_title": "Establishment of tissue-resident immune populations in the fetus",
+    "source_authors": "D. Feyaerts et al.",
+    "source_year": 2022,
+    "snippet": "Fetal lymphoid cells partially derive from the wave of transient definitive hematopoiesis prior to definitive hematopoiesis and include NK cells, likely lymphoid tissue inducer cells (LTi), as well as marginal zone and B-1 B cells, and thymus-derived fetal T cells. Fetal EMP-derived NK cells are highly potent cytotoxic cells, yet hyporesponsive to HLA neg target cells compared to their adult HSC-derived counterparts."
+  },
+  {
+    "snippet_index": 6,
+    "summary": "In mice, NK1.1+ ILC1 cells are highly enriched in fetal and neonatal skin but rapidly decline within 6 weeks of life. These cells regulate early cutaneous microbiota colonization.",
+    "categories": ["development", "function", "location"],
+    "source_corpus_id": "CorpusId:280847420",
+    "source_title": "Natural killer cells in skin: a unique opportunity to better characterize the many facets of an overlooked secondary lymphoid organ",
+    "source_authors": "K.M. Johnson, D.A. Lee",
+    "source_year": 2025,
+    "snippet": "To date, most studies of NK cell populations in the skin have focused on ILC subsets (usually categorized as ILC1, ILC2, and ILC3 cells). Though found in every tissue, ILCs are especially prevalent in barrier tissues, such as the skin, lung, and intestines, where they are thought to be important for maintenance of tissue homeostasis, as well as mediating initial inflammation in response to pathology such as infection. Single cell transcriptomic profiling of developing fetal and adult healthy human skin compared with skin from adult patients with atopic dermatitis and psoriasis demonstrated an enrichment of ILCs within the skin during the first trimester for fetal tissue, as well as clonal expansion of disease-associated lymphocytes in diseased skin. In mice, NK 1.1+ ILC1 cells are highly enriched in fetal and neonatal skin, but rapidly decline within 6 weeks of life. These cells are believed to play a significant role in regulating early cutaneous microbiota colonization."
+  },
+  {
+    "snippet_index": 7,
+    "summary": "NK cells are grouped based on organ of development and tissue localization: bone marrow-derived conventional NK cells, thymic-derived, fetal liver-derived, liver-resident, uterine-resident, and intestinal-resident NK cells.",
+    "categories": ["development", "location"],
+    "source_corpus_id": "CorpusId:9320358",
+    "source_title": "Targeting NK Cells for Anticancer Immunotherapy: Clinical and Preclinical Approaches",
+    "source_authors": "S. Carotta",
+    "source_year": 2016,
+    "snippet": "Natural killer cells are the founding member of the innate lymphoid cell (ILC) family and are generally grouped based on their organ of development and tissue localization: we distinguish bone marrow-derived or adult conventional NK (cNK) cells, thymic-derived, fetal liver-derived, liver-resident, uterine-resident, and intestinal-resident NK cells."
+  },
+  {
+    "snippet_index": 8,
+    "summary": "Between 18-36 PCW, NK cells are found in fetal liver, lung, spleen, and to lower frequencies in BM and mLN, with organ-specific KIR expression. NK cell-restricted progenitors found in fetal liver from week 6 and BM from week 12.",
+    "categories": ["development", "markers", "location"],
+    "source_corpus_id": "CorpusId:254895721",
+    "source_title": "Embryonic ILC-poiesis across tissues",
+    "source_authors": "D. Hernandez-Torres, C. Stehle",
+    "source_year": 2022,
+    "snippet": "Between 18-36 PCW, NK cells are frequently represented not only in the liver but also in the lung and spleen, and to lower frequencies in fetal BM and mLN, and display organ-specific variations in killer-cell immunoglobulinlike receptor (KIR) expression. NK cell-restricted progenitors defined as CD34+ CD38+ cells expressing CD45RA, CD10, and CD7 but lacking CD127 were found in human fetal liver from gestational week 6 onwards, and also in fetal BM from gestational week 12."
+  },
+  {
+    "snippet_index": 9,
+    "summary": "Fetal thymus-derived NK1.1+ ILC1s acquire CCR10+ skin-homing properties. Most skin ILCs in neonatal mice are NK1.1+ ILC1s regulating commensal bacterial colonization.",
+    "categories": ["function", "location", "development"],
+    "source_corpus_id": "CorpusId:215758385",
+    "source_title": "Preferential Perinatal Development of Skin-Homing NK1.1+ Innate Lymphoid Cells for Regulation of Cutaneous Microbiota Colonization",
+    "source_authors": "J. Yang et al.",
+    "source_year": 2020,
+    "snippet": "We found that like fetal thymus-derived skin-homing innate-like gdT cells, NK1.1+ ILC1s generated in fetal thymi are also programmed with preferential acquisition of the CCR10+ skin-homing property. Correspondingly, most skin ILCs in neonatal mice are NK1.1+ ILC1s, which play an important role in regulation of the skin colonization of commensal bacteria."
+  },
+  {
+    "snippet_index": 10,
+    "summary": "NK cells are large granular lymphocytes of the innate immune system involved in early control of microbial infections and cancer. NK cell precursors originate from bone marrow.",
+    "categories": ["function", "location", "morphology"],
+    "source_corpus_id": "CorpusId:43782117",
+    "source_title": "The trafficking of natural killer cells",
+    "source_authors": "C. Gregoire et al.",
+    "source_year": 2007,
+    "snippet": "Natural killer (NK) cells are large granular lymphocytes of the innate immune system that participate in the early control of microbial infections and cancer. NK cells can induce the death of autologous cells undergoing various forms of stress, recognizing and providing non-microbial danger signals to the immune system. NK cells are widely distributed in lymphoid and non-lymphoid organs. NK cell precursors originate from the bone marrow and go through a complex maturation process that leads to the acquisition of their effector functions."
+  }
+]

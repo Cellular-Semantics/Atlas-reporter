@@ -1,0 +1,26 @@
+{
+  "cell_type_label": "Melanocyte (fetal skin)",
+  "working_definition": "A differentiated pigment cell in fetal skin expressing melanogenic enzymes TYR, TYRP1, DCT, and melanosomal markers PMEL and MLANA, as well as the master regulator MITF. Located in the basal layer of the epidermis and developing hair follicles from approximately 7 PCW.",
+  "searches_performed": [
+    "melanocyte (CL, pageSize=10)",
+    "melanocyte of skin (CL)"
+  ],
+  "best_match": {
+    "cl_term": "melanocyte of skin",
+    "cl_id": "CL:1000458",
+    "cl_definition": "A melanocyte that is part of the skin of body.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:1000458 describes a melanocyte of the skin, which directly matches the fetal skin melanocyte. The fetal context adds developmental timing but the cell type identity is the same.",
+  "other_candidates": [
+    {
+      "cl_term": "melanocyte",
+      "cl_id": "CL:0000148",
+      "reason_rejected": "More general; CL:1000458 is more specific to skin location."
+    }
+  ],
+  "recommendation": "Use CL:1000458 (melanocyte of skin) as exact match.",
+  "new_term_needed": false
+}

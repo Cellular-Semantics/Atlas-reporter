@@ -1,0 +1,11 @@
+{
+  "label": "Early fibroblasts HOXC5+",
+  "resolved_names": [
+    "HOXC5+ early fibroblast",
+    "Early fibroblasts HOXC5+"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "HOXC5+ early fibroblasts are a key progenitor in both prenatal skin and SkO. Located in upper dermis, abundant before 11 PCW (Extended Data Fig. 3c)."
+}

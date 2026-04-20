@@ -1,0 +1,22 @@
+{
+  "markers": [
+    {"gene": "CD14", "evidence_type": "canonical marker / flow cytometry", "source_table": "Gopee et al. 2024 Supplementary Table 3; Schuster et al. 2012"},
+    {"gene": "S100A8", "evidence_type": "DE marker / scRNA-seq", "source_table": "Suo et al. 2022; Golubinskaya et al. 2020"},
+    {"gene": "S100A9", "evidence_type": "DE marker / scRNA-seq", "source_table": "Suo et al. 2022; Golubinskaya et al. 2020"},
+    {"gene": "FCN1", "evidence_type": "DE marker / scRNA-seq", "source_table": "Suo et al. 2022"},
+    {"gene": "CCR2", "evidence_type": "DE marker / scRNA-seq", "source_table": "Suo et al. 2022"},
+    {"gene": "IL1B", "evidence_type": "DE marker / scRNA-seq (tissue-matured)", "source_table": "Suo et al. 2022"}
+  ],
+  "other_findings": [
+    {"finding": "Three distinct monocyte subsets in prenatal tissues: CXCR4hi (bone marrow-retained), CCR2hi (egressing/proliferative), and IL1Bhi (peripheral tissue-matured)", "category": "annotation", "source_table": "Suo et al. 2022 Fig. 2C-E"},
+    {"finding": "Monocytes are present in prenatal skin throughout gestation (7-17 PCW) as mesoderm-derived immune cells", "category": "tissue context", "source_table": "Gopee et al. 2024 Fig. 1c, Supplementary Table 4"},
+    {"finding": "CXCR4hi-to-CCR2hi transition accompanies monocyte egress from bone marrow to peripheral tissues; CCR2hi monocytes further mature to IL1Bhi in tissues", "category": "developmental trajectory", "source_table": "Suo et al. 2022 Fig. 2D-E"},
+    {"finding": "Prenatal skin immune milieu is downregulated compared to adult, with progressive acquisition of pro-inflammatory phenotype from 9 PCW", "category": "tissue context", "source_table": "Gopee et al. 2024 Discussion"}
+  ],
+  "evidence_quotes": [
+    {"quote": "Our cross-tissue analysis distinguished three distinct subsets of monocytes, characterized by a differential distribution between prenatal bone marrow and peripheral tissues and by the expression of CXCR4, CCR2, or IL1B", "source_file": "Suo et al. 2022 (CorpusId:248122197)", "context": "Monocyte heterogeneity across prenatal tissues"},
+    {"quote": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW", "source_file": "Gopee et al. 2024 (CorpusId:273400864)", "context": "Temporal appearance of immune cells in prenatal skin"},
+    {"quote": "Mesoderm-derived cells, including skin fibroblasts and endothelial cells, and immune cells were present throughout gestation", "source_file": "Gopee et al. 2024 (CorpusId:273400864)", "context": "Persistence of immune cells across gestation"},
+    {"quote": "These findings suggest that early macrophages and mast cells may contribute to angiogenesis, tissue morphogenesis and homeostasis as previously reported, prior to adopting traditional immunological functions.", "source_file": "Suo et al. 2022 (CorpusId:248122197)", "context": "Role of early myeloid cells in tissue morphogenesis before immune function"}
+  ]
+}

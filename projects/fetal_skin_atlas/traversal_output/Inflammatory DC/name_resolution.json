@@ -1,0 +1,8 @@
+{
+  "label": "Inflammatory DC",
+  "resolved_names": ["Inflammatory dendritic cell", "DC3", "type 3 dendritic cell", "CD14+ CD163+ dendritic cell"],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The label 'Inflammatory DC' appears as a fine-grained fetal-scope annotation in the Gopee et al. 2024 prenatal skin atlas (cell_type_annotations.json), classified under the broad 'DC' category. This cell type likely corresponds to DC3 (type 3 dendritic cells), an inflammatory CD5-CD163+CD14+ dendritic cell subset identified by Dutertre et al. (2019) and further characterized by Bourdely et al. (2020). DC3 are CD1c+CD14+CD163+ cells that develop via a GM-CSF-dependent pathway distinct from both conventional DC progenitors and monocyte progenitors. They are FLT3L-responsive and belong to the DC lineage rather than being monocyte-derived. The term 'Inflammatory DC' is not used in the main text of the atlas paper but is present in the supplementary cell annotations (Supplementary Table 3)."
+}

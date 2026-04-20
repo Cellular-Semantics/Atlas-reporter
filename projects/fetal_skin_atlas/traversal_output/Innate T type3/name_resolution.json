@@ -1,0 +1,8 @@
+{
+  "label": "Innate T type3",
+  "resolved_names": ["Innate T type3", "type 3 innate T cell", "unconventional T cell (type 3)"],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "Cell type label 'Innate T type3' is present in the fetal skin atlas annotations (Gopee et al., 2024) and corresponds to the 'type 3 innate T cell' annotation used by Suo et al. (2022) in the developing human immune system atlas. These are PLZF-expressing unconventional T cells with type 3 (IL-17-associated) effector potential, arising via thymocyte-thymocyte selection."
+}

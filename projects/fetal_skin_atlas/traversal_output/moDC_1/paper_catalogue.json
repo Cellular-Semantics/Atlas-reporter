@@ -1,0 +1,28 @@
+{
+  "papers": [
+    {
+      "authors": "Reynolds et al.",
+      "year": 2021,
+      "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+      "doi": "10.1126/science.aba6500"
+    },
+    {
+      "authors": "Gopee et al.",
+      "year": 2024,
+      "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+      "doi": "10.1038/s41586-024-08002-x"
+    },
+    {
+      "authors": "McGovern et al.",
+      "year": 2014,
+      "title": "Human Dermal CD14+ Cells Are a Transient Population of Monocyte-Derived Macrophages",
+      "doi": "10.1016/j.immuni.2014.08.006"
+    },
+    {
+      "authors": "Mazzoccoli and Liu",
+      "year": 2024,
+      "title": "Dendritic Cells in Shaping Anti-Tumor T Cell Response",
+      "doi": "10.3390/cancers16122220"
+    }
+  ]
+}

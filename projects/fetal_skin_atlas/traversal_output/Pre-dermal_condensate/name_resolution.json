@@ -1,0 +1,10 @@
+{
+  "label": "Pre-dermal condensate",
+  "resolved_names": [
+    "Pre-dermal condensate"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Cell type 'Pre-dermal condensate' identified in the prenatal skin atlas (Gopee et al., 2024)."
+}

@@ -1,0 +1,93 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": ["N. Gopee", "Elena Winheim", "B. Olabi", "et al."],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x"
+  },
+  "CorpusId:218615208": {
+    "title": "The developing immune network in human prenatal skin",
+    "authors": ["R. Botting", "M. Haniffa"],
+    "year": 2020,
+    "venue": "Immunology",
+    "doi": "10.1111/imm.13192"
+  },
+  "CorpusId:203986545": {
+    "title": "Decoding human fetal liver haematopoiesis",
+    "authors": ["Dorin-Mirel Popescu", "R. Botting", "Emily Stephenson", "et al."],
+    "year": 2019,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-019-1652-y"
+  },
+  "CorpusId:33896106": {
+    "title": "Differentiation and functional regulation of human fetal NK cells",
+    "authors": ["M. Ivarsson", "L. Loh", "N. Marquardt", "et al."],
+    "year": 2013,
+    "venue": "Journal of Clinical Investigation",
+    "doi": "10.1172/JCI68989"
+  },
+  "CorpusId:1719486": {
+    "title": "Eomesodermin and T-bet mark developmentally distinct human natural killer cells",
+    "authors": ["Amelie Collins", "Nyanza J. Rothman", "Kang Liu", "S. Reiner"],
+    "year": 2017,
+    "venue": "JCI Insight",
+    "doi": "10.1172/jci.insight.90063"
+  },
+  "CorpusId:268384166": {
+    "title": "Distinct Tissue-Dependent Composition and Gene Expression of Human Fetal Innate Lymphoid Cells",
+    "authors": ["Inga Rodahl", "M. Ivarsson", "Liyen Loh", "et al."],
+    "year": 2024,
+    "venue": "bioRxiv",
+    "doi": "10.1101/2024.03.12.583977"
+  },
+  "CorpusId:248526247": {
+    "title": "Establishment of tissue-resident immune populations in the fetus",
+    "authors": ["Dorien Feyaerts", "C. Urbschat", "Brice L Gaudilliere", "I. Stelzer"],
+    "year": 2022,
+    "venue": "Seminars in Immunopathology",
+    "doi": "10.1007/s00281-022-00931-x"
+  },
+  "CorpusId:16676887": {
+    "title": "Ontogeny of Innate T Lymphocytes - Some Innate Lymphocytes are More Innate than Others",
+    "authors": ["D. Vermijlen", "I. Prinz"],
+    "year": 2014,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2014.00416"
+  },
+  "CorpusId:17278231": {
+    "title": "Ontogeny of human natural killer (NK) cells: fetal NK cells mediate cytolytic function and express cytoplasmic CD3 epsilon,delta proteins",
+    "authors": ["J. Phillips", "Toshiyuki Hori", "A. Nagler", "N. Bhat", "H. Spits", "L. Lanier"],
+    "year": 1992,
+    "venue": "Journal of Experimental Medicine",
+    "doi": "10.1084/JEM.175.4.1055"
+  },
+  "CorpusId:280847420": {
+    "title": "Natural killer cells in skin: a unique opportunity to better characterize the many facets of an overlooked secondary lymphoid organ",
+    "authors": ["Kirsten M. Johnson", "Dean A Lee"],
+    "year": 2025,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2025.1646719"
+  },
+  "CorpusId:215758385": {
+    "title": "Preferential Perinatal Development of Skin-Homing NK1.1+ Innate Lymphoid Cells for Regulation of Cutaneous Microbiota Colonization",
+    "authors": ["Jie Yang", "K. H. Restori", "Ming Xu", "et al."],
+    "year": 2020,
+    "venue": "iScience",
+    "doi": "10.1016/j.isci.2020.101026"
+  },
+  "CorpusId:254895721": {
+    "title": "Embryonic ILC-poiesis across tissues",
+    "authors": ["D. Hernandez-Torres", "Christina Stehle"],
+    "year": 2022,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.1reassembly"
+  },
+  "CorpusId:9320358": {
+    "title": "Targeting NK Cells for Anticancer Immunotherapy: Clinical and Preclinical Approaches",
+    "authors": ["S. Carotta"],
+    "year": 2016,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2016.00152"
+  }
+}

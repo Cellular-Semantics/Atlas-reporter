@@ -1,0 +1,32 @@
+{
+  "markers": [],
+  "other_findings": [
+    "One of two neutrophil subpopulations identified in fetal skin",
+    "Neutrophils are part of the broad 'Neutrophil' category in the fetal scope of the atlas",
+    "Specific markers distinguishing Neutrophil1 from Neutrophil2 are in Supplementary Table 3",
+    "IL-8/CXCL8 is a potent neutrophil chemotactant detected in fetal skin",
+    "Fetal neutrophils may be recruited to tissues during inflammation"
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW",
+      "source_file": "Gopee et al. 2024 (CorpusId:273400864)",
+      "context": "Temporal immune cell composition in prenatal skin"
+    },
+    {
+      "quote": "plasmacytoid DCs, monocytes, monocyte-DCs (having both a monocyte and DC gene signature) and a neutrophil-myeloid precursor have also recently been identified in first-trimester human skin using single-cell RNA sequencing (scRNAseq).",
+      "source_file": "Botting and Haniffa 2020 (CorpusId:218615208)",
+      "context": "Immune cell types in first-trimester fetal skin"
+    },
+    {
+      "quote": "Mature neutrophils are present at the end of the first trimester and steeply increase in number, stimulated by granulocyte-colony-stimulating factor, shortly before birth. Their number then returns to a stable level within days, but they show weak bactericidal functions, poor responses to inflammatory stimuli, reduced adhesion to endothelial cells and diminished chemotaxis",
+      "source_file": "Simon et al. 2015 (CorpusId:735422)",
+      "context": "Fetal neutrophil development and function"
+    },
+    {
+      "quote": "Relative to TANs, matched NANs in our dataset showed high expression of established neutrophil maturity markers (SELL, PTSG2, CXCR2, CXCR1, FCGR3B, MME) as well as canonical neutrophil markers (S100A8, S100A9, S100A12)",
+      "source_file": "Salcher et al. 2022 (CorpusId:248754184)",
+      "context": "Neutrophil maturity markers"
+    }
+  ]
+}

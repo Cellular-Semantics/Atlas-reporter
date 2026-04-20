@@ -1,0 +1,59 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": ["N. Gopee", "E. Winheim", "B. Olabi", "et al."],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "pmid": "39415002",
+    "pmcid": "PMC11578897",
+    "url": "https://www.semanticscholar.org/paper/273400864",
+    "role": "atlas_paper"
+  },
+  "CorpusId:218615208": {
+    "title": "The developing immune network in human prenatal skin",
+    "authors": ["R. Botting", "M. Haniffa"],
+    "year": 2020,
+    "venue": "Immunology",
+    "doi": "10.1111/imm.13192",
+    "pmid": "32266722",
+    "url": "https://www.semanticscholar.org/paper/47dac42dc1734092794a0871a7eb752fb294adbf",
+    "role": "key_reference"
+  },
+  "CorpusId:616832": {
+    "title": "Human embryonic epidermis contains a diverse Langerhans cell precursor pool",
+    "authors": ["C. Schuster", "M. Mildner", "M. Mairhofer", "et al."],
+    "year": 2014,
+    "venue": "Development",
+    "doi": "10.1242/dev.102699",
+    "url": "https://www.semanticscholar.org/paper/b07a73ba8f323ca5ad214df5e2934db04679311b",
+    "role": "key_reference"
+  },
+  "CorpusId:10280599": {
+    "title": "Adult Langerhans cells derive predominantly from embryonic fetal liver monocytes with a minor contribution of yolk sac-derived macrophages",
+    "authors": ["G. Hoeffel", "Y. Wang", "M. Greter", "et al."],
+    "year": 2012,
+    "venue": "Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20120340",
+    "url": "https://www.semanticscholar.org/paper/0a4e25b0001375ade10609708c8020dad6925954",
+    "role": "key_reference"
+  },
+  "CorpusId:6034676": {
+    "title": "HLA-DR+ leukocytes acquire CD1 antigens in embryonic and fetal human skin and contain functional antigen-presenting cells",
+    "authors": ["C. Schuster", "C. Vaculik", "C. Fiala", "et al."],
+    "year": 2009,
+    "venue": "Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20081747",
+    "url": "https://www.semanticscholar.org/paper/58f4889270bf4d8b9e5aca548e808b7bf75f40d6",
+    "role": "key_reference"
+  },
+  "CorpusId:219586844": {
+    "title": "Notch-Mediated Generation of Monocyte-Derived Langerhans Cells: Phenotype and Function",
+    "authors": ["L. Bellmann", "C. Zelle-Rieser", "P. Milne", "et al."],
+    "year": 2020,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2020.566049",
+    "url": "https://www.semanticscholar.org/paper/219586844",
+    "role": "supporting"
+  }
+}

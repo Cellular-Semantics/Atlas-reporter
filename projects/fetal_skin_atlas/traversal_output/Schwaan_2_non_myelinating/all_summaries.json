@@ -1,0 +1,366 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "non-myelinating Schwann cells exist in a larger number than myelinating Schwann cells (Gerber et al., 2021;Wolbert et al., 2020).",
+      "Ncam1 and Ngfr/p75 are typical markers of immature Schwann cells, Schwann cells in late embryonic period and early postnatal period. Immature Schwann cells develop to myelinating and non-myelinating Schwann cells postnatally (Jessen and Mirsky, 2019).",
+      "there is no direct transcriptional comparison between immature Schwann cells in embryos and non-myelinating Schwann cells in adult animals.",
+      "important molecular basis for the comparison between immature Schwann cells in embryos and non-myelinating Schwann cells as well as the investigation of the biological functions of non-myelinating Schwann cells."
+    ],
+    "summary": "This snippet outlines that non-myelinating Schwann cells outnumber myelinating ones, arise postnatally from immature Schwann cells, and that typical markers shared at stages include Ncam1 and Ngfr/p75. It emphasizes the lack of direct transcriptional comparisons between immature and adult non-myelinating Schwann cells and points to the need for further investigation of their biological functions.",
+    "categories": [
+      "development",
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:273066472",
+    "source_title": "Single-cell profiling of cellular changes in the somatic peripheral nerves following nerve injury",
+    "source_authors": "Li Zhao et al.",
+    "source_year": null,
+    "snippet": "It is demonstrated that non-myelinating Schwann cells exist in a larger number than myelinating Schwann cells (Gerber et al., 2021;Wolbert et al., 2020). Notably, Ncam1 and Ngfr/p75 are typical markers of immature Schwann cells, Schwann cells in late embryonic period and early postnatal period. Immature Schwann cells develop to myelinating and non-myelinating Schwann cells postnatally (Jessen and Mirsky, 2019). However, as far as we know, there is no direct transcriptional comparison between immature Schwann cells in embryos and non-myelinating Schwann cells in adult animals. The advanced genetic based separation of Schwann cell sub-types thus provides important molecular basis for the comparison between immature Schwann cells in embryos and non-myelinating Schwann cells as well as the investigation of the biological functions of non-myelinating Schwann cells."
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "non-myelinating Schwann cells (Schwann-nm, Figure 1B-C)",
+      "nonmyelinating Schwann cells express NRXN1 encoding Neurexin 1, a cell adhesion molecule important for the formation and function of synapses and a marker gene for non-myelinating Schwann cells.",
+      "These glial cell types have distinct roles in supporting, protecting, and regulating the microenvironment of PNS neurons",
+      "marker genes are associated with biological processes, such as synaptic regulation, ion transmembrane transport, axon guidance and myelination, as well as extracellular matrix organization and cell adhesion"
+    ],
+    "summary": "Non-myelinating Schwann cells (Schwann-nm) express NRXN1 (Neurexin 1) as a marker and contribute to formation and function of synapses. They play distinct roles in support and regulation within the PNS, linked to synaptic regulation, axon guidance, and cell adhesion.",
+    "categories": [
+      "markers",
+      "function",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:281521212",
+    "source_title": "A multi-omic atlas of human autonomic and sensory ganglia implicates cell types in peripheral neuropathies",
+    "source_authors": "Lite Yang et al.",
+    "source_year": null,
+    "snippet": "Among the nine non-neuronal human SG cell types, we found three glial cell types, including satellite glial cells, myelinating (Schwann-my), and non-myelinating Schwann cells (Schwann-nm, Figure 1B-C). The satellite glial cells express a high level of FABP7 (Fatty Acid Binding Protein 7), a satellite glial marker gene previously reported in peripheral ganglia across species [4,14]. Myelinating Schwann cells express PRX (Periaxin), an essential gene for the maintenance of peripheral nerve myelin, and nonmyelinating Schwann cells express NRXN1 encoding Neurexin 1, a cell adhesion molecule important for the formation and function of synapses and a marker gene for non-myelinating Schwann cells. These glial cell types have distinct roles in supporting, protecting, and regulating the microenvironment of PNS neurons [10,40,41]. Consistent with this notion, we found their marker genes are associated with biological processes, such as synaptic regulation, ion transmembrane transport, axon guidance and myelination, as well as extracellular matrix organization and cell adhesion (Figure S1G). Moreover, we also found endothelial cells expressing FLT1, fibroblasts expressing APOD, mural cells expressing MYH11, adipocytes expressing FABP4, as well as immune cells, such as SYK-expressing macrophages and CD2-expressing T cells (Figure 1B-C). The marker genes expressed in these cell types are also associated with their unique functions in the human SG (Figure S1G). All major cell types are present in each library except for adipocytes derived from a subset of donors (Figure S1D), which are likely due to the inclusion of surrounding tissues in those samples during the tissue procurement and processing. \n\nTo study the chromatin accessibility profiles of human SG cell types, we performed dimension reduction and clustering of the snATAC-seq data generated from the same nuclei in snRNA-seq, which generated 26 epigenomically distinct clusters."
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "Non-myelinating Schwann cells (NMSCs) are one of the two major phenotypes of Schwann cells.",
+      "NMSCs are of different types and have various locations.",
+      "In the peripheral nervous system, NMSC, named Remak Schwann cells (RSC), accom-modate multiple small-caliber axons, forming Remak bundles.",
+      "NMSC, named perisynaptic/terminal Schwann cells, are found at the distal end of motor nerve terminals at the neuromuscular junction (NMJ).",
+      "NMSCs proved to serve different functions according to their distribution such as maintenance of the axon and NMJ, peripheral nerve regeneration, or remodeling of the NMJ.",
+      "An immature Schwann cell which ensheaths many small axons becomes mature non-myelinating Schwann cell, forming a Remak bundle."
+    ],
+    "summary": "Non-myelinating Schwann cells have subtypes including Remak and perisynaptic/terminal Schwann cells, located respectively around small-caliber axons and neuromuscular junctions. Their functions include maintenance of axons/NMJ and involvement in nerve regeneration or remodeling. They originate from immature Schwann cells.",
+    "categories": [
+      "function",
+      "location",
+      "development",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:216489909",
+    "source_title": "Non-Myelinating Schwann Cells in Health and Disease",
+    "source_authors": "O. Ioghen et al.",
+    "source_year": null,
+    "snippet": "Non-myelinating Schwann cells (NMSCs) are one of the two major phenotypes of Schwann cells. NMSCs are of different types and have various locations. In the peripheral nervous system, NMSC, named Remak Schwann cells (RSC), accom-modate multiple small-caliber axons, forming Remak bundles. NMSC, named perisynaptic/terminal Schwann cells, are found at the distal end of motor nerve terminals at the neuromuscular junction (NMJ). Thus, NMSCs proved to serve different functions according to their distribution such as maintenance of the axon and NMJ, peripheral nerve regeneration, or remodeling of the NMJ. Schwann cells (SCs) retain their proliferation capacity in the case of nerve injury or demyelination and provide support for the neuronal cells through paracrine signaling. Here we present an overview of their phenotypes and tissue distribution focusing on their emerging involvement in various peripheral nerve diseases. the evolution of myelinated and unmyelinated peripheral nerve fibers. Schwann cell precursors differentiate into immature Schwann cells which start the process of \u201cradial sorting\u201d. A pro-myelinating Schwann cell envelops a large axon and becomes a myelinating Schwann cell. An immature Schwann cell which ensheaths many small axons becomes mature non-myelinating Schwann cell, forming a Remak bundle."
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "non-myelinating Remak Schwann cells",
+      "the latter associate with several small diameter axons, and ensheath them in so-called Remak bundles, without producing myelin.",
+      "Terminal (or perisynaptic) Schwann cells are a third distinct subtype of Schwann cells. They are associated with neuromuscular junctions, and although they are non-myelinating, terminal Schwann cells differ considerably from Remak Schwann cells in terms of their marker expression, appearance, and function [7,88,89].",
+      "it is likely that other glial subtypes that have not been well characterized so far also arise from Schwann cell precursors and might differentiate through the immature Schwann cell stage as well [79],",
+      "the differential mechanisms that specify the mature non-myelinating fates, including Remak and terminal Schwann cells, are largely unclear."
+    ],
+    "summary": "This snippet highlights that non-myelinating Remak Schwann cells ensheath multiple small axons (Remak bundles) and do not produce myelin. It also distinguishes between Remak and terminal Schwann cells, which have differing markers and functions, and notes the unclear development mechanisms for these mature non-myelinating subtypes.",
+    "categories": [
+      "morphology",
+      "location",
+      "function",
+      "development",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:253934919",
+    "source_title": "Development and In Vitro Differentiation of Schwann Cells",
+    "source_authors": "Sarah Janice H\u00f6rner et al.",
+    "source_year": null,
+    "snippet": "The two known major subtypes of mature Schwann cells are myelinating Schwann cells and non-myelinating Remak Schwann cells. While the first associate with one individual axon through radial sorting and build up the myelin sheath wrapping a segment of this axon, the latter associate with several small diameter axons, and ensheath them in so-called Remak bundles, without producing myelin. Terminal (or perisynaptic) Schwann cells are a third distinct subtype of Schwann cells. They are associated with neuromuscular junctions, and although they are non-myelinating, terminal Schwann cells differ considerably from Remak Schwann cells in terms of their marker expression, appearance, and function [7,88,89]. Besides these, it is likely that other glial subtypes that have not been well characterized so far also arise from Schwann cell precursors and might differentiate through the immature Schwann cell stage as well [79], such as the glia cells of cutaneous sensory corpuscles [90,91]. While some factors that promote the development of the mature myelinating Schwann cell subtype are known, the differential mechanisms that specify the mature non-myelinating fates, including Remak and terminal Schwann cells, are largely unclear. \n\nMyelinating Schwann cells develop through a further intermediate state, termed a promyelinating Schwann cell, which establishes a 1:1 relationship with an axon sorted for myelination [84]. Axonal sorting and maturation of myelinating Schwann cells is dependent on axonal contact and Nrg1 expression levels [92]. Myelination and terminal differentiation appear to involve activation of the adhesion G-protein coupled receptor GPR126 by basal lamina components such as laminin-211 [93][94][95][96]. GPR126 might signal through multiple downstream effectors, one being the myelination onset regulator Krox20 [97] through cAMP-dependent PKA activation [98]. Furthermore, the axonal Nrg1 expression level seems to tune the regulation of myelination fate."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "expression of Gap43 and p75NTR ceases; however, both persist in the non-myelinating fate [1][2][3]26,65,78,298]",
+      "adult non-myelinating Schwann cells are less well characterized than myelinating Schwann cells, and the marker expression likely differs, as well as between subpopulations [288]",
+      "A few possibly specific markers for non-myelinating Schwann cells and subpopulations were found in vivo [288,[299][300][301][302], but these have not been established in vitro yet"
+    ],
+    "summary": "Gap43 and p75NTR persist as markers in non-myelinating Schwann cells. Marker profiles are less well established for non-myelinating versus myelinating Schwann cells, and a few specific markers for non-myelinating subpopulations have been found in vivo, but not established in vitro.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:253934919",
+    "source_title": "Development and In Vitro Differentiation of Schwann Cells",
+    "source_authors": "Sarah Janice H\u00f6rner et al.",
+    "source_year": null,
+    "snippet": "However, it is not exclusively expressed in Schwann cells, but can also be found in a variety of other cell types (e.g., other glial and neural cells, melanocytes, adipocytes, several muscle cell types) [296]. Furthermore, antibody specificity is particularly critical for S100b, as the S100 family of Ca 2+ binding proteins includes 24 members, which are widely expressed in many cell and tissue types [297]. In general, it is crucial to combine several markers in order to unequivocally identify Schwann cells. As differentiation progresses, myelination onset markers, such as Krox20, start to be expressed during a pro-myelinating state, in which cells are not yet actively producing myelin. The latter is indicated by the expression of the mature myelination marker MBP. At the same time, expression of Gap43 and p75NTR ceases; however, both persist in the non-myelinating fate [1][2][3]26,65,78,298]. As mentioned earlier, adult non-myelinating Schwann cells are less well characterized than myelinating Schwann cells, and the marker expression likely differs, as well as between subpopulations [288]. As readouts for \"mature\" Schwann cells in vitro are largely based on myelination capacity and myelin-related marker expression, the characterization of potentially mature non-myelinating Schwann cells in vitro has not yet been clearly defined, as many known markers overlap with immature Schwann cell markers. A few possibly specific markers for non-myelinating Schwann cells and subpopulations were found in vivo [288,[299][300][301][302], but these have not been established in vitro yet; and even in primary cultures, it is not known whether mature non-myelinating Schwann cells can be obtained with the current culturing methods [19]. Some examples of IF staining for such marker proteins are shown in Figure 5 for in vitro hiPSC-derived Schwann cells, as well as the intermediate differentiation stages, neural crest and Schwann cell precursors."
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [
+      "they expressed the Schwann cell marker S100 ( Figure 3F), but not the myelin marker MBP ( Figure 3B), and were, therefore, immature/non-myelinating Schwann cells.",
+      "They could be classified into three categories as follows: (1) those associated with dermal nerve fibers ( Figures 3A and 3E, closed arrows), (2) lanceolate endings around hair follicles (Figures 3C, 3D, and 3F, empty arrowheads), and (3) free nerve endings of nociceptive fibers ( Figures 3C, 3D, and 3G, closed arrowheads).",
+      "Lanceolate endings are circumferential structures that surround the hair follicle and are composed of mechanoreceptive nerve fibers and their associated terminal Schwann cells (Li and Ginty, 2014)."
+    ],
+    "summary": "Immature/non-myelinating Schwann cells in the dermis are S100-positive but MBP-negative and are associated with nerve fibers, hair follicle lanceolate endings, and free nerve endings, occupying defined anatomical niches in the skin.",
+    "categories": [
+      "markers",
+      "location",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:15813271",
+    "source_title": "Boundary Caps Give Rise to Neurogenic Stem Cells and Terminal Glia in the Skin",
+    "source_authors": "Aur\u00e9lie Gresset et al.",
+    "source_year": null,
+    "snippet": "To investigate the distribution and identity of BC derivatives in the trunk skin after birth, we first performed a wholemount immunohistochemistry analysis of Prss56 Cre/+ , R26 tdTom newborn dorsal skin preparations, staining for tdTOM and bIII-tubulin. This revealed a dense network of traced cells exclusively associated with the nerves in the hypodermis and dermis ( Figure 3A). In the subcutaneous nerves, some of the traced cells expressed the myelin marker MBP ( Figure 3B), indicating that they were myelinating Schwann cells.\n\nStaining of transverse sections for bIII-tubulin and PGP9.5, an axonal marker present in terminal endings, confirmed the systematic association of the labeled cells with dermal nerves ( Figures 3C and 3D). In the dermis, these traced cells were positive for the marker P75 NGFR (Figure 3E), which is expressed in NC-derived, embryonic and adult stem cells and in immature and adult, non-myelinating Schwann cells (Jessen et al., 2015). In addition, they expressed the Schwann cell marker S100 ( Figure 3F), but not the myelin marker MBP ( Figure 3B), and were, therefore, immature/non-myelinating Schwann cells. They could be classified into three categories as follows: (1) those associated with dermal nerve fibers ( Figures 3A and 3E, closed arrows), (2) lanceolate endings around hair follicles (Figures 3C, 3D, and 3F, empty arrowheads), and (3) free nerve endings of nociceptive fibers ( Figures 3C, 3D, and 3G, closed arrowheads). Lanceolate endings are circumferential structures that surround the hair follicle and are composed of mechanoreceptive nerve fibers and their associated terminal Schwann cells (Li and Ginty, 2014). Traced cells at the free nerve endings of nociceptive fibers showed an atypical morphology, with the soma localized in the upper part of the dermis, close to the epidermis, while a dense network of cytoplasmic protrusions penetrated the dermis and epidermis and followed the path of nerve"
+  },
+  {
+    "snippet_index": 9,
+    "quotes": [
+      "Analysis of subcutaneous nerves confirmed that the majority of the labeled cells were non-myelinating Schwann cells ( Figure S4D), but also identified a few myelinating Schwann cells ( Figure S4D), as observed in the newborn ( Figure 3B), and endoneurial fibroblasts, characterized by the absence of basal lamina ( Figures S4D and S4E).",
+      "Together, our data indicate that BC cell derivatives in neonatal and adult skin consist mainly of Schwann cells, most of them non-myelinating, and some endoneurial fibroblasts. Among the Schwann cells, some are associated with the dermal nerve fibers and others with nerve terminals, either lanceolate or free endings."
+    ],
+    "summary": "Non-myelinating Schwann cells make up the majority of Schwann cells derived from boundary cap cells in neonatal and adult skin. They are primarily associated with dermal nerve fibers and nerve terminals (lanceolate and free endings).",
+    "categories": [
+      "location",
+      "development",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:15813271",
+    "source_title": "Boundary Caps Give Rise to Neurogenic Stem Cells and Terminal Glia in the Skin",
+    "source_authors": "Aur\u00e9lie Gresset et al.",
+    "source_year": null,
+    "snippet": "at the free nerve endings of nociceptive fibers showed an atypical morphology, with the soma localized in the upper part of the dermis, close to the epidermis, while a dense network of cytoplasmic protrusions penetrated the dermis and epidermis and followed the path of nerve terminals (Figure 3G). These cytoplasmic protrusions are often in close contact with blood vessels in the dermis ( Figure 3H). These cells are likely to correspond to the teloglia, which was once described by Cauna, but not further investigated (Cauna, 1973). Interestingly, while some traced cells associated with the lanceolate endings expressed the progenitor/ stem cell marker nestin, this was not the case for any of those associated with the free nerve endings ( Figure 3I).\n\nIn the adult skin, the distribution and immunohistological signature of traced cells along the neuronal cutaneous network were comparable to that of newborns ( Figures   S4A-S4C). We further characterized adult BC derivatives in the hypodermis using electron microscopy. For this purpose, we used Prss56 Cre/+ ,R26 lacZ animals, where Cre recombination leads to permanent expression of b-galactosidase, which can convert the Bluogal substrate into electrondense precipitates (Maro et al., 2004). Analysis of subcutaneous nerves confirmed that the majority of the labeled cells were non-myelinating Schwann cells ( Figure S4D), but also identified a few myelinating Schwann cells ( Figure S4D), as observed in the newborn ( Figure 3B), and endoneurial fibroblasts, characterized by the absence of basal lamina ( Figures S4D and S4E).\n\nTogether, our data indicate that BC cell derivatives in neonatal and adult skin consist mainly of Schwann cells, most of them non-myelinating, and some endoneurial fibroblasts. Among the Schwann cells, some are associated with the dermal nerve fibers and others with nerve terminals, either lanceolate or free endings. Dermal BC Derivatives Can Be Propagated in Sphere Cultures and Are Multipotent"
+  },
+  {
+    "snippet_index": 10,
+    "quotes": [
+      "as well as nonmyelinating Schwann cells that express p75, glutamate-ammonia ligase (Glul), apolipoprotein D (Apod), SPARC related modular calcium binding 2 (Smoc2), and fatty acid binding protein 7 (Fabp7) (Avraham et al., 2020;Wolbert et al., 2020).",
+      "Nonmyelinating Schwann cells occupy a larger proportion than myelin forming Schwann cells.",
+      "Non-myelinating Schwann cells can be further divided into Remak Schwann cells, terminal Schwann cells at neuromuscular junctions, and Schwann cells in sensory corpuscles (Griffin and Thompson, 2008).",
+      "Remak Schwann cells, although do not form compact myelin sheaths, also ensheath axon lengths.",
+      "Different from myelinating Schwann cells that ensheath axons at a 1:1 ratio, each Remak Schwann cell ensheathes multiple small-caliber axons (Figure 1) (Armati and Mathey, 2013;Harty and Monk, 2017)."
+    ],
+    "summary": "Non-myelinating Schwann cells express markers such as p75, Glul, Apod, Smoc2, and Fabp7. They are more abundant than myelinating Schwann cells and can be divided into Remak Schwann cells, terminal Schwann cells, and those in sensory corpuscles. Remak Schwann cells ensheath multiple small-caliber axons but do not form myelin.",
+    "categories": [
+      "markers",
+      "morphology",
+      "location",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:276014101",
+    "source_title": "Schwann cells in regeneration and cancer",
+    "source_authors": "Lan Zhang et al.",
+    "source_year": null,
+    "snippet": "Postnatally, immature Schwann cells give rise to myelinating Schwann cells that not only express pan-Schwann markers ErbB3 and S100 but also express myelin proteins such as myelin basic protein (Mbp), myelin protein zero (Mpz), and proteolipid protein 1 (Plp1) as well as nonmyelinating Schwann cells that express p75, glutamate-ammonia ligase (Glul), apolipoprotein D (Apod), SPARC related modular calcium binding 2 (Smoc2), and fatty acid binding protein 7 (Fabp7) (Avraham et al., 2020;Wolbert et al., 2020). Myelinating Schwann cells spirally wrap large diameter axons, form compact myelin lamellae around axons, produce mature myelin sheaths, and thus contribute to the rapid conduction of nerve impulses. Nonmyelinating Schwann cells occupy a larger proportion than myelin forming Schwann cells. Non-myelinating Schwann cells can be further divided into Remak Schwann cells, terminal Schwann cells at neuromuscular junctions, and Schwann cells in sensory corpuscles (Griffin and Thompson, 2008). Remak Schwann cells, although do not form compact myelin sheaths, also ensheath axon lengths. Different from myelinating Schwann cells that ensheath axons at a 1:1 ratio, each Remak Schwann cell ensheathes multiple small-caliber axons (Figure 1) (Armati and Mathey, 2013;Harty and Monk, 2017)."
+  },
+  {
+    "snippet_index": 12,
+    "quotes": [
+      "SC-Nonmyel was defined by the expression of SCN7A and L1CAM, markers characteristic of non-myelinating Schwann cells, while SC-Myel was identif ied based on MBP, MPZ, PRX, and GLDN, which are typical markers of myelinating Schwann cells [16][17][18]."
+    ],
+    "summary": "SC-Nonmyel, representing non-myelinating Schwann cells, expresses SCN7A and L1CAM, markers distinguishing them from myelinating Schwann cells.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:281791732",
+    "source_title": "Single cell deciphering of pruritic keloids: the interaction between fibroblasts and Schwann cells through the Midkine signaling",
+    "source_authors": "En Yang et al.",
+    "source_year": null,
+    "snippet": "Schwann cells (SCs) are the predominant supporting cells in the peripheral nervous system and are critical in the process of neural repair [15]. We conducted subtype analysis and reclustered SCs into 5 separate clusters (Figure 3a). SC-Keloid was the predominant Schwann cell subtype, identified by its increased proportion in keloid. Additionally, its marker genes, IGFBP3 and IGFBP5, have been reported as markers of a Schwann cell subset involved in keloid pathogenesis [9]. SC-Nonmyel was defined by the expression of SCN7A and L1CAM, markers characteristic of non-myelinating Schwann cells, while SC-Myel was identif ied based on MBP, MPZ, PRX, and GLDN, which are typical markers of myelinating Schwann cells [16][17][18]. SC-FB was characterized by the expression of DCN and COL1A1, classical fibroblast markers, and SC-Prolif was distinguished by high levels of TOP2A and KI67, indicative of actively proliferating cells (Figure 3b). After analyzing the proportion of SC composition in each sample, we observed a significant increase in the number of SC-Keloid cells in keloids (Figure 3c, Figure S4a, see online supplementary material). In line with previous study, Direder et al. proposed that these are a group of profibrotic Schwann cells, as evidenced by their spindle-shaped morphology and lack of association with an axon. We further investigated the function of SC-Keloid using GO and GSEA analysis. The results showed that neurogenesis and axonogenesis were significantly enriched, suggesting that this cluster is actively involved in the neural repairing process during the formation of keloid (Figure 3d, Figure S4b, see online supplementary material). Immunofluorescence staining revealed a significant reduction in the spatial distance between ASPN + FBs and IGFBP5 + SCs in keloids than normal skin and normal scar (Figure 3e)."
+  },
+  {
+    "snippet_index": 13,
+    "quotes": [
+      "This analysis identified myelinating Schwann cells (SC-Myel), nonmyelinating Schwann cells (SC-Nonmyel), proliferating Schwann cells (SC-Prolif), Schwann cells additionally expressing genes typical for endothelial cells (SC-EC) or fibroblasts (SC-FB) and the previously described repair-like, profibrotic keloidal Schwann cells (SC-Keloid) (Fig. 3a,  b)."
+    ],
+    "summary": "Nonmyelinating Schwann cells (SC-Nonmyel) are identified as a distinct cluster in the analysis of Schwann cell subclusters from skin/scar tissues.",
+    "categories": [
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:247517139",
+    "source_title": "The transcriptional profile of keloidal Schwann cells",
+    "source_authors": "M. Direder et al.",
+    "source_year": null,
+    "snippet": "As the main goals of our study were the in-depth analysis of Schwann cells in the different scar types and their comparability across different single-cell datasets, we next recalculated the combined integrated Schwann cell cluster, removed all melanocytes and performed subclustering (Fig. 3). The different Schwann cell subclusters (Fig. 3a) were identified using well-established Schwann cell markers (Fig. 3b) 17,27 . This analysis identified myelinating Schwann cells (SC-Myel), nonmyelinating Schwann cells (SC-Nonmyel), proliferating Schwann cells (SC-Prolif), Schwann cells additionally expressing genes typical for endothelial cells (SC-EC) or fibroblasts (SC-FB) and the previously described repair-like, profibrotic keloidal Schwann cells (SC-Keloid) (Fig. 3a,  b). We next separated each dataset and detected only a few Schwann cells in normal skin (Fig. 3c). In contrast, the number of Schwann cells was markedly increased in keloids (Fig. 3c). Interestingly, we also found an increased number of Schwann Fig. 2 Cellular composition of skin, normal scars, keloids, and keloid-adjacent skin. a Hematoxylin-eosin staining of skin, normal scar, and keloid. Scale bars: 250 \u00b5m. b UMAP plot after integration of all datasets. Cluster identifications of fibroblasts (FB), smooth muscle cells (SMC), pericytes (PC), keratinocytes (KC), endothelial cells (EC), lymphatic endothelial cells (LEC), T cells (TC), macrophages and dendritic cells (MAC/ DC), Schwann cells and melanocytes (SC/MEL)."
+  },
+  {
+    "snippet_index": 14,
+    "quotes": [
+      "We found that non-myelinating Schwann cells do not ensheathe neuroepithelial bodies; however, they do contact the basal aspect and are probably associated with capsaicin-sensitive, calcitonin generelated peptide and substance P immunoreactive nerve fibers, which contact neuroepithelial bodies at their basal pole only (Brouns et al., 2005).",
+      "This is, to our knowledge, the first characterization of non-myelinating Schwann cells in the lung, including their basic morphology and anatomic distribution as well as immunohistochemical markers and relationships to lung innervation.",
+      "We also identify a GFAP-cre mouse line that can be bred to floxed lines to disrupt genes or pathways of interest in non-myelinating Schwann cells in the lung."
+    ],
+    "summary": "This describes the morphology, distribution, and relationships of non-myelinating Schwann cells in the lung, showing they contact nerve fibers associated with neuroepithelial bodies and can be genetically targeted using a GFAP-cre mouse line.",
+    "categories": [
+      "location",
+      "morphology",
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:7746848",
+    "source_title": "Glial Fibrillary Acidic Protein-Expressing Glia in the Mouse Lung",
+    "source_authors": "G. B. Suarez-Mier et al.",
+    "source_year": null,
+    "snippet": "Our immunostaining is thus consistent with this relationship between non-myelinating Schwann cells and axons. Additionally, sympathetic nerve axons have their cell bodies outside of the lung (Strack et al., 2002); therefore, the nuclei that are found associated with TH \u00fe nerves belong to glia, not nerves. We found that non-myelinating Schwann cells do not ensheathe neuroepithelial bodies; however, they do contact the basal aspect and are probably associated with capsaicin-sensitive, calcitonin generelated peptide and substance P immunoreactive nerve fibers, which contact neuroepithelial bodies at their basal pole only (Brouns et al., 2005). This is, to our knowledge, the first characterization of non-myelinating Schwann cells in the lung, including their basic morphology and anatomic distribution as well as immunohistochemical markers and relationships to lung innervation. We also identify a GFAP-cre mouse line that can be bred to floxed lines to disrupt genes or pathways of interest in non-myelinating Schwann cells in the lung."
+  },
+  {
+    "snippet_index": 16,
+    "quotes": [
+      "Injury of peripheral nerves causes dedifferentiation of both types of mature Schwann cells (myelinating and nonmyelinating) into repair Schwann cells [46][47][48] .",
+      "Our pseudotime trajectory calculations suggest that myelinating and nonmyelinating Schwann cells   of the skin dedifferentiate into profibrotic, repair-like Schwann cells in keloids."
+    ],
+    "summary": "Nonmyelinating Schwann cells, like myelinating ones, can dedifferentiate into repair Schwann cells after injury, including in the context of skin and keloid pathogenesis.",
+    "categories": [
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:247517139",
+    "source_title": "The transcriptional profile of keloidal Schwann cells",
+    "source_authors": "M. Direder et al.",
+    "source_year": null,
+    "snippet": "Whether these Schwann cells convert into other cells, such as fibroblasts, or migrate back to an axon remains to be elucidated. The low numbers of Schwann cells detected in normal human scars suggest that such a mechanism might also be apparent in human wound healing and that the development of keloids might be associated with defects in removing these Schwann cells after wound healing. However, further studies are necessary to fully elucidate the impact of Schwann cells on human wound healing. \n\nThe adjacent skin around keloids has been reported to exhibit features typical of keloids 14 . Strikingly, our bioinformatics analysis also uncovered keloidal profibrotic Schwann cells in one dataset of keloid-adjacent skin. This finding supports our assumption that the persistence of keloidal Schwann cells in the dermis contributes to disease progression. Two scenarios by which these Schwann cells might affect keloid progression appear reasonable. First, keloidal Schwann cells spread into the surrounding healthy skin, generating a milieu that favors the growth of keloids. Second, the continuously growing keloids might affect nerves in the surrounding healthy skin and trigger dedifferentiation of Schwann cells, which in turn further contributes to ECM overproduction, as reported previously 17 . Our transcriptomic data and bioinformatics analyses have built a good basis for further studies addressing these open questions in more sophisticated in vivo studies. \n\nInjury of peripheral nerves causes dedifferentiation of both types of mature Schwann cells (myelinating and nonmyelinating) into repair Schwann cells [46][47][48] . Our pseudotime trajectory calculations suggest that myelinating and nonmyelinating Schwann cells   of the skin dedifferentiate into profibrotic, repair-like Schwann cells in keloids. Interestingly, many of the marker genes specifically expressed by bona fide repair Schwann cells (STAT3, ARTN, BDNF, GDNF, SHH, OLIG1, and IGFBP2) were not or only weakly detected in keloidal Schwann cells."
+  },
+  {
+    "snippet_index": 18,
+    "quotes": [
+      "Schwann cells, especially Schwann cells surrounding peripheral axons, are commonly separated to myelinating and non-myelinating Schwann cells based on their morphological features.",
+      "The application of single-cell sequencing to peripheral nerves now allows the splitting of Schwann cells that express pan markers Erbb3 and S100b to a myelinating sub-type that co-expresses myelin protein genes Mbp, Mpz, Ncmap, and Plp1 as well as a non-myelinating sub-type that expresses Ncam1 and Ngfr/ p75.",
+      "It is demonstrated that non-myelinating Schwann cells exist in a larger number than myelinating Schwann cells (Gerber et al., 2021;Wolbert et al., 2020)."
+    ],
+    "summary": "Non-myelinating Schwann cells can be distinguished by the markers Ncam1 and Ngfr/p75 and are more numerous than myelinating Schwann cells in peripheral nerves.",
+    "categories": [
+      "markers",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:273066472",
+    "source_title": "Single-cell profiling of cellular changes in the somatic peripheral nerves following nerve injury",
+    "source_authors": "Li Zhao et al.",
+    "source_year": null,
+    "snippet": "Peripheral nerve trunks are chiefly composed of fibroblasts, Schwann cells, and immune cells. A collection of 5400 viable cells from mouse brachial plexus and sciatic nerves is annotated to a variety of cell clusters using single-cell transcriptomes, including fibroblasts, Schwann cells, endothelial cells, T cells/natural killer cells, vascular smooth muscle cells, pericytes, macrophages, myeloid lineage cells, and endothelial cells, with Schwann cells and fibroblasts occupy 65% of the cell population (Wolbert et al., 2020). Schwann cells, vascular smooth muscle cells, pericytes, endothelial cells, and immune cells are also captured in another study that analyzes 4000 cells from mouse sciatic nerves. Fibroblasts and fibroblast-like cells or mesenchymal cells are alternatively recognized as Pcolce2 and Ly6c1-expressing epineurial cells, Itgb4 and Slc2a1-expressing perineurial cells, as well as Col2a1 and Sox9expressing endoneurial cells in this study (Gerber et al., 2021). \n\nSchwann cells, especially Schwann cells surrounding peripheral axons, are commonly separated to myelinating and non-myelinating Schwann cells based on their morphological features. Myelinating Schwann cells form myelin sheathes wrapping neuronal axons and facilitate the rapid conduction of action potentials. The functional roles of non-myelinating Schwann cells are relatively less understood. The application of single-cell sequencing to peripheral nerves now allows the splitting of Schwann cells that express pan markers Erbb3 and S100b to a myelinating sub-type that co-expresses myelin protein genes Mbp, Mpz, Ncmap, and Plp1 as well as a non-myelinating sub-type that expresses Ncam1 and Ngfr/ p75. It is demonstrated that non-myelinating Schwann cells exist in a larger number than myelinating Schwann cells (Gerber et al., 2021;Wolbert et al., 2020)."
+  },
+  {
+    "snippet_index": 19,
+    "quotes": [
+      "Schwann cells (mainly non-myelinating) associated with subcutaneous and dermal nerves, and two types of terminal Schwann cells, associated with lanceolate endings or free nerve endings.",
+      "In the dermis, the glial P75 NGFR -positive BC derivatives also include a neurogenic and gliogenic stem-like cell population."
+    ],
+    "summary": "Non-myelinating Schwann cells are mainly associated with subcutaneous and dermal nerves. P75 NGFR-positive populations in the dermis include neurogenic/gliogenic stem-like Schwann cell derivatives.",
+    "categories": [
+      "location",
+      "markers",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:15813271",
+    "source_title": "Boundary Caps Give Rise to Neurogenic Stem Cells and Terminal Glia in the Skin",
+    "source_authors": "Aur\u00e9lie Gresset et al.",
+    "source_year": null,
+    "snippet": "populations as follows: Schwann cells (mainly non-myelinating) associated with subcutaneous and dermal nerves, and two types of terminal Schwann cells, associated with lanceolate endings or free nerve endings. Lanceolate endings are specialized sensory organs that detect hair movement (Abraira and Ginty, 2013). They form a palisade structure surrounding the hair follicle and are composed of terminal fibers carrying rapidly adapting low-threshold mechanoreceptors (Ab, Ad, and C) (Abraira and Ginty, 2013). The terminal Schwann cells are involved in the maintenance of the lanceolate complex (Li and Ginty, 2014) and could play a role in calcium signaling (Takahashi-Iwanaga et al., 2008).\n\nFree nerve endings are non-specialized cutaneous sensory receptors that are involved in the perception of touch, pressure, and pain (Abraira and Ginty, 2013). In contrast to their name, free nerve endings also are associated with terminal Schwann cells. Terminal Schwann cells have been studied only by electron microscopy and present a very peculiar morphology, with numerous cytoplasmic protrusions covering the axons at the dermis/epidermis boundary (Cauna, 1973). We provide here a genetic marker that enables optical observations of these cells. Their morphology resembles that of perisynaptic Schwann cells (PSCs), which cap motor nerve terminals at the neuromuscular junction (Balice-Gordon, 1996). PSCs are involved in sensing and modulating synaptic transmission through the specific expression of neurotransmitter receptors and ion channels on their surface (Auld and Robitaille, 2003). Given their similarity with PSCs in terms of terminal location and morphology, we speculate that Schwann cells associated with free nerve endings might play a direct role in depolarizing axon membranes. The Prss56 Cre line allows easy identification of these atypical Schwann cells and should facilitate their detailed characterization.\n\nIn the dermis, the glial P75 NGFR -positive BC derivatives also include a neurogenic and gliogenic stem-like cell population. Multipotent stem-like cell populations have been described previously in the adult trunk skin,"
+  },
+  {
+    "snippet_index": 21,
+    "quotes": [
+      "Within a peripheral nerve, there are both myelinated and nonmyelinated nerve fibers. Both types of fibers are supported by Schwann cells, representing the most abundant glial cells of the PNS [12]. Schwann cells exist in two different cell types: Remak cells, or non-myelin Schwann cells, and myelin Schwann cells.",
+      "Remak cells envelop all the small-diameter axons, including axons of the autonomic nervous system. These cells promote the correct development of the PNS and exert regeneration activity after an injury by promoting axonal plasticity, growth, and sprouting [13].",
+      "Although both Remak cells and myelin Schwann cells ensure axons with metabolic and trophic support, only myelin Schwann cells play a central role to accelerate nerve impulse conduction."
+    ],
+    "summary": "Non-myelinating Schwann cells (Remak cells) support small-diameter axons (including autonomic) in the PNS, contribute to axonal maintenance and regeneration, and provide metabolic and trophic support, though they do not accelerate conduction like myelinating Schwann cells.",
+    "categories": [
+      "location",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:240248275",
+    "source_title": "The role of exercise on peripheral nerve regeneration: from animal model to clinical application",
+    "source_authors": "Grazia Maugeri et al.",
+    "source_year": null,
+    "snippet": "The epineurium, consisting of dense connective tissue, represents the outermost layer that encloses the whole nerve. \n\nthe surface of the epineurium is nourished by a thin vascular plexus known as the vasa nervorum [11]. Within a peripheral nerve, there are both myelinated and nonmyelinated nerve fibers. Both types of fibers are supported by Schwann cells, representing the most abundant glial cells of the PNS [12]. Schwann cells exist in two different cell types: Remak cells, or non-myelin Schwann cells, and myelin Schwann cells. Remak cells envelop all the small-diameter axons, including axons of the autonomic nervous system. These cells promote the correct development of the PNS and exert regeneration activity after an injury by promoting axonal plasticity, growth, and sprouting [13]. Myelinating Schwann cells are 2-3 times longer than Remak cells and much bulkier. They are radially and longitudinally polarized cells wrapping several times around the axon to form a compact myelin cuff around it, by delimiting nodal, paranodal, juxtaparanodal, and internodal compartments [9]. Although both Remak cells and myelin Schwann cells ensure axons with metabolic and trophic support, only myelin Schwann cells play a central role to accelerate nerve impulse conduction. In a demyelinated nerve fiber, the electrical impulse moves continuously in wave motions, whereas, in the myelinated fibers, the conduction is done through a saltatory propagation. The myelin avoids the electric current from leaving the axon, by depleting the capacitance and increasing the electric resistance along the cell membrane. In this way, the action potential travels rapidly along the myelinated axon, jumping between the nodes of Ranvier. \n\nThe conduction velocity is related not only to myelin sheath thickness but also to axonal diameter. In fact, non-myelinated axons less than 1 \u03bcm"
+  },
+  {
+    "snippet_index": 22,
+    "quotes": [
+      "Following the resolution of nerve damage, repair Schwann cells re-differentiate into mature myelinating and non-myelinating Schwann cells. During this re-differentiation process, prior mature myelinating Schwann cells can assume a mature non-myelinating phenotype and vice versa [105,106]. Notably, they might even re-differentiate into non-glial cells, including melanocytes [64], dental pulp mesenchymal stem cells [72], or enteric neurons [107]."
+    ],
+    "summary": "After nerve injury, Schwann cells can differentiate into either myelinating or non-myelinating forms, and there is plasticity allowing switching between these states, as well as potential to become other cell types.",
+    "categories": [
+      "development",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:253934919",
+    "source_title": "Development and In Vitro Differentiation of Schwann Cells",
+    "source_authors": "Sarah Janice H\u00f6rner et al.",
+    "source_year": null,
+    "snippet": "Predominantly as a reaction to nerve injury, mature Schwann cells of all subtypes can re-enter the cell cycle, de-differentiate, and assume what is called the repair phenotype. This is distinct from other mature, as well as developmental, Schwann cell phenotypes [12,103]. Repair Schwann cells are crucial for nerve repair and account for the outstanding regeneration ability of the PNS [11,104]. Following the resolution of nerve damage, repair Schwann cells re-differentiate into mature myelinating and non-myelinating Schwann cells. During this re-differentiation process, prior mature myelinating Schwann cells can assume a mature non-myelinating phenotype and vice versa [105,106]. Notably, they might even re-differentiate into non-glial cells, including melanocytes [64], dental pulp mesenchymal stem cells [72], or enteric neurons [107]. This remarkable plasticity of developing and mature descendants of the Schwann cell lineage is controlled by transcription factor networks and chromatin remodeling [108][109][110] and makes Schwann cells exceptionally interesting for in vitro modeling studies on nerve injury, disease, and regeneration. However, their extensive developmental multipotency and adult plasticity also add to the challenges in deriving, characterizing, and maintaining Schwann cells in vitro."
+  },
+  {
+    "snippet_index": 23,
+    "quotes": [
+      "NM-SC_1 and 2, Non-myelinated Schwann cells 1 and 2"
+    ],
+    "summary": "The snippet references two subclusters of non-myelinated Schwann cells (NM-SC_1 and 2) identified in spatial transcriptomic analysis within the context of peripheral nerve disease.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:263151481",
+    "source_title": "Integration of single-nuclei RNA-sequencing, spatial transcriptomics and histochemistry defines the complex microenvironment of NF1-associated plexiform neurofibromas",
+    "source_authors": "V. Amani et al.",
+    "source_year": null,
+    "snippet": "ST spot clusters were visualized at different resolutions using Clustree analysis.Abbreviations: Endo_fibr, Endoneurial fibroblasts; Epi_ fibr, Epineurial fibroblasts; HB, Hemoglobin; LEC, Lymphatic endothelial cells; Mye_Sc, Myelinated Schwann cells; NM-SC_1 and 2, Non-myelinated Schwann cells 1 and 2; Peri_fibr, Perineurial fibroblast; Prolif_1 and 2, Proliferative 1 and 2; SC, Schwann cell; Vasc_endo_1 and 2; Vascular endothelial 1 and 2 finding suggests that Schwann cells are present outside of the nerve fascicle in the PN disease setting."
+  },
+  {
+    "snippet_index": 24,
+    "quotes": [
+      "Distribution of non-myelinating Schwann cells and their associations with leukocytes in mouse spleen revealed by immunofluorescence staining"
+    ],
+    "summary": "Non-myelinating Schwann cells are present in the mouse spleen and may interact with leukocytes, as revealed by immunofluorescence staining.",
+    "categories": [
+      "location",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:49404448",
+    "source_title": "Distribution of non-myelinating Schwann cells and their associations with leukocytes in mouse spleen revealed by immunofluorescence staining",
+    "source_authors": "Bin Ma et al.",
+    "source_year": null,
+    "snippet": "Distribution of non-myelinating Schwann cells and their associations with leukocytes in mouse spleen revealed by immunofluorescence staining"
+  },
+  {
+    "snippet_index": 25,
+    "quotes": [
+      "Non-myelinating Schwann cells include Remak Schwann cells and terminal Schwann cells, and these cells clearly play critical roles in the PNS even though they are less characterized as compared to their myelinating counterparts."
+    ],
+    "summary": "Non-myelinating Schwann cells comprise Remak and terminal Schwann cells, and are recognized as crucial for peripheral nervous system function, despite being less understood than myelinating Schwann cells.",
+    "categories": [
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:275309159",
+    "source_title": "Schwann Cells in Neuromuscular Disorders: A Spotlight on Amyotrophic Lateral Sclerosis",
+    "source_authors": "Kathryn R. Moss et al.",
+    "source_year": null,
+    "snippet": "Non-myelinating Schwann cells include Remak Schwann cells and terminal Schwann cells, and these cells clearly play critical roles in the PNS even though they are less characterized as compared to their myelinating counterparts."
+  },
+  {
+    "snippet_index": 26,
+    "quotes": [
+      "non-myelinating Schwann cells (NMSCs) represent an important category that was not extensively studied, although the gathered data demonstrate they are essential for axon maintenance and neuronal survival in the peripheral nervous system (PNS).",
+      "The NMSCs encompass two major cell types, according to their distribution: Schwann cells of Remak fibers and the specialized perisynaptic/terminal Schwann cells at neuromuscular junctions (NMJ). In addition in this category are also included the glial cells found in some sensory transducers, such as the Pacinian and Meissner's corpuscles, as well as in the sensory and autonomic ganglia, where they are called satellite cells [1].",
+      "In pathological circumstances like axonal loss or demyelination, the former myelinating Schwann cells also become a class of NMSCs. Conversely, all NMSCs retain the potential to myelinate [2], if they receive the appropriate cues, most of which derive from the associated axons, along with some fate-controlling genes that act cell-autonomously within SCs [3,4]."
+    ],
+    "summary": "Non-myelinating Schwann cells are essential for axon maintenance and neuronal survival in the PNS. They include Remak and terminal Schwann cells and have distribution in sensory transducers and ganglia. These cells can become myelinating in response to environmental cues, and former myelinating Schwann cells can become non-myelinating under pathological conditions.",
+    "categories": [
+      "function",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:216489909",
+    "source_title": "Non-Myelinating Schwann Cells in Health and Disease",
+    "source_authors": "O. Ioghen et al.",
+    "source_year": null,
+    "snippet": "Among the Schwann cells (SCs), non-myelinating Schwann cells (NMSCs) represent an important category that was not extensively studied, although the gathered data demonstrate they are essential for axon maintenance and neuronal survival in the peripheral nervous system (PNS). Extending the knowledge on NMSCs biology could open new perspectives on the normal functioning of PNS as well as for better understanding the mechanisms underlying various pathological conditions and further on for developing new therapeutic approaches in peripheral nerve diseases. \n\nThe NMSCs encompass two major cell types, according to their distribution: Schwann cells of Remak fibers and the specialized perisynaptic/terminal Schwann cells at neuromuscular junctions (NMJ). In addition in this category are also included the glial cells found in some sensory transducers, such as the Pacinian and Meissner's corpuscles, as well as in the sensory and autonomic ganglia, where they are called satellite cells [1]. In pathological circumstances like axonal loss or demyelination, the former myelinating Schwann cells also become a class of NMSCs. Conversely, all NMSCs retain the potential to myelinate [2], if they receive the appropriate cues, most of which derive from the associated axons, along with some fate-controlling genes that act cell-autonomously within SCs [3,4]."
+  }
+]

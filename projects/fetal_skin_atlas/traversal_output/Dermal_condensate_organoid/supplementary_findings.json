@@ -1,0 +1,53 @@
+{
+  "markers": [
+    {
+      "gene": "FOXD1",
+      "evidence_type": "Dc marker",
+      "source_table": "Main text"
+    },
+    {
+      "gene": "SOX2",
+      "evidence_type": "Dc marker",
+      "source_table": "Main text"
+    },
+    {
+      "gene": "FAM3C",
+      "evidence_type": "DE analysis",
+      "source_table": "Fig. 2g, Supplementary Table 8"
+    },
+    {
+      "gene": "EFNB1",
+      "evidence_type": "DE analysis",
+      "source_table": "Fig. 2g, Supplementary Table 8"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Dc formation accompanied by invagination of the placode",
+      "category": "development",
+      "source_table": "Main text"
+    },
+    {
+      "finding": "Dc expressed FAM3C and EFNB1, predicted to interact with placode cells",
+      "category": "function",
+      "source_table": "Fig. 2g, Supplementary Table 8"
+    },
+    {
+      "finding": "Dc-placode interactions conserved between prenatal skin and SkO",
+      "category": "development",
+      "source_table": "Fig. 2g, Extended Data Fig. 5c"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode",
+      "source_file": "Gopee et al. 2024",
+      "context": "Dc-placode interactions"
+    },
+    {
+      "quote": "the highlighted interactions were conserved between the mesenchymal and epithelial cells of the SkO model for corresponding stages during HF formation",
+      "source_file": "Gopee et al. 2024",
+      "context": "SkO conservation"
+    }
+  ]
+}

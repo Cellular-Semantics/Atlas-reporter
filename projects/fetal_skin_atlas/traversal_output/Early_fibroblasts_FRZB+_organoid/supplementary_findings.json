@@ -1,0 +1,33 @@
+{
+  "markers": [
+    {
+      "gene": "FRZB",
+      "evidence_type": "defining marker",
+      "source_table": "Main text, Extended Data Fig. 4e"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Rare in prenatal skin but present in several developing organs",
+      "category": "development",
+      "source_table": "Extended Data Fig. 4e"
+    },
+    {
+      "finding": "Excluded from fibroblast trajectory analysis due to being primarily from one 7 PCW sample",
+      "category": "development",
+      "source_table": "Main text"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "We excluded FRZB + fibroblasts, which were primarily observed in one sample from the earliest gestation stage (7 PCW)",
+      "source_file": "Gopee et al. 2024",
+      "context": "FRZB+ fibroblast rarity"
+    },
+    {
+      "quote": "Although rare in prenatal skin, FRZB-expressing fibroblasts were present in several other developing organs",
+      "source_file": "Gopee et al. 2024",
+      "context": "FRZB expression across organs"
+    }
+  ]
+}

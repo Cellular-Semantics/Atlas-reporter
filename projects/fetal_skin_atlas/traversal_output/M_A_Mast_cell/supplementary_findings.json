@@ -1,0 +1,38 @@
+{
+  "markers": [
+    {
+      "gene": "CPA3",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "TPSAB1",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "TPSB2",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table S3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Mast cells were primarily localized in the submucosal regions of the adult gut and showed limited abundance in other regions.",
+      "category": "spatial location",
+      "source_table": "Supplementary Table S5"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Cluster M_A_Mast_cell was annotated as Mast cells based on high expression of CPA3, TPSAB1, and TPSB2 (Supplementary Table S3).",
+      "source_file": "Supplementary Table S3",
+      "context": "Cluster annotation and marker gene identification"
+    },
+    {
+      "quote": "Mast cells were primarily localized in the submucosal regions of the adult gut and showed limited abundance in other regions.",
+      "source_file": "Supplementary Table S5",
+      "context": "Spatial distribution summary"
+    }
+  ]
+}

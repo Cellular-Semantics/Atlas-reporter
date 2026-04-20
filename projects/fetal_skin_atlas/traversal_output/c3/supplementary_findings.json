@@ -1,0 +1,38 @@
+{
+  "markers": [
+    {
+      "gene": "CD52",
+      "evidence_type": "DE analysis (cluster markers)",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "VSIG4",
+      "evidence_type": "DE analysis (cluster markers)",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Cluster c3 is annotated as 'Macrophages (VSIG4 high)'",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table 2"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "The top marker genes for each cluster are listed in Supplementary Table 3.",
+      "source_file": "Supplementary Table 3",
+      "context": "Introduction/legend to Supplementary Table 3"
+    },
+    {
+      "quote": "Cluster c3: CD52, VSIG4",
+      "source_file": "Supplementary Table 3",
+      "context": "DE marker gene lists per cluster"
+    },
+    {
+      "quote": "c3\tMacrophages (VSIG4 high)",
+      "source_file": "Supplementary Table 2",
+      "context": "Cluster annotation table"
+    }
+  ]
+}

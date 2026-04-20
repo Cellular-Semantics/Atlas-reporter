@@ -1,0 +1,40 @@
+{
+  "cell_type_label": "LYVE1++ macrophage",
+  "working_definition": "A tissue-resident macrophage that is part of the skin dermis, characterized by high expression of LYVE1, SPP1, and F13A1. This macrophage localizes near blood vessels in a perivascular niche and expresses gene programs that drive sprouting angiogenesis and blood vessel morphogenesis. It supports dermal fibroblast maintenance through IGF1-IGF1R and GRN-EGFR signaling and contributes to immunosuppression and tissue repair via GAS6-AXL interactions with fibroblasts. In prenatal human skin, this cell is enriched in early gestation and co-localizes with endothelial cells in neurovascular microenvironments.",
+  "searches_performed": [
+    "LYVE1 macrophage (CL, mcp__ols4__searchClasses, pageSize=10) -> no LYVE1-specific macrophage term found; top hits: CL:0020017 M0 macrophage, CL:1001603 lung macrophage, CL:0000890 M2 macrophage",
+    "tissue-resident macrophage (CL, mcp__ols4__searchClasses, pageSize=10) -> CL:0000864 tissue-resident macrophage (broad parent), CL:0000866 thymic macrophage, CL:0000884 mucosa-associated lymphoid tissue macrophage",
+    "perivascular macrophage (CL, mcp__ols4__searchClasses, pageSize=10) -> CL:0000881 perivascular macrophage (CNS-restricted), CL:4042003 border associated macrophage (CNS), CL:0000878 central nervous system macrophage"
+  ],
+  "best_match": {
+    "cl_term": "tissue-resident macrophage",
+    "cl_id": "CL:0000864",
+    "cl_definition": "A macrophage constitutively resident in a particular tissue under non-inflammatory conditions, and capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "No CL term exists for LYVE1+ (or LYVE1 hi) interstitial macrophage. The closest existing term is 'tissue-resident macrophage' (CL:0000864), which is a broad parent capturing the tissue-resident nature but not the LYVE1 hi perivascular identity or pro-angiogenic specialization. The CL 'perivascular macrophage' (CL:0000881) is explicitly restricted to the CNS ('adjacent to a small blood vessel of a brain') and does not apply to skin. The 'border associated macrophage' (CL:4042003) is also CNS-specific. The Lyve1 hi MHCII lo interstitial macrophage subset described by Chakarov et al. (2019, Science) is a well-characterized, conserved population found across lung, heart, fat, and dermis that localizes near blood vessels, but it has no dedicated CL term.",
+  "other_candidates": [
+    {
+      "cl_term": "perivascular macrophage",
+      "cl_id": "CL:0000881",
+      "cl_definition": "A border associated macrophage that is adjacent to a small blood vessel of a brain. A perivascular macrophage expresses the markers CD14, CD16 and CD163. In homeostatic conditions, this central nervous system macrophage has a non-motile cell body with extending and retracting projections through the blood vessel wall.",
+      "reason_rejected": "CL definition restricts this to CNS brain vasculature. LYVE1++ macrophages in prenatal skin are perivascular but not CNS-resident."
+    },
+    {
+      "cl_term": "border associated macrophage",
+      "cl_id": "CL:4042003",
+      "cl_definition": "A central nervous system macrophage that is part of a choroid plexus, a meninx and a perivascular space. A border associated macrophage interacts with various components of the CNS vasculature and meninges, it participates in immune surveillance and in the regulation of the blood brain barrier.",
+      "reason_rejected": "Defined as a CNS macrophage of choroid plexus, meninx, and perivascular space. Not applicable to skin macrophages."
+    },
+    {
+      "cl_term": "macrophage",
+      "cl_id": "CL:0000235",
+      "cl_definition": "A mononuclear phagocyte present in variety of tissues, typically differentiated from monocytes, capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+      "reason_rejected": "Too broad; provides no specificity about the LYVE1 hi perivascular identity or tissue-resident nature."
+    }
+  ],
+  "recommendation": "Use CL:0000864 (tissue-resident macrophage) as the broadest applicable match. A new CL term is needed for the LYVE1 hi MHCII lo perivascular interstitial macrophage subset, which is conserved across multiple tissues (dermis, lung, heart, fat) and has a distinct pro-angiogenic, anti-fibrotic functional profile.",
+  "new_term_needed": true
+}

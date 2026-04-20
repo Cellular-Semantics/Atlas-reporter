@@ -1,0 +1,11 @@
+{
+  "label": "Companion layer",
+  "resolved_names": [
+    "Companion layer",
+    "CL"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Companion layer (CL) cells identified in SkO along the ORS/CL trajectory (Fig. 2d, Extended Data Fig. 4a)."
+}

@@ -1,0 +1,12 @@
+{
+  "label": "LE",
+  "resolved_names": [
+    "LE",
+    "lymphatic endothelium",
+    "lymphatic endothelial cells"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) identifies 'LE' as a fine-grained endothelial cell annotation under the broad 'Lymphatic endothelium' category in prenatal skin (Supplementary Table 3). The abbreviation LE is defined as 'lymphatic endothelium' in Fig. 1 legend. LE represents the mature lymphatic endothelial cell state in fetal skin, distinct from the earlier 'Early LE' population."
+}

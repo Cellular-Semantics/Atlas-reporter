@@ -1,0 +1,12 @@
+{
+  "label": "Capillary arterioles",
+  "resolved_names": [
+    "Capillary arterioles",
+    "capillary arteriole endothelial cells",
+    "post-arterial capillary endothelial cells"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) identifies 'Capillary arterioles' as a fine-grained endothelial cell annotation in prenatal skin and also in SkO. These cells represent a transitional state between capillaries and arterioles on the arteriolar differentiation pathway. In prenatal skin, capillary arteriole cells can further differentiate into arterioles, unlike SkO capillary arteriole cells (Fig. 4d, Extended Data Fig. 10a). VEGF receptors KDR and FLT1 and GATA2 regulon activity are higher in prenatal skin capillary arterioles vs SkO."
+}

@@ -1,0 +1,39 @@
+{
+  "cell_type_label": "Early fibroblasts HOXC5+",
+  "working_definition": "A multipotent early dermal progenitor fibroblast located in the upper dermis of prenatal skin and hair-bearing skin organoid (SkO), abundant before 11 PCW, defined by expression of the HOX transcription factor HOXC5. Gives rise to both a hair fibroblast trajectory (pre-dermal condensate, dermal condensate, dermal papilla) and a dermal fibroblast trajectory (WNT2+ and PEAR1+ fibroblasts).",
+  "searches_performed": [
+    "fibroblast",
+    "dermal fibroblast skin"
+  ],
+  "best_match": {
+    "cl_term": "fibroblast of dermis",
+    "cl_id": "CL:0002551",
+    "cl_definition": "Any skin fibroblast that is part of some dermis.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0002551 (fibroblast of dermis) is the closest available CL term for this upper-dermal progenitor population. No CL term exists for an early or HOXC5-expressing progenitor fibroblast. CL:0020011 (hair follicle associated fibroblast) covers only one of the two trajectories produced by this progenitor; the broad dermal fibroblast term better represents the undifferentiated progenitor state.",
+  "other_candidates": [
+    {
+      "cl_term": "fibroblast",
+      "cl_id": "CL:0000057",
+      "cl_definition": "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules.",
+      "reason_rejected": "Too general; no skin or dermis specificity."
+    },
+    {
+      "cl_term": "skin fibroblast",
+      "cl_id": "CL:0002620",
+      "cl_definition": "A fibroblast of skin.",
+      "reason_rejected": "Less specific than fibroblast of dermis; CL:0002551 is a direct child and better captures the dermal location."
+    },
+    {
+      "cl_term": "hair follicle associated fibroblast",
+      "cl_id": "CL:0020011",
+      "cl_definition": "A specialized dermal fibroblast within the hair follicle mesenchymal compartment that participates in epithelial-mesenchymal signaling to regulate hair morphogenesis, cycling, and homeostasis through production of inductive signals and extracellular matrix maintenance.",
+      "reason_rejected": "Captures only the hair follicle lineage; HOXC5+ cells are an upstream progenitor that also produces non-hair-associated (WNT2+, PEAR1+) dermal fibroblasts."
+    }
+  ],
+  "recommendation": "Use CL:0002551 (fibroblast of dermis) as a broad match. A new CL term for an early multipotent upper-dermal progenitor fibroblast (HOXC5+) would be biologically justified given its distinct progenitor identity and dual trajectory output, but should await further cross-dataset validation.",
+  "new_term_needed": true
+}

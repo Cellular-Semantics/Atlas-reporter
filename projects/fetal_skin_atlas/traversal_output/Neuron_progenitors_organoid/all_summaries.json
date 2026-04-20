@@ -1,0 +1,6 @@
+{
+  "cell_type": "Neuron Progenitor (Organoid)",
+  "scope": "organoid",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "summary": "Cell type 'Neuron progenitors' identified in the hair-bearing skin organoid (SkO) model by Gopee et al. (2024). The SkO model, derived from human ES/iPS cells (Lee et al., 2020), recapitulates prenatal skin cell types including Neuron progenitors."
+}

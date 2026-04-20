@@ -1,0 +1,70 @@
+{
+  "cell_type": "MHCII+ macrophage",
+  "summaries": [
+    {
+      "source": "gopee_2024",
+      "doi": "10.1038/s41586-024-08002-x",
+      "key_findings": [
+        "MHCII+ macrophage is one of four macrophage subsets (LYVE1+, MHCII+, TML, iron-recycling) identified in prenatal human skin (7-17 PCW)",
+        "Macrophage subsets were annotated using marker genes from Suo et al. (2022)",
+        "MHCII+ macrophages express CLEC7A, HLA-DPA1, HLA-DRA, as well as F13A1, CD163, SPP1",
+        "Lack Langerhans cell markers CD207 and CD1A",
+        "All four macrophage subsets expressed gene programs driving angiogenesis",
+        "Macrophages co-located with endothelial cells in neurovascular microenvironments ME1 and ME5",
+        "Predicted ligand-receptor interactions support reciprocal communication between macrophages and endothelial cells (e.g., CXCL8-ACKR1, CCL8-ACKR1)",
+        "Prenatal skin macrophages resembled 'early macrophages' enriched in reindeer antler skin (scarless healing model)"
+      ]
+    },
+    {
+      "source": "suo_2022",
+      "doi": "10.1126/science.abo0510",
+      "key_findings": [
+        "Identified MHC class II hi macrophages as one of eight broad macrophage groupings across prenatal organs",
+        "MHCII hi macrophage populations enriched in later stages of gestation",
+        "These subpopulations upregulated genes encoding immune effector functions",
+        "Acquisition of macrophage antigen-presentation properties (MHCII upregulation) occurred between 10-12 PCW, coinciding with adaptive lymphocyte expansion and lymph node development",
+        "Prior to this, macrophages and mast cells expressed proangiogenic and tissue morphogenesis signatures"
+      ]
+    },
+    {
+      "source": "chakarov_2019",
+      "doi": "10.1126/science.aax0519",
+      "key_findings": [
+        "Identified two distinct interstitial macrophage populations across tissues: LYVE1hi MHCIIlo (perivascular) and MHCIIhi LYVE1lo (nerve-associated)",
+        "MHCIIhi macrophages localized to nerves in multiple tissues including dermis",
+        "LYVE1hi macrophages associated with blood vessels",
+        "These populations occupy distinct subtissular niches with different functional profiles"
+      ]
+    },
+    {
+      "source": "dick_2022",
+      "doi": "10.1126/science.abf7777",
+      "key_findings": [
+        "Defined three conserved tissue-resident macrophage subsets across organs: TLF+ (TIM4/LYVE1/FOLR2), CCR2+, and MHCIIhi (CCR2-)",
+        "MHCIIhi population notable for lack of CCR2 expression",
+        "Different ontogenies for the three subsets: TLF+ are embryo-derived and self-renewing; MHCIIhi receive moderate contribution from adult monocytes",
+        "These subsets are conserved across heart, liver, lung, kidney, brain, and adipose tissue"
+      ]
+    },
+    {
+      "source": "guillaume_2023",
+      "doi": "10.1038/s41598-023-27953-x",
+      "key_findings": [
+        "MHCII expression on macrophages is differentially controlled by tissue of residence, ontogeny, and microbiota",
+        "Monocyte-derived macrophages are uniformly MHCIIhi regardless of tissue or microbial status",
+        "MHCII expression on prenatally-derived Tim4+ macrophages increases at weaning",
+        "Macrophage MHCII provides signals regulating gut CD4+ T cell maintenance"
+      ]
+    },
+    {
+      "source": "west_2022",
+      "doi": "10.1016/j.celrep.2022.111552",
+      "key_findings": [
+        "In skin, MHCII high macrophages are constitutively maintained by circulating Ly6C+ monocytes",
+        "MHCII high macrophages are primed for pro-inflammatory responses",
+        "Transition to MHC intermediate macrophages is associated with resolution of disease, tissue repair, and homeostasis",
+        "Failed restoration of the MHCII intermediate macrophage compartment is linked to loss of T cell tolerance in skin"
+      ]
+    }
+  ]
+}

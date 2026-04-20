@@ -1,0 +1,20 @@
+{
+  "cell_type": "moDC_3",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "source_doi": "10.1126/science.aba6500",
+  "annotation": "moDC_3 (monocyte-derived dendritic cell subtype 3)",
+  "findings": [
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "moDC3 is at the convergence of the LC, myeloid DC, and mo-DC PAGA branches. It expresses transcripts associated with DC maturation (CD83, CCR7, LAMP3, CD40, CD86), immunoregulation (CD274, IDO1, CD200, PDCD1LG2, SOCS1) and migration (FSCN1, PLGRKT, TRAF1, BCL2A1, CFLAR and REL)"
+    },
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "Acquisition of this common gene signature is associated with loss of genes conferring subset identity, observed in moDC3, LC4 and Mig. DC"
+    },
+    {
+      "source": "Reynolds et al. (2021), main text",
+      "detail": "The migratory DC signature in moDC3 is conserved in migratory murine dermal DC2 and splenic DC1"
+    }
+  ]
+}

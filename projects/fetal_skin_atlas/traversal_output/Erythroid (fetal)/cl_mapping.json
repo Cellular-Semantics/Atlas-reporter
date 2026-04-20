@@ -1,0 +1,9 @@
+{
+  "cell_type_label": "Erythroid (fetal)",
+  "cl_term": "erythroblast",
+  "cl_id": "CL:0000765",
+  "cl_iri": "http://purl.obolibrary.org/obo/CL_0000765",
+  "match_type": "broad",
+  "match_reason": "CL has no fetal-specific erythroblast. CL:0000765 (erythroblast) is the closest broad match. These express fetal hemoglobin (HbF).",
+  "new_term_needed": false
+}

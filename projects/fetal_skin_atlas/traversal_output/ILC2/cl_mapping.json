@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "ILC2",
+  "working_definition": "A group 2 innate lymphoid cell present in prenatal human skin from early gestation, characterized by expression of the transcription factor GATA3 and markers IL1RL1, IL7R, and TNFRSF18. These cells are tissue-resident innate lymphocytes capable of producing type 2 cytokines (IL-5, IL-13) in response to epithelial alarmins such as IL-33 and TSLP, contributing to tissue homeostasis, repair, and immune regulation in developing skin.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'group 2 innate lymphoid cell' in CL ontology",
+    "snippet_search: 'ILC2 innate lymphoid cell type 2 prenatal skin' scoped to atlas DOI:10.1038/s41586-024-08002-x",
+    "snippet_search: 'ILC2 group 2 innate lymphoid cell fetal prenatal skin GATA3 development' broad search"
+  ],
+  "best_match": {
+    "cl_term": "group 2 innate lymphoid cell",
+    "cl_id": "CL:0001069",
+    "cl_definition": "An innate lymphoid cell that is capable of producing T-helper 2-cell associated cytokines upon stimulation.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The ILC2 population identified in the prenatal skin atlas (annotated as ILC2_3) expresses canonical ILC2 markers GATA3, IL1RL1, IL7R, and TNFRSF18, which are defining features of group 2 innate lymphoid cells. The CL:0001069 definition describes an innate lymphoid cell capable of producing Th2-associated cytokines, which matches the atlas annotation and literature characterization of these cells. The prenatal developmental context does not alter the fundamental cell type identity.",
+  "other_candidates": [],
+  "recommendation": "Map to CL:0001069 (group 2 innate lymphoid cell). No new CL term is needed.",
+  "new_term_needed": false
+}

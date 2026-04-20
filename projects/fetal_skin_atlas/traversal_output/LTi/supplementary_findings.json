@@ -1,0 +1,27 @@
+{
+  "markers": [],
+  "other_findings": [
+    {
+      "finding": "Visium spatial deconvolution showed correlation between pre-dermal condensate and LTi/ILC3 cell type abundances across skin-covered spots",
+      "category": "location",
+      "source_table": "Supplementary Data (Extended Data Fig. 1e,f)"
+    },
+    {
+      "finding": "LTi and ILC3 cells were predicted to interact with pre-Dc cells through CXCL12-CXCR4 and CXCL12-DPP4 ligand-receptor pairs",
+      "category": "interaction",
+      "source_table": "Supplementary Table 8"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses",
+      "source_file": "atlas main text",
+      "context": "Gopee et al. 2024, Single-cell atlas section"
+    },
+    {
+      "quote": "Notably, lymphoid tissue inducer and ILC3 cells were also predicted to co-locate and interact with pre-Dc cells through ligand-receptor signals implicated in the regulation of cellular adhesion and migration (CXCL12-CXCR4 and CXCL12-DPP4)",
+      "source_file": "atlas main text",
+      "context": "Gopee et al. 2024, HF mesenchymal differentiation section"
+    }
+  ]
+}

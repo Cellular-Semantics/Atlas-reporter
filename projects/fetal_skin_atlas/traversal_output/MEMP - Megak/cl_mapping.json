@@ -1,0 +1,9 @@
+{
+  "cell_type_label": "MEMP - Megak",
+  "cl_term": "megakaryocyte-erythroid progenitor cell",
+  "cl_id": "CL:0000050",
+  "cl_iri": "http://purl.obolibrary.org/obo/CL_0000050",
+  "match_type": "broad",
+  "match_reason": "MEMP includes mast cell potential not captured by CL MEP. This is a megakaryocyte-biased substate not represented in CL.",
+  "new_term_needed": false
+}

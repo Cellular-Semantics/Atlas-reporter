@@ -1,0 +1,25 @@
+{
+  "suggested_label": "type 1 innate T cell",
+  "synonyms": ["innate T type1", "type 1 unconventional T cell", "PLZF+ type 1 T cell"],
+  "definition": "An unconventional T cell that expresses the transcription factor PLZF (ZBTB16) and is committed to a type 1 effector program characterized by T-bet expression and IFN-gamma production. This cell arises via thymocyte-thymocyte (T-T) selection rather than selection on cortical thymic epithelial cells (Suo et al., 2022). It may express either an alpha-beta or gamma-delta TCR. This cell type is enriched during prenatal development and is nearly absent in the postnatal thymus, suggesting it is a developmental-specific unconventional T cell population (Suo et al., 2022).",
+  "parent_term": {
+    "cl_id": "",
+    "cl_label": "T cell (or a new 'innate-like T cell' parent)"
+  },
+  "logical_axioms": [
+    "expresses some ZBTB16 (PLZF)",
+    "capable_of some 'IFN-gamma production'",
+    "develops_from some 'double-positive, alpha-beta thymocyte'"
+  ],
+  "references": [
+    {
+      "doi": "10.1126/science.abo0510",
+      "citation": "Suo C et al. (2022). Mapping the developing human immune system across organs. Science."
+    },
+    {
+      "doi": "10.1038/s41586-024-08002-x",
+      "citation": "Gopee NH et al. (2024). A prenatal skin atlas reveals immune regulation of human skin morphogenesis. Nature."
+    }
+  ],
+  "ntr_markdown": "## New Term Request: type 1 innate T cell\n\n**Suggested label:** type 1 innate T cell\n\n**Synonyms:** innate T type1, type 1 unconventional T cell, PLZF+ type 1 T cell\n\n**Definition:** An unconventional T cell that expresses the transcription factor PLZF (ZBTB16) and is committed to a type 1 effector program characterized by T-bet expression and IFN-gamma production. This cell arises via thymocyte-thymocyte (T-T) selection rather than selection on cortical thymic epithelial cells (Suo et al., 2022). It may express either an alpha-beta or gamma-delta TCR. This cell type is enriched during prenatal development and is nearly absent in the postnatal thymus, suggesting it is a developmental-specific unconventional T cell population (Suo et al., 2022).\n\n**Parent term:** T cell (or a new 'innate-like T cell' parent term)\n\n**References:**\n- Suo C et al. (2022). Mapping the developing human immune system across organs. *Science*. DOI: [10.1126/science.abo0510](https://doi.org/10.1126/science.abo0510)\n- Gopee NH et al. (2024). A prenatal skin atlas reveals immune regulation of human skin morphogenesis. *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)\n\n**Comment:** This cell type was identified in the developing human immune system atlas (Suo et al., 2022) and subsequently used as an annotation category in the prenatal skin atlas (Gopee et al., 2024). It is distinct from established innate-like T cell subtypes (MAIT, iNKT, gamma-delta T cells) in that it is defined by effector function (type 1) rather than TCR usage or antigen-presenting molecule restriction. A broader parent term 'innate-like T cell' may also be needed."
+}

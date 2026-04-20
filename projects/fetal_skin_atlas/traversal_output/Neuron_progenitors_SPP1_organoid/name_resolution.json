@@ -1,0 +1,10 @@
+{
+  "label": "Neuron progenitors SPP1+",
+  "resolved_names": [
+    "SPP1-positive neuron progenitor"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "SPP1+ neuron progenitors represent a molecularly distinct subpopulation of neural progenitors expressing SPP1 (osteopontin). No specific CL term exists for this subtype."
+}

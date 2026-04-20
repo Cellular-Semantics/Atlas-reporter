@@ -1,0 +1,19 @@
+{
+  "cell_type_label": "DPYSL2-positive basal keratinocyte",
+  "working_definition": "A mature basal keratinocyte of the fetal interfollicular epidermis distinguished by expression of DPYSL2 and AGR2, increasing after 11 PCW. Positioned along the ORS/CL differentiation trajectory downstream of POSTN+ basal cells, giving rise to outer root sheath and companion layer cells during hair follicle development.",
+  "searches_performed": [
+    "basal cell of epidermis (CL, pageSize=10)"
+  ],
+  "best_match": {
+    "cl_term": "basal cell of epidermis",
+    "cl_id": "CL:0002187",
+    "cl_definition": "A mitotically active, columnar-shaped keratinocyte located in the stratum basale of the epidermis and attached to the basement membrane.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0002187 is the closest existing term. The DPYSL2+ basal cell is a specific fetal maturation state along the ORS/CL trajectory, distinguished by DPYSL2 and AGR2 expression and a late-gestation temporal profile. No CL term captures this specific state.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002187 (basal cell of epidermis) as a broad match.",
+  "new_term_needed": true
+}

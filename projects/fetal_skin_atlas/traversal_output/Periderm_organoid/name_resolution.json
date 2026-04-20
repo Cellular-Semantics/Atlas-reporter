@@ -1,0 +1,10 @@
+{
+  "label": "Periderm",
+  "resolved_names": [
+    "peridermal cell"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Periderm cells form the first skin permeability barrier and are enriched in early gestation, sloughing from 11 PCW. CL:0000078 is an exact match."
+}

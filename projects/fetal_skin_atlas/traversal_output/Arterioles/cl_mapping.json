@@ -1,0 +1,33 @@
+{
+  "cell_type_label": "Arterioles",
+  "working_definition": "A terminally differentiated vascular endothelial cell found in the arteriolar branch of the dermal vasculature in prenatal human skin (7-17 PCW). Arterioles represent the final differentiation state along the arteriolar trajectory (early endothelial cell -> capillary -> capillary arteriole -> arteriole) and are marked by expression of GJA5 (gap junction protein alpha-5). Their full differentiation from capillary arteriole precursors requires immune cell-derived signals.",
+  "searches_performed": [
+    "OLS4 search: 'arteriole endothelial cell'",
+    "OLS4 search: 'endothelial cell of arteriole'"
+  ],
+  "best_match": {
+    "cl_term": "endothelial cell of arteriole",
+    "cl_id": "CL:1000412",
+    "cl_definition": "An endothelial cell that is part of an arteriole.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:1000412 'endothelial cell of arteriole' is the generic, tissue-unspecific CL term for endothelial cells of arterioles, and is an exact match for the 'Arterioles' cell type in this atlas. The atlas annotates these cells by their GJA5-expressing arteriolar identity in prenatal skin vasculature. The other arteriole endothelial hits (CL:1001096 kidney afferent arteriole endothelial cell, CL:1001099 kidney efferent arteriole endothelial cell) are kidney-specific and do not apply to skin. CL:1000412 is the appropriate parent term covering arteriole endothelial cells in any tissue.",
+  "other_candidates": [
+    {
+      "cl_term": "kidney afferent arteriole endothelial cell",
+      "cl_id": "CL:1001096",
+      "cl_definition": "An endothelial cell that is part of a kidney afferent arteriole.",
+      "reason_rejected": "Kidney-specific; the atlas context is prenatal skin"
+    },
+    {
+      "cl_term": "kidney efferent arteriole endothelial cell",
+      "cl_id": "CL:1001099",
+      "cl_definition": "An endothelial cell that is part of a kidney efferent arteriole.",
+      "reason_rejected": "Kidney-specific; the atlas context is prenatal skin"
+    }
+  ],
+  "recommendation": "Map to CL:1000412 (endothelial cell of arteriole). No new CL term is needed.",
+  "new_term_needed": false
+}

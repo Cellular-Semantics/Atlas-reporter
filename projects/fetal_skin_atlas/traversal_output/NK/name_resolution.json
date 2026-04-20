@@ -1,0 +1,10 @@
+{
+  "label": "NK",
+  "resolved_names": [
+    "Natural Killer cells"
+  ],
+  "scope": "adult",
+  "tissue_context": "human skin",
+  "confidence": "high",
+  "evidence": "The full text of the paper and figure legends (e.g., Extended Data Fig. 9a, 9b, and main text referencing immune atlas clusters) consistently refer to 'NK' as 'Natural Killer cells' in adult and prenatal human skin single-cell transcriptomic data. Supplementary tables S1 and S2 link cluster label 'NK' to 'Natural Killer cells'."
+}

@@ -1,0 +1,167 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": ["N. Gopee", "Elena Winheim", "B. Olabi", "et al."],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "pmid": "39415002",
+    "url": "https://www.semanticscholar.org/paper/4fa361732b6949fb708120c7977c9e753b76ff51",
+    "abstract": "Human prenatal skin is populated by innate immune cells, including macrophages, but whether they act solely in immunity or have additional functions in morphogenesis is unclear...",
+    "tldr": "Comprehensive multi-omics reference atlas of prenatal human skin (7-17 PCW) revealing immune-non-immune cell crosstalk in skin morphogenesis."
+  },
+  "CorpusId:31380838": {
+    "title": "Single-cell RNA-seq reveals new types of human blood dendritic cells, monocytes, and progenitors",
+    "authors": ["A. Villani", "R. Satija", "G. Reynolds", "et al."],
+    "year": 2017,
+    "venue": "Science",
+    "doi": "10.1126/science.aah4573",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/6c55bd65d68eb70f7f55d4842665cae5474ae7e0",
+    "abstract": null,
+    "tldr": "Identified 6 DC subsets in human blood by scRNA-seq, including AS-DC (DC5) defined by AXL, SIGLEC1, SIGLEC6 expression."
+  },
+  "CorpusId:206651407": {
+    "title": "Mapping the human DC lineage through the integration of high-dimensional techniques",
+    "authors": ["P. See", "C. Dutertre", "J. Chen", "et al."],
+    "year": 2017,
+    "venue": "Science",
+    "doi": "10.1126/science.aag3009",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/39607a05f8034a9fb2f455ebd33052e7cdb3b69a",
+    "abstract": null,
+    "tldr": "Identified CD33+CD45RA+CD123+ pre-DCs expressing AXL and SIGLEC6 that can differentiate into cDC1 and cDC2."
+  },
+  "CorpusId:247009561": {
+    "title": "Human dendritic cell subsets: An updated view of their ontogeny and functional specialization",
+    "authors": ["E. Segura"],
+    "year": 2022,
+    "venue": "European Journal of Immunology",
+    "doi": "10.1002/eji.202249950",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/247009561",
+    "abstract": null,
+    "tldr": "Updated review of human DC subsets, describing AXL+SIGLEC6+ DCs as a transitional population with mixed pDC-cDC features."
+  },
+  "CorpusId:209230037": {
+    "title": "Re-evaluation of human BDCA-2+ DC during acute sterile skin inflammation",
+    "authors": ["Y.-L. Chen", "T. Gomes", "C. S. Hardman", "et al."],
+    "year": 2019,
+    "venue": "Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20190811",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/c6bb8b566ba759fb99c3b951a4fd62b59258ea42",
+    "abstract": "An unexpected BDCA-2+CD123+CD1a+ DC subset comprises a major DC population in acute human sterile skin inflammation.",
+    "tldr": "ASDCs are recruited to inflamed skin and are highly activated, expressing CCL22 and CD83."
+  },
+  "CorpusId:270761460": {
+    "title": "Characterising plasmacytoid and myeloid AXL+ SIGLEC-6+ dendritic cell functions and their interactions with HIV",
+    "authors": ["F. A. Warner van Dijk", "O. Tong", "T. R. O'Neil", "et al."],
+    "year": 2024,
+    "venue": "PLoS Pathogens",
+    "doi": "10.1371/journal.ppat.1012232",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/270761460",
+    "abstract": null,
+    "tldr": "ASDCs subdivide into CD11c+ and CD123+ subsets with distinct functions; both polarize T cells toward Th2/Th9/Th22/Th17/Treg."
+  },
+  "CorpusId:250977253": {
+    "title": "Plasmacytoid Dendritic Cells, a Novel Target in Myeloid Neoplasms",
+    "authors": ["X. Roussel", "F. Garnache Ottou", "F. Renosi"],
+    "year": 2022,
+    "venue": "Cancers",
+    "doi": "10.3390/cancers14143621",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/250977253",
+    "abstract": null,
+    "tldr": "AS-DCs represent 2-3% of DCs, are CD123+CD11c-/low, co-express AXL/SIGLEC1/6/SIGLEC2/CD22, and are E2-2/TCF4-dependent."
+  },
+  "CorpusId:273402005": {
+    "title": "The lifespan and kinetics of human dendritic cell subsets and their precursors in health and inflammation",
+    "authors": ["R. Lubin", "A. A. Patel", "J. Mackerodt", "et al."],
+    "year": 2024,
+    "venue": "Science Immunology",
+    "doi": "10.1126/sciimmunol.adk4092",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/273402005",
+    "abstract": null,
+    "tldr": "ASDCs are recruited during inflammation, acquire an effector phenotype with IFN signature, and adopt regulatory phenotype with IFN-beta."
+  },
+  "CorpusId:220908447": {
+    "title": "Differential IRF8 Transcription Factor Requirement Defines Two Pathways of Dendritic Cell Development in Humans",
+    "authors": ["U. Cytlak", "A. Resteu", "S. Pagan", "et al."],
+    "year": 2020,
+    "venue": "Immunity",
+    "doi": "10.1016/j.immuni.2020.07.003",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/220908447",
+    "abstract": null,
+    "tldr": "AXL+SIGLEC6+ pre-DCs map exclusively to the DC2 developmental pathway within the IRF8-high lymphoid-primed route."
+  },
+  "CorpusId:4910432": {
+    "title": "Human dendritic cell subsets: an update",
+    "authors": ["M. Collin", "V. Bigley"],
+    "year": 2018,
+    "venue": "Immunology",
+    "doi": "10.1111/imm.12888",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/4910432",
+    "abstract": null,
+    "tldr": "Review describing AXL+SIGLEC6+ cells as pre-DC with mainly cDC2 potential that stimulate T cells vigorously."
+  },
+  "CorpusId:209330184": {
+    "title": "Integrated Cross-Species Analysis Identifies a Conserved Transitional Dendritic Cell Population",
+    "authors": ["R. A. Leylek", "M. Alcantara-Hernandez", "Z. R. Lanzar", "et al."],
+    "year": 2019,
+    "venue": "Cell Reports",
+    "doi": "10.1016/j.celrep.2019.11.042",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/209330184",
+    "abstract": null,
+    "tldr": "Identified mouse homolog of human AXL+ DCs as transitional DCs (tDCs) sharing properties with pDCs."
+  },
+  "CorpusId:283240002": {
+    "title": "Bridging pDCs and cDCs: The Identity of Transitional Dendritic Cells",
+    "authors": ["J. Idoyaga", "H. Ni", "R. A. Maqueda-Alfaro"],
+    "year": 2025,
+    "venue": "Cells",
+    "doi": null,
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/283240002",
+    "abstract": null,
+    "tldr": "Comprehensive review of tDC/ASDC identity, placing them as a bona fide DC subset bridging pDC and cDC2."
+  },
+  "CorpusId:248543355": {
+    "title": "Diversification of circulating and tumor-infiltrating plasmacytoid DCs towards the P3 (CD80+ PDL1-)-pDC subset negatively correlated with clinical outcomes in melanoma patients",
+    "authors": ["E. Sosa Cuevas", "N. Bendriss-Vermare", "S. Mouret", "et al."],
+    "year": 2022,
+    "venue": "Clinical & Translational Immunology",
+    "doi": "10.1002/cti2.1389",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/248543355",
+    "abstract": null,
+    "tldr": "AS DCs infiltrate tumors and skin during wounding; melanoma down-modulates their TRAIL-mediated function."
+  },
+  "CorpusId:155104832": {
+    "title": "Human Dendritic Cell Subsets, Ontogeny, and Impact on HIV Infection",
+    "authors": ["J. Rhodes", "O. Tong", "A. Harman", "S. Turville"],
+    "year": 2019,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2019.01088",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/155104832",
+    "abstract": null,
+    "tldr": "Review of human DC subsets including Axl+ DCs, noting their phenotypic continuum from pDC-like to cDC2-like states."
+  },
+  "CorpusId:254972301": {
+    "title": "Immunomics analysis of rheumatoid arthritis identified precursor dendritic cells as a key cell subset of treatment resistance",
+    "authors": ["S. Yamada", "Y. Nagafuchi", "M. Wang", "et al."],
+    "year": 2023,
+    "venue": "Annals of the Rheumatic Diseases",
+    "doi": "10.1136/ard-2022-223412",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/254972301",
+    "abstract": null,
+    "tldr": "Pre-DC/AS DC linked to treatment resistance in rheumatoid arthritis."
+  }
+}

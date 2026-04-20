@@ -1,0 +1,23 @@
+{
+  "markers": [
+    "AXL",
+    "SIGLEC6",
+    "CD123",
+    "CD11c",
+    "SIGLEC1",
+    "CD2",
+    "CX3CR1",
+    "CD33",
+    "CD5",
+    "CD86",
+    "HLA-DR"
+  ],
+  "other_findings": [
+    "ASDC is listed as one of the broad immune cell lineages in the prenatal skin atlas UMAP (Fig. 1e)",
+    "The atlas does not discuss ASDC biology in detail in the main text; it is identified as part of the immune compartment annotation",
+    "ASDC is present in prenatal skin alongside DC1, DC2, LC, pDC, macrophage subsets, and lymphoid populations"
+  ],
+  "evidence_quotes": [
+    "ASDC, Axl+Siglec6+ dendritic cells; DC, dendritic cells; HSC, haematopoietic stem cells; LC, Langerhans cells; LE, lymphatic endothelium; LTi, lymphoid tissue inducer cell; MEMP, megakaryocyte-erythroid-mast cell progenitor; NK cell, natural killer cells; pDC, plasmacytoid dendritic cells."
+  ]
+}

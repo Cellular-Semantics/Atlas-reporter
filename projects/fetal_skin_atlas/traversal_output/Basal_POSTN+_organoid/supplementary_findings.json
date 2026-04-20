@@ -1,0 +1,38 @@
+{
+  "markers": [
+    {
+      "gene": "POSTN",
+      "evidence_type": "defining marker",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "KRT14",
+      "evidence_type": "basal marker",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "POSTN+ basal cells differentiate along two paths: ORS/CL trajectory and IRS trajectory",
+      "category": "development",
+      "source_table": "Fig. 2d, Supplementary Table 7"
+    },
+    {
+      "finding": "AGR2 loss promotes cell migration in POSTN+ basal cells, may be involved in placode specification",
+      "category": "function",
+      "source_table": "Main text"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Inferred trajectory and pseudotime analysis of epidermal cells in the integrated prenatal skin and SkO data predicted the differentiation of POSTN + basal cells into two paths: ORS/CL trajectory, comprising DPYSL2 + basal cells, ORS and CL; and IRS trajectory, involving placode, matrix, cuticle/cortex and IRS",
+      "source_file": "Gopee et al. 2024",
+      "context": "Epidermal differentiation trajectories"
+    },
+    {
+      "quote": "increased cellular migration in POSTN + basal cells may be involved in placode specification and dermal invagination",
+      "source_file": "Gopee et al. 2024",
+      "context": "POSTN+ basal cell function"
+    }
+  ]
+}

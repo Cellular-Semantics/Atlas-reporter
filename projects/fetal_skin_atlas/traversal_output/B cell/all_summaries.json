@@ -1,0 +1,48 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "B-cells have not been observed in fetal skin by flow cytometry or immunofluorescence using CD19 and CD20 as markers. However, using scRNAseq, B-cells and their precursors have been detected in skin as young as 8 PCW.",
+      "Detection of cells in various stages of B-cell differentiation in first-trimester skin indicates that B-cell precursors are released from the liver into circulation where they can then seed tissue.",
+      "Plasma cells, but not B-cells, are present in steady-state adult skin"
+    ],
+    "summary": "B cells and their precursors are detected in fetal skin by scRNA-seq from 8 PCW. Multiple B cell developmental stages present in first-trimester skin indicate liver-derived precursors seed tissue. Plasma cells but not B cells are present in adult skin.",
+    "categories": ["markers", "location", "function"],
+    "source_corpus_id": "CorpusId:218615208",
+    "source_title": "The developing immune network in human prenatal skin",
+    "source_authors": "Botting and Haniffa",
+    "source_year": 2020,
+    "snippet": "B-cells have not been observed in fetal skin by flow cytometry 7 or immunofluorescence 8 using CD19 and CD20 as markers. However, using scRNAseq, B-cells and their precursors have been detected in skin as young as 8 PCW. 41 Detection of cells in various stages of B-cell differentiation in first-trimester skin indicates that B-cell precursors are released from the liver into circulation where they can then seed tissue. It is yet to be determined whether the precursors differentiate within skin after seeding, or if specific stages are seeded, but the presence of B-cell precursors without differentiated B-cells in matched kidneys 41 supports the former. Furthermore, it suggests the B-cells were not merely present within the vasculature. Plasma cells, but not B-cells, are present in steady-state adult skin, 8,59,60 so it is possible that B-cells and their precursors may play a specific role during the development of fetal skin, or they may non-specifically seed tissues, but this remains unknown."
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "A population of CD24 + CD19 + cells, possibly representing B cell precursors as described in human bone marrow, were consistently found in fetal specimens.",
+      "Although B cells have been previously shown to reside in human fetal skin, CD24 + CD19 + cells were found in even greater abundance."
+    ],
+    "summary": "CD24+CD19+ cells, likely B cell precursors, were consistently found in fetal skin, enriched compared to adult skin. B cells have been previously shown to reside in human fetal skin.",
+    "categories": ["markers", "location"],
+    "source_corpus_id": "CorpusId:227334677",
+    "source_title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "source_authors": "Dhariwala et al.",
+    "source_year": 2020,
+    "snippet": "Here, we leveraged CyTOF to simultaneously capture the broad phenotype and prevalence of immune cells within fetal skin. Although differing somewhat in relative abundance, the major leukocyte clusters found in adult skin were also present during early development. We were intrigued to note that certain populations were significantly enriched in or unique to the fetal period. A population of CD24 + CD19 + cells, possibly representing B cell precursors as described in human bone marrow, 15 were consistently found in fetal specimens. Although B cells have been previously shown to reside in human fetal skin, 10 CD24 + CD19 + cells were found in even greater abundance."
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "primitive 'pre pro-B' clusters expressing CD34, SPINK2, and IGLL1 to 'pro-B' and 'pre-B' clusters with increasing expression of B cell transcripts MS4A1, CD79B, DNTT and HLA-DRA and reducing expression of JCHAIN and LTB",
+      "Comparing liver with yolk sac and NLT, pro-B, pre-B and B cells are present in NLT but HSC/MPPs and pre pro-B cells are absent",
+      "Pre-B cells are detected between 7-8 PCW, but mature B cells only after 9 PCW",
+      "'Pro/pre-B' cell clusters have high nuclear to cytoplasmic ratio, immature chromatin and nucleoli",
+      "Differentially regulated genes in the HSC/MPPs to B cell transition include SPIB, SP100 and CTSS"
+    ],
+    "summary": "Fetal liver B cell development proceeds from pre-pro-B (CD34+SPINK2+IGLL1+) to pro-B/pre-B (MS4A1+CD79B+DNTT+HLA-DRA+). Pre-B cells appear at 7-8 PCW, mature B cells after 9 PCW. In NLT (including skin), pro-B, pre-B and B cells are present but the most primitive progenitors are absent.",
+    "categories": ["markers", "development", "location"],
+    "source_corpus_id": "CorpusId:203986545",
+    "source_title": "Decoding human fetal liver haematopoiesis",
+    "source_authors": "Popescu et al.",
+    "source_year": 2019,
+    "snippet": "primitive 'pre pro-B' clusters expressing CD34, SPINK2, and IGLL1 to 'pro-B' and 'pre-B' clusters with increasing expression of B cell transcripts MS4A1, CD79B, DNTT and HLA-DRA and reducing expression of JCHAIN and LTB 30 (Figure 2a, 4a and Supplementary Table 3).\n\n'Pro/pre-B' cell clusters have high nuclear to cytoplasmic ratio, immature chromatin and nucleoli (Extended Data 5e). Differentially regulated genes in the HSC/MPPs to B cell transition include SPIB, SP100 and CTSS (Extended Data 5e). Pre-B cells are detected between 7-8 PCW, but mature B cells only after 9 PCW (Figure 1b-c and 4a). We observe a decline in HSC/MPP expression of NFKBIA, an inhibitor of NF-\u03baB, and an increase in Kupffer cell TNFSF13B (BAFF) expression with gestation (Extended Data 5f). NF-\u03baB and BAFF are known B cell survival and differentiation factors 31 . The cell-intrinsic versus tissue-microenvironment factors controlling B cell differentiation in the fetal liver require further investigation.\n\nComparing liver with yolk sac and NLT, pro-B, pre-B and B cells are present in NLT but HSC/MPPs and pre pro-B cells are absent (Figure 4b and Extended Data 5g). NK cell precursors, NK cells and ILC in NLT share a transcriptional signature with their liver counterparts, however tissue-specific expression of chemokine (XCLI, CXCL8) and cytotoxic granule genes (GNLY) suggest maturation and tissue adaptation in the skin and kidney (Extended Data 5h). ILC precursors in NLT lack the full characteristic markers and TFs of their mature progenies; ILC1, ILC2 and ILC3 (Extended Data 5i). NK cells and ILC precursors are present in yolk sac ( Figure 4b). Together, these findings suggest that NLTs are seeded by NK and ILC precursors from fetal liver"
+  }
+]

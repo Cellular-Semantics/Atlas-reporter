@@ -1,0 +1,530 @@
+{
+  "CorpusId:253934919": {
+    "title": "Development and In Vitro Differentiation of Schwann Cells",
+    "authors": [
+      "Sarah Janice H\u00f6rner",
+      "N. Couturier",
+      "Daniele Caroline Gueiber",
+      "M. Hafner",
+      "R. Rudolf"
+    ],
+    "year": 2022,
+    "venue": "Cells",
+    "doi": "10.3390/cells11233753",
+    "pmid": "36497014",
+    "url": "https://www.semanticscholar.org/paper/04d62f6b1a52af4b73062e77d4aa6a40794ea5b8",
+    "abstract": "Schwann cells are glial cells of the peripheral nervous system. They exist in several subtypes and perform a variety of functions in nerves. Their derivation and culture in vitro are interesting for applications ranging from disease modeling to tissue engineering. Since primary human Schwann cells are challenging to obtain in large quantities, in vitro differentiation from other cell types presents an alternative. Here, we first review the current knowledge on the developmental signaling mechani",
+    "tldr": "This contribution provides an overview of the current resources and methods for the differentiation of Schwann cells, which supports the comparison and refinement of protocols and aids the choice of suitable methods for specific applications."
+  },
+  "CorpusId:8998438": {
+    "title": "Schwann-Spheres Derived from Injured Peripheral Nerves in Adult Mice - Their In Vitro Characterization and Therapeutic Potential",
+    "authors": [
+      "T. Takagi",
+      "K. Ishii",
+      "S. Shibata",
+      "Akimasa Yasuda",
+      "Momoka Sato",
+      "Narihito Nagoshi",
+      "H. Saito",
+      "H. Okano",
+      "Y. Toyama",
+      "Hideyuki Okano",
+      "M. Nakamura"
+    ],
+    "year": 2011,
+    "venue": "PLoS ONE",
+    "doi": "10.1371/journal.pone.0021497",
+    "pmid": "21720551",
+    "url": "https://www.semanticscholar.org/paper/f417106a6499d28bfa722fcc801c95c4eab23284",
+    "abstract": "Multipotent somatic stem cells have been identified in various adult tissues. However, the stem/progenitor cells of the peripheral nerves have been isolated only from fetal tissues. Here, we isolated Schwann-cell precursors/immature Schwann cells from the injured peripheral nerves of adult mice using a floating culture technique that we call \u201cSchwann-spheres.\" The Schwann-spheres were derived from de-differentiated mature Schwann cells harvested 24 hours to 6 weeks after peripheral nerve injury.",
+    "tldr": "Mature Schwann cells have been considered a promising candidate for cell-transplantation therapies to repair the damaged nervous system, whereas these \u201cSchwann-spheres\" would provide a more potential autologous cell source for such transplantation."
+  },
+  "CorpusId:14256470": {
+    "title": "Neural-Competent Cells of Adult Human Dermis Belong to the Schwann Lineage",
+    "authors": [
+      "U. Etxaniz",
+      "A. P\u00e9rez-San Vicente",
+      "Nuria Gago-L\u00f3pez",
+      "M. Garc\u00eda-Dom\u00ednguez",
+      "H. Iribar",
+      "Ariane Aduriz",
+      "Virginia P\u00e9rez\u2010L\u00f3pez",
+      "I. Burgoa",
+      "H. Irizar",
+      "M. Mu\u00f1oz-Culla",
+      "A. Vallejo-Illarramendi",
+      "O. Leis",
+      "A. Matheu",
+      "Angel G. Marti\u0301n",
+      "D. Otaegui",
+      "M. P. L\u00f3pez-Mato",
+      "Araika Guti\u00e9rrez\u2010Rivera",
+      "R. Maclellan",
+      "A. Izeta"
+    ],
+    "year": 2014,
+    "venue": "Stem Cell Reports",
+    "doi": "10.1016/j.stemcr.2014.09.009",
+    "pmid": "25418723",
+    "url": "https://www.semanticscholar.org/paper/c561e848ed93ed589ba7c209c42ea10312804694",
+    "abstract": "Summary Resident neural precursor cells (NPCs) have been reported for a number of adult tissues. Understanding their physiological function or, alternatively, their activation after tissue damage or in vitro manipulation remains an unsolved issue. Here, we investigated the source of human dermal NPCs in adult tissue. By following an unbiased, comprehensive approach employing cell-surface marker screening, cell separation, transcriptomic characterization, and in vivo fate analyses, we found that ",
+    "tldr": "It is found that p75NTR+ precursors of human foreskin can be ascribed to the Schwann and perivascular cell lineages and double-positive NPCs were similarly obtained from human cardiospheres, indicating that this phenomenon might be widespread."
+  },
+  "CorpusId:273066472": {
+    "title": "Single-cell profiling of cellular changes in the somatic peripheral nerves following nerve injury",
+    "authors": [
+      "Li Zhao",
+      "Chunyi Jiang",
+      "Bin Yu",
+      "J. Zhu",
+      "Yuyu Sun",
+      "Sheng Yi"
+    ],
+    "year": 2024,
+    "venue": "Frontiers in Pharmacology",
+    "doi": "10.3389/fphar.2024.1448253",
+    "pmid": "39415832",
+    "url": "https://www.semanticscholar.org/paper/435371467741db255ae59097c8f39ab4f5bcf8ed",
+    "abstract": "Injury to the peripheral nervous system disconnects targets to the central nervous system, disrupts signal transmission, and results in functional disability. Although surgical and therapeutic treatments improve nerve regeneration, it is generally hard to achieve fully functional recovery after severe peripheral nerve injury. A better understanding of pathological changes after peripheral nerve injury helps the development of promising treatments for nerve regeneration. Single-cell analyses of t",
+    "tldr": "The understanding of cellular changes following peripheral nerve injury at a single-cell resolution offers a comprehensive and insightful view for the peripheral nerve repair process, provides an important basis for the exploration of the key regulators of neuronal growth and microenvironment reconstruction, and benefits the development of novel therapeutic drugs for the treatment of peripheral nerve injury."
+  },
+  "CorpusId:18031098": {
+    "title": "Skin-Derived Precursors Generate Myelinating Schwann Cells That Promote Remyelination and Functional Recovery after Contusion Spinal Cord Injury",
+    "authors": [
+      "J. Biernaskie",
+      "Joseph S Sparling",
+      "Jie Liu",
+      "C. Shannon",
+      "Jason R. Plemel",
+      "Yuanyun Xie",
+      "F. Miller",
+      "W. Tetzlaff"
+    ],
+    "year": 2007,
+    "venue": "Journal of Neuroscience",
+    "doi": "10.1523/JNEUROSCI.1930-07.2007",
+    "pmid": "17804616",
+    "url": "https://www.semanticscholar.org/paper/3694b76955ab5240f44f809b0afb28cce731c025",
+    "abstract": "Transplantation of exogenous cells is one approach to spinal cord repair that could potentially enhance the growth and myelination of endogenous axons. Here, we asked whether skin-derived precursors (SKPs), a neural crest-like precursor that can be isolated and expanded from mammalian skin, could be used to repair the injured rat spinal cord. To ask this question, we isolated and expanded genetically tagged murine SKPs and either transplanted them directly into the contused rat spinal cord or di",
+    "tldr": "SKP-derived SCs provide an accessible, potentially autologous source of cells for transplantation into and treatment of the injured spinal cord and provided enhanced locomotor recovery relative to both SKPs and forebrain subventricular zone neurospheres, and had no impact on mechanical or heat sensitivity thresholds."
+  },
+  "CorpusId:4722737": {
+    "title": "Purification and Characterization of Schwann Cells from Adult Human Skin and Nerve",
+    "authors": [
+      "J. A. Stratton",
+      "Ranjan Kumar",
+      "S. Sinha",
+      "Prajay T. Shah",
+      "Morgan G. Stykel",
+      "Y. Shapira",
+      "R. Midha",
+      "J. Biernaskie"
+    ],
+    "year": 2017,
+    "venue": "eNeuro",
+    "doi": "10.1523/ENEURO.0307-16.2017",
+    "pmid": "28512649",
+    "url": "https://www.semanticscholar.org/paper/57f4fd5621412a1b8a631ab257659f097dc955bd",
+    "abstract": "Abstract Despite its modest capacity for regeneration, peripheral nervous system injury often results in significant long-term disability. Supplementing peripheral nervous system injury with autologous Schwann cells (SCs) may serve to rejuvenate the postinjury environment to enhance regeneration and ultimately improve functional outcomes. However, human nerve-derived SC (hN-SC) collection procedures require invasive surgical resection. Here, we describe the characterization of SCs from adult hum",
+    "tldr": "It is demonstrated that adult hSk-SCs are genetically and phenotypically indistinguishable to human nerve-derived SCs, and that a subset of both associate with regenerating axons and form myelin following transplantation into the injured mouse sciatic nerve."
+  },
+  "CorpusId:247517139": {
+    "title": "The transcriptional profile of keloidal Schwann cells",
+    "authors": [
+      "M. Direder",
+      "M. Wielscher",
+      "T. Weiss",
+      "M. Laggner",
+      "D. Copic",
+      "K. Klas",
+      "D. Bormann",
+      "V. Vorstandlechner",
+      "E. Tschachler",
+      "Hendrik Jan Ankersmit",
+      "M. Mildner"
+    ],
+    "year": 2022,
+    "venue": "Experimental and Molecular Medicine",
+    "doi": "10.1038/s12276-022-00874-1",
+    "pmid": "36333467",
+    "url": "https://www.semanticscholar.org/paper/be40c7e2590a1e4a073c9163b09e93f9dc81ca08",
+    "abstract": "Recently, a specific Schwann cell type with profibrotic and tissue regenerative properties that contributes to keloid formation has been identified. In the present study, we reanalyzed published single-cell RNA sequencing (scRNA-seq) studies of keloids, healthy skin, and normal scars to reliably determine the specific gene expression profile of keloid-specific Schwann cell types in more detail. We were able to confirm the presence of the repair-like, profibrotic Schwann cell type in the datasets",
+    "tldr": "This study reanalyzed published single-cell RNA sequencing studies of keloids, healthy skin, and normal scars to reliably determine the specific gene expression profile ofkeloid-specific Schwann cell types in more detail, and identified a specific gene-set for these Schwann cells."
+  },
+  "CorpusId:268776218": {
+    "title": "Interactions between Schwann cell and extracellular matrix in peripheral nerve regeneration",
+    "authors": [
+      "Maorong Jiang",
+      "Muyang Chen",
+      "Nana Liu"
+    ],
+    "year": 2024,
+    "venue": "Frontiers in Neurology",
+    "doi": "10.3389/fneur.2024.1372168",
+    "pmid": "38651098",
+    "url": "https://www.semanticscholar.org/paper/d8798fb1d554fa1fecfa8bd9328e08ed800d5ab4",
+    "abstract": "Peripheral nerve injuries, caused by various reasons, often lead to severe sensory, motor, and autonomic dysfunction or permanent disability, posing a challenging problem in regenerative medicine. Autologous nerve transplantation has been the gold standard in traditional treatments but faces numerous limitations and risk factors, such as donor area denervation, increased surgical complications, and diameter or nerve bundle mismatches. The extracellular matrix (ECM) is a complex molecular network",
+    "tldr": "It is shown that Schwann cell transplantation is considered the gold standard in cell therapy for peripheral nerve injuries, making ECM derived from Schwann cells one of the most suitable biomaterials for peripheral nerve repair."
+  },
+  "CorpusId:3714222": {
+    "title": "Schwann Cells in the Ventral Dermis Do Not Derive from Myf5-Expressing Precursors",
+    "authors": [
+      "H. Iribar",
+      "Virginia P\u00e9rez\u2010L\u00f3pez",
+      "U. Etxaniz",
+      "Araika Guti\u00e9rrez\u2010Rivera",
+      "A. Izeta"
+    ],
+    "year": 2017,
+    "venue": "Stem Cell Reports",
+    "doi": "10.1016/j.stemcr.2017.09.010",
+    "pmid": "29033303",
+    "url": "https://www.semanticscholar.org/paper/a037a1ffac54d0d4901fb9a801b1057bf71f5c8d",
+    "abstract": "Summary The embryonic origin of lineage precursors of the trunk dermis is somewhat controversial. Precursor cells traced by Myf5 and Twist2 (Dermo1) promoter activation (i.e., cells of presumed dermomyotomal lineage) have been reported to generate Schwann cells. On the other hand, abundant data demonstrate that dermal Schwann cells derive from the neural crest. This is relevant because dermal precursors give rise to neural lineages, and multilineage differentiation potential qualifies them as ad",
+    "tldr": "It is demonstrated that dermal Schwann cells do not belong to the Myf5+ cell lineage, indicating that previous tracing data reflected aberrant cre recombinase expression and that bona fide Myf 5+ dermal precursors cannot transdifferentiate to neural lineages in physiological conditions."
+  },
+  "CorpusId:19237127": {
+    "title": "Collagen VI in healthy and diseased nervous system",
+    "authors": [
+      "Ilaria Gregorio",
+      "P. Braghetta",
+      "P. Bonaldo",
+      "M. Cescon"
+    ],
+    "year": 2018,
+    "venue": "Disease Models & Mechanisms",
+    "doi": "10.1242/dmm.032946",
+    "pmid": "29728408",
+    "url": "https://www.semanticscholar.org/paper/d8551dcb8e2116bb03ea7b9b29a6985223d343f5",
+    "abstract": "ABSTRACT Collagen VI is a major extracellular matrix protein exerting a number of functions in different tissues, spanning from biomechanical to regulatory signals in the cell survival processes, and playing key roles in maintaining the stemness or determining the differentiation of several types of cells. In the last couple of years, emerging findings on collagen VI have led to increased interest in its role in the nervous system. The role of this protein in the peripheral nervous system was in",
+    "tldr": "Although collagen VI was so far known to be mostly involved in skeletal muscle homeostasis, this Review summarizes a number of recent studies that highlight its key role in the peripheral and central nervous systems, pointing at a link with human neurological disorders."
+  },
+  "CorpusId:21673747": {
+    "title": "Soluble Neuregulin1 Down-Regulates Myelination Genes in Schwann Cells",
+    "authors": [
+      "Marwa El Soury",
+      "B. Fornasari",
+      "M. Morano",
+      "Elio Grazio",
+      "G. Ronchi",
+      "Danny Incarnato",
+      "M. Giacobini",
+      "S. Geuna",
+      "P. Provero",
+      "G. Gambarotta"
+    ],
+    "year": 2018,
+    "venue": "Frontiers in Molecular Neuroscience",
+    "doi": "10.3389/fnmol.2018.00157",
+    "pmid": "29867349",
+    "url": "https://www.semanticscholar.org/paper/fc13e0346246496a53219384467ca5f4726b7687",
+    "abstract": "Peripheral nerves are characterised by the ability to regenerate after injury. Schwann cell activity is fundamental for all steps of peripheral nerve regeneration: immediately after injury they de-differentiate, remove myelin debris, proliferate and repopulate the injured nerve. Soluble Neuregulin1 (NRG1) is a growth factor that is strongly up-regulated and released by Schwann cells immediately after nerve injury. To identify the genes regulated in Schwann cells by soluble NRG1, we performed dee",
+    "tldr": "In vitro transcriptome analysis demonstrates that in Schwann cells NRG1 drives the expression of several genes which partially overlap with genes regulated in vivo after peripheral nerve injury, underlying the pivotal role ofNRG1 in the first steps of the nerve regeneration process."
+  },
+  "CorpusId:276014101": {
+    "title": "Schwann cells in regeneration and cancer",
+    "authors": [
+      "Lan Zhang",
+      "Jiale Xie",
+      "Wenyu Dai",
+      "Bing Lu",
+      "Sheng Yi"
+    ],
+    "year": 2025,
+    "venue": "Frontiers in Pharmacology",
+    "doi": "10.3389/fphar.2025.1506552",
+    "pmid": "39981185",
+    "url": "https://www.semanticscholar.org/paper/2e42714ba250f116a45351bec567995e29d07f10",
+    "abstract": "Schwann cells are specific peripheral glial cells with remarkable plasticity following peripheral nerve injury. Injury responses stimulate c-Jun activation in Schwann cells, drive epithelial-mesenchymal transition and cellular phenotypic changes, and induce the generation of reprogrammed repair Schwann cells to orchestrate peripheral nerve regeneration process. Schwann cells and/or Schwann cell-derived molecules are commonly used as supporting cells and/or neurotrophic factors to construct Schwa",
+    "tldr": "The physiological and pathological activities of Schwann cells are outlined and the functional roles of Schwann cells in homeostasis, regeneration, and cancer are discussed."
+  },
+  "CorpusId:256914257": {
+    "title": "Taxanes and platinum derivatives impair Schwann cells via distinct mechanisms",
+    "authors": [
+      "S. Imai",
+      "M. Koyanagi",
+      "Z. Azimi",
+      "Yui Nakazato",
+      "Mayuna Matsumoto",
+      "T. Ogihara",
+      "A. Yonezawa",
+      "T. Omura",
+      "S. Nakagawa",
+      "S. Wakatsuki",
+      "T. Araki",
+      "Shuji Kaneko",
+      "Takayuki Nakagawa",
+      "K. Matsubara"
+    ],
+    "year": 2017,
+    "venue": "Scientific Reports",
+    "doi": "10.1038/s41598-017-05784-1",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/db780655af2b4fc5f5f56e50da8eefe24a9e2fe3",
+    "abstract": "Impairment of peripheral neurons by anti-cancer agents, including taxanes and platinum derivatives, has been considered to be a major cause of chemotherapy-induced peripheral neuropathy (CIPN), however, the precise underlying mechanisms are not fully understood. Here, we examined the direct effects of anti-cancer agents on Schwann cells. Exposure of primary cultured rat Schwann cells to paclitaxel (0.01\u2009\u03bcM), cisplatin (1\u2009\u03bcM), or oxaliplatin (3\u2009\u03bcM) for 48\u2009h induced cytotoxicity and reduced myelin",
+    "tldr": "It is suggested that taxanes and platinum derivatives impair Schwan cells by inducing dedifferentiation and mitochondrial dysfunction, respectively, which may be important in the development of CIPN in conjunction with their direct impairment in peripheral neurons."
+  },
+  "CorpusId:15813271": {
+    "title": "Boundary Caps Give Rise to Neurogenic Stem Cells and Terminal Glia in the Skin",
+    "authors": [
+      "Aur\u00e9lie Gresset",
+      "F. Coulpier",
+      "Gaspard Gerschenfeld",
+      "Alexandre Jourdon",
+      "Graziella Matesic",
+      "L. Richard",
+      "J. Vallat",
+      "P. Charnay",
+      "P. Topilko"
+    ],
+    "year": 2015,
+    "venue": "Stem Cell Reports",
+    "doi": "10.1016/j.stemcr.2015.06.005",
+    "pmid": "26212662",
+    "url": "https://www.semanticscholar.org/paper/309de021cee716eaf8dddad4e066e39aa55cfcd0",
+    "abstract": "Summary While neurogenic stem cells have been identified in rodent and human skin, their manipulation and further characterization are hampered by a lack of specific markers. Here, we perform genetic tracing of the progeny of boundary cap (BC) cells, a neural-crest-derived cell population localized at peripheral nerve entry/exit points. We show that BC derivatives migrate along peripheral nerves to reach the skin, where they give rise to terminal glia associated with dermal nerve endings. Dermal",
+    "tldr": "It is shown that BC derivatives migrate along peripheral nerves to reach the skin, where they give rise to terminal glia associated with dermal nerve endings, which provides genetic tools to study and manipulate this population of high interest for medical applications."
+  },
+  "CorpusId:15439210": {
+    "title": "Origin and Regenerative Potential of Vertebrate Mechanoreceptor-Associated Stem Cells",
+    "authors": [
+      "D. Widera",
+      "S. Hauser",
+      "C. Kaltschmidt",
+      "B. Kaltschmidt"
+    ],
+    "year": 2012,
+    "venue": "Anatomy Research International",
+    "doi": "10.1155/2012/837626",
+    "pmid": "23082250",
+    "url": "https://www.semanticscholar.org/paper/50f84f0aa45c03042ad142bff29fd10986b361a5",
+    "abstract": "Meissner corpuscles and Merkel cell neurite complexes are highly specialized mechanoreceptors present in the hairy and glabrous skin, as well as in different types of mucosa. Several reports suggest that after injury, such as after nerve crush, freeze injury, or dissection of the nerve, they are able to regenerate, particularly including reinnervation and repopulation of the mechanoreceptors by Schwann cells. However, little is known about mammalian cells responsible for these regenerative proce",
+    "tldr": "Cellular origin of this plasticity in the light of newly described adult neural crest-derived stem cell populations and further potential multipotent stem cells populations with the ability to regenerate disrupted innervation and to functionally recover the mechanoreceptors are reviewed."
+  },
+  "CorpusId:259109217": {
+    "title": "Decoding the molecular landscape of keloids: new insights from single-cell transcriptomics",
+    "authors": [
+      "Yijun Xia",
+      "Youbin Wang",
+      "Mengjie Shan",
+      "Yan Hao",
+      "Zhengyun Liang"
+    ],
+    "year": 2023,
+    "venue": "Burns & Trauma",
+    "doi": "10.1093/burnst/tkad017",
+    "pmid": "37293384",
+    "url": "https://www.semanticscholar.org/paper/83874dc6ca00b9ee839266aab6378c630f094377",
+    "abstract": "Abstract Keloids are a fibrotic disease caused by an excessive accumulation of extracellular matrix in the dermis; they have neoplasia-like properties of aggressive growth and high posttreatment recurrence rates. Therefore, it is imperative to gain additional insight into the pathobiology of keloid formation. Single-cell RNA sequencing (scRNA-seq) technology has brought data-driven innovation to understanding the pathogenesis of keloids by breaking the limitations of traditional sequencing techn",
+    "tldr": null
+  },
+  "CorpusId:281521212": {
+    "title": "A multi-omic atlas of human autonomic and sensory ganglia implicates cell types in peripheral neuropathies",
+    "authors": [
+      "Lite Yang",
+      "Adam J. Dourson",
+      "Ruichen Tao",
+      "Kevin Boyer",
+      "Pauline Meriau",
+      "J. D. Del Rosario",
+      "Jiwon Yi",
+      "Richard A. Slivicki",
+      "Zach Bertels",
+      "Maria Payne",
+      "Juliet M. Mwirigi",
+      "Prashant Gupta",
+      "John A Lemen",
+      "B. Copits",
+      "Guoyan Zhao",
+      "Valeria Cavalli",
+      "Alexander Chamessian",
+      "Robert W. Gereau"
+    ],
+    "year": 2025,
+    "venue": "bioRxiv",
+    "doi": "10.1101/2025.09.18.677119",
+    "pmid": "41000833",
+    "url": "https://www.semanticscholar.org/paper/d626edbdeaa003a61dd7be709cc7595c83819477",
+    "abstract": "The human peripheral nervous system (PNS) consists of many ganglia including sympathetic ganglia (SG) and dorsal root ganglia (DRG). These ganglia house the cell bodies of diverse PNS neurons that transmit autonomic and sensory signals, as well as a much larger number of non-neuronal cells. However, the molecular and cellular diversity of these human PNS cell types and their implications in human disease remain elusive. By generating an integrated single-cell multi-omic atlas of human SG and DRG",
+    "tldr": "An integrated single-cell multi-omic atlas of human SG and DRG is generated, which provides comprehensive transcriptional and epigenomic landscapes of various cell types in these peripheral ganglia and identifies cell types that may underlie various peripheral neuropathies."
+  },
+  "CorpusId:100094": {
+    "title": "Axonal neuregulin 1 is a rate limiting but not essential factor for nerve remyelination",
+    "authors": [
+      "Florence R. Fricker",
+      "A. Antunes\u2010Martins",
+      "J. Galino",
+      "R. Paramsothy",
+      "Federica La Russa",
+      "J. Perkins",
+      "R. Goldberg",
+      "J. Brelstaff",
+      "N. Zhu",
+      "S. McMahon",
+      "C. Orengo",
+      "A. Garratt",
+      "C. Birchmeier",
+      "D. Bennett"
+    ],
+    "year": 2013,
+    "venue": "Brain : a journal of neurology",
+    "doi": "10.1093/brain/awt148",
+    "pmid": "23801741",
+    "url": "https://www.semanticscholar.org/paper/5248e98cd5ff46e8efb8da684e30dd280f57fdb6",
+    "abstract": "Neuregulin 1 acts as an axonal signal that regulates multiple aspects of Schwann cell development including the survival and migration of Schwann cell precursors, the ensheathment of axons and subsequent elaboration of the myelin sheath. To examine the role of this factor in remyelination and repair following nerve injury, we ablated neuregulin 1 in the adult nervous system using a tamoxifen inducible Cre recombinase transgenic mouse system. The loss of neuregulin 1 impaired remyelination after ",
+    "tldr": "Neuregulin 1 signalling is an important factor in nerve repair regulating the rate of remyelination and functional recovery at early phases following injury, but at late stages other signalling pathways appear to compensate."
+  },
+  "CorpusId:14303627": {
+    "title": "Direct Genesis of Functional Rodent and Human Schwann Cells from Skin Mesenchymal Precursors",
+    "authors": [
+      "M. Krause",
+      "Shaalee Dworski",
+      "Konstantin Feinberg",
+      "K. Jones",
+      "Adam P W Johnston",
+      "S. Paul",
+      "Maryline Paris",
+      "E. Peles",
+      "D. Bagli",
+      "C. Forrest",
+      "D. Kaplan",
+      "F. Miller"
+    ],
+    "year": 2014,
+    "venue": "Stem Cell Reports",
+    "doi": "10.1016/j.stemcr.2014.05.011",
+    "pmid": "25068124",
+    "url": "https://www.semanticscholar.org/paper/dfb90b0c5647e8cc179fbbaf205b2c2b765960ad",
+    "abstract": "Summary Recent reports of directed reprogramming have raised questions about the stability of cell lineages. Here, we have addressed this issue, focusing upon skin-derived precursors (SKPs), a dermally derived precursor cell. We show by lineage tracing that murine SKPs from dorsal skin originate from mesenchymal and not neural crest-derived cells. These mesenchymally derived SKPs can, without genetic manipulation, generate functional Schwann cells, a neural crest cell type, and are highly simila",
+    "tldr": "Nonneural crest-derived mesenchymal precursors can differentiate into bona fide peripheral glia in the absence of genetic manipulation, suggesting that developmentally defined lineage boundaries are more flexible than widely thought."
+  },
+  "CorpusId:14520012": {
+    "title": "Primary demyelination induced by exposure to tellurium alters Schwann cell gene expression: a model for intracellular targeting of NGF receptor",
+    "authors": [
+      "AD Toews",
+      "I. Griffiths",
+      "E. Kyriakides",
+      "JF Goodrum",
+      "CE Eckermann",
+      "P. Morell",
+      "C. Thomson"
+    ],
+    "year": 1992,
+    "venue": "Journal of Neuroscience",
+    "doi": "10.1523/JNEUROSCI.12-09-03676.1992",
+    "pmid": "1382124",
+    "url": "https://www.semanticscholar.org/paper/671cfa0b0dbdbddbda61aecdc203703953864e2c",
+    "abstract": "Exposure of developing rats to tellurium results in a highly synchronous segmental demyelination of peripheral nerves with sparing of axons; this demyelination is followed closely by a period of rapid remyelination. Demyelination occurs subsequent to a tellurium-induced block in the synthesis of cholesterol, the major myelin lipid. We utilized the techniques of Northern blotting, in situ hybridization, and immunocytochemistry to examine temporal alterations in Schwann cell gene expression relate",
+    "tldr": "The results demonstrate that demyelination is associated with reversion of the affected Schwann cells to a precursor cell phenotype, and suggest that these changes in Schwann cell gene expression do not require input from a degenerating axon, but instead may depend on whether concerted synthesis of myelin is occurring."
+  },
+  "CorpusId:36752999": {
+    "title": "Updates on stem cells and their applications in regenerative medicine",
+    "authors": [
+      "S. Bajada",
+      "I. Mazakova",
+      "J. Richardson",
+      "N. Ashammakhi"
+    ],
+    "year": 2008,
+    "venue": "Journal of Tissue Engineering and Regenerative Medicine",
+    "doi": "10.1002/term.83",
+    "pmid": "18493906",
+    "url": "https://www.semanticscholar.org/paper/b369c6638ae004f779fbcdee5647570251ab6d2b",
+    "abstract": "Stem cells have the capacity for self\u2010renewal and capability of differentiation to various cell lineages. Thus, they represent an important building block for regenerative medicine and tissue engineering. These cells can be broadly classified into embryonic stem cells (ESCs) and non\u2010embryonic or adult stem cells. ESCs have great potential but their use is still limited by several ethical and scientific considerations. The use of bone marrow\u2010, umbilical cord\u2010, adipose tissue\u2010, skin\u2010 and amniotic ",
+    "tldr": "A brief outlook on the past, present and the future of stem cell\u2010based therapies in clinical practice is given."
+  },
+  "CorpusId:18683518": {
+    "title": "Schwann cell proliferation and migration during paranodal demyelination",
+    "authors": [
+      "John W. Griffin",
+      "N. Drucker",
+      "B. G. Gold",
+      "J. Rosenfeld",
+      "Max Benzaquen",
+      "Lawrence R. Charnas",
+      "K. Fahnestock",
+      "E. A. Stocks",
+      "Bruce D. Trapp",
+      "C. Raine",
+      "P. Spencer"
+    ],
+    "year": 1987,
+    "venue": "Journal of Neuroscience",
+    "doi": "10.1523/JNEUROSCI.07-03-00682.1987",
+    "pmid": "3559707",
+    "url": "https://www.semanticscholar.org/paper/b10f75937fdab490334c937f2942dcbdd9bcdbfe",
+    "abstract": "This study examined Schwann cell behavior during paranodal demyelination induced by beta,beta'-iminodipropionitrile (IDPN). The stimuli for Schwann cell proliferation, extensively studied in vitro, are less well understood in vivo. Most in vivo systems previously used to examine Schwann cell proliferation in disease are dominated by loss of internodal myelin sheaths. As used in this study, IDPN administration produces neurofilamentous axonal swellings and paranodal demyelination, without segment",
+    "tldr": "Results indicate that paranodal demyelination is a sufficient stimulus to excite abundant Schwann cell proliferation; neither internodal dereliction nor myelin breakdown is a necessary stimulus for mitosis."
+  },
+  "CorpusId:11258576": {
+    "title": "A Dual Role of erbB2 in Myelination and in Expansion of the Schwann Cell Precursor Pool",
+    "authors": [
+      "A. Garratt",
+      "O. Voiculescu",
+      "P. Topilko",
+      "P. Charnay",
+      "C. Birchmeier"
+    ],
+    "year": 2000,
+    "venue": "Journal of Cell Biology",
+    "doi": "10.1046/J.1529-8027.2000.005002119.X",
+    "pmid": "10704452",
+    "url": "https://www.semanticscholar.org/paper/1ee931a4cd4d031e37e726a2b67907e728aeb929",
+    "abstract": "Neuregulin-1 provides an important axonally derived signal for the survival and growth of developing Schwann cells, which is transmitted by the ErbB2/ErbB3 receptor tyrosine kinases. Null mutations of the neuregulin-1, erbB2, or erbB3 mouse genes cause severe deficits in early Schwann cell development. Here, we employ Cre-loxP technology to introduce erbB2 mutations late in Schwann cell development, using a Krox20-cre allele. Cre-mediated erbB2 ablation occurs perinatally in peripheral nerves, b",
+    "tldr": "The thickness of the myelin sheath is determined by the axon diameter, and it is suggested that trophic signals provided by the nerve determine the number of times a Schwann cell wraps an axon."
+  },
+  "CorpusId:24349598": {
+    "title": "Serum\u2010free bioprocessing of adult human and rodent skin\u2010derived Schwann cells: implications for cell therapy in nervous system injury",
+    "authors": [
+      "L. Mirfeizi",
+      "J. A. Stratton",
+      "Ranjan Kumar",
+      "Prajay T. Shah",
+      "N. Agabalyan",
+      "Morgan G. Stykel",
+      "R. Midha",
+      "J. Biernaskie",
+      "M. S. Kallos"
+    ],
+    "year": 2017,
+    "venue": "Journal of Tissue Engineering and Regenerative Medicine",
+    "doi": "10.1002/term.2252",
+    "pmid": "28176458",
+    "url": "https://www.semanticscholar.org/paper/fa3dea51f9e8555d4153f2de0cf720b023becfe3",
+    "abstract": "Peripheral nerve injury affects 2.8% of trauma patients with severe cases often resulting in long\u2010lived permanent disability, despite nerve repair surgery. Autologous Schwann cell (SC) therapy currently provides an exciting avenue for improved outcomes for these patients, particularly with the possibility to derive SCs from easily\u2010accessible adult skin. However, due to current challenges regarding the efficient expansion of these cells, further optimization is required before they can be serious",
+    "tldr": "This dataset demonstrates the basis for a scalable bioprocess for the production of SCs, an important step towards clinical use of these cells as an adjunct therapy for nerve repair."
+  },
+  "CorpusId:38848143": {
+    "title": "Rac1 GTPase controls myelination and demyelination",
+    "authors": [
+      "H. Park",
+      "M. Feltri"
+    ],
+    "year": 2011,
+    "venue": "BioArchitecture",
+    "doi": "10.4161/bioa.1.3.16985",
+    "pmid": "21922040",
+    "url": "https://www.semanticscholar.org/paper/ba8e278947f05a5473e52be6182a6fd0880f09d1",
+    "abstract": "After peripheral nerve injuries, Wallerian degeneration starts with a stereotypic fragmentation of myelin sheath into myelin ovoids, which occur near Schmidt-Lantermann incisures (SLI). This demyelination process requires a dramatic change in cytoskeletal structures in Schwann cells. We have recently shown that actin polymerization around SLI is an important step for cleavage of the myelin sheath. We described that Rac1 GTPase regulates actin polymerization in SLI after injury. It has been previ",
+    "tldr": "The findings suggest that Rac-dependent actin polymerization controls both myelination and demyelination in the peripheral nerves."
+  },
+  "CorpusId:2845816": {
+    "title": "Purified Adult Ensheathing Glia Fail to Myelinate Axons under Culture Conditions that Enable Schwann Cells to Form Myelin",
+    "authors": [
+      "G. Plant",
+      "P. Currier",
+      "Ernesto P Cuervo",
+      "Margaret L. Bates",
+      "Yelena Pressman",
+      "M. Bunge",
+      "P. Wood"
+    ],
+    "year": 2002,
+    "venue": "Journal of Neuroscience",
+    "doi": "10.1523/JNEUROSCI.22-14-06083.2002",
+    "pmid": "12122069",
+    "url": "https://www.semanticscholar.org/paper/50a3bc62e8c044e27b539676296564c486b1eaf4",
+    "abstract": "Several studies have suggested that olfactory ensheathing glia (EG) can form Schwann cell (SC)-like myelin. Because of possible misinterpretation attributable to contaminating SCs, the capacity of EG to produce myelin needs to be explored further. Therefore, we compared the abilities of adult EG, purified by immunopanning with p75 antibody, and adult SCs to produce myelin when cocultured with purified dorsal root ganglion neurons (DRGNs) in serum-free and serum-containing media. In both media fo",
+    "tldr": "Adult p75-selected EG from adult animals did not exhibit an SC-like relationship to axons and did not form myelin, demonstrating that myelination by a few SCs remaining in purified DRGN cultures may occur, suggesting that myelin in EG/DRGN cultures could be SC myelin."
+  }
+}

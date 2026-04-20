@@ -1,0 +1,18 @@
+{
+  "atlas_label": "MHCII+ macrophage",
+  "synonyms": ["MHCIIhi macrophage", "MHC class II high macrophage", "MHCII+ macrophage"],
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "atlas_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+  "scope": "fetal",
+  "tissue": "prenatal human skin (7-17 PCW)",
+  "description": "One of four macrophage subsets identified in prenatal human skin (alongside LYVE1+, TML, and iron-recycling macrophages). Annotated using marker genes from Suo et al. (2022). Characterized by high expression of MHC class II genes (HLA-DPA1, HLA-DRA) and CLEC7A, as well as typical macrophage markers F13A1, CD163, and SPP1. Lacks Langerhans cell markers CD207 and CD1A. Also referred to as MHCIIhi in Suo et al. (2022).",
+  "reference_annotations": [
+    {
+      "source": "Suo et al., 2022",
+      "doi": "10.1126/science.abo0510",
+      "label": "MHC class II hi macrophage"
+    }
+  ],
+  "resolution_confidence": "high",
+  "notes": "The MHCII+ macrophage label in the prenatal skin atlas directly corresponds to the MHC class II hi macrophage subset first defined in the cross-organ developmental immune atlas by Suo et al. (2022). The Gopee et al. (2024) atlas adopted the same macrophage subset annotation scheme."
+}

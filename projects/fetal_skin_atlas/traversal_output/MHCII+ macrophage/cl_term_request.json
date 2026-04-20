@@ -1,0 +1,70 @@
+{
+  "cell_type_label": "MHCII+ macrophage",
+  "suggested_label": "MHC class II-high macrophage",
+  "definition": "A tissue-resident macrophage characterized by high expression of MHC class II molecules and the C-type lectin receptor CLEC7A (Dectin-1). In humans, this cell expresses HLA-DPA1 and HLA-DRA (DOI:10.1038/s41586-024-08002-x). This subset is conserved across multiple organs and distinguished from LYVE1-high macrophages by nerve-associated subtissular niche localization (DOI:10.1126/science.aax0519) and lack of CCR2 expression (DOI:10.1126/science.abf7777). It receives moderate contribution from adult monocytes and progressively acquires immune effector functions during prenatal development (DOI:10.1126/science.abo0510).",
+  "parent_term": {
+    "cl_id": "CL:0000864",
+    "cl_term": "tissue-resident macrophage"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0002067",
+    "uberon_term": "dermis"
+  },
+  "logical_axioms": [
+    {
+      "relation": "has high plasma membrane amount",
+      "relation_id": "RO:0015015",
+      "filler": "MHC class II protein complex",
+      "filler_id": "GO:0042613",
+      "notes": "Defining feature: high surface expression of MHC class II molecules distinguishes this macrophage subset from LYVE1-high and other tissue-resident macrophage populations."
+    },
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "dermis",
+      "filler_id": "UBERON:0002067",
+      "notes": "In prenatal skin, this macrophage resides in the dermis within neurovascular microenvironments."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "MHCIIhi macrophage",
+      "scope": "exact",
+      "reference": "DOI:10.1126/science.abo0510"
+    },
+    {
+      "value": "MHCII+ macrophage",
+      "scope": "exact",
+      "reference": "DOI:10.1038/s41586-024-08002-x"
+    },
+    {
+      "value": "MHC class II high macrophage",
+      "scope": "exact",
+      "reference": "DOI:10.1126/science.abf7777"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1126/science.aax0519",
+      "citation": "Chakarov et al. (2019)",
+      "supports": "Identification of MHCIIhi vs LYVE1hi interstitial macrophage populations across tissues in distinct subtissular niches"
+    },
+    {
+      "doi": "10.1126/science.abf7777",
+      "citation": "Dick et al. (2022)",
+      "supports": "Definition of three conserved tissue-resident macrophage subsets (TLF+, CCR2+, MHCIIhi) with distinct origins and life cycles"
+    },
+    {
+      "doi": "10.1126/science.abo0510",
+      "citation": "Suo et al. (2022)",
+      "supports": "Identification of MHC class II hi macrophages in cross-organ prenatal immune atlas; gestational timing of MHCII upregulation"
+    },
+    {
+      "doi": "10.1038/s41586-024-08002-x",
+      "citation": "Gopee et al. (2024)",
+      "supports": "Marker genes (HLA-DPA1, HLA-DRA, CLEC7A) and functional characterization of MHCII+ macrophages in prenatal skin"
+    }
+  ],
+  "justification": "The MHCIIhi macrophage is a conserved tissue-resident macrophage population identified across heart, liver, lung, kidney, brain, adipose, skin, and other organs. It has been defined independently in multiple landmark studies. Dick et al. (2022) established it as one of three conserved tissue-resident macrophage subsets (TLF+, CCR2+, and MHCIIhi). Chakarov et al. (2019) showed the MHCIIhi population localizes to nerve-associated niches distinct from perivascular LYVE1hi macrophages. No existing CL term captures this well-characterized macrophage subset, which is distinguished by high MHC class II expression, CCR2 negativity, nerve-associated niche preference, and distinct ontogeny.",
+  "ntr_markdown": "## New Term Request: MHC class II-high macrophage\n\n### Preferred term label\nMHC class II-high macrophage\n\n### Synonyms\n- MHCIIhi macrophage (exact)\n- MHCII+ macrophage (exact)\n- MHC class II high macrophage (exact)\n\n### Definition\nA tissue-resident macrophage characterized by high expression of MHC class II molecules and the C-type lectin receptor CLEC7A (Dectin-1). In humans, this cell expresses HLA-DPA1 and HLA-DRA (DOI:10.1038/s41586-024-08002-x). This subset is conserved across multiple organs and distinguished from LYVE1-high macrophages by nerve-associated subtissular niche localization (DOI:10.1126/science.aax0519) and lack of CCR2 expression (DOI:10.1126/science.abf7777). It receives moderate contribution from adult monocytes and progressively acquires immune effector functions during prenatal development (DOI:10.1126/science.abo0510).\n\n### Parent cell type term\ntissue-resident macrophage (CL:0000864)\n\n### Anatomical structure\ndermis (UBERON:0002067)\nNote: While described here in the context of prenatal skin, this macrophage subset has been identified across multiple organs.\n\n### Logical axioms\n- subClassOf 'has high plasma membrane amount' some 'MHC class II protein complex' (GO:0042613)\n- subClassOf 'part of' some dermis (UBERON:0002067)\n\n### References\n1. Chakarov S et al. (2019) Two distinct interstitial macrophage populations coexist across tissues in specific subtissular niches. Science. DOI: 10.1126/science.aax0519\n2. Dick SA et al. (2022) Three tissue resident macrophage subsets coexist across organs with conserved origins and life cycles. Science. DOI: 10.1126/science.abf7777\n3. Suo C et al. (2022) Mapping the developing human immune system across organs. Science. DOI: 10.1126/science.abo0510\n4. Gopee N et al. (2024) A prenatal skin atlas reveals immune regulation of human skin morphogenesis. Nature. DOI: 10.1038/s41586-024-08002-x\n\n### Justification\nThe MHCIIhi macrophage is a conserved tissue-resident macrophage population identified across heart, liver, lung, kidney, brain, adipose, skin, and other organs. It has been defined independently by multiple landmark single-cell studies. No existing CL term captures this well-characterized macrophage subset, which is distinguished from other tissue-resident macrophage populations by its high MHC class II expression, CCR2 negativity, nerve-associated niche preference, and distinct ontogeny."
+}

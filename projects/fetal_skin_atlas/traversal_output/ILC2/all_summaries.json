@@ -1,0 +1,44 @@
+[
+  {
+    "source": "Gopee et al. (2024)",
+    "doi": "10.1038/s41586-024-08002-x",
+    "summary": "ILCs including ILC2 are present from early gestation in prenatal human skin (7-17 PCW). ILC2_3 cluster markers include IL1RL1, GATA3, IL7R, TNFRSF18. Some ILC subsets show distinct gene expression profiles between early and late gestation, suggesting functional maturation during development.",
+    "categories": ["development", "markers", "location"]
+  },
+  {
+    "source": "Suo et al. (2022)",
+    "doi": "10.1126/science.abo0510",
+    "summary": "Cross-organ atlas of developing human immune system identifies ILC populations across prenatal tissues including skin. ILCs and NK cells show both enriched and depleted cell neighborhoods across gestation, with progressive development of immune-effector function.",
+    "categories": ["development", "location"]
+  },
+  {
+    "source": "Hernandez-Torres & Stehle (2022)",
+    "doi": "10.3389/fimmu.2022.1040624",
+    "summary": "ILC2 and ILC3 are critical effectors of innate immunity during embryonic development. ILC progenitors seed tissues at prenatal stages, with organ-specific distribution. CRTH2-CD117+ ILC3 among Lin-CD34-CD45+ cells are detectable in skin at 12 PCW. ILC2 progenitors are found in fetal liver and intestine with GATA3 expression.",
+    "categories": ["development", "markers"]
+  },
+  {
+    "source": "Matha et al. (2022)",
+    "doi": "10.3389/fimmu.2022.877005",
+    "summary": "ILC precursors and ILC2s can be detected in the fetal intestine, lung and skin during embryonic development in mice. The majority of adult ILC2s seems to be neonatally derived. ILC2 expansion is dependent on IL-33 and IL-7 signaling. Tissue resident and circulating ILC2s are present in the skin.",
+    "categories": ["development", "location", "function"]
+  },
+  {
+    "source": "Kobayashi et al. (2022)",
+    "doi": "10.3389/fimmu.2022.885642",
+    "summary": "ILC2s adapt cellular phenotypes to tissue location. Dermis and subcutis ILC2s display different profiles. ILC2s in skin show plasticity, co-expressing ILC3 markers RORC and AHR. Single-cell RNAseq reveals discrete ILC2 cluster expressing GATA3 and RORA in human skin.",
+    "categories": ["markers", "location", "function"]
+  },
+  {
+    "source": "Kim et al. (2025)",
+    "doi": "10.4110/in.2025.25.e40",
+    "summary": "Skin ILC2s play significant roles in tissue repair and regeneration. When a wound occurs, IL-33 secreted by damaged keratinocytes activates skin ILC2s to secrete IL-5 and IL-13, promoting re-epithelialization and collagen deposition. TSLP and IL-18 are key activating cytokines for skin ILC2s.",
+    "categories": ["function", "location"]
+  },
+  {
+    "source": "Verma et al. (2025)",
+    "doi": "10.3390/ijms26125555",
+    "summary": "Tissue-resident ILC2 cells are seeded during perinatal and neonatal periods. ILC2 originate from common precursors in fetal liver, fetal intestine, and bone marrow. Fetal intestinal progenitors express ILC1 and ILC3 transcription factors T-bet and RORgammaT in addition to GATA3.",
+    "categories": ["development", "markers"]
+  }
+]

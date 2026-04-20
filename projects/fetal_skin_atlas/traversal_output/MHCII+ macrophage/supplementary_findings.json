@@ -1,0 +1,52 @@
+{
+  "cell_type": "MHCII+ macrophage",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "markers": {
+    "defining_markers": [
+      {"gene": "HLA-DPA1", "evidence": "atlas paper, MHC class II component", "type": "positive"},
+      {"gene": "HLA-DRA", "evidence": "atlas paper, MHC class II component", "type": "positive"},
+      {"gene": "CLEC7A", "evidence": "atlas paper, C-type lectin receptor (Dectin-1)", "type": "positive"}
+    ],
+    "shared_macrophage_markers": [
+      {"gene": "F13A1", "evidence": "atlas paper, coagulation factor XIII A chain", "type": "positive"},
+      {"gene": "CD163", "evidence": "atlas paper, scavenger receptor", "type": "positive"},
+      {"gene": "SPP1", "evidence": "atlas paper, osteopontin", "type": "positive"}
+    ],
+    "negative_markers": [
+      {"gene": "CD207", "evidence": "atlas paper, lacks LC marker langerin", "type": "negative"},
+      {"gene": "CD1A", "evidence": "atlas paper, lacks LC marker CD1a", "type": "negative"}
+    ]
+  },
+  "location": {
+    "tissue": "prenatal human skin dermis",
+    "microenvironments": ["ME1 (early neurovascular microenvironment)", "ME5 (late neurovascular microenvironment)"],
+    "co_localization": "Predicted to co-locate with endothelial cells in neurovascular microenvironments"
+  },
+  "functions": {
+    "angiogenesis": "Gene ontology analysis showed MHCII+ macrophages express gene programs that drive angiogenesis (Supplementary Tables 23-26)",
+    "antigen_presentation": "High expression of MHC class II genes suggests capacity for antigen presentation, though Suo et al. (2022) noted that antigen presentation may not be a key function of macrophages during early gestation, with MHCII upregulation occurring between 10-12 PCW coinciding with adaptive lymphocyte expansion",
+    "scarless_healing": "Part of the macrophage compartment implicated in contributing to scarless healing properties of prenatal skin"
+  },
+  "developmental_context": {
+    "gestational_timing": "MHCII hi macrophage populations enriched in later stages of gestation (Suo et al., 2022)",
+    "immune_effector_acquisition": "Upregulated genes encoding immune effector functions in later gestation",
+    "annotation_source": "Macrophage subsets annotated using marker genes from Suo et al. (2022)"
+  },
+  "evidence_quotes": [
+    {
+      "text": "Gene ontology analysis showed that the four macrophage subsets (LYVE1+, MHCII+, TML and iron-recycling) expressed gene programs that drive angiogenesis",
+      "source": "Gopee et al., 2024",
+      "section": "Macrophages support prenatal skin angiogenesis"
+    },
+    {
+      "text": "acquisition of macrophage antigen-presentation properties (e.g., MHCII upregulation) between 10 and 12 pcw coincided with the expansion of adaptive lymphocytes",
+      "source": "Suo et al., 2022",
+      "section": "Heterogeneity of prenatal myeloid cells across organs and gestation"
+    },
+    {
+      "text": "a large fraction of neighborhoods within the iron-recycling and MHCII hi macrophage populations were enriched in later stages of gestation. We found that these subpopulations upregulated genes encoding for immune effector functions",
+      "source": "Suo et al., 2022",
+      "section": "Heterogeneity of prenatal myeloid cells across organs and gestation"
+    }
+  ]
+}

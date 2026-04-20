@@ -1,0 +1,19 @@
+{
+  "markers": [
+    {"gene": "IL1B", "evidence_type": "DE marker / scRNA-seq", "source_table": "Suo et al. 2022 Fig. 2C-E"},
+    {"gene": "CD14", "evidence_type": "canonical marker", "source_table": "Gopee et al. 2024 Supplementary Table 3"},
+    {"gene": "CCR2", "evidence_type": "DE marker / scRNA-seq", "source_table": "Suo et al. 2022"},
+    {"gene": "S100A8", "evidence_type": "DE marker / scRNA-seq", "source_table": "Suo et al. 2022"},
+    {"gene": "S100A9", "evidence_type": "DE marker / scRNA-seq", "source_table": "Suo et al. 2022"}
+  ],
+  "other_findings": [
+    {"finding": "IL1Bhi monocytes represent the peripheral tissue-adapted monocyte state, enriched in non-bone-marrow organs", "category": "annotation", "source_table": "Suo et al. 2022 Fig. 2C"},
+    {"finding": "CCR2hi monocytes in peripheral organs upregulate IL1B and TNF-alpha signalling genes compared to bone marrow CCR2hi monocytes", "category": "gene expression", "source_table": "Suo et al. 2022 Fig. 2D"},
+    {"finding": "Monocyte maturation in peripheral tissues represents a conserved process of proliferation and differentiation", "category": "developmental trajectory", "source_table": "Suo et al. 2022 Discussion"}
+  ],
+  "evidence_quotes": [
+    {"quote": "Among CCR2 hi monocytes, we distinguished bone marrowand peripheral organ-specific subpopulations", "source_file": "Suo et al. 2022 (CorpusId:248122197)", "context": "Distinction between bone marrow and tissue CCR2hi monocytes"},
+    {"quote": "Bone marrow CCR2 hi monocytes expressed proliferation genes, whereas peripheral organ CCR2 hi monocytes upregulated IL1B and other TNF-a signaling genes", "source_file": "Suo et al. 2022 (CorpusId:248122197)", "context": "Transcriptional changes in tissue-adapted monocytes"},
+    {"quote": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW", "source_file": "Gopee et al. 2024 (CorpusId:273400864)", "context": "Temporal appearance of immune cells in prenatal skin"}
+  ]
+}

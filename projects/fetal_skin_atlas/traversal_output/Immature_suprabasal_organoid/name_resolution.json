@@ -1,0 +1,10 @@
+{
+  "label": "Immature suprabasal",
+  "resolved_names": [
+    "immature suprabasal keratinocyte"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Gopee et al. (2024) annotate 'Immature suprabasal' as an immature IFE cell state present from 7 PCW, representing early differentiating suprabasal keratinocytes."
+}

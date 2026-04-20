@@ -1,0 +1,9 @@
+{
+  "proposed_label": "pre-dermal condensate cell",
+  "proposed_definition": "A fibroblast progenitor cell in developing skin that migrates toward the epidermis and aggregates to form the dermal condensate during hair follicle initiation. This cell originates from early fibroblasts, expresses CXCL12 and CLDN11, and interacts with epidermal basal cells through CXCL12-ACKR3 signalling to coordinate collective migration and dermal invagination.",
+  "parent_term": "CL:0002620 (skin fibroblast)",
+  "distinguishing_features": "Migratory fibroblast progenitor expressing CXCL12, CLDN11, ADAMTS1; aggregates into dermal condensate during HF initiation",
+  "references": [
+    "DOI:10.1038/s41586-024-08002-x"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "label": "Mono",
+  "resolved_names": [
+    "Monocyte"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "In Extended Data Figure 6 and related supplementary tables of the atlas paper (DOI: 10.1038/s41586-024-08002-x), the authors annotate immune clusters with the label 'Mono' and refer to them explicitly as 'Monocyte' in cluster legends and text. The tissue context is skin, and the label is mapped directly in adult and prenatal datasets."
+}

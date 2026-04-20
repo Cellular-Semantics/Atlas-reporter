@@ -1,0 +1,18 @@
+{
+  "markers": [
+    {"gene": "CD34", "evidence_type": "progenitor marker / flow cytometry", "source_table": "Suo et al. 2022; Miah et al. 2021"},
+    {"gene": "CD117 (KIT)", "evidence_type": "progenitor marker", "source_table": "CL definition for GMP (CL:0000557)"},
+    {"gene": "CD123 (IL3RA)", "evidence_type": "progenitor marker", "source_table": "CL definition for GMP; Alsinet et al. 2022"},
+    {"gene": "CD38", "evidence_type": "progenitor marker", "source_table": "CL definition for GMP (CL:0000557)"},
+    {"gene": "CD45RA", "evidence_type": "progenitor marker", "source_table": "CL definition for GMP (CL:0000557)"}
+  ],
+  "other_findings": [
+    {"finding": "Myeloid progenitors detected in prenatal thymus, spleen, skin, and kidney -- indicating system-wide haematopoiesis beyond conventional primary haematopoietic organs", "category": "annotation", "source_table": "Suo et al. 2022 Fig. 4A"},
+    {"finding": "Fetal liver produces the first GMPs and blood monocytes at 4-5 PCW", "category": "developmental origin", "source_table": "Miah et al. 2021; Hoeffel and Ginhoux 2015"},
+    {"finding": "Myeloid progenitors from YSMP colonise the liver, contributing to fetal haematopoiesis until mid-pregnancy", "category": "developmental origin", "source_table": "Alsinet et al. 2022"}
+  ],
+  "evidence_quotes": [
+    {"quote": "we detected B cell progenitors in almost all prenatal organs, megakaryocyte/erythroid progenitors in developing spleen and skin, and myeloid progenitors in the thymus, spleen, skin, and kidney", "source_file": "Suo et al. 2022 (CorpusId:248122197)", "context": "System-wide haematopoiesis in prenatal peripheral organs"},
+    {"quote": "These HSCs rapidly enter the circulation and seed the fetal liver (FL), which produces the first population of granulocyte-monocyte progenitors (GMPs) and blood monocytes at 4-5 PCW", "source_file": "Miah et al. 2021 (CorpusId:233175971)", "context": "Origin of GMPs in fetal liver"}
+  ]
+}

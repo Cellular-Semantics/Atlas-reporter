@@ -1,0 +1,68 @@
+{
+  "markers": [
+    {
+      "gene": "CD4",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "CD3",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "IL7R",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "CCR7",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "LEF1",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "T cells emerged in prenatal skin from around 10 PCW, later than innate immune cells such as macrophages and ILCs",
+      "category": "developmental timing",
+      "source_table": "Fig. 1c, Extended Data Fig. 1d, Supplementary Table 4"
+    },
+    {
+      "finding": "Single-cell alpha-beta TCR sequencing was generated to accurately resolve T cell subsets",
+      "category": "methodology",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "finding": "Prenatal skin matrix cells expressed CXCL14, a chemokine reported to recruit regulatory T cells, highlighting potential Treg accumulation during hair follicle matrix differentiation",
+      "category": "functional interaction",
+      "source_table": "Extended Data Fig. 3f"
+    },
+    {
+      "finding": "Treg cells are known to localize around the hair follicle in late second trimester (around 21 PCW) and in postnatal skin",
+      "category": "spatial location",
+      "source_table": "Main text (references 23, 24)"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW",
+      "source_file": "Main text, Fig. 1c",
+      "context": "Differential abundance analysis across gestation"
+    },
+    {
+      "quote": "Single-cell alpha-beta T cell receptor (TCR) sequencing data were generated to accurately resolve T cell subsets",
+      "source_file": "Main text",
+      "context": "Atlas methodology"
+    },
+    {
+      "quote": "prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (Treg) cells",
+      "source_file": "Main text, Extended Data Fig. 3f",
+      "context": "Hair follicle matrix differentiation and Treg recruitment"
+    }
+  ]
+}

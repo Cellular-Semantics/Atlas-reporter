@@ -1,0 +1,28 @@
+{
+  "markers": [
+    {
+      "gene": "KRT35",
+      "evidence_type": "hair cortex keratin",
+      "source_table": "literature"
+    },
+    {
+      "gene": "KRT85",
+      "evidence_type": "hair cortex keratin",
+      "source_table": "literature"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Cuticle/cortex cells are part of the IRS trajectory from POSTN+ basal cells",
+      "category": "development",
+      "source_table": "Fig. 2d, Supplementary Table 7"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "IRS trajectory, involving placode, matrix, cuticle/cortex and IRS",
+      "source_file": "Gopee et al. 2024",
+      "context": "IRS trajectory"
+    }
+  ]
+}

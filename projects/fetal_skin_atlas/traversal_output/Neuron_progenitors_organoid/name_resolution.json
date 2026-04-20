@@ -1,0 +1,10 @@
+{
+  "label": "Neuron progenitors",
+  "resolved_names": [
+    "neuron progenitor"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Neuron progenitors in the SkO are neural-lineage progenitor cells. CL:0011020 (neural progenitor cell) is a broad match."
+}

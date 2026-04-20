@@ -1,0 +1,10 @@
+{
+  "label": "Proliferating melanoblasts",
+  "resolved_names": [
+    "proliferating melanoblast"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Proliferating melanoblasts are a mitotically active subpopulation of melanoblasts. CL:0000541 (melanoblast) is the closest match."
+}

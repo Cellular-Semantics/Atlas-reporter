@@ -1,0 +1,11 @@
+{
+  "label": "Capillary arterioles",
+  "resolved_names": [
+    "Capillary arterioles",
+    "SkO capillary arterioles"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Capillary arterioles identified in SkO but with limited differentiation potential compared to prenatal skin (Fig. 4d)."
+}

@@ -1,0 +1,28 @@
+{
+  "markers": [
+    {
+      "gene": "KRT75",
+      "evidence_type": "known CL marker",
+      "source_table": "literature"
+    },
+    {
+      "gene": "KRT6",
+      "evidence_type": "known CL marker",
+      "source_table": "literature"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Companion layer (CL) part of the ORS/CL differentiation trajectory from POSTN+ basal cells",
+      "category": "development",
+      "source_table": "Fig. 2d, Supplementary Table 7"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "ORS/CL trajectory, comprising DPYSL2 + basal cells, ORS and CL",
+      "source_file": "Gopee et al. 2024",
+      "context": "CL trajectory"
+    }
+  ]
+}

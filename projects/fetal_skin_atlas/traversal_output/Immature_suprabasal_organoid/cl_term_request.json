@@ -1,0 +1,9 @@
+{
+  "proposed_label": "immature suprabasal keratinocyte",
+  "proposed_definition": "A keratinocyte located above the basal layer in the embryonic epidermis, present from approximately 7 post-conception weeks in humans. This cell represents an early differentiating state that precedes the mature suprabasal keratinocyte of the interfollicular epidermis and decreases after 11 post-conception weeks during the transition from embryonic to fetal skin.",
+  "parent_term": "CL:0000312 (keratinocyte)",
+  "distinguishing_features": "Immature suprabasal state, present in embryonic (7-11 PCW) epidermis, precedes mature suprabasal IFE cells",
+  "references": [
+    "DOI:10.1038/s41586-024-08002-x"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "label": "LMCD1+ mural cell",
+  "resolved_names": [
+    "LMCD1+ mural cell",
+    "LIM and cysteine-rich domains 1 positive mural cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) identifies 'LMCD1+ mural cell' as a fine-grained annotation under the broad 'Mural cell' category in prenatal skin (Supplementary Table 3, cell_type_annotations.json). LMCD1 (LIM and cysteine-rich domains 1) is a transcriptional cofactor involved in cardiac and vascular development. This likely represents a pericyte-like mural cell subtype."
+}

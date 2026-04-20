@@ -1,0 +1,135 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "podoplanin and PROX1 were used interchangeable as lymphatic markers for various analyses in this study",
+      "lymphatic capillaries showed the expression of podoplanin, a lymphatic endothelium-specific marker, and a faint CD31 co-expression (white arrows)"
+    ],
+    "summary": "This snippet identifies podoplanin and PROX1 as interchangeable markers for lymphatic endothelium (including LE1) and describes that lymphatic endothelial cells co-express podoplanin and faint levels of CD31, distinguishing them from blood endothelial cells.",
+    "categories": [
+      "markers",
+      "location",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:247606142",
+    "source_title": "The Role of CD200\u2013CD200 Receptor in Human Blood and Lymphatic Endothelial Cells in the Regulation of Skin Tissue Inflammation",
+    "source_authors": "Dominic R\u00fctsche et al.",
+    "source_year": null,
+    "snippet": "The distribution of CD200 ligand on capillaries was examined by immunofluorescence in normal human juvenile/adult (j/a) skin as well as in fetal (f) skin (Figure 1). To distinguish between human blood and lymphatic capillaries, we stained them specifically with human CD31 (red, Figure 1a,b) and podoplanin (white, Figure 1a',b') antibody, respectively. \n\nThe stainings of podoplanin/CD31-positive lymphatic capillaries in human j/a and f skin were further confirmed by immunofluorescence analysis for PROX1, which is a nuclear lymphatic lineage marker (Supplementary Figure S1a-d). Therefore, podoplanin and PROX1 were used interchangeable as lymphatic markers for various analyses in this study. \n\nWhereas blood capillaries of both j/a and f skin samples were only CD31-positive (empty arrows), lymphatic capillaries showed the expression of podoplanin, a lymphatic endothelium-specific marker, and a faint CD31 co-expression (white arrows). The overall quantification of capillaries located in the dermis of both skin types revealed a significantly higher number of blood capillaries (CD31 + Podo \u2212 ) as compared to the number of lymphatic capillaries (CD31 + Podo + ) (Figure 1c). Specifically, in the j/a skin, blood capillaries constituted 68.8 \u00b1 13.0%, while lymphatic capillaries comprised 31.0 \u00b1 10.6% of all capillaries presented in this skin type (p < 0.0001). In fetal skin, blood capillaries represented 73.0 \u00b1 19.0%, whereas lymphatic capillaries counted for 27.0 \u00b1 13.0% of all capillaries (p < 0.001). \n\nFurther, we detected CD200 on CD31 + Podo \u2212 blood capillaries and CD31 + Podo + lymphatic capillaries in j/a (Figure 1a\"') as well as in f skin (Figure 1b\"')."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "lymphatic endothelium represents 31.0 \u00b1 10.6% of all vessels present in this skin type",
+      "lymphatic vessels constitute 27.0 \u00b1 13% of all capillaries",
+      "significantly higher expression of CD200 on j/a lymphatic capillaries as compared to the j/a blood capillaries (67.0 \u00b1 16% vs. 14.0 \u00b1 2.0%, respectively, *** p < 0.0001)",
+      "blood capillaries (CD31 + Podo \u2212 ) which are mainly negative for CD200 (empty arrows), as well as the presence of lymphatic capillaries (CD31 + Podo + ) showing the expression of CD200 marker (white filled arrows)"
+    ],
+    "summary": "This snippet quantifies the proportion of lymphatic endothelial capillaries in juvenile/adult and fetal skin and shows that CD200 is highly expressed on lymphatic (CD31 + Podo +) capillaries compared to blood capillaries.",
+    "categories": [
+      "location",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:247606142",
+    "source_title": "The Role of CD200\u2013CD200 Receptor in Human Blood and Lymphatic Endothelial Cells in the Regulation of Skin Tissue Inflammation",
+    "source_authors": "Dominic R\u00fctsche et al.",
+    "source_year": null,
+    "snippet": "(c) Quantification of blood and lymphatic capillaries in j/a and f skin. In the dermis of j/a, blood capillaries constitute approximately 68.8 \u00b1 13%, whereas lymphatic endothelium represents 31.0 \u00b1 10.6% of all vessels present in this skin type (*** p < 0.0001). In the f skin, blood endothelium comprises 73.0 \u00b1 19% while lymphatic vessels constitute 27.0 \u00b1 13% of all capillaries (** p < 0.001). (d) Quantification of CD200 expression on blood and lymphatic capillaries of j/a or f skin. Note the significantly higher expression of CD200 on j/a lymphatic capillaries as compared to the j/a blood capillaries (67.0 \u00b1 16% vs. 14.0 \u00b1 2.0%, respectively, *** p < 0.0001), whereas the expression of CD200 was similar in blood and lymphatic capillaries of human f skin (44.0 \u00b1 8.0% vs. 64.0 \u00b1 5.0%, respectively, p = ns), n = 5 independent j/a and fetal skin donors each. Cell nuclei are stained with Hoechst (blue). Scale bars 100 \u03bcm. Immunofluorescence triple staining of juvenile/adult (j/a) human skin with antibodies against CD31 (a) for human blood capillaries (red), podoplanin (a') depicting human lymphatic endothelium (white), and CD200 (a\") (green). (a\"') represents a merged confocal Z stack. Whereas blood capillaries stain only CD31 + (empty arrows), lymphatic capillaries are CD31 + Podo + (white arrows). Note the presence of blood capillaries (CD31 + Podo \u2212 ) which are mainly negative for CD200 (empty arrows), as well as the presence of lymphatic capillaries (CD31 + Podo + ) showing the expression of CD200 marker (white filled arrows)."
+  },
+  {
+    "snippet_index": 7,
+    "quotes": [
+      "we detected CD200 on CD31 + Podo \u2212 blood capillaries and CD31 + Podo + lymphatic capillaries in j/a (Figure 1a\"') as well as in f skin (Figure 1b\"'). Quantification revealed an enhanced expression of CD200 on lymphatic (68 \u00b1 73%) as compared to blood capillaries (16 \u00b1 97%) in the dermis of j/a skin (p = 0.0004) (Figure 1d).",
+      "lymphatic capillaries are CD31 + Podo + (white arrows). Note the presence of blood capillaries (CD31 + Podo \u2212 ) which are mainly negative for CD200 (empty arrows), as well as the presence of lymphatic capillaries (CD31 + Podo + ) showing the expression of CD200 marker (white filled arrows)."
+    ],
+    "summary": "This snippet further confirms that lymphatic endothelial cells (CD31 + Podo +) in both juvenile/adult and fetal skin express higher levels of the CD200 marker compared to blood capillaries.",
+    "categories": [
+      "markers",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:247606142",
+    "source_title": "The Role of CD200\u2013CD200 Receptor in Human Blood and Lymphatic Endothelial Cells in the Regulation of Skin Tissue Inflammation",
+    "source_authors": "Dominic R\u00fctsche et al.",
+    "source_year": null,
+    "snippet": "Further, we detected CD200 on CD31 + Podo \u2212 blood capillaries and CD31 + Podo + lymphatic capillaries in j/a (Figure 1a\"') as well as in f skin (Figure 1b\"'). Quantification revealed an enhanced expression of CD200 on lymphatic (68 \u00b1 73%) as compared to blood capillaries (16 \u00b1 97%) in the dermis of j/a skin (p = 0.0004) (Figure 1d). By contrast, the differences between the CD200 expression on lymphatics (64 \u00b1 5%) and blood capillaries (44 \u00b1 8%) of fetal skin were not statistically significant (p = ns). Immunofluorescence triple staining of juvenile/adult (j/a) human skin with antibodies against CD31 (a) for human blood capillaries (red), podoplanin (a') depicting human lymphatic endothelium (white), and CD200 (a'') (green). (a''') represents a merged confocal Z stack. Whereas blood capillaries stain only CD31 + (empty arrows), lymphatic capillaries are CD31 + Podo + (white arrows). Note the presence of blood capillaries (CD31 + Podo \u2212 ) which are mainly negative for CD200 (empty arrows), as well as the presence of lymphatic capillaries (CD31 + Podo + ) showing the expression of CD200 marker (white filled arrows). (b-b''') Immunofluorescence triple staining of human fetal skin (f skin) against CD31 (b) delineating human blood capillaries (red), podoplanin (b') depicting human lymphatic capillaries (white), and CD200 (b'') (green). Note the presence of blood and lymphatic capillaries expressing CD200 (empty and filled white arrows, respectively). (b''') represents a merged overlay. (c) Quantification of blood and lymphatic capillaries in j/a and f skin."
+  },
+  {
+    "snippet_index": 12,
+    "quotes": [
+      "we detected anti-lymphatic vessel endothelial hyaluronan receptor 1 (LYVE-1) immunoreactivity in serial sections and overlaid them during SEM observation.",
+      "On days 2 and 5, spherical cells, probably myeloid cells, were attached and fused to the LYVE-1-positive lymphatic vessel walls.",
+      "On day 8, spherical cells were converted to string-shaped cells, forming a new lymphatic vessel wall resembling an intraluminal pillar."
+    ],
+    "summary": "This snippet describes how LYVE-1, a marker for lymphatic endothelial cells, was used to identify lymphatic vessels during lymphangiogenesis observed by SEM in a mouse model. It also shows dynamic changes in LYVE-1+ cells during regeneration, from spherical myeloid cells to string-shaped cells forming new vessel walls.",
+    "categories": [
+      "markers",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:263211947",
+    "source_title": "Scanning Electron Microscopy Analysis of Lymphatic Regeneration in a Secondary Lymphedema Mouse Model: A Preliminary Study",
+    "source_authors": "Kenji Hayashida et al.",
+    "source_year": null,
+    "snippet": "Under inflammatory conditions including lymphatic disorders, bone marrow-derived myeloid cells often express lymphatic endothelial cell (LEC) markers, and these cells are then called LEC progenitor cells, which extend lymphatic vessels by fusing with existing lymphatic vessels. However, studies on the mechanism of lymphatic regeneration using three-dimensional images of lymphatic structures are limited. In this study, scanning electron microscopy (SEM) was used to observe the three-dimensional structure of lymphangiogenesis in a mouse model of secondary lymphedema. The model was established in C57BL/6J mice via circumferential incision in the inguinal region of the left hind limb. Skin samples were obtained from the lymphedema region on days 2, 5, and 8 after surgery. To determine lymphatic vessel positions using SEM analysis, we detected anti-lymphatic vessel endothelial hyaluronan receptor 1 (LYVE-1) immunoreactivity in serial sections and overlaid them during SEM observation. On days 2 and 5, spherical cells, probably myeloid cells, were attached and fused to the LYVE-1-positive lymphatic vessel walls. On day 8, spherical cells were converted to string-shaped cells, forming a new lymphatic vessel wall resembling an intraluminal pillar. Our results showed the newly formed lymphatic vessel wall extended into the lumen, suggesting intussusceptive lymphangiogenesis."
+  },
+  {
+    "snippet_index": 19,
+    "quotes": [],
+    "summary": "This snippet shows that LYVE-1 is used as a marker to immunoselect human dermal lymphatic endothelial cells (HDLEC), which display authentic expression of Prox-1, LYVE-1, podoplanin, and CD31 but not blood EC markers. This indicates LYVE-1 as a robust marker for lymphatic endothelial identity.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:1425837",
+    "source_title": "Binding of Hyaluronan to the Native Lymphatic Vessel Endothelial Receptor LYVE-1 Is Critically Dependent on Receptor Clustering and Hyaluronan Organization*",
+    "source_authors": "William I. Lawrance et al.",
+    "source_year": null,
+    "snippet": "Primary Lymphatic Endothelial Cells and Immortalized Cell Lines-Primary human dermal lymphatic endothelial cells (HDLEC) were isolated from the skin of healthy adults undergoing elective plastic surgery at the John Radcliffe Hospital (Oxford, UK) as described previously (43) with full United Kingdom ethical approval. Briefly, skin was digested overnight at 4 \u00b0C with Dispase (2 mg/ml; Calbiochem) in PBS, and dermal cells were recovered by scraping, followed by passage through a 70-m cell strainer, prior to initial adherent culture in 0.1% gelatin-coated flasks in complete medium (EGM-2 MV; Lonza). Cells were then lifted with Accutase (PAA Laboratories), and HDLEC were immunoselected using mouse anti-human LYVE-1 mAb 8C and anti-mouse IgG MACS magnetic bead preparations (Miltenyi Biotec) followed by culture in 0.1% gelatin (Sigma)-coated flasks in EGM-2 MV. Cultures were used at early passage (\u05455) and consistently displayed authentic expression of lymphatic endothelial cell markers Prox-1, LYVE-1, podoplanin, and CD31 and absence of blood endothelial cell markers PAL-E and CD44, as assessed by immunofluo-rescence microscopy and flow cytometry on a Cyan ADP Analyzer (Dako) using standard parameters. \n\nHEK293T human fibroblasts and the human Jurkat T cell line used for LYVE-1 transfections were obtained from the Cancer Research UK cell bank (Clare Hall, London, UK) and as a kind gift from Prof. S. J. Davis (Weatherall Institute of Molecular Medicine, University of Oxford), respectively."
+  },
+  {
+    "snippet_index": 20,
+    "quotes": [
+      "Primary adult human dermal lymphatic endothelial cells (LECs) were purchased from LONZA (CC-2810). The certificate analysis sheet supplied by LONZA for each vial of cells indicated that greater than 95% of the cells were LECs (CD31 and podoplanin double-positive). This was determined by FACS."
+    ],
+    "summary": "This snippet indicates that lymphatic endothelial cells (LE1) from human dermis are double positive for CD31 and podoplanin, confirming their identity by flow cytometry.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:5962290",
+    "source_title": "Phosphorylation of Akt and ERK1/2 Is Required for VEGF-A/VEGFR2-Induced Proliferation and Migration of Lymphatic Endothelium",
+    "source_authors": "M. Dellinger et al.",
+    "source_year": null,
+    "snippet": "Primary adult human dermal lymphatic endothelial cells (LECs) were purchased from LONZA (CC-2810). The certificate analysis sheet supplied by LONZA for each vial of cells indicated that greater than 95% of the cells were LECs (CD31 and podoplanin double-positive). This was determined by FACS. Cells were cultured on rat-tail collagen 1 (50 mg/ml) or 1% gelatin coated plastic ware in EGM-2MV media (LONZA CC-3125). Cells were not used past passage 6."
+  },
+  {
+    "snippet_index": 27,
+    "quotes": [
+      "Primary human dermal lymphatic endothelial cells (LECs) isolated from adult skin were purchased from PromoCell GmbH (Heidelberg, Germany, Lot # 478Z013.2)",
+      "we performed quantitative real-time PCR (qRT-PCR) experiments to determine the mRNA expression of key LEC markers, FLT4 (VEGFR3), LYVE-1 and podoplanin (PDPN) in these LECs and compared them with human aortic endothelial cells (HAoEC, Lonza) (S1 Table ). The qRT-PCR data demonstrated significantly higher mRNA expression of all these markers in LECs compared with HAoEC"
+    ],
+    "summary": "This snippet provides evidence that dermal lymphatic endothelial cells (LE1) express key markers FLT4 (VEGFR3), LYVE-1, and podoplanin (PDPN), with higher expression compared to human aortic endothelial cells.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:264515542",
+    "source_title": "Hydrogen sulfide donor activates AKT-eNOS signaling and promotes lymphatic vessel formation",
+    "source_authors": "R. Aithabathula et al.",
+    "source_year": null,
+    "snippet": "Primary human dermal lymphatic endothelial cells (LECs) isolated from adult skin were purchased from PromoCell GmbH (Heidelberg, Germany, Lot # 478Z013.2) and cultured in endothelial cell growth medium MV2 (PromoCell) supplemented with endothelial growth bullet kit along with 5% fetal bovine serum (FBS) and 1% penicillin (100 IU/mL)-streptomycin (100 ug/mL) solution. LEC culture was maintained at 37\u02daC with 5% CO 2 in a humidified incubator, and cells were used till passage 8 for experiments. In order to validate the identity of these cells, we performed quantitative real-time PCR (qRT-PCR) experiments to determine the mRNA expression of key LEC markers, FLT4 (VEGFR3), LYVE-1 and podoplanin (PDPN) in these LECs and compared them with human aortic endothelial cells (HAoEC, Lonza) (S1 Table ). The qRT-PCR data demonstrated significantly higher mRNA expression of all these markers in LECs compared with HAoEC (S1 Fig) . Western blot SDS-PAGE and Western blotting were performed according to standard procedures [15]. Protein concentrations in cell lysates were quantified using Pierce BCA Protein Assay Kit (Thermo Scientific). Equal amounts of proteins were separated using SDS-PAGE gels, transferred onto nitrocellulose membranes (Li-Cor Biosciences), and membranes were blocked with intercept blocking buffer. Blocked membranes were probed with the following primary antibodies: phospho-eNOS (Ser1177), total eNOS, phospho-AKT (Ser473), total AKT, phospho-ERK1/2 (Thr202/Tyr204), total ERK1/2 and GAPDH. Membranes probed with primary antibodies were incubated with IRDye-conjugated secondary antibodies (Li-Cor Biosciences), washed, and scanned using an Odyssey DLx Infrared Imaging System."
+  },
+  {
+    "snippet_index": 28,
+    "quotes": [
+      "we performed FACS-based cell sorting on single-cell suspensions to isolate live CD45 \u2212 CD31 + PDPN + LECs from each tissue (Fig. 3, A and B; Fig. S2, A and B; and Table S1).",
+      "All LECs derived from skin and s.c. adipose tissue expressed the pan-endothelial genes PECAM1 (CD31) and CLDN5 and the lymphatic markers PDPN, PROX1, and FLT4 (VEGFR-3) (Fig. 3, F and G; and Fig. S3, A-E)."
+    ],
+    "summary": "This snippet shows that LECs (LE1) from skin and adipose tissue are characterized by expression of CD31, PDPN, PROX1, and FLT4 (VEGFR-3), and are isolated as CD45-negative cells.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:282747485",
+    "source_title": "Transcriptomics- and 3D imaging\u2013based characterization of the lymphatic vasculature in human skin",
+    "source_authors": "Aline Bauer et al.",
+    "source_year": null,
+    "snippet": "To further investigate the heterogeneity of LECs present in human afferent LVs, we performed scRNA-seq of LECs isolated from human skin or from s.c. adipose tissue. To this end, fresh tissue samples were obtained from elective dermolipectomy surgeries performed on the abdomen, arm, or thigh of healthy, albeit obese patients. Following manual separation of the skin from the underlying s.c. adipose tissue and subsequent tissue digestion, we performed FACS-based cell sorting on single-cell suspensions to isolate live CD45 \u2212 CD31 + PDPN + LECs from each tissue (Fig. 3, A and B; Fig. S2, A and B; and Table S1). LECs were isolated from seven donors (Table S1), and subjected to scRNAseq using 10x Genomics, which yielded a total of 21,374 sequenced cells (9,417 from skin, 7,252 from s.c. adipose tissue, and 4,705 unassigned to either origin; see Table S1 for details). Unsupervised clustering revealed seven subsets of LECs in both skin and adipose tissue-derived samples, which we assigned as capillary, pre-collector, collector, valve, and proliferative subsets, based on previously reported lymphatic marker gene expression (Arasa et al., 2021;Gonzalez-Loyola et al., 2021;Hernandez Vasquez et al., 2021) and relative positioning on the UMAP (Fig. 3, C-E; and Table S2 for the top 20 cluster markers). All LECs derived from skin and s.c. adipose tissue expressed the pan-endothelial genes PECAM1 (CD31) and CLDN5 and the lymphatic markers PDPN, PROX1, and FLT4 (VEGFR-3) (Fig. 3, F and G; and Fig. S3, A-E). Most subsets appeared relatively close in the UMAP plot, i.e., shared overlapping gene signatures; however, the most distinctive subsets were the valve and the proliferative LECs."
+  }
+]

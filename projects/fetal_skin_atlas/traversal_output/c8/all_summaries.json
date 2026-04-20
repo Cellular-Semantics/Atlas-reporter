@@ -1,0 +1,20 @@
+{
+  "cell_type": "c8",
+  "summaries": [
+    {
+      "paper": "Reynolds et al. (2021)",
+      "doi": "10.1126/science.aba6500",
+      "summary": "Defines c8 as 'Differentiated KC*' (inflammatory differentiated keratinocytes) in adult human skin. These cells co-express lower levels of undifferentiated (TP63, ITGA6) and differentiated (KRT1, KRT10) transcripts but additionally express ICAM1, TNF and CCL20. They express higher levels of genes associated with inflammatory ichthyoses and severe atopy such as NIPAL4 and SPINK5. Expanded in psoriasis lesional skin."
+    },
+    {
+      "paper": "Liu et al. (2022)",
+      "doi": "10.3389/fimmu.2022.923209",
+      "summary": "Describes the inflammatory response of skin-resident stromal cells. Confirms Reynolds et al. definition of inflammatory differentiated keratinocytes expressing ICAM1, TNF and CCL20. Notes that CCL20 is the only known high-affinity ligand of CCR6 and attracts IL17A-producing CCR6+ immune cells."
+    },
+    {
+      "paper": "Gopee et al. (2024)",
+      "doi": "10.1038/s41586-024-08002-x",
+      "summary": "Integrates adult skin dataset from Reynolds et al. (2021) including keratinocyte annotations for cross-developmental comparison with prenatal skin. Adult keratinocyte clusters c1-c8 are carried forward in the integrated atlas."
+    }
+  ]
+}

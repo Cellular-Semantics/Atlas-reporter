@@ -1,0 +1,10 @@
+{
+  "label": "Plasma",
+  "resolved_names": [
+    "Plasma cells"
+  ],
+  "scope": "adult",
+  "tissue_context": "human skin (adult)",
+  "confidence": "high",
+  "evidence": "The main text and supplementary materials for the cited atlas (DOI: 10.1038/s41586-024-08002-x) list 'Plasma cells' as an immune cell annotation in adult and prenatal human skin single-cell analyses. 'Plasma' is an exact cluster/fine annotation in the cell type tables provided by the authors, and they use 'Plasma cells' as the full name throughout the text and figures. The context is explicitly adult human skin."
+}

@@ -1,0 +1,12 @@
+{
+  "label": "Pericytes",
+  "resolved_names": [
+    "Pericytes",
+    "pericytes",
+    "dermal pericytes"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) identifies 'Pericytes' as a fine-grained annotation under the broad 'Mural cell' category in prenatal skin (Supplementary Table 3, cell_type_annotations.json). Mural cells co-locate with endothelial and neural cells in neurovascular microenvironments. In the SkO model, mural cells had a low probability of correspondence to adult skin cell states even after 19 weeks of culture."
+}

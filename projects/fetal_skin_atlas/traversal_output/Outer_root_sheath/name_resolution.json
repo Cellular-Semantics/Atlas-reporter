@@ -1,0 +1,10 @@
+{
+  "label": "Outer root sheath",
+  "resolved_names": [
+    "Outer root sheath"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Cell type 'Outer root sheath' identified in the prenatal skin atlas (Gopee et al., 2024)."
+}

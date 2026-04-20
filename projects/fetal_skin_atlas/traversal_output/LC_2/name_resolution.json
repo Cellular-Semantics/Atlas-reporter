@@ -1,0 +1,10 @@
+{
+  "label": "LC_2",
+  "resolved_names": [
+    "Langerhans cells"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "In Supplementary Table 5 ('Cell type annotation markers and references'), the cluster label 'LC_2' in the adult skin dataset is explicitly mapped to 'Langerhans cells'. The same mapping is used in Extended Data Figure 2 and Supplementary Figure 3, where 'LC_1' and 'LC_2' represent Langerhans cell clusters. The main text and figure legends consistently annotate 'LC' as 'Langerhans cell'."
+}

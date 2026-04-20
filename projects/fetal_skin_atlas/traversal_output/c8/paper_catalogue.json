@@ -1,0 +1,28 @@
+{
+  "papers": [
+    {
+      "authors": "Reynolds et al.",
+      "year": 2021,
+      "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+      "doi": "10.1126/science.aba6500"
+    },
+    {
+      "authors": "Gopee et al.",
+      "year": 2024,
+      "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+      "doi": "10.1038/s41586-024-08002-x"
+    },
+    {
+      "authors": "Liu et al.",
+      "year": 2022,
+      "title": "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells",
+      "doi": "10.3389/fimmu.2022.923209"
+    },
+    {
+      "authors": "Briot et al.",
+      "year": 2009,
+      "title": "Kallikrein 5 induces atopic dermatitis-like lesions through PAR2-mediated thymic stromal lymphopoietin expression in Netherton syndrome",
+      "doi": "10.1084/jem.20082242"
+    }
+  ]
+}

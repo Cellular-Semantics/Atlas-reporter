@@ -1,0 +1,26 @@
+{
+  "markers": [],
+  "other_findings": [],
+  "evidence_quotes": [
+    {
+      "quote": "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1) (Figs. 1d and 3g) and expressed genes related to cell migration and",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    },
+    {
+      "quote": "neural development (Fig. 3f, Extended Data Fig. 8c and Supplementary Tables 22 and 23), which mirrored the functions of brain microglia and peripheral nerve-associated macrophages in mouse skin 65 . TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA-NRP1, VEGFA-NRP2, SEMA3C-NRP2 and SEMA3E-PLXND1) 66 (Extended Data Fig. 8h and Supplementary Table 8). These findings suggest that prenatal skin macrophages may support the establishment of the skin peripheral nervous system during early gestation, as previously reported in mouse skin 65 .",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    },
+    {
+      "quote": "Co-location was indicated by a high proportion of two or more cell types sharing a microenvironment (Fig. 1d) and/or by a positive correlation coefficient between cell pairs (Extended Data Fig. 1e,f). NMF can predict significant cellular co-locations that are not readily evident in conventional histopathology analyses 5,15 . Our analysis predicted distinct microenvironments in prenatal skin comprising epidermal, dermal, vascular and neural cells, each including specific types of immune cells (Fig. 1d and Extended Data Fig. 1e,f). Macrophages co-located with endothelial and neural cells in 'early and late neurovascular microenvironments' (ME1 and ME5, respectively), whereas pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses (Fig. 1d and Extended Data Fig. 1e,f). These observations indicated that immune cells may occupy defined microanatomical niches where they have non-immune functions during early gestation. \n\nWe next integrated and compared human prenatal and adult skin data 10 with the SkO model 1 . The aim was to determine the extent to which the SkO model recapitulates human skin differentiation at a molecular level and its potential utility to functionally assess the role of immune cells in skin morphogenesis (Fig. 1e and Extended Data Fig. 2a,b). Broadly, cell states were conserved among SkO, prenatal and adult skin, but SkO cell states matched prenatal skin more closely than adult skin across culture duration (Extended Data Fig. 2c,d and Supplementary Table 5). However, the tempo of differentiation varied across the distinct skin cell lineages. Even after 19 weeks of culture, fibroblasts, mural and Schwann cells had a low probability of correspondence to adult skin cell states (Extended Data Fig. 2d and Supplementary Table 5). By contrast, accelerated differentiation was observed in keratinocytes and melanocytes, with alignment to adult cell states seen as early as 4 weeks of SkO culture (Extended Data Fig. 2d and Supplementary Table 5).",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    },
+    {
+      "quote": "Broad cell labels (epidermis, dermal stroma, immune and endothelium) and fine-grained annotations of cell states were assigned on the basis of differentially expressed genes (DEGs) (Fig. 1b, Extended Data Fig. 1c and Supplementary Table 3). Differential abundance analysis testing revealed how different cell populations varied across gestation. Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier 2 , were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4). Mesoderm-derived cells, including skin fibroblasts and endothelial cells, and immune cells were present throughout gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4).",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    }
+  ]
+}

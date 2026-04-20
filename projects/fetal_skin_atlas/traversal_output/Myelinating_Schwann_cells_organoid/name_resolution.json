@@ -1,0 +1,10 @@
+{
+  "label": "Myelinating Schwann cells",
+  "resolved_names": [
+    "myelinating Schwann cell"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Myelinating Schwann cells in the SkO correspond to the peripheral glial cells that form myelin sheaths. CL:0000218 is an exact match."
+}

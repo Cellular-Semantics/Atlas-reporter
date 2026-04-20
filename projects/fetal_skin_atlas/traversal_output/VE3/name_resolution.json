@@ -1,0 +1,10 @@
+{
+  "label": "VE3",
+  "resolved_names": [
+    "Vascular endothelial 3"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "In the supplementary materials (Extended Data Fig. 3a, Supplementary Table 6) and main text, clusters labeled as 'VE1', 'VE2', 'VE3', etc. refer to distinct populations of vascular endothelial cells; 'VE3' is listed as 'vascular endothelial 3' in mapping tables and UMAP plots in the context of adult and prenatal human skin atlas."
+}

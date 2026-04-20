@@ -1,0 +1,58 @@
+{
+  "markers": [
+    {
+      "gene": "RORC",
+      "evidence_type": "lineage-defining transcription factor",
+      "source": "Literature consensus; atlas broad annotation"
+    },
+    {
+      "gene": "IL7R",
+      "evidence_type": "ILC lineage marker",
+      "source": "Literature consensus"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "ILC3 cells co-locate with pre-dermal condensate (pre-Dc) cells in prenatal skin based on spatial transcriptomics correlation analyses",
+      "category": "spatial location",
+      "source": "Main text and Extended Data Fig. 1e,f"
+    },
+    {
+      "finding": "ILC3 interact with pre-Dc cells through CXCL12-CXCR4 and CXCL12-DPP4 ligand-receptor signals",
+      "category": "cell-cell interactions",
+      "source": "Main text, Section: HF mesenchymal differentiation"
+    },
+    {
+      "finding": "ILC3, NK cells and macrophages have a supportive role in B-cell lymphopoiesis in developing organs",
+      "category": "function",
+      "source": "Supplementary information (reviewer response)"
+    },
+    {
+      "finding": "pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses",
+      "category": "spatial microenvironment",
+      "source": "Main text, Section: Single-cell atlas of human prenatal skin"
+    },
+    {
+      "finding": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation",
+      "category": "developmental timing",
+      "source": "Main text"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "lymphoid tissue inducer and ILC3 cells were also predicted to co-locate and interact with pre-Dc cells through ligand-receptor signals implicated in the regulation of cellular adhesion and migration (CXCL12-CXCR4 and CXCL12-DPP4)",
+      "source_file": "Main text",
+      "context": "HF mesenchymal differentiation section"
+    },
+    {
+      "quote": "pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses",
+      "source_file": "Main text",
+      "context": "Single-cell atlas section, microenvironment analysis"
+    },
+    {
+      "quote": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation",
+      "source_file": "Main text",
+      "context": "Temporal dynamics of immune populations"
+    }
+  ]
+}

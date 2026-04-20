@@ -1,0 +1,36 @@
+{
+  "cell_type_label": "CD4 T cell",
+  "working_definition": "A CD4-positive, alpha-beta T cell found in prenatal human skin from approximately 10 post-conception weeks onward. These cells are predominantly naive and proliferative (high Ki-67, CD27; low CD25, CD45RO), with a subset (~30%) displaying CD45RO+ memory-like features. They include conventional helper T cells and FoxP3+ regulatory T cells (Tregs), the latter progressively increasing during the second trimester in association with hair follicle development. CD31 expression indicates enrichment for recent thymic emigrants.",
+  "searches_performed": [
+    "OLS4 search: 'CD4-positive helper T cell'",
+    "OLS4 result: CL:0000492 'CD4-positive helper T cell' (exact match, not obsolete)",
+    "Snippet search on atlas paper DOI:10.1038/s41586-024-08002-x for 'CD4 T cell prenatal skin helper'",
+    "Snippet search on Suo et al. 2022 DOI:10.1126/science.abo0510 for 'CD4 T cell fetal skin'",
+    "Snippet search on Dhariwala et al. 2020 DOI:10.1016/j.xcrm.2020.100132 for 'CD4 T cell fetal skin naive'"
+  ],
+  "best_match": {
+    "cl_term": "CD4-positive helper T cell",
+    "cl_id": "CL:0000492",
+    "cl_definition": "A CD4-positive, alpha-beta T cell that has the phenotype CD4-positive and is capable of producing cytokines and providing help to other immune cells.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "The atlas annotation 'CD4 T cell' maps directly to CL:0000492 'CD4-positive helper T cell'. This is the standard Cell Ontology term for CD4+ alpha-beta T cells. The fetal context (naive/proliferative phenotype, developmental timing from ~10 PCW, enrichment for recent thymic emigrants) represents cell state differences rather than a distinct cell type requiring a new CL term. The Treg subset within fetal skin CD4+ T cells is already captured by the existing CL:0000815 'regulatory T cell' hierarchy.",
+  "other_candidates": [
+    {
+      "cl_term": "naive thymus-derived CD4-positive, alpha-beta T cell",
+      "cl_id": "CL:0000895",
+      "cl_definition": "A CD4-positive, alpha-beta T cell that has not yet been activated and is characterized by the expression of CD45RA.",
+      "reason_rejected": "While many fetal skin CD4+ T cells are naive, the atlas annotation encompasses the full CD4+ T cell population including both naive and the ~30% CD45RO+ memory-like subset, as well as Tregs. CL:0000895 would be too narrow."
+    },
+    {
+      "cl_term": "CD4-positive, alpha-beta T cell",
+      "cl_id": "CL:0000624",
+      "cl_definition": "A mature alpha-beta T cell that expresses the CD4 coreceptor.",
+      "reason_rejected": "CL:0000624 is a broader parent term. CL:0000492 (CD4-positive helper T cell) is preferred as it better captures the functional identity of these cells as helper T cells, consistent with atlas annotation conventions."
+    }
+  ],
+  "recommendation": "Map to CL:0000492 (CD4-positive helper T cell). No new CL term is needed. The fetal-specific phenotype (predominantly naive, proliferative, enriched for recent thymic emigrants) represents a developmental state of this established cell type.",
+  "new_term_needed": false
+}

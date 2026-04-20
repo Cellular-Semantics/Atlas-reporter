@@ -1,0 +1,33 @@
+{
+  "markers": [
+    {
+      "gene": "KRT14",
+      "evidence_type": "known basal marker",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "KRT5",
+      "evidence_type": "known basal marker",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "TP63",
+      "evidence_type": "known basal marker",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Accelerated keratinocyte differentiation in SkO with alignment to adult states as early as 4 weeks of culture",
+      "category": "development",
+      "source_table": "Extended Data Fig. 2d, Supplementary Table 5"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "accelerated differentiation was observed in keratinocytes and melanocytes, with alignment to adult cell states seen as early as 4 weeks of SkO culture",
+      "source_file": "Gopee et al. 2024",
+      "context": "SkO keratinocyte maturation"
+    }
+  ]
+}

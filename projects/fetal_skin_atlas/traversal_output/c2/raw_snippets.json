@@ -1,0 +1,736 @@
+[
+  {
+    "snippet": "in assessing 3D skin constituents compared to acquiring 3 or 4 ROIs per zone per volunteer.\n\nAging differences in 3D skin morphology. As illustrated by the 3D reconstructions of epidermal and dermal volumes acquired within dorsal forearm and face temple areas (Fig. 4a), multiphoton microscopy can evidence changes in both epidermal thickness and DEJ undulation (dermal surface) with aging. We quantified three morphological parameters: 3D mean epidermal thickness (Fig. 4b1-b3), 3D mean DEJ undulation (Fig. 4c1-c3) and 3D mean stratum corneum thickness (Fig. 4d1-d3). The highest aging modulations are observed between 18 and 25 and 70-75 year-old groups on all areas with an expected thinning of the epidermis and a flattening of the DEJ in older volunteers (studies II and III, Fig. 4b2,b3,c2,c3) making them strong markers of intrinsic aging. Between closer and less extreme age groups (30-40 vs 55-65, study I, Fig. 4b1,c1), we observed no changes in these parameters. However, the higher epidermal thickness and more undulated DEJ in \"tan\" skin ITA group, better protected against chronic exposure compared to \"light\" skin ITA group, suggest that these parameters are also, probably to a lesser extent, modulated by photoaging. The higher decrease in epidermal thickness on temple area with aging, more exposed as compared to dorsal forearm, is a second argument in this sense (study III).\n\nRegarding the 3D mean thickness of the SC layer, the main difference is observed between face and forearm, with a clear thinner SC layer on the temple (Fig. 4d3). Total epidermal thickness being equivalent between these two zones, it results in a thicker living epidermis on the face, probably due to an intrinsic structural difference. A thinner SC was also measured in \"light\" compared to \"tan\" skin ITA phototypes in the 30-40yo age group (Fig. 4d1). With aging, on ventral forearm, a small decrease in SC layer thickness was observed between the 18-25 and 70-75 year-old groups (study",
+    "paper_id": "252009072",
+    "title": "In vivo multiphoton multiparametric 3D quantification of human skin aging on forearm and face",
+    "authors": [
+      "Ana\u2010Maria Pena",
+      "T. Baldeweck",
+      "Etienne Decenci\u00e8re",
+      "S. Koudoro",
+      "S. Victorin",
+      "E. Raynaud",
+      "Blandine Ngo",
+      "P. Bastien",
+      "S. Brizion",
+      "E. Tancr\u00e8de\u2010Bohin"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3928780052945274,
+    "depth": 0,
+    "corpus_id": "CorpusId:252009072"
+  },
+  {
+    "snippet": "To examine the primary cilium distribution in human skin, we obtained healthy adult human skin samples (Figure 1A) and visualized the primary cilium in the epidermis and the dermis by staining with a primary cilium marker, acetylated tubulin, using fluorescent confocal microscopy. We hypothesized that dermal fibroblasts have primary cilium, because it was reported that fibroblasts in the human adult heart are ciliated (Villalobos et al., 2019). As expected, we found ciliated vimentin-positive cells in the dermis, suggesting that most ciliated cells were dermal fibroblasts (Supplementary Figure S1A). We also found primary cilium-like structures in the K14-positive epidermal basal area where proliferating KCs are populous (Figure 1B). Primary cilium-like structures were also detected in the K10-positive stratum spinosum and the granular layer where differentiated and matured KCs are present, but at a lower frequency than in the basal layer (Figures 1C,  D). We hypothesized that most of the ciliated epidermal cells were KCs because KCs are the major cell type in the epidermis, and many of the ciliated cells were positively stained with K14, a specific marker for KCs (Figures 1B-D). \n\nAlthough we speculated that most epidermal ciliated cells were KCs, we investigated the possibility of immune cells having primary cilium, because immune cells such as LCs are also frequently present in the epidermis. We immunostained the epidermis with langerin, a LC marker, and with acetylated tubulin. When observing the primary cilium in epidermal LCs, we unexpectedly found that some LCs in the epidermis were positively merged with acetylated tubulin, indicating primary cilium (Figure 1E). We also investigated acetylated tubulin in langerin-positive cells in the dermis, however, we could not find any primary cilium-like structures in these cells.",
+    "paper_id": "258313574",
+    "title": "Dendritic cell proliferation by primary cilium in atopic dermatitis",
+    "authors": [
+      "M. Toriyama",
+      "D. Rizaldy",
+      "Motoki Nakamura",
+      "Yukiko Atsumi",
+      "Michinori Toriyama",
+      "F. Fujita",
+      "F. Okada",
+      "A. Morita",
+      "H. Itoh",
+      "K. Ishii"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.38620979708353503,
+    "depth": 0,
+    "corpus_id": "CorpusId:258313574"
+  },
+  {
+    "snippet": "Skin aging is a physiological issue that is still relatively poorly understood. Studies have demonstrated that the dermal extracellular matrix (ECM) plays important roles in skin aging. However, the roles of the changes in ECM characteristics and the molecules that are secreted to the extracellular space and are involved in the formation of the dermal matrix from birth to old age remain unclear. To explore the way in which the ECM microenvironment supports the functions of skin development across different age groups is also poorly understood, we used a decellularization method and matrisome analysis to compare the composition, expression, and function of the dermal ECM in toddler, teenager, adult, and elderly skin. We found that the collagens, glycoproteins, proteoglycans, and regulatory factors that support skin development and interact with these core ECM proteins were differentially expressed at different ages. ECM expression markers occurring during the process of skin development were identified. In addition, our results elucidated the characteristics of ECM synthesis, response to skin development, and the features of the ECM that support epidermal stem cell growth via the basement membrane during skin aging.",
+    "paper_id": "244742363",
+    "title": "Time-Resolved Extracellular Matrix Atlas of the Developing Human Skin Dermis",
+    "authors": [
+      "Mansheng Li",
+      "Xiao Li",
+      "Binghui Liu",
+      "Luye Lv",
+      "Wenjuan Wang",
+      "Dunqin Gao",
+      "Qiyu Zhang",
+      "Junyi Jiang",
+      "M. Chai",
+      "Zhi-min Yun",
+      "Ying Tan",
+      "F. Gong",
+      "Zhihong Wu",
+      "Yun-ping Zhu",
+      "Jie Ma",
+      "Ling Leng"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3839557872597589,
+    "depth": 0,
+    "corpus_id": "CorpusId:244742363"
+  },
+  {
+    "snippet": "Epidermal structure, function, and composition are different in white infants and adults. We investigated whether ethnicity and location contribute to differences in functional and clinical measurements of skin barrier function during the first years of life and in adults.",
+    "paper_id": "9477671",
+    "title": "Water\u2010Holding and Transport Properties of Skin Stratum Corneum of Infants and Toddlers Are Different from Those of Adults: Studies in Three Geographical Regions and Four Ethnic Groups",
+    "authors": [
+      "M. C. Mack",
+      "M. Chu",
+      "N. Tierney",
+      "E. Ruvolo",
+      "G. Stamatas",
+      "N. Kollias",
+      "Kamlesh V Bhagat",
+      "Lin Ma",
+      "K. Martin"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.38056660440080425,
+    "depth": 0,
+    "corpus_id": "CorpusId:9477671"
+  },
+  {
+    "snippet": "This motivated the present correlational analysis between the biophysical markers and the properties of corneocytes to further investigate the role of corneocytes in the skin barrier function. When correlating the integrated rank-sum of cell properties with the biophysical markers measured prior to the HCW shift, a statistically significant association was evident for SC hydration at both sites (Fig. 5c and d), and for TEWL at the cheek (Fig. 5b). This supports the assertion that the skin barrier function depends on a mature SC, characterized by a honeycomb distribution of CDs at the cell's edge and rigid and hydrophobic CEs [15,16,36]. \n\nHowever, this relationship was not observed with the values of biophysical markers measured after respirator application. Participants with a high TEWL ratio pre-to post respirator application, tended to have lower levels of immature CEs (p < 0.01). Although seemingly contradictory, this observation may pertain to information underlying the different mechanisms and functions of the SC. It is hypothesised that while a mature SC, with a honeycomb pattern of CDs and hydrophobic CEs, may be a requirement for a well-maintained barrier function, with lower TEWL values, it may be detrimental when exposed to mechanical insults such as respirator application. This would be consistent with the properties of the anatomical regions, such as the palm of the hand or  plantar region of the foot, which are adapted to grip and load-bearing functions, presenting an immature SC [37]. Future studies should focus on understanding this apparent dichotomy between load-bearing and barrier functions, particularly by comparing glabrous and non-glabrous skin. When analysing the trends between self-reported adverse skin reactions and the studied cell properties, it was observed that participants reporting dry skin, spots, itchiness, rashes, and excessive sweating usually presented greater levels of immature CEs and Dsg1 (Fig. 6). This indicates that a mature SC is associated with less adverse reactions after prolonged use of respirators, which seems to contradict the relationships found with biophysical markers.",
+    "paper_id": "256810254",
+    "title": "Characterisation of superficial corneocytes in skin areas of the face exposed to prolonged usage of respirators by healthcare professionals during COVID-19 pandemic",
+    "authors": [
+      "Ana S \u00c9vora",
+      "Nkemjika S. Abiakam",
+      "H. Jayabal",
+      "P. Worsley",
+      "Zhibing Zhang",
+      "Simon A Johnson",
+      "Michael J Adams",
+      "D. Bader"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3579152567309107,
+    "depth": 0,
+    "corpus_id": "CorpusId:256810254"
+  },
+  {
+    "snippet": "There are quite large variations in the skin structure and function depending on anatomical location. The skin on the palmo-plantar surfaces has a rather simple function to protect the underlying living tissue with its very thick stratum corneum (SC) from strong external force and friction. Its barrier function is poor. The SC of the facial skin is thinner, consisting of fewer layers of corneocytes than that of the trunk and limbs. There are regional differences not only in the living skin tissue but also in the thin SC reflecting the function of each anatomical location [1]. These differences in the SC have been mostly disclosed by the use of non-invasive biophysical instruments. The in vivo instrumental measurements have disclosed the presence of remarkable differences in the functional properties of the SC particularly between the face and other portions of the body. They will offer clinical parameters to evaluate skin functions and, more importantly, dysfunctions (e.g. psoriasis, atopic dermatitis, epidermolysis bullosa, burns) that result in excessive water loss and are characterized by defective SC lipid organization. The differences of normal, healthy skin at different anatomical locations indicate that there is no single measurement values, or \"normal\" values, for the entire skin. As for the important issue \"sensitive skin\" there is no international consensus on the definition and classification of \"sensitive skin,\" making rational discourse among investigators almost impossible [2]. \n\nAs an example, a recent study has been published on diaper dermatitis, which affects nearly 50% of infants as well as many bed-ridden adults, particularly elderly (Xhaflaire-Uhoda et al 2009). It was demonstrated that the application of the anhydrous paste resulted in a shielding effect and a trend to normalize electrometric properties of skin, probably reflecting the combination of transepidermal water loss and the water-holding capacity of the stratum corneum [3]. Several methods and instruments are now available for the rapid reliable determination of electrical impedance or related parameters reflecting skin condition, which may become a standard research and clinical tool in dermatology [4][5][6]. \n\nTwelve years ago we reported an electrical impedance baseline study related to age, sex and body locations [7]. The results showed significant differences between different anatomical locations and ages.",
+    "paper_id": "250671094",
+    "title": "Twelve years evolution of skin as seen by electrical impedance",
+    "authors": [
+      "Ingrid Nicander",
+      "Lennart Emtestam",
+      "Peter \u00c5berg",
+      "Stig Ollmar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3517476662344271,
+    "depth": 0,
+    "corpus_id": "CorpusId:250671094"
+  },
+  {
+    "snippet": "Skin is the largest human organ and constitutes the main protective barrier against the external environment (Kanitakis 2002), not only in mechanical terms but also thanks to its physicochemical characteristics and to microbiota (Sanford and Gallo 2013). This barrier protects against dehydration, mechanical damage, and biological and physical agents. It also exerts other vital functions, such as thermoregulation, secretion of waste products through sweat, immunological and endocrine functions, as well as its sensory function. \n\nApart from the roles mentioned above, skin also factors in human relationships as one of the main determinants of beauty (Fink et al. 2001;Sakano et al. 2021), thus influencing social interactions. Products that claim to improve skin tone, glow, and texture, as well as achieving a homogeneous appearance (Sun et al. 2022) are in great demand from the pharmaceutical/cosmetics industry (Baumann 2018). For this reason, knowledge on different levels about skin aging is of special interest, not only at a medical level but also at a social one. \n\nThe skin is histologically organized into three layers (Khavkin and Ellis 2011): epidermis, dermis, and hypodermis, within which we find structures known as skin appendages. The epidermis is a multistratified epithelium comprising mainly keratinocytes, but also melanocytes, Merkel cells, and Langerhans cells. The dermis is a connective tissue, made up of cells, fibers, and ground substance, and unlike the epidermis also contains vascular and nervous plexuses. The dermis is divided into papillary (superficial) dermis, which forms the dermal papillae, and reticular or deep dermis, where the fibers (both collagen and elastic) are thicker and horizontally organized, and the deepest part of the skin appendages is found. \n\nSkin aging is manifested by a series of well-known clinical characteristics such as atrophy, wrinkles, rough texture, laxity or loss of elasticity, depigmentation, vascular ectasias, and neoplasms (Zhang and Duan 2018;Pezzini et al. 2023).",
+    "paper_id": "268958831",
+    "title": "Changes in human skin composition due to intrinsic aging: a histologic and morphometric study",
+    "authors": [
+      "Marta Arnal-Forn\u00e9",
+      "T. Molina-Garcia",
+      "M. Ortega",
+      "V. Marcos-Garc\u00e9s",
+      "Pilar Molina",
+      "Antonio Ferr\u00e1ndez-Izquierdo",
+      "P. Sep\u00falveda",
+      "Vicente Bod\u00ed",
+      "C. R\u00edos-Navarro",
+      "A. Ruiz-Saur\u00ed"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3475544306000783,
+    "depth": 0,
+    "corpus_id": "CorpusId:268958831"
+  },
+  {
+    "snippet": "THE STRUCTURE AND FUNCTION OF THE SKIN, 2nd ed. By William Montagna. New York, Academic Press, Inc., 1962. xx, 434 pp. $16.50. In the second edition of The Structure and Function of the Skin. William Montagna communicates his enthusiasm and interest, as well as his broad knowledge of the study of the skin. This edition, as was the last, is divided into six sections, each dealing with separate anatomical subdivisions. In each part the embryology, macro and microscopic anatomy, biochemistry and function and its relation to structure is systematically surveyed. Well chosen illustrations and electron micrographs are plentiful and they meaningfully amplify the text. References are pertinent and numerous, the more important works are pointed out, and comment and criticism-adverse or complementary-is not withheld. The author writes clearly, but due to the volume of material that must be covered in a short presentation he is of necessity quite concise. This can lead to difficulty in following the subject matter. In introductory sections describing the skin in more general terms and in places where the author allows himself to become conversational, his prose becomes almost lyric. He has called upon authorities in some areas to write short sections, but Dr. Montagna's familiarity with and research into the biology of the skin is evidenced by the generally good organization of the book. This edition is expanded considerably from the last, both in the length of the text and in the much larger number of illustrations. Although only six years have passed since the original publication, this new edition is called for because of the many recent advances in this field, especially in electron microscopy. Dr. Montagna incorporates the latest findings skillfully into the existing body of knowledge. This book is not for the casual reader or for the novice in the biological sciences, but it is highly recommended to anyone interested in the skin or to those who would be stimulated by an orderly and comprehensive survey of an important organ of man's complex structure. KENNETH A. ARNDT",
+    "paper_id": "38962656",
+    "title": "The Structure and Function of the Skin",
+    "authors": [
+      "K. Arndt"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3475544306000783,
+    "depth": 0,
+    "corpus_id": "CorpusId:38962656"
+  },
+  {
+    "snippet": "<p>Introduction: Elastic fibers are constituents of the dermal extracellular matrix, determining the histoarchitecture of the<br />dermal connective tissue. Organization and density of elastic fibers change as skin ages. The aim of this paper was to determine the similarities and differences between the photo-aging and the physiological aging of skin by examining organization and quantifying the elastic fibers in the dermis during aging. The material included samples of photoexposed and photoprotected skin, obtained from 90 cadavers aged 0-82 years. The samples were classified into five age groups: newborns, young age, middle age, mature age and the oldest age. Skin samples were stained using the Halmi modification of Aldehyd fucshin staining method, as well as Alcian blue staining (the Spicer method). Volume density (VD) of the elastic fibers was measured using Image J program.</p>\n<p>Results: In the skin of newborns and young age group (neck and abdomen) elastic fibers appeared to form a network structure. In the photoexposed skin of the mature age and the oldest group, elastic fibers showed tendency to fragment, while the elastic material exhibited tendency to accumulate. VD of elastic network in the skin of the neck in the middle, mature and the oldest age group was greater than VD of abdominal skin of the respective age groups (3.66&plusmn;0.28%, 5.61&plusmn;0.22%, 6.24&plusmn;0.21% respectively). Age-related statistically significant increase in VD of the elastic network in the skin of the neck, as well as a statistically significant reduction of elastic network VD in the abdominal skin, has been observed (middle age - oldest).</p>\n<p>Conclusion: Correlation of the organization and quantity of elastic fibers with age exhibits different pattern in photoexposed compared to photoprotected skin. A quantitative evaluation of the volume density of elastic fibers correlates with clinically visible signs of photo-aging, primarily with solar elastosis.</p>",
+    "paper_id": "204300970",
+    "title": "Histological characteristics and volume density of elastic fibers in the dermis during aging",
+    "authors": [
+      "S. Le\u0161tarevi\u0107",
+      "P. Mandic",
+      "M. Mijovi\u0107",
+      "M. Dejanovi\u0107",
+      "D. Marjanovi\u0107",
+      "S. Matejic",
+      "M. Filipovic"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.340807846142792,
+    "depth": 0,
+    "corpus_id": "CorpusId:204300970"
+  },
+  {
+    "snippet": "Functional declines were observed in adult skin (Y3) compared to D90, including reduced cell migration, inflammatory response, blood vessel development, and ECM organization (Fig. 2d). Finally, DCs in aged skin (Y7) significantly upregulated functions related to immune endocytosis and defense responses (Fig. 2d), suggesting that chronic inflammation may persist in aging skin, also known as \"inflammatory aging\" [29]. Collectively, these results demonstrated significant temporal dynamics in cellular heterogeneity and gene expression programs across embryonic, postnatal, and senescent stages of skin, contributing to our understanding of the biological processes underlying skin development and aging.",
+    "paper_id": "281082128",
+    "title": "A single-cell transcriptome atlas of pig skin reveals cellular heterogeneity from embryonic development to postnatal aging",
+    "authors": [
+      "Ting Zheng",
+      "Rong Yuan",
+      "Yu Zhang",
+      "Q. Zou",
+      "Yifei Wang",
+      "Yujing Li",
+      "Zhengyin Gong",
+      "Zhengli Chen",
+      "Yanzhi Jiang"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.340807846142792,
+    "depth": 0,
+    "corpus_id": "CorpusId:281082128"
+  },
+  {
+    "snippet": "(1) Background: Skin barrier function resides mostly in the stratum corneum, which consists of a protein component, the corneocyte (bricks), which provides a scaffold for the second component, the extracellular matrix, consisting of multilayers of lipids (mortar). These two components closely interact and this could be the basis for the differences in the biophysical properties of the skin between anatomical regions. So, the aim of this study was to compare skin microstructural properties between body sites. (2) Methods: A comparative study was conducted that included healthy individuals without previous skin diseases. Skin barrier function parameters and microtopography parameters (smoothness, roughness, desquamation, wrinkles, surface, volume, contrast, variance, homogeneity, anisotropy, total cell count, flaking index, skin surface hardness, brightness, deformability and friction) were measured on the forearm, cheek and palm. (3) Results: 44 participants were included in this study, with a mean age of 38.8 \u00b1 15.0 years. Significant differences were found between body sites for 14 of the 15 parameters evaluated. Smoothness was higher on the forearm than on the cheek and palm (240.02 Sems vs. 348.16 vs. 408.19 Sems, p < 0.05). Hardness was higher on the palm than on the forearm and cheek (13.22 AU vs. 9.44 AU vs. 7.94 AU, p < 0.05). Moreover, we observed that sociodemographic characteristics such as age, sex, tobacco and/or alcohol use, influenced the parameters evaluated. (4) Conclusions: The differences in skin barrier function and microtopography between anatomical regions reflects the different structure of skin in each body part and could help to understand the influence of the sociodemographic characteristics on theses parameters. This information could be useful for comparison with pathological skin characteristics and for targeting new treatments.",
+    "paper_id": "266661663",
+    "title": "Microtopography and Barrier Function in Healthy Skin: Differences between Forearm, Cheek and Palm",
+    "authors": [
+      "R. Sanabria-de la Torre",
+      "Mar\u00eda Ceres-Mu\u00f1oz",
+      "Carlota Pretel-Lara",
+      "T. Montero\u2010Vilchez",
+      "S. Arias-Santiago"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.340807846142792,
+    "depth": 0,
+    "corpus_id": "CorpusId:266661663"
+  },
+  {
+    "snippet": "Thus, we hypothesize that, in sensitive skin subjects, skin inflammation is more easily triggered by external factors than in nonsensitive skin subjects due to the presence of silent subclinical inflammation in their skin. \n\nLow levels of stratum corneum hydration were found in children with sensitive skin compared to those with nonsensitive skin, while TEWL values were similar between the two groups of children. These findings suggest that a decrease in stratum corneum hydration may be due to the decreased water-holding capacity of the skin rather than to alterations of barrier function. Interestingly, we further showed that levels of hygroscopic NMFs and ceramide were not different between sensitive and nonsensitive skin in infants or adults (data not shown). These results suggest that sensitive skin syndrome may not be associated with typical biochemical parameters of dry skin, in agreement with previous results [14]. The alteration of skin barrier function, often associated with sensitive skin syndrome, may involve additional mechanisms that were not investigated in the present study. Such mechanisms may include disorganization of the structure of the intercellular lamellar lipid or decreased stratum corneum cohesion in sensitive skin. \n\nA clinical evaluation of sensitive skin showed that sensitive skin presents more erythema than nonsensitive skin, consistent with the higher inflammatory marker levels observed in sensitive skin in our study. We also show that sensitive skin presents greater levels of scaling and roughness than nonsensitive skin, in line with our hypothesis that sensitive skin may stem from altered stratum corneum and corneocyte cohesion, which leads to a subtle imbalance in the regulation of water homeostasis in sensitive skin. Altered cohesion of corneocytes may lead to a misdiagnosis of dry skin instead of sensitive skin syndrome, particularly in infants. We previously demonstrated that low corneocyte cohesion, altered corneocyte morphology, and increased desquamation are related to skin immaturity in infants [46]. These same clinical hallmarks may actually also be present in sensitive skin, but additional work is needed to further test this hypothesis.",
+    "paper_id": "236403133",
+    "title": "Clinical and Instrumental Exploration of Sensitive Skin in a Pediatric Population",
+    "authors": [
+      "G. Boyer",
+      "C. Belilovsky",
+      "S. Bredif",
+      "C. Baudouin",
+      "L. Mis\u00e9ry",
+      "G. Bellem\u00e8re"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.33756287066235346,
+    "depth": 0,
+    "corpus_id": "CorpusId:236403133"
+  },
+  {
+    "snippet": "Our prior studies showed that, under our experimental conditions, CO 2 laser treatment ablated the entire epidermis, the basement membrane, and the uppermost portion of the papillary dermis (Ritti e et al., 2011(Ritti e et al., , 2013. Moreover, we showed that keratinocyte outgrowths from ESGs are major contributors to re-epithelialization of partial-thickness wounds in young adults. Here, we asked whether ESG re-epithelialization function was affected by aging. To this end, we compared skin re-epithelialization after CO 2 laser wounding in forearm skin samples taken from young (< 40 years) and aged (> 70 years) healthy individuals. Consecutive horizontally cut skin sections were immunostained for epithelial markers (pan-keratin) and photographed, and the images were reassembled to create 3D reconstructions of skin, using computer software as described in Experimental Procedures. As previously reported (Ritti e et al., 2013), we observed that young human skin produces discernible keratinocyte outgrowths from both ESGs and pilo-sebaceous units (PSUs, i.e., hair follicles and associated sebaceous glands), within 3 days following wounding (a representative pan-keratin-stained transverse section is shown in Fig. 1A). Epidermal repair occurs through expansion of keratinocyte outgrowths merging with each other until they cover the entire wounded area ((Ritti e et al., 2013) and Fig. 1; animated versions in Video S1). Re-epithelialization is nearly complete 7 days post-wounding in the young group (86 AE 4% of the wound re-epithelialized). In the aged group, however, many ESGs had no discernible outgrowths, although all of the PSUs contributed outgrowths upon wounding (Fig. 1C). Lack of outgrowths from ESGs in aged skin was still observed 7 days post-wounding (Fig. 1D,E), indicating that the ESG response was not simply deferred. We reasoned that as outgrowths expand laterally until they merge with one another, reduction in total",
+    "paper_id": "3761140",
+    "title": "Reduced cell cohesiveness of outgrowths from eccrine sweat glands delays wound closure in elderly skin",
+    "authors": [
+      "L. Ritti\u00e9",
+      "E. A. Farr",
+      "J. Orringer",
+      "J. Voorhees",
+      "G. Fisher"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3371677947673459,
+    "depth": 0,
+    "corpus_id": "CorpusId:3761140"
+  },
+  {
+    "snippet": "Secondary lines were clearly visible, nearly the same depth as the primaries, and often met to form an apex of triangles (\"star formation\"). Grade 2 has some flattening and loss of clarity of the secondary lines. Star formations were still present, but often one or more of the secondary lines that form the configuration is unclear. Grade 3 is characterized by unevenness of the primary lines and noticeable flattening of the secondary lines with little or no star formation. Grade 4 has macroscopic deterioration in texture and coarse, deep primary lines, with distortion and loss of secondary lines. Grade 5 has noticeable flat skin between the primary lines, with few or no secondary lines. Grade 6 has large, deep, and widely spaced primary lines, with no secondary lines. \n\nEthical considerations. The study was approved by the Mongolian National University of Medical Sciences and the biomedical ethical committee on April 25, 2013 (No. 13-12/1A). Written informed consent was obtained from each participant. \n\nStatistical methods. The dependent variable in this study was skin aging which is ordinal data scaled from 2 to 6 skin-aging grades according to Beagley Gibson method. Gender, work conditions, smoking status, sunscreen usage, geographic location, housing type, frequency of getting professional skin care services, skin type, night sleep time and menstrual status were independent categorical variables. Additionally, the participant's age, BMI, time of sun exposure, and serum melatonin and epidermal growth factor levels were continuous data. We determined potential skin physiological risk factors associated with skin aging in skin surface moisture and sebum at T-and U-zones, skin pore size, pigmentation, and wrinkles, which were all continuous data. We presented continuous variables as the mean and standard deviation and determined that they were normally distributed using the Shapiro-Wilk test. Categorical data were summarized as frequencies and percentages. \n\nSpearman's correlation analysis was used to determine the correlation between skin aging grades and the skin physiological parameters, including skin surface moisture and sebum at the T-and U-zone, skin pore size and wrinkle, age, BMI, sun exposure time, serum melatonin and epidermal growth factor levels.",
+    "paper_id": "232412261",
+    "title": "Skin aging risk factors: A nationwide population study in Mongolia risk factors of skin aging",
+    "authors": [
+      "Tuya Nanzadsuren",
+      "Tuul Myatav",
+      "Amgalanbaatar Dorjkhuu",
+      "Mandukhai Ganbat",
+      "Chuluunbileg Batbold",
+      "Baljinnyam Batsuuri",
+      "K. Byamba"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.33418562268932683,
+    "depth": 0,
+    "corpus_id": "CorpusId:232412261"
+  },
+  {
+    "snippet": "Future studies with age-stratified samples and longitudinal analysis could provide more insight into the progressive nature of ECM changes over time. \n\nAlthough our study offers important new information about the orientation-dependent and regional variations in the ECM composition of the FH and UE areas, there are several important limitations to consider. The findings may not be as broadly applicable to larger populations due to a smaller sample size. A more thorough knowledge of ECM variability would be possible with a larger sample size, especially when comparing various age groups, skin types, and demographic backgrounds. Even though cadaveric skin samples are useful for histological research, they fall short of capturing the dynamic processes of ECM remodeling that take place in living tissue. The absence of vascular supply, cellular turnover, and external factors like UV exposure and mechanical stress in these samples could have affected the observed outcomes. Future research with larger, more diverse samples and longitudinal, in vivo analyses is needed to better understand the complex interplay of structural and biochemical changes in facial skin aging. \n\nThe results of this study may have various implications for cosmetic medicine and dermatology. Since GAGs are lost in vertical UE portions, early hydration-focused interventions, including topical treatments or fillers based on hyaluronic acid, may help preserve the integrity of the ECM before the breakdown of collagen and elastin becomes noticeable. Moreover, the orientation-dependent variations in ECM distribution highlight the necessity of more accurate methods in cosmetic operations, such as filler insertion techniques that correspond with patterns of mechanical stress and natural hydration. These differences highlight how crucial it is to consider Langer's lines when performing cosmetic surgery. Additionally, the relatively higher GAG levels in the UE horizontal sections suggest that this region retains some hydration potential despite its structural fragility. It has been shown that the pattern of GAG deposition in the dermis is critical, as sundamaged skin accumulates GAGs on degraded elastic fibers rather than between collagen and elastin fibers, potentially disrupting collagen organization and dermal structure [14].",
+    "paper_id": "277442140",
+    "title": "Comprehensive Quantification of Collagen, Elastin, and Glycosaminoglycans in the Human Facial Dermis: Insights From a Pilot Study",
+    "authors": [
+      "Iman Bouchelkia",
+      "C. Sadacharan"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.33418562268932683,
+    "depth": 0,
+    "corpus_id": "CorpusId:277442140"
+  },
+  {
+    "snippet": "Finally, this study included a relatively small number of participants aged 20-40 (accounting for 15.4% of the sample). As a result, further research focusing on young individuals is required to clarify the relationship between skin biomechanics and functional capacity in this population, perhaps using maximum tests (e.g., maximum volume of oxygen-VO 2 max ) since these tests do not have ceiling effects. \n\nOur study demonstrated how skin mechanical parameters of the Cutometer varied throughout adulthood, using a larger sample than previous research. Consistent with the literature, we found that R7 (biological elasticity) had the strongest correlation with chronological age, supporting its potential to serve as the \"age of skin elasticity\" (Ahn et al. 2007;Ryu et al. 2008;Chen et al. 2024). Interestingly, this study discovered the longitudinal association with IC only for R6 (viscoelastic ratio). Why R6 outperformed other R parameters in terms of predicting IC evolution remains to be elucidated since higher R6 can result from increased viscous distension, decreased elastic distension, or both (Dobrev 2000). More investigation is also required to understand sex-specific differences in the longitudinal IC-R6 association in older adults, namely why R6 predicted IC decline in older men but not women. In addition, studies involving longitudinal and multisite skin elasticity measurements are encouraged to explore how these parameters evolve over time and whether the associations identified in the current studies show regional differences. Furthermore, despite the advantages of being non-invasive and less harmful, Cutometer data has limitations in providing information at the molecular and cellular levels of the skin. Therefore, additional evidence from skin biopsies is needed to elucidate the connection between systemic and skin-specific aging. For example, studies incorporating skin biopsy data could use omics techniques to identify aging-related inflammatory molecules in the skin microenvironment and examine how they interact with the systemic inflammatory clock. This is the first study exploring the association of skin-derived biomarkers with global body functions and aging biomarkers, using novel measurements in the field including IC, epigenetic clocks, and iAge.",
+    "paper_id": "280563798",
+    "title": "Associations of Skin Biomechanical Properties With Biological Aging Clocks and Longitudinal Changes in Intrinsic Capacity in Adults Aged 20\u201393: The INSPIRE\u2010T Project",
+    "authors": [
+      "Wan-Hsuan Lu",
+      "S. Guyonnet",
+      "J. Raffin",
+      "S. Bessou-Touya",
+      "K. Helffer",
+      "Pascale Bianchi",
+      "Jimmy Le Digabel",
+      "Paul Bensadoun",
+      "Jean-Marc Lemaitre",
+      "P. S. Barreto",
+      "Bruno Vellas"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.33418562268932683,
+    "depth": 0,
+    "corpus_id": "CorpusId:280563798"
+  },
+  {
+    "snippet": "Skin, also known as the integumetary system, is the largest organ in our body, covering the entire external surface; measuring up to 2m 2 and weighing approximately 4.5\u22125kg in an average adult (or about 12\u221215% of total adult body weight). 1 Skin is the first physical barrier protecting us from the external environment. Skin is made of three layers: the outermost layer the epidermis, the structure below it, the dermis and the structure below the dermis known as the subcutaneous tissue. 2 The anatomy, structure, and composition of each of these layers is varied, depending on the function and role of that layer. 3 The exisiting knowlegde of skin anatomy and function are well known and covered in the literature, however, in this review we also focus on the impact of ageing on skin structure, as well as revising the anatomy and structure of the skin, the cellular composition of it and skin's main functions.",
+    "paper_id": "268710790",
+    "title": "The anatomy, physiology and function of all skin layers and the impact of ageing on the skin",
+    "authors": [
+      "Zahra Lotfollahi"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.33418562268932683,
+    "depth": 0,
+    "corpus_id": "CorpusId:268710790"
+  },
+  {
+    "snippet": "Furthermore, studies by Beddoes et al., proved that extracellular lipid matrix composition is rather solid and barrier function is resistant to a certain threshold of change (Beddoes et al., 2021). This observation, along with the variety of epidermal lipid composition, gives a further idea of how highly complex and dynamic the structure of the epidermis in fact is. The amount of ceramides depends on the age, location of the skin site, season and ultraviolet irradiation (Akutsu et al., 2009;Li et al., 2020;Boireau-Adamezyk et al., 2014;Harding et al., 1996). Other authors have found that children (about 6 years) have more CERs than adults in the epidermis (Li et al., 2020), and we also observed a similar trend. In children, the process of epidermal keratosis occurs much faster and the corneocytes formed in the SC layer become smaller and smaller (Akutsu et al., 2009), so the lipid content in the external matrix is also lower. Smaller corneocytes indicate a more frequent replacement of the callous epidermis in children than in adults. Also, smaller corneocytes are on the part of the body that is more exposed to damaging external factors, such as UV radiation (Akutsu et al., 2009). In adults, corneocytes are much larger and the desquamation process takes place more slowly (Boireau-Adamezyk et al., 2014;Akutsu et al., 2009), therefore the accumulation of VLCFA and ceramide fractions may occur. At the same time, some authors indicate a lower activity of CER synthase in adults (Boireau-Adamezyk et al., 2014). This may explain the faster process of keratinization in children and the accumulation of VLCFAs in adults. VCLFAs predominate in CER and glucosylceramides and only trace levels are observed in SM in the epidermis (Uchida, 2011), which was also observed in our study.",
+    "paper_id": "252221774",
+    "title": "Fatty acid profiles in various lipid fractions in the female epidermis. Does the body site and age matter?",
+    "authors": [
+      "A. Mika",
+      "A. Pakiet",
+      "O. Szczygielski",
+      "K. Wo\u017aniak",
+      "Katarzyna Osipowicz",
+      "C. Kowalewski",
+      "N. Krzesniak",
+      "B. Noszczyk",
+      "K. Wertheim-Tysarowska"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3336986569080862,
+    "depth": 0,
+    "corpus_id": "CorpusId:252221774"
+  },
+  {
+    "snippet": "To further investigate the reduced cohesion between keratinocytes in reepithelialized aged skin, we stained ultrathin sections prepared from epoxy resin-embedded samples with toluidine blue. As shown in Fig. 5A, resin-embedded samples yielded similar results, that is, greater intracellular spacing between keratinocytes in basal and suprabasal layers of repaired epidermis of aged vs. young skin. The difference in intracellular spacing between basal and suprabasal keratinocytes was significant, even when normalized to total epidermal area (14.6 AE 1.26% vs. 5.99 AE 1.22% in aged vs. young repaired epidermis, respectively, n = 3/age group, P = 0.0002, Fig. 5B). Interestingly, transmission electron microscopy not only also revealed increased intracellular spacing between keratinocytes in aged vs. young repaired epidermis, but also a reduced number of cell-cell contacts (Fig. 5B). Specifically, while desmosomes were readily seen in young repaired epidermis, they were much less abundant in repaired epidermis of older adults. When found, desmosomes appeared immature and connected to very thin intermediate filament bundles, in sharp contrast to mature desmosomes connected to dense keratin filaments in repaired epidermis of young Positive staining is red, and hematoxylin counterstaining is blue. While increased production of laminin-c2 is evident between wounded vs. unwounded skin, laminin c2 levels between young and aged wounded skin are similar. However, deposition patterns are distinct between young and aged skin: laminin-c2 forms a thin layer beneath the repaired epidermis in young skin samples. In contrast, laminin-c2 spreads in the uneven contours of the damaged ECM. The resulting layer is relatively wider and more disorganized in aged vs. young repaired skin. Scale bar = 100 lm. Insets are magnified areas delineated by gray rectangles to show evidence of lack of epidermal cohesiveness in aged, but not young skin. Inset width = 142 lm.  (Fig. 5C).",
+    "paper_id": "3761140",
+    "title": "Reduced cell cohesiveness of outgrowths from eccrine sweat glands delays wound closure in elderly skin",
+    "authors": [
+      "L. Ritti\u00e9",
+      "E. A. Farr",
+      "J. Orringer",
+      "J. Voorhees",
+      "G. Fisher"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.33256089464392363,
+    "depth": 0,
+    "corpus_id": "CorpusId:3761140"
+  },
+  {
+    "snippet": "Disease severity was related to changes in skin barrier function and skin microtopography (Table 3). A positive correlation was observed between EASI and erythema on healthy skin (r = 0.56, p < 0.001), pH on flexural eczematous lesions (r = 0.66, p < 0.001), smoothness on healthy skin (r = 0.4, p = 0.02), desquamation on healthy skin (r = 0.49, p = 0.04), contrast on healthy skin (r = 0.46, p = 0.01) and homogeneity on healthy skin (r = 0.46, p = 0.01), while a negative correlation was found between EASI and brightness on flexural eczematous lesion (r = \u22120.48, p = 0.02) and entropy on healthy skin (r = 0.42, p = 0.02) and on the total number of cells (r = \u22120.42, p = 0.04), Figure 1. Other correlations were also found between SCORAD, IGA, NRS for pruritus and sleep and skin barrier function and skin microtopography. \n\ncomorbidities than patients with EASI < 21 (80% vs. 31.8%, p = 0.01). In addition, those with EASI \u2265 21 had more severe and worse controlled disease reflected in higher scores on all AD rating scales (SCORAD, ROS, IGA, POEM, DLQI, NRS pruritus, NRS sleep). Erythema on healthy skin was also higher in patients with EASI \u2265 21 (288.31 AU vs. 194.6 AU, p = 0.01). The pH in flexural eczema was higher in the group with EASI \u2265 21 (5.81 vs. 5.02, p < 0.001). The R7 elasticity in flexural eczema was lower in subjects with EASI \u2265 21 (0.48% vs. 0.61%, p = 0.01) and so was the hardness in healthy skin (7.51 AU vs. 10.59 AU, p = 0.04).",
+    "paper_id": "273035421",
+    "title": "Skin Barrier Function and Microtopography in Patients with Atopic Dermatitis",
+    "authors": [
+      "Carlota Pretel-Lara",
+      "R. Sanabria-de la Torre",
+      "S. Arias-Santiago",
+      "Trinidad Montero\u2010V\u00edlchez"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.33092007672030155,
+    "depth": 0,
+    "corpus_id": "CorpusId:273035421"
+  },
+  {
+    "snippet": "Participants of this cluster started treatment with a good skin condition, therefore, they had high scores for these attributes and would justify a longer time to obtain significant improvements. In C2 the average scores of wrinkles, depth of wrinkles and facial expression lines were: 3.5, 4.0 and 2.5, respectively and for C1 were notoriously lower (6.9, 7.1 y 5.1). These attributes can be associated with signs of ageing, both chronological and photoaging. 21  participants significantly improved in depth of wrinkles, whereas C2 did not improve this attribute. It is important to highlight that C1 had a high score in this attribute at the beginning of the treatment. In C2 the situation was different due to the participants were younger and had just a few cases of photodamage. Also, their treatment started with a low score in this attribute. \n\nIt is of importance to highlight that, in none of the clusters wrinkle improvements were detected neither in facial expression lines, skin spots, color uniformity or skin porosity. In general, these properties require longer treatments for improvements to be sensorially and consciously noticed. In a study by Han et al. performed with BV serum, a period of 8 to 12 weeks was needed to enhance the state of wrinkles of participants. In this study, skin was evaluated by both, visual observation of a dermatologist and image analysis of the skin replicas. 11 l volunteers showed an excellent tolerance to treatment: 8.6\u00b10.9(9-point scale), which deserves to be highlighted considering that ten of them were classified to have sensitive skin according to Baumann. Also, volunteers satisfaction related to treatment received very high scores as well: 8.5\u00b10.6(9-point scale). \n\nAnalyzing the photographies of the participants that were taken before and after treatment, it is of importance the improvements in the state of skin for both, C1 and C2 (examples in Figures 2 & 3). Among the changes registered: glabellar region, generally in facial expression lines, eyelids, oval face definition, upper eyelid (slitghtly raised), less depth of wrinkles in facial expression lines.",
+    "paper_id": "243346573",
+    "title": "Clinical evaluation of the efficacy of bee venom as cosmetic active",
+    "authors": [
+      "A. G\u00e1mbaro"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.37754991886632616,
+    "depth": 1,
+    "corpus_id": "CorpusId:243346573"
+  },
+  {
+    "snippet": "\u2022 C Skin",
+    "paper_id": "273294281",
+    "title": "Exploration of the Conditions for Occurrence of Photoplethysmographic Signal Inversion above the Dorsalis Pedis Artery",
+    "authors": [
+      "Fredrik Wilsbeck Jerve",
+      "Dag Roar Hjelme",
+      "H. Kalv\u00f8y",
+      "John Allen",
+      "C. Tronstad"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3721991141151649,
+    "depth": 1,
+    "corpus_id": "CorpusId:273294281"
+  },
+  {
+    "snippet": "The C2-specific mRNA detected in the C2D Type II skin fibroblast cells (Fig. 6, lane 1) was similar in size (2.7 kb) and quantity to the C2 mRNA detected in normal skin fibroblast cells (data not shown). In addition, the L-cells transfected with normal (Fig. 6, lane 2) and both C2D Type II genomic cosmid clones (Fig. 6, lanes 3 and 4) expressed a major C2 FIG. 3. Rate of C2 secretion from normal and C2D Type II skin fibroblasts. Fibroblasts were metabolically labeled, washed, and incubated in medium containing excess unlabeled methionine for the times indicated as described under \"Experimental Procedures.\" At the indicated time points, C2 was immunoprecipitated from intracellular lysates and extracellular medium and subjected to SDS-polyacrylamide gel electrophoresis (7.5% in reducing conditions). Skin fibroblasts were from the normal and homozygous C2D Type II individuals studied in Fig. 2. Shown are autoradiograms from 72-h exposures at \u03ea70 \u00b0C with enhancing screens. Arrows indicate the major C2 intracellular and extracelullar polypeptides.",
+    "paper_id": "20828664",
+    "title": "Type II Human Complement C2 Deficiency",
+    "authors": [
+      "R. Wetsel",
+      "J. Kulics",
+      "M. Lokki",
+      "P. Kiepiela",
+      "Hideto Akama",
+      "Charles A. C. Johnson",
+      "P. Densen",
+      "H. Colten"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3409182636573851,
+    "depth": 1,
+    "corpus_id": "CorpusId:20828664"
+  },
+  {
+    "snippet": "Total of volunteers belonging to C1 had type III Glogau, whereas C2 showed a lower level of photodamage. They were distributed in three groups of 5 participants each one with type I, II and III Glogau, respectively. This shows that the initial state of the skin of participants was influenced by age and photodamage that was accumulated during life. Between C1 and C2, the participants of C2 presented a better state of skin before treatment started.",
+    "paper_id": "243346573",
+    "title": "Clinical evaluation of the efficacy of bee venom as cosmetic active",
+    "authors": [
+      "A. G\u00e1mbaro"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.339028648775865,
+    "depth": 1,
+    "corpus_id": "CorpusId:243346573"
+  },
+  {
+    "snippet": "A 50-year-old carpenter was admitted with plaques of erythema with atrophy, teleangiectasias and vesicles/bullae in the skin of the face, neck, ventral and dorsal part of thorax and both arms. The skin changes were induced by intense sun-exposure. \n\nHe had suffered form recurrent bronchitis for many years, and the last year he had three episodes of pyelonephritis, as well as arthritis of finger-joints and the left knee. Skin-biopsy demonstrated findings compatible with lupus erythematosus. \n\nImmunofluorescence Other laboratory tests: Hgb: 13.9, SR 30, WBC 8800. Diff. counts: normal. Se-creatinine, urea, uric acid, alk. phosphatase, ALAT, ASAT, bilirubin, total protein, se-electrophoresis, Na, K, Cl: all normal. Urine: normal. \n\nIn order to investigate his low CH50 further the patient and his family were typed with regard to the genetic polymorphisms C4, C2, factor B and HLA. C4 typing was performed by immunofixation agarose gel electrophoresis on desialised plasma samples. The C2 typing procedure included isoelec tric focusing in polyacrylamid gel slabs, iodine treatment of gels, and visuliazation of C2 bands by overlay of agarose-containing sensitised red blood cells and C2 deficient human serum. The BF typing was performed by immunofixation electrophoresis. HLA typing was performed as described earlier (1). The results are presented in Fig. 1. Detailed quantitative studies of complement were performed in the patient and the family members. Total haemolytic complement and the component C2 were determined by haemolytic plate technique as described in Lachmann et al. (4). Complement factors C4 and factor B were determined in all family members by the radial immuno-diffusion method with commercially obtained antisera. C5 and C8 were determined by the same method but in the patient only. Results of quantitative determina tions are found in Table I.",
+    "paper_id": "29080069",
+    "title": "HLA genotypes in a family with a case of homozygous C2 deficiency and discoid lupus erythematosus.",
+    "authors": [
+      "Lasse R. Braathen",
+      "A. Bratlie",
+      "P. Teisberg"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.33114551449846225,
+    "depth": 1,
+    "corpus_id": "CorpusId:29080069"
+  },
+  {
+    "snippet": "Validation of interventions for risk of impaired skin integrity in adult and aged patients.",
+    "paper_id": "220288729",
+    "title": "Validation of interventions for risk of impaired skin integrity in adult and aged patients.",
+    "authors": [
+      "L. B. Meneses",
+      "F. D. A. L. Medeiros",
+      "Jacira dos Santos Oliveira",
+      "M. M. L. N\u00f3brega",
+      "Mirian Alves da Silva",
+      "M. J. G. Soares"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.329489093793324,
+    "depth": 1,
+    "corpus_id": "CorpusId:220288729"
+  },
+  {
+    "snippet": "This distribution was made according to their state of skin and was also confirmed by the hierarchical cluster analysis. Figure 1 shows the two clusters that were obtained: cluster 1 (C1) with 8 participants and cluster 2 (C2) with 15 participants. C1 participants were characterized by presenting high scores in depth of wrinkles, wrinkles and pores of skin, whereas C2 participants were characterized by high scores of smoothness, lightness, elasticity, firmness, youthful appearance, healthy appearance and general state of skin before treatment started (Tables 3 & 4). According to square chi test, the distribution of participants in both clusters was not significantly affected (p>0.05) by either their marital status, level of education, menopause, smoking, nor for having been a smoker or having had acne, and nor for the type or frequency of use of cosmetic products. There was a significant difference in the age of participants of both clusters (p=0.015), having C1 participants a mean age of 56.9\u00b15.0 years-old and C2 mean age of 48.3\u00b18.3 years-old. \n\nThe phototype of the participants of each cluster, presented the following distribution: in C1, 3 volunteer shad phototype II, 4 phototype III and1 phototype IV, wheareas in C2, 6, 7 and 2 of the volunteers presented phototypes II, III and IV respectively. No significant differences were found among the phototypes of clusters (p>0.05). \n\nTable 2 shows the classification of the participants of each cluster according to Baumann. According to square chi test, the frequency of Baumann classification did not present significant differences (p=0.133) between C1 and C2. All C1 participants had wrinkles and pigmented skin, whereas in C2 a variety of alternatives of this classification was presented. It was of importance the fact that 11 of participants presented wrinkles. \n\nAccording to chi-square test, significant differences (p=0.0089) were found in the distribution of Glogau indexes when analyzing the photoaging of the members of each of the clusters. Total of volunteers belonging to C1 had type III Glogau, whereas C2 showed a lower level of photodamage.",
+    "paper_id": "243346573",
+    "title": "Clinical evaluation of the efficacy of bee venom as cosmetic active",
+    "authors": [
+      "A. G\u00e1mbaro"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.31698520004612357,
+    "depth": 1,
+    "corpus_id": "CorpusId:243346573"
+  },
+  {
+    "snippet": "The migration of cells as a cohesive group, such as that observed in expanding outgrowths, is referred to as 'collective cell migration'. Mechanical forces that develop at cell-cell junctions are directly influenced by the strength of interactions of cells with the extracellular matrix (ECM) (Discher et al., 2005;Maruthamuthu et al., 2011;Tseng et al., 2012;Checa et al., 2015). Because damage to the ECM (such as presence of fragmented collagen fibers, reduced ECM density, and decreased tissue mechanical forces) is a hallmark of aged skin [reviewed in (Ritti e & Fisher, 2015)], we investigated keratinocyte-ECM interactions during outgrowth expansion in young and aged wounded skin. It was previously shown that laminin-332 (formerly known as laminin-5) mediates interaction between expanding keratinocytes and the dermal ECM in human wounds (Kainulainen et al., 1998;Nguyen et al., 2000). It was also suggested that new production of the c2 chain of laminin-332 is required for epidermal regeneration upon wounding (Kainulainen et al., 1998). Thus, we compared laminin-c2 expression in young and aged, normal and wounded skins as readout for keratinocyte/ECM interactions. As shown in Fig. 4A,B, we readily observed increased production of the c2 chain of laminin in wounded vs. unwounded skin, both in young and aged individuals. Laminin c2 levels were reduced in unwounded aged vs. young skin, but were not significantly different in wounded skin between the two age groups (Fig. 4B). However, we observed different deposition patterns between young and aged skin. While laminin c2 was deposited in a well-demarcated, thin layer beneath the repaired epidermis in young skin, laminin c2 appeared much more diffuse and disorganized in aged repaired skin (Fig. 4A), following the uneven contours of the damaged ECM. These observations suggest differences in keratinocyte/ECM interactions between young and aged skins. Strikingly, we also observed gaps between keratinocytes within the",
+    "paper_id": "3761140",
+    "title": "Reduced cell cohesiveness of outgrowths from eccrine sweat glands delays wound closure in elderly skin",
+    "authors": [
+      "L. Ritti\u00e9",
+      "E. A. Farr",
+      "J. Orringer",
+      "J. Voorhees",
+      "G. Fisher"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.31353088793170253,
+    "depth": 1,
+    "corpus_id": "CorpusId:3761140"
+  },
+  {
+    "snippet": "The skin physiological properties of the three tested groups (C1, C2 and C3) are summarized in Table 3. Compared with C1 (those with a regular menstrual cycle), C2 (those with a less regular menstrual cycle) and C3 (those with an irregular menstrual cycle) had significantly decreased (p < 0.05) hydration, melanin, L, b and smoothness values ( Table 3). The skin gloss and elasticity (R2) parameters were also decreased (p > 0.05) in the C2 and C3 groups. The less regular and irregular menstrual cycles among the C2 and C3 groups may have been caused by irregular hormone fluctuations, which might have resulted in the decreased skin hydration and melanin content (Table 3). Compared with the C1 group, the C2 and C3 groups had significantly increased TEWL and a values (p < 0.05); the sebum content was also increased (p > 0.05) ( Table 3). In addition, the haemoglobin value was significantly increased (p = 0.037) in the C3 group but only moderately increased (p > 0.05) in the C2 group. Skin wrinkles were moderately increased in the C2 and C3 groups (p > 0.05) compared to C1. There were minor differences in skin pH (p > 0.05) among the three tested groups. The sebum content of the skin is related to the menstrual cycle because oestrogens regulate the production of sebum and other stratum corneum lipids [14]. The higher sebum contents in the C2 and C3 groups (Table 3) may have been influenced by oestrogen production and the skin microbial composition [1,14].",
+    "paper_id": "258971700",
+    "title": "The menstrual cycle regularity and skin: irregular menstrual cycle affects skin physiological properties and skin bacterial microbiome in urban Chinese women",
+    "authors": [
+      "Laiji Ma",
+      "Hongju Jiang",
+      "Ting-lu Han",
+      "Yanqin Shi",
+      "Man Wang",
+      "Shanshan Jiang",
+      "Suzhen Yang",
+      "L. Yao",
+      "Qingwen Jia",
+      "Li Shao"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3121684298137198,
+    "depth": 1,
+    "corpus_id": "CorpusId:258971700"
+  },
+  {
+    "snippet": "Figure 8A-C shows the morphological images of mouse dorsal skin under a dry and damaged skin model, and treated with PBS and ceramide C2-loaded O/W-NE via transdermal delivery. Under PBS treatment, the skin exhibited dryness with visible scaling. In contrast, the skin treated with ceramide C2-loaded O/W-NE showed no such conditions, displaying elasticity and a smooth texture. Figure 8D shows the changes in skin hydration levels under different treatment conditions, demonstrating that ceramide C2-loaded O/W-NE considerably enhances skin hydration and effectively alleviates dryness, reaching approximately 186% of the untreated water content after five days of treatment. Notably, the skin hydration levels under the ceramide C2-loaded O/W-NE treatment approach those of healthy skin (without skin damage or any treatment), typically ranging from 30 to 35%. According to a previous study, delivery of ceramide to a skin injury model restored the skin barrier function to 181% of that in the untreated group after 10 days of treatment [71]. O/W-NE can transport ceramide to the epidermal layer and effectively repair the skin barrier.",
+    "paper_id": "278002561",
+    "title": "Topical Delivery of Ceramide by Oil-in-Water Nanoemulsion to Retain Epidermal Moisture Content in Dermatitis",
+    "authors": [
+      "Yu Zhou",
+      "Lichun Wu",
+      "Yi Zhang",
+      "Jia Hu",
+      "Jannatul Fardous",
+      "Y. Ikegami",
+      "Hiroyuki Ijima"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.30881581087695886,
+    "depth": 1,
+    "corpus_id": "CorpusId:278002561"
+  },
+  {
+    "snippet": "Other quantified 3-D parameters, including convex hull 2-D/3-D data set, length, volume, and ends, displayed more age-sensitive numerical changes (Fig. 5, all p < 0.05) compared with Qty and nodes. The epidermal innervation of young participants showed complex morphometry intermingled with one another, and the physically governing area (Fig. 3c,d) and space (Fig. 3e,f) of each nerve fiber naturally overlapped without the blank or dull region of sensation. However, the significant decrease in dendritic governing fields and overlapped space reflected on the convex hull 2-D and 3-D parameters implied that the absolute controlling area and compensating sensory capacity by one another were significantly decreased according to natural aging with the emergence and enlarging anarchy area without the physical reach of epidermal innervation (Supplementary Fig. 3b). \n\nThe limitations of the study were the small number of subjects and still prolonged required time from suction blister formation to the 3-D imaging and quantified analysis. A future study with more enlarged subjects is required for not only confirmation of the age-dependent changes of 3-D parameters in our study but also verification of the minimized extent of 3-D images to reduce the excessive time for 3-D imaging and quantification. The required time for blister production could be shortened with firm contact on the skin surface of the device based on our experience. Therefore, the curved region, or hairy area, should be avoided for effective suction blister formation. Lastly, the indispensable requirement of high-cost experimental equipment for the skin-clearing process, confocal microscopy and 3-D quantified analysis could be an entry barrier to impede generalized adoption in the diagnostic evaluation. \n\nIn conclusion, reconstruction and quantitative analysis of 3-D epidermal innervation produced sensitive 3-D parameters, including convex hull 2-D perimeter, total length, total volume, and ends. These 3-D parameters seemed to reflect age-dependent morphological changes of IENFs.",
+    "paper_id": "257057888",
+    "title": "Whole structural reconstruction and quantification of epidermal innervation through the suction blister method and skin-clearing technique",
+    "authors": [
+      "Dai-Hyun Kim",
+      "S. J. Lee",
+      "June Hoan Kim",
+      "Sung Jin Park",
+      "S. Seo",
+      "H. Ahn",
+      "Woong Sun",
+      "Byung-Jo Kim",
+      "I. Rhyu"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3058360598962842,
+    "depth": 1,
+    "corpus_id": "CorpusId:257057888"
+  },
+  {
+    "snippet": "Based on the \"limma\" R package, we obtained 511 genes highly expressed in C2 and 40 genes highly expressed in C1 (Fig. 2G). We then performed Gene Ontology (GO) and Kyoto encyclopedia of genes and genomes (KEGG) enrichment analyses based on DEGs (Fig. 2H). In KEGG terms, we observed that the B-cell receptor signaling pathway and hematopoietic cell lineage were down-regulated in C2, while the IL-17 signaling pathway, gastric cancer, and basal cell carcinoma were up-regulated in C2. In GO terms, immune system-related signals were downregulated in C2, whereas skin development and keratinocyte differentiation signals were upregulated in C2. Notably, histopathological sections confirmed that tumor cells in C2 showed more severe cytological heterogeneity compared to C1, suggesting a more significant degree of malignancy (Fig. 2I).",
+    "paper_id": "264936582",
+    "title": "LY6/PLAUR domain containing 3 (LYPD3) maintains melanoma cell stemness and mediates an immunosuppressive microenvironment",
+    "authors": [
+      "Yi-dou Hu",
+      "Ke Wu",
+      "Yuan-Jie Liu",
+      "Qian Zhang",
+      "H. Shen",
+      "Jin Ji",
+      "Dong Fang",
+      "Song-yang Xi"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.30188073416160766,
+    "depth": 1,
+    "corpus_id": "CorpusId:264936582"
+  },
+  {
+    "snippet": "vs 70-75 year-old); study III acquired with MPTflex on dorsal forearm and face temple area (18-25 vs 70-75 year-old). (a) Mosaic representation of a z-substack of 20 in vivo multiphoton images (labels 1-20) acquired every 2.346 \u00b5m from the stratum corneum to the basal layer on ventral and respectively dorsal forearm skin of an old volunteer (study II). 2PEF intensity is shown in cyan hot color and Pseudo-FLIM melanin mask pixels in purple. High 2PEF signal intensities appear in white color. (b1-b3) 3D Mean melanin density in epidermis (ED); (c1-c3) 3D Melanin density z-epidermal distribution profiles (mean 3D melanin density estimated in 10 thickness-normalized epidermal layers from 1-DEJ dermal-epidermal junction level to 10-SC stratum corneum level). The data in b2 and c2 are adapted from Pena et al. Sci. Rep. 12, 1642, 2022 (Fig. S7 32 ). The b1, b2 and b3 raw data are expressed as box plots with fences, mean and median (-). All ROIs values and their distribution (dots (\u2666) and histogram) are shown on the right side of the boxplot. Overlapping values are highlighted in black (\u2666). In study I, the pink \u2666 and green \u2666 data points correspond to respectively women and men volunteers. The (c1-c3) data are expressed as mean \u00b1 95% confidence intervals of the mean. The mean and median values with their errors are given in Table S2. All the statistical p-values and ES parameters are given in Table S3   www.nature.com/scientificreports/ in fibrillar collagens density on ventral and dorsal forearms, but a slight increase was highlighted on face temple area (Fig. 7b3).\n\nOn ventral forearm, we measured differences between \"light\" and \"tan\" skin ITA groups (study I, Fig. 7b1), that could be explained either by an intrinsic difference between the two volunteers groups or by the attenuation of the SH",
+    "paper_id": "252009072",
+    "title": "In vivo multiphoton multiparametric 3D quantification of human skin aging on forearm and face",
+    "authors": [
+      "Ana\u2010Maria Pena",
+      "T. Baldeweck",
+      "Etienne Decenci\u00e8re",
+      "S. Koudoro",
+      "S. Victorin",
+      "E. Raynaud",
+      "Blandine Ngo",
+      "P. Bastien",
+      "S. Brizion",
+      "E. Tancr\u00e8de\u2010Bohin"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3018556182273483,
+    "depth": 1,
+    "corpus_id": "CorpusId:252009072"
+  },
+  {
+    "snippet": "Figure 8D shows the changes in skin hydration levels under different treatment conditions, demonstrating that ceramide C2-loaded O/W-NE considerably enhances skin hydration and effectively alleviates dryness, reaching approximately 186% of the untreated water content after five days of treatment. Notably, the skin hydration levels under the ceramide C2-loaded O/W-NE treatment approach those of healthy skin (without skin damage or any treatment), typically ranging from 30 to 35%. According to a previous study, delivery of ceramide to a skin injury model restored the skin barrier function to 181% of that in the untreated group after 10 days of treatment [71]. O/W-NE can transport ceramide to the epidermal layer and effectively repair the skin barrier.",
+    "paper_id": "278002561",
+    "title": "Topical Delivery of Ceramide by Oil-in-Water Nanoemulsion to Retain Epidermal Moisture Content in Dermatitis",
+    "authors": [
+      "Yu Zhou",
+      "Lichun Wu",
+      "Yi Zhang",
+      "Jia Hu",
+      "Jannatul Fardous",
+      "Y. Ikegami",
+      "Hiroyuki Ijima"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.29993418043449716,
+    "depth": 1,
+    "corpus_id": "CorpusId:278002561"
+  },
+  {
+    "snippet": "ml of collected blood, which represents -0 .2 % the total blood volume in a single individual . These results are then in keeping qualitatively with previous experiments in which C2deficient guinea pigs were supplemented with functionally pure C2, and a C2dependent vasopermeability response was observed with as little added C2 as 10% of that found in a normal guinea pig (5). Similarly, when HANE plasma was enriched with C2, enhanced kinin generation occurred (33). Therefore, there is adequate intact C2 to generate the active C2b peptide in vivo, and these data suggest that it is possible to generate a similar dose response to the above skin test by cleavage of C2 in vivo. Consequently, the role of C2 may be important in the pathogenesis of angioedema . We find that a second serine proteinase is required for the release ofthe C2 vasoactive fragment as previously reported (33). The amino acid length ofthe active physiological C2 fragment is not yet known, nor is it known what might be the in vivo enzyme that releases the vasoactive peptide from its C2 precursor, Although plasmin is inhibited by Cl inhibitor, it is also complexed with a2-macroglobulin and a2-antiplasmin. Two aspects of plasmin metabolism still make it a candidate for the in vivo enzyme. The swelling episodes in angioedema are often localized within a small area of the body, and are typically induced by minor trauma . The local boundaries of the lesions may be a consequence of the preferential regulation of plasmin activity in the extravascular spaces by C1 inhibitor. Alternatively, a tissue activation mechanism, such as that of a tissue plasminogen activation, might provide only local concentrations of active enzyme.",
+    "paper_id": "6968427",
+    "title": "Angioedema induced by a peptide derived from complement component C2",
+    "authors": [
+      "Candace",
+      "Strang",
+      "'. S. Cholin",
+      "Jocelyn",
+      "Spragg",
+      "E. Alvin",
+      "Davis",
+      "E. Evelyn",
+      "Schneeberger",
+      "Virginia",
+      "Donaldson"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.29485219682570296,
+    "depth": 1,
+    "corpus_id": "CorpusId:6968427"
+  },
+  {
+    "snippet": "Eligible participants were all healthy adults aged between 35 and 55 years (extremes included) with mild to moderate skin aging signs (grade 2-4; Skin Aging Atlas by Bazin R. [30,31]) who met the following inclusion criteria: female and male sex (between 30-50% male and 50-70% female sex), skin phototype (Fitzpatrick classification) in the range from I to V (I-III for Caucasian and III-V for Asian subjects), and dark spots. Exclusion criteria were chosen to recruit a healthy study population. A list of the exclusion criteria can be found in Supplementary Table S1.",
+    "paper_id": "249212557",
+    "title": "Photoprotective and Antiaging Effects of a Standardized Red Orange (Citrus sinensis (L.) Osbeck) Extract in Asian and Caucasian Subjects: A Randomized, Double-Blind, Controlled Study",
+    "authors": [
+      "Vincenzo Nobile",
+      "Andrea Burioli",
+      "Sara Yu",
+      "Shi Zhifeng",
+      "Enza Cestone",
+      "Violetta Insolia",
+      "Vincenzo Zaccaria",
+      "G. Malfa"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.2939484171405543,
+    "depth": 1,
+    "corpus_id": "CorpusId:249212557"
+  },
+  {
+    "snippet": "However, when comparing results based on age groups, no statistical differences were observed between the four age groups: [< 35 years old], [36-45 years   10 . The results obtained through LC-OCT imaging in the present study corroborate the previously reported consistent thickness of the viable epidermis up to 65 years old, as observed with RCM. Unfortunately, due to differing inclusion criteria, the older age group [61-70 years old] did not allow to observe further evolution, i.e., potential thinning, for volunteers over 70 years old. Nevertheless, the quantification of skin microstructures using LC-OCT 3D imaging has demonstrated its potential to enhance the current knowledge about age-related structural variations in facial skin. It is a relevant tool to consider for supporting the establishment of a consensus within the community regarding the definition of normal aging features.",
+    "paper_id": "265860625",
+    "title": "Line-field confocal optical coherence tomography coupled with artificial intelligence algorithms to identify quantitative biomarkers of facial skin ageing",
+    "authors": [
+      "Franck Bonnier",
+      "M. Pedrazzani",
+      "S\u00e9bastien Fischman",
+      "Th\u00e9o Viel",
+      "Agnes Lavoix",
+      "Didier Pegoud",
+      "Meryem Nili",
+      "Y. Jimenez",
+      "S. Ralambondrainy",
+      "J. Cauchard",
+      "R. Korichi"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.2910408335228108,
+    "depth": 1,
+    "corpus_id": "CorpusId:265860625"
+  },
+  {
+    "snippet": "The subjects in the case and control group were equally distributed by gender, age and age groups (Table 1). Skin type, hair color and familiar anamnesis of CM did not differ between groups. The average age of the subjects was 59.56 years in the case group and 57.58 years in the control group. In both the case and control group, a larger proportion of the subjects was female-62.8% and 62.1%, respectively. However, this larger proportion of females corresponded to the gender proportions of patients with CM registered in the Lithuanian health statistics databases [19]. Detailed group characteristics and comparisons between the groups are shown in Table 1. In Table 2, the detailed CMN distribution on the outer skin surfaces of the CM subjects and controls is shown. We found that in the case group, CMNs of both 2-5 mm and >5 mm in diameter were more common on the face and on the outer surface of the upper arm, and 2-5 mm CMNs on the outer surface of the lower arm. However, we did not find significant differences between the groups in the assessment of CMNs on the outer surfaces of the hands. When assessing the differences in lens opacification between the groups, we found that NO2 was more often observed in the control group at 46.1% than in the case group at 35.1%. In the case group, NO3 was confirmed for 46.0% of subjects and in the control group for 34.3%. When assessing the color of the lens, we found that NC2 was more common in the control group than in the case group, 45.5% and 31.6%, respectively. However, NC3 was more often found in the case group at 44.8% than in the control group at 32.6%. In the control group, C1 was detected in 47.8% and in the case group in 14.9% of subjects. However, the more-opacified cortical layers of the lens C2 were more often found in the case group, at 65.5%, than in the 34.3% of subjects in the control group. Posterior subcapsular layers were evaluated as P1 more often in the control group, 64.0%, than 21.8% in the case group.",
+    "paper_id": "273928180",
+    "title": "Cataract Prevalence in Patients with Cutaneous Melanoma in Lithuanian Population",
+    "authors": [
+      "L. \u0160emeklis",
+      "Laura Kapitanovait\u0117",
+      "Grinvydas Butrimas",
+      "Kamilija Bried\u0117",
+      "Laura Ra\u010dkauskait\u0117",
+      "R. \u017demaitien\u0117",
+      "S. Valiukevi\u010dien\u0117"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.290624684362505,
+    "depth": 1,
+    "corpus_id": "CorpusId:273928180"
+  },
+  {
+    "snippet": "When the epidermal barrier is breached, the cellular and chemical responses inside the skin layers will synchronize to begin the recovery process. Access to the skin creates ideal circumstances for germs to colonize and reproduce uncontrollably. Skin healing was assessed through macroscopic screening. Optical pictures of the wound were captured from the first day to the fifteenth day (Figure 2). Subtle compositional variations between the C1 and C2 groups are also evident in regards to the coloration of the resulting bioproducts. \n\nthe skin layers will synchronize to begin the recovery process. Access to the skin creates ideal circumstances for germs to colonize and reproduce uncontrollably. Skin healing was assessed through macroscopic screening. Optical pictures of the wound were captured from the first day to the fifteenth day (Figure 2). Subtle compositional variations between the C1 and C2 groups are also evident in regards to the coloration of the resulting bioproducts. The macroscopic examination of the skin's rehabilitation illustrates that the C1 biomaterial regenerates the skin more rapidly than the C2 bioproduct. The healing process revealed that on the third day after surgery, the sealing of the cutaneous defect began, and crusts were visible in all groups. On the sixth day, the skin closure became increasingly noticeable and more obvious in the C1 group. Even though they were all still visible on day 11, the defects had diminished, leaving a thin crust above the wound. Fifteen days following the surgery, the healing phase was finished, and a scar replaced the original location of the defect. At that point, there was no visible distinction among the scars. The bioactive elements of the cement stimulated re-epithelialization and tissue remodeling. \n\nFor every image that was examined, a surface graph was created to provide a visual representation of the healing (Figure 3). The macroscopic examination of the skin's rehabilitation illustrates that the C1 biomaterial regenerates the skin more rapidly than the C2 bioproduct. The healing process revealed that on the third day after surgery, the sealing of the cutaneous defect began, and crusts were visible in all groups. On the sixth day, the skin closure became increasingly noticeable and more obvious in the C1 group.",
+    "paper_id": "272063891",
+    "title": "The Potential of Composite Cements for Wound Healing in Rats",
+    "authors": [
+      "Alina Ioana Ardelean",
+      "S. M\u00e2rza",
+      "M. Dragomir",
+      "Andrada Negoescu",
+      "C. Saro\u0219i",
+      "C. Novac",
+      "C. Pe\u0219tean",
+      "M. Moldovan",
+      "L. Oana"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.2875976346367568,
+    "depth": 1,
+    "corpus_id": "CorpusId:272063891"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "markers": [
+    {
+      "gene": "CD1C",
+      "evidence_type": "known marker; cluster annotation",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "FCER1A",
+      "evidence_type": "known marker; cluster annotation",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "CLEC10A",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "CD163",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "DC2 co-locates with pre-dermal condensate (pre-Dc) cells in Visium spatial transcriptomics data, along with DC1, LTi and ILC3",
+      "category": "spatial co-location",
+      "source_table": "Extended Data Fig. 1f"
+    },
+    {
+      "finding": "DC2 is present from first trimester in prenatal skin, prior to bone marrow production",
+      "category": "developmental timing",
+      "source_table": "Main text, Botting & Haniffa 2020"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses",
+      "source_file": "Main text, Fig. 1d",
+      "context": "Spatial microenvironment analysis showing DC2 co-location with pre-Dc cells"
+    },
+    {
+      "quote": "Bar plot showing cell type co-location ... for selected cell type pairs (pre-dermal condensate and immune cells: DC1, DC2, LTi and ILC3)",
+      "source_file": "Extended Data Fig. 1f legend",
+      "context": "Extended data figure legend explicitly listing DC2 among immune cells co-locating with pre-Dc"
+    }
+  ]
+}

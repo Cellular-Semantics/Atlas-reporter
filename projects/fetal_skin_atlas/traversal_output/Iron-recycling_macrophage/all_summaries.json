@@ -1,0 +1,105 @@
+[
+  {
+    "corpusId": "273400864",
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee NH et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "summary": "Identified four macrophage subsets in prenatal human skin (7-17 PCW): LYVE1+, MHCII+, TML (TREM2+ microglia-like), and iron-recycling macrophages. Iron-recycling macrophages specifically promote endothelial cell chemotaxis. All four subsets express gene programs driving angiogenesis. Macrophages co-locate with endothelial cells in neurovascular microenvironments. Predicted ligand-receptor interactions include CXCL8-ACKR1 and CCL8-ACKR1 between macrophages and endothelial cells.",
+    "quotes": [
+      "Gene ontology analysis showed that the four macrophage subsets (LYVE1 + , MHCII + , TML and iron-recycling) expressed gene programs that drive angiogenesis (Supplementary Tables 23-26).",
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1 + and TML macrophages, blood vessel morphogenesis by LYVE1 + macrophages and endothelial cell chemotaxis by iron-recycling macrophages (Extended Data Fig. 8i and Supplementary Table 27).",
+      "Predicted ligandreceptor interactions were consistent with reciprocal communication between macrophages and endothelial cells to support angiogenesis, chemotaxis and cell migration (for example, CXCL8-ACKR1 and CCL8-ACKR1)"
+    ]
+  },
+  {
+    "corpusId": "248122197",
+    "title": "Mapping the developing human immune system across organs",
+    "authors": "Suo C et al.",
+    "year": 2022,
+    "journal": "Science",
+    "summary": "Defined the iron-recycling macrophage annotation across prenatal organs. Identified eight broad macrophage groupings including iron-recycling. Iron-recycling macrophages are enriched in later stages of gestation and upregulate genes encoding immune effector functions. Adult erythrophagocytic macrophages from spleen and liver carry out iron-recycling functions and are the closest adult equivalent.",
+    "quotes": [
+      "Among macrophages, we identified eight broad macrophage groupings based on their transcriptome profile ( fig. S4H): \"LYVE1 hi \", \"iron-recycling\", \"MHC class II hi \", \"Kupffer-like\" (18), \"microglia-like TREM2 hi \" (19), \"osteoclasts\" (11,20), and \"proliferating\" macrophages.",
+      "The majority of adult macrophages clustered separately from the prenatal macrophages, with the exception of erythrophagocytic macrophages (fig. S12, B and C). This population includes macrophages primarily from the spleen and liver that carry out iron-recycling functions",
+      "a large fraction of neighborhoods within the ironrecycling and MHCII hi macrophage populations were enriched in later stages of gestation. We found that these subpopulations upregulated genes encoding for immune effector functions"
+    ]
+  },
+  {
+    "corpusId": "52014247",
+    "title": "Macrophage ferroportin is essential for stromal cell proliferation in wound healing",
+    "authors": "Recalcati S et al.",
+    "year": 2018,
+    "journal": "Haematologica",
+    "summary": "Demonstrated that macrophage ferroportin (SLC40A1) is essential for local iron redistribution to neighboring stromal cells. Genetic deletion of ferroportin in macrophages resulted in iron deficiency in surrounding cells, impaired hair follicle cycling, and delayed wound healing.",
+    "quotes": [
+      "Iron recycling by macrophages is essential for erythropoiesis, but may also be relevant for iron redistribution to neighboring cells at the local tissue level. Using mice with iron retention in macrophages due to targeted inactivation of the iron exporter ferroportin, we investigated the role of macrophage iron release in hair follicle cycling and wound healing, a complex process leading to major clinical problems, if impaired."
+    ]
+  },
+  {
+    "corpusId": "41357263",
+    "title": "Disorders of metal metabolism",
+    "authors": "Ferreira C, Gahl W",
+    "year": 2017,
+    "journal": "Translational Science of Rare Diseases",
+    "summary": "Describes ferroportin (SLC40A1) as the only known mammalian iron exporter, present in macrophages, hepatocytes, and enterocytes. Loss-of-function mutations lead to iron accumulation in macrophages.",
+    "quotes": [
+      "SLC40A1 encodes ferroportin, the only known mammalian iron exporter, present in macrophages and in the basolateral membrane of hepatocytes and enterocytes. Loss-of-function mutations lead to classical-or type A-ferroportin disease, characterized by iron accumulation predominantly in macrophages, with increased ferritin but low-to-normal transferrin saturation until late in the disease."
+    ]
+  },
+  {
+    "corpusId": "56170378",
+    "title": "Iron Regulation: Macrophages in Control",
+    "authors": "Sukhbaatar N, Weichhart T",
+    "year": 2018,
+    "journal": "Pharmaceuticals",
+    "summary": "Reviews how macrophages control erythropoiesis and iron handling. Red pulp macrophages in the spleen, Kupffer cells in the liver, and central nurse macrophages in the bone marrow ensure coordinated iron metabolism.",
+    "quotes": [
+      "Macrophages are sentinel cells of the innate immune system and have important functions in development, tissue homeostasis, and immunity. These phylogenetically ancient cells also developed a variety of mechanisms to control erythropoiesis and the handling of iron. Red pulp macrophages in the spleen, Kupffer cells in the liver, and central nurse macrophages in the bone marrow ensure a coordinated metabolism of iron to support erythropoiesis."
+    ]
+  },
+  {
+    "corpusId": "253884184",
+    "title": "Pumping iron - how macrophages handle iron at the systemic, microenvironmental, and cellular levels",
+    "authors": "Nairz M et al.",
+    "year": 2017,
+    "journal": "Pflugers Archiv",
+    "summary": "Reviews macrophage roles in iron recycling from senescent red blood cells, free heme detoxification, and provision of iron for de novo hemoglobin synthesis.",
+    "quotes": [
+      "Macrophages reside in virtually every organ. First arising during embryogenesis, macrophages replenish themselves in the adult through a combination of self-renewal and influx of bone marrow-derived monocytes. As large phagocytic cells, macrophages participate in innate immunity while contributing to tissue-specific homeostatic functions. Among the key metabolic tasks are senescent red blood cell recycling, free heme detoxification, and provision of iron for de novo hemoglobin synthesis."
+    ]
+  },
+  {
+    "corpusId": "240482324",
+    "title": "Macrophages and Iron: A Special Relationship",
+    "authors": "Recalcati S, Cairo G",
+    "year": 2021,
+    "journal": "Biomedicines",
+    "summary": "Reviews ferroportin-mediated iron release from macrophages and its role in local tissue iron redistribution.",
+    "quotes": [
+      "For still unexplained reasons, ferroportin-mediated iron release from macrophages seems more sensitive to hepcidin than intestinal export, as patients unable to synthesize active ferroportin accumulated iron in lamina propria macrophages but not in enterocytes"
+    ]
+  },
+  {
+    "corpusId": "210948850",
+    "title": "Regulation of tissue iron homeostasis: the macrophage ferrostat",
+    "authors": "Winn NC et al.",
+    "year": 2020,
+    "journal": "JCI Insight",
+    "summary": "Describes how macrophages regulate tissue iron homeostasis acting as a ferrostat at the local tissue level.",
+    "quotes": [
+      "Iron is an essential element for multiple fundamental biological processes required for life; yet iron overload can be cytotoxic. Consequently, iron concentrations at the cellular and tissue level must be exquisitely governed by mechanisms that complement and fine-tune systemic control. It is well appreciated that macrophages are vital for systemic iron homeostasis, supplying or sequestering iron as needed for erythropoiesis or bacteriostasis, respectively."
+    ]
+  },
+  {
+    "corpusId": "237936392",
+    "title": "The Multiple Facets of Iron Recycling",
+    "authors": "Slusarczyk P, Mleczko-Sanecka K",
+    "year": 2021,
+    "journal": "Genes",
+    "summary": "Reviews signaling pathways important for the differentiation and biological roles of iron-recycling macrophages within their tissue microenvironment.",
+    "quotes": [
+      "Furthermore, we have recently started to uncover signaling pathways important for the differentiation and biological roles of iron-recycling macrophages within their tissue microenvironment. Recent reports also illustrate how different pathophysiological conditions, such as recovery from acute anemia or inflammation, exploit the plasticity of iron-recycling macrophages to alter their functions or mediate the differentiation of novel subtypes of erythrophagocytic cells, distinct from those presen"
+    ]
+  }
+]

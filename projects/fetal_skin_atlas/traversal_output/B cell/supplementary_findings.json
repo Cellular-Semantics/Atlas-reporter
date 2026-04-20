@@ -1,0 +1,18 @@
+{
+  "markers": [
+    "CD19", "CD20 (MS4A1)", "CD79B", "HLA-DRA", "IGLL1"
+  ],
+  "other_findings": [
+    "B cells emerge in prenatal skin from around 10 PCW, accompanying thymus, bone marrow and spleen formation",
+    "B cells are part of the broad 'B cell' category in the fetal scope of the atlas",
+    "Multiple B cell developmental stages are identified: Pre pro B cell, Pro B cell, Pre B cell, B cell",
+    "B cells and their precursors detected in skin as young as 8 PCW by scRNAseq (Popescu et al., 2019)",
+    "CD24+CD19+ B cell precursors consistently found in fetal skin specimens (Dhariwala et al., 2020)",
+    "Plasma cells, but not B cells, are present in steady-state adult skin"
+  ],
+  "evidence_quotes": [
+    "B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW",
+    "B-cells have not been observed in fetal skin by flow cytometry or immunofluorescence using CD19 and CD20 as markers. However, using scRNAseq, B-cells and their precursors have been detected in skin as young as 8 PCW",
+    "Detection of cells in various stages of B-cell differentiation in first-trimester skin indicates that B-cell precursors are released from the liver into circulation where they can then seed tissue"
+  ]
+}

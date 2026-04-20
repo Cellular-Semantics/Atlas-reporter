@@ -1,0 +1,12 @@
+{
+  "label": "Erythroid (embryonic)",
+  "resolved_names": [
+    "Erythroid (embryonic)",
+    "embryonic erythroblast",
+    "primitive erythroid cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Annotated in atlas; these are more mature embryonic erythroid cells expressing embryonic hemoglobins (HBZ, HBE1)"
+}

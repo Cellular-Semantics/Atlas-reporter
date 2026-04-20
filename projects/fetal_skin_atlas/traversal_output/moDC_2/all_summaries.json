@@ -1,0 +1,20 @@
+{
+  "cell_type": "moDC_2",
+  "summaries": [
+    {
+      "paper": "Reynolds et al. (2021)",
+      "doi": "10.1126/science.aba6500",
+      "summary": "Identifies moDC_2 as an intermediate maturation state of monocyte-derived dendritic cells in adult human skin, positioned along the mo-DC differentiation trajectory between moDC_1 and the terminally mature moDC_3."
+    },
+    {
+      "paper": "McGovern et al. (2014)",
+      "doi": "10.1016/j.immuni.2014.08.006",
+      "summary": "Establishes monocyte origin of CD14+ dermal cells. Demonstrates that human dermal CD14+ cells are monocyte-derived and phenotypically distinct from bona fide DCs, providing context for the moDC lineage in skin."
+    },
+    {
+      "paper": "Gopee et al. (2024)",
+      "doi": "10.1038/s41586-024-08002-x",
+      "summary": "Integrates adult skin dataset from Reynolds et al. (2021) including moDC annotations for cross-developmental comparison with prenatal skin."
+    }
+  ]
+}

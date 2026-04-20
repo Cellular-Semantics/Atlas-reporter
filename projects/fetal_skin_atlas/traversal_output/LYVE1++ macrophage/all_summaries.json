@@ -1,0 +1,83 @@
+[
+  {
+    "corpusId": 273400864,
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee N, Winheim E, Olabi B, et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "summary": "Comprehensive multi-omics atlas of human prenatal skin (7-17 PCW). Identified four macrophage subsets including LYVE1+ macrophages, which promote sprouting angiogenesis and blood vessel morphogenesis, maintain dermal fibroblasts through IGF1 and GRN signaling, and co-localize with endothelial cells in neurovascular microenvironments. LYVE1+ macrophages also express GAS6, which interacts with AXL on WNT2+ fibroblasts to induce immunosuppression and tissue repair.",
+    "quotes": [
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1 + and TML macrophages, blood vessel morphogenesis by LYVE1 + macrophages and endothelial cell chemotaxis by iron-recycling macrophages",
+      "Our identification of additional growth factor interactions (IGF1-IGF1R and GRN-EGFR) suggests that LYVE1 + macrophages play a part in the maintenance of prenatal skin dermal fibroblasts",
+      "GAS6, expressed by TML macrophages and LYVE1 + macrophages, was predicted to interact with AXL receptors on WNT2 + fibroblasts, and these interactions can induce immunosuppression and tissue repair",
+      "multiplex RNAscope and immunofluorescence staining showed LYVE1 + and TML macrophages in close proximity to endothelial cells"
+    ]
+  },
+  {
+    "corpusId": 248122197,
+    "title": "Mapping the developing human immune system across organs",
+    "authors": "Suo C, Dann E, Goh I, et al.",
+    "year": 2022,
+    "journal": "Science",
+    "doi": "10.1126/science.abo0510",
+    "summary": "Cross-tissue atlas of developing human immune system identifying LYVE1 hi as one of eight macrophage groupings. LYVE1 hi macrophages showed high proliferative fraction and were enriched in early gestation across organs including skin. Early macrophages expressed proinflammatory chemokines associated with angiogenesis before acquiring immune effector functions around 10-12 PCW.",
+    "quotes": [
+      "Among macrophages, we identified eight broad macrophage groupings based on their transcriptome profile: \"LYVE1 hi\", \"iron-recycling\", \"MHC class II hi\", \"Kupffer-like\", \"microglia-like TREM2 hi\", \"osteoclasts\", and \"proliferating\" macrophages.",
+      "we observed a high fraction of proliferating macrophages in the yolk sac and within the LYVE1 hi subset across organs, suggesting an increased self-renewal potential",
+      "a large fraction of neighborhoods overlapping the LYVE1 hi and proliferating macrophages enriched in early gestation"
+    ]
+  },
+  {
+    "corpusId": 78094846,
+    "title": "Two distinct interstitial macrophage populations coexist across tissues in specific subtissular niches",
+    "authors": "Chakarov S, Lim HY, Tan L, et al.",
+    "year": 2019,
+    "journal": "Science",
+    "doi": "10.1126/science.aau0964",
+    "summary": "Identified two conserved interstitial macrophage subsets across lung, heart, fat, and dermis: Lyve1 hi MHCII lo CX3CR1 lo macrophages near blood vessels and Lyve1 lo MHCII hi CX3CR1 hi macrophages near nerve bundles. The Lyve1 hi perivascular subset plays a role in preventing fibrosis. Depletion of this subset exacerbated fibrosis in lung and heart models.",
+    "quotes": []
+  },
+  {
+    "corpusId": 51727390,
+    "title": "Hyaluronan Receptor LYVE-1-Expressing Macrophages Maintain Arterial Tone through Hyaluronan-Mediated Regulation of Smooth Muscle Cell Collagen",
+    "authors": "Lim HY, Lim SY, Tan CK, et al.",
+    "year": 2018,
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2018.06.008",
+    "summary": "Demonstrated that LYVE-1+ perivascular macrophages interact with smooth muscle cells via hyaluronan to regulate collagen deposition and maintain arterial tone and vascular wall integrity. Deletion of these macrophages caused ECM abnormalities and impeded blood flow.",
+    "quotes": []
+  },
+  {
+    "corpusId": 234484741,
+    "title": "Fibroblast-macrophage reciprocal interactions in health, fibrosis, and cancer",
+    "authors": "Buechler MB, Fu W, Turley SJ",
+    "year": 2021,
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2021.04.021",
+    "summary": "Review describing reciprocal interactions between macrophages and fibroblasts that maintain tissue homeostasis in diverse organs. Relevant to the LYVE1+ macrophage-fibroblast interactions observed in prenatal skin.",
+    "quotes": []
+  },
+  {
+    "corpusId": 261701324,
+    "title": "An immune cell atlas reveals the dynamics of human macrophage specification during prenatal development",
+    "authors": "Wang Z, Wu Z, Wang H, et al.",
+    "year": 2023,
+    "journal": "Cell",
+    "doi": "10.1016/j.cell.2023.08.019",
+    "summary": "Comprehensive atlas of prenatal macrophage specification across tissues. Identified macrophages expressing pro-angiogenic genes in diverse tissues during human development, supporting the angiogenic role attributed to LYVE1+ macrophages in prenatal skin.",
+    "quotes": []
+  },
+  {
+    "corpusId": 253440413,
+    "title": "Macrophages in Skin Wounds: Functions and Therapeutic Potential",
+    "authors": "Sim SL, Kumari S, Kaur S, Khosrotehrani K",
+    "year": 2022,
+    "journal": "Biomolecules",
+    "doi": "10.3390/biom12111659",
+    "summary": "Review characterizing skin macrophage subsets including perivascular macrophages marked by CCR2 neg, CX3CR1 neg/lo, CD206 hi, CD86 hi and Lyve1 hi. These display anti-inflammatory properties, are highly phagocytic, and their depletion hinders skin repair by reducing angiogenesis and granulation tissue formation.",
+    "quotes": [
+      "Perivascular macrophages are a distinct population of skin macrophages characterised by a close association with the skin's vasculature. These are mainly (C-C motif) chemokine receptor 2 (CCR2) Neg , CX3CR1 Neg/Lo , CD206 Hi , CD86 Hi and Lyve1 Hi ; they display anti-inflammatory properties, are highly phagocytic and UV-sensitive but are radiation-resistant"
+    ]
+  }
+]

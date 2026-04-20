@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "Monocyte (activated/differentiating)",
+  "working_definition": "An activated monocyte in prenatal human skin that has undergone tissue adaptation following egress from bone marrow, characterised by upregulation of IL1B and TNF signalling pathway genes. This population represents monocytes transitioning from a circulating CCR2hi state toward tissue-resident macrophage or dendritic cell fates within the prenatal skin microenvironment.",
+  "searches_performed": [
+    "activated monocyte (CL, OLS4 searchClasses)",
+    "inflammatory monocyte (CL, OLS4 searchClasses)"
+  ],
+  "best_match": {
+    "cl_term": "classical monocyte",
+    "cl_id": "CL:0000860",
+    "cl_definition": "A monocyte that responds rapidly to microbial stimuli by secreting cytokines and antimicrobial factors and which is characterized by high expression of CCR2 in both rodents and humans.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "No CL term exists for 'activated monocyte' or 'differentiating monocyte' as a distinct cell type. The activated/differentiating monocyte in prenatal skin represents a transitional cell state between classical monocytes and tissue macrophages/dendritic cells, characterised by upregulation of tissue-adaptation genes (IL1B, TNF signalling). CL:0000860 'classical monocyte' is the closest match as the parent lineage, but it does not capture the activated/differentiating phenotype. CL:0000861 'elicited macrophage' was considered but represents a downstream macrophage fate rather than the transitional monocyte state.",
+  "other_candidates": [
+    {
+      "cl_term": "intermediate monocyte",
+      "cl_id": "CL:0002393",
+      "cl_definition": "A monocyte that has characteristics of both patrolling and inflammatory monocytes.",
+      "reason_rejected": "Intermediate monocytes are defined by CD14++CD16+ surface phenotype, representing a distinct circulating subset. The activated/differentiating monocyte in prenatal skin is a tissue-adapted state, not the circulating intermediate subset."
+    }
+  ],
+  "recommendation": "Use CL:0000860 (classical monocyte) as a broad match. This is a transitional cell state that may warrant a new CL term if reproducibly identified across datasets.",
+  "new_term_needed": false
+}

@@ -1,0 +1,10 @@
+{
+  "label": "Inner root sheath",
+  "resolved_names": [
+    "Inner root sheath"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Cell type 'Inner root sheath' identified in the prenatal skin atlas (Gopee et al., 2024)."
+}

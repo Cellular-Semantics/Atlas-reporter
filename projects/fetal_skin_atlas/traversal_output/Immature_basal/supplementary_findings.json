@@ -1,0 +1,11 @@
+{
+  "markers": [],
+  "other_findings": [
+    {
+      "finding": "Immature basal is annotated as a fine-grained fetal cell type in Supplementary Table 6.",
+      "category": "annotation",
+      "source_table": "Supplementary Table 6"
+    }
+  ],
+  "evidence_quotes": []
+}

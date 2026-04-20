@@ -1,0 +1,33 @@
+{
+  "new_term_label": "microglia-like TREM2-positive macrophage",
+  "synonyms": [
+    "TREM2+ microglia-like macrophage",
+    "TML macrophage",
+    "microglia-like TREM2hi macrophage"
+  ],
+  "parent_term": {
+    "cl_id": "CL:4047053",
+    "cl_label": "TREM2-positive macrophage"
+  },
+  "definition": "A TREM2-positive macrophage of yolk-sac origin that shares a transcriptomic profile with brain microglia, characterized by expression of P2RY12, CX3CR1, and OLFML3 in humans (Suo et al., 2022; Gopee et al., 2024). This macrophage is found across multiple developing organs including skin, brain, and gonads (Suo et al., 2022; Garcia-Alonso et al., 2022; Goh et al., 2023) and is highly correlated with embryonic brain microglia (Gopee et al., 2024). It co-expresses immunomodulatory genes including immune-inhibitory receptors and regulators of IL-6 production, and contributes to tissue morphogenesis including angiogenesis and neural development rather than classical immune functions during early gestation.",
+  "definition_references": [
+    "DOI:10.1038/s41586-024-08002-x",
+    "DOI:10.1126/science.abo0510",
+    "DOI:10.1038/s41586-022-04918-4",
+    "DOI:10.1038/s41586-023-06816-9"
+  ],
+  "logical_axioms": [
+    {
+      "relation": "subClassOf",
+      "filler_id": "CL:4047053",
+      "filler_label": "TREM2-positive macrophage"
+    }
+  ],
+  "justification": "TML macrophages are a conserved TREM2+ macrophage subset identified across multiple prenatal organs with a microglia-like transcriptomic signature distinct from other TREM2+ macrophages such as lipid-associated macrophages (CL:4033086). They are yolk-sac derived, highly correlated with embryonic brain microglia, and have specialized morphogenetic functions (angiogenesis, neural development, scarless healing) rather than classical immune or lipid-metabolic functions. Multiple independent studies confirm this population across developing skin, gonads, and other organs.",
+  "atlas_context": {
+    "atlas_doi": "10.1038/s41586-024-08002-x",
+    "atlas_label": "TML macrophage",
+    "tissue": "prenatal human skin (7-17 PCW)"
+  },
+  "ntr_markdown": "## New Term Request: microglia-like TREM2-positive macrophage\n\n**Parent term:** CL:4047053 (TREM2-positive macrophage)\n\n**Definition:** A TREM2-positive macrophage of yolk-sac origin that shares a transcriptomic profile with brain microglia, characterized by expression of P2RY12, CX3CR1, and OLFML3 in humans (Suo et al., 2022; Gopee et al., 2024). This macrophage is found across multiple developing organs including skin, brain, and gonads (Suo et al., 2022; Garcia-Alonso et al., 2022; Goh et al., 2023) and is highly correlated with embryonic brain microglia (Gopee et al., 2024). It co-expresses immunomodulatory genes including immune-inhibitory receptors and regulators of IL-6 production, and contributes to tissue morphogenesis including angiogenesis and neural development rather than classical immune functions during early gestation.\n\n**Synonyms:** TREM2+ microglia-like macrophage, TML macrophage, microglia-like TREM2hi macrophage\n\n**Logical axioms:**\n- subClassOf CL:4047053 (TREM2-positive macrophage)\n\n**Key references:**\n- Gopee et al. (2024) DOI: 10.1038/s41586-024-08002-x\n- Suo et al. (2022) DOI: 10.1126/science.abo0510\n- Garcia-Alonso et al. (2022) DOI: 10.1038/s41586-022-04918-4\n- Goh et al. (2023) DOI: 10.1038/s41586-023-06816-9\n\n**Justification:** TML macrophages are a conserved yolk-sac-derived TREM2+ macrophage subset with a microglia-like transcriptomic signature, identified independently across multiple developing organs. They are distinct from other TREM2+ macrophage subsets (e.g., lipid-associated macrophages) by their brain microglia-like marker profile and morphogenetic rather than metabolic functions."
+}

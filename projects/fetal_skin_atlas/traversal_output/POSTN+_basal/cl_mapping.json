@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "POSTN-positive basal keratinocyte",
+  "working_definition": "A basal keratinocyte of the fetal interfollicular epidermis distinguished by expression of periostin (POSTN), present throughout gestation (7-17 PCW). Positioned at the origin of dual differentiation trajectories: the ORS/CL trajectory via DPYSL2+ basal cells, and the IRS trajectory via placode and matrix cells. Increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination during hair follicle morphogenesis.",
+  "searches_performed": [
+    "basal cell (CL, pageSize=10)",
+    "POSTN expressing cell (CL)"
+  ],
+  "best_match": {
+    "cl_term": "basal cell of epidermis",
+    "cl_id": "CL:0002187",
+    "cl_definition": "A mitotically active, columnar-shaped keratinocyte located in the stratum basale of the epidermis and attached to the basement membrane.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0002187 is the closest existing term but does not capture the POSTN expression, migratory phenotype, or the dual-trajectory progenitor capacity unique to this fetal population. This is a broad match; the POSTN+ basal cell is a specialized subtype of basal epidermal cell.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002187 (basal cell of epidermis) as a broad match. A new subtype term for POSTN-expressing fetal basal keratinocyte progenitor could be considered.",
+  "new_term_needed": true
+}

@@ -1,0 +1,10 @@
+{
+  "label": "Companion layer",
+  "resolved_names": [
+    "Companion layer"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Cell type 'Companion layer' identified in the prenatal skin atlas (Gopee et al., 2024)."
+}

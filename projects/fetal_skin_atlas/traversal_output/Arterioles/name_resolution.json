@@ -1,0 +1,12 @@
+{
+  "label": "Arterioles",
+  "resolved_names": [
+    "Arterioles",
+    "arteriole endothelial cells",
+    "arterial endothelial cells"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) identifies 'Arterioles' as a fine-grained endothelial cell annotation in prenatal skin (Supplementary Table 3). Trajectory analysis shows early endothelial cells differentiating into an arteriolar pathway (capillaries, capillary arterioles, arterioles) marked by GJA5 expression (Fig. 4d, Extended Data Fig. 10a-c). Arterioles represent the most differentiated state along the arteriolar branch."
+}

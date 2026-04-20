@@ -1,0 +1,40 @@
+{
+  "cell_type_label": "TML macrophage",
+  "working_definition": "A TREM2-positive macrophage of yolk-sac origin that shares a microglia-like transcriptomic profile (including expression of P2RY12, CX3CR1, and OLFML3) with embryonic brain microglia. In prenatal human skin, this cell co-locates with WNT2+ fibroblasts, Schwann cells, and endothelial cells in neurovascular microenvironments, where it contributes to sprouting angiogenesis, peripheral nervous system establishment, and immunomodulation associated with scarless wound healing.",
+  "searches_performed": [
+    "TREM2 macrophage (OLS4 searchClasses, CL ontology)",
+    "microglia-like macrophage (OLS4 searchClasses, CL ontology)",
+    "tissue-resident macrophage (OLS4 searchClasses, CL ontology)"
+  ],
+  "best_match": {
+    "cl_term": "TREM2-positive macrophage",
+    "cl_id": "CL:4047053",
+    "cl_definition": "A macrophage characterized by high expression of Triggering Receptor Expressed on Myeloid cells 2 (TREM2), found in various tissues including the liver, adipose tissue, bone, gut, and tumor microenvironments, where it is associated with immunosuppressive and anti-inflammatory activity.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:4047053 (TREM2-positive macrophage) captures the defining TREM2 expression of TML macrophages, but is a broader class that encompasses all TREM2+ macrophages regardless of tissue context. TML macrophages are specifically distinguished by their microglia-like transcriptomic profile (P2RY12, CX3CR1, OLFML3), yolk-sac origin, high correlation with embryonic brain microglia, and specialized roles in developmental morphogenesis (angiogenesis, neural support, scarless healing) in prenatal skin and other developing organs. These features warrant a new child term under CL:4047053.",
+  "other_candidates": [
+    {
+      "cl_term": "macrophage",
+      "cl_id": "CL:0000235",
+      "cl_definition": "A mononuclear phagocyte present in variety of tissues, typically differentiated from monocytes, capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+      "reason_rejected": "Too broad; does not capture TREM2 expression, microglia-like phenotype, or developmental context."
+    },
+    {
+      "cl_term": "lipid-associated macrophage",
+      "cl_id": "CL:4033086",
+      "cl_definition": "A tissue-resident macrophage that is associated with lipids. This cell responsible of anti-inflammatory functions, lipid accumulation and enhancing phagocytosis. In mice and humans, a lipid-associated macrophage is characterized by the marker Trem2.",
+      "reason_rejected": "A child of TREM2-positive macrophage but defined by lipid association and metabolic function, not by microglia-like transcriptomic profile or developmental morphogenetic functions."
+    },
+    {
+      "cl_term": "tissue-resident macrophage",
+      "cl_id": "CL:0000864",
+      "cl_definition": "A macrophage which is resident in a particular tissue.",
+      "reason_rejected": "Too broad and does not capture TREM2 expression or microglia-like features; TML macrophages are tissue-resident but have a specific yolk-sac-derived identity distinct from generic tissue-resident macrophages."
+    }
+  ],
+  "recommendation": "Request new CL term as a child of CL:4047053 (TREM2-positive macrophage). Proposed label: 'microglia-like TREM2-positive macrophage'. This cell type is distinguished from other TREM2+ macrophages by its shared transcriptomic signature with brain microglia (P2RY12, CX3CR1, OLFML3), yolk-sac origin, and specialized roles in developmental tissue morphogenesis across multiple organs.",
+  "new_term_needed": true
+}

@@ -1,0 +1,9 @@
+{
+  "cell_type_label": "Early erythroid (embryonic)",
+  "cl_term": "erythroid progenitor cell",
+  "cl_id": "CL:0000038",
+  "cl_iri": "http://purl.obolibrary.org/obo/CL_0000038",
+  "match_type": "broad",
+  "match_reason": "No CL term for embryonic-specific erythroid progenitors. CL:0000038 is the closest general term.",
+  "new_term_needed": false
+}

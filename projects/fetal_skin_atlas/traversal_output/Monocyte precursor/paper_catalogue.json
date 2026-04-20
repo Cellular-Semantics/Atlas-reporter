@@ -1,0 +1,30 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee et al.",
+    "year": 2024,
+    "doi": "10.1038/s41586-024-08002-x",
+    "venue": "Nature"
+  },
+  "CorpusId:248122197": {
+    "title": "Mapping the developing human immune system across organs",
+    "authors": "Suo et al.",
+    "year": 2022,
+    "doi": "10.1126/science.abo0510",
+    "venue": "Science"
+  },
+  "CorpusId:233175971": {
+    "title": "Prenatal Development and Function of Human Mononuclear Phagocytes",
+    "authors": "Miah et al.",
+    "year": 2021,
+    "doi": "10.3389/fimmu.2021.607998",
+    "venue": "Frontiers in Immunology"
+  },
+  "CorpusId:270959320": {
+    "title": "Robust temporal map of human in vitro myelopoiesis using single-cell genomics",
+    "authors": "Alsinet et al.",
+    "year": 2022,
+    "doi": "10.1038/s41467-022-30423-1",
+    "venue": "Nature Communications"
+  }
+}

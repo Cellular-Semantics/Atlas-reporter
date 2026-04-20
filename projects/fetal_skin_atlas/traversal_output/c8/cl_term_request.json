@@ -1,0 +1,62 @@
+{
+  "cell_type_label": "c8 (Differentiated KC*)",
+  "suggested_label": "inflammatory suprabasal keratinocyte",
+  "definition": "A suprabasal keratinocyte that co-expresses lower levels of basal keratinocyte markers (TP63, ITGA6) and suprabasal differentiation markers (KRT1, KRT10) but additionally expresses inflammatory mediators including intercellular adhesion molecule 1 (ICAM1), tumor necrosis factor (TNF), and CC-chemokine ligand 20 (CCL20) in humans (DOI:10.1126/science.aba6500). This cell also expresses genes associated with inflammatory ichthyoses and severe atopy, such as NIPAL4 and SPINK5 (DOI:10.1126/science.aba6500). It is expanded in psoriasis lesional skin and resembles CCL20-expressing keratinocytes induced by IL-17 and TNF-alpha in murine inflammatory skin disease models.",
+  "parent_term": {
+    "cl_id": "CL:4033013",
+    "cl_term": "suprabasal keratinocyte"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0001003",
+    "uberon_term": "epidermis"
+  },
+  "logical_axioms": [
+    {
+      "relation": "expresses",
+      "relation_id": "RO:0002292",
+      "filler": "ICAM1",
+      "filler_id": "PR:P05362",
+      "notes": "ICAM1 expression distinguishes this inflammatory keratinocyte state from standard differentiated keratinocytes"
+    },
+    {
+      "relation": "expresses",
+      "relation_id": "RO:0002292",
+      "filler": "CCL20",
+      "filler_id": "PR:P78556",
+      "notes": "CCL20 expression is a key inflammatory feature, recruiting CCR6+ immune cells including Th17 and DCs"
+    },
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "epidermis",
+      "filler_id": "UBERON:0001003",
+      "notes": "Located in the suprabasal epidermal layers of interfollicular skin"
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "inflammatory differentiated keratinocyte",
+      "scope": "exact",
+      "reference": "DOI:10.1126/science.aba6500"
+    },
+    {
+      "value": "Differentiated KC*",
+      "scope": "related",
+      "reference": "DOI:10.1126/science.aba6500"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1126/science.aba6500",
+      "citation": "Reynolds G et al. (2021)",
+      "supports": "Definition of inflammatory differentiated keratinocytes (cluster 8) co-expressing ICAM1, TNF, CCL20 with lower levels of TP63/ITGA6 and KRT1/KRT10; express NIPAL4 and SPINK5; expanded in psoriasis"
+    },
+    {
+      "doi": "10.3389/fimmu.2022.923209",
+      "citation": "Liu B et al. (2022)",
+      "supports": "Confirmation of Reynolds et al. definition: inflammatory differentiated keratinocytes express ICAM1, TNF, and CCL20; CCL20 recruits CCR6+ immune cells"
+    }
+  ],
+  "justification": "Reynolds et al. (2021) identified a distinct keratinocyte state in adult human skin (cluster 8, 'Differentiated KC*') that is transcriptionally and functionally separate from standard differentiated keratinocytes (clusters 3, 4, 6, 7). This inflammatory state co-expresses inflammatory mediators (ICAM1, TNF, CCL20) alongside lowered levels of both basal and suprabasal markers, suggesting an intermediate differentiation state with an acquired inflammatory program. The population is expanded in psoriasis and expresses genes (NIPAL4, SPINK5) linked to inflammatory ichthyoses. No existing CL term captures this well-defined inflammatory keratinocyte state. The closest term, suprabasal keratinocyte (CL:4033013), does not account for the inflammatory phenotype.",
+  "ntr_markdown": "## New Term Request: inflammatory suprabasal keratinocyte\n\n### Preferred term label\ninflammatory suprabasal keratinocyte\n\n### Synonyms\n- inflammatory differentiated keratinocyte (exact)\n- Differentiated KC* (related)\n\n### Definition\nA suprabasal keratinocyte that co-expresses lower levels of basal keratinocyte markers (TP63, ITGA6) and suprabasal differentiation markers (KRT1, KRT10) but additionally expresses inflammatory mediators including intercellular adhesion molecule 1 (ICAM1), tumor necrosis factor (TNF), and CC-chemokine ligand 20 (CCL20) in humans (DOI:10.1126/science.aba6500). This cell also expresses genes associated with inflammatory ichthyoses and severe atopy, such as NIPAL4 and SPINK5 (DOI:10.1126/science.aba6500). It is expanded in psoriasis lesional skin and resembles CCL20-expressing keratinocytes induced by IL-17 and TNF-alpha in murine inflammatory skin disease models.\n\n### Parent cell type term\nsuprabasal keratinocyte (CL:4033013)\n\n### Anatomical structure\nepidermis (UBERON:0001003)\n\n### Logical axioms\n- subClassOf suprabasal keratinocyte (CL:4033013)\n- subClassOf 'expresses' some ICAM1 (PR:P05362)\n- subClassOf 'expresses' some CCL20 (PR:P78556)\n- subClassOf 'part of' some epidermis (UBERON:0001003)\n\n### References\n1. Reynolds G et al. (2021) Developmental cell programs are co-opted in inflammatory skin disease. Science. DOI: 10.1126/science.aba6500\n2. Liu B et al. (2022) Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells. Frontiers in Immunology. DOI: 10.3389/fimmu.2022.923209\n\n### Justification\nReynolds et al. (2021) identified a distinct keratinocyte state (cluster 8, 'Differentiated KC*') in adult human skin that is transcriptionally separate from standard differentiated keratinocytes. This inflammatory state is defined by expression of ICAM1, TNF, and CCL20, alongside NIPAL4 and SPINK5, and is expanded in psoriasis. No existing CL term captures this inflammatory keratinocyte state. The closest term, suprabasal keratinocyte (CL:4033013), does not account for the inflammatory phenotype."
+}

@@ -1,0 +1,43 @@
+{
+  "cell_type_label": "LYVE1++ macrophage",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "markers": {
+    "primary": ["LYVE1", "SPP1", "F13A1"],
+    "additional_from_paper": ["GAS6", "IGF1", "GRN", "CXCL8", "CCL8", "VEGFA"]
+  },
+  "functional_findings": [
+    {
+      "function": "sprouting angiogenesis",
+      "evidence": "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages",
+      "source_section": "Macrophages support prenatal skin angiogenesis"
+    },
+    {
+      "function": "blood vessel morphogenesis",
+      "evidence": "blood vessel morphogenesis by LYVE1+ macrophages",
+      "source_section": "Macrophages support prenatal skin angiogenesis"
+    },
+    {
+      "function": "fibroblast maintenance",
+      "evidence": "Our identification of additional growth factor interactions (IGF1-IGF1R and GRN-EGFR) suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts",
+      "source_section": "Scarless healing and potential macrophage contribution"
+    },
+    {
+      "function": "immunosuppression and tissue repair",
+      "evidence": "GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts, and these interactions can induce immunosuppression and tissue repair",
+      "source_section": "Scarless healing and potential macrophage contribution"
+    }
+  ],
+  "spatial_context": {
+    "co_location": "Predicted to co-locate with endothelial cells in neurovascular microenvironments ME1 and ME5",
+    "validation": "Multiplex RNAscope and immunofluorescence staining showed LYVE1+ and TML macrophages in close proximity to endothelial cells (Fig. 4a)",
+    "3D_imaging": "CD31+ vasculature and LYVE1+ macrophages co-localization confirmed by 3D volume rendering (Supplementary Video 1)"
+  },
+  "ligand_receptor_interactions": [
+    "CXCL8-ACKR1 (macrophage-endothelial)",
+    "CCL8-ACKR1 (macrophage-endothelial)",
+    "IGF1-IGF1R (macrophage-fibroblast)",
+    "GRN-EGFR (macrophage-fibroblast)",
+    "GAS6-AXL (macrophage-fibroblast)"
+  ],
+  "developmental_notes": "LYVE1 hi macrophages were enriched in early gestation in skin. A large fraction of LYVE1 hi and proliferating macrophage neighborhoods were enriched in early gestation (Suo et al., 2022). Prenatal skin macrophages resembled 'early macrophages' enriched in reindeer antler skin."
+}

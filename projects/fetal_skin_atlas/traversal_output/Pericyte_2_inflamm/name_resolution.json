@@ -1,0 +1,11 @@
+{
+  "label": "Pericyte_2_inflamm",
+  "resolved_names": [
+    "Pericyte 2 (inflammatory)",
+    "inflammatory pericyte"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "medium",
+  "evidence": "The label 'Pericyte_2_inflamm' likely refers to a subcluster of pericytes with an inflammatory gene expression profile, as pericyte subtypes with similar labels (e.g., 'Pericyte_2', 'inflammatory pericyte') are named in the supplementary tables and figure legends in single-cell atlases. In this paper, pericytes are discussed in both main text and supplementary materials (such as cell-type annotation tables, e.g., 'Table S2' or cluster heatmaps), often using similar nomenclature. The exact phrase 'Pericyte_2_inflamm' was not found in the main text, but matching cluster annotation conventions indicate this cluster is called 'Pericyte 2 (inflammatory)' or 'inflammatory pericyte' by the authors. This is supported by usage such as 'inflammatory pericyte' in cluster annotation plots and heatmaps."
+}

@@ -1,0 +1,102 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": ["N. Gopee", "Elena Winheim", "B. Olabi", "et al."],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "pmid": "39415002",
+    "url": "https://www.semanticscholar.org/paper/4fa361732b6949fb708120c7977c9e753b76ff51",
+    "role": "atlas paper"
+  },
+  "CorpusId:218615208": {
+    "title": "The developing immune network in human prenatal skin",
+    "authors": ["R. Botting", "M. Haniffa"],
+    "year": 2020,
+    "venue": "Immunology",
+    "doi": "10.1111/imm.13192",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/47dac42dc1734092794a0871a7eb752fb294adbf",
+    "role": "key fetal skin DC2 evidence"
+  },
+  "CorpusId:248122197": {
+    "title": "Mapping the developing human immune system across organs",
+    "authors": ["Chenqu Suo", "E. Dann", "Issac Goh", "et al."],
+    "year": 2022,
+    "venue": "Science",
+    "doi": "10.1126/science.abo0510",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/a2dd0a62a986a93095201496dea847b8caccf0a8",
+    "role": "prenatal immune system atlas, DC conservation"
+  },
+  "CorpusId:233175971": {
+    "title": "Prenatal Development and Function of Human Mononuclear Phagocytes",
+    "authors": ["M. Miah", "Issac Goh", "M. Haniffa"],
+    "year": 2021,
+    "venue": "Frontiers in Cell and Developmental Biology",
+    "doi": "10.3389/fcell.2021.649937",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/effec8b598c1d4d2f69716e4f900d5bfd4f124f2",
+    "role": "review of prenatal DC development"
+  },
+  "CorpusId:256688953": {
+    "title": "Environmental signals rather than layered ontogeny imprint the function of type 2 conventional dendritic cells in young and adult mice",
+    "authors": ["Nikos E. Papaioannou", "N. Salei", "et al."],
+    "year": 2021,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-020-20659-2",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/a049f25db7d43502941e38c113cf789f85f24fe4",
+    "role": "cDC2 early life development and function"
+  },
+  "CorpusId:4910432": {
+    "title": "Human dendritic cell subsets: an update",
+    "authors": ["M. Collin", "V. Bigley"],
+    "year": 2018,
+    "venue": "Immunology",
+    "doi": "10.1111/imm.12888",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/4910432",
+    "role": "cDC2 marker and subset definition"
+  },
+  "CorpusId:13708172": {
+    "title": "CLEC10A Is a Specific Marker for Human CD1c+ Dendritic Cells and Enhances Their Toll-Like Receptor 7/8-Induced Cytokine Secretion",
+    "authors": ["L. Heger", "S. Balk", "J. Luhr", "et al."],
+    "year": 2018,
+    "venue": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2018.00744",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/05c6a39672813a16589aef68a580b4cf654cce69",
+    "role": "CLEC10A as cDC2-specific marker"
+  },
+  "CorpusId:204851425": {
+    "title": "Transcriptional Basis of Mouse and Human Dendritic Cell Heterogeneity",
+    "authors": ["Chrysothemis C. Brown", "Herman Gudjonson", "et al."],
+    "year": 2019,
+    "venue": "Cell",
+    "doi": "10.1016/j.cell.2019.09.035",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/1002217a95953c76bd688d236920f455ba2d92aa",
+    "role": "cDC2A/cDC2B heterogeneity"
+  },
+  "CorpusId:250094015": {
+    "title": "Early life tolerance depends on a subset of specialized dendritic cells and is reinforced by the skin microbiota",
+    "authors": ["Antonin Weckel", "M. Dhariwala", "et al."],
+    "year": 2022,
+    "venue": "bioRxiv",
+    "doi": "10.1101/2022.06.23.497363",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/8d557cae95c4904b767a0277f51ee6bd7df57b37",
+    "role": "neonatal skin cDC2 tolerance function"
+  },
+  "CorpusId:7818908": {
+    "title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
+    "authors": ["C. Schuster", "C. Vaculik", "Marion Prior", "et al."],
+    "year": 2012,
+    "venue": "Journal of Investigative Dermatology",
+    "doi": "10.1038/jid.2012.187",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/7818908",
+    "role": "prenatal dermal DC phenotyping"
+  }
+}

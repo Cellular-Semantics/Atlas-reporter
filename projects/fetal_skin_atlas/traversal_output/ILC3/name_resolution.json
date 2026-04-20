@@ -1,0 +1,11 @@
+{
+  "label": "ILC3",
+  "resolved_names": [
+    "ILC3",
+    "group 3 innate lymphoid cell"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas paper (Gopee et al., 2024; DOI: 10.1038/s41586-024-08002-x) identifies ILC3 explicitly in the context of prenatal skin. The paper states: 'lymphoid tissue inducer and ILC3 cells were also predicted to co-locate and interact with pre-Dc cells through ligand-receptor signals implicated in the regulation of cellular adhesion and migration (CXCL12-CXCR4 and CXCL12-DPP4).' Supplementary materials describe ILC3 as a distinct prenatal immune population co-locating with pre-dermal condensate cells based on correlation analyses."
+}

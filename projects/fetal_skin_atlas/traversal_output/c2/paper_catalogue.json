@@ -1,0 +1,38 @@
+{
+  "DOI:10.1126/science.aba6500": {
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "authors": ["G. Reynolds", "Peter Vegh", "J. Fletcher", "Elizabeth Poyner", "Emily Stephenson", "Issac Goh", "R. Botting", "N. Huang", "B. Olabi", "A. Dubois", "S. Teichmann", "F. Watt", "M. Haniffa"],
+    "year": 2021,
+    "venue": "Science",
+    "doi": "10.1126/science.aba6500",
+    "pmid": "33479125",
+    "source": "citation_traverse"
+  },
+  "DOI:10.1038/s41586-024-08002-x": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": ["N. Gopee", "Elena Winheim", "B. Olabi", "Sara A Teichmann", "M. Haniffa"],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "pmid": "39415002",
+    "source": "citation_traverse"
+  },
+  "CorpusId:53025174": {
+    "title": "Transcriptional Programming of Normal and Inflamed Human Epidermis at Single-Cell Resolution",
+    "authors": ["Jeffrey B. Cheng", "A. Sedgewick", "Alex Finnegan", "P. Harirchian", "Jerry C Lee", "Sunjong Kwon", "R. Cho"],
+    "year": 2018,
+    "venue": "Cell Reports",
+    "doi": "10.1016/j.celrep.2018.09.006",
+    "pmid": "30355494",
+    "source": "citation_traverse"
+  },
+  "CorpusId:248783831": {
+    "title": "Understanding Human Epidermal Stem Cells at Single-Cell Resolution",
+    "authors": ["V. A. Negri", "F. Watt"],
+    "year": 2022,
+    "venue": "Journal of Investigative Dermatology",
+    "doi": "10.1016/j.jid.2022.04.003",
+    "pmid": "35570025",
+    "source": "citation_traverse"
+  }
+}

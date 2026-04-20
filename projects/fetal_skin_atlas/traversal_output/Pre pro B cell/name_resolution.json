@@ -1,0 +1,12 @@
+{
+  "label": "Pre pro B cell",
+  "resolved_names": [
+    "Pre-pro-B cell",
+    "Pre pro B cell",
+    "Fraction A pre-pro B cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The label 'Pre pro B cell' is used by the authors in the cell type annotations of the prenatal skin atlas (Gopee et al., 2024, doi:10.1038/s41586-024-08002-x). This corresponds to the earliest stage of B cell development, detected in fetal skin by scRNA-seq. Pre-pro-B cells are the most primitive B-lineage committed precursors, expressing CD34, SPINK2, and IGLL1 as described in the related fetal liver haematopoiesis study (Popescu et al., 2019)."
+}

@@ -1,0 +1,23 @@
+{
+  "markers": [],
+  "other_findings": [
+    {
+      "finding": "pDC is listed as a distinct fine-grained cell type in the fetal skin dataset, separate from other dendritic cell subsets (DC1, DC2, ASDC, MigDC)",
+      "category": "cell type classification",
+      "source_table": "cell_type_annotations.json / atlas_cell_types_fine.csv"
+    },
+    {
+      "finding": "pDC is listed alongside ASDC (Axl+ Siglec6+ dendritic cells) in the UMAP legend, indicating both are annotated as distinct innate immune subsets in prenatal skin",
+      "category": "cell type classification",
+      "source_table": "Fig. 1e legend"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "ASDC, Axl + Siglec6 + dendritic cells; DC, dendritic cells; HSC, haematopoietic stem cells; LC, Langerhans cells; LE, lymphatic endothelium; LTi, lymphoid tissue inducer cell; MEMP, megakaryocyte-erythroid-mast cell progenitor; NK cell, natural killer cells; pDC, plasmacytoid dendritic cells.",
+      "source_file": "Main text, Fig. 1e legend",
+      "context": "UMAP visualization of integrated prenatal skin, adult skin, and SkO datasets showing broad cell lineages"
+    }
+  ],
+  "note": "No pDC-specific marker genes or spatial location data were found in the accessible supplementary material (which consisted primarily of peer review correspondence). Marker and functional data are drawn from the broader literature."
+}

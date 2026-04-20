@@ -1,0 +1,11 @@
+{
+  "label": "Early fibroblasts FRZB+",
+  "resolved_names": [
+    "FRZB+ early fibroblast",
+    "Early fibroblasts FRZB+"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "FRZB+ fibroblasts present in SkO. Rare in prenatal skin (primarily one 7 PCW sample) but present in several developing organs (Extended Data Fig. 4e)."
+}

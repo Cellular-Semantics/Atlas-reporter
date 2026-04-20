@@ -1,0 +1,26 @@
+{
+  "gopee_2024": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee NH et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "source": "atlas"
+  },
+  "popescu_2019": {
+    "title": "Decoding human fetal liver haematopoiesis",
+    "authors": "Popescu D-M et al.",
+    "year": 2019,
+    "journal": "Nature",
+    "doi": "10.1038/s41586-019-1652-y",
+    "source": "citation_traverse"
+  },
+  "suo_2022": {
+    "title": "Mapping the developing human immune system across organs",
+    "authors": "Suo C et al.",
+    "year": 2022,
+    "journal": "Science",
+    "doi": "10.1126/science.abo0510",
+    "source": "citation_traverse"
+  }
+}

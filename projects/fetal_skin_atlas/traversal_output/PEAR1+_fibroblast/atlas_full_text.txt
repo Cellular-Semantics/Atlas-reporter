@@ -1,0 +1,9 @@
+Inferred trajectory analysis predicted that HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2 + fibroblasts and PEAR1 + fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7).
+
+The adult fibroblast gene expression profile was increased in WNT2 + and PEAR1 + prenatal fibroblasts, which were abundant in later gestation (Fig. 3a and Extended Data Figs. 3c and 7b). Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A) 43,52 were also upregulated during the transition from HOXC5 + fibroblasts into PEAR1 + fibroblasts (Extended Data Fig. 7c).
+
+Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders.
+
+Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A) were also upregulated during the transition from HOXC5 + fibroblasts into PEAR1 + fibroblasts.
+
+Prenatal human skin is able to heal without scarring but loses this capacity after 24 PCW. By contrast, prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200), regulation of inflammation (for example, RAMP2) and tissue regeneration (MDK).

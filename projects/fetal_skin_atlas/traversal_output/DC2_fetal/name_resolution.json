@@ -1,0 +1,13 @@
+{
+  "label": "DC2",
+  "resolved_names": [
+    "Conventional dendritic cell type 2",
+    "cDC2",
+    "DC2",
+    "CD1c-positive myeloid dendritic cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas paper (Gopee et al., 2024; DOI: 10.1038/s41586-024-08002-x) annotates 'DC2' as a dendritic cell subset in both prenatal and adult skin datasets. DC2 is listed alongside DC1 and Langerhans cells in the UMAP legends and spatial microenvironment analyses. Botting & Haniffa (2020) explicitly state that 'Mature adult skin contains the dendritic cell (DC) subsets DC1 and DC2, as well as macrophages, all of which have been identified in first-trimester human skin and closely resemble their adult counterparts.' Miah et al. (2021) refer to 'DC2 (cDC2)' as a major human DC subset. The conventional name is 'type 2 conventional dendritic cell' (cDC2), defined by CD1c expression."
+}

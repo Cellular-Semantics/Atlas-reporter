@@ -1,0 +1,10 @@
+{
+  "label": "Neuroepithelial cells",
+  "resolved_names": [
+    "neuroepithelial cell"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Neuroepithelial cells in the SkO are neural crest-derived progenitors. CL:0000710 (neurecto-epithelial cell) is a broad match."
+}

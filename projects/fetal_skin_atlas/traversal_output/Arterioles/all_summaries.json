@@ -1,0 +1,38 @@
+[
+  {
+    "corpusId": 273400864,
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee N, Winheim E, Olabi B, et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "summary": "Comprehensive multi-omics atlas of human prenatal skin (7-17 PCW). Trajectory analysis shows early endothelial cells differentiating into arteriolar pathway (capillaries, capillary arterioles, arterioles) marked by GJA5, and venular pathway (postcapillary venules, venules) marked by PLVAP. Macrophage-derived VEGFA drives GATA2 activity in endothelial cells. SkO lacking immune cells have reduced endothelial heterogeneity and cannot complete arteriolar differentiation.",
+    "quotes": [
+      "Inferred trajectory analysis showed that early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)",
+      "Unlike SkO capillary arteriole cells, prenatal skin capillary arteriole cells could further differentiate into arterioles"
+    ]
+  },
+  {
+    "corpusId": 247731792,
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": "He Y, Tacconi C, Dieterich L, et al.",
+    "year": 2022,
+    "journal": "Cells",
+    "doi": "10.3390/cells11071111",
+    "summary": "scRNA-seq profiling of adult human skin identifying six BEC subtypes: arterioles, post-arterial capillaries, pre-venular capillaries, post-capillary venules, venules, and collecting venules. Arterioles marked by GJA5 and HEY1. Capillaries by ASS1 and S100A4. Venular compartment by ACKR1, ICAM1, SELP, EGR2, and LRG1. Immunofluorescence confirmed discrete marker expression along the vascular tree.",
+    "quotes": [
+      "the gap junction protein alpha 5 (GJA5) was most abundantly expressed in arterioles, but absent in LVs",
+      "the smaller ACKR1-ASS1+ arterioles, partially ACKR1+ASS1+ capillaries (the PAC cluster) and larger ACKR1+ASS1- venules (PCV/V/CV clusters)"
+    ]
+  },
+  {
+    "corpusId": 246627007,
+    "title": "Ensembles of endothelial and mural cells promote angiogenesis in prenatal human brain",
+    "authors": "Crouch EE, Bhaduri A, Andrews MG, et al.",
+    "year": 2022,
+    "journal": "Cell",
+    "doi": "10.1016/j.cell.2022.09.004",
+    "summary": "Identified endothelial and mural cell subtypes in prenatal human brain (15-23 GW). Three mural cell subtypes (pericytes, fibroblasts, smooth muscle cells) plus mitotic mural cells. Mural cells closely associated with endothelial cells but did not fully cover them. Smooth muscle cells present in second trimester human brain, unlike embryonic mouse brain.",
+    "quotes": []
+  }
+]

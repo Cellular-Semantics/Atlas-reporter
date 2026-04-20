@@ -1,0 +1,8 @@
+{
+  "label": "c4",
+  "resolved_names": [],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "low",
+  "evidence": "The label 'c4' does not appear in the provided main text excerpts. The main text focuses on prenatal skin and organoid models and mentions analyses of adult skin for comparison but does not include a mapping for 'c4'. No supplementary material or mapping tables are available from the information provided to resolve the 'c4' label as a named adult skin cell type. Additional supplementary data or figure references are likely required for resolution. The label is flagged as unresolved."
+}

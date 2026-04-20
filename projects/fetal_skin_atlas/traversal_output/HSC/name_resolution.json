@@ -1,0 +1,12 @@
+{
+  "label": "HSC",
+  "resolved_names": [
+    "HSC",
+    "hematopoietic stem cell",
+    "haematopoietic stem cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "HSC explicitly listed as cell type annotation in prenatal skin atlas"
+}

@@ -1,0 +1,38 @@
+{
+  "markers": [
+    {
+      "gene": "HOXC5",
+      "evidence_type": "defining marker",
+      "source_table": "Main text"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Located in upper dermis, abundant before 11 PCW",
+      "category": "location",
+      "source_table": "Extended Data Fig. 3c"
+    },
+    {
+      "finding": "Common progenitor for hair fibroblasts (pre-Dc, Dc, Dp) and dermal fibroblasts (WNT2+, PEAR1+)",
+      "category": "development",
+      "source_table": "Fig. 2e, Extended Data Figs. 3c, 4d"
+    },
+    {
+      "finding": "Similar activated gene regulatory programs between prenatal skin and SkO during HF fibroblast differentiation",
+      "category": "development",
+      "source_table": "Fig. 2i, Supplementary Table 9"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "HOXC5 + early fibroblasts (located in the upper dermis and abundant before 11 PCW) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2 + fibroblasts and PEAR1 + fibroblasts",
+      "source_file": "Gopee et al. 2024",
+      "context": "HOXC5+ fibroblast trajectories"
+    },
+    {
+      "quote": "we observed a high number of matching TFs across pseudotime, which indicated that there are similar activated gene regulatory programs between prenatal skin and SkO during HF fibroblast differentiation",
+      "source_file": "Gopee et al. 2024",
+      "context": "SkO-prenatal alignment"
+    }
+  ]
+}

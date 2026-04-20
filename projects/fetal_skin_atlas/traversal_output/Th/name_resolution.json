@@ -1,0 +1,11 @@
+{
+  "label": "Th",
+  "resolved_names": [
+    "T helper cell",
+    "CD4+ T cell"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "In the main text and extended data of the paper (10.1038/s41586-024-08002-x), immune cell abbreviations are used (e.g., Th, Tc, Treg, etc.), and a mapping table in the methods and supplementary data clarify 'Th' as 'T helper cell (CD4+ T cell)'. The context is in immune cell subtypes within adult and fetal skin single-cell profiles."
+}

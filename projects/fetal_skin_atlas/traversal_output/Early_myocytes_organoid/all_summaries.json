@@ -1,0 +1,14 @@
+[
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "Notably, the SkO model recapitulated the different components of prenatal skin HF, interfollicular epidermis, neural cells and dermal fibroblasts, but immune cells were not represented and endothelial cells were markedly reduced.",
+    "relevance": "SkO composition"
+  },
+  {
+    "paper": "Lee et al. 2020",
+    "doi": "10.1038/s41586-020-2352-3",
+    "snippet": "a cyst-like skin organoid composed of stratified epidermis, fat-rich dermis and pigmented hair follicles that are equipped with sebaceous glands. A network of sensory neurons and Schwann cells form nerve-like bundles that target Merkel cells in organoid hair follicles",
+    "relevance": "SkO neural/muscle components"
+  }
+]

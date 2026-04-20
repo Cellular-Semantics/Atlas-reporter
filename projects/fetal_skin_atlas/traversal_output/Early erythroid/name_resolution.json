@@ -1,0 +1,11 @@
+{
+  "label": "Early erythroid",
+  "resolved_names": [
+    "Early erythroid",
+    "erythroid progenitor"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Annotated in atlas as Early erythroid within fetal skin haematopoietic progenitor compartment"
+}

@@ -1,0 +1,33 @@
+{
+  "cell_type": "SPP1+ proliferating neuron progenitors",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Supplementary Table 3 provides DEGs used to annotate SPP1+ proliferating neuron progenitors in prenatal skin. Neural cells are enriched in early gestation.",
+    "temporal_presence": "Neural cells are enriched in early gestation (Fig. 1c, Extended Data Fig. 1d, Supplementary Table 4).",
+    "neural_context": "Neural cells co-locate with TML macrophages in the 'early neurovascular microenvironment' (ME1). TML macrophages support establishment of the skin peripheral nervous system during early gestation.",
+    "marker_gene": "SPP1 (secreted phosphoprotein 1, osteopontin) marks the proliferating subset of neural progenitors in prenatal skin."
+  },
+  "evidence_quotes": [
+    {
+      "quote": "Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier 2 , were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4). Mesoderm-derived cells, including skin fibroblasts and endothelial cells, and immune cells were present throughout gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4).",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    },
+    {
+      "quote": "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1) (Figs. 1d and 3g) and expressed genes related to cell migration and",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    },
+    {
+      "quote": "neural development (Fig. 3f, Extended Data Fig. 8c and Supplementary Tables 22 and 23), which mirrored the functions of brain microglia and peripheral nerve-associated macrophages in mouse skin 65 . TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA-NRP1, VEGFA-NRP2, SEMA3C-NRP2 and SEMA3E-PLXND1) 66 (Extended Data Fig. 8h and Supplementary Table 8). These findings suggest that prenatal skin macrophages may support the establishment of the skin peripheral nervous system during early gestation, as previously reported in mouse skin 65 .",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    },
+    {
+      "quote": "Even after 19 weeks of culture, fibroblasts, mural and Schwann cells had a low probability of correspondence to adult skin cell states (Extended Data Fig. 2d and Supplementary Table 5). By contrast, accelerated differentiation was observed in keratinocytes and melanocytes, with alignment to adult cell states seen as early as 4 weeks of SkO culture (Extended Data Fig. 2d and Supplementary Table 5).",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    }
+  ]
+}

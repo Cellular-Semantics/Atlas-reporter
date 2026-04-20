@@ -1,0 +1,11 @@
+{
+  "label": "Tc",
+  "resolved_names": [
+    "Cytotoxic T cell",
+    "CD8+ T cell"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "Supplementary Table 2 from the atlas paper (DOI: 10.1038/s41586-024-08002-x) provides a mapping of cluster labels to cell type names, showing that 'Tc' refers to 'Cytotoxic T cell (CD8+ T cell)' in the classification of immune cell types in both fetal and adult skin. This name is also used in Extended Data Figure 12g\u2013i and corresponding dataset annotations."
+}

@@ -1,0 +1,34 @@
+{
+  "summaries": [
+    {
+      "source": "Gopee et al. (2024)",
+      "corpusId": "273400864",
+      "text": "UMAP visualizations of the integrated prenatal skin, adult skin and SkO datasets, coloured by broad cell lineages. ASDC, Axl+Siglec6+ dendritic cells; DC, dendritic cells; HSC, haematopoietic stem cells; LC, Langerhans cells; LE, lymphatic endothelium; LTi, lymphoid tissue inducer cell; MEMP, megakaryocyte-erythroid-mast cell progenitor; NK cell, natural killer cells; pDC, plasmacytoid dendritic cells."
+    },
+    {
+      "source": "Gopee et al. (2024)",
+      "corpusId": "273400864",
+      "text": "CD7hiP: CD7high progenitors; CD7loP: CD7low progenitors; ErP, erythroid progenitors; GMP, granulocyte-monocyte progenitors; HSPC, haematopoietic stem and progenitor cells; LC, Langerhans cells; Mac1-4, macrophages 1-4; MkP, megakaryocte progenitors; YSMP, yolk-sac derived myeloid-biased progenitors."
+    },
+    {
+      "source": "Popescu et al. (2019)",
+      "corpusId": "203986545",
+      "text": "Next, we inferred trajectories of haematopoietic development. By force directed graph (FDG), we identify three connections to a central HSC/MPP node featuring erythroid-megakaryocyte-mast cells, B cell and innate/T-lymphoid cells and myeloid cells. Partition based approximate graph abstraction (PAGA) also supports the presence of a shared megakaryocyte-erythroid-mast cell progenitor (MEMP) downstream of HSC/MPP. Genes dynamically modulated in the specification of erythroid, megakaryocyte and mast cell lineages are distinct: TAL1 and KLF1 in erythroid; F11R, PBX1 and MEIS1 in megakaryocyte; and CPA3 and MS4A2 in mast cells."
+    },
+    {
+      "source": "Popescu et al. (2019)",
+      "corpusId": "203986545",
+      "text": "Erythroblasts show expression of haemoglobin genes, and a temporal shift from Gower 1 and 2 subunit expression (HBZ, HBE1) to fetal haemoglobin subunit expression (HBA1 and HBG2) between yolk sac and liver. Megakaryocytes, erythroid cells, mast cells and MEMP, are present in skin."
+    },
+    {
+      "source": "Suo et al. (2022)",
+      "corpusId": "248122197",
+      "text": "While examining the distribution of various cell types across different organ systems, we were surprised to find that lineage-committed hematopoietic progenitors were present in non-hematopoietic organs. In particular, we detected B cell progenitors in almost all prenatal organs, megakaryocyte/erythroid progenitors in developing spleen and skin, and myeloid progenitors in the thymus, spleen, skin, and kidney."
+    },
+    {
+      "source": "Suo et al. (2022)",
+      "corpusId": "248122197",
+      "text": "This finding suggests that hematopoiesis is not restricted to developing liver and bone marrow between 7-17 pcw and other organs can also support blood and immune cell differentiation during prenatal development."
+    }
+  ]
+}

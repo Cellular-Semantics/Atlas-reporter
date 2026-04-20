@@ -1,0 +1,66 @@
+[
+  {
+    "id": "atlas",
+    "authors": "Gopee et al.",
+    "year": 2024,
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x"
+  },
+  {
+    "id": "suo2022",
+    "authors": "Suo et al.",
+    "year": 2022,
+    "title": "Mapping the developing human immune system across organs",
+    "journal": "Science",
+    "doi": "10.1126/science.abo0510"
+  },
+  {
+    "id": "hernandez-torres2022",
+    "authors": "Hernandez-Torres & Stehle",
+    "year": 2022,
+    "title": "Embryonic ILC-poiesis across tissues",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.1040624"
+  },
+  {
+    "id": "liu2021",
+    "authors": "Liu et al.",
+    "year": 2021,
+    "title": "Delineating spatiotemporal and hierarchical development of human fetal innate lymphoid cells",
+    "journal": "Cell Research",
+    "doi": "10.1038/s41422-021-00529-2"
+  },
+  {
+    "id": "villanova2014",
+    "authors": "Villanova et al.",
+    "year": 2014,
+    "title": "Characterization of innate lymphoid cells in human skin and blood demonstrates increase of NKp44+ ILC3 in psoriasis",
+    "journal": "Journal of Investigative Dermatology",
+    "doi": "10.1038/jid.2013.477"
+  },
+  {
+    "id": "domingues2020",
+    "authors": "Domingues & Hepworth",
+    "year": 2020,
+    "title": "Immunoregulatory Sensory Circuits in Group 3 Innate Lymphoid Cell (ILC3) Function and Tissue Homeostasis",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2020.00116"
+  },
+  {
+    "id": "cox2021",
+    "authors": "Cox et al.",
+    "year": 2021,
+    "title": "Maintenance of Barrier Tissue Integrity by Unconventional Lymphocytes",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.670471"
+  },
+  {
+    "id": "wei2025",
+    "authors": "Wei et al.",
+    "year": 2025,
+    "title": "Immunological control of skin development: from homeostasis to developmental pathologies",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2025.1685633"
+  }
+]

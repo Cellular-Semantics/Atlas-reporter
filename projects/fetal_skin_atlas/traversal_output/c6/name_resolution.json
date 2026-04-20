@@ -1,0 +1,8 @@
+{
+  "label": "c6",
+  "resolved_names": [],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "low",
+  "evidence": "The provided excerpt from the main text and abstract does not include cluster mappings or annotation label definitions for 'c6' in the context of adult skin. The label 'c6' is likely a generic cluster ID, and without access to supplementary material or tables that map 'c6' to a specific cell type name in adult skin, the cell type cannot be confidently resolved."
+}

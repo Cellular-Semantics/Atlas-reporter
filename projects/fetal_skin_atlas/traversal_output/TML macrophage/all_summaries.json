@@ -1,0 +1,45 @@
+{
+  "cell_type": "TML macrophage",
+  "summaries": [
+    {
+      "paper": "Gopee2024",
+      "doi": "10.1038/s41586-024-08002-x",
+      "summary": "Defined TML (TREM2+ microglia-like) macrophages as one of four macrophage subsets in prenatal human skin (7-17 PCW). TML macrophages are yolk-sac derived, express TREM2, P2RY12, CX3CR1, and OLFML3, and are highly correlated with embryonic brain microglia. They co-locate with WNT2+ fibroblasts in early prenatal skin and with Schwann cells and endothelial cells in neurovascular microenvironments. Functions include promoting sprouting angiogenesis, supporting peripheral nervous system establishment, contributing to scarless wound healing via immunomodulation and IL-6 downregulation, and inducing immunosuppression/tissue repair via GAS6-AXL interactions."
+    },
+    {
+      "paper": "Suo2022",
+      "doi": "10.1126/science.abo0510",
+      "summary": "Cross-organ atlas of the developing human immune system identified eight macrophage groupings including 'microglia-like TREM2hi' macrophages. Early macrophages across organs expressed proinflammatory gene signatures associated with angiogenesis before acquiring immune effector functions around 10-12 PCW. LYVE1hi and proliferating macrophages were enriched in early gestation."
+    },
+    {
+      "paper": "Bian2020",
+      "doi": "10.1038/s41586-020-2316-7",
+      "summary": "Deciphered human macrophage development at single-cell resolution, identifying yolk-sac derived TREM2+ macrophages with a microglia-like expression profile (P2RY12, CX3CR1, OLFML3) present in multiple developing organs."
+    },
+    {
+      "paper": "GarciaAlonso2022",
+      "doi": "10.1038/s41586-022-04918-4",
+      "summary": "Found TREM2+ fetal testicular macrophages (ftM) with transcriptomic profiles identical to brain microglia including SALL1 expression. Integration analysis revealed TREM2+ macrophages with microglia-like signatures are present in fetal skin, gut, and gonads. These cells are distinct from nerve-associated macrophages and may function in clearing apoptotic cells."
+    },
+    {
+      "paper": "Goh2023",
+      "doi": "10.1038/s41586-023-06816-9",
+      "summary": "Yolk sac cell atlas identified TREM2+ macrophages originating from yolk sac that share expression profiles with microglia-like macrophages from developing brain, prenatal skin, and gonads."
+    },
+    {
+      "paper": "Henn2021",
+      "doi": "10.1126/sciadv.abi4528",
+      "summary": "Demonstrated that xenogeneic skin transplantation promotes angiogenesis and tissue regeneration through activated Trem2+ macrophages. These macrophages regulate collagen remodeling and promote angiogenesis in the skin context."
+    },
+    {
+      "paper": "Liang2024",
+      "doi": "10.7150/thno.94121",
+      "summary": "Showed TREM2-expressing macrophages accumulate in injured skin and play a protective role against fibrosis. Genetic ablation of Trem2 accelerates skin fibrosis, while transferring TREM2hi macrophages alleviates it. Disease-associated TREM2+ macrophages in skin fibrosis exhibit overlapping signatures with fetal skin counterparts, suggesting a fetal-like reprogramming."
+    },
+    {
+      "paper": "Zhu2024",
+      "doi": "10.1002/ctm2.70026",
+      "summary": "Demonstrated that Trem2 in macrophages is upregulated during skin wounding and promotes anti-inflammatory macrophage polarization. Macrophage-specific deletion of Trem2 enhanced inflammation, oxidative stress, and impaired wound healing. IL-4 binds directly to Trem2 to regulate MAPK/AP-1 signaling and anti-inflammatory cytokine production."
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "As differentiation progresses, myelination onset markers, such as Krox20, start to be expressed during a pro-myelinating state, in which cells are not yet actively producing myelin. The latter is indicated by the expression of the mature myelination marker MBP.",
+      "As mentioned earlier, adult non-myelinating Schwann cells are less well characterized than myelinating Schwann cells, and the marker expression likely differs, as well as between subpopulations [288]."
+    ],
+    "summary": "This snippet explains that myelinating Schwann cells are identified by markers such as Krox20 in the promyelinating state and MBP when mature. It also notes that myelinating Schwann cells are better characterized than non-myelinating Schwann cells.",
+    "categories": [
+      "markers",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:253934919",
+    "source_title": "Development and In Vitro Differentiation of Schwann Cells",
+    "source_authors": "Sarah Janice H\u00f6rner et al.",
+    "source_year": null,
+    "snippet": "However, it is not exclusively expressed in Schwann cells, but can also be found in a variety of other cell types (e.g., other glial and neural cells, melanocytes, adipocytes, several muscle cell types) [296]. Furthermore, antibody specificity is particularly critical for S100b, as the S100 family of Ca 2+ binding proteins includes 24 members, which are widely expressed in many cell and tissue types [297]. In general, it is crucial to combine several markers in order to unequivocally identify Schwann cells. As differentiation progresses, myelination onset markers, such as Krox20, start to be expressed during a pro-myelinating state, in which cells are not yet actively producing myelin. The latter is indicated by the expression of the mature myelination marker MBP. At the same time, expression of Gap43 and p75NTR ceases; however, both persist in the non-myelinating fate [1][2][3]26,65,78,298]. As mentioned earlier, adult non-myelinating Schwann cells are less well characterized than myelinating Schwann cells, and the marker expression likely differs, as well as between subpopulations [288]. As readouts for \"mature\" Schwann cells in vitro are largely based on myelination capacity and myelin-related marker expression, the characterization of potentially mature non-myelinating Schwann cells in vitro has not yet been clearly defined, as many known markers overlap with immature Schwann cell markers. A few possibly specific markers for non-myelinating Schwann cells and subpopulations were found in vivo [288,[299][300][301][302], but these have not been established in vitro yet; and even in primary cultures, it is not known whether mature non-myelinating Schwann cells can be obtained with the current culturing methods [19]. Some examples of IF staining for such marker proteins are shown in Figure 5 for in vitro hiPSC-derived Schwann cells, as well as the intermediate differentiation stages, neural crest and Schwann cell precursors."
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "This analysis identified myelinating Schwann cells (SC-Myel), nonmyelinating Schwann cells (SC-Nonmyel), proliferating Schwann cells (SC-Prolif), Schwann cells additionally expressing genes typical for endothelial cells (SC-EC) or fibroblasts (SC-FB) and the previously described repair-like, profibrotic keloidal Schwann cells (SC-Keloid) (Fig. 3a,  b)."
+    ],
+    "summary": "The snippet describes subclustering of Schwann cell populations including a clear identification of myelinating Schwann cells (SC-Myel) using established markers in single-cell datasets.",
+    "categories": [
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:247517139",
+    "source_title": "The transcriptional profile of keloidal Schwann cells",
+    "source_authors": "M. Direder et al.",
+    "source_year": null,
+    "snippet": "As the main goals of our study were the in-depth analysis of Schwann cells in the different scar types and their comparability across different single-cell datasets, we next recalculated the combined integrated Schwann cell cluster, removed all melanocytes and performed subclustering (Fig. 3). The different Schwann cell subclusters (Fig. 3a) were identified using well-established Schwann cell markers (Fig. 3b) 17,27 . This analysis identified myelinating Schwann cells (SC-Myel), nonmyelinating Schwann cells (SC-Nonmyel), proliferating Schwann cells (SC-Prolif), Schwann cells additionally expressing genes typical for endothelial cells (SC-EC) or fibroblasts (SC-FB) and the previously described repair-like, profibrotic keloidal Schwann cells (SC-Keloid) (Fig. 3a,  b). We next separated each dataset and detected only a few Schwann cells in normal skin (Fig. 3c). In contrast, the number of Schwann cells was markedly increased in keloids (Fig. 3c). Interestingly, we also found an increased number of Schwann Fig. 2 Cellular composition of skin, normal scars, keloids, and keloid-adjacent skin. a Hematoxylin-eosin staining of skin, normal scar, and keloid. Scale bars: 250 \u00b5m. b UMAP plot after integration of all datasets. Cluster identifications of fibroblasts (FB), smooth muscle cells (SMC), pericytes (PC), keratinocytes (KC), endothelial cells (EC), lymphatic endothelial cells (LEC), T cells (TC), macrophages and dendritic cells (MAC/ DC), Schwann cells and melanocytes (SC/MEL)."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "Injury of peripheral nerves causes dedifferentiation of both types of mature Schwann cells (myelinating and nonmyelinating) into repair Schwann cells [46][47][48] . Our pseudotime trajectory calculations suggest that myelinating and nonmyelinating Schwann cells   of the skin dedifferentiate into profibrotic, repair-like Schwann cells in keloids."
+    ],
+    "summary": "This text provides evidence that myelinating Schwann cells in the skin can dedifferentiate into repair-like, profibrotic cells following injury, particularly in the context of keloid formation.",
+    "categories": [
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:247517139",
+    "source_title": "The transcriptional profile of keloidal Schwann cells",
+    "source_authors": "M. Direder et al.",
+    "source_year": null,
+    "snippet": "Whether these Schwann cells convert into other cells, such as fibroblasts, or migrate back to an axon remains to be elucidated. The low numbers of Schwann cells detected in normal human scars suggest that such a mechanism might also be apparent in human wound healing and that the development of keloids might be associated with defects in removing these Schwann cells after wound healing. However, further studies are necessary to fully elucidate the impact of Schwann cells on human wound healing. \n\nThe adjacent skin around keloids has been reported to exhibit features typical of keloids 14 . Strikingly, our bioinformatics analysis also uncovered keloidal profibrotic Schwann cells in one dataset of keloid-adjacent skin. This finding supports our assumption that the persistence of keloidal Schwann cells in the dermis contributes to disease progression. Two scenarios by which these Schwann cells might affect keloid progression appear reasonable. First, keloidal Schwann cells spread into the surrounding healthy skin, generating a milieu that favors the growth of keloids. Second, the continuously growing keloids might affect nerves in the surrounding healthy skin and trigger dedifferentiation of Schwann cells, which in turn further contributes to ECM overproduction, as reported previously 17 . Our transcriptomic data and bioinformatics analyses have built a good basis for further studies addressing these open questions in more sophisticated in vivo studies. \n\nInjury of peripheral nerves causes dedifferentiation of both types of mature Schwann cells (myelinating and nonmyelinating) into repair Schwann cells [46][47][48] . Our pseudotime trajectory calculations suggest that myelinating and nonmyelinating Schwann cells   of the skin dedifferentiate into profibrotic, repair-like Schwann cells in keloids. Interestingly, many of the marker genes specifically expressed by bona fide repair Schwann cells (STAT3, ARTN, BDNF, GDNF, SHH, OLIG1, and IGFBP2) were not or only weakly detected in keloidal Schwann cells."
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [
+      "After 2 days of culture in differentiation medium, Schwann cells showed a differentiated cell phenotype, characterized by increased expression of pro-myelinating transcription factor Oct6 protein, myelinating regulator transcription factor Krox20 protein and mRNA (Figs 1a and b, Supplementary Figs S1 and S2), and the major myelin proteins MBP protein and mRNA (Fig. 1b,c and Supplementary Fig. S2)."
+    ],
+    "summary": "The snippet details that cultured Schwann cells acquire a myelinating phenotype by expressing specific markers: Oct6, Krox20, and MBP, which are characteristic of myelinating Schwann cells.",
+    "categories": [
+      "development",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:256914257",
+    "source_title": "Taxanes and platinum derivatives impair Schwann cells via distinct mechanisms",
+    "source_authors": "S. Imai et al.",
+    "source_year": null,
+    "snippet": "Differentiation of cultured rat immature Schwann cells. We utilized cultured primary Schwann cells from the sciatic nerves of neonatal rats to evaluate the direct effect of anti-cancer agents. After 2 days of culture in differentiation medium, Schwann cells showed a differentiated cell phenotype, characterized by increased expression of pro-myelinating transcription factor Oct6 protein, myelinating regulator transcription factor Krox20 protein and mRNA (Figs 1a and b, Supplementary Figs S1 and S2), and the major myelin proteins MBP protein and mRNA (Fig. 1b,c and Supplementary Fig. S2). Before cell differentiation, there was little or no expression of these Schwann cell markers. Consistent with previous reports showing that Sox10 is a marker constitutively expressed throughout Schwann cell differentiation 22,23 , we observed expression of Sox10 protein and mRNA on both immature and differentiated Schwann cells (Fig. 1a,b, Supplementary Figs S1 and S2). We further confirmed sufficient induction of Schwann cell differentiation by noting almost complete disappearance of both immunoreactivity (IR) and mRNA expression of an immature Schwann cell marker, p75 neurotrophin receptor (Fig. 1b,c and Supplementary Fig. S2)."
+  },
+  {
+    "snippet_index": 8,
+    "quotes": [
+      "The two known major subtypes of mature Schwann cells are myelinating Schwann cells and non-myelinating Remak Schwann cells. While the first associate with one individual axon through radial sorting and build up the myelin sheath wrapping a segment of this axon, the latter associate with several small diameter axons, and ensheath them in so-called Remak bundles, without producing myelin.",
+      "Myelinating Schwann cells develop through a further intermediate state, termed a promyelinating Schwann cell, which establishes a 1:1 relationship with an axon sorted for myelination [84]. Axonal sorting and maturation of myelinating Schwann cells is dependent on axonal contact and Nrg1 expression levels [92]. Myelination and terminal differentiation appear to involve activation of the adhesion G-protein coupled receptor GPR126 by basal lamina components such as laminin-211 [93][94][95][96]. GPR126 might signal through multiple downstream effectors, one being the myelination onset regulator Krox20 [97] through cAMP-dependent PKA activation [98]."
+    ],
+    "summary": "This snippet provides definitions and developmental details for myelinating Schwann cells, including their 1:1 relationship with axons, myelin sheath formation, dependency on axonal contact and Nrg1, and role of GPR126 and Krox20 in differentiation.",
+    "categories": [
+      "morphology",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:253934919",
+    "source_title": "Development and In Vitro Differentiation of Schwann Cells",
+    "source_authors": "Sarah Janice H\u00f6rner et al.",
+    "source_year": null,
+    "snippet": "The two known major subtypes of mature Schwann cells are myelinating Schwann cells and non-myelinating Remak Schwann cells. While the first associate with one individual axon through radial sorting and build up the myelin sheath wrapping a segment of this axon, the latter associate with several small diameter axons, and ensheath them in so-called Remak bundles, without producing myelin. Terminal (or perisynaptic) Schwann cells are a third distinct subtype of Schwann cells. They are associated with neuromuscular junctions, and although they are non-myelinating, terminal Schwann cells differ considerably from Remak Schwann cells in terms of their marker expression, appearance, and function [7,88,89]. Besides these, it is likely that other glial subtypes that have not been well characterized so far also arise from Schwann cell precursors and might differentiate through the immature Schwann cell stage as well [79], such as the glia cells of cutaneous sensory corpuscles [90,91]. While some factors that promote the development of the mature myelinating Schwann cell subtype are known, the differential mechanisms that specify the mature non-myelinating fates, including Remak and terminal Schwann cells, are largely unclear. \n\nMyelinating Schwann cells develop through a further intermediate state, termed a promyelinating Schwann cell, which establishes a 1:1 relationship with an axon sorted for myelination [84]. Axonal sorting and maturation of myelinating Schwann cells is dependent on axonal contact and Nrg1 expression levels [92]. Myelination and terminal differentiation appear to involve activation of the adhesion G-protein coupled receptor GPR126 by basal lamina components such as laminin-211 [93][94][95][96]. GPR126 might signal through multiple downstream effectors, one being the myelination onset regulator Krox20 [97] through cAMP-dependent PKA activation [98]. Furthermore, the axonal Nrg1 expression level seems to tune the regulation of myelination fate."
+  },
+  {
+    "snippet_index": 9,
+    "quotes": [
+      "Postnatally, immature Schwann cells give rise to myelinating Schwann cells that not only express pan-Schwann markers ErbB3 and S100 but also express myelin proteins such as myelin basic protein (Mbp), myelin protein zero (Mpz), and proteolipid protein 1 (Plp1)",
+      "Myelinating Schwann cells spirally wrap large diameter axons, form compact myelin lamellae around axons, produce mature myelin sheaths, and thus contribute to the rapid conduction of nerve impulses.",
+      "Different from myelinating Schwann cells that ensheath axons at a 1:1 ratio, each Remak Schwann cell ensheathes multiple small-caliber axons (Figure 1) (Armati and Mathey, 2013;Harty and Monk, 2017)."
+    ],
+    "summary": "This text states that myelinating Schwann cells express specific pan-Schwann and myelin protein markers (ErbB3, S100, Mbp, Mpz, Plp1), wrap large axons at a 1:1 ratio with myelin lamellae, and contribute to rapid nerve impulse conduction.",
+    "categories": [
+      "markers",
+      "morphology",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:276014101",
+    "source_title": "Schwann cells in regeneration and cancer",
+    "source_authors": "Lan Zhang et al.",
+    "source_year": null,
+    "snippet": "Postnatally, immature Schwann cells give rise to myelinating Schwann cells that not only express pan-Schwann markers ErbB3 and S100 but also express myelin proteins such as myelin basic protein (Mbp), myelin protein zero (Mpz), and proteolipid protein 1 (Plp1) as well as nonmyelinating Schwann cells that express p75, glutamate-ammonia ligase (Glul), apolipoprotein D (Apod), SPARC related modular calcium binding 2 (Smoc2), and fatty acid binding protein 7 (Fabp7) (Avraham et al., 2020;Wolbert et al., 2020). Myelinating Schwann cells spirally wrap large diameter axons, form compact myelin lamellae around axons, produce mature myelin sheaths, and thus contribute to the rapid conduction of nerve impulses. Nonmyelinating Schwann cells occupy a larger proportion than myelin forming Schwann cells. Non-myelinating Schwann cells can be further divided into Remak Schwann cells, terminal Schwann cells at neuromuscular junctions, and Schwann cells in sensory corpuscles (Griffin and Thompson, 2008). Remak Schwann cells, although do not form compact myelin sheaths, also ensheath axon lengths. Different from myelinating Schwann cells that ensheath axons at a 1:1 ratio, each Remak Schwann cell ensheathes multiple small-caliber axons (Figure 1) (Armati and Mathey, 2013;Harty and Monk, 2017)."
+  },
+  {
+    "snippet_index": 10,
+    "quotes": [
+      "which subsequently differentiate into two mature types of SCs: myelinating SCs and non-myelinating SCs (35).",
+      "Myelinating Schwann cells, the focus of this discussion, exhibit radial and longitudinal polarization. As myelination progresses, Schwann cells organize into distinct domains, each with a unique protein array and a set of interconnected cytoplasmic compartments. Longitudinal polarity is prominently manifested in the overall organization of myelinating Schwann cells and axons, forming distinct nodal, paranodal, and internodal compartments."
+    ],
+    "summary": "This snippet describes how Schwann cell precursors give rise to myelinating Schwann cells (myelinating SCs). It highlights their distinct radial and longitudinal polarization, the organization into nodal, paranodal, and internodal domains, and emphasizes their plasticity and ability to convert to a repair phenotype after injury.",
+    "categories": [
+      "development",
+      "morphology",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:268776218",
+    "source_title": "Interactions between Schwann cell and extracellular matrix in peripheral nerve regeneration",
+    "source_authors": "Maorong Jiang et al.",
+    "source_year": null,
+    "snippet": "Undoubtedly, Schwann cells play a dominant role in the regeneration and development following peripheral nerve injuries (16,(28)(29)(30)(31)(32). Derived from the neural crest, Schwann cell precursors (SCPs) can generate various polarized cells, including Schwann cell precursors (33,34). These precursors proliferate rapidly, developing into immature SCs, which subsequently differentiate into two mature types of SCs: myelinating SCs and non-myelinating SCs (35). In recent years, scholars have discovered another subset of mature Schwann cells (SCs), termed repair Schwann cells, which are formed through adaptive cell reprogramming following nerve injury (36). Although non-myelinating SCs do not produce myelin, they still play important roles in the peripheral nervous system, such as maintaining axonal metabolism and preventing neuropathic pain. Non-myelinating SCs still possess the potential for myelination. After axonal or nerve injury, SCs trigger defense mechanisms involving inflammation and immune responses, activate Wallerian degeneration, and promote the survival of damaged neurons and axon regeneration (7). At this stage, both myelinating and non-myelinating SCs transition to repair Schwann cells to initiate the repair process (37). This phenotypic change requires adaptive cell reprogramming of SCs, including dedifferentiation of myelin and activation of axon repair and regeneration functions (36). These characteristics indicate that SCs are highly plastic and can undergo conversion between different subtypes in response to environmental signals. \n\nRecent studies have found that Schwann cells have functions such as migration, adhesion, ECM production, secretion of various  (41). Myelinating Schwann cells, the focus of this discussion, exhibit radial and longitudinal polarization. As myelination progresses, Schwann cells organize into distinct domains, each with a unique protein array and a set of interconnected cytoplasmic compartments. Longitudinal polarity is prominently manifested in the overall organization of myelinating Schwann cells and axons, forming distinct nodal, paranodal, and internodal compartments."
+  },
+  {
+    "snippet_index": 11,
+    "quotes": [
+      "Postnatally, immature Schwann cells give rise to myelinating Schwann cells that not only express pan-Schwann markers ErbB3 and S100 but also express myelin proteins such as myelin basic protein (Mbp), myelin protein zero (Mpz), and proteolipid protein 1 (Plp1)"
+    ],
+    "summary": "This snippet details that myelinating Schwann cells develop from immature Schwann cells and are characterized by expression of pan-Schwann markers (ErbB3, S100) as well as key myelin proteins (MBP, MPZ, PLP1).",
+    "categories": [
+      "development",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:276014101",
+    "source_title": "Schwann cells in regeneration and cancer",
+    "source_authors": "Lan Zhang et al.",
+    "source_year": null,
+    "snippet": "Schwann cells are unique glial cells of the peripheral nervous system that are derived from the neural crest. During development, neural crest cells emerge from the dorsal neural tube and differentiate into numerous types of cells, including melanocytes, fibroblasts, smooth muscle cells, neurons, and Schwann cell precursors (Jessen and Mirsky, 2005;Takahashi et al., 2013). Schwann cell precursors generate immature Schwann cells which express some common markers as neural crest cells and Schwann cell precursors, such as the neuregulin (NRG) receptors Erb-B2 receptor tyrosine kinase 2 (ErbB2), Erb-B2 receptor tyrosine kinase 3 (ErbB3), and Erb-B2 receptor tyrosine kinase 4 (ErbB4), the neurotrophin receptor p75, transcription factors SRY-box 2 (Sox2) and SRY-box 10 (Sox10), and mesenchymal marker vimentin (Aquino and Sierra, 2018). Immature Schwann cells, compared with their precursor cells, have a reduced amount of mesenchymal marker N-cadherin but high abundance of early growth response 2 (Krox20) and glial fibrillary acidic protein (GFAP) (Aquino and Sierra, 2018). Postnatally, immature Schwann cells give rise to myelinating Schwann cells that not only express pan-Schwann markers ErbB3 and S100 but also express myelin proteins such as myelin basic protein (Mbp), myelin protein zero (Mpz), and proteolipid protein 1 (Plp1) as well as nonmyelinating Schwann cells that express p75, glutamate-ammonia ligase (Glul), apolipoprotein D (Apod), SPARC related modular calcium binding 2 (Smoc2), and fatty acid binding protein 7 (Fabp7) (Avraham et al., 2020;Wolbert et al., 2020)."
+  },
+  {
+    "snippet_index": 12,
+    "quotes": [
+      "Myelinating Schwann cells express PRX (Periaxin), an essential gene for the maintenance of peripheral nerve myelin",
+      "These glial cell types have distinct roles in supporting, protecting, and regulating the microenvironment of PNS neurons [10,40,41].",
+      "marker genes are associated with biological processes, such as synaptic regulation, ion transmembrane transport, axon guidance and myelination"
+    ],
+    "summary": "This snippet identifies PRX (Periaxin) as a key marker for myelinating Schwann cells, notes their role in myelin maintenance, and highlights their functions in synaptic regulation, ion transport, axon guidance, and myelination within the peripheral nervous system.",
+    "categories": [
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:281521212",
+    "source_title": "A multi-omic atlas of human autonomic and sensory ganglia implicates cell types in peripheral neuropathies",
+    "source_authors": "Lite Yang et al.",
+    "source_year": null,
+    "snippet": "Among the nine non-neuronal human SG cell types, we found three glial cell types, including satellite glial cells, myelinating (Schwann-my), and non-myelinating Schwann cells (Schwann-nm, Figure 1B-C). The satellite glial cells express a high level of FABP7 (Fatty Acid Binding Protein 7), a satellite glial marker gene previously reported in peripheral ganglia across species [4,14]. Myelinating Schwann cells express PRX (Periaxin), an essential gene for the maintenance of peripheral nerve myelin, and nonmyelinating Schwann cells express NRXN1 encoding Neurexin 1, a cell adhesion molecule important for the formation and function of synapses and a marker gene for non-myelinating Schwann cells. These glial cell types have distinct roles in supporting, protecting, and regulating the microenvironment of PNS neurons [10,40,41]. Consistent with this notion, we found their marker genes are associated with biological processes, such as synaptic regulation, ion transmembrane transport, axon guidance and myelination, as well as extracellular matrix organization and cell adhesion (Figure S1G). Moreover, we also found endothelial cells expressing FLT1, fibroblasts expressing APOD, mural cells expressing MYH11, adipocytes expressing FABP4, as well as immune cells, such as SYK-expressing macrophages and CD2-expressing T cells (Figure 1B-C). The marker genes expressed in these cell types are also associated with their unique functions in the human SG (Figure S1G). All major cell types are present in each library except for adipocytes derived from a subset of donors (Figure S1D), which are likely due to the inclusion of surrounding tissues in those samples during the tissue procurement and processing. \n\nTo study the chromatin accessibility profiles of human SG cell types, we performed dimension reduction and clustering of the snATAC-seq data generated from the same nuclei in snRNA-seq, which generated 26 epigenomically distinct clusters."
+  },
+  {
+    "snippet_index": 13,
+    "quotes": [
+      "we demonstrated successful cellular reprogramming of adult myelinating Schwann cells into an immature multipotent NCSC phenotype [21]."
+    ],
+    "summary": "This snippet reports that adult myelinating Schwann cells can be reprogrammed into an immature, multipotent neural crest stem cell phenotype, indicating plasticity and dedifferentiation capacity.",
+    "categories": [
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:15439210",
+    "source_title": "Origin and Regenerative Potential of Vertebrate Mechanoreceptor-Associated Stem Cells",
+    "source_authors": "D. Widera et al.",
+    "source_year": null,
+    "snippet": "Cells. Schwann cells are directly related to the neural crest and share several markers with NCSCs (e.g., Vimentin, Nestin, or p75 NTR , reviewed in [52]). Schwann cell progenitors (SCPs) are considered as late NCSCs that have established contact with axons [55]. It has been proposed that Schwann cell progenitors and Schwann cells have an extraordinarily unstable phenotype as differentiated Schwann cells can be switched back into more primitive cell types by injury signals or by appropriate cultivation methods [56,57]. Consequently, these data suggest that Schwann cells and their immature ancestors-Schwann cell progenitors-may act as stem cells. In accordance with this hypothesis, Schwann cells have been described to perform differentiation into melanocytes after the lesion of the adult sciatic nerve [58,59]. After injury, Schwann cells can reenter the cell cycle and dedifferentiate [56,60]. Dupin and colleagues demonstrated differentiation of Schwann cells into myofibroblasts, indicating stemness characteristics of such cells in vitro [57].\n\nRecently, we demonstrated successful cellular reprogramming of adult myelinating Schwann cells into an immature multipotent NCSC phenotype [21]. After isolation and expansion of Schwann cells under culture conditions mimicking an in vivo injury, we observed significantly elevated expression levels of p75, c-Myc, Sox2, Klf4, Oct4, Sox9, and Slug. Importantly, we were also able to differentiate such cultivated adult Schwann cells into ectodermal and mesodermal progeny. Such cellular reprogramming into immature neural crest-like phenotype also seems to occur in vivo in response to injury. This has been impressively demonstrated in a Wnt Cre /lox-EGFP mouse model [61]. After injury, mature Schwann cells residing at the nerve roots dedifferentiate into proliferating p75 NTR -positive immature Schwann cells, which migrate into the lesion site.\n\nIt might be assumed that a similar injury-induced reprogramming mechanism could switch mechan"
+  },
+  {
+    "snippet_index": 15,
+    "quotes": [
+      "In the subcutaneous nerves, some of the traced cells expressed the myelin marker MBP ( Figure 3B), indicating that they were myelinating Schwann cells."
+    ],
+    "summary": "This snippet shows that in subcutaneous nerves of newborn dorsal skin, traced neural crest-derived cells expressing the myelin marker MBP are identified specifically as myelinating Schwann cells.",
+    "categories": [
+      "location",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:15813271",
+    "source_title": "Boundary Caps Give Rise to Neurogenic Stem Cells and Terminal Glia in the Skin",
+    "source_authors": "Aur\u00e9lie Gresset et al.",
+    "source_year": null,
+    "snippet": "To investigate the distribution and identity of BC derivatives in the trunk skin after birth, we first performed a wholemount immunohistochemistry analysis of Prss56 Cre/+ , R26 tdTom newborn dorsal skin preparations, staining for tdTOM and bIII-tubulin. This revealed a dense network of traced cells exclusively associated with the nerves in the hypodermis and dermis ( Figure 3A). In the subcutaneous nerves, some of the traced cells expressed the myelin marker MBP ( Figure 3B), indicating that they were myelinating Schwann cells.\n\nStaining of transverse sections for bIII-tubulin and PGP9.5, an axonal marker present in terminal endings, confirmed the systematic association of the labeled cells with dermal nerves ( Figures 3C and 3D). In the dermis, these traced cells were positive for the marker P75 NGFR (Figure 3E), which is expressed in NC-derived, embryonic and adult stem cells and in immature and adult, non-myelinating Schwann cells (Jessen et al., 2015). In addition, they expressed the Schwann cell marker S100 ( Figure 3F), but not the myelin marker MBP ( Figure 3B), and were, therefore, immature/non-myelinating Schwann cells. They could be classified into three categories as follows: (1) those associated with dermal nerve fibers ( Figures 3A and 3E, closed arrows), (2) lanceolate endings around hair follicles (Figures 3C, 3D, and 3F, empty arrowheads), and (3) free nerve endings of nociceptive fibers ( Figures 3C, 3D, and 3G, closed arrowheads). Lanceolate endings are circumferential structures that surround the hair follicle and are composed of mechanoreceptive nerve fibers and their associated terminal Schwann cells (Li and Ginty, 2014). Traced cells at the free nerve endings of nociceptive fibers showed an atypical morphology, with the soma localized in the upper part of the dermis, close to the epidermis, while a dense network of cytoplasmic protrusions penetrated the dermis and epidermis and followed the path of nerve"
+  },
+  {
+    "snippet_index": 18,
+    "quotes": [
+      "once Schwann cells acquire their mature myelinating phenotype, they cease to express ColVI (Fig. 2) (Vitale et al., 2001)."
+    ],
+    "summary": "This snippet details that mature myelinating Schwann cells do not express Collagen VI (ColVI), highlighting a change in marker expression as Schwann cells differentiate into their myelinating phenotype.",
+    "categories": [
+      "markers",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:19237127",
+    "source_title": "Collagen VI in healthy and diseased nervous system",
+    "source_authors": "Ilaria Gregorio et al.",
+    "source_year": null,
+    "snippet": "Immunolocalization studies in chick embryos detected ColVI in the ECM deposited on the dorsolateral side of the neural tube, corresponding to the primary migratory pathway of NCCs that will give rise to melanocytes in the skin. At later developmental stages, ColVI was also found in the ventral sclerotome (Box 1, Fig. 2) (Perris et al., 1993). Moreover, ColVI displays the ability to promote neural crest attachment and migration, thus supporting the concept that this ECM protein participates in the regulation of NCC movement by providing a suitable migratory substrate (Perris et al., 1993). \n\nStudies on the transcriptional regulation of the murine Col6a1 gene identified a specific enhancer region located \u223c4.5 kb upstream of the TSS and driving its expression in the PNS (Girotto et al., 2000). A mechanistic study using transgenic lacZ reporter mouse lines demonstrated that ColVI expression in immature Schwann cells is initiated by neuregulin, a neuronal growth factor that is released by the growing nerve endings (Vitale et al., 2001). This occurs at the stage in which immature Schwann cells start differentiating into myelinating ones. The dependence on neuregulin is lost as soon as ColVI expression is elicited, and once Schwann cells acquire their mature myelinating phenotype, they cease to express ColVI (Fig. 2) (Vitale et al., 2001). Further studies confirmed the presence of ColVI in the adult connective tissue of endo-, peri-and epineurium (Box 1), deposited in the basement membrane by Schwann and perineural cells (Peltonen et al., 1990;Chen et al., 2014). Indeed, the proper assembly of the Schwann cell/neuron basement membrane was shown to be crucial in regulating Schwann cell maturation and myelination (Chernousov et al., 2008)."
+  },
+  {
+    "snippet_index": 19,
+    "quotes": [
+      "In the later phase of the regenerative process, they differentiate into myelinating and non-myelinating Schwann cells, determining the recovery of nerve morphology."
+    ],
+    "summary": "This snippet explains that during nerve regeneration, Schwann cells differentiate into either myelinating or non-myelinating types, which is key for restoring normal nerve morphology.",
+    "categories": [
+      "development",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:21673747",
+    "source_title": "Soluble Neuregulin1 Down-Regulates Myelination Genes in Schwann Cells",
+    "source_authors": "Marwa El Soury et al.",
+    "source_year": null,
+    "snippet": "Schwann cells represent the glial component of the peripheral nervous system. As well as supporting axonal function in a physiological status, they play a critical role during the degenerative and the regenerative processes activated after nerve injury (Namgung, 2014;Gordon, 2016;Jessen and Mirsky, 2016). A severe damage to the nerve tissue determines the loss of axon-Schwann cell contact with subsequent change in Schwann cell phenotype. Schwann cell de-differentiation occurs within 48 h after nerve injury and is driven by changes in gene expression with the down-regulation of genes related to myelination and node organisation, and the up-regulation of regeneration associated genes (RAG), such as growth factor receptors and adhesion molecules (Pereira et al., 2012;Jessen and Mirsky, 2016). De-differentiated Schwann cells isolate lipid droplets, composed by myelin, and participate to their degradation in the distal nerve. Few days after injury they proliferate and align to form the B\u00fcngner bands, a tubular structure that physically supports re-growing axons (Fawcett and Keynes, 1990;Ide, 1996). Moreover, Schwann cells are the source of growth factors that stimulate axon growth and create the appropriate supportive environment for axonal elongation (Hopker et al., 1999;Madl and Heilshorn, 2015). In the later phase of the regenerative process, they differentiate into myelinating and non-myelinating Schwann cells, determining the recovery of nerve morphology. \n\nSchwann cell de-differentiation, proliferation and survival are regulated by the action of several growth factors. Among them, Neuregulin 1 (NRG1) increasingly attracted the attention for its involvement in several aspects of Schwann cell behaviour. NRG1 is a growth factor characterised by multiple isoforms thanks to alternative splicing (Mei and Xiong, 2008)."
+  },
+  {
+    "snippet_index": 20,
+    "quotes": [
+      "Due to the ability of SKPs to differentiate into Schwann cells (McKenzie et al., 2006), these cells provide an easily accessible alternative autologous source.",
+      "McKenzie et al. (2006) transplanted neonatal SKP-derived Schwann cells into crushed sciatic nerves of mice. These cells successfully associated with and myelinated regenerating axons."
+    ],
+    "summary": "This snippet highlights that skin-derived precursors (SKPs) can differentiate into Schwann cells, including myelinating types, which can myelinate regenerating axons after injury. This provides a potential alternative source for Schwann cells in regenerative therapies.",
+    "categories": [
+      "development",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:36752999",
+    "source_title": "Updates on stem cells and their applications in regenerative medicine",
+    "source_authors": "S. Bajada et al.",
+    "source_year": null,
+    "snippet": "Skin is considered to be the largest organ in the body. As with neural tissue, it develops from the embryonic ectoderm germ layer. Toma et al. (2001) described the isolation of multipotent cells from the dermis of juvenile and adult rodents. The authors claimed that these cells proliferated and differentiated in culture to produce both neural and mesodermal cell types, including neurones, glia, smooth muscle and adipocytes. Although MSCs can also be isolated from skin (Shih et al., 2005), the authors suggested that, being nestin-positive, skin-derived precursors (SKPs) are a different type of stem cell (Toma et al., 2001). The majority of neural cells generated by SKPs are similar to peripheral neurones and Schwann cells. Thus, SKPs might represent an embryonic neural crest-related precursor. These cells would be present in skin during embryogenesis, persisting in lower numbers into adulthood (Fernandes et al., 2004, Toma et al., 2005. SKPs can be successfully isolated from human tissue, including as little as 1-2 cm 3 of foreskin and small punch biopsies from the scalp (Toma et al., 2001(Toma et al., , 2005.\n\nThe discovery of SKPs has very important therapeutic considerations. Since present in the skin, SKPs are a widely available and accessible source of neural precursors which can be used for regenerative therapies of the nervous system. To date, studies have been undertaken on the use of Schwann cells for spinal cord injuries (Takami et al., 2002, Pearse et al. 2004). However, nerve biopsies are needed, as this is a source leading to possible complications. Also, Schwann cells have a limited expansion potential. Due to the ability of SKPs to differentiate into Schwann cells (McKenzie et al., 2006), these cells provide an easily accessible alternative autologous source. McKenzie et al. (2006) transplanted neonatal SKP-derived Schwann cells into crushed sciatic nerves of mice. These cells successfully associated with and myelinated regenerating axons. Marchesi et al. (2007) implanted L-lac"
+  },
+  {
+    "snippet_index": 21,
+    "quotes": [
+      "nonneural crest dermal mesenchymal cells can generate myelinating Schwann cells that are highly similar to nerve-derived Schwann cells.",
+      "the human foreskin SKPs make myelinating Schwann cells.",
+      "indicating that developmentally defined lineage boundaries are more flexible than widely thought."
+    ],
+    "summary": "This snippet provides evidence that myelinating Schwann cells can be generated from nonneural crest-derived dermal mesenchymal cells, emphasizing the developmental plasticity and broader origin potential for these peripheral glia.",
+    "categories": [
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:14303627",
+    "source_title": "Direct Genesis of Functional Rodent and Human Schwann Cells from Skin Mesenchymal Precursors",
+    "source_authors": "M. Krause et al.",
+    "source_year": null,
+    "snippet": "from mesenchymal precursors (for example, see McKenzie et al., 2006;Caddick et al., 2006) and that genetic manipulation can reprogram dermal cells directly into functional neural progeny (reviewed in Abdullah et al., 2012). However, these findings are complicated by the fact that neural crest precursors are present in peripheral nerves and thus potentially in mesenchymal cell preparations from skin or other innervated tissues. For example, we showed that SKPs from dorsal dermis generated Schwann cells Biernaskie et al., 2007), but others suggested these were of neural crest origin (Wong et al., 2006). Thus, a key question is whether these neural progeny derive from mesenchymal precursors or from widespread neural crest precursors.\n\nHere, we have used lineage tracing to address this issue and show that nonneural crest dermal mesenchymal cells can generate myelinating Schwann cells that are highly similar to nerve-derived Schwann cells. This is not a mouse-specific phenomenon, since highly similar SKPs can be made from neonatal human foreskin and facial dermis, tissues thought to be mesodermally versus neural crest derived, respectively. In addition, the human foreskin SKPs make myelinating Schwann cells. Thus, nonneural crest-derived mesenchymal precursors can differentiate into bona fide peripheral glia in the absence of genetic manipulation, indicating that developmentally defined lineage boundaries are more flexible than widely thought."
+  },
+  {
+    "snippet_index": 24,
+    "quotes": [
+      "in myelinating Schwann cells, NRG1 is required for developmental myelination and acts to accelerate the early phase of remyelination during repair"
+    ],
+    "summary": "This snippet describes the importance of NRG1 in developmental myelination and early remyelination by myelinating Schwann cells, and notes that its role differs between development and adult nerve repair.",
+    "categories": [
+      "development",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:100094",
+    "source_title": "Axonal neuregulin 1 is a rate limiting but not essential factor for nerve remyelination",
+    "source_authors": "Florence R. Fricker et al.",
+    "source_year": null,
+    "snippet": "following nerve injury; vehicle control and conNrg1 mutant animals are global NRG1 null mutants and Cremediated recombination results in efficient ablation of bNRG1 isoforms within nerve. Therefore we consider it unlikely that Schwann cell-derived NRG1 is contributing to the late remyelination phenotype we observed although we cannot completely exclude the possibility that a small amount of bNRG1 expression persists within the nerve or is available from other sources such as the circulation.\n\nCoordinated signals provided by the axon and the extracellular matrix are likely to be integrated by Schwann cells for effective remyelination. It is possible that alternative signalling systems may compensate for the absence of axonal NRG1 at later stages of repair . It is becoming increasingly clear that nerve repair and remyelination are not simply a recapitulation of development (Fancy et al., 2011). Following axonal injury, distinct signalling pathways and transcriptional programmes drive the dedifferentiation of Schwann cells (Arthur-Farraj et al., 2012;Napoli et al., 2012). The population of Schwann cells that appear after nerve injury is distinct from that of developing immature Schwann cells, and these cells are specialized to support nerve repair (Arthur-Farraj et al., 2011). Our findings suggest that NRG1 has a distinct role in axoglial signalling during nerve repair in adulthood versus its development role in both, non-myelinating and myelinating Schwann cells. During development non-myelinating Schwann cells require axonal NRG1 to establish and maintain normal Remak bundle structure (Taveggia et al., 2005;Fricker et al., 2009). In contrast, non-myelinating Schwann cells re-establish normal Remak bundles after peripheral nerve injury in animals in which NRG1 is conditionally ablated. This is likely a reflection of the fact that axon sorting is not required in adulthood, and basal laminae have been established. Similarly, in myelinating Schwann cells, NRG1 is required for developmental myelination and acts to accelerate the early phase of remyelination during repair; however, at later stages of repair the myelination fate is no longer"
+  },
+  {
+    "snippet_index": 25,
+    "quotes": [
+      "cell bodies positive for human mitochondrial antigen were aligned along MBP-positive myelin sheaths that were associated with the paranodal protein CASPR ( Figure 7I), consistent with a myelinating Schwann cell phenotype. Thus, human foreskinderived SKPs can generate bona fide Schwann cells that myelinate axons both in culture and in vivo."
+    ],
+    "summary": "This snippet confirms that human foreskin-derived SKPs can produce myelinating Schwann cells capable of forming myelin on axons both in vitro and in vivo, using molecular markers such as MBP and CASPR.",
+    "categories": [
+      "markers",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:14303627",
+    "source_title": "Direct Genesis of Functional Rodent and Human Schwann Cells from Skin Mesenchymal Precursors",
+    "source_authors": "M. Krause et al.",
+    "source_year": null,
+    "snippet": "Dermal Mesenchymal Precursors Make Schwann Cells cell phenotype ( Figure 7H). Moreover, cell bodies positive for human mitochondrial antigen were aligned along MBP-positive myelin sheaths that were associated with the paranodal protein CASPR ( Figure 7I), consistent with a myelinating Schwann cell phenotype. Thus, human foreskinderived SKPs can generate bona fide Schwann cells that myelinate axons both in culture and in vivo."
+  },
+  {
+    "snippet_index": 26,
+    "quotes": [
+      "Peripheral axons transmit general somatic information, including motor signals, in adult vertebrates and are myelinated by Schwann cells.",
+      "During development, premature Schwann cells embrace many axons, but eventually only one axon per Schwann cell is myelinated.",
+      "This axonal sorting is followed by myelination of the selected axon by a single ensheathing Schwann cell.",
+      "Both axonal sorting and myelination involve dramatic changes in Schwann cell morphology, such as the protrusion of plasma membrane processes"
+    ],
+    "summary": "This snippet details that myelinating Schwann cells wrap single axons and form myelin, emphasizing their crucial role in nerve conduction and describing developmental axon sorting and related morphological changes.",
+    "categories": [
+      "function",
+      "development",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:38848143",
+    "source_title": "Rac1 GTPase controls myelination and demyelination",
+    "source_authors": "H. Park et al.",
+    "source_year": null,
+    "snippet": "Peripheral axons transmit general somatic information, including motor signals, in adult vertebrates and are myelinated by Schwann cells. During development, premature Schwann cells embrace many axons, but eventually only one axon per Schwann cell is myelinated. 1 This axonal sorting is followed by myelination of the selected axon by a single ensheathing Schwann cell. Both axonal sorting and myelination involve dramatic changes in Schwann cell morphology, such as the protrusion of plasma membrane processes, which is mostly regulated by the"
+  },
+  {
+    "snippet_index": 28,
+    "quotes": [
+      "Following the resolution of nerve damage, repair Schwann cells re-differentiate into mature myelinating and non-myelinating Schwann cells.",
+      "prior mature myelinating Schwann cells can assume a mature non-myelinating phenotype and vice versa [105,106].",
+      "their extensive developmental multipotency and adult plasticity also add to the challenges in deriving, characterizing, and maintaining Schwann cells in vitro."
+    ],
+    "summary": "This snippet highlights the plasticity of Schwann cell phenotypes, showing that repair Schwann cells can give rise to mature myelinating Schwann cells, and that these cells can switch between myelinating and non-myelinating forms.",
+    "categories": [
+      "development",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:253934919",
+    "source_title": "Development and In Vitro Differentiation of Schwann Cells",
+    "source_authors": "Sarah Janice H\u00f6rner et al.",
+    "source_year": null,
+    "snippet": "Predominantly as a reaction to nerve injury, mature Schwann cells of all subtypes can re-enter the cell cycle, de-differentiate, and assume what is called the repair phenotype. This is distinct from other mature, as well as developmental, Schwann cell phenotypes [12,103]. Repair Schwann cells are crucial for nerve repair and account for the outstanding regeneration ability of the PNS [11,104]. Following the resolution of nerve damage, repair Schwann cells re-differentiate into mature myelinating and non-myelinating Schwann cells. During this re-differentiation process, prior mature myelinating Schwann cells can assume a mature non-myelinating phenotype and vice versa [105,106]. Notably, they might even re-differentiate into non-glial cells, including melanocytes [64], dental pulp mesenchymal stem cells [72], or enteric neurons [107]. This remarkable plasticity of developing and mature descendants of the Schwann cell lineage is controlled by transcription factor networks and chromatin remodeling [108][109][110] and makes Schwann cells exceptionally interesting for in vitro modeling studies on nerve injury, disease, and regeneration. However, their extensive developmental multipotency and adult plasticity also add to the challenges in deriving, characterizing, and maintaining Schwann cells in vitro."
+  },
+  {
+    "snippet_index": 29,
+    "quotes": [
+      "In experimentally induced allergic neuritis, myelinating Schwann cells are destroyed, but can be effectively regenerated (Saida et al., 1980).",
+      "This regenerative capacity is particularly evident in mice that express diphtheria toxin A-chain in myelinating Schwann cells. In such animals, myelinating Schwann cells die and are continuously regenerated through proliferation of the nonmyelinating compartment (Messing et al., 1992)."
+    ],
+    "summary": "This snippet demonstrates the regenerative capacity of myelinating Schwann cells, which can be replenished via proliferation from non-myelinating Schwann cells after injury or targeted destruction.",
+    "categories": [
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:11258576",
+    "source_title": "A Dual Role of erbB2 in Myelination and in Expansion of the Schwann Cell Precursor Pool",
+    "source_authors": "A. Garratt et al.",
+    "source_year": null,
+    "snippet": "The ability of Schwann cells to regenerate is enormous. In experimentally induced allergic neuritis, myelinating Schwann cells are destroyed, but can be effectively regenerated (Saida et al., 1980). This regenerative capacity is particularly evident in mice that express diphtheria toxin A-chain in myelinating Schwann cells. In such animals, myelinating Schwann cells die and are continuously regenerated through proliferation of the nonmyelinating compartment (Messing et al., 1992). In conditional erbB2 mutant mice, we can still detect single Schwann cells that wrap several large-caliber axons in the adult. Such lesions are not repaired. \n\nWe observe a pronounced reduction of Schwann cell numbers in spinal roots of mice with Krox20-cre-induced erbB2 mutations. This severe lack of Schwann cells is compensated during postnatal life, although local patches devoid of Schwann cells remain unrepaired. Interestingly, Krox20 is not expressed in satellite cells of dorsal root ganglia (Murphy et al., 1996); nevertheless, proliferation is increased in dorsal root ganglia of conditional erbB2 mutants (Garratt, A.N., unpublished observations). Thus, satellite cells might replenish Schwann cells in the mutants, particularly in the projections of dorsal root ganglia neurons (dorsal roots) where regeneration is faster than in ventral roots."
+  },
+  {
+    "snippet_index": 30,
+    "quotes": [
+      "This suggests that limiting the supply of a required membrane component (cholesterol) may lead to partial downregulation of myelin gene expression in all myelinating Schwann cells.",
+      "The myelin proteins, including P,, myelin basic protein (MBP), and myelinassociated glycoprotein, are expressed only in myelinating Schwann cells (Mirsky et al., 1980;Quarles, 1982, 1984;Griffiths et al., 1989;Jessen et al., 1990)."
+    ],
+    "summary": "This snippet highlights that myelinating Schwann cells uniquely express myelin proteins such as P0, myelin basic protein (MBP), and myelin-associated glycoprotein. It also notes that proteins like NGF-R, GFAP, and N-CAM are downregulated in these cells, except at nodal regions, and that their myelin gene expression can be downregulated by limiting cholesterol.",
+    "categories": [
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:14520012",
+    "source_title": "Primary demyelination induced by exposure to tellurium alters Schwann cell gene expression: a model for intracellular targeting of NGF receptor",
+    "source_authors": "AD Toews et al.",
+    "source_year": null,
+    "snippet": "demyelinating internodes, it was also reduced in normal-appearing internodes as well. This suggests that limiting the supply of a required membrane component (cholesterol) may lead to partial downregulation of myelin gene expression in all myelinating Schwann cells. In partially demyelinated internodes, NGF-R and GFAP immunofluorescence appeared largely confined to the demyelinated regions. This suggests specific targeting of these proteins to local areas of the Schwann cell where there is myelin loss. These results demonstrate that demyelination is associated with reversion of the affected Schwann cells to a precursor cell phenotype.\n\nBecause axons remain intact, our results suggest that these changes in Schwann cell gene In normal adult peripheral nerve, myelinating and nonmyelinating Schwann cells express different proteins. The myelin proteins, including P,, myelin basic protein (MBP), and myelinassociated glycoprotein, are expressed only in myelinating Schwann cells (Mirsky et al., 1980;Quarles, 1982, 1984;Griffiths et al., 1989;Jessen et al., 1990). Nonmyelinating Schwann cell gene expression is very similar to that of the developmental \"precursor cell\" phenotype. Nonmyelinating Schwann cells express NGF receptor (NGF-R), glial fibrillary acidic protein (GFAP), and neural cell adhesion molecule (N-CAM), among others. All of these proteins are significantly downregulated in myelinating Schwann cells (Jessen and Mirsky, 1984;Mirsky et al., 1986;Jessen et al., 1990), although expression of N-CAM and another cell-adhesion molecule, L 1, continues at \"nodal regions\" of myelinating Schwann cells and on the nodal axon of the adult .\n\nModels frequently used for study of Schwann cell differentiation in the PNS involve transection or crush of nerves in adult animals. In vivo, a viable axon is necessary not only to initiate the commitment of Schwann cells to myelination, but also to maintain the differentiated Schwa"
+  }
+]

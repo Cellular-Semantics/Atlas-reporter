@@ -1,0 +1,28 @@
+{
+  "cell_type": "Neuron progenitors SPP1+ (organoid)",
+  "scope": "organoid",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Fine-grained annotation in the SkO dataset, counterpart to the fetal SPP1+ proliferating neuron progenitors.",
+    "organoid_comparison": "SkO cell states matched prenatal skin more closely than adult skin. Neural cell states including neuron progenitors were present in SkO.",
+    "neural_context": "SkO lacked immune cells and had reduced endothelial heterogeneity, but neural cell states were present.",
+    "marker_gene": "SPP1 (osteopontin) marks the proliferating neuron progenitor subset; organoid counterpart to fetal SPP1+ proliferating neuron progenitors."
+  },
+  "evidence_quotes": [
+    {
+      "quote": "Broadly, cell states were conserved among SkO, prenatal and adult skin, but SkO cell states matched prenatal skin more closely than adult skin across culture duration (Extended Data Fig. 2c,d and Supplementary Table 5). However, the tempo of differentiation varied across the distinct skin cell lineages. Even after 19 weeks of culture, fibroblasts, mural and Schwann cells had a low probability of correspondence to adult skin cell states (Extended Data Fig. 2d and Supplementary Table 5). By contrast, accelerated differentiation was observed in keratinocytes and melanocytes, with alignment to adult cell states seen as early as 4 weeks of SkO culture (Extended Data Fig. 2d and Supplementary Table 5).",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    },
+    {
+      "quote": "Consistent with this hypothesis, we observed fewer and less heterogeneous endothelial cells in the immunodeficient SkOs compared to prenatal skin, despite the formation of well-developed HFs, epidermis and neural cells",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    },
+    {
+      "quote": "Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier 2 , were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4).",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    }
+  ]
+}

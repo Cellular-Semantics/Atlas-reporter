@@ -1,0 +1,11 @@
+{
+  "label": "Fibroblasts POSTN+",
+  "resolved_names": [
+    "POSTN+ fibroblast",
+    "Fibroblasts POSTN+"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "POSTN+ fibroblasts identified in SkO dermal compartment (Extended Data Fig. 2b)."
+}

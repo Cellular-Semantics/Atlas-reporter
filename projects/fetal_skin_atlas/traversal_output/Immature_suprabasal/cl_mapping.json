@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "Immature suprabasal keratinocyte",
+  "working_definition": "An early fetal suprabasal keratinocyte of the interfollicular epidermis, present from 7 PCW and decreasing after 11 PCW. Represents an incompletely differentiated keratinocyte positioned above the basal layer, expressing early differentiation markers but lacking the full terminal differentiation program characteristic of adult suprabasal cells.",
+  "searches_performed": [
+    "suprabasal cell (CL, pageSize=10)",
+    "suprabasal keratinocyte (CL)",
+    "keratinocyte (CL)"
+  ],
+  "best_match": {
+    "cl_term": "suprabasal keratinocyte",
+    "cl_id": "CL:4033013",
+    "cl_definition": "A keratinocyte that resides in the epidermal suprabasal layer and expresses differentiation markers, including keratin 1 and keratin 10, in both humans and mice.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:4033013 describes the general suprabasal keratinocyte. The 'Immature suprabasal' cluster represents the early fetal subset that has not completed terminal differentiation, present before 11 PCW. The CL term does not distinguish immature fetal from mature adult suprabasal cells.",
+  "other_candidates": [
+    {
+      "cl_term": "spinous cell of epidermis",
+      "cl_id": "CL:0000649",
+      "reason_rejected": "Describes the fully differentiated spinous cell; the immature suprabasal may not yet express the full KRT1/KRT10 program."
+    }
+  ],
+  "recommendation": "Use CL:4033013 (suprabasal keratinocyte) as a broad match.",
+  "new_term_needed": false
+}

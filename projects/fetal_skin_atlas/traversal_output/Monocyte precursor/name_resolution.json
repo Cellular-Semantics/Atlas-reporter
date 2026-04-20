@@ -1,0 +1,8 @@
+{
+  "label": "Monocyte precursor",
+  "resolved_names": ["Monocyte precursor", "Promonocyte", "GMP", "Granulocyte-monocyte progenitor"],
+  "scope": "prenatal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The Gopee et al. (2024) atlas abbreviation list includes GMP = granulocyte-monocyte progenitors and YSMP = yolk-sac derived myeloid-biased progenitors. Suo et al. (2022) detected myeloid progenitors including GMPs in non-haematopoietic organs such as skin, spleen, and kidney, indicating that monocyte precursors are present in prenatal skin and capable of local haematopoiesis."
+}

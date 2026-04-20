@@ -1,0 +1,53 @@
+{
+  "markers": [
+    {
+      "gene": "CD8A",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table S2"
+    },
+    {
+      "gene": "CD8B",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table S2"
+    },
+    {
+      "gene": "CD3E",
+      "evidence_type": "lineage marker",
+      "source_table": "Supplementary Table S2"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "T cells (including CD8+ T cells) emerge in prenatal skin later in gestation, accompanying thymus, bone marrow and spleen formation from around 10 PCW.",
+      "category": "temporal dynamics",
+      "source_table": "Supplementary Table 4, Extended Data Fig. 1d"
+    },
+    {
+      "finding": "Single-cell alpha-beta TCR sequencing data were generated to accurately resolve T cell subsets in prenatal skin.",
+      "category": "methodology",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "finding": "B cells and T cells emerged later in gestation compared to innate immune cells such as macrophages and ILCs, which were present from early gestation.",
+      "category": "temporal dynamics",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "finding": "Pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses.",
+      "category": "spatial location",
+      "source_table": "Extended Data Fig. 1e,f"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW.",
+      "source_file": "Main text, Gopee et al. (2024)",
+      "context": "Temporal dynamics of immune cell populations in prenatal skin"
+    },
+    {
+      "quote": "Single-cell alpha-beta T cell receptor (TCR) sequencing data were generated to accurately resolve T cell subsets.",
+      "source_file": "Main text, Gopee et al. (2024)",
+      "context": "Methodology for T cell characterization"
+    }
+  ]
+}

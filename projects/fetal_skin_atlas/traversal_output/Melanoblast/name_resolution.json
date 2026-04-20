@@ -1,0 +1,10 @@
+{
+  "label": "Melanoblast",
+  "resolved_names": [
+    "Melanoblast"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The label 'Melanoblast' is used in the Gopee et al. (2024) prenatal skin atlas (Supplementary Table 6) as a fine-grained cell type annotation in the fetal scope. Resolved to 'Melanoblast' based on atlas text, figures, and supplementary data."
+}

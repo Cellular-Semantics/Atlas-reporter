@@ -1,0 +1,10 @@
+{
+  "label": "MigDC",
+  "resolved_names": [
+    "migratory dendritic cell"
+  ],
+  "scope": "adult",
+  "tissue_context": "human skin",
+  "confidence": "high",
+  "evidence": "The term 'MigDC' in this atlas refers to 'migratory dendritic cell' as found in Extended Data Fig. 8 (adult/SkO data integration) and Supplementary Table 11, which lists cluster IDs and corresponding full names. 'MigDC' is used for clusters annotated as 'migratory dendritic cells' within skin immune populations."
+}

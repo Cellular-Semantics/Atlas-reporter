@@ -1,0 +1,10 @@
+{
+  "label": "Immature basal",
+  "resolved_names": [
+    "immature basal keratinocyte"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Gopee et al. (2024) explicitly annotate 'Immature basal' as an immature interfollicular epidermal cell present from 7 PCW in prenatal skin and recapitulated in the SkO model."
+}

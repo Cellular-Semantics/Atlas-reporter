@@ -1,0 +1,23 @@
+{
+  "cell_type": "PLN+ mural cell",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Supplementary Table 3 provides DEGs used to annotate PLN+ mural cell in prenatal skin. Listed as fine-grained annotation under broad 'Mural cell' category.",
+    "organoid_comparison": "Even after 19 weeks of culture, mural cells had a low probability of correspondence to adult skin cell states (Extended Data Fig. 2d, Supplementary Table 5).",
+    "temporal_presence": "Mural cells are present throughout gestation (Fig. 1c, Extended Data Fig. 1d, Supplementary Table 4).",
+    "marker_gene": "PLN (phospholamban) is a calcium signaling regulator typically associated with smooth muscle contractile function; its expression defines this vascular smooth muscle cell-like mural cell subtype in fetal skin."
+  },
+  "evidence_quotes": [
+    {
+      "quote": "Mesoderm-derived cells, including skin fibroblasts and endothelial cells, and immune cells were present throughout gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4).",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    },
+    {
+      "quote": "Even after 19 weeks of culture, fibroblasts, mural and Schwann cells had a low probability of correspondence to adult skin cell states (Extended Data Fig. 2d and Supplementary Table 5).",
+      "source_file": "atlas_paper",
+      "context": "From Gopee et al. 2024"
+    }
+  ]
+}

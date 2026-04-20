@@ -1,0 +1,22 @@
+{
+  "markers": [
+    {
+      "gene": "MYOD1",
+      "evidence_type": "known myocyte marker",
+      "source_table": "Supplementary Table 3"
+    },
+    {
+      "gene": "MYH3",
+      "evidence_type": "known early myocyte marker",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Early myocytes present in SkO within skeletal muscle lineage",
+      "category": "development",
+      "source_table": "Extended Data Fig. 2b"
+    }
+  ],
+  "evidence_quotes": []
+}

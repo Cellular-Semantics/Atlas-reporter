@@ -1,0 +1,95 @@
+{
+  "summaries": [
+    {
+      "paper_id": "gopee2024",
+      "relevance": "high",
+      "summary": "Atlas paper. Identifies Treg cells in prenatal skin dataset. Reports that prenatal skin matrix cells express CXCL14, a chemokine that recruits Tregs, and that Treg accumulation around hair follicles contributes to immune protection during matrix differentiation. Treg markers FOXP3, CTLA4, and IL2RA are confirmed in the prenatal skin dataset. RNAscope validates FOXP3+ Tregs localising around hair follicles at 15 PCW.",
+      "key_quotes": [
+        "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (T reg ) cells",
+        "This result highlighted the potential role of T reg cell accumulation and immune protection in the early stages of matrix differentiation",
+        "T reg cells are known to localize around the HF in late second trimester (around 21 PCW) and in postnatal skin"
+      ]
+    },
+    {
+      "paper_id": "dhariwala2020",
+      "relevance": "high",
+      "summary": "Key paper on fetal skin Tregs (ref 24 in atlas). Using CyTOF and flow cytometry on human fetal skin (17-23 weeks), demonstrates that fetal skin Tregs display an effector memory phenotype (CD45RO+) with high Foxp3, elevated PD-1, but reduced CTLA-4 compared to adult. Tregs progressively increase during the second trimester, with accumulation coinciding with hair follicle development. Tregs are found in close proximity to hair follicles by immunohistochemistry. CD31 expression indicates enrichment for recent thymic emigrants. Ki-67 is preferentially high among CD45RO+ Tregs, suggesting antigen-driven local proliferation.",
+      "key_quotes": [
+        "Tregs in fetal skin largely demonstrate an effector memory Treg phenotype, akin to Tregs in adult skin",
+        "the proportion of CD45RO + Tregs progressively increased during the second trimester",
+        "the average percentage of Foxp3 + regulatory T cells (Tregs) among CD4 + cells increased significantly between 17 and 23 weeks gestation and was higher at this later fetal time point than in adult skin",
+        "Enrichment in Fetal Skin Tregs Coincides with Initial Hair Follicle Morphogenesis",
+        "Immunohistochemical staining of fetal skin for Foxp3 and CD4 further confirmed the presence of Tregs in close proximity to hair follicles",
+        "Treg enrichment in the fetal immune system is thought to be critical for promoting tolerance to self and maternal antigens",
+        "fetal skin Tregs demonstrate higher expression of the master transcriptional regulator Foxp3",
+        "PD-1, a co-inhibitory receptor that can mark Tregs with heightened suppressive function as well as stability, was also elevated early",
+        "CTLA-4, another key Treg effector molecule, was reduced in fetal Tregs",
+        "In neonatal mice, Ccl20 production by hair follicles facilitates postnatal skin Treg accumulation"
+      ]
+    },
+    {
+      "paper_id": "schuster2012",
+      "relevance": "high",
+      "summary": "Early characterisation of leukocytes in prenatal human dermis. Demonstrates FoxP3+ regulatory T cells are present in prenatal skin at a frequency comparable to adult skin (~20% of T cells). CD3+ T cells appear at end of first trimester. During midgestation, CD3+FoxP3+ cells are exclusively found in the dermis.",
+      "key_quotes": [
+        "FoxP3 expression was found in 20.0% (SD 6.5%; n = 5) of all T cells (5.9 CD3+ cells cm-1, SD 2.9; n = 5), a frequency comparable to what is found in the adult skin",
+        "During midgestation, CD3+FoxP3- and CD3+FoxP3+ cells can exclusively be found in the dermis",
+        "fetal tissues and blood contain higher numbers of regulatory T cells to control and at least partially maintain tolerance to self-antigens"
+      ]
+    },
+    {
+      "paper_id": "ali2017",
+      "relevance": "moderate",
+      "summary": "Demonstrates that Tregs in murine skin facilitate epithelial stem cell differentiation through Notch signalling (Jagged 1). Tregs preferentially localize to hair follicles and are essential for hair follicle cycling. Referenced by Gopee et al. as ref 23 regarding Treg localization around hair follicles.",
+      "key_quotes": []
+    },
+    {
+      "paper_id": "lee2017",
+      "relevance": "moderate",
+      "summary": "Demonstrates that CXCL14 promotes regulatory T cell activation and recruitment. Referenced by Gopee et al. as ref 21 for the finding that CXCL14 recruits Tregs.",
+      "key_quotes": []
+    },
+    {
+      "paper_id": "knoedler2023",
+      "relevance": "moderate",
+      "summary": "Comprehensive review of Tregs in skin regeneration and wound healing. Describes neonatal Treg skin accumulation via CCR6-CCL20 axis during hair follicle morphogenesis. Notes that germ-free neonatal mice harbor reduced skin Tregs.",
+      "key_quotes": [
+        "Scharschmidt et al. have demonstrated that, in murine skin, Tregs accumulate primarily during a defined one-week window of neonatal development",
+        "CCR6-expressing Tregs migrated preferentially from the neonatal thymus into the skin during early life phases"
+      ]
+    },
+    {
+      "paper_id": "sharma2018",
+      "relevance": "moderate",
+      "summary": "Review of Treg tissue homeostasis functions. Describes how hair follicle development, commensal colonization, and CCL20 chemokine production coordinate neonatal Treg skin infiltration. Tregs provide Notch ligand Jagged1 to hair follicle stem cells.",
+      "key_quotes": [
+        "neonatal SPF mouse skin produces high amount of chemokine CCL20 whose receptor CCR6 was found to be enriched on cutaneous Tregs",
+        "Tregs provide notch ligand Jagged1 to the stem cells. Notch signaling triggers the active phase of hair growth cycle (anagen)"
+      ]
+    },
+    {
+      "paper_id": "rackaityte2020",
+      "relevance": "moderate",
+      "summary": "Review of fetal T cell tolerance mechanisms. Describes how the developing fetus generates both tolerogenic and protective immune responses, with Tregs playing a central role in establishing self-tolerance.",
+      "key_quotes": [
+        "The developing human fetus generates both tolerogenic and protective immune responses in response to the unique requirements of gestation"
+      ]
+    },
+    {
+      "paper_id": "short2021",
+      "relevance": "low",
+      "summary": "Reviews role of T lymphocytes in cutaneous scarring. Notes that IL-10 is present in greater quantities in fetal skin compared with adult skin and that the fetal regenerative phenotype is dependent on IL-10 signaling.",
+      "key_quotes": [
+        "IL-10 is present in greater quantities in fetal skin compared with adult skin, and the fetal regenerative phenotype is dependent on IL-10 signaling"
+      ]
+    },
+    {
+      "paper_id": "park2018",
+      "relevance": "moderate",
+      "summary": "Reviews skin microbiota and adaptive immunity. Describes how Foxp3+ Treg cells reside in the dermis surrounding hair follicles and that commensal-specific tolerance may be established during the neonatal period.",
+      "key_quotes": [
+        "In the skin of both mice and humans, Foxp3 + regulatory T (Treg) cells are present in the dermis, especially surrounding the hair follicles, where skin-resident microorganisms also reside"
+      ]
+    }
+  ]
+}

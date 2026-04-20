@@ -1,0 +1,58 @@
+{
+  "markers": [
+    {
+      "gene": "IL1RL1",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "gene": "GATA3",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "gene": "IL7R",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "gene": "TNFRSF18",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 4"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "ILC2 cells (annotated as ILC2_3) are present from early gestation in prenatal skin",
+      "category": "developmental timing",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "finding": "ILC2_3 was annotated as 'Type 2 innate lymphoid cell' with immune effector function",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table 2"
+    },
+    {
+      "finding": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation",
+      "category": "developmental timing",
+      "source": "Main text, Section: Single-cell atlas of human prenatal skin"
+    },
+    {
+      "finding": "Some subsets of macrophages, ILCs and fibroblasts exhibited distinct gene expression profiles between early and late gestation",
+      "category": "temporal dynamics",
+      "source": "Main text, Section: Single-cell atlas of human prenatal skin"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation",
+      "source_file": "Main text",
+      "context": "Description of immune cell temporal dynamics in prenatal skin"
+    },
+    {
+      "quote": "ILC2_3 cluster marker genes: IL1RL1, GATA3, IL7R, TNFRSF18",
+      "source_file": "Supplementary Table 4",
+      "context": "Cluster marker gene table"
+    }
+  ]
+}

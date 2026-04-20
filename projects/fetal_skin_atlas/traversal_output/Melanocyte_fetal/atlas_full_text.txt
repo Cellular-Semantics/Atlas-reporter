@@ -1,0 +1,5 @@
+By contrast, accelerated differentiation was observed in keratinocytes and melanocytes, with alignment to adult cell states seen as early as 4 weeks of SkO culture (Extended Data Fig. 2d and Supplementary Table 5). Notably, the SkO model recapitulated the different components of prenatal skin HF, interfollicular epidermis, neural cells and dermal fibroblasts, but immune cells were not represented and endothelial cells were markedly reduced.
+
+Even after 19 weeks of culture, fibroblasts, mural and Schwann cells had a low probability of correspondence to adult skin cell states (Extended Data Fig. 2d and Supplementary Table 5). By contrast, accelerated differentiation was observed in keratinocytes and melanocytes, with alignment to adult cell states seen as early as 4 weeks of SkO culture (Extended Data Fig. 2d and Supplementary Table 5).
+
+Broad cell labels (epidermis, dermal stroma, immune and endothelium) and fine-grained annotations of cell states were assigned on the basis of differentially expressed genes (DEGs) (Fig. 1b, Extended Data Fig. 1c and Supplementary Table 3).

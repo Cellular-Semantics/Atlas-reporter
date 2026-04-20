@@ -1,0 +1,26 @@
+{
+  "suggested_label": "type 3 innate T cell",
+  "synonyms": ["innate T type3", "type 3 unconventional T cell", "PLZF+ type 3 T cell"],
+  "definition": "An unconventional T cell that expresses the transcription factors PLZF (ZBTB16) and RORC and is committed to a type 3 effector program associated with IL-17 production. This cell arises via thymocyte-thymocyte (T-T) selection (Suo et al., 2022). It may express either an alpha-beta or gamma-delta TCR, with enrichment of TRGV8 or TRGV10 usage among gamma-delta TCR-expressing cells. This cell type is enriched during prenatal development and is nearly absent in the postnatal thymus (Suo et al., 2022). It is distinct from conventional Th17 cells, which arise from cTEC-mediated selection.",
+  "parent_term": {
+    "cl_id": "",
+    "cl_label": "T cell (or a new 'innate-like T cell' parent)"
+  },
+  "logical_axioms": [
+    "expresses some ZBTB16 (PLZF)",
+    "expresses some RORC",
+    "capable_of some 'IL-17 production'",
+    "develops_from some 'double-positive, alpha-beta thymocyte'"
+  ],
+  "references": [
+    {
+      "doi": "10.1126/science.abo0510",
+      "citation": "Suo C et al. (2022). Mapping the developing human immune system across organs. Science."
+    },
+    {
+      "doi": "10.1038/s41586-024-08002-x",
+      "citation": "Gopee NH et al. (2024). A prenatal skin atlas reveals immune regulation of human skin morphogenesis. Nature."
+    }
+  ],
+  "ntr_markdown": "## New Term Request: type 3 innate T cell\n\n**Suggested label:** type 3 innate T cell\n\n**Synonyms:** innate T type3, type 3 unconventional T cell, PLZF+ type 3 T cell\n\n**Definition:** An unconventional T cell that expresses the transcription factors PLZF (ZBTB16) and RORC and is committed to a type 3 effector program associated with IL-17 production. This cell arises via thymocyte-thymocyte (T-T) selection (Suo et al., 2022). It may express either an alpha-beta or gamma-delta TCR, with enrichment of TRGV8 or TRGV10 usage among gamma-delta TCR-expressing cells. This cell type is enriched during prenatal development and is nearly absent in the postnatal thymus (Suo et al., 2022). It is distinct from conventional Th17 cells, which arise from cTEC-mediated selection.\n\n**Parent term:** T cell (or a new 'innate-like T cell' parent term)\n\n**References:**\n- Suo C et al. (2022). Mapping the developing human immune system across organs. *Science*. DOI: [10.1126/science.abo0510](https://doi.org/10.1126/science.abo0510)\n- Gopee NH et al. (2024). A prenatal skin atlas reveals immune regulation of human skin morphogenesis. *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)\n\n**Comment:** This cell type was identified in the developing human immune system atlas (Suo et al., 2022) and used as an annotation category in the prenatal skin atlas (Gopee et al., 2024). It is distinct from Th17 cells (conventional, cTEC-selected) and ILC3s (which lack TCR). A type 3 innate T cell overlaps with some IL-17-producing gamma-delta T cell subsets but is defined by effector function rather than TCR class. A broader parent term 'innate-like T cell' may also be needed."
+}

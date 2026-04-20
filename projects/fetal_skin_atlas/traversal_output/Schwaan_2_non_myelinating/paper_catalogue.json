@@ -1,0 +1,402 @@
+{
+  "CorpusId:253934919": {
+    "title": "Development and In Vitro Differentiation of Schwann Cells",
+    "authors": [
+      "Sarah Janice H\u00f6rner",
+      "N. Couturier",
+      "Daniele Caroline Gueiber",
+      "M. Hafner",
+      "R. Rudolf"
+    ],
+    "year": 2022,
+    "venue": "Cells",
+    "doi": "10.3390/cells11233753",
+    "pmid": "36497014",
+    "url": "https://www.semanticscholar.org/paper/04d62f6b1a52af4b73062e77d4aa6a40794ea5b8",
+    "abstract": "Schwann cells are glial cells of the peripheral nervous system. They exist in several subtypes and perform a variety of functions in nerves. Their derivation and culture in vitro are interesting for applications ranging from disease modeling to tissue engineering. Since primary human Schwann cells are challenging to obtain in large quantities, in vitro differentiation from other cell types presents an alternative. Here, we first review the current knowledge on the developmental signaling mechani",
+    "tldr": "This contribution provides an overview of the current resources and methods for the differentiation of Schwann cells, which supports the comparison and refinement of protocols and aids the choice of suitable methods for specific applications."
+  },
+  "CorpusId:257526331": {
+    "title": "Culture Conditions for Human Induced Pluripotent Stem Cell-Derived Schwann Cells: A Two-Centre Study",
+    "authors": [
+      "Zhong Huang",
+      "Rebecca A. Powell",
+      "Svenja Kankowski",
+      "J. Phillips",
+      "K. Haastert-Talini"
+    ],
+    "year": 2023,
+    "venue": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms24065366",
+    "pmid": "36982441",
+    "url": "https://www.semanticscholar.org/paper/9ec65987cbdcc9e1d8d6ccc4750775dd143691a1",
+    "abstract": "Adult human Schwann cells represent a relevant tool for studying peripheral neuropathies and developing regenerative therapies to treat nerve damage. Primary adult human Schwann cells are, however, difficult to obtain and challenging to propagate in culture. One potential solution is to generate Schwann cells from human induced pluripotent stem cells (hiPSCs). Previously published protocols, however, in our hands did not deliver sufficient viable cell numbers of hiPSC-derived Schwann cells (hiPS",
+    "tldr": "The type of coating to be important during the differentiation process from Schwann cell precursor cells or immature Schwann cells to definitive Schwann Cells, as well as the amounts of glucose in the specific differentiation medium to be crucial for increasing its efficiency and the final yield of viable hiPSC-SCs are concluded."
+  },
+  "CorpusId:14256470": {
+    "title": "Neural-Competent Cells of Adult Human Dermis Belong to the Schwann Lineage",
+    "authors": [
+      "U. Etxaniz",
+      "A. P\u00e9rez-San Vicente",
+      "Nuria Gago-L\u00f3pez",
+      "M. Garc\u00eda-Dom\u00ednguez",
+      "H. Iribar",
+      "Ariane Aduriz",
+      "Virginia P\u00e9rez\u2010L\u00f3pez",
+      "I. Burgoa",
+      "H. Irizar",
+      "M. Mu\u00f1oz-Culla",
+      "A. Vallejo-Illarramendi",
+      "O. Leis",
+      "A. Matheu",
+      "Angel G. Marti\u0301n",
+      "D. Otaegui",
+      "M. P. L\u00f3pez-Mato",
+      "Araika Guti\u00e9rrez\u2010Rivera",
+      "R. Maclellan",
+      "A. Izeta"
+    ],
+    "year": 2014,
+    "venue": "Stem Cell Reports",
+    "doi": "10.1016/j.stemcr.2014.09.009",
+    "pmid": "25418723",
+    "url": "https://www.semanticscholar.org/paper/c561e848ed93ed589ba7c209c42ea10312804694",
+    "abstract": "Summary Resident neural precursor cells (NPCs) have been reported for a number of adult tissues. Understanding their physiological function or, alternatively, their activation after tissue damage or in vitro manipulation remains an unsolved issue. Here, we investigated the source of human dermal NPCs in adult tissue. By following an unbiased, comprehensive approach employing cell-surface marker screening, cell separation, transcriptomic characterization, and in vivo fate analyses, we found that ",
+    "tldr": "It is found that p75NTR+ precursors of human foreskin can be ascribed to the Schwann and perivascular cell lineages and double-positive NPCs were similarly obtained from human cardiospheres, indicating that this phenomenon might be widespread."
+  },
+  "CorpusId:273066472": {
+    "title": "Single-cell profiling of cellular changes in the somatic peripheral nerves following nerve injury",
+    "authors": [
+      "Li Zhao",
+      "Chunyi Jiang",
+      "Bin Yu",
+      "J. Zhu",
+      "Yuyu Sun",
+      "Sheng Yi"
+    ],
+    "year": 2024,
+    "venue": "Frontiers in Pharmacology",
+    "doi": "10.3389/fphar.2024.1448253",
+    "pmid": "39415832",
+    "url": "https://www.semanticscholar.org/paper/435371467741db255ae59097c8f39ab4f5bcf8ed",
+    "abstract": "Injury to the peripheral nervous system disconnects targets to the central nervous system, disrupts signal transmission, and results in functional disability. Although surgical and therapeutic treatments improve nerve regeneration, it is generally hard to achieve fully functional recovery after severe peripheral nerve injury. A better understanding of pathological changes after peripheral nerve injury helps the development of promising treatments for nerve regeneration. Single-cell analyses of t",
+    "tldr": "The understanding of cellular changes following peripheral nerve injury at a single-cell resolution offers a comprehensive and insightful view for the peripheral nerve repair process, provides an important basis for the exploration of the key regulators of neuronal growth and microenvironment reconstruction, and benefits the development of novel therapeutic drugs for the treatment of peripheral nerve injury."
+  },
+  "CorpusId:281791732": {
+    "title": "Single cell deciphering of pruritic keloids: the interaction between fibroblasts and Schwann cells through the Midkine signaling",
+    "authors": [
+      "En Yang",
+      "Ruoqing Xu",
+      "L. Tu",
+      "Hanrui Zhang",
+      "S. Luo",
+      "Hsin Liang",
+      "Yunhan Liu",
+      "Shuchen Gu",
+      "Yixuan Zhao",
+      "Xin Huang",
+      "T. Zan"
+    ],
+    "year": 2025,
+    "venue": "Burns & Trauma",
+    "doi": "10.1093/burnst/tkaf057",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/aeb78799112165418c3abd0c97530af3d2292704",
+    "abstract": "Abstract Background Keloids are a common skin fibroproliferative disease that can result in severe aesthetic and functional concerns. Pruritus and pain are the most prevalent clinical manifestations of keloids. Schwann cells (SCs) variation and neuropathy within keloids contribute to these uncomfortable sensations; however the underlying mechanisms remain unclear. This study aims to explore the potential role of fibroblasts (FBs) and SCs in pruritic and pain keloids. Methods The activity of FBs ",
+    "tldr": "The interaction between FBs and SCs in the development of keloidal pain and pruritus is uncovered, offering a novel therapeutic strategy to alleviate the distressing symptoms of keloids."
+  },
+  "CorpusId:4722737": {
+    "title": "Purification and Characterization of Schwann Cells from Adult Human Skin and Nerve",
+    "authors": [
+      "J. A. Stratton",
+      "Ranjan Kumar",
+      "S. Sinha",
+      "Prajay T. Shah",
+      "Morgan G. Stykel",
+      "Y. Shapira",
+      "R. Midha",
+      "J. Biernaskie"
+    ],
+    "year": 2017,
+    "venue": "eNeuro",
+    "doi": "10.1523/ENEURO.0307-16.2017",
+    "pmid": "28512649",
+    "url": "https://www.semanticscholar.org/paper/57f4fd5621412a1b8a631ab257659f097dc955bd",
+    "abstract": "Abstract Despite its modest capacity for regeneration, peripheral nervous system injury often results in significant long-term disability. Supplementing peripheral nervous system injury with autologous Schwann cells (SCs) may serve to rejuvenate the postinjury environment to enhance regeneration and ultimately improve functional outcomes. However, human nerve-derived SC (hN-SC) collection procedures require invasive surgical resection. Here, we describe the characterization of SCs from adult hum",
+    "tldr": "It is demonstrated that adult hSk-SCs are genetically and phenotypically indistinguishable to human nerve-derived SCs, and that a subset of both associate with regenerating axons and form myelin following transplantation into the injured mouse sciatic nerve."
+  },
+  "CorpusId:231694257": {
+    "title": "Insights Into the Role and Potential of Schwann Cells for Peripheral Nerve Repair From Studies of Development and Injury",
+    "authors": [
+      "Anjali Balakrishnan",
+      "Lauren Belfiore",
+      "Tak-Ho Chu",
+      "Taylor Fleming",
+      "R. Midha",
+      "J. Biernaskie",
+      "C. Schuurmans"
+    ],
+    "year": 2021,
+    "venue": "Frontiers in Molecular Neuroscience",
+    "doi": "10.3389/fnmol.2020.608442",
+    "pmid": "33568974",
+    "url": "https://www.semanticscholar.org/paper/c1ca243e0266a75f10fb98eb30debb660ba41693",
+    "abstract": "Peripheral nerve injuries arising from trauma or disease can lead to sensory and motor deficits and neuropathic pain. Despite the purported ability of the peripheral nerve to self-repair, lifelong disability is common. New molecular and cellular insights have begun to reveal why the peripheral nerve has limited repair capacity. The peripheral nerve is primarily comprised of axons and Schwann cells, the supporting glial cells that produce myelin to facilitate the rapid conduction of electrical im",
+    "tldr": "Two studies provide essential context for current efforts to design glial cell-based therapies for peripheral nerve regeneration and directed differentiation of pluripotent stem cells or lineage conversion of accessible somatic cells to induced Schwann cells, with the potential of \u201cunlimited\" supply."
+  },
+  "CorpusId:247517139": {
+    "title": "The transcriptional profile of keloidal Schwann cells",
+    "authors": [
+      "M. Direder",
+      "M. Wielscher",
+      "T. Weiss",
+      "M. Laggner",
+      "D. Copic",
+      "K. Klas",
+      "D. Bormann",
+      "V. Vorstandlechner",
+      "E. Tschachler",
+      "Hendrik Jan Ankersmit",
+      "M. Mildner"
+    ],
+    "year": 2022,
+    "venue": "Experimental and Molecular Medicine",
+    "doi": "10.1038/s12276-022-00874-1",
+    "pmid": "36333467",
+    "url": "https://www.semanticscholar.org/paper/be40c7e2590a1e4a073c9163b09e93f9dc81ca08",
+    "abstract": "Recently, a specific Schwann cell type with profibrotic and tissue regenerative properties that contributes to keloid formation has been identified. In the present study, we reanalyzed published single-cell RNA sequencing (scRNA-seq) studies of keloids, healthy skin, and normal scars to reliably determine the specific gene expression profile of keloid-specific Schwann cell types in more detail. We were able to confirm the presence of the repair-like, profibrotic Schwann cell type in the datasets",
+    "tldr": "This study reanalyzed published single-cell RNA sequencing studies of keloids, healthy skin, and normal scars to reliably determine the specific gene expression profile ofkeloid-specific Schwann cell types in more detail, and identified a specific gene-set for these Schwann cells."
+  },
+  "CorpusId:276014101": {
+    "title": "Schwann cells in regeneration and cancer",
+    "authors": [
+      "Lan Zhang",
+      "Jiale Xie",
+      "Wenyu Dai",
+      "Bing Lu",
+      "Sheng Yi"
+    ],
+    "year": 2025,
+    "venue": "Frontiers in Pharmacology",
+    "doi": "10.3389/fphar.2025.1506552",
+    "pmid": "39981185",
+    "url": "https://www.semanticscholar.org/paper/2e42714ba250f116a45351bec567995e29d07f10",
+    "abstract": "Schwann cells are specific peripheral glial cells with remarkable plasticity following peripheral nerve injury. Injury responses stimulate c-Jun activation in Schwann cells, drive epithelial-mesenchymal transition and cellular phenotypic changes, and induce the generation of reprogrammed repair Schwann cells to orchestrate peripheral nerve regeneration process. Schwann cells and/or Schwann cell-derived molecules are commonly used as supporting cells and/or neurotrophic factors to construct Schwa",
+    "tldr": "The physiological and pathological activities of Schwann cells are outlined and the functional roles of Schwann cells in homeostasis, regeneration, and cancer are discussed."
+  },
+  "CorpusId:15813271": {
+    "title": "Boundary Caps Give Rise to Neurogenic Stem Cells and Terminal Glia in the Skin",
+    "authors": [
+      "Aur\u00e9lie Gresset",
+      "F. Coulpier",
+      "Gaspard Gerschenfeld",
+      "Alexandre Jourdon",
+      "Graziella Matesic",
+      "L. Richard",
+      "J. Vallat",
+      "P. Charnay",
+      "P. Topilko"
+    ],
+    "year": 2015,
+    "venue": "Stem Cell Reports",
+    "doi": "10.1016/j.stemcr.2015.06.005",
+    "pmid": "26212662",
+    "url": "https://www.semanticscholar.org/paper/309de021cee716eaf8dddad4e066e39aa55cfcd0",
+    "abstract": "Summary While neurogenic stem cells have been identified in rodent and human skin, their manipulation and further characterization are hampered by a lack of specific markers. Here, we perform genetic tracing of the progeny of boundary cap (BC) cells, a neural-crest-derived cell population localized at peripheral nerve entry/exit points. We show that BC derivatives migrate along peripheral nerves to reach the skin, where they give rise to terminal glia associated with dermal nerve endings. Dermal",
+    "tldr": "It is shown that BC derivatives migrate along peripheral nerves to reach the skin, where they give rise to terminal glia associated with dermal nerve endings, which provides genetic tools to study and manipulate this population of high interest for medical applications."
+  },
+  "CorpusId:7746848": {
+    "title": "Glial Fibrillary Acidic Protein-Expressing Glia in the Mouse Lung",
+    "authors": [
+      "G. B. Suarez-Mier",
+      "M. Buckwalter"
+    ],
+    "year": 2015,
+    "venue": "ASN Neuro",
+    "doi": "10.1177/1759091415601636",
+    "pmid": "26442852",
+    "url": "https://www.semanticscholar.org/paper/61e9a603b988fb2250721f50bfed0e3f54eaebb7",
+    "abstract": "Autonomic nerves regulate important functions in visceral organs, including the lung. The postganglionic portion of these nerves is ensheathed by glial cells known as non-myelinating Schwann cells. In the brain, glia play important functional roles in neurotransmission, neuroinflammation, and maintenance of the blood brain barrier. Similarly, enteric glia are now known to have analogous roles in gastrointestinal neurotransmission, inflammatory response, and barrier formation. In contrast to this",
+    "tldr": "The morphology of non-myelinating Schwann cells in the lung is described and it is verified that they express glial fibrillary acidic protein and S100, a classic glial marker, which is a cognate marker of astrocytes that is expressed by enteric glia and non- myelinatingSchann cells."
+  },
+  "CorpusId:216489909": {
+    "title": "Non-Myelinating Schwann Cells in Health and Disease",
+    "authors": [
+      "O. Ioghen",
+      "E. Manole",
+      "M. Gherghiceanu",
+      "B. Popescu",
+      "L. Ceafalan"
+    ],
+    "year": 2020,
+    "venue": "Schwann Cells [Working Title]",
+    "doi": "10.5772/intechopen.91930",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/d7b73690163b9c974265c490025dd1baa5a2cd8b",
+    "abstract": "Non-myelinating Schwann cells (NMSCs) are one of the two major phenotypes of Schwann cells. NMSCs are of different types and have various locations. In the peripheral nervous system, NMSC, named Remak Schwann cells (RSC), accom-modate multiple small-caliber axons, forming Remak bundles. NMSC, named perisynaptic/terminal Schwann cells, are found at the distal end of motor nerve terminals at the neuromuscular junction (NMJ). Thus, NMSCs proved to serve different functions according to their distri",
+    "tldr": "An overview of NMSCs phenotypes and tissue distribution focusing on their emerging involvement in various peripheral nerve diseases and the evolution of myelinated and unmyelinated peripheral nerve fibers is presented."
+  },
+  "CorpusId:52038650": {
+    "title": "The Human Skin-Derived Precursors for Regenerative Medicine: Current State, Challenges, and Perspectives",
+    "authors": [
+      "Ru Dai",
+      "Wei Hua",
+      "Heng Xie",
+      "Wei Chen",
+      "L. Xiong",
+      "Li Li"
+    ],
+    "year": 2018,
+    "venue": "Stem Cells International",
+    "doi": "10.1155/2018/8637812",
+    "pmid": "30123295",
+    "url": "https://www.semanticscholar.org/paper/4ff8b2f09cc85d43e8bdfb67b38e99555fd82048",
+    "abstract": "Skin-derived precursors (SKPs) are an adult stem cell source with self-renewal and multipotent differentiation. Although rodent SKPs have been discussed in detail in substantial studies, human SKPs (hSKPs) are rarely reported. Understanding the biological properties and possible mechanisms underlying hSKPs has important implications for regenerative medicine particularly clinical applications, as human-derived sources are more suitable for clinical transplantation. The finding that hSKPs derivat",
+    "tldr": "An overview of skin-derived precursors is provided, describing their characteristics, originations and niches, and potential applications, and a comparison between traditional and innovative culture methods used for hSKPs is introduced."
+  },
+  "CorpusId:281521212": {
+    "title": "A multi-omic atlas of human autonomic and sensory ganglia implicates cell types in peripheral neuropathies",
+    "authors": [
+      "Lite Yang",
+      "Adam J. Dourson",
+      "Ruichen Tao",
+      "Kevin Boyer",
+      "Pauline Meriau",
+      "J. D. Del Rosario",
+      "Jiwon Yi",
+      "Richard A. Slivicki",
+      "Zach Bertels",
+      "Maria Payne",
+      "Juliet M. Mwirigi",
+      "Prashant Gupta",
+      "John A Lemen",
+      "B. Copits",
+      "Guoyan Zhao",
+      "Valeria Cavalli",
+      "Alexander Chamessian",
+      "Robert W. Gereau"
+    ],
+    "year": 2025,
+    "venue": "bioRxiv",
+    "doi": "10.1101/2025.09.18.677119",
+    "pmid": "41000833",
+    "url": "https://www.semanticscholar.org/paper/d626edbdeaa003a61dd7be709cc7595c83819477",
+    "abstract": "The human peripheral nervous system (PNS) consists of many ganglia including sympathetic ganglia (SG) and dorsal root ganglia (DRG). These ganglia house the cell bodies of diverse PNS neurons that transmit autonomic and sensory signals, as well as a much larger number of non-neuronal cells. However, the molecular and cellular diversity of these human PNS cell types and their implications in human disease remain elusive. By generating an integrated single-cell multi-omic atlas of human SG and DRG",
+    "tldr": "An integrated single-cell multi-omic atlas of human SG and DRG is generated, which provides comprehensive transcriptional and epigenomic landscapes of various cell types in these peripheral ganglia and identifies cell types that may underlie various peripheral neuropathies."
+  },
+  "CorpusId:263151481": {
+    "title": "Integration of single-nuclei RNA-sequencing, spatial transcriptomics and histochemistry defines the complex microenvironment of NF1-associated plexiform neurofibromas",
+    "authors": [
+      "V. Amani",
+      "K. Riemondy",
+      "Rui Fu",
+      "A. Griesinger",
+      "Enrique Grimaldo",
+      "G. D. de Sousa",
+      "A. Gilani",
+      "M. Hemenway",
+      "N. Foreman",
+      "A. Donson",
+      "Nicholas Willard"
+    ],
+    "year": 2023,
+    "venue": "Acta Neuropathologica Communications",
+    "doi": "10.1186/s40478-023-01639-1",
+    "pmid": "37770931",
+    "url": "https://www.semanticscholar.org/paper/5f2e4b4bf07d4fdeeb16a81d58437214f8a2f1ba",
+    "abstract": "Plexiform neurofibroma (PN) is a leading cause of morbidity in children with the genetic condition Neurofibromatosis Type 1 (NF1), often disfiguring or threatening vital structures. During formation of PN, a complex tumor microenvironment (TME) develops, with recruitment of neoplastic and non-neoplastic cell types being critical for growth and progression. Due to the cohesive cellularity of PN, single-cell RNA-sequencing is difficult and may result in a loss of detection of critical cellular sub",
+    "tldr": "SnRNA-seq integrated with spatial transcriptomics advances the understanding of the complex cellular heterogeneity of PN TME and identify potential novel communication pathways that may drive disease progression, a finding that could provide translational therapy options for patients with these devastating tumors of childhood and early adulthood."
+  },
+  "CorpusId:245880086": {
+    "title": "Subepidermal Schwann cell counts correlate with skin innervation \u2013 an exploratory study",
+    "authors": [
+      "Ay\u015fe Nur \u00d6zda\u011f Acarl\u0131",
+      "T. Klein",
+      "Nadine Egenolf",
+      "C. Sommer",
+      "N. \u00dc\u00e7eyler"
+    ],
+    "year": 2022,
+    "venue": "Muscle and Nerve",
+    "doi": "10.1002/mus.27496",
+    "pmid": "35020203",
+    "url": "https://www.semanticscholar.org/paper/ba89e34144fa4171e2ca08df5e3f7b9ff7b614f4",
+    "abstract": "Schwann cell clusters have been described at the murine dermis\u2010epidermis border. We quantified dermal Schwann cells in the skin of patients with small\u2010fiber neuropathy (SFN) compared with healthy controls to correlate with the clinical phenotype.",
+    "tldr": "Dermal Schwann cells in the skin of patients with small\u2010fiber neuropathy compared with healthy controls are quantified to correlate with the clinical phenotype."
+  },
+  "CorpusId:275309159": {
+    "title": "Schwann Cells in Neuromuscular Disorders: A Spotlight on Amyotrophic Lateral Sclerosis",
+    "authors": [
+      "Kathryn R. Moss",
+      "Smita Saxena"
+    ],
+    "year": 2025,
+    "venue": "Cells",
+    "doi": "10.3390/cells14010047",
+    "pmid": "39791748",
+    "url": "https://www.semanticscholar.org/paper/e0b881decc41eb0e68ec1dc50fb7fd92d93f1d05",
+    "abstract": "Amyotrophic Lateral Sclerosis (ALS) is a complex neurodegenerative disease primarily affecting motor neurons, leading to progressive muscle atrophy and paralysis. This review explores the role of Schwann cells in ALS pathogenesis, highlighting their influence on disease progression through mechanisms involving demyelination, neuroinflammation, and impaired synaptic function. While Schwann cells have been traditionally viewed as peripheral supportive cells, especially in motor neuron disease, rec",
+    "tldr": "Overall, this review aims to provide comprehensive insights into Schwann cell classification, physiology, and function, underscoring the critical pathological contributions of Schwann cells in ALS and suggests new avenues for targeted therapeutic interventions aimed at modulating Schwann cell function in ALS."
+  },
+  "CorpusId:24349598": {
+    "title": "Serum\u2010free bioprocessing of adult human and rodent skin\u2010derived Schwann cells: implications for cell therapy in nervous system injury",
+    "authors": [
+      "L. Mirfeizi",
+      "J. A. Stratton",
+      "Ranjan Kumar",
+      "Prajay T. Shah",
+      "N. Agabalyan",
+      "Morgan G. Stykel",
+      "R. Midha",
+      "J. Biernaskie",
+      "M. S. Kallos"
+    ],
+    "year": 2017,
+    "venue": "Journal of Tissue Engineering and Regenerative Medicine",
+    "doi": "10.1002/term.2252",
+    "pmid": "28176458",
+    "url": "https://www.semanticscholar.org/paper/fa3dea51f9e8555d4153f2de0cf720b023becfe3",
+    "abstract": "Peripheral nerve injury affects 2.8% of trauma patients with severe cases often resulting in long\u2010lived permanent disability, despite nerve repair surgery. Autologous Schwann cell (SC) therapy currently provides an exciting avenue for improved outcomes for these patients, particularly with the possibility to derive SCs from easily\u2010accessible adult skin. However, due to current challenges regarding the efficient expansion of these cells, further optimization is required before they can be serious",
+    "tldr": "This dataset demonstrates the basis for a scalable bioprocess for the production of SCs, an important step towards clinical use of these cells as an adjunct therapy for nerve repair."
+  },
+  "CorpusId:49404448": {
+    "title": "Distribution of non-myelinating Schwann cells and their associations with leukocytes in mouse spleen revealed by immunofluorescence staining",
+    "authors": [
+      "Bin Ma",
+      "Changfu Yin",
+      "D. Hu",
+      "Mark Newman",
+      "P. Nicholls",
+      "Zhanjun Wu",
+      "W. Greene",
+      "Zhongli Shi"
+    ],
+    "year": 2018,
+    "venue": "European Journal of Histochemistry",
+    "doi": "10.4081/ejh.2018.2890",
+    "pmid": "29943953",
+    "url": "https://www.semanticscholar.org/paper/861938959f463d3af87c5f60ad799d3820b63129",
+    "abstract": "The nervous system and the immune system communicate extensively with each other in order to maintain homeostasis and to regulate the immune response. The peripheral nervous system (PNS) communicates specifically with the immune system according to local interactions, including the \u201chardwiring\u201d of sympathetic/parasympathetic (efferent) and sensory nerves (afferent) to lymphoid tissue and organs. To reveal this type of bidirectional neuroimmune interaction at the microscopic level, we used immuno",
+    "tldr": "The novel findings concerning the distribution of NMSCs and NMSC-leukocytes interactions inside mouse spleen should improve the understanding of the mechanisms through which the PNS affects cellular- and humoral-mediated immune responses in a variety of health conditions and infectious/non-infectious diseases."
+  },
+  "CorpusId:240248275": {
+    "title": "The role of exercise on peripheral nerve regeneration: from animal model to clinical application",
+    "authors": [
+      "Grazia Maugeri",
+      "V. D\u2019Agata",
+      "Bruno Trovato",
+      "F. Roggio",
+      "A. Castorina",
+      "M. Vecchio",
+      "M. Di Rosa",
+      "G. Musumeci"
+    ],
+    "year": 2021,
+    "venue": "Heliyon",
+    "doi": "10.1016/j.heliyon.2021.e08281",
+    "pmid": "34765794",
+    "url": "https://www.semanticscholar.org/paper/9e57663da6c1a029ae14dc5efa3bcbed1522c0ab",
+    "abstract": "Peripheral nerve injury is a complex condition with a variety of signs and symptoms depending on the severity and nerves involved. Peripheral nerve damage may lead to sensory and motor functions deficits and even lifelong disability, causing important socioeconomic costs worldwide. Despite the increase in knowledge of the mechanisms of injury and regeneration, a full functional recovery is still unsatisfying in the majority of patients. It is well known that exercise promotes physical and psycho",
+    "tldr": "The present review aims to summarize the impact of exercise on peripheral nerve regeneration and some clinical evidence regarding the effect of exercise after peripheral nerve injury will also be discussed."
+  }
+}

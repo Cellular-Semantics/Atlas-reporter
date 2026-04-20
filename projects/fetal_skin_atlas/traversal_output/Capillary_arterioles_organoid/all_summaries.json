@@ -1,0 +1,26 @@
+[
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "Unlike SkO capillary arteriole cells, prenatal skin capillary arteriole cells could further differentiate into arterioles",
+    "relevance": "Differentiation limitation"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "despite strong expression of the sprouting angiogenesis gene signature, SkO capillary arteriole cells are unable to guide stalk cells for new blood vessel formation",
+    "relevance": "Functional limitation"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "Consistent with this hypothesis, we observed fewer and less heterogeneous endothelial cells in the immunodeficient SkOs compared to prenatal skin, despite the formation of well-developed HFs, epidermis and neural cells",
+    "relevance": "Endothelial deficiency in SkO"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "GATA2 and related regulons (for example, NFATC1) were downregulated in SkO capillary arterioles",
+    "relevance": "Regulon downregulation"
+  }
+]

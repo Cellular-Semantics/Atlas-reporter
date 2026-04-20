@@ -1,0 +1,48 @@
+{
+  "markers": [
+    {
+      "gene": "CD207",
+      "evidence_type": "Known marker cited in atlas annotation and literature",
+      "source_table": "Supplementary Table 3 (DEGs), atlas figure legends"
+    },
+    {
+      "gene": "CD1A",
+      "evidence_type": "Known marker cited in atlas annotation and literature",
+      "source_table": "Supplementary Table 3 (DEGs), atlas figure legends"
+    },
+    {
+      "gene": "EPCAM",
+      "evidence_type": "Known LC marker in epidermis",
+      "source_table": "Literature (Collin et al., 2018)"
+    },
+    {
+      "gene": "HLA-DR",
+      "evidence_type": "MHC class II molecule expressed by LCs",
+      "source_table": "Literature (Schuster et al., 2009)"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "LC precursors are first identified in human epidermis at 7-9 weeks estimated gestational age (EGA) based on CD45, HLA-DR, CD1c and ATPase expression. The defining LC markers CD207/langerin, CD1a and Birbeck granules are detectable only after 11 weeks EGA.",
+      "category": "developmental timing",
+      "source_file": "Schuster et al. (2014), Development 141:807-815"
+    },
+    {
+      "finding": "LCs are grouped with DCs in the atlas myeloid compartment. The atlas focuses primarily on macrophage populations for immune-morphogenesis analysis; LCs are identified as a distinct broad cell lineage in the UMAP but are not the focus of deep functional analysis.",
+      "category": "atlas context",
+      "source_file": "Gopee et al. (2024), atlas paper main text and figures"
+    },
+    {
+      "finding": "In human prenatal skin, LCs go through morphological and phenotypic changes: they grow larger, more dendritic, gain expression of Langerin and CD1a, and form Birbeck granules in a stepwise manner. LCs are uniformly dendritic from 8 PCW.",
+      "category": "developmental maturation",
+      "source_file": "Botting & Haniffa (2020), Immunology 160:149-156"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "LC, Langerhans cells",
+      "source_file": "Atlas paper Fig. 1e legend",
+      "context": "Abbreviation definition in UMAP visualization legend"
+    }
+  ]
+}

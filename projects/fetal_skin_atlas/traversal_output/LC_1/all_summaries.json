@@ -1,0 +1,496 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "Langerhans cells are specialized DC that inhabit the basal epidermis and other stratified squamous epithelia.",
+      "They express the C-type lectin langerin and the invariant MHC class I molecule CD1a.",
+      "The close integration of LC within the epithelial layer is mediated by E-Cadherin, EpCAM (TROP1) TROP2, AXL and tight junction proteins claudin, occludin and ZO-1.",
+      "In common with myeloid cDC2 they express high levels of FceR1 and CD39 (ATPase).",
+      "the high expression of langerin, CD1a and EpCAM, together with lower expression of CD11c, CD11b and CD13 by LC, is usually sufficient to separate them clearly.",
+      "Although LC are distinct from cDC1 ontogenetically, 111 it is clear that they do have functional cross-presentation capacity 154,155 and high MHC class I-related gene expression in humans. 111 LC migrate to skin-draining lymph nodes, where they appear in the T-cell areas expressing langerin, CD1a and CD1c.",
+      "EpCAM and other epithelial markers are down-regulated, making it more difficult to distinguish LC from cDC2 by microscopy, although langerin is still expressed."
+    ],
+    "summary": "This snippet details that Langerhans cells inhabit the basal epidermis, express langerin, CD1a, EpCAM, and have low CD11c, CD11b, and CD13 expression. Their epithelial integration is mediated by E-Cadherin and other junction proteins. They have functional cross-presentation capacity, migrate to skin-draining lymph nodes, and downregulate some epithelial markers upon migration.",
+    "categories": [
+      "location",
+      "markers",
+      "function",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:4910432",
+    "source_title": "Human dendritic cell subsets: an update",
+    "source_authors": "M. Collin et al.",
+    "source_year": null,
+    "snippet": "Langerhans cells are specialized DC that inhabit the basal epidermis and other stratified squamous epithelia. They express the C-type lectin langerin and the invariant MHC class I molecule CD1a. The close integration of LC within the epithelial layer is mediated by E-Cadherin, EpCAM (TROP1) TROP2, AXL and tight junction proteins claudin, occludin and ZO-1. 151,152 In common with myeloid cDC2 they express high levels of FceR1 and CD39 (ATPase). Myeloid cDC2 spontaneously express a low level of langerin in many sites, but the high expression of langerin, CD1a and EpCAM, together with lower expression of CD11c, CD11b and CD13 by LC, is usually sufficient to separate them clearly. 22,131 Care must be taken not to include cDC1 and LC together as both show lower CD11c expression than cDC2. This has led to controversy about the relationship of LC with the cDC1 lineage. 111,153 Although LC are distinct from cDC1 ontogenetically, 111 it is clear that they do have functional cross-presentation capacity 154,155 and high MHC class I-related gene expression in humans. 111 LC migrate to skin-draining lymph nodes, where they appear in the T-cell areas expressing langerin, CD1a and CD1c. EpCAM and other epithelial markers are down-regulated, making it more difficult to distinguish LC from cDC2 by microscopy, although langerin is still expressed. Differences between inflamed and non-inflamed skin-draining nodes 156 and between skindraining nodes and tonsil 22 have been used to highlight the contribution of migratory LC to nodal DC populations."
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "Langerhans cells (LC) constitute approximately 3-8% of all the cells in the epidermis.",
+      "They play a role in the pathogenesis of various dermatoses and take part in skin neoplastic transformation.",
+      "The number and appearance of LC change depending on the type of dermatosis and also during the skin ageing processes [10][11][12][13].",
+      "The main roles attributed to LC in the skin immune system concern the immune surveillance.",
+      "They are the most abundant in the basal layer and the spinous layer of the epidermis.",
+      "The expression of CD1a molecules on the LC surface is a characteristic feature of this cell line.",
+      "Monoclonal Anti-Human HLA-DR antibodies and Anti-Human CD1a antibodies can be considered a good marker of Langerhans cells [15,16]."
+    ],
+    "summary": "LCs comprise 3-8% of epidermal cells, are most abundant in the basal and spinous epidermal layers, and are marked by CD1a and HLA-DR. Their numbers and appearance vary with diseases and skin aging. They play roles in immune surveillance and in pathogenesis and transformation related to skin disorders.",
+    "categories": [
+      "location",
+      "function",
+      "markers",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:34731702",
+    "source_title": "Changes of Langerhans cells during skin ageing",
+    "source_authors": "Barbara Zegarska et al.",
+    "source_year": null,
+    "snippet": "Skin ageing is a complex process depending on external, genetic and hormonal factors [1][2][3][4][5]. Increased susceptibility to skin infections and rising incidence of skin neoplasms observed in the elderly indicate that skin immunity decreases with age [6][7][8][9]. \n\nLangerhans cells (LC) constitute approximately 3-8% of all the cells in the epidermis. They play a role in the pathogenesis of various dermatoses and take part in skin neoplastic transformation. The number and appearance of LC change depending on the type of dermatosis and also during the skin ageing processes [10][11][12][13]. The main roles attributed to LC in the skin immune system concern the immune surveillance. They are the most abundant in the basal layer and the spinous layer of the epidermis. \n\nUnder physiological conditions the number of LC in the epidermis ranges from 450 to 1000 per mm 2 [8,10,11,14]. The expression of CD1a molecules on the LC surface is a characteristic feature of this cell line. Monoclonal Anti-Human HLA-DR antibodies and Anti-Human CD1a antibodies can be considered a good marker of Langerhans cells [15,16]. \n\nAim 1) Quantitative evaluation of LC/mm\u00b2 -CD1a + , HLA-DR + in different types of skin ageing. \n\n2) The assessment whether there is any difference in the appearance of LC depending on the type of skin ageing can be observed."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "Langerhans' cells are epidermal dendritic cells, derived from blood precursors.",
+      "Their main function is antigen presentation to T-cells.",
+      "Epidermal Langerhans' cells can express PGP9.5 if denervated.",
+      "As antigen-presenting cells (APC), LC exhibit an important capacity to initiate primary and secondary immune responses towards foreign proteins encountered at the epithelial interface (epidermis or mucosa) with the environment.",
+      "LC originate from bone marrow and circulate as precursors. In bone marrow and blood, these precursors express CD34 antigen (2)."
+    ],
+    "summary": "This snippet describes LCs as epidermal dendritic cells that present antigens to T-cells, can express neuronal proteins under certain conditions, and are marked by CD1a and Birbeck granules. They originate from bone marrow/blood precursors expressing CD34.",
+    "categories": [
+      "function",
+      "markers",
+      "development",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:32927742",
+    "source_title": "Expression of PGP9.5 on Langerhans' cells and their precursors.",
+    "source_authors": "H. Hamzeh et al.",
+    "source_year": null,
+    "snippet": "Langerhans' cells are epidermal dendritic cells, derived from blood precursors. Their main function is antigen presentation to T-cells. They are able to express neuronal proteins, such as neuron-speci\u00aec enolase or substance P-receptor. They are closely associated with nerve \u00aebres. PGP9.5 is the most speci\u00aec neuronal protein in the epidermis. Epidermal Langerhans' cells can express PGP9.5 if denervated. Using\u00afow cytometry, we found that cultured CD34z precursors did not express PGP9.5, whereas suspensions of fresh or cultured Langerhans' cells could express this neuronal protein. Precursors of Langerhans' cells are not able to express PGP9.5, suggesting that they are not mature enough or that the capacity to express PGP9.5 may be acquired only in the epidermis. The function of PGP9.5 on Langerhans' cells and mature dendritic cells remains unknown. PGP9.5 might be related to dendritic cell maturation or to the lack of contacts with nerve endings. Key words: dendritic cell; CD34; neuroimmunology; skin. Langerhans' cells (LC) (1) belong to the family of dendritic cells. As antigen-presenting cells (APC), LC exhibit an important capacity to initiate primary and secondary immune responses towards foreign proteins encountered at the epithelial interface (epidermis or mucosa) with the environment. They are recognized through the expression of CD1a antigen and speci\u00aec organelles: the Birbeck granules.\n\nLC originate from bone marrow and circulate as precursors. In bone marrow and blood, these precursors express CD34 antigen (2). Culture of precursors of LC obtained from cord blood with granulocyte/macrophage-colony stimulating factor (GM-CSF) and tumour necrosis factor a (TNFa) (3) is one of the most useful cultures for study of precursors of LC.\n\nLC are closely associated with nerve \u00aebres in the epidermis (4, 5) and share some properties with cells from"
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [
+      "Langerhans cells (LCs) are a group of professional antigen-presenting dendritic cells (DCs) that strategically populate the epidermis and actively survey the cornified layer for antigens via the extension and retraction of their dendrites (Merad et al., 2002).",
+      "LC migration to the skin-draining lymph nodes (sdLNs) is required not only for the initiation of adaptive immune responses (Igyarto et al., 2011) but also for the immune suppression during inflammation (Igyarto et al., 2009;Kaplan et al., 2005) and maintenance of steady-state tolerance to innocuous cutaneous antigens and commensal flora (Gomez de Aguero et al., 2012;van der Aar et al., 2013).",
+      "Such capacity of LCs to control the balance between immunogenicity and tolerance depends on multiple layers of gene regulation that permit dynamic changes in cellular functions including phagocytosis, migration, and cytokine production (Hacker et al., 2003;Sere et al., 2012)."
+    ],
+    "summary": "LCs are professional antigen-presenting dendritic cells in the epidermis that survey for antigens with their dendrites, migrate to skin-draining lymph nodes for immune activation and suppression, and are involved in tolerance maintenance. Their function involves dynamic regulation of phagocytosis, migration, and cytokine production.",
+    "categories": [
+      "location",
+      "function",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:54165498",
+    "source_title": "Ezh2 Controls Skin Tolerance through Distinct Mechanisms in Different Subsets of Skin Dendritic Cells",
+    "source_authors": "J. Loh et al.",
+    "source_year": null,
+    "snippet": "The skin is a complex organ that forms the primary barrier against the external environment. Keratinocytes, together with a diverse range of specialized immune cells, form a skin-associated lymphoid tissue that is critical for cutaneous immunosurveillance and host protection against repeated physical and pathogenic insults. Dysregulation of the skin immunity frequently results in various skin pathologies such as allergic contact dermatitis and psoriasis (Kaplan et al., 2005;Stratis et al., 2006). \n\nLangerhans cells (LCs) are a group of professional antigen-presenting dendritic cells (DCs) that strategically populate the epidermis and actively survey the cornified layer for antigens via the extension and retraction of their dendrites (Merad et al., 2002). Despite considerable progress in our understanding of LC biology with the development of various LC ablation and transgenic mouse models, their role in the regulation of skin immunity remains controversial. LC migration to the skin-draining lymph nodes (sdLNs) is required not only for the initiation of adaptive immune responses (Igyarto et al., 2011) but also for the immune suppression during inflammation (Igyarto et al., 2009;Kaplan et al., 2005) and maintenance of steady-state tolerance to innocuous cutaneous antigens and commensal flora (Gomez de Aguero et al., 2012;van der Aar et al., 2013). Yet at the same time they have been demonstrated to be redundant to dermal DCs (dDCs) during skin immunization in different animal models (Fukunaga et al., 2008;Kissenpfennig et al., 2005). Such capacity of LCs to control the balance between immunogenicity and tolerance depends on multiple layers of gene regulation that permit dynamic changes in cellular functions including phagocytosis, migration, and cytokine production (Hacker et al., 2003;Sere et al., 2012)."
+  },
+  {
+    "snippet_index": 8,
+    "quotes": [
+      "Langerhans cells, due to their location in the epidermis and their protruding dendrites, are a typical example of a DC sentinel, surveying the epidermis for foreign antigens.",
+      "In human, LC can be identified based on the expression of CD11c, CD32, CD45, Fc\u03b5R1, high levels of CD1a, CD207/langerin, CD324/E-cadherin, CD326/EpCAM, and HLA-DR, and specific expression of Birbeck granules (88,89).",
+      "In vitro human LC are able to take up antigens, process them efficiently and present them to T cells to induce activation, proliferation, and cytokine production (57).",
+      "They are able to initiate T H 1, T H 2, T H 17, and T H 22 responses (92).",
+      "LC migrate to skin-draining lymph nodes in steady-state (10,93), and LN-derived LC have been found to preferentially induce T H 2 polarization in vitro (10).",
+      "Additionally, LC are rather efficient at cross-presenting exogenous antigen to na\u00efve CD8 + T cells (57,94)."
+    ],
+    "summary": "LCs are epidermal dendritic cells with protruding dendrites, identified by a panel of markers (CD1a, CD207, E-cadherin, EpCAM, HLA-DR, Birbeck granules). They conduct antigen uptake, processing, and presentation to T cells, initiate multiple T helper responses, migrate to lymph nodes, and can efficiently cross-present to CD8+ T cells.",
+    "categories": [
+      "location",
+      "function",
+      "markers",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:1605303",
+    "source_title": "Human Dendritic Cell Functional Specialization in Steady-State and Inflammation",
+    "source_authors": "Arjan Boltjes et al.",
+    "source_year": null,
+    "snippet": "Langerhans cells, due to their location in the epidermis and their protruding dendrites, are a typical example of a DC sentinel, surveying the epidermis for foreign antigens. With their continuous migration to draining LN, they constitute the first immunological barrier of the skin. In human, LC can be identified based on the expression of CD11c, CD32, CD45, Fc\u03b5R1, high levels of CD1a, CD207/langerin, CD324/E-cadherin, CD326/EpCAM, and HLA-DR, and specific expression of Birbeck granules (88,89). In steady-state, LC are continuously replaced from a resident precursor pool (90), whereas in inflammation LC are repopulated by blood precursors (91). \n\nIn vitro human LC are able to take up antigens, process them efficiently and present them to T cells to induce activation, proliferation, and cytokine production (57). They are able to initiate T H 1, T H 2, T H 17, and T H 22 responses (92). LC migrate to skin-draining lymph nodes in steady-state (10,93), and LN-derived LC have been found to preferentially induce T H 2 polarization in vitro (10). Additionally, LC are rather efficient at cross-presenting exogenous antigen to na\u00efve CD8 + T cells (57,94)."
+  },
+  {
+    "snippet_index": 9,
+    "quotes": [
+      "Langerhans cells (LC) are a unique population of tissue-resident macrophages that form a network of cells across the epidermis of the skin, but which have the ability to migrate from the epidermis to draining lymph nodes (LN).",
+      "Their location at the skin barrier suggests a key role as immune sentinels.",
+      "Langerhans cells (LC) are a unique population of mononuclear phagocytes that are seeded from common macrophage precursors in the skin epidermis before birth (1) (and reviewed in this topic)."
+    ],
+    "summary": "This snippet explains that LCs are tissue-resident macrophages forming an epidermal network, acting as immune sentinels at the skin barrier. They are seeded before birth from macrophage precursors and are highly conserved across vertebrates.",
+    "categories": [
+      "location",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:617224",
+    "source_title": "Redefining the Role of Langerhans Cells As Immune Regulators within the Skin",
+    "source_authors": "Heather C. West et al.",
+    "source_year": null,
+    "snippet": "Langerhans cells (LC) are a unique population of tissue-resident macrophages that form a network of cells across the epidermis of the skin, but which have the ability to migrate from the epidermis to draining lymph nodes (LN). Their location at the skin barrier suggests a key role as immune sentinels. However, despite decades of research, the role of LC in skin immunity is unclear; ablation of LC results in neither fatal susceptibility to skin infection nor overt autoimmunity due to lack of immune regulation. Our understanding of immune processes has traditionally been centered on secondary lymphoid organs as sites of lymphocyte priming and differentiation, which is exemplified by LC, initially defined as a paradigm for tissue dendritic cells that migrate to draining LN on maturation. But, more recently, an awareness of the importance of the tissue environment in shaping effector immunity has emerged. In this mini-review, we discuss whether our lack of understanding of LC function stems from our lymph node-centric view of these cells, and question whether a focus on LC as immune regulators in situ in the skin may reveal clearer answers about their function in cutaneous immunology.\n\nKeywords: Langerhans cells, skin, epidermis, macrophages, migration inTRODUCTiOn Langerhans cells (LC) are a unique population of mononuclear phagocytes that are seeded from common macrophage precursors in the skin epidermis before birth (1) (and reviewed in this topic). They are highly conserved across vertebrate species (2,3) and this, with their location at the interface with the environment, suggests the strategic importance of LC as immune sentinels at the skin barrier surface.\n\nTraditionally, immunologists have focused on secondary lymphoid organs as the center of T cell immunity, assuming that instructions given during the priming of na\u00efve T cells by migratory and resident dendritic cells (DC) were sufficient for differentiation and effector function by T cells recruited to peripheral sites of tissue injury. However, the field is beginning to appreciate importance of the tissue environment in regulating effector and regulatory T cell function, and it is clear that antigen-presenting cell-T cell interactions play a key role in T cell survival and function outside l"
+  },
+  {
+    "snippet_index": 11,
+    "quotes": [
+      "Langerhans cells (LCs) are antigen-presenting cells (APCs) that play important roles as immune sentinels in skin",
+      "their precursors are first identified in the epidermis at 7-9 weeks estimated gestational age (EGA), based on the expression of CD45 (PTPRC -HGNC), HLA-DR, CD1c and ATPase",
+      "The distinguishing features of LCs in adult human epidermis, namely Birbeck granules, CD207/langerin, and CD1a are detectable only after 11 weeks EGA",
+      "not all HLA-DR-positive (HLA-DR + ) epidermal cells in embryonic human skin express the LC markers CD1a, CD1c or CD207/langerin"
+    ],
+    "summary": "This snippet describes Langerhans cells as antigen-presenting cells and immune sentinels in skin, detailing their development and the stepwise acquisition of key markers, including CD45, HLA-DR, CD1c, ATPase, Birbeck granules, CD207/langerin, and CD1a. It also notes that not all embryonic epidermal cells express the typical mature LC markers.",
+    "categories": [
+      "function",
+      "development",
+      "markers",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:616832",
+    "source_title": "Human embryonic epidermis contains a diverse Langerhans cell precursor pool",
+    "source_authors": "C. Schuster et al.",
+    "source_year": null,
+    "snippet": "Langerhans cells (LCs) are antigen-presenting cells (APCs) that play important roles as immune sentinels in skin (Romani et al., 2012a). During human skin development, their precursors are first identified in the epidermis at 7-9 weeks estimated gestational age (EGA), based on the expression of CD45 (PTPRC -HGNC), HLA-DR, CD1c and ATPase (Foster et al., 1986;Fujita et al., 1991;Schuster et al., 2009). The distinguishing features of LCs in adult human epidermis, namely Birbeck granules, CD207/langerin, and CD1a are detectable only after 11 weeks EGA (Foster et al., 1986;Schuster et al., 2009). Our observation that not all HLA-DR-positive (HLA-DR + ) epidermal cells in embryonic human skin express the LC markers CD1a, CD1c or CD207/langerin, prompted us to hypothesize that during ontogeny the LC phenotype is acquired in the epidermis (Schuster et al., 2009), a notion that was recently validated in the murine system (Ser\u00e9 et al., 2012). Owing to this stepwise development of the LC phenotype, it is conceivable that other molecular structures required for the initiation of immune responses including MHC-II molecules (e.g. HLA-DR) may also be acquired in the epidermis. Thus, by looking at early stages of development the original phenotype of LC precursors could be unravelled. Indeed, an earlier study identified dendritic or round epidermal cells in the first trimester that expressed the scavenger receptor CD36 (Fujita et al., 1991). Concomitant with HLA-DR + epidermal cells becoming more frequent, CD36 + cells in the human epidermis decrease in numbers and are -as in healthy adult skinnot detectable at the end of the first trimester. Their origin, precise phenotype and ultimate fate have yet to be elucidated."
+  },
+  {
+    "snippet_index": 12,
+    "quotes": [
+      "epidermal Langerhans cells (LCs)",
+      "LCs are distinct subset of DCs that reside in the suprabasal epidermis where they organize a lacelike network (30).",
+      "LCs are characterized by the expression of C-type lectin Langerin (CD207) and a major histocompatibility complex I-like molecule CD1a",
+      "LCs have a unique intracellular ultrastructure called Birbeck granule, visible by electron microscope, which is associated with the internalized Langerin (32,33).",
+      "LCs are believed to sustain their epidermal pool by self-renewal throughout the life (34).",
+      "LCs represent bidirectional functions in cutaneous immune responses in different contexts (i.e. immune-stimulatory or immune-regulatory)",
+      "LCs could induce IL-22 production by a subset of CD1a-autoreactive T cells through CD1a molecule to support the epithelial immunologic barrier of the skin"
+    ],
+    "summary": "This snippet describes LCs as a distinct dendritic cell subset residing in the suprabasal epidermis, characterized by a lacelike network, expression of Langerin (CD207) and CD1a, unique Birbeck granules, and self-renewing capacity. They function bidirectionally in cutaneous immunity and can elicit IL-22 production via CD1a.",
+    "categories": [
+      "location",
+      "function",
+      "markers",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:5030186",
+    "source_title": "The pathophysiological role of dendritic cell subsets in psoriasis",
+    "source_authors": "Tae-Gyun Kim et al.",
+    "source_year": null,
+    "snippet": "Heterogeneous DC populations are located in the quiescent human skin. Although much effort has been conducted to clarify the precise taxonomy for cutaneous DCs, the current classification for DC subsets in the skin is still somewhat complicated, due to a great number of surface antigens to be used for identifying DCs and functional modification during the tissue preparation for ex vivo experiments. Nevertheless, recent elegant studies have established the discrete resident subsets of DCs in the steady-state human skin: 1) epidermal Langerhans cells (LCs), 2) dermal myeloid DCs (mDCs), and 3) plasmacytoid DCs (pDCs) (28,29). LCs are distinct subset of DCs that reside in the suprabasal epidermis where they organize a lacelike network (30). LCs are characterized by the expression of C-type lectin Langerin (CD207) and a major histocompatibility complex I-like molecule CD1a, which could act as molecular receptors that recognize and endocytose carbohydrate structures of the pathogens and microbial lipids, respectively (31). LCs have a unique intracellular ultrastructure called Birbeck granule, visible by electron microscope, which is associated with the internalized Langerin (32,33). The homeostasis of LCs differ from that of other DC subsets, in that LCs are believed to sustain their epidermal pool by self-renewal throughout the life (34). The role of LCs in cutaneous immunity has not been conclusive so far (30). Currently, we have understood that LCs represent bidirectional functions in cutaneous immune responses in different contexts (i.e. immune-stimulatory or immune-regulatory) that have still been a matter of controversy (35). Recently it has been shown that LCs could induce IL-22 production by a subset of CD1a-autoreactive T cells through CD1a molecule to support the epithelial immunologic barrier of the skin (36,37)."
+  },
+  {
+    "snippet_index": 13,
+    "quotes": [
+      "Langerhans cells (LC) are a unique population of tissue-resident macrophages that form a network of cells across the epidermis of the skin, but which have the ability to migrate from the epidermis to draining lymph nodes (LN).",
+      "Their location at the skin barrier suggests a key role as immune sentinels.",
+      "LC, initially defined as a paradigm for tissue dendritic cells that migrate to draining LN on maturation."
+    ],
+    "summary": "LCs are tissue-resident macrophages forming a network in the epidermis, capable of migrating to lymph nodes. Their position at the skin barrier implies a sentinel immune role, and they were originally considered classic dendritic cells due to their migratory antigen-presentation behavior.",
+    "categories": [
+      "function",
+      "location",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:617224",
+    "source_title": "Redefining the Role of Langerhans Cells As Immune Regulators within the Skin",
+    "source_authors": "Heather C. West et al.",
+    "source_year": null,
+    "snippet": "Langerhans cells (LC) are a unique population of tissue-resident macrophages that form a network of cells across the epidermis of the skin, but which have the ability to migrate from the epidermis to draining lymph nodes (LN). Their location at the skin barrier suggests a key role as immune sentinels. However, despite decades of research, the role of LC in skin immunity is unclear; ablation of LC results in neither fatal susceptibility to skin infection nor overt autoimmunity due to lack of immune regulation. Our understanding of immune processes has traditionally been centered on secondary lymphoid organs as sites of lymphocyte priming and differentiation, which is exemplified by LC, initially defined as a paradigm for tissue dendritic cells that migrate to draining LN on maturation. But, more recently, an awareness of the importance of the tissue environment in shaping effector immunity has emerged. In this mini-review, we discuss whether our lack of understanding of LC function stems from our lymph node-centric view of these cells, and question whether a focus on LC as immune regulators in situ in the skin may reveal clearer answers about their function in cutaneous immunology."
+  },
+  {
+    "snippet_index": 14,
+    "quotes": [
+      "Langerhans cells (LC), dermal dendritic cells, epidermotropic T-lymphocytes together with skin draining lymph nodes belong to an integrated tissue system mediating skin immune protection and forming so called skin-associated lymphoid tissue (SALT)",
+      "LC stimulate proliferation of important T-helper lymphocytes by antigen presentation on their surface, thus inducing also cytotoxic T-lymphocytes to moderate the allogeneic reaction.",
+      "LC produce interleukin 1 and other cytokines, moreover, they are capable of phagocytosis and contain many different enzymes (Goodell et al. 1985).",
+      "LC stem cells originate from pluripotent hematopoietic progenitor cells CD34+ in the bone marrow.",
+      "As immature cells, LC migrate to non-lymphatic tissues, such as the skin, where they finish their maturation by expression of specific molecules (ATPase, CD45, MHC II, langerin/CD207) and formation of the Birbeck granules",
+      "The Birbeck granula, characteristic structures in LC, were described as para-crystallic, membrane-bound, disc-shaped bodies, and are located particularly between the cell membrane and the Golgi apparatus (Holibka 1998)."
+    ],
+    "summary": "This snippet indicates LCs are part of the skin immune system (SALT), able to present antigen and stimulate both T-helper and cytotoxic T cells, produce cytokines like interleukin 1, and are phagocytic. They originate from CD34+ progenitors, mature in the skin, and are characterized by expression of markers and Birbeck granules\u2014distinct para-crystalline, disc-shaped organelles.",
+    "categories": [
+      "function",
+      "development",
+      "markers",
+      "morphology",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:53452728",
+    "source_title": "Langerhans Cells in Feline Foetal Epidermis - Immunohistochemical Study of Spatial Distribution",
+    "source_authors": "A. Goro\u0161ov\u00e1 et al.",
+    "source_year": null,
+    "snippet": "In general, skin represents an important anatomical and physiological barrier but also a communication means between organisms and their external environment. Moreover, skin is an integral part of the immune system. Different cell types present in the skin such as Langerhans cells (LC), dermal dendritic cells, epidermotropic T-lymphocytes together with skin draining lymph nodes belong to an integrated tissue system mediating skin immune protection and forming so called skin-associated lymphoid tissue (SALT) (Streilein et al. 1999). \n\nBoth innate and acquired immunity operate in close relationship open exposure of the skin to various antigens. LC stimulate proliferation of important T-helper lymphocytes by antigen presentation on their surface, thus inducing also cytotoxic T-lymphocytes to moderate the allogeneic reaction. LC produce interleukin 1 and other cytokines, moreover, they are capable of phagocytosis and contain many different enzymes (Goodell et al. 1985). \n\nLC stem cells originate from pluripotent hematopoietic progenitor cells CD34+ in the bone marrow. Recent results identified monocytes with a high expression of Gr-1(Ly-6c/G) marker as the direct precursors for LC in vivo and showed the importance of the colony-stimulating factor 1 (CSF-1) in this process (Ginhoux et al. 2006). As immature cells, LC migrate to non-lymphatic tissues, such as the skin, where they finish their maturation by expression of specific molecules (ATPase, CD45, MHC II, langerin/CD207) and formation of the Birbeck granules (Elbe et al. 1989;Foster and Holbrook 1989;Koch et al. 2006). The Birbeck granula, characteristic structures in LC, were described as para-crystallic, membrane-bound, disc-shaped bodies, and are located particularly between the cell membrane and the Golgi apparatus (Holibka 1998). \n\nLangerhans cells in the cat skin were first described by Tsagarakis et al. (1994)."
+  },
+  {
+    "snippet_index": 15,
+    "quotes": [
+      "LC precursors was recruited in the epidermis of mice around embryonic day 18 and acquired a dendritic morphology, major histocompatibility complex II, CD11c, and langerin expression immediately after birth.",
+      "Langerin + cells then undergo a massive burst of proliferation between postnatal day 2 (P2) and P7, expanding their numbers by 10-20-fold.",
+      "After the first week of life, we observed low-level proliferation of langerin + cells within the epidermis.",
+      "Therefore, proliferation of differentiated resident cells represents an alternative pathway for development in the newborn, homeostasis, and expansion in adults of selected myeloid cell populations such as LCs."
+    ],
+    "summary": "This snippet covers LC development in mice, noting epidermal recruitment at E18, rapid acquisition of dendritic morphology and key markers (MHC II, CD11c, langerin), a postnatal proliferation burst, followed by lower-level proliferation for maintenance. Resident cell self-renewal governs LC homeostasis and adult expansion.",
+    "categories": [
+      "development",
+      "morphology",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:81463",
+    "source_title": "Langerhans cell (LC) proliferation mediates neonatal development, homeostasis, and inflammation-associated expansion of the epidermal LC network",
+    "source_authors": "Laurent Chorro et al.",
+    "source_year": null,
+    "snippet": "of the epidermis, although of myeloid origin, were shown to renew in tissues independently from the bone marrow, suggesting the existence of a dermal or epidermal progenitor. We investigated the mechanisms involved in LC development and homeostasis. We observed that a single wave of LC precursors was recruited in the epidermis of mice around embryonic day 18 and acquired a dendritic morphology, major histocompatibility complex II, CD11c, and langerin expression immediately after birth. Langerin + cells then undergo a massive burst of proliferation between postnatal day 2 (P2) and P7, expanding their numbers by 10-20-fold. After the first week of life, we observed low-level proliferation of langerin + cells within the epidermis. However, in a mouse model of atopic dermatitis (AD), a keratinocyte signal triggered increased epidermal LC proliferation. Similar findings were observed in epidermis from human patients with AD. Therefore, proliferation of differentiated resident cells represents an alternative pathway for development in the newborn, homeostasis, and expansion in adults of selected myeloid cell populations such as LCs. This mechanism may be relevant in locations where leukocyte trafficking is limited. Langerin + MHCII + cells proliferate massively and migrate to establish the LC network between postnatal day 4 (P4) and P7 From E18 to P2, the number of CD45 + CX 3 CR1 + precursors remains low in the epidermis, at 50-100 cells/mm 2 (Fig. 3 A). However, between days 2 and 7, the number of newly differentiated LCs rapidly increased to reach 1,000/ mm 2 (Fig. 3 A), whereas the size of individual LCs dramatically decreased, as estimated using intravital microscopy in or in the hair follicle (Gilliam et al., 1998), and cells with features of proliferating LC precursors have been found in fetal and newborn skin (Elbe et al., 1989;Chang-Rodriguez et al., 2005). On the other hand, monocytes can give rise to LC-like cells in vitro (Geissmann et al., 1998;Mohamadzadeh et"
+  },
+  {
+    "snippet_index": 16,
+    "quotes": [
+      "Epidermal LCs are known to express certain phenotypic markers in addition to Langerin.Two important markers of epidermal LCs are the adhesion molecule Ep-CAM (gp40) ( 18 ) and the integrin CD11b (Mac-1) ( 19 ).",
+      "Within the epidermis, all LCs are high for both Ep-CAM and CD11b ( Fig. 3 A )."
+    ],
+    "summary": "This snippet explains that epidermal LCs express Langerin, Ep-CAM, and CD11b as key phenotypic markers and are consistently high for both Ep-CAM and CD11b within the epidermis, distinguishing them from dermal Langerin+ dendritic cells.",
+    "categories": [
+      "markers",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:14639802",
+    "source_title": "Identification of a novel population of Langerin+ dendritic cells",
+    "source_authors": "Laura S. Bursch et al.",
+    "source_year": null,
+    "snippet": "Epidermal LCs are known to express certain phenotypic markers in addition to Langerin.Two important markers of epidermal LCs are the adhesion molecule Ep-CAM (gp40) ( 18 ) and the integrin CD11b (Mac-1) ( 19 ).Analysis of EGFP + cells from the dermis of Lang-EGFP.SJL > Lang EGFP chimeras revealed diff erences in expression of these epidermal LC markers.Within the epidermis, all LCs are high for both Ep-CAM and CD11b ( Fig. 3 A ). Furthermore, in the dermis and skin draining LNs, host-derived LCs remained high for both markers.In contrast, donor-derived LCs were predominantly low for both Ep-CAM and CD11b ( Fig. 3 A ).In addition, in Lang-EGFP x hLang-DTA mice that lack epidermal LCs, none of the EGFP + cells present in the dermis and skin draining LNs were positive for Ep-CAM and CD11b ( Fig. 3 B ). Nonchimeric Lang-EGFP mice also exhibit the same two populations (unpublished data).This suggests that Ep-CAM and CD11b can be used to distinguish stable subpopulations of epidermal LCs and dermal Langerin + DCs in the steady state.\n\nTo provide a comprehensive analysis of phenotypic markers on Langerin + DCs, we analyzed EGFP hi cells from epidermis, dermis, and skin draining LNs ( Fig. 4 ).Importantly, dermal Langerin + DCs (EGFP + , CD11b low ) expressed high levels of the same tissue-specifi c manner as endogenous mouse Langerin, it conveniently provides for selective elimination of epidermal LCs.Thus, in the absence of migratory epidermal LCs, a population of LCs can be found in both dermis and skin draining LNs.This provides further evidence that the dermal Langerin + DC population is distinct from migrating epidermal LCs."
+  },
+  {
+    "snippet_index": 17,
+    "quotes": [
+      "Langerhans cells (LCs) contact T cells in the epidermis of the elderly.",
+      "LCs with high HLA-II, CD86, and PD-L2 expression directly contacted PD-1+ tissue-resident memory T cells and CTLA-4+ regulatory T cells in the epidermis, indicating an axis of peripheral tolerance in a steady state.",
+      "Environmental insults, UVB radiation, and hapten downregulated HLA-II and CD86 on LCs in the epidermis, suggesting that disruption of LC\u2013T cell tolerogenic axis contributes to skin inflammation.",
+      "our findings indicate that LCs may contribute to T cell tolerance in the epidermis."
+    ],
+    "summary": "This snippet indicates that LCs interact with T cells in the epidermis, express high HLA-II, CD86, and PD-L2, and suggest LCs are involved in establishing T cell tolerance. Environmental insults can reduce marker expression, potentially leading to skin inflammation.",
+    "categories": [
+      "function",
+      "markers",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:273918933",
+    "source_title": "Langerhans Cells Directly Interact with Resident T Cells in the Human Epidermis",
+    "source_authors": "Tomonori Oka et al.",
+    "source_year": null,
+    "snippet": "Adult human skin contains nearly twice as many T cells as the peripheral blood, which include tissue-resident memory T cells. However, the precise mechanisms maintaining tissue-resident memory T cells in the healthy skin remain unclear. Using normal human skin samples, we find that Langerhans cells (LCs) contact T cells in the epidermis of the elderly. LCs with high HLA-II, CD86, and PD-L2 expression directly contacted PD-1+ tissue-resident memory T cells and CTLA-4+ regulatory T cells in the epidermis, indicating an axis of peripheral tolerance in a steady state. Environmental insults, UVB radiation, and hapten downregulated HLA-II and CD86 on LCs in the epidermis, suggesting that disruption of LC\u2013T cell tolerogenic axis contributes to skin inflammation. Interestingly, immune checkpoint blockade therapy was associated with decreased epidermal LC\u2013T cell contact in the normal skin of patients with cancer affected by cutaneous immune-related adverse events. Collectively, our findings indicate that LCs may contribute to T cell tolerance in the epidermis."
+  },
+  {
+    "snippet_index": 18,
+    "quotes": [
+      "LCs are well-known antigen presenting cells.",
+      "LCs are characterized by their dendritic morphology as well as the expression of Langerin (CD207), which is a membranebound C-type lectin receptor that is involved in antigen capture and the formation of Birbeck granules (5).",
+      "LCs first appear in the epidermis from a first wave of yolk sac-derived myeloid progenitor cells during early embryogenesis.",
+      "Later in embryogenesis, a second wave of fetal liver monocytes seed into the epidermis and burst in proliferation to become the LC network observed in adult skin (6,7).",
+      "LCs are able to self-renew in the adult skin and maintain their epidermal residency through anchoring to neighboring keratinocytes via cell adhesion molecules, such as EpCAM and E-cadherin (8,9)."
+    ],
+    "summary": "This snippet outlines that LCs are antigen presenting cells with dendritic morphology, express Langerin (CD207), and form Birbeck granules. They originate from yolk sac myeloid progenitors and fetal liver monocytes, can self-renew, and anchor in the epidermis via EpCAM and E-cadherin.",
+    "categories": [
+      "function",
+      "development",
+      "markers",
+      "morphology",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:266872456",
+    "source_title": "Immune-Epithelial Cell Interactions during Epidermal Regeneration, Repair, and Inflammatory Diseases",
+    "source_authors": "A. Schmitter-S\u00e1nchez et al.",
+    "source_year": null,
+    "snippet": "The epidermal landscape created by keratinocytes is composed of vast areas of interfollicular epidermis with appendage structures such as hair follicles, sebaceous glands, and sweat glands. In addition to the keratinocytes, there are four co-existing tissue-resident immune cells in the interfollicular epidermis: Langerhans cells (LCs), dendritic epidermal T cells (DETCs), CD8 \uff0b tissue-resident memory T (TRM) cells, and innate lymphoid cells (ILCs) (3,4). These immune cells represent the innate and adaptive arms of the epidermal immune response. \n\nLCs are well-known antigen presenting cells. LCs are characterized by their dendritic morphology as well as the expression of Langerin (CD207), which is a membranebound C-type lectin receptor that is involved in antigen capture and the formation of Birbeck granules (5). LCs first appear in the epidermis from a first wave of yolk sac-derived myeloid progenitor cells during early embryogenesis. Later in embryogenesis, a second wave of fetal liver monocytes seed into the epidermis and burst in proliferation to become the LC network observed in adult skin (6,7). LCs are able to self-renew in the adult skin and maintain their epidermal residency through anchoring to neighboring keratinocytes via cell adhesion molecules, such as EpCAM and E-cadherin (8,9). \n\nDETCs are epidermis-resident T cells bearing \u03b3 \u03b4 T-cell receptors (TCRs). It is noteworthy that DETCs are exclusive to the murine skin, whereas DETCs do not exist in humans (10). During development, yolk-sac derived lymphoid progenitors first populate the thymus, where they express the invariant V\u03b3 5V\u03b4 1 TCRs to become DETC progenitor cells (11). Later in embryogenesis, DETC progenitors downregulate CCR6 and upregulate S1PR1 to depart the thymus and migrate to the fetal skin (12,13)."
+  },
+  {
+    "snippet_index": 19,
+    "quotes": [
+      "Langerhans cells (LCs) has drastically changed based on novel findings regarding the developmental origin and biological functions of these epidermis-specific resident immune cells.",
+      "It has become clear that LCs not only exert pivotal roles in immune surveillance and homeostasis but also impact on pathology by either inducing tolerance or mediating inflammation.",
+      "Their unique capabilities to self-renew within the epidermis, while also being able to migrate to lymph nodes in order to present antigen, place LCs in a key position to sample the local environment and decide on the appropriate cutaneous immune response.",
+      "LCs were subsequently classified as DCs (2) that are localized in the outermost layer of the skin, namely the epidermis, where they reside in close association with keratinocytes, the main epidermal cell type.",
+      "LCs are also present in other stratified epithelia, such as the mucosal oral and vaginal epithelium.",
+      "These cells were identified in the epidermis and reminiscent of neurons due to their dendritic morphology."
+    ],
+    "summary": "This snippet summarizes the changing understanding of LCs as epidermis-resident immune cells, essential for immune surveillance, tolerance, and inflammation. LCs self-renew in the epidermis, can migrate to lymph nodes, and display dendritic morphology. They are in close contact with keratinocytes and also exist in stratified mucosal epithelia.",
+    "categories": [
+      "function",
+      "development",
+      "location",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:3379649",
+    "source_title": "Langerhans Cells: Sensing the Environment in Health and Disease",
+    "source_authors": "J. Deckers et al.",
+    "source_year": null,
+    "snippet": "In the last few decades, our understanding of Langerhans cells (LCs) has drastically changed based on novel findings regarding the developmental origin and biological functions of these epidermis-specific resident immune cells. It has become clear that LCs not only exert pivotal roles in immune surveillance and homeostasis but also impact on pathology by either inducing tolerance or mediating inflammation. Their unique capabilities to self-renew within the epidermis, while also being able to migrate to lymph nodes in order to present antigen, place LCs in a key position to sample the local environment and decide on the appropriate cutaneous immune response. Exciting new data distinguishing LCs from Langerin + dermal dendritic cells (DCs) on a functional and ontogenic level reveal crucial roles for LCs in trauma and various skin pathologies, which will be thoroughly discussed here. However, despite rapid progress in the field, the exact role of LCs during immune responses has not been completely elucidated. This review focuses on what mouse models that have been developed in order to enable the study of murine LCs and other Langerin-expressing DCs have taught us about LC development and function.\n\nKeywords: Langerhans cells, skin immunology, tumor microenvironment, atopic march, mouse models iNTRODUCTiON Paul Langerhans first described Langerhans cells (LCs) in 1868. These cells were identified in the epidermis and reminiscent of neurons due to their dendritic morphology. Over a century later, Ralph Steinman discovered antigen presentation by dendritic cells (DCs) (1). LCs were subsequently classified as DCs (2) that are localized in the outermost layer of the skin, namely the epidermis, where they reside in close association with keratinocytes, the main epidermal cell type. LCs are also present in other stratified epithelia, such as the mucosal oral and vaginal epithelium. Recent studies show that these mucosal LCs functionally act as genuine LCs, although they originate from different precursors (3). In this review, we uniquely focus on LCs present in the skin epithelium. Keratinocytes undergo a specialized form of cell death, resulting in the formation of the cornified layers"
+  },
+  {
+    "snippet_index": 20,
+    "quotes": [
+      "Langerhans cells (LC) are the resident DC population in skin epidermis where they form a contiguous network to detect any invading pathogen or antigen (Romani et al., 2003).",
+      "Due to their position in the epidermis, LC have classically been thought to play a pivotal role in the initiation and control of skin (auto-)immunity and allergy (Schuler and Steinman, 1985;Cumberbatch et al., 2003;Romani et al., 2003).",
+      "LC do not initiate protective T cell responses to certain viral antigens (Allan et al., 2003;Zhao et al., 2003) and Leishmania major parasites (Ritter et al., 2004). Instead, protection from these infections depends on LN antigen presentation and T cell activation by dDC.",
+      "skin-draining LN contain LC immigrants as well as interstitial DC derived from the dermis (Anjuere et al., 1999;Ruedl et al., 2000;Henri et al., 2001).",
+      "dDC appear in the LN as early as 24 h after skin painting, whereas LC require 3-4 d to migrate from the epidermis (Kamath et al., 2002)."
+    ],
+    "summary": "This snippet describes LC as resident dendritic cells of the epidermis with suspected key roles in initiating and controlling immunity and allergy, but recent evidence questions their necessity for certain protective T cell responses. It also details their migratory kinetics and presence in lymph nodes.",
+    "categories": [
+      "location",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:3354185",
+    "source_title": "Inducible ablation of mouse Langerhans cells diminishes but fails to abrogate contact hypersensitivity",
+    "source_authors": "Clare L. Bennett et al.",
+    "source_year": null,
+    "snippet": "Dendritic cells (DC) are professional antigen presenting cells specialized to induce and regulate T cell immunity and tolerance (Banchereau and Steinman, 1998;Steinman and Nussenzweig, 2002). Initiation of immune responses and maintenance of self-tolerance are believed to rely on the mobilization of sentinel DC to regional lymph nodes (LNs) where they interact with naive antigen-specific T cells. Langerhans cells (LC) are the resident DC population in skin epidermis where they form a contiguous network to detect any invading pathogen or antigen (Romani et al., 2003). Underlying the epidermis, the skin contains a second DC population, dermal DC (dDC), which are phenotypically, and may be functionally, distinct from LC. Due to their position in the epidermis, LC have classically been thought to play a pivotal role in the initiation and control of skin (auto-)immunity and allergy (Schuler and Steinman, 1985;Cumberbatch et al., 2003;Romani et al., 2003). However, this notion has recently been challenged by findings that LC do not initiate protective T cell responses to certain viral antigens (Allan et al., 2003;Zhao et al., 2003) and Leishmania major parasites (Ritter et al., 2004). Instead, protection from these infections depends on LN antigen presentation and T cell activation by dDC. The functional role of LC in T cell priming thus remains unclear. Furthermore, the relative importance of LC compared with dDC in sensitization to chemical allergens and elicitation of cutaneous contact hypersensitivity (CHS) responses is still elusive.\n\nBoth LC and dDC constitutively migrate from the skin at a low rate (Hemmi et al., 2001) and skin-draining LN contain LC immigrants as well as interstitial DC derived from the dermis (Anjuere et al., 1999;Ruedl et al., 2000;Henri et al., 2001). This homeostatic turnover increases under inflammatory conditions and dDC appear in the LN as early as 24 h after skin painting, whereas LC require 3-4 d to migrate from the epidermis (Kamath et al., 2002)."
+  },
+  {
+    "snippet_index": 21,
+    "quotes": [
+      "Langerhans cells (LCs) were first classified as cellular members of the nervous system, due to their morphological similarity with neurons. It was not until the 1980s when it became clear that this peculiar epidermal cell fraction with its potent antigen presentation activity belonged to the dendritic cell (DC) family (Romani and Schuler, 1989;Schuler and Steinman, 1985).",
+      "they are generally considered as epidermal tissue-resident macrophages, mainly due to their dependence on CSF1, their embryonic origin and local self-maintenance (Wynn et al., 2013), although a conventional 'macrophage signature' (e.g. CD16/32, CD64, and MerTK expression) is missing (Gautier et al., 2012).",
+      "Antigen presentation can, however, occur in skin-draining LNs independently of LCs (Henri et al., 2010)."
+    ],
+    "summary": "LCs have a neuronal-like morphology, are epidermal tissue-resident immune cells originating embryonically, and are potent antigen-presenters that migrate to lymph nodes to prime T cells, though their classical 'macrophage signature' is incomplete.",
+    "categories": [
+      "morphology",
+      "function",
+      "development",
+      "markers",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:232367409",
+    "source_title": "Fate mapping analysis reveals a novel murine dermal migratory Langerhans-like cell population",
+    "source_authors": "Jianpeng Sheng et al.",
+    "source_year": null,
+    "snippet": "In 1868, Paul Langerhans described a novel dendritic-shaped, non-pigmentary cell population in the epidermis (Langerhans, 1868). These so-called Langerhans cells (LCs) were first classified as cellular members of the nervous system, due to their morphological similarity with neurons. It was not until the 1980s when it became clear that this peculiar epidermal cell fraction with its potent antigen presentation activity belonged to the dendritic cell (DC) family (Romani and Schuler, 1989;Schuler and Steinman, 1985). Despite the fact that LCs share many features with DCs, they are generally considered as epidermal tissue-resident macrophages, mainly due to their dependence on CSF1, their embryonic origin and local self-maintenance (Wynn et al., 2013), although a conventional 'macrophage signature' (e.g. CD16/32, CD64, and MerTK expression) is missing (Gautier et al., 2012). \n\nLCs can sense invading pathogens and initiate an intrinsic maturation process that drives their migration out of the epidermis (Romani et al., 2001). As such, LCs have been regarded as a prototype antigen-presenting cell (APC) (Nagao et al., 2009) that can, after antigen capture, migrate to the draining lymph nodes (LNs) to initiate an immune response by priming na\u0131 \u00a8ve LN-resident T-cells (Romani et al., 2003). Antigen presentation can, however, occur in skin-draining LNs independently of LCs (Henri et al., 2010). In fact, the skin hosts several other distinct dermal DC subpopulations (Henri et al., 2010;Kissenpfennig et al., 2005), the presence of which complicates the analysis of the cellular contribution to skin immune responses, such as contact hypersensitivity (CHS). \n\nConsequently, the paradigm of 'who is doing what' (i.e."
+  },
+  {
+    "snippet_index": 22,
+    "quotes": [
+      "Langerhans cells (LCs) are key APCs in the epidermis that spread dendritic processes to probe for and recognize invading antigens [33].",
+      "LCs develop from yolk sac-derived progenitors and acquire a dendritic phenotype and morphology immediately following birth, then in situ proliferation and keratinocyte-derived interleukin (IL)-34 help maintain their population [27,34,35].",
+      "Adaptive immune responses initiated by LCs are diverse. Upon maturation, LCs migrate to regional lymph nodes to induce T helper 2 (T H 2) polarization of na\u00efve CD4 + T cells via thymic stromal lymphopoietin (TSLP) signaling, as well as T helper 1 (T H 1) polarization to IFN\u03b3-producing CD4 + T cells [36,37]. LCs are also involved in T follicular helper (Tf H ) differentiation and germinal center (GC) B cell responses [38]. A major role for LCs in cellular immunity is differentiation of na\u00efve CD8 + T cells into potent cytotoxic T lymphocytes (CTLs), but they have contrasting tolerogenic functions in the skin [37,39]. LCs suppress contact hypersensitivity by interaction with cognate CD4 + T cells in the context of IL-10 [40]."
+    ],
+    "summary": "LCs serve as epidermal antigen-presenting cells with dendritic morphology and diverse immune functions, including induction of Th1/Th2 responses, tolerance, and maintenance of their population by IL-34.",
+    "categories": [
+      "location",
+      "function",
+      "morphology",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:231742766",
+    "source_title": "Immunogenicity Challenges Associated with Subcutaneous Delivery of Therapeutic Proteins",
+    "source_authors": "Nicole L Jarvi et al.",
+    "source_year": null,
+    "snippet": "Human skin is composed of three main layers: the epidermis, dermis, and hypodermis or SC fat. In the epidermis, keratinocytes form a layer of stratified epithelium with tight junctions to provide water-impermeable barrier protection, and cytokine secretion by keratinocytes promotes inflammation during infection or injury [27,30,31]. Other featured cells are melanocytes producing melanin pigment, Merkel cells communicating with neurons, memory T cells, and infiltrating innate immune cells [32]. Langerhans cells (LCs) are key APCs in the epidermis that spread dendritic processes to probe for and recognize invading antigens [33]. LCs develop from yolk sac-derived progenitors and acquire a dendritic phenotype and morphology immediately following birth, then in situ proliferation and keratinocyte-derived interleukin (IL)-34 help maintain their population [27,34,35]. Tight cellular connections render epidermal stromal and immune cells primarily fixed in place, until LC motility upon maturation is prompted by downregulation of E-cadherin interactions with keratinocytes [27,30]. Adaptive immune responses initiated by LCs are diverse. Upon maturation, LCs migrate to regional lymph nodes to induce T helper 2 (T H 2) polarization of na\u00efve CD4 + T cells via thymic stromal lymphopoietin (TSLP) signaling, as well as T helper 1 (T H 1) polarization to IFN\u03b3-producing CD4 + T cells [36,37]. LCs are also involved in T follicular helper (Tf H ) differentiation and germinal center (GC) B cell responses [38]. A major role for LCs in cellular immunity is differentiation of na\u00efve CD8 + T cells into potent cytotoxic T lymphocytes (CTLs), but they have contrasting tolerogenic functions in the skin [37,39]. LCs suppress contact hypersensitivity by interaction with cognate CD4 + T cells in the context of IL-10 [40]. They induce"
+  },
+  {
+    "snippet_index": 23,
+    "quotes": [
+      "Langerhans cells in the epidermis are morphologically distinct, F4/80 + specialized macrophage-like cells (23) that originate from yolk sac precursors (100, 101) and persist through adult life in close contact with clusters of keratinocytes, reciprocally exchanging survival and trophic factors.",
+      "Birbeck granule formation is characteristic of a specialized antigen-processing compartment and Langerin (CD207) is a useful marker for Langerhans cell histiocytosis (102)."
+    ],
+    "summary": "LCs are described as morphologically distinct, F4/80 positive, macrophage-like epidermal cells derived from yolk sac precursors, marked by the presence of Birbeck granules and Langerin (CD207).",
+    "categories": [
+      "morphology",
+      "markers",
+      "development",
+      "location"
+    ],
+    "source_corpus_id": "CorpusId:14006202",
+    "source_title": "Macrophage heterogeneity in tissues: phenotypic diversity and functions",
+    "source_authors": "S. Gordon et al.",
+    "source_year": null,
+    "snippet": "Malissen et al. (99) have recently defined heterogeneity in various macrophage and DC subpopulations in skin. Langerhans cells in the epidermis are morphologically distinct, F4/80 + specialized macrophage-like cells (23) that originate from yolk sac precursors (100, 101) and persist through adult life in close contact with clusters of keratinocytes, reciprocally exchanging survival and trophic factors. They can be induced by antigen stimulation and TNF to migrate to draining lymph nodes where they are able to activate or inhibit lymphocytes. Birbeck granule formation is characteristic of a specialized antigen-processing compartment and Langerin (CD207) is a useful marker for Langerhans cell histiocytosis (102). \n\nMutations in the human keratinocyte-expressed filaggrin gene are relatively common and associated with an increased frequency of Th2-dependent allergic conditions such as atopic dermatitis (103). The role of Langerhans cells in initiating allergic responses in this condition merits further investigation. \n\nDermal F4/80 + macrophages are associated with adnexal structures such as hair follicles and resemble other macrophages in connective tissue."
+  },
+  {
+    "snippet_index": 24,
+    "quotes": [
+      "Langerhans cells (LCs) are members of this wider family of DCs. LCs reside in the epidermis, where they serve as sentinels of the immune system, their responsibilities being to sample the external environment for changes and challenges and to deliver information (antigen) to T cells within skin-draining lymph nodes.",
+      "The ability of LCs to migrate from epidermis to regional lymph nodes is thus of pivotal importance to the induction of cutaneous immune responses.",
+      "the stimulation by chemical allergens of LC migration away from the epidermis is dependent on the local availability of IL-1\u03b2 and TNF-\u03b1.",
+      "only a proportion of human LCs is able to mobilize in response to cytokine or allergen stimulus is believed to refl ect the fact that functional heterogeneity exists amongst epidermal LCs."
+    ],
+    "summary": "LCs act as epidermal immune sentinels with the capacity to migrate to lymph nodes and initiate immune responses, with their migration influenced by cutaneous cytokines such as IL-1\u03b2 and TNF-\u03b1 and evidence of functional heterogeneity.",
+    "categories": [
+      "function",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:794901",
+    "source_title": "Impaired Langerhans cell migration in psoriasis",
+    "source_authors": "M. Cumberbatch et al.",
+    "source_year": null,
+    "snippet": "The failure of LC migration from uninvolved skin was not attributable to altered expression of receptors for IL-1 or TNF- that are required for mobilization, nor was there an association with induced cutaneous cytokine expression. Although a role for altered dynamics of LC migration/turnover has not been formally excluded, these data reveal a very consistent decrement of LC function in psoriasis that may play a decisive role in disease pathogenesis. \n\nDCs are a unique population of leukocytes that regulate immune responses and have the ability to interact with and activate T cells (11). Langerhans cells (LCs) are members of this wider family of DCs. LCs reside in the epidermis, where they serve as sentinels of the immune system, their responsibilities being to sample the external environment for changes and challenges and to deliver information (antigen) to T cells within skin-draining lymph nodes. The ability of LCs to migrate from epidermis to regional lymph nodes is thus of pivotal importance to the induction of cutaneous immune responses. The initiation and regulation of LC mobilization and migration are orchestrated by cutaneous cytokines and chemokines. Collectively, the available data reveal that under normal circumstances the stimulation by chemical allergens of LC migration away from the epidermis is dependent on the local availability of IL-1\u03b2 and TNF-\u03b1. We have previously shown that exposure of human volunteers either to a contact allergen (diphenylcyclopropenone [DPC]) by topical administration (12) or to TNF-\u03b1 (13) or IL-1\u03b2 ( 14) by intradermal injection results in a substantial (20-30%) reduction in the frequency of epidermal LCs. This is due to the migration of epidermal LCs to draining lymph nodes. The observation that only a proportion of human LCs is able to mobilize in response to cytokine or allergen stimulus is believed to refl ect the fact that functional heterogeneity exists amongst epidermal LCs. \n\nThe role of LCs in the pathogenesis of psoriasis is poorly understood."
+  },
+  {
+    "snippet_index": 25,
+    "quotes": [
+      "Epidermal Langerhans cells (LCs) functionally serve as a unique subset of skin-resident dendritic cells (DCs), although they are also classified as a specialized macrophage subset in skin based on their developmental relationship like tissue resident macrophage derived from embryonic precursors (1).",
+      "\"Classical\" epidermal LCs, characterized by the expression of a C-type lectin receptor known as Langerin (CD207), are defined as CD45 + MHCII + Langerin + cells (2)(3)(4)(5).",
+      "Following cell activation by various stimuli, LCs have increased expression of costimulatory markers CD80 and CD86, decreased expression of epithelial cell adhesion molecule (EpCAM) and E-cadherin, and acquire a migratory phenotype."
+    ],
+    "summary": "LCs are described as a unique skin-resident DC subset, also considered specialized macrophages, defined by CD45, MHCII, and Langerin (CD207) expression. Upon activation, they upregulate costimulatory markers and acquire a migratory phenotype.",
+    "categories": [
+      "markers",
+      "function",
+      "morphology",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:218517815",
+    "source_title": "Smad2/4 Signaling Pathway Is Critical for Epidermal Langerhans Cell Repopulation Under Inflammatory Condition but Not Required for Their Homeostasis at Steady State",
+    "source_authors": "Linting Huang et al.",
+    "source_year": null,
+    "snippet": "Epidermal Langerhans cells (LCs) functionally serve as a unique subset of skin-resident dendritic cells (DCs), although they are also classified as a specialized macrophage subset in skin based on their developmental relationship like tissue resident macrophage derived from embryonic precursors (1). LCs represent the first antigen-presenting cells in the skin that encounter foreign antigens and take part in a variety of immunological processes. \"Classical\" epidermal LCs, characterized by the expression of a C-type lectin receptor known as Langerin (CD207), are defined as CD45 + MHCII + Langerin + cells (2)(3)(4)(5). LCs phagocytize epidermal detritus with their dendritic protrusions and eventually present these antigens on the cell surface with an MHCII molecule (6). Following cell activation by various stimuli, LCs have increased expression of costimulatory markers CD80 and CD86, decreased expression of epithelial cell adhesion molecule (EpCAM) and E-cadherin, and acquire a migratory phenotype. These changes result in LC migration to the regional draining lymph nodes (LNs), where the LCs interact with na\u00efve T cells to induce immunity or tolerance (3,7). At steady state, LCs self-renew, while under the inflammatory state, such as ultraviolet (UV) light exposure-induced inflammation, there are two waves of LC repopulation in the skin (8). The first wave involves fast \"short-term\" LCs that are derived from peripheral blood Gr-1 hi monocytes and express low levels of Langerin, while the second wave generates \"long-term\" LCs that are derived from bone marrow (BM) and express high levels of Langerin (8). Despite recent research advances, the specific underlying mechanisms that precisely regulate LC development and function are still not fully understood. \n\nTransforming growth factor-\u03b2 (TGF\u03b2) is a key cytokine for the differentiation and maintenance of LCs."
+  },
+  {
+    "snippet_index": 26,
+    "quotes": [],
+    "summary": "LCs are immature epidermal DCs that mature and migrate to lymph nodes upon stimulation, playing a key role in allergen sensitization. Migration and maturation are regulated by cytokines such as GM-CSF, IL-1, and TNF-\u03b1.",
+    "categories": [
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:8385185",
+    "source_title": "\u03b16 Integrins Are Required for Langerhans Cell Migration from the Epidermis",
+    "source_authors": "A. Price et al.",
+    "source_year": null,
+    "snippet": "M ature lymphoid dendritic cells (DCs)1 are derived from immunologically immature precursors in nonlymphoid tissues. The best studied example of an immature DC is the epidermal Langerhans cell (LC). LCs play important roles in the induction of sensitization to contact aller-gens. After topical application of allergen, LCs are induced to migrate from the skin to the draining lymph node, where they interact with naive T cells migrating in from the blood. Accompanying this migration is their maturation from an antigen-uptake and processing phenotype, typical of immature DCs in nonlymphoid tissues (1,2), to an antigen-presenting phenotype typical of DCs in lymphoid tissues (3,4). Maturation and migration of LCs are central events in the initiation of cutaneous immune responses to chemical allergens. Epidermal cell-derived cytokines such as GM-CSF and IL-1 stimulate the maturation of LCs in vitro (5,6). Recent studies have also identified a role for epidermal cell-derived cytokines in regulating LC migration from the skin to draining lymph nodes. Antibodies to TNF-\u2423 prevent the early migration of LCs from the epidermis, the accumulation of DCs in draining lymph nodes, and the development of optimum contact sensitization in response to chemical allergens. Conversely, intradermal injection of homologous recombinant TNF-\u2423 stimulates the rapid migration of LCs out of the epidermis and the accumulation of DCs in draining nodes (7)(8)(9). Other cytokines derived from epidermal cells, and in particular IL-1 \u2424 , may act in concert with TNF-\u2423 to promote LC migration (10). \n\nThe migration of other types of leukocytes is regulated by specific cell adhesion molecules on the cell surface. The adhesion molecules that regulate LC migration from the epidermis to the draining lymph nodes are poorly understood."
+  },
+  {
+    "snippet_index": 27,
+    "quotes": [
+      "The main DC of the epidermis is the Langerhans cell (LC), a cell type which is anchored to neighboring epithelial cells via homotypic E-cadherin (E-cad) binding (3,4).",
+      "LCs display CD1a and exhibit typical ultrastructural features (i.e., Birbeck granules) that allow their discrimination from other members of the DC family."
+    ],
+    "summary": "LCs are the principal dendritic cells in the epidermis, anchored via E-cadherin, expressing CD1a, and characterized by Birbeck granules for identification.",
+    "categories": [
+      "location",
+      "markers",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:14807876",
+    "source_title": "Macrophage Inflammatory Protein 3\u03b1 Is Involved in the Constitutive Trafficking of Epidermal Langerhans Cells",
+    "source_authors": "A. Charbonnier et al.",
+    "source_year": null,
+    "snippet": "D endritic cells (DCs) 1 are bone marrow-derived leuko- cytes with specialized antigen uptake, processing, and presentation functions (for reviews, see references 1 and 2). Under normal, noninflammatory conditions, immature DCs are found in trace quantities in parenchymatous organs and contact interfaces between the body and the environment. The main DC of the epidermis is the Langerhans cell (LC), a cell type which is anchored to neighboring epithelial cells via homotypic E-cadherin (E-cad) binding (3,4). LCs display CD1a and exhibit typical ultrastructural features (i.e., Birbeck granules) that allow their discrimination from other members of the DC family. Apparently, the still-enigmatic LC precursor migrates to the skin in the virtual absence of inflammation-related stimuli. On the other hand, other types of DCs (e.g., peripheral blood [PB]-DCs) selectively cross activated, but not resting, endothelia (5), or emerge from transmigrated blood-derived precursors in the presence of inflammatory stimuli (6). In certain disease states, inflammation-related DC types may reach the body's outermost tissues, as evidenced by the appearance of an epidermal non-LC DC population in atopic dermatitis skin (7). \n\nRecent attention has focused on the impact of the chemokine-chemokine receptor system on DC migration."
+  },
+  {
+    "snippet_index": 28,
+    "quotes": [
+      "Langerhans cells as sentinel cells whose prime function is the surveillance of the epidermal environment and initiation of immune response against microbial threats (Romani et al. 2006).",
+      "clusters of LC in the interfollicular epidermis and among keratinocytes in the region of the hair follicle infundibulum may correlate with sites called EPU (epidermal proliferative unit). The EPU serves as an important source of stem cells and contributes to the tissue stability maintenance and cell proliferation control (Kaur 2006).",
+      "Increased numbers of Langerhans cells in the epidermis and dendritic cells in the dermis were demonstrated in atopic skin lesions of experimental animals. Moreover, an increased number of LC in the epidermis was found also during some immune diseases, e. g. lupus erythematosus, hypersensitive dermatitis, and pyodermia (Day 1996)."
+    ],
+    "summary": "LCs are described as sentinels for epidermal immune surveillance, clustering in regions important for tissue stability and stem cells, and their abundance increases during certain immune diseases and atopic dermatitis.",
+    "categories": [
+      "function",
+      "location",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:53452728",
+    "source_title": "Langerhans Cells in Feline Foetal Epidermis - Immunohistochemical Study of Spatial Distribution",
+    "source_authors": "A. Goro\u0161ov\u00e1 et al.",
+    "source_year": null,
+    "snippet": "The described observations must be considered also in the view of Langerhans cells as sentinel cells whose prime function is the surveillance of the epidermal environment and initiation of immune response against microbial threats (Romani et al. 2006). The hair follicles constitute an easy way for microbes to gain entry into the skin, particularly during the microbial colonization of the skin after birth (Marchini et al. 2005). Therefore, LC homing seems to correlate with these protection desiring regions. Moreover, clusters of LC in the interfollicular epidermis and among keratinocytes in the region of the hair follicle infundibulum may correlate with sites called EPU (epidermal proliferative unit). The EPU serves as an important source of stem cells and contributes to the tissue stability maintenance and cell proliferation control (Kaur 2006). \n\nLangerhans cells seem to be involved in the pathogenesis of skin disorders evoked by hypersensitivity to local and systemic allergens (Toews et al. 1980;Streilein et al. 1982), including atopic dermatitis (Roosje at al. 1997). Increased numbers of Langerhans cells in the epidermis and dendritic cells in the dermis were demonstrated in atopic skin lesions of experimental animals. Moreover, an increased number of LC in the epidermis was found also during some immune diseases, e. g. lupus erythematosus, hypersensitive dermatitis, and pyodermia (Day 1996). Neoplastic transformations of LC exist in dogs, e.g. canine cutaneous histiocytoma (CCH), a malignant histiocytosis (Affolter andMoore 2000, 2002). Symptoms and immunosuppressive mediated response correspond to disorders in the immune system regulations. Thus, LC and dendritic cells are in focus in tumour research and therapy (Yoshida et al. 2003). \n\nAn active role in epidermal immunity is also played by epidermal keratinocytes. These cells produce interleukin 1, interleukin 3, prostaglandins, leukotriens and interferons."
+  }
+]

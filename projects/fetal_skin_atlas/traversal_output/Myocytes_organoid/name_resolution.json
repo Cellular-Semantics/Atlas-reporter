@@ -1,0 +1,10 @@
+{
+  "label": "Myocytes",
+  "resolved_names": [
+    "myocyte"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Myocytes in the SkO represent differentiated muscle cells, likely of the arrector pili or smooth muscle lineage in skin. CL:0000187 (muscle cell) is a broad match."
+}

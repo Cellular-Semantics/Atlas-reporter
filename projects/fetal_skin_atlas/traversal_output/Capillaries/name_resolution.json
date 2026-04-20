@@ -1,0 +1,12 @@
+{
+  "label": "Capillaries",
+  "resolved_names": [
+    "Capillaries",
+    "capillary endothelial cells",
+    "dermal capillary endothelial cells"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) identifies 'Capillaries' as a fine-grained endothelial cell annotation in prenatal skin. Trajectory analysis places capillaries early on the arteriolar differentiation pathway, between early endothelial cells and capillary arterioles (Fig. 4d). These cells show sprouting angiogenesis potential (Extended Data Fig. 10g,h)."
+}

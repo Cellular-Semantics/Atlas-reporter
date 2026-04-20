@@ -1,0 +1,29 @@
+{
+  "cell_type_label": "Innate T type1",
+  "working_definition": "A PLZF (ZBTB16)-expressing unconventional T cell with type 1 effector potential, characterized by IFN-gamma production and T-bet expression. These cells arise via thymocyte-thymocyte (T-T) selection in the thymus, express alpha-beta or gamma-delta TCR, and are developmental-specific, being abundant in prenatal tissues but nearly absent in postnatal thymus. In fetal skin they are part of the T cell lineage appearing from around 10 PCW.",
+  "searches_performed": [
+    "innate T cell",
+    "MAIT cell",
+    "type I NKT cell",
+    "unconventional T cell innate-like",
+    "gamma-delta T cell"
+  ],
+  "best_match": null,
+  "justification": "No CL term captures the concept of a 'type 1 innate T cell' as defined by Suo et al. (2022). The closest candidates are CL:0000940 (MAIT cell), which is restricted by MR1 and does not encompass the broader type 1 innate T population; CL:0000798 (gamma-delta T cell), which is a TCR-based classification rather than an effector-function-based one; and NKT cell subtypes, which are CD1d-restricted. The 'Innate T type1' annotation refers to PLZF+ unconventional T cells classified by their type 1 (IFN-gamma) effector program regardless of TCR type, a category not represented in CL.",
+  "other_candidates": [
+    {
+      "cl_term": "mucosal-associated invariant T cell",
+      "cl_id": "CL:0000940",
+      "cl_definition": "An alpha-beta T cell that is found in the lamina propria of mucosal tissues and is restricted by the MR-1 molecule. This cell develops from double-positive, alpha-beta thymocyte.",
+      "reason_rejected": "MAIT cells are a specific subset restricted by MR1; innate T type1 is a broader effector-function-based classification encompassing multiple TCR types with type 1 immunity"
+    },
+    {
+      "cl_term": "gamma-delta T cell",
+      "cl_id": "CL:0000798",
+      "cl_definition": "A T cell that expresses a gamma-delta T cell receptor complex.",
+      "reason_rejected": "TCR-based classification; innate T type1 includes both alpha-beta and gamma-delta TCR expressing cells classified by effector function"
+    }
+  ],
+  "recommendation": "A new CL term is needed for 'type 1 innate T cell' (or 'innate-like T cell with type 1 effector potential'), defined as a PLZF-expressing unconventional T cell that produces type 1 cytokines (IFN-gamma), arises via thymocyte-thymocyte selection, and is enriched during prenatal development. This would be a child of a broader 'innate-like T cell' parent (which may also need creation).",
+  "new_term_needed": true
+}

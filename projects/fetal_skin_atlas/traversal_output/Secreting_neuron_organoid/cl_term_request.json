@@ -1,0 +1,9 @@
+{
+  "proposed_label": "cutaneous secreting neuron",
+  "proposed_definition": "A neuron located in the skin that produces and secretes neuropeptides or neurotransmitters, contributing to local tissue homeostasis, vasodilation, and neuro-immune communication. This cell is derived from neural crest progenitors and identified in developing skin and skin organoid models.",
+  "parent_term": "CL:0000527 (efferent neuron)",
+  "distinguishing_features": "Neurosecretory function in skin, neural crest-derived, produces neuropeptides for local tissue regulation",
+  "references": [
+    "DOI:10.1038/s41586-024-08002-x"
+  ]
+}

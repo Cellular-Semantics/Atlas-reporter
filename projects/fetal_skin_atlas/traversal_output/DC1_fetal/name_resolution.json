@@ -1,0 +1,13 @@
+{
+  "label": "DC1",
+  "resolved_names": [
+    "DC1",
+    "cDC1",
+    "conventional dendritic cell type 1",
+    "CD141-positive myeloid dendritic cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) includes DC1 as a fine-grained immune cell annotation in prenatal skin (Supplementary Table 3). Extended Data Fig. 1f shows DC1 co-locating with pre-dermal condensate cells in Visium spatial transcriptomics. The peer review confirms DC1 corresponds to conventional dendritic cells (cDC1). Botting & Haniffa (2020) confirm DC1 is present in first-trimester human skin and closely resembles its adult counterpart. Suo et al. (2022) confirm DC subsets are transcriptionally conserved between prenatal and adult."
+}

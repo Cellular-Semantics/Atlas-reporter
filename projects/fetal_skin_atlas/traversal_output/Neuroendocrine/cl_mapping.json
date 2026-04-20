@@ -1,0 +1,26 @@
+{
+  "cell_type_label": "Merkel cell",
+  "working_definition": "A specialized neuroendocrine mechanoreceptor cell of the fetal epidermis, expressing cytokeratins KRT8, KRT18, and KRT20, the neuroendocrine markers synaptophysin and chromogranin A, the mechanosensitive ion channel Piezo2, and the transcription factor ATOH1. Located in the basal layer of the epidermis, functioning as a tactile receptor.",
+  "searches_performed": [
+    "Merkel cell (CL, pageSize=10)",
+    "neuroendocrine cell of skin (CL)"
+  ],
+  "best_match": {
+    "cl_term": "Merkel cell of epidermis",
+    "cl_id": "CL:4052058",
+    "cl_definition": "A Merkel cell found mainly in the basal layer of the epidermis and the outer root sheath of hair follicles, particularly concentrated in areas with high tactile acuity, such as touch domes, hair follicles, and fingertips.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:4052058 describes the Merkel cell of epidermis. The atlas 'Neuroendocrine' cluster corresponds to Merkel cells based on marker expression (KRT20, ATOH1, neuroendocrine markers) and epidermal location.",
+  "other_candidates": [
+    {
+      "cl_term": "Merkel cell",
+      "cl_id": "CL:0000242",
+      "reason_rejected": "More general; CL:4052058 is more specific to epidermal location."
+    }
+  ],
+  "recommendation": "Use CL:4052058 (Merkel cell of epidermis) as exact match.",
+  "new_term_needed": false
+}

@@ -1,0 +1,43 @@
+{
+  "markers": [
+    {
+      "gene": "GJA5",
+      "evidence_type": "arteriolar marker",
+      "source_table": "Main text"
+    },
+    {
+      "gene": "GATA2",
+      "evidence_type": "regulon analysis",
+      "source_table": "Extended Data Fig. 11d,e"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "SkO capillary arterioles unable to further differentiate into arterioles unlike prenatal skin",
+      "category": "development",
+      "source_table": "Fig. 4d, Extended Data Fig. 10a"
+    },
+    {
+      "finding": "GATA2 and NFATC1 regulons downregulated in SkO capillary arterioles",
+      "category": "regulation",
+      "source_table": "Extended Data Fig. 11d,e"
+    },
+    {
+      "finding": "Sprouting angiogenesis gene signature increased in SkO capillary arterioles but unable to guide stalk cells",
+      "category": "function",
+      "source_table": "Extended Data Fig. 10g,h"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Unlike SkO capillary arteriole cells, prenatal skin capillary arteriole cells could further differentiate into arterioles",
+      "source_file": "Gopee et al. 2024",
+      "context": "SkO endothelial differentiation limitation"
+    },
+    {
+      "quote": "despite strong expression of the sprouting angiogenesis gene signature, SkO capillary arteriole cells are unable to guide stalk cells for new blood vessel formation",
+      "source_file": "Gopee et al. 2024",
+      "context": "SkO vascular limitation"
+    }
+  ]
+}

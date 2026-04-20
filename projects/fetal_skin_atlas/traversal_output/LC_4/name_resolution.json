@@ -1,0 +1,8 @@
+{
+  "label": "LC_4",
+  "resolved_names": [],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "low",
+  "evidence": "The provided main text and metadata from the atlas paper are focused on prenatal human skin and skin organoids. The label 'LC_4' was not directly mentioned in the paper excerpt or available supplementary material. The label likely refers to a specific cluster, possibly a subset of Langerhans cells ('LC'), given the context, but there is no explicit mapping or naming for 'LC_4' in the adult skin dataset in the available information. Therefore, the cell type annotation label 'LC_4' remains unresolved."
+}

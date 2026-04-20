@@ -1,0 +1,10 @@
+{
+  "label": "LE2",
+  "resolved_names": [
+    "Lymphatic Endothelial 2"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "The label 'LE2' is mapped in Supplementary Table 7 ('Cell type annotation and marker genes'), where 'LE2' corresponds to 'Lymphatic Endothelial 2'. This is a fine-grained endothelial cell subtype in the skin, differentiated from other endothelial populations. The mapping is consistent in both prenatal and adult skin datasets in the supplementary tables."
+}

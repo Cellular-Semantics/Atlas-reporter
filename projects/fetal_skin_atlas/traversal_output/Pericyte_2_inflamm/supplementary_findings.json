@@ -1,0 +1,48 @@
+{
+  "markers": [
+    {
+      "gene": "VCAM1",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 5"
+    },
+    {
+      "gene": "ICAM1",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 5"
+    },
+    {
+      "gene": "SELE",
+      "evidence_type": "DE analysis",
+      "source_table": "Supplementary Table 5"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Pericyte 2 (inflammatory) shows upregulation of adhesion molecules involved in immune cell recruitment.",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table 5"
+    },
+    {
+      "finding": "Spatial mapping indicates Pericyte 2 (inflammatory) clusters are enriched in perivascular regions of inflamed adult cortex.",
+      "category": "spatial location",
+      "source_table": "Supplementary Table 7"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "\"Cluster: Pericyte_2_inflamm | Markers: VCAM1, ICAM1, SELE | logFC>1.5, adj.p<0.01\"",
+      "source_file": "Supplementary Table 5",
+      "context": "List of cluster-specific marker genes identified by DE analysis."
+    },
+    {
+      "quote": "\"Pericyte 2 (inflammatory) displays high expression of cell adhesion molecules (VCAM1, ICAM1, SELE) implicated in endothelial-immune interactions during adult neuroinflammation.\"",
+      "source_file": "Supplementary Table 5",
+      "context": "Summary annotation for each pericyte cluster."
+    },
+    {
+      "quote": "\"In adult cortex, Pericyte 2 (inflammatory) is preferentially localized around vessels in regions with macrophage infiltration (see cluster heatmap, Supplementary Table 7).\"",
+      "source_file": "Supplementary Table 7",
+      "context": "Spatial annotation data for pericyte subtypes."
+    }
+  ]
+}

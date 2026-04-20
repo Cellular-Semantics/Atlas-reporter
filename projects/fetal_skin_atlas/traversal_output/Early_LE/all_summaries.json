@@ -1,0 +1,19 @@
+[
+  {
+    "corpusId": 273400864,
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee N, Winheim E, Olabi B, et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "summary": "Comprehensive multi-omics atlas of human prenatal skin (7-17 PCW). Early LE is a fine-grained annotation under the broad Lymphatic endothelium category representing an early/progenitor lymphatic endothelial cell state. LE is defined as 'lymphatic endothelium' in the figure legend. Endothelial cells including lymphatic endothelium are present throughout gestation. Co-location with macrophages in neurovascular microenvironments is predicted.",
+    "quotes": [
+      "LE, lymphatic endothelium",
+      "Predicted ligand-receptor interactions were consistent with reciprocal communication between macrophages and endothelial cells to support angiogenesis, chemotaxis and cell migration (for example, CXCL8-ACKR1 and CCL8-ACKR1)",
+      "Visium deconvolution analysis predicted co-location of prenatal skin macrophages with endothelial cells ('early and late neurovascular microenvironments', ME1 and ME5)",
+      "Mesoderm-derived cells, including skin fibroblasts and endothelial cells, and immune cells were present throughout gestation",
+      "immune cells are required to fully recapitulate in vivo endothelial cell development",
+      "we observed fewer and less heterogeneous endothelial cells in the immunodeficient SkOs compared to prenatal skin, despite the formation of well-developed HFs, epidermis and neural cells"
+    ]
+  }
+]

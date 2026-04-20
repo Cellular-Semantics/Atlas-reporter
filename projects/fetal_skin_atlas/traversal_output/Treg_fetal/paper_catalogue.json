@@ -1,0 +1,104 @@
+{
+  "papers": [
+    {
+      "id": "gopee2024",
+      "corpusId": "273400864",
+      "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+      "authors": "Gopee NH et al.",
+      "year": 2024,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-024-08002-x",
+      "source": "atlas_paper"
+    },
+    {
+      "id": "dhariwala2020",
+      "corpusId": "227334677",
+      "title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+      "authors": "Dhariwala MO et al.",
+      "year": 2020,
+      "journal": "Cell Reports Medicine",
+      "doi": "10.1016/j.xcrm.2020.100132",
+      "source": "citation_traverse"
+    },
+    {
+      "id": "schuster2012",
+      "corpusId": "7818908",
+      "title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
+      "authors": "Schuster C et al.",
+      "year": 2012,
+      "journal": "The Journal of Investigative Dermatology",
+      "doi": "10.1038/jid.2012.187",
+      "source": "citation_traverse"
+    },
+    {
+      "id": "ali2017",
+      "corpusId": "3693501",
+      "title": "Regulatory T Cells in Skin Facilitate Epithelial Stem Cell Differentiation",
+      "authors": "Ali N et al.",
+      "year": 2017,
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2017.05.002",
+      "source": "citation_traverse"
+    },
+    {
+      "id": "lee2017",
+      "corpusId": "2823096",
+      "title": "A Crucial Role of CXCL14 for Promoting Regulatory T Cells Activation in Stroke",
+      "authors": "Lee HT et al.",
+      "year": 2017,
+      "journal": "Theranostics",
+      "doi": "10.7150/thno.17558",
+      "source": "citation_traverse"
+    },
+    {
+      "id": "knoedler2023",
+      "corpusId": "264408058",
+      "title": "Regulatory T cells in skin regeneration and wound healing",
+      "authors": "Knoedler S et al.",
+      "year": 2023,
+      "journal": "Military Medical Research",
+      "doi": "10.1186/s40779-023-00484-6",
+      "source": "free_search"
+    },
+    {
+      "id": "sharma2018",
+      "corpusId": "13809572",
+      "title": "Emerging Functions of Regulatory T Cells in Tissue Homeostasis",
+      "authors": "Sharma A and Rudra D",
+      "year": 2018,
+      "journal": "Frontiers in Immunology",
+      "doi": "10.3389/fimmu.2018.00585",
+      "source": "free_search"
+    },
+    {
+      "id": "rackaityte2020",
+      "corpusId": "215516424",
+      "title": "Mechanisms of Fetal T Cell Tolerance and Immune Regulation",
+      "authors": "Rackaityte E and Halkias J",
+      "year": 2020,
+      "journal": "Frontiers in Immunology",
+      "doi": "10.3389/fimmu.2020.00588",
+      "source": "free_search"
+    },
+    {
+      "id": "short2021",
+      "corpusId": "235778405",
+      "title": "The Role of T Lymphocytes in Cutaneous Scarring",
+      "authors": "Short WD et al.",
+      "year": 2021,
+      "journal": "Advances in Wound Care",
+      "doi": "",
+      "source": "free_search"
+    },
+    {
+      "id": "park2018",
+      "corpusId": "32684087",
+      "title": "The Role of Skin and Orogenital Microbiota in Protective Immunity and Chronic Immune-Mediated Inflammatory Disease",
+      "authors": "Park YJ and Lee HK",
+      "year": 2018,
+      "journal": "Frontiers in Immunology",
+      "doi": "",
+      "source": "free_search"
+    }
+  ]
+}

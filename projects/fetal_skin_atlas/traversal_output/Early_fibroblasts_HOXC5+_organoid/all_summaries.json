@@ -1,0 +1,26 @@
+[
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "HOXC5 + early fibroblasts (located in the upper dermis and abundant before 11 PCW) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2 + fibroblasts and PEAR1 + fibroblasts",
+    "relevance": "HOXC5+ fibroblast trajectories"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "we observed a high number of matching TFs across pseudotime, which indicated that there are similar activated gene regulatory programs between prenatal skin and SkO during HF fibroblast differentiation",
+    "relevance": "SkO-prenatal alignment"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "TFs that were mismatched across pseudotime or drove misalignment in early and late pseudotime (for example, HOXA7 and BARX1) were largely attributable to the different origins of dermal cells between prenatal skin (trunk and limb) and SkO (neural crest differentiation)",
+    "relevance": "SkO-prenatal mismatches"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "dermal fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW",
+    "relevance": "Dc and Dp timing"
+  }
+]

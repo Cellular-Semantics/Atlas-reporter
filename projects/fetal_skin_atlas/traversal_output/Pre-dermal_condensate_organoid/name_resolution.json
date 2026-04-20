@@ -1,0 +1,10 @@
+{
+  "label": "Pre-dermal condensate",
+  "resolved_names": [
+    "pre-dermal condensate cell"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Pre-dermal condensate (pre-Dc) cells are fibroblast progenitors that migrate toward the epidermis and aggregate into the dermal condensate during HF formation. No specific CL term exists."
+}

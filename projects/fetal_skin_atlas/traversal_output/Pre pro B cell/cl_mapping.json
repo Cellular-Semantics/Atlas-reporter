@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "Pre pro B cell",
+  "working_definition": "The earliest B-lineage committed progenitor cell identified in fetal skin, expressing CD34, SPINK2, and IGLL1. These cells represent the most primitive stage of B cell development in the prenatal skin atlas, corresponding to Hardy fraction A.",
+  "searches_performed": [
+    "pre-pro-B cell (CL, OLS4)",
+    "fraction A pre-pro B cell (CL)"
+  ],
+  "best_match": {
+    "cl_term": "fraction A pre-pro B cell",
+    "cl_id": "CL:0002045",
+    "cl_definition": "A pre-pro-B cell that is B220-positive, CD43-positive, HSA-negative, BP-1-negative and Ckit-positive. This cell type is also described as being PD-L1-positive, AA4.1-positive, and IL-7Ralpha-positive.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0002045 'fraction A pre-pro B cell' is defined using mouse-specific Hardy fraction nomenclature (B220, CD43, BP-1 markers). The fetal skin atlas 'Pre pro B cell' annotation represents the equivalent developmental stage in human, characterized by CD34, SPINK2, IGLL1 expression (Popescu et al., 2019). While the developmental stage is equivalent, the CL term is primarily defined by murine surface markers. A broad match is appropriate as the human pre-pro-B cell concept maps to this stage but the specific markers differ.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002045 (fraction A pre-pro B cell) as a broad match. The human pre-pro-B cell in this atlas corresponds to this developmental stage but is defined by different (human-specific) markers.",
+  "new_term_needed": false
+}

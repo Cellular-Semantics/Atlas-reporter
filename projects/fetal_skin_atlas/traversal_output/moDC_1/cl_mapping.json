@@ -1,0 +1,28 @@
+{
+  "cell_type_label": "moDC_1",
+  "working_definition": "A monocyte-derived dendritic cell subtype (moDC_1) in adult human skin, identified by Reynolds et al. (2021) as one of three moDC subtypes within the monocyte-derived DC differentiation branch. MoDCs in skin are derived from blood monocytes recruited to tissues in response to inflammatory or homeostatic cues and differentiate into dendritic cells in the dermis. moDC_1 represents a less mature moDC subtype retaining subset identity markers, positioned early in the moDC differentiation trajectory.",
+  "searches_performed": [
+    "monocyte-derived dendritic cell (CL, OLS4)",
+    "myeloid dendritic cell (CL)",
+    "dendritic cell skin (CL)"
+  ],
+  "best_match": {
+    "cl_term": "monocyte-derived dendritic cell",
+    "cl_id": "CL:0011031",
+    "cl_definition": "A dendritic cell that is derived from a monocyte.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0011031 (monocyte-derived dendritic cell) is the parent term for all monocyte-derived DCs. moDC_1 is a specific subtype within this class defined by Reynolds et al. (2021) in adult skin, distinguished from moDC_2 and moDC_3 by transcriptomic profile and position along the maturation trajectory. No CL subtype term exists for moDC_1 specifically, but the broad match is high confidence since the lineage identity is clear.",
+  "other_candidates": [
+    {
+      "cl_term": "myeloid dendritic cell",
+      "cl_id": "CL:0000782",
+      "cl_definition": "A dendritic cell of the myeloid lineage.",
+      "reason_rejected": "Too broad; moDCs are a specific subset within myeloid DCs distinguished by their monocyte origin rather than dedicated DC progenitor origin"
+    }
+  ],
+  "recommendation": "Use CL:0011031 (monocyte-derived dendritic cell) as a broad match. No new CL term is needed since the subtypes moDC_1/2/3 are dataset-specific clusters rather than clearly distinct cell types with independent biological definitions.",
+  "new_term_needed": false
+}

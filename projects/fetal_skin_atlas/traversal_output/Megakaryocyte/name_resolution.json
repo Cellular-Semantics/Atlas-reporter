@@ -1,0 +1,10 @@
+{
+  "label": "Megakaryocyte",
+  "resolved_names": [
+    "Megakaryocyte"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin",
+  "confidence": "high",
+  "evidence": "Explicitly annotated as Megakaryocyte in fetal skin atlas"
+}

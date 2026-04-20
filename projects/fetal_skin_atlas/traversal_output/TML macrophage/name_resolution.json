@@ -1,0 +1,17 @@
+{
+  "cell_type_name": "TML macrophage",
+  "resolved_name": "TREM2+ microglia-like (TML) macrophage",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "atlas_name": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+  "scope": "fetal",
+  "tissue": "prenatal human skin (7-17 PCW)",
+  "name_origin": "Named by Gopee et al. (2024) based on expression of TREM2, P2RY12, CX3CR1 and OLFML3 -- markers shared with brain microglia. Macrophage subsets in prenatal skin were annotated using marker genes from Suo et al. (2022).",
+  "abbreviation_expansion": "TML = TREM2+ Microglia-Like",
+  "synonyms": [
+    "TREM2+ microglia-like macrophage",
+    "TML macrophage",
+    "microglia-like TREM2hi macrophage"
+  ],
+  "confidence": "high",
+  "notes": "TML macrophages are one of four macrophage subsets (LYVE1+, MHCII+, TML, iron-recycling) identified in prenatal skin. They are yolk-sac derived and highly correlated with embryonic brain microglia (Mac4)."
+}

@@ -1,0 +1,44 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee et al.",
+    "year": 2024,
+    "doi": "10.1038/s41586-024-08002-x",
+    "venue": "Nature"
+  },
+  "CorpusId:248122197": {
+    "title": "Mapping the developing human immune system across organs",
+    "authors": "Suo et al.",
+    "year": 2022,
+    "doi": "10.1126/science.abo0510",
+    "venue": "Science"
+  },
+  "CorpusId:233175971": {
+    "title": "Prenatal Development and Function of Human Mononuclear Phagocytes",
+    "authors": "Miah et al.",
+    "year": 2021,
+    "doi": "10.3389/fimmu.2021.607998",
+    "venue": "Frontiers in Immunology"
+  },
+  "CorpusId:7818908": {
+    "title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
+    "authors": "Schuster et al.",
+    "year": 2012,
+    "doi": "10.1038/jid.2012.187",
+    "venue": "Journal of Investigative Dermatology"
+  },
+  "CorpusId:2081575": {
+    "title": "Ontogeny of Tissue-Resident Macrophages",
+    "authors": "Hoeffel and Ginhoux",
+    "year": 2015,
+    "doi": "10.3389/fimmu.2015.00486",
+    "venue": "Frontiers in Immunology"
+  },
+  "CorpusId:219689134": {
+    "title": "Expression of S100A Alarmins in Cord Blood Monocytes Is Highly Associated With Chorioamnionitis and Fetal Inflammation in Preterm Infants",
+    "authors": "Golubinskaya et al.",
+    "year": 2020,
+    "doi": "10.3389/fimmu.2020.01194",
+    "venue": "Frontiers in Immunology"
+  }
+}

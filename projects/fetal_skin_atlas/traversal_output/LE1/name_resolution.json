@@ -1,0 +1,10 @@
+{
+  "label": "LE1",
+  "resolved_names": [
+    "Lymphatic Endothelial 1"
+  ],
+  "scope": "adult",
+  "tissue_context": "human skin",
+  "confidence": "high",
+  "evidence": "LE1 is used as a cluster abbreviation for 'lymphatic endothelial cell 1' in supplementary tables that map endothelial clusters (LE1, LE2, etc.) to their resolved names in the main text and Extended Data Fig. 5 of the atlas paper. The mapping is consistent for adult skin context in the fine-grained endothelial atlas."
+}

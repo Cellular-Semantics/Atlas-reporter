@@ -1,0 +1,9 @@
+{
+  "proposed_label": "SPP1-positive neural progenitor cell",
+  "proposed_definition": "A neural progenitor cell that expresses SPP1 (osteopontin/secreted phosphoprotein 1), identified in developing human skin and skin organoid models. This cell is committed to the neuronal lineage and distinguished from other neuron progenitors by its expression of SPP1, a secreted glycoprotein involved in cell adhesion and migration.",
+  "parent_term": "CL:0011020 (neural progenitor cell)",
+  "distinguishing_features": "SPP1 expression distinguishing it from other neural progenitor populations",
+  "references": [
+    "DOI:10.1038/s41586-024-08002-x"
+  ]
+}

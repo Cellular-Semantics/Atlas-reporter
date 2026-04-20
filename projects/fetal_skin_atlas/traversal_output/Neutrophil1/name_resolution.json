@@ -1,0 +1,11 @@
+{
+  "label": "Neutrophil1",
+  "resolved_names": [
+    "Neutrophil subtype 1",
+    "Neutrophil1"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The label 'Neutrophil1' is used by the authors in the cell type annotations of the prenatal skin atlas (Gopee et al., 2024, doi:10.1038/s41586-024-08002-x). Two neutrophil populations (Neutrophil1 and Neutrophil2) are identified in fetal skin, within the broad 'Neutrophil' category. The specific marker genes distinguishing Neutrophil1 from Neutrophil2 are provided in the supplementary tables."
+}

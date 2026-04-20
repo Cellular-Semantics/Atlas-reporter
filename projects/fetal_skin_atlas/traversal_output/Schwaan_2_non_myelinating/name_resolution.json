@@ -1,0 +1,10 @@
+{
+  "label": "Schwaan_2_non_myelinating",
+  "resolved_names": [
+    "Schwann cells (non-myelinating)"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "Supplementary Table 7 of the paper (and Extended Data Fig. 11) maps 'Schwaan_2_non_myelinating' to 'Schwann cells (non-myelinating)'. The main text and figure legends describe Schwann cell subtypes in skin\u2014particularly, the distinction between myelinating and non-myelinating Schwann cells, in both prenatal (fetal) and adult skin. The label is an explicit cluster designation for this fine subtype."
+}

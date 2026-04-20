@@ -1,0 +1,9 @@
+{
+  "cell_type_label": "Megakaryocyte",
+  "cl_term": "megakaryocyte",
+  "cl_id": "CL:0000556",
+  "cl_iri": "http://purl.obolibrary.org/obo/CL_0000556",
+  "match_type": "exact",
+  "match_reason": "Direct match to CL:0000556 (megakaryocyte).",
+  "new_term_needed": false
+}

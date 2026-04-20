@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "DC2 (cDC2)",
+  "working_definition": "A conventional type 2 dendritic cell (cDC2) identified in prenatal human skin (7-17 PCW), characterized by expression of CD1C, FCER1A, and CLEC10A. cDC2 are the predominant conventional dendritic cell population in human tissues, dependent on transcription factor IRF4 for development. They are potent antigen-presenting cells capable of presenting both protein and glycolipid antigens, promoting Th2 and regulatory T cell responses. In the fetal skin atlas, DC2 co-locates spatially with pre-dermal condensate cells alongside DC1, LTi, and ILC3, suggesting involvement in the microenvironment supporting early hair follicle formation. DC2 has been identified in first-trimester human skin and closely resembles its adult counterpart.",
+  "searches_performed": [
+    "conventional dendritic cell type 2 (OLS4, CL ontology)",
+    "cDC2 CD1c-positive myeloid dendritic cell (OLS4, CL ontology)"
+  ],
+  "best_match": {
+    "cl_term": "CD1c-positive myeloid dendritic cell",
+    "cl_id": "CL:0002399",
+    "cl_definition": "A myeloid dendritic cell that is CD1c-positive. CD1c-positive myeloid dendritic cells represent one of the conventional myeloid dendritic cell subsets. The more commonly accepted nomenclature is conventional dendritic cell 2 (cDC2) for CD1c+ dendritic cells. cDC2 cells are defined by high expression of the transcription factor IRF4 in addition to cell surface markers such as CD1c, CD11c, CD11b, and SIRPA.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002399 (CD1c-positive myeloid dendritic cell) matches the DC2/cDC2 cluster on all defining criteria: expression of CD1C as the primary marker, along with FCER1A and CLEC10A as differentially expressed genes. The CL extended description explicitly states that 'conventional dendritic cell 2 (cDC2) for CD1c+ dendritic cells' is the accepted nomenclature. Botting & Haniffa (2020) confirm that DC2 in first-trimester human skin 'closely resemble their adult counterparts', and Suo et al. (2022) show that DC subset transcriptional profiles are conserved between prenatal and adult. The CL term does not explicitly mention skin or fetal tissue as locations, but the cell identity is the same across tissues and developmental stages.",
+  "other_candidates": [
+    {
+      "cl_term": "CD141-positive myeloid dendritic cell",
+      "cl_id": "CL:0002394",
+      "cl_definition": "A myeloid dendritic cell found in the blood, lymph nodes, tonsil, bone marrow, and spleen that is CD141-positive (BDCA-3), XCR1-positive, and Clec9A-positive.",
+      "reason_rejected": "This term corresponds to cDC1 (DC1), not cDC2 (DC2). DC2 is defined by CD1c/FCER1A/CLEC10A expression, not CD141/XCR1/CLEC9A."
+    }
+  ],
+  "recommendation": "Use CL:0002399 (CD1c-positive myeloid dendritic cell). This is a precise exact match for the cDC2 population. The CL definition captures the key markers and nomenclature. Consider suggesting that the CL term's location list be expanded to include skin, as cDC2 are well-documented in both adult and fetal skin.",
+  "new_term_needed": false
+}

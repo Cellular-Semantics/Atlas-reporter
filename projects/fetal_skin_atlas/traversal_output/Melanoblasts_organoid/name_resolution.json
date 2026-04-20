@@ -1,0 +1,10 @@
+{
+  "label": "Melanoblasts",
+  "resolved_names": [
+    "melanoblast"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Melanoblasts are neural crest-derived pigment precursors. CL:0000541 is an exact match."
+}

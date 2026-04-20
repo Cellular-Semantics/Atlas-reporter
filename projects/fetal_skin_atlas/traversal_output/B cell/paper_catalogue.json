@@ -1,0 +1,38 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": ["N. Gopee", "Elena Winheim", "B. Olabi"],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "pmid": "39415002",
+    "url": "https://www.semanticscholar.org/paper/4fa361732b6949fb708120c7977c9e753b76ff51"
+  },
+  "CorpusId:218615208": {
+    "title": "The developing immune network in human prenatal skin",
+    "authors": ["R. Botting", "M. Haniffa"],
+    "year": 2020,
+    "venue": "Immunology",
+    "doi": "10.1111/imm.13192",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/47dac42dc1734092794a0871a7eb752fb294adbf"
+  },
+  "CorpusId:203986545": {
+    "title": "Decoding human fetal liver haematopoiesis",
+    "authors": ["Dorin-Mirel Popescu", "R. Botting", "Emily Stephenson"],
+    "year": 2019,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-019-1652-y",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/f9b31cf91fb909e451f82ad25ed683d6efbb44d2"
+  },
+  "CorpusId:227334677": {
+    "title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "authors": ["M. Dhariwala", "Dhuvarakesh Karthikeyan", "Kimberly S. Vasquez"],
+    "year": 2020,
+    "venue": "Cell Reports Medicine",
+    "doi": "10.1016/j.xcrm.2020.100132",
+    "pmid": "",
+    "url": "https://www.semanticscholar.org/paper/d534f82b4e2d279bfd9455e0c52158941661e78e"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "Inferred trajectory and pseudotime analysis of epidermal cells in the integrated prenatal skin and SkO data predicted the differentiation of POSTN + basal cells into two paths: ORS/CL trajectory, comprising DPYSL2 + basal cells, ORS and CL; and IRS trajectory, involving placode, matrix, cuticle/cortex and IRS",
+    "relevance": "POSTN+ basal cell differentiation trajectories"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "increased cellular migration in POSTN + basal cells may be involved in placode specification and dermal invagination",
+    "relevance": "POSTN+ basal cell function"
+  },
+  {
+    "paper": "Gopee et al. 2024",
+    "doi": "10.1038/s41586-024-08002-x",
+    "snippet": "AGR2 was downregulated along the IRS trajectory, whereas known matrix markers such as SHH and WNT10B were upregulated",
+    "relevance": "Trajectory gene dynamics"
+  }
+]

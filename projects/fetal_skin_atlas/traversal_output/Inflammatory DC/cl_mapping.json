@@ -1,0 +1,42 @@
+{
+  "cell_type_label": "Inflammatory DC",
+  "working_definition": "A CD1c-positive myeloid dendritic cell that is part of the DC3 subset, characterized by expression of CD14, CD163, and inflammatory genes including inflammasome-related genes. This cell develops via a GM-CSF-dependent pathway independent of both conventional DC-restricted progenitors (CDP) and monocyte-restricted progenitors (cMoP), and is FLT3L-responsive. In humans, DC3 are identified as CD5-negative, CD163-positive, CD14-positive cells within the cDC2 compartment. They are capable of activating naive T cells and priming CD8+CD103+ tissue-resident memory T cells through TGF-beta signaling. In prenatal human skin, this cell type is annotated in the fetal immune compartment from 7-17 post-conception weeks.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'inflammatory dendritic cell' in CL ontology",
+    "OLS4 searchClasses: 'DC3 dendritic cell type 3' in CL ontology",
+    "OLS4 searchClasses: 'monocyte-derived dendritic cell' in CL ontology",
+    "Semantic Scholar snippet_search: 'inflammatory dendritic cell DC3 single cell skin atlas annotation'",
+    "Semantic Scholar snippet_search: 'DC3 inflammatory dendritic cell CD14 CD163 monocyte-derived precursor ontogeny'"
+  ],
+  "best_match": {
+    "cl_term": "CD1c-positive myeloid dendritic cell",
+    "cl_id": "CL:0002399",
+    "cl_definition": "A myeloid dendritic cell that is CD1c-positive. cDC2 cells can be further subclassified into DC2 and DC3 cells, although the functional differences of these subsets are not well characterized.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002399 (CD1c-positive myeloid dendritic cell) is the parent class that encompasses the cDC2 compartment, which includes both DC2 and DC3 subsets. The CL definition explicitly acknowledges that cDC2 can be subclassified into DC2 and DC3 but lacks a dedicated DC3 term. The atlas 'Inflammatory DC' annotation corresponds to DC3 (type 3 dendritic cells) as defined by Dutertre et al. (2019) and Bourdely et al. (2020): CD5-CD163+CD14+ inflammatory dendritic cells within the cDC2 compartment. DC3 are distinct from monocyte-derived dendritic cells (CL:0011031) because they arise from a GM-CSF-dependent pathway independent of monocyte progenitors. A new child term under CL:0002399 is warranted.",
+  "other_candidates": [
+    {
+      "cl_term": "monocyte-derived dendritic cell",
+      "cl_id": "CL:0011031",
+      "cl_definition": "A dendritic cell that develops from a monocyte.",
+      "reason_rejected": "DC3/inflammatory DC were initially thought to be monocyte-derived, but Bourdely et al. (2020) demonstrated they arise from a distinct GM-CSF-dependent pathway independent of monocyte-restricted progenitors (cMoP). They are FLT3L-responsive and belong to the DC lineage. Ontogeny does not match."
+    },
+    {
+      "cl_term": "myeloid dendritic cell",
+      "cl_id": "CL:0000782",
+      "cl_definition": "A dendritic cell of the myeloid lineage.",
+      "reason_rejected": "Too broad. This encompasses all myeloid DCs including cDC1, cDC2, and monocyte-derived DCs. Does not capture the specific inflammatory DC3 phenotype."
+    },
+    {
+      "cl_term": "conventional dendritic cell",
+      "cl_id": "CL:0000990",
+      "cl_definition": "A dendritic cell of the conventional/classical lineage.",
+      "reason_rejected": "Too broad. Encompasses all conventional DCs (cDC1 and cDC2). The ontogenetic relationship of DC3 to the conventional DC lineage is still debated, though DC3 share features with cDC2."
+    }
+  ],
+  "recommendation": "Request a new CL term: 'type 3 dendritic cell' (synonym: 'DC3', 'inflammatory dendritic cell') as a child of CL:0002399 (CD1c-positive myeloid dendritic cell). Definition should reference CD5-negative, CD163-positive, CD14-positive phenotype within the cDC2 compartment, GM-CSF-dependent development, inflammasome gene expression, and capacity to prime CD8+CD103+ T cells.",
+  "new_term_needed": true
+}

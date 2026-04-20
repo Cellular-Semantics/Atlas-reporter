@@ -1,0 +1,10 @@
+{
+  "label": "Early myocytes",
+  "resolved_names": [
+    "Early myocytes"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Early myocytes identified in SkO dataset within the skeletal muscle broad lineage."
+}

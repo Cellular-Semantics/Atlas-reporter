@@ -1,0 +1,23 @@
+[
+  {
+    "corpusId": 273400864,
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee N, Winheim E, Olabi B, et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "summary": "Comprehensive multi-omics atlas of human prenatal skin (7-17 PCW). Trajectory analysis shows early endothelial cells differentiating into arteriolar pathway (capillaries, capillary arterioles, arterioles) marked by GJA5, and venular pathway (postcapillary venules, venules) marked by PLVAP. Capillaries are positioned early on the arteriolar pathway. Sprouting angiogenesis potential is elevated in prenatal skin capillary cells. Macrophage-derived VEGFA drives GATA2 activity in endothelial cells. SkO lacking immune cells have reduced endothelial heterogeneity.",
+    "quotes": [
+      "Inferred trajectory analysis showed that early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)",
+      "sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells",
+      "immune cells are required to fully recapitulate in vivo endothelial cell development",
+      "Predicted ligand-receptor interactions were consistent with reciprocal communication between macrophages and endothelial cells to support angiogenesis, chemotaxis and cell migration (for example, CXCL8-ACKR1 and CCL8-ACKR1)",
+      "Although expression of vascular endothelial growth factors (VEGF), VEGFA and VEGFB were increased in SkO cells, their receptors (KDR and FLT1) on SkO capillary arterioles were downregulated compared to prenatal skin",
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages, blood vessel morphogenesis by LYVE1+ macrophages and endothelial cell chemotaxis by iron-recycling macrophages",
+      "we observed fewer and less heterogeneous endothelial cells in the immunodeficient SkOs compared to prenatal skin, despite the formation of well-developed HFs, epidermis and neural cells",
+      "LE, lymphatic endothelium",
+      "Mesoderm-derived cells, including skin fibroblasts and endothelial cells, and immune cells were present throughout gestation",
+      "Visium deconvolution analysis predicted co-location of prenatal skin macrophages with endothelial cells ('early and late neurovascular microenvironments', ME1 and ME5)"
+    ]
+  }
+]

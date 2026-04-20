@@ -1,0 +1,12 @@
+{
+  "label": "NK cell",
+  "resolved_names": [
+    "NK cell",
+    "Natural Killer cell",
+    "NK"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) consistently refers to 'NK cell' as 'Natural Killer cells' in prenatal and adult human skin single-cell transcriptomic data. The UMAP visualization (Fig. 1e, Extended Data Fig. 1) labels 'NK cell' among the immune lineages in the integrated prenatal and adult skin dataset. Supplementary Tables S1-S3 link the cluster label 'NK' to Natural Killer cells. NK cells are identified in both prenatal and adult skin compartments of the atlas."
+}

@@ -1,0 +1,19 @@
+{
+  "cell_type_label": "Melanoblast",
+  "working_definition": "A neural crest-derived melanocyte precursor cell present in fetal skin, expressing MITF, SOX10, DCT, and KIT but lacking mature melanogenic enzymes. Migrates through the dermis to the epidermis and hair follicles during prenatal development.",
+  "searches_performed": [
+    "melanoblast (CL, pageSize=10)"
+  ],
+  "best_match": {
+    "cl_term": "melanoblast",
+    "cl_id": "CL:0000541",
+    "cl_definition": "A cell that originates from the neural crest and differentiates into a pigment cell.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000541 directly describes the melanoblast as a neural crest-derived pigment cell precursor, which precisely matches the fetal skin melanoblast population.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000541 (melanoblast) as exact match.",
+  "new_term_needed": false
+}

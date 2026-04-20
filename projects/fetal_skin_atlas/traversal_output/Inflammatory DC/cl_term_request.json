@@ -1,0 +1,92 @@
+{
+  "cell_type_label": "Inflammatory DC",
+  "suggested_label": "type 3 dendritic cell",
+  "definition": "A CD1c-positive myeloid dendritic cell that constitutes an inflammatory subset within the conventional dendritic cell type 2 (cDC2) compartment, characterized in humans by a CD5-negative, CD163-positive, CD14-positive surface phenotype and expression of inflammasome-related genes, EREG, FCN1, VCAN, and S100A8/S100A9 (PMID:31491384, PMID:32640257). This cell develops via a GM-CSF-dependent pathway independent of both cDC-restricted progenitors (CDP) and monocyte-restricted progenitors (cMoP), and is FLT3L-responsive (PMID:32640257). It is capable of activating naive T cells and displays a distinctive ability to prime CD8-positive, CD103-positive tissue-resident memory T cells through TGF-beta signaling (PMID:32640257). In human skin, this cell type produces IL1B and IL23A upon activation (PMID:34129014).",
+  "parent_term": {
+    "cl_id": "CL:0002399",
+    "cl_term": "CD1c-positive myeloid dendritic cell"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0002097",
+    "uberon_term": "skin of body"
+  },
+  "logical_axioms": [
+    {
+      "relation": "is_a",
+      "relation_id": "rdfs:subClassOf",
+      "filler": "CD1c-positive myeloid dendritic cell",
+      "filler_id": "CL:0002399"
+    },
+    {
+      "relation": "lacks_plasma_membrane_part",
+      "relation_id": "CL:4030046",
+      "filler": "CD5 (human)",
+      "filler_id": "PR:000001839",
+      "notes": "DC3 are CD5-negative within the cDC2 compartment, distinguishing them from DC2"
+    },
+    {
+      "relation": "has_plasma_membrane_part",
+      "relation_id": "RO:0002104",
+      "filler": "CD163 (human)",
+      "filler_id": "PR:000001501",
+      "notes": "CD163 expression distinguishes DC3 from DC2 within the cDC2 compartment"
+    },
+    {
+      "relation": "has_plasma_membrane_part",
+      "relation_id": "RO:0002104",
+      "filler": "CD14 (human)",
+      "filler_id": "PR:000001889",
+      "notes": "CD14 expression is a key marker of the most inflammatory DC3 subset"
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "DC3",
+      "scope": "exact",
+      "reference": "PMID:31491384"
+    },
+    {
+      "value": "inflammatory dendritic cell",
+      "scope": "exact",
+      "reference": "PMID:31491384"
+    },
+    {
+      "value": "CD14-positive type 3 dendritic cell",
+      "scope": "narrow",
+      "reference": "PMID:34129014"
+    },
+    {
+      "value": "CD163-positive CD14-positive DC3",
+      "scope": "narrow",
+      "reference": "PMID:32640257"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1016/j.immuni.2019.08.008",
+      "pmid": "PMID:31491384",
+      "citation": "Dutertre et al. (2019)",
+      "supports": "Identification and characterization of DC3 as a distinct CD5-CD163+CD14+ inflammatory dendritic cell subset within the cDC2 compartment; defining surface markers and expansion in SLE."
+    },
+    {
+      "doi": "10.1016/j.immuni.2020.06.002",
+      "pmid": "PMID:32640257",
+      "citation": "Bourdely et al. (2020)",
+      "supports": "DC3 ontogeny via GM-CSF-dependent pathway independent of CDP and cMoP; FLT3L responsiveness; capacity to prime CD8+CD103+ tissue-resident memory T cells."
+    },
+    {
+      "doi": "10.1126/science.aah4573",
+      "pmid": "PMID:28428369",
+      "citation": "Villani et al. (2017)",
+      "supports": "Original identification of DC2 and DC3 subpopulations within CD1c+ dendritic cells using single-cell RNA-seq; inflammasome gene expression in DC3."
+    },
+    {
+      "doi": "10.1084/jem.20202345",
+      "pmid": "PMID:34129014",
+      "citation": "Nakamizo et al. (2021)",
+      "supports": "Identification of CD14+ DC3 in human skin tissue; co-production of IL1B and IL23A in psoriasis; enrichment of DC3 in inflammatory skin."
+    }
+  ],
+  "justification": "The CL description of CL:0002399 (CD1c-positive myeloid dendritic cell) explicitly acknowledges that cDC2 'can be further subclassified into DC2 and DC3 cells' but no dedicated DC3 term exists. DC3/inflammatory DCs have been characterized as a distinct lineage with unique ontogeny (GM-CSF-dependent, CDP/cMoP-independent), distinct surface markers (CD5-, CD163+, CD14+), unique functional properties (IL1B/IL23A co-production, CD8+CD103+ T cell priming), and pathological relevance (expanded in SLE, enriched in psoriatic skin). Multiple single-cell atlas studies now annotate DC3/inflammatory DC as a separate cell state, including the Gopee et al. (2024) prenatal skin atlas where it appears in fetal skin. A dedicated CL term is needed to enable precise annotation of this increasingly recognized cell type.",
+  "ntr_markdown": "## Preferred term label\ntype 3 dendritic cell\n\n## Synonyms\n- DC3 (exact)\n- inflammatory dendritic cell (exact)\n- CD14-positive type 3 dendritic cell (narrow)\n- CD163-positive CD14-positive DC3 (narrow)\n\n## Definition\nA CD1c-positive myeloid dendritic cell that constitutes an inflammatory subset within the conventional dendritic cell type 2 (cDC2) compartment, characterized in humans by a CD5-negative, CD163-positive, CD14-positive surface phenotype and expression of inflammasome-related genes, EREG, FCN1, VCAN, and S100A8/S100A9 (PMID:31491384, PMID:32640257). This cell develops via a GM-CSF-dependent pathway independent of both cDC-restricted progenitors (CDP) and monocyte-restricted progenitors (cMoP), and is FLT3L-responsive (PMID:32640257). It is capable of activating naive T cells and displays a distinctive ability to prime CD8-positive, CD103-positive tissue-resident memory T cells through TGF-beta signaling (PMID:32640257). In human skin, this cell type produces IL1B and IL23A upon activation (PMID:34129014).\n\n## Parent cell type term\nCL:0002399 CD1c-positive myeloid dendritic cell\n\n## Anatomical structure where the cell type is found\nUBERON:0002097 skin of body (also found in blood, lymph nodes, and other tissues)\n\n## Logical axioms\n- SubClassOf: CD1c-positive myeloid dendritic cell (CL:0002399)\n- SubClassOf: lacks_plasma_membrane_part some CD5 (PR:000001839)\n- SubClassOf: has_plasma_membrane_part some CD163 (PR:000001501)\n- SubClassOf: has_plasma_membrane_part some CD14 (PR:000001889)\n\n## Key references\n- Dutertre et al. (2019) Immunity. DOI:10.1016/j.immuni.2019.08.008 PMID:31491384\n- Bourdely et al. (2020) Immunity. DOI:10.1016/j.immuni.2020.06.002 PMID:32640257\n- Villani et al. (2017) Science. DOI:10.1126/science.aah4573 PMID:28428369\n- Nakamizo et al. (2021) J. Exp. Med. DOI:10.1084/jem.20202345 PMID:34129014\n\n## Justification\nThe CL currently lacks a dedicated term for DC3/type 3 dendritic cells, despite their recognition as a functionally distinct inflammatory DC subset with unique ontogeny. The existing CL:0002399 definition acknowledges DC3 exist but does not provide a separate term. DC3 have been identified in multiple single-cell atlases and are increasingly annotated as distinct cell states in tissue studies, including the prenatal human skin atlas (Gopee et al. 2024, Nature)."
+}

@@ -1,0 +1,25 @@
+{
+  "atlas": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": [
+      "Gopee NH",
+      "Winheim E",
+      "Olabi B",
+      "et al."
+    ],
+    "year": 2024,
+    "doi": "10.1038/s41586-024-08002-x",
+    "pmcid": "PMC11578897"
+  },
+  "sko_model": {
+    "title": "Hair-bearing human skin generated entirely from pluripotent stem cells",
+    "authors": [
+      "Lee J",
+      "Rabbani CC",
+      "Gao H",
+      "et al."
+    ],
+    "year": 2020,
+    "doi": "10.1038/s41586-020-2352-3"
+  }
+}

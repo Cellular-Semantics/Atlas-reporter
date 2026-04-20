@@ -1,0 +1,74 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": ["N. Gopee", "Elena Winheim", "B. Olabi", "et al."],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "pmid": null,
+    "url": "https://www.semanticscholar.org/paper/273400864"
+  },
+  "CorpusId:218615208": {
+    "title": "The developing immune network in human prenatal skin",
+    "authors": ["R. Botting", "M. Haniffa"],
+    "year": 2020,
+    "venue": "Immunology",
+    "doi": "10.1111/imm.13192",
+    "pmid": "32173857",
+    "url": "https://www.semanticscholar.org/paper/47dac42dc1734092794a0871a7eb752fb294adbf"
+  },
+  "CorpusId:14508257": {
+    "title": "Plasmacytoid dendritic cells sense skin injury and promote wound healing through type I interferons",
+    "authors": ["Josh Gregorio", "S. Meller", "C. Conrad", "A. Di Nardo", "B. Homey", "A. Lauerma", "N. Arai", "R. Gallo", "J. Digiovanni", "M. Gilliet"],
+    "year": 2010,
+    "venue": "Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20101102",
+    "pmid": "21115688",
+    "url": "https://www.semanticscholar.org/paper/742c756d7033f47f0adbca3ed0f2bd8c55ef0042"
+  },
+  "CorpusId:199028201": {
+    "title": "The regenerative potential of skin and the immune system",
+    "authors": ["A. Tsepkolenko", "V. Tsepkolenko", "S. Dash", "A. Mishra", "A. Bader", "A. Melerzanov", "S. Giri"],
+    "year": 2019,
+    "venue": "Clinical, Cosmetic and Investigational Dermatology",
+    "doi": "10.2147/ccid.s196364",
+    "pmid": "31410045",
+    "url": "https://www.semanticscholar.org/paper/dfdc884d65479947b799404bc347decdc0aff228"
+  },
+  "CorpusId:4910432": {
+    "title": "Human dendritic cell subsets: an update",
+    "authors": ["M. Collin", "V. Bigley"],
+    "year": 2018,
+    "venue": "Immunology",
+    "doi": "10.1111/imm.12888",
+    "pmid": "29313948",
+    "url": "https://www.semanticscholar.org/paper/4dbab0ff601765a9314bc8f83a388cfea4534772"
+  },
+  "CorpusId:1598750": {
+    "title": "Plasmacytoid dendritic cells: one-trick ponies or workhorses of the immune system?",
+    "authors": ["B. Reizis", "M. Colonna", "G. Trinchieri", "F. Barrat", "M. Gilliet"],
+    "year": 2011,
+    "venue": "Nature Reviews Immunology",
+    "doi": "10.1038/nri3027",
+    "pmid": "21779033",
+    "url": "https://www.semanticscholar.org/paper/1598750"
+  },
+  "CorpusId:209230037": {
+    "title": "Re-evaluation of human BDCA-2+ DC during acute sterile skin inflammation",
+    "authors": ["Yi-Ling Chen", "T. Gomes", "Clare S. Hardman", "et al."],
+    "year": 2020,
+    "venue": "Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20190811",
+    "pmid": "31845972",
+    "url": "https://www.semanticscholar.org/paper/209230037"
+  },
+  "CorpusId:11461575": {
+    "title": "BDCA-2, a Novel Plasmacytoid Dendritic Cell-specific Type II C-type Lectin, Mediates Antigen Capture and Is a Potent Inhibitor of Interferon alpha/beta Induction",
+    "authors": ["A. Dzionek", "Y. Sohma", "J. Nagafune", "et al."],
+    "year": 2001,
+    "venue": "Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20011267",
+    "pmid": "11748275",
+    "url": "https://www.semanticscholar.org/paper/11461575"
+  }
+}

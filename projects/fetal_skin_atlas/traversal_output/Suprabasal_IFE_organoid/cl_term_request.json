@@ -1,0 +1,9 @@
+{
+  "proposed_label": "suprabasal keratinocyte of interfollicular epidermis",
+  "proposed_definition": "A keratinocyte located above the basal layer of the interfollicular epidermis that has committed to terminal differentiation, expressing differentiation keratins (KRT1, KRT10) and late cornification markers (IVL, FLG, CNFN). This cell increases in abundance after 11 post-conception weeks in human fetal skin as the epidermis matures.",
+  "parent_term": "CL:0000312 (keratinocyte)",
+  "distinguishing_features": "Post-basal position in IFE, expresses KRT1/KRT10 and terminal differentiation markers, increases after 11 PCW",
+  "references": [
+    "DOI:10.1038/s41586-024-08002-x"
+  ]
+}

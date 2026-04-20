@@ -1,0 +1,53 @@
+{
+  "markers": [
+    {
+      "gene": "PROX1",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "LYVE1",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "PDPN",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "VEGFR3",
+      "evidence_type": "known marker",
+      "source_table": "Supplementary Table S3"
+    },
+    {
+      "gene": "CCL21",
+      "evidence_type": "differential expression analysis",
+      "source_table": "Supplementary Table S6"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "LE1 cells are localized in the subcapsular sinus and medullary sinus of adult lymph nodes.",
+      "category": "spatial location",
+      "source_table": "Supplementary Data S2"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "LE1 lymphatic endothelial cells were identified based on high expression of PROX1, LYVE1, PDPN and VEGFR3.",
+      "source_file": "Supplementary Table S3",
+      "context": "Identification of lymphatic endothelial cell subtypes and their marker genes."
+    },
+    {
+      "quote": "CCL21 was among the top differentially expressed genes in LE1 compared to LE2 and other endothelial clusters.",
+      "source_file": "Supplementary Table S6",
+      "context": "Differential expression analysis of endothelial cell subtypes."
+    },
+    {
+      "quote": "LE1 cells are predominantly found in the subcapsular and medullary sinus regions.",
+      "source_file": "Supplementary Data S2",
+      "context": "Spatial mapping of endothelial cell populations in adult lymph node tissue."
+    }
+  ]
+}

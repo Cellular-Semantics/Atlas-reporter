@@ -1,0 +1,11 @@
+{
+  "label": "ILC2",
+  "resolved_names": [
+    "ILC2",
+    "group 2 innate lymphoid cell"
+  ],
+  "scope": "prenatal",
+  "tissue_context": "fetal skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas paper (Gopee et al., 2024; DOI: 10.1038/s41586-024-08002-x) identifies ILCs as present from early gestation in prenatal skin. The combined annotation 'ILC2_3' in the atlas represents the ILC2 subcluster. The paper states: 'Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation.' Supplementary Table 4 lists ILC2_3 markers including IL1RL1, GATA3, IL7R, TNFRSF18. The ILC2 identity is confirmed by GATA3 and type 2 cytokine-related gene expression."
+}

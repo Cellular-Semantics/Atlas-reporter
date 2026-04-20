@@ -1,0 +1,17 @@
+{
+  "markers": [
+    {
+      "gene": "POSTN",
+      "evidence_type": "defining marker",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "POSTN+ fibroblasts present in SkO dermal compartment",
+      "category": "location",
+      "source_table": "Extended Data Fig. 2b"
+    }
+  ],
+  "evidence_quotes": []
+}

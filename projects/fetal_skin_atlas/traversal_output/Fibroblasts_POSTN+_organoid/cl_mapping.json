@@ -1,0 +1,40 @@
+{
+  "cell_type_label": "Fibroblasts POSTN+",
+  "working_definition": "A dermal fibroblast in the hair-bearing skin organoid (SkO) defined by expression of periostin (POSTN), an extracellular matrix protein associated with activated fibroblast states. Present in the SkO dermal compartment; fibroblasts in SkO retain a prenatal-like rather than adult identity even after 19 weeks of culture.",
+  "searches_performed": [
+    "fibroblast",
+    "dermal fibroblast skin",
+    "myofibroblast"
+  ],
+  "best_match": {
+    "cl_term": "fibroblast of dermis",
+    "cl_id": "CL:0002551",
+    "cl_definition": "Any skin fibroblast that is part of some dermis.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0002551 (fibroblast of dermis) is the closest available term. No CL term exists for a POSTN-expressing or organoid-specific dermal fibroblast. Although periostin is associated with myofibroblast-like activation in some contexts, the atlas characterises this population as fibroblasts in the SkO dermal compartment without designating them as myofibroblasts, so CL:0000186 (myofibroblast cell) is not appropriate.",
+  "other_candidates": [
+    {
+      "cl_term": "fibroblast",
+      "cl_id": "CL:0000057",
+      "cl_definition": "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules.",
+      "reason_rejected": "Too general; no skin or dermis specificity."
+    },
+    {
+      "cl_term": "skin fibroblast",
+      "cl_id": "CL:0002620",
+      "cl_definition": "A fibroblast of skin.",
+      "reason_rejected": "Less specific than fibroblast of dermis; CL:0002551 better captures the dermal compartment location."
+    },
+    {
+      "cl_term": "myofibroblast cell",
+      "cl_id": "CL:0000186",
+      "cl_definition": "An animal cell that has characteristics of both a fibroblast cell and a smooth muscle cell.",
+      "reason_rejected": "The atlas does not designate POSTN+ cells as myofibroblasts. POSTN expression alone is insufficient for myofibroblast classification, which requires alpha-smooth muscle actin expression and contractile characteristics not reported for this population."
+    }
+  ],
+  "recommendation": "Use CL:0002551 (fibroblast of dermis) as a broad match. A new CL term for a POSTN+ dermal fibroblast may be warranted in future if cross-dataset evidence confirms a distinct activated fibroblast state marked by periostin in human fetal skin or organoids.",
+  "new_term_needed": true
+}

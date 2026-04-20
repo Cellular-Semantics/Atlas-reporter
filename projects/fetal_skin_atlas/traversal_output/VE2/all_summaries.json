@@ -1,0 +1,307 @@
+[
+  {
+    "snippet": "Vascular endothelial (VE)-cadherin is a well-recognized endothelial cell marker. One of its interacting partners, the TGF-\u03b2 receptor Alk1, is essential in endothelial cells for adult skin vasculature remodeling during hair homeostasis. Using single-cell transcriptomics, lineage tracing and gene targeting in mice, we characterize the cellular and molecular dynamics of skin VE-cadherin+ cells during hair homeostasis. We describe dynamic changes of VE-cadherin+ endothelial cells specific to blood and lymphatic vessels and uncover an atypical VE-cadherin+ cell population. The latter is not a predicted adult endovascular progenitor, but rather a non-endothelial mesenchymal perineurial cell type, which forms nerve encapsulating tubular structures that undergo remodeling during hair homeostasis. Alk1 acts in the VE-cadherin+ perineurial cells to maintain proper homeostatic nerve branching by enforcing basement membrane and extracellular matrix molecular signatures. Our work implicates the VE-cadherin/Alk1 duo, classically known as endothelial-vascular specific, in perineurial-nerve homeostasis. This has broad implications in vascular and nerve disease.",
+    "paper_id": "261703763",
+    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "authors": [
+      "Gopal Chovatiya",
+      "Kefei Li",
+      "Jonathan Li",
+      "Sangeeta Ghuwalewala",
+      "T. Tumbar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.43388929291199274,
+    "depth": 0,
+    "corpus_id": "CorpusId:261703763"
+  },
+  {
+    "snippet": "Blood vessels are vital life-supporting channels penetrating almost every organ and tissue in the human body. Vascular endothelial cells (ECs), the inner lining of blood vessels, not only form the endothelial barrier to maintain vascular integrity, but also actively regulate vessel function, orchestrate the local immune response, and participate in the pathogenesis of immune-mediated inflammatory diseases (1,2). Increasing evidence demonstrates that ECs are not uniform cells, but rather have highly heterogeneous molecular and functional features along the vascular bed. Functional EC heterogeneity is particularly essential to regulating immune-cell adhesion and extravasation in many inflammatory settings, such as atherosclerosis, diabetes, and senescence (3,4). Recent studies and our previous work have revealed heterogeneity within skin ECs, which are clustered into different subtypes with specific locations and functions (5,6). However, the pathophysiologic role of endothelial heterogeneity in inflammatory dermatoses is currently unknown. \n\nDiverse EC subsets together mediate the dynamic regulation of the endothelial barrier, which is necessary for pathological progression (7). The endothelial glycocalyx is a dynamic structure of proteoglycans and glycosaminoglycans covering the inner wall of blood vessels, and together with cellular junctions of ECs, it forms the endothelial barrier (8). Endothelial glycocalyx acts as the first line of defense in limiting the pathological entry of immune cells into the skin and maintaining a homeostatic milieu for proper skin function (9). Endothelial glycocalyx integrity is affected by various factors, including angiocrine factors secreted by ECs (10,11), proteases and sheddases secreted by circulating cells (12), and mechanical and other chemical stresses within the bloodstream (13,14). EC-derived angiocrine factors tightly modulate the dynamic equilibrium of endothelial glycocalyx degradation and reconstruction.",
+    "paper_id": "257506233",
+    "title": "An IGFBP7hi endothelial cell subset drives T cell extravasation in psoriasis via endothelial glycocalyx degradation",
+    "authors": [
+      "Qingyang Li",
+      "S. Shao",
+      "Zhenlai Zhu",
+      "Jiaoling Chen",
+      "Junfeng Hao",
+      "Yaxing Bai",
+      "Bing Li",
+      "E. Dang",
+      "G. Wang"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.4332423273318052,
+    "depth": 0,
+    "corpus_id": "CorpusId:257506233"
+  },
+  {
+    "snippet": "Ample evidence pinpoints the phenotypic diversity of blood vessels (BVs) and site-specific functions of their lining endothelial cells (ECs). We harnessed single-cell RNA sequencing (scRNA-seq) to dissect the molecular heterogeneity of blood vascular endothelial cells (BECs) in healthy adult human skin and identified six different subpopulations, signifying arterioles, post-arterial capillaries, pre-venular capillaries, post-capillary venules, venules and collecting venules. Individual BEC subtypes exhibited distinctive transcriptomic landscapes associated with diverse biological pathways. These functionally distinct dermal BV segments were characterized by their unique compositions of conventional and novel markers (e.g., arteriole marker GJA5; arteriole capillary markers ASS1 and S100A4; pre-venular capillary markers SOX17 and PLAUR; venular markers EGR2 and LRG1), many of which have been implicated in vascular remodeling upon inflammatory responses. Immunofluorescence staining of human skin sections and whole-mount skin blocks confirmed the discrete expression of these markers along the blood vascular tree in situ, further corroborating BEC heterogeneity in human skin. Overall, our study molecularly refines individual BV compartments, whilst the identification of novel subtype-specific signatures provides more insights for future studies dissecting the responses of distinct vessel segments under pathological conditions.",
+    "paper_id": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": [
+      "Yuliang He",
+      "C. Tacconi",
+      "L. Dieterich",
+      "Jihye Kim",
+      "G. Restivo",
+      "Epameinondas Gousopoulos",
+      "N. Lindenblatt",
+      "M. Levesque",
+      "M. Claassen",
+      "M. Detmar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.4090720705038099,
+    "depth": 0,
+    "corpus_id": "CorpusId:247731792"
+  },
+  {
+    "snippet": "In fact, ETS1 is required for EC survival and angiogenesis, whereas MECOM specifically marks mature embryonic arteries [56,65]. It is worth noting that comparative analyses of transcriptomes and proteomes often reveal a certain extent of concordance and incongruence, as cellular functions are also tightly orchestrated by multi-layered processes of post-translational modifications [66]. Future studies are thus required to validate and examine the biological relevance of different subtype-specific transcriptional regulators in adult human skin. \n\nTwo recent studies have provided new insights into the expression profiles that underpin the heterogeneity and organotypicity of healthy human cutaneous BECs [67,68]. In line with their findings, our study provides a systematic characterization of blood vascular endothelial heterogeneity in healthy adult human skin at single-cell resolution, featuring a detailed investigation of the spatial localization of seven novel subtype-specific vascular markers via extensive immunofluorescence co-staining with conventional markers. We also noted that human adult skin samples in general exhibit strong autofluorescence in the green channel (e.g., at the epidermis and extracellular matrix; Figure S6A-D), hence special caution should be taken to avoid misinterpretation and we hope that the markers presented in this study could facilitate the discernment of dermal vessel subtypes, especially in longer fluorescence wavelengths. Moreover, our findings could, to some extent, be used to identify different blood vessel subtypes in other organs. For instance, many of our BEC subtype-specific genes (Figure 1C), including the conventional markers CXCL12, ACKR1 and SELP as well as the novel markers GJA5, S100A4 and PLAUR, are also found to be differentially expressed in the respective cluster in human lung [69]. This indicates a certain level of conservation in BEC heterogeneity among different organs. These findings thereby provide an important resource for the vascular biology community and may lay the ground for future studies dissecting the differential activation or transformation of individual BV compartments under pathological conditions.",
+    "paper_id": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": [
+      "Yuliang He",
+      "C. Tacconi",
+      "L. Dieterich",
+      "Jihye Kim",
+      "G. Restivo",
+      "Epameinondas Gousopoulos",
+      "N. Lindenblatt",
+      "M. Levesque",
+      "M. Claassen",
+      "M. Detmar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.40296487458750985,
+    "depth": 0,
+    "corpus_id": "CorpusId:247731792"
+  },
+  {
+    "snippet": "The endothelia lining the lumen of arteries and veins exhibit substantial anatomical and functional differences. For instance, blood flow rates in arteries are much higher than in the venous circulation. Arterial and venous ECs thus encounter different levels of shear stress [33]. Moreover, their endothelia adopt a dissimilar organization of cell junctions to mediate intercellular adhesion and communication. While the junctions in arteries are much tighter than those in the venous vasculature, the latter manifests more loosely organized intercellular junctions to accommodate its functional requirements for leukocyte trafficking [33]. Benefiting from extensive embryonic studies on blood vascular endothelial lineage determination, an encyclopedic knowledge of the molecular specialization of vascular beds during arteriovenous differentiation has been acquired. In particular, the identities of arterial and venous ECs are marked by their differential expression of EFNB2 and its receptor EPHB4, even prior to the onset of blood circulation [36]. Since the phenotypic characteristics and functionality of distinct blood vascular compartments are finely maintained under homeostatic condition, we hereby exploited single-cell transcriptomic profiling of human dermal BVs to unveil different BEC subtypes present in adult skin and gradual changes in their marker expression patterns along the vascular tree. \n\nPost-capillary venules represent the primary sites for leukocyte trafficking and subsequently the extravasation into peripheral tissues. The characterization of the atypical chemokine receptor ACKR1 has favored the identification of intact venous vasculature in multiple murine tissues [34]. In fact, ACKR1 also represents an important molecule that distinguished the downstream venular compartments from arterioles and post-arterial capillaries in human skin, in line with recent findings that EC junctional ACKR1 was required for efficient unidirectional transmigration of neutrophils from the venular lumen during inflammation [37].",
+    "paper_id": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": [
+      "Yuliang He",
+      "C. Tacconi",
+      "L. Dieterich",
+      "Jihye Kim",
+      "G. Restivo",
+      "Epameinondas Gousopoulos",
+      "N. Lindenblatt",
+      "M. Levesque",
+      "M. Claassen",
+      "M. Detmar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.4023229234088771,
+    "depth": 0,
+    "corpus_id": "CorpusId:247731792"
+  },
+  {
+    "snippet": "The vascular endothelium is a single layer of flattened cells distributed in the inner layer of blood vessels. There are approximately 10 billion ECs in an adult, covering an area of more than 4000 m 2 and accounting for 1.5% of total body weight [1]. The luminal side of the endothelium directly contacts the blood or lymphatic fluid, while the basal side is connected to the subendothelial tissue by substrates (collagen, elastin, fibronectin, etc.) [2]. The unique anatomical location of the vascular endothelium allows it to not only serve as an important barrier separating the blood from tissues and organs but also integrate physical and neurohumoral signals from blood and surrounding tissues and organs to regulate vascular tone, coagulation, substance exchange, immune responses, and angiogenesis, which are important pathophysiological features of various diseases [3,4]. Under normal physiological conditions, ECs are in a long-term quiescent state, and when stimulated by ischemia, hypoxia, or inflammation, ECs exhibit migration, proliferation, and angiogenesis. In recent years, numerous studies have identified key roles of AA metabolism in vascular system lesions. In this article we discuss the most widely studied AAs and their role in the light of endothelial function.",
+    "paper_id": "248283291",
+    "title": "The Role of Amino Acids in Endothelial Biology and Function",
+    "authors": [
+      "Meng Li",
+      "Yanqing Wu",
+      "L. Ye"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.400084398790671,
+    "depth": 0,
+    "corpus_id": "CorpusId:248283291"
+  },
+  {
+    "snippet": "Red fonts indicate downregulated categories. j Cartoon summarizing cellular and functional dynamic changes in endothelial populations while they transit from telogen to anagen stage in vivo. If the Cdh5 + /Krt19 + cells were indeed skin EC vascular progenitors acting in the hair cycle, we reasoned they should eventually form mature vasculature. To test this, we employed lineage tracing using the Krt19-CreERT; tdTomato mice TM-induced at PD17 and stained the tissue sections at PD32 (anagen) and PD49 (telogen) with VE-cadherin, CD31 (Pecam1), CD34 and lymphatic capillary marker Lyve1 in n = 3 mice per stage. Excitingly, we did observe tdTomato + /VE-cadherin + tubular structures resembling vasculature at both hair cycle stages analyzed (Fig. 4g, h). However, to our surprise these structures never stained positive for mature EC markers CD31, CD34, and Lyve1 (Fig. 4i-k) in >45 tdTomato + tubular structures/staining/stage analyzed. Thus, our in vivo lineage tracing analysis did not support the computational prediction of Cdh5 + /Krt19 + cells as a potential EVP subpopulation that may contribute to mature vasculature formation in adult skin during the hair cycle. This left unresolved the identity and function of the Cdh5 + /Krt19 + population and of the tubular structures it formed. \n\nCdh5 + /Krt19 + cells encapsulate neurofilament-positive nerve bundles Recently, scRNA-seq of cells isolated from sciatic nerves were profiled and a Krt19 + population was reported as a putative perineurial population 37,38 , although in vivo validation was lacking. Perineurial cells are a specialized non-EC type that encases thick nerve bundles, contributing to the nerve basement membrane and to nerve structural integrity 39 .",
+    "paper_id": "261703763",
+    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "authors": [
+      "Gopal Chovatiya",
+      "Kefei Li",
+      "Jonathan Li",
+      "Sangeeta Ghuwalewala",
+      "T. Tumbar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.3934204350459841,
+    "depth": 0,
+    "corpus_id": "CorpusId:261703763"
+  },
+  {
+    "snippet": "Dear Editor: \n \nInflammatory skin diseases are sometimes accompanied by vascular abnormalities; e.g. Auspitz phenomenon in psoriasis or white dermographism in atopic dermatitis (AD)1,2. However, the detailed mechanism(s) and role of such vasculopathy in the pathogenesis of each disease are still unclear. \n \nVascular endothelial (VE)-cadherin is one of the major components of adherens junctions between endothelial cells. The critical role of VE-cadherin is vascular morphogenesis during embryogenesis. Such function of VE-cadherin is regulated by vascular endothelial cell growth factor (VEGF) signaling through the VEGF receptor leads to the increased detachment of endothelial cells and transendothelial permeability by promoting VE-cadherin internalization3. On the other hand, VE-cadherin limits the proliferation of endothelial cells by preventing the internalization of the VEGF receptor4. However, the role of VE-cadherin in the vascular abnormalities of inflammatory skin diseases has not been investigated. Full-length VE-cadherin is an insoluble transmembrane protein, whereas the extracellular domain of VE-cadherin is secreted as a soluble protein through a metalloproteinase-dependent mechanism5. Soluble VE-cadherin may function as an antagonist of full-length VE-cadherin, which is suggested by its inhibitory effect on tumor angiogenesis and tumor growth in vivo6. To date, although soluble VE-cadherin has been detected in serum in vivo, the clinical significance of serum soluble VE-cadherin levels is still unknown. Therefore, in this study, we attempted to evaluate the possibility that the serum VE-cadherin level can be a useful marker for inflammatory skin diseases. Serum samples were obtained from 13 patients with AD, 33 patients with psoriasis, and 7 patients with alopecia areata. Control serum samples were also collected from 18 healthy volunteers. Sera of 12 patients with anaphylactoid purpura, 11 patients with cutaneous polyarteritis nodosa, and 6 patients with angiosarcoma were also included as the disease controls. This research was approved by the Ethics Review Committee in Kumamoto University",
+    "paper_id": "5835107",
+    "title": "Clinical Significance of Serum Vascular Endothelial-Cadherin Levels in Inflammatory Skin Diseases",
+    "authors": [
+      "H. Kuriyama",
+      "M. Jinnin",
+      "H. Kanemaru",
+      "A. Ichihara",
+      "A. Fujisawa",
+      "Chikako Moriya",
+      "S. Fukushima",
+      "H. Ihn"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.39060998323979873,
+    "depth": 0,
+    "corpus_id": "CorpusId:5835107"
+  },
+  {
+    "snippet": "hidden in less synchronous adult tissues. At anagen, the skin hypodermis significantly expands in size and becomes filled with engorging adipocytes and blood vessels that wrap around the downward growing hair follicle bulbs, while the lymphatic vessels also remodel their caliber and change their drainage capacity 14,15 (Fig. 1a). Alk1, the known VEcadherin interacting partner, acts in all skin ECs to regulate their migration and the vasculature remodeling during hair cycle 16 . Other skin structures, such as nerves and sub-cutaneous muscles, may also be remodeled during the hair cycle 17 . A thorough characterization of the cellular and functional heterogeneity of skin VE-cadherin + lineage organization during adult skin homeostasis is currently lacking. \n\nHere, we employed 10x Genomics scRNA-seq of sorted Cdh5-CreERT 2 ;tdTomato marked cells isolated from adult mouse skin at two hair cycle stages: quiescence (telogen) and growth (anagen). This data combined with genetic lineage tracing and Alk1 gene targeting in specific skin cell types allows us to refine and redefine the cellular and functional heterogeneity of the VE-cadherin + lineage during adult tissue homeostasis. We rule out a potential VE-cadherin + endovascular progenitor (EVP) that may be responsible for vasculature growth during hair cycle. Moreover, we firmly expand the VE-cadherin lineage attributes and the function of Alk1 from vascular-endothelial into other cell types and functions, including perineurial-nerve remodeling. This work opens new avenues of investigation into vascular and nerve remodeling functions in adult regenerative tissues, with potential implications to nerve and vascular diseases.",
+    "paper_id": "261703763",
+    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
+    "authors": [
+      "Gopal Chovatiya",
+      "Kefei Li",
+      "Jonathan Li",
+      "Sangeeta Ghuwalewala",
+      "T. Tumbar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.38378079055787917,
+    "depth": 0,
+    "corpus_id": "CorpusId:261703763"
+  },
+  {
+    "snippet": "Spatial proteomic analyses [100] may offer further insights into the localization and accumulation of mesoglycan components within specific skin compartments. \n\nWhile mesoglycan has primarily been studied for its systemic effects in vascular, fibrotic, and metabolic disorders like chronic venous insufficiency, thrombophlebitis, and diabetic microangiopathy [25,34,101], our findings extend its therapeutic relevance to human skin aging. Previous studies have shown mesoglycan's ability to enhance microcirculation, reduce endothelial dysfunction, and provide anti-inflammatory and cytoprotective effects [25]. In our study, we observed similar improvements in dermal vascular markers (CD31, VEGF-A, VEGFR2), mitochondrial function (PGC1\u03b1, MTCO-1, VDAC/porin), and antioxidant defenses (NRF-2, HO-1, PRDX). These findings suggest that mesoglycan acts through mechanisms common to both vascular and skin aging, supporting its potential as senotherapeutic agent in dermatology. Importantly, our study also addresses key gaps in the literature by demonstrating mesoglycan's impact on skin architecture, pigmentation, and cellular senescence-areas that have been largely unexplored in the mesoglycan literature. Enhancements in melanocyte-associated markers such as gp100, MITF, and c-KIT indicate potential applications for treating hyperpigmentation and uneven skin tone, expanding mesoglycan's potential beyond anti-aging to more cosmetic uses. Although improved pigmentation is very likely to reflect restoration of melanocyte function in aged epidermis [19,85,102,103] and will provide improved photoaging protection, future clinical trials will have to assess the possibility of cosmetically undesired hyperpigmentation. \n\nMesoglycan's ability to suppress aging-associated markers like p16 INK4A and p-S6 while upregulating proteins such as Lamin B1, SIRT1, and collagen 17A1 positions it as a promising candidate in the growing class of senotherapeutic agents.",
+    "paper_id": "279552567",
+    "title": "Preclinical Evidence That Mesoglycan Unfolds Complex Anti-Aging Effects in Photoaged Female Facial Skin",
+    "authors": [
+      "A. Zeltzer",
+      "A. Keren",
+      "Ralf Paus",
+      "A. Gilhar"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.38131612826097827,
+    "depth": 0,
+    "corpus_id": "CorpusId:279552567"
+  },
+  {
+    "snippet_index": 14,
+    "quotes": [
+      "Ve2 [8]Ve1, Ve2 [14]Ve1, Ve2 [21]Ve1, Ve2 [30]Ve1, Ve2 [35]Ve1, Ve1 [8]Ve2, Ve1 [14]Ve2, Ve1 [21]Ve2, Ve1 [30]Ve2 and Ve1 [35]Ve2.",
+      "To generate truncation constructs Ve1DCT and Ve2D91, the Ve1 or Ve2 coding sequence was PCR amplified using primers attB-Ve1-F and attB-Ve1DCT-R, or attB-Ve2-F and attB-Ve2D91-R, respectively (Table S1). The product was cloned into the pDONR207 vector according to manufacturer's instructions (Invitrogen, Carlsbad, California) to obtain entry vectors pDONR207::Ve1DCT and pDONR207::Ve2D91."
+    ],
+    "summary": "This snippet describes the construction of various chimeric and truncation constructs involving Ve2 and its homolog Ve1 in the context of domain swap experiments, providing details on the molecular generation of 'Ve2' constructs.",
+    "categories": [
+      "development",
+      "markers",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:11716626",
+    "source_title": "Functional Analysis of the Tomato Immune Receptor Ve1 through Domain Swaps with Its Non-Functional Homolog Ve2",
+    "source_authors": "E. Fradin et al.",
+    "source_year": null,
+    "snippet": "The excised fragments were cloned into XbaIand AscI-digested pGEM-TdsVe1HA, resulting in pGVe1 [21]Ve2 [35]Ve1. To generate pGVe1 [30]Ve2 [35]Ve1, a chimeric Ve CDS encoding LRR1 to LRR30 of Ve1, LRR30 to LRR35 of Ve2 and LRR35 to the C-terminus of Ve1, the chimeric fragment between HhaI and AscI was excised from pGVe2 [35]Ve1, and the Ve1 fragment between BamHI and HhaI was excised from pGEM-TdsVe1HA. The excised fragments were then cloned into BamHIand AscI-digested pGEM-Tds, resulting in pGVe1 [30]Ve2 [35]Ve1. \n\nEach domain-swap ligation was verified by sequencing (Table S1). Subsequently, all chimeras were excised from the pGEM-Tds vectors with BamHI and AscI and cloned into BamHIand AscIdigested pB7K40, resulting in Ve2 [8]Ve1, Ve2 [14]Ve1, Ve2 [21]Ve1, Ve2 [30]Ve1, Ve2 [35]Ve1, Ve1 [8]Ve2, Ve1 [14]Ve2, Ve1 [21]Ve2, Ve1 [30]Ve2 and Ve1 [35]Ve2. \n\nTo generate truncation constructs Ve1DCT and Ve2D91, the Ve1 or Ve2 coding sequence was PCR amplified using primers attB-Ve1-F and attB-Ve1DCT-R, or attB-Ve2-F and attB-Ve2D91-R, respectively (Table S1). The product was cloned into the pDONR207 vector according to manufacturer's instructions (Invitrogen, Carlsbad, California) to obtain entry vectors pDONR207::Ve1DCT and pDONR207::Ve2D91."
+  },
+  {
+    "snippet_index": 17,
+    "quotes": [
+      "the C-terminus and the region between eLRR30 to eLRR35 of Ve1 are crucial for resistance against Verticillium infection, and that these regions appear to be non-functional in Ve2.",
+      "the observation that this region can be functionally replaced by the first 30 eLRRs of Ve2 suggests that this region is not impaired in Ve2.",
+      "All chimeric proteins in which eLRRs of Ve2 were replaced with those of Ve1 did not mediate HR upon co-expression of Ave1.",
+      "the Cterminus of Ve2 is not functional.",
+      "eLRR-RLPs typically have a short cytoplasmic tail of 20-30 amino acids lacking obvious signaling motifs, apart from motifs homologous to mammalian endocytosis motifs [8], [43]. The C-terminus of Ve2 is a rather atypical cytoplasmic tail for an eLRR-RLP, as it is exceptionally Ve2 are highlighted."
+    ],
+    "summary": "This snippet shows that Ve2, a homolog of Ve1, is non-functional in resistance against Verticillium infection, particularly due to its non-functional C-terminus, and describes structural and functional differences in its cytoplasmic tail and eLRR regions.",
+    "categories": [
+      "function",
+      "morphology",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:11716626",
+    "source_title": "Functional Analysis of the Tomato Immune Receptor Ve1 through Domain Swaps with Its Non-Functional Homolog Ve2",
+    "source_authors": "E. Fradin et al.",
+    "source_year": null,
+    "snippet": "In this manuscript we describe the analysis of a set of domain swaps between the eLRR-RLP-type cell surface receptor Ve1 and its close homolog Ve2. We show that the C-terminus and the region between eLRR30 to eLRR35 of Ve1 are crucial for resistance against Verticillium infection, and that these regions appear to be non-functional in Ve2. The finding that the first 30 eLRRs of Ve1 cannot be deleted without loss of Ve1 functionality suggests that the N-terminus is crucial for Ve1 function. Moreover, the observation that this region can be functionally replaced by the first 30 eLRRs of Ve2 suggests that this region is not impaired in Ve2. \n\nAll chimeric proteins in which eLRRs of Ve2 were replaced with those of Ve1 did not mediate HR upon co-expression of Ave1. Moreover, sgs2 plants expressing Ve1 [8]Ve2, Ve1 [14]Ve2, Ve1 [21] Ve2, Ve1 [30]Ve2, and Ve1 [35]Ve2, respectively, were susceptible towards Verticillium. These results show that the Cterminus of Ve2 is not functional. eLRR-RLPs typically have a short cytoplasmic tail of 20-30 amino acids lacking obvious signaling motifs, apart from motifs homologous to mammalian endocytosis motifs [8], [43]. The C-terminus of Ve2 is a rather atypical cytoplasmic tail for an eLRR-RLP, as it is exceptionally Ve2 are highlighted. The underlined amino acid residues in eLRR8, eLRR14-15, eLRR21, eLRR30, and eLRR35 indicate positions that were used for domain swaps. II: Number of different amino acids between Ve1 and Ve2. III: Schematic representations of Ve1 and Ve2. Red and turquoise boxes represent the 37 eLRR domains of Ve1 and Ve2, respectively. Yellow and dark blue boxes represent the non-LRR island domains of Ve1 and Ve2, respectively."
+  },
+  {
+    "snippet_index": 18,
+    "quotes": [
+      "The endogenous restriction sites HindIII, XbaI, SspI, HhaI, and NciI that are conserved between Ve1 and Ve2 (Figure 2) were used to generate the domain-swaps.",
+      "To generate the construct encoding a chimeric Ve protein that contains the first eight eLRRs of Ve1 and the remainder of the protein of Ve2 (pGVe1 [8]Ve2), the Ve1 fragment between BamHI (in the multiple cloning site) and HindIII (conserved in the Ve proteins) was excised from pGEM-TdsVe1HA and cloned into BamHIand HindIII-digested pGEM-TdsVe2HA, resulting in pGVe1 [8]Ve2.",
+      "Similarly, to generate the construct encoding a chimeric Ve protein that contains the first 14 eLRRs of Ve1 and the remainder of the protein of Ve2 (pGVe1 [14]Ve2), the Ve1 fragment between BamHI and XbaI was excised from pGEM-TdsVe1HA and cloned into BamHIand XbaI-digested pGEM-TdsVe2HA.",
+      "To generate the construct encoding a chimeric Ve protein that contains the first 21 eLRRs of Ve1 and the remainder of the protein of Ve2 (pGVe1 [21]Ve2), the Ve1 and Ve2 fragments between XbaI and SspI, and between SspI and AscI, respectively, were excised from pGEM-TdsVe1HA and pGEM-TdsVe2HA, respectively. The excised fragments were then cloned into XbaIand AscI-digested pGEM-TdsVe1HA.",
+      "To generate the construct encoding a chimeric Ve protein that contains the first 30 eLRRs of Ve1 and the remainder of the protein of Ve2 (pGVe1 [30]Ve2), the Ve1 and Ve2 fragments between BamHI and HhaI, and between HhaI and AscI, respectively, were excised from pGEM-TdsVe1HA and pGEM-TdsVe2HA. The excised fragments were then cloned into BamHIand AscI-digested pGEM-Tds."
+    ],
+    "summary": "This snippet provides technical details on domain-swapping experiments between Ve1 and Ve2, using conserved restriction sites and generating various chimeric constructs involving Ve2 and its eLRR domains.",
+    "categories": [
+      "development",
+      "morphology",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:11716626",
+    "source_title": "Functional Analysis of the Tomato Immune Receptor Ve1 through Domain Swaps with Its Non-Functional Homolog Ve2",
+    "source_authors": "E. Fradin et al.",
+    "source_year": null,
+    "snippet": "The endogenous restriction sites HindIII, XbaI, SspI, HhaI, and NciI that are conserved between Ve1 and Ve2 (Figure 2) were used to generate the domain-swaps. To generate the construct encoding a chimeric Ve protein that contains the first eight eLRRs of Ve1 and the remainder of the protein of Ve2 (pGVe1 [8]Ve2), the Ve1 fragment between BamHI (in the multiple cloning site) and HindIII (conserved in the Ve proteins) was excised from pGEM-TdsVe1HA and cloned into BamHIand HindIII-digested pGEM-TdsVe2HA, resulting in pGVe1 [8]Ve2. Similarly, to generate the construct encoding a chimeric Ve protein that contains the first 14 eLRRs of Ve1 and the remainder of the protein of Ve2 (pGVe1 [14]Ve2), the Ve1 fragment between BamHI and XbaI was excised from pGEM-TdsVe1HA and cloned into BamHIand XbaI-digested pGEM-TdsVe2HA. To generate the construct encoding a chimeric Ve protein that contains the first 21 eLRRs of Ve1 and the remainder of the protein of Ve2 (pGVe1 [21]Ve2), the Ve1 and Ve2 fragments between XbaI and SspI, and between SspI and AscI, respectively, were excised from pGEM-TdsVe1HA and pGEM-TdsVe2HA, respectively. The excised fragments were then cloned into XbaIand AscI-digested pGEM-TdsVe1HA. To generate the construct encoding a chimeric Ve protein that contains the first 30 eLRRs of Ve1 and the remainder of the protein of Ve2 (pGVe1 [30]Ve2), the Ve1 and Ve2 fragments between BamHI and HhaI, and between HhaI and AscI, respectively, were excised from pGEM-TdsVe1HA and pGEM-TdsVe2HA. The excised fragments were then cloned into BamHIand AscI-digested pGEM-Tds."
+  },
+  {
+    "snippet_index": 25,
+    "quotes": [
+      "The finding that all chimeric Ve proteins that contain a Ve2 Cterminus are not functional suggests that the cytoplasmic tail is required for Ve1-mediated resistance.",
+      "The C-terminus of Ve2 contains a PEST-like sequence that is found in proteins with short cytoplasmic half-lives and concludes with a KKX motif that may signal endoplasmic reticulum retention [6].",
+      "These findings suggest that the cytoplasmic tail is required for Ve1-mediated resistance, and is not functional in Ve2.",
+      "The cytoplasmic tail of Ve2 is remarkably longer (91 amino acids) than the cytoplasmic tail of Ve1 (Figure 2).",
+      "However, tobacco leaves expressing either of these constructs did not develop HR upon coexpression with Ave1 (Figure 7B)."
+    ],
+    "summary": "This snippet presents evidence that the cytoplasmic tail of VE2 is structurally distinct, longer, and contains putative motifs associated with protein degradation and retention, but that unlike Ve1, VE2 does not mediate immune resistance when expressed in plant cells.",
+    "categories": [
+      "function",
+      "markers",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:11716626",
+    "source_title": "Functional Analysis of the Tomato Immune Receptor Ve1 through Domain Swaps with Its Non-Functional Homolog Ve2",
+    "source_authors": "E. Fradin et al.",
+    "source_year": null,
+    "snippet": "The finding that all chimeric Ve proteins that contain a Ve2 Cterminus are not functional suggests that the cytoplasmic tail is required for Ve1-mediated resistance. The C-terminus of Ve2 contains a PEST-like sequence that is found in proteins with short cytoplasmic half-lives and concludes with a KKX motif that may signal endoplasmic reticulum retention [6]. We recently demonstrated that GFP-tagged Ve1 localizes to the plasma membrane upon transient expression in tobacco epidermal cells [28]. To address the possibility that Ve2 is nonfunctional in mediating resistance to race 1 Verticillium strains due to differential localization when compared with Ve1, we compared their subcellular localization using green fluorescent protein (GFP) tagging. These data suggest that Ve1 and Ve2 share the same localization in tobacco epidermal cells (Figure S2). \n\nTo further investigate the role of cytoplasmic tail in Ve1mediated resistance, we generated Ve1DCT and Ve1_Ve2CT, in which the coding sequence for the cytoplasmic tail of Ve1 was deleted or replaced by that of the cytoplasmic tail of Ve2, respectively (Figure 7A). Both Ve1DCT and Ve1_Ve2CT did not induce an HR when they were co-expressed with Ave1 in tobacco leaves (Figure 7B). These findings suggest that the cytoplasmic tail is required for Ve1-mediated resistance, and is not functional in Ve2. \n\nThe cytoplasmic tail of Ve2 is remarkably longer (91 amino acids) than the cytoplasmic tail of Ve1 (Figure 2). To investigate whether Ve2 can be engineered to activate immune signaling upon Ave1 perception by modulating its cytoplasmic tail, the cytoplasmic tail of Ve2 was truncated and replaced by the cytoplasmic tail of Ve1, resulting in constructs Ve2D91 and Ve2_Ve1CT, respectively (Figure 7A). However, tobacco leaves expressing either of these constructs did not develop HR upon coexpression with Ave1 (Figure 7B)."
+  },
+  {
+    "snippet_index": 26,
+    "quotes": [
+      "To identify eLRRs that are required for Ve1 protein functionality, five Ve chimeric proteins were engineered; Ve2 [8]Ve1, Ve2 [14]Ve1, Ve2 [21]Ve1, Ve2 [30]Ve1, and Ve2 [35]Ve1, in which the first 8, 14, 21, 30 or 35 eLRRs of Ve1 were replaced with those of Ve2, respectively (Figure 4A).",
+      "In contrast, tobacco leaves expressing the Ve chimera in which eLRR1 to eLRR35 of Ve1 were replaced with those of Ve2 did not show HR upon coexpression with Ave1 (Figure 4B).",
+      "Collectively, these results suggest that the region between eLRR30 and eLRR35 is required for Ve1mediated resistance, and that this region is not functional in Ve2."
+    ],
+    "summary": "This snippet demonstrates that certain extracytoplasmic leucine-rich repeat (eLRR) regions from VE2 are not functional in mediating immune resistance, highlighting structural differences between VE2 and functional homologs like Ve1.",
+    "categories": [
+      "function",
+      "morphology",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:11716626",
+    "source_title": "Functional Analysis of the Tomato Immune Receptor Ve1 through Domain Swaps with Its Non-Functional Homolog Ve2",
+    "source_authors": "E. Fradin et al.",
+    "source_year": null,
+    "snippet": "To identify eLRRs that are required for Ve1 protein functionality, five Ve chimeric proteins were engineered; Ve2 [8]Ve1, Ve2 [14]Ve1, Ve2 [21]Ve1, Ve2 [30]Ve1, and Ve2 [35]Ve1, in which the first 8, 14, 21, 30 or 35 eLRRs of Ve1 were replaced with those of Ve2, respectively (Figure 4A). Intriguingly, co-expression of Ave1 in combination with Ve2 [8]Ve1, Ve2 [14]Ve1, Ve2 [21]Ve1, and Ve2 [30]Ve1 resulted in HR in tobacco (Figure 4B). In contrast, tobacco leaves expressing the Ve chimera in which eLRR1 to eLRR35 of Ve1 were replaced with those of Ve2 did not show HR upon coexpression with Ave1 (Figure 4B). Again, stability of the chimeric Ve proteins was confirmed by immunoblotting (Figure 4C). To further investigate the chimeras, sgs2 plants were transformed with Ve2[8]Ve1, Ve2 [14]Ve1, Ve2 [21]Ve1, Ve2 [30]Ve1 and Ve2 [35]Ve1, and the resulting transgenic lines were challenged with race 1 V. dahliae. As expected based on the occurrence of HR in tobacco, expression of Ve2 [8]Ve1, Ve2 [14]Ve1, Ve2 [21]Ve1 and Ve2 [30]Ve1 in Arabidopsis resulted in Verticillium resistance, as the transgenes showed few to no symptoms (Figure 4D-4E). In contrast, plants carrying Ve2 [35]Ve1 displayed Verticillium wilt symptoms that were comparable to those of inoculated wild type plants (Figure 4D-4E). Collectively, these results suggest that the region between eLRR30 and eLRR35 is required for Ve1mediated resistance, and that this region is not functional in Ve2."
+  },
+  {
+    "snippet_index": 31,
+    "quotes": [
+      "the cells were treated with the ER\u03b2-specific agonist 8\u03b2-VE2, and cell survival, apoptosis induction and gene expression were examined.",
+      "First, different dosages of 8\u03b2-VE2 were tested in VCaP cells to determine drug efficacy (Supplementary Figure 2). Concentrations of 5 \u03bcM and 25 \u03bcM 8\u03b2-VE2 showed significant reduction of cell survival and induction of apoptosis and were used for further experiments. A concentration of 50 \u03bcM 8\u03b2-VE2 led to a diminished expression of housekeeping genes (data not shown), and were therefore excluded from further experiments."
+    ],
+    "summary": "The snippet mentions 8\u03b2-VE2, an ER\u03b2-specific agonist, used to treat VCaP cells. Different concentrations of 8\u03b2-VE2 impacted cell survival and gene expression, inducing apoptosis and reducing survival at certain doses. No direct information about the VE2 cell type is given, but the compound 8\u03b2-VE2 (possibly leading to confusion with VE2 cells) is discussed for its effects.",
+    "categories": [
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:3851006",
+    "source_title": "Prospects of estrogen receptor \u03b2 activation in the treatment of castration-resistant prostate cancer",
+    "source_authors": "J. Gehrig et al.",
+    "source_year": null,
+    "snippet": "The different stages of ADT represented by VCaP rev, VCaP, and VCaP AA were used to investigate the effect of ER\u03b2 activation on increasing ADT stages. Therefore, the cells were treated with the ER\u03b2-specific agonist 8\u03b2-VE2, and cell survival, apoptosis induction and gene expression were examined. First, different dosages of 8\u03b2-VE2 were tested in VCaP cells to determine drug efficacy (Supplementary Figure 2). Concentrations of 5 \u03bcM and 25 \u03bcM 8\u03b2-VE2 showed significant reduction of cell survival and induction of apoptosis and were used for further experiments. A concentration of 50 \u03bcM 8\u03b2-VE2 led to a diminished expression of housekeeping genes (data not shown), and were therefore excluded from further experiments."
+  }
+]

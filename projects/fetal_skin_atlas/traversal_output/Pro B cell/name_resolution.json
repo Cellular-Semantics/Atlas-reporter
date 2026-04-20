@@ -1,0 +1,12 @@
+{
+  "label": "Pro B cell",
+  "resolved_names": [
+    "Pro-B cell",
+    "Pro B cell",
+    "Progenitor B cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "fetal skin (prenatal human skin, 7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The label 'Pro B cell' is used by the authors in the cell type annotations of the prenatal skin atlas (Gopee et al., 2024, doi:10.1038/s41586-024-08002-x). Pro-B cells represent an intermediate stage in B cell development between pre-pro-B cells and pre-B cells, characterized by VDJ heavy chain rearrangement and expression of B cell transcripts MS4A1, CD79B, DNTT and HLA-DRA (Popescu et al., 2019)."
+}

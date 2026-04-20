@@ -1,0 +1,17 @@
+{
+  "markers": [],
+  "other_findings": [
+    {
+      "finding": "Pre-dermal condensate cells co-located with dendritic and lymphoid cells in spatial transcriptomics analysis",
+      "category": "location",
+      "source_table": "Supplementary Data (Extended Data Fig. 1e,f)"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Innate immune cells, such as macrophages and innate lymphoid cells (ILCs), were present from early gestation, whereas B cells and T cells emerged later, accompanying thymus, bone marrow and spleen formation from around 10 PCW",
+      "source_file": "atlas main text",
+      "context": "Gopee et al. 2024, Single-cell atlas of human prenatal skin section"
+    }
+  ]
+}

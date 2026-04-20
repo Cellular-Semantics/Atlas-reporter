@@ -1,0 +1,13 @@
+{
+  "cell_type": "Early endothelial cells",
+  "scope": "fetal",
+  "atlas_doi": "10.1038/s41586-024-08002-x",
+  "findings": {
+    "annotation_source": "Supplementary Table 3 provides DEGs used to annotate Early endothelial cells in prenatal skin. Listed as fine-grained annotation under broad 'Vascular endothelium' category.",
+    "trajectory": "Early endothelial cells serve as the root/progenitor population from which both arteriolar (capillaries, capillary arterioles, arterioles) and venular (postcapillary venules, venules) lineages differentiate (Fig. 4d, Extended Data Fig. 10a-c).",
+    "macrophage_interactions": "Macrophage subsets interact with early endothelial cells. Aggregated macrophage-endothelial ligand-receptor interactions included early endothelial cells, arterioles, capillary arterioles, capillaries, postcapillary venules and venules (Extended Data Fig. 9a, Supplementary Table 28).",
+    "organoid_comparison": "The SkO model had markedly reduced endothelial cell heterogeneity and quantity compared to prenatal skin. Immune cells are required to fully recapitulate in vivo endothelial cell development.",
+    "temporal_presence": "Endothelial cells are present throughout gestation (Fig. 1c, Extended Data Fig. 1d, Supplementary Table 4).",
+    "microenvironment": "Endothelial cells co-locate with macrophages in neurovascular microenvironments ME1 and ME5 (Fig. 1d, Extended Data Fig. 1e)."
+  }
+}

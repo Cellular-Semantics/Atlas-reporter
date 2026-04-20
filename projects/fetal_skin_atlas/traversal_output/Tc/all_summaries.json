@@ -1,0 +1,616 @@
+[
+  {
+    "snippet": "CD8 + cytotoxic T (Tc) cells are key effectors of the immune response against infection or cancer.Moreover, they are implicated in autoimmunity [219].Tc cells, including Tc17 cells, are enriched in the circulation of psoriasis patients and potently infiltrate psoriatic lesions, especially the epidermis of lesional skin [194,220].CD8 + Tc cells are also a potent source of proinflammatory cytokines, including IL-17, IL-22, and IFN-\u03b3 in psoriatic lesions [194,220].Moreover, epidermal psoriatic CD8 + Tc cells have increased expression of granzyme A, granzyme B, and perforin 1, key proteins responsible for the cytotoxic activity of CD8 + T cells [194,220].The IL-17A-producing population of CD8 + T cells contains not only conventional T cells but also innate CD8 + mucosa-associated invariant T cell (MAIT cell) that contributes to psoriatic inflammation [221].In mice, depletion of CD8 + Tc cells completely prevented the development of psoriasis [222].Therefore, Tc cells together with T H cells are critically involved in the induction and execution of psoriatic inflammation.",
+    "paper_id": "269282264",
+    "title": "The Immunology of Psoriasis\u2014Current Concepts in Pathogenesis",
+    "authors": [
+      "Izabela Siemi\u0144ska",
+      "Monika Pieniawska",
+      "Tomasz M. Grzywa"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.622756538672461,
+    "depth": 0,
+    "corpus_id": "CorpusId:269282264"
+  },
+  {
+    "snippet": "We were also interested in exploring the diversity of T cell populations in healthy human skin. T cell subsets included CD4 T cells, CD8 T cells, regulatory T cells (Tregs), tissue-resident memory T cells (Trms), na\u00efve T cells, Natural killer T cells (NK-T cells) and gamma-delta T cells (GD-T cells) (Fig. 5a). To confirm the identity of these T cell subsets, we examined specific gene expression signatures across subsets (Fig. 5b). CD4 T cells expressed helper and homing markers (CD4, IL7R, CCR7), CD8 T cells exhibited cytotoxic signatures (CD8A, CD8B, GZMA, GNLY), and naive T cells expressed immature T cell genes (CCR7, SELL, TCF7). Trm cells expressed high levels of CD69, CXCR6, and ITGAE, indicative of long-term residency in the skin, and Tregs expressed FOXP3, CTLA4 and IL2RA, defining their immune-modulatory function. NK-T cells exhibit strong expression of KLRB1 and NKG7, consistent with their innate-like activation potential and gamma-delta T cells expressed innate-like receptors (TRGV9, TRDC). The different T cell subsets demonstrated site-specific variations in abundance, with scalp consisting of the highest percentage of CD4 T cells whereas face consisted of the highest percentage of Tregs (Fig. 5c). Interestingly, proportions of CD8 T cells were fairly uniform across anatomical sites, suggesting that T cell landscapes vary depending on anatomical site-specific functional requirements (Fig. 5c). \n\nDifferential gene expression across body sites (Fig. 5d-j, Supplementary Table S9) revealed that acral T cells were less distinct relative to T cells from other anatomical sites, as they exhibited relatively few differentially expressed genes. Arm T cells upregulated cytotoxic and metabolic genes (HOPX, MT-CO1, CD8B) while downregulating inflammatory markers (HLA-DRB1, CCR6, CCL5).",
+    "paper_id": "278715497",
+    "title": "A Transcriptomic Atlas of Healthy Human Skin Links Regional Identity to Inflammatory Disease",
+    "authors": [
+      "Sahiti Marella",
+      "Rachael Bogle",
+      "Jennifer Fox",
+      "L. Tsoi",
+      "Xianying Xing",
+      "Yiqian Gu",
+      "J. Kirma",
+      "M. Sarkar",
+      "Vincent van Drongelen",
+      "Benjamin Klein",
+      "Jeff H. Kozlow",
+      "Paul W. Harms",
+      "Katherine A. Gallagher",
+      "S.Chakravarthy Naik",
+      "Vito W. Rebecca",
+      "Bogi Andersen",
+      "Mio Nakamura",
+      "J. Kahlenberg",
+      "R. Modlin",
+      "A. Billi",
+      "J. Gudjonsson"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.5852603961571796,
+    "depth": 0,
+    "corpus_id": "CorpusId:278715497"
+  },
+  {
+    "snippet": "The skin is a very tolerant organ. It forms a primary barrier against environmental insults and is colonized by a large array of microorganisms against which it does not mount an immune response. KC have been shown to be key players in mediating the tolerant state of skin, strongly suggesting that the relationship between cytotoxic CD8 + T cells and KC targets may be unique and complex. \n\nCytotoxic CD8 + T cells are highly dynamic once activated. They have been shown to rapidly traffic in tissue in response to cytokine with a primary function to find and kill target cells expressing cognate antigen on their surface. These cells are certainly capable of killing KC targets in vitro [1,2] and have been shown to effect skin graft rejection in vivo [3]. Activated T cells were shown in vivo to traffic to inflamed skin, even in the absence of cognate antigen [4]. The ability of a CD8 + T cell to move and seek out antigen presenting cells and target cells is clearly important to their cytotoxic function, however there are few studies examining the relationship between the kinematics of CD8 + T cells and their ability to kill non-tumour targets. We use the term kinematics to specifically to refer to the local motility and dynamic behavior of CD8 T cells as distinct from T cell traffic into and out of tissues. CD8 + T cells kill via a variety of well-described mechanisms including through perforin and granzymes via direct cell-to-cell contact with targets at the immunological synapse, interaction of Fas-ligand to bind with Fas that may or may not require direct contact or proximity to target cells, and via release of cytokines such as IFN-gamma or TNF-alpha that may induce apoptosis in target and bystander cells. Which mechanisms prevail in a particular circumstance are unclear, but tissue-dependent and possibly signal dependent factors likely play an important role and account for some of the variability in T cell effector responses. \n\nDespite their significance in skin disease, it is not known how CD8 + T cells kill KC.",
+    "paper_id": "16070282",
+    "title": "The Kinematics of Cytotoxic Lymphocytes Influence Their Ability to Kill Target Cells",
+    "authors": [
+      "P. Bhat",
+      "G. Leggatt",
+      "K. Matthaei",
+      "I. Frazer"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.5609889826435375,
+    "depth": 0,
+    "corpus_id": "CorpusId:16070282"
+  },
+  {
+    "snippet": "Cytotoxic T-cells are anticipated to migrate into areas of foreign/tumor antigens in response to chemokines, such as CxCL-9 [27,28]. To investigate CD8 + T-cell infiltration, adjacent tissues sections were IHC stained for LANA and CD8 expression, respectively. Regions with high numbers of LANA + cells and high CD8 + T-cells on the adjacent slides were identified and statistically compared ( Figure 3A). Overall, there were more CD8 + T-cells in KS tissue sections compared to normal skin. There was a lack of co-localization of cells with LANA signal and CD8 + T-cells on the adjacent section from the same tissue biopsy in 12 out of 13 analyzed KS tissues. Although CD8+ T-cells were present, but they were sparsely distributed within LANA + regions of both EpKS and EnKS tissues ( Figure 3A), with the majority found in regions devoid of LANA (P < 0.0001) ( Figure 3B). These results were validated with identical findings using a different source of anti-CD8 antibody (Supplementary Figure 1).\n\nThe use of adjacent tissues sections with traditional single-color IHC to infer co-localization of markers is challenging, as two sequential sections need to be overlaid to determine co-localization. In order to solve this challenge and re-examine the relationship between infected cells and TIIC, we further utilized DIF to stain for LANA and CD8 + T-cells on the same tissue section. Consistent with the IHC results, there was a lack of colocalization of LANA + cells and CD8 + T-cells on the same  Figure 4A). While CD8 + T-cells were detectable in LANA + regions of the tissues, their distribution was sparse and less abundant compared to regions devoid of LANA (P < 0.0001) ( Figure 4B). Importantly, the proportions of CD8 + T-cells in LANA + regions were similar to proportions in normal skin for most tumor biopsies (Supplementary Figure 2). However, CD4 + (Helper T-cells), CD19 + (B-cells) and CD56 + (NK cells) cells were nearly absent in most KS tissues, and when present, were at levels ind",
+    "paper_id": "218586066",
+    "title": "Lack of CD8+ T-cell co-localization with Kaposi\u2019s sarcoma-associated herpesvirus infected cells in Kaposi\u2019s sarcoma tumors",
+    "authors": [
+      "S. Lidenge",
+      "F. Tso",
+      "Owen Ngalamika",
+      "Jaydeep Kolape",
+      "J. Ngowi",
+      "J. Mwaiselage",
+      "C. Wood",
+      "J. West"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.5500241891672009,
+    "depth": 0,
+    "corpus_id": "CorpusId:218586066"
+  },
+  {
+    "snippet": "The prevailing \u2018division of labor\u2019 concept in cellular immunity is that CD8+ T cells primarily utilize cytotoxic functions to kill target cells, while CD4+ T cells exert helper/inducer functions. Multiple subsets of CD4+ memory T cells have been characterized by distinct chemokine receptor expression. Here, we demonstrate that analogous CD8+ memory T-cell subsets exist, characterized by identical chemokine receptor expression signatures and controlled by similar generic programs. Among them, Tc2, Tc17 and Tc22 cells, in contrast to Tc1 and Tc17\u2009+\u20091 cells, express IL-6R but not SLAMF7, completely lack cytotoxicity and instead display helper functions including CD40L expression. CD8+ helper T cells exhibit a unique TCR repertoire, express genes related to skin resident memory T cells (TRM) and are altered in the inflammatory skin disease psoriasis. Our findings reveal that the conventional view of CD4+ and CD8+ T cell capabilities and functions in human health and disease needs to be revised. We classically consider the T cell compartment divided into cytotoxic CD8+\u2009T cells and multiple, different helper CD4+\u2009T cell subsets. Here the authors demonstrate that distinct memory CD8+\u2009T cell subsets phenotypically inhabit CD4+\u2009T cell like populations including some with helper-like characteristics.",
+    "paper_id": "229176627",
+    "title": "SLAMF7 and IL-6R define distinct cytotoxic versus helper memory CD8+ T cells",
+    "authors": [
+      "L. Loyal",
+      "Sarah Warth",
+      "K. J\u00fcrchott",
+      "Felix M\u00f6lder",
+      "Christos Nikolaou",
+      "N. Babel",
+      "M. Nienen",
+      "S. Durlanik",
+      "Regina Stark",
+      "B. Kruse",
+      "M. Frentsch",
+      "R. Sabat",
+      "K. Wolk",
+      "A. Thiel"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.5359879106391638,
+    "depth": 0,
+    "corpus_id": "CorpusId:229176627"
+  },
+  {
+    "snippet": "We did not see significant differences in the prevalence other myeloid populations in the limited number of samples we were able to examine (Figures S1H-S1J). \n\nFetal Skin Preferentially Contains CD4 + and CD8 + Tconv with a Naive, Proliferative Phenotype As CD4 + and CD8 + ab T cells represented the largest lymphocyte population in utero, we next sought a more in-depth understanding of features that might distinguish these populations in fetal versus adult skin. To ensure all CD4 + and CD8 + single-positive T cells were captured in this analysis, we returned to the raw Cy-TOF data and identified these populations based on a traditional gating strategy with minimum cut-offs for lineage marker expression (Figure S2A). UMAP analysis of CD4 + and CD8 + T cells each demonstrated significant age-dependent clustering (Figures 2A  and 2B), which was also reflected in accompanying principalcomponent analysis (PCA) (Figures 2C and 2D). \n\nSub-clustering of fetal and adult CD4 + T cells revealed three major populations (Figures 2E-2G). Cluster C expressed Foxp3, CD25, and CTLA4 consistent with a regulatory T cell (Treg) phenotype, whereas clusters A and B were identifiable as two subsets of conventional CD4 + T cells (Tconv) (Figures 2H and S2B-S2D). CD4 + Tconv cluster A, which was much more prevalent in adult skin, had greater expression of CD25 and CD45RO. In contrast, CD4 + Tconv cluster B, found exclusively in fetal skin, demonstrated comparatively higher levels of Ki-67, a marker of recent cell cycling, CD3, CD4, Foxp3, and CD27, which is expressed often on naive T cells (Figures 2H,  S2E, and S2F). 26 or CD8 + T cells, 6 clusters were readily distinguishable (Figures 2I-2K). Clusters A and B, the two largest CD8 + subsets in adult skin, were consistently enriched in adult as compared to fetal samples.",
+    "paper_id": "227334677",
+    "title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "authors": [
+      "M. Dhariwala",
+      "Dhuvarakesh Karthikeyan",
+      "Kimberly S. Vasquez",
+      "S. Farhat",
+      "Antonin Weckel",
+      "Keyon Taravati",
+      "Elizabeth G. Leitner",
+      "S. Clancy",
+      "M. Pauli",
+      "M. Piper",
+      "Jarish N. Cohen",
+      "J. Ashouri",
+      "Margaret M. Lowe",
+      "M. Rosenblum",
+      "T. Scharschmidt"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.5162036232764954,
+    "depth": 0,
+    "corpus_id": "CorpusId:227334677"
+  },
+  {
+    "snippet": "On line 77 and in later parts of the paper, the rationale for focussing on the tissue homing marker CLA and on the relationship between \"helper\" CD8+ T cells and tissue-resident memory T cells in the skin should be clarified. Line 92-93 -the authors mention that NK, NKT and ILC1 cells expressed SLAMF7 but not IL-6R however these cell types are not shown in the associated plots (Extended Data Figure 3b,c).\n\nTypo on line 99 -should be Tc17+1 not Tc1+1.\n\nThe conclusion the authors are trying to make in the paragraph starting at line 105 should be clarified. Are they suggesting a difference between CD4+ and CD8+ T cells in that single pathogen-specific CD4+ T cells can differentiate into the whole range of Th subsets, whilst CD8+ T cells either become helper (Tc2, Tc17, Tc22) or cytotoxic (Tc1, Tc17+1)?\n\nWhat are the genes that are contributing to PC1 in Figure 4e? i.e. what is it that separates the \"helper\" CD8+ T cells and skin T cells from the Tc1/Tc17+1 cells and the CLA+/CLA-TEM cells?\n\nWe would like to thank the referees for the time and effort spent on evaluating our work, the positive feedback as well as the critical but fair comments that helped us to significantly improve the manuscript. We hope that the enclosed point-by-point reply, together with the revised manuscript and figures, will clarify all perceived inconsistencies and alleviate all remaining concerns making our study now suitable for publication.",
+    "paper_id": "229176627",
+    "title": "SLAMF7 and IL-6R define distinct cytotoxic versus helper memory CD8+ T cells",
+    "authors": [
+      "L. Loyal",
+      "Sarah Warth",
+      "K. J\u00fcrchott",
+      "Felix M\u00f6lder",
+      "Christos Nikolaou",
+      "N. Babel",
+      "M. Nienen",
+      "S. Durlanik",
+      "Regina Stark",
+      "B. Kruse",
+      "M. Frentsch",
+      "R. Sabat",
+      "K. Wolk",
+      "A. Thiel"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.5155897507697983,
+    "depth": 0,
+    "corpus_id": "CorpusId:229176627"
+  },
+  {
+    "snippet": "'Inactive' cluster 1 showed high expression of mitochondrial genes and top genes associated with T cell suppression (TXNIP, BTG1, AREG) without cytotoxic activation, suggesting cell death through basal turnover, and represented < 1.5% of CD8 + Tconv in normal, affected, and unaffected skin. 'Inactive' clusters 2 and 4 had high expression of IL7R, which is downregulated upon antigen-induced activation 29 , indicating populations unstimulated by the drug antigen during SJS/TEN. Indeed cluster 2 was the predominant CD8 + Tconv subset in normal skin, unaffected skin, and burn blister fluid (Fig. 2a). In contrast, cluster 3 expressed cytotoxic markers GNLY, GZMB, and PRF1, but not FASLG, and was the predominant subset in SJS/TEN-affected skin and blister fluid (Fig. 2a). \n\nThe cytotoxic CD8 + Tconv enriched in SJS/TEN affected skin and blister fluid are locally proliferating CD8 + T RM T cells Aside from markers of cytotoxicity, CD8 + Tconv cluster 3 also expressed genes associated with cell remodeling and/or proliferation (STMN1, TUBA1B, TUBB), and expressed RNA and protein for CD103 (ITGAE), CD49a (ITGA1), and CD69 (CLEC2C) (Fig. 2b), suggesting a population of expanded cytotoxic CD8 + tissue-resident memory (T RM ) T cells 30 . Importantly, our data mirror the minor representation of similarly cytotoxic CD8 + T RM T cells reported in published scRNA-seq datasets of full-thickness skin biopsies from healthy individuals 31,32 , and this population has demonstrated the capacity to proliferate in response to local antigen encounter in the skin 33 . However, not all cells in the cytotoxic CD8 + Tconv cluster expressed the same T RM -defining markers.",
+    "paper_id": "273200289",
+    "title": "Multiomic single-cell sequencing defines tissue-specific responses in Stevens-Johnson syndrome and toxic epidermal necrolysis",
+    "authors": [
+      "A. Gibson",
+      "Ramesh Ram",
+      "Rama Gangula",
+      "Yueran Li",
+      "E. Mukherjee",
+      "Amy Palubinsky",
+      "Chelsea N Campbell",
+      "Michael Thorne",
+      "K. Konvinse",
+      "Phuti Choshi",
+      "Pooja Deshpande",
+      "Sarah Pedretti",
+      "M. Fear",
+      "F. Wood",
+      "Richard T. O\u2019Neil",
+      "Celestine N. Wanjalla",
+      "Spyros A. Kalams",
+      "Silvana Gaudieri",
+      "R. Lehloenya",
+      "S. Bailin",
+      "A. Chopra",
+      "Jason A. Trubiano",
+      "Jason A. Trubiano",
+      "J. Peter",
+      "Simon A. Mallal",
+      "Elizabeth J Phillips"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.5146518956795172,
+    "depth": 0,
+    "corpus_id": "CorpusId:273200289"
+  },
+  {
+    "snippet": "To characterize the NK cells of CTCL skin further, we performed a detailed phenotypic analysis. Although the phenotype of CTCL skin CD8 + T cells has been investigated in previous studies with regard to granzyme B levels, immune check point proteins and inhibitory receptors, a thorough comparison to healthy skin CD8 + T cells and to CTCL skin NK cells was lacking. We found that significantly fewer NK cells and CD8 + T cells expressed the activation marker CD69 and the cytotoxic protein granzyme B in CTCL skin compared to healthy skin (Figures 3A, B; Supplementary Figures S4A, B). Furthermore, the frequency of CTCL skin NK cells that expressed CD16, crucial for eliciting antibody-dependent cellular cytotoxicity (ADCC), was unaltered but had a tendency towards downregulation (p=0.061) (Figure 3C). The activating receptor NKp46 was expressed at higher levels on CTCL skin NK cells compared to healthy skin (Figure 3D) and fewer CTCL skin NK cells and CD8 + T cells expressed the inhibitory surface receptor TIM3 (Figure 3E; Supplementary Figure S4E). A smaller fraction of the CTCL skin NK cells expressed the maturation marker CD57 (Figure 3F), while there was no difference in CD57 expression between CD8 + T cells from CTCL and healthy skin (Supplementary Figure S4F). The expression of the inhibitory receptor NKG2A and the checkpoint proteins PD1 and CD73 were similar on both NK cells and CD8 + T cells in CTCL and healthy skin, but the immune checkpoint protein LAG3 was downregulated on CTCL NK cells compared to healthy NK cells (Figures 3G-J; Supplementary Figures S4G-J). To identify differences in NK cell phenotypes in patch vs plaque manifestations of CTCL, patients were grouped depending on the type of skin lesion (Figure 3). No significant differences were however observed, possibly due to the small sample size.",
+    "paper_id": "261181161",
+    "title": "Skin infiltrating NK cells in cutaneous T-cell lymphoma are increased in number and display phenotypic alterations partially driven by the tumor",
+    "authors": [
+      "Andrea Scheffschick",
+      "J. Nenonen",
+      "Mengmeng Xiang",
+      "A. H. Winther",
+      "M. Ehrstr\u00f6m",
+      "M. Wahren-Herlenius",
+      "L. Eidsmo",
+      "H. Brauner"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.499111291370029,
+    "depth": 0,
+    "corpus_id": "CorpusId:261181161"
+  },
+  {
+    "snippet": "IntroductionCytotoxic CD8+ T-cell lymphomas are only rarely encountered and thus remain only poorly characterized. Our aim was to collect and correlate clinical and histological data of CD8+ skin lymphoma infiltrates to obtain a proper subtype assignment of CD8+ skin lymphoma infiltrates and to derive putative prognostic markers thereof.MethodsFormalin-fixed and paraffin-embedded (FFPE) tissue of 35 patients with CD8+ cytotoxic cutaneous T-cell lymphoma infiltrates was retrieved from the archives of the Institute of Pathology and the Department of Dermatology, University Hospital Wuerzburg, dating back from 1998 until 2015. Cytological, histological, immunohistochemical and molecular genetic features were assessed and correlated with respective clinical data.ResultsThe identified cases of CD8+ cytotoxic atypical lymphoproliferative infiltrates of the skin (n\u00a0=\u00a035) comprised 13 cases of mycosis fungoides (MF)/S\u00e9zary syndrome (SS), 4 cases of subcutaneous panniculitis-like T-cell lymphoma (SPTCL), 5 cases of primary cutaneous acral CD8+ lymphoma [formerly indolent CD8+ lymphoid proliferation (ILP)] and 1 case of aggressive epidermotropic primary cutaneous T-cell lymphoma (AECTCL). Moreover, nine cases were classified as primary cutaneous peripheral T-cell lymphoma, not otherwise specified (PTCL-NOS) and three cases as systemic PTCL-NOS. Multiple skin lesions, a high proliferative index and especially a final subtype attribution to AECTCL or systemic PTCL-NOS were associated with a worse survival. Coexpression of CD68 by tumor cells was exclusively observed in indolent acral CD8+ T-cell lymphoma and thus indicated an invariably benign clinical course. No further distinctive markers could be derived from our analysis.ConclusionCutaneous infiltrates of CD8+ cytotoxic T-cell lymphoma comprise clinically and histologically heterogeneous entities of either",
+    "paper_id": "9335048",
+    "title": "Cutaneous CD8+ Cytotoxic T-Cell Lymphoma Infiltrates: Clinicopathological Correlation and Outcome of 35 Cases",
+    "authors": [
+      "M. Wobser",
+      "T. Reinartz",
+      "S. Roth",
+      "M. Goebeler",
+      "A. Rosenwald",
+      "E. Geissinger"
+    ],
+    "year": null,
+    "url": "",
+    "score": 0.49758086645378324,
+    "depth": 0,
+    "corpus_id": "CorpusId:9335048"
+  },
+  {
+    "snippet_index": 10,
+    "quotes": [
+      "CD8 + T cells segregate into two major effector subsets based on expression of genes involved in cellular cytotoxicity (Cytotoxic module) and myriad cytokines and chemokines (Cytokine module).",
+      "These predominant effector states within activated human CD8 + T cells are consistent with results showing that mouse CD8 + T cell activation triggers an effector differentiation program 59,60 .",
+      "Interestingly, the tumor-associated CD8 + T cells exhibited transcriptional features similar to healthy activated CD8 + T cells including expression of multiple effector molecules such as perforin, IFN-\u03b3 and chemokines."
+    ],
+    "summary": "This study identifies two major effector states of activated human CD8+ T cells\u2014one related to cytotoxic function and the other to cytokine/chemokine production. Tumor-associated CD8+ T cells maintain cytotoxic features such as perforin and IFN-\u03b3 expression.",
+    "categories": [
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:91685749",
+    "source_title": "A single-cell reference map for human blood and tissue T cell activation reveals functional states in health and disease",
+    "source_authors": "P. Szabo et al.",
+    "source_year": null,
+    "snippet": "cells require these markers to localize within the tissue architecture, and/or their loss of expression enables egress to circulation remains to be established. 1 6 Our results reveal conserved functional states for human blood and tissue-derived T cells.\n\nCD8 + T cells segregate into two major effector subsets based on expression of genes involved in cellular cytotoxicity (Cytotoxic module) and myriad cytokines and chemokines (Cytokine module). These predominant effector states within activated human CD8 + T cells are consistent with results showing that mouse CD8 + T cell activation triggers an effector differentiation program 59,60 . We identified two major activation states that were not associated with effector function: one associated with proliferation and IL-2 production, and a second, CD4-enriched state characterized by induction of a panoply of IFN-responsive genes including IFIT3, MX1, IRF7, and others. Induction of this IFN-response state is due to TCR-mediated IFN-\u03b3 production (likely autocrine responses), and appears as a kinetic intermediate early after CD4 + T cell activation that subsequently shuts down upon induction of the proliferative program. We propose that the IFN-responsive state for human CD4 + T cells may serve an autoregulatory function to temper high IFN levels produced by predominant memory responses, and ongoing responses to persistent viruses.\n\nThis scRNA-seq analysis provides a high resolution map for human T cells from which to define T cell states in disease. We demonstrate this approach by projecting T cell profiles from human tumors onto our reference map. We identify predominant CD8 + effector populations, Tregs, and resting (but not activated) CD4 + T cells in datasets derived from diverse tumor types (breast, lung, skin, colon). Interestingly, the tumor-associated CD8 + T cells exhibited transcriptional features similar to healthy activated CD8 + T cells including expression of multiple effector molecules such as perforin, IFN-\u03b3 and chemokines. We also examined the expression of multiple markers associated with exhaustion, a functionally hyporesponsive state found in tumorinfiltrating T cells targeted by checkpoint blockade immunotherapies 53,55,61"
+  },
+  {
+    "snippet_index": 11,
+    "quotes": [
+      "In recent studies in chronic inflammatory conditions, CD8 + T cells were shown to mainly exert a cytokine-mediated function instead of their conventional cytotoxic effects with an important role of granzyme K. 12 Therefore, we performed a focused analysis of CD8 + T cells.In skin, at the sc-RNAseq level, the following CD8 + subclusters were formed: na\u00efve, proliferating, skin resident exhausted like, granzyme K (GZMK + ) and granzyme B (GZMB + ) positive effector cells.Of these, only the subset of CD8 effector GZMB + cells were significantly enriched in SSc skin (figure 1G, online supplemental figure 1D).Flow cytometry analysis in blood also showed increased (twofold) presence of CD8 + GZMB + cells in SSc compared with healthy donors (figure 1H)."
+    ],
+    "summary": "Here, CD8+ T cells in skin are divided into multiple subsets at the single-cell RNA-seq level, including cytotoxic (GZMB+ and GZMK+) and exhausted-like populations. In systemic sclerosis (SSc), there is a significant enrichment of CD8+ GZMB+ effector cells, which are also increased in the blood.",
+    "categories": [
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:266349032",
+    "source_title": "CD7 activation regulates cytotoxicity-driven pathology in systemic sclerosis, yielding a target for selective cell depletion",
+    "source_authors": "T. Papadimitriou et al.",
+    "source_year": null,
+    "snippet": "Next, we analysed the potential function of these enriched cell populations in SSc skin.For this, we used gene set enrichment analyses based on each cluster''s differentially expressed genes with Wiki pathways as reference dataset.Both the skin cytotoxic T and NK cell clusters from each sc-dataset were not only associated with cell cytolytic pathways, but were also the only clusters from SSc skin that were specifically enriched for gene sets related to lung fibrosis, proinflammatory and profibrotic manifestations relative to healthy skin (figure 1F, online supplemental figure 2C).These pathways included profibrotic genes such as TGFB1, XCL1, OSM, CCL4, IL4, IL17, FGF and PDGF (for a complete overview see online supplemental figure 3).This indicates that cytotoxic cells are not only involved in cytotoxicity but also in directing profibrotic pathophysiological processes.\n\nIn recent studies in chronic inflammatory conditions, CD8 + T cells were shown to mainly exert a cytokine-mediated function instead of their conventional cytotoxic effects with an important role of granzyme K. 12 Therefore, we performed a focused analysis of CD8 + T cells.In skin, at the sc-RNAseq level, the following CD8 + subclusters were formed: na\u00efve, proliferating, skin resident exhausted like, granzyme K (GZMK + ) and granzyme B (GZMB + ) positive effector cells.Of these, only the subset of CD8 effector GZMB + cells were significantly enriched in SSc skin (figure 1G, online supplemental figure 1D).Flow cytometry analysis in blood also showed increased (twofold) presence of CD8 + GZMB + cells in SSc compared with healthy donors (figure 1H)."
+  },
+  {
+    "snippet_index": 12,
+    "quotes": [
+      "In vitiligo, a considerable proportion of CD8 T RM persists in the perilesional skin of patients with stable disease, especially in the area where melanocytes are disappearing [39,65,66].",
+      "Notably, these cells preserve cytotoxic function with the expression of pro-inflammatory TNF-\u03b1 and IFN-\u03b3 upon melanocyte antigen-specific activation [59].",
+      "a small population of CD8 T cells expressing cutaneous lymphocyte-associated antigen (CLA), CCR6, CD103, and IL-23R remains in clinically resolved plaques of psoriasis [69]. Locally maintained T RM cells are capable of initiating in situ inflammation characterised by IL-17 production when interacting with antigens presented by DCs [70][71][72]."
+    ],
+    "summary": "Skin-resident memory CD8+ T cells persist in vitiligo and psoriasis lesions, retaining cytotoxic potential and the capacity for inflammatory cytokine production (TNF-\u03b1, IFN-\u03b3, IL-17). They express markers such as CLA, CCR6, CD103, and IL-23R.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:255893455",
+    "source_title": "Exploring Mast Cell\u2013CD8 T Cell Interactions in Inflammatory Skin Diseases",
+    "source_authors": "Yiqiao Chen et al.",
+    "source_year": null,
+    "snippet": "Similar to MCs, CD8 T cells have been reported to play a role in the reoccurrence of skin disease. In vitiligo, a considerable proportion of CD8 T RM persists in the perilesional skin of patients with stable disease, especially in the area where melanocytes are disappearing [39,65,66]. Notably, these cells preserve cytotoxic function with the expression of pro-inflammatory TNF-\u03b1 and IFN-\u03b3 upon melanocyte antigen-specific activation [59]. Although lesions may occur in new areas, it is well known that recurrence often appears at previously healed sites, suggesting the concept of immune memory [67]. In allergic contact dermatitis, the number of epidermal CD8 T RM cells was found to correlate with the intensity of disease flare-up reactions and are responsible for massive infiltration of neutrophils to the sites with chemokine-induced allergen rechallenge [68]. Similarly, a small population of CD8 T cells expressing cutaneous lymphocyte-associated antigen (CLA), CCR6, CD103, and IL-23R remains in clinically resolved plaques of psoriasis [69]. Locally maintained T RM cells are capable of initiating in situ inflammation characterised by IL-17 production when interacting with antigens presented by DCs [70][71][72]. This corresponds to the persisting upregulation of several disease-related inflammatory genes (IL-17, IL-22, and IFN-\u03b3) and CD8 T-cell-associated genes (lymphotoxin-\u03b2) for some time after clinically effective treatment with etanercept [67,73]. Therefore, these data support the idea that skin resident MCs and autoreactive CD8 T RM cells form localised disease memory with a residual inflammatory signature and their subsequent pathological activation causes tissue-specific inflammation, functioning in both chronic lesions and site-specific recurrence of diseases [49,65,67]."
+  },
+  {
+    "snippet_index": 13,
+    "quotes": [
+      "the CD8+ T cell subsets Tc1, Tc2, Tc17, Tc1+1, and Tc22 express the same set of chemokine receptors and utilize the same differentiation programs based on T-bet, Gata3, ROR\u03b3t, and aryl hydrocarbon receptor as do CD4+ T cells (Loyal et al., manuscript under review).",
+      "While Tc1 and Tc17+1 CD8+ T cells display a classical cytotoxic phenotype, Tc2, Tc17, and Tc22 lack the capability to kill target cells and express the Th cell-typical molecule CD40L instead (Loyal et al., manuscript under review; [50]).",
+      "Cheuk et al. demonstrated that, in human skin, a significant fraction of CD8+ T cells lack cytotoxic features including the expression of CD49a and instead produce IL-17 [51]."
+    ],
+    "summary": "CD8+ T cells are divided into functional subsets (Tc1, Tc2, Tc17, etc.), differing in cytotoxic ability and cytokine production. Some subsets show classical cytotoxic function, while others are non-cytotoxic and provide help via molecules like CD40L and secretion of cytokines such as IL-17 in the skin.",
+    "categories": [
+      "markers",
+      "function",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:133604269",
+    "source_title": "T cell pathology in skin inflammation",
+    "source_authors": "R. Sabat et al.",
+    "source_year": null,
+    "snippet": "the CD8+ T cell subsets Tc1, Tc2, Tc17, Tc1+1, and Tc22 express the same set of chemokine receptors and utilize the same differentiation programs based on T-bet, Gata3, ROR\u03b3t, and aryl hydrocarbon receptor as do CD4+ T cells (Loyal et al., manuscript under review). While Tc1 and Tc17+1 CD8+ T cells display a classical cytotoxic phenotype, Tc2, Tc17, and Tc22 lack the capability to kill target cells and express the Th cell-typical molecule CD40L instead (Loyal et al., manuscript under review; [50]). In contrast to CD4+ T cells, the differentiation flexibility is restricted among CD8+ T cells, with a certain flexibility to gain Tc1 or Tc17+1 phenotype on the one side or to gain Tc2, Tc17, or Tc22 phenotype on the other side, but with very little clonal overlap between these two groups (Loyal et al., manuscript under review). They share the ability to secrete IL-13 and provide CD40Ldependent help (Loyal et al., manuscript under review; [50]). This striking effect might be caused by the site of priming, the involved APC, the priming conditions, and especially the type of antigen that gives rise to non-cytotoxic, Bhelper-type^CD8+ T cells. Their chemokine receptor expression, effector profile, and lack of cytotoxicity suggest a tissue homeostasis-maintaining function instead of contribution to the elimination of infected/malign/ distorted cells. Cheuk et al. demonstrated that, in human skin, a significant fraction of CD8+ T cells lack cytotoxic features including the expression of CD49a and instead produce IL-17 [51]. In a murine model, those skin Tc17 cells were shown to contribute to wound healing by IL-13 release upon recognition of non-classical MHCI (H2-M3)presented peptides derived from commensal bacteria [52,53]. Altogether, CD4+ and CD8+ T cells provide a broad repertoire of highly specific features"
+  },
+  {
+    "snippet_index": 14,
+    "quotes": [
+      "the cytotoxic CD8 + Tconv cluster expressed the same T RM -defining markers.",
+      "all cells co-expressed CXCR3, CXCR4, and SELPLG; associated with both T RM and non-T RM populations 35,36 . However, while the T RM retention marker CXCR6 was more highly expressed by ITGAE+ cells, we did not identify expression of CCR4 and CCR10, typically co-expressed with SELPLG by tissue-infiltrating skin-homing T cells 37 , nor tissue egress markers CCR7 or S1PR1 38 (Fig. 2c). Since the absence of SIPR1 is a requirement for T RM establishment 39 , these data suggest that all cells of the cytotoxic CD8 + Tconv cluster share a similar and highly cytotoxic T RM -like signature and are retained in the affected tissue.",
+      "immunohistochemistry confirmed that cytotoxic (GNLY + ) CD8 + CD103 + T RM T cells line the basement membrane in SJS/ TEN-affected skin (Supplementary Fig. 7a)."
+    ],
+    "summary": "Cytotoxic CD8+ T cells in skin inflammation exhibit a tissue-resident memory (T RM)-like phenotype with retention markers (CD103, CXCR6), lack of egress markers (CCR7, S1PR1), and localization to the basement membrane, indicating tissue retention and cytotoxic potential.",
+    "categories": [
+      "markers",
+      "location",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:273200289",
+    "source_title": "Multiomic single-cell sequencing defines tissue-specific responses in Stevens-Johnson syndrome and toxic epidermal necrolysis",
+    "source_authors": "A. Gibson et al.",
+    "source_year": null,
+    "snippet": "However, not all cells in the cytotoxic CD8 + Tconv cluster expressed the same T RM -defining markers. While classical T RM markers are not mutually exclusive, with both ITGAE+ and ITGAE-T RM T cells previously defined in the skin and associated with motility or maturation, respectively 34 , ITGAE-cells can also represent tissue-infiltrating populations from the blood. Thus, to define the origin of this cytotoxic population we performed comparative analyses of ITGAE +/\u2212 cells in the cytotoxic CD8 + Tconv cluster of affected skin (Fig. 2c). No significantly differentially expressed genes (DEG) were identified, and all cells co-expressed CXCR3, CXCR4, and SELPLG; associated with both T RM and non-T RM populations 35,36 . However, while the T RM retention marker CXCR6 was more highly expressed by ITGAE+ cells, we did not identify expression of CCR4 and CCR10, typically co-expressed with SELPLG by tissue-infiltrating skin-homing T cells 37 , nor tissue egress markers CCR7 or S1PR1 38 (Fig. 2c). Since the absence of SIPR1 is a requirement for T RM establishment 39 , these data suggest that all cells of the cytotoxic CD8 + Tconv cluster share a similar and highly cytotoxic T RM -like signature and are retained in the affected tissue. Indeed, immunohistochemistry confirmed that cytotoxic (GNLY + ) CD8 + CD103 + T RM T cells line the basement membrane in SJS/ TEN-affected skin (Supplementary Fig. 7a). To better understand whether these cells mapped to the cytotoxic cluster, we performed spatial sequencing on a section of SJS/TEN affected skin, and the typical histopathological features of SJS/TEN were seen (Supplementary Fig. 7b)."
+  },
+  {
+    "snippet_index": 15,
+    "quotes": [
+      "Our results showed a recruitment of CD8 \u00fe T cells to the infection site, as shown by the higher percentage of CD8 \u00fe CD45RO \u00fe T cells in the lesions compared with healthy skin.",
+      "This preferential migration of CD8 \u00fe CLA \u00fe T cells to the lesion and their permanence at this site was confirmed by the decrease in the percentage of CD8 \u00fe CCR7 \u00fe T cells in the tissue.",
+      "cytotoxic CD8 \u00fe T cells has also been associated with tissue damage in mucocutaneous leishmaniasis (Brodskyn et al., 1997) as well as lesion progression in CL patients (Faria et al., 2009).",
+      "The cytolytic function of CD8 \u00fe T cells could induce rapid DNA fragmentation, a hallmark feature of cell death, which is an important biological function of granzyme B (Lord et al., 2003)."
+    ],
+    "summary": "CD8+ T cells accumulate in infected skin lesions, where they display an effector memory phenotype (CD45RO+, CLA+) and reduced lymph node-homing marker (CCR7). Their cytotoxic function, mediated by granzyme B, can contribute to tissue injury.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:6290943",
+    "source_title": "CD8+ Granzyme B+\u2013Mediated Tissue Injury vs. CD4+IFN\u03b3+\u2013Mediated Parasite Killing in Human Cutaneous Leishmaniasis",
+    "source_authors": "C. Santos et al.",
+    "source_year": null,
+    "snippet": "Our results showed a recruitment of CD8 \u00fe T cells to the infection site, as shown by the higher percentage of CD8 \u00fe CD45RO \u00fe T cells in the lesions compared with healthy skin. Most possibly, extravasation and retention of these cells in the lesion are mediated by CLA as shown by other reports in the literature (Costa et al., 2003;Mendes-Aguiar Cde et al., 2009;Lieberman, 2010).This preferential migration of CD8 \u00fe CLA \u00fe T cells to the lesion and their permanence at this site was confirmed by the decrease in the percentage of CD8 \u00fe CCR7 \u00fe T cells in the tissue. CCR7 expression drives lymphocyte migration to the lymph nodes and downregulation of this receptor occurs mainly in effector cells (Costa et al., 2003;Sallusto and Mackay, 2004). Similarly, cutaneous CD8 \u00fe CLA \u00fe T cells in atopic dermatitis lesions have been shown to display an effector memory phenotype (Akdis et al., 1999). In biopsies from CL patients infected by L. braziliensis, these effector cells are predominantly cytotoxic, and our correlations between cytotoxic markers, intensity of necrosis, and lesion size point out the harmful role played by these cells, contributing to the tissue injury. Although many reports in the literature point toward cytotoxicity as an immune mechanism favoring a protective response, the presence of cytotoxic CD8 \u00fe T cells has also been associated with tissue damage in mucocutaneous leishmaniasis (Brodskyn et al., 1997) as well as lesion progression in CL patients (Faria et al., 2009). Moreover, data on the development of experimental cerebral malaria suggest that cytotoxic CD8 \u00fe T cells may contribute to immunopathology (Haque et al., 2011). The cytolytic function of CD8 \u00fe T cells could induce rapid DNA fragmentation, a hallmark feature of cell death, which is an important biological function of granzyme B (Lord et al., 2003)."
+  },
+  {
+    "snippet_index": 16,
+    "quotes": [
+      "CD8 + T cells are more activated in caerin 1.1/1.9 treatment group B In control peptide and caerin peptide treated tumours, the population of CD8 + T cells in ltrating to TC-1 tumour was was 3.73% (caerin) and 4.58% (control peptide) of the total CD45 + cells compared to only 0.27% in untreated tumours (Supplementary Data 1).",
+      "expression of most of these genes was higher in CD8 T cells than that in any other T cell type (see Supplementary Fig. 5 for the expression of marker genes in other T cells), including genes that enhance the activation of CD8 + T cells, such as Ucp2, Fth1, Apoe, Fcer1g and Calm3.",
+      "Cd8a, Klrc1 and Lag3 were almost exclusive to CD8 + T cells"
+    ],
+    "summary": "Following peptide and PD-1 blockade therapy, CD8+ T cells infiltrate tumors in higher numbers and show elevated expression of activation and marker genes such as Cd8a, Klrc1, and Lag3, indicating enhanced activation and distinct marker expression compared to other T cell types.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:239726928",
+    "source_title": "Intra-tumoral injection of caerin 1.1 and 1.9 peptides in vaccinated TC-1 tumour bearing mice with PD-1 blockade modulates macrophage heterogeneity and the activation of CD8+ T cells in the tumour microenvironment",
+    "source_authors": "Guoying Ni et al.",
+    "source_year": null,
+    "snippet": "More CD8 + T cells in ltrate to TC-1 tumour following vaccination and PD-1 blockade, and CD8 + T cells are more activated in caerin 1.1/1.9 treatment group B In control peptide and caerin peptide treated tumours, the population of CD8 + T cells in ltrating to TC-1 tumour was was 3.73% (caerin) and 4.58% (control peptide) of the total CD45 + cells compared to only 0.27% in untreated tumours (Supplementary Data 1). With peptide treatment, CD8 + T cells were relatively separated from other three T cell populations on the tSNE graph (Fig. 4A), indicating a possible variation in function. Also, all T cell types showed a more than 10-fold increase between untreated tumours to 40% (caerin) and 37% (control peptide) (Fig. 4B). Analysis of the gene expression pattern in the four T cell populations (Fig. 4C.) showed that expression of most of these genes was higher in CD8 T cells than that in any other T cell type (see Supplementary Fig. 5 for the expression of marker genes in other T cells), including genes that enhance the activation of CD8 + T cells, such as Ucp2, Fth1, Apoe, Fcer1g and Calm3. \n\nSince pDCs present antigens (Ag) and induce immunogenic T cell responses through differentiation of cytotoxic CD8 + T cells and effector CD4 + T cells 48,49 , we compared the gene expression of signature genes of CD8 + T cells across four types of T cells and pDCs (Fig. 4D). It shows that Cd8a, Klrc1 and Lag3 were almost exclusive to CD8 + T cells, while comparable expression of Cxcr6 was observed in CD4 -CD8 -T cells, and lower expression of Cd8a, Cd8b1 and Lag3 was observed in pDCs. Ribosome was determined to be the most enriched KEGG pathway, followed by T cell receptor signalling and natural killer cell mediated cytotoxicity (Fig. 4E)."
+  },
+  {
+    "snippet_index": 17,
+    "quotes": [
+      "the other subsets of cytolytic skin T lymphocytes, namely CD8 T and TCRV\u03b39 \u03b3\u03b4 T cells, remained unaffected by this progression (Figures 2 and 3) is puzzling and confirms further the correlated differentiation of \u03b3\u03b4 T and CD8 T TILs in human cancers [2]."
+    ],
+    "summary": "Cytolytic skin CD8+ T cell populations remain stable during progression of cutaneous T cell lymphoma, suggesting their function and proportion are unaffected by tumor evolution, and highlighting their distinction from malignant clones.",
+    "categories": [
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:248209637",
+    "source_title": "Single-cell differentiation trajectories define early stages of a human cutaneous T-cell lymphoma",
+    "source_authors": "J. Cerapio et al.",
+    "source_year": null,
+    "snippet": "More specific antigens for TCRVgnon9 cells such as CD1d-restricted lipids [7], histidyl-tNAsynthase, or butyrophilin-like 3-restricted antigens have been proposed [37][38][39][40], but the precise structure of antigens driving the T cell lymphomagenesis remain unidentified. This information is currently out of reach to approaches using scRNAseq, although a viral signature 'viral RNP complex in the nucleus' possibly suggesting undefined viral antigens was underpinned here by enrichment analysis (Figure 4). Whatever the antigen, however, TCR stimulation of T lymphocytes drives their differentiation. Flow cytometry analyses of surface markers such as CCR7, CD27, and CD62L characterized MF as a malignancy of non-cytotoxic skin CD4 Tem cells, by contrast with SS that generally arises from a single transformed clone of CD4 Tcm recirculating cells [41,42]. Since Tcm is a stage more proliferative and recirculating between skin and blood, Tcm cells are more prone to lead to the dissemination of aggressive SS with high phenotypic heterogeneity [43][44][45][46]. Here, unveiling that skin patch Tn and Tcm \u03b3\u03b4 T cells differentiate into Tem Trm cells when lesion switched to plaque confirms the prominence of skin-resident Tem cells in MF lesions [9]. This also suggests that among skin TCRV\u03b3non9 \u03b3\u03b4 T cells, the Tcm are more prone than Tem to recirculate in blood [47]. \n\nAside from the TCRV\u03b3non9 \u03b3\u03b4 T cell differentiation associated with progression of the MF CTCL, the finding here is that the other subsets of cytolytic skin T lymphocytes, namely CD8 T and TCRV\u03b39 \u03b3\u03b4 T cells, remained unaffected by this progression (Figures 2 and 3) is puzzling and confirms further the correlated differentiation of \u03b3\u03b4 T and CD8 T TILs in human cancers [2]."
+  },
+  {
+    "snippet_index": 18,
+    "quotes": [
+      "CD8 + T cell infiltration is a pathological feature of vitiligo lesions.",
+      "The T cell clusters were extracted and further unbiased clustering identified six T cell subclusters: CD4 + naive T cells, Th17, CD4 + Tregs, CD8 + cytotoxic T cells (CD8 + Tcyt), CD8 + resident memory T cells (CD8 + Trm), and \u03b3\u03b4T cells.",
+      "CD8 + Trm cells also expressed \u03b3\u03b4T markers, indicating that CD8 + Trm cells may have acquired some functional characteristics of \u03b3\u03b4T cells, such as an early rapid immune response (Fig. 9E)."
+    ],
+    "summary": "Vitiligo lesions are characterized by infiltration of multiple CD8+ T cell subsets, including cytotoxic and tissue-resident memory (Trm) populations. CD8+ Trm cells may acquire markers and functions typical of \u03b3\u03b4T cells, suggesting enhanced or altered effector capabilities.",
+    "categories": [
+      "location",
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:278596883",
+    "source_title": "Comprehensive single-cell transcriptomic reveals different destinies of melanocytes and dynamic changes of immune microenvironment in a psychological stress-induced leukoderma and leukotrichia mouse model",
+    "source_authors": "Xuechen Cao et al.",
+    "source_year": null,
+    "snippet": "CD8 + T cell infiltration is a pathological feature of vitiligo lesions. However, previous studies have rarely reported the presence of \u03b3\u03b4T cells in the marginal zones of vitiligo lesions. Therefore, to search for evidence of the presence of \u03b3\u03b4T cells in skin lesions from patients with vitiligo, we downloaded a scRNA-seq dataset from the Genome Sequence Archive (accession number PRJCA006797), which includes normal skin samples from five healthy controls and marginal zone skin samples from 10 vitiligo patients. \n\nAfter quality control, transcriptomes of 48,887 cells were retrieved (Fig. 9A). An increased proportion of T cells was observed in vitiligo samples compared with control samples (Fig. 9B). The T cell clusters were extracted and further unbiased clustering identified six T cell subclusters: CD4 + naive T cells, Th17, CD4 + Tregs, CD8 + cytotoxic T cells (CD8 + Tcyt), CD8 + resident memory T cells (CD8 + Trm), and \u03b3\u03b4T cells. Consistent with our scRNA-seq study in CUMS mice, \u03b3\u03b4T cell numbers were increased in the marginal zones of vitiligo patients, although they accounted for a smaller proportion (Fig. 9C,D). Interestingly, CD8 + Trm cells also expressed \u03b3\u03b4T markers, indicating that CD8 + Trm cells may have acquired some functional characteristics of \u03b3\u03b4T cells, such as an early rapid immune response (Fig. 9E). \n\nDifferential analysis indicated that \u03b3\u03b4T cells expressed high levels of certain genes, such as MYOM2, FGR, and CX3 CR1 (Fig. 9F). In addition, \u03b3\u03b4T cells expressed high levels of T cell cytotoxic genes, such as GZMA, GZMB, and NKG7, and showed the highest cytotoxicity scores calculated by AUCell (version 1.22.0) (Fig. 9H,I)."
+  },
+  {
+    "snippet_index": 19,
+    "quotes": [
+      "Melanocyte-specific, cytotoxic CD8 + T cells have been strongly implicated in the destruction of melanocytes in multiple studies.",
+      "CD8 + T cell infiltration of the epidermis and dermis has been demonstrated histologically, in addition, higher numbers of cytotoxic CD8 + T cells in the blood were found in patients with vitiligo compared to healthy controls [49].",
+      "CD8 + T cells also express cutaneous lymphocyte antigen (CLA), a skin-homing marker [51]. CLA/HLA-DR/CD8 + circulating T cells migrated to the perilesional skin and became activated (granzyme-B + , perforin + ), inducing melanocytes apoptosis.",
+      "Several cytokines, such as TNF-a and IFN-g that are primarily involved in melanocytes destruction, are produced by CD8 + T cells [52]."
+    ],
+    "summary": "Cytotoxic CD8+ T cells infiltrate vitiligo-affected skin, express skin-homing and activation markers (CLA, HLA-DR, granzyme B, perforin), and mediate melanocyte destruction via direct cytotoxicity and cytokine production (TNF-\u03b1, IFN-\u03b3).",
+    "categories": [
+      "function",
+      "location",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:64323288",
+    "source_title": "Perspectives of New Advances in the Pathogenesis of Vitiligo: From Oxidative Stress to Autoimmunity",
+    "source_authors": "Yinghang Wang et al.",
+    "source_year": null,
+    "snippet": "Melanocyte-specific, cytotoxic CD8 + T cells have been strongly implicated in the destruction of melanocytes in multiple studies. CD8 + T cell infiltration of the epidermis and dermis has been demonstrated histologically, in addition, higher numbers of cytotoxic CD8 + T cells in the blood were found in patients with vitiligo compared to healthy controls [49]. The intensity of CD8 + T-cell reaction has been found to correlate with disease severity and T cells were shown to be eradicated by melanocytes in vitro [50]. Biopsy results have shown that T cells separated from lesional skin were significantly enriched for recognizing specific melanocytes antigens, and when they migrated to the melanocytes in unaffected normal skin, they induced apoptosis of melanocytes [50]. However, perilesional T cells did not induce apoptosis in lesional skin, for loss of melanocytes, therefore suggesting melanocyte-specific cytotoxic activity of CD8 + T cells [50]. By contrast, CD8 + T cell-depleted perilesional T cells did not have the capacity to induce cytotoxicity and apoptosis of melanocytes [50]. CD8 + T cells also express cutaneous lymphocyte antigen (CLA), a skin-homing marker [51]. CLA/HLA-DR/CD8 + circulating T cells migrated to the perilesional skin and became activated (granzyme-B + , perforin + ), inducing melanocytes apoptosis. Antigenic proteins derived from normal or stressed melanocytes involved in the melanin synthesis include gp100, Melan-A/MART-1, tyrosinase, and tyrosinase related proteins 1 and 2, which are carried by dendritic cells and specifically recognized by infiltrating T cells later on [2]. \n\nSeveral cytokines, such as TNF-a and IFN-g that are primarily involved in melanocytes destruction, are produced by CD8 + T cells [52]."
+  },
+  {
+    "snippet_index": 20,
+    "quotes": [
+      "Microscopy and flow cytometric analyses have demonstrated increased numbers of CD28 \u2212 CD8 T cells in the skin of patients with early diffuse cutaneous SSc (63,64).",
+      "These cells frequently display multiple features of cytotoxicity, including expression of granzyme A and granzyme B, such that by microscopy, the numbers of granzyme A + CD8 T cells and granzyme A + CD4 T cells are roughly comparable in SSc skin (59).",
+      "scRNAseq analysis also clearly illustrated a CD8 T-cell population with a cytotoxic gene expression program (49).",
+      "CD28 \u2212 CD8 T cells in SSc skin frequently express migratory receptors for skin homing, including CCR10 and cutaneous lymphocyte antigen (CLA) (63), which may promote their accumulation in skin.",
+      "Interestingly, the CD28 \u2212 CD8 T-cell population appears to be one source of the Th2-associated factor IL-13, which can promote skin fibrosis (63-66); however, most of the detectable IL13 expression in T cells by scRNA-seq appears to come from CD8A \u2212 cells (likely CD4 T cells) and from a potential \u03b3\u03b4 T-cell population (49)."
+    ],
+    "summary": "CD8+ T cells (Cytotoxic T cells) are increased in the skin of early diffuse cutaneous SSc patients. These cells display cytotoxic features (granzyme A/B expression), express skin-homing receptors (CCR10, CLA), and may produce IL-13, contributing to skin fibrosis.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:235823031",
+    "source_title": "Patterns of T\u2010Cell Phenotypes in Rheumatic Diseases From Single\u2010Cell Studies of Tissue",
+    "source_authors": "Yidan Gao et al.",
+    "source_year": null,
+    "snippet": "Microscopy and flow cytometric analyses have demonstrated increased numbers of CD28 \u2212 CD8 T cells in the skin of patients with early diffuse cutaneous SSc (63,64). These cells frequently display multiple features of cytotoxicity, including expression of granzyme A and granzyme B, such that by microscopy, the numbers of granzyme A + CD8 T cells and granzyme A + CD4 T cells are roughly comparable in SSc skin (59). scRNAseq analysis also clearly illustrated a CD8 T-cell population with a cytotoxic gene expression program (49). CD28 \u2212 CD8 T cells in SSc skin frequently express migratory receptors for skin homing, including CCR10 and cutaneous lymphocyte antigen (CLA) (63), which may promote their accumulation in skin. Interestingly, the CD28 \u2212 CD8 T-cell population appears to be one source of the Th2-associated factor IL-13, which can promote skin fibrosis (63-66); however, most of the detectable IL13 expression in T cells by scRNA-seq appears to come from CD8A \u2212 cells (likely CD4 T cells) and from a potential \u03b3\u03b4 T-cell population (49). Defining whether there is a discrete subset of cytotoxic CD8 T cells that acquire an IL-13-producing phenotype and what distinguishes these cells from other cytotoxic cells will be of substantial interest. \n\nA recently published analysis of scRNA-seq of cells from lungs of patients with interstitial lung disease (ILD) due to SSc has also provided an initial look at the transcriptomes of T cells that infiltrate the lung in SSc. Lung tissue samples from eight patients with SSc were analyzed by scRNA-seq via the 10X Genomics platform, and populations of CD8 T cells, CD4 T cells, and Tregs emerged from the clustering of total lung cells (67)."
+  },
+  {
+    "snippet_index": 21,
+    "quotes": [
+      "TCF1 + CD8 + T cells maintain the expression of the inhibitory receptor PD-1 and lack many common effector functions but have the ability to persist long-term through self-renewal.",
+      "TCF1 + CD8 + T cells can serve as a source of the other subpopulation, PD-1 + Tim-3 + TCF1 \u2212 CD8 + T cells, which possess cytotoxic function, express cytotoxic molecules such as Granzyme B and perforin, and have the ability to eliminate cancer cells [33,34] (Figure 1).",
+      "PD-1 + TCF1 + CD8 + T cells are referred to as \"stem-like,\" \"memory-like,\" \"precursor exhausted,\" \"progenitor exhausted,\" \"progenitor-like,\" or \"stem cell-like progenitor\" CD8 + T cells [35,36], whereas PD-1 + Tim-3 + TCF1 \u2212 CD8 + T cells are referred to as \"terminally differentiated\" or \"terminally exhausted\" CD8 + T cells.",
+      "TCF1 + CD8 + T cells have the ability to self-renew and produce Tim-3 + CD8 + T cells that have cytotoxic function, with features distinct from effector CD8 + T cells generally generated in acute response."
+    ],
+    "summary": "CD8+ T cells consist of stem-like (TCF1+ PD-1+) and terminally differentiated (PD-1+ Tim-3+ TCF1-) subsets. The latter exhibit cytotoxic functions, expressing Granzyme B and perforin to eliminate cancer cells, while the former are persistent and self-renewing.",
+    "categories": [
+      "markers",
+      "function",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:277316032",
+    "source_title": "Differentiation of Cytotoxic CD8+ T Cell Subsets Under Tumor Progression: Can CD69 Be a New Therapeutic Target?",
+    "source_authors": "Ryo Koyama-Nasu et al.",
+    "source_year": null,
+    "snippet": "TCF1 + CD8 + T cells maintain the expression of the inhibitory receptor PD-1 and lack many common effector functions but have the ability to persist long-term through self-renewal. Importantly, TCF1 + CD8 + T cells can serve as a source of the other subpopulation, PD-1 + Tim-3 + TCF1 \u2212 CD8 + T cells, which possess cytotoxic function, express cytotoxic molecules such as Granzyme B and perforin, and have the ability to eliminate cancer cells [33,34] (Figure 1). Therefore, the coordination between TCF1 + CD8 + T cells and Tim-3 + CD8 + T cells is crucial for optimal antitumor immune responses. \n\nSince several groups independently identified these CD8 + T cell subsets, PD-1 + TCF1 + CD8 + T cells are referred to as \"stem-like,\" \"memory-like,\" \"precursor exhausted,\" \"progenitor exhausted,\" \"progenitor-like,\" or \"stem cell-like progenitor\" CD8 + T cells [35,36], whereas PD-1 + Tim-3 + TCF1 \u2212 CD8 + T cells are referred to as \"terminally differentiated\" or \"terminally exhausted\" CD8 + T cells. In this review, we use the term \"stem-like\" CD8 + T cells for TCF1 + CD8 + T cells and \"terminally differentiated\" CD8 + T cells for Tim-3 + CD8 + T cells, because TCF1 + CD8 + T cells have the ability to self-renew and produce Tim-3 + CD8 + T cells that have cytotoxic function, with features distinct from effector CD8 + T cells generally generated in acute response."
+  },
+  {
+    "snippet_index": 22,
+    "quotes": [
+      "the cytotoxicity score positively correlated with the estimated cell proportion of conventional cytotoxic CD8+ and NK cells present in CL lesions (Figure 1C).",
+      "granzyme B-producing NK and CD8 + T cells were increased in both the blood and skin lesions of the same CL patients"
+    ],
+    "summary": "Cytotoxic CD8+ T cells are increased in both blood and skin lesions of CL patients and their cytotoxic activity, marked by granzyme B expression, is correlated with pathology in cutaneous leishmaniasis.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:273525841",
+    "source_title": "Lesional senescent CD4+ T cells mediate bystander cytolysis and contribute to the skin pathology of human cutaneous leishmaniasis",
+    "source_authors": "L. Covre et al.",
+    "source_year": null,
+    "snippet": "Cytotoxicity has been identified as one of the primary immunopathological signatures of CL lesions (9,33). Supporting this, our lesional transcriptomic analysis using GSVA revealed an elevated score for this signature (Figure 1A), along with the overexpression of cytotoxic-associated genes compared to healthy skin (Figure 1B). Moreover, transcription factors associated cytotoxic activity (Blimp-1 and T-bet) and the terminal differentiation state of T cells (EOMES) were conspicuously expressed in the CL lesional environment, but not in healthy skin (Figure 1B). Interestingly, the cytotoxicity score positively correlated with the estimated cell proportion of conventional cytotoxic CD8+ and NK cells present in CL lesions (Figure 1C). Surprisingly, we also found a strong positive correlation between the cytotoxicity score and the CD4+ T cell signature, suggesting that this population may also be involved in lesional cytotoxic activity (Figure 1C). \n\nHistological analysis of the CL lesional skin demonstrated intense cellular infiltration with a conspicuous presence of CD4-GzB + T cells (Figure 2A), further supported by flow cytometry analysis of the cellular suspension obtained by enzymatic digestion. This reveals an increased frequency of GzB + cells compared to their blood counterparts (Figure 2B), found in the NK + , CD3 + , CD8 + , and CD4 + cell compartments (Figure 2C). Interestingly, while granzyme B-producing NK and CD8 + T cells were increased in both the blood and skin lesions of the same CL patients, CD4 + T cells producing granzyme B were only elevated in the skin of these individuals (Figure 2D)."
+  },
+  {
+    "snippet_index": 23,
+    "quotes": [
+      "the level of cytotoxic T-lymphocytes (CD3+CD8+) in adolescents and adults had no significant differences.",
+      "Conclusion. In the skin exudate in atopic dermatitis, cytotoxic T-lymphocytes, T-NK-killers, natural killers, CD8-positive NK-killers are detected."
+    ],
+    "summary": "Cytotoxic T-lymphocytes (CD3+CD8+) are present in the skin exudate of patients with atopic dermatitis, indicating involvement in skin immune responses.",
+    "categories": [
+      "location",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:249580738",
+    "source_title": "Phenotypes of lymphocytes in exudate in atopic dermatitis",
+    "source_authors": "I. V. Kibalina et al.",
+    "source_year": null,
+    "snippet": ".00) cells/l, however, with the widespread process, the level of lymphocytes increased by 11% (p1=0.002), T-helpers by 45%, natural killers by 27%, T-lymphocytes up to 125.00 (110.5;135.75) cells/l (p1=0.00001). These indicators in adults and the level of cytotoxic T-lymphocytes (CD3+CD8+) in adolescents and adults had no significant differences. The number of T-NK-killers (CD3+CD16+CD56+) in adolescents was higher with a widespread process 23.00 (11.75; 29.75) cells/l (p1=0.0001), in adults with a limited process 18.00 (10.25; 20.75) cells/l (p2=0.0001). The number of NKCD8+ (CD3CD16+CD56+CD8+) in adolescents with limited dermatosis was 22.50 (18.25; 26.00) cells/l, with widespread dermatosis 1.6 times more (p1=0.0001), in adults with a limited process 29.50 (25.25; 33.75) cells/l, with widespread 27% less (p1=0.0001). \nConclusion. In the skin exudate in atopic dermatitis, cytotoxic T-lymphocytes, T-NK-killers, natural killers, CD8-positive NK-killers are detected."
+  },
+  {
+    "snippet_index": 24,
+    "quotes": [
+      "skin homing CD8 + (Tc)CCR10 + and CD4 + (T H )CCR10 + T cells subsets produce inflammatory cytokine populations, including IFN\u03b3, that were significantly increased in the active disease state compared to the inactive disease state (80).",
+      "In adult SSc, IL-13 + , and not IFN\u03b3 + , CD8 + CCR10 + cells appear to be the skin homing cell type that propagates disease (81), emphasizing possible biological differences in scleroderma phenotypes: a more inflammatory, T H 1/T C 1 phenotype in LS and a more fibrotic, T H 2/T C 2 phenotype in SSc."
+    ],
+    "summary": "CD8+ (Tc) T cells expressing CCR10 home to the skin and produce cytokines (e.g., IFN\u03b3 and IL-13) associated with disease activity or fibrosis in scleroderma, reflecting their key role in disease propagation and phenotype differences.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:139105305",
+    "source_title": "Immunopathogenesis of Pediatric Localized Scleroderma",
+    "source_authors": "K. Torok et al.",
+    "source_year": null,
+    "snippet": "skin. Investigation into skin-homing T cell profiles are underway in LS, with preliminary data showing that both skin homing CD8 + (Tc)CCR10 + and CD4 + (T H )CCR10 + T cells subsets produce inflammatory cytokine populations, including IFN\u03b3, that were significantly increased in the active disease state compared to the inactive disease state (80). In adult SSc, IL-13 + , and not IFN\u03b3 + , CD8 + CCR10 + cells appear to be the skin homing cell type that propagates disease (81), emphasizing possible biological differences in scleroderma phenotypes: a more inflammatory, T H 1/T C 1 phenotype in LS and a more fibrotic, T H 2/T C 2 phenotype in SSc."
+  },
+  {
+    "snippet_index": 25,
+    "quotes": [
+      "We assessed the total clonality of the cytotoxic CD8 + Tconv cluster, where the three dominantly-expanded TCR showed similar representation among the top 50 clonotypes in affected skin (48%) and blister fluid (average 51%, Fig. 4a).",
+      "Expanded oligoclonal clonotypes were significantly enriched for cytotoxicity-related genes, including GNLY, PRF1, and FCGR3A, but unexpanded polyclonal clonotypes for GZMA and GZMK (Fig. 4c).",
+      "Compared to TCR\u03b1\u03b2 cells from inactive/quiescent cluster 2, unexpanded polyclonal clonotypes in the cytotoxic cluster remained significantly enriched for GNLY, PRF1, and FCGR3A, albeit less than expanded oligoclonal clonotypes, which were uniquely enriched for markers of activation (TNFRSF9), long intergenic non-coding (linc) RNAs (LINC01943), and immunomodulatory genes (TIGIT, KLRC1, KLRD1, Fig. 4d)."
+    ],
+    "summary": "Cytotoxic CD8+ Tconv cells in affected skin and blister fluid are dominated by oligoclonal TCR expansions enriched for cytotoxicity-related genes (GNLY, PRF1, FCGR3A) and activation markers, indicating a functionally active cytotoxic response in tissue.",
+    "categories": [
+      "location",
+      "function",
+      "markers"
+    ],
+    "source_corpus_id": "CorpusId:273200289",
+    "source_title": "Multiomic single-cell sequencing defines tissue-specific responses in Stevens-Johnson syndrome and toxic epidermal necrolysis",
+    "source_authors": "A. Gibson et al.",
+    "source_year": null,
+    "snippet": "We assessed the total clonality of the cytotoxic CD8 + Tconv cluster, where the three dominantly-expanded TCR showed similar representation among the top 50 clonotypes in affected skin (48%) and blister fluid (average 51%, Fig. 4a). In the affected skin, while up to 32% of cells expressed expanded clonotypes, > 50% expressed unexpanded TCR (n = 1 count, Fig. 4b). Using blister fluid, we investigated whether T cells in the cytotoxic CD8 + Tconv cluster with unexpanded clonotypes had a distinct phenotype. Expanded oligoclonal clonotypes were significantly enriched for cytotoxicity-related genes, including GNLY, PRF1, and FCGR3A, but unexpanded polyclonal clonotypes for GZMA and GZMK (Fig. 4c). Compared to TCR\u03b1\u03b2 cells from inactive/quiescent cluster 2, unexpanded polyclonal clonotypes in the cytotoxic cluster remained significantly enriched for GNLY, PRF1, and FCGR3A, albeit less than expanded oligoclonal clonotypes, which were uniquely enriched for markers of activation (TNFRSF9), long intergenic non-coding (linc) RNAs (LINC01943), and immunomodulatory genes (TIGIT, KLRC1, KLRD1, Fig. 4d). \n\nIn the cytotoxic CD8 + Tconv cluster of SJS/TEN blister fluids, while unexpanded T cells expressed diverse CDR3\u03b1\u03b2, many expressed the same TRBV27/TRBJ2-7 of dominantly-expanded clonotypes (Supplementary Fig. 14). In fact, several polyclonal unexpanded T cells expressed the dominantly-expanded CDR3\u03b2 (CASSPDRGGYEQYF) or had one amino acid mismatch (P to H/V/Y/F/L/R)."
+  },
+  {
+    "snippet_index": 26,
+    "quotes": [
+      "we employed mIF to identify cytotoxic T cells (CD8 + cells), T RM cells (CD103 + CD8 + cells), T non-RM cells (CD8 + CD103 \u2212 cells), immune checkpoints (PD-1, Tim-3), cytotoxic indicator (GZMB) and cancer cells (CK + cells) (Fig. 1A).",
+      "T RM accounted for more than half of CD103 + cells both in TC and in IM (58.87% and 53.21%, respectively), indicating that cytotoxic T cells were the primary source of CD103 expression (Fig. 1C).",
+      "T RM cells predominated cytotoxic T cells in TC (60.50%) but vice versa in IM (36.55%) (Fig. 1D)."
+    ],
+    "summary": "Cytotoxic CD8+ T cells, as well as CD103+ CD8+ tissue-resident memory cells, are prevalent in tumor and immune margins of NSCLC, representing primary sources of CD103 and cytotoxic activity in these tissues.",
+    "categories": [
+      "location",
+      "markers",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:266767537",
+    "source_title": "Spatial features of specific CD103+CD8+ tissue-resident memory T cell subsets define the prognosis in patients with non-small cell lung cancer",
+    "source_authors": "Guanqun Yang et al.",
+    "source_year": null,
+    "snippet": "Based on previous results from single-cell sequencing [8,13,14], we employed mIF to identify cytotoxic T cells (CD8 + cells), T RM cells (CD103 + CD8 + cells), T non-RM cells (CD8 + CD103 \u2212 cells), immune checkpoints (PD-1, Tim-3), cytotoxic indicator (GZMB) and cancer cells (CK + cells) (Fig. 1A). As mentioned earlier, three spatial parameters were defined to describe the spatial distribution of cells (Fig. 1B, C). T RM accounted for more than half of CD103 + cells both in TC and in IM (58.87% and 53.21%, respectively), indicating that cytotoxic T cells were the primary source of CD103 expression (Fig. 1C). T RM cells predominated cytotoxic T cells in TC (60.50%) but vice versa in IM (36.55%) (Fig. 1D). Compared with T non-RM , T RM cells possessed higher InS in TC (P < 0.001), shorter mNND to cancer cells in both TC (P < 0.001) and IM (P < 0.001), and higher CCPS in IM (P < 0.001), reflecting better infiltration and stronger interaction with cancer cells of T RM (Fig. 1E-G)."
+  },
+  {
+    "snippet_index": 27,
+    "quotes": [
+      "Cytotoxic CD8 + T cells are undoubtedly the major players in immunotherapy today, carrying out cytolytic activities against tumor cells.",
+      "CD8 + T cells exist in different cytotoxic T cell (Tc) subsets: the Tc1 subset is responsible for the aforementioned production of granzyme B, perforin, and cytokines such as IFN-\u03b3 and tumor necrosis factor (TNF)-\u03b1. Tc2 cells do not produce as much IFN-\u03b3 as Tc1 cells but maintain a comparable level of cytotoxic activities via granzyme B, while Tc22 similarly express granzyme B to provide antitumor activities and comprise up to 35% of expanded effector T cells from tumors St Paul and Ohashi, 2020). Contrastingly, the Tc9 and Tc17 subsets demonstrate poor cytolytic functions due to their low levels of granzyme B (St Paul and Ohashi, 2020).",
+      "Tc polarization can be affected by a variety of factors: tumor-associated macrophages (TAMs) from HCC patients were shown to induce Tc17 polarization in vitro, intestinal dendritic cells (DCs) were found to induce Tc9 polarization upon antigen cross-presentation, and Langerhans cells were shown to induce Tc22 polarization (Fujita et al., 2009;Kuang et al., 2010;Chang et al., 2013).",
+      "the composition of Tc subsets within a tumor can serve as a significant factor determining the response rates to ICI therapies."
+    ],
+    "summary": "CD8+ T cells comprise several cytotoxic Tc subsets (Tc1, Tc2, Tc22, Tc9, Tc17), each with differing levels of cytolytic activity, cytokine production, and polarization influences; their composition in tumors can impact immunotherapy outcomes.",
+    "categories": [
+      "function",
+      "markers",
+      "development"
+    ],
+    "source_corpus_id": "CorpusId:247254575",
+    "source_title": "Key Players of the Immunosuppressive Tumor Microenvironment and Emerging Therapeutic Strategies",
+    "source_authors": "Kevin Park et al.",
+    "source_year": null,
+    "snippet": "Cytotoxic CD8 + T cells are undoubtedly the major players in immunotherapy today, carrying out cytolytic activities against tumor cells. Effector CD8 + T cell activation is dependent on the recognition of an antigen-major histocompatibility complex (MHC) on a tumor cell; upon successful recognition, CD8 + T cells release granules that contain perforin, granzyme, and the Fas ligand into the immunological synapse to carry out effector functions ( Figure 1A) (Iwahori, 2020). CD8 + T cells exist in different cytotoxic T cell (Tc) subsets: the Tc1 subset is responsible for the aforementioned production of granzyme B, perforin, and cytokines such as IFN-\u03b3 and tumor necrosis factor (TNF)-\u03b1. Tc2 cells do not produce as much IFN-\u03b3 as Tc1 cells but maintain a comparable level of cytotoxic activities via granzyme B, while Tc22 similarly express granzyme B to provide antitumor activities and comprise up to 35% of expanded effector T cells from tumors St Paul and Ohashi, 2020). Contrastingly, the Tc9 and Tc17 subsets demonstrate poor cytolytic functions due to their low levels of granzyme B (St Paul and Ohashi, 2020). Tc polarization can be affected by a variety of factors: tumor-associated macrophages (TAMs) from HCC patients were shown to induce Tc17 polarization in vitro, intestinal dendritic cells (DCs) were found to induce Tc9 polarization upon antigen cross-presentation, and Langerhans cells were shown to induce Tc22 polarization (Fujita et al., 2009;Kuang et al., 2010;Chang et al., 2013). While the role of the TME in driving Tc cell polarization has yet to be described, the composition of Tc subsets within a tumor can serve as a significant factor determining the response rates to ICI therapies.\n\nCD8 + T cells additionally express immune checkpoint molecules to limit their functions, a mechanism harnessed by tumor cells to induce T cell exhaustion and promote cancer progression (Raskov et al., 2021)"
+  },
+  {
+    "snippet_index": 29,
+    "quotes": [
+      "we observed an obvious expansion of CD8 + CTLs in the circulating and in perilesional skin of vitiligo patients.",
+      "These CD8 + T cells are primarily found to be skin-homing, polarised toward type-1 effector function, and evidently cytotoxic while clustering near disappearing melanocytes (37,38).",
+      "High frequencies of Melan-A specific CD8 + T cells in the peripheral blood and skin of vitiligo patients were detected and were found to correlate with disease severity, and these melanocyte-specific T cells were able to destroy melanocytes in vitro (34)(35)(36)."
+    ],
+    "summary": "CD8+ cytotoxic T cells (CTLs) expand in the blood and perilesional skin of vitiligo patients, are skin-homing and type-1 polarized, and specifically target and destroy melanocytes, correlating with disease severity.",
+    "categories": [
+      "location",
+      "function"
+    ],
+    "source_corpus_id": "CorpusId:23914482",
+    "source_title": "Interferon-gamma Inhibits Melanogenesis and Induces Apoptosis in Melanocytes: A Pivotal Role of CD8+ Cytotoxic T Lymphocytes in Vitiligo.",
+    "source_authors": "Lili Yang et al.",
+    "source_year": null,
+    "snippet": "In the study, we observed an obvious expansion of CD8 + CTLs in the circulating and in perilesional skin of vitiligo patients. This finding is consistent with substantial evidence that suggests that an increased number of melanocyte-specific cytotoxic CD8 + T cells contribute to the pathogenesis of vitiligo (34)(35)(36). These CD8 + T cells are primarily found to be skin-homing, polarised toward type-1 effector function, and evidently cytotoxic while clustering near disappearing melanocytes (37,38). In the late 20 th century, the characterisation of circulating CD8 + T cells with an Elispot assay and a developed technique of HLA-peptide tetrameric complexes favoured the idea of a melanocyte-specific cytotoxic attack in vitiligo. Melan-A is one of the melanocyte-specific differentiation antigens often recognised by CTLs in melanoma (39). High frequencies of Melan-A specific CD8 + T cells in the peripheral blood and skin of vitiligo patients were detected and were found to correlate with disease severity, and these melanocyte-specific T cells were able to destroy melanocytes in vitro (34)(35)(36). Based on the Interferon-gamma induces apoptosis in melanocytes number of cases observed in patients with melanoma, immunotherapies against melanocytes differentiation antigens such as gp100 and tyrosinase may lead to CD8 + CTLs infiltration both in the specific melanoma area as in vitiligo lesions (40)(41)(42). In addition, an in vitro study showed that CD8 + CTLs infiltrated in common vitiligo perilesional area destroyed neighbouring melanocytes in unaffected skin, while they did not induce apoptosis in lesional skin, which is devoid of melanocytes, thereby indicating the melanocyte-specific cytotoxic activity of these CD8 + CTLs in human vitiligo (43)."
+  },
+  {
+    "snippet_index": 30,
+    "quotes": [
+      "Acral CD8 + TCL is identified by diffuse infiltration of medium-sized CD8 + cytotoxic T-cells [52], which presents as solitary and slow-growing papules or nodules on acral sites such as the ears, nose, and feet [53].",
+      "T-cells is characterized by positivity for CD3 and CD8, absence of CD4 and CD30.",
+      "there is variability in the the loss of pan-T-cell antigens, including CD2, CD5, and CD7 [51].",
+      "These cells also show positivity for TIA-1, but negative for cytotoxic proteins granzyme B and perforin [51]."
+    ],
+    "summary": "This snippet describes the location, phenotype, and marker expression profile of CD8+ cytotoxic T-cells in acral CD8+ T-cell lymphoma, including their presence in specific skin sites, immunophenotype, and lack of certain cytotoxic protein expression.",
+    "categories": [
+      "location",
+      "markers",
+      "morphology"
+    ],
+    "source_corpus_id": "CorpusId:277316559",
+    "source_title": "Advances in classification and treatment of primary cutaneous lymphomas",
+    "source_authors": "Hong Zheng et al.",
+    "source_year": null,
+    "snippet": "Acral CD8 + TCL is identified by diffuse infiltration of medium-sized CD8 + cytotoxic T-cells [52], which presents as solitary and slow-growing papules or nodules on acral sites such as the ears, nose, and feet [53]. T-cells is characterized by positivity for CD3 and CD8, absence of CD4 and CD30. Additionally, there is variability in the the loss of pan-T-cell antigens, including CD2, CD5, and CD7 [51]. These cells also show positivity for TIA-1, but negative for cytotoxic proteins granzyme B and perforin [51]. In comparison to other CD8 + T-cell lymphomas, this subtype is known for its indolent process with a more favorable outcome. Local excision or radiotherapy have proven to be effective management strategies."
+  }
+]

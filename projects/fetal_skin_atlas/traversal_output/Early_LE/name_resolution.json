@@ -1,0 +1,12 @@
+{
+  "label": "Early LE",
+  "resolved_names": [
+    "Early LE",
+    "early lymphatic endothelium",
+    "early lymphatic endothelial cells"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7-17 PCW)",
+  "confidence": "high",
+  "evidence": "The atlas (Gopee et al., 2024) identifies 'Early LE' as a fine-grained endothelial cell annotation under the broad 'Lymphatic endothelium' category in prenatal skin (Supplementary Table 3, cell_type_annotations.json). LE is defined as 'lymphatic endothelium' in the atlas legend. Early LE represents an early/progenitor lymphatic endothelial cell state in fetal skin."
+}

@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "Periderm cell",
+  "working_definition": "A transient, squamous epithelial cell forming the outermost layer of the fetal epidermis, constituting the first skin permeability barrier. Enriched in early gestation and sloughing from approximately 11 PCW as the underlying epidermis stratifies and assumes barrier function. Expresses keratins K6 and K17 and undergoes apoptosis-mediated removal.",
+  "searches_performed": [
+    "periderm cell (CL, pageSize=10)",
+    "periderm (CL)"
+  ],
+  "best_match": {
+    "cl_term": "peridermal cell",
+    "cl_id": "CL:0000078",
+    "cl_definition": "Any squamous epithelial cell that is part of some periderm.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000078 directly describes the peridermal cell. The atlas Periderm cluster maps precisely to this CL term.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000078 (peridermal cell) as exact match.",
+  "new_term_needed": false
+}

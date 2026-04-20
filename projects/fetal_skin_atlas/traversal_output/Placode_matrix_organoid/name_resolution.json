@@ -1,0 +1,10 @@
+{
+  "label": "Placode/matrix",
+  "resolved_names": [
+    "hair follicle placode/matrix cell"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "The atlas identifies placode and matrix (SHH+) as HF epithelial cells. In the SkO, these are combined as 'Placode/matrix'. No specific CL term exists for this combined state."
+}

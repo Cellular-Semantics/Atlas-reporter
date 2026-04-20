@@ -1,0 +1,38 @@
+{
+  "markers": [
+    {
+      "gene": "ACKR1",
+      "evidence_type": "differentially expressed gene (DEG) for VE2 cluster",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "gene": "PLVAP",
+      "evidence_type": "differentially expressed gene (DEG) for VE2 cluster",
+      "source_table": "Supplementary Table 4"
+    },
+    {
+      "gene": "VWF",
+      "evidence_type": "differentially expressed gene (DEG) for VE2 cluster",
+      "source_table": "Supplementary Table 4"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "VE2 are characterized as capillary endothelial cells.",
+      "category": "functional annotation",
+      "source_table": "Supplementary Table 2"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "VE2 cluster is marked by expression of ACKR1, PLVAP, and VWF.",
+      "source_file": "Supplementary Table 4",
+      "context": "Markers for each vascular endothelial (VE) cluster"
+    },
+    {
+      "quote": "VE2: capillary endothelial",
+      "source_file": "Supplementary Table 2",
+      "context": "Cluster annotation for VE populations"
+    }
+  ]
+}

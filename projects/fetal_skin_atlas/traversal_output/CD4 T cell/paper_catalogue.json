@@ -1,0 +1,60 @@
+{
+  "CorpusId:273400864": {
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": [
+      "N. Gopee",
+      "Elena Winheim",
+      "B. Olabi",
+      "M. Haniffa"
+    ],
+    "year": 2024,
+    "venue": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "pmcid": "PMC11578897",
+    "url": "https://www.semanticscholar.org/paper/4fa361732b6949fb708120c7977c9e753b76ff51",
+    "role": "atlas paper"
+  },
+  "CorpusId:248122197": {
+    "title": "Mapping the developing human immune system across organs",
+    "authors": [
+      "Chenqu Suo",
+      "E. Dann",
+      "Issac Goh",
+      "Laura Jardine",
+      "S. Teichmann"
+    ],
+    "year": 2022,
+    "venue": "Science",
+    "doi": "10.1126/science.abo0510",
+    "url": "https://www.semanticscholar.org/paper/a2dd0a62a986a93095201496dea847b8caccf0a8",
+    "role": "cross-organ developing immune system atlas referenced by atlas paper"
+  },
+  "CorpusId:227334677": {
+    "title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "authors": [
+      "M. Dhariwala",
+      "Dhuvarakesh Karthikeyan",
+      "Kimberly S. Vasquez",
+      "T. Scharschmidt"
+    ],
+    "year": 2020,
+    "venue": "Cell Reports Medicine",
+    "doi": "10.1016/j.xcrm.2020.100132",
+    "url": "https://www.semanticscholar.org/paper/d534f82b4e2d279bfd9455e0c52158941661e78e",
+    "role": "key reference on fetal skin T cell characterization, referenced by atlas paper"
+  },
+  "CorpusId:7818908": {
+    "title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
+    "authors": [
+      "C. Schuster",
+      "C. Vaculik",
+      "Marion Prior",
+      "A. Elbe-Bürger"
+    ],
+    "year": 2012,
+    "venue": "Journal of Investigative Dermatology",
+    "doi": "10.1038/jid.2012.187",
+    "url": "https://www.semanticscholar.org/paper/7818908",
+    "role": "early characterization of leukocytes including T cells in prenatal human skin"
+  }
+}

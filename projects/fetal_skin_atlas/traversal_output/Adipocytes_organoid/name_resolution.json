@@ -1,0 +1,10 @@
+{
+  "label": "Adipocytes",
+  "resolved_names": [
+    "Adipocytes"
+  ],
+  "scope": "organoid",
+  "tissue_context": "hair-bearing skin organoid (SkO)",
+  "confidence": "high",
+  "evidence": "Found in integrated prenatal skin/SkO UMAP and cell type annotations (Supplementary Table 5). Organoid contains fat-rich dermis."
+}

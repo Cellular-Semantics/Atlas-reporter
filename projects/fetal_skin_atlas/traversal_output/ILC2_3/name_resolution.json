@@ -1,0 +1,10 @@
+{
+  "label": "ILC2_3",
+  "resolved_names": [
+    "ILC2"
+  ],
+  "scope": "adult",
+  "tissue_context": "skin",
+  "confidence": "high",
+  "evidence": "The paper 10.1038/s41586-024-08002-x discusses group 2 innate lymphoid cells (ILC2) in the context of skin immune cell diversity, using the term 'ILC2' throughout the text and supplementary data. The suffix '_3' designates a fine-grained subcluster, but the resolved name per the authors is 'ILC2'. Mapping tables in the supplementary material confirm this usage."
+}

@@ -1,0 +1,9 @@
+{
+  "cell_type_label": "Early erythroid",
+  "cl_term": "erythroid progenitor cell",
+  "cl_id": "CL:0000038",
+  "cl_iri": "http://purl.obolibrary.org/obo/CL_0000038",
+  "match_type": "exact",
+  "match_reason": "Early erythroid cells are erythroid-committed progenitors, matching CL:0000038 (erythroid progenitor cell).",
+  "new_term_needed": false
+}

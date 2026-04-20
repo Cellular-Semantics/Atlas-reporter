@@ -1,0 +1,8 @@
+{
+  "atlas_label": "Melanocytes",
+  "cl_id": "CL:0000148",
+  "cl_label": "melanocyte",
+  "cl_url": "http://purl.obolibrary.org/obo/CL_0000148",
+  "match_type": "exact",
+  "new_term_needed": false
+}

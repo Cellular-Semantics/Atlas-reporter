@@ -1,0 +1,59 @@
+{
+  "papers": [
+    {
+      "id": "gopee_2024",
+      "doi": "10.1038/s41586-024-08002-x",
+      "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+      "authors": "Gopee et al.",
+      "year": 2024,
+      "journal": "Nature",
+      "role": "primary atlas paper",
+      "pmcid": "PMC11578897"
+    },
+    {
+      "id": "suo_2022",
+      "doi": "10.1126/science.abo0510",
+      "title": "Mapping the developing human immune system across organs",
+      "authors": "Suo et al.",
+      "year": 2022,
+      "journal": "Science",
+      "role": "source of macrophage subset annotations used in atlas"
+    },
+    {
+      "id": "chakarov_2019",
+      "doi": "10.1126/science.aax0519",
+      "title": "Two distinct interstitial macrophage populations coexist across tissues in specific subtissular niches",
+      "authors": "Chakarov et al.",
+      "year": 2019,
+      "journal": "Science",
+      "role": "identified LYVE1hi vs MHCIIhi macrophage subsets in subtissular niches across organs"
+    },
+    {
+      "id": "dick_2022",
+      "doi": "10.1126/science.abf7777",
+      "title": "Three tissue resident macrophage subsets coexist across organs with conserved origins and life cycles",
+      "authors": "Dick et al.",
+      "year": 2022,
+      "journal": "Science",
+      "role": "defined three conserved tissue-resident macrophage subsets: TLF+, CCR2+, and MHCIIhi"
+    },
+    {
+      "id": "guillaume_2023",
+      "doi": "10.1038/s41598-023-27953-x",
+      "title": "MHCII expression on gut macrophages supports T cell homeostasis and is regulated by microbiota and ontogeny",
+      "authors": "Guillaume et al.",
+      "year": 2023,
+      "journal": "Scientific Reports",
+      "role": "evidence for MHCII regulation on macrophages by ontogeny and microenvironment"
+    },
+    {
+      "id": "west_2022",
+      "doi": "10.1016/j.celrep.2022.111552",
+      "title": "Loss of T cell tolerance in the skin following immunopathology is linked to failed restoration of the dermal niche by recruited macrophages",
+      "authors": "West et al.",
+      "year": 2022,
+      "journal": "Cell Reports",
+      "role": "evidence for MHCII high vs MHCII intermediate macrophage compartments in skin dermis"
+    }
+  ]
+}

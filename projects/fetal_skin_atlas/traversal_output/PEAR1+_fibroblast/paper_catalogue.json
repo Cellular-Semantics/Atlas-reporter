@@ -1,0 +1,34 @@
+{
+  "273400864": {
+    "doi": "10.1038/s41586-024-08002-x",
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee NH et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "source": "citation_traverse"
+  },
+  "216076805": {
+    "doi": "10.1038/s42003-020-0922-4",
+    "title": "Single-cell transcriptomes of the human skin reveal age-related loss of fibroblast priming",
+    "authors": "Sole-Boldo L et al.",
+    "year": 2020,
+    "journal": "Communications Biology",
+    "source": "citation_traverse"
+  },
+  "230108472": {
+    "doi": "10.1016/j.jid.2020.11.028",
+    "title": "Human Dermal Fibroblast Subpopulations Are Conserved across Single-Cell RNA Sequencing Studies",
+    "authors": "Ascension AM et al.",
+    "year": 2021,
+    "journal": "Journal of Investigative Dermatology",
+    "source": "citation_traverse"
+  },
+  "247943573": {
+    "doi": "10.1016/j.cell.2021.12.036",
+    "title": "LGR5 expressing skin fibroblasts define a major cellular hub perturbed in scleroderma",
+    "authors": "Gur C et al.",
+    "year": 2022,
+    "journal": "Cell",
+    "source": "citation_traverse"
+  }
+}

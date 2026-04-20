@@ -1,0 +1,10 @@
+{
+  "label": "LC",
+  "resolved_names": [
+    "Langerhans cell"
+  ],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (epidermis), 7-17 PCW",
+  "confidence": "high",
+  "evidence": "In the atlas paper (Gopee et al., 2024), 'LC' is defined as 'Langerhans cells' in the UMAP legend (Fig. 1e) and Extended Data figures. LCs are grouped with DCs among the immune cell lineages in prenatal skin. The abbreviation is explicitly expanded: 'LC, Langerhans cells' in the figure annotation. LCs are identified by expression of CD207 (langerin) and CD1A, distinguishing them from MHCII+ macrophages in the atlas annotation."
+}

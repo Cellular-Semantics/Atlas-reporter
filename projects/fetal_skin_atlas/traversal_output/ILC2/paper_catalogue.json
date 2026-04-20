@@ -1,0 +1,66 @@
+[
+  {
+    "id": "atlas",
+    "authors": "Gopee et al.",
+    "year": 2024,
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x"
+  },
+  {
+    "id": "suo2022",
+    "authors": "Suo et al.",
+    "year": 2022,
+    "title": "Mapping the developing human immune system across organs",
+    "journal": "Science",
+    "doi": "10.1126/science.abo0510"
+  },
+  {
+    "id": "hernandez-torres2022",
+    "authors": "Hernandez-Torres & Stehle",
+    "year": 2022,
+    "title": "Embryonic ILC-poiesis across tissues",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.1040624"
+  },
+  {
+    "id": "matha2022",
+    "authors": "Matha et al.",
+    "year": 2022,
+    "title": "Tissue Resident and Migratory Group 2 Innate Lymphoid Cells",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.877005"
+  },
+  {
+    "id": "kobayashi2022",
+    "authors": "Kobayashi et al.",
+    "year": 2022,
+    "title": "Tissue-Specific Diversity of Group 2 Innate Lymphoid Cells in the Skin",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.885642"
+  },
+  {
+    "id": "kim2025",
+    "authors": "Kim et al.",
+    "year": 2025,
+    "title": "Tissue-Resident ILC2s Across Organs: Heterogeneity, Niche Crosstalk, and Shared Regulatory Circuits",
+    "journal": "Immune Network",
+    "doi": "10.4110/in.2025.25.e40"
+  },
+  {
+    "id": "salimi2014",
+    "authors": "Salimi & Ogg",
+    "year": 2014,
+    "title": "Innate lymphoid cells and the skin",
+    "journal": "BMC Dermatology",
+    "doi": "10.1186/1471-5945-14-18"
+  },
+  {
+    "id": "verma2025",
+    "authors": "Verma et al.",
+    "year": 2025,
+    "title": "ILC2 Diversity, Location, and Function in Pulmonary Disease",
+    "journal": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms26125555"
+  }
+]
