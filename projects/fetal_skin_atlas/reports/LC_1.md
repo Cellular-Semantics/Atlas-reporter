@@ -1,158 +1,72 @@
-# Langerhans Cell 1 (LC_1)
-Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
+# Proliferating Langerhans Cell (LC_1) in Adult Human Skin
+
+Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
 Scope: adult
+Source dataset: Reynolds et al. (2021), integrated into Gopee et al. (2024)
+Cell Ontology: [Langerhans cell](http://purl.obolibrary.org/obo/CL_0000453) (CL:0000453, broad match — no exact CL term for proliferating LC substate)
 
 ## Summary
 
-LC_1, identified as "Langerhans cell 1," represents a population of Langerhans cells (LCs) that reside predominantly in the epidermal layer of adult skin (Supplementary Table S7; Name Resolution). These cells are defined by high expression of markers such as CD207 (langerin), CD1A, and EPCAM, and display a dendritic morphology (Supplementary Tables S2, S5; M. Collin et al. 2018). Functionally, LCs serve as professional antigen-presenting cells (APCs), acting as immune sentinels that sample the epidermal environment for pathogens and mediate immune responses, including both immune activation and tolerance. The presence of LCs is critical for skin immune surveillance, homeostasis, and modulation of inflammatory responses.
+LC_1 is a Langerhans cell (LC) subset in adult human epidermis defined by Reynolds et al. (2021). Reynolds et al. identify four LC clusters (LC1–LC4) by PAGA-based differentiation analysis. LC1 is characterised by enrichment for cell cycle genes and is the proliferating steady-state LC subset. By FACS, LC1 cells are distinguished by a Langerin+CD1a-loCD11c-lo phenotype, distinct from the Langerin+CD1a-hi bulk LC population. In the framework of Liu et al. (2021) — cited by Reynolds et al. and reviewed in Vine et al. (2022) — LC1 represents the classic steady-state LCs: CD207-high, CD1a-high, EPCAM-positive, with effector LC functions including antigen uptake and innate cytokine secretion.
 
 ## Markers
 
-### CD207 (Langerin)
-CD207 encodes Langerin, a C-type lectin receptor important for antigen uptake and the formation of unique Birbeck granules. Its expression is critical for the identification and function of Langerhans cells, supporting antigen processing activities (Supplementary Table S2). CD207/langerin is considered a defining and specific marker for LCs:
-
-> "They express the C-type lectin langerin and the invariant MHC class I molecule CD1a."
+> "In both AD and psoriasis, LC1 has the highest enrichment of cell cycle genes"
 >
-> — M. Collin et al. (2018)
+> — Reynolds et al. (2021)
 
-> "LCs are characterized by the expression of C-type lectin Langerin (CD207) and a major histocompatibility complex I-like molecule CD1a"
+> "LC1 are enriched within the Langerin+CD1aloCD11clogate distinct from Langerin+CD1ahi LCs"
 >
-> — Tae-Gyun Kim et al. (2014)
+> — Reynolds et al. (2021)
 
-### CD1A
-CD1A is a major histocompatibility complex I-like molecule involved in presenting lipid and glycolipid antigens to T cells, which is essential for LC-mediated immune surveillance (Supplementary Table S5). CD1A is consistently highlighted as a characteristic LC marker:
+Key markers:
+- **CD207 (Langerin)** — high expression; canonical LC marker; required for Birbeck granule formation
+- **CD1a** — low (CD1alo) in the LC1 FACS gate as defined by Reynolds; CD1a-hi by Liu framework
+- **EPCAM** — epidermal adhesion molecule; marks LC1 in Liu framework
+- **CDK1, PCNA, Ki67** — cell cycle genes; highest enrichment in LC1 in disease states
 
-> "The expression of CD1a molecules on the LC surface is a characteristic feature of this cell line."
+> "Recent single cell transcriptomic analysis of the human stratified squamous epithelium has suggested that LCs exist as multiple subsets; two at steady state termed LC1 and LC2, an activated subset defined by high CD83 and low CCR7 expression termed LC3, and a migratory subset defined by high CCR7 expression termed LC4"
 >
-> — Barbara Zegarska et al. (2017)
+> — Vine et al. (2022), reviewing Liu et al. (2021)
 
-> "the high expression of langerin, CD1a and EpCAM, together with lower expression of CD11c, CD11b and CD13 by LC, is usually sufficient to separate them clearly."
+> "Of the two steadystate LCs, LC1 were delineated as classic LCs while LC2 were described as a novel and unique subset of LC"
 >
-> — M. Collin et al. (2018)
-
-### EPCAM (CD326)
-EPCAM, an epithelial cell adhesion molecule, is also highly expressed on LCs in the epidermis and contributes to their anchoring among keratinocytes (Supplementary Table S2). Functional roles of EPCAM include mediating cell–cell adhesion within the epithelial environment:
-
-> "The close integration of LC within the epithelial layer is mediated by E-Cadherin, EpCAM (TROP1) TROP2, AXL and tight junction proteins claudin, occludin and ZO-1."
->
-> — M. Collin et al. (2018)
-
-Addition markers include HLA-DR (MHC II), CD45, and Birbeck granules, further supporting LC identification (Tae-Gyun Kim et al., 2014; Arjan Boltjes et al., 2014).
+> — Vine et al. (2022)
 
 ## Location
 
-### Skin Epidermis
-LC_1 cells are most abundant in the epidermal compartment of adult skin, especially the basal and suprabasal layers (Supplementary Table S7; Barbara Zegarska et al., 2017). Their localization at the skin's outermost layer enables them to act as the first line of immunological defense:
-
-> "Langerhans cells are specialized DC that inhabit the basal epidermis and other stratified squamous epithelia."
->
-> — M. Collin et al. (2018)
-
-> "They are the most abundant in the basal layer and the spinous layer of the epidermis."
->
-> — Barbara Zegarska et al. (2017)
-
-### Epidermal Network
-LCs form a contiguous or lace-like network within the suprabasal epidermis, closely associating with keratinocytes:
-
-> "LCs are distinct subset of DCs that reside in the suprabasal epidermis where they organize a lacelike network (30)."
->
-> — Tae-Gyun Kim et al. (2014)
-
-### Developmental Timing
-LCs first appear during embryogenesis but are sustained through adulthood by self-renewal and in situ proliferation (Laurent Chorro et al., 2009; J. Deckers et al., 2018).
+LC1 cells reside in the epidermis of adult skin as tissue-resident Langerhans cells. They occupy a basal/mid-epidermal position within the stratified squamous epithelium, in contact with keratinocytes. Reynolds et al. (2021) validate LC phenotypes by FACS index data showing LC1 in the Langerin+CD1aloCD11clo gate, distinct from the bulk Langerin+CD1ahi LC population.
 
 ## Function
 
-### Immune Surveillance and Antigen Presentation
+### 1. Steady-state epidermal immune surveillance
 
-LCs function as pivotal immune sentinels, detecting antigens in the epidermis and presenting them to T cells to initiate adaptive immune responses:
+LC1 represents the classic effector LC subset: CD207-hi, CD1a-expressing Langerhans cells that perform antigen uptake and innate immune sensing in the epidermis under steady-state conditions. They are the predominant sentinel population among the four LC subsets.
 
-> "Langerhans cells, due to their location in the epidermis and their protruding dendrites, are a typical example of a DC sentinel, surveying the epidermis for foreign antigens."
+### 2. Proliferative self-renewal
+
+Reynolds et al. (2021) identify LC1 as the LC subcluster with the highest cell cycle gene enrichment, indicating that this subset maintains itself through local proliferation — a capacity consistent with the known LC self-renewal potential in the skin epidermis.
+
+> "In both AD and psoriasis, LC1 has the highest enrichment of cell cycle genes"
 >
-> — Arjan Boltjes et al. (2014)
+> — Reynolds et al. (2021)
 
-> "Their location at the skin barrier suggests a key role as immune sentinels."
+This proliferative activity is validated by Ki67+Langerin+ cell counts in epidermis:
+
+> "We found Ki67+Langerin+cells increased in AD and psoriasis lesional skin"
 >
-> — Heather C. West et al. (2018)
+> — Reynolds et al. (2021)
 
-> "As antigen-presenting cells (APC), LC exhibit an important capacity to initiate primary and secondary immune responses towards foreign proteins encountered at the epithelial interface (epidermis or mucosa) with the environment."
->
-> — H. Hamzeh et al. (2000)
+### 3. Response to inflammation
 
-These cells capture antigens via dendrites, process them using specialized intracellular compartments (Birbeck granules), and migrate to skin-draining lymph nodes for T cell priming:
+LC1 proliferation is augmented in atopic dermatitis (AD) and psoriasis lesional skin, suggesting that LC1 self-renewal is a feature of the epidermal inflammatory response. Reynolds et al. (2021) show that FACS-sorted Langerin+CD1ahi cells (corresponding to conventional LCs) are distinct from LC1-enriched Langerin+CD1alo cells, highlighting LC subset-specific responses to skin inflammation.
 
-> "In vitro human LC are able to take up antigens, process them efficiently and present them to T cells to induce activation, proliferation, and cytokine production (57)."
->
-> — Arjan Boltjes et al. (2014)
+## Disease relevance
 
-### Induction of Immune Tolerance
-
-In addition to promoting immunity, LCs help maintain cutaneous immune tolerance, especially through interactions with skin-resident T cells:
-
-> "LCs with high HLA-II, CD86, and PD-L2 expression directly contacted PD-1+ tissue-resident memory T cells and CTLA-4+ regulatory T cells in the epidermis, indicating an axis of peripheral tolerance in a steady state."
->
-> — Tomonori Oka et al. (2024)
-
-### Migration and Homeostasis
-
-LCs can migrate from the epidermis to regional lymph nodes, a process essential for presenting antigens to naïve T cells and initiating systemic immune responses:
-
-> "The ability of LCs to migrate from epidermis to regional lymph nodes is thus of pivotal importance to the induction of cutaneous immune responses."
->
-> — M. Cumberbatch et al. (2006)
-
-Self-renewal within the epidermis supports long-term LC maintenance, in contrast to monocyte-derived dendritic cells:
-
-> "LCs are believed to sustain their epidermal pool by self-renewal throughout the life (34)."
->
-> — Tae-Gyun Kim et al. (2014)
-
-### Contextual Roles in Homeostasis and Disease
-
-LCs support not only immune defense but also homeostatic tissue interactions and can participate in skin pathologies, mediating either inflammation or tolerance:
-
-> "It has become clear that LCs not only exert pivotal roles in immune surveillance and homeostasis but also impact on pathology by either inducing tolerance or mediating inflammation."
->
-> — J. Deckers et al. (2018)
-
-> "They play a role in the pathogenesis of various dermatoses and take part in skin neoplastic transformation."
->
-> — Barbara Zegarska et al. (2017)
-
-## Structure / Morphology
-
-LCs have a distinctive dendritic morphology, with extensive processes extending between keratinocytes to maximize environmental sampling:
-
-> "These cells were identified in the epidermis and reminiscent of neurons due to their dendritic morphology."
->
-> — J. Deckers et al. (2018)
-
-The presence of Birbeck granules—rod- or tennis-racket-shaped organelles—is a hallmark of Langerhans cells, serving as an ultrastructural signature:
-
-> "They are recognized through the expression of CD1a antigen and specific organelles: the Birbeck granules."
->
-> — H. Hamzeh et al. (2000)
-
-> "LCs have a unique intracellular ultrastructure called Birbeck granule, visible by electron microscope, which is associated with the internalized Langerin (32,33)."
->
-> — Tae-Gyun Kim et al. (2014)
-
-Anchorage to keratinocytes is mediated by adhesion molecules such as E-cadherin and EpCAM:
-
-> "The close integration of LC within the epithelial layer is mediated by E-Cadherin, EpCAM (TROP1) TROP2, AXL and tight junction proteins claudin, occludin and ZO-1."
->
-> — M. Collin et al. (2018)
+LC1 is the most proliferatively active LC subset in both AD and psoriasis, with Ki67+Langerin+ cells significantly increased in lesional skin. The Langerin+CD1alo FACS gate that enriches LC1 is distinct from the gate used to isolate conventional LCs in clinical studies, meaning LC1-specific changes may have been overlooked in earlier FACS-based analyses of skin disease.
 
 ## References
 
-- M. Collin et al. (2018). "Human dendritic cell subsets: an update". *Immunology*. DOI: [10.1111/imm.12888](https://doi.org/10.1111/imm.12888)
-- Barbara Zegarska et al. (2017). "Changes of Langerhans cells during skin ageing". *Advances in Dermatology and Allergology*. DOI: [10.5114/ada.2017.67849](https://doi.org/10.5114/ada.2017.67849)
-- Tae-Gyun Kim et al. (2014). "The pathophysiological role of dendritic cell subsets in psoriasis". *BMB Reports*. DOI: [10.5483/BMBRep.2014.47.2.014](https://doi.org/10.5483/BMBRep.2014.47.2.014)
-- H. Hamzeh et al. (2000). "Expression of PGP9.5 on Langerhans' cells and their precursors." *Acta Dermato-Venereologica*. DOI: [10.1080/000155500750012423](https://doi.org/10.1080/000155500750012423)
-- Arjan Boltjes et al. (2014). "Human Dendritic Cell Functional Specialization in Steady-State and Inflammation". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2014.00131](https://doi.org/10.3389/fimmu.2014.00131)
-- Heather C. West et al. (2018). "Redefining the Role of Langerhans Cells As Immune Regulators within the Skin". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2017.01941](https://doi.org/10.3389/fimmu.2017.01941)
-- Tomonori Oka et al. (2024). "Langerhans Cells Directly Interact with Resident T Cells in the Human Epidermis". *JID Innovations*. DOI: [10.1016/j.xjidi.2024.100324](https://doi.org/10.1016/j.xjidi.2024.100324)
-- J. Deckers et al. (2018). "Langerhans Cells: Sensing the Environment in Health and Disease". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2018.00093](https://doi.org/10.3389/fimmu.2018.00093)
-- Laurent Chorro et al. (2009). "Langerhans cell (LC) proliferation mediates neonatal development, homeostasis, and inflammation-associated expansion of the epidermal LC network". *Journal of Experimental Medicine*. DOI: [10.1084/jem.20091586](https://doi.org/10.1084/jem.20091586)
-- M. Cumberbatch et al. (2006). "Impaired Langerhans cell migration in psoriasis". *Journal of Experimental Medicine*. DOI: [10.1084/jem.20052367](https://doi.org/10.1084/jem.20052367)
+- Reynolds G, Vegh P, Fletcher J et al. (2021). "Developmental cell programs are co-opted in inflammatory skin disease." *Science*. DOI: [10.1126/science.aba6500](https://doi.org/10.1126/science.aba6500)
+- Gopee NH et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis." *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
+- Vine EE, Rhodes JW, Warner van Dijk FA et al. (2022). "HIV transmitting mononuclear phagocytes; integrating the old and new." *Mucosal Immunology*. DOI: [10.1038/s41385-022-00492-0](https://doi.org/10.1038/s41385-022-00492-0)

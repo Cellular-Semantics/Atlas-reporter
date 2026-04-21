@@ -1,141 +1,91 @@
-# ILC2 (ILC2_3)
-Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis  
+# ILC2/ILC3 Combined Innate Lymphoid Cluster (ILC2_3) in Adult Human Skin
+
+Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
 Scope: adult
+Source dataset: Reynolds et al. (2021), integrated into Gopee et al. (2024)
+Cell Ontology: [innate lymphoid cell](http://purl.obolibrary.org/obo/CL_0001065) (CL:0001065, broad match — ILC2_3 encompasses both ILC2 and ILC3 populations; no single CL term covers both)
 
 ## Summary
 
-Group 2 innate lymphoid cells (ILC2s), resolved as "ILC2_3" in this atlas, are a critical subset of skin-resident lymphocytes in adult human skin. They are predominantly located in the lamina propria and are characterized by the expression of key markers such as IL1RL1, GATA3, IL7R, and TNFRSF18, reflecting their capacity to execute type-2 immune responses (Supplementary Table 4). ILC2s act as versatile immune effectors, contributing to tissue homeostasis, wound repair, and the regulation of inflammatory responses. Notably, these cells also demonstrate functional and phenotypic plasticity within the skin microenvironment, adapting their roles under homeostatic and inflammatory conditions.
+ILC2_3 in Gopee et al. (2024) is a combined cluster encompassing both ILC2 and ILC1/3 (ILC3-enriched) populations as identified by Reynolds et al. (2021) in adult human skin. Reynolds et al. identify ILC2 (IL7R, PTGDR2, GATA3) as having the most distinct transcriptional signature among skin ILC clusters, and ILC1/3 as a mixed population reflecting ILC1-ILC3 plasticity. Together these populations constitute the non-cytotoxic innate lymphoid compartment of adult dermis. ILC2 is the predominant effector ILC in healthy skin, producing type 2 cytokines (IL-5, IL-13) in response to alarmins (TSLP, IL-25, IL-33). ILC3 (captured within ILC1/3) responds to IL-23 and IL-1β to produce IL-22 and IL-17. The combined ILC2_3 cluster is relevant to both atopic dermatitis (ILC2-driven) and psoriasis (ILC3-driven) pathogenesis. Fetal skin ILCs (IL7R+RORC+KIT+) predominate before thymic T cell development and resemble adult ILC3, establishing a developmental continuity in skin innate lymphoid biology.
 
 ## Markers
 
-ILC2s in skin are defined by a refined marker set, which aligns with their specialized functions:
-
-- **IL1RL1 (ST2):** An interleukin-33 receptor, pivotal for ILC2 activation and expansion; its expression marks responsiveness to epithelial alarmin signals (Supplementary Table 4, DE analysis).
-- **GATA3:** A lineage-defining transcription factor crucial for ILC2 identity, fostering type-2 cytokine production (Supplementary Table 4, DE analysis).
-- **IL7R (CD127):** This receptor for interleukin-7 supports ILC2 development, survival, and maintenance within tissue sites (Supplementary Table 4, DE analysis).
-- **TNFRSF18 (GITR):** A surface receptor involved in T cell co-stimulation and immune modulation by ILC2s (Supplementary Table 4, DE analysis).
-
-Additional markers observed in skin ILC2s include CD25, CRTH2 (PTGDR2), CD45, CD161, c-Kit, ICOS, and CD103, many of which support tissue residency, activation, and functional specialization (Jia et al., 2023; Leyva-Castillo et al., 2021):
-
-> "Reynolds et al. showed by single-cell RNA sequencing that ILCs in the epidermis and dermis of AD patients and normal healthy subjects could be classified into four subgroups, namely, ILC1/3, ILC2, ILC1/NK, and NK, with ILC2s (IL7R, PTGDR2, and GATA3) having the most distinct signature (42)."
+> "ILC2 (IL7R,
+> PTGDR2, GATA3) has the most distinct signature in our data and in existing literature"
 >
-> — Jia et al. (2023)
+> — Reynolds et al. (2021)
 
-> "skin ILCs are a heterogeneous population, including ILC1s, ILC2s, ILC3s, and ILC precursors, with ILC2s being predominant (Alkon et al., 2021)"
+> "Fetal skin ILCs (IL7R+, RORC+ and KIT+)
+> resemble adult skin ILC3"
 >
-> — Leyva-Castillo et al. (2021)
+> — Reynolds et al. (2021)
+
+> "In contrast to adult skin, the fetal skin lymphoid compartment is predominantly populated
+> by ILCs (Fig. 1D and 1F) between 7-10 PCW, prior to the development of the thymus, bone
+> marrow and spleen, where T and B lymphocytes differentiate"
+>
+> — Reynolds et al. (2021)
+
+ILC2-defining markers:
+- **IL7R (CD127)** — IL-7 receptor; ILC marker shared across ILC subsets
+- **PTGDR2** — encodes CRTH2 (chemoattractant receptor homologous molecule); ILC2-defining surface receptor
+- **GATA3** — master transcription factor for ILC2 identity and type 2 cytokine production
+
+ILC3-associated markers (within ILC1/3 component):
+- **RORC** — RAR-related orphan receptor C; ILC3 master transcription factor
+- **KIT (CD117)** — ILC3 surface marker
+- **KLRB1 (CD161)** — pan-innate lymphocyte marker (shared across ILC2 and ILC3)
+
+Johnson and Lee (2025) confirm ILC2 as the predominant effector ILC in healthy skin:
+
+> "In healthy human and murine skin, most effector ILCs are of the ILC2 subset, which produces IL-5 and IL-13 and are increased in cutaneous inflammatory disease"
+>
+> — Johnson and Lee (2025)
+
+> "All three ILC subsets are present in healthy human skin; however, they are differentially expressed in disease-specific states (e.g., ILC3s are significantly increased in lesional psoriasis)"
+>
+> — Johnson and Lee (2025)
 
 ## Location
 
-### Skin and Tissue Compartments
-
-ILC2_3 (ILC2) cells are predominantly found in the lamina propria of adult skin (Supplementary Table 9). Additional studies reinforce that ILC2s are largely tissue-resident within the skin, inhabiting the dermis and occasionally epidermis and subcutaneous tissue:
-
-> "In healthy human and murine skin, most effector ILCs are of the ILC2 subset, which produces IL-5 and IL-13 and are increased in cutaneous inflammatory disease (43,92). These cells have also been implicated in wound healing (93). Some propose that ILC2 and ILC3 cells are predominantly tissue resident in healthy homeostatic states,"
->
-> — Johnson et al. (2025)
-
-> "Tissue resident and circulating ILC2s are present in the skin."
->
-> — Mathä et al. (2022)
-
-### Spatial Microanatomy
-
-Skin ILC2s are detected mainly in the dermis, with some subsets (e.g., those marked by ICOS and CCR6) found in both epidermis and dermis:
-
-> "ICOS + CCR6 + ILCs, on the other hand, are located in both the epidermis and dermis and exhibit ILC2 characters."
->
-> — Kobayashi et al. (2022)
-
-CD103+ ILC2s are posited as a distinct and possibly more sessile subpopulation, particularly relevant for skin residency:
-
-> "CD103 + dILC2 population might represent a distinct sub-population of ILC2 in the skin."
->
-> — Salimi et al. (2014)
-
-### Developmental Timing
-
-ILC2s are present as precursors as early as fetal skin and appear mainly neonatally, then persist or are replenished in adulthood:
-
-> "ILC precursors and ILC2s can be detected in the fetal intestine, lung and skin during embryonic development in mice (7,9), while the majority of adult ILC2s seems to be neonatally derived (Figure 1A)."
->
-> — Mathä et al. (2022)
+ILC2_3 cells reside in the adult dermis as part of the CD161(KLRB1)+CD3- innate lymphoid compartment. ILC2 and ILC3 are considered predominantly tissue-resident in healthy homeostatic skin, as opposed to ILC1 which may traffic more actively to lymph nodes. Fetal skin ILCs are the dominant lymphoid population in the skin from 7–10 post-conception weeks, prior to thymic T cell development.
 
 ## Function
 
-### Homeostatic Roles and Wound Repair
+### 1. ILC2: Type 2 innate immune responses
 
-ILC2s maintain tissue integrity, participate in wound repair, and regulate local immune responses:
+ILC2 produces IL-5 and IL-13 in response to the epithelial alarmins TSLP, IL-25, and IL-33. These cytokines drive eosinophil recruitment, mucus production, mast cell activation, and type 2 T helper cell polarisation. In the skin, ILC2 responds to barrier damage and initiates early type 2 inflammatory cascades. CRTH2 (encoded by PTGDR2) is activated by prostaglandin D2, a lipid mediator released during allergic inflammation that recruits and activates ILC2.
 
-> "skin ILC2s play significant positive roles in tissue repair and regeneration. When a wound occurs, IL-33 is secreted by damaged keratinocytes, strongly activating skin ILC2s, which secrete type 2 cytokines like IL-5 and IL-13. While these cytokines exacerbate inflammation, at wound sites, they promote re-epithelialization and collagen deposition, thereby aiding in the physical recovery of the skin. Additionally, the tissue-protective function of ILC2s plays a crucial role in hair follicle homeostasis."
+### 2. ILC3: IL-22 and IL-17 production
+
+The ILC3 component of ILC2_3 (captured via RORC+KIT+ cells within the ILC1/3 cluster) produces IL-22 and IL-17 in response to IL-23 and IL-1β from activated macrophages and DCs. IL-22 promotes keratinocyte proliferation and barrier repair; IL-17 drives neutrophil recruitment and antimicrobial peptide expression.
+
+### 3. Fetal skin innate lymphoid predominance
+
+Prior to thymic development, fetal skin ILCs (IL7R+RORC+KIT+) are the dominant lymphoid population in the skin:
+
+> "In contrast to adult skin, the fetal skin lymphoid compartment is predominantly populated
+> by ILCs (Fig. 1D and 1F) between 7-10 PCW, prior to the development of the thymus, bone
+> marrow and spleen, where T and B lymphocytes differentiate"
 >
-> — Kim et al. (2025)
+> — Reynolds et al. (2021)
 
-> "ILC2s are the main source of IL-13 in the skin resulting in the inhibition of the mast cell functions. 47 ILC2s express amphiregulin (AREG) which is an epidermal growth factorrelated molecule and plays an important role in tissue repair in the skin and airways after acute epithelial damage."
+These fetal ILCs resemble adult ILC3, indicating a conserved developmental role for ILC3-like cells in early skin immune surveillance.
+
+## Disease relevance
+
+ILC2 is expanded in atopic dermatitis, where IL-33 (produced in part by VE3 endothelial cells) drives ILC2 activation and IL-5/IL-13 production, amplifying type 2 inflammation. ILC3 is increased in psoriasis lesional skin. Villanova et al. (2014) provided early evidence for ILC3 expansion in psoriasis:
+
+> "Characterization of innate lymphoid cells (ILC) in human skin and blood demonstrates increase of NKp44+ ILC3 in psoriasis"
 >
-> — Sahiner et al. (2020)
+> — Villanova et al. (2014)
 
-### Immune Activation and Regulation
-
-ILC2s are central to type 2 immunity, producing cytokines (IL-5, IL-13, IL-4) and modulating inflammatory responses:
-
-> "ILC2, type 2 innate lymphoid cells, act as a crucial regulator in tumor immunity and play a promoting or suppressive role in different tumors [70,71]. We detected one ILC2 cell cluster characterized by high expression of ILC2 marker genes Gata3, Il7r, Il5, and Il13 (Figure 7C)."
->
-> — Fan et al. (2025)
-
-> "ILC2s in normal human skin were found to be a homogenous population that expresses type 2 cytokines IL-13 and IL-4 and the transcription factor GATA3"
->
-> — Leyva-Castillo et al. (2021)
-
-ILC2s act as local modulators of the adaptive response:
-
-> "ILC2s control the adaptive immune response locally promoting the activation of dendritic cells, suppressing Treg functions, interacting with CD4 + T cells, and inducing chemoattraction of T helper type 2 cells"
->
-> — Leyva-Castillo et al. (2021)
-
-They are implicated in allergic and atopic skin inflammation:
-
-> "ILC2 numbers are increased in the skin of FITC-challenged mice"
->
-> — Rafei-Shamsabadi et al. (2019)
-
-Plasticity is a hallmark: during inflammation (e.g., atopic dermatitis), ILC2s can co-express type-17 and type-3 signatures, reflecting their ability to adapt to local cues:
-
-> "ILC2s present in AD lesional skin were found to be heterogeneous and expressed type 2 as well as type 17 cytokines and the transcription factors that drive these cytokines, including GATA3, AHR, and RORC (Alkon et al., 2021)"
->
-> — Leyva-Castillo et al. (2021)
-
-### Antigen Presentation
-
-Some skin ILC2s are capable of presenting antigens via MHC class II to T cells:
-
-> "ILC2 and ILC3 express MHCII molecules on their surface and can act as antigen presenting cells for helper T cells (29,51,52)."
->
-> — Rafei-Shamsabadi et al. (2019)
-
-## Structure / Morphology
-
-ILC2s exhibit lymphoid morphology and several studies report their distribution near blood vessels in the skin and their rapid motility, often interacting with mast cells:
-
-> "CXCR6 + ILC2 are mainly aggregated in the close vicinity of blood vessels. They constantly patrol the skin local microenvironment with rapid migration (5 μm/min) but with intermittent long interactions with dermal mast cells that lasted 20 to 30 minutes."
->
-> — Salimi et al. (2014)
-
-Some subpopulations are defined by the expression of the integrin CD103, indicating sessile tissue-residency:
-
-> "CD103 + dILC2 population might represent a distinct sub-population of ILC2 in the skin."
->
-> — Salimi et al. (2014)
+The combined ILC2_3 cluster thus encompasses cell types relevant to the two most prevalent inflammatory skin diseases — atopic dermatitis (ILC2) and psoriasis (ILC3) — making it a key innate immune compartment in skin pathology.
 
 ## References
 
-- Fan et al. (2025). "Single-Cell Profiling Reveals Global Immune Responses During the Progression of Murine Epidermal Neoplasms". *Cancers*. DOI: [10.3390/cancers17081379](https://doi.org/10.3390/cancers17081379)
-- Johnson et al. (2025). "Natural killer cells in skin: a unique opportunity to better characterize the many facets of an overlooked secondary lymphoid organ". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2025.1646719](https://doi.org/10.3389/fimmu.2025.1646719)
-- Jia et al. (2023). "Innate lymphoid cells: a new key player in atopic dermatitis". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2023.1277120](https://doi.org/10.3389/fimmu.2023.1277120)
-- Kobayashi et al. (2022). "Tissue-Specific Diversity of Group 2 Innate Lymphoid Cells in the Skin". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2022.885642](https://doi.org/10.3389/fimmu.2022.885642)
-- Leyva-Castillo et al. (2021). "Cutaneous Type 2 Innate Lymphoid Cells Come in Distinct Flavors". *JID Innovations*. DOI: [10.1016/j.xjidi.2021.100059](https://doi.org/10.1016/j.xjidi.2021.100059)
-- Mathä et al. (2022). "Tissue Resident and Migratory Group 2 Innate Lymphoid Cells". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2022.877005](https://doi.org/10.3389/fimmu.2022.877005)
-- Rafei-Shamsabadi et al. (2019). "Context Dependent Role of Type 2 Innate Lymphoid Cells in Allergic Skin Inflammation". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2019.02591](https://doi.org/10.3389/fimmu.2019.02591)
-- Salimi et al. (2014). "Innate lymphoid cells and the skin". *BMC Dermatology*. DOI: [10.1186/1471-5945-14-18](https://doi.org/10.1186/1471-5945-14-18)
-- Kim et al. (2025). "Tissue-Resident ILC2s Across Organs: Heterogeneity, Niche Crosstalk, and Shared Regulatory Circuits". *Immune Network*. DOI: [10.4110/in.2025.25.e40](https://doi.org/10.4110/in.2025.25.e40)
-- Sahiner et al. (2020). "Innate lymphoid cells: The missing part of a puzzle in food allergy". *Allergy. European Journal of Allergy and Clinical Immunology*. DOI: [10.1111/all.14776](https://doi.org/10.1111/all.14776)
+- Reynolds G, Vegh P, Fletcher J et al. (2021). "Developmental cell programs are co-opted in inflammatory skin disease." *Science*. DOI: [10.1126/science.aba6500](https://doi.org/10.1126/science.aba6500)
+- Gopee NH et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis." *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
+- Johnson RL and Lee SH (2025). "Natural killer cells in skin: a unique opportunity to better characterize the many facets of an overlooked secondary lymphoid organ." *Frontiers in Immunology*. DOI: [10.3389/fimmu.2025.1509635](https://doi.org/10.3389/fimmu.2025.1509635)
+- Villanova F et al. (2014). "Characterization of innate lymphoid cells (ILC) in human skin and blood demonstrates increase of NKp44+ ILC3 in psoriasis." *Journal of Investigative Dermatology*. DOI: [10.1038/jid.2013.477](https://doi.org/10.1038/jid.2013.477)

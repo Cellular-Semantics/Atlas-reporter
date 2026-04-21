@@ -1,52 +1,92 @@
-# Vascular Endothelial 3 (VE3)
-Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis  
+# Vascular Endothelial Cell 3 (VE3) in Adult Human Skin
+
+Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
 Scope: adult
+Source dataset: Reynolds et al. (2021), integrated into Gopee et al. (2024)
+Cell Ontology: [endothelial cell of venule](http://purl.obolibrary.org/obo/CL_1000414) (CL:1000414, broad match — no exact CL term for this adult skin post-capillary venular inflammatory subset)
 
 ## Summary
-Vascular Endothelial 3 (VE3), also referenced as "vascular endothelial 3," is a distinct population of vascular endothelial cells identified in adult human skin through single-cell atlas approaches (Atlas name resolution). VE3 cells are characterized as a specialized subset of vascular endothelium, with postcapillary venular features and important roles in immune cell trafficking and inflammation. Although direct marker gene findings were not provided in the supplementary materials, literature indicates that VE3 is involved in leukocyte adhesion and migration and becomes more prevalent in inflammatory skin diseases like psoriasis and atopic dermatitis. Spatially, VE3 localizes to postcapillary venule structures in the skin, and its function appears to be implicated in cutaneous immune responses and pathological remodeling during disease.
+
+VE3 is one of three PECAM1(CD31)-expressing blood vascular endothelial states identified in adult human dermis by Reynolds et al. (2021). It is the smallest subset (~2% of endothelial cells), specifically characterised by high expression of the venular capillary marker ACKR1 and gamma-synuclein (SNCG). VE3 co-expresses a suite of inflammatory cytokines, chemokines, and leukocyte adhesion molecules (IL6, IL33, SELE, ICAM1), resembling lymph node high endothelial venules (HEVs), and is proposed to function as post-capillary venular endothelium regulating leukocyte egress from blood into the dermis. Whole-mount immunostaining of healthy dermis confirms SNCG+PECAM1+ distended vascular structures in the superficial dermis. VE3 is significantly expanded in both atopic dermatitis and psoriasis, and adult skin VE3 aligns transcriptionally with fetal skin vascular endothelium, indicating that developmental vascular gene programmes are co-opted during skin inflammation.
 
 ## Markers
-No evidence found in traversed literature.
+
+> "Three distinct states of PECAM1(CD31)-expressing vascular endothelial cells (VE1,
+> VE2, VE3) are present in adult dermis. VE3, which forms ~2% of endothelial cells, is
+> characterized by gamma synuclein (SNCG) and high expression of the venular capillary
+> marker ACKR1"
+>
+> — Reynolds et al. (2021)
+
+> "VE3 co-express inflammatory cytokines,
+> chemokines and leukocyte adhesion molecules including IL6, IL33, SELE and ICAM1"
+>
+> — Reynolds et al. (2021)
+
+Defining markers of VE3:
+- **ACKR1** — atypical chemokine receptor 1; venular capillary marker, key identifier of post-capillary venular endothelium
+- **SNCG (gamma-synuclein)** — defining VE3 marker identified by Reynolds et al.
+- **PECAM1 (CD31)** — pan-endothelial marker (shared by VE1, VE2, VE3)
+- **EMCN (endomucin)** — pan-vascular endothelial marker
+
+Inflammatory co-expressed molecules:
+- **IL6** — pro-inflammatory cytokine
+- **IL33** — alarmin cytokine
+- **SELE (E-selectin)** — leukocyte adhesion molecule
+- **ICAM1** — intercellular adhesion molecule
 
 ## Location
 
-### Skin, Postcapillary Venules
-Evidence from the literature suggests that VE3 corresponds to a population of postcapillary venular endothelial cells in the skin (Name resolution; Chen et al.). This position in the cutaneous vasculature is functionally significant, as postcapillary venules are traditionally the locus for leukocyte transmigration and immune surveillance.
+VE3 cells form the post-capillary venular endothelium of the adult dermis, identified as SNCG+PECAM1+ distended vascular structures in the superficial dermis by whole-mount immunostaining:
 
-### Association with Disease States
-In inflamed conditions such as atopic dermatitis and psoriasis, the frequency of VE3 cells increases, highlighting their potential involvement in disease-specific vascular remodeling and immune cell interactions (Chen et al.).
+> "we performed
+> whole-mount immunostaining of healthy dermis and identified SNCG+PECAM1+(VE3)
+> distended vascular structures in the superficial dermis"
+>
+> — Reynolds et al. (2021)
+
+Post-capillary venules are the primary sites of leukocyte trafficking and extravasation into peripheral tissues in the dermis. He et al. (2022) independently confirm that ACKR1 distinguishes the downstream venular compartments from arterioles and post-arterial capillaries in human skin.
 
 ## Function
 
-### Immune Cell Trafficking and Inflammation
-VE3 cells are implicated in regulating leukocyte (white blood cell) adhesion and migration in the skin, which are central processes for immune surveillance and response to injury or infection. In the context of chronic skin inflammation, such as psoriasis and atopic dermatitis, VE3 frequency is elevated, consistent with an enhanced immune permissive vascular niche (Chen et al.).
+### 1. Leukocyte adhesion and trafficking
 
-Additionally, increased expression of the chemokine CXCL12 (also known as SDF-1) was observed in VE3 cells from inflamed skin, and the close proximity of these CXCL12+ endothelial cells to CXCR4^hi neutrophils was confirmed by immunofluorescence studies. This suggests that VE3 participates in the chemotactic recruitment of neutrophils, contributing to inflammatory cascades (Chen et al.).
+VE3 expresses the molecular machinery required to orchestrate leukocyte adhesion and egress from the bloodstream into the dermis. The co-expression of SELE (E-selectin), ICAM1, and ACKR1 on VE3 facilitates the stepwise capture, rolling, and firm adhesion of leukocytes. ACKR1 is an atypical chemokine scavenger receptor that fine-tunes chemokine gradients at the vessel wall, shaping leukocyte recruitment:
 
-### Potential Vessel Progenitor or Perineurial Functions
-In an experimental model, Cdh5+ / Krt19+ cells, which have been computationally mapped as a vascular progenitor-like subset akin to VE3, were shown to form tubular structures in the skin. However, lineage tracing found that these structures did not acquire mature endothelial characteristics (lacking markers such as CD31, CD34, Lyve1) and instead encapsulated neurofilament-positive nerve bundles. This suggests that while some subsets mapped to VE3 might be computationally predicted as endothelial progenitors, they may in vivo serve non-endothelial or perineurial functions:
-
-> "If the Cdh5 + /Krt19 + cells were indeed skin EC vascular progenitors acting in the hair cycle, we reasoned they should eventually form mature vasculature. To test this, we employed lineage tracing using the Krt19-CreERT; tdTomato mice TM-induced at PD17 and stained the tissue sections at PD32 (anagen) and PD49 (telogen) with VE-cadherin, CD31 (Pecam1), CD34 and lymphatic capillary marker Lyve1 in n = 3 mice per stage. Excitingly, we did observe tdTomato + /VE-cadherin + tubular structures resembling vasculature at both hair cycle stages analyzed (Fig. 4g, h). However, to our surprise these structures never stained positive for mature EC markers CD31, CD34, and Lyve1 (Fig. 4i-k) in >45 tdTomato + tubular structures/staining/stage analyzed. Thus, our in vivo lineage tracing analysis did not support the computational prediction of Cdh5 + /Krt19 + cells as a potential EVP subpopulation that may contribute to mature vasculature formation in adult skin during the hair cycle. This left unresolved the identity and function of the Cdh5 + /Krt19 + population and of the tubular structures it formed."
+> "these cells
+> may be post-capillary venular cells regulating leukocyte adhesion and migration"
 >
-> — Gopal Chovatiya et al. (2023)
+> — Reynolds et al. (2021)
 
-> "Cdh5 + /Krt19 + cells encapsulate neurofilament-positive nerve bundles"
+### 2. Inflammatory cytokine production
+
+VE3 is the primary endothelial source of the pro-inflammatory cytokines IL6 and IL33 in the dermis. IL33 signals to ILC2, mast cells, and T helper 2 cells, and its production by VE3 makes this endothelial subpopulation a key regulator of type 2 inflammatory responses in skin.
+
+### 3. Fetal-to-adult developmental programme alignment
+
+Adult skin VE3 shares a transcriptional programme with fetal skin vascular endothelium:
+
+> "Fetal skin VE cells aligned transcriptionally with adult skin
+> VE3 and also express genes involved in leukocyte adhesion and trafficking"
 >
-> — Gopal Chovatiya et al. (2023)
+> — Reynolds et al. (2021)
 
-This finding highlights the possible heterogeneity in the annotation of VE3-like populations and underlines the need for careful functional validation beyond computational cell clustering.
+This fetal-to-adult alignment indicates that the VE3 inflammatory programme reflects a developmental endothelial state that is re-deployed in adult inflammatory skin disease.
 
-## Structure / Morphology
-The Gopal Chovatiya et al. (2023) study observed that certain VE3-like (Cdh5+/Krt19+) cell populations form tubular, vasculature-resembling structures but do not exhibit markers of mature endothelial cells. Instead, these structures encapsulate nerve bundles, suggesting a morphology distinct from prototypical blood vessel endothelium:
+## Disease relevance
 
-> "Excitingly, we did observe tdTomato + /VE-cadherin + tubular structures resembling vasculature at both hair cycle stages analyzed (Fig. 4g, h). However, to our surprise these structures never stained positive for mature EC markers ... This left unresolved the identity and function of the Cdh5 + /Krt19 + population and of the tubular structures it formed."
+VE3 expands significantly in both atopic dermatitis and psoriasis:
+
+> "we observed significant expansion of VE3 in AD and psoriasis lesional
+> skin"
 >
-> — Gopal Chovatiya et al. (2023)
+> — Reynolds et al. (2021)
 
-Further, these Cdh5+/Krt19+ cells encapsulate neurofilament-positive nerve bundles, suggesting a unique perivascular or perineurial morphology.
+In contrast to VE3, VE1 is markedly depleted in psoriasis (non-lesional p=5.5×10⁻⁶; lesional p=5.0×10⁻¹⁵), indicating a compositional shift in the dermal vascular endothelium during inflammatory skin disease, with homeostatic VE1/VE2 endothelium replaced by the inflammatory VE3 post-capillary venular state. VE3's expression of IL33, SELE, and ICAM1 makes it a direct participant in the amplification of inflammatory responses in psoriasis and atopic dermatitis.
 
 ## References
 
-- Gopal Chovatiya et al. (2023). "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis". *Nature Communications*. DOI: [10.1038/s41467-023-40761-5](https://doi.org/10.1038/s41467-023-40761-5)
-
-- Jiaoling Chen et al. (2023). "CREB1-driven CXCR4hi neutrophils promote skin inflammation in mouse models and human patients". *Nature Communications*. DOI: [10.1038/s41467-023-41484-3](https://doi.org/10.1038/s41467-023-41484-3)
+- Reynolds G, Vegh P, Fletcher J et al. (2021). "Developmental cell programs are co-opted in inflammatory skin disease." *Science*. DOI: [10.1126/science.aba6500](https://doi.org/10.1126/science.aba6500)
+- Gopee NH et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis." *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
+- He P et al. (2022). "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling." *Frontiers in Cardiovascular Medicine*. DOI: [10.3389/fcvm.2022.843091](https://doi.org/10.3389/fcvm.2022.843091)
+- Liu B, Li A, Xu J, Cui Y (2022). "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells." *Frontiers in Surgery*. DOI: [10.3389/fsurg.2022.935107](https://doi.org/10.3389/fsurg.2022.935107)

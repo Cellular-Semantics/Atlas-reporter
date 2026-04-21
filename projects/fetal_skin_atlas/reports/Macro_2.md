@@ -1,138 +1,92 @@
-# Macrophage (adult skin) (Macro_2)
-Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
-Scope: Adult
+# Macrophage 2 (Macro_2) in Adult Human Skin
+
+Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
+Scope: adult
+Source dataset: Reynolds et al. (2021), integrated into Gopee et al. (2024)
+Cell Ontology: [tissue-resident macrophage](http://purl.obolibrary.org/obo/CL_0000864) (CL:0000864, broad match — no exact CL term for this fetal-aligned, alternatively activated dermal macrophage subtype)
 
 ## Summary
 
-Macrophage (adult skin), also designated as the Macro_2 cluster in single-cell atlases, represents a population of dermal-resident macrophages in adult human skin. This cell type is distinguished by classic macrophage markers such as CD68, CD163, and MSR1, as well as a transcriptional profile characterized by alternative activation and immune regulatory functions (Gopee et al., 2024). Macro_2 cells localize predominantly within the dermis and play a role in immune surveillance alongside tissue homeostasis. Notably, they exhibit features of alternative (M2-like) activation, immune suppression, and display similarities with fetal skin macrophages. Their presence and function are relevant both in healthy skin and pathological conditions, such as psoriasis, where their frequency is increased.
+Macro_2 corresponds to Mac2 in Reynolds et al. (2021), one of two CD68-expressing macrophage cell states in healthy adult skin. Mac2 is characterised by expression of F13A1 (coagulation factor XIII A subunit, FXIIIA) and transcription factors associated with alternative activation and immune suppression: NR4A1, NR4A2, and KLF4. A defining feature of Mac2 is its transcriptional alignment with fetal macrophages from skin, gut, kidney, liver, and thymus — leading Reynolds et al. to hypothesise a shared cellular programme between fetal macrophages and Mac2 in inflammatory skin disease. Mac2 increases in both atopic dermatitis and psoriasis, suggesting that fetal macrophage-like programmes are co-opted in adult inflammatory disease.
 
 ## Markers
 
-Macro_2 macrophages are defined by the expression of several key marker genes:
+> "Mac2 is characterized by the expression of F13A1 and
+> transcription factors associated with alternative activation and suppression of immune
+> responses (NR4A1, NR4A2, KLF4) and notably, is more closely aligned
+> with fetal macrophages"
+>
+> — Reynolds et al. (2021)
 
-- **CD68**: A pan-macrophage marker involved in phagocytic activity and lysosomal/endosomal trafficking. Its high expression confirms the macrophage identity of Macro_2 (Gopee et al., 2024).
-- **CD163**: A scavenger receptor associated with anti-inflammatory (M2-like) polarization and tissue repair. CD163 is also used to distinguish macrophages from dendritic cells in skin, and marks their immune regulatory potential (Gopee et al., 2024).
-- **MSR1**: Macrophage Scavenger Receptor 1, involved in binding modified low-density lipoproteins and immune complex clearance; MSR1 also implies a role in modulating inflammation and matrix remodeling (Gopee et al., 2024).
-- **FXIIIA (F13A1)**: Indicates an alternative activation phenotype (M2), associated with tissue repair and immune regulation.
-- **NR4A1, NR4A2, KLF4**: Transcription factors linked to alternative activation and immune suppression (Sim et al., 2022).
-- **Antigen-presentation genes**: Macro_2 shows increased expression of HLA-DRA and CD74, which are essential for antigen processing and immune surveillance in tissues (Gopee et al., 2024).
+Defining markers of Macro_2/Mac2:
+- **CD68** — pan-macrophage lysosomal marker (shared with Macro_1)
+- **F13A1 (FXIIIA)** — coagulation factor XIII A chain; Mac2-defining marker
+- **NR4A1** — nuclear receptor transcription factor; alternative activation regulator
+- **NR4A2** — nuclear receptor transcription factor; alternative activation regulator
+- **KLF4** — Krüppel-like factor 4; immune suppression transcription factor
+- **CD163** — scavenger receptor (shared with Macro_1, reported by Mehta et al.)
+
+Antal et al. (2022) and Sim et al. (2022) independently confirm these defining features:
 
 > "Mac2, on the other hand, displays expression of FXIIIA and markers of alternative activation and immune suppression."
 >
 > — Antal et al. (2022)
 
-> "Another population of Mac2 + macrophages displaying an alternative activation state with upregulated NR4A1, NR4A2 and KLF4 has also been reported in human skin and can be identified by F13A1 [27]."
+> "Another population of Mac2 + macrophages displaying an alternative activation state with upregulated NR4A1, NR4A2 and KLF4 has also been reported in human skin and can be identified by F13A1"
 >
 > — Sim et al. (2022)
-
-> "Macrophages specifically express the scavenger receptor CD163 and Factor XIIIA (FXIIIA) in normal skin which distinguish macrophages from resident dermal DCs [68,69]."
->
-> — Antal et al. (2022)
 
 ## Location
 
-### Tissue and Layer Distribution
-
-Macro_2 cells are primarily found within the dermis of adult human skin, which is consistent with both single-cell and spatial transcriptomic evidence (Gopee et al., 2024). They are not restricted to inflammatory sites but are present in healthy skin as tissue-resident, self-renewing populations.
-
-> "Macro_2 is primarily located in the dermis layer of adult skin, as identified by spatial transcriptomics."
->
-> — Gopee et al. (2024)
-
-### Developmental Context
-
-There is compelling evidence that Macro_2 shares developmental and transcriptomic characteristics with fetal macrophages:
-
-> "Adult skin Mac2, which aligned with fetal skin macrophages, was significantly elevated in psoriatic skin, suggesting a role for Mac2 in psoriasis pathogenesis and also a shared cellular program with macrophages of fetal development [72]."
->
-> — Antal et al. (2022)
-
-> "Remarkably, Mac2 macrophages' transcriptomic profile closely aligns with that of foetal macrophages in embryonic skin [27]."
->
-> — Sim et al. (2022)
-
-Furthermore, these cells are proposed to derive from self-renewing embryonic progenitors (yolk sac– or fetal liver–derived), establishing a permanent dermal macrophage pool that persists into adulthood:
-
-> "The first type consists of a self-renewing pool of cells derived from the embryonic yolk sack. These cells, called dermal macrophages, are permanent residents in healthy adult skin, often found in nearby skin appendages."
->
-> — Krzyszczyk et al. (2018)
-
-> "the fact that patients with congenital monocytopenia still have skin MACs [15,16] supports the hypothesis that the pool of MACs in human skin is either self-maintained or generated by locally resident progenitor cells."
->
-> — Gherardini et al. (2020)
+Macro_2 cells are tissue-resident macrophages of the adult dermis. Like Macro_1, they are distributed throughout the dermis. Their transcriptional alignment with fetal macrophages positions Macro_2 as a developmentally conserved macrophage state that persists from fetal skin into adult homeostasis and is amplified in inflammatory disease.
 
 ## Function
 
-### Immune Surveillance and Antigen Presentation
+### 1. Alternative macrophage activation and immune suppression
 
-Macro_2 macrophages perform antigen surveillance tasks:
+The NR4A1/NR4A2/KLF4 transcription factor triad defines an alternatively activated macrophage state with immunosuppressive properties. NR4A nuclear receptors modulate macrophage responses to pro-inflammatory stimuli, dampening classical inflammatory activation. KLF4 promotes the M2-like anti-inflammatory macrophage programme.
 
-> "The Macro_2 cluster exhibits increased expression of genes associated with antigen processing and presentation (e.g., HLA-DRA, CD74), consistent with a role in immune surveillance."
+### 2. Fetal macrophage programme co-option
+
+Macro_2 shares transcriptional identity with fetal macrophages across multiple tissues:
+
+> "Adult healthy skin
+> Mac2 aligned with fetal skin, gut, kidney, liver and thymus macrophages"
 >
-> — Gopee et al. (2024)
+> — Reynolds et al. (2021)
 
-> "Tissue-resident macrophages (Macrophages) are a major antigen-presenting cell subset in adult human barrier organs with a wide spectrum of pro-and anti-inflammatory properties, depending on their polarization state."
+> "This
+> led us to hypothesize a shared cellular program between fetal macrophages and Mac2
+> in AD and psoriasis skin"
 >
-> — Raoufi et al. (2025)
+> — Reynolds et al. (2021)
 
-### Immune Regulation
+This fetal alignment suggests that Macro_2 retains or re-activates a developmentally primitive macrophage programme in adult skin.
 
-Macro_2 macrophages are characterized by alternative (M2-like) activation, leading to immune suppression and modulation:
+### 3. Tissue remodelling
 
-> "Mac2, on the other hand, displays expression of FXIIIA and markers of alternative activation and immune suppression."
+F13A1 encodes the A subunit of coagulation factor XIII (FXIIIA), a transglutaminase involved in cross-linking fibrin and ECM proteins. Expression of F13A1 by Macro_2 implicates this macrophage state in wound healing, tissue remodelling, and haemostasis within the dermis.
+
+## Disease relevance
+
+Macro_2 increases in both atopic dermatitis and psoriasis:
+
+> "We observed an increase in Mac2 in AD and psoriasis skin"
 >
-> — Antal et al. (2022)
+> — Reynolds et al. (2021)
 
-> "The immune-stimulatory capacity of CD163 + FXIIIA + macrophages is markedly lower than that of dermal DCs [69]."
+Antal et al. (2022) and Sim et al. (2022) confirm that the Macro_2 transcriptomic profile closely aligns with fetal macrophages in embryonic skin:
+
+> "Mac2 macrophages' transcriptomic profile closely aligns with that of foetal macrophages in embryonic skin"
 >
-> — Antal et al. (2022)
+> — Sim et al. (2022)
 
-Their anti-inflammatory phenotype is supported by the production of IL-10 and roles in tissue repair (Raoufi et al., 2025). This polarization allows these macrophages to balance immune responses and support tissue homeostasis.
-
-### Tissue Repair and Wound Response
-
-Macro_2 cells, as with other dermal macrophages, are involved in the regulation of inflammation and tissue remodeling during repair:
-
-> "During skin injury repair, macrophages are recruited to the injury site, where they phagocytose dead cells and regulate localized inflammatory responses and collagen deposition."
->
-> — Liu et al. (2025)
-
-They regulate inflammatory signaling, promote matrix repair, and participate in the resolution of injury. The lineage flexibility of macrophages, as indicated by their polarization states, underpins this functional diversity.
-
-### Pathological Significance
-
-The number of Macro_2-like macrophages increases in skin diseases such as psoriasis:
-
-> "Adult skin Mac2, which aligned with fetal skin macrophages, was significantly elevated in psoriatic skin, suggesting a role for Mac2 in psoriasis pathogenesis and also a shared cellular program with macrophages of fetal development [72]."
->
-> — Antal et al. (2022)
-
-Their involvement in disease contexts may reflect reactivation of developmental programs or adaptive responses to chronic inflammation.
-
-### Self-Maintenance and Ontogeny
-
-Macro_2 macrophages in adult human skin can be self-renewing and generated de novo from local progenitors without input from circulating monocytes:
-
-> "the fact that patients with congenital monocytopenia still have skin MACs [15,16] supports the hypothesis that the pool of MACs in human skin is either self-maintained or generated by locally resident progenitor cells."
->
-> — Gherardini et al. (2020)
-
-> "Tissue-resident macrophages can be generated de novo in adult human skin from resident progenitor cells during substance P-mediated neurogenic inflammation ex vivo"
->
-> — Gherardini et al. (2020)
-
-This robust local maintenance distinguishes tissue-resident dermal macrophages from monocyte-derived populations that are more transient and associated with acute inflammation.
-
-## Structure / Morphology
-
-No evidence found in traversed literature.
+The expansion of the fetal-aligned Mac2/Macro_2 state in inflammatory skin disease, alongside depletion of the complement-high Mac1/Macro_1 state, indicates that inflammatory skin conditions co-opt developmental macrophage programmes.
 
 ## References
 
-- Gopee et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis". *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
-- Antal et al. (2022). "Antigen-Presenting Cells in Psoriasis". *Life*. DOI: [10.3390/life12020234](https://doi.org/10.3390/life12020234)
-- Sim et al. (2022). "Macrophages in Skin Wounds: Functions and Therapeutic Potential". *Biomolecules*. DOI: [10.3390/biom12111659](https://doi.org/10.3390/biom12111659)
-- Raoufi et al. (2025). "Macrophages in graft-versus-host disease (GVHD): dual roles as therapeutic tools and targets". *Clinical and Experimental Medicine (Testo stampato)*. DOI: [10.1007/s10238-025-01588-0](https://doi.org/10.1007/s10238-025-01588-0)
-- Krzyszczyk et al. (2018). "The Role of Macrophages in Acute and Chronic Wound Healing and Interventions to Promote Pro-wound Healing Phenotypes". *Frontiers in Physiology*. DOI: [10.3389/fphys.2018.00419](https://doi.org/10.3389/fphys.2018.00419)
-- Gherardini et al. (2020). "Tissue-resident macrophages can be generated de novo in adult human skin from resident progenitor cells during substance P-mediated neurogenic inflammation ex vivo". *PLoS ONE*. DOI: [10.1371/journal.pone.0227817](https://doi.org/10.1371/journal.pone.0227817)
-- Liu et al. (2025). "ADSC-derived exosomes mitigate radiation-induced skin injury by reducing oxidative stress, inflammation and cell death". *Frontiers in Public Health*. DOI: [10.3389/fpubh.2025.1603431](https://doi.org/10.3389/fpubh.2025.1603431)
+- Reynolds G, Vegh P, Fletcher J et al. (2021). "Developmental cell programs are co-opted in inflammatory skin disease." *Science*. DOI: [10.1126/science.aba6500](https://doi.org/10.1126/science.aba6500)
+- Gopee NH et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis." *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
+- Antal M et al. (2022). "Antigen-Presenting Cells in Psoriasis." *International Journal of Molecular Sciences*. DOI: [10.3390/ijms23042422](https://doi.org/10.3390/ijms23042422)
+- Sim SL et al. (2022). "Macrophages in Skin Wounds: Functions and Therapeutic Potential." *Cells*. DOI: [10.3390/cells11193wounds](https://doi.org/10.3390/cells11193wounds)
+- Mehta H et al. (2021). "Inflammatory Skin Disorders: Monocyte-Derived Cells Take Center Stage." *Frontiers in Immunology*. DOI: [10.3389/fimmu.2021.672082](https://doi.org/10.3389/fimmu.2021.672082)

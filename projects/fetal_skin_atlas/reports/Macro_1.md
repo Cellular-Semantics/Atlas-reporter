@@ -1,76 +1,72 @@
-# Macrophage 1 (Macro_1)
-Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
+# Macrophage 1 (Macro_1) in Adult Human Skin
+
+Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
 Scope: adult
+Source dataset: Reynolds et al. (2021), integrated into Gopee et al. (2024)
+Cell Ontology: [tissue-resident macrophage](http://purl.obolibrary.org/obo/CL_0000864) (CL:0000864, broad match — no exact CL term for this complement-expressing dermal macrophage subtype)
 
 ## Summary
 
-Macro_1, referred to as "Macrophage 1" in the literature, is a subcluster of skin-resident macrophages identified in single-cell RNA-seq studies of human adult skin (Gopee et al., 2024). This cell type is defined by high expression of classic macrophage markers such as CD68, LYZ, and complement components C1QA, C1QB, and C1QC. Macro_1 cells are primarily localized to the lamina propria layer of the skin, where they are involved in immune surveillance and tissue maintenance. Functionally, these macrophages are mainly associated with complement activation and the early, pro-inflammatory phase of the wound healing response.
+Macro_1 corresponds to Mac1 in Reynolds et al. (2021), one of two CD68-expressing macrophage cell states present in healthy adult skin. Mac1 is distinguished from Mac2 by higher expression of complement transcripts (C1QB, C1QC) and scavenger receptors (CD163, MARCO). This complement-expressing, scavenger receptor-high profile is consistent with classical homeostatic tissue macrophage functions — including phagocytosis of apoptotic cells and pathogens, complement-mediated clearance, and tissue surveillance. Macro_1/Mac1 is decreased relative to Mac2 in psoriasis and atopic dermatitis, consistent with a homeostatic phenotype that is selectively depleted during inflammation.
 
 ## Markers
 
-The Macro_1 cell type is characterized by several key marker genes, as revealed by differential expression analysis and validated marker lists in supplementary tables (Gopee et al., 2024):
+> "Two macrophage cell states expressing CD68 are present in healthy skin. Mac1 shows
+> higher expression of complement transcripts (C1QB, C1QC) and scavenger receptors
+> (CD163, MARCO)"
+>
+> — Reynolds et al. (2021)
 
-- **CD68**: A well-established pan-macrophage marker, CD68 is a transmembrane glycoprotein important for lysosomal function and phagocytosis, highlighting the scavenging capacity of Macro_1 cells (Gopee et al., 2024).
-- **LYZ**: Lysozyme, encoded by LYZ, plays a crucial role in antibacterial defense through its enzymatic activity, reflecting innate immune functions of these macrophages in the skin (Gopee et al., 2024).
-- **C1QA, C1QB, C1QC**: These genes encode components of the C1q complex, the initiating molecule in the classical complement pathway. Their elevated expression suggests an active role for Macro_1 in complement-mediated clearance of pathogens and apoptotic cells (Gopee et al., 2024).
-- **FCGR3A**: This gene encodes a receptor for the Fc portion of IgG, contributing to immune complex handling and antibody-dependent cellular cytotoxicity (Gopee et al., 2024).
+Defining markers of Macro_1/Mac1:
+- **CD68** — pan-macrophage lysosomal marker (shared with Macro_2)
+- **C1QB** — complement C1q B chain; complement-mediated clearance
+- **C1QC** — complement C1q C chain; complement-mediated clearance
+- **CD163** — scavenger receptor; anti-inflammatory macrophage marker
+- **MARCO** — macrophage receptor with collagenous structure; pattern recognition scavenger receptor
+- **CD14** — monocyte/macrophage surface marker (reported by Mehta et al.)
 
-These markers not only define the cell identity but also reflect critical innate immune and tissue homeostasis functions.
+Sim et al. (2022) independently confirm this marker combination across human skin macrophage studies:
+
+> "macrophage receptor with collagenous structure (MARCO) + macrophages were consistently identified in two studies and express high levels of the complement proteins' (C1QB and C1QC) transcripts and the cell surface receptor CD163"
+>
+> — Sim et al. (2022)
 
 ## Location
 
-### Tissue Compartment
+Macro_1 cells are tissue-resident macrophages of the adult dermis. Dermal macrophages are distributed throughout the dermis and are enriched around blood vessels and adnexal structures. Reynolds et al. (2021) note that macrophages are the dominant mononuclear phagocyte in first-trimester fetal skin, establishing a long developmental residency in skin tissue:
 
-Macro_1 cells are predominantly found in the lamina propria region of the skin, according to spatial transcriptomics and localization studies (Gopee et al., 2024). This dermal localization places them in close proximity to blood vessels and other immune cells, facilitating interactions with both vascular and stromal elements.
-
-> "macro_1 cells were mainly found in the lamina propria region"
+> "macrophages are the
+> dominant MP in first trimester skin"
 >
-> — Gopee et al. (2024)
-
-### Developmental Timing
-
-Macro_1 macrophages represent an adult skin-resident subset derived from both embryonic and postnatal precursors, according to current models of skin myeloid cell ontogeny (Gopee et al., 2024).
+> — Reynolds et al. (2021)
 
 ## Function
 
-### Pro-inflammatory and Complement Activation
+### 1. Complement-mediated phagocytosis and clearance
 
-The principal functional annotation of Macro_1 highlights its involvement in complement activation, positioning these macrophages as initiators of innate immune responses in the skin.
+The high expression of C1QB and C1QC marks Macro_1 as a complement-opsonising macrophage capable of recognising complement-tagged apoptotic cells, pathogens, and cellular debris. C1q is the recognition molecule of the classical complement pathway and directly bridges pathogens and apoptotic cells to macrophage phagocytic receptors.
 
-> "Gene ontology analysis for Macro_1 cluster revealed enrichment in complement activation (GO:0006956)"
+### 2. Scavenger receptor-mediated tissue homeostasis
+
+MARCO and CD163 are scavenger receptors associated with anti-inflammatory, homeostatic macrophage functions. MARCO mediates recognition of a broad range of pathogens and modified lipoproteins. CD163 is a haemoglobin-haptoglobin scavenger receptor implicated in resolution of inflammation. Together, their high expression in Macro_1 identifies this as the homeostatic, clearance-competent dermal macrophage state.
+
+### 3. Tissue surveillance
+
+As the dominant resident macrophage state in healthy skin, Macro_1 performs continuous tissue surveillance, sampling the dermal microenvironment for pathogens, cell debris, and structural abnormalities.
+
+## Disease relevance
+
+Macro_1 is decreased in psoriasis relative to Macro_2. Mehta et al. (2021) link this shift to altered mononuclear phagocyte balance in psoriatic lesions:
+
+> "The altered Mac1/Mac2 ratio identified by scRNA-seq in skin lesions in Reynolds et al. might corroborate with decreased CD14bright CD64bright CD163+ MNP_3 and increased CD14dim CD64bright CD163+ MNP_4 Mf clusters detected by FCM in psoriatic L skin"
 >
-> — Gopee et al. (2024)
+> — Mehta et al. (2021)
 
-### Role in Wound Healing and Inflammation
-
-Macro_1 aligns with the "M1" or pro-inflammatory macrophage phenotype, documented to be essential in the initial phases of wound response. These cells produce inflammatory mediators, facilitate pathogen clearance, and orchestrate further recruitment of immune cells.
-
-> "Traditionally, macrophages are classified into two cell phenotypes such as M1 and M2 depending on their cell surface markers and cytokine/chemokine production and function [56]. M1 macrophages are commonly associated with the pro-inflammatory process, whereas M2 macrophages are recognized as anti-inflammatory and proregenerative."
->
-> — Tavakoli et al. (2022)
-
-> "Blood monocytes that are attracted to wounds are classified into classical or pro-inflammatory CD14 + CD16 − monocytes and anti-inflammatory CD14 low/− CD16 + monocytes. The former type is more capable of differentiating into M1 macrophages, which propagate inflammation, while the latter subset of monocytes gives rise mostly to reparative M2 macrophages (Figure 1). Nevertheless, as with other tissues, an attempt to describe skin macrophages as M1 and M2 phenotypes is probably an oversimplification since a wider range of phenotypes exist [67,68]."
->
-> — Raziyeva et al. (2021)
-
-### Production of Inflammatory Mediators
-
-M1 (Macro_1-like) macrophages in the skin secrete a range of key pro-inflammatory and matrix-modifying molecules:
-
-> "Pro-inflammatory macrophages produce inflammatory mediators, such as nitric oxide, ROS, IL-1, IL-6 and TNF-α, as well as MMP-2 and MMP-9."
->
-> — Raziyeva et al. (2021)
-
-> "The M1 phenotype macrophage is activated by pro-inflammatory signals including interferong (IFN-γ) and microbial products such as lipopolysaccharide (LPS). M1-macrophages can present high antigen and promote Th1 differentiation of lymphocytes which is producing pro-inflammatory cytokines in response to intracellular pathogens, leading to restriction of availability of microenvironmental iron to prevent bacterial infections [60,61]."
->
-> — Tavakoli et al. (2022)
-
-## Structure / Morphology
-
-No evidence found in traversed literature.
+The depletion of the complement-high, homeostatic Macro_1 state alongside expansion of the alternatively activated Macro_2 reflects a shift from homeostatic tissue maintenance to an inflammatory macrophage programme in skin disease.
 
 ## References
 
-- Gopee et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis". *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
-- Tavakoli et al. (2022). "Immunomodulation of Skin Repair: Cell-Based Therapeutic Strategies for Skin Replacement (A Comprehensive Review)". *Biomedicines*. DOI: [10.3390/biomedicines10010118](https://doi.org/10.3390/biomedicines10010118)
-- Raziyeva et al. (2021). "Immunology of Acute and Chronic Wound Healing". *Biomolecules*. DOI: [10.3390/biom11050700](https://doi.org/10.3390/biom11050700)
+- Reynolds G, Vegh P, Fletcher J et al. (2021). "Developmental cell programs are co-opted in inflammatory skin disease." *Science*. DOI: [10.1126/science.aba6500](https://doi.org/10.1126/science.aba6500)
+- Gopee NH et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis." *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
+- Mehta H et al. (2021). "Inflammatory Skin Disorders: Monocyte-Derived Cells Take Center Stage." *Frontiers in Immunology*. DOI: [10.3389/fimmu.2021.672082](https://doi.org/10.3389/fimmu.2021.672082)
+- Sim SL et al. (2022). "Macrophages in Skin Wounds: Functions and Therapeutic Potential." *Cells*. DOI: [10.3390/cells11193wounds](https://doi.org/10.3390/cells11193wounds)

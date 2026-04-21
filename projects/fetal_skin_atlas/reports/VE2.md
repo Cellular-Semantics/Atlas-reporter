@@ -1,48 +1,75 @@
-# Vascular Endothelial 2 (VE2)
-Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis  
+# Vascular Endothelial Cell 2 (VE2) in Adult Human Skin
+
+Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
 Scope: adult
+Source dataset: Reynolds et al. (2021), integrated into Gopee et al. (2024)
+Cell Ontology: [blood vessel endothelial cell](http://purl.obolibrary.org/obo/CL_0000071) (CL:0000071, broad match — no exact CL term for VE2 substate)
 
 ## Summary
 
-Vascular Endothelial 2 (VE2), or "Vascular Endothelial 2 (VE2)", represents a specialized capillary endothelial cell population in adult human skin, as resolved by single-cell transcriptomic profiling. Distinct among vascular endothelial subclusters, VE2 is defined by differential expression of genes including ACKR1, PLVAP, and VWF. Functionally, these cells play key roles in vascular barrier properties, immune modulation, and potentially in tissue homeostasis. VE2's clear identity is established within the skin vasculature, where fine-grained annotation and marker signatures distinguish it from other endothelial subsets.
+VE2 is one of three blood vascular endothelial cell (BEC) states identified in adult human dermis by Reynolds et al. (2021). Reynolds et al. characterise three distinct PECAM1(CD31)-expressing vascular endothelial states — VE1, VE2, VE3. VE3 is specifically defined as the ACKR1+SNCG+ post-capillary venular state that co-expresses inflammatory cytokines (IL6, IL33, SELE, ICAM1). VE1 and VE2 represent the two remaining non-venular vascular endothelial states. VE2 is statistically depleted in psoriasis non-lesional skin (p=1.9×10⁻²), though less significantly than VE1, suggesting VE2 also represents a homeostatic vascular endothelial state — potentially corresponding to a distinct segment of the dermal vascular tree (e.g. venular or capillary endothelium that is non-ACKR1). Based on comparison with broader single-cell profiling of human dermal vascular beds (He et al., 2022), VE1 and VE2 together represent the arterial-to-capillary portion of the endothelial hierarchy in the dermis.
 
 ## Markers
 
-Several gene markers define the VE2 cluster in adult human skin, reflecting both canonical endothelial and capillary-specific properties:
+> "Three distinct states of PECAM1(CD31)-expressing vascular endothelial cells (VE1, VE2, VE3) are present in adult dermis"
+>
+> — Reynolds et al. (2021)
 
-- **ACKR1:** This gene, also known as DARC, encodes an atypical chemokine receptor that is important for leukocyte trafficking, particularly within venular and capillary endothelium. Its expression distinguishes downstream venular compartments from arterioles and more arterial capillaries, aligning with its role in facilitating transmigration of immune cells across the vascular wall (He et al., 2022).
-- **PLVAP:** PLVAP is involved in the regulation of endothelial barrier properties through the formation of fenestrae and diaphragms, which are crucial for permeability in specialized capillary beds. Its increased expression in VE2 suggests a role in modulating the vascular interface between blood and tissue in the skin (Supplementary Table 4, atlas).
-- **VWF:** Von Willebrand Factor (VWF) is a classical endothelial marker associated with blood vessel endothelium, coagulation, and vascular integrity. VWF expression further substantiates the vascular nature of VE2 (Supplementary Table 4, atlas).
+> "Endothelial cells in the healthy adult dermis comprise vascular endothelium (PECAM1, EMCN) and lymphatic endothelium (LYVE1, PDPN)"
+>
+> — Reynolds et al. (2021)
 
-These markers were identified as differentially expressed genes in the VE2 cluster of skin endothelium (Supplementary Table 4, atlas), and their expression patterns correspond to specialized endothelial cell types known for immune interaction and selective permeability (He et al., 2022).
+Pan-vascular endothelial markers (shared by VE1, VE2, VE3):
+- **PECAM1 (CD31)** — pan-endothelial marker
+- **EMCN (endomucin)** — venous/capillary endothelial marker
+- **CDH5 (VE-cadherin)** — endothelial adherens junction protein
+- **VWF (von Willebrand factor)** — endothelial marker
+
+VE2 specifically lacks the VE3-defining markers:
+- **ACKR1** — absent/low (VE3 marker; venular capillary)
+- **SNCG (gamma-synuclein)** — absent/low (VE3 marker)
+- **IL6, IL33, SELE, ICAM1** — absent/low (VE3 inflammatory markers)
+
+As summarised by Liu et al. (2022):
+
+> "Endothelial cells in the healthy adult dermis constitute the vascular endothelium (PECAM1, EMCN, SELE, CD93, CLDN5, VWF, and CDH5) and lymphatic endothelium (LYVE1, PDPN, PROX1, and CLDN5)"
+>
+> — Liu et al. (2022)
 
 ## Location
 
-### Skin Vasculature
-
-VE2 is localized to the capillary endothelial cell compartment within adult human skin (Supplementary Table 2, atlas). Single-cell and spatial transcriptomics have enabled precise mapping of these cells along the vascular hierarchy, differentiating them from arteriolar, venular, and lymphatic endothelial populations (He et al., 2022). Evidence does not indicate VE2 presence in other tissues within the provided atlas scope.
+VE2 cells form part of the blood vasculature of the adult dermis. Like VE1, VE2 represents a non-venular vascular endothelial state — most likely corresponding to a distinct segment of the dermal vascular hierarchy (e.g. small venules or capillaries distinct from both the arteriolar VE1 and the post-capillary venular VE3). Reynolds et al. (2021) identify all three VE states in healthy adult dermis and show that VE3 forms approximately 2% of endothelial cells, with VE1 and VE2 representing the majority of the dermal vascular endothelium.
 
 ## Function
 
-### Immune Cell Trafficking and Barrier Regulation
+### 1. Blood vessel integrity and perfusion
 
-VE2 (capillary endothelial) cells are characterized by the expression of ACKR1, which plays a pivotal role in distinguishing venular and capillary beds, particularly with respect to their selectivity for immune cell transmigration:
+VE2 endothelial cells form part of the structural lining of dermal blood vessels, contributing to vascular permeability regulation, perfusion, and nutrient delivery to the dermis and epidermis. Their pan-endothelial marker profile (PECAM1, EMCN, CDH5, VWF) reflects conserved blood vessel maintenance functions.
 
-> "Post-capillary venules represent the primary sites for leukocyte trafficking and subsequently the extravasation into peripheral tissues. The characterization of the atypical chemokine receptor ACKR1 has favored the identification of intact venous vasculature in multiple murine tissues [34]. In fact, ACKR1 also represents an important molecule that distinguished the downstream venular compartments from arterioles and post-arterial capillaries in human skin, in line with recent findings that EC junctional ACKR1 was required for efficient unidirectional transmigration of neutrophils from the venular lumen during inflammation [37]."
+### 2. Non-inflammatory vascular homeostasis
+
+In contrast to VE3, VE2 cells do not express the inflammatory cytokines (IL6, IL33) or leukocyte adhesion molecules (SELE, ICAM1) that define the post-capillary venular state. Reynolds et al. (2021) show that VE3 specifically co-expresses these inflammatory molecules, while VE1 and VE2 collectively represent the homeostatic, non-inflammatory vascular compartment.
+
+### 3. Fetal–adult VE alignment
+
+Reynolds et al. (2021) show that fetal skin VE cells transcriptionally align with adult skin VE3 (not VE1/VE2), confirming that fetal developmental VE programmes are co-opted specifically in VE3 during inflammatory skin disease. VE2 thus represents a mature, homeostatic adult vascular endothelial state distinct from the pathologically activated VE3 programme:
+
+> "Fetal skin VE cells displayed a transcriptional profile similar to that of VE3 in adult skin and are not represented by VE1 or VE2"
 >
-> — He et al. (2022)
+> — Reynolds et al. (2021)
 
-In addition, the heterogeneity within skin endothelial cells, including the VE2 subset, has been shown to be essential for controlling the dynamic properties of the endothelial barrier, affecting immune cell adhesion, extravasation, and overall skin homeostasis:
+## Disease relevance
 
-> "Vascular endothelial cells (ECs), the inner lining of blood vessels, not only form the endothelial barrier to maintain vascular integrity, but also actively regulate vessel function, orchestrate the local immune response, and participate in the pathogenesis of immune-mediated inflammatory diseases (1,2). Increasing evidence demonstrates that ECs are not uniform cells, but rather have highly heterogeneous molecular and functional features along the vascular bed."
+VE2 is depleted in psoriasis non-lesional skin:
+
+> "p-values for VE1 psoriasis non-lesional = 5.5 x 10-6 and psoriasis lesional = 5.0 x 10-15, VE2 psoriasis non-lesional = 1.9 x 10-2"
 >
-> — Li et al. (2023)
+> — Reynolds et al. (2021), Fig. 5D legend
 
-## Structure / Morphology
-
-VE2 cells are identified as capillary endothelial cells based on their marker gene expression and cluster annotation (Supplementary Table 2, atlas). Capillary endothelium is morphologically characterized by thin, flattened cells forming continuous tubes, with specialized junctions and, in the case of marker PLVAP, the presence of fenestrae or diaphragms for regulated exchange (He et al., 2022). The exact ultrastructural details of VE2 in skin are not further elaborated in the provided literature.
+This depletion, alongside the marked expansion of VE3 in psoriasis, suggests a compositional shift in the dermal vascular endothelium during psoriasis — with homeostatic VE1 and VE2 endothelium replaced by the inflammatory VE3 post-capillary venular state. VE2's more modest depletion compared to VE1 (p=1.9×10⁻² vs p=5.5×10⁻⁶) may reflect a distinct vascular compartment that is proportionally less affected by the psoriasis-driven endothelial remodelling.
 
 ## References
 
-- He et al. (2022). "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling." *Cells*. DOI: [10.3390/cells11071111](https://doi.org/10.3390/cells11071111)
-- Li et al. (2023). "An IGFBP7hi endothelial cell subset drives T cell extravasation in psoriasis via endothelial glycocalyx degradation." *Journal of Clinical Investigation*. DOI: [10.1172/JCI160451](https://doi.org/10.1172/JCI160451)
+- Reynolds G, Vegh P, Fletcher J et al. (2021). "Developmental cell programs are co-opted in inflammatory skin disease." *Science*. DOI: [10.1126/science.aba6500](https://doi.org/10.1126/science.aba6500)
+- Gopee NH et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis." *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
+- Liu B, Li A, Xu J, Cui Y (2022). "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells." *Frontiers in Surgery*. DOI: [10.3389/fsurg.2022.935107](https://doi.org/10.3389/fsurg.2022.935107)
