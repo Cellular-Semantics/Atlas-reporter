@@ -1,10 +1,12 @@
 {
   "label": "LE1",
   "resolved_names": [
-    "Lymphatic Endothelial 1"
+    "afferent lymphatic endothelial cell",
+    "initial lymphatic endothelial cell",
+    "LE1"
   ],
   "scope": "adult",
-  "tissue_context": "human skin",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "LE1 is used as a cluster abbreviation for 'lymphatic endothelial cell 1' in supplementary tables that map endothelial clusters (LE1, LE2, etc.) to their resolved names in the main text and Extended Data Fig. 5 of the atlas paper. The mapping is consistent for adult skin context in the fine-grained endothelial atlas."
+  "evidence": "Reynolds 2021: LE1 cells defined by higher CCL21 expression; CCL21 mediates DC migration to lymph nodes; angiogenesis factors CAVIN2 and CCND1 expressed; support function as initial afferent lymphatics"
 }

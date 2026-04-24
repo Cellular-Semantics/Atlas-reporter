@@ -1,58 +1,20 @@
 {
   "markers": [
-    {
-      "gene": "CD4",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table S5"
-    },
-    {
-      "gene": "IL7R",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S5"
-    },
-    {
-      "gene": "LEF1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S5"
-    },
-    {
-      "gene": "CCR7",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S5"
-    }
+    {"gene": "CD4", "evidence_type": "defining marker", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "CD40LG", "evidence_type": "defining marker", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "IL4", "evidence_type": "Th2 cytokine", "source_table": "literature"},
+    {"gene": "IL13", "evidence_type": "Th2 cytokine", "source_table": "literature"},
+    {"gene": "IL17A", "evidence_type": "Th17 cytokine", "source_table": "literature"},
+    {"gene": "IFNG", "evidence_type": "Th1 cytokine", "source_table": "literature"},
+    {"gene": "IL7R", "evidence_type": "T cell marker", "source_table": "literature"},
+    {"gene": "CCR7", "evidence_type": "homing/memory marker", "source_table": "literature"}
   ],
   "other_findings": [
-    {
-      "finding": "CD4+ T cells were localized to the periportal area in adult liver",
-      "category": "spatial location",
-      "source_table": "Supplementary Fig. S4"
-    },
-    {
-      "finding": "T helper cells displayed enrichment of pathways related to cytokine-mediated signaling",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table S7"
-    }
+    {"finding": "Th cells are the CD4+ helper fraction; in Reynolds et al. (2021) the Tc17/Th17 disease-associated subset bridges cytotoxic and helper T cell programmes in psoriasis", "category": "classification", "source_table": "Reynolds et al. (2021) main text"},
+    {"finding": "In AD skin, CD4+ T cells including Th2 cells are the predominant T cell subset in the dermis; Th2 polarization drives IL-4 and IL-13 production which suppress antimicrobial peptides and barrier proteins", "category": "disease", "source_table": "free search literature"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "\"CD4 was used as a known marker to identify T helper cells\"",
-      "source_file": "Supplementary Table S5",
-      "context": "marker selection criteria"
-    },
-    {
-      "quote": "\"IL7R, LEF1, and CCR7 were significantly upregulated in the CD4+ T cell cluster (adjusted P < 0.05)\"",
-      "source_file": "Supplementary Table S5",
-      "context": "DE gene list for T cell clusters"
-    },
-    {
-      "quote": "\"CD4+ T cells were localized to the periportal area in adult liver as shown by spatial transcriptomics\"",
-      "source_file": "Supplementary Fig. S4",
-      "context": "description of in situ localization"
-    },
-    {
-      "quote": "\"T helper cells displayed enrichment of pathways related to cytokine-mediated signaling (see Supplementary Table S7)\"",
-      "source_file": "Supplementary Table S7",
-      "context": "functional enrichment summary for T cell clusters"
-    }
+    {"quote": "helper (Th) expressing CD4, CD40LG", "source_file": "Reynolds et al. (2021) PDF full text", "context": "T helper cell definition"},
+    {"quote": "CD4 T cells expressed helper and homing markers (CD4, IL7R, CCR7)", "source_file": "Marella et al. (2024) PMC12132489", "context": "CD4 T helper cell markers in healthy skin"}
   ]
 }

@@ -1,10 +1,8 @@
 {
   "label": "NK",
-  "resolved_names": [
-    "Natural Killer cells"
-  ],
+  "resolved_names": ["Natural killer cell", "NK cell"],
   "scope": "adult",
-  "tissue_context": "human skin",
+  "tissue_context": "adult human skin",
   "confidence": "high",
-  "evidence": "The full text of the paper and figure legends (e.g., Extended Data Fig. 9a, 9b, and main text referencing immune atlas clusters) consistently refer to 'NK' as 'Natural Killer cells' in adult and prenatal human skin single-cell transcriptomic data. Supplementary tables S1 and S2 link cluster label 'NK' to 'Natural Killer cells'."
+  "evidence": "Reynolds et al. (2021) describe NK cells as: 'NK (KLRD1+, GNLY+, PRF1+, GZMB+ and FCGR3A+) cells'. They are distinguished from ILC1/NK transitional cells and represent the mature NK population in adult skin. Reynolds also note: 'NK=natural killer cell' in figure legend abbreviations."
 }

@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Schwaan_1_Stroma_Schwan_myelinating",
+  "working_definition": "Myelinating Schwann cell in adult human skin. Identified in Reynolds et al. (2021) as one of two Schwann cell subtypes in the stromal compartment. Defined by high expression of MPZ (myelin protein zero), MBP (myelin basic protein), and PLP1 (proteolipid protein 1). Wraps myelinated peripheral nerve axons to enable saltatory conduction.",
+  "searches_performed": [
+    "myelinating Schwann cell",
+    "Schwann cell MPZ MBP myelin",
+    "peripheral glial cell myelinating skin"
+  ],
+  "best_match": {
+    "cl_term": "myelinating Schwann cell",
+    "cl_id": "CL:0002573",
+    "cl_definition": "A Schwann cell that wraps around axons of motor and sensory neurons to form the myelin sheath. The myelin sheath provides insulation to more efficiently conduct electrical impulses.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002573 'myelinating Schwann cell' directly corresponds to the Schwaan_1 population characterised by high MPZ, MBP, and PLP1 expression. These are canonical myelinating Schwann cell markers.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002573 (myelinating Schwann cell) as an exact match for the Schwaan_1_Stroma_Schwan_myelinating cell type.",
+  "new_term_needed": false
+}

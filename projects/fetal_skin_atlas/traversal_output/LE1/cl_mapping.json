@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Afferent Lymphatic Endothelial Cell (LE1)",
+  "working_definition": "An initial afferent lymphatic capillary endothelial cell in adult human dermis, characterised by high CCL21, CAVIN2, and CCND1 expression alongside pan-lymphatic markers LYVE1, PDPN, and PROX1. This population forms the blind-ended lymphatic capillaries that absorb interstitial fluid and recruit CCR7+ dendritic cells from the dermis via CCL21-CCR7 chemotaxis.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'lymphatic endothelial cell' in CL ontology",
+    "OLS4 searchClasses: 'initial lymphatic endothelial cell' in CL ontology",
+    "OLS4 searchClasses: 'afferent lymphatic endothelial cell' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "lymphatic endothelial cell",
+    "cl_id": "CL:0002138",
+    "cl_definition": "An endothelial cell that lines the lymphatic vasculature. Lymphatic endothelial cells express LYVE1, PDPN, PROX1, and VEGFR3.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0002138 'lymphatic endothelial cell' is the broadest appropriate match for LE1. The LE1 cluster expresses all pan-lymphatic endothelial markers (LYVE1, PDPN, PROX1) specified in the CL definition, and forms the initial lymphatic capillaries of the dermis. No CL term exists specifically for 'initial lymphatic endothelial cell' or 'afferent lymphatic capillary endothelial cell'. The CCL21-high, CAVIN2+, CCND1+ identity is a substate of the broader lymphatic endothelial cell type.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002138 (lymphatic endothelial cell) as a broad match. A new CL term for 'initial (afferent) lymphatic capillary endothelial cell' may be warranted given the distinct biology of initial vs. collecting lymphatics.",
+  "new_term_needed": true
+}

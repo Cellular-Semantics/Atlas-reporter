@@ -1,271 +1,33 @@
 [
   {
-    "snippet_index": 0,
-    "quotes": [
-      "The GPI-anchored C4.4A glycoprotein was first identified in a highly metastasizing rat pancreatic adenocarcinoma line (Matzku et al, 1989).",
-      "The possible importance of the protein as tumour marker was indicated by the restricted expression in normal tissues (Ro \u00a8sel et al, 1998;Smith et al, 2001;Wu \u00a8rfel et al, 2001) and upregulation of C4.4A mRNA in different tumours (Seiter et al, 2001;Smith et al, 2001;Fletcher et al, 2003).",
-      "The antibody against the C terminus stained the stratum granulosum of healthy human skin.",
-      "A recently described polyclonal hC4.4A-specific antibody that cross-reacts with mC4.4A stained the suprabasal layer of the epidermis (Hansen et al, 2004).",
-      "In the rat, C4.4A is strongly expressed by basal keratinocytes, which are in contact with the extracellular matrix, and staining decreases in suprabasal keratinocytes."
+    "paper": {
+      "doi": "10.1126/science.aba6500",
+      "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+      "authors": "Reynolds G et al.",
+      "year": 2021
+    },
+    "snippets": [
+      "Force-directed graph (FDG) and PAGA analyses reveal dual inferred differentiation trajectories from the stem cell genes (TP63, PPP3CA and CAV1/2)-enriched basal keratinocytes into terminally differentiated keratinocytes expressing CNFN, FLG and IVL",
+      "One arm expresses high levels of lamellar body (LB)\u00adrelated transcripts such as ABCA12, CKAP4 and CLIP1 that characterize late epidermal differentiation and the other arm lower levels of LB-related transcripts",
+      "IRF1 and SOX9, transcription factors that are differentially expressed in the two pathways",
+      "undifferentiated KC (clusters 1, 5), proliferating (cluster 2), differentiated KC (clusters 3, 4, 6, 7), differentiated KC* (cluster 8)",
+      "Proliferating keratinocytes (CDK1+,PCNA+) have lower expression of suprabasal cell transcripts e.g. KRT1, KRT10 that characterize differentiated keratinocytes",
+      "Notably, keratinocytes expressing LB-related transcripts co-express genes associated with autosomal recessive congenital ichthyosis, such as ABCA12, NIPAL4, SLC27A4 and TGM1"
     ],
-    "summary": "C4.4A is a GPI-anchored glycoprotein with restricted normal expression (notably in specific skin layers) and is upregulated in various tumors, suggesting utility as a tumor marker. In human skin, it is found in the stratum granulosum and suprabasal layer, while in rats it is strongly expressed in basal keratinocytes.",
-    "categories": [
-      "markers",
-      "location",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:3182290",
-    "source_title": "C4.4A as a candidate marker in the diagnosis of colorectal cancer",
-    "source_authors": "C. Paret et al.",
-    "source_year": null,
-    "snippet": "The GPI-anchored C4.4A glycoprotein was first identified in a highly metastasizing rat pancreatic adenocarcinoma line (Matzku et al, 1989). The possible importance of the protein as tumour marker was indicated by the restricted expression in normal tissues (Ro \u00a8sel et al, 1998;Smith et al, 2001;Wu \u00a8rfel et al, 2001) and upregulation of C4.4A mRNA in different tumours (Seiter et al, 2001;Smith et al, 2001;Fletcher et al, 2003). We here report hC4.4A protein expression in several tumour lines and tumour tissues and provide first evidence suggestive for C4.4A as a possible serum marker for cancer diagnosis. \n\nGlycosylation, oligomer formation and interaction partners of C4.4A in human tumour lines Two polyclonal antibodies were raised against peptides localised at the C terminus and between domains 1 and 2, respectively, of human C4.4A. The antibody against the C terminus stained the stratum granulosum of healthy human skin. A recently described polyclonal hC4.4A-specific antibody that cross-reacts with mC4.4A stained the suprabasal layer of the epidermis (Hansen et al, 2004). \n\nIn the rat, C4.4A is strongly expressed by basal keratinocytes, which are in contact with the extracellular matrix, and staining decreases in suprabasal keratinocytes. These different staining profiles might be due to species differences. It is also possible that differences are due to the epitopes recognized by the different antibodies. Only for the generation of the monoclonal anti-rC4.4A antibody, mice were vaccinated with cell membranes (Matzku et al, 1989). This antibody obviously recognizes an epitope that does not become hidden by glycosylation (Ro \u00a8sel et al, 1998). Instead, a recombinant protein vaccination-derived antibody (Hansen et al, 2004) and our peptide vaccination-derived antibodies did not stain basal keratinocytes. However, these antibodies stained HaCaT cells."
+    "relevance": "primary source: cluster annotation and keratinocyte differentiation states"
   },
   {
-    "snippet_index": 3,
-    "quotes": [
-      "In the adult, expression is restricted mostly to stratified epithelial of the skin and squamous epithelia of the upper gastrointestinal tract.",
-      "C4.4A expression was found to become upregulated in migrating keratinocytes during wound healing.",
-      "high C4.4A expression has been observed in several types of carcinoma like malignant melanoma, colorectal cancer, breast cancer, urothelial tumor and most pronounced nonsmall cell lung cancer"
+    "paper": {
+      "doi": "10.1186/s12885-024-12498-z",
+      "corpusId": "249628397",
+      "title": "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells",
+      "authors": "Liu B et al.",
+      "year": 2022
+    },
+    "snippets": [
+      "force-directed graph (FDG) and PAGA analyses on scRNA-seq data defined two differentiation pathways of basal keratinocytes to suprabasal cells, with or without a high level of the lamellar body (LB)-related transcripts (glucosylceramide transporter ABCA12; cytoskeleton-associated protein 4, CKAP4; and CAP-Gly domain-containing linker protein 1, CLIP1), that characterized late epidermal differentiation in healthy skin",
+      "Three subpopulations were separated corresponding to their stereotyped differentiation process in the normal epidermis: undifferentiated basal keratinocytes had high expression of basal epidermal proteins (KRT5 and KRT14), hemidesmosome molecules [integrin alpha-6, ITGA6; and collagen alpha-1 (XVII) chain, COL17A1] and stemness factor (tumor protein 63, TP63); upper spinous keratinocytes expressed suprabasal cell transcripts (KRT1 and KRT10); and granular keratinocytes expressed KRT2, KLK11, and late differentiation markers (Loricrin, LOR; Filaggrin, FLG; and serine protease inhibitor Kazal-type 5, SPINK5)"
     ],
-    "summary": "C4.4A is primarily expressed in adult stratified epithelia, especially the skin and upper GI tract, and is upregulated during wound healing and in various carcinomas.",
-    "categories": [
-      "location",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:25716951",
-    "source_title": "Expression of C4.4A is a potential independent prognostic factor for patients with gastric cancer.",
-    "source_authors": "D. Cheng et al.",
-    "source_year": null,
-    "snippet": "Da-Qing Cheng & , Xiao-Dong Gu & , Zhen-Yang Li, Jian-Bin Xiang, Zong-You Chen* \n\nIn the adult, expression is restricted mostly to stratified epithelial of the skin and squamous epithelia of the upper gastrointestinal tract. In addition, C4.4A expression was found to become upregulated in migrating keratinocytes during wound healing. Although C4.4A expression is rather restricted in non-transformed tissues, high C4.4A expression has been observed in several types of carcinoma like malignant melanoma, colorectal cancer, breast cancer, urothelial tumor and most pronounced nonsmall cell lung cancer (Seiter et al., 2001;Smith et al., 2001;Fletcher et al., 2003;Hansen et al., 2007;Paret et al., 2007). Moreover, C4.4A expression is also significantly associated with poor prognostic parameters in colorectal cancer and non-small cell lung cancer (Hansen et al., 2007;Konishi et al., 2010). \n\nHowever, C4.4A expression and its clinical significance in gastric cancer remain still unclear. In our study, we investigated characterization of C4.4A expression in gastric cancer and determined its clinicopathological and prognostic significance."
-  },
-  {
-    "snippet_index": 4,
-    "quotes": [
-      "C4.4A-119 and C4.4-277 antibodies detected 70-kDa C4.4A, mainly in the cytoplasm, irrespective of intra-tumoral location. The C4.4A GPI-M antibody reacted with the membranous ~40-kDa C4.4A, exclusively at the tumor invasive front (Yamamoto et al., 2013). In our study, C4.4A expression was found in the cytoplasm, especially in cell membrane. And C4.4A was also observed in metastatic lymph nodes.",
-      "Seiter (2001) found that normal human skin weakly expresses C4.4A. Melanocytes and nevi are negative, but up to 60% of primary malignant melanoma and 100% of lymph node and skin metastases of melanoma are C4.4A positive.",
-      "Hansen (2008) observed that normal squamous esophageal epithelium shows a strong cell surface associated C4.4A expression in the suprabasal layers, whereas basal cells are negative.",
-      "Upon transition to dysplasia and carcinoma in situ the expression of C4.4A is abruptly and coordinately weakened. C4.4A expression reappeared in tumor cells located at the invasive front and local lymph node metastases.",
-      "Konishi (2010) also found that strong membranous staining of C4.4A at the invasive front of colorectal cancer tumors and at the frontier of metastatic lesions to lymph node and lung."
-    ],
-    "summary": "C4.4A is expressed on the cell surface and in the cytoplasm, particularly at the invasive fronts of tumors and in metastatic lymph nodes, and is weakly expressed in normal skin but upregulated in multiple tumor types and progression stages.",
-    "categories": [
-      "markers",
-      "location",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:25716951",
-    "source_title": "Expression of C4.4A is a potential independent prognostic factor for patients with gastric cancer.",
-    "source_authors": "D. Cheng et al.",
-    "source_year": null,
-    "snippet": "Some researchers developed three antibodies against the C4.4A protein. C4.4A-119 and C4.4-277 antibodies detected 70-kDa C4.4A, mainly in the cytoplasm, irrespective of intra-tumoral location. The C4.4A GPI-M antibody reacted with the membranous ~40-kDa C4.4A, exclusively at the tumor invasive front (Yamamoto et al., 2013). In our study, C4.4A expression was found in the cytoplasm, especially in cell membrane. And C4.4A was also observed in metastatic lymph nodes. \n\nAs we know, C4.4A is a structural homolog of uPAR. For decades the uPA system has been thought to drive tumor progression by mediating directed extracellular proteolysis on the surface of migrating or invading cells. Intervention with this proteolysis by targeting of uPAR has been proposed to represent a novel approach for inhibiting tumor progression (Ma and Tao, 2012). C4.4A may play an important role in the tumor invasion and metastasis. Seiter (2001) found that normal human skin weakly expresses C4.4A. Melanocytes and nevi are negative, but up to 60% of primary malignant melanoma and 100% of lymph node and skin metastases of melanoma are C4.4A positive. Hansen (2008) observed that normal squamous esophageal epithelium shows a strong cell surface associated C4.4A expression in the suprabasal layers, whereas basal cells are negative. Upon transition to dysplasia and carcinoma in situ the expression of C4.4A is abruptly and coordinately weakened. C4.4A expression reappeared in tumor cells located at the invasive front and local lymph node metastases. Konishi (2010) also found that strong membranous staining of C4.4A at the invasive front of colorectal cancer tumors and at the frontier of metastatic lesions to lymph node and lung. A significant difference in 5-year overall survival was found between samples with high and low expression of C4.4A mRNA."
-  },
-  {
-    "snippet_index": 5,
-    "quotes": [
-      "C4.4A is a highly glycosylated glycosylphosphatidylinositol (GPI)anchored protein with 30% homology to the urokinase receptor (uPAR) (Ro \u00a8sel et al, 1998).",
-      "C4.4A, also described as Ly6/PLAUR domain containing 3, and uPAR belong to the Ly-6 family, characterised by repetitive cysteine residues which allow a typical 'three finger' folding via disulphide bridges (Tsetlin, 1999).",
-      "In the rat, C4.4A (rC4.4A) is strongly upregulated during implantation of the blastocyst and is highly expressed in the placenta.",
-      "In the adult, expression is restricted mostly to stratified epithelia of the skin and squamous epithelia of the upper gastrointestinal tract (Claas et al, 1996).",
-      "At the mRNA level, a very similar expression profile of human (h) C4.4A was seen (Smith et al, 2001;Wu \u00a8rfel et al, 2001).",
-      "expression of hC4.4A in placenta and skin was confirmed.",
-      "mC4.4A expression was found to become upregulated in migrating keratinocytes during wound healing. In urothelium, too, C4.4A was described as an inducible wound response gene (Smith et al, 2001).",
-      "C4.4A expression is rather restricted in non-transformed tissues, C4.4A expression has been observed in several tumour entities."
-    ],
-    "summary": "C4.4A is a GPI-anchored protein of the Ly-6 family, related to uPAR, and is normally expressed in placenta, skin, and stratified epithelia. Its expression is upregulated in embryonic development (rat placenta), keratinocyte migration, and in tumors.",
-    "categories": [
-      "markers",
-      "location",
-      "function",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:3182290",
-    "source_title": "C4.4A as a candidate marker in the diagnosis of colorectal cancer",
-    "source_authors": "C. Paret et al.",
-    "source_year": null,
-    "snippet": "C4.4A is a highly glycosylated glycosylphosphatidylinositol (GPI)anchored protein with 30% homology to the urokinase receptor (uPAR) (Ro \u00a8sel et al, 1998). C4.4A, also described as Ly6/PLAUR domain containing 3, and uPAR belong to the Ly-6 family, characterised by repetitive cysteine residues which allow a typical 'three finger' folding via disulphide bridges (Tsetlin, 1999). While uPAR has three cysteine containing domains, C4.4A has two and the third domain is devoid of cysteines (Ro \u00a8sel et al, 1998). Most other members of the Ly-6 family have only one domain (Ploug and Ellis, 1994). \n\nThe C4.4A protein was first identified in a highly metastasizing rat pancreatic adenocarcinoma line (Matzku et al, 1989). In the rat, C4.4A (rC4.4A) is strongly upregulated during implantation of the blastocyst and is highly expressed in the placenta. In the adult, expression is restricted mostly to stratified epithelia of the skin and squamous epithelia of the upper gastrointestinal tract (Claas et al, 1996). At the mRNA level, a very similar expression profile of human (h) C4.4A was seen (Smith et al, 2001;Wu \u00a8rfel et al, 2001). Recently, an antibody against hC4.4A and mouse (m) C4.4A was described (Hansen et al, 2004). With this antibody, expression of hC4.4A in placenta and skin was confirmed. In addition, mC4.4A expression was found to become upregulated in migrating keratinocytes during wound healing. In urothelium, too, C4.4A was described as an inducible wound response gene (Smith et al, 2001). \n\nAlthough C4.4A expression is rather restricted in non-transformed tissues, C4.4A expression has been observed in several tumour entities."
-  },
-  {
-    "snippet_index": 6,
-    "quotes": [
-      "Circumstantial evidence promotes the hypothesis of C4.4A being involved in cell-cell adhesion, which is rendered probable by the tethering of C4.4A to the cell membrane via a GPI-anchor [15].",
-      "The expression pattern of C4.4A is furthermore reminiscent to that of the well-characterized cell adhesion molecules Ecadherin [21] and -catenin (Figure 1(c)). Our observations in monolayer culture of keratinocytes also fit this picture, with a clear membrane localization of C4.4A at cell-cell interaction points, suggesting a role of C4.4A in, for example, adherens junctions.",
-      "In addition, the carbohydrate-binding lectin galectin-3, which has been implicated in cell-cell interactions and cell adhesion, has been identified as a ligand for C4.4A [48]."
-    ],
-    "summary": "C4.4A is associated with cell-cell adhesion, localizing to cell membranes at interaction points, and can interact with galectin-3, suggesting a role in epithelial adherens junctions.",
-    "categories": [
-      "function",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:240015",
-    "source_title": "Expression of C4.4A in an In Vitro Human Tissue-Engineered Skin Model",
-    "source_authors": "Benedikte Jacobsen et al.",
-    "source_year": null,
-    "snippet": "expressed in basal cell hyperplasia [19], which is a reactive change preceding the conversion into bronchial squamous metaplasia [46,47], yet another process of transdifferentiation.\n\nThe functional consequences of this link to the squamous phenotype are, however, still unclear. Circumstantial evidence promotes the hypothesis of C4.4A being involved in cell-cell adhesion, which is rendered probable by the tethering of C4.4A to the cell membrane via a GPI-anchor [15]. The expression pattern of C4.4A is furthermore reminiscent to that of the well-characterized cell adhesion molecules Ecadherin [21] and -catenin (Figure 1(c)). Our observations in monolayer culture of keratinocytes also fit this picture, with a clear membrane localization of C4.4A at cell-cell interaction points, suggesting a role of C4.4A in, for example, adherens junctions. In addition, the carbohydrate-binding lectin galectin-3, which has been implicated in cell-cell interactions and cell adhesion, has been identified as a ligand for C4.4A [48]. It is tempting to speculate that the abundant Nand O-linked glycosylation present in C4.4A [15] is targeted by the carbohydrate recognition domain of this lectin, with ensuing cross-linking of two neighboring cells [49].\n\nIt has already been clearly established that the selfassembly method of tissue engineering produces a skin substitute that to a very high degree mimics the anatomy of human skin, with the formation of the four characteristic epidermal cell layers that express well-established keratinocyte differentiation markers and a basement membrane at the dermal-epidermal junction [26]. The present results lend additional support to the applicability of this in vitro model for reporting on the corresponding in vivo situation, as illustrated by the tight regulation of the expression of C4.4A. A further strength of this substitute is that it is comprised of solely human components, which presents advantages as compared to the use of mouse models, given that it is not always biologically relevant to extrapolate results obtained in a mu"
-  },
-  {
-    "snippet_index": 7,
-    "quotes": [
-      "C4.4A is located at cell-cell contact points between the more differentiated keratinocytes in monolayer culture.",
-      "C4.4A expression emerges with the formation of a stratum spinosum layer in an in vitro developing human tissue-engineered skin model.",
-      "After the creation of a wound, this tissue-engineered skin model recapitulates the dynamic expression of C4.4A as seen in the migrating suprabasal murine keratinocytes during wound healing."
-    ],
-    "summary": "C4.4A is expressed at cell-cell contacts between differentiated keratinocytes and is upregulated during the formation of the stratum spinosum and wound healing, reflecting its role in skin structure and repair.",
-    "categories": [
-      "location",
-      "development",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:240015",
-    "source_title": "Expression of C4.4A in an In Vitro Human Tissue-Engineered Skin Model",
-    "source_authors": "Benedikte Jacobsen et al.",
-    "source_year": null,
-    "snippet": "Major Take-Home Points. (i) C4.4A is located at cell-cell contact points between the more differentiated keratinocytes in monolayer culture. (ii) C4.4A expression emerges with the formation of a stratum spinosum layer in an in vitro developing human tissue-engineered skin model. (iii) After the creation of a wound, this tissue-engineered skin model recapitulates the dynamic expression of C4.4A as seen in the migrating suprabasal murine keratinocytes during wound healing. (iv) Tissue-engineered skin provides an optimal and convenient in vitro model for functional studies of C4.4A in human squamous epithelia."
-  },
-  {
-    "snippet_index": 8,
-    "quotes": [
-      "Under normal physiological conditions, C4.4A is predominantly expressed in suprabasal layers of stratified squamous epithelia such as those of the skin, hair follicles, esophagus, oral and nasal cavity, vagina and cornea (Figure 1C).",
-      "It is furthermore found in the cuboidal epithelium of human term placenta and sweat ducts, in the pigmented epithelium of the retina and in Hassall's corpuscle in the thymus [19,24] . Remaining epithelia, including the alveolar and bronchial compartments of the healthy lung (Figures 2A and 3A; Table 1), are devoid of C4.4A, suggesting a tight regulation of its expression, possibly by the CCAAT/enhancer binding protein \u03b2 (C/EBP\u03b2) or estrogen [25,26] .",
-      "The stringent membrane-associated expression pattern of C4.4A would be in line with a putative role of this protein in cell adhesion [19,27,28] , but its biological function is still to be delineated."
-    ],
-    "summary": "C4.4A is predominantly expressed in suprabasal layers of various stratified squamous epithelia and several other epithelia, but absent from lung epithelium. Its membrane localization suggests a role in cell adhesion.",
-    "categories": [
-      "location",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:39570079",
-    "source_title": "C4.4A as a biomarker in pulmonary adenocarcinoma and squamous cell carcinoma.",
-    "source_authors": "Benedikte Jacobsen et al.",
-    "source_year": null,
-    "snippet": "Under normal physiological conditions, C4.4A is predominantly expressed in suprabasal layers of stratified squamous epithelia such as those of the skin, hair follicles, esophagus, oral and nasal cavity, vagina and cornea (Figure 1C). It is furthermore found in the cuboidal epithelium of human term placenta and sweat ducts, in the pigmented epithelium of the retina and in Hassall's corpuscle in the thymus [19,24] . Remaining epithelia, including the alveolar and bronchial compartments of the healthy lung (Figures 2A and 3A; Table 1), are devoid of C4.4A, suggesting a tight regulation of its expression, possibly by the CCAAT/enhancer binding protein \u03b2 (C/EBP\u03b2) or estrogen [25,26] . This is clearly visualized at transition zones such as those present in the rodent stomach and at the ano-rectal junction, where the distinct C4.4A expression at the squamous side is abruptly terminated at the columnar side (Figure 1D). The stringent membrane-associated expression pattern of C4.4A would be in line with a putative role of this protein in cell adhesion [19,27,28] , but its biological function is still to be delineated."
-  },
-  {
-    "snippet_index": 9,
-    "quotes": [
-      "C4.4A is a marker of squamous differentiation",
-      "C4.4A was found associated to the cell membrane, but it was specifically excluded from the desmosomes bridging the keratinocytes (Fig. 5A)."
-    ],
-    "summary": "C4.4A serves as a marker for squamous differentiation and is associated with the cell membrane of keratinocytes, but is not present at desmosomes.",
-    "categories": [
-      "markers",
-      "morphology",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:205697289",
-    "source_title": "C4.4A gene ablation is compatible with normal epidermal development and causes modest overt phenotypes",
-    "source_authors": "M. Kriegbaum et al.",
-    "source_year": null,
-    "snippet": "ified squamous epithelia 11 . We therefore compared the morphology of unchallenged squamous epithelia between C4.4A \u2212/\u2212 and the corresponding C4.4A +/+ littermates at various locations in young (1, 2 and 3 weeks old), adult (7,8,12 and 13 weeks old) and old (30 and 52 weeks old) mice. No profound pathological changes were found, as illustrated by haematoxylin and eosin (H&E) staining of back skin, hair follicles, footpads, tongue, esophagus, non-glandular stomach, vagina and cornea of the eye from 52 weeks old female mice (Fig. 4). Since C4.4A is a marker of squamous differentiation, we also analysed if the conventional markers of differentiation, i.e. cytokeratin (CK) 14 (stratum basale), CK10 (suprabasal layers), loricrin (stratum granulosum and stratum corneum) as well as the structural homologue Haldisin 23 (stratum granulosum) were dysregulated in back skin of young, adult and old C4.4A \u2212/\u2212 mice. C4.4A deficiency did not result in obvious differences in the expression of these epidermal differentiation markers, when analysed by immunohistochemistry (data not shown).\n\nFurther, we examined if any ultrastructural abnormalities were present in the C4.4A \u2212/\u2212 mice by transmission electron microscopy. Initially, the subcellular localization of C4.4A was visualized by immunogold labelling on cryosections from mouse footpads. As expected, C4.4A was found associated to the cell membrane, but it was specifically excluded from the desmosomes bridging the keratinocytes (Fig. 5A). As an internal control for specificity, C4.4A \u2212/\u2212 footpads were analysed in parallel (Fig. 5B). Epon-embedded tissues from littermate C4.4A \u2212/\u2212 and C4.4A +/+ male and female mice containing squamous epithelia"
-  },
-  {
-    "snippet_index": 19,
-    "quotes": [
-      "Besides the immunoglobulins, complement component C4 is probably the most polymorphic serum protein.",
-      "There are two isotypes, C4A and C4B, that manifest remarkable differences in chemical reactivities and serological properties",
-      "More than 34 allotypes for C4A and C4B have been demonstrated by agarose gel electrophoresis, based on gross differences in electric charge (2).",
-      "Similar to the protein, the complement C4 genes are unusually complex with frequent variations in gene size and gene number.",
-      "These neighboring genes include RP1 or RP2 at the 5\u0408 region, CYP21A, or CYP21B and TNXA or TNXB at the 3\u0408 region"
-    ],
-    "summary": "This snippet provides detailed information about the polymorphic nature, genetic organization, and variants of the complement component C4, describing its isotypes C4A and C4B, genetic complexity, and its role as a marker in disease association studies.",
-    "categories": [
-      "markers",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:12710772",
-    "source_title": "Modular Variations of the Human Major Histocompatibility Complex Class III Genes for Serine/Threonine Kinase RP, Complement Component C4, Steroid 21-Hydroxylase CYP21, and Tenascin TNX (the RCCX Module)",
-    "source_authors": "Zhenyu Yang et al.",
-    "source_year": null,
-    "snippet": "Besides the immunoglobulins, complement component C4 is probably the most polymorphic serum protein. There are two isotypes, C4A and C4B, that manifest remarkable differences in chemical reactivities and serological properties (reviewed in Ref. 1). More than 34 allotypes for C4A and C4B have been demonstrated by agarose gel electrophoresis, based on gross differences in electric charge (2). Similar to the protein, the complement C4 genes are unusually complex with frequent variations in gene size and gene number. In addition, the genes surrounding C4A or C4B also exhibit considerable variations. These neighboring genes include RP1 or RP2 at the 5\u0408 region, CYP21A, or CYP21B and TNXA or TNXB at the 3\u0408 region ( Fig.  1). The complex organizations of the C4A and C4B genes, together with the extensive polymorphisms of the C4A and C4B proteins render C4 an excellent marker for MHC 1 -associated diseases (1,3). For instance, congenital adrenal hyperplasia (CAH) is mainly caused by mutations or deletions of CYP21B (4), and systemic lupus erythematosus is correlated with C4A deficiencies (5). In addition, insulin-dependent diabetes mellitus (6,7); sudden infant death syndrome and spontaneous recurrent abortion (8,9); IgA deficiency and common variable immunodeficiency (10,11); IgA nephropathy (12); skin vitiligo and pemphigus vulgaris (13,14); and autism and narcolepsy (15,16) have all been suggested to be associated with specific alleles or null alleles of C4.\n\nThe human C4 genes are either 21 kb (long, L) or 14.6 kb (short, S) in size (17). This dichotomous size variation is due to the presence of an endogenous retrovirus HERV-K(C4) in intron 9 of the long gene (18 -20). There may be one, two, or three C4 genes in the M"
-  },
-  {
-    "snippet_index": 20,
-    "quotes": [
-      "C4.4A deficiency seemed to affect the incidence of invasive bladder carcinomas, since fewer C4.4A \u2212/\u2212 mice (44%) developed invasive carcinomas compared to C4.4A +/+ littermates (83%).",
-      "C4.4A is important for the invasive process, but not the malignant potential per se.",
-      "C4.4A is highly expressed in the invasive front of both benign keratoacanthomas and malignant SCCs of the human skin, suggesting a role for C4.4A in the invasive process independent"
-    ],
-    "summary": "C4.4A is highly expressed at invasive fronts of certain skin tumors and is likely involved specifically in the invasive process of carcinomas rather than their overall malignant transformation or growth.",
-    "categories": [
-      "function",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:205697289",
-    "source_title": "C4.4A gene ablation is compatible with normal epidermal development and causes modest overt phenotypes",
-    "source_authors": "M. Kriegbaum et al.",
-    "source_year": null,
-    "snippet": "of cancer invasion, since a number of processes are shared such as extracellular matrix degradation, proliferation and migration 35 . Examining the in vivo healing of incisional back skin wounds did not reveal an effect of C4.4A deficiency in female mice, but a significantly delayed wound healing was nevertheless observed in the male C4.4A \u2212/\u2212 mice (Fig. 6). Gender-specific differences in wound healing have previously been seen in other gene-deficient mice such as the plasminogen-deficient mouse line 36 . Male skin is inherently different from female skin as it has an obvious thicker dermis, marked thinner hypodermis and slightly thinner epidermis. These differences arise from specific effects of the sex steroids oestrogen and testosterone 37 . Testosterone furthermore delays wound healing, which is accompanied by an increased inflammatory response 38 . It is accordingly tempting to speculate that increased inflammation, in addition to C4.4A deficiency, could have an additive gender-specific effect in delaying the wound healing process in male mice.\n\nInterestingly, C4.4A deficiency seemed to affect the incidence of invasive bladder carcinomas, since fewer C4.4A \u2212/\u2212 mice (44%) developed invasive carcinomas compared to C4.4A +/+ littermates (83%). This was, however, not recapitulated by a genotype-dependent difference on neither the incidence of early hyperplastic lesions (Fig. 7) nor in the size of tumour lesions (Fig. 8), which could indicate that C4.4A is important for the invasive process, but not the malignant potential per se. This hypothesis fits with the difference being found primarily in the occurrence of early invasive lesions, i.e. invasive into the connective tissue (C4.4A \u2212/\u2212 ; 13% and C4.4A +/+ ; 39%) and not later, more malignant lesions, i.e. invasive into the muscle layer (C4.4A \u2212/\u2212 ; 31% and C4.4A +/+ ; 44%). Along the same line of evidence, C4.4A is highly expressed in the invasive front of both benign keratoacanthomas and malignant SCCs of the human skin, suggesting a role for C4.4A in the invasive process independent"
-  },
-  {
-    "snippet_index": 24,
-    "quotes": [
-      "pronounced expression of C4.4A in keratinocytes and its alleged role in migration in vitro 22,28",
-      "C4.4A deficiency impacts the kinetics of wound healing in vivo",
-      "C4.4A-deficient male mice exhibited a significant albeit modest attenuation in the healing kinetics as compared to the corresponding wild-type mice (p = 0.016) (Fig. 6A)."
-    ],
-    "summary": "C4.4A is highly expressed in keratinocytes and thought to be involved in cell migration, with its deficiency causing a modest delay in skin wound healing in male mice.",
-    "categories": [
-      "location",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:205697289",
-    "source_title": "C4.4A gene ablation is compatible with normal epidermal development and causes modest overt phenotypes",
-    "source_authors": "M. Kriegbaum et al.",
-    "source_year": null,
-    "snippet": "delay in skin wound healing in male mice. Due to the pronounced expression of C4.4A in keratinocytes and its alleged role in migration in vitro 22,28 we next explored how C4.4A deficiency impacts the kinetics of wound healing in vivo. Standardized 20 mm long, full-thickness, incisional skin wounds were generated on the back skin of C4.4A \u2212/\u2212 and C4.4A +/+ littermate mice representing both genders. The wound lengths were recorded until wound closure and revealed no significant difference between genotypes in the female mice (p = 0.58), whereas C4.4A-deficient male mice exhibited a significant albeit modest attenuation in the healing kinetics as compared to the corresponding wild-type mice (p = 0.016) (Fig. 6A). This delay, however, did not translate into evident morphological alterations between the genotypes as revealed by a histological examination of the wounds at day 3, 7, 10 and after closure at day 15 (Fig. 6B)."
-  },
-  {
-    "snippet_index": 28,
-    "quotes": [
-      "C4.4A is highly expressed in the invasive front of both benign keratoacanthomas and malignant SCCs of the human skin, suggesting a role for C4.4A in the invasive process independent of malignancy 10 .",
-      "our challenge studies show that C4.4A deficiency delays skin wound healing kinetics in males and indicate that female C4.4A-deficient mice tend to develop fewer invasive bladder carcinomas compared to the corresponding littermate controls.",
-      "C4.4A is dispensable for normal squamous epithelial development and differentiation."
-    ],
-    "summary": "C4.4A plays a role in the invasive behavior of some skin cancers and in the kinetics of wound healing, but is not required for the normal development and differentiation of squamous epithelia.",
-    "categories": [
-      "function",
-      "location",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:205697289",
-    "source_title": "C4.4A gene ablation is compatible with normal epidermal development and causes modest overt phenotypes",
-    "source_authors": "M. Kriegbaum et al.",
-    "source_year": null,
-    "snippet": "and C4.4A +/+ ; 44%). Along the same line of evidence, C4.4A is highly expressed in the invasive front of both benign keratoacanthomas and malignant SCCs of the human skin, suggesting a role for C4.4A in the invasive process independent of malignancy 10 . It should, nevertheless, be emphasized that this hypothesis needs further experimental verification. A pronounced impact from stromal expression of C4.4A on tumour take or growth was not obvious from subcutaneous engraftment studies with Lewis Lung carcinoma cells (Supplementary Fig. S7).\n\nIn conclusion, our data reveal that C4.4A is dispensable for normal squamous epithelial development and differentiation. Still, our challenge studies show that C4.4A deficiency delays skin wound healing kinetics in males and indicate that female C4.4A-deficient mice tend to develop fewer invasive bladder carcinomas compared to the corresponding littermate controls. One important question that still awaits experimental validation is whether the strong prognostic impact of C4.4A expression on the survival of cancer patients with e.g. lung adenocarcinomas reports on a bona fide functional causal relationship. For this purpose, several mouse models exist for induction of non-small cell lung cancer of the adenocarcinoma subtype both by genetic aberrations and by chemical insult 39,40 which could be combined with the presently C4.4A-deficient mouse line. The absence of profound overt phenotypes in both juvenile and aging C4.4A-deficient mice is considered beneficial for the future use of these animals in studies aiming at elucidating the possible impact of C4.4A-expression on the progression of lung adenocarcinomas whether these lesions are induced genetically or by external exposure to carcinogens. These mice may also serve as excellent controls in preclinical trials for specificity and target-unrelated toxicity of a given intervention strategy targeting C4.4A. The use of C4.4A as a pharmaceutical target is currently being explored in a phase-1 clinical trial (NCT02134197) where patients with advanced solid tumours are treated with a monoclonal anti-C4.4A antibody conjugated"
-  },
-  {
-    "snippet_index": 27,
-    "quotes": [
-      "redundancy of proteins with similar functions already present in the squamous epithelia or upregulated upon C4.4A deficiency.",
-      "Sequencing extracts from whole mouse ears were chosen to obtain information on the impact of C4.4A ablation on homeostatic skin representing both epidermis as well as the underlying connective tissue.",
-      "Only few genes were found dysregulated by the C4.4A deficiency per se and all presented rather modest amplitudes, which is congruent with the absence of an overt, manifest pathology in the affected squamous epithelia."
-    ],
-    "summary": "Ablation of C4.4A does not produce noticeable pathology in squamous epithelia, suggesting possible redundancy with other proteins and limited effects on gene expression in homeostatic skin.",
-    "categories": [
-      "function",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:205697289",
-    "source_title": "C4.4A gene ablation is compatible with normal epidermal development and causes modest overt phenotypes",
-    "source_authors": "M. Kriegbaum et al.",
-    "source_year": null,
-    "snippet": "\u2212 mice and the absence of obvious overt alterations of the various squamous epithelia of the body in young as well as aging mice (Figs 4 and 5). Such a modest functional impact could be the consequence of redundancy of proteins with similar functions already present in the squamous epithelia or upregulated upon C4.4A deficiency. The relevance of this scenario is documented in several independent mouse studies with gene ablation of e.g. individual cytokeratins of the epidermis, showing that deletion of CK14 or CK10 are partially compensated for by CK15 and CK14, respectively 31,32 . Our mRNA expression profiling on homeostatic skin did, however, not provide any obvious candidates for such functional redundancy (Supplementary tables S2 & S3). Sequencing extracts from whole mouse ears were chosen to obtain information on the impact of C4.4A ablation on homeostatic skin representing both epidermis as well as the underlying connective tissue. Only few genes were found dysregulated by the C4.4A deficiency per se and all presented rather modest amplitudes, which is congruent with the absence of an overt, manifest pathology in the affected squamous epithelia."
-  },
-  {
-    "snippet_index": 31,
-    "quotes": [
-      "S. felis C4 extract as an anti-MRSP intervention",
-      "the extract-treated mice exhibited slower lesion progression from day 1 to day 2, and significantly better protection from S. pseudintermedius skin disease from day four onwards",
-      "These results demonstrate the in vivo efficacy and clinical potential for S. felis C4 as a bacteriotherapy against S. pseudintermedius skin colonization and infection."
-    ],
-    "summary": "S. felis C4 is a bacterial strain that can successfully colonize skin, compete with and inhibit S. pseudintermedius ST71, and protect against skin infection and lesion progression in vivo, suggesting its potential use as a bacteriotherapy.",
-    "categories": [
-      "function",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:232224164",
-    "source_title": "Antimicrobials from a feline commensal bacterium inhibit skin infection by drug-resistant S. pseudintermedius",
-    "source_authors": "A. O\u2019Neill et al.",
-    "source_year": null,
-    "snippet": "In contrast, total staphylococci CFU counts after the S. felis C4 application were more similar to the control group, suggesting that the S. felis bacteria successfully colonized and outcompeted S. pseudintermedius ST71 on the skin (Figure 6E). To further test the S. felis C4 extract as an anti-MRSP intervention, we also evaluated its efficacy in limiting deep tissue infection by S. pseudintermedius injected into the dermis. One hour after an intradermal injection of 1 \u00d7 10 7 CFU S. pseudintermedius ST71, two intradermal inoculations of 250 \u03bcg of S. felis C4 extract were administered adjacent to the infection site. Infection was monitored by observations of skin necrotic lesion size over a 14 -day period. Compared to controls, the extract-treated mice exhibited slower lesion progression from day 1 to day 2, and significantly better protection from S. pseudintermedius skin disease from day four onwards (Figure 6F and G). These results demonstrate the in vivo efficacy and clinical potential for S. felis C4 as a bacteriotherapy against S. pseudintermedius skin colonization and infection."
+    "relevance": "secondary source citing Reynolds 2021: confirms keratinocyte differentiation states and lamellar body pathway"
   }
 ]

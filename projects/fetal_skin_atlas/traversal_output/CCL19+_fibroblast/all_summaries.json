@@ -1,0 +1,110 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200), regulation of inflammation (for example, RAMP2) and tissue regeneration (MDK)",
+      "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A) 43,52 were also upregulated during the transition from HOXC5 + fibroblasts into PEAR1 + fibroblasts"
+    ],
+    "summary": "Gopee 2024 describes the dermal fibroblast subsets in prenatal skin (HOXC5+, WNT2+, PEAR1+), their developmental trajectory, and their immune-suppressive vs pro-inflammatory gene expression profiles across gestation. Prenatal fibroblasts express CD200, RAMP2, and MDK (immune suppression and tissue regeneration), contrasting with adult fibroblasts expressing IL6, IL1RA, HLA-A.",
+    "categories": ["markers", "function"],
+    "source_corpus_id": "273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "Gopee NH et al.",
+    "source_year": 2024,
+    "snippet": "Prenatal human skin is able to heal without scarring but loses this capacity after 24 PCW. Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate. To identify the cellular and molecular mechanisms that may endow early prenatal skin with scarless healing properties, we investigated the temporal changes in composition and transcriptional profile of the dermal fibroblast subsets (Extended Data Figs. 3c and 7a). We first compared prenatal skin dermal fibroblasts with healthy adult skin fibroblasts. All adult fibroblast subsets expressed high levels of inflammatory cytokines and receptors (for example, IL6 and IL1RA) and genes involved in antigen presentation (for example, HLA-A), innate immune and inflammatory responses (for example, CD55 and PTGES) and cellular senescence (CDKN1A) (Fig. 3a and Supplementary Tables 13-15). By contrast, prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200), regulation of inflammation (for example, RAMP2) and tissue regeneration (MDK) (Fig. 3a and Supplementary Tables 13-15). The adult fibroblast gene expression profile was increased in WNT2 + and PEAR1 + prenatal fibroblasts, which were abundant in later gestation. Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A) 43,52 were also upregulated during the transition from HOXC5 + fibroblasts into PEAR1 + fibroblasts (Extended Data Fig. 7c)."
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "Inferred trajectory analysis predicted that HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2 + fibroblasts and PEAR1 + fibroblasts (abundant after 11 PCW)"
+    ],
+    "summary": "Gopee 2024 shows that prenatal skin fibroblasts originate from a HOXC5+ progenitor in the upper dermis (abundant <11 PCW) and branch into hair follicle fibroblasts (pre-Dc, Dc, Dp) and dermal fibroblasts (WNT2+, PEAR1+). The CCL19+ fibroblast is one of the annotated dermal subtypes identified in the atlas (Extended Data Fig. 3c).",
+    "categories": ["markers", "location", "identity"],
+    "source_corpus_id": "273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "Gopee NH et al.",
+    "source_year": 2024,
+    "snippet": "Inferred trajectory analysis predicted that HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2 + fibroblasts and PEAR1 + fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7)."
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "A combination of fibroblast and macrophage-associated molecular features potentially contribute to the ability of prenatal skin to heal without scarring, including the presence of fibroblast progenitors, a downregulated immune milieu and reduced collagen expression"
+    ],
+    "summary": "Gopee 2024 concludes that prenatal fibroblast subsets, including progenitors, collectively contribute to scarless healing through a downregulated immune milieu and reduced collagen expression.",
+    "categories": ["function"],
+    "source_corpus_id": "273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "Gopee NH et al.",
+    "source_year": 2024,
+    "snippet": "A combination of fibroblast and macrophage-associated molecular features potentially contribute to the ability of prenatal skin to heal without scarring, including the presence of fibroblast progenitors, a downregulated immune milieu and reduced collagen expression. However, we found progressive 'ageing' and acquisition of the adult 'pro-inflammatory' phenotype as early as 9 PCW, which could be targeted in fibroblasts to guide postnatal scarless healing."
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "LP keratinocytes and fibroblasts specifically secrete a combination of CXCL9, CXCL10, and CCL19 cytokines",
+      "CCL19 expressed by fibroblasts and basal keratinocytes was received by CCR7 expressed on CD8 + Pro T cells, naive T cells, CD8 + T1 cells, CD8 + T2 cells, Tregs, and Texh cells"
+    ],
+    "summary": "Kersh 2024 demonstrates that fibroblasts (and basal keratinocytes) are a primary source of CCL19 in inflammatory skin disease, signaling via CCR7 on multiple T cell populations to drive their recruitment.",
+    "categories": ["function", "markers"],
+    "source_corpus_id": "271967672",
+    "source_title": "CXCL9, CXCL10, and CCL19 synergistically recruit T lymphocytes to skin in lichen planus",
+    "source_authors": "Kersh AE et al.",
+    "source_year": 2024,
+    "snippet": "LP keratinocytes and fibroblasts specifically secrete a combination of CXCL9, CXCL10, and CCL19 cytokines. Using an in vitro migration assay with primary human T cells, we demonstrated that CCL19 in combination with either of the other 2 cytokines synergistically enhanced recruitment of CD8+ T cells more than any individual cytokine. CCL19 expressed by fibroblasts and basal keratinocytes was received by CCR7 expressed on CD8 + Pro T cells, naive T cells, CD8 + T1 cells, CD8 + T2 cells, Tregs, and Texh cells. CCL19 in combination with either CXCL9 or CXCL10 synergistically recruited T cells, especially CD8 + T cells."
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "CCL19-expressing fibroblasts have been identified in atopic dermatitis and localize to leukocyte-rich areas of the skin"
+    ],
+    "summary": "Kersh 2024 notes that CCL19-expressing fibroblasts have been identified in atopic dermatitis, where they localize to leukocyte-rich areas. This establishes a general pattern of CCL19+ fibroblasts associating with sites of immune cell accumulation in skin.",
+    "categories": ["location", "function"],
+    "source_corpus_id": "271967672",
+    "source_title": "CXCL9, CXCL10, and CCL19 synergistically recruit T lymphocytes to skin in lichen planus",
+    "source_authors": "Kersh AE et al.",
+    "source_year": 2024,
+    "snippet": "Individual roles for CXCL9, CXCL10 and CCL19 have been demonstrated in other skin diseases. CCL19-expressing fibroblasts have been identified in atopic dermatitis and localize to leukocyte-rich areas of the skin (23,32,33). CXCL9 and CXCL10 are expressed in many other skin diseases, and their functional importance was demonstrated for vitiligo, where inhibition of CXCL10 reduced recruitment of T cells and resulted in skin repigmentation."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "CCL19 + fibroblasts synergistically recruited T cells, especially CD8 + T cells",
+      "the pseudotime trajectory correlated with the downregulation of CCR7, which is known to be downregulated after binding to CCL19"
+    ],
+    "summary": "Kersh 2024 shows CCL19-CCR7 signaling drives T cell recruitment to skin. CCR7 is downregulated following CCL19 binding, suggesting CCL19 produced by fibroblasts acts on naive CCR7+ T cells to recruit them to the superficial dermis.",
+    "categories": ["function"],
+    "source_corpus_id": "271967672",
+    "source_title": "CXCL9, CXCL10, and CCL19 synergistically recruit T lymphocytes to skin in lichen planus",
+    "source_authors": "Kersh AE et al.",
+    "source_year": 2024,
+    "snippet": "CCL19 in combination with either CXCL9 or CXCL10 synergistically recruited T cells, especially CD8 + T cells. We believe this is a dynamic process by which CCL19 bulk-recruits cells in lesional and nonlesional LP skin. Additionally, the pseudotime trajectory correlated with the downregulation of CCR7, which is known to be downregulated after binding to CCL19. Thus, pseudotime analysis suggests that T cell activation in LP is not a systemic finding and only occurs after local recruitment to the skin."
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [
+      "In human and mouse lung cancer, Ccl19 producing fibroblastic stromal cells (FSC) correlate with increased CD8 + T cell infiltration and tumor growth control",
+      "Ccl19-expressing FSCs reside in peri-vascular niches within LLC tumors and T cell recruitment is impaired upon Ccl19 gene deletion suggesting an early role of FSCs in forming immune-stimulating stromal niches"
+    ],
+    "summary": "Johansson-Percival and Ganss 2021 show that CCL19-producing fibroblastic stromal cells (equivalent to CCL19+ fibroblasts) associate with perivascular niches, promote CD8+ T cell recruitment, and support immune-stimulating stromal environments. This is relevant to the CCL19+ fibroblast role as a stromal organizer of immune cell trafficking.",
+    "categories": ["function", "location"],
+    "source_corpus_id": "235220113",
+    "source_title": "Therapeutic Induction of Tertiary Lymphoid Structures in Cancer Through Stromal Remodeling",
+    "source_authors": "Johansson-Percival A, Ganss R",
+    "source_year": 2021,
+    "snippet": "In human and mouse lung cancer, Ccl19 producing fibroblastic stromal cells (FSC) correlate with increased CD8 + T cell infiltration and tumor growth control. Although TLS formation was not examined in this study, Ccl19-expressing FSCs reside in peri-vascular niches within LLC tumors and T cell recruitment is impaired upon Ccl19 gene deletion suggesting an early role of FSCs in forming immune-stimulating stromal niches. Collectively these studies support the notion that vascular cells and fibroblasts are important mediators of TLS neogenesis in cancer."
+  },
+  {
+    "snippet_index": 7,
+    "quotes": [
+      "Mature LTi express lymphotoxin alpha 1 beta 2 (LTa 1 β 2 ) which binds LTbR in activated LTo, resulting in further LTo maturation and expression of intercellular adhesion molecule 1 (ICAM1), vascular cell adhesion molecule 1 (VCAM1), chemokine (C-C motif) ligand 19 (Ccl19) and 21 (Ccl21), and Cxcl13 which recruit more LTi and promote interactions between LTi and LTo"
+    ],
+    "summary": "Johansson-Percival and Ganss 2021 describe that CCL19 (Ccl19) is expressed by lymphoid tissue organizer (LTo) cells — the fibroblastic stromal cell equivalent — as part of the secondary and tertiary lymphoid organ development program, alongside CCL21 and CXCL13.",
+    "categories": ["function", "identity"],
+    "source_corpus_id": "235220113",
+    "source_title": "Therapeutic Induction of Tertiary Lymphoid Structures in Cancer Through Stromal Remodeling",
+    "source_authors": "Johansson-Percival A, Ganss R",
+    "source_year": 2021,
+    "snippet": "Mature LTi express lymphotoxin alpha 1 beta 2 (LTa 1 β 2 ) which binds LTbR in activated LTo, resulting in further LTo maturation and expression of intercellular adhesion molecule 1 (ICAM1), vascular cell adhesion molecule 1 (VCAM1), chemokine (C-C motif) ligand 19 (Ccl19) and 21 (Ccl21), and Cxcl13 which recruit more LTi and promote interactions between LTi and LTo. Mouse LTo may give rise to stromal lineages such as FRCs, FDCs, lymphatic endothelium and vascular endothelium within adult LNs."
+  }
+]

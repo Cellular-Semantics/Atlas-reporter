@@ -1,0 +1,117 @@
+[
+  {
+    "snippet_index": 0,
+    "quotes": [
+      "Human skin contains specialized neuroendocrine Merkel cells responsible for fine touch sensation. In the present study, we performed in-depth analysis of Merkel cells in human fetal back skin. We revealed that these Merkel cells expressed cytokeratin 20 (CK20), were positive for the neuroendocrine markers synaptophysin and chromogranin A, and the mechanosensitive ion channel Piezo2.",
+      "Merkel cells retained the expression of CK20, synaptophysin, chromogranin A, and Piezo2 after isolation and in culture, and in the skin substitutes after transplantation.",
+      "in fetal skin and in skin substitutes, only Merkel cells were positive for CK8, while in culture, also non-Merkel cells showed positivity for CK8"
+    ],
+    "summary": "Human fetal skin Merkel cells express CK20, synaptophysin, chromogranin A, and PIEZO2; CK8 is Merkel-cell-specific in fetal skin and engineered skin substitutes.",
+    "categories": ["markers", "identity"],
+    "source_corpus_id": "252224758",
+    "source_title": "Human fetal skin derived merkel cells display distinctive characteristics in vitro and in bio-engineered skin substitutes in vivo",
+    "source_authors": "Michalak-Micka K et al.",
+    "source_year": 2022,
+    "snippet": "Human skin contains specialized neuroendocrine Merkel cells responsible for fine touch sensation. In the present study, we performed in-depth analysis of Merkel cells in human fetal back skin. We revealed that these Merkel cells expressed cytokeratin 20 (CK20), were positive for the neuroendocrine markers synaptophysin and chromogranin A, and the mechanosensitive ion channel Piezo2. Further, we demonstrated that Merkel cells were present in freshly isolated human fetal epidermal cells in vitro, and in tissue-engineered human dermo-epidermal skin substitutes 4 weeks after transplantation on immune-compromised rats. Merkel cells retained the expression of CK20, synaptophysin, chromogranin A, and Piezo2 after isolation and in culture, and in the skin substitutes after transplantation. Interestingly, we observed that in fetal skin and in skin substitutes, only Merkel cells were positive for CK8, while in culture, also non-Merkel cells showed positivity for CK8. In summary, human fetal Merkel cells showed phenotypical features confirming their cell identity. This findings are of pivotal importance for the future application of fetal tissue-engineered skin in clinics."
+  },
+  {
+    "snippet_index": 1,
+    "quotes": [
+      "The Merkel cell–neurite complex is a gentle touch receptor in the skin that mediates slowly adapting responses of Aβ sensory fibres to encode fine details of objects.",
+      "Piezo2, a mechanically activated cation channel, is expressed in Merkel cells. We engineered mice deficient in Piezo2 in the skin, but not in sensory neurons, and show that Merkel-cell mechanosensitivity completely depends on Piezo2.",
+      "Our results indicate that Piezo2 is the Merkel-cell mechanotransduction channel and provide the first line of evidence that Piezo channels have a physiological role in mechanosensation in mammals."
+    ],
+    "summary": "PIEZO2 is the principal mechanotransduction channel of Merkel cells; Merkel cell-neurite complexes mediate slowly adapting type I (SAI) responses encoding fine touch.",
+    "categories": ["function", "markers"],
+    "source_corpus_id": "3182720",
+    "source_title": "Piezo2 is required for Merkel cell mechanotransduction",
+    "source_authors": "Woo SH et al.",
+    "source_year": 2014,
+    "snippet": "How we sense touch remains fundamentally unknown. The Merkel cell–neurite complex is a gentle touch receptor in the skin that mediates slowly adapting responses of Aβ sensory fibres to encode fine details of objects. This mechanoreceptor complex was recognized to have an essential role in sensing gentle touch nearly 50 years ago. However, whether Merkel cells or afferent fibres themselves sense mechanical force is still debated, and the molecular mechanism of mechanotransduction is unknown. Synapse-like junctions are observed between Merkel cells and associated afferents, and yet it is unclear whether Merkel cells are inherently mechanosensitive or whether they can rapidly transmit such information to the neighbouring nerve. Here we show that Merkel cells produce touch-sensitive currents in vitro. Piezo2, a mechanically activated cation channel, is expressed in Merkel cells. We engineered mice deficient in Piezo2 in the skin, but not in sensory neurons, and show that Merkel-cell mechanosensitivity completely depends on Piezo2. In these mice, slowly adapting responses in vivo mediated by the Merkel cell–neurite complex show reduced static firing rates, and moreover, the mice display moderately decreased behavioural responses to gentle touch. Our results indicate that Piezo2 is the Merkel-cell mechanotransduction channel and provide the first line of evidence that Piezo channels have a physiological role in mechanosensation in mammals. Furthermore, our data present evidence for a two-receptor-site model, in which both Merkel cells and innervating afferents act together as mechanosensors. The two-receptor system could provide this mechanoreceptor complex with a tuning mechanism to achieve highly sophisticated responses to a given mechanical stimulus."
+  },
+  {
+    "snippet_index": 2,
+    "quotes": [
+      "In the human fetus, CK20-positive Merkel cells were identified in the epidermis of glabrous skin as early as 56 days of gestation.",
+      "The developmental origin of the Merkel cell has been debated between the neural crest and skin. Conditional knockout of Atoh1 in the mouse skin lineage results in the loss of Merkel cells, but knockout of Atoh1 in the neural crest does not affect Merkel cell development, suggesting that Merkel cells are derived from the skin."
+    ],
+    "summary": "CK20-positive Merkel cells appear in human fetal epidermis from 56 days gestation; developmental lineage tracing demonstrates epidermal (not neural crest) origin via ATOH1.",
+    "categories": ["markers", "identity", "location"],
+    "source_corpus_id": "262136696",
+    "source_title": "Feline papillomavirus-associated Merkel cell carcinoma: a comparative review with human Merkel cell carcinoma",
+    "source_authors": "Chambers J et al.",
+    "source_year": 2023,
+    "snippet": "In the human fetus, CK20-positive Merkel cells were identified in the epidermis of glabrous skin as early as 56 days of gestation. Fewer Merkel cells were observed in haired skin as early as 75 days of gestation. In older fetuses, ring-like arrangements and aggregates of Merkel cells were observed in the hair follicle infundibulum and bulge, respectively. In the mouse fetus, Merkel cells are found in the hair placode and epidermis of glabrous skin as early as gestational day 14.5 and 15.5, respectively. The developmental origin of the Merkel cell has been debated between the neural crest and skin. Conditional knockout of Atoh1 in the mouse skin lineage results in the loss of Merkel cells, but knockout of Atoh1 in the neural crest does not affect Merkel cell development, suggesting that Merkel cells are derived from the skin."
+  },
+  {
+    "snippet_index": 3,
+    "quotes": [
+      "In the skin, cytokeratin (CK) 20 is specifically expressed in Merkel cells, thus used as the most reliable immunohistochemical marker for Merkel cell in human and animals.",
+      "Neuroendocrine markers such as chromogranin, synaptophysin, CD56 (NCAM), neuron-specific enolase, and PGP9.5 are expressed in Merkel cells."
+    ],
+    "summary": "CK20 is the most reliable marker for Merkel cells; neuroendocrine markers including chromogranin, synaptophysin, CD56, NSE and PGP9.5 are also characteristic.",
+    "categories": ["markers", "identity"],
+    "source_corpus_id": "262136696",
+    "source_title": "Feline papillomavirus-associated Merkel cell carcinoma: a comparative review with human Merkel cell carcinoma",
+    "source_authors": "Chambers J et al.",
+    "source_year": 2023,
+    "snippet": "In the skin, cytokeratin (CK) 20 is specifically expressed in Merkel cells, thus used as the most reliable immunohistochemical marker for Merkel cell in human and animals, including the mouse, rat, pig, dog, and cat. Low-molecular-weight CKs 18 and 19 are expressed in Merkel cells and some hair follicle or sweat gland epithelial cells but not in epidermal keratinocytes. High-molecular-weight CKs 5, 13, 14, 15, 16, and 17 are absent in Merkel cells. Neuroendocrine markers such as chromogranin, synaptophysin, CD56 (NCAM), neuron-specific enolase, and PGP9.5 are expressed in Merkel cells."
+  },
+  {
+    "snippet_index": 4,
+    "quotes": [
+      "Responsible for light touch sensation, Merkel cells are multimodal epidermal sensory cells that appear at around week 18 of gestation in human skin. Located in the basal layer and the lower epidermis at the dermal-epidermal junction, Merkel cells are closely associated with afferent neurons.",
+      "Their origin is debatable, with some theories suggesting neural crest cells as the source and others proposing an epithelial/epidermal lineage based on the expression of epithelial keratins 8/18/20.",
+      "Merkel cell differentiation is strongly linked to HF morphogenesis."
+    ],
+    "summary": "Merkel cells appear at ~week 18 gestation in human skin, locate at the basal layer at the dermal-epidermal junction, and their differentiation is linked to hair follicle morphogenesis.",
+    "categories": ["location", "identity", "function"],
+    "source_corpus_id": "271750674",
+    "source_title": "Skin Development and Disease: A Molecular Perspective",
+    "source_authors": "Dermitzakis I et al.",
+    "source_year": 2024,
+    "snippet": "Responsible for light touch sensation, Merkel cells are multimodal epidermal sensory cells that appear at around week 18 of gestation in human skin. Located in the basal layer and the lower epidermis at the dermal-epidermal junction, Merkel cells are closely associated with afferent neurons. Their origin is debatable, with some theories suggesting neural crest cells as the source and others proposing an epithelial/epidermal lineage based on the expression of epithelial keratins 8/18/20. Shh signalling is essential for Merkel cell specification in murine embryos, triggered by the Shh ligand produced in developing HFs. Merkel cell differentiation is strongly linked to HF morphogenesis."
+  },
+  {
+    "snippet_index": 5,
+    "quotes": [
+      "In both studies it was shown that deletion of Atoh1 in epidermal progenitors resulted in a complete absence of MCs. Additionally, Morrison and colleagues demonstrated that Atoh1 deletion in the neural crest lineage did not affect the MC population.",
+      "xenograft of human fetal skin free of neural crest progenitors in immunocompromised mice led to the development of human Merkel cell suggesting an epidermal origin of this population"
+    ],
+    "summary": "ATOH1 deletion in epidermal (but not neural crest) progenitors abolishes Merkel cells; human fetal skin xenograft experiments confirm epidermal origin.",
+    "categories": ["identity"],
+    "source_corpus_id": "184488285",
+    "source_title": "Histogenesis of Merkel Cell Carcinoma: A Comprehensive Review",
+    "source_authors": "Kervarrec T et al.",
+    "source_year": 2019,
+    "snippet": "An epithelial origin of Merkel cells in mammals was finally demonstrated in 2009 by two consecutive transgenic mouse studies. In both studies it was shown that deletion of Atoh1 in epidermal progenitors resulted in a complete absence of MCs. Additionally, Morrison and colleagues demonstrated that Atoh1 deletion in the neural crest lineage did not affect the MC population. xenograft of human fetal skin free of neural crest progenitors in immunocompromised mice led to the development of human Merkel cell suggesting an epidermal origin of this population."
+  },
+  {
+    "snippet_index": 6,
+    "quotes": [
+      "As an essential component of mechano-gated ion channels, critically required for mechanotransduction in mammalian cells, PIEZO2 is known to be characteristically expressed by Merkel cells in human skin.",
+      "PIEZO2 co-localized with cytokeratin 20, chromogranin A, synaptophysin and neurofilament."
+    ],
+    "summary": "PIEZO2 is characteristically expressed by human Merkel cells and co-localizes with canonical Merkel cell markers CK20, chromogranin A, synaptophysin, and neurofilament.",
+    "categories": ["markers", "function"],
+    "source_corpus_id": "249188320",
+    "source_title": "Merkel Cell Carcinoma Display PIEZO2 Immunoreactivity",
+    "source_authors": "García-Mesa Y et al.",
+    "source_year": 2022,
+    "snippet": "As an essential component of mechano-gated ion channels, critically required for mechanotransduction in mammalian cells, PIEZO2 is known to be characteristically expressed by Merkel cells in human skin. Here, we immunohistochemically investigated the occurrence of Piezo channels in a case series of Merkel cell carcinoma. A panel of antibodies was used to characterize Merkel cells, and to detect PIEZO2 expression. All analyzed tumors displayed PIEZO2 in nearly all cells, showing two patterns of immunostaining: membranous and perinuclear dot-like. PIEZO2 co-localized with cytokeratin 20, chromogranin A, synaptophysin and neurofilament."
+  },
+  {
+    "snippet_index": 7,
+    "quotes": [
+      "Broad cell labels (epidermis, dermal stroma, immune and endothelium) and fine-grained annotations of cell states were assigned on the basis of differentially expressed genes (DEGs).",
+      "Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation."
+    ],
+    "summary": "The Gopee 2024 prenatal skin atlas annotated fine-grained epidermal cell states including a neuroendocrine (Merkel cell) population based on DEGs across 7-17 PCW.",
+    "categories": ["identity", "location"],
+    "source_corpus_id": "273400864",
+    "source_title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "source_authors": "Gopee NH et al.",
+    "source_year": 2024,
+    "snippet": "Broad cell labels (epidermis, dermal stroma, immune and endothelium) and fine-grained annotations of cell states were assigned on the basis of differentially expressed genes (DEGs). Differential abundance analysis testing revealed how different cell populations varied across gestation. Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation."
+  }
+]

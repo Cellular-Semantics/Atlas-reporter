@@ -1,43 +1,18 @@
 {
   "markers": [
-    {
-      "gene": "MFAP5",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 3"
-    },
-    {
-      "gene": "FBLN1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 3"
-    },
-    {
-      "gene": "SFRP2",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 3"
-    },
-    {
-      "gene": "CXCL14",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 3"
-    }
+    {"gene": "COL1A1", "evidence_type": "ECM gene, shared with fetal fibroblasts, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "COL1A2", "evidence_type": "ECM gene, shared with fetal fibroblasts, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "COL6A1", "evidence_type": "ECM gene, shared with fetal fibroblasts, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "CXCL12", "evidence_type": "chemokine, upregulated in AD/psoriasis, scRNA-seq", "source_table": "Reynolds 2021 Fig S7A-B"},
+    {"gene": "CCL19", "evidence_type": "chemokine, upregulated in AD/psoriasis, scRNA-seq", "source_table": "Reynolds 2021 Fig S7A-B"}
   ],
   "other_findings": [
-    {
-      "finding": "F2 fibroblasts are enriched in the submucosa region in adult tissues.",
-      "category": "spatial location",
-      "source_table": "Supplementary Table 4"
-    }
+    {"finding": "Fb2 (F2) is enriched in AD and psoriasis lesional and non-lesional skin compared to healthy skin", "category": "disease association", "source_table": "Reynolds 2021 Fig S7A-B"},
+    {"finding": "Fetal skin fibroblasts express more genes relating to Fb2 adult fibroblasts, suggesting functional specialisation toward ECM remodeling", "category": "developmental program", "source_table": "Reynolds 2021 Fig 5B"},
+    {"finding": "Skin fibroblast F2 cell program is augmented in AD and psoriasis", "category": "disease relevance", "source_table": "Reynolds 2021 main text"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "Marker genes for fibroblast F2 subtype (MFAP5, FBLN1, SFRP2, CXCL14) are specifically upregulated...",
-      "source_file": "Supplementary Table 3",
-      "context": "Supplementary Table 3: Differentially expressed marker genes for each fibroblast subtype"
-    },
-    {
-      "quote": "F2 fibroblasts are enriched in the submucosa region in adult tissues.",
-      "source_file": "Supplementary Table 4",
-      "context": "Supplementary Table 4: Spatial distribution of fibroblast subtypes"
-    }
+    {"quote": "fibroblasts in fetal skin express more genes relating to Fb2 adult fibroblasts, including COL1A1, COL1A2 and COL6A1, suggesting they are functionally specialized towards ECM remodeling and maintenance", "source_file": "Reynolds 2021 main text", "context": "Fb2/F2 fetal alignment"},
+    {"quote": "Fb2 fibroblasts are significantly enriched compared to healthy skin and have upregulated expression of the chemokines CXCL12 and CCL19", "source_file": "Reynolds 2021 main text", "context": "Fb2/F2 disease signature"}
   ]
 }

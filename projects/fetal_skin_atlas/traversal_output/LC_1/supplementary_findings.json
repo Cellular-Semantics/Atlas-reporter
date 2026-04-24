@@ -1,43 +1,58 @@
 {
   "markers": [
     {
-      "gene": "CD207",
-      "evidence_type": "Known marker cited in cluster annotation",
-      "source_table": "Supplementary Table S2"
+      "gene": "CD207 (Langerin)",
+      "evidence_type": "high expression; canonical LC marker",
+      "source_table": "Reynolds 2021 / Liu et al. 2021"
     },
     {
-      "gene": "CD1A",
-      "evidence_type": "Differential expression analysis",
-      "source_table": "Supplementary Table S5"
+      "gene": "CD1a",
+      "evidence_type": "high expression",
+      "source_table": "Liu et al. 2021 via Vine et al. 2022"
     },
     {
       "gene": "EPCAM",
-      "evidence_type": "Known marker cited in cluster annotation",
-      "source_table": "Supplementary Table S2"
+      "evidence_type": "epidermal marker; high in LC1",
+      "source_table": "Liu et al. 2021 via Vine et al. 2022"
+    },
+    {
+      "gene": "CDK1, PCNA, Ki67",
+      "evidence_type": "cell cycle genes; highest enrichment in LC1 in disease",
+      "source_table": "Reynolds 2021 Fig S5G-H"
+    },
+    {
+      "gene": "CD11c (low)",
+      "evidence_type": "low expression in LC1 FACS gate",
+      "source_table": "Reynolds 2021 Fig S5A"
     }
   ],
   "other_findings": [
     {
-      "finding": "LC_1 cells are most abundant in the epidermal layer of adult skin samples.",
-      "category": "spatial location",
-      "source_table": "Supplementary Table S7"
+      "finding": "LC1 has highest enrichment of cell cycle genes in AD and psoriasis",
+      "category": "disease",
+      "source_table": "Reynolds 2021 Fig S5G-H"
+    },
+    {
+      "finding": "LC1 are in the Langerin+CD1aloCD11clo FACS gate",
+      "category": "FACS phenotype",
+      "source_table": "Reynolds 2021 Fig S5A"
+    },
+    {
+      "finding": "Ki67+Langerin+ cells increased in AD and psoriasis lesional skin",
+      "category": "proliferation/disease",
+      "source_table": "Reynolds 2021 Fig S5I"
     }
   ],
   "evidence_quotes": [
     {
-      "quote": "LC_1: Langerhans-like cells, positive for CD207 and EPCAM.",
-      "source_file": "Supplementary Table S2",
-      "context": "Cluster annotation summary"
+      "quote": "In both AD and psoriasis, LC1 has the highest enrichment of cell cycle genes",
+      "source_file": "Reynolds et al. 2021 Science",
+      "context": "LC1 proliferating state in disease"
     },
     {
-      "quote": "Cluster LC_1: Top DE genes include CD1A, CDH1.",
-      "source_file": "Supplementary Table S5",
-      "context": "Differentially expressed genes per cluster"
-    },
-    {
-      "quote": "LC_1 cells were predominantly located in the epidermal compartment of all adult skin donors.",
-      "source_file": "Supplementary Table S7",
-      "context": "Spatial distribution of annotated clusters"
+      "quote": "LC1 are enriched within the Langerin+CD1aloCD11clogate distinct from Langerin+CD1ahi LCs",
+      "source_file": "Reynolds et al. 2021 Science",
+      "context": "LC1 FACS gate identity"
     }
   ]
 }

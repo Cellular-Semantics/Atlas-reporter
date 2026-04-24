@@ -1,5 +1,17 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {"gene": "KLRB1", "evidence_type": "encodes CD161, innate lymphocyte marker, scRNA-seq", "source_table": "Reynolds 2021 main text"},
+    {"gene": "KLRD1", "evidence_type": "encodes CD94, NK marker, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "GNLY", "evidence_type": "granulysin, NK cytotoxic marker, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "PRF1", "evidence_type": "perforin, NK cytotoxic marker, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "GZMB", "evidence_type": "granzyme B, cytotoxic marker, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "IL7R", "evidence_type": "ILC marker, differentiates ILC from NK, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"}
+  ],
+  "other_findings": [
+    {"finding": "ILC1/NK cells have overlapping features of ILC1 and NK cells, reflecting the biological continuum between group 1 ILCs", "category": "biological note", "source_table": "Reynolds 2021 main text"},
+    {"finding": "This is a hybrid/transitional population — not purely ILC1 or NK, but sharing markers of both", "category": "classification note", "source_table": "Reynolds 2021 main text"}
+  ],
+  "evidence_quotes": [
+    {"quote": "ILC1/NK have overlapping features of ILC1 and NKs, as described", "source_file": "Reynolds 2021 main text", "context": "ILC1/NK hybrid identity"}
+  ]
 }

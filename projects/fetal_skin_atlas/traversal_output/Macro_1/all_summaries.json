@@ -1,306 +1,34 @@
 [
   {
-    "snippet": "To model mammalian tissue ageing, we adapted an intravital microscopy technique to visualize skin-resident macrophage populations non-invasively in live mice throughout the lifetime of the organism 18,19 (Fig. 1a and Supplementary Videos 1 and 2). Unexpectedly, longitudinal imaging of skin macrophages (marked by Csf1r eGFP ) revealed a niche-specific decline in macrophage populations. Subdividing the skin into three anatomical layers-the epidermis, and upper (papillary) and lower (reticular) dermis-we observed that macrophages of the upper dermis were lost with age at a greater rate than macrophages from both the epidermis and lower dermis (Fig. 1b,c). Further characterization of this upper-dermal CSF1R + population revealed expression of additional macrophage markers [20][21][22] , including the chemokine receptor CX 3 CR1, lysozyme M (LysM) and the mannose receptor CD206 (Extended Data Fig. 1a,b,f-h). A major component of the upper dermal niche is the superficial capillary plexus, which supplies nutrient exchange for the overlying epidermis. To visualize this structure, we used third harmonic generation from our imaging to track red blood cell (RBC) flow through capillary vessels 23,24 , which was comparable to conventional rhodamine dextran labelling (Extended Data Fig. 2 and Supplementary Video 3) and was not significantly altered when using a coverslip during our imaging sessions (Extended Data Fig. 3a,b). With this in vivo marker of RBC flow, we found that these macrophages were closely associated with blood capillaries of the superficial plexus, suggesting that they may provide support for this capillary niche (Extended Data Fig. 1c-e and Supplementary Video 4). To investigate whether these macrophages have a role in capillary function, we assessed whether RBC blood flow was altered in the presence of CAMs.",
-    "paper_id": "282135106",
-    "title": "Niche-specific dermal macrophage loss promotes skin capillary ageing",
-    "authors": [
-      "Kailin R. Mesa",
-      "Kevin A. O\u2019Connor",
-      "Charles Ng",
-      "Steven P Salvatore",
-      "Alexandra Dolynuk",
-      "Michelle Rivera Lomeli",
-      "Dan R. Littman"
+    "paper": "Reynolds et al. (2021)",
+    "doi": "10.1126/science.aba6500",
+    "corpusId": "231666430",
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "quotes": [
+      "Two macrophage cell states expressing CD68 are present in healthy skin. Mac1 shows\nhigher expression of complement transcripts (C1QB, C1QC) and scavenger receptors\n(CD163, MARCO)",
+      "macrophages are the\ndominant MP in first trimester skin"
     ],
-    "year": null,
-    "url": "",
-    "score": 0.49682250641450465,
-    "depth": 0,
-    "corpus_id": "CorpusId:282135106"
+    "summary": "Reynolds et al. (2021) identify Mac1 (Macro_1) as one of two CD68+ macrophage states in healthy adult skin, characterised by high complement transcripts (C1QB, C1QC) and scavenger receptors (CD163, MARCO). Macrophages are also the dominant mononuclear phagocyte in first trimester fetal skin."
   },
   {
-    "snippet": "To model mammalian tissue aging, we adapted an intravital microscopy technique to visualize skin resident macrophage populations non-invasively in live mice throughout the lifetime of the organism 18,19 (Figure 1a, Supplemental Videos 1 and 2). \n\nUnexpectedly, longitudinal imaging of skin macrophages (marked by Csf1r-EGFP) revealed niche-specific decline in macrophage populations. Subdividing the skin into three anatomical layers, epidermis, upper (papillary) and lower (reticulated) dermis, we observed that macrophages of the upper dermis were lost with age at a greater rate than macrophages from both epidermis and lower dermis (Figure 1b-c). Further characterization of this population with additional myeloid fluorescent reporters revealed that most macrophages of the upper dermis express the chemokine receptor CX3CR1, but not CCR2 (Extended Data Fig. 1a,b). A major component of the upper dermal niche is the superficial capillary plexus, which supplies nutrient exchange for the overlying epidermis. To visualize this structure, we utilized third harmonic generation from our imaging to track red blood cell (RBC) flow 20,21 , which was consistent with conventional labeling methods such as rhodamine dextran injection (Extended Data Fig. 1c-e and Supplemental Video 3). With this in vivo marker of blood flow, we found that the macrophages were closely associated with blood capillaries of the superficial plexus, suggesting that they may provide support for this capillary niche (Extended Data Fig. 1fh and Supplemental Video 4). To investigate if these macrophages play a role in capillary function, we assessed if blood flow, via RBC flow (Extended Data Fig. 2), was altered in the presence of capillary-associated macrophages (CAMs).",
-    "paper_id": "261342853",
-    "title": "Niche-specific macrophage loss promotes skin capillary aging",
-    "authors": [
-      "Kailin R. Mesa",
-      "Kevin A. O\u2019Connor",
-      "Charles Ng",
-      "S. Salvatore",
-      "Alexandra Dolynuk",
-      "Michelle Rivera Lomeli",
-      "D. Littman"
+    "paper": "Mehta et al. (2021)",
+    "doi": "10.3389/fimmu.2021.672082",
+    "corpusId": "235813151",
+    "title": "Inflammatory Skin Disorders: Monocyte-Derived Cells Take Center Stage",
+    "quotes": [
+      "The altered Mac1/Mac2 ratio identified by scRNA-seq in skin lesions in Reynolds et al. might corroborate with decreased CD14bright CD64bright CD163+ MNP_3 and increased CD14dim CD64bright CD163+ MNP_4 Mf clusters detected by FCM in psoriatic L skin",
+      "Mac1 (CD14, MARCO, CD163), Mac2 (F13A1, CD163)"
     ],
-    "year": null,
-    "url": "",
-    "score": 0.4956962552194243,
-    "depth": 0,
-    "corpus_id": "CorpusId:261342853"
+    "summary": "Mehta et al. (2021) discuss the Mac1/Mac2 ratio in psoriatic skin, noting that Mac1 (CD14, MARCO, CD163) and Mac2 (F13A1, CD163) are altered in disease, with complement-expressing Mac1 decreased in psoriasis lesions."
   },
   {
-    "snippet": "(n = 8-16). (D and E) Developing skin (body and limb buds) was isolated from E10.0-E10.5 Ncx1 \ue032/\ue032 embryos or control littermates and processed for flow cytometric analysis. (E) Percentage \u00b1 SEM of hematopoietic cells (CD45 + ) in control littermates (white bars, n = 4) and Ncx1 \ue032/\ue032 embryos (black bars, n = 3). Pooled data from two independent experiments. independent of YS macrophages infiltrated the skin after E13.5 and likely contributed to the dilution of the eYFP signal in the adult LC compartment.\n\nUsing flow cytometry, we first analyzed the myeloid cell content of the developing epidermis at E16.5-E17.5, the earliest time point when separate analysis of the epidermal and dermal compartment can be easily performed. We found that E17.5 epidermal-infiltrating myeloid cells expressed the monocyte/macrophage markers CD11b, F4/80, CSF-1R, and CX3CR1, and that they lacked Gr-1 (Fig. 5 A). These cells also presented a macrophage-like morphology (Fig. 5 B), were highly proliferative (Fig. 5 C), and acquired adult LC markers (langerin and MHC class II molecules) within the week after birth (not depicted), as previously reported (Chang-Rodriguez et al., 2005;Chorro et al., 2009). The remaining CD45 + CD11b \ue032 F4/80 \ue032 cells expressed T cells markers (Thy, CD3, and V\ue0673) and correspond to dendritic epidermal T cell progenitors (unpublished data). Imaging of Cx3cr1 gfp/+ or Csf1r gfp/+ embryos revealed that GFP + F4/80 + cells start to appear in the epidermis around E16.5 (Fig. 5, D and E), although rare cells were sometimes detected at E15.5 (Video 2). Epidermal GFP + cells present in the epidermis just below the skin surface (highlighted by",
-    "paper_id": "10280599",
-    "title": "Adult Langerhans cells derive predominantly from embryonic fetal liver monocytes with a minor contribution of yolk sac\u2013derived macrophages",
-    "authors": [
-      "G. Hoeffel",
-      "Yilin Wang",
-      "M. Greter",
-      "Peter See",
-      "P. Teo",
-      "B. Malleret",
-      "M. Leboeuf",
-      "Donovan Low",
-      "Guillaume Oller",
-      "Francisca F. Almeida",
-      "Sharon H.Y. Choy",
-      "M. Grisotto",
-      "L. R\u00e9nia",
-      "S. Conway",
-      "E. Stanley",
-      "J. Chan",
-      "J. Chan",
-      "L. Ng",
-      "I. Samokhvalov",
-      "M. Merad",
-      "F. Ginhoux"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.48866976818437025,
-    "depth": 0,
-    "corpus_id": "CorpusId:10280599"
-  },
-  {
-    "snippet": "This includes increased expression of canonical M2-like markers such as Arginase 1 (Arg1), Resistinlike molecule alpha (Retnla), and Fibronectin (Fn1) (Supplementary Figure 2B, B'). To further confirm the polarization state of the macrophages we performed flow cytometry and immunostaining analysis of F4/80 macrophages with both M1 and M2 markers. Macrophages in the embryos are not yet clearly defined as M1/M2 so we wanted to understand if the macrophages in the embryonic skin express the canonical M1 (CD38) and M2 (CD206, ARG1, MERTK) markers as reported in the studies from the adults. CD38 is an ectoenzyme expressed on the surface of many cells including immune cells and is currently considered as the only well characterized marker for M1 macrophages. On the other hand, CD206, ARG1, and MERTK have been shown to be associated with ECM uptake, ECM synthesis and macrophage phagocytic activity, respectively (33)(34)(35)(36). Immunostaining and flow cytometry analyses of macrophages from Itgb1 epidermal KO skin revealed an increase in the population of F4/80 + MERTK + double positive macrophages and increased level of MERTK expression compared to the macrophages from control skin. (Figures 3A-F and Supplementary Figures 3A-D). Additionally, macrophages in the Itgb1 epidermal KO skin showed an increased expression of the enzyme ARG-1 (Figures 3G-K). This was further associated with an increased expression of fibronectin and the matrix remodeling enzyme MMP-9 in the Itgb1 epidermal KO skin at E17.5 and E18.5 (Figures 3L-U). We did not however observe significant differences in the populations of F4/80 + CD206 + and F4/80 + CD38 + between the control and the Itgb1 epidermal KO skin (Supplementary Figures 3E-R).",
-    "paper_id": "238749227",
-    "title": "Epithelial-Macrophage Crosstalk Initiates Sterile Inflammation in Embryonic Skin",
-    "authors": [
-      "Oindrila Bhattacharjee",
-      "Uttkarsh Ayyangar",
-      "Ambika S. Kurbet",
-      "Vairavan Lakshmanan",
-      "Dasaradhi Palakodeti",
-      "F. Ginhoux",
-      "Srikala Raghavan"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4773973642123858,
-    "depth": 0,
-    "corpus_id": "CorpusId:238749227"
-  },
-  {
-    "snippet": "To assess whether macrophages in prenatal human dermis express important lineage molecules, skin of defined gestational age groups and, in parallel, of adults was immunostained for CD45, CD206, and CD209. Similar to adult skin, 1, arrows), most probably macrophages, as well as CD45 \u00fe CD206 \u00fe CD209 \u00c0 cells (Figure 1, arrrowheads) are identified already in embryonic dermis. The staining intensity of CD206 and CD209 in embryonic skin is mostly comparable to adult skin, yet some cells show only weak expression (compare Figure 2, left column, arrowhead), implying that the upregulation of these markers occurs in the skin. Of note, CD206 staining of linear structures, most likely blood vessels, is observed occasionally in prenatal but not in adult skin (Figure 1, middle column, double arrow). Epidermal CD45 \u00fe cells at all age groups investigated lack CD206 and CD209. To evaluate whether CD1c and CD209 are mutually exclusive, triple immunofluorescence staining was performed. We found virtually nonoverlapping populations of CD206 \u00fe CD1c \u00fe DDCs (Figure 2, arrowhead) and CD206 \u00fe CD209 \u00fe macrophages (arrow) already in prenatal dermis, similar to what has been reported in adult dermis, with the exception that CD1c \u00fe cells more often lack or weakly express CD206. Statistical analysis revealed that the frequency of CD1c \u00fe leukocytes significantly increases with gestational age (Figure 2b) and that CD209 \u00fe cells outnumber CD1c \u00fe cells between 9 and 14 weeks EGA, reaching adult-like ratios already by midgestation (Figure 2c). By flow cytometry, we found that in all age groups investigated CD11c \u00fe cells are detectable and that CD11c expression is restricted to CD45 \u00fe leukocytes (Figure 3a). In depth analysis of HLA-DR high CD45 \u00fe cells reveals that CD1c \u00fe CD11c \u00fe cells are already present in the developing skin.",
-    "paper_id": "7818908",
-    "title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
-    "authors": [
-      "C. Schuster",
-      "C. Vaculik",
-      "Marion Prior",
-      "C. Fiala",
-      "M. Mildner",
-      "W. Eppel",
-      "G. Stingl",
-      "A. Elbe-B\u00fcrger"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4738032680456067,
-    "depth": 0,
-    "corpus_id": "CorpusId:7818908"
-  },
-  {
-    "snippet": ", 2013]). STREAMs are unable to self-renew in steady-state and their turnover from a Bmi1 + adult progenitor occurs at a low basal rate, becoming outcompeted over time by other skin-resident macrophages with faster turnover. Hence, our results concur with previous studies reporting a dual origin for skin macrophages with a prenatally-derived CCR2-independent subset and a postnatal BM-derived CCR2-dependent subset, being the prenatally-derived subset displaced by the BM-derived subset with age (Jakubzick et al., 2013;Tamoutounour et al., 2013). Interestingly, this dual origin has been also observed in other tissues such as heart (Molawi et al., 2014).\n\nUnraveling the ontogenetic source for tissue-resident macrophages is another complex matter. There are several landmark studies describing the existence of different macrophage precursors during development. The yolk sac-derived Myb-independent F4/80 bright macrophages seeded in the embryonic skin prior to birth and renewed independently of definitive hematopoiesis (Schulz et al., 2012) might correspond to the developmental precursor for STREAMs and the c-Myb dependent fetal liver monocytes that give rise to macrophages with self-renewal capacity (Hoeffel et al., 2015) might be the precursors of the radiosensitive macrophages (those susceptible of replenishment by BM precursors after a genotoxic insult). However, the elucidation of skin macrophage ontogeny deserves further thorough investigation in future studies.\n\nRegarding phenotypic characterization, a classification of the skin mononuclear phagocyte system based on phenotypic markers has recently identified heterogeneity among the skin-resident macrophages, although not related to radio-sensitivity. These authors distinguish two distinct skin-resident macrophage subsets defined both as CD11b + CD11c -CD64 + MerTK + Ly6C low CCR2but differing on the expression of MHC-II (Tamoutounour et al., 2013). They suggest that both subsets possess analogous transcriptional profiles",
-    "paper_id": "34955097",
-    "title": "Pivotal role for skin transendothelial radio-resistant anti-inflammatory macrophages in tissue repair",
-    "authors": [
-      "O. Barreiro",
-      "Danay Cibrian",
-      "Cristina Clemente",
-      "David Alvarez",
-      "Vanessa Moreno",
-      "\u00cd\u00f1igo Valiente",
-      "A. Bernad",
-      "D. Vestweber",
-      "A. G. Arroyo",
-      "Pilar Mart\u00edn",
-      "U. V. von Andrian",
-      "F. S\u00e1nchez Madrid"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4736307903473472,
-    "depth": 0,
-    "corpus_id": "CorpusId:34955097"
-  },
-  {
-    "snippet": "Macrophages from human and mouse skin share phenotypic and functional features, but remain to be characterized in pathological skin conditions. Skin-resident macrophages are known to derive from embryonic precursors or from adult hematopoiesis. In this report, we investigated the origins, phenotypes and functions of macrophage subsets in mouse and human skin and in cutaneous squamous cell carcinoma (cSCC) using the spectral flow cytometry technology that enables cell autofluorescence to be considered as a full-fledged parameter. Autofluorescence identifies macrophage subsets expressing the CD206 mannose receptor in human peri-tumoral skin and cSCC. In mouse, all AF+ macrophages express the CD206 marker, a subset of which also displaying the TIM-4 marker. While TIM-4-CD206+ AF+ macrophages can differentiate from bone-marrow monocytes and infiltrate skin and tumor, TIM-4 identifies exclusively a skin-resident AF+ macrophage subset that can derive from prenatal hematopoiesis which is absent in tumor core. In mouse and human, AF+ macrophages from perilesional skin and cSCC are highly phagocytic cells contrary to their AF- counterpart, thus identifying autofluorescence as a bona fide marker for phagocytosis. Our data bring to light autofluorescence as a functional marker characterizing subsets of phagocytic macrophages in skin and cSCC. Autofluorescence can thus be considered as an attractive marker of function of macrophage subsets in pathological context.",
-    "paper_id": "252923220",
-    "title": "Autofluorescence identifies highly phagocytic tissue-resident macrophages in mouse and human skin and cutaneous squamous cell carcinoma",
-    "authors": [
-      "Pierre Bourdely",
-      "L. Petti",
-      "Sokchea Khou",
-      "A. Meghraoui-Kheddar",
-      "Roxane Elaldi",
-      "J. Cazareth",
-      "N. Mossadegh-Keller",
-      "J. Boyer",
-      "M. Sieweke",
-      "G. Poissonnet",
-      "A. Sudaka",
-      "V. Braud",
-      "F. Anju\u00e8re"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.47057128625840644,
-    "depth": 0,
-    "corpus_id": "CorpusId:252923220"
-  },
-  {
-    "snippet": "It is apparent that different tissue-resident macrophages reside at specific sub-tissular niches within the murine dermis. Although emerging evidence has indicated the existence of CD163 + perivascular and CD64 + perineural macrophages in the human dermis [6,8], the human homolog of murine dermal-resident macrophages remains ambiguous. Traditional studies have identified human macrophages based on the positive expression of HLA-DR, CD14, CD11b, CD1C, CD68 and colony-stimulating factor 1 receptor (CSF1R). Nevertheless, the characterisation of human dermal-resident macrophages was hindered by a lack of unique markers. Patients devoid of blood monocytes have normal tissue-resident macrophages in their skin biopsy, suggesting that long-lived and self-renewing macrophage subsets also exist in the human dermis [26]. Single-cell sequencing has also identified several subsets/cell states of CD68 + macrophages in adult skin [27][28][29]. \n\nAmong all, macrophage receptor with collagenous structure (MARCO) + macrophages were consistently identified in two studies and express high levels of the complement proteins' (C1QB and C1QC) transcripts and the cell surface receptor CD163 [27,28]. Xue et al. also identified two macrophage subsets in which CCR1 + macrophages have an inflammatory phenotype and express high levels of (C-X-C motif) ligand 2 (CXCL2), (C-C motif) ligand 3 (CCL3), CCL4 and CEBOB, and TREM2 + macrophages, which are highly enriched in lipid metabolism [28]. Another population of Mac2 + macrophages displaying an alternative activation state with upregulated NR4A1, NR4A2 and KLF4 has also been reported in human skin and can be identified by F13A1 [27]. Remarkably, Mac2 macrophages' transcriptomic profile closely aligns with that of foetal macrophages in embryonic skin [27].",
-    "paper_id": "253440413",
+    "paper": "Sim et al. (2022)",
+    "doi": "10.3390/cells11193wounds",
+    "corpusId": "253440413",
     "title": "Macrophages in Skin Wounds: Functions and Therapeutic Potential",
-    "authors": [
-      "S. Sim",
-      "S. Kumari",
-      "S. Kaur",
-      "K. Khosrotehrani"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4696025547665908,
-    "depth": 0,
-    "corpus_id": "CorpusId:253440413"
-  },
-  {
-    "snippet": "The skin is an immunoprotective organ that functions to protect our internal environment from external insults. It is organised into the epidermal, dermal, and subcutaneous layers comprised of populations of specialised non-immune cells such as keratinocytes, fibroblasts, and adipocytes, respectively. Each of the skin's main layers also consists of an interactive network of tissue-resident immune cells, such as macrophages, essential for the maintenance of homeostasis and skin integrity (1). Under steady-state, macrophages are reported as the most abundant immune cell type in the skin (2,3). Here they perform immunosurveillance tasks and phagocytose invading pathogens upon injury or infection. Tissue-resident macrophages are distinguished into two main types, Langerhans cells, which reside within the epidermal layer, and dermal macrophages. Both Langerhans cells and dermal macrophages are deposited in the skin embryonically from fetal liver and yolk sac-derived precursors (4,5). It has been proposed that in adult skin, Langerhans cells maintain their pools through self-renewal mechanisms whereas dermal macrophages are renewed and replaced by the recruitment of bone marrow-derived monocyte precursors (6)(7)(8). \n\nAgeing is associated with a decline in the structural, and physiological function of the skin such as flattening of the dermal-epidermal junction, reduced elasticity, and low collagen density (9,10). These ageing-related changes in the structure of the skin are linked to decreased cell replacement, impaired thermoregulation, increased susceptibility to infection, persistent low-grade inflammation as well as the reduced function of the resident cells such as macrophages (10)(11)(12)(13). Altered function in the aged skin results in impaired barrier immunity and delayed cutaneous wound healing responses following injuries in the elderly (14,15). \n\nCutaneous wound healing is the process of restoring the skin's integrity following injury and occurs in four successive and overlapping phases: haemostasis, inflammation, proliferation and remodelling (16).",
-    "paper_id": "250342783",
-    "title": "Age-Related Alterations in Macrophage Distribution and Function Are Associated With Delayed Cutaneous Wound Healing",
-    "authors": [
-      "C. Dube",
-      "Yasmin Hui Binn Ong",
-      "Kelly Wemyss",
-      "Siddharth Krishnan",
-      "Tiak Ju Tan",
-      "B. Janela",
-      "J. Grainger",
-      "M. Ronshaugen",
-      "K. Mace",
-      "Chin Yan Lim"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.46144933196958493,
-    "depth": 0,
-    "corpus_id": "CorpusId:250342783"
-  },
-  {
-    "snippet": "Mac2, on the other hand, displays expression of FXIIIA and markers of alternative activation and immune suppression. Adult skin Mac2, which aligned with fetal skin macrophages, was significantly elevated in psoriatic skin, suggesting a role for Mac2 in psoriasis pathogenesis and also a shared cellular program with macrophages of fetal development [72].",
-    "paper_id": "246602980",
-    "title": "Antigen-Presenting Cells in Psoriasis",
-    "authors": [
-      "D. Antal",
-      "S. Alimohammadi",
-      "P. Bai",
-      "A. Sz\u00f6ll\u0151si",
-      "M. Sz\u00e1nt\u00f3"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4596972629024093,
-    "depth": 0,
-    "corpus_id": "CorpusId:246602980"
-  },
-  {
-    "snippet_index": 12,
     "quotes": [
-      "Traditionally, macrophages are classified into two cell phenotypes such as M1 and M2 depending on their cell surface markers and cytokine/chemokine production and function [56]. M1 macrophages are commonly associated with the pro-inflammatory process, whereas M2 macrophages are recognized as anti-inflammatory and proregenerative.",
-      "The M1 phenotype macrophage is activated by pro-inflammatory signals including interferong (IFN-\u03b3) and microbial products such as lipopolysaccharide (LPS). M1-macrophages can present high antigen and promote Th1 differentiation of lymphocytes which is producing pro-inflammatory cytokines in response to intracellular pathogens, leading to restriction of availability of microenvironmental iron to prevent bacterial infections [60,61]."
+      "macrophage receptor with collagenous structure (MARCO) + macrophages were consistently identified in two studies and express high levels of the complement proteins' (C1QB and C1QC) transcripts and the cell surface receptor CD163"
     ],
-    "summary": "This snippet states that M1 macrophages\u2014also called Macro_1/Macrophage 1\u2014are pro-inflammatory cells, activated by IFN-\u03b3 and LPS, with the function of antigen presentation, Th1 promotion, and restriction of iron to prevent infections. M1 and M2 are distinguished by surface markers, cytokines, and functions.",
-    "categories": [
-      "function",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:246077551",
-    "source_title": "Immunomodulation of Skin Repair: Cell-Based Therapeutic Strategies for Skin Replacement (A Comprehensive Review)",
-    "source_authors": "Shima Tavakoli et al.",
-    "source_year": null,
-    "snippet": "Macrophages play critical roles in all phases of adult wound healing including inflammation, proliferation, and remodeling. Skin macrophages are derived from two different sources: a tissue-resident macrophage and circulating monocytes that are recruited to areas of injury and differentiate into macrophages. The first type includes a self-renewing pool of cells that originate from the embryonic yolk sack. These cells are named dermal macrophages which are permanent residents in healthy adult skin, and often found in nearby skin appendages. In contrast, during injury, bone marrow-derived monocytes are recruited to the skin injury, locally differentiate into macrophages and play key roles in wound healing. Both types of macrophages are involved in the wound healing process and they enable innate immune processes and play several crucial roles during wound healing [54]. Both types of macrophages are involved in the wound healing process and they enable innate immune processes and play several crucial roles during wound healing [55]. Additionally, macrophages secrete key pro-inflammatory and anti-inflammatory cytokines and therefore play a critical role in the regeneration and the wound healing phases. Traditionally, macrophages are classified into two cell phenotypes such as M1 and M2 depending on their cell surface markers and cytokine/chemokine production and function [56]. M1 macrophages are commonly associated with the pro-inflammatory process, whereas M2 macrophages are recognized as anti-inflammatory and proregenerative. It is also worthy to mention that distinguishing M1 and M2 phenotypes are only possible in vitro settings [54]. In in vivo environment, the existence of a heterogeneous subpopulation of macrophages with the characteristic of both M1 and M2 was reported [57][58][59]. The M1 phenotype macrophage is activated by pro-inflammatory signals including interferong (IFN-\u03b3) and microbial products such as lipopolysaccharide (LPS). M1-macrophages can present high antigen and promote Th1 differentiation of lymphocytes which is producing pro-inflammatory cytokines in response to intracellular pathogens, leading to restriction of availability of microenvironmental iron to prevent bacterial infections [60,61]."
-  },
-  {
-    "snippet_index": 13,
-    "quotes": [
-      "Blood monocytes that are attracted to wounds are classified into classical or pro-inflammatory CD14 + CD16 \u2212 monocytes and anti-inflammatory CD14 low/\u2212 CD16 + monocytes. The former type is more capable of differentiating into M1 macrophages, which propagate inflammation, while the latter subset of monocytes gives rise mostly to reparative M2 macrophages (Figure 1). Nevertheless, as with other tissues, an attempt to describe skin macrophages as M1 and M2 phenotypes is probably an oversimplification since a wider range of phenotypes exist [67,68].",
-      "Pro-inflammatory macrophages produce inflammatory mediators, such as nitric oxide, ROS, IL-1, IL-6 and TNF-\u03b1, as well as MMP-2 and MMP-9."
-    ],
-    "summary": "This snippet states that classical CD14+ CD16- monocytes preferentially differentiate into M1 (pro-inflammatory) macrophages in the skin, and these produce inflammatory mediators like nitric oxide, ROS, IL-1, IL-6, TNF-\u03b1, MMP-2, and MMP-9. However, the M1/M2 classification is an oversimplification.",
-    "categories": [
-      "function",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:235213150",
-    "source_title": "Immunology of Acute and Chronic Wound Healing",
-    "source_authors": "K. Raziyeva et al.",
-    "source_year": null,
-    "snippet": "It is well established that skin macrophages play a crucial role in acute wound healing [14,65]. Using several animal skin wound models, it was demonstrated that the depletion of macrophages led to delayed or impaired healing. It resulted in reduced ECM reformation, decreased angiogenesis and delayed wound closure [14]. Skin has two subsets of macrophages, namely, resident macrophages, which develop from the yolk sac and reside in the dermis, as well as bone marrow-derived circulating monocytes [14,66]. Skin-resident macrophages express CD64 + , MERTK + and CCR2 \u2212/low surface markers and are capable of self-renewal. When an acute injury occurs, dermal macrophages are one of the first cells to respond. Specifically, they recognize DAMPs and secrete chemokines that recruit neutrophils and monocyte-derived macrophages from the blood [14]. Notably, the response of resident macrophages to skin injuries is only short-term, and later stages of inflammation are propagated by monocytes recruited from the circulation. Blood monocytes that are attracted to wounds are classified into classical or pro-inflammatory CD14 + CD16 \u2212 monocytes and anti-inflammatory CD14 low/\u2212 CD16 + monocytes. The former type is more capable of differentiating into M1 macrophages, which propagate inflammation, while the latter subset of monocytes gives rise mostly to reparative M2 macrophages (Figure 1). Nevertheless, as with other tissues, an attempt to describe skin macrophages as M1 and M2 phenotypes is probably an oversimplification since a wider range of phenotypes exist [67,68]. \n\nIn their recent review dedicated to the role of macrophages in wound healing, Krzyszczyk and colleagues classified wound macrophages into three types based on their functions during healing, namely, pro-inflammatory, pro-wound healing and pro-resolving macrophages [14]. Pro-inflammatory macrophages produce inflammatory mediators, such as nitric oxide, ROS, IL-1, IL-6 and TNF-\u03b1, as well as MMP-2 and MMP-9."
-  },
-  {
-    "snippet_index": 17,
-    "quotes": [
-      "At least three functional subsets of macrophages contribute to the different stages of wound healing and tissue repair: (i) proinflammatory (traditionally referred to as \"M1\")",
-      "Pro-inflammatory macrophages infiltrate the injury site shortly after the wound is formed to phagocytose and kill bacteria, remove cell debris, toxic metabolites and dead cells (93). They produce inflammatory mediators, such as nitric oxide, ROS, IL-1, IL-6 and TNF-a and secrete MMP-2 and MMP-9 to break down the ECM (94,95). Macrophage-derived cytokines IL-12/23 and IFN-g recruit T cells and natural killer cells to amplify the proinflammatory response (16)."
-    ],
-    "summary": "This snippet describes M1 (Macro_1) macrophages as the pro-inflammatory subset active in early wound healing. They are involved in phagocytosis, produce inflammatory mediators (NO, ROS, IL-1, IL-6, TNF-a), MMP-2, MMP-9, and cytokines that recruit T and NK cells.",
-    "categories": [
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:259302777",
-    "source_title": "Skin immunity in wound healing and cancer",
-    "source_authors": "Arnolda Jakovija et al.",
-    "source_year": null,
-    "snippet": "Skin has two distinct macrophage populations: tissue resident, which derive from the extraembryonic yolk sack, and monocytederived, which originate from the bone marrow-derived monocytes recruited to the skin (86). Tissue resident macrophages monitor the skin microenvironment for signals that indicate cell stress, tissue injury or infection (87, 88). After acute injury they recognize DAMPs and release hydrogen peroxide (89), recruiting neutrophils and monocytes from the blood to further amplify the inflammatory response (90). Tissue resident macrophages are particularly important for the immediate response to injury, while the long-term response is dependent on the bone marrow-derived monocytes which differentiate into macrophages in situ (54). \n\nAt least three functional subsets of macrophages contribute to the different stages of wound healing and tissue repair: (i) proinflammatory (traditionally referred to as \"M1\"), (ii) tissue repair or pro-wound healing, and (iii) anti-inflammatory or pro-resolving macrophages (91,92). Subsets (ii) and (iii) are collectively referred to as \"M2\" macrophages. Pro-inflammatory macrophages infiltrate the injury site shortly after the wound is formed to phagocytose and kill bacteria, remove cell debris, toxic metabolites and dead cells (93). They produce inflammatory mediators, such as nitric oxide, ROS, IL-1, IL-6 and TNF-a and secrete MMP-2 and MMP-9 to break down the ECM (94,95). Macrophage-derived cytokines IL-12/23 and IFN-g recruit T cells and natural killer cells to amplify the proinflammatory response (16). Pro-wound healing macrophages then release elevated levels of PDGF, insulin-like growth factor 1 (IGF-1), VEGF and TGF-b1 to promote cellular growth and proliferation (96). The function of pro-resolving macrophages is to restore homeostasis, minimize fibrosis via apoptosis of myofibroblasts, and to suppress further T cell proliferation (94)."
-  },
-  {
-    "snippet_index": 29,
-    "quotes": [
-      "the CD11b lo F480 hi CX3CR1 hi population (population P2) expresses high CX3CR1 and F4/80 levels and lack Gr-1 and resemble phenotypically YS macrophages (Fig. 2, A and B), as well as LC precursors found in E17.5 embryos (Fig. 5 A).",
-      "They also presented a similar macrophage-like morphology (Fig. 2 C, Fig. 5 B, and Fig. 7 D)."
-    ],
-    "summary": "Macro_1 is phenotypically defined as CD11b low, F4/80 high, and CX3CR1 high, lacking Gr-1, and has a macrophage-like morphology. These characteristics align Macro_1 with yolk sac macrophages and Langerhans cell precursors.",
-    "categories": [
-      "markers",
-      "morphology",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:10280599",
-    "source_title": "Adult Langerhans cells derive predominantly from embryonic fetal liver monocytes with a minor contribution of yolk sac\u2013derived macrophages",
-    "source_authors": "G. Hoeffel et al.",
-    "source_year": null,
-    "snippet": "CR1 int population (population P1) likely corresponds to fetal liver-derived monocytes recruited to the developing skin, as they resemble phenotypically the fetal liver and blood circulating monocytes (Fig. 7 B). Both populations express similar levels of CD11b, F4/80, CXCR1 and included similar proportions of Gr-1 + and Gr-1 \ue032 cells. They also presented a similar morphology as shown by cytospin and SEM imaging (Fig. 7 D). In contrast, the CD11b lo F480 hi CX3CR1 hi population (population P2) expresses high CX3CR1 and F4/80 levels and lack Gr-1 and resemble phenotypically YS macrophages (Fig. 2, A and B), as well as LC precursors found in E17.5 embryos (Fig. 5 A). They also presented a similar macrophage-like morphology (Fig. 2 C, Fig. 5 B, and Fig. 7 D). Finally, similarly to Runx1 + YS macrophages Figure 6. YS macrophage-derived LC precursors are partly replaced during late embryogenesis. (A) Percentage recombination among E13.5 YS macrophages (CD45 + CD11b + F4/ 80 + Gr-1 \ue032 ; gray bar); E13.5 and E16.5 microglial progenitors (CD45 + CD11b + F4/80 + Gr-1 \ue032 ) and adult microglia (CD45 lo CD11b + F4/80 + Gr-1 \ue032 ; black bars); and limb buds YS macrophages (E13.5), epidermal LC precursors (E16.5, newborn), and adult LCs (white bars) from Runx1 Cre/wt :Rosa26 R26R-eYFP embryos treated with 4'OHT at E7.25-E7.5. Error bars represent mean \u00b1 SEM of pooled data from 2 experiments (n = 6-15). **, P < 0.01; ***, P < 0.0001. (B) Percentage recombination within monocytes and epider"
-  },
-  {
-    "snippet_index": 34,
-    "quotes": [
-      "Besides monocyte (MO)-derived macrophages (MACs), self-renewing tissue-resident macrophages (trMACs) maintain the intracutaneous MAC pool in murine skin.",
-      "new MACs must have differentiated from resident intracutaneous progenitor cells in human skin.",
-      "CD68+MACs were often seen in direct cell-cell-contact with cells expressing both, the hematopoietic stem cell marker CD34 and SP receptor (neurokinin-1 receptor [NK1R]).",
-      "our study provides the first evidence that resident MAC progenitors, from which mature MACs can rapidly differentiate within the tissue, do exist in normal adult human skin.",
-      "That these NK1R+trMAC-progenitor cells quickly respond to a key stress-associated neuroinflammatory stimulus suggests that this may satisfy increased local MAC demand under conditions of wounding/stress."
-    ],
-    "summary": "This snippet describes that in human skin, tissue-resident macrophages (MACs, which may correspond to Macro_1) can be generated de novo from local progenitors, not just from circulating monocytes. It identifies CD68+ as a marker and implicates MACs in responses to stress and neurogenic inflammation.",
-    "categories": [
-      "development",
-      "location",
-      "markers",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:210881004",
-    "source_title": "Tissue-resident macrophages can be generated de novo in adult human skin from resident progenitor cells during substance P-mediated neurogenic inflammation ex vivo",
-    "source_authors": "J. Gherardini et al.",
-    "source_year": null,
-    "snippet": "Besides monocyte (MO)-derived macrophages (MACs), self-renewing tissue-resident macrophages (trMACs) maintain the intracutaneous MAC pool in murine skin. Here, we have asked whether the same phenomenon occurs in human skin using organ-cultured, full-thickness skin detached from blood circulation and bone marrow. Skin stimulation ex vivo with the neuropeptide substance P (SP), mimicking neurogenic skin inflammation, significantly increased the number of CD68+MACs in the papillary dermis without altering intracutaneous MAC proliferation or apoptosis. Since intraluminal CD14+MOs were undetectable in the non-perfused dermal vasculature, new MACs must have differentiated from resident intracutaneous progenitor cells in human skin. Interestingly, CD68+MACs were often seen in direct cell-cell-contact with cells expressing both, the hematopoietic stem cell marker CD34 and SP receptor (neurokinin-1 receptor [NK1R]). These cell-cell contacts and CD34+cell proliferation were up-regulated in SP-treated skin samples. Collectively, our study provides the first evidence that resident MAC progenitors, from which mature MACs can rapidly differentiate within the tissue, do exist in normal adult human skin. That these NK1R+trMAC-progenitor cells quickly respond to a key stress-associated neuroinflammatory stimulus suggests that this may satisfy increased local MAC demand under conditions of wounding/stress."
+    "summary": "Sim et al. (2022) confirm that MARCO+CD163+C1QB+C1QC+ macrophages (corresponding to Mac1/Macro_1) are consistently identified across human skin macrophage studies."
   }
 ]

@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Activated Langerhans Cell (LC_3)",
+  "working_definition": "An activated, pre-migratory Langerhans cell in adult human epidermis, characterised by high CD83 expression and low CCR7 expression. This population has upregulated DC maturation markers (CD83, CD40, CD86, LAMP3) and immunoregulatory molecules (CD274/PD-L1, IDO1) but has not yet fully committed to the CCR7-high migratory programme of LC4. LC3 represents the maturation intermediate between steady-state epidermal LCs (LC1/LC2) and the fully migratory LC4 state.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'Langerhans cell' in CL ontology",
+    "OLS4 searchClasses: 'activated Langerhans cell' in CL ontology",
+    "OLS4 searchClasses: 'mature Langerhans cell' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "Langerhans cell",
+    "cl_id": "CL:0000453",
+    "cl_definition": "A dendritic cell found in the epidermis that is capable of migrating to lymphoid tissue. Langerhans cells are characterized by expression of CD207 (langerin), CD1a, and EPCAM.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000453 'Langerhans cell' is the broadest appropriate match for the LC_3 activated LC subcluster. The cell retains LC identity (CD207, CD1a, EPCAM) and resides in or near the epidermis, satisfying CL:0000453. No CL term exists for an activated or mature-but-non-migratory LC substate. The activated/maturation state (CD83-hi, CCR7-lo) represents a transient functional substate on the LC differentiation trajectory rather than a stable distinct cell type.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000453 (Langerhans cell) as a broad match. No new CL term is strictly required, as the activated state is a transient intermediate on the LC maturation trajectory.",
+  "new_term_needed": false
+}

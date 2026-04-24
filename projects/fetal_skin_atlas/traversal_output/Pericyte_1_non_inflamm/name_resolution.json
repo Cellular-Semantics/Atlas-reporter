@@ -1,10 +1,8 @@
 {
   "label": "Pericyte_1_non_inflamm",
-  "resolved_names": [
-    "Pericyte_1_non_inflamm"
-  ],
+  "resolved_names": ["Pericyte", "non-inflammatory pericyte", "RGS5+ pericyte", "perivascular pericyte"],
   "scope": "adult",
-  "tissue_context": "skin",
-  "confidence": "medium",
-  "evidence": "The main text and provided content refer to mural cells in the dermis, including pericytes, but do not provide an explicit mapping of the label 'Pericyte_1_non_inflamm' to a more descriptive cell type name. The label matches the cluster nomenclature style typically used in cell atlas supplementary information, likely referring to a pericyte subtype. However, since no exact full name or cluster annotation table is included in the supplied extract, the cluster is returned as-is and flagged as possibly unresolved."
+  "tissue_context": "adult human skin",
+  "confidence": "high",
+  "evidence": "Reynolds et al. (2021) identify two pericyte populations in adult skin: Pericyte_1 (non-inflammatory) and Pericyte_2 (inflammatory). Literature on human skin pericytes (Ganier et al. 2024) identifies RGS5+ and TAGLN+ pericyte subpopulations. The non-inflammatory pericyte subtype (Pericyte_1) corresponds to the RGS5+ population with canonical perivascular identity and lower inflammatory gene expression. Pericytes are defined by co-expression of ACTA2, RGS5, and PDGFRB, distinguishing them from perivascular adventitial fibroblasts."
 }

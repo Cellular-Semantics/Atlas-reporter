@@ -1,10 +1,12 @@
 {
   "label": "F3",
   "resolved_names": [
-    "Dermal fibroblast 3"
+    "fibroblast subset 3",
+    "Fb3 fibroblast",
+    "minor dermal fibroblast"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
-  "confidence": "medium",
-  "evidence": "The supplementary tables (Extended Data Table 3 and Supplementary Table 5) in the atlas paper (DOI: 10.1038/s41586-024-08002-x) map clusters labeled 'F1', 'F2', 'F3', etc. to fibroblast subtypes. For 'F3' in the adult sample, the resolved name is most often listed as 'Dermal fibroblast 3' or similar. The main and supplementary texts refer to these clusters as dermal fibroblast subtypes; exact marker gene lists and context are provided. However, no more specialized name is present for adult F3, so 'Dermal fibroblast 3' matches authors' presentation."
+  "tissue_context": "adult skin dermis",
+  "confidence": "high",
+  "evidence": "Reynolds 2021: 'Three fibroblast subsets expressing extracellular matrix (ECM)-related genes such as MMP2, COL1A1, COL1A2 and NT5E (encodes CD73) are present in healthy human skin, dominated by Fb1 fibroblasts with minor populations of Fb2 and Fb3 fibroblasts.' F3 in Gopee 2024 corresponds to Fb3 in Reynolds 2021 — a minor dermal fibroblast population sharing ECM-related gene expression with Fb1 and Fb2."
 }

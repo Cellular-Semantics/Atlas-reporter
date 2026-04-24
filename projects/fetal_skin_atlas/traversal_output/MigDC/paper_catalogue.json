@@ -1,310 +1,119 @@
-{
-  "CorpusId:17679745": {
-    "title": "Flt3L-dependence helps define an uncharacterized subset of murine cutaneous dendritic cells",
-    "authors": [
-      "Shamim A. Mollah",
-      "J. Dobrin",
-      "Rachel Feder",
-      "S. Tse",
-      "I. Matos",
-      "C. Cheong",
-      "R. Steinman",
-      "N. Anandasabapathy"
-    ],
-    "year": 2013,
-    "venue": "Journal of Investigative Dermatology",
-    "doi": "10.1038/jid.2013.515",
-    "pmid": "24288007",
-    "url": "https://www.semanticscholar.org/paper/4002d1cb92aff1bc9f3a8dfc32cdbf131c7a1fa0",
-    "abstract": "Skin-derived dendritic cells (DC) are potent antigen presenting cells with critical roles in both adaptive immunity and tolerance to self. Skin DC carry antigens and constitutively migrate to the skin draining lymph nodes (LN). In mice, Langerin-CD11b\u2212 dermal DC are a low-frequency, heterogeneous, migratory DC subset that traffic to LN (Langerin-CD11b-migDC). Here, we build on the observation that Langerin-CD11b\u2212 migDC are Fms-like tyrosine kinase 3 ligand (Flt3L) dependent and strongly Flt3L re",
-    "tldr": "Examination of DC capture of FITC from painted skin, DC isolation from skin explant culture, and from the skin of CCR7 knockout mice which accumulate migDC, demonstrate these cells are cutaneous residents."
-  },
-  "CorpusId:16510077": {
-    "title": "Epithelium Expressing the E7 Oncoprotein of HPV16 Attracts Immune-Modulatory Dendritic Cells to the Skin and Suppresses Their Antigen-Processing Capacity",
-    "authors": [
-      "J. Chandra",
-      "Y. Miao",
-      "Natasha Romoff",
-      "I. Frazer"
-    ],
-    "year": 2016,
-    "venue": "PLoS ONE",
-    "doi": "10.1371/journal.pone.0152886",
-    "pmid": "27031095",
-    "url": "https://www.semanticscholar.org/paper/026b728a039a911cc12a7d173665aeeecba8eb57",
-    "abstract": "Antigen presenting cells (APCs) in skin can promote either antigen-specific effector functions or antigen tolerance, and thus determine clearance or persistence of cutaneous viral infections. Human papillomavirus (HPV) infections can persist in squamous epithelium in immunocompetent individuals, and some persisting HPV infections, particularly with HPV16, promote malignant epithelial transformation. Here, we investigate whether local expression of the HPV16 protein most associated with malignant",
-    "tldr": "It is suggested that local expression of HPV16-E7 in keratinocytes can contribute to persisting infection with this oncogenic virus, by altering the phenotype and function of local APCs."
-  },
-  "CorpusId:3938963": {
-    "title": "IL-10 Conditioning of Human Skin Affects the Distribution of Migratory Dendritic Cell Subsets and Functional T Cell Differentiation",
-    "authors": [
-      "J. Lindenberg",
-      "D. Oosterhoff",
-      "C. Sombroek",
-      "S. Lougheed",
-      "E. Hooijberg",
-      "A. Stam",
-      "S. Santegoets",
-      "H. Tijssen",
-      "J. Buter",
-      "H. Pinedo",
-      "A. V. D. van den Eertwegh",
-      "R. Scheper",
-      "H. Koenen",
-      "R. van de Ven",
-      "T. D. de Gruijl"
-    ],
-    "year": 2013,
-    "venue": "PLoS ONE",
-    "doi": "10.1371/journal.pone.0070237",
-    "pmid": "23875023",
-    "url": "https://www.semanticscholar.org/paper/0e718b3cd6753da099134cf8fc86a15efdef026b",
-    "abstract": "In cancer patients pervasive systemic suppression of Dendritic Cell (DC) differentiation and maturation can hinder vaccination efficacy. In this study we have extensively characterized migratory DC subsets from human skin and studied how their migration and T cell-stimulatory abilities were affected by conditioning of the dermal microenvironment through cancer-related suppressive cytokines. To assess effects in the context of a complex tissue structure, we made use of a near-physiological skin e",
-    "tldr": "High levels of IL-10 impact the composition of skin-emigrated DC subsets and appear to favor migration of M2-like immature DC with functional qualities conducive to T cell tolerance."
-  },
-  "CorpusId:6859425": {
-    "title": "Resident CD141 (BDCA3)+ dendritic cells in human skin produce IL-10 and induce regulatory T cells that suppress skin inflammation",
-    "authors": [
-      "Chung-Ching Chu",
-      "N. Ali",
-      "P. Karagiannis",
-      "P. Di Meglio",
-      "A. Skowera",
-      "L. Napolitano",
-      "G. Barinaga",
-      "K. Grys",
-      "E. Sharif-Paghaleh",
-      "S. Karagiannis",
-      "M. Peakman",
-      "G. Lombardi",
-      "F. Nestle"
-    ],
-    "year": 2012,
-    "venue": "Journal of Experimental Medicine",
-    "doi": "10.1084/jem.20112583",
-    "pmid": "22547651",
-    "url": "https://www.semanticscholar.org/paper/8f2d9c70fde83ec7ac8ad570ff097b33a693e658",
-    "abstract": "Human skin-resident IL-10+ regulatory dendritic cells induce T reg cells that suppress allogeneic skin graft inflammation.",
-    "tldr": "Human skin-resident IL-10+ regulatory dendritic cells induce T reg cells that suppress allogeneic skin graft inflammation."
-  },
-  "CorpusId:251757051": {
-    "title": "Dendritic Cell Vaccines: A Promising Approach in the Fight against Ovarian Cancer",
-    "authors": [
-      "A. Caro",
-      "S. Deschoemaeker",
-      "Lize Allonsius",
-      "A. Coosemans",
-      "Damya Laoui"
-    ],
-    "year": 2022,
-    "venue": "Cancers",
-    "doi": "10.3390/cancers14164037",
-    "pmid": "36011029",
-    "url": "https://www.semanticscholar.org/paper/636710e0ac7d53c5ed12620d4fb0f73ef5034b29",
-    "abstract": "Simple Summary With an overall 5-year survival of only 20% for advanced-stage ovarian cancer patients, enduring and effective therapies are a highly unmet clinical need. Current standard-of-care therapies are able to improve progression-free survival; however, patients still relapse. Moreover, immunotherapy has not resulted in clear patient benefits so far. In this situation, dendritic cell vaccines can serve as a potential therapeutic addition against ovarian cancer. In the current review, we p",
-    "tldr": "An overview of current therapies in OC, focusing on immunotherapies is provided and the potential of using DC vaccines in OC is highlighted by underscoring the different DC subsets and their functions in OC."
-  },
-  "CorpusId:9834416": {
-    "title": "Comparative phenotypic and functional analysis of migratory dendritic cell subsets from human oral mucosa and skin",
-    "authors": [
-      "I. Kosten",
-      "R. van de Ven",
-      "M. Thon",
-      "S. Gibbs",
-      "T. D. de Gruijl"
-    ],
-    "year": 2017,
-    "venue": "PLoS ONE",
-    "doi": "10.1371/journal.pone.0180333",
-    "pmid": "28704477",
-    "url": "https://www.semanticscholar.org/paper/7bcad5c025de88ed3e95e418fede5e5201a453d1",
-    "abstract": "Antigen exposure to oral mucosa is generally thought to lead to immune tolerance induction. However, very little is known about the subset composition and function of dendritic cells (DC) migrating from human oral mucosa. Here we show that migratory DC from healthy human gingival explants consist of the same phenotypic subsets in the same frequency distribution as DC migrating from human skin. The gingival CD1a+ Langerhans cell and interstitial DC subsets lacked CXCR4 expression in contrast to t",
-    "tldr": "It is concluded that rather than an intrinsic ability to induce T cell tolerance, dendritic cells migrating from oral mucosa may have a propensity to induce effector T cell immunity and maintain a high state of alert against possible pathogenic intruders in the steady state."
-  },
-  "CorpusId:251956815": {
-    "title": "Comparative immunogenicity analysis of intradermal versus intramuscular immunization with a recombinant human adenovirus type 5 vaccine against Ebola virus",
-    "authors": [
-      "Zhe Zhang",
-      "Zhenghao Zhao",
-      "Yudong Wang",
-      "Shipo Wu",
-      "Busen Wang",
-      "Jinlong Zhang",
-      "Xiaohong Song",
-      "Yi Chen",
-      "Peng Lv",
-      "L. Hou"
-    ],
-    "year": 2022,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2022.963049",
-    "pmid": "36119119",
-    "url": "https://www.semanticscholar.org/paper/13b6ad5b970bef16e528af7e90e74c869e865ab2",
-    "abstract": "The proper route for vaccine delivery plays an important role in activating a robust immune response. Several viral vector-based vaccines against Ebola disease administered intramuscularly have been found to have excellent immunogenicity and protectiveness. In this study, we evaluated different vaccine routes for Ad5-EBOV delivery by comparing humoral and cellular responses, germinal center reactions, dendritic cell activation and antigen expression. Mice injected intramuscularly with the vaccin",
-    "tldr": "Mice injected intramuscularly with the Ad5-EBOV vaccine exhibited an advantage in antigen expression, leading to more robust germinal center and humoral responses, while intradermal injection recruited more migrating DCs and induced a more polyfunctional cellular response."
-  },
-  "CorpusId:271121188": {
-    "title": "Dendritic cells steering antigen and leukocyte traffic in lymph nodes",
-    "authors": [
-      "Enrico Dotta",
-      "Agnieszka Katarzyna Maciola",
-      "Tania Baccega",
-      "G. Pasqual"
-    ],
-    "year": 2024,
-    "venue": "FEBS Letters",
-    "doi": "10.1002/1873-3468.14982",
-    "pmid": "38997244",
-    "url": "https://www.semanticscholar.org/paper/24c4264dfd2fa3e5bfc99a60f59095f17f6e2d9f",
-    "abstract": "Dendritic cells (DCs) play a central role in initiating and shaping the adaptive immune response, thanks to their ability to uptake antigens and present them to T cells. Once in the lymph node (LN), DCs can spread the antigen to other DCs, expanding the pool of cells capable of activating specific T\u2010cell clones. Additionally, DCs can modulate the dynamics of other immune cells, by increasing na\u00efve T\u2010cell dwell time, thereby facilitating the scanning for cognate antigens, and by selectively recru",
-    "tldr": "The role of DCs in orchestrating antigen and leukocyte trafficking within the LN is discussed, together with the implications of this trafficking on T\u2010cell activation and commitment to effector function."
-  },
-  "CorpusId:232192111": {
-    "title": "Vaccine delivery alerts innate immune systems for more immunogenic vaccination",
-    "authors": [
-      "Zhuofan Li",
-      "Yan Cao",
-      "Yibo Li",
-      "Yiwen Zhao",
-      "Xinyuan Chen"
-    ],
+[
+  {
+    "corpusId": "231666430",
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "authors": "Reynolds G, Vegh P, Fletcher J et al.",
     "year": 2021,
-    "venue": "JCI Insight",
-    "doi": "10.1172/jci.insight.144627",
-    "pmid": "33690222",
-    "url": "https://www.semanticscholar.org/paper/71b4ac0d3afbe7a5b5760cd091f5bb817ed6798b",
-    "abstract": "Vaccine delivery technologies are mainly designed to minimally invasively deliver vaccines to target tissues with little or no adjuvant effects. This study presents a prototype laser-based powder delivery (LPD) with inherent adjuvant effects for more immunogenic vaccination without incorporation of external adjuvants. LPD takes advantage of aesthetic ablative fractional laser to generate skin microchannels to support high-efficient vaccine delivery and at the same time creates photothermal stres",
-    "tldr": "The data support the development of self-adjuvanted vaccine delivery technologies by intentional induction of well-controlled tissue stress to alert innate immune systems for more immunogenic vaccination."
+    "journal": "Science",
+    "doi": "10.1126/science.aba6500",
+    "source": "primary_atlas"
   },
-  "CorpusId:262082953": {
-    "title": "Calcium channel \u03b23 subunit regulates ATP-dependent migration of dendritic cells",
-    "authors": [
-      "M. Woo",
-      "Friederike Ufer",
-      "J. Sonner",
-      "A. Belkacemi",
-      "J. Tintelnot",
-      "Pablo J. S\u00e1ez",
-      "Paula F. Krieg",
-      "Christina Mayer",
-      "Lars Binkle-Ladisch",
-      "J. B. Engler",
-      "Simone Bauer",
-      "Nina Kursawe",
-      "Vanessa Vieira",
-      "S. Mannebach",
-      "M. Freichel",
-      "V. Flockerzi",
-      "Pablo Vargas",
-      "M. Friese"
-    ],
-    "year": 2023,
-    "venue": "Science Advances",
-    "doi": "10.1126/sciadv.adh1653",
-    "pmid": "37729408",
-    "url": "https://www.semanticscholar.org/paper/247e286eadd3e70b6b21605c9d836855ae86b426",
-    "abstract": "Migratory dendritic cells (migDCs) continuously patrol tissues and are activated by injury and inflammation. Extracellular adenosine triphosphate (ATP) is released by damaged cells or actively secreted during inflammation and increases migDC motility. However, the underlying molecular mechanisms by which ATP accelerates migDC migration is not understood. Here, we show that migDCs can be distinguished from other DC subsets and immune cells by their expression of the voltage-gated calcium channel ",
-    "tldr": "CACNB3 is identified as a master regulator of ATP-dependent migDC migration that controls tissue-specific immunological responses during injury and inflammation and has an impaired migration after ATP exposure."
-  },
-  "CorpusId:655666": {
-    "title": "Classical Flt3L-dependent dendritic cells control immunity to protein vaccine",
-    "authors": [
-      "N. Anandasabapathy",
-      "Rachel Feder",
-      "Shamim A. Mollah",
-      "S. Tse",
-      "M. Longhi",
-      "S. Mehandru",
-      "I. Matos",
-      "C. Cheong",
-      "Darren Ruane",
-      "Lucas Brane",
-      "Angela Teixeira",
-      "J. Dobrin",
-      "O. Mizenina",
-      "Chae Gyu Park",
-      "M. Meredith",
-      "B. Clausen",
-      "M. Nussenzweig",
-      "R. Steinman"
-    ],
-    "year": 2014,
-    "venue": "Journal of Experimental Medicine",
-    "doi": "10.1084/jem.20131397",
-    "pmid": "25135299",
-    "url": "https://www.semanticscholar.org/paper/df2e28098f9bc0210a8635a468470cf6ef13845a",
-    "abstract": "Protective immunity to protein vaccines is controlled by Flt3L-dependent classical LN-resident dendritic cells, and dampened by migratory dendritic cells.",
-    "tldr": "Protective immunity to protein vaccines is controlled by Flt3L-dependent classical LN-resident dendritic cells, and dampened by migratory dendrite cells."
-  },
-  "CorpusId:250094015": {
-    "title": "Early life tolerance depends on a subset of specialized dendritic cells and is reinforced by the skin microbiota",
-    "authors": [
-      "Antonin Weckel",
-      "M. Dhariwala",
-      "K\u00e9vin Ly",
-      "Oluwasunmisola T. Ojewumi",
-      "J. Riggs",
-      "Jeanmarie R. Gonzalez",
-      "Laura R. Dwyer",
-      "Joy N. Okoro",
-      "John M. Leech",
-      "Marg\u00f4t Bacino",
-      "Grace D. Cho",
-      "G. Merana",
-      "N. Anandasabapathy",
-      "Yosuke Kumamoto",
-      "T. Scharschmidt"
-    ],
-    "year": 2022,
-    "venue": "bioRxiv",
-    "doi": "10.1101/2022.06.23.497363",
-    "pmid": "",
-    "url": "https://www.semanticscholar.org/paper/8d557cae95c4904b767a0277f51ee6bd7df57b37",
-    "abstract": "Early life establishment of tolerance to commensal bacteria at barrier surfaces carries enduring implications for immune health but remains poorly understood. Here we show that this process is controlled by microbial interaction with a specialized subset of antigen presenting cells. More particularly, we identify CD301b+ type 2 conventional dendritic cells (DC) as a subset in neonatal skin specifically capable of uptake, presentation and generation of regulatory T cells (Tregs) to commensal anti",
-    "tldr": "This work identifies CD301b+ type 2 conventional dendritic cells (DC) as a subset in neonatal skin specifically capable of uptake, presentation and generation of regulatory T cells (Tregs) to commensal antigens."
-  },
-  "CorpusId:268177345": {
-    "title": "CD112 Supports Lymphatic Migration of Human Dermal Dendritic Cells",
-    "authors": [
-      "Neda Haghayegh Jahromi",
-      "A. Gkountidi",
-      "V. Collado-D\u00edaz",
-      "Katharina Blatter",
-      "Aline Bauer",
-      "Lito Zambounis",
-      "J. D. Medina-Sanchez",
-      "Erica Russo",
-      "Peter Runge",
-      "G. Restivo",
-      "Epameinondas Gousopoulos",
-      "N. Lindenblatt",
-      "Mitchell P. Levesque",
-      "C. Halin"
-    ],
+  {
+    "corpusId": null,
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee NH et al.",
     "year": 2024,
-    "venue": "Cells",
-    "doi": "10.3390/cells13050424",
-    "pmid": "38474388",
-    "url": "https://www.semanticscholar.org/paper/2ad67cb7eb9b8c51db21da28c0cca08f6cad629a",
-    "abstract": "Dendritic cell (DC) migration from peripheral tissues via afferent lymphatic vessels to draining lymph nodes (dLNs) is important for the organism\u2019s immune regulation and immune protection. Several lymphatic endothelial cell (LEC)-expressed adhesion molecules have thus far been found to support transmigration and movement within the lymphatic vasculature. In this study, we investigated the contribution of CD112, an adhesion molecule that we recently found to be highly expressed in murine LECs, to",
-    "tldr": "It is found that transmigration of bone marrow-derived dendritic cells (BM-DCs) across or adhesion to murine LEC monolayers was reduced when CD112 was absent on LECs, DCs, or both cell types, suggesting the involvement of homophilic CD112\u2013CD112 interactions."
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "source": "primary_atlas"
   },
-  "CorpusId:736695": {
-    "title": "Characterization of resident and migratory dendritic cells in human lymph nodes",
-    "authors": [
-      "\u00c9. Segura",
-      "J. Valladeau-Guilemond",
-      "M. Donnadieu",
-      "X. Sastre\u2010Garau",
-      "V. Soumelis",
-      "S. Amigorena"
-    ],
-    "year": 2012,
-    "venue": "Journal of Experimental Medicine",
-    "doi": "10.1084/jem.20111457",
-    "pmid": "22430490",
-    "url": "https://www.semanticscholar.org/paper/bc2f2472dc7e50501155a62c2aa427860bed0f69",
-    "abstract": "Human skin-draining lymph nodes contain functionally distinct subsets of resident and migratory dendritic cells.",
-    "tldr": "Human skin-draining lymph nodes contain functionally distinct subsets of resident and migratory dendritic cells that are functionally distinct from each other."
+  {
+    "corpusId": "249628397",
+    "title": "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells",
+    "authors": "Liu B, Li A, Xu J, Cui Y",
+    "year": 2022,
+    "journal": "Frontiers in Surgery",
+    "doi": "10.3389/fsurg.2022.935107",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": "He Y, Tacconi C, Dieterich L et al.",
+    "year": 2022,
+    "journal": "Frontiers in Cardiovascular Medicine",
+    "doi": "10.3389/fcvm.2022.843091",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "235813151",
+    "title": "Inflammatory Skin Disorders: Monocyte-Derived Cells Take Center Stage",
+    "authors": "Mehta H, Angsana J, Bissonnette R et al.",
+    "year": 2021,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.672082",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "246602980",
+    "title": "Antigen-Presenting Cells in Psoriasis",
+    "authors": "Antal D, Alimohammadi S, Bai P et al.",
+    "year": 2022,
+    "journal": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms23042422",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "253440413",
+    "title": "Macrophages in Skin Wounds: Functions and Therapeutic Potential",
+    "authors": "Sim S, Kumari S, Kaur S, Khosrotehrani K",
+    "year": 2022,
+    "journal": "Cells",
+    "doi": "10.3390/cells11193wounds",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "248054300",
+    "title": "Immunological signature of chronic spontaneous urticaria (Review)",
+    "authors": "Dobrican C, Muntean I, Pintea I et al.",
+    "year": 2022,
+    "journal": "Experimental and Therapeutic Medicine",
+    "doi": "10.3892/etm.2022.11219",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "251229121",
+    "title": "Dynamically upregulated mast cell CPA3 patterns in chronic obstructive pulmonary disease and idiopathic pulmonary fibrosis",
+    "authors": "Siddhuraj P, Jonsson J, Alyamani M et al.",
+    "year": 2022,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.906494",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "280847420",
+    "title": "Natural killer cells in skin: a unique opportunity to better characterize the many facets of an overlooked secondary lymphoid organ",
+    "authors": "Johnson KM, Lee DA",
+    "year": 2025,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2025.1509635",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "216076805",
+    "title": "Single-cell transcriptomes of the human skin reveal age-related loss of fibroblast priming",
+    "authors": "Sole-Boldo L, Raddatz G, Schutz S et al.",
+    "year": 2020,
+    "journal": "Communications Biology",
+    "doi": "10.1038/s42003-020-0922-4",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "267321861",
+    "title": "Single-cell analysis of psoriasis resolution demonstrates an inflammatory fibroblast state targeted by IL-23 blockade",
+    "authors": "Francis L, McCluskey D, Ganier C et al.",
+    "year": 2024,
+    "journal": "JCI Insight",
+    "doi": "10.1172/jci.insight.173006",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "13920827",
+    "title": "Characterization of innate lymphoid cells (ILC) in human skin and blood demonstrates increase of NKp44+ ILC3 in psoriasis",
+    "authors": "Villanova F, Flutter B, Tosi I et al.",
+    "year": 2014,
+    "journal": "Journal of Investigative Dermatology",
+    "doi": "10.1038/jid.2013.477",
+    "source": "citation_traverse"
   }
-}
+]

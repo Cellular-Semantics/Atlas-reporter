@@ -1,11 +1,8 @@
 {
   "label": "Treg",
-  "resolved_names": [
-    "Regulatory T cell",
-    "Treg"
-  ],
+  "resolved_names": ["Regulatory T cell", "CD4+ Foxp3+ Treg", "dermal Treg", "Treg_adult"],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult human skin",
   "confidence": "high",
-  "evidence": "The paper references T cells (CD4+ and CD8+) and specifically uses 'Treg' and 'regulatory T cell' in main and supplementary figures (e.g., Extended Data Fig. 11 lists 'Treg cells' as a subset, and 'Treg' is a standard label used for regulatory T cells in scRNA-seq atlases). The mapping between cluster labels and names in the supplementary tables corresponds 'Treg' directly to 'Regulatory T cell', consistent with usage in the field and this work."
+  "evidence": "Reynolds et al. (2021) define: 'regulatory (Treg) expressing FOXP3, TIGIT, CTLA4'. The figure legend states: 'Treg = regulatory T cell'. Dermal Tregs show high mRNA and protein expression of CD62L (SELL), the circulating central memory T cell marker. This is the adult Treg population; Treg_fetal.md already exists and must not be overwritten."
 }

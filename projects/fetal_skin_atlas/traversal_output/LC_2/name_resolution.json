@@ -1,10 +1,11 @@
 {
   "label": "LC_2",
   "resolved_names": [
-    "Langerhans cells"
+    "regulatory Langerhans cell",
+    "LC2 Langerhans cell"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult skin epidermis",
   "confidence": "high",
-  "evidence": "In Supplementary Table 5 ('Cell type annotation markers and references'), the cluster label 'LC_2' in the adult skin dataset is explicitly mapped to 'Langerhans cells'. The same mapping is used in Extended Data Figure 2 and Supplementary Figure 3, where 'LC_1' and 'LC_2' represent Langerhans cell clusters. The main text and figure legends consistently annotate 'LC' as 'Langerhans cell'."
+  "evidence": "Liu et al. 2021: LC2 = CD207lo, CD1c, CD1b; regulatory/immunomodulatory LCs. Cao et al. (CorpusId:267000980): LC2 may act as regulatory LCs with immunoregulatory role under inflammatory conditions"
 }

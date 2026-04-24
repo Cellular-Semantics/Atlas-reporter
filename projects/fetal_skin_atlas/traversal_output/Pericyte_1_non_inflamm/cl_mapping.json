@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Pericyte_1_non_inflamm",
+  "working_definition": "Non-inflammatory pericyte in adult human skin. Identified in Reynolds et al. (2021) as one of two pericyte subtypes. Characterised by RGS5, PDGFRB, and ACTA2 expression with low expression of inflammatory mediators. Corresponds to the RGS5+ pericyte subpopulation described in human skin spatial transcriptomics studies.",
+  "searches_performed": [
+    "pericyte",
+    "non-inflammatory pericyte skin",
+    "RGS5 pericyte"
+  ],
+  "best_match": {
+    "cl_term": "pericyte",
+    "cl_id": "CL:0000669",
+    "cl_definition": "A smooth muscle-like cell associated with the outer surface of microvascular endothelial cells. Pericytes are embedded in the basement membrane and regulate capillary tone and blood flow.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000669 'pericyte' is the best available CL term. The non-inflammatory pericyte subtype (Pericyte_1) is a specific pericyte state characterised by RGS5 expression and low inflammatory gene signature; there is no CL term that captures this level of specificity. The parent pericyte term is used as a broad match.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000669 (pericyte) as a broad match. A new CL term for non-inflammatory (RGS5+) pericyte subtype would improve specificity if warranted by atlas curation standards.",
+  "new_term_needed": true
+}

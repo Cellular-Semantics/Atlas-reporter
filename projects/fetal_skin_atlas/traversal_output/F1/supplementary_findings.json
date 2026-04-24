@@ -1,58 +1,15 @@
 {
   "markers": [
-    {
-      "gene": "COL13A1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S2"
-    },
-    {
-      "gene": "OGN",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S2"
-    },
-    {
-      "gene": "COL18A1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S2"
-    },
-    {
-      "gene": "C7",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S2"
-    },
-    {
-      "gene": "MMP3",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S2"
-    }
+    {"gene": "MMP2", "evidence_type": "ECM-related gene, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "COL1A1", "evidence_type": "ECM-related gene, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "COL1A2", "evidence_type": "ECM-related gene, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "NT5E", "evidence_type": "encodes CD73, fibroblast marker, scRNA-seq", "source_table": "Reynolds 2021 Table S1"}
   ],
   "other_findings": [
-    {
-      "finding": "Located primarily in the upper papillary dermis in adult skin.",
-      "category": "spatial location",
-      "source_table": "Supplementary Table S7"
-    },
-    {
-      "finding": "Associated with extracellular matrix organization.",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table S9"
-    }
+    {"finding": "Fb1 (F1) is the dominant fibroblast population in healthy human adult skin", "category": "abundance", "source_table": "Reynolds 2021 main text"},
+    {"finding": "All three fibroblast subsets express ECM-related genes including MMP2, COL1A1, COL1A2 and NT5E", "category": "shared markers", "source_table": "Reynolds 2021 Fig 5B"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "F1 cluster markers: COL13A1, OGN, COL18A1, C7, and MMP3",
-      "source_file": "Supplementary Table S2",
-      "context": "Top differentially expressed genes for each adult skin fibroblast subtype."
-    },
-    {
-      "quote": "F1 cells are predominantly located in the superficial papillary dermis",
-      "source_file": "Supplementary Table S7",
-      "context": "Spatial localization of fibroblast subpopulations in adult skin was assessed by in situ hybridization."
-    },
-    {
-      "quote": "Gene ontology enrichment for F1 papillary fibroblasts includes extracellular matrix organization.",
-      "source_file": "Supplementary Table S9",
-      "context": "Top GO terms for each fibroblast cluster identified by differentially expressed genes."
-    }
+    {"quote": "Three fibroblast subsets expressing extracellular matrix (ECM)-related genes such as MMP2, COL1A1, COL1A2 and NT5E (encodes CD73) are present in healthy human skin, dominated by Fb1 fibroblasts with minor populations of Fb2 and Fb3 fibroblasts", "source_file": "Reynolds 2021 main text", "context": "Fb1/F1 identity and abundance"}
   ]
 }

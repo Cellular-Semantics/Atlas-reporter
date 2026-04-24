@@ -1,5 +1,58 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {
+      "gene": "CCR7",
+      "evidence_type": "high expression; migratory marker",
+      "source_table": "Reynolds 2021 / Vine et al. 2022"
+    },
+    {
+      "gene": "LAMP3",
+      "evidence_type": "maturation/migration marker",
+      "source_table": "Reynolds 2021"
+    },
+    {
+      "gene": "CD83",
+      "evidence_type": "maturation marker",
+      "source_table": "Reynolds 2021"
+    },
+    {
+      "gene": "FSCN1",
+      "evidence_type": "migration marker (actin bundling)",
+      "source_table": "Reynolds 2021"
+    },
+    {
+      "gene": "PLGRKT",
+      "evidence_type": "migration marker",
+      "source_table": "Reynolds 2021"
+    },
+    {
+      "gene": "CD274 (PD-L1)",
+      "evidence_type": "immunoregulatory",
+      "source_table": "Reynolds 2021"
+    },
+    {
+      "gene": "IDO1",
+      "evidence_type": "immunoregulatory",
+      "source_table": "Reynolds 2021"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "LC4 shares migratory DC gene signature with moDC3 and Mig. DC at PAGA convergence point",
+      "category": "differentiation",
+      "source_table": "Reynolds 2021 Fig 3C"
+    },
+    {
+      "finding": "LC4 loses LC subset-specific identity genes upon acquiring migratory signature",
+      "category": "differentiation",
+      "source_table": "Reynolds 2021"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "The clusters at the convergence of these branches (moDC3, LC4 and migratory DC (Mig. DC)) express transcripts associated with DC maturation (CD83, CCR7, LAMP3, CD40, CD86), immunoregulation (CD274, IDO1, CD200, PDCD1LG2, SOCS1) and migration (FSCN1, PLGRKT, TRAF1, BCL2A1, CFLAR and REL)",
+      "source_file": "Reynolds et al. 2021 Science",
+      "context": "LC4 migratory signature"
+    }
+  ]
 }

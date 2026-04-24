@@ -1,48 +1,15 @@
 {
   "markers": [
-    {
-      "gene": "C7",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 2"
-    },
-    {
-      "gene": "MFAP4",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 2"
-    },
-    {
-      "gene": "FMO2",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 2"
-    }
+    {"gene": "MMP2", "evidence_type": "ECM-related gene shared across fibroblast subsets, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "COL1A1", "evidence_type": "ECM-related gene shared across fibroblast subsets, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "COL1A2", "evidence_type": "ECM-related gene shared across fibroblast subsets, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "NT5E", "evidence_type": "encodes CD73, fibroblast marker, scRNA-seq", "source_table": "Reynolds 2021 Table S1"}
   ],
   "other_findings": [
-    {
-      "finding": "Dermal fibroblast 3 was predominantly located in the reticular dermis (see Supplementary Fig. 5b).",
-      "category": "spatial location",
-      "source_table": "Supplementary Figure 5b"
-    },
-    {
-      "finding": "F3 is functionally annotated with extracellular matrix organization.",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table 4"
-    }
+    {"finding": "Fb3 (F3) is a minor fibroblast population in healthy human adult skin alongside Fb1 (F1) and Fb2 (F2)", "category": "abundance", "source_table": "Reynolds 2021 main text"},
+    {"finding": "Dermal fibroblast heterogeneity encompassing structural and immunomodulatory subtypes has been previously reported at single cell level", "category": "literature context", "source_table": "Reynolds 2021 main text"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "Representative marker genes for F3 included C7, MFAP4, and FMO2 (see Supplementary Table 2).",
-      "source_file": "Supplementary Table 2",
-      "context": "Cluster marker gene list (top DE genes)"
-    },
-    {
-      "quote": "Dermal fibroblast 3 was predominantly located in the reticular dermis (see Supplementary Fig. 5b).",
-      "source_file": "Supplementary Figure 5b",
-      "context": "Spatial mapping of cell types"
-    },
-    {
-      "quote": "GO term enrichment for F3: extracellular matrix organization",
-      "source_file": "Supplementary Table 4",
-      "context": "Functional annotation/GO analysis"
-    }
+    {"quote": "Dermal fibroblast heterogeneity encompassing structural and immunomodulatory subtypes has been previously reported at single cell level", "source_file": "Reynolds 2021 main text", "context": "Fibroblast heterogeneity context"}
   ]
 }

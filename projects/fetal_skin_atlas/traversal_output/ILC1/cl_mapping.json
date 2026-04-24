@@ -1,0 +1,9 @@
+{
+  "label": "ILC1",
+  "cl_term": "ILC1, human",
+  "cl_id": "CL:0001077",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_0001077",
+  "match_type": "broad",
+  "match_rationale": "ILC1 in Gopee 2024 corresponds to ILC1/3 in Reynolds 2021, reflecting ILC1-ILC3 plasticity. CL:0001077 (ILC1, human) is the best match for the ILC1 component, though the ILC1/3 combined annotation also includes ILC3 features. Classified as broad to reflect this mixed identity.",
+  "new_term_needed": false
+}

@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "Vascular Endothelial Cell 1 (VE1)",
+  "working_definition": "A homeostatic, non-venular blood vascular endothelial cell of the adult dermis, expressing pan-endothelial markers PECAM1 (CD31), EMCN, CDH5, and VWF, but lacking the VE3-defining post-capillary venular markers ACKR1 and SNCG and the inflammatory mediators IL6, IL33, SELE, and ICAM1. VE1 is the most abundant vascular endothelial state in healthy adult dermis and is significantly depleted in psoriasis, suggesting it represents the predominant homeostatic arteriolar or capillary endothelial compartment.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'blood vessel endothelial cell' in CL ontology",
+    "OLS4 searchClasses: 'vascular endothelial cell' in CL ontology",
+    "OLS4 searchClasses: 'capillary endothelial cell' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "blood vessel endothelial cell",
+    "cl_id": "CL:0000071",
+    "cl_definition": "An endothelial cell that lines the blood vasculature.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000071 'blood vessel endothelial cell' is the broadest appropriate match for VE1. The cell expresses canonical blood vascular endothelial markers (PECAM1, EMCN, CDH5, VWF) and forms part of the dermal blood vasculature, satisfying the CL:0000071 definition. No CL term exists for the specific VE1 substate (homeostatic non-venular dermal endothelium). More specific CL terms (arteriolar or capillary endothelial cell) exist but cannot be confirmed without direct gene expression data distinguishing VE1 from VE2 at the arterial-venous axis.",
+  "other_candidates": [
+    {
+      "cl_term": "endothelial cell of artery",
+      "cl_id": "CL:1000413",
+      "reason_rejected": "Possible but not confirmed — VE1 may correspond to arteriolar endothelium but lacks direct evidence from the Reynolds et al. (2021) text; VE1/VE2 distinction is by exclusion of VE3 only."
+    }
+  ],
+  "recommendation": "Use CL:0000071 (blood vessel endothelial cell) as a broad match. A new CL term or more specific mapping may be possible once VE1- and VE2-specific marker genes are characterised in the supplementary data.",
+  "new_term_needed": false
+}

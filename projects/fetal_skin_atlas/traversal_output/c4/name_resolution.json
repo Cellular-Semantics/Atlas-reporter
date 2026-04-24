@@ -1,8 +1,11 @@
 {
   "label": "c4",
-  "resolved_names": [],
+  "resolved_names": [
+    "differentiated keratinocyte",
+    "differentiated KC"
+  ],
   "scope": "adult",
-  "tissue_context": "skin",
-  "confidence": "low",
-  "evidence": "The label 'c4' does not appear in the provided main text excerpts. The main text focuses on prenatal skin and organoid models and mentions analyses of adult skin for comparison but does not include a mapping for 'c4'. No supplementary material or mapping tables are available from the information provided to resolve the 'c4' label as a named adult skin cell type. Additional supplementary data or figure references are likely required for resolution. The label is flagged as unresolved."
+  "tissue_context": "adult skin epidermis",
+  "confidence": "high",
+  "evidence": "Fig. 4D legend: undifferentiated KC (clusters 1, 5), proliferating (cluster 2), differentiated KC (clusters 3, 4, 6, 7), differentiated KC* (cluster 8)"
 }

@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "DC1",
+  "working_definition": "Type 1 conventional dendritic cell (cDC1) in adult human skin. Identified in Reynolds et al. (2021) as the DC1 population within the mononuclear phagocyte landscape. Defined by CLEC9A, XCR1, and CD141 (BDCA-3) expression. Specialised for cross-presentation of antigens on MHC class I to CD8+ T cells. Adult population; fetal DC1 is documented separately.",
+  "searches_performed": [
+    "conventional dendritic cell type 1",
+    "cDC1 CLEC9A XCR1",
+    "CD141 dendritic cell"
+  ],
+  "best_match": {
+    "cl_term": "conventional dendritic cell type 1",
+    "cl_id": "CL:0002399",
+    "cl_definition": "A conventional dendritic cell that expresses XCR1 and CLEC9A and is specialised for cross-presentation of antigens on MHC class I. In human, also known as BDCA-3+/CD141+ cDC.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002399 'conventional dendritic cell type 1' directly corresponds to the DC1 population in Reynolds et al. (2021), which is confirmed by enrichment of XCR1+DC gene signatures and expression of CLEC9A, XCR1, and CD141.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002399 (conventional dendritic cell type 1) as an exact match for the DC1 cell type.",
+  "new_term_needed": false
+}

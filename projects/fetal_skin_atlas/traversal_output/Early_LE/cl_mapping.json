@@ -1,0 +1,36 @@
+{
+  "cell_type_label": "Early LE (early lymphatic endothelial cells in prenatal skin)",
+  "working_definition": "Early LE is an early or progenitor lymphatic endothelial cell state found in the developing dermis of prenatal human skin (7–17 PCW), representing the initial phase of lymphangiogenesis. It shares canonical lymphatic endothelial markers (PROX1, LYVE1, PDPN, FLT4/VEGFR3) with mature lymphatic endothelium but is distinguished by an earlier, less differentiated transcriptional state. These cells localise to developing lymphatic vessels within neurovascular microenvironments of the fetal dermis and interact with macrophages to support vascular development.",
+  "searches_performed": [
+    "early lymphatic endothelial cell",
+    "lymphatic endothelial cell",
+    "dermis lymphatic vessel endothelial cell",
+    "lymphatic endothelial progenitor cell",
+    "PROX1-positive endothelial cell"
+  ],
+  "best_match": {
+    "cl_term": "dermis lymphatic vessel endothelial cell",
+    "cl_id": "CL:2000011",
+    "cl_definition": "Any endothelial cell of lymphatic vessel that is part of a dermis.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:2000011 (dermis lymphatic vessel endothelial cell) is defined as any endothelial cell of a lymphatic vessel that is part of a dermis. This matches the tissue compartment (dermis) and cell lineage (lymphatic endothelium) of Early LE precisely. However, the CL term covers all maturation states of dermis lymphatic endothelium, whereas Early LE is specifically an early/progenitor state distinguished transcriptionally from the more mature LE population within the same atlas. The distinguishing feature — the early/progenitor cell-state identity — is not captured by CL:2000011, making this a broad match rather than an exact match. No CL term for an early, progenitor, or immature dermis lymphatic endothelial cell was found in any search. The parent term CL:0002138 (endothelial cell of lymphatic vessel) is valid but less specific, lacking the dermis localisation that is an established feature of these cells.",
+  "other_candidates": [
+    {
+      "cl_term": "endothelial cell of lymphatic vessel",
+      "cl_id": "CL:0002138",
+      "cl_definition": "A endothelial cell of a lymphatic vessel. The border of the oak leaf-shaped endothelial cell of initial lymphatics are joined by specialized buttons. The discontinuous feature of buttons distinguishes them from zippers in collecting lymphatics, but both types of junctions are composed of proteins typical of adherens junctions and tight junctions found in the endothelium of blood vessels. Buttons seal the sides of flaps of the oak leaf-shaped endothelial cell, leaving open the tips of flaps as routes for fluid entry without disassembly and reformation of intercellular junctions.",
+      "reason_rejected": "This is the parent class of CL:2000011 and is too broad — it covers lymphatic endothelial cells in all tissues, not specifically the dermis. CL:2000011 is more specific and a better broad match for Early LE."
+    },
+    {
+      "cl_term": "dermis microvascular lymphatic vessel endothelial cell",
+      "cl_id": "CL:2000041",
+      "cl_definition": "Any dermis lymphatic vessel endothelial cell that is part of a microvascular endothelium.",
+      "reason_rejected": "This term is a subtype of CL:2000011 restricted to microvascular endothelium. Early LE is not specifically characterised as microvascular, and this additional restriction makes CL:2000041 a narrower and less appropriate match than CL:2000011."
+    }
+  ],
+  "recommendation": "Use CL:2000011 (dermis lymphatic vessel endothelial cell) as a broad match. A new CL term is needed to represent an early or progenitor lymphatic endothelial cell state in the dermis, capturing the transcriptionally immature, early-lymphangiogenesis identity of Early LE as distinct from the mature dermis lymphatic vessel endothelial cell population.",
+  "new_term_needed": true
+}

@@ -1,38 +1,38 @@
 {
   "markers": [
     {
-      "gene": "ACKR1",
-      "evidence_type": "differentially expressed gene (DEG) for VE2 cluster",
-      "source_table": "Supplementary Table 4"
+      "gene": "PECAM1 (CD31)",
+      "evidence_type": "pan-vascular endothelial marker",
+      "source_table": "Reynolds 2021"
     },
     {
-      "gene": "PLVAP",
-      "evidence_type": "differentially expressed gene (DEG) for VE2 cluster",
-      "source_table": "Supplementary Table 4"
+      "gene": "EMCN (endomucin)",
+      "evidence_type": "venous/capillary endothelial marker",
+      "source_table": "Reynolds 2021"
     },
     {
       "gene": "VWF",
-      "evidence_type": "differentially expressed gene (DEG) for VE2 cluster",
-      "source_table": "Supplementary Table 4"
+      "evidence_type": "endothelial marker",
+      "source_table": "Liu B et al. 2022"
     }
   ],
   "other_findings": [
     {
-      "finding": "VE2 are characterized as capillary endothelial cells.",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table 2"
+      "finding": "VE2 is depleted in psoriasis non-lesional skin",
+      "category": "disease",
+      "source_table": "Reynolds 2021 Fig 5D"
+    },
+    {
+      "finding": "VE2 does not express the ACKR1/SNCG post-capillary venular signature of VE3",
+      "category": "identity",
+      "source_table": "Reynolds 2021"
     }
   ],
   "evidence_quotes": [
     {
-      "quote": "VE2 cluster is marked by expression of ACKR1, PLVAP, and VWF.",
-      "source_file": "Supplementary Table 4",
-      "context": "Markers for each vascular endothelial (VE) cluster"
-    },
-    {
-      "quote": "VE2: capillary endothelial",
-      "source_file": "Supplementary Table 2",
-      "context": "Cluster annotation for VE populations"
+      "quote": "Three distinct states of PECAM1(CD31)-expressing vascular endothelial cells (VE1, VE2, VE3) are present in adult dermis",
+      "source_file": "Reynolds et al. 2021 Science",
+      "context": "VE cluster definition"
     }
   ]
 }

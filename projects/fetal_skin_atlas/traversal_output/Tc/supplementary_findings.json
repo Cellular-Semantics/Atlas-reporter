@@ -1,63 +1,27 @@
 {
   "markers": [
-    {
-      "gene": "CD8A",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table S2"
-    },
-    {
-      "gene": "CD8B",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table S2"
-    },
-    {
-      "gene": "GZMA",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S3"
-    },
-    {
-      "gene": "GZMK",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S3"
-    },
-    {
-      "gene": "PRF1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S3"
-    }
+    {"gene": "CD8A", "evidence_type": "defining marker", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "CD8B", "evidence_type": "defining marker", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "IL13", "evidence_type": "disease marker (AD)", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "IL22", "evidence_type": "disease marker (AD)", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "IFNG", "evidence_type": "effector cytokine", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "IL17A", "evidence_type": "disease marker (psoriasis)", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "IL17F", "evidence_type": "disease marker (psoriasis)", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "IL26", "evidence_type": "disease marker (psoriasis)", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "AREG", "evidence_type": "disease-associated (AD)", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "RGS1", "evidence_type": "skin tissue residency", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "GZMA", "evidence_type": "cytotoxic effector", "source_table": "literature"},
+    {"gene": "GZMB", "evidence_type": "cytotoxic effector", "source_table": "literature"}
   ],
   "other_findings": [
-    {
-      "finding": "Tc cells are enriched in the stroma and periphery of adult tissue sections.",
-      "category": "spatial location",
-      "source_table": "Supplementary Table S5"
-    },
-    {
-      "finding": "Tc (CD8+ T cell) population is characterized by cytotoxic functions and IFN-gamma secretion.",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table S2"
-    }
+    {"finding": "Epidermal Tc cells upregulate RGS1, PPP1R15A (skin tissue residency), CD44, ID2 (effector memory), TNFRSF18 (T cell activation), CD96, TSC22D3, DUSP4 (T cell inhibition)", "category": "location/function", "source_table": "Reynolds et al. (2021) main text"},
+    {"finding": "Disease-associated subsets: Tc IL13/IL22 dominant in AD dermis; Tc17/Th17 dominant in psoriasis epidermis", "category": "disease", "source_table": "Reynolds et al. (2021) main text"},
+    {"finding": "Disease-associated T cells show higher clonality and lowest diversity compared to other T cell subsets", "category": "clonality", "source_table": "Reynolds et al. (2021) main text"},
+    {"finding": "Clonal T cells show higher expression of CD63, TNFRSF18, JAML (co-stimulation) and EVL, LAT, LCK, JAK1 (TCR signaling)", "category": "function", "source_table": "Reynolds et al. (2021) main text"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "Cytotoxic T cells (Tc, also known as CD8+ T cells) were defined by high expression of CD8A and CD8B.",
-      "source_file": "Supplementary Table S2",
-      "context": "Cluster annotations and marker gene table"
-    },
-    {
-      "quote": "Top differentially expressed genes for Tc cells include GZMA, GZMK, and PRF1.",
-      "source_file": "Supplementary Table S3",
-      "context": "DE gene summary for immune cell clusters"
-    },
-    {
-      "quote": "Tc cells are enriched in the stroma and periphery of adult tissue sections.",
-      "source_file": "Supplementary Table S5",
-      "context": "Spatial enrichment of immune cell subtypes"
-    },
-    {
-      "quote": "Tc (CD8+ T cell) population is characterized by cytotoxic functions and IFN-gamma secretion.",
-      "source_file": "Supplementary Table S2",
-      "context": "Functional annotation of annotated clusters"
-    }
+    {"quote": "cytotoxic (Tc) expressing CD8A/B", "source_file": "Reynolds et al. (2021) PDF full text", "context": "T cell subtype definition"},
+    {"quote": "cytotoxic T cells expressing IL13, IL22 and IFNG (Tc IL13/IL22)", "source_file": "Reynolds et al. (2021) PDF full text", "context": "AD disease-associated cytotoxic T cells"},
+    {"quote": "T cells expressing IL17A, IL17F, IFNG, IL22 and IL26 (Tc17/Th17) are found in both lesional and non-lesional skin", "source_file": "Reynolds et al. (2021) PDF full text", "context": "Psoriasis disease-associated T cells"}
   ]
 }

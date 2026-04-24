@@ -1,0 +1,47 @@
+{
+  "cell_type_label": "Companion layer cells (skin organoid)",
+  "working_definition": "Companion layer (CL) cells are specialised epithelial keratinocytes that form a single-cell layer positioned between the outer root sheath (ORS) and inner root sheath (IRS) of the hair follicle, characterised by expression of KRT75 and KRT6. The cells are elongated and vertically oriented, forming a mechanically distinct slippage plane via desmosomes and gap junctions with Henle's layer cells that allows the growing hair shaft to move relative to the stationary ORS. In the atlas, CL cells arise along the ORS/CL differentiation trajectory from POSTN+ basal progenitors and are faithfully recapitulated in the hair-bearing skin organoid (SkO) model as well as in prenatal skin from 14 PCW.",
+  "searches_performed": [
+    "companion layer cell",
+    "hair follicle companion layer",
+    "outer root sheath cell",
+    "inner root sheath cell",
+    "hair follicle cell",
+    "hair follicle keratinocyte",
+    "hair follicular keratinocyte",
+    "Henle layer cell hair",
+    "slippage plane hair",
+    "KRT75 keratinocyte hair follicle"
+  ],
+  "best_match": {
+    "cl_term": "outer root sheath cell",
+    "cl_id": "CL:0002561",
+    "cl_definition": "An epithelial cell that is part of the outer root sheath.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "low"
+  },
+  "justification": "No CL term for 'companion layer cell' exists. The companion layer is sometimes described as the innermost sub-layer of the ORS, making CL:0002561 'outer root sheath cell' the closest specific anatomical parent; a companion layer cell IS-A outer root sheath cell under this interpretation. However, the CL definition ('an epithelial cell that is part of the outer root sheath') is purely positional and does not capture the defining features of the companion layer: the KRT75/KRT6 marker profile, elongated morphology, slippage-plane function between ORS and IRS, or differentiation trajectory from POSTN+ basal cells. CL:2000092 'hair follicular keratinocyte' and CL:0002559 'hair follicle cell' are valid but even more general parents. The broad match to CL:0002561 is assigned with low confidence because the companion layer's distinct identity — as a morphologically, molecularly, and functionally specialised sub-layer separate from cuboidal ORS cells — is not captured by this term.",
+  "other_candidates": [
+    {
+      "cl_term": "hair follicular keratinocyte",
+      "cl_id": "CL:2000092",
+      "cl_definition": "Any keratinocyte that is part of a hair follicle.",
+      "reason_rejected": "Too general; covers all keratinocytes of the hair follicle without any specificity for the companion layer compartment, markers, or function. CL:0002561 is a more informative broad match."
+    },
+    {
+      "cl_term": "hair follicle cell",
+      "cl_id": "CL:0002559",
+      "cl_definition": "An animal cell that is part of a hair follicle.",
+      "reason_rejected": "The broadest possible hair follicle parent class; provides no information about epithelial identity, lineage, or compartment. Less informative than CL:0002561 as a broad match."
+    },
+    {
+      "cl_term": "inner root sheath cell",
+      "cl_id": "CL:0002560",
+      "cl_definition": "An epithelial cell that resides in the inner root sheath of the hair follicle.",
+      "reason_rejected": "The companion layer is distinct from and lies external to the IRS; companion layer cells are not IRS cells."
+    }
+  ],
+  "recommendation": "A new CL term 'companion layer cell of hair follicle' (or 'hair follicle companion layer cell') is needed. It should be defined as: an epithelial keratinocyte forming the single-cell companion layer between the outer root sheath and inner root sheath of the hair follicle, characterised by expression of KRT75 and KRT6, elongated vertically oriented morphology, and a structural role providing a slippage plane that facilitates movement of the growing hair shaft. It should be placed as a subtype of CL:0002561 (outer root sheath cell) or as a sibling to it as a direct child of CL:0002559 (hair follicle cell). In the interim, use CL:0002561 'outer root sheath cell' as a broad match.",
+  "new_term_needed": true
+}

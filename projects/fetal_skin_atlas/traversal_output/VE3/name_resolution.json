@@ -1,10 +1,12 @@
 {
   "label": "VE3",
   "resolved_names": [
-    "Vascular endothelial 3"
+    "vascular endothelial cell VE3",
+    "post-capillary venular endothelial cell",
+    "SNCG+ ACKR1+ inflammatory venular endothelium"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "In the supplementary materials (Extended Data Fig. 3a, Supplementary Table 6) and main text, clusters labeled as 'VE1', 'VE2', 'VE3', etc. refer to distinct populations of vascular endothelial cells; 'VE3' is listed as 'vascular endothelial 3' in mapping tables and UMAP plots in the context of adult and prenatal human skin atlas."
+  "evidence": "Reynolds 2021 main text: 'Three distinct states of PECAM1(CD31)-expressing vascular endothelial cells (VE1, VE2, VE3) are present in adult dermis. VE3, which forms ~2% of endothelial cells, is characterized by gamma synuclein (SNCG) and high expression of the venular capillary marker ACKR1.' VE3 co-expresses IL6, IL33, SELE and ICAM1, similar to lymph node HEVs. Identified by whole-mount immunostaining as SNCG+PECAM1+ distended vascular structures in superficial dermis suggesting post-capillary venular identity."
 }

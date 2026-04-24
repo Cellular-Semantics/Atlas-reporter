@@ -1,5 +1,16 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {"gene": "KLRB1", "evidence_type": "encodes CD161, innate lymphocyte marker, scRNA-seq", "source_table": "Reynolds 2021 main text"},
+    {"gene": "IL7R", "evidence_type": "ILC marker, differentiates ILC from NK, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "RORC", "evidence_type": "ILC3 transcription factor, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "TBXT", "evidence_type": "ILC1 transcription factor T-bet", "source_table": "literature"}
+  ],
+  "other_findings": [
+    {"finding": "ILC1/3 reflects known ILC1-ILC3 plasticity in adult human skin", "category": "biological note", "source_table": "Reynolds 2021 main text"},
+    {"finding": "Adult skin ILC3 correlates with fetal skin ILCs that express IL7R+, RORC+ and KIT+", "category": "developmental alignment", "source_table": "Reynolds 2021 Fig 2B"},
+    {"finding": "ILC1 are identified as CD161(KLRB1)+ CD3(CD3D/CD3G)- to distinguish them from T cells", "category": "phenotype", "source_table": "Reynolds 2021 main text"}
+  ],
+  "evidence_quotes": [
+    {"quote": "Plasticity within ILC1 and ILC3 is also recognized, as reflected in our annotation of ILC1/3", "source_file": "Reynolds 2021 main text", "context": "ILC1/ILC1_3 plasticity"}
+  ]
 }

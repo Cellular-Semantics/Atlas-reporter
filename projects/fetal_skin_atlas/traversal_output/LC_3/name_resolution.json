@@ -1,10 +1,11 @@
 {
   "label": "LC_3",
   "resolved_names": [
-    "Langerhans cell 3"
+    "activated Langerhans cell",
+    "LC3 Langerhans cell"
   ],
   "scope": "adult",
-  "tissue_context": "skin (prenatal and adult human skin)",
+  "tissue_context": "adult skin epidermis",
   "confidence": "high",
-  "evidence": "The supplementary tables (e.g. Extended Data Table 2, Supplementary Table 5) in this atlas use the label 'LC_3' to denote the third identified cluster of Langerhans cells ('LC'). These are annotated as 'Langerhans cell 3' in cluster-to-name tables and figure legends, consistently referring to epidermal Langerhans cells. The main text and figures specify the tissue as skin (in both prenatal and adult context where indicated by scope parameter)."
+  "evidence": "Vine et al. 2021 (CorpusId:246902520): LC3 = activated LC defined by high CD83 and low CCR7 expression. Liu et al. 2021: LC3 = combination of LC1 and LC2 in activated state"
 }

@@ -1,0 +1,46 @@
+{
+  "cell_type_label": "Iron-recycling macrophage",
+  "working_definition": "Iron-recycling macrophages are a prenatal tissue-resident macrophage subset identified across multiple fetal organs and in fetal skin (7–17 post-conception weeks), defined by functional specialisation in erythrophagocytosis and iron recycling mediated by the iron exporter ferroportin (SLC40A1). In prenatal skin they co-localise with endothelial cells in neurovascular microenvironments and specifically promote endothelial cell chemotaxis and angiogenesis. Their closest postnatal counterparts are erythrophagocytic macrophages of the spleen and liver (red pulp macrophages and Kupffer cells), but the atlas subset is a distinct prenatal population not restricted to those organs.",
+  "searches_performed": [
+    "iron-recycling macrophage",
+    "erythrophagocytic macrophage",
+    "erythrophagocytosis macrophage",
+    "erythrocyte phagocytosis macrophage",
+    "ferroportin macrophage iron",
+    "red pulp macrophage",
+    "Kupffer cell",
+    "skin macrophage",
+    "tissue-resident macrophage"
+  ],
+  "best_match": {
+    "cl_term": "tissue-resident macrophage",
+    "cl_id": "CL:0000864",
+    "cl_definition": "A macrophage constitutively resident in a particular tissue under non-inflammatory conditions, and capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "No CL term for 'iron-recycling macrophage' or any direct functional equivalent (iron-recycling, ferroportin-expressing, prenatal erythrophagocytic macrophage) was found. The closest conceptual matches — CL:0000874 (splenic red pulp macrophage) and CL:0000091 (Kupffer cell) — both describe macrophages that clear senescent erythrocytes and handle iron, but each is restricted to a specific adult tissue (spleen or liver), whereas the atlas cell type is a cross-organ prenatal subset found in fetal skin and other developing organs. CL:0000864 (tissue-resident macrophage) is the best valid parent: the atlas cell type is constitutively resident in fetal tissues and is phagocytic, satisfying the CL definition, but the CL term does not capture the defining functional specialisation in iron recycling via SLC40A1/ferroportin, the prenatal developmental stage, or the specific skin/neurovascular niche. The match is therefore broad rather than exact.",
+  "other_candidates": [
+    {
+      "cl_term": "splenic red pulp macrophage",
+      "cl_id": "CL:0000874",
+      "cl_definition": "A splenic macrophage found in the red-pulp of the spleen, and involved in immune responses to blood-borne pathogens and in the clearance of senescent erythrocytes. Markers include F4/80-positive, CD68-positive, MR-positive, Dectin2-positive, macrosialin-positive, and sialoadhesin-low.",
+      "reason_rejected": "Functionally overlapping (clears senescent erythrocytes) and is the closest postnatal counterpart cited in the atlas, but it is defined as a spleen-resident macrophage with specific spleen markers. The atlas iron-recycling macrophage is a cross-organ prenatal subset found in fetal skin, not the spleen, making this a different biological entity."
+    },
+    {
+      "cl_term": "Kupffer cell",
+      "cl_id": "CL:0000091",
+      "cl_definition": "A tissue-resident macrophage of the reticuloendothelial system found on the luminal surface of the hepatic sinusoids involved in erythrocyte clearance. Markers include F4/80+, CD11b-low, CD68-positive, sialoadhesin-positive, CD163/SRCR-positive. Irregular, with long processes including lamellipodia extending into the sinusoid lumen, have flattened nucleus with cytoplasm containing characteristic invaginations of the plasma membrane (vermiform bodies); lie within the sinusoid lumen attached to the endothelial surface; derived from the bone marrow, form a major part of the body's mononuclear phagocyte system.",
+      "reason_rejected": "Kupffer cells perform erythrocyte clearance and iron recycling in the liver and are cited as a postnatal counterpart to iron-recycling macrophages, but the CL term is defined by liver-sinusoid location and hepatic markers. The atlas cell type is a distinct prenatal macrophage found in skin and other fetal organs, not liver-restricted."
+    },
+    {
+      "cl_term": "macrophage",
+      "cl_id": "CL:0000235",
+      "cl_definition": "A mononuclear phagocyte present in variety of tissues, typically differentiated from monocytes, capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+      "reason_rejected": "A valid but overly broad parent. CL:0000864 (tissue-resident macrophage) is a more informative and specific broad match, as the atlas cell type is explicitly a tissue-resident (not circulating) macrophage population."
+    }
+  ],
+  "recommendation": "A new CL term is needed for the iron-recycling macrophage. The proposed term should be defined as a tissue-resident macrophage specialised in erythrophagocytosis and iron recycling via ferroportin (SLC40A1), enriched in prenatal/fetal tissues across multiple organs, with closest postnatal counterparts being splenic red pulp macrophages and Kupffer cells. It should be placed as a subclass of CL:0000864 (tissue-resident macrophage). In the interim, use CL:0000864 (tissue-resident macrophage) as a broad match (skos:broadMatch).",
+  "new_term_needed": true
+}

@@ -1,0 +1,41 @@
+{
+  "cell_type_label": "Venules (venule endothelial cells in prenatal skin)",
+  "working_definition": "Venule endothelial cells are the fully differentiated endpoint of the venular trajectory in the dermal microvasculature of prenatal human skin (7–17 PCW), downstream of postcapillary venules. They are defined by expression of PLVAP as the characteristic venular marker, along with VWF and, in adult skin equivalents, ACKR1, ICAM1, SELP, EGR2, and LRG1. Their maturation depends on macrophage-derived signals (including VEGFA), and they participate in reciprocal ligand-receptor crosstalk (e.g. CXCL8-ACKR1, CCL8-ACKR1) supporting angiogenesis and chemotaxis.",
+  "searches_performed": [
+    "endothelial cell of venule",
+    "venule endothelial cell",
+    "PLVAP positive endothelial cell",
+    "dermal endothelial cell"
+  ],
+  "best_match": {
+    "cl_term": "endothelial cell of venule",
+    "cl_id": "CL:1000414",
+    "cl_definition": "An endothelial cell that is part of the venule.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:1000414 is defined as 'an endothelial cell that is part of the venule.' The atlas Venules population is precisely this — endothelial cells that line venular segments of the dermal microvasculature, at the collecting venular end of the blood vessel hierarchy. The CL definition is tissue-agnostic, which is correct ontological practice; the fetal skin context is a location qualifier on the organism, not a different cell identity. The PLVAP-positive, ACKR1/ICAM1/SELP-expressing venular endothelial cells in prenatal skin are instances of 'endothelial cells that are part of a venule,' satisfying the CL definition exactly. No distinguishing features in the atlas description conflict with the CL term. The more specific child CL:0008040 (squamous endothelial cell of venule) was considered but not chosen because squamous morphology is not confirmed as a defining feature of this atlas cluster. The broader CL:0011030 (dermal microvascular endothelial cell) covers both arteriolar and venular endothelial cells and is therefore too broad.",
+  "other_candidates": [
+    {
+      "cl_term": "squamous endothelial cell of venule",
+      "cl_id": "CL:0008040",
+      "cl_definition": "An endothelial cell of the venule that is squamous shaped. This is in contrast to the cubodial shape of high endothelial venule cells.",
+      "reason_rejected": "Adds a squamous morphology criterion that is not stated in the atlas report. Using this term would assert a specific cell shape that is not confirmed for this cluster, making it over-specific."
+    },
+    {
+      "cl_term": "endothelial cell of high endothelial venule",
+      "cl_id": "CL:0002652",
+      "cl_definition": "A venule endothelial cell that is cubodial, expresses leukocyte-specific receptors, and allows for passage of lymphocytes into bloodstream.",
+      "reason_rejected": "High endothelial venule cells are cuboidal and specialised for lymphocyte trafficking in lymphoid organs. The atlas Venules population is the standard squamous/collecting venular endothelium of skin, not an HEV cell type."
+    },
+    {
+      "cl_term": "dermal microvascular endothelial cell",
+      "cl_id": "CL:0011030",
+      "cl_definition": "Any microvascular endothelial cell that is part of the dermis.",
+      "reason_rejected": "This term encompasses all dermal microvascular endothelial cells (arteriolar and venular), making it a parent/broader class. The atlas specifically identifies the venular subset, so this term is too broad."
+    }
+  ],
+  "recommendation": "Use CL:1000414 (endothelial cell of venule) as an exact match. This term precisely captures the identity of venule endothelial cells in prenatal skin without over-specifying morphology or tissue context.",
+  "new_term_needed": false
+}

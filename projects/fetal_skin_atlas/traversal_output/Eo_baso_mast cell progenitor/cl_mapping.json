@@ -1,0 +1,50 @@
+{
+  "cell_type_label": "Eo/baso/mast cell progenitor (prenatal skin)",
+  "working_definition": "A multi-lineage myeloid progenitor cluster identified in fetal human skin (7-17 PCW) with transcriptional potential to give rise to eosinophils, basophils, and mast cells. It retains haematopoietic progenitor markers (CD34, CD117/KIT) and expresses GATA1/GATA2 and IL3RA (CD123), placing it at the granulocyte-biased fork of mast cell lineage differentiation, downstream of GMP. The cluster is found in the dermal immune compartment alongside committed mast cell and DC populations, indicating in situ granulopoiesis within developing fetal skin.",
+  "searches_performed": [
+    "eosinophil basophil mast cell progenitor",
+    "mast cell progenitor",
+    "basophil mast cell progenitor",
+    "granulocyte monocyte progenitor",
+    "eosinophil progenitor cell",
+    "granulocyte progenitor cell",
+    "CD34-positive KIT-positive myeloid progenitor"
+  ],
+  "best_match": {
+    "cl_term": "basophil mast progenitor cell",
+    "cl_id": "CL:0002028",
+    "cl_definition": "A cell type that can give rise to basophil and mast cells. This cell is CD34-positive, CD117-positive, CD125-positive, FceRIa-negative, and T1/ST2-negative, and expresses Gata-1, Gata-2, C/EBPa",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The CL:0002028 'basophil mast progenitor cell' definition describes a CD34-positive, CD117-positive progenitor expressing GATA-1 and GATA-2 that gives rise to both basophils and mast cells. The atlas cluster shares all these features — CD34, KIT/CD117, GATA1/GATA2 expression, FceRIa-negative status — and also gives rise to basophils and mast cells. However, the atlas cluster explicitly extends this to include eosinophil potential ('Eo/baso/mast'), making it a tri-lineage progenitor not captured by the CL definition, which is restricted to the basophil-mast axis. This additional eosinophil commitment is a distinguishing feature absent from CL:0002028, so the CL term is a valid parent (broad match) rather than an exact match. The GMP (CL:0000557) was considered but rejected as too broad: it is committed to granulocyte AND monocyte lineages, lacks GATA1/GATA2 expression, and sits upstream of the atlas cluster, which is already granulocyte-restricted. No CL term exists for a tri-lineage eosinophil-basophil-mast cell progenitor as a distinct entity.",
+  "other_candidates": [
+    {
+      "cl_term": "granulocyte monocyte progenitor cell",
+      "cl_id": "CL:0000557",
+      "cl_definition": "A hematopoietic progenitor cell that is committed to the granulocyte and monocyte lineages. These cells are CD123-positive, and do not express Gata1 or Gata2 but do express C/EBPa, and Pu.1.",
+      "reason_rejected": "Too broad: committed to both granulocyte and monocyte lineages and explicitly lacks GATA1/GATA2 expression. The atlas cluster is already granulocyte-restricted, expresses GATA1/GATA2, and has no monocyte potential. CL:0000557 sits upstream of the atlas cell type."
+    },
+    {
+      "cl_term": "mast cell progenitor",
+      "cl_id": "CL:0000831",
+      "cl_definition": "A progenitor cell of the mast cell lineage. Markers for this cell are FceRIa-low, CD117-positive, CD9-positive, T1/ST2-positive, SCA1-negative, and lineage-negative.",
+      "reason_rejected": "Too narrow: committed solely to the mast cell lineage (T1/ST2-positive distinguishes it from the earlier BMP stage) and does not capture basophil or eosinophil potential of the atlas cluster."
+    },
+    {
+      "cl_term": "eosinophil progenitor cell",
+      "cl_id": "CL:0000611",
+      "cl_definition": "These cells are CD34-positive, CD45RA-negative, CD71-negative, and lineage-negative (CD2, CD3 epsilon, CD4, CD5, CD8a, CD14, CD19, CD20, integrin alpha-M, NCAM-1, SCA-1, Ly6G, Ly76).",
+      "reason_rejected": "Committed solely to the eosinophil lineage; does not represent the basophil or mast cell potential that is central to the atlas cluster's identity."
+    },
+    {
+      "cl_term": "basophil progenitor cell",
+      "cl_id": "CL:0000613",
+      "cl_definition": "A progenitor cell committed to the basophil lineage. This cell lacks hematopoietic lineage markers (lin-negative) and is CD34-positive, T1/ST2-low, CD117-negative, and FceRIa-high. This cell also expresses Gata-1, Gata-2 and C/EBPa.",
+      "reason_rejected": "Committed solely to the basophil lineage (CD117-negative, FceRIa-high) and downstream of the atlas cluster, which is a multipotent progenitor with mast cell and eosinophil potential as well."
+    }
+  ],
+  "recommendation": "Use CL:0002028 'basophil mast progenitor cell' as a broad match (skos:broadMatch) pending creation of a new CL term. A new term is needed for a human eosinophil-basophil-mast cell progenitor: a CD34-positive, CD117-positive, GATA1/GATA2-positive, FceRIa-negative hematopoietic progenitor capable of giving rise to eosinophils, basophils, and mast cells, as identified in fetal human skin. This would be a child of CL:0002028 (or a sibling with broader granulocyte scope) and could be provisionally labelled 'eosinophil/basophil/mast cell progenitor'.",
+  "new_term_needed": true
+}

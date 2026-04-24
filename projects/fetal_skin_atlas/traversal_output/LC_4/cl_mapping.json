@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "Migratory Langerhans Cell (LC_4)",
+  "working_definition": "A migratory Langerhans cell in adult human skin that has acquired a CCR7-high, CXCR4-high programme enabling lymph-node-directed migration. This population co-expresses DC maturation markers (CD83, LAMP3, CD40, CD86), immunoregulatory molecules (CD274/PD-L1, IDO1, CD200, SOCS1), and migration-associated transcripts (FSCN1, PLGRKT, TRAF1, REL). It converges with the migratory DC (Mig. DC) and moDC3 clusters in PAGA analysis, sharing a common cross-lineage DC maturation programme.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'Langerhans cell' in CL ontology",
+    "OLS4 searchClasses: 'migratory Langerhans cell' in CL ontology",
+    "OLS4 searchClasses: 'migratory dendritic cell' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "Langerhans cell",
+    "cl_id": "CL:0000453",
+    "cl_definition": "A dendritic cell found in the epidermis that is capable of migrating to lymphoid tissue. Langerhans cells are characterized by expression of CD207 (langerin), CD1a, and EPCAM.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000453 'Langerhans cell' is the broadest appropriate match for the LC_4 migratory LC subcluster. The CL definition of Langerhans cell explicitly states that these cells are 'capable of migrating to lymphoid tissue', which is precisely the functional state of LC4. No CL term exists for a migratory LC substate specifically. The CCR7-high migratory programme of LC4 is consistent with the CL definition's reference to lymphoid tissue migration, making this the most appropriate available term.",
+  "other_candidates": [
+    {
+      "cl_term": "migratory dendritic cell",
+      "cl_id": "CL:0002399",
+      "reason_rejected": "While LC4 shares the migratory DC gene signature with Mig. DC and moDC3, LC4 retains LC lineage identity and is classified as LC in the Reynolds et al. (2021) atlas. CL:0000453 better preserves the LC identity."
+    }
+  ],
+  "recommendation": "Use CL:0000453 (Langerhans cell) as a broad match. The CL definition's explicit mention of migration to lymphoid tissue supports this choice for the migratory LC state.",
+  "new_term_needed": false
+}

@@ -1,63 +1,16 @@
 {
   "markers": [
-    {
-      "gene": "CD68",
-      "evidence_type": "known macrophage marker",
-      "source_table": "Supplementary Table S4"
-    },
-    {
-      "gene": "LYZ",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S4"
-    },
-    {
-      "gene": "C1QB",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S4"
-    },
-    {
-      "gene": "C1QA",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S4"
-    },
-    {
-      "gene": "C1QC",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S4"
-    },
-    {
-      "gene": "FCGR3A",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S4"
-    }
+    {"gene": "CD68", "evidence_type": "pan-macrophage marker, scRNA-seq", "source_table": "Reynolds 2021 main text"},
+    {"gene": "C1QB", "evidence_type": "complement transcript, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "C1QC", "evidence_type": "complement transcript, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "CD163", "evidence_type": "scavenger receptor, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "MARCO", "evidence_type": "scavenger receptor, scRNA-seq", "source_table": "Reynolds 2021 Table S1"}
   ],
   "other_findings": [
-    {
-      "finding": "Macro_1 cells are primarily localized in the lamina propria",
-      "category": "spatial information",
-      "source_table": "Supplementary Table S5"
-    },
-    {
-      "finding": "Macro_1 cluster exhibits enrichment for genes involved in complement activation",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table S6"
-    }
+    {"finding": "Mac1 is the major macrophage state in healthy adult dermis along with Mac2", "category": "abundance", "source_table": "Reynolds 2021 main text"},
+    {"finding": "Mac1 corresponds to complement-high, scavenger receptor-expressing resident macrophage", "category": "functional annotation", "source_table": "Reynolds 2021 Fig 3B"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "Macro_1 cluster is characterized by high expression of CD68, LYZ, C1QA, C1QB, and C1QC",
-      "source_file": "Supplementary Table S4",
-      "context": "Cluster marker gene table"
-    },
-    {
-      "quote": "macro_1 cells were mainly found in the lamina propria region",
-      "source_file": "Supplementary Table S5",
-      "context": "Table of spatial localization by cluster"
-    },
-    {
-      "quote": "Gene ontology analysis for Macro_1 cluster revealed enrichment in complement activation (GO:0006956)",
-      "source_file": "Supplementary Table S6",
-      "context": "Functional enrichment analysis"
-    }
+    {"quote": "Two macrophage cell states expressing CD68 are present in healthy skin. Mac1 shows higher expression of complement transcripts (C1QB, C1QC) and scavenger receptors (CD163, MARCO)", "source_file": "Reynolds 2021 main text", "context": "Mac1/Macro_1 identity"}
   ]
 }

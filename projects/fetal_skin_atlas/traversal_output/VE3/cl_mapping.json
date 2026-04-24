@@ -1,0 +1,9 @@
+{
+  "label": "VE3",
+  "cl_term": "endothelial cell of venule",
+  "cl_id": "CL:1000414",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_1000414",
+  "match_type": "broad",
+  "match_rationale": "VE3 is specifically the ACKR1+SNCG+ post-capillary venular endothelial cell subset. CL:1000414 (endothelial cell of venule) is the closest term; no exact CL term exists for this adult skin post-capillary venular inflammatory subset.",
+  "new_term_needed": false
+}

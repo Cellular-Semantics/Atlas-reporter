@@ -1,10 +1,12 @@
 {
   "label": "ILC2_3",
   "resolved_names": [
-    "ILC2"
+    "ILC2/ILC3 combined cluster",
+    "ILC2 and ILC1/3 combined",
+    "group 2 and group 3 innate lymphoid cells"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "The paper 10.1038/s41586-024-08002-x discusses group 2 innate lymphoid cells (ILC2) in the context of skin immune cell diversity, using the term 'ILC2' throughout the text and supplementary data. The suffix '_3' designates a fine-grained subcluster, but the resolved name per the authors is 'ILC2'. Mapping tables in the supplementary material confirm this usage."
+  "evidence": "Reynolds 2021 main text identifies ILC1/3 and ILC2 as distinct clusters among adult skin innate lymphocytes: 'ILC2 (IL7R, PTGDR2, GATA3) has the most distinct signature in our data and in existing literature.' ILC2_3 in Gopee 2024 is a combined cluster encompassing both ILC2 and ILC1/3 (ILC3-containing) populations. This labeling reflects the grouping of IL7R+ innate lymphoid populations outside the ILC1/NK lineage."
 }

@@ -1,43 +1,43 @@
 {
   "markers": [
     {
-      "gene": "CCL18",
-      "evidence_type": "DE analysis (cluster marker)",
-      "source_table": "Supplementary Table 2"
+      "gene": "KRT5",
+      "evidence_type": "scRNA-seq marker",
+      "source_table": "Reynolds Table S1 / Fig 4B"
     },
     {
-      "gene": "MARCO",
-      "evidence_type": "DE analysis (cluster marker)",
-      "source_table": "Supplementary Table 2"
+      "gene": "KRT14",
+      "evidence_type": "scRNA-seq marker",
+      "source_table": "Reynolds Table S1 / Fig 4B"
     },
     {
-      "gene": "RNASE2",
-      "evidence_type": "DE analysis (cluster marker)",
-      "source_table": "Supplementary Table 2"
+      "gene": "TP63",
+      "evidence_type": "stemness/undifferentiated marker",
+      "source_table": "Reynolds 2021 text"
+    },
+    {
+      "gene": "ITGA6",
+      "evidence_type": "hemidesmosome/basal marker",
+      "source_table": "Reynolds 2021 text"
     }
   ],
   "other_findings": [
     {
-      "finding": "Cluster c5 identified as enriched for CCL18+ macrophages in adult samples.",
-      "category": "Annotation",
-      "source_table": "Supplementary Table 2"
+      "finding": "Undifferentiated keratinocytes are abundant in the CD49fhi FACS gate",
+      "category": "FACS sorting",
+      "source_table": "Reynolds 2021 text / Fig 1C"
     },
     {
-      "finding": "c5 described as corresponding to a subset of alveolar macrophages.",
-      "category": "Functional annotation",
-      "source_table": "Supplementary Table 2"
+      "finding": "Undifferentiated KCs transcribe basal epidermal proteins (KRT5, KRT14)",
+      "category": "markers",
+      "source_table": "Reynolds 2021 text"
     }
   ],
   "evidence_quotes": [
     {
-      "quote": "Cluster c5 marker genes: CCL18, MARCO, RNASE2.",
-      "source_file": "Supplementary Table 2",
-      "context": "Cluster annotations and top marker genes for adult lung cell atlas"
-    },
-    {
-      "quote": "c5 (CCL18+ macrophages)",
-      "source_file": "Supplementary Table 2",
-      "context": "Cluster names and descriptions table"
+      "quote": "Undifferentiated keratinocytes transcribe basal epidermal proteins (KRT5, KRT14) and are abundant in the CD49fhi FACS gate",
+      "source_file": "Reynolds et al. 2021 Science",
+      "context": "Undifferentiated KC identity"
     }
   ]
 }

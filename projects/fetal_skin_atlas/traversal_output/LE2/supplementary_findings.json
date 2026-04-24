@@ -1,58 +1,43 @@
 {
   "markers": [
     {
-      "gene": "PROX1",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table 2"
-    },
-    {
-      "gene": "PDPN",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table 2"
-    },
-    {
       "gene": "LYVE1",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table 2"
+      "evidence_type": "lymphatic endothelial marker",
+      "source_table": "Reynolds 2021"
+    },
+    {
+      "gene": "PDPN (podoplanin)",
+      "evidence_type": "higher in LE2 vs LE1; collecting lymphatic vessel marker",
+      "source_table": "Reynolds 2021"
     },
     {
       "gene": "CCL21",
-      "evidence_type": "differentially expressed gene (DE analysis)",
-      "source_table": "Supplementary Table 5"
+      "evidence_type": "chemokine; lower in LE2 vs LE1",
+      "source_table": "Reynolds 2021"
     },
     {
-      "gene": "NRP2",
-      "evidence_type": "differentially expressed gene (DE analysis)",
-      "source_table": "Supplementary Table 5"
-    },
-    {
-      "gene": "GJA4",
-      "evidence_type": "differentially expressed gene (DE analysis)",
-      "source_table": "Supplementary Table 5"
+      "gene": "PROX1",
+      "evidence_type": "lymphatic transcription factor",
+      "source_table": "Liu B et al. 2022"
     }
   ],
   "other_findings": [
     {
-      "finding": "LE2 cells are enriched in the submucosal region of adult colon",
-      "category": "spatial location",
-      "source_table": "Supplementary Table 7"
+      "finding": "LE2 resembles PDPN+ collecting lymphatic vessels in human dermis",
+      "category": "identity/structure",
+      "source_table": "Reynolds 2021"
     }
   ],
   "evidence_quotes": [
     {
-      "quote": "Lymphatic Endothelial 2 (LE2): PROX1, PDPN, LYVE1",
-      "source_file": "Supplementary Table 2",
-      "context": "Marker genes used to annotate lymphatic endothelial cell subtypes."
+      "quote": "two sub-clusters of lymphatic endothelial cells defined by the differential expression of CCL21 and PDPN, which are higher in LE1 and LE2 respectively",
+      "source_file": "Reynolds et al. 2021 Science",
+      "context": "LE1 vs LE2 marker distinction"
     },
     {
-      "quote": "LE2 DE signature: CCL21, NRP2, GJA4",
-      "source_file": "Supplementary Table 5",
-      "context": "Top differentially expressed genes for lymphatic endothelial clusters."
-    },
-    {
-      "quote": "LE2 cells are enriched in the submucosal region of adult colon",
-      "source_file": "Supplementary Table 7",
-      "context": "Spatial enrichment analysis of endothelial cell subtypes across gut regions."
+      "quote": "the latter resembling PDPN+ collecting lymphatic vessels in human dermis",
+      "source_file": "Reynolds et al. 2021 Science",
+      "context": "LE2 identity as collecting lymphatic"
     }
   ]
 }

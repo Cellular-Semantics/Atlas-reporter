@@ -1,36 +1,40 @@
 [
   {
-    "snippet_index": 1,
+    "paper": "Reynolds et al. (2021)",
+    "doi": "10.1126/science.aba6500",
+    "corpusId": "231666430",
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
     "quotes": [
-      "If the Cdh5 + /Krt19 + cells were indeed skin EC vascular progenitors acting in the hair cycle, we reasoned they should eventually form mature vasculature. To test this, we employed lineage tracing using the Krt19-CreERT; tdTomato mice TM-induced at PD17 and stained the tissue sections at PD32 (anagen) and PD49 (telogen) with VE-cadherin, CD31 (Pecam1), CD34 and lymphatic capillary marker Lyve1 in n = 3 mice per stage. Excitingly, we did observe tdTomato + /VE-cadherin + tubular structures resembling vasculature at both hair cycle stages analyzed (Fig. 4g, h). However, to our surprise these structures never stained positive for mature EC markers CD31, CD34, and Lyve1 (Fig. 4i-k) in >45 tdTomato + tubular structures/staining/stage analyzed. Thus, our in vivo lineage tracing analysis did not support the computational prediction of Cdh5 + /Krt19 + cells as a potential EVP subpopulation that may contribute to mature vasculature formation in adult skin during the hair cycle. This left unresolved the identity and function of the Cdh5 + /Krt19 + population and of the tubular structures it formed.",
-      "Cdh5 + /Krt19 + cells encapsulate neurofilament-positive nerve bundles"
+      "Three distinct states of PECAM1(CD31)-expressing vascular endothelial cells (VE1,\nVE2, VE3) are present in adult dermis. VE3, which forms ~2% of endothelial cells, is\ncharacterized by gamma synuclein (SNCG) and high expression of the venular capillary\nmarker ACKR1",
+      "VE3 co-express inflammatory cytokines,\nchemokines and leukocyte adhesion molecules including IL6, IL33, SELE and ICAM1",
+      "we performed\nwhole-mount immunostaining of healthy dermis and identified SNCG+PECAM1+(VE3)\ndistended vascular structures in the superficial dermis",
+      "these cells\nmay be post-capillary venular cells regulating leukocyte adhesion and migration",
+      "we observed significant expansion of VE3 in AD and psoriasis lesional\nskin",
+      "Fetal skin VE cells aligned transcriptionally with adult skin\nVE3 and also express genes involved in leukocyte adhesion and trafficking",
+      "Endothelial cells in the healthy adult dermis comprise vascular endothelium (PECAM1,\nEMCN) and lymphatic endothelium (LYVE1, PDPN)"
     ],
-    "summary": "The snippet discusses Cdh5+/Krt19+ (VE-cadherin+ and Krt19+) cells, which were predicted to be vascular endothelial progenitors like VE3. However, lineage tracing showed these cells form tubular structures that do not express mature endothelial cell markers and instead encapsulate nerve bundles, suggesting a non-endothelial, possibly perineurial role.",
-    "categories": [
-      "function",
-      "markers",
-      "location",
-      "morphology"
-    ],
-    "source_corpus_id": "CorpusId:261703763",
-    "source_title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
-    "source_authors": "Gopal Chovatiya et al.",
-    "source_year": null,
-    "snippet": "Red fonts indicate downregulated categories. j Cartoon summarizing cellular and functional dynamic changes in endothelial populations while they transit from telogen to anagen stage in vivo. If the Cdh5 + /Krt19 + cells were indeed skin EC vascular progenitors acting in the hair cycle, we reasoned they should eventually form mature vasculature. To test this, we employed lineage tracing using the Krt19-CreERT; tdTomato mice TM-induced at PD17 and stained the tissue sections at PD32 (anagen) and PD49 (telogen) with VE-cadherin, CD31 (Pecam1), CD34 and lymphatic capillary marker Lyve1 in n = 3 mice per stage. Excitingly, we did observe tdTomato + /VE-cadherin + tubular structures resembling vasculature at both hair cycle stages analyzed (Fig. 4g, h). However, to our surprise these structures never stained positive for mature EC markers CD31, CD34, and Lyve1 (Fig. 4i-k) in >45 tdTomato + tubular structures/staining/stage analyzed. Thus, our in vivo lineage tracing analysis did not support the computational prediction of Cdh5 + /Krt19 + cells as a potential EVP subpopulation that may contribute to mature vasculature formation in adult skin during the hair cycle. This left unresolved the identity and function of the Cdh5 + /Krt19 + population and of the tubular structures it formed. \n\nCdh5 + /Krt19 + cells encapsulate neurofilament-positive nerve bundles Recently, scRNA-seq of cells isolated from sciatic nerves were profiled and a Krt19 + population was reported as a putative perineurial population 37,38 , although in vivo validation was lacking. Perineurial cells are a specialized non-EC type that encases thick nerve bundles, contributing to the nerve basement membrane and to nerve structural integrity 39 ."
+    "summary": "Reynolds et al. (2021) identify three PECAM1+ vascular endothelial states in adult dermis. VE3 is the minor state (~2% of ECs), marked by SNCG and high ACKR1, co-expressing inflammatory cytokines (IL6, IL33) and leukocyte adhesion molecules (SELE, ICAM1) similar to lymph node HEVs. Whole-mount immunostaining validates SNCG+PECAM1+ distended structures in superficial dermis. VE3 expands in AD and psoriasis and aligns transcriptionally with fetal VE."
   },
   {
-    "snippet_index": 11,
-    "quotes": [],
-    "summary": "VE3 corresponds to a population of postcapillary venular endothelial cells that regulate leukocyte adhesion and migration, are more frequent in atopic dermatitis and psoriasis, and show increased CXCL12 expression in psoriatic lesions.",
-    "categories": [
-      "location",
-      "function",
-      "markers"
+    "paper": "Liu et al. (2022)",
+    "doi": "10.3389/fsurg.2022.935107",
+    "corpusId": "249628397",
+    "title": "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells",
+    "quotes": [
+      "Reynolds et al. reported that some vascular endothelial cells, which expressed \u03b3-synuclein (SNCG) and high level of ACKR1 (the venular capillary marker), might function as postcapillary venular cells. They found that ACKR1+ endothelial cells and CXCL8 (IL8)+ macrophages interacted with each other by cell communication analysis and further confirmed this finding with immunofluorescence staining in situ",
+      "ACKR1+ endothelial cells coexpressed inflammatory cytokines, chemokines, and leukocyte adhesion molecules including IL6, IL33, SELE, and ICAM1, implying that they might regulate leukocyte adhesion and migration"
     ],
-    "source_corpus_id": "CorpusId:262126195",
-    "source_title": "CREB1-driven CXCR4hi neutrophils promote skin inflammation in mouse models and human patients",
-    "source_authors": "Jiaoling Chen et al.",
-    "source_year": null,
-    "snippet": ".87%), and pericytes (7%) were the main sources of CXCL12 in psoriasis lesions (revised Supplementary Fig. 7c, d).\n\nWe further find that CXC12 is increased in VE3 (vessel endothelial cell cluster 3) in psoriatic lesions compared to healthy controls (revised Supplementary Fig. 7c). VE3 was identified as the postcapillary venular cells regulating leukocyte adhesion and migration, with higher frequency in atopic dermatitis and psoriasis skin and with a reduction after treatment 106 . Moreover, we performed additional immunofluorescence co-staining of CXCL12 and the endothelial marker CD31 and fibroblast marker vimentin in psoriatic lesions and healthy skin (n = 6) to quantify CXCL12 + cells. The immunofluorescence staining further showed that CXCL12 was mainly expressed by cutaneous vascular endothelial cells and fibroblasts (revised Fig. 5d), with CXCR4 hi neutrophils in close proximity (revised Fig. 5e). Therefore, we have added this data to the Results and addressed this further in our revised Discussion.\n\nRevised Supplementary Fig. 7c, d. CXCL12 is mainly derived from vascular endothelium and fibroblasts in psoriatic lesions. (c-d) Expressions of CXCL12 in each cluster were analyzed from scRNA-seq analysis (https://developmental.cellatlas.io/diseased-skin) and the proportions were determined. The y-axis represents log-normalized expression.\n\nRevised Fig. 5d. (d) Representative immunofluorescence staining of CD31, Vimentin, and CXCL12 in inflamed psoriatic skin (n = 6). Scale bar = 50 \u00b5m, 20 \u00b5m. (e) Representative immunofluorescence staining of CD31, CXCR4, and CXCL12 in inflamed psoriatic skin (n = 6). Scale bar = 50 \u00b5m, 20 \u00b5m.\n\n3) The upregulation of surface CXCR4 after CX"
+    "summary": "Liu et al. (2022) summarise VE3 as ACKR1+ post-capillary venular endothelial cells that co-express IL6, IL33, SELE and ICAM1 and interact with CXCL8+ macrophages, supporting a role in regulating leukocyte adhesion and migration."
+  },
+  {
+    "paper": "He et al. (2022)",
+    "doi": "10.3389/fcvm.2022.843091",
+    "corpusId": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "quotes": [
+      "Post-capillary venules represent the primary sites for leukocyte trafficking and subsequently the extravasation into peripheral tissues. The characterization of the atypical chemokine receptor ACKR1 has favored the identification of intact venous vasculature in multiple murine tissues",
+      "ACKR1 also represents an important molecule that distinguished the downstream venular compartments from arterioles and post-arterial capillaries in human skin"
+    ],
+    "summary": "He et al. (2022) independently characterize ACKR1 as the key marker of post-capillary venular endothelium in human skin, consistent with VE3 identity. Post-capillary venules are the primary sites for leukocyte trafficking and extravasation."
   }
 ]

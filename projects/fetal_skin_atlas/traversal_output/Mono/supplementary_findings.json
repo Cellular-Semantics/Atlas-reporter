@@ -1,48 +1,17 @@
 {
   "markers": [
-    {
-      "gene": "CD14",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table 3"
-    },
-    {
-      "gene": "LYZ",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table 3"
-    },
-    {
-      "gene": "FCN1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 4"
-    }
+    {"gene": "CD14", "evidence_type": "monocyte marker", "source_table": "Reynolds et al. (2021) Fig. S5, general literature"},
+    {"gene": "FCGR3A", "evidence_type": "CD16, non-classical monocyte marker", "source_table": "Reynolds et al. (2021)"},
+    {"gene": "CD8A", "evidence_type": "CyTOF validation marker listed", "source_table": "Reynolds et al. (2021) Fig. 3 legend"}
   ],
   "other_findings": [
-    {
-      "finding": "Monocytes are predominantly located in the peripheral blood compartment and are rare in tissue samples.",
-      "category": "spatial location",
-      "source_table": "Supplementary Table 2"
-    },
-    {
-      "finding": "Differential expression analysis identified monocyte-specific genes including FCN1 and LYZ.",
-      "category": "differential expression",
-      "source_table": "Supplementary Table 4"
-    }
+    {"finding": "Reynolds et al. (2021) annotated skin MPs by aligning to blood MPs using TransferAnchors; CD8A, CD163, CD14 and CCR7 were chosen for CyTOF protein validation", "category": "methodology", "source_table": "Reynolds et al. (2021) Fig. 3 legend"},
+    {"finding": "Two macrophage states (Mac1, Mac2) are distinct from monocytes; monocyte-derived macrophages (Mono mac) also identified", "category": "classification", "source_table": "Reynolds et al. (2021) main text and figure legend"},
+    {"finding": "Human blood monocytes classified into: classical (CD14++ CD16-), intermediate (CD14++ CD16+), and non-classical (CD14+ CD16++)", "category": "classification", "source_table": "free search literature"},
+    {"finding": "Classical monocytes are rapidly recruited to tissues in inflammatory responses and can differentiate into macrophages or DCs", "category": "function", "source_table": "free search literature"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "Monocyte cluster markers include CD14 and LYZ.",
-      "source_file": "Supplementary Table 3",
-      "context": "Cluster annotation"
-    },
-    {
-      "quote": "Monocytes are predominantly located in the peripheral blood compartment and are rare in tissue samples.",
-      "source_file": "Supplementary Table 2",
-      "context": "Cell type spatial distribution"
-    },
-    {
-      "quote": "Differential expression analysis identified monocyte-specific genes including FCN1 and LYZ.",
-      "source_file": "Supplementary Table 4",
-      "context": "DEG results for adult immune cells"
-    }
+    {"quote": "We observed 14 states of mononuclear phagocytes (MPs) in human skin (Figs. 3A-B and S5A) that we annotated by aligning skin and blood MPs using TransferAnchors function in Seurat (Fig. S5B) and expression of MP marker genes", "source_file": "Reynolds et al. (2021) PDF full text", "context": "Mononuclear phagocyte annotation methodology"},
+    {"quote": "Mono mac = monocyte derived macrophage", "source_file": "Reynolds et al. (2021) PDF full text", "context": "Figure 1 legend abbreviation"}
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "Proliferating Langerhans Cell (LC_1)",
+  "working_definition": "A mitotically active Langerhans cell in the adult epidermis, characterised by the highest expression of cell cycle genes (MKI67, TOP2A, PCNA) among the LC subclusters, while retaining pan-LC markers CD207 (langerin), CD1a, and EPCAM. This population represents the proliferating fraction of the classic epidermal Langerhans cell compartment that maintains LC density through local self-renewal.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'Langerhans cell' in CL ontology",
+    "OLS4 searchClasses: 'proliferating Langerhans cell' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "Langerhans cell",
+    "cl_id": "CL:0000453",
+    "cl_definition": "A dendritic cell found in the epidermis that is capable of migrating to lymphoid tissue. Langerhans cells are characterized by expression of CD207 (langerin), CD1a, and EPCAM.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000453 'Langerhans cell' is the broadest appropriate match for the LC_1 proliferating LC subcluster. The cell expresses all canonical LC markers (CD207, CD1a, EPCAM) and resides in the epidermis, satisfying the CL:0000453 definition. No CL term exists specifically for a proliferating or mitotically active Langerhans cell substate. The proliferating identity is a functional substate of the Langerhans cell rather than a distinct cell type.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000453 (Langerhans cell) as a broad match. No new CL term is needed for the proliferating LC substate, as proliferative activity is a transient state rather than a stable cell type.",
+  "new_term_needed": false
+}

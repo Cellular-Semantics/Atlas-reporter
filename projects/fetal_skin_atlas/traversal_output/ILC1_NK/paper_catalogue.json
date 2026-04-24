@@ -1,419 +1,119 @@
-{
-  "CorpusId:213578695": {
-    "title": "A NKp80-Based Identification Strategy Reveals that CD56neg NK Cells Are Not Completely Dysfunctional in Health and Disease",
-    "authors": [
-      "A. Orrantia",
-      "I. Terr\u00e9n",
-      "Alicia Izquierdo-Lafuente",
-      "Juncal A. Alonso-Cabrera",
-      "V. Sand\u00e1",
-      "Joana Vitall\u00e9",
-      "S. Moreno",
-      "M. Tasias",
-      "A. Uranga",
-      "C. Gonz\u00e1lez",
-      "J. J. Mateos",
-      "J. C. Garc\u00eda-Ruiz",
-      "Olatz Zenarruzabeitia",
-      "F. Borrego"
-    ],
-    "year": 2020,
-    "venue": "bioRxiv",
-    "doi": "10.1016/j.isci.2020.101298",
-    "pmid": "32622268",
-    "url": "https://www.semanticscholar.org/paper/93721fdb8af66cbec1d133d929632e06c9c107c1",
-    "abstract": "Natural killer (NK) cells are usually identified by the absence of other lineage markers, due to the lack of a cell surface specific marker. CD56neg NK cells, classically identified as CD56negCD16+ are known to be expanded in some pathological conditions. However, studies on CD56neg NK cells had revealed different results regarding the phenotype and functionality of these cells. This could be due to, among others, the unstable expression of CD16, which hinders CD56neg NK cells identification. He",
-    "tldr": "Using multiparametric flow cytometry, it is found that NKp80 is a good alternative to CD16 not only in healthy donors but also in HIV-1 infected subjects and multiple myeloma patients, suggesting that the effector functions of CD56neg NK cells are not as diminished as previously thought."
-  },
-  "CorpusId:253577285": {
-    "title": "Tissue-specific transcriptional profiles and heterogeneity of natural killer cells and group 1 innate lymphoid cells",
-    "authors": [
-      "No\u00eblla Lopes",
-      "Justine Galluso",
-      "Bertrand Escali\u00e8re",
-      "S. Carpentier",
-      "Y. Kerdiles",
-      "\u00c9. Vivier"
-    ],
-    "year": 2022,
-    "venue": "Cell Reports Medicine",
-    "doi": "10.1016/j.xcrm.2022.100812",
-    "pmid": "36384102",
-    "url": "https://www.semanticscholar.org/paper/0ef5bd8741ca0a24e23ef67bd7791608d62b6099",
-    "abstract": "Summary Natural killer (NK) cells and type 1 innate lymphoid cells (ILC1s) are populations of non-T, non-B lymphocytes in peripheral tissues. Although NK and ILC1 subsets have been described, their identification and characteristics remain unclear. We performed single-cell RNA sequencing and CITE-seq to explore NK and ILC1 heterogeneity between tissues. We observed that although NK1 and NK2 subsets are conserved in spleen and liver, ILC1s are heterogeneous across tissues. We identified sets of g",
-    "tldr": "It is revealed that the expressions of EOMES, GZMA, IRF8, JAK1, NKG7, PLEK, PRF1, and ZEB2 define NK cells and that IL7R, LTB, and RGS1 differentiate ILC1s from NK cells in mice and humans."
-  },
-  "CorpusId:280847420": {
-    "title": "Natural killer cells in skin: a unique opportunity to better characterize the many facets of an overlooked secondary lymphoid organ",
-    "authors": [
-      "Kirsten M. Johnson",
-      "Dean A Lee"
-    ],
-    "year": 2025,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2025.1646719",
-    "pmid": "40873573",
-    "url": "https://www.semanticscholar.org/paper/fb58631a8ea8c4f833c12deb6aa24b8b40cf1271",
-    "abstract": "Natural killer (NK) cells are lymphoid-derived cells that play a critical role in bridging innate and adaptive immunity. Given their ability to recognize and directly kill targets possessing missing or altered self-proteins and to induce indirect killing via recruitment of adaptive immunity, they are in a unique position to modulate host immunologic responses. These complex immune sentinels typically circulate in the peripheral blood and/or reside in lymphoid tissues. As the largest organ, human",
-    "tldr": "This review seeks to consolidate the currently available literature regarding NK cell and ILC skin homing and innate immune function in healthy vs. lesional human skin (including infection, inflammatory/autoimmune conditions, and cutaneous malignancy)."
-  },
-  "CorpusId:89796008": {
-    "title": "Innate Lymphoid Cells: The Hidden Actors in Skin Disorders",
-    "authors": [
-      "Dean Da"
-    ],
-    "year": 2016,
-    "venue": "Clinical Dermatology Open Access Journal",
-    "doi": "10.23880/cdoaj16000101",
-    "pmid": "",
-    "url": "https://www.semanticscholar.org/paper/b60344344acc7423e6f6553d81655123405810cf",
-    "abstract": "Innate lymphoid cells (ILCs) is a collective term that defines a population of lymphoid cells that do not express the typical rearranged receptors, but depends on the common c-chain of IL-2 receptor. The innate lymphocytes includes NK cells and the non-NK ILC: ILC1, ILC2 and ILC3. ILCs groups are categorized based on certain transcription factors and the cytokine production, in an homologous fashion to T cells effector Th1, Th2 and Th17. ILCs play an important role in the lymphoid organog\u00e9nesis,",
-    "tldr": "The biology of ILCs is outlined and their role in homeostasis and in skin diseases is reviewed and the dysregulation of their function plays an important role in inflammatory skin diseases, allergies, autoimmunity and cancer."
-  },
-  "CorpusId:244119377": {
-    "title": "Type 1 Innate Lymphoid Cells Limit the Antitumoral Immune Response",
-    "authors": [
-      "M. Vienne",
-      "Marion Etiennot",
-      "Bertrand Escali\u00e8re",
-      "Justine Galluso",
-      "Lionel Spinelli",
-      "S. Guia",
-      "A. Fenis",
-      "\u00c9. Vivier",
-      "Y. Kerdiles"
-    ],
+[
+  {
+    "corpusId": "231666430",
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "authors": "Reynolds G, Vegh P, Fletcher J et al.",
     "year": 2021,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2021.768989",
-    "pmid": "34868026",
-    "url": "https://www.semanticscholar.org/paper/afaae614605ca64b2f209cccc5388ddf77389248",
-    "abstract": "Natural killer (NK) cells are known to be able to kill established tumor cell lines, but important caveats remain regarding their roles in the detection and elimination of developing primary tumors. Using a genetic model of selective ILC1 and NK cell deficiency, we showed that these cells were dispensable for tumor immunosurveillance and immunoediting in the MCA-induced carcinogenesis model. However, we were able to generate primary cell lines derived from MCA-induced tumors with graded sensitiv",
-    "tldr": "ILC1 appears to play an active role in inhibiting the antitumoral immune response, prompting to evaluate the differential tumor infiltration of ILC1 and NK cells in patients to optimize the harnessing of immunity in cancer therapies."
+    "journal": "Science",
+    "doi": "10.1126/science.aba6500",
+    "source": "primary_atlas"
   },
-  "CorpusId:218527932": {
-    "title": "Innate lymphoid cells control signaling circuits to regulate tissue-specific immunity",
-    "authors": [
-      "Christoph S. N. Klose",
-      "D. Artis"
-    ],
-    "year": 2020,
-    "venue": "Cell Research",
-    "doi": "10.1038/s41422-020-0323-8",
-    "pmid": "32376911",
-    "url": "https://www.semanticscholar.org/paper/3b2680b8cf3d226c280b0afd1ba454de482ec3a3",
-    "abstract": "The multifaceted organization of the immune system involves not only patrolling lymphocytes that constantly monitor antigen-presenting cells in secondary lymphoid organs but also immune cells that establish permanent tissue-residency. The integration in the respective tissue and the adaption to the organ milieu enable tissue-resident cells to establish signaling circuits with parenchymal cells to coordinate immune responses and maintain tissue homeostasis. Innate lymphoid cells (ILCs) are tissue",
-    "tldr": "Uncovering the signaling circuits that control development and function of ILCs will provide an integrated view on how immune responses in tissues are synchronized with functional relevance far beyond the classical view of the role of the immune system in discrimination between self/non-self and host defense."
-  },
-  "CorpusId:231873368": {
-    "title": "Killing the Invaders: NK Cell Impact in Tumors and Anti-Tumor Therapy",
-    "authors": [
-      "Martina Molgora",
-      "V. Cortez",
-      "M. Colonna"
-    ],
-    "year": 2021,
-    "venue": "Cancers",
-    "doi": "10.3390/cancers13040595",
-    "pmid": "33546248",
-    "url": "https://www.semanticscholar.org/paper/d5ffc112e67224a9697e80e228e7e74457081fa8",
-    "abstract": "Simple Summary NK cells are innate lymphoid cells involved in the control of tumor growth and metastatic spread. Given their significant cytolytic capacity, several promising strategies have been developed to target NK cells in cancer immunotherapy. Abstract Natural Killer cells belong to group 1 innate lymphoid cells, which also includes ILC1s. NK/ILC1s are highly heterogeneous cell types showing distinct phenotypes across tissues and conditions. NK cells have long been described as innate lymp",
-    "tldr": "Key aspects of NK cell biology that are relevant in tumor immune surveillance are reviewed, emphasizing the most recent findings in the field."
-  },
-  "CorpusId:16735097": {
-    "title": "Transcriptional Programs Define Molecular Characteristics of Innate Lymphoid Cell Classes and Subsets",
-    "authors": [
-      "M. Robinette",
-      "A. Fuchs",
-      "V. Cortez",
-      "Jacob S. Lee",
-      "Yaming Wang",
-      "S. Durum",
-      "S. Gilfillan",
-      "M. Colonna"
-    ],
-    "year": 2015,
-    "venue": "Nature Immunology",
-    "doi": "10.1038/ni.3094",
-    "pmid": "25621825",
-    "url": "https://www.semanticscholar.org/paper/e9f6bfaee32dd7844f184ecf5ef85a6ef04020d5",
-    "abstract": "The recognized diversity of innate lymphoid cells (ILCs) is rapidly expanding. Three ILC classes have emerged, ILC1, ILC2 and ILC3, with ILC1 and ILC3 including several subsets. The classification of some subsets is unclear, and it remains controversial whether natural killer (NK) cells and ILC1 cells are distinct cell types. To address these issues, we analyzed gene expression in ILCs and NK cells from mouse small intestine, spleen and liver, as part of the Immunological Genome Project. The res",
-    "tldr": null
-  },
-  "CorpusId:225096423": {
-    "title": "Neural Regulation of Interactions Between Group 2 Innate Lymphoid Cells and Pulmonary Immune Cells",
-    "authors": [
-      "Weiwei Chen",
-      "Q. Shu",
-      "Jie Fan"
-    ],
-    "year": 2020,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2020.576929",
-    "pmid": "33193374",
-    "url": "https://www.semanticscholar.org/paper/6fd5607eee9bb8d58b90a60cff0484ff09b66841",
-    "abstract": "Emerging evidence supports the involvement of nervous system in the regulation of immune responses. Group 2 innate lymphoid cells (ILC2), which function as a crucial bridge between innate and adaptive immunity, are present in large numbers in barrier tissues. Neuropeptides and neurotransmitters have been found to participate in the regulation of ILC2, adding a new dimension to neuroimmunity. However, a comprehensive and detailed overview of the mechanisms of neural regulation of ILC2, associated",
-    "tldr": "Existing information is compiled that supports neurons as yet poorly understood regulators of ILC2 in the field of lung innate and adaptive immunity, focusing on neural regulation of the interaction between I LC2 and pulmonary immune cells."
-  },
-  "CorpusId:247864450": {
-    "title": "Innate lymphoid cells: NK and cytotoxic ILC3 subsets infiltrate metastatic breast cancer lymph nodes",
-    "authors": [
-      "Louise Rethacker",
-      "M. Boy",
-      "V. Bisio",
-      "F. Roussin",
-      "Jordan Denizeau",
-      "A. Vincent\u2010Salomon",
-      "E. Borcoman",
-      "C. Sedlik",
-      "E. Piaggio",
-      "A. Toubert",
-      "N. Dulphy",
-      "A. Caignard"
-    ],
-    "year": 2022,
-    "venue": "Oncoimmunology",
-    "doi": "10.1080/2162402X.2022.2057396",
-    "pmid": "35371620",
-    "url": "https://www.semanticscholar.org/paper/7405a5006e2ada25b3d48d5f4cc77565be32273a",
-    "abstract": "ABSTRACT Innate lymphoid cells (ILCs) \u2013 which include cytotoxic Natural Killer (NK) cells and helper-type ILC \u2013 are important regulators of tissue immune homeostasis, with possible roles in tumor surveillance. We analyzed ILC and their functionality in human lymph nodes (LN). In LN, NK cells and ILC3 were the prominent subpopulations. Among the ILC3s, we identified a CD56+/ILC3 subset with a phenotype close to ILC3 but also expressing cytotoxicity genes shared with NK. In tumor-draining LNs (TD-",
-    "tldr": "Analyses of cytotoxic and helper ILC indicate a switch toward NK cells in TD-LN, and a CD56+/ILC3 subset with a phenotype close to ILC3 but also expressing cytotoxicity genes shared with NK is identified."
-  },
-  "CorpusId:273921830": {
-    "title": "Overview of the development, characterization, and function of human types 1, 2, and 3 innate lymphoid cells",
-    "authors": [
-      "L. Bento",
-      "N. Bacal",
-      "L. Marti"
-    ],
+  {
+    "corpusId": null,
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee NH et al.",
     "year": 2024,
-    "venue": "Einstein",
-    "doi": "10.31744/einstein_journal/2024RW1042",
-    "pmid": "39630753",
-    "url": "https://www.semanticscholar.org/paper/87d4891badd9e780866fbdb60f520f15c635b283",
-    "abstract": "ABSTRACT Hematopoiesis is characterized by the differentiation and maturation of multipotent stem cells into hematopoietic cells. Common lymphoid progenitor cells differentiate into B and T lymphocytes; natural killer cells can also originate from common lymphoid progenitors. In recent years, a cellular subtype of lymphocytes, called innate lymphocytes, has been described. Innate lymphoid cells (ILCs) play an important effector and regulatory role in innate immunity, and similar to natural kille",
-    "tldr": "A phenotypic analysis is suggested to differentiate innate lymphocytes from natural killer cells, and across the subsets, and based on the existing literature, suggested a phenotypic analysis to differentiate innate lymphocytes from natural killer cells, and across the subsets."
+    "journal": "Nature",
+    "doi": "10.1038/s41586-024-08002-x",
+    "source": "primary_atlas"
   },
-  "CorpusId:69176033": {
-    "title": "Mechanisms of Immune Control of Mucosal HSV Infection: A Guide to Rational Vaccine Design",
-    "authors": [
-      "Naomi R Truong",
-      "Jacinta B. Smith",
-      "K. Sandgren",
-      "A. Cunningham"
-    ],
-    "year": 2019,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2019.00373",
-    "pmid": "30894859",
-    "url": "https://www.semanticscholar.org/paper/e46c65391b0e930611fdae3b918a4e0905417749",
-    "abstract": "Herpes Simplex Virus (HSV) is a highly prevalent sexually transmitted infection that aside from causing cold sores and genital lesions, causes complications in the immunocompromised and has facilitated a large proportion of HIV acquisition globally. Despite decades of research, there is no prophylactic HSV vaccine ready for use in humans, leaving many questioning whether a prophylactic vaccine is an achievable goal. A previous HSV vaccine trial did have partial success in decreasing acquisition ",
-    "tldr": "What is known of the immune control involved in initial herpes lesions and reactivation, including the importance of CD4 and CD8 T cells, and the interplay between innate and adaptive immunity in response to primary infection are discussed, specifically focusing on the viral relay involved."
-  },
-  "CorpusId:174798687": {
-    "title": "An Essential Role of Innate Lymphoid Cells in the Pathophysiology of Graft-vs.-Host Disease",
-    "authors": [
-      "Liang Shao",
-      "Shan Pan",
-      "Qiuping Zhang",
-      "Muhammad Jamal",
-      "Lu Chen",
-      "Qian Yin",
-      "Yingjie Wu",
-      "J. Xiong",
-      "Ruijing Xiao",
-      "Y. Kwong",
-      "F. Zhou",
-      "A. Lie"
-    ],
-    "year": 2019,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2019.01233",
-    "pmid": "31244831",
-    "url": "https://www.semanticscholar.org/paper/46cd463b2ca46bd30eecc00269530e046e330417",
-    "abstract": "Allogeneic hematopoietic stem cell transplantation (Allo-HSCT) is the only curative treatment for multiple hematologic malignancies and non-malignant hematological diseases. However, graft-vs.-host disease (GVHD), one of the main complications after allo-HSCT, remains the major reason for morbidity and non-relapse mortality. Emerging evidence has demonstrated that innate lymphoid cells (ILCs) play a non-redundant role in the pathophysiology of GVHD. In this review, we will summarize previously p",
-    "tldr": "Previously published data regarding the role of ILCs in the pathogenesis of GVHD are summarized and emerging evidence has demonstrated that innate lymphoid cells (ILCs) play a non-redundant role in the Pathophysiology of GvHD."
-  },
-  "CorpusId:282872937": {
-    "title": "Alopecia areata: from immunopathogenesis to emerging therapeutic approaches",
-    "authors": [
-      "Su-Young Kim",
-      "Hyun Joo Lee",
-      "Jihye Heo",
-      "Beom Joon Kim",
-      "J. Seok"
-    ],
-    "year": 2025,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2025.1681163",
-    "pmid": "41280915",
-    "url": "https://www.semanticscholar.org/paper/69e73a02cbf9178f2f233e589c8f175c51775a4f",
-    "abstract": "Alopecia areata (AA) is a non-scarring inflammatory hair loss disorder characterized by a T-cell\u2013mediated autoimmune disease that targets the hair follicles. In particular, Natural Killer Group 2 member D (NKG2D)+CD8+ T cells have been identified as central players in its pathogenesis. Current treatment options have limited efficacy and are often associated with adverse effects and high risk of relapse upon discontinuation, highlighting the need for targeted and durable therapeutic strategies. J",
-    "tldr": "A comprehensive overview of the roles of immune cells in AA pathogenesis is provided and emerging immunomodulatory strategies and novel therapeutic targets are introduced."
-  },
-  "CorpusId:595702": {
-    "title": "NKp46+ Innate Lymphoid Cells Dampen Vaginal CD8 T Cell Responses following Local Immunization with a Cholera Toxin-Based Vaccine",
-    "authors": [
-      "Carmelo Luci",
-      "Selma Bekri",
-      "F. Bihl",
-      "Jonathan Pini",
-      "Pierre Bourdely",
-      "Kelly Nouhen",
-      "Ang\u00e9lique Malgogne",
-      "T. Walzer",
-      "V. Braud",
-      "F. Anju\u00e8re"
-    ],
-    "year": 2015,
-    "venue": "PLoS ONE",
-    "doi": "10.1371/journal.pone.0143224",
-    "pmid": "26630176",
-    "url": "https://www.semanticscholar.org/paper/b2945413e9ab2d4f902abcc323c0485cdc2a8632",
-    "abstract": "Innate and adaptive immune cells work in concert to generate efficient protection at mucosal surface. Vaginal mucosa is an epithelial tissue that contains innate and adaptive immune effector cells. Our previous studies demonstrated that vaginal administration of Cholera toxin -based vaccines generate antigen-specific CD8 T cells through the stimulation of local dendritic cells (DC). Innate lymphoid cells (ILC) are a group of lymphocytes localized in epithelial tissues that have important immune ",
-    "tldr": "The results support that NKp46+ ILC limit mucosal CD8 T cell responses indirectly through the NKG2D-dependent elimination of vaginal DC, and reveal an unappreciated role ofNKp46- ILC in the regulation of mucosalCD8 Tcell responses."
-  },
-  "CorpusId:256613211": {
-    "title": "Innate lymphoid cells control signaling circuits to regulate tissue-specific immunity",
-    "authors": [
-      "Christoph S. N. Klose",
-      "D. Artis"
-    ],
-    "year": 2020,
-    "venue": "Cell Research",
-    "doi": "10.1038/s41422-020-0323-8",
-    "pmid": "",
-    "url": "https://www.semanticscholar.org/paper/7fa8179449d18610f97c153dc5acd8ada6ea3e50",
-    "abstract": "The multifaceted organization of the immune system involves not only patrolling lymphocytes that constantly monitor antigen-presenting cells in secondary lymphoid organs but also immune cells that establish permanent tissue-residency. The integration in the respective tissue and the adaption to the organ milieu enable tissue-resident cells to establish signaling circuits with parenchymal cells to coordinate immune responses and maintain tissue homeostasis. Innate lymphoid cells (ILCs) are tissue",
-    "tldr": "Uncovering the signaling circuits that control development and function of ILCs will provide an integrated view on how immune responses in tissues are synchronized with functional relevance far beyond the classical view of the role of the immune system in discrimination between self/non-self and host defense."
-  },
-  "CorpusId:214197547": {
-    "title": "Umbilical cord blood-derived ILC1-like cells constitute a novel precursor for mature KIR+NKG2A- NK cells",
-    "authors": [
-      "S. Bennstein",
-      "S. Weinhold",
-      "A. Manser",
-      "Nadine Scherenschlich",
-      "Angela Noll",
-      "K. Raba",
-      "G. K\u00f6gler",
-      "L. Walter",
-      "M. Uhrberg"
-    ],
-    "year": 2020,
-    "venue": "bioRxiv",
-    "doi": "10.7554/eLife.55232",
-    "pmid": "32657756",
-    "url": "https://www.semanticscholar.org/paper/c6a190f9dbb5e778aeaee76d0bc9b98e8c03d3c8",
-    "abstract": "Despite their identification several years ago, molecular identity and developmental relation between human ILC1 and NK cells, comprising group 1 ILCs, is still elusive. To unravel their connection, thorough transcriptional, epigenetic, and functional characterization was performed from umbilical cord blood (CB). Unexpectedly, ILC1-like cells lacked Tbet expression and failed to produce IFNg. Moreover, in contrast to previously described ILC1 subsets they could be efficiently differentiated into",
-    "tldr": "A model in which circulating fetal ILC1-like NKPs travel to secondary lymphoid tissues to initiate the formation of diversified NK cell repertoires after birth is supported."
-  },
-  "CorpusId:247091553": {
-    "title": "Immune Cells in Cutaneous Wound Healing: A Review of Functional Data from Animal Models",
-    "authors": [
-      "David M. Chesko",
-      "Traci A. Wilgus"
-    ],
+  {
+    "corpusId": "249628397",
+    "title": "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells",
+    "authors": "Liu B, Li A, Xu J, Cui Y",
     "year": 2022,
-    "venue": "International Journal of Molecular Sciences",
-    "doi": "10.3390/ijms23052444",
-    "pmid": "35269586",
-    "url": "https://www.semanticscholar.org/paper/15a9c2c0e8615985d41f0a4140b79a2cec6e2e06",
-    "abstract": "The healing of skin wounds involves the activation and recruitment of various immune cell types, many of which are believed to contribute significantly to different aspects of the repair process. Roles for immune cells have been described in practically all stages of wound healing, including hemostasis, inflammation, proliferation and scar formation/remodeling. Over the last decade, tools to deplete immune cell populations in animal models have become more advanced, leading to a surge in the num",
-    "tldr": "This review will summarize what is known about distinct immune cell types in cutaneous wound healing, with an emphasis on data from animal studies in which specific cell types have been targeted."
+    "journal": "Frontiers in Surgery",
+    "doi": "10.3389/fsurg.2022.935107",
+    "source": "citation_traverse"
   },
-  "CorpusId:233867646": {
-    "title": "The Immune Responses against Coronavirus Infections: Friend or Foe?",
-    "authors": [
-      "Arefe Vafaeinezhad",
-      "M. Atashzar",
-      "R. Baharlou"
-    ],
-    "year": 2021,
-    "venue": "International Archives of Allergy and Immunology",
-    "doi": "10.1159/000516038",
-    "pmid": "33951640",
-    "url": "https://www.semanticscholar.org/paper/ec2d0e9d329190853af5dbaa6e34564283cb2368",
-    "abstract": "Coronaviruses (CoVs) were first discovered in the 1960s. Severe acute respiratory syndrome CoV-2 (SARS-CoV-2) has been identified as the cause of COVID-19, which spread throughout China and subsequently, across the world. As COVID-19 causes serious public health concerns across the world, investigating the characteristics of SARS-CoV-2 and its interaction with the host immune responses may provide a clearer picture of how the pathogen causes disease in some individuals. Interestingly, SARS-CoV-2",
-    "tldr": "The immune responses (including the innate and adaptive immunities) to SARS- CoV, MERS-CoV, and SARS -CoV-2 are reviewed to improve the understanding of the concept of the COVID-19 disease, which will be helpful in developing vaccines and medications for treating the CO VID-19 patients."
-  },
-  "CorpusId:202748383": {
-    "title": "NK Cell Plasticity in Cancer",
-    "authors": [
-      "Sizhe Liu",
-      "Payal Dhar",
-      "Jennifer D. Wu"
-    ],
-    "year": 2019,
-    "venue": "Journal of Clinical Medicine",
-    "doi": "10.3390/jcm8091492",
-    "pmid": "31546818",
-    "url": "https://www.semanticscholar.org/paper/665601b2307c6aa85ff3eaf36f68268e346a7597",
-    "abstract": "Natural killer (NK) cells are critical immune components in controlling tumor growth and dissemination. Given their innate capacity to eliminate tumor cells without prior sensitization, NK-based therapies for cancer are actively pursued pre-clinically and clinically. However, recent data suggest that tumors could induce functional alterations in NK cells, polarizing them to tumor-promoting phenotypes. The potential functional plasticity of NK cells in the context of tumors could lead to undesira",
-    "tldr": "To-date evidence of tumor-associated NK cell plasticity is summarized, insights for future investigations and therapy development are provided and potential outcomes of NK-cell based therapies are considered."
-  },
-  "CorpusId:7567324": {
-    "title": "Characterization of the human immune cell network at the gingival barrier",
-    "authors": [
-      "N. Dutzan",
-      "J. Konkel",
-      "T. Greenwell-Wild",
-      "N. Moutsopoulos"
-    ],
-    "year": 2015,
-    "venue": "Mucosal Immunology",
-    "doi": "10.1038/mi.2015.136",
-    "pmid": "26732676",
-    "url": "https://www.semanticscholar.org/paper/b59c648e1f4fe00cd4b8a942b303641ae585b18c",
-    "abstract": "The oral mucosa is a barrier site constantly exposed to rich and diverse commensal microbial communities, yet little is known of the immune cell network maintaining immune homeostasis at this interface. We have performed a detailed characterization of the immune cell subsets of the oral cavity in a large cohort of healthy subjects. We focused our characterization on the gingival interface, a particularly vulnerable mucosal site, with thin epithelial lining and constant exposure to the tooth adhe",
-    "tldr": "A first view of the landscape of physiologic oral immunity is provided and shifts in immune cell populations in the common oral inflammatory disease periodontitis are interrogated to serve as a baseline for the characterization of local immunopathology."
-  },
-  "CorpusId:281130963": {
-    "title": "Innate lymphoid cells in the spotlight: from biomarkers to blueprint for innovative immunotherapy",
-    "authors": [
-      "I-Chih Kuo",
-      "Julyanne Brassard",
-      "Peter W. Zandstra",
-      "K. McNagny"
-    ],
-    "year": 2025,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2025.1655730",
-    "pmid": "40963622",
-    "url": "https://www.semanticscholar.org/paper/03668194971fb7bab2b9c25409c56d22f33fea56",
-    "abstract": "Since their discovery, innate lymphoid cells (ILCs) have emerged as key players in immune regulation, tissue homeostasis, and disease pathogenesis. Early research focused on defining ILC subsets, including ILC1s, ILC2s, ILC3s, and lymphoid tissue inducer (LTi) cells, by distinguishing their development, transcriptional profiles, and effector functions relative to T cells. Subsequent studies characterized the tissue-resident nature of ILCs and mapped their context-dependent phenotypes across dive",
-    "tldr": "This review synthesizes recent advances in understanding the functional diversity, plasticity, and tissue residency of ILC subsets, emphasizing their interactions with other immune and stromal cells, and their roles as predictive, diagnostic, and therapeutic targets in autoimmune diseases and cancers."
-  },
-  "CorpusId:237329724": {
-    "title": "Natural Killer Cells and Type 1 Innate Lymphoid Cells in Hepatocellular Carcinoma: Current Knowledge and Future Perspectives",
-    "authors": [
-      "Nicolas Jacquelot",
-      "Cyril Seillet",
-      "Fernando Souza-Fonseca-Guimar\u00e3es",
-      "A. Sacher",
-      "G. Belz",
-      "P. Ohashi"
-    ],
-    "year": 2021,
-    "venue": "International Journal of Molecular Sciences",
-    "doi": "10.3390/ijms22169044",
-    "pmid": "34445750",
-    "url": "https://www.semanticscholar.org/paper/25536e0a2d573cc5ee85399739cb53a6addefe78",
-    "abstract": "Natural killer (NK) cells and type 1 innate lymphoid cells (ILC1) are specific innate lymphoid cell subsets that are key for the detection and elimination of pathogens and cancer cells. In liver, while they share a number of characteristics, they differ in many features. These include their developmental pathways, tissue distribution, phenotype and functions. NK cells and ILC1 contribute to organ homeostasis through the production of key cytokines and chemokines and the elimination of potential ",
-    "tldr": "The role of innate lymphoid cells in hepatocellular carcinoma is growing owing to the development of mouse models, the progress in immunotherapeutic treatment and the recent use of scRNA sequencing analyses, and a better understanding of the role and function could pave the way for new NK cell and/or ILC1-targeted treatment."
-  },
-  "CorpusId:248457370": {
-    "title": "Chronic Inflammation in Non-Healing Skin Wounds and Promising Natural Bioactive Compounds Treatment",
-    "authors": [
-      "P. Schilrreff",
-      "U. Alexiev"
-    ],
+  {
+    "corpusId": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": "He Y, Tacconi C, Dieterich L et al.",
     "year": 2022,
-    "venue": "International Journal of Molecular Sciences",
-    "doi": "10.3390/ijms23094928",
-    "pmid": "35563319",
-    "url": "https://www.semanticscholar.org/paper/5d33cd4025bb4fc2e829e23f6b557915de4a37e2",
-    "abstract": "Chronic inflammation is one of the hallmarks of chronic wounds and is tightly coupled to immune regulation. The dysregulation of the immune system leads to continuing inflammation and impaired wound healing and, subsequently, to chronic skin wounds. In this review, we discuss the role of the immune system, the involvement of inflammatory mediators and reactive oxygen species, the complication of bacterial infections in chronic wound healing, and the still-underexplored potential of natural bioac",
-    "tldr": "The role of the immune system, the involvement of inflammatory mediators and reactive oxygen species, the complication of bacterial infections in chronic wound healing, and the still-underexplored potential of natural bioactive compounds in wound treatment are discussed."
+    "journal": "Frontiers in Cardiovascular Medicine",
+    "doi": "10.3389/fcvm.2022.843091",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "235813151",
+    "title": "Inflammatory Skin Disorders: Monocyte-Derived Cells Take Center Stage",
+    "authors": "Mehta H, Angsana J, Bissonnette R et al.",
+    "year": 2021,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.672082",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "246602980",
+    "title": "Antigen-Presenting Cells in Psoriasis",
+    "authors": "Antal D, Alimohammadi S, Bai P et al.",
+    "year": 2022,
+    "journal": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms23042422",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "253440413",
+    "title": "Macrophages in Skin Wounds: Functions and Therapeutic Potential",
+    "authors": "Sim S, Kumari S, Kaur S, Khosrotehrani K",
+    "year": 2022,
+    "journal": "Cells",
+    "doi": "10.3390/cells11193wounds",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "248054300",
+    "title": "Immunological signature of chronic spontaneous urticaria (Review)",
+    "authors": "Dobrican C, Muntean I, Pintea I et al.",
+    "year": 2022,
+    "journal": "Experimental and Therapeutic Medicine",
+    "doi": "10.3892/etm.2022.11219",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "251229121",
+    "title": "Dynamically upregulated mast cell CPA3 patterns in chronic obstructive pulmonary disease and idiopathic pulmonary fibrosis",
+    "authors": "Siddhuraj P, Jonsson J, Alyamani M et al.",
+    "year": 2022,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.906494",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "280847420",
+    "title": "Natural killer cells in skin: a unique opportunity to better characterize the many facets of an overlooked secondary lymphoid organ",
+    "authors": "Johnson KM, Lee DA",
+    "year": 2025,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2025.1509635",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "216076805",
+    "title": "Single-cell transcriptomes of the human skin reveal age-related loss of fibroblast priming",
+    "authors": "Sole-Boldo L, Raddatz G, Schutz S et al.",
+    "year": 2020,
+    "journal": "Communications Biology",
+    "doi": "10.1038/s42003-020-0922-4",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "267321861",
+    "title": "Single-cell analysis of psoriasis resolution demonstrates an inflammatory fibroblast state targeted by IL-23 blockade",
+    "authors": "Francis L, McCluskey D, Ganier C et al.",
+    "year": 2024,
+    "journal": "JCI Insight",
+    "doi": "10.1172/jci.insight.173006",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "13920827",
+    "title": "Characterization of innate lymphoid cells (ILC) in human skin and blood demonstrates increase of NKp44+ ILC3 in psoriasis",
+    "authors": "Villanova F, Flutter B, Tosi I et al.",
+    "year": 2014,
+    "journal": "Journal of Investigative Dermatology",
+    "doi": "10.1038/jid.2013.477",
+    "source": "citation_traverse"
   }
-}
+]

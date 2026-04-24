@@ -1,0 +1,43 @@
+{
+  "cell_type_label": "Mast cell (earliest) — earliest developmental mast cell state in prenatal skin",
+  "working_definition": "Mast cell (earliest) is the most immature transcriptional state in the mast cell maturation series identified in fetal human skin (7–17 PCW), arising from megakaryocyte-erythroid-mast cell progenitors in the dermis. It is characterised by KIT (CD117) positivity, GATA2 expression, absent or very low FcεRI, detectable tryptase transcripts without granule protein staining, and possible retention of CD34 from earlier progenitor stages. Its primary function is to establish the tissue-resident mast cell compartment through in situ maturation, with limited effector function due to immature granule content.",
+  "searches_performed": [
+    "mast cell (earliest)",
+    "mast cell progenitor",
+    "immature mast cell",
+    "mast cell precursor",
+    "tissue mast cell",
+    "KIT-positive mast cell"
+  ],
+  "best_match": {
+    "cl_term": "Fc-epsilon RIalpha-low mast cell progenitor",
+    "cl_id": "CL:0002029",
+    "cl_definition": "A lineage-negative, Kit-positive, CD45-positive mast cell progenitor that is Fc-epsilon RIalpha-low.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0002029 'Fc-epsilon RIalpha-low mast cell progenitor' is the most specific CL term whose marker profile aligns with the earliest fetal skin mast cell state: KIT-positive, CD45-positive, lineage-negative, and FcεRI-low/absent — all consistent with the report description. The atlas 'Mast cell (earliest)' cluster is characterised by KIT+, GATA2+, FcεRI absent or very low, tryptase transcripts present but granule staining negative, and possible CD34 retention. A broad match is assigned rather than exact because: (1) CL:0002029 is defined primarily on mouse cell markers and does not capture the human fetal tissue context or the prenatal developmental window; (2) the atlas cluster likely spans a continuum from committed progenitor to early immature mast cell, broader than the specific FcεRI-low progenitor phenotype; (3) the report emphasises an in situ tissue-resident maturation trajectory that is not encoded in the CL definition. The parent term CL:0000831 'mast cell progenitor' was considered but is more general; CL:0002029 as a child captures the FcεRI-low/absent and KIT+ profile more precisely.",
+  "other_candidates": [
+    {
+      "cl_term": "mast cell progenitor",
+      "cl_id": "CL:0000831",
+      "cl_definition": "A progenitor cell of the mast cell lineage. Markers for this cell are FceRIa-low, CD117-positive, CD9-positive, T1/ST2-positive, SCA1-negative, and lineage-negative.",
+      "reason_rejected": "More general than CL:0002029; CL:0002029 is a child of this term and captures the KIT+/CD45+/FcεRI-low profile more precisely. This term is retained as a fallback broad match if CL:0002029 is deemed too specific."
+    },
+    {
+      "cl_term": "basophil mast progenitor cell",
+      "cl_id": "CL:0002028",
+      "cl_definition": "A cell type that can give rise to basophil and mast cells. This cell is CD34-positive, CD117-positive, CD125-positive, FceRIa-negative, and T1/ST2-negative, and expresses Gata-1, Gata-2, C/EBPa",
+      "reason_rejected": "This is a bipotent progenitor for both basophils and mast cells. The atlas 'Mast cell (earliest)' cluster is already committed to the mast cell lineage (not basophil lineage), so this upstream bipotent progenitor is too early in the hierarchy to represent the atlas cell type."
+    },
+    {
+      "cl_term": "connective tissue type mast cell",
+      "cl_id": "CL:0000484",
+      "cl_definition": "Mast cell subtype whose granules contain both the serine proteases tryptase and chymase. These cells are primarily found in connective tissue, such as the peritoneal cavity, skin, and intestinal submucosa. Their development is T-cell independent.",
+      "reason_rejected": "This is a mature mast cell subtype defined by the presence of both tryptase and chymase in granules. The atlas 'Mast cell (earliest)' explicitly lacks mature granule content (tryptase transcripts present but protein staining negative), making this a downstream mature state, not an appropriate match."
+    }
+  ],
+  "recommendation": "Use CL:0002029 (Fc-epsilon RIalpha-low mast cell progenitor) as a broad match for the atlas 'Mast cell (earliest)' cluster. A new CL term may be warranted to represent an early tissue-resident human mast cell progenitor state in fetal skin — characterised by KIT+, GATA2+, FcεRI-absent, tryptase transcript-positive but granule staining-negative, arising from MEMPs and undergoing in situ maturation in developing dermis. This would be distinct from existing mouse-derived progenitor definitions and would capture the human prenatal developmental context.",
+  "new_term_needed": true
+}

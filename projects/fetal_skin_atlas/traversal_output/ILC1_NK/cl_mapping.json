@@ -1,0 +1,9 @@
+{
+  "label": "ILC1_NK",
+  "cl_term": "group 1 innate lymphoid cell",
+  "cl_id": "CL:0001067",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_0001067",
+  "match_type": "broad",
+  "match_rationale": "ILC1_NK is a hybrid population with overlapping ILC1 and NK cell features. CL:0001067 (group 1 innate lymphoid cell) encompasses both ILC1 and NK cells as a group, making it the best broad match for this hybrid state.",
+  "new_term_needed": false
+}

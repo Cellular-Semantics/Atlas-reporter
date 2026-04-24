@@ -1,10 +1,9 @@
 {
   "label": "Schwaan_2_non_myelinating",
-  "resolved_names": [
-    "Schwann cells (non-myelinating)"
-  ],
+  "resolved_names": ["Non-myelinating Schwann cell", "Remak Schwann cell", "c-fiber Schwann cell"],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult human skin",
   "confidence": "high",
-  "evidence": "Supplementary Table 7 of the paper (and Extended Data Fig. 11) maps 'Schwaan_2_non_myelinating' to 'Schwann cells (non-myelinating)'. The main text and figure legends describe Schwann cell subtypes in skin\u2014particularly, the distinction between myelinating and non-myelinating Schwann cells, in both prenatal (fetal) and adult skin. The label is an explicit cluster designation for this fine subtype."
+  "note": "Label uses 'Schwaan' spelling matching the atlas annotation exactly.",
+  "evidence": "Reynolds et al. (2021) identify two Schwann cell subtypes in adult human skin: myelinating (Schwaan_1) and non-myelinating (Schwaan_2). Non-myelinating Schwann cells (also termed Remak Schwann cells) form Remak bundles that ensheath multiple unmyelinated C-fibres. They are defined by expression of NGFR (p75NTR), GFAP, GLUL (glutamine synthetase), APOD, FABP7, and SMOC2, with lower expression of myelin genes MPZ and MBP compared to myelinating Schwann cells."
 }

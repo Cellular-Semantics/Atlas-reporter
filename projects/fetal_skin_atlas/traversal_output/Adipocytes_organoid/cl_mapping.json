@@ -1,0 +1,36 @@
+{
+  "cell_type_label": "Adipocytes (skin organoid)",
+  "working_definition": "Adipocytes in the hair-bearing skin organoid (SkO) are mesenchymal fat-storing cells that reside in the fat-rich dermal compartment of an organoid derived from human pluripotent stem cells. They are identified by canonical mature adipocyte markers ADIPOQ (adiponectin) and PPARG, and they retain a prenatal-like developmental state even after prolonged culture. Biologically they are general adipocytes; the '(skin organoid)' qualifier denotes the in vitro provenance rather than a distinct biological subtype.",
+  "searches_performed": [
+    "adipocyte",
+    "fat cell",
+    "dermal adipocyte",
+    "skin adipocyte",
+    "ADIPOQ positive cell"
+  ],
+  "best_match": {
+    "cl_term": "adipocyte",
+    "cl_id": "CL:0000136",
+    "cl_definition": "A fat-storing cell found mostly in the abdominal cavity and subcutaneous tissue of mammals. Fat is usually stored in the form of triglycerides.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000136 (adipocyte) is the direct parent class for all adipocyte subtypes and its core definition — a fat-storing connective tissue cell that accumulates triglycerides and secretes adiponectin — aligns fully with the ADIPOQ/PPARG-positive fat cells described in the report. The match is broad rather than exact because the report cell type carries two distinguishing features absent from the CL term: (1) it is derived from human pluripotent stem cells in an in vitro skin organoid system, and (2) it retains a prenatal-like developmental state. No tissue-specific skin adipocyte term exists in CL; CL:0002521 (subcutaneous adipocyte) was rejected because it requires residence in native subcutaneous adipose tissue, which does not apply to an organoid-derived cell.",
+  "other_candidates": [
+    {
+      "cl_term": "subcutaneous adipocyte",
+      "cl_id": "CL:0002521",
+      "cl_definition": "An adipocyte that is part of subcutaneous adipose tissue.",
+      "reason_rejected": "Defined by anatomical location within native subcutaneous adipose tissue. The SkO adipocytes reside in the dermal compartment of an in vitro organoid, not in subcutaneous adipose tissue in vivo, so the location qualifier is a mismatch."
+    },
+    {
+      "cl_term": "white adipocyte",
+      "cl_id": "CL:0000448",
+      "cl_definition": "An adipocyte with light coloration and few mitochondria. It contains a scant ring of cytoplasm surrounding a single large lipid droplet or vacuole.",
+      "reason_rejected": "Defined by specific morphological and mitochondrial features (unilocular lipid droplet, few mitochondria, white coloration). The report does not characterise the SkO adipocytes at this morphological resolution, so assignment to this subtype is unwarranted."
+    }
+  ],
+  "recommendation": "Use CL:0000136 (adipocyte) as a broad match. A new CL term is not strictly required, but if finer granularity is desired, a term such as 'stem cell-derived adipocyte' or 'pluripotent stem cell-derived adipocyte' capturing the in vitro, PSC-derived origin and prenatal-like state would be appropriate. In the interim, annotate with CL:0000136 and capture the organoid provenance in a separate data field.",
+  "new_term_needed": true
+}

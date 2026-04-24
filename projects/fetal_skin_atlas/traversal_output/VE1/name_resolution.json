@@ -1,10 +1,11 @@
 {
   "label": "VE1",
   "resolved_names": [
-    "Vascular endothelial 1"
+    "vascular endothelial cell VE1",
+    "blood vascular endothelial cell 1"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "Cluster label 'VE1' is mapped to 'Vascular endothelial 1' in Extended Data Table 6 and figure legends (e.g., Extended Data Fig. 6, main text, and Supplementary Table 3) where endothelial cell subclusters are described. The authors use 'VE1' as an abbreviation for 'Vascular endothelial 1' in both prenatal and adult skin comparisons."
+  "evidence": "Reynolds 2021: Three distinct states of PECAM1(CD31)-expressing vascular endothelial cells (VE1, VE2, VE3). VE1 and VE2 are the non-venular vascular endothelial states; VE3 is the ACKR1+SNCG+ post-capillary venular state. VE1 is significantly depleted in psoriasis."
 }

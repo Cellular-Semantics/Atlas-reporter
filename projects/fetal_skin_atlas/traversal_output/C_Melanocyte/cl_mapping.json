@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "C_Melanocyte",
+  "working_definition": "Melanocyte in adult human skin (labelled with C_ prefix in atlas to disambiguate from macrophages in file ordering). Neural crest-derived pigment-producing cell in the epidermis. Defined by TYRP1, DCT, MLANA, PMEL, and MITF expression. Synthesises melanin in melanosomes and transfers them to keratinocytes for UV photoprotection.",
+  "searches_performed": [
+    "melanocyte",
+    "skin melanocyte epidermal",
+    "MITF TYRP1 melanocyte"
+  ],
+  "best_match": {
+    "cl_term": "melanocyte",
+    "cl_id": "CL:0000148",
+    "cl_definition": "A pigment cell derived from the neural crest. Contains melanosomes filled with melanin and has epidermal, hair follicle, and other tissue locations. Defined by MITF expression and melanin synthesis.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000148 'melanocyte' directly corresponds to the C_Melanocyte population. The cell type is a canonical melanocyte defined by TYRP1, DCT, MLANA, PMEL, and MITF expression in adult human skin.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000148 (melanocyte) as an exact match for the C_Melanocyte cell type.",
+  "new_term_needed": false
+}

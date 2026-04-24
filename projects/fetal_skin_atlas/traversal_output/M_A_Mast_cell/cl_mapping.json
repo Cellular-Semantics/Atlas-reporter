@@ -1,0 +1,9 @@
+{
+  "label": "M_A_Mast_cell",
+  "cl_term": "connective tissue type mast cell",
+  "cl_id": "CL:0000484",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_0000484",
+  "match_type": "exact",
+  "match_rationale": "M_A_Mast_cell is the mature/activated mast cell in adult skin dermis. Skin mast cells are predominantly connective tissue type (MCTC), containing tryptase, chymase, and CPA3. CL:0000484 (connective tissue type mast cell) is an exact match.",
+  "new_term_needed": false
+}

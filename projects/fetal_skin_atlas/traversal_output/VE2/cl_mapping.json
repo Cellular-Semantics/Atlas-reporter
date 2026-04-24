@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "Vascular Endothelial Cell 2 (VE2)",
+  "working_definition": "A homeostatic, non-venular blood vascular endothelial cell of the adult dermis, expressing pan-endothelial markers PECAM1 (CD31), EMCN, CDH5, and VWF, but lacking the VE3-defining post-capillary venular markers ACKR1 and SNCG and the inflammatory mediators IL6, IL33, SELE, and ICAM1. VE2 is depleted in psoriasis non-lesional skin (p=1.9×10⁻²) but less severely than VE1, suggesting it represents a distinct homeostatic vascular endothelial compartment within the dermal vasculature.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'blood vessel endothelial cell' in CL ontology",
+    "OLS4 searchClasses: 'vascular endothelial cell' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "blood vessel endothelial cell",
+    "cl_id": "CL:0000071",
+    "cl_definition": "An endothelial cell that lines the blood vasculature.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000071 'blood vessel endothelial cell' is the broadest appropriate match for VE2. The cell expresses canonical blood vascular endothelial markers (PECAM1, EMCN, CDH5, VWF) and forms part of the dermal blood vasculature. No CL term exists for the specific VE2 substate. VE2 is defined by exclusion of VE3 markers, and its precise position in the arteriolar-capillary-venular axis cannot be determined from the available Reynolds et al. (2021) text alone.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000071 (blood vessel endothelial cell) as a broad match. A more specific mapping may be possible once VE2-specific marker genes are fully characterised.",
+  "new_term_needed": false
+}

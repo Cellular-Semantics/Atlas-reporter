@@ -1,0 +1,28 @@
+{
+  "cell_type_label": "Mono",
+  "working_definition": "Classical monocyte present in adult human skin. Identified in Reynolds et al. (2021) as part of the mononuclear phagocyte (MP) compartment. Characterised by CD14 expression and a non-inflammatory monocyte identity, distinct from the Inf_mono (inflammatory monocyte) state.",
+  "searches_performed": [
+    "monocyte",
+    "classical monocyte skin",
+    "CD14+ monocyte"
+  ],
+  "best_match": {
+    "cl_term": "monocyte",
+    "cl_id": "CL:0000576",
+    "cl_definition": "A mononuclear phagocyte present in the blood, bone marrow, and spleen that is morphologically distinct from lymphocytes and granulocytes.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000576 'monocyte' is the closest available term. The Mono population in Reynolds et al. (2021) represents a classical (non-inflammatory) monocyte in skin tissue, but there is no specific CL term for skin-resident or tissue-homing classical monocytes. A broader match to the parent monocyte term is appropriate.",
+  "other_candidates": [
+    {
+      "cl_term": "classical monocyte",
+      "cl_id": "CL:0000860",
+      "cl_definition": "A mature monocyte in the blood that expresses CD14 and is negative or low for CD16.",
+      "reason_rejected": "CL:0000860 is specific to blood classical monocytes; the Mono population in Reynolds et al. (2021) is from skin tissue and may include tissue-homed monocytes rather than circulating blood monocytes strictly."
+    }
+  ],
+  "recommendation": "Use CL:0000576 (monocyte) as a broad match. Consider CL:0000860 (classical monocyte) as a narrower alternative if tissue-homing monocytes are accepted as classical monocytes.",
+  "new_term_needed": true
+}

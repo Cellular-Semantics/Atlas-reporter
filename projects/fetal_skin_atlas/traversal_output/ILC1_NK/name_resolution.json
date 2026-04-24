@@ -1,11 +1,12 @@
 {
   "label": "ILC1_NK",
   "resolved_names": [
-    "ILC1/NK cell",
-    "innate lymphoid cell type 1/natural killer cell"
+    "ILC1/NK hybrid population",
+    "ILC1/Natural Killer hybrid",
+    "ILC1-NK intermediate"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "In the figures and supplementary tables (e.g., Extended Data Fig. 8d and Supplementary Table 7) of the referenced atlas paper (10.1038/s41586-024-08002-x), the label 'ILC1_NK' maps to 'ILC1/NK cell' or 'innate lymphoid cell type 1/natural killer cell.' This nomenclature is consistent across the main immune transcriptional cluster annotation schematic and fine cell type tables, specifically identifying this population in the skin atlas context."
+  "evidence": "Reynolds 2021 main text: 'ILC1/NK have overlapping features of ILC1 and NKs, as described.' Identified among 4 innate lymphocyte clusters that were CD161(KLRB1)+ CD3(CD3D/CD3G)-. This population shares markers with both ILC1 and NK cells, reflecting the biological continuum between these two group 1 innate lymphoid cell types. ILC1_NK in Gopee 2024 corresponds to ILC1/Natural Killer (NK) in Reynolds 2021."
 }

@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Inf_mono",
+  "working_definition": "Inflammatory monocyte present in adult human skin. Identified in Reynolds et al. (2021) as the 'Inf. mono' state within the 14-state mononuclear phagocyte map. Characterised by CD14+CD16- surface phenotype and high expression of S100A8, S100A9, and CCR2. Recruited to skin via the CCR2-CCL2 axis.",
+  "searches_performed": [
+    "inflammatory monocyte",
+    "CD14+ inflammatory monocyte skin",
+    "CCR2+ monocyte"
+  ],
+  "best_match": {
+    "cl_term": "inflammatory monocyte",
+    "cl_id": "CL:0000863",
+    "cl_definition": "A classical monocyte that in response to pathogen-associated molecular pattern molecules produces inflammatory mediators and is recruited to the site of infection.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000863 'inflammatory monocyte' directly corresponds to the Inf_mono population in Reynolds et al. (2021), which is annotated as 'Inf. = inflammatory' in the mononuclear phagocyte UMAP. The CD14+CD16- human inflammatory monocyte phenotype matches the CL definition.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000863 (inflammatory monocyte) as an exact match for the Inf_mono cell type.",
+  "new_term_needed": false
+}

@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Th",
+  "working_definition": "CD4+ T helper cell present in adult human skin. Identified in Reynolds et al. (2021) as part of the T cell compartment in adult skin. Includes Th1, Th2, and Th17 subsets, characterised by CD4, CD40LG, IL4, IL13, IL17A, IFNG expression.",
+  "searches_performed": [
+    "helper T cell",
+    "CD4+ T helper cell skin",
+    "Th17 Th1 T helper"
+  ],
+  "best_match": {
+    "cl_term": "helper T cell",
+    "cl_id": "CL:0000912",
+    "cl_definition": "A mature T cell that differentiates into one of several T helper cell subtypes (Th1, Th2, Th17, etc.) and assists other lymphocytes by releasing cytokines. Typically expresses CD4.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000912 'helper T cell' directly corresponds to the Th population in Reynolds et al. (2021), which encompasses CD4+ T helper cells with Th1, Th2, and Th17 polarisation profiles in adult skin.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000912 (helper T cell) as an exact match for the Th cell type.",
+  "new_term_needed": false
+}

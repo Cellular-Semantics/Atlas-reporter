@@ -1,10 +1,12 @@
 {
   "label": "F1",
   "resolved_names": [
-    "Papillary fibroblast 1"
+    "fibroblast subset 1",
+    "Fb1 fibroblast",
+    "dominant dermal fibroblast"
   ],
   "scope": "adult",
-  "tissue_context": "human skin (adult, compared with prenatal and organoid)",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "Resolved from Supplementary Table 4 ('Fine annotation cell types and abbreviations'), which maps 'F1' in the adult skin to 'Papillary fibroblast 1'. The main and supplementary materials show cluster 'F1' is consistently used for this population."
+  "evidence": "Reynolds 2021: 'Three fibroblast subsets expressing extracellular matrix (ECM)-related genes such as MMP2, COL1A1, COL1A2 and NT5E (encodes CD73) are present in healthy human skin, dominated by Fb1 fibroblasts with minor populations of Fb2 and Fb3 fibroblasts.' F1 in Gopee 2024 corresponds to Fb1 in Reynolds 2021 — the dominant dermal fibroblast population in healthy skin."
 }

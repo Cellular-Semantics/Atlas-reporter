@@ -1,10 +1,13 @@
 {
   "label": "M_A_Mast_cell",
   "resolved_names": [
-    "Mast cell"
+    "mature/activated mast cell",
+    "M_A mast cell",
+    "connective tissue mast cell",
+    "MCTC mast cell"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "In the main and supplementary materials of the atlas paper (10.1038/s41586-024-08002-x), annotation label patterns such as 'M_A_X' are used, where 'M_A' denotes 'adult myeloid'. Mast cell is a well-defined immune cell type found in skin. The full name 'Mast cell' is explicitly listed in the cell type metadata and summary tables for adult skin immune annotations (see Supplementary Table 2 and Supplementary Data tables). No alternative or ambiguous naming for 'M_A_Mast_cell' was found."
+  "evidence": "Reynolds 2021 Table S1 lists mast cells among adult skin immune populations. The label M_A_Mast_cell in Gopee 2024 annotation indicates a mature/activated (M_A) mast cell state. Skin mast cells are predominantly connective tissue mast cells (MCTC) expressing both tryptase (TPSAB1) and chymase (CMA1) and carboxypeptidase A3 (CPA3), located in the papillary and reticular dermis, predominantly perivascular."
 }

@@ -1,11 +1,8 @@
 {
   "label": "Th",
-  "resolved_names": [
-    "T helper cell",
-    "CD4+ T cell"
-  ],
+  "resolved_names": ["T helper cell", "CD4+ T helper cell", "Th17", "Th1"],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult human skin",
   "confidence": "high",
-  "evidence": "In the main text and extended data of the paper (10.1038/s41586-024-08002-x), immune cell abbreviations are used (e.g., Th, Tc, Treg, etc.), and a mapping table in the methods and supplementary data clarify 'Th' as 'T helper cell (CD4+ T cell)'. The context is in immune cell subtypes within adult and fetal skin single-cell profiles."
+  "evidence": "Reynolds et al. (2021) define: 'Skin T cells consist of the three subtypes: cytotoxic (Tc) expressing CD8A/B, helper (Th) expressing CD4, CD40LG and regulatory (Treg)'. The Th label represents the CD4+ helper T cell population in adult skin. The figure legend states: 'Th = T helper cell'."
 }

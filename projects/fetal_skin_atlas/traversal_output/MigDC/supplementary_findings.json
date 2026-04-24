@@ -1,5 +1,23 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {"gene": "CCR7", "evidence_type": "migration marker, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "LAMP3", "evidence_type": "DC maturation marker, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "CD83", "evidence_type": "DC maturation marker, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "CD40", "evidence_type": "co-stimulatory molecule, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "CD86", "evidence_type": "co-stimulatory molecule, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "CD274", "evidence_type": "immunoregulatory (PD-L1), scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "IDO1", "evidence_type": "immunoregulatory, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "FSCN1", "evidence_type": "migration marker, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "SOCS1", "evidence_type": "immunoregulatory, scRNA-seq", "source_table": "Reynolds 2021 Table S1"}
+  ],
+  "other_findings": [
+    {"finding": "Migratory DC signature is conserved across species (murine dermal DC2 and splenic DC1)", "category": "cross-species conservation", "source_table": "Reynolds 2021 main text"},
+    {"finding": "Migratory DC signature is present in disease states including tonsillitis, ascites, lung cancer and rheumatoid arthritis", "category": "disease relevance", "source_table": "Reynolds 2021 Fig 3D"},
+    {"finding": "Acquisition of migratory DC gene signature is associated with loss of genes conferring DC subset identity", "category": "transcriptional program", "source_table": "Reynolds 2021 main text"},
+    {"finding": "Previously reported in fetal thymic medullary DCs, suggesting developmental gene programs utilized in adult homeostasis", "category": "developmental program", "source_table": "Reynolds 2021 main text"}
+  ],
+  "evidence_quotes": [
+    {"quote": "The clusters at the convergence of these branches (moDC3, LC4 and migratory DC (Mig. DC)) express transcripts associated with DC maturation (CD83, CCR7, LAMP3, CD40, CD86), immunoregulation (CD274, IDO1, CD200, PDCD1LG2, SOCS1) and migration (FSCN1, PLGRKT, TRAF1, BCL2A1, CFLAR and REL)", "source_file": "Reynolds 2021 main text", "context": "MigDC identity and markers"},
+    {"quote": "the migratory DC signature is also present across disease states including tonsillitis, ascites, lung cancer and rheumatoid arthritis", "source_file": "Reynolds 2021 main text", "context": "MigDC disease relevance"}
+  ]
 }

@@ -1,48 +1,18 @@
 {
   "markers": [
-    {
-      "gene": "CD1C",
-      "evidence_type": "known marker; cluster annotation",
-      "source_table": "Supplementary Table 1"
-    },
-    {
-      "gene": "FCER1A",
-      "evidence_type": "known marker; cluster annotation",
-      "source_table": "Supplementary Table 1"
-    },
-    {
-      "gene": "CLEC10A",
-      "evidence_type": "differential expression analysis",
-      "source_table": "Supplementary Table 2"
-    },
-    {
-      "gene": "CD163",
-      "evidence_type": "differential expression analysis",
-      "source_table": "Supplementary Table 2"
-    }
+    {"gene": "CD1C", "evidence_type": "defining marker (BDCA-1)", "source_table": "free search literature"},
+    {"gene": "CLEC10A", "evidence_type": "CD301, defining marker", "source_table": "free search literature"},
+    {"gene": "CD11B", "evidence_type": "ITGAM, defining marker", "source_table": "free search literature"},
+    {"gene": "IRF4", "evidence_type": "transcription factor", "source_table": "free search literature"}
   ],
   "other_findings": [
-    {
-      "finding": "Localized mainly in the dermis, rarely found in the epidermis",
-      "category": "spatial distribution",
-      "source_table": "Supplementary Table 3"
-    }
+    {"finding": "Reynolds et al. (2021) Fig. 3C legend refers to 'enrichment of gene signatures for murine dermal CD11c+ (DC2)', confirming DC2 corresponds to cDC2 subset", "category": "classification", "source_table": "Reynolds et al. (2021)"},
+    {"finding": "DC2 cells are observed in embryonic skin as early as 7 PCW, prior to bone marrow hematopoiesis", "category": "development", "source_table": "Reynolds et al. (2021)"},
+    {"finding": "Human cDC2 express CD1c together with CLEC10A and FcεR1α; DC2 are bona fide cDC while DC3 (CD163+) share features with monocytes", "category": "classification", "source_table": "free search literature"},
+    {"finding": "In the PAGA analysis of skin MPs, DC1 and DC2 form the myeloid DC branch of differentiation distinct from LCs and mo-DCs", "category": "development", "source_table": "Reynolds et al. (2021)"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "DC2 (CD1C+, FCER1A+) cluster annotation",
-      "source_file": "Supplementary Table 1",
-      "context": "Cell type annotation table listing DC2 with associated markers"
-    },
-    {
-      "quote": "Top DEGs for DC2: CLEC10A, CD163",
-      "source_file": "Supplementary Table 2",
-      "context": "Table of differentially expressed genes per cluster"
-    },
-    {
-      "quote": "DC2 were localized mainly in the dermis, rarely found in the epidermis",
-      "source_file": "Supplementary Table 3",
-      "context": "Table summarizing spatial locations of analyzed cell types"
-    }
+    {"quote": "We observe Dendritic Cells 1 and 2 (DC1, DC2) and Langerhans cells (LCs) in embryonic skin as early as 7 PCW, prior to bone marrow hematopoiesis, but macrophages are the dominant MP in first trimester skin", "source_file": "Reynolds et al. (2021) PDF full text", "context": "DC2 developmental context"},
+    {"quote": "cDC2, also known as CD1c+ DC, express CD1c together with CD301 (CLEC10A) and FcεR1α and are the human equivalent to murine cDC2", "source_file": "Heger et al. (2022) Guidelines for DC preparation and flow cytometric analysis. DOI:10.1002/eji.202249917", "context": "cDC2/DC2 defining markers"}
   ]
 }

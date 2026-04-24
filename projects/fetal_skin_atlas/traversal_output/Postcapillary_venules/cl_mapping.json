@@ -1,0 +1,36 @@
+{
+  "cell_type_label": "Postcapillary venules (postcapillary venule endothelial cells in prenatal skin)",
+  "working_definition": "Postcapillary venule endothelial cells are a blood vascular endothelial population in prenatal human skin (7–17 PCW) occupying the first differentiated position on the venular trajectory from early endothelial cells, defined by expression of PLVAP and regulon targets including VWF. They reside in the dermal microvasculature immediately downstream of capillaries and participate in macrophage-endothelial crosstalk that supports angiogenesis and immune cell recruitment via ACKR1-mediated ligand interactions.",
+  "searches_performed": [
+    "postcapillary venule endothelial cell",
+    "endothelial cell of venule",
+    "postcapillary venule",
+    "PLVAP positive endothelial cell",
+    "venular endothelial cell skin"
+  ],
+  "best_match": {
+    "cl_term": "endothelial cell of venule",
+    "cl_id": "CL:1000414",
+    "cl_definition": "An endothelial cell that is part of the venule.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The working definition describes an endothelial cell residing specifically in a postcapillary venule — the segment of the venular microvasculature immediately downstream of capillaries — with a distinctive PLVAP-positive, VWF-expressing molecular profile and a role in macrophage-dependent immune crosstalk. CL:1000414 is defined simply as 'an endothelial cell that is part of the venule,' which is a valid parent: any postcapillary venule endothelial cell IS-A endothelial cell of venule. However, the CL term is generic across all venule subtypes and carries no information about postcapillary position, PLVAP expression, or fetal dermal context. No more specific child of CL:1000414 exists for postcapillary venules — the three children are high endothelial venule cells (cuboidal, lymphocyte-trafficking, different markers), squamous venule cells (morphology-based distinction), and lymph-node venule cells (organ-specific). CL:0002652 (high endothelial venule) is inappropriate because those cells are cuboidal and specialised for lymphocyte extravasation in lymphoid organs, not PLVAP-expressing squamous cells of skin microvasculature. The match is therefore broad, not exact.",
+  "other_candidates": [
+    {
+      "cl_term": "endothelial cell of high endothelial venule",
+      "cl_id": "CL:0002652",
+      "cl_definition": "A venule endothelial cell that is cubodial, expresses leukocyte-specific receptors, and allows for passage of lymphocytes into bloodstream.",
+      "reason_rejected": "High endothelial venule cells are cuboidal and specialised for lymphocyte trafficking in lymphoid organs. The fetal skin postcapillary venule cells are PLVAP-expressing endothelial cells of the dermal microvasculature — a fundamentally different cell type with different morphology, markers, and location."
+    },
+    {
+      "cl_term": "squamous endothelial cell of venule",
+      "cl_id": "CL:0008040",
+      "cl_definition": "An endothelial cell of the venule that is squamous shaped. This is in contrast to the cubodial shape of high endothelial venule cells.",
+      "reason_rejected": "This term captures venule endothelial cells by morphology (squamous shape) rather than by vascular segment position or molecular markers. The report does not use squamous morphology as a defining criterion, and the term does not capture the PLVAP expression, postcapillary positional identity, or dermal skin context that distinguishes this population."
+    }
+  ],
+  "recommendation": "Use CL:1000414 (endothelial cell of venule) as a broad match interim mapping. A new CL term is needed: 'endothelial cell of postcapillary venule', defined as an endothelial cell that is part of a postcapillary venule, characterised by PLVAP expression, located downstream of capillaries on the venular trajectory. This would be a direct child of CL:1000414 and could be further subtyped by tissue (e.g. skin) if warranted.",
+  "new_term_needed": true
+}

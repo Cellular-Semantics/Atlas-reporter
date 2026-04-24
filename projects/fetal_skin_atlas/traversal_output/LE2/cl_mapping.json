@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "Collecting Lymphatic Endothelial Cell (LE2)",
+  "working_definition": "A collecting lymphatic vessel endothelial cell in adult human dermis, characterised by high PDPN and lower CCL21 expression relative to LE1, alongside pan-lymphatic markers LYVE1 and PROX1. This population forms the collecting lymphatic vessels that receive lymph from initial capillaries (LE1), propel it unidirectionally toward the lymph nodes via valves and smooth muscle contraction, and maintain continuous zipper-like endothelial junctions.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'lymphatic endothelial cell' in CL ontology",
+    "OLS4 searchClasses: 'collecting lymphatic endothelial cell' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "lymphatic endothelial cell",
+    "cl_id": "CL:0002138",
+    "cl_definition": "An endothelial cell that lines the lymphatic vasculature. Lymphatic endothelial cells express LYVE1, PDPN, PROX1, and VEGFR3.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0002138 'lymphatic endothelial cell' is the broadest appropriate match for LE2. The LE2 cluster expresses all pan-lymphatic endothelial markers (LYVE1, PDPN, PROX1) specified in the CL definition. No CL term exists specifically for 'collecting lymphatic endothelial cell'. The PDPN-high, CCL21-low collecting lymphatic identity is a substate of the broader lymphatic endothelial cell type.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002138 (lymphatic endothelial cell) as a broad match. A new CL term for 'collecting lymphatic endothelial cell' may be warranted given the established distinction between initial and collecting lymphatics in biology and disease.",
+  "new_term_needed": true
+}

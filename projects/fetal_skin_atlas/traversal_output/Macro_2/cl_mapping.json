@@ -1,0 +1,9 @@
+{
+  "label": "Macro_2",
+  "cl_term": "tissue-resident macrophage",
+  "cl_id": "CL:0000864",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_0000864",
+  "match_type": "broad",
+  "match_rationale": "Macro_2/Mac2 is a CD68+F13A1+NR4A1+NR4A2+KLF4+ alternatively activated dermal macrophage with fetal alignment. CL:0000864 (tissue-resident macrophage) is the closest term; no exact CL term for this fetal-aligned, alternative activation subtype.",
+  "new_term_needed": false
+}

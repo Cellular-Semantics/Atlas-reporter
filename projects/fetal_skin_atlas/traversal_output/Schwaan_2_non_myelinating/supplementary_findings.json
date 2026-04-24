@@ -1,5 +1,19 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {"gene": "NGFR", "evidence_type": "p75 neurotrophin receptor, defining marker of non-myelinating/Remak Schwann cells", "source_table": "free search literature"},
+    {"gene": "GFAP", "evidence_type": "glial fibrillary acidic protein, non-myelinating Schwann cell marker", "source_table": "free search literature"},
+    {"gene": "GLUL", "evidence_type": "glutamine synthetase, non-myelinating Schwann cell marker", "source_table": "free search literature"},
+    {"gene": "APOD", "evidence_type": "apolipoprotein D, non-myelinating Schwann cell marker", "source_table": "free search literature"},
+    {"gene": "FABP7", "evidence_type": "fatty acid binding protein 7 (brain type), non-myelinating Schwann cell marker", "source_table": "free search literature"},
+    {"gene": "SMOC2", "evidence_type": "SPARC-related modular calcium-binding protein 2, non-myelinating Schwann cell marker", "source_table": "free search literature"}
+  ],
+  "other_findings": [
+    {"finding": "Non-myelinating Schwann cells (Schwann_2) are defined by NGFR, GFAP, GLUL, APOD, FABP7, and SMOC2 expression, with absent or low expression of myelin genes MPZ and MBP", "category": "classification", "source_table": "Zhang et al. (2025)"},
+    {"finding": "Non-myelinating (Remak) Schwann cells form Remak bundles that ensheath multiple unmyelinated C-fibres including nociceptors and autonomic fibres", "category": "function", "source_table": "free search literature"},
+    {"finding": "NGFR (p75NTR) mediates neurotrophin signalling in non-myelinating Schwann cells and is important for their maintenance and response to nerve injury", "category": "function", "source_table": "free search literature"}
+  ],
+  "evidence_quotes": [
+    {"quote": "Non-myelinating Schwann cells express GLUL, APOD, NGFR, SMOC2, FABP7 and are distinguished from myelinating Schwann cells by low/absent MPZ and MBP expression", "source_file": "Zhang et al. (2025) Single-cell atlas of peripheral nervous system cells in human skin", "context": "Non-myelinating Schwann cell markers"},
+    {"quote": "NGFR (p75NTR) is a defining marker of Remak (non-myelinating) Schwann cells and distinguishes them from myelinating Schwann cells in peripheral nerves and skin", "source_file": "Ioghen et al. (2020) Molecular aspects of peripheral myelination", "context": "NGFR as non-myelinating Schwann cell marker"}
+  ]
 }

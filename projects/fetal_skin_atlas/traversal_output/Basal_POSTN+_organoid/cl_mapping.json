@@ -1,0 +1,41 @@
+{
+  "cell_type_label": "POSTN+ basal keratinocytes (skin organoid)",
+  "working_definition": "POSTN+ basal keratinocytes are a specialised subpopulation of the stratum basale defined by expression of periostin (POSTN) and co-expression of the basal keratinocyte marker KRT14, present in both prenatal skin and in the hair-bearing skin organoid (SkO) model. They occupy the basal epidermal layer at the epidermis-dermis interface, enriched at sites of hair follicle initiation. These cells function as the critical progenitor branch point for hair follicle epithelial differentiation, giving rise to both the ORS/CL trajectory and the IRS trajectory, and promote cell migration involved in placode specification and dermal invagination.",
+  "searches_performed": [
+    "POSTN+ basal keratinocyte",
+    "basal keratinocyte",
+    "keratinocyte stem cell",
+    "basal cell epidermis",
+    "hair follicle progenitor",
+    "epidermal progenitor cell",
+    "keratinocyte progenitor",
+    "periostin cell",
+    "hair follicle basal cell",
+    "stem cell of epidermis"
+  ],
+  "best_match": {
+    "cl_term": "basal cell of epidermis",
+    "cl_id": "CL:0002187",
+    "cl_definition": "A mitotically active, columnar-shaped keratinocyte located in the stratum basale of the epidermis and attached to the basement membrane. This cell exhibits heterogeneity, encompassing stem and progenitor subpopulations with distinct molecular and proliferative characteristics (Haensel et al., 2020), and serves as the primary source of new keratinocytes for epidermal renewal, homeostasis, and regeneration.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The POSTN+ basal keratinocyte is unambiguously a basal cell of the epidermis: it resides in the stratum basale, expresses the canonical basal keratinocyte marker KRT14, is mitotically active, and functions as an epidermal progenitor. CL:0002187 explicitly notes that basal cells of the epidermis 'exhibit heterogeneity, encompassing stem and progenitor subpopulations with distinct molecular and proliferative characteristics', which directly accommodates the POSTN+ subpopulation as one such molecularly distinct subtype. However, the CL term is broader because it does not capture the POSTN (periostin) expression that defines this specific subpopulation, nor the unique functional specialisation as the hair follicle lineage branch point responsible for initiating both the ORS/CL and IRS differentiation trajectories. The CL term covers the parent category; the report cell type is a more specific, marker-defined subtype within it.",
+  "other_candidates": [
+    {
+      "cl_term": "keratinocyte stem cell",
+      "cl_id": "CL:0002337",
+      "cl_definition": "A stem cell found in the basal layer of the epidermis, hair follicle, and sebaceous gland, characterised by its quiescent nature, high proliferative potential, and capacity for long-term self-renewal. This cell maintains epidermal homeostasis by producing transit-amplifying cells that differentiate to replenish the stratified squamous epithelium.",
+      "reason_rejected": "The report describes POSTN+ basal cells as progenitors/lineage branch-point cells rather than quiescent, long-term self-renewing stem cells. The defining stem cell properties (quiescence, bulge residence, long-term self-renewal) are not attributed to this population in the report. CL:0002187 more accurately captures the identity without imposing stem cell properties not demonstrated for POSTN+ cells."
+    },
+    {
+      "cl_term": "stem cell of epidermis",
+      "cl_id": "CL:1000428",
+      "cl_definition": "A somatic stem cell that is part of the epidermis.",
+      "reason_rejected": "This term is too general (somatic stem cell of epidermis) and, like CL:0002337, implies quiescent stem cell identity not attributed to POSTN+ basal cells. CL:0002187 is a more informative and appropriate broad match."
+    }
+  ],
+  "recommendation": "Use CL:0002187 (basal cell of epidermis) as a broad match (skos:broadMatch). A new, more specific CL term is needed to capture POSTN+ basal keratinocytes as a distinct molecular subtype of the basal epidermal layer defined by periostin expression and specialised for hair follicle lineage initiation. The new term should be defined as a subtype of CL:0002187, distinguished by POSTN expression and its role as the progenitor branch point for ORS/CL and IRS hair follicle trajectories.",
+  "new_term_needed": true
+}

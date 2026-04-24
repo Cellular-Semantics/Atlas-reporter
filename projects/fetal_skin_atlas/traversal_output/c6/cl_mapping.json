@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "Differentiated Keratinocyte (c6)",
+  "working_definition": "A spinous/granular layer keratinocyte in the adult interfollicular epidermis, expressing suprabasal differentiation keratins KRT1 and KRT10, cornified envelope precursors (IVL, LOR, FLG), and desmosomal proteins (DSP, DSG1). This cell has exited the basal progenitor compartment and is committed to terminal differentiation toward the cornified layer.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'differentiated keratinocyte' in CL ontology",
+    "OLS4 searchClasses: 'suprabasal keratinocyte' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "keratinocyte",
+    "cl_id": "CL:0000312",
+    "cl_definition": "A cell type found in the epidermis, hair follicle, and nail that produces and contains keratin. Keratinocytes undergo a process of terminal differentiation and programmed cell death (cornification) as they migrate from the basal to the superficial layers of the epidermis.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000312 'keratinocyte' is the broadest appropriate match for the c6 differentiated keratinocyte cluster. No CL term exists for a differentiated or suprabasal keratinocyte subtype. The cluster expresses canonical suprabasal/terminal differentiation markers (KRT1, KRT10, IVL, LOR, FLG). Reynolds et al. (2021) Fig. 4D legend designates c3, c4, c6, and c7 together as 'differentiated KC' clusters.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000312 (keratinocyte) as a broad match. A new CL term for 'differentiated keratinocyte' or 'suprabasal keratinocyte' may be warranted.",
+  "new_term_needed": true
+}

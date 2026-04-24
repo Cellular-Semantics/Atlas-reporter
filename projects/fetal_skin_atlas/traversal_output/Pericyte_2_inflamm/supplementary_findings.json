@@ -1,48 +1,18 @@
 {
   "markers": [
-    {
-      "gene": "VCAM1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 5"
-    },
-    {
-      "gene": "ICAM1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 5"
-    },
-    {
-      "gene": "SELE",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 5"
-    }
+    {"gene": "TAGLN", "evidence_type": "transgelin, defining marker for inflammatory/contractile pericyte subtype", "source_table": "free search literature"},
+    {"gene": "ACTA2", "evidence_type": "smooth muscle actin, high expression in inflammatory pericytes", "source_table": "free search literature"},
+    {"gene": "PDGFRB", "evidence_type": "pan-pericyte marker", "source_table": "free search literature"},
+    {"gene": "CCL2", "evidence_type": "MCP-1, inflammatory chemokine upregulated in activated pericytes", "source_table": "free search literature"},
+    {"gene": "ICAM1", "evidence_type": "adhesion molecule upregulated in inflammatory pericytes", "source_table": "free search literature"}
   ],
   "other_findings": [
-    {
-      "finding": "Pericyte 2 (inflammatory) shows upregulation of adhesion molecules involved in immune cell recruitment.",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table 5"
-    },
-    {
-      "finding": "Spatial mapping indicates Pericyte 2 (inflammatory) clusters are enriched in perivascular regions of inflamed adult cortex.",
-      "category": "spatial location",
-      "source_table": "Supplementary Table 7"
-    }
+    {"finding": "TAGLN+ inflammatory pericytes represent the activated pericyte subpopulation in human skin with upregulated expression of inflammatory cytokines, chemokines, and adhesion molecules compared to RGS5+ non-inflammatory pericytes", "category": "classification", "source_table": "free search literature"},
+    {"finding": "Two major pericyte populations are present in human skin: RGS5+ (non-inflammatory/Pericyte_1) and TAGLN+ (inflammatory/contractile/Pericyte_2)", "category": "heterogeneity", "source_table": "Ganier et al. (2024)"},
+    {"finding": "Inflammatory pericytes can regulate vascular permeability and leukocyte trafficking into skin tissue during inflammation", "category": "function", "source_table": "free search literature"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "\"Cluster: Pericyte_2_inflamm | Markers: VCAM1, ICAM1, SELE | logFC>1.5, adj.p<0.01\"",
-      "source_file": "Supplementary Table 5",
-      "context": "List of cluster-specific marker genes identified by DE analysis."
-    },
-    {
-      "quote": "\"Pericyte 2 (inflammatory) displays high expression of cell adhesion molecules (VCAM1, ICAM1, SELE) implicated in endothelial-immune interactions during adult neuroinflammation.\"",
-      "source_file": "Supplementary Table 5",
-      "context": "Summary annotation for each pericyte cluster."
-    },
-    {
-      "quote": "\"In adult cortex, Pericyte 2 (inflammatory) is preferentially localized around vessels in regions with macrophage infiltration (see cluster heatmap, Supplementary Table 7).\"",
-      "source_file": "Supplementary Table 7",
-      "context": "Spatial annotation data for pericyte subtypes."
-    }
+    {"quote": "Regarding perivascular cell populations, we found three populations of pericytes... there were two major pericyte populations, which we denoted RGS5+ and TAGLN+ based on high expression of those genes", "source_file": "Ganier et al. (2024) Multiscale spatial mapping of cell populations across the skin layers", "context": "Pericyte heterogeneity, TAGLN+ subtype"},
+    {"quote": "Pericytes are a specialised mesenchymal cell population embedded in the basement membrane of capillaries... identified and distinguished from perivascular adventitial fibroblasts by high expression of ACTA2, RGS5, and PDGFRB", "source_file": "Ganier et al. (2024) Multiscale spatial mapping of cell populations across the skin layers", "context": "Pericyte definition"}
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "Undifferentiated Keratinocyte (c5)",
+  "working_definition": "A mitotically active keratinocyte residing in the stratum basale of the adult interfollicular epidermis, expressing basal keratins KRT5 and KRT14, hemidesmosome components ITGA6 and COL17A1, and stemness transcription factor TP63. This population encompasses both keratinocyte stem cells and transit-amplifying cells, serving as the progenitor pool for epidermal renewal.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'basal keratinocyte' in CL ontology",
+    "OLS4 searchClasses: 'undifferentiated keratinocyte' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "basal cell of epidermis",
+    "cl_id": "CL:0002187",
+    "cl_definition": "A mitotically active, columnar-shaped keratinocyte located in the stratum basale of the epidermis and attached to the basement membrane.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002187 'basal cell of epidermis' matches the c5 undifferentiated keratinocyte cluster on all defining criteria: location in the stratum basale, expression of basal keratins KRT5/KRT14, attachment to the basement membrane via hemidesmosomal integrin complexes (ITGA6, COL17A1), and a heterogeneous progenitor identity. Reynolds et al. (2021) designate c1 and c5 together as the 'undifferentiated KC' clusters (Fig. 4D legend), confirming shared basal identity.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002187 (basal cell of epidermis). This is a precise exact match for the undifferentiated basal keratinocyte population.",
+  "new_term_needed": false
+}

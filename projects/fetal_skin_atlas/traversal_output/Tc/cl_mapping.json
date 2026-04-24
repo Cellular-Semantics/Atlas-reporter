@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Tc",
+  "working_definition": "CD8+ cytotoxic T lymphocyte present in adult human skin, including classical cytotoxic T cells and Tc17/Th17-like cells expressing IL-13, IL-22, or IL-17. Identified in Reynolds et al. (2021) as part of the T cell compartment in adult skin.",
+  "searches_performed": [
+    "cytotoxic T cell",
+    "CD8+ T cell skin",
+    "Tc17 cytotoxic T cell"
+  ],
+  "best_match": {
+    "cl_term": "cytotoxic T cell",
+    "cl_id": "CL:0000910",
+    "cl_definition": "A T cell that is capable of killing target cells through the release of cytotoxic granules or by engaging death receptors on target cells. Typically expresses CD8.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000910 'cytotoxic T cell' directly corresponds to the Tc population in Reynolds et al. (2021), which is defined by CD8A/CD8B expression and cytotoxic effector function (GZMA, GZMB). The Tc17/Th17-like subsets within this cluster are CD8+ cytotoxic T cells with additional cytokine profiles but remain cytotoxic T cells.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000910 (cytotoxic T cell) as an exact match for the Tc cell type.",
+  "new_term_needed": false
+}

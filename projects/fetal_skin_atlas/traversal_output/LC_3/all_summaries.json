@@ -1,93 +1,27 @@
 [
   {
-    "snippet_index": 10,
-    "quotes": [
-      "Among these, Langerhans cells (cluster 10) were identifiable based on their expression of CD207."
+    "paper": {
+      "doi": "10.1126/science.aba6500",
+      "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+      "authors": "Reynolds G et al.",
+      "year": 2021
+    },
+    "snippets": [
+      "The clusters at the convergence of these branches (moDC3, LC4 and migratory DC (Mig. DC)) express transcripts associated with DC maturation (CD83, CCR7, LAMP3, CD40, CD86), immunoregulation (CD274, IDO1, CD200, PDCD1LG2, SOCS1) and migration (FSCN1, PLGRKT, TRAF1, BCL2A1, CFLAR and REL)",
+      "Acquisition of this common gene signature is associated with loss of genes conferring subset identity in mice"
     ],
-    "summary": "Langerhans cells, including any potential LC_3 subsets, are identifiable in skin by their expression of CD207 (Langerin) marker.",
-    "categories": [
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:227334677",
-    "source_title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
-    "source_authors": "M. Dhariwala et al.",
-    "source_year": null,
-    "snippet": "Cluster 6 expressed CD3, CD56, and gdTCR, likely representing a mixed population containing both gd T cells and natural killer (NK) T cells, possibly also NK cells or innate lymphoid cells, with the latter being less likely given the positive CD3 expression. These innate type T cells constituted a small fraction of lymphocytes at either age, as has been shown previously for adult skin. 18,19 D19 + HLA-DR Lo (cluster 7) and CD19 + HLA-DR Hi (cluster 8) B cells were found at low frequency irrespective of age. In 3 fetal skin samples, however, a third CD19 + HLA-DR Int subset was detected that co-expressed CD24 + (cluster 9), a marker typically seen on immature B cells and their precursors. 20 Flow cytometry on an additional 4 fetal samples confirmed the presence of this population in the range of 3%-7% of live-CD45 cells (Figures S1E and S1F). \n\nClusters 10-15, found in both fetal and adult skin demonstrated moderate to high expression of HLA-DR, CD11b, or CD11c, consistent with a myeloid origin. Among these, Langerhans cells (cluster 10) were identifiable based on their expression of CD207. Clusters 11-13 expressed CD11c indicative of classical or monocyte-derived dendritic cells. 21,22 ][25] Definitive assignment of clusters 16 and 17, which were enriched in fetal as compared to adult skin, was precluded by the absence of subset-defining markers. Staining of separate fetal samples with a myeloid-focused antibody panel (Figure S1G) revealed that, consistent with previous reports, 13 macrophages are relatively overrepresented among CD45 + cells in fetal versus adult skin. We did not see significant differences in the prevalence other myeloid populations in the limited number of samples we were able to examine (Figures S1H-S1J)."
+    "relevance": "primary source: LC maturation signatures"
   },
   {
-    "snippet_index": 12,
-    "quotes": [
-      "Langerhans cells make up 3-5% of all nucleated cells in the epidermis and occupy the stratum spinosum, a suprabasal epidermal layer",
-      "LCs are stellate cells that protrude their dendrites via tight junctions toward the stratum corneum and as such can probe for antigens across several layers of the epidermis without disrupting the permeability barrier.",
-      "LCs acquire a typical DC phenotype after birth by expressing major histocompatibility complex II (MHCII) molecules and the integrin \u03b1X chain (CD11c).",
-      "Unlike mouse LCs, human LCs express low levels of CD11c and no F4/80, whereas they express CD1a and CD1c, two MHCI-related molecules involved in the presentation of lipid antigens (7).",
-      "LCs express the C-type lectin Langerin (CD207), which is involved in the formation of Birbeck granules, endosomal organelles that are typical for LCs.",
-      "human and mouse LCs express SIRP\u03b1 (CD172\u03b1), CD11b and CX3CR1, which is also expressed by most type 2 cDCs."
+    "paper": {
+      "doi": "10.1038/s41385-022-00492-0",
+      "title": "HIV transmitting mononuclear phagocytes; integrating the old and new",
+      "authors": "Vine EE et al.",
+      "year": 2022
+    },
+    "snippets": [
+      "Recent single cell transcriptomic analysis of the human stratified squamous epithelium has suggested that LCs exist as multiple subsets; two at steady state termed LC1 and LC2, an activated subset defined by high CD83 and low CCR7 expression termed LC3, and a migratory subset defined by high CCR7 expression termed LC4"
     ],
-    "summary": "Langerhans cells are stellate cells comprising 3-5% of epidermal nucleated cells, mainly in the stratum spinosum. They can present antigens across layers, express multiple markers (CD1a, CD1c, CD11b, low CD11c, SIRP\u03b1, CX3CR1, and Langerin/CD207), and have distinct human vs. mouse profiles.",
-    "categories": [
-      "location",
-      "morphology",
-      "markers",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:3379649",
-    "source_title": "Langerhans Cells: Sensing the Environment in Health and Disease",
-    "source_authors": "J. Deckers et al.",
-    "source_year": null,
-    "snippet": "Langerhans cells make up 3-5% of all nucleated cells in the epidermis and occupy the stratum spinosum, a suprabasal epidermal layer that is characterized by \"spiny\" keratinocytes that undergo reinforcement of their cytoskeleton. LCs are stellate cells that protrude their dendrites via tight junctions toward the stratum corneum and as such can probe for antigens across several layers of the epidermis without disrupting the permeability barrier. LCs acquire a typical DC phenotype after birth by expressing major histocompatibility complex II (MHCII) molecules and the integrin \u03b1X chain (CD11c). Unlike mouse LCs, human LCs express low levels of CD11c and no F4/80, whereas they express CD1a and CD1c, two MHCI-related molecules involved in the presentation of lipid antigens (7). Epithelial cell adhesion molecule (EpCAM) regulates LC adhesion to keratinocytes and promotes LC migration to the draining lymph nodes (14). LCs express the C-type lectin Langerin (CD207), which is involved in the formation of Birbeck granules, endosomal organelles that are typical for LCs. These Birbeck granules have been shown to internalize viruses (15) and are thought to be part of the endosomal recycling complex (16). The presence of Langerin alone is not reliable to unambiguously define LCs, as Langerin expression has also been demonstrated on cDCs in the dermis, lungs, and spleen. Likewise, human and mouse LCs express SIRP\u03b1 (CD172\u03b1), CD11b and CX3CR1, which is also expressed by most type 2 cDCs. Since the aforementioned markers are shared by different subsets of myeloid cells, multicolor flow cytometry with a minimal set of lineage imprinted markers is required for unequivocal identification of LCs in the skin and skin-draining lymph nodes (17).\n\nLangerhans cells clearly share similarities with both DCs and macrophages (Figure 1). Doebel et al. recently"
-  },
-  {
-    "snippet_index": 14,
-    "quotes": [
-      "Langerhans cells (LC) are a unique population of tissue-resident macrophages with dendritic cell (DC) functionality that form a network of cells across the epidermis of the skin.",
-      "Their location at the skin barrier suggests an important role for LC as immune sentinels at the skin surface.",
-      "LC are a unique type of tissue-resident macrophages, and recent evidence also supports an immunoregulatory role of LC at steady state and during specific inflammatory conditions, highlighting the impact of cutaneous environment in shaping LC functionality.",
-      "LC function as DC-like cells that prime T cell immunity."
-    ],
-    "summary": "Langerhans cells are tissue-resident macrophages with dendritic cell-like functions, forming a network in the epidermis. They act as immune sentinels and can both prime T cell immunity and regulate immune responses depending on environmental cues.",
-    "categories": [
-      "location",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:251856058",
-    "source_title": "The Roles of Skin Langerhans Cells in Immune Tolerance and Cancer Immunity",
-    "source_authors": "Li Zhou et al.",
-    "source_year": null,
-    "snippet": "Langerhans cells (LC) are a unique population of tissue-resident macrophages with dendritic cell (DC) functionality that form a network of cells across the epidermis of the skin. Their location at the skin barrier suggests an important role for LC as immune sentinels at the skin surface. The classification of LC as DC over the past few decades has driven the scientific community to extensively study how LC function as DC-like cells that prime T cell immunity. However, LC are a unique type of tissue-resident macrophages, and recent evidence also supports an immunoregulatory role of LC at steady state and during specific inflammatory conditions, highlighting the impact of cutaneous environment in shaping LC functionality. In this mini review, we discuss the recent literature on the immune tolerance function of LC in homeostasis and disease conditions, including malignant transformation and progression; as well as LC functional plasticity for adaption to microenvironmental cues and the potential connection between LC population heterogeneity and functional diversity. Future investigation into the molecular mechanisms that LC use to integrate different microenvironment cues and adapt immunological responses for controlling LC functional plasticity is needed for future breakthroughs in tumor immunology, vaccine development, and treatments for inflammatory skin diseases."
-  },
-  {
-    "snippet_index": 19,
-    "quotes": [
-      "Langerhans cells (LC) constitute approximately 3-8% of all the cells in the epidermis.",
-      "They are the most abundant in the basal layer and the spinous layer of the epidermis.",
-      "The expression of CD1a molecules on the LC surface is a characteristic feature of this cell line. Monoclonal Anti-Human HLA-DR antibodies and Anti-Human CD1a antibodies can be considered a good marker of Langerhans cells [15,16]."
-    ],
-    "summary": "Langerhans cells constitute 3-8% of all epidermal cells, being most abundant in the basal and spinous layers. Their characteristic markers include CD1a and HLA-DR.",
-    "categories": [
-      "location",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:34731702",
-    "source_title": "Changes of Langerhans cells during skin ageing",
-    "source_authors": "Barbara Zegarska et al.",
-    "source_year": null,
-    "snippet": "Skin ageing is a complex process depending on external, genetic and hormonal factors [1][2][3][4][5]. Increased susceptibility to skin infections and rising incidence of skin neoplasms observed in the elderly indicate that skin immunity decreases with age [6][7][8][9]. \n\nLangerhans cells (LC) constitute approximately 3-8% of all the cells in the epidermis. They play a role in the pathogenesis of various dermatoses and take part in skin neoplastic transformation. The number and appearance of LC change depending on the type of dermatosis and also during the skin ageing processes [10][11][12][13]. The main roles attributed to LC in the skin immune system concern the immune surveillance. They are the most abundant in the basal layer and the spinous layer of the epidermis. \n\nUnder physiological conditions the number of LC in the epidermis ranges from 450 to 1000 per mm 2 [8,10,11,14]. The expression of CD1a molecules on the LC surface is a characteristic feature of this cell line. Monoclonal Anti-Human HLA-DR antibodies and Anti-Human CD1a antibodies can be considered a good marker of Langerhans cells [15,16]. \n\nAim 1) Quantitative evaluation of LC/mm\u00b2 -CD1a + , HLA-DR + in different types of skin ageing. \n\n2) The assessment whether there is any difference in the appearance of LC depending on the type of skin ageing can be observed."
-  },
-  {
-    "snippet_index": 25,
-    "quotes": [
-      "Langerhans cell histiocytosis (LCH) is a disease characterized by the proliferation of Langerhans cells that express an immunophenotype positive for S100 protein, CD1 (CD1a), and Langerin (CD207) and contain cytoplasmic Birbeck granules [1]."
-    ],
-    "summary": "This snippet identifies key markers for Langerhans cells, including S100 protein, CD1a, Langerin (CD207), and cytoplasmic Birbeck granules.",
-    "categories": [
-      "markers",
-      "morphology"
-    ],
-    "source_corpus_id": "CorpusId:266081930",
-    "source_title": "Adult localized Langerhans cell histiocytosis: A case report",
-    "source_authors": "Pan-Pan Yang et al.",
-    "source_year": null,
-    "snippet": "Langerhans cell histiocytosis (LCH) is a disease characterized by the proliferation of Langerhans cells that express an immunophenotype positive for S100 protein, CD1 (CD1a), and Langerin (CD207) and contain cytoplasmic Birbeck granules [1]. Several organs are involved in this process. The childhood and adult forms of LCH should be considered separately. Two-thirds or more children under one year of age and those aging 1-4 years have multi-system diseases, including those of the liver, lungs, or bone marrow. In adults, the peak age of presentation is between 20 years and 35 years, with multi-system diseases occurring in one-third to two-thirds of adults with LCH. The bones are the most commonly involved organs. Skin and mucosal involvement are the second most common manifestations in adults [2]. Here, we report a case of adult LCH that presented solely with skin involvement, without systemic damage."
+    "relevance": "secondary source: LC3 defined as activated LC (high CD83, low CCR7)"
   }
 ]

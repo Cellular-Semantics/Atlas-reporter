@@ -1,0 +1,36 @@
+{
+  "cell_type_label": "Early endothelial cells (prenatal skin)",
+  "working_definition": "Early endothelial cells are the root progenitor population of the blood vascular endothelium in prenatal human skin (7–17 PCW), expressing pan-endothelial markers (PECAM1/CD31, CDH5/VE-cadherin, CLDN5) but lacking the arteriolar marker GJA5 and the venular marker PLVAP. They are a bifurcating progenitor state from which both arteriolar (capillaries, capillary arterioles, arterioles; GJA5+) and venular (postcapillary venules, venules; PLVAP+) lineages differentiate during dermal vascular tree formation. Full lineage diversification from this state requires macrophage-derived pro-angiogenic signals.",
+  "searches_performed": [
+    "early endothelial cell",
+    "endothelial progenitor cell",
+    "embryonic blood vessel endothelial progenitor cell",
+    "angioblast",
+    "blood vessel endothelial cell progenitor"
+  ],
+  "best_match": {
+    "cl_term": "embryonic blood vessel endothelial progenitor cell",
+    "cl_id": "CL:0002546",
+    "cl_definition": "An endothelial progenitor cell that participates in angiogenesis during development.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002546 is defined as 'an endothelial progenitor cell that participates in angiogenesis during development', classified as an embryonic mesodermal cell. This aligns well with the developmental (prenatal, 7–17 PCW) context and the progenitor-state identity of the early endothelial cells, which are the root population driving dermal angiogenesis. However, the CL definition is substantially more general: it does not capture (1) the specific bifurcating lineage potential into arteriolar (GJA5+) and venular (PLVAP+) branches, (2) the dermal/skin anatomical location, or (3) the dependence on macrophage signals for full differentiation. The atlas cell type is a skin-specific, fate-bifurcating progenitor with a defined immune niche, whereas CL:0002546 is a generic embryonic endothelial progenitor. The match is therefore broad rather than exact. CL:0000566 (angioblastic mesenchymal cell) was considered but rejected as it is defined as a mesenchymal stem cell — a less committed, pre-endothelial lineage — whereas the early endothelial cells in the atlas are already endothelial-identity cells.",
+  "other_candidates": [
+    {
+      "cl_term": "angioblastic mesenchymal cell",
+      "cl_id": "CL:0000566",
+      "cl_definition": "A mesenchymal stem cell capable of developing into blood vessel endothelium.",
+      "reason_rejected": "Defined as a mesenchymal stem cell upstream of the endothelial lineage, not an endothelial cell itself. The early endothelial cells in the prenatal skin atlas are already committed endothelial cells (PECAM1+, CDH5+, CLDN5+), making this term too upstream in the lineage hierarchy."
+    },
+    {
+      "cl_term": "adult endothelial progenitor cell",
+      "cl_id": "CL:0002619",
+      "cl_definition": "An adult angioblastic cell released from the bone marrow, or from the kidney in some teleost species, capable of blood circulation and participation in angiogenesis by differentiating into blood vessel endothelial cells.",
+      "reason_rejected": "Defined as an adult bone-marrow-derived circulating progenitor, which is biologically distinct from the tissue-resident fetal skin endothelial progenitor state. The developmental context (adult vs fetal) and origin (bone marrow vs in situ dermal) are incompatible."
+    }
+  ],
+  "recommendation": "Use CL:0002546 (embryonic blood vessel endothelial progenitor cell) as a broad match interim annotation. A new, more specific CL term is needed to represent a fetal skin-resident blood vascular endothelial progenitor capable of bifurcating into arteriolar and venular lineages, ideally capturing the pan-endothelial marker profile (PECAM1+, CDH5+, CLDN5+, GJA5-, PLVAP-) and developmental window. This term would sit as a subtype of CL:0002546 with location qualifier restricted to dermis and with explicit arteriolar/venular bifurcation potential.",
+  "new_term_needed": true
+}

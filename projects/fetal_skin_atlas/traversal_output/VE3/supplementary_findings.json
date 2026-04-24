@@ -1,5 +1,23 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {"gene": "SNCG", "evidence_type": "scRNA-seq cluster marker", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "ACKR1", "evidence_type": "scRNA-seq cluster marker, immunostaining validated", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "PECAM1", "evidence_type": "pan-vascular endothelial marker", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "EMCN", "evidence_type": "vascular endothelial marker", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "IL6", "evidence_type": "inflammatory cytokine, scRNA-seq", "source_table": "Reynolds 2021 Fig 5B"},
+    {"gene": "IL33", "evidence_type": "inflammatory cytokine, scRNA-seq", "source_table": "Reynolds 2021 Fig 5B"},
+    {"gene": "SELE", "evidence_type": "leukocyte adhesion molecule, scRNA-seq", "source_table": "Reynolds 2021 Fig 5B"},
+    {"gene": "ICAM1", "evidence_type": "leukocyte adhesion molecule, scRNA-seq", "source_table": "Reynolds 2021 Fig 5B"}
+  ],
+  "other_findings": [
+    {"finding": "VE3 forms approximately 2% of endothelial cells in healthy adult dermis", "category": "abundance", "source_table": "Reynolds 2021 main text"},
+    {"finding": "VE3 expands significantly in AD and psoriasis lesional skin", "category": "disease association", "source_table": "Reynolds 2021 Fig 5D"},
+    {"finding": "Fetal skin VE cells align transcriptionally with adult VE3", "category": "developmental program", "source_table": "Reynolds 2021 Fig 5F"},
+    {"finding": "SNCG+PECAM1+ VE3 cells form distended vascular structures in superficial dermis by whole-mount immunostaining", "category": "morphology/location", "source_table": "Reynolds 2021 Fig 5C"}
+  ],
+  "evidence_quotes": [
+    {"quote": "Three distinct states of PECAM1(CD31)-expressing vascular endothelial cells (VE1, VE2, VE3) are present in adult dermis. VE3, which forms ~2% of endothelial cells, is characterized by gamma synuclein (SNCG) and high expression of the venular capillary marker ACKR1", "source_file": "Reynolds 2021 main text", "context": "VE3 identity"},
+    {"quote": "VE3 co-express inflammatory cytokines, chemokines and leukocyte adhesion molecules including IL6, IL33, SELE and ICAM1", "source_file": "Reynolds 2021 main text", "context": "VE3 inflammatory signature"},
+    {"quote": "we observed significant expansion of VE3 in AD and psoriasis lesional skin", "source_file": "Reynolds 2021 main text", "context": "VE3 disease expansion"}
+  ]
 }

@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Plasma",
+  "working_definition": "Plasma cell (antibody-secreting cell) present in adult human skin. Identified in Reynolds et al. (2021) as part of the adaptive immune compartment in adult skin. Characterised by expression of MZB1, JCHAIN, IGHG, and CD138 (SDC1).",
+  "searches_performed": [
+    "plasma cell",
+    "antibody-secreting cell",
+    "plasmablast skin"
+  ],
+  "best_match": {
+    "cl_term": "plasma cell",
+    "cl_id": "CL:0000786",
+    "cl_definition": "A terminally differentiated B lymphocyte that produces a single type of antibody. Plasma cells are non-dividing and are highly adapted for the synthesis and secretion of immunoglobulin.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000786 'plasma cell' directly corresponds to the Plasma population in Reynolds et al. (2021), characterised by antibody secretion markers MZB1, JCHAIN, and IGHG.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000786 (plasma cell) as an exact match for the Plasma cell type.",
+  "new_term_needed": false
+}

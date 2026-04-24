@@ -1,10 +1,11 @@
 {
   "label": "LE2",
   "resolved_names": [
-    "Lymphatic Endothelial 2"
+    "collecting lymphatic endothelial cell",
+    "LE2"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "The label 'LE2' is mapped in Supplementary Table 7 ('Cell type annotation and marker genes'), where 'LE2' corresponds to 'Lymphatic Endothelial 2'. This is a fine-grained endothelial cell subtype in the skin, differentiated from other endothelial populations. The mapping is consistent in both prenatal and adult skin datasets in the supplementary tables."
+  "evidence": "Reynolds 2021: LE2 defined by higher PDPN expression; resembles PDPN+ collecting lymphatic vessels in human dermis"
 }

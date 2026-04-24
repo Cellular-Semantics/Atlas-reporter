@@ -1,0 +1,27 @@
+{
+  "cell_type_label": "Differentiated Keratinocyte (c3)",
+  "working_definition": "A spinous/granular layer keratinocyte in the adult interfollicular epidermis, expressing suprabasal differentiation keratins KRT1 and KRT10, cornified envelope precursors (IVL, LOR, FLG), and desmosomal proteins (DSP, DSG1). This cell has exited the basal progenitor compartment and is committed to terminal differentiation toward the cornified layer.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'differentiated keratinocyte' in CL ontology",
+    "OLS4 searchClasses: 'suprabasal keratinocyte' in CL ontology",
+    "OLS4 searchClasses: 'keratinocyte' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "keratinocyte",
+    "cl_id": "CL:0000312",
+    "cl_definition": "A cell type found in the epidermis, hair follicle, and nail that produces and contains keratin. Keratinocytes undergo a process of terminal differentiation and programmed cell death (cornification) as they migrate from the basal to the superficial layers of the epidermis.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000312 'keratinocyte' is a broad match for the c3 differentiated keratinocyte cluster. The cluster is clearly a committed suprabasal keratinocyte expressing terminal differentiation markers (KRT1, KRT10, IVL, LOR, FLG) in the spinous or granular layer, but no CL term exists specifically for 'differentiated keratinocyte' or 'suprabasal keratinocyte' as a discrete class. The closest more specific CL term would be a granular cell, but no such CL term exists. CL:0000312 captures the keratinocyte identity while acknowledging that the precise substate cannot be exactly matched.",
+  "other_candidates": [
+    {
+      "cl_term": "basal cell of epidermis",
+      "cl_id": "CL:0002187",
+      "reason_rejected": "Incorrect: c3 is a differentiated, suprabasal keratinocyte. It has exited the basal compartment and does not reside in the stratum basale."
+    }
+  ],
+  "recommendation": "Use CL:0000312 (keratinocyte) as a broad match. A new CL term for 'differentiated keratinocyte' or 'suprabasal keratinocyte' may be warranted to capture these subclusters more precisely.",
+  "new_term_needed": true
+}

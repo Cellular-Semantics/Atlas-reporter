@@ -1,27 +1,44 @@
 {
-  "cell_type_label": "Monocyte (activated/differentiating)",
-  "working_definition": "An activated monocyte in prenatal human skin that has undergone tissue adaptation following egress from bone marrow, characterised by upregulation of IL1B and TNF signalling pathway genes. This population represents monocytes transitioning from a circulating CCR2hi state toward tissue-resident macrophage or dendritic cell fates within the prenatal skin microenvironment.",
+  "cell_type_label": "Monocyte (activated/differentiating) — prenatal skin",
+  "working_definition": "A CCR2-high classical monocyte found in the dermal immune compartment of fetal skin (7–17 PCW) that has undergone tissue adaptation following egress from the bone marrow or fetal liver, characterised by upregulation of IL1B, TNF, CD14, and S100A8/S100A9. This population represents an intermediate state actively transitioning from a circulating monocyte toward a tissue-resident macrophage or dendritic cell fate, distinct from resting circulating monocytes by its peripheral organ-specific transcriptional programme.",
   "searches_performed": [
-    "activated monocyte (CL, OLS4 searchClasses)",
-    "inflammatory monocyte (CL, OLS4 searchClasses)"
+    "activated monocyte",
+    "monocyte",
+    "classical monocyte",
+    "inflammatory monocyte",
+    "tissue monocyte",
+    "differentiating monocyte",
+    "CCR2 positive monocyte"
   ],
   "best_match": {
     "cl_term": "classical monocyte",
     "cl_id": "CL:0000860",
-    "cl_definition": "A monocyte that responds rapidly to microbial stimuli by secreting cytokines and antimicrobial factors and which is characterized by high expression of CCR2 in both rodents and humans.",
+    "cl_definition": "A monocyte that responds rapidly to microbial stimuli by secreting cytokines and antimicrobial factors and which is characterized by high expression of CCR2 in both rodents and humans, negative for the lineage markers CD3, CD19, and CD20, and of larger size than non-classical monocytes.",
     "match_type": "broad match",
     "skos_mapping": "skos:broadMatch",
-    "confidence": "low"
+    "confidence": "medium"
   },
-  "justification": "No CL term exists for 'activated monocyte' or 'differentiating monocyte' as a distinct cell type. The activated/differentiating monocyte in prenatal skin represents a transitional cell state between classical monocytes and tissue macrophages/dendritic cells, characterised by upregulation of tissue-adaptation genes (IL1B, TNF signalling). CL:0000860 'classical monocyte' is the closest match as the parent lineage, but it does not capture the activated/differentiating phenotype. CL:0000861 'elicited macrophage' was considered but represents a downstream macrophage fate rather than the transitional monocyte state.",
+  "justification": "The atlas cell type shares the core identity features of CL:0000860 classical monocyte: CCR2-high expression and CD14 positivity are explicitly noted in the report, and the cell type sits within the same lineage. The CL definition of classical monocyte captures the CCR2hi lineage identity and the capacity to secrete cytokines (including TNF) and differentiate into macrophages/DCs upon tissue entry. However, the atlas cell type has a distinguishing feature not encoded in the CL term: it specifically represents a tissue-adapted, peripherally activated state characterised by upregulation of IL1B and TNF signalling genes — a transcriptional state explicitly distinct from resting circulating monocytes. No CL term exists for an activated or tissue-adapting monocyte as a discrete transitional state. CL:0000860 is therefore a valid but insufficiently specific parent term. CL:0000576 monocyte was considered but rejected as even less specific. CL:0002057 (CD14-positive, CD16-negative classical monocyte) is a narrower marker-defined subtype with additional markers (CD64, CD163) not mentioned in the report, and still defines a circulating rather than tissue-adapted state.",
   "other_candidates": [
+    {
+      "cl_term": "monocyte",
+      "cl_id": "CL:0000576",
+      "cl_definition": "Myeloid mononuclear recirculating leukocyte that can act as a precursor of tissue macrophages, osteoclasts and some populations of tissue dendritic cells.",
+      "reason_rejected": "This is the parent class of classical monocyte and is too broad; CL:0000860 captures the CCR2hi lineage identity more specifically and is therefore a better (less broad) match."
+    },
+    {
+      "cl_term": "CD14-positive, CD16-negative classical monocyte",
+      "cl_id": "CL:0002057",
+      "cl_definition": "A classical monocyte that is CD14-positive, CD16-negative, CD64-positive, CD163-positive.",
+      "reason_rejected": "This marker-defined subtype requires CD64 and CD163 co-expression, which are not mentioned in the report, and it still represents a circulating monocyte subtype that does not capture the tissue-adapted activated state distinguishing this atlas cell type."
+    },
     {
       "cl_term": "intermediate monocyte",
       "cl_id": "CL:0002393",
       "cl_definition": "A monocyte that has characteristics of both patrolling and inflammatory monocytes.",
-      "reason_rejected": "Intermediate monocytes are defined by CD14++CD16+ surface phenotype, representing a distinct circulating subset. The activated/differentiating monocyte in prenatal skin is a tissue-adapted state, not the circulating intermediate subset."
+      "reason_rejected": "Intermediate monocytes are defined by a CD14++CD16+ circulating phenotype distinct from the tissue-adapted IL1B/TNF-upregulated state described in the report; the atlas cell type is not a CD16-positive intermediate monocyte."
     }
   ],
-  "recommendation": "Use CL:0000860 (classical monocyte) as a broad match. This is a transitional cell state that may warrant a new CL term if reproducibly identified across datasets.",
-  "new_term_needed": false
+  "recommendation": "Use CL:0000860 (classical monocyte) as a broad parent mapping. A new CL term is warranted for a tissue-adapted, peripherally activated CCR2-high monocyte characterised by upregulation of IL1B and TNF signalling genes, representing a transitional state between circulating classical monocyte and tissue-resident myeloid cell (macrophage or dendritic cell) in peripheral fetal organs including skin.",
+  "new_term_needed": true
 }

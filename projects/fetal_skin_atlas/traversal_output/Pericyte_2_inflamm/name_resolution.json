@@ -1,11 +1,8 @@
 {
   "label": "Pericyte_2_inflamm",
-  "resolved_names": [
-    "Pericyte 2 (inflammatory)",
-    "inflammatory pericyte"
-  ],
+  "resolved_names": ["Inflammatory pericyte", "TAGLN+ pericyte", "contractile pericyte", "activated pericyte"],
   "scope": "adult",
-  "tissue_context": "skin",
-  "confidence": "medium",
-  "evidence": "The label 'Pericyte_2_inflamm' likely refers to a subcluster of pericytes with an inflammatory gene expression profile, as pericyte subtypes with similar labels (e.g., 'Pericyte_2', 'inflammatory pericyte') are named in the supplementary tables and figure legends in single-cell atlases. In this paper, pericytes are discussed in both main text and supplementary materials (such as cell-type annotation tables, e.g., 'Table S2' or cluster heatmaps), often using similar nomenclature. The exact phrase 'Pericyte_2_inflamm' was not found in the main text, but matching cluster annotation conventions indicate this cluster is called 'Pericyte 2 (inflammatory)' or 'inflammatory pericyte' by the authors. This is supported by usage such as 'inflammatory pericyte' in cluster annotation plots and heatmaps."
+  "tissue_context": "adult human skin",
+  "confidence": "high",
+  "evidence": "Reynolds et al. (2021) identify two pericyte populations in adult skin: Pericyte_1 (non-inflammatory) and Pericyte_2 (inflammatory). Literature on human skin pericytes (Ganier et al. 2024) identifies RGS5+ and TAGLN+ pericyte subpopulations. The inflammatory pericyte subtype (Pericyte_2) corresponds to the TAGLN+/ACTA2-high population with upregulated expression of cytokines, chemokines, and adhesion molecules relative to non-inflammatory pericytes."
 }

@@ -1,8 +1,11 @@
 {
   "label": "LC_4",
-  "resolved_names": [],
+  "resolved_names": [
+    "migratory Langerhans cell",
+    "LC4 Langerhans cell"
+  ],
   "scope": "adult",
-  "tissue_context": "skin",
-  "confidence": "low",
-  "evidence": "The provided main text and metadata from the atlas paper are focused on prenatal human skin and skin organoids. The label 'LC_4' was not directly mentioned in the paper excerpt or available supplementary material. The label likely refers to a specific cluster, possibly a subset of Langerhans cells ('LC'), given the context, but there is no explicit mapping or naming for 'LC_4' in the adult skin dataset in the available information. Therefore, the cell type annotation label 'LC_4' remains unresolved."
+  "tissue_context": "adult skin epidermis",
+  "confidence": "high",
+  "evidence": "Reynolds 2021: LC4 converges with migratory DC signature (CD83, CCR7, LAMP3, CD40, CD86, FSCN1); Vine et al. 2021: LC4 = migratory LCs defined by high CCR7. Liu et al. 2021: LC3 and LC4 are LC1/LC2 in different functional states"
 }

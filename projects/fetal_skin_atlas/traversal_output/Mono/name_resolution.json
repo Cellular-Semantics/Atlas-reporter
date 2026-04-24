@@ -1,10 +1,8 @@
 {
   "label": "Mono",
-  "resolved_names": [
-    "Monocyte"
-  ],
+  "resolved_names": ["Monocyte", "skin monocyte", "Inf. mono"],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult human skin",
   "confidence": "high",
-  "evidence": "In Extended Data Figure 6 and related supplementary tables of the atlas paper (DOI: 10.1038/s41586-024-08002-x), the authors annotate immune clusters with the label 'Mono' and refer to them explicitly as 'Monocyte' in cluster legends and text. The tissue context is skin, and the label is mapped directly in adult and prenatal datasets."
+  "evidence": "Reynolds et al. (2021) annotated 14 states of mononuclear phagocytes (MPs) in human skin. The UMAP figure legend lists 'Inf. = inflammatory, Mono mac = monocyte derived macrophage'. Monocytes appear as a distinct population in the healthy adult skin dataset and were annotated using TransferAnchors alignment to blood MPs. In the figure abbreviations: 'Mono mac = monocyte derived macrophage'. The 'Mono' label refers to classical skin monocytes distinguished from monocyte-derived macrophages."
 }

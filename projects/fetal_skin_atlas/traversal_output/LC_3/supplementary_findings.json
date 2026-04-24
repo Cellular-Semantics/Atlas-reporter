@@ -1,5 +1,37 @@
 {
-  "markers": [],
-  "other_findings": [],
+  "markers": [
+    {
+      "gene": "CD83",
+      "evidence_type": "high expression; maturation marker",
+      "source_table": "Reynolds 2021 / Vine et al. 2022"
+    },
+    {
+      "gene": "CCR7",
+      "evidence_type": "low expression (distinguishes from LC4)",
+      "source_table": "Vine et al. 2022"
+    },
+    {
+      "gene": "CD40",
+      "evidence_type": "maturation marker",
+      "source_table": "Reynolds 2021"
+    },
+    {
+      "gene": "CD86",
+      "evidence_type": "co-stimulatory; maturation marker",
+      "source_table": "Reynolds 2021"
+    },
+    {
+      "gene": "LAMP3",
+      "evidence_type": "maturation marker",
+      "source_table": "Reynolds 2021"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "LC3 is at convergence of LC differentiation trajectory; activated state with maturation signature",
+      "category": "differentiation",
+      "source_table": "Reynolds 2021 Fig 3C / Vine et al. 2022"
+    }
+  ],
   "evidence_quotes": []
 }

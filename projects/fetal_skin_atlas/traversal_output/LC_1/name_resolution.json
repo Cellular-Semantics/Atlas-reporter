@@ -1,10 +1,11 @@
 {
   "label": "LC_1",
   "resolved_names": [
-    "Langerhans cell 1"
+    "proliferating Langerhans cell",
+    "LC1 Langerhans cell"
   ],
   "scope": "adult",
-  "tissue_context": "skin (epidermis)",
+  "tissue_context": "adult skin epidermis",
   "confidence": "high",
-  "evidence": "In the Supplementary Table 4 (\u2018Cell type annotation table\u2019), 'LC_1' is mapped to 'Langerhans cell 1'. The main text and supplementary figures (e.g., Extended Data Fig. 4, Supp Table\u00a04) refer to 'LC_1' as a Langerhans cell cluster identified by the authors in both adult and prenatal skin datasets. This granularity matches the label\u2019s usage in the fine cluster context."
+  "evidence": "Reynolds 2021: LC1 has highest enrichment of cell cycle genes in AD and psoriasis; FACS index data shows LC1 enriched in Langerin+CD1aloCD11clo gate. Liu et al. 2021 (CorpusId:237485916): LC1 = CD207hi, CD1a, EPCAM classic steady-state LCs"
 }

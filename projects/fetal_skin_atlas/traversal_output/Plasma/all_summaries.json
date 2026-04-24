@@ -1,294 +1,33 @@
 [
   {
-    "snippet_index": 1,
-    "quotes": [
-      "Notably, plasma cells exhibited the lowest ATM score, further highlighting their potential role as pivotal contributors in our model interpretation (Fig. 2c, d, g, h).",
-      "plasma cells adjacent to tumor cells demonstrates its beneficial spatial location to play its further antitumor immunity.",
-      "within the GSE120575 cohort, we found that a higher plasma cell ratio was associated with improved survival and enhanced immune response (Fig. 2e, f).",
-      "this particular cell population predominantly exhibited IgG expression, with a subset displaying IgA (Fig. S7e, f).",
-      "previous investigations corroborated the correlation between IgG+ plasma cells and enhanced survival [38,39]."
-    ],
-    "summary": "This snippet describes that plasma cells, particularly IgG+ plasma cells, are found adjacent to tumor cells in melanoma and are associated with improved survival and immune response. It also emphasizes plasma cells' distinct spatial location and their beneficial role in antitumor immunity.",
-    "categories": [
-      "location",
-      "function",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:268535320",
-    "source_title": "Multi-dimensional characterization of apoptosis in the tumor microenvironment and therapeutic relevance in melanoma",
-    "source_authors": "Jing Ye et al.",
-    "source_year": null,
-    "snippet": "In addition to the insights gained from bulk sample analysis, we extended our investigation to explore the ATM at a single-cell resolution to better understand intratumor heterogeneity. Employing graph-based principal component clustering combined with marker-based annotations, we classified cells from the GSE120575 dataset into 14 clusters based on the RNA_snn_res.0.55 and cells from the GSE123139 dataset into 10 clusters based on the RNA_snn_res.0.15, revealing distinct cellular subpopulations (Figs. 2c, d and S7a, b). Notably, plasma cells exhibited the lowest ATM score, further highlighting their potential role as pivotal contributors in our model interpretation (Fig. 2c, d, g, h). Moreover, analyzing the spatial transcriptomic data of Human Skin Melanoma obtained from the official 10X platform consistently demonstrated that plasma cells had the lowest ATM score (Fig. 2i). Interestingly, plasma cells adjacent to tumor cells demonstrates its beneficial spatial location to play its further antitumor immunity. \n\nFurthermore, within the GSE120575 cohort, we found that a higher plasma cell ratio was associated with improved survival and enhanced immune response (Fig. 2e, f). Through further analysis, it was determined that this particular cell population predominantly exhibited IgG expression, with a subset displaying IgA (Fig. S7e, f). Moreover, previous investigations corroborated the correlation between IgG+ plasma cells and enhanced survival [38,39]."
+    "paper_id": "DOI:10.1126/science.aba6500",
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "authors": "Reynolds G et al.",
+    "year": 2021,
+    "source": "primary_atlas",
+    "snippets": [
+      "34 cell states were identified (Fig. 1B-C, Table S1). We were able to identify these cell states by deconvolution analysis using AutoGeneS of adult healthy bulk RNA-seq"
+    ]
   },
   {
-    "snippet_index": 3,
-    "quotes": [
-      "plasma cells are also found at non-mucosal sites, and IgA antibodies are present in the circulation.",
-      "A relatively large proportion of plasma cells in the bone marrow are IgA producing, both in mice and humans.",
-      "More recently, IgAproducing plasma cells were described within brain tissue, in particular along meningeal venous sinuses. [34][35][36]"
-    ],
-    "summary": "The snippet details that plasma cells, particularly IgA-producing ones, are located in several body sites including bone marrow and brain tissue (meningeal venous sinuses), in addition to non-mucosal sites, and contribute to antibody presence in circulation.",
-    "categories": [
-      "location",
-      "function",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:236531000",
-    "source_title": "Know your enemy or find your friend?\u2014Induction of IgA at mucosal surfaces",
-    "source_authors": "M. Bemark et al.",
-    "source_year": null,
-    "snippet": "plasma cells are also found at non-mucosal sites, and IgA antibodies are present in the circulation. 18,19 Although steady-state serum levels of IgG are four to five times higher than for IgA in healthy adults, the amounts produced are actually quite similar as the half-life of the classes differs three to four times. 20 In addition, IgA antibodies are present in other body fluids such as within the cerebrospinal fluid. 21 Unlike IgA produced at mucosal surfaces, serum IgA is predominantly monomeric and not joined to the J chain or the secretory component. 22 Adding to the complexity, humans, but not mice, possess two IgA isotypes, IgA1 and IgA2, transcribed from two distinct heavy chain constant regions, with the first one dominating in serum and most tissues and the second more often secreted in the lower gastrointestinal along with IgA1. 23 The two classes are similar to each other, but may have different stability and effector functions due to differences in the hinge region and glycosylation patterns. 24,25 In similar with the gastrointestinal tract, the airways contain epithelial cells expressing pIgR that transport IgA into the lumen. 26,27 This mechanism is likely more important in the upper airways as pIgR expression is evident in mucous, serous and ciliated epithelial cells in the lung but is virtually absent in alveolar cells. 28 In fact, transudation of IgG may play a more important role than IgA secretion in lung. 29 In addition to the role of IgA at the mucosa, other locations where IgA may play a role in health and disease have been suggested. A relatively large proportion of plasma cells in the bone marrow are IgA producing, both in mice and humans. 30,31 These produce antibodies reactive against intestinal antigens and appear to form in the gut as a consequence of recognizing commensal bacteria or pathogens. 30,32,33 This would allow these antibodies to protect the host against sepsis if the mucosal barrier breaks down. 30 More recently, IgAproducing plasma cells were described within brain tissue, in particular along meningeal venous sinuses. [34][35][36]"
+    "paper_id": "CorpusId:52845593",
+    "title": "Cochaperone Mzb1 is a key effector of Blimp1 in plasma cell differentiation and beta1-integrin function",
+    "authors": "Andreani V et al.",
+    "year": 2018,
+    "source": "free_search",
+    "snippets": [
+      "Antibody-secreting plasma cells are effectors of the humoral immune response. Transcription factor Blimp1 (Prdm1) is essential for the generation and function of plasma cells, and it regulates many genes, including Mzb1 (pERp1)",
+      "Plasma cell differentiation involves coordinated changes in gene expression and functional properties of B cells"
+    ]
   },
   {
-    "snippet_index": 4,
-    "quotes": [
-      "B cells play an essential role in adaptive humoral immunity, as they are the only cells capable of differentiang into antibody producing plasma cells.",
-      "Plasmablasts (here identified as CD19 + CD20 \u2212 IgD \u2212 CD2 7 + CD38 + ) are short-lived precursor cells for long-lived plasma cells.",
-      "showing an age-associated decline in plasma cell absolute counts and/or proportions. These findings confirm the findings of Pritz et al., who demonstrated a reduction of plasma cells in the bone marrow in relation to aging [34]."
-    ],
-    "summary": "This passage explains that plasma cells are the antibody-producing end-stage of B cell differentiation, with plasmablasts as short-lived precursors. It also notes that plasma cell numbers, especially in bone marrow, decline with age.",
-    "categories": [
-      "function",
-      "development",
-      "location",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:220502242",
-    "source_title": "Comprehensive flow cytometric reference intervals of leukocyte subsets from six study centers across Europe",
-    "source_authors": "Astrid Oras et al.",
-    "source_year": null,
-    "snippet": "B cells play an essential role in adaptive humoral immunity, as they are the only cells capable of differentiang into antibody producing plasma cells. In addition, they can act as antigen-presenting cells and initiate an immune response. B cells also have regulatory and effector functions mediated by cytokines and chemokines [27]. Different marker combinations have been proposed for the identification of memory and naive B cells [28,29]. Here, we used anti-IgD and anti-CD27 antibodies for dividing B cells into four subsets. CD27 is considered to be a memory B cell marker and its expression is in correlation with cell size, proliferative capacity, antigen presentation efficacy and ability to differentiate into antibody-secreting plasma cells [30]. Similarly, as has been shown by other studies [31], we also found that the majority of B cell subsets are not affected by sex. \n\nAs reviewed by Frasca and colleagues [32], there are conflicting results in the field of studies focusing upon the effect of aging on B cells. In our study, the absolute number and relative size of the total population of CD19 + B cells, as well as naive and memory B cell subpopulations, showed a slight but not statistically significant ageassociated trend of reduction, which is also shown by other authors [11,33]. In contrast to our study, other studies have not shown an age-dependent reduction of immature transitional B cells (here identified as CD19 + IgD + CD27 \u2212 CD38 + CD24 + ) in adults [28,31,33]. \n\nPlasmablasts (here identified as CD19 + CD20 \u2212 IgD \u2212 CD2 7 + CD38 + ) are short-lived precursor cells for long-lived plasma cells. Our study revealed an age-related reduction in the proportion of plasmablasts, which is consistent with previous studies [28,33,34] showing an age-associated decline in plasma cell absolute counts and/or proportions. These findings confirm the findings of Pritz et al., who demonstrated a reduction of plasma cells in the bone marrow in relation to aging [34]. In contrast to our results, Caraux et al. demonstrated that memory cells are also in reverse relationship with age [28]."
-  },
-  {
-    "snippet_index": 6,
-    "quotes": [
-      "The plasma cells typically exhibit eccentric nuclei with abundant basophilic cytoplasm, resembling the appearance of neoplastic plasma cells.",
-      "Immunohistochemical staining shows positive staining for CD138 and kappa or lambda light chains, confirming the plasma cell origin.",
-      "The presence of Russell bodies, which are eosinophilic intracytoplasmic inclusions, is a characteristic feature but not always present."
-    ],
-    "summary": "This snippet describes cutaneous plasmacytosis as dense plasma cell infiltrates in the dermis and subcutaneous tissue. Plasma cells show eccentric nuclei, basophilic cytoplasm, and are CD138+, kappa/lambda+, sometimes with Russell bodies.",
-    "categories": [
-      "location",
-      "morphology",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:268413551",
-    "source_title": "Primary cutaneous plasmacytosis successfully treated with topical corticosteroids and psoralen plus ultraviolet A: A case report",
-    "source_authors": "Thanyathorn Nuchanatanon et al.",
-    "source_year": null,
-    "snippet": "Primary cutaneous plasmacytosis (PCP) is a rare reactive process cutaneous disorder.PCP is most commonly found in adults, with a slight male predominance, and is mainly described in patients of Japanese lineage.There have been fewer reports on Caucasians, Chinese, and Indians. 1 Multiple reddish-brown infiltrative macules, nodules, and plaques, often arranged in a linear or reticulate pattern, are the distinctive clinical characteristics of PCP. 2 The lesions are usually asymptomatic but may be pruritic in some cases.They commonly involve the trunk and extremities, and less frequently, the face and scalp. 3][6] The exact etiology of cutaneous plasmacytosis remains unknown.However, some studies suggest that it may be related to an abnormal immune response or an antigenic stimulus triggering clonal proliferation of plasma cells in the skin. 7In addition, dysregulation of IL-6 production, which affects B-cell proliferation and maturation to plasma cells, is suspected to play a major role. 8The association with various infections, such as human herpesvirus-8, Epstein-Barr virus, and hepatitis C virus, has been reported in a subset of patients. 9However, the causal relationship between these infections and cutaneous plasmacytosis remains unclear.\n\nThe hallmark characteristic in histopathological changes of cutaneous plasmacytosis is the dense superficial and deep perivascular and periadnexal infiltration of mature polyclonal plasma cells within the dermis, often extending into the subcutaneous tissue, in the absence of a secondary cause of plasma cell infiltration. 10The plasma cells typically exhibit eccentric nuclei with abundant basophilic cytoplasm, resembling the appearance of neoplastic plasma cells. 11Immunohistochemical staining shows positive staining for CD138 and kappa or lambda light chains, confirming the plasma cell origin. 12The presence of Russell bodies, which are eosinophilic intracytoplasmic inclusions, is a characteristic feature but not always present. 13The isolated cutaneous involvement, however, is benign and persistent without spontaneous remission."
-  },
-  {
-    "snippet_index": 7,
-    "quotes": [
-      "Histology showed a rather dense, non-epidermotropic, interstitial, and perivascular dermal infiltrate involving the superficial and profound dermis (Figure 1). The infiltrate was mainly composed of mature-looking plasma cells with a minor component of small lymphocytes of B-cell origin (Figure 2).",
-      "The plasma cells expressed plasma cell-related markers, such as CD138, and were monotypic for kappa immunoglobulin light chain (Figures 3 and 4).",
-      "CD56, cyclin D1, IRTA1, IgG4, and human herpes virus 8 (HHV8), as well as both T-(CD3, CD4, and CD8) and B-cell markers (CD20 and PAX5), were negative in the plasma cell elements.",
-      "The proliferative fraction was very low (Ki67: 5%). Clonal immunoglobulin heavy chain (IGH) rearrangement was identified."
-    ],
-    "summary": "This case describes a dermal infiltrate mainly of mature plasma cells with CD138 and kappa light chain positivity, lacking T- and B-cell lineage markers. Plasma cells showed low proliferative fraction and clonal IGH rearrangement.",
-    "categories": [
-      "location",
-      "markers",
-      "morphology",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:248368685",
-    "source_title": "Cutaneous Involvement in Diseases with Plasma Cell Differentiation: Diagnostic Approach",
-    "source_authors": "M. Zanelli et al.",
-    "source_year": null,
-    "snippet": "A 77-year-old female presented with a solitary, non-pruritic, slightly infiltrated, erythematous papule 1 cm in diameter on her left breast. The patient had a history of breast cancer, treated with left breast quadrantectomy, several years before. Blood tests, including tumor markers (CA15-3 and CEA), were within normal limits, and no palpable adenopathy was clinically evident. The skin lesion had appeared 20 days before and, in the suspect of breast cancer recurrence, the lesion was surgically excised. \n\nHistology showed a rather dense, non-epidermotropic, interstitial, and perivascular dermal infiltrate involving the superficial and profound dermis (Figure 1). The infiltrate was mainly composed of mature-looking plasma cells with a minor component of small lymphocytes of B-cell origin (Figure 2). The plasma cells expressed plasma cell-related markers, such as CD138, and were monotypic for kappa immunoglobulin light chain (Figures 3 and 4). The infiltrate was mainly composed of mature-looking plasma cells with a minor component of small lymphocytes of B-cell origin (Figure 2). The infiltrate was mainly composed of mature-looking plasma cells with a minor component of small lymphocytes of B-cell origin (Figure 2). The plasma cells expressed plasma cell-related markers, such as CD138, and were monotypic for kappa immunoglobulin light chain (Figures 3 and 4). The plasma cells expressed plasma cell-related markers, such as CD138, and were monotypic for kappa immunoglobulin light chain (Figures 3 and 4). CD56, cyclin D1, IRTA1, IgG4, and human herpes virus 8 (HHV8), as well as both T-(CD3, CD4, and CD8) and B-cell markers (CD20 and PAX5), were negative in the plasma cell elements. The proliferative fraction was very low (Ki67: 5%). Clonal immunoglobulin heavy chain (IGH) rearrangement was identified."
-  },
-  {
-    "snippet_index": 8,
-    "quotes": [
-      "Plasma cells (PCs), the B lineage cells responsible for producing and secreting antibodies (Abs), are critical cellular components of the humoral immune system.",
-      "While most of the antibody-secreting cells in the body have a rather short lifetime of a few days, some of them can become long-lived and persist in the body over the entire life span of an individual.",
-      "The majority of these long-lived plasma cells secretes protective antibodies against pathogens, and are thereby crucial for the humoral component of immunological memory.",
-      "Although the majority of plasma cells are protective, sometimes long-lived plasma cells produce autoreactive antibodies, which contribute to the pathogenesis and perpetuation of chronic autoimmune diseases, including lupus erythematosus, rheumatoid arthritis, or multiple sclerosis.",
-      "it has become clear that plasma cells depend on extrinsic factors for their survival, leading to the concept that certain tissue microenvironments promote plasma cell retention and longevity."
-    ],
-    "summary": "Plasma cells are B lineage cells responsible for antibody secretion in humoral immunity, with both short- and long-lived varieties, the latter supporting immunological memory but also involved in autoimmunity. Their survival relies on specific microenvironments.",
-    "categories": [
-      "function",
-      "development",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:128358387",
-    "source_title": "In the Right Place, at the Right Time: Spatiotemporal Conditions Determining Plasma Cell Survival and Function",
-    "source_authors": "Randall L. Lindquist et al.",
-    "source_year": null,
-    "snippet": "Plasma cells (PCs), the B lineage cells responsible for producing and secreting antibodies (Abs), are critical cellular components of the humoral immune system. While most of the antibody-secreting cells in the body have a rather short lifetime of a few days, some of them can become long-lived and persist in the body over the entire life span of an individual. The majority of these long-lived plasma cells secretes protective antibodies against pathogens, and are thereby crucial for the humoral component of immunological memory. The generation of these protective antibody-secreting cells can be triggered by an exposure to pathogens, and also by vaccination. Although the majority of plasma cells are protective, sometimes long-lived plasma cells produce autoreactive antibodies, which contribute to the pathogenesis and perpetuation of chronic autoimmune diseases, including lupus erythematosus, rheumatoid arthritis, or multiple sclerosis. In order to promote the formation of protective antibody-secreting cells and to target pathogenic plasma cells, it is crucial to understand the signals which promote their longevity and allow them to exert their function. In recent years, it has become clear that plasma cells depend on extrinsic factors for their survival, leading to the concept that certain tissue microenvironments promote plasma cell retention and longevity. However, these niches are not static structures, but also have dynamic features with respect to their cellular composition. Here, we review what is known about the molecular and cellular composition of the niches, and discuss the impact of dynamic changes within these microenvironments on plasma cell function. As plasma cell metabolism is tightly linked to their function, we present new tools, which will allow us to analyze metabolic parameters in the plasma cell niches in vivo over time."
-  },
-  {
-    "snippet_index": 12,
-    "quotes": [
-      "we identified 10 immune cell populations using marker expression patterns (Supplementary Fig. 2b), and found that RDEB skin lesions, in contrast to healthy tissue section, were marked by the presence of neutrophils, B cells, and plasma cells, as well as elevated numbers of activated CD4 + and CD8 + T, regulatory T cells, monocytes/ DC, and macrophages (Fig. 1d)."
-    ],
-    "summary": "This snippet identifies plasma cells as present in skin lesions of RDEB patients, contrasting with healthy tissue, suggesting their role or accumulation in inflamed or diseased skin environments.",
-    "categories": [
-      "location",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:275542773",
-    "source_title": "Systems immunology integrates the complex endotypes of recessive dystrophic epidermolysis bullosa",
-    "source_authors": "Nell Hirt et al.",
-    "source_year": null,
-    "snippet": "Overall, we identified 10 immune cell populations using marker expression patterns (Supplementary Fig. 2b), and found that RDEB skin lesions, in contrast to healthy tissue section, were marked by the presence of neutrophils, B cells, and plasma cells, as well as elevated numbers of activated CD4 + and CD8 + T, regulatory T cells, monocytes/ DC, and macrophages (Fig. 1d). Taken together, these results show that RDEB adults display different proportions of various immune cell populations, both in the periphery and the skin."
-  },
-  {
-    "snippet_index": 13,
-    "quotes": [
-      "Antibodies are secreted by plasma cells at a rate of 10 3 antibody molecules/cell per s (1,2).",
-      "Plasma cells represent the final differentiation stage of B lymphocytes after they have encountered antigens and interacted with various cell types through both membrane molecules and cytokines (for review see reference 3).",
-      "Although plasma cells have a distinct morphology, it has been difficult to isolate them from peripheral lymphoid tissues because of the lack of specific surface markers and their low frequency.",
-      "plasma cells (PC), the end point of B cell differentiation."
-    ],
-    "summary": "This snippet provides extensive information: plasma cells are the final differentiation stage of B cells, secrete large amounts of antibodies, are mainly located in medullary cords of lymph nodes, spleen red pulp, bone marrow, and mucosa, have a distinct morphology, and are challenging to isolate due to lack of specific surface markers.",
-    "categories": [
-      "function",
-      "location",
-      "development",
-      "morphology",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:15903699",
-    "source_title": "Bcl-2+ tonsillar plasma cells are rescued from apoptosis by bone marrow fibroblasts",
-    "source_authors": "P. Merville et al.",
-    "source_year": null,
-    "snippet": "O ne of the most striking facts of the immune system is the presence of several milligrams of Ig (antibody) in every milliliter of human blood, which represents 1016 molecules displaying 10 9 different specificities. Antibodies are secreted by plasma cells at a rate of 10 3 antibody molecules/cell per s (1,2). Plasma cells represent the final differentiation stage of B lymphocytes after they have encountered antigens and interacted with various cell types through both membrane molecules and cytokines (for review see reference 3). To avoid overproduction of antibodies, the number of plasma cells in the body must be tightly controlled. Two basic strategies have evolved within the immune system to control plasma cell number: (a) during humoral immune responses, not all activated B cells undergo terminal differentiation into antibody-secreting plasma cells, as many of them differentiate into memory B cells (4); and (b) the life span of plasma cells is tightly regulated. It has been shown that plasma cells generated during primary humoral immune responses are mainly located within the medullary cords of lymph nodes or in the red pulp of the spleen and have a life span of only a few days (5,6). During secondary humoral immune responses, however, some generated plasma cells will migrate from the P. MerviUe andJ. D~chanet contributed equally to this work. secondary lymphoid tissues into the bone marrow (BM) I or into the lamina propria of mucosa (7), where they survive and secrete large amounts of antibodies for at least 3 wk (5). \n\nUnderstanding the physiology of normal plasma cell survival represents an important question for both basic immunology and for pathophysiology of malignant myeloma and plasmacytoma. Although plasma cells have a distinct morphology, it has been difficult to isolate them from peripheral lymphoid tissues because of the lack of specific surface markers and their low frequency. After having isolated human B cell subsets representing naive B cells, germinal center (GC) B cells and memory B cells from tonsils (8-10), we examined the isolation and characterization of plasma cells (PC), the end point of B cell differentiation."
-  },
-  {
-    "snippet_index": 14,
-    "quotes": [
-      "Plasma Cell Predominance in Lichen Planus Pigmentosus: A Rare Case in a Young Female"
-    ],
-    "summary": "The title indicates a case where plasma cells are predominant in lichen planus pigmentosus, implying a notable increase or accumulation of these cells in this skin condition.",
-    "categories": [
-      "location",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:282280375",
-    "source_title": "Plasma Cell Predominance in Lichen Planus Pigmentosus: A Rare Case in a Young Female",
-    "source_authors": "Yuxi Zhou et al.",
-    "source_year": null,
-    "snippet": "Plasma Cell Predominance in Lichen Planus Pigmentosus: A Rare Case in a Young Female"
-  },
-  {
-    "snippet_index": 16,
-    "quotes": [
-      "e Spatial visualizations of the cell-type proportions of the three plasma cell subtypes. f B-cell receptor gene expression heatmap for the IgA plasma cell spots in the mucosa and the IgG plasma cell voxels in the lesion, normalized across spots.",
-      "g Gene Ontology pathway enrichment analysis of the IgA plasma cell and IgG plasma cell spots. h Colocalization of each cell type with the IgA and IgG plasma cells. Statistical significance is calculated by comparing the inferred proportions of a given cell type at IgA-specific spots with proportions at IgG-specific spots using the Wilcoxon test extracellular matrix-related pathways in IgG + plasma cell sections (Fig. 4g)."
-    ],
-    "summary": "This text highlights the identification of three plasma cell subtypes (including IgA and IgG plasma cells) and their spatial localization in tissue, as well as their association with certain molecular pathways.",
-    "categories": [
-      "location",
-      "markers",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:253206301",
-    "source_title": "Smoother: a unified and modular framework for incorporating structural dependency in spatial omics data",
-    "source_authors": "Jiayu Su et al.",
-    "source_year": null,
-    "snippet": "d Slide subregions identified by clustering based on estimated cell-type compositions. Arrows emphasize the mucosa delineation apparent with Smoother but not CARD. e Spatial visualizations of the cell-type proportions of the three plasma cell subtypes. f B-cell receptor gene expression heatmap for the IgA plasma cell spots in the mucosa and the IgG plasma cell voxels in the lesion, normalized across spots. g Gene Ontology pathway enrichment analysis of the IgA plasma cell and IgG plasma cell spots. h Colocalization of each cell type with the IgA and IgG plasma cells. Statistical significance is calculated by comparing the inferred proportions of a given cell type at IgA-specific spots with proportions at IgG-specific spots using the Wilcoxon test extracellular matrix-related pathways in IgG + plasma cell sections (Fig. 4g). Conversely, CARD again failed to delineate these three fibroblast populations (Additional file 1: Fig. S23 and 24). We repeated the deconvolution analysis on a paired distant normal tissue but observed no differential localizations of plasma cell and fibroblast subpopulations (Additional file 1: Fig. S25)."
-  },
-  {
-    "snippet_index": 19,
-    "quotes": [
-      "The counts of dermal inflammatory cell infiltrations (neutrophils, plasma cells, mast cells, eosinophils and lymphocytes) were performed in five randomly selected fields at 400\u00d7 magnification in one section taken from the skin."
-    ],
-    "summary": "This snippet documents that plasma cells are present as part of the dermal inflammatory infiltrate observed in skin sections, indicating their involvement in inflammatory skin responses.",
-    "categories": [
-      "location",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:255978410",
-    "source_title": "Histopathology, microbiology and the inflammatory process associated with Sarcoptes scabiei infection in the Iberian ibex, Capra pyrenaica",
-    "source_authors": "J. Espinosa et al.",
-    "source_year": null,
-    "snippet": "Skin biopsies and the rest of the fixed non-dermal tissues were briefly washed with 10% phosphate buffered saline (PBS) solution and embedded in paraffin wax (EI LEICA TP1020 Automatic Tissue Processor\u00ae, Barcelona, Spain). Serial 5 \u03bcm sections from all specimens were mounted on glass slides (Super-Frost, Menzel-Gl\u00e4ser, Braunschweig, Germany), stained with haematoxylin and eosin (HE) and analyzed by light microscopy. \n\nSkin sections were examined for quantitative cellular, structural and vascular changes (Table 1). Epidermal changes were evaluated in three randomly selected complete microscopic cross-sections. The final value  was expressed as the average of the observations of the three sections. The counts of dermal inflammatory cell infiltrations (neutrophils, plasma cells, mast cells, eosinophils and lymphocytes) were performed in five randomly selected fields at 400\u00d7 magnification in one section taken from the skin. The final number of cells was expressed as an average count at 400\u00d7 HPF (highpowered fields). For the rest of the organs, three randomly selected cross-sections from each tissue were evaluated at 200\u00d7 magnification."
-  },
-  {
-    "snippet_index": 21,
-    "quotes": [
-      "Primary cutaneous plasmacytosis (PCP) is an uncommon cutaneous disorder characterized by the infiltration of plasma cells in the skin, representing a reactive process.",
-      "It typically manifests as multiple infiltrative reddish-brown nodules and plaques, primarily affecting the trunk in adults.",
-      "This report presents a case of PCP in a 50-year-old woman who presented with isolated skin lesions on the trunk and upper back."
-    ],
-    "summary": "This snippet describes primary cutaneous plasmacytosis as a skin disorder marked by infiltration of plasma cells, typically presenting as multiple nodules and plaques on the trunk in adults.",
-    "categories": [
-      "location",
-      "morphology"
-    ],
-    "source_corpus_id": "CorpusId:268413551",
-    "source_title": "Primary cutaneous plasmacytosis successfully treated with topical corticosteroids and psoralen plus ultraviolet A: A case report",
-    "source_authors": "Thanyathorn Nuchanatanon et al.",
-    "source_year": null,
-    "snippet": "Primary cutaneous plasmacytosis (PCP) is an uncommon cutaneous disorder characterized by the infiltration of plasma cells in the skin, representing a reactive process.The etiology of PCP is still unknown.It typically manifests as multiple infiltrative reddish-brown nodules and plaques, primarily affecting the trunk in adults.PCP has predominantly been reported in individuals of Japanese lineage, with fewer cases documented among Caucasians, Chinese, and Indians.This report presents a case of PCP in a 50-year-old woman who presented with isolated skin lesions on the trunk and upper back."
-  },
-  {
-    "snippet_index": 23,
-    "quotes": [
-      "Plasma cells are non-dividing and fully differentiated cells arising from the B cell line.",
-      "Their primary role is to synthesize antibodies as a part of the humoral immune response.",
-      "A single plasma cell produces molecules of immunoglobulin in a specific class.",
-      "In the course of humoral response, polyclonal plasma cells produce polyclonal immunoglobulins with different heavy and light chains.",
-      "As a cellular part of the hematopoietic system, plasma cells under specific circumstances may transform into neoplastic cells, with the potential for proliferation and the development of cancers.",
-      "Neoplasms derived from plasma cells are known as plasma cell dyscrasias (PCDs) [1].",
-      "To diagnose plasma cell dyscrasia, clonal plasma cells should be found in the bone marrow using immunophenotyping or immunohistochemistry staining."
-    ],
-    "summary": "Plasma cells are fully differentiated B-lineage cells specialized for antibody synthesis in humoral immunity. They can become neoplastic under certain conditions, leading to diseases such as multiple myeloma, and are typically identified in the bone marrow.",
-    "categories": [
-      "function",
-      "development",
-      "location",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:244090987",
-    "source_title": "Neutrophil Extracellular Traps (NETs) and Hypercoagulability in Plasma Cell Dyscrasias\u2014Is This Phenomenon Worthy of Exploration?",
-    "source_authors": "O. Ciepiela et al.",
-    "source_year": null,
-    "snippet": "Plasma cells are non-dividing and fully differentiated cells arising from the B cell line. Their primary role is to synthesize antibodies as a part of the humoral immune response. A single plasma cell produces molecules of immunoglobulin in a specific class. In the course of humoral response, polyclonal plasma cells produce polyclonal immunoglobulins with different heavy and light chains. As a cellular part of the hematopoietic system, plasma cells under specific circumstances may transform into neoplastic cells, with the potential for proliferation and the development of cancers. Neoplasms derived from plasma cells are known as plasma cell dyscrasias (PCDs) [1]. \n\nPCDs consist of three more specified subgroups of disease: multiple myeloma, solitary plasmacytoma, and monoclonal immunoglobulin deposition disease (AL amyloidosis). Multiple myeloma accounts for 1-1.8% of all cancers, and, together with diffuse large B-cell lymphoma (DLBCL), is the second most common hematological malignancy with an estimated incidence in Europe of 4.5-6.0 cases per 100,000 per year [2,3]. A pre-myeloma condition, called monoclonal gammopathy of undetermined significance (MGUS), is recognized in 3-4% of the adult population >50 years old (y.o.), and even in over 5% of adults older than 70. Patients diagnosed with MGUS do not present symptoms of organ damage typical in multiple myeloma; nevertheless, monoclonal protein of less than 30 g/L can be found in their serum [2,4]. \n\nTo diagnose plasma cell dyscrasia, clonal plasma cells should be found in the bone marrow using immunophenotyping or immunohistochemistry staining. It has to be underlined that not all types of plasma cell dyscrasias release monoclonal immunoglobulins; thus, detection of monoclonal protein in serum electrophoresis and immunofixation is not necessary for final diagnosis."
-  },
-  {
-    "snippet_index": 28,
-    "quotes": [
-      "Newly acquired, long-lasting humoral immunity thus reflects successful competition and is accompanied by the stoichiometric loss of resident, polyclonal plasma cells [97,113,114].",
-      "competition and subsequent mobilization of resident plasma cells might contribute to the slow decrease of antigen-specific titers for some antigens [104] (see later).",
-      "Other, mutually nonexclusive mechanisms to maintain antigen-specific antibody titers may exist, i.e., homeostatic proliferation of mature plasma cells and continuous de novo generation of plasma cells from memory B cells activated in a bystander mode [94] or by a persistent antigen [93,115].",
-      "More than 95% of BM plasma cells in adult humans do not perform cell division in terms of Ki-67 expression [114].",
-      "Therefore, homeostatic proliferation as a means to maintain the plasma cell population over the long term until old age cannot be excluded.",
-      "Given that homeostatic plasma cell proliferation exists, again changes of the BM microenvironment might impact on antibody titers as a function of age.",
-      "For the continuous generation of plasma cells from memory B cells, ageing could impact on the B cells' ability to be activated and to proliferate, as discussed in other sections of this chapter."
-    ],
-    "summary": "This excerpt discusses the longevity and population dynamics of plasma cells in maintaining long-term humoral immunity. It highlights that most bone marrow plasma cells are non-dividing, but their numbers may be sustained by homeostatic proliferation or generation from memory B cells.",
-    "categories": [
-      "function",
-      "development",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:83027131",
-    "source_title": "Characteristics of B Cells and B Cell Responses in Aged Individuals",
-    "source_authors": "H. Mei et al.",
-    "source_year": null,
-    "snippet": "Newly acquired, long-lasting humoral immunity thus reflects successful competition and is accompanied by the stoichiometric loss of resident, polyclonal plasma cells [97,113,114]. In this regard, competition and subsequent mobilization of resident plasma cells might contribute to the slow decrease of antigen-specific titers for some antigens [104] (see later). Other, mutually nonexclusive mechanisms to maintain antigen-specific antibody titers may exist, i.e., homeostatic proliferation of mature plasma cells and continuous de novo generation of plasma cells from memory B cells activated in a bystander mode [94] or by a persistent antigen [93,115]. More than 95% of BM plasma cells in adult humans do not perform cell division in terms of Ki-67 expression [114]. Therefore, homeostatic proliferation as a means to maintain the plasma cell population over the long term until old age cannot be excluded. Given that homeostatic plasma cell proliferation exists, again changes of the BM microenvironment might impact on antibody titers as a function of age. For the continuous generation of plasma cells from memory B cells, ageing could impact on the B cells' ability to be activated and to proliferate, as discussed in other sections of this chapter."
-  },
-  {
-    "snippet_index": 31,
-    "quotes": [
-      "Evaluating the effects of plasma from older individuals with frailty (frail plasma) on allogeneic renal stem/progenitor cells, we showed significant functional impairment and nuclear DNA damage in the treated cells of the renal stem compartment.",
-      "The analysis of the frail plasma revealed mitochondrial functional impairment associated with the activation of oxidative stress and a unique inflammatory mediator profile in frail individuals.",
-      "In addition, the plasma of frail subjects also contained the highest percentage of DNA-damaged autologous circulating hematopoietic progenitor/stem cells."
-    ],
-    "summary": "This snippet describes how plasma from frail individuals impairs renal and hematopoietic stem/progenitor cell function, is associated with oxidative stress, a unique inflammatory profile, and an increase in DNA-damaged circulating blood stem cells.",
-    "categories": [
-      "function",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:271492554",
-    "source_title": "Impairment of Renal and Hematopoietic Stem/Progenitor Cell Compartments in Frailty Syndrome: Link With Oxidative Stress, Plasma Cytokine Profiles, and Nuclear DNA Damage",
-    "source_authors": "S. Bombelli et al.",
-    "source_year": null,
-    "snippet": "Abstract Frailty is an age-related syndrome that drives multiple physiological system impairments in some older adults, and its pathophysiological mechanisms remain unclear. We evaluated whether frailty-related biological processes could impair stem cell compartments, specifically the renal stem compartment, given that kidney dysfunctions are frequent in frailty. A well-characterized in vitro nephrosphere model of human adult renal stem/progenitor cells has been instrumental to and was appropriate for verifying this hypothesis in our current research. Evaluating the effects of plasma from older individuals with frailty (frail plasma) on allogeneic renal stem/progenitor cells, we showed significant functional impairment and nuclear DNA damage in the treated cells of the renal stem compartment. The analysis of the frail plasma revealed mitochondrial functional impairment associated with the activation of oxidative stress and a unique inflammatory mediator profile in frail individuals. In addition, the plasma of frail subjects also contained the highest percentage of DNA-damaged autologous circulating hematopoietic progenitor/stem cells. The integration of both molecular and functional data obtained allowed us to discern patterns associated with frailty status, irrespective of the comorbidities present in the frail individuals. The data obtained converged toward biological conditions that in frailty caused renal and hematopoietic impairment of stem cells, highlighting the possibility of concomitant exhaustion of several stem compartments."
+    "paper_id": "CorpusId:235232891",
+    "title": "Local immune microenvironment of skin may play an important role in the development of pretibial myxedema",
+    "authors": "Chen X et al.",
+    "year": 2021,
+    "source": "free_search",
+    "snippets": [
+      "CD138+ plasma cells which can secrete antibodies are also present in the skin of PTM patients. Remarkably, IgG signal can be detected on the surface of these CD138+ plasma cells, suggesting that these plasma cells are secreting antibodies at local lesions"
+    ]
   }
 ]

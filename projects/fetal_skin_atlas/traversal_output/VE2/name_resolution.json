@@ -1,10 +1,11 @@
 {
   "label": "VE2",
   "resolved_names": [
-    "Vascular Endothelial 2 (VE2)"
+    "vascular endothelial cell VE2",
+    "blood vascular endothelial cell 2"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "Resolved from Supplementary Table 3 of the atlas paper (10.1038/s41586-024-08002-x), which lists endothelial subclusters as VE1, VE2, etc., with VE2 annotated as 'Vascular Endothelial 2 (VE2)' in both main and supplemental figure legends and tables. Context is skin, and cluster naming directly follows 'VE' for Vascular Endothelial in the fine granularity annotation."
+  "evidence": "Reynolds 2021: Three distinct states of PECAM1(CD31)-expressing VE cells (VE1, VE2, VE3). VE2 is one of three VE states; depleted in psoriasis. VE1 and VE2 represent capillary/non-venular vascular endothelium based on proportional disease data."
 }

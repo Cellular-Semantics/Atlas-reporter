@@ -1,0 +1,35 @@
+{
+  "cell_type_label": "Capillaries (prenatal skin capillary endothelial cells)",
+  "working_definition": "Capillaries are endothelial cells lining the smallest blood vessels of the prenatal human dermis, present from 7 to 17 post-conception weeks. They occupy the arteriolar branch of the endothelial differentiation trajectory, express the arteriolar marker GJA5 together with VEGF receptors KDR and FLT1, and exhibit active sprouting angiogenesis potential that is supported by macrophage-derived pro-angiogenic signals.",
+  "searches_performed": [
+    "capillary endothelial cell",
+    "endothelial cell capillary",
+    "dermal endothelial cell",
+    "microvascular endothelial cell skin"
+  ],
+  "best_match": {
+    "cl_term": "dermal microvascular endothelial cell",
+    "cl_id": "CL:0011030",
+    "cl_definition": "Any microvascular endothelial cell that is part of the dermis.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0011030 'dermal microvascular endothelial cell' is defined as any microvascular endothelial cell that is part of the dermis, which aligns with the dermal location and microvascular (capillary) context of the atlas cell type. The atlas 'Capillaries' population is specifically the capillary subtype within the dermal microvasculature; CL:0011030 is broader because it covers the full dermal microvascular bed including venular and arteriolar endothelial cells, not only capillary cells. The alternative top hit, CL:0002144 'capillary endothelial cell' (defined as 'An endothelial cell found in capillaries'), is vessel-type specific but tissue-agnostic and lacks the dermal restriction. CL:0011030 provides a better biological anchor because it captures both the dermis tissue context and the microvascular nature, making the atlas cells a proper subset of it. No skin- or dermis-specific capillary endothelial cell term exists in CL, so CL:0011030 is the most precise available parent.",
+  "other_candidates": [
+    {
+      "cl_term": "capillary endothelial cell",
+      "cl_id": "CL:0002144",
+      "cl_definition": "An endothelial cell found in capillaries.",
+      "reason_rejected": "Correctly captures vessel type (capillary) and is the parent term suggested in the report, but is tissue-agnostic — it does not restrict to the dermis. CL:0011030 provides an equivalent or better match because it encodes the dermal location, which is an explicit feature of the atlas cell type. CL:0002144 remains a valid broad match but is less specific in tissue terms than CL:0011030."
+    },
+    {
+      "cl_term": "microvascular endothelial cell",
+      "cl_id": "CL:2000008",
+      "cl_definition": "Any blood vessel endothelial cell that is part of a microvascular endothelium.",
+      "reason_rejected": "Too broad — no tissue restriction and covers all microvascular beds across the body. The atlas cell type is specifically dermal, making CL:0011030 a strictly more precise parent."
+    }
+  ],
+  "recommendation": "Use CL:0011030 (dermal microvascular endothelial cell) as a broad match. A new CL term 'dermal capillary endothelial cell' would provide an exact match — it would be defined as a capillary endothelial cell (CL:0002144) that is part of the dermis, as a child of both CL:0002144 and CL:0011030. This would mirror the existing pattern for other tissue-specific capillary endothelial cells in CL (e.g. CL:4028001 pulmonary capillary endothelial cell, CL:1000892 kidney capillary endothelial cell).",
+  "new_term_needed": true
+}

@@ -1,0 +1,9 @@
+{
+  "label": "ILC2_3",
+  "cl_term": "innate lymphoid cell",
+  "cl_id": "CL:0001065",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_0001065",
+  "match_type": "broad",
+  "match_rationale": "ILC2_3 is a combined cluster encompassing both ILC2 (IL7R+PTGDR2+GATA3+) and ILC1/3 (IL7R+RORC+) populations. No single CL term covers both ILC2 and ILC3. CL:0001065 (innate lymphoid cell) is used as a broad parent term.",
+  "new_term_needed": false
+}

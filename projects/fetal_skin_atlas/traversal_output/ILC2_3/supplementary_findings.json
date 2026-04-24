@@ -1,53 +1,20 @@
 {
   "markers": [
-    {
-      "gene": "IL1RL1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 4"
-    },
-    {
-      "gene": "GATA3",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 4"
-    },
-    {
-      "gene": "IL7R",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 4"
-    },
-    {
-      "gene": "TNFRSF18",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 4"
-    }
+    {"gene": "IL7R", "evidence_type": "ILC2 marker, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "PTGDR2", "evidence_type": "encodes CRTH2, ILC2 marker, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "GATA3", "evidence_type": "ILC2 master transcription factor, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "RORC", "evidence_type": "ILC3 transcription factor, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "KIT", "evidence_type": "ILC3 marker, scRNA-seq", "source_table": "Reynolds 2021 Fig 2B"},
+    {"gene": "KLRB1", "evidence_type": "encodes CD161, innate lymphocyte marker, scRNA-seq", "source_table": "Reynolds 2021 main text"}
   ],
   "other_findings": [
-    {
-      "finding": "ILC2_3 cells are predominantly located in the lamina propria in adult tissue",
-      "category": "spatial location",
-      "source_table": "Supplementary Table 9"
-    },
-    {
-      "finding": "ILC2_3 was annotated as 'Type 2 innate lymphoid cell' with immune effector function",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table 2"
-    }
+    {"finding": "ILC2 has the most distinct signature among ILC clusters in Reynolds 2021 data and existing literature", "category": "transcriptional distinctness", "source_table": "Reynolds 2021 main text"},
+    {"finding": "ILC2_3 in Gopee 2024 is a combined cluster encompassing both ILC2 and ILC1/3 populations", "category": "annotation note", "source_table": "Gopee 2024"},
+    {"finding": "Fetal skin ILCs (IL7R+, RORC+ and KIT+) resemble adult skin ILC3", "category": "developmental alignment", "source_table": "Reynolds 2021 Fig 2B"},
+    {"finding": "ILC2 produces type 2 cytokines (IL-5, IL-13) in response to TSLP, IL-25 and IL-33", "category": "function", "source_table": "literature"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "ILC2_3 cluster marker genes: IL1RL1, GATA3, IL7R, TNFRSF18",
-      "source_file": "Supplementary Table 4",
-      "context": "Cluster marker gene table"
-    },
-    {
-      "quote": "ILC2_3 cells are predominantly located in the lamina propria in adult tissue",
-      "source_file": "Supplementary Table 9",
-      "context": "Summary of spatial cell type distribution"
-    },
-    {
-      "quote": "ILC2_3: annotated as 'Type 2 innate lymphoid cell' (immune effector function)",
-      "source_file": "Supplementary Table 2",
-      "context": "Cell type annotation and function summary"
-    }
+    {"quote": "ILC2 (IL7R, PTGDR2, GATA3) has the most distinct signature in our data and in existing literature", "source_file": "Reynolds 2021 main text", "context": "ILC2 identity within ILC2_3"},
+    {"quote": "Fetal skin ILCs (IL7R+, RORC+ and KIT+) resemble adult skin ILC3", "source_file": "Reynolds 2021 main text", "context": "Fetal-adult ILC alignment"}
   ]
 }

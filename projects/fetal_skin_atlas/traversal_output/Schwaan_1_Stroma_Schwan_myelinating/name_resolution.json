@@ -1,10 +1,9 @@
 {
   "label": "Schwaan_1_Stroma_Schwan_myelinating",
-  "resolved_names": [
-    "Schwann cell (myelinating)"
-  ],
+  "resolved_names": ["Myelinating Schwann cell", "myelin-forming Schwann cell", "Schwann cell (myelinating)"],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult human skin",
   "confidence": "high",
-  "evidence": "The label uses 'Schwaan' as an internal cluster name variant for 'Schwann', distinguished as myelinating in cluster annotation. In the atlas figures (notably Extended Data Fig. 7b, c) and corresponding supplementary cluster annotation tables, the category 'Stroma_Schwan_myelinating' is mapped directly to 'Schwann cell (myelinating)', with 'Stroma' indicating mesenchymal/non-immune cell and 'Schwan_myelinating' specifying the myelinating subtype. The context is human skin in the adult (and prenatal) datasets compared (see main text: 'the SkO model closely recapitulated in vivo skin epidermal and dermal cell types')."
+  "note": "Label uses 'Schwaan' spelling matching the atlas annotation exactly.",
+  "evidence": "Reynolds et al. (2021) identify Schwann cells as part of the stromal compartment in adult human skin. Two Schwann cell subtypes are identified: myelinating (Schwaan_1) and non-myelinating (Schwaan_2). Myelinating Schwann cells are defined by expression of MBP (myelin basic protein), MPZ (myelin protein zero), and PLP1 (proteolipid protein 1). These cells wrap peripheral axons in myelin sheaths, enabling rapid saltatory conduction. S100B is a pan-Schwann cell marker expressed in both subtypes."
 }

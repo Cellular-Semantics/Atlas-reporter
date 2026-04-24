@@ -1,10 +1,12 @@
 {
   "label": "MigDC",
   "resolved_names": [
-    "migratory dendritic cell"
+    "migratory dendritic cell",
+    "Mig. DC",
+    "CCR7+ LAMP3+ mature migratory DC"
   ],
   "scope": "adult",
-  "tissue_context": "human skin",
+  "tissue_context": "adult skin dermis",
   "confidence": "high",
-  "evidence": "The term 'MigDC' in this atlas refers to 'migratory dendritic cell' as found in Extended Data Fig. 8 (adult/SkO data integration) and Supplementary Table 11, which lists cluster IDs and corresponding full names. 'MigDC' is used for clusters annotated as 'migratory dendritic cells' within skin immune populations."
+  "evidence": "Reynolds 2021 main text: 'The clusters at the convergence of these branches (moDC3, LC4 and migratory DC (Mig. DC)) express transcripts associated with DC maturation (CD83, CCR7, LAMP3, CD40, CD86), immunoregulation (CD274, IDO1, CD200, PDCD1LG2, SOCS1) and migration (FSCN1, PLGRKT, TRAF1, BCL2A1, CFLAR and REL).' MigDC in Gopee 2024 corresponds to Mig. DC in Reynolds 2021."
 }

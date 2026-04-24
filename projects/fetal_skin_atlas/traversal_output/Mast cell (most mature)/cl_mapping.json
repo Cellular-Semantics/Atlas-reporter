@@ -1,0 +1,36 @@
+{
+  "cell_type_label": "Mast cell (most mature) — most mature mast cell state in prenatal skin",
+  "working_definition": "The most differentiated mast cell state in fetal human skin (7–17 PCW), characterised by KIT (CD117)+, high tryptase expression (TPSAB1/TPSB2 protein detectable), CPA3-high, GATA2+, FcεRI-high, with CMA1/chymase only beginning to be expressed (very scarce even at this stage). Cells are located in the dermal connective tissue compartment, perivascular and perifollicular, isolated as CD45+ immune cells. They are approaching but not yet fully equivalent to the adult connective tissue mast cell phenotype, as dual tryptase+chymase co-expression is rare; they lack the complete granule maturation of adult skin mast cells.",
+  "searches_performed": [
+    "mast cell most mature",
+    "mast cell",
+    "connective tissue mast cell",
+    "mucosal type mast cell",
+    "tryptase chymase mast cell skin"
+  ],
+  "best_match": {
+    "cl_term": "connective tissue type mast cell",
+    "cl_id": "CL:0000484",
+    "cl_definition": "Mast cell subtype whose granules contain both the serine proteases tryptase and chymase. These cells are primarily found in connective tissue, such as the peritoneal cavity, skin, and intestinal submucosa. Their development is T-cell independent.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000484 'connective tissue type mast cell' is defined by co-expression of both tryptase AND chymase in granules, found in connective tissue including skin, and T-cell independent development. The report cell type shares the dermal connective tissue location, KIT positivity, tryptase expression, and T-cell independent development axis. However, the CL definition requires dual tryptase+chymase identity as a defining criterion, whereas the fetal 'most mature' cluster is explicitly described as only beginning to acquire chymase — chymase-positive cells are very rare even at the most mature stage of fetal development. The report therefore describes cells that are on a trajectory toward CL:0000484 identity but have not fully achieved it. This makes CL:0000484 a broad (parent) match: the fetal most mature mast cell is a mast cell with connective tissue localisation that is not yet a fully defined MCTC. The confidence is medium rather than low because this is the closest and most appropriate CL term: the tissue type, lineage, and key marker (tryptase) all align, and the only gap is the completeness of chymase acquisition.",
+  "other_candidates": [
+    {
+      "cl_term": "mast cell",
+      "cl_id": "CL:0000097",
+      "cl_definition": "A cell that is found in almost all tissues containing numerous basophilic granules and capable of releasing large amounts of histamine and heparin upon activation. Progenitors leave bone marrow and mature in connective and mucosal tissue. Mature mast cells are found in all tissues, except the bloodstream. Their phenotype is CD117-high, CD123-negative, CD193-positive, CD200R3-positive, and FceRI-high. Stem-cell factor (KIT-ligand; SCF) is the main controlling signal of their survival and development.",
+      "reason_rejected": "Valid but too broad: this is the generic parent term for all mast cells. CL:0000484 captures the connective tissue skin localisation and the partial tryptase+chymase phenotype trajectory more specifically, making it the better broad match."
+    },
+    {
+      "cl_term": "mucosal type mast cell",
+      "cl_id": "CL:0000485",
+      "cl_definition": "Mast cell subtype that contains only the serine protease trypase in its granules. These cells are primarily found in mucosal tissue, such as intestinal mucosa and alveoli. They depend upon T-cells for development of phenotype.",
+      "reason_rejected": "Not appropriate: mucosal mast cells are tryptase-only, T-cell dependent, and located in mucosal tissues. The report cells are dermal, T-cell independent, and beginning to acquire chymase — the opposite developmental trajectory from the mucosal subtype."
+    }
+  ],
+  "recommendation": "Use CL:0000484 (connective tissue type mast cell) as a broad match with medium confidence. A new CL term would ideally represent a 'fetal connective tissue mast cell' or 'immature connective tissue type mast cell' — a KIT+, tryptase+, CPA3-high mast cell found in fetal dermal connective tissue that is in the process of acquiring chymase but has not yet achieved full MCTC identity. This would capture the developmental stage-specific incompleteness of chymase expression that distinguishes this cluster from the mature adult MCTC.",
+  "new_term_needed": true
+}

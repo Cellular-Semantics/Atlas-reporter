@@ -1,38 +1,19 @@
 {
   "markers": [
-    {
-      "gene": "CPA3",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S3"
-    },
-    {
-      "gene": "TPSAB1",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S3"
-    },
-    {
-      "gene": "TPSB2",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table S3"
-    }
+    {"gene": "TPSAB1", "evidence_type": "tryptase, canonical mast cell marker", "source_table": "literature (Dobrican et al. 2022; Siddhuraj et al. 2021)"},
+    {"gene": "CMA1", "evidence_type": "chymase, connective tissue mast cell marker", "source_table": "literature (Dobrican et al. 2022; Harvima et al. 1997)"},
+    {"gene": "CPA3", "evidence_type": "carboxypeptidase A3, mast cell marker, high in skin MCTC", "source_table": "literature (Siddhuraj et al. 2021)"},
+    {"gene": "KIT", "evidence_type": "CD117, stem cell factor receptor, mast cell surface marker", "source_table": "literature"},
+    {"gene": "FCER1A", "evidence_type": "high-affinity IgE receptor, mast cell marker", "source_table": "literature"}
   ],
   "other_findings": [
-    {
-      "finding": "Mast cells were primarily localized in the submucosal regions of the adult gut and showed limited abundance in other regions.",
-      "category": "spatial location",
-      "source_table": "Supplementary Table S5"
-    }
+    {"finding": "Skin mast cells are predominantly MCTC (connective tissue type) expressing tryptase, chymase and CPA3", "category": "cell type characterisation", "source_table": "Dobrican et al. 2022; Siddhuraj et al. 2021"},
+    {"finding": "Mast cells are located in superficial and deep dermis, preferentially perivascular and periaxonal", "category": "location", "source_table": "Dobrican et al. 2022"},
+    {"finding": "Skin mast cells have very high CPA3 staining intensity compared to lung and gut", "category": "tissue-specific marker", "source_table": "Siddhuraj et al. 2021"},
+    {"finding": "MC_TC cells (tryptase+chymase+) are the majority of mast cells in skin, with MCT (tryptase only) being a minority", "category": "subtype composition", "source_table": "Siddhuraj et al. 2021"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "Cluster M_A_Mast_cell was annotated as Mast cells based on high expression of CPA3, TPSAB1, and TPSB2 (Supplementary Table S3).",
-      "source_file": "Supplementary Table S3",
-      "context": "Cluster annotation and marker gene identification"
-    },
-    {
-      "quote": "Mast cells were primarily localized in the submucosal regions of the adult gut and showed limited abundance in other regions.",
-      "source_file": "Supplementary Table S5",
-      "context": "Spatial distribution summary"
-    }
+    {"quote": "The majority of tryptase-rich mast cells are predominantly located in mucous membranes (T-mast cells), while those containing tryptase, carboxypeptidase and chymase predominate in the connective tissue of the skin (TC-mast cells)", "source_file": "Dobrican et al. 2022", "context": "Skin mast cell type"},
+    {"quote": "Mast cells in patients with urticaria, similar to those in healthy individuals, are located in the superficial and deep dermis, preferentially in the perivascular and periaxonal spaces", "source_file": "Dobrican et al. 2022", "context": "Mast cell location in skin"}
   ]
 }

@@ -1,166 +1,37 @@
 [
   {
-    "snippet_index": 0,
+    "paper": "Reynolds et al. (2021)",
+    "doi": "10.1126/science.aba6500",
+    "corpusId": "231666430",
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "quotes": [
+      "Mac2 is characterized by the expression of F13A1 and\ntranscription factors associated with alternative activation and suppression of immune\nresponses (NR4A1, NR4A2, KLF4) and notably, is more closely aligned\nwith fetal macrophages",
+      "We observed an increase in Mac2 in AD and psoriasis skin",
+      "Adult healthy skin\nMac2 aligned with fetal skin, gut, kidney, liver and thymus macrophages",
+      "This\nled us to hypothesize a shared cellular program between fetal macrophages and Mac2\nin AD and psoriasis skin"
+    ],
+    "summary": "Reynolds et al. (2021) define Mac2 (Macro_2) as an F13A1+ alternatively activated macrophage with NR4A1/NR4A2/KLF4 transcription factors that aligns transcriptionally with fetal macrophages and increases in AD and psoriasis."
+  },
+  {
+    "paper": "Antal et al. (2022)",
+    "doi": "10.3390/ijms23042422",
+    "corpusId": "246602980",
+    "title": "Antigen-Presenting Cells in Psoriasis",
     "quotes": [
       "Mac2, on the other hand, displays expression of FXIIIA and markers of alternative activation and immune suppression.",
-      "Adult skin Mac2, which aligned with fetal skin macrophages, was significantly elevated in psoriatic skin, suggesting a role for Mac2 in psoriasis pathogenesis and also a shared cellular program with macrophages of fetal development [72]."
+      "Mac2 macrophages' transcriptomic profile closely aligns with that of foetal macrophages in embryonic skin"
     ],
-    "summary": "Macro_2 (Mac2) in adult skin expresses FXIIIA and markers associated with alternative activation and immune suppression. These cells are increased in psoriatic skin, indicating a potential role in disease and a similarity to fetal skin macrophages.",
-    "categories": [
-      "markers",
-      "function",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:246602980",
-    "source_title": "Antigen-Presenting Cells in Psoriasis",
-    "source_authors": "D. Antal et al.",
-    "source_year": null,
-    "snippet": "Mac2, on the other hand, displays expression of FXIIIA and markers of alternative activation and immune suppression. Adult skin Mac2, which aligned with fetal skin macrophages, was significantly elevated in psoriatic skin, suggesting a role for Mac2 in psoriasis pathogenesis and also a shared cellular program with macrophages of fetal development [72]."
+    "summary": "Antal et al. (2022) confirm Mac2/Macro_2 identity: FXIIIA (F13A1) expression with alternative activation markers, and transcriptomic alignment with fetal macrophages."
   },
   {
-    "snippet_index": 2,
+    "paper": "Sim et al. (2022)",
+    "doi": "10.3390/cells11193wounds",
+    "corpusId": "253440413",
+    "title": "Macrophages in Skin Wounds: Functions and Therapeutic Potential",
     "quotes": [
-      "Another population of Mac2 + macrophages displaying an alternative activation state with upregulated NR4A1, NR4A2 and KLF4 has also been reported in human skin and can be identified by F13A1 [27].",
-      "Remarkably, Mac2 macrophages' transcriptomic profile closely aligns with that of foetal macrophages in embryonic skin [27]."
+      "Another population of Mac2 + macrophages displaying an alternative activation state with upregulated NR4A1, NR4A2 and KLF4 has also been reported in human skin and can be identified by F13A1",
+      "Mac2 macrophages' transcriptomic profile closely aligns with that of foetal macrophages in embryonic skin"
     ],
-    "summary": "Macro_2 (Mac2) macrophages in human skin show an alternative activation state marked by upregulation of NR4A1, NR4A2, and KLF4, and are identifiable by F13A1. Their transcriptomic profile is similar to fetal skin macrophages.",
-    "categories": [
-      "markers",
-      "function",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:253440413",
-    "source_title": "Macrophages in Skin Wounds: Functions and Therapeutic Potential",
-    "source_authors": "S. Sim et al.",
-    "source_year": null,
-    "snippet": "It is apparent that different tissue-resident macrophages reside at specific sub-tissular niches within the murine dermis. Although emerging evidence has indicated the existence of CD163 + perivascular and CD64 + perineural macrophages in the human dermis [6,8], the human homolog of murine dermal-resident macrophages remains ambiguous. Traditional studies have identified human macrophages based on the positive expression of HLA-DR, CD14, CD11b, CD1C, CD68 and colony-stimulating factor 1 receptor (CSF1R). Nevertheless, the characterisation of human dermal-resident macrophages was hindered by a lack of unique markers. Patients devoid of blood monocytes have normal tissue-resident macrophages in their skin biopsy, suggesting that long-lived and self-renewing macrophage subsets also exist in the human dermis [26]. Single-cell sequencing has also identified several subsets/cell states of CD68 + macrophages in adult skin [27][28][29]. \n\nAmong all, macrophage receptor with collagenous structure (MARCO) + macrophages were consistently identified in two studies and express high levels of the complement proteins' (C1QB and C1QC) transcripts and the cell surface receptor CD163 [27,28]. Xue et al. also identified two macrophage subsets in which CCR1 + macrophages have an inflammatory phenotype and express high levels of (C-X-C motif) ligand 2 (CXCL2), (C-C motif) ligand 3 (CCL3), CCL4 and CEBOB, and TREM2 + macrophages, which are highly enriched in lipid metabolism [28]. Another population of Mac2 + macrophages displaying an alternative activation state with upregulated NR4A1, NR4A2 and KLF4 has also been reported in human skin and can be identified by F13A1 [27]. Remarkably, Mac2 macrophages' transcriptomic profile closely aligns with that of foetal macrophages in embryonic skin [27]."
-  },
-  {
-    "snippet_index": 13,
-    "quotes": [
-      "Macrophages specifically express the scavenger receptor CD163 and Factor XIIIA (FXIIIA) in normal skin which distinguish macrophages from resident dermal DCs [68,69].",
-      "The immune-stimulatory capacity of CD163 + FXIIIA + macrophages is markedly lower than that of dermal DCs [69].",
-      "Macrophages of adult skin were classified into Mac1 and Mac2 subtypes based on specific marker signatures [72,73]. Both Mac1 and Mac2 express CD68, while Mac1 is characterized by higher expression of CD163, macrophage receptor with collagenous structure (MARCO), and complement transcripts. Mac2, on the other hand, displays expression of FXIIIA and markers of alternative activation and immune suppression."
-    ],
-    "summary": "This snippet reports that in adult skin, macrophages can be divided into Mac1 and Mac2 subtypes. Macro_2 (Mac2) expresses FXIIIA and other markers associated with alternative activation and immune suppression, distinguishing it from Mac1 and dermal DCs. Both Mac1 and Mac2 express CD68, but only Mac2 (Macro_2) displays FXIIIA and immune-suppressive features.",
-    "categories": [
-      "markers",
-      "function"
-    ],
-    "source_corpus_id": "CorpusId:246602980",
-    "source_title": "Antigen-Presenting Cells in Psoriasis",
-    "source_authors": "D. Antal et al.",
-    "source_year": null,
-    "snippet": "Macrophages are important effectors of the innate immune system. Primarily, macrophages are phagocytic cells vital to host survival, as macrophages are involved in the clearance of erythrocytes, cellular debris generated during tissue remodelling, as well as apoptotic and necrotic cells [67]. Macrophages specifically express the scavenger receptor CD163 and Factor XIIIA (FXIIIA) in normal skin which distinguish macrophages from resident dermal DCs [68,69]. The immune-stimulatory capacity of CD163 + FXIIIA + macrophages is markedly lower than that of dermal DCs [69]. Macrophages are more abundant in psoriatic lesions compared to normal skin as determined by increased expression of CD163 [68], but the exact role of macrophages in psoriasis is not fully understood. LL37 promotes proinflammatory macrophage differentiation [70] and CD163 + macrophages are co-expressed with LL37 and ADAMTSL5 in both lesional and non-lesional psoriatic skin [48], implying that macrophages, similarly as DCs, take part in the presentation of autoantigens to T cells. Like myeloid DCs, macrophages also have the ability to produce IL23 that may promote activation of CD4 + and CD8 + T cell populations and contribute to the IL17-mediated inflammatory response is psoriatic skin [71]. \n\nA recent article shed some new light on macrophages in psoriasis by revealing a re-emergence of developmental macrophage gene programs in psoriasis [72]. Single-cell RNA-sequencing analyses have been performed from developing healthy fetal skin, adult healthy skin and adult skin with psoriasis. Macrophages of adult skin were classified into Mac1 and Mac2 subtypes based on specific marker signatures [72,73]. Both Mac1 and Mac2 express CD68, while Mac1 is characterized by higher expression of CD163, macrophage receptor with collagenous structure (MARCO), and complement transcripts. Mac2, on the other hand, displays expression of FXIIIA and markers of alternative activation and immune suppression."
-  },
-  {
-    "snippet_index": 20,
-    "quotes": [
-      "Tissue-resident macrophages (Macrophages) are a major antigen-presenting cell subset in adult human barrier organs with a wide spectrum of pro-and anti-inflammatory properties, depending on their polarization state.",
-      "Skin-resident macrophages are induced by a T helper (Th)-2 cytokine environment [7] and express surface receptors, including CD11b, CD68 and CD206 [8].",
-      "proinflammatory macrophages may produce interferon gamma (IFN-\u03b3), which is a potent autocrine mediator that induces the M\u03a6 phenotype found in psoriatic skin.",
-      "skin-resident macrophages also have antiinflammatory properties and can promote tissue repair via local production of interleukin (IL)-10 [12]."
-    ],
-    "summary": "This snippet describes skin-resident macrophages in adult human skin (Macro_2/Macrophage (adult skin)), their pro- and anti-inflammatory functions, involvement in diseases, and phenotypic markers such as CD11b, CD68, CD206, F13A1, and CD163.",
-    "categories": [
-      "function",
-      "markers",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:276811898",
-    "source_title": "Macrophages in graft-versus-host disease (GVHD): dual roles as therapeutic tools and targets",
-    "source_authors": "Atieh Raoufi et al.",
-    "source_year": null,
-    "snippet": "Tissue-resident macrophages (Macrophages) are a major antigen-presenting cell subset in adult human barrier organs with a wide spectrum of pro-and anti-inflammatory properties, depending on their polarization state. Macrophages can rapidly change their gene expression in response to environmental stimuli along a continuum of what has formerly been simplified as M1 and M2 polarization. Skin-resident macrophages are induced by a T helper (Th)-2 cytokine environment [7] and express surface receptors, including CD11b, CD68 and CD206 [8]. Their detrimental role in inflammatory skin diseases has been shown for atopic dermatitis, psoriasis and discoid lupus skin lesions, where macrophages are characterized by the expression of F13A1 or CD163 and genes related to chemotaxis and transforming growth factor beta (TGF-\u03b2) signaling [9,10]. In a cytokinerich environment, proinflammatory macrophages may produce interferon gamma (IFN-\u03b3), which is a potent autocrine mediator that induces the M\u03a6 phenotype found in psoriatic skin. However, skin-resident macrophages also have antiinflammatory properties and can promote tissue repair via local production of interleukin (IL)-10 [12]. Recently, a role for macrophages in GVHD pathology has been identified in studies of tissues obtained from human HSCT recipients. Aasebo et al. detected a fivefold increase in the number of donor-derived proinflammatory macrophages in colon biopsies of patients with gastrointestinal aGVHD [13]. In cutaneous aGVHD, Jardine et al. reported a population of monocyte-derived macrophages that mediate keratinocyte cytopathicity ex vivo [98,99,161]."
-  },
-  {
-    "snippet_index": 23,
-    "quotes": [
-      "in most examined adult murine tissues, including skin, MACs are entirely or partially self-maintained from proliferating tissue-resident MACs (trMACs) of embryonal origin [8][9][10][11].",
-      "the fact that patients with congenital monocytopenia still have skin MACs [15,16] supports the hypothesis that the pool of MACs in human skin is either self-maintained or generated by locally resident progenitor cells.",
-      "demonstrated for human skin and upper airway mucosal mast cells, that they can mature from resident progenitor cells [17][18][19], and can be expanded in the absence of circulating progenitors, and bone marrow derived-stem cells.",
-      "current pilot study aimed to clarify whether, as in mice, the dermal MAC pool in adult human skin is self-maintained and can be expanded in the absence of hemoperfusion with circulating MOs and bone marrow derived-stem cells."
-    ],
-    "summary": "This snippet supports that adult skin macrophages (Macro_2) are maintained independently of circulating monocytes, possibly by self-renewal or differentiation from local progenitor cells, in both mice and humans.",
-    "categories": [
-      "development",
-      "function",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:210881004",
-    "source_title": "Tissue-resident macrophages can be generated de novo in adult human skin from resident progenitor cells during substance P-mediated neurogenic inflammation ex vivo",
-    "source_authors": "J. Gherardini et al.",
-    "source_year": null,
-    "snippet": "Macrophages (MACs) are mononuclear phagocytic leukocytes that play a key role in adaptive and innate immunity, and regulate tissue homeostasis [1][2][3][4]. While long believed to derive from circulating monocytes (MOs) [5][6][7], in most examined adult murine tissues, including skin, MACs are entirely or partially self-maintained from proliferating tissue-resident MACs (trMACs) of embryonal origin [8][9][10][11]. Moreover, during tissue inflammation, the contribution of MOs to the increase of MAC number is minimal and is due in large part to the proliferation of trMACs in murine tissues [10,[12][13][14]. \n\nHowever, our current understanding of MAC ontogeny and differentiation in peripheral tissues largely relies on studies in mice and remains unclear whether these concepts are transferable to the human system, namely to human skin. Yet, the fact that patients with congenital monocytopenia still have skin MACs [15,16] supports the hypothesis that the pool of MACs in human skin is either self-maintained or generated by locally resident progenitor cells. Interestingly, it has already been demonstrated for human skin and upper airway mucosal mast cells, that they can mature from resident progenitor cells [17][18][19], and can be expanded in the absence of circulating progenitors, and bone marrow derived-stem cells. \n\nTherefore, the current pilot study aimed to clarify whether, as in mice, the dermal MAC pool in adult human skin is self-maintained and can be expanded in the absence of hemoperfusion with circulating MOs and bone marrow derived-stem cells. \n\nTo address it, full-thickness hair-bearing human skin fragments were organ-cultured detached from blood circulation and bone marrow under serum-free conditions [20,21] and compared MAC number and activities in both a steady-state and pro-inflammatory conditions."
-  },
-  {
-    "snippet_index": 25,
-    "quotes": [
-      "Mature adult skin contains the dendritic cell (DC) subsets DC1 and DC2, as well as macrophages, all of which have been identified in first-trimester human skin and closely resemble their adult counterparts. 38 Macrophages greatly outnumber DCs in the first trimester, but reach adult ratios mid-gestation, 7,39 coinciding with bone marrow development. 40"
-    ],
-    "summary": "This snippet discusses that in developing skin, macrophages (including those resembling adult skin macrophages) are initially most abundant and derived from embryonic progenitors, express markers like CD206 and CD209, and perform anti-inflammatory and wound-healing functions.",
-    "categories": [
-      "development",
-      "function",
-      "markers"
-    ],
-    "source_corpus_id": "CorpusId:218615208",
-    "source_title": "The developing immune network in human prenatal skin",
-    "source_authors": "R. Botting et al.",
-    "source_year": null,
-    "snippet": "Unlike the epidermis, during development the dermis hosts multiple antigen-presenting cell (APC) subsets. Mature adult skin contains the dendritic cell (DC) subsets DC1 and DC2, as well as macrophages, all of which have been identified in first-trimester human skin and closely resemble their adult counterparts. 38 Macrophages greatly outnumber DCs in the first trimester, but reach adult ratios mid-gestation, 7,39 coinciding with bone marrow development. 40 Furthermore, plasmacytoid DCs, monocytes, monocyte-DCs (having both a monocyte and DC gene signature) and a neutrophil-myeloid precursor have also recently been identified in first-trimester human skin using single-cell RNA sequencing (scRNAseq). 41 acrophages are the most abundant immune subset in fetal skin, 41 which may elicit a multitude of functions due to their plasticity. 42 As has been shown in mice, they may be derived from progenitors originating in yolk sac, fetal liver or bone marrow. 13,16,43 Embryonic and fetal macrophages in the first-and second-trimester express MR (CD206) and DC-SIGN (CD209), 8,39 which is typically attributed to an M2 phenotype. 44 M2 macrophages are anti-inflammatory and support migration and differentiation of fibroblasts and keratinocytes during wound healing, 45,46 and in mice and zebrafish have been shown to support vascularization. 47 As such, macrophages in developing human skin may play a crucial role in supporting the structural changes occurring during maturation of skin. \n\nUnlike macrophages and LCs, very little is known about dermal DCs in developing skin beyond their presence. DC1 and DC2 have been identified in fetal skin prior to bone marrow production, 38,39,41 as such they may originate from both fetal liver-and bone marrow-derived precursors. Major Histocompatibility Complex class II + cells have been observed in lymphatic vessels of second-trimester skin, 38 suggesting DCs may migrate as part of homeostatic surveillance."
-  },
-  {
-    "snippet_index": 26,
-    "quotes": [
-      "Skin macrophages are derived from two different sources: (1) a resident macrophage population established before birth and (2) circulating monocytes that are recruited to areas of injury and differentiate into macrophages (Malissen et al., 2014;Vannella and Wynn, 2017).",
-      "The first type consists of a self-renewing pool of cells derived from the embryonic yolk sack. These cells, called dermal macrophages, are permanent residents in healthy adult skin, often found in nearby skin appendages."
-    ],
-    "summary": "This snippet notes that adult skin macrophages (Macro_2) include a permanent self-renewing population derived from the embryonic yolk sac, as well as monocyte-derived macrophages recruited during injury.",
-    "categories": [
-      "development",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:14033992",
-    "source_title": "The Role of Macrophages in Acute and Chronic Wound Healing and Interventions to Promote Pro-wound Healing Phenotypes",
-    "source_authors": "Paulina Krzyszczyk et al.",
-    "source_year": null,
-    "snippet": "Skin macrophages are derived from two different sources: (1) a resident macrophage population established before birth and (2) circulating monocytes that are recruited to areas of injury and differentiate into macrophages (Malissen et al., 2014;Vannella and Wynn, 2017). The first type consists of a self-renewing pool of cells derived from the embryonic yolk sack. These cells, called dermal macrophages, are permanent residents in healthy adult skin, often found in nearby skin appendages. In contrast, during injury, bone marrow-derived monocytes are recruited to the skin, locally differentiate into macrophages and play key roles in wound healing, as discussed previously (Malissen et al., 2014;Vannella and Wynn, 2017)."
-  },
-  {
-    "snippet_index": 30,
-    "quotes": [
-      "Macrophages are pivotal immune cell types in skin tissue.",
-      "During skin injury repair, macrophages are recruited to the injury site, where they phagocytose dead cells and regulate localized inflammatory responses and collagen deposition.",
-      "Macrophage polarization is one of the primary mechanisms underlying their functional diversity.",
-      "substantial macrophages infiltration occurred in the dermis and subcutaneous tissue at 10 days post-radiation (IR + PBS group)"
-    ],
-    "summary": "This snippet describes macrophages (including Macro_2/Macrophage (adult skin)) as key immune cells in skin, highlighting their roles in injury repair, such as phagocytosis and regulation of inflammation and collagen. It also notes their infiltration in the dermis and subcutaneous tissue following radiation injury.",
-    "categories": [
-      "function",
-      "location",
-      "morphology"
-    ],
-    "source_corpus_id": "CorpusId:278656623",
-    "source_title": "ADSC-derived exosomes mitigate radiation-induced skin injury by reducing oxidative stress, inflammation and cell death",
-    "source_authors": "Zhe Liu et al.",
-    "source_year": null,
-    "snippet": "Macrophages are pivotal immune cell types in skin tissue. During skin injury repair, macrophages are recruited to the injury site, where they phagocytose dead cells and regulate localized inflammatory responses and collagen deposition. Macrophage polarization is one of the primary mechanisms underlying their functional diversity. We observed that, compared to the control group (Con group), substantial macrophages infiltration occurred in the dermis and subcutaneous tissue at 10 days post-radiation (IR + PBS group)"
-  },
-  {
-    "snippet_index": 31,
-    "quotes": [
-      "Tissue-resident macrophages can be generated de novo in adult human skin from resident progenitor cells during substance P-mediated neurogenic inflammation ex vivo"
-    ],
-    "summary": "This snippet indicates that tissue-resident macrophages (such as Macro_2/Macrophage (adult skin)) can be newly generated from resident progenitor cells in adult human skin during neurogenic inflammation.",
-    "categories": [
-      "development",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:210881004",
-    "source_title": "Tissue-resident macrophages can be generated de novo in adult human skin from resident progenitor cells during substance P-mediated neurogenic inflammation ex vivo",
-    "source_authors": "J. Gherardini et al.",
-    "source_year": null,
-    "snippet": "Tissue-resident macrophages can be generated de novo in adult human skin from resident progenitor cells during substance P-mediated neurogenic inflammation ex vivo"
+    "summary": "Sim et al. (2022) independently confirm Mac2/Macro_2 as an NR4A1/NR4A2/KLF4+ F13A1+ alternatively activated macrophage state that aligns with fetal skin macrophages."
   }
 ]

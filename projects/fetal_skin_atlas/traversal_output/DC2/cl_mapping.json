@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "DC2",
+  "working_definition": "Type 2 conventional dendritic cell (cDC2) in adult human skin. Identified in Reynolds et al. (2021) as the DC2 population within the mononuclear phagocyte landscape. Defined by CD1c (BDCA-1), CLEC10A, CD11b, and IRF4 expression. Specialised for MHC class II antigen presentation to CD4+ T helper cells. Adult population; fetal DC2 is documented separately.",
+  "searches_performed": [
+    "conventional dendritic cell type 2",
+    "cDC2 CD1c CLEC10A",
+    "BDCA-1 dendritic cell skin"
+  ],
+  "best_match": {
+    "cl_term": "conventional dendritic cell type 2",
+    "cl_id": "CL:0002400",
+    "cl_definition": "A conventional dendritic cell that expresses CD1c and CLEC10A and is specialised for MHC class II antigen presentation to CD4+ T helper cells. In human, also known as BDCA-1+/CD1c+ cDC.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002400 'conventional dendritic cell type 2' directly corresponds to the DC2 population in Reynolds et al. (2021), confirmed by enrichment of murine dermal CD11c+ DC gene signatures and expression of CD1c, CLEC10A, and IRF4.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002400 (conventional dendritic cell type 2) as an exact match for the DC2 cell type.",
+  "new_term_needed": false
+}

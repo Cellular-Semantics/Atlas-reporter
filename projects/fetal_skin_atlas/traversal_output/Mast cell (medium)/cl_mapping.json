@@ -1,0 +1,45 @@
+{
+  "cell_type_label": "Mast cell (medium) — intermediate developmental mast cell state in prenatal skin",
+  "working_definition": "Mast cell (medium) is an intermediate transcriptional maturation state of mast cells resident in fetal human skin (7–17 PCW), positioned between the earliest progenitor-like stage and the fully mature chymase-positive state. These cells express KIT (CD117), tryptase transcripts (TPSAB1/TPSB2), CPA3, and GATA2, with intermediate FcεRI levels and developing granules that are weakly positive or negative for tryptase protein staining. They are committed mast cells that have begun granule biosynthesis but remain chymase-negative and functionally immature compared to adult connective tissue mast cells.",
+  "searches_performed": [
+    "mast cell medium",
+    "mast cell",
+    "immature mast cell",
+    "mast cell progenitor",
+    "mast cell precursor",
+    "connective tissue mast cell",
+    "tryptase positive mast cell",
+    "mucosal mast cell"
+  ],
+  "best_match": {
+    "cl_term": "mast cell",
+    "cl_id": "CL:0000097",
+    "cl_definition": "A cell that is found in almost all tissues containing numerous basophilic granules and capable of releasing large amounts of histamine and heparin upon activation. Progenitors leave bone marrow and mature in connective and mucosal tissue. Mature mast cells are found in all tissues, except the bloodstream. Their phenotype is CD117-high, CD123-negative, CD193-positive, CD200R3-positive, and FceRI-high. Stem-cell factor (KIT-ligand; SCF) is the main controlling signal of their survival and development.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000097 (mast cell) describes the mature tissue-resident mast cell with CD117-high and FcεRI-high phenotype and full histamine/heparin release capability. Mast cell (medium) is unambiguously a mast cell — it expresses KIT, tryptase transcripts, CPA3, GATA2, and is located in the dermis — so it falls within the CL:0000097 class. However, the medium-stage cell has intermediate (not high) KIT and FcεRI expression, weakly positive or negative tryptase protein staining, absent chymase protein, and developing rather than mature granules; it does not yet have the full effector phenotype described in the CL definition. The intermediate maturation state is a distinguishing feature not captured by the parent term, making this a broad match rather than an exact match. No CL sub-term for an intermediate or immature mast cell maturation state exists.",
+  "other_candidates": [
+    {
+      "cl_term": "connective tissue type mast cell",
+      "cl_id": "CL:0000484",
+      "cl_definition": "Mast cell subtype whose granules contain both the serine proteases tryptase and chymase. These cells are primarily found in connective tissue, such as the peritoneal cavity, skin, and intestinal submucosa. Their development is T-cell independent.",
+      "reason_rejected": "Requires co-expression of both tryptase and chymase in granules. Mast cell (medium) is chymase-negative — mature chymase-positive mast cells do not appear until the end of the second trimester. This sub-type represents a more mature endpoint that the medium-stage cell has not yet reached."
+    },
+    {
+      "cl_term": "mucosal type mast cell",
+      "cl_id": "CL:0000485",
+      "cl_definition": "Mast cell subtype that contains only the serine protease trypase in its granules. These cells are primarily found in mucosal tissue, such as intestinal mucosa and alveoli. They depend upon T-cells for development of phenotype.",
+      "reason_rejected": "Defined as residing in mucosal tissue and being T-cell dependent. The fetal skin mast cells are dermal (connective tissue), not mucosal, and their development is not T-cell dependent."
+    },
+    {
+      "cl_term": "mast cell progenitor",
+      "cl_id": "CL:0000831",
+      "cl_definition": "A progenitor cell of the mast cell lineage. Markers for this cell are FceRIa-low, CD117-positive, CD9-positive, T1/ST2-positive, SCA1-negative, and lineage-negative.",
+      "reason_rejected": "A committed progenitor that has not yet entered connective or mucosal tissue. The medium-stage cell has already commenced granule biosynthesis (tryptase transcripts, CPA3 expression) and is a tissue-resident mast cell, not a circulating progenitor."
+    }
+  ],
+  "recommendation": "Use CL:0000097 (mast cell) as a broad match (skos:broadMatch) for annotation purposes. A new CL term is needed to represent an intermediate or immature mast cell maturation state, distinct from the fully mature connective tissue mast cell. The proposed term would be defined as a mast cell that has commenced granule biosynthesis (tryptase transcripts present, CPA3-positive) but lacks mature granule content (chymase-negative, tryptase protein weakly positive or absent), with intermediate KIT and FcεRI expression levels, as found in fetal or early post-natal skin.",
+  "new_term_needed": true
+}

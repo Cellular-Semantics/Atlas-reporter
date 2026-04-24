@@ -1,8 +1,8 @@
 {
   "label": "Inf_mono",
-  "resolved_names": ["Inflammatory monocyte", "Inf_mono", "Infl Mo-like"],
+  "resolved_names": ["Inflammatory monocyte", "Inf. mono", "inflammatory monocyte"],
   "scope": "adult",
-  "tissue_context": "adult healthy skin (dermis)",
+  "tissue_context": "adult human skin",
   "confidence": "high",
-  "evidence": "Label originates from Reynolds et al. 2021 adult healthy skin atlas (E-MTAB-8142), integrated into Gopee et al. 2024 with original annotations. 'Inf_mono' is a standard abbreviation for inflammatory monocyte in skin atlas nomenclature. Mehta et al. 2021 describe 'Infl Mo-like' cells in the Reynolds dataset as CD14bright CD64bright CD163- mononuclear phagocytes."
+  "evidence": "Reynolds et al. (2021) use 'Inf. = inflammatory' as an abbreviation key in the figure legend for Fig. 3 UMAP of mononuclear phagocytes. The UMAP figure legend states: 'LC = Langerhans cell, DC = dendritic cell, Mig. = migratory, Mac = macrophage, Mono mac = monocyte derived macrophage, MoDC = monocyte derived dendritic cell, inf. = inflammatory'. The 'Inf. mono' label refers to the inflammatory monocyte state distinguished from classical monocytes by its inflammatory activation signature."
 }

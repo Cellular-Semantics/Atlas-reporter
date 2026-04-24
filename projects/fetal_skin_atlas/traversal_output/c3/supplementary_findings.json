@@ -1,38 +1,83 @@
 {
   "markers": [
     {
-      "gene": "CD52",
-      "evidence_type": "DE analysis (cluster markers)",
-      "source_table": "Supplementary Table 3"
+      "gene": "KRT1",
+      "evidence_type": "scRNA-seq marker",
+      "source_table": "Reynolds Table S1 / Fig 4B"
     },
     {
-      "gene": "VSIG4",
-      "evidence_type": "DE analysis (cluster markers)",
-      "source_table": "Supplementary Table 3"
+      "gene": "KRT10",
+      "evidence_type": "scRNA-seq marker",
+      "source_table": "Reynolds Table S1 / Fig 4B"
+    },
+    {
+      "gene": "FLG",
+      "evidence_type": "terminal differentiation marker",
+      "source_table": "Reynolds 2021 text"
+    },
+    {
+      "gene": "IVL",
+      "evidence_type": "terminal differentiation marker",
+      "source_table": "Reynolds 2021 text"
+    },
+    {
+      "gene": "CNFN",
+      "evidence_type": "terminal differentiation marker",
+      "source_table": "Reynolds 2021 text"
+    },
+    {
+      "gene": "ABCA12",
+      "evidence_type": "lamellar body / ichthyosis marker",
+      "source_table": "Reynolds Fig 4E"
+    },
+    {
+      "gene": "CKAP4",
+      "evidence_type": "lamellar body marker",
+      "source_table": "Reynolds Fig 4E"
+    },
+    {
+      "gene": "CLIP1",
+      "evidence_type": "lamellar body marker",
+      "source_table": "Reynolds Fig 4E"
     }
   ],
   "other_findings": [
     {
-      "finding": "Cluster c3 is annotated as 'Macrophages (VSIG4 high)'",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table 2"
+      "finding": "Differentiated KCs follow two inferred differentiation pathways from basal keratinocytes",
+      "category": "differentiation",
+      "source_table": "Reynolds 2021 text"
+    },
+    {
+      "finding": "One arm expresses high levels of lamellar body-related transcripts",
+      "category": "function",
+      "source_table": "Reynolds 2021 text"
+    },
+    {
+      "finding": "IRF1 and SOX9 are transcription factors differentially expressed in the two pathways",
+      "category": "transcription factors",
+      "source_table": "Reynolds 2021 text / Fig S6D"
+    },
+    {
+      "finding": "Differentiated KCs co-express genes associated with autosomal recessive congenital ichthyosis including ABCA12, NIPAL4, SLC27A4, TGM1",
+      "category": "disease",
+      "source_table": "Reynolds 2021 text / Fig 4E"
     }
   ],
   "evidence_quotes": [
     {
-      "quote": "The top marker genes for each cluster are listed in Supplementary Table 3.",
-      "source_file": "Supplementary Table 3",
-      "context": "Introduction/legend to Supplementary Table 3"
+      "quote": "Force-directed graph (FDG) and PAGA analyses reveal dual inferred differentiation trajectories from the stem cell genes (TP63, PPP3CA and CAV1/2)-enriched basal keratinocytes into terminally differentiated keratinocytes expressing CNFN, FLG and IVL",
+      "source_file": "Reynolds et al. 2021 Science",
+      "context": "Keratinocyte differentiation pathways"
     },
     {
-      "quote": "Cluster c3: CD52, VSIG4",
-      "source_file": "Supplementary Table 3",
-      "context": "DE marker gene lists per cluster"
+      "quote": "One arm expresses high levels of lamellar body (LB)\u00adrelated transcripts such as ABCA12, CKAP4 and CLIP1 that characterize late epidermal differentiation",
+      "source_file": "Reynolds et al. 2021 Science",
+      "context": "Keratinocyte lamellar body arm"
     },
     {
-      "quote": "c3\tMacrophages (VSIG4 high)",
-      "source_file": "Supplementary Table 2",
-      "context": "Cluster annotation table"
+      "quote": "undifferentiated KC (clusters 1, 5), proliferating (cluster 2), differentiated KC (clusters 3, 4, 6, 7), differentiated KC* (cluster 8)",
+      "source_file": "Reynolds et al. 2021 Science, Fig 4D legend",
+      "context": "Cluster annotations"
     }
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "cell_type_label": "Pericytes (prenatal skin)",
+  "working_definition": "Pericytes in prenatal human skin (7–17 PCW) are elongated, contractile mural cells that ensheath the walls of capillaries and postcapillary venules in the developing dermis, classified under the broad atlas category 'Mural cell'. They are defined by canonical markers PDGFRB, RGS5, ACTA2, CSPG4 (NG2), MCAM (CD146), and DESMIN, and function in regulating microvascular blood flow, capillary diameter, and endothelial cell proliferation through direct contact and paracrine signalling, including PDGF-mediated interactions with macrophage subsets. Their full maturation toward adult-equivalent cell states requires immune-derived in vivo signals not replicated in organoid culture.",
+  "searches_performed": [
+    "pericyte",
+    "skin pericyte",
+    "dermal pericyte",
+    "mural cell"
+  ],
+  "best_match": {
+    "cl_term": "pericyte",
+    "cl_id": "CL:0000669",
+    "cl_definition": "Pericytes are CD10-positive, CD13-positive, CD31-negative, CD45-negative, CD106-positive, CD117-negative, CD140-positive, CD144-negative, CD146-positive, CD271-positive, CD325-positive, NG2-positive, RGS5-positive, SMA-positive, and desmin-positive. A subpopulation is CD248-positive. They are also capable of producing angiopoietin 1, CXCL12, TGF-beta, and VEGF-A. An elongated, contractile cell found wrapped about precapillary arterioles outside the basement membrane. Pericytes are present in capillaries where proper adventitia and muscle layer are missing (thus distingushing this cell type from adventitial cells). They are relatively undifferentiated and may become fibroblasts, macrophages, or smooth muscle cells.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000669 'pericyte' describes exactly the same biological entity as the atlas 'Pericytes (prenatal skin)'. The CL definition specifies an elongated, contractile cell ensheathing capillary walls outside the basement membrane — precisely the morphology and location described in the report. The CL marker profile (CD140/PDGFRB, RGS5, NG2/CSPG4, CD146/MCAM, SMA/ACTA2, desmin) maps directly onto the canonical markers listed in the report. The atlas groups these cells under the parent category 'Mural cell', which is the immediate parent of CL:0000669 in the ontology hierarchy (CL:0008034). No skin-specific or dermal pericyte term exists in CL. The prenatal/fetal temporal qualifier reflects developmental context but does not constitute a distinct cell type — the atlas pericytes are bona fide pericytes as defined by CL:0000669. The match is exact, not merely broad, because the cell identity (markers, morphology, vascular niche, function) is fully congruent between the report and the CL definition.",
+  "other_candidates": [
+    {
+      "cl_term": "mural cell",
+      "cl_id": "CL:0008034",
+      "cl_definition": "Mural cells are pericytes and the vascular smooth muscle cells (vSMCs) of the microcirculation.",
+      "reason_rejected": "This is the direct parent class of pericyte in the ontology and is more general, encompassing both pericytes and vascular smooth muscle cells. The atlas explicitly annotates a fine-grained 'Pericytes' population distinct from smooth muscle cells, so CL:0008034 would be a broad match at best and is outclassed by the more specific CL:0000669."
+    },
+    {
+      "cl_term": "immature pericyte",
+      "cl_id": "CL:4047007",
+      "cl_definition": "A pericyte that is in an early stage of development, found in newly forming or remodeling blood vessels. An immature pericyte is characterized by it's mesenchymal stem cell-like properties and high proliferative capacity, which allows it to differentiate into various types of pericytes and contribute to the structural and functional maturation of the vasculature. Immature pericytes are stellate in new vessels and elongated with less protrusions in remodeling vessels.",
+      "reason_rejected": "Although the prenatal skin pericytes are developmentally immature (they have not reached adult-equivalent cell states as shown by organoid comparison), the atlas does not annotate them specifically as 'immature pericytes' characterised by high proliferative capacity and stellate morphology. The report does not provide evidence distinguishing these cells as CL:4047007 rather than canonical pericytes, and the canonical marker set matches CL:0000669 better."
+    }
+  ],
+  "recommendation": "Use CL:0000669 (pericyte) as an exact match for 'Pericytes (prenatal skin)'. No new CL term is needed; the general pericyte term is appropriate since no skin-specific or fetal-skin-specific pericyte term exists in CL and the cell type identity is fully captured by CL:0000669. If a skin-specific term is desired in future, a 'dermal pericyte' child term of CL:0000669 could be requested from the CL editors.",
+  "new_term_needed": false
+}

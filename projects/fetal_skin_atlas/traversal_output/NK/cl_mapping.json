@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "NK",
+  "working_definition": "Natural killer cell present in adult human skin. Identified in Reynolds et al. (2021) as part of the lymphoid compartment in adult skin. Characterised by expression of KLRD1, GNLY, PRF1, GZMB, FCGR3A, and KLRB1.",
+  "searches_performed": [
+    "natural killer cell",
+    "NK cell skin",
+    "innate lymphoid NK"
+  ],
+  "best_match": {
+    "cl_term": "natural killer cell",
+    "cl_id": "CL:0000623",
+    "cl_definition": "A lymphocyte that can spontaneously kill a variety of target cells without prior antigenic stimulation and without restriction by the MHC. Expresses a variety of inhibitory and activating receptors.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000623 'natural killer cell' directly corresponds to the NK population in Reynolds et al. (2021), which is characterised by canonical NK cell markers KLRD1, GNLY, PRF1, GZMB, and FCGR3A.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000623 (natural killer cell) as an exact match for the NK cell type.",
+  "new_term_needed": false
+}

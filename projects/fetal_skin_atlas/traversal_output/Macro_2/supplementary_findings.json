@@ -1,48 +1,19 @@
 {
   "markers": [
-    {
-      "gene": "CD68",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table S6"
-    },
-    {
-      "gene": "CD163",
-      "evidence_type": "differential expression (DE) analysis",
-      "source_table": "Supplementary Table S6"
-    },
-    {
-      "gene": "MSR1",
-      "evidence_type": "differential expression (DE) analysis",
-      "source_table": "Supplementary Table S6"
-    }
+    {"gene": "CD68", "evidence_type": "pan-macrophage marker, scRNA-seq", "source_table": "Reynolds 2021 main text"},
+    {"gene": "F13A1", "evidence_type": "defining marker, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "NR4A1", "evidence_type": "transcription factor, alternative activation, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "NR4A2", "evidence_type": "transcription factor, alternative activation, scRNA-seq", "source_table": "Reynolds 2021 Table S1"},
+    {"gene": "KLF4", "evidence_type": "transcription factor, immune suppression, scRNA-seq", "source_table": "Reynolds 2021 Table S1"}
   ],
   "other_findings": [
-    {
-      "finding": "Macro_2 is spatially localized in the dermis layer of adult skin",
-      "category": "spatial location",
-      "source_table": "Supplementary Table S8"
-    },
-    {
-      "finding": "Macro_2 cluster exhibits increased expression of antigen-presentation genes, consistent with immune surveillance function",
-      "category": "functional annotation",
-      "source_table": "Supplementary Table S7"
-    }
+    {"finding": "Mac2 is more closely aligned with fetal macrophages than Mac1", "category": "developmental program", "source_table": "Reynolds 2021 Fig 1E"},
+    {"finding": "Mac2 increases in AD and psoriasis lesional skin", "category": "disease association", "source_table": "Reynolds 2021 Fig 3E"},
+    {"finding": "Adult healthy skin Mac2 aligns with fetal skin, gut, kidney, liver and thymus macrophages", "category": "cross-tissue alignment", "source_table": "Reynolds 2021 Fig 3G"},
+    {"finding": "91 conserved genes between Mac2 and fetal macrophages identified by FindConservedMarkers", "category": "molecular evidence", "source_table": "Reynolds 2021 main text"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "Macro_2: (CD68, CD163, MSR1)",
-      "source_file": "Supplementary Table S6",
-      "context": "Marker genes identified for each macrophage subtype based on DE analysis results."
-    },
-    {
-      "quote": "Macro_2 is primarily located in the dermis layer of adult skin, as identified by spatial transcriptomics.",
-      "source_file": "Supplementary Table S8",
-      "context": "Spatial distribution of major skin cell types."
-    },
-    {
-      "quote": "The Macro_2 cluster exhibits increased expression of genes associated with antigen processing and presentation (e.g., HLA-DRA, CD74), consistent with a role in immune surveillance.",
-      "source_file": "Supplementary Table S7",
-      "context": "Functional enrichment analysis of cell type clusters."
-    }
+    {"quote": "Mac2 is characterized by the expression of F13A1 and transcription factors associated with alternative activation and suppression of immune responses (NR4A1, NR4A2, KLF4) and notably, is more closely aligned with fetal macrophages", "source_file": "Reynolds 2021 main text", "context": "Mac2/Macro_2 identity"},
+    {"quote": "We observed an increase in Mac2 in AD and psoriasis skin", "source_file": "Reynolds 2021 main text", "context": "Mac2 disease association"}
   ]
 }

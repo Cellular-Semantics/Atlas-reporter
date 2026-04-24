@@ -1,0 +1,38 @@
+{
+  "cell_type_label": "Capillary arterioles (skin organoid)",
+  "working_definition": "Capillary arterioles are vascular endothelial cells positioned along the arteriolar differentiation pathway, intermediate between capillaries and mature arterioles, and characterised by expression of the arteriolar marker GJA5. In the hair-bearing skin organoid (SkO), these cells exhibit a differentiation arrest — they retain strong expression of the sprouting angiogenesis gene signature but cannot progress to mature arterioles, a deficiency attributed to the absence of macrophage-derived GATA2-activating signals (principally VEGFA). They are distinct from post-arteriole capillary cells, which lie downstream of arterioles rather than upstream.",
+  "searches_performed": [
+    "capillary arteriole",
+    "endothelial cell arteriole",
+    "arteriole endothelial cell",
+    "GJA5 positive endothelial cell",
+    "microvascular endothelial cell skin",
+    "tip cell angiogenesis",
+    "capillary endothelial cell"
+  ],
+  "best_match": {
+    "cl_term": "endothelial cell of arteriole",
+    "cl_id": "CL:1000412",
+    "cl_definition": "An endothelial cell that is part of the arteriole.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "The atlas cell type is an endothelial cell along the arteriolar differentiation pathway expressing the canonical arteriolar marker GJA5, making CL:1000412 ('endothelial cell of arteriole') a valid parent. However, the match is broad rather than exact for two reasons. First, the atlas cell type is explicitly transitional and intermediate — positioned between capillaries and mature arterioles — not a resident of a formed arteriole. Second, the SkO-specific context adds a functional specialisation (differentiation arrest, downregulated GATA2/NFATC1 regulons, inability to guide stalk cells) that is not captured by the CL definition. The closest alternative, CL:4047029 ('post-arteriole capillary cell'), was rejected because it describes a capillary immediately downstream of an arteriole (i.e. venular direction), the opposite of the upstream pre-arteriole identity described here. CL:0002144 ('capillary endothelial cell') is also a valid parent but is less specific than CL:1000412 given the confirmed arteriolar (GJA5-positive) identity.",
+  "other_candidates": [
+    {
+      "cl_term": "post-arteriole capillary cell",
+      "cl_id": "CL:4047029",
+      "cl_definition": "An endothelial cell forming the walls of capillaries immediately downstream from arterioles, facilitating the exchange of substances between blood and interstitial fluid. This cell is characterized by a small diameter and may be continuous, fenestrated, or sinusoidal, depending on their location and function. This cell plays a crucial role in tissue oxygenation, nutrient delivery, and maintaining homeostasis within the microvascular network.",
+      "reason_rejected": "This term describes capillaries immediately downstream of arterioles (venular direction). The atlas capillary arteriole is upstream of mature arterioles along the arteriolar differentiation pathway — the opposite positional relationship — so this term does not describe the same entity."
+    },
+    {
+      "cl_term": "capillary endothelial cell",
+      "cl_id": "CL:0002144",
+      "cl_definition": "An endothelial cell found in capillaries.",
+      "reason_rejected": "Too generic; does not capture the arteriolar identity (GJA5 expression, arteriolar differentiation trajectory) that distinguishes capillary arterioles from ordinary capillary endothelial cells. CL:1000412 is a more informative broad match."
+    }
+  ],
+  "recommendation": "Use CL:1000412 (endothelial cell of arteriole) as a provisional broad match. A new CL term should be requested for a 'capillary arteriole endothelial cell' — defined as an endothelial cell intermediate between a capillary and a mature arteriole, expressing arteriolar markers such as GJA5, and representing an early stage of arteriolar differentiation from the capillary plexus. This term would be a child of CL:1000412 and sibling to any future skin-arteriole-specific terms.",
+  "new_term_needed": true
+}

@@ -1,0 +1,9 @@
+{
+  "label": "F1",
+  "cl_term": "skin fibroblast",
+  "cl_id": "CL:0002620",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_0002620",
+  "match_type": "broad",
+  "match_rationale": "F1/Fb1 is the dominant dermal fibroblast in healthy adult skin. CL:0002620 (skin fibroblast) covers all dermal fibroblasts; no exact CL term exists for the Fb1 homeostatic dominant subtype.",
+  "new_term_needed": false
+}

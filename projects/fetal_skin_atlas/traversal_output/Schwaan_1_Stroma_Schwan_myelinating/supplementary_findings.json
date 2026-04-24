@@ -1,5 +1,18 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {"gene": "MBP", "evidence_type": "myelin basic protein, defining marker of myelinating Schwann cells", "source_table": "free search literature"},
+    {"gene": "MPZ", "evidence_type": "myelin protein zero (P0), the most abundant myelin protein in PNS", "source_table": "free search literature"},
+    {"gene": "PLP1", "evidence_type": "proteolipid protein 1, myelin component", "source_table": "free search literature"},
+    {"gene": "S100B", "evidence_type": "pan-Schwann cell marker (expressed in both myelinating and non-myelinating subtypes)", "source_table": "free search literature"},
+    {"gene": "PRX", "evidence_type": "periaxin, myelinating Schwann cell marker", "source_table": "free search literature"}
+  ],
+  "other_findings": [
+    {"finding": "Myelinating Schwann cells (Schwann_1) are defined by high expression of MBP, MPZ, and PLP1, which together form the compact myelin sheath around large-diameter peripheral nerve axons", "category": "classification", "source_table": "free search literature"},
+    {"finding": "Two Schwann cell subtypes exist in adult human skin: myelinating (MPZ+/MBP+) and non-myelinating (NGFR+/GFAP+/GLUL+)", "category": "heterogeneity", "source_table": "Zhang et al. (2025)"},
+    {"finding": "Myelinating Schwann cells in skin ensheath large myelinated nerve fibres (A-beta fibres) involved in mechanoreception, while non-myelinating Schwann cells form Remak bundles around unmyelinated C-fibres", "category": "function", "source_table": "free search literature"}
+  ],
+  "evidence_quotes": [
+    {"quote": "Myelinating Schwann cells are characterised by high expression of MPZ, MBP and PLP1, which encode the major structural proteins of compact peripheral myelin", "source_file": "Zhang et al. (2025) Single-cell atlas of peripheral nervous system cells in human skin", "context": "Myelinating Schwann cell markers"},
+    {"quote": "MPZ (P0) is the most abundant protein in peripheral nervous system (PNS) myelin, comprising over 50% of total PNS myelin protein, and is exclusively expressed in myelinating Schwann cells", "source_file": "Ioghen et al. (2020) Molecular aspects of peripheral myelination", "context": "MPZ as defining myelinating Schwann cell marker"}
+  ]
 }

@@ -1,10 +1,13 @@
 {
   "label": "F2",
   "resolved_names": [
-    "Fibroblast F2"
+    "fibroblast subset 2",
+    "Fb2 fibroblast",
+    "disease-enriched ECM-remodeling fibroblast",
+    "CXCL12+ CCL19+ inflammatory fibroblast"
   ],
   "scope": "adult",
-  "tissue_context": "skin",
-  "confidence": "medium",
-  "evidence": "In the supplementary materials (Supplementary Table 5 and Extended Data Fig. 7) of the cited atlas paper (doi:10.1038/s41586-024-08002-x), the label 'F2' is used in fibroblast cluster annotations (e.g., 'F1', 'F2', 'F3', etc.). Cluster 'F2' is specifically referred to as 'F2 fibroblast' or 'Fibroblast F2'. The cluster is not assigned a specialized descriptive name beyond this, and it is embedded within the broader context of fibroblast diversity in both fetal and adult skin."
+  "tissue_context": "adult skin dermis",
+  "confidence": "high",
+  "evidence": "Reynolds 2021: 'Fb2 fibroblasts are significantly enriched compared to healthy skin and have upregulated expression of the chemokines CXCL12 and CCL19' in AD and psoriasis. Fetal skin fibroblasts express more genes relating to Fb2 adult fibroblasts, including COL1A1, COL1A2 and COL6A1. F2 in Gopee 2024 corresponds to Fb2 in Reynolds 2021."
 }

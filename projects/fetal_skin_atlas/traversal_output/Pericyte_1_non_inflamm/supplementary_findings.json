@@ -1,5 +1,18 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {"gene": "RGS5", "evidence_type": "defining marker for non-inflammatory pericyte subtype", "source_table": "free search literature"},
+    {"gene": "PDGFRB", "evidence_type": "pan-pericyte marker", "source_table": "free search literature"},
+    {"gene": "ACTA2", "evidence_type": "smooth muscle actin, pan-pericyte marker", "source_table": "free search literature"},
+    {"gene": "CSPG4", "evidence_type": "NG2 proteoglycan, pericyte marker", "source_table": "free search literature"},
+    {"gene": "CD248", "evidence_type": "endosialin/TEM1, pericyte marker", "source_table": "free search literature"}
+  ],
+  "other_findings": [
+    {"finding": "RGS5+ pericytes represent the non-inflammatory pericyte subpopulation in human skin, with lower expression of inflammatory cytokines and chemokines compared to TAGLN+/ACTA2-high pericytes", "category": "classification", "source_table": "free search literature"},
+    {"finding": "Pericytes are embedded in the basement membrane of capillaries and are identified by high expression of ACTA2, RGS5, and PDGFRB, distinguishing them from perivascular adventitial fibroblasts", "category": "definition", "source_table": "Ganier et al. (2024)"},
+    {"finding": "Two major pericyte populations are present in human skin: RGS5+ (non-inflammatory) and TAGLN+ (inflammatory/contractile)", "category": "heterogeneity", "source_table": "Ganier et al. (2024)"}
+  ],
+  "evidence_quotes": [
+    {"quote": "Pericytes are a specialised mesenchymal cell population embedded in the basement membrane of capillaries... identified and distinguished from perivascular adventitial fibroblasts by high expression of ACTA2, RGS5, and PDGFRB", "source_file": "Ganier et al. (2024) Multiscale spatial mapping of cell populations across the skin layers", "context": "Pericyte definition and markers"},
+    {"quote": "Regarding perivascular cell populations, we found three populations of pericytes... there were two major pericyte populations, which we denoted RGS5+ and TAGLN+ based on high expression of those genes", "source_file": "Ganier et al. (2024) Multiscale spatial mapping of cell populations across the skin layers", "context": "Pericyte heterogeneity"}
+  ]
 }

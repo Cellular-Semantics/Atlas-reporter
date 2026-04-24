@@ -1,0 +1,96 @@
+{
+  "cell_type_label": "Iron-recycling macrophage",
+  "suggested_label": "iron-recycling macrophage",
+  "definition": "A tissue-resident macrophage specialised in the phagocytosis of senescent erythrocytes and the recycling of iron from degraded haemoglobin, with iron export mediated by ferroportin (SLC40A1) (DOI:10.3233/TRD-170015). Identified across multiple prenatal human organs during fetal development, with highest enrichment in later gestation when immune effector gene programmes are progressively upregulated (DOI:10.1126/science.abo0510). In prenatal skin (7–17 post-conception weeks), this macrophage subset co-localises with endothelial cells in neurovascular microenvironments and specifically promotes endothelial cell chemotaxis and angiogenesis (DOI:10.1038/s41586-024-08002-x). The closest postnatal counterparts are splenic red pulp macrophages and Kupffer cells.",
+  "parent_term": {
+    "cl_id": "CL:0000864",
+    "cl_term": "tissue-resident macrophage"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0000922",
+    "uberon_term": "embryo"
+  },
+  "logical_axioms": [
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "iron ion export across plasma membrane",
+      "filler_id": "GO:1903988",
+      "notes": "Defines the iron-recycling function via ferroportin (SLC40A1); this process is the defining characteristic of this macrophage subset and distinguishes it from sibling tissue-resident macrophages."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "heme catabolic process",
+      "filler_id": "GO:0042167",
+      "notes": "Reflects the phagocytosis of senescent erythrocytes and degradation of haemoglobin, the upstream step that supplies iron for ferroportin-mediated export."
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "endothelial cell chemotaxis",
+      "filler_id": "GO:0035767",
+      "notes": "Gene module analysis in prenatal skin shows this subset specifically promotes endothelial cell chemotaxis (Gopee et al. 2024); 'capable of part of' used because the macrophage contributes paracrine signals that are part of the broader chemotaxis process."
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "angiogenesis",
+      "filler_id": "GO:0001525",
+      "notes": "All four macrophage subsets in prenatal skin including this one express gene programmes driving angiogenesis (Gopee et al. 2024)."
+    },
+    {
+      "relation": "expresses",
+      "relation_id": "RO:0002292",
+      "filler": "ferroportin",
+      "filler_id": "PR:000015138",
+      "notes": "SLC40A1/ferroportin expression is the key defining molecular marker; PR:000015138 is the species-neutral gene-level PRO term."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "erythrophagocytic tissue-resident macrophage",
+      "scope": "related",
+      "reference": "DOI:10.1126/science.abo0510"
+    },
+    {
+      "value": "SLC40A1-positive tissue-resident macrophage",
+      "scope": "related",
+      "reference": "DOI:10.1126/science.abo0510"
+    },
+    {
+      "value": "prenatal iron-recycling macrophage",
+      "scope": "narrow",
+      "reference": "DOI:10.1038/s41586-024-08002-x"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1038/s41586-024-08002-x",
+      "citation": "Gopee et al. (2024)",
+      "supports": "Identification of iron-recycling macrophages in prenatal skin (7–17 PCW), co-localisation with endothelial cells, endothelial cell chemotaxis and angiogenesis gene programmes."
+    },
+    {
+      "doi": "10.1126/science.abo0510",
+      "citation": "Suo et al. (2022)",
+      "supports": "Definition of the iron-recycling macrophage grouping across prenatal human organs; temporal enrichment in later gestation; adult erythrophagocytic macrophages of spleen and liver as closest postnatal counterparts."
+    },
+    {
+      "doi": "10.3233/TRD-170015",
+      "citation": "Ferreira and Gahl (2017)",
+      "supports": "SLC40A1/ferroportin as the sole mammalian cellular iron exporter expressed on macrophages."
+    },
+    {
+      "doi": "10.3390/ph11040137",
+      "citation": "Sukhbaatar and Weichhart (2018)",
+      "supports": "Macrophage role in erythropoiesis support and iron handling via erythrophagocytosis across spleen, liver, and bone marrow."
+    },
+    {
+      "doi": "10.3324/haematol.2018.197517",
+      "citation": "Recalcati et al. (2018)",
+      "supports": "Macrophage ferroportin-mediated iron export is essential for local tissue iron redistribution, hair follicle cycling, and wound healing."
+    }
+  ],
+  "justification": "No CL term exists for a tissue-resident macrophage defined by ferroportin (SLC40A1)-mediated iron recycling from erythrophagocytosis. The nearest existing terms — CL:0000874 (splenic red pulp macrophage) and CL:0000091 (Kupffer cell) — both perform erythrophagocytosis and iron recycling but are each restricted to a single adult tissue (spleen or liver respectively), with species-specific adult markers. The atlas iron-recycling macrophage is a distinct prenatal subset found across multiple fetal organs including skin, and shares functional overlap with both postnatal types but is not equivalent to either. CL:0000864 (tissue-resident macrophage) is the correct broad parent; the new term fills a genuine gap for the functional class defined by erythrophagocytosis and ferroportin-mediated iron export, operating in a prenatal developmental context.",
+  "ntr_markdown": "**Preferred term label**\niron-recycling macrophage\n\n**Synonyms** (add reference(s), please)\nerythrophagocytic tissue-resident macrophage (related) — DOI:10.1126/science.abo0510\nSLC40A1-positive tissue-resident macrophage (related) — DOI:10.1126/science.abo0510\nprenatal iron-recycling macrophage (narrow) — DOI:10.1038/s41586-024-08002-x\n\n**Definition** (free text, with reference(s), please. PubMed ID format is PMID:XXXXXX)\nA tissue-resident macrophage specialised in the phagocytosis of senescent erythrocytes and the recycling of iron from degraded haemoglobin, with iron export mediated by ferroportin (SLC40A1) (DOI:10.3233/TRD-170015). Identified across multiple prenatal human organs during fetal development, with highest enrichment in later gestation when immune effector gene programmes are progressively upregulated (DOI:10.1126/science.abo0510). In prenatal skin (7–17 post-conception weeks), this macrophage subset co-localises with endothelial cells in neurovascular microenvironments and specifically promotes endothelial cell chemotaxis and angiogenesis (DOI:10.1038/s41586-024-08002-x). The closest postnatal counterparts are splenic red pulp macrophages and Kupffer cells.\n\n**Parent cell type term** (check the hierarchy here https://www.ebi.ac.uk/ols4/ontologies/cl)\ntissue-resident macrophage (CL:0000864) — https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000864\n\n**Anatomical structure where the cell type is found** (check Uberon for anatomical structures: https://www.ebi.ac.uk/ols4/ontologies/uberon)\nNote: this is a cross-organ prenatal population, not restricted to a single tissue. The most appropriate general term is:\nembryo (UBERON:0000922) — https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000922\nSpecific documentation includes fetal skin, and the original cross-organ atlas reports presence across multiple fetal organs (Suo et al. 2022).\n\n**Your ORCID**\n[To be added by submitter]\n\n**Additional notes or concerns**\nThis term is needed because no existing CL term captures a tissue-resident macrophage defined by ferroportin (SLC40A1)-mediated iron recycling from erythrophagocytosis operating in a prenatal developmental context. The nearest existing terms — CL:0000874 (splenic red pulp macrophage) and CL:0000091 (Kupffer cell) — both perform erythrophagocytosis and iron recycling but are each restricted to a single adult tissue (spleen or liver respectively). The atlas iron-recycling macrophage is a distinct prenatal subset found across multiple fetal organs and shares functional overlap with both postnatal types but is not equivalent to either.\n\nProposed logical axioms:\n- subClassOf 'capable of' some 'iron ion export across plasma membrane' (GO:1903988)\n  [defines ferroportin/SLC40A1-mediated iron export as the core functional characteristic]\n- subClassOf 'capable of' some 'heme catabolic process' (GO:0042167)\n  [reflects erythrophagocytosis and haemoglobin degradation upstream of iron export]\n- subClassOf 'capable of part of' some 'endothelial cell chemotaxis' (GO:0035767)\n  [gene module analysis shows this subset specifically promotes endothelial chemotaxis in prenatal skin]\n- subClassOf 'capable of part of' some 'angiogenesis' (GO:0001525)\n  [all four prenatal skin macrophage subsets including this one express angiogenesis gene programmes]\n- subClassOf 'expresses' some 'ferroportin' (PR:000015138)\n  [SLC40A1/ferroportin expression is the defining molecular marker]\n\nKey references:\n- Gopee et al. (2024) — DOI:10.1038/s41586-024-08002-x — identification in prenatal skin, endothelial co-localisation, angiogenesis and chemotaxis programmes\n- Suo et al. (2022) — DOI:10.1126/science.abo0510 — cross-organ prenatal definition, temporal dynamics, postnatal counterparts\n- Ferreira and Gahl (2017) — DOI:10.3233/TRD-170015 — ferroportin as sole mammalian iron exporter in macrophages\n- Sukhbaatar and Weichhart (2018) — DOI:10.3390/ph11040137 — macrophage erythrophagocytosis and iron homeostasis\n- Recalcati et al. (2018) — DOI:10.3324/haematol.2018.197517 — macrophage ferroportin in local tissue iron provision\n\n---\n*Draft generated by atlas-chat from: /Users/do12/Documents/GitHub/atlas_chat/projects/fetal_skin_atlas/reports/Iron-recycling_macrophage.md*"
+}

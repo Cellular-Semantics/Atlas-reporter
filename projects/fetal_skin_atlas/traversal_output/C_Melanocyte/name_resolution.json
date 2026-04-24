@@ -1,10 +1,8 @@
 {
   "label": "C_Melanocyte",
-  "resolved_names": [
-    "Melanocyte"
-  ],
+  "resolved_names": ["Melanocyte", "skin melanocyte", "epidermal melanocyte"],
   "scope": "adult",
-  "tissue_context": "skin",
+  "tissue_context": "adult human skin",
   "confidence": "high",
-  "evidence": "In the Methods and cell type annotation sections, as well as in cell type mapping figures/tables, the term \"Melanocyte\" is used to refer to skin pigment-producing cells. The label 'C_Melanocyte' refers to the adult skin melanocytes, without division into subclusters or distinct subtypes. Cluster abbreviations beginning with 'C_' in the supplemental mapping tables are mapped to full cell type names, e.g., 'C_Melanocyte' \u2192 'Melanocyte'."
+  "evidence": "Reynolds et al. (2021) include melanocytes as a stromal cell type in the adult human skin atlas. The label 'C_Melanocyte' uses the 'C_' prefix convention for cell types starting with 'M' (to disambiguate from macrophages in file ordering). The cell is described as a melanocyte in reports and titles. Melanocytes are defined by expression of TYRP1, DCT, MLANA (MART-1), PMEL (gp100), and the master transcription factor MITF."
 }

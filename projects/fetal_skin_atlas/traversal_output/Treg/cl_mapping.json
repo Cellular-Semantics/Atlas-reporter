@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Treg",
+  "working_definition": "CD4+ FOXP3+ regulatory T cell present in adult human skin. Identified in Reynolds et al. (2021) as part of the T cell compartment. Characterised by FOXP3, TIGIT, CTLA4, SELL, and IL2RA expression. This is the adult Treg population; fetal Tregs are documented separately.",
+  "searches_performed": [
+    "regulatory T cell",
+    "FOXP3 Treg skin",
+    "CD4+ regulatory T cell"
+  ],
+  "best_match": {
+    "cl_term": "regulatory T cell",
+    "cl_id": "CL:0000815",
+    "cl_definition": "A T cell whose function is to suppress the activation of other immune cells and thereby maintain immune system homeostasis and tolerance to self-antigens. Typically expresses FOXP3.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000815 'regulatory T cell' directly corresponds to the Treg population in Reynolds et al. (2021), defined by FOXP3, TIGIT, and CTLA4 expression.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000815 (regulatory T cell) as an exact match for the Treg cell type.",
+  "new_term_needed": false
+}

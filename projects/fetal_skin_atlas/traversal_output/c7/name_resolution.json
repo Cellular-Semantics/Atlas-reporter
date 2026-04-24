@@ -1,8 +1,11 @@
 {
   "label": "c7",
-  "resolved_names": [],
+  "resolved_names": [
+    "differentiated keratinocyte",
+    "differentiated KC"
+  ],
   "scope": "adult",
-  "tissue_context": "skin",
-  "confidence": "low",
-  "evidence": "The provided excerpt and metadata do not include any cluster-to-name mapping or a description of the 'c7' cluster for the adult (or any) skin cell atlas. Neither the main text nor available supplementary sections resolve 'c7' to a specific cell type. Cluster IDs like 'c7' are generic and author-specific; resolution requires explicit mapping from the paper's figures, main text, or supplementary tables, which are not present here."
+  "tissue_context": "adult skin epidermis",
+  "confidence": "high",
+  "evidence": "Fig. 4D legend: undifferentiated KC (clusters 1, 5), proliferating (cluster 2), differentiated KC (clusters 3, 4, 6, 7), differentiated KC* (cluster 8)"
 }

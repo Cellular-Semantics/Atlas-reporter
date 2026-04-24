@@ -1,83 +1,24 @@
 [
   {
-    "snippet_index": 0,
+    "paper": "Reynolds et al. (2021)",
+    "doi": "10.1126/science.aba6500",
+    "corpusId": "231666430",
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
     "quotes": [
-      "The dermal fibroblasts can be divided into subtypes, such as papillary fibroblast, reticular fibroblast, dermal papilla (DP), and dermal white adipose tissue (DWAT) [15][16][17].",
-      "Studies on homologous models such as mice demonstrate that fibroblast on the skin can be isolated through the surface marker FAP and CD90 [18,19].",
-      "In the human skin, the papillary fibroblast can be identified as FAP+ CD90\u2212, the reticular fibroblast as FAP+ CD90+, and FAP\u2212 CD90+ pre-adipose reticular fibroblast [20].",
-      "Under specific signals such as adipogenesis-induced medium reticular fibroblast, FAP\u2212 CD90+ can differentiate to adipocyte, whereas papillary fibroblast FAP+ CD90\u2212 cannot be differentiated.",
-      "Sequencing studies also show that papillary fibroblast has enhanced collagen type VII and type III expressions related to papillary dermis formation, blood vessels, and dermo-epidermal junction (DEJ). In contrast, reticular fibroblast presents an enhanced expression of extracellular matrix (ECM)-related genes such as LOXL3, a lysyl oxidase related to elastin and collagen synthesis [21]."
+      "Three fibroblast subsets expressing extracellular matrix (ECM)-related genes such as\nMMP2, COL1A1, COL1A2 and NT5E (encodes CD73) are present in healthy human skin,\ndominated by Fb1 fibroblasts with minor populations of Fb2 and Fb3 fibroblasts",
+      "Dermal fibroblast heterogeneity encompassing structural and immunomodulatory\nsubtypes has been previously reported at single cell level"
     ],
-    "summary": "This snippet describes surface marker combinations (FAP, CD90) used to differentiate between human dermal fibroblast subtypes, including differentiation potential and unique gene/protein expression patterns for papillary and reticular fibroblasts.",
-    "categories": [
-      "markers",
-      "function",
-      "location",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:255027314",
-    "source_title": "The Human Dermis as a Target of Nanoparticles for Treating Skin Conditions",
-    "source_authors": "Javier Salazar et al.",
-    "source_year": null,
-    "snippet": "Fibroblasts are mesenchymal cells with different origins, locations, and functions that synthesize and maintain the extracellular components [15]. The dermal fibroblasts can be divided into subtypes, such as papillary fibroblast, reticular fibroblast, dermal papilla (DP), and dermal white adipose tissue (DWAT) [15][16][17]. The cellular markers that allow for classifying the fibroblast subpopulations fluctuate through embryo development. However, some features remain specific to papillary, reticular, or DWAT. Studies on homologous models such as mice demonstrate that fibroblast on the skin can be isolated through the surface marker FAP and CD90 [18,19]. \n\nInterestingly, different from the mouse model, the human skin presents a fibroblast population gradient where FAP and CD90 expression change depending on the dermis section. In the human skin, the papillary fibroblast can be identified as FAP+ CD90\u2212, the reticular fibroblast as FAP+ CD90+, and FAP\u2212 CD90+ pre-adipose reticular fibroblast [20]. The difference in these fibroblast populations is not exclusively on cellular markers that describe their anatomical locations. The fibroblast subpopulation presents a different gene and protein expression that determines how the fibroblast responds to environmental stimuli [21]. Under specific signals such as adipogenesis-induced medium reticular fibroblast, FAP\u2212 CD90+ can differentiate to adipocyte, whereas papillary fibroblast FAP+ CD90\u2212 cannot be differentiated. Sequencing studies also show that papillary fibroblast has enhanced collagen type VII and type III expressions related to papillary dermis formation, blood vessels, and dermo-epidermal junction (DEJ). In contrast, reticular fibroblast presents an enhanced expression of extracellular matrix (ECM)-related genes such as LOXL3, a lysyl oxidase related to elastin and collagen synthesis [21]."
+    "summary": "Reynolds et al. (2021) identify Fb3 (F3) as a minor dermal fibroblast population in healthy adult skin. Like Fb1 and Fb2, it expresses ECM-related genes (MMP2, COL1A1, COL1A2, NT5E/CD73). Its distinct transcriptional profile from Fb1 and Fb2 places it as a third fibroblast state, though its specific functions in healthy dermis are less characterised than Fb2."
   },
   {
-    "snippet_index": 11,
+    "paper": "Sole-Boldo et al. (2020)",
+    "doi": "10.1038/s42003-020-0922-4",
+    "corpusId": "216076805",
+    "title": "Single-cell transcriptomes of the human skin reveal age-related loss of fibroblast priming",
     "quotes": [
-      "fibroblasts localized at the frontier of deep dermis and hypodermis, i.e., dermo-hypodermal junction fibroblasts (F-DHJ), which were compared to intermediate reticular dermis (Fr) and superficial papillary dermis (Fp) fibroblasts.",
-      "F-DHJ differed from Fr and Fp cells in their wider potential for differentiation into mesodermal lineages and in their absence of contractility when integrated in a three-dimensional dermal equivalent.",
-      "The transcriptomic profile of F-DHJ exhibited specificities in the expression of genes involved in ECM synthesis-processing and \u201ctissue skeleton\u201d organization.",
-      "This comparative analysis classified the three skin fibroblast types, including F-DHJ, as a clearly distinct group from the five MSC sample origins."
+      "Our results define four main subpopulations that can be spatially localized and show differential secretory, mesenchymal and pro-inflammatory functional annotations.",
+      "we found that this fibroblast 'priming' becomes reduced with age"
     ],
-    "summary": "This snippet describes dermo-hypodermal junction fibroblasts (F-DHJ), a distinct dermal fibroblast subpopulation with unique differentiation potential, morphology, and gene expression profiles compared to papillary and reticular dermal fibroblasts. It emphasizes their specialized role in ECM organization and indicates that they are distinct from mesenchymal stem cells.",
-    "categories": [
-      "location",
-      "function",
-      "morphology",
-      "markers",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:211063673",
-    "source_title": "Fibroblasts from the Human Skin Dermo-Hypodermal Junction are Distinct from Dermal Papillary and Reticular Fibroblasts and from Mesenchymal Stem Cells and Exhibit a Specific Molecular Profile Related to Extracellular Matrix Organization and Modeling",
-    "source_authors": "V. Haydont et al.",
-    "source_year": null,
-    "snippet": "Human skin dermis contains fibroblast subpopulations in which characterization is crucial due to their roles in extracellular matrix (ECM) biology. This study investigates the properties of fibroblasts localized at the frontier of deep dermis and hypodermis, i.e., dermo-hypodermal junction fibroblasts (F-DHJ), which were compared to intermediate reticular dermis (Fr) and superficial papillary dermis (Fp) fibroblasts. F-DHJ differed from Fr and Fp cells in their wider potential for differentiation into mesodermal lineages and in their absence of contractility when integrated in a three-dimensional dermal equivalent. The transcriptomic profile of F-DHJ exhibited specificities in the expression of genes involved in ECM synthesis-processing and \u201ctissue skeleton\u201d organization. In accordance with transcriptome data, ECM proteins, notably Tenascin C, distributions differed between the reticular dermis and the dermo-hypodermal junction areas, which was documented in normal adult skin. Finally, genome-wide transcriptome profiling was used to evaluate the molecular proximity of F-DHJ with the two dermal fibroblast populations (Fp and Fr) and with the mesenchymal stem cells (MSCs) corresponding to five tissue origins (bone marrow, fat, amnion, chorion, and cord). This comparative analysis classified the three skin fibroblast types, including F-DHJ, as a clearly distinct group from the five MSC sample origins."
-  },
-  {
-    "snippet_index": 27,
-    "quotes": [
-      "After a careful reappraisal of the transcriptomic data of 13,823 human adult dermal fibroblasts that have been sequenced to date, we show that fibroblasts may robustly be assigned to three major types (axes A-C), which in turn are composed of ten major subtypes (clusters) which we denominated A1-A4, B1-B2 and C1-C4.",
-      "These computationally-determined axes and clusters represent the major fibroblast types and subtypes in adult healthy human skin across different datasets, accounting for 92.5% of the sequenced fibroblasts."
-    ],
-    "summary": "This snippet identifies that human adult dermal fibroblasts can be robustly classified into three major types, each with specific subtypes (ten clusters in total, such as A1-A4, B1-B2, C1-C4), based on single-cell RNA sequencing data across multiple datasets. This classification covers the majority of adult dermal fibroblasts and provides a framework for understanding their diversity.",
-    "categories": [
-      "markers",
-      "morphology",
-      "location"
-    ],
-    "source_corpus_id": "CorpusId:230108472",
-    "source_title": "Human dermal fibroblast subpopulations are conserved across single-cell RNA sequencing studies.",
-    "source_authors": "A. M. Ascensi\u00f3n et al.",
-    "source_year": null,
-    "snippet": "Based on their differential location within the dermis and on discrete changes in gene and protein expression, two major fibroblast subtypes (papillary and reticular) have traditionally been distinguished. In the last three years, a number of research groups have begun to address transcriptomic heterogeneity of human skin cells at the single-cell level, by determining mRNA levels of expressed genes through single-cell RNA sequencing (scRNAseq) technologies. However, the outcome of scRNAseq studies is thus far confusing. Very little overlap was found in fibroblast subpopulations, which also varied in number and composition in each dataset. After a careful reappraisal of the transcriptomic data of 13,823 human adult dermal fibroblasts that have been sequenced to date, we show that fibroblasts may robustly be assigned to three major types (axes A-C), which in turn are composed of ten major subtypes (clusters) which we denominated A1-A4, B1-B2 and C1-C4. These computationally-determined axes and clusters represent the major fibroblast types and subtypes in adult healthy human skin across different datasets, accounting for 92.5% of the sequenced fibroblasts. They thus may provide the basis to improve our understanding of dermal homeostasis and cellular function at the transcriptomic level."
-  },
-  {
-    "snippet_index": 30,
-    "quotes": [
-      "Dermal fibroblasts change during the aging process [59]. It was reported that the number of fibroblasts is lower in old mice than in young ones [60]. Senescent fibroblasts are less proliferative and secrete ECM-degrading proteins and proinflammatory cytokines during the aging process [60]. The fibroblasts in aged skin decrease their ability to produce collagen and elastin fibers [61].",
-      "Dermal fibroblasts can be classified in two subsets: papillary and reticular fibroblasts. Papillary fibroblasts exist in the papillary dermis, which is a thin layer of poorly organized collagen fiber bundles [62]. However, reticular fibroblasts exist in the reticular dermis, which is thicker and has a well-organized structure of collagen fiber bundles [62]. Furthermore, papillary and reticular fibroblasts perform different roles during wound healing process. Reticular fibroblasts mediate the initial phase of wound repair by migrating into the wound site and producing a collagen-enriched dermis; however, reticular dermis is unable to form hair follicles [63]. The papillary fibroblasts are present in the wound site at later wound-healing stages and are involved in the re-epithelialization and formation of hair follicles [63]."
-    ],
-    "summary": "The snippet details changes in dermal fibroblasts during aging, including reduced numbers and decreased production of collagen and elastin. It also distinguishes between papillary and reticular fibroblast subsets, noting their locations and specific roles in wound healing.",
-    "categories": [
-      "function",
-      "location",
-      "morphology",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:247405140",
-    "source_title": "Combined Treatment of Monopolar and Bipolar Radiofrequency Increases Skin Elasticity by Decreasing the Accumulation of Advanced Glycated End Products in Aged Animal Skin",
-    "source_authors": "Seyeon Oh et al.",
-    "source_year": null,
-    "snippet": "In our study, Glo-1 and Glo-2 expression was lower in the aged skin than it was in the young skin. Glo-1 expression was increased by RF; however, Glo-2 expression was not changed by RF. AGE accumulation and RAGE expression in the aged skin were higher than they were in the young skin. RF also contributed to decreasing these expressions. \n\nMMPs, which are upregulated by NF-\u03baB, lead to the destruction of collagen and elastin fibers, causing skin wrinkles [35,37]. In our study, NF-\u03baB and MMP2/3/9 expression was higher in the aged skin than it was in the young skin, and their expression was decreased by RF. \n\nDermal fibroblasts change during the aging process [59]. It was reported that the number of fibroblasts is lower in old mice than in young ones [60]. Senescent fibroblasts are less proliferative and secrete ECM-degrading proteins and proinflammatory cytokines during the aging process [60]. The fibroblasts in aged skin decrease their ability to produce collagen and elastin fibers [61]. \n\nDermal fibroblasts can be classified in two subsets: papillary and reticular fibroblasts. Papillary fibroblasts exist in the papillary dermis, which is a thin layer of poorly organized collagen fiber bundles [62]. However, reticular fibroblasts exist in the reticular dermis, which is thicker and has a well-organized structure of collagen fiber bundles [62]. Furthermore, papillary and reticular fibroblasts perform different roles during wound healing process. Reticular fibroblasts mediate the initial phase of wound repair by migrating into the wound site and producing a collagen-enriched dermis; however, reticular dermis is unable to form hair follicles [63]. The papillary fibroblasts are present in the wound site at later wound-healing stages and are involved in the re-epithelialization and formation of hair follicles [63]."
+    "summary": "Sole-Boldo et al. (2020) provide independent characterisation of human dermal fibroblast subpopulations with distinct spatial, functional and age-related properties, providing context for the minor Fb3/F3 subtype identified by Reynolds et al."
   }
 ]

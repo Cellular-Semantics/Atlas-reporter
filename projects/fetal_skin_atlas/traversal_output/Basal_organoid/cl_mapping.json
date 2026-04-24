@@ -1,0 +1,44 @@
+{
+  "cell_type_label": "Basal keratinocytes (skin organoid)",
+  "working_definition": "Basal keratinocytes in the hair-bearing skin organoid (SkO) are proliferative, KRT14+/KRT5+/TP63+ cells residing in the stratum basale of the stratified epidermis, attached to the epidermal-dermal interface. They serve as the progenitor pool of the interfollicular epidermis, undergoing asymmetric division to generate suprabasal daughter cells that terminally differentiate through spinous, granular, and cornified layers. They also contribute to hair follicle formation within the organoid, representing the early proliferative population that precedes specialised hair follicle keratinocyte states.",
+  "searches_performed": [
+    "basal keratinocyte",
+    "keratinocyte",
+    "basal cell epidermis",
+    "epidermal progenitor",
+    "basal epidermal cell",
+    "stratum basale keratinocyte",
+    "KRT14 KRT5 basal epidermal"
+  ],
+  "best_match": {
+    "cl_term": "basal cell of epidermis",
+    "cl_id": "CL:0002187",
+    "cl_definition": "A mitotically active, columnar-shaped keratinocyte located in the stratum basale of the epidermis and attached to the basement membrane. This cell exhibits heterogeneity, encompassing stem and progenitor subpopulations with distinct molecular and proliferative characteristics (Haensel et al., 2020), and serves as the primary source of new keratinocytes for epidermal renewal, homeostasis, and regeneration.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002187 'basal cell of epidermis' defines a mitotically active keratinocyte located in the stratum basale, attached to the basement membrane, that encompasses stem and progenitor subpopulations and serves as the primary source of new keratinocytes for epidermal renewal. This aligns precisely with the atlas description: basal keratinocytes in the SkO are KRT14+/KRT5+/TP63+ proliferative cells in the innermost epidermal layer at the epidermal-dermal interface, functioning as the progenitor pool for the stratified epidermis. The '(skin organoid)' qualifier in the atlas label denotes the experimental model system, not a distinct biological identity — the cell type itself is the canonical basal cell of the epidermis. Markers (KRT14, KRT5, TP63), location (stratum basale, basement membrane attachment), and function (proliferative progenitor generating suprabasal differentiating progeny) all match the CL definition. No biologically distinguishing features separate the SkO basal keratinocyte from the CL term, making this an exact match.",
+  "other_candidates": [
+    {
+      "cl_term": "keratinocyte stem cell",
+      "cl_id": "CL:0002337",
+      "cl_definition": "A stem cell found in the basal layer of the epidermis, hair follicle, and sebaceous gland, characterised by its quiescent nature, high proliferative potential, and capacity for long-term self-renewal. This cell maintains epidermal homeostasis by producing transit-amplifying cells that differentiate to replenish the stratified squamous epithelium.",
+      "reason_rejected": "The atlas basal keratinocyte population encompasses the entire basal layer progenitor pool, including both stem and transit-amplifying cells, not only the quiescent long-term self-renewing stem cell subpopulation described by this CL term. Using this term would over-restrict the mapping to a subpopulation."
+    },
+    {
+      "cl_term": "epidermal keratinocyte",
+      "cl_id": "CL:4052061",
+      "cl_definition": "A keratinocyte of the skin epidermis that synthesizes keratin and undergoes successive stages of differentiation as it migrates from the basal layer to the cornified (stratum corneum) layer. These differentiation stages include the basal, spinous (prickle), and granular cell layers.",
+      "reason_rejected": "This is the parent term covering all epidermal keratinocytes across all differentiation stages (basal through cornified). It is too broad — the atlas cell type is specifically restricted to the basal layer and does not include spinous, granular, or cornified keratinocytes."
+    },
+    {
+      "cl_term": "keratinocyte",
+      "cl_id": "CL:0000312",
+      "cl_definition": "An epithelial cell of stratified squamous tissues, including skin, oral mucosa (Hiroshima et al., 2011), and esophagus (Whelan et al., 2018), that produces keratin proteins and secretes antimicrobial peptides to form a resilient barrier against environmental damage, dehydration, pathogens, and microbial invasion.",
+      "reason_rejected": "Grandfathered broad parent term covering all keratinocytes of stratified squamous epithelia including non-skin sites. Much too broad to represent the atlas cell type, which is specifically a basal epidermal keratinocyte."
+    }
+  ],
+  "recommendation": "Use CL:0002187 (basal cell of epidermis) as an exact match. The '(skin organoid)' parenthetical in the atlas label reflects the experimental system only; the underlying cell biology matches the CL definition precisely.",
+  "new_term_needed": false
+}

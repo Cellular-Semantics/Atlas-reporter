@@ -1,573 +1,119 @@
-{
-  "CorpusId:282135106": {
-    "title": "Niche-specific dermal macrophage loss promotes skin capillary ageing",
-    "authors": [
-      "Kailin R. Mesa",
-      "Kevin A. O\u2019Connor",
-      "Charles Ng",
-      "Steven P Salvatore",
-      "Alexandra Dolynuk",
-      "Michelle Rivera Lomeli",
-      "Dan R. Littman"
-    ],
-    "year": 2025,
-    "venue": "Nature",
-    "doi": "10.1038/s41586-025-09639-y",
-    "pmid": "41094141",
-    "url": "https://www.semanticscholar.org/paper/ee16ec1a83465819362f03f5e6e6363533f3521b",
-    "abstract": "All mammalian organs depend on resident macrophage populations to coordinate repair and facilitate tissue-specific functions1, 2\u20133. Functionally distinct macrophage populations reside in discrete tissue niches and are replenished through a combination of local proliferation and monocyte recruitment4,5. Declines in macrophage abundance and function have been linked to age-associated pathologies, including atherosclerosis, cancer and neurodegeneration6, 7\u20138. However, the mechanisms that coordinate",
-    "tldr": "It is shown that capillary-associated macrophages (CAMs) are selectively lost over time, contributing to impaired vascular repair and reduced tissue perfusion in older mice, and homeostatic renewal of resident macrophages is less precisely regulated than previously suggested."
-  },
-  "CorpusId:7551676": {
-    "title": "Macrophages Contribute to the Cyclic Activation of Adult Hair Follicle Stem Cells",
-    "authors": [
-      "Donatello Castellana",
-      "R. Paus",
-      "Mirna Perez-Moreno"
-    ],
-    "year": 2014,
-    "venue": "PLoS Biology",
-    "doi": "10.1371/journal.pbio.1002002",
-    "pmid": "25536657",
-    "url": "https://www.semanticscholar.org/paper/a845e9e7f43533503331a72b718cedbbe928f620",
-    "abstract": "Castellana, Paus, and Perez-Moreno discover that skin resident macrophages signal to skin stem cells via Wnt ligands to activate the hair follicle life cycle.",
-    "tldr": "Castellana, Paus, and Perez-Moreno discover that skin resident macrophages signal to skin stem cells via Wnt ligands to activate the hair follicle life cycle."
-  },
-  "CorpusId:25744972": {
-    "title": "Contribution of In Vivo and Organotypic 3D Models to Understanding the Role of Macrophages and Neutrophils in the Pathogenesis of Psoriasis",
-    "authors": [
-      "I. Lorthois",
-      "D. Asselineau",
-      "N. Seyler",
-      "R. Pouliot"
-    ],
-    "year": 2017,
-    "venue": "Mediators of Inflammation",
-    "doi": "10.1155/2017/7215072",
-    "pmid": "29249871",
-    "url": "https://www.semanticscholar.org/paper/234e8a8a9e27d070f3907db12c30667d67de75f5",
-    "abstract": "Psoriasis, a common chronic immune-mediated skin disease, is histologically characterized by a rapid keratinocyte turnover and differentiation defects. Key insights favor the idea that T cells are not the only key actors involved in the inflammatory process. Innate immune cells, more precisely neutrophils and macrophages, provide specific signals involved in the initiation and the maintenance of the pathogenesis. Current data from animal models and, to a lesser extent, three-dimensional in vitro",
-    "tldr": "Through the use of in vivo and 3D organotypic models, light is shed on the crosstalk between epithelial and immune components and the role of secreted inflammatory molecules in the development of this chronic skin disease."
-  },
-  "CorpusId:235213150": {
-    "title": "Immunology of Acute and Chronic Wound Healing",
-    "authors": [
-      "K. Raziyeva",
-      "Yevgeniy Kim",
-      "Zharylkasyn Zharkinbekov",
-      "Kuat Kassymbek",
-      "S. Jimi",
-      "A. Saparov"
-    ],
+[
+  {
+    "corpusId": "231666430",
+    "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+    "authors": "Reynolds G, Vegh P, Fletcher J et al.",
     "year": 2021,
-    "venue": "Biomolecules",
-    "doi": "10.3390/biom11050700",
-    "pmid": "34066746",
-    "url": "https://www.semanticscholar.org/paper/682db9362c9d0cb57ba2770f2fbcf89b53ad15a1",
-    "abstract": "Skin wounds greatly affect the global healthcare system, creating a substantial burden on the economy and society. Moreover, the situation is exacerbated by low healing rates, which in fact are overestimated in reports. Cutaneous wounds are generally classified into acute and chronic. The immune response plays an important role during acute wound healing. The activation of immune cells and factors initiate the inflammatory process, facilitate wound cleansing and promote subsequent tissue healing",
-    "tldr": "The role of innate and adaptive immunity in the pathogenesis of acute and chronic wounds is discussed, and the latest immunomodulatory therapeutic strategies, including modifying macrophage phenotype, regulating miRNA expression and targeting pro- and anti-inflammatory factors to improve wound healing are reviewed."
+    "journal": "Science",
+    "doi": "10.1126/science.aba6500",
+    "source": "primary_atlas"
   },
-  "CorpusId:10280599": {
-    "title": "Adult Langerhans cells derive predominantly from embryonic fetal liver monocytes with a minor contribution of yolk sac\u2013derived macrophages",
-    "authors": [
-      "G. Hoeffel",
-      "Yilin Wang",
-      "M. Greter",
-      "Peter See",
-      "P. Teo",
-      "B. Malleret",
-      "M. Leboeuf",
-      "Donovan Low",
-      "Guillaume Oller",
-      "Francisca F. Almeida",
-      "Sharon H.Y. Choy",
-      "M. Grisotto",
-      "L. R\u00e9nia",
-      "S. Conway",
-      "E. Stanley",
-      "J. Chan",
-      "J. Chan",
-      "L. Ng",
-      "I. Samokhvalov",
-      "M. Merad",
-      "F. Ginhoux"
-    ],
-    "year": 2012,
-    "venue": "Journal of Experimental Medicine",
-    "doi": "10.1084/jem.20120340",
-    "pmid": "22565823",
-    "url": "https://www.semanticscholar.org/paper/0a4e25b0001375ade10609708c8020dad6925954",
-    "abstract": "Langerhans cell precursors initially arise from yolk sac progenitors, but are later superseded by fetal liver monocytes.",
-    "tldr": "Langerhans cell precursors initially arise from yolk sac progenitors, but are later superseded by fetal liver monocytes."
-  },
-  "CorpusId:261342853": {
-    "title": "Niche-specific macrophage loss promotes skin capillary aging",
-    "authors": [
-      "Kailin R. Mesa",
-      "Kevin A. O\u2019Connor",
-      "Charles Ng",
-      "S. Salvatore",
-      "Alexandra Dolynuk",
-      "Michelle Rivera Lomeli",
-      "D. Littman"
-    ],
-    "year": 2023,
-    "venue": "bioRxiv",
-    "doi": "10.1101/2023.08.25.554832",
-    "pmid": "37662387",
-    "url": "https://www.semanticscholar.org/paper/d868c26abbeb86350fcf305bcd31698c79a2f22d",
-    "abstract": "All mammalian organs depend upon resident macrophage populations to coordinate repair processes and facilitate tissue-specific functions1\u20133. Recent work has established that functionally distinct macrophage populations reside in discrete tissue niches and are replenished through some combination of local proliferation and monocyte recruitment4,5. Moreover, decline in macrophage abundance and function in tissues has been shown to contribute to many age-associated pathologies, such as atherosclero",
-    "tldr": "It is found that neighboring macrophages do not proliferate or reorganize sufficiently to maintain an optimal population across the skin capillary niche in the absence of additional cues from acute tissue damage or increased abundance of growth factors, such as colony stimulating factor 1 (CSF1)."
-  },
-  "CorpusId:246077551": {
-    "title": "Immunomodulation of Skin Repair: Cell-Based Therapeutic Strategies for Skin Replacement (A Comprehensive Review)",
-    "authors": [
-      "Shima Tavakoli",
-      "M. Kisiel",
-      "T. Biedermann",
-      "Agnes S. Klar"
-    ],
-    "year": 2022,
-    "venue": "Biomedicines",
-    "doi": "10.3390/biomedicines10010118",
-    "pmid": "35052797",
-    "url": "https://www.semanticscholar.org/paper/5d40f0b32d961e36cf73b3625212e3b0ebac4cb5",
-    "abstract": "The immune system has a crucial role in skin wound healing and the application of specific cell-laden immunomodulating biomaterials emerged as a possible treatment option to drive skin tissue regeneration. Cell-laden tissue-engineered skin substitutes have the ability to activate immune pathways, even in the absence of other immune-stimulating signals. In particular, mesenchymal stem cells with their immunomodulatory properties can create a specific immune microenvironment to reduce inflammation",
-    "tldr": "An overview of current wound care techniques including skin tissue engineering and biomaterials as a novel and promising approach is presented and the plasticity and different roles of immune cells, in particular macrophages during various stages of skin wound healing are highlighted."
-  },
-  "CorpusId:259302777": {
-    "title": "Skin immunity in wound healing and cancer",
-    "authors": [
-      "Arnolda Jakovija",
-      "T. Chtanova"
-    ],
-    "year": 2023,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2023.1060258",
-    "pmid": "37398649",
-    "url": "https://www.semanticscholar.org/paper/947fbe64915e053515a055ba2e68ebdcd49e7d67",
-    "abstract": "The skin is the body\u2019s largest organ. It serves as a barrier to pathogen entry and the first site of immune defense. In the event of a skin injury, a cascade of events including inflammation, new tissue formation and tissue remodeling contributes to wound repair. Skin-resident and recruited immune cells work together with non-immune cells to clear invading pathogens and debris, and guide the regeneration of damaged host tissues. Disruption to the wound repair process can lead to chronic inflamma",
-    "tldr": "The role of resident and skin-infiltrating immune cells in wound repair is reviewed and their functions in regulating both inflammation and development of skin cancers are discussed."
-  },
-  "CorpusId:253440413": {
-    "title": "Macrophages in Skin Wounds: Functions and Therapeutic Potential",
-    "authors": [
-      "S. Sim",
-      "S. Kumari",
-      "S. Kaur",
-      "K. Khosrotehrani"
-    ],
-    "year": 2022,
-    "venue": "Biomolecules",
-    "doi": "10.3390/biom12111659",
-    "pmid": "36359009",
-    "url": "https://www.semanticscholar.org/paper/682a8e5430900bf426d989bb392b05d2d421ded3",
-    "abstract": "Macrophages regulate cutaneous wound healing by immune surveillance, tissue repair and remodelling. The depletion of dermal macrophages during the early and middle stages of wound healing has a detrimental impact on wound closure, characterised by reduced vessel density, fibroblast and myofibroblast proliferation, delayed re-epithelization and abated post-healing fibrosis and scar formation. However, in some animal species, oral mucosa and foetal life, cutaneous wounds can heal normally and rema",
-    "tldr": "This review highlights the recent findings on skin macrophage subsets, their functional role in adult cutaneous wound healing and the potential benefits of targeting them for therapeutic use."
-  },
-  "CorpusId:273400864": {
+  {
+    "corpusId": null,
     "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
-    "authors": [
-      "N. Gopee",
-      "Elena Winheim",
-      "B. Olabi",
-      "Chloe Admane",
-      "A. Foster",
-      "Ni Huang",
-      "R. Botting",
-      "Fereshteh Torabi",
-      "D. Sumanaweera",
-      "Anh Phuong Le",
-      "Jin Kim",
-      "L. Verger",
-      "Emily Stephenson",
-      "Diana Ad\u00e3o",
-      "Clarisse G\u00e2nier",
-      "Kelly Y. Gim",
-      "Sara A. Serdy",
-      "CiCi Deakin",
-      "Issac Goh",
-      "Lloyd Steele",
-      "Karl Annusver",
-      "Mohi-Uddin Miah",
-      "Win Tun",
-      "Pejvak Moghimi",
-      "Kwasi Kwakwa",
-      "Tong Li",
-      "Daniela Basurto Lozada",
-      "Ben Rumney",
-      "Catherine Tudor",
-      "Kenny Roberts",
-      "Nana-Jane Chipampe",
-      "Keval Sidhpura",
-      "Justin Englebert",
-      "Laura Jardine",
-      "Gary Reynolds",
-      "Antony Rose",
-      "Vicky Rowe",
-      "S. Pritchard",
-      "I. Mulas",
-      "J. Fletcher",
-      "Dorin-Mirel Popescu",
-      "Elizabeth Poyner",
-      "A. Dubois",
-      "A. Guy",
-      "Andrew Filby",
-      "S. Lisgo",
-      "Roger A. Barker",
-      "Ian A. Glass",
-      "Jong-Eun Park",
-      "R. Vento-Tormo",
-      "M. Nikolova",
-      "Peng He",
-      "J. E. Lawrence",
-      "Josh Moore",
-      "S. Ballereau",
-      "C. Hale",
-      "V. Shanmugiah",
-      "Dave Horsfall",
-      "N. Rajan",
-      "J. McGrath",
-      "Edel A. O\u2019Toole",
-      "Barbara Treutlein",
-      "O. Bayraktar",
-      "Maria Kasper",
-      "F. Progatzky",
-      "Pavel Mazin",
-      "Jiyoon Lee",
-      "L. Gambardella",
-      "Karl R. Koehler",
-      "Sara A Teichmann",
-      "M. Haniffa"
-    ],
+    "authors": "Gopee NH et al.",
     "year": 2024,
-    "venue": "Nature",
+    "journal": "Nature",
     "doi": "10.1038/s41586-024-08002-x",
-    "pmid": "39415002",
-    "url": "https://www.semanticscholar.org/paper/4fa361732b6949fb708120c7977c9e753b76ff51",
-    "abstract": "Human prenatal skin is populated by innate immune cells, including macrophages, but whether they act solely in immunity or have additional functions in morphogenesis is unclear. Here we assembled a comprehensive multi-omics reference atlas of prenatal human skin (7\u201317\u2009post-conception weeks), combining single-cell and spatial transcriptomics data, to characterize the microanatomical tissue niches of the skin. This atlas revealed that crosstalk between non-immune and immune cells underpins the for",
-    "tldr": "A comprehensive multi-omics reference atlas of prenatal human skin shows that innate immune cells crosstalk with non-immune cells to perform pivotal roles in skin morphogenesis, including the formation of hair follicles."
+    "source": "primary_atlas"
   },
-  "CorpusId:252923220": {
-    "title": "Autofluorescence identifies highly phagocytic tissue-resident macrophages in mouse and human skin and cutaneous squamous cell carcinoma",
-    "authors": [
-      "Pierre Bourdely",
-      "L. Petti",
-      "Sokchea Khou",
-      "A. Meghraoui-Kheddar",
-      "Roxane Elaldi",
-      "J. Cazareth",
-      "N. Mossadegh-Keller",
-      "J. Boyer",
-      "M. Sieweke",
-      "G. Poissonnet",
-      "A. Sudaka",
-      "V. Braud",
-      "F. Anju\u00e8re"
-    ],
+  {
+    "corpusId": "249628397",
+    "title": "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells",
+    "authors": "Liu B, Li A, Xu J, Cui Y",
     "year": 2022,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2022.903069",
-    "pmid": "36325333",
-    "url": "https://www.semanticscholar.org/paper/d4b95b4162842dba7279c6962b5f35e939696ab2",
-    "abstract": "Macrophages from human and mouse skin share phenotypic and functional features, but remain to be characterized in pathological skin conditions. Skin-resident macrophages are known to derive from embryonic precursors or from adult hematopoiesis. In this report, we investigated the origins, phenotypes and functions of macrophage subsets in mouse and human skin and in cutaneous squamous cell carcinoma (cSCC) using the spectral flow cytometry technology that enables cell autofluorescence to be consi",
-    "tldr": "In mouse and human, AF+ macrophages from perilesional skin and cSCC are highly phagocytic cells contrary to their AF- counterpart, thus identifying autofluorescence as a bona fide marker for phagcytosis."
+    "journal": "Frontiers in Surgery",
+    "doi": "10.3389/fsurg.2022.935107",
+    "source": "citation_traverse"
   },
-  "CorpusId:34955097": {
-    "title": "Pivotal role for skin transendothelial radio-resistant anti-inflammatory macrophages in tissue repair",
-    "authors": [
-      "O. Barreiro",
-      "Danay Cibrian",
-      "Cristina Clemente",
-      "David Alvarez",
-      "Vanessa Moreno",
-      "\u00cd\u00f1igo Valiente",
-      "A. Bernad",
-      "D. Vestweber",
-      "A. G. Arroyo",
-      "Pilar Mart\u00edn",
-      "U. V. von Andrian",
-      "F. S\u00e1nchez Madrid"
-    ],
-    "year": 2016,
-    "venue": "eLife",
-    "doi": "10.7554/eLife.15251",
-    "pmid": "27304075",
-    "url": "https://www.semanticscholar.org/paper/5d0e9101abc94c2ca9e060cae2c96b119d8b3d6f",
-    "abstract": "Heterogeneity and functional specialization among skin-resident macrophages are incompletely understood. In this study, we describe a novel subset of murine dermal perivascular macrophages that extend protrusions across the endothelial junctions in steady-state and capture blood-borne macromolecules. Unlike other skin-resident macrophages that are reconstituted by bone marrow-derived progenitors after a genotoxic insult, these cells are replenished by an extramedullary radio-resistant and UV-sen",
-    "tldr": "A novel subset of murine dermal perivascular macrophages that extend protrusions across the endothelial junctions in steady-state and capture blood-borne macromolecules are described and it is postulated that their preservation is important for skin homeostasis."
-  },
-  "CorpusId:250342783": {
-    "title": "Age-Related Alterations in Macrophage Distribution and Function Are Associated With Delayed Cutaneous Wound Healing",
-    "authors": [
-      "C. Dube",
-      "Yasmin Hui Binn Ong",
-      "Kelly Wemyss",
-      "Siddharth Krishnan",
-      "Tiak Ju Tan",
-      "B. Janela",
-      "J. Grainger",
-      "M. Ronshaugen",
-      "K. Mace",
-      "Chin Yan Lim"
-    ],
+  {
+    "corpusId": "247731792",
+    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
+    "authors": "He Y, Tacconi C, Dieterich L et al.",
     "year": 2022,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2022.943159",
-    "pmid": "35874681",
-    "url": "https://www.semanticscholar.org/paper/4dcf5ee6cdff7a1da7c4b37ac61d7da04cd8e499",
-    "abstract": "Ageing-related delays and dysregulated inflammation in wound healing are well-documented in both human and animal models. However, cellular and molecular changes underlying this impairment in healing progression are not fully understood. In this study, we characterised ageing-associated changes to macrophages in wounds of young and aged mice and investigated transcriptomic differences that may impact the progression of wound healing. Full-thickness wounds created on the dorsum of C57BL/6J young ",
-    "tldr": "Insight is provided into how poorly healing aged wounds are phenotypically defined by the presence of macrophages with reduced proliferative capacity and an exacerbated inflammatory response, both of which are pathways that can be targeted to improve healing in the elderly."
+    "journal": "Frontiers in Cardiovascular Medicine",
+    "doi": "10.3389/fcvm.2022.843091",
+    "source": "citation_traverse"
   },
-  "CorpusId:246602980": {
+  {
+    "corpusId": "235813151",
+    "title": "Inflammatory Skin Disorders: Monocyte-Derived Cells Take Center Stage",
+    "authors": "Mehta H, Angsana J, Bissonnette R et al.",
+    "year": 2021,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.672082",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "246602980",
     "title": "Antigen-Presenting Cells in Psoriasis",
-    "authors": [
-      "D. Antal",
-      "S. Alimohammadi",
-      "P. Bai",
-      "A. Sz\u00f6ll\u0151si",
-      "M. Sz\u00e1nt\u00f3"
-    ],
+    "authors": "Antal D, Alimohammadi S, Bai P et al.",
     "year": 2022,
-    "venue": "Life",
-    "doi": "10.3390/life12020234",
-    "pmid": "35207521",
-    "url": "https://www.semanticscholar.org/paper/cd7c07ffe4708a73edc179c8b080aace23f7e2fe",
-    "abstract": "Psoriasis is classically considered a chronic inflammatory skin disorder, however the identification of autoantigens in its pathogenesis established it as a T cell mediated autoimmune disease. As such professional antigen-presenting cells (APCs) are key players in the development of lesions. APCs in the skin include dendritic cells, Langerhans cells and monocytes/macrophages. In addition, epidermal keratinocytes and dermal mast cells are also endowed with antigen-presenting capacity. Skin APCs h",
-    "tldr": "The functional specialization of human skin APCs that promote T cell activation and adaptive immune response during psoriasis initiation and onset are discussed."
+    "journal": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms23042422",
+    "source": "citation_traverse"
   },
-  "CorpusId:7818908": {
-    "title": "Phenotypic Characterization of Leukocytes in Prenatal Human Dermis",
-    "authors": [
-      "C. Schuster",
-      "C. Vaculik",
-      "Marion Prior",
-      "C. Fiala",
-      "M. Mildner",
-      "W. Eppel",
-      "G. Stingl",
-      "A. Elbe-B\u00fcrger"
-    ],
-    "year": 2012,
-    "venue": "Journal of Investigative Dermatology",
-    "doi": "10.1038/jid.2012.187",
-    "pmid": "22718119",
-    "url": "https://www.semanticscholar.org/paper/46383afdc9748e44ef1e54b2a5e0ce2d068994aa",
-    "abstract": "The adult human skin harbors a variety of leukocytes providing immune surveillance and host defense, but knowledge about their ontogeny is scarce. In this study we investigated the number and phenotype of leukocytes in prenatal human skin (dermal dendritic cells (DDCs), macrophages, T cells (including FoxP3+ regulatory T cells), and mast cells) to unravel their derivation and to get a clue as to their putative function in utero. By flow cytometry and immunofluorescence, we found a distinction be",
-    "tldr": "The data show at which time point during gestation antigen-presenting cells, T cells, and mast cells populate the human dermis and provide a step forward to a better understanding of the development of the human skin immune system."
-  },
-  "CorpusId:238749227": {
-    "title": "Epithelial-Macrophage Crosstalk Initiates Sterile Inflammation in Embryonic Skin",
-    "authors": [
-      "Oindrila Bhattacharjee",
-      "Uttkarsh Ayyangar",
-      "Ambika S. Kurbet",
-      "Vairavan Lakshmanan",
-      "Dasaradhi Palakodeti",
-      "F. Ginhoux",
-      "Srikala Raghavan"
-    ],
-    "year": 2021,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2021.718005",
-    "pmid": "34721382",
-    "url": "https://www.semanticscholar.org/paper/40ef2d6c2e5b95d966113d600e9426256e221de5",
-    "abstract": "Macrophages are highly responsive to the environmental cues and are the primary responders to tissue stress and damage. While much is known about the role of macrophages during inflammatory disease progression; the initial series of events that set up the inflammation remains less understood. In this study, we use next generation sequencing (NGS) of embryonic skin macrophages and the niche cells - skin epithelia and stroma in the epidermis specific knockout of integrin beta 1 (Itg\u03b21) model to un",
-    "tldr": "A critical crosstalk between the epithelia and the dermal macrophages that shapes macrophage fate and initiates sterile inflammation in the skin is highlighted and can be extrapolated to other inflammatory disorders to understand the early events that set up the disease."
-  },
-  "CorpusId:257578469": {
-    "title": "Tissue-specific macrophages: how they develop and choreograph tissue biology",
-    "authors": [
-      "E. Mass",
-      "F. Nimmerjahn",
-      "Katrin Kierdorf",
-      "A. Schlitzer"
-    ],
-    "year": 2023,
-    "venue": "Nature reviews. Immunology",
-    "doi": "10.1038/s41577-023-00848-y",
-    "pmid": "36922638",
-    "url": "https://www.semanticscholar.org/paper/3f588f547080833a9d0d9b9b6ff222bc002cc17f",
-    "abstract": "Macrophages are innate immune cells that form a 3D network in all our tissues, where they phagocytose dying cells and cell debris, immune complexes, bacteria and other waste products. Simultaneously, they produce growth factors and signalling molecules \u2014 such activities not only promote host protection in response to invading microorganisms but are also crucial for organ development and homeostasis. There is mounting evidence of macrophages orchestrating fundamental physiological processes, such",
-    "tldr": "The different tissue-specific macrophage populations that are found throughout the body are discussed, highlighting shared and unique aspects of their developmental trajectories, transcriptional programmes and physiological functions."
-  },
-  "CorpusId:14033992": {
-    "title": "The Role of Macrophages in Acute and Chronic Wound Healing and Interventions to Promote Pro-wound Healing Phenotypes",
-    "authors": [
-      "Paulina Krzyszczyk",
-      "R. Schloss",
-      "A. Palmer",
-      "F. Berthiaume"
-    ],
-    "year": 2018,
-    "venue": "Frontiers in Physiology",
-    "doi": "10.3389/fphys.2018.00419",
-    "pmid": "29765329",
-    "url": "https://www.semanticscholar.org/paper/c7d188a8976f8927e7ddc131f5163c4adc2f7259",
-    "abstract": "Macrophages play key roles in all phases of adult wound healing, which are inflammation, proliferation, and remodeling. As wounds heal, the local macrophage population transitions from predominantly pro-inflammatory (M1-like phenotypes) to anti-inflammatory (M2-like phenotypes). Non-healing chronic wounds, such as pressure, arterial, venous, and diabetic ulcers indefinitely remain in inflammation\u2014the first stage of wound healing. Thus, local macrophages retain pro-inflammatory characteristics. T",
-    "tldr": "The physiology of monocytes and macrophages in acute wound healing and the different phenotypes described in the literature for both in vitro and in vivo models are discussed."
-  },
-  "CorpusId:266336211": {
-    "title": "Convergent evolution of monocyte differentiation in adult skin instructs Langerhans cell identity",
-    "authors": [
-      "Anna Appios",
-      "J. Davies",
-      "S. Sirvent",
-      "Stephen Henderson",
-      "S\u00e9bastien Trzebanski",
-      "Johannes Schroth",
-      "Morven L. Law",
-      "In\u00eas Boal Carvalho",
-      "Howard Yuan-Hao Kan",
-      "Shreya Lovlekar",
-      "C. Major",
-      "Andres Vallejo",
-      "Nigel J. Hall",
-      "Michael\u00a0R. Ardern-Jones",
-      "Sian M. Henson",
-      "E. Emmerson",
-      "Steffen Jung",
-      "M. Polak",
-      "Clare L. Bennett"
-    ],
-    "year": 2024,
-    "venue": "bioRxiv",
-    "doi": "10.1126/sciimmunol.adp0344",
-    "pmid": "39241057",
-    "url": "https://www.semanticscholar.org/paper/13cf2800f6620a9d671b45b158a5bc2a943c1cda",
-    "abstract": "Langerhans cells (LCs) maintain tissue and immunological homeostasis at the epidermal barrier site. They are unique among phagocytes in functioning both as embryo-derived, tissue-resident macrophages that influence skin innervation and repair, and as migrating professional antigen presenting cells, a capability classically assigned to dendritic cells (DCs). Here we report the mechanisms that determine this dual identity. Using ablation of embryo-derived LCs in murine adult skin and tracked diffe",
-    "tldr": "In human skin, intrinsic and extrinsic adaptations to adult skin niches replicate conditioning of eLC at birth, permitting repair of the unique LC network."
-  },
-  "CorpusId:2081575": {
-    "title": "Ontogeny of Tissue-Resident Macrophages",
-    "authors": [
-      "G. Hoeffel",
-      "F. Ginhoux"
-    ],
-    "year": 2015,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2015.00486",
-    "pmid": "26441990",
-    "url": "https://www.semanticscholar.org/paper/52799393117f767735497ba0d3367e246c542a45",
-    "abstract": "The origin of tissue-resident macrophages, crucial for homeostasis and immunity, has remained controversial until recently. Originally described as part of the mononuclear phagocyte system, macrophages were long thought to derive solely from adult blood circulating monocytes. However, accumulating evidence now shows that certain macrophage populations are in fact independent from monocyte and even from adult bone marrow hematopoiesis. These tissue-resident macrophages derive from sequential seed",
-    "tldr": "Evidence now shows that certain macrophage populations are in fact independent from monocyte and even from adult bone marrow hematopoiesis, and derive from sequential seeding of tissues by two precursors during embryonic development."
-  },
-  "CorpusId:259546196": {
-    "title": "MiR-23a Regulates Skin Langerhans Cell Phagocytosis and Inflammation-Induced Langerhans Cell Repopulation",
-    "authors": [
-      "Jie Wang",
-      "N. Parajuli",
-      "Qiyan Wang",
-      "N. Khalasawi",
-      "Hongmei Peng",
-      "Jun Zhang",
-      "C. Yin",
-      "Q-S Mi",
-      "Li Zhou"
-    ],
-    "year": 2023,
-    "venue": "Biology",
-    "doi": "10.3390/biology12070925",
-    "pmid": "37508356",
-    "url": "https://www.semanticscholar.org/paper/75486864e94df994ddec7d38b817df5d3753bba0",
-    "abstract": "Simple Summary Controlling epigenetic signals for mediating the homeostatic immune response in skin-residing Langerhans cells (LCs) ontogeny, maintenance, and function are largely not determined. Here, we demonstrated that the epigenetic regulator miR-23a not only plays an indispensable role for LC antigen uptake but is also crucial for bone marrow-derived LC repopulation during the inflammatory condition. During this process, miR-23a may regulate LC phagocytosis by mediating efferocytosis and e",
-    "tldr": "It is demonstrated that the epigenetic regulator miR-23a not only plays an indispensable role for LC antigen uptake but is also crucial for bone marrow-derived LC repopulation during the inflammatory condition, and an extra-epigenetic layer for incorporating TGF-\u03b2 and PU.1-mediated regulation during steady-state and inflammation-induced repopulated."
-  },
-  "CorpusId:235299682": {
-    "title": "Hallmarks of Aging in Macrophages: Consequences to Skin Inflammaging",
-    "authors": [
-      "Gabriel Guimar\u00e3es",
-      "P. P. Almeida",
-      "Leandro de Oliveira Santos",
-      "L. P. Rodrigues",
-      "J. L. de Carvalho",
-      "M. Boroni"
-    ],
-    "year": 2021,
-    "venue": "Cells",
-    "doi": "10.3390/cells10061323",
-    "pmid": "34073434",
-    "url": "https://www.semanticscholar.org/paper/77485de5c57142046ad61b9ef898f71af285a9b5",
-    "abstract": "The skin is our largest organ and the outermost protective barrier. Its aging reflects both intrinsic and extrinsic processes resulting from the constant insults it is exposed to. Aging in the skin is accompanied by specific epigenetic modifications, accumulation of senescent cells, reduced cellular proliferation/tissue renewal, altered extracellular matrix, and a proinflammatory environment favoring undesirable conditions, including disease onset. Macrophages (M\u03c6) are the most abundant immune c",
-    "tldr": "Recent findings pertaining to the effects of aging hallmarks over Macrophages are highlighted, supporting the recognition of such cell types as a driving force in skin inflammaging and age-related diseases."
-  },
-  "CorpusId:15657042": {
-    "title": "From Monocytes to M1/M2 Macrophages: Phenotypical vs. Functional Differentiation",
-    "authors": [
-      "P. Italiani",
-      "D. Boraschi"
-    ],
-    "year": 2014,
-    "venue": "Frontiers in Immunology",
-    "doi": "10.3389/fimmu.2014.00514",
-    "pmid": "25368618",
-    "url": "https://www.semanticscholar.org/paper/7a2a03bc13c61be3228deea7c1d46d0211ed7c56",
-    "abstract": "Studies on monocyte and macrophage biology and differentiation have revealed the pleiotropic activities of these cells. Macrophages are tissue sentinels that maintain tissue integrity by eliminating/repairing damaged cells and matrices. In this M2-like mode, they can also promote tumor growth. Conversely, M1-like macrophages are key effector cells for the elimination of pathogens, virally infected, and cancer cells. Macrophage differentiation from monocytes occurs in the tissue in concomitance w",
-    "tldr": "This review will address some of the important questions under the general framework of the role of monocytes and macrophages in the initiation, development, resolution, and chronicization of inflammation."
-  },
-  "CorpusId:248866160": {
-    "title": "Targeting the Tumor Microenvironment: A Close Up of Tumor-Associated Macrophages and Neutrophils",
-    "authors": [
-      "Massimo Russo",
-      "C. Nastasi"
-    ],
+  {
+    "corpusId": "253440413",
+    "title": "Macrophages in Skin Wounds: Functions and Therapeutic Potential",
+    "authors": "Sim S, Kumari S, Kaur S, Khosrotehrani K",
     "year": 2022,
-    "venue": "Frontiers in Oncology",
-    "doi": "10.3389/fonc.2022.871513",
-    "pmid": "35664746",
-    "url": "https://www.semanticscholar.org/paper/e370526fb442082958bfb6b8fd361f40459bda70",
-    "abstract": "The importance of the tumor microenvironment (TME) in dynamically regulating cancer progression and influencing the therapeutic outcome is widely accepted and appreciated. Several therapeutic strategies to modify or modulate the TME, like angiogenesis or immune checkpoint inhibitors, showed clinical efficacy and received approval from regulatory authorities. Within recent decades, new promising strategies targeting myeloid cells have been implemented in preclinical cancer models. The predominanc",
-    "tldr": "The current knowledge and the correlated challenges about the tumor-associated macrophages and neutrophils targeting strategies, current treatments, and future developments are summarized and discussed."
+    "journal": "Cells",
+    "doi": "10.3390/cells11193wounds",
+    "source": "citation_traverse"
   },
-  "CorpusId:210881004": {
-    "title": "Tissue-resident macrophages can be generated de novo in adult human skin from resident progenitor cells during substance P-mediated neurogenic inflammation ex vivo",
-    "authors": [
-      "J. Gherardini",
-      "Y. Uchida",
-      "J. Hardman",
-      "J. Ch\u00e9ret",
-      "K. Mace",
-      "M. Bertolini",
-      "R. Paus"
-    ],
+  {
+    "corpusId": "248054300",
+    "title": "Immunological signature of chronic spontaneous urticaria (Review)",
+    "authors": "Dobrican C, Muntean I, Pintea I et al.",
+    "year": 2022,
+    "journal": "Experimental and Therapeutic Medicine",
+    "doi": "10.3892/etm.2022.11219",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "251229121",
+    "title": "Dynamically upregulated mast cell CPA3 patterns in chronic obstructive pulmonary disease and idiopathic pulmonary fibrosis",
+    "authors": "Siddhuraj P, Jonsson J, Alyamani M et al.",
+    "year": 2022,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2022.906494",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "280847420",
+    "title": "Natural killer cells in skin: a unique opportunity to better characterize the many facets of an overlooked secondary lymphoid organ",
+    "authors": "Johnson KM, Lee DA",
+    "year": 2025,
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2025.1509635",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "216076805",
+    "title": "Single-cell transcriptomes of the human skin reveal age-related loss of fibroblast priming",
+    "authors": "Sole-Boldo L, Raddatz G, Schutz S et al.",
     "year": 2020,
-    "venue": "PLoS ONE",
-    "doi": "10.1371/journal.pone.0227817",
-    "pmid": "31971954",
-    "url": "https://www.semanticscholar.org/paper/5afca89f8f5ae8cd31280feb1669bb72dcdfb120",
-    "abstract": "Besides monocyte (MO)-derived macrophages (MACs), self-renewing tissue-resident macrophages (trMACs) maintain the intracutaneous MAC pool in murine skin. Here, we have asked whether the same phenomenon occurs in human skin using organ-cultured, full-thickness skin detached from blood circulation and bone marrow. Skin stimulation ex vivo with the neuropeptide substance P (SP), mimicking neurogenic skin inflammation, significantly increased the number of CD68+MACs in the papillary dermis without a",
-    "tldr": "This study provides the first evidence that resident MAC progenitors, from which mature MACs can rapidly differentiate within the tissue, do exist in normal adult human skin and suggests that this may satisfy increased local MAC demand under conditions of wounding/stress."
+    "journal": "Communications Biology",
+    "doi": "10.1038/s42003-020-0922-4",
+    "source": "citation_traverse"
   },
-  "CorpusId:1054584": {
-    "title": "The chemokine receptors ACKR2 and CCR2 reciprocally regulate lymphatic vessel density",
-    "authors": [
-      "K. M. Lee",
-      "R. Danuser",
-      "J. Stein",
-      "D. Graham",
-      "R. Nibbs",
-      "G. Graham"
-    ],
+  {
+    "corpusId": "267321861",
+    "title": "Single-cell analysis of psoriasis resolution demonstrates an inflammatory fibroblast state targeted by IL-23 blockade",
+    "authors": "Francis L, McCluskey D, Ganier C et al.",
+    "year": 2024,
+    "journal": "JCI Insight",
+    "doi": "10.1172/jci.insight.173006",
+    "source": "citation_traverse"
+  },
+  {
+    "corpusId": "13920827",
+    "title": "Characterization of innate lymphoid cells (ILC) in human skin and blood demonstrates increase of NKp44+ ILC3 in psoriasis",
+    "authors": "Villanova F, Flutter B, Tosi I et al.",
     "year": 2014,
-    "venue": "EMBO Journal",
-    "doi": "10.15252/embj.201488887",
-    "pmid": "25271254",
-    "url": "https://www.semanticscholar.org/paper/cac7bb466818b3bbe85648e8a5b6fbc94b5d0b7e",
-    "abstract": "Macrophages regulate lymphatic vasculature development; however, the molecular mechanisms regulating their recruitment to developing, and adult, lymphatic vascular sites are not known. Here, we report that resting mice deficient for the inflammatory chemokine\u2010scavenging receptor, ACKR2, display increased lymphatic vessel density in a range of tissues under resting and regenerating conditions. This appears not to alter dendritic cell migration to draining lymph nodes but is associated with enhanc",
-    "tldr": "Resting mice deficient for the inflammatory chemokine\u2010scavenging receptor, ACKR2, display increased lymphatic vessel density in a range of tissues under resting and regenerating conditions, which appears to alter dendritic cell migration to draining lymph nodes but is associated with enhanced fluid drainage from peripheral tissues and thus with a hypotensive phenotype."
-  },
-  "CorpusId:231149690": {
-    "title": "Tissue-Resident Macrophage Development and Function",
-    "authors": [
-      "Yinyuan Wu",
-      "K. Hirschi"
-    ],
-    "year": 2021,
-    "venue": "Frontiers in Cell and Developmental Biology",
-    "doi": "10.3389/fcell.2020.617879",
-    "pmid": "33490082",
-    "url": "https://www.semanticscholar.org/paper/e0d92c2b32c7f44e8ec40db84fd5a069a0279c72",
-    "abstract": "Tissue-resident macrophages have been associated with important and diverse biological processes such as native immunity, tissue homeostasis and angiogenesis during development and postnatally. Thus, it is critical to understand the origins and functions of tissue-resident macrophages, as well as mechanisms underlying their regulation. It is now well accepted that murine macrophages are produced during three consecutive waves of hematopoietic development. The first wave of macrophage formation t",
-    "tldr": "The developmental origins of tissue-resident macrophages, their molecular regulation in specific tissues, and their impact on embryonic development and postnatal homeostasis are discussed."
+    "journal": "Journal of Investigative Dermatology",
+    "doi": "10.1038/jid.2013.477",
+    "source": "citation_traverse"
   }
-}
+]

@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Schwaan_2_non_myelinating",
+  "working_definition": "Non-myelinating (Remak) Schwann cell in adult human skin. Identified in Reynolds et al. (2021) as one of two Schwann cell subtypes in the stromal compartment. Defined by NGFR (p75NTR), GFAP, GLUL, APOD, FABP7, and SMOC2 expression, with low/absent MPZ and MBP. Forms Remak bundles ensheathing unmyelinated C-fibres.",
+  "searches_performed": [
+    "non-myelinating Schwann cell",
+    "Remak Schwann cell NGFR",
+    "peripheral glial cell non-myelinating skin"
+  ],
+  "best_match": {
+    "cl_term": "non-myelinating Schwann cell",
+    "cl_id": "CL:0002374",
+    "cl_definition": "A Schwann cell that does not form a myelin sheath. Non-myelinating Schwann cells may enclose multiple axons in Remak bundles. They express NGFR and lack myelin proteins such as MPZ.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002374 'non-myelinating Schwann cell' directly corresponds to the Schwaan_2 population characterised by NGFR, GFAP, and GLUL expression with absent myelin gene expression.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0002374 (non-myelinating Schwann cell) as an exact match for the Schwaan_2_non_myelinating cell type.",
+  "new_term_needed": false
+}

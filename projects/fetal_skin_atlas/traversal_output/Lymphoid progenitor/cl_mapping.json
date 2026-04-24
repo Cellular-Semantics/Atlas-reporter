@@ -1,0 +1,42 @@
+{
+  "cell_type_label": "Lymphoid progenitor (prenatal skin)",
+  "working_definition": "A committed lymphoid precursor population identified by scRNA-seq in the dermal immune compartment of fetal human skin (7–17 PCW), most abundant in embryonic first-trimester skin. Cells express canonical lymphoid commitment markers including IL7R (CD127), FLT3, RAG1/RAG2, ID2, and GATA3, consistent with CLPs and/or ILC precursors. The cluster likely represents a mixed population of common lymphoid progenitors and downstream ILC precursors capable of in situ differentiation into ILC subsets, NK cells, and B lymphocytes within the developing dermis.",
+  "searches_performed": [
+    "lymphoid progenitor",
+    "common lymphoid progenitor",
+    "lymphoid precursor",
+    "innate lymphoid cell precursor",
+    "lymphoid lineage restricted progenitor"
+  ],
+  "best_match": {
+    "cl_term": "common lymphoid progenitor",
+    "cl_id": "CL:0000051",
+    "cl_definition": "A oligopotent progenitor cell committed to the lymphoid lineage.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000051 'common lymphoid progenitor' is defined as 'an oligopotent progenitor cell committed to the lymphoid lineage' with potential to give rise to T cells, B cells, NK cells, and ILCs. This aligns well with the fetal skin cluster, which expresses IL7R (CD127), FLT3, RAG1/RAG2, ID2, and GATA3 — markers consistent with CLPs and early ILC precursors. However, the atlas cluster is explicitly described as a likely mixed population of CLPs and ILC precursors captured at different points along the differentiation trajectory, and its context is fetal skin dermis rather than bone marrow. The CL definition does not capture the ILC precursor contribution or the fetal skin tissue context, so the match is broad rather than exact. CL:0000838 'lymphoid lineage restricted progenitor cell' was considered as an alternative broad match but is deliberately defined as a grouping class rather than a named cell type and therefore less informative. CL:0000936 'early lymphoid progenitor' was excluded because its markers are mouse-specific and it is a bone marrow stage that does not fit human fetal skin.",
+  "other_candidates": [
+    {
+      "cl_term": "lymphoid lineage restricted progenitor cell",
+      "cl_id": "CL:0000838",
+      "cl_definition": "A progenitor cell restricted to the lymphoid lineage.",
+      "reason_rejected": "This term is explicitly designated as a grouping class ('not an identified single cell type') covering all lymphoid-restricted progenitors. It is more accurate as a class-level annotation but provides less biological precision than CL:0000051, which captures the oligopotent CLP stage best matching the marker profile described in the report."
+    },
+    {
+      "cl_term": "early lymphoid progenitor",
+      "cl_id": "CL:0000936",
+      "cl_definition": "A lymphoid progenitor cell that is found in bone marrow, gives rise to B cells, T cells, natural killer cells and dendritic cells, and has the phenotype Lin-negative, Kit-positive, Sca-1-positive, FLT3-positive, CD34-positive, CD150 negative, and GlyA-negative.",
+      "reason_rejected": "The defining markers (Lin-/Kit+/Sca-1+) are mouse-specific, and the term is restricted to bone marrow. The fetal skin lymphoid progenitor cluster is a human population located in developing dermis, making this term inapplicable."
+    },
+    {
+      "cl_term": "CD7-positive lymphoid progenitor cell",
+      "cl_id": "CL:0001028",
+      "cl_definition": "CD7-positive lymphoid progenitor cell is a lymphoid progenitor cell that is CD34-positive, CD7-positive and is CD45RA-negative.",
+      "reason_rejected": "This is a human lymphoid progenitor sub-type defined by a specific CD34+/CD7+/CD45RA- phenotype. The atlas cluster has no confirmed CD7 status and likely spans both CD7+ and CD7- progenitor stages, so assigning a CD7-positive-specific term would be overly specific and potentially incorrect."
+    }
+  ],
+  "recommendation": "Use CL:0000051 (common lymphoid progenitor) as a broad match (skos:broadMatch) for the 'Lymphoid progenitor (prenatal skin)' cluster. A new CL term for a fetal skin-resident mixed CLP/ILC-precursor population is not required at this stage, but curators may wish to consider requesting a term for tissue-resident lymphoid progenitors if this population is consistently observed across fetal skin atlases.",
+  "new_term_needed": true
+}

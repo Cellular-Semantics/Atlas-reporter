@@ -1,0 +1,21 @@
+{
+  "cell_type_label": "Pericyte_2_inflamm",
+  "working_definition": "Inflammatory pericyte in adult human skin. Identified in Reynolds et al. (2021) as one of two pericyte subtypes. Characterised by TAGLN, ACTA2, and PDGFRB expression with upregulated inflammatory cytokines, chemokines, and adhesion molecules. Corresponds to the TAGLN+ pericyte subpopulation described in human skin spatial transcriptomics studies.",
+  "searches_performed": [
+    "pericyte",
+    "inflammatory pericyte skin",
+    "TAGLN pericyte activated"
+  ],
+  "best_match": {
+    "cl_term": "pericyte",
+    "cl_id": "CL:0000669",
+    "cl_definition": "A smooth muscle-like cell associated with the outer surface of microvascular endothelial cells. Pericytes are embedded in the basement membrane and regulate capillary tone and blood flow.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000669 'pericyte' is the best available CL term. The inflammatory pericyte subtype (Pericyte_2) is a specific activated pericyte state characterised by TAGLN expression and upregulated inflammatory genes; there is no CL term that captures this level of specificity. The parent pericyte term is used as a broad match.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000669 (pericyte) as a broad match. A new CL term for inflammatory (TAGLN+) pericyte subtype would improve specificity if warranted by atlas curation standards.",
+  "new_term_needed": true
+}

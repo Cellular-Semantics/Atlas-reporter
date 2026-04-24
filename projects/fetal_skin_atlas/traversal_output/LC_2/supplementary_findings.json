@@ -1,43 +1,42 @@
 {
   "markers": [
     {
-      "gene": "CD207",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table 3"
+      "gene": "CD207 (Langerin)",
+      "evidence_type": "low expression",
+      "source_table": "Liu et al. 2021 via Vine et al. 2022"
     },
     {
-      "gene": "CD1A",
-      "evidence_type": "known marker",
-      "source_table": "Supplementary Table 3"
+      "gene": "CD1c",
+      "evidence_type": "high expression; distinguishes LC2",
+      "source_table": "Liu et al. 2021 via Vine et al. 2022"
     },
     {
-      "gene": "CD1C",
-      "evidence_type": "DE analysis",
-      "source_table": "Supplementary Table 6"
+      "gene": "CD1b",
+      "evidence_type": "high expression",
+      "source_table": "Liu et al. 2021 via Vine et al. 2022"
+    },
+    {
+      "gene": "CLEC10A (MGL)",
+      "evidence_type": "top DEG in LC2",
+      "source_table": "Tamminga et al. 2025 (CorpusId:269715191)"
+    },
+    {
+      "gene": "LYZ (lysozyme)",
+      "evidence_type": "top DEG in LC2",
+      "source_table": "Tamminga et al. 2025"
     }
   ],
   "other_findings": [
     {
-      "finding": "LC_2 clusters were predominantly localized to the epidermal compartment in adult tissue sections.",
-      "category": "spatial location",
-      "source_table": "Supplementary Figure 4"
+      "finding": "LC2 may act as regulatory LCs with primary immunoregulatory role",
+      "category": "function",
+      "source_table": "Cao et al. review / Liu et al. 2021"
+    },
+    {
+      "finding": "LC2 more prominent in foreskin; may be absent in trunk skin",
+      "category": "site variation",
+      "source_table": "Liu et al. 2021 cited by Tamminga et al."
     }
   ],
-  "evidence_quotes": [
-    {
-      "quote": "LC_2 (Langerhans cells) were identified by high expression of CD207 and CD1A.",
-      "source_file": "Supplementary Table 3",
-      "context": "Cell type annotation and marker gene summary"
-    },
-    {
-      "quote": "Top differentially expressed genes for LC_2 include CD1C.",
-      "source_file": "Supplementary Table 6",
-      "context": "Table of DE genes for each annotated immune cell cluster"
-    },
-    {
-      "quote": "LC_2 clusters were predominantly localized to the epidermal compartment in adult tissue sections.",
-      "source_file": "Supplementary Figure 4",
-      "context": "Spatial mapping of immune cell clusters"
-    }
-  ]
+  "evidence_quotes": []
 }

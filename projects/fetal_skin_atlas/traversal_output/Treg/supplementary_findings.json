@@ -1,5 +1,19 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {"gene": "FOXP3", "evidence_type": "defining transcription factor", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "TIGIT", "evidence_type": "defining marker", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "CTLA4", "evidence_type": "defining marker", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "SELL", "evidence_type": "CD62L, central memory marker", "source_table": "Reynolds et al. (2021) main text"},
+    {"gene": "IL2RA", "evidence_type": "CD25, Treg activation marker", "source_table": "literature"}
+  ],
+  "other_findings": [
+    {"finding": "Dermal Tregs in adult skin show high mRNA and protein expression of CD62L (SELL), the circulating central memory T cells marker, distinguishing them from epidermal T cells", "category": "phenotype", "source_table": "Reynolds et al. (2021) main text"},
+    {"finding": "In healthy adult human skin, approximately 20% of tissue-resident CD4+ T-cells are Tregs expressing Foxp3, and only 5% of Tregs recirculate", "category": "abundance", "source_table": "free search literature"},
+    {"finding": "Tregs suppress overactive immunity, enable tissue tolerance, and restore homeostasis. They increase EGFR expression favouring wound re-epithelialisation", "category": "function", "source_table": "free search literature"}
+  ],
+  "evidence_quotes": [
+    {"quote": "regulatory (Treg) expressing FOXP3, TIGIT, CTLA4", "source_file": "Reynolds et al. (2021) PDF full text", "context": "Treg definition"},
+    {"quote": "Dermal Tregs show high mRNA and protein expression of the circulating central memory T cells marker CD62L (SELL)", "source_file": "Reynolds et al. (2021) PDF full text", "context": "Dermal Treg phenotype"},
+    {"quote": "Tregs expressed FOXP3, CTLA4 and IL2RA, defining their immune-modulatory function", "source_file": "Marella et al. (2024) PMC12132489", "context": "Treg markers in healthy human skin"}
+  ]
 }

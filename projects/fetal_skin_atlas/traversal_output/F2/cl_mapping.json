@@ -1,0 +1,9 @@
+{
+  "label": "F2",
+  "cl_term": "skin fibroblast",
+  "cl_id": "CL:0002620",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_0002620",
+  "match_type": "broad",
+  "match_rationale": "F2/Fb2 is the disease-enriched, CXCL12+CCL19+ inflammatory dermal fibroblast subset. CL:0002620 (skin fibroblast) covers all dermal fibroblasts; no exact CL term exists for this inflammatory subtype.",
+  "new_term_needed": false
+}

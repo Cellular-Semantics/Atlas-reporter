@@ -1,240 +1,29 @@
 [
   {
-    "snippet": "The endothelia lining the lumen of arteries and veins exhibit substantial anatomical and functional differences. For instance, blood flow rates in arteries are much higher than in the venous circulation. Arterial and venous ECs thus encounter different levels of shear stress [33]. Moreover, their endothelia adopt a dissimilar organization of cell junctions to mediate intercellular adhesion and communication. While the junctions in arteries are much tighter than those in the venous vasculature, the latter manifests more loosely organized intercellular junctions to accommodate its functional requirements for leukocyte trafficking [33]. Benefiting from extensive embryonic studies on blood vascular endothelial lineage determination, an encyclopedic knowledge of the molecular specialization of vascular beds during arteriovenous differentiation has been acquired. In particular, the identities of arterial and venous ECs are marked by their differential expression of EFNB2 and its receptor EPHB4, even prior to the onset of blood circulation [36]. Since the phenotypic characteristics and functionality of distinct blood vascular compartments are finely maintained under homeostatic condition, we hereby exploited single-cell transcriptomic profiling of human dermal BVs to unveil different BEC subtypes present in adult skin and gradual changes in their marker expression patterns along the vascular tree. \n\nPost-capillary venules represent the primary sites for leukocyte trafficking and subsequently the extravasation into peripheral tissues. The characterization of the atypical chemokine receptor ACKR1 has favored the identification of intact venous vasculature in multiple murine tissues [34]. In fact, ACKR1 also represents an important molecule that distinguished the downstream venular compartments from arterioles and post-arterial capillaries in human skin, in line with recent findings that EC junctional ACKR1 was required for efficient unidirectional transmigration of neutrophils from the venular lumen during inflammation [37].",
-    "paper_id": "247731792",
-    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
-    "authors": [
-      "Yuliang He",
-      "C. Tacconi",
-      "L. Dieterich",
-      "Jihye Kim",
-      "G. Restivo",
-      "Epameinondas Gousopoulos",
-      "N. Lindenblatt",
-      "M. Levesque",
-      "M. Claassen",
-      "M. Detmar"
+    "paper": {
+      "doi": "10.1126/science.aba6500",
+      "title": "Developmental cell programs are co-opted in inflammatory skin disease",
+      "authors": "Reynolds G et al.",
+      "year": 2021
+    },
+    "snippets": [
+      "Three distinct states of PECAM1(CD31)-expressing vascular endothelial cells (VE1, VE2, VE3) are present in adult dermis",
+      "Endothelial cells in the healthy adult dermis comprise vascular endothelium (PECAM1, EMCN) and lymphatic endothelium (LYVE1, PDPN)",
+      "p-values for VE1 psoriasis non-lesional = 5.5 x 10-6 and psoriasis lesional = 5.0 x 10-15"
     ],
-    "year": null,
-    "url": "",
-    "score": 0.513233935755644,
-    "depth": 0,
-    "corpus_id": "CorpusId:247731792"
+    "relevance": "primary source: VE1 as one of three PECAM1+ vascular endothelial states; significantly depleted in psoriasis"
   },
   {
-    "snippet": "Blood vessels are vital life-supporting channels penetrating almost every organ and tissue in the human body. Vascular endothelial cells (ECs), the inner lining of blood vessels, not only form the endothelial barrier to maintain vascular integrity, but also actively regulate vessel function, orchestrate the local immune response, and participate in the pathogenesis of immune-mediated inflammatory diseases (1,2). Increasing evidence demonstrates that ECs are not uniform cells, but rather have highly heterogeneous molecular and functional features along the vascular bed. Functional EC heterogeneity is particularly essential to regulating immune-cell adhesion and extravasation in many inflammatory settings, such as atherosclerosis, diabetes, and senescence (3,4). Recent studies and our previous work have revealed heterogeneity within skin ECs, which are clustered into different subtypes with specific locations and functions (5,6). However, the pathophysiologic role of endothelial heterogeneity in inflammatory dermatoses is currently unknown. \n\nDiverse EC subsets together mediate the dynamic regulation of the endothelial barrier, which is necessary for pathological progression (7). The endothelial glycocalyx is a dynamic structure of proteoglycans and glycosaminoglycans covering the inner wall of blood vessels, and together with cellular junctions of ECs, it forms the endothelial barrier (8). Endothelial glycocalyx acts as the first line of defense in limiting the pathological entry of immune cells into the skin and maintaining a homeostatic milieu for proper skin function (9). Endothelial glycocalyx integrity is affected by various factors, including angiocrine factors secreted by ECs (10,11), proteases and sheddases secreted by circulating cells (12), and mechanical and other chemical stresses within the bloodstream (13,14). EC-derived angiocrine factors tightly modulate the dynamic equilibrium of endothelial glycocalyx degradation and reconstruction.",
-    "paper_id": "257506233",
-    "title": "An IGFBP7hi endothelial cell subset drives T cell extravasation in psoriasis via endothelial glycocalyx degradation",
-    "authors": [
-      "Qingyang Li",
-      "S. Shao",
-      "Zhenlai Zhu",
-      "Jiaoling Chen",
-      "Junfeng Hao",
-      "Yaxing Bai",
-      "Bing Li",
-      "E. Dang",
-      "G. Wang"
+    "paper": {
+      "doi": "10.3389/fsurg.2022.935107",
+      "title": "Single-Cell Transcriptional Analysis Deciphers the Inflammatory Response of Skin-Resident Stromal Cells",
+      "authors": "Liu B et al.",
+      "year": 2022
+    },
+    "snippets": [
+      "Endothelial cells in the healthy adult dermis constitute the vascular endothelium (PECAM1, EMCN, SELE, CD93, CLDN5, VWF, and CDH5) and lymphatic endothelium (LYVE1, PDPN, PROX1, and CLDN5)",
+      "Reynolds et al. reported that some vascular endothelial cells, which expressed \u03b3-synuclein (SNCG) and high level of ACKR1 (the venular capillary marker), might function as postcapillary venular cells"
     ],
-    "year": null,
-    "url": "",
-    "score": 0.5007694076251098,
-    "depth": 0,
-    "corpus_id": "CorpusId:257506233"
-  },
-  {
-    "snippet": "In fact, ETS1 is required for EC survival and angiogenesis, whereas MECOM specifically marks mature embryonic arteries [56,65]. It is worth noting that comparative analyses of transcriptomes and proteomes often reveal a certain extent of concordance and incongruence, as cellular functions are also tightly orchestrated by multi-layered processes of post-translational modifications [66]. Future studies are thus required to validate and examine the biological relevance of different subtype-specific transcriptional regulators in adult human skin. \n\nTwo recent studies have provided new insights into the expression profiles that underpin the heterogeneity and organotypicity of healthy human cutaneous BECs [67,68]. In line with their findings, our study provides a systematic characterization of blood vascular endothelial heterogeneity in healthy adult human skin at single-cell resolution, featuring a detailed investigation of the spatial localization of seven novel subtype-specific vascular markers via extensive immunofluorescence co-staining with conventional markers. We also noted that human adult skin samples in general exhibit strong autofluorescence in the green channel (e.g., at the epidermis and extracellular matrix; Figure S6A-D), hence special caution should be taken to avoid misinterpretation and we hope that the markers presented in this study could facilitate the discernment of dermal vessel subtypes, especially in longer fluorescence wavelengths. Moreover, our findings could, to some extent, be used to identify different blood vessel subtypes in other organs. For instance, many of our BEC subtype-specific genes (Figure 1C), including the conventional markers CXCL12, ACKR1 and SELP as well as the novel markers GJA5, S100A4 and PLAUR, are also found to be differentially expressed in the respective cluster in human lung [69]. This indicates a certain level of conservation in BEC heterogeneity among different organs. These findings thereby provide an important resource for the vascular biology community and may lay the ground for future studies dissecting the differential activation or transformation of individual BV compartments under pathological conditions.",
-    "paper_id": "247731792",
-    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
-    "authors": [
-      "Yuliang He",
-      "C. Tacconi",
-      "L. Dieterich",
-      "Jihye Kim",
-      "G. Restivo",
-      "Epameinondas Gousopoulos",
-      "N. Lindenblatt",
-      "M. Levesque",
-      "M. Claassen",
-      "M. Detmar"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4983926629898431,
-    "depth": 0,
-    "corpus_id": "CorpusId:247731792"
-  },
-  {
-    "snippet": "Ample evidence pinpoints the phenotypic diversity of blood vessels (BVs) and site-specific functions of their lining endothelial cells (ECs). We harnessed single-cell RNA sequencing (scRNA-seq) to dissect the molecular heterogeneity of blood vascular endothelial cells (BECs) in healthy adult human skin and identified six different subpopulations, signifying arterioles, post-arterial capillaries, pre-venular capillaries, post-capillary venules, venules and collecting venules. Individual BEC subtypes exhibited distinctive transcriptomic landscapes associated with diverse biological pathways. These functionally distinct dermal BV segments were characterized by their unique compositions of conventional and novel markers (e.g., arteriole marker GJA5; arteriole capillary markers ASS1 and S100A4; pre-venular capillary markers SOX17 and PLAUR; venular markers EGR2 and LRG1), many of which have been implicated in vascular remodeling upon inflammatory responses. Immunofluorescence staining of human skin sections and whole-mount skin blocks confirmed the discrete expression of these markers along the blood vascular tree in situ, further corroborating BEC heterogeneity in human skin. Overall, our study molecularly refines individual BV compartments, whilst the identification of novel subtype-specific signatures provides more insights for future studies dissecting the responses of distinct vessel segments under pathological conditions.",
-    "paper_id": "247731792",
-    "title": "Novel Blood Vascular Endothelial Subtype-Specific Markers in Human Skin Unearthed by Single-Cell Transcriptomic Profiling",
-    "authors": [
-      "Yuliang He",
-      "C. Tacconi",
-      "L. Dieterich",
-      "Jihye Kim",
-      "G. Restivo",
-      "Epameinondas Gousopoulos",
-      "N. Lindenblatt",
-      "M. Levesque",
-      "M. Claassen",
-      "M. Detmar"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.490230351096164,
-    "depth": 0,
-    "corpus_id": "CorpusId:247731792"
-  },
-  {
-    "snippet": "Vascular endothelial (VE)-cadherin is a well-recognized endothelial cell marker. One of its interacting partners, the TGF-\u03b2 receptor Alk1, is essential in endothelial cells for adult skin vasculature remodeling during hair homeostasis. Using single-cell transcriptomics, lineage tracing and gene targeting in mice, we characterize the cellular and molecular dynamics of skin VE-cadherin+ cells during hair homeostasis. We describe dynamic changes of VE-cadherin+ endothelial cells specific to blood and lymphatic vessels and uncover an atypical VE-cadherin+ cell population. The latter is not a predicted adult endovascular progenitor, but rather a non-endothelial mesenchymal perineurial cell type, which forms nerve encapsulating tubular structures that undergo remodeling during hair homeostasis. Alk1 acts in the VE-cadherin+ perineurial cells to maintain proper homeostatic nerve branching by enforcing basement membrane and extracellular matrix molecular signatures. Our work implicates the VE-cadherin/Alk1 duo, classically known as endothelial-vascular specific, in perineurial-nerve homeostasis. This has broad implications in vascular and nerve disease.",
-    "paper_id": "261703763",
-    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
-    "authors": [
-      "Gopal Chovatiya",
-      "Kefei Li",
-      "Jonathan Li",
-      "Sangeeta Ghuwalewala",
-      "T. Tumbar"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4763791145296985,
-    "depth": 0,
-    "corpus_id": "CorpusId:261703763"
-  },
-  {
-    "snippet": "To study the intricate vascular and nerve branching morphogenesis and patterning in adult skin, we focused on the ear skin as a model because of the simple and reproducible dissection for whole-mount immunohistochemical analysis. The outer and inner parts of the ear skin were peeled away from the intervening cartilage (Fig. 1A,B, Supplemental Fig. 1A,B). Our high-resolution whole-mount immunohistochemistry of the ear skin was performed with antibodies to platelet endothelial cell adhesion molecule (PECAM-1) as a pan-endothelial cell marker, neuron-specific class III \u03b2-tubulin (Tuj1) as a pan-neuronal marker, and \u03b1 smooth muscle actin (\u03b1SMA) as a VSMC marker. This method enabled us to visualize peripheral nerves and blood vessels in the deeper dermis (reticular dermis) using confocal microscopy. The outer skin has large-diameter nerve bundles (20-50 \u00b5m) aligned with remodeled large-diameter blood vessels covered with \u03b1SMA + VSMCs (20-60 \u00b5m) (Fig. 1C,D). In contrast, the inner skin has smaller-diameter nerve bundles (<20 \u00b5m) aligned with smaller-diameter but remodeled blood vessels covered with \u03b1SMA + VSMCs (<20 \u00b5m) (Supplemental Fig. 1C,D). These data suggest that the congruence of peripheral nerve and blood vessel branching pattern established during embryogenesis is maintained until adulthood. We decided to focus our further analysis on the outer ear skin because of the ease of dissection and clear nerve-vessel alignment throughout the skin.",
-    "paper_id": "3295687",
-    "title": "Whole-Mount Adult Ear Skin Imaging Reveals Defective Neuro-Vascular Branching Morphogenesis in Obese and Type 2 Diabetic Mouse Models",
-    "authors": [
-      "T. Yamazaki",
-      "Wenling Li",
-      "Ling Yang",
-      "Ping Li",
-      "Haiming Cao",
-      "S. Motegi",
-      "M. Udey",
-      "Elise Bernhard",
-      "Takahisa Nakamura",
-      "Y. Mukouyama"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4657997044473861,
-    "depth": 0,
-    "corpus_id": "CorpusId:3295687"
-  },
-  {
-    "snippet": "Red fonts indicate downregulated categories. j Cartoon summarizing cellular and functional dynamic changes in endothelial populations while they transit from telogen to anagen stage in vivo. If the Cdh5 + /Krt19 + cells were indeed skin EC vascular progenitors acting in the hair cycle, we reasoned they should eventually form mature vasculature. To test this, we employed lineage tracing using the Krt19-CreERT; tdTomato mice TM-induced at PD17 and stained the tissue sections at PD32 (anagen) and PD49 (telogen) with VE-cadherin, CD31 (Pecam1), CD34 and lymphatic capillary marker Lyve1 in n = 3 mice per stage. Excitingly, we did observe tdTomato + /VE-cadherin + tubular structures resembling vasculature at both hair cycle stages analyzed (Fig. 4g, h). However, to our surprise these structures never stained positive for mature EC markers CD31, CD34, and Lyve1 (Fig. 4i-k) in >45 tdTomato + tubular structures/staining/stage analyzed. Thus, our in vivo lineage tracing analysis did not support the computational prediction of Cdh5 + /Krt19 + cells as a potential EVP subpopulation that may contribute to mature vasculature formation in adult skin during the hair cycle. This left unresolved the identity and function of the Cdh5 + /Krt19 + population and of the tubular structures it formed. \n\nCdh5 + /Krt19 + cells encapsulate neurofilament-positive nerve bundles Recently, scRNA-seq of cells isolated from sciatic nerves were profiled and a Krt19 + population was reported as a putative perineurial population 37,38 , although in vivo validation was lacking. Perineurial cells are a specialized non-EC type that encases thick nerve bundles, contributing to the nerve basement membrane and to nerve structural integrity 39 .",
-    "paper_id": "261703763",
-    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
-    "authors": [
-      "Gopal Chovatiya",
-      "Kefei Li",
-      "Jonathan Li",
-      "Sangeeta Ghuwalewala",
-      "T. Tumbar"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4585497661293619,
-    "depth": 0,
-    "corpus_id": "CorpusId:261703763"
-  },
-  {
-    "snippet": "hidden in less synchronous adult tissues. At anagen, the skin hypodermis significantly expands in size and becomes filled with engorging adipocytes and blood vessels that wrap around the downward growing hair follicle bulbs, while the lymphatic vessels also remodel their caliber and change their drainage capacity 14,15 (Fig. 1a). Alk1, the known VEcadherin interacting partner, acts in all skin ECs to regulate their migration and the vasculature remodeling during hair cycle 16 . Other skin structures, such as nerves and sub-cutaneous muscles, may also be remodeled during the hair cycle 17 . A thorough characterization of the cellular and functional heterogeneity of skin VE-cadherin + lineage organization during adult skin homeostasis is currently lacking. \n\nHere, we employed 10x Genomics scRNA-seq of sorted Cdh5-CreERT 2 ;tdTomato marked cells isolated from adult mouse skin at two hair cycle stages: quiescence (telogen) and growth (anagen). This data combined with genetic lineage tracing and Alk1 gene targeting in specific skin cell types allows us to refine and redefine the cellular and functional heterogeneity of the VE-cadherin + lineage during adult tissue homeostasis. We rule out a potential VE-cadherin + endovascular progenitor (EVP) that may be responsible for vasculature growth during hair cycle. Moreover, we firmly expand the VE-cadherin lineage attributes and the function of Alk1 from vascular-endothelial into other cell types and functions, including perineurial-nerve remodeling. This work opens new avenues of investigation into vascular and nerve remodeling functions in adult regenerative tissues, with potential implications to nerve and vascular diseases.",
-    "paper_id": "261703763",
-    "title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
-    "authors": [
-      "Gopal Chovatiya",
-      "Kefei Li",
-      "Jonathan Li",
-      "Sangeeta Ghuwalewala",
-      "T. Tumbar"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4463527063430926,
-    "depth": 0,
-    "corpus_id": "CorpusId:261703763"
-  },
-  {
-    "snippet": "Dear Editor: \n \nInflammatory skin diseases are sometimes accompanied by vascular abnormalities; e.g. Auspitz phenomenon in psoriasis or white dermographism in atopic dermatitis (AD)1,2. However, the detailed mechanism(s) and role of such vasculopathy in the pathogenesis of each disease are still unclear. \n \nVascular endothelial (VE)-cadherin is one of the major components of adherens junctions between endothelial cells. The critical role of VE-cadherin is vascular morphogenesis during embryogenesis. Such function of VE-cadherin is regulated by vascular endothelial cell growth factor (VEGF) signaling through the VEGF receptor leads to the increased detachment of endothelial cells and transendothelial permeability by promoting VE-cadherin internalization3. On the other hand, VE-cadherin limits the proliferation of endothelial cells by preventing the internalization of the VEGF receptor4. However, the role of VE-cadherin in the vascular abnormalities of inflammatory skin diseases has not been investigated. Full-length VE-cadherin is an insoluble transmembrane protein, whereas the extracellular domain of VE-cadherin is secreted as a soluble protein through a metalloproteinase-dependent mechanism5. Soluble VE-cadherin may function as an antagonist of full-length VE-cadherin, which is suggested by its inhibitory effect on tumor angiogenesis and tumor growth in vivo6. To date, although soluble VE-cadherin has been detected in serum in vivo, the clinical significance of serum soluble VE-cadherin levels is still unknown. Therefore, in this study, we attempted to evaluate the possibility that the serum VE-cadherin level can be a useful marker for inflammatory skin diseases. Serum samples were obtained from 13 patients with AD, 33 patients with psoriasis, and 7 patients with alopecia areata. Control serum samples were also collected from 18 healthy volunteers. Sera of 12 patients with anaphylactoid purpura, 11 patients with cutaneous polyarteritis nodosa, and 6 patients with angiosarcoma were also included as the disease controls. This research was approved by the Ethics Review Committee in Kumamoto University",
-    "paper_id": "5835107",
-    "title": "Clinical Significance of Serum Vascular Endothelial-Cadherin Levels in Inflammatory Skin Diseases",
-    "authors": [
-      "H. Kuriyama",
-      "M. Jinnin",
-      "H. Kanemaru",
-      "A. Ichihara",
-      "A. Fujisawa",
-      "Chikako Moriya",
-      "S. Fukushima",
-      "H. Ihn"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4455827273124145,
-    "depth": 0,
-    "corpus_id": "CorpusId:5835107"
-  },
-  {
-    "snippet": "Along with the dynamic perfusion culture process, OECs lost immature markers like CD34 and acquired other endothelial markers, such as VE-cadherin. Our findings suggest that shear stress induced OECs differentiated into endothelial cells and increased the surface expression level of endothelial marker proteins by affecting those genes. VE-cadherin is a component of endothelial cell-to-cell adherens junctions, and it has a key role in the maintenance of vascular integrity. In the adult, it controls vascular permeability and inhibits unrestrained vascular growth [23]. Upregulation of VE-cadherin may be attributed to the formation of tube-like structures inside the pores of DBM scaffolds in SEM observation. Upregulation of VEGF demonstrated the contribution of OECs as a source of proangiogenic cytokines on 3D endothelial network formation. \n\nRecent study findings recognized that the concentration profile of extracellular growth factors, such as VEGF and basic fibroblast growth factor (bFGF), plays an important role in regulating the formation of 3D microvascular networks in vivo [24]. Our findings indicated that 3D microvessel formation in vitro can also be controlled by the concentration of extracellular growth factors generated by cells. \n\nIn contrast to common in vitro or in situ pre-vascularization strategies, our novel approach has the major advantage that microvessels can be seeded into porous scaffolds by dynamic perfusion culture of OECs within a short time period. This pre-vascularization method may be transferable to other 3D porous scaffold types, like tissue engineering skin scaffolds.",
-    "paper_id": "14633087",
-    "title": "Dynamic Perfusion Culture of Human Outgrowth Endothelial Progenitor Cells on Demineralized Bone Matrix In Vitro",
-    "authors": [
-      "Dixin Cai",
-      "Y. Quan",
-      "Peng-Ju He",
-      "Hong-bo Tan",
-      "Yong-qing Xu"
-    ],
-    "year": null,
-    "url": "",
-    "score": 0.4373406355654332,
-    "depth": 0,
-    "corpus_id": "CorpusId:14633087"
-  },
-  {
-    "snippet_index": 20,
-    "quotes": [
-      "despite our sensitive methods, we did not find a VE-cadherin + endothelial vascular progenitor (EVP), as suggested in the aorta, in cancer or in injury [11][12][13]",
-      "our computational lineage trajectory analysis and specific gene expression signatures as done in aorta 11 supported the EVP hypothesis but this was refuted by our genetic lineage tracing in skin, cautioning against the use of single-cell transcriptomic computational methods alone to predict cell identity and functions.",
-      "our systematic analysis of the VE-cadherin + population in adult skin revealed previously un-recognized non-endothelial cell types and identified dynamic reorganization that highlights the coordinated nerve and vasculature remodeling during homeostasis. This data un-earths unexpected cellular and functional heterogeneity in the essential VE-cadherin + population using skin as a highly regenerative adult tissue and will have relevance to other adult tissues and to vascular and nerve disease."
-    ],
-    "summary": "This snippet discusses the search for a VE-cadherin+ endothelial vascular progenitor (EVP), an entity closely related to vascular endothelial cells, and the unexpected heterogeneity within the VE-cadherin+ population in skin. It reflects on the evidence for and against the EVP hypothesis (potentially relevant to VE1) and describes the broader functional and cellular diversity within VE-cadherin+ cells.",
-    "categories": [
-      "markers",
-      "function",
-      "development"
-    ],
-    "source_corpus_id": "CorpusId:261703763",
-    "source_title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
-    "source_authors": "Gopal Chovatiya et al.",
-    "source_year": null,
-    "snippet": "Second, despite our sensitive methods, we did not find a VE-cadherin + endothelial vascular progenitor (EVP), as suggested in the aorta, in cancer or in injury [11][12][13] . Significantly, our computational lineage trajectory analysis and specific gene expression signatures as done in aorta 11 supported the EVP hypothesis but this was refuted by our genetic lineage tracing in skin, cautioning against the use of single-cell transcriptomic computational methods alone to predict cell identity and functions. Third, our singlecell transcriptomic data revealed strong expression of Krt19 mRNA in perineurial cells, which prompted us to employ the Krt19-CreERT driver that also marked the skin perineurium. The Krt19-CreERT was previously considered specific to epithelial hair follicle stem cells 36 , but evidently, this assumption should be revised given our data. The expression of a keratin in a perineurial cell type with a strong mesenchymal signature is intriguing and requires further investigation and confirmation at the protein level. \n\nIn conclusion, our systematic analysis of the VE-cadherin + population in adult skin revealed previously un-recognized non-endothelial cell types and identified dynamic reorganization that highlights the coordinated nerve and vasculature remodeling during homeostasis. This data un-earths unexpected cellular and functional heterogeneity in the essential VE-cadherin + population using skin as a highly regenerative adult tissue and will have relevance to other adult tissues and to vascular and nerve disease."
-  },
-  {
-    "snippet_index": 25,
-    "quotes": [
-      "Our work re-defines the cellular and molecular heterogeneity of the essential VE-cadherin + lineage and its dynamics during homeostasis, firmly expanding its functions beyond classical endothelial vasculature remodeling 1,49 into perineurial cells and skin nerve maintenance.",
-      "we uncovered a previously unrecognized VE-cadherin + non-endothelial perineurial cell population encapsulating the skin nerves, contributing to the nerve basement membrane, and remodeling into tubular-like structures along with the nerves during the hair cycle.",
-      "VEcadherin is a cell-cell contact molecule with specialized function in tubular structures that have been so-far thought of as exclusively vascular, until now.",
-      "VE-cadherin is known to confer tubular EC structures flexibility, resilience, and permeability to gases, nutrients, and blood/immune cells [50][51][52] , and it'll be interesting in the future to examine its role in the perineurium.",
-      "the identification of VE-cadherin in the non-endothelial dynamic perineurial tubes is intriguing."
-    ],
-    "summary": "This passage details the newly recognized heterogeneity within the VE-cadherin+ cell lineage, including its identification in non-endothelial perineurial cells associated with skin nerves, not just vascular endothelium. VE-cadherin, often used as an endothelial marker (including for VE1), is implicated in functions outside of classical vasculature remodeling.",
-    "categories": [
-      "function",
-      "markers",
-      "location",
-      "morphology"
-    ],
-    "source_corpus_id": "CorpusId:261703763",
-    "source_title": "Alk1 acts in non-endothelial VE-cadherin+ perineurial cells to maintain nerve branching during hair homeostasis",
-    "source_authors": "Gopal Chovatiya et al.",
-    "source_year": null,
-    "snippet": "Our work re-defines the cellular and molecular heterogeneity of the essential VE-cadherin + lineage and its dynamics during homeostasis, firmly expanding its functions beyond classical endothelial vasculature remodeling 1,49 into perineurial cells and skin nerve maintenance. Most importantly, we uncovered a previously unrecognized VE-cadherin + non-endothelial perineurial cell population encapsulating the skin nerves, contributing to the nerve basement membrane, and remodeling into tubular-like structures along with the nerves during the hair cycle. We implicate Alk1, a known VE-cadherin interacting partner from the TGF-\u03b2 pathway, in the function of these perineurial cells. We show that Alk1 in the perineurium promotes production of ECM factors, deposition of nerve basement membrane, and maintenance of proper branching and organization of nerve bundles during the hair cycle. Importantly, VE-cadherin expression in a non-endothelial (perineurial) population and the implication of its endothelial partner Alk1 3,[46][47][48] , in homeostatic remodeling of nerve structures, changes the existing dogma in the field that considers these interacting factors as specific to the endothelium. Our result is supported by a decades-old, and since largely ignored VE-cadherin staining near skin nerves 41 . VEcadherin is a cell-cell contact molecule with specialized function in tubular structures that have been so-far thought of as exclusively vascular, until now. VE-cadherin is known to confer tubular EC structures flexibility, resilience, and permeability to gases, nutrients, and blood/immune cells [50][51][52] , and it'll be interesting in the future to examine its role in the perineurium. Given its known functions in endothelial cells, the identification of VE-cadherin in the non-endothelial dynamic perineurial tubes is intriguing."
+    "relevance": "secondary source: VE marker genes; VE3 post-capillary venular identity clarified"
   }
 ]

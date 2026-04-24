@@ -1,7 +1,7 @@
 {
   "cell_type_label": "MHCII+ macrophage",
-  "suggested_label": "MHC class II-high macrophage",
-  "definition": "A tissue-resident macrophage characterized by high expression of MHC class II molecules and the C-type lectin receptor CLEC7A (Dectin-1). In humans, this cell expresses HLA-DPA1 and HLA-DRA (DOI:10.1038/s41586-024-08002-x). This subset is conserved across multiple organs and distinguished from LYVE1-high macrophages by nerve-associated subtissular niche localization (DOI:10.1126/science.aax0519) and lack of CCR2 expression (DOI:10.1126/science.abf7777). It receives moderate contribution from adult monocytes and progressively acquires immune effector functions during prenatal development (DOI:10.1126/science.abo0510).",
+  "suggested_label": "nerve-associated tissue-resident macrophage",
+  "definition": "A tissue-resident macrophage that preferentially occupies nerve-adjacent niches across multiple tissues. In mouse skin, this population ensheathes peripheral nerves and its depletion impairs axon regrowth after injury (DOI:10.1016/j.immuni.2019.06.018). It is characterised by high MHC class II and low LYVE1 surface expression with CCR2 negativity, distinguishing it from the vessel-associated LYVE1-high subset (DOI:10.1126/science.aau0964; DOI:10.1126/science.abf7777). In mice, the profile is Lyve1lo MHCIIhi CX3CR1hi (DOI:10.1126/sciimmunol.aax8756). In humans, the counterpart expresses HLA-DPA1, HLA-DRA, and CLEC7A, and is identified across fetal organs and prenatal skin (DOI:10.1126/science.abo0510; DOI:10.1038/s41586-024-08002-x).",
   "parent_term": {
     "cl_id": "CL:0000864",
     "cl_term": "tissue-resident macrophage"
@@ -12,25 +12,37 @@
   },
   "logical_axioms": [
     {
-      "relation": "has high plasma membrane amount",
-      "relation_id": "RO:0015015",
-      "filler": "MHC class II protein complex",
-      "filler_id": "GO:0042613",
-      "notes": "Defining feature: high surface expression of MHC class II molecules distinguishes this macrophage subset from LYVE1-high and other tissue-resident macrophage populations."
-    },
-    {
       "relation": "part of",
       "relation_id": "BFO:0000050",
       "filler": "dermis",
       "filler_id": "UBERON:0002067",
-      "notes": "In prenatal skin, this macrophage resides in the dermis within neurovascular microenvironments."
+      "notes": "Found in the dermis of skin; nerve-adjacent niche is a subtissular position within the dermis"
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "antigen processing and presentation of peptide antigen via MHC class II",
+      "filler_id": "GO:0002495",
+      "notes": "Defined by constitutively high MHC class II expression and capacity for antigen presentation"
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "angiogenesis",
+      "filler_id": "GO:0001525",
+      "notes": "Contributes to vascular development in prenatal skin alongside other macrophage subsets; participates in but does not carry out the full process alone"
     }
   ],
   "synonyms": [
     {
+      "value": "MHC class II-high macrophage",
+      "scope": "exact",
+      "reference": "DOI:10.1126/science.abf7777"
+    },
+    {
       "value": "MHCIIhi macrophage",
       "scope": "exact",
-      "reference": "DOI:10.1126/science.abo0510"
+      "reference": "DOI:10.1126/science.aau0964"
     },
     {
       "value": "MHCII+ macrophage",
@@ -38,33 +50,43 @@
       "reference": "DOI:10.1038/s41586-024-08002-x"
     },
     {
-      "value": "MHC class II high macrophage",
-      "scope": "exact",
-      "reference": "DOI:10.1126/science.abf7777"
+      "value": "nerve- and airway-associated macrophage",
+      "scope": "related",
+      "reference": "DOI:10.1126/sciimmunol.aax8756"
     }
   ],
   "references": [
     {
-      "doi": "10.1126/science.aax0519",
+      "doi": "10.1126/science.aau0964",
       "citation": "Chakarov et al. (2019)",
-      "supports": "Identification of MHCIIhi vs LYVE1hi interstitial macrophage populations across tissues in distinct subtissular niches"
+      "supports": "Cross-tissue identification of Lyve1lo MHCIIhi interstitial macrophage subset in nerve-adjacent niches; original definition of the niche pair"
+    },
+    {
+      "doi": "10.1016/j.immuni.2019.06.018",
+      "citation": "Kolter et al. (2019)",
+      "supports": "Mouse dermal macrophage subset ensheathing peripheral nerves; self-maintenance; depletion impairs axon regrowth after injury — direct functional evidence for nerve niche"
+    },
+    {
+      "doi": "10.1126/sciimmunol.aax8756",
+      "citation": "Ural et al. (2020)",
+      "supports": "Mouse nerve- and airway-associated macrophages (NAMs) with Lyve1lo MHCIIhi CX3CR1hi profile at bronchovascular nerve bundles; NAM depletion worsens influenza inflammation"
     },
     {
       "doi": "10.1126/science.abf7777",
       "citation": "Dick et al. (2022)",
-      "supports": "Definition of three conserved tissue-resident macrophage subsets (TLF+, CCR2+, MHCIIhi) with distinct origins and life cycles"
+      "supports": "Three-tissue fate-mapping defining MHCIIhi nerve-tracking vs Lyve1hi vessel-tracking tissue-resident macrophage pairs across organs"
     },
     {
       "doi": "10.1126/science.abo0510",
       "citation": "Suo et al. (2022)",
-      "supports": "Identification of MHC class II hi macrophages in cross-organ prenatal immune atlas; gestational timing of MHCII upregulation"
+      "supports": "Cross-organ atlas of developing human immune system; identification of MHCIIhi macrophage population enriched at later gestation with progressive acquisition of immune effector function"
     },
     {
       "doi": "10.1038/s41586-024-08002-x",
       "citation": "Gopee et al. (2024)",
-      "supports": "Marker genes (HLA-DPA1, HLA-DRA, CLEC7A) and functional characterization of MHCII+ macrophages in prenatal skin"
+      "supports": "Identification of MHCII+ macrophage subset in prenatal human skin (7-17 PCW); marker profile HLA-DPA1, HLA-DRA, CLEC7A; spatial co-localisation with neurovascular microenvironments"
     }
   ],
-  "justification": "The MHCIIhi macrophage is a conserved tissue-resident macrophage population identified across heart, liver, lung, kidney, brain, adipose, skin, and other organs. It has been defined independently in multiple landmark studies. Dick et al. (2022) established it as one of three conserved tissue-resident macrophage subsets (TLF+, CCR2+, and MHCIIhi). Chakarov et al. (2019) showed the MHCIIhi population localizes to nerve-associated niches distinct from perivascular LYVE1hi macrophages. No existing CL term captures this well-characterized macrophage subset, which is distinguished by high MHC class II expression, CCR2 negativity, nerve-associated niche preference, and distinct ontogeny.",
-  "ntr_markdown": "## New Term Request: MHC class II-high macrophage\n\n### Preferred term label\nMHC class II-high macrophage\n\n### Synonyms\n- MHCIIhi macrophage (exact)\n- MHCII+ macrophage (exact)\n- MHC class II high macrophage (exact)\n\n### Definition\nA tissue-resident macrophage characterized by high expression of MHC class II molecules and the C-type lectin receptor CLEC7A (Dectin-1). In humans, this cell expresses HLA-DPA1 and HLA-DRA (DOI:10.1038/s41586-024-08002-x). This subset is conserved across multiple organs and distinguished from LYVE1-high macrophages by nerve-associated subtissular niche localization (DOI:10.1126/science.aax0519) and lack of CCR2 expression (DOI:10.1126/science.abf7777). It receives moderate contribution from adult monocytes and progressively acquires immune effector functions during prenatal development (DOI:10.1126/science.abo0510).\n\n### Parent cell type term\ntissue-resident macrophage (CL:0000864)\n\n### Anatomical structure\ndermis (UBERON:0002067)\nNote: While described here in the context of prenatal skin, this macrophage subset has been identified across multiple organs.\n\n### Logical axioms\n- subClassOf 'has high plasma membrane amount' some 'MHC class II protein complex' (GO:0042613)\n- subClassOf 'part of' some dermis (UBERON:0002067)\n\n### References\n1. Chakarov S et al. (2019) Two distinct interstitial macrophage populations coexist across tissues in specific subtissular niches. Science. DOI: 10.1126/science.aax0519\n2. Dick SA et al. (2022) Three tissue resident macrophage subsets coexist across organs with conserved origins and life cycles. Science. DOI: 10.1126/science.abf7777\n3. Suo C et al. (2022) Mapping the developing human immune system across organs. Science. DOI: 10.1126/science.abo0510\n4. Gopee N et al. (2024) A prenatal skin atlas reveals immune regulation of human skin morphogenesis. Nature. DOI: 10.1038/s41586-024-08002-x\n\n### Justification\nThe MHCIIhi macrophage is a conserved tissue-resident macrophage population identified across heart, liver, lung, kidney, brain, adipose, skin, and other organs. It has been defined independently by multiple landmark single-cell studies. No existing CL term captures this well-characterized macrophage subset, which is distinguished from other tissue-resident macrophage populations by its high MHC class II expression, CCR2 negativity, nerve-associated niche preference, and distinct ontogeny."
+  "justification": "No existing CL term captures the nerve-associated, MHC class II-high tissue-resident macrophage subset. This is a conserved cross-tissue population defined by its nerve-adjacent niche, high MHC class II, low LYVE1, and CCR2-negative phenotype, distinguishing it from both the vessel-associated LYVE1-high subset and from CCR2-positive monocyte-derived macrophages. The population is described across mouse and human tissues by multiple independent studies using fate mapping and spatial transcriptomics. The nearest existing terms — 'tissue-resident macrophage' (CL:0000864) and 'macrophage' (CL:0000235) — are too broad to capture this distinct niche identity, phenotype, and function.",
+  "ntr_markdown": "**Preferred term label**\nnerve-associated tissue-resident macrophage\n\n**Synonyms** (add reference(s), please)\nMHC class II-high macrophage (exact) — DOI:10.1126/science.abf7777\nMHCIIhi macrophage (exact) — DOI:10.1126/science.aau0964\nMHCII+ macrophage (exact) — DOI:10.1038/s41586-024-08002-x\nnerve- and airway-associated macrophage (related) — DOI:10.1126/sciimmunol.aax8756\n\n**Definition** (free text, with reference(s), please. PubMed ID format is PMID:XXXXXX)\nA tissue-resident macrophage that preferentially occupies nerve-adjacent niches across multiple tissues. In mouse skin, this population ensheathes peripheral nerves and its depletion impairs axon regrowth after injury (DOI:10.1016/j.immuni.2019.06.018). It is characterised by high MHC class II and low LYVE1 surface expression with CCR2 negativity, distinguishing it from the vessel-associated LYVE1-high subset (DOI:10.1126/science.aau0964; DOI:10.1126/science.abf7777). In mice, the profile is Lyve1lo MHCIIhi CX3CR1hi (DOI:10.1126/sciimmunol.aax8756). In humans, the counterpart expresses HLA-DPA1, HLA-DRA, and CLEC7A, and is identified across fetal organs and prenatal skin (DOI:10.1126/science.abo0510; DOI:10.1038/s41586-024-08002-x).\n\n**Parent cell type term** (check the hierarchy here https://www.ebi.ac.uk/ols4/ontologies/cl)\ntissue-resident macrophage (CL:0000864) — https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCL_0000864\n\n**Anatomical structure where the cell type is found** (check Uberon for anatomical structures: https://www.ebi.ac.uk/ols4/ontologies/uberon)\ndermis (UBERON:0002067) — https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0002067\nNote: this cell type is found across multiple tissues; dermis is the primary location in the fetal skin atlas context, but the nerve-adjacent niche is conserved in lung, heart, and other organs.\n\n**Your ORCID**\n[To be added by submitter]\n\n**Additional notes or concerns**\nThis term is needed to represent a conserved, nerve-adjacent subset of tissue-resident macrophages that is distinct from the vessel-associated LYVE1-high subset and from recruited CCR2-positive macrophages. The niche-based label is preferred over a purely marker-based label because the nerve-adjacent positioning is the defining biological characteristic, documented across species and tissues by fate mapping and spatial methods. The MHCIIhi/Lyve1lo/CCR2-negative phenotype is shared with the nerve-associated macrophages described by Ural et al. (2020) as NAMs (nerve- and airway-associated macrophages) in mouse lung; the Kolter et al. (2019) dermis study provides the most direct evidence linking this phenotype to nerve-ensheathing and axon-regeneration support.\n\nProposed logical axioms:\n- subClassOf 'part of' some 'dermis' (UBERON:0002067)\n- subClassOf 'capable of' some 'antigen processing and presentation of peptide antigen via MHC class II' (GO:0002495)\n- subClassOf 'capable of part of' some 'angiogenesis' (GO:0001525)\n\nKey references:\n- Chakarov et al. (2019) — DOI:10.1126/science.aau0964 — supports: cross-tissue Lyve1lo MHCIIhi niche pair definition\n- Kolter et al. (2019) — DOI:10.1016/j.immuni.2019.06.018 — supports: nerve ensheathing in mouse dermis; functional role in axon regrowth\n- Ural et al. (2020) — DOI:10.1126/sciimmunol.aax8756 — supports: Lyve1lo MHCIIhi CX3CR1hi mouse NAM profile; inflammation regulation\n- Dick et al. (2022) — DOI:10.1126/science.abf7777 — supports: three-tissue fate-mapping of MHCIIhi nerve-tracking macrophage subset\n- Suo et al. (2022) — DOI:10.1126/science.abo0510 — supports: human fetal cross-organ MHCIIhi macrophage identification\n- Gopee et al. (2024) — DOI:10.1038/s41586-024-08002-x — supports: prenatal human skin marker profile and neurovascular niche co-localisation\n\n---\n*Draft generated by atlas-chat from: /Users/do12/Documents/GitHub/atlas_chat/projects/fetal_skin_atlas/reports/MHCII+ macrophage.md*"
 }

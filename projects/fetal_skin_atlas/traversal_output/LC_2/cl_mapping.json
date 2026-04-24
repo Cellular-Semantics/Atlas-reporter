@@ -1,0 +1,20 @@
+{
+  "cell_type_label": "Regulatory Langerhans Cell (LC_2)",
+  "working_definition": "A novel regulatory-phenotype Langerhans cell subset in the adult epidermis, characterised by lower CD207 (langerin) and higher CD1c and CD1b expression compared to classic LC1. This population retains pan-LC markers (CD1a, EPCAM) but differs from LC1 in its surface receptor profile, suggesting a functionally distinct tolerogenic or regulatory role within the epidermal LC compartment.",
+  "searches_performed": [
+    "OLS4 searchClasses: 'Langerhans cell' in CL ontology",
+    "OLS4 searchClasses: 'regulatory Langerhans cell' in CL ontology"
+  ],
+  "best_match": {
+    "cl_term": "Langerhans cell",
+    "cl_id": "CL:0000453",
+    "cl_definition": "A dendritic cell found in the epidermis that is capable of migrating to lymphoid tissue. Langerhans cells are characterized by expression of CD207 (langerin), CD1a, and EPCAM.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0000453 'Langerhans cell' is the broadest appropriate match for the LC_2 regulatory LC subcluster. The cell expresses pan-LC markers (CD1a, EPCAM) and resides in the epidermis. LC2 has lower CD207 than LC1, which may make CL:0000453 a loose fit since langerin is used as a defining marker, but the LC identity is supported by EPCAM and CD1a co-expression and epidermal residence. No CL term exists for a regulatory LC substate.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000453 (Langerhans cell) as a broad match. A new CL term for the CD207-low, CD1c/CD1b-high regulatory LC subtype may be warranted given its distinct surface phenotype.",
+  "new_term_needed": true
+}

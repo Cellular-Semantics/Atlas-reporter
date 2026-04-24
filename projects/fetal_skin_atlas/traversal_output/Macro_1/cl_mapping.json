@@ -1,0 +1,9 @@
+{
+  "label": "Macro_1",
+  "cl_term": "tissue-resident macrophage",
+  "cl_id": "CL:0000864",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_0000864",
+  "match_type": "broad",
+  "match_rationale": "Macro_1/Mac1 is a CD68+MARCO+CD163+C1QB+C1QC+ dermal macrophage. CL:0000864 (tissue-resident macrophage) is the closest term; no exact CL term exists for this complement-expressing dermal macrophage subtype.",
+  "new_term_needed": false
+}

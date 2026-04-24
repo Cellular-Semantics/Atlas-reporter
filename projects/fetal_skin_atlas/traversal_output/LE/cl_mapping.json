@@ -1,0 +1,34 @@
+{
+  "cell_type_label": "LE (lymphatic endothelial cells in prenatal skin)",
+  "working_definition": "LE (lymphatic endothelium) represents the mature lymphatic endothelial cell state in fetal dermis, localised to lymphatic vessels within the dermis of prenatal human skin (7–17 PCW). It is characterised by canonical lymphatic endothelial markers PROX1, LYVE1, PDPN (podoplanin), and FLT4 (VEGFR3), and is distinguished from the earlier 'Early LE' progenitor population present in the same atlas. These cells maintain fluid homeostasis, lipid transport, and immune cell trafficking in the dermal lymphatic vasculature, and co-locate with macrophages in prenatal skin neurovascular microenvironments.",
+  "searches_performed": [
+    "lymphatic endothelial cell",
+    "dermis lymphatic vessel endothelial cell",
+    "lymphatic vessel endothelial cell"
+  ],
+  "best_match": {
+    "cl_term": "dermis lymphatic vessel endothelial cell",
+    "cl_id": "CL:2000011",
+    "cl_definition": "Any endothelial cell of lymphatic vessel that is part of a dermis.",
+    "match_type": "exact match",
+    "skos_mapping": "skos:exactMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:2000011 is defined as 'any endothelial cell of lymphatic vessel that is part of a dermis.' The LE population in the fetal skin atlas is explicitly the mature lymphatic endothelial cell state residing in lymphatic vessels of the dermis, characterised by the canonical markers PROX1, LYVE1, PDPN, and FLT4 — which are precisely the markers described in the CL:0002138 parent class (Prox-1, VEGFR-3, LYVE-1) from which CL:2000011 inherits. The tissue compartment (dermis), cell lineage (lymphatic endothelium), and functional role (fluid homeostasis, lipid transport, immune cell trafficking) all align exactly. The fetal developmental stage is not part of the CL:2000011 definition, but CL ontology terms are stage-neutral unless explicitly qualified; the prenatal context does not disqualify an exact match. The child term CL:2000041 (dermis microvascular lymphatic vessel endothelial cell) was considered but rejected because the atlas does not restrict LE to microvascular lymphatics, and CL:2000041 adds a microvascular specificity not supported by the atlas data. CL:0002138 (endothelial cell of lymphatic vessel) was also considered but is more general (no dermis restriction) and therefore a broad match.",
+  "other_candidates": [
+    {
+      "cl_term": "endothelial cell of lymphatic vessel",
+      "cl_id": "CL:0002138",
+      "cl_definition": "A endothelial cell of a lymphatic vessel. The border of the oak leaf-shaped endothelial cell of initial lymphatics are joined by specialized buttons. The discontinuous feature of buttons distinguishes them from zippers in collecting lymphatics, but both types of junctions are composed of proteins typical of adherens junctions and tight junctions found in the endothelium of blood vessels. Buttons seal the sides of flaps of the oak leaf-shaped endothelial cell, leaving open the tips of flaps as routes for fluid entry without disassembly and reformation of intercellular junctions.",
+      "reason_rejected": "This is the parent class of CL:2000011 and lacks the dermis tissue restriction. LE in the atlas is specifically localised to the dermis, making CL:2000011 the more precise and correct match."
+    },
+    {
+      "cl_term": "dermis microvascular lymphatic vessel endothelial cell",
+      "cl_id": "CL:2000041",
+      "cl_definition": "Any dermis lymphatic vessel endothelial cell that is part of a microvascular endothelium.",
+      "reason_rejected": "This child term of CL:2000011 adds a microvascular restriction not evidenced in the atlas annotation for LE. The atlas does not characterise LE as specifically microvascular, so this term is more specific than warranted."
+    }
+  ],
+  "recommendation": "Use CL:2000011 (dermis lymphatic vessel endothelial cell) as an exact match for LE. No new CL term is needed.",
+  "new_term_needed": false
+}

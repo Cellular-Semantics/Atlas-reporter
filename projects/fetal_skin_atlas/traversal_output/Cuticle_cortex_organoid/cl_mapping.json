@@ -1,0 +1,48 @@
+{
+  "cell_type_label": "Cuticle/cortex cells (skin organoid)",
+  "working_definition": "Cuticle/cortex cells are terminally differentiated hair follicle epithelial cells that form the hair shaft's cuticle (the outermost protective scale-like layer) and cortex (the bulk structural component packed with keratin filaments). They are marked by hair cortex keratins KRT35 and KRT85, arise from the IRS differentiation trajectory originating from POSTN+ basal cells via matrix/placode stages, and reside in the inner layers of the hair follicle within the skin organoid (SkO) model recapitulating prenatal lanugo-like hair production.",
+  "searches_performed": [
+    "hair cuticle cell",
+    "hair cortex cell",
+    "hair shaft cell",
+    "hair follicle cell",
+    "trichocyte",
+    "keratinocyte hair",
+    "cortical cell hair",
+    "hair matrix cell differentiation",
+    "KRT35 positive cell",
+    "inner root sheath cell",
+    "terminally differentiated keratinocyte hair"
+  ],
+  "best_match": {
+    "cl_term": "keratinized cell of hair follicle",
+    "cl_id": "CL:0010000",
+    "cl_definition": "A differentiating matrix keratinocyte that has initiated terminal differentiation and keratin synthesis. This cell undergoes a characteristic change while migrating upward from the hair follicle bulb, representing a committed progenitor cell destined to form the hair medulla, cortex and hair root sheath.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0010000 shares the key features of terminal differentiation, keratin synthesis, origin from matrix keratinocytes in the hair follicle bulb, and explicitly mentions formation of the cortex — all consistent with the report's cuticle/cortex cell identity. However, the CL definition casts this as a committed progenitor 'destined to form' the cortex, medulla, and root sheath, whereas the atlas cell type represents the fully differentiated end-state of the cuticle and cortex compartments specifically. The atlas cell type is restricted to cuticle and cortex (marked by KRT35/KRT85), while CL:0010000 encompasses a broader set of hair follicle fates including medulla and root sheath. No CL term specific to the differentiated hair cuticle cell or hair cortex cell exists; CL:0010000 is the closest available term at a broader level. The other candidates (CL:0002559 hair follicle cell; CL:2000092 hair follicular keratinocyte) are even more general parent terms and were rejected as less informative.",
+  "other_candidates": [
+    {
+      "cl_term": "hair follicular keratinocyte",
+      "cl_id": "CL:2000092",
+      "cl_definition": "Any keratinocyte that is part of a hair follicle.",
+      "reason_rejected": "Too broad — covers all keratinocytes of the hair follicle regardless of differentiation state or compartment. Less informative than CL:0010000, which explicitly captures the terminal differentiation and cortex-forming trajectory."
+    },
+    {
+      "cl_term": "hair follicle cell",
+      "cl_id": "CL:0002559",
+      "cl_definition": "An animal cell that is part of a hair follicle.",
+      "reason_rejected": "Maximally broad; covers all cell types in the hair follicle including mesenchymal cells. Does not capture the epithelial, terminally differentiating, or keratin-producing nature of cuticle/cortex cells."
+    },
+    {
+      "cl_term": "inner root sheath cell",
+      "cl_id": "CL:0002560",
+      "cl_definition": "An epithelial cell that resides in the inner root sheath of the hair follicle.",
+      "reason_rejected": "The inner root sheath is a distinct compartment from the hair shaft cuticle and cortex. Although the atlas places cuticle/cortex cells on the IRS trajectory, the cells themselves are hair shaft components, not inner root sheath cells."
+    }
+  ],
+  "recommendation": "Use CL:0010000 (keratinized cell of hair follicle) as a broad match (skos:broadMatch). A new CL term is needed to represent the fully differentiated hair shaft cuticle cell and/or hair shaft cortex cell — cells that are the terminal products of hair shaft keratinisation, expressing type I/II hair cortex keratins (KRT35, KRT85), located in the cuticle and cortex layers of the hair shaft, distinguished from inner root sheath and medulla fates.",
+  "new_term_needed": true
+}

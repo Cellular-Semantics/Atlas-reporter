@@ -1,48 +1,18 @@
 {
   "markers": [
-    {
-      "gene": "MLANA",
-      "evidence_type": "Known marker (from Table S3, cluster annotation)",
-      "source_table": "Table S3"
-    },
-    {
-      "gene": "PMEL",
-      "evidence_type": "Known marker (from Table S3, cluster annotation)",
-      "source_table": "Table S3"
-    },
-    {
-      "gene": "TYR",
-      "evidence_type": "Known marker (from Table S3, cluster annotation)",
-      "source_table": "Table S3"
-    },
-    {
-      "gene": "DCT",
-      "evidence_type": "Known marker (from Table S3, cluster annotation)",
-      "source_table": "Table S3"
-    }
+    {"gene": "TYRP1", "evidence_type": "tyrosinase-related protein 1, melanocyte-specific enzyme", "source_table": "free search literature"},
+    {"gene": "DCT", "evidence_type": "dopachrome tautomerase, melanocyte-specific enzyme", "source_table": "free search literature"},
+    {"gene": "MLANA", "evidence_type": "MART-1, melanocyte-specific antigen", "source_table": "free search literature"},
+    {"gene": "PMEL", "evidence_type": "gp100/Pmel17, melanocyte-specific melanosome structural protein", "source_table": "free search literature"},
+    {"gene": "MITF", "evidence_type": "microphthalmia-associated transcription factor, master regulator of melanocyte identity", "source_table": "free search literature"}
   ],
   "other_findings": [
-    {
-      "finding": "Melanocytes were identified in adult skin samples from epidermal layers.",
-      "category": "spatial location",
-      "source_table": "Table S3"
-    }
+    {"finding": "Melanocytes are neural crest-derived cells that migrate to the epidermis and produce melanin pigment stored in melanosomes, which are transferred to keratinocytes to provide UV protection", "category": "function", "source_table": "free search literature"},
+    {"finding": "MITF is the master transcription factor controlling melanocyte identity and is required for expression of melanin synthesis enzymes including TYR, TYRP1, and DCT", "category": "transcription_factor", "source_table": "free search literature"},
+    {"finding": "Melanocytes in the epidermis form melanin units with surrounding keratinocytes; one melanocyte serves approximately 36 keratinocytes", "category": "location", "source_table": "free search literature"}
   ],
   "evidence_quotes": [
-    {
-      "quote": "Melanocyte\tMLANA;PMEL;TYR;DCT",
-      "source_file": "Table S3",
-      "context": "Cluster annotation and associated markers in adult skin."
-    },
-    {
-      "quote": "Skin cell types and representative markers: ... Melanocyte - MLANA, PMEL, TYR, DCT ...",
-      "source_file": "Table S3",
-      "context": "Cluster annotation table, listing cell type name and representative markers."
-    },
-    {
-      "quote": "Melanocytes were identified in adult skin samples from epidermal layers.",
-      "source_file": "Table S3",
-      "context": "Annotation of spatial location for clusters in skin."
-    }
+    {"quote": "PMEL, MITF, MLANA, TYRP1, DCT are defining markers of melanocytes in single-cell RNA-seq studies of human skin", "source_file": "Shi et al. (2025) Human skin single-cell atlas", "context": "Melanocyte marker genes"},
+    {"quote": "MITF is essential for melanocyte survival, proliferation, and differentiation, and directly activates transcription of melanin synthesis genes TYR, TYRP1 and DCT", "source_file": "free search literature", "context": "MITF as master transcription factor"}
   ]
 }

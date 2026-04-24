@@ -1,1 +1,58 @@
-{"273400864": {"doi": "10.1038/s41586-024-08002-x", "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis", "authors": "Gopee NH et al.", "year": 2024, "journal": "Nature", "source": "citation_traverse"}}
+{
+  "273400864": {
+    "doi": "10.1038/s41586-024-08002-x",
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": "Gopee NH et al.",
+    "year": 2024,
+    "journal": "Nature",
+    "source": "citation_traverse"
+  },
+  "252224758": {
+    "doi": "10.3389/fbioe.2022.983870",
+    "title": "Human fetal skin derived merkel cells display distinctive characteristics in vitro and in bio-engineered skin substitutes in vivo",
+    "authors": "Michalak-Micka K et al.",
+    "year": 2022,
+    "journal": "Frontiers in Bioengineering and Biotechnology",
+    "source": "snippet_search"
+  },
+  "3182720": {
+    "doi": "10.1038/nature13251",
+    "title": "Piezo2 is required for Merkel cell mechanotransduction",
+    "authors": "Woo SH et al.",
+    "year": 2014,
+    "journal": "Nature",
+    "source": "snippet_search"
+  },
+  "262136696": {
+    "doi": "10.1111/jvms.15515",
+    "title": "Feline papillomavirus-associated Merkel cell carcinoma: a comparative review with human Merkel cell carcinoma",
+    "authors": "Chambers J et al.",
+    "year": 2023,
+    "journal": "The Journal of Veterinary Medical Science",
+    "source": "snippet_search"
+  },
+  "271750674": {
+    "doi": "10.3390/cimb46080490",
+    "title": "Skin Development and Disease: A Molecular Perspective",
+    "authors": "Dermitzakis I et al.",
+    "year": 2024,
+    "journal": "Current Issues in Molecular Biology",
+    "source": "snippet_search"
+  },
+  "184488285": {
+    "doi": "10.3389/fonc.2019.00451",
+    "title": "Histogenesis of Merkel Cell Carcinoma: A Comprehensive Review",
+    "authors": "Kervarrec T et al.",
+    "year": 2019,
+    "journal": "Frontiers in Oncology",
+    "source": "snippet_search"
+  },
+  "249188320": {
+    "doi": "10.3390/jpm12060894",
+    "title": "Merkel Cell Carcinoma Display PIEZO2 Immunoreactivity",
+    "authors": "García-Mesa Y et al.",
+    "year": 2022,
+    "journal": "Journal of Personalized Medicine",
+    "source": "snippet_search"
+  }
+}

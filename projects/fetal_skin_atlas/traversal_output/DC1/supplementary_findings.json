@@ -1,5 +1,18 @@
 {
-  "markers": [],
-  "other_findings": [],
-  "evidence_quotes": []
+  "markers": [
+    {"gene": "CLEC9A", "evidence_type": "defining marker (DNGR-1)", "source_table": "free search literature"},
+    {"gene": "XCR1", "evidence_type": "defining marker", "source_table": "Reynolds et al. (2021) / free search"},
+    {"gene": "CD141", "evidence_type": "BDCA-3, defining surface marker", "source_table": "free search literature"},
+    {"gene": "TLR3", "evidence_type": "innate immune receptor", "source_table": "free search literature"}
+  ],
+  "other_findings": [
+    {"finding": "Reynolds et al. (2021) Fig. 3C legend refers to 'enrichment of gene signatures for murine splenic Xcr1+DC (DC1)', confirming DC1 corresponds to cDC1/XCR1+ DCs", "category": "classification", "source_table": "Reynolds et al. (2021)"},
+    {"finding": "DC1 cells are observed in embryonic skin as early as 7 PCW, prior to bone marrow hematopoiesis", "category": "development", "source_table": "Reynolds et al. (2021)"},
+    {"finding": "Human cDC1 (DC1) are CLEC9A+XCR1+CD141+ and are specialised for cross-presentation of antigens to CD8+ T cells via MHC class I", "category": "function", "source_table": "free search literature"},
+    {"finding": "In the PAGA analysis, DC1 and DC2 form one branch of the three mononuclear phagocyte differentiation trajectories (alongside LC and mo-DC branches)", "category": "development", "source_table": "Reynolds et al. (2021)"}
+  ],
+  "evidence_quotes": [
+    {"quote": "We observe Dendritic Cells 1 and 2 (DC1, DC2) and Langerhans cells (LCs) in embryonic skin as early as 7 PCW, prior to bone marrow hematopoiesis", "source_file": "Reynolds et al. (2021) PDF full text", "context": "DC1 developmental origin"},
+    {"quote": "CLEC9A or DNGR1 is a C-type lectin receptor that mediates endocytosis, but not phagocytosis, with low pH endosomes promoting the drift toward cross-presentation. Importantly, CLEC9A binding of antigens induces antigen presentation on both MHC I (cross-presentation) and MHC II. It is highly and specifically expressed on CD11c+ CD141+ XCR1+ cDCs", "source_file": "Gornati et al. (2018) Dendritic Cells in the Cross Hair for the Generation of Tailored Vaccines. PMC6030256", "context": "DC1/cDC1 CLEC9A function"}
+  ]
 }

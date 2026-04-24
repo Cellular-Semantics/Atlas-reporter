@@ -1,0 +1,9 @@
+{
+  "label": "MigDC",
+  "cl_term": "dendritic cell",
+  "cl_id": "CL:0000451",
+  "cl_purl": "http://purl.obolibrary.org/obo/CL_0000451",
+  "match_type": "broad",
+  "match_rationale": "MigDC (migratory DC) is a CCR7+LAMP3+CD83+ mature DC migrating from skin to lymph node. CL:0000451 (dendritic cell) is the closest available term; no exact CL term exists for the skin migratory DC state as defined by Reynolds et al.",
+  "new_term_needed": false
+}
