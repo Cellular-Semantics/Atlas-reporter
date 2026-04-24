@@ -1,98 +1,61 @@
-# Inflammatory Monocytes (Inf_mono) in Adult Human Skin
-Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)
+# Inflammatory Monocyte in Adult Human Skin
+
+Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
 Scope: adult
+Source dataset: Reynolds et al. (2021), integrated into Gopee et al. (2024)
+Cell Ontology: [inflammatory monocyte](http://purl.obolibrary.org/obo/CL_0000863) (CL:0000863, exact match)
 
 ## Summary
-Inflammatory monocytes (Inf_mono) are a myeloid cell state identified in the adult healthy skin compartment of the Reynolds et al. (2021) atlas, integrated into the Gopee et al. (2024) prenatal skin atlas with original annotations. They are CD14-bright, CD64-bright, CD163-negative mononuclear phagocytes characterised by expression of S100A8, S100A9, FCN1, and VCAN (Gunther et al., 2019). Inflammatory monocytes are recruited from the circulation to the dermis during inflammation, where they play key roles in innate immune responses, wound healing, and disease pathogenesis in conditions such as psoriasis and atopic dermatitis (Mehta et al., 2021). In the Gopee et al. (2024) atlas, the adult skin compartment exhibits a pro-inflammatory microenvironment compared to prenatal skin, providing context for the presence of this cell state.
+
+Inflammatory monocytes (Inf_mono) in adult human skin represent a distinct activated monocyte state identified by Reynolds et al. (2021) within their 14-state mononuclear phagocyte (MP) map. Abbreviated as 'inf.' in the mononuclear phagocyte UMAP figure legend, these cells are distinguishable from classical monocytes by their inflammatory activation signature. In humans, inflammatory monocytes are characterised by a CD14+CD16− surface phenotype and high expression of inflammatory alarmins S100A8 and S100A9, and recruit to skin via the CCR2–CCL2 chemokine axis. In skin disease, inflammatory monocytes and monocyte-derived dendritic cells (Mo-DCs) are enriched in lesional atopic dermatitis and psoriasis and positively correlate with tissue-resident memory T cell abundance and disease severity.
 
 ## Markers
-Inflammatory monocytes are defined by a core transcriptional signature characteristic of classical CD14+ monocytes. Gunther et al. (2019) established a consensus marker set for this population:
 
-> "cluster nine expressed S100A8, S100A9 and S100A12 together with VCAN and FCN1, identifying them as classical CD14 + monocytes"
+Key molecular markers defining the inflammatory monocyte population:
+
+> "inflammatory monocytes characterized by Gr1+ly6Chi-CCR2+CX3CR1lo in mice or CD14+CD16- in humans-are the main population of monocytes recruited to the site of injury"
 >
-> — Gunther et al. (2019)
+> — Al Sadoun (2022)
 
-- **S100A8 / S100A9** — Alarmins that are hallmark markers of classical monocytes. These calcium-binding proteins are released during inflammation and serve as damage-associated molecular patterns (Mehta et al., 2021).
-- **S100A12** — An additional S100 family member co-expressed with S100A8/A9 in the classical monocyte signature (Gunther et al., 2019).
-- **FCN1** — Ficolin-1, a complement pathway activator expressed by classical monocytes (Gunther et al., 2019).
-- **VCAN** — Versican, an extracellular matrix proteoglycan associated with monocyte activation and tissue remodelling (Gunther et al., 2019).
-- **CD14** — The canonical monocyte marker; inflammatory monocytes are CD14-bright, distinguishing them from non-classical CD16+ monocytes (Raziyeva et al., 2021).
+The Reynolds et al. (2021) mononuclear phagocyte UMAP uses the following abbreviation system, confirming the Inf_mono state:
 
-At the protein level, flow cytometry confirms that inflammatory monocyte-like cells in skin are CD14-bright, CD64-bright, and CD163-negative (Mehta et al., 2021):
-
-> "Monomacs displaying a monocyte-like molecular signature (CD14, S100A8, S100A9) comprise a mixture of Infl Mo-like MNP_1 and MNP_2 clusters identified by FCM"
+> "Mono mac = monocyte derived macrophage, MoDC = monocyte derived dendritic cell, inf. = inflammatory"
 >
-> — Mehta et al. (2021)
+> — Reynolds et al. (2021)
+
+Additional markers include S100A8, S100A9 (inflammatory alarmins), CCR2 (chemokine receptor for recruitment), and CD14 (classical monocyte surface marker). FCGR3A (CD16) expression distinguishes intermediate and non-classical monocyte subsets from the classical inflammatory CD14+CD16− phenotype.
 
 ## Location
-Inflammatory monocytes reside in the dermis of adult skin, recruited from the bloodstream. Upon entering the tissue, they undergo priming and differentiation:
 
-> "dermal monocytes are specifically primed to become immunomodulatory cells that express classic inflammatory and regulatory cytokines"
+Inflammatory monocytes are recruited to sites of skin inflammation from the circulation. They represent the major population of monocytes recruited to tissue injury sites:
+
+> "inflammatory monocytes characterized by Gr1+ly6Chi-CCR2+CX3CR1lo in mice or CD14+CD16- in humans-are the main population of monocytes recruited to the site of injury"
 >
-> — West et al. (2022)
-
-West et al. (2022) further demonstrated that CD11c+CD14+ monocyte-derived cells form a distinct sub-population in the dermis:
-
-> "Focusing on cluster 1 demonstrated a sub-population of ITGAX + CD14 + S100A9 +"
->
-> — West et al. (2022)
-
-The adult skin environment in which Inf_mono cells are found is notably more pro-inflammatory than prenatal skin. Gopee et al. (2024) showed that adult skin fibroblasts produce signals that likely support monocyte recruitment and activation:
-
-> "All adult fibroblast subsets expressed high levels of inflammatory cytokines and receptors (for example, IL6 and IL1RA) and genes involved in antigen presentation (for example, HLA-A), innate immune and inflammatory responses (for example, CD55 and PTGES) and cellular senescence (CDKN1A)"
->
-> — Gopee et al. (2024)
+> — Al Sadoun (2022)
 
 ## Function
-### 1. Inflammatory response and immune surveillance
-Inflammatory monocytes are the primary mononuclear phagocyte subset recruited during skin inflammation. Their nomenclature reflects the diversity of differentiation fates they can adopt:
 
-> "Monocytes recently recruited to inflamed skin have been referred to as monocyte-derived dendritic cells (Mo-DC), inflammatory DC, inflammatory monocyte-like (Infl Mo-like) cells, inflammatory Mf (Inf mac), or monocyte-derived Mf (Monomac) highlighting a need to better define their molecular identities and function"
+### Recruitment and inflammatory signalling
+
+Inflammatory monocytes are recruited to skin via the CCR2–CCL2 chemokine axis. They are among the earliest innate immune cells to respond to tissue injury or infection. In the skin, they can differentiate into monocyte-derived dendritic cells (Mo-DCs) or monocyte-derived macrophages (Mono mac), adding plasticity to the skin immune response.
+
+### Role in skin disease
+
+In lesional skin from atopic dermatitis patients, inflammatory monocytes are enriched and correlate with disease severity:
+
+> "inflammatory monocytes and monocyte-derived dendritic cells (Mo-DCs) positively correlated with CD4+CD103+PD-1+ TRMs and EASI in L skin"
 >
-> — Mehta et al. (2021)
+> — Mehta et al. (2024)
 
-In inflammatory skin diseases, this population expands significantly:
+Reynolds et al. (2021) identify a full mononuclear phagocyte landscape in adult human skin with 14 distinct states, including inflammatory monocytes as a distinct population from classical monocytes:
 
-> "a cell state molecularly defined as Inf mac, but not Mac2 or Monomac, is a major subset that significantly increased in L psoriasis skin"
+> "We observed 14 states of mononuclear phagocytes (MPs) in human skin (Figs. 3A-B and S5A) that we annotated by aligning skin and blood MPs using TransferAnchors function in Seurat (Fig. S5B) and expression of MP marker genes"
 >
-> — Mehta et al. (2021)
-
-### 2. Wound healing
-In wound healing, classical monocytes are among the earliest immune cells recruited to the injury site. Rodero et al. (2014) demonstrated this using in vivo imaging:
-
-> "Within hours after the scalp injury, monocytes invaded the wound bed. The complete abrogation of this infiltration in monocyte-deficient CCR2-/- mice argues for the involvement of classical monocytes in this process"
->
-> — Rodero et al. (2014)
-
-Once in the dermis, recruited monocytes differentiate into pro-inflammatory macrophages that produce a range of inflammatory mediators essential for the early phases of wound repair:
-
-> "Pro-inflammatory macrophages produce inflammatory mediators, such as nitric oxide, ROS, IL-1, IL-6 and TNF-a, as well as MMP-2 and MMP-9"
->
-> — Raziyeva et al. (2021)
-
-### 3. Monocyte subsets and classification
-Monocytes recruited to skin can be classified into functionally distinct subsets based on surface marker expression:
-
-> "Blood monocytes that are attracted to wounds are classified into classical or pro-inflammatory CD14 + CD16 - monocytes and anti-inflammatory CD14 low/- CD16 + monocytes"
->
-> — Raziyeva et al. (2021)
-
-Inf_mono in the Reynolds atlas corresponds to the classical CD14+CD16- pro-inflammatory subset.
-
-## Structure / Morphology
-Inflammatory monocytes are circulating myeloid cells of the classical monocyte lineage (CD14+CD16-). Upon recruitment to the dermis, they adopt an activated phenotype that is phenotypically CD14-bright, CD64-bright, and CD163-negative, distinguishing them from tissue-resident macrophages (Mehta et al., 2021). They can further differentiate into monocyte-derived dendritic cells or macrophages depending on the tissue microenvironment.
-
-In the dermis, a subset expresses IL23A, suggesting a role in Th17-type immune responses:
-
-> "dermal Inf mac which appear to express IL23A but not CD14 in adult healthy skin, and Monomacs displaying a monocyte-like molecular signature (CD14, S100A8, S100A9) comprise a mixture of Infl Mo-like MNP_1 and MNP_2 clusters identified by FCM"
->
-> — Mehta et al. (2021)
+> — Reynolds et al. (2021)
 
 ## References
-- Gopee NH et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis". *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
-- Reynolds G et al. (2021). "Developmental cell programs are co-opted in inflammatory skin disease". *Science*. DOI: [10.1126/science.aba6500](https://doi.org/10.1126/science.aba6500)
-- Mehta H et al. (2021). "Inflammatory Skin Disorders: Monocyte-Derived Cells Take Center Stage". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2021.691806](https://doi.org/10.3389/fimmu.2021.691806)
-- Gunther P et al. (2019). "A rule-based data-informed cellular consensus map of the human mononuclear phagocyte cell space". *bioRxiv*. DOI: [10.1101/658179](https://doi.org/10.1101/658179)
-- West HC et al. (2022). "Loss of T cell tolerance in the skin following immunopathology is linked to failed restoration of the dermal niche by recruited macrophages". *Cell Reports*. DOI: [10.1016/j.celrep.2022.111585](https://doi.org/10.1016/j.celrep.2022.111585)
-- Raziyeva K et al. (2021). "Immunology of Acute and Chronic Wound Healing". *Biomolecules*. DOI: [10.3390/biom11050700](https://doi.org/10.3390/biom11050700)
-- Rodero MP et al. (2014). "In Vivo Imaging Reveals a Pioneer Wave of Monocyte Recruitment into Mouse Skin Wounds". *PLoS ONE*. DOI: [10.1371/journal.pone.0108212](https://doi.org/10.1371/journal.pone.0108212)
+
+- Reynolds G, Vegh P, Fletcher J et al. (2021). "Developmental cell programs are co-opted in inflammatory skin disease." *Science*. DOI: [10.1126/science.aba6500](https://doi.org/10.1126/science.aba6500)
+- Gopee NH et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis." *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
+- Al Sadoun H (2022). "Macrophage Phenotypes in Normal and Diabetic Wound Healing and Therapeutic Interventions." *Bioengineering*. CorpusId:251455587
+- Mehta H et al. (2024). "Tissue-Resident Memory and Follicular/Peripheral Helper PD-1+ T Cells Infiltrate Lesional Skin in Atopic Dermatitis." CorpusId:279446110

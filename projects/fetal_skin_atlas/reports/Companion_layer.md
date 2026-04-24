@@ -1,6 +1,6 @@
 # Companion layer
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
-CL mapping: new_term_needed (no "companion layer cell" in CL; nearest: CL:0002559 hair follicle cell)  
+Cell Ontology: [hair follicle cell](http://purl.obolibrary.org/obo/CL_0002559) (CL:0002559, broad match — no exact CL term; new term needed)  
 Scope: prenatal (fetal)
 
 ## Summary

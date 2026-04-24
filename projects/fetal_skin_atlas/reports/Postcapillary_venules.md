@@ -1,6 +1,7 @@
 # Postcapillary Venules (fetal)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [endothelial cell of venule](http://purl.obolibrary.org/obo/CL_1000414) (CL:1000414, broad match — no exact CL term; new term needed)
 
 ## CL Mapping
 

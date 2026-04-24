@@ -1,6 +1,7 @@
 # Monocyte precursor
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [promonocyte](http://purl.obolibrary.org/obo/CL_0000559) (CL:0000559, broad match — no exact CL term)
 
 ## CL Mapping
 

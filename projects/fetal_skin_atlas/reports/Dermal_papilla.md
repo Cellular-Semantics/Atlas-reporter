@@ -1,6 +1,6 @@
 # Dermal papilla
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
-CL mapping: CL:0000346 (hair follicle dermal papilla cell) -- exact match  
+Cell Ontology: [hair follicle dermal papilla cell](http://purl.obolibrary.org/obo/CL_0000346) (CL:0000346, exact match)  
 Scope: prenatal (fetal)
 
 ## Summary

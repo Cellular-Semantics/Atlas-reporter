@@ -1,6 +1,7 @@
 # Pre B cell
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [precursor B cell](http://purl.obolibrary.org/obo/CL_0000817) (CL:0000817, exact match)
 
 ## CL Mapping
 

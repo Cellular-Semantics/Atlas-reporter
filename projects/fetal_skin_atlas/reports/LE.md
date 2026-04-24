@@ -1,6 +1,7 @@
 # LE — Lymphatic Endothelium (fetal)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [dermis lymphatic vessel endothelial cell](http://purl.obolibrary.org/obo/CL_2000011) (CL:2000011, exact match)
 
 ## CL Mapping
 

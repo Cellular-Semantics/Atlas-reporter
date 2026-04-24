@@ -1,7 +1,7 @@
 # ILC2 (Group 2 Innate Lymphoid Cells) in Prenatal Human Skin
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))  
 Scope: prenatal (7-17 PCW)  
-CL mapping: [CL:0001069](http://purl.obolibrary.org/obo/CL_0001069) — group 2 innate lymphoid cell (exact match, high confidence)
+Cell Ontology: [group 2 innate lymphoid cell](http://purl.obolibrary.org/obo/CL_0001069) (CL:0001069, exact match)
 
 ## Summary
 

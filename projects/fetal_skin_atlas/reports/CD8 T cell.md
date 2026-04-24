@@ -3,7 +3,7 @@
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
 Scope: fetal
 
-CL mapping: [CL:0000625](http://purl.obolibrary.org/obo/CL_0000625) (CD8-positive, alpha-beta T cell) -- broad match
+Cell Ontology: [CD8-positive, alpha-beta T cell](http://purl.obolibrary.org/obo/CL_0000625) (CL:0000625, broad match — no exact CL term)
 
 ## Summary
 

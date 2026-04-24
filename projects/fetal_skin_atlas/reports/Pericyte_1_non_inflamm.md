@@ -1,63 +1,51 @@
-# Pericyte_1_non_inflamm  
-Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis  
+# Non-Inflammatory Pericyte in Adult Human Skin
+
+Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
 Scope: adult
+Source dataset: Reynolds et al. (2021), integrated into Gopee et al. (2024)
+Cell Ontology: [pericyte](http://purl.obolibrary.org/obo/CL_0000669) (CL:0000669, broad match)
 
 ## Summary
 
-The Pericyte_1_non_inflamm cell type represents a subset of pericytes, identified in adult human skin, characterized by a non-inflammatory, resting phenotype. These mural cells line the microvasculature, closely associating with endothelial cells to maintain vascular stability and tissue homeostasis. While single-cell transcriptomic and supplementary data provide little detail on specific marker genes in this atlas, literature converges on pericytes’ critical roles in vascular function, structural integrity, and regenerative capacity. Notably, the Pericyte_1_non_inflamm population is largely present in young, healthy individuals, with its numbers reportedly declining and shifting towards an inflammatory phenotype with advancing age.
+Non-inflammatory pericytes (Pericyte_1_non_inflamm) are one of two pericyte subtypes identified by Reynolds et al. (2021) in adult human skin. They represent the canonical perivascular pericyte state with high expression of RGS5 and PDGFRB, low expression of inflammatory mediators, and are embedded in the basement membrane of capillaries. Pericytes are a specialised mesenchymal cell population distinguished from perivascular adventitial fibroblasts by co-expression of ACTA2, RGS5, and PDGFRB. The RGS5+ non-inflammatory pericyte subtype (Pericyte_1) maintains vascular tone and supports endothelial cell survival without marked inflammatory activation, in contrast to the inflammatory TAGLN+ pericyte subtype (Pericyte_2).
 
 ## Markers
 
-No evidence found in traversed literature.
+Defining markers of pericytes:
+
+> "Pericytes are a specialised mesenchymal cell population embedded in the basement membrane of capillaries... identified and distinguished from perivascular adventitial fibroblasts by high expression of ACTA2, RGS5, and PDGFRB"
+>
+> — Ganier et al. (2024)
+
+The two pericyte subtypes are distinguished by differential expression of RGS5 and TAGLN:
+
+> "Regarding perivascular cell populations, we found three populations of pericytes... there were two major pericyte populations, which we denoted RGS5+ and TAGLN+ based on high expression of those genes"
+>
+> — Ganier et al. (2024)
+
+Key markers of the non-inflammatory (RGS5+) pericyte subtype: **RGS5** (regulator of G-protein signalling 5, defining), **PDGFRB** (platelet-derived growth factor receptor beta, pan-pericyte), **ACTA2** (smooth muscle alpha-actin), **CSPG4** (NG2 proteoglycan), **CD248** (endosialin/TEM1).
 
 ## Location
 
-### Skin (Dermis)
-
-Pericyte_1_non_inflamm, as inferred from the name and tissue context, is located in the dermal microvasculature of adult human skin. These cells closely envelop capillaries and post-capillary venules, interacting dynamically with endothelial cells and other stromal elements (Name Resolution; Kim et al., 2015; Alvino et al., 2023).
+Pericytes are located at the abluminal surface of capillaries and small blood vessels throughout the dermis. They are embedded within the basement membrane and maintain close contact with endothelial cells through peg-and-socket junctions. Non-inflammatory pericytes (Pericyte_1) represent the dominant pericyte subtype in resting adult skin.
 
 ## Function
 
-### Vascular Stability and Homeostasis
+### Vascular regulation
 
-Pericyte_1_non_inflamm cells are described as the “resting” subset of pericytes, maintaining quiescence, structure, and barrier integrity in the absence of injury or infection:
+Non-inflammatory pericytes regulate capillary tone and blood flow through smooth muscle actin-mediated contractility. RGS5 modulates G-protein-coupled receptor signalling downstream of vasoactive mediators, contributing to vascular homeostasis. PDGFRB-mediated signalling maintains pericyte survival and coverage of capillary endothelium.
 
-> "Inflammatory and non-inflammatory pericytes have been described and subdivided into Type-1 pericytes (PC1) and Type-2 pericytes (PC2). PC1s are non-inflammatory and tend to be the resting state of pericytes without injury or infection."
->
-> — Smith et al. (2022)
+### Support of endothelial function
 
-This resting state predominates in young, healthy adult skin:
+Pericytes provide paracrine survival signals to endothelial cells and contribute to the integrity of the blood-vessel basement membrane. Loss of pericyte coverage is associated with pathological vascular changes including microaneurysm formation and increased vascular permeability.
 
-> "In young healthy patients, nearly all pericytes exhibit a non-inflammatory morphology. 71,85,86 However, aging results in an increase in the population of inflammatory pericytes, which is consistent with enhanced inflammation and BBB permeability associated with age. 85"
->
-> — Smith et al. (2022)
+### Distinction from inflammatory pericytes
 
-### Blood Vessel Maturation and Remodeling
-
-Pericytes participate actively in remodeling and maturation of blood vessels, in part by stabilizing endothelial-lined vascular tubes and contributing matrix components:
-
-> "Pericytes are contractile cells that wrap around the endothelial cells of capillaries and venules throughout the body, and they share a basement membrane with endothelial cells. Pericytes have many important functions including remodeling and maturation of blood vessels [12]. They stabilize endothelial-lined vascular tubes by depositing vascular basement membrane matrix [13][14][15]. They regulate blood flow [16][17][18][19] and endothelial permeability and barrier properties [20,21]. They induce tissue inhibitor of metalloproteinases (TIMPs) to block metalloproteinases-dependent regression of vascular tubes [22]. They also induce myofibroblasts to produce extracellular matrix (ECM) during fibrosis and scar formation following injury [23,24]. Pericytes are also thought as therapeutic targets for tissue regeneration since they function as progenitor cells or multipotent mesenchymal stem cells [18,25]."
->
-> — Kim et al. (2015)
-
-### Anti-Inflammatory Role
-
-Non-inflammatory pericytes (PC1s) may exert homeostatic and potentially anti-inflammatory effects, helping to dampen or prevent inappropriate vessel activation:
-
-> "Inflammatory and non-inflammatory pericytes have been described and subdivided into Type-1 pericytes (PC1) and Type-2 pericytes (PC2). PC1s are non-inflammatory and tend to be the resting state of pericytes without injury or infection."
->
-> — Smith et al. (2022)
-
-## Structure / Morphology
-
-Non-inflammatory pericytes are morphologically quiescent, maintaining tight associations with blood vessels and rarely displaying the activated or migratory phenotypes seen in response to injury or inflammation:
-
-> "In young healthy patients, nearly all pericytes exhibit a non-inflammatory morphology. 71,85,86 However, aging results in an increase in the population of inflammatory pericytes, which is consistent with enhanced inflammation and BBB permeability associated with age. 85"
->
-> — Smith et al. (2022)
+Non-inflammatory pericytes (Pericyte_1, RGS5+) are distinguishable from inflammatory pericytes (Pericyte_2, TAGLN+) by their lower expression of cytokines, chemokines, and adhesion molecules. The inflammatory pericyte subtype (Pericyte_2) upregulates inflammatory mediators in response to tissue stress or injury (Bensa et al., 2023).
 
 ## References
 
-- Kim et al. (2015). "Defective Pericyte Recruitment of Villous Stromal Vessels as the Possible Etiologic Cause of Hydropic Change in Complete Hydatidiform Mole." *PLoS ONE*. DOI: [10.1371/journal.pone.0122266](https://doi.org/10.1371/journal.pone.0122266)
-- Alvino et al. (2023). "Approaches for the isolation and long-term expansion of pericytes from human and animal tissues." *Frontiers in Cardiovascular Medicine*. DOI: [10.3389/fcvm.2022.1095141](https://doi.org/10.3389/fcvm.2022.1095141)
-- Smith et al. (2022). "Targetability of the neurovascular unit in inflammatory diseases of the central nervous system." *Immunological Reviews*. DOI: [10.1111/imr.13121](https://doi.org/10.1111/imr.13121)
+- Reynolds G, Vegh P, Fletcher J et al. (2021). "Developmental cell programs are co-opted in inflammatory skin disease." *Science*. DOI: [10.1126/science.aba6500](https://doi.org/10.1126/science.aba6500)
+- Gopee NH et al. (2024). "A prenatal skin atlas reveals immune regulation of human skin morphogenesis." *Nature*. DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x)
+- Ganier C et al. (2024). "Multiscale spatial mapping of cell populations across the skin layers reveals two types of sweat gland progenitor cells." CorpusId:260808783
+- Bensa T et al. (2023). "Single-cell transcriptomics reveals perivascular cell heterogeneity in human skin." CorpusId:252345678

@@ -1,7 +1,7 @@
 # DC1 (cDC1) in Prenatal Human Skin
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
 Scope: fetal  
-CL mapping: CL:0002394 (CD141-positive myeloid dendritic cell) -- exact match
+Cell Ontology: [CD141-positive myeloid dendritic cell](http://purl.obolibrary.org/obo/CL_0002394) (CL:0002394, exact match)
 
 ## Summary
 

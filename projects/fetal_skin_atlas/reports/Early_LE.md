@@ -1,6 +1,7 @@
 # Early LE — Early Lymphatic Endothelium (fetal)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [dermis lymphatic vessel endothelial cell](http://purl.obolibrary.org/obo/CL_2000011) (CL:2000011, broad match — no exact CL term; new term needed)
 
 ## CL Mapping
 

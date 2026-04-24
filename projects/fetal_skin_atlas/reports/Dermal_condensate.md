@@ -1,6 +1,6 @@
 # Dermal condensate
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
-CL mapping: new_term_needed (no "dermal condensate cell" in CL; nearest: CL:0000346 hair follicle dermal papilla cell is the mature form)  
+Cell Ontology: No CL term (new term needed; related but distinct from CL:0000346 hair follicle dermal papilla cell, which is the mature form)  
 Scope: prenatal (fetal)
 
 ## Summary

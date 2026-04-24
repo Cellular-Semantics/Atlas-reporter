@@ -1,6 +1,7 @@
 # Eo/baso/mast cell progenitor
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [basophil mast progenitor cell](http://purl.obolibrary.org/obo/CL_0002028) (CL:0002028, broad match — no exact CL term; new term needed)
 
 ## CL Mapping
 

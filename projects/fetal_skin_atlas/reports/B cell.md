@@ -1,6 +1,7 @@
 # B cell
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [B cell](http://purl.obolibrary.org/obo/CL_0000236) (CL:0000236, exact match)
 
 ## Summary
 B cells (B lymphocytes) are mature adaptive immune cells identified in the fetal skin atlas as a fine-grained cell state within the fetal scope. In the prenatal skin atlas (Gopee et al., 2024), B cells emerge later in gestation compared to innate immune cells, appearing from around 10 PCW as thymus, bone marrow and spleen formation begins. Multiple B cell developmental stages are captured in fetal skin, including Pre pro B cell, Pro B cell, Pre B cell and B cell, indicating active B lymphopoiesis within or seeding of fetal skin. The presence of B cells and their precursors in prenatal skin, but not in matched fetal kidneys, suggests that B cell precursors may differentiate within the skin after seeding from the fetal liver (Botting and Haniffa, 2020; Popescu et al., 2019).

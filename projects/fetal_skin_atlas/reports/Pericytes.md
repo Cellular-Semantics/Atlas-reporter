@@ -1,6 +1,7 @@
 # Pericytes (fetal)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [pericyte](http://purl.obolibrary.org/obo/CL_0000669) (CL:0000669, exact match)
 
 ## CL Mapping
 

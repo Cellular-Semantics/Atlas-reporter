@@ -1,6 +1,7 @@
 # Neutrophil2
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [neutrophil](http://purl.obolibrary.org/obo/CL_0000775) (CL:0000775, broad match — no exact CL term)
 
 ## CL Mapping
 

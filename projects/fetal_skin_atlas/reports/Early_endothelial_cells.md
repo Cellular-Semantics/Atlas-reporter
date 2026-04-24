@@ -1,6 +1,7 @@
 # Early Endothelial Cells (fetal)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [embryonic blood vessel endothelial progenitor cell](http://purl.obolibrary.org/obo/CL_0002546) (CL:0002546, broad match — no exact CL term; new term needed)
 
 ## CL Mapping
 

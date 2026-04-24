@@ -2,6 +2,7 @@
 
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))
 Scope: fetal
+Cell Ontology: [tissue-resident macrophage](http://purl.obolibrary.org/obo/CL_0000864) (CL:0000864, broad match — NTR: obophenotype/cell-ontology#3613)
 
 ## Summary
 

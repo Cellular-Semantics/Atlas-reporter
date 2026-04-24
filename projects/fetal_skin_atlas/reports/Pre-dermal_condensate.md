@@ -1,6 +1,6 @@
 # Pre-dermal condensate
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
-CL mapping: new_term_needed (no "pre-dermal condensate cell" in CL; nearest: CL:0008019 mesenchymal cell)  
+Cell Ontology: [mesenchymal cell](http://purl.obolibrary.org/obo/CL_0008019) (CL:0008019, broad match — no exact CL term; new term needed)  
 Scope: prenatal (fetal)
 
 ## Summary

@@ -1,6 +1,7 @@
 # Pre pro B cell
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [fraction A pre-pro B cell](http://purl.obolibrary.org/obo/CL_0002045) (CL:0002045, broad match — no exact CL term)
 
 ## Summary
 Pre-pro-B cells are the most primitive B-lineage committed progenitors identified in the fetal skin atlas (Gopee et al., 2024). They represent the earliest stage of B cell development, corresponding to Hardy fraction A. In the related fetal liver haematopoiesis study, pre-pro-B cells are characterized by expression of CD34, SPINK2 and IGLL1, distinguishing them from more mature pro-B and pre-B stages that progressively acquire B cell transcripts such as MS4A1, CD79B, DNTT and HLA-DRA (Popescu et al., 2019). The presence of pre-pro-B cells in fetal skin suggests that the most primitive B cell progenitors can seed non-lymphoid tissues during early development.

@@ -1,6 +1,6 @@
 # Outer root sheath
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
-CL mapping: CL:0002561 (outer root sheath cell) -- exact match  
+Cell Ontology: [outer root sheath cell](http://purl.obolibrary.org/obo/CL_0002561) (CL:0002561, exact match)  
 Scope: prenatal (fetal)
 
 ## Summary

@@ -1,6 +1,7 @@
 # Capillaries (fetal)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [dermal microvascular endothelial cell](http://purl.obolibrary.org/obo/CL_0011030) (CL:0011030, broad match — no exact CL term; new term needed)
 
 ## CL Mapping
 

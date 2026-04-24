@@ -1,6 +1,7 @@
 # Lymphoid progenitor
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [common lymphoid progenitor](http://purl.obolibrary.org/obo/CL_0000051) (CL:0000051, broad match — no exact CL term)
 
 ## CL Mapping
 

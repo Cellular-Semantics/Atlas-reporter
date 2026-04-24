@@ -1,6 +1,7 @@
 # Monocyte (activated/differentiating)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [classical monocyte](http://purl.obolibrary.org/obo/CL_0000860) (CL:0000860, broad match — no exact CL term; new term needed)
 
 ## CL Mapping
 

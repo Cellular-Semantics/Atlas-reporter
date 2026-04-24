@@ -1,7 +1,7 @@
 # ILC3 (Group 3 Innate Lymphoid Cells) in Prenatal Human Skin
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))  
 Scope: prenatal (7-17 PCW)  
-CL mapping: [CL:0001071](http://purl.obolibrary.org/obo/CL_0001071) — group 3 innate lymphoid cell (exact match, high confidence)
+Cell Ontology: [group 3 innate lymphoid cell](http://purl.obolibrary.org/obo/CL_0001071) (CL:0001071, exact match)
 
 ## Summary
 

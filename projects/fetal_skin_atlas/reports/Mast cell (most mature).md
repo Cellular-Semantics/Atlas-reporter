@@ -1,6 +1,7 @@
 # Mast cell (most mature)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [connective tissue type mast cell](http://purl.obolibrary.org/obo/CL_0000484) (CL:0000484, broad match — no exact CL term; new term needed)
 
 ## CL Mapping
 

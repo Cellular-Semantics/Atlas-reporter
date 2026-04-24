@@ -1,7 +1,7 @@
 # CD4 T Cells in Prenatal Human Skin
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)
 Scope: fetal
-CL Mapping: CL:0000492 (CD4-positive helper T cell) | Confidence: high | skos:exactMatch
+Cell Ontology: [CD4-positive helper T cell](http://purl.obolibrary.org/obo/CL_0000492) (CL:0000492, exact match)
 
 ## Summary
 

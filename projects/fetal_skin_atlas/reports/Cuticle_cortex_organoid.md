@@ -1,6 +1,7 @@
 # Cuticle/Cortex Cells in Hair-Bearing Skin Organoid (SkO)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))  
 Scope: organoid
+Cell Ontology: [keratinized cell of hair follicle](http://purl.obolibrary.org/obo/CL_0010000) (CL:0010000, broad match — no exact CL term; new term needed)
 
 ## Summary
 

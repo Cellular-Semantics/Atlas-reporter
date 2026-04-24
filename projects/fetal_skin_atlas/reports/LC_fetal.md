@@ -1,7 +1,7 @@
 # Langerhans Cells in Prenatal Human Skin
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
 Scope: fetal  
-CL mapping: CL:0000453 (Langerhans cell) -- exact match
+Cell Ontology: [Langerhans cell](http://purl.obolibrary.org/obo/CL_0000453) (CL:0000453, exact match)
 
 ## Summary
 

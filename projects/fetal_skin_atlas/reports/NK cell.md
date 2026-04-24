@@ -2,7 +2,7 @@
 
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: [10.1038/s41586-024-08002-x](https://doi.org/10.1038/s41586-024-08002-x))  
 Scope: fetal  
-CL mapping: CL:0000623 (natural killer cell) — exact match, high confidence
+Cell Ontology: [natural killer cell](http://purl.obolibrary.org/obo/CL_0000623) (CL:0000623, exact match)
 
 ## Summary
 

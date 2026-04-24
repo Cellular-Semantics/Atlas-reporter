@@ -1,6 +1,7 @@
 # Pro B cell
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [pro-B cell](http://purl.obolibrary.org/obo/CL_0000826) (CL:0000826, exact match)
 
 ## Summary
 Pro-B cells are B cell progenitors at an intermediate developmental stage, identified in the fetal skin atlas (Gopee et al., 2024) as part of the B cell developmental trajectory in prenatal skin. Pro-B cells are characterized by immunoglobulin heavy chain VDJ gene rearrangement and increasing expression of B cell transcripts including MS4A1 (CD20), CD79B, DNTT (terminal deoxynucleotidyl transferase) and HLA-DRA (Popescu et al., 2019). In fetal haematopoiesis, pro-B cells are present in both the fetal liver and non-lymphoid tissues (NLT) including skin, indicating their ability to seed peripheral tissues during development.

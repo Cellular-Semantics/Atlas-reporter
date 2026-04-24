@@ -1,6 +1,6 @@
 # Cuticle/cortex
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis (DOI: 10.1038/s41586-024-08002-x)  
-CL mapping: new_term_needed (no specific "hair cuticle/cortex cell" in CL; nearest: CL:0010000 keratinized cell of hair follicle)  
+Cell Ontology: [keratinized cell of hair follicle](http://purl.obolibrary.org/obo/CL_0010000) (CL:0010000, broad match — no exact CL term; new term needed)  
 Scope: prenatal (fetal)
 
 ## Summary

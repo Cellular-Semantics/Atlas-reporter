@@ -1,6 +1,7 @@
 # Mast cell (earliest)
 Atlas: A prenatal skin atlas reveals immune regulation of human skin morphogenesis
 Scope: fetal
+Cell Ontology: [Fc-epsilon RIalpha-low mast cell progenitor](http://purl.obolibrary.org/obo/CL_0002029) (CL:0002029, broad match — no exact CL term; new term needed)
 
 ## CL Mapping
 
