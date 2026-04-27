@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CLMapping",
+  "description": "Result of mapping an atlas cell type label to the Cell Ontology (CL). Produced by the ontology-term-lookup subagent.",
+  "type": "object",
+  "properties": {
+    "cell_type_label": {
+      "type": "string",
+      "description": "The input cell type name from the atlas report."
+    },
+    "working_definition": {
+      "type": "string",
+      "description": "2-3 sentence synthesis of the cell type identity from the report (markers, location, function, lineage)."
+    },
+    "searches_performed": {
+      "type": "array",
+      "description": "Every search string tried against OLS4, in order.",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "best_match": {
+      "description": "The single best CL term, or null if no match found.",
+      "oneOf": [
+        { "$ref": "#/$defs/CLCandidate" },
+        { "type": "null" }
+      ]
+    },
+    "justification": {
+      "type": "string",
+      "description": "Why this match type was assigned. Must compare CL definition against working definition, naming specific features that align or diverge."
+    },
+    "other_candidates": {
+      "type": "array",
+      "description": "Alternative CL terms considered but not selected as best match.",
+      "items": { "$ref": "#/$defs/RejectedCandidate" }
+    },
+    "recommendation": {
+      "type": "string",
+      "description": "Actionable recommendation: use the mapping, or describe what new CL term is needed."
+    },
+    "new_term_needed": {
+      "type": "boolean",
+      "description": "True unless match_type is 'exact match'."
+    }
+  },
+  "required": [
+    "cell_type_label",
+    "working_definition",
+    "searches_performed",
+    "best_match",
+    "justification",
+    "other_candidates",
+    "recommendation",
+    "new_term_needed"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "CLCandidate": {
+      "type": "object",
+      "description": "A CL term selected as the best match.",
+      "properties": {
+        "cl_term": {
+          "type": "string",
+          "description": "CL term label from OLS4."
+        },
+        "cl_id": {
+          "type": "string",
+          "description": "CL CURIE, e.g. CL:0000312.",
+          "pattern": "^CL:\\d{7}$"
+        },
+        "cl_definition": {
+          "type": "string",
+          "description": "Definition text from OLS4, copied verbatim."
+        },
+        "match_type": {
+          "type": "string",
+          "enum": ["exact match", "broad match", "narrow match"],
+          "description": "SKOS-style match quality."
+        },
+        "skos_mapping": {
+          "type": "string",
+          "enum": ["skos:exactMatch", "skos:broadMatch", "skos:narrowMatch"],
+          "description": "Formal SKOS mapping predicate."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Confidence in the match assessment."
+        }
+      },
+      "required": ["cl_term", "cl_id", "cl_definition", "match_type", "skos_mapping", "confidence"],
+      "additionalProperties": false
+    },
+    "RejectedCandidate": {
+      "type": "object",
+      "description": "A CL term that was considered but rejected.",
+      "properties": {
+        "cl_term": {
+          "type": "string",
+          "description": "CL term label."
+        },
+        "cl_id": {
+          "type": "string",
+          "description": "CL CURIE.",
+          "pattern": "^CL:\\d{7}$"
+        },
+        "cl_definition": {
+          "type": "string",
+          "description": "Definition text from OLS4."
+        },
+        "reason_rejected": {
+          "type": "string",
+          "description": "Why this candidate was not selected."
+        }
+      },
+      "required": ["cl_term", "cl_id", "cl_definition", "reason_rejected"],
+      "additionalProperties": false
+    }
+  }
+}

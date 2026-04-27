@@ -34,8 +34,7 @@ from pathlib import Path
 CACHE_PATH = Path.home() / ".cache" / "evidencell" / "ncbigene.json"
 
 EUTILS_URL = (
-    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
-    "?db=gene&retmode=json&id={ids}"
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&retmode=json&id={ids}"
 )
 
 TIMEOUT = 5  # seconds; silent-pass on timeout
@@ -47,12 +46,14 @@ SEP = "─" * 60
 
 # ── Path filter ─────────────────────────────────────────────────────────────
 
+
 def matches_kb(path: Path) -> bool:
     parts = path.parts
     return "kb" in parts and "mappings" in parts and path.suffix == ".yaml"
 
 
 # ── Extract new text only ───────────────────────────────────────────────────
+
 
 def new_text(tool_name: str, tool_input: dict) -> str:
     if tool_name == "Write":
@@ -65,6 +66,7 @@ def new_text(tool_name: str, tool_input: dict) -> str:
 
 
 # ── Find gene pairs ─────────────────────────────────────────────────────────
+
 
 def find_gene_pairs(obj) -> list[tuple[str, str]]:
     """
@@ -88,6 +90,7 @@ def find_gene_pairs(obj) -> list[tuple[str, str]]:
 
 # ── Cache helpers ────────────────────────────────────────────────────────────
 
+
 def load_cache() -> dict:
     try:
         return json.loads(CACHE_PATH.read_text())
@@ -104,6 +107,7 @@ def save_cache(cache: dict) -> None:
 
 
 # ── NCBI eutils batch lookup ─────────────────────────────────────────────────
+
 
 def fetch_symbols(numeric_ids: list[str]) -> dict[str, str]:
     """
@@ -127,6 +131,7 @@ def fetch_symbols(numeric_ids: list[str]) -> dict[str, str]:
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
+
 
 def block(reason: str) -> None:
     print(f"\n  ❌ EDIT BLOCKED: {reason}", file=sys.stderr)
@@ -153,6 +158,7 @@ def main() -> None:
     # Parse YAML — if it fails, the main schema hook will catch it
     try:
         import yaml  # noqa: PLC0415
+
         doc = yaml.safe_load(text) or {}
     except Exception:
         sys.exit(0)
@@ -198,7 +204,8 @@ def main() -> None:
             save_cache(cache)
         else:
             print("  ⚠  eutils unreachable — skipping live symbol check", file=sys.stderr)
-            print(f"  ✓ Format OK ({len(valid_pairs)} gene(s)); live check skipped", file=sys.stderr)
+            msg = f"  ✓ Format OK ({len(valid_pairs)} gene(s)); live check skipped"
+            print(msg, file=sys.stderr)
             print(f"{SEP}\n", file=sys.stderr)
             sys.exit(0)
 

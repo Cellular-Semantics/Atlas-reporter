@@ -176,9 +176,10 @@ class ResolveName(BaseNode[ReportState, ReportDeps, str]):
         )
 
         try:
-            state.name_resolution = (
-                json.loads(response) if isinstance(response, str) else response.model_dump()
-            )
+            if isinstance(response, str):
+                state.name_resolution = json.loads(response)
+            else:
+                state.name_resolution = response.model_dump()
         except (json.JSONDecodeError, AttributeError):
             state.name_resolution = {
                 "label": state.cell_type,

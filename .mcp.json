@@ -17,6 +17,16 @@
       "url": "https://asta-tools.allen.ai/mcp/v1",
       "headers": { "x-api-key": "${ASTA_API_KEY}"},
       "tools": ["*"]
+    },
+    "paper-search": {
+      "command": "uvx",
+      "args": ["paper-search-mcp"],
+      "tools": ["*"]
+    },
+    "ols4": {
+      "type": "http",
+      "url": "http://wwwdev.ebi.ac.uk/ols4/api/mcp",
+      "tools": ["*"]
     }
   }
 }

@@ -97,18 +97,19 @@ def run_example_agent(input_data: ExampleInput) -> ExampleOutput:
     # - Return validated output
 
     # For now, just demonstrate the pattern
-    _system_prompt = prompt_config["system_prompt"]  # noqa: F841
-    _user_prompt = prompt_config["user_prompt"].format(query=input_data.query)  # noqa: F841
+    _ = prompt_config["system_prompt"]
+    _ = prompt_config["user_prompt"].format(query=input_data.query)
 
     # Simulated processing (replace with real logic)
-    preset = prompt_config.get("presets", {}).get("openai-gpt4", {})
     result = ExampleOutput(
         status="completed",
         result=f"Processed query: {input_data.query}",
         metadata={
             "max_results": input_data.max_results,
             "prompt_used": "example_agent.prompt.yaml",
-            "model": preset.get("model", "unknown"),
+            "model": prompt_config.get("presets", {})
+            .get("openai-gpt4", {})
+            .get("model", "unknown"),
         },
     )
 

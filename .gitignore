@@ -12,4 +12,4 @@ build/
 docs/_build/
 .claude/settings.local.json
 
-projects/
+#projects/

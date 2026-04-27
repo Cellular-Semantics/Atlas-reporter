@@ -160,6 +160,100 @@ passed, errors = validate_report(report_path, traversal_dir)
 an *optional extra guard* for interactive sessions — it is NOT the primary
 validation mechanism. The correction loop must work without it.
 
+### 7. Map to Cell Ontology → subagent: `ontology-term-lookup`
+
+After the report passes validation, map the cell type to the Cell Ontology.
+
+**Input:**
+- Report path from step 5
+- Cell type label
+- Output path: `projects/{project}/traversal_output/{cell_type}/cl_mapping.json`
+
+**Output:** `projects/{project}/traversal_output/{cell_type}/cl_mapping.json`
+
+The subagent searches OLS4 for CL terms, compares definitions against the
+report content, and classifies the match as exact, broad, narrow, or none
+using SKOS vocabulary. Output conforms to the JSON Schema at
+`src/atlas_chat/atlas_chat/schemas/cl_mapping.schema.json` and is validated
+by a PostToolUse hook.
+
+### 8. Insert CL Mapping into Report Header
+
+After the CL mapping JSON is written, insert the mapping metadata into the
+report header block (between the title line and `## Summary`). Read
+`cl_mapping.json` and add a `Cell Ontology` line:
+
+- **Exact match:**
+  `Cell Ontology: [basal cell of epidermis](http://purl.obolibrary.org/obo/CL_0002187) (CL:0002187, exact match)`
+- **Broad match:**
+  `Cell Ontology: [keratinocyte](http://purl.obolibrary.org/obo/CL_0000312) (CL:0000312, broad match — no exact CL term)`
+- **No match:**
+  `Cell Ontology: No CL term (new term needed)`
+
+The PURL format is `http://purl.obolibrary.org/obo/CL_NNNNNNN` (underscore,
+not colon).
+
+### 9. Draft CL Term Request (conditional) → subagent: `cl-term-request`
+
+**Only run this step if** `cl_mapping.json` has `"new_term_needed": true`.
+
+**Input:**
+- Report path from step 5
+- CL mapping path from step 7
+- Output path: `projects/{project}/traversal_output/{cell_type}/cl_term_request.json`
+
+**Output:** `projects/{project}/traversal_output/{cell_type}/cl_term_request.json`
+
+The subagent generates a draft new term request following:
+- CL definition guidelines (`docs/LLM_prompt_guidelines_for_CL_definitions.md`)
+- CL relations guide (`docs/relations_guide.md`)
+- CL NTR issue template (`docs/cl_new_term_request_template.md`)
+
+Output includes structured JSON (definition, parent, axioms, synonyms,
+references) and a pre-rendered `ntr_markdown` field ready to paste into a
+GitHub issue on `obophenotype/cell-ontology`. The JSON is validated by a
+PostToolUse hook against the schema at
+`src/atlas_chat/atlas_chat/schemas/cl_term_request.schema.json`.
+
+### 10. Post CL Term Request to GitHub (conditional, requires confirmation)
+
+**Only run this step if:**
+- Step 9 produced a `cl_term_request.json`
+- A GitHub token with `public_repo` scope is available
+- The user explicitly confirms they want to post
+
+**This step modifies an external shared repository. Always ask the user
+before posting.** Show them the `ntr_markdown` content and the target repo
+first.
+
+**Authentication:** Pass the token via `GH_TOKEN` so the user's default `gh`
+credentials are unaffected. The token must have `public_repo` scope.
+
+**Procedure:**
+
+1. Read `cl_term_request.json` and extract `suggested_label` and `ntr_markdown`.
+2. Show the user the draft issue title and body for review.
+3. On confirmation, post:
+
+```bash
+GH_TOKEN=$(grep ATLAS_CHAT_GH_TOKEN .env | cut -d= -f2) gh issue create \
+  --repo obophenotype/cell-ontology \
+  --title "[NTR] {suggested_label}" \
+  --label "new term request" \
+  --body "$ntr_markdown"
+```
+
+4. Record the returned issue URL in the report header, appending it to the
+   Cell Ontology line:
+   `Cell Ontology: ... (broad match — NTR: obophenotype/cell-ontology#NNN)`
+
+**Never post without user confirmation.** This creates a public issue on an
+external repository.
+
+**Note:** A GitHub App-based alternative (`gh-app-post` CLI) is implemented
+at `src/github_app_posting/` for future use — posts as a bot identity without
+a personal token.
+
 ---
 
 ## Output Layout

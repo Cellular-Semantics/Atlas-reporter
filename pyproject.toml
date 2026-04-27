@@ -2,10 +2,12 @@
 members = [
     "src/atlas_chat",
     "src/atlas_chat_validation_tools",
+    "src/github_app_posting",
 ]
 
 [tool.uv.sources]
 atlas_chat = { workspace = true }
+github_app_posting = { workspace = true }
 
 [tool.uv]
 managed = true
