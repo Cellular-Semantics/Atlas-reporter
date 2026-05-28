@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_PROGENITOR",
+  "resolved_names": [
+    "RETINAL_PROGENITOR",
+    "Retinal progenitor cell (early-stage neuroepithelium)"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "AUDIOVISUAL_NEUROEPITHELIUM",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (SOX2,SPP1,RORB,FABP7,MAB21L1,CRABP1,TTYH1...) matches canonical Retinal progenitor cell (early-stage neuroepithelium)."
+}

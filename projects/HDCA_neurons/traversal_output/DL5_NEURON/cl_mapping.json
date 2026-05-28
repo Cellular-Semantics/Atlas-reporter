@@ -1,0 +1,11 @@
+{
+  "label": "DL5_NEURON",
+  "cl_term": {
+    "iri": "http://purl.obolibrary.org/obo/CL_0002611",
+    "curie": "CL:0002611",
+    "label": "neuron of the dorsal spinal cord"
+  },
+  "match_type": "narrow",
+  "new_term_needed": true,
+  "rationale": "dI5-specific term not in CL \u2014 NTR candidate."
+}

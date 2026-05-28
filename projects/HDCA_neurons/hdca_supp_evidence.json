@@ -1,0 +1,2478 @@
+{
+  "table9": {
+    "DL1_NEURON": {
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "cell_type_ontology_term_id": "CL:0000540",
+      "signature": "NGFR,DCX,CNTN2,ELAVL3,INA,STMN2,HOXD3,HOXA3,DCC,HOXB2,LHX9,BSCL2,NHLH1,DNER,CRABP1,DPYSL4,SNCG,ADGRG1,SHD,RGMB"
+    },
+    "DL2_NEURON": {
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "cell_type_ontology_term_id": "CL:0000540",
+      "signature": "DCX,NGFR,INA,CNTN2,STMN2,ELAVL3,HOXD3,HOXB2,HOXA3,POU2F2,SNCG,CRABP1,MAP6,TUBB4A,KIF5C,DPYSL4,INSM1,NHLH1,SHD,STMN4"
+    },
+    "DL3_NEURON": {
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "cell_type_ontology_term_id": "CL:0000540",
+      "signature": "DCX,STMN2,INA,ELAVL4,RGMB,ELAVL3,NEFL,KIF5C,TUBB4A,CNTN2,CRABP1,NEFM,ATP1A3,NHLH2,DPYSL4,ADGRG1,NHLH1,MAP6,STMN4,SCG3"
+    },
+    "DL5_NEURON": {
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "cell_type_ontology_term_id": "CL:0000540",
+      "signature": "ASCL1,PAX3,TFAP2A,INSM1,TFAP2B,DLL3,HOXB2,TOX3,MIAT,HOXD3,RCOR2,ADGRG1,SRRM4,HOXA3,ELAVL3,IRX2,GADD45G,NHLH1,DPYSL4,DCX"
+    },
+    "DL6_NEURON": {
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "cell_type_ontology_term_id": "CL:0000540",
+      "signature": "DCX,PAX2,INA,STMN2,NEFL,TUBB4A,DNER,KIF5C,ELAVL4,ATP1A3,RAB3A,L1CAM,ENO2,HOXB2,SLIT1,GAD2,NEFM,RTN1,GNG3,HOXD3"
+    },
+    "PA1_NEURAL_PROGENITOR": {
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "broad_celltype": "CNS_SPINAL_PROGENITOR",
+      "cell_type_ontology_term_id": "CL:4042021",
+      "signature": "SOX2,ZIC1,DCX,MSX2,MSX1,DCC,BSCL2,ELAVL3,POU3F2,MAP6,ADGRG1,STMN4,SSTR2,DPYSL4,RCOR2,DLL1,LRRN1,ZIC2,RND2,DRAXIN"
+    },
+    "PA2_NEURAL_PROGENITOR": {
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "broad_celltype": "CNS_SPINAL_PROGENITOR",
+      "cell_type_ontology_term_id": "CL:4042021",
+      "signature": "NGFR,PAX3,DCX,DCC,NHLH1,DLL3,PDPN,INSM1,ELAVL3,HOXD3,HOXB2,RCOR2,SRRM4,NEUROD4,ADGRG1,MAP6,ELAVL4,TFAP2B,GADD45G,HOXA3"
+    },
+    "PA3_4_NEURAL_PROGENITOR": {
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "broad_celltype": "CNS_SPINAL_PROGENITOR",
+      "cell_type_ontology_term_id": "CL:4042021",
+      "signature": "SOX2,PAX3,ASCL1,CXCR4,HES5,SOX9,MSX2,ZIC1,PDPN,EDNRB,IRX2,TTYH1,FZD10,POU3F2,HOXB2,HOXD4,NPPC,JAG1,LRRN1,DLL1"
+    }
+  },
+  "table16": {
+    "DL1_NEURON": [
+      {
+        "gene": "CRABP1",
+        "score": 37.65777,
+        "logfc": 8.110698,
+        "padj": 4.66191707036572e-306
+      },
+      {
+        "gene": "TUBB3",
+        "score": 36.26484,
+        "logfc": 5.668371,
+        "padj": 5.53711535397226e-284
+      },
+      {
+        "gene": "CRMP1",
+        "score": 34.411182,
+        "logfc": 3.9361393,
+        "padj": 1.09190293343405e-255
+      },
+      {
+        "gene": "GPC2",
+        "score": 34.24321,
+        "logfc": 4.1105895,
+        "padj": 2.62750423744834e-253
+      },
+      {
+        "gene": "MAP1B",
+        "score": 34.151676,
+        "logfc": 3.9248507,
+        "padj": 4.82193658881019e-252
+      },
+      {
+        "gene": "HOXB2",
+        "score": 34.138638,
+        "logfc": 4.6209745,
+        "padj": 6.2740155862342e-252
+      },
+      {
+        "gene": "TUBB2B",
+        "score": 34.086807,
+        "logfc": 4.1773715,
+        "padj": 3.15580065289411e-251
+      },
+      {
+        "gene": "LHX9",
+        "score": 34.046017,
+        "logfc": 5.853768,
+        "padj": 1.10955932544665e-250
+      },
+      {
+        "gene": "TAGLN3",
+        "score": 33.635384,
+        "logfc": 4.227388,
+        "padj": 1.08213411173549e-244
+      },
+      {
+        "gene": "TUBA1A",
+        "score": 33.608437,
+        "logfc": 3.8908014,
+        "padj": 2.41187010149865e-244
+      },
+      {
+        "gene": "NGFR",
+        "score": 33.307632,
+        "logfc": 4.79858,
+        "padj": 5.19644204005287e-240
+      },
+      {
+        "gene": "HOXA3",
+        "score": 33.28503,
+        "logfc": 4.6563077,
+        "padj": 1.01173213882701e-239
+      },
+      {
+        "gene": "CD24",
+        "score": 33.226147,
+        "logfc": 3.5104952,
+        "padj": 6.62952288284327e-239
+      },
+      {
+        "gene": "TUBB",
+        "score": 32.385048,
+        "logfc": 2.4272194,
+        "padj": 6.07898040225706e-227
+      },
+      {
+        "gene": "GDI1",
+        "score": 32.363464,
+        "logfc": 3.10525,
+        "padj": 1.14175743234789e-226
+      },
+      {
+        "gene": "VAT1",
+        "score": 31.793783,
+        "logfc": 3.3325043,
+        "padj": 9.41470121744137e-219
+      },
+      {
+        "gene": "APLP1",
+        "score": 31.617664,
+        "logfc": 3.7403696,
+        "padj": 2.37130459766925e-216
+      },
+      {
+        "gene": "DPYSL4",
+        "score": 31.341976,
+        "logfc": 3.638774,
+        "padj": 1.32749817079504e-212
+      },
+      {
+        "gene": "APP",
+        "score": 31.339317,
+        "logfc": 2.6871557,
+        "padj": 1.36700491445395e-212
+      },
+      {
+        "gene": "INA",
+        "score": 31.276182,
+        "logfc": 4.464874,
+        "padj": 9.39313005073414e-212
+      },
+      {
+        "gene": "MLLT11",
+        "score": 31.08383,
+        "logfc": 3.3289158,
+        "padj": 3.62232818645128e-209
+      },
+      {
+        "gene": "HOXD3",
+        "score": 31.039856,
+        "logfc": 4.598488,
+        "padj": 1.3571009248658e-208
+      },
+      {
+        "gene": "STMN2",
+        "score": 30.931688,
+        "logfc": 4.8420014,
+        "padj": 3.7190246303895e-207
+      },
+      {
+        "gene": "TUBB2A",
+        "score": 30.646084,
+        "logfc": 3.4002082,
+        "padj": 2.37092404569513e-203
+      },
+      {
+        "gene": "DCX",
+        "score": 30.619411,
+        "logfc": 3.6064208,
+        "padj": 5.15695035243356e-203
+      },
+      {
+        "gene": "NGRN",
+        "score": 30.610384,
+        "logfc": 2.9060783,
+        "padj": 6.53925154122617e-203
+      },
+      {
+        "gene": "DNER",
+        "score": 30.143715,
+        "logfc": 3.9583728,
+        "padj": 9.16975433074002e-197
+      },
+      {
+        "gene": "NCAM1",
+        "score": 29.765184,
+        "logfc": 3.1070065,
+        "padj": 7.5223486771015e-192
+      },
+      {
+        "gene": "GNG3",
+        "score": 29.692646,
+        "logfc": 3.8786385,
+        "padj": 6.29102301493407e-191
+      },
+      {
+        "gene": "TMEFF1",
+        "score": 29.5532,
+        "logfc": 3.2841902,
+        "padj": 3.80218923047444e-189
+      },
+      {
+        "gene": "TERF2IP",
+        "score": 29.424667,
+        "logfc": 2.2884095,
+        "padj": 1.63603435731819e-187
+      },
+      {
+        "gene": "MARCKSL1",
+        "score": 29.19882,
+        "logfc": 2.179861,
+        "padj": 1.19773312230862e-184
+      },
+      {
+        "gene": "ACTG1",
+        "score": 29.123203,
+        "logfc": 1.636312,
+        "padj": 1.05623689836331e-183
+      },
+      {
+        "gene": "ELAVL3",
+        "score": 29.016981,
+        "logfc": 3.4518015,
+        "padj": 2.25652573697663e-182
+      },
+      {
+        "gene": "SNCG",
+        "score": 28.942844,
+        "logfc": 3.947593,
+        "padj": 1.88373086954031e-181
+      },
+      {
+        "gene": "NOVA1",
+        "score": 28.8688,
+        "logfc": 3.028812,
+        "padj": 1.56112078279371e-180
+      },
+      {
+        "gene": "STMN4",
+        "score": 28.807846,
+        "logfc": 3.4624662,
+        "padj": 8.82770405871319e-180
+      },
+      {
+        "gene": "PNMA1",
+        "score": 28.796396,
+        "logfc": 2.7877877,
+        "padj": 1.1957954985196e-179
+      },
+      {
+        "gene": "HOXC9",
+        "score": 28.785332,
+        "logfc": 5.097827,
+        "padj": 1.60284877169507e-179
+      },
+      {
+        "gene": "BSCL2",
+        "score": 28.716932,
+        "logfc": 3.322491,
+        "padj": 1.11942784065549e-178
+      },
+      {
+        "gene": "STMN1",
+        "score": 28.392149,
+        "logfc": 2.2188044,
+        "padj": 1.1772273527855e-174
+      },
+      {
+        "gene": "TLCD3B",
+        "score": 28.350393,
+        "logfc": 3.8960583,
+        "padj": 3.76290002503808e-174
+      },
+      {
+        "gene": "RBP1",
+        "score": 28.323397,
+        "logfc": 3.0384316,
+        "padj": 7.90581786619739e-174
+      },
+      {
+        "gene": "MAP6",
+        "score": 28.239431,
+        "logfc": 3.6560876,
+        "padj": 8.32849558545854e-173
+      },
+      {
+        "gene": "RTN1",
+        "score": 27.945307,
+        "logfc": 3.729413,
+        "padj": 3.18973286951487e-169
+      },
+      {
+        "gene": "BASP1",
+        "score": 27.8723,
+        "logfc": 2.858568,
+        "padj": 2.40014594401477e-168
+      },
+      {
+        "gene": "GDAP1L1",
+        "score": 27.82044,
+        "logfc": 3.671935,
+        "padj": 9.97419841392195e-168
+      },
+      {
+        "gene": "WASF1",
+        "score": 27.584753,
+        "logfc": 2.8328414,
+        "padj": 6.74501314541951e-165
+      },
+      {
+        "gene": "MAP2",
+        "score": 27.568474,
+        "logfc": 3.0726986,
+        "padj": 1.03571291964761e-164
+      },
+      {
+        "gene": "ELAVL4",
+        "score": 27.416035,
+        "logfc": 3.1160264,
+        "padj": 6.74467268240729e-163
+      }
+    ],
+    "DL2_NEURON": [
+      {
+        "gene": "TUBB3",
+        "score": 36.2362,
+        "logfc": 5.678906,
+        "padj": 3.13023998195853e-283
+      },
+      {
+        "gene": "MAP1B",
+        "score": 35.14842,
+        "logfc": 4.1510687,
+        "padj": 1.17326127851758e-266
+      },
+      {
+        "gene": "CRMP1",
+        "score": 34.4373,
+        "logfc": 4.0194545,
+        "padj": 4.44018315887446e-256
+      },
+      {
+        "gene": "TAGLN3",
+        "score": 34.19553,
+        "logfc": 4.4631786,
+        "padj": 1.34508804457291e-252
+      },
+      {
+        "gene": "TUBB2B",
+        "score": 33.731113,
+        "logfc": 4.1337376,
+        "padj": 7.72581344127995e-246
+      },
+      {
+        "gene": "TUBA1A",
+        "score": 33.493885,
+        "logfc": 3.8878524,
+        "padj": 1.88275129560245e-242
+      },
+      {
+        "gene": "GDI1",
+        "score": 32.806824,
+        "logfc": 3.246187,
+        "padj": 1.28370887951174e-232
+      },
+      {
+        "gene": "GPC2",
+        "score": 32.450226,
+        "logfc": 3.8553314,
+        "padj": 1.28338465954028e-227
+      },
+      {
+        "gene": "STMN2",
+        "score": 32.29851,
+        "logfc": 5.1727314,
+        "padj": 1.55714965251217e-225
+      },
+      {
+        "gene": "CD24",
+        "score": 31.865805,
+        "logfc": 3.3360949,
+        "padj": 1.51838761428871e-219
+      },
+      {
+        "gene": "DCX",
+        "score": 31.756033,
+        "logfc": 3.8070915,
+        "padj": 4.54993230143078e-218
+      },
+      {
+        "gene": "VAT1",
+        "score": 31.679502,
+        "logfc": 3.3264804,
+        "padj": 4.73649128974478e-217
+      },
+      {
+        "gene": "INA",
+        "score": 31.354885,
+        "logfc": 4.6688685,
+        "padj": 1.22587565635981e-212
+      },
+      {
+        "gene": "TUBB",
+        "score": 31.205332,
+        "logfc": 2.347678,
+        "padj": 1.2302039384968e-210
+      },
+      {
+        "gene": "CRABP1",
+        "score": 31.089067,
+        "logfc": 5.988014,
+        "padj": 4.30860613726349e-209
+      },
+      {
+        "gene": "APLP1",
+        "score": 30.527262,
+        "logfc": 3.6446126,
+        "padj": 1.35227898170541e-201
+      },
+      {
+        "gene": "TUBB2A",
+        "score": 30.496733,
+        "logfc": 3.449826,
+        "padj": 3.23384164615906e-201
+      },
+      {
+        "gene": "TMEFF1",
+        "score": 30.389723,
+        "logfc": 3.3420722,
+        "padj": 7.96578826801259e-200
+      },
+      {
+        "gene": "MLLT11",
+        "score": 30.222164,
+        "logfc": 3.2597098,
+        "padj": 1.21763617876269e-197
+      },
+      {
+        "gene": "DPYSL4",
+        "score": 30.20775,
+        "logfc": 3.5748281,
+        "padj": 1.78883630055945e-197
+      },
+      {
+        "gene": "NGRN",
+        "score": 30.20354,
+        "logfc": 2.8687696,
+        "padj": 1.9349432834155e-197
+      },
+      {
+        "gene": "PCBP4",
+        "score": 30.152529,
+        "logfc": 3.430414,
+        "padj": 8.62532120980791e-197
+      },
+      {
+        "gene": "ELAVL3",
+        "score": 29.85937,
+        "logfc": 3.513895,
+        "padj": 5.5077618766317e-193
+      },
+      {
+        "gene": "KIF5C",
+        "score": 29.292257,
+        "logfc": 3.5770447,
+        "padj": 1.03550935194396e-185
+      },
+      {
+        "gene": "TLCD3B",
+        "score": 29.088102,
+        "logfc": 3.9206126,
+        "padj": 3.87749765878622e-183
+      },
+      {
+        "gene": "MAP6",
+        "score": 29.029978,
+        "logfc": 3.6714697,
+        "padj": 2.02262712996265e-182
+      },
+      {
+        "gene": "GNG3",
+        "score": 28.910881,
+        "logfc": 3.9790502,
+        "padj": 6.16248401382711e-181
+      },
+      {
+        "gene": "STMN4",
+        "score": 28.837208,
+        "logfc": 3.5077245,
+        "padj": 4.9992388188568e-180
+      },
+      {
+        "gene": "RTN4",
+        "score": 28.777859,
+        "logfc": 1.961518,
+        "padj": 2.67343868688267e-179
+      },
+      {
+        "gene": "FSCN1",
+        "score": 28.612795,
+        "logfc": 2.5048647,
+        "padj": 2.96421655239831e-177
+      },
+      {
+        "gene": "CDKN1C",
+        "score": 28.426819,
+        "logfc": 2.9994156,
+        "padj": 5.80750177585984e-175
+      },
+      {
+        "gene": "TUBB4A",
+        "score": 28.388607,
+        "logfc": 4.3120723,
+        "padj": 1.66806046919928e-174
+      },
+      {
+        "gene": "MARCKSL1",
+        "score": 28.30962,
+        "logfc": 2.1356478,
+        "padj": 1.52242636827118e-173
+      },
+      {
+        "gene": "SYT11",
+        "score": 28.10785,
+        "logfc": 3.1827934,
+        "padj": 4.41114895833064e-171
+      },
+      {
+        "gene": "SNCG",
+        "score": 28.097538,
+        "logfc": 4.4247923,
+        "padj": 5.72761414309595e-171
+      },
+      {
+        "gene": "NEFM",
+        "score": 27.926313,
+        "logfc": 4.8723307,
+        "padj": 6.78259637127857e-169
+      },
+      {
+        "gene": "YWHAZ",
+        "score": 27.65829,
+        "logfc": 1.8262123,
+        "padj": 1.1447565793321e-165
+      },
+      {
+        "gene": "STMN1",
+        "score": 27.599678,
+        "logfc": 2.1700692,
+        "padj": 5.64111857466375e-165
+      },
+      {
+        "gene": "TERF2IP",
+        "score": 27.522726,
+        "logfc": 2.107927,
+        "padj": 4.59596968311656e-164
+      },
+      {
+        "gene": "RTN1",
+        "score": 27.498611,
+        "logfc": 3.820228,
+        "padj": 8.70720201577927e-164
+      },
+      {
+        "gene": "BASP1",
+        "score": 27.388367,
+        "logfc": 2.7516043,
+        "padj": 1.75731498873612e-162
+      },
+      {
+        "gene": "GDAP1L1",
+        "score": 27.314737,
+        "logfc": 3.5256453,
+        "padj": 1.28874884865518e-161
+      },
+      {
+        "gene": "PNMA1",
+        "score": 27.274685,
+        "logfc": 2.6923454,
+        "padj": 3.76151998432782e-161
+      },
+      {
+        "gene": "DPYSL3",
+        "score": 27.202951,
+        "logfc": 2.8223863,
+        "padj": 2.60073019154421e-160
+      },
+      {
+        "gene": "ACTG1",
+        "score": 26.848118,
+        "logfc": 1.5193796,
+        "padj": 3.76472824605539e-156
+      },
+      {
+        "gene": "BSCL2",
+        "score": 26.667757,
+        "logfc": 3.1393754,
+        "padj": 4.62428955375541e-154
+      },
+      {
+        "gene": "RBP1",
+        "score": 26.666563,
+        "logfc": 2.8097768,
+        "padj": 4.67256682247665e-154
+      },
+      {
+        "gene": "NSG1",
+        "score": 26.429228,
+        "logfc": 3.3401222,
+        "padj": 2.51562854771897e-151
+      },
+      {
+        "gene": "NGFR",
+        "score": 26.368341,
+        "logfc": 3.9442086,
+        "padj": 1.23240250559162e-150
+      },
+      {
+        "gene": "DYNC1H1",
+        "score": 26.29895,
+        "logfc": 2.1517854,
+        "padj": 7.52868882550007e-150
+      }
+    ],
+    "DL3_NEURON": [
+      {
+        "gene": "TUBB3",
+        "score": 35.480865,
+        "logfc": 5.4550924,
+        "padj": 1.85191641838359e-271
+      },
+      {
+        "gene": "TAGLN3",
+        "score": 33.76794,
+        "logfc": 4.4139833,
+        "padj": 5.56714832250428e-246
+      },
+      {
+        "gene": "DCX",
+        "score": 32.781086,
+        "logfc": 4.0721626,
+        "padj": 6.97190085253455e-232
+      },
+      {
+        "gene": "CRABP1",
+        "score": 32.572643,
+        "logfc": 6.3452854,
+        "padj": 4.77809641811831e-229
+      },
+      {
+        "gene": "CD24",
+        "score": 32.04974,
+        "logfc": 3.3863013,
+        "padj": 8.45405501468267e-222
+      },
+      {
+        "gene": "MAP1B",
+        "score": 31.983204,
+        "logfc": 3.6491337,
+        "padj": 5.94207808458739e-221
+      },
+      {
+        "gene": "GPC2",
+        "score": 31.934626,
+        "logfc": 3.9005494,
+        "padj": 2.40927963505556e-220
+      },
+      {
+        "gene": "PCBP4",
+        "score": 31.747816,
+        "logfc": 3.7835045,
+        "padj": 8.12338403268527e-218
+      },
+      {
+        "gene": "GDI1",
+        "score": 30.658195,
+        "logfc": 3.046464,
+        "padj": 4.36000924792908e-203
+      },
+      {
+        "gene": "STMN2",
+        "score": 30.467735,
+        "logfc": 4.778678,
+        "padj": 1.33188669500583e-200
+      },
+      {
+        "gene": "TUBB2B",
+        "score": 30.101131,
+        "logfc": 3.6861932,
+        "padj": 8.1284757971045e-196
+      },
+      {
+        "gene": "TUBA1A",
+        "score": 29.699327,
+        "logfc": 3.3487794,
+        "padj": 1.24647111618802e-190
+      },
+      {
+        "gene": "CRMP1",
+        "score": 29.340351,
+        "logfc": 3.2975214,
+        "padj": 4.65993757220887e-186
+      },
+      {
+        "gene": "INA",
+        "score": 28.741976,
+        "logfc": 4.2742476,
+        "padj": 1.55620319772842e-178
+      },
+      {
+        "gene": "DPYSL4",
+        "score": 28.365215,
+        "logfc": 3.4839056,
+        "padj": 6.91689448262973e-174
+      },
+      {
+        "gene": "VAT1",
+        "score": 28.061895,
+        "logfc": 2.9979672,
+        "padj": 3.41284530456432e-170
+      },
+      {
+        "gene": "NREP",
+        "score": 28.027515,
+        "logfc": 2.273545,
+        "padj": 8.43443863255159e-170
+      },
+      {
+        "gene": "ACTG1",
+        "score": 27.964752,
+        "logfc": 1.5977241,
+        "padj": 4.62712990594316e-169
+      },
+      {
+        "gene": "NGRN",
+        "score": 27.920992,
+        "logfc": 2.755255,
+        "padj": 1.4913269261627e-168
+      },
+      {
+        "gene": "CDKN1C",
+        "score": 27.844902,
+        "logfc": 3.2387187,
+        "padj": 1.18544911909139e-167
+      },
+      {
+        "gene": "MLLT11",
+        "score": 27.719774,
+        "logfc": 2.9412935,
+        "padj": 3.66767981649228e-166
+      },
+      {
+        "gene": "ELAVL4",
+        "score": 27.707027,
+        "logfc": 3.3808093,
+        "padj": 4.98662489628989e-166
+      },
+      {
+        "gene": "TUBB",
+        "score": 27.314774,
+        "logfc": 2.0720594,
+        "padj": 2.35101843242969e-161
+      },
+      {
+        "gene": "NOVA1",
+        "score": 27.231667,
+        "logfc": 2.9431064,
+        "padj": 2.17999271006907e-160
+      },
+      {
+        "gene": "TMEFF1",
+        "score": 26.810053,
+        "logfc": 3.0749784,
+        "padj": 1.8842588276308e-155
+      },
+      {
+        "gene": "NNAT",
+        "score": 26.711376,
+        "logfc": 2.9966722,
+        "padj": 2.5499176342946e-154
+      },
+      {
+        "gene": "KIF5C",
+        "score": 26.113926,
+        "logfc": 3.2684078,
+        "padj": 1.7913971647445e-147
+      },
+      {
+        "gene": "NEFM",
+        "score": 26.05513,
+        "logfc": 4.487915,
+        "padj": 8.02493681612506e-147
+      },
+      {
+        "gene": "DPYSL3",
+        "score": 25.930119,
+        "logfc": 2.7018685,
+        "padj": 2.00669905195583e-145
+      },
+      {
+        "gene": "RGMB",
+        "score": 25.867882,
+        "logfc": 3.677944,
+        "padj": 9.74555997945377e-145
+      },
+      {
+        "gene": "MARCKSL1",
+        "score": 25.514883,
+        "logfc": 1.9708096,
+        "padj": 8.30147080345408e-141
+      },
+      {
+        "gene": "MAP2",
+        "score": 25.396164,
+        "logfc": 2.9076266,
+        "padj": 1.65900875409493e-139
+      },
+      {
+        "gene": "CKB",
+        "score": 25.393383,
+        "logfc": 2.8517,
+        "padj": 1.72664639512949e-139
+      },
+      {
+        "gene": "NHLH2",
+        "score": 25.256111,
+        "logfc": 4.3029437,
+        "padj": 5.44954349597326e-138
+      },
+      {
+        "gene": "TUBB4A",
+        "score": 25.204893,
+        "logfc": 3.907303,
+        "padj": 1.93136409574773e-137
+      },
+      {
+        "gene": "MAP6",
+        "score": 25.146427,
+        "logfc": 3.4930608,
+        "padj": 8.20127554560938e-137
+      },
+      {
+        "gene": "ELAVL3",
+        "score": 25.054993,
+        "logfc": 3.069633,
+        "padj": 7.94871212885068e-136
+      },
+      {
+        "gene": "STMN1",
+        "score": 24.974304,
+        "logfc": 1.9927056,
+        "padj": 5.84355897893857e-135
+      },
+      {
+        "gene": "SRRM4",
+        "score": 24.918682,
+        "logfc": 3.331222,
+        "padj": 2.28557688506468e-134
+      },
+      {
+        "gene": "DBN1",
+        "score": 24.6108,
+        "logfc": 2.1961014,
+        "padj": 4.62057754405017e-131
+      },
+      {
+        "gene": "SYT11",
+        "score": 24.602701,
+        "logfc": 3.0062234,
+        "padj": 5.50386914532106e-131
+      },
+      {
+        "gene": "SOX4",
+        "score": 24.527275,
+        "logfc": 2.1281598,
+        "padj": 3.43722668248712e-130
+      },
+      {
+        "gene": "FSCN1",
+        "score": 24.402967,
+        "logfc": 2.127633,
+        "padj": 7.06283024273935e-129
+      },
+      {
+        "gene": "NHLH1",
+        "score": 24.400814,
+        "logfc": 4.6842213,
+        "padj": 7.2753563567584e-129
+      },
+      {
+        "gene": "EIF4G2",
+        "score": 24.370214,
+        "logfc": 1.5507717,
+        "padj": 1.50210967003721e-128
+      },
+      {
+        "gene": "GDAP1L1",
+        "score": 24.246353,
+        "logfc": 3.453466,
+        "padj": 2.99876976432274e-127
+      },
+      {
+        "gene": "TLCD3B",
+        "score": 24.060158,
+        "logfc": 3.5362065,
+        "padj": 2.65508050168128e-125
+      },
+      {
+        "gene": "SCG3",
+        "score": 23.971464,
+        "logfc": 2.912104,
+        "padj": 2.1957569724025e-124
+      },
+      {
+        "gene": "STMN4",
+        "score": 23.94037,
+        "logfc": 3.0315607,
+        "padj": 4.53626335531985e-124
+      },
+      {
+        "gene": "ADGRG1",
+        "score": 23.890646,
+        "logfc": 2.9640808,
+        "padj": 1.46311855811158e-123
+      }
+    ],
+    "DL5_NEURON": [
+      {
+        "gene": "TUBB3",
+        "score": 33.223984,
+        "logfc": 4.9551425,
+        "padj": 9.26160589833992e-238
+      },
+      {
+        "gene": "TAGLN3",
+        "score": 31.695087,
+        "logfc": 4.246404,
+        "padj": 1.73348395466637e-216
+      },
+      {
+        "gene": "CD24",
+        "score": 29.050478,
+        "logfc": 3.0501049,
+        "padj": 9.65861155956903e-182
+      },
+      {
+        "gene": "HOXB2",
+        "score": 28.402594,
+        "logfc": 4.0879397,
+        "padj": 8.96625926301337e-174
+      },
+      {
+        "gene": "CKB",
+        "score": 28.157198,
+        "logfc": 3.3462842,
+        "padj": 7.47077066350233e-171
+      },
+      {
+        "gene": "TUBB2B",
+        "score": 27.997883,
+        "logfc": 3.4161882,
+        "padj": 5.48676747840255e-169
+      },
+      {
+        "gene": "PCBP4",
+        "score": 27.874937,
+        "logfc": 3.275271,
+        "padj": 1.46530159456415e-167
+      },
+      {
+        "gene": "MAP1B",
+        "score": 27.823414,
+        "logfc": 3.119011,
+        "padj": 5.39389241681109e-167
+      },
+      {
+        "gene": "GDI1",
+        "score": 27.801414,
+        "logfc": 2.720577,
+        "padj": 8.84763389204831e-167
+      },
+      {
+        "gene": "GPC2",
+        "score": 27.290565,
+        "logfc": 3.2372115,
+        "padj": 1.04813236382484e-160
+      },
+      {
+        "gene": "CRMP1",
+        "score": 27.026802,
+        "logfc": 2.9660645,
+        "padj": 1.24245595214342e-157
+      },
+      {
+        "gene": "ACTG1",
+        "score": 26.302477,
+        "logfc": 1.5171918,
+        "padj": 2.85862197335982e-149
+      },
+      {
+        "gene": "TUBA1A",
+        "score": 26.077593,
+        "logfc": 2.8960447,
+        "padj": 9.61592854442274e-147
+      },
+      {
+        "gene": "NGRN",
+        "score": 25.965246,
+        "logfc": 2.5154185,
+        "padj": 1.66838367974156e-145
+      },
+      {
+        "gene": "DLL3",
+        "score": 25.69865,
+        "logfc": 4.2217426,
+        "padj": 1.54053126277241e-142
+      },
+      {
+        "gene": "MARCKSL1",
+        "score": 25.39117,
+        "logfc": 1.9787874,
+        "padj": 3.76725104747454e-139
+      },
+      {
+        "gene": "DPYSL4",
+        "score": 25.26928,
+        "logfc": 3.1293437,
+        "padj": 7.81067285695459e-138
+      },
+      {
+        "gene": "SOX4",
+        "score": 24.890932,
+        "logfc": 2.209417,
+        "padj": 9.89470891834216e-134
+      },
+      {
+        "gene": "TOX3",
+        "score": 24.82421,
+        "logfc": 3.291335,
+        "padj": 4.93624842733442e-133
+      },
+      {
+        "gene": "COTL1",
+        "score": 24.821856,
+        "logfc": 2.5188801,
+        "padj": 4.97203022617695e-133
+      },
+      {
+        "gene": "ENC1",
+        "score": 24.737328,
+        "logfc": 3.2550387,
+        "padj": 3.85909890610457e-132
+      },
+      {
+        "gene": "SYT11",
+        "score": 24.581245,
+        "logfc": 3.0005999,
+        "padj": 1.74005567744997e-130
+      },
+      {
+        "gene": "TMEFF1",
+        "score": 24.083952,
+        "logfc": 2.7178998,
+        "padj": 3.05679982755919e-125
+      },
+      {
+        "gene": "CDKN1C",
+        "score": 24.018892,
+        "logfc": 2.89569,
+        "padj": 1.40446339240163e-124
+      },
+      {
+        "gene": "RCOR2",
+        "score": 23.921204,
+        "logfc": 3.5776875,
+        "padj": 1.40765425088556e-123
+      },
+      {
+        "gene": "H1F0",
+        "score": 23.766443,
+        "logfc": 2.216628,
+        "padj": 5.45569033574439e-122
+      },
+      {
+        "gene": "TUBB",
+        "score": 23.759972,
+        "logfc": 1.843694,
+        "padj": 6.12885471516936e-122
+      },
+      {
+        "gene": "EIF4G2",
+        "score": 23.582705,
+        "logfc": 1.4953407,
+        "padj": 3.95526785994346e-120
+      },
+      {
+        "gene": "HES6",
+        "score": 23.294054,
+        "logfc": 3.4191756,
+        "padj": 3.35347533705169e-117
+      },
+      {
+        "gene": "CAMK2N1",
+        "score": 23.269064,
+        "logfc": 2.9481993,
+        "padj": 5.8065061810509e-117
+      },
+      {
+        "gene": "SRRM4",
+        "score": 23.21683,
+        "logfc": 3.1397922,
+        "padj": 1.89629343724569e-116
+      },
+      {
+        "gene": "MLLT11",
+        "score": 23.214203,
+        "logfc": 2.390193,
+        "padj": 1.95274127043842e-116
+      },
+      {
+        "gene": "INSM1",
+        "score": 23.20208,
+        "logfc": 4.1383157,
+        "padj": 2.51016553965271e-116
+      },
+      {
+        "gene": "EIF1B",
+        "score": 23.16903,
+        "logfc": 1.6121618,
+        "padj": 5.24984804046627e-116
+      },
+      {
+        "gene": "ASCL1",
+        "score": 23.151596,
+        "logfc": 3.9487581,
+        "padj": 7.64257356893667e-116
+      },
+      {
+        "gene": "PNMA1",
+        "score": 22.565552,
+        "logfc": 2.3166137,
+        "padj": 5.0115319189999e-110
+      },
+      {
+        "gene": "DCX",
+        "score": 22.475079,
+        "logfc": 2.9686513,
+        "padj": 3.75551286838804e-109
+      },
+      {
+        "gene": "KDM5B",
+        "score": 22.419336,
+        "logfc": 1.9672643,
+        "padj": 1.28110463885946e-108
+      },
+      {
+        "gene": "RCN2",
+        "score": 22.309792,
+        "logfc": 1.7112411,
+        "padj": 1.45346545224913e-107
+      },
+      {
+        "gene": "EEF2",
+        "score": 22.255196,
+        "logfc": 1.3386366,
+        "padj": 4.79512938998943e-107
+      },
+      {
+        "gene": "TFAP2B",
+        "score": 22.105515,
+        "logfc": 4.5450625,
+        "padj": 1.30271079230418e-105
+      },
+      {
+        "gene": "CLIP3",
+        "score": 22.097872,
+        "logfc": 2.549528,
+        "padj": 1.50623622754061e-105
+      },
+      {
+        "gene": "VAT1",
+        "score": 22.002682,
+        "logfc": 2.3547034,
+        "padj": 1.20534291495391e-104
+      },
+      {
+        "gene": "HDAC2",
+        "score": 21.998724,
+        "logfc": 1.568483,
+        "padj": 1.28535623499489e-104
+      },
+      {
+        "gene": "PHF21B",
+        "score": 21.865967,
+        "logfc": 2.770349,
+        "padj": 2.27435758915078e-103
+      },
+      {
+        "gene": "KIF5C",
+        "score": 21.768394,
+        "logfc": 2.7506557,
+        "padj": 1.87915827889781e-102
+      },
+      {
+        "gene": "CASTOR2",
+        "score": 21.767084,
+        "logfc": 2.9981728,
+        "padj": 1.89331055260051e-102
+      },
+      {
+        "gene": "NREP",
+        "score": 21.620625,
+        "logfc": 1.7663264,
+        "padj": 4.477893114613e-101
+      },
+      {
+        "gene": "DRAXIN",
+        "score": 21.599472,
+        "logfc": 3.5421946,
+        "padj": 6.93804490458191e-101
+      },
+      {
+        "gene": "SOX11",
+        "score": 21.572615,
+        "logfc": 2.0968986,
+        "padj": 1.21606012255844e-100
+      }
+    ],
+    "DL6_NEURON": [
+      {
+        "gene": "LAMP5",
+        "score": 37.084232,
+        "logfc": 6.8903775,
+        "padj": 9.63122079037693e-297
+      },
+      {
+        "gene": "INA",
+        "score": 36.502045,
+        "logfc": 5.586835,
+        "padj": 9.82509494615732e-288
+      },
+      {
+        "gene": "TUBB3",
+        "score": 35.64195,
+        "logfc": 5.4682293,
+        "padj": 1.99878198806723e-274
+      },
+      {
+        "gene": "NSG1",
+        "score": 35.202393,
+        "logfc": 4.334489,
+        "padj": 8.77319380483047e-268
+      },
+      {
+        "gene": "GPC2",
+        "score": 34.510365,
+        "logfc": 4.1148643,
+        "padj": 2.14155057249028e-257
+      },
+      {
+        "gene": "TUBB4A",
+        "score": 34.383915,
+        "logfc": 4.8979864,
+        "padj": 1.3959336363146e-255
+      },
+      {
+        "gene": "CRMP1",
+        "score": 34.134975,
+        "logfc": 3.9066122,
+        "padj": 6.09460278967915e-252
+      },
+      {
+        "gene": "MAP1B",
+        "score": 33.91084,
+        "logfc": 3.8878636,
+        "padj": 1.10061140536517e-248
+      },
+      {
+        "gene": "DCX",
+        "score": 33.85184,
+        "logfc": 4.20943,
+        "padj": 7.23372368967855e-248
+      },
+      {
+        "gene": "HOXB2",
+        "score": 33.616096,
+        "logfc": 4.717777,
+        "padj": 1.86382263397847e-244
+      },
+      {
+        "gene": "NSG2",
+        "score": 33.46907,
+        "logfc": 4.900967,
+        "padj": 2.35901633673895e-242
+      },
+      {
+        "gene": "APLP1",
+        "score": 33.446503,
+        "logfc": 3.9692068,
+        "padj": 4.60419756083642e-242
+      },
+      {
+        "gene": "STMN2",
+        "score": 33.283775,
+        "logfc": 5.2398133,
+        "padj": 9.73784053960239e-240
+      },
+      {
+        "gene": "DNER",
+        "score": 33.060326,
+        "logfc": 4.31852,
+        "padj": 1.50758470060916e-236
+      },
+      {
+        "gene": "TUBB2B",
+        "score": 33.00587,
+        "logfc": 4.0343933,
+        "padj": 8.51657627266012e-236
+      },
+      {
+        "gene": "GDAP1L1",
+        "score": 32.861675,
+        "logfc": 4.531527,
+        "padj": 9.25871839062858e-234
+      },
+      {
+        "gene": "KIF5C",
+        "score": 32.76815,
+        "logfc": 4.095504,
+        "padj": 1.88064546144411e-232
+      },
+      {
+        "gene": "NEFM",
+        "score": 32.703392,
+        "logfc": 4.921637,
+        "padj": 1.48266890735874e-231
+      },
+      {
+        "gene": "GDI1",
+        "score": 32.413677,
+        "logfc": 3.1776695,
+        "padj": 1.77001366945764e-227
+      },
+      {
+        "gene": "CD24",
+        "score": 32.25099,
+        "logfc": 3.3875804,
+        "padj": 3.25286518435491e-225
+      },
+      {
+        "gene": "GNG3",
+        "score": 32.235546,
+        "logfc": 4.367042,
+        "padj": 5.10016101102888e-225
+      },
+      {
+        "gene": "NEFL",
+        "score": 31.903616,
+        "logfc": 4.6153107,
+        "padj": 2.06462728169492e-220
+      },
+      {
+        "gene": "TUBB2A",
+        "score": 31.8533,
+        "logfc": 3.5241125,
+        "padj": 9.83600256922011e-220
+      },
+      {
+        "gene": "TAGLN3",
+        "score": 31.666254,
+        "logfc": 3.9504812,
+        "padj": 3.60447637811566e-217
+      },
+      {
+        "gene": "DPYSL4",
+        "score": 31.640144,
+        "logfc": 3.8476477,
+        "padj": 7.91418039259225e-217
+      },
+      {
+        "gene": "TMEFF1",
+        "score": 31.221407,
+        "logfc": 3.422348,
+        "padj": 4.00862654906537e-211
+      },
+      {
+        "gene": "TUBA1A",
+        "score": 31.179556,
+        "logfc": 3.5164497,
+        "padj": 1.4265468106069e-210
+      },
+      {
+        "gene": "TERF2IP",
+        "score": 31.14021,
+        "logfc": 2.479333,
+        "padj": 4.69328847371392e-210
+      },
+      {
+        "gene": "TLCD3B",
+        "score": 30.646322,
+        "logfc": 4.261085,
+        "padj": 1.94784141707164e-203
+      },
+      {
+        "gene": "RBP1",
+        "score": 30.459826,
+        "logfc": 3.1406536,
+        "padj": 5.6507056548868e-201
+      },
+      {
+        "gene": "PAX2",
+        "score": 30.335995,
+        "logfc": 6.5075345,
+        "padj": 2.36808906181115e-199
+      },
+      {
+        "gene": "NGRN",
+        "score": 30.178705,
+        "logfc": 2.9178905,
+        "padj": 2.68991502116477e-197
+      },
+      {
+        "gene": "MARCKSL1",
+        "score": 30.067133,
+        "logfc": 2.2461352,
+        "padj": 7.5439128869037e-196
+      },
+      {
+        "gene": "ATP1A3",
+        "score": 30.061176,
+        "logfc": 3.9696534,
+        "padj": 8.75959349398675e-196
+      },
+      {
+        "gene": "NOVA1",
+        "score": 29.930016,
+        "logfc": 3.232962,
+        "padj": 4.36942189170652e-194
+      },
+      {
+        "gene": "ENO2",
+        "score": 29.645098,
+        "logfc": 3.6292052,
+        "padj": 2.08062365106579e-190
+      },
+      {
+        "gene": "RAB3A",
+        "score": 29.49385,
+        "logfc": 3.8561492,
+        "padj": 1.78150813500371e-188
+      },
+      {
+        "gene": "GNAS",
+        "score": 29.386276,
+        "logfc": 2.5549643,
+        "padj": 4.13251679459705e-187
+      },
+      {
+        "gene": "ELAVL4",
+        "score": 28.89792,
+        "logfc": 3.5463057,
+        "padj": 6.20770132602628e-181
+      },
+      {
+        "gene": "SCG3",
+        "score": 28.888742,
+        "logfc": 3.4157069,
+        "padj": 7.89303137200532e-181
+      },
+      {
+        "gene": "CAMK2N1",
+        "score": 28.870071,
+        "logfc": 3.5421534,
+        "padj": 1.32123588987144e-180
+      },
+      {
+        "gene": "RTN1",
+        "score": 28.726042,
+        "logfc": 3.6230922,
+        "padj": 8.20413504212775e-179
+      },
+      {
+        "gene": "NREP",
+        "score": 28.640003,
+        "logfc": 2.2806187,
+        "padj": 9.48162856937762e-178
+      },
+      {
+        "gene": "TUBB",
+        "score": 28.55436,
+        "logfc": 2.1413374,
+        "padj": 1.07611825027694e-176
+      },
+      {
+        "gene": "GAD2",
+        "score": 28.50964,
+        "logfc": 4.798207,
+        "padj": 3.77511462019136e-176
+      },
+      {
+        "gene": "MLLT11",
+        "score": 28.213543,
+        "logfc": 2.9213622,
+        "padj": 1.65582067240703e-172
+      },
+      {
+        "gene": "NDUFB8",
+        "score": 28.063469,
+        "logfc": 2.3177552,
+        "padj": 1.11157324626198e-170
+      },
+      {
+        "gene": "VAT1",
+        "score": 27.747347,
+        "logfc": 2.868616,
+        "padj": 7.46161087033068e-167
+      },
+      {
+        "gene": "HOXD3",
+        "score": 27.707804,
+        "logfc": 4.2590046,
+        "padj": 2.19114473495914e-166
+      },
+      {
+        "gene": "EEF2",
+        "score": 26.872097,
+        "logfc": 1.5562241,
+        "padj": 1.77769064122304e-156
+      }
+    ],
+    "PA1_NEURAL_PROGENITOR": [
+      {
+        "gene": "VAT1",
+        "score": 34.129486,
+        "logfc": 3.8894355,
+        "padj": 5.1461102473808e-251
+      },
+      {
+        "gene": "RND2",
+        "score": 29.785925,
+        "logfc": 4.666762,
+        "padj": 5.67534228729139e-191
+      },
+      {
+        "gene": "HES6",
+        "score": 29.746363,
+        "logfc": 4.4353495,
+        "padj": 1.12215381308886e-190
+      },
+      {
+        "gene": "TUBB",
+        "score": 29.739782,
+        "logfc": 2.2296326,
+        "padj": 1.12215381308886e-190
+      },
+      {
+        "gene": "TAGLN3",
+        "score": 29.54619,
+        "logfc": 3.697992,
+        "padj": 2.80703968378362e-188
+      },
+      {
+        "gene": "TUBB3",
+        "score": 29.337343,
+        "logfc": 4.184798,
+        "padj": 1.10288454711477e-185
+      },
+      {
+        "gene": "MAP1B",
+        "score": 29.185492,
+        "logfc": 3.3342218,
+        "padj": 8.08302145905145e-184
+      },
+      {
+        "gene": "TUBA1A",
+        "score": 29.167915,
+        "logfc": 3.2926502,
+        "padj": 1.18182760270049e-183
+      },
+      {
+        "gene": "TUBB2B",
+        "score": 29.120302,
+        "logfc": 3.5776231,
+        "padj": 4.21471892091226e-183
+      },
+      {
+        "gene": "CD24",
+        "score": 28.851938,
+        "logfc": 2.9906917,
+        "padj": 9.14770966103184e-180
+      },
+      {
+        "gene": "CKB",
+        "score": 28.66575,
+        "logfc": 3.1987813,
+        "padj": 1.77082941545631e-177
+      },
+      {
+        "gene": "PFN2",
+        "score": 27.513239,
+        "logfc": 2.6402566,
+        "padj": 1.93998474655479e-163
+      },
+      {
+        "gene": "GDI1",
+        "score": 26.776901,
+        "logfc": 2.5589266,
+        "padj": 8.81937532536291e-155
+      },
+      {
+        "gene": "ACTG1",
+        "score": 26.754646,
+        "logfc": 1.5770531,
+        "padj": 1.48696621736412e-154
+      },
+      {
+        "gene": "NGRN",
+        "score": 26.69499,
+        "logfc": 2.5228186,
+        "padj": 6.85026846523942e-154
+      },
+      {
+        "gene": "ENC1",
+        "score": 26.484526,
+        "logfc": 3.274209,
+        "padj": 1.74379705135256e-151
+      },
+      {
+        "gene": "BSCL2",
+        "score": 26.434227,
+        "logfc": 3.131419,
+        "padj": 6.22271440968294e-151
+      },
+      {
+        "gene": "CARHSP1",
+        "score": 26.306404,
+        "logfc": 2.1611836,
+        "padj": 1.71852980442889e-149
+      },
+      {
+        "gene": "NNAT",
+        "score": 25.940672,
+        "logfc": 2.9861567,
+        "padj": 2.32851722287465e-145
+      },
+      {
+        "gene": "TMSB15A",
+        "score": 25.777267,
+        "logfc": 2.5377927,
+        "padj": 1.52276378382898e-143
+      },
+      {
+        "gene": "PCBP4",
+        "score": 25.664553,
+        "logfc": 3.068896,
+        "padj": 2.6448836753637e-142
+      },
+      {
+        "gene": "MSX2",
+        "score": 25.379389,
+        "logfc": 4.492371,
+        "padj": 3.69671598478673e-139
+      },
+      {
+        "gene": "SYT11",
+        "score": 25.164488,
+        "logfc": 2.79508,
+        "padj": 8.14387427504919e-137
+      },
+      {
+        "gene": "FSCN1",
+        "score": 25.030977,
+        "logfc": 2.178333,
+        "padj": 2.23818544551452e-135
+      },
+      {
+        "gene": "POU3F2",
+        "score": 24.690708,
+        "logfc": 3.348866,
+        "padj": 1.02789728688951e-131
+      },
+      {
+        "gene": "WASF1",
+        "score": 24.088621,
+        "logfc": 2.508264,
+        "padj": 2.4159578375768e-125
+      },
+      {
+        "gene": "ZIC1",
+        "score": 23.885954,
+        "logfc": 3.304736,
+        "padj": 3.03144902994716e-123
+      },
+      {
+        "gene": "APLP1",
+        "score": 23.831379,
+        "logfc": 2.6685796,
+        "padj": 1.07730884838848e-122
+      },
+      {
+        "gene": "PNMA1",
+        "score": 23.747286,
+        "logfc": 2.3237605,
+        "padj": 7.71683120260063e-122
+      },
+      {
+        "gene": "MAP6",
+        "score": 23.694693,
+        "logfc": 3.0870051,
+        "padj": 2.60301654192064e-121
+      },
+      {
+        "gene": "IGFBPL1",
+        "score": 23.488295,
+        "logfc": 3.4247499,
+        "padj": 3.30917480933015e-119
+      },
+      {
+        "gene": "HDAC2",
+        "score": 23.455534,
+        "logfc": 1.6810799,
+        "padj": 6.92596043148284e-119
+      },
+      {
+        "gene": "CRMP1",
+        "score": 23.283249,
+        "logfc": 2.5288477,
+        "padj": 3.79191705206661e-117
+      },
+      {
+        "gene": "JUN",
+        "score": 23.25257,
+        "logfc": 2.3267746,
+        "padj": 7.52480109013995e-117
+      },
+      {
+        "gene": "DDR1",
+        "score": 22.886406,
+        "logfc": 2.495901,
+        "padj": 3.46204888671532e-113
+      },
+      {
+        "gene": "DBN1",
+        "score": 22.734426,
+        "logfc": 1.9836223,
+        "padj": 1.0853446987269e-111
+      },
+      {
+        "gene": "GPC2",
+        "score": 22.652002,
+        "logfc": 2.647395,
+        "padj": 6.87981777119586e-111
+      },
+      {
+        "gene": "RCOR2",
+        "score": 22.57486,
+        "logfc": 3.2912405,
+        "padj": 3.84650130539964e-110
+      },
+      {
+        "gene": "PPP2CA",
+        "score": 22.372583,
+        "logfc": 2.000014,
+        "padj": 3.56411743898255e-108
+      },
+      {
+        "gene": "DPYSL4",
+        "score": 22.282133,
+        "logfc": 2.5863051,
+        "padj": 2.62885213793506e-107
+      },
+      {
+        "gene": "HNRNPDL",
+        "score": 22.193544,
+        "logfc": 1.2795181,
+        "padj": 1.84646285914537e-106
+      },
+      {
+        "gene": "CHD7",
+        "score": 22.124264,
+        "logfc": 2.0810802,
+        "padj": 8.39343153637193e-106
+      },
+      {
+        "gene": "CITED2",
+        "score": 21.866047,
+        "logfc": 2.1570168,
+        "padj": 2.42871868347097e-103
+      },
+      {
+        "gene": "MLLT11",
+        "score": 21.823591,
+        "logfc": 2.2408257,
+        "padj": 6.01203973414731e-103
+      },
+      {
+        "gene": "ACTB",
+        "score": 21.821522,
+        "logfc": 1.3505019,
+        "padj": 6.15062504579468e-103
+      },
+      {
+        "gene": "TUBB2A",
+        "score": 21.74859,
+        "logfc": 2.204747,
+        "padj": 2.95683221786324e-102
+      },
+      {
+        "gene": "MSX1",
+        "score": 21.746092,
+        "logfc": 4.41147,
+        "padj": 3.05590984757238e-102
+      },
+      {
+        "gene": "STMN4",
+        "score": 21.738148,
+        "logfc": 2.7264354,
+        "padj": 3.55762137304703e-102
+      },
+      {
+        "gene": "DDAH2",
+        "score": 21.645905,
+        "logfc": 1.6507285,
+        "padj": 2.58854744124268e-101
+      },
+      {
+        "gene": "IGDCC3",
+        "score": 21.621258,
+        "logfc": 2.6253805,
+        "padj": 4.32849923195996e-101
+      }
+    ],
+    "PA2_NEURAL_PROGENITOR": [
+      {
+        "gene": "TAGLN3",
+        "score": 36.081547,
+        "logfc": 4.991356,
+        "padj": 8.43304825902684e-281
+      },
+      {
+        "gene": "NHLH1",
+        "score": 35.37665,
+        "logfc": 6.368566,
+        "padj": 3.72676111426367e-270
+      },
+      {
+        "gene": "TUBB3",
+        "score": 33.998924,
+        "logfc": 5.0808334,
+        "padj": 1.47084982512321e-249
+      },
+      {
+        "gene": "ENC1",
+        "score": 33.851044,
+        "logfc": 4.4399214,
+        "padj": 1.67223310861485e-247
+      },
+      {
+        "gene": "CDKN1C",
+        "score": 33.093884,
+        "logfc": 4.045013,
+        "padj": 1.38983429939477e-236
+      },
+      {
+        "gene": "DLL3",
+        "score": 32.658863,
+        "logfc": 5.1863103,
+        "padj": 1.90877529907782e-230
+      },
+      {
+        "gene": "PCBP4",
+        "score": 32.41918,
+        "logfc": 3.8674872,
+        "padj": 4.01854364606794e-227
+      },
+      {
+        "gene": "HOXB2",
+        "score": 31.754988,
+        "logfc": 4.439886,
+        "padj": 6.46741508939869e-218
+      },
+      {
+        "gene": "CD24",
+        "score": 31.372341,
+        "logfc": 3.2858064,
+        "padj": 1.02359534466459e-212
+      },
+      {
+        "gene": "HES6",
+        "score": 31.350853,
+        "logfc": 4.720364,
+        "padj": 1.80857087975268e-212
+      },
+      {
+        "gene": "RBP1",
+        "score": 31.277788,
+        "logfc": 3.3436127,
+        "padj": 1.62408320505757e-211
+      },
+      {
+        "gene": "GDI1",
+        "score": 30.680365,
+        "logfc": 3.0518904,
+        "padj": 1.65558059180517e-203
+      },
+      {
+        "gene": "RCOR2",
+        "score": 30.385317,
+        "logfc": 4.554848,
+        "padj": 1.26114428002737e-199
+      },
+      {
+        "gene": "INSM1",
+        "score": 30.020123,
+        "logfc": 5.2547803,
+        "padj": 7.31214846807483e-195
+      },
+      {
+        "gene": "GPC2",
+        "score": 29.728529,
+        "logfc": 3.5357578,
+        "padj": 4.1832991142658e-191
+      },
+      {
+        "gene": "RND2",
+        "score": 29.685303,
+        "logfc": 4.5488667,
+        "padj": 1.35945975333764e-190
+      },
+      {
+        "gene": "MAP6",
+        "score": 29.68469,
+        "logfc": 4.1423674,
+        "padj": 1.35945975333764e-190
+      },
+      {
+        "gene": "KLHDC8A",
+        "score": 29.57237,
+        "logfc": 4.5209136,
+        "padj": 3.59313158870439e-189
+      },
+      {
+        "gene": "MAP1B",
+        "score": 29.478315,
+        "logfc": 3.2885628,
+        "padj": 5.48791268420367e-188
+      },
+      {
+        "gene": "SOX4",
+        "score": 29.0707,
+        "logfc": 2.5436761,
+        "padj": 8.04432383324526e-183
+      },
+      {
+        "gene": "SRRM4",
+        "score": 28.667389,
+        "logfc": 3.8587384,
+        "padj": 8.84985437776832e-178
+      },
+      {
+        "gene": "NOVA1",
+        "score": 28.495474,
+        "logfc": 3.084523,
+        "padj": 1.15683142675958e-175
+      },
+      {
+        "gene": "TMEM176A",
+        "score": 28.438713,
+        "logfc": 4.742567,
+        "padj": 5.57935193540064e-175
+      },
+      {
+        "gene": "PDPN",
+        "score": 28.381659,
+        "logfc": 4.222058,
+        "padj": 2.70976234161642e-174
+      },
+      {
+        "gene": "GNG5",
+        "score": 28.357286,
+        "logfc": 2.1675732,
+        "padj": 5.19820849589966e-174
+      },
+      {
+        "gene": "VAT1",
+        "score": 27.788315,
+        "logfc": 2.9465282,
+        "padj": 4.40974034542098e-167
+      },
+      {
+        "gene": "CRMP1",
+        "score": 27.781578,
+        "logfc": 3.1059113,
+        "padj": 5.12188469049855e-167
+      },
+      {
+        "gene": "DCX",
+        "score": 27.492981,
+        "logfc": 3.3866584,
+        "padj": 1.45241537734468e-163
+      },
+      {
+        "gene": "HOXD3",
+        "score": 27.449093,
+        "logfc": 4.3729596,
+        "padj": 4.68985547180806e-163
+      },
+      {
+        "gene": "H1F0",
+        "score": 27.31635,
+        "logfc": 2.6209736,
+        "padj": 1.72634133551676e-161
+      },
+      {
+        "gene": "NGFR",
+        "score": 27.28629,
+        "logfc": 4.207737,
+        "padj": 3.80005968276069e-161
+      },
+      {
+        "gene": "IGFBPL1",
+        "score": 27.220219,
+        "logfc": 3.761433,
+        "padj": 2.233935755984e-160
+      },
+      {
+        "gene": "CKB",
+        "score": 26.967972,
+        "logfc": 3.0226078,
+        "padj": 2.03176616135923e-157
+      },
+      {
+        "gene": "TUBB2B",
+        "score": 26.93393,
+        "logfc": 3.270626,
+        "padj": 4.94202331242444e-157
+      },
+      {
+        "gene": "TUBA1A",
+        "score": 26.851097,
+        "logfc": 2.960191,
+        "padj": 4.46758964329567e-156
+      },
+      {
+        "gene": "NEUROD4",
+        "score": 26.833488,
+        "logfc": 5.345305,
+        "padj": 6.97262921913162e-156
+      },
+      {
+        "gene": "SYT11",
+        "score": 26.812275,
+        "logfc": 3.2079406,
+        "padj": 1.19940706781333e-155
+      },
+      {
+        "gene": "ELAVL3",
+        "score": 26.722425,
+        "logfc": 3.4175177,
+        "padj": 1.29818960681993e-154
+      },
+      {
+        "gene": "RCN2",
+        "score": 26.662743,
+        "logfc": 2.033842,
+        "padj": 6.23562286349889e-154
+      },
+      {
+        "gene": "RND3",
+        "score": 26.541994,
+        "logfc": 3.0157893,
+        "padj": 1.51668196282261e-152
+      },
+      {
+        "gene": "DCC",
+        "score": 26.517525,
+        "logfc": 3.365331,
+        "padj": 2.83461459308815e-152
+      },
+      {
+        "gene": "GADD45G",
+        "score": 26.448013,
+        "logfc": 3.993067,
+        "padj": 1.74845443577484e-151
+      },
+      {
+        "gene": "CHD7",
+        "score": 25.982506,
+        "logfc": 2.5084133,
+        "padj": 3.4672962785419e-146
+      },
+      {
+        "gene": "ACTG1",
+        "score": 25.944078,
+        "logfc": 1.4739507,
+        "padj": 9.20308185626928e-146
+      },
+      {
+        "gene": "NGRN",
+        "score": 25.90884,
+        "logfc": 2.4968562,
+        "padj": 2.24663758065685e-145
+      },
+      {
+        "gene": "SRGAP3",
+        "score": 25.862085,
+        "logfc": 2.7790139,
+        "padj": 7.3855298735019e-145
+      },
+      {
+        "gene": "DDR1",
+        "score": 25.664227,
+        "logfc": 2.9722986,
+        "padj": 1.19172207438865e-142
+      },
+      {
+        "gene": "PAX3",
+        "score": 25.558733,
+        "logfc": 5.163127,
+        "padj": 1.74666334585619e-141
+      },
+      {
+        "gene": "MAP2",
+        "score": 25.52463,
+        "logfc": 2.941327,
+        "padj": 4.09375184428322e-141
+      },
+      {
+        "gene": "MLLT11",
+        "score": 25.364317,
+        "logfc": 2.5846195,
+        "padj": 2.38557514848736e-139
+      }
+    ],
+    "PA3_4_NEURAL_PROGENITOR": [
+      {
+        "gene": "NES",
+        "score": 34.581326,
+        "logfc": 4.4038296,
+        "padj": 9.20828578756784e-258
+      },
+      {
+        "gene": "SOX2",
+        "score": 34.501133,
+        "logfc": 5.687527,
+        "padj": 7.36456902500205e-257
+      },
+      {
+        "gene": "CKB",
+        "score": 34.39611,
+        "logfc": 4.003436,
+        "padj": 1.83483495197339e-255
+      },
+      {
+        "gene": "PAX3",
+        "score": 34.15377,
+        "logfc": 5.68035,
+        "padj": 5.61104958802813e-252
+      },
+      {
+        "gene": "TTYH1",
+        "score": 29.923603,
+        "logfc": 3.9897416,
+        "padj": 3.70640570386742e-193
+      },
+      {
+        "gene": "ASCL1",
+        "score": 29.572096,
+        "logfc": 4.4319105,
+        "padj": 1.08675093975946e-188
+      },
+      {
+        "gene": "CCND1",
+        "score": 29.271757,
+        "logfc": 3.188713,
+        "padj": 6.47516950638081e-185
+      },
+      {
+        "gene": "RND2",
+        "score": 29.199667,
+        "logfc": 3.9886007,
+        "padj": 4.67370926348803e-184
+      },
+      {
+        "gene": "HMGA1",
+        "score": 28.403479,
+        "logfc": 2.6840484,
+        "padj": 3.88604154696573e-174
+      },
+      {
+        "gene": "VIM",
+        "score": 27.797192,
+        "logfc": 3.0806723,
+        "padj": 8.95609054061017e-167
+      },
+      {
+        "gene": "TUBB",
+        "score": 26.266329,
+        "logfc": 1.9885157,
+        "padj": 8.07576257946607e-149
+      },
+      {
+        "gene": "HOXB2",
+        "score": 26.261597,
+        "logfc": 3.334445,
+        "padj": 8.38387504080456e-149
+      },
+      {
+        "gene": "ARL4A",
+        "score": 26.142183,
+        "logfc": 2.769181,
+        "padj": 1.77624863548468e-147
+      },
+      {
+        "gene": "IRX2",
+        "score": 25.909431,
+        "logfc": 3.4219334,
+        "padj": 7.11157306832009e-145
+      },
+      {
+        "gene": "FDFT1",
+        "score": 25.77779,
+        "logfc": 2.1365542,
+        "padj": 2.00316372059715e-143
+      },
+      {
+        "gene": "NRARP",
+        "score": 25.735477,
+        "logfc": 4.071077,
+        "padj": 5.59358903076348e-143
+      },
+      {
+        "gene": "NPPC",
+        "score": 25.71471,
+        "logfc": 4.6840267,
+        "padj": 8.98940272503344e-143
+      },
+      {
+        "gene": "ZIC1",
+        "score": 25.445326,
+        "logfc": 3.944862,
+        "padj": 8.43586701312543e-140
+      },
+      {
+        "gene": "CXCR4",
+        "score": 25.304358,
+        "logfc": 2.906812,
+        "padj": 2.87442580550553e-138
+      },
+      {
+        "gene": "FZD10",
+        "score": 25.288153,
+        "logfc": 5.1934447,
+        "padj": 4.11691379906954e-138
+      },
+      {
+        "gene": "HES5",
+        "score": 25.184647,
+        "logfc": 4.642496,
+        "padj": 5.36522125380837e-137
+      },
+      {
+        "gene": "PDPN",
+        "score": 25.13555,
+        "logfc": 3.1662807,
+        "padj": 1.76490269804103e-136
+      },
+      {
+        "gene": "SYT11",
+        "score": 25.132261,
+        "logfc": 2.7629642,
+        "padj": 1.83386195042415e-136
+      },
+      {
+        "gene": "HNRNPA2B1",
+        "score": 25.021057,
+        "logfc": 1.2207631,
+        "padj": 2.87006763406529e-135
+      },
+      {
+        "gene": "LRRN1",
+        "score": 25.012266,
+        "logfc": 2.8825357,
+        "padj": 3.43411318477074e-135
+      },
+      {
+        "gene": "POU3F2",
+        "score": 24.978933,
+        "logfc": 3.3316662,
+        "padj": 7.60675007774394e-135
+      },
+      {
+        "gene": "TMSB15A",
+        "score": 24.9584,
+        "logfc": 2.4225624,
+        "padj": 1.22407805054429e-134
+      },
+      {
+        "gene": "SOX9",
+        "score": 24.659369,
+        "logfc": 3.216862,
+        "padj": 1.99128174165385e-131
+      },
+      {
+        "gene": "SINHCAF",
+        "score": 24.539139,
+        "logfc": 2.1083272,
+        "padj": 3.71916600788899e-130
+      },
+      {
+        "gene": "TUBA1A",
+        "score": 24.365202,
+        "logfc": 2.6463547,
+        "padj": 2.54633378381848e-128
+      },
+      {
+        "gene": "RAN",
+        "score": 24.262398,
+        "logfc": 1.5168146,
+        "padj": 3.01339451750804e-127
+      },
+      {
+        "gene": "LINC00461",
+        "score": 24.196493,
+        "logfc": 2.6953702,
+        "padj": 1.44522629607075e-126
+      },
+      {
+        "gene": "NGRN",
+        "score": 24.191557,
+        "logfc": 2.239437,
+        "padj": 1.57957537141015e-126
+      },
+      {
+        "gene": "HOXD4",
+        "score": 24.094017,
+        "logfc": 5.071638,
+        "padj": 1.62194387772712e-125
+      },
+      {
+        "gene": "TUBB3",
+        "score": 24.067112,
+        "logfc": 2.8432958,
+        "padj": 3.01508585290602e-125
+      },
+      {
+        "gene": "ZFP36L1",
+        "score": 24.044569,
+        "logfc": 2.3357143,
+        "padj": 5.04632755035918e-125
+      },
+      {
+        "gene": "TUBB2B",
+        "score": 23.855553,
+        "logfc": 2.8967762,
+        "padj": 4.57649026502426e-123
+      },
+      {
+        "gene": "JUN",
+        "score": 23.797295,
+        "logfc": 2.3721914,
+        "padj": 1.78997618045234e-122
+      },
+      {
+        "gene": "CENPV",
+        "score": 23.774782,
+        "logfc": 2.2829628,
+        "padj": 2.98206387046061e-122
+      },
+      {
+        "gene": "SFPQ",
+        "score": 23.760126,
+        "logfc": 1.7355813,
+        "padj": 4.12179973771731e-122
+      },
+      {
+        "gene": "EDNRB",
+        "score": 23.69473,
+        "logfc": 2.9601343,
+        "padj": 1.90292752327261e-121
+      },
+      {
+        "gene": "RFX4",
+        "score": 23.687658,
+        "logfc": 3.2400928,
+        "padj": 2.19709625580875e-121
+      },
+      {
+        "gene": "PGAM1",
+        "score": 23.6503,
+        "logfc": 1.8583404,
+        "padj": 5.20412593489804e-121
+      },
+      {
+        "gene": "DRAXIN",
+        "score": 23.562973,
+        "logfc": 3.2170072,
+        "padj": 4.01107407951253e-120
+      },
+      {
+        "gene": "ILF3",
+        "score": 23.416618,
+        "logfc": 1.7141076,
+        "padj": 1.22809657314767e-118
+      },
+      {
+        "gene": "ENC1",
+        "score": 23.310175,
+        "logfc": 2.4678752,
+        "padj": 1.43281698301429e-117
+      },
+      {
+        "gene": "MSX2",
+        "score": 23.309795,
+        "logfc": 3.9394908,
+        "padj": 1.43281698301429e-117
+      },
+      {
+        "gene": "CHD7",
+        "score": 23.262615,
+        "logfc": 2.1061077,
+        "padj": 4.21767252871915e-117
+      },
+      {
+        "gene": "LMNB1",
+        "score": 23.074383,
+        "logfc": 2.2733223,
+        "padj": 3.26300328600819e-115
+      },
+      {
+        "gene": "TMEM97",
+        "score": 23.004618,
+        "logfc": 2.1897311,
+        "padj": 1.60032920937983e-114
+      }
+    ]
+  }
+}

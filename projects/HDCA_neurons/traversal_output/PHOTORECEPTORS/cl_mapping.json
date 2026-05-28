@@ -1,0 +1,11 @@
+{
+  "label": "PHOTORECEPTORS",
+  "cl_term": {
+    "curie": "CL:0000210",
+    "iri": "http://purl.obolibrary.org/obo/CL_0000210",
+    "label": "photoreceptor cell"
+  },
+  "match_type": "exact",
+  "new_term_needed": false,
+  "rationale": "At CS13-22 most cells in HDCA cluster are not yet committed rod vs cone; CL:0000210 is the appropriate ancestor term."
+}

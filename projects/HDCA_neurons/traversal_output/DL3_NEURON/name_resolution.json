@@ -1,0 +1,11 @@
+{
+  "label": "DL3_NEURON",
+  "resolved_names": [
+    "DL3_NEURON",
+    "dI3 (Class A commissural excitatory interneuron)"
+  ],
+  "scope": "fetal/embryonic (Carnegie stage 13-14, ~32-33 dpc)",
+  "tissue_context": "spinal cord (alar plate, dorsal neural tube)",
+  "confidence": "high (markers + classification match canonical literature)",
+  "evidence": "HDCA Supplementary Table 9 assigns DL3_NEURON to broad_celltype CNS_SPINAL_NEURON, systems NERVOUS_SYSTEM, CL term CL:0000540. Top gene signature (DCX,STMN2,INA,ELAVL4,RGMB,ELAVL3,NEFL,KIF5C,TUBB4A,CNTN2,CRABP1,NEFM,ATP1A3,NHLH2,DPYSL4,ADGRG1,NHLH1,MAP6,STMN4,SCG3) matches canonical dI3 (Class A commissural excitatory interneuron) markers documented in Lu 2015, Castellani 2013, Gray de Cristoforis 2020."
+}

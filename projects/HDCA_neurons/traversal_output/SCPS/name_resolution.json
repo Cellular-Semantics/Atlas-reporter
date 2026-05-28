@@ -1,0 +1,11 @@
+{
+  "label": "SCPS",
+  "resolved_names": [
+    "SCPS",
+    "Schwann cell precursors"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "PNS_NCC",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (SOX10,PLP1,ERBB3,S100B,EDNRB,MPZ,CNP,SPP1,POSTN,NGFR,INSC,CDH6,COL18A1,FOXD3,MEG...) matches canonical Schwann cell precursors."
+}

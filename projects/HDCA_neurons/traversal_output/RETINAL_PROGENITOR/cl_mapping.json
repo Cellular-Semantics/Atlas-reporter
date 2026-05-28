@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_PROGENITOR",
+  "cl_term": {
+    "curie": "CL:0002672",
+    "iri": "http://purl.obolibrary.org/obo/CL_0002672",
+    "label": "retinal progenitor cell"
+  },
+  "match_type": "exact",
+  "new_term_needed": false,
+  "rationale": "CL definition \"multi-fate stem cell that can give rise to different retinal cell types\" matches HDCA SOX2+/FABP7+/MAB21L1+ naive RPC."
+}

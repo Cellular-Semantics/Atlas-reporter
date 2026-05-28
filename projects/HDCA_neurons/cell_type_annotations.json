@@ -1,0 +1,2756 @@
+{
+  "source": {
+    "doi": "10.64898/2026.03.30.714220",
+    "title": "Human Developmental Cell Atlas (HDCA) v2 \u2014 pan-organ integrated single-cell reference",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.30.714220v1.full.pdf",
+    "dataset_url": "https://cellatlas.io/studies/hdca/dataset/232/cherita",
+    "obs_column": "refined_celltype",
+    "notes": "Cell types extracted from refined_celltype column of HDCA v2 zarr (hdca_v2_20260311_f2.zarr). Co-annotations (broad_celltype, germlayer, systems, organ, development_stage) computed by cross-tabulating obs columns; values shown are dominant (collapsed when share>=0.95). development_stage uses HsapDv ontology IDs."
+  },
+  "annotations": [
+    {
+      "label": "AMACRINE_CELL",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 78,
+      "broad_celltype": "AUDIOVISUAL_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.808
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.103
+        },
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.09
+        }
+      ]
+    },
+    {
+      "label": "AUTONOMIC_NCCS_SCPS",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 15860,
+      "broad_celltype": "PNS_NCC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "whole_embryo",
+          "share": 0.673
+        },
+        {
+          "value": "Gut ",
+          "share": 0.075
+        },
+        {
+          "value": "Limb",
+          "share": 0.05
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.473
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.231
+        },
+        {
+          "value": "unknown",
+          "share": 0.123
+        }
+      ]
+    },
+    {
+      "label": "AUTONOMIC_NEURONAL_PROGENITORS",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 3181,
+      "broad_celltype": "PNS_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "whole_embryo",
+          "share": 0.737
+        },
+        {
+          "value": "Lung",
+          "share": 0.078
+        },
+        {
+          "value": "Heart",
+          "share": 0.068
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.45
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.309
+        },
+        {
+          "value": "unknown",
+          "share": 0.102
+        }
+      ]
+    },
+    {
+      "label": "BIPOLARS",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1334,
+      "broad_celltype": "AUDIOVISUAL_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.837
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.157
+        },
+        {
+          "value": "unknown",
+          "share": 0.006
+        }
+      ]
+    },
+    {
+      "label": "BRAIN_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 16242,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        },
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "BRAIN_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 25054,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "BRAIN_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 42565,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "CEREBELLUM_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 44127,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.684
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.119
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.115
+        }
+      ]
+    },
+    {
+      "label": "CEREBELLUM_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 53879,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.813
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.111
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.039
+        }
+      ]
+    },
+    {
+      "label": "CEREBELLUM_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 10145,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.835
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.093
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.039
+        }
+      ]
+    },
+    {
+      "label": "CEREBELLUM_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 22833,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.983
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.016
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "CORTEX_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 52431,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.219
+        },
+        {
+          "value": "HsapDv:0000047",
+          "share": 0.179
+        },
+        {
+          "value": "unknown",
+          "share": 0.168
+        }
+      ]
+    },
+    {
+      "label": "CORTEX_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 73191,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.268
+        },
+        {
+          "value": "HsapDv:0000047",
+          "share": 0.239
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.154
+        }
+      ]
+    },
+    {
+      "label": "CORTEX_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 22045,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000047",
+          "share": 0.195
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.176
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.163
+        }
+      ]
+    },
+    {
+      "label": "CORTEX_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 76891,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.486
+        },
+        {
+          "value": "HsapDv:0000047",
+          "share": 0.208
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.184
+        }
+      ]
+    },
+    {
+      "label": "DA1_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 3047,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.624
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.376
+        }
+      ]
+    },
+    {
+      "label": "DA3_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 9211,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.65
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.35
+        }
+      ]
+    },
+    {
+      "label": "DB1_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 6862,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.586
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.413
+        },
+        {
+          "value": "unknown",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "DIENCEPHALON_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 3830,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "DIENCEPHALON_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 11233,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "DIENCEPHALON_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 3182,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "DIENCEPHALON_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 15971,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "DL1_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 2454,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.54
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.46
+        }
+      ]
+    },
+    {
+      "label": "DL2_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 5044,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.571
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.429
+        }
+      ]
+    },
+    {
+      "label": "DL3_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 9242,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.55
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.45
+        },
+        {
+          "value": "unknown",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "DL5_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 3842,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.535
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.465
+        },
+        {
+          "value": "unknown",
+          "share": 0.001
+        }
+      ]
+    },
+    {
+      "label": "DL6_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1522,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.539
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.461
+        }
+      ]
+    },
+    {
+      "label": "DORSAL_MIDBRAIN_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 5361,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.864
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.136
+        }
+      ]
+    },
+    {
+      "label": "DORSAL_MIDBRAIN_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 10302,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.877
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.123
+        }
+      ]
+    },
+    {
+      "label": "DORSAL_MIDBRAIN_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 177,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.938
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.062
+        }
+      ]
+    },
+    {
+      "label": "DORSAL_MIDBRAIN_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 22972,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.992
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.008
+        }
+      ]
+    },
+    {
+      "label": "EMBRYONIC_BRAIN_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "embryonic",
+      "n_cells": 2230,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "Brain",
+          "share": 0.815
+        },
+        {
+          "value": "whole_embryo",
+          "share": 0.185
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.815
+        },
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.152
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.033
+        }
+      ]
+    },
+    {
+      "label": "EMBRYONIC_MIDBRAIN_NEURAL_PROGENITOR",
+      "granularity": "fine",
+      "scope": "embryonic",
+      "n_cells": 818,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.653
+        },
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.347
+        }
+      ]
+    },
+    {
+      "label": "EMBRYONIC_MIDBRAIN_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "embryonic",
+      "n_cells": 141,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.972
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.028
+        }
+      ]
+    },
+    {
+      "label": "EMBRYONIC_NEURON_ELAVL4",
+      "granularity": "fine",
+      "scope": "embryonic",
+      "n_cells": 1755,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.577
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.423
+        },
+        {
+          "value": "unknown",
+          "share": 0.001
+        }
+      ]
+    },
+    {
+      "label": "EMBRYONIC_NEURON_MID_HINDBRAIN",
+      "granularity": "fine",
+      "scope": "embryonic",
+      "n_cells": 5976,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.6
+        },
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.4
+        }
+      ]
+    },
+    {
+      "label": "EMBRYONIC_NON_SPECIFIC_NEUROBLAST",
+      "granularity": "broad",
+      "scope": "embryonic",
+      "n_cells": 7221,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.768
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.229
+        },
+        {
+          "value": "unknown",
+          "share": 0.001
+        }
+      ]
+    },
+    {
+      "label": "EMBRYONIC_NON_SPECIFIC_NEURON",
+      "granularity": "broad",
+      "scope": "embryonic",
+      "n_cells": 2867,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "whole_embryo",
+          "share": 0.869
+        },
+        {
+          "value": "Skull",
+          "share": 0.125
+        },
+        {
+          "value": "Brain",
+          "share": 0.006
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.632
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.237
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.105
+        }
+      ]
+    },
+    {
+      "label": "EMBRYONIC_NON_SPECIFIC_RADIAL_GLIA",
+      "granularity": "broad",
+      "scope": "embryonic",
+      "n_cells": 102509,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.641
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.358
+        },
+        {
+          "value": "unknown",
+          "share": 0.001
+        }
+      ]
+    },
+    {
+      "label": "ENTERIC_NEURONAL",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1324,
+      "broad_celltype": "PNS_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "Gut ",
+          "share": 0.531
+        },
+        {
+          "value": "Stomach",
+          "share": 0.466
+        },
+        {
+          "value": "whole_embryo",
+          "share": 0.002
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "HsapDv:0000052",
+          "share": 0.347
+        },
+        {
+          "value": "unknown",
+          "share": 0.25
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.153
+        }
+      ]
+    },
+    {
+      "label": "FOREBRAIN_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 29567,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.659
+        },
+        {
+          "value": "HsapDv:0000047",
+          "share": 0.239
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.089
+        }
+      ]
+    },
+    {
+      "label": "FOREBRAIN_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 68210,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.615
+        },
+        {
+          "value": "HsapDv:0000047",
+          "share": 0.229
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.156
+        }
+      ]
+    },
+    {
+      "label": "FOREBRAIN_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 18665,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.627
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.203
+        },
+        {
+          "value": "HsapDv:0000047",
+          "share": 0.17
+        }
+      ]
+    },
+    {
+      "label": "FOREBRAIN_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 70704,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.875
+        },
+        {
+          "value": "HsapDv:0000047",
+          "share": 0.067
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.058
+        }
+      ]
+    },
+    {
+      "label": "HINDBRAIN_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 17164,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.764
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.236
+        }
+      ]
+    },
+    {
+      "label": "HINDBRAIN_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 18527,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.951
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.049
+        }
+      ]
+    },
+    {
+      "label": "HINDBRAIN_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1811,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.87
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.13
+        }
+      ]
+    },
+    {
+      "label": "HINDBRAIN_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 17151,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.966
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.034
+        },
+        {
+          "value": "HsapDv:0000047",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "HIPPOCAMPUS_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 6016,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.574
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.426
+        }
+      ]
+    },
+    {
+      "label": "HIPPOCAMPUS_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 2270,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.759
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.241
+        }
+      ]
+    },
+    {
+      "label": "HIPPOCAMPUS_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1069,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.862
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.138
+        }
+      ]
+    },
+    {
+      "label": "HIPPOCAMPUS_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1223,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.96
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.04
+        }
+      ]
+    },
+    {
+      "label": "HYPOTHALAMUS_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 4787,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.983
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.017
+        }
+      ]
+    },
+    {
+      "label": "HYPOTHALAMUS_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 17863,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.947
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.053
+        }
+      ]
+    },
+    {
+      "label": "HYPOTHALAMUS_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 557,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.982
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.018
+        }
+      ]
+    },
+    {
+      "label": "HYPOTHALAMUS_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 13113,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.957
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.043
+        }
+      ]
+    },
+    {
+      "label": "MEDULLA_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 33248,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.91
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.076
+        },
+        {
+          "value": "HsapDv:0000050",
+          "share": 0.015
+        }
+      ]
+    },
+    {
+      "label": "MEDULLA_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 38333,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.935
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.062
+        },
+        {
+          "value": "HsapDv:0000050",
+          "share": 0.003
+        }
+      ]
+    },
+    {
+      "label": "MEDULLA_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1947,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.952
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.046
+        },
+        {
+          "value": "HsapDv:0000050",
+          "share": 0.002
+        }
+      ]
+    },
+    {
+      "label": "MEDULLA_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 33671,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.95
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.035
+        },
+        {
+          "value": "HsapDv:0000050",
+          "share": 0.015
+        }
+      ]
+    },
+    {
+      "label": "MIDBRAIN_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 26517,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.93
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.026
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.025
+        }
+      ]
+    },
+    {
+      "label": "MIDBRAIN_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 72766,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.84
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.084
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.059
+        }
+      ]
+    },
+    {
+      "label": "MIDBRAIN_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1439,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.987
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.005
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.005
+        }
+      ]
+    },
+    {
+      "label": "MIDBRAIN_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 81332,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.973
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.018
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.006
+        }
+      ]
+    },
+    {
+      "label": "MN",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 7984,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.687
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.313
+        },
+        {
+          "value": "unknown",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "NEURON_EXCITATORY",
+      "granularity": "broad",
+      "scope": "fetal",
+      "n_cells": 10359,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.539
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.461
+        },
+        {
+          "value": "unknown",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "NEURON_INHIBITORY",
+      "granularity": "broad",
+      "scope": "fetal",
+      "n_cells": 5202,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.531
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.467
+        },
+        {
+          "value": "HsapDv:0000052",
+          "share": 0.001
+        }
+      ]
+    },
+    {
+      "label": "NON_SPECIFIC_NEURON",
+      "granularity": "broad",
+      "scope": "fetal",
+      "n_cells": 2945,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "Skull",
+          "share": 0.799
+        },
+        {
+          "value": "Skin ",
+          "share": 0.128
+        },
+        {
+          "value": "Liver ",
+          "share": 0.059
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.495
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.488
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.01
+        }
+      ]
+    },
+    {
+      "label": "P2_NEURAL_PROGENITOR",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1732,
+      "broad_celltype": "CNS_SPINAL_PROGENITOR",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.63
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.37
+        }
+      ]
+    },
+    {
+      "label": "PA1_NEURAL_PROGENITOR",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 16815,
+      "broad_celltype": "CNS_SPINAL_PROGENITOR",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.634
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.366
+        },
+        {
+          "value": "unknown",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "PA2_NEURAL_PROGENITOR",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1064,
+      "broad_celltype": "CNS_SPINAL_PROGENITOR",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.677
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.323
+        }
+      ]
+    },
+    {
+      "label": "PA3_4_NEURAL_PROGENITOR",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 8475,
+      "broad_celltype": "CNS_SPINAL_PROGENITOR",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.77
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.23
+        }
+      ]
+    },
+    {
+      "label": "PARASYMPATHETIC_NEURONAL",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1420,
+      "broad_celltype": "PNS_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "Skull",
+          "share": 0.627
+        },
+        {
+          "value": "Heart",
+          "share": 0.35
+        },
+        {
+          "value": "Lung",
+          "share": 0.006
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.393
+        },
+        {
+          "value": "unknown",
+          "share": 0.326
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.172
+        }
+      ]
+    },
+    {
+      "label": "PHOTORECEPTORS",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 7760,
+      "broad_celltype": "AUDIOVISUAL_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.903
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.093
+        },
+        {
+          "value": "unknown",
+          "share": 0.005
+        }
+      ]
+    },
+    {
+      "label": "PMNV_NEURAL_PROGENITOR",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 2399,
+      "broad_celltype": "CNS_SPINAL_PROGENITOR",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.615
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.385
+        }
+      ]
+    },
+    {
+      "label": "PONS_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 18634,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.72
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.141
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.129
+        }
+      ]
+    },
+    {
+      "label": "PONS_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 36548,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.778
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.21
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.008
+        }
+      ]
+    },
+    {
+      "label": "PONS_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 2806,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.875
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.102
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.018
+        }
+      ]
+    },
+    {
+      "label": "PONS_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 21122,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.916
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.039
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.032
+        }
+      ]
+    },
+    {
+      "label": "RETINAL_GANGLION_CELL",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 2633,
+      "broad_celltype": "AUDIOVISUAL_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.368
+        },
+        {
+          "value": "unknown",
+          "share": 0.348
+        },
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.284
+        }
+      ]
+    },
+    {
+      "label": "RETINAL_HORIZONTAL_CELLS",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 68,
+      "broad_celltype": "AUDIOVISUAL_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.574
+        },
+        {
+          "value": "unknown",
+          "share": 0.235
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.191
+        }
+      ]
+    },
+    {
+      "label": "RETINAL_NEURAL_PROGENITOR",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 767,
+      "broad_celltype": "AUDIOVISUAL_NEUROEPITHELIUM",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.67
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.33
+        }
+      ]
+    },
+    {
+      "label": "RETINAL_PROGENITOR",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 6609,
+      "broad_celltype": "AUDIOVISUAL_NEUROEPITHELIUM",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.772
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.141
+        },
+        {
+          "value": "unknown",
+          "share": 0.086
+        }
+      ]
+    },
+    {
+      "label": "RETINAL_TRANSITIONAL_CELL_T1",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1633,
+      "broad_celltype": "AUDIOVISUAL_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.66
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.192
+        },
+        {
+          "value": "unknown",
+          "share": 0.149
+        }
+      ]
+    },
+    {
+      "label": "RETINAL_TRANSITIONAL_CELL_T2",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1018,
+      "broad_celltype": "AUDIOVISUAL_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.635
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.242
+        },
+        {
+          "value": "unknown",
+          "share": 0.124
+        }
+      ]
+    },
+    {
+      "label": "RETINAL_TRANSITIONAL_CELL_T3",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1873,
+      "broad_celltype": "AUDIOVISUAL_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.883
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.099
+        },
+        {
+          "value": "unknown",
+          "share": 0.019
+        }
+      ]
+    },
+    {
+      "label": "SCPS",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 5092,
+      "broad_celltype": "PNS_NCC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.74
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.26
+        }
+      ]
+    },
+    {
+      "label": "SENSORY_NCCS_SCPS",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 11683,
+      "broad_celltype": "PNS_NCC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "whole_embryo",
+          "share": 0.915
+        },
+        {
+          "value": "Spine",
+          "share": 0.053
+        },
+        {
+          "value": "Skin ",
+          "share": 0.023
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.712
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.203
+        },
+        {
+          "value": "unknown",
+          "share": 0.044
+        }
+      ]
+    },
+    {
+      "label": "SENSORY_NEURONAL",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 4815,
+      "broad_celltype": "PNS_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "Spine",
+          "share": 0.543
+        },
+        {
+          "value": "Skull",
+          "share": 0.428
+        },
+        {
+          "value": "Brain",
+          "share": 0.023
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.546
+        },
+        {
+          "value": "unknown",
+          "share": 0.287
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.134
+        }
+      ]
+    },
+    {
+      "label": "SENSORY_NEURONAL_EPIBRANCHIAL_PLACODE",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 841,
+      "broad_celltype": "PNS_PLACODE",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.853
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.146
+        },
+        {
+          "value": "unknown",
+          "share": 0.001
+        }
+      ]
+    },
+    {
+      "label": "SENSORY_NEURONAL_OTIC_PLACODE",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1485,
+      "broad_celltype": "PNS_PLACODE",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "whole_embryo",
+          "share": 0.51
+        },
+        {
+          "value": "Brain",
+          "share": 0.46
+        },
+        {
+          "value": "Skull",
+          "share": 0.016
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.475
+        },
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.413
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.098
+        }
+      ]
+    },
+    {
+      "label": "SENSORY_NEURONAL_PROGENITOR",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 3349,
+      "broad_celltype": "PNS_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "whole_embryo",
+          "share": 0.68
+        },
+        {
+          "value": "Skull",
+          "share": 0.181
+        },
+        {
+          "value": "Skin ",
+          "share": 0.07
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.423
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.257
+        },
+        {
+          "value": "unknown",
+          "share": 0.242
+        }
+      ]
+    },
+    {
+      "label": "STRIATUM_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 4377,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.998
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.002
+        }
+      ]
+    },
+    {
+      "label": "STRIATUM_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 49820,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.856
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.144
+        }
+      ]
+    },
+    {
+      "label": "STRIATUM_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 8981,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.669
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.331
+        }
+      ]
+    },
+    {
+      "label": "STRIATUM_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 41013,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.991
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.009
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "SUBCORTEX_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 7942,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.517
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.198
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.167
+        }
+      ]
+    },
+    {
+      "label": "SUBCORTEX_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 45144,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.267
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.248
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.23
+        }
+      ]
+    },
+    {
+      "label": "SUBCORTEX_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 16553,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.272
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.268
+        },
+        {
+          "value": "unknown",
+          "share": 0.209
+        }
+      ]
+    },
+    {
+      "label": "SUBCORTEX_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 8427,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.53
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.16
+        },
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.155
+        }
+      ]
+    },
+    {
+      "label": "SYMPATHETIC_NEURONAL",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 7533,
+      "broad_celltype": "PNS_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": [
+        {
+          "value": "Spine",
+          "share": 0.552
+        },
+        {
+          "value": "Adrenal_glands",
+          "share": 0.259
+        },
+        {
+          "value": "Skull",
+          "share": 0.075
+        }
+      ],
+      "development_stage": [
+        {
+          "value": "HsapDv:0000049",
+          "share": 0.327
+        },
+        {
+          "value": "unknown",
+          "share": 0.173
+        },
+        {
+          "value": "HsapDv:0000046",
+          "share": 0.157
+        }
+      ]
+    },
+    {
+      "label": "SYMPATHOBLASTS",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 887,
+      "broad_celltype": "PNS_SYMPATHOBLASTS",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.711
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.289
+        }
+      ]
+    },
+    {
+      "label": "T1_RGC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 651,
+      "broad_celltype": "AUDIOVISUAL_NEURONAL",
+      "germlayer": "ECTODERM",
+      "systems": "AUDIOVISUAL_SYSTEM",
+      "organ": "Retina",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.765
+        },
+        {
+          "value": "HsapDv:0000048",
+          "share": 0.195
+        },
+        {
+          "value": "HsapDv:0000054",
+          "share": 0.04
+        }
+      ]
+    },
+    {
+      "label": "TELENCEPHALON_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 404,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "TELENCEPHALON_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1429,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "TELENCEPHALON_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 332,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "TELENCEPHALON_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 4758,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "THALAMUS_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 14110,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "THALAMUS_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 30218,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.953
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.047
+        }
+      ]
+    },
+    {
+      "label": "THALAMUS_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 18478,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.882
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.118
+        }
+      ]
+    },
+    {
+      "label": "THALAMUS_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 42839,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.996
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.004
+        }
+      ]
+    },
+    {
+      "label": "V0_INTERNEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 12153,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.642
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.358
+        },
+        {
+          "value": "unknown",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "V1_INTERNEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 7504,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.639
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.361
+        }
+      ]
+    },
+    {
+      "label": "V2_INTERNEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 14854,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.581
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.419
+        },
+        {
+          "value": "unknown",
+          "share": 0.0
+        }
+      ]
+    },
+    {
+      "label": "V3_INTERNEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 4537,
+      "broad_celltype": "CNS_SPINAL_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "whole_embryo",
+      "development_stage": [
+        {
+          "value": "HsapDv:0000023",
+          "share": 0.575
+        },
+        {
+          "value": "HsapDv:0000024",
+          "share": 0.425
+        }
+      ]
+    },
+    {
+      "label": "VENTRAL_MIDBRAIN_NEUROBLAST",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 1249,
+      "broad_celltype": "CNS_NEUROBLAST",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.99
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.01
+        }
+      ]
+    },
+    {
+      "label": "VENTRAL_MIDBRAIN_NEURON",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 6963,
+      "broad_celltype": "CNS_NEURON",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.992
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.008
+        }
+      ]
+    },
+    {
+      "label": "VENTRAL_MIDBRAIN_NEURONAL_IPC",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 230,
+      "broad_celltype": "CNS_NEURONAL_IPC",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "label": "VENTRAL_MIDBRAIN_RADIAL_GLIA",
+      "granularity": "fine",
+      "scope": "fetal",
+      "n_cells": 3095,
+      "broad_celltype": "CNS_RADIAL_GLIA",
+      "germlayer": "ECTODERM",
+      "systems": "NERVOUS_SYSTEM",
+      "organ": "Brain",
+      "development_stage": [
+        {
+          "value": "unknown",
+          "share": 0.936
+        },
+        {
+          "value": "HsapDv:0000051",
+          "share": 0.064
+        }
+      ]
+    }
+  ]
+}

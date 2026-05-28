@@ -1,0 +1,11 @@
+{
+  "label": "DL1_NEURON",
+  "resolved_names": [
+    "DL1_NEURON",
+    "dI1 (Class A roof-plate-dependent commissural relay interneuron)"
+  ],
+  "scope": "fetal/embryonic (Carnegie stage 13-14, ~32-33 dpc)",
+  "tissue_context": "spinal cord (alar plate, dorsal neural tube)",
+  "confidence": "high (markers + classification match canonical literature)",
+  "evidence": "HDCA Supplementary Table 9 assigns DL1_NEURON to broad_celltype CNS_SPINAL_NEURON, systems NERVOUS_SYSTEM, CL term CL:0000540. Top gene signature (NGFR,DCX,CNTN2,ELAVL3,INA,STMN2,HOXD3,HOXA3,DCC,HOXB2,LHX9,BSCL2,NHLH1,DNER,CRABP1,DPYSL4,SNCG,ADGRG1,SHD,RGMB) matches canonical dI1 (Class A roof-plate-dependent commissural relay interneuron) markers documented in Lu 2015, Castellani 2013, Gray de Cristoforis 2020."
+}

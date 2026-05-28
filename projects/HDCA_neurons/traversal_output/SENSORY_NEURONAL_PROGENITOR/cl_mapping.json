@@ -1,0 +1,11 @@
+{
+  "label": "SENSORY_NEURONAL_PROGENITOR",
+  "cl_term": {
+    "curie": "CL:1001451",
+    "iri": "http://purl.obolibrary.org/obo/CL_1001451",
+    "label": "sensory neuron of dorsal root ganglion"
+  },
+  "match_type": "broad",
+  "new_term_needed": true,
+  "rationale": "HDCA-assigned. CL:1001451 is DRG-specific and describes the mature neuron, not a progenitor state. The HDCA cluster spans multiple ganglia and is a SIX1+/POU4F1+/TLX3+ pre-neuronal state. NTR needed for \"sensory neuron progenitor\" (anatomy-agnostic, pre-mitotic-exit)."
+}

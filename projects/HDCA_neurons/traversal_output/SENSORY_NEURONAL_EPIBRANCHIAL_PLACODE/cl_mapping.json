@@ -1,0 +1,11 @@
+{
+  "label": "SENSORY_NEURONAL_EPIBRANCHIAL_PLACODE",
+  "cl_term": {
+    "curie": "CL:0000032",
+    "iri": "http://purl.obolibrary.org/obo/CL_0000032",
+    "label": "neuroplacodal cell"
+  },
+  "match_type": "broad",
+  "new_term_needed": true,
+  "rationale": "HDCA-assigned. Same issue as otic. Cells are SIX1+/PHOX2B+/PHOX2A+ post-placodal viscerosensory neurons (geniculate/petrosal/nodose). NTR needed for \"epibranchial-derived (geniculate/petrosal/nodose) sensory neuron\"."
+}

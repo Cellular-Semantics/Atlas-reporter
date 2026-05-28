@@ -1,0 +1,11 @@
+{
+  "label": "SENSORY_NEURONAL",
+  "resolved_names": [
+    "SENSORY_NEURONAL",
+    "Sensory neuron (post-mitotic, DRG/trigeminal-type)"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "PNS_NEURONAL",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (GAP43,ISL1,SCN9A,PRPH,MAPT,CNTN2,PIEZO2,STMN2,ELAVL4,EBF1,NRXN1,GNAO1,RTN1,DCX,P...) matches canonical Sensory neuron (post-mitotic, DRG/trigeminal-type)."
+}

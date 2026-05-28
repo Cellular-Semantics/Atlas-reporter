@@ -1,0 +1,11 @@
+{
+  "label": "SENSORY_NEURONAL_PROGENITOR",
+  "resolved_names": [
+    "SENSORY_NEURONAL_PROGENITOR",
+    "Sensory neuronal progenitor (DRG / spinal sensory neurogenic precursor)"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "PNS_NEURONAL",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (SIX1,ISL1,POU4F1,DCX,ELAVL4,TLX3,GFRA1,EYA2,NHLH1,CNTN2,DLL3,SRRM4,SSTR2,PTPRF,I...) matches canonical Sensory neuronal progenitor (DRG / spinal sensory neurogenic precursor)."
+}

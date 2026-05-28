@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_HORIZONTAL_CELLS",
+  "cl_term": {
+    "curie": "CL:0000745",
+    "iri": "http://purl.obolibrary.org/obo/CL_0000745",
+    "label": "retina horizontal cell"
+  },
+  "match_type": "exact",
+  "new_term_needed": false,
+  "rationale": "ONECUT2+/PAX6+/SIX3+ horizontal cell signature \u2014 CL exact match."
+}

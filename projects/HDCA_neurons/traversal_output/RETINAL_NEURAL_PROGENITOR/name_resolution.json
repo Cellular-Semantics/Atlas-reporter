@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_NEURAL_PROGENITOR",
+  "resolved_names": [
+    "RETINAL_NEURAL_PROGENITOR",
+    "Retinal neural progenitor (committed-state neurogenic RPC)"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "AUDIOVISUAL_NEUROEPITHELIUM",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (PAX6,SOX2,SIX3,LHX2,SFRP2,FGF19,GJA1,CCL2,CYP1B1,DIO3,CLDN1,TRPM3,MYCN,MAB21L1,C...) matches canonical Retinal neural progenitor (committed-state neurogenic RPC)."
+}

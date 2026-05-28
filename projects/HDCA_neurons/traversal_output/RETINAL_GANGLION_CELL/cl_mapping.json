@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_GANGLION_CELL",
+  "cl_term": {
+    "curie": "CL:0000740",
+    "iri": "http://purl.obolibrary.org/obo/CL_0000740",
+    "label": "retinal ganglion cell"
+  },
+  "match_type": "exact",
+  "new_term_needed": false,
+  "rationale": "CL definition matches the HDCA POU4F1+/ISL1+/PAX6+/NEFL+ RGC cluster precisely."
+}

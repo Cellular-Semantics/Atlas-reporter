@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_TRANSITIONAL_CELL_T1",
+  "cl_term": {
+    "curie": "CL:0002672",
+    "iri": "http://purl.obolibrary.org/obo/CL_0002672",
+    "label": "retinal progenitor cell"
+  },
+  "match_type": "broad",
+  "new_term_needed": true,
+  "rationale": "HDCA-assigned CL:0002672 is for \"multi-fate stem cell\" \u2014 but T1 cells are NOT stem cells, they are post-mitotic-onset neurogenic intermediates. Best available: CL:0002672 broad. NTR candidate for \"retinal neurogenic transitional cell\"."
+}

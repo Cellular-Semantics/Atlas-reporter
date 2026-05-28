@@ -1,0 +1,11 @@
+{
+  "label": "BIPOLARS",
+  "cl_term": {
+    "curie": "CL:0000748",
+    "iri": "http://purl.obolibrary.org/obo/CL_0000748",
+    "label": "retinal bipolar neuron"
+  },
+  "match_type": "exact",
+  "new_term_needed": false,
+  "rationale": "HDCA assigned CL:0000103 (generic bipolar neuron); CL:0000748 is the specific retinal subterm with definition matching RORB+/NEUROD4+/RCVRN+ retinal bipolar profile. Refined from HDCA assignment."
+}

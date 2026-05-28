@@ -1,0 +1,11 @@
+{
+  "label": "PA1_NEURAL_PROGENITOR",
+  "resolved_names": [
+    "PA1_NEURAL_PROGENITOR",
+    "dp1 (roof-plate-adjacent MSX1+/MSX2+/ZIC1+ class A dorsal progenitor)"
+  ],
+  "scope": "fetal/embryonic (Carnegie stage 13-14, ~32-33 dpc)",
+  "tissue_context": "spinal cord (alar plate, dorsal neural tube)",
+  "confidence": "high (markers + classification match canonical literature)",
+  "evidence": "HDCA Supplementary Table 9 assigns PA1_NEURAL_PROGENITOR to broad_celltype CNS_SPINAL_PROGENITOR, systems NERVOUS_SYSTEM, CL term CL:4042021. Top gene signature (SOX2,ZIC1,DCX,MSX2,MSX1,DCC,BSCL2,ELAVL3,POU3F2,MAP6,ADGRG1,STMN4,SSTR2,DPYSL4,RCOR2,DLL1,LRRN1,ZIC2,RND2,DRAXIN) matches canonical dp1 (roof-plate-adjacent MSX1+/MSX2+/ZIC1+ class A dorsal progenitor) markers documented in Lu 2015, Castellani 2013, Gray de Cristoforis 2020."
+}

@@ -1,0 +1,11 @@
+{
+  "label": "SENSORY_NEURONAL_EPIBRANCHIAL_PLACODE",
+  "resolved_names": [
+    "SENSORY_NEURONAL_EPIBRANCHIAL_PLACODE",
+    "Sensory neuron, epibranchial placode-derived (geniculate/petrosal/nodose-type)"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "PNS_PLACODE",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (SIX1,PHOX2B,ISL1,EYA1,PHOX2A,CHGA,NEFL,ELAVL4,GFRA1,DCX,NEFM,TLX2,SHD,RPRM,NEURO...) matches canonical Sensory neuron, epibranchial placode-derived (geniculate/petrosal/nodose-type)."
+}

@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_NEURAL_PROGENITOR",
+  "cl_term": {
+    "curie": "CL:0002672",
+    "iri": "http://purl.obolibrary.org/obo/CL_0002672",
+    "label": "retinal progenitor cell"
+  },
+  "match_type": "narrow",
+  "new_term_needed": true,
+  "rationale": "HDCA assigned CL:0002259 (neuroepithelial stem cell) but its CL definition is glial-precursor-focused and not retinal. Better fit: CL:0002672 narrow (HDCA RNP is a committed PAX6+/LHX2+ neurogenic-biased subset of the broader RPC class). NTR candidate for \"retinal neurogenic-committed progenitor\"."
+}

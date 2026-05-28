@@ -1,0 +1,168 @@
+{
+  "markers": [
+    {
+      "gene": "TUBB3",
+      "evidence_type": "top-50 DEG (logFC=5.46, padj=1.9e-271)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TAGLN3",
+      "evidence_type": "top-50 DEG (logFC=4.41, padj=5.6e-246)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "DCX",
+      "evidence_type": "top-50 DEG (logFC=4.07, padj=7.0e-232)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CRABP1",
+      "evidence_type": "top-50 DEG (logFC=6.35, padj=4.8e-229)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CD24",
+      "evidence_type": "top-50 DEG (logFC=3.39, padj=8.5e-222)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "MAP1B",
+      "evidence_type": "top-50 DEG (logFC=3.65, padj=5.9e-221)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "GPC2",
+      "evidence_type": "top-50 DEG (logFC=3.90, padj=2.4e-220)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "PCBP4",
+      "evidence_type": "top-50 DEG (logFC=3.78, padj=8.1e-218)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "GDI1",
+      "evidence_type": "top-50 DEG (logFC=3.05, padj=4.4e-203)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "STMN2",
+      "evidence_type": "top-50 DEG (logFC=4.78, padj=1.3e-200)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TUBB2B",
+      "evidence_type": "top-50 DEG (logFC=3.69, padj=8.1e-196)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TUBA1A",
+      "evidence_type": "top-50 DEG (logFC=3.35, padj=1.2e-190)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CRMP1",
+      "evidence_type": "top-50 DEG (logFC=3.30, padj=4.7e-186)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "INA",
+      "evidence_type": "top-50 DEG (logFC=4.27, padj=1.6e-178)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "DPYSL4",
+      "evidence_type": "top-50 DEG (logFC=3.48, padj=6.9e-174)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "VAT1",
+      "evidence_type": "top-50 DEG (logFC=3.00, padj=3.4e-170)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "NREP",
+      "evidence_type": "top-50 DEG (logFC=2.27, padj=8.4e-170)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "ACTG1",
+      "evidence_type": "top-50 DEG (logFC=1.60, padj=4.6e-169)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "NGRN",
+      "evidence_type": "top-50 DEG (logFC=2.76, padj=1.5e-168)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CDKN1C",
+      "evidence_type": "top-50 DEG (logFC=3.24, padj=1.2e-167)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "MLLT11",
+      "evidence_type": "top-50 DEG (logFC=2.94, padj=3.7e-166)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "ELAVL4",
+      "evidence_type": "top-50 DEG (logFC=3.38, padj=5.0e-166)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TUBB",
+      "evidence_type": "top-50 DEG (logFC=2.07, padj=2.4e-161)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "NOVA1",
+      "evidence_type": "top-50 DEG (logFC=2.94, padj=2.2e-160)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TMEFF1",
+      "evidence_type": "top-50 DEG (logFC=3.07, padj=1.9e-155)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Top gene signature: DCX,STMN2,INA,ELAVL4,RGMB,ELAVL3,NEFL,KIF5C,TUBB4A,CNTN2,CRABP1,NEFM,ATP1A3,NHLH2,DPYSL4,ADGRG1,NHLH1,MAP6,STMN4,SCG3",
+      "category": "marker signature",
+      "source_table": "HDCA Supplementary Table 9 (HDCA cell types, ontologies and markers)"
+    },
+    {
+      "finding": "CL ontology term assigned by HDCA: CL:0000540",
+      "category": "ontology",
+      "source_table": "HDCA Supplementary Table 9"
+    },
+    {
+      "finding": "broad_celltype: CNS_SPINAL_NEURON; systems: NERVOUS_SYSTEM; germlayer: ECTODERM",
+      "category": "classification",
+      "source_table": "HDCA Supplementary Table 9"
+    },
+    {
+      "finding": "HDCA paper text contains no narrative description of DL3_NEURON or the DL/PA cluster family. The DL/PA naming is HDCA-internal terminology not inherited from Braun et al. 2023.",
+      "category": "provenance",
+      "source_table": "HDCA full text (212kB) scanned for DL[1-6], pA[1-4], dI[1-6], dorsal spinal cord \u2014 0 matches"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "DCX,STMN2,INA,ELAVL4,RGMB,ELAVL3,NEFL,KIF5C,TUBB4A,CNTN2,CRABP1,NEFM,ATP1A3,NHLH2,DPYSL4,ADGRG1,NHLH1,MAP6,STMN4,SCG3",
+      "source_file": "HDCA Supplementary Table 9",
+      "context": "Top gene signature derived from top DEGs for DL3_NEURON"
+    },
+    {
+      "quote": "DL3_NEURON (n=9,242 cells): 100% from study=whole_embryo (HDCA de novo data, CS13-14); 1 single cell from Braun et al. 2022 bioRxiv (noise <0.01%). Original author label composition: 86.4% \"DL3 neuron\", 7.6% \"sensory neuron\", 4.0% \"pA3-4 neural progenitor\", 2.0% \"pA2 neural progenitor\".",
+      "source_file": "projects/HDCA_neurons/provenance_evidence.md + label_provenance.json",
+      "context": "per-cell source attribution from HDCA v2 zarr obs cross-tab"
+    },
+    {
+      "quote": "The HDCA publication does not contain narrative discussion of the DL1-DL6 / PA1-PA4 clusters specifically; these labels appear only in Supplementary Tables 9 (markers + CL) and 16 (DEGs). The DL/PA nomenclature is HDCA-internal terminology not inherited from Braun et al. 2023, which uses Class/Subclass/Region taxonomy (Neuron/Radial glia/Neuroblast/Glioblast/Neuronal IPC) with no DL or PA labels.",
+      "source_file": "projects/HDCA_neurons/provenance_evidence.md + label_provenance.json",
+      "context": "absence-of-evidence statement from full-text + Braun S2 scan"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "label": "T1_RGC",
+  "resolved_names": [
+    "T1_RGC",
+    "T1 retinal ganglion cell (POU4F1+/CNTN2+ early-born RGC subtype)"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "AUDIOVISUAL_NEURONAL",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (PAX6,SIX3,ISL1,GAP43,PRPH,MAB21L1,CNTN2,STMN2,CRABP1,SNCG,INA,RTN1,DCX,MIAT,ELAV...) matches canonical T1 retinal ganglion cell (POU4F1+/CNTN2+ early-born RGC subtype)."
+}

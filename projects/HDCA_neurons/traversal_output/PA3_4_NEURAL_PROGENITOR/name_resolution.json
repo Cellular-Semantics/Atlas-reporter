@@ -1,0 +1,11 @@
+{
+  "label": "PA3_4_NEURAL_PROGENITOR",
+  "resolved_names": [
+    "PA3_4_NEURAL_PROGENITOR",
+    "dp3\u2013dp4 (PAX3+/ASCL1+ class A\u2013B boundary dorsal progenitor)"
+  ],
+  "scope": "fetal/embryonic (Carnegie stage 13-14, ~32-33 dpc)",
+  "tissue_context": "spinal cord (alar plate, dorsal neural tube)",
+  "confidence": "high (markers + classification match canonical literature)",
+  "evidence": "HDCA Supplementary Table 9 assigns PA3_4_NEURAL_PROGENITOR to broad_celltype CNS_SPINAL_PROGENITOR, systems NERVOUS_SYSTEM, CL term CL:4042021. Top gene signature (SOX2,PAX3,ASCL1,CXCR4,HES5,SOX9,MSX2,ZIC1,PDPN,EDNRB,IRX2,TTYH1,FZD10,POU3F2,HOXB2,HOXD4,NPPC,JAG1,LRRN1,DLL1) matches canonical dp3\u2013dp4 (PAX3+/ASCL1+ class A\u2013B boundary dorsal progenitor) markers documented in Lu 2015, Castellani 2013, Gray de Cristoforis 2020."
+}

@@ -1,0 +1,238 @@
+{
+  "markers": [
+    {
+      "gene": "MPZ",
+      "evidence_type": "top DEG (logFC=7.50, padj=1.7e-304)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "CUEDC2",
+      "evidence_type": "top DEG (logFC=3.45, padj=7.3e-272)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "PLP1",
+      "evidence_type": "top DEG (logFC=5.20, padj=3.3e-269)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "MOXD1",
+      "evidence_type": "top DEG (logFC=5.14, padj=3.3e-268)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "SPP1",
+      "evidence_type": "top DEG (logFC=5.49, padj=4.0e-260)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "NPR3",
+      "evidence_type": "top DEG (logFC=5.17, padj=1.0e-246)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "ISYNA1",
+      "evidence_type": "top DEG (logFC=3.49, padj=6.3e-241)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "SOX10",
+      "evidence_type": "top DEG (logFC=5.94, padj=6.3e-241)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "LINC01198",
+      "evidence_type": "top DEG (logFC=7.28, padj=1.0e-230)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "EGFL8",
+      "evidence_type": "top DEG (logFC=5.37, padj=2.2e-228)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "TTYH1",
+      "evidence_type": "top DEG (logFC=3.99, padj=3.5e-221)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "ERBB3",
+      "evidence_type": "top DEG (logFC=4.48, padj=1.4e-220)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "LMO4",
+      "evidence_type": "top DEG (logFC=2.99, padj=5.8e-205)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "SCRG1",
+      "evidence_type": "top DEG (logFC=4.07, padj=1.6e-203)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "TFAP2B",
+      "evidence_type": "top DEG (logFC=4.45, padj=3.0e-193)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "AIF1L",
+      "evidence_type": "top DEG (logFC=3.59, padj=6.9e-189)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "PARP1",
+      "evidence_type": "top DEG (logFC=2.32, padj=1.2e-185)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "EEF1G",
+      "evidence_type": "top DEG (logFC=2.58, padj=1.7e-182)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "CNP",
+      "evidence_type": "top DEG (logFC=3.10, padj=4.9e-178)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "PAX3",
+      "evidence_type": "top DEG (logFC=4.37, padj=6.3e-176)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "NES",
+      "evidence_type": "top DEG (logFC=3.12, padj=7.3e-176)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "NME2",
+      "evidence_type": "top DEG (logFC=2.42, padj=1.1e-175)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "EIF4A1",
+      "evidence_type": "top DEG (logFC=2.14, padj=1.7e-174)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "PHACTR3",
+      "evidence_type": "top DEG (logFC=3.64, padj=3.6e-174)",
+      "source_table": "HDCA Supp Table 16"
+    },
+    {
+      "gene": "CDK4",
+      "evidence_type": "top DEG (logFC=2.31, padj=2.2e-171)",
+      "source_table": "HDCA Supp Table 16"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "HDCA gene signature: SOX10,SOX2,MPZ,SPP1,PLP1,PAX3,ERBB3,CNP,TFAP2A,EDNRB,TFAP2B,INSC,GFRA3,NPR3,NRP2,TTYH1,POSTN,COL18A1,SCRG1,FOXD3",
+      "category": "marker signature",
+      "source_table": "HDCA Supp Table 9"
+    },
+    {
+      "finding": "HDCA-assigned CL term: CL:0002375",
+      "category": "ontology",
+      "source_table": "HDCA Supp Table 9"
+    },
+    {
+      "finding": "HDCA classification: broad_celltype=PNS_NCC, systems=NERVOUS_SYSTEM",
+      "category": "classification",
+      "source_table": "HDCA Supp Table 9"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "broad NCC (SOX10, FOXD3) compartment we observed sensory (PRDM12), autonomic (PHOX2B), and mesenchymal (PDGFRA) populations co-existing at 6PCW",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "the full repertoire of NCC-derivatives (SOX10+ glial and PRPH+ neuronal) across the embryo and placode-derived sensory neurons in cranial regions (SIX1, EYA1, PRPH)",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "applied Cell2fate153 as it outperforms existing RNA velocity models in reconstructing known cell fate trajectories",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "Multipotent sensory NCCs were predicted to progress through sensory neuronal progenitor states to form sensory neurons (CNTN2), while autonomic NCCs were predicted to develop into autonomic neuronal progenitor states (PHOX2B, ASCL1) and diverse autonomic neuronal derivatives",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "Placode- and NCC-derived states have been characterised largely in model organisms",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "These data provide the first comprehensive delineation of human PNS cell types and their lineage relationships",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "Schwann cell precursors (SCPs), Sensory NCCs/SCPs, sensory neurons, sensory neuronal progenitors, sensory neurons (epibranchial placode), sensory neurons (otic placode), Autonomic neuronal progenitors, NCC/SCP-derived progenitors, NCC/SCP-derived mesenchyme, Melanocyte precursors",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "embryonic retina was characterised by expression of ATOH7, required for retinal ganglion cell (RGC) development71; PRDM13, which specifies amacrine cell fate in mouse72; GADD45A, which characterises early neurogenic cells in mouse retina73; and TRH, which encodes thyrotropin releasing hormone",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "TRH signalling has been reported to specify cone subtypes in human retinal organoids74, and thus we provide further evidence in support of a role for TRH in the retina",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "ATOH7 (Math5), a bHLH transcription factor gene that is required for retinal ganglion cell (RGC) and optic nerve development. In humans, the absence of RGCs stimulates massive neovascular growth of fetal blood vessels in the vitreous and early retinal detachment.",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "the Prdm13 transcriptional regulator is specifically expressed in developing and mature amacrine cells in the mouse retina. Most Prdm13-positive amacrine cells are Calbindin- and Calretinin-positive GABAergic or glycinergic neurons.",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "S cones are specified first, followed by L/M cones, and thyroid hormone signaling controls this temporal switch.",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "Human retinal organoids ... recapitulate the temporal dynamics of human cone subtype specification during fetal development",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "Jansky et al. used NEFM,GAP43,STMN2,ISL1, and ALK at early stages to identify sympathoblasts ... Kameneva et al. also added PRPH, ELAVL3, ELAVL4, PHOX2B, and HAND2",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "SCPs are nerve-associated progenitors that can generate myelinating and non-myelinating Schwann cells but also are multipotent like the neural crest cells from which they originate ... early SCPs and late migratory crest cells have similar transcriptional profiles characterised by a multipotent \"hub\" state",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "differentiation tree suggested by single cell sequencing implies a series of binary cell fate decisions, with an early split into sensory neurons versus other potential neural crest fates, followed by the splitting of autonomic neuronal and mesenchymal lineages",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "the first fate split occurring between neuronal (Isl1+) and non-neuronal crest or glial fates (Sox10+ and Sox2+) ... The next major sensory fate split partitions the unmyelinated nociceptive lineage (Runx1+, Ntrk1+), followed by the separation of myelinated proprioceptive (Ntrk3+, Runx3+) and finally mechanoreceptive (Ret+, Ntrk2+) lineages",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    },
+    {
+      "quote": "SOX10,SOX2,MPZ,SPP1,PLP1,PAX3,ERBB3,CNP,TFAP2A,EDNRB,TFAP2B,INSC,GFRA3,NPR3,NRP2,TTYH1,POSTN,COL18A1,SCRG1,FOXD3",
+      "source_file": "HDCA paper / cited refs",
+      "context": ""
+    }
+  ]
+}

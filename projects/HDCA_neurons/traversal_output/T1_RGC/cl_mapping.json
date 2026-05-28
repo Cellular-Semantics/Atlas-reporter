@@ -1,0 +1,11 @@
+{
+  "label": "T1_RGC",
+  "cl_term": {
+    "curie": "CL:0000740",
+    "iri": "http://purl.obolibrary.org/obo/CL_0000740",
+    "label": "retinal ganglion cell"
+  },
+  "match_type": "narrow",
+  "new_term_needed": true,
+  "rationale": "HDCA assigned CL:0002672 (retinal progenitor cell) \u2014 but T1_RGC is a POU4F1+/CNTN2+/PRPH+ early-born RGC subtype, NOT a progenitor. Correct parent term is CL:0000740 (retinal ganglion cell). NTR candidate for \"early-born / first-wave retinal ganglion cell subtype\"."
+}

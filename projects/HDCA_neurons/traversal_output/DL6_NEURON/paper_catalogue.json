@@ -1,0 +1,83 @@
+{
+  "10.64898/2026.03.30.714220": {
+    "label": "HDCA",
+    "authors": "Webb S et al.",
+    "year": "2026",
+    "title": "An integrated single cell and spatial omics atlas of human prenatal development",
+    "venue": "bioRxiv",
+    "doi": "10.64898/2026.03.30.714220",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.30.714220v1"
+  },
+  "10.1126/science.adf1226": {
+    "label": "Braun 2023",
+    "authors": "Braun E, Danan-Gotthold M, Borm LE, et al.",
+    "year": "2023",
+    "title": "Comprehensive cell atlas of the first-trimester developing human brain",
+    "venue": "Science 382",
+    "doi": "10.1126/science.adf1226"
+  },
+  "10.3389/fnmol.2015.00025": {
+    "label": "Lu 2015",
+    "authors": "Lu DC, Niu T, Alaynick WA",
+    "year": "2015",
+    "title": "Molecular and cellular development of spinal cord locomotor circuitry",
+    "venue": "Front Mol Neurosci 8:25",
+    "doi": "10.3389/fnmol.2015.00025"
+  },
+  "10.1186/s13041-020-00623-3": {
+    "label": "Gray de Cristoforis 2020",
+    "authors": "Gray de Cristoforis A, Ferrari F, Clotman F, Vogel T",
+    "year": "2020",
+    "title": "Differentiation and localization of interneurons in the developing spinal cord depends on DOT1L expression",
+    "venue": "Mol Brain 13:85",
+    "doi": "10.1186/s13041-020-00623-3"
+  },
+  "10.1155/2013/315387": {
+    "label": "Castellani 2013",
+    "authors": "Castellani V",
+    "year": "2013",
+    "title": "Building Spinal and Brain Commissures: Axon Guidance at the Midline",
+    "venue": "ISRN Cell Biol 2013:315387",
+    "doi": "10.1155/2013/315387"
+  },
+  "10.1186/1749-8104-4-13": {
+    "label": "Avraham 2009",
+    "authors": "Avraham O, Hadas Y, Vald L, et al.",
+    "year": "2009",
+    "title": "Transcriptional control of axonal guidance and sorting in dorsal interneurons by the Lim-HD proteins Lhx9 and Lhx1",
+    "venue": "Neural Dev 4:21",
+    "doi": "10.1186/1749-8104-4-13"
+  },
+  "10.1186/s12915-016-0227-8": {
+    "label": "Juarez-Morales 2016",
+    "authors": "Ju\u00e1rez-Morales JL, Schulte CJ, Pezoa SA, et al.",
+    "year": "2016",
+    "title": "Evx1 and Evx2 specify excitatory neurotransmitter fates and suppress inhibitory fates through a Pax2-independent mechanism",
+    "venue": "Neural Dev 11:5",
+    "doi": "10.1186/s12915-016-0227-8"
+  },
+  "10.1186/s13619-021-00091-7": {
+    "label": "Wang 2021",
+    "authors": "Wang Y-F, Liu C, Xu P-F",
+    "year": "2021",
+    "title": "Deciphering and reconstitution of positional information in the human brain development",
+    "venue": "Cell Regen 10:29",
+    "doi": "10.1186/s13619-021-00091-7"
+  },
+  "10.1016/j.stemcr.2018.02.013": {
+    "label": "Gupta 2018",
+    "authors": "Gupta S, Sivalingam D, Hain S, et al.",
+    "year": "2018",
+    "title": "Deriving Dorsal Spinal Sensory Interneurons from Human Pluripotent Stem Cells",
+    "venue": "Stem Cell Rep 10:390-405",
+    "doi": "10.1016/j.stemcr.2018.02.013"
+  },
+  "10.1242/dev.198309": {
+    "label": "Rayon 2021",
+    "authors": "Rayon T, Maizels RJ, Barrington C, Briscoe J",
+    "year": "2021",
+    "title": "Single-cell transcriptome profiling of the human developing spinal cord reveals a conserved genetic programme with human-specific features",
+    "venue": "Development 148:dev199711",
+    "doi": "10.1242/dev.198309"
+  }
+}

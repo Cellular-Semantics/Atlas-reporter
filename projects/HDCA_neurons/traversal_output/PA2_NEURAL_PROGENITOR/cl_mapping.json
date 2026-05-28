@@ -1,0 +1,11 @@
+{
+  "label": "PA2_NEURAL_PROGENITOR",
+  "cl_term": {
+    "iri": "http://purl.obolibrary.org/obo/CL_0011020",
+    "curie": "CL:0011020",
+    "label": "neural progenitor cell"
+  },
+  "match_type": "broad",
+  "new_term_needed": true,
+  "rationale": "NTR candidate for \"dp2 dorsal spinal progenitor\"."
+}

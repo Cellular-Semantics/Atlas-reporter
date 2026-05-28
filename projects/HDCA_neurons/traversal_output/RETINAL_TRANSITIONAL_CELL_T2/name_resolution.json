@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_TRANSITIONAL_CELL_T2",
+  "resolved_names": [
+    "RETINAL_TRANSITIONAL_CELL_T2",
+    "Retinal transitional cell, type 2"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "AUDIOVISUAL_NEURONAL",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (RORB,CRABP1...) matches canonical Retinal transitional cell, type 2."
+}

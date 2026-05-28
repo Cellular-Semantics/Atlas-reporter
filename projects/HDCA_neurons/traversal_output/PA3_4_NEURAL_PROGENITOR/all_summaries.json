@@ -1,0 +1,55 @@
+[
+  {
+    "doi": "10.64898/2026.03.30.714220",
+    "quotes": [
+      "SOX2,PAX3,ASCL1,CXCR4,HES5,SOX9,MSX2,ZIC1,PDPN,EDNRB,IRX2,TTYH1,FZD10,POU3F2,HOXB2,HOXD4,NPPC,JAG1,LRRN1,DLL1",
+      "Central nervous system cells retained the original fine-grained annotations from Braun et al., as these annotations were informed by spatial context"
+    ]
+  },
+  {
+    "doi": "10.3389/fnmol.2015.00025",
+    "quotes": [
+      "The roof-plate independent Class B dI6 commissural inhibitory interneurons express Lbx1, Lhx1, Lhx5, and are Pax2 positive, indicating a GABAergic fate",
+      "These cells may also use glycine for neurotransmission",
+      "Dmrt3, a novel marker in dl6 interneuron was traced to play a key role in locomotor circuitry and in development of commissural interneurons"
+    ]
+  },
+  {
+    "doi": "10.1186/s13041-020-00623-3",
+    "quotes": [
+      "The dorsal-most interneuron class, dI1, is characterized by expression of Lhx2 and Lhx9.",
+      "Lbx1 is essential for the specification and migration of the Class B neurons dI4-6 in the E12.5 neural tube",
+      "dI4/6 are inhibitory GABAergic neuronal types, utilizing GABA as a neurotransmitter, whilst Lmx1b-expressing dI5 is glutamatergic, utilizing VGLUT2 as a neurotransmitter"
+    ]
+  },
+  {
+    "doi": "10.1155/2013/315387",
+    "quotes": [
+      "Dl1 neurons are generated from a pool of progenitor cells expressing Math1, and can be identified by two LIM transcription factors, Lhx2 and Lhx9."
+    ]
+  },
+  {
+    "doi": "10.1186/1749-8104-4-13",
+    "quotes": [
+      "The Lim-HD proteins Lhx9 and Lhx1 serve as a binary switch in controlling the rostral versus caudal longitudinal turning of the caudal commissural axons. Lhx1 determines caudal turning and Lhx9 triggers rostral turning."
+    ]
+  },
+  {
+    "doi": "10.1186/s12915-016-0227-8",
+    "quotes": [
+      "Tlx1 and Tlx3, that are required for the specification of excitatory (glutamatergic) fates and these are only expressed in dorsal dI3, dI5 and DIL B cells"
+    ]
+  },
+  {
+    "doi": "10.1186/s13619-021-00091-7",
+    "quotes": [
+      "The dorsal part contains six dorsal progenitor (dP) domains (dP1-dP6) and then differentiate into the dorsal interneuron (dI) populations (dI1-dI6)."
+    ]
+  },
+  {
+    "doi": "10.1016/j.stemcr.2018.02.013",
+    "quotes": [
+      "the dP1 and dP3-5 domains express Atoh1 (arrowheads, B) and Ascl1 (arrowheads, C), respectively, in the E11.5 mouse embryo. The dP1 cells give rise to Lhx2 + dI1s while Isl1 + dI3s emerge from the dP3-5 population."
+    ]
+  }
+]

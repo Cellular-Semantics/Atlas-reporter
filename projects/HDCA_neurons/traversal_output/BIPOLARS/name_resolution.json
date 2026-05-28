@@ -1,0 +1,11 @@
+{
+  "label": "BIPOLARS",
+  "resolved_names": [
+    "BIPOLARS",
+    "Retinal bipolar cell"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "AUDIOVISUAL_NEURONAL",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (RORB,RCVRN,NEUROD4,GNB3,UNC119,CA10,SYT1,SNAP25,SYP,TUBB2B,MLLT11,MAB21L1,FSTL5,...) matches canonical Retinal bipolar cell."
+}

@@ -1,0 +1,153 @@
+{
+  "markers": [
+    {
+      "gene": "TUBB3",
+      "evidence_type": "top-50 DEG (logFC=5.68, padj=3.1e-283)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "MAP1B",
+      "evidence_type": "top-50 DEG (logFC=4.15, padj=1.2e-266)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CRMP1",
+      "evidence_type": "top-50 DEG (logFC=4.02, padj=4.4e-256)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TAGLN3",
+      "evidence_type": "top-50 DEG (logFC=4.46, padj=1.3e-252)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TUBB2B",
+      "evidence_type": "top-50 DEG (logFC=4.13, padj=7.7e-246)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TUBA1A",
+      "evidence_type": "top-50 DEG (logFC=3.89, padj=1.9e-242)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "GDI1",
+      "evidence_type": "top-50 DEG (logFC=3.25, padj=1.3e-232)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "GPC2",
+      "evidence_type": "top-50 DEG (logFC=3.86, padj=1.3e-227)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "STMN2",
+      "evidence_type": "top-50 DEG (logFC=5.17, padj=1.6e-225)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CD24",
+      "evidence_type": "top-50 DEG (logFC=3.34, padj=1.5e-219)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "DCX",
+      "evidence_type": "top-50 DEG (logFC=3.81, padj=4.5e-218)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "VAT1",
+      "evidence_type": "top-50 DEG (logFC=3.33, padj=4.7e-217)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "INA",
+      "evidence_type": "top-50 DEG (logFC=4.67, padj=1.2e-212)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TUBB",
+      "evidence_type": "top-50 DEG (logFC=2.35, padj=1.2e-210)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CRABP1",
+      "evidence_type": "top-50 DEG (logFC=5.99, padj=4.3e-209)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "APLP1",
+      "evidence_type": "top-50 DEG (logFC=3.64, padj=1.4e-201)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TUBB2A",
+      "evidence_type": "top-50 DEG (logFC=3.45, padj=3.2e-201)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TMEFF1",
+      "evidence_type": "top-50 DEG (logFC=3.34, padj=8.0e-200)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "MLLT11",
+      "evidence_type": "top-50 DEG (logFC=3.26, padj=1.2e-197)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "DPYSL4",
+      "evidence_type": "top-50 DEG (logFC=3.57, padj=1.8e-197)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "NGRN",
+      "evidence_type": "top-50 DEG (logFC=2.87, padj=1.9e-197)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "PCBP4",
+      "evidence_type": "top-50 DEG (logFC=3.43, padj=8.6e-197)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "ELAVL3",
+      "evidence_type": "top-50 DEG (logFC=3.51, padj=5.5e-193)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "KIF5C",
+      "evidence_type": "top-50 DEG (logFC=3.58, padj=1.0e-185)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TLCD3B",
+      "evidence_type": "top-50 DEG (logFC=3.92, padj=3.9e-183)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Top gene signature: DCX,NGFR,INA,CNTN2,STMN2,ELAVL3,HOXD3,HOXB2,HOXA3,POU2F2,SNCG,CRABP1,MAP6,TUBB4A,KIF5C,DPYSL4,INSM1,NHLH1,SHD,STMN4",
+      "category": "marker signature",
+      "source_table": "HDCA Supplementary Table 9 (HDCA cell types, ontologies and markers)"
+    },
+    {
+      "finding": "CL ontology term assigned by HDCA: CL:0000540",
+      "category": "ontology",
+      "source_table": "HDCA Supplementary Table 9"
+    },
+    {
+      "finding": "broad_celltype: CNS_SPINAL_NEURON; systems: NERVOUS_SYSTEM; germlayer: ECTODERM",
+      "category": "classification",
+      "source_table": "HDCA Supplementary Table 9"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "DCX,NGFR,INA,CNTN2,STMN2,ELAVL3,HOXD3,HOXB2,HOXA3,POU2F2,SNCG,CRABP1,MAP6,TUBB4A,KIF5C,DPYSL4,INSM1,NHLH1,SHD,STMN4",
+      "source_file": "HDCA Supplementary Table 9",
+      "context": "Top gene signature derived from top DEGs for DL2_NEURON"
+    }
+  ]
+}

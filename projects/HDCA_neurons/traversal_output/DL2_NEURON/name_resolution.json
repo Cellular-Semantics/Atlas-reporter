@@ -1,0 +1,11 @@
+{
+  "label": "DL2_NEURON",
+  "resolved_names": [
+    "DL2_NEURON",
+    "dI2 (Class A roof-plate-dependent commissural interneuron)"
+  ],
+  "scope": "fetal/embryonic (Carnegie stage 13-14, ~32-33 dpc)",
+  "tissue_context": "spinal cord (alar plate, dorsal neural tube)",
+  "confidence": "high (markers + classification match canonical literature)",
+  "evidence": "HDCA Supplementary Table 9 assigns DL2_NEURON to broad_celltype CNS_SPINAL_NEURON, systems NERVOUS_SYSTEM, CL term CL:0000540. Top gene signature (DCX,NGFR,INA,CNTN2,STMN2,ELAVL3,HOXD3,HOXB2,HOXA3,POU2F2,SNCG,CRABP1,MAP6,TUBB4A,KIF5C,DPYSL4,INSM1,NHLH1,SHD,STMN4) matches canonical dI2 (Class A roof-plate-dependent commissural interneuron) markers documented in Lu 2015, Castellani 2013, Gray de Cristoforis 2020."
+}

@@ -1,0 +1,11 @@
+{
+  "label": "SENSORY_NEURONAL_OTIC_PLACODE",
+  "resolved_names": [
+    "SENSORY_NEURONAL_OTIC_PLACODE",
+    "Sensory neuron, otic placode-derived (statoacoustic/cochleovestibular neuron)"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "PNS_PLACODE",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (SIX1,ISL1,EYA1,DCX,GAP43,ELAVL4,POU4F1,FOXG1,SNCG,NEFL,FGF10,NEFM,STMN2,NRXN1,EY...) matches canonical Sensory neuron, otic placode-derived (statoacoustic/cochleovestibular neuron)."
+}

@@ -1,0 +1,11 @@
+{
+  "label": "PA1_NEURAL_PROGENITOR",
+  "cl_term": {
+    "iri": "http://purl.obolibrary.org/obo/CL_0011020",
+    "curie": "CL:0011020",
+    "label": "neural progenitor cell"
+  },
+  "match_type": "broad",
+  "new_term_needed": true,
+  "rationale": "No CL term for dp1 (roof-plate adjacent dorsal spinal cord progenitor). HDCA Table 9 uses CL:4042021. NTR candidate for \"dorsal spinal cord neural progenitor (dp1)\"."
+}

@@ -1,0 +1,11 @@
+{
+  "label": "AMACRINE_CELL",
+  "cl_term": {
+    "curie": "CL:0000561",
+    "iri": "http://purl.obolibrary.org/obo/CL_0000561",
+    "label": "amacrine cell"
+  },
+  "match_type": "exact",
+  "new_term_needed": false,
+  "rationale": "PAX6+/ISL1+/SIX3+ amacrine signature \u2014 CL exact match."
+}

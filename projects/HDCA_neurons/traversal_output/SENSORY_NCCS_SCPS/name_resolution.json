@@ -1,0 +1,11 @@
+{
+  "label": "SENSORY_NCCS_SCPS",
+  "resolved_names": [
+    "SENSORY_NCCS_SCPS",
+    "Sensory NCC/SCP (sensory-committed neural crest / Schwann-cell precursor state)"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "PNS_NCC",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (SOX10,SOX2,MPZ,SPP1,PLP1,PAX3,ERBB3,CNP,TFAP2A,EDNRB,TFAP2B,INSC,GFRA3,NPR3,NRP2...) matches canonical Sensory NCC/SCP (sensory-committed neural crest / Schwann-cell precursor state)."
+}

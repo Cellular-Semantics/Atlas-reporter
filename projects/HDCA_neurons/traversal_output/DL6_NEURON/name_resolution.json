@@ -1,0 +1,11 @@
+{
+  "label": "DL6_NEURON",
+  "resolved_names": [
+    "DL6_NEURON",
+    "dI6 (Class B Lbx1+/Pax2+ GABAergic commissural inhibitory interneuron)"
+  ],
+  "scope": "fetal/embryonic (Carnegie stage 13-14, ~32-33 dpc)",
+  "tissue_context": "spinal cord (alar plate, dorsal neural tube)",
+  "confidence": "high (markers + classification match canonical literature)",
+  "evidence": "HDCA Supplementary Table 9 assigns DL6_NEURON to broad_celltype CNS_SPINAL_NEURON, systems NERVOUS_SYSTEM, CL term CL:0000540. Top gene signature (DCX,PAX2,INA,STMN2,NEFL,TUBB4A,DNER,KIF5C,ELAVL4,ATP1A3,RAB3A,L1CAM,ENO2,HOXB2,SLIT1,GAD2,NEFM,RTN1,GNG3,HOXD3) matches canonical dI6 (Class B Lbx1+/Pax2+ GABAergic commissural inhibitory interneuron) markers documented in Lu 2015, Castellani 2013, Gray de Cristoforis 2020."
+}

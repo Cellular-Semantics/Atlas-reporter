@@ -1,0 +1,11 @@
+{
+  "label": "SENSORY_NEURONAL_OTIC_PLACODE",
+  "cl_term": {
+    "curie": "CL:0000032",
+    "iri": "http://purl.obolibrary.org/obo/CL_0000032",
+    "label": "neuroplacodal cell"
+  },
+  "match_type": "broad",
+  "new_term_needed": true,
+  "rationale": "HDCA-assigned. CL:0000032 describes the placodal *ectoderm*, not the differentiated sensory neuron derived from it. HDCA cells are POU4F1+/EYA1+/SIX1+ delaminated post-placodal sensory neurons. Better stop-gap match would be CL:0000101 (sensory neuron) \u2014 broad. NTR needed for \"otic-placode-derived sensory neuron / cochleovestibular sensory neuron\"."
+}

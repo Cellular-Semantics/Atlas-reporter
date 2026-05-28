@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_TRANSITIONAL_CELL_T1",
+  "resolved_names": [
+    "RETINAL_TRANSITIONAL_CELL_T1",
+    "Retinal transitional cell, type 1 (neurogenic precursor \u2192 RGC/cone bias)"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "AUDIOVISUAL_NEURONAL",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (SPP1,RORB,RGS16,MAB21L1,CRABP1,MIAT...) matches canonical Retinal transitional cell, type 1 (neurogenic precursor \u2192 RGC/cone bias)."
+}

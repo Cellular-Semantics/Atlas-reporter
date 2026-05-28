@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_HORIZONTAL_CELLS",
+  "resolved_names": [
+    "RETINAL_HORIZONTAL_CELLS",
+    "Retinal horizontal cell"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "AUDIOVISUAL_NEURONAL",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (PAX6,SIX3,RORB,ONECUT2,MAB21L1,STMN2,RTN1,CRABP1...) matches canonical Retinal horizontal cell."
+}

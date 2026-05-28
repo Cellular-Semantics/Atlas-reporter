@@ -1,0 +1,153 @@
+{
+  "markers": [
+    {
+      "gene": "NES",
+      "evidence_type": "top-50 DEG (logFC=4.40, padj=9.2e-258)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "SOX2",
+      "evidence_type": "top-50 DEG (logFC=5.69, padj=7.4e-257)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CKB",
+      "evidence_type": "top-50 DEG (logFC=4.00, padj=1.8e-255)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "PAX3",
+      "evidence_type": "top-50 DEG (logFC=5.68, padj=5.6e-252)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TTYH1",
+      "evidence_type": "top-50 DEG (logFC=3.99, padj=3.7e-193)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "ASCL1",
+      "evidence_type": "top-50 DEG (logFC=4.43, padj=1.1e-188)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CCND1",
+      "evidence_type": "top-50 DEG (logFC=3.19, padj=6.5e-185)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "RND2",
+      "evidence_type": "top-50 DEG (logFC=3.99, padj=4.7e-184)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "HMGA1",
+      "evidence_type": "top-50 DEG (logFC=2.68, padj=3.9e-174)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "VIM",
+      "evidence_type": "top-50 DEG (logFC=3.08, padj=9.0e-167)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "TUBB",
+      "evidence_type": "top-50 DEG (logFC=1.99, padj=8.1e-149)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "HOXB2",
+      "evidence_type": "top-50 DEG (logFC=3.33, padj=8.4e-149)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "ARL4A",
+      "evidence_type": "top-50 DEG (logFC=2.77, padj=1.8e-147)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "IRX2",
+      "evidence_type": "top-50 DEG (logFC=3.42, padj=7.1e-145)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "FDFT1",
+      "evidence_type": "top-50 DEG (logFC=2.14, padj=2.0e-143)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "NRARP",
+      "evidence_type": "top-50 DEG (logFC=4.07, padj=5.6e-143)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "NPPC",
+      "evidence_type": "top-50 DEG (logFC=4.68, padj=9.0e-143)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "ZIC1",
+      "evidence_type": "top-50 DEG (logFC=3.94, padj=8.4e-140)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "CXCR4",
+      "evidence_type": "top-50 DEG (logFC=2.91, padj=2.9e-138)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "FZD10",
+      "evidence_type": "top-50 DEG (logFC=5.19, padj=4.1e-138)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "HES5",
+      "evidence_type": "top-50 DEG (logFC=4.64, padj=5.4e-137)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "PDPN",
+      "evidence_type": "top-50 DEG (logFC=3.17, padj=1.8e-136)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "SYT11",
+      "evidence_type": "top-50 DEG (logFC=2.76, padj=1.8e-136)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "HNRNPA2B1",
+      "evidence_type": "top-50 DEG (logFC=1.22, padj=2.9e-135)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    },
+    {
+      "gene": "LRRN1",
+      "evidence_type": "top-50 DEG (logFC=2.88, padj=3.4e-135)",
+      "source_table": "HDCA Supplementary Table 16 (Top 50 DEGs per refined celltype)"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Top gene signature: SOX2,PAX3,ASCL1,CXCR4,HES5,SOX9,MSX2,ZIC1,PDPN,EDNRB,IRX2,TTYH1,FZD10,POU3F2,HOXB2,HOXD4,NPPC,JAG1,LRRN1,DLL1",
+      "category": "marker signature",
+      "source_table": "HDCA Supplementary Table 9 (HDCA cell types, ontologies and markers)"
+    },
+    {
+      "finding": "CL ontology term assigned by HDCA: CL:4042021",
+      "category": "ontology",
+      "source_table": "HDCA Supplementary Table 9"
+    },
+    {
+      "finding": "broad_celltype: CNS_SPINAL_PROGENITOR; systems: NERVOUS_SYSTEM; germlayer: ECTODERM",
+      "category": "classification",
+      "source_table": "HDCA Supplementary Table 9"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "SOX2,PAX3,ASCL1,CXCR4,HES5,SOX9,MSX2,ZIC1,PDPN,EDNRB,IRX2,TTYH1,FZD10,POU3F2,HOXB2,HOXD4,NPPC,JAG1,LRRN1,DLL1",
+      "source_file": "HDCA Supplementary Table 9",
+      "context": "Top gene signature derived from top DEGs for PA3_4_NEURAL_PROGENITOR"
+    }
+  ]
+}

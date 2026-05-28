@@ -1,0 +1,60 @@
+[
+  {
+    "doi": "10.64898/2026.03.30.714220",
+    "quotes": [
+      "broad NCC (SOX10, FOXD3) compartment we observed sensory (PRDM12), autonomic (PHOX2B), and mesenchymal (PDGFRA) populations co-existing at 6PCW",
+      "the full repertoire of NCC-derivatives (SOX10+ glial and PRPH+ neuronal) across the embryo and placode-derived sensory neurons in cranial regions (SIX1, EYA1, PRPH)",
+      "applied Cell2fate153 as it outperforms existing RNA velocity models in reconstructing known cell fate trajectories",
+      "Multipotent sensory NCCs were predicted to progress through sensory neuronal progenitor states to form sensory neurons (CNTN2), while autonomic NCCs were predicted to develop into autonomic neuronal progenitor states (PHOX2B, ASCL1) and diverse autonomic neuronal derivatives",
+      "Placode- and NCC-derived states have been characterised largely in model organisms",
+      "These data provide the first comprehensive delineation of human PNS cell types and their lineage relationships",
+      "Schwann cell precursors (SCPs), Sensory NCCs/SCPs, sensory neurons, sensory neuronal progenitors, sensory neurons (epibranchial placode), sensory neurons (otic placode), Autonomic neuronal progenitors, NCC/SCP-derived progenitors, NCC/SCP-derived mesenchyme, Melanocyte precursors",
+      "embryonic retina was characterised by expression of ATOH7, required for retinal ganglion cell (RGC) development71; PRDM13, which specifies amacrine cell fate in mouse72; GADD45A, which characterises early neurogenic cells in mouse retina73; and TRH, which encodes thyrotropin releasing hormone",
+      "TRH signalling has been reported to specify cone subtypes in human retinal organoids74, and thus we provide further evidence in support of a role for TRH in the retina",
+      "RCVRN,NRL,GNB3,AIPL1,FABP7"
+    ]
+  },
+  {
+    "doi": "10.1038/nn.2776",
+    "quotes": [
+      "ATOH7 (Math5), a bHLH transcription factor gene that is required for retinal ganglion cell (RGC) and optic nerve development. In humans, the absence of RGCs stimulates massive neovascular growth of fetal blood vessels in the vitreous and early retinal detachment."
+    ]
+  },
+  {
+    "doi": "10.1523/JNEUROSCI.0089-15.2015",
+    "quotes": [
+      "the Prdm13 transcriptional regulator is specifically expressed in developing and mature amacrine cells in the mouse retina. Most Prdm13-positive amacrine cells are Calbindin- and Calretinin-positive GABAergic or glycinergic neurons."
+    ]
+  },
+  {
+    "doi": "10.1126/science.aau6348",
+    "quotes": [
+      "S cones are specified first, followed by L/M cones, and thyroid hormone signaling controls this temporal switch.",
+      "Human retinal organoids ... recapitulate the temporal dynamics of human cone subtype specification during fetal development"
+    ]
+  },
+  {
+    "doi": "10.1038/s41588-021-00818-x",
+    "quotes": [
+      "Jansky et al. used NEFM,GAP43,STMN2,ISL1, and ALK at early stages to identify sympathoblasts ... Kameneva et al. also added PRPH, ELAVL3, ELAVL4, PHOX2B, and HAND2"
+    ]
+  },
+  {
+    "doi": "10.15252/embj.2021108780",
+    "quotes": [
+      "SCPs are nerve-associated progenitors that can generate myelinating and non-myelinating Schwann cells but also are multipotent like the neural crest cells from which they originate ... early SCPs and late migratory crest cells have similar transcriptional profiles characterised by a multipotent \"hub\" state"
+    ]
+  },
+  {
+    "doi": "10.1126/science.aas9536",
+    "quotes": [
+      "differentiation tree suggested by single cell sequencing implies a series of binary cell fate decisions, with an early split into sensory neurons versus other potential neural crest fates, followed by the splitting of autonomic neuronal and mesenchymal lineages"
+    ]
+  },
+  {
+    "doi": "10.1186/s13064-022-00163-7",
+    "quotes": [
+      "the first fate split occurring between neuronal (Isl1+) and non-neuronal crest or glial fates (Sox10+ and Sox2+) ... The next major sensory fate split partitions the unmyelinated nociceptive lineage (Runx1+, Ntrk1+), followed by the separation of myelinated proprioceptive (Ntrk3+, Runx3+) and finally mechanoreceptive (Ret+, Ntrk2+) lineages"
+    ]
+  }
+]

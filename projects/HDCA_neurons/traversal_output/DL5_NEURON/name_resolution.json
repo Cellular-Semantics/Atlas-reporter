@@ -1,0 +1,11 @@
+{
+  "label": "DL5_NEURON",
+  "resolved_names": [
+    "DL5_NEURON",
+    "dI5 (Class B Lbx1+/Lmx1b+ glutamatergic interneuron)"
+  ],
+  "scope": "fetal/embryonic (Carnegie stage 13-14, ~32-33 dpc)",
+  "tissue_context": "spinal cord (alar plate, dorsal neural tube)",
+  "confidence": "high (markers + classification match canonical literature)",
+  "evidence": "HDCA Supplementary Table 9 assigns DL5_NEURON to broad_celltype CNS_SPINAL_NEURON, systems NERVOUS_SYSTEM, CL term CL:0000540. Top gene signature (ASCL1,PAX3,TFAP2A,INSM1,TFAP2B,DLL3,HOXB2,TOX3,MIAT,HOXD3,RCOR2,ADGRG1,SRRM4,HOXA3,ELAVL3,IRX2,GADD45G,NHLH1,DPYSL4,DCX) matches canonical dI5 (Class B Lbx1+/Lmx1b+ glutamatergic interneuron) markers documented in Lu 2015, Castellani 2013, Gray de Cristoforis 2020."
+}

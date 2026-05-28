@@ -1,0 +1,11 @@
+{
+  "label": "SENSORY_NCCS_SCPS",
+  "cl_term": {
+    "curie": "CL:0002375",
+    "iri": "http://purl.obolibrary.org/obo/CL_0002375",
+    "label": "Schwann cell precursor"
+  },
+  "match_type": "broad",
+  "new_term_needed": true,
+  "rationale": "HDCA-assigned. The sensory-committed SCP state (PAX3+, SOX2+, GFRA3+) sits as a transcriptionally biased subset of SCP \u2014 no CL term distinguishes lineage-biased SCP subsets."
+}

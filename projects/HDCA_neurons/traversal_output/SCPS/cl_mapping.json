@@ -1,0 +1,11 @@
+{
+  "label": "SCPS",
+  "cl_term": {
+    "curie": "CL:0002375",
+    "iri": "http://purl.obolibrary.org/obo/CL_0002375",
+    "label": "Schwann cell precursor"
+  },
+  "match_type": "exact",
+  "new_term_needed": false,
+  "rationale": "CL definition (\"multipotent progenitor cell that develops from a migratory neural crest cell ... lacks a basal lamina\") matches HDCA SOX10+/PLP1+/ERBB3+/MPZ+ cluster precisely."
+}

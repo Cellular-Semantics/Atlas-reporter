@@ -1,0 +1,106 @@
+{
+  "10.64898/2026.03.30.714220": {
+    "label": "HDCA",
+    "authors": "Webb S et al.",
+    "year": "2026",
+    "title": "An integrated single cell and spatial omics atlas of human prenatal development",
+    "venue": "bioRxiv",
+    "doi": "10.64898/2026.03.30.714220"
+  },
+  "10.1126/science.adf1226": {
+    "label": "Braun 2023",
+    "authors": "Braun E et al.",
+    "year": "2023",
+    "title": "Comprehensive cell atlas of the first-trimester developing human brain",
+    "venue": "Science 382",
+    "doi": "10.1126/science.adf1226"
+  },
+  "10.1038/nn.2776": {
+    "label": "Ghiasvand 2011",
+    "authors": "Ghiasvand NM et al.",
+    "year": "2011",
+    "title": "Deletion of a remote enhancer near ATOH7 disrupts retinal neurogenesis, causing NCRNA disease",
+    "venue": "Nat Neurosci 14",
+    "doi": "10.1038/nn.2776"
+  },
+  "10.1523/JNEUROSCI.0089-15.2015": {
+    "label": "Watanabe 2015",
+    "authors": "Watanabe S et al.",
+    "year": "2015",
+    "title": "Prdm13 Regulates Subtype Specification of Retinal Amacrine Interneurons and Modulates Visual Sensitivity",
+    "venue": "J Neurosci 35",
+    "doi": "10.1523/JNEUROSCI.0089-15.2015"
+  },
+  "10.1016/j.neuron.2019.04.010": {
+    "label": "Clark 2019",
+    "authors": "Clark BS et al.",
+    "year": "2019",
+    "title": "Single-Cell RNA-Seq Analysis of Retinal Development Identifies NFI Factors as Regulating Mitotic Exit and Late-Born Cell Specification",
+    "venue": "Neuron 102",
+    "doi": "10.1016/j.neuron.2019.04.010"
+  },
+  "10.1126/science.aau6348": {
+    "label": "Eldred 2018",
+    "authors": "Eldred KC et al.",
+    "year": "2018",
+    "title": "Thyroid hormone signaling specifies cone subtypes in human retinal organoids",
+    "venue": "Science 362",
+    "doi": "10.1126/science.aau6348"
+  },
+  "10.1126/science.aas9536": {
+    "label": "Soldatov 2019",
+    "authors": "Soldatov R et al.",
+    "year": "2019",
+    "title": "Spatiotemporal structure of cell fate decisions in murine neural crest",
+    "venue": "Science 364",
+    "doi": "10.1126/science.aas9536"
+  },
+  "10.1038/s41588-021-00818-x": {
+    "label": "Kameneva 2021",
+    "authors": "Kameneva P et al.",
+    "year": "2021",
+    "title": "Single-cell transcriptomics of human embryos identifies multiple sympathoblast lineages with potential implications for neuroblastoma origin",
+    "venue": "Nat Genet 53",
+    "doi": "10.1038/s41588-021-00818-x"
+  },
+  "10.15252/embj.2021108780": {
+    "label": "Kastriti 2022",
+    "authors": "Kastriti ME et al.",
+    "year": "2022",
+    "title": "Schwann cell precursors represent a neural crest-like state with biased multipotency",
+    "venue": "EMBO J 41",
+    "doi": "10.15252/embj.2021108780"
+  },
+  "10.1016/j.cell.2024.10.023": {
+    "label": "Lu 2024",
+    "authors": "Lu T et al.",
+    "year": "2024",
+    "title": "Decoding transcriptional identity in developing human sensory neurons and organoid modeling",
+    "venue": "Cell 187",
+    "doi": "10.1016/j.cell.2024.10.023"
+  },
+  "10.1016/j.celrep.2019.04.096": {
+    "label": "Kupari 2019",
+    "authors": "Kupari J et al.",
+    "year": "2019",
+    "title": "An Atlas of Vagal Sensory Neurons and Their Molecular Specialization",
+    "venue": "Cell Rep 27",
+    "doi": "10.1016/j.celrep.2019.04.096"
+  },
+  "10.1038/s41587-022-01624-4": {
+    "label": "Aivazidis 2025",
+    "authors": "Aivazidis A et al.",
+    "year": "2025",
+    "title": "Cell2fate infers RNA velocity modules to improve cell fate prediction",
+    "venue": "Nat Methods 22",
+    "doi": "10.1038/s41587-022-01624-4"
+  },
+  "10.1186/s13064-022-00163-7": {
+    "label": "Erickson 2022",
+    "authors": "Erickson AG, Kameneva P, Adameyko I",
+    "year": "2022",
+    "title": "The transcriptional portraits of the neural crest at the individual cell level",
+    "venue": "Neural Dev",
+    "doi": "10.1186/s13064-022-00163-7"
+  }
+}

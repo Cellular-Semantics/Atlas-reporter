@@ -1,0 +1,11 @@
+{
+  "label": "RETINAL_GANGLION_CELL",
+  "resolved_names": [
+    "RETINAL_GANGLION_CELL",
+    "Retinal ganglion cell"
+  ],
+  "scope": "embryonic/fetal (6-22 PCW)",
+  "tissue_context": "AUDIOVISUAL_NEURONAL",
+  "confidence": "high",
+  "evidence": "HDCA Supp Table 9 marker signature (GAP43,PAX6,SNCG,NEFL,NRN1,STMN2,ISL1,INA,MAPT,PRPH,SNCA,NEFM,SNAP25,OLFM1,RTN1,C...) matches canonical Retinal ganglion cell."
+}
