@@ -275,15 +275,64 @@ class FanOut(BaseNode[ReportState, ReportDeps, str]):
         seed_id = config.corpus_id or f"DOI:{config.doi}"
 
         raw_snippets: list[dict[str, Any]] = []
+        catalogue: dict[str, dict[str, Any]] = {}
         try:
             from atlas_chat.services import citation_traverser
 
-            raw_snippets, catalogue = await citation_traverser.traverse(
+            asta_task = citation_traverser.traverse(
                 query=query,
                 seed_ids=[seed_id],
                 depth=state.depth,
                 output_dir=ctx.deps.traversal_dir,
             )
+            # Run ASTA + local index in parallel when the project has a local
+            # snippet index (built via `setup_local_index.py`). Falls through
+            # to ASTA-only when no manifest.json is present.
+            local_task = None
+            try:
+                from atlas_chat.services import local_snippet_index
+
+                if local_snippet_index.has_local_index(config.project_dir):
+                    local_task = citation_traverser.traverse_local(
+                        query=query,
+                        project_dir=config.project_dir,
+                        k=20,
+                    )
+            except ImportError:
+                logger.info("local_snippet_index unavailable; ASTA-only")
+
+            if local_task is not None:
+                (asta_snips, asta_cat), (local_snips, local_cat) = await asyncio.gather(
+                    asta_task, local_task
+                )
+                # Tag source_method; ASTA snippets fall through with default
+                for s in asta_snips:
+                    s.setdefault("source_method", "asta")
+                # Merge: local first (more specific to the atlas), then ASTA.
+                # Deduplicate on (corpus_id, chunk_id or snippet text)
+                seen: set[tuple[str, str]] = set()
+                merged: list[dict[str, Any]] = []
+                for s in local_snips + asta_snips:
+                    key = (
+                        s.get("corpus_id", ""),
+                        str(s.get("chunk_id", s.get("snippet", "")[:120])),
+                    )
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    merged.append(s)
+                raw_snippets = merged
+                catalogue = {**asta_cat, **local_cat}
+                logger.info(
+                    "Merged %d ASTA + %d local snippets (catalogue: %d entries)",
+                    len(asta_snips),
+                    len(local_snips),
+                    len(catalogue),
+                )
+            else:
+                raw_snippets, catalogue = await asta_task
+                for s in raw_snippets:
+                    s.setdefault("source_method", "asta")
             state.paper_catalogue = catalogue
         except (ImportError, Exception) as exc:
             logger.warning("Citation traversal failed: %s", exc)
@@ -366,7 +415,8 @@ class FanOut(BaseNode[ReportState, ReportDeps, str]):
                         idx = ev.get("snippet_index", 0)
                         # Map back to the raw snippet
                         if 0 <= idx < len(raw_snippets):
-                            src_text = raw_snippets[idx].get("snippet", "")
+                            src = raw_snippets[idx]
+                            src_text = src.get("snippet", "")
                             verified_quotes = [
                                 q
                                 for q in ev.get("quotes", [])
@@ -375,6 +425,8 @@ class FanOut(BaseNode[ReportState, ReportDeps, str]):
                             ev["quotes"] = verified_quotes
                             # Also carry forward the raw snippet for validation
                             ev["snippet"] = src_text
+                            # Propagate provenance for downstream filtering
+                            ev["source_method"] = src.get("source_method", "asta")
                         all_evidence.append(ev)
             except (json.JSONDecodeError, Exception) as exc:
                 logger.warning("Snippet summarization failed for batch %d: %s", i, exc)

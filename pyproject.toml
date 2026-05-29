@@ -8,6 +8,10 @@ members = [
 [tool.uv.sources]
 atlas_chat = { workspace = true }
 github_app_posting = { workspace = true }
+# Dev-time override: resolve paperqa2-cyberian from the local checkout until
+# the relaxed Python pin (>=3.13) is pushed to origin/main. Switch back to
+# the git+https form in src/atlas_chat/pyproject.toml once published.
+paperqa2-cyberian = { path = "../paperqa2_cyberian", editable = true }
 
 [tool.uv]
 managed = true

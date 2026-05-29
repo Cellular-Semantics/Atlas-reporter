@@ -21,6 +21,12 @@ dev = [
     "ruff>=0.5.0",
     "mypy>=1.10.0",
 ]
+# Local snippet index for fresh preprints (not yet indexed by ASTA / EuropePMC).
+# Pulls in sentence-transformers + paper-qa (~500 MB) — keep optional.
+local-index = [
+    "paperqa2-cyberian @ git+https://github.com/Cellular-Semantics/paperqa2_cyberian.git@main",
+    "curl-cffi>=0.7.0",
+]
 
 [project.scripts]
 atlas-report = "atlas_chat.cli:main"

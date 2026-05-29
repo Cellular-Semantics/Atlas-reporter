@@ -185,3 +185,38 @@ async def traverse(
     """
     provider = _make_provider()
     return await _search_depth(provider, query, seed_ids, depth)
+
+
+async def traverse_local(
+    query: str,
+    project_dir: Path,
+    k: int = 20,
+) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
+    """Local-snippet-index counterpart of `traverse()`.
+
+    Returns the same (raw_snippets, catalogue) shape as the ASTA path so the
+    caller can merge them. Snippets are tagged with `source_method: "local_snippet"`.
+    The catalogue carries one entry — the atlas paper itself — keyed by
+    `CorpusId:local_<hash>`.
+    """
+    import asyncio
+
+    from atlas_chat.services import local_snippet_index
+
+    raw_snippets = await asyncio.to_thread(local_snippet_index.search, project_dir, query, k)
+    if not raw_snippets:
+        return [], {}
+
+    paper = raw_snippets[0]
+    catalogue = {
+        paper["corpus_id"]: {
+            "title": paper.get("title", ""),
+            "authors": paper.get("authors", ""),
+            "year": paper.get("year"),
+            "venue": "bioRxiv",
+            "doi": paper.get("doi", ""),
+            "url": paper.get("url", ""),
+            "abstract": "",
+        }
+    }
+    return raw_snippets, catalogue
