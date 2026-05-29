@@ -1,5 +1,14 @@
 # Citation traversal for fresh preprints — options
 
+> **Implementation note (resolved).** Option B was implemented in
+> `src/atlas_chat/atlas_chat/services/local_snippet_index.py`. The required
+> JATS parser was **vendored** into `services/_jats_parser.py` from
+> Cellular-Semantics/paperqa2_cyberian@4d5d153 rather than pulled as a git
+> dependency — paperqa2_cyberian is experimental, lacks a release line, and
+> would have constrained atlas_chat to its Python pin. The rest of this doc
+> is preserved as historical context for the design decision; the references
+> to "paperqa2_cyberian as a dependency" no longer apply.
+
 **Problem.** atlas_chat's reporting workflow assumes the atlas paper is in EuropePMC / Semantic Scholar. For a fresh bioRxiv preprint (e.g. Steele et al. 2026, used here), neither is true: `get_pmc_supplemental_material` returns nothing, and ASTA `snippet_search` scoped to the atlas paper has no CorpusId to hit. The pilot reports for the spatial skin atlas worked around this by giving each agent the JATS XML directly, but blockquotes are then atlas-only — referenced literature appears as paraphrased inline cites, not as validated quoted evidence.
 
 This doc surveys options for fixing that, both heavy (build a local snippet index) and light (better orchestration). It also notes which pieces already exist in `~/Documents/GitHub/paperqa2_cyberian`.

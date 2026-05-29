@@ -64,7 +64,7 @@ class SentenceRow:
 
 
 def _normalize_biorxiv_jats(xml: str) -> str:
-    """Make bioRxiv JATS digestible by paperqa2_cyberian.parse_jats_citations.
+    """Make bioRxiv JATS digestible by `_jats_parser.parse_jats_citations`.
 
     Two fixes:
       1. Strip `hwp:*` namespaced attributes that get aliased to `id` after
@@ -261,14 +261,14 @@ def build_sentence_rows(
     xml: str,
     fulltext: str,
 ) -> tuple[list[SentenceRow], dict[str, Any]]:
-    """Run paperqa2_cyberian.parse_jats_citations and align each cited sentence
+    """Run the vendored `_jats_parser.parse_jats_citations` and align each cited sentence
     to a char offset in `fulltext`. Returns (rows, refs_dict).
 
     `refs_dict` is the full {ref_id → ResolvedRef} mapping from the parser —
     callers can read `.doi`, `.title`, `.year`, `.first_author` for downstream
     resolution (DOI batch + title-match fallback).
     """
-    from paperqa2_cyberian.parse_jats_citations import parse_jats_citations
+    from atlas_chat.services._jats_parser import parse_jats_citations
 
     cited, refs = parse_jats_citations(xml)
 

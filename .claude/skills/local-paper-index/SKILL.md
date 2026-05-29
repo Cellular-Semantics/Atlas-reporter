@@ -1,6 +1,6 @@
 ---
 name: local-paper-index
-description: Build and query a local ASTA-shape snippet index for a fresh preprint atlas paper not yet indexed in EuropePMC or Semantic Scholar. Use when ASTA snippet_search returns nothing for the atlas DOI and you need quoted evidence from the paper text. Installs the [local-index] extra (~500 MB of MiniLM + paper-qa).
+description: Build and query a local ASTA-shape snippet index for a fresh preprint atlas paper not yet indexed in EuropePMC or Semantic Scholar. Use when ASTA snippet_search returns nothing for the atlas DOI and you need quoted evidence from the paper text. Installs the [local-index] extra (~500 MB of MiniLM via sentence-transformers).
 ---
 
 # local-paper-index
@@ -61,5 +61,8 @@ No flag or env var needed; existence of `manifest.json` is the gate.
   the gap for indexed references.
 - Image-based supplementary PDFs aren't OCR'd; supplementary text only enters
   the index if the JATS includes structured tables.
-- Heavy ML stack: pulls in `sentence-transformers` + `paper-qa` + torch. Behind
-  the `[local-index]` optional extra to keep default installs lean.
+- Heavy ML stack: pulls in `sentence-transformers` + torch. Behind the
+  `[local-index]` optional extra to keep default installs lean.
+- The JATS parser is vendored at `src/atlas_chat/atlas_chat/services/_jats_parser.py`
+  (source: Cellular-Semantics/paperqa2_cyberian@4d5d153). Re-sync periodically
+  by `cp` if upstream picks up additional JATS dialect support.
