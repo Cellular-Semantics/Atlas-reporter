@@ -104,15 +104,34 @@ def _strip_ns(root: ET.Element) -> None:
             el.tag = el.tag.split("}", 1)[1]
 
 
-def _text_of(el: ET.Element) -> str:
-    """Concatenate all descendant text, skipping ref-list and tables."""
+def _is_bibr_xref(el: ET.Element) -> bool:
+    return el.tag == "xref" and el.get("ref-type") == "bibr"
+
+
+def _contains_bibr(el: ET.Element) -> bool:
+    return any(_is_bibr_xref(g) for g in el.iter())
+
+
+def _text_of(el: ET.Element, in_citation: bool = False) -> str:
+    """Concatenate all descendant text, skipping ref-list and tables.
+
+    Wraps citation markers in brackets so the rendered text shows e.g.
+    ``[12-15]`` rather than a bare ``12-15`` run (which would otherwise
+    appear glued to surrounding words and make blockquote validation
+    against `parse_jats_citations`'s sentence output — which already
+    bracket-wraps — impossible).
+    """
     parts: list[str] = []
     if el.text:
         parts.append(el.text)
     for child in el:
         if child.tag in {"ref-list", "table-wrap"}:
             continue
-        parts.append(_text_of(child))
+        is_citation_block = (child.tag == "sup" and _contains_bibr(child)) or _is_bibr_xref(child)
+        if is_citation_block and not in_citation:
+            parts.append("[" + _text_of(child, in_citation=True) + "]")
+        else:
+            parts.append(_text_of(child, in_citation=in_citation))
         if child.tail:
             parts.append(child.tail)
     return "".join(parts)
@@ -257,21 +276,20 @@ def build_sentence_rows(
 
     rows: list[SentenceRow] = []
     for cs in cited:
-        # Try to locate the cited sentence in fulltext. parse_jats_citations
-        # emits sentence text WITH citation markers like [12-15]. Strip those
-        # to find the underlying text in our cleaned fulltext.
-        needle = re.sub(r"\[[^\]]{1,40}\]", "", cs.text).strip()
-        if not needle:
-            continue
-        # Pick the first 80 chars as a search anchor (longer = more unique).
-        anchor = needle[:80]
+        # parse_jats_citations emits sentence text with bracketed citation
+        # markers like [12-15]. The body chunker now also bracket-wraps
+        # bibr xrefs, so the sentence text should match the fulltext
+        # directly. Fall back to a bracket-stripped form for any cases the
+        # two extractors render differently.
+        anchor = cs.text[:80]
         pos = fulltext.find(anchor)
         if pos < 0:
-            # Try without internal whitespace collapses
-            anchor_loose = re.sub(r"\s+", " ", anchor)
-            pos = fulltext.find(anchor_loose)
+            stripped = re.sub(r"\[[^\]]{1,40}\]", "", cs.text).strip()
+            if stripped:
+                pos = fulltext.find(stripped[:80])
         if pos < 0:
             continue
+        needle = cs.text
         doi_list = [ref_id_to_doi[rid] for rid in cs.ref_ids if rid in ref_id_to_doi]
         rows.append(
             SentenceRow(

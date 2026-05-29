@@ -39,8 +39,8 @@ JATS_FIXTURE = dedent("""\
       <body>
         <sec>
           <title>Introduction</title>
-          <p>Prior work showed marker expression in skin
-            <xref ref-type="bibr" rid="c1">1</xref>.</p>
+          <p>Prior work showed marker expression in skin<sup><xref
+              ref-type="bibr" rid="c1">1</xref></sup>.</p>
           <p>Another paragraph without citations describing methods.</p>
         </sec>
         <sec>
