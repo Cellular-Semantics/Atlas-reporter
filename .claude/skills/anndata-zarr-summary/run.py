@@ -145,6 +145,44 @@ def zstd_decompress(raw: bytes) -> bytes:
     return zstd.ZstdDecompressor().decompress(raw)
 
 
+def decompress_chunk(raw: bytes, meta: dict) -> bytes:
+    """Decompress a chunk using the compressor recorded in array metadata.
+
+    Handles v2 (`_zarray_raw.compressor`) and v3 (`codecs`). Falls back to
+    auto-detection on raw bytes (blosc/zstd/gzip magic) or passthrough.
+    """
+    compressor = None
+    raw_zarray = meta.get("_zarray_raw") if isinstance(meta, dict) else None
+    if raw_zarray and raw_zarray.get("compressor"):
+        compressor = raw_zarray["compressor"]
+    else:
+        for codec in (meta or {}).get("codecs", []) or []:
+            name = codec.get("name") if isinstance(codec, dict) else None
+            if name and name not in ("bytes", "transpose"):
+                compressor = {"id": name, **(codec.get("configuration") or {})}
+                break
+
+    if compressor:
+        cid = (compressor.get("id") or "").lower()
+        if cid in ("blosc", "blosc2", "zstd", "gzip", "lz4", "zlib"):
+            from numcodecs import get_codec
+            cfg = dict(compressor)
+            if cid == "zstd" and "id" not in cfg:
+                cfg["id"] = "zstd"
+            return bytes(get_codec(cfg).decode(raw))
+
+    # No compressor recorded — try magic-byte sniffing.
+    if _looks_zstd(raw):
+        return zstd_decompress(raw)
+    if len(raw) >= 4 and raw[:4] == b"\x02\x01\x21\x01":  # blosc magic v1 (rough)
+        from numcodecs import Blosc
+        return bytes(Blosc().decode(raw))
+    if raw[:2] == b"\x1f\x8b":
+        import gzip
+        return gzip.decompress(raw)
+    return raw
+
+
 def decode_vlen_utf8(blob: bytes) -> list[str]:
     """AnnData zarr vlen-utf8 encoding for string arrays:
     [4-byte LE count][per item: 4-byte LE length, then UTF-8 bytes].
@@ -183,10 +221,10 @@ def num_chunks(shape: list[int], chunk_shape: list[int]) -> int:
     return math.ceil(shape[0] / chunk_shape[0])
 
 
-def decode_codes(chunks: list[bytes], data_type: str, n_cells: int):
+def decode_codes(chunks: list[bytes], data_type: str, n_cells: int, codes_meta: dict | None = None):
     import numpy as np
 
-    pieces = [zstd_decompress(c) if _looks_zstd(c) else c for c in chunks]
+    pieces = [decompress_chunk(c, codes_meta or {}) for c in chunks]
     blob = b"".join(pieces)
     return np.frombuffer(blob, dtype=numpy_dtype_for(data_type))[:n_cells]
 
@@ -246,6 +284,17 @@ def load_column(
         stats["cache_hit"] = True
         return categories, codes, stats
 
+    cats_meta = read_array_meta(base, f"obs/{col}/categories", is_local, fmt)
+    cats_shape = (cats_meta or {}).get("shape") or [0]
+    if not cats_shape or cats_shape[0] == 0:
+        # Empty categorical — no chunk file exists. Return an empty column.
+        categories: list[str] = []
+        codes = np.zeros(n_cells, dtype="<i1")
+        cats_file.write_text(json.dumps(categories))
+        np.save(codes_file, codes)
+        stats["empty"] = True
+        return categories, codes, stats
+
     # categories — always 1 chunk for string arrays in practice
     cats_raw = fetch_bytes(base, f"obs/{col}/categories/{chunk_path(0, fmt)}", is_local)
     if cats_raw is None:
@@ -253,7 +302,7 @@ def load_column(
         cats_raw = fetch_bytes(base, f"obs/{col}/categories/0", is_local)
     if cats_raw is None:
         raise RuntimeError(f"Could not fetch categories chunk for column {col}")
-    categories = decode_vlen_utf8(zstd_decompress(cats_raw))
+    categories = decode_vlen_utf8(decompress_chunk(cats_raw, cats_meta))
     stats["chunks_downloaded"] += 1
 
     # codes
@@ -276,7 +325,7 @@ def load_column(
             chunks[i] = raw
             stats["chunks_downloaded"] += 1
 
-    codes = decode_codes(chunks, codes_meta["data_type"], n_cells)
+    codes = decode_codes(chunks, codes_meta["data_type"], n_cells, codes_meta)
 
     cats_file.write_text(json.dumps(categories))
     np.save(codes_file, codes)
