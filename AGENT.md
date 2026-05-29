@@ -126,6 +126,13 @@ These two steps are independent after name resolution. Run them in parallel.
 - Query: `"{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers"`
 - Depth: 1 (default), configurable up to 3
 
+**Local snippet index (fresh preprints):** if
+`projects/{project}/local_index/manifest.json` exists, the graph also calls
+`services.citation_traverser.traverse_local` in parallel with the ASTA path
+and merges results. Snippets carry `source_method: "local_snippet"`. See the
+`local-paper-index` skill (`.claude/skills/local-paper-index/SKILL.md`) for
+how to build the index when ASTA is blind to the atlas paper.
+
 **Output:**
 - `projects/{project}/traversal_output/{cell_type}/all_summaries.json`
 - `projects/{project}/traversal_output/{cell_type}/paper_catalogue.json`
