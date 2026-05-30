@@ -285,19 +285,23 @@ class FanOut(BaseNode[ReportState, ReportDeps, str]):
                 depth=state.depth,
                 output_dir=ctx.deps.traversal_dir,
             )
-            # Run ASTA + local index in parallel when the project has a local
-            # snippet index (built via `setup_local_index.py`). Falls through
-            # to ASTA-only when no manifest.json is present.
+            # Local snippet index is opt-in for fan-out (per the multi-paper
+            # corpus design): the project's `corpus.json` must set
+            # `use_in_fanout: true` for parallel local search. Default is
+            # ASTA-only; subatlas papers that ASTA can't reach are surfaced as
+            # a non-blocking warning below.
             local_task = None
+            needs_pdf_warning: list[dict[str, Any]] = []
             try:
                 from atlas_chat.services import local_snippet_index
 
-                if local_snippet_index.has_local_index(config.project_dir):
+                if local_snippet_index.use_in_fanout(config.project_dir):
                     local_task = citation_traverser.traverse_local(
                         query=query,
                         project_dir=config.project_dir,
                         k=20,
                     )
+                needs_pdf_warning = local_snippet_index.needs_pdf_subatlas(config.project_dir)
             except ImportError:
                 logger.info("local_snippet_index unavailable; ASTA-only")
 
@@ -334,6 +338,17 @@ class FanOut(BaseNode[ReportState, ReportDeps, str]):
                 for s in raw_snippets:
                     s.setdefault("source_method", "asta")
             state.paper_catalogue = catalogue
+
+            if needs_pdf_warning:
+                labels = [f"{e.get('label') or e.get('doi')}" for e in needs_pdf_warning]
+                logger.warning(
+                    "Subatlas papers without retrievable text (status=needs_pdf): %s. "
+                    "Consider running `setup_local_index.py add --pdf ...` to ingest them.",
+                    ", ".join(labels),
+                )
+                (ctx.deps.traversal_dir / "subatlas_missing.json").write_text(
+                    json.dumps(needs_pdf_warning, indent=2)
+                )
         except (ImportError, Exception) as exc:
             logger.warning("Citation traversal failed: %s", exc)
             state.all_summaries = []
