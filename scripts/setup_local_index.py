@@ -1,11 +1,17 @@
-"""Project-setup CLI: build the local snippet index for a fresh-preprint atlas.
+"""CLI for the per-project local snippet index (multi-paper corpus model).
 
-Wraps `atlas_chat.services.local_snippet_index.build_local_index` with project
-discovery (reads DOI from cell_type_annotations.json if --doi isn't passed).
+Subcommands::
 
-Example:
-    uv run python scripts/setup_local_index.py --project spatial_skin_atlas
-    uv run python scripts/setup_local_index.py --project some_atlas --doi 10.1101/... --force
+    discover-subatlas   Propose subatlas DOIs from label_provenance.json.
+    init-corpus         Run the asta/jats/pdf waterfall + build atlas index.
+    add                 Add a paper from a PDF or JATS file.
+    list                List papers in the corpus.
+    remove              Remove a paper from the corpus.
+    search              Query the corpus.
+    build               (legacy) Build only the atlas paper from JATS.
+
+Project resolution: ``--project`` accepts either a path to a project dir or a
+bare name. Bare names are looked up under ``./projects/``.
 """
 
 from __future__ import annotations
@@ -21,7 +27,6 @@ def _resolve_project_dir(project_arg: str) -> Path:
     p = Path(project_arg)
     if p.is_dir():
         return p.resolve()
-    # Try projects/<name>
     candidate = Path.cwd() / "projects" / project_arg
     if candidate.is_dir():
         return candidate.resolve()
@@ -38,48 +43,134 @@ def _doi_from_config(project_dir: Path) -> str | None:
         return None
 
 
-def main(argv: list[str] | None = None) -> int:
+def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__.split("\n", maxsplit=1)[0])
-    parser.add_argument(
-        "--project",
-        required=True,
-        help="Project directory or name (under projects/)",
-    )
-    parser.add_argument(
-        "--doi",
-        default=None,
-        help="DOI of the preprint. Read from cell_type_annotations.json if omitted.",
-    )
-    parser.add_argument(
-        "--jats",
-        type=Path,
-        default=None,
-        help="Path to an existing JATS XML; skip fetch step.",
-    )
-    parser.add_argument("--force", action="store_true", help="Rebuild even if up to date")
     parser.add_argument("-v", "--verbose", action="store_true")
-    args = parser.parse_args(argv)
+    sub = parser.add_subparsers(dest="cmd")
 
+    p_disc = sub.add_parser("discover-subatlas")
+    p_disc.add_argument("--project", required=True)
+
+    p_init = sub.add_parser("init-corpus")
+    p_init.add_argument("--project", required=True)
+    p_init.add_argument("--force", action="store_true")
+
+    p_add = sub.add_parser("add")
+    p_add.add_argument("--project", required=True)
+    p_add.add_argument("--doi", required=True)
+    src = p_add.add_mutually_exclusive_group()
+    src.add_argument("--pdf", type=Path, default=None)
+    src.add_argument("--jats", type=Path, default=None)
+    p_add.add_argument("--role", default="subatlas", choices=("atlas", "subatlas"))
+    p_add.add_argument("--force", action="store_true")
+
+    p_list = sub.add_parser("list")
+    p_list.add_argument("--project", required=True)
+
+    p_rm = sub.add_parser("remove")
+    p_rm.add_argument("--project", required=True)
+    p_rm.add_argument("--doi", required=True)
+
+    p_search = sub.add_parser("search")
+    p_search.add_argument("--project", required=True)
+    p_search.add_argument("--query", required=True)
+    p_search.add_argument("-k", type=int, default=10)
+    p_search.add_argument("--paper", action="append", default=None)
+    p_search.add_argument("--role", action="append", default=None, choices=("atlas", "subatlas"))
+
+    p_build = sub.add_parser("build", help="(legacy) build only the atlas paper")
+    p_build.add_argument("--project", required=True)
+    p_build.add_argument("--doi", default=None)
+    p_build.add_argument("--jats", type=Path, default=None)
+    p_build.add_argument("--force", action="store_true")
+
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = _build_parser()
+    args = parser.parse_args(argv)
     logging.basicConfig(
         level=logging.INFO if args.verbose else logging.WARNING,
         format="%(levelname)s: %(message)s",
     )
 
+    if args.cmd is None:
+        parser.print_help()
+        return 0
+
     project_dir = _resolve_project_dir(args.project)
-    doi = args.doi or _doi_from_config(project_dir)
-    if not doi:
-        print(
-            "ERROR: no DOI supplied and none found in cell_type_annotations.json",
-            file=sys.stderr,
+
+    if args.cmd == "discover-subatlas":
+        from atlas_chat.services.subatlas_resolver import discover
+
+        result = discover(project_dir)
+        print(json.dumps(result, indent=2))
+        return 0
+
+    if args.cmd == "init-corpus":
+        from atlas_chat.services.subatlas_resolver import ingest
+
+        result = ingest(project_dir, force=args.force)
+        print(json.dumps(result, indent=2))
+        return 0
+
+    if args.cmd == "add":
+        from atlas_chat.services.local_snippet_index import add_paper
+
+        manifest = add_paper(
+            project_dir,
+            args.doi,
+            pdf_path=args.pdf,
+            jats_path=args.jats,
+            role=args.role,
+            force=args.force,
         )
-        return 1
+        print(json.dumps(manifest, indent=2))
+        return 0
 
-    # Lazy import — keeps `--help` snappy when the heavy ML stack isn't installed.
-    from atlas_chat.services.local_snippet_index import build_local_index
+    if args.cmd == "list":
+        from atlas_chat.services.local_snippet_index import list_papers
 
-    manifest = build_local_index(project_dir, doi, args.jats, args.force)
-    print(json.dumps(manifest, indent=2))
-    return 0
+        print(json.dumps(list_papers(project_dir), indent=2))
+        return 0
+
+    if args.cmd == "remove":
+        from atlas_chat.services.local_snippet_index import remove_paper
+
+        present = remove_paper(project_dir, args.doi)
+        print(json.dumps({"removed": present}, indent=2))
+        return 0
+
+    if args.cmd == "search":
+        from atlas_chat.services.local_snippet_index import search
+
+        results = search(
+            project_dir,
+            args.query,
+            k=args.k,
+            papers=args.paper,
+            roles=args.role,
+        )
+        print(json.dumps(results, indent=2))
+        return 0
+
+    if args.cmd == "build":
+        from atlas_chat.services.local_snippet_index import build_local_index
+
+        doi = args.doi or _doi_from_config(project_dir)
+        if not doi:
+            print(
+                "ERROR: no DOI supplied and none found in cell_type_annotations.json",
+                file=sys.stderr,
+            )
+            return 1
+        manifest = build_local_index(project_dir, doi, args.jats, args.force)
+        print(json.dumps(manifest, indent=2))
+        return 0
+
+    parser.print_help()
+    return 2
 
 
 if __name__ == "__main__":

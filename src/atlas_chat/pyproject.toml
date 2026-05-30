@@ -27,6 +27,7 @@ local-index = [
     "sentence-transformers>=5.0",
     "numpy>=1.26",
     "curl-cffi>=0.7.0",
+    "pymupdf4llm>=0.0.17",
 ]
 
 [project.scripts]
