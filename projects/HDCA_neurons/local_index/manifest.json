@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "doi": "10.64898/2026.03.30.714220",
+  "hash": "0b5f5cb7ff559e5996ed9c7b1919fcc43388cb66a2f873029ac341a18090427e",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_chunks": 84,
+  "n_sentences": 135,
+  "n_refs": 193,
+  "n_corpus_ids_resolved": 181,
+  "resolution_methods": {
+    "doi": 5,
+    "title": 176,
+    "title_unmatched": 12
+  },
+  "paper": {
+    "title": "An integrated single cell and spatial omics atlas of human prenatal development",
+    "authors": "Webb, S.; Rose, A.; Xu, C.; Steele, L.; Kuri, M. A.; Stephenson, E.; Inecik, K.; Jafree, D.; Foster, A. R.; Basurto-Lozada, D.; Chipampe, N.-J.; Pournara, A. V.; Jacques, M.-A.; To, K.; Admane, C.; Kritikaki, E.; Chroscik, M. A.; Horsfall, D.; Foreman, J.; Rademaker, K.; Karjalainen, J.; Laddach, A.; Madad, S.; Lawrence, J. E. G.; Kleshchevnikov, V.; Lisgo, S.; Lee, J. T. H.; Blevinal, J.; Alqahtani, A.; Makarchuk, S.; Jackson, J.; Ucuncu, E.; Silva, T. P.; Lorenzi, V.; Torabi, F.; Botting, R. A.; Roberts, K.; Olabi, B.; Chakala, K. P.; Dony, L.; Dall'Aglio, G.; Cujba, A.-M.; Whitfield, H. J.;",
+    "year": 2026,
+    "doi": "10.64898/2026.03.30.714220",
+    "corpus_id": "CorpusId:local_ccaa087934",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.30.714220v1"
+  }
+}
