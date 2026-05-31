@@ -102,5 +102,13 @@
     "title": "The transcriptional portraits of the neural crest at the individual cell level",
     "venue": "Neural Dev",
     "doi": "10.1186/s13064-022-00163-7"
+  },
+  "10.1016/j.celrep.2020.01.007": {
+    "label": "Sridhar 2020",
+    "authors": "Sridhar A, Hoshino A, Finkbeiner CR, et al.",
+    "year": "2020",
+    "title": "Single-Cell Transcriptomic Comparison of Human Fetal Retina, hPSC-Derived Retinal Organoids, and Long-Term Retinal Cultures",
+    "venue": "Cell Reports 30:1644-1659.e4",
+    "doi": "10.1016/j.celrep.2020.01.007"
   }
 }
