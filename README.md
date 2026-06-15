@@ -8,15 +8,9 @@ Atlas Chat addresses this problem by enabling researchers to explore the literat
 
 ## What It Does
 
-Atlas Chat supports three complementary modes of operation:
+Atlas Chat generates structured, evidence-grounded cell type reports via an interactive Claude Code workflow (`/run-workflow`). The workflow fetches supplementary material, resolves cell type names from the atlas paper, traverses the citation network, and synthesises a markdown report — all using MCP tools and specialised subagents. Every claim is backed by an exact quote from a source paper.
 
-1. **Cell type reports (programmatic)** — A PydanticAI graph pipeline that generates structured reports for individual cell types, drawn from the atlas paper and its cited literature. Run via the `atlas-report` CLI.
-
-2. **Cell type reports (agentic)** — An interactive Claude Code workflow (`/run-workflow`) that achieves the same result using MCP tools and subagents. Useful for exploratory runs and debugging.
-
-3. **Chat across the literature** — An interactive Claude Code mode (`/chat`) for asking questions spanning the primary atlas paper and any papers it cites, with answers grounded in the source material.
-
-All three modes produce output backed by exact quotes from source papers, allowing users to assess accuracy and navigate directly to the primary literature.
+> **Deprecated — programmatic path.** An earlier `atlas-report` CLI (PydanticAI graph in `src/.../graphs/`) is retained for reference only. Do not use it for new work; use `/run-workflow` instead.
 
 ## Design Principles
 
@@ -26,13 +20,13 @@ All three modes produce output backed by exact quotes from source papers, allowi
 
 ## Hallucination Detection
 
-LLMs can fabricate quotes and idedentifiers. Atlas Chat treats this as a first-class problem.
+LLMs can fabricate quotes and identifiers. Atlas Chat treats this as a first-class problem.
 
- - Every blockquote in a generated report is verified against the original text before the report is saved. The validator checks that each quoted passage is a verbatim substring of a source paper (normalising whitespace, dashes, and smart quotes; handling ellipsis-separated segments). 
+- Every blockquote in a generated report is verified against the original text before the report is saved. The validator checks that each quoted passage is a verbatim substring of a source paper (normalising whitespace, dashes, and smart quotes; handling ellipsis-separated segments).
 - Every DOI and CorpusId reference is checked against the paper catalogue.
 - If any check fails, the report is fed back to the LLM to fix, along with details of the error (up to two retries).
 
-**What this guarantees:** quoted text in a final report actually appears in the cited source. DOIs are correct
+**What this guarantees:** quoted text in a final report actually appears in the cited source. DOIs are correct.
 
 **What it does not guarantee:** that the surrounding narrative accurately interprets those quotes, or that the most relevant literature was found. Users should always follow quotes back to their source papers to assess context.
 
@@ -41,8 +35,7 @@ LLMs can fabricate quotes and idedentifiers. Atlas Chat treats this as a first-c
 ### Installation
 
 ```bash
-# Clone and install
-git clone <repo-url> && cd atlas_chat
+git clone <repo-url> && cd atlas-chat
 uv sync
 ```
 
@@ -51,44 +44,17 @@ Create a `.env` file in the repository root with the required API keys:
 ```
 ANTHROPIC_API_KEY=sk-...
 ASTA_API_KEY=...
-# Optional, only needed for OpenAI provider:
-OPENAI_API_KEY=sk-...
 ```
 
-### Generate a Single Report
+### Running a Report
 
-```bash
-atlas-report --project fetal_skin_atlas --cell-type "Iron-recycling macrophage"
+Open a Claude Code session in this directory. The MCP servers defined in `.mcp.json` will be loaded automatically. Then run:
+
+```
+/run-workflow
 ```
 
-### Generate All Reports (Batch Mode)
-
-```bash
-# Generate reports for every annotation in the project
-atlas-report --project fetal_skin_atlas --batch
-
-# Only fill gaps — skip cell types that already have a report
-atlas-report --project fetal_skin_atlas --batch --no-stomp
-
-# Preview what would happen without running anything
-atlas-report --project fetal_skin_atlas --batch --no-stomp --dry-run
-```
-
-### CLI Reference
-
-| Flag | Default | Description |
-|---|---|---|
-| `--project NAME` | *(required)* | Project directory name under `projects/` |
-| `--cell-type LABEL` | | Single cell type label (mutually exclusive with `--batch`) |
-| `--batch` | | Generate reports for all annotations (mutually exclusive with `--cell-type`) |
-| `--no-stomp` | off | Skip cell types whose report file already exists |
-| `--depth N` | 1 | Citation traversal depth (max 3) |
-| `--dry-run` | off | Show execution plan without making LLM calls |
-| `--provider` | anthropic | LLM provider: `anthropic` or `openai` |
-| `--model` | *(provider default)* | LiteLLM model ID, e.g. `claude-sonnet-4-20250514`, `gpt-4.1` |
-| `--verbose` / `-v` | off | Enable DEBUG logging and full stack traces |
-
-The legacy invocation `uv run python scripts/generate_report.py ...` still works via a thin shim.
+Claude will ask for a project name and cell type label, then execute the full pipeline.
 
 ## Project Configuration
 
@@ -123,7 +89,7 @@ Each atlas project lives in `projects/{project_name}/` and is defined by a singl
 
 ### Report Generation Pipeline
 
-Both the programmatic and agentic workflows follow the same six-step sequence:
+The agentic workflow follows a six-step sequence:
 
 1. **FetchSupplements** — Resolve the atlas DOI to a PMCID via Europe PMC, fetch full text and supplementary file listings.
 2. **ResolveName** — LLM call to identify the author-used terminology for the cell type in the atlas paper.
@@ -157,36 +123,17 @@ Reports are validated before saving:
 
 If validation fails, the synthesis step is retried with specific error feedback (up to 2 retries).
 
-## Interactive Modes (Claude Code)
+## Agentic Workflow (Claude Code)
 
-These modes require a Claude Code session with the project's MCP servers configured (see `.claude/settings.local.json`).
-
-### Agentic Workflow
+Requires a Claude Code session with the project's MCP servers configured (see `.mcp.json` and `.claude/settings.local.json`).
 
 ```
 /run-workflow
 ```
 
-Launches the same report generation pipeline interactively, using MCP tools and Claude Code subagents. The orchestrator follows `AGENT.md` and delegates to specialised subagents in `.claude/agents/`.
-
-### Literature Chat
-
-```
-/chat
-```
-
-An interactive question-answering mode for exploring the atlas literature. Loads the project's cached evidence and routes questions through Semantic Scholar snippet search. Writes any new traversal data to `traversal_output/_chat/` to avoid modifying existing cell type directories.
+Launches the report generation pipeline interactively, using MCP tools and Claude Code subagents. The orchestrator follows `CLAUDE.md` and delegates to specialised subagents in `.claude/agents/`.
 
 ## Dependencies and Integrations
-
-### Python Dependencies
-
-| Package | Role |
-|---|---|
-| [pydantic-ai](https://ai.pydantic.dev/) | Graph orchestration (`pydantic_graph`) |
-| [cellsem-llm-client](https://github.com/Cellular-Semantics/cellsem_llm_client) | LiteLLM agent wrapper |
-| [deep-research-client](https://github.com/monarch-initiative/deep-research-client) | Semantic Scholar snippet search (`AstaProvider`) |
-| pydantic, pyyaml, jsonschema, python-dotenv | Data validation, config, schema |
 
 ### External Services (via MCP)
 
@@ -194,32 +141,44 @@ An interactive question-answering mode for exploring the atlas literature. Loads
 |---|---|
 | [ARTL MCP](https://github.com/vrothenbergUSD/artl-mcp) (Europe PMC) | Full text, supplements, ID resolution, PDF-to-markdown |
 | [Semantic Scholar](https://www.semanticscholar.org/) (Asta) | Snippet search, paper metadata, citation traversal |
+| [OLS4](https://www.ebi.ac.uk/ols4/) | Cell Ontology term lookup |
 | Playwright | Browser automation (available but not central to current workflow) |
+
+### Python Utilities
+
+The Python package (`src/atlas_chat/`) provides supporting utilities used by the agentic workflow:
+
+| Module | Role |
+|---|---|
+| `services/local_snippet_index.py` | Local vector index for preprints not yet in ASTA |
+| `services/fetch_preprint.py` | JATS XML fetch for bioRxiv preprints |
+| `validation/report_checker.py` | Shared quote and reference validation logic |
+| `schemas/*.schema.json` | JSON schemas — source of truth for all output shapes |
 
 ### Environment Variables
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | Yes (if using Anthropic) | Anthropic API access |
-| `OPENAI_API_KEY` | If using OpenAI | OpenAI API access |
-| `ASTA_API_KEY` | Yes | Semantic Scholar API access (programmatic traversal) |
+| `ANTHROPIC_API_KEY` | Yes | Anthropic API access |
+| `ASTA_API_KEY` | Yes | Semantic Scholar API access |
+| `OPENAI_API_KEY` | No | OpenAI API access (alternative provider) |
 
 ## Development
 
-This project uses Claude Code for agentic development. [`CLAUDE_dev.md`](CLAUDE_dev.md) provides the agent instructions — load it as context when working on the codebase. It covers:
+This project uses Claude Code for agentic development. Load [`CLAUDE_dev.md`](CLAUDE_dev.md) as context when working on the codebase:
 
-- **Scope rings** — ship Ring 0 (MVP) first, iterate based on user feedback before adding features
-- **Schema-first design** — JSON schemas are the source of truth; Pydantic models are generated from them
-- **Test-driven development** — integration tests with real APIs from day 1, no mocks
-- **Prompt management** — YAML prompt files co-located with agents/services, not hardcoded
-- **Quality gates** — ruff, mypy, and coverage thresholds enforced via pre-commit hooks
+```
+/load CLAUDE_dev.md
+```
+
+It covers schema-first design, testing conventions, the curation-mode write guard, and the deprecated programmatic path.
 
 ```bash
 # Run tests
-uv run pytest tests/unit -m unit
-uv run pytest tests/integration -m integration
+uv run pytest -m unit
+uv run pytest -m integration   # requires API keys; skipped in CI
 
 # Lint and type check
-uv run ruff check .
-uv run mypy .
+uv run ruff check src/ tests/
+uv run mypy src/
 ```
