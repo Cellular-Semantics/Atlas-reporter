@@ -343,11 +343,14 @@ def multi_paper_project(tmp_path, monkeypatch):
     ]
     (tmp_path / "local_index" / "corpus.json").write_text(json.dumps(corpus))
 
-    # Stub SentenceTransformer to avoid downloading a model.
-    monkeypatch.setattr(
-        "sentence_transformers.SentenceTransformer",
-        lambda *args, **kwargs: _FakeEmbedder(),
-    )
+    # Inject a fake sentence_transformers module so the optional [local-index]
+    # dep is not required during unit tests.
+    import sys
+    import types
+
+    fake_st = types.ModuleType("sentence_transformers")
+    fake_st.SentenceTransformer = lambda *args, **kwargs: _FakeEmbedder()  # type: ignore[attr-defined]
+    monkeypatch.setitem(sys.modules, "sentence_transformers", fake_st)
     lsi._load_index.cache_clear()
     return tmp_path
 
