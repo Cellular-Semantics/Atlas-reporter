@@ -136,14 +136,10 @@ Before any structural changes, define what "nothing broke" means. This is a spec
 - `validate_report(report_path, traversal_dir)` passes for 3 existing reports (Macro_1, LC_1, NK)
 
 ### Agentic mode
-- All `@` path references in AGENT.md resolve to real files
+- All `@` path references in CLAUDE.md resolve to real files
 - All paths in `.claude/agents/*.md` resolve
 - `.claude/hooks/check_report_refs.py` imports `atlas_chat.validation.report_checker`
 - All 5 prompt YAMLs load via `load_prompt()`
-
-### Chat mode
-- CHAT.md path references resolve
-- `/load-project-context` can locate project data
 
 ### Golden-data regression
 - Pick 3 representative reports. Run `validate_report()` against their traversal data. These must pass. This catches changes to validation logic or evidence format assumptions.
@@ -182,7 +178,7 @@ src/atlas_chat/
 1. Audit and document what lives where
 2. Flatten: move `src/atlas_chat/atlas_chat/*` up one level, delete inner directory
 3. Update internal imports (package name `atlas_chat` stays the same)
-4. Update all `@` path references in AGENT.md, CHAT.md, `.claude/agents/*.md`
+4. Update all `@` path references in CLAUDE.md, `.claude/agents/*.md`
 5. Consolidate schemas into `src/atlas_chat/schemas/`
 6. Fix `prompt_loader.py` `_AGENTS_DIR` path calculation (one fewer nesting level)
 7. Update `pyproject.toml` paths (setuptools find, coverage source, mypy packages)
@@ -193,7 +189,7 @@ src/atlas_chat/
 
 **Highest-risk breakage points:**
 - `prompt_loader.py` `_AGENTS_DIR` — navigates `parent.parent`; after flattening this is wrong
-- AGENT.md `@` imports — if not updated, agentic workflow silently can't find prompts
+- CLAUDE.md `@` imports — if not updated, agentic workflow silently can't find prompts
 
 ---
 
@@ -223,7 +219,7 @@ The current programmatic traverser is rigid: fixed snippet search, broaden at de
 
 ### Atlas paper full text
 
-AGENT.md currently says "Prefer `snippet_search` over `get_europepmc_full_text`." This is correct for agentic sessions (huge output, fragile download). But the programmatic path already fetches full text (FetchSupplements node).
+CLAUDE.md currently says "Prefer `snippet_search` over `get_europepmc_full_text`." This is correct for agentic sessions (huge output, fragile download). But the programmatic path already fetches full text (FetchSupplements node).
 
 **Resolution:** Keep the snippet-first guidance for the agentic workflow. For the programmatic path, make full text available as a tool the LLM can query on demand — a `search_atlas_full_text(query)` tool that does local text search against the already-fetched document. The traversal prompt should mention it as a fallback: "If snippet search does not cover methodology or supplementary table references, search the atlas paper full text."
 

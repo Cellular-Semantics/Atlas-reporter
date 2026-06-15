@@ -5,7 +5,7 @@ description: Generate a structured, evidence-grounded cell type report from an a
 
 # Generate Cell Type Report
 
-You orchestrate the full report generation workflow as defined in AGENT.md.
+You orchestrate the full report generation workflow as defined in CLAUDE.md.
 
 ## Input
 
@@ -18,7 +18,7 @@ If arguments are missing, ask the user.
 
 ## Procedure
 
-Follow the orchestration sequence defined in AGENT.md:
+Follow the orchestration sequence defined in CLAUDE.md:
 
 1. **Load project config**: Read `projects/{project}/cell_type_annotations.json` to get atlas DOI, title, and validate the cell type label exists.
 

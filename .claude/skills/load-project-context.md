@@ -83,4 +83,4 @@ Keep the following in working context for the rest of the session:
 - Merged paper catalogue (all entries, deduplicated)
 - List of cell types with traversal output
 
-This state is used by CHAT.md question routing to avoid redundant MCP calls.
+This state is used by the session question routing to avoid redundant MCP calls.

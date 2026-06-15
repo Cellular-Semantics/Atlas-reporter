@@ -1091,13 +1091,14 @@ def search(
       * ``roles``: paper roles to restrict the search to (e.g. ``["subatlas"]``).
     """
     import numpy as np
-    from sentence_transformers import SentenceTransformer
 
     state = _load_index(str(Path(project_dir).resolve()))
     embeddings = state["embeddings"]
     row_index: list[dict[str, Any]] = state["row_index"]
     if embeddings.size == 0 or not row_index:
         return []
+
+    from sentence_transformers import SentenceTransformer
 
     paper_slug_filter: set[str] | None = None
     if papers:

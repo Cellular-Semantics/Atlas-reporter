@@ -69,11 +69,11 @@ These components prevent technical debt and ensure consistency across all projec
 - **`.githooks/`** - Pre-commit quality checks
 - **`experiments/`** - Exploratory scripts and Week 0 validation probes; excluded from
   coverage, mypy, and ruff; not subject to TDD; graduate proven patterns into `src/` with tests
-- **`AGENT.md`** - Run-mode agent instructions; uses `@` imports to reference canonical
+- **`CLAUDE.md`** - Run-mode agent instructions; uses `@` imports to reference canonical
   prompts/schemas; customize the "Workflow Steps" section for your domain; never merge
   dev rules into this file
 - **`.claude/commands/run-workflow.md`** - Claude Code skill (`/run-workflow`) that loads
-  AGENT.md and switches the session to workflow-agent mode
+  CLAUDE.md and switches the session to workflow-agent mode
 
 ---
 
@@ -84,14 +84,14 @@ This project serves two purposes from one repo:
 | Mode | Entry point | Who uses it |
 | --- | --- | --- |
 | **Dev** | `CLAUDE.md` (auto-loaded) | Developer building/extending the package |
-| **Run** | `AGENT.md` (explicit load) | Agent executing the workflow for users |
+| **Run** | `CLAUDE.md` (explicit load) | Agent executing the workflow for users |
 
 **Shared assets** (single source of truth):
 - `src/.../schemas/*.schema.json` — constrain output in both modes
 - `src/.../agents/*.prompt.yaml` — define behaviour in both modes
 - Python package — programmatic implementation of the same workflow logic
 
-`AGENT.md` references the shared assets via `@` imports (Claude Code's native
+`CLAUDE.md` references the shared assets via `@` imports (Claude Code's native
 file-import feature). The Python code reads them via `yaml.safe_load()` and
 `json.load()`. Same files, different consumers, zero duplication.
 
