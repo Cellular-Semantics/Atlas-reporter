@@ -5,7 +5,7 @@
   "description": "Input contract for the citation-traverse orchestration: trace citation chains from a seed paper via ASTA snippet search.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["seed_paper_id", "query", "output_dir"],
+  "required": ["seed_paper_id", "query", "traversal_dir"],
   "properties": {
     "seed_paper_id": {
       "type": "string",
@@ -24,10 +24,10 @@
       "default": 1,
       "description": "Citation traversal depth. 0 = seed papers only."
     },
-    "output_dir": {
+    "traversal_dir": {
       "type": "string",
       "minLength": 1,
-      "description": "Directory path where traversal output files will be written (all_summaries.json, paper_catalogue.json, depth_N_*.json)."
+      "description": "Directory path where traversal output files will be written (all_summaries.json, paper_catalogue.json, depth_N_*.json). Typically projects/{project}/traversal_output/{cell_type}/."
     }
   }
 }

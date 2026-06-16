@@ -19,7 +19,7 @@ You receive:
 - `seed_paper_id` — CorpusId, DOI, or PMID of the atlas paper
 - `query` — constructed from: `"{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers"`
 - `depth` — traversal depth (default 1, max 3)
-- `output_dir` — traversal output directory
+- `traversal_dir` — traversal output directory
 
 ## Procedure
 
@@ -43,8 +43,8 @@ You receive:
 
 3. Extract referenced CorpusIds directly from the ASTA snippet results (look for `corpusId` fields in the response metadata, and for CorpusId patterns in the snippet text).
 4. Save:
-   - `{output_dir}/depth_0_snippets.json` — raw snippet_search response
-   - `{output_dir}/depth_0_summaries.json` — array of per-snippet summaries
+   - `{traversal_dir}/depth_0_snippets.json` — raw snippet_search response
+   - `{traversal_dir}/depth_0_summaries.json` — array of per-snippet summaries
 
 ### Depth 1..N: Follow references
 
@@ -59,12 +59,12 @@ You receive:
 
 11. Collect ALL unique corpus IDs from all depths.
 12. Call `get_paper_batch(ids=[...], fields="title,authors,year,venue,publicationDate,url,isOpenAccess")`.
-13. Save to `{output_dir}/paper_catalogue.json`.
+13. Save to `{traversal_dir}/paper_catalogue.json`.
 
 ## Output
 
-- `{output_dir}/all_summaries.json` — merged summaries from all depths
-- `{output_dir}/paper_catalogue.json` — metadata for all discovered papers
+- `{traversal_dir}/all_summaries.json` — merged summaries from all depths
+- `{traversal_dir}/paper_catalogue.json` — metadata for all discovered papers
 
 ## CorpusId Retrieval
 
