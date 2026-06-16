@@ -6,6 +6,18 @@
 
 ---
 
+## Curation mode
+
+This session runs in **curation mode** by default. Writes are restricted to
+`projects/` and `planning/`. Edits to source code (`src/`), infrastructure
+(`.claude/`, `tests/`, `docs/`), or root config files are **out of scope** and
+will be blocked by the `curation_guard.py` PreToolUse hook.
+
+If you need to capture a code suggestion, write a note under `planning/` and
+stop. Dev-mode sessions start from `CLAUDE_dev.md`.
+
+---
+
 ## Shared Prompts
 
 These YAML files are the canonical prompts — shared between this agentic
