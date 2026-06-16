@@ -5,7 +5,8 @@ model: sonnet
 input:
   schema: src/atlas_chat/atlas_chat/schemas/citation_traverse_input.schema.json
 output:
-  schema: src/atlas_chat/atlas_chat/schemas/all_summaries.schema.json
+  all_summaries: src/atlas_chat/atlas_chat/schemas/all_summaries.schema.json
+  paper_catalogue: src/atlas_chat/atlas_chat/schemas/paper_catalogue.schema.json
 ---
 
 # Subagent: Citation Traversal
