@@ -20,7 +20,6 @@ jsonschema = pytest.importorskip("jsonschema")
 
 from atlas_chat.schemas import load_schema  # noqa: E402
 
-
 # ---------------------------------------------------------------------------
 # Golden fixtures (from real fetal_skin_atlas run)
 # ---------------------------------------------------------------------------
@@ -31,13 +30,19 @@ VALID_NAME_RESOLUTION: dict = {
     "scope": "fetal",
     "tissue_context": "prenatal human skin (7-17 post-conception weeks)",
     "confidence": "high",
-    "evidence": "Explicitly named in main text of Gopee et al. 2024 as one of four macrophage subsets.",
+    "evidence": (
+        "Explicitly named in main text of Gopee et al. 2024 as one of four macrophage subsets."
+    ),
 }
 
 VALID_SUPPLEMENTARY_FINDINGS: dict = {
     "markers": [
         {"gene": "CD5L", "evidence_type": "DE analysis", "source_table": "Supplementary Table 3"},
-        {"gene": "SLC40A1", "evidence_type": "DE analysis / annotation marker", "source_table": "Extended Data Fig. 6e"},
+        {
+            "gene": "SLC40A1",
+            "evidence_type": "DE analysis / annotation marker",
+            "source_table": "Extended Data Fig. 6e",
+        },
     ],
     "other_findings": [
         {
@@ -63,7 +68,9 @@ VALID_SUMMARY_FULLTEXT: dict = {
     "year": 2024,
     "journal": "Nature",
     "topic": "Iron-recycling macrophage markers and microenvironment",
-    "summary": "Gopee et al. identify iron-recycling macrophages as one of four subsets in prenatal skin.",
+    "summary": (
+        "Gopee et al. identify iron-recycling macrophages as one of four subsets in prenatal skin."
+    ),
     "quotes": ["Iron-recycling macrophages: CD5L, APOE, VCAM, TIMD4, SLC40A1"],
     "source_method": "full_text_europepmc",
 }
@@ -110,6 +117,7 @@ VALID_PAPER_CATALOGUE: dict = {
 # ---------------------------------------------------------------------------
 # name_resolution
 # ---------------------------------------------------------------------------
+
 
 @pytest.fixture(scope="module")
 def name_resolution_validator():
@@ -160,6 +168,7 @@ def test_name_resolution_empty_resolved_names(name_resolution_validator):
 # supplementary_findings
 # ---------------------------------------------------------------------------
 
+
 @pytest.fixture(scope="module")
 def suppl_findings_validator():
     return jsonschema.Draft202012Validator(load_schema("supplementary_findings.schema.json"))
@@ -202,6 +211,7 @@ def test_suppl_findings_extra_top_level_field(suppl_findings_validator):
 # all_summaries
 # ---------------------------------------------------------------------------
 
+
 @pytest.fixture(scope="module")
 def all_summaries_validator():
     return jsonschema.Draft202012Validator(load_schema("all_summaries.schema.json"))
@@ -219,7 +229,8 @@ def test_all_summaries_asta_valid(all_summaries_validator):
 
 @pytest.mark.unit
 def test_all_summaries_mixed_valid(all_summaries_validator):
-    assert list(all_summaries_validator.iter_errors([VALID_SUMMARY_FULLTEXT, VALID_SUMMARY_ASTA])) == []
+    docs = [VALID_SUMMARY_FULLTEXT, VALID_SUMMARY_ASTA]
+    assert list(all_summaries_validator.iter_errors(docs)) == []
 
 
 @pytest.mark.unit
@@ -246,6 +257,7 @@ def test_all_summaries_extra_field_rejected(all_summaries_validator):
 # ---------------------------------------------------------------------------
 # paper_catalogue
 # ---------------------------------------------------------------------------
+
 
 @pytest.fixture(scope="module")
 def paper_catalogue_validator():
