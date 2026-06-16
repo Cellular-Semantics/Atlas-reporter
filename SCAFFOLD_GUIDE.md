@@ -60,8 +60,8 @@ This project uses a **two-package structure** managed as a UV workspace for sepa
 
 These components prevent technical debt and ensure consistency across all projects:
 
-- **`src/atlas_chat/__init__.py`** - Bootstrap with dotenv loading
-- **`src/atlas_chat/schemas/`** - JSON schemas directory (schema-first design)
+- **`src/atlas_chat/atlas_chat/__init__.py`** - Bootstrap with dotenv loading
+- **`src/atlas_chat/atlas_chat/schemas/`** - JSON schemas directory (schema-first design)
 - **`*.prompt.yaml` files** - Co-located with agents/services that use them
 - **`tests/unit/`** and **`tests/integration/`** - Testing structure with pytest markers
 - **`pyproject.toml`**, tooling configs - Development infrastructure (ruff, mypy, pytest, sphinx)
@@ -100,9 +100,9 @@ file-import feature). The Python code reads them via `yaml.safe_load()` and
 **Always use `.prompt.yaml` suffix** for easy identification and discoverability:
 
 **Examples:**
-- `src/atlas_chat/agents/annotator.prompt.yaml` - Single prompt for agent
-- `src/atlas_chat/services/deepsearch.query.prompt.yaml` - Specific purpose
-- `src/atlas_chat/services/deepsearch.summary.prompt.yaml` - Another purpose
+- `src/atlas_chat/atlas_chat/agents/annotator.prompt.yaml` - Single prompt for agent
+- `src/atlas_chat/atlas_chat/services/deepsearch.query.prompt.yaml` - Specific purpose
+- `src/atlas_chat/atlas_chat/services/deepsearch.summary.prompt.yaml` - Another purpose
 
 **Benefits:**
 - Easy to find all prompts: `find . -name "*.prompt.yaml"`
@@ -231,7 +231,7 @@ Is your Ring 0 a single, simple agent?
 ### 1. Schema-First Design
 
 ```python
-# schemas/my_input.schema.json
+# src/atlas_chat/atlas_chat/schemas/my_input.schema.json
 {
   "$comment": "Define business logic in JSON schema first",
   "type": "object",
