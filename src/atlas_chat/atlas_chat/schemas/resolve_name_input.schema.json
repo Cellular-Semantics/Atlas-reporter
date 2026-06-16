@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "resolve_name_input.schema.json",
+  "title": "ResolveNameInput",
+  "description": "Input contract for the resolve-name orchestration: resolve how atlas authors refer to a cell type annotation label.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cell_type_label", "atlas_doi", "scope", "traversal_dir"],
+  "properties": {
+    "cell_type_label": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The annotation label to resolve (e.g. 'Iron-recycling macrophage', 'LC_1')."
+    },
+    "atlas_doi": {
+      "type": "string",
+      "pattern": "^10\\.\\d{4,}(\\.\\d+)?/.+",
+      "description": "DOI of the atlas paper."
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["adult", "fetal", "organoid"],
+      "description": "Biological scope of the atlas."
+    },
+    "supplementary_text": {
+      "type": "string",
+      "description": "Already-fetched supplementary material text. May be empty if unavailable."
+    },
+    "traversal_dir": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Directory path where name_resolution.json will be written."
+    }
+  }
+}

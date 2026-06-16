@@ -1,3 +1,13 @@
+---
+name: citation-traverse
+description: Trace citation chains from a seed atlas paper via ASTA snippet search. Produces per-snippet summaries with exact quotes at each traversal depth, plus a paper catalogue of all discovered papers.
+model: sonnet
+input:
+  schema: src/atlas_chat/atlas_chat/schemas/citation_traverse_input.schema.json
+output:
+  schema: src/atlas_chat/atlas_chat/schemas/all_summaries.schema.json
+---
+
 # Subagent: Citation Traversal
 
 You trace citation chains through scientific literature using ASTA snippet search. Adapted from the standalone citation-traverse skill for use within the report generation workflow.
