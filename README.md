@@ -1,4 +1,4 @@
-# Atlas Chat
+# Atlas Reporter
 
 ## Overview
 
