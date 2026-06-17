@@ -10,7 +10,6 @@ Atlas Chat addresses this problem by enabling researchers to explore the literat
 
 Atlas Chat generates structured, evidence-grounded cell type reports via an interactive Claude Code workflow (`/run-workflow`). The workflow fetches supplementary material, resolves cell type names from the atlas paper, traverses the citation network, and synthesises a markdown report — all using MCP tools and specialised subagents. Every claim is backed by an exact quote from a source paper.
 
-> **Deprecated — programmatic path.** An earlier `atlas-report` CLI (PydanticAI graph in `src/.../graphs/`) is retained for reference only. Do not use it for new work; use `/run-workflow` instead.
 
 ## Design Principles
 
@@ -32,6 +31,8 @@ LLMs can fabricate quotes and identifiers. Atlas Chat treats this as a first-cla
 
 ## Quick Start
 
+Running Atlas-reporter requires an ASTA API KEY. You can apply for one here: https://allenai.org/asta/resources/mcp.
+
 ### Installation
 
 ```bash
@@ -42,7 +43,6 @@ uv sync
 Create a `.env` file in the repository root with the required API keys:
 
 ```
-ANTHROPIC_API_KEY=sk-...
 ASTA_API_KEY=...
 ```
 
@@ -55,6 +55,8 @@ Open a Claude Code session in this directory. The MCP servers defined in `.mcp.j
 ```
 
 Claude will ask for a project name and cell type label, then execute the full pipeline.
+
+> **Deprecated — programmatic path.** An earlier `atlas-report` CLI (PydanticAI graph in `src/.../graphs/`) is retained for reference only. Do not use it for new work; use `/run-workflow` instead.
 
 ## Project Configuration
 
@@ -159,9 +161,7 @@ The Python package (`src/atlas_chat/`) provides supporting utilities used by the
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | Yes | Anthropic API access |
 | `ASTA_API_KEY` | Yes | Semantic Scholar API access |
-| `OPENAI_API_KEY` | No | OpenAI API access (alternative provider) |
 
 ## Development
 
