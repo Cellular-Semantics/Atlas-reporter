@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "synthesize_report_input.schema.json",
+  "title": "SynthesizeReportInput",
+  "description": "Input contract for the synthesize-report orchestration. The agent reads evidence files from traversal_dir and writes the report markdown to reports_dir.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["traversal_dir", "reports_dir", "cell_type"],
+  "properties": {
+    "traversal_dir": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Directory containing name_resolution.json, supplementary_findings.json, all_summaries.json, and paper_catalogue.json."
+    },
+    "reports_dir": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Directory where the report markdown file will be written."
+    },
+    "cell_type": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Cell type label — used as the report filename ({cell_type}.md)."
+    },
+    "validation_feedback": {
+      "type": "string",
+      "description": "Error list from a previous failed validation attempt. Present only on retry runs."
+    }
+  }
+}

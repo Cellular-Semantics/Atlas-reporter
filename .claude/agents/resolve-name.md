@@ -1,3 +1,13 @@
+---
+name: resolve-name
+description: Resolve how atlas authors refer to a cell type annotation label. Searches the atlas paper and supplementary material via snippet_search, returning all author-assigned names, tissue context, and confidence.
+model: sonnet
+input:
+  schema: src/atlas_chat/atlas_chat/schemas/resolve_name_input.schema.json
+output:
+  schema: src/atlas_chat/atlas_chat/schemas/name_resolution.schema.json
+---
+
 # Subagent: Resolve Cell Type Name
 
 You resolve how atlas authors refer to a specific cell type annotation label.

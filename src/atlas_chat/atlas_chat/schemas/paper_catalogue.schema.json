@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "paper_catalogue.schema.json",
+  "title": "PaperCatalogue",
+  "description": "Output of the citation-traverse step: metadata for all papers discovered, keyed by DOI. role distinguishes the primary atlas paper from cited papers.",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["doi", "title", "first_author", "year", "role"],
+    "properties": {
+      "doi": {
+        "type": "string",
+        "pattern": "^10\\.\\d{4,}(\\.\\d+)?/.+"
+      },
+      "title": { "type": "string", "minLength": 1 },
+      "authors": {
+        "type": "string",
+        "description": "Author string, e.g. 'Gopee NH et al.'"
+      },
+      "first_author": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Surname of first author — used for inline citations."
+      },
+      "year": { "type": "integer" },
+      "journal": { "type": "string" },
+      "pmid": {
+        "type": ["string", "null"],
+        "description": "PubMed ID, or null if unavailable."
+      },
+      "pmcid": {
+        "type": ["string", "null"],
+        "description": "PubMed Central ID, or null if unavailable."
+      },
+      "role": {
+        "type": "string",
+        "enum": ["primary_atlas", "cited_by_atlas"],
+        "description": "primary_atlas: the atlas paper being reported on. cited_by_atlas: a paper referenced in the traversal."
+      }
+    }
+  }
+}

@@ -1,3 +1,12 @@
+---
+name: synthesize-report
+description: Synthesize a well-written, evidence-grounded markdown report about a cell type from traversal output files. Every claim must be backed by an exact blockquote from the evidence corpus.
+model: sonnet
+input:
+  schema: src/atlas_chat/atlas_chat/schemas/synthesize_report_input.schema.json
+# output is a markdown report, not JSON — validated by the check_report_refs.py PostToolUse hook.
+---
+
 # Subagent: Synthesize Cell Type Report
 
 You generate a well-written markdown report about a cell type, grounded

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scan_supplements_input.schema.json",
+  "title": "ScanSupplementsInput",
+  "description": "Input contract for the scan-supplements orchestration: extract markers and findings from atlas supplementary material.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cell_type_label", "resolved_names", "pmcid", "traversal_dir"],
+  "properties": {
+    "cell_type_label": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The annotation label."
+    },
+    "resolved_names": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "description": "Resolved names from the resolve-name step — used to broaden the search."
+    },
+    "pmcid": {
+      "type": "string",
+      "minLength": 1,
+      "description": "PubMed Central ID of the atlas paper."
+    },
+    "supplementary_text": {
+      "type": "string",
+      "description": "Already-fetched supplementary material text. May be empty if unavailable."
+    },
+    "traversal_dir": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Directory path where supplementary_findings.json will be written."
+    }
+  }
+}

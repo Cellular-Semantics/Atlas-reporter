@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "name_resolution.schema.json",
+  "title": "NameResolution",
+  "description": "Output of the resolve-name step: the resolved names and context for a cell type annotation label.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["label", "resolved_names", "scope", "tissue_context", "confidence", "evidence"],
+  "properties": {
+    "label": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The original annotation label as given."
+    },
+    "resolved_names": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "description": "All names the atlas authors use for this cell type. Includes the original label if no alternative was found."
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["adult", "fetal", "organoid"]
+    },
+    "tissue_context": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The tissue or organ context as described in the atlas paper."
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Confidence in the resolution. 'low' when the label could not be resolved to an author-assigned name."
+    },
+    "evidence": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Brief note on where the name was found (e.g. 'Extended Data Fig. 5 cluster annotations')."
+    }
+  }
+}

@@ -14,12 +14,12 @@ See main project README at repository root for complete documentation.
 
 ## Package Contents
 
-- **agents/** - Agent classes coordinating workflow execution
-- **graphs/** - Workflow orchestration (optional, delete if not needed)
-- **schemas/** - JSON schemas (source of truth for data models)
-- **services/** - LLM and API integration layer
-- **utils/** - Supporting utilities
-- **validation/** - Cross-cutting validations (optional)
+- **atlas_chat/agents/** - Agent classes and canonical `*.prompt.yaml` files
+- **atlas_chat/graphs/** - Workflow orchestration (deprecated programmatic path)
+- **atlas_chat/schemas/** - JSON schemas (source of truth for data models)
+- **atlas_chat/services/** - LLM and API integration layer
+- **atlas_chat/utils/** - Supporting utilities
+- **atlas_chat/validation/** - Cross-cutting validations (report checker)
 
 ## Development
 

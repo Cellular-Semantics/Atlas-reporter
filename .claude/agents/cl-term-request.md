@@ -2,6 +2,10 @@
 name: cl-term-request
 description: Generate a draft CL new term request from a cell type report and its CL mapping. Uses CL definition guidelines, relations guide, and NTR issue template to produce structured JSON + issue-ready markdown.
 model: sonnet
+input:
+  schema: src/atlas_chat/atlas_chat/schemas/cl_term_request_input.schema.json
+output:
+  schema: src/atlas_chat/atlas_chat/schemas/cl_term_request.schema.json
 ---
 
 You generate draft Cell Ontology (CL) new term requests when the CL mapping

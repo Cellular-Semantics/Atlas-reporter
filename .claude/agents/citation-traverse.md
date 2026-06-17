@@ -1,3 +1,14 @@
+---
+name: citation-traverse
+description: Trace citation chains from a seed atlas paper via ASTA snippet search. Produces per-snippet summaries with exact quotes at each traversal depth, plus a paper catalogue of all discovered papers.
+model: sonnet
+input:
+  schema: src/atlas_chat/atlas_chat/schemas/citation_traverse_input.schema.json
+output:
+  all_summaries: src/atlas_chat/atlas_chat/schemas/all_summaries.schema.json
+  paper_catalogue: src/atlas_chat/atlas_chat/schemas/paper_catalogue.schema.json
+---
+
 # Subagent: Citation Traversal
 
 You trace citation chains through scientific literature using ASTA snippet search. Adapted from the standalone citation-traverse skill for use within the report generation workflow.
@@ -8,7 +19,7 @@ You receive:
 - `seed_paper_id` — CorpusId, DOI, or PMID of the atlas paper
 - `query` — constructed from: `"{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers"`
 - `depth` — traversal depth (default 1, max 3)
-- `output_dir` — traversal output directory
+- `traversal_dir` — traversal output directory
 
 ## Procedure
 
@@ -32,8 +43,8 @@ You receive:
 
 3. Extract referenced CorpusIds directly from the ASTA snippet results (look for `corpusId` fields in the response metadata, and for CorpusId patterns in the snippet text).
 4. Save:
-   - `{output_dir}/depth_0_snippets.json` — raw snippet_search response
-   - `{output_dir}/depth_0_summaries.json` — array of per-snippet summaries
+   - `{traversal_dir}/depth_0_snippets.json` — raw snippet_search response
+   - `{traversal_dir}/depth_0_summaries.json` — array of per-snippet summaries
 
 ### Depth 1..N: Follow references
 
@@ -48,12 +59,12 @@ You receive:
 
 11. Collect ALL unique corpus IDs from all depths.
 12. Call `get_paper_batch(ids=[...], fields="title,authors,year,venue,publicationDate,url,isOpenAccess")`.
-13. Save to `{output_dir}/paper_catalogue.json`.
+13. Save to `{traversal_dir}/paper_catalogue.json`.
 
 ## Output
 
-- `{output_dir}/all_summaries.json` — merged summaries from all depths
-- `{output_dir}/paper_catalogue.json` — metadata for all discovered papers
+- `{traversal_dir}/all_summaries.json` — merged summaries from all depths
+- `{traversal_dir}/paper_catalogue.json` — metadata for all discovered papers
 
 ## CorpusId Retrieval
 

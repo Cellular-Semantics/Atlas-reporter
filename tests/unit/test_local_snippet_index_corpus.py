@@ -11,7 +11,6 @@ from pathlib import Path
 
 import numpy as np
 import pytest
-
 from atlas_chat.services import local_snippet_index as lsi
 
 # ---------------------------------------------------------------------------

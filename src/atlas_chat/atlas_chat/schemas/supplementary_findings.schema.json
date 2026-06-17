@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "supplementary_findings.schema.json",
+  "title": "SupplementaryFindings",
+  "description": "Output of the scan-supplements step: markers, annotations, and evidence quotes extracted from atlas supplementary material.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["markers", "other_findings", "evidence_quotes"],
+  "properties": {
+    "markers": {
+      "type": "array",
+      "description": "Marker genes with evidence type and source.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["gene", "evidence_type", "source_table"],
+        "properties": {
+          "gene": { "type": "string", "minLength": 1 },
+          "evidence_type": {
+            "type": "string",
+            "minLength": 1,
+            "description": "e.g. 'DE analysis', 'known markers', 'immunostaining'"
+          },
+          "source_table": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "other_findings": {
+      "type": "array",
+      "description": "Non-marker findings: functional annotations, spatial info, trajectory data.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["finding", "category", "source_table"],
+        "properties": {
+          "finding": { "type": "string", "minLength": 1 },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "description": "e.g. 'function', 'spatial', 'trajectory', 'morphology'"
+          },
+          "source_table": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "evidence_quotes": {
+      "type": "array",
+      "description": "Exact quotes from supplementary material — must be exact substrings of the source text.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["quote", "source_file", "context"],
+        "properties": {
+          "quote": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Exact substring of the supplementary text."
+          },
+          "source_file": { "type": "string", "minLength": 1 },
+          "context": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

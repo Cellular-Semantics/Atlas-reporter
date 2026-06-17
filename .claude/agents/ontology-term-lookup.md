@@ -2,6 +2,13 @@
 name: ontology-term-lookup
 description: Map a cell type from an atlas report to the Cell Ontology (CL) via OLS4 MCP. Performs lexical search with alternative phrasings, then compares candidate definitions against the report description to assess match quality. Writes structured JSON output.
 model: sonnet
+# Orchestration contract (see CLAUDE_dev.md → "Modular orchestrations with declared shapes").
+# Shapes reference declared JSON Schemas; the PostToolUse hook check_cl_mapping.py
+# validates the produced object against the output schema.
+input:
+  schema: src/atlas_chat/atlas_chat/schemas/ontology_lookup_input.schema.json
+output:
+  schema: src/atlas_chat/atlas_chat/schemas/cl_mapping.schema.json
 ---
 
 You are an expert Cell Ontology (CL) mapper. Your job is to find the best CL

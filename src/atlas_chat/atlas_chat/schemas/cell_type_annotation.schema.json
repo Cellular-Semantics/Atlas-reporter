@@ -29,6 +29,14 @@
           "type": "string",
           "description": "Full title of the publication."
         },
+        "pmcid": {
+          "type": "string",
+          "description": "PubMed Central ID, e.g. 'PMC11578897'."
+        },
+        "pmid": {
+          "type": "string",
+          "description": "PubMed ID."
+        },
         "abstract": {
           "type": "string",
           "description": "Abstract of the publication."

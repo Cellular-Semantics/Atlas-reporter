@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cl_term_request_input.schema.json",
+  "title": "CLTermRequestInput",
+  "description": "Input contract for the cl-term-request orchestration: draft a CL new term request from a cell type report and its CL mapping.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["report_path", "cl_mapping_path", "output_path"],
+  "properties": {
+    "report_path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Path to the cell type report markdown file."
+    },
+    "cl_mapping_path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Path to cl_mapping.json from the ontology-term-lookup step."
+    },
+    "output_path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Path to write the cl_term_request.json result (validated against cl_term_request.schema.json)."
+    }
+  }
+}

@@ -6,6 +6,18 @@
 
 ---
 
+## Curation mode
+
+This session runs in **curation mode** by default. Writes are restricted to
+`projects/` and `planning/`. Edits to source code (`src/`), infrastructure
+(`.claude/`, `tests/`, `docs/`), or root config files are **out of scope** and
+will be blocked by the `curation_guard.py` PreToolUse hook.
+
+If you need to capture a code suggestion, write a note under `planning/` and
+stop. Dev-mode sessions start from `CLAUDE_dev.md`.
+
+---
+
 ## Shared Prompts
 
 These YAML files are the canonical prompts — shared between this agentic
@@ -81,8 +93,9 @@ the atlas paper. This avoids fragile full text download → grep → parse cycle
 and returns relevance-ranked text.
 
 **Input:**
-- Cell type label, atlas DOI, scope
-- Supplementary text from step 2
+- `cell_type_label`, `atlas_doi`, `scope`
+- `supplementary_text` from step 2
+- `traversal_dir`: `projects/{project}/traversal_output/{cell_type}`
 
 **Output:** `projects/{project}/traversal_output/{cell_type}/name_resolution.json`
 
@@ -105,8 +118,9 @@ These two steps are independent after name resolution. Run them in parallel.
 #### 4a. Scan Supplements → subagent: `scan-supplements`
 
 **Input:**
-- PMCID, cell type label + resolved names
-- Supplementary text from step 2
+- `pmcid`, `cell_type_label`, `resolved_names`
+- `supplementary_text` from step 2
+- `traversal_dir`: `projects/{project}/traversal_output/{cell_type}`
 
 **Output:** `projects/{project}/traversal_output/{cell_type}/supplementary_findings.json`
 
@@ -122,9 +136,10 @@ These two steps are independent after name resolution. Run them in parallel.
 #### 4b. Citation Traverse → subagent: `citation-traverse`
 
 **Input:**
-- Seed paper ID (CorpusId from snippet metadata, or `DOI:{doi}`)
-- Query: `"{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers"`
-- Depth: 1 (default), configurable up to 3
+- `seed_paper_id`: CorpusId from snippet metadata, or `DOI:{doi}`
+- `query`: `"{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers"`
+- `depth`: 1 (default), configurable up to 3
+- `traversal_dir`: `projects/{project}/traversal_output/{cell_type}`
 
 **Local snippet index (fresh preprints):** if
 `projects/{project}/local_index/manifest.json` exists, the graph also calls
@@ -139,7 +154,10 @@ how to build the index when ASTA is blind to the atlas paper.
 
 ### 5. Synthesize Report → subagent: `synthesize-report`
 
-**Input:** Reads all output files from steps 3-4.
+**Input:**
+- `traversal_dir`: `projects/{project}/traversal_output/{cell_type}`
+- `reports_dir`: `projects/{project}/reports`
+- `cell_type`: the cell type label
 
 **Output:** `projects/{project}/reports/{cell_type}.md`
 
@@ -272,7 +290,9 @@ projects/{project}/
 │   ├── name_resolution.json
 │   ├── supplementary_findings.json
 │   ├── all_summaries.json
-│   └── paper_catalogue.json
+│   ├── paper_catalogue.json
+│   ├── cl_mapping.json
+│   └── cl_term_request.json    (conditional — only if new_term_needed: true)
 └── reports/
     └── {cell_type}.md
 ```

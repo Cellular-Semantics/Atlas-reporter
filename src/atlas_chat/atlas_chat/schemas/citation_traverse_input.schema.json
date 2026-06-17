@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "citation_traverse_input.schema.json",
+  "title": "CitationTraverseInput",
+  "description": "Input contract for the citation-traverse orchestration: trace citation chains from a seed paper via ASTA snippet search.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["seed_paper_id", "query", "traversal_dir"],
+  "properties": {
+    "seed_paper_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "CorpusId, DOI (DOI:...), or PMID of the atlas paper."
+    },
+    "query": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Search query constructed from: '{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers'."
+    },
+    "depth": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3,
+      "default": 1,
+      "description": "Citation traversal depth. 0 = seed papers only."
+    },
+    "traversal_dir": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Directory path where traversal output files will be written (all_summaries.json, paper_catalogue.json, depth_N_*.json). Typically projects/{project}/traversal_output/{cell_type}/."
+    }
+  }
+}

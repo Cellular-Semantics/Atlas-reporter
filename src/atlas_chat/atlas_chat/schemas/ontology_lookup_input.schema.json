@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ontology_lookup_input.schema.json",
+  "title": "OntologyLookupInput",
+  "description": "Input contract for the ontology-term-lookup orchestration: map a cell type from an atlas report to the Cell Ontology (CL).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["report_path", "cell_type_label", "output_path"],
+  "properties": {
+    "report_path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Path to the cell type report markdown file to read the working definition from."
+    },
+    "cell_type_label": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The cell type annotation label to map to CL."
+    },
+    "output_path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Path to write the cl_mapping.json result (validated against cl_mapping.schema.json)."
+    }
+  }
+}

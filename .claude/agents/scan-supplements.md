@@ -1,3 +1,13 @@
+---
+name: scan-supplements
+description: Scan atlas supplementary material for markers, functional annotations, and evidence quotes for a specific cell type. Returns structured findings with exact source references.
+model: sonnet
+input:
+  schema: src/atlas_chat/atlas_chat/schemas/scan_supplements_input.schema.json
+output:
+  schema: src/atlas_chat/atlas_chat/schemas/supplementary_findings.schema.json
+---
+
 # Subagent: Scan Supplementary Material
 
 You scan supplementary material from an atlas paper for information about a specific cell type.

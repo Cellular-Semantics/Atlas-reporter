@@ -1,0 +1,55 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/curation_guard.py"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/check_cl_mapping.py"
+          },
+          {
+            "type": "command",
+            "command": ".claude/hooks/check_cl_term_request.py"
+          },
+          {
+            "type": "command",
+            "command": ".claude/hooks/check_report_refs.py"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "mcp__Asta_semanticscholar__get_paper",
+      "mcp__Asta_semanticscholar__snippet_search",
+      "mcp__Asta_semanticscholar__get_paper_batch",
+      "mcp__Asta_semanticscholar__get_citations",
+      "mcp__artl-mcp__get_europepmc_full_text",
+      "mcp__artl-mcp__search_europepmc_papers",
+      "mcp__artl-mcp__get_europepmc_paper_by_id",
+      "mcp__ols4__searchClasses",
+      "Bash(uv sync:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "artl-mcp",
+    "playwright",
+    "Asta_semanticscholar",
+    "paper-search",
+    "ols4"
+  ]
+}
