@@ -1,0 +1,93 @@
+{
+  "markers": [
+    {
+      "gene": "CD5L",
+      "evidence_type": "known marker / DE analysis",
+      "source_table": "Extended Data Fig. 6e / Reviewer Fig. 2.2b"
+    },
+    {
+      "gene": "APOE",
+      "evidence_type": "known marker / DE analysis",
+      "source_table": "Extended Data Fig. 6e / Reviewer Fig. 2.2b"
+    },
+    {
+      "gene": "VCAM",
+      "evidence_type": "known marker / DE analysis",
+      "source_table": "Extended Data Fig. 6e / Reviewer Fig. 2.2b"
+    },
+    {
+      "gene": "TIMD4",
+      "evidence_type": "known marker / DE analysis",
+      "source_table": "Extended Data Fig. 6e / Reviewer Fig. 2.2b"
+    },
+    {
+      "gene": "SLC40A1",
+      "evidence_type": "known marker / DE analysis",
+      "source_table": "Extended Data Fig. 6e / Reviewer Fig. 2.2b"
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Iron-recycling macrophages are one of four macrophage subsets identified in prenatal skin (alongside LYVE1+, MHC-II+, and TML macrophages). Marker genes used to annotate this subset were reported consistently across developmental organs in a multi-organ developmental dataset (PMID: 35549310).",
+      "category": "cluster annotation",
+      "source_table": "Reviewer Fig. 2.2b / Extended Data Fig. 6e"
+    },
+    {
+      "finding": "Iron-recycling macrophages are primarily assigned to microenvironment ME2, labelled 'Myeloid/Megakaryocyte-erythroid enriched', based on non-negative matrix factorisation (NMF) of cell2location spatial abundance profiles.",
+      "category": "spatial / microenvironment",
+      "source_table": "Fig. 1d / Supplementary Table 40"
+    },
+    {
+      "finding": "Iron-recycling macrophages expressed gene programmes driving angiogenesis as identified by gene ontology (GO) analysis. GSEA statistics for iron-recycling macrophages are provided in Supplementary Table 24.",
+      "category": "function / gene set enrichment",
+      "source_table": "Supplementary Table 24"
+    },
+    {
+      "finding": "Differential expression analysis between macrophage subsets (including iron-recycling macrophages, TLM macrophages, LYVE1+ macrophages, and MHC-II+ macrophages) was performed using two-sided Wilcoxon rank-sum test with Benjamini-Hochberg adjustment. Results are in Supplementary Table 22.",
+      "category": "DE analysis",
+      "source_table": "Supplementary Table 22"
+    },
+    {
+      "finding": "A logistic regression model trained on reindeer skin macrophage clusters was projected onto human prenatal skin macrophage subsets, including iron-recycling macrophages, to assess cross-species similarity. Results in Supplementary Table 21.",
+      "category": "cross-species comparison",
+      "source_table": "Supplementary Table 21 / Extended Data Fig. 7f"
+    },
+    {
+      "finding": "A comprehensive list of differentially expressed genes for each macrophage population, including iron-recycling macrophages, is provided in Supplementary Table 3.",
+      "category": "DE analysis",
+      "source_table": "Supplementary Table 3"
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Iron-recycling macrophages: CD5L, APOE, VCAM, TIMD4, SLC40A1",
+      "source_file": "PMC11578897 peer-review/rebuttal text",
+      "context": "Marker genes for iron-recycling macrophages reported in multi-organ developmental dataset (PMID: 35549310) and used to annotate the subset in prenatal skin"
+    },
+    {
+      "quote": "Iron-recycling and LYVE1+ macrophages to ME2, TML macrophages to ME1, MHC-II+ macrophages to ME5",
+      "source_file": "PMC11578897 peer-review/rebuttal text",
+      "context": "Microenvironment assignment for macrophage subsets based on NMF of cell2location spatial abundance profiles (Fig. 1d)"
+    },
+    {
+      "quote": "The four macrophage subsets (LYVE1+, MHC-II+, TML and iron-recycling) expressed gene programmes driving angiogenesis by gene ontology analysis (Supplementary Tables 23-26).",
+      "source_file": "PMC11578897 peer-review/rebuttal text",
+      "context": "Gene ontology analysis showing all four macrophage subsets, including iron-recycling macrophages, have angiogenic gene programmes"
+    },
+    {
+      "quote": "Supplementary Table 22: DEGs between macrophage subsets.\nDifferential expression analysis (two-sided Wilcoxon rank-sum, Benjamini-Hochberg adjusted) results between macrophage subsets in prenatal skin, including TLM macrophages, iron-recycling macrophages, LYVE1+ macrophages and MHC-II+ macrophages.",
+      "source_file": "PMC11578897 supplementary table legends",
+      "context": "Description of Supplementary Table 22 containing DEGs between macrophage subsets"
+    },
+    {
+      "quote": "Supplementary Table 24: GSEA statistics for iron-recycling macrophages.\nGene set enrichment outputs results for genes differentially expressed by iron-recycling macrophages. P values provided from Fisher exact test, adjusted using Benjamini-Hochberg correction, and ranked by z-score.",
+      "source_file": "PMC11578897 supplementary table legends",
+      "context": "Description of Supplementary Table 24 containing GSEA results for iron-recycling macrophages"
+    },
+    {
+      "quote": "MHCIIhi expressing: CLEC7A, HLA-DPA1, HLA-DRA Iron-recycling macrophages: CD5L, APOE, VCAM, TIMD4, SLC40A1 LYVE1hi macrophages: LYVE1, SPP1, F13A1 TREM2+ macrophages: TREM2, P2RY12",
+      "source_file": "PMC11578897 peer-review/rebuttal text",
+      "context": "Marker genes for all four macrophage subsets reported from multi-organ developmental dataset (PMID: 35549310)"
+    }
+  ]
+}

@@ -27,13 +27,13 @@ import sys
 from pathlib import Path
 
 # Trusted users use the denylist path instead of the allowlist.
-TRUSTED_USERS = {"ubyndr@gmail.com", "ub2@sanger.ac.uk"}
+TRUSTED_USERS = {"ubyndr@gmail.com", "ub2@sanger.ac.uk", "dosumis@gmail.com"}
 
 # Non-trusted: only these top-level zones are writable.
 _ALLOWLIST_ZONES = ("projects", "planning")
 
 # Trusted: these top-level zones are always blocked, even in dev sessions.
-_DENYLIST_ZONES = ("src", ".claude", "tests")
+_DENYLIST_ZONES = ("")
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[2]
 

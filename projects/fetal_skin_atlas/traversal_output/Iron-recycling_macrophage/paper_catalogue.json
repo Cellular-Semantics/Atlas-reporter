@@ -1,0 +1,122 @@
+{
+  "273400864": {
+    "doi": "10.1038/s41586-024-08002-x",
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "authors": [
+      "N. Gopee",
+      "Elena Winheim",
+      "B. Olabi",
+      "M. Haniffa"
+    ],
+    "year": 2024,
+    "journal": "Nature"
+  },
+  "248122197": {
+    "doi": "10.1126/science.abo0510",
+    "title": "Mapping the developing human immune system across organs",
+    "authors": [
+      "Chenqu Suo",
+      "E. Dann",
+      "Issac Goh",
+      "Laura Jardine",
+      "M. Haniffa",
+      "S. Teichmann"
+    ],
+    "year": 2022,
+    "journal": "Science"
+  },
+  "257578469": {
+    "doi": "10.1038/s41577-023-00848-y",
+    "title": "Tissue-specific macrophages: how they develop and choreograph tissue biology",
+    "authors": [
+      "E. Mass",
+      "F. Nimmerjahn",
+      "Katrin Kierdorf",
+      "A. Schlitzer"
+    ],
+    "year": 2023,
+    "journal": "Nature reviews. Immunology"
+  },
+  "227334677": {
+    "doi": "10.1016/j.xcrm.2020.100132",
+    "title": "Developing Human Skin Contains Lymphocytes Demonstrating a Memory Signature",
+    "authors": [
+      "M. Dhariwala",
+      "Dhuvarakesh Karthikeyan",
+      "M. Rosenblum",
+      "T. Scharschmidt"
+    ],
+    "year": 2020,
+    "journal": "Cell Reports Medicine"
+  },
+  "248748803": {
+    "doi": "10.1126/science.abl5197",
+    "title": "Cross-tissue immune cell analysis reveals tissue-specific features in humans",
+    "authors": [
+      "C. Dom\u00ednguez Conde",
+      "C. Xu",
+      "S. Teichmann"
+    ],
+    "year": 2022,
+    "journal": "Science"
+  },
+  "3983842": {
+    "doi": "10.1016/j.cell.2014.01.069",
+    "title": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages",
+    "authors": [
+      "Malay Haldar",
+      "M. Kohyama",
+      "T. Murphy",
+      "K. Murphy"
+    ],
+    "year": 2014,
+    "journal": "Cell"
+  },
+  "53036548": {
+    "doi": "10.1038/s41467-018-06318-7",
+    "title": "Single cell RNA sequencing of human liver reveals distinct intrahepatic macrophage populations",
+    "authors": [
+      "S. Macparland",
+      "Jeffrey C. Liu",
+      "I. McGilvray"
+    ],
+    "year": 2018,
+    "journal": "Nature Communications"
+  },
+  "238228210": {
+    "doi": "10.1038/s41586-021-03929-x",
+    "title": "Blood and immune development in human fetal bone marrow and Down syndrome",
+    "authors": [
+      "Laura Jardine",
+      "S. Webb",
+      "Issac Goh",
+      "M. Haniffa"
+    ],
+    "year": 2021,
+    "journal": "Nature"
+  },
+  "209388781": {
+    "doi": "10.1002/glia.23767",
+    "title": "Transcriptional profiling of microglia; current state of the art and future perspectives",
+    "authors": [
+      "E. Gerrits",
+      "Yang Heng",
+      "E. Boddeke",
+      "B. Eggen"
+    ],
+    "year": 2019,
+    "journal": "Glia"
+  },
+  "311005": {
+    "doi": "10.1084/JEM.20160800",
+    "title": "CXCR4 identifies transitional bone marrow premonocytes that replenish the mature monocyte pool for peripheral responses",
+    "authors": [
+      "Shu Zhen Chong",
+      "Maximilien Evrard",
+      "F. Ginhoux",
+      "L. Ng"
+    ],
+    "year": 2016,
+    "journal": "Journal of Experimental Medicine"
+  }
+}

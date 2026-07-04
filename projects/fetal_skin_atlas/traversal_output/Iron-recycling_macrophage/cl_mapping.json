@@ -1,0 +1,49 @@
+{
+  "cell_type_label": "Iron-recycling macrophage",
+  "working_definition": "Iron-recycling macrophages are a tissue-resident macrophage subset identified in prenatal human skin (7–17 PCW) characterised by expression of CD5L, APOE, VCAM1, TIMD4, and SLC40A1 (ferroportin), markers shared with erythrophagocytic macrophages of the adult spleen and liver. They reside in the myeloid/megakaryocyte-erythroid microenvironment (ME2) of the fetal dermis, where they are thought to recycle iron via erythrophagocytosis and heme catabolism. In prenatal skin they additionally promote endothelial cell chemotaxis and angiogenesis; the subset was defined cross-organ in developing human tissues by Suo et al. (2022) as one of eight broad prenatal macrophage groupings.",
+  "searches_performed": [
+    "iron-recycling macrophage",
+    "erythrophagocytic macrophage",
+    "tissue-resident macrophage",
+    "red pulp macrophage",
+    "dermal macrophage",
+    "skin macrophage",
+    "Kupffer cell",
+    "macrophage iron homeostasis",
+    "erythrocyte phagocytosing macrophage",
+    "TIMD4 macrophage",
+    "iron recycling cell erythrophagocytosis",
+    "erythrophagocyte"
+  ],
+  "best_match": {
+    "cl_term": "tissue-resident macrophage",
+    "cl_id": "CL:0000864",
+    "cl_definition": "A macrophage constitutively resident in a particular tissue under non-inflammatory conditions, and capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "No CL term exists for 'iron-recycling macrophage' as a functional class, nor for any skin- or dermis-resident macrophage with erythrophagocytic/iron-recycling specialisation. The report cell type is unambiguously a tissue-resident macrophage (TIMD4+ long-lived resident, non-inflammatory baseline state, phagocytic), placing it under CL:0000864 as a valid IS-A parent. However, CL:0000864 is substantially more general: it does not capture the defining features of the iron-recycling subset — the CD5L/APOE/VCAM1/TIMD4/SLC40A1 marker profile, the erythrophagocytic/iron-export specialisation, the prenatal skin/dermis location, or the pro-angiogenic role. The splenic red pulp macrophage (CL:0000874) shares the erythrocyte-clearance function but is organ-restricted to the spleen and has different surface markers (F4/80+, CD68+, MR+, Dectin2+) inconsistent with the skin population. The Kupffer cell (CL:0000091) shares iron homeostasis function but is definitionally located in hepatic sinusoids. The iron-recycling macrophage in prenatal skin is therefore a more specific entity than any existing CL term, making tissue-resident macrophage the best (broad) match.",
+  "other_candidates": [
+    {
+      "cl_term": "splenic red pulp macrophage",
+      "cl_id": "CL:0000874",
+      "cl_definition": "A splenic macrophage found in the red-pulp of the spleen, and involved in immune responses to blood-borne pathogens and in the clearance of senescent erythrocytes. Markers include F4/80-positive, CD68-positive, MR-positive, Dectin2-positive, macrosialin-positive, and sialoadhesin-low.",
+      "reason_rejected": "Functionally analogous (erythrocyte clearance, iron recycling) but definitionally restricted to the spleen and characterised by a different marker set (F4/80+, MR+, Dectin2+, sialoadhesin-low) that does not match the prenatal skin population (CD5L+, TIMD4+, SLC40A1+). Not a valid parent or equivalent for a skin-resident cell."
+    },
+    {
+      "cl_term": "Kupffer cell",
+      "cl_id": "CL:0000091",
+      "cl_definition": "A tissue-resident macrophage of the reticuloendothelial system found on the luminal surface of the hepatic sinusoids involved in erythrocyte clearance. Markers include F4/80+, CD11b-low, CD68-positive, sialoadhesin-positive, CD163/SRCR-positive.",
+      "reason_rejected": "Shares iron homeostasis and erythrocyte clearance roles but is definitionally restricted to the hepatic sinusoids. The iron-recycling macrophage in prenatal skin is not in the liver and does not carry the hepatic-specific marker profile. Not a valid parent or equivalent."
+    },
+    {
+      "cl_term": "macrophage",
+      "cl_id": "CL:0000235",
+      "cl_definition": "A mononuclear phagocyte present in variety of tissues, typically differentiated from monocytes, capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+      "reason_rejected": "Valid ancestor but too broad to be the best match. CL:0000864 (tissue-resident macrophage) is a more informative parent that correctly captures the constitutive tissue-resident character of the iron-recycling subset."
+    }
+  ],
+  "recommendation": "Use CL:0000864 (tissue-resident macrophage) as a broad match annotation. Submit a new term request to the Cell Ontology for an 'iron-recycling macrophage' concept, defined as a tissue-resident macrophage characterised by expression of CD5L, APOE, TIMD4, and SLC40A1 (ferroportin) and specialised for erythrophagocytosis and iron export, found across developing human organs including prenatal skin.",
+  "new_term_needed": true
+}

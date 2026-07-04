@@ -1,0 +1,8 @@
+{
+  "label": "Iron-recycling macrophage",
+  "resolved_names": ["Iron-recycling macrophage", "iron-recycling macrophage"],
+  "scope": "fetal",
+  "tissue_context": "prenatal human skin (7–17 PCW)",
+  "confidence": "high",
+  "evidence": "Term used consistently throughout the paper as one of four macrophage subsets. Supplementary material (peer-review response, line citing PMID:35549310) explicitly lists markers: 'Iron-recycling macrophages: CD5L, APOE, VCAM, TIMD4, SLC40A1'. Snippet search confirms the term 'iron-recycling' appears in the atlas body text (e.g. 'TML, Iron-recycling, LYVE1+ and MHCII+ macrophages') and in Supplementary Tables 22 and 24. The label appears both capitalised ('Iron-recycling macrophage') and lowercased ('iron-recycling macrophage') across the manuscript and supplementary material."
+}
