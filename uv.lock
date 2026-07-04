@@ -296,7 +296,7 @@ zarr-reader = [
 requires-dist = [
     { name = "cellsem-llm-client", git = "https://github.com/Cellular-Semantics/cellsem_llm_client.git?rev=main" },
     { name = "curl-cffi", marker = "extra == 'local-index'", specifier = ">=0.7.0" },
-    { name = "cxg-author-probe", git = "https://github.com/Cellular-Semantics/cxg-author-probe.git?rev=ea4d9b0f6127ea41c48d7b86201baa8cccf2e226" },
+    { name = "cxg-author-probe", git = "https://github.com/Cellular-Semantics/cxg-author-probe.git?rev=2eb0d1113ea78f89bd7ac3edebbb3f43d30f739b" },
     { name = "deep-research-client", git = "https://github.com/monarch-initiative/deep-research-client.git?rev=main" },
     { name = "jsonschema", specifier = ">=4.22.0" },
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.10.0" },
@@ -900,7 +900,7 @@ wheels = [
 [[package]]
 name = "cxg-author-probe"
 version = "0.1.0"
-source = { git = "https://github.com/Cellular-Semantics/cxg-author-probe.git?rev=ea4d9b0f6127ea41c48d7b86201baa8cccf2e226#ea4d9b0f6127ea41c48d7b86201baa8cccf2e226" }
+source = { git = "https://github.com/Cellular-Semantics/cxg-author-probe.git?rev=2eb0d1113ea78f89bd7ac3edebbb3f43d30f739b#2eb0d1113ea78f89bd7ac3edebbb3f43d30f739b" }
 dependencies = [
     { name = "aiohttp" },
     { name = "certifi" },

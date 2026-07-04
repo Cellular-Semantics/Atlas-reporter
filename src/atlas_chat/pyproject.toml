@@ -12,7 +12,7 @@ dependencies = [
     "pyyaml>=6.0",
     "cellsem-llm-client @ git+https://github.com/Cellular-Semantics/cellsem_llm_client.git@main",
     "deep-research-client @ git+https://github.com/monarch-initiative/deep-research-client.git@main",
-    "cxg-author-probe @ git+https://github.com/Cellular-Semantics/cxg-author-probe.git@ea4d9b0f6127ea41c48d7b86201baa8cccf2e226",
+    "cxg-author-probe @ git+https://github.com/Cellular-Semantics/cxg-author-probe.git@2eb0d1113ea78f89bd7ac3edebbb3f43d30f739b",
 ]
 
 [project.optional-dependencies]
@@ -30,9 +30,9 @@ local-index = [
     "curl-cffi>=0.7.0",
     "pymupdf4llm>=0.0.17",
 ]
-# AnnData-zarr ObsReader for cxg-author-probe (registered at runtime so
-# cxg-author-probe's probe()/pull() can read zarr stores). Opt-in — zarr is
-# imported lazily inside the reader.
+# Runtime deps for reading AnnData-zarr atlases. The zarr ObsReader itself now
+# lives upstream in cxg-author-probe (built-in, imports zarr lazily); this extra
+# just ensures zarr is importable when atlas-reporter opens a .zarr store.
 zarr-reader = [
     "zarr>=3",
     "numpy>=1.26",
