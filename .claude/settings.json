@@ -51,5 +51,13 @@
     "Asta_semanticscholar",
     "paper-search",
     "ols4"
-  ]
+  ],
+  "extraKnownMarketplaces": {
+    "cxg-author-probe": {
+      "source": { "source": "github", "repo": "Cellular-Semantics/cxg-author-probe" }
+    }
+  },
+  "enabledPlugins": {
+    "cxg-author-probe@cxg-author-probe": true
+  }
 }

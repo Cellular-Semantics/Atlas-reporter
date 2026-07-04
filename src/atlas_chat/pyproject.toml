@@ -12,6 +12,7 @@ dependencies = [
     "pyyaml>=6.0",
     "cellsem-llm-client @ git+https://github.com/Cellular-Semantics/cellsem_llm_client.git@main",
     "deep-research-client @ git+https://github.com/monarch-initiative/deep-research-client.git@main",
+    "cxg-author-probe @ git+https://github.com/Cellular-Semantics/cxg-author-probe.git@ea4d9b0f6127ea41c48d7b86201baa8cccf2e226",
 ]
 
 [project.optional-dependencies]
@@ -28,6 +29,13 @@ local-index = [
     "numpy>=1.26",
     "curl-cffi>=0.7.0",
     "pymupdf4llm>=0.0.17",
+]
+# AnnData-zarr ObsReader for cxg-author-probe (registered at runtime so
+# cxg-author-probe's probe()/pull() can read zarr stores). Opt-in — zarr is
+# imported lazily inside the reader.
+zarr-reader = [
+    "zarr>=3",
+    "numpy>=1.26",
 ]
 
 [project.scripts]

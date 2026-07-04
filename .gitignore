@@ -7,9 +7,14 @@ __pycache__/
 .ruff_cache/
 .mypy_cache/
 .pytest_cache/
+.coverage
 dist/
 build/
 docs/_build/
 .claude/settings.local.json
+
+# Temporary co-development checkout of cxg-author-probe (CAS+ alignment phase).
+# Removed once the CAP+ contract is stable and the dep is pinned to a git ref.
+_codev/
 
 #projects/
