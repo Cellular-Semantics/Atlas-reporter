@@ -1,0 +1,12 @@
+{
+  "label": "light zone, germinal center",
+  "resolved_names": [
+    "germinal center light zone T follicular helper cell",
+    "GC-Tfh (light zone)",
+    "light zone Tfh"
+  ],
+  "scope": "adult",
+  "tissue_context": "palatine tonsil (germinal center light zone)",
+  "confidence": "high",
+  "evidence": "Azimuth human_tonsil_v2 fine label 'light zone, germinal center' (order 438) denotes a T follicular helper (Tfh) cell positioned in the germinal center light zone. Literature consistently defines GC-Tfh as CXCR5-high, PD-1-high, BCL6+ CD4 T cells that reside in the light zone and deliver selection help to centrocytes. ASTA holds only the atlas abstract (CorpusId 238530091); biology resolved via broader snippet_search."
+}

@@ -1,0 +1,122 @@
+{
+  "cell_type_label": "GC_T_OX40",
+  "suggested_label": "OX40-positive germinal center T cell",
+  "definition": "A germinal center T cell that expresses OX40 (tumor necrosis factor receptor superfamily member 4, TNFRSF4/CD134) at the cell surface, co-expressing CXCR5 and programmed cell death protein 1 (PD-1/PDCD1) as surface markers and the transcription factor BCL6 intracellularly (PMID:27080143). OX40 costimulatory signalling promotes T follicular helper cell differentiation, maintains cell survival, and enhances helper capacity cooperatively with ICOS (PMID:27895177; PMID:34234777). The cell provides cognate help to germinal center B cells to drive affinity maturation and antibody class switching (PMID:31914381). OX40-expressing T follicular helper cells occur in germinal centers of secondary lymphoid organs generally and are not restricted to the tonsil.",
+  "parent_term": {
+    "cl_id": "CL:0009062",
+    "cl_term": "germinal center T cell"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0010754",
+    "uberon_term": "germinal center"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "germinal center",
+      "filler_id": "UBERON:0010754",
+      "notes": "OX40+ GC-Tfh reside within germinal centers of secondary lymphoid organs; not restricted to the tonsil (broad ASTA search: OX40-high Tfh are a general germinal-center population). The source atlas sampled human palatine tonsil."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "tumor necrosis factor receptor superfamily member 4",
+      "filler_id": "PR:000001960",
+      "notes": "OX40 (TNFRSF4/CD134) is detected at the cell surface by flow cytometry and is the defining marker of this subset. Human-specific PR term used as the atlas is human tonsil."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "programmed cell death protein 1",
+      "filler_id": "PR:000001919",
+      "notes": "PD-1 (PDCD1) is a canonical surface marker of GC-Tfh cells, co-expressed with CXCR5, used to gate this population by flow cytometry in human tonsil."
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "germinal center B cell differentiation",
+      "filler_id": "GO:0002314",
+      "notes": "OX40+ GC-Tfh cells provide cognate help to germinal center B cells, supporting their selection, affinity maturation, and differentiation. The cell carries out part of this process (it is the helper, not the differentiating B cell)."
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "T follicular helper cell differentiation",
+      "filler_id": "GO:0061470",
+      "notes": "OX40 costimulatory signalling actively promotes T follicular helper cell differentiation; this cell type represents the OX40-high end-state of this process."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "OX40-positive germinal center T follicular helper cell",
+      "scope": "exact",
+      "reference": "PMID:34234777"
+    },
+    {
+      "value": "OX40+ GC-Tfh cell",
+      "scope": "exact",
+      "reference": "PMID:34234777"
+    },
+    {
+      "value": "TNFRSF4-positive germinal center T follicular helper cell",
+      "scope": "exact",
+      "reference": "PMID:27895177"
+    },
+    {
+      "value": "CD134-positive germinal center T cell",
+      "scope": "related",
+      "reference": "PMID:34234777"
+    },
+    {
+      "value": "OX40-expressing follicular helper T cell",
+      "scope": "related",
+      "reference": "PMID:27895177"
+    },
+    {
+      "value": "germinal center T follicular helper cell",
+      "scope": "broad",
+      "reference": "PMID:31914381"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.3389/fimmu.2021.670637",
+      "pmid": "PMID:34234777",
+      "citation": "Fu et al. (2021)",
+      "supports": "OX40/OX40L signalling drives Tfh differentiation, sustains survival, and enhances B-cell helper function; OX40 expression on Tfh cells"
+    },
+    {
+      "doi": "10.4049/jimmunol.1601356",
+      "pmid": "PMID:27895177",
+      "citation": "Tahiliani et al. (2016)",
+      "supports": "OX40 expression on Tfh cells at T/B border and GC; OX40-ICOS cooperative function; OX40 deficiency impairs GC B cell output"
+    },
+    {
+      "doi": "10.1002/eji.201545499",
+      "pmid": "PMID:27080143",
+      "citation": "Yamashita et al. (2016)",
+      "supports": "BCL6 protein expression in tonsillar GC-Tfh; CXCR5/PD-1 surface phenotype of GC-Tfh in human tonsil"
+    },
+    {
+      "doi": "10.1016/j.celrep.2019.12.016",
+      "pmid": "PMID:31914381",
+      "citation": "Brenna et al. (2020)",
+      "supports": "Tfh cells are fundamental for B cell selection and antibody maturation in germinal centers of human tonsil"
+    },
+    {
+      "doi": "10.64898/2025.12.10.693235",
+      "pmid": "PMID:41427421",
+      "citation": "Dubensky et al. (2025)",
+      "supports": "GC-positioned Tfh in human tonsil defined by GNG4; spatial demarcation of GC-Tfh states; CD4 Tfh coordinate humoral responses in germinal centers"
+    },
+    {
+      "doi": "10.1126/sciimmunol.abh3768",
+      "pmid": "PMID:34623901",
+      "citation": "King et al. (2021)",
+      "supports": "Atlas source: Azimuth human tonsil v2 GC_T_OX40 cluster; integrated single-cell transcriptomics of tonsil germinal center"
+    }
+  ],
+  "justification": "CL:0009062 (germinal center T cell) covers all CXCR5-upregulated, GC-resident CD4+ Tfh cells and is the correct broad-match parent. The atlas cluster GC_T_OX40 is specifically defined by surface expression of OX40 (TNFRSF4/CD134), a functional costimulatory receptor absent from the CL:0009062 definition. OX40 is not merely a passive marker: its signalling actively drives Tfh differentiation, sustains survival, and enhances B-cell helper function cooperatively with ICOS (PMID:27895177; PMID:34234777). No OX40-specific or TNFRSF4-positive Tfh term exists in CL. A new term is needed to represent this functionally and molecularly distinct GC-Tfh subset identified in human palatine tonsil. [Revised 2026-07-28: label shortened from 'OX40-positive germinal center T follicular helper cell of palatine tonsil' and the location axiom generalised from palatine tonsil (UBERON:0002373) to germinal center (UBERON:0010754). A broader ASTA search established that OX40-high GC-Tfh are a general germinal-center population across secondary lymphoid organs (tonsil, lymph node, spleen), not a palatine-tonsil-specific type; tonsil is merely the tissue sampled by the atlas. GC localisation is already carried by the parent CL:0009062.] [Revised 2026-07-28: species-neutral term — marker axioms standardised to generic (cross-species) PR classes per CL convention; marker species attribution retained in the definition text. (PR:P43489->PR:000001960, PR:Q15116->PR:000001919).]",
+  "ntr_markdown": "## New term request: OX40-positive germinal center T cell\n\n**Proposed label:** OX40-positive germinal center T cell\n\n**Definition:** A germinal center T cell that expresses OX40 (tumor necrosis factor receptor superfamily member 4, TNFRSF4/CD134) at the cell surface, co-expressing CXCR5 and programmed cell death protein 1 (PD-1/PDCD1) as surface markers and the transcription factor BCL6 intracellularly (PMID:27080143). OX40 costimulatory signalling promotes T follicular helper cell differentiation, maintains cell survival, and enhances helper capacity cooperatively with ICOS (PMID:27895177; PMID:34234777). The cell provides cognate help to germinal center B cells to drive affinity maturation and antibody class switching (PMID:31914381). OX40-expressing T follicular helper cells occur in germinal centers of secondary lymphoid organs generally and are not restricted to the tonsil.\n\n**Parent (is_a):** germinal center T cell (CL:0009062)\n\n**Anatomical location:** germinal center (UBERON:0010754)\n\n**Logical axioms:**\n- `part of` (BFO:0000050) some **germinal center** (UBERON:0010754) — OX40+ GC-Tfh reside within germinal centers of secondary lymphoid organs; not restricted to the tonsil (broad ASTA search: OX40-high Tfh are a general germinal-center population). The source atlas sampled human palatine tonsil.\n- `has plasma membrane part` (RO:0002104) some **tumor necrosis factor receptor superfamily member 4** (PR:000001960) — OX40 (TNFRSF4/CD134) is detected at the cell surface by flow cytometry and is the defining marker of this subset. Human-specific PR term used as the atlas is human tonsil.\n- `has plasma membrane part` (RO:0002104) some **programmed cell death protein 1** (PR:000001919) — PD-1 (PDCD1) is a canonical surface marker of GC-Tfh cells, co-expressed with CXCR5, used to gate this population by flow cytometry in human tonsil.\n- `capable of part of` (RO:0002216) some **germinal center B cell differentiation** (GO:0002314) — OX40+ GC-Tfh cells provide cognate help to germinal center B cells, supporting their selection, affinity maturation, and differentiation. The cell carries out part of this process (it is the helper, not the differentiating B cell).\n- `capable of part of` (RO:0002216) some **T follicular helper cell differentiation** (GO:0061470) — OX40 costimulatory signalling actively promotes T follicular helper cell differentiation; this cell type represents the OX40-high end-state of this process.\n\n**Synonyms:**\n- OX40-positive germinal center T follicular helper cell (exact)\n- OX40+ GC-Tfh cell (exact)\n- TNFRSF4-positive germinal center T follicular helper cell (exact)\n- CD134-positive germinal center T cell (related)\n- OX40-expressing follicular helper T cell (related)\n- germinal center T follicular helper cell (broad)\n\n**References:**\n- Fu et al. (2021). DOI: 10.3389/fimmu.2021.670637 ; PMID:34234777 — OX40/OX40L signalling drives Tfh differentiation, sustains survival, and enhances B-cell helper function; OX40 expression on Tfh cells\n- Tahiliani et al. (2016). DOI: 10.4049/jimmunol.1601356 ; PMID:27895177 — OX40 expression on Tfh cells at T/B border and GC; OX40-ICOS cooperative function; OX40 deficiency impairs GC B cell output\n- Yamashita et al. (2016). DOI: 10.1002/eji.201545499 ; PMID:27080143 — BCL6 protein expression in tonsillar GC-Tfh; CXCR5/PD-1 surface phenotype of GC-Tfh in human tonsil\n- Brenna et al. (2020). DOI: 10.1016/j.celrep.2019.12.016 ; PMID:31914381 — Tfh cells are fundamental for B cell selection and antibody maturation in germinal centers of human tonsil\n- Dubensky et al. (2025). DOI: 10.64898/2025.12.10.693235 ; PMID:41427421 — GC-positioned Tfh in human tonsil defined by GNG4; spatial demarcation of GC-Tfh states; CD4 Tfh coordinate humoral responses in germinal centers\n- King et al. (2021). DOI: 10.1126/sciimmunol.abh3768 ; PMID:34623901 — Atlas source: Azimuth human tonsil v2 GC_T_OX40 cluster; integrated single-cell transcriptomics of tonsil germinal center\n\n**Justification:** CL:0009062 (germinal center T cell) covers all CXCR5-upregulated, GC-resident CD4+ Tfh cells and is the correct broad-match parent. The atlas cluster GC_T_OX40 is specifically defined by surface expression of OX40 (TNFRSF4/CD134), a functional costimulatory receptor absent from the CL:0009062 definition. OX40 is not merely a passive marker: its signalling actively drives Tfh differentiation, sustains survival, and enhances B-cell helper function cooperatively with ICOS (PMID:27895177; PMID:34234777). No OX40-specific or TNFRSF4-positive Tfh term exists in CL. A new term is needed to represent this functionally and molecularly distinct GC-Tfh subset identified in human palatine tonsil. [Revised 2026-07-28: label shortened from 'OX40-positive germinal center T follicular helper cell of palatine tonsil' and the location axiom generalised from palatine tonsil (UBERON:0002373) to germinal center (UBERON:0010754). A broader ASTA search established that OX40-high GC-Tfh are a general germinal-center population across secondary lymphoid organs (tonsil, lymph node, spleen), not a palatine-tonsil-specific type; tonsil is merely the tissue sampled by the atlas. GC localisation is already carried by the parent CL:0009062.] [Revised 2026-07-28: species-neutral term — marker axioms standardised to generic (cross-species) PR classes per CL convention; marker species attribution retained in the definition text. (PR:P43489->PR:000001960, PR:Q15116->PR:000001919).]\n\n_Source: Azimuth human_tonsil_v2 fine label; atlas King et al. 2021 (DOI 10.1126/sciimmunol.abh3768). Draft for review — not yet submitted._\n"
+}

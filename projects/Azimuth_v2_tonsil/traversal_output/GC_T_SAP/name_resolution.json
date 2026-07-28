@@ -1,0 +1,13 @@
+{
+  "label": "SAP",
+  "resolved_names": [
+    "SAP (SH2D1A) germinal center T cell",
+    "SAP-expressing germinal center T follicular helper cell",
+    "GC-Tfh (SAP-high)"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (germinal center)",
+  "confidence": "high",
+  "evidence": "The Azimuth human_tonsil_v2 fine label 'SAP' (order 211) denotes a germinal center T-cell state named for high expression of SAP (SLAM-associated protein, encoded by SH2D1A). SAP is a validated immunohistologic marker of germinal center T cells (Roncador et al., 2007) and is essential in CD4 T cells for stable T:B conjugate formation and Tfh-mediated germinal center responses (Qi et al., 2008; Cannons et al., 2010). The cell is a SAP-high GC-Tfh / germinal center T cell. Source atlas: King HW et al. 2021 Sci Immunol, DOI 10.1126/sciimmunol.abh3768."
+}

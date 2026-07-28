@@ -1,0 +1,13 @@
+{
+  "label": "COL27A1+",
+  "resolved_names": [
+    "COL27A1+ follicular dendritic cell",
+    "COL27A1-expressing FDC subset",
+    "follicular dendritic cell (FDC)"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (B-cell follicle / germinal center)",
+  "confidence": "medium",
+  "evidence": "Azimuth human_tonsil_v2 fine annotation 'COL27A1+' (order 67), derived from King HW et al. 2021 Sci Immunol (DOI 10.1126/sciimmunol.abh3768). The label names COL27A1 (collagen type XXVII alpha-1) as a discriminating transcript for a stromal follicular dendritic cell (FDC) subset of the germinal center. ASTA indexes only the atlas ABSTRACT (CorpusId 238530091), so the resolved name and biological placement (FDC subset showing zonal light-zone/dark-zone heterogeneity) are supported from the broader FDC literature rather than the atlas full text."
+}

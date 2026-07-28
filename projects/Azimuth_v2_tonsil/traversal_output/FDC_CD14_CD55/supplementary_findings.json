@@ -1,0 +1,6 @@
+{
+  "markers": [],
+  "other_findings": [],
+  "evidence_quotes": [],
+  "note": "No PMC supplementary material was retrieved for this cell type. The atlas paper (King HW et al. 2021, Science Immunology, DOI 10.1126/sciimmunol.abh3768; PMCID PMC8859880) is indexed by ASTA at the abstract level only, and no cluster-to-name mapping supplement was fetched. All marker and functional evidence in the report is therefore drawn from the broader germinal-center / follicular dendritic cell literature via snippet_search (see all_summaries.json), not from an atlas supplement. The Azimuth label 'CD14+CD55+' itself supplies the two defining surface markers: CD14 and CD55 (DAF)."
+}

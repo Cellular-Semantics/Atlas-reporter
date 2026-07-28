@@ -1,0 +1,33 @@
+{
+  "cell_type_label": "CD14-positive, CD55-positive follicular dendritic cell (tonsil germinal center / B follicle)",
+  "working_definition": "A non-hematopoietic stromal follicular dendritic cell (FDC) subset identified in the human palatine tonsil germinal center and B-cell follicle, defined by co-expression of the surface markers CD14 and CD55 (decay-accelerating factor, DAF). Like all FDCs it captures and retains native antigen as immune complexes via complement receptors CR1 (CD35) and CR2 (CD21) and presents antigen to germinal-center B cells, supporting B-cell survival and differentiation; CD55/DAF provides complement regulation in the follicular niche, while CD14 distinguishes this population from other FDC states in the Azimuth tonsil atlas.",
+  "searches_performed": [
+    "CD14-positive CD55-positive follicular dendritic cell",
+    "follicular dendritic cell",
+    "light zone follicular dendritic cell",
+    "germinal center follicular dendritic cell",
+    "CD55 follicular dendritic cell",
+    "decay accelerating factor follicular dendritic cell",
+    "tonsil follicular dendritic cell",
+    "CD14-positive cell"
+  ],
+  "best_match": {
+    "cl_term": "follicular dendritic cell",
+    "cl_id": "CL:0000442",
+    "cl_definition": "A cell with extensive dendritic processes found in the B cell areas (primary follicles and germinal centers) of lymphoid tissue. They are unrelated to the dendritic cell associated with T cells. Follicular dendritic cells have Fc receptors and C3b receptors, but unlike other dendritic cells, they do not process or present antigen in a way that allows recognition by T cells. Instead, they hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000442 (follicular dendritic cell) describes the same lineage identity as the atlas cell type: non-hematopoietic stromal cells with dendritic morphology located in B-cell follicles and germinal centers, which retain native antigen as immune complexes and present it to B cells via complement receptors — all features shared with the CD14+CD55+ subset. However, the CL term is genus-level and does not capture two atlas-defining features: (1) the CD14+CD55+ co-marker combination, which places this population in a specific FDC subset distinct from other follicular stromal states; and (2) tonsil tissue specificity. No child terms of CL:0000442 exist in CL for germinal-center, light-zone, CD14+, CD55+, or tonsil FDC subsets — the only current child is CL:0009015 (Peyer's patch follicular dendritic cell), which is a different tissue. The match is therefore broad: the report cell type IS-A follicular dendritic cell but has distinguishing surface-marker and tissue features not represented in CL.",
+  "other_candidates": [
+    {
+      "cl_term": "Peyer's patch follicular dendritic cell",
+      "cl_id": "CL:0009015",
+      "cl_definition": "A follicular dendritic cell located in the Peyer's patch. These cells from a meshwork in which Peyer's patch B cells reside.",
+      "reason_rejected": "Tissue location is wrong: this term is specific to the Peyer's patch of the small intestine, not the palatine tonsil germinal center. The CD14+CD55+ phenotype is also absent from this definition."
+    }
+  ],
+  "recommendation": "Use CL:0000442 (follicular dendritic cell) as a broad parent mapping. A new CL term is needed for the CD14-positive, CD55-positive follicular dendritic cell of the palatine tonsil. The new term should be defined as a follicular dendritic cell located in the human palatine tonsil germinal center that is CD14-positive and CD55-positive (DAF-positive), distinguishing it from other FDC subsets. Consider requesting the term via the Cell Ontology GitHub issue tracker (obophenotype/cell-ontology).",
+  "new_term_needed": true
+}

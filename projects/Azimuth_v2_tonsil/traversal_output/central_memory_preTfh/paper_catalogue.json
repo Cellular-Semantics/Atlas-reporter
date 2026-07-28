@@ -1,0 +1,102 @@
+{
+  "238530091": {
+    "corpus_id": "238530091",
+    "first_author": "Hamish W. King",
+    "authors": ["Hamish W. King", "Kristen L. Wells", "Zohar Shipony", "Arwa S. Kathiria", "Lisa E. Wagar", "C. Lareau", "N. Orban", "R. Capasso", "Mark M. Davis", "L. Steinmetz", "L. James", "W. Greenleaf"],
+    "year": 2021,
+    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.abh3768",
+    "pmid": "34623901"
+  },
+  "231841440": {
+    "corpus_id": "231841440",
+    "first_author": "Andrew R Schroeder",
+    "authors": ["Andrew R Schroeder", "Fangming Zhu", "Hui Hu"],
+    "year": 2021,
+    "title": "Stepwise Tfh cell differentiation revisited: new advances and long-standing questions",
+    "journal": "Faculty Reviews",
+    "doi": "10.12703/r/10-3",
+    "pmid": "33644779"
+  },
+  "282168625": {
+    "corpus_id": "282168625",
+    "first_author": "C. Shen",
+    "authors": ["C. Shen", "Qiong Fu"],
+    "year": 2025,
+    "title": "Follicular helper T cells (Tfh): heterogeneity in spatial distribution and phenotypic characteristics",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2025.1686687",
+    "pmid": "41181158"
+  },
+  "278350306": {
+    "corpus_id": "278350306",
+    "first_author": "Jianguo Liu",
+    "authors": ["Jianguo Liu", "Wengang Song", "Hua Tang"],
+    "year": 2025,
+    "title": "Advances and challenges in identifying precursors of memory CD4+ T cells",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2025.1540045",
+    "pmid": "40391228"
+  },
+  "259188599": {
+    "corpus_id": "259188599",
+    "first_author": "Fangming Zhu",
+    "authors": ["Fangming Zhu", "R. McMonigle", "Andrew R Schroeder", "Xianyou Xia", "Hui Hu"],
+    "year": 2023,
+    "title": "Spatiotemporal resolution of germinal center Tfh cell differentiation and divergence from central memory CD4+ T cell fate",
+    "journal": "Nature Communications",
+    "doi": "10.1038/s41467-023-39299-3",
+    "pmid": "37330549"
+  },
+  "199637112": {
+    "corpus_id": "199637112",
+    "first_author": "Béatris Mastelic-Gavillet",
+    "authors": ["Béatris Mastelic-Gavillet", "M. Vono", "P. Gonzalez-Dias", "P. Lambert", "H. Nakaya", "C.-A. Siegrist"],
+    "year": 2019,
+    "title": "Neonatal T Follicular Helper Cells Are Lodged in a Pre-T Follicular Helper Stage Favoring Innate Over Adaptive Germinal Center Responses",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2019.01845",
+    "pmid": "31456798"
+  },
+  "9578811": {
+    "corpus_id": "9578811",
+    "first_author": "P. Schaerli",
+    "authors": ["P. Schaerli", "K. Willimann", "A. Lang", "M. Lipp", "P. Loetscher", "B. Moser"],
+    "year": 2000,
+    "title": "Cxc Chemokine Receptor 5 Expression Defines Follicular Homing T Cells with B Cell Helper Function",
+    "journal": "The Journal of Experimental Medicine",
+    "doi": "10.1084/jem.192.11.1553",
+    "pmid": "11104798"
+  },
+  "215778799": {
+    "corpus_id": "215778799",
+    "first_author": "J. Hale",
+    "authors": ["J. Hale", "R. Ahmed"],
+    "year": 2015,
+    "title": "Memory T Follicular Helper CD4 T Cells",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2015.00016",
+    "pmid": "25699040"
+  },
+  "9195782": {
+    "corpus_id": "9195782",
+    "first_author": "Steven M. Kerfoot",
+    "authors": ["Steven M. Kerfoot", "G. Yaari", "Jaymin R. Patel", "David G. Gonzalez", "S. Kleinstein", "A. Haberman"],
+    "year": 2011,
+    "title": "Germinal center B cell and T follicular helper cell development initiates in the inter-follicular zone",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2011.03.024",
+    "pmid": "21636295"
+  },
+  "202024848": {
+    "corpus_id": "202024848",
+    "first_author": "Elena Brenna",
+    "authors": ["Elena Brenna", "A. N. Davydov", "K. Ladell", "J. McLaren", "D. Price", "P. Borrow", "A. McMichael"],
+    "year": 2019,
+    "title": "CD4+ T follicular helper (Tfh) cells in human tonsil and blood are clonally convergent, but divergent from non-Tfh CD4+ cells",
+    "journal": "bioRxiv",
+    "doi": "10.1101/743187",
+    "pmid": null
+  }
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "corpus_id": "215778799",
+    "title": "Memory T Follicular Helper CD4 T Cells",
+    "authors": ["J. Hale", "R. Ahmed"],
+    "year": 2015,
+    "doi": "10.3389/fimmu.2015.00016",
+    "source_method": "asta_snippet",
+    "summary": "Review defining the memory Tfh compartment. Establishes core Tfh markers (CXCR5, BCL6) and the concept that Tfh-committed CD4 T cells persist at the memory stage and recall Tfh effector functions on reactivation. Markers CXCR5 and Bcl6 here are described at the phenotype/transcription-factor level; in the King et al. atlas the corresponding evidence is transcriptomic (CXCR5, BCL6 transcripts).",
+    "quotes": [
+      "T follicular helper (Tfh) cells are the subset of CD4 T helper cells that are required for generation and maintenance of germinal center reactions and the generation of long-lived humoral immunity.",
+      "Tfh cells are characterized by their expression of the chemokine receptor CXCR5, expression of the transcriptional repressor Bcl6, and their capacity to migrate to the follicle and promote germinal center B cell responses.",
+      "The implication of these findings is that memory Tfh cells retain their capacity to recall their Tfh-specific effector functions upon reactivation to provide help for B cell responses and play an important role in prime and boost vaccination or during recall responses to infection."
+    ]
+  },
+  {
+    "corpus_id": "9578811",
+    "title": "Cxc Chemokine Receptor 5 Expression Defines Follicular Homing T Cells with B Cell Helper Function",
+    "authors": ["P. Schaerli", "K. Willimann", "A. Lang", "M. Lipp", "P. Loetscher", "B. Moser"],
+    "year": 2000,
+    "doi": "10.1084/jem.192.11.1553",
+    "source_method": "asta_snippet",
+    "summary": "Foundational study identifying CXCR5+ follicular-homing T cells in human tonsil. Reports that tonsillar memory (not naive) CD4 T cells are overwhelmingly CXCR5+ and express activation/costimulatory markers CD69, HLA-DR and ICOS, while downregulating CCR7 and CD62L consistent with follicular residence. All markers here are surface-protein / flow-cytometry measurements.",
+    "quotes": [
+      "Memory but not naive T cells from tonsils are CXCR5+ and migrate in response to the B cell–attracting chemokine 1 (BCA-1), which is selectively expressed by reticular cells and blood vessels within B cell follicles."
+    ]
+  },
+  {
+    "corpus_id": "210121629",
+    "title": "CD4+ T Follicular Helper Cells in Human Tonsils and Blood Are Clonally Convergent but Divergent from Non-Tfh CD4+ Cells",
+    "authors": ["Elena Brenna", "A. N. Davydov", "K. Ladell", "J. McLaren", "Paolo Bonaiuti", "Maria Metsger", "J. Ramsden", "S. Gilbert", "T. Lambe", "D. Price", "Suzanne L. Campion", "D. Chudakov", "P. Borrow", "A. McMichael"],
+    "year": 2020,
+    "doi": "10.1016/j.celrep.2019.12.016",
+    "source_method": "asta_snippet",
+    "summary": "Matched human tonsil and blood study comparing circulating Tfh and tonsillar Tfh within the CD4+ memory (CD45RA-negative) compartment, using the surface Tfh markers CXCR5, PD-1 and ICOS. Confirms that human tonsillar Tfh are defined within antigen-experienced/memory CD4 T cells. Markers are protein/flow-cytometry level.",
+    "quotes": [
+      "We refer to all antigen-experienced (CD4 + CD45RA − ) cells as memory cells, although this definition encompasses central memory and effector memory/effector T cells, which we did not distinguish in this study."
+    ]
+  },
+  {
+    "corpus_id": "51704711",
+    "title": "Human Extrafollicular CD4+ T Helper Cells Help Memory B Cells Produce Immunoglobulins",
+    "authors": ["S. T. Kim", "Jin-Young Choi", "Begoña Lainez", "Vincent P. Schulz", "D. Karas", "Eric D. Baum", "J. Setlur", "P. Gallagher", "J. Craft"],
+    "year": 2018,
+    "doi": "10.4049/jimmunol.1701217",
+    "source_method": "asta_snippet",
+    "summary": "Characterises human tonsillar CD4+ T cell subsets sharing the Tfh phenotype. Documents the canonical Tfh signature of CXCR5, PD-1, IL-21 secretion and BCL6, and contrasts follicle/germinal-centre-localised Tfh with an extrafollicular subset. Markers CXCR5, PD-1 and BCL6 here are protein/flow-cytometry and transcription-factor measurements.",
+    "quotes": [
+      "These cells are similar to Tfh cells in terms of expression of the chemokine receptor CXCR5 and the inhibitory receptor PD-1, IL-21 secretion, and expression of the transcription factor BCL6; however, unlike Tfh cells that are located within the B cell follicle and germinal center, they resi"
+    ]
+  },
+  {
+    "corpus_id": "2132186",
+    "title": "Follicular B Helper T Cells Express Cxc Chemokine Receptor 5, Localize to B Cell Follicles, and Support Immunoglobulin Production",
+    "authors": ["D. Breitfeld", "L. Ohl", "E. Kremmer", "J. Ellwart", "F. Sallusto", "M. Lipp", "R. Förster"],
+    "year": 2000,
+    "doi": "10.1084/jem.192.11.1545",
+    "source_method": "asta_snippet",
+    "summary": "Demonstrates the B-cell helper function of tonsillar CXCR5+ memory (CD45RO+) CD4 T cells: co-culture with autologous B cells drives a large increase in immunoglobulin (IgA, IgG) production compared with the CXCR5- fraction. Markers CXCR5 and CD45RO are surface-protein / flow-sorting measurements.",
+    "quotes": [
+      "B cells produced comparable low amounts of both IgA and IgG when cultured for 11 d without T cells or with the CXCR5"
+    ]
+  },
+  {
+    "corpus_id": "205547912",
+    "title": "Interconnected subsets of memory follicular helper T cells have different effector functions",
+    "authors": ["Assia Asrir", "M. Aloulou", "Mylène Gador", "C. Pérals", "N. Fazilleau"],
+    "year": 2017,
+    "doi": "10.1038/s41467-017-00843-7",
+    "source_method": "asta_snippet",
+    "summary": "Defines memory Tfh heterogeneity: local (lymphoid-organ-resident) and circulating memory Tfh subsets that both sustain B-cell responses on reactivation, but with distinct effector outcomes (local cells favour plasma-cell differentiation, circulating cells favour secondary germinal centres). Functional/localisation evidence.",
+    "quotes": [
+      "Memory follicular helper T cells can be local in draining lymphoid organs and circulate in the blood, but the underlying mechanisms of this subdivision are unresolved.",
+      "Here we show that both memory follicular helper T subsets sustain B-cell responses after reactivation. Local cells promote more plasma cell differentiation, whereas circulating cells promote more secondary germinal centers."
+    ]
+  },
+  {
+    "corpus_id": "26540744",
+    "title": "Vaccination establishes clonal relatives of germinal center T cells in the blood of humans",
+    "authors": ["A. Heit", "F. Schmitz", "Sarah E. Gerdts", "B. Flach", "M. Moore", "J. Perkins", "J. A. Perkins", "H. Robins", "A. Aderem", "P. Spearman", "G. Tomaras", "S. C. Rosa", "M. McElrath"],
+    "year": 2017,
+    "doi": "10.1084/jem.20161794",
+    "source_method": "asta_snippet",
+    "summary": "Human study of germinal-centre Tfh in paired tonsil and blood samples. Provides the surface-phenotype benchmark (high CXCR5, PD1, ICOS, plus the transcription factor BCL6) against which the tonsillar memory Tfh compartment is defined. Cited by paraphrase; no verbatim quote retained.",
+    "quotes": []
+  }
+]

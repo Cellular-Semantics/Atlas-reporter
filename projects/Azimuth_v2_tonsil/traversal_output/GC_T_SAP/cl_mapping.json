@@ -1,0 +1,30 @@
+{
+  "cell_type_label": "SAP (SH2D1A / SLAM-associated protein)-high germinal center T cell (GC-Tfh) in tonsil germinal center",
+  "working_definition": "A SAP-high (SH2D1A-high) germinal center T follicular helper (GC-Tfh) cell residing in the palatine tonsil germinal centre. The defining molecular feature is high intracellular expression of SAP (SLAM-associated protein, encoded by SH2D1A), a cytoplasmic SH2-domain adaptor — not a surface marker — that is co-expressed with PD-1 and is essential for sustaining stable T:B cell adhesion via SLAM-family receptors such as CD84 and Ly108/SLAMF6. SAP expression in CD4+ T cells is required for GC formation, GC-Tfh IL-4/IL-21 production, and long-term humoral immunity; its loss (XLP1, SH2D1A mutations) abrogates the germinal centre reaction.",
+  "searches_performed": [
+    "SAP-expressing germinal center T cell",
+    "germinal center T follicular helper cell",
+    "germinal center T cell",
+    "T follicular helper cell",
+    "SH2D1A T cell"
+  ],
+  "best_match": {
+    "cl_term": "germinal center T cell",
+    "cl_id": "CL:0009062",
+    "cl_definition": "A specialized type of CD4 positive T cell, the follicular helper T cell (TFH cell), that upregulates CXCR5 expression to enable its follicular localization. These specialised T cells reside in the germinal center of the lymph node.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0009062 'germinal center T cell' is the direct parent and the best available match. Its definition correctly captures the key features shared with the report cell type: CD4+ lineage, TFH identity, CXCR5-upregulation for follicular localisation, and germinal centre residency. However, the report cell type is distinguished by a specific molecular specialisation — high intracellular SAP (SH2D1A) expression — that is entirely absent from the CL:0009062 definition. SAP-high status is not merely an incidental marker: it defines a functional state (SAP-dependent SLAM-family receptor signalling, sustained T:B adhesion) that is essential for GC formation and is absent in SAP-low or SAP-null cells. This SAP-high molecular identity and associated T:B synapse function is not captured at any level in CL:0009062 or any other CL term found. The CL term covers a broader category of which the SAP-high GC-Tfh is a more specific subtype. CL:0002038 'T follicular helper cell' (grandparent) is rejected as even more general. No narrower CL term exists. Therefore this is a broad match, and a new term is needed.",
+  "other_candidates": [
+    {
+      "cl_term": "T follicular helper cell",
+      "cl_id": "CL:0002038",
+      "cl_definition": "A CD4-positive, CXCR5-positive, CCR7-negative alpha-beta T cell located in follicles of secondary lymph nodes that is BCL6-high, ICOS-high and PD1-high, and stimulates follicular B cells to undergo class-switching and antibody production.",
+      "reason_rejected": "More general than CL:0009062 — covers all follicular T cells in secondary lymphoid follicles, not restricted to the germinal centre. The report cell type is already more specifically a germinal center T cell (CL:0009062 subtype), making CL:0002038 a grandparent-level broad match that is less informative than CL:0009062."
+    }
+  ],
+  "recommendation": "Use CL:0009062 (germinal center T cell) as a broad match (skos:broadMatch). A new CL term is needed for a SAP-high (SH2D1A-high) germinal center T follicular helper cell. The new term should be defined as a subtype of CL:0009062 characterised by high intracellular SH2D1A/SAP expression, SAP-dependent SLAM-family receptor signalling (via CD84, Ly108/SLAMF6), and specialised function in sustaining stable T:B cell adhesion and germinal centre maintenance. The definition should note that SAP is a cytoplasmic adaptor (not a surface marker), detected by intracellular staining or transcript, and that loss of SAP (XLP1) abrogates the germinal centre reaction.",
+  "new_term_needed": true
+}

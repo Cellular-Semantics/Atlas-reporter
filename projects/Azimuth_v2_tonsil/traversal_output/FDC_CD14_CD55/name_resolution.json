@@ -1,0 +1,13 @@
+{
+  "label": "CD14+CD55+",
+  "resolved_names": [
+    "CD14+CD55+ follicular dendritic cell",
+    "CD14+CD55+ FDC subset",
+    "follicular dendritic cell (CD14+ CD55/DAF+)"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (B-cell follicle / germinal center)",
+  "confidence": "medium",
+  "evidence": "Azimuth human_tonsil_v2 fine annotation 'CD14+CD55+' (order 44), derived from King HW et al. 2021 (Science Immunology, DOI 10.1126/sciimmunol.abh3768). ASTA indexes only the atlas paper's abstract (CorpusId 238530091), so the label was not resolved from atlas full text. Name resolved from marker biology (CD14 myeloid/stromal marker + CD55/DAF, a complement-regulatory decay-accelerating factor) combined with the broader germinal-center/FDC literature: within the tonsil B-cell follicle, the CD55+ complement-regulatory, antigen-retaining, dendritic-morphology stromal population that supports germinal-center B cells corresponds to the follicular dendritic cell (FDC) lineage (proposed CL parent CL:0000442). The CD14+ mark distinguishes this FDC subset. Confidence is medium because the atlas full text and cluster-to-name mapping table were not directly accessible via ASTA."
+}

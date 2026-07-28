@@ -1,0 +1,32 @@
+{
+  "cell_type_label": "central-memory CD4-positive, alpha-beta precursor/pre-T follicular helper (pre-Tfh) cell in tonsil (T:B border / follicle)",
+  "working_definition": "The pre-Tfh cell is a CD4-positive, alpha-beta T cell that has initiated the T follicular helper program (upregulating CXCR5, BCL6, ASCL2, c-Maf) but retains CCR7 and IL-7R-alpha, placing it at the T:B border of secondary lymphoid organs as a transitional intermediate between a central-memory CD4+ T cell and a fully committed germinal-center Tfh. Its defining surface phenotype is CXCR5-intermediate, CCR7-positive, PD-1-positive, ICOS-moderate, and it stands at a fate bifurcation: it may complete follicular commitment (losing CCR7, gaining BCL6-high/PD-1-hi/ICOS-hi) or divert to a CXCR5+ CD4+ memory T-cell fate. In human tonsil, these cells are found at the T:B border and inter-follicular zone of palatine tonsil.",
+  "searches_performed": [
+    "precursor T follicular helper cell",
+    "T follicular helper cell",
+    "central memory CD4-positive alpha-beta T cell",
+    "pre-Tfh",
+    "CXCR5-positive CD4 memory T cell",
+    "circulating T follicular helper",
+    "follicular helper precursor CD4"
+  ],
+  "best_match": {
+    "cl_term": "central memory CD4-positive, alpha-beta T cell",
+    "cl_id": "CL:0000904",
+    "cl_definition": "CD4-positive, alpha-beta memory T cell with the phenotype CCR7-positive, CD127-positive, CD45RA-negative, CD45RO-positive, and CD25-negative.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000904 (central memory CD4-positive, alpha-beta T cell) is defined by CCR7-positive, CD127-positive, CD45RA-negative, CD45RO-positive, CD25-negative phenotype — a central-memory T-cell identity. The pre-Tfh cell shares these features: it retains CCR7, has a memory phenotype (CD45RO-positive), and expresses CD127 (IL-7R-alpha). However, CL:0000904 does not capture the distinguishing features of the pre-Tfh: intermediate CXCR5 upregulation, active expression of the Tfh transcriptional program (BCL6, ASCL2, c-Maf), PD-1 positivity, and location at the T:B border / inter-follicular zone. The pre-Tfh IS-A central memory CD4+ alpha-beta T cell that has additionally acquired Tfh-commitment markers, making CL:0000904 a valid but broader parent. The mature Tfh term CL:0002038 is not a match: it is defined as CCR7-negative, BCL6-high, ICOS-high, PD1-high and located in follicles — the committed end-state that the pre-Tfh has not yet reached. No CL term for pre-Tfh or CXCR5+ central-memory CD4+ T cells currently exists.",
+  "other_candidates": [
+    {
+      "cl_term": "T follicular helper cell",
+      "cl_id": "CL:0002038",
+      "cl_definition": "A CD4-positive, CXCR5-positive, CCR7-negative alpha-beta T cell located in follicles of secondary lymph nodes that is BCL6-high, ICOS-high and PD1-high, and stimulates follicular B cells to undergo class-switching and antibody production.",
+      "reason_rejected": "The pre-Tfh is CCR7-positive (retained), not CCR7-negative, and has intermediate rather than high BCL6/ICOS/PD-1. CL:0002038 describes the committed germinal-center Tfh that the pre-Tfh has not yet become. The pre-Tfh is a precursor to this term, making CL:0002038 a narrow match relative to the report cell type — rejected in favour of the correct broad match CL:0000904."
+    }
+  ],
+  "recommendation": "Use CL:0000904 (central memory CD4-positive, alpha-beta T cell) as a broad match parent. A new CL term is needed for the pre-Tfh / CXCR5-intermediate CCR7-positive CD4+ T cell state: a CD4-positive, alpha-beta T cell with intermediate CXCR5, retained CCR7, PD-1-positive, ICOS-moderate, BCL6-low-to-intermediate expression, located at the T:B border of secondary lymphoid organs, that is committed to but has not yet completed the Tfh differentiation program. This would sit as a child of CL:0000904 and sibling/precursor to CL:0002038.",
+  "new_term_needed": true
+}

@@ -1,0 +1,42 @@
+{
+  "cell_type_label": "non-TRDV2 (non-Vδ2) gamma-delta T cell, predominantly Vδ1 (TRDV1), tissue-associated",
+  "working_definition": "A gamma-delta T cell defined by absence of the TRDV2 (Vδ2) TCR chain, found predominantly as Vδ1 (TRDV1)-expressing cells with smaller contributions from Vδ3 and Vδ5, enriched in mucosal and organized lymphoid tissues such as the tonsil, skin, gut, and liver. Unlike the blood-dominant Vγ9Vδ2 subset, these cells are tissue-resident or tissue-associated, recognize stress-associated and non-classical MHC ligands (including MICA/MICB, CD1 family), and exert cytotoxic effector functions via perforin/granzyme pathways. The atlas annotation is defined negatively — by TRDV2 absence — and encompasses a heterogeneous non-Vδ2 compartment that is predominantly but not exclusively Vδ1.",
+  "searches_performed": [
+    "Vdelta1 gamma-delta T cell",
+    "non-Vdelta2 gamma-delta T cell",
+    "TRDV1 T cell",
+    "tissue resident gamma-delta T cell",
+    "gamma-delta T cell"
+  ],
+  "best_match": {
+    "cl_term": "V1delta gamma-delta T cell",
+    "cl_id": "CL:0020001",
+    "cl_definition": "A mature gamma-delta T Cell with T cell receptors consisting of the Vδ1 segment paired with various V gamma chains. This cell is enriched in the gut, skin (Davey et al., 2018) and the female reproductive tract (Wu et al., 2022). It exhibits potent cytotoxic capabilities through perforin/granzyme and death receptor pathways.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "medium"
+  },
+  "justification": "CL:0020001 (V1delta gamma-delta T cell) describes a mature gamma-delta T cell defined by the Vδ1 TCR chain, enriched in barrier/mucosal tissues (gut, skin), with cytotoxic perforin/granzyme capability. This aligns closely with the dominant population within the atlas 'non-TRDV2' annotation: the report explicitly states the non-Vδ2 compartment is 'dominated by Vδ1' cells with tissue-enriched distribution and stress-antigen recognition. However, the atlas label is broader than CL:0020001 in two respects: (1) it is defined negatively by TRDV2 absence rather than positively by TRDV1 presence, and (2) it encompasses Vδ3, Vδ5, and other non-Vδ2 cells alongside the Vδ1 majority. CL:0020001 is therefore more specific (Vδ1-only) than the report cell type (all non-Vδ2), making it a narrow match in the direction CL→report. From the report cell type's perspective — i.e., in SKOS terms describing the relationship of the atlas cell type to the CL term — the report entity IS-A subset of the broader non-Vδ2 category, but CL:0020001 covers only the Vδ1 subset. The curator-specified parent CL:0000798 (gamma-delta T cell) is the correct broad ancestor; CL:0020001 is the closest specific term and represents the predominant sub-population. A broad match to CL:0020001 is assigned because the report cell type (non-Vδ2, heterogeneous) is more general than CL:0020001 (Vδ1-specific), meaning the CL term is a narrower concept within the non-Vδ2 space — the atlas annotation subsumes CL:0020001 but is not identical to it. No CL term for the full non-Vδ2 gamma-delta T cell category exists.",
+  "other_candidates": [
+    {
+      "cl_term": "gamma-delta T cell",
+      "cl_id": "CL:0000798",
+      "cl_definition": "A T cell that expresses a gamma-delta T cell receptor complex.",
+      "reason_rejected": "Too broad — covers all gamma-delta T cells including Vδ2 cells, providing no specificity for the non-Vδ2/tissue-associated character of this population. Retained only as the curator-specified hierarchical parent."
+    },
+    {
+      "cl_term": "mature gamma-delta T cell",
+      "cl_id": "CL:0000800",
+      "cl_definition": "A gamma-delta T cell that has a mature phenotype. These cells can be found in tissues and circulation where they express unique TCR repertoire depending on their location.",
+      "reason_rejected": "Broader than CL:0020001 and does not capture the non-Vδ2 / Vδ1 identity or tissue-enriched phenotype specifically; the definition applies equally to Vδ2 cells in blood."
+    },
+    {
+      "cl_term": "CD27-positive gamma-delta T cell",
+      "cl_id": "CL:0002124",
+      "cl_definition": "A circulating gamma-delta T cell that is CD27-positive and capable of producing IFN-gamma.",
+      "reason_rejected": "Defined by CD27 surface marker and circulating character — not aligned with the non-Vδ2/tissue-resident biology of this population. CD27 expression is not a defining feature of the atlas annotation."
+    }
+  ],
+  "recommendation": "Use CL:0020001 (V1delta gamma-delta T cell) as a broad match for the predominant Vδ1 sub-population. A new CL term is needed for the full non-Vδ2 gamma-delta T cell category — defined by TRDV2 absence, encompassing Vδ1, Vδ3, and Vδ5 cells, with tissue-enriched distribution. The suggested label would be 'non-Vdelta2 gamma-delta T cell' or 'Vdelta2-negative gamma-delta T cell', as a child of CL:0000798 (gamma-delta T cell) and parent of CL:0020001 (V1delta gamma-delta T cell).",
+  "new_term_needed": true
+}

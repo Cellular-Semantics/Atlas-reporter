@@ -1,0 +1,131 @@
+{
+  "cell_type_label": "memory_Tfh_CD4",
+  "suggested_label": "memory T follicular helper cell",
+  "definition": "A T follicular helper cell that has differentiated into a long-lived, antigen-experienced memory state, characterised by a CD45RA-negative, CD45RO-positive phenotype. It retains expression of the B-cell-follicle-homing chemokine receptor CXCR5 (PMID:11104798), the transcriptional repressor BCL6, and the co-stimulatory and co-inhibitory surface receptors ICOS (PMID:11104798) and PD-1 (PMID:28637884) in humans. It persists in secondary lymphoid organs after resolution of a germinal-centre response and retains the capacity to recall follicular helper functions — including promotion of B-cell immunoglobulin class-switching and production — upon antigen re-encounter (PMID:25699040; PMID:29018187).",
+  "parent_term": {
+    "cl_id": "CL:0002038",
+    "cl_term": "T follicular helper cell"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0002373",
+    "uberon_term": "palatine tonsil"
+  },
+  "logical_axioms": [
+    {
+      "relation": "subClassOf",
+      "relation_id": "rdfs:subClassOf",
+      "filler": "CD4-positive, alpha-beta memory T cell",
+      "filler_id": "CL:0000897",
+      "notes": "Second parent: memory Tfh cells are a subtype of both T follicular helper cells (primary parent CL:0002038) and CD4-positive, alpha-beta memory T cells (CL:0000897), integrating the follicular-helper specialisation with the antigen-experienced memory state."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "C-X-C chemokine receptor type 5",
+      "filler_id": "PR:000001209",
+      "notes": "CXCR5 surface expression is the canonical defining marker of the Tfh lineage and is retained on memory Tfh cells; established by flow cytometry at the protein level (PMID:11104798, PMID:11104797)."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "programmed cell death protein 1",
+      "filler_id": "PR:000001919",
+      "notes": "PD-1 (PDCD1) is expressed at high levels on the surface of human tonsillar Tfh cells, including the memory compartment, and is a defining marker of the Tfh phenotype at the protein level (PMID:28637884, PMID:30030323)."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "inducible T-cell costimulator",
+      "filler_id": "PR:000001860",
+      "notes": "ICOS is highly expressed on the surface of human tonsillar Tfh cells at the protein level and is part of the canonical Tfh surface marker programme retained on memory Tfh (PMID:11104798, PMID:28637884)."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "positive regulation of immunoglobulin production",
+      "filler_id": "GO:0002639",
+      "notes": "The defining functional capacity of memory Tfh cells is to provide B-cell help that promotes immunoglobulin class-switching and production upon recall; directly demonstrated by co-culture with tonsillar B cells (PMID:11104797, PMID:25699040)."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "memory T cell differentiation",
+      "filler_id": "GO:0043379",
+      "notes": "Memory Tfh cells have undergone the T follicular helper-to-memory transition and retain the capacity to re-differentiate into effector Tfh on antigen re-encounter (PMID:25699040; PMID:29018187)."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "memory Tfh cell",
+      "scope": "exact",
+      "reference": "PMID:25699040"
+    },
+    {
+      "value": "memory follicular helper T cell",
+      "scope": "exact",
+      "reference": "PMID:29018187"
+    },
+    {
+      "value": "CXCR5-positive CD45RO-positive memory CD4 T cell",
+      "scope": "related",
+      "reference": "PMID:11104798"
+    },
+    {
+      "value": "tonsillar memory Tfh cell",
+      "scope": "narrow",
+      "reference": "PMID:31914381"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.3389/fimmu.2015.00016",
+      "pmid": "PMID:25699040",
+      "citation": "Hale & Ahmed (2015)",
+      "supports": "Memory Tfh cell definition, persistence after GC response, recall capacity, BCL6 and CXCR5 expression"
+    },
+    {
+      "doi": "10.1038/s41467-017-00843-7",
+      "pmid": "PMID:29018187",
+      "citation": "Asrir et al. (2017)",
+      "supports": "Memory Tfh subsets (local and circulating), B-cell help upon reactivation, distinct effector outcomes"
+    },
+    {
+      "doi": "10.1084/jem.192.11.1553",
+      "pmid": "PMID:11104798",
+      "citation": "Schaerli et al. (2000)",
+      "supports": "CXCR5 and ICOS surface expression on tonsillar memory (not naive) CD4 T cells; follicle homing"
+    },
+    {
+      "doi": "10.1084/jem.192.11.1545",
+      "pmid": "PMID:11104797",
+      "citation": "Breitfeld et al. (2000)",
+      "supports": "CXCR5+CD45RO+ (memory) tonsillar CD4 T cells drive IgA and IgG production in B cells"
+    },
+    {
+      "doi": "10.1084/jem.20161794",
+      "pmid": "PMID:28637884",
+      "citation": "Heit et al. (2017)",
+      "supports": "PD-1 and ICOS surface expression on human Tfh; canonical Tfh phenotype"
+    },
+    {
+      "doi": "10.4049/jimmunol.1701217",
+      "pmid": "PMID:30030323",
+      "citation": "Kim et al. (2018)",
+      "supports": "PD-1 and BCL6 expression in tonsillar Tfh; follicular versus extrafollicular helper distinction"
+    },
+    {
+      "doi": "10.1016/j.celrep.2019.12.016",
+      "pmid": "PMID:31914381",
+      "citation": "Brenna et al. (2020)",
+      "supports": "Tonsillar Tfh are within the CD4+CD45RA- memory compartment; clonal convergence with blood Tfh"
+    },
+    {
+      "doi": "10.1126/sciimmunol.abh3768",
+      "pmid": "PMID:34623901",
+      "citation": "King et al. (2021)",
+      "supports": "Source atlas: memory Tfh annotated in human tonsil single-cell transcriptomic atlas (Azimuth human_tonsil_v2)"
+    }
+  ],
+  "justification": "CL:0002038 (T follicular helper cell) captures the core Tfh identity (CD4+, CXCR5+, CCR7-, BCL6-high, ICOS-high, PD1-high, follicle-resident, B-cell helper) but does not encode the antigen-experienced memory/persistence state that defines this atlas population. The atlas cell type is explicitly CD45RA-negative and CD45RO-positive, persists after a germinal-centre response, and retains the capacity to recall follicular helper effector functions on antigen re-encounter — properties absent from the CL:0002038 definition. No CL term for a memory T follicular helper cell currently exists. The new term should be placed as a child of both CL:0002038 (T follicular helper cell, primary parent, providing follicular-helper specialisation) and CL:0000897 (CD4-positive, alpha-beta memory T cell, second parent, providing the memory/antigen-experienced identity). The location axiom for palatine tonsil is not proposed as a subClassOf restriction because memory Tfh cells are found in multiple secondary lymphoid organs and also circulate in blood (Asrir et al. 2017); the tonsil is the tissue context of the atlas but not a defining anatomical restriction for the cell type.",
+  "ntr_markdown": "**Preferred term label**\nmemory T follicular helper cell\n\n**Synonyms** (add reference(s), please)\nmemory Tfh cell (exact) — PMID:25699040\nmemory follicular helper T cell (exact) — PMID:29018187\nCXCR5-positive CD45RO-positive memory CD4 T cell (related) — PMID:11104798\ntonsillar memory Tfh cell (narrow) — PMID:31914381\n\n**Definition** (free text, with reference(s), please. PubMed ID format is PMID:XXXXXX)\nA T follicular helper cell that has differentiated into a long-lived, antigen-experienced memory state, characterised by a CD45RA-negative, CD45RO-positive phenotype. It retains expression of the B-cell-follicle-homing chemokine receptor CXCR5 (PMID:11104798), the transcriptional repressor BCL6, and the co-stimulatory and co-inhibitory surface receptors ICOS (PMID:11104798) and PD-1 (PMID:28637884) in humans. It persists in secondary lymphoid organs after resolution of a germinal-centre response and retains the capacity to recall follicular helper functions — including promotion of B-cell immunoglobulin class-switching and production — upon antigen re-encounter (PMID:25699040; PMID:29018187).\n\n**Parent cell type term** (check the hierarchy here https://www.ebi.ac.uk/ols4/ontologies/cl)\nT follicular helper cell (CL:0002038) — https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0002038\n\nNote: this term should also be a subClassOf CL:0000897 (CD4-positive, alpha-beta memory T cell) — https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000897\n\n**Anatomical structure where the cell type is found** (check Uberon for anatomical structures: https://www.ebi.ac.uk/ols4/ontologies/uberon)\npalatine tonsil (UBERON:0002373) — https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0002373\n(Note: memory Tfh cells also circulate in blood and reside in other secondary lymphoid organs; palatine tonsil is the atlas context but not an anatomical restriction.)\n\n**Your ORCID**\n[To be added by submitter]\n\n**Additional notes or concerns**\nThis term fills a gap in CL: no existing term captures a T follicular helper cell in the antigen-experienced memory state. The atlas population (Azimuth human_tonsil_v2, built on King et al. 2021, PMID:34623901) is annotated as memory Tfh based on CD45RA-negative/CD45RO-positive phenotype combined with the canonical Tfh marker programme.\n\nThe new term should sit under two parents:\n1. CL:0002038 (T follicular helper cell) — primary parent, providing follicular-helper specialisation\n2. CL:0000897 (CD4-positive, alpha-beta memory T cell) — second parent, providing memory/antigen-experienced identity\n\nNote that CL:0002038 is currently classified under the exhausted T cell branch (CL:0020030) in addition to helper T cell; editors may wish to review whether the memory Tfh should inherit that placement.\n\nProposed logical axioms:\n- subClassOf 'CD4-positive, alpha-beta memory T cell' (CL:0000897)\n- subClassOf 'has plasma membrane part' some 'C-X-C chemokine receptor type 5' (PR:000001209)\n- subClassOf 'has plasma membrane part' some 'programmed cell death protein 1' (PR:000001919)\n- subClassOf 'has plasma membrane part' some 'inducible T-cell costimulator' (PR:000001860)\n- subClassOf 'capable of' some 'positive regulation of immunoglobulin production' (GO:0002639)\n- subClassOf 'capable of' some 'memory T cell differentiation' (GO:0043379)\n\nNote on BCL6: BCL6 is an intracellular transcription factor; it is mentioned in the definition textually but is not proposed as a plasma membrane axiom.\n\nNote on location axiom: A 'part of' some palatine tonsil (UBERON:0002373) axiom is not proposed because memory Tfh cells are found in multiple secondary lymphoid organs and in circulating blood (PMID:29018187); the tonsil is the atlas context, not a biological restriction.\n\nKey references:\n- Hale & Ahmed (2015) — DOI:10.3389/fimmu.2015.00016 — PMID:25699040 — supports: memory Tfh identity, recall capacity, BCL6/CXCR5 retention\n- Asrir et al. (2017) — DOI:10.1038/s41467-017-00843-7 — PMID:29018187 — supports: local and circulating memory Tfh subsets, B-cell help on reactivation\n- Schaerli et al. (2000) — DOI:10.1084/jem.192.11.1553 — PMID:11104798 — supports: CXCR5+ICOS+ surface phenotype on tonsillar memory (not naive) CD4 T cells\n- Breitfeld et al. (2000) — DOI:10.1084/jem.192.11.1545 — PMID:11104797 — supports: CXCR5+CD45RO+ tonsillar CD4 T cells drive IgA/IgG production\n- Heit et al. (2017) — DOI:10.1084/jem.20161794 — PMID:28637884 — supports: PD-1 and ICOS protein expression on human Tfh\n- Kim et al. (2018) — DOI:10.4049/jimmunol.1701217 — PMID:30030323 — supports: PD-1/BCL6 in tonsillar Tfh; follicular localisation\n- Brenna et al. (2020) — DOI:10.1016/j.celrep.2019.12.016 — PMID:31914381 — supports: tonsillar Tfh in CD4+CD45RA- memory compartment\n- King et al. (2021) — DOI:10.1126/sciimmunol.abh3768 — PMID:34623901 — supports: source atlas annotation\n\n---\n*Draft generated by atlas-chat from: projects/Azimuth_v2_tonsil/reports/memory_Tfh_CD4.md*"
+}

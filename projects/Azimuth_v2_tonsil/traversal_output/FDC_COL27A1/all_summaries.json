@@ -1,0 +1,97 @@
+[
+  {
+    "corpus_id": "235231063",
+    "title": "Differentiation and activation of fibroblastic reticular cells",
+    "authors": ["M. Lütge", "N. Pikor", "B. Ludewig"],
+    "year": 2021,
+    "doi": "10.1111/imr.12981",
+    "source_method": "asta_snippet",
+    "summary": "Review establishing that follicular dendritic cells (FDCs) are CXCL13-expressing, B-cell-interacting reticular cells (BRCs) of mesenchymal origin, classically identified by complement receptor 2 (Cr2/CD21) and Fc receptors (Fcgr2b, Fcer2a). Single-cell transcriptomics resolved two distinct FDC subsets in the lymph node germinal center: light-zone (LZ-) and dark-zone (DZ-) FDCs, with LZ-FDCs expressing higher Cr2 and Fcer2a. Marker evidence is TRANSCRIPT-level (single-cell transcriptomics), providing direct support that FDCs are a transcriptionally heterogeneous stromal population subdivided by germinal-center zone — the biological context in which the atlas COL27A1+ FDC subset sits.",
+    "quotes": [
+      "Recently, single-cell transcriptomics analysis revealed the presence of two distinct FDC subsets in the lymph node: light zone (LZ-) and dark zone (DZ-)FDCs.",
+      "LZ-FDCs express significantly higher levels of Cr2 and Fcer2a and interact with B cells and follicular helper T cells in the light zone during the germinal center reaction.",
+      "Classically, FDCs are identified based on the expression of complement receptor 2 (Cr2) and Fc receptors (ie, Fcgr2b and Fcer2a)."
+    ]
+  },
+  {
+    "corpus_id": "218682842",
+    "title": "Remodeling of light and dark zone follicular dendritic cells governs germinal center responses",
+    "authors": ["N. Pikor", "U. Mörbe", "M. Lütge", "C. Gil-Cruz", "C. Perez-Shibayama", "M. Novkovic", "Hung-Wei Cheng", "C. Nombela-Arrieta", "T. Nagasawa", "M. Linterman", "L. Onder", "B. Ludewig"],
+    "year": 2020,
+    "doi": "10.1038/s41590-020-0672-y",
+    "source_method": "asta_snippet",
+    "summary": "Primary study showing that FDCs specialize in capture and presentation of antigen and are the reticular cell type most commonly associated with CXCL13 expression. Upon inflammation the FDC network of the primary follicle reorganizes to underpin the germinal-center light zone, and phenotypically distinct LZ- and DZ-FDC subsets are shown to be present already in the primary follicle. Evidence is TRANSCRIPT-level / functional (single-cell transcriptomics of CXCL13-expressing reticular cells plus imaging), establishing zonal FDC subset heterogeneity and function.",
+    "quotes": [
+      "Follicular dendritic cells (FDCs) specialize in the capture and presentation of antigen, and are the reticular cell type most commonly associated with CXCL13 expression.",
+      "Upon inflammation, the centrally distributed FDC network of the primary B cell follicle is reorganized to underpin the GC light zone (LZ), and a yet unknown reticular cell type is thought to mature to support the emerging GC dark zone (DZ)."
+    ]
+  },
+  {
+    "corpus_id": "244940951",
+    "title": "Visualization and functional characterization of lymphoid organ fibroblasts",
+    "authors": ["L. Onder", "Hung-Wei Cheng", "B. Ludewig"],
+    "year": 2021,
+    "doi": "10.1111/imr.13051",
+    "source_method": "asta_snippet",
+    "summary": "Review stating that the germinal-center reaction reorganizes the B-cell follicle into light-zone and dark-zone areas underpinned by phenotypically distinct FDC subsets, and that transcriptomic analysis shows LZ- and DZ-FDC subsets are already present in the primary follicle, poised to generate the respective microenvironments that steer the germinal-center reaction. Evidence is TRANSCRIPT-level (transcriptomic analysis of CXCL13-expressing BRCs). Directly supports the location and functional zonal specialization of FDC subsets.",
+    "quotes": [
+      "The germinal center reaction triggers the reorganization of the B cell follicle into light zone (LZ) and dark zone (DZ) areas underpinned by phenotypically distinct FDC subsets.",
+      "Transcriptomic analysis of CXCL13expressing BRCs further showed that LZ-and DZ-FDC subsets are present in the primary follicle and are poised to generate the respective microenvironments that steer the germinal center reaction through CXCL12-mediated positioning of follicular helper T cells and B cells"
+    ]
+  },
+  {
+    "corpus_id": "233206024",
+    "title": "A Novel Image Analysis Approach Reveals a Role for Complement Receptors 1 and 2 in Follicular Dendritic Cell Organization in Germinal Centers",
+    "authors": ["Jessica C. Anania", "A. Westin", "Jeremy Adler", "B. Heyman"],
+    "year": 2021,
+    "doi": "10.3389/fimmu.2021.655753",
+    "source_method": "asta_snippet",
+    "summary": "Study reiterating that FDCs are a specialized cell population residing within germinal centers, are of perivascular mesenchymal (not hematopoietic) origin, and are not conventional dendritic cells. FDCs are divided into LZ and DZ subsets; LZ-FDCs express Fc and complement receptors (FcgRIIB/CD32B, CD23, CD35, CD21) and high CXCL13. Marker evidence here is at the PROTEIN/receptor level (Fc and complement receptors, imaging of CR1/CR2). Supports FDC identity, markers, morphology and light-zone location.",
+    "quotes": [
+      "In spite of their name, they are not related to conventional dendritic cells, do not express MHC-II, and consequently do not present peptides to T cells.",
+      "FDCs can be divided into two subsets, LZ and dark zone (DZ) FDCs",
+      "The fore mentioned LZ FDCs express FcRs and CRs and can be characterized by high expression of CXCL13.",
+      "FDCs are not derived from hematopoietic stem cells in the bone marrow but from ubiquitous mural perivascular precursors"
+    ]
+  },
+  {
+    "corpus_id": "6930096",
+    "title": "Phenotypic and morphological properties of germinal center dark zone Cxcl12-expressing reticular cells (CRCs)",
+    "authors": ["Lauren B. Rodda", "Oliver Bannard", "B. Ludewig", "T. Nagasawa", "J. Cyster"],
+    "year": 2015,
+    "doi": "10.4049/jimmunol.1501191",
+    "source_method": "asta_snippet",
+    "summary": "Establishes that the germinal center is divided into a dark zone and a light zone, that FDCs are well characterized for supporting B-cell antigen encounter in primary follicles and the GC light zone, and that a distinct Cxcl12-expressing reticular cell (CRC) population supports the dark zone. CRCs are gp38+ with low FDC-marker expression. Evidence is PROTEIN/functional (FACS phenotyping, reporter lineage marking, two-photon imaging). Supports the light-zone location and antigen-support function of FDCs versus dark-zone stroma.",
+    "quotes": [
+      "The germinal center (GC) is divided into a dark zone (DZ) and a light zone (LZ).",
+      "Follicular dendritic cells (FDCs) are well characterized for their role in supporting B cell Ag encounter in primary follicles and in the GC LZ."
+    ]
+  },
+  {
+    "corpus_id": "16241640",
+    "title": "Fate mapping reveals origin and dynamics of lymph node follicular dendritic cells",
+    "authors": ["Meryem Jarjour", "Audrey Jorquera", "I. Mondor", "S. Wienert", "P. Narang", "M. Coles", "Frederick Klauschen", "Marc Bajénoff"],
+    "year": 2014,
+    "doi": "10.1084/jem.20132409",
+    "source_method": "asta_snippet",
+    "summary": "Fate-mapping study describing FDCs as the follicular stromal cell compartment that organizes B-cell homeostasis and immune responses in secondary lymphoid organs, secreting the B-cell homing chemokine CXCL13 and forming a cellular scaffold, and, during immune responses, remodeling the primary follicular network into germinal centers. Morphology described as large dendritic-like cells with multiple long centrifugal processes in constant interaction with B cells. Evidence is functional/morphological (fate mapping, imaging). Supports location, function, and morphology.",
+    "quotes": [
+      "They secrete the B cell follicle homing chemokine CXCL13 and constitute a cellular scaffold for B cell migration",
+      "During immune responses, FDCs act as antigen-presenting and -retaining cells that remodel the primary follicular network into germinal centers (GCs), a specialized structure in which B cells proliferate, undergo somatic hypermutation, and carry out class switching",
+      "FDCs were characterized decades ago as large follicle-associated dendritic-like cells displaying multiple long centrifugal processes in constant interaction with B cells"
+    ]
+  },
+  {
+    "corpus_id": "246763322",
+    "title": "Bioinformatics Analysis and Experimental Verification Identify Downregulation of COL27A1 in Poor Segmental Congenital Scoliosis",
+    "authors": ["Zongshan Hu", "Yanjie Xu", "Jie Li", "Ze-zhang Zhu", "Y. Qiu", "Zhen Liu"],
+    "year": 2022,
+    "doi": "10.1155/2022/2616827",
+    "source_method": "asta_snippet",
+    "summary": "Provides gene-level annotation of COL27A1 (the atlas subset marker): it belongs to the collagen gene family and encodes one proalpha chain of type XXVII collagen, an extracellular-matrix fibrillar-associated collagen. This paper concerns cartilage/skeletal contexts, not FDCs, and is cited only to define what COL27A1 encodes. Evidence for COL27A1 is TRANSCRIPT/gene-level. Note: no traversed source reports COL27A1 protein in tonsil FDCs; COL27A1 as an FDC-subset marker derives from the atlas transcriptomic annotation.",
+    "quotes": [
+      "COL27A1, which belongs to the collagen gene family, shows expression within cartilage tissues, such as cartilage [23].",
+      "COL27A1 is responsible for encoding one proalpha chain in type XXVII collagen, which can join 42 additional genes and integrate their protein products for the formation of 28 or more diverse trimeric collagens [24]."
+    ]
+  }
+]

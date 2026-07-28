@@ -1,0 +1,113 @@
+{
+  "cell_type_label": "FDC_CD14_CD55",
+  "suggested_label": "CD55-positive follicular dendritic cell",
+  "definition": "A follicular dendritic cell that is part of a germinal center, distinguished by surface expression of complement decay-accelerating factor (CD55/DAF; PR:P08174 in humans) and by transcript-level enrichment of CD14 relative to other follicular dendritic cell subsets. Like all follicular dendritic cells, this cell captures and retains native antigen as complement-opsonised immune complexes via complement receptors CR1 (CD35) and CR2 (CD21; PMID:23770227), supports germinal-center B cell survival and differentiation (PMID:23332930), and maintains follicular architecture through a three-dimensional dendritic meshwork (PMID:35505125). CD55/DAF expression provides local regulation of complement activation within the follicular niche (PMID:33469456). Follicular dendritic cells populate the B-cell follicles and germinal centers of secondary lymphoid organs generally.",
+  "parent_term": {
+    "cl_id": "CL:0000442",
+    "cl_term": "follicular dendritic cell"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0010754",
+    "uberon_term": "germinal center"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "germinal center",
+      "filler_id": "UBERON:0010754",
+      "notes": "Resides within the germinal center of secondary lymphoid organs (broad ASTA search: not tonsil-restricted); the source atlas sampled human palatine tonsil."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "complement decay-accelerating factor",
+      "filler_id": "PR:000025662",
+      "notes": "CD55/DAF surface expression is supported by protein-level flow-cytometry evidence in germinal-center cells (PMID:33469456). This is the primary distinguishing surface marker for this subset."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "complement receptor type 2",
+      "filler_id": "PR:000001338",
+      "notes": "CR2/CD21 is the canonical FDC surface marker mediating immune-complex capture; protein-level evidence across multiple studies (PMID:23770227, PMID:22042977)."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "regulation of complement activation",
+      "filler_id": "GO:0030449",
+      "notes": "CD55/DAF on the cell surface inhibits complement deposition, regulating complement activation in the germinal center niche (PMID:33469456)."
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "germinal center B cell differentiation",
+      "filler_id": "GO:0002314",
+      "notes": "FDCs support germinal-center B cell survival and differentiation by antigen display and survival signals, but do not carry out the full differentiation process themselves (PMID:23332930, PMID:34424268)."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "CD14+CD55+ follicular dendritic cell",
+      "scope": "exact",
+      "reference": "PMID:34623901"
+    },
+    {
+      "value": "CD14-positive CD55-positive FDC",
+      "scope": "related",
+      "reference": "PMID:34623901"
+    },
+    {
+      "value": "tonsil germinal center follicular dendritic cell",
+      "scope": "broad",
+      "reference": "PMID:23332930"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1126/sciimmunol.abh3768",
+      "pmid": "PMID:34623901",
+      "citation": "King et al. (2021)",
+      "supports": "Atlas source defining the CD14+CD55+ FDC annotation in the human palatine tonsil; provides the subset label and tissue context."
+    },
+    {
+      "doi": "10.1016/j.humpath.2012.10.005",
+      "pmid": "PMID:23332930",
+      "citation": "Rezk et al. (2013)",
+      "supports": "FDC lineage definition: non-hematopoietic stromal cells forming dendritic meshwork in lymphoid follicles; antigen retention and B cell survival support."
+    },
+    {
+      "doi": "10.1016/j.immuni.2013.02.023",
+      "pmid": "PMID:23770227",
+      "citation": "Heesters et al. (2013)",
+      "supports": "FDC immune complex capture via CR1/CR2 (CD35/CD21) and non-degradative antigen recycling; protein-level evidence."
+    },
+    {
+      "doi": "10.1084/jem.20210790",
+      "pmid": "PMID:34424268",
+      "citation": "Heesters et al. (2021)",
+      "supports": "Single-cell RNA-seq of human FDCs; supports regulation of B cell antigen availability and T cell interactions."
+    },
+    {
+      "doi": "10.1007/s00018-022-04303-4",
+      "pmid": "PMID:35505125",
+      "citation": "Doan et al. (2022)",
+      "supports": "FDC as radio-resistant stromal fibroblast; long-term antigen harbor function and dendritic morphology."
+    },
+    {
+      "doi": "10.3389/fimmu.2020.599647",
+      "pmid": "PMID:33469456",
+      "citation": "Dernstedt et al. (2020)",
+      "supports": "CD55/DAF expression and complement regulation in the germinal center; protein-level flow-cytometry evidence supporting the CD55 surface marker axiom."
+    },
+    {
+      "doi": "10.1084/jem.20111449",
+      "pmid": "PMID:22042977",
+      "citation": "Wang et al. (2011)",
+      "supports": "FDC follicle identity, CR1/CR2 surface marker expression (protein level), and B cell retention in germinal centers."
+    }
+  ],
+  "justification": "CL:0000442 (follicular dendritic cell) describes the same lineage: non-hematopoietic stromal cells with dendritic morphology in B-cell follicles that retain antigen as immune complexes and present it to B cells via complement receptors. However, the CL term is genus-level and does not capture: (1) the anatomical specificity to the palatine tonsil; (2) surface expression of CD55/DAF, which is the defining marker distinguishing this subset from other FDC states in the Azimuth tonsil atlas; and (3) transcript-level enrichment of CD14, which further distinguishes this population. The only existing child of CL:0000442 is CL:0009015 (Peyer's patch follicular dendritic cell), which is restricted to the small intestine and has no CD14/CD55 phenotype. A new term is therefore needed for the tonsil-specific, CD55-positive FDC subset. Note: CD14 is an atlas-derived, transcript-level marker and is not asserted as a protein-level surface axiom; CD55/DAF has protein-level surface evidence and is asserted via 'has plasma membrane part'. [Revised 2026-07-28: de-anchored from palatine tonsil. A broad ASTA tissue-distribution search established this is a general population of secondary lymphoid organs / MALT rather than a palatine-tonsil-specific type; the tonsil is merely the tissue sampled by the atlas. Label and location axiom generalised accordingly (location → germinal center, UBERON:0010754). [Revised 2026-07-28: species-neutral term — marker axioms standardised to generic (cross-species) PR classes per CL convention; marker species attribution retained in the definition text. (PR:P08174->PR:000025662, PR:P20023->PR:000001338).]",
+  "ntr_markdown": "## New term request: CD55-positive follicular dendritic cell\n\n**Proposed label:** CD55-positive follicular dendritic cell\n\n**Definition:** A follicular dendritic cell that is part of a germinal center, distinguished by surface expression of complement decay-accelerating factor (CD55/DAF; PR:P08174 in humans) and by transcript-level enrichment of CD14 relative to other follicular dendritic cell subsets. Like all follicular dendritic cells, this cell captures and retains native antigen as complement-opsonised immune complexes via complement receptors CR1 (CD35) and CR2 (CD21; PMID:23770227), supports germinal-center B cell survival and differentiation (PMID:23332930), and maintains follicular architecture through a three-dimensional dendritic meshwork (PMID:35505125). CD55/DAF expression provides local regulation of complement activation within the follicular niche (PMID:33469456). Follicular dendritic cells populate the B-cell follicles and germinal centers of secondary lymphoid organs generally.\n\n**Parent (is_a):** follicular dendritic cell (CL:0000442)\n\n**Anatomical location:** germinal center (UBERON:0010754)\n\n**Logical axioms:**\n- `part of` (BFO:0000050) some **germinal center** (UBERON:0010754) — Resides within the germinal center of secondary lymphoid organs (broad ASTA search: not tonsil-restricted); the source atlas sampled human palatine tonsil.\n- `has plasma membrane part` (RO:0002104) some **complement decay-accelerating factor** (PR:000025662) — CD55/DAF surface expression is supported by protein-level flow-cytometry evidence in germinal-center cells (PMID:33469456). This is the primary distinguishing surface marker for this subset.\n- `has plasma membrane part` (RO:0002104) some **complement receptor type 2** (PR:000001338) — CR2/CD21 is the canonical FDC surface marker mediating immune-complex capture; protein-level evidence across multiple studies (PMID:23770227, PMID:22042977).\n- `capable of` (RO:0002215) some **regulation of complement activation** (GO:0030449) — CD55/DAF on the cell surface inhibits complement deposition, regulating complement activation in the germinal center niche (PMID:33469456).\n- `capable of part of` (RO:0002216) some **germinal center B cell differentiation** (GO:0002314) — FDCs support germinal-center B cell survival and differentiation by antigen display and survival signals, but do not carry out the full differentiation process themselves (PMID:23332930, PMID:34424268).\n\n**Synonyms:**\n- CD14+CD55+ follicular dendritic cell (exact)\n- CD14-positive CD55-positive FDC (related)\n- tonsil germinal center follicular dendritic cell (broad)\n\n**References:**\n- King et al. (2021). DOI: 10.1126/sciimmunol.abh3768 ; PMID:34623901 — Atlas source defining the CD14+CD55+ FDC annotation in the human palatine tonsil; provides the subset label and tissue context.\n- Rezk et al. (2013). DOI: 10.1016/j.humpath.2012.10.005 ; PMID:23332930 — FDC lineage definition: non-hematopoietic stromal cells forming dendritic meshwork in lymphoid follicles; antigen retention and B cell survival support.\n- Heesters et al. (2013). DOI: 10.1016/j.immuni.2013.02.023 ; PMID:23770227 — FDC immune complex capture via CR1/CR2 (CD35/CD21) and non-degradative antigen recycling; protein-level evidence.\n- Heesters et al. (2021). DOI: 10.1084/jem.20210790 ; PMID:34424268 — Single-cell RNA-seq of human FDCs; supports regulation of B cell antigen availability and T cell interactions.\n- Doan et al. (2022). DOI: 10.1007/s00018-022-04303-4 ; PMID:35505125 — FDC as radio-resistant stromal fibroblast; long-term antigen harbor function and dendritic morphology.\n- Dernstedt et al. (2020). DOI: 10.3389/fimmu.2020.599647 ; PMID:33469456 — CD55/DAF expression and complement regulation in the germinal center; protein-level flow-cytometry evidence supporting the CD55 surface marker axiom.\n- Wang et al. (2011). DOI: 10.1084/jem.20111449 ; PMID:22042977 — FDC follicle identity, CR1/CR2 surface marker expression (protein level), and B cell retention in germinal centers.\n\n**Justification:** CL:0000442 (follicular dendritic cell) describes the same lineage: non-hematopoietic stromal cells with dendritic morphology in B-cell follicles that retain antigen as immune complexes and present it to B cells via complement receptors. However, the CL term is genus-level and does not capture: (1) the anatomical specificity to the palatine tonsil; (2) surface expression of CD55/DAF, which is the defining marker distinguishing this subset from other FDC states in the Azimuth tonsil atlas; and (3) transcript-level enrichment of CD14, which further distinguishes this population. The only existing child of CL:0000442 is CL:0009015 (Peyer's patch follicular dendritic cell), which is restricted to the small intestine and has no CD14/CD55 phenotype. A new term is therefore needed for the tonsil-specific, CD55-positive FDC subset. Note: CD14 is an atlas-derived, transcript-level marker and is not asserted as a protein-level surface axiom; CD55/DAF has protein-level surface evidence and is asserted via 'has plasma membrane part'. [Revised 2026-07-28: de-anchored from palatine tonsil. A broad ASTA tissue-distribution search established this is a general population of secondary lymphoid organs / MALT rather than a palatine-tonsil-specific type; the tonsil is merely the tissue sampled by the atlas. Label and location axiom generalised accordingly (location → germinal center, UBERON:0010754). [Revised 2026-07-28: species-neutral term — marker axioms standardised to generic (cross-species) PR classes per CL convention; marker species attribution retained in the definition text. (PR:P08174->PR:000025662, PR:P20023->PR:000001338).]\n\n_Source: Azimuth human_tonsil_v2 fine label; atlas King et al. 2021 (DOI 10.1126/sciimmunol.abh3768). Draft for review — not yet submitted._\n"
+}

@@ -1,0 +1,82 @@
+{
+  "238530091": {
+    "corpus_id": "238530091",
+    "first_author": "King",
+    "authors": ["Hamish W. King", "Kristen L. Wells", "Zohar Shipony", "Arwa S. Kathiria", "Lisa E. Wagar", "C. Lareau", "N. Orban", "R. Capasso", "Mark M. Davis", "L. Steinmetz", "L. James", "W. Greenleaf"],
+    "year": 2021,
+    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.abh3768",
+    "pmid": "34623901"
+  },
+  "235487053": {
+    "corpus_id": "235487053",
+    "first_author": "Fu",
+    "authors": ["N. Fu", "Fangyu Xie", "Zhongwen Sun", "Qin Wang"],
+    "year": 2021,
+    "title": "The OX40/OX40L Axis Regulates T Follicular Helper Cell Differentiation: Implications for Autoimmune Diseases",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.670637",
+    "pmid": "34234777"
+  },
+  "31208953": {
+    "corpus_id": "31208953",
+    "first_author": "Tahiliani",
+    "authors": ["V. Tahiliani", "Tarun E. Hutchinson", "G. Abboud", "M. Croft", "Shahram Salek-Ardakani"],
+    "year": 2016,
+    "title": "OX40 Co-operates with ICOS to Amplify Follicular T Helper Cell Development and Germinal Center Reactions During Infection",
+    "journal": "Journal of Immunology",
+    "doi": "10.4049/jimmunol.1601356",
+    "pmid": "27895177"
+  },
+  "4651838": {
+    "corpus_id": "4651838",
+    "first_author": "Kim",
+    "authors": ["Jong R. Kim", "Hyung W. Lim", "S. Kang", "Peter Hillsamer", "Chang H. Kim"],
+    "year": 2005,
+    "title": "Human CD57+ germinal center-T cells are the major helpers for GC-B cells and induce class switch recombination",
+    "journal": "BMC Immunology",
+    "doi": "10.1186/1471-2172-6-3",
+    "pmid": "15694005"
+  },
+  "283910276": {
+    "corpus_id": "283910276",
+    "first_author": "Dubensky",
+    "authors": ["Sam Barnett Dubensky", "Yutong Zhu", "Molly Gallagher", "K. Kumashie", "Tianyu Lu", "J. Tedesco", "Nina De Luna", "Katherine Premo", "Yi Qi", "S. Rachimi", "E. C. Cabrera", "Bria Fulmer", "Ijeoma C. Meremikwu", "Ashley Carter", "S. Henrickson", "N. Romberg", "Amy E. Baxter", "D. Oldridge", "Laura A. Vella"],
+    "year": 2025,
+    "title": "Multimodal analysis defines GNG4 as a distinguishing feature of germinal center-positioned CD4 T follicular helper cells in humans",
+    "journal": "bioRxiv",
+    "doi": "10.64898/2025.12.10.693235",
+    "pmid": "41427421"
+  },
+  "210121629": {
+    "corpus_id": "210121629",
+    "first_author": "Brenna",
+    "authors": ["Elena Brenna", "A. N. Davydov", "K. Ladell", "J. McLaren", "Paolo Bonaiuti", "Maria Metsger", "J. Ramsden", "S. Gilbert", "T. Lambe", "D. Price", "Suzanne L. Campion", "D. Chudakov", "P. Borrow", "A. McMichael"],
+    "year": 2020,
+    "title": "CD4+ T Follicular Helper Cells in Human Tonsils and Blood Are Clonally Convergent but Divergent from Non-Tfh CD4+ Cells",
+    "journal": "Cell Reports",
+    "doi": "10.1016/j.celrep.2019.12.016",
+    "pmid": "31914381"
+  },
+  "8105155": {
+    "corpus_id": "8105155",
+    "first_author": "Yamashita",
+    "authors": ["Keiji Yamashita", "K. Kawata", "H. Matsumiya", "Ryuta Kamekura", "Sumito Jitsukawa", "Tomonori Nagaya", "Noriko Ogasawara", "Kenichi Takano", "T. Kubo", "Sachiko Kimura", "K. Shigehara", "T. Himi", "S. Ichimiya"],
+    "year": 2016,
+    "title": "Bob1 limits cellular frequency of T-follicular helper cells",
+    "journal": "European Journal of Immunology",
+    "doi": "10.1002/eji.201545499",
+    "pmid": "27080143"
+  },
+  "271291186": {
+    "corpus_id": "271291186",
+    "first_author": "Liang",
+    "authors": ["Chunguang Liang", "Silvia Spoerl", "Yin Xiao", "K. Habenicht", "Sigrun S Haeusl", "Isabel Sandner", "Julia Winkler", "Nicholas Strieder", "Rüdiger Eder", "Hanna Stanewsky", "C. Alexiou", "Diana Dudziak", "A. Rosenwald", "M. Edinger", "Michael Rehli", "P. Hoffmann", "Thomas H. Winkler", "F. Berberich-Siebelt"],
+    "year": 2024,
+    "title": "Oligoclonal CD4+CXCR5+ T cells with a cytotoxic phenotype appear in tonsils and blood",
+    "journal": "Communications Biology",
+    "doi": "10.1038/s42003-024-06563-1",
+    "pmid": "39025930"
+  }
+}

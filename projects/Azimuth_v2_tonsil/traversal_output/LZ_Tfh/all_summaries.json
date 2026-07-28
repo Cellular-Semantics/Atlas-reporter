@@ -1,0 +1,75 @@
+[
+  {
+    "corpus_id": "2229164",
+    "title": "CXCR5+CD8+ T cells are localized in B cell follicles and germinal centers and exhibit regulatory and anti-tumor function",
+    "authors": ["F. Chu", "S. Neelapu"],
+    "year": 2015,
+    "doi": "10.1186/2051-1426-3-S2-P321",
+    "source_method": "asta_snippet",
+    "summary": "Defines the canonical Tfh surface/transcription-factor phenotype (CXCR5-high, PD-1-high, Bcl-6+, CD4+) and states these cells reside in the germinal center where they act as specialized B helper T cells providing survival and selection signals to GC B cells. CXCR5 and PD-1 here refer to surface protein markers; Bcl-6 (BCL6) is an intracellular transcription factor. Also documents Tfh in human tonsillar tissue.",
+    "quotes": [
+      "Follicular helper T cells (Tfh, CXCR5hiPDhiBcl-6+CD4+) that reside in GC serve as specialized B helper T cells and provide survival and selection signals to GC B cells."
+    ]
+  },
+  {
+    "corpus_id": "248525858",
+    "title": "Germinal center expansion but not plasmablast differentiation is proportional to peptide-MHCII density via CD40-CD40L signaling strength",
+    "authors": ["Zhixin Jing", "Mark J. McCarron", "Michael L. Dustin", "David R. Fooksman"],
+    "year": 2022,
+    "doi": "10.1016/j.celrep.2022.110763",
+    "source_method": "asta_snippet",
+    "summary": "Describes the light-zone (LZ) as the germinal-center compartment where B cells bind FDC-presented antigen and are selected by T follicular helper (TFH) cell recognition of cognate peptide-MHCII. Establishes the core light-zone selection function of Tfh; markers referenced (pMHCII, TCR) are functional/interaction molecules, not transcriptional.",
+    "quotes": [
+      "GCs are divided micro-anatomically into the dark zone where antigen-activated B cells proliferate and mutate their BCR genes, and the light zone (LZ) where they bind antigens that are captured and presented by follicular dendritic cells (FDC) followed by selection by T follicular helper (TFH) cell recognition of cognate peptide-loaded major histocompatibility complex class II (pMHCII) (De Silva and Klein, 2015)."
+    ]
+  },
+  {
+    "corpus_id": "216560594",
+    "title": "Novel specialized cell state and spatial compartments within the germinal center",
+    "authors": ["Domenick E. Kennedy", "Michael K. Okoreeh", "M. Maienschein-Cline", "Junting Ai"],
+    "year": 2020,
+    "doi": "10.1038/s41590-020-0660-2",
+    "source_method": "asta_snippet",
+    "summary": "Places Tfh help spatially in the light zone: LZ B cells capture antigen from FDCs and receive help from cognate Tfh cells, and are selected based on their competency to present antigen to Tfh. Strong T cell selection primes proliferation and re-entry into the dark zone. Confirms the light-zone localisation and selection-help function.",
+    "quotes": [
+      "The LZ contains more sparse populations of CD83 + B cells that capture antigen from follicular dendritic cells (FDCs) and receive help from cognate T follicular helper (T FH ) cells 4 .",
+      "B cells in the LZ are selected based on their competency to present antigen to TFH cells 5,6 more so than B cell antigen receptor (BCR) signal strength 7 ."
+    ]
+  },
+  {
+    "corpus_id": "287256835",
+    "title": "Aging restricts maturation of CXCL13+ T follicular helper cells in human immunity",
+    "authors": ["Nathan A. Bracey", "Casey Beppler", "T. Bilich", "Adrienne H. Long"],
+    "year": 2026,
+    "doi": "10.64898/2026.04.03.715992",
+    "source_method": "asta_snippet",
+    "summary": "In human tonsil, uses CXCR5 and PD-1 as established markers of Tfh cell maturation and shows GC-Tfh are the CXCR5+ PD-1-high population (with pre-Tfh being CXCR5+ PD-1-low). CXCR5 and PD-1 are measured here as surface proteins by intracellular cytokine staining / flow cytometry; CXCL13 marks an effector subset within GC-Tfh. Directly supports CXCR5-high, PD-1-high protein phenotype of light-zone GC-Tfh in human tonsil.",
+    "quotes": [
+      "using CXCR5 and PD-1 as previously established markers of Tfh cell maturation (Figure S3f). 7,35 CXCL13 expression was restricted to the CXCR5 + PD-1 hi GC-Tfh population and was absent from non-Tfh (CXCR5 -), pre-Tfh (CXCR5 + PD-1 lo ), and CXCR5 + PD-1 mid Tfh subsets (Figure 3h)."
+    ]
+  },
+  {
+    "corpus_id": "280005358",
+    "title": "PD-1 and ICOS are coexpressed in T follicular helper cells but define three stages of maturation of T follicular regulatory cells",
+    "authors": ["F. Ribeiro", "Diogo Antunes", "A. R. Pires", "José Rino"],
+    "year": 2025,
+    "doi": "10.1126/sciadv.adt8901",
+    "source_method": "asta_snippet",
+    "summary": "In human tonsil, defines Tfh by FOXP3-negative, CXCR5+ CD4 T cells and shows ICOS and PD-1 are characteristic of the most mature cells within the GC, with Tfh maturing toward an ICOS+ PD-1+ phenotype. ICOS, PD-1 and CXCR5 are surface protein markers; FOXP3 an intracellular transcription factor. Supports the protein-level activation/maturation phenotype of GC-localised Tfh in tonsil.",
+    "quotes": [
+      "Within the cell subsets defined as T FH and T FR , we explored the presence of the activation markers ICOS and PD-1 known to be characteristic of the most mature cells within the GC (17) (Fig. 1A)."
+    ]
+  },
+  {
+    "corpus_id": "16310176",
+    "title": "A mechanism of T cell dependent selection of antigen engaged Germinal Center B cells",
+    "authors": ["V. Krishna", "K. Bachman"],
+    "year": 2016,
+    "doi": "10.1371/journal.pone.0200241",
+    "source_method": "asta_snippet",
+    "summary": "Models affinity selection in the light zone as a competition between B cells binding Tfh cells (for costimulation) and loss of B cells from the GC light zone via apoptosis or return to the dark zone. Reinforces the mechanistic role of light-zone Tfh in affinity selection of centrocytes.",
+    "quotes": [
+      "affinity selection of antigen bound B cells in the light zone is due to a competition between the binding of B cells to Tfh cells and loss of B cells from the GC light zone, either due to apoptosis, or due to a return of B cells to the GC dark zone."
+    ]
+  }
+]

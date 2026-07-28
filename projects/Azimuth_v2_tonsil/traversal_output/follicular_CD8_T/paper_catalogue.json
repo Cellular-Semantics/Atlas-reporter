@@ -1,0 +1,92 @@
+{
+  "238530091": {
+    "corpus_id": "238530091",
+    "first_author": "King",
+    "authors": ["H. W. King", "et al."],
+    "year": 2021,
+    "title": "Single-cell analysis of human B cell maturation predicts how antibody class switching shapes selection dynamics",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.abh3768",
+    "pmid": "34623901"
+  },
+  "189926241": {
+    "corpus_id": "189926241",
+    "first_author": "Valentine",
+    "authors": ["Kristen M. Valentine", "K. Hoyer"],
+    "year": 2019,
+    "title": "CXCR5+ CD8 T Cells: Protective or Pathogenic?",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2019.01322",
+    "pmid": "31275308"
+  },
+  "2229164": {
+    "corpus_id": "2229164",
+    "first_author": "Chu",
+    "authors": ["F. Chu", "S. Neelapu"],
+    "year": 2015,
+    "title": "CXCR5+CD8+ T cells are localized in B cell follicles and germinal centers and exhibit regulatory and anti-tumor function",
+    "journal": "Journal for Immunotherapy of Cancer",
+    "doi": "10.1186/2051-1426-3-S2-P321",
+    "pmid": null
+  },
+  "13886828": {
+    "corpus_id": "13886828",
+    "first_author": "Shen",
+    "authors": ["Juan Shen", "Xi Luo", "Qiongli Wu", "Jun Huang", "Guanying Xiao", "Lian-tang Wang", "Bin-yan Yang", "Huabin Li", "Changyou Wu"],
+    "year": 2018,
+    "title": "A Subset of CXCR5+CD8+ T Cells in the Germinal Centers From Human Tonsils and Lymph Nodes Help B Cells Produce Immunoglobulins",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2018.02287",
+    "pmid": "30344522"
+  },
+  "25681591": {
+    "corpus_id": "25681591",
+    "first_author": "Perdomo-Celis",
+    "authors": ["F. Perdomo-Celis", "N. Taborda", "M. Rugeles"],
+    "year": 2017,
+    "title": "Follicular CD8+ T Cells: Origin, Function and Importance during HIV Infection",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2017.01241",
+    "pmid": "29085360"
+  },
+  "206692143": {
+    "corpus_id": "206692143",
+    "first_author": "Petrovas",
+    "authors": ["C. Petrovas", "S. Ferrando-Martínez", "Michael Y. Gerner", "J. Casazza", "A. Pegu", "C. Deleage", "M. Betts", "R. Koup"],
+    "year": 2017,
+    "title": "Follicular CD8 T cells accumulate in HIV infection and can kill infected cells in vitro via bispecific antibodies",
+    "journal": "Science Translational Medicine",
+    "doi": "10.1126/scitranslmed.aag2285",
+    "pmid": "28100833"
+  },
+  "133604132": {
+    "corpus_id": "133604132",
+    "first_author": "Chu",
+    "authors": ["F. Chu", "Haiyan S. Li", "Xindong Liu", "S. Neelapu"],
+    "year": 2019,
+    "title": "CXCR5+CD8+ T cells are a distinct functional subset with antitumor activity",
+    "journal": "Leukemia",
+    "doi": "10.1038/s41375-019-0464-2",
+    "pmid": "31028278"
+  },
+  "258787618": {
+    "corpus_id": "258787618",
+    "first_author": "Collins",
+    "authors": ["D. Collins", "Julia Hitschfel", "Jonathan M. Urbach", "G. Mylvaganam", "Bruce D. Walker"],
+    "year": 2023,
+    "title": "Cytolytic CD8+ T cells infiltrate germinal centers to limit ongoing HIV replication in spontaneous controller lymph nodes",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.ade5872",
+    "pmid": "37205767"
+  },
+  "9578811": {
+    "corpus_id": "9578811",
+    "first_author": "Schaerli",
+    "authors": ["P. Schaerli", "K. Willimann", "A. Lang", "M. Lipp", "P. Loetscher", "B. Moser"],
+    "year": 2000,
+    "title": "Cxc Chemokine Receptor 5 Expression Defines Follicular Homing T Cells with B Cell Helper Function",
+    "journal": "The Journal of Experimental Medicine",
+    "doi": "10.1084/jem.192.11.1553",
+    "pmid": "11104798"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "cell_type_label": "COL27A1-positive follicular dendritic cell (tonsil germinal center / B follicle stromal subset)",
+  "working_definition": "A non-hematopoietic, mesenchymally derived stromal cell of the B-cell follicle and germinal center in the human palatine tonsil, distinguished at the transcriptomic level by expression of COL27A1 (type XXVII collagen alpha-1 chain). It belongs to the FDC lineage defined by complement receptors (CR2), Fc receptors (FCGR2B, FCER2A), and CXCL13 secretion, and constitutes one of the phenotypically distinct FDC subsets — light-zone or dark-zone — that partition the germinal-center compartment. The COL27A1 transcript is the atlas-assigned discriminating marker for this subset; no protein-level validation of COL27A1 in FDCs was identified in the traversed literature.",
+  "searches_performed": [
+    "COL27A1 follicular dendritic cell",
+    "follicular dendritic cell",
+    "germinal center follicular dendritic cell",
+    "dark zone follicular dendritic cell",
+    "light zone follicular dendritic cell",
+    "marginal reticular cell",
+    "collagen positive stromal cell"
+  ],
+  "best_match": {
+    "cl_term": "follicular dendritic cell",
+    "cl_id": "CL:0000442",
+    "cl_definition": "A cell with extensive dendritic processes found in the B cell areas (primary follicles and germinal centers) of lymphoid tissue. They are unrelated to the dendritic cell associated with T cells. Follicular dendritic cells have Fc receptors and C3b receptors, but unlike other dendritic cells, they do not process or present antigen in a way that allows recognition by T cells. Instead, they hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000442 (follicular dendritic cell) accurately describes the parent lineage: non-hematopoietic cells with dendritic processes in B-cell follicles and germinal centers, bearing Fc and complement receptors, that hold antigen as immune complexes for B-cell presentation. The report's COL27A1+ subset shares all of these defining features. However, the CL term does not capture the distinguishing COL27A1 transcript marker, the tonsil germinal-center location specifically, or the zonal (LZ/DZ) subset identity that differentiates this atlas cluster from other FDC subsets. No more specific CL term for a COL27A1+ FDC subset, a germinal-center FDC subset, or a dark-zone/light-zone FDC subset was found in CL after exhaustive lexical search. The match is therefore broad: the report cell type IS-A follicular dendritic cell, but the atlas subset has distinguishing molecular and zonal features the CL term does not capture.",
+  "other_candidates": [],
+  "recommendation": "Use CL:0000442 (follicular dendritic cell) as a broad parent mapping. A new CL term is needed for a COL27A1-expressing FDC subset of the tonsil germinal center. The new term should be defined as a subtype of follicular dendritic cell (CL:0000442), located in the germinal center of the palatine tonsil, characterised by expression of COL27A1, and placed in the context of the light-zone / dark-zone FDC zonal heterogeneity described by Pikor et al. (2020) and Onder et al. (2021). A broader NTR for germinal-center FDC zonal subtypes (LZ-FDC and DZ-FDC) would also be biologically justified.",
+  "new_term_needed": true
+}

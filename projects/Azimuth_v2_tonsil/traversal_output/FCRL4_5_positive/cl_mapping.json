@@ -1,0 +1,36 @@
+{
+  "cell_type_label": "FCRL4/5+ (Azimuth human_tonsil_v2 fine label)",
+  "working_definition": "FCRL4/5+ memory B cells are a tissue-based, atypical memory B cell population defined by surface co-expression of FCRL4 (FcRH4) and FCRL5 together with CD11c, and characteristically CD27-negative despite carrying class-switched (IgG/IgA), somatically mutated BCRs. They localise to the crypt sub-epithelium and perifollicular regions of the palatine tonsil, are largely absent from blood and spleen, and are functionally distinct — hyporesponsive to BCR ligation, biased away from plasma cell differentiation, and enriched for antibody reactivity to commensal microbiota.",
+  "searches_performed": [
+    "atypical memory B cell",
+    "tissue-based memory B cell",
+    "FCRL4 B cell",
+    "tissue-like memory B cell",
+    "CD11c T-bet memory B cell",
+    "class switched memory B cell",
+    "memory B cell",
+    "CD27-negative memory B cell",
+    "FcRL4 memory B cell",
+    "CD21-low B cell",
+    "mucosal memory B cell"
+  ],
+  "best_match": {
+    "cl_term": "memory B cell",
+    "cl_id": "CL:0000787",
+    "cl_definition": "A memory B cell is a mature B cell that is long-lived, readily activated upon re-encounter of its antigenic determinant, and has been selected for expression of higher affinity immunoglobulin. This cell type has the phenotype CD19-positive, CD20-positive, MHC Class II-positive, and CD138-negative.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "No CL term exists for atypical/tissue-based/FCRL4-positive memory B cells or any CD27-negative class-switched memory B cell subset. The curator-proposed parent CL:0000972 ('class switched memory B cell') explicitly defines these cells as CD27-positive ('These cells are CD27-positive and have either IgG, IgE, or IgA on the cell surface'), directly contradicting the defining CD27-negative phenotype of FCRL4/5+ cells — assigning CL:0000972 would misrepresent the biology. CL:0000787 'memory B cell' is the honest broad parent: the FCRL4/5+ population satisfies the core memory B cell criteria (long-lived, antigen-experienced, high-affinity Ig, CD19-positive, CD20-positive, CD138-negative) but the CL term does not capture the FCRL4/FCRL5 defining markers, CD27-negativity, tissue restriction to sub-epithelial lymphoid niches, CD21-low phenotype, or the hyporesponsive functional programme that distinguishes this population from classical memory B cells. A new, more specific CL term is needed.",
+  "other_candidates": [
+    {
+      "cl_term": "class switched memory B cell",
+      "cl_id": "CL:0000972",
+      "cl_definition": "A class switched memory B cell is a memory B cell that has undergone Ig class switching and therefore is IgM-negative on the cell surface. These cells are CD27-positive and have either IgG, IgE, or IgA on the cell surface.",
+      "reason_rejected": "The CL definition explicitly requires CD27-positive expression, which directly contradicts the defining CD27-negative phenotype of FCRL4/5+ atypical memory B cells. Although FCRL4/5+ cells are class-switched (IgG/IgA), the CD27-positive requirement in the CL definition makes this an incorrect parent. Using CL:0000972 as the broad match would misrepresent a defining biological feature of the population."
+    }
+  ],
+  "recommendation": "A new CL term is needed for the FCRL4/5-positive tissue-based atypical memory B cell. Suggested label: 'FCRL4-positive memory B cell' or 'atypical memory B cell'. The new term should be placed as a subtype of CL:0000787 (memory B cell), with defining characteristics: FCRL4-positive, FCRL5-positive, CD11c-positive, CD27-negative, IgM-negative, IgD-negative, class-switched (IgG/IgA), CD21-low, CD20-high, CD38-negative, tissue-resident in sub-epithelial regions of mucosal-associated lymphoid tissues (tonsil, intestinal lymphoid tissue). The CD27-positive constraint in CL:0000972 means CL:0000972 cannot be used as parent; the NTR should propose CL:0000787 as the direct parent and note that a CD27-negative class-switched memory B cell intermediate may also be needed.",
+  "new_term_needed": true
+}

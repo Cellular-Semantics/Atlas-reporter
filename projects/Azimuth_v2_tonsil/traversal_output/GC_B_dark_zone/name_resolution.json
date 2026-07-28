@@ -1,0 +1,14 @@
+{
+  "label": "dark zone",
+  "resolved_names": [
+    "dark zone germinal center B cell",
+    "germinal center dark zone B cell",
+    "centroblast",
+    "dark zone (DZ) GC B cell"
+  ],
+  "scope": "adult",
+  "tissue_context": "palatine tonsil (germinal center dark zone)",
+  "confidence": "high",
+  "centroblast_equivalence": "The Azimuth human_tonsil_v2 'dark zone' fine label corresponds to the classical centroblast: the proliferating, somatically-hypermutating germinal center B cell compartment. In the canonical two-zone model, dark zone B cells = centroblasts (CXCR4-high, CD83-low/CD86-low, AID/AICDA-high, Ki67+), while light zone B cells = centrocytes (CXCR4-low, CD83-high/CD86-high). The terms 'dark zone GC B cell' and 'centroblast' are used interchangeably in the literature; the downstream CL mapping should treat 'centroblast' as the equivalent CL concept.",
+  "evidence": "ASTA is blind to the atlas body text (only the King et al. 2021 abstract, CorpusId 238530091, is indexed). Resolution is grounded in the broader germinal-center literature retrieved via snippet_search, which consistently equates dark zone B cells with centroblasts undergoing proliferation and somatic hypermutation, distinguished from light zone centrocytes by CXCR4-hi / CD83-lo / CD86-lo surface phenotype (Stengel et al. 2019; Di et al. 2021; Vora et al. 1998)."
+}

@@ -1,0 +1,102 @@
+{
+  "cell_type_label": "LZ_Tfh",
+  "suggested_label": "light zone germinal center T cell",
+  "definition": "A germinal center T cell (germinal center T follicular helper cell) positioned in the germinal center light zone, where it delivers antigen-dependent selection help to centrocytes. It is CXCR5-high, PD-1-high, ICOS-high and BCL6-high, and its light-zone localisation and selection function distinguish it from germinal-center T cells considered without regard to intra-germinal-center compartment.",
+  "parent_term": {
+    "cl_id": "CL:0009062",
+    "cl_term": "germinal center T cell"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0010754",
+    "uberon_term": "germinal center"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "germinal center",
+      "filler_id": "UBERON:0010754",
+      "notes": "Resides in the germinal center; specifically its light-zone compartment (see note)."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "C-X-C chemokine receptor type 5",
+      "filler_id": "PR:000001209",
+      "notes": "CXCR5 (high) surface protein — follicle/GC homing."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "programmed cell death protein 1",
+      "filler_id": "PR:000001919",
+      "notes": "PD-1 (high) surface protein — mature GC-Tfh marker."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "inducible T-cell costimulator",
+      "filler_id": "PR:000001860",
+      "notes": "ICOS (high) surface protein — GC-Tfh costimulation."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "light zone germinal center T follicular helper cell",
+      "scope": "exact"
+    },
+    {
+      "value": "light zone GC-Tfh",
+      "scope": "related"
+    },
+    {
+      "value": "germinal center light zone T follicular helper cell",
+      "scope": "exact"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1126/sciimmunol.abh3768",
+      "citation": "King et al. (2021)",
+      "supports": "Source single-cell atlas (Azimuth human_tonsil_v2).",
+      "pmid": "PMID:34623901"
+    },
+    {
+      "doi": "10.1186/2051-1426-3-S2-P321",
+      "citation": "Chu et al. (2015)",
+      "supports": "Defines the canonical Tfh surface/transcription-factor phenotype (CXCR5-high, PD-1-high, Bcl-6+, CD4+) and states these cells reside in the germinal center where they act as specialized B helper T cells providing survival and selection signals to GC B cells. CXCR5 and PD-1 here refer to surface protein markers; Bcl-6 (BCL6) is an intracellular transcription factor. Also documents Tfh in human tonsillar tissue."
+    },
+    {
+      "doi": "10.1016/j.celrep.2022.110763",
+      "citation": "Jing et al. (2022)",
+      "supports": "Describes the light-zone (LZ) as the germinal-center compartment where B cells bind FDC-presented antigen and are selected by T follicular helper (TFH) cell recognition of cognate peptide-MHCII. Establishes the core light-zone selection function of Tfh; markers referenced (pMHCII, TCR) are functional/interaction molecules, not transcriptional.",
+      "pmid": "PMID:35508132"
+    },
+    {
+      "doi": "10.1038/s41590-020-0660-2",
+      "citation": "Kennedy et al. (2020)",
+      "supports": "Places Tfh help spatially in the light zone: LZ B cells capture antigen from FDCs and receive help from cognate Tfh cells, and are selected based on their competency to present antigen to Tfh. Strong T cell selection primes proliferation and re-entry into the dark zone. Confirms the light-zone localisation and selection-help function.",
+      "pmid": "PMID:32341509"
+    },
+    {
+      "doi": "10.64898/2026.04.03.715992",
+      "citation": "Bracey et al. (2026)",
+      "supports": "In human tonsil, uses CXCR5 and PD-1 as established markers of Tfh cell maturation and shows GC-Tfh are the CXCR5+ PD-1-high population (with pre-Tfh being CXCR5+ PD-1-low). CXCR5 and PD-1 are measured here as surface proteins by intracellular cytokine staining / flow cytometry; CXCL13 marks an effector subset within GC-Tfh. Directly supports CXCR5-high, PD-1-high protein phenotype of light-zone GC-Tfh in human tonsil.",
+      "pmid": "PMID:41993471"
+    },
+    {
+      "doi": "10.1126/sciadv.adt8901",
+      "citation": "Ribeiro et al. (2025)",
+      "supports": "In human tonsil, defines Tfh by FOXP3-negative, CXCR5+ CD4 T cells and shows ICOS and PD-1 are characteristic of the most mature cells within the GC, with Tfh maturing toward an ICOS+ PD-1+ phenotype. ICOS, PD-1 and CXCR5 are surface protein markers; FOXP3 an intracellular transcription factor. Supports the protein-level activation/maturation phenotype of GC-localised Tfh in tonsil.",
+      "pmid": "PMID:40644556"
+    },
+    {
+      "doi": "10.1371/journal.pone.0200241",
+      "citation": "Krishna et al. (2016)",
+      "supports": "Models affinity selection in the light zone as a competition between B cells binding Tfh cells (for costimulation) and loss of B cells from the GC light zone via apoptosis or return to the dark zone. Reinforces the mechanistic role of light-zone Tfh in affinity selection of centrocytes.",
+      "pmid": "PMID:30138347"
+    }
+  ],
+  "justification": "Light-zone refinement of CL:0009062 (germinal center T cell). NOTE for curators: no general/tonsil 'germinal center light zone' UBERON term exists (only UBERON:8410052 lymph node germinal center light zone); light-zone locality is carried in the definition text and a general light-zone UBERON term may be worth adding. Species-neutral; surface markers asserted with generic PR classes (BCL6, an intracellular TF, is textual only).",
+  "ntr_markdown": "## New term request: light zone germinal center T cell\n\n**Proposed label:** light zone germinal center T cell\n\n**Definition:** A germinal center T cell (germinal center T follicular helper cell) positioned in the germinal center light zone, where it delivers antigen-dependent selection help to centrocytes. It is CXCR5-high, PD-1-high, ICOS-high and BCL6-high, and its light-zone localisation and selection function distinguish it from germinal-center T cells considered without regard to intra-germinal-center compartment.\n\n**Parent (is_a):** germinal center T cell (CL:0009062)\n\n**Anatomical location:** germinal center (UBERON:0010754)\n\n**Logical axioms:**\n- `part of` (BFO:0000050) some **germinal center** (UBERON:0010754) — Resides in the germinal center; specifically its light-zone compartment (see note).\n- `has plasma membrane part` (RO:0002104) some **C-X-C chemokine receptor type 5** (PR:000001209) — CXCR5 (high) surface protein — follicle/GC homing.\n- `has plasma membrane part` (RO:0002104) some **programmed cell death protein 1** (PR:000001919) — PD-1 (high) surface protein — mature GC-Tfh marker.\n- `has plasma membrane part` (RO:0002104) some **inducible T-cell costimulator** (PR:000001860) — ICOS (high) surface protein — GC-Tfh costimulation.\n\n**Synonyms:**\n- light zone germinal center T follicular helper cell (exact)\n- light zone GC-Tfh (related)\n- germinal center light zone T follicular helper cell (exact)\n\n**References:**\n- King et al. (2021). DOI: 10.1126/sciimmunol.abh3768 ; PMID:34623901 — Source single-cell atlas (Azimuth human_tonsil_v2).\n- Chu et al. (2015). DOI: 10.1186/2051-1426-3-S2-P321 — Defines the canonical Tfh surface/transcription-factor phenotype (CXCR5-high, PD-1-high, Bcl-6+, CD4+) and states these cells reside in the germinal center where they act as specialized B helper T cells providing survival and selection signals to GC B cells. CXCR5 and PD-1 here refer to surface protein markers; Bcl-6 (BCL6) is an intracellular transcription factor. Also documents Tfh in human tonsillar tissue.\n- Jing et al. (2022). DOI: 10.1016/j.celrep.2022.110763 ; PMID:35508132 — Describes the light-zone (LZ) as the germinal-center compartment where B cells bind FDC-presented antigen and are selected by T follicular helper (TFH) cell recognition of cognate peptide-MHCII. Establishes the core light-zone selection function of Tfh; markers referenced (pMHCII, TCR) are functional/interaction molecules, not transcriptional.\n- Kennedy et al. (2020). DOI: 10.1038/s41590-020-0660-2 ; PMID:32341509 — Places Tfh help spatially in the light zone: LZ B cells capture antigen from FDCs and receive help from cognate Tfh cells, and are selected based on their competency to present antigen to Tfh. Strong T cell selection primes proliferation and re-entry into the dark zone. Confirms the light-zone localisation and selection-help function.\n- Bracey et al. (2026). DOI: 10.64898/2026.04.03.715992 ; PMID:41993471 — In human tonsil, uses CXCR5 and PD-1 as established markers of Tfh cell maturation and shows GC-Tfh are the CXCR5+ PD-1-high population (with pre-Tfh being CXCR5+ PD-1-low). CXCR5 and PD-1 are measured here as surface proteins by intracellular cytokine staining / flow cytometry; CXCL13 marks an effector subset within GC-Tfh. Directly supports CXCR5-high, PD-1-high protein phenotype of light-zone GC-Tfh in human tonsil.\n- Ribeiro et al. (2025). DOI: 10.1126/sciadv.adt8901 ; PMID:40644556 — In human tonsil, defines Tfh by FOXP3-negative, CXCR5+ CD4 T cells and shows ICOS and PD-1 are characteristic of the most mature cells within the GC, with Tfh maturing toward an ICOS+ PD-1+ phenotype. ICOS, PD-1 and CXCR5 are surface protein markers; FOXP3 an intracellular transcription factor. Supports the protein-level activation/maturation phenotype of GC-localised Tfh in tonsil.\n- Krishna et al. (2016). DOI: 10.1371/journal.pone.0200241 ; PMID:30138347 — Models affinity selection in the light zone as a competition between B cells binding Tfh cells (for costimulation) and loss of B cells from the GC light zone via apoptosis or return to the dark zone. Reinforces the mechanistic role of light-zone Tfh in affinity selection of centrocytes.\n\n**Justification:** Light-zone refinement of CL:0009062 (germinal center T cell). NOTE for curators: no general/tonsil 'germinal center light zone' UBERON term exists (only UBERON:8410052 lymph node germinal center light zone); light-zone locality is carried in the definition text and a general light-zone UBERON term may be worth adding. Species-neutral; surface markers asserted with generic PR classes (BCL6, an intracellular TF, is textual only).\n\n_Source: Azimuth human_tonsil_v2 fine label; atlas King et al. 2021 (DOI 10.1126/sciimmunol.abh3768). Draft for review — not yet submitted._\n"
+}

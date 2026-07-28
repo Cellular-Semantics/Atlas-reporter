@@ -1,0 +1,72 @@
+{
+  "238530091": {
+    "corpus_id": "238530091",
+    "first_author": "King",
+    "authors": "Hamish W. King, Kristen L. Wells, Zohar Shipony, Arwa S. Kathiria, Lisa E. Wagar, C. Lareau, N. Orban, R. Capasso, Mark M. Davis, L. Steinmetz, L. James, W. Greenleaf",
+    "year": 2021,
+    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.abh3768",
+    "pmid": "34623901"
+  },
+  "235821808": {
+    "corpus_id": "235821808",
+    "first_author": "Ma",
+    "authors": "Ling Ma, M. Papadopoulou, M. Taton, F. Genco, A. Marchant, V. Meroni, D. Vermijlen",
+    "year": 2021,
+    "title": "Effector Vγ9Vδ2 T cell response to congenital Toxoplasma gondii infection",
+    "journal": "JCI Insight",
+    "doi": "10.1172/jci.insight.138066",
+    "pmid": "34255746"
+  },
+  "219605283": {
+    "corpus_id": "219605283",
+    "first_author": "Herrmann",
+    "authors": "T. Herrmann, A. S. Fichtner, M. M. Karunakaran",
+    "year": 2020,
+    "title": "An Update on the Molecular Basis of Phosphoantigen Recognition by Vγ9Vδ2 T Cells",
+    "journal": "Cells",
+    "doi": "10.3390/cells9061433",
+    "pmid": "32527033"
+  },
+  "289723511": {
+    "corpus_id": "289723511",
+    "first_author": "Oh",
+    "authors": "Won Joon Oh, S. Seo, H. K. I. Chamathka, Jae-Hyun Park, Tae Jin Kim",
+    "year": 2026,
+    "title": "Selective Enrichment of Non-Canonical Vγ9-Jγ2 TRG Clonotypes in Clear Cell Renal Cell Carcinoma With Shorter CDR3 Loops",
+    "journal": "Immune Network",
+    "doi": "10.4110/in.2026.26.e25",
+    "pmid": "42405214"
+  },
+  "284813837": {
+    "corpus_id": "284813837",
+    "first_author": "Li",
+    "authors": "Hui Li, Xiaxuan Li, Hangyu Chen, Zhanqun Yang, Mengzhu Zheng, Yuan Xue, Yingying Yan, Jian Lin, Xuan Lai, Long Chen",
+    "year": 2026,
+    "title": "Impaired function of Vγ9Vδ2 T cells in frail elderly",
+    "journal": "Immunity & Ageing",
+    "doi": "10.1186/s12979-026-00558-8",
+    "pmid": "41546035"
+  },
+  "267030542": {
+    "corpus_id": "267030542",
+    "first_author": "Guo",
+    "authors": "Jing Guo, R. Chowdhury, Vamsee Mallajosyula, Jianming Xie, M. Dubey, Yuanyuan Liu, Jing Li, Yu-Ling Wei, Brad A. Palanski, Conghua Wang, Lingfeng Qiu, M. Ohanyan, Oliver Kask, Elsa Sola, Lilit Kamalyan, David B Lewis, T. Scriba, Mark M. Davis, Dylan Dodd, Xun Zeng, Y. Chien",
+    "year": 2024,
+    "title": "γδ T cell antigen receptor polyspecificity enables T cell responses to a broad range of immune challenges",
+    "journal": "Proceedings of the National Academy of Sciences",
+    "doi": "10.1073/pnas.2315592121",
+    "pmid": "38227652"
+  },
+  "24575852": {
+    "corpus_id": "24575852",
+    "first_author": "Pauza",
+    "authors": "C. Pauza, C. Cairo",
+    "year": 2015,
+    "title": "Evolution and Function of the TCR Vgamma9 Chain Repertoire: It’s Good to be Public",
+    "journal": "Cellular Immunology",
+    "doi": "10.1016/j.cellimm.2015.02.010",
+    "pmid": "25769734"
+  }
+}

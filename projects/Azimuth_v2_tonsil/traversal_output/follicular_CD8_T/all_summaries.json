@@ -1,0 +1,109 @@
+[
+  {
+    "corpus_id": "189926241",
+    "title": "CXCR5+ CD8 T Cells: Protective or Pathogenic?",
+    "authors": ["Kristen M. Valentine", "K. Hoyer"],
+    "year": 2019,
+    "doi": "10.3389/fimmu.2019.01322",
+    "source_method": "asta_snippet",
+    "summary": "Review defining the CXCR5+ CD8 T cell as a distinct subset within the B cell follicle and germinal center under chronic antigen, phenotypically a non-exhausted effector-memory population functionally analogous to CD4 Tfh. CXCR5 and CD8 here are surface/protein markers (flow phenotype), consistent with the atlas Azimuth label being derived from transcript-level surrogates of the same subset.",
+    "quotes": [
+      "Yet, a distinct CXCR5+ CD8 T cell subset identified within the B cell follicle and germinal center in situations of chronic antigen has recently been defined.",
+      "CD8 T cell localization to the B cell follicle suggests a functional profile similar to CD4 T follicular helper cells that are licensed to promote B cell responses.",
+      "CXCR5+ CD8 T cells control viral load during infection, and also promote antibody-mediated autoimmune disease progression."
+    ]
+  },
+  {
+    "corpus_id": "2229164",
+    "title": "CXCR5+CD8+ T cells are localized in B cell follicles and germinal centers and exhibit regulatory and anti-tumor function",
+    "authors": ["F. Chu", "S. Neelapu"],
+    "year": 2015,
+    "doi": "10.1186/2051-1426-3-S2-P321",
+    "source_method": "asta_snippet",
+    "summary": "Identifies CD45RA-CXCR5+CD8+ T cells in human tonsillar tissue and follicular lymphoma by FACS and confocal microscopy, localised to germinal centers and T cell zones. Markers CXCR5, CD8, CD45RA are protein/surface (FACS + immunostaining). Functionally these cells suppress Tfh-driven B cell differentiation and produce higher IFN-gamma and TNF-alpha than CXCR5- CD8 cells.",
+    "quotes": [
+      "We found that CXCR5+CD8+ T cells were present in high numbers and localized to GCs and T cell zones in the tonsillar tissues and FL, but present in low numbers in the peripheral blood.",
+      "Further analysis using intracellular cytokine staining showed that CXCR5+CD8+ T cells produced higher levels of IFN-γ and TNF-α compared to CXCR5-CD8+ subset.",
+      "These experiments indicated that CXCR5+CD8+ T cells suppressed Tfh function, as demonstrated by reduced differentiation of naive and/or memory B cells into plasmablasts cells (CD19intCD38+)."
+    ]
+  },
+  {
+    "corpus_id": "13886828",
+    "title": "A Subset of CXCR5+CD8+ T Cells in the Germinal Centers From Human Tonsils and Lymph Nodes Help B Cells Produce Immunoglobulins",
+    "authors": ["Juan Shen", "Xi Luo", "Qiongli Wu", "Jun Huang", "Guanying Xiao", "Lian-tang Wang", "Bin-yan Yang", "Huabin Li", "Changyou Wu"],
+    "year": 2018,
+    "doi": "10.3389/fimmu.2018.02287",
+    "source_method": "asta_snippet",
+    "summary": "Directly characterises a CXCR5+CD8+ T cell subset in germinal centers of human tonsils and lymph nodes, reporting a B-helper function (support of immunoglobulin production). Title-level evidence anchoring the tonsil/germinal-center localisation of this subset.",
+    "quotes": [
+      "A Subset of CXCR5+CD8+ T Cells in the Germinal Centers From Human Tonsils and Lymph Nodes Help B Cells Produce Immunoglobulins"
+    ]
+  },
+  {
+    "corpus_id": "25681591",
+    "title": "Follicular CD8+ T Cells: Origin, Function and Importance during HIV Infection",
+    "authors": ["F. Perdomo-Celis", "N. Taborda", "M. Rugeles"],
+    "year": 2017,
+    "doi": "10.3389/fimmu.2017.01241",
+    "source_method": "asta_snippet",
+    "summary": "Review of the phenotype, location, and origin of follicular CD8+ T cells. Establishes that this subset was first characterised infiltrating human tonsil follicles, is CD3+ CD4- (alpha-beta T cell), expresses high CXCR5 (protein) enabling entry to B cell zones, lacks CCR7, and migrates toward CXCL13. CXCR5/CCR7/CD8/CD4/CD3 stated as surface phenotype; note CXCR5 protein expression is what licenses follicular homing.",
+    "quotes": [
+      "Quigley et al. first characterized a population of CD8 + T cells infiltrating human tonsil follicles and provided the insights into the phenotype and function of follicular CD8 + T cells (5).",
+      "Importantly, these cells express high levels of the C-X-C chemokine receptor type 5 (CXCR5), critical for entering the B cell zones in secondary lymphoid organs (13), and do not express the C-C chemokine receptor type 7 (CCR7), which directs them to the T cell zones (14).",
+      "In agreement with the expression of CXCR5, purified human CXCR5 + CD8 + T cells migrate in response to its ligand, the C-X-C motif ligand 13 (CXCL13) chemokine."
+    ]
+  },
+  {
+    "corpus_id": "206692143",
+    "title": "Follicular CD8 T cells accumulate in HIV infection and can kill infected cells in vitro via bispecific antibodies",
+    "authors": ["C. Petrovas", "S. Ferrando-Martínez", "Michael Y. Gerner", "J. Casazza", "A. Pegu", "C. Deleage", "M. Betts", "R. Koup"],
+    "year": 2017,
+    "doi": "10.1126/scitranslmed.aag2285",
+    "source_method": "asta_snippet",
+    "summary": "Examines human lymph nodes and tonsils and shows CD8 T cells infiltrate B cell follicles and germinal centers, with follicular CD8 (fCD8) cells retaining cytolytic potential (high granzyme B and perforin protein) despite reduced cytokine polyfunctionality. Establishes the follicle/GC localisation and cytolytic protein profile in human lymphoid tissue including tonsil.",
+    "quotes": [
+      "Petrovas et al. examined human lymph nodes and tonsils and somewhat surprisingly found that CD8 T cells did infiltrate follicles in HIV-infected individuals.",
+      "Significantly increased frequencies of CD8 T cells in the B cell follicles and GCs were found in LNs from treated and untreated HIV-infected individuals.",
+      "Follicular CD8 (fCD8) T cells, despite compromised cytokine polyfunctionality, showed good cytolytic potential characterized by high ex vivo expression of granzyme B and perforin."
+    ]
+  },
+  {
+    "corpus_id": "133604132",
+    "title": "CXCR5+CD8+ T cells are a distinct functional subset with antitumor activity",
+    "authors": ["F. Chu", "Haiyan S. Li", "Xindong Liu", "S. Neelapu"],
+    "year": 2019,
+    "doi": "10.1038/s41375-019-0464-2",
+    "source_method": "asta_snippet",
+    "summary": "Defines CXCR5+CD8+ T cells as a distinct subset present in human tonsils and follicular lymphoma with strong cytotoxic activity, capable of suppressing Tfh-mediated B cell differentiation. RNA-seq (transcript-level) profiling revealed 77 differentially expressed genes unique to CXCR5+CD8+ T cells, of which a 33-gene upregulated signature correlated with survival — this is the transcriptomic counterpart to the surface CXCR5/CD8 phenotype.",
+    "quotes": [
+      "We found that CXCR5+CD8+ T cells are present in human tonsils and follicular lymphoma, inhibit TFH-mediated B cell differentiation, and exhibit strong cytotoxic activity.",
+      "Furthermore, RNA-Seq-based transcriptional profiling revealed 77 differentially expressed genes unique to CXCR5+CD8+ T cells.",
+      "In summary, our study identified CXCR5+CD8+ T cells as a distinct T cell subset with ability to suppress TFH-mediated B cell differentiation, exert strong antitumor activity, and confer favorable prognosis in follicular lymphoma patients."
+    ]
+  },
+  {
+    "corpus_id": "258787618",
+    "title": "Cytolytic CD8+ T cells infiltrate germinal centers to limit ongoing HIV replication in spontaneous controller lymph nodes",
+    "authors": ["D. Collins", "Julia Hitschfel", "Jonathan M. Urbach", "G. Mylvaganam", "Bruce D. Walker"],
+    "year": 2023,
+    "doi": "10.1126/sciimmunol.ade5872",
+    "source_method": "asta_snippet",
+    "summary": "Spatial and transcriptional analysis of lymph-node follicular CD8 T cells (fCD8). Shows CXCR5+ fCD8s within germinal centers carry cytotoxic effector proteins (perforin, granzyme B) proximate to viral RNA foci, linking follicular localisation to cytolytic surveillance function. Perforin/granzyme B measured at protein level; transcriptional signatures of inflammatory chemotaxis and effector function also reported.",
+    "quotes": [
+      "Follicular CD8+ T cells (fCD8) mediate surveillance in lymph node (LN) germinal centers against lymphotropic infections and cancers, but the precise mechanisms by which these cells mediate immune control remain incompletely resolved.",
+      "In HIV controllers, the cytotoxic effectors perforin and granzyme B were elevated among virus-specific CXCR5+ fCD8s proximate to foci of HIV RNA within germinal centers."
+    ]
+  },
+  {
+    "corpus_id": "9578811",
+    "title": "Cxc Chemokine Receptor 5 Expression Defines Follicular Homing T Cells with B Cell Helper Function",
+    "authors": ["P. Schaerli", "K. Willimann", "A. Lang", "M. Lipp", "P. Loetscher", "B. Moser"],
+    "year": 2000,
+    "doi": "10.1084/jem.192.11.1553",
+    "source_method": "asta_snippet",
+    "summary": "Foundational study establishing CXCR5 (protein) as the marker of tonsillar follicular-homing T cells that migrate to CXCL13 (BCA-1) expressed in B cell follicles. Provides the mechanistic basis for CXCR5-driven follicular homing that defines the follicular CD8 subset.",
+    "quotes": [
+      "Memory but not naive T cells from tonsils are CXCR5+ and migrate in response to the B cell–attracting chemokine 1 (BCA-1), which is selectively expressed by reticular cells and blood vessels within B cell follicles."
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "cell_type_label": "dark zone germinal center B cell of tonsil (classical CENTROBLAST; CXCR4-high, CD83-low, AID-high, proliferating)",
+  "working_definition": "The dark zone GC B cell (centroblast) is the proliferating, somatically-hypermutating GC B cell compartment found in the dark zone of germinal centres in the human palatine tonsil. It is defined by high CXCR4 and AID/AICDA expression, low CD83 and CD86 surface levels, high Ki-67 positivity, and low surface immunoglobulin, and its canonical function is immunoglobulin somatic hypermutation coupled with rapid clonal expansion. The terms 'dark zone GC B cell' and 'centroblast' are used interchangeably in the literature; the dark zone is the anatomical compartment and the centroblast is the cell it contains.",
+  "searches_performed": [
+    "centroblast",
+    "dark zone germinal center B cell",
+    "germinal center dark zone",
+    "tonsil germinal center B cell",
+    "CXCR4-high germinal center B cell"
+  ],
+  "best_match": {
+    "cl_term": "centroblast",
+    "cl_id": "CL:0009112",
+    "cl_definition": "A germinal center B cell found in a lymph node germinal center dark zone.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0009112 'centroblast' captures the same biological identity as the report cell type — a dark zone GC B cell that is proliferating and undergoing somatic hypermutation, characterised by CXCR4-high surface phenotype. The biology described in the report (CXCR4-high, CD83-low, AID-high, Ki-67-positive, low surface Ig, dark zone location) is precisely the centroblast. However, the CL definition restricts the term to 'a lymph node germinal center dark zone', whereas the atlas cell type is found in the palatine tonsil. The tonsil is a distinct secondary lymphoid organ from a lymph node, and CL already recognises tonsil-specific GC B cells (CL:2000006). The report cell type is therefore more specific than CL:0009112 (it is the tonsil-resident equivalent of the lymph node centroblast), making this a broad match rather than an exact match. CL:2000006 'tonsil germinal center B cell' was also considered but rejected as the best match because it covers both dark zone and light zone tonsil GC B cells and is therefore broader still; CL:0009112 is closer biologically despite the tissue discrepancy.",
+  "other_candidates": [
+    {
+      "cl_term": "tonsil germinal center B cell",
+      "cl_id": "CL:2000006",
+      "cl_definition": "Any germinal center B cell that is part of a tonsil.",
+      "reason_rejected": "Covers all GC B cells in tonsil — both dark zone (centroblast) and light zone (centrocyte) — and thus lacks the dark zone / proliferative / SHM-active specificity that defines this cell type. It is the tissue-correct parent but too broad functionally."
+    }
+  ],
+  "recommendation": "Use CL:0009112 (centroblast) as a broad match parent. A new tonsil-specific child term is needed: 'tonsil centroblast' — defined as 'A germinal center B cell found in a tonsil germinal center dark zone', as a child of both CL:0009112 (centroblast) and CL:2000006 (tonsil germinal center B cell). This would be the precise tonsil analogue of CL:0009112.",
+  "new_term_needed": true
+}

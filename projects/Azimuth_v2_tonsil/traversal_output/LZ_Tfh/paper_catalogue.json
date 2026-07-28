@@ -1,0 +1,72 @@
+{
+  "238530091": {
+    "corpus_id": "238530091",
+    "first_author": "King",
+    "authors": ["Hamish W. King", "Kristen L. Wells", "Zohar Shipony", "Arwa S. Kathiria", "Lisa E. Wagar", "C. Lareau", "N. Orban", "R. Capasso", "Mark M. Davis", "L. Steinmetz", "L. James", "W. Greenleaf"],
+    "year": 2021,
+    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.abh3768",
+    "pmid": "34623901"
+  },
+  "2229164": {
+    "corpus_id": "2229164",
+    "first_author": "Chu",
+    "authors": ["F. Chu", "S. Neelapu"],
+    "year": 2015,
+    "title": "CXCR5+CD8+ T cells are localized in B cell follicles and germinal centers and exhibit regulatory and anti-tumor function",
+    "journal": "Journal for Immunotherapy of Cancer",
+    "doi": "10.1186/2051-1426-3-S2-P321",
+    "pmid": null
+  },
+  "248525858": {
+    "corpus_id": "248525858",
+    "first_author": "Jing",
+    "authors": ["Zhixin Jing", "Mark J. McCarron", "Michael L. Dustin", "David R. Fooksman"],
+    "year": 2022,
+    "title": "Germinal center expansion but not plasmablast differentiation is proportional to peptide-MHCII density via CD40-CD40L signaling strength",
+    "journal": "Cell Reports",
+    "doi": "10.1016/j.celrep.2022.110763",
+    "pmid": "35508132"
+  },
+  "216560594": {
+    "corpus_id": "216560594",
+    "first_author": "Kennedy",
+    "authors": ["Domenick E. Kennedy", "Michael K. Okoreeh", "M. Maienschein-Cline", "Junting Ai", "M. Veselits", "Kaitlin C. McLean", "Yogesh Dhungana", "Hong Wang", "Junmin Peng", "Hongbo Chi", "M. Mandal", "M. Clark"],
+    "year": 2020,
+    "title": "Novel specialized cell state and spatial compartments within the germinal center",
+    "journal": "Nature Immunology",
+    "doi": "10.1038/s41590-020-0660-2",
+    "pmid": "32341509"
+  },
+  "287256835": {
+    "corpus_id": "287256835",
+    "first_author": "Bracey",
+    "authors": ["Nathan A. Bracey", "Casey Beppler", "T. Bilich", "Adrienne H. Long", "Elsa Sola", "Aviv Barak", "Timothy J. Few-Cooper", "Azam Mohsin", "Vishnu Shankar", "V. Mallajosyula", "Lilit Kamalyan", "Robson Capasso", "S. Shen-Orr", "Mark M. Davis"],
+    "year": 2026,
+    "title": "Aging restricts maturation of CXCL13+ T follicular helper cells in human immunity",
+    "journal": "bioRxiv",
+    "doi": "10.64898/2026.04.03.715992",
+    "pmid": "41993471"
+  },
+  "280005358": {
+    "corpus_id": "280005358",
+    "first_author": "Ribeiro",
+    "authors": ["F. Ribeiro", "Diogo Antunes", "A. R. Pires", "José Rino", "Beatriz Filipe", "Kátia Jesus", "R. Correia", "Válter R Fonseca", "Saumya Kumar", "Luís Graça"],
+    "year": 2025,
+    "title": "PD-1 and ICOS are coexpressed in T follicular helper cells but define three stages of maturation of T follicular regulatory cells",
+    "journal": "Science Advances",
+    "doi": "10.1126/sciadv.adt8901",
+    "pmid": "40644556"
+  },
+  "16310176": {
+    "corpus_id": "16310176",
+    "first_author": "Krishna",
+    "authors": ["V. Krishna", "K. Bachman"],
+    "year": 2016,
+    "title": "A mechanism of T cell dependent selection of antigen engaged Germinal Center B cells",
+    "journal": "PLoS ONE",
+    "doi": "10.1371/journal.pone.0200241",
+    "pmid": "30138347"
+  }
+}

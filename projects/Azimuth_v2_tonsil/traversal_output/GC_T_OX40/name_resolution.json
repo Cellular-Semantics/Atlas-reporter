@@ -1,0 +1,13 @@
+{
+  "label": "OX40+",
+  "resolved_names": [
+    "OX40+ germinal center T cell",
+    "OX40 (TNFRSF4 / CD134)-expressing germinal center T follicular helper cell",
+    "GC-Tfh (germinal-center T follicular helper) cell"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (germinal center)",
+  "confidence": "high",
+  "evidence": "Azimuth human_tonsil_v2 fine label 'OX40+' (order 179), source King HW et al. 2021 Sci Immunol (DOI 10.1126/sciimmunol.abh3768). OX40 is the protein product of TNFRSF4 (CD134), a costimulatory TNF-receptor superfamily member. In tonsil, OX40 is expressed on germinal-center-localised T follicular helper (GC-Tfh) cells, where OX40/OX40L signalling promotes Tfh differentiation, survival and B-cell helper function (Fu et al., 2021; Tahiliani et al., 2016). The label thus resolves to a germinal-center T cell (Tfh) subset, consistent with proposed CL parent CL:0009062 (germinal center T cell)."
+}

@@ -1,0 +1,43 @@
+{
+  "cell_type_label": "CD8-positive, alpha-beta follicular T cell (CXCR5+ follicular/germinal-center CD8 T cell) in tonsil B-cell follicle.",
+  "working_definition": "A CD8-positive, alpha-beta T cell that expresses the follicle-homing chemokine receptor CXCR5 (and lacks CCR7), which permits entry into the CXCL13-rich B-cell follicle and germinal center of secondary lymphoid organs including the palatine tonsil. It combines cytolytic effector capacity (perforin, granzyme B) with the ability to regulate the germinal-center reaction, including suppression of T follicular helper-driven B cell differentiation. It is referred to in the literature as the follicular CD8 T cell, CXCR5+CD8+ T cell, or follicular cytotoxic CD8 T cell (Tfc).",
+  "searches_performed": [
+    "follicular CD8 T cell",
+    "follicular cytotoxic T cell",
+    "CXCR5-positive CD8 T cell",
+    "CD8-positive alpha-beta T cell",
+    "follicular T cell",
+    "cytotoxic T lymphocyte follicular"
+  ],
+  "best_match": {
+    "cl_term": "CD8-positive, alpha-beta T cell",
+    "cl_id": "CL:0000625",
+    "cl_definition": "A T cell expressing an alpha-beta T cell receptor and the CD8 coreceptor.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "No CL term exists for a follicular or CXCR5-positive CD8 T cell. All four targeted searches ('follicular CD8 T cell', 'follicular cytotoxic T cell', 'CXCR5-positive CD8 T cell', 'cytotoxic T lymphocyte follicular') returned zero results. The search for 'follicular T cell' returned only CD4-lineage terms: CL:0002038 (T follicular helper cell, defined as CD4-positive, CXCR5-positive) and CL:0009062 (germinal center T cell, a CD4-positive TFH subtype) — neither applies to a CD8+ cell. Among the CD8 alpha-beta subtypes retrieved (central memory, effector memory, naive, cytotoxic, regulatory, resident memory, etc.), none captures the hallmark follicular/CXCR5+ specialisation. CL:0000625 (CD8-positive, alpha-beta T cell), defined as 'A T cell expressing an alpha-beta T cell receptor and the CD8 coreceptor', is a valid broad parent: the report cell type IS-A CD8+ alpha-beta T cell, but is further distinguished by CXCR5 expression, CCR7 loss, follicular/germinal-center localisation in tonsil, cytolytic effector capacity (perforin, granzyme B), and regulatory functions on the Tfh-B cell axis — none of which are captured by the CL:0000625 definition. The match is therefore broad, not exact. The previously curated Azimuth mapping to CL:0000895 (naive thymus-derived CD4-positive, alpha-beta T cell) is biologically incorrect: CL:0000895 is a CD4-positive, naive T cell term with a CCR7-positive phenotype, whereas the report cell type is CD8-positive, CXCR5-positive, and CCR7-negative; this mis-assignment is recorded in other_candidates.",
+  "other_candidates": [
+    {
+      "cl_term": "naive thymus-derived CD4-positive, alpha-beta T cell",
+      "cl_id": "CL:0000895",
+      "cl_definition": "An antigen inexperienced CD4-positive, alpha-beta T cell with the phenotype CCR7-positive, CD127-positive and CD62L-positive. This cell type develops in the thymus. This cell type is also described as being CD25-negative, CD62L-high, and CD44-low.",
+      "reason_rejected": "Incorrect assignment from the Azimuth curated map. CL:0000895 is a CD4-positive, CCR7-positive naive T cell; the report cell type is CD8-positive, CCR7-negative, CXCR5-positive, and follicle-resident — the opposite phenotype in every key marker. The lineage (CD4 vs CD8), activation state (naive vs effector/memory), and location (T-cell zone vs germinal center) are all wrong."
+    },
+    {
+      "cl_term": "T follicular helper cell",
+      "cl_id": "CL:0002038",
+      "cl_definition": "A CD4-positive, CXCR5-positive, CCR7-negative alpha-beta T cell located in follicles of secondary lymph nodes that is BCL6-high, ICOS-high and PD1-high, and stimulates follicular B cells to undergo class-switching and antibody production.",
+      "reason_rejected": "CD4-positive lineage; the report cell type is CD8-positive. Although it shares the CXCR5+/CCR7- follicular localisation pattern, the coreceptor lineage is opposite, and the function (stimulating B cells vs. suppressing Tfh/B cell axis and cytolysis) is distinct."
+    },
+    {
+      "cl_term": "CD8-positive, alpha-beta cytotoxic T cell",
+      "cl_id": "CL:0000794",
+      "cl_definition": "A CD8-positive, alpha-beta T cell that is capable of killing target cells.",
+      "reason_rejected": "Captures cytolytic lineage but lacks the defining follicular/CXCR5+ specialisation and germinal-center localisation. Would be a broad match at best and is not more appropriate than CL:0000625 because it excludes the regulatory axis of this subset."
+    }
+  ],
+  "recommendation": "Map to CL:0000625 (CD8-positive, alpha-beta T cell) as a broad parent (skos:broadMatch). A new CL term is needed for the follicular CD8 T cell: a CD8-positive, CXCR5-positive, CCR7-negative, alpha-beta T cell located in the B-cell follicle and germinal center of secondary lymphoid organs, with cytolytic capacity and regulatory activity on the germinal-center reaction. The suggested label is 'follicular CD8-positive, alpha-beta T cell' or 'CXCR5-positive CD8-positive, alpha-beta T cell'. A new-term request (NTR) should be filed with obophenotype/cell-ontology citing the literature reviewed in the report (Perdomo-Celis et al. 2017, Chu et al. 2015/2019, Petrovas et al. 2017, Schaerli et al. 2000).",
+  "new_term_needed": true
+}

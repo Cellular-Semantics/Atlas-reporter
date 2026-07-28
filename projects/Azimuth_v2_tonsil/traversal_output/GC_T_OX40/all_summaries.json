@@ -1,0 +1,96 @@
+[
+  {
+    "corpus_id": "235487053",
+    "title": "The OX40/OX40L Axis Regulates T Follicular Helper Cell Differentiation: Implications for Autoimmune Diseases",
+    "authors": ["N. Fu", "Fangyu Xie", "Zhongwen Sun", "Qin Wang"],
+    "year": 2021,
+    "doi": "10.3389/fimmu.2021.670637",
+    "source_method": "asta_snippet",
+    "summary": "Review of OX40 (TNFRSF4) costimulatory signalling in Tfh biology. OX40/OX40L signalling promotes Tfh cell differentiation, maintains survival, and enhances the helper function of Tfh cells for B cells; dysregulated OX40 signalling drives abnormal Tfh activity in autoimmunity. OX40 marker evidence here is discussed at the signalling/pathway level; the review does not itself distinguish protein vs transcript for the tonsil OX40+ subset.",
+    "quotes": [
+      "T Follicular helper (Tfh) cells, a unique subset of CD4+ T cells, play an essential role in B cell development and the formation of germinal centers (GCs).",
+      "Recent data have shown that OX40/OX40L signaling can not only promote Tfh cell differentiation and maintain cell survival, but also enhance the helper function of Tfh for B cells.",
+      "Given that OX40 signaling is critical for costimulating T cell activation and function, its roles in regulating Tfh cells have attracted widespread attention."
+    ]
+  },
+  {
+    "corpus_id": "31208953",
+    "title": "OX40 Co-operates with ICOS to Amplify Follicular T Helper Cell Development and Germinal Center Reactions During Infection",
+    "authors": ["V. Tahiliani", "Tarun E. Hutchinson", "G. Abboud", "M. Croft", "Shahram Salek-Ardakani"],
+    "year": 2016,
+    "doi": "10.4049/jimmunol.1601356",
+    "source_method": "asta_snippet",
+    "summary": "In vivo mouse vaccinia infection study. OX40 (protein) is expressed on Tfh cells accumulating at T/B borders and in/around the germinal center, co-expressed with ICOS. OX40-dependent signals shape the magnitude and quality of the Tfh response; OX40 deficiency impairs GC B cell phenotype acquisition, plasma cell generation and virus-specific antibody. OX40 detection here is at the protein/surface level (flow-based Tfh gating in mice); germinal-center localisation is spatial/histological.",
+    "quotes": [
+      "In this study, with vaccinia virus infection in mice, we show that OX40 was expressed on Tfh cells that accumulated at the T/B borders in the white pulp of the spleen and that OX40-dependent signals directly shaped the magnitude and quality of the their response to viral Ags.",
+      "OX40 deficiency in Tfh cells profoundly impaired the acquisition of germinal center (GC) B cell phenotype, plasma cell generation, and virus-specific Ab responses.",
+      "Interestingly, OX40 was coexpressed with ICOS on Tfh cells in and around the GC, and ICOS–ICOSL interactions were similarly crucial at late times for maintenance of the Tfh and GC B cells.",
+      "Thus, OX40 and ICOS act in a cooperative, nonredundant manner to maximize and prolong the Tfh response that is generated after acute virus infection."
+    ]
+  },
+  {
+    "corpus_id": "4651838",
+    "title": "Human CD57+ germinal center-T cells are the major helpers for GC-B cells and induce class switch recombination",
+    "authors": ["Jong R. Kim", "Hyung W. Lim", "S. Kang", "Peter Hillsamer", "Chang H. Kim"],
+    "year": 2005,
+    "doi": "10.1186/1471-2172-6-3",
+    "source_method": "asta_snippet",
+    "summary": "Human tonsil study defining germinal-center T helper (GC-Th) cells by surface protein markers (flow cytometry / immunohistology). CD57+ CD4+ T cells are located within germinal centers surrounded by IgD+ naive B cells; CD57, CD69 and CD4 distinguish GC-Th cells from interfollicular T cells. Markers here are protein (surface, flow/IHC).",
+    "quotes": [
+      "As reported previously [12,19,28,29], most CD57 + CD4 + T cells are located in germinal centers surrounded by IgD + naïve B cells (Fig. 1).",
+      "Therefore, CD57, CD69 and CD4 are useful markers to identify CD57 + GC-Th cells and other T cell subsets differentially localized in tonsils: CD4 + CD57 + cells (mainly in GC), CD4 + CD57 -CD69 + cells (mainly in GC and a minor proportion in IFA), and CD4 + CD57 -CD69 -cells (mainly in IFA)."
+    ]
+  },
+  {
+    "corpus_id": "283910276",
+    "title": "Multimodal analysis defines GNG4 as a distinguishing feature of germinal center-positioned CD4 T follicular helper cells in humans",
+    "authors": ["Sam Barnett Dubensky", "Yutong Zhu", "Molly Gallagher", "K. Kumashie", "Tianyu Lu", "J. Tedesco", "Nina De Luna", "Katherine Premo", "Yi Qi", "S. Rachimi", "E. C. Cabrera", "Bria Fulmer", "Ijeoma C. Meremikwu", "Ashley Carter", "S. Henrickson", "N. Romberg", "Amy E. Baxter", "D. Oldridge", "Laura A. Vella"],
+    "year": 2025,
+    "doi": "10.64898/2025.12.10.693235",
+    "source_method": "asta_snippet",
+    "summary": "Trimodal single-cell (epigenome/transcriptome/proteome) plus spatial study of human tonsil and blood CD4 T cells. Defines GC-positioned activated Tfh states. GNG4 marks activated, germinal-center-positioned Tfh at both mRNA and protein level; GC-associated features include BCL6, TOX2, S1PR2. Provides transcript-vs-protein resolution for GC-Tfh markers.",
+    "quotes": [
+      "CD4 T follicular helper (Tfh) cells coordinate humoral immune responses within germinal centers (GC) of lymphoid tissue.",
+      "Tfh with a GC-like phenotype exhibited markedly increased chromatin accessibility and both mRNA and protein expression of G protein subunit gamma 4 (GNG4).",
+      "In tonsil, single-cell spatial transcriptomics defined GNG4 expression as a distinguishing feature of activated Tfh states within spatially demarcated GC compartments, with greater specificity than conventionally GC-associated features such as BCL6, TOX2, and S1PR2."
+    ]
+  },
+  {
+    "corpus_id": "210121629",
+    "title": "CD4+ T Follicular Helper Cells in Human Tonsils and Blood Are Clonally Convergent but Divergent from Non-Tfh CD4+ Cells",
+    "authors": ["Elena Brenna", "A. N. Davydov", "K. Ladell", "J. McLaren", "Paolo Bonaiuti", "Maria Metsger", "J. Ramsden", "S. Gilbert", "T. Lambe", "D. Price", "Suzanne L. Campion", "D. Chudakov", "P. Borrow", "A. McMichael"],
+    "year": 2020,
+    "doi": "10.1016/j.celrep.2019.12.016",
+    "source_method": "asta_snippet",
+    "summary": "Human donor-matched tonsil and blood study of Tfh cells. Establishes that Tfh cells are fundamental for B cell selection and antibody maturation in germinal centers, and that tonsillar Tfh are clonally distinct from non-Tfh CD4+ cells.",
+    "quotes": [
+      "T follicular helper (Tfh) cells are fundamental for B cell selection and antibody maturation in germinal centers."
+    ]
+  },
+  {
+    "corpus_id": "8105155",
+    "title": "Bob1 limits cellular frequency of T-follicular helper cells",
+    "authors": ["Keiji Yamashita", "K. Kawata", "H. Matsumiya", "Ryuta Kamekura", "Sumito Jitsukawa", "Tomonori Nagaya", "Noriko Ogasawara", "Kenichi Takano", "T. Kubo", "Sachiko Kimura", "K. Shigehara", "T. Himi", "S. Ichimiya"],
+    "year": 2016,
+    "doi": "10.1002/eji.201545499",
+    "source_method": "asta_snippet",
+    "summary": "Human tonsil study. GC-Tfh cells are defined by surface protein gating CD3+CD4+CXCR5+PD-1+; markers CXCR5 and PD-1 (protein) distinguish GC-Tfh from non-Tfh (CXCR5- PD-1-). Bcl-6+ CD4+ cells are mainly present within GCs and are probably GC-Tfh cells (IHC of tonsil tissue). Provides protein-level marker and localisation evidence.",
+    "quotes": [
+      "As assessed by quantitative RT-PCR analysis, the transcription levels of Bob1 were significantly higher in GC-Tfh cells than in non-Tfh cells (CD3 + CD4 + CXCR5 − PD-1 − ) and thymic CD4 + T cells in contrast to B-cell subsets including naïve, GC, and memory B cells of the tonsils (Fig. 1C and Supporting Information Fig. 2).",
+      "Immunohistochemistry of tonsillar tissues also demonstrated that Bcl-6 + Bob1 + CD4 + cells were mainly present within GCs, and they were probably GC-Tfh cells (Fig. 1F)."
+    ]
+  },
+  {
+    "corpus_id": "271291186",
+    "title": "Oligoclonal CD4+CXCR5+ T cells with a cytotoxic phenotype appear in tonsils and blood",
+    "authors": ["Chunguang Liang", "Silvia Spoerl", "Yin Xiao", "K. Habenicht", "Sigrun S Haeusl", "Isabel Sandner", "Julia Winkler", "Nicholas Strieder", "Rüdiger Eder", "Hanna Stanewsky", "C. Alexiou", "Diana Dudziak", "A. Rosenwald", "M. Edinger", "Michael Rehli", "P. Hoffmann", "Thomas H. Winkler", "F. Berberich-Siebelt"],
+    "year": 2024,
+    "doi": "10.1038/s42003-024-06563-1",
+    "source_method": "asta_snippet",
+    "summary": "Single-cell RNA-seq, flow cytometry and IHC of sorted CD3+CD4+CD45RA-CXCR5+ cells from human tonsil and blood. Several bona fide T-follicular gene-expression subsets are found exclusively in tonsils; most CD4+CXCR5+ subsets occur in both compartments but location enforces specific gene expression. Confirms transcriptome + surface-protein resolution of tonsillar Tfh heterogeneity.",
+    "quotes": [
+      "Three further subsets of TFH cells, however, with bona fide T-follicular gene expression patterns, are exclusively found in tonsils.",
+      "Most subsets of CD4+ T-follicular helper cells occur in blood and tonsils, but location enforces specific gene expression."
+    ]
+  }
+]

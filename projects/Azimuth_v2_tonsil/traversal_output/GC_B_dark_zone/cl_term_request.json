@@ -1,0 +1,125 @@
+{
+  "cell_type_label": "GC_B_dark_zone",
+  "suggested_label": "tonsil centroblast",
+  "definition": "A centroblast that is part of a germinal center dark zone of a palatine tonsil. Like all centroblasts it is a large, rapidly proliferating (Ki-67-positive) germinal center B cell of the dark zone that undergoes somatic hypermutation driven by activation-induced cytidine deaminase (AID/AICDA), is retained in the dark zone by high surface CXCR4 responding to CXCL12, and has low surface immunoglobulin and low CD83. It is the tonsil counterpart of the (lymph-node-scoped) centroblast term, paralleling the existing tonsil germinal center B cell class.",
+  "parent_term": {
+    "cl_id": "CL:0009112",
+    "cl_term": "centroblast"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0002373",
+    "uberon_term": "palatine tonsil"
+  },
+  "logical_axioms": [
+    {
+      "relation": "subclass of",
+      "relation_id": "rdfs:subClassOf",
+      "filler": "tonsil germinal center B cell",
+      "filler_id": "CL:2000006",
+      "notes": "Second superclass: this term is both a centroblast and a tonsil germinal center B cell (dual parentage, mirroring CL's tissue-specific GC B cell terms)."
+    },
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "palatine tonsil",
+      "filler_id": "UBERON:0002373",
+      "notes": "Tonsil-specific; resides in the germinal center dark zone of the palatine tonsil."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "C-X-C chemokine receptor type 4",
+      "filler_id": "PR:000001208",
+      "notes": "CXCR4 (high) retains centroblasts in the dark zone via CXCL12; surface protein."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "dark zone tonsil germinal center B cell",
+      "scope": "exact"
+    },
+    {
+      "value": "tonsil germinal center dark zone B cell",
+      "scope": "exact"
+    },
+    {
+      "value": "tonsil dark zone B cell",
+      "scope": "related"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1126/sciimmunol.abh3768",
+      "citation": "King et al. (2021)",
+      "supports": "Source single-cell atlas (Azimuth human_tonsil_v2).",
+      "pmid": "PMID:34623901"
+    },
+    {
+      "doi": "10.1101/2021.12.25.474161",
+      "citation": "Di et al. (2021)",
+      "supports": "States the canonical surface-marker definition of the two GC compartments: dark-zone cells are CXCR4+ CD83lo CD86lo and are highly proliferative and undergo somatic hypermutation, whereas light-zone cells are CXCR4lo CD83+ CD86+. Note: CXCR4/CD83/CD86 here are described as surface (protein) phenotyping markers used for flow gating; the newly defined 'gray zone' co-expresses CXCR4 and CD83 (transcripts Cxcr4/Cd83) with ongoing division (Ccnb1)."
+    },
+    {
+      "doi": "10.1093/nar/gkz816",
+      "citation": "Stengel et al. (2019)",
+      "supports": "Defines the dark zone as containing centroblasts undergoing somatic hypermutation and the light zone as containing centrocytes undergoing selection, and states that most GC proliferation occurs in the dark zone. Gates dark-zone centroblasts as CXCR4-hi CD86-lo. Explains that CXCR4 (a chemokine receptor / protein) marks dark-zone centroblasts and mediates CXCL12-dependent localization to the dark zone, while CD83 and CD86 (protein surface markers) mark light-zone centrocytes.",
+      "pmid": "PMID:31586401"
+    },
+    {
+      "doi": "10.1155/1998/42595",
+      "citation": "Vora et al. (1998)",
+      "supports": "Classical morphological account: the dark zone consists of rapidly dividing blast cells called centroblasts that express low levels of surface Ig; somatic hypermutation is initiated concurrent with dark-zone establishment. Centroblasts exit cell cycle, re-express surface Ig, and become smaller centrocytes in the light zone. Establishes human tonsil as a validated source of hypermutating GC B cells. Note: surface Ig (protein) is low on centroblasts.",
+      "pmid": "PMID:9814604"
+    },
+    {
+      "doi": "10.1016/j.immuni.2018.08.025",
+      "citation": "Stewart et al. (2018)",
+      "supports": "Places immunoglobulin somatic hypermutation (SHM) in the GC dark zone and clonal selection in the light zone. Shows that cells reduce surface CXCR4 (protein) to enable migration from the dark zone to the light zone, mechanistically linking the CXCR4-high phenotype to dark-zone retention. A dark-zone BCR quality-control checkpoint prevents accumulation of non-functional clones.",
+      "pmid": "PMID:30231983"
+    },
+    {
+      "doi": "10.1016/j.immuni.2013.08.038",
+      "citation": "Bannard et al. (2013)",
+      "supports": "Directly documents the centroblast-to-centrocyte transition and the dependence of effective selection on dark-zone access, reinforcing centroblast <-> dark zone equivalence and the temporal ordering of the GC program.",
+      "pmid": "PMID:24184055"
+    },
+    {
+      "doi": "10.1038/s41590-020-0660-2",
+      "citation": "Kennedy et al. (2020)",
+      "supports": "Refines the canonical two-zone model, noting GC B cells are canonically divided into dark zone (DZ) and light zone (LZ) populations, and identifies a 'gray zone' cyclin B1+ proliferating cluster distinct from DZ cells that undergo AID-dependent somatic hypermutation. Clarifies that AID-dependent SHM (AID = protein/AICDA transcript) is the defining DZ function.",
+      "pmid": "PMID:32341509"
+    },
+    {
+      "doi": "10.1007/s00418-020-01861-1",
+      "citation": "Steiniger et al. (2020)",
+      "supports": "In situ immunohistochemistry of human palatine tonsils showing that diffusely AID-positive cells are centroblasts, that AID+ cells fill the dark zone, and that these centroblasts have Ki-67+ nuclei. Provides direct human-tonsil, protein-level (AID and Ki-67 immunostaining) evidence for the dark-zone centroblast phenotype.",
+      "pmid": "PMID:32172287"
+    },
+    {
+      "doi": "10.1038/s41467-021-23355-x",
+      "citation": "Ruffin et al. (2021)",
+      "supports": "Human-tonsil (and HNSCC) analysis of GC B cell states. Reports CD83 (protein) predominantly on light-zone GC B cells and used to distinguish DZ from LZ, and CD27 (protein) higher on dark-zone GC B cells in human tonsil. Discusses Ki67 (protein) as a proliferation marker across GC states.",
+      "pmid": "PMID:34099645"
+    },
+    {
+      "doi": "10.1038/s41577-020-00446-2",
+      "citation": "Laidlaw et al. (2020)",
+      "supports": "Concise definition of the dark zone as the GC compartment where B cells proliferate and undergo somatic hypermutation, supported by a stromal network producing the CXCR4 ligand CXCL12 (chemokine, transcript/protein).",
+      "pmid": "PMID:33024284"
+    },
+    {
+      "doi": "10.1016/j.celrep.2016.08.068",
+      "citation": "Biajoux et al. (2016)",
+      "supports": "Reports that dark-zone centroblasts divide more rapidly than centrocytes and that proliferation is partly impaired in CXCR4-deficient GC B cells, linking CXCR4 signalling to dark-zone proliferative capacity. CXCR4 here is a functional receptor (protein).",
+      "pmid": "PMID:27681431"
+    },
+    {
+      "doi": "10.1097/MOH.0b013e328302c7df",
+      "citation": "Ci et al. (2008)",
+      "supports": "Describes the bidirectional recycling of B cells between dark and light zones and the role of BCL6 (transcription-factor protein) in GC B cells, providing context for the dynamic centroblast-centrocyte cycle.",
+      "pmid": "PMID:18536578"
+    }
+  ],
+  "justification": "Dark-zone GC B cell = classical centroblast, so this is modelled as a child of BOTH CL:0009112 (centroblast) and CL:2000006 (tonsil germinal center B cell) rather than as a new bare term. NOTE for curators: no general or tonsil-specific 'germinal center dark zone' UBERON term exists (only UBERON:8410053 lymph node germinal center dark zone); dark-zone locality is therefore carried by the centroblast parent + definition text, and a general dark-zone UBERON term may be worth adding. Species-neutral; CXCR4 asserted with the generic PR class.",
+  "ntr_markdown": "## New term request: tonsil centroblast\n\n**Proposed label:** tonsil centroblast\n\n**Definition:** A centroblast that is part of a germinal center dark zone of a palatine tonsil. Like all centroblasts it is a large, rapidly proliferating (Ki-67-positive) germinal center B cell of the dark zone that undergoes somatic hypermutation driven by activation-induced cytidine deaminase (AID/AICDA), is retained in the dark zone by high surface CXCR4 responding to CXCL12, and has low surface immunoglobulin and low CD83. It is the tonsil counterpart of the (lymph-node-scoped) centroblast term, paralleling the existing tonsil germinal center B cell class.\n\n**Parent (is_a):** centroblast (CL:0009112)\n\n**Anatomical location:** palatine tonsil (UBERON:0002373)\n\n**Logical axioms:**\n- `subclass of` (rdfs:subClassOf) some **tonsil germinal center B cell** (CL:2000006) — Second superclass: this term is both a centroblast and a tonsil germinal center B cell (dual parentage, mirroring CL's tissue-specific GC B cell terms).\n- `part of` (BFO:0000050) some **palatine tonsil** (UBERON:0002373) — Tonsil-specific; resides in the germinal center dark zone of the palatine tonsil.\n- `has plasma membrane part` (RO:0002104) some **C-X-C chemokine receptor type 4** (PR:000001208) — CXCR4 (high) retains centroblasts in the dark zone via CXCL12; surface protein.\n\n**Synonyms:**\n- dark zone tonsil germinal center B cell (exact)\n- tonsil germinal center dark zone B cell (exact)\n- tonsil dark zone B cell (related)\n\n**References:**\n- King et al. (2021). DOI: 10.1126/sciimmunol.abh3768 ; PMID:34623901 — Source single-cell atlas (Azimuth human_tonsil_v2).\n- Di et al. (2021). DOI: 10.1101/2021.12.25.474161 — States the canonical surface-marker definition of the two GC compartments: dark-zone cells are CXCR4+ CD83lo CD86lo and are highly proliferative and undergo somatic hypermutation, whereas light-zone cells are CXCR4lo CD83+ CD86+. Note: CXCR4/CD83/CD86 here are described as surface (protein) phenotyping markers used for flow gating; the newly defined 'gray zone' co-expresses CXCR4 and CD83 (transcripts Cxcr4/Cd83) with ongoing division (Ccnb1).\n- Stengel et al. (2019). DOI: 10.1093/nar/gkz816 ; PMID:31586401 — Defines the dark zone as containing centroblasts undergoing somatic hypermutation and the light zone as containing centrocytes undergoing selection, and states that most GC proliferation occurs in the dark zone. Gates dark-zone centroblasts as CXCR4-hi CD86-lo. Explains that CXCR4 (a chemokine receptor / protein) marks dark-zone centroblasts and mediates CXCL12-dependent localization to the dark zone, while CD83 and CD86 (protein surface markers) mark light-zone centrocytes.\n- Vora et al. (1998). DOI: 10.1155/1998/42595 ; PMID:9814604 — Classical morphological account: the dark zone consists of rapidly dividing blast cells called centroblasts that express low levels of surface Ig; somatic hypermutation is initiated concurrent with dark-zone establishment. Centroblasts exit cell cycle, re-express surface Ig, and become smaller centrocytes in the light zone. Establishes human tonsil as a validated source of hypermutating GC B cells. Note: surface Ig (protein) is low on centroblasts.\n- Stewart et al. (2018). DOI: 10.1016/j.immuni.2018.08.025 ; PMID:30231983 — Places immunoglobulin somatic hypermutation (SHM) in the GC dark zone and clonal selection in the light zone. Shows that cells reduce surface CXCR4 (protein) to enable migration from the dark zone to the light zone, mechanistically linking the CXCR4-high phenotype to dark-zone retention. A dark-zone BCR quality-control checkpoint prevents accumulation of non-functional clones.\n- Bannard et al. (2013). DOI: 10.1016/j.immuni.2013.08.038 ; PMID:24184055 — Directly documents the centroblast-to-centrocyte transition and the dependence of effective selection on dark-zone access, reinforcing centroblast <-> dark zone equivalence and the temporal ordering of the GC program.\n- Kennedy et al. (2020). DOI: 10.1038/s41590-020-0660-2 ; PMID:32341509 — Refines the canonical two-zone model, noting GC B cells are canonically divided into dark zone (DZ) and light zone (LZ) populations, and identifies a 'gray zone' cyclin B1+ proliferating cluster distinct from DZ cells that undergo AID-dependent somatic hypermutation. Clarifies that AID-dependent SHM (AID = protein/AICDA transcript) is the defining DZ function.\n- Steiniger et al. (2020). DOI: 10.1007/s00418-020-01861-1 ; PMID:32172287 — In situ immunohistochemistry of human palatine tonsils showing that diffusely AID-positive cells are centroblasts, that AID+ cells fill the dark zone, and that these centroblasts have Ki-67+ nuclei. Provides direct human-tonsil, protein-level (AID and Ki-67 immunostaining) evidence for the dark-zone centroblast phenotype.\n- Ruffin et al. (2021). DOI: 10.1038/s41467-021-23355-x ; PMID:34099645 — Human-tonsil (and HNSCC) analysis of GC B cell states. Reports CD83 (protein) predominantly on light-zone GC B cells and used to distinguish DZ from LZ, and CD27 (protein) higher on dark-zone GC B cells in human tonsil. Discusses Ki67 (protein) as a proliferation marker across GC states.\n- Laidlaw et al. (2020). DOI: 10.1038/s41577-020-00446-2 ; PMID:33024284 — Concise definition of the dark zone as the GC compartment where B cells proliferate and undergo somatic hypermutation, supported by a stromal network producing the CXCR4 ligand CXCL12 (chemokine, transcript/protein).\n- Biajoux et al. (2016). DOI: 10.1016/j.celrep.2016.08.068 ; PMID:27681431 — Reports that dark-zone centroblasts divide more rapidly than centrocytes and that proliferation is partly impaired in CXCR4-deficient GC B cells, linking CXCR4 signalling to dark-zone proliferative capacity. CXCR4 here is a functional receptor (protein).\n- Ci et al. (2008). DOI: 10.1097/MOH.0b013e328302c7df ; PMID:18536578 — Describes the bidirectional recycling of B cells between dark and light zones and the role of BCL6 (transcription-factor protein) in GC B cells, providing context for the dynamic centroblast-centrocyte cycle.\n\n**Justification:** Dark-zone GC B cell = classical centroblast, so this is modelled as a child of BOTH CL:0009112 (centroblast) and CL:2000006 (tonsil germinal center B cell) rather than as a new bare term. NOTE for curators: no general or tonsil-specific 'germinal center dark zone' UBERON term exists (only UBERON:8410053 lymph node germinal center dark zone); dark-zone locality is therefore carried by the centroblast parent + definition text, and a general dark-zone UBERON term may be worth adding. Species-neutral; CXCR4 asserted with the generic PR class.\n\n_Source: Azimuth human_tonsil_v2 fine label; atlas King et al. 2021 (DOI 10.1126/sciimmunol.abh3768). Draft for review — not yet submitted._\n"
+}

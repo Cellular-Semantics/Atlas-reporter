@@ -1,0 +1,122 @@
+{
+  "238530091": {
+    "corpus_id": "238530091",
+    "first_author": "King",
+    "authors": ["Hamish W. King", "Kristen L. Wells", "Zohar Shipony", "Arwa S. Kathiria", "Lisa E. Wagar", "C. Lareau", "N. Orban", "R. Capasso", "Mark M. Davis", "L. Steinmetz", "L. James", "W. Greenleaf"],
+    "year": 2021,
+    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.abh3768",
+    "pmid": "34623901"
+  },
+  "245508282": {
+    "corpus_id": "245508282",
+    "first_author": "Di",
+    "authors": ["Lin Di", "Bo Liu", "Yuzhu Lyu", "Shihui Zhao", "Yuhong Pang", "Chen Zhang", "Jianbin Wang", "Hai Qi", "Jie Shen", "Yanyi Huang"],
+    "year": 2021,
+    "title": "SHERRY2: A method for rapid and sensitive single cell RNA-seq",
+    "journal": "bioRxiv (preprint)",
+    "doi": "10.1101/2021.12.25.474161",
+    "pmid": null
+  },
+  "203720564": {
+    "corpus_id": "203720564",
+    "first_author": "Stengel",
+    "authors": ["K. Stengel", "Srividya Bhaskara", "Jing Wang", "Qi Liu", "Jacob D. Ellis", "Shilpa Sampathi", "S. Hiebert"],
+    "year": 2019,
+    "title": "Histone deacetylase 3 controls a transcriptional network required for B cell maturation",
+    "journal": "Nucleic Acids Research",
+    "doi": "10.1093/nar/gkz816",
+    "pmid": "31586401"
+  },
+  "17357508": {
+    "corpus_id": "17357508",
+    "first_author": "Vora",
+    "authors": ["K. Vora", "J. Ravetch", "T. Manser"],
+    "year": 1998,
+    "title": "Insights into the Mechanisms of Antibody-Affinity Maturation and the Generation of the Memory B-Cell Compartment Using Genetically Altered Mice",
+    "journal": "Developmental Immunology",
+    "doi": "10.1155/1998/42595",
+    "pmid": "9814604"
+  },
+  "205429002": {
+    "corpus_id": "205429002",
+    "first_author": "Stewart",
+    "authors": ["Isabelle Stewart", "Daniel Radtke", "B. Phillips", "S. McGowan", "Oliver Bannard"],
+    "year": 2018,
+    "title": "Germinal Center B Cells Replace Their Antigen Receptors in Dark Zones and Fail Light Zone Entry when Immunoglobulin Gene Mutations are Damaging",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2018.08.025",
+    "pmid": "30231983"
+  },
+  "17160751": {
+    "corpus_id": "17160751",
+    "first_author": "Bannard",
+    "authors": ["Oliver Bannard", "R. Horton", "Christopher D. C. Allen", "Jinping An", "T. Nagasawa", "J. Cyster"],
+    "year": 2013,
+    "title": "Germinal Center Centroblasts Transition to a Centrocyte Phenotype According to a Timed Program and Depend on the Dark Zone for Effective Selection",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2013.08.038",
+    "pmid": "24184055"
+  },
+  "216560594": {
+    "corpus_id": "216560594",
+    "first_author": "Kennedy",
+    "authors": ["Domenick E. Kennedy", "Michael K. Okoreeh", "M. Maienschein-Cline", "Junting Ai", "M. Veselits", "Kaitlin C. McLean", "Yogesh Dhungana", "Hong Wang", "Junmin Peng", "Hongbo Chi", "M. Mandal", "M. Clark"],
+    "year": 2020,
+    "title": "Novel specialized cell state and spatial compartments within the germinal center",
+    "journal": "Nature Immunology",
+    "doi": "10.1038/s41590-020-0660-2",
+    "pmid": "32341509"
+  },
+  "212691215": {
+    "corpus_id": "212691215",
+    "first_author": "Steiniger",
+    "authors": ["B. Steiniger", "Linda Raimer", "A. Ecke", "B. Stuck", "Y. Cetin"],
+    "year": 2020,
+    "title": "Plasma cells, plasmablasts, and AID+/CD30+ B lymphoblasts inside and outside germinal centres: details of the basal light zone and the outer zone in human palatine tonsils",
+    "journal": "Histochemistry and Cell Biology",
+    "doi": "10.1007/s00418-020-01861-1",
+    "pmid": "32172287"
+  },
+  "235370362": {
+    "corpus_id": "235370362",
+    "first_author": "Ruffin",
+    "authors": ["A. Ruffin", "A. Cillo", "T. Tabib", "Angen Liu", "Sayali S Onkar", "S. Kunning", "C. Lampenfeld", "Huda I. Atiya", "I. Abécassis", "Cornelius H. L. Kürten", "Z. Qi", "R. Soose", "U. Duvvuri", "Seungwon Kim", "Steffi Oesterrich", "R. Lafyatis", "L. Coffman", "R. Ferris", "D. Vignali", "T. Bruno"],
+    "year": 2021,
+    "title": "B cell signatures and tertiary lymphoid structures contribute to outcome in head and neck squamous cell carcinoma",
+    "journal": "Nature Communications",
+    "doi": "10.1038/s41467-021-23355-x",
+    "pmid": "34099645"
+  },
+  "222177525": {
+    "corpus_id": "222177525",
+    "first_author": "Laidlaw",
+    "authors": ["B. Laidlaw", "J. Cyster"],
+    "year": 2020,
+    "title": "Transcriptional regulation of memory B cell differentiation",
+    "journal": "Nature Reviews Immunology",
+    "doi": "10.1038/s41577-020-00446-2",
+    "pmid": "33024284"
+  },
+  "8056072": {
+    "corpus_id": "8056072",
+    "first_author": "Biajoux",
+    "authors": ["Vincent Biajoux", "J. Natt", "C. Freitas", "N. Alouche", "Antoine Sacquin", "P. Hémon", "F. Gaudin", "N. Fazilleau", "M. Espéli", "K. Balabanian"],
+    "year": 2016,
+    "title": "Efficient Plasma Cell Differentiation and Trafficking Require Cxcr4 Desensitization.",
+    "journal": "Cell Reports",
+    "doi": "10.1016/j.celrep.2016.08.068",
+    "pmid": "27681431"
+  },
+  "23962357": {
+    "corpus_id": "23962357",
+    "first_author": "Ci",
+    "authors": ["W. Ci", "J. Polo", "A. Melnick"],
+    "year": 2008,
+    "title": "B-cell lymphoma 6 and the molecular pathogenesis of diffuse large B-cell lymphoma",
+    "journal": "Current Opinion in Hematology",
+    "doi": "10.1097/MOH.0b013e328302c7df",
+    "pmid": "18536578"
+  }
+}

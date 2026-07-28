@@ -1,0 +1,18 @@
+{
+  "label": "MAIT/CD161+TRDV2+",
+  "resolved_names": [
+    "CD161+ TRDV2+ gamma-delta T cell",
+    "CD161+ Vδ2+ γδ T cell",
+    "Vγ9Vδ2 T cell (CD161+)",
+    "MAIT/CD161+TRDV2+ (atlas fine label)"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (interfollicular / T-cell zone and crypt epithelium)",
+  "confidence": "medium",
+  "evidence": "The Azimuth human_tonsil_v2 fine label 'MAIT/CD161+TRDV2+' (King et al., 2021, Sci Immunol) denotes an unconventional, innate-like T cell defined at the transcript level by TRDV2 (encoding the Vδ2 TCR delta chain) together with KLRB1 (CD161). TRDV2 expression marks the gamma-delta T cell lineage (Vδ2, most commonly the semi-invariant Vγ9Vδ2 subset), while CD161/KLRB1 is a C-type lectin-like receptor shared across NK cells and unconventional T cells including γδ T cells and MAIT cells. ASTA is blind to the atlas paper body (only the abstract for CorpusId 238530091 is indexed); name resolution therefore relies on the broader literature describing CD161+ Vδ2+ γδ T cells and on definitional papers distinguishing γδ from MAIT cells.",
+  "mait_gd_caveat": "The atlas label 'MAIT/CD161+TRDV2+' is a conflation of two distinct unconventional T cell lineages. Canonical MAIT (mucosal-associated invariant T) cells are ALPHA-BETA T cells that use the semi-invariant TRAV1-2 (Vα7.2)-TRAJ33/12/20 TCR alpha chain, are restricted by the MHC class Ib molecule MR1, and are identified with MR1 tetramers; CD161 (high) is a surrogate MAIT marker but is NOT MAIT-specific (Gherardin et al., 2018; Koay et al., 2019). TRDV2, by contrast, encodes a gamma-delta TCR delta chain and CANNOT be expressed by a genuine alpha-beta MAIT cell. A cell that is both TRDV2+ and CD161+ is therefore a gamma-delta (Vδ2) T cell with MAIT-LIKE innate features (shared CD161 expression, innate-like effector programme), NOT a bona fide MAIT cell. The 'MAIT' component of the label most likely reflects the transcriptional overlap in CD161/KLRB1 and other innate-like markers that causes clustering algorithms to group CD161-high γδ T cells near MAIT cells; the correct lineage assignment, driven by TRDV2, is gamma-delta T cell (CL:0000798). This tension is represented faithfully but flagged explicitly here and in the report.",
+  "proposed_cl_parent": "CL:0000798",
+  "atlas_doi": "10.1126/sciimmunol.abh3768",
+  "atlas_pmid": "34623901"
+}

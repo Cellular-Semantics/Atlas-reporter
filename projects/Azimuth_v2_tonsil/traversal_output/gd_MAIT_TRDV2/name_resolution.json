@@ -1,0 +1,15 @@
+{
+  "label": "MAIT/TRDV2+",
+  "resolved_names": [
+    "MAIT/TRDV2+ gdT",
+    "TRDV2+ (Vδ2) gamma-delta T cell",
+    "Vγ9Vδ2 T cell",
+    "MAIT/CD161+TRDV2+"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil",
+  "confidence": "high",
+  "mait_gd_caveat": "The Azimuth human_tonsil_v2 fine label 'MAIT/TRDV2+' conflates two distinct T-cell lineages. Canonical MAIT (mucosal-associated invariant T) cells are alpha-beta T cells that express a semi-invariant TRAV1-2 (Vα7.2) TCR and are restricted by the MHC class I-like molecule MR1, which presents microbial riboflavin (vitamin B2) metabolites. TRDV2 (Vδ2) marks gamma-delta T cells, which use a delta/gamma TCR and do not use TRAV1-2/MR1 restriction. The cluster is named for its expression of TRDV2 (encoding the Vδ2 chain) together with MAIT-like innate/tissue markers such as CD161 (KLRB1). It should therefore be represented primarily as a TRDV2 (Vδ2) gamma-delta T cell with MAIT-like innate-lymphocyte features, not as a bona fide MR1-restricted MAIT cell. Vδ2 (TRDV2) gamma-delta cells almost always pair with Vγ9 (TRGV9) to form Vγ9Vδ2 T cells, the dominant gamma-delta subset in human peripheral blood, which are activated by phosphoantigens via butyrophilins rather than by MR1. The proposed Cell Ontology parent is CL:0000798 (gamma-delta T cell).",
+  "evidence": "Azimuth human_tonsil_v2 fine label 'MAIT/TRDV2+' (order 143), with the related labels 'MAIT/TRDV2+ gdT' and 'MAIT/CD161+TRDV2+' in the atlas annotation set. Named for TRDV2 (Vδ2) expression; TRDV2 encodes the Vδ2 TCR delta chain that, paired with Vγ9 (TRGV9), defines Vγ9Vδ2 gamma-delta T cells (Ma et al., 2021; Herrmann et al., 2020). Source atlas: King HW et al. 2021 Sci Immunol, DOI 10.1126/sciimmunol.abh3768."
+}

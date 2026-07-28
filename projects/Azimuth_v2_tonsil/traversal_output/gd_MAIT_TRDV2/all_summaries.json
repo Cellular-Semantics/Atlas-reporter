@@ -1,0 +1,83 @@
+[
+  {
+    "corpus_id": "235821808",
+    "title": "Effector Vγ9Vδ2 T cell response to congenital Toxoplasma gondii infection",
+    "authors": "Ling Ma, M. Papadopoulou, M. Taton, F. Genco, A. Marchant, V. Meroni, D. Vermijlen",
+    "year": 2021,
+    "doi": "10.1172/jci.insight.138066",
+    "source_method": "asta_snippet",
+    "summary": "Introduces the defining TCR of the TRDV2+ subset: Vγ9Vδ2 T cells are defined by a TCR containing the gamma variable region 9 (Vγ9, TRGV9) and the delta variable region 2 (Vδ2, TRDV2), and are the major gamma-delta population of adult human blood. TRDV2/TRGV9 here are transcript-level gene-segment identities (RNA-defined V usage); Vγ9 and Vδ2 are the corresponding protein TCR chains detected by antibody/flow. The subset is TCR-activated by phosphoantigens and shows a cytotoxic effector phenotype.",
+    "quotes": [
+      "A major γδ T cell population in human adult blood are the Vγ9Vδ2 T cells that are defined by the expression of a TCR containing the γ chain variable region 9 (Vγ9, TRGV9) and the δ chain V region 2 (Vδ2, TRDV2).",
+      "They express a potent cytotoxic effector phenotype and are activated and expanded in a TCR-dependent manner by microbe-and host-derived phosphorylated prenyl metabolites (phosphorylated Ags, or phosphoantigens), derived from the isoprenoid metabolic pathway"
+    ]
+  },
+  {
+    "corpus_id": "219605283",
+    "title": "An Update on the Molecular Basis of Phosphoantigen Recognition by Vγ9Vδ2 T Cells",
+    "authors": "T. Herrmann, A. S. Fichtner, M. M. Karunakaran",
+    "year": 2020,
+    "doi": "10.3390/cells9061433",
+    "source_method": "asta_snippet",
+    "summary": "Defines the hallmark TCR at the gene-segment level and the antigenic ligands. Vγ9Vδ2 T cells are ~1-5% of blood T cells and express TCRs whose gamma chains rearrange Vγ9 with JP (TRGV9JP) paired with Vδ2 (TRDV2)-containing delta chains; TRDV2 is the transcript/gene-segment identity while Vδ2 is the protein chain. These TCRs respond to phosphoantigens (PAg) such as HMBPP (microbial) and IPP (accumulating in certain tumours or aminobisphosphonate-treated cells).",
+    "quotes": [
+      "Their hallmark is the expression of T cell antigen receptors (TCR) whose γ-chains contain a rearrangement of Vγ9 with JP (TRGV9JP or Vγ2Jγ1.2) and are paired with Vδ2 (TRDV2)-containing δ-chains.",
+      "These TCRs respond to phosphoantigens (PAg) such as (E)-4-hydroxy-3-methyl-but-2-enyl pyrophosphate (HMBPP), which is found in many pathogens, and isopentenyl pyrophosphate (IPP), which accumulates in certain tumors or cells treated with aminobisphosphonates such as zoledronate."
+    ]
+  },
+  {
+    "corpus_id": "289723511",
+    "title": "Selective Enrichment of Non-Canonical Vγ9-Jγ2 TRG Clonotypes in Clear Cell Renal Cell Carcinoma With Shorter CDR3 Loops",
+    "authors": "Won Joon Oh, S. Seo, H. K. I. Chamathka, Jae-Hyun Park, Tae Jin Kim",
+    "year": 2026,
+    "doi": "10.4110/in.2026.26.e25",
+    "source_method": "asta_snippet",
+    "summary": "States that Vγ9Vδ2 cells are the predominant blood gamma-delta population and details the butyrophilin-dependent phosphoantigen-sensing mechanism (BTN3A1/BTN3A2/BTN2A1). Notes that at the repertoire level the Vγ9 (TRG) usage is constrained but the Vδ2 (TRD) repertoire is highly diverse — a transcript/repertoire-level statement about TRDV2-containing CDR3 sequences.",
+    "quotes": [
+      "Human Vγ9Vδ2 γδ T cells, the predominant γδ T cells in peripheral blood, are innate-like lymphocytes that recognize non-peptidic phosphorylated metabolites (\"phosphoantigens\") through a butyrophilin-dependent manner, positioning them as key mediators of tumor immunosurveillance",
+      "Phosphoantigen sensing is mediated by the BTN3A1/BTN3A2/BTN2A1 complex: phosphoantigens bind to the intracellular B30.2 domain of BTN3A1, inducing conformational changes that are transmitted to the extracellular domains, where engagement with the Vγ9Vδ2 TCR occurs.",
+      "Previous TCR repertoire analyses have shown that the Vγ9 TCR gamma (TRG) repertoire is relatively constrained, whereas the Vδ2 TCR delta repertoire is highly diverse."
+    ]
+  },
+  {
+    "corpus_id": "284813837",
+    "title": "Impaired function of Vγ9Vδ2 T cells in frail elderly",
+    "authors": "Hui Li, Xiaxuan Li, Hangyu Chen, Zhanqun Yang, Mengzhu Zheng, Yuan Xue, Yingying Yan, Jian Lin, Xuan Lai, Long Chen",
+    "year": 2026,
+    "doi": "10.1186/s12979-026-00558-8",
+    "source_method": "asta_snippet",
+    "summary": "Summarises the effector functions of the Vδ2 subset: it is the most abundant circulating gamma-delta population and mediates direct cytotoxicity (perforin/granzymes, Fas/FasL), rapid secretion of IFN-γ and TNF-α, IL-17 production, and immunomodulatory/antigen-presenting activity. These are protein-level effector-molecule functions attributed to the Vδ2 (TRDV2) subset.",
+    "quotes": [
+      "The Vδ2 subset, pairing predominantly with the Vγ9 chain to form Vγ9Vδ2 T cells, constitutes the most abundant circulating γδ T cell population in adult peripheral blood",
+      "Vγ9Vδ2 T cells exert direct cytotoxicity against target cells (e.g., tumor cells) via cytotoxic granule release (Perforin, Granzymes) or the Fas/Fas ligand (FasL) pathway.",
+      "Upon activation, they rapidly secrete key pro-inflammatory cytokines like Interferon-gamma (IFN-γ) and Tumor Necrosis Factor-alpha (TNF-α), bolstering host defense."
+    ]
+  },
+  {
+    "corpus_id": "267030542",
+    "title": "γδ T cell antigen receptor polyspecificity enables T cell responses to a broad range of immune challenges",
+    "authors": "Jing Guo, R. Chowdhury, Vamsee Mallajosyula, Jianming Xie, M. Dubey, Yuanyuan Liu, Jing Li, Yu-Ling Wei, Brad A. Palanski, Conghua Wang, Lingfeng Qiu, M. Ohanyan, Oliver Kask, Elsa Sola, Lilit Kamalyan, David B Lewis, T. Scriba, Mark M. Davis, Dylan Dodd, Xun Zeng, Y. Chien",
+    "year": 2024,
+    "doi": "10.1073/pnas.2315592121",
+    "source_method": "asta_snippet",
+    "summary": "Provides tonsil-specific evidence for gamma-delta T cells: antigen-reactive gamma-delta T cells are present in tonsils, are enriched among tonsillar gamma-delta cells relative to paired blood, and expand in tonsil organoid cultures upon live-attenuated influenza vaccine (LAIV) stimulation. Their repertoire includes canonical Vγ9Vδ2 TCRs. This is functional/repertoire evidence in the same tissue (tonsil) as the atlas.",
+    "quotes": [
+      "They also contained Vγ9Vδ2 TCRs with the canonical CDR3γ sequence CALWEVQELGKKIKV, generated from the Vγ9 and JγP gene segments without N-nucleotide addition, or with limited VJ junctional variations.",
+      "Cy3 + HA + γδ T cells were present with variable frequencies in the tonsils (SI Appendix, Fig. S6B) but showed higher frequencies among tonsillar γδ T cells compared to paired peripheral blood γδ T cells (Fig. 4E).",
+      "Stimulating tonsil organoid cultures with live-attenuated influenza vaccine (LAIV) induced Cy3 + HA + γδ T cell expansion when compared with unstimulated cultures."
+    ]
+  },
+  {
+    "corpus_id": "24575852",
+    "title": "Evolution and Function of the TCR Vgamma9 Chain Repertoire: It’s Good to be Public",
+    "authors": "C. Pauza, C. Cairo",
+    "year": 2015,
+    "doi": "10.1016/j.cellimm.2015.02.010",
+    "source_method": "asta_snippet",
+    "summary": "Describes the extrathymic selection and phosphoantigen reactivity of Vγ9Vδ2 (Vγ9-JP) cells and explicitly compares this monomorphic-ligand selection to that of alpha-beta innate T cells including NKT and MAIT cells — directly relevant to the atlas conflation of MAIT and TRDV2+ labels. Repertoire/selection-level (transcript-defined Vγ9-JP rearrangement) statements.",
+    "quotes": [
+      "Lymphocytes expressing a T cell receptor (TCR) composed of Vgamma9 and Vdelta2 chains represent a minor fraction of human thymocytes.",
+      "While selection on a monomorphic presenting molecule may seem unusual, similar mechanisms shape the alpha beta T cell repertoire including the extreme examples of NKT or mucosal-associated invariant T cells (MAIT)"
+    ]
+  }
+]

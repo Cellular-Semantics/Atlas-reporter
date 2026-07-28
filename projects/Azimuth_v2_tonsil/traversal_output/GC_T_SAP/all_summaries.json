@@ -1,0 +1,114 @@
+[
+  {
+    "corpus_id": "4426610",
+    "title": "SAP-controlled T-B cell interactions underlie germinal centre formation",
+    "authors": "Hai Qi, Jennifer L Cannons, Frederick Klauschen, P. Schwartzberg, R. Germain",
+    "year": 2008,
+    "doi": "10.1038/nature07345",
+    "source_method": "asta_snippet",
+    "summary": "Two-photon intravital imaging showing that SAP (encoded by SH2D1A) is required for CD4+ T cells to form stable interactions with cognate B cells but not with dendritic cells; loss of SAP causes failure of contact-dependent T-cell help and a germinal centre defect. SAP/SH2D1A here is a functional/genetic determinant; SAP itself is a cytoplasmic SH2-domain adaptor (not a surface protein).",
+    "quotes": [
+      "In human X-linked lymphoproliferative disease and its gene-targeted mouse model, loss-of-function mutations in signalling lymphocyte activation molecule-associated protein (SAP, encoded by SH2D1a) cause a profound defect in germinal centre formation by an as yet unknown mechanism.",
+      "Here, using two-photon intravital imaging, we show that SAP deficiency selectively impairs the ability of CD4+ T cells to stably interact with cognate B cells but not antigen-presenting dendritic cells.",
+      "Furthermore, the lack of stable interactions with B cells renders Sap-/- T cells unable to be efficiently recruited to and retained in a nascent germinal centre to sustain the germinal centre reaction."
+    ]
+  },
+  {
+    "corpus_id": "19569943",
+    "title": "Expression of two markers of germinal center T cells (SAP and PD-1) in angioimmunoblastic T-cell lymphoma.",
+    "authors": "G. Roncador, J.-F. García Verdes-Montenegro, S. Tedoldi, J. Paterson, W. Klapper, E. Ballabio, L. Maestre, S. Pileri, M. Hansmann, M. Piris, D. Mason, T. Marafioti",
+    "year": 2007,
+    "doi": "10.3324/HAEMATOL.10864",
+    "source_method": "asta_snippet",
+    "summary": "SAP is an intracytoplasmic (non-surface) signalling molecule detectable by immunohistology and serves as a protein-level marker of germinal center T cells in paraffin-embedded human tissue. SAP is co-expressed with PD-1 in germinal center T cells, and appears to be induced slightly ahead of PD-1. Protein-level evidence (immunohistochemistry).",
+    "quotes": [
+      "In the present paper we report that SAP , an intracytoplasmic molecule that is involved in cell signaling, is an immunohistologic marker for germinal center T cells in paraffinembedded tissue.",
+      "ouble labeling for SAP in combination with PD-1, a known marker of germinal center T cells, confirmed that these two molecules are usually co-expressed in the same cells, although the presence of scattered SAP-positive, PD-1-negative T cells in interfollicular areas suggested that SAP is induced slightly in advance of PD-1, before helper T cells enter the germinal center.",
+      "SAP is essential in T cells for providing late B-cell help and the establishment of longterm humoral immunity, 16 and its clinical importance is demonstrated by the fatal lymphoproliferative disorder that frequently develops in patients with mutations in this X-linked gene."
+    ]
+  },
+  {
+    "corpus_id": "7795066",
+    "title": "Modulation of SAP dependent T:B cell interactions as a strategy to improve vaccination",
+    "authors": "Joyce K. Hu, C. Havenar-Daughton, Shane Crotty",
+    "year": 2013,
+    "doi": "10.1016/j.coviro.2013.05.015",
+    "source_method": "asta_snippet",
+    "summary": "Review of the role of SAP (SH2D1A) in regulating the duration of T:B cell interactions in germinal centers. SAP binds SLAM-family receptors and mediates signalling affecting adhesion, cytokine secretion, and TCR signalling strength; sustained Tfh:B contact is required for B-cell help. Functional/mechanistic evidence; SAP is an intracellular adaptor.",
+    "quotes": [
+      "In GCs, a specialized subset of CD4+ helper T cells, called T follicular helper cells (Tfh), provide help to B cells; this help directs the magnitude and quality of the antibody response.",
+      "SAP (Signaling lymphocytic activation molecule (SLAM)-associated protein, encoded by Sh2d1a) regulates the duration of T:B cell interactions and is required for long-term humoral immunity in animal models and in humans.",
+      "SAP binds to SLAM family receptors and mediates signaling that affects cell adhesion, cytokine secretion, and TCR signaling strength."
+    ]
+  },
+  {
+    "corpus_id": "25353658",
+    "title": "Germinal Center T Follicular Helper Cell IL-4 Production Is Dependent on Signaling Lymphocytic Activation Molecule Receptor (CD150)",
+    "authors": "I. Yusuf, R. Kageyama, L. Monticelli, R. Johnston, D. DiToro, K. Hansen, Burton E. Barnett, Shane Crotty",
+    "year": 2010,
+    "doi": "10.4049/jimmunol.0903505",
+    "source_method": "asta_snippet",
+    "summary": "SAP (SH2D1A) expression in CD4 T cells is essential for germinal center development. GC-Tfh cells are a further-polarized Tfh subset (CXCR5+ GL7+) with enhanced B-cell help and IL-4 production; SAP-deficient mice lack the GC-Tfh subset and their Tfh cells are defective in IL-4 and IL-21 production. SAP is an intracellular SH2-domain adaptor protein (transcript/functional evidence).",
+    "quotes": [
+      "Signaling lymphocytic activation molecule (SLAM)-associated protein (SAP [SH2D1A]) expression in CD4 T cells is essential for GC development.",
+      "SAP (SLAM-associated protein), a small Src homology domain 2-domain adaptor protein encoded by the gene SH2D1A, is integral to T cell-dependent humoral immunity.",
+      "Strikingly, SAP-deficient mice have an absence of the GC TFH cell subset and SAP− TFH cells are defective in IL-4 and IL-21 production."
+    ]
+  },
+  {
+    "corpus_id": "233260455",
+    "title": "SLAM Associated Protein Signaling in T Cells: Tilting the Balance Toward Autoimmunity",
+    "authors": "Y. Gartshteyn, A. Askanase, A. Mor",
+    "year": 2021,
+    "doi": "10.3389/fimmu.2021.654839",
+    "source_method": "asta_snippet",
+    "summary": "Review of SAP signalling in T cells. SAP deficiency causes impaired germinal center formation via aberrant CD4 T-cell function (extrinsic to B cells); SAP is required for Tfh development in the germinal center. SAP-deficient CD4 T cells fail to form stable conjugates with B cells but can still conjugate with dendritic cells, indicating the defect is specific to T:B interactions. SAP is an intracellular adaptor; evidence is functional.",
+    "quotes": [
+      "Subsequent work identified an essential requirement for SAP in the development of T FH cells in the germinal center, absence of which is associated with decreased T FH IL-4 production, loss of T FH -B cell help activity, and decreased antibody production (33)(34)(35).",
+      "In contrast to the unstable B cell interaction, SAP deficient T cells are still able to form stable conjugates with dendritic cells (13), suggesting that impaired SLAM-SAP signaling predominantly affects T cell -B cell interactions.",
+      "As mentioned, it is the expression of SAP in T cells, and not in B cells, that is required and sufficient for SAP-dependent antibody production and germinal center formation (37)."
+    ]
+  },
+  {
+    "corpus_id": "8002879",
+    "title": "Optimal Germinal Center Responses Require A Multi-stage T:B Cell Adhesion Process Involving Integrins, SLAM-associated protein and CD84",
+    "authors": "Jennifer L Cannons, Hai Qi, Kristina T. Lu, Mala Ghai, J. Gomez-Rodriguez, Jun Cheng, E. Wakeland, R. Germain, P. Schwartzberg",
+    "year": 2010,
+    "doi": "10.1016/j.immuni.2010.01.010",
+    "source_method": "asta_snippet",
+    "summary": "SAP-deficient CD4 T cells show a selective impairment in sustained adhesion to antigen-presenting B cells but not dendritic cells. T:B interactions require an early integrin-dependent phase and a sustained SAP-dependent phase; SLAM-family members CD84 and Ly108 mediate stable T:B adhesion required for optimal Tfh function and germinal center formation. Functional/imaging evidence; SAP is an intracellular adaptor.",
+    "quotes": [
+      "CD4+ T cells deficient in signaling lymphocyte activation molecule (SLAM)-associated protein (SAP) exhibit a selective impairment in adhesion to antigen presenting B cells but not dendritic cells (DC), resulting in defective germinal center formation.",
+      "We found that whereas T:DC interactions were primarily integrin-dependent, T:B cell interactions had both an early integrin-dependent phase and a sustained phase that also required SAP.",
+      "We further found that the SLAM family member, CD84, was required for prolonged T:B cell contact, optimal T follicular helper function, and germinal center formation in vivo."
+    ]
+  },
+  {
+    "corpus_id": "24766720",
+    "title": "The receptor Ly108 functions as a SAP adaptor dependent on-off switch for T cell help to B cells and NKT cell development",
+    "authors": "R. Kageyama, Jennifer L Cannons, Fang Zhao, I. Yusuf, Christopher Lao, M. Locci, P. Schwartzberg, Shane Crotty",
+    "year": 2012,
+    "doi": "10.1016/j.immuni.2012.05.016",
+    "source_method": "asta_snippet",
+    "summary": "SAP (Sh2d1a) deficiency causes a major defect in humoral immunity due to lack of T-cell help for B cells. Deletion of the SLAM-family receptor Ly108 (Slamf6) in CD4 T cells reverses the SAP-null phenotype, showing SAP acts as an on-off switch balancing positive and negative SLAM-family signalling at the T:B synapse. Functional/genetic evidence; SAP is an intracellular SH2-domain adaptor.",
+    "quotes": [
+      "Humans and mice deficient in the adaptor protein SAP (Sh2d1a) have a major defect in humoral immunity, due to lack of T cell help for B cells.",
+      "We found that deletion of receptor Ly108 (Slamf6) in CD4+ T cells reversed the Sh2d1a−/− phenotype, eliminating the SAP requirement for germinal centers.",
+      "The ability of SAP to regulate both positive and negative signals in T cells can explain the severity of SAP-deficiency and highlights the importance of SAP and SHP-1 competition for Ly108 ITSM binding as a rheostat for the magnitude of T cell help to B cells."
+    ]
+  },
+  {
+    "corpus_id": "279371793",
+    "title": "X-linked lymphoproliferative disease type 1: a clinical and genetic update",
+    "authors": "Jiaxun Li, Luyu Lv, Qingqing Wei, Wenpeng Pang, Chunjuan He, Hao Wu, Liping Guo",
+    "year": 2025,
+    "doi": "10.3389/fimmu.2025.1620327",
+    "source_method": "asta_snippet",
+    "summary": "Clinical/genetic review of XLP1. SAP is predominantly expressed in T, NK, and NKT cells and minimally in B cells; loss-of-function SH2D1A mutations compromise SAP-dependent Tfh function, germinal center formation, and humoral immunity. SAP-deficient T cells fail to differentiate into mature CD4 Tfh cells because this requires cooperation with normal B cells. Functional/genetic evidence; SAP is intracellular.",
+    "quotes": [
+      "SAP is predominantly expressed in T cells, NK cells, and Natural Killer T (NKT) cells, where it modulates SLAM family receptor (SFR)-mediated signaling pathways, but is minimally expressed in B cells (41).",
+      "while defective SAP-dependent T follicular helper (TFH) cell function compromises germinal centers (GCs) formation and humoral immunity.",
+      "Specifically, SAP deficiency severely impairs the adhesion of CD4 Tfh cells to B cells in GCs, resulting in compromised humoral immunity and hypogammaglobulinemia."
+    ]
+  }
+]

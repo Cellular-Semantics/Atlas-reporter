@@ -1,0 +1,36 @@
+{
+  "cell_type_label": "memory CD4-positive, alpha-beta T follicular helper (Tfh) cell in tonsil B-cell follicle",
+  "working_definition": "A memory-phenotype CD4-positive, alpha-beta T follicular helper cell (CD45RA-negative, CD45RO-positive, antigen-experienced) resident in the B-cell follicle of the human palatine tonsil. It expresses the canonical Tfh marker programme — CXCR5, BCL6, PD-1 (PDCD1), ICOS, and IL-21 — and provides help that drives germinal-centre B-cell class-switching and immunoglobulin production. The memory qualifier distinguishes these cells from effector Tfh: they persist after a germinal-centre response and retain the capacity to recall Tfh effector functions on antigen re-encounter.",
+  "searches_performed": [
+    "T follicular helper cell",
+    "memory T follicular helper cell",
+    "CD4-positive alpha-beta memory T cell",
+    "memory follicular helper T cell",
+    "CXCR5-positive memory CD4 T cell"
+  ],
+  "best_match": {
+    "cl_term": "T follicular helper cell",
+    "cl_id": "CL:0002038",
+    "cl_definition": "A CD4-positive, CXCR5-positive, CCR7-negative alpha-beta T cell located in follicles of secondary lymph nodes that is BCL6-high, ICOS-high and PD1-high, and stimulates follicular B cells to undergo class-switching and antibody production.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0002038 (T follicular helper cell) captures the core Tfh identity shared with the atlas cell type: CD4-positive, CXCR5-positive, CCR7-negative, BCL6-high, ICOS-high, PD1-high, follicle-resident, B-cell helper function. However, CL:0002038 does not encode the memory/antigen-experienced qualifier that is the defining feature of this atlas population. The atlas cell type is explicitly CD45RA-negative/CD45RO-positive (antigen-experienced), persists after a germinal-centre response, and retains recall Tfh effector capacity — properties absent from the CL:0002038 definition. The atlas cell type is therefore a proper subtype of CL:0002038, making this a broad match. The curator-proposed alternative CL:0000897 (CD4-positive, alpha-beta memory T cell) is an even broader parent that lacks any follicular-helper specificity and is therefore a worse fit. No CL term for a memory T follicular helper cell exists.",
+  "other_candidates": [
+    {
+      "cl_term": "CD4-positive, alpha-beta memory T cell",
+      "cl_id": "CL:0000897",
+      "cl_definition": "A CD4-positive, alpha-beta T cell that has differentiated into a memory T cell.",
+      "reason_rejected": "Captures the memory and CD4 lineage aspects but completely lacks the follicular helper specialisation (CXCR5, BCL6, follicle localisation, B-cell help). This is a much broader term than CL:0002038 and a worse fit for the atlas cell type."
+    },
+    {
+      "cl_term": "germinal center T cell",
+      "cl_id": "CL:0009062",
+      "cl_definition": "A specialized type of CD4 positive T cell, the follicular helper T cell (TFH cell), that upregulates CXCR5 expression to enable its follicular localization. These specialised T cells reside in the germinal center of the lymph node.",
+      "reason_rejected": "Describes a germinal-centre-resident Tfh subtype rather than the memory Tfh state. The atlas cell type is a post-GC memory population that can re-enter germinal centres on recall but is not restricted to the germinal centre. CL:0009062 is narrower than CL:0002038 and does not capture the memory/persistence aspect."
+    }
+  ],
+  "recommendation": "Use CL:0002038 (T follicular helper cell) as a broad match. A new CL term is needed: 'memory T follicular helper cell' — a CD4-positive, CXCR5-positive, CCR7-negative, CD45RA-negative, CD45RO-positive alpha-beta T cell that has differentiated from an effector T follicular helper cell, retains BCL6, ICOS and PD-1 expression, persists in secondary lymphoid organs after a germinal-centre response, and retains the capacity to recall follicular helper functions on antigen re-encounter. It should be placed as a child of CL:0002038 (T follicular helper cell) and CL:0000897 (CD4-positive, alpha-beta memory T cell).",
+  "new_term_needed": true
+}

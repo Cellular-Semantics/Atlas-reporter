@@ -1,0 +1,31 @@
+{
+  "cell_type_label": "OX40-positive (TNFRSF4/CD134) germinal center T cell (GC-Tfh) in tonsil germinal center.",
+  "working_definition": "An OX40+ (TNFRSF4/CD134-expressing) CD4+ T follicular helper cell localised to the germinal center of the palatine tonsil, characterised by surface expression of CXCR5, PD-1, and CD57, transcription factor BCL6, and the GC-positioning marker GNG4. OX40 costimulatory signalling actively drives Tfh differentiation, sustains cell survival, and enhances B-cell helper capacity cooperatively with ICOS. The cell's primary function is to provide cognate help to germinal-center B cells to support affinity maturation and antibody class switching.",
+  "searches_performed": [
+    "OX40 T cell",
+    "germinal center T follicular helper cell",
+    "T follicular helper cell",
+    "germinal center T cell",
+    "TNFRSF4 positive T cell",
+    "OX40L costimulatory follicular helper"
+  ],
+  "best_match": {
+    "cl_term": "germinal center T cell",
+    "cl_id": "CL:0009062",
+    "cl_definition": "A specialized type of CD4 positive T cell, the follicular helper T cell (TFH cell), that upregulates CXCR5 expression to enable its follicular localization. These specialised T cells reside in the germinal center of the lymph node.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0009062 (germinal center T cell) covers all CXCR5-upregulated, GC-resident CD4+ Tfh cells, which aligns with the lineage and location of the report cell type. However, the report cell type is specifically defined by OX40 (TNFRSF4/CD134) surface expression — a functional costimulatory marker absent from the CL:0009062 definition — plus additional markers PD-1, BCL6, CD57, and GNG4 that distinguish activated GC-positioned Tfh from the broader GC T cell category. The CL term is therefore a valid parent but does not capture the OX40+ functional specialisation that defines this atlas cluster. No OX40-specific or TNFRSF4-positive Tfh term was found in CL. The broader parent CL:0002038 (T follicular helper cell) was also considered but is further from this cell type than CL:0009062.",
+  "other_candidates": [
+    {
+      "cl_term": "T follicular helper cell",
+      "cl_id": "CL:0002038",
+      "cl_definition": "A CD4-positive, CXCR5-positive, CCR7-negative alpha-beta T cell located in follicles of secondary lymph nodes that is BCL6-high, ICOS-high and PD1-high, and stimulates follicular B cells to undergo class-switching and antibody production.",
+      "reason_rejected": "Direct parent of CL:0009062 and therefore less specific than the germinal center T cell term. CL:0002038 encompasses all follicular Tfh cells including those outside the germinal center, making it a broader and less precise match than CL:0009062 for this GC-resident, OX40+ subset."
+    }
+  ],
+  "recommendation": "Use CL:0009062 (germinal center T cell) as a broad match parent. A new CL term is needed for 'OX40-positive germinal center T follicular helper cell', defined as a germinal center T cell (CL:0009062) that expresses OX40 (TNFRSF4/CD134) at the cell surface. Key defining features from the report: OX40/TNFRSF4 surface expression, CXCR5+, PD-1+, BCL6+, CD57+, GNG4+, tonsil germinal center location, function in driving GC B cell affinity maturation via OX40/OX40L and ICOS costimulation.",
+  "new_term_needed": true
+}

@@ -1,0 +1,72 @@
+{
+  "238530091": {
+    "corpus_id": "238530091",
+    "first_author": "King",
+    "authors": ["Hamish W. King", "Kristen L. Wells", "Zohar Shipony", "Arwa S. Kathiria", "Lisa E. Wagar", "C. Lareau", "N. Orban", "R. Capasso", "Mark M. Davis", "L. Steinmetz", "L. James", "W. Greenleaf"],
+    "year": 2021,
+    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.abh3768",
+    "pmid": "34623901"
+  },
+  "237268750": {
+    "corpus_id": "237268750",
+    "first_author": "Heesters",
+    "authors": ["B. Heesters", "Kyah van Megesen", "Ilhan Tomris", "R. D. de Vries", "G. Magri", "H. Spits"],
+    "year": 2021,
+    "title": "Characterization of human FDCs reveals regulation of T cells and antigen presentation to B cells",
+    "journal": "The Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20210790",
+    "pmid": "34424268"
+  },
+  "205146347": {
+    "corpus_id": "205146347",
+    "first_author": "Rezk",
+    "authors": ["S. Rezk", "B. Nathwani", "Xiaohui Zhao", "L. Weiss"],
+    "year": 2013,
+    "title": "Follicular dendritic cells: origin, function, and different disease-associated patterns",
+    "journal": "Human Pathology",
+    "doi": "10.1016/j.humpath.2012.10.005",
+    "pmid": "23332930"
+  },
+  "3245785": {
+    "corpus_id": "3245785",
+    "first_author": "Heesters",
+    "authors": ["B. Heesters", "P. Chatterjee", "Young-A. Kim", "S. F. Gonzalez", "Michael P. Kuligowski", "T. Kirchhausen", "M. Carroll"],
+    "year": 2013,
+    "title": "Endocytosis and recycling of immune complexes by follicular dendritic cells enhances B cell antigen binding and activation",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2013.02.023",
+    "pmid": "23770227"
+  },
+  "248514413": {
+    "corpus_id": "248514413",
+    "first_author": "Doan",
+    "authors": ["Thu A Doan", "Tadg S Forward", "B. Tamburini"],
+    "year": 2022,
+    "title": "Trafficking and retention of protein antigens across systems and immune cell types",
+    "journal": "Cellular and Molecular Life Sciences",
+    "doi": "10.1007/s00018-022-04303-4",
+    "pmid": "35505125"
+  },
+  "221371554": {
+    "corpus_id": "221371554",
+    "first_author": "Dernstedt",
+    "authors": ["Andy Dernstedt", "Jana Leidig", "A. Holm", "Jenny Mjösberg", "C. Ahlm", "J. Henriksson", "M. Hultdin", "M. Forsell"],
+    "year": 2020,
+    "title": "Regulation of Decay Accelerating Factor Primes Human Germinal Center B Cells for Phagocytosis",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2020.599647",
+    "pmid": "33469456"
+  },
+  "5760189": {
+    "corpus_id": "5760189",
+    "first_author": "Wang",
+    "authors": ["Xiaoming Wang", "B. Cho", "Kazuhiro Suzuki", "Ying Xu", "Jesse A. Green", "Jinping An", "J. Cyster"],
+    "year": 2011,
+    "title": "Follicular dendritic cells help establish follicle identity and promote B cell retention in germinal centers",
+    "journal": "The Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20111449",
+    "pmid": "22042977"
+  }
+}

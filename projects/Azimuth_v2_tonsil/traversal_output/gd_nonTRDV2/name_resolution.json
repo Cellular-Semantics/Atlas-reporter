@@ -1,0 +1,16 @@
+{
+  "label": "non-TRDV2+",
+  "resolved_names": [
+    "non-Vδ2 γδ T cell",
+    "Vδ2-negative γδ T cell",
+    "Vδ1 (TRDV1) γδ T cell",
+    "non-Vγ9Vδ2 γδ T cell"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (organized lymphoid tissue)",
+  "confidence": "high",
+  "evidence": "The Azimuth human_tonsil_v2 fine label 'non-TRDV2+' identifies a gamma-delta (γδ) T cell defined by ABSENCE of TRDV2 (the transcript encoding the Vδ2 TCR chain). This distinguishes it from the blood-dominant innate-like Vγ9Vδ2 subset. Cells lacking Vδ2 are collectively termed 'non-Vδ2' γδ T cells (Kabelitz et al., 2013; Fisher et al., 2026) and consist predominantly of Vδ1 (TRDV1) cells, with rarer Vδ3/Vδ5 (Pérez et al., 2020; Khairallah et al., 2018). Non-Vδ2 / Vδ1 cells are rare in blood but enriched in barrier/mucosal and organized lymphoid tissues including the tonsil (Groh et al., 1989; Negash et al., 2018). IMPORTANT: the atlas label is transcript-based (TRDV2 absence, i.e. TRDV1 positivity at the mRNA level), whereas most literature characterises the same subset at the protein/surface level (anti-Vδ2 / anti-Vδ1 antibody staining). ASTA is blind to the atlas paper body (only the abstract for CorpusId 238530091 is indexed); name resolution therefore relies on the broader γδ T cell literature describing the non-Vδ2 / Vδ1 subset.",
+  "marker_logic": "Defining feature is a NEGATIVE marker: absence of TRDV2 (Vδ2). The positive correlate is TRDV1 (Vδ1); the pan-γδ constant-region marker TRDC is shared by all γδ T cells and does not discriminate the subset.",
+  "parent": "CL:0000798 (gamma-delta T cell)"
+}

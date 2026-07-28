@@ -1,0 +1,15 @@
+{
+  "label": "CD8-positive, alpha-beta follicular T cell",
+  "resolved_names": [
+    "follicular CD8 T cell",
+    "CXCR5+ CD8 T cell",
+    "CXCR5+CD8+ T cell",
+    "follicular cytotoxic CD8 T cell (Tfc)"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (B-cell follicle / germinal center)",
+  "confidence": "high",
+  "evidence": "The Azimuth human_tonsil_v2 fine label 'CD8-positive, alpha-beta follicular T cell' corresponds to a CD8+ alpha-beta T cell that expresses the follicle-homing receptor CXCR5 and localises to the B-cell follicle / germinal center. In the literature this population is termed 'follicular CD8 T cell', 'CXCR5+ CD8 T cell', or 'follicular cytotoxic CD8 T cell (Tfc)'. It has been directly characterised in human tonsil (Shen et al., 2018; Chu et al., 2015/2019; Petrovas et al., 2017). ASTA is blind to the atlas paper body (only the abstract for CorpusId 238530091 is indexed); name resolution therefore relies on the broader literature describing the same CXCR5+ follicular CD8 subset in tonsil and lymphoid tissue.",
+  "parent_correction": "CL:0000895 (CD4-naive) is wrong; correct parent CL:0000625 CD8-positive, alpha-beta T cell"
+}

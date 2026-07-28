@@ -1,0 +1,143 @@
+[
+  {
+    "corpus_id": "237279487",
+    "title": "Anatomy and physiology of the palatine tonsils, adenoids, and lingual tonsils",
+    "authors": ["Alexandra M Arambula", "Jason R. Brown", "Laura L. Neff"],
+    "year": 2021,
+    "doi": "10.1016/j.wjorl.2021.04.003",
+    "source_method": "asta_snippet",
+    "summary": "Review of tonsil anatomy/physiology. Describes the two epithelial compartments of the palatine tonsil crypts: stratified squamous epithelium and reticulated crypt epithelium (lymphoepithelium), the latter being less orderly, containing both epithelial and non-epithelial (lymphoid) cells and sometimes lacking a basement membrane, an arrangement that supports antigen transport. Structural/histological evidence (not transcriptomic).",
+    "quotes": [
+      "The crypts themselves are lined by a non-uniform distribution of stratified squamous epithelium and reticulated crypt epithelium.",
+      "Reticulated epithelium is less orderly than stratified squamous epithelium and contains both epithelial and non-epithelial cells, particularly lymphoid cells. This epithelial layer can be quite thin and even lack a basement membrane in some regions."
+    ]
+  },
+  {
+    "corpus_id": "256229073",
+    "title": "Oropharyngeal Carcinoma with a Special Focus on HPV-Related Squamous Cell Carcinoma",
+    "authors": ["R. Ferris", "W. Westra"],
+    "year": 2023,
+    "doi": "10.1146/annurev-pathmechdis-031521-041424",
+    "source_method": "asta_snippet",
+    "summary": "Review of oropharyngeal (tonsillar) carcinoma. Describes the reticulated crypt epithelium as a highly specialised, net-like epithelium adapted for antigen transport, with an incomplete basal cell layer and a disrupted, porous basement membrane. Histological/microanatomical evidence.",
+    "quotes": [
+      "These tonsillar crypts are lined by a highly specialized epithelium known as the reticulated (net-like) epithelium that is uniquely structured to facilitate transport of foreign antigens from the external environment of the oropharynx to the tonsillar lymphoid tissue (Figure 1).The basal cell layer is incomplete and its supporting basement membrane is disrupted and porous, thus allowing for the direct passage of lymphocytes and antigen-presenting cells."
+    ]
+  },
+  {
+    "corpus_id": "234349441",
+    "title": "Tropism, susceptibility, infectivity, and cytokine releases of differentiated human tonsillar epithelial cells by different Influenza viruses",
+    "authors": ["Faten A. Okda", "A. Sakr", "R. Webster", "R. Webby"],
+    "year": 2021,
+    "doi": "10.1101/2021.05.03.442542",
+    "source_method": "asta_snippet",
+    "summary": "Study of primary human tonsil epithelial cells (HTECs). Confirms the tonsil epithelium comprises both stratified surface and reticulated crypt epithelial cells, distinguished by keratin expression profiles: simple keratins K8/K18 and K19 mark crypt epithelium, while K5 and K14 mark surface epithelium. Keratin evidence is protein-level (antibody panel / in situ staining).",
+    "quotes": [
+      "By using a panel of antibodies specific to different keratins, we confirmed that the tonsil epithelium consists of both stratified surface and reticulated crypt epithelial cells.",
+      "K5 and K14 were strongly expressed in the surface epithelium.",
+      "Human tonsil epithelium cells (HTEC) are a heterogeneous group of actively differentiating cells comprising stratified squamous epithelial and reticulated crypt cells with abundant keratin expression."
+    ]
+  },
+  {
+    "corpus_id": "102346192",
+    "title": "Modelling human papillomavirus biology in oropharyngeal keratinocytes",
+    "authors": ["S. Roberts", "D. Evans", "H. Mehanna", "Joanna L. Parish"],
+    "year": 2019,
+    "doi": "10.1098/rstb.2018.0289",
+    "source_method": "asta_snippet",
+    "summary": "Review of tonsil keratinocyte biology. Notes that surface and crypt epithelia follow alternative differentiation programmes with distinct keratin profiles: CK8 (partnered with CK18) is weak in surface epithelium but strong in the reticulated crypt, and CK7 distinguishes crypt from surface. Cytokeratin evidence is protein-level.",
+    "quotes": [
+      "However, tonsil surface and crypt epithelia undergo alternative differentiation programmes and in particular, there are marked differences in their keratin profiles [74]. Cytokeratin 8 (CK8), normally partnered with CK18 is weakly expressed in keratinocytes of the surface tonsil epithelium (and in basal keratinocytes), but is strongly expressed in the reticulated crypt, particularly in the cells of the upper layers [74].",
+      "Another cytokeratin that distinguishes crypt from surface epithelia is the transitional/junctional epithelia marker CK7."
+    ]
+  },
+  {
+    "corpus_id": "282313758",
+    "title": "A Transcriptional Map of Human Tonsil Architecture: Beyond the Sum of (Single Cell) Parts",
+    "authors": ["Helena L. Crowell", "L. Llaó-Cid", "G. Frigola", "Samuel Gunz", "Irene Ruano", "Patricia Lorden", "Max Ruiz", "M. Kulis", "J. Martín-Subero", "H. Heyn", "E. Campo", "A. Pascual-Reguant"],
+    "year": 2025,
+    "doi": "10.1002/eji.70121",
+    "source_method": "asta_snippet",
+    "summary": "Spatial-transcriptomic map of human tonsil. Defines the two epithelial types (surface stratified squamous vs reticulated crypts) and notes surface epithelium was resolved only in adult sections. Both compartments express keratins that contribute to structure and mechanical strength. Transcriptomic/imaging spatial evidence.",
+    "quotes": [
+      "Tonsil epithelium consist of two different types of actively differentiating epithelium: lining (surface) stratified squamous epithelium; and, reticulated crypts -deep invaginations of the tonsil in which the continuity of the outer surface epithelium is disrupted.",
+      "Both surface and crypt epithelial cells contain keratins, a protein family that forms intermediate filaments and maintains cell structure and function, contributing to mechanical strength and protection from stress."
+    ]
+  },
+  {
+    "corpus_id": "51758839",
+    "title": "Effects of Tonsillectomy on Psoriasis and Tonsil Histology-Ultrastructure",
+    "authors": ["S. Bucolo", "V. Torre", "G. Romano", "C. Quattrocchi", "F. Farri", "M. Filidoro", "C. Caldarelli"],
+    "year": 2013,
+    "doi": "10.5772/55978",
+    "source_method": "asta_snippet",
+    "summary": "Describes tonsil surface as stratified squamous epithelium forming ~20-30 crypts per tonsil, with crypt epithelium interspersed with immune cells and containing M cells (micropores) that internalise antigen. Histological evidence.",
+    "quotes": [
+      "The tonsil surface is usually covered by stratified squamous epithelium that envelops tonsils to form the crypts. There are generally some 20-30 crypts for tonsil. Within the crypt epithelium is not tightly arranged and presents macrophages, dendritic cells and lymphocytes to epithelial cells interspersed."
+    ]
+  },
+  {
+    "corpus_id": "280332524",
+    "title": "Single cell transcriptional analysis of human adenoids identifies molecular features of airway microfold cells",
+    "authors": ["Samuel Alvarez-Arguedas", "Khadija Mazhar", "Andi Wangzhou", "Ishwarya Sankaranarayanan", "Gabriela Gaona", "J. Lafin", "Ron B Mitchell", "Theodore J. Price", "M. Shiloh"],
+    "year": 2025,
+    "doi": "10.1016/j.mucimm.2025.07.006",
+    "source_method": "asta_snippet",
+    "summary": "Single-cell study of human adenoid (nasopharyngeal tonsil) epithelium. Notes that in the recent single-cell atlas of the tonsil epithelium, M cells were not annotated as a distinct cluster, but canonical M-cell markers (SPIB, MARCKSL1) were detected in a subset of epithelial cells termed 'crypt cells'. Transcriptomic evidence.",
+    "quotes": [
+      "Nevertheless, expression of canonical M cell markers such as SPIB and MARCKSL1 was detected in a subset of epithelial cells termed 'crypt cells'."
+    ]
+  },
+  {
+    "corpus_id": "282206075",
+    "title": "Spatial transcriptomic analysis of foveolar-type gastric adenoma with raspberry-like appearance",
+    "authors": ["Sohei Kitazawa", "E. Takeshita", "H. Tomida", "T. Miyake", "Y. Ikeda", "Seiya Bekku", "Ryuma Haraguchi", "Yuki Takaoka", "Teruyuki Ohno", "Mashio Taniwaki", "Y. Hiasa", "R. Kitazawa"],
+    "year": 2025,
+    "doi": "10.1007/s00428-025-04302-3",
+    "source_method": "asta_snippet",
+    "summary": "Spatial-transcriptomic study of gastric mucosa showing epithelial VEGFA. In the superficial mucosa, VEGFA and FLT1 mRNA were abundant; immunohistochemistry localised VEGFA protein to both epithelial (tumour) cells and inflammatory cells (mainly macrophages) — direct evidence that mucosal epithelial cells can express VEGFA at both transcript and protein level. Transcript (spatial mRNA) + protein (IHC).",
+    "quotes": [
+      "In the superficial mucosa, mRNA expression of VEGFA and FLT1 was found to be abundant (Figs. 5A and 5B), prompting further immunohistochemical analysis of these factors.",
+      "VEGFA was localized to both tumor cells and inflammatory cells (mainly macrophages) in the superficial mucosa (Fig. 8B)."
+    ]
+  },
+  {
+    "corpus_id": "250010765",
+    "title": "Novel Drugs with High Efficacy against Tumor Angiogenesis",
+    "authors": ["Shi Qi", "Shoulong Deng", "Zhengxing Lian", "Kun Yu"],
+    "year": 2022,
+    "doi": "10.3390/ijms23136934",
+    "source_method": "asta_snippet",
+    "summary": "Review of VEGF/VEGFR biology. Establishes VEGFA as a potent endothelial mitogen that is broadly produced but upregulated under hypoxia, and that signals mainly through VEGFR2 to drive angiogenesis. Background on the secreted factor (VEGFA is a secreted signalling protein).",
+    "quotes": [
+      "VEGFA is produced by most cells in the body but is upregulated in hypoxia.",
+      "VEGFA mediates in vivo angiogenic responses primarily through the activation of VEGFR2 [76]."
+    ]
+  },
+  {
+    "corpus_id": "278460783",
+    "title": "Angiogenic Factors and Inflammatory Bowel Diseases",
+    "authors": ["Zhiru Li", "Li Zeng", "Wei Huang", "Xinxing Zhang", "Li Zhang", "Qin Xie"],
+    "year": 2025,
+    "doi": "10.3390/biomedicines13051154",
+    "source_method": "asta_snippet",
+    "summary": "Review of angiogenic factors in mucosal inflammation. Describes VEGF-A as the first-discovered and most-studied VEGF family member, produced by diverse cells during inflammation, and driving vasodilatation, vascular permeability and endothelial proliferation/migration. Background on secreted-factor function.",
+    "quotes": [
+      "Notably, VEGF-A was the inaugural member of this family to be discovered and remains the most extensively researched to date.",
+      "VEGF-A elicits transient vasodilatation and augments vascular permeability via the liberation of nitric oxide (NO), thereby stimulating the proliferation, directional migration, and differentiation of vascular endothelial cells."
+    ]
+  },
+  {
+    "corpus_id": "231777000",
+    "title": "Role of Tonsillar Chronic Inflammation and Commensal Bacteria in the Pathogenesis of Pediatric OSA",
+    "authors": ["Lindybeth Sarmiento Varón", "J. De Rosa", "R. Rodriguez", "P. Fernández", "L. A. Billordo", "Plácida Baz", "Gladys Beccaglia", "N. Spada", "F. T. Mendoza", "C. Barberis", "C. Vay", "M. E. Arabolaza", "Bibiana Paoli", "E. Arana"],
+    "year": 2021,
+    "doi": "10.3389/fimmu.2021.648064",
+    "source_method": "asta_snippet",
+    "summary": "Study of tonsillar inflammation. Notes the tonsillar epithelium both protects and transports foreign material from the lumen to the lymphoid compartment, and that the surface epithelium is continuous with the stratified squamous epithelium of the oral mucosa. Immunofluorescence / histological evidence.",
+    "quotes": [
+      "The tonsillar epithelium provides protection as well as serving to transport foreign material from the lumen to the lymphoid compartment.",
+      "Anatomically, the surface epithelium of the palatine tonsils is an extension of the stratified squamous epithelium of the oral mucosa (Figure 3A, Supplementary Figures 6, 7)."
+    ]
+  }
+]

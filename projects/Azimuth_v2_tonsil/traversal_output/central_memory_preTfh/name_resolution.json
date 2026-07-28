@@ -1,0 +1,13 @@
+{
+  "label": "central memory CD4-positive, alpha-beta preT follicular helper cell",
+  "resolved_names": [
+    "precursor T follicular helper cell (pre-Tfh)",
+    "central-memory-phenotype CD4+ pre-Tfh",
+    "CXCR5-intermediate CCR7+ Tfh precursor"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (T:B border / B-cell follicle)",
+  "confidence": "medium",
+  "evidence": "ASTA has only the atlas abstract (King et al. 2021, CorpusId 238530091), so the fine Azimuth label was resolved against the broader Tfh-differentiation literature rather than the atlas full text. The label maps to the well-described precursor Tfh (pre-Tfh) stage: a CXCR5-intermediate, CCR7-positive CD4+ alpha-beta cell primed at the T:B border and committing toward the germinal-center Tfh program while retaining a central-memory-like state (Schroeder et al., 2021; Shen & Fu, 2025; Zhu et al., 2023)."
+}

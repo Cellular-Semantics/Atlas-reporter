@@ -1,0 +1,16 @@
+{
+  "label": "FCRL4/5+",
+  "resolved_names": [
+    "FCRL4/5-positive memory B cells",
+    "FCRL4+ B cells",
+    "FcRH4-bearing memory B cells",
+    "tissue-based memory B cells",
+    "tissue-like memory B cells",
+    "atypical memory B cells"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (mucosa-associated lymphoid tissue)",
+  "confidence": "high",
+  "evidence": "Azimuth human_tonsil_v2 fine label 'FCRL4/5+' (parent CL:0000972 class-switched memory B cell). ASTA's snippet index exposes only the abstract of the atlas paper (King et al. 2021, CorpusId 238530091); no PMC supplement or local index was available, so the name was resolved from the canonical marker biology. FCRL4/FCRL5/CD11c define a tonsillar atypical (tissue-based) memory B cell population — confirmed in a contemporary tonsil atlas (Carrasco et al. 2021) and the defining Ehrhardt/Cooper literature."
+}

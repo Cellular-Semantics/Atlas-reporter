@@ -1,0 +1,106 @@
+[
+  {
+    "corpus_id": "6857301",
+    "title": "Expression of the immunoregulatory molecule FcRH4 defines a distinctive tissue-based population of memory B cells",
+    "authors": "Ehrhardt GRA, Hsu JT, Gartland L, Leu CM, Zhang S, Davis RS, Cooper MD",
+    "year": 2005,
+    "doi": "10.1084/jem.20050879",
+    "source_method": "asta_snippet",
+    "summary": "Seminal paper defining FcRH4 (FCRL4)-bearing cells as a distinctive tissue-based subpopulation of memory B cells confined to the tonsil, most of which lack CD27.",
+    "quotes": [
+      "We conclude from these observations that the FcRH4-bearing B cells represent a specialized tissue-based subpopulation of memory B cells.",
+      "Although CD27 is currently an accepted marker for memory B cells in humans (6, 7), we found that most FcRH4-bearing cells do not express this cell surface molecule."
+    ]
+  },
+  {
+    "corpus_id": "6047083",
+    "title": "Discriminating gene expression profiles of memory B cell subpopulations",
+    "authors": "Ehrhardt GRA, Hijikata A, Kitamura H, Ohara O, Wang JY, Cooper MD",
+    "year": 2008,
+    "doi": "10.1084/jem.20072682",
+    "source_method": "asta_snippet",
+    "summary": "Transcriptome comparison of FCRL4+ vs FCRL4- tonsillar memory B cells; localises FCRL4+ cells to crypt epithelium and perifollicular regions of palatine tonsils.",
+    "quotes": [
+      "The FCRL4 + cells are rarely seen in the bone marrow, blood, and spleen, but are found instead in the crypt epithelium and perifollicular regions of the palatine tonsils, intestinal lymphoid tissues, and mesenteric lymph nodes, wherein their numbers are increased in patients with lymphadenitis caused by Toxoplasmosis gondii , HIV-1, and EBV infections ( 7,14,16 )."
+    ]
+  },
+  {
+    "corpus_id": "5242905",
+    "title": "Role of CD11c+ T-bet+ B cells in human health and disease",
+    "authors": "Karnell JL, Kumar V, Wang J, Wang S, Voynova E, Ettinger R",
+    "year": 2017,
+    "doi": "10.1016/j.cellimm.2017.05.008",
+    "source_method": "asta_snippet",
+    "summary": "Review of CD11c+ T-bet+ B cells; describes the FcRH4/FCRL4+ CD11c+ tonsillar memory subset, its class-switched IgG/IgA BCRs, CD27-low status and altered proliferative behaviour.",
+    "quotes": [
+      "Over a decade ago, a novel subpopulation of memory B cells, characterized by expression of CD11c and the inhibitory receptor, Fc receptor-like protein 4 (FcRH4, also referred to as FcRL4), was identified in the human tonsil [1,2].",
+      "with roughly 90% of the cells expressing class switched IgG or IgA B cell receptors (BCR) [2].",
+      "While classical memory B cells proliferate in response to BCR ligation, FcRH4 + B cells fail to proliferate under these conditions, but maintain the ability to proliferate and secrete Ig in response to cytokines, such as IL-2 and IL-10, and CD40 signals [2]."
+    ]
+  },
+  {
+    "corpus_id": "19074444",
+    "title": "Antibodies encoded by FCRL4-bearing memory B cells preferentially recognize commensal microbial antigens",
+    "authors": "Liu Y, McDaniel JR, Khan S, Campisi P, Propst EJ, Holler T, Grunebaum E, Georgiou G, Ippolito GC, Ehrhardt GRA",
+    "year": 2018,
+    "doi": "10.4049/jimmunol.1701549",
+    "source_method": "asta_snippet",
+    "summary": "Shows FCRL4 is a low-affinity IgA receptor with immunoregulatory potential and that FCRL4+ memory B cell antibodies preferentially recognise commensal microbial antigens.",
+    "quotes": [
+      "FCRL4, a low-affinity IgA Ab receptor with strong immunoregulatory potential, is an identifying feature of a tissue-based population of memory B cells (Bmem).",
+      "Importantly, Abs with reactivity to commensal microbiota were enriched in FCRL4+ cells, a phenotype not due to polyreactive binding characteristics."
+    ]
+  },
+  {
+    "corpus_id": "212346",
+    "title": "Characterization of human FCRL4-positive B cells",
+    "authors": "Jourdan M, Robert N, Cren M, Thibaut C, Duperray C, Kassambara A, Cogné M, Tarte K, Klein B, Moreaux J",
+    "year": 2017,
+    "doi": "10.1371/journal.pone.0179793",
+    "source_method": "asta_snippet",
+    "summary": "Characterisation of human FCRL4+ B cells; in healthy tissue FCRL4 marks memory B cells in sub-epithelial regions, and FCRL4+ cells are less prone to differentiate into plasma cells.",
+    "quotes": [
+      "In healthy individuals, FCRL4 is specifically expressed by memory B cells (MBCs) localized in sub-epithelial regions of lymphoid tissues.",
+      "Finally, due to their reduced proliferation and differentiation potential, FCRL4+ cells were less prone to differentiate into plasma cells, differently from FCRL4- cells."
+    ]
+  },
+  {
+    "corpus_id": "253552748",
+    "title": "A close-up on the expanding landscape of CD21-/low B cells in humans",
+    "authors": "Gjertsson I, McGrath S, Grimstad K, Jonsson CA, Camponeschi A, Thorarinsdottir K, Mårtensson IL",
+    "year": 2022,
+    "doi": "10.1093/cei/uxac103",
+    "source_method": "asta_snippet",
+    "summary": "Review of CD21-/low B cells; gives a concise surface phenotype of tissue-resident FcRL4+ memory B cells and notes they represent ~10% of tonsillar B cells but are near-absent from blood, marrow and spleen.",
+    "quotes": [
+      "To summarize the phenotype of these tissue-resident CD21−/low MBCs, they are CD27−IgD−CD38−CD11c+FcRL4+.",
+      "The FcRL4+ cells were thus considered MBCs and were subsequently found to also express CD11c (αX) integrin and high levels of CD20 [15].",
+      "They represented around 10% of tonsillar B cells but were not detected (<0.5%) among PB, BM, or splenic B cells."
+    ]
+  },
+  {
+    "corpus_id": "9316411",
+    "title": "Expression of FcRL4 defines a pro-inflammatory, RANKL-producing B cell subset in rheumatoid arthritis",
+    "authors": "Yeo L, Lom H, Juarez M, Snow M, Buckley CD, Filer A, Raza K, Scheel-Toellner D",
+    "year": 2014,
+    "doi": "10.1136/annrheumdis-2013-204116",
+    "source_method": "asta_snippet",
+    "summary": "Defines FcRL4 as marking a pro-inflammatory, RANKL-producing B cell subset in rheumatoid arthritis; documents the FcRL4+ surface marker profile (high CD95/CD11c/CD20, low CD21).",
+    "quotes": [
+      "FcRL4+ B cells expressed higher levels of CD95, CD11c and CD20, and lower levels of CD21 in comparison with FcRL4− B cells (figure 4)."
+    ]
+  },
+  {
+    "corpus_id": "239054826",
+    "title": "The Tonsil Lymphocyte Landscape in Pediatric Tonsil Hyperplasia and Obstructive Sleep Apnea",
+    "authors": "Carrasco A, Sjölander I, Van Acker A, Dernstedt A, Fehrm J, Forsell M, Friberg D, Mjösberg J, Rao A",
+    "year": 2021,
+    "doi": "10.3389/fimmu.2021.674080",
+    "source_method": "asta_snippet",
+    "summary": "Single-cell/flow atlas of pediatric tonsil; identifies an atypical memory B cell group co-expressing FcRL4, FcRL5 and CD11c, largely CD27-negative.",
+    "quotes": [
+      "These tissue-like memory or atypical memory B cells were characterized by the expression of Fc receptor-like (FcRL) proteins FcRL4 and/or FcRL5, CD11c and T-bet (35,(38)(39)(40).",
+      "The atypical memory B cells were characterized by co-expression of FcRL4, FcRL5 and CD11c, and were largely CD27 -(Figures 5A, E and Supplementary Tables 10,  11)."
+    ]
+  }
+]

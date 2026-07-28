@@ -1,0 +1,51 @@
+{
+  "cell_type_label": "CD161-positive, TRDV2(Vδ2)-positive gamma-delta T cell with MAIT-like features (atlas conflates MAIT/γδ; true lineage is γδ). Curator parent: CL:0000798 (gamma-delta T cell).",
+  "working_definition": "A mature gamma-delta T cell defined by expression of TRDV2 (encoding the Vδ2 TCR delta chain, most often pairing with TRGV9 to form the Vγ9Vδ2 receptor) and CD161/KLRB1, found in human palatine tonsil. Despite the atlas label incorporating 'MAIT', TRDV2 expression unambiguously assigns the cell to the γδ lineage rather than the αβ MAIT lineage; CD161 is a shared innate-like marker expressed across NK, γδ, iNKT, and MAIT cells. The cell functions as an innate-like effector capable of cytotoxic killing, pro-inflammatory cytokine production, and B cell help in secondary lymphoid organs.",
+  "searches_performed": [
+    "Vdelta2 gamma-delta T cell",
+    "Vgamma9Vdelta2 T cell",
+    "CD161-positive gamma-delta T cell",
+    "mucosal associated invariant T cell",
+    "gamma-delta T cell",
+    "innate-like T cell",
+    "Vdelta2",
+    "TRDV2 T cell"
+  ],
+  "best_match": {
+    "cl_term": "mature gamma-delta T cell",
+    "cl_id": "CL:0000800",
+    "cl_definition": "A gamma-delta T cell that has a mature phenotype. These cells can be found in tissues and circulation where they express unique TCR repertoire depending on their location.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000800 (mature gamma-delta T cell) captures the core identity: a mature γδ T cell found in tissues with a location-specific TCR repertoire, which directly applies to this tonsil-resident TRDV2+ cell. However, the report cell type has two distinguishing features not captured by CL:0000800: (1) a specific δ-chain gene — TRDV2 (Vδ2) — which defines one of the two major human γδ subsets and confers a peripheral/innate-effector specialisation distinct from the mucosal Vδ1 subset; and (2) CD161/KLRB1 co-expression marking a memory/innate-like programme. CL:0000800 covers all mature γδ T cells regardless of chain usage or surface phenotype, so the report cell type IS-A CL:0000800 but is more specific. No Vδ2-specific CL term exists — CL:0020001 is the Vδ1 counterpart, confirming the gap. CL:0000798 (gamma-delta T cell) is the curator-specified parent but is even broader than CL:0000800. CL:0000940 (mucosal-associated invariant T cell) is excluded because it is defined as an αβ T cell restricted by MR1 with a TRAV1-2 TCR, which directly contradicts TRDV2 expression.",
+  "other_candidates": [
+    {
+      "cl_term": "gamma-delta T cell",
+      "cl_id": "CL:0000798",
+      "cl_definition": "A T cell that expresses a gamma-delta T cell receptor complex.",
+      "reason_rejected": "Correct lineage anchor and curator-specified parent, but too general — covers immature and mature γδ T cells of all δ-chain subtypes. CL:0000800 is a more informative broad match because it additionally captures the mature phenotype and tissue distribution."
+    },
+    {
+      "cl_term": "V1delta gamma-delta T cell",
+      "cl_id": "CL:0020001",
+      "cl_definition": "A mature gamma-delta T Cell with T cell receptors consisting of the Vδ1 segment paired with various V gamma chains. This cell is enriched in the gut, skin (Davey et al., 2018) and the female reproductive tract (Wu et al., 2022). It exhibits potent cytotoxic capabilities through perforin/granzyme and death receptor pathways.",
+      "reason_rejected": "Wrong δ-chain: this term covers the Vδ1 subset, whereas the report cell type is defined by TRDV2 (Vδ2). Its existence confirms that a Vδ2 sibling term does not yet exist in CL."
+    },
+    {
+      "cl_term": "CD27-positive gamma-delta T cell",
+      "cl_id": "CL:0002124",
+      "cl_definition": "A circulating gamma-delta T cell that is CD27-positive and capable of producing IFN-gamma.",
+      "reason_rejected": "Defined by CD27 positivity, not by Vδ2/TRDV2 chain usage or CD161 expression. The report does not specify CD27 status as a defining feature; this term addresses a different phenotypic axis."
+    },
+    {
+      "cl_term": "mucosal-associated invariant T cell",
+      "cl_id": "CL:0000940",
+      "cl_definition": "An alpha-beta T cell that is found in the lamina propria of mucosal tissues and is restricted by the MR-1 molecule. This cell develops from double-positive, alpha-beta thymocyte.",
+      "reason_rejected": "Fundamentally wrong lineage: defined as an αβ T cell with MR1 restriction and αβ thymocyte origin. The report cell type expresses TRDV2 (a γδ TCR delta chain) and is explicitly identified as a γδ T cell. The 'MAIT' component of the atlas label is a nomenclature artefact reflecting shared CD161/innate-like transcriptional features, not true MAIT identity."
+    }
+  ],
+  "recommendation": "Use CL:0000800 (mature gamma-delta T cell) as a broad match interim mapping. A new CL term is needed for the Vδ2 (TRDV2+) gamma-delta T cell subset — the Vδ1 counterpart CL:0020001 already exists, and a parallel 'V2delta gamma-delta T cell' (or 'TRDV2-positive gamma-delta T cell') term should be requested. The new term definition should specify: mature γδ T cell with TCR δ-chain encoded by TRDV2 (Vδ2), most commonly paired with TRGV9 (forming the Vγ9Vδ2 receptor); dominant in peripheral blood and secondary lymphoid organs; innate-like effector functions including cytotoxicity and cytokine production; CD161/KLRB1 expression as a characteristic (but not exclusive) surface marker.",
+  "new_term_needed": true
+}

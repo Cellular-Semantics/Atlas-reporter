@@ -1,0 +1,13 @@
+{
+  "label": "VEGFA+",
+  "resolved_names": [
+    "VEGFA+ epithelial cell",
+    "VEGFA-expressing tonsil epithelial cell",
+    "tonsil epithelial cell (surface / reticulated crypt epithelium)"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil epithelium (surface stratified squamous / reticulated crypt epithelium)",
+  "confidence": "medium",
+  "evidence": "Azimuth human_tonsil_v2 fine annotation 'VEGFA+' (cl_map_order 231), derived from King HW et al. 2021 Sci Immunol (DOI 10.1126/sciimmunol.abh3768, PMID 34623901). The label names VEGFA (vascular endothelial growth factor A) as the discriminating transcript for an epithelial-cell subset of the tonsil. The tonsil epithelium comprises two compartments: a lining surface stratified squamous epithelium and specialised reticulated crypt (lymphoepithelium / follicle-associated) epithelium overlying the lymphoid tissue. ASTA indexes only the atlas ABSTRACT (CorpusId 238530091), which does not describe this epithelial subset; the resolved name and biological placement (VEGFA as a hypoxia-responsive angiogenic secreted factor produced by epithelial cells) are supported from the broader tonsil-epithelial and VEGFA literature rather than the atlas full text."
+}

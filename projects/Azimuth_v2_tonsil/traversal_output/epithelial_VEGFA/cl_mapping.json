@@ -1,0 +1,42 @@
+{
+  "cell_type_label": "VEGFA-positive epithelial cell of the palatine tonsil (surface/crypt reticulated epithelium)",
+  "working_definition": "A VEGFA-expressing epithelial cell of the adult human palatine tonsil, encompassing both the stratified squamous surface epithelium (K5/K14-positive) and the specialised reticulated crypt epithelium (CK7/CK8-positive, incomplete basement membrane) that facilitates antigen sampling by the underlying lymphoid tissue. The defining marker is VEGFA (vascular endothelial growth factor A), a secreted angiogenic factor upregulated under hypoxia; additional keratin profiles distinguish the two co-existing epithelial compartments. The cell type resides at the mucosal surface of the palatine tonsil, providing both barrier protection and antigen transport to the lymphoid compartment.",
+  "searches_performed": [
+    "VEGFA-positive epithelial cell",
+    "tonsil epithelial cell",
+    "reticulated epithelial cell",
+    "crypt epithelial cell",
+    "squamous epithelial cell tonsil",
+    "epithelial cell",
+    "mucosal epithelial cell",
+    "squamous epithelial cell",
+    "lymphoepithelial cell",
+    "oral mucosa epithelial cell",
+    "pharyngeal epithelial cell"
+  ],
+  "best_match": {
+    "cl_term": "epithelial cell",
+    "cl_id": "CL:0000066",
+    "cl_definition": "A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "Exhaustive search of OLS4 CL returned no term for tonsil epithelial cell, reticulated epithelial cell, crypt epithelial cell, lymphoepithelial cell, oral or pharyngeal epithelial cell, or any VEGFA-expressing epithelial type. CL:0000066 (epithelial cell) is the closest valid ancestor: the report cell type IS-A epithelial cell (found in a sheet with free surface, cell polarity, cytoskeletal tight contacts — all matching), but it has additional distinguishing features absent from the CL definition: (1) tonsil-specific tissue location, (2) dual-compartment identity spanning surface stratified squamous and reticulated crypt epithelium, (3) VEGFA marker expression, and (4) functional specialisation in antigen transport to lymphoid tissue. CL:0000240 (stratified squamous epithelial cell) was considered but rejected because the atlas annotation explicitly encompasses the reticulated crypt epithelium, which is not a stratified squamous epithelium and lacks an intact basement membrane — making CL:0000240 both incorrect for part of the population and more specific than the annotation scope. CL:0000066 is therefore the most specific valid broad parent.",
+  "other_candidates": [
+    {
+      "cl_term": "stratified squamous epithelial cell",
+      "cl_id": "CL:0000240",
+      "cl_definition": "A stratified epithelial cell that is part of squamous epithelium, characterized by multiple layers of cells. The basal layer is directly attached to the basement membrane and the apical layer consists of flattened squamous cells. This provides a protective barrier, commonly found in areas subject to abrasion, such as the skin, oral cavity, and esophagus.",
+      "reason_rejected": "Covers only the surface stratified squamous compartment of the tonsil. The atlas VEGFA+ annotation also includes the reticulated crypt epithelium, which is loosely arranged, lacks a complete basement membrane, and is not morphologically squamous. Applying CL:0000240 would exclude a portion of the annotated population and misrepresent the biology of the crypt compartment."
+    },
+    {
+      "cl_term": "squamous epithelial cell",
+      "cl_id": "CL:0000076",
+      "cl_definition": "An epithelial cell that has a flattened morphology.",
+      "reason_rejected": "Morphology-based term requiring a flattened shape. The reticulated crypt epithelial component of the annotation is not flattened squamous; it is loosely arranged and structurally heterogeneous. This term would be inaccurate for the crypt subset and is also less informative than CL:0000066 as a parent."
+    }
+  ],
+  "recommendation": "Use CL:0000066 (epithelial cell) as a broad match placeholder. A new CL term is needed for tonsil epithelial cell, ideally with two subtypes: (1) a surface stratified squamous epithelial cell of the palatine tonsil (child of CL:0000240) and (2) a reticulated crypt epithelial cell of the palatine tonsil (child of CL:0000066), capturing the distinct keratin profiles, structural features, and antigen-sampling function described in the report. The VEGFA-positive subset could be represented by a further child or a post-compositional expression qualifier once the parent tonsil epithelial terms exist.",
+  "new_term_needed": true
+}

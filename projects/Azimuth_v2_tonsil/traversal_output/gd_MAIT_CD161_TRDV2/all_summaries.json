@@ -1,0 +1,123 @@
+[
+  {
+    "corpus_id": "221367372",
+    "title": "T Cell Immunity to Bacterial Pathogens: Mechanisms of Immune Control and Bacterial Evasion",
+    "authors": ["F. Shepherd", "J. McLaren"],
+    "year": 2020,
+    "doi": "10.3390/ijms21176144",
+    "source_method": "asta_snippet",
+    "summary": "Review establishing the definitional basis of the TRDV2 marker used in the atlas label. Human gamma-delta T cells are divided by TCR delta-chain (TRDV gene) usage into TRDV1+ (Vδ1+) and TRDV2+ (Vδ2+) subsets; TRDV2 is a transcript/gene-segment marker of the Vδ2 lineage. TRDV2+ (Vδ2+) cells dominate peripheral blood and pair almost exclusively TRGV9 with TRDV2 to form innate-like, phosphoantigen-reactive Vγ9Vδ2 T cells. This anchors TRDV2 as a gamma-delta (not alpha-beta) lineage marker.",
+    "quotes": [
+      "In humans, γδ T cells can be classified into two main populations, based on their expression of TCR δ-chains encoded by two TRDV genes-TRDV1 + γδ T cells (or Vδ1 + T cells) and TRDV2 + γδ T cells (or Vδ2 + T cells).",
+      "Vδ1 + T cells are abundant in the skin, intestine, and uterus, whereas Vδ2 + T cells constitute the majority of peripheral blood γδ T cells [24,173,174].",
+      "Vδ2 + T cells are dominated by TCR γδ chain rearrangements encoded by the TRGV9 and TRDV2 segments, which almost exclusively pair together, forming the more frequently termed \"Vγ9 + Vδ2 +\" T cells that make up large proportions of peripheral blood γδ T cells in humans and other species [175]."
+    ]
+  },
+  {
+    "corpus_id": "18211759",
+    "title": "Gamma Delta T-lymphocytes in Hepatitis C and Chronic Liver Disease",
+    "authors": ["N. Rajoriya", "J. Fergusson", "Joanna A. Leithead", "P. Klenerman"],
+    "year": 2014,
+    "doi": "10.3389/fimmu.2014.00400",
+    "source_method": "asta_snippet",
+    "summary": "Review defining CD161/KLRB1 as a marker and its expression on gamma-delta T cells. CD161 (KLRB1) is a C-type lectin membrane glycoprotein expressed on NK cells, ~24% of peripheral T cells, and on both alpha-beta and gamma-delta T cells; here CD161 is discussed as a surface/protein marker (flow/immunostaining) while KLRB1 is its gene. CD161 marks a memory phenotype in the gamma-delta compartment and is associated with tissue-homing (gut/liver) and shared with MAIT cells — the shared CD161 expression is a key source of the MAIT/γδ transcriptional overlap seen in the atlas label.",
+    "quotes": [
+      "CD161 [also known as killer lectin receptor subfamily B member 1 (KLRB1)] is a C-type lectin membrane glycoprotein that is expressed on the majority of NK cells, and approximately 24% of peripheral T-cells (65).",
+      "It is composed of a disulfide-linked homodimer of 40 kDa subunits, and has been shown to be expressed on both αβ and γδ T-cells (66).",
+      "CD161 T-cell expression has consistently been associated with a memory phenotype in adult circulations not only in αβ T-cell populations (67-70) but also in the γδ T-cell population (66)."
+    ]
+  },
+  {
+    "corpus_id": "235402546",
+    "title": "Activation of human γδ T cells and NK cells by Staphylococcal enterotoxins requires both monocytes and conventional T cells",
+    "authors": ["Manuel Mata Forsberg", "C. Arasa", "W. Zwol", "S. Uzunçayir", "Anna Schönbichler", "Paulina Regenthal", "J. Schelin", "K. Lindkvist-Petersson", "Sophia Björkander", "E. Sverremark-Ekström"],
+    "year": 2021,
+    "doi": "10.1002/JLB.3A1020-630RR",
+    "source_method": "asta_snippet",
+    "summary": "Functional study of human γδ T cell subsets that co-analyses TRDV2 and CD161. TRDV2+ (Vδ2) cells are the most prevalent circulating γδ subset and produce IFN-γ on activation. CD161 is examined here as a surface/protein memory-associated marker (measured by flow cytometry) on TRDV2+ γδ T cells alongside CD27/CD28, situating CD161 as a memory/pro-inflammatory marker on the Vδ2 subset. TRDV2 is a transcript-level marker; CD161 is protein/flow here.",
+    "quotes": [
+      "γδ T cells are commonly subdivided according to Vδ-chain usage, which also correlates with tissue distribution and function where TRDV2 + cells are more frequently found in circulation and TRDV1/3 + at mucosal sites.",
+      "In the circulation, the TRDV2 + subpopulation is the most prevalent among γδ T cells.",
+      "We therefore investigated whether SEinduced responses in TRDV2 + T cells associated with a particular phenotype. We specifically investigated the memory-associated markers CD27, CD28, and CD161, commonly associated with pro-inflammatory responses in memory T cells."
+    ]
+  },
+  {
+    "corpus_id": "30638225",
+    "title": "Lectin-like transcript 1 is a marker of germinal center-derived B-cell non-Hodgkin's lymphomas dampening natural killer cell functions",
+    "authors": ["C. Germain", "T. Guillaudeux", "E. Galsgaard", "C. Hervouet", "Nedra Tekaya", "Anne-Sophie Gallouet", "Julien Fassy", "F. Bihl", "Gwénola Poupon", "A. Lazzari", "P. Spee", "F. Anjuère", "C. Pangault", "K. Tarte", "Patrick Tas", "L. Xerri", "V. Braud"],
+    "year": 2015,
+    "doi": "10.1080/2162402X.2015.1026503",
+    "source_method": "asta_snippet",
+    "summary": "Directly localises CD161+ T cells (including small numbers of TCRγδ+ cells and TCRVα7.2+ MAIT cells) within human tonsil by immunohistochemistry and multicolor flow cytometry. CD161+ cells were found predominantly in the interfollicular zone (IFZ) surrounding germinal centers. CD161 is measured here at the PROTEIN level (anti-CD161 mAbs, flow); the snippet explicitly distinguishes CD161+ TCRγδ+ T cells from CD161-high TCRVα7.2+ MAIT cells in tonsil — direct evidence anchoring both the tonsil localisation and the γδ-vs-MAIT distinction. NOTE: 'C' in this snippet is an OCR rendering of superscript '+'.",
+    "quotes": [
+      "CD161 was expressed by the majority of NK cells and by a significant proportion of T cells which were mostly composed of TCRab C T cells but also of small numbers of TCRgd C T cells and TCRVa7.2 C mucosal-associated invariant T cells characterized by the expression of high level of CD161 (Fig. 2D).",
+      "CD161 C cells were mostly found in the IFZ surrounding GC (Fig. 2A)."
+    ]
+  },
+  {
+    "corpus_id": "87087713",
+    "title": "γδT CELLS IN THE PALATINE TONSIL",
+    "authors": ["T. Kawaguchi"],
+    "year": 1993,
+    "doi": "10.3950/JIBIINKOKA.96.810",
+    "source_method": "asta_snippet",
+    "summary": "The foundational study of gamma-delta T cells specifically in human palatine tonsil (the atlas tissue). Flow cytometry showed ~1.56% of tonsillar T cells express the γδ TCR; immunohistology localised them preferentially to the crypt epithelium, less in surface epithelium, and fewest in the interfollicular space. γδ TCR is a protein/surface identification here. Establishes the palatine-tonsil location and rarity of the γδ T cell population that the atlas Vδ2+ label sits within.",
+    "quotes": [
+      "Flowcytometric analysis showed that 1.56% of T cells in palatine tonsils obtained from patients with recurrent tonsillitis (n=17) expressed the γδT cell receptor.",
+      "It was demonstrated that T cells in the crypt epithelium contained more γδT cell receptor bearing cells than did T cells infiltrating the tonsillar epithelium on the free surface. T cells in the interfollicular space included even fewer γδT cells."
+    ]
+  },
+  {
+    "corpus_id": "282316306",
+    "title": "Cytotoxic Vδ2+ T cell subsets expand in response to malaria in human tonsil and spleen organoids",
+    "authors": ["K. Press", "Florian Bach", "Elsa Sola", "Kylie Camanag", "N. Dooley", "P. Jagannathan"],
+    "year": 2025,
+    "doi": "10.1101/2025.09.24.678447",
+    "source_method": "asta_snippet",
+    "summary": "Functional characterisation of Vδ2+ (TRDV2+) γδ T cells in human tonsil (and spleen) organoids. Vδ2+ γδ T cells increased in abundance in tonsil organoids in response to malaria parasites, in contrast to Vδ1+ cells which did not expand. Establishes γδ T cell effector functions (cytotoxic killing, pro-inflammatory cytokines, B cell help, antigen presentation) in a secondary lymphoid / tonsil context. Vδ2 identity is defined by TCR usage; functions are cytotoxic/effector.",
+    "quotes": [
+      "In this study, we found that Vδ2 + γδ T cells increase in abundance in tonsil and spleen organoids in response to malaria parasites, similarly to what has been observed in blood in malaria-naïve individuals.",
+      "They can play diverse roles, including production of pro-inflammatory cytokines, cytotoxic killing, antigen presentation, promotion of dendritic cell maturation, B cell help, recruitment of other immune cells, and secretion of growth factors [29].",
+      "γδ + T cells may also play a role in direct or indirect modulation of antibody production in secondary lymphoid organs [30][31][32][33][34])."
+    ]
+  },
+  {
+    "corpus_id": "4931659",
+    "title": "Impact of Aging on the Frequency, Phenotype, and Function of CD161-Expressing T Cells",
+    "authors": ["K. V. D. van der Geest", "B. Kroesen", "G. Horst", "W. Abdulahad", "E. Brouwer", "A. Boots"],
+    "year": 2018,
+    "doi": "10.3389/fimmu.2018.00752",
+    "source_method": "asta_snippet",
+    "summary": "Dissects which innate-like T cell lineages express CD161. Confirms gamma-delta T cells, iNKT cells, and MAIT cells can all express CD161 (protein/flow), and identifies MAIT cells separately by TCR-Vα7.2 staining — reinforcing that CD161 is shared across lineages and is NOT MAIT-specific. Supports the caveat that a CD161+ TRDV2+ cell is a γδ (Vδ2) cell with a shared CD161 marker, not a canonical MAIT cell.",
+    "quotes": [
+      "Previous studies have reported that gamma-delta T cells, invariant natural killer T (iNKT) cells, and MAIT cells may express CD161 (33,37,38).",
+      "To delineate MAIT cells, additional staining was performed for the TCR-Vα7.2 receptor (Figure 2E)."
+    ]
+  },
+  {
+    "corpus_id": "46752325",
+    "title": "Human blood MAIT cell subsets defined using MR1 tetramers",
+    "authors": ["N. Gherardin", "Michael N. T. Souter", "H. Koay", "Kirstie M. Mangas", "T. Seemann", "T. Stinear", "S. Eckle", "S. Berzins", "Y. D'udekem", "I. Konstantinov", "D. Fairlie", "D. Ritchie", "P. Neeson", "D. Pellicci", "Adam P. Uldrich", "J. McCluskey", "D. Godfrey"],
+    "year": 2018,
+    "doi": "10.1111/imcb.12021",
+    "source_method": "asta_snippet",
+    "summary": "Definitional MAIT-cell paper underpinning the γδ/MAIT caveat. Canonical MAIT cells are identified by MR1-5-OP-RU tetramer staining and use the TRAV1-2 (Vα7.2) alpha-beta TCR; CD161 (high) is a widely used surrogate MAIT marker but is imperfect and not specific. This establishes that genuine MAIT cells are alpha-beta / TRAV1-2 / MR1-restricted, so CD161 alone (or CD161 with a γδ TCR) does not define a MAIT cell.",
+    "quotes": [
+      "MAIT cells exhibit a unique cell surface phenotype, including expression of high levels of the C-type lectin CD161, 3 the IL-18Ra chain CD218 4 as well as the ectopeptidase CD26.",
+      "Taken together, while the CD161 HI TRAV1-2 + phenotype is a reasonably accurate indicator of CD8aa + and DN MAIT cells, for other MAIT cell populations (CD4 + , DP and CD8ab + ) this approach is not very reliable."
+    ]
+  },
+  {
+    "corpus_id": "160009846",
+    "title": "Diverse MR1-restricted T cells in mice and humans",
+    "authors": ["H. Koay", "N. Gherardin", "Calvin Xu", "Rebecca Seneviratna", "Zhe Zhao", "Zhenjun Chen", "D. Fairlie", "J. McCluskey", "D. Pellicci", "Adam P. Uldrich", "D. Godfrey"],
+    "year": 2019,
+    "doi": "10.1038/s41467-019-10198-w",
+    "source_method": "asta_snippet",
+    "summary": "Shows MR1-restricted, MAIT-like cells can occur outside the canonical TRAV1-2+ compartment and share high CD161/CD26 with MAIT cells, but formal MAIT identity is defined by MR1 restriction and the TRAV1-2 alpha-beta TCR. Provides the conceptual frame of 'MAIT-like' innate cells that share CD161 but differ in lineage — directly relevant to labelling a TRDV2+ γδ cell as 'MAIT-like' rather than MAIT.",
+    "quotes": [
+      "As expected, the majority of TRAV1-2 + MAIT cells were CD218a high and CD161 high , in contrast to MR1-5-OP-RU tetramer − 'conventional' αβ T cells, which were mostly low for these markers (Fig. 6a, second panels).",
+      "For TRAV1-2 − MR1-5-OP-RU tetramer + cells, two distinct populations emerged: some had high CD218a and CD161 expression, akin to MAIT cells (MAIT-like cells), and some had low expression of these markers (non-MAIT-like cells) (Fig. 6a, third panels)."
+    ]
+  }
+]

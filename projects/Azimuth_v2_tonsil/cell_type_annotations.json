@@ -1,0 +1,724 @@
+{
+  "source": {
+    "doi": "10.1126/sciimmunol.abh3768",
+    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "authors": [
+      "Hamish W. King",
+      "Kristen L. Wells",
+      "Zohar Shipony",
+      "Arwa S. Kathiria",
+      "Lisa E. Wagar",
+      "Caleb Lareau",
+      "Nara Orban",
+      "Robson Capasso",
+      "Mark M. Davis",
+      "Lars M. Steinmetz",
+      "Louisa K. James",
+      "William J. Greenleaf"
+    ],
+    "reference_pmid": "PMID:34623901",
+    "atlas_reference": "Azimuth human_tonsil_v2 (https://azimuth.hubmapconsortium.org/references/human_tonsil_v2/)"
+  },
+  "annotations": [
+    {
+      "label": "aDC",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "B activated",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "B memory",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "B naive",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "CD4 naive",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "CD4 Non-TFH",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "CD4 TCM",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "CD4 TFH",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "CD4 TFH Mem",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "CD4 TREG",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "CD8 naive",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "CD8 T",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "CD8 TCM",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "Cycling DZ GCB",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "Cycling FDC",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "Cycling myeloid",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "Cycling T",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "DC",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "dnT",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "DZ GCB",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "DZtoLZ GCB transition",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "Epithelial",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "FCRL4/5+ B memory",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "FDC",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "Granulocytes",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "ILC",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "LZ GCB",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "LZtoDZ GCB transition",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "MAIT/TRDV2+ gdT",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "Mast",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "Mono/Macro",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "NK",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "NK_CD56bright",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "non-TRDV2+ gdT",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "PB",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "PC",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "PC/doublet",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "PDC",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "preB/T",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "preGCB",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "preMBC/doublet",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "prePB",
+      "granularity": "broad",
+      "scope": "adult"
+    },
+    {
+      "label": "activated",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0001056",
+      "cl_map_order": 2
+    },
+    {
+      "label": "activated resident memory",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000909",
+      "cl_map_order": 5
+    },
+    {
+      "label": "early activation",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000788",
+      "cl_map_order": 9
+    },
+    {
+      "label": "CD14+CD55+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000442",
+      "cl_map_order": 44
+    },
+    {
+      "label": "CD16-negative, CD56-dim",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000623",
+      "cl_map_order": 46
+    },
+    {
+      "label": "CD229+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000788",
+      "cl_map_order": 48
+    },
+    {
+      "label": "CD4-positive, alpha-beta memory follicular helper T cell",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000897",
+      "cl_map_order": 51
+    },
+    {
+      "label": "CD8-positive, alpha-beta follicular T cell",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000895",
+      "cl_map_order": 56
+    },
+    {
+      "label": "central memory CD4-positive, alpha-beta preT follicular helper cell",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000904",
+      "cl_map_order": 60
+    },
+    {
+      "label": "COL27A1+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000442",
+      "cl_map_order": 67
+    },
+    {
+      "label": "Fc receptor-like (FCRL) 4/5+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000970",
+      "cl_map_order": 90
+    },
+    {
+      "label": "FCRL4/5+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000972",
+      "cl_map_order": 91
+    },
+    {
+      "label": "FCRL5+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000787",
+      "cl_map_order": 94
+    },
+    {
+      "label": "IFN+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000625",
+      "cl_map_order": 114
+    },
+    {
+      "label": "IgA positive plasma cell",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000787",
+      "cl_map_order": 115
+    },
+    {
+      "label": "IgD positive plasma precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000946",
+      "cl_map_order": 116
+    },
+    {
+      "label": "IgG positive plasma cell",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000787",
+      "cl_map_order": 120
+    },
+    {
+      "label": "IgG positive plasma precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000946",
+      "cl_map_order": 121
+    },
+    {
+      "label": "IgM positive plasma precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000946",
+      "cl_map_order": 122
+    },
+    {
+      "label": "IL7R",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0001056",
+      "cl_map_order": 124
+    },
+    {
+      "label": "Interferon 1 positive",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0001058",
+      "cl_map_order": 129
+    },
+    {
+      "label": "MAIT/CD161+TRDV2+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000798",
+      "cl_map_order": 142
+    },
+    {
+      "label": "MAIT/TRDV2+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000798",
+      "cl_map_order": 143
+    },
+    {
+      "label": "non-TRDV2+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000798",
+      "cl_map_order": 174
+    },
+    {
+      "label": "OX40+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0009062",
+      "cl_map_order": 179
+    },
+    {
+      "label": "SAP",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0009062",
+      "cl_map_order": 211
+    },
+    {
+      "label": "TCRV_+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000798",
+      "cl_map_order": 225
+    },
+    {
+      "label": "VEGFA+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000066",
+      "cl_map_order": 231
+    },
+    {
+      "label": "ZNF683+",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000909",
+      "cl_map_order": 235
+    },
+    {
+      "label": "tonsil C1Q slan-like",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000875",
+      "cl_map_order": 247
+    },
+    {
+      "label": "crypt",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000066",
+      "cl_map_order": 267
+    },
+    {
+      "label": "tonsil surface",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000066",
+      "cl_map_order": 314
+    },
+    {
+      "label": "committed early plasma cell precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000980",
+      "cl_map_order": 330
+    },
+    {
+      "label": "committed light zone germinal center B cell",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000786",
+      "cl_map_order": 331
+    },
+    {
+      "label": "early commited naive B cell",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000844",
+      "cl_map_order": 332
+    },
+    {
+      "label": "cycling",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0009111",
+      "cl_map_order": 334
+    },
+    {
+      "label": "proliferating",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000788",
+      "cl_map_order": 367
+    },
+    {
+      "label": "reactivated proliferative",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000787",
+      "cl_map_order": 369
+    },
+    {
+      "label": "dark zone to light zone transition",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:2000006",
+      "cl_map_order": 376
+    },
+    {
+      "label": "dark zone",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:2000006",
+      "cl_map_order": 378
+    },
+    {
+      "label": "dark zone, cell cycle exit",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000844",
+      "cl_map_order": 380
+    },
+    {
+      "label": "dark zone, early G2Mphase",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000844",
+      "cl_map_order": 381
+    },
+    {
+      "label": "dark zone, late G2Mphase",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:2000006",
+      "cl_map_order": 382
+    },
+    {
+      "label": "dark zone, migratory plasma cell precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:2000006",
+      "cl_map_order": 383
+    },
+    {
+      "label": "dark zone, non proliferative",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:2000006",
+      "cl_map_order": 384
+    },
+    {
+      "label": "dark zone, Sphase",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000844",
+      "cl_map_order": 386
+    },
+    {
+      "label": "DC recruiters",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000625",
+      "cl_map_order": 387
+    },
+    {
+      "label": "early IgM positive plasma precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000946",
+      "cl_map_order": 403
+    },
+    {
+      "label": "early",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000787",
+      "cl_map_order": 404
+    },
+    {
+      "label": "early plasma cell precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000787",
+      "cl_map_order": 405
+    },
+    {
+      "label": "early precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000786",
+      "cl_map_order": 409
+    },
+    {
+      "label": "effector",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000815",
+      "cl_map_order": 411
+    },
+    {
+      "label": "effector-IL32",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000815",
+      "cl_map_order": 412
+    },
+    {
+      "label": "light zone to dark zone reentry commitment",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:2000006",
+      "cl_map_order": 435
+    },
+    {
+      "label": "light zone to dark zone transition",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:2000006",
+      "cl_map_order": 436
+    },
+    {
+      "label": "light zone, germinal center",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0002038",
+      "cl_map_order": 438
+    },
+    {
+      "label": "ITGAX Slan-like",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000763",
+      "cl_map_order": 444
+    },
+    {
+      "label": "MMP Slan-like",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000763",
+      "cl_map_order": 445
+    },
+    {
+      "label": "SELNOP Slan-like",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000763",
+      "cl_map_order": 447
+    },
+    {
+      "label": "memory",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0002038",
+      "cl_map_order": 459
+    },
+    {
+      "label": "plasma cell precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000787",
+      "cl_map_order": 467
+    },
+    {
+      "label": "precursor memory B cell",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000817",
+      "cl_map_order": 472
+    },
+    {
+      "label": "precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:2000006",
+      "cl_map_order": 473
+    },
+    {
+      "label": "premature",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000985",
+      "cl_map_order": 475
+    },
+    {
+      "label": "dendritic cell precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000049",
+      "cl_map_order": 477
+    },
+    {
+      "label": "transitional",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000813",
+      "cl_map_order": 494
+    },
+    {
+      "label": "Interferon activated",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000788",
+      "cl_map_order": 513
+    },
+    {
+      "label": "secreted protein epithelial cell",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000442",
+      "cl_map_order": 532
+    },
+    {
+      "label": "stem cell memory",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0000909",
+      "cl_map_order": 539
+    },
+    {
+      "label": "T:B border",
+      "granularity": "fine",
+      "scope": "adult",
+      "proposed_cl_parent": "CL:0002038",
+      "cl_map_order": 546
+    }
+  ]
+}

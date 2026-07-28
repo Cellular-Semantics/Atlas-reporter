@@ -1,0 +1,78 @@
+[
+  {
+    "corpus_id": "237268750",
+    "title": "Characterization of human FDCs reveals regulation of T cells and antigen presentation to B cells",
+    "authors": ["B. Heesters", "Kyah van Megesen", "Ilhan Tomris", "R. D. de Vries", "G. Magri", "H. Spits"],
+    "year": 2021,
+    "doi": "10.1084/jem.20210790",
+    "source_method": "asta_snippet",
+    "summary": "Single-cell RNA sequencing of human follicular dendritic cells (FDCs) from lymphoid tissue, establishing FDCs as a distinct germinal-center stromal population that regulates B-cell antigen availability and T-cell interactions. Supports assignment of the tonsil CD14+CD55+ cluster to the FDC lineage. Evidence here is transcript-level (scRNA-seq) with functional characterization.",
+    "quotes": [
+      "Single-cell RNA sequencing of human follicular dendritic cells (FDCs) provides insights in germinal center biology and enhances our understanding of these enigmatic cells. Data suggest regulation of B cell antigen availability by FDCs and T cell interactions with FDCs."
+    ]
+  },
+  {
+    "corpus_id": "205146347",
+    "title": "Follicular dendritic cells: origin, function, and different disease-associated patterns.",
+    "authors": ["S. Rezk", "B. Nathwani", "Xiaohui Zhao", "L. Weiss"],
+    "year": 2013,
+    "doi": "10.1016/j.humpath.2012.10.005",
+    "source_method": "asta_snippet",
+    "summary": "Review defining follicular dendritic cells as antigen-presenting cells largely restricted to lymphoid follicles that form dense three-dimensional meshworks maintaining follicular architecture, bind and retain antigens via complement and immune complexes, present them to germinal-center B cells, and rescue bound B cells from apoptosis while driving memory/plasma cell differentiation. Provides the structural/morphological identity for the CD14+CD55+ FDC subset. Evidence is protein-level (immunohistology / IHC meshwork markers) and functional.",
+    "quotes": [
+      "Follicular dendritic cells (FDCs) are a specialized type of antigen-presenting dendritic cells that are largely restricted to lymphoid follicles. They form dense three-dimensional meshwork patterns within benign follicles, which maintain the follicular architecture.",
+      "FDCs aid in the rescue of bound B cells from apoptosis, and induce the differentiation of B cells into long-term memory B cell clones or plasma cells."
+    ]
+  },
+  {
+    "corpus_id": "3245785",
+    "title": "Endocytosis and recycling of immune complexes by follicular dendritic cells enhances B cell antigen binding and activation",
+    "authors": ["B. Heesters", "P. Chatterjee", "Young-A. Kim", "S. F. Gonzalez", "Michael P. Kuligowski", "T. Kirchhausen", "M. Carroll"],
+    "year": 2013,
+    "doi": "10.1016/j.immuni.2013.02.023",
+    "source_method": "asta_snippet",
+    "summary": "Shows that FDCs acquire complement-coated immune complexes from non-cognate B cells via complement receptors 1 and 2 (CD35 and CD21), internalize them, and periodically re-display intact antigen on the cell surface for antigen-specific B cells. This defines the antigen-retention function and the CR1/CR2 (CD35/CD21) receptor markers characteristic of the FDC lineage to which CD14+CD55+ belongs. Marker evidence (CD35/CD21) is protein-level (antibody-based / flow / imaging).",
+    "quotes": [
+      "Here we found that FDC acquired complement-coated immune complexes (IC) from non-cognate B cells via complement receptors 1 and 2 (CD35 and CD21 respectively) and rapidly internalized them by an actin-dependent pathway.",
+      "IC were retained intact within a non-degradative cycling compartment and were displayed periodically on the cell surface where they were accessible to antigen-specific B cells."
+    ]
+  },
+  {
+    "corpus_id": "248514413",
+    "title": "Trafficking and retention of protein antigens across systems and immune cell types",
+    "authors": ["Thu A Doan", "Tadg S Forward", "B. Tamburini"],
+    "year": 2022,
+    "doi": "10.1007/s00018-022-04303-4",
+    "source_method": "asta_snippet",
+    "summary": "Review describing FDCs as a radio-resistant stromal fibroblast subset that captures and harbors antigen over extended periods via CR1 (CD35) and CR2 (CD21), and noting that human FDCs additionally express CR3. This establishes the stromal (fibroblastic) identity and complement-receptor marker profile of the FDC lineage that the CD14+CD55+ tonsil subset falls within. Marker evidence for CR1/CR2/CR3 is protein-level (surface receptors).",
+    "quotes": [
+      "Follicular dendritic cells (FDCs) are a radio-resistant stromal fibroblast subset that can capture and harbor antigen over extended periods of time",
+      "CR1 and CR2 are also expressed by human FDCs, along with CR3"
+    ]
+  },
+  {
+    "corpus_id": "221371554",
+    "title": "Regulation of Decay Accelerating Factor Primes Human Germinal Center B Cells for Phagocytosis",
+    "authors": ["Andy Dernstedt", "Jana Leidig", "A. Holm", "Jenny Mjösberg", "C. Ahlm", "J. Henriksson", "M. Hultdin", "M. Forsell"],
+    "year": 2020,
+    "doi": "10.3389/fimmu.2020.599647",
+    "source_method": "asta_snippet",
+    "summary": "Characterizes the complement-regulatory protein Decay Accelerating Factor (DAF), i.e. CD55, in the human germinal center, showing it blocks complement deposition on host cells and thereby regulates complement-dependent phagocytosis; DAF (CD55) expression level distinguishes functional B-cell states in light and dark zones. This provides the functional rationale for CD55 (DAF) as a defining marker of the CD14+CD55+ germinal-center subset: complement regulation within the follicle. Marker evidence for DAF/CD55 is protein-level (flow cytometry of surface DAF).",
+    "quotes": [
+      "The complement regulatory protein Decay Accelerating Factor (DAF) blocks complement deposition host cells and therefore also phagocytosis of cells.",
+      "Collectively, our results reveal a novel role of DAF to pre-prime activated human B cells for phagocytosis prior to apoptosis."
+    ]
+  },
+  {
+    "corpus_id": "5760189",
+    "title": "Follicular dendritic cells help establish follicle identity and promote B cell retention in germinal centers",
+    "authors": ["Xiaoming Wang", "B. Cho", "Kazuhiro Suzuki", "Ying Xu", "Jesse A. Green", "Jinping An", "J. Cyster"],
+    "year": 2011,
+    "doi": "10.1084/jem.20111449",
+    "source_method": "asta_snippet",
+    "summary": "Establishes that FDCs express high amounts of complement receptors CR1 (CD35) and CR2 (CD21), can be induced to express FcgammaRIIb, and are prominent in the germinal-center light zone where they express FDC-M1 (MFG-E8) and VCAM-1, helping establish follicle identity and retain B cells. Provides marker and location evidence for the germinal-center FDC lineage. CR1/CR2/VCAM-1/MFG-E8 marker evidence is protein-level.",
+    "quotes": [
+      "FDCs within primary follicles express high amounts of complement receptors-1 and -2 (CR1 or CD35 and CR2 or CD21) and can be induced to express Fc"
+    ]
+  }
+]

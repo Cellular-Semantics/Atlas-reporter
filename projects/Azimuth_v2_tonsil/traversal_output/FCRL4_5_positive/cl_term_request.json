@@ -1,0 +1,135 @@
+{
+  "cell_type_label": "FCRL4/5+ (Azimuth human_tonsil_v2 fine label)",
+  "suggested_label": "FCRL4-positive memory B cell, human",
+  "definition": "A human memory B cell that expresses Fc receptor-like protein 4 (FCRL4) and Fc receptor-like protein 5 (FCRL5) together with integrin alpha-X (CD11c), and is characteristically CD27-negative, CD21-low, CD38-negative, IgM-negative, and IgD-negative, with class-switched (IgG or IgA) somatically mutated B cell receptors (PMID:16157685). This cell resides in sub-epithelial regions of mucosa-associated lymphoid tissues, particularly the crypt epithelium and perifollicular zones of the palatine tonsil, and is largely absent from blood, bone marrow, and spleen (PMID:18625746). It is hyporesponsive to B cell receptor ligation but retains the capacity to respond to CD40 signals and cytokines, and its antibody repertoire is enriched for commensal microbial reactivity (PMID:29703863, PMID:28756897). FCRL4-positive memory B cells occur throughout mucosa-associated lymphoid tissue (tonsil, Peyer's patches, intestinal lymphoid tissue, mesenteric lymph nodes) and are not restricted to the tonsil (PMID:18625746). All three defining markers are documented at the protein level (cell-surface, by antibody/flow cytometry), not merely as transcripts: FCRL4 (PMID:16157685), CD11c (PMID:24431391), and FCRL5 (PMID:34745084). FCRL4 and FCRL5 belong to the Fc receptor-like family, which lacks clean 1:1 mouse orthologs, so this marker-defined cell type is specified as human.",
+  "parent_term": {
+    "cl_id": "CL:0000787",
+    "cl_term": "memory B cell"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0001961",
+    "uberon_term": "mucosa-associated lymphoid tissue"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "mucosa-associated lymphoid tissue",
+      "filler_id": "UBERON:0001961",
+      "notes": "Resides within the mucosa-associated lymphoid tissue of secondary lymphoid organs (broad ASTA search: not tonsil-restricted); the source atlas sampled human palatine tonsil."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "Fc receptor-like protein 4 (human)",
+      "filler_id": "PR:Q96PJ5",
+      "notes": "FCRL4 surface protein confirmed by monoclonal-antibody flow cytometry (PMID:16157685)."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "Fc receptor-like protein 5 (human)",
+      "filler_id": "PR:Q96RD9",
+      "notes": "FCRL5 surface protein confirmed by flow cytometry (PMID:34745084)."
+    },
+    {
+      "relation": "has plasma membrane part",
+      "relation_id": "RO:0002104",
+      "filler": "integrin alpha-X (human)",
+      "filler_id": "PR:P20702",
+      "notes": "CD11c (integrin alpha-X) surface protein confirmed by flow cytometry (PMID:24431391)."
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "mucosal immune response",
+      "filler_id": "GO:0002385",
+      "notes": "These cells reside at mucosal surfaces and their antibody repertoire is biased towards commensal microbial antigens, consistent with participation in mucosal immune homeostasis."
+    },
+    {
+      "relation": "only in taxon",
+      "relation_id": "RO:0002160",
+      "filler": "Homo sapiens",
+      "filler_id": "NCBITaxon:9606",
+      "notes": "Human-specific cell type: FCRL4/FCRL5 belong to the FCRL family, which lacks clean 1:1 mouse orthologs, so the term is restricted to Homo sapiens (CL '…, human' pattern; parent CL:0000787 remains species-neutral)."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "atypical memory B cell",
+      "scope": "related",
+      "reference": "10.1016/j.cellimm.2017.05.008"
+    },
+    {
+      "value": "tissue-based memory B cell",
+      "scope": "related",
+      "reference": "10.1084/jem.20050879"
+    },
+    {
+      "value": "tissue-like memory B cell",
+      "scope": "related",
+      "reference": "10.3389/fimmu.2021.674080"
+    },
+    {
+      "value": "FCRL4/5-positive memory B cell",
+      "scope": "exact",
+      "reference": "10.1126/sciimmunol.abh3768"
+    },
+    {
+      "value": "FcRH4-positive memory B cell",
+      "scope": "exact",
+      "reference": "10.1084/jem.20050879"
+    },
+    {
+      "value": "CD21-low atypical memory B cell",
+      "scope": "narrow",
+      "reference": "10.1093/cei/uxac103"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1084/jem.20050879",
+      "pmid": "PMID:16157685",
+      "citation": "Ehrhardt et al. (2005)",
+      "supports": "Original description of FCRL4+ (FcRH4+) tissue-based memory B cell population in human tonsil; defining markers FCRL4, CD11c, CD27-negativity, class-switched BCR; sub-epithelial localisation."
+    },
+    {
+      "doi": "10.1084/jem.20072682",
+      "pmid": "PMID:18625746",
+      "citation": "Ehrhardt et al. (2008)",
+      "supports": "Anatomical distribution: crypt epithelium and perifollicular regions of palatine tonsil, intestinal lymphoid tissues, mesenteric lymph nodes; absence from blood, bone marrow, spleen."
+    },
+    {
+      "doi": "10.1016/j.cellimm.2017.05.008",
+      "pmid": "PMID:28756897",
+      "citation": "Karnell et al. (2017)",
+      "supports": "Functional characterisation: hyporesponsiveness to BCR ligation, retained response to CD40/cytokine signals; class-switched (90% IgG/IgA) BCR; synonym 'tissue-like memory B cell'."
+    },
+    {
+      "doi": "10.4049/jimmunol.1701549",
+      "pmid": "PMID:29703863",
+      "citation": "Liu et al. (2018)",
+      "supports": "FCRL4 as low-affinity IgA receptor with immunoregulatory potential; antibody repertoire enriched for commensal microbial reactivity."
+    },
+    {
+      "doi": "10.1371/journal.pone.0179793",
+      "pmid": "PMID:28636654",
+      "citation": "Jourdan et al. (2017)",
+      "supports": "Characterisation of FCRL4+ B cells including reduced plasma cell differentiation potential; sub-epithelial localisation in lymphoid tissues."
+    },
+    {
+      "doi": "10.1093/cei/uxac103",
+      "pmid": "PMID:36380692",
+      "citation": "Gjertsson et al. (2022)",
+      "supports": "Consensus surface phenotype CD27-negative, IgD-negative, CD38-negative, CD11c-positive, FCRL4-positive; ~10% of tonsillar B cells, <0.5% in peripheral blood/bone marrow/spleen."
+    },
+    {
+      "doi": "10.1126/sciimmunol.abh3768",
+      "pmid": "PMID:34623901",
+      "citation": "King et al. (2021)",
+      "supports": "Atlas source paper — FCRL4/5+ label in Azimuth human_tonsil_v2 reference dataset."
+    }
+  ],
+  "justification": "No CL term exists for FCRL4-positive atypical/tissue-based memory B cells or any CD27-negative class-switched memory B cell subset. The nearest candidate, CL:0000972 ('class switched memory B cell'), explicitly requires CD27-positive surface expression in its definition, which directly contradicts the defining CD27-negative phenotype of FCRL4+ cells. Although FCRL4/5+ cells are class-switched (IgG/IgA), assigning CL:0000972 as parent would misrepresent a core biological feature. CL:0000787 ('memory B cell') is the correct direct parent: FCRL4/5+ cells satisfy core memory B cell criteria (antigen-experienced, long-lived, high-affinity somatically mutated Ig, CD19-positive, CD20-high, CD138-negative) but the existing term does not capture the FCRL4/FCRL5 defining surface markers, CD27-negativity, tissue restriction to sub-epithelial mucosal lymphoid niches, CD21-low phenotype, or the hyporesponsive functional programme that distinguishes this population from classical memory B cells. Note: a CD27-negative class-switched memory B cell intermediate term placed between CL:0000787 and this proposed term may also be warranted, and is flagged for CL editor consideration. [Verification 2026-07-27: all ontology IDs confirmed against OLS4 — PR:000007443 (Fc receptor-like protein 4), PR:000001314 (Fc receptor-like protein 5), PR:000001013 (integrin alpha-X), UBERON:0002373 (palatine tonsil), GO:0002385 (mucosal immune response); all valid and non-obsolete. Protein-level surface expression (not merely transcript) is documented by antibody/flow-cytometry evidence for all three 'has plasma membrane part' markers: FCRL4 (Ehrhardt 2005, mAb surface staining), CD11c (Yeo 2014, flow), FCRL5 (Carrasco 2021, flow panel). Note: in the King et al. atlas itself detection is transcript/chromatin-level (scRNA/scATAC); protein evidence derives from the cited literature.] [Revised 2026-07-28: de-anchored from palatine tonsil. A broad ASTA tissue-distribution search established this is a general population of secondary lymphoid organs / MALT rather than a palatine-tonsil-specific type; the tonsil is merely the tissue sampled by the atlas. Label and location axiom generalised accordingly (location → mucosa-associated lymphoid tissue, UBERON:0001961). [Revised 2026-07-28: made HUMAN-SPECIFIC per curator decision. The defining FCRL4/FCRL5 markers are members of the Fc receptor-like family that lack clean 1:1 mouse orthologs, so the generic 'gene or 1:1 ortholog' PR semantics are inappropriate here. Marker axioms switched to human PR terms (FCRL4 PR:Q96PJ5, FCRL5 PR:Q96RD9, CD11c PR:P20702) and an 'only in taxon' Homo sapiens (NCBITaxon:9606) restriction added; parent CL:0000787 (memory B cell) kept species-neutral. Label carries the CL '…, human' suffix. All three surface markers independently confirmed at the protein level (not transcript-only).]",
+  "ntr_markdown": "## New term request: FCRL4-positive memory B cell, human\n\n**Proposed label:** FCRL4-positive memory B cell, human\n\n**Definition:** A human memory B cell that expresses Fc receptor-like protein 4 (FCRL4) and Fc receptor-like protein 5 (FCRL5) together with integrin alpha-X (CD11c), and is characteristically CD27-negative, CD21-low, CD38-negative, IgM-negative, and IgD-negative, with class-switched (IgG or IgA) somatically mutated B cell receptors (PMID:16157685). This cell resides in sub-epithelial regions of mucosa-associated lymphoid tissues, particularly the crypt epithelium and perifollicular zones of the palatine tonsil, and is largely absent from blood, bone marrow, and spleen (PMID:18625746). It is hyporesponsive to B cell receptor ligation but retains the capacity to respond to CD40 signals and cytokines, and its antibody repertoire is enriched for commensal microbial reactivity (PMID:29703863, PMID:28756897). FCRL4-positive memory B cells occur throughout mucosa-associated lymphoid tissue (tonsil, Peyer's patches, intestinal lymphoid tissue, mesenteric lymph nodes) and are not restricted to the tonsil (PMID:18625746). All three defining markers are documented at the protein level (cell-surface, by antibody/flow cytometry), not merely as transcripts: FCRL4 (PMID:16157685), CD11c (PMID:24431391), and FCRL5 (PMID:34745084). FCRL4 and FCRL5 belong to the Fc receptor-like family, which lacks clean 1:1 mouse orthologs, so this marker-defined cell type is specified as human.\n\n**Parent (is_a):** memory B cell (CL:0000787)\n\n**Anatomical location:** mucosa-associated lymphoid tissue (UBERON:0001961)\n\n**Logical axioms:**\n- `part of` (BFO:0000050) some **mucosa-associated lymphoid tissue** (UBERON:0001961) — Resides within the mucosa-associated lymphoid tissue of secondary lymphoid organs (broad ASTA search: not tonsil-restricted); the source atlas sampled human palatine tonsil.\n- `has plasma membrane part` (RO:0002104) some **Fc receptor-like protein 4 (human)** (PR:Q96PJ5) — FCRL4 surface protein confirmed by monoclonal-antibody flow cytometry (PMID:16157685).\n- `has plasma membrane part` (RO:0002104) some **Fc receptor-like protein 5 (human)** (PR:Q96RD9) — FCRL5 surface protein confirmed by flow cytometry (PMID:34745084).\n- `has plasma membrane part` (RO:0002104) some **integrin alpha-X (human)** (PR:P20702) — CD11c (integrin alpha-X) surface protein confirmed by flow cytometry (PMID:24431391).\n- `capable of part of` (RO:0002216) some **mucosal immune response** (GO:0002385) — These cells reside at mucosal surfaces and their antibody repertoire is biased towards commensal microbial antigens, consistent with participation in mucosal immune homeostasis.\n- `only in taxon` (RO:0002160) some **Homo sapiens** (NCBITaxon:9606) — Human-specific cell type: FCRL4/FCRL5 belong to the FCRL family, which lacks clean 1:1 mouse orthologs, so the term is restricted to Homo sapiens (CL '…, human' pattern; parent CL:0000787 remains species-neutral).\n\n**Synonyms:**\n- atypical memory B cell (related)\n- tissue-based memory B cell (related)\n- tissue-like memory B cell (related)\n- FCRL4/5-positive memory B cell (exact)\n- FcRH4-positive memory B cell (exact)\n- CD21-low atypical memory B cell (narrow)\n\n**References:**\n- Ehrhardt et al. (2005). DOI: 10.1084/jem.20050879 ; PMID:16157685 — Original description of FCRL4+ (FcRH4+) tissue-based memory B cell population in human tonsil; defining markers FCRL4, CD11c, CD27-negativity, class-switched BCR; sub-epithelial localisation.\n- Ehrhardt et al. (2008). DOI: 10.1084/jem.20072682 ; PMID:18625746 — Anatomical distribution: crypt epithelium and perifollicular regions of palatine tonsil, intestinal lymphoid tissues, mesenteric lymph nodes; absence from blood, bone marrow, spleen.\n- Karnell et al. (2017). DOI: 10.1016/j.cellimm.2017.05.008 ; PMID:28756897 — Functional characterisation: hyporesponsiveness to BCR ligation, retained response to CD40/cytokine signals; class-switched (90% IgG/IgA) BCR; synonym 'tissue-like memory B cell'.\n- Liu et al. (2018). DOI: 10.4049/jimmunol.1701549 ; PMID:29703863 — FCRL4 as low-affinity IgA receptor with immunoregulatory potential; antibody repertoire enriched for commensal microbial reactivity.\n- Jourdan et al. (2017). DOI: 10.1371/journal.pone.0179793 ; PMID:28636654 — Characterisation of FCRL4+ B cells including reduced plasma cell differentiation potential; sub-epithelial localisation in lymphoid tissues.\n- Gjertsson et al. (2022). DOI: 10.1093/cei/uxac103 ; PMID:36380692 — Consensus surface phenotype CD27-negative, IgD-negative, CD38-negative, CD11c-positive, FCRL4-positive; ~10% of tonsillar B cells, <0.5% in peripheral blood/bone marrow/spleen.\n- King et al. (2021). DOI: 10.1126/sciimmunol.abh3768 ; PMID:34623901 — Atlas source paper — FCRL4/5+ label in Azimuth human_tonsil_v2 reference dataset.\n\n**Justification:** No CL term exists for FCRL4-positive atypical/tissue-based memory B cells or any CD27-negative class-switched memory B cell subset. The nearest candidate, CL:0000972 ('class switched memory B cell'), explicitly requires CD27-positive surface expression in its definition, which directly contradicts the defining CD27-negative phenotype of FCRL4+ cells. Although FCRL4/5+ cells are class-switched (IgG/IgA), assigning CL:0000972 as parent would misrepresent a core biological feature. CL:0000787 ('memory B cell') is the correct direct parent: FCRL4/5+ cells satisfy core memory B cell criteria (antigen-experienced, long-lived, high-affinity somatically mutated Ig, CD19-positive, CD20-high, CD138-negative) but the existing term does not capture the FCRL4/FCRL5 defining surface markers, CD27-negativity, tissue restriction to sub-epithelial mucosal lymphoid niches, CD21-low phenotype, or the hyporesponsive functional programme that distinguishes this population from classical memory B cells. Note: a CD27-negative class-switched memory B cell intermediate term placed between CL:0000787 and this proposed term may also be warranted, and is flagged for CL editor consideration. [Verification 2026-07-27: all ontology IDs confirmed against OLS4 — PR:000007443 (Fc receptor-like protein 4), PR:000001314 (Fc receptor-like protein 5), PR:000001013 (integrin alpha-X), UBERON:0002373 (palatine tonsil), GO:0002385 (mucosal immune response); all valid and non-obsolete. Protein-level surface expression (not merely transcript) is documented by antibody/flow-cytometry evidence for all three 'has plasma membrane part' markers: FCRL4 (Ehrhardt 2005, mAb surface staining), CD11c (Yeo 2014, flow), FCRL5 (Carrasco 2021, flow panel). Note: in the King et al. atlas itself detection is transcript/chromatin-level (scRNA/scATAC); protein evidence derives from the cited literature.] [Revised 2026-07-28: de-anchored from palatine tonsil. A broad ASTA tissue-distribution search established this is a general population of secondary lymphoid organs / MALT rather than a palatine-tonsil-specific type; the tonsil is merely the tissue sampled by the atlas. Label and location axiom generalised accordingly (location → mucosa-associated lymphoid tissue, UBERON:0001961). [Revised 2026-07-28: made HUMAN-SPECIFIC per curator decision. The defining FCRL4/FCRL5 markers are members of the Fc receptor-like family that lack clean 1:1 mouse orthologs, so the generic 'gene or 1:1 ortholog' PR semantics are inappropriate here. Marker axioms switched to human PR terms (FCRL4 PR:Q96PJ5, FCRL5 PR:Q96RD9, CD11c PR:P20702) and an 'only in taxon' Homo sapiens (NCBITaxon:9606) restriction added; parent CL:0000787 (memory B cell) kept species-neutral. Label carries the CL '…, human' suffix. All three surface markers independently confirmed at the protein level (not transcript-only).]\n\n_Source: Azimuth human_tonsil_v2 fine label; atlas King et al. 2021 (DOI 10.1126/sciimmunol.abh3768). Draft for review — not yet submitted._\n"
+}

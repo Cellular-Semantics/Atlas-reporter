@@ -1,0 +1,115 @@
+[
+  {
+    "corpus_id": "231841440",
+    "title": "Stepwise Tfh cell differentiation revisited: new advances and long-standing questions",
+    "authors": ["Andrew R Schroeder", "Fangming Zhu", "Hui Hu"],
+    "year": 2021,
+    "doi": "10.12703/r/10-3",
+    "source_method": "asta_snippet",
+    "summary": "Review framing Tfh differentiation as a multi-step process in which activated CD4+ T cells upregulate CXCR5 as CXCR5+ precursor Tfh (pre-Tfh) cells, a subset of which enter B-cell follicles to become GC-Tfh while others take a different (memory) fate. Supports the identity of the atlas 'preT follicular helper' label as the pre-Tfh intermediate. Markers here (CXCR5) are discussed as transcript/receptor expression.",
+    "quotes": [
+      "it is still not fully understood how a subset of activated CD4+ T cells begin to express CXCR5 during the early stage of the response and, shortly after, how some CXCR5+ precursor Tfh (pre-Tfh) cells enter B cell follicles and differentiate further into germinal center Tfh (GC-Tfh) cells while others have a different fate"
+    ]
+  },
+  {
+    "corpus_id": "282168625",
+    "title": "Follicular helper T cells (Tfh): heterogeneity in spatial distribution and phenotypic characteristics",
+    "authors": ["C. Shen", "Qiong Fu"],
+    "year": 2025,
+    "doi": "10.3389/fimmu.2025.1686687",
+    "source_method": "asta_snippet",
+    "summary": "Describes Tfh fate as primed at the T:B border of secondary lymphoid organs, with BCL6-driven commitment. Newly committed pre-Tfh upregulate CXCR5 and downregulate CCR7, then migrate along a CXCL13 gradient into the follicle. This directly supports the location (T:B border / follicle) and the CXCR5-intermediate/CCR7+ transitional phenotype of the atlas cell type. CXCR5, CCR7 and EBI2 discussed as chemokine receptors (protein/transcript).",
+    "quotes": [
+      "Tfh cell fate is primed at the T-B border of secondary lymphoid organs.",
+      "Upon upregulating CXCR5 and downregulating the T-zone homing receptor CCR7, newly committed pre-Tfh cells migrate towards the CXCL13 chemokine gradient into the follicle and mature into GC-Tfh (14-16). The initial positioning of pre-Tfh within GC is regulated by a balance of CXCR5, CCR7, and EBI2 signaling (17)."
+    ]
+  },
+  {
+    "corpus_id": "278350306",
+    "title": "Advances and challenges in identifying precursors of memory CD4+ T cells",
+    "authors": ["Jianguo Liu", "Wengang Song", "Hua Tang"],
+    "year": 2025,
+    "doi": "10.3389/fimmu.2025.1540045",
+    "source_method": "asta_snippet",
+    "summary": "Reviews the spatial/receptor logic connecting pre-Tfh to memory. CXCR5 positions pre-Tfh at the T:B border and enables follicle entry; PD-1 upregulation promotes GC-territory accumulation; CCR7 retains cells in the T-cell zone and inhibits Tfh differentiation even when CXCR5 is co-expressed. This underpins the 'central-memory-phenotype pre-Tfh' interpretation: a CXCR5+CCR7+ cell poised between T-zone retention and follicular commitment. Receptors discussed at expression/positioning level (protein).",
+    "quotes": [
+      "Expression of CXCR5, which facilitates positioning of pre-Tfh cells at T:B border and entry into follicle to appropriately interact with B cells, is essential for further GC-Tfh and Tfh memory cell differentiation",
+      "CCR7 expression retains activated CD4 + T cells in T cell zone and thus inhibits their differentiation towards Tfh fate, despite co-expression of CXCR5"
+    ]
+  },
+  {
+    "corpus_id": "259188599",
+    "title": "Spatiotemporal resolution of germinal center Tfh cell differentiation and divergence from central memory CD4+ T cell fate",
+    "authors": ["Fangming Zhu", "R. McMonigle", "Andrew R Schroeder", "Hui Hu"],
+    "year": 2023,
+    "doi": "10.1038/s41467-023-39299-3",
+    "source_method": "asta_snippet",
+    "summary": "Directly addresses the fate bifurcation implied by the atlas label 'central memory ... preT follicular helper'. PD-1+CXCR5+ pre-Tfh cells either transition to GC-Tfh (marked by sustained Tigit) or upregulate IL-7Ra to become CXCR5+ memory CD4+ T cells with or without CCR7 — i.e. a central-memory-like fate. Markers cited here are transcript/chromatin-level (PD-1, CXCR5, Bcl6, Tigit, IL-7Ra) from mouse single-cell/ATAC data.",
+    "quotes": [
+      "the sustained Tigit expression in PD-1+CXCR5+CD4+ T cells marks the precursor Tfh (pre-Tfh) to GC-Tfh transition, whereas Tigit–PD-1+CXCR5+CD4+ T cells upregulate IL-7Rα to become CXCR5+CD4+ T memory cells with or without CCR7",
+      "our work identifies an important marker and regulatory mechanism of PD-1+CXCR5+CD4+ T cells during their developmental choice between memory T cell fate and GC-Tfh cell differentiation"
+    ]
+  },
+  {
+    "corpus_id": "199637112",
+    "title": "Neonatal T Follicular Helper Cells Are Lodged in a Pre-T Follicular Helper Stage Favoring Innate Over Adaptive Germinal Center Responses",
+    "authors": ["Béatris Mastelic-Gavillet", "M. Vono", "C.-A. Siegrist"],
+    "year": 2019,
+    "doi": "10.3389/fimmu.2019.01845",
+    "source_method": "asta_snippet",
+    "summary": "Characterises the pre-Tfh stage as a distinct, incompletely-committed developmental state defined by a multi-signal program (CXCR5, IL-21, Bcl6, Ascl2, c-maf). Ascl2 drives CXCR5 and suppresses CCR7 to control follicular localisation; CXCR5 enables migration into follicles and stable B-cell contacts. Supports marker set and the transitional nature of the atlas cell type. Markers here are gene-expression (transcript) measurements.",
+    "quotes": [
+      "T fh cells differentiation involves a multisignal process that includes expression of CXCR5, IL-21, Bcl6, TBK1, STAT4, Ascl2, and c-maf",
+      "Ascl2 directly regulates the localization of T fh cells via CXCR5 expression and suppression of CCR7 and PSGL1"
+    ]
+  },
+  {
+    "corpus_id": "9578811",
+    "title": "Cxc Chemokine Receptor 5 Expression Defines Follicular Homing T Cells with B Cell Helper Function",
+    "authors": ["P. Schaerli", "K. Willimann", "M. Lipp", "B. Moser"],
+    "year": 2000,
+    "doi": "10.1084/jem.192.11.1553",
+    "source_method": "asta_snippet",
+    "summary": "Foundational tonsil study showing that essentially all CD4+ memory T cells in human tonsil are CXCR5+ and express activation markers (CD69, HLA-DR, ICOS), with strong downregulation of CCR7 and CD62L, consistent with recent tissue entry and follicular homing. Directly relevant to the adult palatine-tonsil context and the CXCR5/CCR7 receptor logic of the atlas cell type. Markers measured at cell-surface (protein) level.",
+    "quotes": [
+      "Practically all (Ͼ95%) CD4 ϩ memory T cells in tonsils are CXCR5 ϩ and the majority express activation markers (CD69, HLA-DR, ICOS) suggesting their engagement in B cell activation. Drastic reduction in cell surface CCR7 and CD62L indicates that the majority of local CXCR5 ϩ T cells have recently entered the tonsillar tissue"
+    ]
+  },
+  {
+    "corpus_id": "215778799",
+    "title": "Memory T Follicular Helper CD4 T Cells",
+    "authors": ["J. Hale", "R. Ahmed"],
+    "year": 2015,
+    "doi": "10.3389/fimmu.2015.00016",
+    "source_method": "asta_snippet",
+    "summary": "Reviews the memory Tfh concept and the distinction between activated tonsillar CXCR5+CD4+ T cells (CD69+HLA-DR+ICOS+) and resting circulating CXCR5+ cells (CD69-HLA-DR-ICOS-) proposed to be memory Tfh. Supports the 'central-memory-phenotype' component of the atlas label. Activation markers here are cell-surface (protein) phenotypes.",
+    "quotes": [
+      "unlike the activated tonsillar CXCR5+ CD4 T cells that were CD69+HLA-DR+ICOS+, circulating CXCR5+ cells in human blood are CD69−HLA-DR− ICOS−, and hypothesized that these blood CXCR5+ cells represent memory Tfh cells"
+    ]
+  },
+  {
+    "corpus_id": "9195782",
+    "title": "Germinal center B cell and T follicular helper cell development initiates in the inter-follicular zone",
+    "authors": ["Steven M. Kerfoot", "David G. Gonzalez", "A. Haberman"],
+    "year": 2011,
+    "doi": "10.1016/j.immuni.2011.03.024",
+    "source_method": "asta_snippet",
+    "summary": "Shows that Tfh differentiation initiates in the interfollicular/T:B border zone, where responding T cells upregulate Bcl6 and acquire CXCR5, PD-1 and GL7 before migrating into the follicle; the full PD-1hi ICOShi GL7hi GC-Tfh phenotype requires cognate B cells. Grounds the location (T:B border) and the pre-Tfh-to-GC-Tfh maturation gradient (PD-1, ICOS as maturation markers). Markers are protein-level (flow/immunofluorescence).",
+    "quotes": [
+      "T cells also acquired the Tfh cell markers CXCR5, PD-1 and GL7.",
+      "Ag-specific B cells are required for the maintenance of the PD-1hi ICOShi GL7hi Tfh cell phenotype within the follicle, but not for their initial differentiation in the IF zone."
+    ]
+  },
+  {
+    "corpus_id": "202024848",
+    "title": "CD4+ T follicular helper (Tfh) cells in human tonsil and blood are clonally convergent, but divergent from non-Tfh CD4+ cells",
+    "authors": ["Elena Brenna", "D. Price", "P. Borrow", "A. McMichael"],
+    "year": 2019,
+    "doi": "10.1101/743187",
+    "source_method": "asta_snippet",
+    "summary": "Donor-matched TCR-repertoire study of human tonsil and blood showing clonal convergence between tonsillar GC-Tfh, tonsillar CXCR3- Tfh and blood CXCR5+PD-1+ circulating Tfh, consistent with a shared precursor relationship. Relevant to the adult tonsil context and the idea that pre-Tfh/central-memory Tfh precursors interconnect tissue and circulation. Markers (CXCR5, PD-1, CXCR3) are surface-protein sorting phenotypes.",
+    "quotes": [
+      "our analysis of donormatched tissues directly demonstrates that the same Tfh clones are present in both tonsil and the blood CXCR5 + PD-1 + cTfh compartment"
+    ]
+  }
+]

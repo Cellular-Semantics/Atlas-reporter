@@ -1,0 +1,52 @@
+{
+  "cell_type_label": "TRDV2(Vδ2)-positive gamma-delta T cell (Vγ9Vδ2) with MAIT-like innate features (atlas conflates MAIT/γδ; true lineage γδ). Curator parent: CL:0000798 (gamma-delta T cell).",
+  "working_definition": "A mature gamma-delta T cell found in adult palatine tonsil that expresses the Vδ2 TCR delta chain (TRDV2) paired almost exclusively with the Vγ9 chain (TRGV9), forming the canonical Vγ9Vδ2 receptor. These cells are innate-like effectors activated by non-peptidic phosphoantigens through butyrophilin BTN3A1/BTN2A1 rather than by peptide-MHC, and they co-express MAIT-associated innate markers (e.g. CD161/KLRB1). On activation they mount rapid cytotoxicity (perforin, granzymes, FasL) and pro-inflammatory cytokine secretion (IFN-γ, TNF-α). The atlas label 'MAIT/TRDV2+' conflates two lineages; the true lineage is gamma-delta, not MR1-restricted alpha-beta MAIT.",
+  "searches_performed": [
+    "Vdelta2 gamma-delta T cell",
+    "Vgamma9Vdelta2 T cell",
+    "phosphoantigen reactive gamma-delta T cell",
+    "gamma-delta T cell",
+    "innate T cell",
+    "TRDV2 T cell",
+    "butyrophilin T cell",
+    "innate-like T cell",
+    "Vdelta2 T cell"
+  ],
+  "best_match": {
+    "cl_term": "gamma-delta T cell",
+    "cl_id": "CL:0000798",
+    "cl_definition": "A T cell that expresses a gamma-delta T cell receptor complex.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000798 defines any T cell expressing a gamma-delta TCR complex. The atlas cell type is definitively a gamma-delta T cell (defined by TRDV2/TRGV9 expression) and therefore falls squarely within this class. However, CL:0000798 is too broad: it does not capture the specific Vγ9Vδ2 receptor combination, the phosphoantigen/butyrophilin activation mechanism, the co-expression of MAIT-associated innate markers (CD161), or the cytotoxic effector programme. No more specific CL term exists for the Vγ9Vδ2 subset — CL:0020001 covers Vδ1 (wrong chain), CL:0002124 (CD27-positive gamma-delta T cell) is defined by a surface phenotype marker without specifying the Vγ9Vδ2 receptor, and no phosphoantigen-reactive or butyrophilin-reactive gamma-delta T cell term was found. The CD27-positive gamma-delta T cell (CL:0002124) overlaps partially — Vγ9Vδ2 cells tend to be CD27-positive and produce IFN-γ — but its definition is not specific to the Vγ9Vδ2 lineage or phosphoantigen reactivity, making it an unreliable match. CL:0000798 is therefore the best available term, classified as a broad match.",
+  "other_candidates": [
+    {
+      "cl_term": "CD27-positive gamma-delta T cell",
+      "cl_id": "CL:0002124",
+      "cl_definition": "A circulating gamma-delta T cell that is CD27-positive and capable of producing IFN-gamma.",
+      "reason_rejected": "Defined only by CD27 surface phenotype and IFN-γ production; does not specify Vγ9Vδ2 TCR, phosphoantigen reactivity, or butyrophilin-mediated activation. Vγ9Vδ2 cells are typically CD27-positive and IFN-γ-producing, giving partial overlap, but the CL definition covers a broader phenotypic category that could include non-Vγ9Vδ2 cells. Not a reliable match."
+    },
+    {
+      "cl_term": "V1delta gamma-delta T cell",
+      "cl_id": "CL:0020001",
+      "cl_definition": "A mature gamma-delta T Cell with T cell receptors consisting of the Vδ1 segment paired with various V gamma chains. This cell is enriched in the gut, skin (Davey et al., 2018) and the female reproductive tract (Wu et al., 2022). It exhibits potent cytotoxic capabilities through perforin/granzyme and death receptor pathways.",
+      "reason_rejected": "Defines the Vδ1 subset (TRDV1), the wrong TCR delta chain. The atlas cell type expresses Vδ2 (TRDV2). Distinct lineage."
+    },
+    {
+      "cl_term": "mature gamma-delta T cell",
+      "cl_id": "CL:0000800",
+      "cl_definition": "A gamma-delta T cell that has a mature phenotype. These cells can be found in tissues and circulation where they express unique TCR repertoire depending on their location.",
+      "reason_rejected": "Slightly more specific than CL:0000798 (adds 'mature phenotype'), but still does not capture Vγ9Vδ2 identity, phosphoantigen reactivity, or innate effector features. Not sufficiently informative for this specific cell type; CL:0000798 is preferred as the recommended broad match because the curator parent annotation targets that level."
+    },
+    {
+      "cl_term": "innate effector T cell",
+      "cl_id": "CL:0002127",
+      "cl_definition": "A T cell with a receptor of limited diversity that is capable of immediate effector functions upon stimulation.",
+      "reason_rejected": "Captures the innate-like, limited-diversity TCR aspect of Vγ9Vδ2 cells but is not a subclass of gamma-delta T cell — it is a broader functional category covering MAIT cells, NKT cells, and other unconventional T cells. Using this term would obscure the gamma-delta lineage identity, which is the primary biological classification."
+    }
+  ],
+  "recommendation": "Use CL:0000798 (gamma-delta T cell) as a broad match parent. File a new term request for a Vγ9Vδ2 T cell (or 'Vδ2 gamma-delta T cell') in the Cell Ontology. The new term should be a child of CL:0000798 (or CL:0000800 mature gamma-delta T cell), defined by: expression of a TCR comprising the Vδ2 (TRDV2) and Vγ9 (TRGV9) chains; activation by non-peptidic phosphoantigens via the butyrophilin BTN3A1/BTN2A1 complex; innate effector function including cytotoxicity (perforin, granzymes, FasL) and rapid IFN-γ and TNF-α secretion. The existing Vδ1 term (CL:0020001) provides a precedent for this level of TCR-chain-defined specificity.",
+  "new_term_needed": true
+}

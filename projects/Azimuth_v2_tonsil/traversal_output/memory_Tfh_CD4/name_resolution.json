@@ -1,0 +1,14 @@
+{
+  "label": "CD4-positive, alpha-beta memory follicular helper T cell",
+  "resolved_names": [
+    "memory T follicular helper cell",
+    "memory Tfh cell",
+    "CXCR5+ memory Tfh cell",
+    "T follicular helper (Tfh) cell"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil (B-cell follicle)",
+  "confidence": "high",
+  "evidence": "Azimuth human_tonsil_v2 fine label (order 51) built on King HW et al. 2021 Sci Immunol (DOI 10.1126/sciimmunol.abh3768, PMID 34623901). The label denotes a memory-phenotype CD4+ alpha-beta T follicular helper (Tfh) cell. Tfh identity (CXCR5, PD-1, ICOS, BCL6; follicle/germinal-centre localisation) and the existence of a persisting CXCR5+ memory Tfh compartment are well established in the human tonsil literature (Schaerli et al. 2000; Brenna et al. 2020; Hale & Ahmed 2015; Asrir et al. 2017)."
+}

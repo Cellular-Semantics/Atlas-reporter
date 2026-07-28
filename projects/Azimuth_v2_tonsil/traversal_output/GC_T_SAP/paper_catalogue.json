@@ -1,0 +1,92 @@
+{
+  "238530091": {
+    "corpus_id": "238530091",
+    "first_author": "King",
+    "authors": "Hamish W. King, Kristen L. Wells, Zohar Shipony, Arwa S. Kathiria, Lisa E. Wagar, C. Lareau, N. Orban, R. Capasso, Mark M. Davis, L. Steinmetz, L. James, W. Greenleaf",
+    "year": 2021,
+    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.abh3768",
+    "pmid": "34623901"
+  },
+  "4426610": {
+    "corpus_id": "4426610",
+    "first_author": "Qi",
+    "authors": "Hai Qi, Jennifer L Cannons, Frederick Klauschen, P. Schwartzberg, R. Germain",
+    "year": 2008,
+    "title": "SAP-controlled T-B cell interactions underlie germinal centre formation",
+    "journal": "Nature",
+    "doi": "10.1038/nature07345",
+    "pmid": "18843362"
+  },
+  "19569943": {
+    "corpus_id": "19569943",
+    "first_author": "Roncador",
+    "authors": "G. Roncador, J.-F. García Verdes-Montenegro, S. Tedoldi, J. Paterson, W. Klapper, E. Ballabio, L. Maestre, S. Pileri, M. Hansmann, M. Piris, D. Mason, T. Marafioti",
+    "year": 2007,
+    "title": "Expression of two markers of germinal center T cells (SAP and PD-1) in angioimmunoblastic T-cell lymphoma.",
+    "journal": "Haematologica",
+    "doi": "10.3324/HAEMATOL.10864",
+    "pmid": "17640856"
+  },
+  "7795066": {
+    "corpus_id": "7795066",
+    "first_author": "Hu",
+    "authors": "Joyce K. Hu, C. Havenar-Daughton, Shane Crotty",
+    "year": 2013,
+    "title": "Modulation of SAP dependent T:B cell interactions as a strategy to improve vaccination",
+    "journal": "Current Opinion in Virology",
+    "doi": "10.1016/j.coviro.2013.05.015",
+    "pmid": "23743125"
+  },
+  "25353658": {
+    "corpus_id": "25353658",
+    "first_author": "Yusuf",
+    "authors": "I. Yusuf, R. Kageyama, L. Monticelli, R. Johnston, D. DiToro, K. Hansen, Burton E. Barnett, Shane Crotty",
+    "year": 2010,
+    "title": "Germinal Center T Follicular Helper Cell IL-4 Production Is Dependent on Signaling Lymphocytic Activation Molecule Receptor (CD150)",
+    "journal": "Journal of Immunology",
+    "doi": "10.4049/jimmunol.0903505",
+    "pmid": "20525889"
+  },
+  "233260455": {
+    "corpus_id": "233260455",
+    "first_author": "Gartshteyn",
+    "authors": "Y. Gartshteyn, A. Askanase, A. Mor",
+    "year": 2021,
+    "title": "SLAM Associated Protein Signaling in T Cells: Tilting the Balance Toward Autoimmunity",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.654839",
+    "pmid": "33936082"
+  },
+  "8002879": {
+    "corpus_id": "8002879",
+    "first_author": "Cannons",
+    "authors": "Jennifer L Cannons, Hai Qi, Kristina T. Lu, Mala Ghai, J. Gomez-Rodriguez, Jun Cheng, E. Wakeland, R. Germain, P. Schwartzberg",
+    "year": 2010,
+    "title": "Optimal Germinal Center Responses Require A Multi-stage T:B Cell Adhesion Process Involving Integrins, SLAM-associated protein and CD84",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2010.01.010",
+    "pmid": "20153220"
+  },
+  "24766720": {
+    "corpus_id": "24766720",
+    "first_author": "Kageyama",
+    "authors": "R. Kageyama, Jennifer L Cannons, Fang Zhao, I. Yusuf, Christopher Lao, M. Locci, P. Schwartzberg, Shane Crotty",
+    "year": 2012,
+    "title": "The receptor Ly108 functions as a SAP adaptor dependent on-off switch for T cell help to B cells and NKT cell development",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2012.05.016",
+    "pmid": "22683125"
+  },
+  "279371793": {
+    "corpus_id": "279371793",
+    "first_author": "Li",
+    "authors": "Jiaxun Li, Luyu Lv, Qingqing Wei, Wenpeng Pang, Chunjuan He, Hao Wu, Liping Guo",
+    "year": 2025,
+    "title": "X-linked lymphoproliferative disease type 1: a clinical and genetic update",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2025.1620327",
+    "pmid": "40574867"
+  }
+}

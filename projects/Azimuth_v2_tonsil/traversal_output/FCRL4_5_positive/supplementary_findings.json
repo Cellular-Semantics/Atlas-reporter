@@ -1,0 +1,6 @@
+{
+  "markers": [],
+  "other_findings": [],
+  "evidence_quotes": [],
+  "note": "No supplementary material was retrievable: get_pmc_supplemental_material(PMC8859880) returned 'No Supplementary Material is available' (paper is not fully open access) and get_europepmc_full_text returned empty. No local snippet index exists for this project. Marker/function evidence was therefore gathered entirely via ASTA snippet_search across the literature and is recorded in all_summaries.json."
+}

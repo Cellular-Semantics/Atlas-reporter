@@ -1,0 +1,6 @@
+{
+  "markers": [],
+  "other_findings": [],
+  "evidence_quotes": [],
+  "note": "no PMC supplement fetched for this run; evidence derived entirely from ASTA snippet_search over the broader germinal-center literature. Marker-level evidence (CXCR4, CD83, CD86, AID/AICDA, Ki67, CD27, CXCL12) is captured in all_summaries.json."
+}

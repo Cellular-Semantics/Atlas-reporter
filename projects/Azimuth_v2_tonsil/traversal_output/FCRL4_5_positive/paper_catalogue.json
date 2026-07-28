@@ -1,0 +1,92 @@
+{
+  "238530091": {
+    "corpus_id": "238530091",
+    "first_author": "King HW",
+    "authors": "King HW, Wells KL, Shipony Z, Kathiria AS, Wagar LE, Lareau C, Orban N, Capasso R, Davis MM, Steinmetz LM, James LK, Greenleaf WJ",
+    "year": 2021,
+    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "journal": "Science Immunology",
+    "doi": "10.1126/sciimmunol.abh3768",
+    "pmid": "PMID:34623901"
+  },
+  "6857301": {
+    "corpus_id": "6857301",
+    "first_author": "Ehrhardt GRA",
+    "authors": "Ehrhardt GRA, Hsu JT, Gartland L, Leu CM, Zhang S, Davis RS, Cooper MD",
+    "year": 2005,
+    "title": "Expression of the immunoregulatory molecule FcRH4 defines a distinctive tissue-based population of memory B cells",
+    "journal": "Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20050879",
+    "pmid": "PMID:16157685"
+  },
+  "6047083": {
+    "corpus_id": "6047083",
+    "first_author": "Ehrhardt GRA",
+    "authors": "Ehrhardt GRA, Hijikata A, Kitamura H, Ohara O, Wang JY, Cooper MD",
+    "year": 2008,
+    "title": "Discriminating gene expression profiles of memory B cell subpopulations",
+    "journal": "Journal of Experimental Medicine",
+    "doi": "10.1084/jem.20072682",
+    "pmid": "PMID:18625746"
+  },
+  "19074444": {
+    "corpus_id": "19074444",
+    "first_author": "Liu Y",
+    "authors": "Liu Y, McDaniel JR, Khan S, Campisi P, Propst EJ, Holler T, Grunebaum E, Georgiou G, Ippolito GC, Ehrhardt GRA",
+    "year": 2018,
+    "title": "Antibodies encoded by FCRL4-bearing memory B cells preferentially recognize commensal microbial antigens",
+    "journal": "Journal of Immunology",
+    "doi": "10.4049/jimmunol.1701549",
+    "pmid": "PMID:29703863"
+  },
+  "5242905": {
+    "corpus_id": "5242905",
+    "first_author": "Karnell JL",
+    "authors": "Karnell JL, Kumar V, Wang J, Wang S, Voynova E, Ettinger R",
+    "year": 2017,
+    "title": "Role of CD11c+ T-bet+ B cells in human health and disease",
+    "journal": "Cellular Immunology",
+    "doi": "10.1016/j.cellimm.2017.05.008",
+    "pmid": "PMID:28756897"
+  },
+  "212346": {
+    "corpus_id": "212346",
+    "first_author": "Jourdan M",
+    "authors": "Jourdan M, Robert N, Cren M, Thibaut C, Duperray C, Kassambara A, Cogné M, Tarte K, Klein B, Moreaux J",
+    "year": 2017,
+    "title": "Characterization of human FCRL4-positive B cells",
+    "journal": "PLoS ONE",
+    "doi": "10.1371/journal.pone.0179793",
+    "pmid": "PMID:28636654"
+  },
+  "253552748": {
+    "corpus_id": "253552748",
+    "first_author": "Gjertsson I",
+    "authors": "Gjertsson I, McGrath S, Grimstad K, Jonsson CA, Camponeschi A, Thorarinsdottir K, Mårtensson IL",
+    "year": 2022,
+    "title": "A close-up on the expanding landscape of CD21-/low B cells in humans",
+    "journal": "Clinical and Experimental Immunology",
+    "doi": "10.1093/cei/uxac103",
+    "pmid": "PMID:36380692"
+  },
+  "9316411": {
+    "corpus_id": "9316411",
+    "first_author": "Yeo L",
+    "authors": "Yeo L, Lom H, Juarez M, Snow M, Buckley CD, Filer A, Raza K, Scheel-Toellner D",
+    "year": 2014,
+    "title": "Expression of FcRL4 defines a pro-inflammatory, RANKL-producing B cell subset in rheumatoid arthritis",
+    "journal": "Annals of the Rheumatic Diseases",
+    "doi": "10.1136/annrheumdis-2013-204116",
+    "pmid": "PMID:24431391"
+  },
+  "239054826": {
+    "corpus_id": "239054826",
+    "first_author": "Carrasco A",
+    "authors": "Carrasco A, Sjölander I, Van Acker A, Dernstedt A, Fehrm J, Forsell M, Friberg D, Mjösberg J, Rao A",
+    "year": 2021,
+    "title": "The Tonsil Lymphocyte Landscape in Pediatric Tonsil Hyperplasia and Obstructive Sleep Apnea",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.674080",
+    "pmid": "PMID:34745084"
+  }
+}

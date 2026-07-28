@@ -1,0 +1,31 @@
+{
+  "cell_type_label": "germinal center light-zone T follicular helper cell",
+  "working_definition": "A CD4+ T follicular helper cell positioned specifically in the germinal center light zone of adult secondary lymphoid organs (palatine tonsil), defined by CXCR5-hi, PD-1-hi, BCL6-hi, and ICOS-hi expression. Its defining function is to deliver survival and selection signals to centrocytes during affinity maturation by recognising antigen-loaded peptide-MHCII presented by GC B cells in the light zone.",
+  "searches_performed": [
+    "germinal center light-zone T follicular helper cell",
+    "germinal center T cell",
+    "T follicular helper cell",
+    "light zone T follicular helper cell",
+    "germinal center light zone follicular helper",
+    "GC-Tfh CXCR5 BCL6 germinal center"
+  ],
+  "best_match": {
+    "cl_term": "germinal center T cell",
+    "cl_id": "CL:0009062",
+    "cl_definition": "A specialized type of CD4 positive T cell, the follicular helper T cell (TFH cell), that upregulates CXCR5 expression to enable its follicular localization. These specialised T cells reside in the germinal center of the lymph node.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0009062 'germinal center T cell' is defined as a CD4+ TFH cell that upregulates CXCR5 and resides in the germinal center — matching the lineage, CXCR5 marker, and GC location of the atlas cell type. However, the CL definition does not distinguish between dark-zone and light-zone GC-Tfh cells; it covers all GC-resident TFH cells. The atlas cell type is specifically the light-zone GC-Tfh population, whose distinguishing features — positioning in the selection compartment where it delivers centrocyte help via pMHCII recognition, with PD-1-hi and ICOS-hi expression marking the most mature GC-Tfh state — are not captured by CL:0009062. The atlas cell IS-A germinal center T cell but is a more specific sub-state defined by its light-zone location and selection-delivering function. A broad match is therefore correct. CL:0002038 'T follicular helper cell' (the parent of CL:0009062) is even broader and was rejected in favour of CL:0009062. No light-zone-specific CL term exists.",
+  "other_candidates": [
+    {
+      "cl_term": "T follicular helper cell",
+      "cl_id": "CL:0002038",
+      "cl_definition": "A CD4-positive, CXCR5-positive, CCR7-negative alpha-beta T cell located in follicles of secondary lymph nodes that is BCL6-high, ICOS-high and PD1-high, and stimulates follicular B cells to undergo class-switching and antibody production.",
+      "reason_rejected": "Parent term of CL:0009062 and covers all follicular Tfh cells regardless of germinal center entry or intra-GC sub-compartment (dark vs light zone). CL:0009062 is a better (more specific) broad match because it additionally restricts to the GC itself, which is the defining location of the atlas cell type."
+    }
+  ],
+  "recommendation": "Use CL:0009062 (germinal center T cell) as a broad match. A new CL term is needed for the light-zone GC-Tfh cell: a child of CL:0009062 restricted to the germinal center light zone, characterised by CXCR5-hi, PD-1-hi, BCL6-hi, ICOS-hi expression and the function of selecting centrocytes via pMHCII recognition during affinity maturation.",
+  "new_term_needed": true
+}
