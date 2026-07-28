@@ -1,0 +1,14 @@
+{
+  "label": "FDCSP epithelium",
+  "resolved_names": [
+    "FDCSP epithelium",
+    "FDCSP-expressing epithelial cell",
+    "FDCSP+ tonsillar crypt epithelial subpopulation"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil, epithelial compartment; an FDCSP-expressing subpopulation of the tonsillar (crypt) epithelium overlapping the keratinocyte populations of the oral mucosa",
+  "confidence": "high",
+  "evidence": "Massoni-Badosa et al. 2024 (An atlas of cells in the human tonsil, Immunity, CorpusId:250093999) explicitly name this cluster 'FDCSP epithelium': in the epithelial compartment they identified three clusters overlapping oral-mucosa keratinocytes, one of which expressed FDCSP and was annotated 'FDCSP epithelium'. The atlas states FDCSP was first described in FDC and in 'leukocyte-infiltrated tonsillar crypts' and that FDCSP-expressing cells represent a specific subpopulation of the tonsillar epithelium. KRTDAP is a keratinocyte-differentiation-associated marker of stratified squamous / oral-mucosa epithelium consistent with this compartment. Atlas reference is the Azimuth human_tonsil_v2 reference.",
+  "vegfa_mislabel_note": "CURATOR FLAG: In the working cl_map this cluster (cl_map_order 231) is recorded with the label 'VEGFA+'. This is a MISNOMER. VEGFA is NOT an atlas-defined marker of this cluster. The Massoni-Badosa 2024 atlas defines this epithelial cluster by FDCSP expression (annotation name 'FDCSP epithelium'), with KRTDAP consistent with its oral-mucosa/keratinocyte identity. 'VEGFA+' should be treated as an alias/mislabel for the FDCSP epithelium cluster and corrected; the existing traversal_output/epithelial_VEGFA directory corresponds to the same cluster under the mislabel."
+}

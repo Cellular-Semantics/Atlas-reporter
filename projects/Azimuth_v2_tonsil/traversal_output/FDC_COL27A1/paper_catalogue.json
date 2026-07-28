@@ -2,7 +2,11 @@
   "235231063": {
     "corpus_id": "235231063",
     "first_author": "Lütge",
-    "authors": ["M. Lütge", "N. Pikor", "B. Ludewig"],
+    "authors": [
+      "M. Lütge",
+      "N. Pikor",
+      "B. Ludewig"
+    ],
     "year": 2021,
     "title": "Differentiation and activation of fibroblastic reticular cells",
     "journal": "Immunological Reviews",
@@ -12,7 +16,20 @@
   "218682842": {
     "corpus_id": "218682842",
     "first_author": "Pikor",
-    "authors": ["N. Pikor", "U. Mörbe", "M. Lütge", "C. Gil-Cruz", "C. Perez-Shibayama", "M. Novkovic", "Hung-Wei Cheng", "C. Nombela-Arrieta", "T. Nagasawa", "M. Linterman", "L. Onder", "B. Ludewig"],
+    "authors": [
+      "N. Pikor",
+      "U. Mörbe",
+      "M. Lütge",
+      "C. Gil-Cruz",
+      "C. Perez-Shibayama",
+      "M. Novkovic",
+      "Hung-Wei Cheng",
+      "C. Nombela-Arrieta",
+      "T. Nagasawa",
+      "M. Linterman",
+      "L. Onder",
+      "B. Ludewig"
+    ],
     "year": 2020,
     "title": "Remodeling of light and dark zone follicular dendritic cells governs germinal center responses",
     "journal": "Nature Immunology",
@@ -22,7 +39,11 @@
   "244940951": {
     "corpus_id": "244940951",
     "first_author": "Onder",
-    "authors": ["L. Onder", "Hung-Wei Cheng", "B. Ludewig"],
+    "authors": [
+      "L. Onder",
+      "Hung-Wei Cheng",
+      "B. Ludewig"
+    ],
     "year": 2021,
     "title": "Visualization and functional characterization of lymphoid organ fibroblasts",
     "journal": "Immunological Reviews",
@@ -32,7 +53,12 @@
   "233206024": {
     "corpus_id": "233206024",
     "first_author": "Anania",
-    "authors": ["Jessica C. Anania", "A. Westin", "Jeremy Adler", "B. Heyman"],
+    "authors": [
+      "Jessica C. Anania",
+      "A. Westin",
+      "Jeremy Adler",
+      "B. Heyman"
+    ],
     "year": 2021,
     "title": "A Novel Image Analysis Approach Reveals a Role for Complement Receptors 1 and 2 in Follicular Dendritic Cell Organization in Germinal Centers",
     "journal": "Frontiers in Immunology",
@@ -42,7 +68,13 @@
   "6930096": {
     "corpus_id": "6930096",
     "first_author": "Rodda",
-    "authors": ["Lauren B. Rodda", "Oliver Bannard", "B. Ludewig", "T. Nagasawa", "J. Cyster"],
+    "authors": [
+      "Lauren B. Rodda",
+      "Oliver Bannard",
+      "B. Ludewig",
+      "T. Nagasawa",
+      "J. Cyster"
+    ],
     "year": 2015,
     "title": "Phenotypic and morphological properties of germinal center dark zone Cxcl12-expressing reticular cells (CRCs)",
     "journal": "Journal of Immunology",
@@ -52,7 +84,16 @@
   "16241640": {
     "corpus_id": "16241640",
     "first_author": "Jarjour",
-    "authors": ["Meryem Jarjour", "Audrey Jorquera", "I. Mondor", "S. Wienert", "P. Narang", "M. Coles", "Frederick Klauschen", "Marc Bajénoff"],
+    "authors": [
+      "Meryem Jarjour",
+      "Audrey Jorquera",
+      "I. Mondor",
+      "S. Wienert",
+      "P. Narang",
+      "M. Coles",
+      "Frederick Klauschen",
+      "Marc Bajénoff"
+    ],
     "year": 2014,
     "title": "Fate mapping reveals origin and dynamics of lymph node follicular dendritic cells",
     "journal": "The Journal of Experimental Medicine",
@@ -62,7 +103,14 @@
   "246763322": {
     "corpus_id": "246763322",
     "first_author": "Hu",
-    "authors": ["Zongshan Hu", "Yanjie Xu", "Jie Li", "Ze-zhang Zhu", "Y. Qiu", "Zhen Liu"],
+    "authors": [
+      "Zongshan Hu",
+      "Yanjie Xu",
+      "Jie Li",
+      "Ze-zhang Zhu",
+      "Y. Qiu",
+      "Zhen Liu"
+    ],
     "year": 2022,
     "title": "Bioinformatics Analysis and Experimental Verification Identify Downregulation of COL27A1 in Poor Segmental Congenital Scoliosis",
     "journal": "Computational and Mathematical Methods in Medicine",
@@ -72,11 +120,24 @@
   "238530091": {
     "corpus_id": "238530091",
     "first_author": "King",
-    "authors": ["Hamish W. King", "et al."],
+    "authors": [
+      "Hamish W. King",
+      "et al."
+    ],
     "year": 2021,
     "title": "Single-cell analysis of human B cell maturation predicts how antibody class switching shapes selection dynamics",
     "journal": "Science Immunology",
     "doi": "10.1126/sciimmunol.abh3768",
     "pmid": "34623901"
+  },
+  "250093999": {
+    "corpus_id": "250093999",
+    "first_author": "Massoni-Badosa",
+    "authors": "Massoni-Badosa R, Soler-Vila P, Aguilar-Fernández S, et al.",
+    "year": 2024,
+    "title": "An atlas of cells in the human tonsil",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2024.01.006",
+    "pmid": "PMID:38301653"
   }
 }

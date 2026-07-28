@@ -1,0 +1,75 @@
+{
+  "cell_type_label": "epi_surface",
+  "suggested_label": "surface epithelial cell of palatine tonsil",
+  "definition": "A keratinocyte of the lining (surface) stratified squamous epithelium of the palatine tonsil, continuous with the oral mucosa. It expresses the basal keratins KRT5 and KRT14 and undergoes cornification/keratinization to form a protective barrier at the tonsil surface. It is distinguished from the tonsil crypt (reticulated) epithelium, which instead expresses the simple-epithelial keratins KRT8, KRT18 and KRT19. Keratins are intracellular intermediate-filament proteins and are described here as differentiation markers rather than surface antigens.",
+  "parent_term": {
+    "cl_id": "CL:0000312",
+    "cl_term": "keratinocyte"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0013696",
+    "uberon_term": "tonsil epithelium"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "tonsil epithelium",
+      "filler_id": "UBERON:0013696",
+      "notes": "Forms the outer/lining stratified squamous compartment of the tonsil epithelium."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "outer surface epithelial cell of palatine tonsil",
+      "scope": "exact"
+    },
+    {
+      "value": "tonsil surface keratinocyte",
+      "scope": "exact"
+    },
+    {
+      "value": "lining epithelial cell of palatine tonsil",
+      "scope": "related"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1016/j.immuni.2024.01.006",
+      "citation": "Massoni-Badosa et al. (2024)",
+      "supports": "The reference atlas (Azimuth human_tonsil_v2). In the epithelial compartment the authors identified three clusters overlapping the keratinocyte populations of the oral mucosa; one expressed FDCSP (FDCSP epithelium). This places the tonsillar surface/lining epithelial clusters within the oral-mucosa keratinocyte lineage. Evidence here is transcriptomic (scRNA/Multiome cluster annotation).",
+      "pmid": "PMID:38301653"
+    },
+    {
+      "doi": "10.1101/2021.05.03.442542",
+      "citation": "Okda et al. (2021)",
+      "supports": "Human tonsillar epithelial cell (HTEC) cultures + in situ tonsil staining. Uses a keratin antibody panel to distinguish the two epithelial compartments. K5 and K14 mark the surface stratified epithelium; K8/K18 and K19 mark the reticulated crypt epithelium. K8 is only weakly expressed in surface keratinocytes but strongly in crypts. All marker evidence here is protein-level (immunostaining), not transcript."
+    },
+    {
+      "doi": "10.1002/eji.70121",
+      "citation": "Crowell et al. (2025)",
+      "supports": "Spatial-transcriptomic map of human tonsil. Defines the two epithelial types: a lining (surface) stratified squamous epithelium versus reticulated crypts, where the continuity of the outer surface epithelium is disrupted. Notes that keratins and immune-stromal microenvironment distinguish apical from basal and crypt from surface epithelium, and that surface epithelium was recovered only in adult sections.",
+      "pmid": "PMID:41518352"
+    },
+    {
+      "doi": "10.1371/journal.pone.0292368",
+      "citation": "Jackson et al. (2023)",
+      "supports": "3D organotypic raft cultures of donor-derived tonsillar epithelium. Describes the surface epithelium as primarily stratified squamous, forming the outer periphery, versus the spongy crypt epithelium infiltrated by lymphocytes. Notes apical keratinization/cornification as a feature of the surface-like compartment. Evidence is histological (H&E).",
+      "pmid": "PMID:37792852"
+    },
+    {
+      "doi": "10.3389/fimmu.2021.648064",
+      "citation": "Sarmiento Varón et al. (2021)",
+      "supports": "Histological / immunofluorescence characterisation of human palatine tonsil compartments. States that the surface epithelium of the palatine tonsil is anatomically an extension of the stratified squamous epithelium of the oral mucosa, and that tonsils are lympho-epithelial organs whose epithelium provides protection and antigen transport.",
+      "pmid": "PMID:33995367"
+    },
+    {
+      "doi": "10.1186/1743-422X-3-25",
+      "citation": "Kumar et al. (2006)",
+      "supports": "Immunocytochemical study of human palatine tonsil epithelium. Distinguishes cytokeratin-positive stratified squamous (surface) epithelium from reticulated cryptal epithelium, confirming the two-compartment architecture at the protein level in human tissue.",
+      "pmid": "PMID:16600047"
+    }
+  ],
+  "justification": "Broad match to keratinocyte (CL:0000312), whose definition already covers oral-mucosa stratified squamous keratin-producing epithelium; this term adds the palatine-tonsil surface localisation and the surface-vs-crypt keratin distinction (KRT5/KRT14 surface vs KRT8/KRT18/KRT19 crypt). Species-neutral; keratins textual (intracellular).",
+  "ntr_markdown": "## New term request: surface epithelial cell of palatine tonsil\n\n**Proposed label:** surface epithelial cell of palatine tonsil\n\n**Definition:** A keratinocyte of the lining (surface) stratified squamous epithelium of the palatine tonsil, continuous with the oral mucosa. It expresses the basal keratins KRT5 and KRT14 and undergoes cornification/keratinization to form a protective barrier at the tonsil surface. It is distinguished from the tonsil crypt (reticulated) epithelium, which instead expresses the simple-epithelial keratins KRT8, KRT18 and KRT19. Keratins are intracellular intermediate-filament proteins and are described here as differentiation markers rather than surface antigens.\n\n**Parent (is_a):** keratinocyte (CL:0000312)\n\n**Anatomical location:** tonsil epithelium (UBERON:0013696)\n\n**Logical axioms:**\n- `part of` (BFO:0000050) some **tonsil epithelium** (UBERON:0013696) — Forms the outer/lining stratified squamous compartment of the tonsil epithelium.\n\n**Synonyms:**\n- outer surface epithelial cell of palatine tonsil (exact)\n- tonsil surface keratinocyte (exact)\n- lining epithelial cell of palatine tonsil (related)\n\n**References:**\n- Massoni-Badosa et al. (2024). DOI: 10.1016/j.immuni.2024.01.006 ; PMID:38301653 — The reference atlas (Azimuth human_tonsil_v2). In the epithelial compartment the authors identified three clusters overlapping the keratinocyte populations of the oral mucosa; one expressed FDCSP (FDCSP epithelium). This places the tonsillar surface/lining epithelial clusters within the oral-mucosa keratinocyte lineage. Evidence here is transcriptomic (scRNA/Multiome cluster annotation).\n- Okda et al. (2021). DOI: 10.1101/2021.05.03.442542 — Human tonsillar epithelial cell (HTEC) cultures + in situ tonsil staining. Uses a keratin antibody panel to distinguish the two epithelial compartments. K5 and K14 mark the surface stratified epithelium; K8/K18 and K19 mark the reticulated crypt epithelium. K8 is only weakly expressed in surface keratinocytes but strongly in crypts. All marker evidence here is protein-level (immunostaining), not transcript.\n- Crowell et al. (2025). DOI: 10.1002/eji.70121 ; PMID:41518352 — Spatial-transcriptomic map of human tonsil. Defines the two epithelial types: a lining (surface) stratified squamous epithelium versus reticulated crypts, where the continuity of the outer surface epithelium is disrupted. Notes that keratins and immune-stromal microenvironment distinguish apical from basal and crypt from surface epithelium, and that surface epithelium was recovered only in adult sections.\n- Jackson et al. (2023). DOI: 10.1371/journal.pone.0292368 ; PMID:37792852 — 3D organotypic raft cultures of donor-derived tonsillar epithelium. Describes the surface epithelium as primarily stratified squamous, forming the outer periphery, versus the spongy crypt epithelium infiltrated by lymphocytes. Notes apical keratinization/cornification as a feature of the surface-like compartment. Evidence is histological (H&E).\n- Sarmiento Varón et al. (2021). DOI: 10.3389/fimmu.2021.648064 ; PMID:33995367 — Histological / immunofluorescence characterisation of human palatine tonsil compartments. States that the surface epithelium of the palatine tonsil is anatomically an extension of the stratified squamous epithelium of the oral mucosa, and that tonsils are lympho-epithelial organs whose epithelium provides protection and antigen transport.\n- Kumar et al. (2006). DOI: 10.1186/1743-422X-3-25 ; PMID:16600047 — Immunocytochemical study of human palatine tonsil epithelium. Distinguishes cytokeratin-positive stratified squamous (surface) epithelium from reticulated cryptal epithelium, confirming the two-compartment architecture at the protein level in human tissue.\n\n**Justification:** Broad match to keratinocyte (CL:0000312), whose definition already covers oral-mucosa stratified squamous keratin-producing epithelium; this term adds the palatine-tonsil surface localisation and the surface-vs-crypt keratin distinction (KRT5/KRT14 surface vs KRT8/KRT18/KRT19 crypt). Species-neutral; keratins textual (intracellular).\n\n_Source: Azimuth human_tonsil_v2 fine label; reference atlas Massoni-Badosa et al. 2024 (An atlas of cells in the human tonsil, Immunity, DOI 10.1016/j.immuni.2024.01.006). Draft for review — not yet submitted._\n"
+}

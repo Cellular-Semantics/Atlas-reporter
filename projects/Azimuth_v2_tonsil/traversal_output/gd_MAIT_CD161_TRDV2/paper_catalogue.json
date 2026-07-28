@@ -2,7 +2,20 @@
   "238530091": {
     "corpus_id": "238530091",
     "first_author": "King",
-    "authors": ["Hamish W. King", "Kristen L. Wells", "Zohar Shipony", "Arwa S. Kathiria", "Lisa E. Wagar", "C. Lareau", "N. Orban", "R. Capasso", "Mark M. Davis", "L. Steinmetz", "L. James", "W. Greenleaf"],
+    "authors": [
+      "Hamish W. King",
+      "Kristen L. Wells",
+      "Zohar Shipony",
+      "Arwa S. Kathiria",
+      "Lisa E. Wagar",
+      "C. Lareau",
+      "N. Orban",
+      "R. Capasso",
+      "Mark M. Davis",
+      "L. Steinmetz",
+      "L. James",
+      "W. Greenleaf"
+    ],
     "year": 2021,
     "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
     "journal": "Science Immunology",
@@ -12,7 +25,10 @@
   "221367372": {
     "corpus_id": "221367372",
     "first_author": "Shepherd",
-    "authors": ["F. Shepherd", "J. McLaren"],
+    "authors": [
+      "F. Shepherd",
+      "J. McLaren"
+    ],
     "year": 2020,
     "title": "T Cell Immunity to Bacterial Pathogens: Mechanisms of Immune Control and Bacterial Evasion",
     "journal": "International Journal of Molecular Sciences",
@@ -22,7 +38,12 @@
   "18211759": {
     "corpus_id": "18211759",
     "first_author": "Rajoriya",
-    "authors": ["N. Rajoriya", "J. Fergusson", "Joanna A. Leithead", "P. Klenerman"],
+    "authors": [
+      "N. Rajoriya",
+      "J. Fergusson",
+      "Joanna A. Leithead",
+      "P. Klenerman"
+    ],
     "year": 2014,
     "title": "Gamma Delta T-lymphocytes in Hepatitis C and Chronic Liver Disease",
     "journal": "Frontiers in Immunology",
@@ -32,7 +53,18 @@
   "235402546": {
     "corpus_id": "235402546",
     "first_author": "Mata Forsberg",
-    "authors": ["Manuel Mata Forsberg", "C. Arasa", "W. Zwol", "S. Uzunçayir", "Anna Schönbichler", "Paulina Regenthal", "J. Schelin", "K. Lindkvist-Petersson", "Sophia Björkander", "E. Sverremark-Ekström"],
+    "authors": [
+      "Manuel Mata Forsberg",
+      "C. Arasa",
+      "W. Zwol",
+      "S. Uzunçayir",
+      "Anna Schönbichler",
+      "Paulina Regenthal",
+      "J. Schelin",
+      "K. Lindkvist-Petersson",
+      "Sophia Björkander",
+      "E. Sverremark-Ekström"
+    ],
     "year": 2021,
     "title": "Activation of human γδ T cells and NK cells by Staphylococcal enterotoxins requires both monocytes and conventional T cells",
     "journal": "Journal of Leukocyte Biology",
@@ -42,7 +74,25 @@
   "30638225": {
     "corpus_id": "30638225",
     "first_author": "Germain",
-    "authors": ["C. Germain", "T. Guillaudeux", "E. Galsgaard", "C. Hervouet", "Nedra Tekaya", "Anne-Sophie Gallouet", "Julien Fassy", "F. Bihl", "Gwénola Poupon", "A. Lazzari", "P. Spee", "F. Anjuère", "C. Pangault", "K. Tarte", "Patrick Tas", "L. Xerri", "V. Braud"],
+    "authors": [
+      "C. Germain",
+      "T. Guillaudeux",
+      "E. Galsgaard",
+      "C. Hervouet",
+      "Nedra Tekaya",
+      "Anne-Sophie Gallouet",
+      "Julien Fassy",
+      "F. Bihl",
+      "Gwénola Poupon",
+      "A. Lazzari",
+      "P. Spee",
+      "F. Anjuère",
+      "C. Pangault",
+      "K. Tarte",
+      "Patrick Tas",
+      "L. Xerri",
+      "V. Braud"
+    ],
     "year": 2015,
     "title": "Lectin-like transcript 1 is a marker of germinal center-derived B-cell non-Hodgkin's lymphomas dampening natural killer cell functions",
     "journal": "OncoImmunology",
@@ -52,7 +102,9 @@
   "87087713": {
     "corpus_id": "87087713",
     "first_author": "Kawaguchi",
-    "authors": ["T. Kawaguchi"],
+    "authors": [
+      "T. Kawaguchi"
+    ],
     "year": 1993,
     "title": "γδT CELLS IN THE PALATINE TONSIL",
     "journal": "Nippon Jibiinkoka Gakkai Kaiho",
@@ -62,7 +114,16 @@
   "282316306": {
     "corpus_id": "282316306",
     "first_author": "Press",
-    "authors": ["K. Press", "Florian Bach", "Elsa Sola", "Kylie Camanag", "N. Dooley", "Lisa E. Wagar", "Mark M. Davis", "P. Jagannathan"],
+    "authors": [
+      "K. Press",
+      "Florian Bach",
+      "Elsa Sola",
+      "Kylie Camanag",
+      "N. Dooley",
+      "Lisa E. Wagar",
+      "Mark M. Davis",
+      "P. Jagannathan"
+    ],
     "year": 2025,
     "title": "Cytotoxic Vδ2+ T cell subsets expand in response to malaria in human tonsil and spleen organoids",
     "journal": "PLOS Pathogens",
@@ -72,7 +133,14 @@
   "4931659": {
     "corpus_id": "4931659",
     "first_author": "van der Geest",
-    "authors": ["K. V. D. van der Geest", "B. Kroesen", "G. Horst", "W. Abdulahad", "E. Brouwer", "A. Boots"],
+    "authors": [
+      "K. V. D. van der Geest",
+      "B. Kroesen",
+      "G. Horst",
+      "W. Abdulahad",
+      "E. Brouwer",
+      "A. Boots"
+    ],
     "year": 2018,
     "title": "Impact of Aging on the Frequency, Phenotype, and Function of CD161-Expressing T Cells",
     "journal": "Frontiers in Immunology",
@@ -82,7 +150,25 @@
   "46752325": {
     "corpus_id": "46752325",
     "first_author": "Gherardin",
-    "authors": ["N. Gherardin", "Michael N. T. Souter", "H. Koay", "Kirstie M. Mangas", "T. Seemann", "T. Stinear", "S. Eckle", "S. Berzins", "Y. D'udekem", "I. Konstantinov", "D. Fairlie", "D. Ritchie", "P. Neeson", "D. Pellicci", "Adam P. Uldrich", "J. McCluskey", "D. Godfrey"],
+    "authors": [
+      "N. Gherardin",
+      "Michael N. T. Souter",
+      "H. Koay",
+      "Kirstie M. Mangas",
+      "T. Seemann",
+      "T. Stinear",
+      "S. Eckle",
+      "S. Berzins",
+      "Y. D'udekem",
+      "I. Konstantinov",
+      "D. Fairlie",
+      "D. Ritchie",
+      "P. Neeson",
+      "D. Pellicci",
+      "Adam P. Uldrich",
+      "J. McCluskey",
+      "D. Godfrey"
+    ],
     "year": 2018,
     "title": "Human blood MAIT cell subsets defined using MR1 tetramers",
     "journal": "Immunology and Cell Biology",
@@ -92,11 +178,33 @@
   "160009846": {
     "corpus_id": "160009846",
     "first_author": "Koay",
-    "authors": ["H. Koay", "N. Gherardin", "Calvin Xu", "Rebecca Seneviratna", "Zhe Zhao", "Zhenjun Chen", "D. Fairlie", "J. McCluskey", "D. Pellicci", "Adam P. Uldrich", "D. Godfrey"],
+    "authors": [
+      "H. Koay",
+      "N. Gherardin",
+      "Calvin Xu",
+      "Rebecca Seneviratna",
+      "Zhe Zhao",
+      "Zhenjun Chen",
+      "D. Fairlie",
+      "J. McCluskey",
+      "D. Pellicci",
+      "Adam P. Uldrich",
+      "D. Godfrey"
+    ],
     "year": 2019,
     "title": "Diverse MR1-restricted T cells in mice and humans",
     "journal": "Nature Communications",
     "doi": "10.1038/s41467-019-10198-w",
     "pmid": "31113973"
+  },
+  "250093999": {
+    "corpus_id": "250093999",
+    "first_author": "Massoni-Badosa",
+    "authors": "Massoni-Badosa R, Soler-Vila P, Aguilar-Fernández S, et al.",
+    "year": 2024,
+    "title": "An atlas of cells in the human tonsil",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2024.01.006",
+    "pmid": "PMID:38301653"
   }
 }

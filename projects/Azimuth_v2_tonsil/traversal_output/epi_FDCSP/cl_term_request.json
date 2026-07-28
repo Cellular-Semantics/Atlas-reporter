@@ -1,0 +1,76 @@
+{
+  "cell_type_label": "epi_FDCSP",
+  "suggested_label": "FDCSP-positive epithelial cell of palatine tonsil",
+  "definition": "A specialized keratinocyte-related epithelial cell of the palatine tonsil, transcriptomically defined by expression of FDCSP (follicular dendritic cell secreted protein) together with the keratinocyte-differentiation marker KRTDAP. It belongs to the oral-mucosa-keratinocyte-overlapping tonsil epithelial compartment and is associated with leukocyte-infiltrated tonsillar crypts. FDCSP and KRTDAP are defined here as transcript-level discriminating markers.",
+  "parent_term": {
+    "cl_id": "CL:0000312",
+    "cl_term": "keratinocyte"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0013696",
+    "uberon_term": "tonsil epithelium"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "tonsil epithelium",
+      "filler_id": "UBERON:0013696",
+      "notes": "A distinct FDCSP-expressing subpopulation of the tonsil (crypt-associated) epithelium."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "FDCSP epithelium cell of palatine tonsil",
+      "scope": "exact"
+    },
+    {
+      "value": "FDCSP-positive KRTDAP-positive tonsil epithelial cell",
+      "scope": "exact"
+    },
+    {
+      "value": "FDCSP tonsillar epithelial cell",
+      "scope": "related"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1016/j.immuni.2024.01.006",
+      "citation": "Massoni-Badosa et al. (2024)",
+      "supports": "This is the reference atlas (Azimuth human_tonsil_v2). In the epithelial compartment the authors identified three clusters overlapping the keratinocyte populations of the oral mucosa; one of these expressed FDCSP and was annotated 'FDCSP epithelium'. The atlas notes FDCSP was first described in FDC and in leukocyte-infiltrated tonsillar crypts, with the specific crypt population previously unknown, and provides evidence that FDCSP-expressing cells are a specific subpopulation of the tonsillar epithelium. FDCSP and KRTDAP marker calls here are transcript-level (scRNA-seq / multiome), not protein-level. Tonsillar crypts and their lining subepithelial connective tissue septum are a recurring spatial niche in the atlas (e.g. tissue-resident CD8 T cells).",
+      "pmid": "PMID:38301653"
+    },
+    {
+      "doi": "10.4049/jimmunol.169.5.2381",
+      "citation": "Marshall et al. (2002)",
+      "supports": "Original identification of FDC-SP (FDCSP), the follicular dendritic cell secreted protein, from human reactive tonsils. Cited by the atlas as the source that first described FDCSP in FDC and in leukocyte-infiltrated tonsillar crypts. Establishes FDCSP as a small secreted protein of the immune system; expression here is protein/transcript in FDC, not epithelial. No body snippet retrieved beyond atlas citation context, so no verbatim quote is stored for this paper.",
+      "pmid": "PMID:12193705"
+    },
+    {
+      "doi": "10.3390/biom12101458",
+      "citation": "Wu et al. (2022)",
+      "supports": "Broader-literature context on FDCSP protein biology. Reports that among human normal tissues FDCSP shows its highest expression in tonsil tissue and gingival epithelium, and describes FDCSP as a small secreted protein originally discovered in follicular dendritic cells that specifically binds activated B cells and regulates antibody responses. Expression evidence is protein (IHC/immune) and BioGPS transcript-level; supports the plausibility of an FDCSP-high epithelial/tonsil niche but is a cancer study, not the tonsil atlas.",
+      "pmid": "PMID:36291667"
+    },
+    {
+      "doi": "10.3389/ebm.2025.10632",
+      "citation": "Lu et al. (2025)",
+      "supports": "Broader-literature context showing that in epithelial tissue FDCSP marks a basal-cell (rather than luminal) epithelial subpopulation, supporting the interpretation that FDCSP in the tonsil marks a specific epithelial subpopulation. FDCSP is described as a small secreted peptide with specific binding affinity to activated B cells. Expression evidence combines single-cell/spatial transcriptomics with IHC/IF (protein). This is a breast-cancer study, not tonsil-specific.",
+      "pmid": "PMID:41081066"
+    },
+    {
+      "doi": "10.18632/oncotarget.14864",
+      "citation": "Lorenzi et al. (2017)",
+      "supports": "Broader-literature context on FDCSP origin and function. States FDCSP was isolated in 2002 from human reactive tonsils and is specifically expressed by B-cell-activating FDC, and that studies suggest it can modulate the B-cell immune response and may have a role in autoimmune diseases. Provides functional grounding for FDCSP as an immune-modulatory secreted protein; expression here is protein (IHC) in FDC and FDC sarcoma, not epithelial.",
+      "pmid": "PMID:28145886"
+    },
+    {
+      "doi": "10.3892/ol.2021.12550",
+      "citation": "Su et al. (2021)",
+      "supports": "Broader-literature context for the second atlas marker, KRTDAP. Describes KRTDAP as a soluble regulator of keratinocyte differentiation with a key role in embryonic skin morphogenesis. Supports the interpretation that the FDCSP epithelium cluster is a differentiated oral-mucosa/keratinocyte-type epithelial population. Study is HNSCC-focused; KRTDAP expression evidence is transcript-level.",
+      "pmid": "PMID:33732365"
+    }
+  ],
+  "justification": "First defined as a distinct tonsillar epithelial subpopulation by the reference atlas (Massoni-Badosa et al. 2024). Broad match to keratinocyte (CL:0000312). IMPORTANT: in the working annotation this cluster was mislabeled \"VEGFA+\" — VEGFA is NOT an atlas marker of this cluster; the atlas defines it by FDCSP/KRTDAP. Markers are transcript-level (secreted/differentiation proteins, not surface antigens); kept textual. Species-neutral.",
+  "ntr_markdown": "## New term request: FDCSP-positive epithelial cell of palatine tonsil\n\n**Proposed label:** FDCSP-positive epithelial cell of palatine tonsil\n\n**Definition:** A specialized keratinocyte-related epithelial cell of the palatine tonsil, transcriptomically defined by expression of FDCSP (follicular dendritic cell secreted protein) together with the keratinocyte-differentiation marker KRTDAP. It belongs to the oral-mucosa-keratinocyte-overlapping tonsil epithelial compartment and is associated with leukocyte-infiltrated tonsillar crypts. FDCSP and KRTDAP are defined here as transcript-level discriminating markers.\n\n**Parent (is_a):** keratinocyte (CL:0000312)\n\n**Anatomical location:** tonsil epithelium (UBERON:0013696)\n\n**Logical axioms:**\n- `part of` (BFO:0000050) some **tonsil epithelium** (UBERON:0013696) — A distinct FDCSP-expressing subpopulation of the tonsil (crypt-associated) epithelium.\n\n**Synonyms:**\n- FDCSP epithelium cell of palatine tonsil (exact)\n- FDCSP-positive KRTDAP-positive tonsil epithelial cell (exact)\n- FDCSP tonsillar epithelial cell (related)\n\n**References:**\n- Massoni-Badosa et al. (2024). DOI: 10.1016/j.immuni.2024.01.006 ; PMID:38301653 — This is the reference atlas (Azimuth human_tonsil_v2). In the epithelial compartment the authors identified three clusters overlapping the keratinocyte populations of the oral mucosa; one of these expressed FDCSP and was annotated 'FDCSP epithelium'. The atlas notes FDCSP was first described in FDC and in leukocyte-infiltrated tonsillar crypts, with the specific crypt population previously unknown, and provides evidence that FDCSP-expressing cells are a specific subpopulation of the tonsillar epithelium. FDCSP and KRTDAP marker calls here are transcript-level (scRNA-seq / multiome), not protein-level. Tonsillar crypts and their lining subepithelial connective tissue septum are a recurring spatial niche in the atlas (e.g. tissue-resident CD8 T cells).\n- Marshall et al. (2002). DOI: 10.4049/jimmunol.169.5.2381 ; PMID:12193705 — Original identification of FDC-SP (FDCSP), the follicular dendritic cell secreted protein, from human reactive tonsils. Cited by the atlas as the source that first described FDCSP in FDC and in leukocyte-infiltrated tonsillar crypts. Establishes FDCSP as a small secreted protein of the immune system; expression here is protein/transcript in FDC, not epithelial. No body snippet retrieved beyond atlas citation context, so no verbatim quote is stored for this paper.\n- Wu et al. (2022). DOI: 10.3390/biom12101458 ; PMID:36291667 — Broader-literature context on FDCSP protein biology. Reports that among human normal tissues FDCSP shows its highest expression in tonsil tissue and gingival epithelium, and describes FDCSP as a small secreted protein originally discovered in follicular dendritic cells that specifically binds activated B cells and regulates antibody responses. Expression evidence is protein (IHC/immune) and BioGPS transcript-level; supports the plausibility of an FDCSP-high epithelial/tonsil niche but is a cancer study, not the tonsil atlas.\n- Lu et al. (2025). DOI: 10.3389/ebm.2025.10632 ; PMID:41081066 — Broader-literature context showing that in epithelial tissue FDCSP marks a basal-cell (rather than luminal) epithelial subpopulation, supporting the interpretation that FDCSP in the tonsil marks a specific epithelial subpopulation. FDCSP is described as a small secreted peptide with specific binding affinity to activated B cells. Expression evidence combines single-cell/spatial transcriptomics with IHC/IF (protein). This is a breast-cancer study, not tonsil-specific.\n- Lorenzi et al. (2017). DOI: 10.18632/oncotarget.14864 ; PMID:28145886 — Broader-literature context on FDCSP origin and function. States FDCSP was isolated in 2002 from human reactive tonsils and is specifically expressed by B-cell-activating FDC, and that studies suggest it can modulate the B-cell immune response and may have a role in autoimmune diseases. Provides functional grounding for FDCSP as an immune-modulatory secreted protein; expression here is protein (IHC) in FDC and FDC sarcoma, not epithelial.\n- Su et al. (2021). DOI: 10.3892/ol.2021.12550 ; PMID:33732365 — Broader-literature context for the second atlas marker, KRTDAP. Describes KRTDAP as a soluble regulator of keratinocyte differentiation with a key role in embryonic skin morphogenesis. Supports the interpretation that the FDCSP epithelium cluster is a differentiated oral-mucosa/keratinocyte-type epithelial population. Study is HNSCC-focused; KRTDAP expression evidence is transcript-level.\n\n**Justification:** First defined as a distinct tonsillar epithelial subpopulation by the reference atlas (Massoni-Badosa et al. 2024). Broad match to keratinocyte (CL:0000312). IMPORTANT: in the working annotation this cluster was mislabeled \"VEGFA+\" — VEGFA is NOT an atlas marker of this cluster; the atlas defines it by FDCSP/KRTDAP. Markers are transcript-level (secreted/differentiation proteins, not surface antigens); kept textual. Species-neutral.\n\n_Source: Azimuth human_tonsil_v2 fine label; reference atlas Massoni-Badosa et al. 2024 (An atlas of cells in the human tonsil, Immunity, DOI 10.1016/j.immuni.2024.01.006). Draft for review — not yet submitted._\n"
+}

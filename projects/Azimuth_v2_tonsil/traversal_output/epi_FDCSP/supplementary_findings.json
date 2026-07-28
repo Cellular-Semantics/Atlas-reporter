@@ -1,0 +1,12 @@
+{
+  "markers": [
+    {"gene": "FDCSP", "evidence_type": "atlas cluster-defining marker (transcript-level, scRNA-seq)", "source_table": "Massoni-Badosa et al. 2024, main text (Figures S6A-S6C); annotation name 'FDCSP epithelium'"},
+    {"gene": "KRTDAP", "evidence_type": "keratinocyte/oral-mucosa epithelial marker (transcript-level, consistent with compartment)", "source_table": "Massoni-Badosa et al. 2024 epithelial compartment; KRTDAP function per Su et al. 2021"}
+  ],
+  "other_findings": [
+    {"finding": "The epithelial compartment comprised three clusters overlapping keratinocyte populations of the oral mucosa; one expressed FDCSP and was annotated 'FDCSP epithelium'.", "category": "identity", "source_table": "Massoni-Badosa et al. 2024 main text"},
+    {"finding": "FDCSP was first described in FDC and in leukocyte-infiltrated tonsillar crypts; the atlas provides evidence that FDCSP-expressing cells are a specific subpopulation of the tonsillar epithelium.", "category": "location", "source_table": "Massoni-Badosa et al. 2024 main text"}
+  ],
+  "evidence_quotes": [],
+  "note": "No PMC supplement retrieved for this run; findings drawn from atlas main-text snippets via ASTA snippet_search (paper_ids=CorpusId:250093999). All marker expression is transcript-level (scRNA-seq), not protein."
+}

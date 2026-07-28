@@ -1,0 +1,39 @@
+{
+  "cell_type_label": "surface (lining) stratified squamous, keratinizing epithelial cell of the palatine tonsil",
+  "working_definition": "The tonsil surface epithelial cell is a keratinizing, stratified squamous epithelial cell forming the outer lining of the human palatine tonsil, anatomically continuous with oral mucosal stratified squamous epithelium. It is defined by strong protein-level expression of basal keratins KRT5 and KRT14, undergoes apical cornification/keratinization, and is transcriptomically resolved as overlapping oral-mucosa keratinocyte populations. Its principal function is to provide a mechanical and immunological barrier at the oropharyngeal surface.",
+  "searches_performed": [
+    "stratified squamous epithelial cell",
+    "keratinizing epithelial cell",
+    "keratinocyte",
+    "oral mucosa epithelial cell",
+    "tonsil epithelial cell",
+    "epithelial cell of mucosa",
+    "epithelial cell of pharynx",
+    "KRT5 KRT14 positive cell"
+  ],
+  "best_match": {
+    "cl_term": "keratinocyte",
+    "cl_id": "CL:0000312",
+    "cl_definition": "An epithelial cell of stratified squamous tissues, including skin, oral mucosa (Hiroshima et al., 2011), and esophagus (Whelan et al., 2018), that produces keratin proteins and secretes antimicrobial peptides to form a resilient barrier against environmental damage, dehydration, pathogens, and microbial invasion. It undergoes successive stages of differentiation marked by changes in keratin expression, supporting tissue integrity, wound repair, and contributing to immune defense.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:0000312 (keratinocyte) is the best available parent. Its definition explicitly covers epithelial cells of stratified squamous tissues including oral mucosa, producing keratin proteins and forming a barrier — all features shared by the tonsil surface epithelium. The atlas paper itself resolved tonsillar epithelial clusters as overlapping keratinocyte populations of the oral mucosa, and the defining markers KRT5/KRT14 are canonical basal keratinocyte keratins. The match is broad rather than exact because (1) 'keratinocyte' covers a broad category across skin, oral mucosa, esophagus and other sites without tonsil specificity, and (2) the report cell type has a distinguishing feature — its location in the tonsil surface (lining) epithelium, distinct from crypt epithelium — not captured in the CL definition. CL:0000240 (stratified squamous epithelial cell) is a more general parent and was rejected as less specific; it also does not capture the keratinizing character. CL:0000237 (keratinizing barrier epithelial cell) lacks a definition and is a grandparent of keratinocyte, making it less informative. No tonsil-specific or palatine-tonsil-surface-specific keratinocyte term exists in CL.",
+  "other_candidates": [
+    {
+      "cl_term": "stratified squamous epithelial cell",
+      "cl_id": "CL:0000240",
+      "cl_definition": "A stratified epithelial cell that is part of squamous epithelium, characterized by multiple layers of cells. The basal layer is directly attached to the basement membrane and the apical layer consists of flattened squamous cells. This provides a protective barrier, commonly found in areas subject to abrasion, such as the skin, oral cavity, and esophagus.",
+      "reason_rejected": "More general than CL:0000312; does not capture the keratinizing specialisation that is a defining feature of the tonsil surface epithelium. CL:0000312 (keratinocyte) is a child of this term and is more specific to the biology described."
+    },
+    {
+      "cl_term": "keratinizing barrier epithelial cell",
+      "cl_id": "CL:0000237",
+      "cl_definition": "",
+      "reason_rejected": "No definition text available in OLS4; this is a grandparent of CL:0000312 (keratinocyte) in the hierarchy. CL:0000312 is more specific and carries an explicit definition covering the relevant biology."
+    }
+  ],
+  "recommendation": "Use CL:0000312 (keratinocyte) as a broad parent mapping. Request a new CL term for the keratinizing stratified squamous epithelial cell of the palatine tonsil surface epithelium, as a child of CL:0000312. The new term should be restricted to the tonsil surface (lining) epithelium compartment (as opposed to the crypt/reticulated epithelium), with KRT5/KRT14 as defining markers and cornification/barrier function as key properties. It should be placed in relation to oral mucosal keratinocyte terms and distinguished from non-keratinizing crypt epithelial counterparts.",
+  "new_term_needed": true
+}

@@ -1,0 +1,111 @@
+{
+  "cell_type_label": "epi_crypt",
+  "suggested_label": "crypt epithelial cell of palatine tonsil",
+  "definition": "A specialized reticulated epithelial cell forming the lymphoepithelium that lines the crypts of the palatine tonsil. It is interspersed with infiltrating lymphocytes, has a discontinuous or absent basement membrane, and expresses the simple-epithelial keratins KRT8, KRT18 and KRT19 (in contrast to the KRT5/KRT14 surface epithelium). It forms the structural epithelial barrier of the crypt reticulated epithelium and, together with co-resident microfold (M) cells, supports luminal antigen sampling and delivery to the underlying mucosa-associated lymphoid tissue. Microfold cells are a distinct antigen-transporting cell type co-resident in the same reticulated epithelium (defined by SPIB/SOX8/GP2); they are NOT a subtype of this crypt epithelial cell.",
+  "parent_term": {
+    "cl_id": "CL:0000066",
+    "cl_term": "epithelial cell"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0013696",
+    "uberon_term": "tonsil epithelium"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "tonsil epithelium",
+      "filler_id": "UBERON:0013696",
+      "notes": "Forms the reticulated crypt (lymphoepithelial) compartment of the tonsil epithelium."
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "mucosal immune response",
+      "filler_id": "GO:0002385",
+      "notes": "The reticulated crypt epithelium transports luminal antigen to underlying MALT, initiating mucosal immune responses."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "reticulated crypt epithelial cell of palatine tonsil",
+      "scope": "exact"
+    },
+    {
+      "value": "tonsil lymphoepithelial cell",
+      "scope": "related"
+    },
+    {
+      "value": "tonsil crypt reticulated epithelial cell",
+      "scope": "exact"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1016/j.immuni.2024.01.006",
+      "citation": "Massoni-Badosa et al. (2024)",
+      "supports": "The reference atlas (Azimuth human_tonsil_v2). Profiled >357,000 cells from 17 human tonsils across five modalities and annotated 121 cell types/states. In the epithelial compartment three clusters overlapping oral-mucosa keratinocytes were identified, one expressing FDCSP (FDCSP epithelium); FDCSP had previously been described in leukocyte-infiltrated tonsillar crypts. The atlas emphasizes the palatine tonsil as the first line of immunological defense against inhaled/ingested antigens. Spatial/histology analyses repeatedly reference the subepithelial connective tissue septum lining tonsillar crypts as an immune-cell-rich site. Marker-level detail (keratins, SPIB, MARCKSL1) for the crypt epithelial cluster is at the transcript level (scRNA-seq/Multiome) and is not spelled out in the retrieved snippets; the atlas text characterizes the epithelial compartment broadly rather than enumerating crypt-epithelial keratins.",
+      "pmid": "PMID:38301653"
+    },
+    {
+      "doi": "10.1016/j.wjorl.2021.04.003",
+      "citation": "Arambula et al. (2021)",
+      "supports": "Review of tonsil anatomy/physiology. Describes crypt embryology (second branchial pouch), the ~10-30 branching crypts per tonsil, and the crypt lining as a non-uniform mixture of stratified squamous epithelium and reticulated crypt epithelium (lymphoepithelium), analogous to Peyer's patches. The reticulated epithelium contains both epithelial and non-epithelial (chiefly lymphoid) cells, can be very thin, and may lack a basement membrane in places — an arrangement that enables rapid antigen transport and presentation to underlying lymphoid cells. All descriptions are histological/anatomical (protein/tissue level), not transcriptomic.",
+      "pmid": "PMID:34430822"
+    },
+    {
+      "doi": "10.1002/eji.70121",
+      "citation": "Crowell et al. (2025)",
+      "supports": "Spatial-transcriptomics companion map of human tonsil architecture (same consortium as the atlas). Distinguishes two actively differentiating tonsil epithelia — lining (surface) stratified squamous epithelium and reticulated crypts (deep invaginations where the outer surface epithelium is disrupted). The crypts are described as a specialized compartment important for tonsil immunological function, facilitating immune-cell/antigen interaction. Both surface and crypt epithelia express keratins, with expression profiles depending on epithelial type, differentiation status and context. Keratin evidence here is protein-family/transcriptional-signature level from spatial data.",
+      "pmid": "PMID:41518352"
+    },
+    {
+      "doi": "10.4067/S0717-95022012000400034",
+      "citation": "Raju et al. (2012)",
+      "supports": "Histological study of palatine tonsil crypt microarchitecture (sheep, with extensive cross-species comparison including humans). Documents that the crypt epithelium overlying lymphoid follicles converts to lymphoepithelium (reticular epithelium), in which the ordered stratified squamous layers become minimal/indistinct and are replaced by abundant lymphocytes plus infiltrating macrophages, plasma cells, dendritic cells and neutrophils. In lymphoepithelial areas the basement membrane is interrupted due to heavy lymphocytic infiltration. Frames the reticulated crypt epithelium (lymphoepithelium) as a key site of immune responses ('lymphoepithelial symbiosis'). Structural/histological evidence."
+    },
+    {
+      "doi": "10.33899/mmed.2020.164164",
+      "citation": "Tabou et al. (2020)",
+      "supports": "Histological/immunohistochemical study of human palatine tonsil compartments. Treats the reticulated crypt epithelium and surface epithelium as functional immune compartments, and reports (citing Mal et al.) that the major functions of the reticulated epithelium include providing a favorable environment for intimate contact between immune effector cells, facilitating direct antigen transport, continual secretory-component synthesis, and containing a pool of immunoglobulins. Higher HEV density beneath crypt epithelium than surface epithelium is discussed as evidence of greater immune reactivity in the crypt compartment. Protein/tissue-level (IHC) evidence."
+    },
+    {
+      "doi": "10.1038/ni.2352",
+      "citation": "Kanaya et al. (2012)",
+      "supports": "Defines the transcriptional control of M-cell differentiation in follicle-associated epithelium (Peyer's patch). Spi-B (SPIB) is an essential transcription factor for morphologically and functionally mature M cells; Spib-null FAE lacks cells with typical M-cell ultrastructure (irregular sparse microvilli, basolateral pocket) and cannot take up luminal antigen. MARCKSL1 (Marcksl1) is expressed by early RANKL-responsive M-cell precursors together with Annexin V; committed cells maintain Marcksl1 and progress to later markers (CCL9, GP2). Marker evidence is transcript/protein at the cellular level, in intestinal (not tonsil) FAE — provides the mechanistic basis for SPIB and MARCKSL1 as M-cell markers of antigen-sampling reticulated/follicle-associated epithelium.",
+      "pmid": "PMID:22706340"
+    },
+    {
+      "doi": "10.1292/JVMS.69.501",
+      "citation": "Onishi et al. (2007)",
+      "supports": "Ultrastructural study of M-cell differentiation and turnover in the follicle-associated epithelium of rat Peyer's patch — the intestinal analogue of tonsillar lymphoepithelium. Supports the concept that M cells are a specialized, antigen-transporting cell type differentiating within follicle-associated (reticulated) epithelium. Morphological/ultrastructural evidence (only the title snippet was retrieved).",
+      "pmid": "PMID:17551223"
+    },
+    {
+      "doi": "10.1292/JVMS.68.1023",
+      "citation": "Chin et al. (2006)",
+      "supports": "Shows that ordinary follicle-associated epithelial cells can differentiate into M cells in response to luminal bacterial colonization, underscoring the plasticity and antigen-sampling role of follicle-associated (reticulated) epithelium. Supports the functional parallel between intestinal FAE M cells and tonsillar crypt lymphoepithelium. Only the title snippet was retrieved.",
+      "pmid": "PMID:17085879"
+    },
+    {
+      "doi": "10.1016/s0021-9258(18)99046-0",
+      "citation": "Quaroni et al. (1991)",
+      "supports": "Characterizes keratin (cytokeratin) expression across intestinal crypt/villus differentiation using monoclonal antibodies specific for keratin 8, keratin 19 and a type I keratin. In proliferative crypt cells keratin 19 predominates; the fetal stratified intestinal epithelium contains predominantly keratin 19 with a small amount of keratin 8. Provides protein-level evidence that simple/crypt epithelia are marked by K19 and K8 and that keratin expression tracks differentiation status. Intestinal (analogous crypt) context.",
+      "pmid": "PMID:1711043"
+    },
+    {
+      "doi": "10.1074/JBC.M004013200",
+      "citation": "Brembeck et al. (2000)",
+      "supports": "Establishes the keratin-type framework and the special status of K19. Simple epithelia express keratins K8 and K18; keratin 19 (K19) is the smallest acidic keratin, has no obligate type II partner, is often found with K8, and can substitute for K18. This defines K8/K18/K19 as the simple-epithelial keratin set relevant to reticulated crypt/M-cell epithelium. Protein/gene-regulation level.",
+      "pmid": "PMID:10859317"
+    },
+    {
+      "doi": "10.1007/s00418-008-0435-6",
+      "citation": "Moll et al. (2008)",
+      "supports": "Authoritative review of human keratins. Provides the reference framework in which K8/K18 (and K19) are the simple-epithelial keratins, contrasted with K20, the most restricted simple-epithelial keratin (gastrointestinal/urothelial), whose type II partner is usually K8 and which is switched on during terminal differentiation of intestinal villus/surface epithelia. Contextualizes which keratins mark simple vs terminally differentiated GI-type epithelia. Protein-level review.",
+      "pmid": "PMID:18461349"
+    }
+  ],
+  "justification": "Parent epithelial cell (CL:0000066). The existing CL:0000682 (M cell of gut) is a gut-specific, NARROWER relative — the tonsil crypt reticulated epithelium co-contains distinct microfold (M) cells (a separate antigen-transporting cell type, NOT a subtype of this crypt epithelial cell); a general 'microfold cell' term plus a tonsil M-cell child are being requested separately. Keratins/SPIB/MARCKSL1 are intracellular and kept textual. Species-neutral.",
+  "ntr_markdown": "## New term request: crypt epithelial cell of palatine tonsil\n\n**Proposed label:** crypt epithelial cell of palatine tonsil\n\n**Definition:** A specialized reticulated epithelial cell forming the lymphoepithelium that lines the crypts of the palatine tonsil. It is interspersed with infiltrating lymphocytes, has a discontinuous or absent basement membrane, and expresses the simple-epithelial keratins KRT8, KRT18 and KRT19 (in contrast to the KRT5/KRT14 surface epithelium). It forms the structural epithelial barrier of the crypt reticulated epithelium and, together with co-resident microfold (M) cells, supports luminal antigen sampling and delivery to the underlying mucosa-associated lymphoid tissue. Microfold cells are a distinct antigen-transporting cell type co-resident in the same reticulated epithelium (defined by SPIB/SOX8/GP2); they are NOT a subtype of this crypt epithelial cell.\n\n**Parent (is_a):** epithelial cell (CL:0000066)\n\n**Anatomical location:** tonsil epithelium (UBERON:0013696)\n\n**Logical axioms:**\n- `part of` (BFO:0000050) some **tonsil epithelium** (UBERON:0013696) — Forms the reticulated crypt (lymphoepithelial) compartment of the tonsil epithelium.\n- `capable of part of` (RO:0002216) some **mucosal immune response** (GO:0002385) — The reticulated crypt epithelium transports luminal antigen to underlying MALT, initiating mucosal immune responses.\n\n**Synonyms:**\n- reticulated crypt epithelial cell of palatine tonsil (exact)\n- tonsil lymphoepithelial cell (related)\n- tonsil crypt reticulated epithelial cell (exact)\n\n**References:**\n- Massoni-Badosa et al. (2024). DOI: 10.1016/j.immuni.2024.01.006 ; PMID:38301653 — The reference atlas (Azimuth human_tonsil_v2). Profiled >357,000 cells from 17 human tonsils across five modalities and annotated 121 cell types/states. In the epithelial compartment three clusters overlapping oral-mucosa keratinocytes were identified, one expressing FDCSP (FDCSP epithelium); FDCSP had previously been described in leukocyte-infiltrated tonsillar crypts. The atlas emphasizes the palatine tonsil as the first line of immunological defense against inhaled/ingested antigens. Spatial/histology analyses repeatedly reference the subepithelial connective tissue septum lining tonsillar crypts as an immune-cell-rich site. Marker-level detail (keratins, SPIB, MARCKSL1) for the crypt epithelial cluster is at the transcript level (scRNA-seq/Multiome) and is not spelled out in the retrieved snippets; the atlas text characterizes the epithelial compartment broadly rather than enumerating crypt-epithelial keratins.\n- Arambula et al. (2021). DOI: 10.1016/j.wjorl.2021.04.003 ; PMID:34430822 — Review of tonsil anatomy/physiology. Describes crypt embryology (second branchial pouch), the ~10-30 branching crypts per tonsil, and the crypt lining as a non-uniform mixture of stratified squamous epithelium and reticulated crypt epithelium (lymphoepithelium), analogous to Peyer's patches. The reticulated epithelium contains both epithelial and non-epithelial (chiefly lymphoid) cells, can be very thin, and may lack a basement membrane in places — an arrangement that enables rapid antigen transport and presentation to underlying lymphoid cells. All descriptions are histological/anatomical (protein/tissue level), not transcriptomic.\n- Crowell et al. (2025). DOI: 10.1002/eji.70121 ; PMID:41518352 — Spatial-transcriptomics companion map of human tonsil architecture (same consortium as the atlas). Distinguishes two actively differentiating tonsil epithelia — lining (surface) stratified squamous epithelium and reticulated crypts (deep invaginations where the outer surface epithelium is disrupted). The crypts are described as a specialized compartment important for tonsil immunological function, facilitating immune-cell/antigen interaction. Both surface and crypt epithelia express keratins, with expression profiles depending on epithelial type, differentiation status and context. Keratin evidence here is protein-family/transcriptional-signature level from spatial data.\n- Raju et al. (2012). DOI: 10.4067/S0717-95022012000400034 — Histological study of palatine tonsil crypt microarchitecture (sheep, with extensive cross-species comparison including humans). Documents that the crypt epithelium overlying lymphoid follicles converts to lymphoepithelium (reticular epithelium), in which the ordered stratified squamous layers become minimal/indistinct and are replaced by abundant lymphocytes plus infiltrating macrophages, plasma cells, dendritic cells and neutrophils. In lymphoepithelial areas the basement membrane is interrupted due to heavy lymphocytic infiltration. Frames the reticulated crypt epithelium (lymphoepithelium) as a key site of immune responses ('lymphoepithelial symbiosis'). Structural/histological evidence.\n- Tabou et al. (2020). DOI: 10.33899/mmed.2020.164164 — Histological/immunohistochemical study of human palatine tonsil compartments. Treats the reticulated crypt epithelium and surface epithelium as functional immune compartments, and reports (citing Mal et al.) that the major functions of the reticulated epithelium include providing a favorable environment for intimate contact between immune effector cells, facilitating direct antigen transport, continual secretory-component synthesis, and containing a pool of immunoglobulins. Higher HEV density beneath crypt epithelium than surface epithelium is discussed as evidence of greater immune reactivity in the crypt compartment. Protein/tissue-level (IHC) evidence.\n- Kanaya et al. (2012). DOI: 10.1038/ni.2352 ; PMID:22706340 — Defines the transcriptional control of M-cell differentiation in follicle-associated epithelium (Peyer's patch). Spi-B (SPIB) is an essential transcription factor for morphologically and functionally mature M cells; Spib-null FAE lacks cells with typical M-cell ultrastructure (irregular sparse microvilli, basolateral pocket) and cannot take up luminal antigen. MARCKSL1 (Marcksl1) is expressed by early RANKL-responsive M-cell precursors together with Annexin V; committed cells maintain Marcksl1 and progress to later markers (CCL9, GP2). Marker evidence is transcript/protein at the cellular level, in intestinal (not tonsil) FAE — provides the mechanistic basis for SPIB and MARCKSL1 as M-cell markers of antigen-sampling reticulated/follicle-associated epithelium.\n- Onishi et al. (2007). DOI: 10.1292/JVMS.69.501 ; PMID:17551223 — Ultrastructural study of M-cell differentiation and turnover in the follicle-associated epithelium of rat Peyer's patch — the intestinal analogue of tonsillar lymphoepithelium. Supports the concept that M cells are a specialized, antigen-transporting cell type differentiating within follicle-associated (reticulated) epithelium. Morphological/ultrastructural evidence (only the title snippet was retrieved).\n- Chin et al. (2006). DOI: 10.1292/JVMS.68.1023 ; PMID:17085879 — Shows that ordinary follicle-associated epithelial cells can differentiate into M cells in response to luminal bacterial colonization, underscoring the plasticity and antigen-sampling role of follicle-associated (reticulated) epithelium. Supports the functional parallel between intestinal FAE M cells and tonsillar crypt lymphoepithelium. Only the title snippet was retrieved.\n- Quaroni et al. (1991). DOI: 10.1016/s0021-9258(18)99046-0 ; PMID:1711043 — Characterizes keratin (cytokeratin) expression across intestinal crypt/villus differentiation using monoclonal antibodies specific for keratin 8, keratin 19 and a type I keratin. In proliferative crypt cells keratin 19 predominates; the fetal stratified intestinal epithelium contains predominantly keratin 19 with a small amount of keratin 8. Provides protein-level evidence that simple/crypt epithelia are marked by K19 and K8 and that keratin expression tracks differentiation status. Intestinal (analogous crypt) context.\n- Brembeck et al. (2000). DOI: 10.1074/JBC.M004013200 ; PMID:10859317 — Establishes the keratin-type framework and the special status of K19. Simple epithelia express keratins K8 and K18; keratin 19 (K19) is the smallest acidic keratin, has no obligate type II partner, is often found with K8, and can substitute for K18. This defines K8/K18/K19 as the simple-epithelial keratin set relevant to reticulated crypt/M-cell epithelium. Protein/gene-regulation level.\n- Moll et al. (2008). DOI: 10.1007/s00418-008-0435-6 ; PMID:18461349 — Authoritative review of human keratins. Provides the reference framework in which K8/K18 (and K19) are the simple-epithelial keratins, contrasted with K20, the most restricted simple-epithelial keratin (gastrointestinal/urothelial), whose type II partner is usually K8 and which is switched on during terminal differentiation of intestinal villus/surface epithelia. Contextualizes which keratins mark simple vs terminally differentiated GI-type epithelia. Protein-level review.\n\n**Justification:** Parent epithelial cell (CL:0000066). The existing CL:0000682 (M cell of gut) is a gut-specific, NARROWER relative — the tonsil crypt reticulated epithelium contains M-cell-like antigen-transporting cells but is a broader mixed epithelium; a dedicated tonsil/MALT M cell term may also be warranted. Keratins/SPIB/MARCKSL1 are intracellular and kept textual. Species-neutral.\n\n_Source: Azimuth human_tonsil_v2 fine label; reference atlas Massoni-Badosa et al. 2024 (An atlas of cells in the human tonsil, Immunity, DOI 10.1016/j.immuni.2024.01.006). Draft for review — not yet submitted._\n"
+}

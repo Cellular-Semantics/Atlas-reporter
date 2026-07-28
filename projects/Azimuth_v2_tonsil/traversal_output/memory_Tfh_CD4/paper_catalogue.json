@@ -2,7 +2,20 @@
   "238530091": {
     "corpus_id": "238530091",
     "first_author": "King",
-    "authors": ["Hamish W. King", "Kristen L. Wells", "Zohar Shipony", "Arwa S. Kathiria", "Lisa E. Wagar", "C. Lareau", "N. Orban", "R. Capasso", "Mark M. Davis", "L. Steinmetz", "L. James", "W. Greenleaf"],
+    "authors": [
+      "Hamish W. King",
+      "Kristen L. Wells",
+      "Zohar Shipony",
+      "Arwa S. Kathiria",
+      "Lisa E. Wagar",
+      "C. Lareau",
+      "N. Orban",
+      "R. Capasso",
+      "Mark M. Davis",
+      "L. Steinmetz",
+      "L. James",
+      "W. Greenleaf"
+    ],
     "year": 2021,
     "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
     "journal": "Science Immunology",
@@ -12,7 +25,10 @@
   "215778799": {
     "corpus_id": "215778799",
     "first_author": "Hale",
-    "authors": ["J. Hale", "R. Ahmed"],
+    "authors": [
+      "J. Hale",
+      "R. Ahmed"
+    ],
     "year": 2015,
     "title": "Memory T Follicular Helper CD4 T Cells",
     "journal": "Frontiers in Immunology",
@@ -22,7 +38,14 @@
   "9578811": {
     "corpus_id": "9578811",
     "first_author": "Schaerli",
-    "authors": ["P. Schaerli", "K. Willimann", "A. Lang", "M. Lipp", "P. Loetscher", "B. Moser"],
+    "authors": [
+      "P. Schaerli",
+      "K. Willimann",
+      "A. Lang",
+      "M. Lipp",
+      "P. Loetscher",
+      "B. Moser"
+    ],
     "year": 2000,
     "title": "Cxc Chemokine Receptor 5 Expression Defines Follicular Homing T Cells with B Cell Helper Function",
     "journal": "The Journal of Experimental Medicine",
@@ -32,7 +55,22 @@
   "210121629": {
     "corpus_id": "210121629",
     "first_author": "Brenna",
-    "authors": ["Elena Brenna", "A. N. Davydov", "K. Ladell", "J. McLaren", "Paolo Bonaiuti", "Maria Metsger", "J. Ramsden", "S. Gilbert", "T. Lambe", "D. Price", "Suzanne L. Campion", "D. Chudakov", "P. Borrow", "A. McMichael"],
+    "authors": [
+      "Elena Brenna",
+      "A. N. Davydov",
+      "K. Ladell",
+      "J. McLaren",
+      "Paolo Bonaiuti",
+      "Maria Metsger",
+      "J. Ramsden",
+      "S. Gilbert",
+      "T. Lambe",
+      "D. Price",
+      "Suzanne L. Campion",
+      "D. Chudakov",
+      "P. Borrow",
+      "A. McMichael"
+    ],
     "year": 2020,
     "title": "CD4+ T Follicular Helper Cells in Human Tonsils and Blood Are Clonally Convergent but Divergent from Non-Tfh CD4+ Cells",
     "journal": "Cell Reports",
@@ -42,7 +80,17 @@
   "51704711": {
     "corpus_id": "51704711",
     "first_author": "Kim",
-    "authors": ["S. T. Kim", "Jin-Young Choi", "Begoña Lainez", "Vincent P. Schulz", "D. Karas", "Eric D. Baum", "J. Setlur", "P. Gallagher", "J. Craft"],
+    "authors": [
+      "S. T. Kim",
+      "Jin-Young Choi",
+      "Begoña Lainez",
+      "Vincent P. Schulz",
+      "D. Karas",
+      "Eric D. Baum",
+      "J. Setlur",
+      "P. Gallagher",
+      "J. Craft"
+    ],
     "year": 2018,
     "title": "Human Extrafollicular CD4+ T Helper Cells Help Memory B Cells Produce Immunoglobulins",
     "journal": "Journal of Immunology",
@@ -52,7 +100,15 @@
   "2132186": {
     "corpus_id": "2132186",
     "first_author": "Breitfeld",
-    "authors": ["D. Breitfeld", "L. Ohl", "E. Kremmer", "J. Ellwart", "F. Sallusto", "M. Lipp", "R. Förster"],
+    "authors": [
+      "D. Breitfeld",
+      "L. Ohl",
+      "E. Kremmer",
+      "J. Ellwart",
+      "F. Sallusto",
+      "M. Lipp",
+      "R. Förster"
+    ],
     "year": 2000,
     "title": "Follicular B Helper T Cells Express Cxc Chemokine Receptor 5, Localize to B Cell Follicles, and Support Immunoglobulin Production",
     "journal": "The Journal of Experimental Medicine",
@@ -62,7 +118,13 @@
   "205547912": {
     "corpus_id": "205547912",
     "first_author": "Asrir",
-    "authors": ["Assia Asrir", "M. Aloulou", "Mylène Gador", "C. Pérals", "N. Fazilleau"],
+    "authors": [
+      "Assia Asrir",
+      "M. Aloulou",
+      "Mylène Gador",
+      "C. Pérals",
+      "N. Fazilleau"
+    ],
     "year": 2017,
     "title": "Interconnected subsets of memory follicular helper T cells have different effector functions",
     "journal": "Nature Communications",
@@ -72,11 +134,35 @@
   "26540744": {
     "corpus_id": "26540744",
     "first_author": "Heit",
-    "authors": ["A. Heit", "F. Schmitz", "Sarah E. Gerdts", "B. Flach", "M. Moore", "J. Perkins", "J. A. Perkins", "H. Robins", "A. Aderem", "P. Spearman", "G. Tomaras", "S. C. Rosa", "M. McElrath"],
+    "authors": [
+      "A. Heit",
+      "F. Schmitz",
+      "Sarah E. Gerdts",
+      "B. Flach",
+      "M. Moore",
+      "J. Perkins",
+      "J. A. Perkins",
+      "H. Robins",
+      "A. Aderem",
+      "P. Spearman",
+      "G. Tomaras",
+      "S. C. Rosa",
+      "M. McElrath"
+    ],
     "year": 2017,
     "title": "Vaccination establishes clonal relatives of germinal center T cells in the blood of humans",
     "journal": "The Journal of Experimental Medicine",
     "doi": "10.1084/jem.20161794",
     "pmid": "28637884"
+  },
+  "250093999": {
+    "corpus_id": "250093999",
+    "first_author": "Massoni-Badosa",
+    "authors": "Massoni-Badosa R, Soler-Vila P, Aguilar-Fernández S, et al.",
+    "year": 2024,
+    "title": "An atlas of cells in the human tonsil",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2024.01.006",
+    "pmid": "PMID:38301653"
   }
 }

@@ -1,0 +1,41 @@
+{
+  "cell_type_label": "reticulated crypt epithelial cell (lymphoepithelium) of the palatine tonsil",
+  "working_definition": "The reticulated crypt epithelial cell of the palatine tonsil is a specialized, antigen-sampling epithelial cell lining the deep invaginations (crypts) of the palatine tonsil, forming a lymphoepithelium that is heavily infiltrated by lymphocytes and other immune cells. It expresses simple-epithelial keratins (KRT8/KRT18/KRT19), has a thin or discontinuous basement membrane, and harbours M (microfold) cells defined by the transcription factor SPIB and early marker MARCKSL1 that transcytose luminal antigens to underlying lymphoid tissue. As a mixed population, this cluster encompasses both the non-M-cell reticulated crypt epithelium and the embedded antigen-transporting M-cell contingent — functionally analogous to the follicle-associated epithelium of gut Peyer's patches but located in a non-gut secondary lymphoid organ (palatine tonsil).",
+  "searches_performed": [
+    "microfold cell",
+    "M cell",
+    "reticulated epithelial cell",
+    "crypt epithelial cell",
+    "lymphoepithelial cell",
+    "epithelial cell mucosa-associated lymphoid tissue",
+    "follicle-associated epithelial cell",
+    "antigen-sampling epithelial cell",
+    "tonsil epithelial cell",
+    "SPIB epithelial"
+  ],
+  "best_match": {
+    "cl_term": "M cell of gut",
+    "cl_id": "CL:0000682",
+    "cl_definition": "An absorptive cell of the gut epithelium that endocytoses microorganisms and intact macromolecules from the gut lumen and transports them to the subepithelial space where they are presented to antigen-presenting cells and lymphocytes.",
+    "match_type": "narrow match",
+    "skos_mapping": "skos:narrowMatch",
+    "confidence": "low"
+  },
+  "justification": "CL:0000682 'M cell of gut' is the closest available CL term because it captures the defining functional property of antigen endocytosis and transcytosis to subepithelial lymphoid tissue, which is also the key function of the M-cell contingent embedded in the tonsil crypt epithelium. However, the match is narrow for two compounding reasons: (1) CL:0000682 is restricted to the gut epithelium, whereas the atlas cluster is located in the palatine tonsil — a pharyngeal secondary lymphoid organ, not an alimentary canal structure; (2) the atlas 'Crypt' cluster is a mixed reticulated epithelium, not a pure M-cell population — it includes ordinary crypt-lining epithelial cells (marked by KRT8/KRT18/KRT19) alongside M cells (marked by SPIB/MARCKSL1), so the report cell type is broader than CL:0000682 in cellular composition. CL has no term for tonsil lymphoepithelium, reticulated crypt epithelium, follicle-associated epithelium of non-gut lymphoid tissue, or any tonsil epithelial cell type. The curator-suggested broad parent CL:0000066 'epithelial cell' (definition: 'A cell that is usually found in a two-dimensional sheet with a free surface') is technically correct as a very high-level ancestor but is too general to be informative as a mapping. CL:0000682 is preferred as best match because it shares the antigen-transcytosis function, even though the tissue site is wrong and the scope is narrower than the atlas cluster.",
+  "other_candidates": [
+    {
+      "cl_term": "epithelial cell",
+      "cl_id": "CL:0000066",
+      "cl_definition": "A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina.",
+      "reason_rejected": "Overly broad — covers all epithelial cells without any specificity for antigen-sampling, lymphoid-organ location, or reticulated/lymphoepithelial identity. Useful only as an ancestor if no narrower term exists, but CL:0000682, while imperfect, conveys more biology about the antigen-transport function."
+    },
+    {
+      "cl_term": "microfold cell of epithelium of small intestine",
+      "cl_id": "CL:1000353",
+      "cl_definition": "A M cell that is part of the epithelium of small intestine.",
+      "reason_rejected": "More specific than CL:0000682 in the wrong direction — restricted to small intestine. The atlas cluster is in palatine tonsil and encompasses non-M-cell reticulated epithelium in addition to M cells, so this term is doubly mismatched (wrong tissue and too narrow in cell-type scope)."
+    }
+  ],
+  "recommendation": "A new CL term is needed for 'reticulated crypt epithelial cell of palatine tonsil' (or equivalently 'lymphoepithelial cell of palatine tonsil crypt'). This term should be defined as an epithelial cell of the reticulated/lymphoepithelium lining the tonsillar crypts, expressing simple-epithelial keratins (KRT8/KRT18/KRT19), situated in a discontinuous-basement-membrane environment heavily infiltrated by lymphocytes, and participating in antigen sampling and transport to underlying lymphoid tissue. The new term would be a sibling to (or a parent of) any future tonsil M-cell term and would belong under an 'epithelial cell of secondary lymphoid organ' grouping not currently present in CL. Parent candidate: CL:0000066 epithelial cell. The M-cell subpopulation within this cluster could further be represented by a new 'microfold cell of palatine tonsil' term, which would be a sibling to CL:0000682 'M cell of gut' under a shared 'microfold cell' parent (currently lacking in CL).",
+  "new_term_needed": true
+}

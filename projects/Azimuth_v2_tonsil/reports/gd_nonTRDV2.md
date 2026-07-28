@@ -1,6 +1,6 @@
 # Non-Vδ2 (TRDV2-negative) γδ T Cells in the Human Palatine Tonsil
 
-Atlas: Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci (King et al., 2021) (DOI: 10.1126/sciimmunol.abh3768)
+Atlas: An atlas of cells in the human tonsil (Massoni-Badosa et al., 2024) — Azimuth human_tonsil_v2 reference (DOI: 10.1016/j.immuni.2024.01.006). Upstream starting annotation: King et al. (2021) (DOI: 10.1126/sciimmunol.abh3768)
 Scope: adult
 Tissue context: palatine tonsil
 Cell Ontology: [V1delta gamma-delta T cell](http://purl.obolibrary.org/obo/CL_0020001) (CL:0020001, broad match — no exact CL term) — NTR: obophenotype/cell-ontology#3678

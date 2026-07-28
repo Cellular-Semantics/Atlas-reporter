@@ -142,6 +142,7 @@ falls (Anania et al., 2021):
 > — Anania et al. (2021)
 
 ## References
+- Massoni-Badosa R et al. (2024). "An atlas of cells in the human tonsil". *Immunity*. DOI: [10.1016/j.immuni.2024.01.006](https://doi.org/10.1016/j.immuni.2024.01.006) — Azimuth human_tonsil_v2 reference atlas
 
 - King HW et al. (2021). "Single-cell analysis of human B cell maturation predicts how antibody class switching shapes selection dynamics". *Science Immunology*. DOI: [10.1126/sciimmunol.abh3768](https://doi.org/10.1126/sciimmunol.abh3768)
 - Pikor N et al. (2020). "Remodeling of light and dark zone follicular dendritic cells governs germinal center responses". *Nature Immunology*. DOI: [10.1038/s41590-020-0672-y](https://doi.org/10.1038/s41590-020-0672-y)

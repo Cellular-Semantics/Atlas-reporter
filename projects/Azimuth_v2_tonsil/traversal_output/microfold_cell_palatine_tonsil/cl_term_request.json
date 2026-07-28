@@ -1,0 +1,78 @@
+{
+  "cell_type_label": "microfold_cell_palatine_tonsil",
+  "suggested_label": "microfold cell of palatine tonsil",
+  "definition": "A microfold cell that is part of the epithelium of the palatine tonsil, a nasopharynx-associated / Waldeyer's-ring mucosa-associated lymphoid tissue. It is specialized for transcytosis of luminal antigen across the tonsil crypt (reticulated) lymphoepithelium to underlying lymphoid tissue, expressing the conserved microfold-cell program (SPIB, SOX8, GP2, MARCKSL1). It is a distinct antigen-transporting cell type co-resident with, but separate from, the crypt reticulated epithelial cell. In current tonsil single-cell atlases it is under-resolved (M-cell markers appear scattered within the 'crypt cell' cluster), whereas in the adenoid (a related Waldeyer's-ring MALT) it is resolved as distinct immature and mature microfold-cell clusters.",
+  "parent_term": {
+    "cl_id": "CL:0000066",
+    "cl_term": "epithelial cell"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0013696",
+    "uberon_term": "tonsil epithelium"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "tonsil epithelium",
+      "filler_id": "UBERON:0013696",
+      "notes": "Resides in the crypt (reticulated) epithelium of the palatine tonsil."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "transcytosis",
+      "filler_id": "GO:0045056",
+      "notes": "Transcytoses luminal antigen across the tonsil crypt epithelium."
+    },
+    {
+      "relation": "capable of part of",
+      "relation_id": "RO:0002216",
+      "filler": "mucosal immune response",
+      "filler_id": "GO:0002385",
+      "notes": "Delivers antigen to sub-epithelial lymphoid tissue, initiating mucosal immunity."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "M cell of palatine tonsil",
+      "scope": "exact"
+    },
+    {
+      "value": "tonsil microfold cell",
+      "scope": "exact"
+    },
+    {
+      "value": "Waldeyer's ring M cell",
+      "scope": "related"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.1016/j.mucimm.2025.07.006",
+      "pmid": "PMID:40721095",
+      "citation": "Alvarez-Arguedas et al. (2025)",
+      "supports": "Human adenoid (NALT, Waldeyer's ring) M cells resolved as distinct immature/mature clusters; share a common gene set with palatine-tonsil M cells and gut/airway M cells."
+    },
+    {
+      "doi": "10.1016/j.immuni.2024.01.006",
+      "pmid": "PMID:38301653",
+      "citation": "Massoni-Badosa et al. (2024)",
+      "supports": "Human tonsil atlas: M-cell markers (SPIB, MARCKSL1) detected within 'crypt' epithelial cells but no discrete M-cell cluster annotated (under-resolved)."
+    },
+    {
+      "doi": "10.1084/jem.20181604",
+      "pmid": "PMID:30877171",
+      "citation": "Kimura et al. (2019)",
+      "supports": "Conserved SOX8-dependent M-cell maturation program."
+    },
+    {
+      "doi": "10.1165/rcmb.2024-0002ED",
+      "pmid": "PMID:38301262",
+      "citation": "Han (2024)",
+      "supports": "Cross-MALT conservation of the M-cell program (gut/airway)."
+    }
+  ],
+  "justification": "Intended DIRECT PARENT is the proposed general 'microfold cell' term (companion NTR #3684); parent is set provisionally to epithelial cell (CL:0000066) here because the general term does not yet exist. M cells of the palatine tonsil are long established by ultrastructure/immunohistology and share the conserved M-cell program; they are under-resolved in current tonsil scRNA atlases (markers within 'crypt cells') but resolved in the adenoid. This is a DISTINCT cell type co-resident in the crypt reticulated epithelium — NOT a subtype of the crypt epithelial cell (see companion crypt NTR). Species-neutral. GP2/SPIB/SOX8/MARCKSL1 kept textual.",
+  "ntr_markdown": "## New term request: microfold cell of palatine tonsil\n\n**Proposed label:** microfold cell of palatine tonsil\n\n**Definition:** A microfold cell that is part of the epithelium of the palatine tonsil, a nasopharynx-associated / Waldeyer's-ring mucosa-associated lymphoid tissue. It is specialized for transcytosis of luminal antigen across the tonsil crypt (reticulated) lymphoepithelium to underlying lymphoid tissue, expressing the conserved microfold-cell program (SPIB, SOX8, GP2, MARCKSL1). It is a distinct antigen-transporting cell type co-resident with, but separate from, the crypt reticulated epithelial cell. In current tonsil single-cell atlases it is under-resolved (M-cell markers appear scattered within the 'crypt cell' cluster), whereas in the adenoid (a related Waldeyer's-ring MALT) it is resolved as distinct immature and mature microfold-cell clusters.\n\n**Parent (is_a):** epithelial cell (CL:0000066)\n\n**Anatomical location:** tonsil epithelium (UBERON:0013696)\n\n**Logical axioms:**\n- `part of` (BFO:0000050) some **tonsil epithelium** (UBERON:0013696) — Resides in the crypt (reticulated) epithelium of the palatine tonsil.\n- `capable of` (RO:0002215) some **transcytosis** (GO:0045056) — Transcytoses luminal antigen across the tonsil crypt epithelium.\n- `capable of part of` (RO:0002216) some **mucosal immune response** (GO:0002385) — Delivers antigen to sub-epithelial lymphoid tissue, initiating mucosal immunity.\n\n**Synonyms:**\n- M cell of palatine tonsil (exact)\n- tonsil microfold cell (exact)\n- Waldeyer's ring M cell (related)\n\n**References:**\n- Alvarez-Arguedas et al. (2025). DOI: 10.1016/j.mucimm.2025.07.006 ; PMID:40721095 — Human adenoid (NALT, Waldeyer's ring) M cells resolved as distinct immature/mature clusters; share a common gene set with palatine-tonsil M cells and gut/airway M cells.\n- Massoni-Badosa et al. (2024). DOI: 10.1016/j.immuni.2024.01.006 ; PMID:38301653 — Human tonsil atlas: M-cell markers (SPIB, MARCKSL1) detected within 'crypt' epithelial cells but no discrete M-cell cluster annotated (under-resolved).\n- Kimura et al. (2019). DOI: 10.1084/jem.20181604 ; PMID:30877171 — Conserved SOX8-dependent M-cell maturation program.\n- Han (2024). DOI: 10.1165/rcmb.2024-0002ED ; PMID:38301262 — Cross-MALT conservation of the M-cell program (gut/airway).\n\n**Justification:** Intended DIRECT PARENT is the proposed general 'microfold cell' term (companion NTR #3684); parent is set provisionally to epithelial cell (CL:0000066) here because the general term does not yet exist. M cells of the palatine tonsil are long established by ultrastructure/immunohistology and share the conserved M-cell program; they are under-resolved in current tonsil scRNA atlases (markers within 'crypt cells') but resolved in the adenoid. This is a DISTINCT cell type co-resident in the crypt reticulated epithelium — NOT a subtype of the crypt epithelial cell (see companion crypt NTR). Species-neutral. GP2/SPIB/SOX8/MARCKSL1 kept textual.\n\n_Draft for review — not yet submitted._\n"
+}

@@ -2,7 +2,20 @@
   "238530091": {
     "corpus_id": "238530091",
     "first_author": "King",
-    "authors": ["Hamish W. King", "Kristen L. Wells", "Zohar Shipony", "Arwa S. Kathiria", "Lisa E. Wagar", "C. Lareau", "N. Orban", "R. Capasso", "Mark M. Davis", "L. Steinmetz", "L. James", "W. Greenleaf"],
+    "authors": [
+      "Hamish W. King",
+      "Kristen L. Wells",
+      "Zohar Shipony",
+      "Arwa S. Kathiria",
+      "Lisa E. Wagar",
+      "C. Lareau",
+      "N. Orban",
+      "R. Capasso",
+      "Mark M. Davis",
+      "L. Steinmetz",
+      "L. James",
+      "W. Greenleaf"
+    ],
     "year": 2021,
     "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
     "journal": "Science Immunology",
@@ -12,7 +25,11 @@
   "237279487": {
     "corpus_id": "237279487",
     "first_author": "Arambula",
-    "authors": ["Alexandra M Arambula", "Jason R. Brown", "Laura L. Neff"],
+    "authors": [
+      "Alexandra M Arambula",
+      "Jason R. Brown",
+      "Laura L. Neff"
+    ],
     "year": 2021,
     "title": "Anatomy and physiology of the palatine tonsils, adenoids, and lingual tonsils",
     "journal": "World Journal of Otorhinolaryngology - Head and Neck Surgery",
@@ -22,7 +39,10 @@
   "256229073": {
     "corpus_id": "256229073",
     "first_author": "Ferris",
-    "authors": ["R. Ferris", "W. Westra"],
+    "authors": [
+      "R. Ferris",
+      "W. Westra"
+    ],
     "year": 2023,
     "title": "Oropharyngeal Carcinoma with a Special Focus on HPV-Related Squamous Cell Carcinoma",
     "journal": "Annual Review of Pathology",
@@ -32,7 +52,12 @@
   "234349441": {
     "corpus_id": "234349441",
     "first_author": "Okda",
-    "authors": ["Faten A. Okda", "A. Sakr", "R. Webster", "R. Webby"],
+    "authors": [
+      "Faten A. Okda",
+      "A. Sakr",
+      "R. Webster",
+      "R. Webby"
+    ],
     "year": 2021,
     "title": "Tropism, susceptibility, infectivity, and cytokine releases of differentiated human tonsillar epithelial cells by different Influenza viruses",
     "journal": "bioRxiv",
@@ -42,7 +67,12 @@
   "102346192": {
     "corpus_id": "102346192",
     "first_author": "Roberts",
-    "authors": ["S. Roberts", "D. Evans", "H. Mehanna", "Joanna L. Parish"],
+    "authors": [
+      "S. Roberts",
+      "D. Evans",
+      "H. Mehanna",
+      "Joanna L. Parish"
+    ],
     "year": 2019,
     "title": "Modelling human papillomavirus biology in oropharyngeal keratinocytes",
     "journal": "Philosophical Transactions of the Royal Society B: Biological Sciences",
@@ -52,7 +82,20 @@
   "282313758": {
     "corpus_id": "282313758",
     "first_author": "Crowell",
-    "authors": ["Helena L. Crowell", "L. Llaó-Cid", "G. Frigola", "Samuel Gunz", "Irene Ruano", "Patricia Lorden", "Max Ruiz", "M. Kulis", "J. Martín-Subero", "H. Heyn", "E. Campo", "A. Pascual-Reguant"],
+    "authors": [
+      "Helena L. Crowell",
+      "L. Llaó-Cid",
+      "G. Frigola",
+      "Samuel Gunz",
+      "Irene Ruano",
+      "Patricia Lorden",
+      "Max Ruiz",
+      "M. Kulis",
+      "J. Martín-Subero",
+      "H. Heyn",
+      "E. Campo",
+      "A. Pascual-Reguant"
+    ],
     "year": 2025,
     "title": "A Transcriptional Map of Human Tonsil Architecture: Beyond the Sum of (Single Cell) Parts",
     "journal": "European Journal of Immunology",
@@ -62,7 +105,15 @@
   "51758839": {
     "corpus_id": "51758839",
     "first_author": "Bucolo",
-    "authors": ["S. Bucolo", "V. Torre", "G. Romano", "C. Quattrocchi", "F. Farri", "M. Filidoro", "C. Caldarelli"],
+    "authors": [
+      "S. Bucolo",
+      "V. Torre",
+      "G. Romano",
+      "C. Quattrocchi",
+      "F. Farri",
+      "M. Filidoro",
+      "C. Caldarelli"
+    ],
     "year": 2013,
     "title": "Effects of Tonsillectomy on Psoriasis and Tonsil Histology-Ultrastructure",
     "journal": "InTech (book chapter)",
@@ -72,7 +123,17 @@
   "280332524": {
     "corpus_id": "280332524",
     "first_author": "Alvarez-Arguedas",
-    "authors": ["Samuel Alvarez-Arguedas", "Khadija Mazhar", "Andi Wangzhou", "Ishwarya Sankaranarayanan", "Gabriela Gaona", "J. Lafin", "Ron B Mitchell", "Theodore J. Price", "M. Shiloh"],
+    "authors": [
+      "Samuel Alvarez-Arguedas",
+      "Khadija Mazhar",
+      "Andi Wangzhou",
+      "Ishwarya Sankaranarayanan",
+      "Gabriela Gaona",
+      "J. Lafin",
+      "Ron B Mitchell",
+      "Theodore J. Price",
+      "M. Shiloh"
+    ],
     "year": 2025,
     "title": "Single cell transcriptional analysis of human adenoids identifies molecular features of airway microfold cells",
     "journal": "Mucosal Immunology",
@@ -82,7 +143,20 @@
   "282206075": {
     "corpus_id": "282206075",
     "first_author": "Kitazawa",
-    "authors": ["Sohei Kitazawa", "E. Takeshita", "H. Tomida", "T. Miyake", "Y. Ikeda", "Seiya Bekku", "Ryuma Haraguchi", "Yuki Takaoka", "Teruyuki Ohno", "Mashio Taniwaki", "Y. Hiasa", "R. Kitazawa"],
+    "authors": [
+      "Sohei Kitazawa",
+      "E. Takeshita",
+      "H. Tomida",
+      "T. Miyake",
+      "Y. Ikeda",
+      "Seiya Bekku",
+      "Ryuma Haraguchi",
+      "Yuki Takaoka",
+      "Teruyuki Ohno",
+      "Mashio Taniwaki",
+      "Y. Hiasa",
+      "R. Kitazawa"
+    ],
     "year": 2025,
     "title": "Spatial transcriptomic analysis of foveolar-type gastric adenoma with raspberry-like appearance",
     "journal": "Virchows Archiv",
@@ -92,7 +166,12 @@
   "250010765": {
     "corpus_id": "250010765",
     "first_author": "Qi",
-    "authors": ["Shi Qi", "Shoulong Deng", "Zhengxing Lian", "Kun Yu"],
+    "authors": [
+      "Shi Qi",
+      "Shoulong Deng",
+      "Zhengxing Lian",
+      "Kun Yu"
+    ],
     "year": 2022,
     "title": "Novel Drugs with High Efficacy against Tumor Angiogenesis",
     "journal": "International Journal of Molecular Sciences",
@@ -102,7 +181,14 @@
   "278460783": {
     "corpus_id": "278460783",
     "first_author": "Li",
-    "authors": ["Zhiru Li", "Li Zeng", "Wei Huang", "Xinxing Zhang", "Li Zhang", "Qin Xie"],
+    "authors": [
+      "Zhiru Li",
+      "Li Zeng",
+      "Wei Huang",
+      "Xinxing Zhang",
+      "Li Zhang",
+      "Qin Xie"
+    ],
     "year": 2025,
     "title": "Angiogenic Factors and Inflammatory Bowel Diseases",
     "journal": "Biomedicines",
@@ -112,11 +198,36 @@
   "231777000": {
     "corpus_id": "231777000",
     "first_author": "Sarmiento Varón",
-    "authors": ["Lindybeth Sarmiento Varón", "J. De Rosa", "R. Rodriguez", "P. Fernández", "L. A. Billordo", "Plácida Baz", "Gladys Beccaglia", "N. Spada", "F. T. Mendoza", "C. Barberis", "C. Vay", "M. E. Arabolaza", "Bibiana Paoli", "E. Arana"],
+    "authors": [
+      "Lindybeth Sarmiento Varón",
+      "J. De Rosa",
+      "R. Rodriguez",
+      "P. Fernández",
+      "L. A. Billordo",
+      "Plácida Baz",
+      "Gladys Beccaglia",
+      "N. Spada",
+      "F. T. Mendoza",
+      "C. Barberis",
+      "C. Vay",
+      "M. E. Arabolaza",
+      "Bibiana Paoli",
+      "E. Arana"
+    ],
     "year": 2021,
     "title": "Role of Tonsillar Chronic Inflammation and Commensal Bacteria in the Pathogenesis of Pediatric OSA",
     "journal": "Frontiers in Immunology",
     "doi": "10.3389/fimmu.2021.648064",
     "pmid": "33995367"
+  },
+  "250093999": {
+    "corpus_id": "250093999",
+    "first_author": "Massoni-Badosa",
+    "authors": "Massoni-Badosa R, Soler-Vila P, Aguilar-Fernández S, et al.",
+    "year": 2024,
+    "title": "An atlas of cells in the human tonsil",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2024.01.006",
+    "pmid": "PMID:38301653"
   }
 }

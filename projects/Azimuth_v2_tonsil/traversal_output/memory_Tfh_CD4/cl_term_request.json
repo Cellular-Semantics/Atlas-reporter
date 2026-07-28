@@ -123,7 +123,13 @@
       "doi": "10.1126/sciimmunol.abh3768",
       "pmid": "PMID:34623901",
       "citation": "King et al. (2021)",
-      "supports": "Source atlas: memory Tfh annotated in human tonsil single-cell transcriptomic atlas (Azimuth human_tonsil_v2)"
+      "supports": "Upstream tonsil single-cell study used as a starting annotation by the reference atlas."
+    },
+    {
+      "doi": "10.1016/j.immuni.2024.01.006",
+      "pmid": "PMID:38301653",
+      "citation": "Massoni-Badosa et al. (2024)",
+      "supports": "Azimuth human_tonsil_v2 single-cell reference atlas (source of the cell-type annotation)."
     }
   ],
   "justification": "CL:0002038 (T follicular helper cell) captures the core Tfh identity (CD4+, CXCR5+, CCR7-, BCL6-high, ICOS-high, PD1-high, follicle-resident, B-cell helper) but does not encode the antigen-experienced memory/persistence state that defines this atlas population. The atlas cell type is explicitly CD45RA-negative and CD45RO-positive, persists after a germinal-centre response, and retains the capacity to recall follicular helper effector functions on antigen re-encounter — properties absent from the CL:0002038 definition. No CL term for a memory T follicular helper cell currently exists. The new term should be placed as a child of both CL:0002038 (T follicular helper cell, primary parent, providing follicular-helper specialisation) and CL:0000897 (CD4-positive, alpha-beta memory T cell, second parent, providing the memory/antigen-experienced identity). The location axiom for palatine tonsil is not proposed as a subClassOf restriction because memory Tfh cells are found in multiple secondary lymphoid organs and also circulate in blood (Asrir et al. 2017); the tonsil is the tissue context of the atlas but not a defining anatomical restriction for the cell type.",

@@ -5,12 +5,17 @@
   "GC_T_OX40": "https://github.com/obophenotype/cell-ontology/issues/3670",
   "GC_T_SAP": "https://github.com/obophenotype/cell-ontology/issues/3671",
   "central_memory_preTfh": "https://github.com/obophenotype/cell-ontology/issues/3672",
-  "epithelial_VEGFA": "https://github.com/obophenotype/cell-ontology/issues/3673",
   "follicular_CD8_T": "https://github.com/obophenotype/cell-ontology/issues/3674",
   "memory_Tfh_CD4": "https://github.com/obophenotype/cell-ontology/issues/3675",
   "gd_MAIT_TRDV2": "https://github.com/obophenotype/cell-ontology/issues/3676",
   "gd_MAIT_CD161_TRDV2": "https://github.com/obophenotype/cell-ontology/issues/3677",
   "gd_nonTRDV2": "https://github.com/obophenotype/cell-ontology/issues/3678",
   "GC_B_dark_zone": "https://github.com/obophenotype/cell-ontology/issues/3679",
-  "LZ_Tfh": "https://github.com/obophenotype/cell-ontology/issues/3680"
+  "LZ_Tfh": "https://github.com/obophenotype/cell-ontology/issues/3680",
+  "_3673_epithelial_VEGFA_CLOSED": "https://github.com/obophenotype/cell-ontology/issues/3673",
+  "epi_surface": "https://github.com/obophenotype/cell-ontology/issues/3681",
+  "epi_crypt": "https://github.com/obophenotype/cell-ontology/issues/3682",
+  "epi_FDCSP": "https://github.com/obophenotype/cell-ontology/issues/3683",
+  "microfold_cell_general": "https://github.com/obophenotype/cell-ontology/issues/3684",
+  "microfold_cell_palatine_tonsil": "https://github.com/obophenotype/cell-ontology/issues/3685"
 }

@@ -1,0 +1,15 @@
+{
+  "label": "Outer surface epithelial cell (tonsil surface)",
+  "resolved_names": [
+    "tonsil surface epithelium",
+    "surface (lining) stratified squamous epithelium",
+    "stratified surface epithelial cell",
+    "keratinizing squamous epithelial cell of the palatine tonsil surface",
+    "K5+/K14+ surface epithelial cell"
+  ],
+  "scope": "adult",
+  "granularity": "fine",
+  "tissue_context": "palatine tonsil surface (lining) epithelium, continuous with the stratified squamous epithelium of the oral mucosa",
+  "confidence": "high",
+  "evidence": "Massoni-Badosa et al. (2024) identified epithelial clusters overlapping the keratinocyte populations of the oral mucosa (one being FDCSP epithelium). Independent human-tonsil literature (Okda et al. 2021; Crowell et al. 2025; Jackson et al. 2023; Sarmiento Varon et al. 2021; Kumar et al. 2006) resolves the tonsil epithelium into two compartments: a surface (lining) stratified squamous, keratinizing epithelium marked by K5/K14, and a reticulated crypt epithelium marked by K8/K18/K19. The Outer surface / surface cluster corresponds to the K5+/K14+ stratified squamous surface (lining) compartment."
+}

@@ -1,22 +1,27 @@
 {
   "source": {
-    "doi": "10.1126/sciimmunol.abh3768",
-    "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
+    "doi": "10.1016/j.immuni.2024.01.006",
+    "title": "An atlas of cells in the human tonsil",
     "authors": [
-      "Hamish W. King",
-      "Kristen L. Wells",
-      "Zohar Shipony",
-      "Arwa S. Kathiria",
-      "Lisa E. Wagar",
-      "Caleb Lareau",
-      "Nara Orban",
-      "Robson Capasso",
-      "Mark M. Davis",
-      "Lars M. Steinmetz",
-      "Louisa K. James",
-      "William J. Greenleaf"
+      "Ramon Massoni-Badosa",
+      "Paula Soler-Vila",
+      "Sergio Aguilar-Fernández",
+      "et al.",
+      "Elias Campo",
+      "José Ignacio Martín-Subero",
+      "Holger Heyn"
     ],
-    "reference_pmid": "PMID:34623901",
+    "reference_pmid": "PMID:38301653",
+    "corpus_id": "250093999",
+    "journal": "Immunity",
+    "year": 2024,
+    "upstream_starting_annotation": {
+      "note": "King et al. 2021 was used by the atlas as a starting annotation for some compartments; it is NOT the reference atlas itself.",
+      "doi": "10.1126/sciimmunol.abh3768",
+      "pmid": "PMID:34623901",
+      "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci"
+    },
+    "provenance_correction": "2026-07-28: source atlas corrected from King et al. 2021 to Massoni-Badosa et al. 2024 (the actual Azimuth human_tonsil_v2 reference). Confirmed by verbatim label match (COL27A1+ FDC, CD14+CD55+ FDC, SAP+/OX40+ Tfh, 4 slan-like subsets, pre-Tfh, FDCSP epithelium) and the paper's statement that its reference was 'included in Azimuth'.",
     "atlas_reference": "Azimuth human_tonsil_v2 (https://azimuth.hubmapconsortium.org/references/human_tonsil_v2/)"
   },
   "annotations": [

@@ -122,6 +122,7 @@ No dedicated ultrastructural or morphological description of this subset was fou
 The curated Azimuth-to-CL map assigned parent CL:0000895 (a CD4-naive term), which is incorrect for a CD8+ population. The correct parent is **CL:0000625 (CD8-positive, alpha-beta T cell)**. The follicular/CXCR5+ specialisation described above is not captured by an existing exact CL term; a new-term request downstream will formalise this correction.
 
 ## References
+- Massoni-Badosa R et al. (2024). "An atlas of cells in the human tonsil". *Immunity*. DOI: [10.1016/j.immuni.2024.01.006](https://doi.org/10.1016/j.immuni.2024.01.006) — Azimuth human_tonsil_v2 reference atlas
 
 - King HW et al. (2021). "Single-cell analysis of human B cell maturation predicts how antibody class switching shapes selection dynamics". *Science Immunology*. DOI: [10.1126/sciimmunol.abh3768](https://doi.org/10.1126/sciimmunol.abh3768)
 - Valentine KM & Hoyer K (2019). "CXCR5+ CD8 T Cells: Protective or Pathogenic?". *Frontiers in Immunology*. DOI: [10.3389/fimmu.2019.01322](https://doi.org/10.3389/fimmu.2019.01322)

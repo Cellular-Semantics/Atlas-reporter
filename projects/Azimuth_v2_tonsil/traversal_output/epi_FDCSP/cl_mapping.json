@@ -1,0 +1,35 @@
+{
+  "cell_type_label": "FDCSP epithelium",
+  "working_definition": "FDCSP epithelium is a specialised subpopulation of the adult human palatine tonsil epithelium, defined in the Massoni-Badosa et al. (2024) tonsil cell atlas by expression of FDCSP (follicular dendritic cell secreted protein) and KRTDAP (keratinocyte differentiation-associated protein). It is localised to the tonsillar crypts and overlaps with the keratinocyte populations of the oral mucosa, indicating a stratified squamous / keratinocyte-type identity. The population secretes FDCSP, an immune-modulatory peptide that binds activated B cells, providing a crypt-associated epithelial niche with immunological activity.",
+  "searches_performed": [
+    "FDCSP epithelium",
+    "tonsil epithelial cell",
+    "crypt epithelial cell",
+    "epithelial cell of mucosa-associated lymphoid tissue",
+    "epithelial cell",
+    "keratinocyte",
+    "oral mucosa epithelial cell",
+    "squamous epithelial cell",
+    "oral cavity epithelial cell",
+    "pharyngeal epithelial cell"
+  ],
+  "best_match": {
+    "cl_term": "keratinocyte",
+    "cl_id": "CL:0000312",
+    "cl_definition": "An epithelial cell of stratified squamous tissues, including skin, oral mucosa (Hiroshima et al., 2011), and esophagus (Whelan et al., 2018), that produces keratin proteins and secretes antimicrobial peptides to form a resilient barrier against environmental damage, dehydration, pathogens, and microbial invasion. It undergoes successive stages of differentiation marked by changes in keratin expression, supporting tissue integrity, wound repair, and contributing to immune defense.",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "The CL definition of keratinocyte explicitly includes epithelial cells of the oral mucosa with a stratified squamous identity and keratin-based differentiation programme — consistent with the atlas description of FDCSP epithelium as overlapping oral-mucosa keratinocyte populations and expressing KRTDAP (a keratinocyte differentiation marker). The FDCSP epithelium IS-A keratinocyte in a broad sense. However, the CL keratinocyte term does not capture the distinguishing features of this population: (1) FDCSP expression as a defining marker, (2) restriction to the tonsillar crypt compartment, and (3) the secretion of an immune-modulatory peptide that engages activated B cells. These features are not found in the CL keratinocyte definition, making this a broad match rather than an exact match. No tonsil-specific, crypt-specific, or FDCSP-specific epithelial cell term exists in CL: searches for 'FDCSP epithelium', 'tonsil epithelial cell', 'crypt epithelial cell', 'epithelial cell of mucosa-associated lymphoid tissue', and related variants all returned zero results.",
+  "other_candidates": [
+    {
+      "cl_term": "epithelial cell",
+      "cl_id": "CL:0000066",
+      "cl_definition": "A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina.",
+      "reason_rejected": "Too generic: covers all epithelial cells regardless of tissue, lineage, or differentiation programme. CL:0000312 (keratinocyte) is a more informative broad parent that captures the stratified squamous / oral-mucosa keratinocyte identity of this population."
+    }
+  ],
+  "recommendation": "Use CL:0000312 (keratinocyte) as a broad match parent pending a new CL term. A new term request is needed for 'FDCSP-expressing crypt epithelial cell of palatine tonsil' (or similar), defined as a keratinocyte of the tonsillar crypt epithelium characterised by expression of FDCSP and KRTDAP, with a proposed parent of CL:0000312. Evidence base: Massoni-Badosa et al. (2024), Immunity, DOI: 10.1016/j.immuni.2024.01.006.",
+  "new_term_needed": true
+}

@@ -1,0 +1,62 @@
+{
+  "250093999": {
+    "corpus_id": "250093999",
+    "first_author": "Massoni-Badosa",
+    "authors": ["Ramon Massoni-Badosa", "Paula Soler-Vila", "Sergio Aguilar-Fernández", "et al.", "E. Campo", "J. Martín-Subero", "H. Heyn"],
+    "year": 2024,
+    "title": "An atlas of cells in the human tonsil",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2024.01.006",
+    "pmid": "38301653"
+  },
+  "234349441": {
+    "corpus_id": "234349441",
+    "first_author": "Okda",
+    "authors": ["Faten A. Okda", "A. Sakr", "R. Webster", "R. Webby"],
+    "year": 2021,
+    "title": "Tropism, susceptibility, infectivity, and cytokine releases of differentiated human tonsillar epithelial cells by different Influenza viruses",
+    "journal": "bioRxiv",
+    "doi": "10.1101/2021.05.03.442542",
+    "pmid": null
+  },
+  "282313758": {
+    "corpus_id": "282313758",
+    "first_author": "Crowell",
+    "authors": ["Helena L. Crowell", "L. Llaó-Cid", "G. Frigola", "et al.", "H. Heyn", "E. Campo", "A. Pascual-Reguant"],
+    "year": 2025,
+    "title": "A Transcriptional Map of Human Tonsil Architecture: Beyond the Sum of (Single Cell) Parts",
+    "journal": "European Journal of Immunology",
+    "doi": "10.1002/eji.70121",
+    "pmid": "41518352"
+  },
+  "263669038": {
+    "corpus_id": "263669038",
+    "first_author": "Jackson",
+    "authors": ["Robert Jackson", "Esha V Rajadhyaksha", "Reid S Loeffler", "Caitlyn E Flores", "Koenraad van Doorslaer"],
+    "year": 2023,
+    "title": "Characterization of 3D organotypic epithelial tissues reveals tonsil-specific differences in tonic interferon signaling",
+    "journal": "PLOS ONE",
+    "doi": "10.1371/journal.pone.0292368",
+    "pmid": "37792852"
+  },
+  "231777000": {
+    "corpus_id": "231777000",
+    "first_author": "Sarmiento Varón",
+    "authors": ["Lindybeth Sarmiento Varón", "J. De Rosa", "R. Rodriguez", "et al.", "E. Arana"],
+    "year": 2021,
+    "title": "Role of Tonsillar Chronic Inflammation and Commensal Bacteria in the Pathogenesis of Pediatric OSA",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2021.648064",
+    "pmid": "33995367"
+  },
+  "18422374": {
+    "corpus_id": "18422374",
+    "first_author": "Kumar",
+    "authors": ["Renu B. Kumar", "D. Maher", "M. Herzberg", "P. Southern"],
+    "year": 2006,
+    "title": "Expression of HIV receptors, alternate receptors and co-receptors on tonsillar epithelium: implications for HIV binding and primary oral infection",
+    "journal": "Virology Journal",
+    "doi": "10.1186/1743-422X-3-25",
+    "pmid": "16600047"
+  }
+}

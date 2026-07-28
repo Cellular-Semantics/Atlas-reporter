@@ -1,6 +1,6 @@
 # Memory T Follicular Helper Cells (CD4+ alpha-beta) in the Human Tonsil
 
-Atlas: Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci (King et al., 2021) (DOI: 10.1126/sciimmunol.abh3768)
+Atlas: An atlas of cells in the human tonsil (Massoni-Badosa et al., 2024) — Azimuth human_tonsil_v2 reference (DOI: 10.1016/j.immuni.2024.01.006). Upstream starting annotation: King et al. (2021) (DOI: 10.1126/sciimmunol.abh3768)
 Scope: adult
 Tissue context: palatine tonsil (B-cell follicle)
 Cell Ontology: [T follicular helper cell](http://purl.obolibrary.org/obo/CL_0002038) (CL:0002038, broad match — no exact CL term) — NTR: obophenotype/cell-ontology#3675

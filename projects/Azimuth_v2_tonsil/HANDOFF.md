@@ -170,6 +170,64 @@ DZ/LZ rows 380/381/386/382/384/383/376/435/436/331 and vague [225] "TCRV+ γδ T
 
 **All 14 NTRs live: #3667–#3680.** URLs in `ntr_issue_urls.json` + report headers.
 
+## ⚠ Atlas re-attribution (2026-07-28) — Massoni-Badosa 2024, not King 2021
+
+The `human_tonsil_v2` labels are **Massoni-Badosa et al. 2024, *An atlas of cells in
+the human tonsil*, Immunity** (DOI 10.1016/j.immuni.2024.01.006, PMID 38301653,
+corpus 250093999) — confirmed by verbatim label match (COL27A1+/CD14+CD55+ FDC,
+SAP+/OX40+ Tfh, 4 slan-like, pre-Tfh, FDCSP epithelium) and the paper's "included in
+Azimuth" statement. King et al. 2021 was only an **upstream starting annotation**.
+Fixed: `cell_type_annotations.json` source; all 14 report headers + References;
+14 `paper_catalogue.json` (Massoni added); 14 `cl_term_request.json` (source/refs
+reframed); **all 14 GitHub issues re-synced**. Reports re-validated (0 failures).
+
+## Epithelial compartment — glossary finding (2026-07-28)
+
+The atlas resolves tonsil epithelium into **three** cell types (HCATonsilData glossary):
+**Outer surface** (cornification/keratinization), **Crypt** (M-cell/antigen-uptake
+reticulated lymphoepithelium), and **FDCSP epithelium** (FDCSP, KRTDAP). Our cl_map
+labels map: surface(314)→Outer surface, crypt(267)→Crypt, **VEGFA+(231)→FDCSP
+epithelium**. **VEGFA is NOT an atlas epithelial marker** (absent from the paper) — the
+"VEGFA+" label in Jie's cl_map is a misnomer/alias for the FDCSP-epithelium cluster.
+CL has **no** tonsil surface/crypt/reticulated/FDCSP epithelial terms (all OLS4
+searches empty).
+
+**✅ DONE (2026-07-28): epithelial trio.** #3673 ("epithelial cell of palatine tonsil")
+**CLOSED** as over-broad/mislabeled; superseded by three properly-scoped NTRs (each
+report validated, mapping+NTR schema-valid, PMIDs catalogue-only, IDs OLS4-verified,
+atlas = Massoni-Badosa, CC @zhengj2007, linked on #3673):
+
+| slug | label | parent | match | issue |
+|------|-------|--------|-------|-------|
+| epi_surface | surface epithelial cell of palatine tonsil | CL:0000312 keratinocyte | broad | #3681 |
+| epi_crypt | crypt epithelial cell of palatine tonsil (reticulated lymphoepithelium) | CL:0000066 epithelial cell | — (CL:0000682 M cell of gut = narrower gut relative) | #3682 |
+| epi_FDCSP | FDCSP-positive epithelial cell of palatine tonsil | CL:0000312 keratinocyte | broad | #3683 |
+
+- Markers are keratins (KRT5/14 surface; KRT8/18/19 crypt), M-cell TFs (SPIB/MARCKSL1),
+  and secreted/differentiation proteins (FDCSP/KRTDAP) — all intracellular/secreted, so
+  captured textually (no `has plasma membrane part` axioms); anchored by parent + `part of`
+  tonsil epithelium (UBERON:0013696) + function.
+- epi_FDCSP justification flags the "VEGFA+" cl_map mislabel for the curator.
+- epi_crypt justification flags that a dedicated tonsil/MALT M cell term may also be warranted.
+
+**✅ Microfold (M) cell follow-up (2026-07-28).**
+- Reworded **#3682** (crypt epithelial cell) definition: M cells are now framed as a
+  **distinct co-resident cell type of the crypt reticulated epithelium, NOT a subtype**
+  of the crypt epithelial cell (re-synced on GitHub).
+- Evidence: tonsil M cells are **not** a discrete cluster in the Massoni-Badosa atlas
+  (SPIB/MARCKSL1 scattered in <20% of 'crypt cells'), but are resolved as distinct
+  immature/mature clusters in the adenoid (Alvarez-Arguedas 2025, NALT). CL has **no
+  general M-cell term** — only gut-lineage (`CL:0000682` M cell of gut + large-intestine/
+  anorectum children). M cells are conserved across gut/NALT/BALT (RANKL–RANK; SPIB/SOX8;
+  GP2/TNFAIP2/CCL20/MARCKSL1).
+- Filed 2 structural NTRs (CC @zhengj2007):
+  - **#3684** — general **microfold cell** (parent epithelial cell) + request to **re-parent
+    `CL:0000682` 'M cell of gut'** under it.
+  - **#3685** — **microfold cell of palatine tonsil** (child; provisional parent CL:0000066,
+    intended parent = #3684; flagged as under-resolved in this atlas but established biology).
+
+**Live NTRs now: #3667–#3672, #3674–#3685 (18 open); #3673 closed.**
+
 Remaining fine-grained NTR candidates NOT yet done (future targets): the
 germinal-center dark-zone/light-zone `tonsil germinal center B cell` states and
 the `MAIT/TRDV2+` gamma-delta T subsets.

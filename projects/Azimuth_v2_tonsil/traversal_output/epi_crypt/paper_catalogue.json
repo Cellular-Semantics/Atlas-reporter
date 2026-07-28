@@ -1,0 +1,112 @@
+{
+  "250093999": {
+    "corpus_id": "250093999",
+    "first_author": "Massoni-Badosa",
+    "authors": ["Ramon Massoni-Badosa", "Paula Soler-Vila", "Sergio Aguilar-Fernández", "J. Nieto", "et al."],
+    "year": 2024,
+    "title": "An atlas of cells in the human tonsil",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2024.01.006",
+    "pmid": "38301653"
+  },
+  "237279487": {
+    "corpus_id": "237279487",
+    "first_author": "Arambula",
+    "authors": ["Alexandra M Arambula", "Jason R. Brown", "Laura L. Neff"],
+    "year": 2021,
+    "title": "Anatomy and physiology of the palatine tonsils, adenoids, and lingual tonsils",
+    "journal": "World Journal of Otorhinolaryngology - Head and Neck Surgery",
+    "doi": "10.1016/j.wjorl.2021.04.003",
+    "pmid": "34430822"
+  },
+  "282313758": {
+    "corpus_id": "282313758",
+    "first_author": "Crowell",
+    "authors": ["Helena L. Crowell", "L. Llaó-Cid", "G. Frigola", "et al."],
+    "year": 2025,
+    "title": "A Transcriptional Map of Human Tonsil Architecture: Beyond the Sum of (Single Cell) Parts",
+    "journal": "European Journal of Immunology",
+    "doi": "10.1002/eji.70121",
+    "pmid": "41518352"
+  },
+  "53418688": {
+    "corpus_id": "53418688",
+    "first_author": "Raju",
+    "authors": ["N. Raju", "G. Ramesh", "S. Basha", "S. Ushakumary", "P. Kishore"],
+    "year": 2012,
+    "title": "Microarchitecture of the Palatine Tonsil in Sheep (Ovis aries)",
+    "journal": "International Journal of Morphology",
+    "doi": "10.4067/S0717-95022012000400034",
+    "pmid": null
+  },
+  "260436381": {
+    "corpus_id": "260436381",
+    "first_author": "Tabou",
+    "authors": ["Zahraa A. Tabou", "A. Y. Al-Hubaity", "E. Ali"],
+    "year": 2020,
+    "title": "Histological and Immunohistochemical Analysis of Special Compartments of Palatin Tonsils in Relation to Tonsillar Diseases",
+    "journal": "Annals of the College of Medicine, Mosul",
+    "doi": "10.33899/mmed.2020.164164",
+    "pmid": null
+  },
+  "15419789": {
+    "corpus_id": "15419789",
+    "first_author": "Kanaya",
+    "authors": ["T. Kanaya", "K. Hase", "D. Takahashi", "et al."],
+    "year": 2012,
+    "title": "The Ets Transcription Factor Spi-B Is Essential for the Differentiation of Intestinal Microfold (M) Cells",
+    "journal": "Nature Immunology",
+    "doi": "10.1038/ni.2352",
+    "pmid": "22706340"
+  },
+  "19261958": {
+    "corpus_id": "19261958",
+    "first_author": "Onishi",
+    "authors": ["Sachiko Onishi", "T. Yokoyama", "Keigi Chin", "et al."],
+    "year": 2007,
+    "title": "Ultrastructural study on the differentiation and the fate of M cells in follicle-associated epithelium of rat Peyer's patch.",
+    "journal": "The Journal of Veterinary Medical Science",
+    "doi": "10.1292/JVMS.69.501",
+    "pmid": "17551223"
+  },
+  "23667245": {
+    "corpus_id": "23667245",
+    "first_author": "Chin",
+    "authors": ["Keigi Chin", "Sachiko Onishi", "Midori Yuji", "et al."],
+    "year": 2006,
+    "title": "Differentiation of epithelial cells to M cells in response to bacterial colonization on the follicle-associated epithelium of Peyer's patch in rat small intestine.",
+    "journal": "The Journal of Veterinary Medical Science",
+    "doi": "10.1292/JVMS.68.1023",
+    "pmid": "17085879"
+  },
+  "11906681": {
+    "corpus_id": "11906681",
+    "first_author": "Quaroni",
+    "authors": ["A. Quaroni", "D. Calnek", "E. Quaroni", "J. Chandler"],
+    "year": 1991,
+    "title": "Keratin expression in rat intestinal crypt and villus cells. Analysis with a panel of monoclonal antibodies.",
+    "journal": "The Journal of Biological Chemistry",
+    "doi": "10.1016/s0021-9258(18)99046-0",
+    "pmid": "1711043"
+  },
+  "38637818": {
+    "corpus_id": "38637818",
+    "first_author": "Brembeck",
+    "authors": ["F. Brembeck", "Anil K. Rustgi"],
+    "year": 2000,
+    "title": "The tissue-dependent keratin 19 gene transcription is regulated by GKLF/KLF4 and Sp1.",
+    "journal": "The Journal of Biological Chemistry",
+    "doi": "10.1074/JBC.M004013200",
+    "pmid": "10859317"
+  },
+  "14058713": {
+    "corpus_id": "14058713",
+    "first_author": "Moll",
+    "authors": ["R. Moll", "M. Divo", "L. Langbein"],
+    "year": 2008,
+    "title": "The human keratins: biology and pathology",
+    "journal": "Histochemistry and Cell Biology",
+    "doi": "10.1007/s00418-008-0435-6",
+    "pmid": "18461349"
+  }
+}

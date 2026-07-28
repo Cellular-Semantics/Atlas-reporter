@@ -1,0 +1,62 @@
+{
+  "250093999": {
+    "corpus_id": "250093999",
+    "first_author": "Massoni-Badosa",
+    "authors": ["Ramon Massoni-Badosa", "Paula Soler-Vila", "Sergio Aguilar-Fernández", "et al.", "Elias Campo", "José Ignacio Martín-Subero", "Holger Heyn"],
+    "year": 2024,
+    "title": "An atlas of cells in the human tonsil",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2024.01.006",
+    "pmid": "38301653"
+  },
+  "42894046": {
+    "corpus_id": "42894046",
+    "first_author": "Marshall",
+    "authors": ["A. Marshall", "Q. Du", "K. Draves", "Y. Shikishima", "K. HayGlass", "E. Clark"],
+    "year": 2002,
+    "title": "FDC-SP, a Novel Secreted Protein Expressed by Follicular Dendritic Cells",
+    "journal": "Journal of Immunology",
+    "doi": "10.4049/jimmunol.169.5.2381",
+    "pmid": "12193705"
+  },
+  "252886605": {
+    "corpus_id": "252886605",
+    "first_author": "Wu",
+    "authors": ["Qing-qing Wu", "Ting-ru Shao", "Guangzhao Huang", "Zenan Zheng", "Yingtong Jiang", "Weisen Zeng", "Xiaozhi Lv"],
+    "year": 2022,
+    "title": "FDCSP Is an Immune-Associated Prognostic Biomarker in HPV-Positive Head and Neck Squamous Carcinoma",
+    "journal": "Biomolecules",
+    "doi": "10.3390/biom12101458",
+    "pmid": "36291667"
+  },
+  "281619326": {
+    "corpus_id": "281619326",
+    "first_author": "Lu",
+    "authors": ["Xinya Lu", "Zhen Chen", "Y. Shao"],
+    "year": 2025,
+    "title": "Multi-omics analysis identifies the unique high-FDCSP basal cells in triple-negative breast cancer",
+    "journal": "Experimental Biology and Medicine",
+    "doi": "10.3389/ebm.2025.10632",
+    "pmid": "41081066"
+  },
+  "9095258": {
+    "corpus_id": "9095258",
+    "first_author": "Lorenzi",
+    "authors": ["L. Lorenzi", "C. Döring", "T. Rausch", "V. Beneš", "S. Lonardi", "M. Bugatti", "E. Campo", "J. Cabeçadas", "I. Simonitsch-Klupp", "A. Borges", "J. Mehta", "C. Agostinelli", "S. Pileri", "F. Facchetti", "M. Hansmann", "S. Hartmann"],
+    "year": 2017,
+    "title": "Identification of novel follicular dendritic cell sarcoma markers, FDCSP and SRGN, by whole transcriptome sequencing",
+    "journal": "Oncotarget",
+    "doi": "10.18632/oncotarget.14864",
+    "pmid": "28145886"
+  },
+  "232241108": {
+    "corpus_id": "232241108",
+    "first_author": "Su",
+    "authors": ["Yuanyuan Su", "Zhirui Zeng", "Dongyun Rong", "Yushi Yang", "Bei Wu", "Yu Cao"],
+    "year": 2021,
+    "title": "PSMC2, ORC5 and KRTDAP are specific biomarkers for HPV-negative head and neck squamous cell carcinoma",
+    "journal": "Oncology Letters",
+    "doi": "10.3892/ol.2021.12550",
+    "pmid": "33732365"
+  }
+}

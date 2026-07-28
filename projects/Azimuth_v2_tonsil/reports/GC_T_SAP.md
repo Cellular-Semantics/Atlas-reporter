@@ -169,6 +169,7 @@ immunological synapse formed with the cognate B cell (Cannons et al., 2010;
 Gartshteyn et al., 2021).
 
 ## References
+- Massoni-Badosa R et al. (2024). "An atlas of cells in the human tonsil". *Immunity*. DOI: [10.1016/j.immuni.2024.01.006](https://doi.org/10.1016/j.immuni.2024.01.006) — Azimuth human_tonsil_v2 reference atlas
 
 - Qi H et al. (2008). "SAP-controlled T-B cell interactions underlie germinal centre formation". *Nature*. DOI: [10.1038/nature07345](https://doi.org/10.1038/nature07345)
 - Roncador G et al. (2007). "Expression of two markers of germinal center T cells (SAP and PD-1) in angioimmunoblastic T-cell lymphoma". *Haematologica*. DOI: [10.3324/HAEMATOL.10864](https://doi.org/10.3324/HAEMATOL.10864)

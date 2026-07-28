@@ -1,0 +1,13 @@
+{
+  "label": "crypt",
+  "resolved_names": [
+    "Crypt (epithelial cell)",
+    "reticulated crypt epithelial cell",
+    "lymphoepithelium",
+    "reticulated crypt epithelium"
+  ],
+  "scope": "adult",
+  "tissue_context": "palatine tonsil crypt (reticulated) epithelium",
+  "confidence": "medium",
+  "evidence": "Azimuth human_tonsil_v2 (Massoni-Badosa et al., 2024) annotates an epithelial 'Crypt'/'Crypt (epithelial cell)' cluster. In the atlas text the epithelial compartment comprises three keratinocyte-overlapping clusters (one being FDCSP epithelium) representing the tonsillar surface and crypt epithelium. The literature (Arambula et al., 2021; Crowell et al., 2025; Raju et al., 2012) identifies the tonsillar crypt lining as reticulated crypt epithelium / lymphoepithelium: a specialized antigen-sampling compartment lined by simple/non-keratinizing epithelium interspersed with lymphocytes, with discontinuous basement membrane, containing M (microfold) cells (SPIB/MARCKSL1) and simple-epithelial keratins K8/K18/K19."
+}

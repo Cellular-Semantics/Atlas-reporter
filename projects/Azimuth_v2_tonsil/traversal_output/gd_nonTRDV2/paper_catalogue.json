@@ -2,7 +2,20 @@
   "238530091": {
     "corpus_id": "238530091",
     "first_author": "King",
-    "authors": ["Hamish W. King", "Kristen L. Wells", "Zohar Shipony", "Arwa S. Kathiria", "Lisa E. Wagar", "C. Lareau", "N. Orban", "R. Capasso", "Mark M. Davis", "L. Steinmetz", "L. James", "W. Greenleaf"],
+    "authors": [
+      "Hamish W. King",
+      "Kristen L. Wells",
+      "Zohar Shipony",
+      "Arwa S. Kathiria",
+      "Lisa E. Wagar",
+      "C. Lareau",
+      "N. Orban",
+      "R. Capasso",
+      "Mark M. Davis",
+      "L. Steinmetz",
+      "L. James",
+      "W. Greenleaf"
+    ],
     "year": 2021,
     "title": "Integrated single-cell transcriptomics and epigenomics reveals strong germinal center-associated etiology of autoimmune risk loci",
     "journal": "Science Immunology",
@@ -12,7 +25,12 @@
   "15230178": {
     "corpus_id": "15230178",
     "first_author": "Kabelitz",
-    "authors": ["D. Kabelitz", "S. Kalyan", "H. Oberg", "D. Wesch"],
+    "authors": [
+      "D. Kabelitz",
+      "S. Kalyan",
+      "H. Oberg",
+      "D. Wesch"
+    ],
     "year": 2013,
     "title": "Human Vδ2 versus non-Vδ2 γδ T cells in antitumor immunity",
     "journal": "Oncoimmunology",
@@ -22,7 +40,11 @@
   "53755910": {
     "corpus_id": "53755910",
     "first_author": "Khairallah",
-    "authors": ["Camille Khairallah", "Timothy H. Chu", "B. Sheridan"],
+    "authors": [
+      "Camille Khairallah",
+      "Timothy H. Chu",
+      "B. Sheridan"
+    ],
     "year": 2018,
     "title": "Tissue Adaptations of Memory and Tissue-Resident Gamma Delta T Cells",
     "journal": "Frontiers in Immunology",
@@ -32,7 +54,14 @@
   "249218082": {
     "corpus_id": "249218082",
     "first_author": "Wu",
-    "authors": ["Yin Wu", "D. Biswas", "I. Usaite", "et al.", "A. Hayday", "C. Swanton"],
+    "authors": [
+      "Yin Wu",
+      "D. Biswas",
+      "I. Usaite",
+      "et al.",
+      "A. Hayday",
+      "C. Swanton"
+    ],
     "year": 2022,
     "title": "A local human Vδ1 T cell population is associated with survival in nonsmall-cell lung cancer",
     "journal": "Nature Cancer",
@@ -42,7 +71,18 @@
   "16892771": {
     "corpus_id": "16892771",
     "first_author": "Groh",
-    "authors": ["V. Groh", "S. Porcelli", "M. Fabbi", "L. Lanier", "L. Picker", "T. Anderson", "R. Warnke", "A. Bhan", "J. Strominger", "M. Brenner"],
+    "authors": [
+      "V. Groh",
+      "S. Porcelli",
+      "M. Fabbi",
+      "L. Lanier",
+      "L. Picker",
+      "T. Anderson",
+      "R. Warnke",
+      "A. Bhan",
+      "J. Strominger",
+      "M. Brenner"
+    ],
     "year": 1989,
     "title": "Human lymphocytes bearing T cell receptor gamma/delta are phenotypically diverse and evenly distributed throughout the lymphoid system",
     "journal": "The Journal of Experimental Medicine",
@@ -52,7 +92,11 @@
   "226291657": {
     "corpus_id": "226291657",
     "first_author": "Pérez",
-    "authors": ["C. Pérez", "Isabelle Gruber", "C. Arber"],
+    "authors": [
+      "C. Pérez",
+      "Isabelle Gruber",
+      "C. Arber"
+    ],
     "year": 2020,
     "title": "Off-the-Shelf Allogeneic T Cell Therapies for Cancer: Opportunities and Challenges Using Naturally Occurring \"Universal\" Donor T Cells",
     "journal": "Frontiers in Immunology",
@@ -62,7 +106,13 @@
   "288627516": {
     "corpus_id": "288627516",
     "first_author": "Fisher",
-    "authors": ["J. Fisher", "Yin Wu", "D. Abate-Daga", "M. Barisa", "Lawrence Lamb"],
+    "authors": [
+      "J. Fisher",
+      "Yin Wu",
+      "D. Abate-Daga",
+      "M. Barisa",
+      "Lawrence Lamb"
+    ],
     "year": 2026,
     "title": "Harnessing the potential of γδ T cells through engineering and combination treatment for cancer therapies",
     "journal": "Nature Communications",
@@ -72,11 +122,26 @@
   "52281155": {
     "corpus_id": "52281155",
     "first_author": "Negash",
-    "authors": ["M. Negash", "A. Tsegaye", "L. Wassie", "R. Howe"],
+    "authors": [
+      "M. Negash",
+      "A. Tsegaye",
+      "L. Wassie",
+      "R. Howe"
+    ],
     "year": 2018,
     "title": "Phenotypic and functional heterogeneity of peripheral γδ T cells in pulmonary TB and HIV patients in Addis Ababa, Ethiopia",
     "journal": "BMC Infectious Diseases",
     "doi": "10.1186/s12879-018-3361-9",
     "pmid": "30219039"
+  },
+  "250093999": {
+    "corpus_id": "250093999",
+    "first_author": "Massoni-Badosa",
+    "authors": "Massoni-Badosa R, Soler-Vila P, Aguilar-Fernández S, et al.",
+    "year": 2024,
+    "title": "An atlas of cells in the human tonsil",
+    "journal": "Immunity",
+    "doi": "10.1016/j.immuni.2024.01.006",
+    "pmid": "PMID:38301653"
   }
 }
