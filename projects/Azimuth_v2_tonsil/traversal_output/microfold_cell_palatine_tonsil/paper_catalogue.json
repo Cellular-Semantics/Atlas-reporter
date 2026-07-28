@@ -1,37 +1,32 @@
 {
+  "40721095": {
+    "doi": "10.1016/j.mucimm.2025.07.006",
+    "pmid": "PMID:40721095",
+    "citation": "Alvarez-Arguedas et al. (2025)"
+  },
   "38301653": {
     "doi": "10.1016/j.immuni.2024.01.006",
     "pmid": "PMID:38301653",
     "citation": "Massoni-Badosa et al. (2024)"
+  },
+  "37202490": {
+    "doi": "10.1038/s41590-023-01502-4",
+    "pmid": "PMID:37202490",
+    "citation": "De Martin et al. (2023)"
+  },
+  "39791909": {
+    "doi": "10.1128/jvi.01460-24",
+    "pmid": "PMID:39791909",
+    "citation": "Perry et al. (2025)"
   },
   "30877171": {
     "doi": "10.1084/jem.20181604",
     "pmid": "PMID:30877171",
     "citation": "Kimura et al. (2019)"
   },
-  "31244859": {
-    "doi": "10.3389/fimmu.2019.01323",
-    "pmid": "PMID:31244859",
-    "citation": "Kimura et al. (2019)"
-  },
   "38301262": {
     "doi": "10.1165/rcmb.2024-0002ED",
     "pmid": "PMID:38301262",
     "citation": "Han (2024)"
-  },
-  "41372409": {
-    "doi": "10.1038/s41586-025-09829-8",
-    "pmid": "PMID:41372409",
-    "citation": "Wang et al. (2025)"
-  },
-  "40721095": {
-    "doi": "10.1016/j.mucimm.2025.07.006",
-    "pmid": "PMID:40721095",
-    "citation": "Alvarez-Arguedas et al. (2025)"
-  },
-  "34058415": {
-    "doi": "10.1016/j.jcmgh.2021.05.014",
-    "pmid": "PMID:34058415",
-    "citation": "George et al. (2021)"
   }
 }
