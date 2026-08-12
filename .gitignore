@@ -20,3 +20,8 @@ projects/**/h5ad_obs/obs.parquet
 # Office lock/temp files and session scratch
 ~$*
 *.tmp
+
+# Non-shareable source PDFs and any local snippet index derived from them
+# (index chunks/snippets contain verbatim paper text — keep out of the repo).
+projects/**/inputs/do_not_share/
+projects/**/local_index/
