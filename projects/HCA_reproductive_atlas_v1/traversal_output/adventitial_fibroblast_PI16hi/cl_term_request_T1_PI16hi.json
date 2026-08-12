@@ -1,0 +1,97 @@
+{
+  "cell_type_label": "Adventitial fibroblasts PI16-high (Mesen_AdvFibs_PI16hi)",
+  "suggested_label": "PI16-high adventitial fibroblast",
+  "definition": "An adventitial fibroblast representing the progenitor-enriched, quiescent pole of the universal fibroblast continuum, characterised by high expression of peptidase inhibitor 16 (PI16), dipeptidyl peptidase 4 (DPP4), CD34, dermatopontin (DPT) and SFRP2 in humans (Buechler et al., 2021; McCartney et al., 2024; DOI:10.12688/f1000research.143511.2). This cell resides in the tunica adventitia of blood vessels and subserosal connective tissue across multiple organs including lung, skin, synovium and reproductive tract, and is distinguished from mural cells by absence of CSPG4, MCAM, RGS5 and ACTA2 (Yang et al., 2026; DOI:10.1172/jci.insight.202529). It functions as a structural scaffold and multipotent progenitor reservoir capable of differentiating into specialised fibroblast lineages under injury or disease conditions (McCartney et al., 2024).",
+  "parent_term": {
+    "cl_id": "CL:4052030",
+    "cl_term": "adventitial fibroblast"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0005734",
+    "uberon_term": "tunica adventitia of blood vessel"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "tunica adventitia of blood vessel",
+      "filler_id": "UBERON:0005734",
+      "notes": "PI16-high adventitial fibroblasts reside in the tunica adventitia of blood vessels and the equivalent subserosal adventitial layer; 'part of' is appropriate as the cell body is entirely within the material structure."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "extracellular matrix organization",
+      "filler_id": "GO:0030198",
+      "notes": "Adventitial fibroblasts produce collagen-rich ECM components (COL1A1, COL3A1, DCN) as a core structural function, evidenced across cross-tissue atlases."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "fibroblast migration",
+      "filler_id": "GO:0010761",
+      "notes": "PI16-high adventitial fibroblasts are proposed progenitors that migrate into injury sites and differentiate; migration capacity is established in the fibroblast progenitor literature (McCartney et al. 2024)."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "PI16+ universal fibroblast",
+      "scope": "related",
+      "reference": "10.12688/f1000research.143511.2"
+    },
+    {
+      "value": "adventitial fibroblast progenitor",
+      "scope": "related",
+      "reference": "10.1038/s41590-023-01502-4"
+    },
+    {
+      "value": "universal fibroblast (PI16+ pole)",
+      "scope": "related",
+      "reference": "10.1172/jci.insight.202529"
+    },
+    {
+      "value": "PI16+ fibroblast",
+      "scope": "broad",
+      "reference": "10.12688/f1000research.143511.2"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.12688/f1000research.143511.2",
+      "citation": "McCartney et al. (2024)",
+      "supports": "PI16+ marker profile (DPP4, CD34, IL33, Anxa3, Ackr3), quiescence, and progenitor/multipotent capacity of PI16+ adventitial fibroblasts across tissues"
+    },
+    {
+      "doi": "10.1172/jci.insight.202529",
+      "citation": "Yang et al. (2026)",
+      "supports": "Cross-tissue distribution (lung, skin, stomach, colon, pancreas, kidney, breast, synovium), additional markers (DPT, LY6C1), and perivascular localisation of PI16+ universal fibroblasts"
+    },
+    {
+      "doi": "10.1007/s12079-022-00673-3",
+      "citation": "Zeltz et al. (2022)",
+      "supports": "Two pan-tissue universal fibroblast archetypes (PI16+ perivascular vs COL15A1+ parenchymal), stemness enrichment of PI16+ pole, and Buechler et al. 2021 cross-tissue atlas interpretation"
+    },
+    {
+      "doi": "10.1016/j.xgen.2025.101034",
+      "citation": "Zhao et al. (2025)",
+      "supports": "PI16, SFRP2, MFAP5 as most specific markers of adventitial fibroblasts in human arterial vasculature; exclusive localisation to adventitia confirmed by RNAscope and spatial transcriptomics"
+    },
+    {
+      "doi": "10.64898/2026.06.10.731198",
+      "citation": "Cohen et al. (2026)",
+      "supports": "Atlas identification of pan-reproductive adventitial fibroblast continuum; PI16-high state localised to fallopian tube subserosa (99% of cells); consistent with universal fibroblast architecture"
+    },
+    {
+      "doi": "10.1038/s41590-023-01502-4",
+      "citation": "De Martin et al. (2023)",
+      "supports": "PI16 protein function (leukocyte transendothelial migration, MMP2 inhibition); PI16+ adventitial fibroblast progenitor hypothesis (coexpression with CD34, HAS1, PLIN2)"
+    },
+    {
+      "doi": "10.1183/13993003.00143-2023",
+      "citation": "Obacz et al. (2022)",
+      "supports": "MFAP5 co-marks PI16+ adventitial fibroblasts in human pleura; perivascular adventitial phenotype characterisation"
+    }
+  ],
+  "justification": "CL:4052030 (adventitial fibroblast) is defined solely by blood-vessel adventitia location with no molecular characterisation. The PI16-high adventitial fibroblast is a reproducible, cross-tissue molecular archetype consistently recovered in single-cell atlases of lung, skin, synovium, artery, and reproductive tract. It is defined by a coherent marker set (PI16, DPP4, CD34, DPT, SFRP2), a quiescent progenitor identity, and a perivascular/subserosal location shared across organs. No existing CL term captures this combination: CL:4052030 is purely anatomical; its only child (CL:1000306, fibroblast of tunica adventitia of artery) is a location-specific sibling, not a molecular characterisation. The PI16-high adventitial fibroblast sits alongside the CXCL12+/COL15A1+ pole as the second of the two universal-fibroblast archetypes — both are absent from CL. This term would be broadly reusable across any atlas carrying universal fibroblasts, not restricted to the reproductive atlas. The exemplar atlas cluster (Mesen_AdvFibs_PI16hi, n=3,032) from Cohen et al. 2026 is 99% localised to the fallopian tube subserosa; however, the cross-tissue evidence warrants a cross-tissue molecular term rather than an organ-specific one. Proposed logical axioms: (1) subClassOf 'part of' some 'tunica adventitia of blood vessel' (UBERON:0005734) — captures the adventitial location shared across tissues; (2) subClassOf 'capable of' some 'extracellular matrix organization' (GO:0030198) — core structural function; (3) subClassOf 'capable of' some 'fibroblast migration' (GO:0010761) — progenitor/injury-response capacity. Marker axioms (PI16/PR, DPP4/PR) are not proposed at this stage as PRO IDs for human-specific isoforms would require curator verification; markers are captured in the definition text instead.",
+  "ntr_markdown": "**Preferred term label**\nPI16-high adventitial fibroblast\n\n**Synonyms** (add reference(s), please)\nPI16+ universal fibroblast (related) — DOI:10.12688/f1000research.143511.2\nadventitial fibroblast progenitor (related) — DOI:10.1038/s41590-023-01502-4\nuniversal fibroblast (PI16+ pole) (related) — DOI:10.1172/jci.insight.202529\nPI16+ fibroblast (broad) — DOI:10.12688/f1000research.143511.2\n\n**Definition** (free text, with reference(s), please. PubMed ID format is PMID:XXXXXX)\nAn adventitial fibroblast representing the progenitor-enriched, quiescent pole of the universal fibroblast continuum, characterised by high expression of peptidase inhibitor 16 (PI16), dipeptidyl peptidase 4 (DPP4), CD34, dermatopontin (DPT) and SFRP2 in humans (Buechler et al., 2021; McCartney et al., 2024; DOI:10.12688/f1000research.143511.2). This cell resides in the tunica adventitia of blood vessels and subserosal connective tissue across multiple organs including lung, skin, synovium and reproductive tract, and is distinguished from mural cells by absence of CSPG4, MCAM, RGS5 and ACTA2 (Yang et al., 2026; DOI:10.1172/jci.insight.202529). It functions as a structural scaffold and multipotent progenitor reservoir capable of differentiating into specialised fibroblast lineages under injury or disease conditions (McCartney et al., 2024).\n\n**Parent cell type term** (check the hierarchy here https://www.ebi.ac.uk/ols4/ontologies/cl)\nadventitial fibroblast (CL:4052030) — https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_4052030\n\n**Anatomical structure where the cell type is found** (check Uberon for anatomical structures: https://www.ebi.ac.uk/ols4/ontologies/uberon)\ntunica adventitia of blood vessel (UBERON:0005734) — https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0005734\nNote: in some tissues (e.g. fallopian tube subserosa in reproductive atlas, pleura) these cells occupy equivalent subserosal/adventitial connective tissue not immediately associated with named vessels.\n\n**Your ORCID**\n[To be added by submitter]\n\n**Additional notes or concerns**\nThis term captures the PI16-high / PI16+ pole of the universal fibroblast, a cross-tissue molecular archetype reproducibly recovered across human single-cell atlases of lung, skin, synovium, artery, gut, and reproductive tract. CL:4052030 (adventitial fibroblast) currently has no molecular characterisation and no children other than a single artery-location term (CL:1000306). Neither that term nor any existing CL term captures the PI16+ molecular identity.\n\nThe PI16-high adventitial fibroblast is distinguished from its sibling universal-fibroblast archetype (CXCL12+/COL15A1+ pole, requested separately) by: high PI16/DPP4/CD34/DPT/SFRP2; quiescent, stemness-enriched state; perivascular/outer-adventitial localisation. It is distinguished from mural cells (pericytes, VSMCs) by absence of CSPG4/NG2, MCAM/CD146, RGS5, and ACTA2.\n\nProposed logical axioms:\n- subClassOf 'part of' some 'tunica adventitia of blood vessel' (UBERON:0005734)\n- subClassOf 'capable of' some 'extracellular matrix organization' (GO:0030198)\n- subClassOf 'capable of' some 'fibroblast migration' (GO:0010761)\n\nMarker axioms using PRO terms for PI16, DPP4, and CD34 are recommended but deferred to curator verification of human-specific PRO IDs. The characterising markers should be recorded as a characterizing_marker_set annotation.\n\nKey references:\n- McCartney et al. (2024) — DOI:10.12688/f1000research.143511.2 — PI16+ marker profile, quiescence, progenitor capacity\n- Yang et al. (2026) — DOI:10.1172/jci.insight.202529 — cross-tissue distribution and marker list\n- Zeltz et al. (2022) — DOI:10.1007/s12079-022-00673-3 — two universal fibroblast archetypes; stemness enrichment\n- Zhao et al. (2025) — DOI:10.1016/j.xgen.2025.101034 — PI16/SFRP2/MFAP5 as most specific vascular adventitial fibroblast markers; spatial confirmation\n- Cohen et al. (2026) — DOI:10.64898/2026.06.10.731198 — atlas source; PI16-high state in reproductive tract (fallopian tube subserosa 99%)\n- De Martin et al. (2023) — DOI:10.1038/s41590-023-01502-4 — PI16 protein function; universal progenitor hypothesis\n- Obacz et al. (2022) — DOI:10.1183/13993003.00143-2023 — MFAP5 co-marks PI16+ adventitial fibroblasts in pleura\n\n---\n*Draft generated by atlas-chat from: projects/HCA_reproductive_atlas_v1/reports/adventitial_fibroblast_PI16hi.md*"
+}

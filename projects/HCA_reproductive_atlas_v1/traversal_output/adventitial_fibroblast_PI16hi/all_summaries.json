@@ -1,0 +1,140 @@
+[
+  {
+    "title": "An integrated multimodal pan-organ atlas of the female reproductive system across the lifespan contextualises gynaecological pathologies",
+    "authors": ["Celeste E Cohen", "A. Parraga-Leo", "Leticia Rodríguez-Montes", "L. Garcia-Alonso", "R. Vento-Tormo"],
+    "year": 2026,
+    "doi": "10.64898/2026.06.10.731198",
+    "corpusId": "289267967",
+    "quotes": [
+      "In contrast, adventitial fibroblasts emerged as a distinct transcriptomics compartment that had been largely overlooked in prior atlases, likely owing to their scarcity and their annotation as generic stromal fibroblasts (Extended Data Fig. 3a and Supplementary Note 2.1). Pan-reproductive adventitial fibroblasts are defined by expression of DPT, SFRP2 and C3, forming a transcriptional continuum from PI16 hi (named \"AdvFib PI16hi\") to C7/COL15A1 hi states (labeled \"AdvFib PI16low\" and \"Adv Fib (Intr)\"; Figure 2a,c), consistent with the universal fibroblast populations previously described 31,32 .",
+      "AdvFib PI16 hi states are mostly found in the fallopian tube ampulla and isthmus (99% of PI16 hi cells; Extended Data Fig. 3b), where spatial transcriptomics localise them to its characteristic subserosal (adventitial) connective tissue in the ampulla (Figure 2d).",
+      "In contrast, AdvFib PI16low and Adv Fib (Intr) (i.e. C7/COL15A1 hi states) are distributed across tissues occupying the mucosal interstitium of the fallopian tube, the subserosa region beneath the ovarian surface epithelium and adventitial positions around vasculature in the ovary, fallopian tube and the myometrium in the uterus (Figure 2d and Extended Data Fig. 3c).",
+      "Cross-organ integration of the mesenchymal compartment revealed a conserved hierarchy of non-interstitial fibroblasts -adventitial fibroblasts, perivascular mural cells and smooth muscle cells -consistent with the universal fibroblast architecture described in mice 31 and extending it to the human reproductive system. Unlike interstitial fibroblasts, which are highly organspecific and temporally regulated by hormonal cycling, this non-interstitial compartment is relatively stable across the menstrual cycle, suggesting a structural rather than hormoneresponsive role.",
+      "Beyond tissue-specific interstitial fibroblasts (39 cell states), the atlas identified three noninterstitial fibroblast compartments conserved across reproductive tissues: perivascular, smooth muscle cells (SMCs) and adventitial."
+    ]
+  },
+  {
+    "title": "Life of Pi: Exploring functions of Pi16+ fibroblasts",
+    "authors": ["Erika E. McCartney", "Yein Chung", "M. Buechler"],
+    "year": 2024,
+    "doi": "10.12688/f1000research.143511.2",
+    "corpusId": "268008336",
+    "quotes": [
+      "Cells that transcriptionally match Pi16+ fibroblasts have been termed universal fibroblasts, 4 adventitial fibroblasts, 5 interstitial progenitor cells, 6 multipotent progenitor cells, 7 fibro-adipogenic progenitors, 8 and fibro-inflammatory progenitors.",
+      "In silico analyses have revealed a list of marker genes that are expressed by Pi16+ fibroblasts, including Dpp4 (Dipeptidyl peptidase-4), Cd55, Ackr3 (atypical chemokine receptor, encodes CXCR7), Anxa3 (Annexin A3), and Il33 (See Table 1).",
+      "In some contexts, Pi16+ fibroblast-like cells have exhibited the potential to act as a precursor cell for fibroblasts and fibroblast-derived cells, including but not limited to myofibroblasts, adipocytes, and CAFs (Figure 1).",
+      "Cells that exhibit the phenotype of Pi16+ fibroblasts were shown to be in a state of quiescence in the steady state, with minimal proliferation in uninjured tissues."
+    ]
+  },
+  {
+    "title": "Fibroblasts: a diverse population of cells balancing homeostasis, wound healing, regeneration, inflammation, fibrosis, and cancer across organs",
+    "authors": ["Xiaochun Yang", "Marcella Steffani", "Robert F. Schwabe"],
+    "year": 2026,
+    "doi": "10.1172/jci.insight.202529",
+    "corpusId": "289978443",
+    "quotes": [
+      "Universal fibroblasts, also termed fibroblast progenitors, exist as two different subtypes, namely PI16 + fibroblasts and COL15A1 + fibroblasts (3) (Figure 1).",
+      "PI16 + fibroblasts were found in the lung, skin, stomach, colon, pancreas, kidney, breast, and synovium and express additional markers such as dipeptidyl peptidase 4 (DPP4), DPT, CD34, and LY6C1 (3, 4, 7) (Table 1).",
+      "PI16 + fibroblasts are concentrated close to the vasculature in most tissues and are often described as adventitial fibroblasts though they can also be found away from the vasculature in some contexts (51)."
+    ]
+  },
+  {
+    "title": "Integrin α11β1 in tumor fibrosis: more than just another cancer-associated fibroblast biomarker?",
+    "authors": ["C. Zeltz", "R. Navab", "D. Gullberg"],
+    "year": 2022,
+    "doi": "10.1007/s12079-022-00673-3",
+    "corpusId": "247953656",
+    "quotes": [
+      "In the steady-state mouse fibroblast atlas, Buechler and colleagues compiled ten fibroblast clusters of which two represent pan-tissue fibroblasts, distinguished by dominant expression of either Pi16 + (peptidase inhibitor 16; a GPI anchored membrane protein) or Col15a1 + (collagen XV; a secreted ECM protein) expression, but both also expressing Dpt (dermatopontin; a secreted proteoglycan).",
+      "Pi16 + fibroblasts were found in perivascular niches and Col15a1 expression was noted deeper inside parenchymal tissues.",
+      "Buechler et al. showed that Dpt + Pi16 + fibroblasts expressed high levels of genes associated with stemness and predicted that these cells could differentiate into distinct fibroblast populations such as the Lrrc15 + cluster, a \"perturbation-specific\" cluster found in cancer tissues and not present in the steady-state tissues."
+    ]
+  },
+  {
+    "title": "Single-cell transcriptomic analysis of human pleura reveals stromal heterogeneity and informs in vitro models of mesothelioma",
+    "authors": ["J. Obacz", "J. Valer", "S. Marciniak"],
+    "year": 2022,
+    "doi": "10.1183/13993003.00143-2023",
+    "corpusId": "254295359",
+    "quotes": [
+      "In most tissues, dermatopontin-positive (DPT + ) \"universal fibroblasts\" comprise subtypes marked by expression of peptidase inhibitor 16 (PI16) or collagen type XV ɑ1 chain (COL15A1) [10,11].",
+      "PI16 expression has been reported for fibroblasts in vascular niches [11], while microfibril-associated protein 5 (MFAP5) is detected in vascular adventitial pulmonary fibroblasts [21]. In keeping with a vascular adventitial phenotype, MFAP5 was detected in many of the pleural PI16 + COL15A1 − fibroblasts (n=1864, figure 1e-g).",
+      "PI16 − COL15A1 + cells have been proposed to represent universal parenchymal fibroblasts secreting basement membranes [11]."
+    ]
+  },
+  {
+    "title": "PI16+ reticular cells in human palatine tonsils govern T cell activity in distinct subepithelial niches",
+    "authors": ["Angelina De Martin", "Yves Stanossek", "B. Ludewig"],
+    "year": 2023,
+    "doi": "10.1038/s41590-023-01502-4",
+    "corpusId": "258785918",
+    "quotes": [
+      "It has been suggested that PI16 + fibroblasts of different tissues and tumors coexpressing CD34, HAS1 and PLIN2 represent an adventitial fibroblast subset that may serve as a 'universal' progenitor of fibroblast lineages 29 .",
+      "The peptidase inhibitor PI16 has been shown to promote transendothelial migration of leukocytes 41 and to inhibit the extracellular matrix-cleaving enzyme matrix metallopeptidase 2 (ref. 42)."
+    ]
+  },
+  {
+    "title": "Diverse effector and regulatory functions of fibro/adipogenic progenitors during skeletal muscle fibrosis in muscular dystrophy",
+    "authors": ["Xingyu Wang", "Jianming Chen", "Lan Zhou"],
+    "year": 2022,
+    "doi": "10.1016/j.isci.2022.105775",
+    "corpusId": "254493749",
+    "quotes": [
+      "The two universal clusters identified by the cross-tissue transcriptome analysis of fibroblasts, 50 including the adventitial stromal cell-like fibroblasts featured by Ly6c1, Pi16, Dpp4, and CD55 and the basement membrane-associated fibroblasts featured by Hsd11b1, Cxcl14, Col4a1, Col15a1, and Hspg2,",
+      "The Ly6c1 hi clusters expressed the highest level of mesenchymal progenitor markers Cd34 and Ly6a/Sca-1 (Figure 6A), indicating their higher stemness than the other clusters. Pseudotime analysis confirmed the progenitor status of the Ly6c1 hi Pi16 hi cluster (Figure 5B), consistent with the finding by others."
+    ]
+  },
+  {
+    "title": "A cell and transcriptome atlas of human arterial vasculature",
+    "authors": ["Quanyi Zhao", "Albert J. Pedroza", "Thomas Quertermous", "Paul Cheng"],
+    "year": 2025,
+    "doi": "10.1016/j.xgen.2025.101034",
+    "corpusId": "282099383",
+    "quotes": [
+      "Marker gene RNAscope studies for this population, along with spatial transcriptomics, localized this population exclusively to the adventitia (Figures 3B and 1D). Based on marker gene expression, we termed this population ''vascular adventitial fibroblast'' (AdvFib).",
+      "Using scRNA-seq data, we additionally identified PI16, SFRP2, and MFAP5 as the most specific marker genes for this adventitial fibroblast population (Figures 3B-3D; Table S3)."
+    ]
+  },
+  {
+    "title": "Perivascular Adventitial Fibroblast Specialization Accompanies T Cell Retention in the Inflamed Human Dermis",
+    "authors": ["Alexander M. S. Barron", "Julio C. Mantero", "J. Browning"],
+    "year": 2018,
+    "doi": "10.4049/jimmunol.1801209",
+    "corpusId": "54482602",
+    "quotes": [
+      "Perivascular Adventitial Fibroblast Specialization Accompanies T Cell Retention in the Inflamed Human Dermis"
+    ]
+  },
+  {
+    "title": "Five Decades Later, Are Mesenchymal Stem Cells Still Relevant?",
+    "authors": ["M. Gomez-Salazar", "Zaniah N. Gonzalez-Galofre", "B. Péault"],
+    "year": 2020,
+    "doi": "10.3389/fbioe.2020.00148",
+    "corpusId": "211535043",
+    "quotes": [
+      "A population of fibroblast like progenitors located in the outermost layer of larger arteries and veins, the tunica adventitia, was also identified as a source of bona fide MSCs. Adventitial progenitors are phenotypically and anatomically distinct from pericytes.",
+      "However, like pericytes, adventitial cells natively express MSC markers and give rise to MSCs in culture (Corselli et al., 2012). In this regard, pericytes and adventitial cells have been collectively termed perivascular stem cells (PSCs)."
+    ]
+  },
+  {
+    "title": "Adenomyosis: single-cell transcriptomic analysis reveals a paracrine mesenchymal-epithelial interaction involving the WNT/SFRP pathway",
+    "authors": ["Ş. Yıldız", "Meric Kinali", "S. Bulun"],
+    "year": 2023,
+    "doi": "10.1016/j.fertnstert.2023.01.041",
+    "corpusId": "256534917",
+    "quotes": [
+      "Intriguingly, the gene family SFRP, which are modulators of the WNT pathway, were expressed prominently in fibroblast-like clusters, showing cross-tissue similarities between the endometrium, adenomyosis, and myometrium (Figs. 3A, 3B).",
+      "Gene SFRP2 was expressed only in adenomyosis and myometrium (A4, M11; Figs. 3A-C)."
+    ]
+  },
+  {
+    "title": "SFRP4+ stromal cell subpopulation with IGF1 signaling in human endometrial regeneration",
+    "authors": ["Bing-bing Wu", "Yu Li", "Xiaohui Zou"],
+    "year": 2022,
+    "doi": "10.1038/s41421-022-00438-7",
+    "corpusId": "252533509",
+    "quotes": [
+      "As there was an increasing attention on fibroblasts heterogeneity and functions in this field, fibroblasts were suspected to participate in tissue health and diseases through physical or biochemical niches by producing extracellular matrix or soluble signal molecules 29 ."
+    ]
+  }
+]

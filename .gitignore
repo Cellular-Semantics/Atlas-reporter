@@ -13,3 +13,10 @@ docs/_build/
 .claude/settings.local.json
 
 #projects/
+# Large remote-pulled obs table (92.8GB source h5ad; reproducible via h5ad_obs/pull_obs.py).
+# Full obs is 151MB (>GitHub limit); commit the compact obs.categoricals.parquet instead.
+projects/**/h5ad_obs/obs.parquet
+
+# Office lock/temp files and session scratch
+~$*
+*.tmp

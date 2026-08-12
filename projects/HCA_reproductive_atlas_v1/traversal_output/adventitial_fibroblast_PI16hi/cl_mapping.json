@@ -1,0 +1,35 @@
+{
+  "cell_type_label": "Adventitial fibroblasts PI16-high (Mesen_AdvFibs_PI16hi)",
+  "working_definition": "A rare, conserved mesenchymal state of the human female reproductive tract sitting at the PI16-high (progenitor) extreme of a pan-reproductive adventitial fibroblast continuum (DPT/SFRP2/C3+, running from PI16hi to C7/COL15A1hi). It expresses the cross-tissue 'universal fibroblast' / PI16+ adventitial fibroblast markers PI16, CD34, DPP4, DPT and SFRP2 (plus C3, IL33, MFAP5), is localised to perivascular/subserosal (adventitial) connective tissue — in this atlas 99% to the fallopian tube ampulla/isthmus subserosa — and behaves as a quiescent, stemness-enriched structural progenitor reservoir rather than a hormone-responsive interstitial fibroblast.",
+  "searches_performed": [
+    "universal fibroblast PI16",
+    "fibroblast of fallopian tube",
+    "adventitial fibroblast (CL:4052030) definition + children fetch",
+    "getChildren CL:4052030"
+  ],
+  "best_match": {
+    "cl_term": "adventitial fibroblast",
+    "cl_id": "CL:4052030",
+    "cl_definition": "A fibroblast of the adventitia of a blood vessel. This cell contributes to vascular homeostasis, remodeling, and inflammation by producing extracellular matrix components, cytokines, and growth factors. Adventitial fibroblast can transition into an activated state during injury or disease, marked by increased proliferation, migration, matrix deposition, and contractile protein expression",
+    "match_type": "broad match",
+    "skos_mapping": "skos:broadMatch",
+    "confidence": "high"
+  },
+  "justification": "CL:4052030 captures the adventitial (perivascular) fibroblast identity that the atlas cluster shares, and the atlas explicitly aligns its non-interstitial adventitial fibroblasts with the universal-fibroblast architecture. But CL:4052030 is defined strictly as a fibroblast of the adventitia of a blood vessel and carries no molecular characterisation, whereas the atlas cluster is a *specific molecular state* — the PI16-high / PI16+ 'universal fibroblast' progenitor pole (PI16, DPP4, CD34, DPT, SFRP2) — and is anatomically concentrated in the fallopian tube subserosa. CL therefore has no term at the granularity of the cluster: no PI16+/universal-fibroblast term exists (search returned none), and no fallopian-tube adventitial/stromal fibroblast term exists (search returned none). The single existing child of CL:4052030, CL:1000306 (fibroblast of tunica adventitia of artery), is a sibling location term, not an ancestor of this cluster. Hence broad match, new term(s) needed.",
+  "other_candidates": [
+    {
+      "cl_term": "fibroblast of tunica adventitia of artery",
+      "cl_id": "CL:1000306",
+      "cl_definition": "A fibroblast that is part of the tunica adventitia of artery.",
+      "reason_rejected": "Artery-location-specific sibling under CL:4052030; the atlas cluster is not artery-restricted (it is fallopian-tube subserosal and defined molecularly by PI16), so this is a co-sibling, not the correct parent or match."
+    },
+    {
+      "cl_term": "fibroblast",
+      "cl_id": "CL:0000057",
+      "cl_definition": "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appears fusiform or spindle-shaped.",
+      "reason_rejected": "Correct lineage but far too broad; loses the adventitial, PI16+/universal, and location-specific identity entirely."
+    }
+  ],
+  "recommendation": "Adopt CL:4052030 as the broad parent and request a new, cross-tissue CL term for the PI16-high / PI16+ 'universal' adventitial fibroblast (is_a adventitial fibroblast), broadly reusable across atlases. Optionally request a companion fallopian-tube-specific subtype (a location term under adventitial fibroblast, or the intersection PI16-high adventitial fibroblast located in fallopian tube) so the atlas cluster's near-exclusive fallopian-tube subserosal localisation is captured. Term structure (1 cross-tissue term vs 1 cross-tissue + 1 location subtype) is a modelling choice deferred to the CL curators / project lead — see cl_term_request draft.",
+  "new_term_needed": true
+}

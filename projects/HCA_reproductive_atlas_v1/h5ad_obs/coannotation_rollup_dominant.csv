@@ -1,0 +1,845 @@
+celltype_HCA_fine,source_study,source_doi,author_label,n_cells
+Endo_artery,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Art,1812
+Endo_artery,celltype_Ulrich2024,10.1073/pnas.2404775121,Artery,1039
+Endo_artery,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Endothelial,1016
+Endo_artery,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Endothelial,946
+Endo_artery,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell,766
+Endo_artery,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Arterial,659
+Endo_artery,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,blood vessel endothelial cell,322
+Endo_artery,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Endothelial SEMA3G,299
+Endo_artery,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Endothelial,27
+Endo_cap,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Cap,5398
+Endo_cap,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Endothelial,2751
+Endo_cap,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Endothelial,2142
+Endo_cap,celltype_Ulrich2024,10.1073/pnas.2404775121,aPCV,1236
+Endo_cap,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell,1029
+Endo_cap,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Venous,437
+Endo_cap,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Endothelial ACKR1,366
+Endo_cap,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,blood vessel endothelial cell,132
+Endo_cap,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Endothelial,107
+Endo_cap_APCDD1,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Venous,570
+Endo_cap_APCDD1,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Endothelial ACKR1,265
+Endo_cap_APCDD1,celltype_Ulrich2024,10.1073/pnas.2404775121,HEV,141
+Endo_cap_APCDD1,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Cap,102
+Endo_cap_APCDD1,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell,2
+Endo_cap_APCDD1+,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Endothelial,2174
+Endo_cap_APCDD1+,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Endothelial,263
+Endo_cap_APCDD1+,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Cap,251
+Endo_cap_cycl,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Venous,691
+Endo_cap_cycl,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Endothelial,606
+Endo_cap_cycl,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Endothelial,596
+Endo_cap_cycl,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Cycling,230
+Endo_cap_cycl,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Endothelial ACKR1,183
+Endo_cap_cycl,celltype_Ulrich2024,10.1073/pnas.2404775121,HMGB2-Prolif,120
+Endo_cap_cycl,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Endothelial,26
+Endo_cap_cycl,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell,2
+Endo_cap_cycl,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,endothelial cell of lymphatic vessel,1
+Endo_cap_kidney,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Endothelial,316
+Endo_cap_kidney,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Endothelial,184
+Endo_cap_kidney,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Cap,5
+Endo_cap_kidney,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Endothelial,2
+Endo_cap_tip,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Cap_LY6H+_angiogenic,804
+Endo_cap_tip,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Endothelial,365
+Endo_cap_tip,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Endothelial,264
+Endo_cap_tip,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Venous,200
+Endo_cap_tip,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Endothelial ACKR1,43
+Endo_cap_tip,celltype_Ulrich2024,10.1073/pnas.2404775121,aPCV,40
+Endo_cap_tip,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Endothelial,8
+Endo_cap_tip,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,blood vessel endothelial cell,2
+Endo_cap_tip,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell,1
+Endo_lymp,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell of lymphatic vessel,2781
+Endo_lymp,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,endothelial cell of lymphatic vessel,2086
+Endo_lymp,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Lymph,598
+Endo_lymp,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Endothelial Lymphatic,506
+Endo_lymp,celltype_Ulrich2024,10.1073/pnas.2404775121,L_Endo,487
+Endo_lymp,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Endothelial,457
+Endo_lymp,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Lymphatic,99
+Endo_lymp,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Other,25
+Endo_lymp,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Endothelial,6
+Endo_ven_apcv,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell,1168
+Endo_ven_apcv,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,blood vessel endothelial cell,396
+Endo_ven_apcv,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Endothelial ACKR1,276
+Endo_ven_apcv,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Venous,263
+Endo_ven_apcv,celltype_Ulrich2024,10.1073/pnas.2404775121,Capillary,197
+Endo_ven_apcv,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Cap,19
+Endo_ven_hev,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Venous,3055
+Endo_ven_hev,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Endothelial ACKR1,890
+Endo_ven_hev,celltype_Ulrich2024,10.1073/pnas.2404775121,PCV,368
+Endo_ven_hev,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Cap,237
+Endo_ven_hev,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell,18
+Endo_ven_hev,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,blood vessel endothelial cell,7
+Endo_ven_pcv,celltype_Ulrich2024,10.1073/pnas.2404775121,PCV,2378
+Endo_ven_pcv,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Endothelial,1396
+Endo_ven_pcv,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Endothelial ACKR1,1327
+Endo_ven_pcv,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Endothelial,673
+Endo_ven_pcv,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Ven,668
+Endo_ven_pcv,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell,586
+Endo_ven_pcv,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Venous,378
+Endo_ven_pcv,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,blood vessel endothelial cell,213
+Endo_ven_pcv,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Endothelial,2
+Endo_ven_tpcv,celltype_Ulrich2024,10.1073/pnas.2404775121,tPCV,2826
+Endo_ven_tpcv,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,blood vessel endothelial cell,2342
+Endo_ven_tpcv,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Endothelial ACKR1,1827
+Endo_ven_tpcv,celltype_Weigert2025,10.1038/s41467-024-55440-2,endothelial cell,1196
+Endo_ven_tpcv,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Venous,982
+Endo_ven_tpcv,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Endo_Cap,187
+Epi_EndoCil_Cyc,celltype_Ulrich2024,10.1073/pnas.2404775121,Ciliated,794
+Epi_EndoCil_Cyc,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Ciliated,182
+Epi_EndoCil_Cyc,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Ciliated,141
+Epi_EndoCil_Diff,celltype_Ulrich2024,10.1073/pnas.2404775121,Ciliated,2350
+Epi_EndoCil_Diff,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Ciliated,2156
+Epi_EndoCil_Diff,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Ciliated,1584
+Epi_EndoCil_eProf,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",preCiliated,192
+Epi_EndoCil_eProf,celltype_Ulrich2024,10.1073/pnas.2404775121,Ciliated,69
+Epi_EndoCil_eProf,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Ciliated,64
+Epi_EndoGlandBas,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",SOX9_basalis,332
+Epi_EndoGlandBas,celltype_Ulrich2024,10.1073/pnas.2404775121,Sox9-Glandular,5
+Epi_EndoGlandBas,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,SOX9,3
+Epi_EndoGlandBas_WIF1,celltype_Ulrich2024,10.1073/pnas.2404775121,MUC16+_Gland_sec,10
+Epi_EndoGlandBas_WIF1,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",eHormones,6
+Epi_EndoGlandBas_WIF1,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,SOX9,3
+Epi_EndoGlandFun_Menstr,celltype_Ulrich2024,10.1073/pnas.2404775121,Lumenal,17
+Epi_EndoGlandFun_Menstr,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Glandular,1
+Epi_EndoGlandFun_Prof,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",SOX9_functionalis_II,6132
+Epi_EndoGlandFun_Prof,celltype_Ulrich2024,10.1073/pnas.2404775121,Sox9-Glandular,1167
+Epi_EndoGlandFun_Prof,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,SOX9,690
+Epi_EndoGlandFun_Prof_Cyc,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Cycling,2070
+Epi_EndoGlandFun_Prof_Cyc,celltype_Ulrich2024,10.1073/pnas.2404775121,HMGB2-Prolif,821
+Epi_EndoGlandFun_Prof_Cyc,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,SOX9,685
+Epi_EndoGlandFun_emSec,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Glandular,5466
+Epi_EndoGlandFun_emSec,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Glandular,3891
+Epi_EndoGlandFun_emSec,celltype_Ulrich2024,10.1073/pnas.2404775121,Gland-sec-progenitor-A,803
+Epi_EndoGlandFun_lProf,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",preGlandular,3500
+Epi_EndoGlandFun_lProf,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,SOX9,802
+Epi_EndoGlandFun_lProf,celltype_Ulrich2024,10.1073/pnas.2404775121,Sox9-Glandular,287
+Epi_EndoGlandFun_lSec,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Glandular_secretory_FGF7,646
+Epi_EndoGlandFun_lSec,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Other,500
+Epi_EndoGlandFun_lSec,celltype_Ulrich2024,10.1073/pnas.2404775121,Gland-sec-progenitor-A,57
+Epi_EndoGlandFun_mSec,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Glandular_secretory,7253
+Epi_EndoGlandFun_mSec,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Glandular,5394
+Epi_EndoGlandFun_mSec,celltype_Ulrich2024,10.1073/pnas.2404775121,Gland-sec-progenitor-A,2065
+Epi_EndoGlandLum_Prof,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lumenal,1539
+Epi_EndoGlandLum_Prof,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",SOX9_luminal,1441
+Epi_EndoGlandLum_Prof,celltype_Ulrich2024,10.1073/pnas.2404775121,Lumenal,374
+Epi_EndoGlandLum_eSec,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",eHormones,9
+Epi_EndoGlandLum_mSec,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Luminal,9046
+Epi_EndoGlandLum_mSec,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lumenal,8782
+Epi_EndoGlandLum_mSec,celltype_Ulrich2024,10.1073/pnas.2404775121,Lumenal,1283
+Epi_EndoGland_nEMC,celltype_Ulrich2024,10.1073/pnas.2404775121,Lumenal,98
+Epi_EndoGland_nEMC,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",eHormones,41
+Epi_EndoGland_nEMC,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lumenal,18
+Epi_EndoMucinous,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",MUC5B,197
+Epi_EndoMucinous,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Other,195
+Epi_EndoMucinous,celltype_Ulrich2024,10.1073/pnas.2404775121,Lumenal,104
+Epi_FallopianCil_Cyc,celltype_Weigert2025,10.1038/s41467-024-55440-2,ciliated epithelial cell,75
+Epi_FallopianCil_Cyc,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,ciliated epithelial cell,51
+Epi_FallopianCil_Diff,celltype_Weigert2025,10.1038/s41467-024-55440-2,ciliated epithelial cell,4939
+Epi_FallopianCil_Diff,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,ciliated epithelial cell,1584
+Epi_FallopianCil_Early,celltype_Weigert2025,10.1038/s41467-024-55440-2,ciliated epithelial cell,144
+Epi_FallopianCil_Early,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,ciliated epithelial cell,43
+Epi_FallopianCil_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Epithelial,340
+Epi_FallopianCil_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Ciliated Epi,117
+Epi_FallopianCil_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epithelial,2
+Epi_FallopianSec_Cyc,celltype_Weigert2025,10.1038/s41467-024-55440-2,peg cell,100
+Epi_FallopianSec_Cyc,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,secretory cell,43
+Epi_FallopianSec_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Fallopian Epi,6851
+Epi_FallopianSec_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Epithelial,5029
+Epi_FallopianSec_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epithelial,4506
+Epi_FallopianSec_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Ducts,1
+Epi_FallopianSec_OVGP1hi_EstrInd,celltype_Weigert2025,10.1038/s41467-024-55440-2,peg cell,4222
+Epi_FallopianSec_OVGP1hi_EstrInd,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,secretory cell,958
+Epi_FallopianSec_OVGP1lo,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,secretory cell,9969
+Epi_FallopianSec_OVGP1lo,celltype_Weigert2025,10.1038/s41467-024-55440-2,fallopian tube secretory epithelial cell,336
+Epi_GenitalSurf_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Genital Surface Epi,1155
+Epi_MesonephricTub_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Wolffian Epi,2720
+Epi_MesonephricTub_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Epithelial,2387
+Epi_MesonephricTub_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epithelial,360
+Epi_MesonephricTub_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Ducts,42
+Epi_Mullerian_Undiff,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Müllerian Epi,1921
+Epi_Mullerian_Undiff,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Epithelial,1621
+Epi_Mullerian_Undiff,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epithelial,474
+Epi_Mullerian_Undiff,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Ducts,11
+Epi_OvarianInclSec,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epithelial,10
+Epi_ParatubalIncl_squamous,celltype_Weigert2025,10.1038/s41467-024-55440-2,fallopian tube secretory epithelial cell,424
+Epi_ParatubalIncl_squamous,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,secretory cell,21
+Epi_PrepuceSquamous_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Preputial Lamina Epi,2074
+Epi_UGS_Undiff,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Lower Vagina Epi,1713
+Epi_UGS_Undiff,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Epithelial,3
+Epi_UrethralSquamous_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Urethral Epi,1558
+Epi_UrethralSquamous_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Endothelial,1
+Epi_Uterocervical_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Uterus/Cervix Epi,7202
+Epi_Uterocervical_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Epithelial,32
+Epi_Uterocervical_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epithelial,11
+Epi_Vagina_Lower_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Lower Vagina Epi,4782
+Epi_Vagina_Upper_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Upper Vagina Epi,931
+Epi_Vagina_Upper_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Epithelial,1
+Epi_Vagina_Upper_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epithelial,1
+Epi_reteOvarii_Fetal_Undiff,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,early_sPAX8,2970
+Epi_reteOvarii_Fetal_Undiff,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Rete_testis_ovarii,895
+Epi_reteOvarii_Fetal_Undiff,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Müllerian Mese,48
+Epi_reteOvarii_Fetal_Undiff,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),preGranulosa_I_Fetal,9
+Germcell_GGCs,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,GermCells,1025
+Germcell_GGCs,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Germcell_Oogonia_STRA8_Fetal,575
+Germcell_GGCs,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Germ,231
+Germcell_Oogonia_meiotic,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,GermCells,1415
+Germcell_Oogonia_meiotic,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Germcell_Oogonia_meiotic_Fetal,975
+Germcell_Oogonia_meiotic,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Germ,14
+Germcell_Oogonia_meiotic,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Prepuce,3
+Germcell_Oogonia_premeiotic,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,GermCells,2216
+Germcell_Oogonia_premeiotic,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Germcell_Oogonia_STRA8_Fetal,1450
+Germcell_Oogonia_premeiotic,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Germ,155
+Germcell_Oogonia_premeiotic,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Fallopian Mese,1
+Germcell_PGC_Cyc,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Germ,1617
+Germcell_PGC_Cyc,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,GermCells,385
+Germcell_PGC_Cyc,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Germcell_PGC_Fetal,212
+Germcell_PGC_Cyc,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Müllerian Epi,3
+Germcell_PGCs,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Germ,3044
+Germcell_PGCs,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,GermCells,1133
+Germcell_PGCs,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Germcell_PGC_Fetal,818
+Germcell_PGCs,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Müllerian Epi,3
+Germcell_PrimaryOocyte_ZP4neg,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,GermCells,690
+Germcell_PrimaryOocyte_ZP4neg,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Germcell_Oocyte_I,387
+Germcell_PrimaryOocyte_ZP4neg,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Germ,2
+Germcell_PrimaryOocyte_ZP4pos,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Germcell_Oocyte_IIb,136
+Germcell_PrimaryOocyte_ZP4pos,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,GermCells,53
+Gonadal_SomaticPrec,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Somatic_progenitors,2818
+Gonadal_SomaticPrec,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,early_somatic,1448
+Gonadal_SomaticPrec,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_Fetal,7
+Gonadal_SomaticPrec,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Müllerian Mese,6
+Gonadal_SupportingUndiff,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Undifferentiated_supporting,7967
+Gonadal_SupportingUndiff,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,early_supporting,3325
+Gonadal_SupportingUndiff,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),preGranulosa_I_Fetal,7
+Gonadal_SupportingUndiff,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Müllerian Mese,3
+Gonadal_preGranulosa-CEderived,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,preGC_I,12919
+Gonadal_preGranulosa-CEderived,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Pre_granulosa,4344
+Gonadal_preGranulosa-CEderived,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),preGranulosa_I_Fetal,4053
+Gonadal_preGranulosa-CEderived,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Fallopian Mese,6
+Gonadal_preGranulosa-OSEderived_early,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Pre_granulosa,2690
+Gonadal_preGranulosa-OSEderived_early,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,preGC_IIa,2034
+Gonadal_preGranulosa-OSEderived_early,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),preGranulosa_II_Fetal,890
+Gonadal_preGranulosa-OSEderived_early,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Coelomic Epi,3
+Gonadal_preGranulosa-OSEderived_late,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,preGC_IIb,19064
+Gonadal_preGranulosa-OSEderived_late,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),preGranulosa_II_Fetal,14378
+Gonadal_preGranulosa-OSEderived_late,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Pre_granulosa,13074
+Gonadal_preGranulosa-OSEderived_late,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Uterus/Cervix Epi,7
+Granulosa_AMHneg_Atretic,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Granulosa_sq_atr,1982
+Granulosa_AMHneg_Squamous,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Granulosa_sq,5337
+Granulosa_AMHpos_Atretic,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Granulosa_AMH_atr,1434
+Granulosa_AMHpos_Cyc,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Granulosa_AMH_cycling,4501
+Granulosa_AMHpos_Steroidogenic,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Granulosa_AMH_antral,7227
+Granulosa_AMHpos_nonSteroidogenic,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Granulosa_AMH_early,498
+Granulosa_AMHpos_nonSteroidogenic_early,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Granulosa_sq_transitioning,529
+Granulosa_sq_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,preGC_IIb,3390
+Granulosa_sq_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),preGranulosa_II_Fetal,2943
+Granulosa_sq_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Pre_granulosa,82
+Immune_ASDC,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Dendritic,1
+Immune_ASDC,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,1
+Immune_BasoEosino,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mast cell,9
+Immune_BasoEosino,celltype_Ulrich2024,10.1073/pnas.2404775121,Res-Mem-T,1
+Immune_BasoEosino,celltype_Weigert2025,10.1038/s41467-024-55440-2,mast cell,1
+Immune_CD4_NaiveT,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,118
+Immune_CD4_NaiveT,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,88
+Immune_CD4_NaiveT,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD4,74
+Immune_CD4_NaiveT,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,35
+Immune_CD4_NaiveT,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,33
+Immune_CD4_NaiveT,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,30
+Immune_CD4_NaiveT,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,26
+Immune_CD4_NaiveT,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,23
+Immune_CD4_NaiveT,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,1
+Immune_CD4_T_Unpolarised,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,1780
+Immune_CD4_T_Unpolarised,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,1019
+Immune_CD4_T_Unpolarised,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,574
+Immune_CD4_T_Unpolarised,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD4,418
+Immune_CD4_T_Unpolarised,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,139
+Immune_CD4_T_Unpolarised,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,54
+Immune_CD4_T_Unpolarised,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,13
+Immune_CD4_T_Unpolarised,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,5
+Immune_CD4_Th17,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,2329
+Immune_CD4_Th17,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,906
+Immune_CD4_Th17,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,245
+Immune_CD4_Th17,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD4,239
+Immune_CD4_Th17,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,102
+Immune_CD4_Th17,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,21
+Immune_CD4_Th17,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,3
+Immune_CD4_Th17_SCMlike,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,155
+Immune_CD4_Th17_SCMlike,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,123
+Immune_CD4_Th17_SCMlike,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD4,120
+Immune_CD4_Th17_SCMlike,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,107
+Immune_CD4_Th17_SCMlike,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,44
+Immune_CD4_Th17_SCMlike,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,19
+Immune_CD4_Th17_SCMlike,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,12
+Immune_CD4_Th17_SCMlike,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,1
+Immune_CD4_Treg,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,495
+Immune_CD4_Treg,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,166
+Immune_CD4_Treg,celltype_Ulrich2024,10.1073/pnas.2404775121,TReg,122
+Immune_CD4_Treg,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,29
+Immune_CD4_Treg,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,27
+Immune_CD4_Treg,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tcm/Naive_CD4,13
+Immune_CD4_Treg,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,4
+Immune_CD4_Treg,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,2
+Immune_CD4_Treg_Cyc,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,9
+Immune_CD4_Treg_Cyc,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,4
+Immune_CD4_Treg_Cyc,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD4,3
+Immune_CD4_Treg_Cyc,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,2
+Immune_CD8_NaiveT,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,49
+Immune_CD8_NaiveT,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,23
+Immune_CD8_NaiveT,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,19
+Immune_CD8_NaiveT,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,19
+Immune_CD8_NaiveT,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,14
+Immune_CD8_NaiveT,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,12
+Immune_CD8_NaiveT,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD8,11
+Immune_CD8_NaiveT,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,7
+Immune_CD8_T_EM,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,252
+Immune_CD8_T_EM,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,141
+Immune_CD8_T_EM,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,108
+Immune_CD8_T_EM,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD8,95
+Immune_CD8_T_EM,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,74
+Immune_CD8_T_EM,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,2
+Immune_CD8_T_EM,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,1
+Immune_CD8_T_EM,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,1
+Immune_CD8_T_RM,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,3151
+Immune_CD8_T_RM,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,949
+Immune_CD8_T_RM,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,791
+Immune_CD8_T_RM,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD8,415
+Immune_CD8_T_RM,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,79
+Immune_CD8_T_RM,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,36
+Immune_CD8_T_RM,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,1
+Immune_CD8_T_RM_GZMKhi,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,3178
+Immune_CD8_T_RM_GZMKhi,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,2304
+Immune_CD8_T_RM_GZMKhi,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,1116
+Immune_CD8_T_RM_GZMKhi,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD8,829
+Immune_CD8_T_RM_GZMKhi,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,254
+Immune_CD8_T_RM_GZMKhi,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,80
+Immune_CD8_T_RM_GZMKhi,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,9
+Immune_CD8_T_RM_GZMKhi,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,3
+Immune_CD8_T_RM_GZMKhi,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,1
+Immune_EarlyMidErythroid,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Erythroid,14
+Immune_EarlyMidErythroid,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Erythrocyte,2
+Immune_EarlyMidErythroid,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Erythroid,1
+Immune_HPC,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,37
+Immune_HPC,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,27
+Immune_HPC,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,3
+Immune_HPC,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_B_naive,1
+Immune_HPC,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,1
+Immune_ILC3_NCRhi,celltype_Ulrich2024,10.1073/pnas.2404775121,ILC,583
+Immune_ILC3_NCRhi,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,544
+Immune_ILC3_NCRhi,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,171
+Immune_ILC3_NCRhi,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,74
+Immune_ILC3_NCRhi,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,58
+Immune_ILC3_NCRhi,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,36
+Immune_ILC3_NCRhi,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,23
+Immune_ILC3_NCRhi,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,19
+Immune_ILC3_NCRhi,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,11
+Immune_ILC3_NCRlo,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,63
+Immune_ILC3_NCRlo,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,50
+Immune_ILC3_NCRlo,celltype_Ulrich2024,10.1073/pnas.2404775121,ILC,24
+Immune_ILC3_NCRlo,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,15
+Immune_ILC3_NCRlo,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,10
+Immune_ILC3_NCRlo,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,3
+Immune_ImmatureB,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,60
+Immune_ImmatureB,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_B_naive,12
+Immune_ImmatureB,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,11
+Immune_ImmatureB,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,1
+Immune_LargePreB,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,44
+Immune_LargePreB,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,22
+Immune_LargePreB,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_B_naive,17
+Immune_LargePreB,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,2
+Immune_LargePreB,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,1
+Immune_LateErythroid,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,10
+Immune_LateErythroid,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_B_naive,5
+Immune_LateErythroid,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,3
+Immune_LateErythroid,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,3
+Immune_MAIT,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,595
+Immune_MAIT,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,478
+Immune_MAIT,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,111
+Immune_MAIT,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD4,54
+Immune_MAIT,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,34
+Immune_MAIT,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,16
+Immune_MAIT,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,10
+Immune_MAIT,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,6
+Immune_MEMP,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,22
+Immune_MEMP,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,17
+Immune_MEMP,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,1
+Immune_MEMP,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Erythrocyte,1
+Immune_MEMP,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,1
+Immune_MEMP,celltype_Ulrich2024,10.1073/pnas.2404775121,Mast,1
+Immune_MO_Classical,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,1564
+Immune_MO_Classical,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,553
+Immune_MO_Classical,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,381
+Immune_MO_Classical,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,334
+Immune_MO_Classical,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,218
+Immune_MO_Classical,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Monocyte,210
+Immune_MO_Classical,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,118
+Immune_MO_Classical,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,77
+Immune_MO_Classical,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,25
+Immune_MO_NonClassical,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,145
+Immune_MO_NonClassical,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,64
+Immune_MO_NonClassical,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,55
+Immune_MO_NonClassical,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,34
+Immune_MO_NonClassical,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Monocyte,24
+Immune_MO_NonClassical,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,7
+Immune_MO_NonClassical,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,6
+Immune_MO_NonClassical,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,4
+Immune_MO_NonClassical,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,2
+Immune_Mac_Cyc,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,278
+Immune_Mac_Cyc,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,215
+Immune_Mac_Cyc,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,161
+Immune_Mac_Cyc,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,119
+Immune_Mac_Cyc,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_oLAMs_SPP1,96
+Immune_Mac_Cyc,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,73
+Immune_Mac_Cyc,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,68
+Immune_Mac_Cyc,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,39
+Immune_Mac_Cyc,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,15
+Immune_Mac_LYVE1hi,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,2805
+Immune_Mac_LYVE1hi,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,1070
+Immune_Mac_LYVE1hi,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,822
+Immune_Mac_LYVE1hi,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,721
+Immune_Mac_LYVE1hi,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,675
+Immune_Mac_LYVE1hi,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,600
+Immune_Mac_LYVE1hi,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Mac_LYVE1,399
+Immune_Mac_LYVE1hi,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,220
+Immune_Mac_LYVE1hi,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,167
+Immune_Mac_Transitional,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,284
+Immune_Mac_Transitional,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,177
+Immune_Mac_Transitional,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,126
+Immune_Mac_Transitional,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Mac_Fetal,101
+Immune_Mac_Transitional,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,54
+Immune_Mac_Transitional,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,50
+Immune_Mac_Transitional,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,27
+Immune_Mac_Transitional,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,25
+Immune_Mac_Transitional,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,10
+Immune_Mast,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mast cell,1342
+Immune_Mast,celltype_Weigert2025,10.1038/s41467-024-55440-2,mast cell,589
+Immune_Mast,celltype_Ulrich2024,10.1073/pnas.2404775121,Mast,485
+Immune_Mast,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,401
+Immune_Mast,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,34
+Immune_Mast,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,11
+Immune_Mast,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,9
+Immune_Mast,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Mast,9
+Immune_Mast,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,1
+Immune_MegaPlat,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,62
+Immune_MegaPlat,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,51
+Immune_MegaPlat,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,6
+Immune_MemoryB,celltype_Weigert2025,10.1038/s41467-024-55440-2,plasma cell,283
+Immune_MemoryB,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,157
+Immune_MemoryB,celltype_Ulrich2024,10.1073/pnas.2404775121,B-cells,49
+Immune_MemoryB,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_B_naive,25
+Immune_MemoryB,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,22
+Immune_MemoryB,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,17
+Immune_MemoryB,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,17
+Immune_MemoryB,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,5
+Immune_NKT_γδT_Vδ1,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,577
+Immune_NKT_γδT_Vδ1,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,338
+Immune_NKT_γδT_Vδ1,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tem/Trm_CD8,86
+Immune_NKT_γδT_Vδ1,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD8,78
+Immune_NKT_γδT_Vδ1,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,29
+Immune_NKT_γδT_Vδ1,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,12
+Immune_NKT_γδT_Vδ1,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,3
+Immune_NKT_γδT_Vδ1,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,2
+Immune_NK_CD16hi,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,321
+Immune_NK_CD16hi,celltype_Ulrich2024,10.1073/pnas.2404775121,NK-cells,184
+Immune_NK_CD16hi,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_NK_CD16+,165
+Immune_NK_CD16hi,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,147
+Immune_NK_CD16hi,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,124
+Immune_NK_CD16hi,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,51
+Immune_NK_CD16hi,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,30
+Immune_NK_CD16hi,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,28
+Immune_NK_CD16hi,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,1
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,celltype_Ulrich2024,10.1073/pnas.2404775121,NK-cells,7
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,6
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,6
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,5
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,2
+Immune_NK_Cyc,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,858
+Immune_NK_Cyc,celltype_Ulrich2024,10.1073/pnas.2404775121,Hematopoietic-progenitor,256
+Immune_NK_Cyc,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,178
+Immune_NK_Cyc,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,15
+Immune_NK_Cyc,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,13
+Immune_NK_Cyc,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,11
+Immune_NK_Cyc,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,6
+Immune_NK_Cyc,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_NK_CD16+,5
+Immune_NK_Cyc,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,5
+Immune_NMP_Promyelocytes,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,28
+Immune_NMP_Promyelocytes,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,21
+Immune_NMP_Promyelocytes,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,20
+Immune_NMP_Promyelocytes,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Monocyte,4
+Immune_NMP_Promyelocytes,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,3
+Immune_NaiveB,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,30
+Immune_NaiveB,celltype_Weigert2025,10.1038/s41467-024-55440-2,plasma cell,25
+Immune_NaiveB,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_B_naive,12
+Immune_NaiveB,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,10
+Immune_NaiveB,celltype_Ulrich2024,10.1073/pnas.2404775121,B-cells,7
+Immune_NaiveB,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,6
+Immune_NaiveB,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,4
+Immune_NaiveB,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,2
+Immune_Neutrophils,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,8
+Immune_Neutrophils,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,5
+Immune_Neutrophils,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,1
+Immune_Neutrophils,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,1
+Immune_Plasma_κ,celltype_Weigert2025,10.1038/s41467-024-55440-2,plasma cell,675
+Immune_Plasma_κ,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,B cell,248
+Immune_Plasma_κ,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,39
+Immune_Plasma_κ,celltype_Ulrich2024,10.1073/pnas.2404775121,B-cells,34
+Immune_Plasma_κ,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,2
+Immune_Plasma_λ,celltype_Weigert2025,10.1038/s41467-024-55440-2,plasma cell,277
+Immune_Plasma_λ,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,B cell,146
+Immune_Plasma_λ,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,26
+Immune_Plasma_λ,celltype_Ulrich2024,10.1073/pnas.2404775121,MUC16+_Gland_sec,22
+Immune_Plasma_λ,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,3
+Immune_ProB,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,12
+Immune_ProB,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,8
+Immune_ProB,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_B_naive,3
+Immune_ProB,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,2
+Immune_SmallPreB,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,41
+Immune_SmallPreB,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,40
+Immune_SmallPreB,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_B_naive,40
+Immune_SmallPreB,celltype_Weigert2025,10.1038/s41467-024-55440-2,plasma cell,2
+Immune_T_Cyc,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,336
+Immune_T_Cyc,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,126
+Immune_T_Cyc,celltype_Ulrich2024,10.1073/pnas.2404775121,Hematopoietic-progenitor,111
+Immune_T_Cyc,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,49
+Immune_T_Cyc,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,23
+Immune_T_Cyc,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,13
+Immune_T_Cyc,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Tcm/Naive_CD4,10
+Immune_T_Cyc,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,9
+Immune_T_Cyc,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,2
+Immune_cDC1,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,124
+Immune_cDC1,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,73
+Immune_cDC1,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,51
+Immune_cDC1,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,46
+Immune_cDC1,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,13
+Immune_cDC1,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,12
+Immune_cDC1,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,7
+Immune_cDC1,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,2
+Immune_cDC1,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_oLAMs_SPP1,1
+Immune_cDC2,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,617
+Immune_cDC2,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,232
+Immune_cDC2,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,197
+Immune_cDC2,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,157
+Immune_cDC2,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Dendritic,147
+Immune_cDC2,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,71
+Immune_cDC2,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,41
+Immune_cDC2,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,31
+Immune_cDC2,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,7
+Immune_cDC2_CD207hi,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,138
+Immune_cDC2_CD207hi,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,138
+Immune_cDC2_CD207hi,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,71
+Immune_cDC2_CD207hi,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,34
+Immune_cDC2_CD207hi,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,26
+Immune_cDC2_CD207hi,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,11
+Immune_cDC2_CD207hi,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,10
+Immune_cDC2_CD207hi,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Dendritic,5
+Immune_mregDC,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,40
+Immune_mregDC,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,29
+Immune_mregDC,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,27
+Immune_mregDC,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,13
+Immune_mregDC,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,8
+Immune_mregDC,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,2
+Immune_mregDC,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,2
+Immune_oLAM,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_oLAMs,182
+Immune_oLAM,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,13
+Immune_oLAM,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,3
+Immune_oLAM,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,2
+Immune_oLAM,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,2
+Immune_oLAM,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,2
+Immune_oLAM,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,1
+Immune_pDC,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,154
+Immune_pDC,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,78
+Immune_pDC,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,59
+Immune_pDC,celltype_Weigert2025,10.1038/s41467-024-55440-2,plasma cell,34
+Immune_pDC,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,9
+Immune_pDC,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,7
+Immune_pDC,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,4
+Immune_pDC,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Dendritic,1
+Immune_tolDC,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,7
+Immune_tolDC,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,6
+Immune_tolDC,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,2
+Immune_tolDC,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,2
+Immune_tolDC,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,1
+Immune_uMac_Inf,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,158
+Immune_uMac_Inf,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,57
+Immune_uMac_Inf,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,44
+Immune_uMac_Inf,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,44
+Immune_uMac_Inf,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,23
+Immune_uMac_Inf,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_Monocyte,22
+Immune_uMac_Inf,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,17
+Immune_uMac_Inf,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,16
+Immune_uMac_Inf,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,1
+Immune_uNK1,celltype_Ulrich2024,10.1073/pnas.2404775121,NK-cells,777
+Immune_uNK1,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,687
+Immune_uNK1,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,76
+Immune_uNK1,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,2
+Immune_uNK2,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,4100
+Immune_uNK2,celltype_Ulrich2024,10.1073/pnas.2404775121,NK-cells,1731
+Immune_uNK2,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,298
+Immune_uNK2,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,41
+Immune_uNK2,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,27
+Immune_uNK2,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_NK_CD16-,7
+Immune_uNK2,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,4
+Immune_uNK2,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,4
+Immune_uNK2,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,4
+Immune_uNK3,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,2482
+Immune_uNK3,celltype_Ulrich2024,10.1073/pnas.2404775121,NK-cells,1506
+Immune_uNK3,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,745
+Immune_uNK3,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,439
+Immune_uNK3,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Lymphoid,165
+Immune_uNK3,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_NK_CD16-,102
+Immune_uNK3,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,78
+Immune_uNK3,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,71
+Immune_uNK3,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,9
+Immune_uftLAM,celltype_Weigert2025,10.1038/s41467-024-55440-2,macrophage,841
+Immune_uftLAM,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,138
+Immune_uftLAM,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,macrophage,110
+Immune_uftLAM,celltype_Ulrich2024,10.1073/pnas.2404775121,Macrophage,94
+Immune_uftLAM,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Myeloid,33
+Immune_uftLAM,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,18
+Immune_uftLAM,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Myeloid,14
+Immune_uftLAM,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_oLAMs_SPP1,8
+Immune_uftLAM,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,1
+Immune_γδT_Vγ9Vδ2,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Immune,16
+Immune_γδT_Vγ9Vδ2,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Immune,12
+Immune_γδT_Vγ9Vδ2,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Immune_NK_CD16-,11
+Immune_γδT_Vγ9Vδ2,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",Immune_Lymphoid,9
+Immune_γδT_Vγ9Vδ2,celltype_Weigert2025,10.1038/s41467-024-55440-2,lymphocyte,9
+Immune_γδT_Vγ9Vδ2,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Immune,8
+Immune_γδT_Vγ9Vδ2,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,mature NK T cell,3
+Immune_γδT_Vγ9Vδ2,celltype_Ulrich2024,10.1073/pnas.2404775121,TMEM-CD8,3
+Mesen_AdvFibs,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Fibroblast C7,3
+Mesen_AdvFibs,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",dStromal_mid,3
+Mesen_AdvFibs,celltype_Ulrich2024,10.1073/pnas.2404775121,C7-Fibroblast,2
+Mesen_AdvFibsIntr,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),FibC3,4147
+Mesen_AdvFibsIntr,celltype_Weigert2025,10.1038/s41467-024-55440-2,stromal cell,2828
+Mesen_AdvFibsIntr,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,fibroblast,1010
+Mesen_AdvFibsIntr,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,978
+Mesen_AdvFibsIntr,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Fibroblast C7,546
+Mesen_AdvFibsIntr,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",dStromal_mid,43
+Mesen_AdvFibs_PI16hi,celltype_Weigert2025,10.1038/s41467-024-55440-2,stromal cell,1693
+Mesen_AdvFibs_PI16hi,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,fibroblast,264
+Mesen_AdvFibs_PI16hi,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Fibroblast C7,5
+Mesen_AdvFibs_PI16hi,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,4
+Mesen_AdvFibs_PI16hi,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),FibC3,2
+Mesen_AdvFibs_PI16low,celltype_Weigert2025,10.1038/s41467-024-55440-2,stromal cell,4740
+Mesen_AdvFibs_PI16low,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,fibroblast,2115
+Mesen_AdvFibs_PI16low,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),FibC3,330
+Mesen_AdvFibs_PI16low,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,27
+Mesen_AdvFibs_PI16low,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Fibroblast C7,7
+Mesen_AdvFibs_PI16low,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",ePV_2,4
+Mesen_CervixFib_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Cervix/Vagina Lig,5640
+Mesen_CervixFib_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,23
+Mesen_CervixFib_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epoophon_mesen_Fetal,3
+Mesen_CervixVaginaSMCs_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Cervix/Upper Vagina SmMu,9365
+Mesen_CervixVaginaSMCs_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,SMCs,8
+Mesen_CervixVaginaSMCs_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_SMCs_Fetal,5
+Mesen_CorpusCavernosumFib_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Corpus Cavernosum,7777
+Mesen_CorpusSpongiosumFib_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Corpus Spongiosum,5522
+Mesen_EndoGlandBas,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,483
+Mesen_EndoGlandBas,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,dS,1
+Mesen_EndoGlandBas,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",dStromal_mid,1
+Mesen_EndoStromalFib_Menopause,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,68
+Mesen_EndoStromalFib_Menopause,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,dS,24
+Mesen_EndoStromalFib_Menopause,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",eStromal,24
+Mesen_EndoStromalFib_MenstrualEutopic,celltype_Ulrich2024,10.1073/pnas.2404775121,dS3,39
+Mesen_EndoStromalFib_MenstrualEutopic,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",eStromal_MMPs,7
+Mesen_EndoStromalFib_MenstrualEutopic,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,dS,2
+Mesen_EndoStromalFib_MenstrualFluid,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,21
+Mesen_EndoStromalFib_MenstrualFluid,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,dS,16
+Mesen_EndoStromalFib_MenstrualFluid,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",dStromal_mid,6
+Mesen_EndoStromalFib_Prolif,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",eStromal,29105
+Mesen_EndoStromalFib_Prolif,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,eS,8833
+Mesen_EndoStromalFib_Prolif,celltype_Ulrich2024,10.1073/pnas.2404775121,dS3,7295
+Mesen_EndoStromalFib_Prolif_Cyc,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",eStromal_cycling,3841
+Mesen_EndoStromalFib_Prolif_Cyc,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,eS,1773
+Mesen_EndoStromalFib_Prolif_Cyc,celltype_Ulrich2024,10.1073/pnas.2404775121,eS-proliferative,1178
+Mesen_EndoStromalFib_eSec,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",dStromal_early,2735
+Mesen_EndoStromalFib_eSec,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,dS,1891
+Mesen_EndoStromalFib_eSec,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,1462
+Mesen_EndoStromalFib_lSec,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",dStromal_mid,4724
+Mesen_EndoStromalFib_lSec,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,dS,3280
+Mesen_EndoStromalFib_lSec,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,2763
+Mesen_EndoStromalFib_mSec,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",dStromal_mid,6954
+Mesen_EndoStromalFib_mSec,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,dS,6820
+Mesen_EndoStromalFib_mSec,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,4575
+Mesen_EndoStromalFib_nEMC,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,dS,471
+Mesen_EndoStromalFib_nEMC,celltype_Ulrich2024,10.1073/pnas.2404775121,dS3,359
+Mesen_EndoStromalFib_nEMC,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",dStromal_mid,330
+Mesen_EndoStromalFib_nEMC_Cyc,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",eStromal,371
+Mesen_EndoStromalFib_nEMC_Cyc,celltype_Ulrich2024,10.1073/pnas.2404775121,dS3,116
+Mesen_EndoStromalFib_nEMC_Cyc,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,eS,71
+Mesen_EndoStromalFib_nEMC_Sec,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",dStromal_mid,7242
+Mesen_EndoStromalFib_nEMC_Sec,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,dS,6949
+Mesen_EndoStromalFib_nEMC_Sec,celltype_Ulrich2024,10.1073/pnas.2404775121,dS2,4660
+Mesen_EpoophronFib_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Epoophron Mese,7069
+Mesen_EpoophronFib_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,6189
+Mesen_EpoophronFib_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epoophon_mesen_Fetal,3968
+Mesen_EpoophronFib_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Interstitial,13
+Mesen_FallopianFib_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Fallopian Mese,27801
+Mesen_FallopianFib_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,8950
+Mesen_FallopianFib_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_mesen_Fetal,6158
+Mesen_FallopianFib_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Interstitial,9
+Mesen_FallopianFibs,celltype_Weigert2025,10.1038/s41467-024-55440-2,stromal cell,41325
+Mesen_FallopianFibs,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,myofibroblast cell,9529
+Mesen_FallopianLig_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Fallopian Lig,11952
+Mesen_FallopianLig_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,4421
+Mesen_FallopianLig_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_lig_Fetal,2798
+Mesen_FallopianLig_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Interstitial,25
+Mesen_FallopianSMCs_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Fallopian SmMu,4976
+Mesen_FallopianSMCs_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,SMCs,2812
+Mesen_FallopianSMCs_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_SMCs_Fetal,2282
+Mesen_GlansFib_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Glans,4823
+Mesen_GonadalFibs_Undiff,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Interstitial,5332
+Mesen_GonadalFibs_Undiff,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Oi,3218
+Mesen_GonadalFibs_Undiff,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Wolffian/Mesonephros Mese,1810
+Mesen_GonadalFibs_Undiff,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_Fetal,1212
+Mesen_LabiaFib_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Labia,1695
+Mesen_LabioScrotalSwelling_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Labio-Scrotal Swelling,2933
+Mesen_LabioScrotalSwelling_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,47
+Mesen_LabioScrotalSwelling_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_lig_Fetal,42
+Mesen_MesonephricFibs_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Wolffian/Mesonephros Mese,16291
+Mesen_MesonephricFibs_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,9585
+Mesen_MesonephricFibs_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epoophon_mesen_Fetal,286
+Mesen_MesonephricFibs_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Mesonephric_mesenchymal,226
+Mesen_MullerianFib,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Müllerian Mese,1647
+Mesen_MullerianFib,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,1404
+Mesen_MullerianFib,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_mesen_Fetal,4
+Mesen_MullerianFib,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Extragonadal_CE,2
+Mesen_OvarianFibs_AdvLike,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_InnCor,61
+Mesen_OvarianFibs_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Oi,19068
+Mesen_OvarianFibs_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_Fetal,13637
+Mesen_OvarianFibs_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Interstitial,3588
+Mesen_OvarianFibs_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Fallopian Lig,39
+Mesen_OvarianFibs_InncorMedulla,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_InnCor,47671
+Mesen_OvarianFibs_Medulla_SMCsLike,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_InnCor,8552
+Mesen_OvarianFibs_Outcor,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_OutCor_Foll,13493
+Mesen_OvarianFibs_Perifol,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_Perifoll_InnCor,16057
+Mesen_OvarianInclFibs,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_HOXA9,42
+Mesen_PV_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Perivascular,12619
+Mesen_PV_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,PV,9412
+Mesen_PV_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),RepTract_prePV_Fetal,3459
+Mesen_PV_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Perivascular,100
+Mesen_Pericyte,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),PV_Capillary_Pericytes,4326
+Mesen_Pericyte,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",ePV_2,1830
+Mesen_Pericyte,celltype_Ulrich2024,10.1073/pnas.2404775121,PV-STEAP4,1622
+Mesen_Pericyte,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,PV STEAP4,1186
+Mesen_Pericyte,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,fibroblast,474
+Mesen_Pericyte,celltype_Weigert2025,10.1038/s41467-024-55440-2,perivascular cell,152
+Mesen_Pericyte_Cyc,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",ePV_2,280
+Mesen_Pericyte_Cyc,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),PV_SMC_Arterial,142
+Mesen_Pericyte_Cyc,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,PV STEAP4,138
+Mesen_Pericyte_Cyc,celltype_Ulrich2024,10.1073/pnas.2404775121,eS-proliferative,70
+Mesen_Pericyte_Cyc,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,fibroblast,7
+Mesen_Pericyte_Cyc,celltype_Weigert2025,10.1038/s41467-024-55440-2,perivascular cell,1
+Mesen_Pericyte_EndoSpiralArt,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",ePV_1b,1359
+Mesen_Pericyte_EndoSpiralArt,celltype_Ulrich2024,10.1073/pnas.2404775121,PV-MYH11_CDKN1A-,648
+Mesen_Pericyte_EndoSpiralArt,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,PV STEAP4,506
+Mesen_Pericyte_EndoSpiralArt,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),PV_SMC_Arterial,409
+Mesen_Pericyte_EndoSpiralArt,celltype_Weigert2025,10.1038/s41467-024-55440-2,perivascular cell,3
+Mesen_Pericyte_EndoStromalLike,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",ePV_2,1161
+Mesen_Pericyte_EndoStromalLike,celltype_Ulrich2024,10.1073/pnas.2404775121,dS3,399
+Mesen_Pericyte_EndoStromalLike,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,PV STEAP4,308
+Mesen_Pericyte_SMCsIntr,celltype_Ulrich2024,10.1073/pnas.2404775121,PV-STEAP4,930
+Mesen_Pericyte_SMCsIntr,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,PV STEAP4,269
+Mesen_Pericyte_SMCsIntr,celltype_Weigert2025,10.1038/s41467-024-55440-2,perivascular cell,193
+Mesen_Pericyte_SMCsIntr,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",ePV_1a,89
+Mesen_Pericyte_SMCsIntr,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),PV_Capillary_Pericytes,68
+Mesen_Pericyte_SMCsIntr,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,fibroblast,33
+Mesen_Prepuce_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Prepuce,1455
+Mesen_SMCs,celltype_Ulrich2024,10.1073/pnas.2404775121,uSMC,4353
+Mesen_SMCs,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,uSMC,3618
+Mesen_SMCs,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,smooth muscle cell,3313
+Mesen_SMCs,celltype_Weigert2025,10.1038/s41467-024-55440-2,smooth muscle cell,2539
+Mesen_SMCs,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",uSMCs,885
+Mesen_SMCs,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_InnCor,55
+Mesen_Theca_Atretic,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Theca_Atr,27
+Mesen_Theca_Externa,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Stroma_Perifoll_InnCor,6063
+Mesen_Theca_Interna_Cyc,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Theca_1perifollicular_cycling,1313
+Mesen_Theca_Interna_Perifol,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Theca_1perifollicular,2092
+Mesen_Theca_Interna_Steroid,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Theca_2androgenic_Atr,2141
+Mesen_UGSFib_Lower,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Lower Urogenital Sinus Mese,4415
+Mesen_UGSFib_Lower,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,46
+Mesen_UGSFib_Upper,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,4904
+Mesen_UGSFib_Upper,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Urogenital Sinus Lig,3913
+Mesen_UGSFib_Upper,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_SMCs_Fetal,9
+Mesen_UGSFib_Upper,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Extragonadal_CE,2
+Mesen_UGSLig,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Urogenital Sinus Lig,92
+Mesen_UGSLig,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,7
+Mesen_UGSSMCs,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Lower Vagina SmMu,226
+Mesen_UGSSMCs,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,SMCs,1
+Mesen_UterotubalJunctionFibs,celltype_Weigert2025,10.1038/s41467-024-55440-2,stromal cell,64
+Mesen_UterotubalJunctionFibs,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,fibroblast,2
+Mesen_UterusFibs_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Uterus Mese,23326
+Mesen_UterusFibs_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,778
+Mesen_UterusFibs_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_mesen_Fetal,9
+Mesen_UterusFibs_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Extragonadal_CE,3
+Mesen_UterusLig_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Uterus Lig,8383
+Mesen_UterusLig_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,541
+Mesen_UterusLig_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_lig_Fetal,262
+Mesen_UterusLig_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Interstitial,5
+Mesen_UterusSMCs_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Uterus SmMu,5168
+Mesen_UterusSMCs_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,SMCs,20
+Mesen_UterusSMCs_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_SMCs_Fetal,12
+Mesen_VaginaFib_Lower_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Urogenital Sinus SmMu,4
+Mesen_VaginaFib_Lower_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,3
+Mesen_VaginaFibs_Upper_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Upper Vagina Mese,6442
+Mesen_VaginaFibs_Upper_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Mesenchymal_GATA2,172
+Mesen_VaginaSMCs_Lower_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Lower Vagina SmMu,1162
+Mesen_VaginaSMCs_Lower_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,PV,1
+Mesen_VaginaSMCs_Lower_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),PV_Fetal,1
+Mesen_vSMCs_largeArt,celltype_Weigert2025,10.1038/s41467-024-55440-2,perivascular cell,6837
+Mesen_vSMCs_largeArt,celltype_Ulrich2024,10.1073/pnas.2404775121,PV-MYH11_CDKN1A+,6470
+Mesen_vSMCs_largeArt,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,pericyte,1894
+Mesen_vSMCs_largeArt,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),PV_SMC_Arterial,598
+Mesen_vSMCs_largeArt,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,PV MYH11,75
+Mesen_vSMCs_largeArt,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",ePV_1b,18
+Mesen_vSMCs_medArt,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),PV_SMC_Arterial,25515
+Mesen_vSMCs_medArt,celltype_Ulrich2024,10.1073/pnas.2404775121,PV-MYH11_CDKN1A-,4497
+Mesen_vSMCs_medArt,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,PV MYH11,2838
+Mesen_vSMCs_medArt,celltype_Weigert2025,10.1038/s41467-024-55440-2,perivascular cell,1279
+Mesen_vSMCs_medArt,celltype_HECA,"10.1038/s41588-024-01873-w (HECA/Marečková 2024, tentative)",mPV,405
+Mesen_vSMCs_medArt,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,pericyte,62
+Meso_GonadalCoelEpi,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,CoelEpi_LHX9,1215
+Meso_GonadalCoelEpi,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Gonadal_CE,555
+Meso_GonadalCoelEpi,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Coelomic Epi,210
+Meso_GonadalCoelEpi,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),OSE_Fetal,15
+Meso_OSE,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),OSE,33
+Meso_OSE_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,OSE,7137
+Meso_OSE_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Ovarian_SE,6674
+Meso_OSE_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),OSE_Fetal,4264
+Meso_OSE_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Coelomic Epi,65
+Meso_ParamesoCoelEpi,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Coelomic Epi,5183
+Meso_ParamesoCoelEpi,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,CoelEpi_GATA2,2178
+Meso_ParamesoCoelEpi,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Epithelial,40
+Meso_ParamesoCoelEpi,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Gonadal_CE,39
+Meso_Peritoneal_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,CoelEpi_GATA2,886
+Meso_Peritoneal_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Vas Deferens Mese,868
+Meso_Peritoneal_Fetal,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Extragonadal_CE,451
+Meso_Peritoneal_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_lig_Fetal,1
+Meso_serosa,celltype_Weigert2025,10.1038/s41467-024-55440-2,fallopian tube secretory epithelial cell,124
+Meso_serosa,celltype_Ulrich2024,10.1073/pnas.2404775121,Myoepithelial,48
+Meso_serosa,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,secretory cell,20
+Neural_Melanocyte_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Schwann,87
+Neural_Schwann,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Neural_Glia_Adult,425
+Neural_Schwann,celltype_Ulrich2022,10.1016/j.devcel.2022.02.017,fibroblast,9
+Neural_Schwann,celltype_Ulrich2024,10.1073/pnas.2404775121,RUNX3+_Fibroblast,5
+Neural_Schwann,celltype_GarciaAlonso2021,10.1038/s41588-021-00972-2,Fibroblast C7,4
+Neural_Schwann,celltype_Weigert2025,10.1038/s41467-024-55440-2,stromal cell,4
+Neural_Schwann_Cyc,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Schwann,1575
+Neural_Schwann_Cyc,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Neural,320
+Neural_Schwann_Cyc,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Neural_Glia_DHH+,35
+Neural_Schwann_Cyc,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Neuroendocrine,11
+Neural_Schwann_Fetal,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Schwann,4976
+Neural_Schwann_Fetal,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Neural,801
+Neural_Schwann_Fetal,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Neural_Glia_DHH+,514
+Neural_Schwann_Immature,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Schwann,35
+Neural_Schwann_Precursor,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Schwann,845
+Neural_Schwann_Precursor,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Neural,1
+Neural_Schwann_Precursor,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Neural_Glia_DHH+,1
+Neural_Schwann_myelinating,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Neural_Glia_DHH+,8
+Neural_SympatheticNeurons_Immature,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Neural,3609
+Neural_SympatheticNeurons_Immature,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Neural,701
+Neural_SympatheticNeurons_Immature,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Neural_Motor_NEURO_exc_fetal,161
+Neural_SympatheticNeurons_Immature,celltype_Lardenois2026,10.1016/j.devcel.2025.09.011,Neuroendocrine,5
+Neural_SympatheticNeurons_Immature_Cyc,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Neural,333
+Neural_SympatheticNeurons_Immature_Cyc,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Neural,53
+Neural_SympatheticNeurons_Immature_Cyc,celltype_OvarySanger2026,(unresolved: Sanger ovary 2026),Fallopian_mesen_Fetal,2
+Neural_SympatheticNeurons_Noradrenergic,celltype_Lorenzi2025,10.1038/s41586-025-09875-2,Neural,237
+Neural_SympatheticNeurons_Noradrenergic,celltype_GarciaAlonso2022,10.1038/s41586-022-04918-4,Neural,9

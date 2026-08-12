@@ -1,0 +1,4859 @@
+{
+  "source": {
+    "doi": "10.64898/2026.06.10.731198",
+    "title": "An integrated multimodal pan-organ atlas of the female reproductive system across the lifespan contextualises gynaecological pathologies",
+    "authors": [
+      "Celeste E Cohen",
+      "Antonio Parraga-Leo",
+      "Leticia Rodríguez-Montes",
+      "Luz Garcia-Alonso",
+      "Roser Vento-Tormo"
+    ],
+    "atlas_name": "Human Female Reproductive System Cell Atlas v1",
+    "preprint": "bioRxiv 2026.06.10.731198",
+    "cellxgene": "https://www.reproductivecellatlas.org/HCAreproductive/v1/"
+  },
+  "_provenance": {
+    "annotation_table": "inputs/media-4.xlsx sheet B (Supplementary Table 2B)",
+    "cl_mapping": "inputs/cell_ontology_mapping.xlsx sheet Final (manual first-pass)",
+    "note": "First-pass catalogue. scope derived from CL-mapping source_sheet (*_fetal -> fetal, else adult/postnatal). granularity set to 'fine' for all (Supp Table 2B is the fine-grained tier); broad/lineage tiers captured in lineage_L1/L2/L3/L4. Paper reports 210 fine cell types; table lists more rows because some are prenatal-specific or scope-split."
+  },
+  "annotations": [
+    {
+      "label": "Endo",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "markers_positive": [
+        "CHD5"
+      ],
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:0000115",
+      "cl_term_label": "endothelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Endo_artery",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Artery endothelial",
+      "markers_positive": [
+        "CHD5",
+        "GJA5",
+        "GJA4",
+        "SEMA3G"
+      ],
+      "alternative_labels": "Artery",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:1000413",
+      "cl_term_label": "endothelial cell of artery",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Endo_cap",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Capillary endothelial",
+      "markers_positive": [
+        "RGCC",
+        "CAV1",
+        "VWF"
+      ],
+      "alternative_labels": "Capillary",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:0002144",
+      "cl_term_label": "capillary endothelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Endo_cap_APCDD1",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Capillary endothelial",
+      "L3": "Endometrial capillary endothelial",
+      "L4": "Endothelial of endometrial capillary APCDD1+",
+      "markers_positive": [
+        "APCDD1"
+      ],
+      "alternative_labels": "Endometrium_capillary",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:2000091",
+      "cl_term_label": "endometrial microvascular endothelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Endo_cap_cycl",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Capillary endothelial",
+      "L3": "Capillary endothelial cycling",
+      "markers_positive": [
+        "MKI67",
+        "CDK1"
+      ],
+      "alternative_labels": "Endo_cycling",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:0002144",
+      "cl_term_label": "capillary endothelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Endo_cap_kidney",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Endothelial",
+      "L2": "Capillary endothelial",
+      "L3": "Capillary likely from kidney",
+      "markers_negative": [
+        "EHD3"
+      ],
+      "source_sheet": "endothelial_fetal",
+      "cl_term_id": "CL:1000892",
+      "cl_term_label": "kidney capillary endothelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Endo_cap_tip",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Capillary endothelial",
+      "L3": "Angiogenic tip endothelial",
+      "markers_positive": [
+        "ESM1",
+        "CXCR4",
+        "PGF"
+      ],
+      "alternative_labels": "TIP",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:0000704",
+      "cl_term_label": "endothelial tip cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Endo_lymp",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Lymphatic endothelial",
+      "markers_positive": [
+        "PROX1",
+        "LYVE1",
+        "CCL21",
+        "PDPN"
+      ],
+      "alternative_labels": "Lymphatic",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:0002138",
+      "cl_term_label": "endothelial cell of lymphatic vessel",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Endo_ven",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Venous endothelial",
+      "markers_positive": [
+        "ACKR1"
+      ],
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:0002543",
+      "cl_term_label": "vein endothelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Endo_ven_apcv",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Venous endothelial",
+      "L3": "Post-capillary venous endothelial",
+      "L4": "Activated post-capillary venous endothelial",
+      "markers_positive": [
+        "SELE",
+        "ICAM1",
+        "AQP1",
+        "PLVAP"
+      ],
+      "alternative_labels": "aPCV",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:1000414",
+      "cl_term_label": "endothelial cell of venule",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Endo_ven_hev",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Venous endothelial",
+      "L3": "High endothelial venule",
+      "markers_positive": [
+        "TIMP1",
+        "OSBPL1A"
+      ],
+      "alternative_labels": "HEV",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:0002652",
+      "cl_term_label": "endothelial cell of high endothelial venule",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Endo_ven_pcv",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Venous endothelial",
+      "L3": "Post-capillary venous endothelial",
+      "markers_positive": [
+        "ACKR1",
+        "SELP",
+        "TNFRSF1A"
+      ],
+      "alternative_labels": "PCV",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:1000414",
+      "cl_term_label": "endothelial cell of venule",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Endo_ven_tpcv",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Endothelial",
+      "L2": "Venous endothelial",
+      "L3": "Post-capillary venous endothelial",
+      "L4": "Transitional post-capillary venous endothelial",
+      "alternative_labels": "tPCV",
+      "source_sheet": "endothelial_postnatal",
+      "cl_term_id": "CL:1000414",
+      "cl_term_label": "endothelial cell of venule",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_CervixMucinous",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Mucinous epithelial",
+      "L3": "Cervix mucinous secretory epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "BPIFB1",
+        "MUC5AC",
+        "RUNX3"
+      ],
+      "markers_negative": [
+        "WT1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0002535",
+      "cl_term_label": "epithelial cell of cervix",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_CervixMucinous_Secretory",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Mucinous epithelial",
+      "L3": "Cervix mucinous secretory epithelial",
+      "markers_positive": [
+        "S100P",
+        "TFF1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0002535",
+      "cl_term_label": "epithelial cell of cervix",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_CervixSquamous",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Squamous epithelial",
+      "L3": "Cervix squamous epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "KRT5",
+        "TP63",
+        "DSG3",
+        "GATA3"
+      ],
+      "markers_negative": [
+        "PAX8",
+        "EMX2",
+        "WT1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0002535",
+      "cl_term_label": "epithelial cell of cervix",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_CervixSquamous_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Squamous epithelial",
+      "L3": "Cervix squamous epithelial",
+      "L4": "Cervix squamous epithelial cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0002535",
+      "cl_term_label": "epithelial cell of cervix",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_Cil",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "PIFO",
+        "FOXJ1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0000067",
+      "cl_term_label": "ciliated epithelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Epi_EctocervixVaginaSquamous",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Squamous epithelial",
+      "L3": "Ectocervix-vagina squamous epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "KRT5",
+        "TP63",
+        "DSG3",
+        "GATA3"
+      ],
+      "markers_negative": [
+        "PAX8",
+        "EMX2"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0002244",
+      "cl_term_label": "squamous cell of ectocervix",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Epi_EndoCil",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Endometrial ciliated epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "PAX8",
+        "PIFO",
+        "FOXJ1"
+      ],
+      "markers_negative": [
+        "WT1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030040",
+      "cl_term_label": "endometrial multiciliated epithelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Epi_EndoCil_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Endometrial ciliated epithelial",
+      "L4": "Endometrial ciliated epithelial cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030040",
+      "cl_term_label": "endometrial multiciliated epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoCil_Diff",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Endometrial ciliated epithelial",
+      "L4": "Endometrial ciliated epithelial of differentiated",
+      "markers_negative": [
+        "MUC12",
+        "CDC20B",
+        "SPDEF"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030040",
+      "cl_term_label": "endometrial multiciliated epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoCil_eProf",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Endometrial ciliated epithelial",
+      "L4": "Endometrial ciliated epithelial of early proliferative",
+      "markers_positive": [
+        "MUC12",
+        "CDC20B",
+        "LGR5"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030040",
+      "cl_term_label": "endometrial multiciliated epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGland",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial glandular epithelial",
+      "markers_positive": [
+        "PAX8"
+      ],
+      "markers_negative": [
+        "PIFO",
+        "FOXJ1",
+        "WT1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Epi_EndoGlandBas",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial basalis glandular epithelial",
+      "markers_positive": [
+        "PAX8",
+        "SLC6A2",
+        "CDH2",
+        "CYP24A1"
+      ],
+      "markers_negative": [
+        "PIFO",
+        "FOXJ1",
+        "WT1"
+      ],
+      "description": "This population is a more defiend subtype than the basalis eptihelial progenitos defined by Nguyen et al 2017",
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandBas_WIF1",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial basalis glandular epithelial",
+      "L4": "Endometrial basalis glandular epithelial of WIF1+",
+      "markers_positive": [
+        "WIF1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandFun",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial functionalis glandular epithelia",
+      "markers_positive": [
+        "PAX8"
+      ],
+      "markers_negative": [
+        "PIFO",
+        "FOXJ1",
+        "WT1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandFun_Menstr",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial functionalis glandular epithelia",
+      "L4": "Endometrial functionalis glandular epithelial of menstrual phase",
+      "markers_positive": [
+        "SPP1"
+      ],
+      "markers_negative": [
+        "PGR",
+        "SPDEF"
+      ],
+      "description": "While PAEP is not specific to this population;but these upregulate PAEP",
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandFun_Prof",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial functionalis glandular epithelia",
+      "L4": "Endometrial functionalis glandular epithelial of proliferative phase",
+      "markers_positive": [
+        "SOX9",
+        "MMP7",
+        "TRH",
+        "IHH"
+      ],
+      "markers_negative": [
+        "S100P",
+        "SCGB2A2"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandFun_Prof_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial functionalis glandular epithelia",
+      "L4": "Endometrial functionalis glandular epithelial of proliferative phase cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandFun_emSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial functionalis glandular epithelia",
+      "L4": "Endometrial functionalis glandular epithelial of early-mid secretory phase",
+      "markers_positive": [
+        "SPP1",
+        "S100P",
+        "SCGB2A2"
+      ],
+      "markers_negative": [
+        "PGR",
+        "SPDEF"
+      ],
+      "description": "While PAEP is not specific to this population;but these upregulate PAEP",
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandFun_lProf",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial functionalis glandular epithelia",
+      "L4": "Endometrial functionalis glandular epithelial of late proliferative/early secretory phase",
+      "markers_positive": [
+        "SOX9",
+        "TRH",
+        "IHH",
+        "SPP1",
+        "C2CDA2"
+      ],
+      "markers_negative": [
+        "S100P",
+        "SCGB2A2"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandFun_lSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial functionalis glandular epithelia",
+      "L4": "Endometrial functionalis glandular epithelial of late secretory phase",
+      "markers_positive": [
+        "SPP1",
+        "DPP4"
+      ],
+      "markers_negative": [
+        "PGR",
+        "SPDEF"
+      ],
+      "description": "While PAEP is not specific to this population;but these upregulate PAEP",
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandFun_mSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial functionalis glandular epithelia",
+      "L4": "Endometrial functionalis glandular epithelial of mid secretory phase",
+      "markers_positive": [
+        "SPP1",
+        "S100P",
+        "DPP4"
+      ],
+      "markers_negative": [
+        "PGR",
+        "SPDEF"
+      ],
+      "description": "While PAEP is not specific to this population;but these upregulate PAEP",
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandLum",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial luminal glandular epithelial",
+      "markers_positive": [
+        "PAX8",
+        "SULT1E1",
+        "CLDN22",
+        "LGR5"
+      ],
+      "markers_negative": [
+        "WT1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandLum_Prof",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial luminal glandular epithelial",
+      "L4": "Endometrial luminal glandular epithelial of of proliferative phase",
+      "markers_positive": [
+        "MMP7",
+        "WNT7A"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandLum_eSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial luminal glandular epithelial",
+      "L4": "Endometrial luminal glandular epithelial of of early secretory",
+      "markers_positive": [
+        "GPX3",
+        "IL6"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGlandLum_mSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial luminal glandular epithelial",
+      "L4": "Endometrial luminal glandular epithelial of of secretory phase",
+      "markers_positive": [
+        "LEFTY1",
+        "IL6"
+      ],
+      "markers_negative": [
+        "SPDEF"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoGland_nEMC",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Endometrial glandular epithelial",
+      "L4": "Endometrial glandular epithelial in no endogenous menstrual cycle (nEMC)",
+      "description": "Heterogeneous population;depends on the hormonal treatment",
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0009084",
+      "cl_term_label": "glandular epithelial cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_EndoMucinous",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Mucinous epithelial",
+      "L3": "Endometrial mucinous secretory epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "BPIFB1",
+        "MUC5AC",
+        "RUNX3"
+      ],
+      "markers_negative": [
+        "WT1"
+      ],
+      "alternative_labels": "AR epithelial",
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:1100001",
+      "cl_term_label": "secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianCil",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Fallopian Tube ciliated epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "PAX8",
+        "WT1",
+        "PIFO",
+        "FOXJ1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030007",
+      "cl_term_label": "fallopian tube multiciliated epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianCil_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Fallopian Tube ciliated epithelial",
+      "L4": "Fallopian Tube ciliated epithelial cycling",
+      "markers_positive": [
+        "OVGP1",
+        "MKI67"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030007",
+      "cl_term_label": "fallopian tube multiciliated epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianCil_Diff",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Fallopian Tube ciliated epithelial",
+      "L4": "Fallopian Tube differentiated ciliated epithelial of mature",
+      "markers_positive": [
+        "SCN1A"
+      ],
+      "markers_negative": [
+        "MUC12",
+        "CDC20B",
+        "SPDEF"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030007",
+      "cl_term_label": "fallopian tube multiciliated epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianCil_Early",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Fallopian Tube ciliated epithelial",
+      "L4": "Fallopian Tube early ciliated epithelial",
+      "markers_positive": [
+        "OVGP1",
+        "MUC12",
+        "CDC20B"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030007",
+      "cl_term_label": "fallopian tube multiciliated epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianCil_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Fallopian Tube ciliated epithelial",
+      "L4": "Fetal fallopian tube ciliated epithelial",
+      "markers_positive": [
+        "DNAH12"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:4030007",
+      "cl_term_label": "fallopian tube multiciliated epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Fallopian Tube secretory epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "PAX8",
+        "WT1"
+      ],
+      "markers_negative": [
+        "PIFO",
+        "BPIFB1KRT5",
+        "TP63",
+        "DSG3"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030006",
+      "cl_term_label": "fallopian tube secretory epithelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Epi_FallopianSec_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Fallopian Tube secretory epithelial",
+      "L4": "Fallopian Tube secretory epithelial cycling",
+      "markers_positive": [
+        "OVGP1",
+        "MKI67"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030006",
+      "cl_term_label": "fallopian tube secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianSec_EstrInd",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Fallopian Tube secretory epithelial",
+      "L4": "Fallopian Tube secretory epithelial estrogen induced",
+      "markers_positive": [
+        "OVGP1",
+        "LGR5"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030006",
+      "cl_term_label": "fallopian tube secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianSec_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Fallopian Tube secretory epithelial",
+      "L4": "Fetal fallopian tube secretory epithelial",
+      "markers_positive": [
+        "PNOC",
+        "ERP27"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:4030006",
+      "cl_term_label": "fallopian tube secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianSec_OVGP1hi_EstrInd",
+      "granularity": "fine",
+      "scope": "adult",
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030006",
+      "cl_term_label": "fallopian tube secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_FallopianSec_OVGP1lo",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Fallopian Tube secretory epithelial",
+      "L4": "Fallopian Tube secretory epithelial of OVGP1low",
+      "markers_positive": [
+        "LYPD1",
+        "GPX3"
+      ],
+      "markers_negative": [
+        "SPDEF"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:4030006",
+      "cl_term_label": "fallopian tube secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_GenitalSurf_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Squamous epithelial",
+      "L3": "Genital surface squamous epithelial",
+      "L4": "Fetal genital surface epithelial",
+      "markers_positive": [
+        "KRT14",
+        "KRTDAP"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:0000076",
+      "cl_term_label": "squamous epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_MesonephricTub_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Mesonephric tubule epithelial",
+      "L4": "Fetal mesonephric tubule epithelial",
+      "markers_positive": [
+        "FXYD2"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:1100001",
+      "cl_term_label": "secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_Mucinous",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Mucinous epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "BPIFB1",
+        "MUC5AC",
+        "RUNX3"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:1100001",
+      "cl_term_label": "secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_Mullerian_Undiff",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Undifferentiated epithelial",
+      "L3": "Müllerian duct undifferentiated epithelial",
+      "markers_positive": [
+        "WNT7A",
+        "SOX17"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:0000066",
+      "cl_term_label": "epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_OvarianInclCil",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Ciliated epithelial",
+      "L3": "Ovarian Inclusion ciliated epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "PAX8",
+        "PIFO",
+        "FOXJ1"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0000067",
+      "cl_term_label": "ciliated epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_OvarianInclSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Ovarian Inclusion secretory epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "PAX8"
+      ],
+      "markers_negative": [
+        "PIFO",
+        "FOXJ1"
+      ],
+      "description": "Some are WNT7A;suggesting endometrial origin;while others are OVPG1 suggesting fallopian tube origin",
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:1100001",
+      "cl_term_label": "secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_ParatubalIncl_squamous",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Squamous epithelial",
+      "L3": "Paratubal squamous epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "GATA3",
+        "KRT5",
+        "TP63",
+        "DSG3"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0000076",
+      "cl_term_label": "squamous epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_PrepuceSquamous_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Squamous epithelial",
+      "L3": "Preputial squamous epithelial",
+      "L4": "Fetal preputial squamous epithelial",
+      "markers_positive": [
+        "KRT14",
+        "WNT3"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:0000076",
+      "cl_term_label": "squamous epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_Sec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "markers_positive": [
+        "EPCAM"
+      ],
+      "markers_negative": [
+        "PIFO",
+        "BPIFB1KRT5",
+        "TP63",
+        "DSG3"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:1100001",
+      "cl_term_label": "secretory epithelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Epi_Squamous",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Epithelial",
+      "L2": "Squamous epithelial",
+      "markers_positive": [
+        "EPCAM",
+        "KRT5",
+        "TP63",
+        "DSG3"
+      ],
+      "source_sheet": "epithelial_postnatal",
+      "cl_term_id": "CL:0000076",
+      "cl_term_label": "squamous epithelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Epi_UGS_Undiff",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Urogenital sinus epithelial",
+      "markers_positive": [
+        "FOXA1",
+        "SHH"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:1100001",
+      "cl_term_label": "secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_UrethralSquamous_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Squamous epithelial",
+      "L3": "Urethral epithelial",
+      "L4": "Fetal urethral epithelial",
+      "markers_positive": [
+        "FOXA1",
+        "PSCA"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:1000296",
+      "cl_term_label": "epithelial cell of urethra",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_Uterocervical_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Undifferentiated epithelial",
+      "L3": "Uterocervical undifferentiated epithelial",
+      "L4": "Fetal uterocervical epithelial",
+      "markers_positive": [
+        "UCA1",
+        "DLX5"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:0000066",
+      "cl_term_label": "epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_Vagina_Lower_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Vaginal urogenital sinus-derived epithelial",
+      "L4": "Fetal lower urogenital sinus-derived vaginal epithelial",
+      "markers_positive": [
+        "FOXA1",
+        "PRAC1"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:1100001",
+      "cl_term_label": "secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_Vagina_Upper_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Squamous epithelial",
+      "L3": "Vaginal Müllerian-derived squamous epithelial",
+      "L4": "Fetal upper Müllerian-derived vaginal squamous epithelial",
+      "markers_positive": [
+        "DLX5",
+        "UCA1",
+        "TP63"
+      ],
+      "markers_negative": [
+        "FOXA1"
+      ],
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:0000076",
+      "cl_term_label": "squamous epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Epi_reteOvarii_Fetal_Undiff",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Epithelial",
+      "L2": "Secretory epithelial",
+      "L3": "Rete ovarii epithelial",
+      "L4": "Fetal rete ovarii epithelial",
+      "source_sheet": "epithelial_fetal",
+      "cl_term_id": "CL:1100001",
+      "cl_term_label": "secretory epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Germcell",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Germ",
+      "markers_positive": [
+        "DDX4",
+        "DAZL"
+      ],
+      "source_sheet": "germcells_acrosslifespan",
+      "cl_term_id": "CL:0000586",
+      "cl_term_label": "germ cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Germcell_GGCs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Germ",
+      "L2": "Gonadal germ",
+      "source_sheet": "germcells_acrosslifespan",
+      "cl_term_id": "CL:0000586",
+      "cl_term_label": "germ cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Germcell_Oocyte",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Germ",
+      "L2": "Oocyte",
+      "markers_positive": [
+        "ZP3",
+        "NOBOX",
+        "GDF9"
+      ],
+      "source_sheet": "germcells_acrosslifespan",
+      "cl_term_id": "CL:0000023",
+      "cl_term_label": "oocyte",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Germcell_Oogonia_meiotic",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Germ",
+      "L2": "Oogonia",
+      "L3": "Meiotic oogonia",
+      "markers_positive": [
+        "SYCP1"
+      ],
+      "markers_negative": [
+        "NANOG",
+        "NANOS3",
+        "POU5F1",
+        "STRA8",
+        "ZGLP1",
+        "ZP3",
+        "NOBOX",
+        "GDF9"
+      ],
+      "source_sheet": "germcells_acrosslifespan",
+      "cl_term_id": "CL:0000024",
+      "cl_term_label": "oogonial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Germcell_Oogonia_premeiotic",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Germ",
+      "L2": "Oogonia",
+      "L3": "Premeiotic oogonia",
+      "markers_positive": [
+        "STRA8",
+        "ZGLP1"
+      ],
+      "markers_negative": [
+        "NANOG",
+        "NANOS3",
+        "POU5F1",
+        "SYCP1"
+      ],
+      "source_sheet": "germcells_acrosslifespan",
+      "cl_term_id": "CL:0000024",
+      "cl_term_label": "oogonial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Germcell_PGC_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Germ",
+      "L2": "Primordial germ",
+      "L3": "Primordial germ cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "source_sheet": "germcells_acrosslifespan",
+      "cl_term_id": "CL:0000670",
+      "cl_term_label": "primordial germ cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Germcell_PGCs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Germ",
+      "L2": "Primordial germ",
+      "markers_positive": [
+        "NANOG",
+        "NANOS3",
+        "POU5F1"
+      ],
+      "markers_negative": [
+        "STRA8",
+        "ZGLP1"
+      ],
+      "source_sheet": "germcells_acrosslifespan",
+      "cl_term_id": "CL:0000670",
+      "cl_term_label": "primordial germ cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Germcell_PrimaryOocyte_Fetal",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Germ",
+      "L2": "Oocyte",
+      "L3": "Primary oocyte",
+      "markers_positive": [
+        "ZP3",
+        "FIGLA"
+      ],
+      "markers_negative": [
+        "ZP4",
+        "PIWIL3"
+      ]
+    },
+    {
+      "label": "Germcell_PrimaryOocyte_ZP4",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Germ",
+      "L2": "Oocyte",
+      "L3": "Primary oocyte",
+      "L4": "Primary oocyte PIWIL3+",
+      "markers_positive": [
+        "ZP3",
+        "FIGLA",
+        "PIWIL3",
+        "ZP4"
+      ]
+    },
+    {
+      "label": "Germcell_PrimaryOocyte_ZP4neg",
+      "granularity": "fine",
+      "scope": "adult",
+      "source_sheet": "germcells_acrosslifespan",
+      "cl_term_id": "CL:0000654",
+      "cl_term_label": "primary oocyte",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Germcell_PrimaryOocyte_ZP4pos",
+      "granularity": "fine",
+      "scope": "adult",
+      "source_sheet": "germcells_acrosslifespan",
+      "cl_term_id": "CL:0000654",
+      "cl_term_label": "primary oocyte",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Gonadal_SomaticPrec",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Gonadal somatic",
+      "L2": "Gonadal somatic precursor",
+      "markers_positive": [
+        "GATA4",
+        "LHX9",
+        "ARX",
+        "WNT6",
+        "DMRT1",
+        "IL17B"
+      ],
+      "markers_negative": [
+        "UPK3B",
+        "LGR5",
+        "PAX8"
+      ],
+      "source_sheet": "gonadal_supporting_fetal",
+      "cl_term_id": "CL:0000630",
+      "cl_term_label": "supporting cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Gonadal_SupportingUndiff",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Gonadal somatic",
+      "L2": "Gonadal supporting",
+      "L3": "Gonadal undifferentiated supporting",
+      "markers_positive": [
+        "GATA4",
+        "WNT6",
+        "DMRT1",
+        "TSPAN8",
+        "LGR5"
+      ],
+      "markers_negative": [
+        "ARX",
+        "PAX8"
+      ],
+      "description": "Expresses SRY in males (in males XY)",
+      "source_sheet": "gonadal_supporting_fetal",
+      "cl_term_id": "CL:0000630",
+      "cl_term_label": "supporting cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Gonadal_preGranulosa-CEderived",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Gonadal somatic",
+      "L2": "Gonadal supporting",
+      "L3": "First wave pre-granulosa",
+      "markers_positive": [
+        "GATA4",
+        "WNT6",
+        "OSR1",
+        "FOXL2",
+        "WNT4"
+      ],
+      "markers_negative": [
+        "ARX",
+        "PAX8",
+        "LGR5",
+        "LHX2"
+      ],
+      "source_sheet": "gonadal_supporting_fetal",
+      "cl_term_id": "CL:0000630",
+      "cl_term_label": "supporting cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Gonadal_preGranulosa-OSEderived_early",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Second wave fetal pre-granulosa",
+      "L4": "Second wave fetal pre-granulosa, early differentiated state",
+      "markers_positive": [
+        "GATA4",
+        "LHX9",
+        "LHX2",
+        "FOXL2",
+        "TOX3"
+      ],
+      "markers_negative": [
+        "UPK3B",
+        "WNT4"
+      ],
+      "source_sheet": "gonadal_supporting_fetal",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Gonadal_preGranulosa-OSEderived_late",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Second wave fetal pre-granulosa",
+      "L4": "Second wave fetal pre-granulosa, late differentiated state",
+      "markers_positive": [
+        "GATA4",
+        "LHX9",
+        "LHX2",
+        "FOXL2",
+        "BMP2",
+        "TOX3"
+      ],
+      "markers_negative": [
+        "WNT4"
+      ],
+      "source_sheet": "gonadal_supporting_fetal",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Gonadal_rete_Fetal_Undiff",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Gonadal somatic",
+      "L2": "Gonadal supporting",
+      "L3": "Gonadal supporting rete ovarii and testes precursor",
+      "markers_positive": [
+        "GATA4",
+        "WNT6",
+        "PAX8",
+        "SST",
+        "RMST",
+        "TBX1"
+      ],
+      "description": "Epithelium of the rete ovarii — a network of epithelial cords in the ovarian hilum derived from mesonephric tubules that connects to the ovarian follicles. PAX8+, mixed Müllerian/mesonephric character. Undifferentiated L4 assigned because the fetal rete ovarii has not yet acquired its adult tubular structure. Clinically relevant: the rete ovarii is the putative origin of some serous cystadenomas and Wolffian adnexal tumours. L2 = Secretory epithelial as default for this tubular epithelial structure; review if markers suggest otherwise.",
+      "source_sheet": "gonadal_supporting_fetal",
+      "cl_term_id": "CL:0000630",
+      "cl_term_label": "supporting cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Granulosa_AMHneg_Atretic",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa of primordial follicle",
+      "L4": "Granulosa of primordial follicle atretic",
+      "markers_positive": [
+        "RDH10",
+        "NOTCH3",
+        "WNT6"
+      ],
+      "markers_negative": [
+        "AMH",
+        "FSHR"
+      ],
+      "source_sheet": "granulosa_acrosslifespan",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "squamous granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Granulosa_AMHneg_Squamous",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa of primordial follicle",
+      "L4": "Granulosa of primordial follicle quiescent",
+      "markers_positive": [
+        "RDH10",
+        "NOTCH3",
+        "WNT6",
+        "LHX2"
+      ],
+      "markers_negative": [
+        "AMH",
+        "FSHR"
+      ],
+      "source_sheet": "granulosa_acrosslifespan",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Granulosa_AMHpos",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa AMH+",
+      "markers_positive": [
+        "AMH",
+        "FSHR"
+      ],
+      "markers_negative": [
+        "RDH10",
+        "NOTCH3"
+      ],
+      "source_sheet": "granulosa_acrosslifespan",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Granulosa_AMHpos_Antral",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa AMH+",
+      "L4": "Granulosa AMH+ of antral follicle",
+      "markers_positive": [
+        "GDF7"
+      ],
+      "markers_negative": [
+        "EPPIN",
+        "COL2A1"
+      ]
+    },
+    {
+      "label": "Granulosa_AMHpos_Atretic",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa AMH+",
+      "L4": "Granulosa AMH+ atretic",
+      "markers_negative": [
+        "COL2A1"
+      ],
+      "source_sheet": "granulosa_acrosslifespan",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Granulosa_AMHpos_Cumulus",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa AMH+",
+      "L4": "Granulosa AMH+ of the cummulus from preantral and antral follicle",
+      "markers_positive": [
+        "EPPIN"
+      ],
+      "markers_negative": [
+        "COL2A1"
+      ]
+    },
+    {
+      "label": "Granulosa_AMHpos_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa AMH+",
+      "L4": "Granulosa AMH+ cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "markers_negative": [
+        "COL2A1"
+      ],
+      "source_sheet": "granulosa_acrosslifespan",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Granulosa_AMHpos_Prenatral",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa AMH+",
+      "L4": "Granulosa AMH+ of preantral follicles",
+      "markers_positive": [
+        "IHH",
+        "CYP19A1"
+      ],
+      "markers_negative": [
+        "COL2A1",
+        "GDF7",
+        "EPPIN"
+      ]
+    },
+    {
+      "label": "Granulosa_AMHpos_Primary",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa of primordial follicle",
+      "L4": "Granulosa of primary follicle",
+      "markers_positive": [
+        "AMH",
+        "FSHR",
+        "RDH10",
+        "NOTCH3",
+        "WNT6"
+      ],
+      "markers_negative": [
+        "LHX2"
+      ]
+    },
+    {
+      "label": "Granulosa_AMHpos_Steroidogenic",
+      "granularity": "fine",
+      "scope": "adult",
+      "source_sheet": "granulosa_acrosslifespan",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Granulosa_AMHpos_nonSteroidogenic",
+      "granularity": "fine",
+      "scope": "adult",
+      "source_sheet": "granulosa_acrosslifespan",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Granulosa_AMHpos_nonSteroidogenic_early",
+      "granularity": "fine",
+      "scope": "adult",
+      "source_sheet": "granulosa_acrosslifespan",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Granulosa_AMHpos_smallPrenatral",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa AMH+",
+      "L4": "Granulosa AMH+ of small preantral follicles",
+      "markers_positive": [
+        "COL2A1",
+        "GSTA1"
+      ],
+      "markers_negative": [
+        "IHH",
+        "CYP19A1"
+      ]
+    },
+    {
+      "label": "Granulosa_sq_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Supporting of the Ovary",
+      "L2": "Granulosa",
+      "L3": "Granulosa of primordial follicle",
+      "L4": "Granulosa of primordial follicle quiescent",
+      "markers_positive": [
+        "RDH10",
+        "NOTCH3",
+        "WNT6",
+        "LHX2"
+      ],
+      "markers_negative": [
+        "AMH",
+        "FSHR"
+      ],
+      "source_sheet": "gonadal_supporting_fetal",
+      "cl_term_id": "CL:0000501",
+      "cl_term_label": "squamous granulosa cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_ASDC",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "DC",
+      "L3": "Non-conventional DC",
+      "L4": "Plasmacytoid DC AXL+ SIGLEC6+",
+      "markers_positive": [
+        "AXL",
+        "SIGLEC6",
+        "PPP1R14A",
+        "LILRA4",
+        "CLEC4C",
+        "PTPRS",
+        "SCT"
+      ],
+      "description": "pDC-like subset of AXL/SIGLEC6-expressing DCs (AS DC) as described by Villani et al., 2017.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0017009",
+      "cl_term_label": "Axl+ dendritic cell, human",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_BasoEosino",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Granulocytes",
+      "L4": "Basophils and eosinophils",
+      "markers_positive": [
+        "CLC",
+        "CCR3",
+        "CACNG8",
+        "THSD7A",
+        "MS4A3",
+        "CPA3"
+      ],
+      "markers_negative": [
+        "KIT"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000094",
+      "cl_term_label": "granulocyte",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_CD4_NaiveT",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD4+ naive T",
+      "markers_positive": [
+        "CD4",
+        "LEF1",
+        "MAL",
+        "CCR7",
+        "TCF7",
+        "SELL"
+      ],
+      "alternative_labels": "Modular nomenclature: CD4+ TN",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000895",
+      "cl_term_label": "naive thymus-derived CD4-positive, alpha-beta T cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_CD4_T_Unpolarised",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD4+ T unpolarised",
+      "markers_positive": [
+        "CD4"
+      ],
+      "alternative_labels": "Modular nomenclature: CD4+ T",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000624",
+      "cl_term_label": "CD4-positive, alpha-beta T cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_CD4_Th17",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD4+ Th17",
+      "markers_positive": [
+        "CD4",
+        "CCR6",
+        "RORC",
+        "IL17A"
+      ],
+      "markers_negative": [
+        "CCR4"
+      ],
+      "alternative_labels": "Modular nomenclature: CD4+ Th17D",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000899",
+      "cl_term_label": "T-helper 17 cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_CD4_Th17_SCMlike",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD4+ Th17 stem memory-like",
+      "markers_positive": [
+        "CD4",
+        "CCR6",
+        "RORC",
+        "CCR4",
+        "FAS",
+        "CCR7",
+        "CD27",
+        "CD28",
+        "SELL"
+      ],
+      "markers_negative": [
+        "EOMES"
+      ],
+      "description": "Express Th17 markers, but also markers of both naive and memory T cells, which is consistent with a TSCM phenotype (Wang et al., 2021). Contains a small IL22+ subset.",
+      "alternative_labels": "Modular nomenclature: CD4+ Th17SM",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0020033",
+      "cl_term_label": "stem cell memory CD4-positive, alpha-beta T cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_CD4_Treg",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD4+ regulatory T",
+      "markers_positive": [
+        "CD4",
+        "FOXP3",
+        "CTLA4",
+        "IL2RA",
+        "FANK1",
+        "TIGIT",
+        "RTKN2"
+      ],
+      "alternative_labels": "Modular nomenclature: CD4+ Treg",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000792",
+      "cl_term_label": "CD4-positive, CD25-positive, alpha-beta regulatory T cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_CD4_Treg_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD4+ regulatory T cycling",
+      "markers_positive": [
+        "MKI67",
+        "CD4",
+        "FOXP3"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:4033075",
+      "cl_term_label": "cycling CD4-positive, alpha-beta T cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_CD8_NaiveT",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD8+ naive T",
+      "markers_positive": [
+        "CD8A",
+        "CD8B",
+        "LEF1",
+        "MAL",
+        "CCR7",
+        "TCF7",
+        "SELL"
+      ],
+      "alternative_labels": "Modular nomenclature: CD8+ TN",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000900",
+      "cl_term_label": "naive thymus-derived CD8-positive, alpha-beta T cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_CD8_T_EM",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD8+ effector memory T",
+      "markers_positive": [
+        "CD8A",
+        "CD8B",
+        "CX3CR1",
+        "FGFBP2",
+        "ADGRG1",
+        "B3GAT1",
+        "GZMB",
+        "KLRG1"
+      ],
+      "markers_negative": [
+        "CCR7"
+      ],
+      "description": "CX3CR1, KLRG1, GZMB, and perforin expression is consistent with a TEMRA phenotype, poised for rapid cytolytic activity (Masopust et al., 2026). Contains a subset that is enriched in menstural fluid and is SELL+ - this might be more central memory-like.",
+      "alternative_labels": "Modular nomenclature: CD8+ TDM",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0001203",
+      "cl_term_label": "CD8-positive, alpha-beta memory T cell, CD45RO-positive",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_CD8_T_RM",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD8+ tissue-resident memory T",
+      "markers_positive": [
+        "CD8A",
+        "CD8B",
+        "ITGA1",
+        "ITGAE",
+        "CD101",
+        "CXCR6"
+      ],
+      "markers_negative": [
+        "GZMK",
+        "KLF2",
+        "SELL",
+        "CCR7"
+      ],
+      "description": "A portion of this cluster expresses GZMB, but not GZMK.",
+      "alternative_labels": "Modular nomenclature: CD8+ TDRM",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000909",
+      "cl_term_label": "CD8-positive, alpha-beta memory T cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_CD8_T_RM_GZMKhi",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD8+ tissue-resident memory T GZMKhi",
+      "markers_positive": [
+        "CD8A",
+        "CD8B",
+        "GZMK",
+        "ITGAE",
+        "ITGA1",
+        "CXCR6"
+      ],
+      "markers_negative": [
+        "SELL"
+      ],
+      "description": "Downregulates canonical tissue-resident memory markers relative to CD8_T_RM cluster. Expresses GZMK, but not GZMB.",
+      "alternative_labels": "Modular nomenclature: CD8+ TDRM (GZMKhi)",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:4052021",
+      "cl_term_label": "granzyme K-associated CD8 T cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_EarlyMidErythroid",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Erythroid",
+      "L4": "Early- and mid-erythroid",
+      "markers_positive": [
+        "GATA1",
+        "TFRC",
+        "CD36",
+        "APOC1",
+        "GATA2",
+        "KCNH2",
+        "KLF1",
+        "GYPA",
+        "GYPB",
+        "HBA1",
+        "HBA2"
+      ],
+      "markers_negative": [
+        "CD34",
+        "CD38"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000764",
+      "cl_term_label": "erythroid lineage cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_HPC",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Progenitors",
+      "L3": "Haematopoietic progenitors",
+      "L4": "Haematopoietic progenitors",
+      "markers_positive": [
+        "CD34",
+        "SPINK2",
+        "HOPX",
+        "PROM1",
+        "GATA2",
+        "SELL",
+        "SMIM24",
+        "PRSS57"
+      ],
+      "markers_negative": [
+        "GATA1"
+      ],
+      "description": "Lack of GATA1 expression indicates that theses have not yet committed to megakaryocyte/erythroid lineage.",
+      "alternative_labels": "HPC",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0002032",
+      "cl_term_label": "hematopoietic oligopotent progenitor cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_ILC3_NCRhi",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "ILC",
+      "L4": "ILC3 NKp44+",
+      "markers_positive": [
+        "NCR2",
+        "PCDH9",
+        "SORCS1",
+        "PDZD2",
+        "PPP1R9A",
+        "KIT",
+        "TOX2",
+        "IL23R"
+      ],
+      "markers_negative": [
+        "CA10"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0001079",
+      "cl_term_label": "NKp44-positive group 3 innate lymphoid cell, human",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_ILC3_NCRlo",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "ILC",
+      "L4": "ILC3 NKp44-",
+      "markers_positive": [
+        "CA10",
+        "KIT",
+        "TOX2",
+        "IL23R"
+      ],
+      "markers_negative": [
+        "PCDH9",
+        "SORCS1",
+        "PDZD2",
+        "PPP1R9A"
+      ],
+      "description": "NCR2 expression is lower compared to ILC3_NCRhi.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0001080",
+      "cl_term_label": "NKp44-negative group 3 innate lymphoid cell, human",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_ImmatureB",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "B",
+      "L4": "Immature B",
+      "markers_positive": [
+        "MS4A1",
+        "IGLC1"
+      ],
+      "markers_negative": [
+        "CD34",
+        "DNTT",
+        "VPREB1",
+        "LEF1"
+      ],
+      "description": "IKZF2 expression is lower.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000816",
+      "cl_term_label": "immature B cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_LargePreB",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "B",
+      "L4": "Large pre-B",
+      "markers_positive": [
+        "IKZF2",
+        "ZEB2",
+        "IGLL1",
+        "VPREB1",
+        "CD24"
+      ],
+      "markers_negative": [
+        "CD34",
+        "IGLC1"
+      ],
+      "description": "DNTT, RAG1/2 expression is lower. Cycling.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000957",
+      "cl_term_label": "large pre-B-II cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_LateErythroid",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Erythroid",
+      "L4": "Late erythroid",
+      "markers_positive": [
+        "HBA1",
+        "HBA2",
+        "HBM",
+        "BPGM",
+        "GYPA",
+        "GYPB"
+      ],
+      "markers_negative": [
+        "CD34",
+        "CD38",
+        "GATA2",
+        "KCNH2"
+      ],
+      "description": "Compared to EarlyMidErythroid, exhibits lower expression of GATA1, KLF1 and higher expression of BPGM.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000764",
+      "cl_term_label": "erythroid lineage cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_MAIT",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "Mucosal-associated invariant T",
+      "markers_positive": [
+        "CD8A",
+        "CCR6",
+        "RORC",
+        "SLC4A10",
+        "SCART1",
+        "ITGAE",
+        "CXCR6",
+        "ITGA1"
+      ],
+      "markers_negative": [
+        "CD4"
+      ],
+      "description": "Two potential states: CA10+, GZMK-, and GZMK+, CA10-. Expresses several tissue-residency markers (ITGAE, ITGA1, CXCR6).",
+      "alternative_labels": "Modular nomenclature: MAIT DR",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0020002",
+      "cl_term_label": "mucosal-associated invariant T cell, human",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_MEMP",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Progenitors",
+      "L3": "Myeloid progenitors",
+      "L4": "Megakaryocyte-erythroid-mast progenitors",
+      "markers_positive": [
+        "GATA1",
+        "GATA2",
+        "FCER1A",
+        "TESPA1",
+        "CD34",
+        "HBD",
+        "KLF1",
+        "PRSS57"
+      ],
+      "description": "A cluster of adult HPCs, which are GATA1+, reside within this cluster, suggesting that they might be transitioning towards a megakaryocyte/erythroid fate.",
+      "alternative_labels": "MEMP",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000050",
+      "cl_term_label": "megakaryocyte-erythroid progenitor cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_MO_Classical",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Monocytes",
+      "L4": "Classical monocytes",
+      "markers_positive": [
+        "S100A12",
+        "CD14",
+        "CDA"
+      ],
+      "markers_negative": [
+        "CDKN1C",
+        "PTP4A3"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0002057",
+      "cl_term_label": "CD14-positive, CD16-negative classical monocyte",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_MO_NonClassical",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Monocytes",
+      "L4": "Non-classical monocytes",
+      "markers_positive": [
+        "PTP4A3",
+        "HES4",
+        "CDKN1C",
+        "FCGR3A",
+        "CDA"
+      ],
+      "markers_negative": [
+        "S100A12"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0002396",
+      "cl_term_label": "CD14-low, CD16-positive monocyte",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_Mac_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Macrophages",
+      "L4": "Macrophages cycling",
+      "markers_positive": [
+        "MKI67",
+        "CD68"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:4033076",
+      "cl_term_label": "cycling macrophage",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_Mac_LYVE1hi",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Macrophages",
+      "L4": "Macrophages LYVE1+",
+      "markers_positive": [
+        "LYVE1",
+        "FOLR2",
+        "SELENOP"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000864",
+      "cl_term_label": "tissue-resident macrophage",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_Mac_Transitional",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Macrophages",
+      "L4": "Intermediate monocyte-derived macrophages",
+      "markers_positive": [
+        "S100A9",
+        "CD68"
+      ],
+      "markers_negative": [
+        "LYVE1",
+        "FCGBP",
+        "EREG",
+        "CDA",
+        "S100A12",
+        "PTP4A3"
+      ],
+      "description": "Heterogeneous population lacking specific markers.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000235",
+      "cl_term_label": "macrophage",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_Mast",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Granulocytes",
+      "L4": "Mast",
+      "markers_positive": [
+        "TPSAB1",
+        "TPSB2",
+        "CADPS",
+        "CPA3",
+        "KIT"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000485",
+      "cl_term_label": "mucosal type mast cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_MegaPlat",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Megakaryocytes/platelets",
+      "markers_positive": [
+        "PF4",
+        "CMTM5",
+        "ITGA2B",
+        "PPBP",
+        "TUBB1",
+        "GP1BA",
+        "GP1BB",
+        "MPIG6B",
+        "CLEC1B",
+        "GATA1"
+      ],
+      "markers_negative": [
+        "PRSS57"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0002026",
+      "cl_term_label": "CD34-negative, CD41-positive, CD42-positive megakaryocyte cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_MemoryB",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "B",
+      "L4": "Memory B",
+      "markers_positive": [
+        "TNFRSF13B",
+        "IGHG1",
+        "IGHA1",
+        "IGHA2"
+      ],
+      "markers_negative": [
+        "IGHD"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000787",
+      "cl_term_label": "memory B cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_NKT_γδT_Vδ1",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "NKT and Vδ1+ γδT",
+      "markers_positive": [
+        "CD3D",
+        "NCAM1",
+        "TRDV1",
+        "ITGAE",
+        "CXCR6",
+        "ITGA1"
+      ],
+      "description": "Expresses several tissue-residency markers (ITGAE, ITGA1, CXCR6).",
+      "alternative_labels": "Modular nomenclature: NKT/Vδ1+ γδT DR",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000084",
+      "cl_term_label": "T cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_NK_CD16hi",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "NK",
+      "L4": "NK CD16hi CD56dim",
+      "markers_positive": [
+        "FGFBP2",
+        "S1PR5",
+        "ADGRG1",
+        "SPON2",
+        "KLRF1",
+        "FCGR3A",
+        "CX3CR1"
+      ],
+      "markers_negative": [
+        "CD3D"
+      ],
+      "description": "CD56 expression is low.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000939",
+      "cl_term_label": "CD16-positive, CD56-dim natural killer cell, human",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_NK_CD56dim_CD16dim_SPTSSBhi",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "NK",
+      "L4": "NK CD56dim CD16dim SPTSSBhi",
+      "markers_positive": [
+        "SPTSSB",
+        "TNFRSF11A",
+        "KLRF1",
+        "ZMAT4",
+        "IL18RAP",
+        "MLC1",
+        "SELL",
+        "IL12RB2",
+        "IL7R"
+      ],
+      "markers_negative": [
+        "CD3D"
+      ],
+      "description": "Both CD56 and CD16 expression are low. High SELL and IL7R expression compared to the other NK subsets suggests this is a more progenitor-like state.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000623",
+      "cl_term_label": "natural killer cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_NK_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "NK",
+      "L4": "NK cycling",
+      "markers_positive": [
+        "MKI67",
+        "NKG7"
+      ],
+      "markers_negative": [
+        "CD3D"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:4033071",
+      "cl_term_label": "cycling natural killer cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_NMP_Promyelocytes",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Progenitors",
+      "L3": "Myeloid progenitors",
+      "L4": "Neutrophil-myeloid progenitors and promyelocytes",
+      "markers_positive": [
+        "MS4A3",
+        "MPO",
+        "PRTN3",
+        "AZU1",
+        "ELANE",
+        "CTSG",
+        "PRSS57"
+      ],
+      "description": "MS4A3, MPO expression are suggestive of NMP. PRTN3, ELANE, and CTSG expression suggest promyelocyte.",
+      "alternative_labels": "NMP",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000834",
+      "cl_term_label": "neutrophil progenitor cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_NaiveB",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "B",
+      "L4": "Naive B",
+      "markers_positive": [
+        "IGHD",
+        "FCRL1"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000788",
+      "cl_term_label": "naive B cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_Neutrophils",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Granulocytes",
+      "L4": "Neutrophils",
+      "markers_positive": [
+        "CXCR1",
+        "CXCR2",
+        "ALPL",
+        "CMTM2",
+        "FCGR3B",
+        "CNTNAP3",
+        "MME"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000775",
+      "cl_term_label": "neutrophil",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_Plasma_κ",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "B",
+      "L4": "Plasmas κ-restricted",
+      "markers_positive": [
+        "IGKC",
+        "IGHA1",
+        "IGHA2"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000786",
+      "cl_term_label": "plasma cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_Plasma_λ",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "B",
+      "L4": "Plasmas λ-restricted",
+      "markers_positive": [
+        "IGLC3",
+        "IGLC2",
+        "IGLC1",
+        "IGHA1",
+        "IGHA2"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000786",
+      "cl_term_label": "plasma cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_ProB",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "B",
+      "L4": "Pro-B",
+      "markers_positive": [
+        "CD34",
+        "DNTT",
+        "RAG1",
+        "RAG2",
+        "LEF1",
+        "EBF1",
+        "VPREB1",
+        "CD24",
+        "MME",
+        "IGLL1"
+      ],
+      "markers_negative": [
+        "IKZF2"
+      ],
+      "description": "Contains both early and late pro-B cells.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000826",
+      "cl_term_label": "pro-B cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_SmallPreB",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "B",
+      "L4": "Small pre-B",
+      "markers_positive": [
+        "CCDC191",
+        "RAG1",
+        "RAG2",
+        "IGLC1",
+        "IKZF2",
+        "ZEB2"
+      ],
+      "markers_negative": [
+        "CD34",
+        "DNTT"
+      ],
+      "description": "LEF1 expression is lower.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000954",
+      "cl_term_label": "small pre-B-II cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_T_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "CD4+ CD8+ T cycling",
+      "markers_positive": [
+        "MKI67",
+        "CD8A",
+        "CD8B",
+        "CD4",
+        "CD3D"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000076",
+      "cl_term_label": "cycling T cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_cDC1",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "DC",
+      "L3": "Conventional DC",
+      "L4": "Conventional DC Type 1",
+      "markers_positive": [
+        "CLEC9A",
+        "XCR1",
+        "FLT3"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0002394",
+      "cl_term_label": "CD141-positive myeloid dendritic cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_cDC2",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "DC",
+      "L3": "Conventional DC",
+      "L4": "Conventional DC Type 2",
+      "markers_positive": [
+        "CD1C",
+        "CD1E",
+        "FCER1A",
+        "FLT3"
+      ],
+      "markers_negative": [
+        "CD207"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0002399",
+      "cl_term_label": "CD1c-positive myeloid dendritic cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_cDC2_CD207hi",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "DC",
+      "L3": "Conventional DC",
+      "L4": "Conventional DC Type 2 CD207+",
+      "markers_positive": [
+        "CD207",
+        "CD1C",
+        "CD1E",
+        "FCER1A",
+        "FLT3"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000453",
+      "cl_term_label": "Langerhans cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_mregDC",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "DC",
+      "L3": "Non-conventional DC",
+      "L4": "Mature DC",
+      "markers_positive": [
+        "CCL22",
+        "LAMP3",
+        "CCL19",
+        "CD274",
+        "PDCD1LG2",
+        "CD200",
+        "CD40",
+        "CCR7",
+        "IL12B"
+      ],
+      "description": "DC subset, described by Maier et al., 2020, that co-expresses immunoregulatory molecules and maturation genes. This programme is upregulated by cDC1/2 upon the uptake of tumour antigens.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000841",
+      "cl_term_label": "mature conventional dendritic cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_oLAM",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Macrophages",
+      "L4": "Ovarian lipid-associated macrophages",
+      "markers_positive": [
+        "DHRS9",
+        "RARRES1",
+        "CCL18",
+        "CHIT1",
+        "OTOA",
+        "KCNJ5",
+        "HS3ST2",
+        "NUPR1"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:4033086",
+      "cl_term_label": "lipid-associated macrophage",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_pDC",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "DC",
+      "L3": "Non-conventional DC",
+      "L4": "Plasmacytoid DC",
+      "markers_positive": [
+        "LILRA4",
+        "CLEC4C",
+        "PTPRS",
+        "SCT",
+        "PHEX",
+        "EPHB1",
+        "LRRC26",
+        "CUX2",
+        "JCHAIN"
+      ],
+      "markers_negative": [
+        "AXL",
+        "SIGLEC6"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000991",
+      "cl_term_label": "CD11c-negative plasmacytoid dendritic cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_tolDC",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "DC",
+      "L3": "Non-conventional DC",
+      "L4": "Tolerizing DC",
+      "markers_positive": [
+        "PRDM16",
+        "RORC",
+        "IDO1",
+        "FLT3"
+      ],
+      "markers_negative": [
+        "CLEC9A",
+        "XCR1",
+        "CD1C",
+        "CD1E",
+        "FCER1A",
+        "CD207"
+      ],
+      "description": "DC subset characterised by co-expression of transcription factors PRDM16 and RORC. Fu et al. first identified tolDCs as crucial for inducing peripheral Tregs against foreign antigens derived from food and commensal microbiota within the gastrointestinal tract.",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000451",
+      "cl_term_label": "dendritic cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_uMac_Inf",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Macrophages",
+      "L4": "Inflammatory uterine macrophages",
+      "markers_positive": [
+        "EREG",
+        "INHBA",
+        "CXCL5",
+        "ANGPTL4",
+        "MMP19",
+        "ACKR3",
+        "TGM2",
+        "IL1A",
+        "MARCO",
+        "ANPEP"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000863",
+      "cl_term_label": "M1 macrophage",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_uNK1",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "NK",
+      "L4": "Uterine NK CD56hi CD16lo B4GALNThi",
+      "markers_positive": [
+        "NCAM1",
+        "B4GALNT1",
+        "ENTPD1",
+        "SPINK2",
+        "LILRB1",
+        "IGFBP7"
+      ],
+      "markers_negative": [
+        "CD3D",
+        "FCGR3A"
+      ],
+      "description": "First described by Vento-Tormo et al., 2018.",
+      "alternative_labels": "dNK1",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:4052028",
+      "cl_term_label": "uterine natural killer cell 1, human",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_uNK2",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "NK",
+      "L4": "Uterine NK CD56hi CD16lo XCLhi",
+      "markers_positive": [
+        "NCAM1",
+        "XCL1",
+        "PLXNA4",
+        "ITGB2"
+      ],
+      "markers_negative": [
+        "CD3D",
+        "FCGR3A"
+      ],
+      "description": "First described by Vento-Tormo et al., 2018.",
+      "alternative_labels": "dNK2",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:4052028",
+      "cl_term_label": "uterine natural killer cell 2, human",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_uNK3",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "NK",
+      "L4": "Uterine NK CD56hi CD16lo CD160hi",
+      "markers_positive": [
+        "NCAM1",
+        "CD160",
+        "CXCR4",
+        "TIGIT",
+        "ITGB2"
+      ],
+      "markers_negative": [
+        "CD3D",
+        "FCGR3A"
+      ],
+      "description": "First described by Vento-Tormo et al., 2018.",
+      "alternative_labels": "dNK3",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:4052028",
+      "cl_term_label": "uterine natural killer cell 3, human",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Immune_uftLAM",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Myeloid",
+      "L3": "Macrophages",
+      "L4": "Uterine and fallopian tube lipid-associated macrophages",
+      "markers_positive": [
+        "FCGBP",
+        "PADI2",
+        "KCNQ3",
+        "CX3CR1",
+        "PCNX2",
+        "MACC1",
+        "VASH1",
+        "OLFML3",
+        "TMEM156",
+        "HTRA1",
+        "FAM149A",
+        "IFNLR1",
+        "C3",
+        "TENM4"
+      ],
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:4033086",
+      "cl_term_label": "lipid-associated macrophage",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Immune_γδT_Vγ9Vδ2",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Immune",
+      "L2": "Lymphoid",
+      "L3": "T",
+      "L4": "Vγ9/Vδ2+ γδT",
+      "markers_positive": [
+        "CD3D",
+        "TRGV9",
+        "TRDV2",
+        "CXCR6",
+        "ITGAE"
+      ],
+      "description": "Present only in fetal samples. Lack homing receptors and expresses some tissue-residency markers (ITGAE, CXCR6).",
+      "alternative_labels": "Modular nomenclature: Vγ9+Vδ2+ γδT D",
+      "source_sheet": "immune_acrosslifespan",
+      "cl_term_id": "CL:0000798",
+      "cl_term_label": "gamma-delta T cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_AdvFibs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Adventitial fibroblasts",
+      "markers_positive": [
+        "DPT",
+        "C3",
+        "SFRP2",
+        "DPP4"
+      ],
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:4052030",
+      "cl_term_label": "adventitial fibroblast",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Mesen_AdvFibsIntr",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Adventitial fibroblasts",
+      "L3": "Adventitial fibroblasts",
+      "L4": "Transitioning adventitial fibroblasts",
+      "markers_positive": [
+        "ACSM3",
+        "C7"
+      ],
+      "alternative_labels": "Fibroblast_basalis;FibC3;C7-Fibroblast",
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:4052030",
+      "cl_term_label": "adventitial fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_AdvFibs_PI16hi",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Adventitial fibroblasts",
+      "L3": "Adventitial fibroblasts",
+      "L4": "Adventitial fibroblasts PI16 high",
+      "markers_positive": [
+        "PI16",
+        "CD34",
+        "DPP4",
+        "SFRP2",
+        "C3",
+        "IL33",
+        "MFAP5",
+        "KCNB2",
+        "SCARA5",
+        "SLPI"
+      ],
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:4052030",
+      "cl_term_label": "adventitial fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_AdvFibs_PI16low",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Adventitial fibroblasts",
+      "L3": "Adventitial fibroblasts",
+      "L4": "Adventitial fibroblasts PI16 low",
+      "markers_positive": [
+        "C3",
+        "ABCA10",
+        "C7"
+      ],
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:4052030",
+      "cl_term_label": "adventitial fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_AdvFibs_PI16low_Vagina",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Adventitial fibroblasts",
+      "L3": "Vaginal Adventitial fibroblasts",
+      "L4": "Vaginal adventitial fibroblasts PI16 low",
+      "markers_positive": [
+        "CXCL1",
+        "GREM1",
+        "CD83",
+        "LRP1B"
+      ],
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:4052030",
+      "cl_term_label": "adventitial fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_CervixFib_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Cervix stroma",
+      "L4": "Fetal cervical fibroblast",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000499",
+      "cl_term_label": "stromal cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_CervixFibs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Cervix stroma",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "HOXA13",
+        "GATA2"
+      ],
+      "markers_negative": [
+        "RERGL",
+        "MCAM",
+        "MYH11",
+        "FOXF1"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0000499",
+      "cl_term_label": "stromal cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_CervixVaginaSMCs_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Smooth muscle cell",
+      "L3": "Cervix Smooth muscle cell",
+      "L4": "Fetal cervicovaginal smooth muscle",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000192",
+      "cl_term_label": "smooth muscle cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_CorpusCavernosumFib_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Corpus cavernosum fibroblast",
+      "L4": "Fetal corpus cavernosum fibroblast",
+      "markers_positive": [
+        "SOX9",
+        "PRR16"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_CorpusSpongiosumFib_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Corpus spongiosum fibroblast",
+      "L4": "Fetal corpus spongiosum fibroblast",
+      "markers_positive": [
+        "FOXF1",
+        "SALL1"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoGlandBas",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial basalis stroma",
+      "markers_positive": [
+        "SFRP5",
+        "MMP11",
+        "TUNAR",
+        "F13A1"
+      ],
+      "markers_negative": [
+        "DKK1",
+        "LEFTY2",
+        "MMP10",
+        "MMP3"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "GATA2",
+        "HOXD10",
+        "HOXA11"
+      ],
+      "markers_negative": [
+        "RERGL",
+        "MCAM",
+        "RGS5"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_Menopause",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma in postmenopause",
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_MenstrualEutopic",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma of the menstrual phase",
+      "markers_positive": [
+        "MMP10",
+        "MMP3",
+        "INHBA",
+        "F13A1"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_MenstrualFluid",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma of the menstrual effluent",
+      "markers_positive": [
+        "MMP10",
+        "MMP3",
+        "INHBA",
+        "DKK1"
+      ],
+      "markers_negative": [
+        "TUNAR",
+        "F13A1"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_Prolif",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma of proliferative phase",
+      "markers_positive": [
+        "F13A1",
+        "TUNAR",
+        "MMP11"
+      ],
+      "markers_negative": [
+        "DKK1",
+        "LEFTY2",
+        "MMP10",
+        "MMP3",
+        "INHBA"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_Prolif_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma of proliferative phase cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "markers_negative": [
+        "DKK1",
+        "LEFTY2",
+        "MMP10",
+        "MMP3",
+        "INHBA"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_eSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma of early secretory phase",
+      "markers_positive": [
+        "F13A1",
+        "TUNAR",
+        "MMP11",
+        "DKK1"
+      ],
+      "markers_negative": [
+        "MMP10",
+        "MMP3",
+        "INHBA"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_lSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma of late secretory phase",
+      "markers_positive": [
+        "DKK1",
+        "LEFTY2"
+      ],
+      "markers_negative": [
+        "MMP10",
+        "MMP3",
+        "INHBA",
+        "F13A1",
+        "TUNAR",
+        "MMP11"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_mSec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma of mid secretory phase",
+      "markers_positive": [
+        "DKK1"
+      ],
+      "markers_negative": [
+        "LEFTY2",
+        "MMP10",
+        "MMP3",
+        "INHBA",
+        "F13A1",
+        "TUNAR",
+        "MMP11"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_nEMC",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma in no endogenous menstrual cycle (nEMC)",
+      "description": "Heterogeneous population;depends on the hormonal treatment",
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_nEMC_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma in no endogenous menstrual cycle (nEMC) cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "description": "Heterogeneous population;depends on the hormonal treatment",
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EndoStromalFib_nEMC_Sec",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Endometrial functionalis stroma",
+      "L4": "Endometrial stroma in no endogenous menstrual cycle (nEMC), decidualised",
+      "markers_positive": [
+        "DKK1"
+      ],
+      "description": "Heterogeneous population;depends on the hormonal treatment",
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002255",
+      "cl_term_label": "stromal cell of endometrium",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_EpoophronFib_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Epoophoron fibroblast",
+      "L4": "Fetal epoophoron fibroblast",
+      "markers_positive": [
+        "PLAC1"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_FallopianFib_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Fallopian tube stroma",
+      "L4": "Fetal fallopian tube fibroblast",
+      "markers_positive": [
+        "ITGBL1",
+        "CD36"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000499",
+      "cl_term_label": "stromal cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_FallopianFibs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Fallopian tube stroma",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "HOXA7",
+        "GATA2"
+      ],
+      "markers_negative": [
+        "RERGL",
+        "MCAM",
+        "RGS5",
+        "HOXD10"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0000499",
+      "cl_term_label": "stromal cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_FallopianLig_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Ligament fibroblast",
+      "L3": "Fallopian tube ligament fibroblast",
+      "L4": "Fetal fallopian tube ligament fibroblast",
+      "markers_positive": [
+        "PTGER3"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_FallopianSMCs_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Smooth muscle cell",
+      "L3": "Fallopian tube Smooth muscle cell",
+      "L4": "Fetal fallopian tube smooth muscle",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000192",
+      "cl_term_label": "smooth muscle cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_GlansFib_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Glans fibroblast",
+      "L4": "Fetal glans fibroblast",
+      "markers_positive": [
+        "SP9",
+        "DLX5"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_GonadalFib_Undiff",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Gonadal fibroblast",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "GATA4",
+        "LHX9",
+        "ARX"
+      ],
+      "markers_negative": [
+        "WNT6",
+        "DMRT1",
+        "IL17B"
+      ]
+    },
+    {
+      "label": "Mesen_GonadalFibs_Undiff",
+      "granularity": "fine",
+      "scope": "fetal",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_InterstitialFibroblast",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "MME"
+      ],
+      "markers_negative": [
+        "RERGL",
+        "MCAM",
+        "RGS5"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_LabiaFib_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Labial fibroblast",
+      "L4": "Fetal labial fibroblast",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_LabioScrotalSwelling_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Labioscrotal swelling fibroblast",
+      "L4": "Fetal labioscrotal swelling fibroblast",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_MesonephricFib_Fetal",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Mesonephric duct stroma",
+      "L4": "Fetal mesonephric stromal fibroblast",
+      "markers_positive": [
+        "PLAC1",
+        "HTR2B"
+      ]
+    },
+    {
+      "label": "Mesen_MesonephricFibs_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_MullerianFib",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Mullerian duct stroma",
+      "L4": "Fetal Müllerian fibroblast",
+      "markers_positive": [
+        "AMHR2",
+        "CNTN1"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_OvarianFib_Fetal",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Ovarian stroma",
+      "L4": "Fetal ovarian stroma",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "GATA4",
+        "LHX9",
+        "ARX"
+      ],
+      "markers_negative": [
+        "WNT6",
+        "DMRT1",
+        "IL17B"
+      ]
+    },
+    {
+      "label": "Mesen_OvarianFibs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "GATA4",
+        "ARX",
+        "LHX9"
+      ],
+      "markers_negative": [
+        "RERGL",
+        "MCAM",
+        "RGS5",
+        "GATA2",
+        "EMX2"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_OvarianFibs_AdvLike",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Ovarian stroma adventitial-like",
+      "markers_positive": [
+        "C3",
+        "DPT"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_OvarianFibs_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0002132",
+      "cl_term_label": "stromal cell of ovary",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_OvarianFibs_InncorMedulla",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Ovarian stroma",
+      "L4": "Ovarian stroma of the inner cortex and medulla",
+      "markers_positive": [
+        "PROK1"
+      ],
+      "markers_negative": [
+        "TSPAN8",
+        "TMEM100",
+        "LAMB1"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002132",
+      "cl_term_label": "stromal cell of ovary",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_OvarianFibs_Medulla_SMCsLike",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Ovarian stroma",
+      "L4": "Ovarian stroma of the medulla SMCs-like",
+      "markers_positive": [
+        "PROK1",
+        "ACTG2"
+      ],
+      "markers_negative": [
+        "TSPAN8",
+        "TMEM100",
+        "LAMB1"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002132",
+      "cl_term_label": "stromal cell of ovary",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_OvarianFibs_Outcor",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Ovarian stroma",
+      "L4": "Ovarian stroma of the outer cortex",
+      "markers_positive": [
+        "TSPAN8",
+        "TMEM100"
+      ],
+      "markers_negative": [
+        "PROK1"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002132",
+      "cl_term_label": "stromal cell of ovary",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_OvarianFibs_Perifol",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Ovarian stroma",
+      "L4": "Ovarian stroma of the perifollicular niche",
+      "markers_positive": [
+        "PTCH1",
+        "LAMB1"
+      ],
+      "markers_negative": [
+        "TSPAN33",
+        "WFDC1",
+        "TSPAN8",
+        "TMEM100"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0002132",
+      "cl_term_label": "stromal cell of ovary",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_OvarianInclFibs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Ovarian Inclusions fibroblasts",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "GATA2",
+        "HOXA10",
+        "HOXD10"
+      ],
+      "markers_negative": [
+        "RERGL",
+        "MCAM",
+        "RGS5"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_PV_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Perivascular",
+      "L3": "Fetal perivascular",
+      "markers_positive": [
+        "RERGL",
+        "MCAM",
+        "RGS5"
+      ],
+      "markers_negative": [
+        "PDGFRA"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:4033054",
+      "cl_term_label": "perivascular cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Pericyte",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Pericytes",
+      "L3": "Pericytes",
+      "markers_positive": [
+        "RGS5",
+        "KCNJ8",
+        "ABCC9",
+        "GGT5",
+        "STEAP4",
+        "MYH11",
+        "PDGFRB",
+        "NG2"
+      ],
+      "alternative_labels": "ePV1b;PV-STEAP4;PV_Capillary",
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000669",
+      "cl_term_label": "pericyte",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Mesen_Pericyte_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Pericytes",
+      "L3": "Pericytes",
+      "L4": "Cycling pericytes",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "alternative_labels": "PV_cycling",
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000669",
+      "cl_term_label": "pericyte",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Pericyte_EndoSpiralArt",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Pericytes",
+      "L3": "Endometrial pericytes surrounding spiral arteries",
+      "markers_positive": [
+        "SLC38A11",
+        "STC2",
+        "FLT1",
+        "HOPX"
+      ],
+      "markers_negative": [
+        "STEAP4"
+      ],
+      "alternative_labels": "ePV1a",
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000669",
+      "cl_term_label": "pericyte",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Pericyte_EndoStromalLike",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Pericytes",
+      "L3": "Endometrial pericyte-stromal-likes",
+      "markers_positive": [
+        "MMP11",
+        "ANO4",
+        "RORB",
+        "DIO2"
+      ],
+      "alternative_labels": "ePV2",
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000669",
+      "cl_term_label": "pericyte",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Pericyte_EndoStromalLike_MenstrualFluid",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Pericytes",
+      "L3": "Endometrial pericyte-stromal-likes",
+      "L4": "Menstrual fluid endometrial pericyte-stromal-likes",
+      "markers_positive": [
+        "MMP1",
+        "MMP10",
+        "STC1",
+        "MMP3",
+        "IL11"
+      ],
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000669",
+      "cl_term_label": "pericyte",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Pericyte_SMCsIntr",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Pericytes",
+      "L3": "Pericytes",
+      "L4": "Pericyte-smooth muscle intermediates",
+      "markers_positive": [
+        "DES",
+        "CLSTN2",
+        "HMCN2"
+      ],
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000669",
+      "cl_term_label": "pericyte",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Prepuce_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Prepuce Fibroblast",
+      "L4": "Fetal prepuce fibroblast",
+      "markers_positive": [
+        "SIX1",
+        "SHOX2"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_SMCs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Smooth muscles",
+      "L3": "Smooth muscles",
+      "markers_positive": [
+        "ACTG2",
+        "MYH11",
+        "KCNMB1",
+        "DES",
+        "ATP1B1",
+        "CNN1"
+      ],
+      "alternative_labels": "uSMC",
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000192",
+      "cl_term_label": "smooth muscle cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Mesen_SMCs_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Smooth muscle cell",
+      "markers_positive": [
+        "ACTG2",
+        "MYH11",
+        "KCNMB1",
+        "DES",
+        "ATP1B1",
+        "CNN1"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000192",
+      "cl_term_label": "smooth muscle cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Mesen_StromalFibs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "MME"
+      ],
+      "markers_negative": [
+        "RERGL",
+        "MCAM",
+        "RGS5"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Theca",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Theca",
+      "markers_positive": [
+        "PTCH1",
+        "PTCH2",
+        "TSPAN33",
+        "WFDC1",
+        "LAMC3"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0000503",
+      "cl_term_label": "theca cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Mesen_Theca_Atretic",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Theca",
+      "L3": "Theca Interna",
+      "L4": "Theca atretic",
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:4052012",
+      "cl_term_label": "interna theca cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Theca_Externa",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Theca",
+      "L3": "Theca Externa",
+      "markers_positive": [
+        "ACTG2"
+      ],
+      "markers_negative": [
+        "INSL3",
+        "ANPEP"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:4052013",
+      "cl_term_label": "externa theca cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Mesen_Theca_Interna_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Theca",
+      "L3": "Theca Interna",
+      "L4": "Theca Interna cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:4052012",
+      "cl_term_label": "interna theca cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Theca_Interna_Perifol",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Theca",
+      "L3": "Theca Interna",
+      "L4": "Theca Interna perifolicular",
+      "markers_positive": [
+        "INSL3",
+        "ANPEP",
+        "PIEZO2",
+        "THBD"
+      ],
+      "markers_negative": [
+        "CYP17A1",
+        "GSTA1",
+        "LHCGR"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:4052012",
+      "cl_term_label": "interna theca cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_Theca_Interna_Steroid",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Theca",
+      "L3": "Theca Interna",
+      "L4": "Theca Interna steroidogenic",
+      "markers_positive": [
+        "INSL3",
+        "ANPEP",
+        "CYP17A1",
+        "GSTA1",
+        "LHCGR"
+      ],
+      "markers_negative": [
+        "PIEZO2"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:4052012",
+      "cl_term_label": "interna theca cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_UGSFib_Lower",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Urogenital sinus fibroblast",
+      "L4": "Fetal Lower urogenital sinus fibroblast",
+      "markers_positive": [
+        "FOXF1",
+        "FENDRR"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_UGSFib_Upper",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Urogenital sinus fibroblast",
+      "L4": "Fetal Upper urogenital sinus fibroblast",
+      "markers_positive": [
+        "GAP43",
+        "TNC"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_UGSLig",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Ligament fibroblast",
+      "L3": "Urogenital sinus ligament fibroblast",
+      "markers_positive": [
+        "PTGER3"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_UGSSMCs",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Smooth muscle cell",
+      "L3": "Urogenital sinus smooth muscle",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000192",
+      "cl_term_label": "smooth muscle cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_UterotubalJunctionFibs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Uterotubal Junction fibroblasts",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "GATA2",
+        "HOXD10",
+        "HOXA10"
+      ],
+      "markers_negative": [
+        "RERGL",
+        "MCAM",
+        "RGS5"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_UterusFib_Fetal",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Uterine interstitial fibroblast",
+      "L4": "Fetal uterine stromal fibroblast",
+      "markers_positive": [
+        "ITGA4",
+        "RORB"
+      ]
+    },
+    {
+      "label": "Mesen_UterusFibs_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_UterusLig_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Ligament fibroblast",
+      "L3": "Uterine ligament fibroblast",
+      "L4": "Fetal uterine ligament fibroblast",
+      "markers_positive": [
+        "PTGER3"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000057",
+      "cl_term_label": "fibroblast",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_UterusSMCs_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Smooth muscle cell",
+      "L3": "Uterine Smooth muscle cell",
+      "L4": "Fetal uterine smooth muscle",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000192",
+      "cl_term_label": "smooth muscle cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_VaginaFib_Lower_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Vagina stroma",
+      "L4": "Fetal lower vaginal stromal fibroblast",
+      "markers_positive": [
+        "SRD5A2",
+        "GAP43"
+      ],
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000499",
+      "cl_term_label": "stromal cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_VaginaFib_Upper_Fetal",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblast",
+      "L3": "Vagina stroma",
+      "L4": "Fetal upper vaginal stromal fibroblast",
+      "markers_positive": [
+        "SRD5A2",
+        "FENDRR"
+      ]
+    },
+    {
+      "label": "Mesen_VaginaFibs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Stromal-interstitial fibroblasts",
+      "L3": "Vagina stroma",
+      "markers_positive": [
+        "PDGFRA",
+        "DCN",
+        "FOXF1"
+      ],
+      "markers_negative": [
+        "RERGL",
+        "MCAM",
+        "RGS5",
+        "HOXA13",
+        "EMX2"
+      ],
+      "source_sheet": "mesenchymal_postnatal",
+      "cl_term_id": "CL:0000499",
+      "cl_term_label": "stromal cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_VaginaFibs_Upper_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000499",
+      "cl_term_label": "stromal cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_VaginaSMCs_Lower_Fetal",
+      "granularity": "fine",
+      "scope": "fetal",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Smooth muscle cell",
+      "L3": "Vagina Smooth muscle cell",
+      "L4": "Fetal lower vaginal smooth muscle",
+      "source_sheet": "mesenchymal_fetal",
+      "cl_term_id": "CL:0000192",
+      "cl_term_label": "smooth muscle cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_vSMCs",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Vascular smooth muscles",
+      "markers_positive": [
+        "RERGL",
+        "MYH11",
+        "TAGLN"
+      ],
+      "alternative_labels": "mPV;PV_SMC;PV-MYH11_CDKN1A+;PV-MYH11_CDKN1A-",
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000359",
+      "cl_term_label": "vascular associated smooth muscle cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Mesen_vSMCs_largeArt",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Vascular smooth muscles",
+      "L3": "Vascular smooth muscles",
+      "L4": "Large vessel vascular smooth muscles",
+      "markers_positive": [
+        "RERGL",
+        "FOXC1",
+        "MT1M"
+      ],
+      "alternative_labels": "mPV;PV_SMC;PV-MYH11_CDKN1A+;PV-MYH11_CDKN1A-",
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000359",
+      "cl_term_label": "vascular associated smooth muscle cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Mesen_vSMCs_medArt",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesenchymal",
+      "L2": "Vascular smooth muscles",
+      "L3": "Vascular smooth muscles",
+      "L4": "Medium artery / arteriolar vascular smooth muscles",
+      "markers_positive": [
+        "RERGL",
+        "NRGN",
+        "NET1"
+      ],
+      "alternative_labels": "mPV;PV_SMC;PV-MYH11_CDKN1A+;PV-MYH11_CDKN1A-",
+      "source_sheet": "perivascular_postnatal",
+      "cl_term_id": "CL:0000359",
+      "cl_term_label": "vascular associated smooth muscle cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Meso_GonadalCoelEpi",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesothelial",
+      "L2": "Surface epithelium mesothelial",
+      "L3": "Gonadal coelomic epithelial",
+      "markers_positive": [
+        "LHX9",
+        "GATA4"
+      ],
+      "markers_negative": [
+        "GATA2"
+      ],
+      "source_sheet": "mesothelial_acrosslifespan",
+      "cl_term_id": "CL:0000077",
+      "cl_term_label": "mesothelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Meso_OSE",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesothelial",
+      "L2": "Surface epithelium mesothelial",
+      "L3": "Ovarian surface epithelium",
+      "markers_positive": [
+        "LHX2",
+        "LHX9",
+        "GATA4"
+      ],
+      "markers_negative": [
+        "GATA2"
+      ],
+      "alternative_labels": "OSE",
+      "source_sheet": "mesothelial_acrosslifespan",
+      "cl_term_id": "CL:2000064",
+      "cl_term_label": "ovarian surface epithelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Meso_OSE_Fetal",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesothelial",
+      "L2": "Surface epithelium mesothelial",
+      "L3": "Fetal ovarian surface epithelium",
+      "markers_positive": [
+        "LHX2",
+        "LHX9",
+        "GATA4"
+      ],
+      "markers_negative": [
+        "GATA2"
+      ],
+      "source_sheet": "mesothelial_acrosslifespan",
+      "cl_term_id": "CL:2000064",
+      "cl_term_label": "ovarian surface epithelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Meso_ParamesoCoelEpi",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesothelial",
+      "L2": "Surface epithelium mesothelial",
+      "L3": "Paramesonephric coelomic epithelial",
+      "markers_positive": [
+        "GATA2"
+      ],
+      "markers_negative": [
+        "LHX2",
+        "GATA4",
+        "PAX8"
+      ],
+      "source_sheet": "mesothelial_acrosslifespan",
+      "cl_term_id": "CL:0000077",
+      "cl_term_label": "mesothelial cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Meso_Peritoneal_Fetal",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesothelial",
+      "L2": "Surface epithelium mesothelial",
+      "L3": "Fetal peritoneum lining mesothelium",
+      "markers_positive": [
+        "GATA2"
+      ],
+      "markers_negative": [
+        "LHX2",
+        "GATA4",
+        "PAX8"
+      ],
+      "source_sheet": "mesothelial_acrosslifespan",
+      "cl_term_id": "CL:1000490",
+      "cl_term_label": "mesothelial cell of peritoneum",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Meso_serosa",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesothelial",
+      "L2": "Surface epithelium mesothelial",
+      "L3": "Peritoneum lining mesothelium",
+      "markers_positive": [
+        "GATA2"
+      ],
+      "markers_negative": [
+        "LHX2",
+        "GATA4",
+        "PAX8"
+      ],
+      "source_sheet": "mesothelial_acrosslifespan",
+      "cl_term_id": "CL:1000490",
+      "cl_term_label": "mesothelial cell of peritoneum",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Mesothelial",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Mesothelial",
+      "markers_positive": [
+        "UPK3B",
+        "LRRN4"
+      ],
+      "markers_negative": [
+        "EPCAM"
+      ],
+      "source_sheet": "mesothelial_acrosslifespan",
+      "cl_term_id": "CL:0000077",
+      "cl_term_label": "mesothelial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Neural_Melanocyte_Fetal",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Melanocyte",
+      "L3": "Genital melanocytes",
+      "L4": "Genital melanocytes fetal",
+      "markers_positive": [
+        "TYRP1",
+        "TYR",
+        "PMEL",
+        "PAX3"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0000148",
+      "cl_term_label": "melanocyte",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Neural_Schwann",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Glials",
+      "L3": "Schwanns",
+      "markers_negative": [
+        "MBP",
+        "PRX",
+        "GJC3"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0000125",
+      "cl_term_label": "glial cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Neural_Schwann_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Glials",
+      "L3": "Schwanns",
+      "L4": "Schwanns cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0002573",
+      "cl_term_label": "Schwann cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Neural_Schwann_Fetal",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Glials",
+      "L3": "Schwanns",
+      "L4": "Schwanns mature fetal",
+      "markers_positive": [
+        "FGL2"
+      ],
+      "markers_negative": [
+        "POU3F1",
+        "PAX3",
+        "S100A4",
+        "SMOC1"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0002573",
+      "cl_term_label": "Schwann cell",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Neural_Schwann_Immature",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Glials",
+      "L3": "Schwanns",
+      "L4": "Schwanns immature/promyelinating",
+      "markers_positive": [
+        "POU3F1"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0002377",
+      "cl_term_label": "immature Schwann cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Neural_Schwann_Precursor",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Glials",
+      "L3": "Schwanns",
+      "L4": "Schwann precursor",
+      "markers_positive": [
+        "PAX3",
+        "S100A4",
+        "SMOC1"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0002375",
+      "cl_term_label": "Schwann cell precursor",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Neural_Schwann_myelinating",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Glials",
+      "L3": "Schwanns",
+      "L4": "Schwanns myelinating",
+      "markers_positive": [
+        "MBP",
+        "PRX",
+        "GJC3"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0000218",
+      "cl_term_label": "myelinating Schwann cell",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Neural_SympatheticNeurons",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Neurons",
+      "L3": "Sympathetic neurons",
+      "markers_positive": [
+        "GAP43",
+        "PHOX2A",
+        "STMN2"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0011103",
+      "cl_term_label": "sympathetic neuron",
+      "cl_match_type": "exact"
+    },
+    {
+      "label": "Neural_SympatheticNeurons_Immature",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Neurons",
+      "L3": "Sympathetic neurons",
+      "L4": "Sympathetic neurons immature",
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0011103",
+      "cl_term_label": "sympathetic neuron",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Neural_SympatheticNeurons_Immature_Cyc",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Neurons",
+      "L3": "Sympathetic neurons",
+      "L4": "Sympathetic neurons cycling",
+      "markers_positive": [
+        "MKI67"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:0011103",
+      "cl_term_label": "sympathetic neuron",
+      "cl_match_type": "nearest"
+    },
+    {
+      "label": "Neural_SympatheticNeurons_Noradrenergic",
+      "granularity": "fine",
+      "scope": "adult",
+      "lineage_L1": "Neural crest-derived",
+      "L2": "Neurons",
+      "L3": "Sympathetic neurons",
+      "L4": "Sympathetic neurons noradrenergic",
+      "markers_positive": [
+        "HMX1"
+      ],
+      "source_sheet": "neural_acrosslifespan",
+      "cl_term_id": "CL:3000002",
+      "cl_term_label": "sympathetic noradrenergic neuron",
+      "cl_match_type": "exact"
+    }
+  ]
+}

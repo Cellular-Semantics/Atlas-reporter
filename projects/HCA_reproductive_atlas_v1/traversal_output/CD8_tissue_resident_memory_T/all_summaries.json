@@ -1,0 +1,215 @@
+[
+  {
+    "title": "An integrated multimodal pan-organ atlas of the female reproductive system across the lifespan contextualises gynaecological pathologies",
+    "authors": ["Celeste E Cohen", "A. Parraga-Leo", "Leticia Rodríguez-Montes", "L. Garcia-Alonso", "R. Vento-Tormo"],
+    "year": 2026,
+    "doi": "10.64898/2026.06.10.731198",
+    "corpusId": "289267967",
+    "quotes": [
+      "We present the Human Female Reproductive System Cell Atlas v1, integrating data from more than two million cells across 291 donors and 27 datasets, spanning the ovary, fallopian tube, uterus, cervix and vagina, to define 210 cell types and states through community consensus annotation.",
+      "it defines the tissue-resident cellular landscape across reproductive organs at a resolution inaccessible to single-organ studies"
+    ]
+  },
+  {
+    "title": "Human tissue-resident memory T cells are defined by core transcriptional and functional signatures in lymphoid and mucosal sites",
+    "authors": ["Brahma V. Kumar", "Wenji Ma", "Michelle Miron", "D. Farber"],
+    "year": 2017,
+    "doi": "10.1016/j.celrep.2017.08.078",
+    "corpusId": "41523609",
+    "quotes": [
+      "Simultaneous expression of CD49a, CD103, CD101, CXCR6, CX3CR1, PD-1, and CD69 was visualized using t-SNE analysis.",
+      "While CD103 has been used to define CD8 + TRMs in mice (Schenkel and Masopust, 2014) and humans (Hombrink et al., 2016), our results demonstrate that CD69 expression can delineate tissue"
+    ]
+  },
+  {
+    "title": "Transcriptional downregulation of S1pr1 is required for establishment of resident memory CD8+ T cells",
+    "authors": ["Cara N. Skon", "June-Yong Lee", "D. Masopust", "K. Hogquist", "S. Jameson"],
+    "year": 2013,
+    "doi": "10.1038/ni.2745",
+    "corpusId": "7640430",
+    "quotes": [
+      "We found that CD8+ TRM cells lacked expression of the transcription factor KLF2 and its target gene S1pr1 (which encodes S1P1, a receptor for sphingosine 1-phosphate). Forced expression of S1P1 prevented the establishment of TRM cells.",
+      "Hence, regulation of KLF2 and S1P1 provides a switch that dictates whether CD8+ T cells commit to recirculating or tissue-resident memory populations."
+    ]
+  },
+  {
+    "title": "The precursors of CD8+ tissue resident memory T cells: from lymphoid organs to infected tissues",
+    "authors": ["Lianne Kok", "D. Masopust", "T. Schumacher"],
+    "year": 2021,
+    "doi": "10.1038/s41577-021-00590-3",
+    "corpusId": "237410002",
+    "quotes": [
+      "For instance, T RM cells show reduced expression of the cell surface molecules S1PR1 and CCR7 that promote T cells to leave NLTs, an observation that is explained by a lowered expression of the transcription factor KLF2, which drives S1PR1 and CCR7 transcription"
+    ]
+  },
+  {
+    "title": "An altered endometrial CD8 tissue resident memory T cell population in recurrent miscarriage",
+    "authors": ["J. Southcombe", "G. Mounce", "I. Granne"],
+    "year": 2017,
+    "doi": "10.1038/srep41335",
+    "corpusId": "18030744",
+    "quotes": [
+      "The mucosal surface of the uterus, the endometrium, is populated by innate and adaptive immune cells that provide a first line of defence towards pathogens.",
+      "CD8-Trm remain in tissues despite the lack of persistent antigen 6 , an attribute associated with the expression of CD69 and CD103 7,8 .",
+      "We hypothesised that this predominant CD8-T memory cell population would be Trm and therefore analysed expression of two key proteins that are directly involved with immune cell retention in tissues, CD103 and CD69. We found that the expression of both proteins was higher in the CD45RO+ versus CD45RO− population: CD103 (50% versus 20%) and CD69 (> 90% versus 60%).",
+      "The ligand for CD103, E-cadherin, is highly expressed on endometrial glands and surface epithelium 31 , thus providing a mechanism for CD103+ CD8-T tissue residency, as is the case for the intestine 12 ."
+    ]
+  },
+  {
+    "title": "The human memory T cell compartment changes across tissues of the female reproductive tract",
+    "authors": ["A. Davis", "Sarah C. Vick", "Jennifer M. Lund", "Martin Prlic"],
+    "year": 2021,
+    "doi": "10.1038/s41385-021-00406-6",
+    "corpusId": "233868628",
+    "quotes": [
+      "Comparatively little is known in regard to memory CD4 T cells across tissues of the female reproductive tract (FRT)."
+    ]
+  },
+  {
+    "title": "Differential Cytotoxic Function of Resident and Non-resident CD8+ T Cells in the Human Female Reproductive Tract Before and After Menopause",
+    "authors": ["M. Rodríguez-García", "Zheng Shen", "Jared Fortier", "C. Wira"],
+    "year": 2020,
+    "doi": "10.3389/fimmu.2020.01096",
+    "corpusId": "219296197",
+    "quotes": [
+      "Tissue resident CD8+ T cells are phenotypically characterized by the expression of CD69, with or without co-expression of CD103 (8).",
+      "we confirmed that in the FRT, almost all CD103+ CD8+ T cells coexpress CD69, while CD103− CD8+ T cells represent a mixture of CD69+ and CD69− cells",
+      "Long lasting residency in tissues coupled with their presence at mucosal sites, enables TRMs to provide rapid protection in response to secondary infections (10,11)."
+    ]
+  },
+  {
+    "title": "Advances and challenges in studying the tissue-resident T cell compartment in the human female reproductive tract",
+    "authors": ["Jennifer M. Lund", "F. Hladik", "Martin Prlic"],
+    "year": 2023,
+    "doi": "10.1111/imr.13212",
+    "corpusId": "258484436",
+    "quotes": [
+      "found, as expected, that putative T RM markers CD69 and CD103 were much more highly expressed by CD4 and CD8 T cells in the FRT tissues than in blood. Expression of CD49a, CD101, PD-1, and CCR5 was also higher.",
+      "the CD69 + CD103+ fraction of CD8 T cells predominanted in the FRT regardless of tissue type (vagina, ectocervix, or endocervix)",
+      "Tissue‐resident memory T cells (TRM) are considered to be central to maintaining mucosal barrier immunity and tissue homeostasis."
+    ]
+  },
+  {
+    "title": "Cervicovaginal tissue residence imprints a distinct differentiation program upon memory CD8 T cells",
+    "authors": ["Veronica A. Davé", "F. Mair", "Jennifer M. Lund", "Martin Prlic"],
+    "year": 2019,
+    "doi": "10.1101/769711",
+    "corpusId": "216145616",
+    "quotes": [
+      "We examined the T cell compartment in healthy human cervicovaginal tissue (CVT) and found that most CD8 T cells were granzyme B+ and TCF-1-.",
+      "CD8 TRM have been mainly studied in the skin and gut with recent studies suggesting that the signals that control tissue-residence and phenotype are highly tissue-dependent."
+    ]
+  },
+  {
+    "title": "CD4+T and CD8+T Cells in Uterus Exhibit Both Selective Dysfunction and Residency Signatures",
+    "authors": ["Shuangpeng Kang", "Shuiping Jin", "Changyou Wu"],
+    "year": 2024,
+    "doi": "10.1155/2024/5582151",
+    "corpusId": "269353602",
+    "quotes": [
+      "Uterine CD4 + T cells and CD8 + T cells expressed obviously higher levels of CD69 and CD103 than that of blood.",
+      "CD69 is expressed by most of CD4 + and CD8 + T RM cells, whereas CD103 is only expressed by certain subsets of CD8 + T RM cells [5].",
+      "Gated on uterine CD44 + memory T cells, 61.3% CD4 + T and 77.4% CD8 + T cells in uterus were T RM cells"
+    ]
+  },
+  {
+    "title": "CXCR6 regulates localization of tissue-resident memory CD8 T cells to the airways",
+    "authors": ["Alexander N. Wein", "S. McMaster", "J. Kohlmeier"],
+    "year": 2019,
+    "doi": "10.1084/jem.20181308",
+    "corpusId": "203567976",
+    "quotes": [
+      "Previous genomic analyses of tissue-resident memory CD8 T cells have shown that increased Cxcr6 expression is a common trait of T RM cells in many mucosal sites",
+      "These studies, together with our reported data, suggest that CXCR6-CXCL16 interactions may have a primary role of controlling localization of lymphocytes within tissues, rather than directly recruiting them into the tissue from the circulation."
+    ]
+  },
+  {
+    "title": "CXCR6 by increasing retention of memory CD8+ T cells in the ovarian tumor microenvironment promotes immunosurveillance and control of ovarian cancer",
+    "authors": ["Ravikumar Muthuswamy", "A. McGray", "K. Odunsi"],
+    "year": 2020,
+    "doi": "10.1136/jitc-2021-003329",
+    "corpusId": "235452268",
+    "quotes": [
+      "Chemokine receptor profiling of CD8+CD103+ resident memory tumor-infiltrating lymphocytes in patients with ovarian cancer revealed high expression of CXCR6.",
+      "CXCR6, by promoting retention in tumor tissues, serves a critical role in resident memory T cell-mediated immunosurveillance and control of ovarian cancer."
+    ]
+  },
+  {
+    "title": "Diminished CD103 (αEβ7) Expression on Resident T Cells from the Female Genital Tract of HIV-Positive Women",
+    "authors": ["David Moylan", "P. Goepfert", "S. Sabbaj"],
+    "year": 2017,
+    "doi": "10.20411/pai.v1i2.166",
+    "corpusId": "41919850",
+    "quotes": [
+      "Tissue resident memory T cells (TrM) provide an enhanced response against infection at mucosal surfaces, yet their function has not been extensively studied in humans, including the female genital tract (FGT).",
+      "We demonstrate that TrM are present in the FGT of healthy and HIV-positive women."
+    ]
+  },
+  {
+    "title": "Local immunity by tissue-resident CD8+ memory T cells",
+    "authors": ["T. Gebhardt", "Laura K. Mackay"],
+    "year": 2012,
+    "doi": "10.3389/fimmu.2012.00340",
+    "corpusId": "8385561",
+    "quotes": [
+      "Despite this, effective CD8+ T cell surveillance of barrier tissues such as skin and mucosa typically wanes with time, resulting in limited T cell-mediated protection in these peripheral tissues.",
+      "recent evidence suggests that a specialized subset of CD103+ memory T cells can permanently lodge and persist in peripheral tissues, and that these cells can compensate for the loss of peripheral immune surveillance by circulating memory T cells"
+    ]
+  },
+  {
+    "title": "Tissue-Resident Lymphocytes Across Innate and Adaptive Lineages",
+    "authors": ["Chun Chou", "Ming O. Li"],
+    "year": 2018,
+    "doi": "10.3389/fimmu.2018.02104",
+    "corpusId": "52310282",
+    "quotes": [
+      "As CD8 + T cells can directly lyse infected target cells through the release of granzymes and perforin, several studies reported granzyme B expression in T RM cells as well",
+      "a report showed that pre-existing herpes simplex virus (HSV) 2 antigen-specific T RM cells at the vaginal mucosa protect hosts from lethal HSV-2 challenge by restricting viral replication at the site of infection as well as preventing the spread of virus to the peripheral nervous system"
+    ]
+  },
+  {
+    "title": "Blimp-1 Rather Than Hobit Drives the Formation of Tissue-Resident Memory CD8+ T Cells in the Lungs",
+    "authors": ["Felix M. Behr", "Natasja A M Kragten", "K. V. van Gisbergen"],
+    "year": 2019,
+    "doi": "10.3389/fimmu.2019.00400",
+    "corpusId": "71129193",
+    "quotes": [
+      "Their position in barrier tissues, including skin, intestine, female reproductive tract and lungs, places non-circulating CD8 + T RM cells at sites of pathogen entry, where they provide efficient early protection against local reinfection",
+      "Upon antigen encounter, CD8 + T RM cells rapidly release pro-inflammatory cytokines, including interferon-γ (IFN-γ), which induce a tissuewide state of alert and initiate the recruitment of circulating B cells and memory T cells",
+      "In some tissues, CD8 + T RM cells can also directly lyse target cells and limit pathogen spread by employing cytotoxic mechanisms"
+    ]
+  },
+  {
+    "title": "The functional requirement for CD69 in establishment of resident memory CD8+ T cells varies with tissue location",
+    "authors": ["Daniel Walsh", "Henrique Borges da Silva", "D. Masopust", "S. Jameson"],
+    "year": 2019,
+    "doi": "10.4049/jimmunol.1900052",
+    "corpusId": "195696888",
+    "quotes": [
+      "The transcription factor KLF2 promotes S1PR1 expression, and both S1PR1 and KLF2 are downregulated in CD8 + T RM",
+      "By inhibiting expression of S1PR1, CD69 can therefore impair egress and promote T cell residency"
+    ]
+  },
+  {
+    "title": "Tissue-Resident Memory CD8+ T Cells: From Phenotype to Function",
+    "authors": ["D. Topham", "Emma C. Reilly"],
+    "year": 2018,
+    "doi": "10.3389/fimmu.2018.00515",
+    "corpusId": "4285682",
+    "quotes": [
+      "Tissue-resident memory CD8+ T cells are an important first line of defense from infection in peripheral non-lymphoid tissues, such as the mucosal tissues of the respiratory, digestive, and urogenital tracts.",
+      "CD49a and CD103 are not merely biomarkers of TRM, they confer substrate specificities for cell adhesion to collagen and E-cadherin, respectively."
+    ]
+  },
+  {
+    "title": "Interactions between microbiota and cervical epithelial, immune, and mucus barrier",
+    "authors": ["Mengting Dong", "Yalan Dong", "F. Xue"],
+    "year": 2023,
+    "doi": "10.3389/fcimb.2023.1124591",
+    "corpusId": "257190049",
+    "quotes": [
+      "CD8 + TRM (CD69 + CD103 + ) is the predominant fraction in CD8 + T cells of cervicovaginal tissue, while others are CD69 + single positive and double negative CD69 − CD103 − cells",
+      "Once TRM recognises the cognate peptide, it releases cytokines IL-2, TNFa, and IFNg, thereby upregulating adhesion molecules and chemokines and promoting the recruitment of circulating memory T cells and B cells into tissues"
+    ]
+  }
+]

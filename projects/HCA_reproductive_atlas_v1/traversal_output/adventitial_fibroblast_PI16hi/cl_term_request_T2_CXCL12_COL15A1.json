@@ -1,0 +1,88 @@
+{
+  "cell_type_label": "Adventitial fibroblasts (CXCL12+/COL15A1+ pole) (Mesen_AdvFibs_PI16low / Mesen_AdvFibsIntr)",
+  "suggested_label": "CXCL12-positive adventitial fibroblast",
+  "definition": "An adventitial fibroblast representing the immune-interacting, paracrine pole of the universal fibroblast continuum, characterised by high expression of collagen XV alpha 1 (COL15A1), complement component C7, and C-X-C motif chemokine ligand 12 (CXCL12) in humans, and variably expressing C3 and ABCA10 (Cohen et al., 2026; DOI:10.64898/2026.06.10.731198). This cell colocalises with lymphocytes and inflammatory macrophages, organising perivascular immune niches, and is the differentiated counterpart to the PI16-high progenitor pole of the universal fibroblast continuum (Zeltz et al., 2022; DOI:10.1007/s12079-022-00673-3; Yang et al., 2026; DOI:10.1172/jci.insight.202529). It is distinguished from mural cells by absence of CSPG4, MCAM, RGS5, and ACTA2 (Yang et al., 2026).",
+  "parent_term": {
+    "cl_id": "CL:4052030",
+    "cl_term": "adventitial fibroblast"
+  },
+  "anatomical_location": {
+    "uberon_id": "UBERON:0005734",
+    "uberon_term": "tunica adventitia of blood vessel"
+  },
+  "logical_axioms": [
+    {
+      "relation": "part of",
+      "relation_id": "BFO:0000050",
+      "filler": "tunica adventitia of blood vessel",
+      "filler_id": "UBERON:0005734",
+      "notes": "CXCL12+/COL15A1+ adventitial fibroblasts occupy adventitial and perivaascular positions across organs including fallopian tube, ovary, and myometrium (Cohen et al. 2026). CURATOR REVIEW NEEDED: Zeltz et al. (2022) report that COL15A1+ universal fibroblasts are found deeper in parenchymal tissues, not exclusively in the perivascular adventitia; this axiom may therefore overclaim adventitial restriction. The CXCL12+ immune-niche identity is adventitial but the COL15A1 marker axis may extend beyond the tunica adventitia. Recommend CL curators review whether a broader anatomical filler (e.g. connective tissue) is more appropriate, or whether this axiom should be qualified."
+    },
+    {
+      "relation": "capable of",
+      "relation_id": "RO:0002215",
+      "filler": "extracellular matrix organization",
+      "filler_id": "GO:0030198",
+      "notes": "COL15A1+ adventitial fibroblasts are described as basement-membrane-secreting universal fibroblasts (Obacz et al. 2022; Zeltz et al. 2022); extracellular matrix organization is a core defining function shared with the PI16+ pole but reflected in the COL15A1 (collagen XV) expression."
+    }
+  ],
+  "synonyms": [
+    {
+      "value": "COL15A1+ universal fibroblast",
+      "scope": "related",
+      "reference": "10.1007/s12079-022-00673-3"
+    },
+    {
+      "value": "stromal niche adventitial fibroblast",
+      "scope": "related",
+      "reference": "10.64898/2026.06.10.731198"
+    },
+    {
+      "value": "CXCL12+ stromal niche fibroblast",
+      "scope": "related",
+      "reference": "10.64898/2026.06.10.731198"
+    },
+    {
+      "value": "universal fibroblast (COL15A1+ pole)",
+      "scope": "related",
+      "reference": "10.1172/jci.insight.202529"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.64898/2026.06.10.731198",
+      "citation": "Cohen et al. (2026)",
+      "supports": "Atlas identification of CXCL12+/COL15A1+ pole (Mesen_AdvFibs_PI16low: C3, ABCA10, C7; Mesen_AdvFibsIntr: ACSM3, C7); distribution across fallopian tube mucosa, ovarian subserosa, and myometrial adventitia; transcriptional continuum from PI16hi to C7/COL15A1hi; immune-niche colocalisation with lymphocytes and macrophages"
+    },
+    {
+      "doi": "10.1007/s12079-022-00673-3",
+      "citation": "Zeltz et al. (2022)",
+      "supports": "Two pan-tissue universal fibroblast archetypes (PI16+ perivascular vs COL15A1+ parenchymal/basement-membrane-associated); COL15A1+ fibroblasts noted deeper inside parenchymal tissues — key basis for the caveat about adventitial restriction"
+    },
+    {
+      "doi": "10.1172/jci.insight.202529",
+      "citation": "Yang et al. (2026)",
+      "supports": "COL15A1+ as the second universal fibroblast subtype; distinguishing absence of mural markers CSPG4, MCAM, RGS5, ACTA2; cross-tissue distribution"
+    },
+    {
+      "doi": "10.1183/13993003.00143-2023",
+      "citation": "Obacz et al. (2022)",
+      "supports": "PI16-/COL15A1+ cells proposed as universal parenchymal fibroblasts secreting basement membranes; explicit distinction from PI16+ adventitial fibroblasts; DPT co-expression"
+    },
+    {
+      "citation": "Levy-Lambert et al. (2025)",
+      "supports": "CXCL12+ stromal niche fibroblasts described as the immune-interacting, paracrine pole of the universal fibroblast continuum, colocalising with lymphocytes and inflammatory macrophages — deepsearch source, DOI not yet confirmed in catalogue"
+    },
+    {
+      "citation": "Zhou et al. (2025)",
+      "supports": "Identification of immune-activated fibroblast subclusters (HLA-DRA/CD74+) in asthma bronchial tissue as the differentiated/niche-forming counterpart to matrix/vascular fibroblasts — deepsearch source, DOI not yet confirmed in catalogue"
+    },
+    {
+      "doi": "10.4049/jimmunol.1801209",
+      "citation": "Barron et al. (2018)",
+      "supports": "Perivascular adventitial fibroblast specialisation accompanying T cell retention in inflamed human dermis — supports immune-niche role of adventitial fibroblasts"
+    }
+  ],
+  "justification": "CL:4052030 (adventitial fibroblast) has no molecular characterisation and no children other than a single artery-location term (CL:1000306). The CXCL12+/COL15A1+ adventitial fibroblast is the second of two reproducible, cross-tissue universal fibroblast archetypes — the immune-interacting, differentiated counterpart to the PI16-high progenitor pole (drafted separately as 'PI16-high adventitial fibroblast'). It is identified across reproductive, pulmonary, dermal, and vascular atlases by COL15A1, C7, and CXCL12 co-expression, colocalisaton with perivascular immune cells, and absence of mural markers. Neither this marker profile nor the immune-niche identity is captured by any existing CL term.\n\nIMPORTANT CAVEAT FOR CL CURATORS: The assignment of this term as a child of CL:4052030 (adventitial fibroblast) requires review. Zeltz et al. (2022; DOI:10.1007/s12079-022-00673-3) report that COL15A1+ universal fibroblasts occupy deeper parenchymal positions rather than the perivascular adventitia — in contrast to PI16+ fibroblasts, which are perivascular. Cohen et al. (2026) in the reproductive atlas atlas find the C7/COL15A1hi state distributed across mucosal interstitium, ovarian subserosa, and adventitial positions around vasculature — a broader anatomical footprint than the PI16hi state (99% fallopian tube subserosa). The CXCL12+ immune-niche identity is adventitial in the reproductive atlas context (Levy-Lambert 2025), but the COL15A1 marker axis may extend beyond the tunica adventitia of blood vessels. Curators should consider whether: (a) the parent should remain CL:4052030 with a qualifying note; (b) a broader parent (e.g. fibroblast) is more appropriate; or (c) the term should carry two separate anatomical location axioms (adventitial + parenchymal connective tissue). This tension is stated plainly and the term is not overclaiming adventitial restriction.\n\nProposed logical axioms:\n- subClassOf 'part of' some 'tunica adventitia of blood vessel' (UBERON:0005734) — subject to curator review of COL15A1+ anatomical scope\n- subClassOf 'capable of' some 'extracellular matrix organization' (GO:0030198) — COL15A1/collagen XV expression and basement-membrane secretion\n\nImplicit immune-niche function (colocalisation with lymphocytes, paracrine signalling via CXCL12) is described in the definition text. A 'capable of chemokine production' or 'capable of lymphocyte chemotaxis' axiom would be appropriate but is not proposed here as a verified GO CURIE was not confirmed from the available evidence files; curators should add if warranted.",
+  "ntr_markdown": "**Preferred term label**\nCXCL12-positive adventitial fibroblast\n\n**Synonyms** (add reference(s), please)\nCOL15A1+ universal fibroblast (related) — DOI:10.1007/s12079-022-00673-3\nstromal niche adventitial fibroblast (related) — DOI:10.64898/2026.06.10.731198\nCXCL12+ stromal niche fibroblast (related) — DOI:10.64898/2026.06.10.731198\nuniversal fibroblast (COL15A1+ pole) (related) — DOI:10.1172/jci.insight.202529\n\n**Definition** (free text, with reference(s), please. PubMed ID format is PMID:XXXXXX)\nAn adventitial fibroblast representing the immune-interacting, paracrine pole of the universal fibroblast continuum, characterised by high expression of collagen XV alpha 1 (COL15A1), complement component C7, and C-X-C motif chemokine ligand 12 (CXCL12) in humans, and variably expressing C3 and ABCA10 (Cohen et al., 2026; DOI:10.64898/2026.06.10.731198). This cell colocalises with lymphocytes and inflammatory macrophages, organising perivascular immune niches, and is the differentiated counterpart to the PI16-high progenitor pole of the universal fibroblast continuum (Zeltz et al., 2022; DOI:10.1007/s12079-022-00673-3; Yang et al., 2026; DOI:10.1172/jci.insight.202529). It is distinguished from mural cells by absence of CSPG4, MCAM, RGS5, and ACTA2 (Yang et al., 2026).\n\n**Parent cell type term** (check the hierarchy here https://www.ebi.ac.uk/ols4/ontologies/cl)\nadventitial fibroblast (CL:4052030) — https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_4052030\n\n**Anatomical structure where the cell type is found** (check Uberon for anatomical structures: https://www.ebi.ac.uk/ols4/ontologies/uberon)\ntunica adventitia of blood vessel (UBERON:0005734) — https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0005734\nNote: see anatomical caveat in Additional notes below.\n\n**Your ORCID**\n[To be added by submitter]\n\n**Additional notes or concerns**\nThis term captures the CXCL12+/COL15A1+ pole of the universal fibroblast, the immune-interacting, differentiated counterpart to the PI16-high progenitor pole (requested separately as 'PI16-high adventitial fibroblast'). The two poles together constitute the universal fibroblast pair that is reproducibly recovered across human single-cell atlases of lung, skin, artery, gut, reproductive tract, pleura, and tonsil.\n\nIn the HCA reproductive atlas (Cohen et al. 2026), the COL15A1hi state comprises two clusters: Mesen_AdvFibs_PI16low (markers: C3, ABCA10, C7) and Mesen_AdvFibsIntr (markers: ACSM3, C7). Together these are distributed across the fallopian tube mucosal interstitium, the subserosa beneath the ovarian surface epithelium, and adventitial positions around vasculature in the ovary, fallopian tube, and myometrium — a broader anatomical footprint than the PI16hi state (99% fallopian tube subserosa).\n\nThis cell is distinguished from its PI16-high sibling by: absence of high PI16/DPP4/CD34; presence of COL15A1/C7/CXCL12; immune-niche colocalisation; differentiated (rather than quiescent progenitor) state. It is distinguished from mural cells by absence of CSPG4/NG2, MCAM/CD146, RGS5, and ACTA2.\n\n**IMPORTANT CAVEAT FOR CL CURATORS — adventitial parentage requires review:**\nZeltz et al. (2022; DOI:10.1007/s12079-022-00673-3) report that COL15A1+ universal fibroblasts (Col15a1+ in mice) sit deeper in parenchymal tissues, not in perivascular niches — the opposite distribution from PI16+ fibroblasts. This means the COL15A1+ pole is not reliably adventitial, and placing this term under CL:4052030 (adventitial fibroblast, defined as 'a fibroblast of the adventitia of a blood vessel') may not be appropriate. The CXCL12+ immune-niche identity is adventitial in the reproductive atlas (Levy-Lambert et al. 2025), but the COL15A1 marker axis extends beyond the adventitia. Curators should decide whether: (a) the parent remains CL:4052030 with a qualifying note; (b) a broader parent (fibroblast, CL:0000057) is more appropriate; or (c) the term should carry two anatomical location axioms. This tension is stated explicitly and the term does not overclaim adventitial restriction.\n\nProposed logical axioms:\n- subClassOf 'part of' some 'tunica adventitia of blood vessel' (UBERON:0005734) — subject to curator review of COL15A1+ anatomical scope (see caveat above)\n- subClassOf 'capable of' some 'extracellular matrix organization' (GO:0030198) — COL15A1/collagen XV expression and basement-membrane secretion\n\nThe immune-niche role (CXCL12-mediated lymphocyte attraction, colocalisation with macrophages) is described in the definition text. A 'capable of' axiom for chemokine production or lymphocyte chemotaxis would be appropriate but is deferred to curator verification of the relevant GO CURIE.\n\nKey references:\n- Cohen et al. (2026) — DOI:10.64898/2026.06.10.731198 — atlas source; COL15A1hi cluster markers, distribution, immune colocalisation\n- Zeltz et al. (2022) — DOI:10.1007/s12079-022-00673-3 — two universal fibroblast archetypes; COL15A1+ parenchymal location (basis for adventitial caveat)\n- Yang et al. (2026) — DOI:10.1172/jci.insight.202529 — COL15A1+ as second universal fibroblast subtype; mural-marker exclusion criteria\n- Obacz et al. (2022) — DOI:10.1183/13993003.00143-2023 — PI16-/COL15A1+ cells as basement-membrane-secreting universal fibroblasts\n- Levy-Lambert et al. (2025) — deepsearch source — CXCL12+ stromal niche fibroblasts as immune-interacting pole of universal fibroblast continuum\n- Barron et al. (2018) — DOI:10.4049/jimmunol.1801209 — perivascular adventitial fibroblast immune-niche specialisation in human dermis\n\n---\n*Draft generated by atlas-chat from: projects/HCA_reproductive_atlas_v1/traversal_output/adventitial_fibroblast_PI16hi/ (companion to T1 cl_term_request_T1_PI16hi.json)*"
+}

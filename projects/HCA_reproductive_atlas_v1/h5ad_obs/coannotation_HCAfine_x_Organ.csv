@@ -1,0 +1,645 @@
+celltype_HCA_fine,Organ,n_cells
+Endo_artery,Uterus,4192
+Endo_artery,Ovary,4034
+Endo_artery,Fallopian Tube,1703
+Endo_artery,Reproductive tract,1015
+Endo_artery,Vagina,236
+Endo_artery,Mesonephros,51
+Endo_artery,Cervix,36
+Endo_cap,Ovary,9829
+Endo_cap,Uterus,6538
+Endo_cap,Fallopian Tube,2340
+Endo_cap,Reproductive tract,2038
+Endo_cap,Cervix,179
+Endo_cap,Vagina,146
+Endo_cap,Mesonephros,129
+Endo_cap_APCDD1,Uterus,4490
+Endo_cap_APCDD1,Ovary,199
+Endo_cap_APCDD1,Fallopian Tube,2
+Endo_cap_APCDD1+,Reproductive tract,2174
+Endo_cap_APCDD1+,Ovary,393
+Endo_cap_cycl,Uterus,3009
+Endo_cap_cycl,Ovary,1435
+Endo_cap_cycl,Reproductive tract,570
+Endo_cap_cycl,Mesonephros,36
+Endo_cap_cycl,Cervix,18
+Endo_cap_cycl,Fallopian Tube,7
+Endo_cap_cycl,Vagina,6
+Endo_cap_kidney,Ovary,362
+Endo_cap_kidney,Reproductive tract,184
+Endo_cap_kidney,Mesonephros,2
+Endo_cap_tip,Ovary,1782
+Endo_cap_tip,Uterus,1436
+Endo_cap_tip,Reproductive tract,359
+Endo_cap_tip,Mesonephros,15
+Endo_cap_tip,Fallopian Tube,10
+Endo_cap_tip,Vagina,9
+Endo_cap_tip,Cervix,3
+Endo_lymp,Fallopian Tube,6333
+Endo_lymp,Uterus,2031
+Endo_lymp,Ovary,1301
+Endo_lymp,Reproductive tract,528
+Endo_lymp,Vagina,180
+Endo_lymp,Cervix,2
+Endo_ven_apcv,Uterus,2062
+Endo_ven_apcv,Fallopian Tube,1925
+Endo_ven_apcv,Ovary,784
+Endo_ven_apcv,Vagina,80
+Endo_ven_hev,Uterus,10725
+Endo_ven_hev,Ovary,642
+Endo_ven_hev,Cervix,56
+Endo_ven_hev,Fallopian Tube,47
+Endo_ven_hev,Vagina,25
+Endo_ven_pcv,Uterus,7870
+Endo_ven_pcv,Fallopian Tube,2373
+Endo_ven_pcv,Ovary,1612
+Endo_ven_pcv,Reproductive tract,1397
+Endo_ven_pcv,Vagina,461
+Endo_ven_pcv,Mesonephros,170
+Endo_ven_pcv,Cervix,21
+Endo_ven_tpcv,Uterus,8476
+Endo_ven_tpcv,Fallopian Tube,6082
+Endo_ven_tpcv,Vagina,1731
+Endo_ven_tpcv,Ovary,586
+Endo_ven_tpcv,Cervix,17
+Epi_CervixMucinous,Cervix,1156
+Epi_CervixMucinous_Secretory,Cervix,281
+Epi_CervixMucinous_Secretory,Vagina,6
+Epi_CervixSquamous,Cervix,1082
+Epi_CervixSquamous,Uterus,40
+Epi_CervixSquamous,Vagina,16
+Epi_CervixSquamous_Cyc,Cervix,388
+Epi_CervixSquamous_Cyc,Vagina,21
+Epi_EctocervixVaginaSquamous,Cervix,543
+Epi_EctocervixVaginaSquamous,Vagina,103
+Epi_EndoCil_Cyc,Uterus,1975
+Epi_EndoCil_Diff,Uterus,8903
+Epi_EndoCil_eProf,Uterus,1014
+Epi_EndoGlandBas,Uterus,748
+Epi_EndoGlandBas_WIF1,Uterus,1694
+Epi_EndoGlandFun_Menstr,Uterus,4248
+Epi_EndoGlandFun_Prof,Uterus,23099
+Epi_EndoGlandFun_Prof_Cyc,Uterus,12815
+Epi_EndoGlandFun_emSec,Uterus,18366
+Epi_EndoGlandFun_lProf,Uterus,11900
+Epi_EndoGlandFun_lSec,Uterus,1467
+Epi_EndoGlandFun_mSec,Uterus,25233
+Epi_EndoGlandLum_Prof,Uterus,9672
+Epi_EndoGlandLum_eSec,Uterus,24
+Epi_EndoGlandLum_mSec,Uterus,12046
+Epi_EndoGland_nEMC,Uterus,18196
+Epi_EndoMucinous,Uterus,2110
+Epi_FallopianCil_Cyc,Fallopian Tube,547
+Epi_FallopianCil_Diff,Fallopian Tube,12869
+Epi_FallopianCil_Early,Fallopian Tube,460
+Epi_FallopianCil_Fetal,Ovary,391
+Epi_FallopianCil_Fetal,Reproductive tract,125
+Epi_FallopianSec_Cyc,Fallopian Tube,560
+Epi_FallopianSec_Fetal,Reproductive tract,6614
+Epi_FallopianSec_Fetal,Ovary,5680
+Epi_FallopianSec_Fetal,Mesonephros,16
+Epi_FallopianSec_OVGP1hi_EstrInd,Fallopian Tube,17601
+Epi_FallopianSec_OVGP1lo,Fallopian Tube,13587
+Epi_GenitalSurf_Fetal,Reproductive tract,1482
+Epi_MesonephricTub_Fetal,Reproductive tract,4306
+Epi_MesonephricTub_Fetal,Ovary,2101
+Epi_MesonephricTub_Fetal,Mesonephros,952
+Epi_Mullerian_Undiff,Reproductive tract,1640
+Epi_Mullerian_Undiff,Ovary,1468
+Epi_Mullerian_Undiff,Mesonephros,497
+Epi_OvarianInclCil,Ovary,20
+Epi_OvarianInclSec,Ovary,202
+Epi_ParatubalIncl_squamous,Fallopian Tube,922
+Epi_PrepuceSquamous_Fetal,Reproductive tract,2097
+Epi_UGS_Undiff,Reproductive tract,3298
+Epi_UGS_Undiff,Ovary,4
+Epi_UrethralSquamous_Fetal,Reproductive tract,1625
+Epi_UrethralSquamous_Fetal,Mesonephros,21
+Epi_UrethralSquamous_Fetal,Ovary,3
+Epi_Uterocervical_Fetal,Reproductive tract,7607
+Epi_Uterocervical_Fetal,Ovary,33
+Epi_Vagina_Lower_Fetal,Reproductive tract,6045
+Epi_Vagina_Lower_Fetal,Ovary,2
+Epi_Vagina_Upper_Fetal,Reproductive tract,979
+Epi_Vagina_Upper_Fetal,Ovary,1
+Epi_reteOvarii_Fetal_Undiff,Ovary,5701
+Epi_reteOvarii_Fetal_Undiff,Reproductive tract,63
+Epi_reteOvarii_Fetal_Undiff,Mesonephros,32
+Germcell_GGCs,Ovary,1859
+Germcell_GGCs,Reproductive tract,2
+Germcell_Oogonia_meiotic,Ovary,1617
+Germcell_Oogonia_meiotic,Reproductive tract,5
+Germcell_Oogonia_premeiotic,Ovary,3130
+Germcell_Oogonia_premeiotic,Reproductive tract,12
+Germcell_PGC_Cyc,Ovary,2587
+Germcell_PGC_Cyc,Reproductive tract,5
+Germcell_PGCs,Ovary,6855
+Germcell_PGCs,Reproductive tract,7
+Germcell_PrimaryOocyte_ZP4neg,Ovary,759
+Germcell_PrimaryOocyte_ZP4neg,Reproductive tract,1
+Germcell_PrimaryOocyte_ZP4pos,Ovary,391
+Gonadal_SomaticPrec,Ovary,8431
+Gonadal_SomaticPrec,Reproductive tract,6
+Gonadal_SomaticPrec,Mesonephros,3
+Gonadal_SupportingUndiff,Ovary,16758
+Gonadal_SupportingUndiff,Reproductive tract,10
+Gonadal_SupportingUndiff,Mesonephros,1
+Gonadal_preGranulosa-CEderived,Ovary,23063
+Gonadal_preGranulosa-CEderived,Reproductive tract,13
+Gonadal_preGranulosa-OSEderived_early,Ovary,6655
+Gonadal_preGranulosa-OSEderived_early,Reproductive tract,3
+Gonadal_preGranulosa-OSEderived_early,Mesonephros,1
+Gonadal_preGranulosa-OSEderived_late,Ovary,50611
+Gonadal_preGranulosa-OSEderived_late,Reproductive tract,22
+Granulosa_AMHneg_Atretic,Ovary,2960
+Granulosa_AMHneg_Squamous,Ovary,5644
+Granulosa_AMHpos_Atretic,Ovary,5440
+Granulosa_AMHpos_Cyc,Ovary,8927
+Granulosa_AMHpos_Steroidogenic,Ovary,15814
+Granulosa_AMHpos_nonSteroidogenic,Ovary,694
+Granulosa_AMHpos_nonSteroidogenic_early,Ovary,1267
+Granulosa_sq_Fetal,Ovary,3928
+Immune_ASDC,Uterus,49
+Immune_ASDC,Fallopian Tube,12
+Immune_ASDC,Ovary,4
+Immune_ASDC,Cervix,2
+Immune_ASDC,Vagina,2
+Immune_BasoEosino,Uterus,20
+Immune_BasoEosino,Fallopian Tube,11
+Immune_BasoEosino,Ovary,7
+Immune_BasoEosino,Cervix,2
+Immune_CD4_NaiveT,Uterus,5251
+Immune_CD4_NaiveT,Fallopian Tube,539
+Immune_CD4_NaiveT,Ovary,132
+Immune_CD4_NaiveT,Vagina,132
+Immune_CD4_NaiveT,Cervix,89
+Immune_CD4_NaiveT,Reproductive tract,23
+Immune_CD4_NaiveT,Mesonephros,3
+Immune_CD4_T_Unpolarised,Uterus,8752
+Immune_CD4_T_Unpolarised,Fallopian Tube,2487
+Immune_CD4_T_Unpolarised,Cervix,869
+Immune_CD4_T_Unpolarised,Vagina,646
+Immune_CD4_T_Unpolarised,Ovary,418
+Immune_CD4_T_Unpolarised,Reproductive tract,5
+Immune_CD4_Th17,Fallopian Tube,4471
+Immune_CD4_Th17,Uterus,1749
+Immune_CD4_Th17,Cervix,261
+Immune_CD4_Th17,Ovary,209
+Immune_CD4_Th17,Vagina,112
+Immune_CD4_Th17_SCMlike,Uterus,4277
+Immune_CD4_Th17_SCMlike,Fallopian Tube,660
+Immune_CD4_Th17_SCMlike,Cervix,74
+Immune_CD4_Th17_SCMlike,Ovary,68
+Immune_CD4_Th17_SCMlike,Vagina,39
+Immune_CD4_Th17_SCMlike,Reproductive tract,12
+Immune_CD4_Treg,Uterus,2709
+Immune_CD4_Treg,Cervix,364
+Immune_CD4_Treg,Fallopian Tube,306
+Immune_CD4_Treg,Vagina,268
+Immune_CD4_Treg,Ovary,46
+Immune_CD4_Treg,Reproductive tract,2
+Immune_CD4_Treg_Cyc,Uterus,100
+Immune_CD4_Treg_Cyc,Cervix,6
+Immune_CD4_Treg_Cyc,Fallopian Tube,5
+Immune_CD4_Treg_Cyc,Ovary,2
+Immune_CD4_Treg_Cyc,Vagina,1
+Immune_CD8_NaiveT,Uterus,2310
+Immune_CD8_NaiveT,Fallopian Tube,143
+Immune_CD8_NaiveT,Ovary,49
+Immune_CD8_NaiveT,Reproductive tract,19
+Immune_CD8_NaiveT,Cervix,17
+Immune_CD8_NaiveT,Vagina,12
+Immune_CD8_NaiveT,Mesonephros,1
+Immune_CD8_T_EM,Uterus,2969
+Immune_CD8_T_EM,Fallopian Tube,674
+Immune_CD8_T_EM,Vagina,208
+Immune_CD8_T_EM,Ovary,140
+Immune_CD8_T_EM,Cervix,30
+Immune_CD8_T_EM,Reproductive tract,1
+Immune_CD8_T_RM,Fallopian Tube,10084
+Immune_CD8_T_RM,Uterus,4033
+Immune_CD8_T_RM,Cervix,685
+Immune_CD8_T_RM,Ovary,216
+Immune_CD8_T_RM,Vagina,112
+Immune_CD8_T_RM,Reproductive tract,1
+Immune_CD8_T_RM_GZMKhi,Uterus,17549
+Immune_CD8_T_RM_GZMKhi,Fallopian Tube,5437
+Immune_CD8_T_RM_GZMKhi,Cervix,1157
+Immune_CD8_T_RM_GZMKhi,Vagina,889
+Immune_CD8_T_RM_GZMKhi,Ovary,461
+Immune_CD8_T_RM_GZMKhi,Reproductive tract,9
+Immune_EarlyMidErythroid,Ovary,41
+Immune_EarlyMidErythroid,Reproductive tract,14
+Immune_HPC,Ovary,169
+Immune_HPC,Reproductive tract,38
+Immune_HPC,Fallopian Tube,2
+Immune_HPC,Uterus,2
+Immune_ILC3_NCRhi,Uterus,1962
+Immune_ILC3_NCRhi,Fallopian Tube,303
+Immune_ILC3_NCRhi,Ovary,131
+Immune_ILC3_NCRhi,Reproductive tract,58
+Immune_ILC3_NCRhi,Cervix,37
+Immune_ILC3_NCRhi,Vagina,22
+Immune_ILC3_NCRhi,Mesonephros,4
+Immune_ILC3_NCRlo,Uterus,222
+Immune_ILC3_NCRlo,Fallopian Tube,90
+Immune_ILC3_NCRlo,Cervix,4
+Immune_ILC3_NCRlo,Reproductive tract,3
+Immune_ILC3_NCRlo,Ovary,2
+Immune_ImmatureB,Ovary,304
+Immune_ImmatureB,Reproductive tract,60
+Immune_ImmatureB,Uterus,19
+Immune_ImmatureB,Cervix,2
+Immune_ImmatureB,Fallopian Tube,1
+Immune_ImmatureB,Mesonephros,1
+Immune_LargePreB,Ovary,253
+Immune_LargePreB,Reproductive tract,44
+Immune_LargePreB,Fallopian Tube,5
+Immune_LargePreB,Vagina,2
+Immune_LargePreB,Uterus,1
+Immune_LateErythroid,Ovary,50
+Immune_LateErythroid,Reproductive tract,3
+Immune_LateErythroid,Mesonephros,2
+Immune_LateErythroid,Uterus,2
+Immune_MAIT,Fallopian Tube,2276
+Immune_MAIT,Uterus,1155
+Immune_MAIT,Cervix,124
+Immune_MAIT,Vagina,86
+Immune_MAIT,Ovary,82
+Immune_MAIT,Reproductive tract,6
+Immune_MAIT,Mesonephros,4
+Immune_MEMP,Ovary,203
+Immune_MEMP,Uterus,24
+Immune_MEMP,Reproductive tract,16
+Immune_MEMP,Fallopian Tube,6
+Immune_MEMP,Mesonephros,1
+Immune_MO_Classical,Uterus,6339
+Immune_MO_Classical,Fallopian Tube,4748
+Immune_MO_Classical,Ovary,1771
+Immune_MO_Classical,Vagina,414
+Immune_MO_Classical,Cervix,263
+Immune_MO_Classical,Reproductive tract,217
+Immune_MO_Classical,Mesonephros,7
+Immune_MO_NonClassical,Uterus,1236
+Immune_MO_NonClassical,Fallopian Tube,707
+Immune_MO_NonClassical,Ovary,148
+Immune_MO_NonClassical,Vagina,26
+Immune_MO_NonClassical,Reproductive tract,4
+Immune_MO_NonClassical,Cervix,1
+Immune_Mac_Cyc,Uterus,1178
+Immune_Mac_Cyc,Ovary,857
+Immune_Mac_Cyc,Reproductive tract,262
+Immune_Mac_Cyc,Fallopian Tube,195
+Immune_Mac_Cyc,Cervix,62
+Immune_Mac_Cyc,Mesonephros,3
+Immune_Mac_Cyc,Vagina,3
+Immune_Mac_LYVE1hi,Fallopian Tube,5505
+Immune_Mac_LYVE1hi,Uterus,5392
+Immune_Mac_LYVE1hi,Ovary,4948
+Immune_Mac_LYVE1hi,Reproductive tract,619
+Immune_Mac_LYVE1hi,Vagina,219
+Immune_Mac_LYVE1hi,Cervix,69
+Immune_Mac_LYVE1hi,Mesonephros,31
+Immune_Mac_Transitional,Uterus,921
+Immune_Mac_Transitional,Ovary,685
+Immune_Mac_Transitional,Fallopian Tube,116
+Immune_Mac_Transitional,Cervix,29
+Immune_Mac_Transitional,Reproductive tract,24
+Immune_Mac_Transitional,Vagina,12
+Immune_Mast,Fallopian Tube,2377
+Immune_Mast,Uterus,2140
+Immune_Mast,Cervix,462
+Immune_Mast,Vagina,342
+Immune_Mast,Ovary,94
+Immune_Mast,Reproductive tract,34
+Immune_MegaPlat,Ovary,109
+Immune_MegaPlat,Reproductive tract,63
+Immune_MegaPlat,Mesonephros,4
+Immune_MegaPlat,Uterus,1
+Immune_MemoryB,Uterus,3106
+Immune_MemoryB,Fallopian Tube,674
+Immune_MemoryB,Vagina,597
+Immune_MemoryB,Cervix,122
+Immune_MemoryB,Ovary,36
+Immune_MemoryB,Reproductive tract,5
+Immune_MemoryB,Mesonephros,2
+Immune_NKT_γδT_Vδ1,Fallopian Tube,1322
+Immune_NKT_γδT_Vδ1,Uterus,1274
+Immune_NKT_γδT_Vδ1,Ovary,124
+Immune_NKT_γδT_Vδ1,Cervix,81
+Immune_NKT_γδT_Vδ1,Vagina,33
+Immune_NKT_γδT_Vδ1,Reproductive tract,2
+Immune_NK_CD16hi,Uterus,3519
+Immune_NK_CD16hi,Fallopian Tube,1084
+Immune_NK_CD16hi,Ovary,330
+Immune_NK_CD16hi,Vagina,155
+Immune_NK_CD16hi,Reproductive tract,50
+Immune_NK_CD16hi,Cervix,37
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,Uterus,353
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,Fallopian Tube,106
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,Cervix,8
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,Vagina,8
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,Ovary,5
+Immune_NK_Cyc,Uterus,3260
+Immune_NK_Cyc,Ovary,81
+Immune_NK_Cyc,Fallopian Tube,68
+Immune_NK_Cyc,Cervix,67
+Immune_NK_Cyc,Reproductive tract,15
+Immune_NK_Cyc,Vagina,11
+Immune_NK_Cyc,Mesonephros,1
+Immune_NMP_Promyelocytes,Ovary,258
+Immune_NMP_Promyelocytes,Reproductive tract,21
+Immune_NMP_Promyelocytes,Fallopian Tube,3
+Immune_NMP_Promyelocytes,Uterus,3
+Immune_NMP_Promyelocytes,Cervix,1
+Immune_NaiveB,Uterus,1876
+Immune_NaiveB,Fallopian Tube,98
+Immune_NaiveB,Vagina,58
+Immune_NaiveB,Ovary,23
+Immune_NaiveB,Cervix,15
+Immune_NaiveB,Reproductive tract,6
+Immune_Neutrophils,Fallopian Tube,16
+Immune_Neutrophils,Cervix,13
+Immune_Neutrophils,Ovary,9
+Immune_Neutrophils,Uterus,7
+Immune_Plasma_κ,Fallopian Tube,1303
+Immune_Plasma_κ,Cervix,506
+Immune_Plasma_κ,Uterus,301
+Immune_Plasma_κ,Vagina,189
+Immune_Plasma_κ,Ovary,15
+Immune_Plasma_λ,Fallopian Tube,821
+Immune_Plasma_λ,Cervix,633
+Immune_Plasma_λ,Uterus,166
+Immune_Plasma_λ,Vagina,145
+Immune_Plasma_λ,Ovary,17
+Immune_ProB,Ovary,150
+Immune_ProB,Reproductive tract,12
+Immune_ProB,Uterus,3
+Immune_ProB,Fallopian Tube,2
+Immune_SmallPreB,Ovary,233
+Immune_SmallPreB,Reproductive tract,41
+Immune_SmallPreB,Fallopian Tube,4
+Immune_SmallPreB,Uterus,3
+Immune_T_Cyc,Uterus,1743
+Immune_T_Cyc,Fallopian Tube,304
+Immune_T_Cyc,Ovary,70
+Immune_T_Cyc,Cervix,49
+Immune_T_Cyc,Vagina,22
+Immune_T_Cyc,Mesonephros,11
+Immune_T_Cyc,Reproductive tract,9
+Immune_cDC1,Uterus,566
+Immune_cDC1,Fallopian Tube,309
+Immune_cDC1,Ovary,74
+Immune_cDC1,Vagina,59
+Immune_cDC1,Cervix,53
+Immune_cDC1,Reproductive tract,12
+Immune_cDC2,Fallopian Tube,1401
+Immune_cDC2,Uterus,1302
+Immune_cDC2,Ovary,546
+Immune_cDC2,Vagina,75
+Immune_cDC2,Reproductive tract,70
+Immune_cDC2,Cervix,60
+Immune_cDC2,Mesonephros,3
+Immune_cDC2_CD207hi,Uterus,811
+Immune_cDC2_CD207hi,Fallopian Tube,506
+Immune_cDC2_CD207hi,Cervix,150
+Immune_cDC2_CD207hi,Ovary,37
+Immune_cDC2_CD207hi,Vagina,17
+Immune_cDC2_CD207hi,Reproductive tract,11
+Immune_cDC2_CD207hi,Mesonephros,1
+Immune_mregDC,Uterus,1442
+Immune_mregDC,Fallopian Tube,68
+Immune_mregDC,Vagina,36
+Immune_mregDC,Ovary,22
+Immune_mregDC,Cervix,9
+Immune_oLAM,Ovary,247
+Immune_oLAM,Uterus,45
+Immune_oLAM,Fallopian Tube,15
+Immune_oLAM,Vagina,9
+Immune_oLAM,Cervix,3
+Immune_oLAM,Reproductive tract,2
+Immune_pDC,Uterus,852
+Immune_pDC,Fallopian Tube,227
+Immune_pDC,Ovary,58
+Immune_pDC,Vagina,48
+Immune_pDC,Cervix,11
+Immune_pDC,Reproductive tract,7
+Immune_tolDC,Uterus,36
+Immune_tolDC,Fallopian Tube,7
+Immune_tolDC,Cervix,4
+Immune_uMac_Inf,Uterus,22589
+Immune_uMac_Inf,Fallopian Tube,189
+Immune_uMac_Inf,Ovary,138
+Immune_uMac_Inf,Vagina,116
+Immune_uMac_Inf,Reproductive tract,23
+Immune_uMac_Inf,Cervix,14
+Immune_uNK1,Uterus,3520
+Immune_uNK1,Cervix,18
+Immune_uNK1,Fallopian Tube,5
+Immune_uNK2,Uterus,11902
+Immune_uNK2,Cervix,172
+Immune_uNK2,Fallopian Tube,117
+Immune_uNK2,Vagina,26
+Immune_uNK2,Ovary,24
+Immune_uNK2,Reproductive tract,4
+Immune_uNK3,Uterus,7927
+Immune_uNK3,Fallopian Tube,1776
+Immune_uNK3,Ovary,499
+Immune_uNK3,Cervix,339
+Immune_uNK3,Vagina,72
+Immune_uNK3,Reproductive tract,71
+Immune_uNK3,Mesonephros,4
+Immune_uftLAM,Fallopian Tube,2171
+Immune_uftLAM,Uterus,371
+Immune_uftLAM,Reproductive tract,135
+Immune_uftLAM,Ovary,69
+Immune_uftLAM,Cervix,10
+Immune_uftLAM,Vagina,3
+Immune_uftLAM,Mesonephros,1
+Immune_γδT_Vγ9Vδ2,Ovary,720
+Immune_γδT_Vγ9Vδ2,Uterus,36
+Immune_γδT_Vγ9Vδ2,Fallopian Tube,14
+Immune_γδT_Vγ9Vδ2,Reproductive tract,8
+Immune_γδT_Vγ9Vδ2,Cervix,2
+Immune_γδT_Vγ9Vδ2,Vagina,1
+Mesen_AdvFibs,Uterus,19
+Mesen_AdvFibsIntr,Fallopian Tube,15803
+Mesen_AdvFibsIntr,Uterus,10481
+Mesen_AdvFibsIntr,Ovary,7333
+Mesen_AdvFibsIntr,Vagina,178
+Mesen_AdvFibs_PI16hi,Fallopian Tube,3009
+Mesen_AdvFibs_PI16hi,Uterus,11
+Mesen_AdvFibs_PI16hi,Vagina,9
+Mesen_AdvFibs_PI16hi,Ovary,3
+Mesen_AdvFibs_PI16low,Fallopian Tube,15984
+Mesen_AdvFibs_PI16low,Vagina,1794
+Mesen_AdvFibs_PI16low,Ovary,411
+Mesen_AdvFibs_PI16low,Uterus,171
+Mesen_CervixFib_Fetal,Reproductive tract,11889
+Mesen_CervixFib_Fetal,Ovary,27
+Mesen_CervixFibs,Cervix,426
+Mesen_CervixFibs,Vagina,26
+Mesen_CervixVaginaSMCs_Fetal,Reproductive tract,11552
+Mesen_CervixVaginaSMCs_Fetal,Ovary,17
+Mesen_CorpusCavernosumFib_Fetal,Reproductive tract,9472
+Mesen_CorpusSpongiosumFib_Fetal,Reproductive tract,10168
+Mesen_CorpusSpongiosumFib_Fetal,Ovary,1
+Mesen_EndoGlandBas,Uterus,535
+Mesen_EndoStromalFib_Menopause,Uterus,2855
+Mesen_EndoStromalFib_MenstrualEutopic,Uterus,13034
+Mesen_EndoStromalFib_MenstrualFluid,Uterus,27092
+Mesen_EndoStromalFib_Prolif,Uterus,164476
+Mesen_EndoStromalFib_Prolif_Cyc,Uterus,32491
+Mesen_EndoStromalFib_eSec,Uterus,17251
+Mesen_EndoStromalFib_lSec,Uterus,36137
+Mesen_EndoStromalFib_mSec,Uterus,103861
+Mesen_EndoStromalFib_nEMC,Uterus,48007
+Mesen_EndoStromalFib_nEMC_Cyc,Uterus,12895
+Mesen_EndoStromalFib_nEMC_Sec,Uterus,50283
+Mesen_EpoophronFib_Fetal,Ovary,7160
+Mesen_EpoophronFib_Fetal,Reproductive tract,6714
+Mesen_EpoophronFib_Fetal,Mesonephros,3
+Mesen_FallopianFib_Fetal,Reproductive tract,30164
+Mesen_FallopianFib_Fetal,Ovary,10707
+Mesen_FallopianFib_Fetal,Mesonephros,221
+Mesen_FallopianFibs,Fallopian Tube,64649
+Mesen_FallopianLig_Fetal,Reproductive tract,12900
+Mesen_FallopianLig_Fetal,Ovary,5350
+Mesen_FallopianLig_Fetal,Mesonephros,15
+Mesen_FallopianSMCs_Fetal,Reproductive tract,5351
+Mesen_FallopianSMCs_Fetal,Ovary,3062
+Mesen_GlansFib_Fetal,Reproductive tract,5416
+Mesen_GonadalFibs_Undiff,Ovary,22648
+Mesen_GonadalFibs_Undiff,Reproductive tract,3219
+Mesen_GonadalFibs_Undiff,Mesonephros,188
+Mesen_LabiaFib_Fetal,Reproductive tract,1794
+Mesen_LabioScrotalSwelling_Fetal,Reproductive tract,6772
+Mesen_LabioScrotalSwelling_Fetal,Mesonephros,31
+Mesen_LabioScrotalSwelling_Fetal,Ovary,27
+Mesen_MesonephricFibs_Fetal,Reproductive tract,15472
+Mesen_MesonephricFibs_Fetal,Ovary,11387
+Mesen_MesonephricFibs_Fetal,Mesonephros,1662
+Mesen_MullerianFib,Mesonephros,936
+Mesen_MullerianFib,Ovary,870
+Mesen_MullerianFib,Reproductive tract,665
+Mesen_OvarianFibs_AdvLike,Ovary,507
+Mesen_OvarianFibs_Fetal,Ovary,31981
+Mesen_OvarianFibs_Fetal,Reproductive tract,137
+Mesen_OvarianFibs_Fetal,Mesonephros,15
+Mesen_OvarianFibs_InncorMedulla,Ovary,125985
+Mesen_OvarianFibs_Medulla_SMCsLike,Ovary,13705
+Mesen_OvarianFibs_Outcor,Ovary,21434
+Mesen_OvarianFibs_Perifol,Ovary,44411
+Mesen_OvarianInclFibs,Ovary,96
+Mesen_PV_Fetal,Reproductive tract,16405
+Mesen_PV_Fetal,Ovary,9825
+Mesen_PV_Fetal,Mesonephros,2667
+Mesen_Pericyte,Uterus,19980
+Mesen_Pericyte,Ovary,11656
+Mesen_Pericyte,Vagina,5998
+Mesen_Pericyte,Fallopian Tube,1143
+Mesen_Pericyte,Cervix,127
+Mesen_Pericyte_Cyc,Uterus,3317
+Mesen_Pericyte_Cyc,Ovary,1162
+Mesen_Pericyte_Cyc,Fallopian Tube,18
+Mesen_Pericyte_Cyc,Vagina,16
+Mesen_Pericyte_Cyc,Cervix,9
+Mesen_Pericyte_EndoSpiralArt,Uterus,5977
+Mesen_Pericyte_EndoSpiralArt,Ovary,608
+Mesen_Pericyte_EndoSpiralArt,Vagina,18
+Mesen_Pericyte_EndoSpiralArt,Cervix,7
+Mesen_Pericyte_EndoSpiralArt,Fallopian Tube,7
+Mesen_Pericyte_EndoStromalLike,Uterus,10229
+Mesen_Pericyte_EndoStromalLike_MenstrualFluid,Uterus,1272
+Mesen_Pericyte_SMCsIntr,Uterus,5610
+Mesen_Pericyte_SMCsIntr,Fallopian Tube,1584
+Mesen_Pericyte_SMCsIntr,Vagina,644
+Mesen_Pericyte_SMCsIntr,Ovary,326
+Mesen_Pericyte_SMCsIntr,Cervix,3
+Mesen_Prepuce_Fetal,Reproductive tract,2243
+Mesen_SMCs,Uterus,24767
+Mesen_SMCs,Fallopian Tube,15985
+Mesen_SMCs,Ovary,521
+Mesen_SMCs,Vagina,215
+Mesen_Theca_Atretic,Ovary,3239
+Mesen_Theca_Externa,Ovary,30089
+Mesen_Theca_Interna_Cyc,Ovary,9366
+Mesen_Theca_Interna_Perifol,Ovary,5148
+Mesen_Theca_Interna_Steroid,Ovary,8428
+Mesen_UGSFib_Lower,Reproductive tract,6223
+Mesen_UGSFib_Lower,Ovary,53
+Mesen_UGSFib_Lower,Mesonephros,1
+Mesen_UGSFib_Upper,Reproductive tract,6070
+Mesen_UGSFib_Upper,Ovary,5094
+Mesen_UGSFib_Upper,Mesonephros,238
+Mesen_UGSLig,Reproductive tract,2646
+Mesen_UGSLig,Ovary,15
+Mesen_UGSSMCs,Reproductive tract,382
+Mesen_UGSSMCs,Ovary,1
+Mesen_UterotubalJunctionFibs,Fallopian Tube,150
+Mesen_UterusFibs_Fetal,Reproductive tract,28572
+Mesen_UterusFibs_Fetal,Ovary,829
+Mesen_UterusFibs_Fetal,Mesonephros,61
+Mesen_UterusLig_Fetal,Reproductive tract,11695
+Mesen_UterusLig_Fetal,Ovary,641
+Mesen_UterusLig_Fetal,Mesonephros,28
+Mesen_UterusSMCs_Fetal,Reproductive tract,7529
+Mesen_UterusSMCs_Fetal,Ovary,21
+Mesen_VaginaFib_Lower_Fetal,Ovary,619
+Mesen_VaginaFib_Lower_Fetal,Reproductive tract,26
+Mesen_VaginaFibs,Vagina,1456
+Mesen_VaginaFibs,Cervix,7
+Mesen_VaginaFibs_Upper_Fetal,Reproductive tract,7747
+Mesen_VaginaFibs_Upper_Fetal,Ovary,178
+Mesen_VaginaSMCs_Lower_Fetal,Reproductive tract,1238
+Mesen_VaginaSMCs_Lower_Fetal,Mesonephros,73
+Mesen_vSMCs_largeArt,Fallopian Tube,11562
+Mesen_vSMCs_largeArt,Uterus,11559
+Mesen_vSMCs_largeArt,Ovary,8352
+Mesen_vSMCs_largeArt,Vagina,2205
+Mesen_vSMCs_medArt,Ovary,32424
+Mesen_vSMCs_medArt,Uterus,15822
+Mesen_vSMCs_medArt,Fallopian Tube,2149
+Mesen_vSMCs_medArt,Vagina,745
+Mesen_vSMCs_medArt,Cervix,1
+Meso_GonadalCoelEpi,Ovary,2640
+Meso_GonadalCoelEpi,Reproductive tract,168
+Meso_GonadalCoelEpi,Mesonephros,32
+Meso_OSE,Ovary,841
+Meso_OSE_Fetal,Ovary,23036
+Meso_OSE_Fetal,Reproductive tract,64
+Meso_OSE_Fetal,Mesonephros,15
+Meso_ParamesoCoelEpi,Reproductive tract,4316
+Meso_ParamesoCoelEpi,Ovary,3687
+Meso_ParamesoCoelEpi,Mesonephros,487
+Meso_Peritoneal_Fetal,Ovary,2995
+Meso_Peritoneal_Fetal,Reproductive tract,1573
+Meso_Peritoneal_Fetal,Mesonephros,152
+Meso_serosa,Fallopian Tube,345
+Meso_serosa,Uterus,108
+Neural_Melanocyte_Fetal,Reproductive tract,88
+Neural_Schwann,Ovary,560
+Neural_Schwann,Uterus,117
+Neural_Schwann,Fallopian Tube,73
+Neural_Schwann,Vagina,31
+Neural_Schwann_Cyc,Reproductive tract,1927
+Neural_Schwann_Cyc,Ovary,457
+Neural_Schwann_Cyc,Mesonephros,17
+Neural_Schwann_Fetal,Reproductive tract,4967
+Neural_Schwann_Fetal,Ovary,490
+Neural_Schwann_Fetal,Mesonephros,344
+Neural_Schwann_Immature,Reproductive tract,35
+Neural_Schwann_Precursor,Reproductive tract,846
+Neural_Schwann_Precursor,Ovary,1
+Neural_Schwann_myelinating,Ovary,12
+Neural_Schwann_myelinating,Fallopian Tube,5
+Neural_Schwann_myelinating,Uterus,4
+Neural_Schwann_myelinating,Vagina,1
+Neural_SympatheticNeurons_Immature,Reproductive tract,3603
+Neural_SympatheticNeurons_Immature,Ovary,681
+Neural_SympatheticNeurons_Immature,Mesonephros,185
+Neural_SympatheticNeurons_Immature_Cyc,Reproductive tract,336
+Neural_SympatheticNeurons_Immature_Cyc,Ovary,56
+Neural_SympatheticNeurons_Immature_Cyc,Mesonephros,2
+Neural_SympatheticNeurons_Noradrenergic,Reproductive tract,236
+Neural_SympatheticNeurons_Noradrenergic,Ovary,10
