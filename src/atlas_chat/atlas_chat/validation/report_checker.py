@@ -10,6 +10,11 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from typing import Any
+
+from jsonschema import Draft202012Validator  # type: ignore[import-untyped]
+
+from ..schemas import load_schema
 
 
 def check_quotes(
@@ -165,6 +170,143 @@ def check_references(
     return errors
 
 
+# The JSON schemas are the single source of truth for structure, enums and
+# required fields (schema-first commandment). ``SUPPLEMENT_ROLES`` is the one
+# rule a *standalone* item schema cannot express — it couples retrieval_method
+# to source_paper.role across the item — so it is asserted here, not duplicated.
+SUPPLEMENT_ROLES = {"atlas", "subatlas"}
+
+
+def _schema_errors(instance: object, schema_name: str, label: str) -> list[str]:
+    """Validate *instance* against a bundled JSON schema; return path-tagged errors."""
+    validator = Draft202012Validator(load_schema(schema_name))
+    errors: list[str] = []
+    for err in sorted(validator.iter_errors(instance), key=lambda e: list(e.path)):
+        path = ".".join(str(p) for p in err.absolute_path)
+        loc = f"{label}.{path}" if path else label
+        errors.append(f"{loc}: {err.message}")
+    return errors
+
+
+def _catalogue_ids(catalogue: dict[str, object]) -> tuple[set[str], set[str]]:
+    """Return (known_dois, known_corpus_ids) drawn from a paper catalogue.
+
+    DOIs are lower-cased/stripped; CorpusIds are bare numeric strings (the
+    ``CorpusId:`` prefix removed) collected from both the catalogue keys and any
+    ``corpus_id`` values inside entries.
+    """
+    known_dois: set[str] = set()
+    known_corpus_ids: set[str] = set()
+    for key, entry in catalogue.items():
+        known_corpus_ids.add(str(key).replace("CorpusId:", "").strip())
+        if isinstance(entry, dict):
+            doi = entry.get("doi", "")
+            if isinstance(doi, str) and doi:
+                known_dois.add(doi.lower().strip())
+            cid = entry.get("corpus_id", "")
+            if isinstance(cid, str) and cid:
+                known_corpus_ids.add(cid.replace("CorpusId:", "").strip())
+    return known_dois, known_corpus_ids
+
+
+def _paper_ref_resolves(
+    ref: dict[str, object],
+    known_dois: set[str],
+    known_corpus_ids: set[str],
+) -> bool:
+    """True if a source_paper/reached_from ref points at a catalogue member."""
+    doi = ref.get("doi")
+    if isinstance(doi, str) and doi.lower().strip() in known_dois:
+        return True
+    cid = ref.get("corpus_id")
+    return isinstance(cid, str) and cid.replace("CorpusId:", "").strip() in known_corpus_ids
+
+
+def check_source_tags(
+    summaries: list[dict[str, object]],
+    supp_data: dict[str, object],
+    catalogue: dict[str, object],
+) -> list[str]:
+    """Return errors for evidence items with missing/invalid source provenance.
+
+    Enforces the source-tagging contract from issue #12 on every evidence item
+    across ``all_summaries.json`` and ``supplementary_findings.json``. The work
+    splits along what a schema can express:
+
+    1. **Schema-derived** (structure, enums, required ``source_paper``/
+       ``retrieval_method``, at-least-one identifier): validated directly against
+       ``all_summaries.schema.json`` / ``supplementary_findings.schema.json`` —
+       the single source of truth, not re-declared here.
+    2. **Cross-cutting** (not expressible in a standalone item schema):
+       ``supplement`` items must resolve to an ``atlas``/``subatlas`` paper, and
+       every ``source_paper`` / ``reached_from`` identifier must appear in
+       ``paper_catalogue.json``.
+
+    Args:
+        summaries: Parsed ``all_summaries.json`` (list of evidence items).
+        supp_data: Parsed ``supplementary_findings.json`` (markers /
+            other_findings / evidence_quotes arrays); empty when the file is absent.
+        catalogue: Parsed ``paper_catalogue.json``.
+
+    Returns:
+        List of error strings.  Empty means every item is correctly tagged.
+    """
+    errors: list[str] = []
+
+    # 1. Structure / enums / presence — owned by the JSON schemas.
+    errors.extend(_schema_errors(summaries, "all_summaries.schema.json", "all_summaries"))
+    if supp_data:  # empty dict = no supplementary_findings.json to check
+        errors.extend(
+            _schema_errors(
+                supp_data, "supplementary_findings.schema.json", "supplementary_findings"
+            )
+        )
+
+    # 2. Cross-cutting rules the standalone schemas cannot express.
+    known_dois, known_corpus_ids = _catalogue_ids(catalogue)
+
+    def _check_cross(item: object, where: str) -> None:
+        if not isinstance(item, dict):
+            return
+
+        sp = item.get("source_paper")
+        if isinstance(sp, dict):
+            # Only resolve when an identifier is present; the schema already
+            # flags a source_paper with neither doi nor corpus_id.
+            if (sp.get("doi") or sp.get("corpus_id")) and not _paper_ref_resolves(
+                sp, known_dois, known_corpus_ids
+            ):
+                ident = sp.get("doi") or sp.get("corpus_id")
+                errors.append(f"{where}: source_paper {ident!r} not found in paper_catalogue.json")
+
+            is_supplement = item.get("retrieval_method") == "supplement"
+            if is_supplement and sp.get("role") not in SUPPLEMENT_ROLES:
+                errors.append(
+                    f"{where}: supplement finding must resolve to an atlas/subatlas "
+                    f"paper, got role {sp.get('role')!r}"
+                )
+
+        reached = item.get("reached_from")
+        if (
+            isinstance(reached, dict)
+            and (reached.get("doi") or reached.get("corpus_id"))
+            and not _paper_ref_resolves(reached, known_dois, known_corpus_ids)
+        ):
+            ident = reached.get("doi") or reached.get("corpus_id")
+            errors.append(f"{where}: reached_from {ident!r} not found in paper_catalogue.json")
+
+    for i, item in enumerate(summaries):
+        _check_cross(item, f"all_summaries[{i}]")
+
+    for array_name in ("markers", "other_findings", "evidence_quotes"):
+        array = supp_data.get(array_name, [])
+        if isinstance(array, list):
+            for i, item in enumerate(array):
+                _check_cross(item, f"supplementary_findings.{array_name}[{i}]")
+
+    return errors
+
+
 def validate_report(
     report_path: Path,
     traversal_dir: Path,
@@ -196,6 +338,7 @@ def validate_report(
 
     # Load any atlas snippets (supplementary findings have evidence_quotes)
     atlas_snippets: list[str] = []
+    supp_data: dict[str, Any] = {}
     supp_path = traversal_dir / "supplementary_findings.json"
     if supp_path.exists():
         supp_data = json.loads(supp_path.read_text())
@@ -213,5 +356,6 @@ def validate_report(
     errors: list[str] = []
     errors.extend(check_quotes(report_md, summaries, atlas_snippets))
     errors.extend(check_references(report_md, catalogue))
+    errors.extend(check_source_tags(summaries, supp_data, catalogue))
 
     return (len(errors) == 0, errors)
