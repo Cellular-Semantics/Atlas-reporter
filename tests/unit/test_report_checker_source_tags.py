@@ -43,7 +43,8 @@ def test_missing_source_paper_flagged() -> None:
     summaries = _summaries()
     del summaries[0]["source_paper"]
     errors = check_source_tags(summaries, _supp(), CATALOGUE)
-    assert any("missing required source_paper" in e for e in errors)
+    # Schema-derived: "'source_paper' is a required property".
+    assert any("source_paper" in e and "required" in e for e in errors)
 
 
 @pytest.mark.unit
@@ -91,7 +92,8 @@ def test_source_paper_without_identifier_flagged() -> None:
     summaries = _summaries()
     summaries[0]["source_paper"] = {"role": "atlas"}
     errors = check_source_tags(summaries, _supp(), CATALOGUE)
-    assert any("at least one of doi / corpus_id" in e for e in errors)
+    # Schema-derived: source_paper fails the anyOf(doi|corpus_id) requirement.
+    assert any("source_paper" in e for e in errors)
 
 
 @pytest.mark.unit
@@ -109,4 +111,4 @@ def test_validate_report_runs_source_tag_checks(tmp_path: Path) -> None:
 
     passed, errors = validate_report(report, traversal)
     assert not passed
-    assert any("missing required source_paper" in e for e in errors)
+    assert any("source_paper" in e and "required" in e for e in errors)

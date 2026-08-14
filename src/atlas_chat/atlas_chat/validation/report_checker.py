@@ -12,6 +12,10 @@ import re
 from pathlib import Path
 from typing import Any
 
+from jsonschema import Draft202012Validator  # type: ignore[import-untyped]
+
+from ..schemas import load_schema
+
 
 def check_quotes(
     report_md: str,
@@ -166,14 +170,22 @@ def check_references(
     return errors
 
 
-VALID_ROLES = {"atlas", "subatlas", "external"}
-VALID_RETRIEVAL_METHODS = {
-    "corpus_snippet",
-    "supplement",
-    "citation_traversal",
-    "free_search",
-}
+# The JSON schemas are the single source of truth for structure, enums and
+# required fields (schema-first commandment). ``SUPPLEMENT_ROLES`` is the one
+# rule a *standalone* item schema cannot express — it couples retrieval_method
+# to source_paper.role across the item — so it is asserted here, not duplicated.
 SUPPLEMENT_ROLES = {"atlas", "subatlas"}
+
+
+def _schema_errors(instance: object, schema_name: str, label: str) -> list[str]:
+    """Validate *instance* against a bundled JSON schema; return path-tagged errors."""
+    validator = Draft202012Validator(load_schema(schema_name))
+    errors: list[str] = []
+    for err in sorted(validator.iter_errors(instance), key=lambda e: list(e.path)):
+        path = ".".join(str(p) for p in err.absolute_path)
+        loc = f"{label}.{path}" if path else label
+        errors.append(f"{loc}: {err.message}")
+    return errors
 
 
 def _catalogue_ids(catalogue: dict[str, object]) -> tuple[set[str], set[str]]:
@@ -218,80 +230,79 @@ def check_source_tags(
     """Return errors for evidence items with missing/invalid source provenance.
 
     Enforces the source-tagging contract from issue #12 on every evidence item
-    across ``all_summaries.json`` and ``supplementary_findings.json``:
+    across ``all_summaries.json`` and ``supplementary_findings.json``. The work
+    splits along what a schema can express:
 
-    1. Each item has a ``source_paper`` object carrying a valid ``role`` and at
-       least one of ``doi`` / ``corpus_id``, plus a valid ``retrieval_method``.
-    2. ``supplement`` items resolve to an ``atlas`` / ``subatlas`` corpus member
-       (the implicit-atlas assumption is removed — the parent is now explicit).
-    3. Every ``source_paper`` (and any ``reached_from``) DOI/CorpusId appears in
+    1. **Schema-derived** (structure, enums, required ``source_paper``/
+       ``retrieval_method``, at-least-one identifier): validated directly against
+       ``all_summaries.schema.json`` / ``supplementary_findings.schema.json`` —
+       the single source of truth, not re-declared here.
+    2. **Cross-cutting** (not expressible in a standalone item schema):
+       ``supplement`` items must resolve to an ``atlas``/``subatlas`` paper, and
+       every ``source_paper`` / ``reached_from`` identifier must appear in
        ``paper_catalogue.json``.
 
     Args:
         summaries: Parsed ``all_summaries.json`` (list of evidence items).
         supp_data: Parsed ``supplementary_findings.json`` (markers /
-            other_findings / evidence_quotes arrays).
+            other_findings / evidence_quotes arrays); empty when the file is absent.
         catalogue: Parsed ``paper_catalogue.json``.
 
     Returns:
         List of error strings.  Empty means every item is correctly tagged.
     """
     errors: list[str] = []
+
+    # 1. Structure / enums / presence — owned by the JSON schemas.
+    errors.extend(_schema_errors(summaries, "all_summaries.schema.json", "all_summaries"))
+    if supp_data:  # empty dict = no supplementary_findings.json to check
+        errors.extend(
+            _schema_errors(
+                supp_data, "supplementary_findings.schema.json", "supplementary_findings"
+            )
+        )
+
+    # 2. Cross-cutting rules the standalone schemas cannot express.
     known_dois, known_corpus_ids = _catalogue_ids(catalogue)
 
-    def _check_item(item: object, where: str) -> None:
+    def _check_cross(item: object, where: str) -> None:
         if not isinstance(item, dict):
-            errors.append(f"{where}: evidence item is not an object")
             return
-
-        method = item.get("retrieval_method")
-        if method not in VALID_RETRIEVAL_METHODS:
-            errors.append(
-                f"{where}: retrieval_method {method!r} missing or not one of "
-                f"{sorted(VALID_RETRIEVAL_METHODS)}"
-            )
 
         sp = item.get("source_paper")
-        if not isinstance(sp, dict):
-            errors.append(f"{where}: missing required source_paper object")
-            return
+        if isinstance(sp, dict):
+            # Only resolve when an identifier is present; the schema already
+            # flags a source_paper with neither doi nor corpus_id.
+            if (sp.get("doi") or sp.get("corpus_id")) and not _paper_ref_resolves(
+                sp, known_dois, known_corpus_ids
+            ):
+                ident = sp.get("doi") or sp.get("corpus_id")
+                errors.append(f"{where}: source_paper {ident!r} not found in paper_catalogue.json")
 
-        role = sp.get("role")
-        if role not in VALID_ROLES:
-            errors.append(
-                f"{where}: source_paper.role {role!r} missing or not one of {sorted(VALID_ROLES)}"
-            )
-
-        if not (isinstance(sp.get("doi"), str) or isinstance(sp.get("corpus_id"), str)):
-            errors.append(f"{where}: source_paper must have at least one of doi / corpus_id")
-        elif not _paper_ref_resolves(sp, known_dois, known_corpus_ids):
-            ident = sp.get("doi") or sp.get("corpus_id")
-            errors.append(f"{where}: source_paper {ident!r} not found in paper_catalogue.json")
-
-        if method == "supplement" and role not in SUPPLEMENT_ROLES:
-            errors.append(
-                f"{where}: supplement finding must resolve to an atlas/subatlas "
-                f"paper, got role {role!r}"
-            )
+            is_supplement = item.get("retrieval_method") == "supplement"
+            if is_supplement and sp.get("role") not in SUPPLEMENT_ROLES:
+                errors.append(
+                    f"{where}: supplement finding must resolve to an atlas/subatlas "
+                    f"paper, got role {sp.get('role')!r}"
+                )
 
         reached = item.get("reached_from")
-        if isinstance(reached, dict):
-            if not (
-                isinstance(reached.get("doi"), str) or isinstance(reached.get("corpus_id"), str)
-            ):
-                errors.append(f"{where}: reached_from must have at least one of doi / corpus_id")
-            elif not _paper_ref_resolves(reached, known_dois, known_corpus_ids):
-                ident = reached.get("doi") or reached.get("corpus_id")
-                errors.append(f"{where}: reached_from {ident!r} not found in paper_catalogue.json")
+        if (
+            isinstance(reached, dict)
+            and (reached.get("doi") or reached.get("corpus_id"))
+            and not _paper_ref_resolves(reached, known_dois, known_corpus_ids)
+        ):
+            ident = reached.get("doi") or reached.get("corpus_id")
+            errors.append(f"{where}: reached_from {ident!r} not found in paper_catalogue.json")
 
     for i, item in enumerate(summaries):
-        _check_item(item, f"all_summaries[{i}]")
+        _check_cross(item, f"all_summaries[{i}]")
 
     for array_name in ("markers", "other_findings", "evidence_quotes"):
         array = supp_data.get(array_name, [])
         if isinstance(array, list):
             for i, item in enumerate(array):
-                _check_item(item, f"supplementary_findings.{array_name}[{i}]")
+                _check_cross(item, f"supplementary_findings.{array_name}[{i}]")
 
     return errors
 
