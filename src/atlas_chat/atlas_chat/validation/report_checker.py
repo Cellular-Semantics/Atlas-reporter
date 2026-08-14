@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from typing import Any
 
 
 def check_quotes(
@@ -165,6 +166,136 @@ def check_references(
     return errors
 
 
+VALID_ROLES = {"atlas", "subatlas", "external"}
+VALID_RETRIEVAL_METHODS = {
+    "corpus_snippet",
+    "supplement",
+    "citation_traversal",
+    "free_search",
+}
+SUPPLEMENT_ROLES = {"atlas", "subatlas"}
+
+
+def _catalogue_ids(catalogue: dict[str, object]) -> tuple[set[str], set[str]]:
+    """Return (known_dois, known_corpus_ids) drawn from a paper catalogue.
+
+    DOIs are lower-cased/stripped; CorpusIds are bare numeric strings (the
+    ``CorpusId:`` prefix removed) collected from both the catalogue keys and any
+    ``corpus_id`` values inside entries.
+    """
+    known_dois: set[str] = set()
+    known_corpus_ids: set[str] = set()
+    for key, entry in catalogue.items():
+        known_corpus_ids.add(str(key).replace("CorpusId:", "").strip())
+        if isinstance(entry, dict):
+            doi = entry.get("doi", "")
+            if isinstance(doi, str) and doi:
+                known_dois.add(doi.lower().strip())
+            cid = entry.get("corpus_id", "")
+            if isinstance(cid, str) and cid:
+                known_corpus_ids.add(cid.replace("CorpusId:", "").strip())
+    return known_dois, known_corpus_ids
+
+
+def _paper_ref_resolves(
+    ref: dict[str, object],
+    known_dois: set[str],
+    known_corpus_ids: set[str],
+) -> bool:
+    """True if a source_paper/reached_from ref points at a catalogue member."""
+    doi = ref.get("doi")
+    if isinstance(doi, str) and doi.lower().strip() in known_dois:
+        return True
+    cid = ref.get("corpus_id")
+    return isinstance(cid, str) and cid.replace("CorpusId:", "").strip() in known_corpus_ids
+
+
+def check_source_tags(
+    summaries: list[dict[str, object]],
+    supp_data: dict[str, object],
+    catalogue: dict[str, object],
+) -> list[str]:
+    """Return errors for evidence items with missing/invalid source provenance.
+
+    Enforces the source-tagging contract from issue #12 on every evidence item
+    across ``all_summaries.json`` and ``supplementary_findings.json``:
+
+    1. Each item has a ``source_paper`` object carrying a valid ``role`` and at
+       least one of ``doi`` / ``corpus_id``, plus a valid ``retrieval_method``.
+    2. ``supplement`` items resolve to an ``atlas`` / ``subatlas`` corpus member
+       (the implicit-atlas assumption is removed — the parent is now explicit).
+    3. Every ``source_paper`` (and any ``reached_from``) DOI/CorpusId appears in
+       ``paper_catalogue.json``.
+
+    Args:
+        summaries: Parsed ``all_summaries.json`` (list of evidence items).
+        supp_data: Parsed ``supplementary_findings.json`` (markers /
+            other_findings / evidence_quotes arrays).
+        catalogue: Parsed ``paper_catalogue.json``.
+
+    Returns:
+        List of error strings.  Empty means every item is correctly tagged.
+    """
+    errors: list[str] = []
+    known_dois, known_corpus_ids = _catalogue_ids(catalogue)
+
+    def _check_item(item: object, where: str) -> None:
+        if not isinstance(item, dict):
+            errors.append(f"{where}: evidence item is not an object")
+            return
+
+        method = item.get("retrieval_method")
+        if method not in VALID_RETRIEVAL_METHODS:
+            errors.append(
+                f"{where}: retrieval_method {method!r} missing or not one of "
+                f"{sorted(VALID_RETRIEVAL_METHODS)}"
+            )
+
+        sp = item.get("source_paper")
+        if not isinstance(sp, dict):
+            errors.append(f"{where}: missing required source_paper object")
+            return
+
+        role = sp.get("role")
+        if role not in VALID_ROLES:
+            errors.append(
+                f"{where}: source_paper.role {role!r} missing or not one of {sorted(VALID_ROLES)}"
+            )
+
+        if not (isinstance(sp.get("doi"), str) or isinstance(sp.get("corpus_id"), str)):
+            errors.append(f"{where}: source_paper must have at least one of doi / corpus_id")
+        elif not _paper_ref_resolves(sp, known_dois, known_corpus_ids):
+            ident = sp.get("doi") or sp.get("corpus_id")
+            errors.append(f"{where}: source_paper {ident!r} not found in paper_catalogue.json")
+
+        if method == "supplement" and role not in SUPPLEMENT_ROLES:
+            errors.append(
+                f"{where}: supplement finding must resolve to an atlas/subatlas "
+                f"paper, got role {role!r}"
+            )
+
+        reached = item.get("reached_from")
+        if isinstance(reached, dict):
+            if not (
+                isinstance(reached.get("doi"), str) or isinstance(reached.get("corpus_id"), str)
+            ):
+                errors.append(f"{where}: reached_from must have at least one of doi / corpus_id")
+            elif not _paper_ref_resolves(reached, known_dois, known_corpus_ids):
+                ident = reached.get("doi") or reached.get("corpus_id")
+                errors.append(f"{where}: reached_from {ident!r} not found in paper_catalogue.json")
+
+    for i, item in enumerate(summaries):
+        _check_item(item, f"all_summaries[{i}]")
+
+    for array_name in ("markers", "other_findings", "evidence_quotes"):
+        array = supp_data.get(array_name, [])
+        if isinstance(array, list):
+            for i, item in enumerate(array):
+                _check_item(item, f"supplementary_findings.{array_name}[{i}]")
+
+    return errors
+
+
 def validate_report(
     report_path: Path,
     traversal_dir: Path,
@@ -196,6 +327,7 @@ def validate_report(
 
     # Load any atlas snippets (supplementary findings have evidence_quotes)
     atlas_snippets: list[str] = []
+    supp_data: dict[str, Any] = {}
     supp_path = traversal_dir / "supplementary_findings.json"
     if supp_path.exists():
         supp_data = json.loads(supp_path.read_text())
@@ -213,5 +345,6 @@ def validate_report(
     errors: list[str] = []
     errors.extend(check_quotes(report_md, summaries, atlas_snippets))
     errors.extend(check_references(report_md, catalogue))
+    errors.extend(check_source_tags(summaries, supp_data, catalogue))
 
     return (len(errors) == 0, errors)
