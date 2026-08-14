@@ -7,6 +7,8 @@ __pycache__/
 .ruff_cache/
 .mypy_cache/
 .pytest_cache/
+.coverage
+coverage.xml
 dist/
 build/
 docs/_build/

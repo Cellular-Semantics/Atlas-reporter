@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AnnotatedSnippet",
+  "description": "Raw retrieval record produced by the ASTA producer during citation traversal (issue #14). Carries the structured citation edges ASTA returns (refMentions + sentences) used to gate following and build citation_context. Builds on issue #12 provenance (source_paper / retrieval_method). Distilled downstream into an evidence_summary; refMentions / sentences do not leak past the summarizer.",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "description": "The snippet text returned by ASTA snippet_search."
+    },
+    "section": {
+      "type": "string",
+      "description": "Section the snippet came from (e.g. Results)."
+    },
+    "score": {
+      "type": "number",
+      "description": "ASTA retrieval relevance score (used as the coarse gate; carried through unchanged)."
+    },
+    "source_paper": { "$ref": "#/$defs/SourcePaper" },
+    "retrieval_method": { "$ref": "#/$defs/retrieval_method" },
+    "sentences": {
+      "type": "array",
+      "description": "Sentence spans over `text` (ASTA annotations.sentences). Used to find the sentence containing each refMention.",
+      "items": { "$ref": "#/$defs/Span" }
+    },
+    "refMentions": {
+      "type": "array",
+      "description": "Citation mentions in `text` (ASTA annotations.refMentions). Each carries the matched paper's CorpusId (null when ASTA could not resolve it) and a resolved flag. Off-topic (methods) mentions are filtered by the sentence-level gate.",
+      "items": { "$ref": "#/$defs/RefMention" }
+    },
+    "reached_from": { "$ref": "#/$defs/ReachedFrom" }
+  },
+  "required": ["text", "score", "source_paper", "retrieval_method"],
+  "additionalProperties": false,
+  "$defs": {
+    "role": {
+      "type": "string",
+      "description": "What the source paper IS relative to the corpus, independent of how it was reached.",
+      "enum": ["atlas", "subatlas", "external"]
+    },
+    "retrieval_method": {
+      "type": "string",
+      "description": "The MECHANISM by which this snippet was obtained. Orthogonal to source_paper.role.",
+      "enum": ["corpus_snippet", "supplement", "citation_traversal", "free_search"]
+    },
+    "SourcePaper": {
+      "type": "object",
+      "description": "The paper this snippet came from. At least one of doi / corpus_id must be present.",
+      "properties": {
+        "doi": { "type": "string", "description": "DOI of the source paper." },
+        "corpus_id": {
+          "type": "string",
+          "description": "Semantic Scholar CorpusId, formatted 'CorpusId:NNNN'.",
+          "pattern": "^CorpusId:\\d+$"
+        },
+        "role": { "$ref": "#/$defs/role" }
+      },
+      "required": ["role"],
+      "anyOf": [{ "required": ["doi"] }, { "required": ["corpus_id"] }],
+      "additionalProperties": false
+    },
+    "Span": {
+      "type": "object",
+      "description": "A character span [start, end) over the snippet text.",
+      "properties": {
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 }
+      },
+      "required": ["start", "end"],
+      "additionalProperties": false
+    },
+    "RefMention": {
+      "type": "object",
+      "description": "A citation mention span with its matched paper. corpus_id is null when ASTA returned no matchedPaperCorpusId — a followable edge we cannot resolve (log, don't drop, when on-topic).",
+      "properties": {
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 },
+        "corpus_id": {
+          "description": "Matched paper CorpusId ('CorpusId:NNNN'), or null if unresolved.",
+          "oneOf": [
+            { "type": "string", "pattern": "^CorpusId:\\d+$" },
+            { "type": "null" }
+          ]
+        },
+        "resolved": {
+          "type": "boolean",
+          "description": "True iff corpus_id is non-null (ASTA resolved the mention to a paper)."
+        }
+      },
+      "required": ["start", "end", "corpus_id", "resolved"],
+      "additionalProperties": false
+    },
+    "ReachedFrom": {
+      "type": "object",
+      "description": "For citation_traversal snippets: the corpus paper this reference was reached from, the hop, and the citing sentence.",
+      "properties": {
+        "doi": { "type": "string", "description": "DOI of the citing paper." },
+        "corpus_id": {
+          "type": "string",
+          "description": "CorpusId of the citing paper, formatted 'CorpusId:NNNN'.",
+          "pattern": "^CorpusId:\\d+$"
+        },
+        "hop": {
+          "type": "integer",
+          "description": "Traversal hop at which this reference was reached (seed = 0).",
+          "minimum": 1
+        },
+        "citation_context": {
+          "type": "string",
+          "description": "The exact citing sentence containing the refMention."
+        }
+      },
+      "required": ["hop", "citation_context"],
+      "anyOf": [{ "required": ["doi"] }, { "required": ["corpus_id"] }],
+      "additionalProperties": false
+    }
+  }
+}

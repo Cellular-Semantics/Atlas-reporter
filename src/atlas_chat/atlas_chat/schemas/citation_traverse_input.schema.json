@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CitationTraverseInput",
+  "description": "Input parameters for the ASTA-native, sentence-gated citation-traverse subagent (issue #14).",
+  "type": "object",
+  "properties": {
+    "seed_paper_id": {
+      "type": "string",
+      "description": "Seed paper identifier: 'CorpusId:NNNN', 'DOI:10.xxxx/...', or 'PMID:...'."
+    },
+    "seed_role": {
+      "type": "string",
+      "description": "Role stamped on hop-0 (seed) evidence.",
+      "enum": ["atlas", "subatlas"],
+      "default": "atlas"
+    },
+    "query": {
+      "type": "string",
+      "description": "Retrieval query, e.g. '{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers'."
+    },
+    "depth": {
+      "type": "integer",
+      "description": "Fixed number of hops to follow (0 = seed only). Dynamic-to-evidence depth is out of scope.",
+      "minimum": 0,
+      "default": 1
+    },
+    "k_per_paper": {
+      "type": "integer",
+      "description": "Breadth cap: max surviving edges followed per paper per hop (safety budget for hub papers, not the relevance filter).",
+      "minimum": 1,
+      "default": 10
+    },
+    "run_cap": {
+      "type": "integer",
+      "description": "Max distinct papers searched across the whole run.",
+      "minimum": 1,
+      "default": 50
+    },
+    "score_threshold": {
+      "type": "number",
+      "description": "Optional coarse snippet-score floor applied before the sentence-level gate.",
+      "default": 0.0
+    },
+    "output_dir": {
+      "type": "string",
+      "description": "Traversal output directory, e.g. projects/{project}/traversal_output/{cell_type}."
+    }
+  },
+  "required": ["seed_paper_id", "query", "output_dir"],
+  "additionalProperties": false
+}

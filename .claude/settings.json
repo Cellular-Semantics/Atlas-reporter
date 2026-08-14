@@ -1,0 +1,31 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run python .claude/hooks/check_annotated_snippet.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run python .claude/hooks/check_evidence_summary.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run python .claude/hooks/check_cl_mapping.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run python .claude/hooks/check_cl_term_request.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run python .claude/hooks/check_report_refs.py"
+          }
+        ]
+      }
+    ]
+  }
+}
