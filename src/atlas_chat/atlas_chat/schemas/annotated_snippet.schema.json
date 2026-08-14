@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "AnnotatedSnippet",
-  "description": "Raw retrieval record produced by the ASTA producer during citation traversal (issue #14). Carries the structured citation edges ASTA returns (refMentions + sentences) used to gate following and build citation_context. Builds on issue #12 provenance (source_paper / retrieval_method). Distilled downstream into an evidence_summary; refMentions / sentences do not leak past the summarizer.",
+  "description": "Raw retrieval record produced during citation traversal. Carries the structured citation edges ASTA returns (refMentions + sentences), used to gate following and build citation_context, plus source_paper / retrieval_method provenance. Distilled downstream into an evidence_summary; refMentions / sentences do not leak past the summarizer.",
   "type": "object",
   "properties": {
     "text": {

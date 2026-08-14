@@ -3,7 +3,7 @@
 
 Fires as a PostToolUse hook on Write/Edit to the raw traversal records —
 ``annotated_snippets_hop<n>.json`` (an array) or any ``*annotated_snippet.json``
-(a single record). Validates against ``annotated_snippet.schema.json`` (issue #14).
+(a single record). Validates against ``annotated_snippet.schema.json``.
 
 Exit codes:
     0 — valid, or file is not an annotated-snippet file, or jsonschema unavailable

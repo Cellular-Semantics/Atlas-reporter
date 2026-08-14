@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "EvidenceSummary",
-  "description": "The distilled evidence item the report synthesizer reads (one element of all_summaries.json). Produced by the snippet-summarizer from an annotated_snippet. Traversal machinery (refMentions / sentences) does NOT leak here; provenance (source_paper / retrieval_method / reached_from) does. Builds on the provenance fields from issue #12; adds ASTA-native traversal fields from issue #14.",
+  "description": "The distilled evidence item the report synthesizer reads (one element of all_summaries.json). Produced by the snippet-summarizer from an annotated_snippet. Traversal machinery (refMentions / sentences) does NOT leak here; provenance (source_paper / retrieval_method / reached_from) does.",
   "type": "object",
   "properties": {
     "source_paper": { "$ref": "#/$defs/SourcePaper" },

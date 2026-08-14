@@ -3,7 +3,7 @@
 
 Fires as a PostToolUse hook on Write/Edit to ``all_summaries.json`` (an array of
 evidence_summary items) or any ``*evidence_summary.json`` (a single item).
-Validates against ``evidence_summary.schema.json`` (issue #14).
+Validates against ``evidence_summary.schema.json``.
 
 Exit codes:
     0 — valid, or file is not an evidence-summary file, or jsonschema unavailable

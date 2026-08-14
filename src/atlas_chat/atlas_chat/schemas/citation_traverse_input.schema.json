@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "CitationTraverseInput",
-  "description": "Input parameters for the ASTA-native, sentence-gated citation-traverse subagent (issue #14).",
+  "description": "Input parameters for the citation-traverse subagent: a query, a seed paper, and traversal limits.",
   "type": "object",
   "properties": {
     "seed_paper_id": {
@@ -16,17 +16,17 @@
     },
     "query": {
       "type": "string",
-      "description": "Retrieval query, e.g. '{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers'."
+      "description": "The search query that defines relevance for this traversal."
     },
     "depth": {
       "type": "integer",
-      "description": "Fixed number of hops to follow (0 = seed only). Dynamic-to-evidence depth is out of scope.",
+      "description": "Number of citation hops to follow (0 = seed only).",
       "minimum": 0,
       "default": 1
     },
     "k_per_paper": {
       "type": "integer",
-      "description": "Breadth cap: max surviving edges followed per paper per hop (safety budget for hub papers, not the relevance filter).",
+      "description": "Max references followed per paper per hop (safety cap for hub papers, not the relevance filter).",
       "minimum": 1,
       "default": 10
     },
@@ -43,7 +43,7 @@
     },
     "output_dir": {
       "type": "string",
-      "description": "Traversal output directory, e.g. projects/{project}/traversal_output/{cell_type}."
+      "description": "Directory to write traversal output files to."
     }
   },
   "required": ["seed_paper_id", "query", "output_dir"],
