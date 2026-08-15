@@ -48,6 +48,7 @@ def _item_errors(schema_name: str, items: list) -> list[str]:
         "annotated_snippet.schema.json",
         "evidence_summary.schema.json",
         "citation_traverse_input.schema.json",
+        "follow_set.schema.json",
     ],
 )
 def test_schema_is_valid(schema_name: str) -> None:
@@ -132,6 +133,36 @@ def test_annotated_snippet_requires_text_and_score() -> None:
     assert len(_item_errors("annotated_snippet.schema.json", data)) >= 2
 
 
+@pytest.mark.unit
+def test_annotated_snippet_with_annotated_text_validates() -> None:
+    # The spliced record (with annotated_text) is valid...
+    data = _load_fixture("annotated_snippet_with_annotated_text.good.json")
+    assert "annotated_text" in data[0]
+    assert _item_errors("annotated_snippet.schema.json", data) == []
+
+
+@pytest.mark.unit
+def test_annotated_snippet_annotated_text_is_optional() -> None:
+    # ...and legacy records without annotated_text still validate (back-compat).
+    legacy = _load_fixture("annotated_snippet.good.json")
+    assert all("annotated_text" not in item for item in legacy)
+    assert _item_errors("annotated_snippet.schema.json", legacy) == []
+
+
+# --- follow_set --------------------------------------------------------------
+
+
+@pytest.mark.unit
+def test_follow_set_good_fixture_validates() -> None:
+    assert _errors("follow_set.schema.json", _load_fixture("follow_set.good.json")) == []
+
+
+@pytest.mark.unit
+def test_follow_set_bad_fixture_rejected() -> None:
+    # Bare id in follow_set (missing CorpusId: prefix) + bad rejected reason enum.
+    assert _errors("follow_set.schema.json", _load_fixture("follow_set.bad.json"))
+
+
 # --- PostToolUse hooks -------------------------------------------------------
 
 
@@ -194,3 +225,30 @@ def test_annotated_snippet_hook_rejects_bad_record() -> None:
     )
     assert r.returncode == 2
     assert "VALIDATION FAILED" in r.stderr
+
+
+@pytest.mark.unit
+def test_follow_set_hook_accepts_good() -> None:
+    r = _run_hook(
+        "check_follow_set.py",
+        "projects/x/traversal_output/ct/follow_set_hop1.json",
+        _load_fixture("follow_set.good.json"),
+    )
+    assert r.returncode == 0, r.stderr
+
+
+@pytest.mark.unit
+def test_follow_set_hook_rejects_bad() -> None:
+    r = _run_hook(
+        "check_follow_set.py",
+        "projects/x/traversal_output/ct/follow_set_hop1.json",
+        _load_fixture("follow_set.bad.json"),
+    )
+    assert r.returncode == 2
+    assert "VALIDATION FAILED" in r.stderr
+
+
+@pytest.mark.unit
+def test_follow_set_hook_ignores_other_files() -> None:
+    r = _run_hook("check_follow_set.py", "projects/x/notes.txt", {"anything": 1})
+    assert r.returncode == 0

@@ -1,6 +1,6 @@
 ---
 name: citation-traverse
-description: Given a query and a seed paper, search ASTA snippets, keep the snippet sentences relevant to the query, follow the references those sentences cite, and return provenance-tagged evidence carrying the citing sentence as context.
+description: Given a query and a seed paper, walk citations over ASTA snippet search. Retrieval, reference splicing, and follow-set resolution run programmatically (raw JSON never enters your context); you gate sentences on the spliced text and propose which citations to follow.
 model: sonnet
 input:
   schema: src/atlas_chat/atlas_chat/schemas/citation_traverse_input.schema.json
@@ -10,10 +10,16 @@ output:
 
 # Subagent: Citation Traversal
 
-Walk citations over ASTA (Semantic Scholar) snippet search. Given a **query**
-and a **seed paper**, you: retrieve snippets, keep the sentences relevant to the
-query, follow the references those sentences cite, and emit uniform,
-provenance-tagged evidence that carries the citing sentence as context.
+Walk citations over ASTA (Semantic Scholar) snippet search. Given a **query** and a
+**seed paper**, you retrieve snippets, keep the sentences relevant to the query,
+follow the references those sentences cite, and emit uniform, provenance-tagged
+evidence.
+
+Retrieval and reference handling are **programmatic** — the `atlas_chat.cli_annotate`
+CLI fetches from ASTA, splices each citation into the snippet text as an inline
+`[CorpusId:NNNN]` token, and writes slim records to disk. You never see the raw
+snippet payload. Your judgement is applied at one place: deciding which sentences
+answer the query and which citations to follow.
 
 The query defines relevance — it is passed in, not defined here.
 
@@ -21,114 +27,114 @@ The query defines relevance — it is passed in, not defined here.
 
 ```json
 {
-  "seed_paper_id": "CorpusId:2762329 | DOI:10.1038/... | PMID:...",
+  "seed_paper_id": "CorpusId:NNNN | DOI:10.1038/... | PMID:...",
   "seed_role": "atlas",
   "query": "<the search query to gather evidence for>",
   "depth": 1,
-  "k_per_paper": 10,
-  "run_cap": 50,
-  "score_threshold": 0.0,
   "output_dir": "<traversal output directory>"
 }
 ```
 
 - `seed_role` — the provenance role stamped on hop-0 evidence (`atlas` or `subatlas`).
 - `depth` — number of citation hops to follow (default 1).
-- `k_per_paper` — max references followed per paper per hop (safety cap for hub papers).
-- `run_cap` — max distinct papers searched across the run.
-- `score_threshold` — optional snippet-`score` floor applied before the sentence gate.
-
-## Relevance gate — at the sentence, using the ASTA score
-
-- Use the ASTA snippet `score` as the retrieval relevance signal. Do **not**
-  assign your own numeric relevance to references.
-- For each reference mention, make one binary decision: **is the sentence
-  containing it relevant to the query?** Follow references in relevant
-  sentences; drop references in sentences incidental to the query (for example
-  methods, tool, or dataset citations).
 
 ## Procedure
 
-### Hop 0 — seed retrieval
+### Hop 0 — retrieve (programmatic)
 
-1. `snippet_search(query="<query>", paper_ids="<seed_paper_id>", limit=20)`.
-   Hop-0 snippets come from the seed paper: `source_paper.role = seed_role`,
-   `retrieval_method = "corpus_snippet"`.
-2. For each snippet, build an **annotated_snippet** record
-   (`annotated_snippet.schema.json`) capturing the ASTA structure verbatim:
-   - `text`, `section`, `score`, `source_paper`, `retrieval_method`
-   - `sentences` — the `annotations.sentences` spans
-   - `refMentions` — the `annotations.refMentions` spans; each carries
-     `corpus_id` (the `matchedPaperCorpusId`, or `null` if unresolved) and
-     `resolved` (`corpus_id != null`)
-3. Save hop-0 annotated snippets to `{output_dir}/annotated_snippets_hop0.json`.
+Run:
+
+```
+python -m atlas_chat.cli_annotate fetch \
+  --query "<query>" --paper-ids "<seed_paper_id>" --limit 20 \
+  --role <seed_role> --retrieval-method corpus_snippet --hop 0 \
+  --out <output_dir>/annotated_snippets_hop0.json
+```
+
+Then read the slim records. Each has:
+- `text` — verbatim snippet text (the exact-substring quote source).
+- `annotated_text` — the same text with citations shown inline as `[CorpusId:NNNN]`
+  (resolved) or `[CorpusId:unresolved]` (ASTA could not resolve the citation).
+- `section`, `score`, `sentences`, `refMentions`.
+
+Use the CLI's `show` subcommand if you prefer to read `annotated_text` record by
+record rather than opening the file.
+
+### Gate + propose (read `annotated_text`)
+
+For each snippet, decide which sentences are relevant to the query. Propose the
+citations relevant to the query — the `[CorpusId:NNNN]` tokens that carry a
+query-relevant claim — drawn from each relevant sentence **and its immediately
+adjacent sentences**. Look to the adjacent sentence because a claim's supporting
+reference often sits just outside the sentence stating it (the claim sentence may
+carry no citation of its own). Narrow within the sentence too: a sentence may cite
+several papers — propose only the citations that bear on the query, not every token
+present. A `[CorpusId:unresolved]` token marks a citation ASTA could not resolve —
+record it in `<output_dir>/unresolved_edges.json` (with the citing sentence); it
+cannot be followed. Quote only from `text`, never from `annotated_text`.
 
 ### Hop 0 — summarize
 
-4. Distill each annotated_snippet into an **evidence_summary**
-   (`evidence_summary.schema.json`): `source_paper`, `retrieval_method`,
-   `section`, `score`, `summary` (1-3 sentences), `quotes` (exact substrings of
-   `text`). Do not copy `sentences` / `refMentions` into the summary. Hop-0
-   items have no `reached_from`.
+Distill each relevant snippet into an **evidence_summary**
+(`evidence_summary.schema.json`): `source_paper`, `retrieval_method`, `section`,
+`score`, `summary` (1-3 sentences), `quotes` (exact substrings of `text`). Do not
+copy `sentences` / `refMentions` / `annotated_text` into the summary. Hop-0 items
+have no `reached_from`.
 
 ### Hops 1..depth — follow relevant references
 
-5. Build the frontier from the previous hop's annotated snippets. For each
-   `refMention`:
-   a. Find the `sentences` span that **contains** the refMention's `[start,end)`
-      offsets — that sentence is the **citation context**.
-   b. **Gate** the sentence for relevance to the query. Drop if incidental.
-   c. If relevant and `resolved` (has `corpus_id`): add the reference to the
-      frontier with `reached_from = {corpus_id: <citing paper>, hop: <n>,
-      citation_context: <the sentence>}`.
-   d. If relevant but `corpus_id` is `null` (unresolved): **log** it to
-      `{output_dir}/unresolved_edges.json` — a followable edge that cannot be
-      followed. Never silently drop.
-6. Dedup against a visited set. Apply `k_per_paper` per citing paper per hop; if
-   a paper exceeds it, keep the highest-`score` snippets' references and **log
-   the overflow** to `{output_dir}/overflow.json`. Stop adding once `run_cap`
-   distinct papers have been searched (log that the cap was hit).
-7. Follow each surviving reference:
-   `snippet_search(query="<query>", paper_ids="CorpusId:<id>", limit=20)`, with
-   `source_paper.role = "external"` (unless known to be a corpus member),
-   `retrieval_method = "citation_traversal"`, and the `reached_from` recorded in 5c.
-8. Save annotated snippets to `{output_dir}/annotated_snippets_hop<n>.json`, then
-   summarize (step 4) into evidence_summary items carrying `reached_from`.
-9. Repeat until `depth` hops are done or the frontier empties.
+1. Resolve the follow-set programmatically (anti-hallucination check):
+
+   ```
+   python -m atlas_chat.cli_annotate follow-set \
+     --snippets <output_dir>/annotated_snippets_hop<n>.json \
+     --proposed CorpusId:... [--proposed CorpusId:...] --hop <n+1> \
+     --out <output_dir>/follow_set_hop<n+1>.json
+   ```
+
+   Follow only the returned `follow_set` (deduped; any proposed id not present in the
+   snippets' references is dropped to `rejected`).
+
+2. For each id in `follow_set`, retrieve its snippets — pass the citing sentence as
+   `reached_from` so followed evidence carries its provenance:
+
+   ```
+   python -m atlas_chat.cli_annotate fetch \
+     --query "<query>" --paper-ids CorpusId:<id> --limit 20 \
+     --role external --retrieval-method citation_traversal --hop <n> \
+     --reached-from '{"corpus_id":"<citing paper>","hop":<n>,"citation_context":"<citing sentence>"}' \
+     --out <output_dir>/annotated_snippets_hop<n>.json
+   ```
+
+3. Gate + propose + summarize as above. Never revisit a CorpusId already searched.
+   Repeat until `depth` hops are done or the follow-set is empty.
 
 ### Final — merge + catalogue
 
-10. Merge all hops' evidence_summary items into `{output_dir}/all_summaries.json`
-    (array conforming to `all_summaries.schema.json`).
-11. Collect every CorpusId seen (seed + `source_paper` + `reached_from`) and
-    `get_paper_batch(ids=[...], fields="title,authors,year,venue,publicationDate,url,isOpenAccess,externalIds")`;
-    write `{output_dir}/paper_catalogue.json`, keyed by `CorpusId:NNNN`. Every
-    `source_paper` / `reached_from` identifier you emit must appear here.
+- Merge all hops' evidence_summary items into `<output_dir>/all_summaries.json`
+  (array conforming to `all_summaries.schema.json`).
+- Collect every CorpusId seen (seed + `source_paper` + `reached_from`) and call the
+  `get_paper_batch` MCP tool
+  (`fields="title,authors,year,venue,publicationDate,url,isOpenAccess,externalIds"`);
+  write `<output_dir>/paper_catalogue.json`, keyed by `CorpusId:NNNN`. Every
+  `source_paper` / `reached_from` identifier you emit must appear here.
 
 ## Output
 
-- `{output_dir}/all_summaries.json` — array of **evidence_summary** items.
-- `{output_dir}/annotated_snippets_hop<n>.json` — raw **annotated_snippet** records per hop.
-- `{output_dir}/paper_catalogue.json` — metadata for every paper referenced.
-- `{output_dir}/unresolved_edges.json` — relevant edges with a null CorpusId.
-- `{output_dir}/overflow.json` — references dropped by `k_per_paper` / `run_cap`.
-
-## Edge extraction — use ASTA structure
-
-- Take referenced papers from `annotations.refMentions[].matchedPaperCorpusId`.
-- Build `citation_context` from the `annotations.sentences` span that contains
-  the refMention offsets — never fabricate or paraphrase the sentence.
-- `matchedPaperCorpusId == null` → `resolved: false`; log if the sentence is relevant (5d).
-- Do NOT use `curl` / `WebFetch` for the S2 API; do NOT read CorpusId from `get_paper` fields.
+- `<output_dir>/annotated_snippets_hop<n>.json` — slim records with `annotated_text` (from the CLI).
+- `<output_dir>/follow_set_hop<n>.json` — the deduped follow-set + rejects (from the CLI).
+- `<output_dir>/all_summaries.json` — array of evidence_summary items.
+- `<output_dir>/paper_catalogue.json` — metadata for every paper referenced.
+- `<output_dir>/unresolved_edges.json` — relevant citations with `[CorpusId:unresolved]`.
 
 ## Rules
 
-- Gate at the sentence: follow only references whose containing sentence is
-  relevant to the query.
-- Reuse the ASTA `score`; never assign your own numeric relevance to references.
+- Do not call the ASTA `snippet_search` MCP tool — retrieval goes through the CLI so
+  raw JSON never enters your context. `get_paper_batch` for the catalogue is fine.
+- Gate at the sentence: follow only citations whose claim is relevant to the query.
+- Follow only ids returned in the CLI `follow_set`; never invent or hand-edit ids.
 - Never search a seed you weren't given; never revisit a CorpusId.
-- Write incrementally — each hop's annotated snippets before summarizing.
-- Quotes are exact substrings of the snippet `text`.
+- Quotes are exact substrings of `text`.
 - Every evidence item carries `source_paper` (+`role`) and `retrieval_method`;
   followed items also carry `reached_from` (`corpus_id`/`doi`, `hop`, `citation_context`).
-- Log, don't silently drop: unresolved relevant edges and cap overflow.
+- Log, don't silently drop: unresolved relevant citations (`unresolved_edges.json`).

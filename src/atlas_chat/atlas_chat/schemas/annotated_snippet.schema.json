@@ -6,7 +6,11 @@
   "properties": {
     "text": {
       "type": "string",
-      "description": "The snippet text returned by ASTA snippet_search."
+      "description": "The snippet text returned by ASTA snippet_search. Verbatim; the exact-substring quote source for downstream evidence."
+    },
+    "annotated_text": {
+      "type": "string",
+      "description": "Copy of `text` with each refMention span replaced in place by a standardized inline citation token: '[CorpusId:NNNN]' when resolved, '[CorpusId:unresolved]' when ASTA returned no matchedPaperCorpusId. Produced deterministically right-to-left over descending offsets so `text` is never mutated. Agent-facing input for the sentence gate and follow-id proposal; never quote from this field."
     },
     "section": {
       "type": "string",
