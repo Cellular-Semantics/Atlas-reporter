@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FollowSet",
+  "description": "Result of the programmatic follow-set resolution for one hop: the deduped CorpusIds to search next (proposed ∩ the real refMention corpus ids the annotator emitted) and the rejected proposals. The intersection is computed by services.snippet_annotator.resolve_follow_set, not by the agent — proposed ids the annotator never emitted are dropped here, so a hallucinated or mistranscribed id can never be followed.",
+  "type": "object",
+  "properties": {
+    "hop": {
+      "type": "integer",
+      "description": "Traversal hop these references will be searched at (seed = 0, so the first followed hop is 1).",
+      "minimum": 1
+    },
+    "follow_set": {
+      "type": "array",
+      "description": "Deduped, order-preserving CorpusIds to follow next: every id appears in the annotated snippets' refMentions.",
+      "items": { "type": "string", "pattern": "^CorpusId:\\d+$" }
+    },
+    "rejected": {
+      "type": "array",
+      "description": "Proposed ids that were not followed, each with the reason.",
+      "items": { "$ref": "#/$defs/Rejected" }
+    }
+  },
+  "required": ["follow_set", "rejected"],
+  "additionalProperties": false,
+  "$defs": {
+    "Rejected": {
+      "type": "object",
+      "properties": {
+        "corpus_id": {
+          "type": "string",
+          "description": "The proposed id (as received) that was rejected."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why it was dropped: 'not_in_refmentions' = well-formed but absent from the annotated snippets' refMentions (hallucinated / mistranscribed); 'malformed' = not a 'CorpusId:NNNN' string.",
+          "enum": ["not_in_refmentions", "malformed"]
+        }
+      },
+      "required": ["corpus_id", "reason"],
+      "additionalProperties": false
+    }
+  }
+}

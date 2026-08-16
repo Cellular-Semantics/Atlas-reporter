@@ -1,0 +1,19 @@
+[
+  {
+    "text": "TML macrophages support angiogenesis 3. They also guide axons 4,5.",
+    "annotated_text": "TML macrophages support angiogenesis [CorpusId:234484741]. They also guide axons [CorpusId:41350702],[CorpusId:unresolved].",
+    "section": "Results",
+    "score": 0.61,
+    "source_paper": { "corpus_id": "CorpusId:252635104", "role": "external" },
+    "retrieval_method": "citation_traversal",
+    "sentences": [
+      { "start": 0, "end": 39 },
+      { "start": 39, "end": 66 }
+    ],
+    "refMentions": [
+      { "start": 37, "end": 38, "corpus_id": "CorpusId:234484741", "resolved": true },
+      { "start": 62, "end": 63, "corpus_id": "CorpusId:41350702", "resolved": true },
+      { "start": 64, "end": 65, "corpus_id": null, "resolved": false }
+    ]
+  }
+]

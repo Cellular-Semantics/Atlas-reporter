@@ -187,6 +187,55 @@ async def traverse(
     return await _search_depth(provider, query, seed_ids, depth)
 
 
+async def traverse_annotated(
+    query: str,
+    paper_id: str,
+    *,
+    role: str = "atlas",
+    retrieval_method: str = "corpus_snippet",
+    reached_from: dict[str, Any] | None = None,
+    limit: int = 20,
+    score_threshold: float = 0.0,
+) -> list[dict[str, Any]]:
+    """Fetch one paper's snippets and return slim annotated_snippet records.
+
+    Shares ``services.snippet_annotator`` with the agentic ``cli_annotate`` path:
+    calls ASTA ``snippet_search`` for ``paper_id``, splices reference tokens inline,
+    and returns records whose ``text`` is verbatim and ``annotated_text`` carries the
+    ``[CorpusId:NNNN]`` / ``[CorpusId:unresolved]`` tokens. Raw JSON is confined to
+    this function.
+
+    Args:
+        query: The relevance query.
+        paper_id: A single seed/target id (``CorpusId:NNNN`` or ``DOI:...``).
+        role: ``source_paper.role`` for the emitted records.
+        retrieval_method: One of the ``retrieval_method`` enum values.
+        reached_from: Citation provenance for followed (hop >= 1) records.
+        limit: Snippet limit passed to ASTA.
+        score_threshold: Coarse score floor applied before the sentence gate.
+
+    Returns:
+        A list of ``annotated_snippet`` dicts.
+    """
+    import httpx
+
+    from atlas_chat.services import snippet_annotator
+
+    provider = _make_provider()
+    arguments: dict[str, Any] = {"query": query, "limit": limit}
+    if paper_id:
+        arguments["paper_ids"] = paper_id
+    async with httpx.AsyncClient(timeout=180) as http_client:
+        raw = await provider._call_tool(http_client, "snippet_search", arguments)
+    return snippet_annotator.project_response(
+        raw,
+        source_paper={"role": role},
+        retrieval_method=retrieval_method,
+        reached_from=reached_from,
+        score_threshold=score_threshold,
+    )
+
+
 async def traverse_local(
     query: str,
     project_dir: Path,

@@ -1,0 +1,6 @@
+{
+  "follow_set": ["234484741"],
+  "rejected": [
+    { "corpus_id": "CorpusId:12", "reason": "hallucinated" }
+  ]
+}

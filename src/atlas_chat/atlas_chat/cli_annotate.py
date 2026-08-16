@@ -1,0 +1,180 @@
+"""Agent-facing CLI for programmatic citation traversal.
+
+Keeps raw ASTA snippet payloads out of the agent's context. Three subcommands:
+
+- ``fetch``: call ASTA ``snippet_search`` (via the project's ``AstaProvider``),
+  splice reference tokens, and write slim ``annotated_snippet`` records to disk.
+  Prints only a tiny summary (counts + path) to stdout.
+- ``follow-set``: intersect the agent's proposed CorpusIds with the ids the
+  annotator emitted, writing the deduped follow-set + rejects.
+- ``show``: print a record's ``annotated_text`` (+ sentence spans) so the agent can
+  read slim content without opening the raw file.
+
+The agent never calls the ASTA MCP tool directly — this service is the sanctioned
+programmatic boundary (same layer as ``services.citation_traverser``), so raw JSON
+never enters the model context regardless of response size.
+
+Examples::
+
+    python -m atlas_chat.cli_annotate fetch \\
+        --query "TML macrophages: location, function, markers" \\
+        --paper-ids CorpusId:273400864 --limit 20 \\
+        --role atlas --retrieval-method corpus_snippet --hop 0 \\
+        --out out/annotated_snippets_hop0.json
+
+    python -m atlas_chat.cli_annotate follow-set \\
+        --snippets out/annotated_snippets_hop0.json \\
+        --proposed CorpusId:248122197 --proposed CorpusId:260956290 \\
+        --hop 1 --out out/follow_set_hop1.json
+
+    python -m atlas_chat.cli_annotate show \\
+        --snippets out/annotated_snippets_hop0.json --index 0
+"""
+
+from __future__ import annotations
+
+import argparse
+import asyncio
+import json
+import sys
+from pathlib import Path
+from typing import Any
+
+from atlas_chat.services import snippet_annotator
+
+ROLES = ("atlas", "subatlas", "external")
+RETRIEVAL_METHODS = ("corpus_snippet", "supplement", "citation_traversal", "free_search")
+
+
+async def _fetch_raw(query: str, paper_ids: str, limit: int) -> Any:
+    """Call ASTA ``snippet_search`` and return the raw normalized payload."""
+    import httpx
+
+    from atlas_chat.services.citation_traverser import _make_provider
+
+    provider = _make_provider()
+    arguments: dict[str, Any] = {"query": query, "limit": limit}
+    if paper_ids:
+        arguments["paper_ids"] = paper_ids
+    async with httpx.AsyncClient(timeout=180) as http_client:
+        return await provider._call_tool(http_client, "snippet_search", arguments)
+
+
+def _fallback_source_id(paper_ids: str) -> dict[str, str]:
+    """Derive a source-paper id from the first --paper-ids token (fallback only)."""
+    first = paper_ids.split(",")[0].strip() if paper_ids else ""
+    if first.startswith("DOI:"):
+        return {"doi": first[len("DOI:") :]}
+    if first.startswith("CorpusId:") and first[len("CorpusId:") :].isdigit():
+        return {"corpus_id": first}
+    return {}
+
+
+def _apply_id_fallback(records: list[dict[str, Any]], fallback: dict[str, str]) -> None:
+    """Ensure every record's source_paper carries an id (ASTA usually supplies one)."""
+    for record in records:
+        source = record["source_paper"]
+        if "corpus_id" not in source and "doi" not in source:
+            source.update(fallback)
+
+
+def _write_json(path: Path, data: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def _cmd_fetch(args: argparse.Namespace) -> int:
+    raw = asyncio.run(_fetch_raw(args.query, args.paper_ids, args.limit))
+
+    reached_from: dict[str, Any] | None = None
+    if args.reached_from:
+        try:
+            reached_from = json.loads(args.reached_from)
+        except json.JSONDecodeError as exc:
+            print(f"--reached-from is not valid JSON: {exc}", file=sys.stderr)
+            return 2
+
+    records = snippet_annotator.project_response(
+        raw,
+        source_paper={"role": args.role},
+        retrieval_method=args.retrieval_method,
+        reached_from=reached_from,
+        score_threshold=args.score_threshold,
+    )
+    _apply_id_fallback(records, _fallback_source_id(args.paper_ids))
+
+    out = Path(args.out)
+    _write_json(out, records)
+    n_refs = sum(len(r.get("refMentions", [])) for r in records)
+    n_resolved = sum(1 for r in records for m in r.get("refMentions", []) if m.get("resolved"))
+    print(f"fetch: {len(records)} snippets, {n_refs} refMentions ({n_resolved} resolved) -> {out}")
+    return 0
+
+
+def _cmd_follow_set(args: argparse.Namespace) -> int:
+    snippets = json.loads(Path(args.snippets).read_text(encoding="utf-8"))
+    result = snippet_annotator.resolve_follow_set(snippets, args.proposed, hop=args.hop)
+    out = Path(args.out)
+    _write_json(out, result)
+    print(
+        f"follow-set: {len(result['follow_set'])} to follow, "
+        f"{len(result['rejected'])} rejected -> {out}"
+    )
+    return 0
+
+
+def _cmd_show(args: argparse.Namespace) -> int:
+    snippets = json.loads(Path(args.snippets).read_text(encoding="utf-8"))
+    indices = [args.index] if args.index is not None else range(len(snippets))
+    for i in indices:
+        record = snippets[i]
+        print(f"--- [{i}] section={record.get('section', '')} score={record.get('score')}")
+        print(record.get("annotated_text", record.get("text", "")))
+        print(f"sentences: {record.get('sentences', [])}")
+    return 0
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(prog="atlas_chat.cli_annotate", description=__doc__)
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    fetch = sub.add_parser("fetch", help="ASTA snippet_search -> slim annotated records")
+    fetch.add_argument("--query", required=True)
+    fetch.add_argument("--paper-ids", default="", help="comma-separated seed ids (CorpusId:/DOI:)")
+    fetch.add_argument("--limit", type=int, default=20)
+    fetch.add_argument("--role", choices=ROLES, required=True)
+    fetch.add_argument("--retrieval-method", choices=RETRIEVAL_METHODS, required=True)
+    fetch.add_argument(
+        "--hop", type=int, default=0, help="informational; used for the --out filename"
+    )
+    fetch.add_argument(
+        "--reached-from", default="", help="JSON object stamped on every record (hop>=1)"
+    )
+    fetch.add_argument("--score-threshold", type=float, default=0.0)
+    fetch.add_argument("--out", required=True)
+    fetch.set_defaults(func=_cmd_fetch)
+
+    fs = sub.add_parser("follow-set", help="proposed ∩ real refMentions (anti-hallucination)")
+    fs.add_argument("--snippets", required=True, help="annotated_snippets_hop<n>.json")
+    fs.add_argument(
+        "--proposed", action="append", default=[], help="a proposed CorpusId (repeatable)"
+    )
+    fs.add_argument("--hop", type=int, default=None)
+    fs.add_argument("--out", required=True)
+    fs.set_defaults(func=_cmd_follow_set)
+
+    show = sub.add_parser("show", help="print slim annotated_text for a record")
+    show.add_argument("--snippets", required=True)
+    show.add_argument("--index", type=int, default=None)
+    show.set_defaults(func=_cmd_show)
+
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+    return int(args.func(args))
+
+
+if __name__ == "__main__":
+    sys.exit(main())

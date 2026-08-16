@@ -234,9 +234,11 @@ def check_source_tags(
     splits along what a schema can express:
 
     1. **Schema-derived** (structure, enums, required ``source_paper``/
-       ``retrieval_method``, at-least-one identifier): validated directly against
-       ``all_summaries.schema.json`` / ``supplementary_findings.schema.json`` —
-       the single source of truth, not re-declared here.
+       ``retrieval_method``, at-least-one identifier): each all_summaries item is
+       validated against ``evidence_summary.schema.json`` (the canonical item
+       schema) and supplementary findings against
+       ``supplementary_findings.schema.json`` — the single source of truth, not
+       re-declared here.
     2. **Cross-cutting** (not expressible in a standalone item schema):
        ``supplement`` items must resolve to an ``atlas``/``subatlas`` paper, and
        every ``source_paper`` / ``reached_from`` identifier must appear in
@@ -253,8 +255,10 @@ def check_source_tags(
     """
     errors: list[str] = []
 
-    # 1. Structure / enums / presence — owned by the JSON schemas.
-    errors.extend(_schema_errors(summaries, "all_summaries.schema.json", "all_summaries"))
+    # 1. Structure / enums / presence — owned by the JSON schemas. Each
+    # all_summaries item is an evidence_summary (the canonical item schema).
+    for i, item in enumerate(summaries):
+        errors.extend(_schema_errors(item, "evidence_summary.schema.json", f"all_summaries[{i}]"))
     if supp_data:  # empty dict = no supplementary_findings.json to check
         errors.extend(
             _schema_errors(
