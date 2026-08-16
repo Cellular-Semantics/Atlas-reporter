@@ -12,7 +12,7 @@
     },
     "retrieval_method": {
       "type": "string",
-      "description": "The MECHANISM by which this item was obtained. Orthogonal to source_paper.role.",
+      "description": "The MECHANISM by which this item was obtained. Orthogonal to source_paper.role. 'corpus_snippet' = snippet_search scoped to a corpus paper; 'supplement' = extracted from a supplementary file; 'citation_traversal' = reached by following a citation from another paper; 'free_search' = unscoped snippet/literature search.",
       "enum": ["corpus_snippet", "supplement", "citation_traversal", "free_search"]
     },
     "SourcePaper": {
