@@ -9,8 +9,7 @@
     "authors": ["Ada Lovelace"],
     "atlas_name": "Test Atlas v1",
     "links": { "preprint": "https://example.org/preprint", "cellxgene": "https://example.org/cxg" },
-    "subatlas_papers": [ { "label": "Smith2021", "doi": "10.1000/smith" } ],
-    "data_provenance": { "source_type": "manual" }
+    "subatlas_papers": [ { "label": "Smith2021", "doi": "10.1000/smith" } ]
   },
   "labelsets": [ { "name": "author_cell_type", "rank": 0, "role": "author_cell_type" } ],
   "annotations": [

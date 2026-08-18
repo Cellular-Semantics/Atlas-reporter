@@ -85,10 +85,3 @@ def test_labelset_additional_properties_are_closed() -> None:
     data = _load("cas_annotation.minimal.good.json")
     data["labelsets"][0]["bogus_field"] = 1
     assert _errors(data)
-
-
-@pytest.mark.unit
-def test_data_provenance_additional_properties_are_closed() -> None:
-    data = _load("cas_annotation.good.json")
-    data["source"]["data_provenance"]["bogus_field"] = 1
-    assert _errors(data)

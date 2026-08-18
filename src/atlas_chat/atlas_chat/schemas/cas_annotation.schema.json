@@ -24,7 +24,7 @@
     },
     "source": {
       "$ref": "#/$defs/AtlasPaper",
-      "description": "Local extension: atlas-paper provenance (DOI, subatlas papers, data provenance) consumed by the report workflow. Not part of CAS core."
+      "description": "Local extension: atlas-paper provenance (DOI, subatlas papers) consumed by the report workflow. Not part of CAS core."
     },
     "labelsets": {
       "type": "array",
@@ -168,7 +168,6 @@
         "authors": { "type": "array", "items": { "type": "string" } },
         "local_text_path": { "type": "string" },
         "subatlas_papers": { "type": "array", "items": { "$ref": "#/$defs/SubatlasPaper" } },
-        "data_provenance": { "$ref": "#/$defs/DataProvenance" },
         "atlas_name": { "type": "string", "description": "Human-readable atlas name, e.g. 'Human Female Reproductive System Cell Atlas v1'." },
         "links": { "type": "object", "description": "Named external resources for the atlas as an open map of label -> URL/identifier, e.g. {\"preprint\": \"...\", \"cellxgene\": \"...\"}." }
       }
@@ -197,23 +196,6 @@
         "corpus_id": { "type": "string" },
         "venue": { "type": "string" }
       }
-    },
-    "DataProvenance": {
-      "type": "object",
-      "required": ["source_type"],
-      "properties": {
-        "source_type": {
-          "type": "string",
-          "enum": ["manual", "published_zarr", "local_h5ad", "local_zarr", "cellxgene", "cap", "spreadsheet"]
-        },
-        "dataset_id": { "type": "string" },
-        "source_url": { "type": "string" },
-        "file_path": { "type": "string" },
-        "obs_column": { "type": "string" },
-        "n_cells_total": { "type": "integer" },
-        "extracted_at": { "type": "string" }
-      },
-      "additionalProperties": false
     }
   }
 }
