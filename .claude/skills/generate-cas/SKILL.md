@@ -33,22 +33,25 @@ Some fields are not derivable from the data — **ask the user** rather than gue
 
 ## Procedure (lightweight)
 
-1. Identify the source type and gather inputs; ask the user for anything missing or
-   ambiguous (DOI, organism, and the field roles above — label vs hierarchy tiers
-   vs context covariates vs ignore).
-2. Read the source with whatever python libraries fit (`pandas`/`openpyxl` for
-   tables; `anndata`/`zarr` for obs — obs only; a text list directly). Use only
-   **categorical** columns — both for the cell-type label and for the co-annotation
-   covariates. **Skip continuous / numeric columns** (QC metrics such as counts or
-   percent-mito, embeddings, per-cell floats): a distribution over a continuous
-   column is not a meaningful per-label category. Also **skip identifier-like /
-   high-cardinality categoricals** (cell barcodes, per-cell IDs, index-like columns):
-   a categorical whose distinct-value count approaches the number of cells is an
-   identifier, not a covariate, and would explode per-label distributions and
-   massively bloat `cas.json`. For each remaining categorical covariate, summarise
-   per label — near-constant → a scalar; otherwise keep the distribution
-   (`{author_value, share}`) — which maps onto CAS+ `composition`.
-3. Map to CAS+ (let the schema descriptions guide the exact shape):
+1. Identify the source(s) and **assay the available fields first** (`pandas`/
+   `openpyxl` for tables; `anndata`/`zarr` for obs — obs only, never the matrix; a
+   text list directly). For each column record its dtype (categorical vs
+   continuous), cardinality, and a few example values. Mark as **auto-excluded** the
+   **continuous / numeric** columns (QC metrics such as counts or percent-mito,
+   embeddings, per-cell floats) and the **identifier-like / high-cardinality
+   categoricals** (cell barcodes, per-cell IDs, index-like columns — distinct-value
+   count approaching the cell count): these are not per-label categories and would
+   massively bloat `cas.json`.
+2. **Present that field inventory to the user** — the candidate columns with their
+   dtype / cardinality / example values, and what was auto-excluded and why — and
+   **ask them to assign roles**: cell-type label(s), hierarchy / granularity tiers,
+   context covariates, or ignore; plus anything not derivable (DOI, organism).
+   Listing the actual fields lets the user choose from what is really there; confirm
+   the label column even when it looks obvious.
+3. For each chosen categorical covariate, summarise per label — near-constant → a
+   scalar; otherwise keep the distribution (`{author_value, share}`) — which maps
+   onto CAS+ `composition`.
+4. Map to CAS+ (let the schema descriptions guide the exact shape):
    - `source`: `{doi, title, ...}` (+ `organism`/`links` where known).
    - `labelsets`: one per cell-type column; set `rank` by granularity if known.
    - `annotations`: one per label, `cell_label` = the verbatim label, tied to its
@@ -60,7 +63,7 @@ Some fields are not derivable from the data — **ask the user** rather than gue
      unmapped author columns in `author_annotation_fields`.
    - Leave optional fields **absent** when unknown — downstream consumers are
      presence-aware.
-4. Write `projects/{project}/cas.json`. The `check_cas_annotation` PostToolUse hook
+5. Write `projects/{project}/cas.json`. The `check_cas_annotation` PostToolUse hook
    validates it against the schema; if it fails, read the errors and rewrite.
 
 ## Minimal case
