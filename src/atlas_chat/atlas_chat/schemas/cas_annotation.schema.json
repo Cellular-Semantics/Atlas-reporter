@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cas_annotation.schema.json",
+  "title": "CAS Cell Annotation Collection (local extension)",
+  "description": "A cell-set-level annotation collection shaped after the Cell Annotation Schema (CAS, general + BICAN) with local extensions: a per-cell-set 'composition' slot (the cell-set-level generalisation of CxG's cell-level descriptor fields), cell_count/cell_ratio on transferred annotations (reused for integration provenance), labelset 'rank'/'role', and a retained 'source' block carrying atlas-paper provenance for the report workflow. See planning/mockup_cas_cxg_annotations_2026-06-24.md.",
+  "type": "object",
+  "required": ["title", "source", "labelsets", "annotations"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Dataset title (CAS core)."
+    },
+    "description": {
+      "type": "string",
+      "description": "Dataset description (CAS core)."
+    },
+    "matrix_file_id": {
+      "type": "string",
+      "description": "Resolvable target for the cell-by-gene matrix: a URL or filename of the h5ad/zarr the annotations describe. Deliberately looser than CAS's namespace:accession form so a plain zarr/h5ad URL or path is valid."
+    },
+    "cellannotation_schema_version": {
+      "type": "string",
+      "description": "CAS version this document targets."
+    },
+    "source": {
+      "$ref": "#/$defs/AtlasPaper",
+      "description": "Local extension: atlas-paper provenance (DOI, subatlas papers, data provenance) consumed by the report workflow. Not part of CAS core."
+    },
+    "labelsets": {
+      "type": "array",
+      "description": "Annotation keys. One labelset per cell-type obs column.",
+      "items": { "$ref": "#/$defs/Labelset" }
+    },
+    "annotations": {
+      "type": "array",
+      "description": "Per-cell-set annotations, each tied to a labelset + cell_label.",
+      "items": { "$ref": "#/$defs/Annotation" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "Labelset": {
+      "type": "object",
+      "description": "A CAS labelset (annotation key). Local extension adds 'role'.",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string", "description": "Name of the annotation key (obs column)." },
+        "description": { "type": "string" },
+        "annotation_method": {
+          "type": "string",
+          "description": "How the annotations were made.",
+          "enum": ["algorithmic", "manual", "both"]
+        },
+        "rank": {
+          "type": "integer",
+          "description": "Relative granularity; 0 = most granular/specific.",
+          "minimum": 0
+        },
+        "role": {
+          "type": "string",
+          "description": "Local extension: functional role assigned by classify-obs-fields. Free text (open) with recommended values; drives routing, not enumerated as a hard constraint.",
+          "examples": ["author_cell_type", "transferred", "cluster"]
+        },
+        "automated_annotation": {
+          "type": "object",
+          "properties": {
+            "algorithm_name": { "type": "string" },
+            "algorithm_version": { "type": "string" },
+            "algorithm_repo_url": { "type": "string" },
+            "reference_location": { "type": "string" }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Annotation": {
+      "type": "object",
+      "description": "One annotated cell set. Closed set (additionalProperties:false) — arbitrary obs goes in author_annotation_fields, descriptor distributions in composition.",
+      "required": ["labelset", "cell_label"],
+      "additionalProperties": false,
+      "properties": {
+        "labelset": { "type": "string", "description": "Name of the labelset this annotation belongs to." },
+        "cell_label": { "type": "string", "minLength": 1, "description": "Verbatim author label for the cell set." },
+        "cell_fullname": { "type": "string", "description": "Full-length name (name_resolver)." },
+        "cell_ontology_term_id": { "type": "string", "description": "CL (or CL-extending) term id (ontology-term-lookup)." },
+        "cell_ontology_term": { "type": "string", "description": "Human-readable label for cell_ontology_term_id." },
+        "cell_set_accession": { "type": "string", "description": "Stable id for this cell set, independent of cell_label." },
+        "parent_cell_set_accession": { "type": ["string", "null"], "description": "Accession of the cell set that subsumes this one (hierarchy); null for root cell sets." },
+        "n_cells": { "type": "integer", "minimum": 0, "description": "Local extension: number of cells in the set." },
+        "rationale": { "type": "string", "description": "Free-text evidence/justification (report narrative)." },
+        "rationale_dois": { "type": "array", "items": { "type": "string" } },
+        "marker_gene_evidence": { "type": "array", "items": { "type": "string" } },
+        "negative_marker_gene_evidence": { "type": "array", "items": { "type": "string" } },
+        "synonyms": { "type": "array", "items": { "type": "string" } },
+        "transferred_annotations": {
+          "type": "array",
+          "description": "CAS slot reused for integration provenance (author labels inherited from contributing datasets). See TransferredAnnotation.",
+          "items": { "$ref": "#/$defs/TransferredAnnotation" }
+        },
+        "composition": {
+          "$ref": "#/$defs/Composition",
+          "description": "Local extension: cell-set-level distributions over descriptor categories (the set-level form of CxG cell-level fields)."
+        },
+        "author_annotation_fields": {
+          "type": "object",
+          "description": "Arbitrary UNMAPPED obs fields, verbatim. Must not duplicate a labelset or a composition category."
+        }
+      }
+    },
+    "TransferredAnnotation": {
+      "type": "object",
+      "description": "A label transferred from another source. CAS-BICAN shape; local extensions add cell_count/cell_ratio, source_labelset, and subatlas_paper. Two flavours share this slot: integration provenance (author label inherited from an integrated subatlas — set subatlas_paper) and computational transfer (an algorithm moved the label — set algorithm_name; any metric/threshold may be noted in comment). source_taxonomy and subatlas_paper may both be set and should then agree (cross-check).",
+      "required": ["transferred_cell_label"],
+      "additionalProperties": false,
+      "properties": {
+        "transferred_cell_label": { "type": "string" },
+        "source_taxonomy": { "type": "string", "description": "Identifier of the source taxonomy/dataset the label came from: a CAS taxonomy accession (e.g. CCN20230722), a PURL, or a DOI." },
+        "subatlas_paper": { "type": "string", "description": "The contributing subatlas the label was inherited from — a DOI, or a SubatlasPaper.label registered under source.subatlas_papers. If source_taxonomy is also set, the two should agree." },
+        "source_node_accession": { "type": "string" },
+        "source_labelset": { "type": "string", "description": "Name of the labelset within the source taxonomy/subatlas that the transferred label belongs to." },
+        "algorithm_name": { "type": "string" },
+        "comment": { "type": "string" },
+        "cell_count": { "type": "integer", "minimum": 0, "description": "Local extension: cells in this set carrying the transferred label." },
+        "cell_ratio": { "type": "number", "minimum": 0, "maximum": 1, "description": "Local extension: fraction of the set carrying the transferred label." }
+      }
+    },
+    "Composition": {
+      "type": "object",
+      "description": "Keyed by CxG descriptor category (tissue, development_stage, assay, disease, sex, self_reported_ethnicity, organism) or an open semantic key (e.g. germ_layer) for non-CxG descriptors. Keys are not enumerated; each value is a CompositionCategory.",
+      "additionalProperties": { "$ref": "#/$defs/CompositionCategory" }
+    },
+    "CompositionCategory": {
+      "type": "object",
+      "description": "The distribution of one descriptor category over the cell set.",
+      "required": ["values"],
+      "additionalProperties": false,
+      "properties": {
+        "author_field_name": { "type": "string", "description": "The original obs column this category came from." },
+        "values": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/CompositionValue" }
+        }
+      }
+    },
+    "CompositionValue": {
+      "type": "object",
+      "description": "One value in a descriptor distribution. 'author_value' is verbatim; 'value'/'ontology_term_id' are additive mapped forms. Mirrors CxG's per-field pair, one level up.",
+      "required": ["author_value"],
+      "additionalProperties": false,
+      "properties": {
+        "author_value": { "type": ["string", "number"], "description": "Verbatim author value (may already be a CURIE)." },
+        "value": { "type": "string", "description": "Human-readable mapped value." },
+        "ontology_term_id": { "type": "string", "description": "Mapped ontology CURIE, e.g. UBERON:0000966, HsapDv:0000048." },
+        "cell_count": { "type": "integer", "minimum": 0 },
+        "cell_ratio": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "AtlasPaper": {
+      "type": "object",
+      "description": "Atlas publication provenance (retained local block, mirrors cell_type_annotation.schema.json).",
+      "required": ["doi"],
+      "properties": {
+        "doi": { "type": "string", "pattern": "^10\\.\\d{4,}(\\.\\d+)?/.+" },
+        "title": { "type": "string" },
+        "pmcid": { "type": "string" },
+        "pmid": { "type": "string" },
+        "abstract": { "type": "string" },
+        "authors": { "type": "array", "items": { "type": "string" } },
+        "local_text_path": { "type": "string" },
+        "subatlas_papers": { "type": "array", "items": { "$ref": "#/$defs/SubatlasPaper" } },
+        "data_provenance": { "$ref": "#/$defs/DataProvenance" },
+        "atlas_name": { "type": "string", "description": "Human-readable atlas name, e.g. 'Human Female Reproductive System Cell Atlas v1'." },
+        "links": { "type": "object", "description": "Named external resources for the atlas as an open map of label -> URL/identifier, e.g. {\"preprint\": \"...\", \"cellxgene\": \"...\"}." }
+      }
+    },
+    "SubatlasPaper": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "label": { "type": "string" },
+        "first_author": { "type": ["string", "null"] },
+        "year": { "type": ["integer", "null"] },
+        "venue": { "type": ["string", "null"] },
+        "total_cells": { "type": ["integer", "null"] },
+        "doi": { "type": "string" },
+        "status": { "type": "string", "enum": ["candidate", "unresolved", "asta", "local", "needs_pdf"] },
+        "proposed_doi": { "type": "string" },
+        "proposed": { "type": "array", "items": { "$ref": "#/$defs/SubatlasCandidate" } }
+      }
+    },
+    "SubatlasCandidate": {
+      "type": "object",
+      "properties": {
+        "doi": { "type": "string" },
+        "title": { "type": "string" },
+        "year": { "type": ["integer", "null"] },
+        "corpus_id": { "type": "string" },
+        "venue": { "type": "string" }
+      }
+    },
+    "DataProvenance": {
+      "type": "object",
+      "required": ["source_type"],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": ["manual", "published_zarr", "local_h5ad", "local_zarr", "cellxgene", "cap", "spreadsheet"]
+        },
+        "dataset_id": { "type": "string" },
+        "source_url": { "type": "string" },
+        "file_path": { "type": "string" },
+        "obs_column": { "type": "string" },
+        "n_cells_total": { "type": "integer" },
+        "extracted_at": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}
