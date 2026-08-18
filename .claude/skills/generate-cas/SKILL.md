@@ -23,13 +23,19 @@ supplementary table.
 Some fields are not derivable from the data — **ask the user** rather than guess:
 - the atlas **DOI** (and title, if not in the source),
 - the **organism** (unless present as an obs/table column),
-- which column is the **cell-type label** (vs granularity/lineage/covariates), when
-  ambiguous.
+- **field roles** — which column(s) are the **cell-type label(s)**, which are coarser
+  **hierarchy / granularity tiers** (→ ranked labelsets), which are **context
+  covariates** (organism / developmental stage / tissue → `composition`), and which
+  to ignore. Confirm the label column even when it looks obvious.
+
+> A future obs-field classifier (in progress on `cxg-entrypoint-reader-discovery`)
+> will propose these field roles automatically; until it lands, ask the user.
 
 ## Procedure (lightweight)
 
 1. Identify the source type and gather inputs; ask the user for anything missing or
-   ambiguous (DOI, organism, which column is the label).
+   ambiguous (DOI, organism, and the field roles above — label vs hierarchy tiers
+   vs context covariates vs ignore).
 2. Read the source with whatever python libraries fit (`pandas`/`openpyxl` for
    tables; `anndata`/`zarr` for obs — obs only; a text list directly). Use only
    **categorical** columns — both for the cell-type label and for the co-annotation
