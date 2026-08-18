@@ -49,7 +49,9 @@ workflow and the programmatic Python graph.
 
 ## Workflow Sequence
 
-Given a **project name** and **cell type label**:
+Given a **project name** and a **query** — a free-text specification of which cell
+types to report on, optionally with contextual restrictions (e.g. "all fibroblasts",
+"fibroblasts in adult tissue", or a single cell-type label):
 
 ### 1. Load Project Config (CAS+)
 
@@ -76,6 +78,33 @@ From the loaded CAS+ document:
 > Migration note: downstream steps below still reference the legacy `label` /
 > `scope` fields; their input contracts move to CAS+ `cell_label` / `composition`
 > as part of the query-decomposer work.
+
+### 1b. Select target cell types (from the query)
+
+Interpret the **query** against the CAS+ annotations to choose which cell types to
+report on. Match flexibly — as a knowledgeable curator would — on `cell_label`,
+`lineage` / hierarchy, and `synonyms`; apply any contextual restriction in the query
+(developmental stage, tissue, organism, disease, …) as a filter over each
+annotation's `composition`. Do **not** impose a rigid query grammar: a query like
+"all fibroblasts" or "fibroblasts in adult tissue" is interpreted directly, and a
+bare cell-type label selects just that annotation.
+
+Record the resolved selection to `projects/{project}/selections/{slug}.json` for
+provenance (slug derived from the query text):
+
+```json
+{
+  "query": "fibroblasts in adult tissue",
+  "context": { "developmental_stage": "adult" },
+  "cas_source": "projects/{project}/cas.json",
+  "selected": [
+    { "cell_label": "...", "cell_set_accession": "...", "labelset": "..." }
+  ]
+}
+```
+
+**Steps 2–9 below run once per selected cell type.** The query's contextual
+restriction carries forward as that cell type's scope.
 
 ### 2. Fetch Supplementary Material
 
