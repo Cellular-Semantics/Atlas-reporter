@@ -31,9 +31,13 @@ Some fields are not derivable from the data — **ask the user** rather than gue
 1. Identify the source type and gather inputs; ask the user for anything missing or
    ambiguous (DOI, organism, which column is the label).
 2. Read the source with whatever python libraries fit (`pandas`/`openpyxl` for
-   tables; `anndata`/`zarr` for obs — obs only; a text list directly). For per-label
-   covariates that are near-constant, summarise as a scalar; otherwise keep the
-   distribution (`{author_value, share}`) — this maps onto CAS+ `composition`.
+   tables; `anndata`/`zarr` for obs — obs only; a text list directly). Use only
+   **categorical** columns — both for the cell-type label and for the co-annotation
+   covariates. **Skip continuous / numeric columns** (QC metrics such as counts or
+   percent-mito, embeddings, per-cell floats): a distribution over a continuous
+   column is not a meaningful per-label category. For each categorical covariate,
+   summarise per label — near-constant → a scalar; otherwise keep the distribution
+   (`{author_value, share}`) — which maps onto CAS+ `composition`.
 3. Map to CAS+ (let the schema descriptions guide the exact shape):
    - `source`: `{doi, title, ...}` (+ `organism`/`links` where known).
    - `labelsets`: one per cell-type column; set `rank` by granularity if known.
