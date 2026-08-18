@@ -10,8 +10,10 @@ For each test project `test_projects/<name>/`:
 
 - **Committed setup** (tracked): `cas.json` (the CAS+ config the run reads) and this
   project's `README.md` / any small source notes.
-- **Generated output** (git-ignored): `traversal_output/`, `reports/`, `selections/`,
-  and `runs/`. See `.gitignore`. Only the setup needed to reproduce a run is tracked.
+- **Generated output** (git-ignored): each run is a **self-contained folder**
+  `runs/<UTC-timestamp>/` holding `run.json`, `selections/`,
+  `traversal_output/<cell_type>/`, and `reports/<cell_type>.md`. All of `runs/` is
+  git-ignored; only the setup is tracked. See `.gitignore`.
 
 ## Running a test
 
@@ -25,8 +27,10 @@ query   = "<free-text cell-type selection>"   # e.g. "all macrophages"
 
 ## Run tracking
 
-Each test run writes a manifest to `runs/<UTC-timestamp>/run.json` (git-ignored)
-recording the **directory it was run in** and the **nature of the run**:
+Each run's reports and evidence live in its own `runs/<UTC-timestamp>/` folder (see
+above). That folder's `run.json` (git-ignored) records the **directory it was run
+in** and the **nature of the run** — and an optional `provenance_warning` when the
+run's provenance is uncertain:
 
 ```jsonc
 {

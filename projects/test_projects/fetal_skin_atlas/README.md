@@ -26,6 +26,10 @@ gone after a reboot; the reports under `reports/` here are the current-flow outp
 ## Running
 
 Fresh session in the `query-decomposer` worktree, then a query such as
-`all macrophages`, `TML macrophage and dermal papilla`, or a single label. Generated
-outputs land under `traversal_output/`, `reports/`, `selections/`, `runs/` (all
-git-ignored).
+`all macrophages`, `TML macrophage and dermal papilla`, or a single label. Each run's
+outputs land in a self-contained folder `runs/<UTC-timestamp>/` (git-ignored):
+`run.json` + `selections/` + `traversal_output/` + `reports/`.
+
+The existing `runs/20260818T184313Z/` was the first end-to-end run; its `run.json`
+carries a `provenance_warning` (it may have been driven from the wrong worktree
+folder). A clean re-run from the correct folder is planned.
