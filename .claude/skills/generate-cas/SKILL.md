@@ -35,8 +35,12 @@ Some fields are not derivable from the data — **ask the user** rather than gue
    **categorical** columns — both for the cell-type label and for the co-annotation
    covariates. **Skip continuous / numeric columns** (QC metrics such as counts or
    percent-mito, embeddings, per-cell floats): a distribution over a continuous
-   column is not a meaningful per-label category. For each categorical covariate,
-   summarise per label — near-constant → a scalar; otherwise keep the distribution
+   column is not a meaningful per-label category. Also **skip identifier-like /
+   high-cardinality categoricals** (cell barcodes, per-cell IDs, index-like columns):
+   a categorical whose distinct-value count approaches the number of cells is an
+   identifier, not a covariate, and would explode per-label distributions and
+   massively bloat `cas.json`. For each remaining categorical covariate, summarise
+   per label — near-constant → a scalar; otherwise keep the distribution
    (`{author_value, share}`) — which maps onto CAS+ `composition`.
 3. Map to CAS+ (let the schema descriptions guide the exact shape):
    - `source`: `{doi, title, ...}` (+ `organism`/`links` where known).
