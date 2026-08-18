@@ -1,0 +1,6 @@
+{
+  "title": "Test Atlas",
+  "source": { "doi": "10.1234/test" },
+  "labelsets": [ { "name": "author_cell_type" } ],
+  "annotations": [ { "labelset": "author_cell_type", "cell_label": "T cell" } ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Test Atlas",
+  "description": "A test CAS+ collection exercising the local extensions.",
+  "matrix_file_id": "https://example.org/matrix.h5ad",
+  "cellannotation_schema_version": "0.1.0-local",
+  "source": {
+    "doi": "10.1234/test",
+    "title": "A test atlas paper",
+    "authors": ["Ada Lovelace"],
+    "atlas_name": "Test Atlas v1",
+    "links": { "preprint": "https://example.org/preprint", "cellxgene": "https://example.org/cxg" },
+    "subatlas_papers": [ { "label": "Smith2021", "doi": "10.1000/smith" } ]
+  },
+  "labelsets": [ { "name": "author_cell_type", "rank": 0, "role": "author_cell_type" } ],
+  "annotations": [
+    {
+      "labelset": "author_cell_type",
+      "cell_label": "T cell",
+      "cell_set_accession": "CS_0001",
+      "parent_cell_set_accession": null,
+      "cell_ontology_term_id": "CL:0000084",
+      "cell_ontology_term": "T cell",
+      "marker_gene_evidence": ["CD3D", "CD3E"],
+      "synonyms": ["T lymphocyte"],
+      "transferred_annotations": [
+        {
+          "transferred_cell_label": "T lymphocyte",
+          "source_taxonomy": "DOI:10.1000/smith",
+          "subatlas_paper": "Smith2021",
+          "source_labelset": "celltype_Smith2021",
+          "cell_count": 100,
+          "cell_ratio": 0.5,
+          "comment": "Integration provenance from subatlas Smith2021."
+        }
+      ],
+      "composition": {
+        "organism": {
+          "author_field_name": "organism_ontology_term_id",
+          "values": [ { "author_value": "NCBITaxon:9606", "value": "Homo sapiens", "ontology_term_id": "NCBITaxon:9606", "cell_ratio": 1.0 } ]
+        }
+      },
+      "author_annotation_fields": { "author_cluster_id": "c12" }
+    }
+  ]
+}
