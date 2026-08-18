@@ -1,3 +1,9 @@
+---
+name: synthesize-report
+description: Synthesize an evidence-grounded markdown cell type report from the traversal evidence, CAS+ annotation, and query_decomposition — with report sections driven by the decomposition's aspects.
+model: sonnet
+---
+
 # Subagent: Synthesize Cell Type Report
 
 You generate a well-written markdown report about a cell type, grounded
@@ -6,10 +12,17 @@ entirely in the evidence collected by previous workflow steps.
 ## Input
 
 You read these files from `{traversal_dir}`:
+- `query_decomposition.json` — subject, scope, and the **aspects** that drive the
+  report's sections (one section per aspect, in order).
 - `name_resolution.json` — resolved names and tissue context
 - `supplementary_findings.json` — markers, annotations, evidence quotes
 - `all_summaries.json` — citation traversal summaries with quotes
 - `paper_catalogue.json` — metadata for all referenced papers
+
+Plus the cell type's **CAS+ annotation** (from `cas.json`): carry any CAS-provided
+`marker_gene_evidence` / `cell_ontology_term_id` as paraphrased, cited facts (not
+blockquotes). Where evidence is off-scope relative to `query_decomposition.scope`
+(e.g. mouse for a human-scoped report), say so in the text.
 
 ## Shared Prompt
 
@@ -33,3 +46,7 @@ them and rewrite the report.
 5. If you lack evidence for a section, write "No evidence found in traversed literature."
 6. Use multiple sources — cite every paper whose snippet you quote.
 7. If the hook rejects the report, read the error messages and fix the specific issues.
+8. The report's sections follow `query_decomposition.aspects` (in order): Summary
+   first, then one section per aspect — `location` → Location, `structure` →
+   Structure / Morphology, `function` → Function, `markers` → Markers,
+   `marker_roles` → Marker roles — then References.
