@@ -7,6 +7,7 @@ network-free.
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 
 import numpy as np
@@ -53,6 +54,7 @@ def _write_paper_files(
     role: str,
     chunks: list[dict],
     embeddings: np.ndarray,
+    window_rows: list[int] | None = None,
 ) -> dict:
     p_dir = project_dir / "local_index" / "papers" / slug
     (p_dir / "chunks").mkdir(parents=True, exist_ok=True)
@@ -61,6 +63,11 @@ def _write_paper_files(
         for c in chunks:
             fh.write(json.dumps(c) + "\n")
     np.save(p_dir / "chunks" / "embeddings.npy", embeddings)
+    # One embedding row per window; by default one window per chunk.
+    rows = window_rows if window_rows is not None else [c["chunk_id"] for c in chunks]
+    (p_dir / "chunks" / "window_index.json").write_text(
+        json.dumps({"n_chunks": len(chunks), "n_windows": len(rows), "rows": rows})
+    )
     paper_meta = {
         "corpus_id": lsi._local_corpus_id(doi),
         "title": f"Paper {slug}",
@@ -92,6 +99,7 @@ def _write_paper_files(
         "hash": "deadbeef",
         "embedding_model": lsi.EMBED_MODEL,
         "n_chunks": len(chunks),
+        "n_windows": len(rows),
         "n_sentences": 0,
         "n_refs": 0,
         "n_corpus_ids_resolved": 0,
@@ -188,7 +196,12 @@ def test_migration_moves_legacy_files(tmp_path: Path) -> None:
     assert corpus["atlas_doi"] == "10.1234/legacy"
     new_manifest = json.loads((p_dir / "manifest.json").read_text())
     assert new_manifest["role"] == "atlas"
-    assert new_manifest["version"] == lsi.MANIFEST_VERSION
+    # Migration only moves files. The vectors it moves were embedded from
+    # truncated chunks and have no window index (#23), so the manifest must keep
+    # the legacy version and say it needs rebuilding — stamping the current
+    # version would make a stale index look fresh.
+    assert new_manifest["version"] != lsi.MANIFEST_VERSION
+    assert new_manifest["needs_rebuild"] is True
 
 
 @pytest.mark.unit
@@ -273,10 +286,20 @@ def test_remove_paper_drops_dir_and_corpus_entry(tmp_path: Path) -> None:
 # ---------------------------------------------------------------------------
 
 
+class _FakeTokenizer:
+    """Whitespace tokeniser, so window sizing is predictable in tests."""
+
+    def tokenize(self, text):
+        return text.split()
+
+
 class _FakeEmbedder:
     """Encodes a 'query' to a 2-d vector via simple keyword counting against
     a known token vocabulary. Used to make the search test deterministic
     without loading sentence-transformers."""
+
+    max_seq_length = lsi.EMBED_MAX_TOKENS
+    tokenizer = _FakeTokenizer()
 
     def encode(self, texts, convert_to_numpy=True, show_progress_bar=False):  # noqa: D401
         out = []
@@ -352,6 +375,7 @@ def multi_paper_project(tmp_path, monkeypatch):
     fake_st.SentenceTransformer = lambda *args, **kwargs: _FakeEmbedder()  # type: ignore[attr-defined]
     monkeypatch.setitem(sys.modules, "sentence_transformers", fake_st)
     lsi._load_index.cache_clear()
+    lsi._get_embedder.cache_clear()
     return tmp_path
 
 
@@ -378,3 +402,162 @@ def test_search_filter_by_doi(multi_paper_project: Path) -> None:
 @pytest.mark.unit
 def test_search_empty_corpus_returns_empty(tmp_path: Path) -> None:
     assert lsi.search(tmp_path, "anything", k=5) == []
+
+
+@pytest.mark.unit
+def test_stale_papers_empty_when_current(windowed_project: Path) -> None:
+    assert lsi.stale_papers(windowed_project) == []
+
+
+@pytest.mark.unit
+def test_stale_papers_reports_old_manifest_version(windowed_project: Path) -> None:
+    """The case every existing corpus is in until it is rebuilt."""
+    mpath = windowed_project / "local_index" / "papers" / "atlas-slug" / "manifest.json"
+    manifest = json.loads(mpath.read_text())
+    manifest["version"] = lsi.MANIFEST_VERSION - 1
+    mpath.write_text(json.dumps(manifest))
+    stale = lsi.stale_papers(windowed_project)
+    assert [p["slug"] for p in stale] == ["atlas-slug"]
+    assert str(lsi.MANIFEST_VERSION) in stale[0]["reason"]
+
+
+@pytest.mark.unit
+def test_stale_papers_reports_missing_window_index(windowed_project: Path) -> None:
+    (
+        windowed_project / "local_index" / "papers" / "atlas-slug" / "chunks" / "window_index.json"
+    ).unlink()
+    stale = lsi.stale_papers(windowed_project)
+    assert [p["slug"] for p in stale] == ["atlas-slug"]
+    assert "window_index" in stale[0]["reason"]
+
+
+@pytest.mark.unit
+def test_old_manifest_version_is_not_searched(windowed_project: Path) -> None:
+    """Vectors from a different chunking cannot be ranked against current ones."""
+    mpath = windowed_project / "local_index" / "papers" / "atlas-slug" / "manifest.json"
+    manifest = json.loads(mpath.read_text())
+    manifest["version"] = lsi.MANIFEST_VERSION - 1
+    mpath.write_text(json.dumps(manifest))
+    lsi._load_index.cache_clear()
+    assert lsi.search(windowed_project, "sub", k=5) == []
+
+
+@pytest.mark.unit
+def test_unusable_corpus_logs_an_error(windowed_project: Path, caplog) -> None:
+    """Returning [] is indistinguishable from "nothing relevant found", so a
+    corpus that can serve nothing has to say so above warning level."""
+    (
+        windowed_project / "local_index" / "papers" / "atlas-slug" / "chunks" / "window_index.json"
+    ).unlink()
+    lsi._load_index.cache_clear()
+    with caplog.at_level(logging.ERROR):
+        assert lsi.search(windowed_project, "sub", k=5) == []
+    errors = [r for r in caplog.records if r.levelno >= logging.ERROR]
+    assert errors, "an unusable corpus must log at ERROR"
+    assert "rebuild" in errors[0].getMessage()
+
+
+@pytest.mark.unit
+def test_stale_window_ids_are_skipped(windowed_project: Path) -> None:
+    """Matching row counts but stale chunk ids would otherwise be served as
+    empty snippets."""
+    path = (
+        windowed_project / "local_index" / "papers" / "atlas-slug" / "chunks" / "window_index.json"
+    )
+    path.write_text(json.dumps({"n_chunks": 1, "n_windows": 2, "rows": [0, 7]}))
+    lsi._load_index.cache_clear()
+    assert lsi.search(windowed_project, "sub", k=5) == []
+
+
+# ---------------------------------------------------------------------------
+# Windowed embeddings (#23)
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture
+def windowed_project(tmp_path, monkeypatch):
+    """One paper, one chunk, two embedding rows — the match is in window 2.
+
+    Before #23 the chunk had a single vector taken from its truncated prefix, so
+    a query matching only the tail of the chunk could not retrieve it.
+    """
+    _write_paper_files(
+        tmp_path,
+        "atlas-slug",
+        "10.1234/atlas",
+        "atlas",
+        [
+            {
+                "chunk_id": 0,
+                "section": "Results",
+                "char_start": 0,
+                "char_end": 60,
+                "text": "Prefix about atlas things. Tail about sub things.",
+            },
+        ],
+        # Row 0 = prefix window ('atlas' axis), row 1 = tail window ('sub' axis).
+        np.array([[1.0, 0.0], [0.0, 1.0]]),
+        window_rows=[0, 0],
+    )
+    corpus = lsi._empty_corpus("10.1234/atlas")
+    corpus["papers"] = [
+        {
+            "slug": "atlas-slug",
+            "doi": "10.1234/atlas",
+            "role": "atlas",
+            "source_type": "jats",
+            "title": "Atlas",
+            "n_chunks": 1,
+        },
+    ]
+    (tmp_path / "local_index" / "corpus.json").write_text(json.dumps(corpus))
+
+    import sys
+    import types
+
+    fake_st = types.ModuleType("sentence_transformers")
+    fake_st.SentenceTransformer = lambda *args, **kwargs: _FakeEmbedder()  # type: ignore[attr-defined]
+    monkeypatch.setitem(sys.modules, "sentence_transformers", fake_st)
+    lsi._load_index.cache_clear()
+    lsi._get_embedder.cache_clear()
+    return tmp_path
+
+
+@pytest.mark.unit
+def test_search_matches_on_non_first_window(windowed_project: Path) -> None:
+    """A query that only matches the tail of a chunk still retrieves it."""
+    hits = lsi.search(windowed_project, "sub", k=5)
+    assert len(hits) == 1
+    assert hits[0]["chunk_id"] == 0
+    assert hits[0]["score"] == pytest.approx(1.0)
+    # The full chunk text comes back, not the window that matched.
+    assert hits[0]["snippet"] == "Prefix about atlas things. Tail about sub things."
+
+
+@pytest.mark.unit
+def test_search_returns_each_chunk_once(windowed_project: Path) -> None:
+    """Both windows of the chunk score, but the chunk is not duplicated."""
+    hits = lsi.search(windowed_project, "atlas sub", k=5)
+    assert len(hits) == 1
+    assert [(h["paper_slug"], h["chunk_id"]) for h in hits] == [("atlas-slug", 0)]
+
+
+@pytest.mark.unit
+def test_pre_window_paper_is_skipped(windowed_project: Path) -> None:
+    """A paper built before #23 has no window index and carries truncated
+    vectors, so it is skipped rather than mis-scored."""
+    (
+        windowed_project / "local_index" / "papers" / "atlas-slug" / "chunks" / "window_index.json"
+    ).unlink()
+    lsi._load_index.cache_clear()
+    assert lsi.search(windowed_project, "sub", k=5) == []
+
+
+@pytest.mark.unit
+def test_window_index_length_mismatch_is_skipped(windowed_project: Path) -> None:
+    path = (
+        windowed_project / "local_index" / "papers" / "atlas-slug" / "chunks" / "window_index.json"
+    )
+    path.write_text(json.dumps({"n_chunks": 1, "n_windows": 1, "rows": [0]}))
+    lsi._load_index.cache_clear()
+    assert lsi.search(windowed_project, "sub", k=5) == []

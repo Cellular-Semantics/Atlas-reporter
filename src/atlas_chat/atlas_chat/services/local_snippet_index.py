@@ -20,7 +20,8 @@ On-disk layout::
         <paper_slug>/
           manifest.json
           source/{paper.jats.xml|paper.pdf|paper.md}
-          chunks/{chunks.jsonl, embeddings.npy, chunks.fulltext.txt}
+          chunks/{chunks.jsonl, embeddings.npy, window_index.json,
+                  chunks.fulltext.txt}
           citations/{sentences.jsonl, ref_resolution.json}   # JATS only
           snippet_index/snippets.json
 
@@ -42,6 +43,7 @@ import sys
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from collections.abc import Callable
 from dataclasses import asdict, dataclass, field
 from functools import lru_cache
 from pathlib import Path
@@ -52,7 +54,16 @@ logger = logging.getLogger(__name__)
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 CHUNK_TARGET_CHARS = 2800
 CHUNK_OVERLAP_CHARS = 200
-MANIFEST_VERSION = 2  # bumped: per-paper manifest, corpus model
+
+# The embedding model only reads its first ``EMBED_MAX_TOKENS`` word pieces and
+# silently drops the rest, while chunks run to ~2800 chars. So chunks are the
+# unit we store and return, and each is embedded as one or more windows that fit
+# the model; a chunk scores as the best of its windows. See issue #23.
+EMBED_MAX_TOKENS = 256  # all-MiniLM-L6-v2 max_seq_length
+WINDOW_TARGET_TOKENS = 230  # headroom for [CLS]/[SEP] and tokeniser disagreement
+WINDOW_OVERLAP_TOKENS = 40
+
+MANIFEST_VERSION = 3  # bumped: windowed embeddings (#23)
 CORPUS_VERSION = 1
 
 SourceType = Literal["jats", "pdf"]
@@ -301,6 +312,107 @@ def chunk_segments(
 
     fulltext = "".join(fulltext_parts)
     return fulltext, chunks
+
+
+_SENTENCE_END = re.compile(r"(?<=[.!?])\s+|\n\n+")
+
+
+def _sentence_spans(text: str) -> list[tuple[int, int]]:
+    """Char spans of the sentence-ish pieces of ``text``, in order and covering it all."""
+    spans: list[tuple[int, int]] = []
+    pos = 0
+    for m in _SENTENCE_END.finditer(text):
+        if m.end() > pos:
+            spans.append((pos, m.end()))
+            pos = m.end()
+    if pos < len(text):
+        spans.append((pos, len(text)))
+    return spans or [(0, len(text))]
+
+
+def _split_long_span(
+    text: str,
+    start: int,
+    end: int,
+    count_tokens: Callable[[str], int],
+    target_tokens: int,
+) -> list[tuple[int, int]]:
+    """Break one over-long span at whitespace so each piece fits ``target_tokens``.
+
+    Used for the rare sentence (or unsplittable table row) that is on its own
+    longer than a window.
+    """
+    if count_tokens(text[start:end]) <= target_tokens:
+        return [(start, end)]
+
+    # Pack whole words. Summing per-word counts overestimates the count of the
+    # joined text (word pieces never merge across whitespace), so a piece built
+    # this way is guaranteed to fit — a char-proportional split is not, because
+    # tokens per char varies wildly across gene symbols and accession numbers.
+    word_spans = [(m.start(), m.end()) for m in re.finditer(r"\S+", text[start:end])]
+    if not word_spans:
+        return [(start, end)]
+
+    out: list[tuple[int, int]] = []
+    piece_start = 0
+    running = 0
+    for w_start, w_end in word_spans:
+        cost = count_tokens(text[start + w_start : start + w_end])
+        if running and running + cost > target_tokens:
+            out.append((start + piece_start, start + w_start))
+            piece_start = w_start
+            running = 0
+        running += cost
+    out.append((start + piece_start, end))
+    return out
+
+
+def split_chunk_into_windows(
+    text: str,
+    count_tokens: Callable[[str], int],
+    target_tokens: int = WINDOW_TARGET_TOKENS,
+    overlap_tokens: int = WINDOW_OVERLAP_TOKENS,
+) -> list[str]:
+    """Split one chunk into overlapping windows the embedding model can read whole.
+
+    ``count_tokens`` should be the embedding model's own tokeniser, so window
+    sizing and encoding cannot drift apart. Every window is an exact substring of
+    ``text``; a chunk that already fits comes back as a single window equal to its
+    input, so short chunks behave exactly as they did before windowing.
+
+    Windows are the retrieval unit only — the chunk stays the unit that is stored,
+    returned and quoted.
+    """
+    if not text:
+        return []
+    if count_tokens(text) <= target_tokens:
+        return [text]
+
+    # Sentence spans, with any over-long sentence pre-broken so packing always fits.
+    spans: list[tuple[int, int]] = []
+    for start, end in _sentence_spans(text):
+        spans.extend(_split_long_span(text, start, end, count_tokens, target_tokens))
+    costs = [count_tokens(text[a:b]) for a, b in spans]
+
+    windows: list[str] = []
+    i = 0
+    while i < len(spans):
+        total = 0
+        j = i
+        while j < len(spans) and (total + costs[j] <= target_tokens or j == i):
+            total += costs[j]
+            j += 1
+        windows.append(text[spans[i][0] : spans[j - 1][1]])
+        if j >= len(spans):
+            break
+        # Step back over the trailing spans that fit in the overlap budget.
+        back = 0
+        carried = 0
+        while back < (j - i) - 1 and carried + costs[j - 1 - back] <= overlap_tokens:
+            carried += costs[j - 1 - back]
+            back += 1
+        i = j - back
+    return windows
 
 
 # ------------------------------------------------------------------
@@ -591,22 +703,117 @@ def _local_corpus_id(doi: str) -> str:
 
 
 def _manifest_hash(source_bytes: bytes, source_type: SourceType) -> str:
+    """Hash of everything that would change the vectors, so a parameter change
+    invalidates existing indexes instead of leaving stale vectors in place."""
     h = hashlib.sha256()
     h.update(source_bytes)
-    h.update(f"|emb={EMBED_MODEL}|st={source_type}|m={MANIFEST_VERSION}".encode())
+    h.update(
+        (
+            f"|emb={EMBED_MODEL}|st={source_type}|m={MANIFEST_VERSION}"
+            f"|ct={CHUNK_TARGET_CHARS}|co={CHUNK_OVERLAP_CHARS}"
+            f"|wt={WINDOW_TARGET_TOKENS}|wo={WINDOW_OVERLAP_TOKENS}"
+        ).encode()
+    )
     return h.hexdigest()
 
 
-def _embed_and_save(texts: list[str], out_path: Path) -> None:
-    import numpy as np
+@lru_cache(maxsize=2)
+def _get_embedder(model_name: str = EMBED_MODEL) -> Any:
+    """Load the sentence-transformers model once per process.
+
+    ``search`` used to reload it on every call, which dominated the cost of a
+    query on a warm index.
+    """
     from sentence_transformers import SentenceTransformer
 
-    model = SentenceTransformer(EMBED_MODEL)
+    model = SentenceTransformer(model_name)
+    if getattr(model, "max_seq_length", None) != EMBED_MAX_TOKENS:
+        logger.warning(
+            "%s reports max_seq_length=%s but windows are sized for %d — "
+            "check WINDOW_TARGET_TOKENS.",
+            model_name,
+            getattr(model, "max_seq_length", "?"),
+            EMBED_MAX_TOKENS,
+        )
+    return model
+
+
+def _token_counter(tokenizer: Any) -> Callable[[str], int]:
+    """Count word pieces without tripping the model's length warning.
+
+    Counting a whole chunk is how we decide to split it, so the text handed to
+    the tokeniser here is deliberately longer than the model can read. Left to
+    itself transformers logs "Token indices sequence length is longer than the
+    specified maximum" — a warning that means something real during encoding and
+    nothing at all during counting. Silencing it here keeps it trustworthy in the
+    place it matters.
+    """
+
+    def count(text: str) -> int:
+        try:
+            return len(tokenizer(text, add_special_tokens=False, verbose=False)["input_ids"])
+        except TypeError:
+            return len(tokenizer.tokenize(text))
+
+    return count
+
+
+def _cached_ref_resolution(
+    citations_dir: Path,
+    prior: dict[str, Any],
+    source_sha: str,
+) -> dict[str, dict[str, str | None]] | None:
+    """The previous run's ``ref_resolution.json``, if it was built from this exact
+    source. ``None`` when there is nothing safe to reuse.
+
+    Manifests written before ``source_sha`` existed get the benefit of the doubt:
+    the source lives inside the paper directory and only changes when the paper is
+    re-fetched, so the stored resolution came from the stored source. Callers that
+    want to resolve again regardless pass ``refresh_refs`` to
+    :func:`build_paper_index`.
+    """
+    if "source_sha" in prior:
+        if prior["source_sha"] != source_sha:
+            return None
+    elif not prior:
+        return None
+    path = citations_dir / "ref_resolution.json"
+    if not path.exists():
+        return None
+    try:
+        cached = json.loads(path.read_text())
+    except Exception:
+        return None
+    return cached if isinstance(cached, dict) and cached else None
+
+
+def _embed_chunks_and_save(chunks: list[Chunk], chunks_dir: Path) -> int:
+    """Embed each chunk as one or more model-sized windows.
+
+    Writes ``embeddings.npy`` with one row per window and ``window_index.json``
+    mapping row → ``chunk_id``. Returns the number of windows.
+    """
+    import numpy as np
+
+    model = _get_embedder()
+    count_tokens = _token_counter(model.tokenizer)
+
+    texts: list[str] = []
+    rows: list[int] = []
+    for chunk in chunks:
+        windows = split_chunk_into_windows(chunk.text, count_tokens) or [chunk.text]
+        texts.extend(windows)
+        rows.extend([chunk.chunk_id] * len(windows))
+
     vecs = model.encode(texts, convert_to_numpy=True, show_progress_bar=False)
     norms = np.linalg.norm(vecs, axis=1, keepdims=True)
     norms[norms == 0] = 1.0
     vecs = vecs / norms
-    np.save(out_path, vecs)
+    np.save(chunks_dir / "embeddings.npy", vecs)
+    (chunks_dir / "window_index.json").write_text(
+        json.dumps({"n_chunks": len(chunks), "n_windows": len(rows), "rows": rows})
+    )
+    return len(rows)
 
 
 def _resolution_breakdown(ref_resolution: dict[str, dict[str, str | None]]) -> dict[str, int]:
@@ -625,6 +832,7 @@ def build_paper_index(
     pdf_path: Path | None = None,
     role: PaperRole = "atlas",
     force: bool = False,
+    refresh_refs: bool = False,
 ) -> dict[str, Any]:
     """Build (or refresh) the local index entry for one paper.
 
@@ -673,16 +881,16 @@ def build_paper_index(
 
     raw_bytes = source_path.read_bytes()
     expected_hash = _manifest_hash(raw_bytes, source_type)
+    source_sha = hashlib.sha256(raw_bytes).hexdigest()
     manifest_path = p_dir / "manifest.json"
-    if manifest_path.exists() and not force:
-        try:
-            existing = json.loads(manifest_path.read_text())
-            if existing.get("hash") == expected_hash:
-                logger.info("Paper %s already up to date.", slug)
-                _upsert_corpus_entry(project_dir, slug, existing)
-                return existing
-        except Exception:
-            pass
+    prior: dict[str, Any] = {}
+    if manifest_path.exists():
+        with contextlib.suppress(Exception):
+            prior = json.loads(manifest_path.read_text())
+    if prior and not force and prior.get("hash") == expected_hash:
+        logger.info("Paper %s already up to date.", slug)
+        _upsert_corpus_entry(project_dir, slug, prior)
+        return prior
 
     # Extract body segments
     if source_type == "jats":
@@ -702,7 +910,7 @@ def build_paper_index(
         for c in chunks:
             fh.write(json.dumps(asdict(c)) + "\n")
 
-    _embed_and_save([c.text for c in chunks], chunks_dir / "embeddings.npy")
+    n_windows = _embed_chunks_and_save(chunks, chunks_dir)
 
     # Citation graph: JATS only — PDFs have no xref markers.
     sent_rows: list[SentenceRow] = []
@@ -715,8 +923,19 @@ def build_paper_index(
             with (citations_dir / "sentences.jsonl").open("w") as fh:
                 for r in sent_rows:
                     fh.write(json.dumps(asdict(r)) + "\n")
-            ref_resolution = _resolve_refs_to_corpus_ids(refs_full)
-            (citations_dir / "ref_resolution.json").write_text(json.dumps(ref_resolution, indent=2))
+            # Resolving references means one Semantic Scholar title-match per
+            # unresolved ref, serially — tens of minutes for a paper with a long
+            # bibliography. It depends only on the source, so a rebuild forced by
+            # a chunking or embedding change reuses it.
+            cached_refs = _cached_ref_resolution(citations_dir, prior, source_sha)
+            if cached_refs is not None and not refresh_refs:
+                logger.info("Reusing cached reference resolution for %s (source unchanged)", slug)
+                ref_resolution = cached_refs
+            else:
+                ref_resolution = _resolve_refs_to_corpus_ids(refs_full)
+                (citations_dir / "ref_resolution.json").write_text(
+                    json.dumps(ref_resolution, indent=2)
+                )
             ref_id_to_corpus = {
                 rid: entry["corpus_id"]
                 for rid, entry in ref_resolution.items()
@@ -738,8 +957,10 @@ def build_paper_index(
         "source_type": source_type,
         "citation_graph": citation_graph,
         "hash": expected_hash,
+        "source_sha": source_sha,
         "embedding_model": EMBED_MODEL,
         "n_chunks": len(chunks),
+        "n_windows": n_windows,
         "n_sentences": len(sent_rows),
         "n_refs": len(ref_resolution),
         "n_corpus_ids_resolved": len(ref_id_to_corpus),
@@ -748,10 +969,11 @@ def build_paper_index(
     }
     manifest_path.write_text(json.dumps(manifest, indent=2))
     logger.info(
-        "Built paper index [%s/%s]: %d chunks, %d sentences, citation_graph=%s",
+        "Built paper index [%s/%s]: %d chunks (%d embed windows), %d sentences, citation_graph=%s",
         slug,
         source_type,
         len(chunks),
+        n_windows,
         len(sent_rows),
         citation_graph,
     )
@@ -850,6 +1072,7 @@ def _upsert_corpus_entry(project_dir: Path, slug: str, manifest: dict[str, Any])
         "source_type": manifest["source_type"],
         "title": manifest.get("paper", {}).get("title", ""),
         "n_chunks": manifest.get("n_chunks", 0),
+        "n_windows": manifest.get("n_windows"),
     }
     by_slug = {p["slug"]: p for p in corpus.get("papers", [])}
     by_slug[slug] = entry
@@ -900,9 +1123,14 @@ def _migrate_legacy_layout_if_needed(project_dir: Path) -> None:
         if old.exists() and not new.exists():
             old.rename(new)
 
-    # Synthesize a v2 manifest from the v1 fields we can fill.
+    # Synthesize a manifest from the v1 fields we can fill. Keep the legacy
+    # version: migration only moves files, and the vectors it moves were embedded
+    # from truncated chunks with no window index (#23). Claiming the current
+    # version would make a stale index look fresh — `rebuild` re-embeds and
+    # stamps the real version.
     new_manifest = {
-        "version": MANIFEST_VERSION,
+        "version": legacy.get("version", 1),
+        "needs_rebuild": True,
         "slug": slug,
         "doi": doi,
         "role": "atlas",
@@ -970,6 +1198,7 @@ def add_paper(
     jats_path: Path | None = None,
     role: PaperRole = "subatlas",
     force: bool = False,
+    refresh_refs: bool = False,
 ) -> dict[str, Any]:
     """Add a subatlas reference paper to the corpus."""
     return build_paper_index(
@@ -979,6 +1208,7 @@ def add_paper(
         jats_path=jats_path,
         role=role,
         force=force,
+        refresh_refs=refresh_refs,
     )
 
 
@@ -1007,9 +1237,157 @@ def list_papers(project_dir: Path) -> list[dict[str, Any]]:
     return _load_corpus_json(project_dir).get("papers", [])
 
 
+def rebuild_corpus(
+    project_dir: Path,
+    dois: list[str] | None = None,
+    refresh_refs: bool = False,
+) -> list[dict[str, Any]]:
+    """Force-rebuild every paper in the corpus from the source already on disk.
+
+    ``init-corpus --force`` only re-does the atlas paper and the JATS subatlas
+    papers named in the project config, so papers added from a PDF via
+    ``add_paper`` are left behind. This walks ``corpus.json`` instead, so whatever
+    is in the corpus gets rebuilt.
+
+    Reference resolution is reused when the source has not changed, since it is
+    much slower than the rebuild itself; pass ``refresh_refs`` to redo it.
+
+    Pass ``dois`` to restrict it to particular papers. Returns one result dict per
+    paper, with the chunk and window counts before and after, or an ``error``.
+    """
+    _migrate_legacy_layout_if_needed(project_dir)
+    wanted: set[str] | None = {paper_slug(d) for d in dois} if dois else None
+
+    results: list[dict[str, Any]] = []
+    for entry in _load_corpus_json(project_dir).get("papers", []):
+        slug = entry["slug"]
+        if wanted is not None and slug not in wanted:
+            continue
+        p_dir = _paper_dir(project_dir, slug)
+        manifest_path = p_dir / "manifest.json"
+        before: dict[str, Any] = {}
+        if manifest_path.exists():
+            with contextlib.suppress(Exception):
+                before = json.loads(manifest_path.read_text())
+
+        doi = before.get("doi") or entry.get("doi")
+        role: PaperRole = before.get("role") or entry.get("role") or "subatlas"
+        source_type = before.get("source_type") or entry.get("source_type")
+        jats = p_dir / "source" / "paper.jats.xml"
+        pdf = p_dir / "source" / "paper.pdf"
+        if source_type == "pdf" or (source_type is None and pdf.exists()):
+            kwargs: dict[str, Any] = {"pdf_path": pdf}
+            source_path = pdf
+        else:
+            kwargs = {"jats_path": jats}
+            source_path = jats
+
+        result: dict[str, Any] = {
+            "slug": slug,
+            "doi": doi,
+            "source_type": source_type,
+            "n_chunks_before": before.get("n_chunks"),
+            "n_windows_before": before.get("n_windows"),
+        }
+        if not doi:
+            result["error"] = "no DOI in manifest or corpus entry"
+            results.append(result)
+            continue
+        if not source_path.exists():
+            result["error"] = f"source missing: {source_path}"
+            results.append(result)
+            continue
+
+        try:
+            manifest = build_paper_index(
+                project_dir,
+                doi,
+                role=role,
+                force=True,
+                refresh_refs=refresh_refs,
+                **kwargs,
+            )
+        except Exception as exc:
+            result["error"] = f"{type(exc).__name__}: {exc}"
+        else:
+            result["n_chunks"] = manifest.get("n_chunks")
+            result["n_windows"] = manifest.get("n_windows")
+            result["version"] = manifest.get("version")
+        results.append(result)
+
+    _load_index.cache_clear()
+    return results
+
+
 # ------------------------------------------------------------------
 # Retrieval API
 # ------------------------------------------------------------------
+
+
+def _stale_reason(
+    manifest: dict[str, Any],
+    windows_path: Path,
+    n_vectors: int,
+    chunks_by_id: dict[int, Any] | None = None,
+) -> str | None:
+    """Why this paper's vectors cannot be used, or ``None`` if they can.
+
+    Kept separate from loading so a caller can ask about a corpus without paying
+    for it — see :func:`stale_papers`.
+    """
+    version = manifest.get("version")
+    if version != MANIFEST_VERSION:
+        return f"manifest version {version}, expected {MANIFEST_VERSION}"
+    if not windows_path.exists():
+        return "no window_index.json (built before #23)"
+    try:
+        rows = json.loads(windows_path.read_text())["rows"]
+    except Exception as exc:
+        return f"unreadable window_index.json ({type(exc).__name__})"
+    if len(rows) != n_vectors:
+        return f"window index has {len(rows)} rows, embeddings have {n_vectors}"
+    if chunks_by_id is not None:
+        # Row counts can agree while the ids are stale. An unknown chunk_id would
+        # otherwise be served as an empty snippet.
+        unknown = sorted({c for c in rows if c not in chunks_by_id})
+        if unknown:
+            return f"window index names chunk_id(s) absent from chunks.jsonl: {unknown[:3]}"
+    return None
+
+
+def stale_papers(project_dir: Path) -> list[dict[str, str]]:
+    """Papers in the corpus whose vectors cannot be used, with the reason.
+
+    Empty list means every paper is usable. Cheap — reads manifests and the
+    window index, never the embeddings. Call this before relying on the local
+    index if you would rather fail loudly than search an empty corpus.
+    """
+    project_dir = Path(project_dir)
+    _migrate_legacy_layout_if_needed(project_dir)
+    out: list[dict[str, str]] = []
+    for entry in _load_corpus_json(project_dir).get("papers", []):
+        slug = entry["slug"]
+        p_dir = _paper_dir(project_dir, slug)
+        manifest_path = p_dir / "manifest.json"
+        emb_path = p_dir / "chunks" / "embeddings.npy"
+        if not (manifest_path.exists() and emb_path.exists()):
+            out.append({"slug": slug, "reason": "incomplete on disk"})
+            continue
+        try:
+            manifest = json.loads(manifest_path.read_text())
+        except Exception:
+            out.append({"slug": slug, "reason": "unreadable manifest.json"})
+            continue
+        # n_windows is the recorded row count; trust it rather than loading numpy.
+        n_vectors = manifest.get("n_windows")
+        reason = _stale_reason(
+            manifest,
+            p_dir / "chunks" / "window_index.json",
+            n_vectors if isinstance(n_vectors, int) else -1,
+        )
+        if reason:
+            out.append({"slug": slug, "reason": reason})
+    return out
 
 
 @lru_cache(maxsize=8)
@@ -1018,7 +1396,8 @@ def _load_index(project_dir_str: str) -> dict[str, Any]:
 
     Returns a dict with concatenated embeddings keyed to a global row index,
     plus a parallel list mapping each row → (slug, paper_meta, chunk dict,
-    snippet dict). Single ``np.load`` per paper; cheap to rebuild after add/remove.
+    snippet dict). One row per **embed window**, so several rows can point at the
+    same chunk. Single ``np.load`` per paper; cheap to rebuild after add/remove.
     """
     import numpy as np
 
@@ -1029,6 +1408,7 @@ def _load_index(project_dir_str: str) -> dict[str, Any]:
 
     embeddings_parts: list[Any] = []
     row_index: list[dict[str, Any]] = []
+    skipped: list[tuple[str, str]] = []
 
     for entry in papers:
         slug = entry["slug"]
@@ -1036,6 +1416,7 @@ def _load_index(project_dir_str: str) -> dict[str, Any]:
         manifest_path = p_dir / "manifest.json"
         emb_path = p_dir / "chunks" / "embeddings.npy"
         chunks_path = p_dir / "chunks" / "chunks.jsonl"
+        windows_path = p_dir / "chunks" / "window_index.json"
         snippets_path = p_dir / "snippet_index" / "snippets.json"
         if not (manifest_path.exists() and emb_path.exists() and chunks_path.exists()):
             logger.warning("Paper %s incomplete on disk; skipping", slug)
@@ -1048,6 +1429,7 @@ def _load_index(project_dir_str: str) -> dict[str, Any]:
         with chunks_path.open() as fh:
             for line in fh:
                 chunks.append(json.loads(line))
+        chunks_by_id = {ch["chunk_id"]: ch for ch in chunks}
 
         snippets_by_chunk: dict[int, dict[str, Any]] = {}
         if snippets_path.exists():
@@ -1055,19 +1437,50 @@ def _load_index(project_dir_str: str) -> dict[str, Any]:
             snippets_by_chunk = {s["chunk_id"]: s for s in snip_list}
 
         vecs = np.load(emb_path)
+
+        # A paper whose vectors predate the current chunking cannot be scored
+        # against papers that postdate it, so it is skipped rather than
+        # mis-ranked. _stale_reason names why; `rebuild` fixes all of them.
+        reason = _stale_reason(manifest, windows_path, len(vecs), chunks_by_id)
+        if reason:
+            skipped.append((slug, reason))
+            logger.warning(
+                "Paper %s skipped: %s — rebuild with `setup_local_index.py rebuild`",
+                slug,
+                reason,
+            )
+            continue
+        rows = json.loads(windows_path.read_text())["rows"]
+
         embeddings_parts.append(vecs)
-        for ch in chunks:
+        for chunk_id in rows:
+            ch = chunks_by_id[chunk_id]
             row_index.append(
                 {
                     "slug": slug,
                     "role": role,
                     "paper_meta": paper_meta,
                     "chunk": ch,
-                    "snippet_entry": snippets_by_chunk.get(ch["chunk_id"], {}),
+                    "snippet_entry": snippets_by_chunk.get(chunk_id, {}),
                 }
             )
 
     embeddings = np.vstack(embeddings_parts) if embeddings_parts else np.zeros((0, 0))
+
+    # A corpus that lists papers but can serve none of them looks identical, from
+    # the caller's side, to a corpus with nothing relevant to say: search returns
+    # []. Say so at ERROR, so the difference reaches someone who is only watching
+    # for errors.
+    if papers and not row_index:
+        logger.error(
+            "Local index for %s has %d paper(s) but none are usable (%s). "
+            "Searches will return nothing until you run "
+            "`setup_local_index.py rebuild --project %s`.",
+            project_dir,
+            len(papers),
+            "; ".join(f"{slug}: {reason}" for slug, reason in skipped) or "unknown",
+            project_dir,
+        )
 
     return {
         "corpus": corpus,
@@ -1098,34 +1511,35 @@ def search(
     if embeddings.size == 0 or not row_index:
         return []
 
-    from sentence_transformers import SentenceTransformer
-
     paper_slug_filter: set[str] | None = None
     if papers:
         paper_slug_filter = {paper_slug(d) for d in papers}
     role_filter: set[str] | None = set(roles) if roles else None
 
-    model = SentenceTransformer(EMBED_MODEL)
+    model = _get_embedder()
     q_vec = model.encode([query], convert_to_numpy=True)[0]
     q_vec = q_vec / max(np.linalg.norm(q_vec), 1e-9)
     scores = embeddings @ q_vec
 
-    # Eligible rows
-    if paper_slug_filter is not None or role_filter is not None:
-        eligible = [
-            i
-            for i, row in enumerate(row_index)
-            if (paper_slug_filter is None or row["slug"] in paper_slug_filter)
-            and (role_filter is None or row["role"] in role_filter)
-        ]
-        if not eligible:
-            return []
-        eligible_scores = [(i, scores[i]) for i in eligible]
-        eligible_scores.sort(key=lambda x: -x[1])
-        top = eligible_scores[:k]
-    else:
-        top_idx = np.argsort(-scores)[:k].tolist()
-        top = [(i, scores[i]) for i in top_idx]
+    eligible = [
+        i
+        for i, row in enumerate(row_index)
+        if (paper_slug_filter is None or row["slug"] in paper_slug_filter)
+        and (role_filter is None or row["role"] in role_filter)
+    ]
+    if not eligible:
+        return []
+
+    # Rows are embed windows; a chunk scores as the best of its windows, and each
+    # chunk is returned once.
+    best_by_chunk: dict[tuple[str, int], int] = {}
+    for i in eligible:
+        row = row_index[i]
+        key = (row["slug"], row["chunk"]["chunk_id"])
+        current = best_by_chunk.get(key)
+        if current is None or scores[i] > scores[current]:
+            best_by_chunk[key] = i
+    top = sorted(((i, scores[i]) for i in best_by_chunk.values()), key=lambda x: -x[1])[:k]
 
     out: list[dict[str, Any]] = []
     for i, score in top:
@@ -1225,6 +1639,18 @@ def main(argv: list[str] | None = None) -> int:
     p_rm.add_argument("--project", required=True, type=Path)
     p_rm.add_argument("--doi", required=True)
 
+    p_reb = sub.add_parser("rebuild", help="Force-rebuild every paper in the corpus")
+    p_reb.add_argument("--project", required=True, type=Path)
+    p_reb.add_argument("--paper", action="append", default=None, help="Limit to this DOI")
+    p_reb.add_argument(
+        "--refresh-refs",
+        action="store_true",
+        help="Re-resolve references instead of reusing the cached resolution (slow)",
+    )
+
+    p_check = sub.add_parser("check", help="Report papers whose vectors need a rebuild")
+    p_check.add_argument("--project", required=True, type=Path)
+
     p_list = sub.add_parser("list", help="List papers in the corpus")
     p_list.add_argument("--project", required=True, type=Path)
 
@@ -1262,6 +1688,14 @@ def main(argv: list[str] | None = None) -> int:
         present = remove_paper(args.project, args.doi)
         print(json.dumps({"removed": present}, indent=2))
         return 0
+    if args.cmd == "rebuild":
+        results = rebuild_corpus(args.project, dois=args.paper, refresh_refs=args.refresh_refs)
+        print(json.dumps(results, indent=2))
+        return 1 if any("error" in r for r in results) else 0
+    if args.cmd == "check":
+        stale = stale_papers(args.project)
+        print(json.dumps(stale, indent=2))
+        return 1 if stale else 0
     if args.cmd == "list":
         print(json.dumps(list_papers(args.project), indent=2))
         return 0
