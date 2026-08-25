@@ -12,6 +12,10 @@ coverage.xml
 dist/
 build/
 docs/_build/
-.claude/settings.local.json
+.claude/settings.local*.json
 
-#projects/
+# Test projects: commit setup only (cas.json, README); ignore generated outputs
+projects/test_projects/**/traversal_output/
+projects/test_projects/**/reports/
+projects/test_projects/**/selections/
+projects/test_projects/**/runs/

@@ -49,7 +49,9 @@ workflow and the programmatic Python graph.
 
 ## Workflow Sequence
 
-Given a **project name** and **cell type label**:
+Given a **project name** and a **query** — a free-text specification of which cell
+types to report on, optionally with contextual restrictions (e.g. "all fibroblasts",
+"fibroblasts in adult tissue", or a single cell-type label):
 
 ### 1. Load Project Config (CAS+)
 
@@ -77,6 +79,33 @@ From the loaded CAS+ document:
 > `scope` fields; their input contracts move to CAS+ `cell_label` / `composition`
 > as part of the query-decomposer work.
 
+### 1b. Select target cell types (from the query)
+
+Interpret the **query** against the CAS+ annotations to choose which cell types to
+report on. Match flexibly — as a knowledgeable curator would — on `cell_label`,
+`lineage` / hierarchy, and `synonyms`; apply any contextual restriction in the query
+(developmental stage, tissue, organism, disease, …) as a filter over each
+annotation's `composition`. Do **not** impose a rigid query grammar: a query like
+"all fibroblasts" or "fibroblasts in adult tissue" is interpreted directly, and a
+bare cell-type label selects just that annotation.
+
+Record the resolved selection to `projects/{project}/selections/{slug}.json` for
+provenance (slug derived from the query text):
+
+```json
+{
+  "query": "fibroblasts in adult tissue",
+  "context": { "developmental_stage": "adult" },
+  "cas_source": "projects/{project}/cas.json",
+  "selected": [
+    { "cell_label": "...", "cell_set_accession": "...", "labelset": "..." }
+  ]
+}
+```
+
+**Steps 2–9 below run once per selected cell type.** The query's contextual
+restriction carries forward as that cell type's scope.
+
 ### 2. Fetch Supplementary Material
 
 Use MCP tools directly (single call, no subagent needed):
@@ -97,10 +126,13 @@ the atlas paper. This avoids fragile full text download → grep → parse cycle
 and returns relevance-ranked text.
 
 **Input:**
-- Cell type label, atlas DOI, scope
+- CAS+ annotation for the cell type: `cell_label`, plus any CAS `synonyms`
+  (`provided_synonyms` — resolve-name **unions** these with paper-found names)
+- Atlas DOI; scope/tissue from the annotation's `composition`
 - Supplementary text from step 2
 
 **Output:** `projects/{project}/traversal_output/{cell_type}/name_resolution.json`
+(schema: `src/atlas_chat/atlas_chat/schemas/name_resolution.schema.json`)
 
 **Contract:**
 ```json
@@ -110,9 +142,21 @@ and returns relevance-ranked text.
   "scope": "fetal",
   "tissue_context": "fetal skin",
   "confidence": "high",
-  "evidence": "Found in cluster annotations table"
+  "evidence": "Found in cluster annotations table",
+  "source_paper": { "corpus_id": "CorpusId:2762329", "doi": "10.1038/s41586-024-08002-x", "role": "atlas" }
 }
 ```
+
+### 3b. Decompose query → subagent: `query-decomposer`
+
+For each selected cell type, dispatch `query-decomposer` with its CAS+ annotation,
+`name_resolution.json`, and the query's context. It writes
+`projects/{project}/traversal_output/{cell_type}/query_decomposition.json`
+(schema: `src/atlas_chat/atlas_chat/schemas/query_decomposition.schema.json`):
+grounding (`subject`, `aliases`, `non_subject_terms`, `scope`, `seed`) plus one
+authored query per fixed aspect (`location, structure, function, markers,
+marker_roles`) and a `combined_query`. Validated by the `check_query_decomposition`
+PostToolUse hook.
 
 ### 4. Parallel: Scan Supplements + Citation Traverse
 
@@ -137,10 +181,20 @@ These two steps are independent after name resolution. Run them in parallel.
 
 #### 4b. Citation Traverse → subagent: `citation-traverse`
 
-**Input:**
-- Seed paper ID (CorpusId from snippet metadata, or `DOI:{doi}`)
-- Query: `"{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers"`
-- Depth: 1 (default), configurable up to 3
+**Input:** the cell type's `query_decomposition.json` (from step 3b).
+
+**Hybrid strategy (orchestrator-driven):**
+1. Run `citation-traverse` with `combined_query`; `seed_paper_id` / `seed_role` from
+   `seed`; depth 1.
+2. Assess **per-aspect in-scope coverage** of the returned `all_summaries`, using
+   `scope` to judge in-scope vs off-scope evidence.
+3. For each aspect that is thin — or covered only by **off-scope** evidence — run
+   `citation-traverse` with that `aspects[].query`. If it is still thin/off-scope,
+   run a **scope-targeted free search**: `cli_annotate fetch` with **no**
+   `--paper-ids`, `--retrieval-method free_search`, query = the aspect query plus the
+   `scope` terms. Stop gracefully once in-scope evidence is found or effort is spent.
+4. **Merge** the per-run `all_summaries` / `paper_catalogue` (dedup by CorpusId and
+   by evidence item); tag each followed paper's organism/stage for scope.
 
 **Local snippet index (fresh preprints):** if
 `projects/{project}/local_index/manifest.json` exists, the graph also calls
