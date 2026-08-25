@@ -359,6 +359,27 @@ Target set:
 Docs are built with Sphinx + MyST (`scripts/check-docs.py`); the user-facing guides
 belong in `docs/` and should be part of that build.
 
+**The docs build is broken today and has to be fixed before any of the above can
+land.** `scripts/check-docs.py` fails immediately with "Sphinx is unable to load the
+master document": `docs/conf.py` sets no `root_doc`, so Sphinx looks for
+`docs/index.rst`, which does not exist. Everything in `docs/` is a loose markdown
+file that no toctree references. Three things to settle while fixing it:
+
+- Add a root `index.md` (MyST is already loaded) with a toctree over the existing
+  pages, so `sphinx-build -W` gets past the first step.
+- `CLAUDE_dev.md` claims API docs come from "Sphinx + AutoAPI", but `conf.py` loads
+  only `autodoc`, `napoleon` and `myst_parser` — there is no AutoAPI and no
+  `automodule` directive anywhere. Either wire up API generation or correct the dev
+  guide; right now no module docstring is ever rendered or checked, so RST errors in
+  them are invisible.
+- `conf.py` puts `src/` on `sys.path`, but the package lives at
+  `src/atlas_chat/atlas_chat/`, so `import atlas_chat` would not resolve from there
+  even once autodoc has something to do. (Phase 1 of the archived roadmap wanted this
+  nesting flattened; whichever happens first, the path needs to match.)
+
+Until the build is green, `check-docs.py` cannot join pre-commit or the release check
+in §9, and docstring quality is unenforced.
+
 ---
 
 ## 9. Theme F — testing and the release check

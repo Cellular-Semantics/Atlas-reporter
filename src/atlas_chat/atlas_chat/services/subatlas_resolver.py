@@ -1,6 +1,7 @@
 """Subatlas paper resolver — atlas-init phase.
 
-Two passes, both keyed off ``cell_type_annotations.json``:
+Two passes, both keyed off the project config (``cas.json``, falling back to
+the legacy ``cell_type_annotations.json``):
 
 1. ``discover``: seed ``source.subatlas_papers`` from ``label_provenance.json``.
    Reads contributing-study labels (e.g. ``Sridhar_et_al_2020_CellPress``),
@@ -11,8 +12,14 @@ Two passes, both keyed off ``cell_type_annotations.json``:
 2. ``ingest``: for each confirmed entry in ``source.subatlas_papers`` (with a
    non-empty ``doi``), runs the resolution waterfall:
 
-   * ASTA probe — if S2 already indexes the paper with retrievable snippets,
-     mark ``status: asta`` (no local index built; fan-out reaches it directly).
+   * ASTA index-depth probe — one paper-scoped ``snippet_search`` classified
+     against the calibrated section/refMention signals (see
+     :mod:`atlas_chat.services.asta_indexing`). Only band ``full`` is served
+     from ASTA: mark ``status: asta``, no local index built, fan-out reaches it
+     directly. Every other band (``partial``, ``abstract_only``, ``unindexed``,
+     ``not_in_s2``) falls through to the rungs below, because ASTA holds too
+     little of the paper to quote or traverse. The measured band is recorded on
+     every entry as ``asta_indexing`` regardless of outcome.
    * JATS fetch via ``fetch_preprint`` (EuropePMC → bioRxiv) — on success,
      build the per-paper local index and mark ``status: local`` (source_type
      ``jats``).
@@ -26,12 +33,16 @@ local index since its full text is the report's primary evidence base.
 
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
 import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+
+from atlas_chat.services import asta_indexing
+from atlas_chat.services.asta_indexing import IndexingReport
 
 logger = logging.getLogger(__name__)
 
@@ -181,13 +192,13 @@ def discover(project_dir: Path) -> dict[str, Any]:
     """Pass 1: propose ``subatlas_papers`` entries.
 
     Reads ``label_provenance.json``, queries S2 for each contributing study,
-    and writes draft entries into ``cell_type_annotations.json``.
+    and writes draft entries into the project config.
 
     Returns a summary dict. Does NOT build any indices.
     """
-    cfg_path = project_dir / "cell_type_annotations.json"
+    cfg_path = asta_indexing.config_path(project_dir)
     if not cfg_path.exists():
-        raise FileNotFoundError(f"No cell_type_annotations.json at {project_dir}")
+        raise FileNotFoundError(f"No cas.json / cell_type_annotations.json at {project_dir}")
     cfg = json.loads(cfg_path.read_text())
     source = cfg.setdefault("source", {})
 
@@ -225,16 +236,17 @@ def discover(project_dir: Path) -> dict[str, Any]:
     cfg_path.write_text(json.dumps(cfg, indent=2))
 
     logger.info(
-        "discover: %d labels, %d with S2 proposals (drafts written to cell_type_annotations.json)",
+        "discover: %d labels, %d with S2 proposals (drafts written to %s)",
         len(labels),
         n_with_proposal,
+        cfg_path.name,
     )
     return {
         "n_labels": len(labels),
         "candidates": n_with_proposal,
         "note": (
-            "Review cell_type_annotations.json: copy proposed_doi → doi for each entry you "
-            "accept (or replace with the correct DOI), then run `ingest`."
+            f"Review {cfg_path.name}: copy proposed_doi → doi for each entry "
+            "you accept (or replace with the correct DOI), then run `ingest`."
         ),
     }
 
@@ -244,23 +256,29 @@ def discover(project_dir: Path) -> dict[str, Any]:
 # ------------------------------------------------------------------
 
 
-def _probe_asta(doi: str, title: str | None) -> bool:
-    """Return True iff S2 indexes this paper. Best-effort, non-fatal."""
-    import httpx
+def _probe_asta(doi: str) -> IndexingReport:
+    """Measure how much of this paper ASTA's snippet index actually holds.
 
+    Delegates to :func:`atlas_chat.services.asta_indexing.probe` — one
+    paper-scoped ``snippet_search`` call, classified against the calibrated
+    section/refMention signals. Best-effort and non-fatal: a transport failure
+    is reported as band ``unindexed`` so the paper falls through to the JATS/PDF
+    rungs rather than aborting the whole ingest.
+
+    Args:
+        doi: The paper's DOI (probed as ``DOI:<doi>``).
+
+    Returns:
+        An :class:`~atlas_chat.services.asta_indexing.IndexingReport`. Only band
+        ``full`` may be served from ASTA.
+    """
     try:
-        with httpx.Client(timeout=30) as client:
-            resp = client.get(
-                f"https://api.semanticscholar.org/graph/v1/paper/DOI:{doi}",
-                params={"fields": "externalIds,isOpenAccess,openAccessPdf"},
-            )
-            if resp.status_code != 200:
-                return False
-            data = resp.json() or {}
-            return bool(data.get("externalIds", {}).get("CorpusId"))
+        return asyncio.run(asta_indexing.probe(f"DOI:{doi}"))
     except Exception as exc:
-        logger.debug("ASTA probe failed for %s: %s", doi, exc)
-        return False
+        logger.warning("ASTA probe failed for %s: %s", doi, exc)
+        return IndexingReport(
+            band="unindexed", reason=f"probe failed, assuming no ASTA text: {exc}"
+        )
 
 
 def _try_jats_fetch(doi: str, dest_dir: Path) -> Path | None:
@@ -320,19 +338,25 @@ def ingest(project_dir: Path, *, force: bool = False) -> dict[str, Any]:
     """
     from atlas_chat.services.local_snippet_index import build_paper_index
 
-    cfg_path = project_dir / "cell_type_annotations.json"
+    cfg_path = asta_indexing.config_path(project_dir)
     if not cfg_path.exists():
-        raise FileNotFoundError(f"No cell_type_annotations.json at {project_dir}")
+        raise FileNotFoundError(f"No cas.json / cell_type_annotations.json at {project_dir}")
     cfg = json.loads(cfg_path.read_text())
     source = cfg["source"]
     atlas_doi = source.get("doi")
     if not atlas_doi:
-        raise ValueError("cell_type_annotations.json source.doi is required")
+        raise ValueError(f"{cfg_path.name} source.doi is required")
 
     summary: dict[str, Any] = {
         "atlas_doi": atlas_doi,
         "atlas_status": "skipped",
-        "subatlas": {"asta": [], "local": [], "needs_pdf": [], "unresolved": []},
+        "subatlas": {
+            "asta": [],
+            "local": [],
+            "needs_pdf": [],
+            "unresolved": [],
+            "bands": {},
+        },
     }
 
     # Atlas paper — always try to build (it's the primary evidence base).
@@ -353,9 +377,16 @@ def ingest(project_dir: Path, *, force: bool = False) -> dict[str, Any]:
             summary["subatlas"]["unresolved"].append(entry.get("label") or "<no-label>")
             continue
 
-        # 1. ASTA probe
+        # 1. ASTA index-depth probe. The band is recorded on every entry, not
+        #    just the servable ones, so a paper that fell through to JATS still
+        #    says why (#22).
         title = entry.get("title") or (entry.get("proposed") or [{}])[0].get("title", "")
-        if _probe_asta(doi, title):
+        report = _probe_asta(doi)
+        entry["asta_indexing"] = report.to_dict()
+        summary["subatlas"]["bands"][report.band] = (
+            summary["subatlas"]["bands"].get(report.band, 0) + 1
+        )
+        if report.servable:
             entry["status"] = "asta"
             summary["subatlas"]["asta"].append(doi)
             continue

@@ -111,15 +111,48 @@ def _cmd_fetch(args: argparse.Namespace) -> int:
     return 0
 
 
+def _probe_candidate_bands(proposed: list[str], project_dir: str | None) -> dict[str, str]:
+    """Measure each proposed paper's ASTA indexing band (one call per paper).
+
+    Only well-formed ``CorpusId:NNNN`` proposals are probed; malformed ones are
+    rejected by ``resolve_follow_set`` anyway. A probe failure is logged and the
+    id left unjudged, so a transient ASTA error can never silently prune a real
+    reference.
+    """
+    from atlas_chat.services import asta_indexing
+
+    bands: dict[str, str] = {}
+    for candidate in dict.fromkeys(c.strip() for c in proposed):
+        if not candidate.startswith("CorpusId:"):
+            continue
+        try:
+            report = asyncio.run(asta_indexing.probe_cached(candidate, project_dir=project_dir))
+        except Exception as exc:  # noqa: BLE001 - never prune on a probe failure
+            print(f"  probe failed for {candidate}, not judging: {exc}", file=sys.stderr)
+            continue
+        bands[candidate] = report.band
+    return bands
+
+
 def _cmd_follow_set(args: argparse.Namespace) -> int:
     snippets = json.loads(Path(args.snippets).read_text(encoding="utf-8"))
-    result = snippet_annotator.resolve_follow_set(snippets, args.proposed, hop=args.hop)
+    bands = _probe_candidate_bands(args.proposed, args.project_dir) if args.probe_bands else None
+    result = snippet_annotator.resolve_follow_set(
+        snippets, args.proposed, hop=args.hop, bands=bands
+    )
     out = Path(args.out)
     _write_json(out, result)
     print(
         f"follow-set: {len(result['follow_set'])} to follow, "
         f"{len(result['rejected'])} rejected -> {out}"
     )
+    if bands:
+        dead = [r for r in result["rejected"] if r["reason"] == "asta_unindexed"]
+        if dead:
+            print(
+                "  skipped (no text in ASTA): "
+                + ", ".join(f"{r['corpus_id']}={r['band']}" for r in dead)
+            )
     return 0
 
 
@@ -160,6 +193,17 @@ def build_parser() -> argparse.ArgumentParser:
         "--proposed", action="append", default=[], help="a proposed CorpusId (repeatable)"
     )
     fs.add_argument("--hop", type=int, default=None)
+    fs.add_argument(
+        "--probe-bands",
+        action="store_true",
+        help="probe each candidate's ASTA indexing depth and skip papers ASTA "
+        "holds no text for (one extra call per candidate, cached)",
+    )
+    fs.add_argument(
+        "--project-dir",
+        default=None,
+        help="project directory whose config caches probed bands (with --probe-bands)",
+    )
     fs.add_argument("--out", required=True)
     fs.set_defaults(func=_cmd_follow_set)
 

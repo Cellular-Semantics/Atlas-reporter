@@ -234,6 +234,7 @@ def resolve_follow_set(
     proposed_ids: list[str],
     *,
     hop: int | None = None,
+    bands: dict[str, str] | None = None,
 ) -> dict[str, Any]:
     """Compute the deduped follow-set as ``proposed ∩ real``, logging the rest.
 
@@ -243,15 +244,26 @@ def resolve_follow_set(
     ``malformed``; a well-formed proposal absent from the snippets' refMentions is
     rejected as ``not_in_refmentions``. Deduplication preserves first-seen order.
 
+    Optionally also a *capability* gate: a paper ASTA holds no text for cannot
+    answer a citation hop, so dispatching to it is wasted work (5 of 14 hop-1
+    dispatches in the 2026-08-19 run — see #22). Pass ``bands`` to drop those,
+    rejected as ``asta_unindexed``.
+
     Args:
         snippets: The projected ``annotated_snippet`` records (source of truth).
         proposed_ids: The agent's proposed CorpusIds to follow.
         hop: Optional hop number stamped on the output.
+        bands: Optional ``{corpus_id: band}`` from
+            :mod:`atlas_chat.services.asta_indexing`. Candidates whose band is
+            in ``asta_indexing.DEAD_BANDS`` are rejected. Ids absent from the
+            map are not judged.
 
     Returns:
         A dict validating against ``follow_set.schema.json``:
         ``{"hop"?, "follow_set": [...], "rejected": [{"corpus_id", "reason"}]}``.
     """
+    from atlas_chat.services.asta_indexing import DEAD_BANDS
+
     real = _real_corpus_ids(snippets)
     follow_set: list[str] = []
     rejected: list[dict[str, str]] = []
@@ -263,6 +275,10 @@ def resolve_follow_set(
             continue
         if candidate not in real:
             rejected.append({"corpus_id": candidate, "reason": "not_in_refmentions"})
+            continue
+        band = (bands or {}).get(candidate)
+        if band in DEAD_BANDS:
+            rejected.append({"corpus_id": candidate, "reason": "asta_unindexed", "band": band})
             continue
         if candidate in seen:
             continue

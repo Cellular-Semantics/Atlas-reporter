@@ -85,3 +85,69 @@ def test_labelset_additional_properties_are_closed() -> None:
     data = _load("cas_annotation.minimal.good.json")
     data["labelsets"][0]["bogus_field"] = 1
     assert _errors(data)
+
+
+# --------------------------------------------------------------------------
+# ASTA indexing band (#22)
+# --------------------------------------------------------------------------
+
+
+@pytest.mark.unit
+def test_subatlas_papers_carry_the_asta_indexing_band() -> None:
+    """Band and ingest route are separate axes and both round-trip."""
+    papers = _load("cas_annotation.good.json")["source"]["subatlas_papers"]
+    served, built = papers[0], papers[1]
+
+    assert served["status"] == "asta"
+    assert served["asta_indexing"]["band"] == "full"
+
+    # The point of keeping the two fields apart: ASTA holds only this paper's
+    # abstract, yet its text is available locally because the JATS build worked.
+    assert built["status"] == "local"
+    assert built["source_type"] == "jats"
+    assert built["asta_indexing"]["band"] == "abstract_only"
+
+    assert _errors(_load("cas_annotation.good.json")) == []
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize("band", ["full", "partial", "abstract_only", "unindexed", "not_in_s2"])
+def test_every_band_value_is_accepted(band: str) -> None:
+    data = _load("cas_annotation.good.json")
+    data["source"]["subatlas_papers"][0]["asta_indexing"]["band"] = band
+    assert _errors(data) == []
+
+
+@pytest.mark.unit
+def test_unknown_band_is_rejected() -> None:
+    data = _load("cas_annotation.good.json")
+    data["source"]["subatlas_papers"][0]["asta_indexing"]["band"] = "FULL"
+    assert _errors(data)
+
+
+@pytest.mark.unit
+def test_asta_indexing_requires_a_band() -> None:
+    data = _load("cas_annotation.good.json")
+    data["source"]["subatlas_papers"][0]["asta_indexing"] = {"snippets": 30}
+    assert _errors(data)
+
+
+@pytest.mark.unit
+def test_asta_indexing_additional_properties_are_closed() -> None:
+    data = _load("cas_annotation.good.json")
+    data["source"]["subatlas_papers"][0]["asta_indexing"]["bogus_field"] = 1
+    assert _errors(data)
+
+
+@pytest.mark.unit
+def test_asta_indexing_counts_cannot_be_negative() -> None:
+    data = _load("cas_annotation.good.json")
+    data["source"]["subatlas_papers"][0]["asta_indexing"]["snippets"] = -1
+    assert _errors(data)
+
+
+@pytest.mark.unit
+def test_source_type_is_constrained() -> None:
+    data = _load("cas_annotation.good.json")
+    data["source"]["subatlas_papers"][1]["source_type"] = "docx"
+    assert _errors(data)
