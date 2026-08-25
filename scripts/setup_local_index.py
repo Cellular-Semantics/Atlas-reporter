@@ -5,6 +5,7 @@ Subcommands::
     discover-subatlas   Propose subatlas DOIs from label_provenance.json.
     init-corpus         Run the asta/jats/pdf waterfall + build atlas index.
     add                 Add a paper from a PDF or JATS file.
+    rebuild             Force-rebuild every paper in the corpus from its saved source.
     list                List papers in the corpus.
     remove              Remove a paper from the corpus.
     search              Query the corpus.
@@ -63,6 +64,15 @@ def _build_parser() -> argparse.ArgumentParser:
     src.add_argument("--jats", type=Path, default=None)
     p_add.add_argument("--role", default="subatlas", choices=("atlas", "subatlas"))
     p_add.add_argument("--force", action="store_true")
+
+    p_reb = sub.add_parser("rebuild")
+    p_reb.add_argument("--project", required=True)
+    p_reb.add_argument("--paper", action="append", default=None, help="Limit to this DOI")
+    p_reb.add_argument(
+        "--refresh-refs",
+        action="store_true",
+        help="Re-resolve references instead of reusing the cached resolution (slow)",
+    )
 
     p_list = sub.add_parser("list")
     p_list.add_argument("--project", required=True)
@@ -128,6 +138,16 @@ def main(argv: list[str] | None = None) -> int:
         )
         print(json.dumps(manifest, indent=2))
         return 0
+
+    if args.cmd == "rebuild":
+        from atlas_chat.services.local_snippet_index import rebuild_corpus
+
+        results = rebuild_corpus(project_dir, dois=args.paper, refresh_refs=args.refresh_refs)
+        print(json.dumps(results, indent=2))
+        for r in results:
+            if "error" in r:
+                print(f"ERROR {r['slug']}: {r['error']}", file=sys.stderr)
+        return 1 if any("error" in r for r in results) else 0
 
     if args.cmd == "list":
         from atlas_chat.services.local_snippet_index import list_papers

@@ -7,17 +7,22 @@ are exercised. The embedding step is bypassed via direct chunk inspection.
 
 from __future__ import annotations
 
+import json
 from textwrap import dedent
 
+import atlas_chat.services.local_snippet_index as lsi
 import pytest
 from atlas_chat.services.local_snippet_index import (
+    _cached_ref_resolution,
     _local_corpus_id,
+    _manifest_hash,
     _merge_snippets,
     _normalize_biorxiv_jats,
     build_sentence_rows,
     chunk_segments,
     extract_body_segments,
     has_local_index,
+    split_chunk_into_windows,
 )
 
 # ---------------------------------------------------------------------------
@@ -109,6 +114,11 @@ def test_chunking_produces_fulltext_with_consistent_offsets() -> None:
         assert c.section
     # Re-assemble cleanly
     assert "ILC3_CCL1+PTGDS+" in fulltext
+    # Every chunk must be embeddable: at least one window, none over budget (#23).
+    for c in chunks:
+        windows = split_chunk_into_windows(c.text, _count_words)
+        assert windows
+        assert all(_count_words(w) <= lsi.WINDOW_TARGET_TOKENS for w in windows)
 
 
 # ---------------------------------------------------------------------------
@@ -182,3 +192,137 @@ def test_local_corpus_id_format() -> None:
 @pytest.mark.unit
 def test_has_local_index_false_for_missing(tmp_path) -> None:
     assert not has_local_index(tmp_path)
+
+
+# ---------------------------------------------------------------------------
+# Windowing for the embedding model (#23)
+# ---------------------------------------------------------------------------
+
+
+def _count_words(text: str) -> int:
+    """Stand-in for the model tokeniser — predictable, so window sizes are exact."""
+    return len(text.split())
+
+
+@pytest.mark.unit
+def test_short_chunk_is_a_single_window() -> None:
+    text = "One short sentence about macrophages."
+    assert split_chunk_into_windows(text, _count_words, target_tokens=50) == [text]
+
+
+@pytest.mark.unit
+def test_empty_chunk_yields_no_windows() -> None:
+    assert split_chunk_into_windows("", _count_words) == []
+
+
+@pytest.mark.unit
+def test_long_chunk_windows_fit_the_budget_and_cover_the_text() -> None:
+    sentences = [f"Sentence number {i} describes marker gene GENE{i} in detail." for i in range(40)]
+    text = " ".join(sentences)
+    windows = split_chunk_into_windows(text, _count_words, target_tokens=30, overlap_tokens=10)
+
+    assert len(windows) > 1
+    for w in windows:
+        assert _count_words(w) <= 30
+        assert w in text, "windows must be exact substrings of the chunk"
+    # Nothing is dropped: every sentence lands in at least one window.
+    joined = " ".join(windows)
+    for sent in sentences:
+        assert sent in joined
+    # Consecutive windows overlap, so a claim spanning a boundary stays intact.
+    assert windows[0].split()[-1] in windows[1]
+
+
+@pytest.mark.unit
+def test_single_over_long_sentence_is_split() -> None:
+    """A table row or reference blob with no sentence break still fits."""
+    text = " ".join(f"token{i}" for i in range(200))
+    windows = split_chunk_into_windows(text, _count_words, target_tokens=25, overlap_tokens=5)
+    assert len(windows) > 1
+    assert all(_count_words(w) <= 25 for w in windows)
+
+
+# ---------------------------------------------------------------------------
+# Index invalidation
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize(
+    "const",
+    [
+        "MANIFEST_VERSION",
+        "EMBED_MODEL",
+        "CHUNK_TARGET_CHARS",
+        "CHUNK_OVERLAP_CHARS",
+        "WINDOW_TARGET_TOKENS",
+        "WINDOW_OVERLAP_TOKENS",
+    ],
+)
+def test_manifest_hash_changes_with_index_parameters(
+    const: str, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """Changing anything that changes the vectors must invalidate existing
+    indexes, or a rebuild silently keeps serving stale ones."""
+    baseline = _manifest_hash(b"source", "jats")
+    original = getattr(lsi, const)
+    changed = original + 1 if isinstance(original, int) else original + "-x"
+    monkeypatch.setattr(lsi, const, changed)
+    assert _manifest_hash(b"source", "jats") != baseline
+
+
+@pytest.mark.unit
+def test_manifest_hash_changes_with_source_bytes() -> None:
+    assert _manifest_hash(b"source", "jats") != _manifest_hash(b"other", "jats")
+    assert _manifest_hash(b"source", "jats") != _manifest_hash(b"source", "pdf")
+
+
+# ---------------------------------------------------------------------------
+# Cached reference resolution across rebuilds
+# ---------------------------------------------------------------------------
+
+RESOLUTION = {"c1": {"corpus_id": "CorpusId:1", "doi": "10.1234/x", "method": "doi"}}
+
+
+def _refs_dir(tmp_path):
+    d = tmp_path / "citations"
+    d.mkdir()
+    (d / "ref_resolution.json").write_text(json.dumps(RESOLUTION))
+    return d
+
+
+@pytest.mark.unit
+def test_cached_refs_reused_when_source_unchanged(tmp_path) -> None:
+    d = _refs_dir(tmp_path)
+    assert _cached_ref_resolution(d, {"source_sha": "abc"}, "abc") == RESOLUTION
+
+
+@pytest.mark.unit
+def test_cached_refs_dropped_when_source_changed(tmp_path) -> None:
+    d = _refs_dir(tmp_path)
+    assert _cached_ref_resolution(d, {"source_sha": "abc"}, "def") is None
+
+
+@pytest.mark.unit
+def test_cached_refs_reused_for_manifests_predating_source_sha(tmp_path) -> None:
+    """The pre-#23 corpora everyone has to rebuild have no source_sha, and
+    re-resolving their references costs tens of minutes per paper."""
+    d = _refs_dir(tmp_path)
+    assert _cached_ref_resolution(d, {"version": 2, "hash": "old"}, "abc") == RESOLUTION
+
+
+@pytest.mark.unit
+def test_no_cached_refs_without_a_prior_manifest(tmp_path) -> None:
+    d = _refs_dir(tmp_path)
+    assert _cached_ref_resolution(d, {}, "abc") is None
+
+
+@pytest.mark.unit
+def test_no_cached_refs_when_file_missing_or_empty(tmp_path) -> None:
+    d = tmp_path / "citations"
+    d.mkdir()
+    assert _cached_ref_resolution(d, {"source_sha": "abc"}, "abc") is None
+    (d / "ref_resolution.json").write_text("{}")
+    assert _cached_ref_resolution(d, {"source_sha": "abc"}, "abc") is None
+    (d / "ref_resolution.json").write_text("not json")
+    assert _cached_ref_resolution(d, {"source_sha": "abc"}, "abc") is None
