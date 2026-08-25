@@ -74,6 +74,14 @@ python scripts/setup_local_index.py rebuild --project <project> --paper 10.1234/
 
 It prints the chunk and window counts before and after per paper, and exits non-zero if any paper failed.
 
+**Checking before you rely on it.** `check` reports any paper whose vectors cannot be used and why, and exits non-zero if there are any:
+
+```bash
+python scripts/setup_local_index.py check --project <project>
+```
+
+Worth running before a batch of reports. A corpus that can serve no papers returns `[]` from `search`, which looks the same as a corpus with nothing relevant to say — so that case is also logged at ERROR level, not just as a warning.
+
 ## Integration with fan-out
 
 **Default: local index is NOT queried during `FanOut._citation_traverse`.** Subatlas papers are surfaced as a curated corpus; fan-out relies on ASTA for citation traversal.

@@ -7,6 +7,7 @@ network-free.
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 
 import numpy as np
@@ -401,6 +402,59 @@ def test_search_filter_by_doi(multi_paper_project: Path) -> None:
 @pytest.mark.unit
 def test_search_empty_corpus_returns_empty(tmp_path: Path) -> None:
     assert lsi.search(tmp_path, "anything", k=5) == []
+
+
+@pytest.mark.unit
+def test_stale_papers_empty_when_current(windowed_project: Path) -> None:
+    assert lsi.stale_papers(windowed_project) == []
+
+
+@pytest.mark.unit
+def test_stale_papers_reports_old_manifest_version(windowed_project: Path) -> None:
+    """The case every existing corpus is in until it is rebuilt."""
+    mpath = windowed_project / "local_index" / "papers" / "atlas-slug" / "manifest.json"
+    manifest = json.loads(mpath.read_text())
+    manifest["version"] = lsi.MANIFEST_VERSION - 1
+    mpath.write_text(json.dumps(manifest))
+    stale = lsi.stale_papers(windowed_project)
+    assert [p["slug"] for p in stale] == ["atlas-slug"]
+    assert str(lsi.MANIFEST_VERSION) in stale[0]["reason"]
+
+
+@pytest.mark.unit
+def test_stale_papers_reports_missing_window_index(windowed_project: Path) -> None:
+    (
+        windowed_project / "local_index" / "papers" / "atlas-slug" / "chunks" / "window_index.json"
+    ).unlink()
+    stale = lsi.stale_papers(windowed_project)
+    assert [p["slug"] for p in stale] == ["atlas-slug"]
+    assert "window_index" in stale[0]["reason"]
+
+
+@pytest.mark.unit
+def test_old_manifest_version_is_not_searched(windowed_project: Path) -> None:
+    """Vectors from a different chunking cannot be ranked against current ones."""
+    mpath = windowed_project / "local_index" / "papers" / "atlas-slug" / "manifest.json"
+    manifest = json.loads(mpath.read_text())
+    manifest["version"] = lsi.MANIFEST_VERSION - 1
+    mpath.write_text(json.dumps(manifest))
+    lsi._load_index.cache_clear()
+    assert lsi.search(windowed_project, "sub", k=5) == []
+
+
+@pytest.mark.unit
+def test_unusable_corpus_logs_an_error(windowed_project: Path, caplog) -> None:
+    """Returning [] is indistinguishable from "nothing relevant found", so a
+    corpus that can serve nothing has to say so above warning level."""
+    (
+        windowed_project / "local_index" / "papers" / "atlas-slug" / "chunks" / "window_index.json"
+    ).unlink()
+    lsi._load_index.cache_clear()
+    with caplog.at_level(logging.ERROR):
+        assert lsi.search(windowed_project, "sub", k=5) == []
+    errors = [r for r in caplog.records if r.levelno >= logging.ERROR]
+    assert errors, "an unusable corpus must log at ERROR"
+    assert "rebuild" in errors[0].getMessage()
 
 
 @pytest.mark.unit

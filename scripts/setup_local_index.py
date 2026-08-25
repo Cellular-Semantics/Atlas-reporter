@@ -6,6 +6,7 @@ Subcommands::
     init-corpus         Run the asta/jats/pdf waterfall + build atlas index.
     add                 Add a paper from a PDF or JATS file.
     rebuild             Force-rebuild every paper in the corpus from its saved source.
+    check               Report papers whose vectors need a rebuild.
     list                List papers in the corpus.
     remove              Remove a paper from the corpus.
     search              Query the corpus.
@@ -73,6 +74,9 @@ def _build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Re-resolve references instead of reusing the cached resolution (slow)",
     )
+
+    p_check = sub.add_parser("check")
+    p_check.add_argument("--project", required=True)
 
     p_list = sub.add_parser("list")
     p_list.add_argument("--project", required=True)
@@ -148,6 +152,19 @@ def main(argv: list[str] | None = None) -> int:
             if "error" in r:
                 print(f"ERROR {r['slug']}: {r['error']}", file=sys.stderr)
         return 1 if any("error" in r for r in results) else 0
+
+    if args.cmd == "check":
+        from atlas_chat.services.local_snippet_index import stale_papers
+
+        stale = stale_papers(project_dir)
+        print(json.dumps(stale, indent=2))
+        if stale:
+            print(
+                f"{len(stale)} paper(s) need a rebuild: "
+                f"setup_local_index.py rebuild --project {args.project}",
+                file=sys.stderr,
+            )
+        return 1 if stale else 0
 
     if args.cmd == "list":
         from atlas_chat.services.local_snippet_index import list_papers

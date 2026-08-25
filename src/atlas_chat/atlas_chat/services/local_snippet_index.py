@@ -1324,6 +1324,72 @@ def rebuild_corpus(
 # ------------------------------------------------------------------
 
 
+def _stale_reason(
+    manifest: dict[str, Any],
+    windows_path: Path,
+    n_vectors: int,
+    chunks_by_id: dict[int, Any] | None = None,
+) -> str | None:
+    """Why this paper's vectors cannot be used, or ``None`` if they can.
+
+    Kept separate from loading so a caller can ask about a corpus without paying
+    for it — see :func:`stale_papers`.
+    """
+    version = manifest.get("version")
+    if version != MANIFEST_VERSION:
+        return f"manifest version {version}, expected {MANIFEST_VERSION}"
+    if not windows_path.exists():
+        return "no window_index.json (built before #23)"
+    try:
+        rows = json.loads(windows_path.read_text())["rows"]
+    except Exception as exc:
+        return f"unreadable window_index.json ({type(exc).__name__})"
+    if len(rows) != n_vectors:
+        return f"window index has {len(rows)} rows, embeddings have {n_vectors}"
+    if chunks_by_id is not None:
+        # Row counts can agree while the ids are stale. An unknown chunk_id would
+        # otherwise be served as an empty snippet.
+        unknown = sorted({c for c in rows if c not in chunks_by_id})
+        if unknown:
+            return f"window index names chunk_id(s) absent from chunks.jsonl: {unknown[:3]}"
+    return None
+
+
+def stale_papers(project_dir: Path) -> list[dict[str, str]]:
+    """Papers in the corpus whose vectors cannot be used, with the reason.
+
+    Empty list means every paper is usable. Cheap — reads manifests and the
+    window index, never the embeddings. Call this before relying on the local
+    index if you would rather fail loudly than search an empty corpus.
+    """
+    project_dir = Path(project_dir)
+    _migrate_legacy_layout_if_needed(project_dir)
+    out: list[dict[str, str]] = []
+    for entry in _load_corpus_json(project_dir).get("papers", []):
+        slug = entry["slug"]
+        p_dir = _paper_dir(project_dir, slug)
+        manifest_path = p_dir / "manifest.json"
+        emb_path = p_dir / "chunks" / "embeddings.npy"
+        if not (manifest_path.exists() and emb_path.exists()):
+            out.append({"slug": slug, "reason": "incomplete on disk"})
+            continue
+        try:
+            manifest = json.loads(manifest_path.read_text())
+        except Exception:
+            out.append({"slug": slug, "reason": "unreadable manifest.json"})
+            continue
+        # n_windows is the recorded row count; trust it rather than loading numpy.
+        n_vectors = manifest.get("n_windows")
+        reason = _stale_reason(
+            manifest,
+            p_dir / "chunks" / "window_index.json",
+            n_vectors if isinstance(n_vectors, int) else -1,
+        )
+        if reason:
+            out.append({"slug": slug, "reason": reason})
+    return out
+
+
 @lru_cache(maxsize=8)
 def _load_index(project_dir_str: str) -> dict[str, Any]:
     """Load corpus + all per-paper indices into memory.
@@ -1342,6 +1408,7 @@ def _load_index(project_dir_str: str) -> dict[str, Any]:
 
     embeddings_parts: list[Any] = []
     row_index: list[dict[str, Any]] = []
+    skipped: list[tuple[str, str]] = []
 
     for entry in papers:
         slug = entry["slug"]
@@ -1371,39 +1438,19 @@ def _load_index(project_dir_str: str) -> dict[str, Any]:
 
         vecs = np.load(emb_path)
 
-        # window_index.json maps each embedding row to its chunk. Papers built
-        # before #23 have one row per chunk and no window index; they carry
-        # truncated vectors, so skip rather than mis-score them — a bumped
-        # MANIFEST_VERSION means a rebuild will regenerate both files.
-        if not windows_path.exists():
+        # A paper whose vectors predate the current chunking cannot be scored
+        # against papers that postdate it, so it is skipped rather than
+        # mis-ranked. _stale_reason names why; `rebuild` fixes all of them.
+        reason = _stale_reason(manifest, windows_path, len(vecs), chunks_by_id)
+        if reason:
+            skipped.append((slug, reason))
             logger.warning(
-                "Paper %s has no window_index.json (built before #23); "
-                "skipping — rebuild the corpus with `setup_local_index.py rebuild`",
+                "Paper %s skipped: %s — rebuild with `setup_local_index.py rebuild`",
                 slug,
+                reason,
             )
             continue
-        rows = json.loads(windows_path.read_text()).get("rows", [])
-        if len(rows) != len(vecs):
-            logger.warning(
-                "Paper %s window index (%d rows) does not match embeddings (%d rows); "
-                "skipping — rebuild the corpus",
-                slug,
-                len(rows),
-                len(vecs),
-            )
-            continue
-        # A row count can match while the ids are stale. An unknown chunk_id would
-        # otherwise be served as an empty snippet, so skip the paper instead.
-        unknown = {c for c in rows if c not in chunks_by_id}
-        if unknown:
-            logger.warning(
-                "Paper %s window index names %d chunk_id(s) missing from chunks.jsonl "
-                "(e.g. %s); skipping — rebuild the corpus",
-                slug,
-                len(unknown),
-                sorted(unknown)[:3],
-            )
-            continue
+        rows = json.loads(windows_path.read_text())["rows"]
 
         embeddings_parts.append(vecs)
         for chunk_id in rows:
@@ -1419,6 +1466,21 @@ def _load_index(project_dir_str: str) -> dict[str, Any]:
             )
 
     embeddings = np.vstack(embeddings_parts) if embeddings_parts else np.zeros((0, 0))
+
+    # A corpus that lists papers but can serve none of them looks identical, from
+    # the caller's side, to a corpus with nothing relevant to say: search returns
+    # []. Say so at ERROR, so the difference reaches someone who is only watching
+    # for errors.
+    if papers and not row_index:
+        logger.error(
+            "Local index for %s has %d paper(s) but none are usable (%s). "
+            "Searches will return nothing until you run "
+            "`setup_local_index.py rebuild --project %s`.",
+            project_dir,
+            len(papers),
+            "; ".join(f"{slug}: {reason}" for slug, reason in skipped) or "unknown",
+            project_dir,
+        )
 
     return {
         "corpus": corpus,
@@ -1586,6 +1648,9 @@ def main(argv: list[str] | None = None) -> int:
         help="Re-resolve references instead of reusing the cached resolution (slow)",
     )
 
+    p_check = sub.add_parser("check", help="Report papers whose vectors need a rebuild")
+    p_check.add_argument("--project", required=True, type=Path)
+
     p_list = sub.add_parser("list", help="List papers in the corpus")
     p_list.add_argument("--project", required=True, type=Path)
 
@@ -1627,6 +1692,10 @@ def main(argv: list[str] | None = None) -> int:
         results = rebuild_corpus(args.project, dois=args.paper, refresh_refs=args.refresh_refs)
         print(json.dumps(results, indent=2))
         return 1 if any("error" in r for r in results) else 0
+    if args.cmd == "check":
+        stale = stale_papers(args.project)
+        print(json.dumps(stale, indent=2))
+        return 1 if stale else 0
     if args.cmd == "list":
         print(json.dumps(list_papers(args.project), indent=2))
         return 0
