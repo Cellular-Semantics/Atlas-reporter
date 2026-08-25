@@ -42,8 +42,7 @@ uv run python -m atlas_chat.cli_supplements inventory --jats <paper.jats.xml>
 
 # Take files a user dropped into incoming/ into the store.
 uv run python -m atlas_chat.cli_supplements adopt \
-  --store <store> --doi <doi> --incoming <dir> [--jats <xml>] \
-  [--role atlas|subatlas|external] [--access open|closed|unknown]
+  --store <store> --doi <doi> --incoming <dir> [--jats <xml>] [--pmcid <PMCID>]
 
 # Expand archives, record the member tree. Videos are skipped, big tables are not.
 uv run python -m atlas_chat.cli_supplements unpack --store <store> --doi <doi>
@@ -64,6 +63,32 @@ uv run python -m atlas_chat.cli_supplements check --store <store> --doi <doi>
 # Which papers does a project need supplements for?
 uv run python -m atlas_chat.cli_supplements papers --cas <cas.json>
 ```
+
+## Size limits, and why none of them are silent
+
+Supplementary tables are big — the prenatal skin bundle contains a 95 MB
+spreadsheet of 396,880 rows — so every read here is bounded. That is only safe
+if a bound never looks like an absence, so each one leaves a trace:
+
+| Limit | What it does | The trace it leaves |
+|---|---|---|
+| unpack size caps | leaves an oversized member unextracted | a `gaps` entry naming the file, its size and the flag to raise |
+| `outline --rows` / `--cols` | shows the top-left of a table | `truncated_rows` / `truncated_cols` next to the true `n_rows` / `n_cols` |
+| cell width | clips a long cell | a trailing `…` |
+| `text --max-chars` | clips a document | `truncated: true` plus the true `chars` |
+| `slice --limit` | returns one window | `start`, `returned` and the true `n_rows` |
+| `columns` in a manifest | may list a prefix for a very wide table | compare its length against `n_columns` |
+
+Two consequences for you:
+
+- **Never conclude anything from a bounded read.** If `truncated_rows` is true,
+  you have seen the top of the table, not the table. Say what the table *is*,
+  from its columns and its legend; do not say what is or isn't in it.
+- **Assume the reader after you must explore programmatically.** Nothing
+  downstream can open one of these files whole either, so a pointer earns its
+  keep by carrying `locator`, `header_row`, `n_rows` and `n_columns` — enough to
+  slice straight to the right region. That, not a summary of the contents, is
+  the deliverable.
 
 ## Getting files in
 
@@ -118,6 +143,10 @@ schema and rejects a table that points at a file which isn't there, so run
 
 Keep these in mind:
 
+- **Leave the `paper` block alone.** It carries the DOI and, if known, the
+  PMCID — nothing else. Role, title and organism belong to the corpus's CAS+
+  document; copying them into a fetch cache just creates a second copy that goes
+  stale.
 - **One pointer per table**, not per file. A workbook with twelve sheets that
   each hold different DEG comparisons is twelve pointers.
 - **`description` is what the pointer is for.** Say what the table contains and

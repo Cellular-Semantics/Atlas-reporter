@@ -93,6 +93,12 @@ OUTLINE_MAX_COLS = 40
 #: hold whole paragraphs of methods text.
 OUTLINE_CELL_CHARS = 200
 
+#: Rows always read when looking for the header, even when the caller asked for
+#: fewer sample rows. Header quality must not depend on how much the caller
+#: wanted to *see*: a table whose header sits on row 2 behind two title rows
+#: would otherwise be mis-detected by `--rows 2`.
+HEADER_SCAN_ROWS = 6
+
 _MEDIA_TYPES = {
     ".xlsx": "xlsx",
     ".xls": "xlsx",
@@ -271,8 +277,8 @@ def adopt_manual_files(
         incoming: Directory holding the dropped files.
         listed: Optional inventory from :func:`inventory_from_jats`, so labels
             and captions carry over to files matched by name.
-        paper: Optional extra ``paper`` fields for the manifest (title, pmcid,
-            role, access).
+        paper: Optional extra ``paper`` fields for the manifest. Only ``pmcid``
+            is carried; the corpus's own metadata lives in its CAS+ document.
 
     Returns:
         The manifest dict, already written to disk.
@@ -521,10 +527,17 @@ def outline_file(
         sample_rows: Rows to show per table.
         max_cols: Columns to show per row.
 
+    No limit here is silent. Each table reports its true ``n_rows`` and
+    ``n_cols`` alongside ``truncated_rows`` / ``truncated_cols``, so a caller
+    can always tell the difference between "this is the whole table" and "this
+    is the first few rows of it" — and knows to reach for :func:`read_slice`
+    rather than assuming it has seen everything.
+
     Returns:
         ``{"path", "media_type", "tables": [...]}`` where each table carries
-        ``locator``, ``n_rows``, ``n_cols``, ``header_row_guess`` and ``rows``.
-        Unsupported kinds return an empty ``tables`` list and a ``note``.
+        ``locator``, ``n_rows``, ``n_cols``, ``truncated_rows``,
+        ``truncated_cols``, ``header_row_guess`` and ``rows``. Unsupported kinds
+        return an empty ``tables`` list and a ``note``.
     """
     path = Path(path)
     if not path.is_file():
@@ -630,17 +643,20 @@ def _outline_xlsx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str,
     workbook = load_workbook(path, read_only=True, data_only=True)
     tables: list[dict[str, Any]] = []
     try:
+        scan_rows = max(sample_rows, HEADER_SCAN_ROWS)
         for sheet in workbook.worksheets:
-            rows: list[list[str]] = []
-            for row in sheet.iter_rows(max_row=sample_rows, max_col=max_cols, values_only=True):
-                rows.append(_trim([_clip(cell) for cell in row]))
+            scanned: list[list[str]] = []
+            for row in sheet.iter_rows(max_row=scan_rows, max_col=max_cols, values_only=True):
+                scanned.append(_trim([_clip(cell) for cell in row]))
+            rows = scanned[:sample_rows]
             tables.append(
                 {
                     "locator": sheet.title,
                     "n_rows": sheet.max_row,
                     "n_cols": sheet.max_column,
                     "truncated_cols": bool(sheet.max_column and sheet.max_column > max_cols),
-                    "header_row_guess": _header_row_guess(rows),
+                    "truncated_rows": bool(sheet.max_row and sheet.max_row > len(rows)),
+                    "header_row_guess": _header_row_guess(scanned),
                     "rows": rows,
                 }
             )
@@ -664,14 +680,16 @@ def _outline_delimited(
     text = path.read_text(encoding="utf-8", errors="replace")
     delimiter = _sniff_delimiter(text[:8192], kind)
     reader = csv.reader(io.StringIO(text), delimiter=delimiter)
-    rows: list[list[str]] = []
+    scan_rows = max(sample_rows, HEADER_SCAN_ROWS)
+    scanned: list[list[str]] = []
     total = 0
     widest = 0
     for index, row in enumerate(reader):
         total = index + 1
         widest = max(widest, len(row))
-        if index < sample_rows:
-            rows.append(_trim([_clip(cell) for cell in row[:max_cols]]))
+        if index < scan_rows:
+            scanned.append(_trim([_clip(cell) for cell in row[:max_cols]]))
+    rows = scanned[:sample_rows]
     return [
         {
             "locator": path.name,
@@ -679,7 +697,8 @@ def _outline_delimited(
             "n_rows": total,
             "n_cols": widest,
             "truncated_cols": widest > max_cols,
-            "header_row_guess": _header_row_guess(rows),
+            "truncated_rows": total > len(rows),
+            "header_row_guess": _header_row_guess(scanned),
             "rows": rows,
         }
     ]
@@ -703,22 +722,25 @@ def _outline_docx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str,
     ns = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
     root = ET.fromstring(xml)
     tables: list[dict[str, Any]] = []
+    scan_rows = max(sample_rows, HEADER_SCAN_ROWS)
     for index, table in enumerate(root.iter(f"{ns}tbl"), start=1):
-        rows: list[list[str]] = []
+        scanned: list[list[str]] = []
         all_rows = list(table.iter(f"{ns}tr"))
         widest = 0
         for row_index, row in enumerate(all_rows):
             cells = [_element_text(cell) for cell in row.iter(f"{ns}tc")]
             widest = max(widest, len(cells))
-            if row_index < sample_rows:
-                rows.append(_trim([_clip(cell) for cell in cells[:max_cols]]))
+            if row_index < scan_rows:
+                scanned.append(_trim([_clip(cell) for cell in cells[:max_cols]]))
+        rows = scanned[:sample_rows]
         tables.append(
             {
                 "locator": f"table {index}",
                 "n_rows": len(all_rows),
                 "n_cols": widest,
                 "truncated_cols": widest > max_cols,
-                "header_row_guess": _header_row_guess(rows),
+                "truncated_rows": len(all_rows) > len(rows),
+                "header_row_guess": _header_row_guess(scanned),
                 "rows": rows,
             }
         )
@@ -1016,6 +1038,8 @@ def corpus_papers(cas: dict[str, Any]) -> list[dict[str, Any]]:
 
     Returns:
         Dicts with ``doi``, ``role`` and (where known) ``title``, ``pmcid``.
+        This describes the corpus, not a manifest: ``role`` tells a caller which
+        papers to fetch for, and is deliberately not written into the store.
     """
     source = cas.get("source", {})
     papers: list[dict[str, Any]] = []
@@ -1051,10 +1075,8 @@ def _cmd_adopt(args: argparse.Namespace) -> int:
     if args.jats:
         listed = inventory_from_jats(Path(args.jats))
     paper: dict[str, Any] = {}
-    if args.role:
-        paper["role"] = args.role
-    if args.access:
-        paper["access"] = args.access
+    if args.pmcid:
+        paper["pmcid"] = args.pmcid
     manifest = adopt_manual_files(
         store_root=Path(args.store),
         doi=args.doi,
@@ -1171,8 +1193,7 @@ def build_parser() -> argparse.ArgumentParser:
     add_store(adopt)
     adopt.add_argument("--incoming", required=True, help="directory holding the dropped files")
     adopt.add_argument("--jats", help="JATS XML, to carry over labels and captions")
-    adopt.add_argument("--role", choices=["atlas", "subatlas", "external"])
-    adopt.add_argument("--access", choices=["open", "closed", "unknown"])
+    adopt.add_argument("--pmcid", help="cached for the fetch routes")
     adopt.set_defaults(func=_cmd_adopt)
 
     unpack = sub.add_parser("unpack", help="expand archives and record member trees")

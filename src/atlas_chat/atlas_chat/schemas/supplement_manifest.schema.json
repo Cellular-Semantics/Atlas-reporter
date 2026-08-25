@@ -48,38 +48,15 @@
   "$defs": {
     "Paper": {
       "type": "object",
-      "description": "Which paper this manifest belongs to. `doi` is the store key.",
+      "description": "Which paper this manifest belongs to. `doi` is the store key. Deliberately minimal: role, title, organism and the rest belong to the CAS+ document that defines the corpus, and duplicating them into a fetch cache only creates something that can drift out of date.",
       "properties": {
         "doi": {
           "type": "string",
           "pattern": "^10\\.\\d{4,}(\\.\\d+)?/.+"
         },
-        "title": {
-          "type": "string"
-        },
         "pmcid": {
-          "type": "string"
-        },
-        "pmid": {
-          "type": "string"
-        },
-        "role": {
           "type": "string",
-          "description": "What this paper is relative to the corpus. Mirrors evidence_summary.schema.json's `role`.",
-          "enum": [
-            "atlas",
-            "subatlas",
-            "external"
-          ]
-        },
-        "access": {
-          "type": "string",
-          "description": "Whether the supplements are reachable programmatically. 'closed' means retrieval is out of scope and files must be supplied by hand.",
-          "enum": [
-            "open",
-            "closed",
-            "unknown"
-          ]
+          "description": "Cached because the fetch routes are keyed on it and resolving DOI -> PMCID costs a network call. A fetch detail, not curated metadata."
         }
       },
       "required": [

@@ -138,7 +138,7 @@ def test_adopt_copies_files_and_carries_captions_over(
         doi="10.1038/test",
         incoming=incoming,
         listed=store.inventory_from_jats(jats_file),
-        paper={"role": "atlas", "access": "open"},
+        paper={"pmcid": "PMC11578897"},
     )
 
     by_id = {entry["file_id"]: entry for entry in manifest["files"]}
@@ -152,7 +152,7 @@ def test_adopt_copies_files_and_carries_captions_over(
     assert by_id["paper_MOESM2_ESM.mp4"]["status"] == "listed"
     # README and dotfiles are not supplements.
     assert "README.md" not in by_id and ".DS_Store" not in by_id
-    assert manifest["paper"]["role"] == "atlas"
+    assert manifest["paper"] == {"doi": "10.1038/test", "pmcid": "PMC11578897"}
     assert (tmp_path / "store" / adopted["path"]).exists()
 
 
@@ -844,3 +844,69 @@ def test_cli_text(tmp_path: Path, capsys: pytest.CaptureFixture) -> None:
     payload = json.loads(capsys.readouterr().out)
     assert payload["truncated"] is True
     assert len(payload["text"]) == 20
+
+
+def test_manifest_paper_block_stays_minimal(tmp_path: Path) -> None:
+    """Corpus metadata belongs to CAS+, not to a fetch cache that can drift."""
+    manifest = _minimal_manifest()
+    manifest["paper"]["role"] = "atlas"
+
+    with pytest.raises(store.SupplementStoreError):
+        store.write_manifest(tmp_path, "10.1038/test", manifest)
+
+
+# ------------------------------------------------------------------
+# No limit is silent
+# ------------------------------------------------------------------
+
+
+def test_outline_flags_both_truncations_against_true_size(tmp_path: Path) -> None:
+    """A caller must be able to tell a whole table from the top of a big one."""
+    openpyxl = pytest.importorskip("openpyxl")
+    path = tmp_path / "big.xlsx"
+    wb = openpyxl.Workbook()
+    sheet = wb.active
+    sheet.append([f"col{i}" for i in range(50)])
+    for row in range(100):
+        sheet.append([row] * 50)
+    wb.save(path)
+
+    table = store.outline_file(path, sample_rows=3, max_cols=5)["tables"][0]
+
+    assert table["truncated_rows"] is True
+    assert table["truncated_cols"] is True
+    assert table["n_rows"] == 101
+    assert table["n_cols"] == 50
+
+
+def test_outline_does_not_flag_truncation_for_a_small_table(tmp_path: Path) -> None:
+    path = tmp_path / "small.csv"
+    path.write_text("gene,lfc\nA,1\nB,2\n")
+
+    table = store.outline_file(path)["tables"][0]
+
+    assert table["truncated_rows"] is False
+    assert table["truncated_cols"] is False
+
+
+def test_header_detection_survives_a_small_sample(tmp_path: Path) -> None:
+    """Asking to *see* two rows must not degrade the header guess.
+
+    Real case: Supplementary Table 5 of the prenatal skin atlas has two title
+    rows above its header, so `--rows 2` would otherwise report row 0.
+    """
+    openpyxl = pytest.importorskip("openpyxl")
+    path = tmp_path / "titled.xlsx"
+    wb = openpyxl.Workbook()
+    sheet = wb.active
+    sheet.append(["LR: prediction probabilities"])
+    sheet.append(["Overall"])
+    sheet.append(["barcode", "predicted", "12-14", "15-17"])
+    sheet.append(["AAAC-1", "12-14", 0.37, 0.31])
+    wb.save(path)
+
+    table = store.outline_file(path, sample_rows=2)["tables"][0]
+
+    assert table["header_row_guess"] == 2
+    # Still only returns what was asked for.
+    assert len(table["rows"]) == 2
