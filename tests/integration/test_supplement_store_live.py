@@ -80,6 +80,7 @@ def test_publisher_direct_serves_individual_files() -> None:
 # The real store
 # ------------------------------------------------------------------
 
+
 def _material_on_disk() -> bool:
     """Whether the supplement *bytes* are here, not just the manifest.
 

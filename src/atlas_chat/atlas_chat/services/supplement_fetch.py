@@ -54,6 +54,7 @@ import re
 import tempfile
 import urllib.parse
 import zipfile
+from collections import Counter
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -95,6 +96,7 @@ BUNDLE_SPOOL_TO_DISK_BYTES = 32 * 1024 * 1024
 #: Never treated as supplementary content worth storing. Europe PMC's bundle
 #: includes the article's figure images, which are most of its bulk.
 FIGURE_SUFFIXES = {".gif", ".jpg", ".jpeg", ".png", ".tif", ".tiff"}
+
 
 TIMEOUT = httpx.Timeout(30.0, read=180.0)
 
@@ -220,6 +222,60 @@ def fetch_bundle(
 
 def _is_figure(name: str) -> bool:
     return Path(name).suffix.lower() in FIGURE_SUFFIXES
+
+
+#: Formats whose first bytes let us check that a payload is what it claims.
+#: xlsx and docx are zip containers; a PDF starts with %PDF.
+ZIP_CONTAINER_TYPES = {"xlsx", "docx", "zip"}
+
+
+def verify_payload(path: Path, media: str) -> tuple[bool, str]:
+    """Check that retrieved bytes are structurally the format they claim.
+
+    A route can hand back a file that is the wrong size and unopenable, and
+    Europe PMC does: its bundle for PMC8648563 carries an 18.5 MB copy of a
+    workbook the publisher serves at 35.7 MB, truncated so that no zip reader
+    can open it. Extracted faithfully and recorded with a checksum, that looks
+    authoritative and only fails much later, during indexing.
+
+    Cheap enough to run on every file — it reads a header, or a zip's central
+    directory, not the payload.
+
+    Returns:
+        ``(ok, note)``; the note names the problem when ok is False.
+    """
+    try:
+        size = path.stat().st_size
+    except OSError as exc:
+        return False, f"not readable: {exc}"
+    if size == 0:
+        return False, "zero bytes"
+
+    if media in ZIP_CONTAINER_TYPES:
+        if not zipfile.is_zipfile(path):
+            return False, (
+                f"claims to be {media} but is not a readable zip container "
+                f"({size} bytes) — truncated or corrupt at source"
+            )
+    elif media == "pdf":
+        with path.open("rb") as handle:
+            if handle.read(5) != b"%PDF-":
+                return False, f"claims to be a PDF but has no %PDF header ({size} bytes)"
+    return True, "ok"
+
+
+def is_non_evidence(entry: dict[str, Any]) -> bool:
+    """Whether a file's own caption rules it out before any bytes move.
+
+    Only the certain cases — a Reporting Summary or a Peer Review file cannot
+    describe a cell type. The list lives in
+    :mod:`atlas_chat.services.supplement_triage`, which owns what counts as
+    relevant; this is the same judgement applied earlier, where it saves a
+    download rather than an inspection.
+    """
+    from atlas_chat.services.supplement_triage import classify_caption
+
+    return classify_caption(entry) is not None
 
 
 # ------------------------------------------------------------------
@@ -398,10 +454,26 @@ def _fetch(
     if listed:
         manifest["files"] = _merge_files(manifest.get("files", []), listed)
 
+    skipped = 0
+    for entry in manifest.get("files", []):
+        if entry.get("status") == "listed" and is_non_evidence(entry):
+            entry["status"] = "skipped"
+            entry["retrieval"] = {
+                "route": "none",
+                "note": "publishing artefact by its own caption, not evidence",
+            }
+            entry["relevance"] = "irrelevant"
+            entry["relevance_note"] = f"caption: {entry.get('caption') or entry.get('label')}"
+            skipped += 1
+    if skipped:
+        logger.info("%s: skipping %d process artefact(s)", doi, skipped)
+
     wanted = [
         entry
         for entry in manifest.get("files", [])
-        if should_attempt(entry, retry) and media_type(entry["file_id"]) != "video"
+        if should_attempt(entry, retry)
+        and entry.get("status") != "skipped"
+        and media_type(entry["file_id"]) != "video"
     ]
     logger.info("%s: %d file(s) to fetch", doi, len(wanted))
 
@@ -423,6 +495,18 @@ def _fetch(
                     dest.parent.mkdir(parents=True, exist_ok=True)
                     with archive.open(info) as src, dest.open("wb") as out:
                         out.write(src.read())
+                    ok, note = verify_payload(dest, media_type(entry["file_id"]))
+                    if not ok:
+                        # Leave it for the next route rather than storing bytes
+                        # nothing can open.
+                        logger.warning("  %s from bundle: %s", entry["file_id"], note)
+                        dest.unlink(missing_ok=True)
+                        entry["retrieval"] = {
+                            "route": "europepmc_bundle",
+                            "attempted_at": _now(),
+                            "note": note,
+                        }
+                        continue
                     _mark_present(entry, store_root, doi, dest, "europepmc_bundle", url=None)
                 # Files in the bundle the article XML never mentioned: keep them,
                 # since a supplement absent from the listing is still a supplement.
@@ -444,8 +528,11 @@ def _fetch(
         dest = files_dir(store_root, doi) / entry["file_id"]
         ok, note = fetch_one_file(client, url, dest)
         if ok:
+            ok, note = verify_payload(dest, media_type(entry["file_id"]))
+        if ok:
             _mark_present(entry, store_root, doi, dest, "publisher_direct", url=url)
         else:
+            dest.unlink(missing_ok=True)
             entry["status"] = "failed"
             entry["retrieval"] = {
                 "route": "publisher_direct",
@@ -573,14 +660,19 @@ def fetch_corpus(
                     retry=retry,
                     client=client,
                 )
+                files = manifest.get("files", [])
+                counted = Counter(f.get("status", "?") for f in files)
                 out.append(
                     {
                         "doi": paper["doi"],
                         "role": paper.get("role"),
-                        "files": len(manifest.get("files", [])),
-                        "present": sum(
-                            1 for f in manifest.get("files", []) if f.get("status") == "present"
-                        ),
+                        "files": len(files),
+                        "present": counted["present"],
+                        # Deliberately skipped is not a shortfall: counting it as
+                        # one makes a paper whose only miss was a peer-review PDF
+                        # look incomplete.
+                        "skipped": counted["skipped"],
+                        "missing": counted["failed"] + counted["unavailable"] + counted["listed"],
                         "gaps": len(manifest.get("gaps", [])),
                     }
                 )

@@ -112,6 +112,19 @@
           "items": {
             "$ref": "#/$defs/ArchiveMember"
           }
+        },
+        "relevance": {
+          "type": "string",
+          "description": "Whether this file bears on describing cell types, their properties, or the data supporting them \u2014 the only reason this store exists. 'irrelevant' is a positive finding, not a failure to look: it is what stops a 13 MB peer-review PDF being re-examined on every pass and explains why a stored file has no table pointers. 'unknown' means the cheap signals did not settle it and a reader should.",
+          "enum": [
+            "relevant",
+            "irrelevant",
+            "unknown"
+          ]
+        },
+        "relevance_note": {
+          "type": "string",
+          "description": "What the verdict was based on, e.g. 'caption: Peer Review file', 'columns: names/logfoldchanges/pvals_adj -> DEG results'. Keeps the judgement auditable and re-runnable."
         }
       },
       "required": [
@@ -181,6 +194,19 @@
         },
         "extracted": {
           "type": "boolean"
+        },
+        "relevance": {
+          "type": "string",
+          "description": "Whether this file bears on describing cell types, their properties, or the data supporting them \u2014 the only reason this store exists. 'irrelevant' is a positive finding, not a failure to look: it is what stops a 13 MB peer-review PDF being re-examined on every pass and explains why a stored file has no table pointers. 'unknown' means the cheap signals did not settle it and a reader should.",
+          "enum": [
+            "relevant",
+            "irrelevant",
+            "unknown"
+          ]
+        },
+        "relevance_note": {
+          "type": "string",
+          "description": "What the verdict was based on, e.g. 'caption: Peer Review file', 'columns: names/logfoldchanges/pvals_adj -> DEG results'. Keeps the judgement auditable and re-runnable."
         }
       },
       "required": [

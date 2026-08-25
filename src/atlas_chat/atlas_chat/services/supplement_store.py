@@ -661,7 +661,16 @@ def _outline_xlsx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str,
             "reading .xlsx needs openpyxl — install the [supplements] extra"
         ) from exc
 
-    workbook = load_workbook(path, read_only=True, data_only=True)
+    try:
+        workbook = load_workbook(path, read_only=True, data_only=True)
+    except Exception as exc:
+        # A .xlsx extension is a claim, not a fact: publishers ship legacy .xls
+        # and the occasional truncated download under that name. Raising a typed
+        # error lets a caller record the file as unreadable and carry on, rather
+        # than a corpus-wide crash on one bad file.
+        raise SupplementStoreError(
+            f"{path.name} is not a readable .xlsx workbook: {type(exc).__name__}: {exc}"
+        ) from exc
     tables: list[dict[str, Any]] = []
     try:
         scan_rows = max(sample_rows, HEADER_SCAN_ROWS)
@@ -1237,6 +1246,26 @@ def _cmd_fetch(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_triage(args: argparse.Namespace) -> int:
+    from atlas_chat.services.supplement_triage import indexable, triage_paper
+
+    manifest = triage_paper(Path(args.store), args.doi)
+    verdicts: dict[str, int] = {}
+    for entry in manifest.get("files", []):
+        for item in entry.get("members") or [entry]:
+            verdicts[item.get("relevance", "unset")] = (
+                verdicts.get(item.get("relevance", "unset"), 0) + 1
+            )
+    _print(
+        {
+            "doi": args.doi,
+            "verdicts": verdicts,
+            "to_index": indexable(manifest),
+        }
+    )
+    return 0
+
+
 def _cmd_papers(args: argparse.Namespace) -> int:
     cas = json.loads(Path(args.cas).read_text(encoding="utf-8"))
     _print(corpus_papers(cas))
@@ -1337,6 +1366,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="ignore the negative cache and retry files that previously failed",
     )
     fetch.set_defaults(func=_cmd_fetch)
+
+    triage = sub.add_parser(
+        "triage",
+        help="judge which stored files could describe cell types, from their columns",
+    )
+    triage.add_argument("--store", required=True)
+    triage.add_argument("--doi", required=True)
+    triage.set_defaults(func=_cmd_triage)
 
     papers = sub.add_parser("papers", help="corpus papers from a CAS+ document")
     papers.add_argument("--cas", required=True)

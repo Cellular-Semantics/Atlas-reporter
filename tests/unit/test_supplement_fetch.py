@@ -39,12 +39,30 @@ JATS = f"""<?xml version="1.0"?>
 """
 
 
+def _xlsx() -> bytes:
+    """A minimal but structurally valid .xlsx payload.
+
+    Retrieval verifies that a file is the format it claims, so a fixture using
+    b"xlsx-bytes" would be rejected — as it should be. Real payloads open.
+    """
+    return _zip({"[Content_Types].xml": b"<Types/>"})
+
+
+def _pdf() -> bytes:
+    return b"%PDF-1.4\n%%EOF\n"
+
+
 def _zip(members: dict[str, bytes]) -> bytes:
     buffer = io.BytesIO()
     with zipfile.ZipFile(buffer, "w") as zf:
         for name, payload in members.items():
             zf.writestr(name, payload)
     return buffer.getvalue()
+
+
+def _payload_for(url: str) -> bytes:
+    """A payload that will survive the integrity check for the requested name."""
+    return _pdf() if url.endswith(".pdf") else _xlsx()
 
 
 def _client(handler) -> httpx.Client:
@@ -145,7 +163,7 @@ def test_bundle_http_error_is_reported() -> None:
 
 
 def test_bundle_returns_an_archive() -> None:
-    payload = _zip({f"{STEM}MOESM1_ESM.pdf": b"%PDF-1.4"})
+    payload = _zip({f"{STEM}MOESM1_ESM.pdf": _pdf()})
     handler = lambda request: httpx.Response(200, content=payload)  # noqa: E731
 
     with _client(handler) as client:
@@ -220,7 +238,11 @@ def _waterfall_handler(
                 httpx.Response(200, content=bundle) if bundle else httpx.Response(200, content=b"")
             )
         if "static-content.springer.com" in url:
-            return httpx.Response(200, content=b"payload") if publisher_ok else httpx.Response(404)
+            return (
+                httpx.Response(200, content=_payload_for(url))
+                if publisher_ok
+                else httpx.Response(404)
+            )
         return httpx.Response(404)
 
     return handler
@@ -230,8 +252,8 @@ def test_bundle_route_stores_only_listed_files(tmp_path: Path) -> None:
     """Figure images bloat the bundle; only the listed supplements are wanted."""
     bundle = _zip(
         {
-            f"{STEM}MOESM1_ESM.pdf": b"%PDF-1.4",
-            f"{STEM}MOESM3_ESM.xlsx": b"xlsx-bytes",
+            f"{STEM}MOESM1_ESM.pdf": _pdf(),
+            f"{STEM}MOESM3_ESM.xlsx": _xlsx(),
             "41588_2024_1873_g001.jpg": b"\xff\xd8\xff",  # a figure, not a supplement
         }
     )
@@ -300,7 +322,7 @@ def test_bundle_is_tried_even_with_no_article_xml(tmp_path: Path) -> None:
     Without this the bundle is never attempted for such papers and their files
     are reported unavailable without anyone having looked.
     """
-    bundle = _zip({"mmc1.xlsx": b"xlsx", "gr1.jpg": b"\xff\xd8\xff"})
+    bundle = _zip({"mmc1.xlsx": _xlsx(), "gr1.jpg": b"\xff\xd8\xff"})
     with _client(_waterfall_handler(jats=None, bundle=bundle)) as client:
         manifest = fetch.fetch_supplements(tmp_path, "10.1016/j.devcel.2024.01.006", client=client)
 
@@ -312,7 +334,7 @@ def test_bundle_is_tried_even_with_no_article_xml(tmp_path: Path) -> None:
 
 
 def test_second_run_does_not_refetch(tmp_path: Path) -> None:
-    bundle = _zip({f"{STEM}MOESM1_ESM.pdf": b"%PDF", f"{STEM}MOESM3_ESM.xlsx": b"x"})
+    bundle = _zip({f"{STEM}MOESM1_ESM.pdf": _pdf(), f"{STEM}MOESM3_ESM.xlsx": _xlsx()})
     calls: list[str] = []
     with _client(_waterfall_handler(bundle=bundle, calls=calls)) as client:
         fetch.fetch_supplements(tmp_path, DOI, client=client)
@@ -335,7 +357,7 @@ def test_manifest_stays_schema_valid_through_the_waterfall(tmp_path: Path) -> No
 def test_video_is_never_fetched(tmp_path: Path) -> None:
     """Supplementary video is what makes bundles enormous and holds no tables."""
     jats = JATS.replace(f"{STEM}MOESM3_ESM.xlsx", f"{STEM}MOESM5_ESM.mp4")
-    bundle = _zip({f"{STEM}MOESM1_ESM.pdf": b"%PDF", f"{STEM}MOESM5_ESM.mp4": b"video"})
+    bundle = _zip({f"{STEM}MOESM1_ESM.pdf": _pdf(), f"{STEM}MOESM5_ESM.mp4": b"video"})
     with _client(_waterfall_handler(jats=jats, bundle=bundle)) as client:
         manifest = fetch.fetch_supplements(tmp_path, DOI, client=client)
 
@@ -379,3 +401,128 @@ def test_cli_fetch_rejects_both_doi_and_cas(tmp_path: Path, capsys) -> None:
 
     assert code == 2
     assert "exactly one" in capsys.readouterr().err
+
+
+# ------------------------------------------------------------------
+# Not everything in a supplement bundle is evidence
+# ------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    ("entry", "expected"),
+    [
+        ({"label": "Reporting Summary"}, True),
+        ({"caption": "Peer Review file"}, True),
+        ({"caption": "Peer review information"}, True),
+        ({"label": "Supplementary Tables", "caption": "Supplementary Tables 1-40."}, False),
+        ({"caption": "Source Data Figs. 2 and 4"}, False),
+        # No caption is not evidence of absence — fetch it and let indexing judge.
+        ({"file_id": "mmc9.pdf"}, False),
+    ],
+)
+def test_is_non_evidence_uses_the_publisher_s_own_words(entry: dict, expected: bool) -> None:
+    assert fetch.is_non_evidence(entry) is expected
+
+
+def test_process_artefacts_are_skipped_before_any_bytes_move(tmp_path: Path) -> None:
+    """Their captions say what they are, and captions arrive before the bytes."""
+    jats = f"""<?xml version="1.0"?>
+    <article xmlns:xlink="http://www.w3.org/1999/xlink"><body>
+      <supplementary-material xlink:href="{STEM}MOESM1_ESM.xlsx">
+        <label>Supplementary Tables</label><caption><p>Supplementary Tables 1-9.</p></caption>
+      </supplementary-material>
+      <supplementary-material xlink:href="{STEM}MOESM2_ESM.pdf">
+        <caption><p>Reporting Summary</p></caption>
+      </supplementary-material>
+      <supplementary-material xlink:href="{STEM}MOESM3_ESM.pdf">
+        <caption><p>Peer Review file</p></caption>
+      </supplementary-material>
+    </body></article>"""
+    bundle = _zip(
+        {
+            f"{STEM}MOESM1_ESM.xlsx": _xlsx(),
+            f"{STEM}MOESM2_ESM.pdf": _pdf(),
+            f"{STEM}MOESM3_ESM.pdf": _pdf(),
+        }
+    )
+    with _client(_waterfall_handler(jats=jats, bundle=bundle)) as client:
+        manifest = fetch.fetch_supplements(tmp_path, DOI, client=client)
+
+    by_id = {f["file_id"]: f for f in manifest["files"]}
+    assert by_id[f"{STEM}MOESM1_ESM.xlsx"]["status"] == "present"
+    for artefact in (f"{STEM}MOESM2_ESM.pdf", f"{STEM}MOESM3_ESM.pdf"):
+        assert by_id[artefact]["status"] == "skipped"
+        assert "path" not in by_id[artefact], "skipped means no bytes on disk"
+    # Skipping is not a gap: nothing is missing that anyone wanted.
+    assert manifest["gaps"] == []
+    store.validate_manifest(manifest)
+    assert store.cross_check_manifest(manifest) == []
+
+
+# ------------------------------------------------------------------
+# Payload integrity — a route can return bytes nothing can open
+# ------------------------------------------------------------------
+
+
+def test_verify_payload_accepts_real_formats(tmp_path: Path) -> None:
+    book = tmp_path / "t.xlsx"
+    book.write_bytes(_xlsx())
+    doc = tmp_path / "t.pdf"
+    doc.write_bytes(_pdf())
+
+    assert fetch.verify_payload(book, "xlsx") == (True, "ok")
+    assert fetch.verify_payload(doc, "pdf") == (True, "ok")
+
+
+@pytest.mark.parametrize(
+    ("name", "media", "payload", "expected"),
+    [
+        # The real case: Europe PMC's bundle for PMC8648563 carries an 18.5 MB
+        # copy of a workbook the publisher serves at 35.7 MB, truncated so no
+        # zip reader can open it.
+        ("t.xlsx", "xlsx", b"PK\x03\x04" + b"\x00" * 100, "not a readable zip"),
+        ("t.xlsx", "xlsx", b"", "zero bytes"),
+        ("t.pdf", "pdf", b"<html>Access denied</html>", "no %PDF header"),
+    ],
+)
+def test_verify_payload_rejects_broken_bytes(
+    tmp_path: Path, name: str, media: str, payload: bytes, expected: str
+) -> None:
+    path = tmp_path / name
+    path.write_bytes(payload)
+
+    ok, note = fetch.verify_payload(path, media)
+
+    assert ok is False
+    assert expected in note
+
+
+def test_a_corrupt_bundle_copy_falls_through_to_the_publisher(tmp_path: Path) -> None:
+    """The bundle is not authoritative: verify, then let the next route try."""
+    bundle = _zip(
+        {
+            f"{STEM}MOESM1_ESM.pdf": _pdf(),
+            f"{STEM}MOESM3_ESM.xlsx": b"PK\x03\x04truncated",  # what EPMC actually served
+        }
+    )
+    with _client(_waterfall_handler(bundle=bundle, publisher_ok=True)) as client:
+        manifest = fetch.fetch_supplements(tmp_path, DOI, client=client)
+
+    by_id = {f["file_id"]: f for f in manifest["files"]}
+    assert by_id[f"{STEM}MOESM1_ESM.pdf"]["retrieval"]["route"] == "europepmc_bundle"
+    rescued = by_id[f"{STEM}MOESM3_ESM.xlsx"]
+    assert rescued["status"] == "present"
+    assert rescued["retrieval"]["route"] == "publisher_direct"
+    assert manifest["gaps"] == []
+
+
+def test_corrupt_bytes_are_not_left_on_disk(tmp_path: Path) -> None:
+    """Storing an unopenable file would poison indexing later."""
+    bundle = _zip({f"{STEM}MOESM3_ESM.xlsx": b"PK\x03\x04truncated"})
+    with _client(_waterfall_handler(bundle=bundle, publisher_ok=False)) as client:
+        manifest = fetch.fetch_supplements(tmp_path, DOI, client=client)
+
+    entry = next(f for f in manifest["files"] if f["file_id"].endswith(".xlsx"))
+    assert entry["status"] in {"failed", "unavailable"}
+    assert "path" not in entry
+    assert not list((tmp_path / "papers").rglob("*.xlsx"))

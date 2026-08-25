@@ -60,9 +60,20 @@ uv run python -m atlas_chat.cli_supplements slice \
 uv run python -m atlas_chat.cli_supplements show  --store <store> --doi <doi>
 uv run python -m atlas_chat.cli_supplements check --store <store> --doi <doi>
 
+# Retrieve: article XML -> Europe PMC bundle -> publisher -> manual.
+uv run python -m atlas_chat.cli_supplements fetch \
+  --store <store> --doi <doi> | --cas <cas.json> [--retry] [--no-bundle]
+
+# Judge which stored files could describe cell types, from their columns.
+uv run python -m atlas_chat.cli_supplements triage --store <store> --doi <doi>
+
 # Which papers does a project need supplements for?
 uv run python -m atlas_chat.cli_supplements papers --cas <cas.json>
 ```
+
+The order is **fetch → unpack → triage → index**. Unpacking before triage
+matters: a bundle of forty tables is one opaque item until it is expanded, and
+its members are what get judged.
 
 ## Size limits, and why none of them are silent
 
@@ -104,6 +115,33 @@ Three routes, cheapest first:
    the publisher's static host usually serves them individually. Automated
    retrieval is deliberately out of scope for this skill — if files are missing,
    record a gap saying which ones and let the operator drop them in.
+
+## Triage first: only index what could describe a cell type
+
+The aim is describing cell types, their properties, and the data supporting
+them. Most of a supplement bundle does not bear on that, and deep indexing is
+the expensive step, so run `triage` before you open anything.
+
+Triage writes `relevance` and `relevance_note` on every file and archive member:
+
+- **`irrelevant`** — ruled out, with the reason. Either its caption says what it
+  is ("Reporting Summary", "Peer Review file") or its columns do (a reagent list
+  with a vendor and a catalogue number). Do **not** index these, and do not
+  treat them as gaps: nothing is missing.
+- **`relevant`** — its columns match a known kind: differential expression in any
+  of the usual dialects, cluster-to-name mappings, per-cell tables, enrichment
+  results, cell-cell interactions, sample metadata. The note names the kind, so
+  you start from a hypothesis rather than a blank sheet.
+- **`unknown`** — the cheap signals did not settle it. **Index these.** Roughly
+  40% of a real corpus lands here, mostly PDFs whose columns cannot be read at
+  all. Unknown means "look", never "skip".
+
+The asymmetry is deliberate and worth preserving if you touch `SIGNATURES`: a
+wrong `relevant` costs one wasted inspection, a wrong `irrelevant` silently
+drops evidence. So anything unrecognised is `unknown`.
+
+Expect triage to exclude only around 10% of items by count. Its larger value is
+that it hands you a kind and a reason for about half of what remains.
 
 ## How to index — cheapest evidence first
 

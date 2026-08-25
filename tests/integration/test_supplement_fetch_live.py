@@ -11,6 +11,8 @@ different branch of the waterfall, and each is small enough to fetch quickly.
 
 from __future__ import annotations
 
+from collections import Counter
+
 import httpx
 import pytest
 
@@ -115,9 +117,15 @@ def test_springer_paper_is_fully_retrieved(tmp_path, client) -> None:
     store.validate_manifest(manifest)
     assert store.cross_check_manifest(manifest) == []
     assert len(manifest["files"]) == 3
-    assert all(f["status"] == "present" for f in manifest["files"])
+    # One of the three is this paper's Reporting Summary, which triage rules out
+    # on its caption before any bytes move. Nothing is missing.
+    statuses = Counter(f["status"] for f in manifest["files"])
+    assert statuses == {"present": 2, "skipped": 1}
     assert manifest["gaps"] == []
     for entry in manifest["files"]:
+        if entry["status"] != "present":
+            assert "path" not in entry, "skipped means no bytes were fetched"
+            continue
         assert (tmp_path / entry["path"]).stat().st_size == entry["size_bytes"]
         assert len(entry["retrieval"]["sha256"]) == 64
 
@@ -129,11 +137,15 @@ def test_publisher_direct_produces_the_same_bytes_as_the_bundle(tmp_path, client
         tmp_path / "direct", SPRINGER, bundle_cap=1000, client=client
     )
 
-    routes = {f["retrieval"]["route"] for f in via_publisher["files"]}
-    assert routes == {"publisher_direct"}
+    fetched = [f for f in via_publisher["files"] if f["status"] == "present"]
+    assert {f["retrieval"]["route"] for f in fetched} == {"publisher_direct"}
 
-    left = {f["file_id"]: f["retrieval"]["sha256"] for f in via_bundle["files"]}
-    right = {f["file_id"]: f["retrieval"]["sha256"] for f in via_publisher["files"]}
+    left = {
+        f["file_id"]: f["retrieval"]["sha256"]
+        for f in via_bundle["files"]
+        if f["status"] == "present"
+    }
+    right = {f["file_id"]: f["retrieval"]["sha256"] for f in fetched}
     assert left == right
 
 
