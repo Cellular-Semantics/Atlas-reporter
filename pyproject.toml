@@ -20,6 +20,9 @@ dev-dependencies = [
     "sphinx-autodoc-typehints>=1.25.0",
     "myst-parser>=2.0.0",
     "pre-commit>=3.7.0",
+    # Optional at runtime ([supplements] extra), required for the test suite so
+    # the spreadsheet tests run in CI rather than silently skipping.
+    "openpyxl>=3.1",
 ]
 
 [tool.pytest.ini_options]

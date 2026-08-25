@@ -14,4 +14,14 @@ build/
 docs/_build/
 .claude/settings.local.json
 
-#projects/
+# Test projects: commit setup only (cas.json, README); ignore generated outputs
+projects/test_projects/**/traversal_output/
+projects/test_projects/**/reports/
+projects/test_projects/**/selections/
+projects/test_projects/**/runs/
+
+# Supplement store: retrieved/manually-dropped files and unpacked archives are
+# never committed; the manifests describing them are.
+projects/**/supplements/**/files/
+projects/**/supplements/incoming/*
+!projects/**/supplements/incoming/README.md

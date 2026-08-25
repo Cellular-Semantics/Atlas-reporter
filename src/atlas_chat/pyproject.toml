@@ -30,6 +30,12 @@ local-index = [
     "pymupdf4llm>=0.0.17",
 ]
 
+# Reading supplementary spreadsheets in the supplement store. Small; kept
+# optional so the base install stays lean.
+supplements = [
+    "openpyxl>=3.1",
+]
+
 [project.scripts]
 atlas-report = "atlas_chat.cli:main"
 
