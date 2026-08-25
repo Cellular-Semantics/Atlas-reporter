@@ -643,14 +643,19 @@ def _xlsx_dimensions(sheet: Any) -> tuple[int, int]:
     """
     if sheet.max_row is not None and sheet.max_column is not None:
         return sheet.max_row, sheet.max_column
-    rows = cols = 0
-    for row in sheet.iter_rows(values_only=True):
-        rows += 1
+    # Count to the last row that has content, not to the last row the reader
+    # yields. A sheet with formatting applied down to row 1000 yields 1000 rows
+    # for 35 rows of data, and reporting 1000 tells a reader to slice a table
+    # that is small enough to read whole.
+    last = cols = 0
+    for index, row in enumerate(sheet.iter_rows(values_only=True), start=1):
         width = len(row)
-        while width and row[width - 1] is None:
+        while width and (row[width - 1] is None or str(row[width - 1]).strip() == ""):
             width -= 1
-        cols = max(cols, width)
-    return rows, cols
+        if width:
+            last = index
+            cols = max(cols, width)
+    return last, cols
 
 
 def _outline_xlsx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str, Any]]:

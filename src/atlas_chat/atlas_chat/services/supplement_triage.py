@@ -317,10 +317,17 @@ def classify_caption(entry: dict[str, Any]) -> tuple[str, str] | None:
 # Triaging a whole paper
 # ------------------------------------------------------------------
 
-#: Kinds that can hold a table worth reading. A PDF may well carry a
-#: cluster-annotation table, but we cannot see its columns, so it is left
-#: unknown for a reader rather than guessed at.
-INSPECTABLE = {"xlsx", "csv", "tsv", "txt", "docx"}
+#: Kinds whose columns we read. Deliberately just the delimited and spreadsheet
+#: formats: they are where the tables that describe cell types actually live
+#: (105 of the 107 inspectable items in the reproductive-atlas corpus are xlsx),
+#: and their cost is flat in file size.
+#:
+#: PDF and docx are left alone on purpose. A Supplementary Information PDF may
+#: well carry a cluster-to-name table, but getting at it needs text extraction
+#: and layout reconstruction, which is a different and much larger job. They are
+#: recorded ``unknown`` with a note saying they were not inspected, so the
+#: absence of pointers for them is a stated decision rather than a silent gap.
+INSPECTABLE = {"xlsx", "csv", "tsv", "txt"}
 
 
 def triage_paper(store_root: Path, doi: str) -> dict[str, Any]:
@@ -393,7 +400,10 @@ def _judge(store_root: Path, entry: dict[str, Any], name: str) -> tuple[str, str
     if not path:
         return "unknown", "not on disk, so its columns could not be read"
     if kind not in INSPECTABLE:
-        return "unknown", f"{kind or 'unrecognised'} file — columns cannot be read from it"
+        return "unknown", (
+            f"not inspected: {kind or 'unrecognised format'} — only spreadsheet and "
+            "delimited files are read for columns. Its content may still be useful."
+        )
 
     try:
         outline = outline_file(store_root / path, sample_rows=6, max_cols=60)

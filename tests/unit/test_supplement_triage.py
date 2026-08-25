@@ -408,3 +408,35 @@ def test_no_signature_can_produce_irrelevant_without_naming_its_reason() -> None
         if not signature.relevant:
             assert signature.name, "an excluding signature needs a name for its note"
             assert signature.required or signature.any_of, "and real criteria"
+
+
+@pytest.mark.parametrize("kind", ["pdf", "docx", "video", "other"])
+def test_uninspected_formats_say_so_explicitly(tmp_path: Path, kind: str) -> None:
+    """A stated decision, not a silent gap: these are never read for columns."""
+    from atlas_chat.services.supplement_store import MANIFEST_VERSION, write_manifest
+
+    files = tmp_path / "papers" / "10.1038_test" / "files"
+    files.mkdir(parents=True)
+    (files / f"f.{kind}").write_bytes(b"whatever")
+    write_manifest(
+        tmp_path,
+        "10.1038/test",
+        {
+            "manifest_version": MANIFEST_VERSION,
+            "paper": {"doi": "10.1038/test"},
+            "files": [
+                {
+                    "file_id": f"f.{kind}",
+                    "media_type": kind,
+                    "status": "present",
+                    "path": f"papers/10.1038_test/files/f.{kind}",
+                }
+            ],
+        },
+    )
+
+    manifest = triage.triage_paper(tmp_path, "10.1038/test")
+
+    entry = manifest["files"][0]
+    assert entry["relevance"] == "unknown", "never irrelevant — we simply did not look"
+    assert "not inspected" in entry["relevance_note"]

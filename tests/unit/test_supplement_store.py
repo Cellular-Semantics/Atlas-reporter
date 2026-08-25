@@ -943,3 +943,38 @@ def test_xlsx_dimensions_prefers_the_cheap_answer() -> None:
             raise AssertionError("should not stream when dimensions are known")
 
     assert store._xlsx_dimensions(Sheet()) == (500, 12)
+
+
+def test_xlsx_dimensions_ignores_trailing_empty_rows() -> None:
+    """Formatting applied past the data must not inflate the row count.
+
+    Real case: a subject table with 35 rows of data in a sheet formatted to row
+    1000 reported 1000, which tells a reader to slice a table small enough to
+    read whole.
+    """
+
+    class FormattedFarSheet:
+        max_row = None
+        max_column = None
+
+        def iter_rows(self, values_only=False, max_row=None, max_col=None):
+            yield ("Subject", "Age", None)
+            yield ("S1", 59, None)
+            yield ("S2", 65, None)
+            for _ in range(200):  # formatted, but empty
+                yield (None, None, None)
+
+    assert store._xlsx_dimensions(FormattedFarSheet()) == (3, 2)
+
+
+def test_xlsx_dimensions_ignores_whitespace_only_cells() -> None:
+    class Sheet:
+        max_row = None
+        max_column = None
+
+        def iter_rows(self, values_only=False, max_row=None, max_col=None):
+            yield ("gene", "lfc")
+            yield ("A", 1.0)
+            yield ("   ", "")
+
+    assert store._xlsx_dimensions(Sheet()) == (2, 2)
