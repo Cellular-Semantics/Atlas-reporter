@@ -1,0 +1,2297 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1038/s41586-024-08002-x",
+    "role": "atlas",
+    "access": "open"
+  },
+  "files": [
+    {
+      "file_id": "41586_2024_8002_MOESM1_ESM.docx",
+      "media_type": "docx",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-08-25T13:53:26+00:00",
+        "sha256": "7dcea6f46bc3ed1122f7f190e85c8ae9430fb29e47431c1a5b7360569d03bb93",
+        "note": "copied from projects/test_projects/fetal_skin_atlas/supplements/incoming/10.1038_s41586-024-08002-x"
+      },
+      "label": "Supplementary Information",
+      "caption": "This file contains Supplementary Discussion and Supplementary References",
+      "size_bytes": 10219,
+      "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM1_ESM.docx"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM2_ESM.pdf",
+      "media_type": "pdf",
+      "status": "listed",
+      "retrieval": {
+        "route": "jats_listing"
+      },
+      "caption": "Reporting Summary"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM3_ESM.pdf",
+      "media_type": "pdf",
+      "status": "listed",
+      "retrieval": {
+        "route": "jats_listing"
+      },
+      "caption": "Peer Review file"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "media_type": "zip",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-08-25T13:53:26+00:00",
+        "sha256": "65f5b8fa87a4a626f9a6e1bf169d0b23e92e307cb21cea3bc52362ca3c3d8b09",
+        "note": "copied from projects/test_projects/fetal_skin_atlas/supplements/incoming/10.1038_s41586-024-08002-x"
+      },
+      "label": "Supplementary Tables",
+      "caption": "Supplementary Tables 1\u201340.",
+      "size_bytes": 194851851,
+      "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM.zip",
+      "members": [
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 1.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 14062,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 1.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 10.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 8981255,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 10.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 11.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 34219438,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 11.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 12.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 11434,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 12.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 13.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 91270,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 13.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 14.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 345669,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 14.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 15.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 391371,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 15.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 16.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 60129,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 16.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 17.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 269720,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 17.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 18.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 182057,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 18.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 19.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 260196,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 19.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 2.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 12924,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 2.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 20.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 10305,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 20.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 21.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 3045928,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 21.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 22.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 71158,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 22.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 23.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 190717,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 23.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 24.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 104382,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 24.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 25.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 252991,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 25.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 26.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 42878,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 26.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 27.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 12024,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 27.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 28.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 11586830,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 28.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 29.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 15701,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 29.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 3.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 3092685,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 3.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 30.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 4012565,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 30.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 31.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 42797,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 31.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 32.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 53110,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 32.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 33.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 223167,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 33.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 34.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 272645,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 34.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 35.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 17101,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 35.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 36.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 41224,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 36.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 37.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 10856,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 37.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 38.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 13918,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 38.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 39.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 3295329,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 39.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 4.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 5772551,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 4.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 40.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 9529,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 40.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 5.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 95089172,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 5.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 6.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 364729,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 6.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 7.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 2664048,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 7.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 8.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 20337277,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 8.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 9.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 109257,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 9.xlsx"
+        },
+        {
+          "member_path": "2023-08-13667B-s4/Supplementary Table legends.docx",
+          "media_type": "docx",
+          "size_bytes": 19098,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM4_ESM__unpacked/2023-08-13667B-s4/Supplementary Table legends.docx"
+        }
+      ]
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM5_ESM.mp4",
+      "media_type": "video",
+      "status": "listed",
+      "retrieval": {
+        "route": "jats_listing"
+      },
+      "label": "Supplementary Video 1",
+      "caption": "3D view of co-localization of endothelial cells and macrophages with putative contact points. 3D rendering of co-localized areas (magenta) of endothelial cells (CD31+, green) and LYVE1+ macrophages (LYVE1+, yellow) from whole-mount immunostaining of a 15 PCW prenatal skin sample. DAPI nuclear stain is in blue. Scale bar, 100 \u00b5m."
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-08-25T13:53:26+00:00",
+        "sha256": "69b9da3b31f3fd6e82e49df82f0a1a1026f1c5104b7806057ece2c286f0f19b4",
+        "note": "copied from projects/test_projects/fetal_skin_atlas/supplements/incoming/10.1038_s41586-024-08002-x"
+      },
+      "caption": "Source Data Figs. 2 and 4 and Source Data Extended Data Figs. 3, 7, 8, 10 and 11.",
+      "size_bytes": 121826,
+      "path": "papers/10.1038_s41586-024-08002-x/files/41586_2024_8002_MOESM6_ESM.xlsx"
+    }
+  ],
+  "gaps": [
+    {
+      "file_id": "41586_2024_8002_MOESM1_ESM.docx",
+      "reason": "holds Supplementary Discussion and References as prose, not tables, so it yields no table pointers; its text is readable with the store's `text` command"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM2_ESM.pdf",
+      "reason": "never retrieved (Reporting Summary; no table content expected)",
+      "action": "drop it into incoming/ if the reporting checklist is needed"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM3_ESM.pdf",
+      "reason": "never retrieved (Peer Review file; no table content expected)",
+      "action": "drop it into incoming/ if the review history is needed"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM5_ESM.mp4",
+      "reason": "supplementary video, deliberately not retrieved; carries no table content and the Europe PMC bundle for this paper exceeds 445 MB because of it"
+    }
+  ],
+  "tables": [
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 1.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 1",
+      "content_type": "sample_metadata",
+      "description": "Prenatal skin scRNA-seq sample metadata: one row per sample, giving sample ID, donor, gestational age in post-conception weeks and FACS enrichment status. Use it to establish which donors and ages any cell state was observed in.",
+      "columns": [
+        {
+          "name": "Sanger_id"
+        },
+        {
+          "name": "Donor"
+        },
+        {
+          "name": "PCW"
+        },
+        {
+          "name": "Sorting"
+        }
+      ],
+      "n_columns": 13,
+      "header_row": 1,
+      "n_rows": 136,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 2.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 2",
+      "content_type": "sample_metadata",
+      "description": "Overview of every dataset analysed in the study \u2014 newly generated and published single-cell and spatial prenatal skin data plus the external datasets used for comparison \u2014 with publication, accession codes, technology and per-sample metadata. The place to look up which upstream study a cell state came from.",
+      "columns": [
+        {
+          "name": "dataset"
+        },
+        {
+          "name": "source"
+        },
+        {
+          "name": "public accession code"
+        },
+        {
+          "name": "technology"
+        },
+        {
+          "name": "sample_id"
+        },
+        {
+          "name": "age"
+        },
+        {
+          "name": "sex"
+        },
+        {
+          "name": "sort strategy"
+        },
+        {
+          "name": "chemistry"
+        }
+      ],
+      "n_columns": 9,
+      "header_row": 0,
+      "n_rows": 65,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 3.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 3",
+      "content_type": "deg_results",
+      "description": "Differential expression between refined (fine-grained) cell states across the whole prenatal skin scRNA-seq dataset: two-sided Wilcoxon rank-sum, Benjamini-Hochberg adjusted. One row per gene per cluster, so this is the primary marker table for any prenatal skin cell state. 139 columns because results are laid out as repeated column blocks.",
+      "columns": [
+        {
+          "name": "genes"
+        },
+        {
+          "name": "cluster"
+        },
+        {
+          "name": "top_frac"
+        },
+        {
+          "name": "frac_diff"
+        },
+        {
+          "name": "max_frac_diff"
+        },
+        {
+          "name": "top_mean_group"
+        },
+        {
+          "name": "top_mean"
+        },
+        {
+          "name": "mean_diff"
+        },
+        {
+          "name": "max_mean_diff"
+        },
+        {
+          "name": "logfoldchanges"
+        },
+        {
+          "name": "pvals"
+        },
+        {
+          "name": "pvals_adj"
+        }
+      ],
+      "n_columns": 139,
+      "header_row": 2,
+      "n_rows": 5114,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 4.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 4",
+      "content_type": "other",
+      "description": "Milo differential abundance testing: FACS-isolated cell proportions used to correct for sort strategy, then per-neighbourhood differential abundance across gestation for broad and refined cell states. Early-enriched neighbourhoods are SpatialFDR < 0.1 with logFC < 0, late-enriched are SpatialFDR < 0.1 with logFC > 0.",
+      "columns": [
+        {
+          "name": "orig.ident"
+        },
+        {
+          "name": "Sample.lanes"
+        },
+        {
+          "name": "age"
+        },
+        {
+          "name": "sort.ids"
+        },
+        {
+          "name": "origin"
+        },
+        {
+          "name": "count"
+        },
+        {
+          "name": "total_live_events"
+        },
+        {
+          "name": "parent_Multiplier"
+        },
+        {
+          "name": "remarks"
+        }
+      ],
+      "n_columns": 14,
+      "header_row": 1,
+      "n_rows": 35753,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 5.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 5",
+      "content_type": "cell_metadata",
+      "description": "Logistic regression prediction probabilities for a model trained on time-encoded prenatal and adult skin and projected onto skin organoid data \u2014 one row per cell, columns per gestational-age bin, for overall cell states and per broad category. The largest file in the bundle (~95 MB, 396,880 rows).",
+      "columns": [
+        {
+          "name": "predicted"
+        },
+        {
+          "name": "12-14"
+        },
+        {
+          "name": "15-17"
+        },
+        {
+          "name": "7-8"
+        },
+        {
+          "name": "9-11"
+        },
+        {
+          "name": "999"
+        },
+        {
+          "name": "confident_calls"
+        },
+        {
+          "name": "12-14_fetal_Mural cell"
+        },
+        {
+          "name": "15-17_fetal_Mural cell"
+        },
+        {
+          "name": "7-8_fetal_Mural cell"
+        },
+        {
+          "name": "9-11_fetal_Mural cell"
+        },
+        {
+          "name": "999_adult_Mural cell"
+        },
+        {
+          "name": "orig_labels"
+        },
+        {
+          "name": "12-14_fetal_Schwann cell"
+        },
+        {
+          "name": "15-17_fetal_Schwann cell"
+        },
+        {
+          "name": "7-8_fetal_Schwann cell"
+        },
+        {
+          "name": "9-11_fetal_Schwann cell"
+        },
+        {
+          "name": "999_adult_Schwann cell"
+        },
+        {
+          "name": "12-14_fetal_Vascular endothelium"
+        },
+        {
+          "name": "15-17_fetal_Vascular endothelium"
+        },
+        {
+          "name": "7-8_fetal_Vascular endothelium"
+        },
+        {
+          "name": "9-11_fetal_Vascular endothelium"
+        },
+        {
+          "name": "999_adult_Vascular endothelium"
+        },
+        {
+          "name": "12-14_Fibroblast"
+        },
+        {
+          "name": "15-17_Fibroblast"
+        }
+      ],
+      "n_columns": 88,
+      "header_row": 2,
+      "n_rows": 396877,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 6.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 6",
+      "content_type": "deg_results",
+      "description": "Differential expression within prenatal epidermal cell states by gestational age group (PCW): two-sided Wilcoxon rank-sum, BH adjusted. Use for genes that change with developmental time rather than between cell types. Note some gene symbols have been mangled into dates by a spreadsheet (e.g. MARCH1 -> 2024-08-07).",
+      "columns": [
+        {
+          "name": "genes"
+        },
+        {
+          "name": "cluster"
+        },
+        {
+          "name": "top_frac"
+        },
+        {
+          "name": "frac_diff"
+        },
+        {
+          "name": "max_frac_diff"
+        },
+        {
+          "name": "top_mean_group"
+        },
+        {
+          "name": "top_mean"
+        },
+        {
+          "name": "mean_diff"
+        },
+        {
+          "name": "max_mean_diff"
+        },
+        {
+          "name": "logfoldchanges"
+        },
+        {
+          "name": "pvals"
+        },
+        {
+          "name": "pvals_adj"
+        }
+      ],
+      "n_columns": 13,
+      "header_row": 1,
+      "n_rows": 2984,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 7.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 7",
+      "content_type": "other",
+      "description": "CellRank output: lineage driver genes for the inferred epidermal, fibroblast and endothelial trajectories, as per-lineage correlation with p, q and confidence intervals in repeated column blocks.",
+      "columns": [
+        {
+          "name": "Capillaries_2_corr"
+        },
+        {
+          "name": "Capillaries_2_pval"
+        },
+        {
+          "name": "Capillaries_2_qval"
+        },
+        {
+          "name": "Capillaries_2_ci_low"
+        },
+        {
+          "name": "Capillaries_2_ci_high"
+        },
+        {
+          "name": "Capillary arterioles_2_corr"
+        },
+        {
+          "name": "Capillary arterioles_2_pval"
+        },
+        {
+          "name": "Capillary arterioles_2_qval"
+        },
+        {
+          "name": "Capillary arterioles_2_ci_low"
+        },
+        {
+          "name": "Capillary arterioles_2_ci_high"
+        },
+        {
+          "name": "Arterioles_2_corr"
+        },
+        {
+          "name": "Arterioles_2_pval"
+        },
+        {
+          "name": "Arterioles_2_qval"
+        },
+        {
+          "name": "Arterioles_2_ci_low"
+        },
+        {
+          "name": "Arterioles_2_ci_high"
+        },
+        {
+          "name": "Postcapillary venules_3_corr"
+        },
+        {
+          "name": "Postcapillary venules_3_pval"
+        },
+        {
+          "name": "Postcapillary venules_3_qval"
+        },
+        {
+          "name": "Postcapillary venules_3_ci_low"
+        },
+        {
+          "name": "Postcapillary venules_3_ci_high"
+        },
+        {
+          "name": "Venules_1_corr"
+        },
+        {
+          "name": "Venules_1_pval"
+        },
+        {
+          "name": "Venules_1_qval"
+        },
+        {
+          "name": "Venules_1_ci_low"
+        },
+        {
+          "name": "Venules_1_ci_high"
+        }
+      ],
+      "n_columns": 107,
+      "header_row": 1,
+      "n_rows": 1896,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 8.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 8",
+      "content_type": "other",
+      "description": "Summarised CellPhoneDB ligand-receptor interactions for prenatal skin cell types, split by early (<= 11 PCW) and late (>= 12 PCW) gestation and for skin organoid. Significance is mean receptor-ligand expression p < 0.05 by empirical shuffling, FDR-adjusted.",
+      "columns": [
+        {
+          "name": "gene_pair"
+        },
+        {
+          "name": "celltype_pair"
+        },
+        {
+          "name": "mean"
+        },
+        {
+          "name": "p"
+        },
+        {
+          "name": "padj"
+        }
+      ],
+      "n_columns": 53,
+      "header_row": 1,
+      "n_rows": 141215,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 9.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 9",
+      "content_type": "other",
+      "description": "Genes2Genes trajectory alignment between prenatal skin and skin organoid fibroblasts for all 1,369 transcription factors: alignment similarity percentage and the 5-state alignment string (M match, W compression warp, V expansion warp, I insertion, D deletion).",
+      "columns": [
+        {
+          "name": "Gene"
+        },
+        {
+          "name": "alignment_similarity_percentage"
+        },
+        {
+          "name": "opt_alignment_cost"
+        },
+        {
+          "name": "l2fc"
+        },
+        {
+          "name": "color"
+        },
+        {
+          "name": "abs_l2fc"
+        },
+        {
+          "name": "cluster_id"
+        },
+        {
+          "name": "alignment_string"
+        }
+      ],
+      "n_columns": 9,
+      "header_row": 0,
+      "n_rows": 1369,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 10.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 10",
+      "content_type": "cell_metadata",
+      "description": "Logistic regression prediction probabilities for a model trained on human prenatal skin and projected onto murine embryonic skin, at broad (low-resolution) cluster level. One row per murine cell, one column per human broad annotation.",
+      "columns": [
+        {
+          "name": "LR_assignment"
+        },
+        {
+          "name": "Adipocyte"
+        },
+        {
+          "name": "B cell"
+        },
+        {
+          "name": "DC"
+        },
+        {
+          "name": "Erythroid"
+        },
+        {
+          "name": "Fibroblast"
+        },
+        {
+          "name": "Haem progenitor"
+        },
+        {
+          "name": "ILC"
+        },
+        {
+          "name": "Keratinocyte"
+        },
+        {
+          "name": "Lymphatic endothelium"
+        },
+        {
+          "name": "Macrophage"
+        },
+        {
+          "name": "Mast cell"
+        },
+        {
+          "name": "Megakaryocyte"
+        },
+        {
+          "name": "Melanocyte"
+        },
+        {
+          "name": "Monocyte"
+        },
+        {
+          "name": "Mural cell"
+        },
+        {
+          "name": "Neuronal cells"
+        },
+        {
+          "name": "Neutrophil"
+        },
+        {
+          "name": "Schwann cell"
+        },
+        {
+          "name": "Skeletal muscle"
+        },
+        {
+          "name": "T cell"
+        },
+        {
+          "name": "Vascular endothelium"
+        },
+        {
+          "name": "original_labels"
+        }
+      ],
+      "n_columns": 24,
+      "header_row": 1,
+      "n_rows": 32194,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 11.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 11",
+      "content_type": "cell_metadata",
+      "description": "As Supplementary Table 10 but at refined (high-resolution) cell-state level: one row per murine cell, one column per human refined annotation. Use for cross-species correspondence of a specific fine cell state.",
+      "columns": [
+        {
+          "name": "LR_assignment"
+        },
+        {
+          "name": "ASDC"
+        },
+        {
+          "name": "Adipocytes"
+        },
+        {
+          "name": "Arterioles"
+        },
+        {
+          "name": "B cell"
+        },
+        {
+          "name": "CCL19+ fibroblast"
+        },
+        {
+          "name": "CD4 T cell"
+        },
+        {
+          "name": "CD8 T cell"
+        },
+        {
+          "name": "Capillaries"
+        },
+        {
+          "name": "Capillary arterioles"
+        },
+        {
+          "name": "Companion layer"
+        },
+        {
+          "name": "Cuticle/cortex"
+        },
+        {
+          "name": "DC1"
+        },
+        {
+          "name": "DC2"
+        },
+        {
+          "name": "DPYSL2+ basal"
+        },
+        {
+          "name": "Dermal condensate"
+        },
+        {
+          "name": "Dermal papilla"
+        },
+        {
+          "name": "Early LE"
+        },
+        {
+          "name": "Early endothelial cells"
+        },
+        {
+          "name": "Early erythroid"
+        },
+        {
+          "name": "Early erythroid (embryonic)"
+        },
+        {
+          "name": "Early myocytes"
+        },
+        {
+          "name": "Eo/baso/mast cell progenitor"
+        },
+        {
+          "name": "Erythroid (embryonic)"
+        },
+        {
+          "name": "Erythroid (fetal)"
+        }
+      ],
+      "n_columns": 89,
+      "header_row": 1,
+      "n_rows": 32194,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 12.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 12",
+      "content_type": "other",
+      "description": "Gene mutations implicated in genetic hair diseases found along the inner root sheath, outer root sheath/companion layer and hair fibroblast trajectories, with literature references.",
+      "columns": [
+        {
+          "name": "Gene"
+        },
+        {
+          "name": "Disease"
+        },
+        {
+          "name": "Reference"
+        }
+      ],
+      "n_columns": 3,
+      "header_row": 1,
+      "n_rows": 13,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 13.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 13",
+      "content_type": "deg_results",
+      "description": "Differential expression comparing prenatal skin fibroblasts against healthy adult skin fibroblasts (Wilcoxon, BH adjusted), as two column blocks.",
+      "columns": [
+        {
+          "name": "names"
+        },
+        {
+          "name": "pvals"
+        },
+        {
+          "name": "logfoldchanges"
+        },
+        {
+          "name": "scores"
+        }
+      ],
+      "n_columns": 10,
+      "header_row": 2,
+      "n_rows": 1000,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 14.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 14",
+      "content_type": "other",
+      "description": "Gene set enrichment for prenatal skin fibroblasts: Fisher exact test, BH adjusted, ranked by z-score, with the overlapping gene list per term.",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 1,
+      "n_rows": 3561,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 15.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 15",
+      "content_type": "other",
+      "description": "Gene set enrichment for healthy adult skin fibroblasts (the legend's title repeats 'prenatal', but the contents are the adult comparison). Same columns as Supplementary Table 14.",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 1,
+      "n_rows": 4054,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 16.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 16",
+      "content_type": "deg_results",
+      "description": "Differential expression between Milo-defined early- and late-gestation WNT2+ fibroblasts (Wilcoxon, BH adjusted).",
+      "columns": [
+        {
+          "name": "names"
+        },
+        {
+          "name": "pvals"
+        },
+        {
+          "name": "logfoldchanges"
+        },
+        {
+          "name": "scores"
+        }
+      ],
+      "n_columns": 10,
+      "header_row": 2,
+      "n_rows": 674,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 17.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 17",
+      "content_type": "other",
+      "description": "Gene set enrichment for WNT2+ fibroblasts enriched in early gestation (Milo early neighbourhoods).",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 1,
+      "n_rows": 2899,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 18.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 18",
+      "content_type": "other",
+      "description": "Gene set enrichment for WNT2+ fibroblasts enriched in late gestation (Milo late neighbourhoods).",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 1,
+      "n_rows": 1924,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 19.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 19",
+      "content_type": "cell_metadata",
+      "description": "Logistic regression probabilities from a model trained on reindeer skin fibroblast classes (antler velvet and back skin) projected onto human prenatal skin fibroblasts grouped by gestational age. One row per cell.",
+      "columns": [
+        {
+          "name": "Original grouping"
+        },
+        {
+          "name": "LR_assignment"
+        },
+        {
+          "name": "Mixed"
+        },
+        {
+          "name": "Proinflammatory"
+        },
+        {
+          "name": "Proregenerative"
+        }
+      ],
+      "n_columns": 6,
+      "header_row": 1,
+      "n_rows": 4000,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 20.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 20",
+      "content_type": "marker_list",
+      "description": "Pro-regenerative and pro-fibrotic gene lists published for reindeer skin (antler velvet and back), from Sinha et al. 2022 (PMID 36493752). Two columns, one gene list each.",
+      "columns": [
+        {
+          "name": "Pre-regenerative genes"
+        },
+        {
+          "name": "Pre-fibrotic genes"
+        }
+      ],
+      "n_columns": 2,
+      "header_row": 1,
+      "n_rows": 40,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 21.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 21",
+      "content_type": "cell_metadata",
+      "description": "Logistic regression probabilities from a model trained on reindeer skin macrophage clusters projected onto human prenatal skin macrophage subsets. One row per cell, carrying the original prenatal macrophage label alongside the predicted reindeer cluster. Column headers for the predicted classes are bare cluster numbers.",
+      "columns": [
+        {
+          "name": "Original_labels"
+        },
+        {
+          "name": "LR_assignment"
+        },
+        {
+          "name": "0"
+        },
+        {
+          "name": "1"
+        },
+        {
+          "name": "2"
+        },
+        {
+          "name": "3"
+        },
+        {
+          "name": "4"
+        },
+        {
+          "name": "5"
+        },
+        {
+          "name": "6"
+        }
+      ],
+      "n_columns": 10,
+      "header_row": 1,
+      "n_rows": 27563,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 22.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 22",
+      "content_type": "deg_results",
+      "description": "Differential expression between prenatal skin macrophage subsets \u2014 TLM, iron-recycling, LYVE1+ and MHC-II+ \u2014 each computed against the rest of the myeloid cells (Wilcoxon, BH adjusted). The marker table for any of the four macrophage subsets. Laid out as one five-column block per subset, with the subset name in the row above the header.",
+      "columns": [
+        {
+          "name": "names"
+        },
+        {
+          "name": "scores"
+        },
+        {
+          "name": "logfoldchanges"
+        },
+        {
+          "name": "pvals"
+        },
+        {
+          "name": "pvals_adj"
+        }
+      ],
+      "n_columns": 24,
+      "header_row": 2,
+      "n_rows": 550,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 23.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 23",
+      "content_type": "other",
+      "description": "Gene set enrichment for genes differentially expressed by TLM macrophages (Fisher exact, BH adjusted, ranked by z-score).",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 1,
+      "n_rows": 2027,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 24.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 24",
+      "content_type": "other",
+      "description": "Gene set enrichment for genes differentially expressed by iron-recycling macrophages (Fisher exact, BH adjusted, ranked by z-score). The functional-annotation counterpart to that subset's markers in Supplementary Table 22.",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 1,
+      "n_rows": 1030,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 25.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 25",
+      "content_type": "other",
+      "description": "Gene set enrichment for genes differentially expressed by LYVE1+ macrophages.",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 1,
+      "n_rows": 2642,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 26.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 26",
+      "content_type": "other",
+      "description": "Gene set enrichment for genes differentially expressed by MHC-II+ macrophages.",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 1,
+      "n_rows": 323,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 27.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 27",
+      "content_type": "other",
+      "description": "The angiogenesis gene sets (GO Biological Process 2021) used to compute angiogenesis module scores. Each column is one GO term, listing its genes down the column rather than one row per gene.",
+      "columns": [
+        {
+          "name": "positive regulation of angiogenesis (GO:0045766)"
+        },
+        {
+          "name": "positive regulation of sprouting angiogenesis (GO:1903672)"
+        },
+        {
+          "name": "positive regulation of endothelial cell chemotaxis (GO:2001028)"
+        },
+        {
+          "name": "positive regulation of endothelial cell proliferation (GO:0001938)"
+        },
+        {
+          "name": "blood vessel morphogenesis (GO:0048514)"
+        }
+      ],
+      "n_columns": 9,
+      "header_row": 1,
+      "n_rows": 117,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 28.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 28",
+      "content_type": "other",
+      "description": "Summarised CellPhoneDB ligand-receptor interactions across all prenatal skin cell states (not split by gestation, unlike Supplementary Table 8). Significance p < 0.05, FDR-adjusted.",
+      "columns": [
+        {
+          "name": "gene_pair"
+        },
+        {
+          "name": "celltype_pair"
+        },
+        {
+          "name": "mean"
+        },
+        {
+          "name": "p"
+        },
+        {
+          "name": "padj"
+        }
+      ],
+      "n_columns": 17,
+      "header_row": 1,
+      "n_rows": 137204,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 29.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 29",
+      "content_type": "other",
+      "description": "Gene lists used for the endothelial and hypoxia module scores; each column is one score's gene set.",
+      "columns": [
+        {
+          "name": "Tip score"
+        },
+        {
+          "name": "Stalk score"
+        },
+        {
+          "name": "Arterioles"
+        },
+        {
+          "name": "Capillaries"
+        },
+        {
+          "name": "Venules"
+        },
+        {
+          "name": "LE"
+        },
+        {
+          "name": "Hypoxia (Hallmark)"
+        }
+      ],
+      "n_columns": 10,
+      "header_row": 2,
+      "n_rows": 200,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 30.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 30",
+      "content_type": "deg_results",
+      "description": "Differential expression between prenatal skin and skin organoid for all cell states, grouped by dataset, as prenatal and organoid column blocks.",
+      "columns": [
+        {
+          "name": "prenatal names"
+        },
+        {
+          "name": "prenatal scores"
+        },
+        {
+          "name": "prenatal logfoldchanges"
+        },
+        {
+          "name": "prenatal pvals"
+        },
+        {
+          "name": "prenatal pvals_adj"
+        },
+        {
+          "name": "organoid names"
+        },
+        {
+          "name": "organoid scores"
+        },
+        {
+          "name": "organoid logfoldchanges"
+        },
+        {
+          "name": "organoid pvals"
+        },
+        {
+          "name": "organoid pvals_adj"
+        }
+      ],
+      "n_columns": 12,
+      "header_row": 1,
+      "n_rows": 36592,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 31.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 31",
+      "content_type": "deg_results",
+      "description": "A filtered list of genes encoding secreted proteins that differ between prenatal skin and skin organoid, with log fold change and adjusted p-value. Note the discrepancy: the legends document calls this the upregulated list, while the sheet's own title row says downregulated \u2014 check the sign of fetal_logfoldchanges before relying on either.",
+      "columns": [
+        {
+          "name": "fetal_names"
+        },
+        {
+          "name": "fetal_logfoldchanges"
+        },
+        {
+          "name": "fetal_pvals_adj"
+        }
+      ],
+      "n_columns": 4,
+      "header_row": 2,
+      "n_rows": 749,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 32.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 32",
+      "content_type": "deg_results",
+      "description": "The companion filtered list of secreted-protein genes for the opposite direction to Supplementary Table 31, same columns. Both sheets carry a 'downregulated' title row; use the fold-change sign rather than the label.",
+      "columns": [
+        {
+          "name": "fetal_names"
+        },
+        {
+          "name": "fetal_logfoldchanges"
+        },
+        {
+          "name": "fetal_pvals_adj"
+        }
+      ],
+      "n_columns": 4,
+      "header_row": 2,
+      "n_rows": 1002,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 33.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 33",
+      "content_type": "other",
+      "description": "Gene set enrichment for the secreted-protein genes upregulated in prenatal skin relative to skin organoid.",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 2,
+      "n_rows": 2676,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 34.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 34",
+      "content_type": "other",
+      "description": "Gene set enrichment for the secreted-protein genes downregulated in prenatal skin relative to skin organoid.",
+      "columns": [
+        {
+          "name": "Gene_set"
+        },
+        {
+          "name": "Term"
+        },
+        {
+          "name": "Overlap"
+        },
+        {
+          "name": "P-value"
+        },
+        {
+          "name": "Adjusted P-value"
+        },
+        {
+          "name": "Old P-value"
+        },
+        {
+          "name": "Old Adjusted P-value"
+        },
+        {
+          "name": "Odds Ratio"
+        },
+        {
+          "name": "Combined Score"
+        },
+        {
+          "name": "Genes"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 2,
+      "n_rows": 3164,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 35.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 35",
+      "content_type": "other",
+      "description": "NicheNet prioritised ligands, ranked by ligand activity score (auroc, aupr, corrected aupr, pearson, rank).",
+      "columns": [
+        {
+          "name": "test_ligand"
+        },
+        {
+          "name": "auroc"
+        },
+        {
+          "name": "aupr"
+        },
+        {
+          "name": "aupr_corrected"
+        },
+        {
+          "name": "pearson"
+        },
+        {
+          "name": "rank"
+        }
+      ],
+      "n_columns": 6,
+      "header_row": 1,
+      "n_rows": 103,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 36.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 36",
+      "content_type": "other",
+      "description": "NicheNet prioritised ligands with their active target genes and interaction weights \u2014 one row per ligand-target pair.",
+      "columns": [
+        {
+          "name": "ligand"
+        },
+        {
+          "name": "target"
+        },
+        {
+          "name": "weight"
+        }
+      ],
+      "n_columns": 3,
+      "header_row": 1,
+      "n_rows": 1052,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 37.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 37",
+      "content_type": "other",
+      "description": "NicheNet prioritised ligands against their receptors, filtered to bona fide ligand-receptor interactions. Ligands are columns, receptors are rows.",
+      "columns": [
+        {
+          "name": "IL1A"
+        },
+        {
+          "name": "IL1B"
+        },
+        {
+          "name": "ADAM17"
+        },
+        {
+          "name": "VCAM1"
+        },
+        {
+          "name": "VEGFA"
+        },
+        {
+          "name": "TNF"
+        },
+        {
+          "name": "TGFB1"
+        },
+        {
+          "name": "SEMA4D"
+        },
+        {
+          "name": "SELPLG"
+        },
+        {
+          "name": "ITGAM"
+        },
+        {
+          "name": "APOE"
+        },
+        {
+          "name": "BMP2"
+        }
+      ],
+      "n_columns": 15,
+      "header_row": 1,
+      "n_rows": 21,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 38.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 38",
+      "content_type": "other",
+      "description": "Antibodies used for immunofluorescence of prenatal skin and skin organoid cryosections: RRID, vendor, catalogue number, clonality, clone, dilution and application. Use it to check what a protein-level claim was stained with.",
+      "columns": [
+        {
+          "name": "RRID citation"
+        },
+        {
+          "name": "Antibody"
+        },
+        {
+          "name": "Vendor"
+        },
+        {
+          "name": "Cat no"
+        },
+        {
+          "name": "Clonality"
+        },
+        {
+          "name": "Clone"
+        },
+        {
+          "name": "Dilution"
+        },
+        {
+          "name": "Antibody application"
+        }
+      ],
+      "n_columns": 27,
+      "header_row": 1,
+      "n_rows": 27,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 39.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 39",
+      "content_type": "other",
+      "description": "The database of predicted secreted proteins and their encoding genes, with synonyms, Ensembl and UniProt identifiers, protein class and evidence level.",
+      "columns": [
+        {
+          "name": "Gene"
+        },
+        {
+          "name": "Gene synonym"
+        },
+        {
+          "name": "Ensembl"
+        },
+        {
+          "name": "Gene description"
+        },
+        {
+          "name": "Uniprot"
+        },
+        {
+          "name": "Chromosome"
+        },
+        {
+          "name": "Position"
+        },
+        {
+          "name": "Protein class"
+        },
+        {
+          "name": "Biological process"
+        },
+        {
+          "name": "Molecular function"
+        },
+        {
+          "name": "Disease involvement"
+        },
+        {
+          "name": "Evidence"
+        },
+        {
+          "name": "HPA evidence"
+        },
+        {
+          "name": "UniProt evidence"
+        },
+        {
+          "name": "NeXtProt evidence"
+        },
+        {
+          "name": "RNA tissue specificity"
+        },
+        {
+          "name": "RNA tissue distribution"
+        },
+        {
+          "name": "RNA tissue specificity score"
+        },
+        {
+          "name": "RNA tissue specific nTPM"
+        },
+        {
+          "name": "RNA single cell type specificity"
+        },
+        {
+          "name": "RNA single cell type distribution"
+        },
+        {
+          "name": "RNA single cell type specificity score"
+        },
+        {
+          "name": "RNA single cell type specific nTPM"
+        },
+        {
+          "name": "RNA cancer specificity"
+        },
+        {
+          "name": "RNA cancer distribution"
+        }
+      ],
+      "n_columns": 313,
+      "header_row": 1,
+      "n_rows": 1903,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/2023-08-13667B-s4/Supplementary Table 40.xlsx",
+      "locator": "Sheet1",
+      "table_label": "Supplementary Table 40",
+      "content_type": "cluster_annotation",
+      "description": "Microenvironment labels used for the spatial analysis, defined by predominant cell-type composition and/or spatial or age distribution. Maps a microenvironment number to its label.",
+      "columns": [
+        {
+          "name": "No."
+        },
+        {
+          "name": "Microenvironment label"
+        }
+      ],
+      "n_columns": 2,
+      "header_row": 0,
+      "n_rows": 11,
+      "evidence": "legend_sheet"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM4_ESM.zip",
+      "member_path": "2023-08-13667B-s4/Supplementary Table legends.docx",
+      "table_label": "Supplementary Table legends",
+      "content_type": "legend",
+      "description": "Prose legends for all 40 supplementary tables, one paragraph each: the table's title and what analysis produced it. Read this first \u2014 it characterises the whole bundle in ~11,000 characters, and the individual workbooks carry no descriptions of their own.",
+      "evidence": "rows_read"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "locator": "Fig. 2b",
+      "content_type": "cell_metadata",
+      "description": "Source data for Fig. 2b: cell counts per refined annotation, per donor and gestational age. Use for how abundant a prenatal skin cell state is and how that changes across gestation.",
+      "columns": [
+        {
+          "name": "PCW"
+        },
+        {
+          "name": "Donor"
+        },
+        {
+          "name": "Annotation_Fine"
+        },
+        {
+          "name": "Counts"
+        }
+      ],
+      "n_columns": 13,
+      "header_row": 0,
+      "n_rows": 216,
+      "evidence": "headers"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "locator": "Fig. 4c",
+      "content_type": "cell_metadata",
+      "description": "Source data for Fig. 4c: cell counts per refined annotation, per donor and gestational age, for the subset shown in that panel.",
+      "columns": [
+        {
+          "name": "PCW"
+        },
+        {
+          "name": "Donor"
+        },
+        {
+          "name": "Annotation_Fine"
+        },
+        {
+          "name": "Counts"
+        }
+      ],
+      "n_columns": 9,
+      "header_row": 0,
+      "n_rows": 144,
+      "evidence": "headers"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "locator": "Fig. 4i",
+      "content_type": "other",
+      "description": "Source data for Fig. 4i: endothelial density per skin-organoid batch and condition, from image quantification.",
+      "columns": [
+        {
+          "name": "SkO batch"
+        },
+        {
+          "name": "Condition"
+        },
+        {
+          "name": "Endothelial density (%)"
+        }
+      ],
+      "n_columns": 26,
+      "header_row": 3,
+      "n_rows": 996,
+      "evidence": "headers"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "locator": "ED Fig. 3c",
+      "content_type": "cell_metadata",
+      "description": "Source data for Extended Data Fig. 3c: cell counts per refined annotation, per donor and gestational age.",
+      "columns": [
+        {
+          "name": "PCW"
+        },
+        {
+          "name": "Donor"
+        },
+        {
+          "name": "Annotation_Fine"
+        },
+        {
+          "name": "Counts"
+        }
+      ],
+      "n_columns": 22,
+      "header_row": 0,
+      "n_rows": 360,
+      "evidence": "headers"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "locator": "ED Fig. 3f",
+      "content_type": "other",
+      "description": "Source data for Extended Data Fig. 3f: FOXP3+ cell counts in hair-follicle versus non-hair-follicle regions.",
+      "columns": [
+        {
+          "name": "FOXP3+ HF regions"
+        },
+        {
+          "name": "FOXP3+ non-HF regions"
+        }
+      ],
+      "n_columns": 3,
+      "header_row": 2,
+      "n_rows": 997,
+      "evidence": "headers"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "locator": "ED Fig. 7g",
+      "content_type": "other",
+      "description": "Source data for Extended Data Fig. 7g: per-experiment image quantification, laid out as one column block per experiment.",
+      "columns": [
+        {
+          "name": "Time (hours)"
+        },
+        {
+          "name": "well 1"
+        },
+        {
+          "name": "well 2"
+        },
+        {
+          "name": "well 3"
+        }
+      ],
+      "n_columns": 26,
+      "header_row": 4,
+      "n_rows": 995,
+      "evidence": "headers"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "locator": "ED Fig. 8g",
+      "content_type": "other",
+      "description": "Source data for Extended Data Fig. 8g: per-experiment image quantification, one column block per experiment.",
+      "columns": [
+        {
+          "name": "Time (hours)"
+        },
+        {
+          "name": "well 1"
+        },
+        {
+          "name": "well 2"
+        },
+        {
+          "name": "well 3"
+        }
+      ],
+      "n_columns": 26,
+      "header_row": 4,
+      "n_rows": 995,
+      "evidence": "headers"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "locator": "ED Fig. 10g",
+      "content_type": "other",
+      "description": "Source data for Extended Data Fig. 10g: timecourse quantification for endothelial-cell-only and co-culture conditions.",
+      "columns": [
+        {
+          "name": "Time"
+        },
+        {
+          "name": "ECs only"
+        },
+        {
+          "name": "ECs + Macs"
+        }
+      ],
+      "n_columns": 14,
+      "header_row": 3,
+      "n_rows": 996,
+      "evidence": "headers"
+    },
+    {
+      "file_id": "41586_2024_8002_MOESM6_ESM.xlsx",
+      "locator": "ED Fig. 11i",
+      "content_type": "other",
+      "description": "Source data for Extended Data Fig. 11i: timecourse quantification for endothelial-cell-only and co-culture conditions.",
+      "columns": [
+        {
+          "name": "Time"
+        },
+        {
+          "name": "ECs only"
+        },
+        {
+          "name": "ECs + Macs"
+        }
+      ],
+      "n_columns": 14,
+      "header_row": 3,
+      "n_rows": 996,
+      "evidence": "headers"
+    }
+  ],
+  "indexed_at": "2026-08-25T14:09:05+00:00"
+}
