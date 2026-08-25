@@ -910,3 +910,36 @@ def test_header_detection_survives_a_small_sample(tmp_path: Path) -> None:
     assert table["header_row_guess"] == 2
     # Still only returns what was asked for.
     assert len(table["rows"]) == 2
+
+
+def test_outline_counts_rows_when_the_workbook_omits_its_dimensions() -> None:
+    """openpyxl read-only reports None for max_row on some publisher files.
+
+    Passing that through puts a null where every consumer expects a count — and
+    `n_rows` is what tells a reader a table needs slicing rather than opening.
+    """
+
+    class DimensionlessSheet:
+        title = "Sheet1"
+        max_row = None
+        max_column = None
+
+        def iter_rows(self, values_only=False, max_row=None, max_col=None):
+            rows = [("gene", "lfc", None), ("A", 1.0, None), ("B", 2.0, None)]
+            for index, row in enumerate(rows):
+                if max_row is not None and index >= max_row:
+                    return
+                yield row[:max_col] if max_col else row
+
+    assert store._xlsx_dimensions(DimensionlessSheet()) == (3, 2)
+
+
+def test_xlsx_dimensions_prefers_the_cheap_answer() -> None:
+    class Sheet:
+        max_row = 500
+        max_column = 12
+
+        def iter_rows(self, **kwargs):  # pragma: no cover - must not be called
+            raise AssertionError("should not stream when dimensions are known")
+
+    assert store._xlsx_dimensions(Sheet()) == (500, 12)

@@ -632,6 +632,27 @@ def _header_row_guess(rows: list[list[str]], scan: int = 6) -> int:
     return next(index for index, count in enumerate(counts) if count >= threshold)
 
 
+def _xlsx_dimensions(sheet: Any) -> tuple[int, int]:
+    """True (rows, cols) of a worksheet.
+
+    openpyxl's read-only mode reports ``max_row``/``max_column`` as None when the
+    workbook carries no dimension record — real for publisher-generated files.
+    Reporting None would put a null where every consumer expects a count, so the
+    rows are streamed and counted instead. Only pays that cost when the cheap
+    answer is missing.
+    """
+    if sheet.max_row is not None and sheet.max_column is not None:
+        return sheet.max_row, sheet.max_column
+    rows = cols = 0
+    for row in sheet.iter_rows(values_only=True):
+        rows += 1
+        width = len(row)
+        while width and row[width - 1] is None:
+            width -= 1
+        cols = max(cols, width)
+    return rows, cols
+
+
 def _outline_xlsx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str, Any]]:
     try:
         from openpyxl import load_workbook  # type: ignore[import-untyped]
@@ -649,13 +670,14 @@ def _outline_xlsx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str,
             for row in sheet.iter_rows(max_row=scan_rows, max_col=max_cols, values_only=True):
                 scanned.append(_trim([_clip(cell) for cell in row]))
             rows = scanned[:sample_rows]
+            n_rows, n_cols = _xlsx_dimensions(sheet)
             tables.append(
                 {
                     "locator": sheet.title,
-                    "n_rows": sheet.max_row,
-                    "n_cols": sheet.max_column,
-                    "truncated_cols": bool(sheet.max_column and sheet.max_column > max_cols),
-                    "truncated_rows": bool(sheet.max_row and sheet.max_row > len(rows)),
+                    "n_rows": n_rows,
+                    "n_cols": n_cols,
+                    "truncated_cols": n_cols > max_cols,
+                    "truncated_rows": n_rows > len(rows),
                     "header_row_guess": _header_row_guess(scanned),
                     "rows": rows,
                 }
@@ -1164,6 +1186,57 @@ def _cmd_check(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_fetch(args: argparse.Namespace) -> int:
+    # Imported here so the store stays importable without httpx-backed retrieval.
+    from atlas_chat.services.supplement_fetch import fetch_corpus, fetch_supplements
+
+    if args.bundle_cap is None:
+        from atlas_chat.services.supplement_fetch import DEFAULT_BUNDLE_CAP_BYTES
+
+        args.bundle_cap = DEFAULT_BUNDLE_CAP_BYTES
+
+    if bool(args.doi) == bool(args.cas):
+        print("give exactly one of --doi or --cas", file=sys.stderr)
+        return 2
+
+    if args.cas:
+        cas = json.loads(Path(args.cas).read_text(encoding="utf-8"))
+        _print(
+            fetch_corpus(
+                Path(args.store),
+                cas,
+                bundle_cap=args.bundle_cap,
+                use_bundle=not args.no_bundle,
+                retry=args.retry,
+            )
+        )
+        return 0
+
+    manifest = fetch_supplements(
+        Path(args.store),
+        args.doi,
+        bundle_cap=args.bundle_cap,
+        use_bundle=not args.no_bundle,
+        retry=args.retry,
+    )
+    _print(
+        {
+            "doi": args.doi,
+            "files": [
+                {
+                    "file_id": f["file_id"],
+                    "status": f["status"],
+                    "route": f.get("retrieval", {}).get("route"),
+                    "size_bytes": f.get("size_bytes"),
+                }
+                for f in manifest["files"]
+            ],
+            "gaps": manifest.get("gaps", []),
+        }
+    )
+    return 0
+
+
 def _cmd_papers(args: argparse.Namespace) -> int:
     cas = json.loads(Path(args.cas).read_text(encoding="utf-8"))
     _print(corpus_papers(cas))
@@ -1239,6 +1312,31 @@ def build_parser() -> argparse.ArgumentParser:
     check = sub.add_parser("check", help="validate a manifest against its schema")
     add_store(check)
     check.set_defaults(func=_cmd_check)
+
+    fetch = sub.add_parser(
+        "fetch",
+        help="retrieve supplements: article XML -> Europe PMC bundle -> publisher -> manual",
+    )
+    fetch.add_argument("--store", required=True, help="store root directory")
+    fetch.add_argument("--doi", help="one paper")
+    fetch.add_argument("--cas", help="a CAS+ document: fetch for every corpus paper")
+    fetch.add_argument(
+        "--bundle-cap",
+        type=int,
+        default=None,
+        help="byte ceiling on the Europe PMC bundle (default 60 MB)",
+    )
+    fetch.add_argument(
+        "--no-bundle",
+        action="store_true",
+        help="skip the bundle route (for articles carrying supplementary video)",
+    )
+    fetch.add_argument(
+        "--retry",
+        action="store_true",
+        help="ignore the negative cache and retry files that previously failed",
+    )
+    fetch.set_defaults(func=_cmd_fetch)
 
     papers = sub.add_parser("papers", help="corpus papers from a CAS+ document")
     papers.add_argument("--cas", required=True)

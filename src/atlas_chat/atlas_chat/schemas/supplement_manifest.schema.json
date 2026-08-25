@@ -142,6 +142,11 @@
           "type": "string",
           "format": "date-time"
         },
+        "attempted_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When a route was last tried and did NOT produce bytes. This is the negative cache: a file that is 'unavailable' or 'failed' with this set is not retried on a later run unless a retry is asked for, which is what stops a missing supplement being re-requested on every pass."
+        },
         "sha256": {
           "type": "string",
           "description": "Digest of the file as stored, so a re-index can tell whether the bytes changed.",
