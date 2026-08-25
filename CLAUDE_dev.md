@@ -1,5 +1,6 @@
 # atlas-chat — Developer Guide (agentic workflows & skills)
 
+
 **How to build and extend this project's agentic workflow, skills, and supporting code.**
 
 > **This is the dev-mode guide. Load it explicitly when doing development work.**
@@ -14,6 +15,30 @@
 > subagents), not as graph nodes.** See "Deprecated: programmatic path" at the end.
 
 ---
+
+## Writing style
+
+Avoid CLAUDE-ish! 
+
+Write/interact like a human being.  When we're talking code, write like a literate senior developer, using plain English.  Some chattiness and humour is OK, but standard claude-code prose structure is increasinly exahausting to read. Avoid flight metaphors (lands), no seams please. Don't develop your own terminology in one response to use in the next...  
+
+Some particularly egregious past examples:
+
+"The agent's context/session already is its run state — forcing it to also marshal a batch manifest is ceremony."
+
+"That's not defensive hygiene, it's the absence of a trust anchor showing through."
+
+"every seam I hit sits exactly there. That's not coincidence."
+
+"So the inversion converts one type-2 enumerative question (retrieval-hostile, needs a union over scattered passages) into a batch of type-1 localised verifications (retrieval-easy)."
+
+(In this example you invented a typology and one response and then folded into subsequent responses)
+
+"This is the cheap way to build the span-grounded gold I was pushing for. Generate candidates from priors, sweep lexically (free), then human-adjudicate a 5-way relation label on a short span"
+
+(5-way relation label???!!! Really??!!!)
+
+
 
 ## Schema-first commandment
 
@@ -81,6 +106,31 @@ output:
   schema, and register it in `.claude/settings.json`.
 - **Discoverable** — `grep -rn "schema:" .claude/agents .claude/skills` lists every
   contract in the workflow.
+
+**Build it so it can be lifted out.** When adding functionality, ask: *how would someone
+use this in a different project?* Not because we plan to package everything, but because
+the answer forces the right boundaries. A unit that can be lifted out is one that doesn't
+reach into our repo layout, doesn't assume our directory names, and states what it needs.
+
+In practice:
+- **Take paths as input; don't derive them.** `projects/{project}/...` belongs in the
+  orchestrator's call, not baked into the skill or the service it calls. A skill that
+  computes its own output path is welded to this repo.
+- **Depend on the schema, not on the project.** The contract is the JSON Schema and the
+  object it describes. Anything that reads `cas.json` should accept a CAS+ document, not
+  a project name it resolves itself.
+- **Put the real work in `services/` behind a CLI.** The skill/subagent is thin — it
+  decides and gates; the service does the fetching, parsing and writing, and is callable
+  by anything (`python -m atlas_chat.cli_annotate ...` is the pattern). Reusable code
+  should never require a Claude Code session to run.
+- **Keep atlas-reporter-specific glue in the orchestration layer**, so the underlying
+  service stays general. `local_snippet_index` is a paper index that happens to be used
+  by this workflow, not a piece of this workflow.
+- **Name the external requirements** — API keys, optional extras, network services — in
+  the unit's front-matter or docstring rather than assuming the ambient environment.
+
+If a new piece of functionality can't be described without referring to atlas-reporter's
+directory structure, that's the signal to split it.
 
 **Conventions:**
 - One orchestration = one clear input shape + one output shape. If a unit needs two
@@ -190,6 +240,12 @@ api_key = os.getenv("SOME_API_KEY")
 ```
 
 **Precedence:** explicit constructor args → environment (`.env`) → sensible defaults.
+
+**Tracing:** Langfuse tracing of the programmatic graph is opt-in via
+`--trace` / `ATLAS_CHAT_TRACING=1` (module: `atlas_chat.observability`; guide:
+`docs/tracing.md`). Off by default — no client, no export. The agentic
+(Claude Code) workflow is traced separately, via Langfuse's Claude Code
+integration; see the same guide.
 
 ---
 
