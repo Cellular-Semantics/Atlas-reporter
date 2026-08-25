@@ -1,0 +1,147 @@
+---
+name: index-supplements
+description: Index a paper's supplementary material into a store manifest that says precisely which file, sheet or page holds what — DEG results, cluster-to-name mappings, marker lists, cell metadata — and what the columns are. Reads captions first, opens files only when the captions don't answer it. Needs the [supplements] extra (openpyxl).
+output:
+  schema: src/atlas_chat/atlas_chat/schemas/supplement_manifest.schema.json
+---
+
+# index-supplements
+
+Supplementary material carries content a report often cannot be written without:
+DEG tables, cluster-to-name mappings, the marker lists name resolution depends on.
+Your job is to produce a manifest that lets a later reader go straight to the right
+sheet instead of re-scanning a bundle of forty workbooks.
+
+You write the `tables` and `gaps` sections of a paper's `manifest.json`. The
+schema is the contract and is self-documenting — read its field descriptions
+rather than looking for them here.
+
+## What this is not
+
+You are not extracting biology. Do not read a DEG table and write down the genes.
+The manifest describes *where evidence lives and what shape it is in*; the
+querying happens later, against a specific cell type.
+
+## Requirements
+
+- The `[supplements]` extra: `uv sync --extra supplements` (openpyxl).
+- Files already in the store. Retrieval is a separate concern — see
+  "Getting files in" below.
+
+## The mechanical half
+
+Everything that touches bytes is in `atlas_chat.services.supplement_store`,
+behind a CLI. Use it rather than reading supplement files directly: a
+supplementary table can be 400,000 rows wide, and `Read` on one of those wrecks
+your context for no gain.
+
+```bash
+# What supplements does this paper have? Labels and captions come from the
+# article XML and exist nowhere else — this is the cheapest thing you will read.
+uv run python -m atlas_chat.cli_supplements inventory --jats <paper.jats.xml>
+
+# Take files a user dropped into incoming/ into the store.
+uv run python -m atlas_chat.cli_supplements adopt \
+  --store <store> --doi <doi> --incoming <dir> [--jats <xml>] \
+  [--role atlas|subatlas|external] [--access open|closed|unknown]
+
+# Expand archives, record the member tree. Videos are skipped, big tables are not.
+uv run python -m atlas_chat.cli_supplements unpack --store <store> --doi <doi>
+
+# Bounded description of one file's shape: sheet names, dimensions, the guessed
+# header row, a few sample rows. Cost is flat in the size of the file.
+uv run python -m atlas_chat.cli_supplements outline --file <path> [--rows N] [--cols N]
+
+# Targeted read of one region, once you know which sheet you want.
+uv run python -m atlas_chat.cli_supplements slice \
+  --file <path> [--locator <sheet>] [--start N] [--limit N] \
+  [--columns A B] [--header-row N]
+
+# Read, and check, the manifest.
+uv run python -m atlas_chat.cli_supplements show  --store <store> --doi <doi>
+uv run python -m atlas_chat.cli_supplements check --store <store> --doi <doi>
+
+# Which papers does a project need supplements for?
+uv run python -m atlas_chat.cli_supplements papers --cas <cas.json>
+```
+
+## Getting files in
+
+Three routes, cheapest first:
+
+1. **Already in the store.** `show` tells you; a file with `status: "present"`
+   has bytes on disk. Re-indexing an unchanged paper is wasted work — if
+   `indexed_at` is set and the files' `sha256` values haven't changed, stop.
+2. **Manually dropped.** Files under the project's `supplements/incoming/<doi-slug>/`
+   get taken into the store by `adopt`. This is the only route for closed-access
+   papers, and it is a first-class route, not a failure.
+3. **Fetched.** For open-access papers, the article XML lists the filenames and
+   the publisher's static host usually serves them individually. Automated
+   retrieval is deliberately out of scope for this skill — if files are missing,
+   record a gap saying which ones and let the operator drop them in.
+
+## How to index — cheapest evidence first
+
+Work down this ladder and stop as soon as you can characterise a table. Record
+which rung you stopped on in the pointer's `evidence` field, so a reader can
+tell a table described from its caption from one you actually opened.
+
+1. **Captions** (`evidence: "caption"`). Run `inventory` and read the labels and
+   captions. Publishers often describe the contents precisely — "Supplementary
+   Tables 1–40", "Source Data Figs. 2 and 4". If a caption fully accounts for a
+   file, you are done with it.
+2. **A legend sheet** (`evidence: "legend_sheet"`). Multi-sheet workbooks and
+   table bundles frequently carry a contents or legend sheet describing all the
+   others. `outline` the file; if a sheet name or its first rows look like a
+   legend, `slice` that one sheet and use it to characterise its siblings. One
+   read then covers the whole bundle — this is the highest-leverage step, so try
+   it before opening anything else.
+3. **Headers** (`evidence: "headers"`). Otherwise `outline` each file. Sheet
+   names plus the header row usually settle what a table is: `avg_log2FC` and
+   `p_val_adj` mean DEG results; a cluster column beside a name column means a
+   cluster-to-name mapping; one row per barcode means cell metadata.
+4. **Rows** (`evidence: "rows_read"`). Only when the headers are genuinely
+   ambiguous, `slice` a few data rows.
+
+Mind the `header_row_guess` that `outline` reports. Publisher tables routinely
+carry a title row above the real header ("Prenatal skin metadata"), and
+sometimes two. The guess is usually right, but check it against the sample rows
+before recording `header_row` — a reader that slices from the wrong row gets
+nonsense.
+
+## Writing the manifest
+
+Read the current manifest with `show`, add your `tables` and `gaps`, and write
+the whole file back with `Write`. A PostToolUse hook validates it against the
+schema and rejects a table that points at a file which isn't there, so run
+`check` if you want the same verdict before writing.
+
+Keep these in mind:
+
+- **One pointer per table**, not per file. A workbook with twelve sheets that
+  each hold different DEG comparisons is twelve pointers.
+- **`description` is what the pointer is for.** Say what the table contains and
+  what someone would use it for, in a sentence or two, grounded in what you
+  actually read. "DEG results per cluster" is thin; "differential expression of
+  each fine-grained cluster against all other cells in the same broad lineage,
+  with log fold change and adjusted p-values" tells a reader whether it answers
+  their question.
+- **Columns matter as much as the table.** A reader picks a table by its columns
+  without opening it. Give every column, in order, and describe the ones whose
+  headers are not self-explanatory.
+- **Do not enumerate which cell types appear.** That is a query-time question
+  and the lists are long, stale-prone, and rarely complete.
+- **Record what you couldn't do.** An empty `tables` list with no `gaps` reads
+  as "this paper has no useful supplements", which is a claim. If a table was
+  over the size cap, a PDF had no extractable text, or a file was never
+  retrieved, say so in `gaps` with what a human could do about it. This is the
+  difference between "there is nothing there" and "we didn't look".
+- Stamp `indexed_at` when you finish
+  (`touch_indexed_at` in the service, or write it yourself).
+
+## Where the store lives
+
+The store root is an argument, never derived. For a project the convention is
+`projects/{project}/supplements/`, giving
+`supplements/papers/<doi-slug>/{manifest.json, files/}`. Nothing in the service
+knows that convention, so the same store works outside this repo.

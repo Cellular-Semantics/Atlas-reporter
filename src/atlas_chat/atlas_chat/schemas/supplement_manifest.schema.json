@@ -1,0 +1,329 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SupplementManifest",
+  "description": "What supplementary material exists for ONE paper, where it is on disk, and what each part of it contains. A fetch cache plus a content index: the fetch half records how each file arrived (including by hand), the index half names the tables worth reading and their columns, so a later reader can go straight to a sheet instead of re-scanning heterogeneous files. Not curated config \u2014 never merge this into cas.json.",
+  "type": "object",
+  "properties": {
+    "manifest_version": {
+      "type": "integer",
+      "description": "Bumped when the manifest shape changes in a way that invalidates existing stores.",
+      "const": 1
+    },
+    "paper": {
+      "$ref": "#/$defs/Paper"
+    },
+    "indexed_at": {
+      "type": "string",
+      "description": "ISO-8601 UTC timestamp of the last time the content index below was (re)written.",
+      "format": "date-time"
+    },
+    "files": {
+      "type": "array",
+      "description": "Every supplementary file known for this paper, whether or not it was retrieved. One entry per file as the publisher packages it; members of an archive are listed in `members`, not here.",
+      "items": {
+        "$ref": "#/$defs/SupplementFile"
+      }
+    },
+    "tables": {
+      "type": "array",
+      "description": "The content index: tables worth reading, wherever they live (a sheet in a workbook, a CSV inside a zip, a table in a document). This is what downstream steps consult to decide what to open.",
+      "items": {
+        "$ref": "#/$defs/TablePointer"
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "description": "Things the indexer could not do, stated explicitly so an absence is never mistaken for a negative result. Read this before concluding a paper has no marker tables.",
+      "items": {
+        "$ref": "#/$defs/Gap"
+      }
+    }
+  },
+  "required": [
+    "manifest_version",
+    "paper",
+    "files"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "Paper": {
+      "type": "object",
+      "description": "Which paper this manifest belongs to. `doi` is the store key.",
+      "properties": {
+        "doi": {
+          "type": "string",
+          "pattern": "^10\\.\\d{4,}(\\.\\d+)?/.+"
+        },
+        "title": {
+          "type": "string"
+        },
+        "pmcid": {
+          "type": "string"
+        },
+        "pmid": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string",
+          "description": "What this paper is relative to the corpus. Mirrors evidence_summary.schema.json's `role`.",
+          "enum": [
+            "atlas",
+            "subatlas",
+            "external"
+          ]
+        },
+        "access": {
+          "type": "string",
+          "description": "Whether the supplements are reachable programmatically. 'closed' means retrieval is out of scope and files must be supplied by hand.",
+          "enum": [
+            "open",
+            "closed",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "doi"
+      ],
+      "additionalProperties": false
+    },
+    "SupplementFile": {
+      "type": "object",
+      "description": "One supplementary file as the publisher packages it, plus how (or whether) we got hold of it.",
+      "properties": {
+        "file_id": {
+          "type": "string",
+          "description": "Stable id for cross-referencing from TablePointer. The publisher's filename, e.g. '41586_2024_8002_MOESM4_ESM.zip'."
+        },
+        "label": {
+          "type": "string",
+          "description": "The publisher's label, verbatim, e.g. 'Supplementary Tables'. From JATS <supplementary-material><label>."
+        },
+        "caption": {
+          "type": "string",
+          "description": "The publisher's caption, verbatim, e.g. 'Supplementary Tables 1-40.'. From JATS <caption>. Often the cheapest description of the contents there is \u2014 read this before opening anything."
+        },
+        "media_type": {
+          "type": "string",
+          "description": "Extension-derived kind: xlsx, csv, tsv, docx, pdf, zip, txt, video, image, other."
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "path": {
+          "type": "string",
+          "description": "Path to the file on disk, relative to the store root. Absent when status is not 'present'."
+        },
+        "retrieval": {
+          "$ref": "#/$defs/Retrieval"
+        },
+        "status": {
+          "type": "string",
+          "description": "'present' = on disk. 'listed' = we know it exists but have not fetched it. 'skipped' = deliberately not fetched (see retrieval.note \u2014 usually a size cap or a video). 'unavailable' = no route exists (closed access, needs a manual drop). 'failed' = a route was tried and errored.",
+          "enum": [
+            "present",
+            "listed",
+            "skipped",
+            "unavailable",
+            "failed"
+          ]
+        },
+        "members": {
+          "type": "array",
+          "description": "For archives: the unpacked member tree. Paths are relative to the archive root and are what TablePointer.member_path refers to.",
+          "items": {
+            "$ref": "#/$defs/ArchiveMember"
+          }
+        }
+      },
+      "required": [
+        "file_id",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "Retrieval": {
+      "type": "object",
+      "description": "How this file arrived. A file dropped in by hand is a first-class route, not a failure \u2014 it is the only route for closed-access papers.",
+      "properties": {
+        "route": {
+          "type": "string",
+          "description": "'jats_listing' = known from the article XML but bytes not fetched by this route. 'publisher_direct' = fetched from the publisher's static host. 'europepmc_bundle' = from Europe PMC's supplementaryFiles zip. 'manual' = supplied by a user. 'none' = no route available.",
+          "enum": [
+            "jats_listing",
+            "publisher_direct",
+            "europepmc_bundle",
+            "manual",
+            "none"
+          ]
+        },
+        "url": {
+          "type": "string"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sha256": {
+          "type": "string",
+          "description": "Digest of the file as stored, so a re-index can tell whether the bytes changed.",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "note": {
+          "type": "string",
+          "description": "Why a route was skipped or how it failed. Free text."
+        }
+      },
+      "required": [
+        "route"
+      ],
+      "additionalProperties": false
+    },
+    "ArchiveMember": {
+      "type": "object",
+      "properties": {
+        "member_path": {
+          "type": "string"
+        },
+        "media_type": {
+          "type": "string"
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "path": {
+          "type": "string",
+          "description": "Where the member was unpacked to, relative to the store root. Absent if it was not unpacked."
+        },
+        "extracted": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "member_path"
+      ],
+      "additionalProperties": false
+    },
+    "TablePointer": {
+      "type": "object",
+      "description": "A table worth reading, located precisely enough to slice without searching. Describes the table and its columns; it deliberately does NOT enumerate which cell types appear (that is the reader's job at query time).",
+      "properties": {
+        "file_id": {
+          "type": "string",
+          "description": "The SupplementFile.file_id this table lives in."
+        },
+        "member_path": {
+          "type": "string",
+          "description": "Path within the archive, when file_id names an archive."
+        },
+        "locator": {
+          "type": "string",
+          "description": "Where in the file: a worksheet name for xlsx, a page number for pdf, a heading for docx. Omit for a single-table file such as a CSV."
+        },
+        "table_label": {
+          "type": "string",
+          "description": "The authors' own name for it, verbatim where one exists, e.g. 'Supplementary Table 12'."
+        },
+        "content_type": {
+          "type": "string",
+          "description": "What kind of table this is. 'legend' is the manifest/contents sheet that describes the others \u2014 worth reading first.",
+          "enum": [
+            "deg_results",
+            "marker_list",
+            "cluster_annotation",
+            "cell_metadata",
+            "sample_metadata",
+            "legend",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "description": "What the table contains and what a reader would use it for. One or two sentences, grounded in the caption, the legend sheet, or the headers actually seen."
+        },
+        "columns": {
+          "type": "array",
+          "description": "The table's columns in order, each with what it holds. The point of the manifest: a reader picks a table by its columns without opening it. For a very wide table (one column per cell state, say) this may be a prefix \u2014 compare its length against n_columns.",
+          "items": {
+            "$ref": "#/$defs/Column"
+          }
+        },
+        "n_columns": {
+          "type": "integer",
+          "description": "Total columns in the table. Greater than the length of `columns` when that list is a prefix of a very wide table.",
+          "minimum": 0
+        },
+        "header_row": {
+          "type": "integer",
+          "description": "0-based index of the header row, so a reader can slice correctly. Publisher tables often carry title rows above the header.",
+          "minimum": 0
+        },
+        "n_rows": {
+          "type": "integer",
+          "description": "Data rows excluding the header, where known.",
+          "minimum": 0
+        },
+        "evidence": {
+          "type": "string",
+          "description": "What this characterisation was based on: 'caption', 'legend_sheet', 'headers', or 'rows_read'. Distinguishes a table described from its caption from one actually opened.",
+          "enum": [
+            "caption",
+            "legend_sheet",
+            "headers",
+            "rows_read"
+          ]
+        }
+      },
+      "required": [
+        "file_id",
+        "content_type",
+        "description",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "Column": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The column header verbatim."
+        },
+        "description": {
+          "type": "string",
+          "description": "What the column holds, where the header alone is not self-explanatory."
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "Gap": {
+      "type": "object",
+      "description": "Something the indexer could not do. Keeps 'we did not look' distinguishable from 'there is nothing there'.",
+      "properties": {
+        "file_id": {
+          "type": "string"
+        },
+        "member_path": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why it could not be characterised, e.g. 'archive member exceeds size cap', 'scanned PDF, no extractable text', 'no route to fetch (closed access)'."
+        },
+        "action": {
+          "type": "string",
+          "description": "What a human could do about it, e.g. 'drop the file into incoming/'. Omit if nothing would help."
+        }
+      },
+      "required": [
+        "reason"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
