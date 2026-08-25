@@ -20,16 +20,30 @@ from atlas_chat.services import asta_indexing
 #: Gopee et al. 2024, prenatal skin atlas — 72 indexed chunks across 30 sections.
 FULLY_INDEXED = "CorpusId:273400864"
 
+#: Yao et al. 2023, "A high-resolution transcriptomic and spatial atlas of cell
+#: types in the whole mouse brain" (Nature). One of the papers that motivated
+#: this work, and the sharpest counter-example to the signals we rejected: open
+#: access, in PMC, 118 references in the metadata graph — and 3 title/abstract
+#: snippets in ASTA, no body text at all. Nothing short of probing distinguishes
+#: it from a fully indexed paper.
+YAO_2023 = "CorpusId:266222435"
+YAO_2023_DOI = "DOI:10.1038/s41586-023-06812-z"
+
+#: Goh et al. 2023, yolk sac cell atlas — the paper the TML macrophage report's
+#: yolk-sac origin claim silently rested on, with 4 abstract-only snippets.
+GOH_2023 = "CorpusId:260956290"
+
+#: Wang et al. 2023 — carried the only morphology evidence for TML macrophages,
+#: and was reachable only second-hand via two 2026 reviews that cite it.
+WANG_2023 = "CorpusId:261701324"
+
 #: Papers ASTA holds no body text for, each of which the CorpusId check passed.
-#: The last two are the ones that silently carried report claims: Wang et al.
-#: 2023 (the only morphology evidence for TML macrophages) and Goh et al. (the
-#: yolk-sac origin claim, resting on 4 abstract-only snippets).
 NOT_FULLY_INDEXED = [
-    "CorpusId:261701324",
+    WANG_2023,
     "CorpusId:43817583",
     "CorpusId:5707329",
-    "CorpusId:266222435",
-    "CorpusId:260956290",
+    YAO_2023,
+    GOH_2023,
 ]
 
 
@@ -58,6 +72,47 @@ def test_papers_with_no_body_text_are_not_band_full(paper_id: str) -> None:
     assert report.band != "full", f"{paper_id} classified full: {report.reason}"
     assert not report.servable
     assert report.band in asta_indexing.BANDS
+
+
+@pytest.mark.integration
+def test_yao_2023_is_abstract_only_despite_looking_fully_available() -> None:
+    """The motivating case, and the reason the rejected signals are rejected.
+
+    Yao et al. 2023 is open access, sits in PMC, and its metadata graph carries
+    118 references — every surface signal says "this paper is available". ASTA's
+    snippet index holds only the title and abstract. `isOpenAccess`,
+    `openAccessPdf` and `referenceCount` would all wave it through; only the
+    section/refMention probe catches it.
+
+    **If this test fails because the band is now `full` or `partial`, ASTA has
+    started indexing the paper — that is good news, not a bug here.** Move it out
+    of ``NOT_FULLY_INDEXED``, pick another abstract-only paper for this test, and
+    note the change; do not loosen the assertion to keep it passing.
+    """
+    report = _probe(YAO_2023)
+    assert report.band == "abstract_only", (
+        f"expected abstract_only, got {report.band} — if ASTA now indexes this "
+        f"paper's body text, update the fixture rather than the threshold. "
+        f"{report.reason}"
+    )
+    assert report.snippets > 0, "abstract_only means thin, not absent"
+    assert report.sections == 0, "no section names — nothing but title/abstract"
+    assert report.ref_mentions == 0, "no bibliography in the index"
+    # Not dead: the reference edges are still recoverable from the graph API
+    # (116 of 118 carry a paperId), just without the character offsets that make
+    # sentence-level gating possible. That is the deferred follow-up.
+    assert not report.dead
+    assert not report.servable
+
+
+@pytest.mark.integration
+def test_yao_2023_bands_identically_by_doi_and_corpus_id() -> None:
+    """Either identifier must reach the same verdict — the audit CLI takes both."""
+    by_corpus = _probe(YAO_2023)
+    by_doi = _probe(YAO_2023_DOI)
+    assert by_doi.band == by_corpus.band
+    assert by_doi.snippets == by_corpus.snippets
+    assert by_doi.corpus_id == YAO_2023
 
 
 @pytest.mark.integration

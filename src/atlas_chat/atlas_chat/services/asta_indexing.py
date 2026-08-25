@@ -2,9 +2,19 @@
 
 Answers one question: *how much of this paper does ASTA's snippet index actually
 hold?* Semantic Scholar's metadata graph and the snippet index are separate
-systems, so a paper can carry a ``CorpusId``, an abstract and 118 references
-while ``snippet_search`` returns nothing at all for it. There is no API field
-that reports snippet coverage — probing is the only instrument.
+systems, and being in one says nothing about being in the other.
+
+The worked example is Yao et al. 2023, "A high-resolution transcriptomic and
+spatial atlas of cell types in the whole mouse brain"
+(``10.1038/s41586-023-06812-z``, ``CorpusId:266222435``). It is open access,
+sits in PMC, and its graph entry carries 118 references — every surface signal
+says the paper is available. ASTA's snippet index holds three chunks: title and
+abstract. No body text, no section names, no inline reference mentions. Nothing
+short of probing tells it apart from a fully indexed paper, and a report built
+on it rests on the abstract alone.
+
+There is no API field that reports snippet coverage — probing is the only
+instrument.
 
 The bands, and what each one can support:
 
@@ -17,6 +27,13 @@ band             quotable snippets   citation traversal route
 ``unindexed``    no                  none via ASTA → local index
 ``not_in_s2``    no                  none via ASTA → local index
 ===============  ==================  ==========================================
+
+The traversal column matters because depth and follow-set availability come
+apart. An ``abstract_only`` paper still has usable citation edges — 116 of Yao
+2023's 118 references carry a ``paperId`` via the graph API despite its zero
+refMentions — but those edges have no character offsets, so the citing sentence
+cannot be gated. Consuming them needs an explicitly ungated follow-set path and
+is deliberately left to a follow-up; this module only reports the band.
 
 Only ``full`` may be served from ASTA; every other band must fall through the
 ``jats → needs_pdf`` waterfall in :mod:`atlas_chat.services.subatlas_resolver`.
@@ -44,9 +61,11 @@ Signals deliberately **not** used, each tested and rejected:
 * ``externalIds.CorpusId`` — fires for 21/21 including all 6 unindexed papers.
   This was the original bug (see #22).
 * ``isOpenAccess`` / ``openAccessPdf`` — 3 of 6 unindexed papers are open
-  access; one fully indexed paper is not.
+  access; one fully indexed paper is not. Yao 2023 above is the clean
+  counter-example: open access, in PMC, and abstract-only in the index.
 * ``referenceCount`` — 21/21 non-zero and the ranges fully overlap (unindexed
   30..116 vs full 26..289); it comes from publisher metadata, not full text.
+  Yao 2023 reports 118 references while emitting zero refMentions.
 * ``publicationTypes`` — no signal.
 * ``chars / abstract_length`` — breaks both ways: 0.0 for a paper with 6,312
   indexed chars (missing abstract), 426 for a 118-char truncated abstract.

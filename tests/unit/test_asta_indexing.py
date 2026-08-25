@@ -59,6 +59,9 @@ def _rows(
 CALIBRATION = [
     ("unindexed floor", 0, 0, 0, 0, "unindexed"),
     ("abstract_only min observed", 2, 1_219, 0, 0, "abstract_only"),
+    # Yao et al. 2023 (CorpusId:266222435) as measured live: open access, in PMC,
+    # 118 references in the graph — and this much in the snippet index.
+    ("abstract_only Yao 2023", 3, 2_902, 0, 0, "abstract_only"),
     ("abstract_only max observed", 4, 6_312, 0, 0, "abstract_only"),
     ("full min observed", 15, 18_802, 9, 50, "full"),
     ("full max observed", 72, 105_876, 30, 361, "full"),
@@ -150,6 +153,25 @@ def test_missing_annotations_key_is_tolerated() -> None:
     assert report.ref_mentions == 0
     assert report.chars == 5
     assert report.sections == 1
+
+
+@pytest.mark.unit
+def test_a_reference_rich_open_access_paper_can_still_be_abstract_only() -> None:
+    """Yao et al. 2023 — why none of the metadata signals were usable.
+
+    A paper's openness and its reference count live in the metadata graph; body
+    text lives in the snippet index. Yao 2023 scores maximally on the first and
+    holds nothing in the second, so the classifier must decide purely on what
+    came back: three chunks, no section names, no refMentions.
+
+    Kept as a unit test as well as a live one so the reasoning stays pinned even
+    if ASTA later starts indexing this paper.
+    """
+    report = classify_rows(_rows(3, 2_902, 0, 0, corpus_id="266222435"))
+    assert report.band == "abstract_only"
+    assert not report.servable, "must not be served from ASTA"
+    assert not report.dead, "its citation edges are still recoverable from the graph"
+    assert "no body text" in report.reason
 
 
 @pytest.mark.unit
