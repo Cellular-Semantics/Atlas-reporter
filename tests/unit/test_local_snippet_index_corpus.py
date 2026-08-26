@@ -255,6 +255,44 @@ def test_needs_pdf_subatlas_lists_only_needs_pdf(tmp_path: Path) -> None:
     assert missing[0]["doi"] == "10.1/b"
 
 
+@pytest.mark.unit
+def test_needs_pdf_picks_up_papers_asta_cannot_serve(tmp_path: Path) -> None:
+    """Papers that fall through the band gate (#22) must reach the PDF to-do list.
+
+    Before the index-depth probe, a paper with no body text in ASTA was marked
+    ``status: asta`` and so was invisible here — no local index was ever built
+    for it and nothing said so.
+    """
+    cfg = {
+        "source": {
+            "doi": "10.1/atlas",
+            "subatlas_papers": [
+                {
+                    "label": "Full_et_al_2024",
+                    "doi": "10.1/full",
+                    "status": "asta",
+                    "asta_indexing": {"band": "full"},
+                },
+                {
+                    "label": "Goh_et_al_2023",
+                    "doi": "10.1/abstract",
+                    "status": "needs_pdf",
+                    "asta_indexing": {"band": "abstract_only"},
+                },
+                {
+                    "label": "Wang_et_al_2023",
+                    "doi": "10.1/nothing",
+                    "status": "needs_pdf",
+                    "asta_indexing": {"band": "unindexed"},
+                },
+            ],
+        }
+    }
+    (tmp_path / "cell_type_annotations.json").write_text(json.dumps(cfg))
+    missing = lsi.needs_pdf_subatlas(tmp_path)
+    assert [m["doi"] for m in missing] == ["10.1/abstract", "10.1/nothing"]
+
+
 # ---------------------------------------------------------------------------
 # remove_paper + list_papers
 # ---------------------------------------------------------------------------

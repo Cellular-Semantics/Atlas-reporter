@@ -9,7 +9,31 @@
     "authors": ["Ada Lovelace"],
     "atlas_name": "Test Atlas v1",
     "links": { "preprint": "https://example.org/preprint", "cellxgene": "https://example.org/cxg" },
-    "subatlas_papers": [ { "label": "Smith2021", "doi": "10.1000/smith" } ]
+    "subatlas_papers": [
+      {
+        "label": "Smith2021",
+        "doi": "10.1000/smith",
+        "status": "asta",
+        "asta_indexing": {
+          "band": "full", "snippets": 72, "chars": 105876, "sections": 30, "ref_mentions": 361,
+          "corpus_id": "CorpusId:273400864",
+          "reason": "72 snippets across 30 sections",
+          "probed_at": "2026-08-21T09:00:00+00:00"
+        }
+      },
+      {
+        "label": "Goh2023",
+        "doi": "10.1000/goh",
+        "status": "local",
+        "source_type": "jats",
+        "asta_indexing": {
+          "band": "abstract_only", "snippets": 4, "chars": 6312, "sections": 0, "ref_mentions": 0,
+          "corpus_id": "CorpusId:260956290",
+          "reason": "4 snippets, no section names, no refMentions — title/abstract only, no body text",
+          "probed_at": "2026-08-21T09:00:00+00:00"
+        }
+      }
+    ]
   },
   "labelsets": [ { "name": "author_cell_type", "rank": 0, "role": "author_cell_type" } ],
   "annotations": [

@@ -190,3 +190,75 @@ def test_follow_set_output_validates_against_schema() -> None:
     result = sa.resolve_follow_set(_records(), ["CorpusId:234484741", "CorpusId:999999"], hop=1)
     validator = jsonschema.Draft202012Validator(load_schema("follow_set.schema.json"))
     assert list(validator.iter_errors(result)) == []
+
+
+# --------------------------------------------------------------------------
+# capability gate: skip hops to papers ASTA holds no text for (#22)
+# --------------------------------------------------------------------------
+
+
+@pytest.mark.unit
+def test_follow_set_skips_papers_with_no_text_in_asta() -> None:
+    """A real reference ASTA cannot serve is rejected, not followed."""
+    result = sa.resolve_follow_set(
+        _records(),
+        ["CorpusId:234484741", "CorpusId:41350702"],
+        hop=1,
+        bands={"CorpusId:234484741": "unindexed", "CorpusId:41350702": "full"},
+    )
+    assert result["follow_set"] == ["CorpusId:41350702"]
+    assert result["rejected"] == [
+        {"corpus_id": "CorpusId:234484741", "reason": "asta_unindexed", "band": "unindexed"}
+    ]
+
+
+@pytest.mark.unit
+def test_follow_set_skips_papers_absent_from_s2() -> None:
+    result = sa.resolve_follow_set(
+        _records(), ["CorpusId:234484741"], bands={"CorpusId:234484741": "not_in_s2"}
+    )
+    assert result["follow_set"] == []
+    assert result["rejected"][0]["band"] == "not_in_s2"
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize("band", ["full", "partial", "abstract_only"])
+def test_follow_set_keeps_papers_that_can_still_answer(band: str) -> None:
+    """Only textless bands are dropped — a thin paper is still worth a hop."""
+    result = sa.resolve_follow_set(
+        _records(), ["CorpusId:234484741"], bands={"CorpusId:234484741": band}
+    )
+    assert result["follow_set"] == ["CorpusId:234484741"]
+
+
+@pytest.mark.unit
+def test_follow_set_does_not_judge_unprobed_ids() -> None:
+    """An id absent from the band map is followed — silence is not a verdict."""
+    result = sa.resolve_follow_set(
+        _records(),
+        ["CorpusId:234484741", "CorpusId:41350702"],
+        bands={"CorpusId:41350702": "full"},
+    )
+    assert result["follow_set"] == ["CorpusId:234484741", "CorpusId:41350702"]
+    assert result["rejected"] == []
+
+
+@pytest.mark.unit
+def test_follow_set_without_bands_is_unchanged() -> None:
+    """The default path must behave exactly as before the gate existed."""
+    proposals = ["CorpusId:234484741", "CorpusId:999999", "12345"]
+    assert sa.resolve_follow_set(_records(), proposals, hop=1) == sa.resolve_follow_set(
+        _records(), proposals, hop=1, bands=None
+    )
+
+
+@pytest.mark.unit
+def test_band_rejection_validates_against_schema() -> None:
+    result = sa.resolve_follow_set(
+        _records(),
+        ["CorpusId:234484741", "CorpusId:999999", "42"],
+        hop=1,
+        bands={"CorpusId:234484741": "unindexed"},
+    )
+    validator = jsonschema.Draft202012Validator(load_schema("follow_set.schema.json"))
+    assert list(validator.iter_errors(result)) == []

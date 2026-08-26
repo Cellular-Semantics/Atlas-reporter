@@ -83,17 +83,26 @@ have no `reached_from`.
 
 ### Hops 1..depth — follow relevant references
 
-1. Resolve the follow-set programmatically (anti-hallucination check):
+1. Resolve the follow-set programmatically (anti-hallucination check + capability
+   check):
 
    ```
    python -m atlas_chat.cli_annotate follow-set \
      --snippets <output_dir>/annotated_snippets_hop<n>.json \
      --proposed CorpusId:... [--proposed CorpusId:...] --hop <n+1> \
+     --probe-bands --project-dir <project_dir> \
      --out <output_dir>/follow_set_hop<n+1>.json
    ```
 
-   Follow only the returned `follow_set` (deduped; any proposed id not present in the
-   snippets' references is dropped to `rejected`).
+   Follow only the returned `follow_set`. Proposals are dropped to `rejected` for
+   two different reasons, and the `reason` field says which:
+
+   - `not_in_refmentions` / `malformed` — the id isn't a real reference in these
+     snippets. Anti-hallucination.
+   - `asta_unindexed` — a genuine reference, but ASTA's snippet index holds no
+     text for it (`band` records which), so a hop to it returns nothing. `--probe-bands`
+     measures this; without it, these dispatches are wasted (5 of 14 in the
+     2026-08-19 run). Note the paper — it may still need a local index or a PDF.
 
 2. For each id in `follow_set`, retrieve its snippets — pass the citing sentence as
    `reached_from` so followed evidence carries its provenance:
@@ -118,6 +127,12 @@ have no `reached_from`.
   (`fields="title,authors,year,venue,publicationDate,url,isOpenAccess,externalIds"`);
   write `<output_dir>/paper_catalogue.json`, keyed by `CorpusId:NNNN`. Every
   `source_paper` / `reached_from` identifier you emit must appear here.
+- On each catalogue entry, carry `asta_indexing: {"band": ..., "snippets": ...,
+  "ref_mentions": ...}` for every paper you have a band for (from the
+  `--probe-bands` output, or `python scripts/setup_local_index.py audit-asta
+  --paper-ids CorpusId:...,CorpusId:... --json` for papers you never proposed).
+  The synthesizer needs this: a claim whose only support is an `abstract_only`
+  paper rests on abstract text alone and must say so in the report.
 
 ## Output
 
@@ -133,6 +148,8 @@ have no `reached_from`.
   raw JSON never enters your context. `get_paper_batch` for the catalogue is fine.
 - Gate at the sentence: follow only citations whose claim is relevant to the query.
 - Follow only ids returned in the CLI `follow_set`; never invent or hand-edit ids.
+- Never treat an `asta_unindexed` rejection as the reference being irrelevant — it is
+  a retrieval limit, not a judgement. Record it; don't drop it silently.
 - Never search a seed you weren't given; never revisit a CorpusId.
 - Quotes are exact substrings of `text`.
 - Every evidence item carries `source_paper` (+`role`) and `retrieval_method`;

@@ -4,6 +4,7 @@ Subcommands::
 
     discover-subatlas   Propose subatlas DOIs from label_provenance.json.
     init-corpus         Run the asta/jats/pdf waterfall + build atlas index.
+    audit-asta          Report each paper's ASTA snippet-index depth (band).
     add                 Add a paper from a PDF or JATS file.
     rebuild             Force-rebuild every paper in the corpus from its saved source.
     check               Report papers whose vectors need a rebuild.
@@ -45,6 +46,75 @@ def _doi_from_config(project_dir: Path) -> str | None:
         return None
 
 
+def _audit_targets(args: argparse.Namespace, project_dir: Path | None) -> list[str]:
+    """Collect the paper ids to band, from whichever source was given."""
+    targets: list[str] = [t.strip() for t in args.paper_ids.split(",") if t.strip()]
+
+    if args.from_catalogue:
+        catalogue = json.loads(Path(args.from_catalogue).read_text())
+        targets += [key for key in catalogue if str(key).startswith("CorpusId:")]
+
+    if project_dir is not None:
+        from atlas_chat.services import asta_indexing
+
+        cfg_path = asta_indexing.config_path(project_dir)
+        source = json.loads(cfg_path.read_text()).get("source", {}) if cfg_path.exists() else {}
+        if source.get("doi"):
+            targets.append(f"DOI:{source['doi']}")
+        for entry in source.get("subatlas_papers") or []:
+            if entry.get("doi"):
+                targets.append(f"DOI:{entry['doi']}")
+
+    return list(dict.fromkeys(targets))
+
+
+def _cmd_audit_asta(args: argparse.Namespace, project_dir: Path | None) -> int:
+    """Band every target paper and report. Read-only — writes nothing."""
+    import asyncio
+
+    from atlas_chat.services import asta_indexing
+
+    targets = _audit_targets(args, project_dir)
+    if not targets:
+        print(
+            "ERROR: nothing to audit — pass --project, --from-catalogue or --paper-ids",
+            file=sys.stderr,
+        )
+        return 2
+
+    rows: list[dict[str, object]] = []
+    for paper_id in targets:
+        if args.no_cache:
+            report = asyncio.run(asta_indexing.probe(paper_id))
+        else:
+            report = asyncio.run(asta_indexing.probe_cached(paper_id, project_dir=project_dir))
+        rows.append({"paper_id": paper_id, **report.to_dict()})
+
+    if args.json:
+        print(json.dumps(rows, indent=2))
+    else:
+        print(f"{'band':<14} {'snip':>5} {'chars':>8} {'sect':>5} {'refs':>5}  paper")
+        for row in rows:
+            print(
+                f"{row['band']:<14} {row['snippets']:>5} {row['chars']:>8} "
+                f"{row['sections']:>5} {row['ref_mentions']:>5}  {row['paper_id']}"
+            )
+        tally: dict[str, int] = {}
+        for row in rows:
+            band = str(row["band"])
+            tally[band] = tally.get(band, 0) + 1
+        print("\n" + ", ".join(f"{band}={n}" for band, n in sorted(tally.items())))
+
+    not_full = [r for r in rows if r["band"] != asta_indexing.SERVABLE_BAND]
+    if args.strict and not_full:
+        print(
+            f"{len(not_full)} of {len(rows)} papers are not fully indexed by ASTA",
+            file=sys.stderr,
+        )
+        return 1
+    return 0
+
+
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__.split("\n", maxsplit=1)[0])
     parser.add_argument("-v", "--verbose", action="store_true")
@@ -56,6 +126,32 @@ def _build_parser() -> argparse.ArgumentParser:
     p_init = sub.add_parser("init-corpus")
     p_init.add_argument("--project", required=True)
     p_init.add_argument("--force", action="store_true")
+
+    p_audit = sub.add_parser(
+        "audit-asta",
+        help="band each paper by how much of it ASTA's snippet index holds",
+    )
+    p_audit.add_argument("--project", help="band this project's corpus (atlas + subatlas papers)")
+    p_audit.add_argument(
+        "--from-catalogue",
+        help="band every CorpusId key in a paper_catalogue.json instead",
+    )
+    p_audit.add_argument(
+        "--paper-ids",
+        default="",
+        help="comma-separated ids to band (CorpusId:NNNN / DOI:...)",
+    )
+    p_audit.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="re-probe even where a band is already recorded in the project config",
+    )
+    p_audit.add_argument("--json", action="store_true", help="emit JSON, not a table")
+    p_audit.add_argument(
+        "--strict",
+        action="store_true",
+        help="exit 1 if any paper is not band 'full'",
+    )
 
     p_add = sub.add_parser("add")
     p_add.add_argument("--project", required=True)
@@ -113,7 +209,14 @@ def main(argv: list[str] | None = None) -> int:
         parser.print_help()
         return 0
 
-    project_dir = _resolve_project_dir(args.project)
+    project_dir = _resolve_project_dir(args.project) if getattr(args, "project", None) else None
+
+    if args.cmd == "audit-asta":
+        return _cmd_audit_asta(args, project_dir)
+
+    if project_dir is None:
+        print("ERROR: --project is required", file=sys.stderr)
+        return 2
 
     if args.cmd == "discover-subatlas":
         from atlas_chat.services.subatlas_resolver import discover

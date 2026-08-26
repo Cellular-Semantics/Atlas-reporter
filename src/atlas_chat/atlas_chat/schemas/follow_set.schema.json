@@ -32,8 +32,13 @@
         },
         "reason": {
           "type": "string",
-          "description": "Why it was dropped: 'not_in_refmentions' = well-formed but absent from the annotated snippets' refMentions (hallucinated / mistranscribed); 'malformed' = not a 'CorpusId:NNNN' string.",
-          "enum": ["not_in_refmentions", "malformed"]
+          "description": "Why it was dropped: 'not_in_refmentions' = well-formed but absent from the annotated snippets' refMentions (hallucinated / mistranscribed); 'malformed' = not a 'CorpusId:NNNN' string; 'asta_unindexed' = a real reference, but ASTA's snippet index holds no text for it, so a hop to it cannot return evidence. The first two are anti-hallucination rejections; the third is a capability rejection.",
+          "enum": ["not_in_refmentions", "malformed", "asta_unindexed"]
+        },
+        "band": {
+          "type": "string",
+          "description": "The measured ASTA indexing band, present when the rejection reason is 'asta_unindexed'.",
+          "enum": ["full", "partial", "abstract_only", "unindexed", "not_in_s2"]
         }
       },
       "required": ["corpus_id", "reason"],

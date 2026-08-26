@@ -182,10 +182,40 @@
         "venue": { "type": ["string", "null"] },
         "total_cells": { "type": ["integer", "null"] },
         "doi": { "type": "string" },
-        "status": { "type": "string", "enum": ["candidate", "unresolved", "asta", "local", "needs_pdf"] },
+        "status": {
+          "type": "string",
+          "description": "Ingest route taken for this paper — how its text is reached. Distinct from asta_indexing.band, which is how much of it ASTA holds: a paper can be band 'abstract_only' in ASTA and still status 'local' because a JATS build succeeded.",
+          "enum": ["candidate", "unresolved", "asta", "local", "needs_pdf"]
+        },
+        "source_type": {
+          "type": "string",
+          "description": "Where the locally built text came from, when status is 'local'.",
+          "enum": ["jats", "pdf"]
+        },
+        "asta_indexing": { "$ref": "#/$defs/AstaIndexing" },
         "proposed_doi": { "type": "string" },
         "proposed": { "type": "array", "items": { "$ref": "#/$defs/SubatlasCandidate" } }
       }
+    },
+    "AstaIndexing": {
+      "type": "object",
+      "description": "How much of this paper ASTA's snippet index actually holds, measured by one paper-scoped snippet_search (services.asta_indexing). Semantic Scholar's metadata graph and the snippet index are separate systems, so CorpusId presence says nothing about retrievable text — this block is the only record of what is quotable and traversable. Only band 'full' may be served from ASTA.",
+      "required": ["band"],
+      "properties": {
+        "band": {
+          "type": "string",
+          "description": "'full' = body text indexed with a bibliography (sections >= 1 and refMentions > 0); 'partial' = indexed but below the observed full-text floor; 'abstract_only' = title/abstract chunks only, no body, no traversable references; 'unindexed' = registered in S2 but zero snippets; 'not_in_s2' = absent from Semantic Scholar entirely.",
+          "enum": ["full", "partial", "abstract_only", "unindexed", "not_in_s2"]
+        },
+        "snippets": { "type": "integer", "minimum": 0, "description": "Chunks returned for the paper-scoped search (its whole indexed set)." },
+        "chars": { "type": "integer", "minimum": 0, "description": "Total characters of indexed snippet text." },
+        "sections": { "type": "integer", "minimum": 0, "description": "Distinct non-null section names — the body-text signal." },
+        "ref_mentions": { "type": "integer", "minimum": 0, "description": "Inline reference mentions — the bibliography signal." },
+        "corpus_id": { "type": "string", "pattern": "^CorpusId:\\d+$" },
+        "reason": { "type": "string", "description": "Human-readable justification for the band." },
+        "probed_at": { "type": "string", "description": "ISO 8601 timestamp of the probe; this block doubles as the probe cache." }
+      },
+      "additionalProperties": false
     },
     "SubatlasCandidate": {
       "type": "object",
