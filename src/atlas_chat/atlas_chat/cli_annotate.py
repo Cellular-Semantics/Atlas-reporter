@@ -2,9 +2,11 @@
 
 Keeps raw ASTA snippet payloads out of the agent's context. Three subcommands:
 
-- ``fetch``: call ASTA ``snippet_search`` (via the project's ``AstaProvider``),
-  splice reference tokens, and write slim ``annotated_snippet`` records to disk.
-  Prints only a tiny summary (counts + path) to stdout.
+- ``fetch``: call ASTA ``snippet_search`` (via the project's ``AstaProvider``) — or,
+  with ``--local``, the project's own snippet index — splice reference tokens, and
+  write slim ``annotated_snippet`` records to disk. Prints only a tiny summary
+  (counts + path) to stdout. Both sources produce the same record shape, so a
+  paper ASTA cannot serve is still quotable and traversable.
 - ``follow-set``: intersect the agent's proposed CorpusIds with the ids the
   annotator emitted, writing the deduped follow-set + rejects.
 - ``show``: print a record's ``annotated_text`` (+ sentence spans) so the agent can
@@ -21,6 +23,13 @@ Examples::
         --paper-ids CorpusId:273400864 --limit 20 \\
         --role atlas --retrieval-method corpus_snippet --hop 0 \\
         --out out/annotated_snippets_hop0.json
+
+    python -m atlas_chat.cli_annotate fetch \\
+        --query "aPCV: definition, markers, cluster identity" \\
+        --local --project-dir projects/test_projects/hca_reproductive \\
+        --papers 10.1073/pnas.2404775121 --limit 20 \\
+        --role subatlas --retrieval-method corpus_snippet --hop 0 \\
+        --out out/subatlas_snippets.json
 
     python -m atlas_chat.cli_annotate follow-set \\
         --snippets out/annotated_snippets_hop0.json \\
@@ -60,6 +69,76 @@ async def _fetch_raw(query: str, paper_ids: str, limit: int) -> Any:
         return await provider._call_tool(http_client, "snippet_search", arguments)
 
 
+def _local_to_asta_item(row: dict[str, Any]) -> dict[str, Any]:
+    """Re-nest a ``local_snippet_index.search`` row into the raw ASTA item shape.
+
+    The local index stores its snippets ASTA-shaped, but ``search`` flattens them
+    for its own return value (``snippet`` is the text, not the object). Undo that
+    so the one deterministic projection in ``snippet_annotator`` handles both
+    sources — otherwise the local path grows a parallel implementation of
+    reference splicing, which is exactly what must not diverge.
+    """
+    return {
+        "score": row.get("score", 0.0),
+        "paper": {
+            "corpusId": row.get("corpus_id") or row.get("paper_id"),
+            "title": row.get("title", ""),
+            "authors": row.get("authors", ""),
+            "year": row.get("year"),
+            "doi": row.get("doi", ""),
+        },
+        "snippet": {
+            "text": row.get("snippet", ""),
+            "section": row.get("section", ""),
+            "annotations": {"refMentions": (row.get("annotations") or {}).get("refMentions") or []},
+        },
+    }
+
+
+def _fetch_local_records(
+    args: argparse.Namespace, reached_from: dict[str, Any] | None
+) -> list[dict[str, Any]]:
+    """Search the project's local snippet index instead of ASTA.
+
+    ASTA is blind to a good part of the corpus by construction: a subatlas sits at
+    ``status: local`` *because* the ASTA probe found too little of it to quote, so a
+    local index was built from JATS or a publisher PDF. Without this path those
+    papers are unreachable from the agentic route — the local index only ever fed
+    the programmatic graph, so the two runtimes were not equivalent. They are the
+    papers that most often define an inherited cell type.
+
+    Each record is projected individually so its ``source_paper`` carries **that
+    paper's DOI**. Local corpus ids are synthetic (``local_<hash>``) and Semantic
+    Scholar cannot resolve them, so the DOI is the identifier that has to survive
+    into ``paper_catalogue.json``.
+    """
+    from atlas_chat.services import local_snippet_index
+
+    rows = local_snippet_index.search(
+        Path(args.project_dir),
+        args.query,
+        k=args.limit,
+        papers=[d.strip() for d in args.papers.split(",") if d.strip()] or None,
+        roles=[r.strip() for r in args.roles.split(",") if r.strip()] or None,
+    )
+    records: list[dict[str, Any]] = []
+    for row in rows:
+        if row.get("score", 0.0) < args.score_threshold:
+            continue
+        source_paper: dict[str, Any] = {"role": args.role}
+        if row.get("doi"):
+            source_paper["doi"] = row["doi"]
+        records.append(
+            snippet_annotator.project_snippet(
+                _local_to_asta_item(row),
+                source_paper=source_paper,
+                retrieval_method=args.retrieval_method,
+                reached_from=reached_from,
+            )
+        )
+    return records
+
+
 def _fallback_source_id(paper_ids: str) -> dict[str, str]:
     """Derive a source-paper id from the first --paper-ids token (fallback only)."""
     first = paper_ids.split(",")[0].strip() if paper_ids else ""
@@ -84,7 +163,9 @@ def _write_json(path: Path, data: Any) -> None:
 
 
 def _cmd_fetch(args: argparse.Namespace) -> int:
-    raw = asyncio.run(_fetch_raw(args.query, args.paper_ids, args.limit))
+    if args.local and not args.project_dir:
+        print("--local requires --project-dir", file=sys.stderr)
+        return 2
 
     reached_from: dict[str, Any] | None = None
     if args.reached_from:
@@ -94,20 +175,30 @@ def _cmd_fetch(args: argparse.Namespace) -> int:
             print(f"--reached-from is not valid JSON: {exc}", file=sys.stderr)
             return 2
 
-    records = snippet_annotator.project_response(
-        raw,
-        source_paper={"role": args.role},
-        retrieval_method=args.retrieval_method,
-        reached_from=reached_from,
-        score_threshold=args.score_threshold,
-    )
-    _apply_id_fallback(records, _fallback_source_id(args.paper_ids))
+    if args.local:
+        records = _fetch_local_records(args, reached_from)
+        fallback = f"DOI:{args.papers.split(',')[0].strip()}" if args.papers else ""
+    else:
+        raw = asyncio.run(_fetch_raw(args.query, args.paper_ids, args.limit))
+        records = snippet_annotator.project_response(
+            raw,
+            source_paper={"role": args.role},
+            retrieval_method=args.retrieval_method,
+            reached_from=reached_from,
+            score_threshold=args.score_threshold,
+        )
+        fallback = args.paper_ids
+    _apply_id_fallback(records, _fallback_source_id(fallback))
 
     out = Path(args.out)
     _write_json(out, records)
     n_refs = sum(len(r.get("refMentions", [])) for r in records)
     n_resolved = sum(1 for r in records for m in r.get("refMentions", []) if m.get("resolved"))
-    print(f"fetch: {len(records)} snippets, {n_refs} refMentions ({n_resolved} resolved) -> {out}")
+    source = "local index" if args.local else "ASTA"
+    print(
+        f"fetch ({source}): {len(records)} snippets, "
+        f"{n_refs} refMentions ({n_resolved} resolved) -> {out}"
+    )
     return 0
 
 
@@ -182,6 +273,26 @@ def build_parser() -> argparse.ArgumentParser:
     )
     fetch.add_argument(
         "--reached-from", default="", help="JSON object stamped on every record (hop>=1)"
+    )
+    fetch.add_argument(
+        "--local",
+        action="store_true",
+        help="search the project's local snippet index instead of ASTA. Needed for "
+        "corpus papers at status 'local' — ASTA holds too little of them to quote, "
+        "which is why they were built locally in the first place.",
+    )
+    fetch.add_argument(
+        "--project-dir", default="", help="project directory (required with --local)"
+    )
+    fetch.add_argument(
+        "--papers",
+        default="",
+        help="with --local: comma-separated DOIs to restrict the search to",
+    )
+    fetch.add_argument(
+        "--roles",
+        default="",
+        help="with --local: comma-separated paper roles to restrict to (e.g. subatlas)",
     )
     fetch.add_argument("--score-threshold", type=float, default=0.0)
     fetch.add_argument("--out", required=True)
