@@ -3,11 +3,14 @@
 Two passes, both keyed off the project config (``cas.json``, falling back to
 the legacy ``cell_type_annotations.json``):
 
-1. ``discover``: seed ``source.subatlas_papers`` from ``label_provenance.json``.
-   Reads contributing-study labels (e.g. ``Sridhar_et_al_2020_CellPress``),
-   queries Semantic Scholar for best-match candidates, and writes draft entries
-   with ``status: candidate`` and a ``proposed_doi``. The user edits the file
-   to confirm/correct each DOI before re-running.
+1. ``discover``: seed ``source.subatlas_papers`` from the project's integration
+   provenance — CAS+ ``transferred_annotations`` where present, else the legacy
+   ``label_provenance.json``. Reads contributing-study labels (e.g.
+   ``Sridhar_et_al_2020_CellPress``, ``celltype_Ulrich2024``). Where the
+   provenance already names a DOI (CAS+ ``source_taxonomy``), that DOI is taken
+   as authored fact. Otherwise Semantic Scholar is queried for best-match
+   candidates and a draft entry is written with ``status: candidate`` and a
+   ``proposed_doi`` for the user to confirm or correct before re-running.
 
 2. ``ingest``: for each confirmed entry in ``source.subatlas_papers`` (with a
    non-empty ``doi``), runs the resolution waterfall:
@@ -66,6 +69,9 @@ class StudyLabel:
     year: int | None
     venue: str | None
     total_cells: int = 0
+    doi: str | None = None
+    """Known DOI, when the provenance source already carried one (CAS+
+    ``source_taxonomy``). Discovery skips the Semantic Scholar guess for these."""
 
 
 # ------------------------------------------------------------------
@@ -100,11 +106,69 @@ def parse_label(label: str) -> StudyLabel:
     return StudyLabel(raw=label, first_author=None, year=None, venue=None)
 
 
-def read_provenance_labels(project_dir: Path) -> list[StudyLabel]:
-    """Aggregate contributing-study labels across all cell types.
+_DOI_PREFIX = "DOI:"
 
-    Returns one ``StudyLabel`` per distinct raw label, with ``total_cells``
-    summed across cell types. Skips known non-paper labels.
+
+def _study_labels_from_cas(cfg: dict[str, Any]) -> list[StudyLabel]:
+    """Read contributing studies from CAS+ ``transferred_annotations``.
+
+    One entry per distinct contributor, keyed on ``subatlas_paper`` when present
+    and otherwise on ``source_taxonomy``. ``total_cells`` sums over **leaf** cell
+    sets only: leaves partition the cells, so summing every annotation in a
+    hierarchical taxonomy would count each cell once per level.
+
+    A contributor whose ``source_taxonomy`` is a DOI arrives with that DOI
+    attached, so discovery has nothing to guess.
+    """
+    from atlas_chat.services.annotation_transfer import leaf_accessions
+
+    annotations = cfg.get("annotations", []) or []
+    with_accessions = [a for a in annotations if "cell_set_accession" in a]
+    leaves = leaf_accessions(with_accessions) if with_accessions else None
+
+    totals: dict[str, int] = {}
+    dois: dict[str, str] = {}
+    for ann in annotations:
+        if leaves is not None and str(ann.get("cell_set_accession", "")) not in leaves:
+            continue
+        for item in ann.get("transferred_annotations", []) or []:
+            taxonomy = str(item.get("source_taxonomy") or "")
+            key = str(item.get("subatlas_paper") or taxonomy)
+            if not key or key in _NON_PAPER_LABELS:
+                continue
+            totals[key] = totals.get(key, 0) + int(item.get("cell_count", 0))
+            if taxonomy.startswith(_DOI_PREFIX):
+                dois.setdefault(key, taxonomy[len(_DOI_PREFIX) :])
+            elif key.startswith(_DOI_PREFIX):
+                dois.setdefault(key, key[len(_DOI_PREFIX) :])
+
+    # A registered subatlas paper supplies better metadata than a parsed label,
+    # so prefer it where the two describe the same contributor.
+    registered = {
+        e.get("label"): e
+        for e in ((cfg.get("source") or {}).get("subatlas_papers") or [])
+        if e.get("label")
+    }
+    out: list[StudyLabel] = []
+    for raw, total in sorted(totals.items(), key=lambda x: -x[1]):
+        entry = registered.get(raw) or {}
+        label = parse_label(raw)
+        label.total_cells = total
+        label.doi = entry.get("doi") or dois.get(raw)
+        label.first_author = entry.get("first_author") or label.first_author
+        label.year = entry.get("year") or label.year
+        label.venue = entry.get("venue") or label.venue
+        out.append(label)
+    return out
+
+
+def _study_labels_from_provenance_file(project_dir: Path) -> list[StudyLabel]:
+    """Read contributing studies from the legacy ``label_provenance.json``.
+
+    That file holds *marginals* — a per-cell-type list of contributing studies and
+    a separate list of author labels — so it can say which studies contributed
+    cells but not which upstream label came from which study. CAS+
+    ``transferred_annotations`` carries the joint table and supersedes it.
     """
     prov_path = project_dir / "label_provenance.json"
     if not prov_path.exists():
@@ -122,6 +186,23 @@ def read_provenance_labels(project_dir: Path) -> list[StudyLabel]:
         sl.total_cells = total
         out.append(sl)
     return out
+
+
+def read_provenance_labels(project_dir: Path) -> list[StudyLabel]:
+    """Aggregate contributing-study labels across all cell sets.
+
+    Prefers CAS+ ``transferred_annotations`` and falls back to the legacy
+    ``label_provenance.json`` for projects predating it. Returns one
+    ``StudyLabel`` per distinct contributor with ``total_cells`` summed, skipping
+    known non-paper labels (unpublished data, atlas-internal partitions).
+    """
+    cfg_path = asta_indexing.config_path(project_dir)
+    if cfg_path.exists():
+        cfg = json.loads(cfg_path.read_text())
+        labels = _study_labels_from_cas(cfg)
+        if labels:
+            return labels
+    return _study_labels_from_provenance_file(project_dir)
 
 
 # ------------------------------------------------------------------
@@ -212,12 +293,14 @@ def discover(project_dir: Path) -> dict[str, Any]:
     existing = {e.get("label"): e for e in source.get("subatlas_papers", []) if e.get("label")}
     drafts: list[dict[str, Any]] = []
     n_with_proposal = 0
+    n_from_config = 0
     for label in labels:
         if label.raw in existing and existing[label.raw].get("doi"):
-            drafts.append(existing[label.raw])
+            entry = existing[label.raw]
+            entry["total_cells"] = label.total_cells
+            drafts.append(entry)
             continue
-        candidates = _s2_search_candidates(label)
-        entry: dict[str, Any] = {
+        entry = {
             "label": label.raw,
             "first_author": label.first_author,
             "year": label.year,
@@ -225,8 +308,17 @@ def discover(project_dir: Path) -> dict[str, Any]:
             "total_cells": label.total_cells,
             "doi": "",
             "status": "candidate",
-            "proposed": candidates,
         }
+        if label.doi:
+            # CAS+ transferred_annotations already named the paper (via
+            # source_taxonomy). That is authored provenance, not a guess, so take
+            # it and don't spend an S2 query trying to rediscover it.
+            entry["doi"] = label.doi
+            n_from_config += 1
+            drafts.append(entry)
+            continue
+        candidates = _s2_search_candidates(label)
+        entry["proposed"] = candidates
         if candidates:
             entry["proposed_doi"] = candidates[0]["doi"]
             n_with_proposal += 1
@@ -236,17 +328,22 @@ def discover(project_dir: Path) -> dict[str, Any]:
     cfg_path.write_text(json.dumps(cfg, indent=2))
 
     logger.info(
-        "discover: %d labels, %d with S2 proposals (drafts written to %s)",
+        "discover: %d labels, %d DOIs from the config, %d with S2 proposals "
+        "(drafts written to %s)",
         len(labels),
+        n_from_config,
         n_with_proposal,
         cfg_path.name,
     )
     return {
         "n_labels": len(labels),
+        "from_config": n_from_config,
         "candidates": n_with_proposal,
         "note": (
             f"Review {cfg_path.name}: copy proposed_doi → doi for each entry "
-            "you accept (or replace with the correct DOI), then run `ingest`."
+            "you accept (or replace with the correct DOI), then run `ingest`. "
+            f"{n_from_config} entr(y/ies) already had a DOI from "
+            "transferred_annotations and need no review."
         ),
     }
 

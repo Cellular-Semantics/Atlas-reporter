@@ -67,6 +67,28 @@ def test_transferred_annotation_carries_subatlas_and_source_labelset() -> None:
 
 
 @pytest.mark.unit
+def test_transferred_annotation_carries_the_atlas_wide_label_total() -> None:
+    """``source_label_cell_count`` is what makes the reverse share computable.
+
+    ``cell_count`` / ``cell_ratio`` say how much of *this cell set* an upstream
+    label accounted for. The atlas-wide total says how much of that *upstream
+    label* this cell set captured — which is how a consumer tells an upstream cell
+    type the atlas split from one it merely renamed.
+    """
+    data = _load("cas_annotation.good.json")
+    ta = data["annotations"][0]["transferred_annotations"][0]
+    assert ta["cell_count"] / ta["source_label_cell_count"] == 0.25
+    assert _errors(data) == []
+
+
+@pytest.mark.unit
+def test_source_label_cell_count_must_be_a_non_negative_integer() -> None:
+    data = _load("cas_annotation.good.json")
+    data["annotations"][0]["transferred_annotations"][0]["source_label_cell_count"] = -1
+    assert _errors(data)
+
+
+@pytest.mark.unit
 def test_root_additional_properties_are_closed() -> None:
     data = _load("cas_annotation.minimal.good.json")
     data["bogus_top_level"] = 1

@@ -121,7 +121,8 @@
         "algorithm_name": { "type": "string" },
         "comment": { "type": "string" },
         "cell_count": { "type": "integer", "minimum": 0, "description": "Local extension: cells in this set carrying the transferred label." },
-        "cell_ratio": { "type": "number", "minimum": 0, "maximum": 1, "description": "Local extension: fraction of the set carrying the transferred label." }
+        "cell_ratio": { "type": "number", "minimum": 0, "maximum": 1, "description": "Local extension: fraction of the set carrying the transferred label (denominator: this cell set)." },
+        "source_label_cell_count": { "type": "integer", "minimum": 0, "description": "Local extension: total cells carrying this transferred label anywhere in the atlas, not just in this cell set. Lets a consumer compute the reverse share (cell_count / source_label_cell_count) — 'this set captured 12% of the cells the source called X' — which per-set counts alone cannot express, and which separates a split upstream cell type from a renamed one." }
       }
     },
     "Composition": {
