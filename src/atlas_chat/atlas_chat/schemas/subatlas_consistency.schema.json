@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "subatlas_consistency.schema.json",
+  "title": "Subatlas consistency for one cell set",
+  "description": "Whether an atlas cell-type label agrees with the labels the contributing studies gave the same cells, and where it does not, an attempt to explain that from markers. Produced by the subatlas-consistency subagent from subatlas_contributors.json plus each contributing paper's own text. The match vocabulary deliberately mirrors cl_mapping.schema.json so label-to-CL and label-to-upstream-label comparisons read the same way. Also carries the primacy call that decides which paper citation traversal seeds on: where an atlas label is inherited essentially unchanged from one study, that study is where the cell type is actually defined, and seeding on the atlas paper instead is why inherited annotations have historically drawn less than half the evidence of the atlas's own.",
+  "type": "object",
+  "required": ["cell_label", "labelset", "atlas_doi", "working_definition", "contributors", "primacy"],
+  "additionalProperties": false,
+  "properties": {
+    "cell_label": { "type": "string", "description": "The atlas's own label for this cell set." },
+    "labelset": { "type": "string" },
+    "cell_set_accession": { "type": "string" },
+    "atlas_doi": { "type": "string", "description": "DOI of the atlas paper this cell set belongs to." },
+    "working_definition": {
+      "type": "string",
+      "description": "2-3 sentences: what the ATLAS means by this label — markers, location, granularity — assembled before looking at any contributor. Stated first so each comparison is against a fixed reading rather than drifting toward whichever upstream definition was read last."
+    },
+    "contributors": {
+      "type": "array",
+      "description": "One verdict per contributor that cleared the cutoff in subatlas_contributors.json, in the same order. A contributor present there and absent here is an omission, not a pass.",
+      "items": { "$ref": "#/$defs/ContributorVerdict" }
+    },
+    "primacy": { "$ref": "#/$defs/Primacy" },
+    "no_dominant_contributor": {
+      "type": "boolean",
+      "description": "Carried through from subatlas_contributors. True means this cell set is a pooled or de-novo call with no single upstream parent — a finding to report, not a section to omit."
+    },
+    "unpublished_note": {
+      "type": "string",
+      "description": "Present when a material share of the cell set came from sources with no publication. Says how much, so the report does not imply the published contributors account for everything."
+    }
+  },
+  "$defs": {
+    "ContributorVerdict": {
+      "type": "object",
+      "description": "How this cell set's label relates to what one contributing paper called the same cells.",
+      "required": ["subatlas_paper", "match_type", "skos_mapping", "confidence", "justification"],
+      "additionalProperties": false,
+      "properties": {
+        "subatlas_paper": { "type": "string", "description": "Registry key, matching subatlas_contributors.json." },
+        "doi": { "type": "string" },
+        "compared_label": {
+          "type": "string",
+          "description": "The upstream label actually judged against. Usually the contributor's dominant_label, but not always: where the atlas label matches a minority upstream call, that call is the honest comparison and this field says which one was used."
+        },
+        "upstream_definition": {
+          "type": "string",
+          "description": "How the contributing paper defines the compared label, in its own terms. Left absent when the paper's text could not be reached — never filled in by inference from the label string."
+        },
+        "match_type": {
+          "type": "string",
+          "enum": ["exact match", "broad match", "narrow match", "related match", "no match"],
+          "description": "How the atlas label relates to the upstream label. 'exact' = the same cell type under the same or a renamed label. 'broad' = the upstream label is broader (an upstream 'endothelial cell' against an atlas venous subtype). 'narrow' = the upstream label is narrower, so the atlas set merges it with others. 'related' = overlapping but neither subsumes the other. 'no match' = they disagree, OR the upstream text was unreachable — 'unreachable' is a retrieval limit, distinguishable via confidence and evidence_status, and must never be reported as disagreement."
+        },
+        "skos_mapping": {
+          "type": "string",
+          "enum": ["skos:exactMatch", "skos:broadMatch", "skos:narrowMatch", "skos:relatedMatch", "skos:noMatch"],
+          "description": "Formal SKOS predicate; must agree with match_type (cross-checked by the hook)."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Confidence in the verdict. Must be 'low' when evidence_status is not 'text_retrieved': a judgement made without the paper's own words is a guess about a label string."
+        },
+        "evidence_status": {
+          "type": "string",
+          "enum": ["text_retrieved", "abstract_only", "unreachable", "no_publication"],
+          "description": "Whether the contributing paper's own account of its label was actually obtained. Derived from the registry status and ASTA band, and the reason a verdict may be weak. Absent is read as 'text_retrieved'."
+        },
+        "evidence_quotes": {
+          "type": "array",
+          "description": "Verbatim quotes from the contributing paper supporting the upstream definition. Every item carries source_paper (role 'subatlas') and retrieval_method, and its DOI must appear in paper_catalogue.json — the same grounding contract as every other evidence item.",
+          "items": { "$ref": "#/$defs/EvidenceQuote" }
+        },
+        "justification": {
+          "type": "string",
+          "description": "Why this match_type. Must compare the upstream definition against working_definition, naming the specific features that align or diverge — not restate the counts, which are already in subatlas_contributors.json."
+        },
+        "explanation": {
+          "type": "string",
+          "description": "REQUIRED when match_type is not 'exact match' (enforced by the hook): the attempt at explaining the disagreement, which is what the functional spec asks for. Prefer marker evidence — markers shared, markers present in one label and absent from the other, a resolution difference (the upstream study lacked the depth to split this), a context difference (different stage, organ, or assay). Where markers cannot explain it, say that explicitly rather than offering a narrative."
+        },
+        "purity_caveat": {
+          "type": "string",
+          "description": "REQUIRED when this contributor's purity is below 0.8 (enforced by the hook): 'what did this paper call these cells' has more than one answer, so a single verdict understates it. Say how the contribution splits and what that implies — a merge by the atlas, an upstream split, or an unstable boundary."
+        },
+        "split_upstream_type": {
+          "type": "boolean",
+          "description": "True when a low reverse_share with a high within_source_share shows the atlas distributed one upstream cell type across several of its own cell sets. Distinguishes a genuine re-partition from a rename, which the per-set counts alone cannot."
+        }
+      }
+    },
+    "EvidenceQuote": {
+      "type": "object",
+      "required": ["quote", "source_paper", "retrieval_method"],
+      "additionalProperties": false,
+      "properties": {
+        "quote": { "type": "string", "description": "Exact substring of the retrieved text." },
+        "source_paper": {
+          "type": "object",
+          "required": ["role"],
+          "anyOf": [{ "required": ["doi"] }, { "required": ["corpus_id"] }],
+          "additionalProperties": false,
+          "properties": {
+            "doi": { "type": "string" },
+            "corpus_id": { "type": "string", "pattern": "^CorpusId:" },
+            "role": { "type": "string", "enum": ["atlas", "subatlas", "external"] }
+          }
+        },
+        "retrieval_method": {
+          "type": "string",
+          "enum": ["corpus_snippet", "supplement", "citation_traversal", "free_search"]
+        },
+        "section": { "type": "string" },
+        "supplement_ref": {
+          "type": "object",
+          "required": ["file"],
+          "additionalProperties": false,
+          "properties": {
+            "file": { "type": "string" },
+            "sheet": { "type": "string" },
+            "table": { "type": "string" }
+          }
+        }
+      }
+    },
+    "Primacy": {
+      "type": "object",
+      "description": "Which paper defines this cell type, and therefore where evidence retrieval should start. This is the output the traversal step consumes.",
+      "required": ["call", "reason"],
+      "additionalProperties": false,
+      "properties": {
+        "call": {
+          "type": "string",
+          "enum": ["subatlas_primary", "atlas_primary", "co_equal"],
+          "description": "'subatlas_primary' — one contributing paper is where this cell type is actually defined (an exact or narrow match at high contribution and purity); seed traversal there first, with the atlas paper supplying integration context and its own marker tables. 'atlas_primary' — the atlas made this call itself: no contributor cleared the cutoff, or the ones that did are broader groupings it subdivided. 'co_equal' — several contributors are genuinely joint parents of a pooled label, or the dominant one is only a broad match; seed on the atlas and the contributors together."
+        },
+        "primary_paper": {
+          "type": "string",
+          "description": "Registry key of the paper to seed on. REQUIRED when call is 'subatlas_primary' (enforced by the hook)."
+        },
+        "primary_doi": {
+          "type": "string",
+          "description": "Its DOI. Report validation fails if this DOI is missing from paper_catalogue.json — a report must not silently omit the paper that defines its cell type."
+        },
+        "co_equal_papers": {
+          "type": "array",
+          "description": "Registry keys to seed alongside the atlas when call is 'co_equal'.",
+          "items": { "type": "string" }
+        },
+        "reason": {
+          "type": "string",
+          "description": "One or two sentences naming the evidence for the call — which contributor, at what contribution and purity, and what match type."
+        }
+      }
+    }
+  }
+}

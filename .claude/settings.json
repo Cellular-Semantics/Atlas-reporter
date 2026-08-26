@@ -34,7 +34,11 @@
             "type": "command"
           },
           {
-            "command": "uv run python .claude/hooks/check_subatlas_contributors.py"
+            "command": "uv run python .claude/hooks/check_subatlas_contributors.py",
+            "type": "command"
+          },
+          {
+            "command": "uv run python .claude/hooks/check_subatlas_consistency.py"
           },
           {
             "type": "command",

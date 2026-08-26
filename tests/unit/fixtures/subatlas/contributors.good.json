@@ -1,0 +1,62 @@
+{
+  "cell_label": "Activated post-capillary venous endothelial",
+  "labelset": "L4",
+  "n_cells": 4851,
+  "thresholds": {
+    "min_contribution": 0.05,
+    "min_source_cells": 50,
+    "primary_contribution": 0.2,
+    "min_within_source_share": 0.02
+  },
+  "contributors": [
+    {
+      "subatlas_paper": "celltype_Weigert2025",
+      "doi": "10.1038/s41467-024-55440-2",
+      "tier": "primary",
+      "from_source_cells": 1168,
+      "contribution": 0.2408,
+      "purity": 1.0,
+      "dominant_label": "endothelial cell",
+      "labels": [
+        {
+          "transferred_cell_label": "endothelial cell",
+          "cell_count": 1168,
+          "within_source_share": 1.0,
+          "share_of_set": 0.2408
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "celltype_Ulrich2024",
+      "doi": "10.1073/pnas.2404775121",
+      "tier": "secondary",
+      "from_source_cells": 332,
+      "contribution": 0.0684,
+      "purity": 0.5934,
+      "dominant_label": "Capillary",
+      "labels": [
+        {
+          "transferred_cell_label": "Capillary",
+          "cell_count": 197,
+          "within_source_share": 0.5934,
+          "share_of_set": 0.0406
+        },
+        {
+          "transferred_cell_label": "tPCV",
+          "cell_count": 73,
+          "within_source_share": 0.2199,
+          "share_of_set": 0.015
+        },
+        {
+          "transferred_cell_label": "aPCV",
+          "cell_count": 37,
+          "within_source_share": 0.1114,
+          "share_of_set": 0.0076
+        }
+      ],
+      "n_tail_labels": 5,
+      "tail_cells": 25
+    }
+  ],
+  "tail": { "n_papers": 0, "cell_count": 0, "contribution": 0.0, "papers": [] }
+}
