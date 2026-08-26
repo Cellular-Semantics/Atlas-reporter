@@ -67,6 +67,11 @@ uv run python -m atlas_chat.cli_supplements fetch \
 # Judge which stored files could describe cell types, from their columns.
 uv run python -m atlas_chat.cli_supplements triage --store <store> --doi <doi>
 
+# Draft pointers, one per SHEET, with everything mechanical already filled in:
+# locator, header row, dimensions, columns, a suggested kind and a relevance
+# verdict. Add a description to each and that is your `tables` section.
+uv run python -m atlas_chat.cli_supplements triage --store <store> --doi <doi> --sheets
+
 # Which papers does a project need supplements for?
 uv run python -m atlas_chat.cli_supplements papers --cas <cas.json>
 ```
@@ -122,7 +127,11 @@ The aim is describing cell types, their properties, and the data supporting
 them. Most of a supplement bundle does not bear on that, and deep indexing is
 the expensive step, so run `triage` before you open anything.
 
-Triage writes `relevance` and `relevance_note` on every file and archive member:
+Triage writes `relevance` and `relevance_note` at two levels — on each file and
+archive member, and (with `--sheets`) on each **sheet**. Sheet level is the one
+that matters: a 42-sheet supplement routinely holds the DEG table a report needs
+and the antibody list it never will, and a verdict on the file cannot say that.
+Verdicts mean:
 
 - **`irrelevant`** — ruled out, with the reason. Either its caption says what it
   is ("Reporting Summary", "Peer Review file") or its columns do (a reagent list
@@ -142,6 +151,24 @@ drops evidence. So anything unrecognised is `unknown`.
 
 Expect triage to exclude only around 10% of items by count. Its larger value is
 that it hands you a kind and a reason for about half of what remains.
+
+## Start from `--sheets`
+
+`triage --sheets` gives you a draft pointer per sheet with every mechanical field
+already correct: `file_id`, `member_path`, `locator`, `header_row`, `n_rows`,
+`n_columns`, `columns`, a suggested `content_type` and its `relevance`. What is
+missing is `description` — what the table is *for* — which is the judgement you
+are here to make. Add it, set `evidence` to the rung you stopped on, and write
+the list back as `tables`.
+
+Carry the `relevance` through onto the pointer, including for the irrelevant
+ones. A pointer that says "this sheet is an antibody list, irrelevant" is worth
+having: it accounts for the sheet, so a later reader knows it was looked at.
+
+Do check the suggested `content_type` rather than trusting it. It comes from
+column-name patterns, and the patterns collide: a TF-IDF marker table carrying a
+`secondBestClusterName` column was once labelled a cluster-to-name mapping. The
+`relevance_note` names the columns that drove the guess, so it is quick to check.
 
 ## How to index — cheapest evidence first
 

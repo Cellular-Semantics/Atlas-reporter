@@ -216,7 +216,7 @@
     },
     "TablePointer": {
       "type": "object",
-      "description": "A table worth reading, located precisely enough to slice without searching. Describes the table and its columns; it deliberately does NOT enumerate which cell types appear (that is the reader's job at query time).",
+      "description": "A table worth reading, located precisely enough to slice without searching, and carrying its own relevance verdict. One pointer per table \u2014 a sheet, not a workbook \u2014 because a 42-sheet supplement routinely mixes differential expression with antibody lists, and a verdict on the file as a whole cannot express that. Describes the table and its columns; it deliberately does NOT enumerate which cell types appear (a query-time question).",
       "properties": {
         "file_id": {
           "type": "string",
@@ -236,16 +236,33 @@
         },
         "content_type": {
           "type": "string",
-          "description": "What kind of table this is. 'legend' is the manifest/contents sheet that describes the others \u2014 worth reading first.",
+          "description": "What kind of table this is. 'deg_results' differential expression; 'marker_list' asserted markers; 'cluster_annotation' a cluster-to-name mapping; 'cell_metadata' one row per cell; 'sample_metadata' one row per sample or donor; 'enrichment' GSEA/GO results; 'interaction' ligand-receptor or cell-cell interactions; 'gene_set' the gene lists an analysis consumed (an input, not a finding); 'reagents' antibodies, primers and probes; 'legend' the contents or data-dictionary sheet that describes the others \u2014 worth reading first. 'other' is a real answer, not a default: use it when the table is none of these.",
           "enum": [
             "deg_results",
             "marker_list",
             "cluster_annotation",
             "cell_metadata",
             "sample_metadata",
+            "enrichment",
+            "interaction",
+            "gene_set",
+            "reagents",
             "legend",
             "other"
           ]
+        },
+        "relevance": {
+          "type": "string",
+          "description": "Whether THIS TABLE bears on describing cell types, their properties or the data supporting them. Recorded per table because relevance varies within a file: the same workbook holds the DEG table a report needs and the antibody list it never will. 'irrelevant' is a positive finding \u2014 the pointer still exists so the table is accounted for rather than silently absent.",
+          "enum": [
+            "relevant",
+            "irrelevant",
+            "unknown"
+          ]
+        },
+        "relevance_note": {
+          "type": "string",
+          "description": "What the verdict was based on, e.g. 'caption: Peer Review file', 'columns: names/logfoldchanges/pvals_adj -> DEG results'. Keeps the judgement auditable and re-runnable."
         },
         "description": {
           "type": "string",

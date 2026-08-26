@@ -180,13 +180,20 @@ Recognised content, by paper (of the 14 retrievable):
 | Per-cell tables (label transfer, predictions) | 2 |
 | Enrichment results | 1 |
 | Marker list | 1 |
-| Cluster-to-name mapping | **1** |
+| Cluster-to-name mapping | **0** |
 | Abundance per cell type | 1 |
 
-**The important asymmetry: 11 papers have DEG tables, one has a cluster-to-name
+**The important asymmetry: 11 papers have DEG tables, none has a cluster-to-name
 mapping.** Marker evidence is abundant in supplements; cell-type *naming* is
-almost absent from them. Since name resolution is what the whole downstream flow
-depends on, this is the most consequential finding here.
+absent from them entirely. Since name resolution is what the whole downstream
+flow depends on, this is the most consequential finding here.
+
+The count was briefly "1", from a TF-IDF marker table whose
+`secondBestClusterName` column matched a substring test for naming columns. That
+is worth recording as a methodological warning as much as a bug: the field this
+corpus is short of is exactly the field where a loose match manufactures a false
+positive, and a false positive here would have closed the question. Collision-prone
+tokens are now matched against whole column names (`Signature.exact_any_of`).
 
 ### Are the mappings in the PDFs?
 
@@ -246,11 +253,26 @@ into a model's context.
 Two-stage relevance judgement — captions before fetching, column signatures
 after.
 
+Per file / archive member:
+
 | Verdict | Reproductive atlas | Prenatal skin |
 |---|---|---|
 | relevant | 53% | 65% |
 | unknown | 39% | 24% |
 | irrelevant | **8%** | **13%** |
+
+Per **sheet** — 394 of them across the corpus, which is the unit that matters
+for usability:
+
+| Verdict | Sheets | Share |
+|---|---|---|
+| relevant | 231 | 59% |
+| unknown | 151 | 38% |
+| irrelevant | 12 | 3% |
+
+By kind: 148 differential expression, 32 sample metadata, 15 per-cell, 13
+interaction, 12 legend/data-dictionary, 10 reagents, 6 enrichment, 5 marker
+lists, 2 gene-set definitions, 151 unclassified.
 
 **Triage excludes little.** On the reproductive corpus the exclusions are 11
 files (8%) and all of them from captions — Reporting Summaries and Peer Review
@@ -285,17 +307,24 @@ Four papers indexed as a sample, chosen to stress different shapes:
 
 147 pointers, every manifest schema-valid and cross-check clean.
 
-**Limitation found:** `content_type` is too coarse. Of the 42 pointers for
-Garcia-Alonso, 34 came out `other` — TF activity scores, CellPhoneDB
-interactions, confusion matrices, reagent lists and enrichment results all
-collapse into one value. Descriptions carry the meaning, but the enum cannot be
-used to filter, which is what a query-time consumer will want. Worth extending
-with at least `enrichment`, `interaction` and `reagents`.
+**Both limitations found here have since been closed.**
 
-**Also:** relevance is recorded per file and per archive member, but not per
-sheet — and a 42-sheet workbook mixes DEG tables with antibody lists. Pointers
-currently carry that distinction implicitly via `content_type` and description.
-If sheet-level filtering matters, relevance belongs on `TablePointer`.
+`content_type` was too coarse: of the 42 pointers for Garcia-Alonso, 34 came out
+`other`, collapsing TF activity scores, CellPhoneDB interactions, confusion
+matrices, reagent lists and enrichment results into one value. The enum gained
+`enrichment`, `interaction`, `gene_set` and `reagents`, and with signatures for
+the shapes those take (regulon activity via `NES`; interaction matrices whose
+columns are cell-type *pairs*, `SOX9_LGR5--Preciliated`; CellPhoneDB's
+`partner_a`/`partner_b` schema; reagent lists that say "Company" rather than
+"Vendor") the same file now yields 25 `other` out of 49 sheets rather than 34 out
+of 42, and `relevant` rose from 8 sheets to 17.
+
+Relevance is now recorded per **sheet**, on `TablePointer`, as well as per file
+and member. This is the change that makes the manifest usable: the alternative
+was a single verdict for a workbook that holds both a DEG table and an antibody
+list. Irrelevant sheets still get a pointer, so they are accounted for rather
+than silently absent, and `triage --sheets` emits a draft pointer per sheet with
+every mechanical field filled in — the indexer supplies only the description.
 
 ---
 

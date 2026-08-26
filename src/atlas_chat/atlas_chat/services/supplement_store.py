@@ -1264,9 +1264,17 @@ def _cmd_fetch(args: argparse.Namespace) -> int:
 
 
 def _cmd_triage(args: argparse.Namespace) -> int:
-    from atlas_chat.services.supplement_triage import indexable, triage_paper
+    from atlas_chat.services.supplement_triage import (
+        indexable,
+        sheet_candidates,
+        triage_paper,
+    )
 
     manifest = triage_paper(Path(args.store), args.doi)
+    if args.sheets:
+        # Draft pointers, one per sheet, everything but the description filled in.
+        _print(sheet_candidates(Path(args.store), args.doi, manifest))
+        return 0
     verdicts: dict[str, int] = {}
     for entry in manifest.get("files", []):
         for item in entry.get("members") or [entry]:
@@ -1390,6 +1398,11 @@ def build_parser() -> argparse.ArgumentParser:
     )
     triage.add_argument("--store", required=True)
     triage.add_argument("--doi", required=True)
+    triage.add_argument(
+        "--sheets",
+        action="store_true",
+        help="emit one draft pointer per sheet (locator, columns, kind, relevance)",
+    )
     triage.set_defaults(func=_cmd_triage)
 
     papers = sub.add_parser("papers", help="corpus papers from a CAS+ document")

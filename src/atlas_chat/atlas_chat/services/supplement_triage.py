@@ -73,8 +73,13 @@ class Signature:
         name: What to call it in a note.
         content_type: The manifest ``TablePointer.content_type`` it maps to.
         relevant: Whether a table of this kind bears on describing cell types.
-        required: Column names that must all be present (lowercased substrings).
-        any_of: Column names of which at least one must be present.
+        required: Column names that must all be present, matched as substrings —
+            loose on purpose, so ``logfoldchange`` catches ``logFoldChanges``.
+        any_of: Column names of which at least one must be present, as substrings.
+        exact_any_of: As ``any_of``, but matched against the whole column name.
+            For tokens that collide: "name" as a substring matches
+            ``secondBestClusterName`` in a TF-IDF marker table, which is how a
+            marker table came to be labelled a cluster-to-name mapping.
     """
 
     def __init__(
@@ -84,21 +89,26 @@ class Signature:
         relevant: bool,
         required: tuple[str, ...] = (),
         any_of: tuple[str, ...] = (),
+        exact_any_of: tuple[str, ...] = (),
     ):
         self.name = name
         self.content_type = content_type
         self.relevant = relevant
         self.required = required
         self.any_of = any_of
+        self.exact_any_of = exact_any_of
 
     def matches(self, columns: set[str]) -> bool:
         if self.required and not all(
             any(req in column for column in columns) for req in self.required
         ):
             return False
-        if self.any_of and not any(any(opt in column for column in columns) for opt in self.any_of):
-            return False
-        return bool(self.required or self.any_of)
+        if self.any_of or self.exact_any_of:
+            loose = any(any(opt in column for column in columns) for opt in self.any_of)
+            exact = any(opt in columns for opt in self.exact_any_of)
+            if not (loose or exact):
+                return False
+        return bool(self.required or self.any_of or self.exact_any_of)
 
 
 #: Order matters: the first match wins, so the specific precede the general.
@@ -109,13 +119,13 @@ SIGNATURES: tuple[Signature, ...] = (
     # signatures would claim it and mislabel what it is.
     Signature(
         "cell-cell interaction",
-        "other",
+        "interaction",
         True,
         any_of=("celltype_pair", "gene_pair", "test_ligand"),
     ),
     Signature(
         "cell-cell interaction",
-        "other",
+        "interaction",
         True,
         required=("ligand",),
         any_of=("target", "receptor", "weight"),
@@ -168,7 +178,7 @@ SIGNATURES: tuple[Signature, ...] = (
     # clusterProfiler's dialect for enrichment, which names nothing "term".
     Signature(
         "enrichment results",
-        "other",
+        "enrichment",
         True,
         any_of=("bgratio", "generatio", "p.adjust", "qvalue"),
     ),
@@ -181,16 +191,58 @@ SIGNATURES: tuple[Signature, ...] = (
         required=("column",),
         any_of=("description", "definition", "meaning"),
     ),
+    # TF-IDF marker tables carry a cluster column and a secondBestClusterName,
+    # so they must be claimed here or the cluster signature mislabels them as a
+    # naming table — the one field this corpus is short of, where a false
+    # positive is worse than none.
+    Signature(
+        "TF-IDF marker table",
+        "marker_list",
+        True,
+        any_of=("tfidf", "genefrequency"),
+    ),
     Signature(
         "cluster-to-name mapping",
         "cluster_annotation",
         True,
         required=("cluster",),
-        any_of=("annotation", "label", "cell type", "celltype", "name"),
+        any_of=("annotation", "cell type", "celltype", "cell_type", "cell state"),
+        exact_any_of=("name", "label", "cluster name", "cluster_name", "cell name"),
+    ),
+    # An interaction matrix names cell-type PAIRS in its columns
+    # ("SOX9_LGR5--Preciliated"), which no other kind of table does.
+    Signature(
+        "cell-cell interaction matrix",
+        "interaction",
+        True,
+        required=("--",),
+    ),
+    # CellPhoneDB's own schema for a curated interaction table.
+    Signature(
+        "curated interactions",
+        "interaction",
+        True,
+        any_of=("partner_a", "partner_b", "interacting_pair"),
+    ),
+    # TF regulon activity: a normalised enrichment score per regulon per cluster.
+    Signature(
+        "regulon activity",
+        "enrichment",
+        True,
+        required=("nes",),
+        any_of=("regulon", "fdr", "p.value", "cluster"),
+    ),
+    # The curated TF-target network an activity analysis consumed — an input.
+    Signature(
+        "regulatory network",
+        "gene_set",
+        False,
+        required=("target",),
+        any_of=("regulon", "effect", "tf"),
     ),
     Signature(
         "enrichment results",
-        "other",
+        "enrichment",
         True,
         required=("term",),
         any_of=("adjusted p-value", "odds ratio", "combined score", "overlap"),
@@ -233,14 +285,23 @@ SIGNATURES: tuple[Signature, ...] = (
     # the failure direction that silently loses evidence.
     Signature(
         "reagent list",
-        "other",
+        "reagents",
         False,
-        any_of=("vendor", "cat no", "catalogue no", "supplier", "clonality", "dilution"),
-        required=(),
+        any_of=(
+            "vendor",
+            "cat no",
+            "catalogue no",
+            "catalog no",
+            "company",
+            "product number",
+            "supplier",
+            "clonality",
+            "dilution",
+        ),
     ),
     Signature(
         "gene-set definitions",
-        "other",
+        "gene_set",
         False,
         required=("go:",),
     ),
@@ -427,6 +488,85 @@ def _judge(store_root: Path, entry: dict[str, Any], name: str) -> tuple[str, str
         elif not best[1]:
             best = (verdict, located)
     return best if best[1] else ("unknown", "no sheet matched a signature")
+
+
+#: Columns recorded per sheet before the list is treated as a prefix. A
+#: label-transfer table has one column per cell state and can run to hundreds;
+#: the first two dozen tell a reader what it is.
+CANDIDATE_COLUMN_CAP = 25
+
+
+def sheet_candidates(
+    store_root: Path, doi: str, manifest: dict[str, Any] | None = None
+) -> list[dict[str, Any]]:
+    """One draft pointer per sheet, with everything mechanical already filled in.
+
+    Relevance is a per-sheet property: the same workbook holds the DEG table a
+    report needs and the antibody list it never will, so a verdict on the file
+    cannot express it. This opens every indexable file once and returns a
+    candidate per sheet carrying its locator, header row, dimensions, columns, a
+    suggested ``content_type`` and its own relevance verdict.
+
+    What is deliberately absent is ``description`` — what a table is *for* is the
+    judgement the indexing skill makes, and inventing it here would be guessing.
+    A caller fills that in and writes the result as the manifest's ``tables``.
+
+    Returns:
+        Candidates in file then sheet order. Sheets from files triage ruled
+        irrelevant are included, marked as such, so nothing is silently absent.
+    """
+    manifest = manifest or load_manifest(store_root, doi)
+    if manifest is None:
+        raise SupplementStoreError(f"no manifest for {doi} in {store_root}")
+
+    out: list[dict[str, Any]] = []
+    for entry in manifest.get("files", []):
+        for item in entry.get("members") or [entry]:
+            path = item.get("path")
+            kind = item.get("media_type") or ""
+            if not path or kind not in INSPECTABLE:
+                continue
+            try:
+                outline = outline_file(store_root / path, sample_rows=6, max_cols=200)
+            except SupplementStoreError as exc:
+                logger.warning("%s: %s", path, exc)
+                continue
+            for table in outline.get("tables") or []:
+                verdict, content_type, note = classify_table(table)
+                header_row = table.get("header_row_guess", 0)
+                candidate: dict[str, Any] = {
+                    "file_id": entry["file_id"],
+                    "locator": table.get("locator"),
+                    "content_type": content_type or "other",
+                    "relevance": verdict,
+                    "relevance_note": note,
+                    "columns": _unique_columns(table, header_row),
+                    "n_columns": table.get("n_cols", 0),
+                    "header_row": header_row,
+                    "n_rows": max((table.get("n_rows") or 0) - header_row - 1, 0),
+                }
+                if item is not entry:
+                    candidate["member_path"] = item["member_path"]
+                out.append(candidate)
+    logger.info("%s: %d sheet candidate(s)", doi, len(out))
+    return out
+
+
+def _unique_columns(table: dict[str, Any], header_row: int) -> list[dict[str, str]]:
+    """Column names from the header row, de-duplicated, order preserved.
+
+    Multi-block sheets repeat a group of columns once per subject, so the same
+    names recur; recording the distinct set is what a reader needs.
+    """
+    rows = table.get("rows") or []
+    if header_row >= len(rows):
+        return []
+    seen: list[str] = []
+    for cell in rows[header_row]:
+        name = str(cell).strip()
+        if name and name not in seen:
+            seen.append(name)
+    return [{"name": name} for name in seen[:CANDIDATE_COLUMN_CAP]]
 
 
 def indexable(manifest: dict[str, Any]) -> list[dict[str, Any]]:

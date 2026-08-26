@@ -68,17 +68,17 @@ def _table(columns: list[str], data: list[list[str]] | None = None, locator="She
         (
             ["Gene_set", "Term", "Overlap", "P-value", "Adjusted P-value", "Odds Ratio"],
             "relevant",
-            "other",
+            "enrichment",
             "Gopee Table 24, GSEA for iron-recycling macrophages",
         ),
         # interactions
         (
             ["gene_pair", "celltype_pair", "mean", "p", "padj"],
             "relevant",
-            "other",
+            "interaction",
             "Gopee Table 28, CellPhoneDB",
         ),
-        (["ligand", "target", "weight"], "relevant", "other", "Gopee Table 36, NicheNet"),
+        (["ligand", "target", "weight"], "relevant", "interaction", "Gopee Table 36, NicheNet"),
         # per-cell label transfer
         (
             ["", "LR_assignment", "Adipocyte", "B cell", "DC"],
@@ -100,13 +100,13 @@ def _table(columns: list[str], data: list[list[str]] | None = None, locator="She
         (
             ["RRID citation", "Antibody", "Vendor", "Cat no", "Clone"],
             "irrelevant",
-            "other",
+            "reagents",
             "Gopee Table 38, antibodies",
         ),
         (
             ["positive regulation of angiogenesis (GO:0045766)"],
             "irrelevant",
-            "other",
+            "gene_set",
             "Gopee Table 27, gene-set definitions",
         ),
     ],
@@ -440,3 +440,156 @@ def test_uninspected_formats_say_so_explicitly(tmp_path: Path, kind: str) -> Non
     entry = manifest["files"][0]
     assert entry["relevance"] == "unknown", "never irrelevant — we simply did not look"
     assert "not inspected" in entry["relevance_note"]
+
+
+# ------------------------------------------------------------------
+# Sheet-level candidates
+# ------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    ("columns", "content_type", "source"),
+    [
+        (
+            ["gene", "cluster", "geneFrequency", "secondBestClusterName", "tfidf", "qval"],
+            "marker_list",
+            "s41586-022-04918-4 TF-IDF markers. 'name' as a substring of "
+            "secondBestClusterName once made this a cluster-to-name mapping — the "
+            "one field the corpus is short of, where a false positive is worst",
+        ),
+        (["cluster", "annotation"], "cluster_annotation", "a genuine mapping"),
+        (["cluster", "name"], "cluster_annotation", "exact 'name' still counts"),
+        (
+            ["cluster", "Regulon", "NES", "p.value", "FDR"],
+            "enrichment",
+            "Dorothea regulon activity",
+        ),
+        (
+            ["SOX9_LGR5--Preciliated", "Ciliated--Ciliated"],
+            "interaction",
+            "CellPhoneDB matrix: columns are cell-type pairs",
+        ),
+        (
+            ["partner_a", "partner_b", "protein_name_a", "annotation_strategy"],
+            "interaction",
+            "CellPhoneDB's curated-interaction schema",
+        ),
+        (
+            ["Product", "Description", "Company", "Product Number", "Final Concentration"],
+            "reagents",
+            "culture-medium components: says Company, not Vendor",
+        ),
+        (["TF", "target", "effect", "Source"], "gene_set", "a curated regulatory network"),
+    ],
+)
+def test_extended_content_types(columns: list[str], content_type: str, source: str) -> None:
+    assert triage.classify_table(_table(columns))[1] == content_type, source
+
+
+def test_exact_matching_does_not_fire_on_a_substring() -> None:
+    """The mechanism behind the marker/mapping fix."""
+    sig = triage.Signature("x", "other", True, required=("cluster",), exact_any_of=("name",))
+
+    assert sig.matches({"cluster", "name"}) is True
+    assert sig.matches({"cluster", "secondbestclustername"}) is False
+
+
+def test_sheet_candidates_judges_each_sheet_separately(tmp_path: Path) -> None:
+    """The point of sheet-level pointers: one workbook, two different answers."""
+    openpyxl = pytest.importorskip("openpyxl")
+    from atlas_chat.services.supplement_store import MANIFEST_VERSION, write_manifest
+
+    files = tmp_path / "papers" / "10.1038_test" / "files"
+    files.mkdir(parents=True)
+    book = files / "mixed.xlsx"
+    wb = openpyxl.Workbook()
+    degs = wb.active
+    degs.title = "DEGs"
+    degs.append(["Supplementary Table 4 | DEGs by cluster"])  # a title row
+    degs.append(["names", "logfoldchanges", "pvals_adj"])
+    degs.append(["DAB2", 4.18, 0.0])
+    ab = wb.create_sheet("Antibodies")
+    ab.append(["Antibody", "Vendor", "Cat no"])
+    ab.append(["anti-CD45", "Abcam", "ab123"])
+    wb.save(book)
+
+    write_manifest(
+        tmp_path,
+        "10.1038/test",
+        {
+            "manifest_version": MANIFEST_VERSION,
+            "paper": {"doi": "10.1038/test"},
+            "files": [
+                {
+                    "file_id": "mixed.xlsx",
+                    "media_type": "xlsx",
+                    "status": "present",
+                    "path": "papers/10.1038_test/files/mixed.xlsx",
+                }
+            ],
+        },
+    )
+
+    candidates = triage.sheet_candidates(tmp_path, "10.1038/test")
+
+    by_sheet = {c["locator"]: c for c in candidates}
+    assert by_sheet["DEGs"]["relevance"] == "relevant"
+    assert by_sheet["DEGs"]["content_type"] == "deg_results"
+    # The title row is skipped, so the recorded columns are the real ones.
+    assert by_sheet["DEGs"]["header_row"] == 1
+    assert [c["name"] for c in by_sheet["DEGs"]["columns"]] == [
+        "names",
+        "logfoldchanges",
+        "pvals_adj",
+    ]
+    assert by_sheet["DEGs"]["n_rows"] == 1
+
+    assert by_sheet["Antibodies"]["relevance"] == "irrelevant"
+    assert by_sheet["Antibodies"]["content_type"] == "reagents"
+    # An irrelevant sheet is still returned, so it is accounted for.
+    assert len(candidates) == 2
+
+
+def test_sheet_candidates_omits_description(tmp_path: Path, stored: Path) -> None:
+    """What a table is FOR is the skill's judgement, not the service's."""
+    candidates = triage.sheet_candidates(stored, "10.1038/test")
+
+    assert candidates
+    assert all("description" not in c for c in candidates)
+    assert all(c["relevance"] in {"relevant", "irrelevant", "unknown"} for c in candidates)
+
+
+def test_sheet_candidates_dedupes_repeated_block_columns(tmp_path: Path) -> None:
+    """Multi-block sheets repeat a column group per subject."""
+    openpyxl = pytest.importorskip("openpyxl")
+    from atlas_chat.services.supplement_store import MANIFEST_VERSION, write_manifest
+
+    files = tmp_path / "papers" / "10.1038_test" / "files"
+    files.mkdir(parents=True)
+    book = files / "blocks.xlsx"
+    wb = openpyxl.Workbook()
+    sheet = wb.active
+    sheet.append(["names", "logfoldchanges", "", "names", "logfoldchanges"])
+    sheet.append(["DAB2", 4.1, None, "STAB1", 1.6])
+    wb.save(book)
+    write_manifest(
+        tmp_path,
+        "10.1038/test",
+        {
+            "manifest_version": MANIFEST_VERSION,
+            "paper": {"doi": "10.1038/test"},
+            "files": [
+                {
+                    "file_id": "blocks.xlsx",
+                    "media_type": "xlsx",
+                    "status": "present",
+                    "path": "papers/10.1038_test/files/blocks.xlsx",
+                }
+            ],
+        },
+    )
+
+    candidate = triage.sheet_candidates(tmp_path, "10.1038/test")[0]
+
+    assert [c["name"] for c in candidate["columns"]] == ["names", "logfoldchanges"]
+    assert candidate["n_columns"] == 5, "the true width is still reported"
