@@ -934,15 +934,38 @@ def test_outline_counts_rows_when_the_workbook_omits_its_dimensions() -> None:
     assert store._xlsx_dimensions(DimensionlessSheet()) == (3, 2)
 
 
-def test_xlsx_dimensions_prefers_the_cheap_answer() -> None:
+def test_a_large_declared_extent_is_trusted_without_streaming() -> None:
+    """Scanning a 396,880-row sheet costs 18s; its declaration has held up."""
+
     class Sheet:
-        max_row = 500
+        max_row = store.VERIFY_ROWS_AT_OR_BELOW + 1
         max_column = 12
 
         def iter_rows(self, **kwargs):  # pragma: no cover - must not be called
-            raise AssertionError("should not stream when dimensions are known")
+            raise AssertionError("should not stream above the verify threshold")
 
-    assert store._xlsx_dimensions(Sheet()) == (500, 12)
+    assert store._xlsx_dimensions(Sheet()) == (store.VERIFY_ROWS_AT_OR_BELOW + 1, 12)
+
+
+def test_a_small_declared_extent_is_verified() -> None:
+    """Publisher sheets declare a round extent when formatting ran past the data.
+
+    Real case: sheets in the Garcia-Alonso 2021 supplement declare 1000 rows for
+    9 rows of content, and n_rows is what tells a reader to slice rather than
+    read whole.
+    """
+
+    class InflatedSheet:
+        max_row = 1000  # declared
+        max_column = 10
+
+        def iter_rows(self, values_only=False, max_row=None, max_col=None):
+            yield ("Organoid Cluster:", "SOX9+LGR5-")
+            yield ("Lumenal 1", 0.4)
+            for _ in range(998):
+                yield (None, None)
+
+    assert store._xlsx_dimensions(InflatedSheet()) == (2, 2)
 
 
 def test_xlsx_dimensions_ignores_trailing_empty_rows() -> None:

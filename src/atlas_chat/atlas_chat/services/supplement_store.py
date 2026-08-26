@@ -632,17 +632,33 @@ def _header_row_guess(rows: list[list[str]], scan: int = 6) -> int:
     return next(index for index, count in enumerate(counts) if count >= threshold)
 
 
+#: A declared row count at or below this is verified by streaming; above it the
+#: declaration is trusted. Publisher sheets routinely declare a round extent
+#: (A1:Z1000) because formatting was applied past the data, so a 9-row table
+#: claims 1000 rows — and `n_rows` is what tells a reader whether to slice or
+#: read whole. Verifying costs about 0.1s at this size; the 396,880-row table in
+#: the prenatal skin bundle would cost 18s, and its declaration is accurate
+#: anyway.
+VERIFY_ROWS_AT_OR_BELOW = 5_000
+
+
 def _xlsx_dimensions(sheet: Any) -> tuple[int, int]:
     """True (rows, cols) of a worksheet.
 
-    openpyxl's read-only mode reports ``max_row``/``max_column`` as None when the
-    workbook carries no dimension record — real for publisher-generated files.
-    Reporting None would put a null where every consumer expects a count, so the
-    rows are streamed and counted instead. Only pays that cost when the cheap
-    answer is missing.
+    Two ways a declared dimension misleads, both real in publisher files:
+    openpyxl's read-only mode reports None when the workbook carries no
+    dimension record, and a workbook can declare a round extent far past its
+    data because formatting was applied there. Small sheets are therefore
+    counted rather than believed; large ones are taken at their word, since
+    scanning them is slow and their declarations have held up.
     """
-    if sheet.max_row is not None and sheet.max_column is not None:
-        return sheet.max_row, sheet.max_column
+    declared = sheet.max_row
+    if (
+        declared is not None
+        and sheet.max_column is not None
+        and declared > VERIFY_ROWS_AT_OR_BELOW
+    ):
+        return declared, sheet.max_column
     # Count to the last row that has content, not to the last row the reader
     # yields. A sheet with formatting applied down to row 1000 yields 1000 rows
     # for 35 rows of data, and reporting 1000 tells a reader to slice a table
