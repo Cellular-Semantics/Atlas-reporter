@@ -910,3 +910,94 @@ def test_header_detection_survives_a_small_sample(tmp_path: Path) -> None:
     assert table["header_row_guess"] == 2
     # Still only returns what was asked for.
     assert len(table["rows"]) == 2
+
+
+def test_outline_counts_rows_when_the_workbook_omits_its_dimensions() -> None:
+    """openpyxl read-only reports None for max_row on some publisher files.
+
+    Passing that through puts a null where every consumer expects a count — and
+    `n_rows` is what tells a reader a table needs slicing rather than opening.
+    """
+
+    class DimensionlessSheet:
+        title = "Sheet1"
+        max_row = None
+        max_column = None
+
+        def iter_rows(self, values_only=False, max_row=None, max_col=None):
+            rows = [("gene", "lfc", None), ("A", 1.0, None), ("B", 2.0, None)]
+            for index, row in enumerate(rows):
+                if max_row is not None and index >= max_row:
+                    return
+                yield row[:max_col] if max_col else row
+
+    assert store._xlsx_dimensions(DimensionlessSheet()) == (3, 2)
+
+
+def test_a_large_declared_extent_is_trusted_without_streaming() -> None:
+    """Scanning a 396,880-row sheet costs 18s; its declaration has held up."""
+
+    class Sheet:
+        max_row = store.VERIFY_ROWS_AT_OR_BELOW + 1
+        max_column = 12
+
+        def iter_rows(self, **kwargs):  # pragma: no cover - must not be called
+            raise AssertionError("should not stream above the verify threshold")
+
+    assert store._xlsx_dimensions(Sheet()) == (store.VERIFY_ROWS_AT_OR_BELOW + 1, 12)
+
+
+def test_a_small_declared_extent_is_verified() -> None:
+    """Publisher sheets declare a round extent when formatting ran past the data.
+
+    Real case: sheets in the Garcia-Alonso 2021 supplement declare 1000 rows for
+    9 rows of content, and n_rows is what tells a reader to slice rather than
+    read whole.
+    """
+
+    class InflatedSheet:
+        max_row = 1000  # declared
+        max_column = 10
+
+        def iter_rows(self, values_only=False, max_row=None, max_col=None):
+            yield ("Organoid Cluster:", "SOX9+LGR5-")
+            yield ("Lumenal 1", 0.4)
+            for _ in range(998):
+                yield (None, None)
+
+    assert store._xlsx_dimensions(InflatedSheet()) == (2, 2)
+
+
+def test_xlsx_dimensions_ignores_trailing_empty_rows() -> None:
+    """Formatting applied past the data must not inflate the row count.
+
+    Real case: a subject table with 35 rows of data in a sheet formatted to row
+    1000 reported 1000, which tells a reader to slice a table small enough to
+    read whole.
+    """
+
+    class FormattedFarSheet:
+        max_row = None
+        max_column = None
+
+        def iter_rows(self, values_only=False, max_row=None, max_col=None):
+            yield ("Subject", "Age", None)
+            yield ("S1", 59, None)
+            yield ("S2", 65, None)
+            for _ in range(200):  # formatted, but empty
+                yield (None, None, None)
+
+    assert store._xlsx_dimensions(FormattedFarSheet()) == (3, 2)
+
+
+def test_xlsx_dimensions_ignores_whitespace_only_cells() -> None:
+    class Sheet:
+        max_row = None
+        max_column = None
+
+        def iter_rows(self, values_only=False, max_row=None, max_col=None):
+            yield ("gene", "lfc")
+            yield ("A", 1.0)
+            yield ("   ", "")
+
+    assert store._xlsx_dimensions(Sheet()) == (2, 2)

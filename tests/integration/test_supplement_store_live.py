@@ -80,11 +80,30 @@ def test_publisher_direct_serves_individual_files() -> None:
 # The real store
 # ------------------------------------------------------------------
 
+
+def _material_on_disk() -> bool:
+    """Whether the supplement *bytes* are here, not just the manifest.
+
+    The manifest is committed; the files it describes are git-ignored, so a
+    fresh worktree has the one without the other. Testing for the manifest alone
+    makes these tests fail instead of skip wherever the material has not been
+    fetched.
+    """
+    manifest = store.load_manifest(STORE, ATLAS_DOI)
+    if manifest is None:
+        return False
+    return any(
+        entry.get("path") and (STORE / entry["path"]).exists()
+        for entry in manifest.get("files", [])
+    )
+
+
 needs_store = pytest.mark.skipif(
-    not store.manifest_path(STORE, ATLAS_DOI).exists(),
+    not _material_on_disk(),
     reason=(
-        "prenatal skin supplements not on disk (git-ignored); see "
-        "projects/test_projects/fetal_skin_atlas/supplements/incoming/README.md"
+        "prenatal skin supplement files not on disk (git-ignored; the manifest "
+        "is committed without them). Fetch them with `cli_supplements fetch` or "
+        "see projects/test_projects/fetal_skin_atlas/supplements/incoming/README.md"
     ),
 )
 

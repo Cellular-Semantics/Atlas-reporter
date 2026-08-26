@@ -632,6 +632,44 @@ def _header_row_guess(rows: list[list[str]], scan: int = 6) -> int:
     return next(index for index, count in enumerate(counts) if count >= threshold)
 
 
+#: A declared row count at or below this is verified by streaming; above it the
+#: declaration is trusted. Publisher sheets routinely declare a round extent
+#: (A1:Z1000) because formatting was applied past the data, so a 9-row table
+#: claims 1000 rows — and `n_rows` is what tells a reader whether to slice or
+#: read whole. Verifying costs about 0.1s at this size; the 396,880-row table in
+#: the prenatal skin bundle would cost 18s, and its declaration is accurate
+#: anyway.
+VERIFY_ROWS_AT_OR_BELOW = 5_000
+
+
+def _xlsx_dimensions(sheet: Any) -> tuple[int, int]:
+    """True (rows, cols) of a worksheet.
+
+    Two ways a declared dimension misleads, both real in publisher files:
+    openpyxl's read-only mode reports None when the workbook carries no
+    dimension record, and a workbook can declare a round extent far past its
+    data because formatting was applied there. Small sheets are therefore
+    counted rather than believed; large ones are taken at their word, since
+    scanning them is slow and their declarations have held up.
+    """
+    declared = sheet.max_row
+    if declared is not None and sheet.max_column is not None and declared > VERIFY_ROWS_AT_OR_BELOW:
+        return declared, sheet.max_column
+    # Count to the last row that has content, not to the last row the reader
+    # yields. A sheet with formatting applied down to row 1000 yields 1000 rows
+    # for 35 rows of data, and reporting 1000 tells a reader to slice a table
+    # that is small enough to read whole.
+    last = cols = 0
+    for index, row in enumerate(sheet.iter_rows(values_only=True), start=1):
+        width = len(row)
+        while width and (row[width - 1] is None or str(row[width - 1]).strip() == ""):
+            width -= 1
+        if width:
+            last = index
+            cols = max(cols, width)
+    return last, cols
+
+
 def _outline_xlsx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str, Any]]:
     try:
         from openpyxl import load_workbook  # type: ignore[import-untyped]
@@ -640,7 +678,16 @@ def _outline_xlsx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str,
             "reading .xlsx needs openpyxl — install the [supplements] extra"
         ) from exc
 
-    workbook = load_workbook(path, read_only=True, data_only=True)
+    try:
+        workbook = load_workbook(path, read_only=True, data_only=True)
+    except Exception as exc:
+        # A .xlsx extension is a claim, not a fact: publishers ship legacy .xls
+        # and the occasional truncated download under that name. Raising a typed
+        # error lets a caller record the file as unreadable and carry on, rather
+        # than a corpus-wide crash on one bad file.
+        raise SupplementStoreError(
+            f"{path.name} is not a readable .xlsx workbook: {type(exc).__name__}: {exc}"
+        ) from exc
     tables: list[dict[str, Any]] = []
     try:
         scan_rows = max(sample_rows, HEADER_SCAN_ROWS)
@@ -649,13 +696,14 @@ def _outline_xlsx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str,
             for row in sheet.iter_rows(max_row=scan_rows, max_col=max_cols, values_only=True):
                 scanned.append(_trim([_clip(cell) for cell in row]))
             rows = scanned[:sample_rows]
+            n_rows, n_cols = _xlsx_dimensions(sheet)
             tables.append(
                 {
                     "locator": sheet.title,
-                    "n_rows": sheet.max_row,
-                    "n_cols": sheet.max_column,
-                    "truncated_cols": bool(sheet.max_column and sheet.max_column > max_cols),
-                    "truncated_rows": bool(sheet.max_row and sheet.max_row > len(rows)),
+                    "n_rows": n_rows,
+                    "n_cols": n_cols,
+                    "truncated_cols": n_cols > max_cols,
+                    "truncated_rows": n_rows > len(rows),
                     "header_row_guess": _header_row_guess(scanned),
                     "rows": rows,
                 }
@@ -1164,6 +1212,85 @@ def _cmd_check(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_fetch(args: argparse.Namespace) -> int:
+    # Imported here so the store stays importable without httpx-backed retrieval.
+    from atlas_chat.services.supplement_fetch import fetch_corpus, fetch_supplements
+
+    if args.bundle_cap is None:
+        from atlas_chat.services.supplement_fetch import DEFAULT_BUNDLE_CAP_BYTES
+
+        args.bundle_cap = DEFAULT_BUNDLE_CAP_BYTES
+
+    if bool(args.doi) == bool(args.cas):
+        print("give exactly one of --doi or --cas", file=sys.stderr)
+        return 2
+
+    if args.cas:
+        cas = json.loads(Path(args.cas).read_text(encoding="utf-8"))
+        _print(
+            fetch_corpus(
+                Path(args.store),
+                cas,
+                bundle_cap=args.bundle_cap,
+                use_bundle=not args.no_bundle,
+                retry=args.retry,
+            )
+        )
+        return 0
+
+    manifest = fetch_supplements(
+        Path(args.store),
+        args.doi,
+        bundle_cap=args.bundle_cap,
+        use_bundle=not args.no_bundle,
+        retry=args.retry,
+    )
+    _print(
+        {
+            "doi": args.doi,
+            "files": [
+                {
+                    "file_id": f["file_id"],
+                    "status": f["status"],
+                    "route": f.get("retrieval", {}).get("route"),
+                    "size_bytes": f.get("size_bytes"),
+                }
+                for f in manifest["files"]
+            ],
+            "gaps": manifest.get("gaps", []),
+        }
+    )
+    return 0
+
+
+def _cmd_triage(args: argparse.Namespace) -> int:
+    from atlas_chat.services.supplement_triage import (
+        indexable,
+        sheet_candidates,
+        triage_paper,
+    )
+
+    manifest = triage_paper(Path(args.store), args.doi)
+    if args.sheets:
+        # Draft pointers, one per sheet, everything but the description filled in.
+        _print(sheet_candidates(Path(args.store), args.doi, manifest))
+        return 0
+    verdicts: dict[str, int] = {}
+    for entry in manifest.get("files", []):
+        for item in entry.get("members") or [entry]:
+            verdicts[item.get("relevance", "unset")] = (
+                verdicts.get(item.get("relevance", "unset"), 0) + 1
+            )
+    _print(
+        {
+            "doi": args.doi,
+            "verdicts": verdicts,
+            "to_index": indexable(manifest),
+        }
+    )
+    return 0
+
+
 def _cmd_papers(args: argparse.Namespace) -> int:
     cas = json.loads(Path(args.cas).read_text(encoding="utf-8"))
     _print(corpus_papers(cas))
@@ -1239,6 +1366,44 @@ def build_parser() -> argparse.ArgumentParser:
     check = sub.add_parser("check", help="validate a manifest against its schema")
     add_store(check)
     check.set_defaults(func=_cmd_check)
+
+    fetch = sub.add_parser(
+        "fetch",
+        help="retrieve supplements: article XML -> Europe PMC bundle -> publisher -> manual",
+    )
+    fetch.add_argument("--store", required=True, help="store root directory")
+    fetch.add_argument("--doi", help="one paper")
+    fetch.add_argument("--cas", help="a CAS+ document: fetch for every corpus paper")
+    fetch.add_argument(
+        "--bundle-cap",
+        type=int,
+        default=None,
+        help="byte ceiling on the Europe PMC bundle (default 60 MB)",
+    )
+    fetch.add_argument(
+        "--no-bundle",
+        action="store_true",
+        help="skip the bundle route (for articles carrying supplementary video)",
+    )
+    fetch.add_argument(
+        "--retry",
+        action="store_true",
+        help="ignore the negative cache and retry files that previously failed",
+    )
+    fetch.set_defaults(func=_cmd_fetch)
+
+    triage = sub.add_parser(
+        "triage",
+        help="judge which stored files could describe cell types, from their columns",
+    )
+    triage.add_argument("--store", required=True)
+    triage.add_argument("--doi", required=True)
+    triage.add_argument(
+        "--sheets",
+        action="store_true",
+        help="emit one draft pointer per sheet (locator, columns, kind, relevance)",
+    )
+    triage.set_defaults(func=_cmd_triage)
 
     papers = sub.add_parser("papers", help="corpus papers from a CAS+ document")
     papers.add_argument("--cas", required=True)
