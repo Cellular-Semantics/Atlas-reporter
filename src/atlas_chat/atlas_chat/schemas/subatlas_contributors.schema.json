@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "subatlas_contributors.schema.json",
+  "title": "Subatlas contributors for one cell set",
+  "description": "The derived, cutoff-applied view of one CAS+ annotation's integration provenance: which upstream papers contributed cells to this cell set, what each of them called those cells, and how cleanly. Computed deterministically from annotations[].transferred_annotations by services.subatlas_contributors — no LLM. It exists as a separate object because the raw transferred_annotations array cannot be read directly for this purpose: cell_ratio's denominator is the whole cell set, which conflates 'this paper barely contributed' with 'this paper contributed a lot but its labels are smeared across several calls'. Splitting the denominators (contribution vs within_source_share) makes both readable, and the long tail — median 16 dropped labels per cell set on the reference project — has to be aggregated rather than shown or silently discarded.",
+  "type": "object",
+  "required": ["cell_label", "labelset", "n_cells", "thresholds", "contributors", "tail"],
+  "additionalProperties": false,
+  "properties": {
+    "cell_label": {
+      "type": "string",
+      "description": "The atlas's own label for this cell set (CAS+ annotation cell_label)."
+    },
+    "labelset": {
+      "type": "string",
+      "description": "The labelset the cell set belongs to."
+    },
+    "cell_set_accession": {
+      "type": "string",
+      "description": "Present when the CAS+ annotation carries one."
+    },
+    "n_cells": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Cells in the atlas cell set. The denominator for every 'contribution' and 'share_of_set'."
+    },
+    "thresholds": { "$ref": "#/$defs/Thresholds" },
+    "contributors": {
+      "type": "array",
+      "description": "Contributing papers that cleared the cutoff, ordered by descending contribution. These are the papers worth retrieving text for and judging against; everything below the cutoff is summarised in 'tail'.",
+      "items": { "$ref": "#/$defs/Contributor" }
+    },
+    "tail": { "$ref": "#/$defs/Tail" },
+    "no_dominant_contributor": {
+      "type": "boolean",
+      "description": "True when no contributor cleared the cutoff. Not an error and not an absence of information: it is the positive finding that this cell set is a pooled or de-novo call with no single upstream parent (40 of 303 cell sets on the reference project). A report must say so rather than omitting the section."
+    },
+    "unpublished_cells": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Cells contributed by sources with no publication to compare against — newly generated data, atlas-internal partitions. Real provenance, but nothing to retrieve, so held apart from both 'contributors' and 'tail'."
+    }
+  },
+  "$defs": {
+    "Thresholds": {
+      "type": "object",
+      "description": "The cutoff actually applied, recorded so a report's coverage claim is reproducible and a re-run with different thresholds is diffable.",
+      "required": ["min_contribution", "min_source_cells", "primary_contribution", "min_within_source_share"],
+      "additionalProperties": false,
+      "properties": {
+        "min_contribution": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "A contributor must account for at least this fraction of the cell set. Default 0.05."
+        },
+        "min_source_cells": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "AND must have contributed at least this many cells, so a large share of a tiny cell set does not qualify on a handful of cells. Default 50."
+        },
+        "primary_contribution": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "At or above this contribution a contributor is tier 'primary' — worth retrieving full text for. Below it (but above min_contribution) it is 'secondary': named and counted, no text retrieval. This is the cost control; it must stay a recorded rule, never a silent cap. Default 0.2."
+        },
+        "min_within_source_share": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Within a qualifying contributor, a transferred label is listed individually if it accounts for at least this fraction of that contributor's cells; the rest roll into the contributor's own tail counts. Deliberately low (default 0.02) — a minority upstream label is often the informative one, because it can be the very label the atlas adopted."
+        }
+      }
+    },
+    "Contributor": {
+      "type": "object",
+      "description": "One upstream paper's contribution to this cell set.",
+      "required": ["subatlas_paper", "tier", "from_source_cells", "contribution", "purity", "dominant_label", "labels"],
+      "additionalProperties": false,
+      "properties": {
+        "subatlas_paper": {
+          "type": "string",
+          "description": "Registry key — matches a source.subatlas_papers[].label."
+        },
+        "doi": {
+          "type": "string",
+          "description": "The contributing paper's DOI, when known. Absent for a source with no publication."
+        },
+        "source_labelset": {
+          "type": "string",
+          "description": "The upstream labelset (obs column) these labels came from."
+        },
+        "tier": {
+          "type": "string",
+          "enum": ["primary", "secondary"],
+          "description": "'primary' (contribution >= primary_contribution) warrants retrieving the paper's own definition of its label; 'secondary' is named and counted only."
+        },
+        "from_source_cells": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Cells in this cell set that this paper annotated. The denominator for within_source_share — NOT n_cells."
+        },
+        "contribution": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "from_source_cells / n_cells. How much of the atlas cell set this paper accounts for."
+        },
+        "purity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "The dominant label's within_source_share. High purity means this paper called its contribution one thing; low purity means it split those same cells across several labels, so 'what did this paper call them' has no single answer. A contributor can be pure but uninformatively coarse ('endothelial cell', 100%) or impure but specific — the two need opposite treatment in a report, and contribution alone distinguishes neither."
+        },
+        "dominant_label": {
+          "type": "string",
+          "description": "The transferred label with the most cells. Not necessarily the label the atlas adopted — on the reference project the atlas's own synonym for one cell set is its top contributor's 11% minority call."
+        },
+        "labels": {
+          "type": "array",
+          "minItems": 1,
+          "description": "The individually-listed transferred labels, descending by cell count.",
+          "items": { "$ref": "#/$defs/TransferredLabel" }
+        },
+        "n_tail_labels": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Labels from this contributor below min_within_source_share, aggregated rather than listed."
+        },
+        "tail_cells": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Cells in those aggregated labels."
+        },
+        "status": {
+          "type": "string",
+          "description": "Ingest route from the registry (candidate / unresolved / asta / local / needs_pdf) — whether this paper's text is reachable at all. A judgement of 'no match' from an unreachable paper is a retrieval limit, not a disagreement."
+        },
+        "asta_band": {
+          "type": "string",
+          "description": "Measured ASTA indexing band from the registry, when probed."
+        }
+      }
+    },
+    "TransferredLabel": {
+      "type": "object",
+      "description": "One upstream label applied to cells in this cell set.",
+      "required": ["transferred_cell_label", "cell_count", "within_source_share", "share_of_set"],
+      "additionalProperties": false,
+      "properties": {
+        "transferred_cell_label": { "type": "string" },
+        "cell_count": { "type": "integer", "minimum": 0 },
+        "within_source_share": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "cell_count / from_source_cells — of the cells THIS paper contributed, the fraction it gave this label."
+        },
+        "share_of_set": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "cell_count / n_cells — of the whole atlas cell set."
+        },
+        "reverse_share": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "cell_count / source_label_cell_count — of all the cells the upstream paper gave this label anywhere in the atlas, the fraction that landed in this cell set. Present only when the CAS+ entry carried source_label_cell_count. A low reverse share with a high within_source_share means the atlas split that upstream cell type across several of its own; a high reverse share means it inherited it whole."
+        },
+        "source_label_cell_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "The upstream label's atlas-wide total, carried through so the reverse share is auditable."
+        }
+      }
+    },
+    "Tail": {
+      "type": "object",
+      "description": "Everything below the cutoff, aggregated. Reported, never dropped: a cell set whose provenance is thinly spread over a dozen studies is a different object from one with a single clean parent, and only the aggregate shows that.",
+      "required": ["n_papers", "cell_count", "contribution"],
+      "additionalProperties": false,
+      "properties": {
+        "n_papers": { "type": "integer", "minimum": 0 },
+        "cell_count": { "type": "integer", "minimum": 0 },
+        "contribution": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Their combined share of the cell set."
+        },
+        "papers": {
+          "type": "array",
+          "description": "Registry keys of the excluded contributors, so the exclusion is auditable and a threshold change is diffable.",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

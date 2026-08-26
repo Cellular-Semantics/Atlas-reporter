@@ -328,8 +328,7 @@ def discover(project_dir: Path) -> dict[str, Any]:
     cfg_path.write_text(json.dumps(cfg, indent=2))
 
     logger.info(
-        "discover: %d labels, %d DOIs from the config, %d with S2 proposals "
-        "(drafts written to %s)",
+        "discover: %d labels, %d DOIs from the config, %d with S2 proposals (drafts written to %s)",
         len(labels),
         n_from_config,
         n_with_proposal,

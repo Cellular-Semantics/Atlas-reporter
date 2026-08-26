@@ -94,7 +94,5 @@ def test_custom_drop_values(skill):
     ct_codes = np.zeros(2, dtype=int)
     cats = ["keep", "Doublet"]
     codes = np.array([0, 1])
-    out = skill.joint_tabulate(
-        ct_codes, ["set"], {"u": (cats, codes)}, drop_values={"doublet"}
-    )
+    out = skill.joint_tabulate(ct_codes, ["set"], {"u": (cats, codes)}, drop_values={"doublet"})
     assert [i["value"] for i in out["set"]["transfers"]["u"]] == ["keep"]

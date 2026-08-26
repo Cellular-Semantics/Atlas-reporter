@@ -16,9 +16,7 @@ pytestmark = pytest.mark.unit
 # pure but coarse; "Ulrich" splits them three ways, and the label the atlas
 # adopted (aPCV) is Ulrich's *minority* call.
 CELL_TYPES = ["aPCV"] * 10 + ["Capillary EC"] * 4
-ULRICH = (
-    ["Capillary"] * 5 + ["tPCV"] * 3 + ["aPCV"] * 2 + ["Capillary"] * 2 + [None, "nan"]
-)
+ULRICH = ["Capillary"] * 5 + ["tPCV"] * 3 + ["aPCV"] * 2 + ["Capillary"] * 2 + [None, "nan"]
 WEIGERT = ["endothelial cell"] * 10 + ["endothelial cell", "", "NA", "unknown"]
 
 SOURCES = [
@@ -44,9 +42,7 @@ def test_crosstab_rejects_ragged_columns():
 
 
 def test_crosstab_custom_drop_values():
-    counts, sizes = at.crosstab(
-        ["A", "A"], {"s": ["keep", "sentinel"]}, drop_values={"sentinel"}
-    )
+    counts, sizes = at.crosstab(["A", "A"], {"s": ["keep", "sentinel"]}, drop_values={"sentinel"})
     assert counts["A"]["s"] == {"keep": 1}
     assert sizes == {"A": 2}
 
@@ -74,9 +70,7 @@ def test_build_skips_columns_without_a_declared_source():
 
 def test_build_flags_sources_with_no_publication():
     counts, sizes = at.crosstab(["A"], {"sanger": ["Endo_Cap"]})
-    built = at.build_transferred_annotations(
-        counts, sizes, [at.TransferSource(column="sanger")]
-    )
+    built = at.build_transferred_annotations(counts, sizes, [at.TransferSource(column="sanger")])
     item = built["A"][0]
     assert "source_taxonomy" not in item
     assert "no publication" in item["comment"]
@@ -181,8 +175,7 @@ def test_backfill_totals_on_a_flat_document_treats_every_set_as_a_leaf():
     }
     at.backfill_source_label_totals(doc)
     assert all(
-        a["transferred_annotations"][0]["source_label_cell_count"] == 10
-        for a in doc["annotations"]
+        a["transferred_annotations"][0]["source_label_cell_count"] == 10 for a in doc["annotations"]
     )
 
 
@@ -214,9 +207,7 @@ def test_apply_to_cas_matches_on_labelset_and_label():
             {"labelset": "L3", "cell_label": "aPCV"},
         ]
     }
-    n, unmatched = at.apply_to_cas(
-        doc, {"aPCV": [{"transferred_cell_label": "X"}]}, labelset="L4"
-    )
+    n, unmatched = at.apply_to_cas(doc, {"aPCV": [{"transferred_cell_label": "X"}]}, labelset="L4")
     assert (n, unmatched) == (1, [])
     assert "transferred_annotations" in doc["annotations"][0]
     assert "transferred_annotations" not in doc["annotations"][1]
@@ -243,9 +234,9 @@ def test_apply_to_cas_replaces_by_default_and_appends_on_request():
         ]
     }
     at.apply_to_cas(doc, {"aPCV": [{"transferred_cell_label": "new"}]}, labelset="L4")
-    assert [t["transferred_cell_label"] for t in doc["annotations"][0]["transferred_annotations"]] == [
-        "new"
-    ]
+    assert [
+        t["transferred_cell_label"] for t in doc["annotations"][0]["transferred_annotations"]
+    ] == ["new"]
     at.apply_to_cas(
         doc, {"aPCV": [{"transferred_cell_label": "second"}]}, labelset="L4", replace=False
     )
@@ -305,11 +296,16 @@ def test_cli_transfer_end_to_end(tmp_path):
     rc = at.main(
         [
             "transfer",
-            "--cas", str(cas),
-            "--obs", str(obs),
-            "--cell-type-col", "cell_type",
-            "--labelset", "L4",
-            "--source", "celltype_Ulrich2024=10.1073/pnas.2404775121;Ulrich;2024",
+            "--cas",
+            str(cas),
+            "--obs",
+            str(obs),
+            "--cell-type-col",
+            "cell_type",
+            "--labelset",
+            "L4",
+            "--source",
+            "celltype_Ulrich2024=10.1073/pnas.2404775121;Ulrich;2024",
         ]
     )
     assert rc == 0
@@ -328,9 +324,18 @@ def test_cli_transfer_dry_run_writes_nothing(tmp_path):
     cas.write_text(original)
     at.main(
         [
-            "transfer", "--cas", str(cas), "--obs", str(obs),
-            "--cell-type-col", "cell_type", "--labelset", "L4",
-            "--source", "src=10.1/x", "--dry-run",
+            "transfer",
+            "--cas",
+            str(cas),
+            "--obs",
+            str(obs),
+            "--cell-type-col",
+            "cell_type",
+            "--labelset",
+            "L4",
+            "--source",
+            "src=10.1/x",
+            "--dry-run",
         ]
     )
     assert cas.read_text() == original
@@ -354,9 +359,17 @@ def test_cli_transfer_keeps_a_confirmed_doi_in_the_registry(tmp_path):
     )
     at.main(
         [
-            "transfer", "--cas", str(cas), "--obs", str(obs),
-            "--cell-type-col", "cell_type", "--labelset", "L4",
-            "--source", "src=10.1/proposed",
+            "transfer",
+            "--cas",
+            str(cas),
+            "--obs",
+            str(obs),
+            "--cell-type-col",
+            "cell_type",
+            "--labelset",
+            "L4",
+            "--source",
+            "src=10.1/proposed",
         ]
     )
     entry = json.loads(cas.read_text())["source"]["subatlas_papers"][0]
@@ -419,10 +432,14 @@ def test_cli_transfer_accepts_the_joint_file(tmp_path):
     rc = at.main(
         [
             "transfer",
-            "--cas", str(cas),
-            "--transfers", str(transfers),
-            "--labelset", "L4",
-            "--source", "celltype_Ulrich2024=10.1073/pnas.2404775121",
+            "--cas",
+            str(cas),
+            "--transfers",
+            str(transfers),
+            "--labelset",
+            "L4",
+            "--source",
+            "celltype_Ulrich2024=10.1073/pnas.2404775121",
         ]
     )
     assert rc == 0
@@ -447,7 +464,16 @@ def test_cli_transfer_rejects_both_inputs_at_once(tmp_path):
     with pytest.raises(SystemExit):
         at.main(
             [
-                "transfer", "--cas", "c.json", "--obs", "o.csv",
-                "--transfers", "t.json", "--labelset", "L4", "--source", "src",
+                "transfer",
+                "--cas",
+                "c.json",
+                "--obs",
+                "o.csv",
+                "--transfers",
+                "t.json",
+                "--labelset",
+                "L4",
+                "--source",
+                "src",
             ]
         )
