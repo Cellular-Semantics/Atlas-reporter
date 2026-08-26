@@ -1,0 +1,50 @@
+{
+  "B8__hybrid_b2k__haiku": {
+    "verdict": "correct",
+    "why": "States the Schwann cell interaction, synapse formation and axon guidance, and PNS establishment, matching GOLD and supported by the quote."
+  },
+  "B8__hybrid_b2k__sonnet": {
+    "verdict": "correct",
+    "why": "Matches GOLD fully including co-location, Schwann cell signalling pairs, axon guidance and PNS establishment, all covered by the quote."
+  },
+  "B8__whole__haiku": {
+    "verdict": "correct",
+    "why": "Covers Schwann cell interaction, synapse formation, axon guidance and PNS support with the ligand-receptor pairs present in the quote."
+  },
+  "B8__whole__sonnet": {
+    "verdict": "correct",
+    "why": "Complete match to GOLD including co-location in the early neurovascular microenvironment, with quote support for the interaction claim."
+  },
+  "B10__hybrid_b2k__haiku": {
+    "verdict": "correct",
+    "why": "Correctly identifies CXCL14 as a chemotaxis chemokine recruiting Treg cells as the quote states; omitting the adult comparison is a minor gap given the question asks what it does."
+  },
+  "B10__hybrid_b2k__sonnet": {
+    "verdict": "correct",
+    "why": "Gives both GOLD elements — Treg recruitment and increased expression in prenatal matrix cells relative to adult HFs — with a quote that supports both."
+  },
+  "B10__whole__haiku": {
+    "verdict": "correct",
+    "why": "Accurately reports the Treg-recruiting chemokine function from the quote; the adult-relative upregulation is not stated but the functional answer is right."
+  },
+  "B10__whole__sonnet": {
+    "verdict": "correct",
+    "why": "Captures both the upregulation relative to adult HF and the Treg-recruiting chemokine role, fully supported by the quote."
+  },
+  "B11__hybrid_b2k__haiku": {
+    "verdict": "correct",
+    "why": "FOXD1 and SOX2 differ from GOLD but are a defensible reading — the quote explicitly defines the Dc as FOXD1+SOX2+."
+  },
+  "B11__hybrid_b2k__sonnet": {
+    "verdict": "correct",
+    "why": "Names FOXD1/SOX2 rather than GOLD's FAM3C/EFNB1, but the quote directly states the Dc is FOXD1+SOX2+, making it a defensible answer."
+  },
+  "B11__whole__haiku": {
+    "verdict": "correct",
+    "why": "Different genes from GOLD but the quote explicitly gives the Dc as FOXD1+SOX2+, so the answer is paper-supported."
+  },
+  "B11__whole__sonnet": {
+    "verdict": "correct",
+    "why": "FOXD1/SOX2 with the pre-Dc precursor detail is a defensible, quote-supported reading of which genes mark the dermal condensate."
+  }
+}

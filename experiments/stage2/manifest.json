@@ -1,0 +1,2036 @@
+[
+ {
+  "id": "A1",
+  "group": "A",
+  "question": "When do prenatal hair follicles start forming?",
+  "answer": "Between 11 and 14 post-conception weeks.",
+  "where": "Gopee \u00b7 Main",
+  "span": "Prenatal HFs start forming between 11 and 14 post-conception weeks (PCW)",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [
+    "11",
+    "14"
+   ],
+   "n_required": 2
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/A1__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": true
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/A1__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/A1__hybrid_b2k.txt",
+    "n_tokens": 1947,
+    "n_chunks": 11,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/A1__hybrid_b8k.txt",
+    "n_tokens": 7818,
+    "n_chunks": 46,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/A1__asta_b2k.txt",
+    "n_tokens": 1749,
+    "n_chunks": 4,
+    "span_present": false
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/A1__asta_b8k.txt",
+    "n_tokens": 7671,
+    "n_chunks": 20,
+    "span_present": false
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "A2",
+  "group": "A",
+  "question": "At what age does prenatal human skin lose the ability to heal without scarring?",
+  "answer": "After 24 PCW.",
+  "where": "Gopee \u00b7 Scarless healing and potential macrophage contribution",
+  "span": "Prenatal human skin is able to heal without scarring but loses this capacity after 24 PCW",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [
+    "24"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/A2__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/A2__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/A2__hybrid_b2k.txt",
+    "n_tokens": 1882,
+    "n_chunks": 11,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/A2__hybrid_b8k.txt",
+    "n_tokens": 7871,
+    "n_chunks": 49,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/A2__asta_b2k.txt",
+    "n_tokens": 1994,
+    "n_chunks": 6,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/A2__asta_b8k.txt",
+    "n_tokens": 7836,
+    "n_chunks": 21,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "A3",
+  "group": "A",
+  "question": "How early do macrophages seed prenatal skin?",
+  "answer": "As early as 6 PCW.",
+  "where": "Gopee \u00b7 Main",
+  "span": "immune cells such as macrophages seed the skin as early as 6 PCW and express a range of pro-inflammatory genes",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [
+    "6"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/A3__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": true
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/A3__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/A3__hybrid_b2k.txt",
+    "n_tokens": 1973,
+    "n_chunks": 11,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/A3__hybrid_b8k.txt",
+    "n_tokens": 7790,
+    "n_chunks": 45,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/A3__asta_b2k.txt",
+    "n_tokens": 1796,
+    "n_chunks": 6,
+    "span_present": false
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/A3__asta_b8k.txt",
+    "n_tokens": 7831,
+    "n_chunks": 21,
+    "span_present": false
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "A4",
+  "group": "A",
+  "question": "When do sebaceous and apocrine gland cells mature?",
+  "answer": "After 16 PCW \u2014 and they were not captured at the stages sampled.",
+  "where": "Gopee \u00b7 Epidermal placode and matrix formation",
+  "span": "Sebaceous and apocrine gland cells, which mature after 16 PCW, were not captured at these stages.",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [
+    "16"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/A4__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/A4__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/A4__hybrid_b2k.txt",
+    "n_tokens": 1895,
+    "n_chunks": 12,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/A4__hybrid_b8k.txt",
+    "n_tokens": 7974,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/A4__asta_b2k.txt",
+    "n_tokens": 1922,
+    "n_chunks": 5,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/A4__asta_b8k.txt",
+    "n_tokens": 7922,
+    "n_chunks": 19,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "A5",
+  "group": "A",
+  "question": "Which markers define the dermal papilla (Dp) as it forms?",
+  "answer": "NDP+, SOX2+.",
+  "where": "Gopee \u00b7 HF mesenchymal differentiation",
+  "span": "the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+)",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "NDP",
+    "SOX2"
+   ],
+   "numbers": [],
+   "n_required": 2
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/A5__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/A5__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/A5__hybrid_b2k.txt",
+    "n_tokens": 1885,
+    "n_chunks": 13,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/A5__hybrid_b8k.txt",
+    "n_tokens": 7997,
+    "n_chunks": 49,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/A5__asta_b2k.txt",
+    "n_tokens": 1639,
+    "n_chunks": 4,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/A5__asta_b8k.txt",
+    "n_tokens": 7992,
+    "n_chunks": 21,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B1",
+  "group": "B",
+  "question": "Where are Treg cells found in prenatal skin, and from what age?",
+  "answer": "Within and around hair follicles rather than interfollicular skin, from 15 PCW.",
+  "where": "Gopee \u00b7 Epidermal placode and matrix formation",
+  "span": "RNAscope (FOXP3+) and immunofluorescence staining (FOXP3+) showed that Treg cells were primarily located within and around HFs compared to interfollicular skin as early as 15 PCW",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [
+    "15"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B1__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B1__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B1__hybrid_b2k.txt",
+    "n_tokens": 1976,
+    "n_chunks": 12,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B1__hybrid_b8k.txt",
+    "n_tokens": 7976,
+    "n_chunks": 44,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B1__asta_b2k.txt",
+    "n_tokens": 1835,
+    "n_chunks": 5,
+    "span_present": false
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B1__asta_b8k.txt",
+    "n_tokens": 7597,
+    "n_chunks": 20,
+    "span_present": false
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B2",
+  "group": "B",
+  "question": "Which cell types do macrophages co-locate with in prenatal skin?",
+  "answer": "Endothelial and neural cells, in the early and late neurovascular microenvironments (ME1, ME5).",
+  "where": "Gopee \u00b7 Single-cell atlas of human prenatal skin",
+  "span": "Macrophages co-located with endothelial and neural cells in 'early and late neurovascular microenvironments' (ME1 and ME5, respectively)",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "ME1",
+    "ME5"
+   ],
+   "numbers": [],
+   "n_required": 2
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B2__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": true
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B2__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B2__hybrid_b2k.txt",
+    "n_tokens": 1848,
+    "n_chunks": 10,
+    "span_present": false
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B2__hybrid_b8k.txt",
+    "n_tokens": 7968,
+    "n_chunks": 45,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B2__asta_b2k.txt",
+    "n_tokens": 1897,
+    "n_chunks": 6,
+    "span_present": false
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B2__asta_b8k.txt",
+    "n_tokens": 7714,
+    "n_chunks": 20,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B3",
+  "group": "B",
+  "question": "What does the atlas say TML macrophages co-locate with, besides endothelium?",
+  "answer": "Schwann cells, in the early neurovascular microenvironment (ME1).",
+  "where": "Gopee \u00b7 Macrophages in cutaneous neural differentiation",
+  "span": "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1)",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "ME1"
+   ],
+   "numbers": [],
+   "n_required": 1
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B3__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B3__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B3__hybrid_b2k.txt",
+    "n_tokens": 1972,
+    "n_chunks": 12,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B3__hybrid_b8k.txt",
+    "n_tokens": 7861,
+    "n_chunks": 45,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B3__asta_b2k.txt",
+    "n_tokens": 1834,
+    "n_chunks": 6,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B3__asta_b8k.txt",
+    "n_tokens": 7674,
+    "n_chunks": 22,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B4",
+  "group": "B",
+  "question": "Which gene newly identified in DPYSL2+ basal cells is upregulated along the ORS/CL trajectory?",
+  "answer": "AGR2 (alongside previously reported BARX2 and SOX9).",
+  "where": "Gopee \u00b7 Epidermal placode and matrix formation",
+  "span": "we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9)",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "AGR2",
+    "BARX2",
+    "SOX9"
+   ],
+   "numbers": [],
+   "n_required": 3
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B4__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B4__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B4__hybrid_b2k.txt",
+    "n_tokens": 1922,
+    "n_chunks": 12,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B4__hybrid_b8k.txt",
+    "n_tokens": 7905,
+    "n_chunks": 43,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B4__asta_b2k.txt",
+    "n_tokens": 1873,
+    "n_chunks": 4,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B4__asta_b8k.txt",
+    "n_tokens": 7706,
+    "n_chunks": 17,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B5",
+  "group": "B",
+  "question": "Which genes are expressed as pre-Dc cells aggregate into the dermal condensate?",
+  "answer": "COL6A3, MFAP4, PTK7 \u2014 collagen fibril formation and cell adhesion.",
+  "where": "Gopee \u00b7 HF mesenchymal differentiation",
+  "span": "Genes implicated in collagen fibril formation and cell adhesion (COL6A3, MFAP4 and PTK7) were expressed as the pre-Dc cells aggregated into the Dc",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "COL6A3",
+    "MFAP4",
+    "PTK7"
+   ],
+   "numbers": [],
+   "n_required": 3
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B5__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B5__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B5__hybrid_b2k.txt",
+    "n_tokens": 1954,
+    "n_chunks": 11,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B5__hybrid_b8k.txt",
+    "n_tokens": 7890,
+    "n_chunks": 45,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B5__asta_b2k.txt",
+    "n_tokens": 1680,
+    "n_chunks": 4,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B5__asta_b8k.txt",
+    "n_tokens": 7589,
+    "n_chunks": 17,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B6",
+  "group": "B",
+  "question": "Which ligand\u2013receptor pair is proposed to drive pre-Dc migration, and which cells express each side?",
+  "answer": "CXCL12 on pre-Dc cells interacting with ACKR3 on epidermal basal cells.",
+  "where": "Gopee \u00b7 HF mesenchymal differentiation",
+  "span": "Receptor\u2013ligand analysis predicted interactions between CXCL12 expressed by pre-Dc cells (Extended Data Fig. 4g,h) with ACKR3 on epidermal basal cells",
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "ACKR3",
+    "CXCL12"
+   ],
+   "numbers": [],
+   "n_required": 2
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B6__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B6__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B6__hybrid_b2k.txt",
+    "n_tokens": 1990,
+    "n_chunks": 12,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B6__hybrid_b8k.txt",
+    "n_tokens": 7873,
+    "n_chunks": 45,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B6__asta_b2k.txt",
+    "n_tokens": 1727,
+    "n_chunks": 5,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B6__asta_b8k.txt",
+    "n_tokens": 7736,
+    "n_chunks": 19,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "C1",
+  "group": "C",
+  "question": "What is the evidence that prenatal skin fibroblasts acquire scar-promoting properties later in gestation?",
+  "answer": "Prenatal fibroblasts upregulate immune-suppression and regeneration genes (CD200, RAMP2, MDK) relative to adult; pro-inflammatory fibroblast genes (APOE, IGFBP7, ITM2A) rise in the HOXC5+ \u2192 PEAR1+ transition; WNT2+ and PEAR1+ fibroblasts express senescence, cytokine and collagen genes (CDKN1A, IL1R1, POSTN).",
+  "where": "Gopee \u00b7 Scarless healing \u2014 three passages",
+  "span": null,
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "APOE",
+    "CD200",
+    "CDKN1A",
+    "HOXC5",
+    "IGFBP7",
+    "IL1R1",
+    "ITM2A",
+    "MDK",
+    "PEAR1",
+    "POSTN",
+    "RAMP2",
+    "WNT2"
+   ],
+   "numbers": [],
+   "n_required": 12
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "C2",
+  "group": "C",
+  "question": "Why does the atlas argue antigen presentation is not a key early macrophage function?",
+  "answer": "Macrophages express pro-inflammatory genes from 6 PCW but MHC class II genes are decoupled from these before 11 PCW.",
+  "where": "Gopee \u00b7 Main \u2014 two adjacent passages",
+  "span": null,
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [
+    "11",
+    "6"
+   ],
+   "n_required": 2
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "C3",
+  "group": "C",
+  "question": "On what grounds are prenatal skin TML macrophages linked to microglia?",
+  "answer": "Shared expression profile (P2RY12, CX3CR1, OLFML3) with microglia-like macrophages of other developing organs, plus high correlation with embryonic brain microglia and co-expression of immune-inhibitory genes.",
+  "where": "Gopee \u00b7 Scarless healing \u2014 two passages",
+  "span": null,
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "CX3CR1",
+    "OLFML3",
+    "P2RY12"
+   ],
+   "numbers": [],
+   "n_required": 3
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "C4",
+  "group": "C",
+  "question": "What evidence suggests the papillary/reticular fibroblast distinction emerges later in humans than in mice?",
+  "answer": "In mice the split is reported by ~e12.5; human prenatal fibroblasts did not significantly express papillary markers such as COL13A1.",
+  "where": "Gopee \u00b7 HF mesenchymal differentiation \u2014 two passages",
+  "span": null,
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "COL13A1"
+   ],
+   "numbers": [
+    "5"
+   ],
+   "n_required": 2
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "C5",
+  "group": "C",
+  "question": "How does the atlas support the claim that macrophages promote vascular network formation?",
+  "answer": "Predicted reciprocal macrophage\u2013endothelial interactions; comparison with a blood vessel organoid lacking immune cells showing limited vasculature; NicheNet identifying macrophage VEGFA as a top upstream ligand for GATA2 differences.",
+  "where": "Gopee \u00b7 Macrophages support prenatal skin angiogenesis \u2014 three passages",
+  "span": null,
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "GATA2",
+    "VEGFA"
+   ],
+   "numbers": [],
+   "n_required": 2
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "D1",
+  "group": "D",
+  "question": "The atlas says macrophages seed skin by 6 PCW with MHCII decoupled before 11 PCW. Which paper is that from?",
+  "answer": null,
+  "where": "Gopee \u00b7 Main",
+  "span": null,
+  "tag": "none",
+  "cites": "Suo 2022 \u2014 `10.1126/science.abo0510` *(retrievable \u2014 part ii testable)*",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Suo"
+   ],
+   "years": [
+    "2022"
+   ],
+   "dois": [
+    "10.1126/science.abo0510"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D2",
+  "group": "D",
+  "question": "Which paper provides the hair-bearing skin organoid model the atlas uses for validation?",
+  "answer": null,
+  "where": "Gopee \u00b7 Main",
+  "span": null,
+  "tag": "none",
+  "cites": "Lee 2020 \u2014 `10.1038/s41586-020-2352-3` *(no served XML \u2014 part i only)*",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Lee"
+   ],
+   "years": [
+    "2020"
+   ],
+   "dois": [
+    "10.1038/s41586-020-2352-3"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D3",
+  "group": "D",
+  "question": "Which datasets does the atlas leverage for adult skin and adult hair follicle comparison?",
+  "answer": null,
+  "where": "Gopee \u00b7 Main",
+  "span": null,
+  "tag": "none",
+  "cites": "Reynolds 2021 \u2014 `10.1126/science.aba6500`; Takahashi 2020 \u2014 `10.1016/j.jid.2019.07.726`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Reynolds",
+    "Takahashi"
+   ],
+   "years": [
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "dois": [
+    "10.1016/j.jid.2019.07.726",
+    "10.1126/science.aba6500"
+   ],
+   "n_required": 2
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D4",
+  "group": "D",
+  "question": "The claim that prenatal skin interfaces with amniotic fluid in a sterile environment \u2014 attributed to whom?",
+  "answer": null,
+  "where": "Gopee \u00b7 Main",
+  "span": null,
+  "tag": "none",
+  "cites": "Kennedy 2023 \u2014 `10.1038/s41586-022-05546-8`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Kennedy"
+   ],
+   "years": [
+    "2023"
+   ],
+   "dois": [
+    "10.1038/s41586-022-05546-8"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D5",
+  "group": "D",
+  "question": "Which references support Treg cells localising around the hair follicle in late second trimester and postnatal skin?",
+  "answer": null,
+  "where": "Gopee \u00b7 Epidermal placode and matrix formation",
+  "span": null,
+  "tag": "none",
+  "cites": "Ali 2017 \u2014 `10.1016/j.cell.2017.05.002`; Dhariwala 2020 \u2014 `10.1016/j.xcrm.2020.100132`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Ali",
+    "Dhariwala"
+   ],
+   "years": [
+    "2017",
+    "2020"
+   ],
+   "dois": [
+    "10.1016/j.cell.2017.05.002",
+    "10.1016/j.xcrm.2020.100132"
+   ],
+   "n_required": 2
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D6",
+  "group": "D",
+  "question": "Which paper is the source for the claim that prenatal skin loses scarless healing after 24 PCW?",
+  "answer": null,
+  "where": "Gopee \u00b7 Scarless healing",
+  "span": null,
+  "tag": "none",
+  "cites": "Larson 2010 \u2014 `10.1097/PRS.0b013e3181eae781`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Larson"
+   ],
+   "years": [
+    "2010"
+   ],
+   "dois": [
+    "10.1097/PRS.0b013e3181eae781"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D7",
+  "group": "D",
+  "question": "Which reference backs the role of macrophages in wound healing in postnatal mouse and adult human skin?",
+  "answer": null,
+  "where": "Gopee \u00b7 Scarless healing",
+  "span": null,
+  "tag": "none",
+  "cites": "Wynn 2016 \u2014 `10.1016/j.immuni.2016.02.015`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Wynn"
+   ],
+   "years": [
+    "2016"
+   ],
+   "dois": [
+    "10.1016/j.immuni.2016.02.015"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D8",
+  "group": "D",
+  "question": "Which papers identified the yolk-sac derived TREM2+ macrophages that share a profile with microglia?",
+  "answer": null,
+  "where": "Gopee \u00b7 Scarless healing",
+  "span": null,
+  "tag": "none",
+  "cites": "Bian 2020 \u2014 `10.1038/s41586-020-2316-7`; Goh 2023 \u2014 `10.1126/science.add7564`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Bian",
+    "Goh"
+   ],
+   "years": [
+    "2020",
+    "2023"
+   ],
+   "dois": [
+    "10.1038/s41586-020-2316-7",
+    "10.1126/science.add7564"
+   ],
+   "n_required": 2
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D9",
+  "group": "D",
+  "question": "Which reference supports macrophages contributing to the skin peripheral nervous system in mouse skin?",
+  "answer": null,
+  "where": "Gopee \u00b7 Macrophages in cutaneous neural differentiation",
+  "span": null,
+  "tag": "none",
+  "cites": "Kolter 2020 \u2014 `10.4049/jimmunol.1901077`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Kolter"
+   ],
+   "years": [
+    "2020"
+   ],
+   "dois": [
+    "10.4049/jimmunol.1901077"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D10",
+  "group": "D",
+  "question": "Which references support macrophage involvement in developmental and cancer-related angiogenesis?",
+  "answer": null,
+  "where": "Gopee \u00b7 Macrophages support prenatal skin angiogenesis",
+  "span": null,
+  "tag": "none",
+  "cites": "Gu 2022 \u2014 `10.1111/febs.15848`; Fantin 2010 \u2014 `10.1182/blood-2009-12-257832`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Fantin",
+    "Gu"
+   ],
+   "years": [
+    "2009",
+    "2010",
+    "2022"
+   ],
+   "dois": [
+    "10.1111/febs.15848",
+    "10.1182/blood-2009-12-257832"
+   ],
+   "n_required": 2
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D11",
+  "group": "D",
+  "question": "Which paper reports pro-angiogenic macrophages across diverse human developing tissues?",
+  "answer": null,
+  "where": "Gopee \u00b7 Macrophages support prenatal skin angiogenesis",
+  "span": null,
+  "tag": "none",
+  "cites": "Wang 2023 \u2014 `10.1016/j.cell.2023.08.019`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Wang"
+   ],
+   "years": [
+    "2023"
+   ],
+   "dois": [
+    "10.1016/j.cell.2023.08.019"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "D12",
+  "group": "D",
+  "question": "Which reference underpins the claim that the papillary/reticular fibroblast split occurs by ~e12.5 in mice?",
+  "answer": null,
+  "where": "Gopee \u00b7 HF mesenchymal differentiation",
+  "span": null,
+  "tag": "none",
+  "cites": "Driskell 2013 \u2014 `10.1038/nature12783`",
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "authors": [
+    "Driskell"
+   ],
+   "years": [
+    "2013"
+   ],
+   "dois": [
+    "10.1038/nature12783"
+   ],
+   "n_required": 1
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "reference"
+ },
+ {
+  "id": "F1",
+  "group": "F",
+  "question": "What is the electrophysiological profile of prenatal skin Merkel cells?",
+  "answer": null,
+  "where": null,
+  "span": null,
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [],
+   "n_required": 0
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "refusal"
+ },
+ {
+  "id": "F2",
+  "group": "F",
+  "question": "How many TREM2+ microglia-like macrophages are present per mm\u00b2 of prenatal dermis?",
+  "answer": null,
+  "where": null,
+  "span": null,
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [],
+   "n_required": 0
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "refusal"
+ },
+ {
+  "id": "F3",
+  "group": "F",
+  "question": "What is the effect of maternal smoking on prenatal skin macrophage composition?",
+  "answer": null,
+  "where": null,
+  "span": null,
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [],
+   "n_required": 0
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "refusal"
+ },
+ {
+  "id": "F4",
+  "group": "F",
+  "question": "Which HLA haplotypes were present in the prenatal skin donors?",
+  "answer": null,
+  "where": null,
+  "span": null,
+  "tag": "none",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [],
+   "n_required": 0
+  },
+  "conditions": {
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": false
+   }
+  },
+  "scoring": "refusal"
+ },
+ {
+  "id": "B8",
+  "group": "B",
+  "question": "What is the function of TREM2+ microglia-like macrophages in relation to skin nerves?",
+  "answer": "They co-locate with and interact with Schwann cells, contributing to synapse formation and axon guidance, and may support establishment of the skin peripheral nervous system.",
+  "where": "Gopee \u00b7 Macrophages in cutaneous neural differentiation",
+  "span": "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA\u2013NRP1, VEGFA\u2013NRP2, SEMA3C\u2013NRP2 and SEMA3E\u2013PLXND1)",
+  "tag": "term",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [],
+   "n_required": 0
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B8__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B8__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B8__hybrid_b2k.txt",
+    "n_tokens": 1978,
+    "n_chunks": 12,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B8__hybrid_b8k.txt",
+    "n_tokens": 7831,
+    "n_chunks": 46,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B8__asta_b2k.txt",
+    "n_tokens": 1788,
+    "n_chunks": 6,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B8__asta_b8k.txt",
+    "n_tokens": 7719,
+    "n_chunks": 19,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "judge"
+ },
+ {
+  "id": "B9",
+  "group": "B",
+  "question": "What is the role of macrophages in prenatal skin blood vessel formation?",
+  "answer": "Reciprocal macrophage\u2013endothelial signalling supporting angiogenesis, chemotaxis and migration; macrophage-expressed VEGFA is a top upstream ligand regulating endothelial GATA2.",
+  "where": "Gopee \u00b7 Macrophages support prenatal skin angiogenesis",
+  "span": "Predicted ligand\u2013receptor interactions were consistent with reciprocal communication between macrophages and endothelial cells to support angiogenesis, chemotaxis and cell migration",
+  "tag": "term",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "GATA2",
+    "VEGFA"
+   ],
+   "numbers": [],
+   "n_required": 2
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B9__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B9__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B9__hybrid_b2k.txt",
+    "n_tokens": 1925,
+    "n_chunks": 10,
+    "span_present": false
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B9__hybrid_b8k.txt",
+    "n_tokens": 7878,
+    "n_chunks": 46,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B9__asta_b2k.txt",
+    "n_tokens": 1761,
+    "n_chunks": 5,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B9__asta_b8k.txt",
+    "n_tokens": 7742,
+    "n_chunks": 20,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B10",
+  "group": "B",
+  "question": "What does CXCL14 do in prenatal hair follicle matrix cells?",
+  "answer": "It is a chemokine reported to recruit regulatory T cells; matrix cells upregulate it relative to adult hair follicles.",
+  "where": "Gopee \u00b7 Epidermal placode and matrix formation",
+  "span": "increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (Treg) cells",
+  "tag": "term",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [],
+   "numbers": [],
+   "n_required": 0
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B10__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B10__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B10__hybrid_b2k.txt",
+    "n_tokens": 1844,
+    "n_chunks": 10,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B10__hybrid_b8k.txt",
+    "n_tokens": 7898,
+    "n_chunks": 45,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B10__asta_b2k.txt",
+    "n_tokens": 1736,
+    "n_chunks": 4,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B10__asta_b8k.txt",
+    "n_tokens": 7738,
+    "n_chunks": 19,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "judge"
+ },
+ {
+  "id": "B11",
+  "group": "B",
+  "question": "Which genes mark the dermal condensate?",
+  "answer": "FAM3C and EFNB1.",
+  "where": "Gopee \u00b7 HF mesenchymal differentiation",
+  "span": "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1",
+  "tag": "both",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "EFNB1",
+    "FAM3C"
+   ],
+   "numbers": [],
+   "n_required": 2
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B11__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B11__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B11__hybrid_b2k.txt",
+    "n_tokens": 1825,
+    "n_chunks": 12,
+    "span_present": false
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B11__hybrid_b8k.txt",
+    "n_tokens": 7996,
+    "n_chunks": 47,
+    "span_present": false
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B11__asta_b2k.txt",
+    "n_tokens": 1813,
+    "n_chunks": 4,
+    "span_present": false
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B11__asta_b8k.txt",
+    "n_tokens": 7982,
+    "n_chunks": 18,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "judge",
+  "note": "ambiguous question: FAM3C/EFNB1 and FOXD1/SOX2 both defensible"
+ },
+ {
+  "id": "B12",
+  "group": "B",
+  "question": "What markers distinguish prenatal skin fibroblasts from adult skin fibroblasts?",
+  "answer": "CD200 (immune suppression), RAMP2 (inflammation regulation), MDK (tissue regeneration).",
+  "where": "Gopee \u00b7 Scarless healing",
+  "span": "prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200), regulation of inflammation (for example, RAMP2) and tissue regeneration (MDK)",
+  "tag": "term",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "CD200",
+    "MDK",
+    "RAMP2"
+   ],
+   "numbers": [],
+   "n_required": 3
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B12__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B12__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B12__hybrid_b2k.txt",
+    "n_tokens": 1867,
+    "n_chunks": 10,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B12__hybrid_b8k.txt",
+    "n_tokens": 7931,
+    "n_chunks": 49,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B12__asta_b2k.txt",
+    "n_tokens": 1625,
+    "n_chunks": 4,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B12__asta_b8k.txt",
+    "n_tokens": 7628,
+    "n_chunks": 19,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B13",
+  "group": "B",
+  "question": "Which genes identify TREM2+ microglia-like macrophages?",
+  "answer": "P2RY12, CX3CR1, OLFML3 (shared microglial profile); plus CX3CR1 and SYT11 among immunomodulatory genes.",
+  "where": "Gopee \u00b7 Scarless healing",
+  "span": "yolk-sac derived TREM2+ macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs",
+  "tag": "term",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "P2RY12",
+    "CX3CR1",
+    "OLFML3"
+   ],
+   "numbers": [],
+   "n_required": 3
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B13__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B13__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B13__hybrid_b2k.txt",
+    "n_tokens": 1802,
+    "n_chunks": 10,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B13__hybrid_b8k.txt",
+    "n_tokens": 7834,
+    "n_chunks": 44,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B13__asta_b2k.txt",
+    "n_tokens": 1979,
+    "n_chunks": 6,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B13__asta_b8k.txt",
+    "n_tokens": 7646,
+    "n_chunks": 19,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities",
+  "note": "key trimmed: SYT11 comes from a different sentence than the gold span"
+ },
+ {
+  "id": "B14",
+  "group": "B",
+  "question": "Which genes characterise WNT2+ and PEAR1+ prenatal fibroblasts?",
+  "answer": "CDKN1A (senescence), IL1R1 (cytokine pathways), POSTN (collagen deposition).",
+  "where": "Gopee \u00b7 Scarless healing",
+  "span": "WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)",
+  "tag": "term",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "CDKN1A",
+    "IL1R1",
+    "POSTN"
+   ],
+   "numbers": [],
+   "n_required": 3
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B14__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B14__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B14__hybrid_b2k.txt",
+    "n_tokens": 1852,
+    "n_chunks": 10,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B14__hybrid_b8k.txt",
+    "n_tokens": 7852,
+    "n_chunks": 42,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B14__asta_b2k.txt",
+    "n_tokens": 1708,
+    "n_chunks": 4,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B14__asta_b8k.txt",
+    "n_tokens": 7659,
+    "n_chunks": 18,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B15",
+  "group": "B",
+  "question": "Where do pre-dermal condensate cells migrate to, and which genes rise as they do?",
+  "answer": "Towards the epidermis; ADAMST1 (cell adhesion), CLDN11 (cell\u2013cell contacts), CXCL12 (directed migration).",
+  "where": "Gopee \u00b7 HF mesenchymal differentiation",
+  "span": "genes involved in regulation of cell adhesion (ADAMST1), cell\u2013cell contacts (CLDN11) and directed migration (CXCL12) were upregulated as pre-Dc cells migrated towards the epidermis",
+  "tag": "entity",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "ADAMST1",
+    "CLDN11",
+    "CXCL12"
+   ],
+   "numbers": [],
+   "n_required": 3
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B15__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B15__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B15__hybrid_b2k.txt",
+    "n_tokens": 1955,
+    "n_chunks": 12,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B15__hybrid_b8k.txt",
+    "n_tokens": 7882,
+    "n_chunks": 45,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B15__asta_b2k.txt",
+    "n_tokens": 1730,
+    "n_chunks": 4,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B15__asta_b8k.txt",
+    "n_tokens": 7908,
+    "n_chunks": 18,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B16",
+  "group": "B",
+  "question": "What is the marker profile of the dermal papilla?",
+  "answer": "NDP+, SOX2+.",
+  "where": "Gopee \u00b7 HF mesenchymal differentiation",
+  "span": "the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+)",
+  "tag": "both",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "NDP",
+    "SOX2"
+   ],
+   "numbers": [],
+   "n_required": 2
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B16__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B16__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B16__hybrid_b2k.txt",
+    "n_tokens": 1795,
+    "n_chunks": 12,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B16__hybrid_b8k.txt",
+    "n_tokens": 7997,
+    "n_chunks": 48,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B16__asta_b2k.txt",
+    "n_tokens": 1720,
+    "n_chunks": 4,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B16__asta_b8k.txt",
+    "n_tokens": 7836,
+    "n_chunks": 20,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ },
+ {
+  "id": "B17",
+  "group": "B",
+  "question": "Which genes do prenatal skin microglia-like macrophages share with brain microglia?",
+  "answer": "P2RY12, CX3CR1, OLFML3; and the population correlates highly with embryonic brain microglia.",
+  "where": "Gopee \u00b7 Scarless healing",
+  "span": "Prenatal skin TREM2+ microglia-like (TML) macrophages were highly correlated with embryonic brain microglia",
+  "tag": "entity",
+  "cites": null,
+  "paper": "gopee2024",
+  "status": "candidate",
+  "answer_key": {
+   "genes": [
+    "CX3CR1",
+    "OLFML3",
+    "P2RY12"
+   ],
+   "numbers": [],
+   "n_required": 3
+  },
+  "conditions": {
+   "document_b2k": {
+    "path": "stage2/contexts/B17__document_b2k.txt",
+    "n_tokens": 1891,
+    "n_chunks": 11,
+    "span_present": false
+   },
+   "document_b8k": {
+    "path": "stage2/contexts/B17__document_b8k.txt",
+    "n_tokens": 7970,
+    "n_chunks": 47,
+    "span_present": true
+   },
+   "hybrid_b2k": {
+    "path": "stage2/contexts/B17__hybrid_b2k.txt",
+    "n_tokens": 1850,
+    "n_chunks": 9,
+    "span_present": true
+   },
+   "hybrid_b8k": {
+    "path": "stage2/contexts/B17__hybrid_b8k.txt",
+    "n_tokens": 7909,
+    "n_chunks": 45,
+    "span_present": true
+   },
+   "asta_b2k": {
+    "path": "stage2/contexts/B17__asta_b2k.txt",
+    "n_tokens": 1846,
+    "n_chunks": 6,
+    "span_present": true
+   },
+   "asta_b8k": {
+    "path": "stage2/contexts/B17__asta_b8k.txt",
+    "n_tokens": 7659,
+    "n_chunks": 19,
+    "span_present": true
+   },
+   "whole": {
+    "path": "stage2/contexts/__whole_paper.txt",
+    "n_tokens": 23683,
+    "n_chunks": 142,
+    "span_present": true
+   }
+  },
+  "scoring": "entities"
+ }
+]

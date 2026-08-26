@@ -1,0 +1,306 @@
+[
+ {
+  "job": "J001",
+  "model": "sonnet",
+  "condition": "hybrid_b2k",
+  "items": [
+   "A1",
+   "A3",
+   "A4",
+   "A5",
+   "B1",
+   "B2",
+   "B3"
+  ]
+ },
+ {
+  "job": "J002",
+  "model": "sonnet",
+  "condition": "hybrid_b2k",
+  "items": [
+   "B4",
+   "B5",
+   "B6",
+   "B8",
+   "B9",
+   "B10",
+   "B14"
+  ]
+ },
+ {
+  "job": "J003",
+  "model": "sonnet",
+  "condition": "hybrid_b2k",
+  "items": [
+   "B16",
+   "B17"
+  ]
+ },
+ {
+  "job": "J004",
+  "model": "sonnet",
+  "condition": "document_b2k",
+  "items": [
+   "A1",
+   "A3",
+   "A4",
+   "A5",
+   "B1",
+   "B2",
+   "B3"
+  ]
+ },
+ {
+  "job": "J005",
+  "model": "sonnet",
+  "condition": "document_b2k",
+  "items": [
+   "B4",
+   "B5",
+   "B6",
+   "B8",
+   "B9",
+   "B10",
+   "B11"
+  ]
+ },
+ {
+  "job": "J006",
+  "model": "sonnet",
+  "condition": "document_b2k",
+  "items": [
+   "B14",
+   "B15",
+   "B16",
+   "B17"
+  ]
+ },
+ {
+  "job": "J007",
+  "model": "sonnet",
+  "condition": "whole",
+  "items": [
+   "A1",
+   "A3",
+   "A4",
+   "A5",
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5"
+  ]
+ },
+ {
+  "job": "J008",
+  "model": "sonnet",
+  "condition": "whole",
+  "items": [
+   "B6",
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5",
+   "D1",
+   "D2",
+   "D3"
+  ]
+ },
+ {
+  "job": "J009",
+  "model": "sonnet",
+  "condition": "whole",
+  "items": [
+   "D4",
+   "D5",
+   "D6",
+   "D7",
+   "D8",
+   "D9",
+   "D10",
+   "D11",
+   "D12"
+  ]
+ },
+ {
+  "job": "J010",
+  "model": "sonnet",
+  "condition": "whole",
+  "items": [
+   "F2",
+   "F3",
+   "F4",
+   "B8",
+   "B9",
+   "B10",
+   "B11",
+   "B13",
+   "B14"
+  ]
+ },
+ {
+  "job": "J011",
+  "model": "sonnet",
+  "condition": "whole",
+  "items": [
+   "B16",
+   "B17"
+  ]
+ },
+ {
+  "job": "J012",
+  "model": "haiku",
+  "condition": "hybrid_b2k",
+  "items": [
+   "A1",
+   "A3",
+   "A4",
+   "A5",
+   "B1",
+   "B2",
+   "B3"
+  ]
+ },
+ {
+  "job": "J013",
+  "model": "haiku",
+  "condition": "hybrid_b2k",
+  "items": [
+   "B4",
+   "B5",
+   "B6",
+   "B8",
+   "B9",
+   "B10",
+   "B11"
+  ]
+ },
+ {
+  "job": "J014",
+  "model": "haiku",
+  "condition": "hybrid_b2k",
+  "items": [
+   "B14",
+   "B15",
+   "B16",
+   "B17"
+  ]
+ },
+ {
+  "job": "J015",
+  "model": "haiku",
+  "condition": "document_b2k",
+  "items": [
+   "A1",
+   "A2",
+   "A3",
+   "A4",
+   "A5",
+   "B1",
+   "B2"
+  ]
+ },
+ {
+  "job": "J016",
+  "model": "haiku",
+  "condition": "document_b2k",
+  "items": [
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B8",
+   "B9",
+   "B10"
+  ]
+ },
+ {
+  "job": "J017",
+  "model": "haiku",
+  "condition": "document_b2k",
+  "items": [
+   "B11",
+   "B12",
+   "B13",
+   "B14",
+   "B15",
+   "B16",
+   "B17"
+  ]
+ },
+ {
+  "job": "J018",
+  "model": "haiku",
+  "condition": "whole",
+  "items": [
+   "A1",
+   "A3",
+   "A4",
+   "A5",
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5"
+  ]
+ },
+ {
+  "job": "J019",
+  "model": "haiku",
+  "condition": "whole",
+  "items": [
+   "B6",
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5",
+   "D1",
+   "D2",
+   "D3"
+  ]
+ },
+ {
+  "job": "J020",
+  "model": "haiku",
+  "condition": "whole",
+  "items": [
+   "D4",
+   "D5",
+   "D6",
+   "D7",
+   "D8",
+   "D9",
+   "D10",
+   "D11",
+   "D12"
+  ]
+ },
+ {
+  "job": "J021",
+  "model": "haiku",
+  "condition": "whole",
+  "items": [
+   "F1",
+   "F2",
+   "F3",
+   "F4",
+   "B8",
+   "B9",
+   "B10",
+   "B11",
+   "B14"
+  ]
+ },
+ {
+  "job": "J022",
+  "model": "haiku",
+  "condition": "whole",
+  "items": [
+   "B15",
+   "B16",
+   "B17"
+  ]
+ }
+]
