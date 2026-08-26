@@ -365,3 +365,46 @@ python -m atlas_chat.cli_supplements triage --store S --doi <doi>
 Manifests are the durable artifact and are committed; the supplement bytes are
 git-ignored. The store used for this report was built at `/tmp/repro_v2` from
 the 22 DOIs listed above and is reproducible from that one `fetch` command.
+
+---
+
+## Appendix: the corpus in full
+
+All 22 papers, in the order they appear in
+`projects/HCA_reproductive_atlas_v1/subatlas_pubs` (the atlas paper first).
+`devcel.2025.09.011` is listed twice in that file; it is counted once here.
+
+*Files* counts supplements retrieved; *skip* those ruled out by caption before
+fetching (reporting summaries, peer review files); *sheets* the sheet-level
+candidates triage produced.
+
+| # | DOI | Publisher | PMCID | Files | Skip | Sheets | Note |
+|---:|---|---|---|---:|---:|---:|---|
+| 1 | `10.64898/2026.06.10.731198` | bioRxiv | — | — | — | — | atlas preprint; non-standard DOI prefix, no PMC record |
+| 2 | `10.1172/jci.insight.195254` | JCI | PMC12892900 | 10 | — | 12 |  |
+| 3 | `10.1038/s41588-021-00972-2` | Springer Nature | PMC8648563 | 4 | 1 | 49 |  |
+| 4 | `10.1038/s41586-022-04918-4` | Springer Nature | PMC9300467 | 4 | 1 | 31 |  |
+| 5 | `10.1126/science.adx0659` | AAAS | — | — | — | — | no PMC record |
+| 6 | `10.1038/s42003-022-04384-8` | Springer Nature | PMC9812973 | 4 | 2 | 5 |  |
+| 7 | `10.1002/ctm2.1219` | Wiley | PMC10040725 | 1 | — | — |  |
+| 8 | `10.1093/cei/uxad029` | Oxford | — | — | — | — | no PMC record |
+| 9 | `10.1126/sciadv.adm7506` | AAAS | PMC10997207 | 2 | — | 16 |  |
+| 10 | `10.1016/j.devcel.2025.09.011` | Cell Press | — | — | — | — | no PMC record (recent) |
+| 11 | `10.1038/s41467-020-20358-y` | Springer Nature | PMC7782707 | 10 | 2 | 56 |  |
+| 12 | `10.1038/s41586-025-09875-2` | Springer Nature | PMC12893920 | 9 | 1 | 37 |  |
+| 13 | `10.1038/s41588-024-01873-w` | Springer Nature | PMC11387200 | 2 | 1 | 9 |  |
+| 14 | `10.1172/jci.insight.153921` | JCI | PMC8983148 | 10 | — | 11 |  |
+| 15 | `10.1016/j.devcel.2024.01.006` | Cell Press | PMC10898717 | 9 | — | 7 |  |
+| 16 | `10.1038/s41556-022-00961-5` | Springer Nature | PMC9901845 | — | — | — | PMC record, no open full text |
+| 17 | `10.1016/j.devcel.2022.02.017` | Cell Press | PMC9007916 | — | — | — | PMC record, no open full text |
+| 18 | `10.1073/pnas.2404775121` | PNAS | PMC11551439 | 17 | — | 64 |  |
+| 19 | `10.1038/s41467-020-14936-3` | Springer Nature | PMC7052271 | 5 | 1 | 9 |  |
+| 20 | `10.1016/j.devcel.2023.07.014` | Cell Press | PMC10615783 | — | — | — | PMC record, no open full text |
+| 21 | `10.1038/s41591-020-1040-z` | Springer Nature | — | — | — | — | no PMC record |
+| 22 | `10.1038/s41467-024-55440-2` | Springer Nature | PMC11698969 | 16 | 2 | 88 |  |
+
+**Totals.** 22 papers, 14 reachable; 103 files retrieved, 11 skipped, 394 sheet candidates.
+
+Titles are omitted deliberately — the DOIs resolve, and Europe PMC is the
+source of record for the metadata. `cli_supplements fetch --cas` over the
+project's CAS+ document reproduces every row.

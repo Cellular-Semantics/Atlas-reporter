@@ -32,7 +32,7 @@ querying happens later, against a specific cell type.
 
 Everything that touches bytes is in `atlas_chat.services.supplement_store`,
 behind a CLI. Use it rather than reading supplement files directly: a
-supplementary table can be 400,000 rows wide, and `Read` on one of those wrecks
+supplementary table can run to hundreds of thousands of rows, and `Read` on one wrecks
 your context for no gain.
 
 ```bash
@@ -82,9 +82,9 @@ its members are what get judged.
 
 ## Size limits, and why none of them are silent
 
-Supplementary tables are big — the prenatal skin bundle contains a 95 MB
-spreadsheet of 396,880 rows — so every read here is bounded. That is only safe
-if a bound never looks like an absence, so each one leaves a trace:
+Supplementary tables run to hundreds of thousands of rows, so every read here is
+bounded. That is only safe if a bound never looks like an absence, so each one
+leaves a trace:
 
 | Limit | What it does | The trace it leaves |
 |---|---|---|
@@ -127,30 +127,29 @@ The aim is describing cell types, their properties, and the data supporting
 them. Most of a supplement bundle does not bear on that, and deep indexing is
 the expensive step, so run `triage` before you open anything.
 
-Triage writes `relevance` and `relevance_note` at two levels — on each file and
-archive member, and (with `--sheets`) on each **sheet**. Sheet level is the one
-that matters: a 42-sheet supplement routinely holds the DEG table a report needs
-and the antibody list it never will, and a verdict on the file cannot say that.
-Verdicts mean:
+Triage writes `relevance` and `relevance_note` on each file and archive member,
+and with `--sheets` on each **sheet**. Sheet level is the one that matters: one
+workbook can hold both the DEG table a report needs and an antibody list it
+never will, and a verdict on the file cannot express that. Verdicts mean:
 
-- **`irrelevant`** — ruled out, with the reason. Either its caption says what it
+- **`irrelevant`** — ruled out, with the reason: either its caption says what it
   is ("Reporting Summary", "Peer Review file") or its columns do (a reagent list
-  with a vendor and a catalogue number). Do **not** index these, and do not
-  treat them as gaps: nothing is missing.
-- **`relevant`** — its columns match a known kind: differential expression in any
-  of the usual dialects, cluster-to-name mappings, per-cell tables, enrichment
-  results, cell-cell interactions, sample metadata. The note names the kind, so
-  you start from a hypothesis rather than a blank sheet.
-- **`unknown`** — the cheap signals did not settle it. **Index these.** Roughly
-  40% of a real corpus lands here, mostly PDFs whose columns cannot be read at
-  all. Unknown means "look", never "skip".
+  with a vendor and a catalogue number). Do **not** index these, and do not treat
+  them as gaps — nothing is missing.
+- **`relevant`** — its columns match a known kind: differential expression,
+  marker lists, cluster-to-name mappings, per-cell tables, enrichment,
+  cell-cell interactions, sample metadata. The note names the kind, so you start
+  from a hypothesis rather than a blank sheet.
+- **`unknown`** — the cheap signals did not settle it, most often because the
+  format has no readable columns. **Index these.** Unknown means "look", never
+  "skip".
 
-The asymmetry is deliberate and worth preserving if you touch `SIGNATURES`: a
+Expect triage to rule out only a small fraction outright. Its value is less in
+exclusion than in handing you a kind and a reason for much of what remains.
+
+The asymmetry is deliberate, and worth preserving if you touch `SIGNATURES`: a
 wrong `relevant` costs one wasted inspection, a wrong `irrelevant` silently
 drops evidence. So anything unrecognised is `unknown`.
-
-Expect triage to exclude only around 10% of items by count. Its larger value is
-that it hands you a kind and a reason for about half of what remains.
 
 ## Start from `--sheets`
 
@@ -162,13 +161,12 @@ are here to make. Add it, set `evidence` to the rung you stopped on, and write
 the list back as `tables`.
 
 Carry the `relevance` through onto the pointer, including for the irrelevant
-ones. A pointer that says "this sheet is an antibody list, irrelevant" is worth
-having: it accounts for the sheet, so a later reader knows it was looked at.
+ones. A pointer that says "this sheet is an antibody list, irrelevant" accounts
+for the sheet, so a later reader knows it was looked at.
 
-Do check the suggested `content_type` rather than trusting it. It comes from
-column-name patterns, and the patterns collide: a TF-IDF marker table carrying a
-`secondBestClusterName` column was once labelled a cluster-to-name mapping. The
-`relevance_note` names the columns that drove the guess, so it is quick to check.
+Check the suggested `content_type` rather than trusting it: it comes from
+column-name patterns, and patterns collide. The `relevance_note` names the
+columns that drove the guess, which makes it quick to check.
 
 ## How to index — cheapest evidence first
 
