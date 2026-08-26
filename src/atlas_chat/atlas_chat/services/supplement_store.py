@@ -653,11 +653,7 @@ def _xlsx_dimensions(sheet: Any) -> tuple[int, int]:
     scanning them is slow and their declarations have held up.
     """
     declared = sheet.max_row
-    if (
-        declared is not None
-        and sheet.max_column is not None
-        and declared > VERIFY_ROWS_AT_OR_BELOW
-    ):
+    if declared is not None and sheet.max_column is not None and declared > VERIFY_ROWS_AT_OR_BELOW:
         return declared, sheet.max_column
     # Count to the last row that has content, not to the last row the reader
     # yields. A sheet with formatting applied down to row 1000 yields 1000 rows
