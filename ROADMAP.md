@@ -88,10 +88,20 @@ result, no DEG context (what was compared against, how many genes were reported)
 spec wants literature and asserted markers checked against derived markers, with the
 limitations of the DEG evidence stated when they disagree.
 
-**Subatlas consistency.** `transferred_annotations` carries the integration provenance
-(with `cell_ratio`), and `resolve-name` uses it to pick the source paper — but no step
-reports on agreement or disagreement between an atlas annotation and the subatlas labels
-it was built from, and there's no long-tail cutoff.
+**Subatlas consistency.** Done on `feature/subatlas-consistency`, in four pieces: a
+producer (`cli_cas transfer`) that actually writes `transferred_annotations` from obs
+transfer columns — nothing did before; a deterministic cutoff view
+(`cli_contributors`, calibrated on HCA_reproductive); a `subatlas-consistency`
+subagent that judges the relation with a SKOS verdict and attempts a marker-based
+explanation; and traversal seeding on the paper the judgement names as defining the
+cell type, with `check_defining_paper` failing a report that omits it. Note this
+roadmap entry's claim that `resolve-name` used `transferred_annotations` was never
+true in the code.
+
+Still open here: the marginals-only `label_provenance.json` on HDCA_neurons cannot
+yield `transferred_annotations` (no join between study and author label), so that
+project needs a fresh joint cross-tab off its zarr before it can be run — and the
+zarr URL is not currently recorded anywhere resolvable.
 
 **Location from data.** Spatial evidence in the atlas/subatlas (e.g. spatial
 transcriptomics) is not treated differently from literature evidence; there's no way to
@@ -297,9 +307,14 @@ reproductive atlas whichever strategy wins.
    authors, compare against derived markers; where they disagree, state the limitations
    of the DEG evidence (top-N truncation, over-broad comparison group) rather than
    silently dropping the marker.
-3. **Subatlas consistency section.** Compare the atlas annotation against its
-   `transferred_annotations`, apply a `cell_ratio` cutoff to drop long-tail noise, and
-   where labels disagree, try to explain it from markers.
+3. **Subatlas consistency section.** ✅ Shipped on `feature/subatlas-consistency`.
+   One correction worth recording: a `cell_ratio` cutoff alone is the wrong
+   instrument. `cell_ratio`'s denominator is the whole cell set, so it cannot
+   separate "this paper barely contributed" from "this paper contributed a lot and
+   split its labels". The shipped cutoff works on contribution (of the cell set) and
+   within-source share (of what that paper contributed) as separate axes, plus a
+   reverse share against the upstream label's atlas-wide total — which needed a new
+   `TransferredAnnotation.source_label_cell_count` field.
 4. **Location from data.** Where the atlas or a subatlas provides spatial evidence,
    report it as data with its method named, distinct from literature claims.
 5. **Report shape.** Reports read as a short paper — scientific prose about the biology,
