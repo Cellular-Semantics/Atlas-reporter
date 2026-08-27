@@ -1,0 +1,22 @@
+{
+  "B10__asta_b8k__sonnet": {
+    "verdict": "correct",
+    "why": "Captures both gold elements — Treg recruitment and upregulation in prenatal vs adult HF matrix cells — with a verbatim supporting quote."
+  },
+  "B11__asta_b8k__sonnet": {
+    "verdict": "correct",
+    "why": "FOXD1+/SOX2+ is the paper's own definitional marker pair for the Dc, so it is a defensible reading of 'which genes mark the dermal condensate' even though GOLD cites FAM3C/EFNB1."
+  },
+  "B2__asta_b8k__sonnet": {
+    "verdict": "correct",
+    "why": "Directly quotes the paper's co-location statement covering neural and vascular cells (plus fibroblasts); only the ME1/ME5 labels are omitted."
+  },
+  "B3__asta_b8k__sonnet": {
+    "verdict": "correct",
+    "why": "Names Schwann cells in the early neurovascular microenvironment ME1, matching GOLD exactly, with a verbatim quote."
+  },
+  "B8__asta_b8k__sonnet": {
+    "verdict": "correct",
+    "why": "States interaction with Schwann cells via synapse formation and axon guidance supporting skin peripheral nervous system establishment, matching GOLD."
+  }
+}

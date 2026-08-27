@@ -50,10 +50,27 @@ def score_reference(ans: str, key: dict) -> tuple[bool, float, list[str]]:
 
 
 JUDGE = {}
-for _jf in ("judge_verdicts.json", "judge_verdicts2.json", "judge_verdicts3.json"):
+for _jf in ("judge_verdicts.json", "judge_verdicts2.json", "judge_verdicts3.json", "judge_verdicts4.json", "judge_verdicts5.json"):
     _p = S2 / _jf
     if _p.exists():
         JUDGE.update(json.loads(_p.read_text()))
+
+
+def _decline_outcome(sp, group: str) -> str:
+    """Was declining right? Three cases, and they are not interchangeable.
+
+    sp is False  -> the marked passage was withheld; declining is correct.
+    sp is None   -> no marked span. D items (citation-following) and F items
+                    (unanswerable by construction) cannot be answered from the text we
+                    supply, so a decline is correct. C items (synthesis) are answerable
+                    from material that IS present, so a decline is a miss.
+    sp is True   -> the passage was there and the reader declined: a miss.
+    """
+    if sp is False:
+        return "correct_absence"
+    if sp is None:
+        return "correct_absence" if group in ("D", "F") else "missed"
+    return "missed"
 
 
 def main() -> int:
@@ -105,7 +122,7 @@ def main() -> int:
             # A DECLINE is never the judge's to rule on — absence is adjudicated the same
             # way as for every other mode, against whether the passage was actually there.
             if not answerable:
-                outcome = "correct_absence" if sp is False else "missed"
+                outcome = _decline_outcome(sp, it["group"])
             else:
                 v = JUDGE.get(f"{item_id}__{cond}__{model}", {}).get("verdict") or "unjudged"
                 outcome = {"correct": "correct", "partial": "partial",
@@ -113,15 +130,19 @@ def main() -> int:
         elif mode == "refusal":
             outcome = "correct_absence" if not answerable else "fabricated"
         elif not answerable:
-            outcome = "correct_absence" if sp is False else "missed"
+            outcome = _decline_outcome(sp, it["group"])
         elif correct:
             # sp is None for items that never had a marked span (C/D/F); only an
             # explicit False means "the passage was withheld".
             outcome = "correct_without_span" if sp is False else "correct"
         elif grounded:
-            # Answered, and the quote really is in the supplied text — so the context
-            # supported an answer the key did not anticipate. Not fabrication.
-            outcome = "wrong" if sp else "other_supported_answer"
+            # Answered with a quote that really is in the supplied text. Two very different
+            # cases, and collapsing them flatters the result:
+            #   - the passage WAS there and the answer is still wrong  -> wrong
+            #   - the passage was WITHHELD and the reader answered from adjacent text
+            #     -> a SUBSTITUTED answer: sourced, plausible, and not the paper's claim.
+            # A grounded quote makes an answer checkable, not correct.
+            outcome = "substituted" if sp is False else "wrong"
         else:
             outcome = "wrong" if sp else "fabricated"
 

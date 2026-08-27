@@ -746,10 +746,11 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
-  "scoring": "entities"
+  "scoring": "judge",
+  "note": "synthesis: gold answer is prose, not an entity list"
  },
  {
   "id": "C2",
@@ -775,10 +776,11 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
-  "scoring": "entities"
+  "scoring": "judge",
+  "note": "synthesis: gold answer is prose, not an entity list"
  },
  {
   "id": "C3",
@@ -805,10 +807,11 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
-  "scoring": "entities"
+  "scoring": "judge",
+  "note": "synthesis: gold answer is prose, not an entity list"
  },
  {
   "id": "C4",
@@ -835,10 +838,11 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
-  "scoring": "entities"
+  "scoring": "judge",
+  "note": "synthesis: gold answer is prose, not an entity list"
  },
  {
   "id": "C5",
@@ -864,10 +868,11 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
-  "scoring": "entities"
+  "scoring": "judge",
+  "note": "synthesis: gold answer is prose, not an entity list"
  },
  {
   "id": "D1",
@@ -897,7 +902,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -930,7 +935,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -967,7 +972,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1000,7 +1005,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1036,7 +1041,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1069,7 +1074,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1102,7 +1107,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1138,7 +1143,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1171,7 +1176,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1208,7 +1213,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1241,7 +1246,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1274,7 +1279,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "reference"
@@ -1300,7 +1305,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "refusal"
@@ -1326,7 +1331,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "refusal"
@@ -1352,7 +1357,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "refusal"
@@ -1378,7 +1383,7 @@
     "path": "stage2/contexts/__whole_paper.txt",
     "n_tokens": 23683,
     "n_chunks": 142,
-    "span_present": false
+    "span_present": null
    }
   },
   "scoring": "refusal"

@@ -2,7 +2,7 @@
  {
   "job": "J001",
   "model": "sonnet",
-  "condition": "asta_b2k",
+  "condition": "asta_b8k",
   "items": [
    "A1",
    "A2",
@@ -16,7 +16,7 @@
  {
   "job": "J002",
   "model": "sonnet",
-  "condition": "asta_b2k",
+  "condition": "asta_b8k",
   "items": [
    "B3",
    "B4",
@@ -30,49 +30,7 @@
  {
   "job": "J003",
   "model": "sonnet",
-  "condition": "asta_b2k",
-  "items": [
-   "B11",
-   "B12",
-   "B13",
-   "B14",
-   "B15",
-   "B16",
-   "B17"
-  ]
- },
- {
-  "job": "J004",
-  "model": "haiku",
-  "condition": "asta_b2k",
-  "items": [
-   "A1",
-   "A2",
-   "A3",
-   "A4",
-   "A5",
-   "B1",
-   "B2"
-  ]
- },
- {
-  "job": "J005",
-  "model": "haiku",
-  "condition": "asta_b2k",
-  "items": [
-   "B3",
-   "B4",
-   "B5",
-   "B6",
-   "B8",
-   "B9",
-   "B10"
-  ]
- },
- {
-  "job": "J006",
-  "model": "haiku",
-  "condition": "asta_b2k",
+  "condition": "asta_b8k",
   "items": [
    "B11",
    "B12",

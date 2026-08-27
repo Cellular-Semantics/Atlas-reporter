@@ -1,6 +1,6 @@
 [
  {
-  "outcome": "other_supported_answer",
+  "outcome": "substituted",
   "id": "A1",
   "group": "A",
   "tag": "none",
@@ -19,7 +19,7 @@
   "answer": "At 14-15 PCW (post-conceptional weeks)"
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "substituted",
   "id": "A1",
   "group": "A",
   "tag": "none",
@@ -36,6 +36,25 @@
   "span_present": false,
   "ctx_tokens": 1749,
   "answer": "Prenatal hair follicles begin forming at 14-15 PCW, when budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed; HF cells were identified in the scRNA-seq data from 14 PCW."
+ },
+ {
+  "outcome": "substituted",
+  "id": "A1",
+  "group": "A",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": false,
+  "fraction": 0.5,
+  "missing": [
+   "11"
+  ],
+  "grounded": true,
+  "span_present": false,
+  "ctx_tokens": 7671,
+  "answer": "Prenatal hair follicles begin forming at 14-15 PCW, when budding of basal cells (hair placode and germ cells) and elongation of hair follicles (hair pegs) were observed; HF cells were identified in scRNA-seq data from 14 PCW."
  },
  {
   "outcome": "correct",
@@ -172,6 +191,23 @@
   "span_present": true,
   "ctx_tokens": 1994,
   "answer": "Prenatal human skin loses the ability to heal without scarring after 24 PCW."
+ },
+ {
+  "outcome": "correct",
+  "id": "A2",
+  "group": "A",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7836,
+  "answer": "Prenatal human skin loses the ability to heal without scarring after 24 PCW (post-conception weeks)."
  },
  {
   "outcome": "correct_absence",
@@ -318,6 +354,25 @@
   "answer": ""
  },
  {
+  "outcome": "substituted",
+  "id": "A3",
+  "group": "A",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": false,
+  "fraction": 0.0,
+  "missing": [
+   "6"
+  ],
+  "grounded": true,
+  "span_present": false,
+  "ctx_tokens": 7831,
+  "answer": "Macrophages are present from early gestation onward (the innate immune compartment, including macrophages and ILCs, was already present from early gestation, in contrast to B and T cells which emerged later around 10 PCW); the prenatal skin dataset itself spans 7-17 PCW."
+ },
+ {
   "outcome": "correct",
   "id": "A3",
   "group": "A",
@@ -451,6 +506,23 @@
   "grounded": true,
   "span_present": true,
   "ctx_tokens": 1922,
+  "answer": "Sebaceous and apocrine gland cells mature after 16 PCW."
+ },
+ {
+  "outcome": "correct",
+  "id": "A4",
+  "group": "A",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7922,
   "answer": "Sebaceous and apocrine gland cells mature after 16 PCW."
  },
  {
@@ -592,6 +664,23 @@
   "span_present": true,
   "ctx_tokens": 1639,
   "answer": "The dermal papilla (Dp) is defined by NDP+ and SOX2+ expression as it forms, following encapsulation of the dermal condensate (Dc) at its base after HF invagination."
+ },
+ {
+  "outcome": "correct",
+  "id": "A5",
+  "group": "A",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7992,
+  "answer": "The dermal papilla (Dp) is defined by NDP and SOX2 expression as it forms from the encapsulated base of the dermal condensate (Dc) following HF invagination."
  },
  {
   "outcome": "correct_absence",
@@ -736,6 +825,23 @@
   "answer": "CXCL14 is a chemokine involved in chemotaxis that has previously been reported to recruit regulatory T (Treg) cells; its increased expression in prenatal matrix cells suggests a role in Treg cell accumulation and immune protection during early matrix differentiation."
  },
  {
+  "outcome": "correct",
+  "id": "B10",
+  "group": "B",
+  "tag": "term",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "judge",
+  "answerable": true,
+  "correct": null,
+  "fraction": null,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7738,
+  "answer": "CXCL14 is a chemotaxis-related gene increased in prenatal hair follicle matrix cells (compared with adult HFs) that has previously been reported to recruit regulatory T (Treg) cells, suggesting a role in Treg cell accumulation and immune protection during early matrix differentiation."
+ },
+ {
   "outcome": "correct_absence",
   "id": "B10",
   "group": "B",
@@ -872,6 +978,23 @@
   "answer": ""
  },
  {
+  "outcome": "correct",
+  "id": "B11",
+  "group": "B",
+  "tag": "both",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "judge",
+  "answerable": true,
+  "correct": null,
+  "fraction": null,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7982,
+  "answer": "The dermal condensate (Dc) is marked by FOXD1 and SOX2 (FOXD1+ SOX2+), forming from transitional PDGFRA+ FOXD1+ SOX2low pre-Dc fibroblasts."
+ },
+ {
   "outcome": "correct_absence",
   "id": "B11",
   "group": "B",
@@ -1006,6 +1129,23 @@
   "span_present": true,
   "ctx_tokens": 1625,
   "answer": "Adult skin fibroblasts express high levels of inflammatory cytokines/receptors (e.g. IL6, IL1RA), antigen presentation genes (e.g. HLA-A), innate immune/inflammatory response genes (e.g. CD55, PTGES) and cellular senescence genes (CDKN1A). In contrast, prenatal skin fibroblasts upregulate genes invo"
+ },
+ {
+  "outcome": "correct",
+  "id": "B12",
+  "group": "B",
+  "tag": "term",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7628,
+  "answer": "Adult skin fibroblasts express high levels of inflammatory cytokines/receptors (IL6, IL1RA), antigen presentation genes (HLA-A), innate immune/inflammatory response genes (CD55, PTGES), and cellular senescence genes (CDKN1A). In contrast, prenatal skin fibroblasts upregulate genes involved in immune"
  },
  {
   "outcome": "correct_absence",
@@ -1152,6 +1292,23 @@
   "answer": "TREM2+ microglia-like (TML) macrophages are identified by TREM2 and share an expression profile of P2RY12, CX3CR1 and OLFML3 with microglia-like macrophages from other developing organs; they also co-express immunomodulatory genes including immune-inhibitory receptors (e.g. CX3CR1) and regulators of"
  },
  {
+  "outcome": "correct",
+  "id": "B13",
+  "group": "B",
+  "tag": "term",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7646,
+  "answer": "TREM2+ microglia-like (TML) macrophages are identified by TREM2 along with an expression profile shared with microglia-like macrophages elsewhere: P2RY12, CX3CR1 and OLFML3."
+ },
+ {
   "outcome": "correct_absence",
   "id": "B13",
   "group": "B",
@@ -1294,6 +1451,23 @@
   "span_present": true,
   "ctx_tokens": 1708,
   "answer": "WNT2+ and PEAR1+ prenatal fibroblasts express genes involved in cellular senescence (CDKN1A), cytokine pathways (e.g. IL1R1) and collagen deposition (e.g. POSTN). Additionally, late gestation WNT2+ fibroblasts upregulate extracellular matrix/collagen deposition genes (e.g. COL1A1), while early WNT2+"
+ },
+ {
+  "outcome": "correct",
+  "id": "B14",
+  "group": "B",
+  "tag": "term",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7659,
+  "answer": "WNT2+ and PEAR1+ prenatal fibroblasts express genes involved in cellular senescence (CDKN1A), cytokine pathways (e.g. IL1R1), and collagen deposition (e.g. POSTN); they also show an increased adult-like fibroblast gene expression profile and, during the transition from HOXC5+ fibroblasts to PEAR1+ f"
  },
  {
   "outcome": "correct_absence",
@@ -1440,6 +1614,23 @@
   "answer": "Pre-dermal condensate (pre-Dc) cells migrate towards the epidermis. As they do, genes involved in regulation of cell adhesion (ADAMST1), cell-cell contacts (CLDN11) and directed migration (CXCL12) are upregulated along the hair fibroblast pseudotime."
  },
  {
+  "outcome": "correct",
+  "id": "B15",
+  "group": "B",
+  "tag": "entity",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7908,
+  "answer": "Pre-dermal condensate (pre-Dc) cells migrate towards the epidermis. As they do, genes involved in cell adhesion (ADAMST1), cell-cell contacts (CLDN11) and directed migration (CXCL12) are upregulated along the hair fibroblast pseudotime, indicating a process of collective migration."
+ },
+ {
   "outcome": "correct_absence",
   "id": "B15",
   "group": "B",
@@ -1584,6 +1775,23 @@
   "answer": "The dermal papilla (Dp) is marked by NDP and SOX2 (NDP+, SOX2+)."
  },
  {
+  "outcome": "correct",
+  "id": "B16",
+  "group": "B",
+  "tag": "both",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7836,
+  "answer": "The dermal papilla (Dp) is marked by NDP and SOX2 (NDP+, SOX2+); formation of the Dp is also characterized by expression of RSPO3 and WNT5A, which coordinate differentiation of adjacent hair matrix cells."
+ },
+ {
   "outcome": "correct_absence",
   "id": "B16",
   "group": "B",
@@ -1726,6 +1934,23 @@
   "answer": "Prenatal skin TREM2+ microglia-like macrophages share an expression profile of P2RY12, CX3CR1 and OLFML3 with brain microglia-like macrophages."
  },
  {
+  "outcome": "correct",
+  "id": "B17",
+  "group": "B",
+  "tag": "entity",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7659,
+  "answer": "Prenatal skin TREM2+ microglia-like (TML) macrophages share an expression profile of P2RY12, CX3CR1 and OLFML3 with microglia-like macrophages from other developing organs, including the brain."
+ },
+ {
   "outcome": "correct_absence",
   "id": "B17",
   "group": "B",
@@ -1836,7 +2061,7 @@
   "answer": "Prenatal skin TREM2+ microglia-like macrophages share an expression profile of P2RY12, CX3CR1 and OLFML3 with microglia-like macrophages from other developing organs including the brain."
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "substituted",
   "id": "B1",
   "group": "B",
   "tag": "none",
@@ -1855,7 +2080,7 @@
   "answer": "Around the hair follicle (HF), from late second trimester (around 21 PCW)"
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "substituted",
   "id": "B1",
   "group": "B",
   "tag": "none",
@@ -1872,6 +2097,25 @@
   "span_present": false,
   "ctx_tokens": 1835,
   "answer": "Treg cells are found localized around the hair follicle (HF), starting in the late second trimester (around 21 PCW), and also in postnatal skin."
+ },
+ {
+  "outcome": "substituted",
+  "id": "B1",
+  "group": "B",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": false,
+  "fraction": 0.0,
+  "missing": [
+   "15"
+  ],
+  "grounded": true,
+  "span_present": false,
+  "ctx_tokens": 7597,
+  "answer": "Treg cells localize around the hair follicle (HF), from the late second trimester (around 21 PCW), and are also found in postnatal skin."
  },
  {
   "outcome": "correct_absence",
@@ -2018,6 +2262,23 @@
   "id": "B2",
   "group": "B",
   "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "judge",
+  "answerable": true,
+  "correct": null,
+  "fraction": null,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7714,
+  "answer": "In prenatal skin, macrophage subsets were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation."
+ },
+ {
+  "outcome": "correct",
+  "id": "B2",
+  "group": "B",
+  "tag": "none",
   "condition": "document_b2k",
   "model": "haiku",
   "mode": "judge",
@@ -2148,6 +2409,23 @@
   "span_present": true,
   "ctx_tokens": 1834,
   "answer": "TML macrophages were predicted to co-locate with Schwann cells (in the early neurovascular microenvironment, ME1) and with WNT2+ fibroblasts in early prenatal skin."
+ },
+ {
+  "outcome": "correct",
+  "id": "B3",
+  "group": "B",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "judge",
+  "answerable": true,
+  "correct": null,
+  "fraction": null,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7674,
+  "answer": "Besides endothelium, TML macrophages are predicted to co-locate with Schwann cells (in the 'early neurovascular microenvironment', ME1) and with WNT2+ fibroblasts in early prenatal skin."
  },
  {
   "outcome": "correct_absence",
@@ -2284,6 +2562,23 @@
   "span_present": true,
   "ctx_tokens": 1873,
   "answer": "AGR2"
+ },
+ {
+  "outcome": "correct",
+  "id": "B4",
+  "group": "B",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7706,
+  "answer": "AGR2 is the newly identified gene upregulated by DPYSL2+ basal cells along the ORS/CL trajectory."
  },
  {
   "outcome": "correct_absence",
@@ -2424,6 +2719,23 @@
   "span_present": true,
   "ctx_tokens": 1680,
   "answer": "Genes implicated in collagen fibril formation and cell adhesion: COL6A3, MFAP4 and PTK7."
+ },
+ {
+  "outcome": "correct",
+  "id": "B5",
+  "group": "B",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7589,
+  "answer": "COL6A3, MFAP4 and PTK7, genes implicated in collagen fibril formation and cell adhesion, were expressed as pre-Dc cells aggregated into the Dc."
  },
  {
   "outcome": "correct_absence",
@@ -2570,6 +2882,23 @@
   "answer": "CXCL12 (expressed by pre-Dc cells) interacting with ACKR3 (on epidermal basal cells) is proposed to drive pre-Dc migration."
  },
  {
+  "outcome": "correct",
+  "id": "B6",
+  "group": "B",
+  "tag": "none",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7736,
+  "answer": "CXCL12-ACKR3 is proposed to drive pre-Dc cell migration: CXCL12 is expressed by pre-Dc cells and its receptor ACKR3 is expressed on epidermal basal cells."
+ },
+ {
   "outcome": "correct_absence",
   "id": "B6",
   "group": "B",
@@ -2710,6 +3039,23 @@
   "span_present": true,
   "ctx_tokens": 1788,
   "answer": "TML macrophages are predicted to interact with Schwann cells, contributing to synapse formation and axon guidance, supporting establishment of the skin peripheral nervous system during early gestation."
+ },
+ {
+  "outcome": "correct",
+  "id": "B8",
+  "group": "B",
+  "tag": "term",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "judge",
+  "answerable": true,
+  "correct": null,
+  "fraction": null,
+  "missing": [],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7719,
+  "answer": "TREM2+ microglia-like (TML) macrophages are predicted to interact with Schwann cells, contributing to synapse formation and axon guidance, supporting establishment of the skin peripheral nervous system during early gestation."
  },
  {
   "outcome": "correct_absence",
@@ -2854,6 +3200,26 @@
   "answer": "Macrophages express gene programs and growth factors that drive angiogenesis and endothelial development; predicted ligand-receptor interactions (e.g. CXCL8-ACKR1, CCL8-ACKR1) support reciprocal communication with endothelial cells for angiogenesis, chemotaxis and cell migration, and macrophages con"
  },
  {
+  "outcome": "wrong",
+  "id": "B9",
+  "group": "B",
+  "tag": "term",
+  "condition": "asta_b8k",
+  "model": "sonnet",
+  "mode": "entities",
+  "answerable": true,
+  "correct": false,
+  "fraction": 0.0,
+  "missing": [
+   "GATA2",
+   "VEGFA"
+  ],
+  "grounded": true,
+  "span_present": true,
+  "ctx_tokens": 7742,
+  "answer": "Macrophages and macrophage-derived growth factors have a role in driving endothelial development, contributing to prenatal skin angiogenesis and blood vessel remodelling."
+ },
+ {
   "outcome": "correct_absence",
   "id": "B9",
   "group": "B",
@@ -2894,7 +3260,7 @@
   "answer": ""
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "substituted",
   "id": "B9",
   "group": "B",
   "tag": "term",
@@ -2914,7 +3280,7 @@
   "answer": "Macrophages contribute to prenatal skin angiogenesis, with LYVE1+ and TML macrophages promoting sprouting angiogenesis, LYVE1+ macrophages promoting blood vessel morphogenesis, and iron-recycling macrophages promoting endothelial cell chemotaxis"
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "substituted",
   "id": "B9",
   "group": "B",
   "tag": "term",
@@ -2971,194 +3337,172 @@
   "answer": "Macrophages contribute to prenatal skin blood vessel formation: they co-locate with endothelial cells in neurovascular microenvironments, express pro-angiogenic gene programs, and interactions between macrophages and endothelial cells are required to support angiogenesis and blood vessel remodelling"
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "correct",
   "id": "C1",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.4166666666666667,
-  "missing": [
-   "APOE",
-   "CD200",
-   "HOXC5",
-   "IGFBP7",
-   "ITM2A",
-   "MDK",
-   "RAMP2"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": true,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "WNT2+ and PEAR1+ prenatal fibroblasts abundant in later gestation express genes involved in cellular senescence (CDKN1A), cytokine pathways (IL1R1), and collagen deposition (POSTN), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders."
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "correct",
   "id": "C1",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.4166666666666667,
-  "missing": [
-   "APOE",
-   "CD200",
-   "HOXC5",
-   "IGFBP7",
-   "ITM2A",
-   "MDK",
-   "RAMP2"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": true,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "Later-gestation prenatal fibroblasts (WNT2+ and PEAR1+ subsets) express genes involved in cellular senescence (CDKN1A), cytokine pathways (IL1R1) and collagen deposition (POSTN) that are also highly expressed in pathogenic fibroblasts of fibrotic skin disorders, indicating progressive acquisition of"
  },
  {
-  "outcome": "correct_without_span",
+  "outcome": "correct",
   "id": "C2",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": true,
-  "fraction": 1.0,
+  "correct": null,
+  "fraction": null,
   "missing": [],
   "grounded": true,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "The atlas argues that antigen presentation is not a key early macrophage function because MHCII genes are decoupled from pro-inflammatory genes before 11 PCW - pro-inflammatory genes are expressed early (from 6 PCW) while MHCII genes are only upregulated after 11 PCW."
  },
  {
-  "outcome": "correct_without_span",
+  "outcome": "correct",
   "id": "C2",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": true,
-  "fraction": 1.0,
+  "correct": null,
+  "fraction": null,
   "missing": [],
   "grounded": true,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "Because macrophages express pro-inflammatory genes from as early as 6 PCW but genes related to antigen presentation (e.g. MHCII) are only upregulated after 11 PCW, this decoupling suggests antigen presentation is not a key early function of macrophages."
  },
  {
-  "outcome": "correct_without_span",
+  "outcome": "correct",
   "id": "C3",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": true,
-  "fraction": 1.0,
+  "correct": null,
+  "fraction": null,
   "missing": [],
   "grounded": true,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "Prenatal skin TML macrophages are linked to microglia on the grounds that they share an expression profile with microglia-like macrophages from other developing organs (P2RY12, CX3CR1 and OLFML3), are highly correlated with embryonic brain microglia, and co-express immunomodulatory genes including i"
  },
  {
-  "outcome": "correct_without_span",
+  "outcome": "correct",
   "id": "C3",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": true,
-  "fraction": 1.0,
+  "correct": null,
+  "fraction": null,
   "missing": [],
   "grounded": true,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "Prenatal skin TML macrophages share an expression profile (P2RY12, CX3CR1, OLFML3) with microglia-like macrophages from other developing organs, and their transcriptomes were found to be highly correlated with embryonic brain microglia."
  },
  {
-  "outcome": "correct_without_span",
+  "outcome": "correct",
   "id": "C4",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": true,
-  "fraction": 1.0,
+  "correct": null,
+  "fraction": null,
   "missing": [],
   "grounded": true,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "In mice, the distinction between papillary and reticular fibroblasts occurs early (about embryonic day 12.5), whereas human prenatal skin fibroblasts do not significantly express papillary fibroblast markers (COL13A1), suggesting this distinction emerges after 17 PCW in humans."
  },
  {
-  "outcome": "correct_without_span",
+  "outcome": "correct",
   "id": "C4",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": true,
-  "fraction": 1.0,
+  "correct": null,
+  "fraction": null,
   "missing": [],
   "grounded": true,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "Unlike in mice, where the papillary/reticular fibroblast distinction occurs early (around embryonic day 12.5), human prenatal skin fibroblasts did not significantly express the papillary fibroblast marker COL13A1 up to 17 PCW, suggesting the distinction emerges only after 17 PCW in humans."
  },
  {
-  "outcome": "fabricated",
+  "outcome": "partial",
   "id": "C5",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "GATA2",
-   "VEGFA"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": false,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "The atlas supports this claim through: (1) showing macrophage subsets express angiogenic gene programs; (2) demonstrating fewer endothelial cells in immunodeficient organoids lacking macrophages; (3) showing more elaborate vascular networks in skin organoids co-cultured with macrophages vs controls."
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "correct",
   "id": "C5",
   "group": "C",
   "tag": "none",
   "condition": "whole",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "GATA2",
-   "VEGFA"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": true,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": "The atlas shows that adding iPS cell-derived macrophages to hair-bearing skin organoids produced a more elaborate and organized vascular network compared to control organoids without macrophages, and macrophages co-localized with blood vessels throughout culture."
  },
@@ -3178,7 +3522,7 @@
    "Gu"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3198,7 +3542,7 @@
    "Gu"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3217,7 +3561,7 @@
    "Wang"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3236,7 +3580,7 @@
    "Wang"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3255,7 +3599,7 @@
    "Driskell"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3274,7 +3618,7 @@
    "Driskell"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3293,7 +3637,7 @@
    "Suo"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3312,7 +3656,7 @@
    "Suo"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3331,7 +3675,7 @@
    "Lee"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3350,7 +3694,7 @@
    "Lee"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3370,7 +3714,7 @@
    "Takahashi"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3390,7 +3734,7 @@
    "Takahashi"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3409,7 +3753,7 @@
    "Kennedy"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3428,7 +3772,7 @@
    "Kennedy"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3448,7 +3792,7 @@
    "Dhariwala"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3468,7 +3812,7 @@
    "Dhariwala"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3487,7 +3831,7 @@
    "Larson"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3506,7 +3850,7 @@
    "Larson"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3525,7 +3869,7 @@
    "Wynn"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3544,7 +3888,7 @@
    "Wynn"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3564,7 +3908,7 @@
    "Goh"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3584,7 +3928,7 @@
    "Goh"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3603,7 +3947,7 @@
    "Kolter"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3622,7 +3966,7 @@
    "Kolter"
   ],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3639,7 +3983,7 @@
   "fraction": 1.0,
   "missing": [],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3656,7 +4000,7 @@
   "fraction": 1.0,
   "missing": [],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3673,7 +4017,7 @@
   "fraction": 1.0,
   "missing": [],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3690,7 +4034,7 @@
   "fraction": 1.0,
   "missing": [],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3707,7 +4051,7 @@
   "fraction": 1.0,
   "missing": [],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3724,7 +4068,7 @@
   "fraction": 1.0,
   "missing": [],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3741,7 +4085,7 @@
   "fraction": 1.0,
   "missing": [],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  },
@@ -3758,7 +4102,7 @@
   "fraction": 1.0,
   "missing": [],
   "grounded": null,
-  "span_present": false,
+  "span_present": null,
   "ctx_tokens": 23683,
   "answer": ""
  }

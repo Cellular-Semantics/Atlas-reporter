@@ -87,9 +87,13 @@ def main() -> int:
                                        "n_chunks": len(picked),
                                        "span_present": stage1.cost_to_answer(picked, it["span"])[0] is not None}
         # whole paper: identical for every item, written once
+        # span_present is None when the item has no marked span at all (C/D/F) — that is
+        # not the same as "the passage was withheld", and conflating them makes correct
+        # answers look like substitutions.
         conditions["whole"] = {"path": "stage2/contexts/__whole_paper.txt",
                                "n_tokens": sum(c["n_tokens"] for c in chs),
-                               "n_chunks": len(chs), "span_present": bool(it["span"])}
+                               "n_chunks": len(chs),
+                               "span_present": True if it["span"] else None}
         manifest.append({**it, "answer_key": key, "conditions": conditions})
         print(f"[{n}/{len(items)}] {it['id']}  {len(conditions)} conditions", flush=True)
 

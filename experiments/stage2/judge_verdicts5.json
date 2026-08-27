@@ -1,0 +1,12 @@
+{
+  "C1__whole__haiku": {"verdict": "correct", "why": "Captures the central later-gestation evidence (WNT2+/PEAR1+ fibroblasts expressing CDKN1A, IL1R1, POSTN shared with pathogenic fibrotic fibroblasts), exactly as supported by the quote."},
+  "C1__whole__sonnet": {"verdict": "correct", "why": "Same senescence/cytokine/collagen gene evidence as GOLD plus the correct interpretation that scar-promoting programmes are acquired progressively in later gestation."},
+  "C2__whole__haiku": {"verdict": "correct", "why": "States the decoupling argument precisely: pro-inflammatory genes from 6 PCW versus MHCII only after 11 PCW."},
+  "C2__whole__sonnet": {"verdict": "correct", "why": "Gives the same 6 PCW pro-inflammatory versus post-11 PCW MHCII decoupling reasoning as GOLD, matching the quoted conclusion."},
+  "C3__whole__haiku": {"verdict": "correct", "why": "Covers all three GOLD grounds: shared P2RY12/CX3CR1/OLFML3 profile, correlation with embryonic brain microglia, and immune-inhibitory gene co-expression."},
+  "C3__whole__sonnet": {"verdict": "correct", "why": "Gives the shared expression profile and the brain-microglia correlation; omits only the immune-inhibitory gene detail, which is supplementary to the core grounds."},
+  "C4__whole__haiku": {"verdict": "correct", "why": "Contrasts the mouse e12.5 split with absent COL13A1 papillary marker expression in human prenatal fibroblasts, as in GOLD."},
+  "C4__whole__sonnet": {"verdict": "correct", "why": "Same mouse-versus-human contrast with COL13A1 as the papillary marker and the post-17 PCW inference drawn in the quote."},
+  "C5__whole__haiku": {"verdict": "partial", "why": "The angiogenic gene programmes and organoid co-culture lines are correct and quote-supported, but the immunodeficient-organoid claim garbles the blood vessel organoid comparison and it misses the NicheNet/VEGFA and macrophage-endothelial interaction evidence."},
+  "C5__whole__sonnet": {"verdict": "correct", "why": "The macrophage co-culture organoid experiment showing a more elaborate, organized vascular network is a defensible, quote-supported line of support even though it differs from GOLD's chosen subset."}
+}

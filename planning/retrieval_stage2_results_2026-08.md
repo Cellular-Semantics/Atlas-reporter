@@ -1,6 +1,6 @@
 # Stage 2 results — does a model answer, and can its quotes be trusted?
 
-**August 2026, branch `test/retrieval-matrix`.** Complete: **210 reads plus three judge passes**, 42 items × 3
+**August 2026, branch `test/retrieval-matrix`.** Complete: **231 reads plus five judge passes**, 42 items × 3
 conditions × 2 models, run as Claude Code subagents on quota (no API billing).
 
 Follows `planning/retrieval_stage1_results_2026-08.md`. Raw data in `experiments/stage2/`
@@ -75,55 +75,42 @@ a verbatim quote the key didn't anticipate).
 
 ### Headline
 
-Split into two tables, because only 21 of the 42 items can be run under all four conditions.
-The other 21 (C synthesis, D citation, F unanswerable) have no marked span, so no retrieval
-slice was built for them and they exist only under `whole`. Putting them in one table made
-the `whole` row look like a 42-item condition competing against 21-item conditions.
+Two tables, because only 21 of the 42 items can run under every condition. The other 21
+(C synthesis, D citation, F unanswerable) have no marked span, so no retrieval slice exists
+for them and they appear only under `whole`.
 
-**Table 1 — the like-for-like comparison. 21 span items (A ×5, B ×16), all four conditions.**
+**Outcome vocabulary.** `correct` — right answer. `corr-abs` — the passage was not in the
+context and the reader said so; a success. `substituted` — the passage was withheld, the
+reader answered anyway, and its quote *is* in the supplied text: sourced and checkable, but
+not the paper's claim. `wrong` — passage present, answer wrong. `fabricated` — answered with
+a quote that is not in the context at all.
 
-| model | condition | n | correct | corr-absence | partial | wrong | **fabricated** | quotes exact |
+**Table 1 — like-for-like. 21 span items (A ×5, B ×16).**
+
+| model | condition | n | correct | corr-abs | substituted | partial | wrong | ctx tok |
 |---|---|---|---|---|---|---|---|---|
-| sonnet | `asta_b2k` | 21 | 18 | 2 | 0 | **1** | **0** | 19/19 |
-| sonnet | `hybrid_b2k` | 21 | 20 | 0 | 1 | **0** | **0** | 21/21 |
-| sonnet | `document_b2k` | 21 | 3 | 18 | 0 | **0** | **0** | 3/3 |
-| sonnet | `whole` | 21 | **21** | 0 | 0 | **0** | **0** | 21/21 |
-| haiku | `asta_b2k` | 21 | 18 | 2 | 0 | **1** | **0** | 16/19 |
-| haiku | `hybrid_b2k` | 21 | 20 | 0 | 1 | **0** | **0** | 18/21 |
-| haiku | `document_b2k` | 21 | 3 | 18 | 0 | **0** | **0** | 2/3 |
-| haiku | `whole` | 21 | 20 | 0 | 0 | **1** | **0** | 16/21 |
-
-Reading across a model's four rows: `whole` 21 or 20, `hybrid_b2k` 20, `asta_b2k` 18,
-`document_b2k` 3 — and `document_b2k`'s low score is not failure, it is 18 correct reports
-that the passage was withheld.
+| sonnet | `asta_b2k` | 21 | 16 | 2 | 2 | 0 | 1 | ≈1,788 |
+| sonnet | `asta_b8k` | 21 | 17 | 0 | **3** | 0 | 1 | ≈7,719 |
+| sonnet | `hybrid_b2k` | 21 | 19 | 0 | 1 | 1 | 0 | ≈1,895 |
+| sonnet | `document_b2k` | 21 | 3 | 18 | 0 | 0 | 0 | ≈1,891 |
+| sonnet | `whole` | 21 | **21** | 0 | 0 | 0 | 0 | ≈23,683 |
+| haiku | `asta_b2k` | 21 | 16 | 2 | 2 | 0 | 1 | ≈1,788 |
+| haiku | `hybrid_b2k` | 21 | 19 | 0 | 1 | 1 | 0 | ≈1,895 |
+| haiku | `document_b2k` | 21 | 3 | 18 | 0 | 0 | 0 | ≈1,891 |
+| haiku | `whole` | 21 | 20 | 0 | 0 | 0 | 1 | ≈23,683 |
 
 **Table 2 — items only ever run under `whole`. 21 items (C ×5, D ×12, F ×4).**
 
-| model | condition | n | correct | corr-absence | partial | wrong | **fabricated** | quotes exact |
-|---|---|---|---|---|---|---|---|---|
-| sonnet | `whole` | 21 | 5 | 16 | 0 | **0** | **0** | 5/5 |
-| haiku | `whole` | 21 | 4 | 16 | 0 | **0** | **1** | 4/5 |
+| model | condition | n | correct | corr-abs | partial | wrong | fabricated |
+|---|---|---|---|---|---|---|---|
+| sonnet | `whole` | 21 | 5 | 16 | 0 | 0 | 0 |
+| haiku | `whole` | 21 | 4 | 16 | 1 | 0 | 0 |
 
-The 16 correct-absences are the 12 D items (citation-following, impossible from body text —
-§4) plus the 4 F items (unanswerable by construction). Only the 5 C synthesis items are
-answerable here, and Sonnet gets 5/5, Haiku 4/5 with one fabrication. **This table is a
-fabrication and absence-reporting probe, not an accuracy comparison** — there is nothing to
-compare it against.
+The 16 correct-absences are the 12 D items (citation-following, impossible from body text)
+plus the 4 F items (unanswerable by construction). Only the 5 C synthesis items are
+answerable; this table is an absence-reporting probe, not an accuracy comparison.
 
-Every non-correct outcome in the entire 210-read run:
-
-| item | group | tag | condition | model | outcome |
-|---|---|---|---|---|---|
-| B2 | B | none | `hybrid_b2k` | sonnet | partial |
-| B2 | B | none | `hybrid_b2k` | haiku | partial |
-| B9 | B | term | `asta_b2k` | sonnet | wrong |
-| B9 | B | term | `asta_b2k` | haiku | wrong |
-| B9 | B | term | `whole` | haiku | wrong |
-| C5 | C | none | `whole` | haiku | fabricated |
-
-Six non-correct outcomes in 210 reads, on two items. **B9 fails in three of the eight
-model-condition cells** — the only question both models struggle with regardless of context,
-and the only `term`-tagged failure. Sonnet's sole errors anywhere are its two B9 reads.
+Across all 231 reads: **143 correct, 72 correct-absence, 9 substituted, 4 wrong, 3 partial.**
 
 ### 1. Context conditions compared — 21 span items, both models
 
@@ -231,6 +218,38 @@ missing ME1/ME5 labels — the same labels the original answer key wrongly treat
 gene symbols (§4b). **This one item has now tripped the scoring twice over the same
 microenvironment identifiers**, which is the clearest single argument for stating one
 intended answer per item rather than harvesting tokens from prose.
+
+### 1d. The 8k budget, and why a wider window over a lossy copy is not safe
+
+Stage 1 predicted both ASTA declines exactly: B11's span sits at rank 7 / 3,072 tokens, so an
+8k window should contain it; A3's text is absent from ASTA's copy of the paper, so no budget
+can reach it. Both held.
+
+| item | `asta_b2k` (≈1.8k) | `asta_b8k` (≈7.7k) |
+|---|---|---|
+| B11 | declined | **correct** — span now in window |
+| A3 | declined | **substituted** — answered, sourced, and wrong |
+
+B11 is the clean win. A3 is the finding. At 2k the reader declined; at 8k it answered:
+
+> "Macrophages are present from early gestation onward (the innate immune compartment,
+> including macrophages and ILCs, was already present from early gestation…); the prenatal
+> skin dataset itself spans 7-17 PCW."
+
+quoting a real sentence about innate immune cells. The paper's actual claim is **6 PCW**, and
+it lives only in the paragraph ASTA is missing.
+
+**So the extra context converted an honest decline into a confident, quote-backed, wrong
+answer.** The 2k window was *safer* precisely because it was too thin to support a plausible
+substitute. Raising the limit is therefore not a remedy for a coverage gap — it is what turns
+a visible gap into an invisible one. This is only detectable here because we independently
+know which spans ASTA lacks; in production nothing would flag it.
+
+All 9 substituted answers in the run are on ASTA, on the three items whose text is missing
+from its copy (A1, A3, B1) plus B9. None are on the local arms reading the PMC text.
+
+**On budget:** ASTA at ≈7,700 tokens reaches 20/21 — the same as the local hybrid at ≈1,900.
+Four times the context for parity, and the extra context brings the substitution risk with it.
 
 ### 2. Fabrication — 1 in 210
 
