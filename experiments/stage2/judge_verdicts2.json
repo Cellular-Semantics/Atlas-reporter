@@ -1,0 +1,20 @@
+{
+  "B10__document_b2k__haiku": {"verdict": "incorrect", "why": "No answer given."},
+  "B10__document_b2k__sonnet": {"verdict": "incorrect", "why": "No answer given."},
+  "B11__document_b2k__haiku": {"verdict": "incorrect", "why": "No answer given."},
+  "B11__document_b2k__sonnet": {"verdict": "incorrect", "why": "No answer given."},
+  "B2__document_b2k__haiku": {"verdict": "correct", "why": "Names endothelial and neural cells with the ME1/ME5 neurovascular microenvironments in the quote."},
+  "B2__document_b2k__sonnet": {"verdict": "correct", "why": "Matches gold exactly, including ME1 and ME5 neurovascular microenvironments."},
+  "B2__hybrid_b2k__haiku": {"verdict": "partial", "why": "Vascular and neural cells are a defensible paraphrase but it omits the endothelial/ME1-ME5 specificity and adds fibroblasts."},
+  "B2__hybrid_b2k__sonnet": {"verdict": "partial", "why": "Paper-supported summary of fibroblast/neural/vascular co-location but misses the explicit endothelial ME1/ME5 neurovascular statement."},
+  "B2__whole__haiku": {"verdict": "correct", "why": "Gives endothelial and neural cells in ME1/ME5 plus additional paper-supported partners."},
+  "B2__whole__sonnet": {"verdict": "correct", "why": "Endothelial and neural cells identified with ME1/ME5 support; fibroblasts is an accurate addition."},
+  "B3__document_b2k__haiku": {"verdict": "incorrect", "why": "No answer given."},
+  "B3__document_b2k__sonnet": {"verdict": "incorrect", "why": "No answer given."},
+  "B3__hybrid_b2k__haiku": {"verdict": "correct", "why": "Identifies Schwann cells in ME1, with WNT2+ fibroblasts as an accurate extra."},
+  "B3__hybrid_b2k__sonnet": {"verdict": "correct", "why": "Schwann cells in the early neurovascular microenvironment ME1, correctly quoted."},
+  "B3__whole__haiku": {"verdict": "correct", "why": "Names Schwann cells in the early neurovascular microenvironment plus supported WNT2+ fibroblast co-location."},
+  "B3__whole__sonnet": {"verdict": "correct", "why": "Schwann cells in ME1 quoted verbatim, matching gold."},
+  "B8__document_b2k__haiku": {"verdict": "incorrect", "why": "No answer given."},
+  "B8__document_b2k__sonnet": {"verdict": "incorrect", "why": "No answer given."}
+}

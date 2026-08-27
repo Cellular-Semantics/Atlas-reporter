@@ -10,20 +10,31 @@ Follows `planning/retrieval_stage1_results_2026-08.md`. Raw data in `experiments
 
 ## Summary
 
-1. **Fabrication is essentially absent.** 1 fabricated answer in 168 reads (Haiku); Sonnet
-   zero in 84. On the 21 items where the passage was deliberately withheld, both models
-   reported absence 18 times out of 21.
-2. **The whole paper does not beat a 2,000-token slice — it is slightly worse.** Sonnet
-   16 correct from the whole paper vs 15 from the slice, but 5 wrong vs 3. Haiku 14 vs 14,
-   with 7 wrong vs 4. More context produced *more* wrong answers, not fewer.
+**Read the corrections note first (§4b).** An earlier draft of this document reported two
+findings that the corrected scoring does not support. Both are retracted below.
+
+1. **Fabrication is essentially absent, and so are wrong answers.** 1 fabrication and 1
+   wrong answer in 168 reads, both Haiku. Sonnet: zero of either in 84 reads.
+2. **Absence is reported reliably.** On the 21 items where the passage was deliberately
+   withheld, both models said so 18 times out of 18 that it was genuinely missing.
 3. **Haiku splices quotes; Sonnet never does.** All 10 spliced quotes in the run are
-   Haiku's — two non-adjacent passages joined into one presented quote. Sonnet: 50/50
-   exact.
-4. **Citation-following is impossible from body text — 0/12 for both models**, and both
-   correctly said so. The reference list is stripped from our corpus, so "which paper backs
-   this claim" has no answer in the text we supply.
-5. **Term-abstraction hurts reading, not just retrieval.** Where the paper never uses the
-   question's relation word, both models score 3/6 even with the passage in front of them.
+   Haiku's. This is measured directly against the supplied text and is unaffected by the
+   answer-key problems below.
+4. **Citation-following is impossible from body text — 0/12 for both models**, correctly
+   declined. Our corpus strips the reference list.
+5. **The 2k slice and the whole paper are equivalent on accuracy** (Sonnet 21/21 vs ~20/21).
+   The case for the slice is cost — 10× fewer tokens — not accuracy.
+
+**Retracted from the earlier draft:**
+
+- ~~"The whole paper is worse than a 2k slice."~~ That rested on wrong-answer counts that
+  were almost entirely answer-key defects. Corrected, the whole paper is marginally *ahead*
+  (21/21 vs 19 correct + 1 partial + 1 other-supported). The honest finding is equivalence.
+- ~~"Term-abstraction hurts reading as well as retrieval (3/6)."~~ That 3/6 counted
+  judge-scored items my scorer had mislabelled. Corrected, the B-group failure rate is 8%
+  on matched-wording items and 4% on `term` items — **no abstraction penalty is detectable
+  at the reading step.** Stage 1's retrieval-side abstraction penalty stands; this stage
+  provides no evidence for one in reading.
 
 ---
 
@@ -61,31 +72,38 @@ a verbatim quote the key didn't anticipate).
 
 | model | condition | n | correct | corr-absence | wrong | **fabricated** | quotes exact |
 |---|---|---|---|---|---|---|---|
-| sonnet | `hybrid_b2k` | 21 | 15 | 0 | 3 | **0** | 21/21 |
-| sonnet | `document_b2k` | 21 | 3 | 18 | 0 | **0** | 3/3 |
-| sonnet | `whole` | 42 | 19 | 16 | 5 | **0** | 26/26 |
-| haiku | `hybrid_b2k` | 21 | 14 | 0 | 4 | **0** | 18/21 |
-| haiku | `document_b2k` | 21 | 2 | 18 | 1 | **0** | 2/3 |
-| haiku | `whole` | 42 | 17 | 16 | 7 | **1** | 20/26 |
+| sonnet | `hybrid_b2k` | 21 | 19 (+1 partial) | 0 | **0** | **0** | 21/21 |
+| sonnet | `document_b2k` | 21 | 3 | 18 | **0** | **0** | 3/3 |
+| sonnet | `whole` | 42 | 24 | 16 | **0** | **0** | 26/26 |
+| haiku | `hybrid_b2k` | 21 | 19 (+1 partial) | 0 | **0** | **0** | 18/21 |
+| haiku | `document_b2k` | 21 | 3 | 18 | **0** | **0** | 2/3 |
+| haiku | `whole` | 42 | 23 | 16 | **1** | **1** | 20/26 |
 
-### 1. Whole paper vs retrieved slice — like-for-like on the 21 span items
+Every non-correct outcome in the entire run, all 168 reads:
 
-| model | condition | correct | wrong |
-|---|---|---|---|
-| sonnet | `hybrid_b2k` (~2k tokens) | **15** | 3 |
-| sonnet | `whole` (~23.7k tokens) | 16 | **5** |
-| haiku | `hybrid_b2k` | **14** | 4 |
-| haiku | `whole` | 14 | **7** |
+| item | group | tag | condition | model | outcome |
+|---|---|---|---|---|---|
+| B2 | B | none | hybrid_b2k | sonnet | partial |
+| B2 | B | none | hybrid_b2k | haiku | partial |
+| B9 | B | term | whole | haiku | wrong |
+| C5 | C | none | whole | haiku | fabricated |
 
-**Ten times the context buys at most one extra correct answer, and costs more wrong ones.**
-Sonnet gains one correct but nearly doubles its errors; Haiku gains nothing and nearly
-doubles its errors. This is the non-monotonicity Stage 1 could not see: availability is
-monotone in context size, correctness is not.
+### 1. Whole paper vs retrieved slice — equivalent
 
-Practical reading: a good 2k slice is not a compromise against whole-paper reading — on
-this evidence it is the better input. That inverts the assumption behind "just give the
-model the paper", and it means Stage 1's finding (ranking is worth ~10×) compounds rather
-than being made irrelevant by large context windows.
+Like-for-like on the 21 span items:
+
+| model | `hybrid_b2k` (~2k tokens) | `whole` (~23.7k tokens) |
+|---|---|---|
+| sonnet | 19 correct, 1 partial, 1 other-supported | **21 correct** |
+| haiku | 19 correct, 1 partial, 1 other-supported | 20 correct, 1 wrong |
+
+The whole paper is marginally ahead — one item, within noise at n=21. **There is no
+accuracy penalty for reading a good 2,000-token slice instead of the whole paper, and no
+meaningful accuracy gain from the extra 21,700 tokens either.**
+
+That makes the case for retrieval a cost case, not a quality case: Stage 1's 10× token
+saving is achieved without measurable loss. It does not support the stronger claim, made in
+an earlier draft of this document, that extra context actively degrades accuracy.
 
 ### 2. Fabrication — 1 in 168
 
@@ -147,22 +165,52 @@ walked from body text alone. It needs the resolved reference list — which is e
 `<mixed-citation>` bug recorded in the setup findings). That bug is therefore not cosmetic:
 it removes the only route to citation-following for any AAAS-sourced paper.
 
-### 5. Abstraction hurts reading too
+### 4b. Answer-key defects — the harness was wrong more often than the readers
 
-Span items under `hybrid_b2k`, by how far the question's wording sits from the paper's:
+Asked whether the group-B failures were all abstraction items, the honest answer turned out
+to be: **there were almost no genuine failures.** Of 20 apparent B failures in the first
+scoring pass:
 
-| tag | sonnet | haiku |
-|---|---|---|
-| `none` | 9/11 | 8/11 |
-| `entity` | 2/2 | 2/2 |
-| `term` | **3/6** | **3/6** |
-| `both` | 1/2 | 1/2 |
+- **10 were judge-scored items mislabelled as wrong.** Items with no entity key fell through
+  to the correct/wrong branches instead of deferring to the judge — which had already marked
+  all 12 correct.
+- **9 were invalid keys.** B2 and B3 ask which *cell types* macrophages co-locate with; the
+  key extracted `ME1`/`ME5` — microenvironment *labels* — as gene symbols, so "endothelial
+  cells, neural cells and fibroblasts" scored wrong. B4 asks which gene is **newly**
+  identified; the key demanded `BARX2` and `SOX9`, which the gold answer explicitly calls
+  the *previously reported* ones. The readers answered `AGR2`, correctly.
+- **1 was genuine** — B9, where the reader gave a general angiogenesis answer without naming
+  the VEGFA→GATA2 mechanism. B9 is `term`-tagged.
 
-Stage 1 showed term-abstraction costs *retrieval* (BM25 degraded 3.6×). This shows it also
-costs *reading*: with the passage present in context, both models still answer only half of
-the `term` items. Asking "what is the function of X" against a paper that describes what X
-does without ever saying "function" is hard at both steps, and fixing retrieval alone will
-not fix it.
+So the single genuine reading failure in group B is an abstraction item; everything that
+looked like a matched-wording failure was the key.
+
+This is the third time entity-set keys produced a false failure (B13 earlier, now B2/B3/B4).
+The pattern is consistent: gold answers written as prose carry parenthetical context, labels
+and "previously reported" asides, and a regex harvesting capitalised tokens cannot tell those
+from the answer. **Future scoring should state one intended answer per item explicitly, or
+route to a judge. Deriving keys from prose answers does not work.**
+
+### 5. No abstraction penalty detectable at the reading step
+
+Failure rate across all scored B-group reads, by how far the question's wording sits from
+the paper's:
+
+| tag | failures / reads |
+|---|---|
+| `none` | 2/26 (8%) |
+| `term` | 1/24 (4%) |
+| `entity` | 0/8 |
+| `both` | 0/8 |
+
+With the passage in context, abstraction costs nothing measurable. An earlier draft reported
+`term` items at 3/6 and drew the opposite conclusion; that figure counted judge-scored items
+the scorer had mislabelled as wrong.
+
+**Stage 1's finding is unaffected** — abstraction hurts *retrieval* substantially (BM25
+degraded 3.6× on `term` items). What this stage shows is that once the right passage is in
+front of the model, the wording gap is no longer a problem. That localises the abstraction
+problem cleanly to retrieval, which is a more useful result than the one I first reported.
 
 ### 6. Judge pass — all 12 prose answers correct
 

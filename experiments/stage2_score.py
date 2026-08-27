@@ -49,6 +49,13 @@ def score_reference(ans: str, key: dict) -> tuple[bool, float, list[str]]:
     return got >= want, got / want, sorted(set(authors) - set(hit_auth))
 
 
+JUDGE = {}
+for _jf in ("judge_verdicts.json", "judge_verdicts2.json"):
+    _p = S2 / _jf
+    if _p.exists():
+        JUDGE.update(json.loads(_p.read_text()))
+
+
 def main() -> int:
     manifest = {i["id"]: i for i in json.loads((S2 / "manifest.json").read_text())}
     rows = []
@@ -93,7 +100,17 @@ def main() -> int:
         # Outcome taxonomy — the metric that matters. "Wrong" and "correctly
         # reported absent" are different things and must not be averaged.
         sp = cdata.get("span_present")
-        if mode == "refusal":
+        if mode == "judge":
+            # Judge-scored items have no entity key; a verdict file decides them.
+            # A DECLINE is never the judge's to rule on — absence is adjudicated the same
+            # way as for every other mode, against whether the passage was actually there.
+            if not answerable:
+                outcome = "correct_absence" if sp is False else "missed"
+            else:
+                v = JUDGE.get(f"{item_id}__{cond}__{model}", {}).get("verdict") or "unjudged"
+                outcome = {"correct": "correct", "partial": "partial",
+                           "incorrect": "wrong"}.get(v, "unjudged")
+        elif mode == "refusal":
             outcome = "correct_absence" if not answerable else "fabricated"
         elif not answerable:
             outcome = "correct_absence" if sp is False else "missed"

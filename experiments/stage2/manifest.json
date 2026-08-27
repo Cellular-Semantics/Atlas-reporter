@@ -448,7 +448,8 @@
     "span_present": true
    }
   },
-  "scoring": "entities"
+  "scoring": "judge",
+  "note": "key invalid: answer is cell types; ME1/ME5 are microenvironment labels"
  },
  {
   "id": "B3",
@@ -512,7 +513,8 @@
     "span_present": true
    }
   },
-  "scoring": "entities"
+  "scoring": "judge",
+  "note": "key invalid: answer is Schwann cells; ME1 is a microenvironment label"
  },
  {
   "id": "B4",
@@ -527,12 +529,10 @@
   "status": "candidate",
   "answer_key": {
    "genes": [
-    "AGR2",
-    "BARX2",
-    "SOX9"
+    "AGR2"
    ],
    "numbers": [],
-   "n_required": 3
+   "n_required": 1
   },
   "conditions": {
    "document_b2k": {
@@ -578,7 +578,8 @@
     "span_present": true
    }
   },
-  "scoring": "entities"
+  "scoring": "entities",
+  "note": "key trimmed: BARX2/SOX9 are the previously-reported genes, not the answer"
  },
  {
   "id": "B5",

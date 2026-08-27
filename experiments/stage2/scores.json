@@ -558,7 +558,7 @@
   "answer": ""
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B10",
   "group": "B",
   "tag": "term",
@@ -575,7 +575,7 @@
   "answer": "CXCL14 is a chemokine involved in chemotaxis that recruits regulatory T (Treg) cells, contributing to immune protection during early stages of matrix differentiation"
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B10",
   "group": "B",
   "tag": "term",
@@ -592,7 +592,7 @@
   "answer": "CXCL14 is a chemokine that recruits regulatory T (Treg) cells; prenatal hair matrix cells show increased CXCL14 expression, suggesting a role in Treg cell accumulation and immune protection during early matrix differentiation."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B10",
   "group": "B",
   "tag": "term",
@@ -609,7 +609,7 @@
   "answer": "CXCL14 in prenatal hair follicle matrix cells is a chemokine involved in chemotaxis that recruits regulatory T (Treg) cells and is involved in control of autoimmunity."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B10",
   "group": "B",
   "tag": "term",
@@ -660,7 +660,7 @@
   "answer": ""
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "correct",
   "id": "B11",
   "group": "B",
   "tag": "both",
@@ -677,7 +677,7 @@
   "answer": "FOXD1 and SOX2"
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "correct",
   "id": "B11",
   "group": "B",
   "tag": "both",
@@ -694,7 +694,7 @@
   "answer": "FOXD1 and SOX2 mark the dermal condensate (Dc); FOXD1+SOX2+."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B11",
   "group": "B",
   "tag": "both",
@@ -711,7 +711,7 @@
   "answer": "The dermal condensate is marked by FOXD1+ and SOX2+ expression."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B11",
   "group": "B",
   "tag": "both",
@@ -1492,20 +1492,17 @@
   "answer": "Treg cells are found primarily within and around hair follicles (compared to interfollicular skin) in prenatal skin, as early as 15 PCW."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B2",
   "group": "B",
   "tag": "none",
   "condition": "document_b2k",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "ME1",
-   "ME5"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": false,
   "span_present": true,
   "ctx_tokens": 1891,
@@ -1518,10 +1515,10 @@
   "tag": "none",
   "condition": "document_b2k",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": true,
-  "fraction": 1.0,
+  "correct": null,
+  "fraction": null,
   "missing": [],
   "grounded": true,
   "span_present": true,
@@ -1529,80 +1526,68 @@
   "answer": "Macrophages co-located with endothelial and neural cells (in the 'early and late neurovascular microenvironments', ME1 and ME5)."
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "partial",
   "id": "B2",
   "group": "B",
   "tag": "none",
   "condition": "hybrid_b2k",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "ME1",
-   "ME5"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": true,
   "span_present": false,
   "ctx_tokens": 1848,
   "answer": "Macrophages co-locate with fibroblasts, neural cells, and vascular cells in prenatal skin"
  },
  {
-  "outcome": "other_supported_answer",
+  "outcome": "partial",
   "id": "B2",
   "group": "B",
   "tag": "none",
   "condition": "hybrid_b2k",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "ME1",
-   "ME5"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": true,
   "span_present": false,
   "ctx_tokens": 1848,
   "answer": "Macrophage subsets in prenatal skin were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments (e.g., LYVE1+ macrophages with WNT2+ fibroblasts, and TML macrophages with Schwann cells and with WNT2+ fibroblasts)."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B2",
   "group": "B",
   "tag": "none",
   "condition": "whole",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "ME1",
-   "ME5"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": false,
   "span_present": true,
   "ctx_tokens": 23683,
   "answer": "Macrophages co-locate with multiple cell types in prenatal skin including endothelial cells, neural cells, fibroblasts (WNT2+ fibroblasts), and Schwann cells in distinct tissue microenvironments."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B2",
   "group": "B",
   "tag": "none",
   "condition": "whole",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "ME1",
-   "ME5"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": true,
   "span_present": true,
   "ctx_tokens": 23683,
@@ -1615,13 +1600,11 @@
   "tag": "none",
   "condition": "document_b2k",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": false,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "ME1"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": null,
   "span_present": false,
   "ctx_tokens": 1891,
@@ -1634,32 +1617,28 @@
   "tag": "none",
   "condition": "document_b2k",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": false,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "ME1"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": null,
   "span_present": false,
   "ctx_tokens": 1891,
   "answer": ""
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B3",
   "group": "B",
   "tag": "none",
   "condition": "hybrid_b2k",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "ME1"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": false,
   "span_present": true,
   "ctx_tokens": 1972,
@@ -1672,10 +1651,10 @@
   "tag": "none",
   "condition": "hybrid_b2k",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": true,
-  "fraction": 1.0,
+  "correct": null,
+  "fraction": null,
   "missing": [],
   "grounded": true,
   "span_present": true,
@@ -1683,19 +1662,17 @@
   "answer": "Besides endothelium, TML macrophages co-locate with Schwann cells (in the early neurovascular microenvironment, ME1) and with WNT2+ fibroblasts in early prenatal skin (6-8 PCW)."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B3",
   "group": "B",
   "tag": "none",
   "condition": "whole",
   "model": "haiku",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.0,
-  "missing": [
-   "ME1"
-  ],
+  "correct": null,
+  "fraction": null,
+  "missing": [],
   "grounded": false,
   "span_present": true,
   "ctx_tokens": 23683,
@@ -1708,10 +1685,10 @@
   "tag": "none",
   "condition": "whole",
   "model": "sonnet",
-  "mode": "entities",
+  "mode": "judge",
   "answerable": true,
-  "correct": true,
-  "fraction": 1.0,
+  "correct": null,
+  "fraction": null,
   "missing": [],
   "grounded": true,
   "span_present": true,
@@ -1730,9 +1707,7 @@
   "correct": false,
   "fraction": 0.0,
   "missing": [
-   "AGR2",
-   "BARX2",
-   "SOX9"
+   "AGR2"
   ],
   "grounded": null,
   "span_present": false,
@@ -1751,9 +1726,7 @@
   "correct": false,
   "fraction": 0.0,
   "missing": [
-   "AGR2",
-   "BARX2",
-   "SOX9"
+   "AGR2"
   ],
   "grounded": null,
   "span_present": false,
@@ -1761,7 +1734,7 @@
   "answer": ""
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B4",
   "group": "B",
   "tag": "none",
@@ -1769,19 +1742,16 @@
   "model": "haiku",
   "mode": "entities",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.3333333333333333,
-  "missing": [
-   "BARX2",
-   "SOX9"
-  ],
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
   "grounded": true,
   "span_present": true,
   "ctx_tokens": 1922,
   "answer": "AGR2"
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B4",
   "group": "B",
   "tag": "none",
@@ -1789,19 +1759,16 @@
   "model": "sonnet",
   "mode": "entities",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.3333333333333333,
-  "missing": [
-   "BARX2",
-   "SOX9"
-  ],
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
   "grounded": true,
   "span_present": true,
   "ctx_tokens": 1922,
   "answer": "AGR2"
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B4",
   "group": "B",
   "tag": "none",
@@ -1809,19 +1776,16 @@
   "model": "haiku",
   "mode": "entities",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.3333333333333333,
-  "missing": [
-   "BARX2",
-   "SOX9"
-  ],
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
   "grounded": true,
   "span_present": true,
   "ctx_tokens": 23683,
   "answer": "AGR2 is the newly identified gene upregulated in DPYSL2+ basal cells along the ORS/CL trajectory."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B4",
   "group": "B",
   "tag": "none",
@@ -1829,12 +1793,9 @@
   "model": "sonnet",
   "mode": "entities",
   "answerable": true,
-  "correct": false,
-  "fraction": 0.3333333333333333,
-  "missing": [
-   "BARX2",
-   "SOX9"
-  ],
+  "correct": true,
+  "fraction": 1.0,
+  "missing": [],
   "grounded": true,
   "span_present": true,
   "ctx_tokens": 23683,
@@ -2093,7 +2054,7 @@
   "answer": ""
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B8",
   "group": "B",
   "tag": "term",
@@ -2110,7 +2071,7 @@
   "answer": "TML macrophages interact with Schwann cells to contribute to synapse formation and axon guidance, supporting the establishment of the skin peripheral nervous system during early gestation"
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B8",
   "group": "B",
   "tag": "term",
@@ -2127,7 +2088,7 @@
   "answer": "TREM2+ microglia-like (TML) macrophages are predicted to co-locate with Schwann cells and interact with them (via VEGFA-NRP1, VEGFA-NRP2, SEMA3C-NRP2, SEMA3E-PLXND1) to contribute to synapse formation and axon guidance, suggesting they support establishment of the skin peripheral nervous system duri"
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B8",
   "group": "B",
   "tag": "term",
@@ -2144,7 +2105,7 @@
   "answer": "TREM2+ microglia-like macrophages support the establishment of the skin peripheral nervous system through interactions with Schwann cells that contribute to synapse formation and axon guidance via ligand-receptor pairs including VEGFA\u2013NRP1, VEGFA\u2013NRP2, SEMA3C\u2013NRP2, and SEMA3E\u2013PLXND1."
  },
  {
-  "outcome": "wrong",
+  "outcome": "correct",
   "id": "B8",
   "group": "B",
   "tag": "term",
