@@ -13,8 +13,9 @@ Follows `planning/retrieval_stage1_results_2026-08.md`. Raw data in `experiments
 **Read the corrections note first (§4b).** An earlier draft of this document reported two
 findings that the corrected scoring does not support. Both are retracted below.
 
-1. **Fabrication is essentially absent, and so are wrong answers.** 1 fabrication and 1
-   wrong answer in 210 reads, both Haiku. Sonnet: zero of either in 84 reads.
+1. **Fabrication is essentially absent, and wrong answers are rare.** 1 fabrication and 3
+   wrong answers in 210 reads, plus 2 partials — six non-correct outcomes in total,
+   concentrated on two items (B9 and C5). Sonnet's only errors are two reads of B9.
 2. **Absence is reported reliably.** On the 21 items where the passage was deliberately
    withheld, both models said so 18 times out of 18 that it was genuinely missing.
 3. **Haiku splices quotes; Sonnet never does.** All 10 spliced quotes in the run are
@@ -74,23 +75,37 @@ a verbatim quote the key didn't anticipate).
 
 ### Headline, all 210 reads
 
-| model | condition | n | correct | corr-absence | wrong | **fabricated** | quotes exact |
-|---|---|---|---|---|---|---|---|
-| sonnet | `hybrid_b2k` | 21 | 19 (+1 partial) | 0 | **0** | **0** | 21/21 |
-| sonnet | `document_b2k` | 21 | 3 | 18 | **0** | **0** | 3/3 |
-| sonnet | `whole` | 42 | 24 | 16 | **0** | **0** | 26/26 |
-| haiku | `hybrid_b2k` | 21 | 19 (+1 partial) | 0 | **0** | **0** | 18/21 |
-| haiku | `document_b2k` | 21 | 3 | 18 | **0** | **0** | 2/3 |
-| haiku | `whole` | 42 | 23 | 16 | **1** | **1** | 20/26 |
+| model | condition | n | correct | corr-absence | partial | wrong | **fabricated** | quotes exact |
+|---|---|---|---|---|---|---|---|---|
+| sonnet | `asta_b2k` | 21 | 18 | 2 | 0 | **1** | **0** | 19/19 |
+| sonnet | `hybrid_b2k` | 21 | 20 | 0 | 1 | **0** | **0** | 21/21 |
+| sonnet | `document_b2k` | 21 | 3 | 18 | 0 | **0** | **0** | 3/3 |
+| sonnet | `whole` | 42 | 26 | 16 | 0 | **0** | **0** | 26/26 |
+| haiku | `asta_b2k` | 21 | 18 | 2 | 0 | **1** | **0** | 16/19 |
+| haiku | `hybrid_b2k` | 21 | 20 | 0 | 1 | **0** | **0** | 18/21 |
+| haiku | `document_b2k` | 21 | 3 | 18 | 0 | **0** | **0** | 2/3 |
+| haiku | `whole` | 42 | 24 | 16 | 0 | **1** | **1** | 20/26 |
 
-Every non-correct outcome in the entire run, all 210 reads:
+Rows sum to 210. "Correct" includes answers the judge accepted and answers supported by a
+verbatim quote the key did not anticipate. "Corr-absence" is the reader correctly reporting
+that the passage was not in its context — a success, not a miss. "Quotes exact" counts only
+reads where an answer was claimed.
+
+Every non-correct outcome in the entire run:
 
 | item | group | tag | condition | model | outcome |
 |---|---|---|---|---|---|
-| B2 | B | none | hybrid_b2k | sonnet | partial |
-| B2 | B | none | hybrid_b2k | haiku | partial |
-| B9 | B | term | whole | haiku | wrong |
-| C5 | C | none | whole | haiku | fabricated |
+| B2 | B | none | `hybrid_b2k` | sonnet | partial |
+| B2 | B | none | `hybrid_b2k` | haiku | partial |
+| B9 | B | term | `asta_b2k` | sonnet | wrong |
+| B9 | B | term | `asta_b2k` | haiku | wrong |
+| B9 | B | term | `whole` | haiku | wrong |
+| C5 | C | none | `whole` | haiku | fabricated |
+
+Six non-correct outcomes in 210 reads, concentrated on two items. **B9 fails in three of the
+eight model-condition cells** — the one question in the set that both models struggle with
+regardless of context, and the only `term`-tagged failure. Sonnet's sole errors anywhere are
+its two B9 reads.
 
 ### 1. Context conditions compared — 21 span items, both models
 
