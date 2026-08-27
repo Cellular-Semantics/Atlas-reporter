@@ -73,25 +73,44 @@ a verbatim quote the key didn't anticipate).
 
 ## Results
 
-### Headline, all 210 reads
+### Headline
+
+Split into two tables, because only 21 of the 42 items can be run under all four conditions.
+The other 21 (C synthesis, D citation, F unanswerable) have no marked span, so no retrieval
+slice was built for them and they exist only under `whole`. Putting them in one table made
+the `whole` row look like a 42-item condition competing against 21-item conditions.
+
+**Table 1 — the like-for-like comparison. 21 span items (A ×5, B ×16), all four conditions.**
 
 | model | condition | n | correct | corr-absence | partial | wrong | **fabricated** | quotes exact |
 |---|---|---|---|---|---|---|---|---|
 | sonnet | `asta_b2k` | 21 | 18 | 2 | 0 | **1** | **0** | 19/19 |
 | sonnet | `hybrid_b2k` | 21 | 20 | 0 | 1 | **0** | **0** | 21/21 |
 | sonnet | `document_b2k` | 21 | 3 | 18 | 0 | **0** | **0** | 3/3 |
-| sonnet | `whole` | 42 | 26 | 16 | 0 | **0** | **0** | 26/26 |
+| sonnet | `whole` | 21 | **21** | 0 | 0 | **0** | **0** | 21/21 |
 | haiku | `asta_b2k` | 21 | 18 | 2 | 0 | **1** | **0** | 16/19 |
 | haiku | `hybrid_b2k` | 21 | 20 | 0 | 1 | **0** | **0** | 18/21 |
 | haiku | `document_b2k` | 21 | 3 | 18 | 0 | **0** | **0** | 2/3 |
-| haiku | `whole` | 42 | 24 | 16 | 0 | **1** | **1** | 20/26 |
+| haiku | `whole` | 21 | 20 | 0 | 0 | **1** | **0** | 16/21 |
 
-Rows sum to 210. "Correct" includes answers the judge accepted and answers supported by a
-verbatim quote the key did not anticipate. "Corr-absence" is the reader correctly reporting
-that the passage was not in its context — a success, not a miss. "Quotes exact" counts only
-reads where an answer was claimed.
+Reading across a model's four rows: `whole` 21 or 20, `hybrid_b2k` 20, `asta_b2k` 18,
+`document_b2k` 3 — and `document_b2k`'s low score is not failure, it is 18 correct reports
+that the passage was withheld.
 
-Every non-correct outcome in the entire run:
+**Table 2 — items only ever run under `whole`. 21 items (C ×5, D ×12, F ×4).**
+
+| model | condition | n | correct | corr-absence | partial | wrong | **fabricated** | quotes exact |
+|---|---|---|---|---|---|---|---|---|
+| sonnet | `whole` | 21 | 5 | 16 | 0 | **0** | **0** | 5/5 |
+| haiku | `whole` | 21 | 4 | 16 | 0 | **0** | **1** | 4/5 |
+
+The 16 correct-absences are the 12 D items (citation-following, impossible from body text —
+§4) plus the 4 F items (unanswerable by construction). Only the 5 C synthesis items are
+answerable here, and Sonnet gets 5/5, Haiku 4/5 with one fabrication. **This table is a
+fabrication and absence-reporting probe, not an accuracy comparison** — there is nothing to
+compare it against.
+
+Every non-correct outcome in the entire 210-read run:
 
 | item | group | tag | condition | model | outcome |
 |---|---|---|---|---|---|
@@ -102,10 +121,9 @@ Every non-correct outcome in the entire run:
 | B9 | B | term | `whole` | haiku | wrong |
 | C5 | C | none | `whole` | haiku | fabricated |
 
-Six non-correct outcomes in 210 reads, concentrated on two items. **B9 fails in three of the
-eight model-condition cells** — the one question in the set that both models struggle with
-regardless of context, and the only `term`-tagged failure. Sonnet's sole errors anywhere are
-its two B9 reads.
+Six non-correct outcomes in 210 reads, on two items. **B9 fails in three of the eight
+model-condition cells** — the only question both models struggle with regardless of context,
+and the only `term`-tagged failure. Sonnet's sole errors anywhere are its two B9 reads.
 
 ### 1. Context conditions compared — 21 span items, both models
 
