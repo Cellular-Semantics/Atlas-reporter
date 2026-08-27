@@ -50,7 +50,7 @@ def score_reference(ans: str, key: dict) -> tuple[bool, float, list[str]]:
 
 
 JUDGE = {}
-for _jf in ("judge_verdicts.json", "judge_verdicts2.json"):
+for _jf in ("judge_verdicts.json", "judge_verdicts2.json", "judge_verdicts3.json"):
     _p = S2 / _jf
     if _p.exists():
         JUDGE.update(json.loads(_p.read_text()))

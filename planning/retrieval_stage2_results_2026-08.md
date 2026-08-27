@@ -1,6 +1,6 @@
 # Stage 2 results — does a model answer, and can its quotes be trusted?
 
-**August 2026, branch `test/retrieval-matrix`.** Complete: **168 reads plus a 12-case judge pass**, 42 items × 3
+**August 2026, branch `test/retrieval-matrix`.** Complete: **210 reads plus three judge passes**, 42 items × 3
 conditions × 2 models, run as Claude Code subagents on quota (no API billing).
 
 Follows `planning/retrieval_stage1_results_2026-08.md`. Raw data in `experiments/stage2/`
@@ -22,8 +22,12 @@ findings that the corrected scoring does not support. Both are retracted below.
    answer-key problems below.
 4. **Citation-following is impossible from body text — 0/12 for both models**, correctly
    declined. Our corpus strips the reference list.
-5. **The 2k slice and the whole paper are equivalent on accuracy** (Sonnet 21/21 vs ~20/21).
+5. **The 2k slice and the whole paper are equivalent on accuracy** (Sonnet 21/21 vs 20/21).
    The case for the slice is cost — 10× fewer tokens — not accuracy.
+6. **ASTA trails the local hybrid at equal token budget** (18/21 vs 20/21, both models),
+   because its chunks are ~2× larger — 5 passages vs 11 for the same ~1,800 tokens — and
+   its copy of the paper is lossier. Stage 1's "ASTA has the best tail" holds for ranking
+   position but does not survive a fixed *token* budget.
 
 **Retracted from the earlier draft:**
 
@@ -88,22 +92,42 @@ Every non-correct outcome in the entire run, all 168 reads:
 | B9 | B | term | whole | haiku | wrong |
 | C5 | C | none | whole | haiku | fabricated |
 
-### 1. Whole paper vs retrieved slice — equivalent
+### 1. Context conditions compared — 21 span items, both models
 
-Like-for-like on the 21 span items:
+ASTA was named in the plan as a carried-forward arm, was omitted from the first run when I
+trimmed for dispatch count, and has now been filled in (42 additional reads).
 
-| model | `hybrid_b2k` (~2k tokens) | `whole` (~23.7k tokens) |
-|---|---|---|
-| sonnet | 19 correct, 1 partial, 1 other-supported | **21 correct** |
-| haiku | 19 correct, 1 partial, 1 other-supported | 20 correct, 1 wrong |
+| condition | median context | sonnet | haiku |
+|---|---|---|---|
+| `asta_b2k` | 1,788 tok (5 chunks) | 18/21 | 18/21 |
+| `hybrid_b2k` | 1,895 tok (11 chunks) | **20/21** | **20/21** |
+| `whole` | 23,683 tok | **21/21** | 20/21 |
 
-The whole paper is marginally ahead — one item, within noise at n=21. **There is no
-accuracy penalty for reading a good 2,000-token slice instead of the whole paper, and no
-meaningful accuracy gain from the extra 21,700 tokens either.**
+("Answered correctly" counts correct plus other-supported; the remainder is 1 partial for
+`hybrid`, and for `asta` 2 correct-absences plus 1 wrong.)
 
-That makes the case for retrieval a cost case, not a quality case: Stage 1's 10× token
-saving is achieved without measurable loss. It does not support the stronger claim, made in
-an earlier draft of this document, that extra context actively degrades accuracy.
+**Whole paper vs 2k slice: equivalent.** Sonnet 21/21 vs 20/21, Haiku 20/21 vs 20/21 —
+one item either way at n=21. There is no accuracy penalty for reading a good 2,000-token
+slice rather than the whole 23,700-token paper, and no meaningful gain from the extra
+21,700 tokens. The case for retrieval is therefore **cost, not quality**: Stage 1's 10×
+token saving comes without measurable loss.
+
+**ASTA is modestly behind the local hybrid at equal budget** — 18/21 vs 20/21 for both
+models. Two mechanisms, both visible in the data rather than inferred:
+
+- **Chunk granularity.** ASTA's chunks are roughly twice the size of ours, so ~1,800 tokens
+  buys a median of **5 ASTA passages against 11 hybrid passages**. At a fixed token budget
+  you get half as many distinct places in the paper.
+- **Coverage.** The gold span is present in 16/21 ASTA slices vs 18/21 hybrid slices, and
+  for A3 the span is absent from ASTA's *copy of the paper* entirely (the 11% body-text gap
+  measured in the setup findings). Both of ASTA's correct-absences are cases where the
+  reader correctly reported text it was never given.
+
+This does not contradict Stage 1, but it does re-frame it. Stage 1 measured *where the
+answer sits in each arm's ranking* and found ASTA's tail best — it never blew up. Stage 2
+measures *what a fixed token budget actually delivers*, and there ASTA's coarser chunks and
+lossier copy cost it. Consistency is worth less than it looked once the budget is fixed in
+tokens rather than in chunks.
 
 ### 2. Fabrication — 1 in 168
 
@@ -269,8 +293,6 @@ wrong headline:
 - **One paper, 42 items.** The large effects here (splicing, absence reporting, D-group
   decline) are unambiguous; the small ones (16 vs 15 correct) are not. Do not read a
   one-item difference as a model ranking.
-- **`asta` was not run as a Stage 2 arm.** Conditions were `hybrid_b2k`, `document_b2k` and
-  `whole`; ASTA's Stage 1 tail advantage is untested at the reading step.
 - **Subagent isolation is instructed, not enforced.** The leak audit is the check on this,
   and it came back clean — but it can only detect leakage that leaves a quote trail.
 - **The judge pass used a single Opus judge with the gold answer in hand.** 12/12 correct

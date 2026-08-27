@@ -18,9 +18,9 @@ from pathlib import Path
 HERE = Path(__file__).parent
 S2 = HERE / "stage2"
 JOBS = S2 / "jobs"
-BATCH = {"whole": 9, "hybrid_b2k": 7, "document_b2k": 7}
+BATCH = {"whole": 9, "hybrid_b2k": 7, "document_b2k": 7, "asta_b2k": 7}
 MODELS = ("sonnet", "haiku")
-CONDITIONS = ("hybrid_b2k", "document_b2k", "whole")
+CONDITIONS = ("asta_b2k",)  # gap-fill: named in the plan, missed in the first run
 
 
 def main() -> int:
