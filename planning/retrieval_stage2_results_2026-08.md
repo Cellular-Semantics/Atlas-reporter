@@ -162,6 +162,76 @@ measures *what a fixed token budget actually delivers*, and there ASTA's coarser
 lossier copy cost it. Consistency is worth less than it looked once the budget is fixed in
 tokens rather than in chunks.
 
+### 1b. The two ASTA declines, in full
+
+Both of ASTA's correct-absences were declined by both models, and they fail for different
+reasons worth separating.
+
+**A3 — "How early do macrophages seed prenatal skin?"** (gold: 6 PCW)
+
+| condition | span present | outcome |
+|---|---|---|
+| `asta_b2k` | no | declined, both models |
+| `hybrid_b2k` | yes | correct, both models |
+| `whole` | yes | correct, both models |
+
+This is one of the three spans Stage 1 found missing from **ASTA's copy of the paper
+entirely** — inside the seven-sentence gap at the head of the Main text. ASTA could not have
+surfaced it at any limit. The ranking is not at fault; the ingest is.
+
+**B11 — "Which genes mark the dermal condensate?"**
+
+| condition | span present | outcome |
+|---|---|---|
+| `asta_b2k` | no | declined, both models |
+| `hybrid_b2k` | **no** | **correct, both models** |
+| `whole` | yes | correct, both models |
+
+The more instructive case: the gold span is absent from *both* 2k slices. Under `hybrid_b2k`
+both models nonetheless answered correctly — this is the FOXD1/SOX2 case, where they found a
+different passage stating the Dc *is* FOXD1+SOX2+ and answered from that. Under ASTA's slice
+they found no usable route and declined.
+
+Same budget, same missing gold span, different outcome. **Hybrid's ~11 smaller passages
+happened to contain an alternative route to the answer; ASTA's ~5 larger ones did not.** So
+the granularity deficit is not only that ASTA ranks worse — fewer, coarser passages give the
+reader fewer chances to find a second way in. That is a sharper statement of the mechanism
+than the aggregate 18-vs-20 conveys.
+
+**What these cost in practice.** Both declines are correct behaviour and are scored as
+successes. But in a real run they are two cell types with no evidence gathered, and the
+pipeline has no signal distinguishing "ASTA's copy lacks this text" (A3) from "the paper does
+not say" (what a decline looks like from outside). The indexing band from #22 addresses the
+first case; nothing currently addresses the second.
+
+### 1c. The one partial — B2 under `hybrid_b2k`
+
+**Question:** "Which cell types do macrophages co-locate with in prenatal skin?"
+**Gold:** Endothelial and neural cells, in the early and late neurovascular microenvironments
+(ME1, ME5).
+**Sonnet answered:** "Macrophage subsets in prenatal skin were predicted to co-locate with
+fibroblasts, neural cells and vascular cells in distinct tissue microenvironments (e.g.,
+LYVE1+ macrophages with WNT2+ fibroblasts, and TML macrophages with Schwann cells and with
+WNT2+ fibroblasts)."
+**Its quote**, verbatim from the supplied context: "macrophage subsets (Extended Data Fig.
+7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in
+distinct tissue microenvironments in early gestation"
+**Judge:** partial — "Paper-supported summary of fibroblast/neural/vascular co-location but
+misses the explicit endothelial ME1/ME5 neurovascular statement."
+
+**The gold span was not in this slice.** Retrieval missed the sentence naming ME1/ME5; the
+reader found a different relevant sentence and answered accurately from it. So this is a
+retrieval miss partially recovered by the reader, not a reading failure — it got neural cells
+right, said "vascular cells" where the gold says "endothelial cells" (a paraphrase at this
+level of description), correctly added fibroblasts, and missed only the ME1/ME5 framing that
+lives in the sentence it was never shown.
+
+It is arguably scored too harshly, and for a familiar reason: the partial hinges on the
+missing ME1/ME5 labels — the same labels the original answer key wrongly treated as required
+gene symbols (§4b). **This one item has now tripped the scoring twice over the same
+microenvironment identifiers**, which is the clearest single argument for stating one
+intended answer per item rather than harvesting tokens from prose.
+
 ### 2. Fabrication — 1 in 210
 
 On `document_b2k`, where the answer was withheld for 18 of 21 items, both models reported
