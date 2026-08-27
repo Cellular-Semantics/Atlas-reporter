@@ -326,3 +326,58 @@ def test_no_cached_refs_when_file_missing_or_empty(tmp_path) -> None:
     assert _cached_ref_resolution(d, {"source_sha": "abc"}, "abc") is None
     (d / "ref_resolution.json").write_text("not json")
     assert _cached_ref_resolution(d, {"source_sha": "abc"}, "abc") is None
+
+
+# ---------------------------------------------------------------------------
+# Non-prose exclusion + document order (#35)
+# ---------------------------------------------------------------------------
+
+# Nature-style layout: <fig> and <supplementary-material> sit *inside* body <p>,
+# and one main-text paragraph sits directly under <body> between two sections.
+JATS_NON_PROSE_FIXTURE = dedent("""\
+    <?xml version="1.0"?>
+    <article>
+      <body>
+        <sec>
+          <title>Results</title>
+          <p>Hair pegs were evident beneath a stratified epidermal layer (Fig. 2a).<fig
+              id="Fig2"><label>Fig. 2</label><caption><title>Human prenatal HF
+              development.</title><p>a, Representative images stained with
+              haematoxylin and eosin. Scale bars, 200 um.</p></caption></fig> The
+              dermis remained sparsely populated at this stage.</p>
+          <p>Marker expression was confirmed by immunofluorescence.<supplementary-material
+              id="MOESM1"><caption><p>Supplementary Table 22. Macrophage subset
+              DEGs.</p></caption></supplementary-material></p>
+        </sec>
+        <p>This standalone paragraph sits directly under body, between sections.</p>
+        <sec>
+          <title>Discussion</title>
+          <div><p>Nested inside a wrapper element that is not a sec.</p></div>
+        </sec>
+      </body>
+    </article>
+""")
+
+
+@pytest.mark.unit
+def test_figure_legends_are_not_spliced_into_prose() -> None:
+    segments = extract_body_segments(JATS_NON_PROSE_FIXTURE)
+    body = " ".join(s.text for s in segments)
+    assert "Representative images" not in body
+    assert "Human prenatal HF" not in body
+    assert "Supplementary Table 22" not in body
+    # The prose either side of the removed <fig> survives, in order.
+    first = next(s.text for s in segments if "Hair pegs" in s.text)
+    assert first.index("Hair pegs") < first.index("dermis remained")
+
+
+@pytest.mark.unit
+def test_body_paragraphs_returned_in_document_order() -> None:
+    segments = extract_body_segments(JATS_NON_PROSE_FIXTURE)
+    texts = [s.text for s in segments]
+    standalone = next(i for i, t in enumerate(texts) if "standalone paragraph" in t)
+    results = next(i for i, t in enumerate(texts) if "Hair pegs" in t)
+    discussion = next(i for i, t in enumerate(texts) if "Nested inside a wrapper" in t)
+    assert results < standalone < discussion
+    # Paragraphs nested in non-<sec> wrappers are found, and keep their section.
+    assert segments[discussion].section == "Discussion"

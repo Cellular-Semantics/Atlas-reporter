@@ -181,8 +181,25 @@ def _contains_bibr(el: ET.Element) -> bool:
     return any(_is_bibr_xref(g) for g in el.iter())
 
 
+# Elements whose text is not part of the running prose. In Nature-style JATS
+# these sit *inside* body <p>, so serialising a paragraph's descendants without
+# skipping them splices figure legends onto the end of the prose (#35). Their
+# tails are still kept — the prose resumes after the element.
+_NON_PROSE_TAGS = frozenset(
+    {
+        "ref-list",
+        "table-wrap",
+        "fig",
+        "fig-group",
+        "supplementary-material",
+        "boxed-text",
+        "disp-formula",
+    }
+)
+
+
 def _text_of(el: ET.Element, in_citation: bool = False) -> str:
-    """Concatenate all descendant text, skipping ref-list and tables.
+    """Concatenate all descendant text, skipping non-prose blocks.
 
     Wraps citation markers in brackets so the rendered text shows e.g.
     ``[12-15]`` rather than a bare ``12-15`` run.
@@ -191,7 +208,9 @@ def _text_of(el: ET.Element, in_citation: bool = False) -> str:
     if el.text:
         parts.append(el.text)
     for child in el:
-        if child.tag in {"ref-list", "table-wrap"}:
+        if child.tag in _NON_PROSE_TAGS:
+            if child.tail:
+                parts.append(child.tail)
             continue
         is_citation_block = (child.tag == "sup" and _contains_bibr(child)) or _is_bibr_xref(child)
         if is_citation_block and not in_citation:
@@ -220,27 +239,29 @@ def extract_body_segments(xml: str) -> list[_BodySegment]:
     if body is None:
         return segments
 
-    def walk(sec_el: ET.Element, parent_title: str) -> None:
-        title_el = sec_el.find("title")
-        title = (
-            re.sub(r"\s+", " ", _text_of(title_el)).strip()
-            if title_el is not None
-            else parent_title
-        )
-        for child in sec_el:
+    # One recursive walk in document order. Some publishers (AAAS) put main-text
+    # paragraphs directly under <body> or inside non-<sec> wrappers; walking
+    # <sec> subtrees first and appending stray <p> afterwards returned them out
+    # of order and missed anything nested (#35).
+    def walk(el: ET.Element, title: str) -> None:
+        for child in el:
+            if child.tag in _NON_PROSE_TAGS:
+                continue
             if child.tag == "sec":
-                walk(child, title)
+                # `is not None` matters: an Element with no children is falsy.
+                title_el = child.find("title")
+                sec_title = (
+                    re.sub(r"\s+", " ", _text_of(title_el)).strip() if title_el is not None else ""
+                )
+                walk(child, sec_title or title)
             elif child.tag == "p":
                 txt = re.sub(r"\s+", " ", _text_of(child)).strip()
                 if txt:
                     segments.append(_BodySegment(title, txt))
+            elif child.tag != "title":
+                walk(child, title)
 
-    for sec in body.findall("sec"):
-        walk(sec, "BODY")
-    for p in body.findall("p"):
-        txt = re.sub(r"\s+", " ", _text_of(p)).strip()
-        if txt:
-            segments.append(_BodySegment("BODY", txt))
+    walk(body, "BODY")
 
     return segments
 
