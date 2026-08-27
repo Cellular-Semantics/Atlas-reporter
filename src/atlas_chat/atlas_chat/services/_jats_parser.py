@@ -80,6 +80,71 @@ def _strip_namespace_from_tree(root: ET.Element) -> None:
 # ---------------------------------------------------------------------------
 
 
+# AAAS (Science) JATS puts no structured children inside <mixed-citation>: the
+# whole reference is one <named-content content-type="citation-string"> blob and
+# the identifiers are <ext-link ext-link-type="doi|pmid|pmcid">. Without the two
+# helpers below the parser returns a ResolvedRef with every field None for an
+# entire publisher class, silently (#35).
+
+_ID_LINK_TYPES = {"doi": "doi", "pmid": "pmid", "pmcid": "pmcid"}
+
+# "Park J-E, Jardine L, Haniffa M. Prenatal development of human immunity.
+#  Science. 2020;368:600-603. doi: 10.1126/science.aaz9330."
+_CITE_YEAR_RE = re.compile(r"\b((?:19|20)\d{2})\b(?=[;:]|\s*doi)")
+_CITE_SURNAME_RE = re.compile(r"^([A-Z][\w'\u2019]+(?:-[\w'\u2019]+)*)[\s,]")
+_CITE_DOI_RE = re.compile(r"\bdoi:\s*(10\.\S+?)\.?\s*$", re.IGNORECASE)
+
+
+def _ids_from_ext_links(ref_elem: ET.Element) -> dict[str, str]:
+    """Collect doi/pmid/pmcid from ``<ext-link ext-link-type=...>`` children.
+
+    Namespaces are stripped upstream, so ``xlink:href`` reads as ``href``.
+    """
+    found: dict[str, str] = {}
+    for link in ref_elem.iter("ext-link"):
+        key = _ID_LINK_TYPES.get((link.get("ext-link-type") or "").lower())
+        if not key or key in found:
+            continue
+        val = (link.get("href") or "").strip() or "".join(link.itertext()).strip()
+        if val:
+            found[key] = val
+    return found
+
+
+def _parse_citation_string(text: str) -> dict[str, object]:
+    """Pull first author, title, year and DOI out of an unstructured citation.
+
+    Best-effort on the ``AUTHORS. TITLE. JOURNAL. YEAR;VOL:PAGES. doi: DOI.``
+    convention. Anything it cannot place is simply left out.
+    """
+    text = re.sub(r"\s+", " ", text).strip()
+    out: dict[str, object] = {}
+
+    m = _CITE_DOI_RE.search(text)
+    if m:
+        out["doi"] = m.group(1)
+
+    m_surname = _CITE_SURNAME_RE.match(text)
+    if m_surname:
+        out["first_author"] = m_surname.group(1)
+
+    m_year = _CITE_YEAR_RE.search(text)
+    if not m_year:
+        return out
+    out["year"] = int(m_year.group(1))
+
+    # Everything before the year is "authors. title. journal." — the title is
+    # the field before the journal. Fewer than three fields means the layout is
+    # not the one assumed, so no title is claimed.
+    fields = [f.strip(" .") for f in text[: m_year.start()].split(". ")]
+    fields = [f for f in fields if f]
+    if len(fields) >= 3:
+        title = fields[-2]
+        if len(title) > 10:
+            out["title"] = title
+    return out
+
+
 def _parse_single_ref(ref_elem: ET.Element) -> ResolvedRef:
     """Extract identifiers and metadata from one <ref> element."""
     ref_id = ref_elem.get("id", "")
@@ -125,6 +190,25 @@ def _parse_single_ref(ref_elem: ET.Element) -> ResolvedRef:
             surname = name_elem.find("surname")
             if surname is not None:
                 first_author = (surname.text or "").strip()
+
+    # Fallbacks for dialects with no structured citation children (AAAS).
+    if not (doi and pmid and pmcid):
+        links = _ids_from_ext_links(ref_elem)
+        doi = doi or links.get("doi")
+        pmid = pmid or links.get("pmid")
+        pmcid = pmcid or links.get("pmcid")
+
+    if not (title and year and first_author and doi):
+        blob = ref_elem.find(".//named-content[@content-type='citation-string']")
+        raw = "".join(blob.itertext()) if blob is not None else ""
+        if not raw and citation is not None and not len(citation):
+            raw = "".join(citation.itertext())
+        if raw.strip():
+            parsed = _parse_citation_string(raw)
+            title = title or parsed.get("title")  # type: ignore[assignment]
+            year = year or parsed.get("year")  # type: ignore[assignment]
+            first_author = first_author or parsed.get("first_author")  # type: ignore[assignment]
+            doi = doi or parsed.get("doi")  # type: ignore[assignment]
 
     return ResolvedRef(
         ref_id=ref_id,
