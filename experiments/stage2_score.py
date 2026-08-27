@@ -115,7 +115,9 @@ def main() -> int:
         elif not answerable:
             outcome = "correct_absence" if sp is False else "missed"
         elif correct:
-            outcome = "correct" if sp else "correct_without_span"
+            # sp is None for items that never had a marked span (C/D/F); only an
+            # explicit False means "the passage was withheld".
+            outcome = "correct_without_span" if sp is False else "correct"
         elif grounded:
             # Answered, and the quote really is in the supplied text — so the context
             # supported an answer the key did not anticipate. Not fabrication.

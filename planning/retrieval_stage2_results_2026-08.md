@@ -14,7 +14,7 @@ Follows `planning/retrieval_stage1_results_2026-08.md`. Raw data in `experiments
 findings that the corrected scoring does not support. Both are retracted below.
 
 1. **Fabrication is essentially absent, and so are wrong answers.** 1 fabrication and 1
-   wrong answer in 168 reads, both Haiku. Sonnet: zero of either in 84 reads.
+   wrong answer in 210 reads, both Haiku. Sonnet: zero of either in 84 reads.
 2. **Absence is reported reliably.** On the 21 items where the passage was deliberately
    withheld, both models said so 18 times out of 18 that it was genuinely missing.
 3. **Haiku splices quotes; Sonnet never does.** All 10 spliced quotes in the run are
@@ -52,7 +52,7 @@ subagents reading exactly one context file and writing structured JSON.
 paper, so one reader answering many questions from it introduces no contamination. The
 `*_b2k` conditions have per-item contexts, so batching there could leak. It was batched
 anyway for tractability, and every answer's quote was afterwards checked against its
-batch siblings' contexts. **Result: zero cross-item leakage detected** across 168 reads.
+batch siblings' contexts. **Result: zero cross-item leakage detected** across all 210 reads.
 The batching was safe, and now demonstrably so rather than assumed.
 
 | Condition | What the reader gets |
@@ -72,7 +72,7 @@ a verbatim quote the key didn't anticipate).
 
 ## Results
 
-### Headline, all 168 reads
+### Headline, all 210 reads
 
 | model | condition | n | correct | corr-absence | wrong | **fabricated** | quotes exact |
 |---|---|---|---|---|---|---|---|
@@ -83,7 +83,7 @@ a verbatim quote the key didn't anticipate).
 | haiku | `document_b2k` | 21 | 3 | 18 | **0** | **0** | 2/3 |
 | haiku | `whole` | 42 | 23 | 16 | **1** | **1** | 20/26 |
 
-Every non-correct outcome in the entire run, all 168 reads:
+Every non-correct outcome in the entire run, all 210 reads:
 
 | item | group | tag | condition | model | outcome |
 |---|---|---|---|---|---|
@@ -129,7 +129,7 @@ measures *what a fixed token budget actually delivers*, and there ASTA's coarser
 lossier copy cost it. Consistency is worth less than it looked once the budget is fixed in
 tokens rather than in chunks.
 
-### 2. Fabrication — 1 in 168
+### 2. Fabrication — 1 in 210
 
 On `document_b2k`, where the answer was withheld for 18 of 21 items, both models reported
 absence **18/18**. Sonnet never fabricated in 84 reads; Haiku once, on a C-group synthesis
@@ -236,79 +236,91 @@ degraded 3.6× on `term` items). What this stage shows is that once the right pa
 front of the model, the wording gap is no longer a problem. That localises the abstraction
 problem cleanly to retrieval, which is a more useful result than the one I first reported.
 
-### 6. Judge pass — all 12 prose answers correct
+### 6. Judge passes — 38 cases over three rounds
 
-The three items whose answers are prose rather than entity lists (B8, B10, B11) were
-judged by an Opus subagent against the gold answer: **12 of 12 correct, both models, no
-partials.**
+Items whose answers are prose rather than entity lists (B2, B3, B8, B10, B11) were judged by
+an Opus subagent against the gold answer. Three rounds were needed: the first covered the
+originally judge-scored items, the second the items reclassified after the key defects were
+found, the third the ASTA arm added later.
 
-B11 is the informative one. Both models answered FOXD1/SOX2 where the key said
+**38 cases: 28 correct, 2 partial, 8 "incorrect" that were declines.** Those eight were
+readers correctly reporting that the passage was absent; sending declines to a judge was my
+error, and the scorer now adjudicates absence itself rather than deferring to the judge.
+
+B11 is the informative case. Both models answered FOXD1/SOX2 where the key said
 FAM3C/EFNB1, and the judge accepted it — the paper states the Dc *is* FOXD1+SOX2+, so the
-answer is a defensible reading with a quote to back it. That confirms the item was
-ambiguous rather than the readers wrong, and vindicates moving it out of entity scoring
-rather than recording two model failures.
-
-The wider lesson for the harness: an entity-set key silently penalises correct answers
-whenever a question admits more than one supportable reading. Any future scoring should
-route multi-answer questions to a judge from the start, or state a single intended reading
-in the question itself.
+answer is a defensible reading with a quote behind it. The item was ambiguous, not the
+readers wrong.
 
 ### 7. Group breakdown, whole-paper condition
 
 | group | sonnet | haiku |
 |---|---|---|
 | A (literal lookup) | 5/5 | 5/5 |
-| B (located fact) | 11/16 | 9/16 |
-| C (synthesis) | 3/5 | 3/5 (1 fabricated) |
-| D (citation) | 0/12, all declined | 0/12, all declined |
-| F (unanswerable) | 4/4 declined | 4/4 declined |
+| B (located fact) | 16/16 | 15/16 |
+| C (synthesis) | 5/5 | 4/5 (1 fabricated) |
+| D (citation) | 0/12 — all correctly declined | 0/12 — all correctly declined |
+| F (unanswerable) | 4/4 correctly declined | 4/4 correctly declined |
 
----
+Sonnet answers every answerable question from the whole paper and declines every
+unanswerable one. Haiku misses one B item and fabricates once on a C item.
 
 ## Corrections made during the run
 
-Four, all worth recording because each was a measurement error that would have produced a
-wrong headline:
+Six, all recorded because each was a measurement error that would have produced a wrong
+headline. The pattern across them is one-directional: **every defect made the readers look
+worse than they were.**
 
 1. **Correct absence was scored as failure.** The `document_b2k` results are the desired
    behaviour; a single accuracy number would have reported 0% there and buried the most
    reassuring result in the run.
-2. **Fabrication was keyed on the wrong signal** — initially "answered without the gold
-   span present", which flagged answers carrying exact quotes from passages the key didn't
+2. **Fabrication was keyed on the wrong signal** — initially "answered without the gold span
+   present", which flagged answers carrying exact quotes from passages the key didn't
    anticipate. Fabrication now requires the quote to be *ungrounded*.
-3. **The leak detector mislabelled splices as leakage.** For the `whole` condition every
-   item shares one context file, so a "sibling match" is the same text; and a 120-character
-   prefix probe matched within-document splices. Fixed by ignoring siblings that share a
-   context path and requiring a substantial contiguous match. Three false leaks disappeared,
-   and the true count is zero.
-4. **Two item-level defects** the reading step exposed: B13's key bundled genes from two
-   sentences when only one was the marked span; B11's question admits two defensible
-   answers (FAM3C/EFNB1 vs FOXD1/SOX2), both quotable from the paper. B13's key was
-   trimmed, B11 moved to judge-scored.
+3. **The leak detector mislabelled splices as leakage.** For the `whole` condition every item
+   shares one context file, so a "sibling match" is the same text, and a 120-character probe
+   matched within-document splices. Three false leaks disappeared; the true count is zero.
+4. **Judge-scored items fell through to the correct/wrong branches** instead of deferring to
+   the judge, which had already marked them correct.
+5. **Entity keys harvested non-answers.** `ME1`/`ME5` are microenvironment labels, not gene
+   symbols; `BARX2`/`SOX9` are explicitly the *previously reported* genes in B4's gold
+   answer. B13's key bundled genes from two sentences when only one was the marked span.
+   B11's question admits two defensible answers. Four items were reclassified or retrimmed.
+6. **The judge was allowed to adjudicate declines**, turning eight correct-absences into
+   "incorrect"; and items with no marked span (C/D/F) were labelled `correct_without_span`
+   because `None` was read as "withheld". Both now handled explicitly.
+
+The methodological conclusion is in §4b: deriving answer keys from prose gold answers does
+not work, and should be replaced by one explicitly-stated intended answer per item or a
+judge from the start.
 
 ---
 
 ## Caveats
 
-- **One paper, 42 items.** The large effects here (splicing, absence reporting, D-group
-  decline) are unambiguous; the small ones (16 vs 15 correct) are not. Do not read a
-  one-item difference as a model ranking.
-- **Subagent isolation is instructed, not enforced.** The leak audit is the check on this,
-  and it came back clean — but it can only detect leakage that leaves a quote trail.
-- **The judge pass used a single Opus judge with the gold answer in hand.** 12/12 correct
-  is a clean result but one judge is not an adjudication panel; a disagreement rate cannot
-  be estimated from it.
-- **The D-group result is conditional on our extraction.** It shows citation-following is
-  impossible from body text as we currently prepare it, not that it is impossible in
-  principle.
+- **One paper, 42 items, 210 reads.** The large effects (quote splicing, absence reporting,
+  the D-group decline, ASTA's chunk-granularity deficit) are unambiguous. The small ones —
+  21/21 vs 20/21 — are not. Do not read a one-item difference as a model ranking.
+- **Subagent isolation is instructed, not enforced.** The leak audit is the check, and it
+  came back clean across all 210 reads, but it can only detect leakage that leaves a quote
+  trail.
+- **A single Opus judge decided 38 cases** with the gold answer in hand. One judge is not an
+  adjudication panel; no disagreement rate can be estimated from it.
+- **The D-group result is conditional on our extraction.** Citation-following is impossible
+  from body text *as we currently prepare it*, not in principle.
+- **ASTA's arm ran on a different chunking and a different copy of the paper.** That is the
+  honest comparison for "what does this service deliver at this budget", but it is not a
+  clean test of its ranking algorithm in isolation.
+- **The 8k budget was not run.** Deliberate — see Next.
 
 ---
 
 ## What this changes
 
-**For the pipeline.** Retrieval earns its place at both steps: Stage 1 said a good slice
-costs 10× fewer tokens, Stage 2 says it is also *more accurate* than the whole paper. The
-architecture should keep ranking rather than lean on large context windows.
+**For the pipeline.** Retrieval earns its place on cost, not accuracy. Stage 1 showed a good
+slice reaches the answer in ~10× fewer tokens; Stage 2 shows that slice answers as well as
+the whole paper (20-21/21 either way). So ranking is worth keeping — but the argument is
+economy, and large context windows are not a reason to abandon it.
 
 **For model choice.** Sonnet and Haiku answer comparably; only Sonnet's quotes survive
 validation. If a cheaper reader is wanted for cost reasons, quote fidelity is the
@@ -324,9 +336,12 @@ the next measurement should target synthesis directly rather than reading.
 
 ## Next
 
-1. **Stage 3 — supplements.** The E items (12) are built and unrun; this is where markers
+1. **Stage 3 — supplements.** The 12 E items are built and unrun. This is where markers
    actually live, and where the `manifest` vs `slice` vs `dump` comparison sits.
-2. **A synthesis probe** — the same items, but asking for a report section rather than an
-   answer, to locate where unsourced prose enters.
-4. **ASTA as a Stage 2 arm**, if its Stage 1 tail advantage is to be believed at the
-   reading step.
+2. **A synthesis probe** — the same items, but asking for a report *section* rather than an
+   answer, to locate where unsourced prose enters. Stage 2 rules out the reading step, so
+   this is the highest-value remaining measurement.
+3. **The 8k budget** is built but unrun (`hybrid_b8k`, `asta_b8k`, `document_b8k`, 21 items
+   each). Since 2k and whole came out equivalent, an intermediate point between two
+   indistinguishable conditions is unlikely to separate anything — recorded as a deliberate
+   omission rather than an oversight.
