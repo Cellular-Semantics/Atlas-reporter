@@ -52,7 +52,13 @@ from typing import Any
 from atlas_chat.services import snippet_annotator
 
 ROLES = ("atlas", "subatlas", "external")
-RETRIEVAL_METHODS = ("corpus_snippet", "supplement", "citation_traversal", "free_search")
+RETRIEVAL_METHODS = (
+    "corpus_snippet",
+    "supplement",
+    "citation_traversal",
+    "free_search",
+    "full_text",
+)
 
 
 async def _fetch_raw(query: str, paper_ids: str, limit: int) -> Any:
@@ -258,6 +264,130 @@ def _cmd_show(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_route(args: argparse.Namespace) -> int:
+    from atlas_chat.services import paper_router
+
+    route = paper_router.resolve_route(
+        args.paper,
+        args.project_dir or None,
+        fetch=not args.no_fetch,
+        probe_asta=not args.no_probe,
+    )
+    print(json.dumps(route.to_dict(), indent=2))
+    return 0
+
+
+def _cmd_read(args: argparse.Namespace) -> int:
+    """Route a paper and, when JATS serves it, write a reader job file.
+
+    The job file carries the whole narrative text, legends, and the resolved
+    cited sentences — everything a reader subagent needs, no raw XML and no
+    further tool calls in its context. When the route is ASTA the command
+    prints the route and exits 3 so the caller falls back to ``fetch``.
+    """
+    from atlas_chat.services import jats_reader, paper_router
+
+    route = paper_router.resolve_route(args.paper, args.project_dir or None)
+    if route.method != paper_router.JATS:
+        print(json.dumps(route.to_dict(), indent=2))
+        print(f"not a JATS route ({route.method}); use `fetch` for ASTA", file=sys.stderr)
+        return 3
+    if not route.cache_path:
+        print("JATS route with no cached file (no --project-dir?)", file=sys.stderr)
+        return 2
+
+    reading = jats_reader.read_paper(
+        route.cache_path,
+        doi=route.doi,
+        query=args.query or None,
+        budget_tokens=args.budget_tokens,
+    )
+    job = reading.to_dict()
+    job["route"] = route.to_dict()
+    out = Path(args.out)
+    _write_json(out, job)
+    if args.traversed:
+        paper_router.mark_traversed(
+            args.traversed, args.paper, {"method": "jats", "source": route.source}
+        )
+    print(
+        f"read: doi={route.doi} source={route.source} "
+        f"narrative_chars={len(reading.narrative_text)} "
+        f"cited_sentences={len(reading.cited_sentences)} legends={len(reading.legends)} "
+        f"truncated={reading.truncated} -> {out}"
+    )
+    return 0
+
+
+def _cmd_follow_check(args: argparse.Namespace) -> int:
+    """Validate proposed follow targets against a paper's actual reference list.
+
+    The JATS counterpart of ``follow-set``: proposals are ``ref_id``s (or DOIs)
+    from the reader; anything not present in the paper's ``cited_sentences`` is
+    rejected (anti-hallucination — the reference list is closed). Accepted
+    targets are deduplicated against the run's ``traversed.json``.
+    """
+    from atlas_chat.services import paper_router
+
+    job = json.loads(Path(args.paper_json).read_text(encoding="utf-8"))
+    cited = job.get("cited_sentences", [])
+    ref_lookup = job.get("ref_lookup", {})
+
+    by_ref_id: dict[str, dict[str, Any]] = {}
+    by_doi: dict[str, dict[str, Any]] = {}
+    for cs in cited:
+        for rid in cs.get("ref_ids", []):
+            by_ref_id.setdefault(rid, cs)
+        for r in cs.get("resolved_refs", []):
+            if r.get("doi"):
+                by_doi.setdefault(r["doi"].lower(), cs)
+
+    follow: list[dict[str, Any]] = []
+    rejected: list[dict[str, Any]] = []
+    seen_targets: set[str] = set()
+    for proposed in args.proposed:
+        p = proposed.strip()
+        cs = by_ref_id.get(p)
+        ref = ref_lookup.get(p)
+        doi_key = p.lower().removeprefix("doi:")
+        if cs is None and doi_key in by_doi:
+            cs = by_doi[doi_key]
+            ref = next(
+                (r for r in ref_lookup.values() if (r.get("doi") or "").lower() == doi_key),
+                None,
+            )
+        if cs is None or ref is None:
+            rejected.append({"proposed": p, "reason": "not_in_reference_list"})
+            continue
+        doi = ref.get("doi")
+        if not doi:
+            rejected.append({"proposed": p, "reason": "no_resolvable_identifier", "ref": ref})
+            continue
+        key = paper_router.canonical_key(doi)
+        if key in seen_targets:
+            continue
+        if args.traversed and paper_router.is_traversed(args.traversed, doi):
+            rejected.append({"proposed": p, "reason": "already_traversed", "doi": doi})
+            continue
+        seen_targets.add(key)
+        follow.append(
+            {
+                "ref_id": p if p in by_ref_id else ref.get("doi"),
+                "doi": doi,
+                "title": ref.get("title"),
+                "year": ref.get("year"),
+                "first_author": ref.get("first_author"),
+                "citation_context": cs.get("text", ""),
+                "section": cs.get("section", ""),
+            }
+        )
+
+    result = {"follow": follow, "rejected": rejected}
+    _write_json(Path(args.out), result)
+    print(f"follow-check: {len(follow)} to follow, {len(rejected)} rejected -> {args.out}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="atlas_chat.cli_annotate", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -322,6 +452,46 @@ def build_parser() -> argparse.ArgumentParser:
     show.add_argument("--snippets", required=True)
     show.add_argument("--index", type=int, default=None)
     show.set_defaults(func=_cmd_show)
+
+    route = sub.add_parser(
+        "route", help="decide how a paper is read: local JATS -> fetch -> ASTA -> unreachable"
+    )
+    route.add_argument("--paper", required=True, help="DOI:..., bare DOI, or CorpusId:NNNN")
+    route.add_argument("--project-dir", default="", help="project root (JATS + band caches)")
+    route.add_argument(
+        "--no-fetch", action="store_true", help="only check caches and probe; no network fetch"
+    )
+    route.add_argument("--no-probe", action="store_true", help="skip the ASTA rung")
+    route.set_defaults(func=_cmd_route)
+
+    read = sub.add_parser(
+        "read", help="route a paper and write a whole-text reader job file (JATS routes)"
+    )
+    read.add_argument("--paper", required=True, help="DOI:..., bare DOI, or CorpusId:NNNN")
+    read.add_argument("--project-dir", default="", help="project root (JATS + band caches)")
+    read.add_argument("--out", required=True, help="job-file path for the reader subagent")
+    read.add_argument(
+        "--query",
+        default="",
+        help="used only if the paper exceeds the budget: BM25-ranks kept segments",
+    )
+    read.add_argument("--budget-tokens", type=int, default=40_000)
+    read.add_argument(
+        "--traversed", default="", help="run seen-set path; marks this paper processed"
+    )
+    read.set_defaults(func=_cmd_read)
+
+    fc = sub.add_parser(
+        "follow-check",
+        help="validate proposed citations against the paper's actual reference list",
+    )
+    fc.add_argument("--paper-json", required=True, help="the `read` output job file")
+    fc.add_argument(
+        "--proposed", action="append", default=[], help="a ref_id or DOI to follow (repeatable)"
+    )
+    fc.add_argument("--traversed", default="", help="run seen-set path; dedups targets")
+    fc.add_argument("--out", required=True)
+    fc.set_defaults(func=_cmd_follow_check)
 
     return parser
 
