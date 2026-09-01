@@ -311,6 +311,46 @@ def check_source_tags(
     return errors
 
 
+def check_attribution(report_md: str) -> list[str]:
+    """Every blockquoted quote must be followed by an attribution line.
+
+    The report contract is ``> "quote"`` … ``> — Author et al. (Year)`` within
+    one blockquote block. A verifiable quote with no attribution passed every
+    other check in the April 2026 Neuroendocrine report (15 quotes, no sources
+    named); only quote *content* was validated. This closes that gap: content
+    validation says the words are real, attribution says whose they are.
+
+    Args:
+        report_md: The report markdown.
+
+    Returns:
+        One error per unattributed blockquote quote.
+    """
+    errors: list[str] = []
+    lines = report_md.splitlines()
+    quote_line = re.compile(r'^\s*>\s*"')
+    attribution_line = re.compile(r"^\s*>\s*[—–-]{1,2}\s*\S")
+
+    for i, line in enumerate(lines):
+        if not quote_line.match(line):
+            continue
+        # Walk forward through the rest of this blockquote block looking for
+        # an attribution line; a new quote starts a new obligation.
+        attributed = False
+        for follow in lines[i + 1 :]:
+            if not follow.strip().startswith(">"):
+                break  # blockquote block ended
+            if quote_line.match(follow):
+                break  # next quote begins; this one never got its attribution
+            if attribution_line.match(follow):
+                attributed = True
+                break
+        if not attributed:
+            snippet = line.strip()[:80]
+            errors.append(f"Blockquote has no attribution line (— Author et al. (Year)): {snippet}")
+    return errors
+
+
 def check_defining_paper(
     consistency: dict[str, Any],
     catalogue: dict[str, object],
@@ -424,6 +464,7 @@ def validate_report(
 
     errors: list[str] = []
     errors.extend(check_quotes(report_md, summaries, atlas_snippets))
+    errors.extend(check_attribution(report_md))
     errors.extend(check_references(report_md, catalogue))
     errors.extend(check_source_tags(summaries, supp_data, catalogue))
     errors.extend(check_defining_paper(consistency, catalogue, report_md))
