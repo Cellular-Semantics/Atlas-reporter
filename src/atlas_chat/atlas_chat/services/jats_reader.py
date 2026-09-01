@@ -156,12 +156,26 @@ def read_paper(
     xml = Path(xml_path).read_text()
 
     segments = extract_body_segments(xml)
+    pairs = [(seg.section, seg.text) for seg in segments]
+
+    # Where does narrative end? Nature-style JATS has no section titled
+    # "Methods" — methods prose sits in leaf sections *after* Discussion
+    # ("Tissue acquisition and processing", …). So: when a Discussion section
+    # exists, everything through its last paragraph is narrative and everything
+    # after is methods; title-matched methods sections are methods wherever
+    # they sit. Without a Discussion, only the title match applies.
+    last_discussion = max(
+        (i for i, (sec, _) in enumerate(pairs) if (sec or "").strip().lower() == "discussion"),
+        default=None,
+    )
     narrative: list[tuple[str, str]] = []
     methods: list[tuple[str, str]] = []
-    for seg in segments:
-        (methods if _METHODS_TITLES.match(seg.section or "") else narrative).append(
-            (seg.section, seg.text)
-        )
+    for i, (section, text) in enumerate(pairs):
+        after_discussion = last_discussion is not None and i > last_discussion
+        if after_discussion or _METHODS_TITLES.match(section or ""):
+            methods.append((section, text))
+        else:
+            narrative.append((section, text))
 
     n_chars_total = sum(len(t) for _, t in narrative)
     budget_chars = budget_tokens * _CHARS_PER_TOKEN
