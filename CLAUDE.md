@@ -20,30 +20,42 @@ workflow and the programmatic Python graph.
 
 ## Tool Usage Rules
 
-1. **Never use `curl` or `WebFetch` for APIs that have MCP tools.** Semantic
-   Scholar, Europe PMC, and PubMed Central all have MCP tools. If an MCP tool
-   has a gap (e.g. missing field), use a different MCP query pattern — do not
-   bypass MCP.
+1. **Never use `curl` or `WebFetch` for APIs that have MCP tools or a project
+   CLI.** Semantic Scholar, Europe PMC, and PubMed Central all have MCP tools;
+   paper text access goes through `python -m atlas_chat.cli_annotate`.
 
-2. **Prefer `snippet_search` over `get_europepmc_full_text`** for evidence
-   gathering. Full text is fragile (silent failures, huge output). Snippet
-   search returns pre-chunked, relevance-ranked text with reference annotations.
+2. **Literature evidence is JATS-first, whole-text, via the CLI.**
+   `cli_annotate route` decides each paper's access route (local JATS cache →
+   Europe PMC → preprint fetch → ASTA), `read` writes a whole-text reader job
+   file, and ASTA `snippet_search` is the *fallback* for papers no JATS route
+   serves — not the default. Never open raw JATS XML in your context and never
+   paste a job file's text into a dispatch: readers get the job-file *path*.
 
-3. **CorpusId retrieval**: `snippet_search` is the canonical way to get
-   CorpusIds via MCP. The response includes `paper.corpusId` in snippet
-   metadata. For referenced papers within snippets, check
-   `matchedPaperCorpusId`. Do not attempt to get CorpusId from `get_paper`
-   fields — it is not available there.
+3. **CorpusId retrieval**: `snippet_search` responses carry `paper.corpusId` in
+   snippet metadata, and `matchedPaperCorpusId` for referenced papers within
+   snippets. `get_paper` can also return it via `fields=externalIds`.
 
 4. **Batch paper lookups**: Use `get_paper_batch` early to pre-fetch metadata
    for all papers that will appear in the catalogue.
 
-5. **Limit supplement fetch attempts**: Max 2 attempts for full text or
-   supplement retrieval per paper. If both fail, move on to snippet search.
+5. **Supplements come from the store on disk** (`cli_supplements`), populated at
+   setup — never fetched into agent context mid-run. A paper with no store is a
+   setup gap to report, not something to fetch around.
 
 6. **Pre-extract JSON before grepping MCP output**: When MCP tools save
    large results as single-line JSON, use `python3 -c "import json..."` to
    extract and search — do not grep raw JSON files.
+
+## Run Settings
+
+- **`reader_model`** — the model pinned on every evidence-reading subagent
+  (gather-evidence and free-search readers). Default **`opus`** (measured:
+  reader model moved results more than any retrieval choice; the cheaper
+  model's losses are confident, quote-backed wrong answers). Set per run;
+  every dispatch names its model explicitly and records it in
+  `reader_provenance.json` — never rely on model inheritance.
+- Structural steps (resolve-name, query-decomposer, scan-supplements,
+  synthesize-report, CL steps) stay on `sonnet`.
 
 ---
 
@@ -106,18 +118,22 @@ provenance (slug derived from the query text):
 **Steps 2–9 below run once per selected cell type.** The query's contextual
 restriction carries forward as that cell type's scope.
 
-### 2. Fetch Supplementary Material
+### 2. Check the Supplement Store
 
-Use MCP tools directly (single call, no subagent needed):
-1. `get_all_identifiers_from_europepmc(doi)` → get PMCID
-2. `get_pmc_supplemental_material(pmcid)` → list available supplements
-3. Fetch relevant supplement files (tables, figures with legends)
+Supplements live in the on-disk store at `projects/{project}/supplements/`
+(manifest per paper). Check it covers the corpus papers this run needs — the
+atlas, plus any subatlas paper the annotations' provenance points at:
 
-If supplements are unavailable (max 2 attempts), fall back to snippet search
-with marker-focused queries. Try `get_europepmc_pdf_as_markdown` for
-supplement PDFs as an alternative.
+```
+python -m atlas_chat.cli_supplements papers --store projects/{project}/supplements
+```
 
-Store supplementary text for downstream steps.
+If a needed paper is missing, populate it once (setup, not per cell type):
+`python -m atlas_chat.cli_supplements fetch --store <store> --doi <doi>`, then
+the `index-supplements` skill to build its content manifest. If retrieval fails
+(closed access), record the gap and continue — `scan-supplements` reports "no
+store" distinctly from "nothing found". Do not fetch supplement bytes into
+agent context mid-run.
 
 ### 3. Resolve Name → subagent: `resolve-name`
 
@@ -158,80 +174,69 @@ authored query per fixed aspect (`location, structure, function, markers,
 marker_roles`) and a `combined_query`. Validated by the `check_query_decomposition`
 PostToolUse hook.
 
-### 4. Parallel: Scan Supplements + Citation Traverse
+### 4. Parallel: Gather Evidence + Scan Supplements
 
-These two steps are independent after name resolution. Run them in parallel.
+These two steps are independent after step 3b. Run them in parallel.
 
-#### 4a. Scan Supplements → subagent: `scan-supplements`
+#### 4a. Gather Evidence → skill: `gather-evidence`
 
-**Input:**
-- PMCID, cell type label + resolved names
-- Supplementary text from step 2
+The literature-search core: JATS-first whole-text reading with ASTA fallback,
+plus citation traversal (depth ≤ 2). Follow
+`.claude/skills/gather-evidence/SKILL.md`.
 
-**Output:** `projects/{project}/traversal_output/{cell_type}/supplementary_findings.json`
-
-**Contract:**
-```json
-{
-  "markers": [{"gene": "HRG", "evidence_type": "DE analysis", "source_table": "..."}],
-  "other_findings": [{"finding": "...", "category": "function", "source_table": "..."}],
-  "evidence_quotes": [{"quote": "exact text", "source_file": "...", "context": "..."}]
-}
-```
-
-#### 4b. Citation Traverse → subagent: `citation-traverse`
-
-**Input:** the cell type's `query_decomposition.json` (from step 3b).
-
-**Hybrid strategy (orchestrator-driven):**
-1. Run `citation-traverse` with `combined_query`; `seed_paper_id` / `seed_role` from
-   `seed`; depth 1.
-2. Assess **per-aspect in-scope coverage** of the returned `all_summaries`, using
-   `scope` to judge in-scope vs off-scope evidence.
-3. For each aspect that is thin — or covered only by **off-scope** evidence — run
-   `citation-traverse` with that `aspects[].query`. If it is still thin/off-scope,
-   run a **scope-targeted free search**: `cli_annotate fetch` with **no**
-   `--paper-ids`, `--retrieval-method free_search`, query = the aspect query plus the
-   `scope` terms. Stop gracefully once in-scope evidence is found or effort is spent.
-4. **Merge** the per-run `all_summaries` / `paper_catalogue` (dedup by CorpusId and
-   by evidence item); tag each followed paper's organism/stage for scope.
-
-**Local snippet index (fresh preprints):** if
-`projects/{project}/local_index/manifest.json` exists, the graph also calls
-`services.citation_traverser.traverse_local` in parallel with the ASTA path
-and merges results. Snippets carry `source_method: "local_snippet"`. See the
-`local-paper-index` skill (`.claude/skills/local-paper-index/SKILL.md`) for
-how to build the index when ASTA is blind to the atlas paper.
+**Input** (`gather_evidence_input.schema.json`):
+- `seeds` — priority-ordered: the paper that defines the cell type first
+  (a subatlas paper when `transferred_annotations` / name resolution's
+  `source_paper` says so), then the atlas paper.
+- `decomposition_path` — step 3b's `query_decomposition.json`
+- `depth` (default 1, max 2), `k_per_paper`, `run_cap`
+- `reader_model` — from Run Settings (default `opus`)
+- `project_dir`, `output_dir`
 
 **Output:**
 - `projects/{project}/traversal_output/{cell_type}/all_summaries.json`
 - `projects/{project}/traversal_output/{cell_type}/paper_catalogue.json`
+- plus `traversed.json`, `gaps.json`, `reader_provenance.json`
 
-### 5. Synthesize Report → subagent: `synthesize-report`
+(The `citation-traverse` subagent remains as the ASTA-route procedure the skill
+delegates to; it is no longer dispatched directly by the orchestrator.)
 
-**Input:** Reads all output files from steps 3-4.
+#### 4b. Scan Supplements → skill: `scan-supplements`
+
+Store-backed extraction (`.claude/skills/scan-supplements/SKILL.md`). Run once
+per corpus paper with a store — the atlas and each seed subatlas paper.
+
+**Output:** `projects/{project}/traversal_output/{cell_type}/supplementary_findings.json`
+
+### 4c. Assess Coverage → skill: `assess-coverage`
+
+Judge per-aspect, in-scope coverage over `all_summaries.json` +
+`supplementary_findings.json` against the decomposition's `scope`
+(`.claude/skills/assess-coverage/SKILL.md`).
+
+**Output:** `projects/{project}/traversal_output/{cell_type}/coverage.json`
+
+### 4d. Free Search (conditional) → skill: `free-search`
+
+Only for aspects `coverage.json` marks `thin`/`absent`: one unscoped ASTA
+search per aspect (keyword query + scope terms), evidence tagged `free_search`,
+coverage updated — an aspect that still gains nothing becomes
+`absent_after_free_search` (`.claude/skills/free-search/SKILL.md`).
+
+### 5. Synthesize Report → skill: `synthesize-report`
+
+Follow `.claude/skills/synthesize-report/SKILL.md`: sections in decomposition-
+aspect order, `Sources:` header, absent aspects rendered exactly as
+"No evidence found in traversed literature.", caveats for abstract-only /
+snippet-bound / free-search support.
 
 **Output:** `projects/{project}/reports/{cell_type}.md`
 
-### 6. Validate Report (explicit step — not hook-dependent)
+### 6. Validate Report → skill: `validate-report` (explicit — not hook-dependent)
 
-After the report is written, **always run validation explicitly**:
-
-1. Read the report file and the evidence files (`all_summaries.json`,
-   `paper_catalogue.json`, `supplementary_findings.json`).
-2. Check that every blockquoted text (`> "..."`) is a substring of the
-   evidence corpus.
-3. Check that every DOI in the report exists in the paper catalogue.
-4. If validation fails, pass the error list back to `synthesize-report` and
-   retry (max 2 retries).
-
-The validation logic lives in `src/atlas_chat/atlas_chat/validation/report_checker.py`.
-You can invoke it directly:
-
-```python
-from atlas_chat.validation.report_checker import validate_report
-passed, errors = validate_report(report_path, traversal_dir)
-```
+Follow `.claude/skills/validate-report/SKILL.md`: quote grounding, DOI
+resolution, source tags, blockquote attribution — then the retry loop (errors
+back to `synthesize-report`, max 2 retries).
 
 **Note:** The Claude Code write hook (`.claude/hooks/check_report_refs.py`) is
 an *optional extra guard* for interactive sessions — it is NOT the primary
@@ -337,11 +342,20 @@ a personal token.
 
 ```
 projects/{project}/
-├── cell_type_annotations.json
+├── cas.json
+├── selections/{slug}.json
+├── supplements/papers/<doi-slug>/{manifest.json, files/}
+├── local_index/papers/<doi-slug>/source/paper.jats.xml   # JATS cache (router-fed)
 ├── traversal_output/{cell_type}/
 │   ├── name_resolution.json
+│   ├── query_decomposition.json
+│   ├── papers/paper_<n>.json          # reader job files (whole text + citations)
+│   ├── traversed.json                 # per-run seen-set
+│   ├── gaps.json                      # unreachable papers, with reasons
+│   ├── reader_provenance.json         # model per reader job
 │   ├── supplementary_findings.json
 │   ├── all_summaries.json
+│   ├── coverage.json
 │   └── paper_catalogue.json
 └── reports/
     └── {cell_type}.md

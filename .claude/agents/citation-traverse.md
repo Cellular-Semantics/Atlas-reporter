@@ -1,7 +1,7 @@
 ---
 name: citation-traverse
-description: Given a query and a seed paper, walk citations over ASTA snippet search. Retrieval, reference splicing, and follow-set resolution run programmatically (raw JSON never enters your context); you gate sentences on the spliced text and propose which citations to follow.
-model: sonnet
+description: ASTA-route delegate of the gather-evidence skill — walk citations over ASTA snippet search for papers no JATS route serves. Retrieval, reference splicing, and follow-set resolution run programmatically (raw JSON never enters your context); you gate sentences on the spliced text and propose which citations to follow. Dispatched by gather-evidence, not directly by the orchestrator; pin the model from the run's reader_model setting.
+model: opus
 input:
   schema: src/atlas_chat/atlas_chat/schemas/citation_traverse_input.schema.json
 output:
