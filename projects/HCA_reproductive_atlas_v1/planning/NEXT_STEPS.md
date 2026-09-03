@@ -4,6 +4,21 @@ Running log of decisions and open items. Newest entry first.
 
 ---
 
+## 2026-09-03 — Subatlas concordance table; project file reorg
+
+- New `notes/SUBATLAS_CONCORDANCE.md`: for every L4 cell type x subatlas pair,
+  the dominant transferred label, split into (A) same type, (B) concordant but
+  lineage-level only, (C) dominant label disagrees. Use B to avoid citing a
+  subatlas for subset-level claims it cannot support. Two items to follow up in
+  the authors' memo: `Genital melanocytes fetal` is 99% Lorenzi `Schwann`
+  (n=88, likely label-transfer artefact), and five fetal fibroblast types all
+  collapse onto GarciaAlonso2022 `Mesenchymal_GATA2`.
+- File reorg: misc notes/audits + `asta_coverage.csv` -> `notes/`; forward-looking
+  and scoping docs -> `planning/`; `build_cas.py`/`probe_uns.py` -> `scripts/`
+  (still expect to be run from the project root); `cas_draft.json` -> `cas.json`.
+
+---
+
 ## 2026-08-12 — Decision gate: evaluate new citation-traversal skill before a full report run
 
 **Status:** paused here to move to other tasks.
@@ -40,15 +55,15 @@ new citation-traversal skill.**
   quotes, DOIs from catalogue) and the local-index merge path before scaling.
 
 **Then (once the architecture is chosen):** run reports across the priority
-target list — the headline novel populations in `ANNOTATION_INSPECTION.md`
+target list — the headline novel populations in `notes/ANNOTATION_INSPECTION.md`
 (uterine perivascular cells, NCRhi ILC3s, LAMs incl. uftLAM, adventitial
 fibroblasts, ectopic endometrial-like epithelium), plus Lardenois-dependent
 gonadal-somatic types now that the local index covers that paper.
 
 **Open items carried forward (not blockers for the decision above):**
-- Author-facing edits are report-only so far; `SOURCE_RECONCILIATION_for_authors.md`
+- Author-facing edits are report-only so far; `notes/SOURCE_RECONCILIATION_for_authors.md`
   is ready to share once reviewed. New media-4 duplicate `Neural_Schwann` finding
-  (see `CAS_DOC_AUDIT.md`) still to be folded into the authors' memo.
+  (see `notes/CAS_DOC_AUDIT.md`) still to be folded into the authors' memo.
 - NTRs T1/T2 are drafted but **not posted** to `obophenotype/cell-ontology`
   (needs explicit go-ahead; step 10).
 - CL subsumption flags (`Endo_ven`, `Mesen_OvarianFibs`) still awaiting author

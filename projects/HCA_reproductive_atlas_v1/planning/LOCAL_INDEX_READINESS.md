@@ -15,7 +15,7 @@ Three things stand between us and a working index, none of them missing code:
 
 1. the `[local-index]` Python deps are **not installed** in this environment;
 2. the automated **discover** step needs a `label_provenance.json` this project
-   doesn't have (annotations came from `build_cas.py`, not the zarr skill);
+   doesn't have (annotations came from `scripts/build_cas.py`, not the zarr skill);
 3. the atlas paper's DOI won't resolve to JATS, so it must be indexed **from the
    PDF we already hold**.
 
@@ -58,7 +58,7 @@ local hits into citation traversal.
 
 2. **No `label_provenance.json` → `discover-subatlas` won't auto-run.**
    `discover()` reads that file's contributing-study labels; this project's
-   `cell_type_annotations.json` was built by `build_cas.py` (not
+   `cell_type_annotations.json` was built by `scripts/build_cas.py` (not
    `anndata-zarr-summary`), so it was never produced, and `source` has no
    `subatlas_papers` block yet. Also note the flat `subatlas_pubs` DOI list
    (21 DOIs) is a **hand-maintained reference file — not consumed by any code.**
@@ -78,10 +78,10 @@ local hits into citation traversal.
 
 ## Which subatlas papers actually need local indexing
 
-From the ASTA-access audit in `ANNOTATION_INSPECTION.md` (21 unique subatlas
+From the ASTA-access audit in `notes/ANNOTATION_INSPECTION.md` (21 unique subatlas
 DOIs), **3 are not cleanly ASTA/PMC-traversable.** But priority depends on
 whether a paper *contributed transferred labels* into the CAS obs (the 8
-`celltype_*` columns in `build_cas.py`) versus being cited context only:
+`celltype_*` columns in `scripts/build_cas.py`) versus being cited context only:
 
 | DOI | Paper | ASTA status | Contributes CAS labels? | Priority |
 |---|---|---|---|---|

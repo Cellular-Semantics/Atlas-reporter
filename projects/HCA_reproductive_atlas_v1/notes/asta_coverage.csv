@@ -1,0 +1,213 @@
+celltype_HCA_fine,n_cells,pct_ASTAblind,pct_noDOI,pct_unreachable,top_unreachable_src,top_src_pct
+Mesen_EndoStromalFib_MenstrualFluid,27092,0.0,99.8,99.8,Sanger_MenstrualFluid,99.5
+Mesen_Pericyte_EndoStromalLike_MenstrualFluid,1272,0.0,99.8,99.8,Sanger_MenstrualFluid,99.3
+Granulosa_AMHneg_Squamous,5644,0.1,99.2,99.3,Sanger_PediatricOvary,98.8
+Epi_EndoGlandFun_Menstr,4248,0.1,98.7,98.8,Sanger_MenstrualFluid,97.0
+Mesen_OvarianFibs_Outcor,21434,2.4,96.1,98.5,Sanger_PediatricOvary,87.0
+Epi_EndoGlandBas,748,96.1,1.1,97.2,Huang 2023,96.1
+Immune_uMac_Inf,23069,0.2,96.6,96.8,Sanger_MenstrualFluid,91.9
+Granulosa_AMHpos_Steroidogenic,15814,1.5,95.2,96.7,Sanger_PediatricOvary,94.1
+Mesen_OvarianFibs_Perifol,44411,1.0,95.6,96.6,Sanger_PediatricOvary,82.6
+Epi_OvarianInclSec,202,91.1,5.0,96.0,Gaylord 2025,91.1
+Granulosa_AMHpos_nonSteroidogenic,694,0.1,95.7,95.8,Sanger_PediatricOvary,88.8
+Mesen_OvarianFibs_InncorMedulla,125985,2.4,92.9,95.3,Sanger_PediatricOvary,65.2
+Granulosa_AMHpos_nonSteroidogenic_early,1267,0.0,94.4,94.4,Sanger_PediatricOvary,87.5
+Mesen_OvarianFibs_AdvLike,507,58.0,34.5,92.5,Gaylord 2025,58.0
+Mesen_EndoStromalFib_nEMC_Cyc,12895,2.7,89.3,92.1,Sanger_Endometrium,87.4
+Mesen_OvarianInclFibs,96,33.3,58.3,91.7,Sanger_AdultOvary,44.8
+Mesen_OvarianFibs_Medulla_SMCsLike,13705,7.9,83.7,91.6,Sanger_PediatricOvary,50.3
+Granulosa_AMHneg_Atretic,2960,3.2,87.4,90.6,Sanger_PediatricOvary,73.8
+Granulosa_AMHpos_Cyc,8927,1.1,87.7,88.8,Sanger_PediatricOvary,86.8
+Immune_mregDC,1577,2.5,85.0,87.5,Sanger_MenstrualFluid,74.6
+Immune_CD8_NaiveT,2551,1.8,85.6,87.4,Sanger_MenstrualFluid,77.3
+Mesen_EndoStromalFib_Menopause,2855,1.6,85.3,86.9,Sanger_Uterus,74.7
+Immune_NK_CD56dim_CD16dim_SPTSSBhi,480,2.5,82.3,84.8,Sanger_MenstrualFluid,60.4
+Immune_CD4_Th17_SCMlike,5130,1.8,82.0,83.8,Sanger_MenstrualFluid,66.9
+Neural_Schwann,781,3.8,79.6,83.5,Sanger_PediatricOvary,59.8
+Immune_oLAM,321,4.4,76.9,81.3,Sanger_AdultOvary,41.7
+Mesen_EndoStromalFib_nEMC,48007,0.7,80.3,81.0,Sanger_Endometrium,77.8
+Epi_OvarianInclCil,20,60.0,20.0,80.0,Gaylord 2025,60.0
+Immune_CD4_NaiveT,6169,1.4,77.7,79.2,Sanger_MenstrualFluid,61.1
+Immune_NaiveB,2076,0.5,74.8,75.3,Sanger_MenstrualFluid,66.3
+Mesen_EndoStromalFib_eSec,17251,30.0,44.7,74.7,Sanger_Endometrium,42.7
+Germcell_PrimaryOocyte_ZP4pos,391,1.5,73.1,74.7,Sanger_PediatricOvary,71.6
+Immune_ASDC,69,0.0,73.9,73.9,Sanger_MenstrualFluid,40.6
+Germcell_PGC_Cyc,2592,70.8,0.0,70.8,Lardenois 2026,70.8
+Mesen_EndoStromalFib_nEMC_Sec,50283,1.8,68.5,70.3,Sanger_Endometrium,64.0
+Mesen_Pericyte_EndoSpiralArt,6617,19.2,50.2,69.4,Sanger_Endometrium,34.7
+Immune_CD4_Treg_Cyc,114,6.1,62.3,68.4,Sanger_Endometrium,56.1
+Neural_Schwann_myelinating,22,9.1,59.1,68.2,Sanger_PediatricOvary,36.4
+Epi_EndoGlandFun_lProf,11900,41.6,25.7,67.3,Huang 2023,41.6
+Immune_NK_Cyc,3503,24.3,42.3,66.6,Liu 2025,30.9
+Mesen_vSMCs_medArt,51141,1.8,62.9,64.6,Sanger_PediatricOvary,31.1
+Mesen_Theca_Externa,30089,3.6,60.8,64.4,Sanger_PediatricOvary,49.2
+Immune_NK_CD16hi,5175,4.3,59.6,63.8,Sanger_MenstrualFluid,23.5
+Epi_EndoGlandFun_Prof,23099,25.5,38.1,63.6,Sanger_Endometrium,33.7
+Immune_CD8_T_EM,4022,5.5,57.8,63.4,Sanger_MenstrualFluid,33.7
+Immune_MO_NonClassical,2122,1.2,61.5,62.7,Sanger_MenstrualFluid,30.6
+Endo_cap_tip,3614,8.3,54.4,62.7,Sanger_PediatricOvary,23.7
+Mesen_Pericyte_Cyc,4522,12.5,49.1,61.6,Sanger_Endometrium,37.7
+Endo_ven_hev,11495,25.9,35.7,61.6,Huang 2023,25.5
+Epi_EndoGlandFun_Prof_Cyc,12815,19.5,41.6,61.2,Sanger_Endometrium,39.7
+Epi_FallopianCil_Cyc,547,0.0,60.5,60.5,Sanger_FallopianTube,60.5
+Endo_cap_APCDD1,4691,10.0,50.2,60.2,Sanger_Endometrium,45.4
+Mesen_Pericyte_EndoStromalLike,10229,15.8,43.7,59.5,Sanger_Endometrium,38.9
+Immune_uNK2,12245,33.7,25.6,59.2,Huang 2023,33.6
+Gonadal_SupportingUndiff,16769,58.8,0.0,58.8,Lardenois 2026,58.8
+Immune_uNK1,3543,20.4,38.1,58.5,Liu 2025,32.6
+Immune_MemoryB,4542,1.8,56.3,58.1,Sanger_MenstrualFluid,41.3
+Immune_CD4_Treg,3695,14.9,42.2,57.1,Sanger_Endometrium,19.5
+Mesen_Theca_Interna_Perifol,5148,4.7,51.9,56.6,Sanger_PediatricOvary,41.8
+Mesen_Theca_Interna_Steroid,8428,10.0,46.5,56.5,Sanger_PediatricOvary,30.7
+Mesen_EndoStromalFib_MenstrualEutopic,13034,0.1,56.4,56.5,Sanger_Endometrium,55.9
+Mesen_Pericyte_SMCsIntr,8167,2.4,53.8,56.2,Sanger_Uterus,36.0
+Epi_FallopianSec_Cyc,560,0.0,56.1,56.1,Sanger_FallopianTube,56.1
+Mesen_Pericyte,38904,5.6,50.6,56.1,Sanger_Endometrium,19.2
+Mesen_EndoStromalFib_lSec,36137,6.5,49.3,55.8,Sanger_Endometrium,27.4
+Mesen_EndoStromalFib_Prolif,164476,18.2,37.6,55.8,Sanger_Endometrium,23.8
+Mesen_AdvFibsIntr,33795,2.3,53.3,55.6,Sanger_FallopianTube,20.2
+Immune_T_Cyc,2208,16.5,38.8,55.3,Sanger_Endometrium,22.3
+Germcell_PGCs,6862,54.9,0.0,54.9,Lardenois 2026,54.9
+Epi_EndoCil_eProf,1014,23.6,30.9,54.4,Sanger_Endometrium,28.7
+Granulosa_AMHpos_Atretic,5440,0.2,54.2,54.4,Sanger_PediatricOvary,53.4
+Immune_pDC,1203,7.1,46.8,53.9,Sanger_MenstrualFluid,20.4
+Immune_CD4_T_Unpolarised,13177,15.8,37.6,53.4,Sanger_MenstrualFluid,15.7
+Mesen_EndoStromalFib_Prolif_Cyc,32491,20.9,32.1,53.0,Huang 2023,20.9
+Mesen_AdvFibs,19,5.3,47.4,52.6,Sanger_Endometrium,21.1
+Immune_NKT_γδT_Vδ1,2836,14.7,37.9,52.5,Sanger_FallopianTube,19.3
+Immune_cDC2_CD207hi,1533,8.0,43.8,51.9,Sanger_FallopianTube,16.4
+Immune_MO_Classical,13759,2.7,49.1,51.8,Sanger_MenstrualFluid,23.2
+Endo_cap_cycl,5081,14.5,35.0,49.5,Sanger_Endometrium,30.1
+Immune_tolDC,47,8.5,40.4,48.9,Sanger_Endometrium,34.0
+Immune_MAIT,3733,2.9,45.7,48.6,Sanger_FallopianTube,24.8
+Mesen_EndoStromalFib_mSec,103861,4.5,44.0,48.6,Sanger_Endometrium,26.8
+Gonadal_SomaticPrec,8440,48.1,0.0,48.1,Lardenois 2026,48.1
+Endo_ven_apcv,4851,14.7,33.3,48.0,Sanger_Uterus,24.8
+Gonadal_preGranulosa-OSEderived_early,6659,47.1,0.0,47.1,Lardenois 2026,47.1
+Immune_CD8_T_RM,15131,4.7,41.7,46.3,Sanger_FallopianTube,29.7
+Epi_EndoGlandLum_eSec,24,37.5,8.3,45.8,Huang 2023,37.5
+Epi_EndoGlandFun_lSec,1467,0.1,45.6,45.7,Sanger_Endometrium,45.1
+Epi_EndoCil_Diff,8903,10.8,34.6,45.4,Sanger_Endometrium,30.5
+Immune_cDC2,3457,6.2,38.7,44.9,Sanger_Endometrium,13.8
+Immune_cDC1,1073,4.5,39.5,44.0,Sanger_Endometrium,19.9
+Endo_cap,21199,3.5,39.5,43.0,Sanger_PediatricOvary,15.8
+Epi_FallopianCil_Early,460,0.0,42.8,42.8,Sanger_FallopianTube,42.8
+Immune_Mac_Cyc,2560,8.6,33.9,42.6,Sanger_Endometrium,13.2
+Endo_artery,11267,7.4,35.2,42.6,Sanger_PediatricOvary,13.3
+Meso_OSE_Fetal,23115,42.2,0.0,42.2,Lardenois 2026,42.2
+Immune_Mac_Transitional,1787,13.9,27.6,41.5,Huang 2023,12.1
+Epi_EndoGlandBas_WIF1,1694,0.6,39.8,40.4,Sanger_Endometrium,27.3
+Epi_EndoGlandLum_Prof,9672,9.4,30.7,40.0,Sanger_Endometrium,29.8
+Mesen_SMCs,41488,0.8,38.6,39.4,Sanger_Uterus,26.7
+Immune_uNK3,10688,15.8,23.4,39.3,Huang 2023,15.7
+Immune_CD8_T_RM_GZMKhi,25502,14.3,24.8,39.1,Huang 2023,14.3
+Immune_ILC3_NCRlo,321,9.7,28.7,38.3,Sanger_Endometrium,16.8
+Immune_uftLAM,2760,1.4,34.9,36.2,Sanger_FallopianTube,29.7
+Epi_EndoGlandFun_mSec,25233,14.6,20.7,35.2,Sanger_Endometrium,15.8
+Epi_EndoGlandFun_emSec,18366,4.4,29.9,34.3,Sanger_Endometrium,25.7
+Mesen_vSMCs_largeArt,33678,13.4,20.5,33.8,Gaylord 2025,13.3
+Immune_ILC3_NCRhi,2517,15.0,18.1,33.1,Huang 2023,14.3
+Epi_EndoCil_Cyc,1975,11.3,20.9,32.2,Sanger_Endometrium,18.3
+Meso_GonadalCoelEpi,2840,32.1,0.0,32.1,Lardenois 2026,32.1
+Epi_FallopianSec_OVGP1hi_EstrInd,17601,0.0,30.2,30.2,Sanger_FallopianTube,30.2
+Mesen_AdvFibs_PI16low,18360,0.3,27.4,27.7,Sanger_FallopianTube,25.2
+Immune_Neutrophils,45,24.4,2.2,26.7,Gaylord 2025,20.0
+Gonadal_preGranulosa-OSEderived_late,50633,26.5,0.0,26.5,Lardenois 2026,26.5
+Mesen_GonadalFibs_Undiff,26055,26.2,0.0,26.2,Lardenois 2026,26.2
+Germcell_GGCs,1861,26.1,0.0,26.1,Lardenois 2026,26.1
+Endo_ven_pcv,13904,0.9,23.4,24.3,Sanger_Uterus,11.5
+Epi_EndoGland_nEMC,18196,0.4,23.5,23.9,Sanger_Endometrium,22.7
+Immune_CD4_Th17,6802,3.3,20.1,23.4,Sanger_Endometrium,8.2
+Epi_FallopianCil_Diff,12869,0.0,21.9,21.9,Sanger_FallopianTube,21.9
+Gonadal_preGranulosa-CEderived,23076,21.8,0.0,21.8,Lardenois 2026,21.8
+Immune_Mac_LYVE1hi,16783,5.4,15.5,20.9,Sanger_Endometrium,4.7
+Immune_BasoEosino,40,2.5,17.5,20.0,Sanger_MenstrualFluid,15.0
+Epi_reteOvarii_Fetal_Undiff,5796,19.8,0.0,19.8,Lardenois 2026,19.8
+Epi_EndoMucinous,2110,3.6,15.8,19.4,Sanger_Endometrium,14.8
+Mesen_Theca_Interna_Cyc,9366,1.4,17.6,19.0,Sanger_PediatricOvary,9.8
+Meso_OSE,841,14.3,4.6,18.9,Gaylord 2025,14.3
+Endo_ven_tpcv,16892,2.8,15.2,18.0,Sanger_Uterus,7.6
+Epi_ParatubalIncl_squamous,922,0.0,17.0,17.0,Sanger_FallopianTube,17.0
+Epi_FallopianSec_OVGP1lo,13587,0.0,16.9,16.9,Sanger_FallopianTube,16.9
+Immune_Mast,5449,7.4,8.0,15.4,Huang 2023,7.4
+Endo_lymp,10375,2.3,12.2,14.6,Sanger_Endometrium,3.2
+Mesen_OvarianFibs_Fetal,32133,11.8,0.0,11.8,Lardenois 2026,11.8
+Meso_serosa,453,0.0,11.3,11.3,Sanger_FallopianTube,8.4
+Immune_Plasma_κ,2314,1.9,9.0,10.9,Sanger_MenstrualFluid,4.0
+Immune_MEMP,250,0.8,10.0,10.8,Sanger_MenstrualFluid,7.2
+Meso_Peritoneal_Fetal,4720,10.3,0.0,10.3,Lardenois 2026,10.3
+Immune_NMP_Promyelocytes,286,7.7,2.1,9.8,Lardenois 2026,7.0
+Germcell_Oogonia_premeiotic,3142,9.1,0.0,9.1,Lardenois 2026,9.1
+Immune_LateErythroid,57,5.3,3.5,8.8,Lardenois 2026,5.3
+Immune_Plasma_λ,1782,1.7,4.8,6.5,Sanger_Uterus,1.6
+Mesen_AdvFibs_PI16hi,3032,0.0,5.8,5.9,Sanger_FallopianTube,5.8
+Epi_EndoGlandLum_mSec,12046,2.5,3.3,5.9,Sanger_Endometrium,2.9
+Mesen_UterotubalJunctionFibs,150,0.0,5.3,5.3,Sanger_FallopianTube,5.3
+Immune_γδT_Vγ9Vδ2,781,2.9,1.5,4.5,Lardenois 2026,1.5
+Mesen_Theca_Atretic,3239,0.4,3.6,4.0,Sanger_PediatricOvary,2.9
+Immune_ImmatureB,387,0.0,3.6,3.6,Sanger_Endometrium,1.6
+Immune_EarlyMidErythroid,55,3.6,0.0,3.6,Lardenois 2026,3.6
+Immune_MegaPlat,177,3.4,0.0,3.4,Lardenois 2026,3.4
+Mesen_FallopianFibs,64649,0.0,2.7,2.7,Sanger_FallopianTube,2.7
+Immune_HPC,211,1.4,0.9,2.4,Lardenois 2026,1.4
+Granulosa_sq_Fetal,3928,2.1,0.0,2.1,Lardenois 2026,2.1
+Mesen_MesonephricFibs_Fetal,28521,1.2,0.0,1.2,Lardenois 2026,1.2
+Immune_ProB,167,1.2,0.0,1.2,Lardenois 2026,1.2
+Germcell_Oogonia_meiotic,1622,1.0,0.0,1.0,Lardenois 2026,1.0
+Epi_MesonephricTub_Fetal,7359,0.9,0.0,0.9,Lardenois 2026,0.9
+Mesen_EndoGlandBas,535,0.2,0.7,0.9,Sanger_Endometrium,0.4
+Meso_ParamesoCoelEpi,8490,0.8,0.0,0.8,Lardenois 2026,0.8
+Neural_Schwann_Cyc,2401,0.7,0.0,0.7,Lardenois 2026,0.7
+Endo_cap_kidney,548,0.7,0.0,0.7,Lardenois 2026,0.7
+Immune_LargePreB,305,0.7,0.0,0.7,Lardenois 2026,0.7
+Mesen_PV_Fetal,28897,0.6,0.0,0.6,Lardenois 2026,0.6
+Epi_CervixSquamous,1138,0.0,0.5,0.5,Sanger_Endometrium,0.4
+Epi_Mullerian_Undiff,3605,0.5,0.0,0.5,Lardenois 2026,0.5
+Immune_SmallPreB,281,0.0,0.4,0.4,Sanger_FallopianTube,0.4
+Germcell_PrimaryOocyte_ZP4neg,760,0.4,0.0,0.4,Lardenois 2026,0.3
+Neural_SympatheticNeurons_Immature_Cyc,394,0.3,0.0,0.3,Lardenois 2026,0.3
+Neural_SympatheticNeurons_Immature,4469,0.2,0.0,0.2,Lardenois 2026,0.2
+Mesen_FallopianLig_Fetal,18265,0.1,0.0,0.1,Lardenois 2026,0.1
+Mesen_MullerianFib,2471,0.1,0.0,0.1,Lardenois 2026,0.1
+Epi_UrethralSquamous_Fetal,1649,0.1,0.0,0.1,Lardenois 2026,0.1
+Mesen_EpoophronFib_Fetal,13877,0.1,0.0,0.1,Lardenois 2026,0.1
+Epi_Vagina_Lower_Fetal,6047,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_CervixFibs,452,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_VaginaSMCs_Lower_Fetal,1311,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_GenitalSurf_Fetal,1482,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_PrepuceSquamous_Fetal,2097,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_UGS_Undiff,3302,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_CorpusSpongiosumFib_Fetal,10169,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_CorpusCavernosumFib_Fetal,9472,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_CervixVaginaSMCs_Fetal,11569,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_CervixFib_Fetal,11916,0.0,0.0,0.0,Gaylord 2025,0.0
+Endo_cap_APCDD1+,2567,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_VaginaFibs,1463,0.0,0.0,0.0,Gaylord 2025,0.0
+Neural_Melanocyte_Fetal,88,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_Vagina_Upper_Fetal,980,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_Uterocervical_Fetal,7640,0.0,0.0,0.0,Gaylord 2025,0.0
+Neural_Schwann_Fetal,5801,0.0,0.0,0.0,Lardenois 2026,0.0
+Neural_Schwann_Immature,35,0.0,0.0,0.0,Gaylord 2025,0.0
+Neural_Schwann_Precursor,847,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_VaginaFibs_Upper_Fetal,7925,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_VaginaFib_Lower_Fetal,645,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_LabioScrotalSwelling_Fetal,6830,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_UterusSMCs_Fetal,7550,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_EctocervixVaginaSquamous,646,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_CervixSquamous_Cyc,409,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_LabiaFib_Fetal,1794,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_CervixMucinous_Secretory,287,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_Prepuce_Fetal,2243,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_GlansFib_Fetal,5416,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_FallopianSMCs_Fetal,8413,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_CervixMucinous,1156,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_FallopianFib_Fetal,41092,0.0,0.0,0.0,Lardenois 2026,0.0
+Epi_FallopianCil_Fetal,516,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_UGSFib_Lower,6277,0.0,0.0,0.0,Lardenois 2026,0.0
+Mesen_UGSFib_Upper,11402,0.0,0.0,0.0,Lardenois 2026,0.0
+Mesen_UGSLig,2661,0.0,0.0,0.0,Gaylord 2025,0.0
+Mesen_UGSSMCs,383,0.0,0.0,0.0,Gaylord 2025,0.0
+Epi_FallopianSec_Fetal,12310,0.0,0.0,0.0,Lardenois 2026,0.0
+Mesen_UterusFibs_Fetal,29462,0.0,0.0,0.0,Lardenois 2026,0.0
+Mesen_UterusLig_Fetal,12364,0.0,0.0,0.0,Lardenois 2026,0.0
+Neural_SympatheticNeurons_Noradrenergic,246,0.0,0.0,0.0,Gaylord 2025,0.0

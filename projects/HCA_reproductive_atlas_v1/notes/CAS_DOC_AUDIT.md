@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-03 · **Scope:** read-only audit (no source edits). Re-derives
 every measurable claim in the three CAS notes from the source files and checks
-that `cas_draft.json` reflects the documented mapping decisions.
+that `cas.json` reflects the documented mapping decisions.
 
 **Audited docs**
 - `ANNOTATION_INSPECTION.md` (input inventory)
@@ -13,7 +13,7 @@ that `cas_draft.json` reflects the documented mapping decisions.
 - `h5ad_obs/obs.categoricals.parquet` (2,235,448 cells × 56 cols)
 - `inputs/cell_ontology_mapping.xlsx` sheet `Final`
 - `inputs/media-4.xlsx` sheet B (+ A), `inputs/media-5.xlsx`
-- `cas_draft.json` (312 annotations)
+- `cas.json` (312 annotations)
 - live OLS4 `cl` (for the two subsumption flags)
 
 Audit script: `/tmp/audit_cas.py` (re-runnable).
@@ -24,7 +24,7 @@ Audit script: `/tmp/audit_cas.py` (re-runnable).
 
 **The documentation is accurate.** Of ~60 checkable quantities, all but one
 reproduce exactly from source, and the mapping decisions described in the notes
-are the ones actually implemented in `cas_draft.json`. The single count
+are the ones actually implemented in `cas.json`. The single count
 discrepancy traces to a **previously-undocumented duplicate row in media-4**,
 which is a real source defect (see Finding 1) — the docs are wrong only in that
 they don't yet mention it.
@@ -55,9 +55,9 @@ codes**. The duplicate is `Neural_Schwann`, appearing on sheet rows **165 and
 This is not a harmless repeat — it is the **same leaf code annotated two ways**
 (two L-paths, two disjoint marker sets). Downstream consequences:
 
-- `build_cas.py` indexes media-4 into a dict keyed by code (`m4[code] = …`), so
+- `scripts/build_cas.py` indexes media-4 into a dict keyed by code (`m4[code] = …`), so
   **row 166 silently overwrites row 165**; only one marker set could ever attach.
-- In the current `cas_draft.json` the `Neural_Schwann` leaf (node label
+- In the current `cas.json` the `Neural_Schwann` leaf (node label
   `Glials`, CL:0000125) carries **`marker_gene_evidence: None`** — *neither*
   marker set attached. So this leaf's markers are lost entirely.
 - `SOURCE_RECONCILIATION_for_authors.md` §C flags the object-side duplicate
@@ -155,7 +155,7 @@ docs exactly, and both flags verified against **live OLS4**:
 
 ---
 
-## `cas_draft.json` reflects the documented decisions
+## `cas.json` reflects the documented decisions
 
 | Documented decision | In the draft? |
 |---|---|
@@ -181,4 +181,4 @@ docs exactly, and both flags verified against **live OLS4**:
    the L2 `34` is pre-typo-fix (draft uses 33).
 3. Optional: correct the `CL:0002652` label gloss in the reconciliation memo.
 
-*Nothing in this audit was applied to source files or `cas_draft.json`.*
+*Nothing in this audit was applied to source files or `cas.json`.*

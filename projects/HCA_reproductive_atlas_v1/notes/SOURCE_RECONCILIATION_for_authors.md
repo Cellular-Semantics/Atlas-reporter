@@ -286,7 +286,7 @@ Nguyen 2017 → 10.1093/humrep/dex289; Fu et al. → 10.1038/s41586-025-08982-4.
 
 ## Appendix — how to re-verify after edits
 
-The unified annotation is rebuilt deterministically by `build_cas.py` from the
+The unified annotation is rebuilt deterministically by `scripts/build_cas.py` from the
 object obs (`h5ad_obs/obs.categoricals.parquet`) + the two spreadsheets. After
 correcting the sources, re-running it should show: no duplicated (labelset,
 label) pairs for stroma, all fetal-fibroblast leaves carrying markers, and the

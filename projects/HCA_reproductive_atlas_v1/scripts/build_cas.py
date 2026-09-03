@@ -12,7 +12,8 @@ Decisions (agreed in discussion):
   distribution (ratio 1 where homogeneous, e.g. the defining fine code at a leaf).
 - CL term (from the sheet) attaches at each code's terminal node.
 
-Throwaway/draft. Reads obs.categoricals.parquet + the two xlsx; writes cas_draft.json.
+Throwaway/draft. Reads obs.categoricals.parquet + the two xlsx; writes cas.json.
+All paths are relative to the project root — run from projects/HCA_reproductive_atlas_v1/.
 """
 import openpyxl, pandas as pd, json, re
 from collections import defaultdict
@@ -394,12 +395,12 @@ doc = {
     "annotations": annotations,
 }
 
-with open("cas_draft.json", "w") as f:
+with open("cas.json", "w") as f:
     json.dump(doc, f, indent=2, ensure_ascii=False)
 
 # ---------------------------------------------------------------- validation summary
 import os
-print(f"\nwrote cas_draft.json ({os.path.getsize('cas_draft.json')/1e6:.1f} MB)")
+print(f"\nwrote cas.json ({os.path.getsize('cas.json')/1e6:.1f} MB)")
 by_rank = defaultdict(int)
 for a in annotations: by_rank[a["labelset"]] += 1
 print("annotations per labelset:", dict(by_rank), "| total nodes:", len(annotations))
