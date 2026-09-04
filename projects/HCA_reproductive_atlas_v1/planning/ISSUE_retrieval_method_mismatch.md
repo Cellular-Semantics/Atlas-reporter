@@ -1,65 +1,74 @@
-# [schema] `source_method` vs `retrieval_method`: runtime output cannot satisfy `all_summaries.schema.json`
+# [schema] Agentic workflow has no item-level contract for `all_summaries.json`, so #12's provenance tags are never emitted
 
 Follow-up to #12 (evidence source tagging: `source_paper.role` + `retrieval_method`).
 
-## Summary
+Scope: the **agentic** workflow (`.claude/agents/`, `CLAUDE.md`). The LangGraph
+path is out of scope — see the note at the bottom.
 
-The schema introduced in #12 and the field the graph actually emits are different
-fields with different vocabularies. Any `all_summaries.json` the graph writes today
-fails `report_checker.check_source_tags`.
+## Problem
 
-## The mismatch
+#12 landed `all_summaries.schema.json` (requiring `source_paper`,
+`retrieval_method`, `summary`, `quotes`, with `additionalProperties: false`) and
+schema-derived validation in `report_checker.check_source_tags`. But nothing on
+the agentic side tells the `citation-traverse` subagent what an item should
+contain:
 
-Three names for provenance are live at once:
+- `.claude/agents/citation-traverse.md` §Output names only the two output
+  *files* — no per-item field contract.
+- `CLAUDE.md` §4b likewise gives only filenames (contrast §3 and §4a, which do
+  give explicit JSON contracts).
+- `retrieval_method` / `source_paper` appear nowhere in `.claude/` or
+  `src/atlas_chat/atlas_chat/agents/*.prompt.yaml`.
 
-| Where | Field | Values |
-|---|---|---|
-| `services/local_snippet_index.py:1154` | `source_method` | `"local_snippet"` |
-| `graphs/report_graph.py:314,339,444` | `source_method` | `"asta"` (default) |
-| `services/citation_traverser.py:198` (docstring) | `source_method` | `"local_snippet"` |
-| `schemas/all_summaries.schema.json` (#12) | **`retrieval_method`** | `corpus_snippet`, `supplement`, `citation_traversal`, `free_search` |
+So the subagent invents a shape. Real output from a completed run
+(`projects/HCA_reproductive_atlas_v1/traversal_output/`):
 
-`report_graph.py:444` sets `ev["source_method"]` (and `ev["snippet"]`) on every
-evidence item that becomes `all_summaries.json`. The schema declares
-`additionalProperties: false` and requires `source_paper` + `retrieval_method`, so
-each item fails twice over: unexpected `source_method`/`snippet`, missing
-`retrieval_method`/`source_paper`.
+```json
+{"title": "...", "authors": [...], "year": 2026,
+ "doi": "10.64898/2026.06.10.731198", "corpusId": "289267967", "quotes": [...]}
+```
 
-## Why this isn't just a rename
+Item keys are `[authors, corpusId, doi, quotes, title, year]`. Validated against
+the schema: **76 errors** across 19 items in one file, **48** across 12 in the
+other. Missing `source_paper`, `retrieval_method` and `summary` (despite the
+agent's own rule "Summarize each snippet as it is returned"); `authors`/`title`/
+`year` now forbidden by `additionalProperties: false`.
 
-`retrieval_method` models *how the evidence was reached* and `source_paper.role`
-models *what the paper is* — orthogonal, per #12's own field descriptions.
-`source_method` encodes a **third** axis the schema does not model: which retrieval
-*backend* served the snippet (ASTA API vs the local snippet index). Collapsing
-`local_snippet` into `corpus_snippet` would lose exactly the distinction the
-HCA reproductive atlas coverage audit depends on — "ASTA served this" vs "we read
-this in a PDF/JATS we hold locally", for papers ASTA cannot reach at all.
+## Fix
 
-## Decision needed
+1. Add an explicit item contract to `.claude/agents/citation-traverse.md` and
+   `CLAUDE.md` §4b, matching `all_summaries.schema.json` field-for-field, and
+   name the schema file as the source of truth rather than restating it loosely.
+2. Make step 6 of `CLAUDE.md` (explicit validation) call `check_source_tags`,
+   not just `validate_report` — otherwise the orchestrator cannot see these
+   errors.
 
-1. Add `local_snippet` to the `retrieval_method` enum; **or**
-2. Keep `retrieval_method` as the mechanism and add a separate optional
-   `retrieval_backend` (`asta` | `local_snippet`); **or**
-3. Declare backend identity out of scope and map `local_snippet` →
-   `corpus_snippet`, accepting the loss.
+## Decision needed: how to tag local-index hits
 
-(2) preserves both axes cleanly and keeps #12's orthogonality intact.
+The schema's `retrieval_method` enum is `corpus_snippet | supplement |
+citation_traversal | free_search`. It has no member for evidence served by the
+**local snippet index** — but the local index is a distinct retrieval backend
+(`local_snippet_index.py:1154` tags its snippets `source_method:
+"local_snippet"`, and `CLAUDE.md` §4b documents that tag), and it is the *only*
+route to papers ASTA cannot reach.
 
-## Then wire the graph
+Losing that distinction would break the reasoning in this project's
+`notes/EVIDENCE_COVERAGE_AUDIT.md`, which turns on "ASTA served this" vs "we read
+this in a PDF/JATS we hold locally". Options:
 
-No new information is needed — the graph already holds everything:
+1. Add `local_snippet` to the `retrieval_method` enum.
+2. Keep `retrieval_method` as the mechanism and add an optional
+   `retrieval_backend` (`asta` | `local_snippet`).
+3. Map `local_snippet` → `corpus_snippet` and accept the loss.
 
-- `source_paper.role` — `corpus.json` records `role: atlas|subatlas` per paper;
-  anything not a corpus member is `external`.
-- `retrieval_method` / backend — `report_graph.py:309` already has `asta_snips`
-  and `local_snips` as separate lists before merging, so the tag is known at the
-  point the two are combined.
-- Drop `snippet` from the emitted item, or add it to the schema (it is currently
-  carried "for validation" and then written out).
+(2) preserves #12's stated orthogonality — `role` = what the paper *is*,
+`retrieval_method` = how it was *reached* — while adding backend as its own axis.
 
-## Also
+## Note on the LangGraph path
 
-`tests/unit/test_evidence_provenance_schema.py` and
-`test_report_checker_source_tags.py` validate fixtures, not graph output. A test
-that runs the graph's evidence-assembly path through `check_source_tags` would
-have caught this.
+`graphs/report_graph.py` emits `source_method` (not `retrieval_method`) plus a
+`snippet` field at lines 314/339/444, which the schema forbids, so its output
+also cannot validate. If that runtime is deprecated it should be marked as such —
+there is currently **no deprecation marker in `report_graph.py` on `main`,
+`dev`, or this branch**, so a reader has no way to tell it is not the supported
+path.
