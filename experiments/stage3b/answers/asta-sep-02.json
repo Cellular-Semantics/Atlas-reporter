@@ -1,0 +1,57 @@
+[
+  {
+    "id": "G34-caparteriole-function",
+    "found": true,
+    "answer": "Capillary arteriole cells show sprouting angiogenesis potential (assessed by the 'tip' cell state score) in both prenatal skin and SkO, though in SkO these cells appear unable to guide stalk cells for new blood vessel formation despite this signature.",
+    "quotes": [
+      "sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h)",
+      "SkO capillary arteriole cells are unable to guide stalk cells for new blood vessel formation"
+    ]
+  },
+  {
+    "id": "G36-pear1-function",
+    "found": true,
+    "answer": "PEAR1+ fibroblasts express genes involved in cellular senescence, cytokine pathways and collagen deposition that are highly expressed in pathogenic fibroblasts of fibrotic skin disorders, linking them to progressive acquisition of scar-promoting properties in later gestation.",
+    "quotes": [
+      "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders 53 ."
+    ]
+  },
+  {
+    "id": "G24-fibroblast-location",
+    "found": true,
+    "answer": "Fibroblasts in prenatal human skin are found in the dermal compartment, producing collagen there, with subsets such as HOXC5+ early fibroblasts located in the upper dermis.",
+    "quotes": [
+      "Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate 51 .",
+      "HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f)"
+    ]
+  },
+  {
+    "id": "G12-tml-location",
+    "found": true,
+    "answer": "TML macrophages are predicted to co-locate with Schwann cells in the 'early neurovascular microenvironment' (ME1) and with WNT2+ fibroblasts in early prenatal skin (6-8 PCW).",
+    "quotes": [
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1) (Figs. 1d and 3g)",
+      "TML macrophages were predicted to co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW) (Fig. 3c,d)"
+    ]
+  },
+  {
+    "id": "G05-macrophage-markers",
+    "found": false,
+    "answer": "The supplied context does not list specific genes marking macrophages generally; it only refers to unnamed 'marker genes' used to annotate macrophage subsets without naming them.",
+    "quotes": []
+  },
+  {
+    "id": "G55-cuticle-cortex-structure-absent",
+    "found": true,
+    "answer": "The paper describes cuticle/cortex cells as part of the inner layers of the hair follicle.",
+    "quotes": [
+      "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+    ]
+  },
+  {
+    "id": "G52-pear1-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of PEAR1+ fibroblasts; it only discusses their gene expression and abundance over gestation.",
+    "quotes": []
+  }
+]

@@ -1,0 +1,646 @@
+# Test items for Gopee et al. 2024 (10.1038/s41586-024-08002-x).
+#
+# Hand-authored from the paper's nine narrative sections (Main -> Discussion).
+# Methods sections are excluded as evidence: they are 46% of the body text and
+# match content cues freely ("Macrophages were collected using TrypLE"), but
+# they say nothing about cell types.
+#
+# Every item carries one explicitly stated `answer` and the verbatim `span`
+# that supports it -- checked as a substring by items_check.py. Prose answers
+# are judge-scored; there is no entity key, deliberately (see the Stage 3
+# handoff, rule 1).
+#
+# `expect: absent` items have no span. The correct response is a decline. They
+# exist because an honest "not found" is a required behaviour, not a failure --
+# and structure/morphology is where this atlas genuinely has nothing.
+
+paper: gopee2024
+doi: 10.1038/s41586-024-08002-x
+labelset_source: Supplementary Table 11 (refined) / Table 10 (broad)
+
+items:
+
+# ---- Placode: the one label with real structural content ------------------
+- id: G01-placode-structure
+  label: Placode
+  ask_as: hair placode
+  axis: structure
+  expect: present
+  answer: >-
+    A focal thickening of the epidermal layer, formed by budding of basal cells;
+    placode formation is accompanied by invagination as the dermal condensate
+    forms beneath it.
+  span: "epidermal placodes (focal sites of epidermal layer thickening)"
+  scoring: judge
+
+- id: G02-placode-location
+  label: Placode
+  ask_as: hair placode
+  axis: location
+  expect: present
+  answer: >-
+    In the epidermis, at focal sites of epidermal thickening; the dermal
+    condensate abuts the epithelial hair placode from below.
+  span: "which abuts the epithelial hair placode"
+  scoring: judge
+
+- id: G03-placode-function
+  label: Placode
+  ask_as: hair placode
+  axis: function
+  expect: present
+  answer: >-
+    Initiates hair follicle formation together with the dermal condensate; hair
+    matrix cells arise from the epidermal placode. WNT and EDA signalling drive
+    placode specification.
+  span: "We evaluated hair matrix cells, which arise from the epidermal placode"
+  scoring: judge
+
+- id: G04-placode-markers
+  label: Placode
+  ask_as: hair placode
+  axis: markers
+  expect: present
+  answer: >-
+    LAMP1, CXADR and EPHB6 are reported on the placode, as receptors for FAM3C
+    and EFNB1 expressed by the dermal condensate.
+  span: "predicted to interact with LAMP1 or CXADR and EPHB6 on the placode"
+  scoring: judge
+  hazard: >-
+    The genes are receptors *on* the placode named in a ligand-receptor
+    prediction, not a marker panel. An answer naming them is correct; one
+    calling them placode markers is over-reading.
+
+# ---- Macrophage (broad) ---------------------------------------------------
+- id: G05-macrophage-markers
+  label: Macrophage
+  axis: markers
+  expect: present
+  answer: >-
+    MHCII genes (upregulated only after 11 PCW), TREM2 on the microglia-like
+    subset with P2RY12, CX3CR1 and OLFML3; GAS6 and VEGFA and CXCL8 also
+    macrophage-expressed.
+  span: "share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages"
+  scoring: judge
+  hazard: broad label; four subsets each have their own markers
+
+- id: G06-macrophage-location
+  label: Macrophage
+  axis: location
+  expect: present
+  answer: >-
+    Seed the skin from 6 PCW; co-locate with endothelial and neural cells in the
+    early and late neurovascular microenvironments (ME1 and ME5), and with
+    fibroblasts (ME1, ME4, ME5).
+  span: "Macrophages co-located with endothelial and neural cells in ‘early and late neurovascular microenvironments’"
+  scoring: judge
+
+- id: G07-macrophage-function
+  label: Macrophage
+  axis: function
+  expect: present
+  answer: >-
+    Support angiogenesis via vascular network remodelling, contribute to
+    scarless skin repair, fibroblast homeostasis and neurovascular development.
+  span: "Our atlas indicated that macrophages contribute to scarless skin repair, fibroblast homeostasis and neurovascular development."
+  scoring: judge
+
+# ---- WNT2+ fibroblast ----------------------------------------------------
+- id: G08-wnt2fib-markers
+  label: WNT2+ fibroblast
+  axis: markers
+  expect: present
+  answer: >-
+    WNT2 itself; late-gestation cells upregulate COL1A1 and extracellular
+    matrix/collagen genes, early cells SFRP1; the population also expresses
+    CDKN1A, IL1R1 and POSTN, and has downregulated IL6 relative to adult.
+  span: "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition"
+  scoring: judge
+
+- id: G09-wnt2fib-location
+  label: WNT2+ fibroblast
+  axis: location
+  expect: present
+  answer: >-
+    Dermal; co-locate with LYVE1+ macrophages, and with TML macrophages in early
+    prenatal skin (6-8 PCW).
+  span: "Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts"
+  scoring: judge
+
+- id: G10-wnt2fib-function
+  label: WNT2+ fibroblast
+  axis: function
+  expect: present
+  answer: >-
+    Extracellular matrix and collagen deposition in late gestation, growth and
+    differentiation early; acquire an adult pro-inflammatory and senescence
+    profile with gestational age.
+  span: "we observed differences within the WNT2+ fibroblast population across gestation time"
+  scoring: judge
+
+# ---- TML macrophage ------------------------------------------------------
+- id: G11-tml-markers
+  label: TML macrophage
+  ask_as: TREM2+ microglia-like (TML) macrophage
+  axis: markers
+  expect: present
+  answer: TREM2, with P2RY12, CX3CR1 and OLFML3; also express GAS6.
+  span: "Prenatal skin TREM2+ microglia-like (TML) macrophages were highly correlated with embryonic brain microglia"
+  scoring: judge
+
+- id: G12-tml-location
+  label: TML macrophage
+  ask_as: TREM2+ microglia-like (TML) macrophage
+  axis: location
+  expect: present
+  answer: >-
+    Co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW) and with
+    Schwann cells in the early neurovascular microenvironment (ME1); seen in
+    close proximity to endothelial cells.
+  span: "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin"
+  scoring: judge
+
+- id: G13-tml-function
+  label: TML macrophage
+  ask_as: TREM2+ microglia-like (TML) macrophage
+  axis: function
+  expect: present
+  answer: >-
+    Promote sprouting angiogenesis, and interact with Schwann cells to
+    contribute to synapse formation and axon guidance (VEGFA-NRP1, VEGFA-NRP2,
+    SEMA3C-NRP2, SEMA3E-PLXND1).
+  span: "contributing to synapse formation and axon guidance"
+  scoring: judge
+
+# ---- Dermal condensate ---------------------------------------------------
+- id: G14-dc-markers
+  label: Dermal condensate
+  axis: markers
+  expect: present
+  answer: >-
+    FOXD1+SOX2+ (the precursor pre-Dc is PDGFRA+FOXD1+SOX2-low); the Dc
+    expresses FAM3C and EFNB1.
+  span: "expressed FAM3C and EFNB1"
+  scoring: judge
+
+- id: G15-dc-location
+  label: Dermal condensate
+  axis: location
+  expect: present
+  answer: >-
+    In the dermal compartment from 12 PCW, directly beneath and abutting the
+    epithelial hair placode.
+  span: "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW"
+  scoring: judge
+
+- id: G16-dc-function
+  label: Dermal condensate
+  axis: function
+  expect: present
+  answer: >-
+    Aggregates from pre-Dc fibroblasts to initiate hair follicle formation with
+    the placode; its FAM3C and EFNB1 are predicted to promote cell migration and
+    invasion.
+  span: "have been reported to promote cell migration and invasion"
+  scoring: judge
+
+# ---- Matrix (hair matrix) ------------------------------------------------
+- id: G17-matrix-markers
+  label: Matrix
+  ask_as: hair matrix
+  axis: markers
+  expect: present
+  answer: SHH, and WNT10B; both described as known matrix markers.
+  span: "known matrix markers such as SHH and WNT10B, were upregulated"
+  scoring: judge
+  hazard: >-
+    "Matrix" alone is ambiguous in this paper -- extracellular matrix and
+    several linear-algebra senses dominate raw matches. The question must say
+    hair matrix.
+
+- id: G18-matrix-location
+  label: Matrix
+  ask_as: hair matrix
+  axis: location
+  expect: present
+  answer: >-
+    In the hair follicle, arising from the epidermal placode; a prenatal-specific
+    cell state absent from established adult follicles. Identified from 14 PCW.
+  span: "a prenatal-specific cell state absent in established adult HFs"
+  scoring: judge
+
+- id: G19-matrix-function
+  label: Matrix
+  ask_as: hair matrix
+  axis: function
+  expect: present
+  answer: >-
+    Expresses chemotaxis genes including CXCL14, reported to recruit regulatory T
+    cells, and CD24 in control of autoimmunity - suggesting Treg accumulation and
+    immune protection during early matrix differentiation.
+  span: "increased expression of genes involved in chemotaxis, such as CXCL14"
+  scoring: judge
+
+# ---- LYVE1++ macrophage -------------------------------------------------
+- id: G20-lyve1-markers
+  label: LYVE1++ macrophage
+  ask_as: LYVE1+ macrophage
+  axis: markers
+  expect: present
+  answer: LYVE1; also expresses GAS6.
+  span: "GAS6, expressed by TML macrophages and LYVE1+ macrophages"
+  scoring: judge
+  hazard: >-
+    The roster label writes LYVE1++, the paper writes LYVE1+. Marker evidence in
+    the body text is thin - the subset's DEG panel is in Supplementary Table 22.
+
+- id: G21-lyve1-location
+  label: LYVE1++ macrophage
+  ask_as: LYVE1+ macrophage
+  axis: location
+  expect: present
+  answer: >-
+    Co-locate with WNT2+ fibroblasts in the dermis, and are seen in close
+    proximity to endothelial cells by RNAscope and immunofluorescence.
+  span: "showed LYVE1+ and TML macrophages in close proximity to endothelial cells"
+  scoring: judge
+
+- id: G22-lyve1-function
+  label: LYVE1++ macrophage
+  ask_as: LYVE1+ macrophage
+  axis: function
+  expect: present
+  answer: >-
+    Promote sprouting angiogenesis and blood vessel morphogenesis, and maintain
+    prenatal skin dermal fibroblasts (via PDGF-PDGFR and GAS6-AXL).
+  span: "blood vessel morphogenesis by LYVE1+ macrophages"
+  scoring: judge
+
+# ---- Fibroblast (broad) -------------------------------------------------
+- id: G23-fibroblast-markers
+  label: Fibroblast
+  axis: markers
+  expect: present
+  answer: >-
+    Prenatal skin fibroblasts upregulate immune-suppression and regeneration
+    genes (CD200, RAMP2, MDK) relative to adult, which express IL6, IL1RA,
+    HLA-A, CD55, PTGES and CDKN1A. They do not significantly express papillary
+    markers such as COL13A1.
+  span: "prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200)"
+  scoring: judge
+  hazard: broad label spanning five fine subsets; answers may legitimately be subset-specific
+
+- id: G24-fibroblast-location
+  label: Fibroblast
+  axis: location
+  expect: present
+  answer: >-
+    Dermal compartment. HOXC5+ early fibroblasts sit in the upper dermis;
+    HF-specialised subsets (Dc, Dp) are within the dermal compartment from 12 PCW.
+  span: "HOXC5+ early fibroblasts (located in the upper dermis"
+  scoring: judge
+
+- id: G25-fibroblast-function
+  label: Fibroblast
+  axis: function
+  expect: present
+  answer: >-
+    Early-gestation fibroblasts downregulate extracellular matrix formation,
+    collagen deposition and inflammation, which may favour tissue regeneration
+    over scarring.
+  span: "may favour tissue regeneration over scarring"
+  scoring: judge
+
+# ---- Periderm -----------------------------------------------------------
+- id: G26-periderm-location
+  label: Periderm
+  axis: location
+  expect: present
+  answer: >-
+    The outermost layer, overlying the dermal stroma in skin up to 8 PCW; present
+    from 7 PCW, enriched in early gestation, and seen sloughing from 11 PCW.
+  span: "with the periderm seen sloughing from 11 PCW"
+  scoring: judge
+
+- id: G27-periderm-function
+  label: Periderm
+  axis: function
+  expect: present
+  answer: Constitutes the first skin permeability barrier.
+  span: "the periderm, which constitutes the first skin permeability barrier"
+  scoring: judge
+
+- id: G28-periderm-structure
+  label: Periderm
+  axis: structure
+  expect: present
+  answer: >-
+    A layer of epidermal cells overlying the dermal stroma, which sloughs from
+    11 PCW.
+  span: "consisted of a layer of epidermal cells overlying the dermal stroma"
+  scoring: judge
+  hazard: thin - a layer description and a sloughing observation, not morphology proper
+
+# ---- HOXC5+ early fibroblast -------------------------------------------
+- id: G29-hoxc5-location
+  label: HOXC5+ early fibroblast
+  axis: location
+  expect: present
+  answer: The upper dermis.
+  span: "HOXC5+ early fibroblasts (located in the upper dermis"
+  scoring: judge
+
+- id: G30-hoxc5-function
+  label: HOXC5+ early fibroblast
+  axis: function
+  expect: present
+  answer: >-
+    A common fibroblast progenitor: differentiates along a hair fibroblast
+    trajectory (pre-Dc, Dc, Dp) and a dermal fibroblast trajectory (WNT2+ and
+    PEAR1+ fibroblasts).
+  span: "originated from a common fibroblast progenitor (HOXC5+ early fibroblast)"
+  scoring: judge
+
+# ---- DPYSL2+ basal ----------------------------------------------------
+- id: G31-dpysl2-markers
+  label: DPYSL2+ basal
+  axis: markers
+  expect: present
+  answer: >-
+    DPYSL2 itself, and AGR2 - reported as newly identified along the ORS/CL
+    trajectory. BARX2 and SOX9 are named in the same sentence but explicitly as
+    previously reported ORS-differentiation genes.
+  span: "we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2"
+  scoring: judge
+  hazard: >-
+    This is the rule-1 trap. An answer of "AGR2" is right; "BARX2, SOX9" is
+    reading the paper's attribution backwards. Judge must be told the
+    distinction, not left to infer it.
+
+- id: G32-dpysl2-function
+  label: DPYSL2+ basal
+  axis: function
+  expect: present
+  answer: >-
+    Part of the ORS/CL differentiation trajectory from POSTN+ basal cells,
+    towards outer root sheath and companion layer.
+  span: "ORS/CL trajectory, comprising DPYSL2+ basal cells, ORS and CL"
+  scoring: judge
+
+# ---- Capillary arterioles --------------------------------------------
+- id: G33-caparteriole-markers
+  label: Capillary arterioles
+  axis: markers
+  expect: present
+  answer: >-
+    Arteriolar identity is marked by GJA5. In the organoid comparison, KDR and
+    FLT1 (VEGF receptors) and the GATA2/NFATC1 regulons with targets such as VWF
+    are downregulated in SkO capillary arterioles relative to prenatal skin.
+  span: "their receptors (KDR and FLT1) on SkO capillary arterioles were downregulated compared to prenatal skin"
+  scoring: judge
+
+- id: G34-caparteriole-function
+  label: Capillary arterioles
+  axis: function
+  expect: present
+  answer: >-
+    In prenatal skin they can differentiate further into arterioles, which SkO
+    capillary arteriole cells cannot; they score highly for the sprouting
+    angiogenesis tip-cell state.
+  span: "prenatal skin capillary arteriole cells could further differentiate into arterioles"
+  scoring: judge
+
+# ---- PEAR1+ fibroblast ----------------------------------------------
+- id: G35-pear1-markers
+  label: PEAR1+ fibroblast
+  axis: markers
+  expect: present
+  answer: >-
+    PEAR1 itself; APOE, IGFBP7 and ITM2A are upregulated during the transition
+    from HOXC5+ fibroblasts, as a pro-inflammatory fibroblast phenotype.
+  span: "were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts"
+  scoring: judge
+
+- id: G36-pear1-function
+  label: PEAR1+ fibroblast
+  axis: function
+  expect: present
+  answer: >-
+    A dermal fibroblast endpoint, abundant after 11 PCW, carrying the adult
+    pro-inflammatory gene expression profile along with senescence and collagen
+    deposition genes.
+  span: "formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)"
+  scoring: judge
+
+# ---- POSTN+ basal ---------------------------------------------------
+- id: G37-postn-location
+  label: POSTN+ basal
+  axis: location
+  expect: present
+  answer: >-
+    Basal epidermis; present throughout gestation, unlike mature DPYSL2+ basal
+    and suprabasal IFE cells which increase after 11 PCW.
+  span: "whereas POSTN+ basal cells were present throughout gestation"
+  scoring: judge
+
+- id: G38-postn-function
+  label: POSTN+ basal
+  axis: function
+  expect: present
+  answer: >-
+    Increased cellular migration, suggested to be involved in placode
+    specification and dermal invagination; the origin of both the ORS/CL and IRS
+    differentiation trajectories.
+  span: "may be involved in placode specification and dermal invagination"
+  scoring: judge
+
+# ---- Arterioles -----------------------------------------------------
+- id: G39-arteriole-markers
+  label: Arterioles
+  axis: markers
+  expect: present
+  answer: GJA5, given as the characteristic arteriolar gene (against PLVAP for venular).
+  span: "for example, GJA5 for arteriolar and PLVAP for venular"
+  scoring: judge
+  hazard: >-
+    Shares nearly every sentence with Capillary arterioles; an answer drawn from
+    the capillary-arteriole evidence should not be marked wrong without checking
+    which label the sentence attributes it to.
+
+- id: G40-arteriole-function
+  label: Arterioles
+  axis: function
+  expect: present
+  answer: >-
+    The endpoint of the arteriolar differentiation pathway from early endothelial
+    cells via capillaries and capillary arterioles; scores for sprouting
+    angiogenesis tip-cell state.
+  span: "differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles)"
+  scoring: judge
+
+# ---- Cuticle/cortex -------------------------------------------------
+- id: G41-cuticle-location
+  label: Cuticle/cortex
+  axis: location
+  expect: present
+  answer: Part of the inner layers of the hair follicle.
+  span: "part of the inner layers of the HF"
+  scoring: judge
+
+# ---- Structure: the absence arm ----------------------------------------
+#
+# Gopee is a transcriptomic atlas. It says where cells are and what they do; it
+# does not describe what they look like. Of 16 labels only the hair placode has
+# real morphological content, and the periderm has a layer description.
+#
+# For the remaining 14, the correct answer is that the atlas paper does not say
+# -- so these items test the honest "not found", which is required behaviour and
+# not a failure. Stage 2 measured absence reporting at 18/18 when a passage was
+# genuinely withheld; here nothing is withheld, the paper simply has no answer.
+#
+# Scored deterministically: a decline is correct, any morphological claim is a
+# fabrication. Never route these to a judge -- it will mark a decline
+# "incorrect" for having no answer (handoff rule 3).
+
+- id: G42-macrophage-structure-absent
+  label: Macrophage
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G43-wnt2-plus-fibroblast-structure-absent
+  label: WNT2+ fibroblast
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G44-tml-macrophage-structure-absent
+  label: TML macrophage
+  ask_as: TREM2+ microglia-like (TML) macrophage
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G45-dermal-condensate-structure-absent
+  label: Dermal condensate
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G46-matrix-structure-absent
+  label: Matrix
+  ask_as: hair matrix
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G47-lyve1-plus-plus-macrophage-structure-absent
+  label: LYVE1++ macrophage
+  ask_as: LYVE1+ macrophage
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G48-fibroblast-structure-absent
+  label: Fibroblast
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G49-hoxc5-plus-early-fibroblast-structure-absent
+  label: HOXC5+ early fibroblast
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G50-dpysl2-plus-basal-structure-absent
+  label: DPYSL2+ basal
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G51-capillary-arterioles-structure-absent
+  label: Capillary arterioles
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G52-pear1-plus-fibroblast-structure-absent
+  label: PEAR1+ fibroblast
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G53-postn-plus-basal-structure-absent
+  label: POSTN+ basal
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G54-arterioles-structure-absent
+  label: Arterioles
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence
+
+- id: G55-cuticle-cortex-structure-absent
+  label: Cuticle/cortex
+  axis: structure
+  expect: absent
+  answer: >-
+    Not stated in this paper. Gopee et al. describe the transcriptional
+    identity, location and inferred function of this cell type but not its
+    morphology or ultrastructure.
+  scoring: absence

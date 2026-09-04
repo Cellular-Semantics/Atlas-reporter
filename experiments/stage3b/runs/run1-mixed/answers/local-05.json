@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G29-hoxc5-location",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts are located in the upper dermis of prenatal human skin, and are abundant before 11 PCW.",
+    "quotes": ["Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths"]
+  },
+  {
+    "id": "G30-hoxc5-function",
+    "found": true,
+    "answer": "The paper casts HOXC5+ early fibroblast as the common fibroblast progenitor of prenatal skin dermal cells: it differentiates along a hair fibroblast trajectory (pre-Dc cells, Dc and Dp) and a dermal fibroblast trajectory (WNT2+ and PEAR1+ fibroblasts).",
+    "quotes": ["pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5+ early fibroblast)", "Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)"]
+  },
+  {
+    "id": "G31-dpysl2-markers",
+    "found": true,
+    "answer": "The population is defined by DPYSL2 expression (mature basal IFE cells), and along the ORS/CL trajectory these cells upregulate AGR2 as well as the ORS differentiation genes BARX2 and SOX9.",
+    "quotes": ["Mature basal (DPYSL2+) and suprabasal IFE cells increased after 11 PCW", "Along the ORS/CL trajectory, we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9)"]
+  },
+  {
+    "id": "G32-dpysl2-function",
+    "found": true,
+    "answer": "The only role attributed to DPYSL2+ basal cells is developmental: they form part of the ORS/CL differentiation trajectory arising from POSTN+ basal cells, upregulating AGR2 and ORS differentiation genes. No other function is stated in the supplied context.",
+    "quotes": ["Inferred trajectory and pseudotime analysis of epidermal cells in the integrated prenatal skin and SkO data predicted the differentiation of POSTN+ basal cells into two paths: ORS/CL trajectory, comprising DPYSL2+ basal cells, ORS and CL; and IRS trajectory, involving placode, matrix, cuticle/cortex and IRS", "Along the ORS/CL trajectory, we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9)"]
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": false,
+    "answer": "The supplied context does not give marker genes specific to capillary arteriole cells. It names GJA5 as characteristic of the arteriolar pathway as a whole and mentions KDR and FLT1 receptor expression on SkO capillary arterioles, but no marker set for the cell type itself.",
+    "quotes": []
+  },
+  {
+    "id": "G34-caparteriole-function",
+    "found": true,
+    "answer": "Capillary arteriole cells are an intermediate stage of the arteriolar endothelial differentiation pathway; in prenatal skin (unlike in the skin organoid) they can differentiate further into arterioles, and they score highly for sprouting angiogenesis 'tip' cell potential.",
+    "quotes": ["Inferred trajectory analysis showed that early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)", "Unlike SkO capillary arteriole cells, prenatal skin capillary arteriole cells could further differentiate into arterioles", "However, sprouting angiogenesis potential, assessed by scoring the ‘tip’ cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells"]
+  },
+  {
+    "id": "G35-pear1-markers",
+    "found": true,
+    "answer": "Beyond PEAR1 itself, the paper reports that PEAR1+ prenatal fibroblasts express cellular senescence, cytokine and collagen deposition genes (CDKN1A, IL1R1, POSTN), and that pro-inflammatory genes APOE, IGFBP7 and ITM2A are upregulated during the transition from HOXC5+ into PEAR1+ fibroblasts.",
+    "quotes": ["Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)", "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A), were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts"]
+  }
+]

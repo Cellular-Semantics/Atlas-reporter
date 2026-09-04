@@ -1,0 +1,106 @@
+[
+  {
+    "id": "G40-arteriole-function",
+    "found": true,
+    "answer": "The paper reports that sprouting angiogenesis potential (scored via a 'tip' cell state) was increased in prenatal skin arteriole cells (along with capillary arteriole and capillary cells).",
+    "quotes": [
+      "sprouting angiogenesis potential, assessed by scoring the ‘tip’ cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h)."
+    ]
+  },
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "The paper attributes collagen production to dermal fibroblasts, noting that aggregation of this collagen (along with failed epidermal regeneration) is what produces scars.",
+    "quotes": [
+      "Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate."
+    ]
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": true,
+    "answer": "Matrix cells are predicted to receive RSPO3 signalling from the dermal papilla via LGR4/LGR6, contributing to proliferation of HF epithelial cells.",
+    "quotes": [
+      "Finally, RSPO3 from the Dp was predicted to interact with LGR4 and LGR6 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8) in overlying matrix cells to contribute to the proliferation of HF epithelial cells."
+    ]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The placode expresses receptors (LAMP1/CXADR and EPHB6) for Dc-derived FAM3C and EFNB1, interactions reported to promote cell migration and invasion.",
+    "quotes": [
+      "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion, (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8)."
+    ]
+  },
+  {
+    "id": "G15-dc-location",
+    "found": true,
+    "answer": "The dermal condensate is found within the dermal compartment, observed from 12 PCW alongside other HF-specialized fibroblasts and the dermal papilla.",
+    "quotes": [
+      "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c)."
+    ]
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Macrophages co-locate with endothelial and neural cells within 'early and late neurovascular microenvironments' in prenatal skin.",
+    "quotes": [
+      "Macrophages co-located with endothelial and neural cells in ‘early and late neurovascular microenvironments’ (ME1 and ME5, respectively), whereas pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses (Fig. 1d and Extended Data Fig. 1e,f)."
+    ]
+  },
+  {
+    "id": "G02-placode-location",
+    "found": true,
+    "answer": "Hair placodes are focal sites of epidermal layer thickening, situated in the epidermis where they interact with underlying dermal condensates.",
+    "quotes": [
+      "epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)"
+    ]
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": true,
+    "answer": "Capillary arterioles belong to the arteriolar differentiation pathway, characterised by expression of GJA5.",
+    "quotes": [
+      "early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular) (Fig. 4d and Extended Data Fig. 10a–c)."
+    ]
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": true,
+    "answer": "GAS6 is expressed by LYVE1+ macrophages, according to the supplied context.",
+    "quotes": [
+      "GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair,."
+    ]
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "The paper describes hair placodes as focal sites of epidermal layer thickening.",
+    "quotes": [
+      "epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)"
+    ]
+  }
+]

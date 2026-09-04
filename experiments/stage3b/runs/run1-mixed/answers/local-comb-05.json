@@ -1,0 +1,57 @@
+[
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "Dermal fibroblasts produce collagen, whose aggregation causes scarring; early prenatal fibroblasts downregulate extracellular matrix, collagen and inflammation genes, which may favour scarless tissue regeneration, and later-gestation WNT2+ fibroblasts upregulate extracellular matrix and collagen deposition genes.",
+    "quotes": [
+      "Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate.",
+      "Collectively, our findings suggest that prenatal skin fibroblasts in early gestation downregulate genes involved in extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring."
+    ]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The epidermal placode initiates hair follicle formation through interactions with dermal condensates, and it gives rise to hair matrix cells.",
+    "quotes": [
+      "Prenatal HFs start forming between 11 and 14 post-conception weeks (PCW), initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)",
+      "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs"
+    ]
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Macrophages seed prenatal skin from as early as 6 PCW and are predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments; LYVE1+ macrophages co-locate with WNT2+ fibroblasts, and TML macrophages co-locate with Schwann cells in an early neurovascular microenvironment.",
+    "quotes": [
+      "immune cells such as macrophages seed the skin as early as 6 PCW",
+      "In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation (Fig. 1d). Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts",
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin (‘early neurovascular microenvironment’, ME1)"
+    ]
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": false,
+    "answer": "The supplied context does not name marker genes specific to capillary arterioles; it only gives GJA5 as a characteristic gene of the arteriolar pathway as a whole (which comprises capillaries, capillary arterioles and arterioles), and mentions VEGF receptors KDR and FLT1 on capillary arterioles without presenting them as markers.",
+    "quotes": []
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not name marker genes for the hair placode; it lists markers for other hair follicle cell states (for example, SHH+ matrix and SLC26A7+ outer root sheath) but gives no placode marker, and mentions WNT and EDA only as signalling pathways for placode specification.",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of fibroblasts; it covers their differentiation trajectories, locations and transcriptional profiles only.",
+    "quotes": []
+  },
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "Epidermal placodes are focal sites of thickening of the epidermal layer, seen histologically as budding of basal cells at 14–15 PCW.",
+    "quotes": [
+      "initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)",
+      "At 14–15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a)."
+    ]
+  }
+]

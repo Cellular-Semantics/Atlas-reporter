@@ -1,0 +1,195 @@
+# Grounded synonym sets for Gopee et al. 2024.
+#
+# The roster collects candidate name forms mechanically, each with the span it
+# came from. This file is the judgement pass over those candidates: which are
+# genuinely other names for the same set of cells, and which only look like it.
+#
+# Rules applied:
+#   1. primary  = the form the authors use in running prose, spelled in full --
+#      not the roster's notation, not a bare abbreviation.
+#   2. a synonym denotes THE SAME SET of cells. A subset, a sibling label, a
+#      broader class, or the same cells in another experimental system is not a
+#      synonym, however close the wording.
+#   3. every accepted synonym carries a verbatim span. No span, no synonym.
+#   4. nothing is accepted on the strength of prior knowledge alone.
+#
+# `rejected` entries are kept deliberately: they are the cases where mechanical
+# assembly went wrong, and they are what a future run must not re-accept.
+
+paper: gopee2024
+doi: 10.1038/s41586-024-08002-x
+
+labels:
+
+- label: Placode
+  primary: hair placode
+  accepted:
+  - {name: placode, kind: short_form, span: "which comprised placode, matrix (SHH+)"}
+  - {name: epidermal placode, kind: qualified_variant, span: "interactions between epidermal placodes (focal sites of epidermal layer t"}
+  - {name: epithelial hair placode, kind: qualified_variant, span: "which abuts the epithelial hair placode"}
+
+- label: Matrix
+  primary: hair matrix
+  accepted:
+  - {name: matrix, kind: short_form, span: "which comprised placode, matrix (SHH+)"}
+  - {name: hair matrix cells, kind: cells_variant, span: "We evaluated hair matrix cells, which arise from the epidermal placode"}
+  - {name: matrix cells, kind: cells_variant, span: "prenatal skin matrix cells had increased expression"}
+  note: >-
+    The bare form is essential to record and dangerous to use: unqualified
+    "matrix" in this paper is dominated by extracellular matrix and by several
+    linear-algebra senses. Queries must use the primary.
+
+- label: TML macrophage
+  primary: TREM2+ microglia-like (TML) macrophage
+  accepted:
+  - {name: TML macrophage, kind: abbreviation, span: "TREM2+ microglia-like (TML) macrophages"}
+  rejected:
+  - name: TREM2+ macrophage
+    kind: broader
+    span: "We recently identified yolk-sac derived TREM2+ macrophages that share an expression profile"
+    why: >-
+      Used for TREM2+ macrophages across several developing organs (brain,
+      gonads, skin), of which the prenatal skin TML subset is one. A broader
+      class, not another name for this cell set.
+
+- label: LYVE1++ macrophage
+  primary: LYVE1+ macrophage
+  accepted:
+  - {name: LYVE1++ macrophage, kind: notation_variant, span: null, source: roster_label}
+  note: >-
+    The double plus is the annotation table's notation; the paper writes LYVE1+
+    throughout. The span is null because this form appears only in the
+    supplementary roster, never in the text -- recorded as provenance, not as a
+    textual claim.
+
+- label: Dermal condensate
+  primary: dermal condensate
+  accepted:
+  - {name: Dc, kind: abbreviation, span: "the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW"}
+  rejected:
+  - name: pre-Dc
+    kind: distinct_cell_type
+    span: "pre-dermal condensate (pre-Dc) cells"
+    why: The precursor, and a separate roster label (Pre-dermal condensate).
+
+- label: DPYSL2+ basal
+  primary: DPYSL2+ basal cell
+  accepted:
+  - {name: DPYSL2+ basal, kind: short_form, span: "comprising DPYSL2+ basal cells, ORS and CL"}
+  - {name: mature basal, kind: synonym, span: "Mature basal (DPYSL2+) and suprabasal IFE cells increased after 11 PCW"}
+
+- label: HOXC5+ early fibroblast
+  primary: HOXC5+ early fibroblast
+  accepted:
+  - {name: HOXC5+ fibroblast, kind: short_form, span: "during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts"}
+
+- label: Cuticle/cortex
+  primary: cuticle/cortex
+  accepted:
+  - {name: cuticle and cortex cells, kind: expansion, span: "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"}
+
+- label: Capillary arterioles
+  primary: capillary arteriole
+  accepted:
+  - {name: capillary arteriole cells, kind: cells_variant, span: "prenatal skin capillary arteriole cells could further differentiate into arterioles"}
+  rejected:
+  - name: SkO capillary arteriole
+    kind: context_variant
+    span: "Unlike SkO capillary arteriole cells"
+    why: The same cell type in the skin organoid model, a different experimental system.
+
+- label: Arterioles
+  primary: arteriole
+  accepted: []
+  rejected:
+  - name: capillary arteriole
+    kind: sibling
+    span: "an arteriolar pathway (capillaries, capillary arterioles and arterioles)"
+    why: >-
+      A distinct roster label, listed alongside arterioles in the same
+      differentiation pathway. Mechanical assembly proposed this as a synonym;
+      it is the opposite -- the two share nearly every sentence, which is why
+      item G39 carries an attribution hazard.
+  - name: arteriole cells
+    kind: not_a_name
+    span: "Unlike SkO capillary arteriole cells"
+    why: Occurs only inside "capillary arteriole cells"; no independent use.
+
+- label: Macrophage
+  primary: macrophage
+  accepted: []
+  rejected:
+  - {name: LYVE1+ macrophage, kind: subtype, span: "LYVE1+ macrophages co-located with WNT2+ fibroblasts", why: One of four subsets.}
+  - {name: TML macrophage, kind: subtype, span: "TREM2+ microglia-like (TML) macrophages", why: One of four subsets.}
+  note: >-
+    The broad label has no synonyms in this paper. Mechanical assembly offered
+    its own subsets, which would let a reader answer about LYVE1+ macrophages
+    when asked about macrophages and be scored correct.
+
+- label: Fibroblast
+  primary: fibroblast
+  accepted: []
+  rejected:
+  - {name: dermal fibroblast, kind: subtype, span: "Scars result from aggregation of collagen produced by dermal fibroblasts", why: A compartment-restricted subset.}
+  - {name: WNT2+ fibroblast, kind: subtype, span: "formed WNT2+ fibroblasts and PEAR1+ fibroblasts", why: A named roster subset.}
+  - {name: adult fibroblast, kind: context_variant, span: "All adult fibroblast subsets expressed high levels of inflammatory cytokines", why: Adult skin, not prenatal -- the comparison group.}
+
+- label: WNT2+ fibroblast
+  primary: WNT2+ fibroblast
+  accepted: []
+  rejected:
+  - name: early WNT2+ fibroblast
+    kind: subtype
+    span: "whereas early WNT2+ fibroblasts had DEGs involved in cellular growth"
+    why: A gestational-age split within the population, not another name for it.
+
+- label: PEAR1+ fibroblast
+  primary: PEAR1+ fibroblast
+  accepted: []
+
+- label: POSTN+ basal
+  primary: POSTN+ basal cell
+  accepted:
+  - {name: POSTN+ basal, kind: short_form, span: "whereas POSTN+ basal cells were present throughout gestation"}
+
+- label: Periderm
+  primary: periderm
+  accepted: []
+
+# --- Abbreviated roster labels outside the test set -----------------------
+# Included because their expansion exists only in the Fig. 1 legend glossary or
+# an inline definition, and without it these labels are unusable in a query.
+
+- label: LC
+  primary: Langerhans cell
+  accepted: [{name: LC, kind: abbreviation, span: "LC, Langerhans cells", source: legend_glossary}]
+- label: LE
+  primary: lymphatic endothelium
+  accepted: [{name: LE, kind: abbreviation, span: "LE, lymphatic endothelium", source: legend_glossary}]
+- label: LTi
+  primary: lymphoid tissue inducer cell
+  accepted: [{name: LTi, kind: abbreviation, span: "LTi, lymphoid tissue inducer cell", source: legend_glossary}]
+- label: HSC
+  primary: haematopoietic stem cell
+  accepted: [{name: HSC, kind: abbreviation, span: "HSC, haematopoietic stem cells", source: legend_glossary}]
+- label: MEMP
+  primary: megakaryocyte-erythroid-mast cell progenitor
+  accepted: [{name: MEMP, kind: abbreviation, span: "MEMP, megakaryocyte-erythroid-mast cell progenitor", source: legend_glossary}]
+- label: pDC
+  primary: plasmacytoid dendritic cell
+  accepted: [{name: pDC, kind: abbreviation, span: "pDC, plasmacytoid dendritic cells", source: legend_glossary}]
+- label: ASDC
+  primary: Axl+Siglec6+ dendritic cell
+  accepted: [{name: ASDC, kind: abbreviation, span: "ASDC, Axl+Siglec6+ dendritic cells", source: legend_glossary}]
+- label: Outer root sheath
+  primary: outer root sheath
+  accepted: [{name: ORS, kind: abbreviation, span: "outer root sheath (ORS) (SLC26A7+)"}]
+- label: Inner root sheath
+  primary: inner root sheath
+  accepted: [{name: IRS, kind: abbreviation, span: "inner root sheath (IRS)"}]
+- label: Companion layer
+  primary: companion layer
+  accepted: [{name: CL, kind: abbreviation, span: "companion layer (CL)"}]
+- label: Dermal papilla
+  primary: dermal papilla
+  accepted: [{name: Dp, kind: abbreviation, span: "dermal papilla (Dp)"}]

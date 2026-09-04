@@ -1,0 +1,55 @@
+[
+  {
+    "id": "G22-lyve1-function",
+    "found": true,
+    "answer": "LYVE1+ macrophages are attributed roles in promoting sprouting angiogenesis and blood vessel morphogenesis, in maintaining prenatal skin dermal fibroblasts via growth factor interactions, and in inducing immunosuppression and tissue repair through GAS6-AXL signalling with WNT2+ fibroblasts.",
+    "quotes": [
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1 + and TML macrophages, blood vessel morphogenesis by LYVE1 + macrophages and endothelial cell chemotaxis by iron-recycling macrophages (Extended Data Fig. 8i and Supplementary Table 27).",
+      "Our identification of additional growth factor interactions (IGF1-IGF1R and GRN-EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1 + macrophages play a part in the maintenance of prenatal skin dermal fibroblasts.",
+      "Additionally, GAS6, expressed by TML macrophages and LYVE1 + macrophages, was predicted to interact with AXL receptors on WNT2 + fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair 62,63 ."
+    ]
+  },
+  {
+    "id": "G10-wnt2fib-function",
+    "found": false,
+    "answer": "The supplied context does not say. It describes gene expression changes in WNT2+ fibroblasts across gestation and their co-location with macrophages, but does not state a function attributed to WNT2+ fibroblasts themselves.",
+    "quotes": []
+  },
+  {
+    "id": "G37-postn-location",
+    "found": true,
+    "answer": "POSTN+ basal cells are a basal interfollicular epidermal (IFE) cell state that is present throughout gestation.",
+    "quotes": [
+      "Mature basal (DPYSL2 + ) and suprabasal IFE cells increased after 11 PCW, whereas POSTN + basal cells were present throughout gestation (Fig. 2b and Extended Data Fig. 3b)."
+    ]
+  },
+  {
+    "id": "G14-dc-markers",
+    "found": true,
+    "answer": "The dermal condensate is marked by FOXD1 and SOX2, based on orthologous marker genes used to annotate it in human prenatal skin.",
+    "quotes": [
+      "In mice, transitional PDGFRA + FOXD1 + SOX2 low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1 + SOX2 + ), which abuts the epithelial hair placode 26,28 ."
+    ]
+  },
+  {
+    "id": "G08-wnt2fib-markers",
+    "found": true,
+    "answer": "WNT2+ fibroblasts show stage-dependent gene expression: late-gestation cells upregulate extracellular matrix/collagen genes such as COL1A1, early cells upregulate growth/differentiation genes such as SFRP1, and both WNT2+ and PEAR1+ fibroblasts express CDKN1A, IL1R1 and POSTN.",
+    "quotes": [
+      "Late gestation WNT2 + fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2 + fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1) (Fig. 3b, Extended Data Fig. 7d and Supplementary Tables 16-18).",
+      "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders 53 ."
+    ]
+  },
+  {
+    "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G43-wnt2-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "The placode is described as a focal thickening of the epidermal layer, seen histologically at 14-15 PCW as budding of basal cells that precedes elongation of the hair follicle into hair pegs.",
+    "quotes": [
+      "initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)",
+      "At 14–15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a)."
+    ]
+  },
+  {
+    "id": "G02-placode-location",
+    "found": true,
+    "answer": "The placode is an epidermal structure — a focal thickening of the epidermal layer — that is abutted from below by the dermal condensate; placode cells were identified among hair follicle cells in scRNA-seq data from 14 PCW.",
+    "quotes": [
+      "initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)",
+      "transitional PDGFRA+FOXD1+SOX2low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode",
+      "we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH+), outer root sheath (ORS) (SLC26A7+), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells"
+    ]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The placode is the epidermal origin of hair matrix cells and the first step of the IRS differentiation trajectory; its specification is linked to increased cellular migration in POSTN+ basal cells and to WNT and EDA signalling, and it receives dermal condensate signals (FAM3C and EFNB1 acting on LAMP1/CXADR and EPHB6) as invagination proceeds.",
+    "quotes": [
+      "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs (Extended Data Fig. 3d,e).",
+      "IRS trajectory, involving placode, matrix, cuticle/cortex and IRS",
+      "Our findings suggest that increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination.",
+      "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode",
+      "Similar signalling pathways were upregulated, including WNT and EDA for hair placode specification"
+    ]
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not give marker genes for the placode itself. It gives markers for other hair follicle populations (for example matrix SHH+ and WNT10B, ORS SLC26A7+) and names receptors predicted to be present on the placode, but no placode marker genes.",
+    "quotes": []
+  },
+  {
+    "id": "G05-macrophage-markers",
+    "found": false,
+    "answer": "The supplied context does not state marker genes that define macrophages. It names macrophage subsets by distinguishing features (LYVE1+, MHCII+, TML and iron-recycling) but gives no marker gene set for macrophages as a cell type.",
+    "quotes": []
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Macrophages seed the skin from about 6 PCW and are distributed in the dermal compartment, co-locating with fibroblasts, neural cells and vascular cells; specifically they occupy the early and late neurovascular microenvironments with endothelial and neural cells, and LYVE1+ macrophages co-locate with WNT2+ fibroblasts.",
+    "quotes": [
+      "immune cells such as macrophages seed the skin as early as 6 PCW and express a range of pro-inflammatory genes",
+      "In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation (Fig. 1d).",
+      "Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e)",
+      "Macrophages co-located with endothelial and neural cells in ‘early and late neurovascular microenvironments’ (ME1 and ME5, respectively)"
+    ]
+  },
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "The paper attributes to macrophages non-immune roles in skin morphogenesis: maintenance of dermal fibroblasts (via PDGF, IGF1-IGF1R, GRN-EGFR and GAS6-AXL interactions), a contribution to scarless wound healing (supported by an in vitro scratch assay), and promotion of angiogenesis and neurovascular development; antigen presentation is suggested not to be a key early function.",
+    "quotes": [
+      "Our identification of additional growth factor interactions (IGF1–IGF1R and GRN–EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts.",
+      "This led us to infer a potential contribution of macrophages in scarless healing in prenatal skin.",
+      "we demonstrated that scratch wound width closure was improved when fibroblasts were co-cultured with macrophages over 72 h (Extended Data Fig. 8g)",
+      "Gene ontology analysis showed that the four macrophage subsets (LYVE1+, MHCII+, TML and iron-recycling) expressed gene programs that drive angiogenesis (Supplementary Tables 23–26).",
+      "Decoupling of the expression of pro-inflammatory genes from MHCII genes before 11 PCW suggests that antigen presentation may not be a key function of human macrophages during early gestation."
+    ]
+  }
+]

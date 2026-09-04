@@ -1,0 +1,51 @@
+[
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "The paper attributes to prenatal skin macrophages contributions to scarless skin repair, fibroblast homeostasis and neurovascular development, including a role in vascular network formation and support for establishing the skin peripheral nervous system.",
+    "quotes": [
+      "Our atlas indicated that macrophages contribute to scarless skin repair, fibroblast homeostasis and neurovascular development.",
+      "We used a hair-bearing SkO model to validate the role of macrophages in prenatal skin vascular network formation.",
+      "These findings suggest that prenatal skin macrophages may support the establishment of the skin peripheral nervous system during early gestation, as previously reported in mouse skin."
+    ]
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": true,
+    "answer": "Cuticle and cortex cells are part of the inner layers of the hair follicle, identified among hair follicle cells from 14 PCW.",
+    "quotes": [
+      "we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH+), outer root sheath (ORS) (SLC26A7+), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+    ]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "The periderm is an immature interfollicular epidermal cell state that constitutes the first skin permeability barrier; it overlies the epidermis and was seen sloughing from the skin surface from 11 PCW.",
+    "quotes": [
+      "neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW",
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a)."
+    ]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": true,
+    "answer": "The context gives no single pan-fibroblast marker, but prenatal skin fibroblast subsets are distinguished by marker genes: FRZB (FRZB+ fibroblasts), HOXC5 (HOXC5+ early fibroblasts), and WNT2 and PEAR1 (WNT2+ and PEAR1+ fibroblasts).",
+    "quotes": [
+      "We excluded FRZB+ fibroblasts, which were primarily observed in one sample from the earliest gestation stage (7 PCW)",
+      "Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)"
+    ]
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of arterioles; it discusses only the differentiation trajectory and gene expression of the arteriolar pathway.",
+    "quotes": []
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of macrophages; it covers their seeding time, expression profiles, co-locations and inferred functions only.",
+    "quotes": []
+  }
+]

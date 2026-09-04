@@ -1,0 +1,16 @@
+[
+{"arm": "asta-comb", "id": "G06-macrophage-location", "verdict": "correct", "why": "Gives the ME1/ME5 neurovascular co-location with endothelial and Schwann cells; omits fibroblast co-location but is accurate."},
+{"arm": "asta-comb", "id": "G07-macrophage-function", "verdict": "correct", "why": "Angiogenesis, neurovascular development and scarless repair all present, matching the intended roles."},
+{"arm": "asta-comb", "id": "G09-wnt2fib-location", "verdict": "correct", "why": "Dermal fibroblast subset co-locating with LYVE1+ and, at 6-8 PCW, TML macrophages."},
+{"arm": "asta-comb", "id": "G10-wnt2fib-function", "verdict": "correct", "why": "Early growth/differentiation versus late ECM and collagen deposition, plus the pro-inflammatory/senescence profile."},
+{"arm": "asta-comb", "id": "G11-tml-markers", "verdict": "correct", "why": "TREM2 with the P2RY12/CX3CR1/OLFML3 microglia-like profile; extra SYT11 is accurately attributed."},
+{"arm": "asta-comb", "id": "G12-tml-location", "verdict": "correct", "why": "WNT2+ fibroblasts at 6-8 PCW, Schwann cells in ME1, and proximity to endothelial cells, as intended."},
+{"arm": "asta-comb", "id": "G13-tml-function", "verdict": "correct", "why": "Includes sprouting angiogenesis and the Schwann-cell synapse formation and axon guidance interactions."},
+{"arm": "asta-comb", "id": "G14-dc-markers", "verdict": "correct", "why": "FOXD1+SOX2+ correctly given with the pre-Dc contrast; misses FAM3C/EFNB1 but is accurate as far as it goes."},
+{"arm": "asta-comb", "id": "G15-dc-location", "verdict": "correct", "why": "Dermal compartment from 12 PCW abutting the epithelial hair placode, exactly as intended."},
+{"arm": "asta-comb", "id": "G16-dc-function", "verdict": "correct", "why": "Aggregation from pre-Dc cells and dermal-epidermal crosstalk in HF development conveys the intended role."},
+{"arm": "asta-comb", "id": "G17-matrix-markers", "verdict": "correct", "why": "SHH and WNT10B named as known matrix markers, with the hair-matrix sense correctly identified."},
+{"arm": "asta-comb", "id": "G18-matrix-location", "verdict": "correct", "why": "Hair follicle epithelium arising from the epidermal placode and prenatal-specific; timing given as the quoted 12 PCW cohort."},
+{"arm": "asta-comb", "id": "G19-matrix-function", "verdict": "correct", "why": "CXCL14/CD24 chemotaxis and Treg accumulation/immune protection reproduced as intended."},
+{"arm": "asta-comb", "id": "G20-lyve1-markers", "verdict": "correct", "why": "LYVE1 itself plus GAS6, with an honest note that the context carries no fuller marker panel."}
+]

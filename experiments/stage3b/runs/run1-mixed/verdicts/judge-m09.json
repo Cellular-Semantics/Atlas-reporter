@@ -1,0 +1,16 @@
+[
+{"arm": "local-comb", "id": "G15-dc-location", "verdict": "correct", "why": "Names the dermal compartment from 12 PCW; omitting the placode adjacency is a permissible partial."},
+{"arm": "local-comb", "id": "G16-dc-function", "verdict": "correct", "why": "Captures the main point that Dc initiates hair follicle formation via placode interaction."},
+{"arm": "local-comb", "id": "G18-matrix-location", "verdict": "correct", "why": "Places matrix in the hair follicle arising from the placode, from 14 PCW, as intended."},
+{"arm": "local-comb", "id": "G19-matrix-function", "verdict": "correct", "why": "Reproduces the chemotaxis/CXCL14/CD24 Treg immune-protection account exactly."},
+{"arm": "local-comb", "id": "G21-lyve1-location", "verdict": "correct", "why": "Gives the WNT2+ fibroblast co-location in dermal microenvironments, the main intended point."},
+{"arm": "local-comb", "id": "G22-lyve1-function", "verdict": "correct", "why": "Covers fibroblast maintenance, GAS6-AXL and sprouting angiogenesis/vessel morphogenesis."},
+{"arm": "local-comb", "id": "G23-fibroblast-markers", "verdict": "correct", "why": "Subset-specific markers are legitimate for this broad label per the hazard note."},
+{"arm": "local-comb", "id": "G24-fibroblast-location", "verdict": "correct", "why": "Dermis, with HOXC5+ early fibroblasts in the upper dermis, matches the intended answer."},
+{"arm": "local-comb", "id": "G25-fibroblast-function", "verdict": "correct", "why": "States the early-gestation downregulation of ECM/collagen/inflammation favouring regeneration."},
+{"arm": "local-comb", "id": "G26-periderm-location", "verdict": "correct", "why": "Outermost/overlying position, presence from 7 PCW and sloughing from 11 PCW are conveyed."},
+{"arm": "local-comb", "id": "G27-periderm-function", "verdict": "correct", "why": "Identifies the first skin permeability barrier, the intended function."},
+{"arm": "local-comb", "id": "G28-periderm-structure", "verdict": "correct", "why": "Conveys the thin layer description plus sloughing from 11 PCW that the paper offers."},
+{"arm": "local-comb", "id": "G29-hoxc5-location", "verdict": "correct", "why": "Upper dermis, exactly as intended."},
+{"arm": "local-comb", "id": "G30-hoxc5-function", "verdict": "correct", "why": "Describes the common progenitor with both hair and dermal fibroblast trajectories."}
+]

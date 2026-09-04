@@ -1,0 +1,41 @@
+[
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "Macrophages support wound healing (improving scratch-wound closure of co-cultured fibroblasts) and, across their four subsets, express gene programs that drive angiogenesis.",
+    "quotes": [
+      "Using a scratch assay of SkO-derived fibroblasts cultured with or without iPS cell-derived macrophages, we demonstrated that scratch wound width closure was improved when fibroblasts were co-cultured with macrophages over 72 h (Extended Data Fig. 8g).",
+      "Gene ontology analysis showed that the four macrophage subsets (LYVE1+, MHCII+, TML and iron-recycling) expressed gene programs that drive angiogenesis (Supplementary Tables 23–26)."
+    ]
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": true,
+    "answer": "Cuticle/cortex cells are part of the inner layers of the hair follicle, identified alongside other HF cell types from 14 PCW.",
+    "quotes": ["we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH+), outer root sheath (ORS) (SLC26A7+), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a–c, Extended Data Fig. 3a,b and Supplementary Table 6)."]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "The periderm forms the outer layer of prenatal skin overlying the dermal stroma up to 8 PCW, and is seen sloughing from 11 PCW.",
+    "quotes": ["Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a)."]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": true,
+    "answer": "Fibroblasts expressing COL7A1 are noted, with COL7A1 expression observed across several fibroblast subsets in prenatal skin and SkOs.",
+    "quotes": ["Gene therapy studies for dystrophic EB have identified fibroblasts expressing COL7A1 as a promising therapeutic strategy. We observed COL7A1 expression across several fibroblast subsets in prenatal skin and SkOs (Extended Data Fig. 6d), which lends support to the gene therapy approaches."]
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of arterioles.",
+    "quotes": []
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of macrophages.",
+    "quotes": []
+  }
+]

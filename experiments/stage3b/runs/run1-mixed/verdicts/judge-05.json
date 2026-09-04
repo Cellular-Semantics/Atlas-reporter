@@ -1,0 +1,16 @@
+[
+{"arm": "local", "id": "G21-lyve1-location", "verdict": "correct", "why": "Names co-location with WNT2+ fibroblasts and proximity to endothelial cells, matching the intended answer."},
+{"arm": "local", "id": "G22-lyve1-function", "verdict": "correct", "why": "Covers both sprouting angiogenesis/vessel morphogenesis and maintenance of dermal fibroblasts via growth-factor interactions."},
+{"arm": "local", "id": "G24-fibroblast-location", "verdict": "correct", "why": "Places fibroblasts in the dermis with HOXC5+ early fibroblasts in the upper dermis and hair-specialised subsets as derivatives."},
+{"arm": "local", "id": "G25-fibroblast-function", "verdict": "correct", "why": "States early fibroblasts downregulate ECM/collagen programs favouring scarless healing, the intended point."},
+{"arm": "local", "id": "G26-periderm-location", "verdict": "correct", "why": "Outermost epidermal layer over dermal stroma, present from 7 PCW, sloughing from 11 PCW - all intended elements."},
+{"arm": "local", "id": "G27-periderm-function", "verdict": "correct", "why": "Exactly the intended answer: the first skin permeability barrier."},
+{"arm": "local", "id": "G28-periderm-structure", "verdict": "correct", "why": "Gives the layer-over-dermal-stroma description and sloughing from 11 PCW, and flags that no further morphology is offered."},
+{"arm": "local", "id": "G29-hoxc5-location", "verdict": "correct", "why": "Upper dermis, as intended."},
+{"arm": "local", "id": "G30-hoxc5-function", "verdict": "correct", "why": "Identifies it as the common fibroblast progenitor with both hair and dermal fibroblast trajectories."},
+{"arm": "local", "id": "G31-dpysl2-markers", "verdict": "correct", "why": "Leads with DPYSL2 and AGR2 as the new gene and keeps BARX2/SOX9 correctly attributed as previously reported ORS differentiation genes."},
+{"arm": "local", "id": "G32-dpysl2-function", "verdict": "correct", "why": "Places the cells on the ORS/CL trajectory from POSTN+ basal cells, as intended."},
+{"arm": "local", "id": "G34-caparteriole-function", "verdict": "correct", "why": "Notes further differentiation into arterioles unlike SkO cells, and high tip-cell sprouting angiogenesis score."},
+{"arm": "local", "id": "G35-pear1-markers", "verdict": "correct", "why": "Gives PEAR1 plus APOE, IGFBP7 and ITM2A as the pro-inflammatory transition genes; the extra senescence/collagen genes are accurately attributed."},
+{"arm": "local", "id": "G36-pear1-function", "verdict": "correct", "why": "Dermal endpoint abundant after 11 PCW with adult-like pro-inflammatory, senescence and collagen deposition profile."}
+]

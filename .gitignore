@@ -25,3 +25,6 @@ projects/test_projects/**/runs/
 projects/**/supplements/**/files/
 projects/**/supplements/incoming/*
 !projects/**/supplements/incoming/README.md
+
+# Cached Claude Code session logs (mined for run provenance) - never commit
+experiments/session_logs_cache/

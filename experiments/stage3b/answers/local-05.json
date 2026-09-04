@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "Fibroblasts (in early gestation) downregulate genes involved in extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring; combined with macrophage interactions, this contributes to scarless healing.",
+    "quotes": ["Collectively, our findings suggest that prenatal skin fibroblasts in early gestation downregulate genes involved in extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring."]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The Dc's interaction with the placode (via FAM3C/EFNB1 and receptors on the placode) has been reported to promote cell migration and invasion, and RSPO3 from the dermal papilla interacts with matrix cells overlying the placode to contribute to proliferation of HF epithelial cells, which includes the placode-derived matrix.",
+    "quotes": ["The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion"]
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Macrophages seed the skin as early as 6 PCW, co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation.",
+    "quotes": ["immune cells such as macrophages seed the skin as early as 6 PCW and express a range of pro-inflammatory genes", "In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation"]
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": false,
+    "answer": "The supplied context does not give specific marker genes for capillary arterioles; it gives GJA5 for the broader arteriolar pathway and PLVAP for venular, but no gene specific to capillary arterioles.",
+    "quotes": []
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not state genes that mark the hair placode itself (only genes marking related cell types such as matrix, ORS, or interacting genes like FAM3C/EFNB1/EPHB6/LAMP1/CXADR on the placode).",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of fibroblasts.",
+    "quotes": []
+  },
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "The hair placode is described as a focal site of epidermal layer thickening.",
+    "quotes": ["epidermal placodes (focal sites of epidermal layer thickening)"]
+  }
+]

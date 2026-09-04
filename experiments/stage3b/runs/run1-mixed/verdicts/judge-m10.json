@@ -1,0 +1,12 @@
+[
+{"arm": "local-comb", "id": "G31-dpysl2-markers", "verdict": "correct", "why": "Gives DPYSL2 and the newly identified AGR2 without miscrediting BARX2/SOX9."},
+{"arm": "local-comb", "id": "G32-dpysl2-function", "verdict": "correct", "why": "Places the cells on the ORS/CL trajectory towards ORS and companion layer, with correct attribution of BARX2/SOX9 as ORS-differentiation genes."},
+{"arm": "local-comb", "id": "G34-caparteriole-function", "verdict": "correct", "why": "Both intended points present: further differentiation into arterioles and tip-cell sprouting score."},
+{"arm": "local-comb", "id": "G36-pear1-function", "verdict": "correct", "why": "Later-gestation adult pro-inflammatory profile with senescence and collagen deposition genes."},
+{"arm": "local-comb", "id": "G37-postn-location", "verdict": "correct", "why": "Basal interfollicular epidermis, present throughout gestation, as intended."},
+{"arm": "local-comb", "id": "G38-postn-function", "verdict": "correct", "why": "Gives both the ORS/CL and IRS trajectory origin and the migration/placode specification role."},
+{"arm": "local-comb", "id": "G39-arteriole-markers", "verdict": "correct", "why": "GJA5 correctly attributed as the characteristic arteriolar gene."},
+{"arm": "local-comb", "id": "G40-arteriole-function", "verdict": "correct", "why": "Accurate partial: names the tip-cell sprouting angiogenesis potential attributed to arterioles."},
+{"arm": "local-comb", "id": "G41-cuticle-location", "verdict": "correct", "why": "Inner layers of the hair follicle, as intended."},
+{"arm": "local-comb", "id": "G45-dermal-condensate-structure-absent", "verdict": "overreach", "why": "Presents 'aggregates of dermal fibroblasts' as a structural description instead of declining."}
+]

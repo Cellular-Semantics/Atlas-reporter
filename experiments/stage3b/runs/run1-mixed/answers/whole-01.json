@@ -1,0 +1,138 @@
+[
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "The placode is described as a focal thickening of the epidermal layer; histologically it is seen as budding of basal cells at 14-15 PCW, and its formation is accompanied by invagination into the dermis.",
+    "quotes": [
+      "epidermal placodes (focal sites of epidermal layer thickening)",
+      "At 14–15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed",
+      "The Dc, for which formation is accompanied by invagination of the placode"
+    ]
+  },
+  {
+    "id": "G02-placode-location",
+    "found": true,
+    "answer": "The placode is an epidermal/epithelial structure in the basal epidermis of prenatal skin, appearing as budding basal cells from 14-15 PCW, and it is abutted by the dermal condensate beneath it.",
+    "quotes": [
+      "At 14–15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed",
+      "aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode",
+      "we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH+), outer root sheath (ORS) (SLC26A7+), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells"
+    ]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The placode initiates hair follicle formation through interaction with the dermal condensate, and it gives rise to hair matrix cells; it lies on the IRS differentiation trajectory and receives migration/invasion-promoting signals from the Dc.",
+    "quotes": [
+      "Prenatal HFs start forming between 11 and 14 post-conception weeks (PCW), initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)",
+      "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs",
+      "IRS trajectory, involving placode, matrix, cuticle/cortex and IRS"
+    ]
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not give marker genes for the hair placode. It names markers for neighbouring HF states (for example matrix SHH+, ORS SLC26A7+) and receptors said to be on the placode (LAMP1, CXADR, EPHB6), but no genes are presented as marking the placode itself.",
+    "quotes": []
+  },
+  {
+    "id": "G05-macrophage-markers",
+    "found": true,
+    "answer": "The paper identifies macrophage subsets by marker genes rather than giving pan-macrophage markers: LYVE1+, MHCII+, TREM2+ microglia-like (TREM2, P2RY12, CX3CR1, OLFML3) and iron-recycling subsets.",
+    "quotes": [
+      "the four macrophage subsets (LYVE1+, MHCII+, TML and iron-recycling) expressed gene programs that drive angiogenesis",
+      "We recently identified yolk-sac derived TREM2+ macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs, such as the brain, prenatal skin and gonads"
+    ]
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Macrophages seed the skin from as early as 6 PCW and are present throughout gestation, co-locating with endothelial and neural cells in early and late neurovascular microenvironments (ME1 and ME5) and, for the LYVE1+ subset, with WNT2+ dermal fibroblasts.",
+    "quotes": [
+      "immune cells such as macrophages seed the skin as early as 6 PCW and express a range of pro-inflammatory genes",
+      "Macrophages co-located with endothelial and neural cells in ‘early and late neurovascular microenvironments’ (ME1 and ME5, respectively)",
+      "Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e)"
+    ]
+  },
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "Macrophages are proposed to support skin morphogenesis: maintaining dermal fibroblasts, contributing to scarless repair, supporting peripheral nerve development, and driving angiogenesis and vascular network remodelling (shown by adding iPS-derived macrophages to skin organoids).",
+    "quotes": [
+      "Our atlas indicated that macrophages contribute to scarless skin repair, fibroblast homeostasis and neurovascular development.",
+      "Our identification of additional growth factor interactions (IGF1–IGF1R and GRN–EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts.",
+      "These findings suggest that prenatal skin macrophages may support the establishment of the skin peripheral nervous system during early gestation, as previously reported in mouse skin.",
+      "Collectively, our findings demonstrate that interactions between macrophages and endothelial cells are required to support angiogenesis through blood vessel remodelling."
+    ]
+  },
+  {
+    "id": "G08-wnt2fib-markers",
+    "found": true,
+    "answer": "Beyond WNT2 itself, the paper reports genes differentially expressed by this subset: late-gestation WNT2+ fibroblasts upregulate COL1A1, early ones SFRP1, and the subset expresses CDKN1A, IL1R1 and POSTN, with downregulated IL6 relative to adult fibroblasts.",
+    "quotes": [
+      "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)",
+      "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)"
+    ]
+  },
+  {
+    "id": "G09-wnt2fib-location",
+    "found": true,
+    "answer": "WNT2+ fibroblasts are dermal fibroblasts of prenatal skin that become abundant in later gestation; they co-locate with LYVE1+ macrophages and, in early prenatal skin (6-8 PCW), with TML macrophages.",
+    "quotes": [
+      "The adult fibroblast gene expression profile was increased in WNT2+ and PEAR1+ prenatal fibroblasts, which were abundant in later gestation",
+      "Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e)",
+      "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6–8 PCW) (Fig. 3c,d)"
+    ]
+  },
+  {
+    "id": "G10-wnt2fib-function",
+    "found": true,
+    "answer": "WNT2+ fibroblasts form the dermal fibroblast branch of the fibroblast trajectory and shift function across gestation: early cells express growth and differentiation genes, whereas late cells deposit extracellular matrix and collagen and express senescence/cytokine genes characteristic of pathogenic fibrotic fibroblasts, linking them to the loss of scarless healing.",
+    "quotes": [
+      "the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)",
+      "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)",
+      "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders.",
+      "were predicted to interact through platelet-derived growth factors (PDGFs) and corresponding receptors (PDGFRα and PDGFRβ) expressed on fibroblasts"
+    ]
+  },
+  {
+    "id": "G11-tml-markers",
+    "found": true,
+    "answer": "TML macrophages are TREM2+ and share a microglial expression profile of P2RY12, CX3CR1 and OLFML3; they also co-express immunomodulatory genes such as CX3CR1 and SYT11, and express GAS6.",
+    "quotes": [
+      "We recently identified yolk-sac derived TREM2+ macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs",
+      "co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11)"
+    ]
+  },
+  {
+    "id": "G12-tml-location",
+    "found": true,
+    "answer": "TML macrophages are found in early prenatal skin, where they are predicted to co-locate with WNT2+ fibroblasts (6-8 PCW) and with Schwann cells in the early neurovascular microenvironment (ME1), and are seen close to endothelial cells.",
+    "quotes": [
+      "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6–8 PCW) (Fig. 3c,d)",
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin (‘early neurovascular microenvironment’, ME1) (Figs. 1d and 3g)",
+      "multiplex RNAscope and immunofluorescence staining showed LYVE1+ and TML macrophages in close proximity to endothelial cells"
+    ]
+  },
+  {
+    "id": "G13-tml-function",
+    "found": true,
+    "answer": "TML macrophages are yolk-sac derived, microglia-like cells implicated in immunomodulation and anti-fibrogenic/scarless healing (IL-6 regulation, GAS6-AXL signalling to fibroblasts), in supporting cutaneous neural development via interactions with Schwann cells, and in promoting sprouting angiogenesis.",
+    "quotes": [
+      "co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11)",
+      "Additionally, GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair",
+      "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA–NRP1, VEGFA–NRP2, SEMA3C–NRP2 and SEMA3E–PLXND1)",
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages"
+    ]
+  },
+  {
+    "id": "G14-dc-markers",
+    "found": true,
+    "answer": "The dermal condensate is annotated as FOXD1+SOX2+ (arising from PDGFRA+FOXD1+SOX2low pre-Dc cells) and expresses FAM3C and EFNB1, with COL6A3, MFAP4 and PTK7 expressed as pre-Dc cells aggregate into the Dc.",
+    "quotes": [
+      "In mice, transitional PDGFRA+FOXD1+SOX2low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode",
+      "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1",
+      "Genes implicated in collagen fibril formation and cell adhesion (COL6A3, MFAP4 and PTK7) were expressed as the pre-Dc cells aggregated into the Dc"
+    ]
+  }
+]

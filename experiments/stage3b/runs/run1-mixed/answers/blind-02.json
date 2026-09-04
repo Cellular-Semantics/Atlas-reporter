@@ -1,0 +1,164 @@
+[
+  {
+    "id": "G29-hoxc5-location",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G30-hoxc5-function",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G31-dpysl2-markers",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G32-dpysl2-function",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G34-caparteriole-function",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G35-pear1-markers",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G36-pear1-function",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G37-postn-location",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G38-postn-function",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G39-arteriole-markers",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G40-arteriole-function",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G43-wnt2-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G44-tml-macrophage-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G50-dpysl2-plus-basal-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G52-pear1-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G53-postn-plus-basal-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  },
+  {
+    "id": "G55-cuticle-cortex-structure-absent",
+    "found": false,
+    "answer": "No context was supplied for this batch, so there is no evidence to answer this question.",
+    "quotes": []
+  }
+]

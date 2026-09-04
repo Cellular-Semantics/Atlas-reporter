@@ -1,0 +1,273 @@
+{
+ "run": "run2-sonnet",
+ "extracted_from": "session task transcripts newer than the first run-2 answer file",
+ "note": "all readers dispatched with explicit model=sonnet; judges pinned to opus",
+ "jobs": {
+  "asta-comb-01": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 5
+   }
+  },
+  "asta-comb-02": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 16
+   }
+  },
+  "asta-comb-03": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 16
+   }
+  },
+  "asta-comb-04": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 16
+   }
+  },
+  "asta-comb-05": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 6
+   }
+  },
+  "asta-comb-06": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "asta-comb-07": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "asta-comb-08": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "asta-sep-01": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 8
+   }
+  },
+  "asta-sep-02": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 8
+   }
+  },
+  "asta-sep-03": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 20
+   }
+  },
+  "asta-sep-04": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "asta-sep-05": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 16
+   }
+  },
+  "asta-sep-06": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 16
+   }
+  },
+  "asta-sep-07": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 16
+   }
+  },
+  "asta-sep-08": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 16
+   }
+  },
+  "blind-01": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 12
+   }
+  },
+  "blind-02": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 12
+   }
+  },
+  "local-01": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 8
+   }
+  },
+  "local-02": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 8
+   }
+  },
+  "local-03": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "local-04": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "local-05": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 18
+   }
+  },
+  "local-06": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "local-07": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "local-08": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "local-comb-01": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 6
+   }
+  },
+  "local-comb-02": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "local-comb-03": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "local-comb-04": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 19
+   }
+  },
+  "local-comb-05": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 20
+   }
+  },
+  "local-comb-06": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 20
+   }
+  },
+  "local-comb-07": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 14
+   }
+  },
+  "local-comb-08": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 14
+   }
+  },
+  "whole-01": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 12
+   }
+  },
+  "whole-02": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 17
+   }
+  },
+  "whole-03": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 6
+   }
+  },
+  "whole-04": {
+   "dominant_model": "claude-sonnet-5",
+   "share": 1.0,
+   "counts": {
+    "claude-sonnet-5": 17
+   }
+  }
+ }
+}

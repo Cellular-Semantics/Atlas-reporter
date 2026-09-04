@@ -1,0 +1,54 @@
+[
+  {
+    "id": "G30-hoxc5-function",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts function as a common fibroblast progenitor, giving rise to pre-Dc cells, the dermal condensate, dermal papilla and other dermal fibroblasts.",
+    "quotes": [
+      "pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5 + early fibroblast)"
+    ]
+  },
+  {
+    "id": "G13-tml-function",
+    "found": true,
+    "answer": "TML macrophages are attributed roles including anti-fibrogenic/scarless-healing contributions, sprouting angiogenesis, and interacting with Schwann cells to contribute to synapse formation and axon guidance.",
+    "quotes": [
+      "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance"
+    ]
+  },
+  {
+    "id": "G18-matrix-location",
+    "found": true,
+    "answer": "Hair matrix cells arise from the epidermal placode and are described as a prenatal-specific cell state absent in established adult hair follicles.",
+    "quotes": [
+      "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs"
+    ]
+  },
+  {
+    "id": "G31-dpysl2-markers",
+    "found": true,
+    "answer": "DPYSL2 is the marker gene used to identify the mature basal cell population (DPYSL2+ basal cells).",
+    "quotes": [
+      "Mature basal (DPYSL2 + ) and suprabasal IFE cells increased after 11 PCW"
+    ]
+  },
+  {
+    "id": "G11-tml-markers",
+    "found": true,
+    "answer": "TML macrophages are marked by TREM2, and share an expression profile of P2RY12, CX3CR1 and OLFML3 with microglia-like macrophages from other developing organs.",
+    "quotes": [
+      "We recently identified yolk-sac derived TREM2 + macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs"
+    ]
+  },
+  {
+    "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of HOXC5+ early fibroblasts, only their location and developmental trajectory.",
+    "quotes": []
+  },
+  {
+    "id": "G44-tml-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of TML macrophages.",
+    "quotes": []
+  }
+]

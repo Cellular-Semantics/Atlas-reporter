@@ -1,0 +1,376 @@
+{
+ "extracted_from": "session task transcripts, assistant-message model fields",
+ "caveat": "mixed counts within one agent mean per-request routing varied; attribution is per job file, dominant model shown",
+ "jobs": {
+  "asta-comb-01": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.86,
+   "counts": {
+    "claude-fable-5": 3,
+    "claude-opus-5": 18
+   }
+  },
+  "asta-comb-02": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.86,
+   "counts": {
+    "claude-fable-5": 3,
+    "claude-opus-5": 18
+   }
+  },
+  "asta-comb-03": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.86,
+   "counts": {
+    "claude-fable-5": 3,
+    "claude-opus-5": 18
+   }
+  },
+  "asta-comb-04": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.86,
+   "counts": {
+    "claude-fable-5": 3,
+    "claude-opus-5": 18
+   }
+  },
+  "asta-comb-05": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.9,
+   "counts": {
+    "claude-fable-5": 2,
+    "claude-opus-5": 18
+   }
+  },
+  "asta-comb-06": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.9,
+   "counts": {
+    "claude-fable-5": 2,
+    "claude-opus-5": 18
+   }
+  },
+  "asta-comb-07": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.9,
+   "counts": {
+    "claude-fable-5": 2,
+    "claude-opus-5": 18
+   }
+  },
+  "asta-comb-08": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.9,
+   "counts": {
+    "claude-fable-5": 2,
+    "claude-opus-5": 18
+   }
+  },
+  "asta-sep-01": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.89,
+   "counts": {
+    "claude-fable-5": 3,
+    "claude-opus-5": 24
+   }
+  },
+  "asta-sep-02": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.89,
+   "counts": {
+    "claude-fable-5": 3,
+    "claude-opus-5": 24
+   }
+  },
+  "asta-sep-03": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.89,
+   "counts": {
+    "claude-fable-5": 3,
+    "claude-opus-5": 24
+   }
+  },
+  "asta-sep-04": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.89,
+   "counts": {
+    "claude-fable-5": 3,
+    "claude-opus-5": 24
+   }
+  },
+  "asta-sep-05": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.94,
+   "counts": {
+    "claude-fable-5": 2,
+    "claude-opus-5": 33
+   }
+  },
+  "asta-sep-06": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.94,
+   "counts": {
+    "claude-fable-5": 2,
+    "claude-opus-5": 33
+   }
+  },
+  "asta-sep-07": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.94,
+   "counts": {
+    "claude-fable-5": 2,
+    "claude-opus-5": 33
+   }
+  },
+  "asta-sep-08": {
+   "dominant_model": "claude-opus-5",
+   "share": 0.94,
+   "counts": {
+    "claude-fable-5": 2,
+    "claude-opus-5": 33
+   }
+  },
+  "blind-01": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "blind-02": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "judge-01": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "judge-02": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "judge-03": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 12
+   }
+  },
+  "judge-04": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 12
+   }
+  },
+  "judge-05": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 12
+   }
+  },
+  "judge-06": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 12
+   }
+  },
+  "judge-07": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 12
+   }
+  },
+  "judge-08": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 7
+   }
+  },
+  "judge-09": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 7
+   }
+  },
+  "judge-10": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 7
+   }
+  },
+  "local-01": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 7
+   }
+  },
+  "local-02": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "local-03": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "local-04": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "local-05": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 7
+   }
+  },
+  "local-06": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 6
+   }
+  },
+  "local-07": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "local-08": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "local-comb-01": {
+   "dominant_model": "claude-fable-5",
+   "share": 0.75,
+   "counts": {
+    "claude-fable-5": 12,
+    "claude-opus-5": 4
+   }
+  },
+  "local-comb-02": {
+   "dominant_model": "claude-fable-5",
+   "share": 0.75,
+   "counts": {
+    "claude-fable-5": 12,
+    "claude-opus-5": 4
+   }
+  },
+  "local-comb-03": {
+   "dominant_model": "claude-fable-5",
+   "share": 0.75,
+   "counts": {
+    "claude-fable-5": 12,
+    "claude-opus-5": 4
+   }
+  },
+  "local-comb-04": {
+   "dominant_model": "claude-fable-5",
+   "share": 0.75,
+   "counts": {
+    "claude-fable-5": 12,
+    "claude-opus-5": 4
+   }
+  },
+  "local-comb-05": {
+   "dominant_model": "claude-fable-5",
+   "share": 1.0,
+   "counts": {
+    "claude-fable-5": 15
+   }
+  },
+  "local-comb-06": {
+   "dominant_model": "claude-fable-5",
+   "share": 1.0,
+   "counts": {
+    "claude-fable-5": 15
+   }
+  },
+  "local-comb-07": {
+   "dominant_model": "claude-fable-5",
+   "share": 1.0,
+   "counts": {
+    "claude-fable-5": 15
+   }
+  },
+  "local-comb-08": {
+   "dominant_model": "claude-fable-5",
+   "share": 1.0,
+   "counts": {
+    "claude-fable-5": 15
+   }
+  },
+  "localfix-G06-macrophage-location": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "localfix-G23-fibroblast-markers": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "whole-01": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 8
+   }
+  },
+  "whole-02": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "whole-03": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  },
+  "whole-04": {
+   "dominant_model": "claude-opus-5",
+   "share": 1.0,
+   "counts": {
+    "claude-opus-5": 5
+   }
+  }
+ }
+}

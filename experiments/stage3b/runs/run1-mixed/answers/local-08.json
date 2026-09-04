@@ -1,0 +1,38 @@
+[
+  {
+    "id": "G50-dpysl2-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of DPYSL2+ basal cells; it covers only their temporal abundance, trajectory position and upregulated genes.",
+    "quotes": []
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of capillary arteriole cells; it discusses only their differentiation trajectory, gene/receptor expression and angiogenic potential.",
+    "quotes": []
+  },
+  {
+    "id": "G52-pear1-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of PEAR1+ fibroblasts; it covers only their developmental origin, abundance over gestation and gene expression profile.",
+    "quotes": []
+  },
+  {
+    "id": "G53-postn-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of POSTN+ basal cells; it reports only their persistence across gestation, their trajectory into two paths and a suggested role in migration.",
+    "quotes": []
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of arterioles; it mentions them only as an endpoint of the arteriolar differentiation pathway and in gene-expression comparisons.",
+    "quotes": []
+  },
+  {
+    "id": "G55-cuticle-cortex-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of cuticle/cortex cells; it names them among the identified hair follicle cell types and places them on the IRS trajectory, without any morphological description.",
+    "quotes": []
+  }
+]

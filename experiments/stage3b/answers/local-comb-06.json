@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G30-hoxc5-function",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts act as the common fibroblast progenitor that gives rise to pre-Dc, Dc, Dp and other dermal fibroblast subsets.",
+    "quotes": ["pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5+ early fibroblast)"]
+  },
+  {
+    "id": "G13-tml-function",
+    "found": true,
+    "answer": "TML macrophages are predicted to interact with Schwann cells to support synapse formation and axon guidance, and to promote sprouting angiogenesis.",
+    "quotes": ["TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA–NRP1, VEGFA–NRP2, SEMA3C–NRP2 and SEMA3E–PLXND1)", "sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages"]
+  },
+  {
+    "id": "G18-matrix-location",
+    "found": false,
+    "answer": "The supplied context states that hair matrix cells arise from the epidermal placode but does not give their spatial location within prenatal skin.",
+    "quotes": []
+  },
+  {
+    "id": "G31-dpysl2-markers",
+    "found": true,
+    "answer": "DPYSL2+ basal cells are defined by DPYSL2 expression and upregulate AGR2, as well as the ORS-differentiation genes BARX2 and SOX9.",
+    "quotes": ["Mature basal (DPYSL2+)", "we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9)"]
+  },
+  {
+    "id": "G11-tml-markers",
+    "found": true,
+    "answer": "TML macrophages share an expression profile of P2RY12, CX3CR1 and OLFML3, and co-express immunomodulatory genes including CX3CR1 and SYT11.",
+    "quotes": ["share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs", "co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11)"]
+  },
+  {
+    "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of HOXC5+ early fibroblasts.",
+    "quotes": []
+  },
+  {
+    "id": "G44-tml-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of TML macrophages.",
+    "quotes": []
+  }
+]

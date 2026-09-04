@@ -1,0 +1,917 @@
+{
+ "paper": "gopee2024",
+ "items": [
+  {
+   "id": "G01-placode-structure",
+   "label": "Placode",
+   "axis": "structure",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What does the paper say about the structure or morphology of hair placode? (hair placode is also referred to as: placode, epidermal placode, epithelial hair placode.)",
+   "primary": "hair placode",
+   "synonyms": [
+    "placode",
+    "epidermal placode",
+    "epithelial hair placode"
+   ],
+   "answer": "A focal thickening of the epidermal layer, formed by budding of basal cells; placode formation is accompanied by invagination as the dermal condensate forms beneath it.",
+   "span": "epidermal placodes (focal sites of epidermal layer thickening)",
+   "hazard": null,
+   "local_tokens": 1943,
+   "span_in_local": true
+  },
+  {
+   "id": "G02-placode-location",
+   "label": "Placode",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is hair placode found? (hair placode is also referred to as: placode, epidermal placode, epithelial hair placode.)",
+   "primary": "hair placode",
+   "synonyms": [
+    "placode",
+    "epidermal placode",
+    "epithelial hair placode"
+   ],
+   "answer": "In the epidermis, at focal sites of epidermal thickening; the dermal condensate abuts the epithelial hair placode from below.",
+   "span": "which abuts the epithelial hair placode",
+   "hazard": null,
+   "local_tokens": 1913,
+   "span_in_local": true
+  },
+  {
+   "id": "G03-placode-function",
+   "label": "Placode",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to hair placode? (hair placode is also referred to as: placode, epidermal placode, epithelial hair placode.)",
+   "primary": "hair placode",
+   "synonyms": [
+    "placode",
+    "epidermal placode",
+    "epithelial hair placode"
+   ],
+   "answer": "Initiates hair follicle formation together with the dermal condensate; hair matrix cells arise from the epidermal placode. WNT and EDA signalling drive placode specification.",
+   "span": "We evaluated hair matrix cells, which arise from the epidermal placode",
+   "hazard": null,
+   "local_tokens": 1968,
+   "span_in_local": true
+  },
+  {
+   "id": "G04-placode-markers",
+   "label": "Placode",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark hair placode? (hair placode is also referred to as: placode, epidermal placode, epithelial hair placode.)",
+   "primary": "hair placode",
+   "synonyms": [
+    "placode",
+    "epidermal placode",
+    "epithelial hair placode"
+   ],
+   "answer": "LAMP1, CXADR and EPHB6 are reported on the placode, as receptors for FAM3C and EFNB1 expressed by the dermal condensate.",
+   "span": "predicted to interact with LAMP1 or CXADR and EPHB6 on the placode",
+   "hazard": "The genes are receptors *on* the placode named in a ligand-receptor prediction, not a marker panel. An answer naming them is correct; one calling them placode markers is over-reading.",
+   "local_tokens": 1989,
+   "span_in_local": true
+  },
+  {
+   "id": "G05-macrophage-markers",
+   "label": "Macrophage",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark macrophage?",
+   "primary": "macrophage",
+   "synonyms": [],
+   "answer": "MHCII genes (upregulated only after 11 PCW), TREM2 on the microglia-like subset with P2RY12, CX3CR1 and OLFML3; GAS6 and VEGFA and CXCL8 also macrophage-expressed.",
+   "span": "share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages",
+   "hazard": "broad label; four subsets each have their own markers",
+   "local_tokens": 1903,
+   "span_in_local": false
+  },
+  {
+   "id": "G06-macrophage-location",
+   "label": "Macrophage",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is macrophage found?",
+   "primary": "macrophage",
+   "synonyms": [],
+   "answer": "Seed the skin from 6 PCW; co-locate with endothelial and neural cells in the early and late neurovascular microenvironments (ME1 and ME5), and with fibroblasts (ME1, ME4, ME5).",
+   "span": "Macrophages co-located with endothelial and neural cells in \u2018early and late neurovascular microenvironments\u2019",
+   "hazard": null,
+   "local_tokens": 1962,
+   "span_in_local": false
+  },
+  {
+   "id": "G07-macrophage-function",
+   "label": "Macrophage",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to macrophage?",
+   "primary": "macrophage",
+   "synonyms": [],
+   "answer": "Support angiogenesis via vascular network remodelling, contribute to scarless skin repair, fibroblast homeostasis and neurovascular development.",
+   "span": "Our atlas indicated that macrophages contribute to scarless skin repair, fibroblast homeostasis and neurovascular development.",
+   "hazard": null,
+   "local_tokens": 1845,
+   "span_in_local": false
+  },
+  {
+   "id": "G08-wnt2fib-markers",
+   "label": "WNT2+ fibroblast",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark WNT2+ fibroblast?",
+   "primary": "WNT2+ fibroblast",
+   "synonyms": [],
+   "answer": "WNT2 itself; late-gestation cells upregulate COL1A1 and extracellular matrix/collagen genes, early cells SFRP1; the population also expresses CDKN1A, IL1R1 and POSTN, and has downregulated IL6 relative to adult.",
+   "span": "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition",
+   "hazard": null,
+   "local_tokens": 1906,
+   "span_in_local": true
+  },
+  {
+   "id": "G09-wnt2fib-location",
+   "label": "WNT2+ fibroblast",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is WNT2+ fibroblast found?",
+   "primary": "WNT2+ fibroblast",
+   "synonyms": [],
+   "answer": "Dermal; co-locate with LYVE1+ macrophages, and with TML macrophages in early prenatal skin (6-8 PCW).",
+   "span": "Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts",
+   "hazard": null,
+   "local_tokens": 1957,
+   "span_in_local": true
+  },
+  {
+   "id": "G10-wnt2fib-function",
+   "label": "WNT2+ fibroblast",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to WNT2+ fibroblast?",
+   "primary": "WNT2+ fibroblast",
+   "synonyms": [],
+   "answer": "Extracellular matrix and collagen deposition in late gestation, growth and differentiation early; acquire an adult pro-inflammatory and senescence profile with gestational age.",
+   "span": "we observed differences within the WNT2+ fibroblast population across gestation time",
+   "hazard": null,
+   "local_tokens": 1958,
+   "span_in_local": true
+  },
+  {
+   "id": "G11-tml-markers",
+   "label": "TML macrophage",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark TREM2+ microglia-like (TML) macrophage? (TREM2+ microglia-like (TML) macrophage is also referred to as: TML macrophage.)",
+   "primary": "TREM2+ microglia-like (TML) macrophage",
+   "synonyms": [
+    "TML macrophage"
+   ],
+   "answer": "TREM2, with P2RY12, CX3CR1 and OLFML3; also express GAS6.",
+   "span": "Prenatal skin TREM2+ microglia-like (TML) macrophages were highly correlated with embryonic brain microglia",
+   "hazard": null,
+   "local_tokens": 1915,
+   "span_in_local": true
+  },
+  {
+   "id": "G12-tml-location",
+   "label": "TML macrophage",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is TREM2+ microglia-like (TML) macrophage found? (TREM2+ microglia-like (TML) macrophage is also referred to as: TML macrophage.)",
+   "primary": "TREM2+ microglia-like (TML) macrophage",
+   "synonyms": [
+    "TML macrophage"
+   ],
+   "answer": "Co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW) and with Schwann cells in the early neurovascular microenvironment (ME1); seen in close proximity to endothelial cells.",
+   "span": "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin",
+   "hazard": null,
+   "local_tokens": 1916,
+   "span_in_local": true
+  },
+  {
+   "id": "G13-tml-function",
+   "label": "TML macrophage",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to TREM2+ microglia-like (TML) macrophage? (TREM2+ microglia-like (TML) macrophage is also referred to as: TML macrophage.)",
+   "primary": "TREM2+ microglia-like (TML) macrophage",
+   "synonyms": [
+    "TML macrophage"
+   ],
+   "answer": "Promote sprouting angiogenesis, and interact with Schwann cells to contribute to synapse formation and axon guidance (VEGFA-NRP1, VEGFA-NRP2, SEMA3C-NRP2, SEMA3E-PLXND1).",
+   "span": "contributing to synapse formation and axon guidance",
+   "hazard": null,
+   "local_tokens": 1855,
+   "span_in_local": true
+  },
+  {
+   "id": "G14-dc-markers",
+   "label": "Dermal condensate",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark dermal condensate? (dermal condensate is also referred to as: Dc.)",
+   "primary": "dermal condensate",
+   "synonyms": [
+    "Dc"
+   ],
+   "answer": "FOXD1+SOX2+ (the precursor pre-Dc is PDGFRA+FOXD1+SOX2-low); the Dc expresses FAM3C and EFNB1.",
+   "span": "expressed FAM3C and EFNB1",
+   "hazard": null,
+   "local_tokens": 1844,
+   "span_in_local": false
+  },
+  {
+   "id": "G15-dc-location",
+   "label": "Dermal condensate",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is dermal condensate found? (dermal condensate is also referred to as: Dc.)",
+   "primary": "dermal condensate",
+   "synonyms": [
+    "Dc"
+   ],
+   "answer": "In the dermal compartment from 12 PCW, directly beneath and abutting the epithelial hair placode.",
+   "span": "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW",
+   "hazard": null,
+   "local_tokens": 1831,
+   "span_in_local": true
+  },
+  {
+   "id": "G16-dc-function",
+   "label": "Dermal condensate",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to dermal condensate? (dermal condensate is also referred to as: Dc.)",
+   "primary": "dermal condensate",
+   "synonyms": [
+    "Dc"
+   ],
+   "answer": "Aggregates from pre-Dc fibroblasts to initiate hair follicle formation with the placode; its FAM3C and EFNB1 are predicted to promote cell migration and invasion.",
+   "span": "have been reported to promote cell migration and invasion",
+   "hazard": null,
+   "local_tokens": 1896,
+   "span_in_local": false
+  },
+  {
+   "id": "G17-matrix-markers",
+   "label": "Matrix",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark hair matrix? (hair matrix is also referred to as: matrix, hair matrix cells, matrix cells.)",
+   "primary": "hair matrix",
+   "synonyms": [
+    "matrix",
+    "hair matrix cells",
+    "matrix cells"
+   ],
+   "answer": "SHH, and WNT10B; both described as known matrix markers.",
+   "span": "known matrix markers such as SHH and WNT10B, were upregulated",
+   "hazard": "\"Matrix\" alone is ambiguous in this paper -- extracellular matrix and several linear-algebra senses dominate raw matches. The question must say hair matrix.",
+   "local_tokens": 1880,
+   "span_in_local": true
+  },
+  {
+   "id": "G18-matrix-location",
+   "label": "Matrix",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is hair matrix found? (hair matrix is also referred to as: matrix, hair matrix cells, matrix cells.)",
+   "primary": "hair matrix",
+   "synonyms": [
+    "matrix",
+    "hair matrix cells",
+    "matrix cells"
+   ],
+   "answer": "In the hair follicle, arising from the epidermal placode; a prenatal-specific cell state absent from established adult follicles. Identified from 14 PCW.",
+   "span": "a prenatal-specific cell state absent in established adult HFs",
+   "hazard": null,
+   "local_tokens": 1825,
+   "span_in_local": true
+  },
+  {
+   "id": "G19-matrix-function",
+   "label": "Matrix",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to hair matrix? (hair matrix is also referred to as: matrix, hair matrix cells, matrix cells.)",
+   "primary": "hair matrix",
+   "synonyms": [
+    "matrix",
+    "hair matrix cells",
+    "matrix cells"
+   ],
+   "answer": "Expresses chemotaxis genes including CXCL14, reported to recruit regulatory T cells, and CD24 in control of autoimmunity - suggesting Treg accumulation and immune protection during early matrix differentiation.",
+   "span": "increased expression of genes involved in chemotaxis, such as CXCL14",
+   "hazard": null,
+   "local_tokens": 2001,
+   "span_in_local": true
+  },
+  {
+   "id": "G20-lyve1-markers",
+   "label": "LYVE1++ macrophage",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark LYVE1+ macrophage? (LYVE1+ macrophage is also referred to as: LYVE1++ macrophage.)",
+   "primary": "LYVE1+ macrophage",
+   "synonyms": [
+    "LYVE1++ macrophage"
+   ],
+   "answer": "LYVE1; also expresses GAS6.",
+   "span": "GAS6, expressed by TML macrophages and LYVE1+ macrophages",
+   "hazard": "The roster label writes LYVE1++, the paper writes LYVE1+. Marker evidence in the body text is thin - the subset's DEG panel is in Supplementary Table 22.",
+   "local_tokens": 1860,
+   "span_in_local": true
+  },
+  {
+   "id": "G21-lyve1-location",
+   "label": "LYVE1++ macrophage",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is LYVE1+ macrophage found? (LYVE1+ macrophage is also referred to as: LYVE1++ macrophage.)",
+   "primary": "LYVE1+ macrophage",
+   "synonyms": [
+    "LYVE1++ macrophage"
+   ],
+   "answer": "Co-locate with WNT2+ fibroblasts in the dermis, and are seen in close proximity to endothelial cells by RNAscope and immunofluorescence.",
+   "span": "showed LYVE1+ and TML macrophages in close proximity to endothelial cells",
+   "hazard": null,
+   "local_tokens": 1835,
+   "span_in_local": false
+  },
+  {
+   "id": "G22-lyve1-function",
+   "label": "LYVE1++ macrophage",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to LYVE1+ macrophage? (LYVE1+ macrophage is also referred to as: LYVE1++ macrophage.)",
+   "primary": "LYVE1+ macrophage",
+   "synonyms": [
+    "LYVE1++ macrophage"
+   ],
+   "answer": "Promote sprouting angiogenesis and blood vessel morphogenesis, and maintain prenatal skin dermal fibroblasts (via PDGF-PDGFR and GAS6-AXL).",
+   "span": "blood vessel morphogenesis by LYVE1+ macrophages",
+   "hazard": null,
+   "local_tokens": 1900,
+   "span_in_local": true
+  },
+  {
+   "id": "G23-fibroblast-markers",
+   "label": "Fibroblast",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark fibroblast?",
+   "primary": "fibroblast",
+   "synonyms": [],
+   "answer": "Prenatal skin fibroblasts upregulate immune-suppression and regeneration genes (CD200, RAMP2, MDK) relative to adult, which express IL6, IL1RA, HLA-A, CD55, PTGES and CDKN1A. They do not significantly express papillary markers such as COL13A1.",
+   "span": "prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200)",
+   "hazard": "broad label spanning five fine subsets; answers may legitimately be subset-specific",
+   "local_tokens": 1829,
+   "span_in_local": true
+  },
+  {
+   "id": "G24-fibroblast-location",
+   "label": "Fibroblast",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is fibroblast found?",
+   "primary": "fibroblast",
+   "synonyms": [],
+   "answer": "Dermal compartment. HOXC5+ early fibroblasts sit in the upper dermis; HF-specialised subsets (Dc, Dp) are within the dermal compartment from 12 PCW.",
+   "span": "HOXC5+ early fibroblasts (located in the upper dermis",
+   "hazard": null,
+   "local_tokens": 1981,
+   "span_in_local": true
+  },
+  {
+   "id": "G25-fibroblast-function",
+   "label": "Fibroblast",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to fibroblast?",
+   "primary": "fibroblast",
+   "synonyms": [],
+   "answer": "Early-gestation fibroblasts downregulate extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring.",
+   "span": "may favour tissue regeneration over scarring",
+   "hazard": null,
+   "local_tokens": 1894,
+   "span_in_local": false
+  },
+  {
+   "id": "G26-periderm-location",
+   "label": "Periderm",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is periderm found?",
+   "primary": "periderm",
+   "synonyms": [],
+   "answer": "The outermost layer, overlying the dermal stroma in skin up to 8 PCW; present from 7 PCW, enriched in early gestation, and seen sloughing from 11 PCW.",
+   "span": "with the periderm seen sloughing from 11 PCW",
+   "hazard": null,
+   "local_tokens": 1898,
+   "span_in_local": true
+  },
+  {
+   "id": "G27-periderm-function",
+   "label": "Periderm",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to periderm?",
+   "primary": "periderm",
+   "synonyms": [],
+   "answer": "Constitutes the first skin permeability barrier.",
+   "span": "the periderm, which constitutes the first skin permeability barrier",
+   "hazard": null,
+   "local_tokens": 1868,
+   "span_in_local": true
+  },
+  {
+   "id": "G28-periderm-structure",
+   "label": "Periderm",
+   "axis": "structure",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What does the paper say about the structure or morphology of periderm?",
+   "primary": "periderm",
+   "synonyms": [],
+   "answer": "A layer of epidermal cells overlying the dermal stroma, which sloughs from 11 PCW.",
+   "span": "consisted of a layer of epidermal cells overlying the dermal stroma",
+   "hazard": "thin - a layer description and a sloughing observation, not morphology proper",
+   "local_tokens": 1971,
+   "span_in_local": true
+  },
+  {
+   "id": "G29-hoxc5-location",
+   "label": "HOXC5+ early fibroblast",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is HOXC5+ early fibroblast found? (HOXC5+ early fibroblast is also referred to as: HOXC5+ fibroblast.)",
+   "primary": "HOXC5+ early fibroblast",
+   "synonyms": [
+    "HOXC5+ fibroblast"
+   ],
+   "answer": "The upper dermis.",
+   "span": "HOXC5+ early fibroblasts (located in the upper dermis",
+   "hazard": null,
+   "local_tokens": 1825,
+   "span_in_local": true
+  },
+  {
+   "id": "G30-hoxc5-function",
+   "label": "HOXC5+ early fibroblast",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to HOXC5+ early fibroblast? (HOXC5+ early fibroblast is also referred to as: HOXC5+ fibroblast.)",
+   "primary": "HOXC5+ early fibroblast",
+   "synonyms": [
+    "HOXC5+ fibroblast"
+   ],
+   "answer": "A common fibroblast progenitor: differentiates along a hair fibroblast trajectory (pre-Dc, Dc, Dp) and a dermal fibroblast trajectory (WNT2+ and PEAR1+ fibroblasts).",
+   "span": "originated from a common fibroblast progenitor (HOXC5+ early fibroblast)",
+   "hazard": null,
+   "local_tokens": 1844,
+   "span_in_local": true
+  },
+  {
+   "id": "G31-dpysl2-markers",
+   "label": "DPYSL2+ basal",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark DPYSL2+ basal cell? (DPYSL2+ basal cell is also referred to as: DPYSL2+ basal, mature basal.)",
+   "primary": "DPYSL2+ basal cell",
+   "synonyms": [
+    "DPYSL2+ basal",
+    "mature basal"
+   ],
+   "answer": "DPYSL2 itself, and AGR2 - reported as newly identified along the ORS/CL trajectory. BARX2 and SOX9 are named in the same sentence but explicitly as previously reported ORS-differentiation genes.",
+   "span": "we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2",
+   "hazard": "This is the rule-1 trap. An answer of \"AGR2\" is right; \"BARX2, SOX9\" is reading the paper's attribution backwards. Judge must be told the distinction, not left to infer it.",
+   "local_tokens": 1930,
+   "span_in_local": true
+  },
+  {
+   "id": "G32-dpysl2-function",
+   "label": "DPYSL2+ basal",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to DPYSL2+ basal cell? (DPYSL2+ basal cell is also referred to as: DPYSL2+ basal, mature basal.)",
+   "primary": "DPYSL2+ basal cell",
+   "synonyms": [
+    "DPYSL2+ basal",
+    "mature basal"
+   ],
+   "answer": "Part of the ORS/CL differentiation trajectory from POSTN+ basal cells, towards outer root sheath and companion layer.",
+   "span": "ORS/CL trajectory, comprising DPYSL2+ basal cells, ORS and CL",
+   "hazard": null,
+   "local_tokens": 1918,
+   "span_in_local": true
+  },
+  {
+   "id": "G33-caparteriole-markers",
+   "label": "Capillary arterioles",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark capillary arteriole? (capillary arteriole is also referred to as: capillary arteriole cells.)",
+   "primary": "capillary arteriole",
+   "synonyms": [
+    "capillary arteriole cells"
+   ],
+   "answer": "Arteriolar identity is marked by GJA5. In the organoid comparison, KDR and FLT1 (VEGF receptors) and the GATA2/NFATC1 regulons with targets such as VWF are downregulated in SkO capillary arterioles relative to prenatal skin.",
+   "span": "their receptors (KDR and FLT1) on SkO capillary arterioles were downregulated compared to prenatal skin",
+   "hazard": null,
+   "local_tokens": 1822,
+   "span_in_local": true
+  },
+  {
+   "id": "G34-caparteriole-function",
+   "label": "Capillary arterioles",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to capillary arteriole? (capillary arteriole is also referred to as: capillary arteriole cells.)",
+   "primary": "capillary arteriole",
+   "synonyms": [
+    "capillary arteriole cells"
+   ],
+   "answer": "In prenatal skin they can differentiate further into arterioles, which SkO capillary arteriole cells cannot; they score highly for the sprouting angiogenesis tip-cell state.",
+   "span": "prenatal skin capillary arteriole cells could further differentiate into arterioles",
+   "hazard": null,
+   "local_tokens": 1977,
+   "span_in_local": true
+  },
+  {
+   "id": "G35-pear1-markers",
+   "label": "PEAR1+ fibroblast",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark PEAR1+ fibroblast?",
+   "primary": "PEAR1+ fibroblast",
+   "synonyms": [],
+   "answer": "PEAR1 itself; APOE, IGFBP7 and ITM2A are upregulated during the transition from HOXC5+ fibroblasts, as a pro-inflammatory fibroblast phenotype.",
+   "span": "were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts",
+   "hazard": null,
+   "local_tokens": 2003,
+   "span_in_local": true
+  },
+  {
+   "id": "G36-pear1-function",
+   "label": "PEAR1+ fibroblast",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to PEAR1+ fibroblast?",
+   "primary": "PEAR1+ fibroblast",
+   "synonyms": [],
+   "answer": "A dermal fibroblast endpoint, abundant after 11 PCW, carrying the adult pro-inflammatory gene expression profile along with senescence and collagen deposition genes.",
+   "span": "formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)",
+   "hazard": null,
+   "local_tokens": 1968,
+   "span_in_local": true
+  },
+  {
+   "id": "G37-postn-location",
+   "label": "POSTN+ basal",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is POSTN+ basal cell found? (POSTN+ basal cell is also referred to as: POSTN+ basal.)",
+   "primary": "POSTN+ basal cell",
+   "synonyms": [
+    "POSTN+ basal"
+   ],
+   "answer": "Basal epidermis; present throughout gestation, unlike mature DPYSL2+ basal and suprabasal IFE cells which increase after 11 PCW.",
+   "span": "whereas POSTN+ basal cells were present throughout gestation",
+   "hazard": null,
+   "local_tokens": 1900,
+   "span_in_local": true
+  },
+  {
+   "id": "G38-postn-function",
+   "label": "POSTN+ basal",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to POSTN+ basal cell? (POSTN+ basal cell is also referred to as: POSTN+ basal.)",
+   "primary": "POSTN+ basal cell",
+   "synonyms": [
+    "POSTN+ basal"
+   ],
+   "answer": "Increased cellular migration, suggested to be involved in placode specification and dermal invagination; the origin of both the ORS/CL and IRS differentiation trajectories.",
+   "span": "may be involved in placode specification and dermal invagination",
+   "hazard": null,
+   "local_tokens": 1918,
+   "span_in_local": true
+  },
+  {
+   "id": "G39-arteriole-markers",
+   "label": "Arterioles",
+   "axis": "markers",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Which genes mark arteriole?",
+   "primary": "arteriole",
+   "synonyms": [],
+   "answer": "GJA5, given as the characteristic arteriolar gene (against PLVAP for venular).",
+   "span": "for example, GJA5 for arteriolar and PLVAP for venular",
+   "hazard": "Shares nearly every sentence with Capillary arterioles; an answer drawn from the capillary-arteriole evidence should not be marked wrong without checking which label the sentence attributes it to.",
+   "local_tokens": 1901,
+   "span_in_local": true
+  },
+  {
+   "id": "G40-arteriole-function",
+   "label": "Arterioles",
+   "axis": "function",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "What function does the paper attribute to arteriole?",
+   "primary": "arteriole",
+   "synonyms": [],
+   "answer": "The endpoint of the arteriolar differentiation pathway from early endothelial cells via capillaries and capillary arterioles; scores for sprouting angiogenesis tip-cell state.",
+   "span": "differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles)",
+   "hazard": null,
+   "local_tokens": 1813,
+   "span_in_local": true
+  },
+  {
+   "id": "G41-cuticle-location",
+   "label": "Cuticle/cortex",
+   "axis": "location",
+   "expect": "present",
+   "scoring": "judge",
+   "question": "Where in prenatal human skin is cuticle/cortex found? (cuticle/cortex is also referred to as: cuticle and cortex cells.)",
+   "primary": "cuticle/cortex",
+   "synonyms": [
+    "cuticle and cortex cells"
+   ],
+   "answer": "Part of the inner layers of the hair follicle.",
+   "span": "part of the inner layers of the HF",
+   "hazard": null,
+   "local_tokens": 1898,
+   "span_in_local": true
+  },
+  {
+   "id": "G42-macrophage-structure-absent",
+   "label": "Macrophage",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of macrophage?",
+   "primary": "macrophage",
+   "synonyms": [],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1987,
+   "span_in_local": false
+  },
+  {
+   "id": "G43-wnt2-plus-fibroblast-structure-absent",
+   "label": "WNT2+ fibroblast",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of WNT2+ fibroblast?",
+   "primary": "WNT2+ fibroblast",
+   "synonyms": [],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1942,
+   "span_in_local": false
+  },
+  {
+   "id": "G44-tml-macrophage-structure-absent",
+   "label": "TML macrophage",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of TREM2+ microglia-like (TML) macrophage? (TREM2+ microglia-like (TML) macrophage is also referred to as: TML macrophage.)",
+   "primary": "TREM2+ microglia-like (TML) macrophage",
+   "synonyms": [
+    "TML macrophage"
+   ],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1855,
+   "span_in_local": false
+  },
+  {
+   "id": "G45-dermal-condensate-structure-absent",
+   "label": "Dermal condensate",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of dermal condensate? (dermal condensate is also referred to as: Dc.)",
+   "primary": "dermal condensate",
+   "synonyms": [
+    "Dc"
+   ],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1845,
+   "span_in_local": false
+  },
+  {
+   "id": "G46-matrix-structure-absent",
+   "label": "Matrix",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of hair matrix? (hair matrix is also referred to as: matrix, hair matrix cells, matrix cells.)",
+   "primary": "hair matrix",
+   "synonyms": [
+    "matrix",
+    "hair matrix cells",
+    "matrix cells"
+   ],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1884,
+   "span_in_local": false
+  },
+  {
+   "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+   "label": "LYVE1++ macrophage",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of LYVE1+ macrophage? (LYVE1+ macrophage is also referred to as: LYVE1++ macrophage.)",
+   "primary": "LYVE1+ macrophage",
+   "synonyms": [
+    "LYVE1++ macrophage"
+   ],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1944,
+   "span_in_local": false
+  },
+  {
+   "id": "G48-fibroblast-structure-absent",
+   "label": "Fibroblast",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of fibroblast?",
+   "primary": "fibroblast",
+   "synonyms": [],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1844,
+   "span_in_local": false
+  },
+  {
+   "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+   "label": "HOXC5+ early fibroblast",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of HOXC5+ early fibroblast? (HOXC5+ early fibroblast is also referred to as: HOXC5+ fibroblast.)",
+   "primary": "HOXC5+ early fibroblast",
+   "synonyms": [
+    "HOXC5+ fibroblast"
+   ],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1997,
+   "span_in_local": false
+  },
+  {
+   "id": "G50-dpysl2-plus-basal-structure-absent",
+   "label": "DPYSL2+ basal",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of DPYSL2+ basal cell? (DPYSL2+ basal cell is also referred to as: DPYSL2+ basal, mature basal.)",
+   "primary": "DPYSL2+ basal cell",
+   "synonyms": [
+    "DPYSL2+ basal",
+    "mature basal"
+   ],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1910,
+   "span_in_local": false
+  },
+  {
+   "id": "G51-capillary-arterioles-structure-absent",
+   "label": "Capillary arterioles",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of capillary arteriole? (capillary arteriole is also referred to as: capillary arteriole cells.)",
+   "primary": "capillary arteriole",
+   "synonyms": [
+    "capillary arteriole cells"
+   ],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1976,
+   "span_in_local": false
+  },
+  {
+   "id": "G52-pear1-plus-fibroblast-structure-absent",
+   "label": "PEAR1+ fibroblast",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of PEAR1+ fibroblast?",
+   "primary": "PEAR1+ fibroblast",
+   "synonyms": [],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1947,
+   "span_in_local": false
+  },
+  {
+   "id": "G53-postn-plus-basal-structure-absent",
+   "label": "POSTN+ basal",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of POSTN+ basal cell? (POSTN+ basal cell is also referred to as: POSTN+ basal.)",
+   "primary": "POSTN+ basal cell",
+   "synonyms": [
+    "POSTN+ basal"
+   ],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1815,
+   "span_in_local": false
+  },
+  {
+   "id": "G54-arterioles-structure-absent",
+   "label": "Arterioles",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of arteriole?",
+   "primary": "arteriole",
+   "synonyms": [],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1896,
+   "span_in_local": false
+  },
+  {
+   "id": "G55-cuticle-cortex-structure-absent",
+   "label": "Cuticle/cortex",
+   "axis": "structure",
+   "expect": "absent",
+   "scoring": "absence",
+   "question": "What does the paper say about the structure or morphology of cuticle/cortex? (cuticle/cortex is also referred to as: cuticle and cortex cells.)",
+   "primary": "cuticle/cortex",
+   "synonyms": [
+    "cuticle and cortex cells"
+   ],
+   "answer": "Not stated in this paper. Gopee et al. describe the transcriptional identity, location and inferred function of this cell type but not its morphology or ultrastructure.",
+   "span": null,
+   "hazard": null,
+   "local_tokens": 1811,
+   "span_in_local": false
+  }
+ ]
+}

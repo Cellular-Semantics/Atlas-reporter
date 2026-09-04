@@ -1,0 +1,69 @@
+[
+  {
+    "id": "G22-lyve1-function",
+    "found": true,
+    "answer": "LYVE1+ macrophages are attributed a role in maintaining prenatal skin dermal fibroblasts, via growth-factor interactions with WNT2+ fibroblasts, and a pro-angiogenic role: they are predicted to promote sprouting angiogenesis and blood vessel morphogenesis.",
+    "quotes": [
+      "Our identification of additional growth factor interactions (IGF1–IGF1R and GRN–EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts.",
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages, blood vessel morphogenesis by LYVE1+ macrophages and endothelial cell chemotaxis by iron-recycling macrophages (Extended Data Fig. 8i and Supplementary Table 27).",
+      "Additionally, GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair,."
+    ]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": true,
+    "answer": "The context does not give a marker set for fibroblasts as a whole, but it names genes that define fibroblast subsets: HOXC5 for the common early fibroblast progenitor, FRZB, WNT2 and PEAR1 for dermal subsets, and PDGFRA/FOXD1/SOX2 for hair-specialized pre-Dc cells. It also notes that the papillary fibroblast marker COL13A1 is not significantly expressed in prenatal skin fibroblasts.",
+    "quotes": [
+      "Additionally, similar to fibroblast differentiation in mouse skin, pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5+ early fibroblast) (Fig. 2e and Extended Data Fig. 4d).",
+      "Our human prenatal skin fibroblasts did not significantly express papillary fibroblast markers (for example, COL13A1) (Extended Data Fig. 5j), which suggested that the distinction between papillary and reticular fibroblasts emerges after 17 PCW.",
+      "The adult fibroblast gene expression profile was increased in WNT2+ and PEAR1+ prenatal fibroblasts, which were abundant in later gestation (Fig. 3a and Extended Data Figs. 3c and 7b).",
+      "We excluded FRZB+ fibroblasts, which were primarily observed in one sample from the earliest gestation stage (7 PCW) (Extended Data Fig. 3c)."
+    ]
+  },
+  {
+    "id": "G24-fibroblast-location",
+    "found": true,
+    "answer": "Fibroblasts are dermal cells; HOXC5+ early fibroblasts are specifically located in the upper dermis, and hair-specialized fibroblast derivatives (pre-Dc cells, Dc, Dp) sit adjacent to the epidermis as pre-Dc cells migrate towards it.",
+    "quotes": [
+      "Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7)."
+    ]
+  },
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "Fibroblasts are attributed roles in extracellular matrix and collagen deposition (and hence scarring, which early prenatal fibroblasts avoid by downregulating these programs), and hair-specialized fibroblasts coordinate hair follicle formation, including differentiation of adjacent hair matrix cells.",
+    "quotes": [
+      "Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate.",
+      "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1) (Fig. 3b, Extended Data Fig. 7d and Supplementary Tables 16–18).",
+      "Formation of the Dp was characterized by genes (RSPO3 and WNT5A) (Extended Data Fig. 4f and Supplementary Table 7) that coordinate the differentiation of adjacent hair matrix cells,.",
+      "A combination of fibroblast and macrophage-associated molecular features potentially contribute to the ability of prenatal skin to heal without scarring, including the presence of fibroblast progenitors, a downregulated immune milieu and reduced collagen expression."
+    ]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "Periderm is an ectoderm-derived, immature interfollicular epidermal cell type forming the outermost layer of prenatal epidermis; it is present from 7 PCW, enriched in early gestation, and is seen sloughing from 11 PCW.",
+    "quotes": [
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b).",
+      "Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4)."
+    ]
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": true,
+    "answer": "The periderm is described as constituting the first skin permeability barrier.",
+    "quotes": [
+      "Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4)."
+    ]
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": true,
+    "answer": "The only structural/morphological observation given is histological: the periderm is part of the layer of epidermal cells overlying the dermal stroma in early prenatal skin and is seen sloughing from 11 PCW. It is classed among the immature interfollicular epidermal cells; no further morphological description is provided.",
+    "quotes": [
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b)."
+    ]
+  }
+]

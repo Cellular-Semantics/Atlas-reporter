@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G40-arteriole-function",
+    "found": true,
+    "answer": "Prenatal skin arteriole cells (along with capillary arteriole and capillary cells) showed increased sprouting angiogenesis potential, as assessed by scoring the 'tip' cell state.",
+    "quotes": ["sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells"]
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": true,
+    "answer": "Prenatal skin matrix cells had increased expression of chemotaxis genes such as CXCL14, previously reported to recruit regulatory T cells, and CD24, involved in control of autoimmunity, suggesting a role for matrix cells in Treg cell accumulation and immune protection during early hair follicle differentiation.",
+    "quotes": ["Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (T reg ) cells 21 , and in control of autoimmunity (CD24) 22 .", "This result highlighted the potential role of T reg cell accumulation and immune protection in the early stages of matrix differentiation (Extended Data Fig. 3f)."]
+  },
+  {
+    "id": "G15-dc-location",
+    "found": true,
+    "answer": "The dermal condensate is found within the dermal compartment of prenatal skin, observed alongside HF-specialized fibroblasts and the dermal papilla from 12 PCW.",
+    "quotes": ["Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c)."]
+  },
+  {
+    "id": "G02-placode-location",
+    "found": true,
+    "answer": "Hair placode was observed at 14-15 PCW as budding of basal cells, elongating into hair follicles.",
+    "quotes": ["At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a)."]
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": false,
+    "answer": "The supplied context does not list specific marker genes that define LYVE1+ macrophage identity beyond LYVE1 itself; it only notes that marker genes were used to annotate macrophage subsets without naming them.",
+    "quotes": []
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of capillary arteriole cells.",
+    "quotes": []
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of hair matrix cells.",
+    "quotes": []
+  }
+]

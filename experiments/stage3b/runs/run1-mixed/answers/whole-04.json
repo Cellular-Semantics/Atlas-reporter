@@ -1,0 +1,85 @@
+[
+  {
+    "id": "G43-wnt2-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of WNT2+ fibroblasts; it discusses only their gene expression, abundance across gestation and co-location with macrophages.",
+    "quotes": []
+  },
+  {
+    "id": "G44-tml-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of TML macrophages; it covers their origin, gene expression, co-location and predicted interactions only.",
+    "quotes": []
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": true,
+    "answer": "The dermal condensate is described structurally as an aggregate of dermal fibroblasts that abuts the epithelial hair placode, and after hair follicle invagination it becomes encapsulated at its base to form the dermal papilla.",
+    "quotes": [
+      "dermal condensates (aggregates of dermal fibroblasts)",
+      "the Dc becomes encapsulated at its base as the Dp"
+    ]
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of hair matrix cells; it describes their origin from the epidermal placode, their markers and their signalling interactions.",
+    "quotes": []
+  },
+  {
+    "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of LYVE1+ macrophages; it reports their co-location with fibroblasts and endothelial cells and their predicted interactions.",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe fibroblast structure or morphology; fibroblast subsets are defined transcriptionally rather than by cell shape or ultrastructure.",
+    "quotes": []
+  },
+  {
+    "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of HOXC5+ early fibroblasts; it gives their dermal location, abundance and differentiation trajectory only.",
+    "quotes": []
+  },
+  {
+    "id": "G50-dpysl2-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of DPYSL2+ basal cells; it reports their marker genes, temporal abundance and trajectory position.",
+    "quotes": []
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of capillary arteriole cells; it discusses their differentiation trajectory and gene/regulon expression.",
+    "quotes": []
+  },
+  {
+    "id": "G52-pear1-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of PEAR1+ fibroblasts; only their abundance in later gestation and gene expression profile are given.",
+    "quotes": []
+  },
+  {
+    "id": "G53-postn-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of POSTN+ basal cells; it reports their presence throughout gestation and their inferred differentiation paths.",
+    "quotes": []
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of arterioles; they are mentioned only as an endpoint of the arteriolar differentiation pathway.",
+    "quotes": []
+  },
+  {
+    "id": "G55-cuticle-cortex-structure-absent",
+    "found": true,
+    "answer": "The only structural statement is positional: cuticle and cortex cells are described as forming part of the inner layers of the hair follicle. No morphological detail beyond this is given.",
+    "quotes": [
+      "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+    ]
+  }
+]

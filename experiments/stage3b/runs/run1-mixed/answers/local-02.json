@@ -1,0 +1,67 @@
+[
+  {
+    "id": "G08-wnt2fib-markers",
+    "found": true,
+    "answer": "The context names WNT2 in the subset's label and reports genes expressed or upregulated in these cells rather than a formal defining marker panel: COL1A1 in late-gestation WNT2+ fibroblasts, SFRP1 in early WNT2+ fibroblasts, and CDKN1A, IL1R1 and POSTN in WNT2+ (and PEAR1+) prenatal fibroblasts.",
+    "quotes": [
+      "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)",
+      "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)"
+    ]
+  },
+  {
+    "id": "G09-wnt2fib-location",
+    "found": true,
+    "answer": "They are a dermal fibroblast subset, arising on the dermal fibroblast trajectory and abundant after 11 PCW; spatially they are described by co-location with LYVE1+ macrophages. The context gives no finer dermal compartment (e.g. upper versus lower dermis) for them.",
+    "quotes": [
+      "the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)",
+      "Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e)"
+    ]
+  },
+  {
+    "id": "G10-wnt2fib-function",
+    "found": true,
+    "answer": "Late-gestation WNT2+ fibroblasts are linked to extracellular matrix and collagen deposition and to scar-promoting/pro-inflammatory programs, while early WNT2+ fibroblasts show growth and differentiation genes and downregulated IL6, which the paper connects to scarless healing; they also receive macrophage signals.",
+    "quotes": [
+      "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)",
+      "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders.",
+      "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6–8 PCW) (Fig. 3c,d) and WNT2+ fibroblasts had downregulated IL6 expression compared with adult fibroblasts (Fig. 3a)."
+    ]
+  },
+  {
+    "id": "G11-tml-markers",
+    "found": true,
+    "answer": "TML macrophages are TREM2+ and share a microglia-like expression profile of P2RY12, CX3CR1 and OLFML3; they also co-express immunomodulatory genes such as CX3CR1 and SYT11.",
+    "quotes": [
+      "We recently identified yolk-sac derived TREM2+ macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs",
+      "co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11)"
+    ]
+  },
+  {
+    "id": "G12-tml-location",
+    "found": true,
+    "answer": "TML macrophages are located in prenatal skin where they are predicted to co-locate with WNT2+ fibroblasts in early gestation (6-8 PCW) and with Schwann cells in the early neurovascular microenvironment (ME1).",
+    "quotes": [
+      "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6–8 PCW) (Fig. 3c,d)",
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin (‘early neurovascular microenvironment’, ME1) (Figs. 1d and 3g)"
+    ]
+  },
+  {
+    "id": "G13-tml-function",
+    "found": true,
+    "answer": "The paper attributes to TML macrophages immunomodulatory/anti-fibrogenic signalling supporting scarless healing (including GAS6-AXL interactions with WNT2+ fibroblasts), support of peripheral nervous system development via Schwann cell interactions in synapse formation and axon guidance, and promotion of sprouting angiogenesis.",
+    "quotes": [
+      "Additionally, GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts",
+      "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA–NRP1, VEGFA–NRP2, SEMA3C–NRP2 and SEMA3E–PLXND1)",
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages"
+    ]
+  },
+  {
+    "id": "G14-dc-markers",
+    "found": true,
+    "answer": "The Dc is defined by the mouse orthologous markers FOXD1 and SOX2 (FOXD1+SOX2+), which were used to annotate it in human prenatal skin; COL6A3, MFAP4 and PTK7 are expressed as pre-Dc cells aggregate into the Dc.",
+    "quotes": [
+      "In mice, transitional PDGFRA+FOXD1+SOX2low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode,. Using orthologous marker genes, we annotated pre-Dc cells and the Dc in human prenatal skin,.",
+      "Genes implicated in collagen fibril formation and cell adhesion (COL6A3, MFAP4 and PTK7) were expressed as the pre-Dc cells aggregated into the Dc"
+    ]
+  }
+]

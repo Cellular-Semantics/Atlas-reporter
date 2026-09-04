@@ -1,0 +1,18 @@
+[
+{"arm": "local-comb", "id": "G21-lyve1-location", "verdict": "correct", "why": "Gives co-location with WNT2+ fibroblasts; accurate partial answer."},
+{"arm": "local-comb", "id": "G22-lyve1-function", "verdict": "correct", "why": "Covers dermal fibroblast maintenance and blood vessel morphogenesis/sprouting angiogenesis."},
+{"arm": "local-comb", "id": "G24-fibroblast-location", "verdict": "correct", "why": "Places HOXC5+ early fibroblasts in the upper dermis, matching the intended dermal location."},
+{"arm": "local-comb", "id": "G25-fibroblast-function", "verdict": "substituted", "why": "Quote is real but describes scar formation generally rather than the paper's claim about early-gestation downregulation favouring regeneration."},
+{"arm": "local-comb", "id": "G26-periderm-location", "verdict": "correct", "why": "Outer epidermal layer overlying dermal stroma, sloughing from 11 PCW, as intended."},
+{"arm": "local-comb", "id": "G27-periderm-function", "verdict": "correct", "why": "States the first skin permeability barrier."},
+{"arm": "local-comb", "id": "G29-hoxc5-location", "verdict": "correct", "why": "Upper dermis, matching the intended answer."},
+{"arm": "local-comb", "id": "G30-hoxc5-function", "verdict": "correct", "why": "Identifies the common fibroblast progenitor role with both trajectories."},
+{"arm": "local-comb", "id": "G31-dpysl2-markers", "verdict": "correct", "why": "Gives DPYSL2 and AGR2 and labels BARX2/SOX9 as ORS-differentiation genes, so the attribution is not reversed."},
+{"arm": "local-comb", "id": "G34-caparteriole-function", "verdict": "correct", "why": "Both the differentiation-into-arterioles contrast and the tip-cell score are conveyed."},
+{"arm": "local-comb", "id": "G35-pear1-markers", "verdict": "correct", "why": "APOE, IGFBP7, ITM2A in the HOXC5+ transition plus the shared senescence/collagen genes."},
+{"arm": "local-comb", "id": "G37-postn-location", "verdict": "correct", "why": "Basal IFE population present throughout gestation, as intended."},
+{"arm": "local-comb", "id": "G38-postn-function", "verdict": "correct", "why": "States increased migration involved in placode specification and dermal invagination."},
+{"arm": "local-comb", "id": "G39-arteriole-markers", "verdict": "correct", "why": "GJA5 correctly attributed to the arteriolar lineage against PLVAP."},
+{"arm": "local-comb", "id": "G41-cuticle-location", "verdict": "correct", "why": "Inner layers of the hair follicle, as intended."},
+{"arm": "local-comb", "id": "G45-dermal-condensate-structure-absent", "verdict": "overreach", "why": "Presents 'aggregate of dermal fibroblasts' as a structural description where the paper offers no morphology."}
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "G34-caparteriole-function",
+    "found": true,
+    "answer": "Capillary arteriole cells in prenatal skin can further differentiate into arterioles, whereas the equivalent SkO cells cannot; SkO capillary arteriole cells also fail to guide stalk cells for new blood vessel formation despite expressing sprouting angiogenesis genes.",
+    "quotes": [
+      "prenatal skin capillary arteriole cells could further differentiate into arterioles",
+      "SkO capillary arteriole cells are unable to guide stalk cells for new blood vessel formation"
+    ]
+  },
+  {
+    "id": "G36-pear1-function",
+    "found": true,
+    "answer": "PEAR1+ fibroblasts, together with WNT2+ fibroblasts, express genes involved in cellular senescence, cytokine pathways and collagen deposition that are highly expressed in pathogenic fibroblasts of fibrotic skin disorders, linking them to a scar-promoting phenotype.",
+    "quotes": [
+      "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders 53 ."
+    ]
+  },
+  {
+    "id": "G24-fibroblast-location",
+    "found": true,
+    "answer": "Fibroblasts are found in the dermal compartment of prenatal skin, described as dermal fibroblast subsets.",
+    "quotes": [
+      "the temporal changes in composition and transcriptional profile of the dermal fibroblast subsets"
+    ]
+  },
+  {
+    "id": "G12-tml-location",
+    "found": true,
+    "answer": "TML macrophages are predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW) and with Schwann cells in the 'early neurovascular microenvironment' (ME1).",
+    "quotes": [
+      "TML macrophages were predicted to co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW)",
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1)"
+    ]
+  },
+  {
+    "id": "G05-macrophage-markers",
+    "found": true,
+    "answer": "The paper identifies four macrophage subsets marked by LYVE1 and MHCII, alongside the TML and iron-recycling subsets.",
+    "quotes": [
+      "the four macrophage subsets (LYVE1 + , MHCII + , TML and iron-recycling) expressed gene programs that drive angiogenesis"
+    ]
+  },
+  {
+    "id": "G55-cuticle-cortex-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of cuticle/cortex cells; it only notes that they are part of the inner layers of the hair follicle, which is a location, not a structural description.",
+    "quotes": []
+  },
+  {
+    "id": "G52-pear1-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of PEAR1+ fibroblasts; it discusses their gene expression and differentiation trajectory instead.",
+    "quotes": []
+  }
+]

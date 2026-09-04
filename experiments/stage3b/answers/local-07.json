@@ -1,0 +1,47 @@
+[
+  {
+    "id": "G22-lyve1-function",
+    "found": true,
+    "answer": "LYVE1+ macrophages co-locate and interact with WNT2+ fibroblasts via growth factor signalling, playing a part in maintaining prenatal skin dermal fibroblasts, and also promote sprouting angiogenesis and blood vessel morphogenesis.",
+    "quotes": ["Our identification of additional growth factor interactions (IGF1–IGF1R and GRN–EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts."]
+  },
+  {
+    "id": "G10-wnt2fib-function",
+    "found": true,
+    "answer": "WNT2+ fibroblasts show gestation-dependent gene expression: in late gestation they upregulate extracellular matrix and collagen deposition genes, while in early gestation they upregulate genes involved in cellular growth and differentiation.",
+    "quotes": ["Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1) (Fig. 3b, Extended Data Fig. 7d and Supplementary Tables 16–18)."]
+  },
+  {
+    "id": "G37-postn-location",
+    "found": false,
+    "answer": "The supplied context does not give a specific tissue location for POSTN+ basal cells, only that they are present throughout gestation.",
+    "quotes": []
+  },
+  {
+    "id": "G14-dc-markers",
+    "found": true,
+    "answer": "The dermal condensate (Dc) is marked by FOXD1 and SOX2 (FOXD1+SOX2+), based on orthologous mouse marker genes.",
+    "quotes": ["In mice, transitional PDGFRA+FOXD1+SOX2low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode,."]
+  },
+  {
+    "id": "G08-wnt2fib-markers",
+    "found": true,
+    "answer": "WNT2+ fibroblasts are marked by the gene WNT2 itself, and depending on gestational age express COL1A1 (late) or SFRP1 (early); together with PEAR1+ fibroblasts they also express CDKN1A, IL1R1 and POSTN.",
+    "quotes": [
+      "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1) (Fig. 3b, Extended Data Fig. 7d and Supplementary Tables 16–18).",
+      "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders."
+    ]
+  },
+  {
+    "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of LYVE1+ macrophages.",
+    "quotes": []
+  },
+  {
+    "id": "G43-wnt2-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of WNT2+ fibroblasts.",
+    "quotes": []
+  }
+]

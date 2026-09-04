@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "The paper attributes to prenatal fibroblasts a role in favouring tissue regeneration over scarring, by downregulating genes involved in extracellular matrix formation, collagen deposition and inflammation during early gestation.",
+    "quotes": ["Collectively, our findings suggest that prenatal skin fibroblasts in early gestation downregulate genes involved in extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring."]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The placode expresses receptors (CXADR and EPHB6) for Dc-derived ligands FAM3C and EFNB1 that have been reported to promote cell migration and invasion, linking the placode to Dc invagination.",
+    "quotes": ["The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion"]
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Macrophages in prenatal skin co-locate with endothelial cells in neurovascular microenvironments, and TML macrophages specifically co-locate with Schwann cells.",
+    "quotes": ["Visium deconvolution analysis predicted co-location of prenatal skin macrophages with endothelial cells ('early and late neurovascular microenvironments', ME1 and ME5) (Fig. 1d and Extended Data Fig. 1e)."]
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": true,
+    "answer": "The paper reports GJA5 as a characteristic gene of the arteriolar pathway, which includes capillary arterioles (as opposed to PLVAP marking the venular pathway).",
+    "quotes": ["Inferred trajectory analysis showed that early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"]
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "The paper describes the placode as arising from budding of basal cells at 14-15 PCW, alongside germ cells, with elongation into hair pegs.",
+    "quotes": ["At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed"]
+  }
+]

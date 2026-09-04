@@ -1,0 +1,2125 @@
+{
+ "paper": "gopee2024",
+ "n_fine": 86,
+ "n_broad": 21,
+ "entries": [
+  {
+   "cell_label": "ASDC",
+   "labelset": "fine",
+   "expansions": [
+    {
+     "value": "Axl+Siglec6+ dendritic cells",
+     "span": ". ASDC, Axl+Siglec6+ dendritic cells",
+     "source": "legend_glossary"
+    }
+   ],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Adipocytes",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "WNT2+ Adipocytes"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Arterioles",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [
+    {
+     "value": "capillary arterioles",
+     "span": "her an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (pos",
+     "source": "qualified_form"
+    }
+   ],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Capillary arterioles"
+   ],
+   "n_body_passages": 6,
+   "n_legend_passages": 6,
+   "content_cues": {
+    "markers": 4,
+    "location": 2,
+    "function": 5,
+    "structure": 0
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "B cell",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Pre B cell",
+    "Pre pro B cell",
+    "Pro B cell"
+   ],
+   "n_body_passages": 1,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 1,
+    "location": 1,
+    "function": 1,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "CCL19+ fibroblast",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "CD4 T cell",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "CD8 T cell",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Capillaries",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 2,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 1,
+    "location": 2,
+    "function": 2,
+    "structure": 0
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Capillary arterioles",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [
+    {
+     "value": "sko capillary arterioles",
+     "span": "O cells, their receptors (KDR and FLT1) on SkO capillary arterioles were downregulated compared to prenatal",
+     "source": "qualified_form"
+    }
+   ],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 5,
+   "n_legend_passages": 6,
+   "content_cues": {
+    "markers": 3,
+    "location": 2,
+    "function": 4,
+    "structure": 0
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Companion layer",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 1,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Cuticle/cortex",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 3,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 1,
+    "location": 3,
+    "function": 2,
+    "structure": 1
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "DC1",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "DC2",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "DPYSL2+ basal",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 2,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 1,
+    "location": 2,
+    "function": 2,
+    "structure": 1
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Dermal condensate",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 3,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 0,
+    "location": 3,
+    "function": 2,
+    "structure": 1
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Dermal papilla",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 1,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Early LE",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Early endothelial cells",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 2,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 1,
+    "location": 2,
+    "function": 2,
+    "structure": 0
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Early erythroid",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "MEMP - Early erythroid"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Early erythroid (embryonic)",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "MEMP - Early erythroid"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Early myocytes",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Eo/baso/mast cell progenitor",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Erythroid (embryonic)",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Early erythroid",
+    "Early erythroid (embryonic)",
+    "MEMP - Early erythroid"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Erythroid (fetal)",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Early erythroid",
+    "Early erythroid (embryonic)",
+    "MEMP - Early erythroid"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "FRZB+ early fibroblast",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "HOXC5+ early fibroblast",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 3,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 3,
+    "location": 3,
+    "function": 2,
+    "structure": 0
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "HSC",
+   "labelset": "fine",
+   "expansions": [
+    {
+     "value": "haematopoietic stem cells",
+     "span": "; HSC, haematopoietic stem cells",
+     "source": "legend_glossary"
+    }
+   ],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "ILC2",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "ILC3",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 1,
+    "location": 1,
+    "function": 1,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Immature basal",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 2,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 0,
+    "location": 2,
+    "function": 1,
+    "structure": 0
+   },
+   "answerable_for": [
+    "location"
+   ]
+  },
+  {
+   "cell_label": "Immature suprabasal",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 1,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Inflammatory DC",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Innate T type1",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Innate T type3",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Inner root sheath",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 1,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Iron-recycling macrophage",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 1,
+    "location": 0,
+    "function": 1,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "LC",
+   "labelset": "fine",
+   "expansions": [
+    {
+     "value": "Langerhans cells",
+     "span": "; LC, Langerhans cells",
+     "source": "legend_glossary"
+    }
+   ],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "LE",
+   "labelset": "fine",
+   "expansions": [
+    {
+     "value": "lymphatic endothelium",
+     "span": "; LE, lymphatic endothelium",
+     "source": "legend_glossary"
+    }
+   ],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Early LE"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "LMCD1+ mural cell",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "LTi",
+   "labelset": "fine",
+   "expansions": [
+    {
+     "value": "lymphoid tissue inducer cell",
+     "span": "; LTi, lymphoid tissue inducer cell",
+     "source": "legend_glossary"
+    }
+   ],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 5,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "LYVE1++ macrophage",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 5,
+   "n_legend_passages": 4,
+   "content_cues": {
+    "markers": 4,
+    "location": 2,
+    "function": 5,
+    "structure": 0
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Lymphoid progenitor",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "MEMP - Early erythroid",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "MEMP - Megak",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "MHCII+ macrophage",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Mast cell (earliest)",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Mast cell (medium)",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Mast cell (most mature)",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Matrix",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [
+    {
+     "value": "hair matrix",
+     "span": "We evaluated hair matrix cells, which arise from the epidermal p",
+     "source": "qualified_form"
+    }
+   ],
+   "marker_hints": [
+    {
+     "value": "SHH",
+     "span": "matrix (SHH+)",
+     "source": "marker_hint"
+    }
+   ],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 16,
+   "n_legend_passages": 8,
+   "content_cues": {
+    "markers": 7,
+    "location": 8,
+    "function": 12,
+    "structure": 3
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function",
+    "structure"
+   ]
+  },
+  {
+   "cell_label": "Megakaryocyte",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Melanoblast",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Melanocyte",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 2,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 2,
+    "function": 2,
+    "structure": 0
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Monocyte",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Monocyte (activated/differentiating)",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Monocyte precursor",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Myelinating Schwann cells",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Myoblasts",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Myocytes",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Early myocytes"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Myofibroblasts",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "NK cell",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Neuroendocrine",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Neuron progenitors",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "SPP1+ proliferating neuron progenitors"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Neutrophil1",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Neutrophil2",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Outer root sheath",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [
+    {
+     "value": "SLC26A7",
+     "span": "outer root sheath (ORS) (SLC26A7+)",
+     "source": "marker_hint"
+    }
+   ],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 0,
+    "location": 1,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "PEAR1+ fibroblast",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 2,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 2,
+    "location": 1,
+    "function": 2,
+    "structure": 0
+   },
+   "answerable_for": [
+    "markers",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "PID1+ schwann cells",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "PLN+ mural cell",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "POSTN+ basal",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 3,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 1,
+    "location": 3,
+    "function": 2,
+    "structure": 1
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Pericytes",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Periderm",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 3,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 1,
+    "location": 3,
+    "function": 1,
+    "structure": 1
+   },
+   "answerable_for": [
+    "location"
+   ]
+  },
+  {
+   "cell_label": "Placode",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [
+    {
+     "value": "hair placode",
+     "span": ". At 14\u201315 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (",
+     "source": "qualified_form"
+    }
+   ],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 9,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 5,
+    "location": 8,
+    "function": 7,
+    "structure": 4
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function",
+    "structure"
+   ]
+  },
+  {
+   "cell_label": "Postcapillary venules",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 2,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 1,
+    "location": 2,
+    "function": 2,
+    "structure": 0
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Pre B cell",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Pre pro B cell",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Pre-dermal condensate",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 0,
+    "location": 1,
+    "function": 1,
+    "structure": 1
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Pro B cell",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Pre pro B cell"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "SPP1+ proliferating neuron progenitors",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Schwann/Schwann precursors",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Suprabasal IFE",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 1,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "TML macrophage",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 4,
+   "n_legend_passages": 7,
+   "content_cues": {
+    "markers": 3,
+    "location": 0,
+    "function": 4,
+    "structure": 0
+   },
+   "answerable_for": [
+    "markers",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Treg",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 1,
+    "location": 1,
+    "function": 1,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Venules",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [
+    {
+     "value": "postcapillary venules",
+     "span": "les and arterioles) or venular pathway (postcapillary venules and venules), with expression of charac",
+     "source": "qualified_form"
+    }
+   ],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Postcapillary venules"
+   ],
+   "n_body_passages": 3,
+   "n_legend_passages": 1,
+   "content_cues": {
+    "markers": 2,
+    "location": 2,
+    "function": 3,
+    "structure": 0
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "WNT2+ Adipocytes",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "WNT2+ fibroblast",
+   "labelset": "fine",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 6,
+   "n_legend_passages": 6,
+   "content_cues": {
+    "markers": 6,
+    "location": 4,
+    "function": 4,
+    "structure": 0
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "pDC",
+   "labelset": "fine",
+   "expansions": [
+    {
+     "value": "plasmacytoid dendritic cells",
+     "span": "; pDC, plasmacytoid dendritic cells",
+     "source": "legend_glossary"
+    }
+   ],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 2,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Adipocyte",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "WNT2+ Adipocytes"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "DC",
+   "labelset": "broad",
+   "expansions": [
+    {
+     "value": "dendritic cells",
+     "span": "; DC, dendritic cells",
+     "source": "legend_glossary"
+    }
+   ],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Inflammatory DC"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 6,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Erythroid",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Early erythroid",
+    "Early erythroid (embryonic)",
+    "MEMP - Early erythroid"
+   ],
+   "n_body_passages": 0,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Fibroblast",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [
+    {
+     "value": "hair fibroblast",
+     "span": "ferentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fib",
+     "source": "qualified_form"
+    },
+    {
+     "value": "dermal fibroblast",
+     "span": "c cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts an",
+     "source": "qualified_form"
+    },
+    {
+     "value": "adult fibroblast",
+     "span": "ts with healthy adult skin fibroblasts. All adult fibroblast subsets expressed high levels of inflam",
+     "source": "qualified_form"
+    },
+    {
+     "value": "wnt2+ fibroblast",
+     "span": "station, we observed differences within the WNT2+ fibroblast population across gestation time (Exten",
+     "source": "qualified_form"
+    }
+   ],
+   "marker_hints": [],
+   "ambiguous_label": true,
+   "collides_with": [
+    "CCL19+ fibroblast",
+    "FRZB+ early fibroblast",
+    "HOXC5+ early fibroblast",
+    "PEAR1+ fibroblast",
+    "WNT2+ fibroblast"
+   ],
+   "n_body_passages": 29,
+   "n_legend_passages": 20,
+   "content_cues": {
+    "markers": 17,
+    "location": 15,
+    "function": 15,
+    "structure": 2
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function",
+    "structure"
+   ]
+  },
+  {
+   "cell_label": "Haem progenitor",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "ILC",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 1,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 1,
+    "location": 1,
+    "function": 1,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Keratinocyte",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 5,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 1,
+    "location": 3,
+    "function": 3,
+    "structure": 0
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Lymphatic endothelium",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Macrophage",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [
+    {
+     "value": "tml macrophage",
+     "span": "undances, for selected cell type pairs (TML macrophage and neural cells).",
+     "source": "qualified_form"
+    },
+    {
+     "value": "interactions macrophage",
+     "span": "To explore inferred interactions between macrophage subsets and endothelial cells (Extended",
+     "source": "qualified_form"
+    },
+    {
+     "value": "lyve1+ macrophage",
+     "span": "ach cell type of interest (for example, LYVE1+ macrophage) and z score normalized for visualizati",
+     "source": "qualified_form"
+    }
+   ],
+   "marker_hints": [],
+   "ambiguous_label": true,
+   "collides_with": [
+    "Iron-recycling macrophage",
+    "LYVE1++ macrophage",
+    "MHCII+ macrophage",
+    "TML macrophage"
+   ],
+   "n_body_passages": 31,
+   "n_legend_passages": 30,
+   "content_cues": {
+    "markers": 12,
+    "location": 12,
+    "function": 19,
+    "structure": 1
+   },
+   "answerable_for": [
+    "markers",
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Mast cell",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 3,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Mural cell",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "LMCD1+ mural cell",
+    "PLN+ mural cell"
+   ],
+   "n_body_passages": 1,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 1,
+    "function": 1,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Neuronal cells",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Neutrophil",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "Schwann cell",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "Myelinating Schwann cells",
+    "PID1+ schwann cells"
+   ],
+   "n_body_passages": 2,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 1,
+    "location": 1,
+    "function": 2,
+    "structure": 0
+   },
+   "answerable_for": [
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Skeletal muscle",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  },
+  {
+   "cell_label": "T cell",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [
+    "CD4 T cell",
+    "CD8 T cell"
+   ],
+   "n_body_passages": 2,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 1,
+    "location": 2,
+    "function": 2,
+    "structure": 0
+   },
+   "answerable_for": [
+    "location",
+    "function"
+   ]
+  },
+  {
+   "cell_label": "Vascular endothelium",
+   "labelset": "broad",
+   "expansions": [],
+   "qualified_forms": [],
+   "marker_hints": [],
+   "ambiguous_label": false,
+   "collides_with": [],
+   "n_body_passages": 0,
+   "n_legend_passages": 0,
+   "content_cues": {
+    "markers": 0,
+    "location": 0,
+    "function": 0,
+    "structure": 0
+   },
+   "answerable_for": []
+  }
+ ]
+}

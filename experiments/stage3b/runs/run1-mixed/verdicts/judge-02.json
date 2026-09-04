@@ -1,0 +1,16 @@
+[
+  {"arm": "whole", "id": "G16-dc-function", "verdict": "correct", "why": "Conveys Dc-placode crosstalk driving hair follicle formation and the FAM3C/EFNB1 migration-invasion point."},
+  {"arm": "whole", "id": "G17-matrix-markers", "verdict": "correct", "why": "Names SHH and WNT10B as the known matrix markers, correctly scoped to hair matrix."},
+  {"arm": "whole", "id": "G18-matrix-location", "verdict": "correct", "why": "Hair follicle, arising from the epidermal placode, prenatal-specific and from 14 PCW - all present."},
+  {"arm": "whole", "id": "G19-matrix-function", "verdict": "correct", "why": "Gives the CXCL14/CD24 chemotaxis and Treg immune-protection role; added differentiation detail is also supported."},
+  {"arm": "whole", "id": "G20-lyve1-markers", "verdict": "correct", "why": "Identifies LYVE1 and GAS6 and correctly flags that no full marker panel is in the text."},
+  {"arm": "whole", "id": "G21-lyve1-location", "verdict": "correct", "why": "Co-location with WNT2+ fibroblasts and imaging proximity to endothelial cells both given."},
+  {"arm": "whole", "id": "G22-lyve1-function", "verdict": "correct", "why": "Sprouting angiogenesis, vessel morphogenesis and fibroblast maintenance via PDGF and GAS6-AXL all conveyed."},
+  {"arm": "whole", "id": "G23-fibroblast-markers", "verdict": "correct", "why": "Subset-specific marker answer is licensed by the hazard note and it captures the COL13A1-negative point."},
+  {"arm": "whole", "id": "G24-fibroblast-location", "verdict": "correct", "why": "Dermal compartment, HOXC5+ in upper dermis, Dc/Dp from 12 PCW - matches intended."},
+  {"arm": "whole", "id": "G25-fibroblast-function", "verdict": "correct", "why": "States the regeneration-over-scarring conclusion with the ECM/collagen/inflammation downregulation."},
+  {"arm": "whole", "id": "G26-periderm-location", "verdict": "correct", "why": "Outermost epidermal layer over dermal stroma, from 7 PCW, sloughing from 11 PCW."},
+  {"arm": "whole", "id": "G27-periderm-function", "verdict": "correct", "why": "Exactly the first skin permeability barrier."},
+  {"arm": "whole", "id": "G28-periderm-structure", "verdict": "correct", "why": "Gives the layer description and sloughing observation and notes nothing further is said."},
+  {"arm": "whole", "id": "G29-hoxc5-location", "verdict": "correct", "why": "Upper dermis, as intended."}
+]

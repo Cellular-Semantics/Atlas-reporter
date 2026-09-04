@@ -1,0 +1,4 @@
+[
+  {"arm": "local", "id": "G06-macrophage-location", "verdict": "correct", "why": "Gives the 6 PCW seeding and the co-location with fibroblasts, neural and vascular cells in distinct early-gestation microenvironments, matching the intended answer even without naming ME1/ME5."},
+  {"arm": "local", "id": "G23-fibroblast-markers", "verdict": "correct", "why": "Per the hazard note a subset-specific answer is legitimate; the HOXC5/WNT2/PEAR1 markers are accurate for this paper's fibroblast subsets and it also states the COL13A1 negative from the intended answer."}
+]

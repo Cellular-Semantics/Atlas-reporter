@@ -1,0 +1,50 @@
+[
+  {
+    "id": "G40-arteriole-function",
+    "found": true,
+    "answer": "The paper attributes sprouting angiogenesis potential to prenatal skin arteriole cells: they showed an increased 'tip' cell state score, indicating capacity for new blood vessel growth.",
+    "quotes": ["However, sprouting angiogenesis potential, assessed by scoring the ‘tip’ cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h)."]
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": true,
+    "answer": "Prenatal hair matrix cells show increased expression of chemotaxis genes (e.g. CXCL14, which recruits Treg cells) and autoimmunity-control genes (CD24), suggesting a role in Treg cell accumulation and immune protection during early matrix differentiation.",
+    "quotes": ["Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (Treg) cells, and in control of autoimmunity (CD24). This result highlighted the potential role of Treg cell accumulation and immune protection in the early stages of matrix differentiation (Extended Data Fig. 3f)."]
+  },
+  {
+    "id": "G15-dc-location",
+    "found": true,
+    "answer": "The dermal condensate is found in the dermal compartment of prenatal skin, as an aggregate of dermal fibroblasts, observed from 12 PCW.",
+    "quotes": [
+      "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c).",
+      "initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)"
+    ]
+  },
+  {
+    "id": "G02-placode-location",
+    "found": true,
+    "answer": "The hair placode is located in the epidermis, as a focal site of epidermal layer thickening, positioned adjacent to (abutting) the dermal condensate.",
+    "quotes": [
+      "initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)",
+      "pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode"
+    ]
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": false,
+    "answer": "The supplied context does not list marker genes for LYVE1+ macrophages; it only describes their co-location and predicted interactions (e.g. expression of GAS6), not defining markers.",
+    "quotes": []
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of capillary arterioles; it only discusses their differentiation trajectory and gene expression.",
+    "quotes": []
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of the hair matrix; it covers its origin from the placode and its gene expression, not its structure.",
+    "quotes": []
+  }
+]

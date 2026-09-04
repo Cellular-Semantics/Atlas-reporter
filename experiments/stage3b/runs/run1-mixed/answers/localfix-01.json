@@ -1,0 +1,12 @@
+[
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "The context does not give a strict anatomical compartment, but it states macrophages seed prenatal skin from as early as 6 PCW and that macrophage subsets were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation, with LYVE1+ macrophages specifically co-located with WNT2+ fibroblasts.",
+    "quotes": [
+      "immune cells such as macrophages seed the skin as early as 6 PCW and express a range of pro-inflammatory genes",
+      "In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation (Fig. 1d).",
+      "LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e)"
+    ]
+  }
+]

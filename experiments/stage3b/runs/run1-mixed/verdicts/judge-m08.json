@@ -1,0 +1,16 @@
+[
+{"arm": "asta-comb", "id": "G39-arteriole-markers", "verdict": "correct", "why": "GJA5 as the characteristic arteriolar gene against PLVAP for venular, correctly attributed to the arteriolar pathway."},
+{"arm": "asta-comb", "id": "G40-arteriole-function", "verdict": "correct", "why": "Gives both the tip-cell sprouting score and the arteriolar differentiation endpoint."},
+{"arm": "asta-comb", "id": "G41-cuticle-location", "verdict": "correct", "why": "Identifies cuticle/cortex as part of the inner layers of the hair follicle."},
+{"arm": "local-comb", "id": "G01-placode-structure", "verdict": "correct", "why": "Focal epidermal thickening formed by budding of basal cells; omitting invagination is an accurate partial."},
+{"arm": "local-comb", "id": "G02-placode-location", "verdict": "correct", "why": "Epidermis at focal sites of thickening, abutted by the dermal condensate."},
+{"arm": "local-comb", "id": "G03-placode-function", "verdict": "correct", "why": "Initiates hair follicle formation with the dermal condensate and gives rise to hair matrix cells."},
+{"arm": "local-comb", "id": "G06-macrophage-location", "verdict": "correct", "why": "Seeding from 6 PCW plus co-location with fibroblasts, neural and vascular cells in the microenvironments."},
+{"arm": "local-comb", "id": "G07-macrophage-function", "verdict": "correct", "why": "Scarless repair, fibroblast homeostasis, neurovascular development and vascular network formation all named."},
+{"arm": "local-comb", "id": "G08-wnt2fib-markers", "verdict": "correct", "why": "WNT2 plus COL1A1/ECM late, SFRP1 early, and CDKN1A, IL1R1, POSTN."},
+{"arm": "local-comb", "id": "G09-wnt2fib-location", "verdict": "correct", "why": "Dermal fibroblasts co-locating with LYVE1+ and TML macrophages in early prenatal skin."},
+{"arm": "local-comb", "id": "G10-wnt2fib-function", "verdict": "correct", "why": "Early growth/differentiation versus late ECM and collagen deposition, with acquisition of senescence and inflammatory profile."},
+{"arm": "local-comb", "id": "G11-tml-markers", "verdict": "correct", "why": "TREM2 with P2RY12, CX3CR1 and OLFML3; omitting GAS6 is an accurate partial."},
+{"arm": "local-comb", "id": "G12-tml-location", "verdict": "correct", "why": "WNT2+ fibroblasts at 6-8 PCW and Schwann cells in the early neurovascular microenvironment."},
+{"arm": "local-comb", "id": "G13-tml-function", "verdict": "correct", "why": "Sprouting angiogenesis plus Schwann cell interactions in synapse formation and axon guidance."}
+]

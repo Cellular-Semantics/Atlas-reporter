@@ -1,0 +1,47 @@
+[
+  {
+    "id": "G30-hoxc5-function",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts act as a common progenitor that differentiates along two paths: one forming hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the other forming WNT2+ and PEAR1+ dermal fibroblasts.",
+    "quotes": ["Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7)."]
+  },
+  {
+    "id": "G13-tml-function",
+    "found": true,
+    "answer": "TML macrophages are predicted to interact with Schwann cells to support synapse formation and axon guidance, and along with LYVE1+ macrophages promote sprouting angiogenesis, contributing to establishment of the peripheral nervous system and vascular development in prenatal skin.",
+    "quotes": ["TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA–NRP1, VEGFA–NRP2, SEMA3C–NRP2 and SEMA3E–PLXND1) (Extended Data Fig. 8h and Supplementary Table 8)."]
+  },
+  {
+    "id": "G18-matrix-location",
+    "found": true,
+    "answer": "Hair matrix cells arise from the epidermal placode and are a prenatal-specific cell state not found in established adult hair follicles.",
+    "quotes": ["We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs (Extended Data Fig. 3d,e)."]
+  },
+  {
+    "id": "G31-dpysl2-markers",
+    "found": true,
+    "answer": "DPYSL2+ basal cells are marked by DPYSL2 itself, and along the ORS/CL trajectory upregulate AGR2 as well as previously reported ORS-differentiation genes BARX2 and SOX9.",
+    "quotes": ["Along the ORS/CL trajectory, we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9), (Extended Data Fig. 4b,c and Supplementary Table 7)."]
+  },
+  {
+    "id": "G11-tml-markers",
+    "found": true,
+    "answer": "TML macrophages are marked by TREM2, and share an expression profile with microglia-like macrophages including P2RY12, CX3CR1 and OLFML3; they also co-express CX3CR1 and SYT11.",
+    "quotes": [
+      "We recently identified yolk-sac derived TREM2+ macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs, such as the brain, prenatal skin and gonads, (Extended Data Fig. 7e,f).",
+      "Prenatal skin TREM2+ microglia-like (TML) macrophages were highly correlated with embryonic brain microglia (Extended Data Fig. 8a,b) and co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11) (Fig. 3f, Extended Data Fig. 8c and Supplementary Tables 19–23)."
+    ]
+  },
+  {
+    "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of HOXC5+ early fibroblasts.",
+    "quotes": []
+  },
+  {
+    "id": "G44-tml-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of TML macrophages.",
+    "quotes": []
+  }
+]

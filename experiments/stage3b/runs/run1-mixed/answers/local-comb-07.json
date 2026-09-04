@@ -1,0 +1,58 @@
+[
+  {
+    "id": "G22-lyve1-function",
+    "found": true,
+    "answer": "LYVE1+ macrophages are suggested to maintain prenatal skin dermal fibroblasts through growth factor interactions, to contribute via GAS6-AXL signalling to immunosuppression and tissue repair, and to promote angiogenesis, specifically sprouting angiogenesis and blood vessel morphogenesis.",
+    "quotes": [
+      "Our identification of additional growth factor interactions (IGF1–IGF1R and GRN–EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts.",
+      "GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair",
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages, blood vessel morphogenesis by LYVE1+ macrophages"
+    ]
+  },
+  {
+    "id": "G10-wnt2fib-function",
+    "found": true,
+    "answer": "Early WNT2+ fibroblasts express genes involved in cellular growth and differentiation, whereas late gestation WNT2+ fibroblasts upregulate extracellular matrix and collagen deposition genes; together with PEAR1+ fibroblasts they express senescence, cytokine and collagen deposition genes, reflecting progressive acquisition of scar-promoting features.",
+    "quotes": [
+      "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)",
+      "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders."
+    ]
+  },
+  {
+    "id": "G37-postn-location",
+    "found": true,
+    "answer": "POSTN+ basal cells are part of the interfollicular epidermis, where they were present throughout gestation; trajectory analysis places them as the starting basal population of the epidermal differentiation paths.",
+    "quotes": [
+      "In addition, we observed immature and mature interfollicular epidermal (IFE) cells.",
+      "Mature basal (DPYSL2+) and suprabasal IFE cells increased after 11 PCW, whereas POSTN+ basal cells were present throughout gestation (Fig. 2b and Extended Data Fig. 3b).",
+      "Inferred trajectory and pseudotime analysis of epidermal cells in the integrated prenatal skin and SkO data predicted the differentiation of POSTN+ basal cells into two paths"
+    ]
+  },
+  {
+    "id": "G14-dc-markers",
+    "found": false,
+    "answer": "The supplied context does not name marker genes for the dermal condensate; it describes the Dc only as an aggregate of dermal fibroblasts observed from 12 PCW.",
+    "quotes": []
+  },
+  {
+    "id": "G08-wnt2fib-markers",
+    "found": true,
+    "answer": "Beyond the defining WNT2 in the subset name, the context does not give a marker list, but it reports genes expressed by WNT2+ fibroblasts: CDKN1A, IL1R1 and POSTN (shared with PEAR1+ fibroblasts), with COL1A1 upregulated in late gestation and SFRP1 among DEGs of early WNT2+ fibroblasts.",
+    "quotes": [
+      "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)",
+      "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)"
+    ]
+  },
+  {
+    "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of LYVE1+ macrophages; it covers only their co-location, predicted interactions and inferred functions.",
+    "quotes": []
+  },
+  {
+    "id": "G43-wnt2-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of WNT2+ fibroblasts; it discusses only their origin, abundance and gene expression.",
+    "quotes": []
+  }
+]

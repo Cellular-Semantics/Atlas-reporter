@@ -1,0 +1,59 @@
+[
+  {
+    "id": "G16-dc-function",
+    "found": true,
+    "answer": "The paper attributes a migration/invasion-promoting function to the dermal condensate: it expresses FAM3C and EFNB1, predicted to signal to the overlying placode via LAMP1/CXADR and EPHB6, and these interactions have been reported to promote cell migration and invasion.",
+    "quotes": [
+      "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion"
+    ]
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": true,
+    "answer": "The periderm is described as constituting the first skin permeability barrier.",
+    "quotes": [
+      "the periderm, which constitutes the first skin permeability barrier"
+    ]
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": true,
+    "answer": "LYVE1+ macrophages were shown by multiplex RNAscope and immunofluorescence staining to be in close proximity to endothelial cells in prenatal skin.",
+    "quotes": [
+      "LYVE1 + and TML macrophages in close proximity to endothelial cells"
+    ]
+  },
+  {
+    "id": "G39-arteriole-markers",
+    "found": true,
+    "answer": "GJA5 is given as the characteristic gene for the arteriolar pathway (which includes arterioles).",
+    "quotes": [
+      "GJA5 for arteriolar and PLVAP for venular"
+    ]
+  },
+  {
+    "id": "G35-pear1-markers",
+    "found": true,
+    "answer": "The supplied context does not give a specific marker gene panel identifying PEAR1+ fibroblasts beyond the PEAR1 name itself, but it notes that a pro-inflammatory gene set (APOE, IGFBP7, ITM2A) was upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts.",
+    "quotes": [
+      "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A)"
+    ]
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": true,
+    "answer": "The dermal condensate is described structurally as abutting the epithelial hair placode, and after HF invagination it becomes encapsulated at its base to form the dermal papilla.",
+    "quotes": [
+      "which abuts the epithelial hair placode",
+      "the Dc becomes encapsulated at its base as the Dp"
+    ]
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": true,
+    "answer": "The periderm is described as a layer that is seen sloughing from 11 PCW.",
+    "quotes": [
+      "with the periderm seen sloughing from 11 PCW"
+    ]
+  }
+]

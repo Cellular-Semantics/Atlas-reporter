@@ -1,0 +1,58 @@
+[
+  {
+    "id": "G16-dc-function",
+    "found": true,
+    "answer": "The dermal condensate is presented as a hair-follicle-specialized dermal cell state that takes part in dermal-epidermal crosstalk during hair follicle development; it forms from aggregating pre-Dc fibroblasts next to the hair placode and, after follicle invagination, becomes the dermal papilla.",
+    "quotes": [
+      "We delineated the dermal cell types involved in crosstalk with epidermal cells during HF development and captured the precursors of the human Dc (Extended Data Figs. 2b and 3c). In mice, transitional PDGFRA + FOXD1 + SOX2 low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1 + SOX2 + ), which abuts the epithelial hair placode 26,28 . Using orthologous marker genes, we annotated pre-Dc cells and the Dc in human prenatal skin 28,29 . Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP + , SOX2 + ) 26,28 (Fig. 2c and Extended Data Fig. 3h)."
+    ]
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": false,
+    "answer": "The supplied context attributes no function to the periderm; it only notes that periderm is an immature interfollicular epidermal cell type present from 7 PCW and seen sloughing from 11 PCW.",
+    "quotes": []
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": true,
+    "answer": "LYVE1+ macrophages are found in close proximity to endothelial cells in prenatal skin (macrophages co-locate with endothelial cells in the early and late neurovascular microenvironments ME1 and ME5), and they also co-locate with WNT2+ fibroblasts in the dermis.",
+    "quotes": [
+      "Visium deconvolution analysis predicted co-location of prenatal skin macrophages with endothelial cells ('early and late neurovascular microenvironments', ME1 and ME5) (Fig. 1d and Extended Data Fig. 1e).",
+      "Consistent with this finding, multiplex RNAscope and immunofluorescence staining showed LYVE1 + and TML macrophages in close proximity to endothelial cells (Fig. 4a and Supplementary Video 1).",
+      "(g) Circos plot visualisation of representative significant (adjusted p-value <0.05, significance calculated in CellphoneDB using empirical shuffling and FDR-adjusted) predicted interactions between macrophages (LYVE1 + and TML macrophage) and co-localising WNT2 + fibroblasts in prenatal skin."
+    ]
+  },
+  {
+    "id": "G39-arteriole-markers",
+    "found": true,
+    "answer": "GJA5 is given as the characteristic gene of the arteriolar pathway (capillaries, capillary arterioles and arterioles), in contrast to PLVAP for the venular pathway; no arteriole-specific marker list beyond this is provided.",
+    "quotes": [
+      "Inferred trajectory analysis showed that early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular) (Fig. 4d and Extended Data Fig. 10a-c)."
+    ]
+  },
+  {
+    "id": "G35-pear1-markers",
+    "found": true,
+    "answer": "Beyond the defining PEAR1 label, the context reports that pro-inflammatory fibroblast genes APOE, IGFBP7 and ITM2A are upregulated in the transition from HOXC5+ to PEAR1+ fibroblasts, and that PEAR1+ (with WNT2+) fibroblasts express CDKN1A, IL1R1 and POSTN.",
+    "quotes": [
+      "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A) 43,52 were also upregulated during the transition from HOXC5 + fibroblasts into PEAR1 + fibroblasts (Extended Data Fig. 7c).",
+      "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders 53 ."
+    ]
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": false,
+    "answer": "The supplied context gives no description of the structure or morphology of the human dermal condensate; the aggregation and placode-abutting description is attributed to mouse, and the remaining text covers annotation, co-location and differentiation trajectory only.",
+    "quotes": []
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": true,
+    "answer": "The periderm is described histologically as the outermost layer of the early prenatal epidermis, seen sloughing from 11 PCW, and it is classed among the immature interfollicular epidermal cells present from 7 PCW that decline after 11 PCW.",
+    "quotes": [
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b)."
+    ]
+  }
+]

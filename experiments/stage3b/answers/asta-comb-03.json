@@ -1,0 +1,56 @@
+[
+  {
+    "id": "G32-dpysl2-function",
+    "found": true,
+    "answer": "DPYSL2+ basal cells lie along the ORS/CL differentiation trajectory and upregulate genes such as AGR2, along with previously reported ORS differentiation genes BARX2 and SOX9.",
+    "quotes": [
+      "Along the ORS/CL trajectory, we identified new genes upregulated by DPYSL2 + basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9) 25,26"
+    ]
+  },
+  {
+    "id": "G38-postn-function",
+    "found": true,
+    "answer": "The paper suggests that increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination.",
+    "quotes": [
+      "Our findings suggest that increased cellular migration in POSTN + basal cells may be involved in placode specification and dermal invagination."
+    ]
+  },
+  {
+    "id": "G29-hoxc5-location",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts are located in the upper dermis and are abundant before 11 PCW.",
+    "quotes": [
+      "HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths"
+    ]
+  },
+  {
+    "id": "G09-wnt2fib-location",
+    "found": true,
+    "answer": "WNT2+ fibroblasts co-locate with LYVE1+ macrophages and, in early prenatal skin (6-8 PCW), with TML macrophages.",
+    "quotes": [
+      "LYVE1 + macrophages co-located with WNT2 + fibroblasts (Fig. 3c-e)",
+      "TML macrophages were predicted to co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW) (Fig. 3c,d)"
+    ]
+  },
+  {
+    "id": "G17-matrix-markers",
+    "found": true,
+    "answer": "Hair matrix cells are marked by SHH, and known matrix markers SHH and WNT10B were found upregulated along the IRS trajectory.",
+    "quotes": [
+      "known matrix markers such as SHH and WNT10B 25,26 were upregulated",
+      "matrix (SHH + )"
+    ]
+  },
+  {
+    "id": "G50-dpysl2-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of DPYSL2+ basal cells; it discusses their gene expression and differentiation trajectory instead.",
+    "quotes": []
+  },
+  {
+    "id": "G53-postn-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of POSTN+ basal cells; it only notes their presence throughout gestation and their role in migration.",
+    "quotes": []
+  }
+]

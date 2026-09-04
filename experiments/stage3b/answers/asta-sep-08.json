@@ -1,0 +1,46 @@
+[
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "The paper attributes several functions to macrophages in prenatal skin, including promoting angiogenesis and vascular network formation, interacting with fibroblasts to maintain tissue homeostasis, and supporting neural development alongside Schwann cells.",
+    "quotes": [
+      "Macrophages have been implicated in angiogenesis during prenatal organ development and in the postnatal setting such as cancerrelated angiogenesis 67,68 .",
+      "Our data suggested that macrophages contribute to prenatal skin angiogenesis."
+    ]
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": true,
+    "answer": "Cuticle and cortex cells are described as part of the inner layers of the hair follicle, identified in the scRNA-seq data from 14 PCW.",
+    "quotes": [
+      "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+    ]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "Periderm is one of the immature interfollicular epidermal (IFE) cell types, present in the epidermal layer overlying the dermal stroma from 7 PCW, and it sloughs from 11 PCW.",
+    "quotes": [
+      "with the periderm seen sloughing from 11 PCW",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW"
+    ]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": false,
+    "answer": "The supplied context does not say which genes generically mark fibroblasts; it only discusses genes specific to particular fibroblast subsets (e.g. WNT2+, PEAR1+, HOXC5+).",
+    "quotes": []
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of arterioles; it discusses their differentiation trajectory and gene expression rather than physical structure.",
+    "quotes": []
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of macrophages; it discusses their function, imaging methods, and co-localization rather than their physical structure.",
+    "quotes": []
+  }
+]

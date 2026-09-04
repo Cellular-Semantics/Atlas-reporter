@@ -1,0 +1,16 @@
+[
+{"arm": "asta-sep", "id": "G30-hoxc5-function", "verdict": "correct", "why": "Names the common fibroblast progenitor and both hair and dermal trajectories exactly as intended."},
+{"arm": "asta-sep", "id": "G31-dpysl2-markers", "verdict": "correct", "why": "Attribution is the right way round: AGR2 newly identified, BARX2/SOX9 flagged as previously reported."},
+{"arm": "asta-sep", "id": "G32-dpysl2-function", "verdict": "correct", "why": "Places the cell on the ORS/CL differentiation trajectory as intended, with accurate supporting detail."},
+{"arm": "asta-sep", "id": "G34-caparteriole-function", "verdict": "correct", "why": "Covers both further differentiation into arterioles (unlike SkO) and the tip-cell sprouting angiogenesis score."},
+{"arm": "asta-sep", "id": "G35-pear1-markers", "verdict": "correct", "why": "Gives PEAR1 plus APOE/IGFBP7/ITM2A from the HOXC5 transition, correctly framed as upregulated genes."},
+{"arm": "asta-sep", "id": "G36-pear1-function", "verdict": "correct", "why": "Late-gestation dermal fibroblast with pro-inflammatory, senescence and collagen-deposition profile matches the intended answer."},
+{"arm": "asta-sep", "id": "G37-postn-location", "verdict": "correct", "why": "Epidermal basal cells present throughout gestation, contrasted with DPYSL2+ mature basal after 11 PCW."},
+{"arm": "asta-sep", "id": "G38-postn-function", "verdict": "correct", "why": "Captures both the ORS/CL and IRS trajectory origin and the migration/placode-invagination role."},
+{"arm": "asta-sep", "id": "G39-arteriole-markers", "verdict": "correct", "why": "GJA5 as the characteristic arteriolar gene against PLVAP for venular, attributed to the right pathway."},
+{"arm": "asta-sep", "id": "G40-arteriole-function", "verdict": "correct", "why": "Partial but accurate: names the tip-cell sprouting angiogenesis role, omitting only the pathway-endpoint framing."},
+{"arm": "asta-sep", "id": "G41-cuticle-location", "verdict": "correct", "why": "Correctly places cuticle/cortex in the inner layers of the hair follicle."},
+{"arm": "asta-comb", "id": "G01-placode-structure", "verdict": "correct", "why": "Describes budding of basal cells and subsequent invagination accompanying dermal condensate formation."},
+{"arm": "asta-comb", "id": "G02-placode-location", "verdict": "correct", "why": "Locates the placode in the epidermal basal layer as budding basal cells, consistent with the intended answer."},
+{"arm": "asta-comb", "id": "G03-placode-function", "verdict": "correct", "why": "States matrix cells arise from the placode and it initiates the IRS trajectory with Dc crosstalk; omits only WNT/EDA."}
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "Macrophages are attributed roles in prenatal skin angiogenesis (via co-location with endothelial cells and ligand-receptor interactions supporting chemotaxis and cell migration), in supporting establishment of the skin peripheral nervous system through interactions with Schwann cells, and possibly in scarless healing and tissue homeostasis, raising the question of a contribution to early skin morphogenesis.",
+    "quotes": [
+      "Predicted ligandreceptor interactions were consistent with reciprocal communication between macrophages and endothelial cells to support angiogenesis, chemotaxis and cell migration (for example, CXCL8-ACKR1 and CCL8-ACKR1) 10,70 (Extended Data Fig. 9a and Supplementary Table 28).",
+      "Our data suggested that macrophages contribute to prenatal skin angiogenesis.",
+      "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA-NRP1, VEGFA-NRP2, SEMA3C-NRP2 and SEMA3E-PLXND1) 66 (Extended Data Fig. 8h and Supplementary Table 8).",
+      "Together with evidence of their role in tissue homeostasis 6,7 and healing in mouse models 8,9 , this raises the question of whether macrophages contribute to human early skin morphogenesis."
+    ]
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": true,
+    "answer": "Cuticle/cortex cells form part of the inner layers of the hair follicle.",
+    "quotes": [
+      "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a-c, Extended Data Fig. 3a,b and Supplementary Table 6)"
+    ]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "Periderm is one of the immature interfollicular epidermal (IFE) cell types, present as a superficial epidermal layer overlying the dermal stroma, and it sloughs from 11 PCW.",
+    "quotes": [
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b)."
+    ]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": false,
+    "answer": "The supplied context does not say. It discusses gene expression differences in specific fibroblast subsets (for example, adult versus prenatal fibroblasts, or transitions between HOXC5+ and PEAR1+ fibroblasts) rather than naming genes that mark fibroblasts generally.",
+    "quotes": []
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  }
+]

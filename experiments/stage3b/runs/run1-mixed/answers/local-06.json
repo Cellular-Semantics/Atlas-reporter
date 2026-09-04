@@ -1,0 +1,56 @@
+[
+  {
+    "id": "G36-pear1-function",
+    "found": true,
+    "answer": "PEAR1+ fibroblasts are an abundant-after-11-PCW dermal fibroblast subset that acquires an adult-like pro-inflammatory phenotype and expresses senescence, cytokine and collagen-deposition genes of the kind found in pathogenic fibroblasts of fibrotic skin, so they are linked to the progressive acquisition of scar-promoting properties in later gestation.",
+    "quotes": [
+      "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A), were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts (Extended Data Fig. 7c).",
+      "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders."
+    ]
+  },
+  {
+    "id": "G37-postn-location",
+    "found": false,
+    "answer": "The supplied context does not state where POSTN+ basal cells are located in prenatal skin; it only reports that they are present throughout gestation.",
+    "quotes": []
+  },
+  {
+    "id": "G38-postn-function",
+    "found": true,
+    "answer": "POSTN+ basal cells act as an epidermal progenitor state that differentiates along two trajectories (ORS/CL and IRS), and their increased cellular migration is proposed to contribute to hair placode specification and dermal invagination.",
+    "quotes": [
+      "Inferred trajectory and pseudotime analysis of epidermal cells in the integrated prenatal skin and SkO data predicted the differentiation of POSTN+ basal cells into two paths: ORS/CL trajectory, comprising DPYSL2+ basal cells, ORS and CL; and IRS trajectory, involving placode, matrix, cuticle/cortex and IRS (Fig. 2d, Extended Data Fig. 4a and Supplementary Table 7).",
+      "Our findings suggest that increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination."
+    ]
+  },
+  {
+    "id": "G39-arteriole-markers",
+    "found": true,
+    "answer": "GJA5 is given as a characteristic gene of the arteriolar pathway (capillaries, capillary arterioles and arterioles), in contrast to PLVAP for the venular pathway.",
+    "quotes": [
+      "Inferred trajectory analysis showed that early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular) (Fig. 4d and Extended Data Fig. 10a–c)."
+    ]
+  },
+  {
+    "id": "G40-arteriole-function",
+    "found": true,
+    "answer": "The context attributes no distinct biological role to arterioles beyond their place in the endothelial differentiation scheme: they are the endpoint of the arteriolar pathway, and prenatal skin arterioles show increased sprouting angiogenesis potential when scored for the 'tip' cell state.",
+    "quotes": [
+      "However, sprouting angiogenesis potential, assessed by scoring the ‘tip’ cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h)."
+    ]
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": true,
+    "answer": "Cuticle and cortex cells are part of the inner layers of the hair follicle, and were identified in the scRNA-seq data from 14 PCW.",
+    "quotes": [
+      "Consistent with our histological observations, we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH+), outer root sheath (ORS) (SLC26A7+), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a–c, Extended Data Fig. 3a,b and Supplementary Table 6)."
+    ]
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of macrophages; it discusses only their timing, location, gene expression and functional interactions.",
+    "quotes": []
+  }
+]

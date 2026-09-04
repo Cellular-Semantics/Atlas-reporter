@@ -1,0 +1,38 @@
+[
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "Dermal fibroblasts produce the collagen that aggregates to form scars when the overlying epidermis fails to regenerate.",
+    "quotes": ["Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate."]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The epidermal (hair) placode interacts with the dermal condensate to initiate hair follicle formation.",
+    "quotes": ["initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)"]
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Macrophage subsets are predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation.",
+    "quotes": ["In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation (Fig. 1d)."]
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": false,
+    "answer": "The context attributes GJA5 to the arteriolar pathway in general but does not give a marker gene specific to capillary arteriole cells.",
+    "quotes": []
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not give a specific marker gene for the hair placode.",
+    "quotes": []
+  },
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "The hair (epidermal) placode is described structurally as a focal site of epidermal layer thickening.",
+    "quotes": ["epidermal placodes (focal sites of epidermal layer thickening)"]
+  }
+]

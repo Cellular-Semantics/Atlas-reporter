@@ -1,0 +1,7 @@
+[
+  {"arm": "local", "id": "G38-postn-function", "verdict": "correct", "why": "Names both the migration/placode-specification role and the origin of the ORS/CL and IRS trajectories, matching the intended answer."},
+  {"arm": "local", "id": "G39-arteriole-markers", "verdict": "correct", "why": "Gives GJA5 as the characteristic arteriolar gene contrasted with PLVAP, attributed to the arteriolar pathway sentence as intended."},
+  {"arm": "local", "id": "G40-arteriole-function", "verdict": "correct", "why": "Covers both the endpoint of the arteriolar differentiation pathway and the increased sprouting angiogenesis tip-cell score."},
+  {"arm": "local", "id": "G41-cuticle-location", "verdict": "correct", "why": "Correctly places cuticle/cortex in the inner layers of the hair follicle, with accurate added detail about 14 PCW."},
+  {"arm": "local", "id": "G45-dermal-condensate-structure-absent", "verdict": "overreach", "why": "Presents aggregation and encapsulation statements as a structural/morphological description instead of declining."}
+]

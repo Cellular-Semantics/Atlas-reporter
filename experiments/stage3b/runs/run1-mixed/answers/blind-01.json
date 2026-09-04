@@ -1,0 +1,170 @@
+[
+  {
+    "id": "G01-placode-structure",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G02-placode-location",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G03-placode-function",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G05-macrophage-markers",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G07-macrophage-function",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G08-wnt2fib-markers",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G09-wnt2fib-location",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G10-wnt2fib-function",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G11-tml-markers",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G12-tml-location",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G13-tml-function",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G14-dc-markers",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G15-dc-location",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G16-dc-function",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G17-matrix-markers",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G18-matrix-location",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G22-lyve1-function",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G24-fibroblast-location",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G25-fibroblast-function",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": false,
+    "answer": "No context is supplied for this batch, so the supplied context does not say.",
+    "quotes": []
+  }
+]

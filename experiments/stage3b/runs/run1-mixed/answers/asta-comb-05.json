@@ -1,0 +1,59 @@
+[
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "Dermal fibroblasts produce the collagen whose aggregation causes scars; in early gestation prenatal skin fibroblasts downregulate extracellular matrix, collagen deposition and inflammation genes and instead express immune-suppressive and regenerative genes, which the paper links to tissue regeneration rather than scarring.",
+    "quotes": [
+      "Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate 51 .",
+      "Collectively, our findings suggest that prenatal skin fibroblasts in early gestation downregulate genes involved in extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring.",
+      "By contrast, prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200), regulation of inflammation (for example, RAMP2) and tissue regeneration (MDK) (Fig. 3a and Supplementary Tables 13-15)."
+    ]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The placode is the prenatal-specific epidermal cell state that gives rise to hair matrix cells and sits on the inner root sheath differentiation trajectory; its invagination accompanies dermal condensate formation, and it receives migration/invasion-promoting signals (FAM3C, EFNB1) from the Dc via LAMP1/CXADR and EPHB6.",
+    "quotes": [
+      "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs 20 (Extended Data Fig. 3d,e).",
+      "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion 37,38 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8).",
+      "IRS trajectory, involving placode, matrix, cuticle/cortex and IRS (Fig. 2d, Extended Data Fig. 4a and Supplementary Table 7)"
+    ]
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Macrophages are predicted and imaged to sit alongside endothelial cells in the early and late neurovascular microenvironments (ME1 and ME5), with LYVE1+ and TML macrophages in close proximity to endothelial cells; TML macrophages also co-locate with Schwann cells in ME1.",
+    "quotes": [
+      "Visium deconvolution analysis predicted co-location of prenatal skin macrophages with endothelial cells ('early and late neurovascular microenvironments', ME1 and ME5) (Fig. 1d and Extended Data Fig. 1e).",
+      "Consistent with this finding, multiplex RNAscope and immunofluorescence staining showed LYVE1 + and TML macrophages in close proximity to endothelial cells (Fig. 4a and Supplementary Video 1).",
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1) (Figs. 1d and 3g)"
+    ]
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": false,
+    "answer": "The supplied context does not give marker genes for capillary arterioles. It names GJA5 as characteristic of the arteriolar pathway as a whole and discusses genes downregulated in SkO capillary arterioles (KDR, FLT1, VWF), but no genes are stated to mark this cell type.",
+    "quotes": []
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not state marker genes for the placode. It gives markers for other hair follicle cell types (matrix SHH+, ORS SLC26A7+) and names receptors present on the placode (LAMP1, CXADR, EPHB6), but no placode markers.",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe fibroblast structure or morphology; it addresses transcriptional profiles, subset composition across gestation, and differentiation trajectories.",
+    "quotes": []
+  },
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "Morphologically the hair placode appears as budding of basal cells at 14-15 PCW, seen alongside germ cells and elongating hair pegs; the placode subsequently invaginates, an event accompanying dermal condensate formation.",
+    "quotes": [
+      "At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a).",
+      "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion 37,38 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8)."
+    ]
+  }
+]

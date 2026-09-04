@@ -1,0 +1,12 @@
+[
+  {
+    "id": "G23-fibroblast-markers",
+    "found": true,
+    "answer": "The context gives no general marker set for fibroblasts as a class; it instead names genes that label particular prenatal skin fibroblast subsets or states — HOXC5 for the common early fibroblast progenitor, and WNT2 and PEAR1 for the two subsets that carry the adult-like expression profile. It also notes that the papillary fibroblast marker COL13A1 was not significantly expressed in these prenatal fibroblasts.",
+    "quotes": [
+      "pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5+ early fibroblast)",
+      "The adult fibroblast gene expression profile was increased in WNT2+ and PEAR1+ prenatal fibroblasts, which were abundant in later gestation",
+      "Our human prenatal skin fibroblasts did not significantly express papillary fibroblast markers (for example, COL13A1)"
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "G43-wnt2-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of WNT2+ fibroblasts; it only covers their developmental origin, gestational abundance, gene expression profile and predicted interactions with macrophages.",
+    "quotes": []
+  },
+  {
+    "id": "G44-tml-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of TREM2+ microglia-like (TML) macrophages; it addresses their origin, expression profile, predicted co-location and functional roles only.",
+    "quotes": []
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": true,
+    "answer": "The dermal condensate is described structurally as an aggregate of dermal fibroblasts that forms by aggregation of pre-Dc cells and abuts the epithelial hair placode; after hair follicle invagination it becomes encapsulated at the base of the follicle as the dermal papilla.",
+    "quotes": [
+      "dermal condensates (aggregates of dermal fibroblasts)",
+      "In mice, transitional PDGFRA+FOXD1+SOX2low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode",
+      "Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+)"
+    ]
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of hair matrix cells; it only notes their origin from the epidermal placode, their prenatal-specific state and their gene expression compared with adult hair follicles.",
+    "quotes": []
+  },
+  {
+    "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of LYVE1+ macrophages; it reports their predicted co-location, interactions and angiogenic gene programs only.",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe fibroblast structure or morphology; it deals with differentiation trajectories, subset composition across gestation and gene expression profiles.",
+    "quotes": []
+  },
+  {
+    "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of HOXC5+ early fibroblasts; it gives their dermal location, timing of abundance and role as a common fibroblast progenitor.",
+    "quotes": []
+  }
+]

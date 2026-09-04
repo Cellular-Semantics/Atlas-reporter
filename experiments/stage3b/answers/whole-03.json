@@ -1,0 +1,101 @@
+[
+  {
+    "id": "G32-dpysl2-function",
+    "found": false,
+    "answer": "The supplied context does not state a function for DPYSL2+ basal cells; it only notes them as a marker-defined mature basal cell population and mentions AGR2 (a gene they upregulate) promoting cell migration, but no function is attributed to the DPYSL2+ basal cells themselves.",
+    "quotes": []
+  },
+  {
+    "id": "G22-lyve1-function",
+    "found": true,
+    "answer": "LYVE1+ macrophages are proposed to help maintain dermal fibroblasts via growth factor signalling, and their gene expression programme is associated with blood vessel morphogenesis and sprouting angiogenesis.",
+    "quotes": [
+      "suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts",
+      "blood vessel morphogenesis by LYVE1+ macrophages"
+    ]
+  },
+  {
+    "id": "G38-postn-function",
+    "found": true,
+    "answer": "POSTN+ basal cells show increased cellular migration that may contribute to placode specification and dermal invagination.",
+    "quotes": [
+      "increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination"
+    ]
+  },
+  {
+    "id": "G10-wnt2fib-function",
+    "found": false,
+    "answer": "The supplied context does not explicitly attribute a function to WNT2+ fibroblasts; it only describes genes they upregulate at different gestational stages.",
+    "quotes": []
+  },
+  {
+    "id": "G29-hoxc5-location",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts are located in the upper dermis.",
+    "quotes": [
+      "HOXC5+ early fibroblasts (located in the upper dermis"
+    ]
+  },
+  {
+    "id": "G37-postn-location",
+    "found": false,
+    "answer": "The supplied context does not give a spatial location for POSTN+ basal cells, only that they were present throughout gestation.",
+    "quotes": []
+  },
+  {
+    "id": "G09-wnt2fib-location",
+    "found": false,
+    "answer": "The supplied context does not state a spatial location for WNT2+ fibroblasts.",
+    "quotes": []
+  },
+  {
+    "id": "G14-dc-markers",
+    "found": true,
+    "answer": "The dermal condensate is marked by FOXD1 and SOX2.",
+    "quotes": [
+      "the Dc (FOXD1+SOX2+)"
+    ]
+  },
+  {
+    "id": "G17-matrix-markers",
+    "found": true,
+    "answer": "Hair matrix cells are marked by SHH, and SHH and WNT10B are described as known matrix markers.",
+    "quotes": [
+      "matrix (SHH+)",
+      "known matrix markers such as SHH and WNT10B, were upregulated"
+    ]
+  },
+  {
+    "id": "G08-wnt2fib-markers",
+    "found": true,
+    "answer": "Late gestation WNT2+ fibroblasts upregulate COL1A1, while early WNT2+ fibroblasts upregulate SFRP1.",
+    "quotes": [
+      "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1)",
+      "early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)"
+    ]
+  },
+  {
+    "id": "G50-dpysl2-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G53-postn-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G43-wnt2-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  }
+]

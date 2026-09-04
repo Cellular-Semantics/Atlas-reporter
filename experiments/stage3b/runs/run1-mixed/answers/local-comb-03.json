@@ -1,0 +1,57 @@
+[
+  {
+    "id": "G32-dpysl2-function",
+    "found": true,
+    "answer": "DPYSL2+ (mature) basal cells lie on the ORS/CL differentiation trajectory, where they upregulate new genes such as AGR2 and genes related to outer root sheath differentiation (BARX2 and SOX9), indicating a role in differentiating towards the outer root sheath and companion layer.",
+    "quotes": [
+      "Along the ORS/CL trajectory, we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9), (Extended Data Fig. 4b,c and Supplementary Table 7)."
+    ]
+  },
+  {
+    "id": "G38-postn-function",
+    "found": true,
+    "answer": "POSTN+ basal cells are proposed to give rise to two epidermal differentiation paths (ORS/CL and IRS trajectories), and their increased cellular migration may contribute to placode specification and dermal invagination.",
+    "quotes": [
+      "Our findings suggest that increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination.",
+      "Inferred trajectory and pseudotime analysis of epidermal cells in the integrated prenatal skin and SkO data predicted the differentiation of POSTN+ basal cells into two paths: ORS/CL trajectory, comprising DPYSL2+ basal cells, ORS and CL; and IRS trajectory, involving placode, matrix, cuticle/cortex and IRS (Fig. 2d, Extended Data Fig. 4a and Supplementary Table 7)."
+    ]
+  },
+  {
+    "id": "G29-hoxc5-location",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts are located in the upper dermis of prenatal skin and are abundant before 11 PCW.",
+    "quotes": [
+      "HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c))"
+    ]
+  },
+  {
+    "id": "G09-wnt2fib-location",
+    "found": true,
+    "answer": "WNT2+ fibroblasts are dermal fibroblasts, formed along the dermal fibroblast trajectory, and they co-locate with LYVE1+ and TML macrophages in early prenatal skin.",
+    "quotes": [
+      "the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)",
+      "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6–8 PCW) (Fig. 3c,d)"
+    ]
+  },
+  {
+    "id": "G17-matrix-markers",
+    "found": true,
+    "answer": "The matrix is annotated as SHH+, and SHH and WNT10B are described as known matrix markers.",
+    "quotes": [
+      "AGR2 was downregulated along the IRS trajectory, whereas known matrix markers such as SHH and WNT10B, were upregulated (Extended Data Fig. 4b,c and Supplementary Table 7).",
+      "which comprised placode, matrix (SHH+), outer root sheath (ORS) (SLC26A7+), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+    ]
+  },
+  {
+    "id": "G50-dpysl2-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of DPYSL2+ basal cells; it only covers their abundance over gestation and gene expression along the ORS/CL trajectory.",
+    "quotes": []
+  },
+  {
+    "id": "G53-postn-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of POSTN+ basal cells; it discusses only their presence throughout gestation, differentiation trajectories and migration-related function.",
+    "quotes": []
+  }
+]

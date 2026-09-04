@@ -1,0 +1,58 @@
+[
+  {
+    "id": "G22-lyve1-function",
+    "found": true,
+    "answer": "LYVE1+ macrophages are attributed pro-angiogenic roles (promoting sprouting angiogenesis and blood vessel morphogenesis, in close proximity to endothelial cells) and a part in maintaining prenatal skin dermal fibroblasts through growth factor interactions.",
+    "quotes": [
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1 + and TML macrophages, blood vessel morphogenesis by LYVE1 + macrophages and endothelial cell chemotaxis by iron-recycling macrophages (Extended Data Fig. 8i and Supplementary Table 27).",
+      "Our identification of additional growth factor interactions (IGF1-IGF1R and GRN-EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1 + macrophages play a part in the maintenance of prenatal skin dermal fibroblasts."
+    ]
+  },
+  {
+    "id": "G10-wnt2fib-function",
+    "found": true,
+    "answer": "WNT2+ fibroblasts are linked to extracellular matrix and collagen deposition in late gestation versus cellular growth and differentiation in early gestation, and they express senescence, cytokine and collagen-deposition genes characteristic of pathogenic fibroblasts, supporting progressive acquisition of scar-promoting programmes.",
+    "quotes": [
+      "Late gestation WNT2 + fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2 + fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)",
+      "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders 53 ."
+    ]
+  },
+  {
+    "id": "G37-postn-location",
+    "found": true,
+    "answer": "The context places POSTN+ basal cells among the epidermal basal cells and states they are present throughout gestation, unlike mature basal and suprabasal IFE cells that increase after 11 PCW; no finer spatial compartment is given.",
+    "quotes": [
+      "Mature basal (DPYSL2 + ) and suprabasal IFE cells increased after 11 PCW, whereas POSTN + basal cells were present throughout gestation (Fig. 2b and Extended Data Fig. 3b)."
+    ]
+  },
+  {
+    "id": "G14-dc-markers",
+    "found": true,
+    "answer": "The dermal condensate is defined by FOXD1 and SOX2 expression (annotated in human using orthologous marker genes from mouse), and the Dc is also reported to express FAM3C and EFNB1.",
+    "quotes": [
+      "In mice, transitional PDGFRA + FOXD1 + SOX2 low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1 + SOX2 + ), which abuts the epithelial hair placode 26,28 . Using orthologous marker genes, we annotated pre-Dc cells and the Dc in human prenatal skin 28,29 .",
+      "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1"
+    ]
+  },
+  {
+    "id": "G08-wnt2fib-markers",
+    "found": true,
+    "answer": "Beyond WNT2 in the subset name, the context reports COL1A1 upregulated in late gestation and SFRP1 in early gestation WNT2+ fibroblasts, and expression of CDKN1A, IL1R1 and POSTN by WNT2+ and PEAR1+ prenatal fibroblasts.",
+    "quotes": [
+      "Late gestation WNT2 + fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2 + fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)",
+      "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b)"
+    ]
+  },
+  {
+    "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of LYVE1+ macrophages.",
+    "quotes": []
+  },
+  {
+    "id": "G43-wnt2-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of WNT2+ fibroblasts.",
+    "quotes": []
+  }
+]

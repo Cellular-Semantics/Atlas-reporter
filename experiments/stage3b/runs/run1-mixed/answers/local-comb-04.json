@@ -1,0 +1,50 @@
+[
+  {
+    "id": "G16-dc-function",
+    "found": true,
+    "answer": "Dermal condensates initiate prenatal hair follicle formation through their interactions with epidermal placodes.",
+    "quotes": ["Prenatal HFs start forming between 11 and 14 post-conception weeks (PCW), initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts), whereas sebaceous glands develop from around 16 PCW."]
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": true,
+    "answer": "The periderm constitutes the first skin permeability barrier and is enriched in early gestation.",
+    "quotes": ["Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4)."]
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": true,
+    "answer": "LYVE1+ macrophages are predicted to co-locate with WNT2+ fibroblasts in prenatal skin, within distinct tissue microenvironments in early gestation.",
+    "quotes": [
+      "Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e) and were predicted to interact through platelet-derived growth factors (PDGFs) and corresponding receptors (PDGFRα and PDGFRβ) expressed on fibroblasts (Extended Data Fig. 7g and Supplementary Table 8).",
+      "In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation (Fig. 1d)."
+    ]
+  },
+  {
+    "id": "G39-arteriole-markers",
+    "found": true,
+    "answer": "GJA5 is given as a characteristic gene of the arteriolar pathway, which comprises capillaries, capillary arterioles and arterioles.",
+    "quotes": ["Inferred trajectory analysis showed that early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular) (Fig. 4d and Extended Data Fig. 10a–c)."]
+  },
+  {
+    "id": "G35-pear1-markers",
+    "found": false,
+    "answer": "The supplied context does not state which genes mark PEAR1+ fibroblasts; it only describes genes upregulated during the transition into them and genes shared with WNT2+ fibroblasts, not defining markers.",
+    "quotes": []
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": true,
+    "answer": "The paper describes dermal condensates structurally as aggregates of dermal fibroblasts.",
+    "quotes": ["Prenatal HFs start forming between 11 and 14 post-conception weeks (PCW), initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts), whereas sebaceous glands develop from around 16 PCW."]
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": true,
+    "answer": "Histologically the periderm is described as being seen sloughing from 11 PCW, overlying the layer of epidermal cells of early prenatal skin, and it is counted among the immature interfollicular epidermal cells.",
+    "quotes": [
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b)."
+    ]
+  }
+]

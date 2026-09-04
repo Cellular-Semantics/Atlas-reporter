@@ -1,0 +1,52 @@
+[
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "Prenatal skin fibroblasts are attributed roles in immune suppression, regulation of inflammation, and tissue regeneration, based on upregulated genes CD200, RAMP2 and MDK.",
+    "quotes": [
+      "prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200), regulation of inflammation (for example, RAMP2) and tissue regeneration (MDK)"
+    ]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The placode is a site of ligand-receptor signalling (via EPHB6, among others) that is reported to promote cell migration and invasion.",
+    "quotes": [
+      "EPHB6 on the placode, and have been reported to promote cell migration and invasion"
+    ]
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Within this context, the only macrophage subset given an explicit skin location is the TML macrophage, which was predicted to co-locate with Schwann cells in an early neurovascular microenvironment.",
+    "quotes": [
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1)"
+    ]
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": false,
+    "answer": "The supplied context does not give specific marker genes for capillary arteriole cells.",
+    "quotes": []
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not give specific marker genes for the hair placode.",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of fibroblasts.",
+    "quotes": []
+  },
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "The hair placode is described as arising via budding of basal cells, alongside germ cells, with subsequent elongation of hair follicles into hair pegs.",
+    "quotes": [
+      "budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed"
+    ]
+  }
+]

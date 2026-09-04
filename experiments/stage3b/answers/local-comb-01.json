@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G40-arteriole-function",
+    "found": false,
+    "answer": "The supplied context does not describe a function for arteriole itself; it only describes arterioles as an endpoint of the differentiation trajectory of endothelial cells.",
+    "quotes": []
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": true,
+    "answer": "The paper suggests hair matrix cells have a potential role in accumulating regulatory T cells and providing immune protection during early hair follicle differentiation, linked to their expression of chemotaxis and autoimmunity-control genes.",
+    "quotes": ["This result highlighted the potential role of Treg cell accumulation and immune protection in the early stages of matrix differentiation"]
+  },
+  {
+    "id": "G15-dc-location",
+    "found": true,
+    "answer": "The dermal condensate is found within the dermal compartment of prenatal skin, first observed from 12 PCW, and it abuts the epithelial hair placode.",
+    "quotes": ["Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW", "the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode"]
+  },
+  {
+    "id": "G02-placode-location",
+    "found": true,
+    "answer": "Hair placode arises from budding basal cells of the epidermis and appears at 14-15 PCW, prior to elongation into hair pegs (hair follicles), and is abutted by the dermal condensate below.",
+    "quotes": ["At 14–15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed"]
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": false,
+    "answer": "The supplied context does not give a list of genes that mark LYVE1+ macrophages; it only discusses their functional interactions and gene programs.",
+    "quotes": []
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of capillary arterioles; it discusses their differentiation trajectory and gene expression only.",
+    "quotes": []
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of hair matrix cells; it discusses their origin and gene expression only.",
+    "quotes": []
+  }
+]

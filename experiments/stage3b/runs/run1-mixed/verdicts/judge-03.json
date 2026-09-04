@@ -1,0 +1,16 @@
+[
+  {"arm": "whole", "id": "G30-hoxc5-function", "verdict": "correct", "why": "States the common fibroblast progenitor role and both trajectories exactly as intended."},
+  {"arm": "whole", "id": "G31-dpysl2-markers", "verdict": "correct", "why": "Gives DPYSL2 and AGR2 as the newly identified gene without claiming BARX2/SOX9 as new."},
+  {"arm": "whole", "id": "G32-dpysl2-function", "verdict": "correct", "why": "Places the cell type on the ORS/CL trajectory downstream of POSTN+ basal cells as intended."},
+  {"arm": "whole", "id": "G34-caparteriole-function", "verdict": "correct", "why": "Conveys both the further differentiation into arterioles (unlike SkO) and the raised tip-cell score."},
+  {"arm": "whole", "id": "G35-pear1-markers", "verdict": "correct", "why": "Names PEAR1 plus the pro-inflammatory APOE/IGFBP7/ITM2A set, with supported extra genes."},
+  {"arm": "whole", "id": "G36-pear1-function", "verdict": "correct", "why": "Captures the later-gestation dermal endpoint with adult pro-inflammatory, senescence and collagen genes."},
+  {"arm": "whole", "id": "G38-postn-function", "verdict": "correct", "why": "Gives both the ORS/CL and IRS trajectory origin and the migration/placode-invagination role."},
+  {"arm": "whole", "id": "G39-arteriole-markers", "verdict": "correct", "why": "Identifies GJA5 as the characteristic arteriolar gene, correctly attributed to the arteriolar pathway."},
+  {"arm": "whole", "id": "G40-arteriole-function", "verdict": "correct", "why": "States the arteriolar pathway endpoint and the sprouting angiogenesis tip-cell scoring."},
+  {"arm": "whole", "id": "G41-cuticle-location", "verdict": "correct", "why": "Correctly places cuticle/cortex in the inner layers of the hair follicle."},
+  {"arm": "whole", "id": "G45-dermal-condensate-structure-absent", "verdict": "overreach", "why": "Presents aggregation and encapsulation as a morphological description rather than declining."},
+  {"arm": "whole", "id": "G55-cuticle-cortex-structure-absent", "verdict": "correct", "why": "Notes the statement is merely positional and says no morphological detail is given."},
+  {"arm": "local", "id": "G01-placode-structure", "verdict": "correct", "why": "Describes the focal epidermal thickening and basal cell budding as intended."},
+  {"arm": "local", "id": "G02-placode-location", "verdict": "correct", "why": "Places the placode in the epidermis at focal thickenings abutted from below by the dermal condensate."}
+]

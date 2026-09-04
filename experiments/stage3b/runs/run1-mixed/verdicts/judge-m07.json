@@ -1,0 +1,16 @@
+[
+{"arm": "asta-comb", "id": "G21-lyve1-location", "verdict": "correct", "why": "Names both endothelial-cell proximity and WNT2+ fibroblast co-location in the dermis."},
+{"arm": "asta-comb", "id": "G22-lyve1-function", "verdict": "correct", "why": "Covers sprouting angiogenesis, vessel morphogenesis and fibroblast maintenance via growth factor and GAS6-AXL interactions."},
+{"arm": "asta-comb", "id": "G24-fibroblast-location", "verdict": "correct", "why": "Places fibroblasts in the dermis and HOXC5+ early fibroblasts in the upper dermis; omitting Dc/Dp is an accurate partial."},
+{"arm": "asta-comb", "id": "G25-fibroblast-function", "verdict": "correct", "why": "States the downregulation of ECM, collagen and inflammation genes favouring regeneration over scarring."},
+{"arm": "asta-comb", "id": "G26-periderm-location", "verdict": "correct", "why": "Epidermal layer overlying dermal stroma, present from 7 PCW, sloughing from 11 PCW."},
+{"arm": "asta-comb", "id": "G28-periderm-structure", "verdict": "correct", "why": "Gives the layer description and the sloughing observation, matching the thin intended answer."},
+{"arm": "asta-comb", "id": "G29-hoxc5-location", "verdict": "correct", "why": "Upper dermis, as intended."},
+{"arm": "asta-comb", "id": "G30-hoxc5-function", "verdict": "correct", "why": "Identifies the common progenitor role and both hair and dermal fibroblast trajectories."},
+{"arm": "asta-comb", "id": "G31-dpysl2-markers", "verdict": "correct", "why": "Gives DPYSL2 and AGR2 as the newly identified gene without claiming BARX2/SOX9 as new markers."},
+{"arm": "asta-comb", "id": "G32-dpysl2-function", "verdict": "correct", "why": "Places the cells on the ORS/CL trajectory downstream of POSTN+ basal cells and attributes BARX2/SOX9 correctly as ORS differentiation genes."},
+{"arm": "asta-comb", "id": "G34-caparteriole-function", "verdict": "correct", "why": "Notes further differentiation into arterioles unlike SkO cells, plus the tip-cell sprouting state."},
+{"arm": "asta-comb", "id": "G35-pear1-markers", "verdict": "correct", "why": "PEAR1 plus APOE, IGFBP7, ITM2A upregulated in the HOXC5+ transition as a pro-inflammatory phenotype."},
+{"arm": "asta-comb", "id": "G36-pear1-function", "verdict": "correct", "why": "Late-gestation dermal endpoint with adult pro-inflammatory, senescence and collagen deposition profile."},
+{"arm": "asta-comb", "id": "G38-postn-function", "verdict": "correct", "why": "Origin of both ORS/CL and IRS trajectories, with increased migration linked to placode specification and dermal invagination."}
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "The paper attributes to macrophages roles in scarless skin repair, fibroblast homeostasis, and neurovascular development, including validated contributions to vascular network formation.",
+    "quotes": [
+      "Our atlas indicated that macrophages contribute to scarless skin repair, fibroblast homeostasis and neurovascular development.",
+      "We used a hair-bearing SkO model to validate the role of macrophages in prenatal skin vascular network formation."
+    ]
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": true,
+    "answer": "Cuticle/cortex cells are part of the inner layers of the hair follicle (HF).",
+    "quotes": [
+      "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+    ]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "The periderm is an immature interfollicular epidermal (IFE) cell type forming the outer epidermal layer overlying the dermal stroma in early prenatal skin, and it sloughs off from 11 PCW.",
+    "quotes": [
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b).",
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a)."
+    ]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": false,
+    "answer": "The supplied context does not say. It only lists markers for specific fibroblast subsets (e.g. HOXC5+, WNT2+, PEAR1+, FRZB+), not a generic fibroblast marker.",
+    "quotes": []
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "G16-dc-function",
+    "found": true,
+    "answer": "The Dc expresses FAM3C and EFNB1, predicted to interact with receptors on the placode (LAMP1/CXADR and EPHB6), interactions reported to promote cell migration and invasion during HF invagination.",
+    "quotes": ["The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion"]
+  },
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "Macrophages are attributed roles in scarless skin repair, fibroblast homeostasis, and neurovascular (angiogenesis and nerve) development in prenatal skin.",
+    "quotes": ["Our atlas indicated that macrophages contribute to scarless skin repair, fibroblast homeostasis and neurovascular development."]
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": true,
+    "answer": "The periderm constitutes the first permeability barrier of the skin.",
+    "quotes": ["neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation"]
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": true,
+    "answer": "Cuticle/cortex cells are part of the inner layers of the hair follicle.",
+    "quotes": ["cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"]
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": true,
+    "answer": "LYVE1+ macrophages co-locate with WNT2+ fibroblasts, and were also shown by imaging to lie in close proximity to endothelial cells.",
+    "quotes": ["LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e)", "multiplex RNAscope and immunofluorescence staining showed LYVE1+ and TML macrophages in close proximity to endothelial cells (Fig. 4a and Supplementary Video 1)"]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "Periderm is one of the immature interfollicular epidermal cell types present from 7 PCW, and it sloughs off starting at 11 PCW.",
+    "quotes": ["Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin", "with the periderm seen sloughing from 11 PCW"]
+  },
+  {
+    "id": "G39-arteriole-markers",
+    "found": true,
+    "answer": "GJA5 is given as the characteristic gene for the arteriolar pathway.",
+    "quotes": ["with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": false,
+    "answer": "The supplied context does not give marker genes for fibroblasts as a general cell type (only for specific fibroblast subsets).",
+    "quotes": []
+  },
+  {
+    "id": "G35-pear1-markers",
+    "found": true,
+    "answer": "PEAR1+ fibroblasts are defined by PEAR1, and genes such as APOE, IGFBP7 and ITM2A are upregulated during the transition into this state.",
+    "quotes": ["the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)", "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A), were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts"]
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of arterioles, only their differentiation pathway and marker genes.",
+    "quotes": []
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": true,
+    "answer": "The paper states that following HF invagination, the dermal condensate becomes encapsulated at its base as it forms the dermal papilla.",
+    "quotes": ["Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+)"]
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of macrophages.",
+    "quotes": []
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": true,
+    "answer": "The periderm is described as sloughing off from 11 PCW, a structural/morphological change in the epidermal layer.",
+    "quotes": ["with the periderm seen sloughing from 11 PCW"]
+  }
+]

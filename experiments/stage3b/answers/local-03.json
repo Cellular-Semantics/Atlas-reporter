@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G32-dpysl2-function",
+    "found": true,
+    "answer": "DPYSL2+ basal cells lie along the ORS/CL differentiation trajectory, downstream of POSTN+ basal cells, contributing to formation of the outer root sheath and companion layer.",
+    "quotes": ["ORS/CL trajectory, comprising DPYSL2+ basal cells, ORS and CL"]
+  },
+  {
+    "id": "G38-postn-function",
+    "found": true,
+    "answer": "POSTN+ basal cells show increased cellular migration that may be involved in placode specification and dermal invagination.",
+    "quotes": ["Our findings suggest that increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination."]
+  },
+  {
+    "id": "G29-hoxc5-location",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts are located in the upper dermis.",
+    "quotes": ["HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c))"]
+  },
+  {
+    "id": "G09-wnt2fib-location",
+    "found": false,
+    "answer": "The supplied context does not give a spatial location for WNT2+ fibroblasts, only their temporal abundance and gene expression.",
+    "quotes": []
+  },
+  {
+    "id": "G17-matrix-markers",
+    "found": true,
+    "answer": "The paper identifies SHH and WNT10B as known markers of the hair matrix.",
+    "quotes": ["known matrix markers such as SHH and WNT10B, were upregulated"]
+  },
+  {
+    "id": "G50-dpysl2-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of DPYSL2+ basal cells.",
+    "quotes": []
+  },
+  {
+    "id": "G53-postn-plus-basal-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of POSTN+ basal cells.",
+    "quotes": []
+  }
+]

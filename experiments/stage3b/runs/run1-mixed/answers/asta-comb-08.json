@@ -1,0 +1,50 @@
+[
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "Macrophages are attributed non-immune developmental roles in prenatal skin: driving angiogenesis and vascular network formation through communication with endothelial cells, supporting establishment of the skin peripheral nervous system via interaction with Schwann cells, and contributing to scarless healing and wound closure alongside fibroblasts. Antigen presentation is suggested not to be a key early function.",
+    "quotes": [
+      "Gene ontology analysis showed that the four macrophage subsets (LYVE1 + , MHCII + , TML and iron-recycling) expressed gene programs that drive angiogenesis (Supplementary Tables 23-26).",
+      "Our data suggested that macrophages contribute to prenatal skin angiogenesis.",
+      "These findings suggest that prenatal skin macrophages may support the establishment of the skin peripheral nervous system during early gestation, as previously reported in mouse skin 65 .",
+      "Based on our data and previous studies, we also posit a potential role for early skin macrophages in conferring the distinct property of scarless healing in early prenatal skin.",
+      "Using a scratch assay of SkO-derived fibroblasts cultured with or without iPS cell-derived macrophages, we demonstrated that scratch wound width closure was improved when fibroblasts were co-cultured with macrophages over 72 h (Extended Data Fig. 8g)."
+    ]
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": true,
+    "answer": "Cuticle and cortex cells are hair follicle cells forming part of the inner layers of the follicle, identified in the scRNA-seq data from 14 PCW; they lie on the inner root sheath differentiation trajectory.",
+    "quotes": [
+      "Consistent with our histological observations, we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH + ), outer root sheath (ORS) (SLC26A7 + ), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a-c, Extended Data Fig. 3a,b and Supplementary Table 6).",
+      "IRS trajectory, involving placode, matrix, cuticle/cortex and IRS (Fig. 2d, Extended Data Fig. 4a and Supplementary Table 7)"
+    ]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "The periderm is an immature interfollicular epidermal cell state in the epidermal layer overlying the dermal stroma; it is present from 7 PCW and is seen sloughing off from 11 PCW.",
+    "quotes": [
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b)."
+    ]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": false,
+    "answer": "The supplied context does not give marker genes for fibroblasts. It names genes differentially expressed between prenatal and adult fibroblasts (CD200, RAMP2, MDK) and genes defining hair-follicle-specialized subsets in mouse, but no fibroblast marker set.",
+    "quotes": []
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of arterioles; it covers their position in the endothelial differentiation trajectory and characteristic gene expression only.",
+    "quotes": []
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of macrophages; it covers their gene programs, co-location with other cell types, and functional roles.",
+    "quotes": []
+  }
+]

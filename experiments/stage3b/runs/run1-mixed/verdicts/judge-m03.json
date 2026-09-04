@@ -1,0 +1,16 @@
+[
+  {"arm": "asta-sep", "id": "G01-placode-structure", "verdict": "correct", "why": "Captures the budding of basal cells and the invagination accompanying dermal condensate formation."},
+  {"arm": "asta-sep", "id": "G02-placode-location", "verdict": "correct", "why": "Places the placode in the epidermis as a basal-cell bud, matching the intended location."},
+  {"arm": "asta-sep", "id": "G03-placode-function", "verdict": "correct", "why": "Names the main point - the placode is the epithelial partner instructing early hair follicle formation - accurate though partial."},
+  {"arm": "asta-sep", "id": "G05-macrophage-markers", "verdict": "correct", "why": "Correctly notes there is no pan-macrophage panel and gives subset-level markers, as the hazard anticipates."},
+  {"arm": "asta-sep", "id": "G06-macrophage-location", "verdict": "correct", "why": "Reports co-location with fibroblasts and Schwann cells in ME1; partial but accurate."},
+  {"arm": "asta-sep", "id": "G07-macrophage-function", "verdict": "correct", "why": "Covers angiogenesis, fibroblast maintenance and peripheral nervous system support as intended."},
+  {"arm": "asta-sep", "id": "G08-wnt2fib-markers", "verdict": "correct", "why": "Gives COL1A1, SFRP1, CDKN1A, IL1R1 and POSTN alongside WNT2, matching the intended set."},
+  {"arm": "asta-sep", "id": "G09-wnt2fib-location", "verdict": "correct", "why": "Reports co-location with LYVE1+ macrophages and flags the absence of a compartment statement; accurate as far as it goes."},
+  {"arm": "asta-sep", "id": "G10-wnt2fib-function", "verdict": "correct", "why": "Matches the late/early ECM-versus-growth contrast and the senescent, pro-inflammatory drift."},
+  {"arm": "asta-sep", "id": "G11-tml-markers", "verdict": "correct", "why": "TREM2 with P2RY12, CX3CR1, OLFML3 and GAS6, exactly as intended."},
+  {"arm": "asta-sep", "id": "G12-tml-location", "verdict": "correct", "why": "Reports both co-locations (WNT2+ fibroblasts at 6-8 PCW and Schwann cells in ME1)."},
+  {"arm": "asta-sep", "id": "G13-tml-function", "verdict": "correct", "why": "Includes sprouting angiogenesis and the Schwann cell synapse/axon-guidance interactions."},
+  {"arm": "asta-sep", "id": "G14-dc-markers", "verdict": "correct", "why": "FOXD1/SOX2 identity plus FAM3C and EFNB1 match the intended markers."},
+  {"arm": "asta-sep", "id": "G15-dc-location", "verdict": "correct", "why": "Dermal compartment from 12 PCW abutting the placode, matching the intended answer."}
+]

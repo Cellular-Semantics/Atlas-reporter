@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G40-arteriole-function",
+    "found": true,
+    "answer": "Prenatal skin arterioles are among the endothelial cell types scored as having increased sprouting angiogenesis ('tip' cell state) potential, i.e. a role in new blood vessel formation.",
+    "quotes": ["However, sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h)."]
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": true,
+    "answer": "Prenatal hair matrix cells are attributed a chemotactic/immune-recruiting role: they upregulate chemotaxis genes such as CXCL14 (which recruits regulatory T cells) and CD24, suggesting they promote Treg accumulation and immune protection during early matrix differentiation.",
+    "quotes": ["Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (T reg ) cells 21 , and in control of autoimmunity (CD24) 22 .", "This result highlighted the potential role of T reg cell accumulation and immune protection in the early stages of matrix differentiation (Extended Data Fig. 3f)."]
+  },
+  {
+    "id": "G15-dc-location",
+    "found": true,
+    "answer": "The dermal condensate lies in the dermal compartment of prenatal skin from 12 PCW, adjacent to (abutting) the epithelial hair placode, and after hair follicle invagination it becomes encapsulated at the follicle base as the dermal papilla.",
+    "quotes": ["Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c).", "Following HF invagination, the Dc becomes encapsulated at its base as the Dp"]
+  },
+  {
+    "id": "G02-placode-location",
+    "found": true,
+    "answer": "The hair placode is found in the epidermis as a bud of basal cells, observed histologically at 14-15 PCW, and placode cells were captured in the hair follicle scRNA-seq data from 14 PCW.",
+    "quotes": ["At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a).", "Consistent with our histological observations, we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH + ), outer root sheath (ORS) (SLC26A7 + ), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"]
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": true,
+    "answer": "The supplied context gives no marker gene list for this subset beyond the defining LYVE1 label; the only gene it explicitly states is expressed by LYVE1+ macrophages is GAS6.",
+    "quotes": ["Additionally, GAS6, expressed by TML macrophages and LYVE1 + macrophages, was predicted to interact with AXL receptors on WNT2 + fibroblasts"]
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of capillary arterioles; it only discusses their differentiation trajectory and gene/regulon expression.",
+    "quotes": []
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of hair matrix cells.",
+    "quotes": []
+  }
+]

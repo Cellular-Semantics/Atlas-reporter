@@ -1,0 +1,52 @@
+[
+  {
+    "id": "G34-caparteriole-function",
+    "found": true,
+    "answer": "In prenatal skin, capillary arteriole cells are able to further differentiate into arterioles (unlike in the SkO model), and they show increased sprouting angiogenesis potential as assessed by a 'tip' cell state score.",
+    "quotes": [
+      "Unlike SkO capillary arteriole cells, prenatal skin capillary arteriole cells could further differentiate into arterioles (Fig. 4d and Extended Data Fig. 10a).",
+      "However, sprouting angiogenesis potential, assessed by scoring the ‘tip’ cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h)."
+    ]
+  },
+  {
+    "id": "G36-pear1-function",
+    "found": false,
+    "answer": "The supplied context does not say. It describes PEAR1+ fibroblasts in terms of gene expression changes (senescence, cytokine pathway, collagen deposition genes) and their emergence after 11 PCW, but does not state a specific function attributed to them.",
+    "quotes": []
+  },
+  {
+    "id": "G24-fibroblast-location",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts, a fibroblast progenitor population, are located in the upper dermis.",
+    "quotes": [
+      "Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7)."
+    ]
+  },
+  {
+    "id": "G12-tml-location",
+    "found": true,
+    "answer": "TML macrophages co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW) and with Schwann cells in the 'early neurovascular microenvironment' (ME1) of prenatal skin.",
+    "quotes": [
+      "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6–8 PCW) (Fig. 3c,d) and WNT2+ fibroblasts had downregulated IL6 expression compared with adult fibroblasts (Fig. 3a).",
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin (‘early neurovascular microenvironment’, ME1) (Figs. 1d and 3g) and expressed genes related to cell migration and neural development (Fig. 3f, Extended Data Fig. 8c and Supplementary Tables 22 and 23), which mirrored the functions of brain microglia and peripheral nerve-associated macrophages in mouse skin."
+    ]
+  },
+  {
+    "id": "G05-macrophage-markers",
+    "found": false,
+    "answer": "The supplied context does not say. It states that macrophages express a range of pro-inflammatory genes without naming specific general macrophage marker genes; the specific genes given (for example, P2RY12, CX3CR1, OLFML3) are attributed to the TREM2+ microglia-like subset, not macrophages generally.",
+    "quotes": []
+  },
+  {
+    "id": "G55-cuticle-cortex-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say. It notes cuticle/cortex cells are part of the inner layers of the hair follicle, but does not describe their structure or morphology.",
+    "quotes": []
+  },
+  {
+    "id": "G52-pear1-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  }
+]

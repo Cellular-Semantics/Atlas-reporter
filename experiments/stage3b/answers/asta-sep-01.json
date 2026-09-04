@@ -1,0 +1,56 @@
+[
+  {
+    "id": "G40-arteriole-function",
+    "found": false,
+    "answer": "The supplied context does not attribute a specific function to arteriole cells themselves; it discusses their differentiation trajectory and marker genes but no functional role.",
+    "quotes": []
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": true,
+    "answer": "The paper reports that prenatal skin matrix cells have increased expression of chemotaxis genes such as CXCL14 (a chemokine that recruits regulatory T cells) and CD24 (involved in control of autoimmunity), suggesting a role in Treg cell recruitment and immune protection during matrix differentiation.",
+    "quotes": [
+      "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (T reg ) cells 21 , and in control of autoimmunity (CD24) 22 .",
+      "This result highlighted the potential role of T reg cell accumulation and immune protection in the early stages of matrix differentiation (Extended Data Fig. 3f)."
+    ]
+  },
+  {
+    "id": "G15-dc-location",
+    "found": true,
+    "answer": "The dermal condensate is found within the dermal compartment of prenatal skin, from 12 PCW, and abuts the epithelial hair placode.",
+    "quotes": [
+      "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c).",
+      "which abuts the epithelial hair placode 26,28"
+    ]
+  },
+  {
+    "id": "G02-placode-location",
+    "found": true,
+    "answer": "The hair placode arises from budding of basal cells in the epidermis at 14-15 PCW, and it is abutted by the dermal condensate.",
+    "quotes": [
+      "At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a).",
+      "which abuts the epithelial hair placode 26,28"
+    ]
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": true,
+    "answer": "The paper identifies LYVE1+ macrophages by LYVE1 protein expression, using anti-LYVE1 immunofluorescence/RNAscope staining alongside other markers such as CD45 and CD31 to detect these cells.",
+    "quotes": [
+      "n = 1 biological replicate with n = 2 technical replicates for immunofluorescence slides with anti-LYVE1, anti-CD45 and anti-VIM (Fig. 3e)",
+      "n = 3 biological replicates for prenatal skin whole-mount immunofluorescence with anti-CD31 and anti-LYVE1 (Fig. 4a)"
+    ]
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of capillary arteriole cells; it only discusses their differentiation trajectory, gene expression and receptor signalling.",
+    "quotes": []
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of hair matrix cells; it only discusses their gene expression, origin, and interactions.",
+    "quotes": []
+  }
+]

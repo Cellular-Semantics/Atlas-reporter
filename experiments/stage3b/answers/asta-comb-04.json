@@ -1,0 +1,53 @@
+[
+  {
+    "id": "G16-dc-function",
+    "found": false,
+    "answer": "The supplied context does not state a specific function for the dermal condensate; it only describes how pre-Dc cells aggregate to form the Dc and its spatial relationship to the hair placode.",
+    "quotes": []
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": false,
+    "answer": "The supplied context does not attribute a specific function to periderm; it only describes it as an immature IFE cell type present from 7 PCW that sloughs from 11 PCW.",
+    "quotes": []
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": true,
+    "answer": "LYVE1+ macrophages are found in close proximity to endothelial cells, as shown by RNAscope and immunofluorescence staining.",
+    "quotes": [
+      "multiplex RNAscope and immunofluorescence staining showed LYVE1 + and TML macrophages in close proximity to endothelial cells (Fig. 4a and Supplementary Video 1)."
+    ]
+  },
+  {
+    "id": "G39-arteriole-markers",
+    "found": true,
+    "answer": "GJA5 is given as the characteristic gene marking the arteriolar pathway.",
+    "quotes": [
+      "with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"
+    ]
+  },
+  {
+    "id": "G35-pear1-markers",
+    "found": true,
+    "answer": "PEAR1+ fibroblasts are marked by upregulation of APOE, IGFBP7 and ITM2A (pro-inflammatory phenotype genes), and express CDKN1A, IL1R1 and POSTN.",
+    "quotes": [
+      "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A) 43,52 were also upregulated during the transition from HOXC5 + fibroblasts into PEAR1 + fibroblasts",
+      "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)"
+    ]
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of the dermal condensate itself; it describes its formation from pre-Dc cells and its spatial relationship to the placode and dermal papilla, not its physical structure.",
+    "quotes": []
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": true,
+    "answer": "Periderm is described as part of a layer of epidermal cells overlying the dermal stroma in early prenatal skin, which sloughs from 11 PCW.",
+    "quotes": [
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a)."
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "G34-caparteriole-function",
+    "found": true,
+    "answer": "Capillary arterioles are an intermediate stage of the arteriolar endothelial pathway that in prenatal skin can differentiate further into arterioles, and they carry sprouting-angiogenesis potential ('tip' cell state); in the organoid they express the sprouting signature but fail to guide stalk cells for new vessel formation, with VEGF receptors KDR and FLT1 and the GATA2 regulon downregulated.",
+    "quotes": [
+      "Unlike SkO capillary arteriole cells, prenatal skin capillary arteriole cells could further differentiate into arterioles (Fig. 4d and Extended Data Fig. 10a).",
+      "However, sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h). This suggests that despite strong expression of the sprouting angiogenesis gene signature, SkO capillary arteriole cells are unable to guide stalk cells for new blood vessel formation."
+    ]
+  },
+  {
+    "id": "G36-pear1-function",
+    "found": true,
+    "answer": "PEAR1+ fibroblasts are a late-gestation dermal fibroblast subset that acquires an adult-like, pro-inflammatory and scar-promoting profile, expressing senescence (CDKN1A), cytokine (IL1R1) and collagen deposition (POSTN) genes found in pathogenic fibroblasts of fibrotic skin disorders. They arise from HOXC5+ early fibroblasts along the dermal fibroblast trajectory.",
+    "quotes": [
+      "The adult fibroblast gene expression profile was increased in WNT2 + and PEAR1 + prenatal fibroblasts, which were abundant in later gestation (Fig. 3a and Extended Data Figs. 3c and 7b). Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A) 43,52 were also upregulated during the transition from HOXC5 + fibroblasts into PEAR1 + fibroblasts (Extended Data Fig. 7c).",
+      "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders 53 ."
+    ]
+  },
+  {
+    "id": "G24-fibroblast-location",
+    "found": true,
+    "answer": "Fibroblasts occupy the dermis of prenatal skin (the dermal stroma), where they are analysed as dermal fibroblast subsets; HOXC5+ early fibroblasts specifically are located in the upper dermis.",
+    "quotes": [
+      "To identify the cellular and molecular mechanisms that may endow early prenatal skin with scarless healing properties, we investigated the temporal changes in composition and transcriptional profile of the dermal fibroblast subsets (Extended Data Figs. 3c and 7a).",
+      "Inferred trajectory analysis predicted that HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2 + fibroblasts and PEAR1 + fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7)."
+    ]
+  },
+  {
+    "id": "G12-tml-location",
+    "found": true,
+    "answer": "TML macrophages are predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW) and with Schwann cells in the 'early neurovascular microenvironment' (ME1); macrophages more generally were predicted to co-locate with endothelial cells in microenvironments ME1 and ME5.",
+    "quotes": [
+      "TML macrophages were predicted to co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW) (Fig. 3c,d) and WNT2 + fibroblasts had downregulated IL6 expression compared with adult fibroblasts (Fig. 3a).",
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1) (Figs. 1d and 3g) and expressed genes related to cell migration and",
+      "Consistent with this finding, multiplex RNAscope and immunofluorescence staining showed LYVE1 + and TML macrophages in close proximity to endothelial cells (Fig. 4a and Supplementary Video 1)."
+    ]
+  },
+  {
+    "id": "G05-macrophage-markers",
+    "found": false,
+    "answer": "The supplied context does not give marker genes for macrophages; it names four subsets (LYVE1+, MHCII+, TML and iron-recycling) and refers to marker genes used for annotation without listing them.",
+    "quotes": []
+  },
+  {
+    "id": "G55-cuticle-cortex-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of cuticle/cortex cells; it only places them on the IRS differentiation trajectory and notes they are part of the inner layers of the hair follicle.",
+    "quotes": []
+  },
+  {
+    "id": "G52-pear1-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context says nothing about the structure or morphology of PEAR1+ fibroblasts; it covers only their gene expression, abundance across gestation and differentiation origin.",
+    "quotes": []
+  }
+]

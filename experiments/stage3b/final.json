@@ -1,0 +1,4062 @@
+[
+ {
+  "arm": "blind",
+  "id": "G01-placode-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G02-placode-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G03-placode-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G04-placode-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G05-macrophage-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G06-macrophage-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G07-macrophage-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G08-wnt2fib-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G09-wnt2fib-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G10-wnt2fib-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G11-tml-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G12-tml-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G13-tml-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G14-dc-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G15-dc-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G16-dc-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G17-matrix-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G18-matrix-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G19-matrix-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G20-lyve1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G21-lyve1-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G22-lyve1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G23-fibroblast-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G24-fibroblast-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G25-fibroblast-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G26-periderm-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G27-periderm-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G28-periderm-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G29-hoxc5-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G30-hoxc5-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G31-dpysl2-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G32-dpysl2-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G33-caparteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G34-caparteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G35-pear1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G36-pear1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G37-postn-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G38-postn-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G39-arteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G40-arteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G41-cuticle-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G42-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G43-wnt2-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G44-tml-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G45-dermal-condensate-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G46-matrix-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G48-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G50-dpysl2-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G51-capillary-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G52-pear1-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G53-postn-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G54-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "blind",
+  "id": "G55-cuticle-cortex-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "No context is supplied for this batch.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G01-placode-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper describes hair placodes as focal sites of epidermal layer thickening.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)"
+  ],
+  "judge_why": "Names focal epidermal thickening, the main structural point, though it omits budding and invagination."
+ },
+ {
+  "arm": "whole",
+  "id": "G02-placode-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Hair placodes are focal sites of epidermal layer thickening, situated in the epidermis where they interact with underlying dermal condensates.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)"
+  ],
+  "judge_why": "Places the placode in the epidermis at focal thickenings with underlying dermal condensate, as intended."
+ },
+ {
+  "arm": "whole",
+  "id": "G03-placode-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The placode expresses receptors (LAMP1/CXADR and EPHB6) for Dc-derived FAM3C and EFNB1, interactions reported to promote cell migration and invasion.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion, (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8)."
+  ],
+  "judge_why": "Quote is real but the answer describes Dc-to-placode ligand signalling rather than the placode's role in initiating hair follicle formation."
+ },
+ {
+  "arm": "whole",
+  "id": "G04-placode-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G05-macrophage-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Macrophage subsets are marked by LYVE1, MHCII, TML (TREM2+), and iron-recycling markers.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the four macrophage subsets (LYVE1+, MHCII+, TML and iron-recycling) expressed gene programs that drive angiogenesis"
+  ],
+  "judge_why": "Correctly treats the broad label as four subsets and names their defining markers, accurate as far as it goes."
+ },
+ {
+  "arm": "whole",
+  "id": "G06-macrophage-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Macrophages co-locate with endothelial and neural cells within 'early and late neurovascular microenvironments' in prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Macrophages co-located with endothelial and neural cells in 'early and late neurovascular microenvironments' (ME1 and ME5, respectively), whereas pre-dermal condensate (pre-Dc) cells co-located with dendritic and lymphoid cells based on correlation analyses (Fig. 1d and Extended Data Fig. 1e,f)."
+  ],
+  "judge_why": "Gives the neurovascular microenvironment co-location accurately, missing only the 6 PCW seeding detail."
+ },
+ {
+  "arm": "whole",
+  "id": "G07-macrophage-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Macrophages are attributed roles in scarless skin repair, fibroblast homeostasis, and neurovascular (angiogenesis and nerve) development in prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Our atlas indicated that macrophages contribute to scarless skin repair, fibroblast homeostasis and neurovascular development."
+  ],
+  "judge_why": "Matches the intended scarless repair, fibroblast homeostasis and neurovascular development roles."
+ },
+ {
+  "arm": "whole",
+  "id": "G08-wnt2fib-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Late gestation WNT2+ fibroblasts upregulate COL1A1, while early WNT2+ fibroblasts upregulate SFRP1.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1)",
+   "early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)"
+  ],
+  "judge_why": "Correctly reports the late COL1A1 versus early SFRP1 split, a partial but accurate marker answer."
+ },
+ {
+  "arm": "whole",
+  "id": "G09-wnt2fib-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not state a spatial location for WNT2+ fibroblasts.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G10-wnt2fib-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not explicitly attribute a function to WNT2+ fibroblasts; it only describes genes they upregulate at different gestational stages.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G11-tml-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages are marked by TREM2, and share an expression profile with P2RY12, CX3CR1 and OLFML3; they also co-express CX3CR1 and SYT11.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "yolk-sac derived TREM2+ macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages",
+   "co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11)"
+  ],
+  "judge_why": "Names TREM2 with P2RY12, CX3CR1 and OLFML3 as intended."
+ },
+ {
+  "arm": "whole",
+  "id": "G12-tml-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages are predicted to co-locate with WNT2+ fibroblasts in early prenatal skin and with Schwann cells in the 'early neurovascular microenvironment' (ME1).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW)",
+   "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1)"
+  ],
+  "judge_why": "Reports co-location with WNT2+ fibroblasts and Schwann cells in ME1 as intended."
+ },
+ {
+  "arm": "whole",
+  "id": "G13-tml-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages are attributed roles in promoting sprouting angiogenesis and in interacting with Schwann cells to support synapse formation and axon guidance.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages",
+   "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance"
+  ],
+  "judge_why": "Captures sprouting angiogenesis plus Schwann cell interaction for synapse formation and axon guidance."
+ },
+ {
+  "arm": "whole",
+  "id": "G14-dc-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The dermal condensate is marked by FOXD1 and SOX2.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the Dc (FOXD1+SOX2+)"
+  ],
+  "judge_why": "FOXD1 and SOX2 are the intended Dc markers."
+ },
+ {
+  "arm": "whole",
+  "id": "G15-dc-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The dermal condensate is found within the dermal compartment, observed from 12 PCW alongside other HF-specialized fibroblasts and the dermal papilla.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c)."
+  ],
+  "judge_why": "Dermal compartment from 12 PCW matches the intended location."
+ },
+ {
+  "arm": "whole",
+  "id": "G16-dc-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The Dc expresses FAM3C and EFNB1, predicted to interact with receptors on the placode (LAMP1/CXADR and EPHB6), interactions reported to promote cell migration and invasion during HF invagination.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion"
+  ],
+  "judge_why": "Reports the FAM3C/EFNB1 migration and invasion role during placode invagination, part of the intended answer."
+ },
+ {
+  "arm": "whole",
+  "id": "G17-matrix-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Hair matrix cells are marked by SHH, and SHH and WNT10B are described as known matrix markers.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "matrix (SHH+)",
+   "known matrix markers such as SHH and WNT10B, were upregulated"
+  ],
+  "judge_why": "Correctly identifies hair matrix markers SHH and WNT10B, not the extracellular-matrix sense."
+ },
+ {
+  "arm": "whole",
+  "id": "G18-matrix-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Hair matrix cells are located overlying the dermal papilla (Dp).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "RSPO3 from the Dp was predicted to interact with LGR4 and LGR6 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8) in overlying matrix cells to contribute to the proliferation of HF epithelial cells."
+  ],
+  "judge_why": "Placing matrix cells overlying the dermal papilla is an accurate in-follicle location supported by the quote."
+ },
+ {
+  "arm": "whole",
+  "id": "G19-matrix-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Matrix cells are predicted to receive RSPO3 signalling from the dermal papilla via LGR4/LGR6, contributing to proliferation of HF epithelial cells.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "Finally, RSPO3 from the Dp was predicted to interact with LGR4 and LGR6 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8) in overlying matrix cells to contribute to the proliferation of HF epithelial cells."
+  ],
+  "judge_why": "Grounded quote but answers with RSPO3-LGR proliferation signalling instead of the intended chemotaxis and immune-protection role."
+ },
+ {
+  "arm": "whole",
+  "id": "G20-lyve1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "GAS6 is expressed by LYVE1+ macrophages, according to the supplied context.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair,."
+  ],
+  "judge_why": "GAS6 is one of the intended markers and body-text marker evidence is thin, so the partial answer stands."
+ },
+ {
+  "arm": "whole",
+  "id": "G21-lyve1-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "LYVE1+ macrophages co-locate with WNT2+ fibroblasts, and were also shown by imaging to lie in close proximity to endothelial cells.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c-e)",
+   "multiplex RNAscope and immunofluorescence staining showed LYVE1+ and TML macrophages in close proximity to endothelial cells (Fig. 4a and Supplementary Video 1)"
+  ],
+  "judge_why": "Co-location with WNT2+ fibroblasts and proximity to endothelial cells match the intended answer."
+ },
+ {
+  "arm": "whole",
+  "id": "G22-lyve1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "LYVE1+ macrophages are proposed to help maintain dermal fibroblasts via growth factor signalling, and their gene expression programme is associated with blood vessel morphogenesis and sprouting angiogenesis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts",
+   "blood vessel morphogenesis by LYVE1+ macrophages"
+  ],
+  "judge_why": "Covers fibroblast maintenance plus blood vessel morphogenesis and sprouting angiogenesis."
+ },
+ {
+  "arm": "whole",
+  "id": "G23-fibroblast-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not give marker genes for fibroblasts as a general cell type (only for specific fibroblast subsets).",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G24-fibroblast-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Fibroblasts are found within the dermal compartment, including HOXC5+ early fibroblasts located in the upper dermis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW.",
+   "HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f)"
+  ],
+  "judge_why": "Dermal compartment with HOXC5+ fibroblasts in the upper dermis matches the intended answer."
+ },
+ {
+  "arm": "whole",
+  "id": "G25-fibroblast-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper attributes collagen production to dermal fibroblasts, noting that aggregation of this collagen (along with failed epidermal regeneration) is what produces scars.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate."
+  ],
+  "judge_why": "Quote is real background about scarring but the answer is a different claim than the paper's finding on early fibroblast downregulation of ECM and inflammation."
+ },
+ {
+  "arm": "whole",
+  "id": "G26-periderm-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Periderm is one of the immature interfollicular epidermal cell types present from 7 PCW, and it sloughs off starting at 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin",
+   "with the periderm seen sloughing from 11 PCW"
+  ],
+  "judge_why": "Correct on early-gestation presence from 7 PCW and sloughing from 11 PCW, omitting only the outermost-layer wording."
+ },
+ {
+  "arm": "whole",
+  "id": "G27-periderm-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The periderm constitutes the first permeability barrier of the skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation"
+  ],
+  "judge_why": "States the first skin permeability barrier, exactly the intended function."
+ },
+ {
+  "arm": "whole",
+  "id": "G28-periderm-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The periderm is described as sloughing off from 11 PCW, a structural/morphological change in the epidermal layer.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "with the periderm seen sloughing from 11 PCW"
+  ],
+  "judge_why": "The sloughing observation is the substance of the thin structural evidence the paper offers."
+ },
+ {
+  "arm": "whole",
+  "id": "G29-hoxc5-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "HOXC5+ early fibroblasts are located in the upper dermis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "HOXC5+ early fibroblasts (located in the upper dermis"
+  ],
+  "judge_why": "Upper dermis matches the intended answer."
+ },
+ {
+  "arm": "whole",
+  "id": "G30-hoxc5-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "HOXC5+ early fibroblasts act as a common fibroblast progenitor that gives rise to hair-specialized fibroblasts (pre-Dc, Dc, Dp) and dermal fibroblasts (WNT2+ and PEAR1+ fibroblasts).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5+ early fibroblast)"
+  ],
+  "judge_why": "Identifies the common fibroblast progenitor with both hair and dermal trajectories."
+ },
+ {
+  "arm": "whole",
+  "id": "G31-dpysl2-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "DPYSL2+ basal cells are marked by DPYSL2, and along the ORS/CL trajectory they upregulate AGR2.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Mature basal (DPYSL2+) and suprabasal IFE cells increased after 11 PCW",
+   "we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2"
+  ],
+  "judge_why": "Gives DPYSL2 and AGR2 as newly identified, avoiding the BARX2/SOX9 attribution trap."
+ },
+ {
+  "arm": "whole",
+  "id": "G32-dpysl2-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not state a function for DPYSL2+ basal cells; it only notes them as a marker-defined mature basal cell population and mentions AGR2 (a gene they upregulate) promoting cell migration, but no function is attributed to the DPYSL2+ basal cells themselves.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G33-caparteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Capillary arterioles belong to the arteriolar differentiation pathway, characterised by expression of GJA5.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular) (Fig. 4d and Extended Data Fig. 10a-c)."
+  ],
+  "judge_why": "GJA5 arteriolar identity is accurate, a partial answer omitting the organoid comparison genes."
+ },
+ {
+  "arm": "whole",
+  "id": "G34-caparteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper reports that capillary arteriole cells (in both SkO and prenatal skin) show increased sprouting angiogenesis potential, based on scoring of the 'tip' cell state.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells"
+  ],
+  "judge_why": "Reports the tip-cell sprouting angiogenesis scoring, part of the intended answer."
+ },
+ {
+  "arm": "whole",
+  "id": "G35-pear1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "PEAR1+ fibroblasts are defined by PEAR1, and genes such as APOE, IGFBP7 and ITM2A are upregulated during the transition into this state.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)",
+   "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A), were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts"
+  ],
+  "judge_why": "PEAR1 plus APOE, IGFBP7 and ITM2A match the intended markers."
+ },
+ {
+  "arm": "whole",
+  "id": "G36-pear1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "PEAR1+ fibroblasts (together with WNT2+ fibroblasts) express genes involved in cellular senescence, cytokine pathways and collagen deposition, resembling genes highly expressed in pathogenic fibroblasts of fibrotic skin disorders.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)"
+  ],
+  "judge_why": "Senescence, cytokine and collagen deposition programme matches the intended pro-inflammatory endpoint profile."
+ },
+ {
+  "arm": "whole",
+  "id": "G37-postn-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not give a spatial location for POSTN+ basal cells, only that they were present throughout gestation.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G38-postn-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "POSTN+ basal cells show increased cellular migration that may contribute to placode specification and dermal invagination.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination"
+  ],
+  "judge_why": "Increased migration contributing to placode specification and dermal invagination is the intended point."
+ },
+ {
+  "arm": "whole",
+  "id": "G39-arteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "GJA5 is given as the characteristic gene for the arteriolar pathway.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"
+  ],
+  "judge_why": "GJA5 is correctly attributed to the arteriolar pathway as intended."
+ },
+ {
+  "arm": "whole",
+  "id": "G40-arteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper reports that sprouting angiogenesis potential (scored via a 'tip' cell state) was increased in prenatal skin arteriole cells (along with capillary arteriole and capillary cells).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h)."
+  ],
+  "judge_why": "Tip-cell sprouting angiogenesis scoring in prenatal skin arterioles is part of the intended answer."
+ },
+ {
+  "arm": "whole",
+  "id": "G41-cuticle-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Cuticle/cortex cells are part of the inner layers of the hair follicle.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+  ],
+  "judge_why": "Inner layers of the hair follicle matches the intended location."
+ },
+ {
+  "arm": "whole",
+  "id": "G42-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of macrophages.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G43-wnt2-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G44-tml-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G45-dermal-condensate-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The paper states that following HF invagination, the dermal condensate becomes encapsulated at its base as it forms the dermal papilla.",
+  "outcome": "overreach",
+  "needs_judge": true,
+  "quotes": [
+   "Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+)"
+  ],
+  "judge_why": "Presents Dc encapsulation at the base as a structural description when the paper offers no morphology."
+ },
+ {
+  "arm": "whole",
+  "id": "G46-matrix-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G48-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G50-dpysl2-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G51-capillary-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G52-pear1-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G53-postn-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G54-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of arterioles, only their differentiation pathway and marker genes.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "whole",
+  "id": "G55-cuticle-cortex-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "Cuticle/cortex cells are described as part of the inner layers of the hair follicle.",
+  "outcome": "overreach",
+  "needs_judge": true,
+  "quotes": [
+   "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+  ],
+  "judge_why": "Offers a positional statement as a structural description without noting that morphology is not described."
+ },
+ {
+  "arm": "local",
+  "id": "G01-placode-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The hair placode is described as a focal site of epidermal layer thickening.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "epidermal placodes (focal sites of epidermal layer thickening)"
+  ],
+  "judge_why": "Focal epidermal thickening is the main structural point, partial but accurate."
+ },
+ {
+  "arm": "local",
+  "id": "G02-placode-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The hair placode is an epidermal structure, arising via budding of basal cells in the epidermis, described in the paper as the 'epidermal placode.'",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed",
+   "hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs"
+  ],
+  "judge_why": "Locates the placode in the epidermis arising by budding of basal cells, as intended."
+ },
+ {
+  "arm": "local",
+  "id": "G03-placode-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The Dc's interaction with the placode (via FAM3C/EFNB1 and receptors on the placode) has been reported to promote cell migration and invasion, and RSPO3 from the dermal papilla interacts with matrix cells overlying the placode to contribute to proliferation of HF epithelial cells, which includes the placode-derived matrix.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion"
+  ],
+  "judge_why": "Quotes are real but the answer is about Dc and Dp signalling rather than the placode initiating hair follicle formation."
+ },
+ {
+  "arm": "local",
+  "id": "G04-placode-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not state genes that mark the hair placode itself (only genes marking related cell types such as matrix, ORS, or interacting genes like FAM3C/EFNB1/EPHB6/LAMP1/CXADR on the placode).",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G05-macrophage-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not list specific genes that mark macrophages generally; it discusses macrophages expressing 'a range of pro-inflammatory genes' without naming defining marker genes.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G06-macrophage-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Macrophages seed the skin as early as 6 PCW, co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "immune cells such as macrophages seed the skin as early as 6 PCW and express a range of pro-inflammatory genes",
+   "In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation"
+  ],
+  "judge_why": "Seeding from 6 PCW and co-location with fibroblasts, neural and vascular cells match the intended answer."
+ },
+ {
+  "arm": "local",
+  "id": "G07-macrophage-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Macrophages support wound healing (improving scratch-wound closure of co-cultured fibroblasts) and, across their four subsets, express gene programs that drive angiogenesis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Using a scratch assay of SkO-derived fibroblasts cultured with or without iPS cell-derived macrophages, we demonstrated that scratch wound width closure was improved when fibroblasts were co-cultured with macrophages over 72 h (Extended Data Fig. 8g).",
+   "Gene ontology analysis showed that the four macrophage subsets (LYVE1+, MHCII+, TML and iron-recycling) expressed gene programs that drive angiogenesis (Supplementary Tables 23-26)."
+  ],
+  "judge_why": "Wound healing support and angiogenesis-driving programmes align with the intended repair and angiogenesis roles."
+ },
+ {
+  "arm": "local",
+  "id": "G08-wnt2fib-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "WNT2+ fibroblasts are marked by the gene WNT2 itself, and depending on gestational age express COL1A1 (late) or SFRP1 (early); together with PEAR1+ fibroblasts they also express CDKN1A, IL1R1 and POSTN.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1) (Fig. 3b, Extended Data Fig. 7d and Supplementary Tables 16-18).",
+   "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders."
+  ],
+  "judge_why": "WNT2 plus the early/late split and CDKN1A, IL1R1, POSTN match the intended markers."
+ },
+ {
+  "arm": "local",
+  "id": "G09-wnt2fib-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not give a spatial location for WNT2+ fibroblasts, only their temporal abundance and gene expression.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G10-wnt2fib-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "WNT2+ fibroblasts show gestation-dependent gene expression: in late gestation they upregulate extracellular matrix and collagen deposition genes, while in early gestation they upregulate genes involved in cellular growth and differentiation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1) (Fig. 3b, Extended Data Fig. 7d and Supplementary Tables 16-18)."
+  ],
+  "judge_why": "Late-gestation ECM and collagen deposition versus early growth and differentiation is the intended function."
+ },
+ {
+  "arm": "local",
+  "id": "G11-tml-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages are marked by TREM2, and share an expression profile with microglia-like macrophages including P2RY12, CX3CR1 and OLFML3; they also co-express CX3CR1 and SYT11.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "We recently identified yolk-sac derived TREM2+ macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs, such as the brain, prenatal skin and gonads, (Extended Data Fig. 7e,f).",
+   "Prenatal skin TREM2+ microglia-like (TML) macrophages were highly correlated with embryonic brain microglia (Extended Data Fig. 8a,b) and co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11) (Fig. 3f, Extended Data Fig. 8c and Supplementary Tables 19-23)."
+  ],
+  "judge_why": "Names TREM2 plus P2RY12, CX3CR1 and OLFML3; the extra SYT11 is supported by the second quote."
+ },
+ {
+  "arm": "local",
+  "id": "G12-tml-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin, and separately with Schwann cells within an 'early neurovascular microenvironment' of prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW) (Fig. 3c,d)",
+   "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1) (Figs. 1d and 3g)"
+  ],
+  "judge_why": "Gives both the WNT2+ fibroblast and Schwann cell/ME1 co-locations."
+ },
+ {
+  "arm": "local",
+  "id": "G13-tml-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages are predicted to interact with Schwann cells to support synapse formation and axon guidance, and along with LYVE1+ macrophages promote sprouting angiogenesis, contributing to establishment of the peripheral nervous system and vascular development in prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA-NRP1, VEGFA-NRP2, SEMA3C-NRP2 and SEMA3E-PLXND1) (Extended Data Fig. 8h and Supplementary Table 8)."
+  ],
+  "judge_why": "Covers sprouting angiogenesis and the Schwann cell synapse/axon guidance interaction."
+ },
+ {
+  "arm": "local",
+  "id": "G14-dc-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The dermal condensate (Dc) is marked by FOXD1 and SOX2 (FOXD1+SOX2+), based on orthologous mouse marker genes.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "In mice, transitional PDGFRA+FOXD1+SOX2low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode,."
+  ],
+  "judge_why": "FOXD1+SOX2+ is the main point, accurate as far as it goes."
+ },
+ {
+  "arm": "local",
+  "id": "G15-dc-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The dermal condensate is found within the dermal compartment of prenatal skin, from 12 PCW onward, where it abuts the epithelial hair placode.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW",
+   "which abuts the epithelial hair placode"
+  ],
+  "judge_why": "Dermal compartment from 12 PCW, abutting the epithelial hair placode."
+ },
+ {
+  "arm": "local",
+  "id": "G16-dc-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context describes formation and origin of the dermal condensate but does not state a function attributed to it.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G17-matrix-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper identifies SHH and WNT10B as known markers of the hair matrix.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "known matrix markers such as SHH and WNT10B, were upregulated"
+  ],
+  "judge_why": "SHH and WNT10B named as known hair matrix markers, matching the intended answer."
+ },
+ {
+  "arm": "local",
+  "id": "G18-matrix-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Hair matrix cells arise from the epidermal placode and are a prenatal-specific cell state not found in established adult hair follicles.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs (Extended Data Fig. 3d,e)."
+  ],
+  "judge_why": "Placode origin and prenatal-specific state are accurate; omitting 14 PCW is only detail."
+ },
+ {
+  "arm": "local",
+  "id": "G19-matrix-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper suggests that prenatal hair matrix cells, through increased expression of the chemokine CXCL14, may recruit regulatory T (Treg) cells, pointing to a potential role in Treg cell accumulation and immune protection during early matrix differentiation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (Treg) cells, and in control of autoimmunity (CD24).",
+   "This result highlighted the potential role of Treg cell accumulation and immune protection in the early stages of matrix differentiation"
+  ],
+  "judge_why": "CXCL14-mediated Treg recruitment and immune protection during matrix differentiation."
+ },
+ {
+  "arm": "local",
+  "id": "G20-lyve1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The only gene explicitly indicated in the supplied context as marking this macrophage population is LYVE1 itself, as reflected in the population's name throughout the text.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "LYVE1+ macrophages co-located with WNT2+ fibroblasts"
+  ],
+  "judge_why": "LYVE1 is the main marker; omitting GAS6 is a partial but accurate answer."
+ },
+ {
+  "arm": "local",
+  "id": "G21-lyve1-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "LYVE1+ macrophages co-locate with WNT2+ fibroblasts.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c-e)"
+  ],
+  "judge_why": "Co-location with WNT2+ fibroblasts is the main point, accurate as far as it goes."
+ },
+ {
+  "arm": "local",
+  "id": "G22-lyve1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "LYVE1+ macrophages co-locate and interact with WNT2+ fibroblasts via growth factor signalling, playing a part in maintaining prenatal skin dermal fibroblasts, and also promote sprouting angiogenesis and blood vessel morphogenesis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Our identification of additional growth factor interactions (IGF1-IGF1R and GRN-EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts."
+  ],
+  "judge_why": "Fibroblast maintenance plus sprouting angiogenesis and vessel morphogenesis."
+ },
+ {
+  "arm": "local",
+  "id": "G23-fibroblast-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Fibroblasts expressing COL7A1 are noted, with COL7A1 expression observed across several fibroblast subsets in prenatal skin and SkOs.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "Gene therapy studies for dystrophic EB have identified fibroblasts expressing COL7A1 as a promising therapeutic strategy. We observed COL7A1 expression across several fibroblast subsets in prenatal skin and SkOs (Extended Data Fig. 6d), which lends support to the gene therapy approaches."
+  ],
+  "judge_why": "Quote is real but concerns gene therapy relevance of COL7A1, not the paper's fibroblast marker profile."
+ },
+ {
+  "arm": "local",
+  "id": "G24-fibroblast-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "One fibroblast subtype, HOXC5+ early fibroblasts, is described as located in the upper dermis of prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c))"
+  ],
+  "judge_why": "Upper dermis for HOXC5+ early fibroblasts is accurate, if subset-specific as the hazard allows."
+ },
+ {
+  "arm": "local",
+  "id": "G25-fibroblast-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Fibroblasts (in early gestation) downregulate genes involved in extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring; combined with macrophage interactions, this contributes to scarless healing.",
+  "outcome": "leaked",
+  "needs_judge": false,
+  "leaked_quotes": [
+   "Collectively, our findings suggest that prenatal skin fibroblasts in early gestation downregulate genes involved in extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring."
+  ]
+ },
+ {
+  "arm": "local",
+  "id": "G26-periderm-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The periderm forms the outer layer of prenatal skin overlying the dermal stroma up to 8 PCW, and is seen sloughing from 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a)."
+  ],
+  "judge_why": "Outermost layer over dermal stroma to 8 PCW and sloughing from 11 PCW."
+ },
+ {
+  "arm": "local",
+  "id": "G27-periderm-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The periderm constitutes the first permeability barrier of the skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the periderm, which constitutes the first skin permeability barrier"
+  ],
+  "judge_why": "First skin permeability barrier, exactly as intended."
+ },
+ {
+  "arm": "local",
+  "id": "G28-periderm-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The periderm is described as sloughing off from 11 PCW, a structural/morphological change in the epidermal layer.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "with the periderm seen sloughing from 11 PCW"
+  ],
+  "judge_why": "Reports the sloughing observation, which is part of the thin structural evidence intended."
+ },
+ {
+  "arm": "local",
+  "id": "G29-hoxc5-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "HOXC5+ early fibroblasts are located in the upper dermis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c))"
+  ],
+  "judge_why": "Upper dermis, matching the intended answer."
+ },
+ {
+  "arm": "local",
+  "id": "G30-hoxc5-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "HOXC5+ early fibroblasts act as a common progenitor that differentiates along two paths: one forming hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the other forming WNT2+ and PEAR1+ dermal fibroblasts.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7)."
+  ],
+  "judge_why": "Common progenitor with both hair and dermal fibroblast trajectories described correctly."
+ },
+ {
+  "arm": "local",
+  "id": "G31-dpysl2-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "DPYSL2+ basal cells are marked by DPYSL2 itself, and along the ORS/CL trajectory upregulate AGR2 as well as previously reported ORS-differentiation genes BARX2 and SOX9.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Along the ORS/CL trajectory, we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9), (Extended Data Fig. 4b,c and Supplementary Table 7)."
+  ],
+  "judge_why": "Names AGR2 as newly identified and correctly attributes BARX2/SOX9 as previously reported, avoiding the hazard."
+ },
+ {
+  "arm": "local",
+  "id": "G32-dpysl2-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "DPYSL2+ basal cells lie along the ORS/CL differentiation trajectory, downstream of POSTN+ basal cells, contributing to formation of the outer root sheath and companion layer.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "ORS/CL trajectory, comprising DPYSL2+ basal cells, ORS and CL"
+  ],
+  "judge_why": "ORS/CL trajectory downstream of POSTN+ basal cells, as intended."
+ },
+ {
+  "arm": "local",
+  "id": "G33-caparteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not give specific marker genes for capillary arterioles; it gives GJA5 for the broader arteriolar pathway and PLVAP for venular, but no gene specific to capillary arterioles.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G34-caparteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper reports that capillary arteriole cells showed increased sprouting angiogenesis potential, based on scoring of a 'tip' cell state, alongside arteriole and capillary cells.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells"
+  ],
+  "judge_why": "Tip-cell sprouting angiogenesis scoring is accurate; omitting the further arteriole differentiation is only partial."
+ },
+ {
+  "arm": "local",
+  "id": "G35-pear1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "PEAR1+ fibroblasts are defined by PEAR1, and genes such as APOE, IGFBP7 and ITM2A are upregulated during the transition into this state.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)",
+   "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A), were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts"
+  ],
+  "judge_why": "PEAR1 plus APOE, IGFBP7 and ITM2A upregulated in the transition, as intended."
+ },
+ {
+  "arm": "local",
+  "id": "G36-pear1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "PEAR1+ fibroblasts express genes associated with an adult, pro-inflammatory phenotype, cellular senescence, cytokine signalling and collagen deposition \u2014 a gene programme the paper links to pathogenic, scar-promoting fibroblast states seen in fibrotic skin disorders and in later-gestation scarring.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "The adult fibroblast gene expression profile was increased in WNT2+ and PEAR1+ prenatal fibroblasts, which were abundant in later gestation",
+   "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders."
+  ],
+  "judge_why": "Adult pro-inflammatory profile with senescence and collagen deposition genes, as intended."
+ },
+ {
+  "arm": "local",
+  "id": "G37-postn-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not give a specific tissue location for POSTN+ basal cells, only that they are present throughout gestation.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G38-postn-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "POSTN+ basal cells show increased cellular migration that may be involved in placode specification and dermal invagination.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Our findings suggest that increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination."
+  ],
+  "judge_why": "Increased migration in placode specification and dermal invagination is the main point."
+ },
+ {
+  "arm": "local",
+  "id": "G39-arteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "GJA5 is given as the characteristic gene for the arteriolar pathway.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"
+  ],
+  "judge_why": "GJA5 correctly attributed to the arteriolar pathway rather than capillary arterioles."
+ },
+ {
+  "arm": "local",
+  "id": "G40-arteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper reports that arteriole cells (along with capillary arteriole and capillary cells) showed increased sprouting angiogenesis potential, based on scoring of a 'tip' cell state.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells"
+  ],
+  "judge_why": "Tip-cell sprouting angiogenesis is accurate; omitting the differentiation endpoint is only partial."
+ },
+ {
+  "arm": "local",
+  "id": "G41-cuticle-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Cuticle/cortex cells are part of the inner layers of the hair follicle, identified alongside other HF cell types from 14 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH+), outer root sheath (ORS) (SLC26A7+), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a-c, Extended Data Fig. 3a,b and Supplementary Table 6)."
+  ],
+  "judge_why": "Part of the inner layers of the hair follicle, as intended."
+ },
+ {
+  "arm": "local",
+  "id": "G42-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of macrophages.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G43-wnt2-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of WNT2+ fibroblasts.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G44-tml-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of TML macrophages.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G45-dermal-condensate-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The paper states that following HF invagination, the dermal condensate becomes encapsulated at its base as it forms the dermal papilla.",
+  "outcome": "overreach",
+  "needs_judge": true,
+  "quotes": [
+   "Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+)"
+  ],
+  "judge_why": "Presents encapsulation at the base as a morphological description where the paper offers none."
+ },
+ {
+  "arm": "local",
+  "id": "G46-matrix-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say anything about the structure or morphology of hair matrix cells; it discusses their gene expression, origin and differentiation but not their structural or morphological characteristics.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of LYVE1+ macrophages.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G48-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of fibroblasts.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of HOXC5+ early fibroblasts.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G50-dpysl2-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of DPYSL2+ basal cells.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G51-capillary-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of capillary arteriole cells; it discusses their transcriptional and functional properties (e.g. differentiation potential, gene expression, angiogenesis signalling) but not their structural or morphological features.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G52-pear1-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of PEAR1+ fibroblasts; it only discusses their origin, gene expression and abundance across gestation.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G53-postn-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of POSTN+ basal cells.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G54-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of arterioles.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local",
+  "id": "G55-cuticle-cortex-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The paper describes cuticle/cortex cells as part of the inner layers of the hair follicle.",
+  "outcome": "overreach",
+  "needs_judge": true,
+  "quotes": [
+   "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+  ],
+  "judge_why": "Offers a location statement as a structural description without declining."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G01-placode-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The hair placode is described as arising via budding of basal cells, alongside germ cells, with subsequent elongation of hair follicles into hair pegs.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed"
+  ],
+  "judge_why": "Budding of basal cells is the intended structural point, with follicle elongation added."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G02-placode-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The hair placode arises from budding of basal cells in the epidermis at 14-15 PCW, and it is abutted by the dermal condensate.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a).",
+   "which abuts the epithelial hair placode 26,28"
+  ],
+  "judge_why": "Epidermal budding site abutted by the dermal condensate."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G03-placode-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The placode is a site of ligand-receptor signalling (via EPHB6, among others) that is reported to promote cell migration and invasion.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "EPHB6 on the placode, and have been reported to promote cell migration and invasion"
+  ],
+  "judge_why": "Quote is real but describes Dc-to-placode signalling, not the placode's role in initiating hair follicle formation."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G04-placode-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not give specific marker genes for the hair placode.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G05-macrophage-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not list specific genes marking macrophages generally; it only refers to unnamed 'marker genes' used to annotate macrophage subsets without naming them.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G06-macrophage-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Within this context, the only macrophage subset given an explicit skin location is the TML macrophage, which was predicted to co-locate with Schwann cells in an early neurovascular microenvironment.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1)"
+  ],
+  "judge_why": "Gives the ME1 neurovascular co-location and flags its own partiality."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G07-macrophage-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The paper attributes several functions to macrophages in prenatal skin, including promoting angiogenesis and vascular network formation, interacting with fibroblasts to maintain tissue homeostasis, and supporting neural development alongside Schwann cells.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Macrophages have been implicated in angiogenesis during prenatal organ development and in the postnatal setting such as cancerrelated angiogenesis 67,68 .",
+   "Our data suggested that macrophages contribute to prenatal skin angiogenesis."
+  ],
+  "judge_why": "Angiogenesis, fibroblast homeostasis and neurovascular development all covered."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G08-wnt2fib-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "WNT2+ fibroblasts are marked by differentially expressed genes that vary with gestational age: COL1A1 in late gestation and SFRP1 in early gestation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Late gestation WNT2 + fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2 + fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)"
+  ],
+  "judge_why": "COL1A1 late and SFRP1 early are accurate; omitting WNT2 itself is only partial."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G09-wnt2fib-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "WNT2+ fibroblasts are found co-located with LYVE1+ macrophages in distinct tissue microenvironments in prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Specifically, LYVE1 + macrophages co-located with WNT2 + fibroblasts (Fig. 3c-e) and were predicted to interact through platelet-derived growth factors (PDGFs) and corresponding receptors (PDGFR\u03b1 and PDGFR\u03b2) expressed on fibroblasts (Extended Data Fig. 7g and Supplementary Table 8)."
+  ],
+  "judge_why": "Co-location with LYVE1+ macrophages is the main point, accurate as far as it goes."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G10-wnt2fib-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Late gestation WNT2+ fibroblasts are attributed a function in extracellular matrix and collagen deposition.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Late gestation WNT2 + fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1)"
+  ],
+  "judge_why": "Late-gestation extracellular matrix and collagen deposition, as intended."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G11-tml-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "TML macrophages are marked by TREM2, and share an expression profile of P2RY12, CX3CR1 and OLFML3 with microglia-like macrophages from other developing organs.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "We recently identified yolk-sac derived TREM2 + macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs"
+  ],
+  "judge_why": "TREM2 with P2RY12, CX3CR1 and OLFML3, matching the intended answer."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G12-tml-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "TML macrophages are predicted to co-locate with Schwann cells in the 'early neurovascular microenvironment' (ME1) and with WNT2+ fibroblasts in early prenatal skin (6-8 PCW).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1) (Figs. 1d and 3g)",
+   "TML macrophages were predicted to co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW) (Fig. 3c,d)"
+  ],
+  "judge_why": "Both the ME1 Schwann cell and early WNT2+ fibroblast co-locations given."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G13-tml-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages are attributed roles including anti-fibrogenic/scarless-healing contributions, sprouting angiogenesis, and interacting with Schwann cells to contribute to synapse formation and axon guidance.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance"
+  ],
+  "judge_why": "Sprouting angiogenesis and the Schwann cell synapse/axon guidance role both named."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G14-dc-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The dermal condensate is marked by FOXD1 and SOX2.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the Dc (FOXD1 + SOX2 + )"
+  ],
+  "judge_why": "FOXD1 and SOX2 are the intended markers."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G15-dc-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The dermal condensate is found within the dermal compartment of prenatal skin, from 12 PCW, and abuts the epithelial hair placode.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c).",
+   "which abuts the epithelial hair placode 26,28"
+  ],
+  "judge_why": "Dermal compartment from 12 PCW, abutting the epithelial hair placode."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G16-dc-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper attributes a migration/invasion-promoting function to the dermal condensate: it expresses FAM3C and EFNB1, predicted to signal to the overlying placode via LAMP1/CXADR and EPHB6, and these interactions have been reported to promote cell migration and invasion.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion"
+  ],
+  "judge_why": "FAM3C/EFNB1 signalling to the placode promoting migration and invasion, as intended."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G17-matrix-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Hair matrix cells are marked by SHH, and matrix-specific genes include CXCL14 and CD24, which are increased compared with adult hair follicles.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "which comprised placode, matrix (SHH + ), outer root sheath (ORS) (SLC26A7 + ), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a-c, Extended Data Fig. 3a,b and Supplementary Table 6).",
+   "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (T reg ) cells 21 , and in control of autoimmunity (CD24) 22 ."
+  ],
+  "judge_why": "SHH is right but CXCL14 and CD24 are presented as markers when the quote gives them as chemotaxis/autoimmunity genes raised versus adult."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G18-matrix-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Hair matrix cells arise from the epidermal placode and are described as a prenatal-specific cell state absent in established adult hair follicles.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs"
+  ],
+  "judge_why": "Conveys placode origin and prenatal-specific state, matching the intended answer."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G19-matrix-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper reports that prenatal skin matrix cells have increased expression of chemotaxis genes such as CXCL14 (a chemokine that recruits regulatory T cells) and CD24 (involved in control of autoimmunity), suggesting a role in Treg cell recruitment and immune protection during matrix differentiation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (T reg ) cells 21 , and in control of autoimmunity (CD24) 22 .",
+   "This result highlighted the potential role of T reg cell accumulation and immune protection in the early stages of matrix differentiation (Extended Data Fig. 3f)."
+  ],
+  "judge_why": "Reproduces the chemotaxis/CXCL14/CD24 and Treg immune-protection account exactly as intended."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G20-lyve1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The paper identifies LYVE1+ macrophages by LYVE1 protein expression, using anti-LYVE1 immunofluorescence/RNAscope staining alongside other markers such as CD45 and CD31 to detect these cells.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "n = 1 biological replicate with n = 2 technical replicates for immunofluorescence slides with anti-LYVE1, anti-CD45 and anti-VIM (Fig. 3e)",
+   "n = 3 biological replicates for prenatal skin whole-mount immunofluorescence with anti-CD31 and anti-LYVE1 (Fig. 4a)"
+  ],
+  "judge_why": "Quotes are antibody-panel method lines; CD45/CD31 are staining reagents, not markers of this subset, and GAS6 is missed."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G21-lyve1-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "LYVE1+ macrophages were shown by multiplex RNAscope and immunofluorescence staining to be in close proximity to endothelial cells in prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "LYVE1 + and TML macrophages in close proximity to endothelial cells"
+  ],
+  "judge_why": "Names endothelial proximity, a main point of the intended answer, accurately if partially."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G22-lyve1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "LYVE1+ macrophages are attributed roles in blood vessel morphogenesis and in the maintenance of prenatal skin dermal fibroblasts.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "blood vessel morphogenesis by LYVE1 + macrophages",
+   "LYVE1 + macrophages play a part in the maintenance of prenatal skin dermal fibroblasts"
+  ],
+  "judge_why": "Gives blood vessel morphogenesis and dermal fibroblast maintenance as intended."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G23-fibroblast-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not say which genes generically mark fibroblasts; it only discusses genes specific to particular fibroblast subsets (e.g. WNT2+, PEAR1+, HOXC5+).",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G24-fibroblast-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Fibroblasts in prenatal human skin are found in the dermal compartment, producing collagen there, with subsets such as HOXC5+ early fibroblasts located in the upper dermis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate 51 .",
+   "HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f)"
+  ],
+  "judge_why": "Dermal compartment plus HOXC5+ upper dermis matches the intended answer."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G25-fibroblast-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Prenatal skin fibroblasts are attributed roles in immune suppression, regulation of inflammation, and tissue regeneration, based on upregulated genes CD200, RAMP2 and MDK.",
+  "outcome": "leaked",
+  "needs_judge": false,
+  "leaked_quotes": [
+   "prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200), regulation of inflammation (for example, RAMP2) and tissue regeneration (MDK)"
+  ]
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G26-periderm-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Periderm is one of the immature interfollicular epidermal (IFE) cell types, present in the epidermal layer overlying the dermal stroma from 7 PCW, and it sloughs from 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "with the periderm seen sloughing from 11 PCW",
+   "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW"
+  ],
+  "judge_why": "Outer epidermal layer over dermal stroma, from 7 PCW, sloughing from 11 PCW \u2014 all as intended."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G27-periderm-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The periderm is described as constituting the first skin permeability barrier.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the periderm, which constitutes the first skin permeability barrier"
+  ],
+  "judge_why": "States the first skin permeability barrier, exactly the intended function."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G28-periderm-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The periderm is described as a layer that is seen sloughing from 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "with the periderm seen sloughing from 11 PCW"
+  ],
+  "judge_why": "Gives the layer plus sloughing description, which is all the paper offers here."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G29-hoxc5-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "HOXC5+ early fibroblasts are located in the upper dermis and are abundant before 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Inferred trajectory analysis predicted that HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2 + fibroblasts and PEAR1 + fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7)."
+  ],
+  "judge_why": "Upper dermis, as intended."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G30-hoxc5-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "HOXC5+ early fibroblasts function as a common fibroblast progenitor, giving rise to pre-Dc cells, the dermal condensate, dermal papilla and other dermal fibroblasts.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5 + early fibroblast)"
+  ],
+  "judge_why": "Identifies the common fibroblast progenitor role and both downstream fates."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G31-dpysl2-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "DPYSL2 is the marker gene used to identify the mature basal cell population (DPYSL2+ basal cells).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Mature basal (DPYSL2 + ) and suprabasal IFE cells increased after 11 PCW"
+  ],
+  "judge_why": "Gives DPYSL2 accurately and avoids the BARX2/SOX9 attribution trap; partial but not wrong."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G32-dpysl2-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context describes DPYSL2+ basal cells' place in a differentiation trajectory and their upregulated genes, but does not attribute a specific function to them.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G33-caparteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not give specific marker genes for capillary arteriole cells.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G34-caparteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Capillary arteriole cells show sprouting angiogenesis potential (assessed by the 'tip' cell state score) in both prenatal skin and SkO, though in SkO these cells appear unable to guide stalk cells for new blood vessel formation despite this signature.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h)",
+   "SkO capillary arteriole cells are unable to guide stalk cells for new blood vessel formation"
+  ],
+  "judge_why": "Captures the tip-cell sprouting angiogenesis score and the prenatal/SkO contrast."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G35-pear1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not give a specific marker gene panel identifying PEAR1+ fibroblasts beyond the PEAR1 name itself, but it notes that a pro-inflammatory gene set (APOE, IGFBP7, ITM2A) was upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A)"
+  ],
+  "judge_why": "Names PEAR1 and the APOE/IGFBP7/ITM2A pro-inflammatory set from the HOXC5+ transition."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G36-pear1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "PEAR1+ fibroblasts express genes involved in cellular senescence, cytokine pathways and collagen deposition that are highly expressed in pathogenic fibroblasts of fibrotic skin disorders, linking them to progressive acquisition of scar-promoting properties in later gestation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders 53 ."
+  ],
+  "judge_why": "Reports the senescence, cytokine and collagen-deposition profile linking them to fibrotic phenotypes."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G37-postn-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context only states when POSTN+ basal cells are present (throughout gestation), not their spatial location.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G38-postn-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper suggests that increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Our findings suggest that increased cellular migration in POSTN + basal cells may be involved in placode specification and dermal invagination."
+  ],
+  "judge_why": "States increased migration in placode specification and dermal invagination as intended."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G39-arteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "GJA5 is given as the characteristic gene for the arteriolar pathway (which includes arterioles).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "GJA5 for arteriolar and PLVAP for venular"
+  ],
+  "judge_why": "GJA5 as the characteristic arteriolar gene, correctly attributed."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G40-arteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not attribute a specific function to arteriole cells themselves; it discusses their differentiation trajectory and marker genes but no functional role.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G41-cuticle-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Cuticle and cortex cells are described as part of the inner layers of the hair follicle, identified in the scRNA-seq data from 14 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+  ],
+  "judge_why": "Inner layers of the hair follicle, as intended."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G42-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of macrophages; it discusses their function, imaging methods, and co-localization rather than their physical structure.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G43-wnt2-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of WNT2+ fibroblasts.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G44-tml-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of TML macrophages.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G45-dermal-condensate-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The dermal condensate is described structurally as abutting the epithelial hair placode, and after HF invagination it becomes encapsulated at its base to form the dermal papilla.",
+  "outcome": "overreach",
+  "needs_judge": true,
+  "quotes": [
+   "which abuts the epithelial hair placode",
+   "the Dc becomes encapsulated at its base as the Dp"
+  ],
+  "judge_why": "Presents abutting the placode and encapsulation as a structural description where the paper offers no morphology."
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G46-matrix-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of hair matrix cells; it only discusses their gene expression, origin, and interactions.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of LYVE1+ macrophages.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G48-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of fibroblasts.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of HOXC5+ early fibroblasts, only their location and developmental trajectory.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G50-dpysl2-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of DPYSL2+ basal cells.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G51-capillary-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of capillary arteriole cells; it only discusses their differentiation trajectory, gene expression and receptor signalling.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G52-pear1-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of PEAR1+ fibroblasts; it only discusses their gene expression and abundance over gestation.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G53-postn-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of POSTN+ basal cells.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G54-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of arterioles; it discusses their differentiation trajectory and gene expression rather than physical structure.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-sep",
+  "id": "G55-cuticle-cortex-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The paper describes cuticle/cortex cells as part of the inner layers of the hair follicle.",
+  "outcome": "overreach",
+  "needs_judge": true,
+  "quotes": [
+   "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+  ],
+  "judge_why": "Offers a location statement as the structural description without flagging that morphology is absent."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G01-placode-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The paper describes the placode as arising from budding of basal cells at 14-15 PCW, alongside germ cells, with elongation into hair pegs.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed"
+  ],
+  "judge_why": "Names budding of basal cells and follicle elongation, the main structural point available."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G02-placode-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Hair placode was observed at 14-15 PCW as budding of basal cells, elongating into hair follicles.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a)."
+  ],
+  "judge_why": "Quote is real but answers timing/morphogenesis rather than where the placode sits in the epidermis."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G03-placode-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The placode expresses receptors (CXADR and EPHB6) for Dc-derived ligands FAM3C and EFNB1 that have been reported to promote cell migration and invasion, linking the placode to Dc invagination.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion"
+  ],
+  "judge_why": "Quote is real but describes Dc-derived ligands and placode receptors, not the placode's own role in initiating HF formation."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G04-placode-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G05-macrophage-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The paper identifies four macrophage subsets marked by LYVE1 and MHCII, alongside the TML and iron-recycling subsets.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the four macrophage subsets (LYVE1 + , MHCII + , TML and iron-recycling) expressed gene programs that drive angiogenesis"
+  ],
+  "judge_why": "Names MHCII and the marker-defined subsets accurately, a fair partial answer for this broad label."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G06-macrophage-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Macrophages in prenatal skin co-locate with endothelial cells in neurovascular microenvironments, and TML macrophages specifically co-locate with Schwann cells.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Visium deconvolution analysis predicted co-location of prenatal skin macrophages with endothelial cells ('early and late neurovascular microenvironments', ME1 and ME5) (Fig. 1d and Extended Data Fig. 1e)."
+  ],
+  "judge_why": "Gives the ME1/ME5 neurovascular co-location with endothelial cells, the main intended point."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G07-macrophage-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Macrophages are attributed roles in prenatal skin angiogenesis (via co-location with endothelial cells and ligand-receptor interactions supporting chemotaxis and cell migration), in supporting establishment of the skin peripheral nervous system through interactions with Schwann cells, and possibly in scarless healing and tissue homeostasis, raising the question of a contribution to early skin morphogenesis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Predicted ligandreceptor interactions were consistent with reciprocal communication between macrophages and endothelial cells to support angiogenesis, chemotaxis and cell migration (for example, CXCL8-ACKR1 and CCL8-ACKR1) 10,70 (Extended Data Fig. 9a and Supplementary Table 28).",
+   "Our data suggested that macrophages contribute to prenatal skin angiogenesis.",
+   "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA-NRP1, VEGFA-NRP2, SEMA3C-NRP2 and SEMA3E-PLXND1) 66 (Extended Data Fig. 8h and Supplementary Table 8).",
+   "Together with evidence of their role in tissue homeostasis 6,7 and healing in mouse models 8,9 , this raises the question of whether macrophages contribute to human early skin morphogenesis."
+  ],
+  "judge_why": "Covers angiogenesis, neurovascular development, homeostasis and scarless healing as intended."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G08-wnt2fib-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "WNT2+ fibroblasts show stage-dependent gene expression: late-gestation cells upregulate extracellular matrix/collagen genes such as COL1A1, early cells upregulate growth/differentiation genes such as SFRP1, and both WNT2+ and PEAR1+ fibroblasts express CDKN1A, IL1R1 and POSTN.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Late gestation WNT2 + fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2 + fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1) (Fig. 3b, Extended Data Fig. 7d and Supplementary Tables 16-18).",
+   "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders 53 ."
+  ],
+  "judge_why": "Reports WNT2, COL1A1/ECM late, SFRP1 early, plus CDKN1A, IL1R1 and POSTN."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G09-wnt2fib-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "WNT2+ fibroblasts co-locate with LYVE1+ macrophages and, in early prenatal skin (6-8 PCW), with TML macrophages.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "LYVE1 + macrophages co-located with WNT2 + fibroblasts (Fig. 3c-e)",
+   "TML macrophages were predicted to co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW) (Fig. 3c,d)"
+  ],
+  "judge_why": "Co-location with LYVE1+ and early TML macrophages matches the intended answer."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G10-wnt2fib-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say. It describes gene expression changes in WNT2+ fibroblasts across gestation and their co-location with macrophages, but does not state a function attributed to WNT2+ fibroblasts themselves.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G11-tml-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "TML macrophages are TREM2+ and share an expression profile of P2RY12, CX3CR1 and OLFML3 with microglia-like macrophages elsewhere; they also co-express immunomodulatory genes such as CX3CR1 and SYT11.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "We recently identified yolk-sac derived TREM2 + macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs, such as the brain, prenatal skin and gonads 57,58 (Extended Data Fig. 7e,f).",
+   "Prenatal skin TREM2 + microglia-like (TML) macrophages were highly correlated with embryonic brain microglia 57 (Extended Data Fig. 8a,b) and co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11) 59 (Fig. 3f, Extended Data Fig. 8c and Supplementary Tables 19-23)."
+  ],
+  "judge_why": "TREM2 with P2RY12, CX3CR1 and OLFML3, as intended."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G12-tml-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "TML macrophages are predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW) and with Schwann cells in the 'early neurovascular microenvironment' (ME1).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were predicted to co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW)",
+   "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1)"
+  ],
+  "judge_why": "WNT2+ fibroblasts at 6-8 PCW and Schwann cells in ME1, as intended."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G13-tml-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages are implicated in scarless healing through anti-inflammatory/anti-fibrogenic signalling with WNT2+ fibroblasts, in supporting establishment of the skin peripheral nervous system through interactions with Schwann cells (synapse formation and axon guidance), and in promoting sprouting angiogenesis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were predicted to co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW) (Fig. 3c,d) and WNT2 + fibroblasts had downregulated IL6 expression compared with adult fibroblasts (Fig. 3a). This led us to infer a potential contribution of macrophages in scarless healing in prenatal skin.",
+   "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA-NRP1, VEGFA-NRP2, SEMA3C-NRP2 and SEMA3E-PLXND1) 66 (Extended Data Fig. 8h and Supplementary Table 8).",
+   "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1 + and TML macrophages, blood vessel morphogenesis by LYVE1 + macrophages and endothelial cell chemotaxis by iron-recycling macrophages (Extended Data Fig. 8i and Supplementary Table 27)."
+  ],
+  "judge_why": "Includes sprouting angiogenesis and the Schwann cell synapse/axon guidance interactions."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G14-dc-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The dermal condensate is marked by FOXD1 and SOX2, based on orthologous marker genes used to annotate it in human prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "In mice, transitional PDGFRA + FOXD1 + SOX2 low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1 + SOX2 + ), which abuts the epithelial hair placode 26,28 ."
+  ],
+  "judge_why": "FOXD1+SOX2+ identity is the main intended marker point."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G15-dc-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The dermal condensate is found within the dermal compartment of prenatal skin, observed alongside HF-specialized fibroblasts and the dermal papilla from 12 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c)."
+  ],
+  "judge_why": "Dermal compartment from 12 PCW, as intended."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G16-dc-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not state a specific function for the dermal condensate; it only describes how pre-Dc cells aggregate to form the Dc and its spatial relationship to the hair placode.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G17-matrix-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Hair matrix cells are marked by SHH, and known matrix markers SHH and WNT10B were found upregulated along the IRS trajectory.",
+  "outcome": "leaked",
+  "needs_judge": false,
+  "leaked_quotes": [
+   "matrix (SHH + )"
+  ]
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G18-matrix-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Hair matrix cells arise from the epidermal placode, a prenatal-specific cell state not present in established adult hair follicles.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs 20 (Extended Data Fig. 3d,e)."
+  ],
+  "judge_why": "Epidermal placode origin and prenatal-specific state, as intended."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G19-matrix-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Prenatal skin matrix cells had increased expression of chemotaxis genes such as CXCL14, previously reported to recruit regulatory T cells, and CD24, involved in control of autoimmunity, suggesting a role for matrix cells in Treg cell accumulation and immune protection during early hair follicle differentiation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (T reg ) cells 21 , and in control of autoimmunity (CD24) 22 .",
+   "This result highlighted the potential role of T reg cell accumulation and immune protection in the early stages of matrix differentiation (Extended Data Fig. 3f)."
+  ],
+  "judge_why": "Chemotaxis genes CXCL14 and CD24 with Treg accumulation and immune protection, as intended."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G20-lyve1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not list specific marker genes that define LYVE1+ macrophage identity beyond LYVE1 itself; it only notes that marker genes were used to annotate macrophage subsets without naming them.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G21-lyve1-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "LYVE1+ macrophages are found in close proximity to endothelial cells, as shown by RNAscope and immunofluorescence staining.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "multiplex RNAscope and immunofluorescence staining showed LYVE1 + and TML macrophages in close proximity to endothelial cells (Fig. 4a and Supplementary Video 1)."
+  ],
+  "judge_why": "Close proximity to endothelial cells by RNAscope/immunofluorescence, a main intended point."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G22-lyve1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "LYVE1+ macrophages are attributed roles in promoting sprouting angiogenesis and blood vessel morphogenesis, in maintaining prenatal skin dermal fibroblasts via growth factor interactions, and in inducing immunosuppression and tissue repair through GAS6-AXL signalling with WNT2+ fibroblasts.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1 + and TML macrophages, blood vessel morphogenesis by LYVE1 + macrophages and endothelial cell chemotaxis by iron-recycling macrophages (Extended Data Fig. 8i and Supplementary Table 27).",
+   "Our identification of additional growth factor interactions (IGF1-IGF1R and GRN-EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1 + macrophages play a part in the maintenance of prenatal skin dermal fibroblasts.",
+   "Additionally, GAS6, expressed by TML macrophages and LYVE1 + macrophages, was predicted to interact with AXL receptors on WNT2 + fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair 62,63 ."
+  ],
+  "judge_why": "Sprouting angiogenesis, vessel morphogenesis and dermal fibroblast maintenance including GAS6-AXL."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G23-fibroblast-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not say. It discusses gene expression differences in specific fibroblast subsets (for example, adult versus prenatal fibroblasts, or transitions between HOXC5+ and PEAR1+ fibroblasts) rather than naming genes that mark fibroblasts generally.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G24-fibroblast-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Fibroblasts are found in the dermal compartment of prenatal skin, described as dermal fibroblast subsets.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the temporal changes in composition and transcriptional profile of the dermal fibroblast subsets"
+  ],
+  "judge_why": "Dermal compartment is accurate as far as it goes."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G25-fibroblast-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper attributes to prenatal fibroblasts a role in favouring tissue regeneration over scarring, by downregulating genes involved in extracellular matrix formation, collagen deposition and inflammation during early gestation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Collectively, our findings suggest that prenatal skin fibroblasts in early gestation downregulate genes involved in extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring."
+  ],
+  "judge_why": "Downregulated ECM, collagen and inflammation favouring regeneration over scarring, exactly as intended."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G26-periderm-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Periderm is one of the immature interfollicular epidermal (IFE) cell types, present as a superficial epidermal layer overlying the dermal stroma, and it sloughs from 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+   "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b)."
+  ],
+  "judge_why": "Superficial epidermal layer over dermal stroma, from 7 PCW, sloughing from 11 PCW."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G27-periderm-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not attribute a specific function to periderm; it only describes it as an immature IFE cell type present from 7 PCW that sloughs from 11 PCW.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G28-periderm-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Periderm is described as part of a layer of epidermal cells overlying the dermal stroma in early prenatal skin, which sloughs from 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a)."
+  ],
+  "judge_why": "Layer of epidermal cells over dermal stroma plus sloughing, all the paper offers."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G29-hoxc5-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "HOXC5+ early fibroblasts are located in the upper dermis and are abundant before 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths"
+  ],
+  "judge_why": "Upper dermis, as intended."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G30-hoxc5-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "HOXC5+ early fibroblasts act as a common fibroblast progenitor that differentiates along two trajectories: one forming hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp), and the other forming WNT2+ and PEAR1+ dermal fibroblasts.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Inferred trajectory analysis predicted that HOXC5 + early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2 + fibroblasts and PEAR1 + fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7).",
+   "Additionally, similar to fibroblast differentiation in mouse skin, pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5 + early fibroblast) (Fig. 2e and Extended Data Fig. 4d)."
+  ],
+  "judge_why": "Common progenitor with both hair and dermal fibroblast trajectories named correctly."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G31-dpysl2-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "DPYSL2 itself defines this basal cell state, and the paper reports AGR2 as a newly identified gene upregulated by DPYSL2+ basal cells.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Mature basal (DPYSL2 + ) and suprabasal IFE cells increased after 11 PCW, whereas POSTN + basal cells were present throughout gestation (Fig. 2b and Extended Data Fig. 3b).",
+   "Along the ORS/CL trajectory, we identified new genes upregulated by DPYSL2 + basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9) 25,26 (Extended Data Fig. 4b,c and Supplementary Table 7)."
+  ],
+  "judge_why": "Gives DPYSL2 and AGR2 with the correct newly-identified attribution, avoiding the BARX2/SOX9 trap."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G32-dpysl2-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "DPYSL2+ basal cells lie along the ORS/CL differentiation trajectory and upregulate genes such as AGR2, along with previously reported ORS differentiation genes BARX2 and SOX9.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Along the ORS/CL trajectory, we identified new genes upregulated by DPYSL2 + basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9) 25,26"
+  ],
+  "judge_why": "Names the ORS/CL differentiation trajectory role and attributes BARX2/SOX9 correctly as previously reported ORS genes."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G33-caparteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper reports GJA5 as a characteristic gene of the arteriolar pathway, which includes capillary arterioles (as opposed to PLVAP marking the venular pathway).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Inferred trajectory analysis showed that early endothelial cells in prenatal skin differentiated into either an arteriolar pathway (capillaries, capillary arterioles and arterioles) or venular pathway (postcapillary venules and venules), with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"
+  ],
+  "judge_why": "Gives GJA5 as the arteriolar characteristic gene, the main point of the intended answer."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G34-caparteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Capillary arteriole cells in prenatal skin can further differentiate into arterioles, whereas the equivalent SkO cells cannot; SkO capillary arteriole cells also fail to guide stalk cells for new blood vessel formation despite expressing sprouting angiogenesis genes.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "prenatal skin capillary arteriole cells could further differentiate into arterioles",
+   "SkO capillary arteriole cells are unable to guide stalk cells for new blood vessel formation"
+  ],
+  "judge_why": "Captures further differentiation into arterioles in prenatal but not SkO cells."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G35-pear1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "PEAR1+ fibroblasts are marked by upregulation of APOE, IGFBP7 and ITM2A (pro-inflammatory phenotype genes), and express CDKN1A, IL1R1 and POSTN.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A) 43,52 were also upregulated during the transition from HOXC5 + fibroblasts into PEAR1 + fibroblasts",
+   "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)"
+  ],
+  "judge_why": "Gives APOE, IGFBP7 and ITM2A as the pro-inflammatory transition genes plus supported extras."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G36-pear1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "PEAR1+ fibroblasts, together with WNT2+ fibroblasts, express genes involved in cellular senescence, cytokine pathways and collagen deposition that are highly expressed in pathogenic fibroblasts of fibrotic skin disorders, linking them to a scar-promoting phenotype.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders 53 ."
+  ],
+  "judge_why": "Conveys the senescence/cytokine/collagen pro-inflammatory profile shared with adult pathogenic fibroblasts."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G37-postn-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "POSTN+ basal cells are a basal interfollicular epidermal (IFE) cell state that is present throughout gestation.",
+  "outcome": "leaked",
+  "needs_judge": false,
+  "leaked_quotes": [
+   "Mature basal (DPYSL2 + ) and suprabasal IFE cells increased after 11 PCW, whereas POSTN + basal cells were present throughout gestation (Fig. 2b and Extended Data Fig. 3b)."
+  ]
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G38-postn-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper suggests that increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Our findings suggest that increased cellular migration in POSTN + basal cells may be involved in placode specification and dermal invagination."
+  ],
+  "judge_why": "States the migration role in placode specification and dermal invagination."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G39-arteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "GJA5 is given as the characteristic gene marking the arteriolar pathway.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"
+  ],
+  "judge_why": "GJA5 correctly attributed to the arteriolar side of the contrast."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G40-arteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Prenatal skin arteriole cells (along with capillary arteriole and capillary cells) showed increased sprouting angiogenesis potential, as assessed by scoring the 'tip' cell state.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells"
+  ],
+  "judge_why": "Accurate partial answer naming the tip-cell sprouting angiogenesis score for arterioles."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G41-cuticle-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Cuticle/cortex cells form part of the inner layers of the hair follicle.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a-c, Extended Data Fig. 3a,b and Supplementary Table 6)"
+  ],
+  "judge_why": "Places cuticle/cortex in the inner layers of the hair follicle as intended."
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G42-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G43-wnt2-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G44-tml-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G45-dermal-condensate-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of the dermal condensate itself; it describes its formation from pre-Dc cells and its spatial relationship to the placode and dermal papilla, not its physical structure.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G46-matrix-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of hair matrix cells.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G48-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G50-dpysl2-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of DPYSL2+ basal cells; it discusses their gene expression and differentiation trajectory instead.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G51-capillary-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of capillary arteriole cells.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G52-pear1-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of PEAR1+ fibroblasts; it discusses their gene expression and differentiation trajectory instead.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G53-postn-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of POSTN+ basal cells; it only notes their presence throughout gestation and their role in migration.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G54-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "asta-comb",
+  "id": "G55-cuticle-cortex-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of cuticle/cortex cells; it only notes that they are part of the inner layers of the hair follicle, which is a location, not a structural description.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G01-placode-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The hair (epidermal) placode is described structurally as a focal site of epidermal layer thickening.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "epidermal placodes (focal sites of epidermal layer thickening)"
+  ],
+  "judge_why": "Gives the focal epidermal thickening description, the core structural point."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G02-placode-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Hair placode arises from budding basal cells of the epidermis and appears at 14-15 PCW, prior to elongation into hair pegs (hair follicles), and is abutted by the dermal condensate below.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed"
+  ],
+  "judge_why": "Locates the placode in the epidermis with the dermal condensate beneath."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G03-placode-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The epidermal (hair) placode interacts with the dermal condensate to initiate hair follicle formation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)"
+  ],
+  "judge_why": "States initiation of hair follicle formation via interaction with the dermal condensate."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G04-placode-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not give a specific marker gene for the hair placode.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G05-macrophage-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not say. It states that macrophages express a range of pro-inflammatory genes without naming specific general macrophage marker genes; the specific genes given (for example, P2RY12, CX3CR1, OLFML3) are attributed to the TREM2+ microglia-like subset, not macrophages generally.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G06-macrophage-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Macrophage subsets are predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation (Fig. 1d)."
+  ],
+  "judge_why": "Reports co-location with fibroblasts, neural and vascular cells in early-gestation microenvironments."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G07-macrophage-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper attributes to macrophages roles in scarless skin repair, fibroblast homeostasis, and neurovascular development, including validated contributions to vascular network formation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Our atlas indicated that macrophages contribute to scarless skin repair, fibroblast homeostasis and neurovascular development.",
+   "We used a hair-bearing SkO model to validate the role of macrophages in prenatal skin vascular network formation."
+  ],
+  "judge_why": "Covers scarless repair, fibroblast homeostasis, neurovascular development and vascular network formation."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G08-wnt2fib-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "WNT2+ fibroblasts are marked by COL1A1 (late gestation, ECM/collagen deposition), SFRP1 (early gestation, growth/differentiation), and, shared with PEAR1+ fibroblasts, CDKN1A, IL1R1 and POSTN.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1) (Fig. 3b, Extended Data Fig. 7d and Supplementary Tables 16-18).",
+   "Notably, WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b), which are highly expressed in pathogenic fibroblasts of fibrotic skin disorders."
+  ],
+  "judge_why": "Names COL1A1, SFRP1, CDKN1A, IL1R1 and POSTN as intended."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G09-wnt2fib-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The context does not give a discrete anatomical location for WNT2+ fibroblasts, but notes that they co-locate with LYVE1+ macrophages and, in early gestation, with TML macrophages.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c-e)",
+   "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW)"
+  ],
+  "judge_why": "Gives the LYVE1+ and TML macrophage co-location; accurate as far as it goes."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G10-wnt2fib-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "WNT2+ fibroblasts show gestation-stage-dependent gene programmes: in late gestation they upregulate extracellular matrix and collagen deposition genes, while earlier they express genes tied to cellular growth and differentiation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Late gestation WNT2+ fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2+ fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1) (Fig. 3b, Extended Data Fig. 7d and Supplementary Tables 16-18)."
+  ],
+  "judge_why": "Conveys the late-gestation ECM/collagen versus early growth and differentiation programmes."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G11-tml-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages share an expression profile of P2RY12, CX3CR1 and OLFML3, and co-express immunomodulatory genes including CX3CR1 and SYT11.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages from other developing organs",
+   "co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11)"
+  ],
+  "judge_why": "Gives the P2RY12/CX3CR1/OLFML3 microglial profile; added SYT11 is supported by the quote."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G12-tml-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW) and with Schwann cells in the 'early neurovascular microenvironment' (ME1) of prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6-8 PCW) (Fig. 3c,d) and WNT2+ fibroblasts had downregulated IL6 expression compared with adult fibroblasts (Fig. 3a).",
+   "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1) (Figs. 1d and 3g) and expressed genes related to cell migration and neural development (Fig. 3f, Extended Data Fig. 8c and Supplementary Tables 22 and 23), which mirrored the functions of brain microglia and peripheral nerve-associated macrophages in mouse skin."
+  ],
+  "judge_why": "Matches co-location with WNT2+ fibroblasts at 6-8 PCW and Schwann cells in ME1."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G13-tml-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "TML macrophages are predicted to interact with Schwann cells to support synapse formation and axon guidance, and to promote sprouting angiogenesis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance (VEGFA-NRP1, VEGFA-NRP2, SEMA3C-NRP2 and SEMA3E-PLXND1)",
+   "sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages"
+  ],
+  "judge_why": "States Schwann cell interaction for synapse formation and axon guidance plus sprouting angiogenesis."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G14-dc-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G15-dc-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The dermal condensate is found within the dermal compartment of prenatal skin, first observed from 12 PCW, and it abuts the epithelial hair placode.",
+  "outcome": "leaked",
+  "needs_judge": false,
+  "leaked_quotes": [
+   "the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode"
+  ]
+ },
+ {
+  "arm": "local-comb",
+  "id": "G16-dc-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The dermal condensate, described as an aggregate of dermal fibroblasts, interacts with the epidermal placode to initiate hair follicle formation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)"
+  ],
+  "judge_why": "Names initiation of hair follicle formation with the placode, the main intended point."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G17-matrix-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "Hair matrix cells are marked by SHH, and the paper also lists SHH and WNT10B as known matrix markers.",
+  "outcome": "leaked",
+  "needs_judge": false,
+  "leaked_quotes": [
+   "known matrix markers such as SHH and WNT10B"
+  ]
+ },
+ {
+  "arm": "local-comb",
+  "id": "G18-matrix-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context states that hair matrix cells arise from the epidermal placode but does not give their spatial location within prenatal skin.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G19-matrix-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper suggests hair matrix cells have a potential role in accumulating regulatory T cells and providing immune protection during early hair follicle differentiation, linked to their expression of chemotaxis and autoimmunity-control genes.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "This result highlighted the potential role of Treg cell accumulation and immune protection in the early stages of matrix differentiation"
+  ],
+  "judge_why": "Conveys Treg accumulation and immune protection during early matrix differentiation."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G20-lyve1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not give a list of genes that mark LYVE1+ macrophages; it only discusses their functional interactions and gene programs.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G21-lyve1-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "LYVE1+ macrophages co-locate with WNT2+ fibroblasts in prenatal skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c-e)"
+  ],
+  "judge_why": "Gives co-location with WNT2+ fibroblasts; accurate partial answer."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G22-lyve1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "LYVE1+ macrophages are proposed to help maintain dermal fibroblasts via growth-factor signalling (PDGF, IGF1, GRN) and to drive blood vessel morphogenesis and sprouting angiogenesis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts.",
+   "blood vessel morphogenesis by LYVE1+ macrophages"
+  ],
+  "judge_why": "Covers dermal fibroblast maintenance and blood vessel morphogenesis/sprouting angiogenesis."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G23-fibroblast-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say. It only lists markers for specific fibroblast subsets (e.g. HOXC5+, WNT2+, PEAR1+, FRZB+), not a generic fibroblast marker.",
+  "outcome": "honest_miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G24-fibroblast-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "HOXC5+ early fibroblasts, a fibroblast progenitor population, are located in the upper dermis.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7)."
+  ],
+  "judge_why": "Places HOXC5+ early fibroblasts in the upper dermis, matching the intended dermal location."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G25-fibroblast-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Dermal fibroblasts produce the collagen that aggregates to form scars when the overlying epidermis fails to regenerate.",
+  "outcome": "substituted",
+  "needs_judge": true,
+  "quotes": [
+   "Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate."
+  ],
+  "judge_why": "Quote is real but describes scar formation generally rather than the paper's claim about early-gestation downregulation favouring regeneration."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G26-periderm-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The periderm is an immature interfollicular epidermal (IFE) cell type forming the outer epidermal layer overlying the dermal stroma in early prenatal skin, and it sloughs off from 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b).",
+   "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a)."
+  ],
+  "judge_why": "Outer epidermal layer overlying dermal stroma, sloughing from 11 PCW, as intended."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G27-periderm-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The periderm constitutes the first permeability barrier of the skin.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "the periderm, which constitutes the first skin permeability barrier"
+  ],
+  "judge_why": "States the first skin permeability barrier."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G28-periderm-structure",
+  "axis": "structure",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not describe the structure or morphology of the periderm, only its function and the timing of its sloughing.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G29-hoxc5-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "HOXC5+ early fibroblasts are located in the upper dermis and are abundant before 11 PCW.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c))"
+  ],
+  "judge_why": "Upper dermis, matching the intended answer."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G30-hoxc5-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "HOXC5+ early fibroblasts act as the common fibroblast progenitor that gives rise to pre-Dc, Dc, Dp and other dermal fibroblast subsets.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5+ early fibroblast)"
+  ],
+  "judge_why": "Identifies the common fibroblast progenitor role with both trajectories."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G31-dpysl2-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "DPYSL2+ basal cells are defined by DPYSL2 expression and upregulate AGR2, as well as the ORS-differentiation genes BARX2 and SOX9.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Mature basal (DPYSL2+)",
+   "we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2, and previously reported genes related to ORS differentiation (BARX2 and SOX9)"
+  ],
+  "judge_why": "Gives DPYSL2 and AGR2 and labels BARX2/SOX9 as ORS-differentiation genes, so the attribution is not reversed."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G32-dpysl2-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not attribute a specific function to DPYSL2+ basal cells; it only describes their place in the ORS/CL differentiation trajectory and genes they upregulate.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G33-caparteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The context attributes GJA5 to the arteriolar pathway in general but does not give a marker gene specific to capillary arteriole cells.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G34-caparteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "In prenatal skin, capillary arteriole cells are able to further differentiate into arterioles (unlike in the SkO model), and they show increased sprouting angiogenesis potential as assessed by a 'tip' cell state score.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Unlike SkO capillary arteriole cells, prenatal skin capillary arteriole cells could further differentiate into arterioles (Fig. 4d and Extended Data Fig. 10a).",
+   "However, sprouting angiogenesis potential, assessed by scoring the 'tip' cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells (Extended Data Fig. 10g,h)."
+  ],
+  "judge_why": "Both the differentiation-into-arterioles contrast and the tip-cell score are conveyed."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G35-pear1-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "PEAR1+ fibroblasts upregulate a pro-inflammatory phenotype including APOE, IGFBP7 and ITM2A during their transition from HOXC5+ fibroblasts, and (together with WNT2+ fibroblasts) express CDKN1A, IL1R1 and POSTN.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A), were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts",
+   "WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)"
+  ],
+  "judge_why": "APOE, IGFBP7, ITM2A in the HOXC5+ transition plus the shared senescence/collagen genes."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G36-pear1-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not say. It describes PEAR1+ fibroblasts in terms of gene expression changes (senescence, cytokine pathway, collagen deposition genes) and their emergence after 11 PCW, but does not state a specific function attributed to them.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G37-postn-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "POSTN+ basal cells are one of the basal-cell populations of the interfollicular epidermis (IFE), and they are present throughout gestation.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "In addition, we observed immature and mature interfollicular epidermal (IFE) cells.",
+   "whereas POSTN+ basal cells were present throughout gestation"
+  ],
+  "judge_why": "Basal IFE population present throughout gestation, as intended."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G38-postn-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The paper suggests that increased cell migration in POSTN+ basal cells contributes to hair placode specification and dermal invagination.",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "Our findings suggest that increased cellular migration in POSTN+ basal cells may be involved in placode specification and dermal invagination."
+  ],
+  "judge_why": "States increased migration involved in placode specification and dermal invagination."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G39-arteriole-markers",
+  "axis": "markers",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "GJA5 is given as the characteristic gene marking the arteriolar lineage (as opposed to PLVAP for venular).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"
+  ],
+  "judge_why": "GJA5 correctly attributed to the arteriolar lineage against PLVAP."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G40-arteriole-function",
+  "axis": "function",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "The supplied context does not describe a function for arteriole itself; it only describes arterioles as an endpoint of the differentiation trajectory of endothelial cells.",
+  "outcome": "miss",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G41-cuticle-location",
+  "axis": "location",
+  "expect": "present",
+  "span_in_context": true,
+  "reader_answer": "Cuticle/cortex cells are part of the inner layers of the hair follicle (HF).",
+  "outcome": "correct",
+  "needs_judge": true,
+  "quotes": [
+   "cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+  ],
+  "judge_why": "Inner layers of the hair follicle, as intended."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G42-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G43-wnt2-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G44-tml-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of TML macrophages.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G45-dermal-condensate-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The dermal condensate is described structurally as an aggregate of dermal fibroblasts.",
+  "outcome": "overreach",
+  "needs_judge": true,
+  "quotes": [
+   "dermal condensates (aggregates of dermal fibroblasts)"
+  ],
+  "judge_why": "Presents 'aggregate of dermal fibroblasts' as a structural description where the paper offers no morphology."
+ },
+ {
+  "arm": "local-comb",
+  "id": "G46-matrix-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of hair matrix cells; it discusses their origin and gene expression only.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G47-lyve1-plus-plus-macrophage-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G48-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": null,
+  "outcome": "no_answer",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of HOXC5+ early fibroblasts.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G50-dpysl2-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of DPYSL2+ basal cells.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G51-capillary-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of capillary arterioles; it discusses their differentiation trajectory and gene expression only.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G52-pear1-plus-fibroblast-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G53-postn-plus-basal-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not describe the structure or morphology of POSTN+ basal cells.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G54-arterioles-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ },
+ {
+  "arm": "local-comb",
+  "id": "G55-cuticle-cortex-structure-absent",
+  "axis": "structure",
+  "expect": "absent",
+  "span_in_context": false,
+  "reader_answer": "The supplied context does not say. It notes cuticle/cortex cells are part of the inner layers of the hair follicle, but does not describe their structure or morphology.",
+  "outcome": "correct_decline",
+  "needs_judge": false
+ }
+]

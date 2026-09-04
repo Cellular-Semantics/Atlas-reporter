@@ -1,0 +1,16 @@
+[
+{"arm": "local", "id": "G03-placode-function", "verdict": "correct", "why": "Names the placode as origin of hair matrix cells, WNT/EDA specification and dermal condensate signalling during invagination, matching the intended answer."},
+{"arm": "local", "id": "G07-macrophage-function", "verdict": "correct", "why": "Covers angiogenesis, scarless healing, fibroblast maintenance and neurovascular development, all four intended roles."},
+{"arm": "local", "id": "G08-wnt2fib-markers", "verdict": "correct", "why": "Gives WNT2, COL1A1/ECM late, SFRP1 early, plus CDKN1A, IL1R1 and POSTN; only the IL6 downregulation is omitted."},
+{"arm": "local", "id": "G09-wnt2fib-location", "verdict": "correct", "why": "Dermal location with LYVE1+ macrophage co-location is accurate; omitting the TML co-location is a permitted partial."},
+{"arm": "local", "id": "G10-wnt2fib-function", "verdict": "correct", "why": "ECM/collagen deposition late, growth and differentiation early, and acquisition of a pro-inflammatory/senescence profile are all conveyed."},
+{"arm": "local", "id": "G11-tml-markers", "verdict": "correct", "why": "TREM2 plus the microglia-like P2RY12/CX3CR1/OLFML3 profile is exactly the intended panel."},
+{"arm": "local", "id": "G12-tml-location", "verdict": "correct", "why": "Reports both WNT2+ fibroblast co-location at 6-8 PCW and Schwann cell co-location in ME1."},
+{"arm": "local", "id": "G13-tml-function", "verdict": "correct", "why": "States sprouting angiogenesis and Schwann cell interaction in synapse formation and axon guidance, the two intended functions."},
+{"arm": "local", "id": "G14-dc-markers", "verdict": "correct", "why": "Identifies the Dc as FOXD1+SOX2+ via mouse orthologues, the key intended marker pair."},
+{"arm": "local", "id": "G15-dc-location", "verdict": "correct", "why": "Dermal compartment from 12 PCW abutting the epithelial hair placode matches the intended answer."},
+{"arm": "local", "id": "G16-dc-function", "verdict": "correct", "why": "Conveys aggregation from pre-Dc cells and dermal-epidermal crosstalk in hair follicle development; omission of FAM3C/EFNB1 migration detail is a partial, not an error."},
+{"arm": "local", "id": "G17-matrix-markers", "verdict": "correct", "why": "Names SHH and WNT10B as known hair matrix markers, correctly avoiding the extracellular-matrix sense."},
+{"arm": "local", "id": "G19-matrix-function", "verdict": "correct", "why": "Reports chemotaxis genes CXCL14 and CD24 and the inferred Treg accumulation and immune protection role."},
+{"arm": "local", "id": "G20-lyve1-markers", "verdict": "correct", "why": "Gives LYVE1 and GAS6 and correctly notes the body text offers no fuller marker panel."}
+]

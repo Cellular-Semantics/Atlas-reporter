@@ -1,0 +1,139 @@
+[
+  {
+    "id": "G15-dc-location",
+    "found": true,
+    "answer": "The Dc sits in the dermal compartment of prenatal skin from 12 PCW, as a hair-follicle-specialized fibroblast aggregate abutting the epithelial hair placode; after invagination it becomes encapsulated at the follicle base as the dermal papilla.",
+    "quotes": [
+      "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c).",
+      "In mice, transitional PDGFRA+FOXD1+SOX2low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode,.",
+      "Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+), (Fig. 2c and Extended Data Fig. 3h)."
+    ]
+  },
+  {
+    "id": "G16-dc-function",
+    "found": true,
+    "answer": "The Dc participates in mesenchymal-epithelial crosstalk driving hair follicle formation: its formation accompanies placode invagination, and it expresses FAM3C and EFNB1 predicted to signal to receptors on the placode and reported to promote cell migration and invasion. Prenatal hair follicle formation more broadly is initiated by interactions between epidermal placodes and dermal condensates.",
+    "quotes": [
+      "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion, (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8).",
+      "Prenatal HFs start forming between 11 and 14 post-conception weeks (PCW), initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts), whereas sebaceous glands develop from around 16 PCW."
+    ]
+  },
+  {
+    "id": "G17-matrix-markers",
+    "found": true,
+    "answer": "Matrix cells are identified as SHH+, with SHH and WNT10B described as known matrix markers upregulated along the IRS trajectory. Relative to adult hair follicles, prenatal matrix cells also show increased CXCL14 and CD24 expression.",
+    "quotes": [
+      "Consistent with our histological observations, we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH+), outer root sheath (ORS) (SLC26A7+), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a–c, Extended Data Fig. 3a,b and Supplementary Table 6).",
+      "AGR2 was downregulated along the IRS trajectory, whereas known matrix markers such as SHH and WNT10B, were upregulated (Extended Data Fig. 4b,c and Supplementary Table 7).",
+      "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (Treg) cells, and in control of autoimmunity (CD24)."
+    ]
+  },
+  {
+    "id": "G18-matrix-location",
+    "found": true,
+    "answer": "Matrix cells are hair follicle epithelial cells detected in prenatal skin from 14 PCW; they arise from the epidermal placode and lie overlying the dermal papilla. They are a prenatal-specific state absent from established adult hair follicles.",
+    "quotes": [
+      "Consistent with our histological observations, we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH+), outer root sheath (ORS) (SLC26A7+), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF) (Fig. 2a–c, Extended Data Fig. 3a,b and Supplementary Table 6).",
+      "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs (Extended Data Fig. 3d,e).",
+      "Finally, RSPO3 from the Dp was predicted to interact with LGR4 and LGR6 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8) in overlying matrix cells to contribute to the proliferation of HF epithelial cells."
+    ]
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": true,
+    "answer": "Matrix cells differentiate along the IRS trajectory towards cuticle/cortex and inner root sheath, and prenatal matrix cells express chemotactic and immune-regulatory genes (CXCL14, CD24) suggesting a role in Treg cell recruitment and immune protection during early matrix differentiation. Their differentiation is coordinated by Dp-derived signals (RSPO3, WNT5A), with RSPO3-LGR4/LGR6 contributing to proliferation of hair follicle epithelial cells.",
+    "quotes": [
+      "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (Treg) cells, and in control of autoimmunity (CD24). This result highlighted the potential role of Treg cell accumulation and immune protection in the early stages of matrix differentiation (Extended Data Fig. 3f).",
+      "Formation of the Dp was characterized by genes (RSPO3 and WNT5A) (Extended Data Fig. 4f and Supplementary Table 7) that coordinate the differentiation of adjacent hair matrix cells,.",
+      "Finally, RSPO3 from the Dp was predicted to interact with LGR4 and LGR6 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8) in overlying matrix cells to contribute to the proliferation of HF epithelial cells."
+    ]
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": true,
+    "answer": "The subset is named for LYVE1 expression and is one of four prenatal skin macrophage subsets; the only other gene the context states it expresses is GAS6 (shared with TML macrophages). No full marker panel is given.",
+    "quotes": [
+      "Gene ontology analysis showed that the four macrophage subsets (LYVE1+, MHCII+, TML and iron-recycling) expressed gene programs that drive angiogenesis (Supplementary Tables 23–26).",
+      "Additionally, GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair,."
+    ]
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": true,
+    "answer": "LYVE1+ macrophages are found in prenatal skin co-located with WNT2+ fibroblasts, and imaging placed LYVE1+ macrophages in close proximity to endothelial cells; macrophage subsets more generally were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct microenvironments in early gestation.",
+    "quotes": [
+      "Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e) and were predicted to interact through platelet-derived growth factors (PDGFs) and corresponding receptors (PDGFRα and PDGFRβ) expressed on fibroblasts (Extended Data Fig. 7g and Supplementary Table 8).",
+      "Consistent with this finding, multiplex RNAscope and immunofluorescence staining showed LYVE1+ and TML macrophages in close proximity to endothelial cells (Fig. 4a and Supplementary Video 1).",
+      "In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation (Fig. 1d)."
+    ]
+  },
+  {
+    "id": "G22-lyve1-function",
+    "found": true,
+    "answer": "LYVE1+ macrophages are proposed to maintain prenatal skin dermal fibroblasts through PDGF, IGF1-IGF1R and GRN-EGFR interactions, and to promote angiogenesis - specifically sprouting angiogenesis and blood vessel morphogenesis. Their GAS6 is predicted to engage AXL on WNT2+ fibroblasts, an interaction linked to immunosuppression and tissue repair.",
+    "quotes": [
+      "Our identification of additional growth factor interactions (IGF1–IGF1R and GRN–EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1+ macrophages play a part in the maintenance of prenatal skin dermal fibroblasts.",
+      "Gene module expression profiles suggested that sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages, blood vessel morphogenesis by LYVE1+ macrophages and endothelial cell chemotaxis by iron-recycling macrophages (Extended Data Fig. 8i and Supplementary Table 27).",
+      "Additionally, GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair,."
+    ]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": true,
+    "answer": "Prenatal skin fibroblast subsets are defined by HOXC5 (early fibroblasts), WNT2, PEAR1 and FRZB; hair-specialized fibroblasts are marked by PDGFRA/FOXD1/SOX2low (pre-Dc), FOXD1+SOX2+ (Dc) and NDP+SOX2+ (Dp). Human prenatal fibroblasts did not significantly express the papillary fibroblast marker COL13A1.",
+    "quotes": [
+      "Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7).",
+      "In mice, transitional PDGFRA+FOXD1+SOX2low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode,.",
+      "Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+), (Fig. 2c and Extended Data Fig. 3h).",
+      "Our human prenatal skin fibroblasts did not significantly express papillary fibroblast markers (for example, COL13A1) (Extended Data Fig. 5j), which suggested that the distinction between papillary and reticular fibroblasts emerges after 17 PCW."
+    ]
+  },
+  {
+    "id": "G24-fibroblast-location",
+    "found": true,
+    "answer": "Fibroblasts are dermal cells: HOXC5+ early fibroblasts sit in the upper dermis, and hair-specialized fibroblasts (Dc, Dp) are found in the dermal compartment from 12 PCW; dermal condensates are aggregates of dermal fibroblasts abutting the epidermal placode. Mesoderm-derived cells including skin fibroblasts are present throughout gestation.",
+    "quotes": [
+      "Inferred trajectory analysis predicted that HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f) and abundant before 11 PCW (Extended Data Fig. 3c)) differentiated along two paths: the first (hair fibroblast trajectory) formed hair-specialized fibroblasts (pre-Dc cells, the Dc and Dp) and the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW) (Fig. 2e, Extended Data Figs. 3c and 4d and Supplementary Table 7).",
+      "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c).",
+      "Mesoderm-derived cells, including skin fibroblasts and endothelial cells, and immune cells were present throughout gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4)."
+    ]
+  },
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "Fibroblasts produce the collagen whose aggregation causes scars, and prenatal fibroblasts instead upregulate immune suppression, inflammation regulation and tissue regeneration genes, which may favour scarless healing before they progressively acquire scar-promoting, pro-inflammatory profiles in later gestation. Hair-specialized fibroblasts also drive hair follicle morphogenesis through crosstalk with epidermal cells, including CXCL12-ACKR3-mediated pre-Dc migration.",
+    "quotes": [
+      "Scars result from aggregation of collagen produced by dermal fibroblasts and failure of the overlying epidermis to completely regenerate.",
+      "By contrast, prenatal skin fibroblasts had upregulated genes involved in immune suppression (CD200), regulation of inflammation (for example, RAMP2) and tissue regeneration (MDK) (Fig. 3a and Supplementary Tables 13–15).",
+      "Collectively, our findings suggest that prenatal skin fibroblasts in early gestation downregulate genes involved in extracellular matrix formation, collagen deposition and inflammation, which may favour tissue regeneration over scarring.",
+      "We delineated the dermal cell types involved in crosstalk with epidermal cells during HF development and captured the precursors of the human Dc (Extended Data Figs. 2b and 3c)."
+    ]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "Periderm is an ectoderm-derived immature interfollicular epidermal cell type of prenatal skin, present from 7 PCW and enriched in early gestation; it overlies the dermal stroma as part of the epidermal layer and is seen sloughing from 11 PCW.",
+    "quotes": [
+      "Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4).",
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b)."
+    ]
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": true,
+    "answer": "The periderm constitutes the first skin permeability barrier.",
+    "quotes": [
+      "Among ectoderm-derived cells, neural cells and the periderm, which constitutes the first skin permeability barrier, were enriched in early gestation, whereas suprabasal epidermal and HF cells were mainly observed in later gestation (Fig. 1c, Extended Data Fig. 1d and Supplementary Table 4)."
+    ]
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": true,
+    "answer": "The only morphological statement is histological: the periderm is seen sloughing from 11 PCW, above the layer of epidermal cells overlying the dermal stroma; it is classed as an immature interfollicular epidermal cell state. No further structural description is given.",
+    "quotes": [
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b)."
+    ]
+  }
+]

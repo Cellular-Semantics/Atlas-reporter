@@ -1,0 +1,53 @@
+[
+  {
+    "id": "G40-arteriole-function",
+    "found": true,
+    "answer": "The paper reports that arteriole cells (along with capillary arteriole and capillary cells) showed increased sprouting angiogenesis potential, based on scoring of a 'tip' cell state.",
+    "quotes": ["sprouting angiogenesis potential, assessed by scoring the ‘tip’ cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells"]
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": true,
+    "answer": "The paper suggests that prenatal hair matrix cells, through increased expression of the chemokine CXCL14, may recruit regulatory T (Treg) cells, pointing to a potential role in Treg cell accumulation and immune protection during early matrix differentiation.",
+    "quotes": [
+      "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (Treg) cells, and in control of autoimmunity (CD24).",
+      "This result highlighted the potential role of Treg cell accumulation and immune protection in the early stages of matrix differentiation"
+    ]
+  },
+  {
+    "id": "G15-dc-location",
+    "found": true,
+    "answer": "The dermal condensate is found within the dermal compartment of prenatal skin, from 12 PCW onward, where it abuts the epithelial hair placode.",
+    "quotes": [
+      "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW",
+      "which abuts the epithelial hair placode"
+    ]
+  },
+  {
+    "id": "G02-placode-location",
+    "found": true,
+    "answer": "The hair placode is an epidermal structure, arising via budding of basal cells in the epidermis, described in the paper as the 'epidermal placode.'",
+    "quotes": [
+      "At 14–15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed",
+      "hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs"
+    ]
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": true,
+    "answer": "The only gene explicitly indicated in the supplied context as marking this macrophage population is LYVE1 itself, as reflected in the population's name throughout the text.",
+    "quotes": ["LYVE1+ macrophages co-located with WNT2+ fibroblasts"]
+  },
+  {
+    "id": "G51-capillary-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of capillary arteriole cells; it discusses their transcriptional and functional properties (e.g. differentiation potential, gene expression, angiogenesis signalling) but not their structural or morphological features.",
+    "quotes": []
+  },
+  {
+    "id": "G46-matrix-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say anything about the structure or morphology of hair matrix cells; it discusses their gene expression, origin and differentiation but not their structural or morphological characteristics.",
+    "quotes": []
+  }
+]

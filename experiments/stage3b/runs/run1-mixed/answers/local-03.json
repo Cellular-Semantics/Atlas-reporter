@@ -1,0 +1,65 @@
+[
+  {
+    "id": "G15-dc-location",
+    "found": true,
+    "answer": "The dermal condensate sits in the dermal compartment of prenatal skin, observed from 12 PCW, and lies immediately beneath/abutting the epithelial hair placode; after hair follicle invagination it becomes encapsulated at the follicle base as the dermal papilla.",
+    "quotes": [
+      "Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW (Extended Data Fig. 3c).",
+      "In mice, transitional PDGFRA+FOXD1+SOX2low fibroblasts termed pre-Dc cells aggregate to form the Dc (FOXD1+SOX2+), which abuts the epithelial hair placode,.",
+      "Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+), (Fig. 2c and Extended Data Fig. 3h)."
+    ]
+  },
+  {
+    "id": "G16-dc-function",
+    "found": true,
+    "answer": "The Dc is presented as a hair-follicle-specialised dermal population that takes part in dermal–epidermal crosstalk during hair follicle development: it forms by aggregation of pre-Dc cells next to the epithelial hair placode and subsequently becomes the dermal papilla, which expresses genes coordinating differentiation of adjacent hair matrix cells.",
+    "quotes": [
+      "We delineated the dermal cell types involved in crosstalk with epidermal cells during HF development and captured the precursors of the human Dc (Extended Data Figs. 2b and 3c).",
+      "Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+), (Fig. 2c and Extended Data Fig. 3h).",
+      "Genes implicated in collagen fibril formation and cell adhesion (COL6A3, MFAP4 and PTK7) were expressed as the pre-Dc cells aggregated into the Dc (Extended Data Fig. 4f and Supplementary Table 7)."
+    ]
+  },
+  {
+    "id": "G17-matrix-markers",
+    "found": true,
+    "answer": "SHH and WNT10B are cited as known matrix markers, upregulated along the IRS trajectory. Compared with adult hair follicles, prenatal matrix cells also showed increased expression of CXCL14 and CD24.",
+    "quotes": [
+      "AGR2 was downregulated along the IRS trajectory, whereas known matrix markers such as SHH and WNT10B, were upregulated (Extended Data Fig. 4b,c and Supplementary Table 7).",
+      "Compared with adult HFs, prenatal skin matrix cells had increased expression of genes involved in chemotaxis, such as CXCL14, a chemokine previously reported to recruit regulatory T (Treg) cells, and in control of autoimmunity (CD24)."
+    ]
+  },
+  {
+    "id": "G18-matrix-location",
+    "found": false,
+    "answer": "The supplied context does not state where in prenatal skin hair matrix cells are located; it only says they arise from the epidermal placode and are a prenatal-specific state absent from established adult hair follicles.",
+    "quotes": []
+  },
+  {
+    "id": "G19-matrix-function",
+    "found": true,
+    "answer": "Matrix cells are an epidermal-placode-derived, prenatal-specific state on the IRS differentiation trajectory (placode to matrix to cuticle/cortex to IRS). Their raised chemotaxis and autoimmunity-control gene expression is interpreted as a role in Treg cell accumulation and immune protection during early matrix differentiation, and their differentiation is coordinated by dermal papilla genes.",
+    "quotes": [
+      "We evaluated hair matrix cells, which arise from the epidermal placode, a prenatal-specific cell state absent in established adult HFs (Extended Data Fig. 3d,e).",
+      "This result highlighted the potential role of Treg cell accumulation and immune protection in the early stages of matrix differentiation (Extended Data Fig. 3f).",
+      "Formation of the Dp was characterized by genes (RSPO3 and WNT5A) (Extended Data Fig. 4f and Supplementary Table 7) that coordinate the differentiation of adjacent hair matrix cells,."
+    ]
+  },
+  {
+    "id": "G20-lyve1-markers",
+    "found": true,
+    "answer": "The context gives no marker gene list for this subset; besides LYVE1 in the subset's own name, the only gene explicitly stated to be expressed by LYVE1+ macrophages is GAS6 (shared with TML macrophages).",
+    "quotes": [
+      "Additionally, GAS6, expressed by TML macrophages and LYVE1+ macrophages, was predicted to interact with AXL receptors on WNT2+ fibroblasts (Extended Data Fig. 7g and Supplementary Table 8), and these interactions can induce immunosuppression and tissue repair,."
+    ]
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": true,
+    "answer": "LYVE1+ macrophages are predicted to co-locate with WNT2+ fibroblasts in prenatal skin; more broadly, macrophage subsets co-locate with fibroblasts, neural and vascular cells in distinct tissue microenvironments in early gestation, including with endothelial cells in the early and late neurovascular microenvironments.",
+    "quotes": [
+      "Specifically, LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e) and were predicted to interact through platelet-derived growth factors (PDGFs) and corresponding receptors (PDGFRα and PDGFRβ) expressed on fibroblasts (Extended Data Fig. 7g and Supplementary Table 8).",
+      "In prenatal skin, macrophage subsets (Extended Data Fig. 7e,f) were predicted to co-locate with fibroblasts, neural cells and vascular cells in distinct tissue microenvironments in early gestation (Fig. 1d).",
+      "Visium deconvolution analysis predicted co-location of prenatal skin macrophages with endothelial cells (‘early and late neurovascular microenvironments’, ME1 and ME5) (Fig. 1d and Extended Data Fig. 1e)."
+    ]
+  }
+]

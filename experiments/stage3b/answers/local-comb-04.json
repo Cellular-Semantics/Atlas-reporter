@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G16-dc-function",
+    "found": true,
+    "answer": "The dermal condensate, described as an aggregate of dermal fibroblasts, interacts with the epidermal placode to initiate hair follicle formation.",
+    "quotes": ["initiated by interactions between epidermal placodes (focal sites of epidermal layer thickening) and dermal condensates (aggregates of dermal fibroblasts)"]
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": true,
+    "answer": "The periderm constitutes the first permeability barrier of the skin.",
+    "quotes": ["the periderm, which constitutes the first skin permeability barrier"]
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": true,
+    "answer": "LYVE1+ macrophages co-locate with WNT2+ fibroblasts in prenatal skin.",
+    "quotes": ["LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e)"]
+  },
+  {
+    "id": "G39-arteriole-markers",
+    "found": true,
+    "answer": "GJA5 is given as the characteristic gene marking the arteriolar lineage (as opposed to PLVAP for venular).",
+    "quotes": ["expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"]
+  },
+  {
+    "id": "G35-pear1-markers",
+    "found": true,
+    "answer": "PEAR1+ fibroblasts upregulate a pro-inflammatory phenotype including APOE, IGFBP7 and ITM2A during their transition from HOXC5+ fibroblasts, and (together with WNT2+ fibroblasts) express CDKN1A, IL1R1 and POSTN.",
+    "quotes": ["Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A), were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts", "WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)"]
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": true,
+    "answer": "The dermal condensate is described structurally as an aggregate of dermal fibroblasts.",
+    "quotes": ["dermal condensates (aggregates of dermal fibroblasts)"]
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of the periderm, only its function and the timing of its sloughing.",
+    "quotes": []
+  }
+]

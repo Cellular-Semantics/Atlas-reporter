@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G16-dc-function",
+    "found": false,
+    "answer": "The supplied context describes formation and origin of the dermal condensate but does not state a function attributed to it.",
+    "quotes": []
+  },
+  {
+    "id": "G27-periderm-function",
+    "found": true,
+    "answer": "The periderm constitutes the first permeability barrier of the skin.",
+    "quotes": ["the periderm, which constitutes the first skin permeability barrier"]
+  },
+  {
+    "id": "G21-lyve1-location",
+    "found": true,
+    "answer": "LYVE1+ macrophages co-locate with WNT2+ fibroblasts.",
+    "quotes": ["LYVE1+ macrophages co-located with WNT2+ fibroblasts (Fig. 3c–e)"]
+  },
+  {
+    "id": "G39-arteriole-markers",
+    "found": true,
+    "answer": "GJA5 is given as the characteristic gene for the arteriolar pathway.",
+    "quotes": ["with expression of characteristic genes (for example, GJA5 for arteriolar and PLVAP for venular)"]
+  },
+  {
+    "id": "G35-pear1-markers",
+    "found": true,
+    "answer": "PEAR1+ fibroblasts are defined by PEAR1, and genes such as APOE, IGFBP7 and ITM2A are upregulated during the transition into this state.",
+    "quotes": ["the second (dermal fibroblast trajectory) formed WNT2+ fibroblasts and PEAR1+ fibroblasts (abundant after 11 PCW)", "Genes associated with a pro-inflammatory fibroblast phenotype (APOE, IGFBP7 and ITM2A), were also upregulated during the transition from HOXC5+ fibroblasts into PEAR1+ fibroblasts"]
+  },
+  {
+    "id": "G45-dermal-condensate-structure-absent",
+    "found": true,
+    "answer": "The paper states that following HF invagination, the dermal condensate becomes encapsulated at its base as it forms the dermal papilla.",
+    "quotes": ["Following HF invagination, the Dc becomes encapsulated at its base as the Dp (NDP+, SOX2+)"]
+  },
+  {
+    "id": "G28-periderm-structure",
+    "found": true,
+    "answer": "The periderm is described as sloughing off from 11 PCW, a structural/morphological change in the epidermal layer.",
+    "quotes": ["with the periderm seen sloughing from 11 PCW"]
+  }
+]

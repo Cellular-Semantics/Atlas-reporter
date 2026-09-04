@@ -1,0 +1,16 @@
+[
+{"arm": "whole", "id": "G01-placode-structure", "verdict": "correct", "why": "Gives focal epidermal thickening, budding of basal cells and invagination, matching the intended answer."},
+{"arm": "whole", "id": "G02-placode-location", "verdict": "correct", "why": "Places the placode in the epidermis/basal epidermis with the dermal condensate abutting it from below."},
+{"arm": "whole", "id": "G03-placode-function", "verdict": "correct", "why": "States initiation of hair follicle formation with the dermal condensate and origin of hair matrix cells; extra trajectory detail is additive."},
+{"arm": "whole", "id": "G05-macrophage-markers", "verdict": "correct", "why": "Correctly handles the broad label by giving per-subset markers including MHCII and the TREM2/P2RY12/CX3CR1/OLFML3 microglia-like set."},
+{"arm": "whole", "id": "G06-macrophage-location", "verdict": "correct", "why": "Names seeding from 6 PCW and co-location with endothelial/neural cells in ME1 and ME5, plus fibroblast co-location."},
+{"arm": "whole", "id": "G07-macrophage-function", "verdict": "correct", "why": "Covers angiogenesis/vessel remodelling, scarless repair, fibroblast homeostasis and neural development."},
+{"arm": "whole", "id": "G08-wnt2fib-markers", "verdict": "correct", "why": "Reports WNT2, late COL1A1/ECM, early SFRP1, plus CDKN1A, IL1R1, POSTN and downregulated IL6."},
+{"arm": "whole", "id": "G09-wnt2fib-location", "verdict": "correct", "why": "Dermal, co-locating with LYVE1+ macrophages and with TML macrophages at 6-8 PCW, as intended."},
+{"arm": "whole", "id": "G10-wnt2fib-function", "verdict": "correct", "why": "Captures the early growth/differentiation to late ECM-collagen shift and acquisition of a senescent, pro-inflammatory adult-like profile."},
+{"arm": "whole", "id": "G11-tml-markers", "verdict": "correct", "why": "Gives TREM2 with P2RY12, CX3CR1, OLFML3 and GAS6, matching the intended marker set."},
+{"arm": "whole", "id": "G12-tml-location", "verdict": "correct", "why": "Names WNT2+ fibroblast co-location at 6-8 PCW, Schwann cells in ME1, and proximity to endothelial cells."},
+{"arm": "whole", "id": "G13-tml-function", "verdict": "correct", "why": "Includes sprouting angiogenesis and the Schwann cell interaction for synapse formation and axon guidance; other roles are additive, not contradictory."},
+{"arm": "whole", "id": "G14-dc-markers", "verdict": "correct", "why": "Gives FOXD1+SOX2+ with the PDGFRA+FOXD1+SOX2low pre-Dc precursor and FAM3C/EFNB1."},
+{"arm": "whole", "id": "G15-dc-location", "verdict": "correct", "why": "Dermal compartment from 12 PCW abutting the epithelial hair placode, as intended."}
+]

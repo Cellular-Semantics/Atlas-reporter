@@ -1,0 +1,56 @@
+[
+  {
+    "id": "G25-fibroblast-function",
+    "found": true,
+    "answer": "Fibroblasts are attributed extracellular matrix and collagen deposition (in late gestation WNT2 + fibroblasts) versus cellular growth and differentiation programmes in early gestation, and fibroblast features are proposed to underlie the capacity of prenatal skin to heal without scarring.",
+    "quotes": [
+      "Late gestation WNT2 + fibroblasts had upregulated genes related to extracellular matrix and collagen deposition (for example, COL1A1), whereas early WNT2 + fibroblasts had DEGs involved in cellular growth and differentiation (for example, SFRP1)",
+      "A combination of fibroblast and macrophage-associated molecular features potentially contribute to the ability of prenatal skin to heal without scarring, including the presence of fibroblast progenitors, a downregulated immune milieu and reduced collagen expression."
+    ]
+  },
+  {
+    "id": "G03-placode-function",
+    "found": true,
+    "answer": "The context describes the placode only as the epithelial partner in the mesenchymal-epithelial interactions that instruct early hair follicle formation, bearing receptors (LAMP1 or CXADR and EPHB6) for Dc-derived ligands reported to promote cell migration and invasion.",
+    "quotes": [
+      "We explored the mesenchymal-epithelial interactions that instruct early HF formation.",
+      "The Dc, for which formation is accompanied by invagination of the placode, expressed FAM3C and EFNB1, which were, respectively, predicted to interact with LAMP1 or CXADR and EPHB6 on the placode, and have been reported to promote cell migration and invasion"
+    ]
+  },
+  {
+    "id": "G06-macrophage-location",
+    "found": true,
+    "answer": "Macrophages are described by co-location: TREM2 + microglia-like macrophages co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW) and with Schwann cells in an early neurovascular microenvironment (ME1).",
+    "quotes": [
+      "TML macrophages were predicted to co-locate with WNT2 + fibroblasts in early prenatal skin (6-8 PCW) (Fig. 3c,d)",
+      "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin ('early neurovascular microenvironment', ME1) (Figs. 1d and 3g)"
+    ]
+  },
+  {
+    "id": "G33-caparteriole-markers",
+    "found": false,
+    "answer": "The supplied context does not give marker genes for capillary arteriole cells; it names characteristic genes only at the level of the whole arteriolar versus venular trajectory, and other genes mentioned are receptors or regulons compared between organoid and prenatal skin.",
+    "quotes": []
+  },
+  {
+    "id": "G04-placode-markers",
+    "found": false,
+    "answer": "The supplied context does not state marker genes for the hair placode.",
+    "quotes": []
+  },
+  {
+    "id": "G48-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of fibroblasts.",
+    "quotes": []
+  },
+  {
+    "id": "G01-placode-structure",
+    "found": true,
+    "answer": "The placode is described as a bud of basal cells seen at 14-15 PCW, and its formation involves invagination of the placode as the dermal condensate forms.",
+    "quotes": [
+      "At 14-15 PCW, budding of basal cells (hair placode and germ cells) and elongation of HFs (hair pegs) were observed (Fig. 2a).",
+      "The Dc, for which formation is accompanied by invagination of the placode"
+    ]
+  }
+]

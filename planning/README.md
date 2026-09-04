@@ -16,24 +16,32 @@ directly relevant to atlas-reporter's primary aim.
 
 | # | line of work | question | where |
 |---|---|---|---|
-| 1 | **Ranking** | Inside one paper, is ranked retrieval worth anything over reading from the front? | `retrieval_stage1_*` |
-| 2 | **Reading** | Given a slice of text, does a model answer correctly, and can its quotes be trusted? | `retrieval_stage2_*` |
-| 3 | **Grounded naming** | Can we author realistic, answerable questions across *many* cell types, and what does a quote requirement buy? | `retrieval_stage3b_results_2026-08.md` |
+| 1 | **Ranking** | Inside one paper, is ranked retrieval worth anything over reading from the front? | report §4 |
+| 2 | **Reading** | Given a slice of text, does a model answer correctly, and can its quotes be trusted? | report §5 |
+| 3 | **Grounded naming** | Can we author realistic, answerable questions across *many* cell types, and what does a quote requirement buy? | report §6 |
 | 4 | **Citation traversal** | Can we follow citations out of an atlas paper — reach the cited paper, retrieve evidence, and check the claim? | `citation_traversal/` |
 
+**Lines 1–3 now have one integrated write-up:
+`experiments/retrieval_tests_report_2026-09.md`.** It replaces the nine separate
+plan-and-results documents those lines used to have, which are archived unchanged at
+`experiments/archive_2026-09_superseded_writeups/`. Read the report, not the archive — three
+figures in the old documents do not match the data, and one class of result in them is now
+known to be unsound (report §7). The summaries below are kept as a map and are correct as far
+as they go, but the report is the authority.
+
+Line 4 is unaffected and still lives in `planning/citation_traversal/`.
+
 Naming warning, since it caused real confusion: **line 3 and line 4 both used "Stage 3"
-labels while running concurrently in the same worktree.** Line 3 is "Stage 3b" and its data is
-in `experiments/stage3b/`. Line 4 has since been renamed to describe itself and lives entirely
-in `planning/citation_traversal/` and `experiments/citation_traversal/`. The
-supplement-derived "Stage 3" designed in `HANDOFF_stage3_extended_test.md` is a **fifth** thing
-that was never run.
+labels while running concurrently in the same worktree.** The report drops stage numbering
+entirely and maps the old names in its §11.3. The supplement-derived "Stage 3" designed in the
+archived handoff is a **fifth** thing that was never run.
 
 ---
 
 ## 1. Ranking — is ordering a paper worth anything?
 
-`retrieval_stage1_results_2026-08.md` · setup findings in `retrieval_stage1_setup_findings_2026-08.md`
-· plan in `retrieval_matrix_plan_2026-08.md` · no model calls, fully deterministic
+Report §4 (Test 1); constraints found while building it in §3 · no model calls, fully
+deterministic · data in `experiments/results/`
 
 Five ways of ordering one paper's chunks, measured as tokens-to-answer.
 
@@ -49,36 +57,43 @@ Five ways of ordering one paper's chunks, measured as tokens-to-answer.
 
 ## 2. Reading — does the model answer, and are its quotes real?
 
-`retrieval_stage2_results_2026-08.md` · plan in `retrieval_stage2_plan_2026-08.md`
-· 231 reads, 42 items × 3 conditions × 2 models
+Report §5 (Test 2) · 231 reads, 42 items × 3 conditions × 2 models · data in
+`experiments/stage2/`
 
-- **Fabrication is essentially absent** — 1 fabrication and 3 wrong answers in 210 reads.
+- **Nothing was invented** — no read produced a quote with no source in the context. Four
+  wrong answers in 231 reads, all on one item.
 - **Absence is reported reliably** — 18/18 when the passage was genuinely withheld.
-- **Haiku splices quotes across non-adjacent passages; Sonnet never does.** All 10 splices are
-  Haiku's. Splices fail exact-substring quote validation, so this argues against Haiku for
+- **Haiku splices quotes across non-adjacent passages; Sonnet never does.** All 13 splices are
+  Haiku's (the old write-up said 10; it predates the ASTA condition). Splices fail
+  exact-substring quote validation, so this argues against Haiku for
   evidence gathering regardless of cost.
 - **A 2k slice and the whole paper are equivalent on accuracy.** The case for retrieval is
   cost, not accuracy.
 - **Citation-following scored 0/12, correctly declined** — because our corpus stripped the
   reference list. That gap is what line 4 went on to address.
-- The document opens with a corrections note retracting two findings from an earlier draft.
-  Five scoring defects were found during the run, all biased against the readers.
+- The archived write-up opens with a corrections note retracting two findings from an earlier
+  draft. Six scoring defects were found during this run, all biased against the readers; the
+  report's §7 catalogues all nine found across lines 1–3.
 
 ## 3. Grounded naming — realistic questions across many cell types
 
-`retrieval_stage3b_results_2026-08.md` · 167 reads, 77 judge verdicts, 55 items × 3 conditions
-· data in `experiments/stage3b/`, name roster in `experiments/roster/`
+Report §6 (Test 3) · **two full runs: 660 reads, 355 judge verdicts, 55 items × 6 conditions ×
+2 reader models** · data in `experiments/stage3b/`, name roster in `experiments/roster/`
 
 Lines 1 and 2 used 42 items drawn mostly from one cell type. Testing the pipeline properly
 needs many questions across many cell types, phrased as the authors phrase things and known to
 be answerable — which requires knowing what the authors actually call each cell type.
 
 - **Requiring a verbatim quote eliminated unsourced answering entirely**: with no context the
-  reader declined 55/55, and across 167 reads there were zero fabricated quotes and zero
-  substitutions.
-- **A 1.9k retrieved slice scored 49/55 against 51/55 for the whole paper**, confirming the
-  equivalence finding on a broader item set.
-- Most residual failures were defects in the items, not reader errors.
+  reader declined 55/55 in both runs, and across all 660 reads there were zero fabricated
+  quotes.
+- **A 1.9k retrieved slice ties the whole paper on accuracy** — but the whole paper is fetched
+  once and reused across questions, so it was about **three times cheaper per question**.
+  Retrieval's saving depends on how many questions are asked of one paper.
+- **The reader model moved results more than any retrieval choice** (net 40-to-6 between runs,
+  against a five-item spread across retrieval conditions), and the two models fail differently:
+  one declines, the other produces sourced wrong answers that quote validation cannot catch.
+- Four of the 55 items are defective, so 44/55 is a floor and not a benchmark.
 
 ## 4. Citation traversal — following references out of the atlas paper
 
@@ -116,9 +131,7 @@ same folder: `citation_traversal/aims.md`,
 | document | what it is |
 |---|---|
 | `supplement_corpus_findings_2026-08.md` | What a real supplementary-material corpus looks like — 22 papers, eight publishers. Reachability, retrieval routes, failure modes, cost. |
-| `retrieval_test_items_draft_2026-08.md` | The original 57-item question set, human-readable, grouped by question type (literal, located, synthesis, citation-following, supplement, absent). |
-| `HANDOFF_stage3_extended_test.md` | Design for a supplement-derived test that was **never run**. Its "hard-won rules" section is still the best single list of scoring traps on this branch. |
-| `retrieval_matrix_plan_2026-08.md` | The original plan for lines 1–2. Useful for what was deliberately excluded. |
+| `../experiments/archive_2026-09_superseded_writeups/` | The nine superseded documents for lines 1–3, archived unchanged with a README mapping each to the section that replaced it. Kept for their reasoning and worked examples; **do not quote figures from them**. |
 | `ROADMAP_pre_2026-08_superseded.md` | Superseded. |
 
 ---
@@ -127,9 +140,12 @@ same folder: `citation_traversal/aims.md`,
 
 Worth stating once, because each was rediscovered independently:
 
-1. **Scoring harnesses fail closed.** Every scoring defect found on this branch — five in line
-   2, four in line 4 — made retrieval or the reader look *worse* than it was. Check a new
-   scorer's bias deliberately rather than waiting to notice it.
+1. **Scoring harnesses fail closed — usually.** Thirteen scoring defects have been found on
+   this branch: nine across lines 1–3, four in line 4. Twelve made retrieval or the reader look
+   *worse* than it was. The thirteenth ran the other way — treating one marked sentence as the
+   only evidence for an answer, which understated retrieval coverage and excused reader
+   declines (report §7.1). Check a new scorer's bias deliberately, in both directions, rather
+   than waiting to notice it. None of the thirteen was caught by a test.
 2. **Never derive answer keys from prose.** Keys should come from markup, a table lookup, or an
    explicitly stated intended answer. Regex over prose cannot tell an answer from an aside.
 3. **Quote validity is not correctness.** `correct`, `grounded-but-wrong`, and `fabricated` are

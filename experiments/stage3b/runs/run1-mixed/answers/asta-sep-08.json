@@ -1,0 +1,50 @@
+[
+  {
+    "id": "G07-macrophage-function",
+    "found": true,
+    "answer": "Macrophages are attributed non-immune morphogenetic roles: contributing to prenatal skin angiogenesis, maintaining dermal fibroblasts via growth factor interactions, and supporting establishment of the skin peripheral nervous system in early gestation.",
+    "quotes": [
+      "Our data suggested that macrophages contribute to prenatal skin angiogenesis.",
+      "Our identification of additional growth factor interactions (IGF1-IGF1R and GRN-EGFR) (Extended Data Fig. 7g and Supplementary Table 8) suggests that LYVE1 + macrophages play a part in the maintenance of prenatal skin dermal fibroblasts.",
+      "These findings suggest that prenatal skin macrophages may support the establishment of the skin peripheral nervous system during early gestation, as previously reported in mouse skin 65 ."
+    ]
+  },
+  {
+    "id": "G41-cuticle-location",
+    "found": true,
+    "answer": "Cuticle and cortex cells are hair follicle cells forming part of the inner layers of the follicle, identified in prenatal skin from 14 PCW.",
+    "quotes": [
+      "Consistent with our histological observations, we identified HF cells from 14 PCW in our scRNA-seq data, which comprised placode, matrix (SHH + ), outer root sheath (ORS) (SLC26A7 + ), companion layer (CL), inner root sheath (IRS) and cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"
+    ]
+  },
+  {
+    "id": "G26-periderm-location",
+    "found": true,
+    "answer": "Periderm belongs to the immature interfollicular epidermis, forming the outermost layer of the epidermis overlying the dermal stroma; it is present from 7 PCW and is seen sloughing from 11 PCW.",
+    "quotes": [
+      "Prenatal skin up to 8 PCW consisted of a layer of epidermal cells overlying the dermal stroma, with the periderm seen sloughing from 11 PCW (Fig. 2a).",
+      "Immature IFE cells, including periderm, immature basal and immature suprabasal cells, were present from 7 PCW and decreased after 11 PCW, during the transition from embryonic to fetal skin (Fig. 2b)."
+    ]
+  },
+  {
+    "id": "G23-fibroblast-markers",
+    "found": true,
+    "answer": "The context does not give a general fibroblast marker panel; it reports PDGFRalpha and PDGFRbeta receptors expressed on fibroblasts, and subset-level genes such as COL1A1, SFRP1, CDKN1A, IL1R1 and POSTN in WNT2+ and PEAR1+ prenatal fibroblasts.",
+    "quotes": [
+      "Specifically, LYVE1 + macrophages co-located with WNT2 + fibroblasts (Fig. 3c-e) and were predicted to interact through platelet-derived growth factors (PDGFs) and corresponding receptors (PDGFRα and PDGFRβ) expressed on fibroblasts (Extended Data Fig. 7g and Supplementary Table 8).",
+      "Notably, WNT2 + and PEAR1 + prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN) (Fig. 3a,b)"
+    ]
+  },
+  {
+    "id": "G54-arterioles-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of arterioles; it discusses their differentiation trajectory and gene expression only.",
+    "quotes": []
+  },
+  {
+    "id": "G42-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not describe the structure or morphology of macrophages.",
+    "quotes": []
+  }
+]

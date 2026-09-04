@@ -1,0 +1,86 @@
+[
+  {
+    "id": "G34-caparteriole-function",
+    "found": true,
+    "answer": "The paper reports that capillary arteriole cells (in both SkO and prenatal skin) show increased sprouting angiogenesis potential, based on scoring of the 'tip' cell state.",
+    "quotes": ["sprouting angiogenesis potential, assessed by scoring the ‘tip’ cell state, was increased in both SkO capillary arteriole cells and prenatal skin arteriole, capillary arteriole and capillary cells"]
+  },
+  {
+    "id": "G30-hoxc5-function",
+    "found": true,
+    "answer": "HOXC5+ early fibroblasts act as a common fibroblast progenitor that gives rise to hair-specialized fibroblasts (pre-Dc, Dc, Dp) and dermal fibroblasts (WNT2+ and PEAR1+ fibroblasts).",
+    "quotes": ["pre-Dcs, the Dc and Dp and dermal fibroblasts in human prenatal skin also originated from a common fibroblast progenitor (HOXC5+ early fibroblast)"]
+  },
+  {
+    "id": "G36-pear1-function",
+    "found": true,
+    "answer": "PEAR1+ fibroblasts (together with WNT2+ fibroblasts) express genes involved in cellular senescence, cytokine pathways and collagen deposition, resembling genes highly expressed in pathogenic fibroblasts of fibrotic skin disorders.",
+    "quotes": ["WNT2+ and PEAR1+ prenatal fibroblasts expressed several genes involved in cellular senescence (CDKN1A), cytokine pathways (for example, IL1R1) and collagen deposition (for example, POSTN)"]
+  },
+  {
+    "id": "G13-tml-function",
+    "found": true,
+    "answer": "TML macrophages are attributed roles in promoting sprouting angiogenesis and in interacting with Schwann cells to support synapse formation and axon guidance.",
+    "quotes": ["sprouting angiogenesis (growth of new vessels) was promoted by LYVE1+ and TML macrophages", "TML macrophages were predicted to interact with Schwann cells, contributing to synapse formation and axon guidance"]
+  },
+  {
+    "id": "G24-fibroblast-location",
+    "found": true,
+    "answer": "Fibroblasts are found within the dermal compartment, including HOXC5+ early fibroblasts located in the upper dermis.",
+    "quotes": ["Within the dermal compartment, we observed HF-specialized fibroblasts, the dermal condensate (Dc) and dermal papilla (Dp), from 12 PCW.", "HOXC5+ early fibroblasts (located in the upper dermis (Fig. 2f)"]
+  },
+  {
+    "id": "G18-matrix-location",
+    "found": true,
+    "answer": "Hair matrix cells are located overlying the dermal papilla (Dp).",
+    "quotes": ["RSPO3 from the Dp was predicted to interact with LGR4 and LGR6 (Fig. 2g, Extended Data Fig. 5b and Supplementary Table 8) in overlying matrix cells to contribute to the proliferation of HF epithelial cells."]
+  },
+  {
+    "id": "G12-tml-location",
+    "found": true,
+    "answer": "TML macrophages are predicted to co-locate with WNT2+ fibroblasts in early prenatal skin and with Schwann cells in the 'early neurovascular microenvironment' (ME1).",
+    "quotes": ["TML macrophages were predicted to co-locate with WNT2+ fibroblasts in early prenatal skin (6–8 PCW)", "TML macrophages were also predicted to co-locate with Schwann cells in prenatal skin (‘early neurovascular microenvironment’, ME1)"]
+  },
+  {
+    "id": "G31-dpysl2-markers",
+    "found": true,
+    "answer": "DPYSL2+ basal cells are marked by DPYSL2, and along the ORS/CL trajectory they upregulate AGR2.",
+    "quotes": ["Mature basal (DPYSL2+) and suprabasal IFE cells increased after 11 PCW", "we identified new genes upregulated by DPYSL2+ basal cells, such as AGR2"]
+  },
+  {
+    "id": "G05-macrophage-markers",
+    "found": true,
+    "answer": "Macrophage subsets are marked by LYVE1, MHCII, TML (TREM2+), and iron-recycling markers.",
+    "quotes": ["the four macrophage subsets (LYVE1+, MHCII+, TML and iron-recycling) expressed gene programs that drive angiogenesis"]
+  },
+  {
+    "id": "G11-tml-markers",
+    "found": true,
+    "answer": "TML macrophages are marked by TREM2, and share an expression profile with P2RY12, CX3CR1 and OLFML3; they also co-express CX3CR1 and SYT11.",
+    "quotes": ["yolk-sac derived TREM2+ macrophages that share an expression profile (P2RY12, CX3CR1 and OLFML3) with microglia-like macrophages", "co-expressed immunomodulatory genes, including immune-inhibitory receptors (for example, CX3CR1) and regulators of IL-6 production (for example, SYT11)"]
+  },
+  {
+    "id": "G55-cuticle-cortex-structure-absent",
+    "found": true,
+    "answer": "Cuticle/cortex cells are described as part of the inner layers of the hair follicle.",
+    "quotes": ["cuticle and cortex cells (cuticle/cortex; part of the inner layers of the HF)"]
+  },
+  {
+    "id": "G49-hoxc5-plus-early-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G52-pear1-plus-fibroblast-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  },
+  {
+    "id": "G44-tml-macrophage-structure-absent",
+    "found": false,
+    "answer": "The supplied context does not say.",
+    "quotes": []
+  }
+]

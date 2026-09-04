@@ -1,0 +1,16 @@
+[
+  {"arm": "asta-sep", "id": "G16-dc-function", "verdict": "correct", "why": "Captures the Dc signalling to the placode via FAM3C/EFNB1 promoting migration and invasion."},
+  {"arm": "asta-sep", "id": "G17-matrix-markers", "verdict": "correct", "why": "Gives SHH as the annotating marker; the added CXCL14/CD24 comparison is supported and does not misstate the paper."},
+  {"arm": "asta-sep", "id": "G18-matrix-location", "verdict": "correct", "why": "Hair follicle origin from the epidermal placode, prenatal-specific, from 14 PCW - all as intended."},
+  {"arm": "asta-sep", "id": "G19-matrix-function", "verdict": "correct", "why": "Chemotaxis via CXCL14 and CD24 with Treg accumulation and immune protection, matching the intended answer."},
+  {"arm": "asta-sep", "id": "G20-lyve1-markers", "verdict": "correct", "why": "Correctly reports LYVE1 plus GAS6 and flags the thin body-text evidence, as the hazard anticipates."},
+  {"arm": "asta-sep", "id": "G21-lyve1-location", "verdict": "correct", "why": "Reports the endothelial proximity shown by staining; partial but accurate."},
+  {"arm": "asta-sep", "id": "G22-lyve1-function", "verdict": "correct", "why": "Sprouting angiogenesis, blood vessel morphogenesis and dermal fibroblast maintenance, as intended."},
+  {"arm": "asta-sep", "id": "G23-fibroblast-markers", "verdict": "correct", "why": "Legitimately subset-specific per the hazard, and correctly states no general panel is given."},
+  {"arm": "asta-sep", "id": "G24-fibroblast-location", "verdict": "correct", "why": "Dermis, with HOXC5+ early fibroblasts in the upper dermis, matching the intended answer."},
+  {"arm": "asta-sep", "id": "G25-fibroblast-function", "verdict": "correct", "why": "Conveys the reduced collagen/inflammation early profile favouring scarless healing."},
+  {"arm": "asta-sep", "id": "G26-periderm-location", "verdict": "correct", "why": "Outermost epidermal layer over the dermal stroma, from 7 PCW, sloughing from 11 PCW."},
+  {"arm": "asta-sep", "id": "G27-periderm-function", "verdict": "correct", "why": "States the first skin permeability barrier, exactly as intended."},
+  {"arm": "asta-sep", "id": "G28-periderm-structure", "verdict": "correct", "why": "Gives the layer description and sloughing observation, which is all the paper offers."},
+  {"arm": "asta-sep", "id": "G29-hoxc5-location", "verdict": "correct", "why": "Upper dermis, as intended."}
+]
