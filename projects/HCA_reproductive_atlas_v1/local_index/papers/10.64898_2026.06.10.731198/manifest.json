@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "slug": "10.64898_2026.06.10.731198",
+  "doi": "10.64898/2026.06.10.731198",
+  "role": "atlas",
+  "source_type": "jats",
+  "citation_graph": true,
+  "hash": "d38aa6007b78324fee2d96793d5d851d6f3c94bd2f2e39f88c14f0d023ebe588",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_chunks": 47,
+  "n_sentences": 76,
+  "n_refs": 128,
+  "n_corpus_ids_resolved": 116,
+  "resolution_methods": {
+    "doi": 7,
+    "title": 109,
+    "title_unmatched": 12
+  },
+  "paper": {
+    "title": "An integrated multimodal pan-organ atlas of the female reproductive system across the lifespan contextualises gynaecological pathologies",
+    "authors": "Cohen, C.;Parraga-Leo, A.;Rodr\u00edguez-Montes, L.;Kim, C.;Moullet, M.;Paredes, A.;Lorenzi, V.;Vilarrasa-Blasi, R.;Predeus, A.;Polanski, K.;Armingol, E.;Mazzeo, C.;Rous, B.;Fachal, L.;Harris, B.;Sancho-Serra, C.;Kelava, I.;Mare\u010dkov\u00e1, M.;M\u00e9ar, L.;Ulrich, N.;Anbarci, D.;Fei, L.;Schissel, T.;Wei, F.;Eriksson, G.;Turunen, T.;Alexandre, J.;Bammert, M.;Kuscu, N.;P\u00e9rez-Garc\u00eda, V.;Estell\u00e9s, J.;Chalmel, F.;Becker, C.;Zondervan, K.;Ch\u00e9dotal, A.;Williams, S.;Cindrova-Davies, T.;Gomez-Lopez, N.;Beyaz, S.;Rolland, A.;Basu, A.;Mas, A.;Vilella, F.;Stener-Victorin, E.;Damdimopoulou, P.;Sim\u00f3n, C.;Lopes, S.;Teichma",
+    "year": 2026,
+    "doi": "10.64898/2026.06.10.731198",
+    "corpus_id": "CorpusId:local_681319b106",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.06.10.731198v1",
+    "venue": "bioRxiv"
+  }
+}

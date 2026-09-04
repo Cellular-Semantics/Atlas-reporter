@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "slug": "10.1016_j.devcel.2025.09.011",
+  "doi": "10.1016/j.devcel.2025.09.011",
+  "role": "subatlas",
+  "source_type": "pdf",
+  "citation_graph": false,
+  "hash": "01efceb74010e415870aecee85dfd3392239d77baab31eeb30902c30c2a04874",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_chunks": 58,
+  "n_sentences": 0,
+  "n_refs": 0,
+  "n_corpus_ids_resolved": 0,
+  "resolution_methods": {},
+  "paper": {
+    "title": "Single-cell exploration of gonadal somatic cell lineage specification during human sex determination",
+    "authors": "Aur\u00e9lie Lardenois; Antonio Suglia; Chad Lewis Moore; Bertrand Evrard; Laurence No\u00ebl; Paul Rivaud; Aurore Besson; Maryne Toupin; Jos\u00e9phine Bl\u00e9vinal; Corentin Dumortier; Simon L\u00e9onard; Laurianne Lesn\u00e9; Isabelle Coiffec; Serge Nef; Vincent Lavou\u00e9; Anthony Bretaudeau; Alain Ch\u00e9dotal; S\u00e9verine Mazaud-Guittot; Fr\u00e9d\u00e9ric Chalmel; Antoine Dominique Rolland",
+    "year": 2026,
+    "doi": "10.1016/j.devcel.2025.09.011",
+    "corpus_id": "CorpusId:local_93bb317ecb",
+    "url": "https://doi.org/10.1016/j.devcel.2025.09.011",
+    "venue": "Developmental Cell"
+  }
+}

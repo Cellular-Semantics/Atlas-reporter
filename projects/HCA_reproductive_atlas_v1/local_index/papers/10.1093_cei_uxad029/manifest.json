@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "slug": "10.1093_cei_uxad029",
+  "doi": "10.1093/cei/uxad029",
+  "role": "subatlas",
+  "source_type": "pdf",
+  "citation_graph": false,
+  "hash": "7952ad4c1c15a44a43aa96405e7efd09e08b24335ba6ea001b74fff5f335ae5a",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_chunks": 34,
+  "n_sentences": 0,
+  "n_refs": 0,
+  "n_corpus_ids_resolved": 0,
+  "resolution_methods": {},
+  "paper": {
+    "title": "Single-cell transcriptome analysis reveals endometrial immune microenvironment in minimal/mild endometriosis",
+    "authors": "Xin Huang; Lukanxuan Wu; Tianjiao Pei; Dong Liu; Chang Liu; Bin Luo; Li Xiao; Yujing Li; Ruiying Wang; Yunwei Ouyang; Huili Zhu; Wei Huang",
+    "year": 2023,
+    "doi": "10.1093/cei/uxad029",
+    "corpus_id": "CorpusId:local_99cc8fc49a",
+    "url": "https://doi.org/10.1093/cei/uxad029",
+    "venue": "Clinical and Experimental Immunology"
+  }
+}

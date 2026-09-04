@@ -21,7 +21,30 @@ projects/**/h5ad_obs/obs.parquet
 ~$*
 *.tmp
 
-# Non-shareable source PDFs and any local snippet index derived from them
-# (index chunks/snippets contain verbatim paper text — keep out of the repo).
+# Non-shareable source PDFs
 projects/**/inputs/do_not_share/
-projects/**/local_index/
+
+# --- Local snippet index -------------------------------------------------
+# THIS REPO IS PUBLIC. chunks/, snippet_index/ and citations/sentences.jsonl
+# hold verbatim paper text, so they may only be committed for sources whose
+# licence permits redistribution. manifest.json, citations/ref_resolution.json
+# and corpus.json are bibliographic metadata only (no paper text) and are
+# committed for every paper.
+#
+# Never commit source documents here — originals live in inputs/.
+projects/**/local_index/papers/*/source/
+
+# Verbatim text: excluded by default (covers all non-open sources).
+projects/**/local_index/papers/*/chunks/
+projects/**/local_index/papers/*/snippet_index/
+projects/**/local_index/papers/*/citations/sentences.jsonl
+
+# Re-included: the atlas preprint 10.64898/2026.06.10.731198 is bioRxiv CC-BY
+# (`license: cc_by`), so its derived text is redistributable with attribution
+# (attribution travels in manifest.json / snippets[].paper).
+!projects/**/local_index/papers/10.64898_*/chunks/
+!projects/**/local_index/papers/10.64898_*/snippet_index/
+!projects/**/local_index/papers/10.64898_*/citations/sentences.jsonl
+!projects/**/local_index/papers/10.64898_*/source/
+!projects/**/local_index/papers/10.64898_*/source/paper.jats.xml
+projects/**/local_index/papers/10.64898_*/source/*.pdf

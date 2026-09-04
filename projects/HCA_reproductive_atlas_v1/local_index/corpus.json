@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "atlas_doi": "10.64898/2026.06.10.731198",
+  "use_in_fanout": true,
+  "papers": [
+    {
+      "slug": "10.64898_2026.06.10.731198",
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas",
+      "source_type": "jats",
+      "title": "An integrated multimodal pan-organ atlas of the female reproductive system across the lifespan contextualises gynaecological pathologies",
+      "n_chunks": 47
+    },
+    {
+      "slug": "10.1016_j.devcel.2025.09.011",
+      "doi": "10.1016/j.devcel.2025.09.011",
+      "role": "subatlas",
+      "source_type": "pdf",
+      "title": "Single-cell exploration of gonadal somatic cell lineage specification during human sex determination",
+      "n_chunks": 58
+    },
+    {
+      "slug": "10.1093_cei_uxad029",
+      "doi": "10.1093/cei/uxad029",
+      "role": "subatlas",
+      "source_type": "pdf",
+      "title": "Single-cell transcriptome analysis reveals endometrial immune microenvironment in minimal/mild endometriosis",
+      "n_chunks": 34
+    },
+    {
+      "slug": "10.1126_science.adx0659",
+      "doi": "10.1126/science.adx0659",
+      "role": "subatlas",
+      "source_type": "pdf",
+      "title": "Comparative analysis of human and mouse ovaries across age",
+      "n_chunks": 93
+    }
+  ]
+}

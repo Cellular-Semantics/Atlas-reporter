@@ -1,0 +1,642 @@
+{
+  "c13": {
+    "corpus_id": "268956537",
+    "doi": "10.1126/sciadv.adm7506",
+    "method": "doi"
+  },
+  "c67": {
+    "corpus_id": "278335925",
+    "doi": "10.1182/blood.2024027382",
+    "method": "doi"
+  },
+  "c70": {
+    "corpus_id": "286172156",
+    "doi": "10.64898/2026.02.25.708037",
+    "method": "doi"
+  },
+  "c98": {
+    "corpus_id": "44905124",
+    "doi": "10.1177/41.10.8245407",
+    "method": "doi"
+  },
+  "c106": {
+    "corpus_id": "256326387",
+    "doi": "10.1126/sciadv.add8977",
+    "method": "doi"
+  },
+  "c118": {
+    "corpus_id": "278883747",
+    "doi": "10.1101/2025.05.24.25328275",
+    "method": "doi"
+  },
+  "c124": {
+    "corpus_id": "265213569",
+    "doi": "10.1101/2023.11.09.563812",
+    "method": "doi"
+  },
+  "c1": {
+    "corpus_id": "246654148",
+    "doi": "10.1038/s41574-021-00629-4",
+    "method": "title"
+  },
+  "c2": {
+    "corpus_id": "225272859",
+    "doi": "10.1530/rep-20-0354",
+    "method": "title"
+  },
+  "c3": {
+    "corpus_id": "46893727",
+    "doi": "10.1530/JME-17-0278",
+    "method": "title"
+  },
+  "c4": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c5": {
+    "corpus_id": "236378833",
+    "doi": "10.1038/s41586-022-04918-4",
+    "method": "title"
+  },
+  "c6": {
+    "corpus_id": "260914233",
+    "doi": "10.1016/j.devcel.2023.07.014",
+    "method": "title"
+  },
+  "c7": {
+    "corpus_id": "267359331",
+    "doi": "10.1016/j.devcel.2024.01.006",
+    "method": "title"
+  },
+  "c8": {
+    "corpus_id": "282014485",
+    "doi": "10.1016/j.devcel.2025.09.011",
+    "method": "title"
+  },
+  "c9": {
+    "corpus_id": "283930036",
+    "doi": "10.1038/s41586-025-09875-2",
+    "method": "title"
+  },
+  "c10": {
+    "corpus_id": "211574066",
+    "doi": "10.1038/s41467-020-14936-3",
+    "method": "title"
+  },
+  "c11": {
+    "corpus_id": "205562006",
+    "doi": "10.1038/s41467-019-11036-9",
+    "method": "title"
+  },
+  "c12": {
+    "corpus_id": "255473863",
+    "doi": "10.1038/s42003-022-04384-8",
+    "method": "title"
+  },
+  "c14": {
+    "corpus_id": "263504996",
+    "doi": "10.1016/j.devcel.2022.02.017",
+    "method": "title"
+  },
+  "c15": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c16": {
+    "corpus_id": "221723862",
+    "doi": "10.1038/s41591-020-1040-z",
+    "method": "title"
+  },
+  "c17": {
+    "corpus_id": "231614910",
+    "doi": "10.1038/s41588-021-00972-2",
+    "method": "title"
+  },
+  "c18": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c19": {
+    "corpus_id": "272251688",
+    "doi": "10.1038/s41588-024-01873-w",
+    "method": "title"
+  },
+  "c20": {
+    "corpus_id": "284963281",
+    "doi": "10.1172/jci.insight.195254",
+    "method": "title"
+  },
+  "c21": {
+    "corpus_id": "259361790",
+    "doi": "10.1038/s41467-024-45143-z",
+    "method": "title"
+  },
+  "c22": {
+    "corpus_id": "252623532",
+    "doi": "10.1038/s41556-022-01023-6",
+    "method": "title"
+  },
+  "c23": {
+    "corpus_id": "53302717",
+    "doi": "10.1038/s41586-018-0698-6",
+    "method": "title"
+  },
+  "c24": {
+    "corpus_id": "257836319",
+    "doi": "10.1038/s41586-023-05869-0",
+    "method": "title"
+  },
+  "c25": {
+    "corpus_id": "248750269",
+    "doi": "10.1126/science.abl4290",
+    "method": "title"
+  },
+  "c26": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c27": {
+    "corpus_id": "274165283",
+    "doi": "10.1038/s41591-024-03376-x",
+    "method": "title"
+  },
+  "c28": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c29": {
+    "corpus_id": "205549019",
+    "doi": "10.1038/s41467-017-00962-1",
+    "method": "title"
+  },
+  "c30": {
+    "corpus_id": "206541668",
+    "doi": "10.1126/science.1222794",
+    "method": "title"
+  },
+  "c31": {
+    "corpus_id": "234485472",
+    "doi": "10.1038/s41586-021-03549-5",
+    "method": "title"
+  },
+  "c32": {
+    "corpus_id": "277505323",
+    "doi": "10.1126/sciadv.ado0173",
+    "method": "title"
+  },
+  "c33": {
+    "corpus_id": "2978643",
+    "doi": "10.3727/096368911X637362",
+    "method": "title"
+  },
+  "c34": {
+    "corpus_id": "11779332",
+    "doi": "10.1093/HUMREP/DEM265",
+    "method": "title"
+  },
+  "c35": {
+    "corpus_id": "1871645",
+    "doi": "10.1093/HUMREP/DEL332",
+    "method": "title"
+  },
+  "c36": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c37": {
+    "corpus_id": "274368913",
+    "doi": "10.1093/humrep/deae254",
+    "method": "title"
+  },
+  "c38": {
+    "corpus_id": "252694900",
+    "doi": "10.1038/s41577-022-00777-2",
+    "method": "title"
+  },
+  "c39": {
+    "corpus_id": "248451784",
+    "doi": "10.1007/s00281-022-00934-8",
+    "method": "title"
+  },
+  "c40": {
+    "corpus_id": "269425497",
+    "doi": "10.1016/j.immuni.2024.04.001",
+    "method": "title"
+  },
+  "c41": {
+    "corpus_id": "16105951",
+    "doi": "10.4049/jimmunol.1500689",
+    "method": "title"
+  },
+  "c42": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c43": {
+    "corpus_id": "268741074",
+    "doi": "10.1038/s41588-024-01702-0",
+    "method": "title"
+  },
+  "c44": {
+    "corpus_id": "220478694",
+    "doi": "10.1126/sciadv.aba1972",
+    "method": "title"
+  },
+  "c45": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c46": {
+    "corpus_id": "259223489",
+    "doi": "10.21873/anticanres.16462",
+    "method": "title"
+  },
+  "c47": {
+    "corpus_id": "231610733",
+    "doi": "10.1038/s41385-020-00371-6",
+    "method": "title"
+  },
+  "c48": {
+    "corpus_id": "278395794",
+    "doi": "10.7150/jca.108582",
+    "method": "title"
+  },
+  "c49": {
+    "corpus_id": "78094846",
+    "doi": "10.1126/science.aau0964",
+    "method": "title"
+  },
+  "c50": {
+    "corpus_id": "51727390",
+    "doi": "10.1016/j.immuni.2018.06.008",
+    "method": "title"
+  },
+  "c51": {
+    "corpus_id": "195698806",
+    "doi": "10.1016/j.cell.2019.05.054",
+    "method": "title"
+  },
+  "c52": {
+    "corpus_id": "221158305",
+    "doi": "10.3389/fphar.2020.01289",
+    "method": "title"
+  },
+  "c53": {
+    "corpus_id": "53175606",
+    "doi": "10.1111/bph.14530",
+    "method": "title"
+  },
+  "c54": {
+    "corpus_id": "590704",
+    "doi": "10.1016/j.biochi.2010.02.011",
+    "method": "title"
+  },
+  "c55": {
+    "corpus_id": "20688616",
+    "doi": "10.1111/imm.12441",
+    "method": "title"
+  },
+  "c56": {
+    "corpus_id": "10626627",
+    "doi": "10.1016/j.fertnstert.2010.02.006",
+    "method": "title"
+  },
+  "c57": {
+    "corpus_id": "255569517",
+    "doi": "10.1038/s41588-022-01254-1",
+    "method": "title"
+  },
+  "c58": {
+    "corpus_id": "277189695",
+    "doi": "10.1038/s41591-025-03592-z",
+    "method": "title"
+  },
+  "c59": {
+    "corpus_id": "1862413",
+    "doi": "10.1097/PGP.0000000000000120",
+    "method": "title"
+  },
+  "c60": {
+    "corpus_id": "10353249",
+    "doi": "10.1043/0003-9985(2002)126<0951:HFOSRT>2.0.CO;2",
+    "method": "title"
+  },
+  "c61": {
+    "corpus_id": "270877308",
+    "doi": "10.1038/s41588-024-01798-4",
+    "method": "title"
+  },
+  "c62": {
+    "corpus_id": "231609861",
+    "doi": "10.1038/s41586-021-03779-7",
+    "method": "title"
+  },
+  "c63": {
+    "corpus_id": "287759330",
+    "doi": "10.1038/s41588-026-02543-9",
+    "method": "title"
+  },
+  "c64": {
+    "corpus_id": "255970606",
+    "doi": "10.1038/s41586-022-05473-8",
+    "method": "title"
+  },
+  "c65": {
+    "corpus_id": "257499222",
+    "doi": "10.1038/s41588-023-01323-z",
+    "method": "title"
+  },
+  "c66": {
+    "corpus_id": "285795715",
+    "doi": "10.1080/19396368.2026.2628916",
+    "method": "title"
+  },
+  "c68": {
+    "corpus_id": "276840431",
+    "doi": "10.1038/s41467-025-57483-5",
+    "method": "title"
+  },
+  "c69": {
+    "corpus_id": "4714832",
+    "doi": "10.1038/s41588-018-0081-4",
+    "method": "title"
+  },
+  "c71": {
+    "corpus_id": "280846774",
+    "doi": "10.3389/fimmu.2025.1638604",
+    "method": "title"
+  },
+  "c72": {
+    "corpus_id": "286324191",
+    "doi": "10.1096/fj.202504234R",
+    "method": "title"
+  },
+  "c73": {
+    "corpus_id": "267445478",
+    "doi": "10.3389/fopht.2024.1355379",
+    "method": "title"
+  },
+  "c74": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c75": {
+    "corpus_id": "276074074",
+    "doi": "10.1038/s41467-025-56511-8",
+    "method": "title"
+  },
+  "c76": {
+    "corpus_id": "6111954",
+    "doi": "10.1093/NAR/23.23.4907",
+    "method": "title"
+  },
+  "c77": {
+    "corpus_id": "59945119",
+    "doi": "10.1038/s41598-019-39078-5",
+    "method": "title"
+  },
+  "c78": {
+    "corpus_id": "23098050",
+    "doi": "10.18632/oncotarget.7872",
+    "method": "title"
+  },
+  "c79": {
+    "corpus_id": "52289170",
+    "doi": "10.7554/eLife.37110",
+    "method": "title"
+  },
+  "c80": {
+    "corpus_id": "3640188",
+    "doi": "10.1038/ng.2564",
+    "method": "title"
+  },
+  "c81": {
+    "corpus_id": "288640224",
+    "doi": "10.1038/s41591-026-04456-w",
+    "method": "title"
+  },
+  "c82": {
+    "corpus_id": "42219238",
+    "doi": "10.1530/REP.1.01074",
+    "method": "title"
+  },
+  "c83": {
+    "corpus_id": "281476579",
+    "doi": "10.3389/fendo.2025.1627560",
+    "method": "title"
+  },
+  "c84": {
+    "corpus_id": "38551737",
+    "doi": "10.1046/j.1365-2265.1998.00442.x",
+    "method": "title"
+  },
+  "c85": {
+    "corpus_id": "276557564",
+    "doi": "10.1093/humrep/deaf025",
+    "method": "title"
+  },
+  "c86": {
+    "corpus_id": "7478833",
+    "doi": "10.1371/journal.pone.0099269",
+    "method": "title"
+  },
+  "c87": {
+    "corpus_id": "221019022",
+    "doi": "10.1038/s41467-020-17740-1",
+    "method": "title"
+  },
+  "c88": {
+    "corpus_id": "205264161",
+    "doi": "10.1038/nature25739",
+    "method": "title"
+  },
+  "c89": {
+    "corpus_id": "255024676",
+    "doi": "10.1038/s41588-022-01243-4",
+    "method": "title"
+  },
+  "c90": {
+    "corpus_id": "19057494",
+    "doi": "10.1016/S0039-128X(00)00117-3",
+    "method": "title"
+  },
+  "c91": {
+    "corpus_id": "12485043",
+    "doi": "10.1016/j.yexcr.2009.09.018",
+    "method": "title"
+  },
+  "c92": {
+    "corpus_id": "271854498",
+    "doi": "10.1093/discim/kyaf004",
+    "method": "title"
+  },
+  "c93": {
+    "corpus_id": "3791095",
+    "doi": "10.1126/scisignal.aaf2223",
+    "method": "title"
+  },
+  "c94": {
+    "corpus_id": "220465446",
+    "doi": "10.1016/j.it.2020.06.009",
+    "method": "title"
+  },
+  "c95": {
+    "corpus_id": "23791825",
+    "doi": "10.4049/jimmunol.1300958",
+    "method": "title"
+  },
+  "c96": {
+    "corpus_id": "57825915",
+    "doi": "10.1126/sciimmunol.aat6114",
+    "method": "title"
+  },
+  "c97": {
+    "corpus_id": "269566057",
+    "doi": "10.1016/j.tem.2024.04.009",
+    "method": "title"
+  },
+  "c99": {
+    "corpus_id": "261627107",
+    "doi": "10.1002/path.6178",
+    "method": "title"
+  },
+  "c100": {
+    "corpus_id": "268114510",
+    "doi": "10.1186/1471-2407-5-124",
+    "method": "title"
+  },
+  "c101": {
+    "corpus_id": "242105922",
+    "doi": "10.1038/s41467-022-33982-7",
+    "method": "title"
+  },
+  "c102": {
+    "corpus_id": "25875316",
+    "doi": "10.1016/j.ijgo.2014.09.027",
+    "method": "title"
+  },
+  "c103": {
+    "corpus_id": "263636749",
+    "doi": "10.1016/s2214-109x(23)00416-3",
+    "method": "title"
+  },
+  "c104": {
+    "corpus_id": "275474536",
+    "doi": "10.1016/j.eclinm.2024.103051",
+    "method": "title"
+  },
+  "c105": {
+    "corpus_id": "259283191",
+    "doi": "10.1038/s41586-024-07316-0",
+    "method": "title"
+  },
+  "c107": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c108": {
+    "corpus_id": "176295002",
+    "doi": "10.1101/460147",
+    "method": "title"
+  },
+  "c109": {
+    "corpus_id": "102348853",
+    "doi": "10.1101/357368",
+    "method": "title"
+  },
+  "c110": {
+    "corpus_id": "53643161",
+    "doi": "10.1038/s41592-018-0229-2",
+    "method": "title"
+  },
+  "c111": {
+    "corpus_id": "90164213",
+    "doi": "10.1093/gigascience/giaa151",
+    "method": "title"
+  },
+  "c112": {
+    "corpus_id": "252763943",
+    "doi": "10.1038/s41587-023-01657-3",
+    "method": "title"
+  },
+  "c113": {
+    "corpus_id": "254824846",
+    "doi": "10.1093/bioinformatics/btad547",
+    "method": "title"
+  },
+  "c114": {
+    "corpus_id": "8620592",
+    "doi": "10.1186/s13059-014-0550-8",
+    "method": "title"
+  },
+  "c115": {
+    "corpus_id": "243821583",
+    "doi": "10.1093/bioadv/vbac016",
+    "method": "title"
+  },
+  "c116": {
+    "corpus_id": "221826694",
+    "doi": "10.7554/eLife.55851",
+    "method": "title"
+  },
+  "c117": {
+    "corpus_id": "261237190",
+    "doi": "10.1038/ng.3954",
+    "method": "title"
+  },
+  "c119": {
+    "corpus_id": "281385772",
+    "doi": "10.1038/s41588-025-02295-y",
+    "method": "title"
+  },
+  "c120": {
+    "corpus_id": "259113230",
+    "doi": "10.1016/j.celrep.2023.113525",
+    "method": "title"
+  },
+  "c121": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  },
+  "c122": {
+    "corpus_id": "266873232",
+    "doi": "10.1038/s41592-023-02139-9",
+    "method": "title"
+  },
+  "c123": {
+    "corpus_id": "232058487",
+    "doi": "10.1038/s41588-021-00790-6",
+    "method": "title"
+  },
+  "sc1": {
+    "corpus_id": "268741074",
+    "doi": "10.1038/s41588-024-01702-0",
+    "method": "title"
+  },
+  "sc2": {
+    "corpus_id": "220478694",
+    "doi": "10.1126/sciadv.aba1972",
+    "method": "title"
+  },
+  "sc3": {
+    "corpus_id": "235420066",
+    "doi": "10.1016/j.cell.2021.05.013",
+    "method": "title"
+  },
+  "sc4": {
+    "corpus_id": null,
+    "doi": null,
+    "method": "title_unmatched"
+  }
+}
