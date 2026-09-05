@@ -76,7 +76,7 @@ uv run python -m atlas_chat.cli_supplements triage --store <store> --doi <doi> -
 uv run python -m atlas_chat.cli_supplements papers --cas <cas.json>
 ```
 
-The order is **fetch → unpack → triage → assess → index**. Unpacking before triage
+The order is **fetch → unpack → triage → index**, with prose extracted alongside. Unpacking before triage
 matters: a bundle of forty tables is one opaque item until it is expanded, and
 its members are what get judged.
 
@@ -197,98 +197,101 @@ sometimes two. The guess is usually right, but check it against the sample rows
 before recording `header_row` — a reader that slices from the wrong row gets
 nonsense.
 
-## Describing the units: fan out to cheap judges
+## Prose: the other half of a bundle
 
-The ladder above is how *you* would characterise a bundle by hand. On a
-forty-table supplement you should not: it is forty shallow judgements —
-read the columns, say what the table is for — and they are better spent on a
-cheap model in parallel than on your own context.
+The ladder above works on anything with a header row. A Supplementary
+Discussion or a table-legends document has none, so `outline_file` sees nothing
+in it — and until it is extracted, the manifest has nowhere to record it at all.
+That matters here: Gopee's legends document is where Supplementary Table 22
+announces itself as the DEG table for the four macrophage subsets, and stage 3b
+found abbreviation glossaries living only in legends.
 
-`atlas_chat.services.supplement_assess` does everything around those judgements
-and none of them. It opens the files, bounds what is read, and hands you one
-block per unit; you fan those out to `assess-supplement-content` subagents
-(Haiku), collect what they say, and hand the verdicts back.
+`atlas_chat.services.supplement_prose` extracts every prose supplement to disk
+and hands you back one block per document. It does not touch spreadsheets.
 
 ```bash
-# 1. Prepare. Writes prose to disk under the paper directory and prints one
-#    evidence block per unit — every sheet, plus every prose document.
-uv run python -m atlas_chat.cli_supplement_assess units \
+# Extract, and print one block per prose document.
+uv run python -m atlas_chat.cli_supplement_prose units \
   --store <store> --doi <doi> [--cas <cas.json>] --out units.json
 
-# 2. Judge — one assess-supplement-content subagent per unit, launched in
-#    parallel. Give each the roster block and its own unit verbatim.
-
-# 3. Record. Merges the verdicts into the manifest's `tables` and `prose`.
-uv run python -m atlas_chat.cli_supplement_assess record \
+# Merge what you (or a subagent) concluded into the manifest's `prose`.
+uv run python -m atlas_chat.cli_supplement_prose record \
   --store <store> --doi <doi> --verdicts verdicts.json
 ```
 
-`--cas` is worth passing whenever the project has one. It puts the project's
-real cell-type labels in front of the judge, which is what lets it recognise
-`LC_1` or `mCL2` as a cell type at all. Without it the question is asked in
-general terms and the answers are weaker.
+Pass `--cas` when the project has one: it puts the real cell-type labels in
+front of the reader, which is what lets `LC_1` or `mCL2` register as a cell type.
 
-**`verdicts.json` is an object keyed by `unit_id`** — copy each id back
-verbatim from `units.json`. A verdict filed under a mangled id does not match
-its unit, and `record` reports that unit as unassessed rather than guessing:
+### Read short documents; delegate long ones
+
+Each unit carries `evidence_kind`, and it tells you what to do with it:
+
+| `evidence_kind` | What you have | What to do |
+|---|---|---|
+| `full_text` | the whole document | **Read it yourself.** It is short, and it is usually the highest-leverage read in the bundle. |
+| `outline` | its section headings and their sizes | Hand to an `assess-supplement-content` subagent (Haiku). |
+| `sampled_text` | head, middle and tail | Same. |
+
+Do not put a `full_text` document through a subagent. A legends document is
+~11 KB and it is precisely the thing you want to have read properly — a cheap
+intermediary buys nothing and loses detail.
+
+The outline is the good case for a long document, and it comes free on PDFs:
+pymupdf4llm reports markdown headings and the parser tags every paragraph with
+the one above it, so a forty-page Supplementary Methods identifies itself from
+its section list without a word of it being read. Where the format carries no
+headings, you get the sample instead.
+
+### Recording what you found
+
+`verdicts.json` is an object keyed by `unit_id`, copied back verbatim — a
+verdict under a mangled id does not match its document, and `record` reports it
+as unread rather than guessing:
 
 ```json
 {
-  "table|MOESM4.zip|s4/Supplementary Table 22.xlsx|Sheet1": {
-    "description": "Differential expression per macrophage subset ...",
+  "prose|MOESM4.zip|s4/Supplementary Table legends.docx": {
+    "description": "Legends for Supplementary Tables 1-22 ...",
     "mentions_cell_types": true,
-    "mentions_cell_types_note": "block headers name four subsets"
+    "mentions_cell_types_note": "Table 22's legend names the four macrophage subsets"
   }
 }
 ```
 
-`record` exits 2 when any unit went unjudged and writes each as a `gap`. Re-run
-those units rather than accepting the gaps — a unit nobody judged is unread, and
-in a manifest an absent pointer reads as "there is nothing here".
+Subagents tend to wrap their JSON in a code fence; strip it before assembling
+the file. `record` exits 2 when a document went unread and writes each as a
+`gap` — re-read those rather than accepting them, because in a manifest an
+absent pointer reads as "there is nothing here".
 
-### Prose and tables are used differently
+### What `mentions_cell_types` is for
 
-The judge answers the same two questions for both, but the answers do different
-work, and this is what `mentions_cell_types` is for:
+It decides how the document is used, and prose is the only place that decision
+exists. **Prose that names cell types is read whole into context alongside the
+paper text** — it has nothing to slice and these documents are small.
 
-- **Prose that names cell types is read whole**, alongside the paper text. It
-  has no columns to slice and these documents are small — Gopee's table legends
-  and Supplementary Discussion come to about 15 KB together, and the legends are
-  where Supplementary Table 22 announces itself as the marker table for the four
-  macrophage subsets.
-- **Tables are never folded into a context**, however relevant. They get a
-  description and their columns, and a reader slices what it needs. Supplementary
-  Table 5 in the same bundle is 95 MB and 396,877 rows.
+Tables are never folded in, however relevant their description; that is what
+`locator`, `header_row` and `columns` are for. Supplementary Table 5 in this
+bundle is 95 MB and 396,877 rows.
 
-So there is no fold-in judgement to make: the format decides it. Do not fold a
-spreadsheet into a context because its description sounds relevant.
-
-### Bounded reads, again
-
-Every unit is judged from a bounded view — a sheet from its columns and five
-rows, a long document from its head, middle and tail. The evidence block says
-which, and the pointer records it in `evidence`.
-
-This means **a `mentions_cell_types: false` from a bounded read says "none in
-what was seen", not "none in the file"**. `mentions_cell_types_note` should say
-so, and nothing downstream may upgrade it into a claim that the unit is empty.
+A `false` from an `outline` or `sampled_text` view means "none in what was
+seen", not "none in the document". Nothing downstream may upgrade it.
 
 ### When content feeds CAS+
 
-Some of what a table holds is a fact about the atlas rather than per-cell-type
-evidence — a cluster-to-name mapping, author full names, grounded synonyms — and
-belongs in the project's CAS+ document once rather than in every run. When
-`generate-cas` takes something from a unit, it stamps the pointer so a later run
-can tell a CAS-supplied fact from a paper-found one:
+Some of what a supplement holds is a fact about the atlas rather than
+per-cell-type evidence — a cluster-to-name mapping, author full names, grounded
+synonyms — and belongs in CAS+ once rather than in every run. When `generate-cas`
+takes something, it stamps the pointer it came from, table or prose, so a later
+run can tell a CAS-supplied fact from a paper-found one:
 
 ```bash
-uv run python -m atlas_chat.cli_supplement_assess cas-uptake \
+uv run python -m atlas_chat.cli_supplement_prose cas-uptake \
   --store <store> --doi <doi> --unit-id "<unit_id>" \
   --note "cluster names taken into CAS+ cell_fullname" --at "<ISO-8601 UTC>"
 ```
 
-The note survives re-assessment: `record` preserves any `cas_uptake` already on
-a pointer, because it records something this pass knows nothing about.
+A table's id is `table|<file_id>|<member_path>|<locator>`; prose ids come from
+`units.json`. The note survives re-running `record`, which knows nothing about it.
 
 ## Writing the manifest
 

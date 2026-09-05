@@ -307,14 +307,6 @@
             "rows_read"
           ]
         },
-        "mentions_cell_types": {
-          "type": "boolean",
-          "description": "Whether this table names cell types, cell states, or cluster identifiers standing for either. Cluster IDs count: a column of `c1`/`c2` beside a column of names is a naming even with no recognisable cell-type word. Recorded because it decides how the table is used, not to enumerate what is in it."
-        },
-        "mentions_cell_types_note": {
-          "type": "string",
-          "description": "What that verdict rests on, and whether the read behind it was complete or bounded. A `false` from a bounded read means 'none in what was seen', never 'none in the table' — say which."
-        },
         "cas_uptake": {
           "$ref": "#/$defs/CasUptake"
         }
@@ -388,9 +380,10 @@
         },
         "evidence": {
           "type": "string",
-          "description": "Whether the assessment saw the whole text or a sample of it. Only 'sampled_text' makes a negative verdict provisional.",
+          "description": "What the description was based on. 'full_text' is the document itself — short enough to read, so the verdict is about all of it. 'outline' is its section headings only, available where the extractor reports them; 'sampled_text' is head, middle and tail. Under either of the latter two a negative verdict covers what was seen, not the document.",
           "enum": [
             "full_text",
+            "outline",
             "sampled_text"
           ]
         },
