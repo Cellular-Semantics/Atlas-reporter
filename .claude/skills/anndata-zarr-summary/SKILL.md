@@ -45,6 +45,13 @@ User asks for one of:
 - `--no-cache` — bypass cache, force re-download.
 - `--minimal` — emit only the trimmed `cell_type_annotations.json`, skip the
   full `co_annotations.json`.
+- `--transfer-cols COL [COL ...]` — obs columns holding **another study's**
+  cell-type calls (integration provenance: `celltype_Ulrich2024`,
+  `Sridhar_et_al_2020_CellPress`). Cross-tabulated **jointly** against the
+  cell-type column into `label_transfers__<col>.json`, which
+  `python -m atlas_chat.cli_cas transfer --transfers ...` turns into CAS+
+  `transferred_annotations`. Pass these here rather than as covariates — see
+  below for why the distinction matters.
 
 ## Cache
 
@@ -138,6 +145,33 @@ covariate codes among cells with that label. Convert to a sorted list of
 `{value, n, share}` triples (top 5 by default — covariates with more than 5
 distinct values get truncated to top-5).
 
+These are **marginals**: cell type × one covariate at a time. That is the right
+shape for context (what tissue, what stage), and the wrong shape for provenance.
+Passing a contributing study's label column as a covariate tells you which author
+labels occur in a cell set and, separately, which studies contributed cells to it —
+but never which label came from which study. Attributing a label to a paper needs
+the join.
+
+### 7b. Joint cross-tabulate (`--transfer-cols`)
+
+For each cell-type label and each transfer column, keep the **full** distribution
+of that study's labels — no top-k truncation, because the long tail is exactly what
+the downstream cutoff has to measure — with two denominators per item:
+
+- `share_of_set` — of this atlas cell set, how much this label accounted for;
+- `share_of_source` — of the cells *this study* contributed to the set, how much
+  carried this label.
+
+The second is the purity signal, and the two come apart in the case that matters. A
+study can contribute 7% of a cell set and have called all of those cells the same
+thing (pure, agrees), or contribute 7% and have split them three ways (impure, and
+the atlas picked one of the splits). `share_of_set` alone reads both as "minor
+contributor".
+
+Empty / `nan` / `unknown` values are absence, not labels — a transfer column is
+empty for every cell its study never saw, so absence is the common case. A cell set
+no transfer column annotated is omitted rather than emitted empty.
+
 ### 8. Write outputs
 
 For each cell-type column `<col>`, write two files:
@@ -200,6 +234,7 @@ When `--doi`/`--title`/`--url` are provided, those values populate the
   may be large. Consider --covariates to narrow.
 ✓ Wrote zarr_summary/co_annotations__refined_celltype.json
 ✓ Wrote zarr_summary/cell_type_annotations__refined_celltype.json
+✓ Wrote zarr_summary/label_transfers__refined_celltype.json (312 cell sets, 7488 transferred labels)
 ```
 
 ## Implementation
@@ -214,6 +249,11 @@ A reference implementation is provided as
 ## Rules
 
 - Never download `X/`, `var/`, or any expression data — `obs/` only.
+- A contributing study's cell-type column goes in `--transfer-cols`, never in
+  `--covariates`. As a covariate it is silently collapsed to a scalar at
+  `share >= 0.95` and truncated to top-5, which destroys the provenance.
+- `label_transfers__<col>.json` is an intermediate for `cli_cas transfer`, not a
+  hand-editable output. Don't paste its contents into `cas.json`.
 - Always include a `--cache-status` line at the end of the report
   (how many chunks were downloaded vs hit from cache).
 - If the zarr root doesn't contain `obs/`, stop with a clear error.

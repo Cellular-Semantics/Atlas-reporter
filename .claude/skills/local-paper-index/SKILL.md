@@ -7,14 +7,14 @@ description: Build and query a local ASTA-shape snippet index for an atlas proje
 
 A project's `local_index/` is a **corpus** of one or more papers:
 
-- Exactly one `role: atlas` paper — the DOI in `cell_type_annotations.json.source.doi`.
-- Zero or more `role: subatlas` papers — upstream studies whose cell types were folded into the atlas (sourced from `label_provenance.json` study labels).
+- Exactly one `role: atlas` paper — the DOI in `cas.json` (or legacy `cell_type_annotations.json`) `source.doi`.
+- Zero or more `role: subatlas` papers — upstream studies whose cell types were folded into the atlas. Sourced from CAS+ `transferred_annotations` where present (`subatlas_paper` / `source_taxonomy`, which often already carries the DOI), else from legacy `label_provenance.json` study labels.
 
 Snippets emitted by the corpus are ASTA-shape, so `_summarize_snippets` / `validate_report` consume them unchanged.
 
 ## When to invoke
 
-- Atlas setup: after `anndata-zarr-summary` has produced `cell_type_annotations.json` + `label_provenance.json`, run the discover → review → ingest flow to build the corpus.
+- Atlas setup: once the project has a `cas.json` carrying `transferred_annotations` (see the `generate-cas` skill and `python -m atlas_chat.cli_cas transfer`), run the discover → review → ingest flow to build the corpus. Contributors whose provenance already names a DOI need no review.
 - Adding a new subatlas paper: when fan-out logs a `needs_pdf` warning, download the publisher PDF and run `add --pdf …`.
 
 ## Flow
@@ -82,13 +82,21 @@ python scripts/setup_local_index.py check --project <project>
 
 Worth running before a batch of reports. A corpus that can serve no papers returns `[]` from `search`, which looks the same as a corpus with nothing relevant to say — so that case is also logged at ERROR level, not just as a warning.
 
-## Integration with fan-out
+## Integration with traversal
 
-**Default: local index is NOT queried during `FanOut._citation_traverse`.** Subatlas papers are surfaced as a curated corpus; fan-out relies on ASTA for citation traversal.
+**Targeted, per-seed (agentic route).** `citation-traverse` searches a named corpus paper directly:
 
-To opt in to parallel local-index search during fan-out, edit `corpus.json` and set `"use_in_fanout": true`. Hits from the local index are merged with ASTA results, with local taking precedence on `(corpus_id, chunk_id)` dedupe.
+```bash
+python -m atlas_chat.cli_annotate fetch --query "..." \
+  --local --project-dir projects/<name> --papers <DOI> \
+  --role subatlas --retrieval-method corpus_snippet --hop 0 --out <out>.json
+```
 
-Even with the default (off), fan-out **does** emit a non-blocking warning row whenever the corpus has subatlas entries at `status: needs_pdf`, listing them in `traversal_output/<cell_type>/subatlas_missing.json`. Useful for spotting papers worth grabbing.
+Records come out the same shape as an ASTA fetch, so everything downstream is identical. This is the path to use for any seed whose registry `status` is `local` — ASTA holds too little of those papers to quote, which is why they were built here. `subatlas-consistency` uses the same call to read a contributor's own definition of its label.
+
+**Blanket merge into fan-out (programmatic graph).** Off by default: `FanOut._citation_traverse` relies on ASTA. Set `"use_in_fanout": true` in `corpus.json` to search the whole local corpus in parallel and merge, local taking precedence on `(corpus_id, chunk_id)` dedupe. The targeted per-seed call above is usually what you want instead — it searches the paper you have a reason to search.
+
+Either way, fan-out emits a non-blocking warning row whenever the corpus has subatlas entries at `status: needs_pdf`, listing them in `traversal_output/<cell_type>/subatlas_missing.json`. Useful for spotting papers worth grabbing — and a contributor at `needs_pdf` is one `subatlas-consistency` will have to mark `unreachable`.
 
 ## Source-type behavior
 

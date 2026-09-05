@@ -11,6 +11,12 @@ You read these files from `{traversal_dir}`:
 - `all_summaries.json` — citation traversal summaries with quotes
 - `paper_catalogue.json` — metadata for all referenced papers, including each
   paper's `asta_indexing.band` where it was measured
+- `subatlas_contributors.json` — which upstream studies contributed the cells in
+  this cell set, and what each called them (optional; absent for projects with no
+  integration provenance)
+- `subatlas_consistency.json` — whether those upstream labels agree with the atlas
+  label, why not where they differ, and which paper defines the cell type
+  (optional, same condition)
 
 ## Shared Prompt
 
@@ -39,4 +45,24 @@ them and rewrite the report.
    not retrievable". The evidence is real but thin, and a reader cannot tell from
    a quote alone that no body text was ever available. Do not drop the claim, and
    do not present it as if it came from the paper's results.
-8. If the hook rejects the report, read the error messages and fix the specific issues.
+8. If `subatlas_consistency.json` exists, write the "Annotation provenance and
+   subatlas consistency" section from it. Two distinctions there are easy to
+   collapse and must not be:
+   - **Consistent is not the same as supporting.** A contributing study that
+     called all its cells "endothelial cell" agrees with an atlas venous subtype
+     the way it agrees with anything. That is a `broad match`; write it as a
+     resolution difference, not as corroboration.
+   - **Unreachable is not the same as disagreeing.** A verdict with
+     `evidence_status` of `unreachable` / `abstract_only` / `no_publication` means
+     the contributing paper's own account of its label was never read. Report the
+     retrieval limit.
+   Report every contributor the file judges — including a contributor that
+   disagrees, and including `no_dominant_contributor` (say the label is the atlas's
+   own pooled or de-novo call). Fold the tail and any `unpublished_cells` into a
+   sentence each, so the named contributors never imply they account for the whole
+   cell set.
+9. If `subatlas_consistency.json` gives `primacy: subatlas_primary`, that paper is
+   where this cell type was characterised — the atlas inherited the label. Cite it
+   as the primary source and make sure its DOI is in the References. Validation
+   fails if the report omits it.
+10. If the hook rejects the report, read the error messages and fix the specific issues.

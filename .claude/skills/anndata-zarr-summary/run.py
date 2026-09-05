@@ -28,6 +28,10 @@ from pathlib import Path
 from typing import Any
 
 CACHE_ROOT = Path.home() / ".cache" / "anndata-zarr-summary"
+
+# A transfer column is empty for every cell the contributing study never saw,
+# so absence is the common case and these are not anomalies.
+DEFAULT_NULL_VALUES = {"", "nan", "na", "n/a", "none", "null", "unknown", "not applicable", "-"}
 CANDIDATE_CELL_TYPE_COLS = [
     "cell_type",
     "cell_type_ontology_term_id",
@@ -396,6 +400,61 @@ def cross_tabulate(
     return out
 
 
+def joint_tabulate(
+    ct_label_codes, ct_categories: list[str], transfer_data: dict, drop_values: set[str] | None = None
+) -> dict:
+    """Return {ct_label: {n_cells, transfers: {col: [{value, n, share_of_set, share_of_source}, ...]}}}.
+
+    The JOINT table, as against `cross_tabulate`'s marginals. A marginal says
+    "these studies contributed cells to this set" and, separately, "these author
+    labels occur in this set" — it cannot say which label came from which study.
+    Integration provenance needs the join, so this keeps the full distribution per
+    transfer column with no top_k truncation: the long tail is the thing the
+    downstream cutoff has to measure, so it must not be pre-truncated here.
+
+    Two denominators, because they answer different questions:
+      * share_of_set    — of this atlas cell set, how much did this label account for
+      * share_of_source — of the cells THIS study contributed to the set, how much
+                          carried this label. This is the purity signal: a study can
+                          contribute few cells but label them all identically, or
+                          contribute many and smear them across several labels.
+
+    transfer_data: {col_name: (categories_list, codes_array)}
+    """
+    drop = {v.lower() for v in (drop_values or DEFAULT_NULL_VALUES)}
+    out = {}
+    for code, label in enumerate(ct_categories):
+        mask = ct_label_codes == code
+        n = int(mask.sum())
+        if n == 0:
+            continue
+        transfers = {}
+        for col, (cats, codes) in transfer_data.items():
+            counted = Counter()
+            for v, c in Counter(codes[mask].tolist()).items():
+                value = cats[v] if 0 <= v < len(cats) else f"<unknown:{v}>"
+                if str(value).strip().lower() in drop:
+                    continue
+                counted[value] += c
+            from_source = sum(counted.values())
+            if not from_source:
+                continue
+            transfers[col] = [
+                {
+                    "value": value,
+                    "n": c,
+                    "share_of_set": round(c / n, 4),
+                    "share_of_source": round(c / from_source, 4),
+                }
+                for value, c in counted.most_common()
+            ]
+        if transfers:
+            out[label] = {"n_cells": n, "from_source": {
+                col: sum(i["n"] for i in items) for col, items in transfers.items()
+            }, "transfers": transfers}
+    return out
+
+
 def trim_for_atlas_chat(full: dict, source: dict, scalar_threshold: float = 0.95) -> dict:
     """Collapse single-value covariates to scalars."""
     annotations = []
@@ -423,6 +482,13 @@ def main():
     ap.add_argument("--url", help="Publication URL")
     ap.add_argument("--no-cache", action="store_true", help="Bypass cache")
     ap.add_argument("--minimal", action="store_true", help="Skip full co_annotations output")
+    ap.add_argument(
+        "--transfer-cols",
+        nargs="+",
+        help="obs columns holding another study's cell-type labels (integration "
+             "provenance). Cross-tabulated JOINTLY against the cell-type column into "
+             "label_transfers__<col>.json, ready for `cli_cas transfer`.",
+    )
     args = ap.parse_args()
 
     base, is_local = normalise_url(args.zarr_url)
@@ -465,6 +531,25 @@ def main():
             total_hit += 1
         marker = "(cached)" if stats["cache_hit"] else f"(downloaded {stats['chunks_downloaded']} chunks)"
         print(f"  covariate {cov}: {len(cats)} categories {marker}", file=sys.stderr)
+
+    # Transfer columns are loaded separately from covariates: they are provenance,
+    # not context, and they must not be collapsed to a scalar or truncated to top-k.
+    transfer_cols = [c for c in (args.transfer_cols or []) if c in col_meta]
+    if args.transfer_cols:
+        missing = set(args.transfer_cols) - set(transfer_cols)
+        if missing:
+            print(f"⚠ transfer columns not found in obs: {sorted(missing)}", file=sys.stderr)
+    transfer_data: dict[str, tuple[list[str], Any]] = {}
+    for col in transfer_cols:
+        cache = cache_dir_for(base, col)
+        cats, codes, stats = load_column(
+            base, is_local, fmt, col, col_meta[col]["codes_meta"], n_cells, cache, args.no_cache
+        )
+        transfer_data[col] = (cats, codes)
+        total_dl += stats["chunks_downloaded"]
+        if stats["cache_hit"]:
+            total_hit += 1
+        print(f"  transfer {col}: {len(cats)} categories", file=sys.stderr)
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -515,6 +600,20 @@ def main():
         trim_path = out_dir / f"cell_type_annotations__{ct_col}.json"
         trim_path.write_text(json.dumps(trimmed, indent=2))
         print(f"✓ Wrote {trim_path}", file=sys.stderr)
+
+        if transfer_data:
+            joint = joint_tabulate(ct_codes, ct_cats, {
+                c: transfer_data[c] for c in transfer_data if c != ct_col
+            })
+            joint_path = out_dir / f"label_transfers__{ct_col}.json"
+            joint_path.write_text(json.dumps(
+                {"source": source, "cell_sets": joint}, indent=2
+            ))
+            n_items = sum(len(i) for v in joint.values() for i in v["transfers"].values())
+            print(
+                f"✓ Wrote {joint_path} ({len(joint)} cell sets, {n_items} transferred labels)",
+                file=sys.stderr,
+            )
 
     print(f"\nCache: {total_hit} columns hit, {total_dl} chunks downloaded", file=sys.stderr)
     print(f"Cache root: {CACHE_ROOT}", file=sys.stderr)

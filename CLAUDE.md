@@ -69,9 +69,11 @@ From the loaded CAS+ document:
 - Validate the requested cell type label exists as an annotation `cell_label`.
 - Read its `labelset` (granularity) and context from `composition`
   (e.g. developmental stage / organism / tissue).
-- **If an annotation's provenance points to an integrated subatlas** (via
-  `transferred_annotations[].subatlas_paper` / `source_taxonomy`), identify that
-  source paper early and pivot supplementary fetching to it.
+- **If any annotation carries `transferred_annotations`**, the project has
+  integration provenance and step 3b applies: the label may have been inherited
+  from a contributing study, in which case that study — not the atlas — is where
+  the cell type was characterised, and supplementary fetching and traversal should
+  both pivot to it.
 
 > Migration note: downstream steps below still reference the legacy `label` /
 > `scope` fields; their input contracts move to CAS+ `cell_label` / `composition`
@@ -114,6 +116,40 @@ and returns relevance-ranked text.
 }
 ```
 
+### 3b. Subatlas Contributors + Consistency (when the project has integration provenance)
+
+Skip this step entirely if no annotation in `cas.json` carries
+`transferred_annotations` — most single-study atlases won't.
+
+Otherwise: an integrated atlas's cell sets are built from cells other studies
+already annotated, and where a label was inherited, the biology was characterised
+**upstream**. This step finds out which paper that is, and it runs before traversal
+because it decides where traversal starts.
+
+**3b(i). Apply the cutoff (deterministic, no subagent):**
+
+```bash
+uv run python -m atlas_chat.cli_contributors \
+  --cas projects/{project}/cas.json \
+  --cell-type "{cell_type}" [--labelset {labelset}] \
+  --out projects/{project}/traversal_output/{cell_type}/subatlas_contributors.json
+```
+
+Defaults keep a contributor at ≥5% of the cell set and ≥50 cells, tier it
+`primary` at ≥20%, and list its labels down to 2% of what it contributed. Override
+per project if the numbers look wrong for it; the thresholds are recorded on the
+output either way.
+
+**3b(ii). Judge consistency → subagent: `subatlas-consistency`**
+
+**Input:** per `subatlas_consistency_input.schema.json` — cell label, atlas DOI,
+`contributors_path`, `cas_path`, `project_dir`, `output_path` (and
+`name_resolution_path` from step 3, which sharpens the comparison).
+
+**Output:** `projects/{project}/traversal_output/{cell_type}/subatlas_consistency.json`
+— a SKOS verdict per contributor with its explanation, plus the `primacy` call
+that step 4b consumes.
+
 ### 4. Parallel: Scan Supplements + Citation Traverse
 
 These two steps are independent after name resolution. Run them in parallel.
@@ -137,17 +173,27 @@ These two steps are independent after name resolution. Run them in parallel.
 
 #### 4b. Citation Traverse → subagent: `citation-traverse`
 
-**Input:**
-- Seed paper ID (CorpusId from snippet metadata, or `DOI:{doi}`)
+**Input:** per `citation_traverse_input.schema.json`.
+- `seeds` — the papers to search at hop 0, **in priority order**. Take the order
+  from step 3b's `primacy`:
+  - `subatlas_primary` → that paper is seed priority 0, the atlas paper priority 1.
+    It is where the cell type was characterised; searching the atlas first spends
+    the run cap on a paper that only inherited the label.
+  - `co_equal` → the atlas paper plus every paper in `co_equal_papers`.
+  - `atlas_primary`, or no step 3b at all → the atlas paper alone.
+  Set each seed's `retrieval` from its registry entry in `source.subatlas_papers`:
+  `local` for `status: local` (ASTA holds too little of it to quote — that is why
+  it was built locally), `asta` otherwise.
 - Query: `"{label} / {resolved_name} in {scope} {tissue}: location, structure, function, markers"`
 - Depth: 1 (default), configurable up to 3
 
-**Local snippet index (fresh preprints):** if
-`projects/{project}/local_index/manifest.json` exists, the graph also calls
-`services.citation_traverser.traverse_local` in parallel with the ASTA path
-and merges results. Snippets carry `source_method: "local_snippet"`. See the
-`local-paper-index` skill (`.claude/skills/local-paper-index/SKILL.md`) for
-how to build the index when ASTA is blind to the atlas paper.
+**Local snippet index:** the agentic route reaches it through
+`cli_annotate fetch --local --project-dir ... --papers <DOI>`, which produces the
+same records as the ASTA path. Use it for any seed whose registry `status` is
+`local`. See the `local-paper-index` skill
+(`.claude/skills/local-paper-index/SKILL.md`) for building the corpus. (The
+deprecated graph does the same merge via
+`services.citation_traverser.traverse_local`.)
 
 **Output:**
 - `projects/{project}/traversal_output/{cell_type}/all_summaries.json`
@@ -155,7 +201,10 @@ how to build the index when ASTA is blind to the atlas paper.
 
 ### 5. Synthesize Report → subagent: `synthesize-report`
 
-**Input:** Reads all output files from steps 3-4.
+**Input:** Reads all output files from steps 3-4, including
+`subatlas_contributors.json` and `subatlas_consistency.json` where step 3b ran.
+Those drive an "Annotation provenance and subatlas consistency" section and, where
+`primacy` is `subatlas_primary`, which paper is cited as the primary source.
 
 **Output:** `projects/{project}/reports/{cell_type}.md`
 
@@ -168,6 +217,10 @@ After the report is written, **always run validation explicitly**:
 2. Check that every blockquoted text (`> "..."`) is a substring of the
    evidence corpus.
 3. Check that every DOI in the report exists in the paper catalogue.
+3b. Where `subatlas_consistency.json` gives `primacy: subatlas_primary`, check
+   that paper's DOI is both in the catalogue and in the report
+   (`check_defining_paper`). A report that omits the paper its cell type comes
+   from is the failure this catches.
 4. If validation fails, pass the error list back to `synthesize-report` and
    retry (max 2 retries).
 
@@ -286,6 +339,8 @@ projects/{project}/
 ├── cell_type_annotations.json
 ├── traversal_output/{cell_type}/
 │   ├── name_resolution.json
+│   ├── subatlas_contributors.json   # if the project has integration provenance
+│   ├── subatlas_consistency.json    #   "
 │   ├── supplementary_findings.json
 │   ├── all_summaries.json
 │   └── paper_catalogue.json
@@ -343,6 +398,10 @@ Shared validation logic in `src/atlas_chat/atlas_chat/validation/report_checker.
    the evidence corpus (all_summaries.json snippets + supplementary evidence +
    atlas full text).
 2. **DOI check**: Every DOI in the report must appear in `paper_catalogue.json`.
+3. **Defining-paper check**: where `subatlas_consistency.json` names a
+   `subatlas_primary` paper, its DOI must be in the catalogue *and* in the report.
+   Reaching the paper and actually citing it are different failures, so both are
+   checked.
 
 The canonical correction loop is in Python (`report_graph.py` nodes
 `SynthesizeReport` → `ValidateReport` → retry). Both runtimes use it:

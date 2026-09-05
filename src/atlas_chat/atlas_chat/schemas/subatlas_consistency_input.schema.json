@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "subatlas_consistency_input.schema.json",
+  "title": "Input to the subatlas-consistency subagent",
+  "description": "Everything the consistency step needs, passed in rather than derived: the orchestrator owns the project layout, the subagent owns the judgement.",
+  "type": "object",
+  "required": ["cell_label", "atlas_doi", "contributors_path", "output_path"],
+  "additionalProperties": false,
+  "properties": {
+    "cell_label": { "type": "string", "description": "The atlas's own label for the cell set." },
+    "labelset": { "type": "string", "description": "Disambiguates a label reused across labelsets." },
+    "atlas_doi": { "type": "string" },
+    "atlas_corpus_id": { "type": "string", "pattern": "^CorpusId:" },
+    "contributors_path": {
+      "type": "string",
+      "description": "Path to subatlas_contributors.json for this cell set (from `python -m atlas_chat.cli_contributors`). The cutoff has already been applied; do not re-derive it."
+    },
+    "cas_path": {
+      "type": "string",
+      "description": "Path to the project's CAS+ document, read for the atlas's own markers, synonyms and composition — the material for working_definition."
+    },
+    "project_dir": {
+      "type": "string",
+      "description": "Project directory, for the local snippet index and supplement store of contributing papers."
+    },
+    "name_resolution_path": {
+      "type": "string",
+      "description": "Optional name_resolution.json, when resolve-name has already run: its resolved_names sharpen the comparison."
+    },
+    "output_path": {
+      "type": "string",
+      "description": "Where to write subatlas_consistency.json. Put it beside subatlas_contributors.json so the validator hook can cross-check purity against it."
+    }
+  }
+}

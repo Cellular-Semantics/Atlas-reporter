@@ -311,6 +311,62 @@ def check_source_tags(
     return errors
 
 
+def check_defining_paper(
+    consistency: dict[str, Any],
+    catalogue: dict[str, object],
+    report_md: str,
+) -> list[str]:
+    """Check the report actually reaches the paper that defines its cell type.
+
+    Where ``subatlas_consistency.json`` calls a contributing paper
+    ``subatlas_primary``, that paper is where the cell type was characterised — the
+    atlas inherited the label. A report that omits it has cited everything except
+    the source of its own subject, and until now nothing caught that: 10 of 11
+    retinal reports in one run never mentioned the study every one of their cells
+    came from. So this is a hard failure, not a warning.
+
+    Two things are checked, because either alone can be satisfied vacuously:
+    the defining paper is in ``paper_catalogue.json`` (traversal reached it), and
+    its DOI appears in the report (the prose used it).
+
+    Args:
+        consistency: A parsed ``subatlas_consistency.json``, or ``{}``.
+        catalogue: The parsed ``paper_catalogue.json``.
+        report_md: The report markdown.
+
+    Returns:
+        A list of error strings; empty when there is no primacy claim to check.
+    """
+    primacy = consistency.get("primacy") or {}
+    if primacy.get("call") != "subatlas_primary":
+        return []
+
+    paper = primacy.get("primary_paper") or "<unnamed>"
+    doi = primacy.get("primary_doi")
+    if not isinstance(doi, str) or not doi:
+        return [
+            f"subatlas_consistency names {paper} as the defining paper "
+            "(primacy: subatlas_primary) but gives no primary_doi, so the report "
+            "cannot be checked against it"
+        ]
+
+    errors: list[str] = []
+    known_dois, _ = _catalogue_ids(catalogue)
+    if doi.lower().strip() not in known_dois:
+        errors.append(
+            f"{paper} ({doi}) is the defining paper for this cell type "
+            "(primacy: subatlas_primary) but is missing from paper_catalogue.json — "
+            "traversal never reached it. Seed traversal on it and re-run."
+        )
+    if doi.lower() not in report_md.lower():
+        errors.append(
+            f"{paper} ({doi}) is the defining paper for this cell type but its DOI "
+            "does not appear in the report. The paper the cell type comes from must "
+            "be cited."
+        )
+    return errors
+
+
 def validate_report(
     report_path: Path,
     traversal_dir: Path,
@@ -320,7 +376,8 @@ def validate_report(
     Args:
         report_path: Path to the markdown report file.
         traversal_dir: Directory containing traversal output files
-            (``all_summaries.json``, ``paper_catalogue.json``).
+            (``all_summaries.json``, ``paper_catalogue.json``, and optionally
+            ``supplementary_findings.json`` / ``subatlas_consistency.json``).
 
     Returns:
         Tuple of ``(passed, errors)`` where *passed* is ``True`` when there
@@ -357,9 +414,18 @@ def validate_report(
     if fulltext_path.exists():
         atlas_snippets.append(fulltext_path.read_text())
 
+    # Subatlas consistency, when the step has run for this cell type.
+    consistency: dict[str, Any] = {}
+    consistency_path = traversal_dir / "subatlas_consistency.json"
+    if consistency_path.exists():
+        loaded = json.loads(consistency_path.read_text())
+        if isinstance(loaded, dict):
+            consistency = loaded
+
     errors: list[str] = []
     errors.extend(check_quotes(report_md, summaries, atlas_snippets))
     errors.extend(check_references(report_md, catalogue))
     errors.extend(check_source_tags(summaries, supp_data, catalogue))
+    errors.extend(check_defining_paper(consistency, catalogue, report_md))
 
     return (len(errors) == 0, errors)

@@ -1,0 +1,1491 @@
+{
+  "AMACRINE_CELL": {
+    "n_cells": 78,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        78,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "AC",
+        77,
+        0.987
+      ],
+      [
+        "imGlia",
+        1,
+        0.013
+      ]
+    ]
+  },
+  "AUTONOMIC_NCCS_SCPS": {
+    "n_cells": 15860,
+    "studies": [
+      [
+        "whole_embryo",
+        10670,
+        0.673
+      ],
+      [
+        "Suo_et_al_2022_Science_Elmentaite2020",
+        1198,
+        0.076
+      ],
+      [
+        "Zhang_et_al_2020_bioRxiv",
+        790,
+        0.05
+      ],
+      [
+        "Kanemaru_et_al_2024_bioRxiv",
+        743,
+        0.047
+      ],
+      [
+        "Lawrence_et_al_2024_nature_comm.",
+        731,
+        0.046
+      ],
+      [
+        "Suo_et_al_2022_Science_Suo2022",
+        496,
+        0.031
+      ],
+      [
+        "Yu_et_al_2020_Cell",
+        367,
+        0.023
+      ],
+      [
+        "He_et_al_2022_Cell",
+        279,
+        0.018
+      ],
+      [
+        "To_et_al_2024_nature",
+        205,
+        0.013
+      ],
+      [
+        "Colin_et_al_2022_ScienceDirect",
+        175,
+        0.011
+      ],
+      [
+        "Suo_et_al_2022_Science_Popescu2019",
+        82,
+        0.005
+      ],
+      [
+        "Dong_et_al_2022_CancerCell",
+        82,
+        0.005
+      ],
+      [
+        "Calvanese_et_al_2022_nature",
+        29,
+        0.002
+      ],
+      [
+        "Suo_et_al_2022_Science_Stewart2019",
+        6,
+        0.0
+      ],
+      [
+        "Suo_et_al_2022_Science_Park2020",
+        4,
+        0.0
+      ],
+      [
+        "Garcia_Alonso_et_al_2022_nature",
+        2,
+        0.0
+      ],
+      [
+        "Miller_et_al_2020_Developmental_Cell",
+        1,
+        0.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "NCC-SCP early autonomic",
+        3739,
+        0.236
+      ],
+      [
+        "NCC-SCP",
+        3155,
+        0.199
+      ],
+      [
+        "NCC-SCP early",
+        2764,
+        0.174
+      ],
+      [
+        "GLIAL",
+        1703,
+        0.107
+      ],
+      [
+        "SCHWANN",
+        719,
+        0.045
+      ],
+      [
+        "Schwann cell precursors",
+        703,
+        0.044
+      ],
+      [
+        "NCC-SCP autonomic",
+        439,
+        0.028
+      ],
+      [
+        "fSGC_progenitor",
+        403,
+        0.025
+      ],
+      [
+        "PNS glia",
+        356,
+        0.022
+      ],
+      [
+        "fSGC",
+        268,
+        0.017
+      ],
+      [
+        "NCC-SCP sensory",
+        259,
+        0.016
+      ],
+      [
+        "Schwann",
+        192,
+        0.012
+      ],
+      [
+        "NCC-SCP early sensory",
+        191,
+        0.012
+      ],
+      [
+        "Schwann precursor",
+        183,
+        0.012
+      ],
+      [
+        "corneal endothelium",
+        100,
+        0.006
+      ]
+    ]
+  },
+  "AUTONOMIC_NEURONAL_PROGENITORS": {
+    "n_cells": 3181,
+    "studies": [
+      [
+        "whole_embryo",
+        2343,
+        0.737
+      ],
+      [
+        "He_et_al_2022_Cell",
+        247,
+        0.078
+      ],
+      [
+        "Kanemaru_et_al_2024_bioRxiv",
+        216,
+        0.068
+      ],
+      [
+        "Suo_et_al_2022_Science_Suo2022",
+        185,
+        0.058
+      ],
+      [
+        "Colin_et_al_2022_ScienceDirect",
+        70,
+        0.022
+      ],
+      [
+        "Lawrence_et_al_2024_nature_comm.",
+        45,
+        0.014
+      ],
+      [
+        "Dong_et_al_2022_CancerCell",
+        35,
+        0.011
+      ],
+      [
+        "To_et_al_2024_nature",
+        13,
+        0.004
+      ],
+      [
+        "Calvanese_et_al_2022_nature",
+        12,
+        0.004
+      ],
+      [
+        "Zhang_et_al_2020_bioRxiv",
+        6,
+        0.002
+      ],
+      [
+        "Suo_et_al_2022_Science_Popescu2019",
+        6,
+        0.002
+      ],
+      [
+        "Suo_et_al_2022_Science_Elmentaite2020",
+        3,
+        0.001
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "sympathetic neuronal progenitor",
+        1781,
+        0.56
+      ],
+      [
+        "NEURON",
+        193,
+        0.061
+      ],
+      [
+        "NCC-SCP early autonomic",
+        174,
+        0.055
+      ],
+      [
+        "NCC-SCP early",
+        174,
+        0.055
+      ],
+      [
+        "enteric neuronal progenitor",
+        129,
+        0.041
+      ],
+      [
+        "fNC_chromaffin_like",
+        81,
+        0.025
+      ],
+      [
+        "NCC-SCP",
+        71,
+        0.022
+      ],
+      [
+        "fNC_progenitor",
+        68,
+        0.021
+      ],
+      [
+        "TM4SF4+ CHODL+ neuron",
+        58,
+        0.018
+      ],
+      [
+        "MFNG+ DBH+ neuron",
+        51,
+        0.016
+      ],
+      [
+        "TM4SF4+ PENK+ neuron",
+        45,
+        0.014
+      ],
+      [
+        "corneal endothelium",
+        44,
+        0.014
+      ],
+      [
+        "EARLY SYMPATHETIC",
+        31,
+        0.01
+      ],
+      [
+        "KCNIP4+ neuron",
+        29,
+        0.009
+      ],
+      [
+        "SST+ neuron",
+        27,
+        0.008
+      ]
+    ]
+  },
+  "BIPOLARS": {
+    "n_cells": 1334,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        1334,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "Bipolars",
+        1321,
+        0.99
+      ],
+      [
+        "imGlia",
+        11,
+        0.008
+      ],
+      [
+        "Glia",
+        1,
+        0.001
+      ],
+      [
+        "Early Glia",
+        1,
+        0.001
+      ]
+    ]
+  },
+  "DL1_NEURON": {
+    "n_cells": 2454,
+    "studies": [
+      [
+        "whole_embryo",
+        2454,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "DL1 neuron",
+        2454,
+        1.0
+      ]
+    ]
+  },
+  "DL2_NEURON": {
+    "n_cells": 5044,
+    "studies": [
+      [
+        "whole_embryo",
+        5044,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "DL2 neuron",
+        5044,
+        1.0
+      ]
+    ]
+  },
+  "DL3_NEURON": {
+    "n_cells": 9242,
+    "studies": [
+      [
+        "whole_embryo",
+        9241,
+        1.0
+      ],
+      [
+        "Braun_et_al._2022_bioRxiv",
+        1,
+        0.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "DL3 neuron",
+        7982,
+        0.864
+      ],
+      [
+        "sensory neuron",
+        700,
+        0.076
+      ],
+      [
+        "pA3-4 neural progenitor",
+        370,
+        0.04
+      ],
+      [
+        "pA2 neural progenitor",
+        185,
+        0.02
+      ],
+      [
+        "NCC-SCP",
+        4,
+        0.0
+      ],
+      [
+        "Head neuroblast",
+        1,
+        0.0
+      ]
+    ]
+  },
+  "DL5_NEURON": {
+    "n_cells": 3842,
+    "studies": [
+      [
+        "whole_embryo",
+        3840,
+        0.999
+      ],
+      [
+        "Braun_et_al._2022_bioRxiv",
+        2,
+        0.001
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "DL5 neuron",
+        2544,
+        0.662
+      ],
+      [
+        "radial glia",
+        677,
+        0.176
+      ],
+      [
+        "radial glia hindbrain",
+        329,
+        0.086
+      ],
+      [
+        "excitatory neuron",
+        290,
+        0.075
+      ],
+      [
+        "Head radial glia",
+        1,
+        0.0
+      ],
+      [
+        "Head neuroblast",
+        1,
+        0.0
+      ]
+    ]
+  },
+  "DL6_NEURON": {
+    "n_cells": 1522,
+    "studies": [
+      [
+        "whole_embryo",
+        1522,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "DL6 neuron",
+        1521,
+        0.999
+      ],
+      [
+        "NCC-SCP",
+        1,
+        0.001
+      ]
+    ]
+  },
+  "PA1_NEURAL_PROGENITOR": {
+    "n_cells": 16815,
+    "studies": [
+      [
+        "whole_embryo",
+        16809,
+        1.0
+      ],
+      [
+        "Braun_et_al._2022_bioRxiv",
+        5,
+        0.0
+      ],
+      [
+        "Suo_et_al_2022_Science_Suo2022",
+        1,
+        0.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "pA1 neural progenitor",
+        16008,
+        0.952
+      ],
+      [
+        "radial glia midbrain",
+        519,
+        0.031
+      ],
+      [
+        "radial glia",
+        145,
+        0.009
+      ],
+      [
+        "pA3-4 neural progenitor",
+        130,
+        0.008
+      ],
+      [
+        "excitatory neuron midbrain",
+        7,
+        0.0
+      ],
+      [
+        "Head neuron",
+        2,
+        0.0
+      ],
+      [
+        "Head neuroblast",
+        2,
+        0.0
+      ],
+      [
+        "Head radial glia",
+        1,
+        0.0
+      ],
+      [
+        "DEVELOPING_NEPHRON_I",
+        1,
+        0.0
+      ]
+    ]
+  },
+  "PA2_NEURAL_PROGENITOR": {
+    "n_cells": 1064,
+    "studies": [
+      [
+        "whole_embryo",
+        1064,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "pA2 neural progenitor",
+        961,
+        0.903
+      ],
+      [
+        "radial glia",
+        103,
+        0.097
+      ]
+    ]
+  },
+  "PA3_4_NEURAL_PROGENITOR": {
+    "n_cells": 8475,
+    "studies": [
+      [
+        "whole_embryo",
+        8475,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "pA3-4 neural progenitor",
+        5916,
+        0.698
+      ],
+      [
+        "radial glia hindbrain",
+        2161,
+        0.255
+      ],
+      [
+        "radial glia",
+        285,
+        0.034
+      ],
+      [
+        "radial glia forebrain FOXG1+",
+        113,
+        0.013
+      ]
+    ]
+  },
+  "PHOTORECEPTORS": {
+    "n_cells": 7760,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        7760,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "Photoreceptors",
+        7597,
+        0.979
+      ],
+      [
+        "Photo/Progen",
+        157,
+        0.02
+      ],
+      [
+        "microglia",
+        2,
+        0.0
+      ],
+      [
+        "Glia",
+        1,
+        0.0
+      ],
+      [
+        "Early Glia",
+        1,
+        0.0
+      ],
+      [
+        "RGC",
+        1,
+        0.0
+      ],
+      [
+        "imGlia",
+        1,
+        0.0
+      ]
+    ]
+  },
+  "RETINAL_GANGLION_CELL": {
+    "n_cells": 2633,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        2633,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "RGC",
+        2620,
+        0.995
+      ],
+      [
+        "imGlia",
+        6,
+        0.002
+      ],
+      [
+        "Early Glia",
+        6,
+        0.002
+      ],
+      [
+        "T1/RGC",
+        1,
+        0.0
+      ]
+    ]
+  },
+  "RETINAL_HORIZONTAL_CELLS": {
+    "n_cells": 68,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        68,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "HC",
+        58,
+        0.853
+      ],
+      [
+        "Progenitors",
+        5,
+        0.074
+      ],
+      [
+        "Photoreceptors",
+        2,
+        0.029
+      ],
+      [
+        "Photo/Progen",
+        1,
+        0.015
+      ],
+      [
+        "RGC",
+        1,
+        0.015
+      ],
+      [
+        "imGlia",
+        1,
+        0.015
+      ]
+    ]
+  },
+  "RETINAL_NEURAL_PROGENITOR": {
+    "n_cells": 767,
+    "studies": [
+      [
+        "whole_embryo",
+        767,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "retinal neural progenitors",
+        767,
+        1.0
+      ]
+    ]
+  },
+  "RETINAL_PROGENITOR": {
+    "n_cells": 6609,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        6609,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "Progenitors",
+        3836,
+        0.58
+      ],
+      [
+        "Photo/Progen",
+        2459,
+        0.372
+      ],
+      [
+        "Early Glia",
+        195,
+        0.03
+      ],
+      [
+        "imGlia",
+        110,
+        0.017
+      ],
+      [
+        "Glia",
+        8,
+        0.001
+      ],
+      [
+        "RGC",
+        1,
+        0.0
+      ]
+    ]
+  },
+  "RETINAL_TRANSITIONAL_CELL_T1": {
+    "n_cells": 1633,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        1633,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "T1",
+        1633,
+        1.0
+      ]
+    ]
+  },
+  "RETINAL_TRANSITIONAL_CELL_T2": {
+    "n_cells": 1018,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        1018,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "T2",
+        893,
+        0.877
+      ],
+      [
+        "T2/T3",
+        125,
+        0.123
+      ]
+    ]
+  },
+  "RETINAL_TRANSITIONAL_CELL_T3": {
+    "n_cells": 1873,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        1873,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "T3",
+        1862,
+        0.994
+      ],
+      [
+        "Early Glia",
+        4,
+        0.002
+      ],
+      [
+        "imGlia",
+        4,
+        0.002
+      ],
+      [
+        "Glia",
+        3,
+        0.002
+      ]
+    ]
+  },
+  "SCPS": {
+    "n_cells": 5092,
+    "studies": [
+      [
+        "whole_embryo",
+        5092,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "NCC-SCP early autonomic",
+        2104,
+        0.413
+      ],
+      [
+        "NCC-SCP early",
+        1192,
+        0.234
+      ],
+      [
+        "NCC-SCP",
+        907,
+        0.178
+      ],
+      [
+        "NCC-SCP autonomic",
+        488,
+        0.096
+      ],
+      [
+        "NCC-SCP sensory",
+        206,
+        0.04
+      ],
+      [
+        "radial glia",
+        113,
+        0.022
+      ],
+      [
+        "NCC-SCP early sensory",
+        79,
+        0.016
+      ],
+      [
+        "sympathetic neuronal progenitor",
+        2,
+        0.0
+      ],
+      [
+        "sensory neuronal progenitor",
+        1,
+        0.0
+      ]
+    ]
+  },
+  "SENSORY_NCCS_SCPS": {
+    "n_cells": 11683,
+    "studies": [
+      [
+        "whole_embryo",
+        10691,
+        0.915
+      ],
+      [
+        "Lawrence_et_al_2024_nature_comm.",
+        618,
+        0.053
+      ],
+      [
+        "Suo_et_al_2022_Science_Suo2022",
+        267,
+        0.023
+      ],
+      [
+        "To_et_al_2024_nature",
+        104,
+        0.009
+      ],
+      [
+        "Dong_et_al_2022_CancerCell",
+        2,
+        0.0
+      ],
+      [
+        "Calvanese_et_al_2022_nature",
+        1,
+        0.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "NCC-SCP sensory",
+        6624,
+        0.567
+      ],
+      [
+        "NCC-SCP",
+        1673,
+        0.143
+      ],
+      [
+        "NCC-SCP early sensory",
+        1362,
+        0.117
+      ],
+      [
+        "SCHWANN",
+        609,
+        0.052
+      ],
+      [
+        "NCC-SCP early",
+        576,
+        0.049
+      ],
+      [
+        "NCC-SCP early autonomic",
+        307,
+        0.026
+      ],
+      [
+        "GLIAL",
+        257,
+        0.022
+      ],
+      [
+        "NCC-SCP autonomic",
+        106,
+        0.009
+      ],
+      [
+        "Schwann",
+        99,
+        0.008
+      ],
+      [
+        "radial glia",
+        30,
+        0.003
+      ],
+      [
+        "sensory neuronal progenitor",
+        13,
+        0.001
+      ],
+      [
+        "NEURON",
+        8,
+        0.001
+      ],
+      [
+        "Neural",
+        5,
+        0.0
+      ],
+      [
+        "MESENCHYME 1",
+        4,
+        0.0
+      ],
+      [
+        "CYCLING MESENCHYME",
+        3,
+        0.0
+      ]
+    ]
+  },
+  "SENSORY_NEURONAL": {
+    "n_cells": 4815,
+    "studies": [
+      [
+        "Lawrence_et_al_2024_nature_comm.",
+        2614,
+        0.543
+      ],
+      [
+        "To_et_al_2024_nature",
+        2060,
+        0.428
+      ],
+      [
+        "Braun_et_al._2022_bioRxiv",
+        110,
+        0.023
+      ],
+      [
+        "whole_embryo",
+        23,
+        0.005
+      ],
+      [
+        "Colin_et_al_2022_ScienceDirect",
+        3,
+        0.001
+      ],
+      [
+        "Suo_et_al_2022_Science_Elmentaite2020",
+        2,
+        0.0
+      ],
+      [
+        "Suo_et_al_2022_Science_Suo2022",
+        2,
+        0.0
+      ],
+      [
+        "Dong_et_al_2022_CancerCell",
+        1,
+        0.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "DORSAL ROOT GANGLIA",
+        2495,
+        0.518
+      ],
+      [
+        "Neural",
+        2057,
+        0.427
+      ],
+      [
+        "SCHWANN",
+        116,
+        0.024
+      ],
+      [
+        "Brain placode cells",
+        103,
+        0.021
+      ],
+      [
+        "NCC-SCP",
+        7,
+        0.001
+      ],
+      [
+        "NCC-SCP early autonomic",
+        5,
+        0.001
+      ],
+      [
+        "sensory neuronal progenitor",
+        5,
+        0.001
+      ],
+      [
+        "NEURON",
+        3,
+        0.001
+      ],
+      [
+        "ciliary margin",
+        2,
+        0.0
+      ],
+      [
+        "NCC-SCP sensory",
+        2,
+        0.0
+      ],
+      [
+        "MICROGLIA",
+        1,
+        0.0
+      ],
+      [
+        "Head neuroblast",
+        1,
+        0.0
+      ],
+      [
+        "GLIAL",
+        1,
+        0.0
+      ],
+      [
+        "radial glia",
+        1,
+        0.0
+      ],
+      [
+        "Brain fibroblasts",
+        1,
+        0.0
+      ]
+    ]
+  },
+  "SENSORY_NEURONAL_EPIBRANCHIAL_PLACODE": {
+    "n_cells": 841,
+    "studies": [
+      [
+        "whole_embryo",
+        840,
+        0.999
+      ],
+      [
+        "To_et_al_2024_nature",
+        1,
+        0.001
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "IPC forebrain",
+        396,
+        0.471
+      ],
+      [
+        "IPC",
+        258,
+        0.307
+      ],
+      [
+        "sympathetic neuron",
+        173,
+        0.206
+      ],
+      [
+        "parasympathetic neuron",
+        12,
+        0.014
+      ],
+      [
+        "Neural",
+        1,
+        0.001
+      ],
+      [
+        "ELAVL4+ neuron",
+        1,
+        0.001
+      ]
+    ]
+  },
+  "SENSORY_NEURONAL_OTIC_PLACODE": {
+    "n_cells": 1485,
+    "studies": [
+      [
+        "whole_embryo",
+        758,
+        0.51
+      ],
+      [
+        "Braun_et_al._2022_bioRxiv",
+        683,
+        0.46
+      ],
+      [
+        "To_et_al_2024_nature",
+        24,
+        0.016
+      ],
+      [
+        "Suo_et_al_2022_Science_Elmentaite2020",
+        12,
+        0.008
+      ],
+      [
+        "Lawrence_et_al_2024_nature_comm.",
+        7,
+        0.005
+      ],
+      [
+        "Colin_et_al_2022_ScienceDirect",
+        1,
+        0.001
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "IPC forebrain",
+        670,
+        0.451
+      ],
+      [
+        "Brain placode cells",
+        669,
+        0.451
+      ],
+      [
+        "IPC",
+        39,
+        0.026
+      ],
+      [
+        "Neural",
+        24,
+        0.016
+      ],
+      [
+        "sympathetic neuron",
+        18,
+        0.012
+      ],
+      [
+        "NCC-SCP",
+        14,
+        0.009
+      ],
+      [
+        "NEURON",
+        11,
+        0.007
+      ],
+      [
+        "Medulla radial glia",
+        9,
+        0.006
+      ],
+      [
+        "sensory neuronal progenitor",
+        8,
+        0.005
+      ],
+      [
+        "DORSAL ROOT GANGLIA",
+        5,
+        0.003
+      ],
+      [
+        "NCC-SCP early autonomic",
+        5,
+        0.003
+      ],
+      [
+        "parasympathetic neuron",
+        2,
+        0.001
+      ],
+      [
+        "Head radial glia",
+        2,
+        0.001
+      ],
+      [
+        "Medulla neuron",
+        1,
+        0.001
+      ],
+      [
+        "Cerebellum neuroblast",
+        1,
+        0.001
+      ]
+    ]
+  },
+  "SENSORY_NEURONAL_PROGENITOR": {
+    "n_cells": 3349,
+    "studies": [
+      [
+        "whole_embryo",
+        2278,
+        0.68
+      ],
+      [
+        "To_et_al_2024_nature",
+        607,
+        0.181
+      ],
+      [
+        "Suo_et_al_2022_Science_Suo2022",
+        233,
+        0.07
+      ],
+      [
+        "Lawrence_et_al_2024_nature_comm.",
+        126,
+        0.038
+      ],
+      [
+        "Braun_et_al._2022_bioRxiv",
+        102,
+        0.03
+      ],
+      [
+        "Suo_et_al_2022_Science_Popescu2019",
+        2,
+        0.001
+      ],
+      [
+        "Sridhar_et_al_2020_CellPress",
+        1,
+        0.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "sensory neuronal progenitor",
+        1382,
+        0.413
+      ],
+      [
+        "Neural",
+        592,
+        0.177
+      ],
+      [
+        "IPC forebrain",
+        283,
+        0.085
+      ],
+      [
+        "NCC-SCP sensory",
+        257,
+        0.077
+      ],
+      [
+        "NEURON",
+        231,
+        0.069
+      ],
+      [
+        "NCC-SCP early sensory",
+        218,
+        0.065
+      ],
+      [
+        "DORSAL ROOT GANGLIA",
+        101,
+        0.03
+      ],
+      [
+        "Brain placode cells",
+        101,
+        0.03
+      ],
+      [
+        "IPC",
+        54,
+        0.016
+      ],
+      [
+        "sympathetic neuron",
+        52,
+        0.016
+      ],
+      [
+        "NCC-SCP",
+        28,
+        0.008
+      ],
+      [
+        "SCHWANN",
+        24,
+        0.007
+      ],
+      [
+        "Schwann",
+        13,
+        0.004
+      ],
+      [
+        "ALX1+ Mes",
+        2,
+        0.001
+      ],
+      [
+        "GLIAL",
+        2,
+        0.001
+      ]
+    ]
+  },
+  "T1_RGC": {
+    "n_cells": 651,
+    "studies": [
+      [
+        "Sridhar_et_al_2020_CellPress",
+        651,
+        1.0
+      ]
+    ],
+    "top_author_labels": [
+      [
+        "T1/RGC",
+        389,
+        0.598
+      ],
+      [
+        "RGC",
+        235,
+        0.361
+      ],
+      [
+        "Early Glia",
+        14,
+        0.022
+      ],
+      [
+        "Glia",
+        7,
+        0.011
+      ],
+      [
+        "imGlia",
+        6,
+        0.009
+      ]
+    ]
+  }
+}

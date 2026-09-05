@@ -1,0 +1,56 @@
+{
+  "cell_label": "Activated post-capillary venous endothelial",
+  "labelset": "L4",
+  "cell_set_accession": "HCArepro:L4:0204",
+  "atlas_doi": "10.64898/2026.06.10.731198",
+  "working_definition": "A venous endothelial subtype of the female reproductive tract vasculature, marked by SELE, ICAM1, AQP1 and PLVAP and carrying the author synonym aPCV. Mapped to CL:1000414 (endothelial cell of venule). A rank-0 (finest) label, so it should be expected to be narrower than coarse upstream endothelial calls.",
+  "contributors": [
+    {
+      "subatlas_paper": "celltype_Weigert2025",
+      "doi": "10.1038/s41467-024-55440-2",
+      "compared_label": "endothelial cell",
+      "upstream_definition": "A single undivided endothelial compartment; the study does not resolve venous from arterial or capillary endothelium.",
+      "match_type": "broad match",
+      "skos_mapping": "skos:broadMatch",
+      "confidence": "high",
+      "evidence_status": "text_retrieved",
+      "evidence_quotes": [
+        {
+          "quote": "endothelial cells were annotated as a single cluster",
+          "source_paper": { "doi": "10.1038/s41467-024-55440-2", "role": "subatlas" },
+          "retrieval_method": "corpus_snippet",
+          "section": "Results"
+        }
+      ],
+      "justification": "The upstream label names the compartment the atlas subtype sits inside, with no venous/arterial resolution, so it subsumes the atlas label rather than matching it.",
+      "explanation": "A resolution difference, not a disagreement: the contributing study did not subcluster endothelium, so no marker evidence separating venous from arterial cells was available to it. The atlas's SELE/ICAM1 activation markers have no counterpart in the upstream annotation."
+    },
+    {
+      "subatlas_paper": "celltype_Ulrich2024",
+      "doi": "10.1073/pnas.2404775121",
+      "compared_label": "aPCV",
+      "upstream_definition": "Activated post-capillary venule endothelium, distinguished from tPCV by selectin and adhesion-molecule induction.",
+      "match_type": "exact match",
+      "skos_mapping": "skos:exactMatch",
+      "confidence": "medium",
+      "evidence_status": "text_retrieved",
+      "evidence_quotes": [
+        {
+          "quote": "activated post-capillary venules (aPCV) upregulated SELE and ICAM1",
+          "source_paper": { "doi": "10.1073/pnas.2404775121", "role": "subatlas" },
+          "retrieval_method": "corpus_snippet",
+          "section": "Results"
+        }
+      ],
+      "justification": "The atlas synonym aPCV is this paper's own term and the activation markers agree, so the labels denote the same cell type even though it is not this contributor's dominant call here.",
+      "explanation": "The atlas cell set is not coextensive with the upstream aPCV population: 59% of the cells this paper contributed here it had called Capillary, and only 1.5% of its aPCV cells landed in this set. The atlas appears to have redrawn the capillary/post-capillary-venule boundary using the activation markers rather than adopting the upstream partition wholesale.",
+      "purity_caveat": "This contributor split its 332 cells here across Capillary (59%), tPCV (22%) and aPCV (11%), so there is no single answer to what it called them. The atlas has merged part of the upstream capillary pool into an activated venular identity.",
+      "split_upstream_type": true
+    }
+  ],
+  "primacy": {
+    "call": "co_equal",
+    "co_equal_papers": ["celltype_Ulrich2024"],
+    "reason": "Ulrich 2024 supplies the name and the marker definition (exact match on the aPCV label) but contributes only 6.8% of the cells at 0.59 purity, and the largest contributor is a broad match. Seed on the atlas paper together with Ulrich 2024."
+  }
+}

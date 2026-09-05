@@ -11,6 +11,8 @@ system_prompt: |
   - Supplementary material findings (markers, annotations)
   - Citation traversal summaries (literature snippets with exact quotes)
   - Atlas paper full text
+  - Subatlas contributors + consistency (which upstream studies contributed the
+    cells, what they called them, and whether that agrees with the atlas label)
 
   RULES:
   1. ONLY use blockquotes (> "...") for text that appears in the "quotes"
@@ -28,7 +30,37 @@ system_prompt: |
      traversed literature." — never fabricate content.
   6. The References section must list every cited paper. ONLY use DOIs from
      the Paper Catalogue — do not guess or fabricate DOIs.
-  7. Some Paper Catalogue entries carry an `asta_indexing.band`, recording how
+  7. If Subatlas Consistency is provided, write the "Annotation provenance and
+     subatlas consistency" section from it, and treat it as authoritative about
+     where this cell type comes from.
+     - Report every contributor it judges, including the inconvenient ones.
+     - Give the numbers from Subatlas Contributors in prose, not as a dump: how
+       much of the cell set came from each study, and what it called those cells.
+       Where a contributor's `purity_caveat` is set, say how its labels split —
+       "what did this study call them" has more than one answer there.
+     - Distinguish agreement from uninformativeness. A study that called all its
+       cells "endothelial cell" is a *broad* match: it is consistent with the
+       atlas label without supporting it. Do not write that up as agreement.
+     - Where a verdict is not an exact match, carry its `explanation` across. If
+       the explanation says markers cannot account for the difference, say that
+       — do not substitute a plausible story.
+     - Where `evidence_status` is `unreachable`, `abstract_only` or
+       `no_publication`, that contributor could not be compared. Say so as a
+       retrieval limit. Never write it as disagreement.
+     - Where `split_upstream_type` is true, say the atlas distributed one upstream
+       cell type across several of its own cell sets, and give the reverse share.
+     - Where `no_dominant_contributor` is true, state plainly that no single
+       upstream study accounts for this cell set and that the label is the atlas's
+       own pooled or de-novo call. This is a finding; do not omit the section.
+     - Fold `tail` into one sentence naming the count and combined share, and
+       `unpublished_cells` into another. Never let the reported contributors imply
+       they account for the whole cell set when they do not.
+  8. If Subatlas Consistency gives `primacy: subatlas_primary`, that paper — not
+     the atlas — is where this cell type was characterised. Cite it as the primary
+     source for identity, markers and function, with the atlas paper supplying the
+     integration context and its own marker tables. Its DOI must appear in the
+     References; report validation fails otherwise.
+  9. Some Paper Catalogue entries carry an `asta_indexing.band`, recording how
      much of that paper was actually retrievable. Where a band is
      `abstract_only`, only the title and abstract were ever indexed — there was
      no body text to search. If a claim rests solely on such a paper, state that
@@ -63,6 +95,12 @@ user_prompt: |
   == Paper Catalogue ==
   {paper_catalogue_json}
 
+  == Subatlas Contributors ==
+  {subatlas_contributors_json}
+
+  == Subatlas Consistency ==
+  {subatlas_consistency_json}
+
   Write the report with these sections. Use subsections where the evidence
   supports them. Provide narrative context around quotes — don't just list
   quotes without explanation.
@@ -78,6 +116,13 @@ user_prompt: |
   ## Markers
   List marker genes with evidence. For each marker, explain its functional
   significance and cite the source.
+
+  ## Annotation provenance and subatlas consistency
+  Only when Subatlas Consistency is provided (omit the section entirely if not).
+  Which upstream studies contributed the cells in this cell set, what each called
+  them, and whether that agrees with the atlas label. Explain any disagreement
+  from markers where the evidence allows, and say so where it does not. Write it
+  as prose, not a table of ratios.
 
   ## Location
   Where this cell type is found — tissue compartments, spatial context,
