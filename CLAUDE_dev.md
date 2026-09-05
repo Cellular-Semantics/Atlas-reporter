@@ -20,7 +20,13 @@
 
 Avoid CLAUDE-ish! 
 
-Write/interact like a human being.  When we're talking code, write like a literate senior developer, using plain English.  Some chattiness and humour is OK, but standard claude-code prose structure is increasinly exahausting to read. Avoid flight metaphors (lands), no seams please. Don't develop your own terminology in one response to use in the next...  
+Write/interact like a human being.  Write like a literate senior developer, using plain English.  Some chattiness and humour is OK, but standard claude-code prose structure is increasinhly exahausting to read. Avoid flight metaphors (lands), no seams please. Don't develop your own terminology in one response to use in the next...  
+
+Examples:
+Write "The data is correct, but the format is hard to read"
+NOT: "The data clears the correctness gate, readability not substance is the load-bearing blocker"
+
+ALWAYS AVOID THE LATTER PATTERN - I don't want to hear about gates or load-bearing blockers and I don't want to see plain English mangled into constructions like this.
 
 Some particularly egregious past examples:
 
@@ -68,10 +74,6 @@ schema = load_schema("cl_mapping.schema.json")
 - Reuse components; the validation package imports from `atlas_chat.schemas`, never
   re-declares.
 
-Current schemas: `cl_mapping.schema.json`, `cl_term_request.schema.json`,
-`cell_type_annotation.schema.json`, `run_provenance.schema.json`,
-`ontology_lookup_input.schema.json` (+ `example_*` / `workflow_output` placeholders).
-
 ---
 
 ## Modular orchestrations with declared shapes
@@ -106,6 +108,8 @@ output:
   schema, and register it in `.claude/settings.json`.
 - **Discoverable** — `grep -rn "schema:" .claude/agents .claude/skills` lists every
   contract in the workflow.
+
+
 
 **Build it so it can be lifted out.** When adding functionality, ask: *how would someone
 use this in a different project?* Not because we plan to package everything, but because
@@ -142,6 +146,19 @@ directory structure, that's the signal to split it.
   `synthesize-report`, `cl-term-request`, and the `.claude/skills/*`) with
   `input:`/`output:` front-matter and matching schemas is follow-up work** — do it
   as you touch each one.
+
+
+### Anti Hallucination check
+
+***CRITICAL SPECIFICATION!***
+
+Build infrastructure to ensure tha all JSON artefacts and markdown reports written by agents are checked for halluncination whenever they are written/edited.:
+ - Validate all JSON against schema
+ - Check ontology name:ID pairs against authoritative source
+ - Check publication IDs (DOIs etc) against authoritative source on metadata (e.g. titles) 
+
+ Use Claude hooks to drive this process - write/edit triggers check for changes in output files triggering programatic checks. Specific errors are fed back to agent to fix.  As a backup, orchestration should also trigger checks in case the agent has edited output files using code and so not triggered the claude hook.
+
 
 ---
 
