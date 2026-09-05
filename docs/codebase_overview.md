@@ -36,11 +36,6 @@
 **Agentic (Claude Code) workflows:**
 - `/run-workflow` → `.claude/commands/run-workflow.md` → spawns orchestrator following `CLAUDE.md`
 
-**PDF text CLI** (`atlas-pdf-text` console script):
-- `src/atlas_chat/atlas_chat/services/pdf_text.py:main()` — writes a PDF's text plus a sidecar
-  (`pdf_text_extract.schema.json`) to a directory you name. Extraction only; whether to read the
-  result is the caller's call. Skill wrapper: `.claude/skills/pdf-text/`.
-
 **Local index CLI** (secondary entry point within `local_snippet_index.py`):
 - `src/atlas_chat/atlas_chat/services/local_snippet_index.py:main()` — `build`, `add`, `remove`, `list`, `search` subcommands
 
@@ -141,7 +136,7 @@ The GitHub App private key file path is configured separately — the key itself
 | `python-dotenv` | `.env` loading (delegated to `cellsem_llm_client`) |
 | `sentence-transformers` | `all-MiniLM-L6-v2` embeddings for local snippet index (optional dep under `[local-index]` extra) |
 | `numpy` | Vector math for cosine similarity in local search |
-| `pymupdf4llm` | PDF-to-markdown extraction, used by `pdf_text` and the local index (optional dep under `[text-access]` extra) |
+| `pymupdf4llm` | PDF-to-markdown extraction, used by the supplement store and the local index (optional dep under `[text-access]` extra) |
 | `curl-cffi` | Fetching preprint JATS past Cloudflare (optional dep under `[text-access]` extra) |
 | `PyJWT` + `cryptography` | GitHub App JWT minting in `github_app_posting/auth.py` |
 | `ruff`, `mypy`, `pytest`, `sphinx` | Dev tooling (lint, type check, tests, docs) |

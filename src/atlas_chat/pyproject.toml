@@ -46,7 +46,6 @@ supplements = [
 
 [project.scripts]
 atlas-report = "atlas_chat.cli:main"
-atlas-pdf-text = "atlas_chat.cli_pdf_text:main"
 
 [build-system]
 requires = ["setuptools>=68.0"]
