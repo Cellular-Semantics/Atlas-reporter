@@ -34,6 +34,10 @@
           },
           {
             "type": "command",
+            "command": "uv run python .claude/hooks/check_pdf_text_extract.py"
+          },
+          {
+            "type": "command",
             "command": "uv run python .claude/hooks/check_report_refs.py"
           }
         ]

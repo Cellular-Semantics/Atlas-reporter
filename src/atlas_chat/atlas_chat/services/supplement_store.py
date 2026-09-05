@@ -800,6 +800,37 @@ def _outline_docx(path: Path, sample_rows: int, max_cols: int) -> list[dict[str,
 # ------------------------------------------------------------------
 
 
+def _pdf_text(path: Path) -> tuple[str, str | None]:
+    """Body prose from a supplementary PDF, figure-internal text left out.
+
+    Two of the supplementary PDFs in the corpus carried cluster-to-name
+    evidence and both were prose, not tables — so a PDF that ``outline_file``
+    reads as shapeless is not necessarily empty. Reading order across columns
+    is not reliable here; the text is for deciding what a file contains, not
+    for quoting.
+
+    Returns:
+        The text and an optional note explaining an empty result.
+    """
+    try:
+        from atlas_chat.services._pdf_parser import extract_pdf_segments
+    except ImportError as exc:  # pragma: no cover - environment guard
+        return "", f"cannot import the PDF parser: {exc}"
+    try:
+        segments = extract_pdf_segments(path)
+    except ImportError:
+        return "", "PDF text needs the [text-access] extra: uv sync --extra text-access"
+    except Exception as exc:
+        return "", f"PDF text extraction failed: {exc}"
+    body = [s.text for s in segments if s.section != "IN_FIGURE"]
+    if not body:
+        return "", (
+            "PDF yielded no body prose — most likely a scan; there is no OCR here. "
+            "Record a gap rather than concluding the file has no content."
+        )
+    return "\n\n".join(body), None
+
+
 def extract_text(path: Path, max_chars: int = 40_000) -> dict[str, Any]:
     """Plain text of a document, truncated to a budget.
 
@@ -829,6 +860,10 @@ def extract_text(path: Path, max_chars: int = 40_000) -> dict[str, Any]:
         text = _docx_text(path)
     elif kind in {"txt", "csv", "tsv"}:
         text = path.read_text(encoding="utf-8", errors="replace")
+    elif kind == "pdf":
+        text, note = _pdf_text(path)
+        if note:
+            out["note"] = note
     else:
         out.update(
             {
@@ -836,7 +871,7 @@ def extract_text(path: Path, max_chars: int = 40_000) -> dict[str, Any]:
                 "chars": 0,
                 "truncated": False,
                 "note": (
-                    f"no text extraction for {kind}; PDFs need the [local-index] "
+                    f"no text extraction for {kind}; PDFs need the [text-access] "
                     "extra and services._pdf_parser"
                 ),
             }
