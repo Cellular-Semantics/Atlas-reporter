@@ -31,6 +31,13 @@
         "$ref": "#/$defs/TablePointer"
       }
     },
+    "prose": {
+      "type": "array",
+      "description": "The content index for supplementary material that is prose rather than a table: a Supplementary Discussion, a Methods section, a table-legends document. It has no header row and no columns, so `tables` cannot hold it, and a bundle whose legends document is unrepresentable reads as though it were absent. Prose that names cell types is meant to be read whole alongside the paper text, which is why each pointer carries the path to its extracted text.",
+      "items": {
+        "$ref": "#/$defs/ProsePointer"
+      }
+    },
     "gaps": {
       "type": "array",
       "description": "Things the indexer could not do, stated explicitly so an absence is never mistaken for a negative result. Read this before concluding a paper has no marker tables.",
@@ -216,7 +223,7 @@
     },
     "TablePointer": {
       "type": "object",
-      "description": "A table worth reading, located precisely enough to slice without searching, and carrying its own relevance verdict. One pointer per table \u2014 a sheet, not a workbook \u2014 because a 42-sheet supplement routinely mixes differential expression with antibody lists, and a verdict on the file as a whole cannot express that. Describes the table and its columns; it deliberately does NOT enumerate which cell types appear (a query-time question).",
+      "description": "A table worth reading, located precisely enough to slice without searching, and carrying its own relevance verdict. One pointer per table \u2014 a sheet, not a workbook \u2014 because a 42-sheet supplement routinely mixes differential expression with antibody lists, and a verdict on the file as a whole cannot express that. Describes the table and its columns; it records WHETHER cell types are named but deliberately does NOT enumerate WHICH (a query-time question). A table is never read into a reader's context wholesale \u2014 that is what the locator and columns are for.",
       "properties": {
         "file_id": {
           "type": "string",
@@ -299,6 +306,17 @@
             "headers",
             "rows_read"
           ]
+        },
+        "mentions_cell_types": {
+          "type": "boolean",
+          "description": "Whether this table names cell types, cell states, or cluster identifiers standing for either. Cluster IDs count: a column of `c1`/`c2` beside a column of names is a naming even with no recognisable cell-type word. Recorded because it decides how the table is used, not to enumerate what is in it."
+        },
+        "mentions_cell_types_note": {
+          "type": "string",
+          "description": "What that verdict rests on, and whether the read behind it was complete or bounded. A `false` from a bounded read means 'none in what was seen', never 'none in the table' — say which."
+        },
+        "cas_uptake": {
+          "$ref": "#/$defs/CasUptake"
         }
       },
       "required": [
@@ -323,6 +341,89 @@
       },
       "required": [
         "name"
+      ],
+      "additionalProperties": false
+    },
+    "ProsePointer": {
+      "type": "object",
+      "description": "A piece of supplementary prose and what it contains. Unlike a table, prose is not sliced — a unit that names cell types is read whole alongside the paper text, so the pointer carries the path to its extracted text rather than a locator into the original file. Extraction is recorded because it is not all equal: text recovered from a PDF has no reliable reading order across columns and is not equivalent to JATS when grounding a quote.",
+      "properties": {
+        "file_id": {
+          "type": "string",
+          "description": "The SupplementFile.file_id this prose came from."
+        },
+        "member_path": {
+          "type": "string",
+          "description": "Path within the archive, when file_id names an archive."
+        },
+        "text_file": {
+          "type": "string",
+          "description": "Store-relative path to the extracted plain text. What a reader opens; the original file may be a format it cannot read."
+        },
+        "n_chars": {
+          "type": "integer",
+          "description": "Characters of extracted text. The size of the read a caller is committing to.",
+          "minimum": 0
+        },
+        "extractor": {
+          "type": "string",
+          "description": "What produced the text, so its trustworthiness is visible without opening it. 'docx' and 'plaintext' preserve reading order; 'pdf' does not, and text from it must not be treated as equivalent to JATS when grounding a quote.",
+          "enum": [
+            "docx",
+            "pdf",
+            "plaintext"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "description": "What this prose contains and what a reader would use it for. One or two sentences, grounded in the text actually read."
+        },
+        "mentions_cell_types": {
+          "type": "boolean",
+          "description": "Whether this prose names cell types, cell states, or clusters standing for either. Records whether, not which. True is the signal to read the unit whole into the reader's context with the paper text."
+        },
+        "mentions_cell_types_note": {
+          "type": "string",
+          "description": "What that verdict rests on, and whether the text behind it was complete or a sample. A `false` from a sample means 'none in what was seen', never 'none in the document'."
+        },
+        "evidence": {
+          "type": "string",
+          "description": "Whether the assessment saw the whole text or a sample of it. Only 'sampled_text' makes a negative verdict provisional.",
+          "enum": [
+            "full_text",
+            "sampled_text"
+          ]
+        },
+        "cas_uptake": {
+          "$ref": "#/$defs/CasUptake"
+        }
+      },
+      "required": [
+        "file_id",
+        "text_file",
+        "description",
+        "mentions_cell_types",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "CasUptake": {
+      "type": "object",
+      "description": "A note that content from this unit was taken into the project's CAS+ document at setup. Written by whatever performed the uptake, because only it knows what it took. It exists so a later run can tell a CAS-supplied fact from a paper-found one, and so a re-run does not re-derive what is already curated.",
+      "properties": {
+        "at": {
+          "type": "string",
+          "description": "ISO-8601 UTC timestamp of the uptake.",
+          "format": "date-time"
+        },
+        "note": {
+          "type": "string",
+          "description": "What was taken and into which part of CAS+, in a sentence."
+        }
+      },
+      "required": [
+        "at",
+        "note"
       ],
       "additionalProperties": false
     },

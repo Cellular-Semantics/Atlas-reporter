@@ -36,6 +36,12 @@
 **Agentic (Claude Code) workflows:**
 - `/run-workflow` → `.claude/commands/run-workflow.md` → spawns orchestrator following `CLAUDE.md`
 
+**Supplement assessment CLI:**
+- `python -m atlas_chat.cli_supplement_assess` — `units` hands out one bounded evidence block
+  per sheet and prose document, `record` merges the judges' verdicts into the manifest,
+  `cas-uptake` notes that a unit fed CAS+. The judging is a `assess-supplement-content`
+  (Haiku) subagent driven by the `index-supplements` skill; nothing in the service calls a model.
+
 **Local index CLI** (secondary entry point within `local_snippet_index.py`):
 - `src/atlas_chat/atlas_chat/services/local_snippet_index.py:main()` — `build`, `add`, `remove`, `list`, `search` subcommands
 
