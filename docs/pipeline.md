@@ -322,7 +322,14 @@ that must hold identically across projects (profiling, assembly, validation, the
 summary). Ingest is iterative rather than single-pass: which papers are subatlases
 is setup knowledge, so CAS+ is enriched across passes, each with its script saved
 alongside its output. The schema's field descriptions are therefore the
-specification an agent works from, and 40 of 83 fields currently have none.
+specification an agent works from; every field now carries one, and a test keeps
+it that way.
+
+`cas_annotation.schema.json` also carries the two denominators the subatlas
+overlap measures divide by — `SubatlasPaper.cell_sets[]` and
+`TransferredAnnotation.subatlas_contribution_cells` — both direct counts from the
+per-cell table. `title` and `source` are no longer required at the root, since a
+document assembled from a dataset does not yet know its paper.
 
 The module is not yet a dependency on `dev`, and has no release — 0.1.0, no tags,
 no PyPI.

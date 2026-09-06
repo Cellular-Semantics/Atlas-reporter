@@ -151,3 +151,119 @@ def test_source_type_is_constrained() -> None:
     data = _load("cas_annotation.good.json")
     data["source"]["subatlas_papers"][1]["source_type"] = "docx"
     assert _errors(data)
+
+
+# --- the descriptions are the specification --------------------------------
+
+
+def _walk_properties(node: object, path: str) -> list[tuple[str, dict]]:
+    found: list[tuple[str, dict]] = []
+    if not isinstance(node, dict):
+        return found
+    for name, subschema in (node.get("properties") or {}).items():
+        found.append((f"{path}.{name}", subschema))
+        found.extend(_walk_properties(subschema, f"{path}.{name}"))
+    if "items" in node:
+        found.extend(_walk_properties(node["items"], f"{path}[]"))
+    return found
+
+
+def _all_properties() -> list[tuple[str, dict]]:
+    schema = load_schema(SCHEMA)
+    found = _walk_properties(schema, "(root)")
+    for name, definition in (schema.get("$defs") or {}).items():
+        found.extend(_walk_properties(definition, name))
+    return found
+
+
+@pytest.mark.unit
+def test_every_field_has_a_description() -> None:
+    """An agent populates this document from the schema, so an undescribed
+    field is an unpopulatable one. Adding a field means describing it."""
+    bare = [p for p, s in _all_properties() if not (s.get("description") or "").strip()]
+    assert bare == []
+
+
+# --- assembled from a dataset ----------------------------------------------
+
+
+@pytest.mark.unit
+def test_document_without_paper_provenance_validates() -> None:
+    """A document assembled from a dataset does not yet know its paper.
+    Completeness is checked where a field is used, not where it is written."""
+    assert (
+        _errors(
+            {
+                "labelsets": [{"name": "celltype"}],
+                "annotations": [{"labelset": "celltype", "cell_label": "AC"}],
+            }
+        )
+        == []
+    )
+
+
+@pytest.mark.unit
+def test_data_provenance_records_several_sources() -> None:
+    data = _load("cas_annotation.minimal.good.json")
+    data["data_provenance"] = {
+        "source_type": "h5ad + supplementary table",
+        "sources": ["atlas.h5ad", "media-2.xlsx"],
+        "n_cells_total": 4212,
+        "script_path": "projects/x/ingest/extract.py",
+    }
+    assert _errors(data) == []
+
+
+@pytest.mark.unit
+def test_source_type_is_free_text() -> None:
+    """Sources include R frames, mtx directories and combinations; a closed
+    list would be wrong for the next atlas."""
+    data = _load("cas_annotation.minimal.good.json")
+    data["data_provenance"] = {"source_type": "seurat rds via SeuratDisk"}
+    assert _errors(data) == []
+
+
+@pytest.mark.unit
+def test_data_provenance_rejects_unknown_fields() -> None:
+    data = _load("cas_annotation.minimal.good.json")
+    data["data_provenance"] = {"source_type": "local_h5ad", "obs_column": "celltype"}
+    assert _errors(data) != []
+
+
+# --- the subatlas denominators ---------------------------------------------
+
+
+@pytest.mark.unit
+def test_subatlas_paper_carries_its_cell_sets() -> None:
+    """The denominator for fraction_of_subatlas_set: each contributing cell
+    set's size across the whole atlas, stated once per study."""
+    data = _load("cas_annotation.good.json")
+    data["source"]["subatlas_papers"][0]["cell_sets"] = [
+        {"source_labelset": "celltype_Smith2021", "cell_label": "AC", "n_cells": 412},
+        {"source_labelset": "celltype_Smith2021", "cell_label": "imGlia", "n_cells": 96},
+    ]
+    assert _errors(data) == []
+
+
+@pytest.mark.unit
+def test_transferred_annotation_carries_the_contribution() -> None:
+    """The denominator for purity: the study's whole contribution to this
+    cell set, whatever it called the cells."""
+    data = _load("cas_annotation.good.json")
+    data["annotations"][0]["transferred_annotations"][0]["subatlas_contribution_cells"] = 78
+    assert _errors(data) == []
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize("value", [-1, 1.5, "78"])
+def test_contribution_must_be_a_non_negative_integer(value: object) -> None:
+    data = _load("cas_annotation.good.json")
+    data["annotations"][0]["transferred_annotations"][0]["subatlas_contribution_cells"] = value
+    assert _errors(data) != []
+
+
+@pytest.mark.unit
+def test_subatlas_cell_set_requires_a_label_and_a_count() -> None:
+    data = _load("cas_annotation.good.json")
+    data["source"]["subatlas_papers"][0]["cell_sets"] = [{"source_labelset": "celltype"}]
+    assert _errors(data) != []
