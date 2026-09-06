@@ -12,9 +12,9 @@ DEG tables, cluster-to-name mappings, the marker lists name resolution depends o
 Your job is to produce a manifest that lets a later reader go straight to the right
 sheet instead of re-scanning a bundle of forty workbooks.
 
-You write the `tables` and `gaps` sections of a paper's `manifest.json`. The
-schema is the contract and is self-documenting — read its field descriptions
-rather than looking for them here.
+You write the `tables`, `prose` and `gaps` sections of a paper's
+`manifest.json`. The schema is the contract and is self-documenting — read its
+field descriptions rather than looking for them here.
 
 ## What this is not
 
@@ -76,7 +76,7 @@ uv run python -m atlas_chat.cli_supplements triage --store <store> --doi <doi> -
 uv run python -m atlas_chat.cli_supplements papers --cas <cas.json>
 ```
 
-The order is **fetch → unpack → triage → index**. Unpacking before triage
+The order is **fetch → unpack → triage → index**, with prose extracted alongside. Unpacking before triage
 matters: a bundle of forty tables is one opaque item until it is expanded, and
 its members are what get judged.
 
@@ -197,6 +197,130 @@ sometimes two. The guess is usually right, but check it against the sample rows
 before recording `header_row` — a reader that slices from the wrong row gets
 nonsense.
 
+## Prose: the other half of a bundle
+
+The ladder above works on anything with a header row. A Supplementary
+Discussion or a table-legends document has none, so `outline_file` sees nothing
+in it — and until it is extracted, the manifest has nowhere to record it at all.
+That matters here: Gopee's legends document is where Supplementary Table 22
+announces itself as the DEG table for the four macrophage subsets, and stage 3b
+found abbreviation glossaries living only in legends.
+
+`atlas_chat.services.supplement_prose` extracts every prose supplement to disk
+and hands you back one block per document. It does not touch spreadsheets.
+
+```bash
+# Extract, and print one block per prose document.
+uv run python -m atlas_chat.cli_supplement_prose units \
+  --store <store> --doi <doi> [--cas <cas.json>] --out units.json
+
+# Merge what you (or a subagent) concluded into the manifest's `prose`.
+uv run python -m atlas_chat.cli_supplement_prose record \
+  --store <store> --doi <doi> --verdicts verdicts.json
+```
+
+Pass `--cas` when the project has one: it puts the real cell-type labels in
+front of the reader, which is what lets `LC_1` or `mCL2` register as a cell type.
+
+### Read short documents; delegate long ones
+
+Each unit carries `evidence_kind`, and it tells you what to do with it:
+
+| `evidence_kind` | What you have | What to do |
+|---|---|---|
+| `full_text` | the whole document | **Read it yourself.** It is short, and it is usually the highest-leverage read in the bundle. |
+| `outline` | its section headings and their sizes | Hand to an `assess-supplement-content` subagent (Haiku). |
+| `sampled_text` | head, middle and tail | Same. |
+
+Do not put a `full_text` document through a subagent. A legends document is
+~11 KB and it is precisely the thing you want to have read properly — a cheap
+intermediary buys nothing and loses detail.
+
+The outline is the good case for a long document, and both formats give one:
+pymupdf4llm reports a PDF's markdown headings, and Word records a heading
+explicitly as a paragraph style. So a forty-page Supplementary Methods
+identifies itself from its section list without a word of it being read. Only a
+document whose author used no headings at all falls back to the sample.
+
+### Read the section, not the document
+
+Each section in an outline carries offsets into the text file, so you can take
+one out on its own:
+
+```
+Sections, in order (30 in total; ...). Offsets index the text file, so a section can be read on its own:
+  [21877:24650] _3. Cell type annotation_ — 2773 chars
+  [24650:25603] _4. Differential gene expression for cell type analysis_ — 953 chars
+```
+
+That is the difference between contributing 2,773 characters and 53,422. Use it.
+Two cases where it decides the outcome:
+
+- **A references section is routinely most of the file.** One supplement in the
+  reproductive corpus is 32,212 characters of which 21,640 are `REFERENCES AND
+  NOTES` — two thirds of a fold-in for nothing.
+- **A legends document has one span per figure.** Headings like `Fig. S2.
+  Follicular region images and DAZL sample projections` are captions, so the
+  heading is itself the evidence and the span behind it is small.
+
+The pointer records every span, so a later reader has the same choice you did.
+
+### Recording what you found
+
+`verdicts.json` is an object keyed by `unit_id`, copied back verbatim — a
+verdict under a mangled id does not match its document, and `record` reports it
+as unread rather than guessing:
+
+```json
+{
+  "prose|MOESM4.zip|s4/Supplementary Table legends.docx": {
+    "description": "Legends for Supplementary Tables 1-22 ...",
+    "mentions_cell_types": true,
+    "mentions_cell_types_note": "Table 22's legend names the four macrophage subsets"
+  }
+}
+```
+
+Subagents tend to wrap their JSON in a code fence; strip it before assembling
+the file. `record` exits 2 when a document went unread and writes each as a
+`gap` — re-read those rather than accepting them, because in a manifest an
+absent pointer reads as "there is nothing here".
+
+`units` exits 2 for a different reason: a prose file that produced no text at
+all, which is usually a scan or an image-only PDF (three of the twenty-four in
+the reproductive corpus). Those are gaps too, and they carry through `record`
+into the manifest. A file the extractor could not read is unread, never empty.
+
+### What `mentions_cell_types` is for
+
+It decides how the document is used, and prose is the only place that decision
+exists. **Prose that names cell types is read whole into context alongside the
+paper text** — it has nothing to slice and these documents are small.
+
+Tables are never folded in, however relevant their description; that is what
+`locator`, `header_row` and `columns` are for. Supplementary Table 5 in this
+bundle is 95 MB and 396,877 rows.
+
+A `false` from an `outline` or `sampled_text` view means "none in what was
+seen", not "none in the document". Nothing downstream may upgrade it.
+
+### When content feeds CAS+
+
+Some of what a supplement holds is a fact about the atlas rather than
+per-cell-type evidence — a cluster-to-name mapping, author full names, grounded
+synonyms — and belongs in CAS+ once rather than in every run. When `generate-cas`
+takes something, it stamps the pointer it came from, table or prose, so a later
+run can tell a CAS-supplied fact from a paper-found one:
+
+```bash
+uv run python -m atlas_chat.cli_supplement_prose cas-uptake \
+  --store <store> --doi <doi> --unit-id "<unit_id>" \
+  --note "cluster names taken into CAS+ cell_fullname" --at "<ISO-8601 UTC>"
+```
+
+A table's id is `table|<file_id>|<member_path>|<locator>`; prose ids come from
+`units.json`. The note survives re-running `record`, which knows nothing about it.
+
 ## Writing the manifest
 
 Read the current manifest with `show`, add your `tables` and `gaps`, and write
@@ -223,6 +347,10 @@ Keep these in mind:
   headers are not self-explanatory.
 - **Do not enumerate which cell types appear.** That is a query-time question
   and the lists are long, stale-prone, and rarely complete.
+- **Prose is not a table.** A Supplementary Discussion or a table-legends
+  document has no header row and no columns, so it belongs in `prose`, not in
+  `tables`. A bundle whose legends document has nowhere to go reads as though it
+  did not have one.
 - **Record what you couldn't do.** An empty `tables` list with no `gaps` reads
   as "this paper has no useful supplements", which is a claim. If a table was
   over the size cap, a PDF had no extractable text, or a file was never
