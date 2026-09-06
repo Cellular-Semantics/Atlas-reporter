@@ -218,10 +218,9 @@
     "AtlasPaper": {
       "type": "object",
       "description": "Atlas publication provenance (retained local block, mirrors cell_type_annotation.schema.json).",
-      "required": ["doi"],
       "properties": {
         "doi": {
-          "description": "DOI of the paper describing this atlas. Supplied at setup rather than derived from the data.",
+          "description": "DOI of the paper describing this atlas. Supplied at setup rather than derived from the data, and absent where there is not one yet — a pre-submission manuscript is recorded with a title and local_text_path instead. Nothing here is required, because the block is filled in across passes; that the paper can be cited or read is checked where it is used.",
           "type": "string", "pattern": "^10\\.\\d{4,}(\\.\\d+)?/.+"
         },
         "title": {
@@ -245,7 +244,7 @@
           "type": "array", "items": { "type": "string" }
         },
         "local_text_path": {
-          "description": "Path to a locally held full text for this paper, where one was built — for a preprint, or a closed-access paper that had to be fetched by hand.",
+          "description": "Path to a locally held full text for this paper, where one was built — for a preprint, a closed-access paper fetched by hand, or a manuscript that has not been submitted. Together with a title this is enough to work from when there is no DOI.",
           "type": "string"
         },
         "subatlas_papers": {

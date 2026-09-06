@@ -267,3 +267,26 @@ def test_subatlas_cell_set_requires_a_label_and_a_count() -> None:
     data = _load("cas_annotation.good.json")
     data["source"]["subatlas_papers"][0]["cell_sets"] = [{"source_labelset": "celltype"}]
     assert _errors(data) != []
+
+
+@pytest.mark.unit
+def test_atlas_paper_without_a_doi_validates() -> None:
+    """A pre-submission manuscript has no DOI. What matters downstream is that
+    the paper can be cited or read, which a title and a local text satisfy —
+    and that is checked where the paper is used, not where it is written."""
+    data = _load("cas_annotation.minimal.good.json")
+    data["source"] = {
+        "title": "A cell atlas of the human female reproductive system",
+        "authors": ["Anon A"],
+        "local_text_path": "projects/x/papers/manuscript.md",
+    }
+    assert _errors(data) == []
+
+
+@pytest.mark.unit
+def test_atlas_paper_with_only_a_doi_validates() -> None:
+    """The other order: the curator supplies an identifier and the rest is
+    resolved in a later pass."""
+    data = _load("cas_annotation.minimal.good.json")
+    data["source"] = {"doi": "10.1038/s41586-024-08002-x"}
+    assert _errors(data) == []
