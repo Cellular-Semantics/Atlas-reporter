@@ -4,7 +4,7 @@
   "title": "CAS Cell Annotation Collection (local extension)",
   "description": "A cell-set-level annotation collection shaped after the Cell Annotation Schema (CAS, general + BICAN) with local extensions: a per-cell-set 'composition' slot (the cell-set-level generalisation of CxG's cell-level descriptor fields), cell_count/cell_ratio on transferred annotations (reused for integration provenance), labelset 'rank'/'role', and a retained 'source' block carrying atlas-paper provenance for the report workflow. See planning/mockup_cas_cxg_annotations_2026-06-24.md.",
   "type": "object",
-  "required": ["title", "source", "labelsets", "annotations"],
+  "required": ["labelsets", "annotations"],
   "properties": {
     "title": {
       "type": "string",
@@ -21,6 +21,14 @@
     "cellannotation_schema_version": {
       "type": "string",
       "description": "CAS version this document targets."
+    },
+    "schema_version": {
+      "description": "Shape of this document. Consumers should gate on it. Distinct from cellannotation_schema_version, which is the CAS release the document targets.",
+      "const": "cas-plus-v1"
+    },
+    "data_provenance": {
+      "description": "Where the annotations were extracted from, and by what. Recorded so a document can be rebuilt from its sources.",
+      "$ref": "#/$defs/DataProvenance"
     },
     "source": {
       "$ref": "#/$defs/AtlasPaper",
@@ -45,7 +53,10 @@
       "required": ["name"],
       "properties": {
         "name": { "type": "string", "description": "Name of the annotation key (obs column)." },
-        "description": { "type": "string" },
+        "description": {
+          "description": "What this labelset is, in the authors' terms. Taken from the paper or the supplement where they describe the annotation round; left unset rather than guessed.",
+          "type": "string"
+        },
         "annotation_method": {
           "type": "string",
           "description": "How the annotations were made.",
@@ -62,12 +73,25 @@
           "examples": ["author_cell_type", "transferred", "cluster"]
         },
         "automated_annotation": {
+          "description": "Set only when annotation_method is algorithmic: which algorithm produced the labels, and where to find it. Populated from the paper's methods, not inferred from the column.",
           "type": "object",
           "properties": {
-            "algorithm_name": { "type": "string" },
-            "algorithm_version": { "type": "string" },
-            "algorithm_repo_url": { "type": "string" },
-            "reference_location": { "type": "string" }
+            "algorithm_name": {
+              "description": "Name of the clustering or label-transfer algorithm, as the authors give it.",
+              "type": "string"
+            },
+            "algorithm_version": {
+              "description": "Version of that algorithm, where the authors state one.",
+              "type": "string"
+            },
+            "algorithm_repo_url": {
+              "description": "Repository for the algorithm.",
+              "type": "string"
+            },
+            "reference_location": {
+              "description": "The reference dataset or taxonomy the labels were transferred from, where the method was label transfer.",
+              "type": "string"
+            }
           }
         }
       },
@@ -88,10 +112,22 @@
         "parent_cell_set_accession": { "type": ["string", "null"], "description": "Accession of the cell set that subsumes this one (hierarchy); null for root cell sets." },
         "n_cells": { "type": "integer", "minimum": 0, "description": "Local extension: number of cells in the set." },
         "rationale": { "type": "string", "description": "Free-text evidence/justification (report narrative)." },
-        "rationale_dois": { "type": "array", "items": { "type": "string" } },
-        "marker_gene_evidence": { "type": "array", "items": { "type": "string" } },
-        "negative_marker_gene_evidence": { "type": "array", "items": { "type": "string" } },
-        "synonyms": { "type": "array", "items": { "type": "string" } },
+        "rationale_dois": {
+          "description": "DOIs of the papers the rationale draws on. Written by the report step from the paper catalogue; every entry must appear there.",
+          "type": "array", "items": { "type": "string" }
+        },
+        "marker_gene_evidence": {
+          "description": "Gene symbols reported as markers for this cell set. From the paper's own differential-expression results or marker tables, not computed here.",
+          "type": "array", "items": { "type": "string" }
+        },
+        "negative_marker_gene_evidence": {
+          "description": "Gene symbols the authors report this cell set as lacking, where they say so explicitly.",
+          "type": "array", "items": { "type": "string" }
+        },
+        "synonyms": {
+          "description": "Other names the same cell set is given — in this paper, or in a contributing study. A synonym naming a subatlas cell set is treated as evidence of correspondence downstream.",
+          "type": "array", "items": { "type": "string" }
+        },
         "transferred_annotations": {
           "type": "array",
           "description": "CAS slot reused for integration provenance (author labels inherited from contributing datasets). See TransferredAnnotation.",
@@ -113,14 +149,31 @@
       "required": ["transferred_cell_label"],
       "additionalProperties": false,
       "properties": {
-        "transferred_cell_label": { "type": "string" },
+        "transferred_cell_label": {
+          "description": "The contributing study's own label for these cells, verbatim, as it appears in the source column of the atlas obs.",
+          "type": "string"
+        },
         "source_taxonomy": { "type": "string", "description": "Identifier of the source taxonomy/dataset the label came from: a CAS taxonomy accession (e.g. CCN20230722), a PURL, or a DOI." },
         "subatlas_paper": { "type": "string", "description": "The contributing subatlas the label was inherited from — a DOI, or a SubatlasPaper.label registered under source.subatlas_papers. If source_taxonomy is also set, the two should agree." },
-        "source_node_accession": { "type": "string" },
+        "source_node_accession": {
+          "description": "Accession of the matching cell set within source_taxonomy, where the source is a CAS taxonomy that has one.",
+          "type": "string"
+        },
         "source_labelset": { "type": "string", "description": "Name of the labelset within the source taxonomy/subatlas that the transferred label belongs to." },
-        "algorithm_name": { "type": "string" },
-        "comment": { "type": "string" },
+        "algorithm_name": {
+          "description": "The label-transfer method, where the atlas authors state one.",
+          "type": "string"
+        },
+        "comment": {
+          "description": "Free-text note about this transfer — anything worth recording that no other field holds.",
+          "type": "string"
+        },
         "cell_count": { "type": "integer", "minimum": 0, "description": "Local extension: cells in this set carrying the transferred label." },
+        "subatlas_contribution_cells": {
+          "description": "Local extension: every cell of this cell set that came from this contributing study, whatever the study called it. The denominator for purity. A direct count from the per-cell table, so it is the same for every transferred annotation naming the same study within this cell set. Recorded rather than summed from those entries, because anything that later prunes them would quietly shrink it.",
+          "type": "integer",
+          "minimum": 0
+        },
         "cell_ratio": { "type": "number", "minimum": 0, "maximum": 1, "description": "Local extension: fraction of the set carrying the transferred label." }
       }
     },
@@ -137,6 +190,7 @@
       "properties": {
         "author_field_name": { "type": "string", "description": "The original obs column this category came from." },
         "values": {
+          "description": "The distribution over this category, one entry per distinct author value. Computed from the per-cell table by cross-tabbing the cell set against the category's column; every cell of the set is counted exactly once, so cell_count sums to the annotation's n_cells.",
           "type": "array",
           "items": { "$ref": "#/$defs/CompositionValue" }
         }
@@ -151,23 +205,52 @@
         "author_value": { "type": ["string", "number"], "description": "Verbatim author value (may already be a CURIE)." },
         "value": { "type": "string", "description": "Human-readable mapped value." },
         "ontology_term_id": { "type": "string", "description": "Mapped ontology CURIE, e.g. UBERON:0000966, HsapDv:0000048." },
-        "cell_count": { "type": "integer", "minimum": 0 },
-        "cell_ratio": { "type": "number", "minimum": 0, "maximum": 1 }
+        "cell_count": {
+          "description": "Cells in this cell set carrying this author value. A direct count from the per-cell table.",
+          "type": "integer", "minimum": 0
+        },
+        "cell_ratio": {
+          "description": "cell_count divided by the cell set's n_cells.",
+          "type": "number", "minimum": 0, "maximum": 1
+        }
       }
     },
     "AtlasPaper": {
       "type": "object",
       "description": "Atlas publication provenance (retained local block, mirrors cell_type_annotation.schema.json).",
-      "required": ["doi"],
       "properties": {
-        "doi": { "type": "string", "pattern": "^10\\.\\d{4,}(\\.\\d+)?/.+" },
-        "title": { "type": "string" },
-        "pmcid": { "type": "string" },
-        "pmid": { "type": "string" },
-        "abstract": { "type": "string" },
-        "authors": { "type": "array", "items": { "type": "string" } },
-        "local_text_path": { "type": "string" },
-        "subatlas_papers": { "type": "array", "items": { "$ref": "#/$defs/SubatlasPaper" } },
+        "doi": {
+          "description": "DOI of the paper describing this atlas. Supplied at setup rather than derived from the data, and absent where there is not one yet — a pre-submission manuscript is recorded with a title and local_text_path instead. Nothing here is required, because the block is filled in across passes; that the paper can be cited or read is checked where it is used.",
+          "type": "string", "pattern": "^10\\.\\d{4,}(\\.\\d+)?/.+"
+        },
+        "title": {
+          "description": "Title of the atlas paper.",
+          "type": "string"
+        },
+        "pmcid": {
+          "description": "PMC identifier, resolved from the DOI via Europe PMC. Absent where the paper is not in PMC.",
+          "type": "string"
+        },
+        "pmid": {
+          "description": "PubMed identifier, resolved from the DOI via Europe PMC.",
+          "type": "string"
+        },
+        "abstract": {
+          "description": "The paper's abstract, as retrieved.",
+          "type": "string"
+        },
+        "authors": {
+          "description": "Author names in publication order.",
+          "type": "array", "items": { "type": "string" }
+        },
+        "local_text_path": {
+          "description": "Path to a locally held full text for this paper, where one was built — for a preprint, a closed-access paper fetched by hand, or a manuscript that has not been submitted. Together with a title this is enough to work from when there is no DOI.",
+          "type": "string"
+        },
+        "subatlas_papers": {
+          "description": "The contributing studies whose cells or annotations this atlas integrated. Compiled at setup: the atlas obs names them, but resolving each to a publication needs the curator. The list is often filled in after this document is first populated.",
+          "type": "array", "items": { "$ref": "#/$defs/SubatlasPaper" }
+        },
         "atlas_name": { "type": "string", "description": "Human-readable atlas name, e.g. 'Human Female Reproductive System Cell Atlas v1'." },
         "links": { "type": "object", "description": "Named external resources for the atlas as an open map of label -> URL/identifier, e.g. {\"preprint\": \"...\", \"cellxgene\": \"...\"}." }
       }
@@ -176,12 +259,35 @@
       "type": "object",
       "required": ["label"],
       "properties": {
-        "label": { "type": "string" },
-        "first_author": { "type": ["string", "null"] },
-        "year": { "type": ["integer", "null"] },
-        "venue": { "type": ["string", "null"] },
-        "total_cells": { "type": ["integer", "null"] },
-        "doi": { "type": "string" },
+        "label": {
+          "description": "The study as the atlas names it — the value appearing in the obs study column, e.g. 'Sridhar_et_al_2020'. The key everything else joins on, so it is recorded verbatim even where it is untidy.",
+          "type": "string"
+        },
+        "first_author": {
+          "description": "First author's surname, once the study has been resolved to a publication.",
+          "type": ["string", "null"]
+        },
+        "year": {
+          "description": "Publication year.",
+          "type": ["integer", "null"]
+        },
+        "venue": {
+          "description": "Journal or preprint server.",
+          "type": ["string", "null"]
+        },
+        "cell_sets": {
+          "description": "This study's own cell sets and their sizes within the atlas — the denominator table for fraction_of_subatlas_set. Counted across the whole atlas rather than within any one annotation, so it is stated here once. Direct counts from the per-cell table, so they measure cells from each source cell set that are present in the atlas; where an integration subsampled its source, that is not the published cell set's size.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/SubatlasCellSet" }
+        },
+        "total_cells": {
+          "description": "Cells this study contributed to the atlas, across all of its labels. A direct count from the per-cell table, not a figure from the study's own paper.",
+          "type": ["integer", "null"]
+        },
+        "doi": {
+          "description": "DOI of the contributing study, once resolved. Absent where the source has no publication.",
+          "type": "string"
+        },
         "status": {
           "type": "string",
           "description": "Ingest route taken for this paper — how its text is reached. Distinct from asta_indexing.band, which is how much of it ASTA holds: a paper can be band 'abstract_only' in ASTA and still status 'local' because a JATS build succeeded.",
@@ -192,9 +298,18 @@
           "description": "Where the locally built text came from, when status is 'local'.",
           "enum": ["jats", "pdf"]
         },
-        "asta_indexing": { "$ref": "#/$defs/AstaIndexing" },
-        "proposed_doi": { "type": "string" },
-        "proposed": { "type": "array", "items": { "$ref": "#/$defs/SubatlasCandidate" } }
+        "asta_indexing": {
+          "description": "How much of this paper ASTA actually holds. Written by the indexing probe and cached here, so a claim resting on an abstract-only paper can be reported as such.",
+          "$ref": "#/$defs/AstaIndexing"
+        },
+        "proposed_doi": {
+          "description": "A candidate DOI awaiting the curator's confirmation. Distinct from doi, which is settled.",
+          "type": "string"
+        },
+        "proposed": {
+          "description": "Candidate publications for this study label, from a literature search, for the curator to choose between. Populated where the label could not be resolved automatically.",
+          "type": "array", "items": { "$ref": "#/$defs/SubatlasCandidate" }
+        }
       }
     },
     "AstaIndexing": {
@@ -211,20 +326,93 @@
         "chars": { "type": "integer", "minimum": 0, "description": "Total characters of indexed snippet text." },
         "sections": { "type": "integer", "minimum": 0, "description": "Distinct non-null section names — the body-text signal." },
         "ref_mentions": { "type": "integer", "minimum": 0, "description": "Inline reference mentions — the bibliography signal." },
-        "corpus_id": { "type": "string", "pattern": "^CorpusId:\\d+$" },
+        "corpus_id": {
+          "description": "Semantic Scholar CorpusId for the paper, as used to scope snippet search.",
+          "type": "string", "pattern": "^CorpusId:\\d+$"
+        },
         "reason": { "type": "string", "description": "Human-readable justification for the band." },
         "probed_at": { "type": "string", "description": "ISO 8601 timestamp of the probe; this block doubles as the probe cache." }
+      },
+      "additionalProperties": false
+    },
+    "SubatlasCellSet": {
+      "type": "object",
+      "description": "One cell set of a contributing study, with its size inside the atlas.",
+      "required": ["cell_label", "n_cells"],
+      "properties": {
+        "source_labelset": {
+          "description": "The labelset within the contributing study this cell set belongs to — the obs column its labels came from.",
+          "type": "string"
+        },
+        "cell_label": {
+          "description": "The contributing study's own name for the cell set, verbatim.",
+          "type": "string"
+        },
+        "n_cells": {
+          "description": "Cells carrying this label from this study, counted across the whole atlas.",
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "DataProvenance": {
+      "type": "object",
+      "description": "Where the annotations came from and how they were extracted.",
+      "required": ["source_type"],
+      "properties": {
+        "source_type": {
+          "description": "The kind of source, in the extracting agent's own words — 'local_h5ad', 'cellxgene', 'h5ad + supplementary table'. Free text on purpose: sources include R frames, mtx and csv directories, spreadsheets and combinations of these, and any closed list would be wrong for the next atlas.",
+          "type": "string"
+        },
+        "dataset_id": {
+          "description": "Stable identifier for the source dataset, where it has one — a CELLxGENE dataset UUID, say.",
+          "type": "string"
+        },
+        "sources": {
+          "description": "The files, URLs or accessions actually read, one entry each. A list because an atlas is often assembled from several — a matrix alongside a spreadsheet and a supplementary table.",
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "n_cells_total": {
+          "description": "Cells in the source table. Every labelset's cell sets should sum to this unless some cells are unlabelled.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "script_path": {
+          "description": "The extraction script that produced this document, kept so it can be rebuilt. Only reproducible if its inputs are pinned — paths or accessions, and the library version.",
+          "type": "string"
+        },
+        "extracted_at": {
+          "description": "ISO 8601 timestamp of the extraction.",
+          "type": "string"
+        }
       },
       "additionalProperties": false
     },
     "SubatlasCandidate": {
       "type": "object",
       "properties": {
-        "doi": { "type": "string" },
-        "title": { "type": "string" },
-        "year": { "type": ["integer", "null"] },
-        "corpus_id": { "type": "string" },
-        "venue": { "type": "string" }
+        "doi": {
+          "description": "DOI of the candidate publication.",
+          "type": "string"
+        },
+        "title": {
+          "description": "Title of the candidate publication.",
+          "type": "string"
+        },
+        "year": {
+          "description": "Publication year of the candidate.",
+          "type": ["integer", "null"]
+        },
+        "corpus_id": {
+          "description": "Semantic Scholar CorpusId of the candidate.",
+          "type": "string"
+        },
+        "venue": {
+          "description": "Journal or preprint server of the candidate.",
+          "type": "string"
+        }
       }
     }
   }

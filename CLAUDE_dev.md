@@ -162,6 +162,28 @@ Build infrastructure to ensure tha all JSON artefacts and markdown reports writt
 
 ---
 
+## Definition of done: the pipeline doc
+
+`docs/pipeline.md` is the implementation map — for each stage of processing, what
+runs, what it reads and writes, which schema its output conforms to, and which hook
+checks it. It is ordered by the chain of processing, from project setup through
+literature search to a finished report.
+
+**A piece of work is not complete until `docs/pipeline.md` reflects it.** Update it
+in the same commit as the change, on the branch where the change happens, so the
+doc arrives with the merge. That covers a new or changed skill, subagent, service,
+CLI, schema or hook; a change to what a stage reads or writes; and anything that
+closes or opens one of the gaps the doc lists.
+
+It also carries a "Not yet incorporated" section describing work finished on other
+branches. Move an entry out of that section as part of merging it.
+
+Single file for now, on purpose — the workflow is changing too fast for the
+bookkeeping of managed subdocuments to pay off. Split it (per-skill and per-agent
+pages, say) once the churn settles.
+
+---
+
 ## Testing
 
 ### Test-driven where it pays
