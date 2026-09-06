@@ -236,11 +236,34 @@ Do not put a `full_text` document through a subagent. A legends document is
 ~11 KB and it is precisely the thing you want to have read properly — a cheap
 intermediary buys nothing and loses detail.
 
-The outline is the good case for a long document, and it comes free on PDFs:
-pymupdf4llm reports markdown headings and the parser tags every paragraph with
-the one above it, so a forty-page Supplementary Methods identifies itself from
-its section list without a word of it being read. Where the format carries no
-headings, you get the sample instead.
+The outline is the good case for a long document, and both formats give one:
+pymupdf4llm reports a PDF's markdown headings, and Word records a heading
+explicitly as a paragraph style. So a forty-page Supplementary Methods
+identifies itself from its section list without a word of it being read. Only a
+document whose author used no headings at all falls back to the sample.
+
+### Read the section, not the document
+
+Each section in an outline carries offsets into the text file, so you can take
+one out on its own:
+
+```
+Sections, in order (30 in total; ...). Offsets index the text file, so a section can be read on its own:
+  [21877:24650] _3. Cell type annotation_ — 2773 chars
+  [24650:25603] _4. Differential gene expression for cell type analysis_ — 953 chars
+```
+
+That is the difference between contributing 2,773 characters and 53,422. Use it.
+Two cases where it decides the outcome:
+
+- **A references section is routinely most of the file.** One supplement in the
+  reproductive corpus is 32,212 characters of which 21,640 are `REFERENCES AND
+  NOTES` — two thirds of a fold-in for nothing.
+- **A legends document has one span per figure.** Headings like `Fig. S2.
+  Follicular region images and DAZL sample projections` are captions, so the
+  heading is itself the evidence and the span behind it is small.
+
+The pointer records every span, so a later reader has the same choice you did.
 
 ### Recording what you found
 
@@ -262,6 +285,11 @@ Subagents tend to wrap their JSON in a code fence; strip it before assembling
 the file. `record` exits 2 when a document went unread and writes each as a
 `gap` — re-read those rather than accepting them, because in a manifest an
 absent pointer reads as "there is nothing here".
+
+`units` exits 2 for a different reason: a prose file that produced no text at
+all, which is usually a scan or an image-only PDF (three of the twenty-four in
+the reproductive corpus). Those are gaps too, and they carry through `record`
+into the manifest. A file the extractor could not read is unread, never empty.
 
 ### What `mentions_cell_types` is for
 

@@ -17,8 +17,8 @@ from atlas_chat.services.supplement_prose import (
     SupplementProseError,
     Unit,
     apply_verdicts,
+    assemble,
     labels_from_cas,
-    merge_sections,
     outline_sections,
     record_cas_uptake,
     render_evidence,
@@ -57,42 +57,64 @@ def _unit(unit_id="p1", evidence="full_text", n_chars=1000, **pointer):
 # ------------------------------------------------------------------
 
 
-def test_sections_are_merged_once_each_in_document_order():
+def test_consecutive_paragraphs_under_one_heading_are_one_span():
     # The parser tags every paragraph with the heading above it, so a section
     # with three paragraphs arrives three times.
-    segments = [
-        ("Supplementary Methods", "aaa"),
-        ("Supplementary Methods", "bb"),
-        ("Cell state annotation", "cccc"),
-        ("Supplementary Methods", "d"),
-    ]
-    assert merge_sections(segments) == [
-        ("Supplementary Methods", 6),
-        ("Cell state annotation", 4),
-    ]
+    text, sections = assemble([("Methods", "aaa"), ("Methods", "bb"), ("Annotation", "cccc")])
+    assert [s["heading"] for s in sections] == ["Methods", "Annotation"]
+    assert text == "aaa\n\nbb\n\ncccc"
 
 
-def test_unheaded_and_figure_text_are_left_out_of_an_outline():
-    segments = [("BODY", "preamble"), ("IN_FIGURE", "axis label"), ("Methods", "text")]
-    assert merge_sections(segments) == [("Methods", 4)]
+def test_offsets_slice_the_text_back_out_exactly():
+    # This is the whole point of recording them: a reader takes one section out
+    # of the file without re-parsing the original.
+    segments = [("Methods", "alpha"), ("Methods", "beta"), ("Annotation", "gamma")]
+    text, sections = assemble(segments)
+
+    by_heading = {s["heading"]: s for s in sections}
+    assert (
+        text[by_heading["Methods"]["char_start"] : by_heading["Methods"]["char_end"]]
+        == "alpha\n\nbeta"
+    )
+    assert (
+        text[by_heading["Annotation"]["char_start"] : by_heading["Annotation"]["char_end"]]
+        == "gamma"
+    )
 
 
-def test_an_outline_with_no_headings_is_empty_not_a_fake_section():
-    assert merge_sections([("BODY", "all of it")]) == []
+def test_a_heading_that_reappears_later_gets_its_own_span():
+    # Two separate parts of the document, not one span covering the gap.
+    _, sections = assemble([("Methods", "a"), ("Results", "b"), ("Methods", "c")])
+    assert [s["heading"] for s in sections] == ["Methods", "Results", "Methods"]
 
 
-def test_outline_renders_headings_with_their_sizes():
-    block = outline_sections([("Supplementary Methods", 40_000), ("Cell state annotation", 900)])
-    assert "Supplementary Methods — 40000 chars" in block
-    assert "Cell state annotation — 900 chars" in block
+def test_unheaded_and_figure_text_stay_in_the_document_but_carry_no_span():
+    text, sections = assemble([("BODY", "preamble"), ("Methods", "text")])
+    assert "preamble" in text
+    assert [s["heading"] for s in sections] == ["Methods"]
+    assert text[sections[0]["char_start"] : sections[0]["char_end"]] == "text"
+
+
+def test_a_document_with_no_headings_has_no_spans():
+    text, sections = assemble([("BODY", "all of it")])
+    assert text == "all of it"
+    assert sections == []
+
+
+def test_outline_renders_sections_with_sizes_and_offsets():
+    _, sections = assemble([("Supplementary Methods", "x" * 40), ("Annotation", "y" * 9)])
+    block = outline_sections(sections)
+    assert "Supplementary Methods — 40 chars" in block
+    assert "[0:40]" in block
 
 
 def test_a_long_outline_keeps_the_biggest_sections_in_document_order():
     # A real PDF yields a heading per run-in bold line — one had 119 — and a
     # hundred-line outline is no longer a cheap characterisation.
-    sections = [(f"tiny_{i}", 10) for i in range(50)]
-    sections.insert(20, ("Supplementary Methods", 40_000))
-    sections.append(("Cell state annotation", 9_000))
+    segments = [(f"tiny_{i}", "z" * 10) for i in range(50)]
+    segments.insert(20, ("Supplementary Methods", "m" * 4000))
+    segments.append(("Cell state annotation", "c" * 900))
+    _, sections = assemble(segments)
 
     block = outline_sections(sections, cap=2)
     lines = [ln for ln in block.splitlines() if ln.startswith("  ")]
@@ -106,12 +128,12 @@ def test_a_long_outline_keeps_the_biggest_sections_in_document_order():
 def test_a_capped_outline_says_what_it_dropped():
     # A silently truncated outline reads as a complete one, and a reader would
     # conclude a section is absent when it was only omitted.
-    sections = [("Methods", 40_000)] + [(f"tiny_{i}", 100) for i in range(9)]
+    segments = [("Methods", "m" * 4000)] + [(f"tiny_{i}", "z" * 100) for i in range(9)]
+    _, sections = assemble(segments)
     block = outline_sections(sections, cap=1)
 
     assert "10 in total" in block
     assert "9 smallest are omitted" in block
-    assert "900 chars" in block
 
 
 def test_no_headings_is_stated_not_left_blank():
@@ -377,3 +399,64 @@ def test_cas_uptake_against_an_unknown_unit_is_an_error(tmp_path):
     doi = _manifest(tmp_path, prose=[_prose_pointer()])
     with pytest.raises(SupplementProseError, match="no pointer with id"):
         record_cas_uptake(tmp_path, doi, "prose|nope|", "x", "2026-09-05T00:00:00+00:00")
+
+
+# ------------------------------------------------------------------
+# Prose that yields nothing
+# ------------------------------------------------------------------
+
+
+def _store_with_prose_file(tmp_path, name, content=b""):
+    from atlas_chat.services.supplement_store import write_manifest
+
+    files = tmp_path / "papers" / DOI.replace("/", "_") / "files"
+    files.mkdir(parents=True)
+    (files / name).write_bytes(content)
+    rel = f"papers/{DOI.replace('/', '_')}/files/{name}"
+    write_manifest(
+        tmp_path,
+        DOI,
+        {
+            "manifest_version": 1,
+            "paper": {"doi": DOI},
+            "files": [
+                {
+                    "file_id": name,
+                    "media_type": name.rsplit(".", 1)[-1],
+                    "status": "present",
+                    "path": rel,
+                    "relevance": "unknown",
+                }
+            ],
+        },
+    )
+    return DOI
+
+
+def test_prose_that_extracts_to_nothing_becomes_a_gap(tmp_path):
+    # A scanned or image-only document must not vanish from the manifest. An
+    # absent pointer reads as "this paper had that much less prose".
+    from atlas_chat.services.supplement_prose import prepare_units
+
+    doi = _store_with_prose_file(tmp_path, "scan.docx", b"not a zip at all")
+    units, gaps = prepare_units(tmp_path, doi)
+
+    assert units == []
+    assert len(gaps) == 1
+    assert "unread" in gaps[0]["reason"]
+    assert gaps[0]["file_id"] == "scan.docx"
+    assert gaps[0]["action"]
+
+
+def test_extraction_gaps_reach_the_manifest(tmp_path):
+    # They have to survive `record`, not just be printed.
+    from atlas_chat.services.supplement_prose import prepare_units
+
+    doi = _store_with_prose_file(tmp_path, "scan.docx", b"not a zip at all")
+    _, gaps = prepare_units(tmp_path, doi)
+
+    path = write_into_manifest(tmp_path, doi, AssessResult(gaps=gaps))
+    written = json.loads(path.read_text())
+
+    assert len(written["gaps"]) == 1
+    jsonschema.validate(written, load_schema("supplement_manifest.schema.json"))

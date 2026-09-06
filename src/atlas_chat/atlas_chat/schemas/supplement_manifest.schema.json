@@ -378,6 +378,13 @@
           "type": "string",
           "description": "What that verdict rests on, and whether the text behind it was complete or a sample. A `false` from a sample means 'none in what was seen', never 'none in the document'."
         },
+        "sections": {
+          "type": "array",
+          "description": "The document's sections, in order, with where each one sits in `text_file`. Present when the format records its own structure — Word paragraph styles, or the markdown headings pymupdf4llm reports for a PDF. This is what keeps a long document usable: a 53,000-character supplement whose `Cell type annotation` section is 2,773 characters can contribute those, not all of it, and a legends document can be read one figure at a time while its references section — routinely two thirds of the file — is left alone.",
+          "items": {
+            "$ref": "#/$defs/ProseSection"
+          }
+        },
         "evidence": {
           "type": "string",
           "description": "What the description was based on. 'full_text' is the document itself — short enough to read, so the verdict is about all of it. 'outline' is its section headings only, available where the extractor reports them; 'sampled_text' is head, middle and tail. Under either of the latter two a negative verdict covers what was seen, not the document.",
@@ -397,6 +404,32 @@
         "description",
         "mentions_cell_types",
         "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "ProseSection": {
+      "type": "object",
+      "description": "One run of a document under a single heading, and where to find it. Offsets index `text_file` directly, so a reader slices the extracted text without re-parsing the original — which for a PDF would mean re-running the extractor, and for a docx re-reading the archive.",
+      "properties": {
+        "heading": {
+          "type": "string",
+          "description": "The heading, verbatim, truncated to 80 characters. For a legends document this is the figure or table it describes."
+        },
+        "char_start": {
+          "type": "integer",
+          "description": "0-based character offset of the section's first paragraph in `text_file`.",
+          "minimum": 0
+        },
+        "char_end": {
+          "type": "integer",
+          "description": "Character offset one past the section's last paragraph, so `text[char_start:char_end]` is exactly the section.",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "heading",
+        "char_start",
+        "char_end"
       ],
       "additionalProperties": false
     },

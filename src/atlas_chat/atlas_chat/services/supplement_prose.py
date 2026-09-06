@@ -118,39 +118,44 @@ class AssessResult:
 # ------------------------------------------------------------------
 
 
-def outline_sections(sections: list[tuple[str, int]], cap: int = OUTLINE_CAP) -> str:
-    """The document's substantial headings in order, with how much sits under each.
+def outline_sections(sections: list[dict], cap: int = OUTLINE_CAP) -> str:
+    """The document's substantial sections in order, with how much sits in each.
 
     Far better than sampling characters when it is available: a section list
     says what a document *is*, and the sizes say where its substance is. A
     Supplementary Methods running to forty pages identifies itself here without
-    a word of it being read.
+    a word of it being read, and a legends document shows one span per figure.
 
-    A real document has more headings than are worth listing — every run-in
-    bold line becomes one, and a hundred-line outline is not a cheap
-    characterisation. So the largest ``cap`` sections are kept, shown back in
-    document order, and what was dropped is stated. That last part matters: a
-    silently truncated outline reads as a complete one, and a reader would
-    conclude a section is absent when it was only omitted.
+    A real document has more headings than are worth listing — every run-in bold
+    line becomes one — so the largest ``cap`` are kept, shown back in document
+    order, and what was dropped is stated. That last part matters: a silently
+    truncated outline reads as a complete one, and a reader would conclude a
+    section is absent when it was only omitted.
 
     Args:
-        sections: ``(heading, characters)`` in document order, already merged
-            so a heading appears once.
-        cap: How many sections to show.
+        sections: Spans from :func:`assemble`.
+        cap: How many spans to show.
     """
     if not sections:
-        return "Sections: none — the extractor found no headings in this document."
+        return "Sections: none — no headings were found in this document."
 
-    keep = sorted(sections, key=lambda s: s[1], reverse=True)[:cap]
-    kept = {name for name, _ in keep}
-    lines = [f"  {name} — {chars} chars" for name, chars in sections if name in kept]
+    sized = [(s, s["char_end"] - s["char_start"]) for s in sections]
+    keep = {id(s) for s, _ in sorted(sized, key=lambda p: p[1], reverse=True)[:cap]}
+    lines = [
+        f"  [{s['char_start']}:{s['char_end']}] {s['heading']} — {n} chars"
+        for s, n in sized
+        if id(s) in keep
+    ]
 
     dropped = len(sections) - len(lines)
     header = f"Sections, in order ({len(sections)} in total"
     if dropped:
-        omitted = sum(chars for name, chars in sections if name not in kept)
+        omitted = sum(n for s, n in sized if id(s) not in keep)
         header += f"; the {dropped} smallest are omitted, holding {omitted} chars between them"
-    return f"{header}):\n" + "\n".join(lines)
+    return (
+        f"{header}). Offsets index the text file, so a section can be read on its own:\n"
+        + "\n".join(lines)
+    )
 
 
 def sample_text(text: str, budget: int = SAMPLE_BUDGET) -> str:
@@ -204,29 +209,47 @@ def roster_block(labels: list[str], cap: int = ROSTER_PROMPT_CAP) -> str:
     return "== Cell types ==\nThis project annotates:\n" + "\n".join(f"- {x}" for x in labels)
 
 
-def merge_sections(segments: list[tuple[str, str]]) -> list[tuple[str, int]]:
-    """Collapse tagged paragraphs into one entry per heading, in order.
+def assemble(segments: list[tuple[str, str]], sep: str = "\n\n") -> tuple[str, list[dict]]:
+    """Join tagged paragraphs into one text, recording where each section lands.
 
-    The parser tags every paragraph with the heading above it, so a section
-    with nine paragraphs appears nine times. Unheaded and figure-internal text
-    carry no heading and are left out.
+    The offsets are the point. Knowing a document has a `Cell type annotation`
+    section is useful; being able to read *only* those 2,773 characters out of
+    53,422 is what stops a long document being folded into a context whole. They
+    index into the text exactly as written to disk, so a reader slices the file
+    without re-parsing the original.
+
+    Consecutive paragraphs under one heading are one span. A heading that
+    reappears later in the document gets its own span, because it is a different
+    part of the document. Text before any heading, and text found inside figures,
+    is kept in the document but carries no span — it is not navigable.
 
     Args:
         segments: ``(section, text)`` in document order.
+        sep: What joins paragraphs. Offsets assume exactly this separator.
 
     Returns:
-        ``(heading, characters)`` in first-appearance order.
+        The document text, and one span per section run with ``heading``,
+        ``char_start`` and ``char_end``.
     """
-    order: list[str] = []
-    chars: dict[str, int] = {}
+    parts: list[str] = []
+    sections: list[dict] = []
+    cursor = 0
+    current: dict | None = None
     for section, text in segments:
+        if parts:
+            cursor += len(sep)
+        start = cursor
+        cursor += len(text)
+        parts.append(text)
         if section in _UNSECTIONED:
+            current = None
             continue
-        if section not in chars:
-            order.append(section)
-            chars[section] = 0
-        chars[section] += len(text)
-    return [(name, chars[name]) for name in order]
+        if current is not None and current["heading"] == section:
+            current["char_end"] = cursor
+        else:
+            current = {"heading": section, "char_start": start, "char_end": cursor}
+            sections.append(current)
+    return sep.join(parts), sections
 
 
 # ------------------------------------------------------------------
@@ -234,38 +257,52 @@ def merge_sections(segments: list[tuple[str, str]]) -> list[tuple[str, int]]:
 # ------------------------------------------------------------------
 
 
-def _extract(path: Path, kind: str) -> tuple[str, list[tuple[str, int]]]:
-    """A document's text, and its section outline where the format carries one.
+def _extract(path: Path, kind: str) -> tuple[str, list[dict]]:
+    """A document's text, and its section spans where the format carries them.
 
-    Only the PDF path yields an outline: pymupdf4llm reports markdown headings
-    and the parser tags each paragraph with the one above it. docx and plain
-    text come back as text alone.
+    Both routes report structure explicitly rather than inferring it: Word marks
+    a heading with a paragraph style, and pymupdf4llm reports markdown headings
+    which the PDF parser attaches to each paragraph. Plain text has neither, and
+    comes back as one unnavigable block.
     """
+    if kind == "pdf":
+        from atlas_chat.services._pdf_parser import extract_pdf_segments
+
+        segments = [
+            (s.section, s.text) for s in extract_pdf_segments(path) if s.section != "IN_FIGURE"
+        ]
+        return assemble(segments)
+
+    if kind == "docx":
+        from atlas_chat.services.supplement_store import docx_segments
+
+        return assemble(docx_segments(path))
+
     from atlas_chat.services.supplement_store import extract_text
 
-    if kind != "pdf":
-        result = extract_text(path, max_chars=2_000_000)
-        return result.get("text") or "", []
-
-    from atlas_chat.services._pdf_parser import extract_pdf_segments
-
-    segments = extract_pdf_segments(path)
-    body = [(s.section, s.text) for s in segments if s.section != "IN_FIGURE"]
-    return "\n\n".join(text for _, text in body), merge_sections(body)
+    return (extract_text(path, max_chars=2_000_000).get("text") or ""), []
 
 
-def prose_units(store_root: Path, doi: str, manifest: dict[str, Any]) -> list[Unit]:
+def prose_units(
+    store_root: Path, doi: str, manifest: dict[str, Any]
+) -> tuple[list[Unit], list[dict[str, Any]]]:
     """Every prose-bearing supplement, extracted to disk and ready to read.
 
     Text is written out because prose that names cell types is read whole later,
     and re-extracting it then would be wasted work. The pointer records where it
     went, and how much of it the evidence block represents.
+
+    Returns:
+        The units, and a gap for every prose file that yielded nothing. A file
+        the extractor could not read is unread, not empty — dropping it silently
+        would leave the manifest saying this paper has that much less prose.
     """
     from atlas_chat.services.supplement_store import media_type, paper_dir
     from atlas_chat.services.supplement_triage import indexable
 
     out_dir = paper_dir(store_root, doi) / "text"
     units: list[Unit] = []
+    gaps: list[dict[str, Any]] = []
 
     for item in indexable(manifest):
         path = store_root / item["path"]
@@ -276,9 +313,17 @@ def prose_units(store_root: Path, doi: str, manifest: dict[str, Any]) -> list[Un
             text, sections = _extract(path, kind)
         except Exception as exc:  # noqa: BLE001 - one bad file must not stop the run
             logger.warning("%s: %s", item["path"], exc)
+            gaps.append(_extraction_gap(item, f"the extractor failed: {exc}"))
             continue
         if not text.strip():
             logger.info("%s: no prose extracted", item["path"])
+            gaps.append(
+                _extraction_gap(
+                    item,
+                    f"no text came out of this {kind}. Most likely a scan or an "
+                    "image-only document; there is no OCR here",
+                )
+            )
             continue
 
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -299,6 +344,8 @@ def prose_units(store_root: Path, doi: str, manifest: dict[str, Any]) -> list[Un
             "extractor": _EXTRACTOR[kind],
             "evidence": evidence,
         }
+        if sections:
+            pointer["sections"] = sections
         if item.get("member_path"):
             pointer["member_path"] = item["member_path"]
         units.append(
@@ -308,13 +355,28 @@ def prose_units(store_root: Path, doi: str, manifest: dict[str, Any]) -> list[Un
                 evidence_block=render_evidence(path.name, body, evidence, len(text)),
             )
         )
-    return units
+    return units, gaps
+
+
+def _extraction_gap(item: dict[str, Any], why: str) -> dict[str, Any]:
+    """Record a prose file that produced nothing, so its absence is accounted for."""
+    gap: dict[str, Any] = {
+        "file_id": item["file_id"],
+        "reason": (
+            f"{item['path']} carries prose but none was extracted: {why}. Treat it "
+            "as unread rather than as having no relevant content."
+        ),
+        "action": "supply a text version by hand, or read the original",
+    }
+    if item.get("member_path"):
+        gap["member_path"] = item["member_path"]
+    return gap
 
 
 def prepare_units(
     store_root: str | Path, doi: str, manifest: dict[str, Any] | None = None
-) -> list[Unit]:
-    """Every prose unit of one paper, ready to read.
+) -> tuple[list[Unit], list[dict[str, Any]]]:
+    """Every prose unit of one paper, ready to read, plus what could not be read.
 
     The store root is an argument, never derived: nothing here knows about
     project layouts.
@@ -329,10 +391,16 @@ def prepare_units(
     if manifest is None:
         raise SupplementProseError(f"no manifest for {doi} in {root}")
 
-    units = prose_units(root, doi, manifest)
+    units, gaps = prose_units(root, doi, manifest)
     whole = sum(1 for u in units if u.readable_whole)
-    logger.info("%s: %d prose unit(s), %d readable whole", doi, len(units), whole)
-    return units
+    logger.info(
+        "%s: %d prose unit(s), %d readable whole, %d unreadable",
+        doi,
+        len(units),
+        whole,
+        len(gaps),
+    )
+    return units, gaps
 
 
 def _rel(store_root: Path, path: Path) -> str:
@@ -557,11 +625,12 @@ def _cmd_units(args: argparse.Namespace) -> int:
     if args.cas:
         labels = labels_from_cas(json.loads(Path(args.cas).read_text(encoding="utf-8")))
 
-    units = prepare_units(args.store, args.doi)
+    units, gaps = prepare_units(args.store, args.doi)
     payload = {
         "doi": args.doi,
         "roster": roster_block(labels),
         "units": [unit.as_task() for unit in units],
+        "gaps": gaps,
     }
     text = json.dumps(payload, indent=2)
     if args.out:
@@ -569,13 +638,16 @@ def _cmd_units(args: argparse.Namespace) -> int:
         print(args.out)
     else:
         print(text)
-    return 0
+    for gap in gaps:
+        print(f"GAP: {gap['reason']}", file=sys.stderr)
+    return 2 if gaps else 0
 
 
 def _cmd_record(args: argparse.Namespace) -> int:
     verdicts = json.loads(Path(args.verdicts).read_text(encoding="utf-8"))
-    units = prepare_units(args.store, args.doi)
+    units, extraction_gaps = prepare_units(args.store, args.doi)
     result = apply_verdicts(units, verdicts)
+    result.gaps = extraction_gaps + result.gaps
     path = write_into_manifest(Path(args.store), args.doi, result)
     print(path)
     for gap in result.gaps:
@@ -612,7 +684,7 @@ __all__ = [
     "build_parser",
     "labels_from_cas",
     "main",
-    "merge_sections",
+    "assemble",
     "outline_sections",
     "prepare_units",
     "prose_units",

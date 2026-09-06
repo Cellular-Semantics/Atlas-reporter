@@ -884,20 +884,68 @@ def extract_text(path: Path, max_chars: int = 40_000) -> dict[str, Any]:
     return out
 
 
-def _docx_text(path: Path) -> str:
-    """Paragraph text of a .docx, one paragraph per line."""
+#: Word namespace for WordprocessingML.
+_W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+
+#: Paragraph styles that mark a heading rather than body text. Word names the
+#: built-ins `Heading1`..`Heading9` and `Title`; templates rename the visible
+#: label but keep the style id, so matching the id is what survives a house
+#: template. Anything else is body text under whatever heading last appeared.
+_HEADING_STYLES = re.compile(r"^(Heading[1-9]|Title|Subtitle)$", re.I)
+
+#: The parser's label for text before any heading, matching the PDF parser so
+#: consumers do not have to special-case the format.
+_NO_HEADING = "BODY"
+
+
+def _docx_style(para: ET.Element) -> str:
+    """The paragraph's style id, or empty when it carries none."""
+    style = para.find(f"{_W}pPr/{_W}pStyle")
+    return "" if style is None else str(style.get(f"{_W}val") or "")
+
+
+def docx_segments(path: Path) -> list[tuple[str, str]]:
+    """Paragraphs of a .docx, each tagged with the heading above it.
+
+    The docx counterpart of ``_pdf_parser.extract_pdf_segments``, and it exists
+    for the same reason: a long document is far cheaper to characterise by its
+    section list than by sampling its characters, and Word records structure
+    explicitly where a PDF only implies it. Word marks a heading with a
+    ``w:pStyle`` of ``Heading1``..``Heading9`` (or ``Title``), so the structure
+    is read rather than guessed at from font size or capitalisation.
+
+    A document whose author never used heading styles yields no headings at all
+    — everything comes back under ``BODY``. That is a real answer, not a
+    failure: it says this document has no outline to navigate by.
+
+    Returns:
+        ``(section, text)`` per non-empty paragraph, in document order.
+    """
     if not zipfile.is_zipfile(path):
-        return ""
+        return []
     with zipfile.ZipFile(path) as zf:
         try:
             xml = zf.read("word/document.xml")
         except KeyError:
-            return ""
+            return []
 
-    ns = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
     root = ET.fromstring(xml)
-    lines = [_element_text(para) for para in root.iter(f"{ns}p")]
-    return "\n".join(line for line in lines if line)
+    segments: list[tuple[str, str]] = []
+    current = _NO_HEADING
+    for para in root.iter(f"{_W}p"):
+        text = _element_text(para)
+        if not text:
+            continue
+        if _HEADING_STYLES.match(_docx_style(para)):
+            current = text[:80]
+            continue
+        segments.append((current, text))
+    return segments
+
+
+def _docx_text(path: Path) -> str:
+    """Paragraph text of a .docx, one paragraph per line."""
+    return "\n".join(text for _, text in docx_segments(path))
 
 
 # ------------------------------------------------------------------
