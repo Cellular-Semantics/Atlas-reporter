@@ -1,7 +1,17 @@
 # Layouts that silently corrupt a conversion
 
-Each of these has been met in a real supplementary table. None raises an error;
-each produces a plausible-looking output that is wrong.
+**These are examples, not a checklist, and they are nowhere near exhaustive.**
+They are simply the ones met so far, in a handful of papers. The next table you
+open may be malformed in a way nobody here has seen, and finding that none of
+these apply tells you nothing about whether it is safe.
+
+What generalises is the failure mode, not the list: each of these produces a
+plausible-looking output rather than an error. So the question to hold while
+probing is not "is it one of these?" but **"what would this table look like if I
+had misread it, and would I be able to tell?"** If the answer is that a
+misreading would look fine, keep probing until it would not.
+
+Read them as worked examples of that question being asked.
 
 ## Several tables share one sheet
 

@@ -56,9 +56,10 @@ Stop probing when you can state, for each table: which cell sets it covers, what
 each was compared against, which column is the effect size, and where one table
 ends and the next begins. If you cannot state all four, keep probing.
 
-**Read `references/table-shapes.md` before writing any conversion.** It
-describes the layouts that silently corrupt output — several tables sharing a
-sheet, both directions interleaved, direction encoded only in a sign.
+**Read `references/table-shapes.md` before writing any conversion.** It works
+through layouts that corrupt output without raising anything. They are examples
+rather than a list to check off — the useful question it teaches is *what would
+this table look like if I had misread it, and would I be able to tell?*
 
 ### Step 3: Write the conversion
 

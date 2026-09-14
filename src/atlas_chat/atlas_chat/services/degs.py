@@ -57,6 +57,15 @@ class StoreReport:
         }
 
 
+# The schema is the single source of truth for structure, types, enums and
+# required fields, and everything below delegates to it rather than restating
+# it. What is asserted here is the three rules a JSON Schema cannot express,
+# because each relates one field to another: an integer against the length of
+# an array, a count against a property of the array's members, and the *value*
+# of one field against the keys of an object. There is no construct for any of
+# those, so they are checked in code or not at all.
+
+
 def validate_document(doc: object) -> list[str]:
     """Schema errors in one document, plus the counts it states about itself.
 
