@@ -143,6 +143,27 @@ Prompt: `agents/supplementary_scanner.prompt.yaml`. Output:
 `schemas/supplementary_findings.schema.json`. Declares its output schema in
 front-matter, but no validator hook is registered for it.
 
+## 4a. Differential expression
+
+`extract-degs` (skill) converts a paper's published DE tables into
+`projects/{project}/degs/{cell_label}.json`, conforming to `degs.schema.json` —
+one file per cell set, holding every comparison the paper ran on it. A setup
+step: the tables run to thousands of rows and are queried per gene thereafter,
+never loaded.
+
+The conversion code is written by the agent for the source in front of it, and
+kept in the store beside its output with a note saying which table the numbers
+came from. `cli_degs` checks conformance, that the stated counts agree with the
+rows, and that both the code and the note are there — numbers nobody can trace
+back to a table are not evidence. `check_degs.py` covers the hand-written case;
+a file written by a script never passes through a tool hook, which is why the
+skill requires the CLI.
+
+The schema is open about scoring: the authors' own field names, with
+`effect_field` naming which one carries direction. `comparison` is free text,
+because the same gene means different things against a sibling population,
+against a lineage, or against every other cell in the atlas.
+
 ## 5a. Choosing which cell types to report on
 
 A request names cell types the way a person would; the atlas names them the way
@@ -310,6 +331,7 @@ bot identity without a personal token. Built, not yet wired into the workflow.
 | `supplement_manifest` | `index-supplements`, supplement store | `check_supplement_manifest.py` |
 | `annotated_snippet` | `cli_annotate fetch` | `check_annotated_snippet.py` |
 | `follow_set` | `cli_annotate follow-set` | `check_follow_set.py` |
+| `degs` | `extract-degs` | `check_degs.py` |
 | `evidence_summary` | `citation-traverse`, `read-atlas-paper` | `check_evidence_summary.py` |
 | `all_summaries` | `citation-traverse` | none |
 | `supplementary_findings` | `scan-supplements` | none |
@@ -330,6 +352,7 @@ Everything reusable is callable without a Claude Code session:
 
 | Command | What it does |
 | --- | --- |
+| `python -m atlas_chat.cli_degs` | check a differential-expression store |
 | `python -m atlas_chat.cli_project` | `paths`: a project's locations, from its name under `projects/`. `outline`: its annotation hierarchy |
 | `python -m atlas_chat.cli_paper_ingest` | a paper plus its indexed supplementary prose, assembled for reading |
 | `python -m atlas_chat.cli_subject_block` | what a reader is told about a cell set, from CAS+ |

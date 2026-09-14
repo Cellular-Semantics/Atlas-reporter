@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "degs.schema.json",
+  "title": "Degs",
+  "description": "What one paper reported about which genes distinguish one cell set, as published — not recomputed. One file per cell set, holding every comparison the paper ran on it, because a one-versus-rest result and a pairwise contrast against a sibling are different questions with different answers. Written at setup and queried per gene thereafter: these tables run to thousands of rows and nothing should hold one in context.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cell_label", "comparisons"],
+  "properties": {
+    "cell_label": {
+      "type": "string",
+      "description": "The cell set these results are about, as the atlas labels it."
+    },
+    "comparisons": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Every published comparison involving this cell set.",
+      "items": { "$ref": "#/$defs/Comparison" }
+    }
+  },
+  "$defs": {
+    "Comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["comparison", "source", "effect_field", "n_genes", "genes"],
+      "properties": {
+        "comparison": {
+          "type": "string",
+          "description": "What was compared against what, in prose — the authors' own words where the table states them. Deliberately not a controlled vocabulary: the same gene means different things against a sibling population, against the rest of a lineage, or against every other cell in the atlas, and no fixed list of comparison designs would survive the next paper. A consumer that reports an effect size without this is reporting half a result."
+        },
+        "comparison_is_quoted": {
+          "type": "boolean",
+          "description": "Whether `comparison` is the authors' wording, taken from the table or its legend, rather than a description written for them."
+        },
+        "source": { "$ref": "#/$defs/Source" },
+        "effect_field": {
+          "type": "string",
+          "description": "Which entry in `scores` carries the effect size, and so the direction. Named rather than assumed because papers call it different things, and a consumer that picks the wrong field inverts the answer."
+        },
+        "n_genes": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Genes this comparison reports for this cell set. Needed to read an absence: a gene missing from a short list may simply not have reached it, whereas a gene missing from a long one is a finding. Without the count the two are indistinguishable."
+        },
+        "n_up": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "How many are enriched in this cell set. Published tables routinely interleave both directions."
+        },
+        "threshold": {
+          "type": "string",
+          "description": "Any cut the authors applied before publishing the list, in their words. What it excludes is invisible in the rows that remain."
+        },
+        "genes": {
+          "type": "array",
+          "description": "One entry per gene reported, in the order published.",
+          "items": { "$ref": "#/$defs/Gene" }
+        }
+      }
+    },
+    "Source": {
+      "type": "object",
+      "description": "Where these numbers were published, precisely enough to go back to them.",
+      "additionalProperties": false,
+      "required": ["doi"],
+      "properties": {
+        "doi": { "type": "string", "description": "The paper that published them." },
+        "file_id": {
+          "type": "string",
+          "description": "The supplementary file, as the paper's supplement manifest names it."
+        },
+        "member_path": {
+          "type": "string",
+          "description": "Path within the archive, where the file is one."
+        },
+        "locator": {
+          "type": "string",
+          "description": "Where in the file: a worksheet name, a page, a key. One sheet often holds several tables side by side, so a sheet name alone may not identify which."
+        }
+      }
+    },
+    "Gene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["symbol", "direction", "scores"],
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "description": "The gene as the paper writes it. Not normalised: a symbol rewritten here cannot be matched against the paper's own text."
+        },
+        "direction": {
+          "type": "string",
+          "enum": ["up", "down"],
+          "description": "Whether the gene is enriched or depleted in this cell set. Recorded even though it follows from the effect size, because deriving it means knowing which score is the effect size, and a consumer that guesses wrong reports a depleted gene as a marker."
+        },
+        "scores": {
+          "type": "object",
+          "description": "The statistics as published, keyed by the authors' own field names. Open because papers score differently — a log fold change and an adjusted p-value, a rank-sum statistic, an area under a curve — and enumerating them would fail on the next atlas.",
+          "additionalProperties": { "type": ["number", "string"] }
+        }
+      }
+    }
+  }
+}
