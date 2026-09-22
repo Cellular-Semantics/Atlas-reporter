@@ -6,6 +6,11 @@ Fires as a PostToolUse hook on Write/Edit to a project's CAS+ config —
 skill produces this file (it is agent output), so schema compliance is enforced
 here.
 
+It also recomputes the three subatlas overlap measures on every transferred
+annotation. They are stored rather than derived on read, so that the file can be
+read directly by a person or an agent without arithmetic; storing them is only
+safe if something checks them, and this is that something.
+
 Exit codes:
     0 — valid, or file is not a cas.json, or jsonschema unavailable
     2 — validation failed (Claude sees stderr and self-corrects)
@@ -22,6 +27,56 @@ SCHEMA_PATH = Path("src/atlas_chat/atlas_chat/schemas/cas_annotation.schema.json
 
 def _targets(file_path: str) -> bool:
     return Path(file_path).name == "cas.json"
+
+
+#: Stored ratios are rounded, so a recomputed value is compared within this.
+TOLERANCE = 5e-4
+
+#: measure -> (numerator field, denominator field). cell_ratio divides by the
+#: cell set's own n_cells, which lives on the annotation rather than the transfer.
+MEASURES = {
+    "share_of_subatlas_contribution": ("cell_count", "subatlas_contribution_cells"),
+    "share_of_subatlas_label": ("cell_count", "subatlas_label_total_cells"),
+    "cell_ratio": ("cell_count", None),
+}
+
+
+def _measure_errors(data: object) -> list[str]:
+    """Recompute each stored overlap measure from the counts beside it.
+
+    A measure whose denominator is absent is skipped rather than failed: the
+    counting and registry passes write at different times, and a transfer that
+    has not reached the later one yet is not wrong.
+    """
+    if not isinstance(data, dict):
+        return []
+    errors: list[str] = []
+    for annotation in data.get("annotations") or []:
+        if not isinstance(annotation, dict):
+            continue
+        label = annotation.get("cell_label", "?")
+        for transfer in annotation.get("transferred_annotations") or []:
+            if not isinstance(transfer, dict):
+                continue
+            for measure, (num_field, den_field) in MEASURES.items():
+                stored = transfer.get(measure)
+                if stored is None:
+                    continue
+                numerator = transfer.get(num_field)
+                denominator = (
+                    annotation.get("n_cells") if den_field is None else transfer.get(den_field)
+                )
+                if numerator is None or not denominator:
+                    continue
+                expected = numerator / denominator
+                if abs(expected - stored) > TOLERANCE:
+                    where = f"{label} / {transfer.get('transferred_cell_label', '?')}"
+                    errors.append(
+                        f"{where}: {measure} is {stored}, but "
+                        f"{num_field} / {den_field or 'n_cells'} = "
+                        f"{numerator}/{denominator} = {expected:.4f}"
+                    )
+    return errors
 
 
 def _errors(data: object, schema: dict) -> list[str]:
@@ -66,6 +121,7 @@ def main() -> int:
         return 0
 
     errors = _errors(data, json.loads(SCHEMA_PATH.read_text()))
+    errors.extend(_measure_errors(data))
     if not errors:
         return 0
 
