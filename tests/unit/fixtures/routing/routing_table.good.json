@@ -1,0 +1,82 @@
+{
+  "cas_source": "cas.json",
+  "atlas_doi": "10.1000/atlas",
+  "min_overlap_cells": 50,
+  "subatlas_label_totals": {
+    "basis": "hierarchy_leaves",
+    "n_cell_sets": 3,
+    "total_cells": 900
+  },
+  "requested": [
+    {
+      "cell_label": "Fib_A",
+      "labelset": "fine",
+      "cell_set_accession": "F1",
+      "n_cells": 500,
+      "synonyms": ["FibA"]
+    },
+    {
+      "cell_label": "Fib_B",
+      "labelset": "fine",
+      "cell_set_accession": "F2",
+      "n_cells": 300
+    },
+    {
+      "cell_label": "Fib_D",
+      "labelset": "fine",
+      "cell_set_accession": "F4",
+      "n_cells": 30
+    }
+  ],
+  "questions": [
+    {
+      "subatlas_paper": "DOI:10.1000/coarse",
+      "doi": "10.1000/coarse",
+      "subatlas_cell_label": "mesenchyme",
+      "subatlas_label_total_cells": 607,
+      "atlas_cell_sets": [
+        {
+          "cell_label": "Fib_A",
+          "labelset": "fine",
+          "cell_set_accession": "F1",
+          "overlap_cells": 400,
+          "share_of_contribution": 1.0,
+          "share_of_subatlas_label": 0.659
+        },
+        {
+          "cell_label": "Fib_B",
+          "labelset": "fine",
+          "cell_set_accession": "F2",
+          "overlap_cells": 200,
+          "share_of_contribution": 0.9091,
+          "share_of_subatlas_label": 0.3295
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "DOI:10.1000/fine",
+      "doi": "10.1000/fine",
+      "subatlas_cell_label": "FibA",
+      "subatlas_label_total_cells": 205,
+      "atlas_cell_sets": [
+        {
+          "cell_label": "Fib_A",
+          "labelset": "fine",
+          "cell_set_accession": "F1",
+          "overlap_cells": 60,
+          "share_of_contribution": 0.6667,
+          "share_of_subatlas_label": 0.2927,
+          "named_as_synonym": true
+        }
+      ]
+    }
+  ],
+  "atlas_only": [
+    {
+      "cell_label": "Fib_D",
+      "labelset": "fine",
+      "cell_set_accession": "F4",
+      "reason": "no_provenance"
+    }
+  ]
+}

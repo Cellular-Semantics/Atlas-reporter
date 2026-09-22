@@ -157,6 +157,60 @@ is not sufficient and fails quietly: on the reference project, asking for
 macrophages by label alone finds one of seven, because two of the six subtypes
 are named for where they are and say nothing about being macrophages.
 
+## 5b. Routing to the papers that describe the cell types
+
+Once the cell types are chosen, the next question is which papers to read for
+them — and for an atlas built by integration the answer is frequently not the
+atlas paper. This stage is in two halves, counting and judging, because they
+fail in different ways.
+
+**`services/subatlas_routing.py`** (CLI `cli_route`) counts. Given a CAS+
+document and the chosen cell sets, it turns their `transferred_annotations`
+inside out: instead of one entry per cell set listing the studies that fed it,
+one entry per (contributing study, that study's label) listing the requested
+cell sets it fed. That is the unit of work, since reading a paper once about one
+of its labels answers for every cell set under it. On the reference project,
+asking for the fibroblasts reaches 69 cell sets and 2,159 rows of provenance,
+which come to 75 questions across 8 papers.
+
+Two ratios sit on each claim. `share_of_contribution` divides by what that study
+contributed to that cell set, not by the cell set, because the rest of it came
+from studies that never saw those cells. `share_of_subatlas_label` divides by
+what that study gave the label across the whole atlas, which needs a set of cell
+sets covering every cell once: the hierarchy's leaves where they are
+corroborated by a labelset total, a labelset where the labelsets agree, and
+otherwise nothing — the ratio is omitted rather than guessed.
+
+Contributions below `--min-overlap-cells` are rolled up per study rather than
+dropped, **except** where the atlas records that study's label among the cell
+set's synonyms. A synonym is the authors asserting that two names denote the
+same cells, which no overlap count produces, and on the reference project those
+rows run as small as 30 cells while being the best read available. Matching is
+sign-safe: `PV-MYH11_CDKN1A+` and `PV-MYH11_CDKN1A-` are opposite marker states
+and must not fold together.
+
+Every requested cell set ends up either claimed by a question or in
+`atlas_only`, with the reason distinguished: `no_provenance` (the atlas built it
+from its own data), `all_below_floor` (several studies contributed, none of
+their labels in any quantity), `no_readable_source` (there is a source and it
+has no DOI). Studies with no DOI are never offered as questions and are listed
+under `unreadable`, since an unpublished contributor is a ceiling on what any
+reading can reach.
+
+**`route-subatlas-papers`** (opus) judges. It reads the table and writes an
+ordered plan: which papers to read, which of their labels to ask about, what
+each reading serves, and what is deliberately skipped. The judgement is not
+available to the counting, because a label that feeds many cell sets usually
+does so by being vague, while a label covering a few hundred cells is sometimes
+the one the population was named after. Where a ranking rests on knowledge of
+the paper rather than on the table, `from_background_knowledge` marks it so it
+can be checked. The plan's questions are validated against the table it was
+written from.
+
+Output: `subatlas_routing_table.schema.json` and
+`subatlas_routing_plan.schema.json`, checked by
+`check_subatlas_routing_table.py` and `check_subatlas_routing_plan.py`.
+
 ## 6a. Reading a paper whole
 
 `read-atlas-paper` (opus) is given a project name and the cell types to read
@@ -314,6 +368,8 @@ bot identity without a personal token. Built, not yet wired into the workflow.
 | `all_summaries` | `citation-traverse` | none |
 | `supplementary_findings` | `scan-supplements` | none |
 | `citation_traverse_input` | orchestrator | n/a (input) |
+| `subatlas_routing_table` | `cli_route` | `check_subatlas_routing_table.py` |
+| `subatlas_routing_plan` | `route-subatlas-papers` | `check_subatlas_routing_plan.py` |
 | `cl_mapping` | `ontology-term-lookup` | `check_cl_mapping.py` |
 | `cl_term_request` | `cl-term-request` | `check_cl_term_request.py` |
 | report markdown | `synthesize-report` | `check_report_refs.py` |
@@ -333,6 +389,7 @@ Everything reusable is callable without a Claude Code session:
 | `python -m atlas_chat.cli_project` | `paths`: a project's locations, from its name under `projects/`. `outline`: its annotation hierarchy |
 | `python -m atlas_chat.cli_paper_ingest` | a paper plus its indexed supplementary prose, assembled for reading |
 | `python -m atlas_chat.cli_subject_block` | what a reader is told about a cell set, from CAS+ |
+| `python -m atlas_chat.cli_route` | provenance of chosen cell sets, arranged by the read |
 | `python -m atlas_chat.cli_supplement_prose` | supplementary prose: units, record, cas-uptake |
 | `python -m atlas_chat.cli_supplements` | supplement store: inventory, adopt, unpack, outline, text, slice, show, check, fetch, triage, papers |
 | `python -m atlas_chat.cli_annotate` | traversal boundary: fetch, follow-set, show |

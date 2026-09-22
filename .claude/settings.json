@@ -35,6 +35,14 @@
           {
             "type": "command",
             "command": "uv run python .claude/hooks/check_report_refs.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run python .claude/hooks/check_subatlas_routing_table.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run python .claude/hooks/check_subatlas_routing_plan.py"
           }
         ]
       }

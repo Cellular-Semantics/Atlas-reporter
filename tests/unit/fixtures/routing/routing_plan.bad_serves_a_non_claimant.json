@@ -1,0 +1,40 @@
+{
+  "table_source": "tests/unit/fixtures/routing/routing_table.good.json",
+  "papers": [
+    {
+      "subatlas_paper": "DOI:10.1000/fine",
+      "doi": "10.1000/fine",
+      "reason": "The atlas records FibA as another name for Fib_A, so this is the study the cell set is named after even though it contributed the fewer cells.",
+      "questions": [
+        {
+          "subatlas_cell_label": "FibA",
+          "serves": [
+            "Fib_A",
+            "Fib_B"
+          ],
+          "ask": "What does this study mean by FibA, and does it describe the cells the atlas placed under that name?"
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "DOI:10.1000/coarse",
+      "doi": "10.1000/coarse",
+      "reason": "Largest contributor, but under a single coarse label covering both cell sets. One read should establish that it does not separate them.",
+      "questions": [
+        {
+          "subatlas_cell_label": "mesenchyme",
+          "serves": [
+            "Fib_A",
+            "Fib_B"
+          ]
+        }
+      ]
+    }
+  ],
+  "atlas_only": [
+    {
+      "cell_label": "Fib_D",
+      "reason": "The atlas records no contributing study for these cells."
+    }
+  ]
+}

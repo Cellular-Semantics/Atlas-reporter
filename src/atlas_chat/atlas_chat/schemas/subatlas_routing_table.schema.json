@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "subatlas_routing_table.schema.json",
+  "title": "SubatlasRoutingTable",
+  "description": "Everything an atlas records about where a requested set of cell sets got their cells from, arranged so that the unit is the read rather than the cell set. Counted from a CAS+ document with no model involved: the judgement of what is worth reading is made against this table, not within it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["requested", "questions", "atlas_only"],
+  "properties": {
+    "cas_source": {
+      "type": "string",
+      "description": "Path of the CAS+ document the table was counted from."
+    },
+    "atlas_doi": {
+      "type": "string",
+      "description": "DOI of the atlas paper, so a plan built from this table can name the paper that is always in scope."
+    },
+    "min_overlap_cells": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Overlaps smaller than this were left out of questions, except where the atlas names the contributing study's label as a synonym. Recorded so a plan can be read against the floor that produced it."
+    },
+    "subatlas_label_totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "How the denominator for share_of_subatlas_label was arrived at, or why there is none.",
+      "required": ["basis"],
+      "properties": {
+        "basis": {
+          "type": "string",
+          "enum": ["registry", "hierarchy_leaves", "labelset", "none"],
+          "description": "registry: read from source.subatlas_papers[].cell_sets[]. hierarchy_leaves or labelset: summed across a set of atlas cell sets that covers every cell once. none: no such set could be validated, so share_of_subatlas_label is absent throughout."
+        },
+        "n_cell_sets": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Atlas cell sets summed over, where the totals were derived rather than read."
+        },
+        "total_cells": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Cells those cell sets account for between them."
+        },
+        "labelset": {
+          "type": "string",
+          "description": "The labelset used, where the basis is labelset."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why no denominator was available, where the basis is none."
+        }
+      }
+    },
+    "requested": {
+      "type": "array",
+      "description": "The cell sets reports were asked for, in the order given. Every one of these appears either as a claimant of some question or in atlas_only — a cell set that silently fell out of both would be a report nobody noticed had no upstream evidence.",
+      "items": { "$ref": "#/$defs/RequestedCellSet" }
+    },
+    "questions": {
+      "type": "array",
+      "description": "One entry per contributing study and label of theirs, listing every requested cell set that label fed. Keyed this way because reading one paper about one of its labels answers for all of them at once.",
+      "items": { "$ref": "#/$defs/Question" }
+    },
+    "atlas_only": {
+      "type": "array",
+      "description": "Requested cell sets with no contributing study worth reading, so the atlas paper is the only source. Held explicitly, because an empty result and a deliberate finding look identical otherwise.",
+      "items": { "$ref": "#/$defs/AtlasOnly" }
+    },
+    "dropped": {
+      "type": "array",
+      "description": "What the floor removed, rolled up per study. A study appearing here with many labels and few cells contributed to these cell sets without any of its labels corresponding to them — which is itself worth knowing.",
+      "items": { "$ref": "#/$defs/Dropped" }
+    },
+    "unreadable": {
+      "type": "array",
+      "description": "Contributing studies with no DOI to resolve — unpublished data, or a source the CAS+ document names only by a local string. Listed so their contribution is visible as a ceiling on what reading can reach.",
+      "items": { "$ref": "#/$defs/Unreadable" }
+    }
+  },
+  "$defs": {
+    "RequestedCellSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cell_label", "labelset"],
+      "properties": {
+        "cell_label": { "type": "string", "description": "The atlas's own label for the cell set." },
+        "cell_fullname": {
+          "type": "string",
+          "description": "The label written out, where the atlas gives one and it differs from the label itself."
+        },
+        "labelset": {
+          "type": "string",
+          "description": "The labelset the cell set belongs to, which is what says how coarse it is."
+        },
+        "cell_set_accession": {
+          "type": "string",
+          "description": "Accession of the cell set, which is what disambiguates a label the atlas uses at more than one level."
+        },
+        "n_cells": { "type": "integer", "minimum": 0, "description": "Cells in the set." },
+        "synonyms": {
+          "type": "array",
+          "description": "Other names the atlas records for this cell set. Frequently a contributing study's own label, which is an assertion by the atlas authors that the two name the same cells — and one no overlap count can produce.",
+          "items": { "type": "string" }
+        },
+        "parent": {
+          "type": "string",
+          "description": "Label of the cell set this one sits within."
+        }
+      }
+    },
+    "Question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subatlas_paper", "subatlas_cell_label", "atlas_cell_sets"],
+      "properties": {
+        "subatlas_paper": {
+          "type": "string",
+          "description": "The contributing study as the CAS+ document names it, verbatim — a DOI, a registered label, or a local string for unpublished data."
+        },
+        "doi": {
+          "type": "string",
+          "description": "DOI of the contributing study, where one could be resolved. Absent means there is nothing to read."
+        },
+        "first_author": {
+          "type": "string",
+          "description": "First author's surname, where the CAS+ document registers the study under source.subatlas_papers."
+        },
+        "year": { "type": "integer", "description": "Publication year, where registered." },
+        "title": { "type": "string", "description": "Title of the contributing study, where registered." },
+        "asta_band": {
+          "type": "string",
+          "description": "How much of this paper the snippet index holds, passed through from the registry. A paper held as abstract only cannot answer detailed questions however well it scores here."
+        },
+        "subatlas_cell_label": {
+          "type": "string",
+          "description": "The contributing study's own label for these cells, verbatim. This is what the paper would be asked about."
+        },
+        "source_labelset": {
+          "type": "string",
+          "description": "The labelset within the contributing study the label belongs to, where recorded."
+        },
+        "subatlas_label_total_cells": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Cells this study gave this label, across the whole atlas rather than only the requested cell sets. The denominator for share_of_subatlas_label. Absent when no denominator could be validated."
+        },
+        "atlas_cell_sets": {
+          "type": "array",
+          "minItems": 1,
+          "description": "The requested cell sets this label fed. More than one means the atlas split the study's label, or that a cell set and its parent were both asked for.",
+          "items": { "$ref": "#/$defs/Claimant" }
+        }
+      }
+    },
+    "Claimant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cell_label", "overlap_cells", "share_of_contribution"],
+      "properties": {
+        "cell_label": { "type": "string", "description": "The atlas's label for the claiming cell set." },
+        "labelset": { "type": "string", "description": "Its labelset." },
+        "cell_set_accession": { "type": "string", "description": "Its accession." },
+        "overlap_cells": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Cells in both — carrying the study's label and placed in this atlas cell set."
+        },
+        "share_of_contribution": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Of the cells this study contributed to this atlas cell set, the share carrying this label. The denominator is that study's contribution and not the whole cell set, because the rest of the cell set came from studies that never saw these cells."
+        },
+        "share_of_subatlas_label": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Of every cell this study gave this label, the share that ended up in this atlas cell set. Absent when no denominator could be validated."
+        },
+        "named_as_synonym": {
+          "type": "boolean",
+          "description": "The atlas records the study's label as a synonym of this cell set — the authors asserting the two name the same cells. Present only where true."
+        }
+      }
+    },
+    "AtlasOnly": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cell_label", "reason"],
+      "properties": {
+        "cell_label": { "type": "string", "description": "The atlas's label for the cell set." },
+        "labelset": { "type": "string", "description": "Its labelset." },
+        "cell_set_accession": { "type": "string", "description": "Its accession." },
+        "reason": {
+          "type": "string",
+          "enum": ["no_provenance", "all_below_floor", "no_readable_source"],
+          "description": "no_provenance: the atlas records no contributing study for these cells at all. all_below_floor: every study's contribution was too small to ask about. no_readable_source: contributions survive the floor but none of their studies has a DOI."
+        },
+        "overlap_cells_dropped": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Cells in the contributions that were left out, where any were."
+        }
+      }
+    },
+    "Dropped": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subatlas_paper", "n_subatlas_labels", "overlap_cells"],
+      "properties": {
+        "subatlas_paper": { "type": "string", "description": "The contributing study, as named in the CAS+ document." },
+        "n_subatlas_labels": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "How many of its labels were left out across the requested cell sets."
+        },
+        "overlap_cells": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Cells those labels account for between them."
+        }
+      }
+    },
+    "Unreadable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subatlas_paper", "overlap_cells"],
+      "properties": {
+        "subatlas_paper": { "type": "string", "description": "The contributing study, as named in the CAS+ document." },
+        "overlap_cells": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Cells it contributed to the requested cell sets."
+        },
+        "n_atlas_cell_sets": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "How many of the requested cell sets it reached."
+        }
+      }
+    }
+  }
+}
