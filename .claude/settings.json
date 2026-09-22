@@ -38,6 +38,10 @@
           },
           {
             "type": "command",
+            "command": "uv run python .claude/hooks/check_degs.py"
+          },
+          {
+            "type": "command",
             "command": "uv run python .claude/hooks/check_paper_retrieval.py"
           }
         ]
