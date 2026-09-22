@@ -116,9 +116,9 @@ Ordered by how much they would cost to get wrong:
 |---|---|---|---|
 | `Capillary` | 197 | 332 | |
 | `tPCV` | 73 | 332 | |
-| `aPCV` | 37 | 332 | **2401** |
+| `aPCV` | 37 | 332 | **2402** |
 
-The first three columns are what is in the file today. 2401 is the number this
+The first three columns are what is in the file today. 2402 is the number this
 work adds, and it is the one that says Ulrich's aPCV cells mostly went
 somewhere else — the finding that the whole exercise exists to surface.
 

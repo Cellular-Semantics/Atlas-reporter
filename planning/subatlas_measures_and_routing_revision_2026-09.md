@@ -94,7 +94,7 @@ All three ratios go on the transferred annotation, beside the counts they divide
   "source_taxonomy": "DOI:10.1073/pnas.2404775121",
   "cell_count": 37,
   "subatlas_contribution_cells": 332,
-  "subatlas_label_total_cells": 2401,
+  "subatlas_label_total_cells": 2402,
   "share_of_subatlas_contribution": 0.1114,
   "share_of_subatlas_label": 0.0154,
   "share_of_atlas_cell_set": 0.0076
@@ -220,7 +220,7 @@ Add:
 - the papers block: one entry per study, totals correct, no identity left on
   questions;
 - the `aPCV` regression against the real numbers — `cell_count` 37,
-  `subatlas_contribution_cells` 332, `subatlas_label_total_cells` 2401,
+  `subatlas_contribution_cells` 332, `subatlas_label_total_cells` 2402,
   included by synonym rather than by size.
 
 ---
