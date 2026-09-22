@@ -116,12 +116,19 @@ So, two rules, and the second is what makes the first safe:
   mismatch beyond rounding tolerance. Extend the existing hook rather than
   adding another — it already fires on `cas.json`.
 
-**Open: rename `cell_ratio` to `share_of_atlas_cell_set`.** They are the same
-number, and carrying both would be two names for one thing — exactly what this
-document exists to stop. Renaming costs a regeneration of the reproductive
-atlas's `cas.json`, which the registry work regenerates anyway. Recommended, but
-it touches the one field here that predates us, so worth a decision rather than
-an assumption. `cell_count` and `subatlas_contribution_cells` keep their names.
+**Settled (PR #74): `cell_ratio` keeps its name.** The rename to
+`share_of_atlas_cell_set` was recommended here and then dropped, because
+`cell_ratio` appears in two places — on a transferred annotation and on a
+composition value — meaning the same thing in both. Renaming one breaks that
+parallel and renaming both drags composition into a change that has nothing to
+do with subatlas measures. Its description now says outright that it is the
+third measure; the explicit name lives in the routing table, where the three
+sit side by side. `cell_count` and `subatlas_contribution_cells` keep their
+names too.
+
+**Landed in PR #74**, so §2 above is done: the three fields, the worked example
+in the schema descriptions and the good fixture, `check_cas_annotation.py`
+recomputing all three on write, and `docs/subatlas_measures.md`.
 
 ### 3. Routing stops doing arithmetic
 

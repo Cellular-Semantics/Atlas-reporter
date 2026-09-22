@@ -47,6 +47,28 @@ mostly a matter of lifting it somewhere it can be read once rather than
 rediscovered per transfer, and attaching the counts and the bibliographic
 detail.
 
+## Prior art on this branch, worth reading first
+
+`afd63b6 Regenerate the subatlas concordance on purity + coverage` already did
+the counting pass, under the third of four namings:
+
+- `scripts/subatlas_concordance.py` reads the parquet and takes a value count
+  per source column — `gtot` in that script **is** `cell_sets[].n_cells`.
+- `notes/subatlas_concordance.csv` carries `source_label_total` on 3,756 rows.
+  Spot-checked against the totals derived by summing the hierarchy on the
+  routing branch: `aPCV` 2402, `Capillary` 1656, `tPCV` 3680,
+  `PV-MYH11_CDKN1A+` 10659 — identical on all four.
+- `notes/SUBATLAS_CONCORDANCE.md` classifies 597 pairs into a 2x2 at an 80%
+  cut: 64 same type, 364 the study's label is broader, 34 the atlas cell set is
+  broader, 135 partial. That is the same distinction the routing table records
+  as `overlap_shape`.
+
+So this work is largely a reshaping of numbers that have already been computed
+once and checked, from a CSV beside the atlas into the document itself. The
+findings in that markdown are worth keeping — particularly that every source
+label on CD8+ tissue-resident memory T is in the broader-label class, so no
+contributing study independently delimits that cell set.
+
 ## Two passes, deliberately separate
 
 They have different characters and different failure modes, and the ingest
@@ -138,8 +160,8 @@ and nothing in the test project needs it.
 - **Regenerating `cas.json` risks disturbing what is already correct.** The
   README's independent re-derivation (0 mismatches on `n_cells`, `cell_count`,
   `cell_ratio`, `subatlas_contribution_cells`) is the baseline; a diff of the
-  regenerated file against the current one should show only additions, plus the
-  `cell_ratio` rename if that is agreed.
+  regenerated file against the current one should show only additions —
+  `cell_ratio` keeps its name (PR #74), so nothing existing changes.
 - **`celltype_HECA` is a consortium column, not a first-author study.** Its DOI
   resolves to a publication, but the registry `label` is the obs column and the
   two will not look alike. That is the point of keeping `label` verbatim.
