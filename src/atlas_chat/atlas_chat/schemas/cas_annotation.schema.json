@@ -335,8 +335,12 @@
           "description": "Journal or preprint server.",
           "type": ["string", "null"]
         },
+        "title": {
+          "description": "Title of the contributing study, once it has been resolved to a publication. Carried because it, rather than the DOI, is what makes a paper recognisable when deciding which of them are worth reading.",
+          "type": ["string", "null"]
+        },
         "cell_sets": {
-          "description": "This study's own cell sets and their sizes within the atlas — the denominator table for fraction_of_subatlas_set. Counted across the whole atlas rather than within any one annotation, so it is stated here once. Direct counts from the per-cell table, so they measure cells from each source cell set that are present in the atlas; where an integration subsampled its source, that is not the published cell set's size.",
+          "description": "This study's own cell sets and their sizes within the atlas — the denominator for share_of_subatlas_label. Counted across the whole atlas rather than within any one annotation, so it is stated here once. Direct counts from the per-cell table, so they measure cells from each source cell set that are present in the atlas; where an integration subsampled its source, that is not the published cell set's size.",
           "type": "array",
           "items": { "$ref": "#/$defs/SubatlasCellSet" }
         },
