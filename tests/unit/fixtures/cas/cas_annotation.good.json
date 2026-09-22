@@ -140,6 +140,27 @@
       "author_annotation_fields": {
         "author_cluster_id": "c12"
       }
+    },
+    {
+      "labelset": "author_cell_type",
+      "cell_label": "bar",
+      "cell_set_accession": "TEST:bar",
+      "n_cells": 4000,
+      "transferred_annotations": [
+        {
+          "transferred_cell_label": "fu",
+          "source_taxonomy": "DOI:10.1000/smith",
+          "subatlas_paper": "Smith2021",
+          "source_labelset": "celltype_Smith2021",
+          "cell_count": 120,
+          "subatlas_contribution_cells": 150,
+          "subatlas_label_total_cells": 500,
+          "cell_ratio": 0.03,
+          "share_of_subatlas_contribution": 0.8,
+          "share_of_subatlas_label": 0.24,
+          "comment": "The worked example: 500 cells of 'fu' reach the atlas, 120 of them land here, and 'bar' holds 4,000 cells of which 150 came from that subatlas."
+        }
+      ]
     }
   ]
 }

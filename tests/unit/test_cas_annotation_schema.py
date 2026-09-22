@@ -397,3 +397,53 @@ def test_every_category_value_is_described() -> None:
     undescribed = [b.get("const") for b in branches if not (b.get("description") or "").strip()]
     assert undescribed == []
     assert len(branches) == len({b["const"] for b in branches})
+
+
+# ------------------------------------------------------------------
+# The subatlas overlap measures
+# ------------------------------------------------------------------
+
+
+def _worked_example() -> tuple[dict, dict]:
+    """The `fu` / `bar` annotation from the good fixture, and its transfer."""
+    data = _load("cas_annotation.good.json")
+    annotation = next(a for a in data["annotations"] if a["cell_label"] == "bar")
+    return data, annotation["transferred_annotations"][0]
+
+
+@pytest.mark.unit
+def test_the_worked_example_validates_and_its_measures_recompute() -> None:
+    data, transfer = _worked_example()
+    assert _errors(data) == []
+    assert transfer["cell_count"] / transfer["subatlas_contribution_cells"] == pytest.approx(
+        transfer["share_of_subatlas_contribution"]
+    )
+    assert transfer["cell_count"] / transfer["subatlas_label_total_cells"] == pytest.approx(
+        transfer["share_of_subatlas_label"]
+    )
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize(
+    "measure", ["share_of_subatlas_contribution", "share_of_subatlas_label", "cell_ratio"]
+)
+def test_a_share_above_one_is_rejected(measure: str) -> None:
+    data, transfer = _worked_example()
+    transfer[measure] = 1.4
+    assert _errors(data) != []
+
+
+@pytest.mark.unit
+def test_a_transfer_without_the_later_counts_still_validates() -> None:
+    """The counting and registry passes write at different times."""
+    data, transfer = _worked_example()
+    del transfer["subatlas_label_total_cells"]
+    del transfer["share_of_subatlas_label"]
+    assert _errors(data) == []
+
+
+@pytest.mark.unit
+def test_the_measures_are_closed_against_a_fourth_name() -> None:
+    data, transfer = _worked_example()
+    transfer["purity"] = 0.8
+    assert _errors(data) != []

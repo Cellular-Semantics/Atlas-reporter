@@ -53,3 +53,56 @@ def test_hook_rejects_invalid_cas() -> None:
 def test_hook_ignores_non_cas_files() -> None:
     r = _run_hook("projects/x/notes.txt", {"anything": 1})
     assert r.returncode == 0
+
+
+# ------------------------------------------------------------------
+# Recomputing the stored overlap measures
+# ------------------------------------------------------------------
+
+
+def _worked_example() -> tuple[dict, dict]:
+    data = _load("cas_annotation.good.json")
+    annotation = next(a for a in data["annotations"] if a["cell_label"] == "bar")
+    return data, annotation["transferred_annotations"][0]
+
+
+@pytest.mark.unit
+def test_hook_accepts_measures_that_recompute() -> None:
+    data, _ = _worked_example()
+    r = _run_hook("projects/x/cas.json", data)
+    assert r.returncode == 0, r.stderr
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize(
+    ("measure", "wrong"),
+    [
+        ("share_of_subatlas_contribution", 0.24),  # the other share's value
+        ("share_of_subatlas_label", 0.80),  # and vice versa
+        ("cell_ratio", 0.80),
+    ],
+)
+def test_hook_rejects_a_measure_that_does_not_recompute(measure: str, wrong: float) -> None:
+    data, transfer = _worked_example()
+    transfer[measure] = wrong
+    r = _run_hook("projects/x/cas.json", data)
+    assert r.returncode == 2
+    assert measure in r.stderr
+    assert "bar / fu" in r.stderr
+
+
+@pytest.mark.unit
+def test_hook_skips_a_measure_whose_denominator_has_not_been_counted_yet() -> None:
+    """Absent is not wrong: the registry pass runs after the counting pass."""
+    data, transfer = _worked_example()
+    del transfer["subatlas_label_total_cells"]
+    r = _run_hook("projects/x/cas.json", data)
+    assert r.returncode == 0, r.stderr
+
+
+@pytest.mark.unit
+def test_hook_tolerates_the_rounding_the_stored_values_carry() -> None:
+    data, transfer = _worked_example()
+    transfer["share_of_subatlas_contribution"] = 0.7999
+    r = _run_hook("projects/x/cas.json", data)
+    assert r.returncode == 0, r.stderr

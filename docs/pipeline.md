@@ -376,10 +376,17 @@ alongside its output. The schema's field descriptions are therefore the
 specification an agent works from; every field now carries one, and a test keeps
 it that way.
 
-`cas_annotation.schema.json` also carries the two denominators the subatlas
-overlap measures divide by — `SubatlasPaper.cell_sets[]` and
-`TransferredAnnotation.subatlas_contribution_cells` — both direct counts from the
-per-cell table. `title` and `source` are no longer required at the root, since a
+`cas_annotation.schema.json` also carries the subatlas overlap measures and
+both denominators they divide by — `SubatlasPaper.cell_sets[]` and
+`TransferredAnnotation.subatlas_label_total_cells` for
+`share_of_subatlas_label`, `subatlas_contribution_cells` for
+`share_of_subatlas_contribution` — all direct counts from the per-cell table,
+never summed over a set of cell sets covering the atlas. The ratios are stored
+rather than derived on read, so a person or an agent can read the file without
+arithmetic; `check_cas_annotation.py` recomputes them on write, which is what
+makes storing them safe. A measure whose denominator comes from a later ingest
+pass is absent until then rather than provisional. See
+[](subatlas_measures.md). `title` and `source` are no longer required at the root, since a
 document assembled from a dataset does not yet know its paper.
 
 The module is not yet a dependency on `dev`, and has no release — 0.1.0, no tags,
