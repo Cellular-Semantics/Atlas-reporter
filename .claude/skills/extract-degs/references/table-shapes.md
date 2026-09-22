@@ -94,3 +94,25 @@ per row. Converting this as long format attributes every gene to one population.
 
 **What to do:** melt it — one document per column, the column header being the
 cell set.
+
+## The same shapes, in JSON
+
+A JSON dump is usually one of these layouts already flattened, and the same
+misreadings survive the change of format — with less to warn you, since there is
+no header row to check and no blank column to notice.
+
+- **Keyed by cell set** — an object whose keys are the populations, each holding
+  a gene list. The analogue of several tables in one sheet, and the easy case:
+  the key is the cell set, so nothing can be silently misattributed.
+- **A flat list of records** — every row carries the cell set in a field.
+  Converting it without grouping on that field produces one document holding
+  every population's genes.
+- **Both directions in one array**, exactly as above: sign of the effect size,
+  never the order.
+- **The effect size under an unhelpful name** — `score`, `stat`, `value`. Which
+  one carries direction is not a guess to make from the name: find a gene you
+  know the direction of, or a field whose values are signed where a rank or an
+  absolute value would not be.
+
+A `.json` extension is a claim, not a fact. A file of one JSON object per line
+fails to parse whole and is read a line at a time.

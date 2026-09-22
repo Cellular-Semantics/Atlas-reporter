@@ -201,11 +201,16 @@ front-matter, but no validator hook is registered for it.
 
 ## 4a. Differential expression
 
-`extract-degs` (skill) converts a paper's published DE tables into
+`extract-degs` (skill) converts DE results into
 `projects/{project}/degs/{cell_label}.json`, conforming to `degs.schema.json` —
-one file per cell set, holding every comparison the paper ran on it. A setup
-step: the tables run to thousands of rows and are queried per gene thereafter,
-never loaded.
+one file per cell set, holding every comparison run on it. A setup step: the
+tables run to thousands of rows and are queried per gene thereafter, never
+loaded.
+
+The input is whatever the results arrived as: a paper's supplement, found via
+the supplement manifest's `deg_results` tables, or a file handed over directly,
+spreadsheet or JSON. `source` records where they came from, and carries a DOI
+only where they were published with one.
 
 The conversion code is written by the agent for the source in front of it, and
 kept in the store beside its output with a note saying which table the numbers

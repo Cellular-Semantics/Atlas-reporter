@@ -60,14 +60,17 @@
     },
     "Source": {
       "type": "object",
-      "description": "Where these numbers were published, precisely enough to go back to them.",
+      "description": "Where these numbers came from, precisely enough to go back to them. At least one locating field, and as many as are known: results are not always published alongside a paper, so a DOI cannot be demanded of every source, but something must identify where the table was read from.",
       "additionalProperties": false,
-      "required": ["doi"],
+      "minProperties": 1,
       "properties": {
-        "doi": { "type": "string", "description": "The paper that published them." },
+        "doi": {
+          "type": "string",
+          "description": "The paper that published them, where they were published with one."
+        },
         "file_id": {
           "type": "string",
-          "description": "The supplementary file, as the paper's supplement manifest names it."
+          "description": "The file the table was read from, as the paper's supplement manifest names it where there is one, and otherwise as it was supplied."
         },
         "member_path": {
           "type": "string",

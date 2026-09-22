@@ -1,27 +1,31 @@
 ---
 name: extract-degs
-description: Convert a paper's published differential-expression tables into a per-cell-type store that later steps look genes up in, keeping the conversion code so it can be repeated. Use when setting up a project, when asked to "extract DEGs", "process the DE tables", "pull the differential expression", or when a report needs statistics for a marker and none are on disk.
+description: Convert differential-expression results — a paper's published tables, or a spreadsheet or JSON handed over directly — into a per-cell-type store that later steps look genes up in, keeping the conversion code so it can be repeated. Use when setting up a project, when asked to "extract DEGs", "process the DE tables", "pull the differential expression", or when a report needs statistics for a marker and none are on disk.
 output:
   schema: src/atlas_chat/atlas_chat/schemas/degs.schema.json
 ---
 
 # extract-degs
 
-Differential expression is the only quantitative evidence an atlas paper offers
-about what identifies a cell type. This converts what a paper published into a
-store keyed by cell set, once, at setup.
+Differential expression is the only quantitative evidence an atlas offers about
+what identifies a cell type. This converts the results, however they arrive,
+into a store keyed by cell set, once, at setup.
 
-**You write the conversion code.** Every published table is laid out
-differently, so no parser can anticipate them; what makes this repeatable is
-that the code you write is kept beside its output.
+**You write the conversion code.** Every set of results is laid out differently,
+so no parser can anticipate them; what makes this repeatable is that the code
+you write is kept beside its output.
 
 ## Instructions
 
-### Step 1: Find the tables
+### Step 1: Find the source
 
-The supplement manifest already says which sheets hold differential expression —
-`index-supplements` marks them `content_type: deg_results` and describes what
-each one compares.
+The results may simply be handed to you — a path to a spreadsheet, a delimited
+file, or a JSON dump, whatever the people who ran the analysis produced. Take
+what you are given; there is nothing to search for.
+
+Where they are not, look in the paper's supplement. `index-supplements` marks
+the sheets holding differential expression `content_type: deg_results` and
+describes what each one compares.
 
 ```bash
 uv run python -m atlas_chat.cli_supplements show --store <store> --doi <doi>
@@ -31,10 +35,17 @@ Read the `tables` entries. Their `description` and `locator` tell you what to
 open and, often, what was compared. If none are marked, say so and stop: a paper
 with no published DE tables is a normal outcome, not a failure.
 
+Either way, note where the numbers came from before you go further — the file
+and where in it, and the DOI where they were published with one. That becomes
+`source`, and it is the whole reason a later reader can check them.
+
 ### Step 2: Probe the structure, cheapest first
 
-Do not open a table blind and do not assume its shape. Work up only as far as
-you need:
+Do not open the source blind and do not assume its shape. Never read a whole
+file to find out what is in it — these run to thousands of rows. Work up only as
+far as you need, and how you do that depends on what you have.
+
+**A workbook or a delimited file:**
 
 ```bash
 # Sheet names, dimensions, the guessed header row, a few rows. Flat cost.
@@ -52,14 +63,34 @@ outline before reading anything, and work from the header and a sample instead.
 routinely carry a title row above the real header, sometimes two, and a reader
 that slices from the wrong row gets nonsense.
 
-Stop probing when you can state, for each table: which cell sets it covers, what
-each was compared against, which column is the effect size, and where one table
-ends and the next begins. If you cannot state all four, keep probing.
+**JSON:** `outline` has nothing to say about it, so probe it yourself — keys
+first, values only where you need them, because one record of a nested dump can
+be most of the file:
+
+```bash
+python3 -c "
+import json
+d = json.load(open('<path>'))
+print(type(d).__name__, len(d))
+print(list(d)[:20] if isinstance(d, dict) else list(d[0]))
+"
+```
+
+That tells you which of the two usual shapes you have: an object keyed by cell
+set, or a flat list of rows carrying the cell set as a field. Then look at a
+single record to find the effect size and how direction is expressed.
+
+Whatever the format, stop probing when you can state, for each table: which cell
+sets it covers, what each was compared against, which field is the effect size,
+and where one table ends and the next begins. If you cannot state all four, keep
+probing.
 
 **Read `references/table-shapes.md` before writing any conversion.** It works
-through layouts that corrupt output without raising anything. They are examples
-rather than a list to check off — the useful question it teaches is *what would
-this table look like if I had misread it, and would I be able to tell?*
+through layouts that corrupt output without raising anything — mostly
+spreadsheets, since that is what publishers ship, with the JSON equivalents at
+the end. They are examples rather than a list to check off; the useful question
+it teaches is *what would this look like if I had misread it, and would I be
+able to tell?*
 
 ### Step 3: Write the conversion
 
@@ -69,14 +100,14 @@ Write a script into the store directory, named for what it converts:
 projects/<project>/degs/extract_<source>.py
 ```
 
-It reads the supplementary file and writes one document per cell set, conforming
-to `degs.schema.json`. Keep it plain and readable — it is the record of how the
+It reads the source file and writes one document per cell set, conforming to
+`degs.schema.json`. Keep it plain and readable — it is the record of how the
 numbers were obtained, so someone should be able to check it against the table.
 
 Carry through, per comparison:
 
 - **`comparison`** — what was compared against what, in the authors' words where
-  the sheet states them, and set `comparison_is_quoted` when it is theirs.
+  the source states them, and set `comparison_is_quoted` when it is theirs.
 - **`effect_field`** — which score carries direction. Name it; do not leave a
   consumer to guess, because guessing wrong inverts the answer.
 - **`n_genes`**, and `n_up` — a gene missing from a short list may simply not
@@ -108,14 +139,16 @@ deliberate: numbers nobody can trace back to a table are not evidence.
 
 `projects/<project>/degs/README.md`, saying for each converted source:
 
-- the paper, and the supplementary file and sheet it came from, as the manifest
-  names them;
+- where it came from — the file and the sheet or key, as the supplement manifest
+  names them where there is one, and the paper where the results were published
+  with one;
 - what each table compared, and anything the authors excluded before publishing;
 - which script produced which files, and how to re-run it;
 - anything you could not convert, and why.
 
-Point at the manifest rather than copying it. The manifest is the record of what
-the supplement holds; this is the record of what was taken from it.
+Where there is a manifest, point at it rather than copying it: the manifest is
+the record of what the supplement holds, and this is the record of what was
+taken from it.
 
 ## Example
 

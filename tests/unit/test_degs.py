@@ -80,6 +80,18 @@ def test_a_comparison_must_say_what_was_compared():
     assert validate_document(doc)
 
 
+def test_a_source_without_a_doi_passes():
+    """Results are not always published alongside a paper; a table can be
+    supplied directly."""
+    doc = _doc(source={"file_id": "uftLAM_degs.json", "locator": "Immune_uftLAM"})
+    assert validate_document(doc) == []
+
+
+def test_a_source_that_locates_nothing_is_rejected():
+    doc = _doc(source={})
+    assert validate_document(doc)
+
+
 def test_the_effect_field_must_be_named():
     doc = _doc()
     del doc["comparisons"][0]["effect_field"]
