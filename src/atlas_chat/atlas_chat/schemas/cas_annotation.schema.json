@@ -174,11 +174,18 @@
         },
         "cell_count": { "type": "integer", "minimum": 0, "description": "Local extension: cells in this set carrying the transferred label." },
         "subatlas_contribution_cells": {
-          "description": "Local extension: every cell of this cell set that came from this contributing study, whatever the study called it. The denominator for purity. A direct count from the per-cell table, so it is the same for every transferred annotation naming the same study within this cell set. Recorded rather than summed from those entries, because anything that later prunes them would quietly shrink it.",
+          "description": "Local extension: every cell of this cell set that came from this contributing study, whatever the study called it. The denominator for share_of_subatlas_contribution. A direct count from the per-cell table, so it is the same for every transferred annotation naming the same study within this cell set. Recorded rather than summed from those entries, because anything that later prunes them would quietly shrink it.",
           "type": "integer",
           "minimum": 0
         },
-        "cell_ratio": { "type": "number", "minimum": 0, "maximum": 1, "description": "Local extension: fraction of the set carrying the transferred label." }
+        "subatlas_label_total_cells": {
+          "description": "Local extension: cells the contributing study gave this label across the whole atlas, not only within this cell set. The denominator for share_of_subatlas_label. A direct count from the per-cell table, so it is the same for every transferred annotation naming the same study and label anywhere in the document. Never summed over a set of cell sets that covers the atlas: such a sum is only as good as the partition behind it, and produces a number indistinguishable from a counted one. Written by the pass that counts it, which is later than the pass writing cell_count, so it is absent until then.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "cell_ratio": { "type": "number", "minimum": 0, "maximum": 1, "description": "Local extension: cells carrying the transferred label divided by the whole cell set — the measure the routing table surfaces as share_of_atlas_cell_set. Of this atlas cell set, this much is that label. Confounded by how many studies fed the cell set, since the rest of it came from studies that never saw these cells, so it says less about the correspondence than either share below. Named cell_ratio for parallelism with CompositionValue.cell_ratio, which divides the same way." },
+        "share_of_subatlas_contribution": { "type": "number", "minimum": 0, "maximum": 1, "description": "Local extension: cell_count / subatlas_contribution_cells. Of the cells this study contributed to this cell set, the share carrying this label. High means the study's label and the atlas cell set agree about these cells; low means the study called them several different things. Worked example — 500 cells of subatlas cell set 'fu' reach the atlas, 120 of them go into atlas cell set 'bar', and 'bar' holds 4,000 cells of which 150 came from that subatlas: this is 120/150 = 0.80." },
+        "share_of_subatlas_label": { "type": "number", "minimum": 0, "maximum": 1, "description": "Local extension: cell_count / subatlas_label_total_cells. Of every cell this study gave this label anywhere in the atlas, the share that ended up in this cell set. High means this cell set is where that label went; low means the label is spread across many cell sets. In the same worked example this is 120/500 = 0.24. Absent wherever subatlas_label_total_cells is absent — never estimated." }
       }
     },
     "Composition": {
@@ -328,8 +335,12 @@
           "description": "Journal or preprint server.",
           "type": ["string", "null"]
         },
+        "title": {
+          "description": "Title of the contributing study, once it has been resolved to a publication. Carried because it, rather than the DOI, is what makes a paper recognisable when deciding which of them are worth reading.",
+          "type": ["string", "null"]
+        },
         "cell_sets": {
-          "description": "This study's own cell sets and their sizes within the atlas — the denominator table for fraction_of_subatlas_set. Counted across the whole atlas rather than within any one annotation, so it is stated here once. Direct counts from the per-cell table, so they measure cells from each source cell set that are present in the atlas; where an integration subsampled its source, that is not the published cell set's size.",
+          "description": "This study's own cell sets and their sizes within the atlas — the denominator for share_of_subatlas_label. Counted across the whole atlas rather than within any one annotation, so it is stated here once. Direct counts from the per-cell table, so they measure cells from each source cell set that are present in the atlas; where an integration subsampled its source, that is not the published cell set's size.",
           "type": "array",
           "items": { "$ref": "#/$defs/SubatlasCellSet" }
         },

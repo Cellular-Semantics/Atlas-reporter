@@ -56,8 +56,64 @@ Note that this emits the *legacy flat* annotation file, not CAS+.
 atlas CorpusId, scans any existing traversal output, and builds a session-level
 merged paper catalogue. Also still on the legacy flat file.
 
+`paper_ingest` reads `retrieval.json` beside the text it assembles and carries
+`route`, `url` and `retrieved_at` onto its `source` block, so a grounding check
+is told where the text came from as well as how it was parsed.
+
 **`services/atlas_paper.py`** holds the config dataclasses (`AtlasConfig`,
 `PaperIdentifiers`, `AtlasPaperData`) and `load_project_config()`.
+
+## 1a. Retrieving a paper's text
+
+Getting the text is the first thing a project needs and the least likely to
+succeed on the first route. On the reproductive atlas corpus of 22 papers, Europe
+PMC serves 14, a preprint server one, an open-access resolver one, and six are not
+reachable by any automated route. Asking the user is therefore a route on the
+record, not a failure.
+
+**`services/paper_fetch.py`** is the waterfall, and takes paths rather than
+project names. Rungs in order: **local** (already here and unchanged — not a
+route; the existing record is kept as it stands), **europepmc** (`fullTextXML` for
+the paper's PMC record), **preprint_server** (bioRxiv and medRxiv via the shared
+details API, fetched with TLS impersonation because Cloudflare answers a plain
+request with a challenge), **unpaywall** (an open-access location, downloaded with
+impersonation first — at least one repository in the corpus 403s an ordinary
+client and serves the same URL to a browser), then **none**, which records a gap
+naming a free copy where the resolver found one.
+
+Writes per paper, under `<papers-root>/<doi-slug>/`: `source/paper.jats.xml` or
+`source/paper.pdf`, `source/paper.txt` where text was recovered from a PDF, and
+`retrieval.json`. The layout matches what `local_snippet_index` reads, so a
+retrieved paper is ready to index.
+
+Each attempt records an outcome, and the difference between them is load-bearing:
+`unavailable` means a rung answered and this paper is not reachable by it,
+`failed` means the rung broke, and `skipped` means it could not run at all (a
+missing extra, no contact address). The negative cache that stops a paper being
+re-requested every pass only holds where *every* attempt was `unavailable` —
+otherwise an afternoon's outage would leave a retrievable paper permanently
+marked unreachable. `--retry` overrides it either way.
+
+`adopt()` takes in a file a user supplied and records it as route `manual`,
+checking that it is what its extension claims — a saved landing page named
+`.pdf` would otherwise be read as the paper. `candidates()` reads a drop zone
+recursively and reports each possible paper's declared DOI, opening title and
+size, so that matching a flat bag of files to DOIs can be done by a reader.
+
+**Skill `retrieve-paper`** drives it and holds the judgement: which file in a drop
+zone is which paper, whether a resolver's hit is the paper or a manuscript of it
+(`oa_candidates` carries each location's `version` verbatim), whether a PDF
+extracted to prose or to a scan, and what to ask the user for.
+
+**Schema `paper_retrieval.schema.json`**, checked on write by
+`.claude/hooks/check_paper_retrieval.py`, which runs both
+`validate_retrieval()` (shape) and `cross_check_retrieval()` (the rules a schema
+cannot express — a route claimed with nothing stored, recovered text with no
+account of its size).
+
+`services/fetch_preprint.py` predates this and still backs `subatlas_resolver`
+and `local_snippet_index`; its two rungs are reimplemented here with the medRxiv
+server added.
 
 ## 2. Working out which papers are in scope
 
@@ -142,6 +198,32 @@ Prompt: `agents/supplementary_scanner.prompt.yaml`. Output:
 `supplementary_findings.json`, conforming to
 `schemas/supplementary_findings.schema.json`. Declares its output schema in
 front-matter, but no validator hook is registered for it.
+
+## 4a. Differential expression
+
+`extract-degs` (skill) converts DE results into
+`projects/{project}/degs/{cell_label}.json`, conforming to `degs.schema.json` —
+one file per cell set, holding every comparison run on it. A setup step: the
+tables run to thousands of rows and are queried per gene thereafter, never
+loaded.
+
+The input is whatever the results arrived as: a paper's supplement, found via
+the supplement manifest's `deg_results` tables, or a file handed over directly,
+spreadsheet or JSON. `source` records where they came from, and carries a DOI
+only where they were published with one.
+
+The conversion code is written by the agent for the source in front of it, and
+kept in the store beside its output with a note saying which table the numbers
+came from. `cli_degs` checks conformance, that the stated counts agree with the
+rows, and that both the code and the note are there — numbers nobody can trace
+back to a table are not evidence. `check_degs.py` covers the hand-written case;
+a file written by a script never passes through a tool hook, which is why the
+skill requires the CLI.
+
+The schema is open about scoring: the authors' own field names, with
+`effect_field` naming which one carries direction. `comparison` is free text,
+because the same gene means different things against a sibling population,
+against a lineage, or against every other cell in the atlas.
 
 ## 5a. Choosing which cell types to report on
 
@@ -364,6 +446,7 @@ bot identity without a personal token. Built, not yet wired into the workflow.
 | `supplement_manifest` | `index-supplements`, supplement store | `check_supplement_manifest.py` |
 | `annotated_snippet` | `cli_annotate fetch` | `check_annotated_snippet.py` |
 | `follow_set` | `cli_annotate follow-set` | `check_follow_set.py` |
+| `degs` | `extract-degs` | `check_degs.py` |
 | `evidence_summary` | `citation-traverse`, `read-atlas-paper` | `check_evidence_summary.py` |
 | `all_summaries` | `citation-traverse` | none |
 | `supplementary_findings` | `scan-supplements` | none |
@@ -386,7 +469,9 @@ Everything reusable is callable without a Claude Code session:
 
 | Command | What it does |
 | --- | --- |
+| `python -m atlas_chat.cli_degs` | check a differential-expression store |
 | `python -m atlas_chat.cli_project` | `paths`: a project's locations, from its name under `projects/`. `outline`: its annotation hierarchy |
+| `python -m atlas_chat.cli_paper` | retrieval waterfall: fetch, adopt, candidates, show, text |
 | `python -m atlas_chat.cli_paper_ingest` | a paper plus its indexed supplementary prose, assembled for reading |
 | `python -m atlas_chat.cli_subject_block` | what a reader is told about a cell set, from CAS+ |
 | `python -m atlas_chat.cli_route` | provenance of chosen cell sets, arranged by the read |
@@ -433,10 +518,17 @@ alongside its output. The schema's field descriptions are therefore the
 specification an agent works from; every field now carries one, and a test keeps
 it that way.
 
-`cas_annotation.schema.json` also carries the two denominators the subatlas
-overlap measures divide by — `SubatlasPaper.cell_sets[]` and
-`TransferredAnnotation.subatlas_contribution_cells` — both direct counts from the
-per-cell table. `title` and `source` are no longer required at the root, since a
+`cas_annotation.schema.json` also carries the subatlas overlap measures and
+both denominators they divide by — `SubatlasPaper.cell_sets[]` and
+`TransferredAnnotation.subatlas_label_total_cells` for
+`share_of_subatlas_label`, `subatlas_contribution_cells` for
+`share_of_subatlas_contribution` — all direct counts from the per-cell table,
+never summed over a set of cell sets covering the atlas. The ratios are stored
+rather than derived on read, so a person or an agent can read the file without
+arithmetic; `check_cas_annotation.py` recomputes them on write, which is what
+makes storing them safe. A measure whose denominator comes from a later ingest
+pass is absent until then rather than provisional. See
+[](subatlas_measures.md). `title` and `source` are no longer required at the root, since a
 document assembled from a dataset does not yet know its paper.
 
 The module is not yet a dependency on `dev`, and has no release — 0.1.0, no tags,
@@ -465,6 +557,11 @@ Real discrepancies, listed so nobody rediscovers them:
   `anndata-zarr-summary` work with the flat `cell_type_annotations.json`, not CAS+.
 - **No CLI** for `supplement_fetch` or `subatlas_resolver`, both of which are
   otherwise service-shaped.
+- **Six of the reproductive atlas's 22 papers cannot be retrieved automatically**
+  and have to be supplied by hand. Not a defect in the waterfall: two are behind a
+  subscription with no open copy, and four have an open copy whose host serves
+  only a landing page or blocks a download outright. Europe PMC advertises a free
+  PDF for one of them whose `getPdf` endpoint returns 500.
 - **Two CAS schemas exist**, one here and one on an unmerged `cxg-author-probe`
   branch — see [Where CAS+ lives](#where-cas-lives).
 
