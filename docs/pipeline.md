@@ -246,22 +246,30 @@ them — and for an atlas built by integration the answer is frequently not the
 atlas paper. This stage is in two halves, counting and judging, because they
 fail in different ways.
 
-**`services/subatlas_routing.py`** (CLI `cli_route`) counts. Given a CAS+
-document and the chosen cell sets, it turns their `transferred_annotations`
-inside out: instead of one entry per cell set listing the studies that fed it,
-one entry per (contributing study, that study's label) listing the requested
-cell sets it fed. That is the unit of work, since reading a paper once about one
-of its labels answers for every cell set under it. On the reference project,
-asking for the fibroblasts reaches 69 cell sets and 2,159 rows of provenance,
-which come to 75 questions across 8 papers.
+**`services/subatlas_routing.py`** (CLI `cli_route`) selects and arranges, and
+measures nothing. The three overlap measures are counted at ingest, stored on
+each `transferred_annotation` in CAS+ and recomputed by `check_cas_annotation.py`
+on write (see [](subatlas_measures.md)); this carries them through. There is no
+derivation path and deliberately so — summing `cell_count` over a set of cell
+sets covering the atlas yields a number indistinguishable from a counted one and
+only as good as its partition. Where a project's subatlas registry is not
+populated, `share_of_subatlas_label` is simply absent and the summary says why.
 
-Two ratios sit on each claim. `share_of_contribution` divides by what that study
-contributed to that cell set, not by the cell set, because the rest of it came
-from studies that never saw those cells. `share_of_subatlas_label` divides by
-what that study gave the label across the whole atlas, which needs a set of cell
-sets covering every cell once: the hierarchy's leaves where they are
-corroborated by a labelset total, a labelset where the labelsets agree, and
-otherwise nothing — the ratio is omitted rather than guessed.
+What it does do is turn the provenance of the chosen cell sets inside out:
+instead of one entry per cell set listing the studies that fed it, one entry per
+(contributing study, that study's label) listing the requested cell sets it fed.
+That is the unit of work, since reading a paper once about one of its labels
+answers for every cell set under it. On the reference project, asking for the
+fibroblasts reaches 69 cell sets and 2,159 rows of provenance, which come to 75
+questions across 8 papers.
+
+The table has three parts. `papers[]` carries each contributing study once —
+identity from the registry, plus what it gave this selection against what it gave
+the whole atlas, and how many of its labels are in play. `questions[]` carries
+the work and names its paper only by key. `requested[]` describes each chosen
+cell set with the same block a reading agent gets, minus the sampling context:
+`children` are kept because they are what tell an atlas subdivision apart from a
+contributing study's.
 
 Contributions below `--min-overlap-cells` are rolled up per study rather than
 dropped, **except** where the atlas records that study's label among the cell

@@ -2,21 +2,23 @@
   "table_source": "tests/unit/fixtures/routing/routing_table.good.json",
   "papers": [
     {
-      "subatlas_paper": "DOI:10.1000/fine",
+      "subatlas_paper": "fine",
       "doi": "10.1000/fine",
-      "reason": "The atlas records FibA as another name for Fib_A, so this is the study the cell set is named after even though it contributed the fewer cells.",
+      "reason": "The atlas records FibA as another name for Fib_A, so this is the study the cell set is named after even though it contributed the fewer cells. Franklin's title says the study set out to resolve fibroblasts, which is what makes its label worth taking at face value.",
+      "from_background_knowledge": false,
       "questions": [
         {
           "subatlas_cell_label": "Fibroblast A",
           "serves": [
-            "Fib_A"
+            "Fib_A",
+            "Fib_B"
           ],
           "ask": "What does this study mean by FibA, and does it describe the cells the atlas placed under that name?"
         }
       ]
     },
     {
-      "subatlas_paper": "DOI:10.1000/coarse",
+      "subatlas_paper": "coarse",
       "doi": "10.1000/coarse",
       "reason": "Largest contributor, but under a single coarse label covering both cell sets. One read should establish that it does not separate them.",
       "questions": [

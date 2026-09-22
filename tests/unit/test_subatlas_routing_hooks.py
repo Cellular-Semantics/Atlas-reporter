@@ -58,7 +58,7 @@ def test_table_hook_rejects_a_share_outside_its_range() -> None:
         _load("routing_table.bad_share_out_of_range.json"),
     )
     assert result.returncode == 2
-    assert "share_of_contribution" in result.stderr
+    assert "share_of_subatlas_contribution" in result.stderr
 
 
 def test_table_hook_points_at_regeneration_rather_than_hand_editing() -> None:

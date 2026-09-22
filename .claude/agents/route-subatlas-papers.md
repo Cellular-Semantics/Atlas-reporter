@@ -37,35 +37,52 @@ for the accession, not picking one.
 
 ## How to read the table
 
-Each question is one contributing study and one of *its* labels, listing the
-requested cell sets that label fed. That is the unit of work: reading a paper
-once about one of its labels answers for every cell set under it.
+`papers[]` is what you are ranking: one entry per contributing study, with
+whatever the atlas records about it — author, year, title, how much of its text
+is reachable, how many cells it gave this selection against how many it gave the
+whole atlas, and how many of its own labels are in play.
 
-Two numbers sit on each of those cell sets.
+`questions[]` is the work: one contributing study and one of *its* labels,
+listing the requested cell sets that label fed. That is the unit, because
+reading a paper once about one of its labels answers for every cell set under
+it. A question names its paper and nothing else about it; the identity is in
+`papers[]`, once.
 
-**`share_of_contribution`** — of the cells this study put into this atlas cell
-set, the share carrying this label. High means the study's label and the atlas
-cell set agree about these cells. Low means the study called these cells
+Three measures sit on each of those cell sets. They are counted at ingest and
+checked on write — they are facts about the atlas, not estimates, and you should
+not recompute or second-guess them. `docs/subatlas_measures.md` is the short
+version; here is what they mean for a decision.
+
+**`share_of_subatlas_contribution`** — of the cells this study put into this
+atlas cell set, the share carrying this label. High means the study's label and
+the atlas cell set agree about these cells. Low means the study called them
 several different things.
 
-**`share_of_subatlas_label`** — of every cell the study gave this label
-anywhere in the atlas, the share that ended up here. High means this cell set
-is where that label went. Low means the label is spread across many cell sets.
+**`share_of_subatlas_label`** — of every cell the study gave this label anywhere
+in the atlas, the share that ended up here. High means this cell set is where
+that label went. Low means the label is spread across many cell sets.
 
-Both high is a cell set and a study label naming the same population. High
-share of the label but low share of the contribution means the atlas cell set
-absorbed this label along with others — usually the atlas is the coarser of the
-two. The reverse means the atlas split the study's label, and the honest finding
-is often that the study did not make the distinction the atlas makes.
+**`share_of_atlas_cell_set`** — of the atlas cell set, the share that is this
+label. Confounded by how many studies fed the cell set, so it tells you how much
+of the cell set is accounted for rather than how well the two correspond.
+
+Both of the first two high is a cell set and a study label naming the same
+population. High label share with low contribution share means the atlas cell
+set absorbed this label along with others — the atlas is the coarser of the two.
+The reverse means the atlas split the study's label, and the honest finding is
+often that the study did not make the distinction the atlas makes. Where the
+requested cell set lists `children`, check whether the split the study missed is
+one the atlas records below it.
 
 `named_as_synonym` is different in kind. It means the atlas authors wrote down
 that their cell set is what that study called this — an assertion, not a
 measurement, and one no count would produce. Take it seriously even where the
-numbers are small, and note when the numbers disagree with it, because a
-synonym the overlap does not support is itself worth reporting.
+numbers are small, and note when the numbers disagree with it, because a synonym
+the overlap does not support is itself worth reporting.
 
-Where `share_of_subatlas_label` is absent throughout, the document had no way to
-size a label atlas-wide. Say so in `notes` and rank on the other number.
+Where `share_of_subatlas_label` is absent throughout, the document's subatlas
+registry has not been populated. That is a fact about the document, not about
+the labels: say so in `notes` and rank on the other measure.
 
 ## What the counts cannot tell you, and you can
 
@@ -86,9 +103,9 @@ first.
 that contributed a few percent of a cell set is a boundary between
 neighbouring populations, not evidence about this one.
 
-Use what you know about these papers and these labels. Where a position rests
-on that rather than on the table, set `from_background_knowledge: true` and say
-what the knowledge is in `reason`. This is not a confession — it is frequently
+`papers[]` gives you titles and authors — use what you know about these papers
+and these labels. Where a position rests on that rather than on the table, set
+`from_background_knowledge: true` and say what the knowledge is in `reason`. This is not a confession — it is frequently
 the right basis. It is marked so it can be checked.
 
 ## What you must not do
@@ -136,7 +153,7 @@ only source.
   "table_source": "…/routing_table.json",
   "papers": [
     {
-      "subatlas_paper": "DOI:10.…",
+      "subatlas_paper": "…as the table names it…",
       "doi": "10.…",
       "reason": "…why this one first, and what the reading should settle…",
       "questions": [
@@ -148,7 +165,7 @@ only source.
       ]
     }
   ],
-  "not_reading": [{"subatlas_paper": "DOI:10.…", "reason": "…"}],
+  "not_reading": [{"subatlas_paper": "…", "reason": "…"}],
   "atlas_only": [{"cell_label": "…", "reason": "…"}]
 }
 ```
