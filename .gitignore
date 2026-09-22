@@ -19,6 +19,7 @@ projects/test_projects/**/traversal_output/
 projects/test_projects/**/reports/
 projects/test_projects/**/selections/
 projects/test_projects/**/runs/
+projects/test_projects/**/routing/
 
 # Supplement store: retrieved/manually-dropped files and unpacked archives are
 # never committed; the manifests describing them are.
