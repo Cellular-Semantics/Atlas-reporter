@@ -47,8 +47,12 @@ class SubjectBlockError(RuntimeError):
     """Raised when a requested cell set is not in the document."""
 
 
-def _relations(annotations: list[dict[str, Any]]) -> tuple[dict[str, str], dict[str, list[str]]]:
-    """Accession → label, and accession → the labels of its children."""
+def relations(annotations: list[dict[str, Any]]) -> tuple[dict[str, str], dict[str, list[str]]]:
+    """Accession → label, and accession → the labels of its children.
+
+    Public because a block is assembled in two places: for a reader, and for
+    the routing table, which gives a cell set the same identity a reader gets.
+    """
     label_of = {
         a["cell_set_accession"]: a["cell_label"] for a in annotations if a.get("cell_set_accession")
     }
@@ -140,7 +144,7 @@ def build_all(
             missing subject would become a cell type nobody was asked about.
     """
     annotations = cas_doc.get("annotations") or []
-    label_of, children = _relations(annotations)
+    label_of, children = relations(annotations)
     by_label: dict[str, dict[str, Any]] = {a["cell_label"]: a for a in annotations}
 
     wanted = cell_labels if cell_labels is not None else [a["cell_label"] for a in annotations]

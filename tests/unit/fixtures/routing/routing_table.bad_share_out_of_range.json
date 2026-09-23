@@ -1,0 +1,125 @@
+{
+  "min_overlap_cells": 50,
+  "requested": [
+    {
+      "cell_label": "Fib_A",
+      "labelset": "fine",
+      "n_cells": 500,
+      "synonyms": [
+        "FibA",
+        "PV_CDKN1A+"
+      ],
+      "parent": "Fibroblasts",
+      "cell_set_accession": "F1"
+    },
+    {
+      "cell_label": "Fib_B",
+      "labelset": "fine",
+      "n_cells": 300,
+      "parent": "Fibroblasts",
+      "cell_set_accession": "F2"
+    },
+    {
+      "cell_label": "Fib_D",
+      "labelset": "fine",
+      "n_cells": 30,
+      "parent": "Fibroblasts",
+      "cell_set_accession": "F4"
+    }
+  ],
+  "papers": [
+    {
+      "subatlas_paper": "coarse",
+      "doi": "10.1000/coarse",
+      "cells_contributed": 600,
+      "first_author": "Brunel",
+      "year": 2021,
+      "title": "One big mesenchyme",
+      "total_cells_in_atlas": 1200,
+      "n_atlas_cell_sets_reached": 2,
+      "n_questions": 1
+    },
+    {
+      "subatlas_paper": "fine",
+      "doi": "10.1000/fine",
+      "cells_contributed": 200,
+      "first_author": "Franklin",
+      "year": 2023,
+      "title": "Fibroblasts in detail",
+      "total_cells_in_atlas": 400,
+      "n_atlas_cell_sets_reached": 2,
+      "n_questions": 1
+    }
+  ],
+  "questions": [
+    {
+      "subatlas_paper": "coarse",
+      "subatlas_cell_label": "mesenchyme",
+      "atlas_cell_sets": [
+        {
+          "cell_label": "Fib_A",
+          "overlap_cells": 400,
+          "cell_set_accession": "F1",
+          "share_of_subatlas_contribution": 1.4,
+          "share_of_subatlas_label": 0.659,
+          "share_of_atlas_cell_set": 0.8
+        },
+        {
+          "cell_label": "Fib_B",
+          "overlap_cells": 200,
+          "cell_set_accession": "F2",
+          "share_of_subatlas_contribution": 0.9091,
+          "share_of_subatlas_label": 0.3295,
+          "share_of_atlas_cell_set": 0.6667
+        }
+      ],
+      "source_labelset": "coarse",
+      "subatlas_label_total_cells": 607
+    },
+    {
+      "subatlas_paper": "fine",
+      "subatlas_cell_label": "FibA",
+      "atlas_cell_sets": [
+        {
+          "cell_label": "Fib_B",
+          "overlap_cells": 140,
+          "cell_set_accession": "F2",
+          "share_of_subatlas_contribution": 0.7368,
+          "share_of_subatlas_label": 0.6829,
+          "share_of_atlas_cell_set": 0.4667
+        },
+        {
+          "cell_label": "Fib_A",
+          "overlap_cells": 60,
+          "cell_set_accession": "F1",
+          "share_of_subatlas_contribution": 0.6667,
+          "share_of_subatlas_label": 0.2927,
+          "share_of_atlas_cell_set": 0.12,
+          "named_as_synonym": true
+        }
+      ],
+      "source_labelset": "fine",
+      "subatlas_label_total_cells": 205
+    }
+  ],
+  "atlas_only": [
+    {
+      "cell_label": "Fib_D",
+      "reason": "no_provenance",
+      "labelset": "fine",
+      "cell_set_accession": "F4"
+    }
+  ],
+  "cas_source": "cas.json",
+  "atlas_paper": {
+    "doi": "10.1000/atlas",
+    "title": "A test atlas"
+  },
+  "dropped": [
+    {
+      "subatlas_paper": "signs",
+      "n_subatlas_labels": 1,
+      "overlap_cells": 30
+    }
+  ]
+}
