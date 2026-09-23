@@ -107,12 +107,9 @@
       "description": "One distilled evidence item (mirror of evidence_summary.schema.json).",
       "properties": {
         "cell_label": {
-          "type": "array",
-          "description": "The atlas cell set(s) this item is evidence about, by CAS+ `cell_label`. A LIST, because one answer can genuinely be about several: where an upstream study's label was split across several atlas cell sets, what that study meant by it is one finding bearing on all of them, and copying the prose per cell set is how copies drift apart. This is the item's identity and the only thing a consumer finds it by. It is NOT inferred from where the file sits: a producer files under whatever it was dispatched on — a paper read takes one paper and answers for many cell types, a cross-paper scan does the reverse — so the directory cannot carry the identity and the record must. The file's name is not this: a file is usually named after the cell type it mostly concerns, for legibility, and an item bearing on three cell sets can only sit in a file named after one of them. The tag is the identity; the name is a label.",
-          "items": {
-            "type": "string"
-          },
-          "minItems": 1
+          "type": "string",
+          "description": "The atlas cell set this item is evidence about, by CAS+ `cell_label`. This is the item's identity and the only thing a consumer finds it by, so it is the atlas's own label and never a name a source paper uses for the same cells — an upstream study's name for them belongs in the prose, not here. It is NOT inferred from where the file sits: a producer files under whatever it was dispatched on — a paper read takes one paper and answers for many cell types, a scan across the literature does the reverse — so the directory cannot carry the identity and the item must. Nor is the file's name: a file is named after its cell type for legibility, and that name is a label while this is the identity. One cell type per item: an answer that bears on two is two answers, because what a source says about one atlas cell set is rarely what it says about another.",
+          "minLength": 1
         },
         "source_paper": {
           "$ref": "#/$defs/SourcePaper"

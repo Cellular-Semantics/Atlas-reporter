@@ -172,7 +172,7 @@ evidence items, one per aspect:
 ```json
 [
   {
-    "cell_label": ["Immune_oLAM"],
+    "cell_label": "Immune_oLAM",
     "aspect": "location",
     "found": true,
     "summary": "…what the paper says, and what it did to establish it…",
@@ -186,9 +186,12 @@ evidence items, one per aspect:
 **`cell_label` is what the item is about, and the only way anything finds it
 again.** It is the atlas's own label for the cell set, exactly as the subject
 block gives it — never a name this paper uses, however much better that name
-reads. It is a list because one answer can genuinely be about several cell
-sets; put the others in it only where the answer is really about them too, not
-because they were mentioned nearby.
+reads.
+
+One cell type per item. You are answering about one cell type at a time, and an
+answer that would bear on a second is a second answer: what a paper says about
+one cell set is rarely quite what it says about another, and the difference is
+usually the interesting part.
 
 The filename is a convenience for anyone listing the directory. It is not the
 identity: getting it wrong costs nothing, getting `cell_label` wrong loses the

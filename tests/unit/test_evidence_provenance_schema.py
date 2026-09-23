@@ -137,7 +137,7 @@ def test_good_fixtures_are_independent_copies() -> None:
 
 def _record(**over: object) -> dict:
     base = {
-        "cell_label": ["Iron-recycling macrophage"],
+        "cell_label": "Iron-recycling macrophage",
         "source_paper": {"doi": "10.1/x", "role": "atlas"},
         "retrieval_method": "corpus_snippet",
         "summary": "s",
@@ -220,22 +220,16 @@ def test_an_item_must_say_which_cell_type_it_is_about(schema: str) -> None:
 
 @pytest.mark.unit
 @pytest.mark.parametrize("schema", BOTH)
-def test_an_empty_cell_label_list_is_rejected(schema: str) -> None:
+def test_an_empty_cell_label_is_rejected(schema: str) -> None:
     """Present but empty attributes the item to nothing, which is worse than absent."""
-    assert _validate(schema, _as_written(schema, _record(cell_label=[])))
+    assert _validate(schema, _as_written(schema, _record(cell_label="")))
 
 
 @pytest.mark.unit
 @pytest.mark.parametrize("schema", BOTH)
-def test_a_bare_string_is_not_a_cell_label(schema: str) -> None:
-    """A list even when there is one, so a consumer never branches on the type."""
-    assert _validate(schema, _as_written(schema, _record(cell_label="Immune_oLAM")))
-
-
-@pytest.mark.unit
-@pytest.mark.parametrize("schema", BOTH)
-def test_one_item_may_be_about_several_cell_types(schema: str) -> None:
-    """An upstream label the atlas split three ways is one finding about three
-    cell sets. Copying its prose per cell set is how copies drift apart."""
+def test_an_item_is_about_one_cell_type(schema: str) -> None:
+    """A paper read answers per atlas cell type. An answer bearing on two cell
+    sets is two answers, since what a source says about one of them is rarely
+    what it says about another — so there is nothing for a list to hold."""
     item = _record(cell_label=["Mesen_Prepuce_Fetal", "Mesen_LabioScrotalSwelling_Fetal"])
-    assert _validate(schema, _as_written(schema, item)) == []
+    assert _validate(schema, _as_written(schema, item))

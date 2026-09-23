@@ -23,9 +23,9 @@ from atlas_chat.services.evidence_store import (
 )
 
 
-def _item(*labels: str, aspect: str = "location", summary: str = "s") -> dict:
+def _item(label: str = "Immune_oLAM", aspect: str = "location", summary: str = "s") -> dict:
     return {
-        "cell_label": list(labels),
+        "cell_label": label,
         "source_paper": {"doi": "10.1/x", "role": "atlas"},
         "retrieval_method": "corpus_snippet",
         "aspect": aspect,
@@ -48,14 +48,7 @@ def traversal(tmp_path: Path) -> Path:
     # A paper read: one paper, several cell types, filed under the paper.
     _write(
         out / "papers" / "lorenzi2025" / "Mesen_Prepuce_Fetal.evidence.json",
-        [
-            _item(
-                "Mesen_Prepuce_Fetal",
-                "Mesen_LabioScrotalSwelling_Fetal",
-                aspect="markers",
-                summary="split three ways",
-            )
-        ],
+        [_item("Mesen_Prepuce_Fetal", aspect="markers", summary="the prepuce cells")],
     )
     _write(
         out / "papers" / "lorenzi2025" / "Immune_oLAM.evidence.json",
@@ -103,24 +96,20 @@ def test_both_filing_orders_answer_the_same_question(traversal: Path) -> None:
 
 
 @pytest.mark.unit
-def test_an_item_about_several_cell_types_is_returned_for_each(traversal: Path) -> None:
-    for label in ("Mesen_Prepuce_Fetal", "Mesen_LabioScrotalSwelling_Fetal"):
-        assert [i["summary"] for i in collect(traversal, label)] == ["split three ways"]
-
-
-@pytest.mark.unit
-def test_a_collected_item_still_names_its_other_cell_types(traversal: Path) -> None:
-    """A finding about a boundary between three cell sets has to be reportable as
-    one, so the item keeps saying what else it is about."""
+def test_an_item_is_about_exactly_one_cell_type(traversal: Path) -> None:
+    """A paper read answers per atlas cell type, so what it says about one is
+    not also filed against another. Where an upstream label was split across
+    several atlas cell sets, each gets its own answer, because what the source
+    says about one of them is rarely what it says about another."""
     (item,) = collect(traversal, "Mesen_Prepuce_Fetal")
-    assert item["cell_label"] == ["Mesen_Prepuce_Fetal", "Mesen_LabioScrotalSwelling_Fetal"]
+    assert item["cell_label"] == "Mesen_Prepuce_Fetal"
 
 
 @pytest.mark.unit
 def test_nothing_else_comes_back(traversal: Path) -> None:
     """The property the per-cell-type directory used to give for free."""
     assert collect(traversal, "Endometrial_ciliated_epithelial") == []
-    assert all("Immune_oLAM" in i["cell_label"] for i in collect(traversal, "Immune_oLAM"))
+    assert all(i["cell_label"] == "Immune_oLAM" for i in collect(traversal, "Immune_oLAM"))
 
 
 @pytest.mark.unit
@@ -130,11 +119,7 @@ def test_collection_is_stable_between_runs(traversal: Path) -> None:
 
 @pytest.mark.unit
 def test_labels_says_what_is_there(traversal: Path) -> None:
-    assert cell_labels(traversal) == {
-        "Immune_oLAM": 3,
-        "Mesen_LabioScrotalSwelling_Fetal": 1,
-        "Mesen_Prepuce_Fetal": 1,
-    }
+    assert cell_labels(traversal) == {"Immune_oLAM": 3, "Mesen_Prepuce_Fetal": 1}
 
 
 # --- backfill ----------------------------------------------------------------
@@ -151,7 +136,7 @@ def test_backfill_takes_the_label_from_the_directory(tmp_path: Path) -> None:
 
     backfill(out)
 
-    assert json.loads(path.read_text())[0]["cell_label"] == ["Immune_uMac_Inf"]
+    assert json.loads(path.read_text())[0]["cell_label"] == "Immune_uMac_Inf"
 
 
 @pytest.mark.unit
@@ -241,6 +226,19 @@ def test_an_evidence_file_holding_something_else_is_an_error(tmp_path: Path) -> 
 def test_a_lone_item_is_read_as_a_list_of_one(tmp_path: Path) -> None:
     """The legacy single-item form the hook has always accepted."""
     path = tmp_path / "location_evidence_summary.json"
-    path.write_text(json.dumps(_item("Immune_oLAM")), encoding="utf-8")
+    path.write_text(json.dumps(_item()), encoding="utf-8")
 
-    assert load_records(path) == [_item("Immune_oLAM")]
+    assert load_records(path) == [_item()]
+
+
+@pytest.mark.unit
+def test_a_cell_label_of_the_wrong_shape_is_named_not_thrown(tmp_path: Path) -> None:
+    """Said plainly, because it is what a producer written against an earlier
+    shape would do, and a traceback does not tell anyone which file to fix."""
+    path = tmp_path / "x.evidence.json"
+    item = _item()
+    item["cell_label"] = ["Immune_oLAM", "Immune_uftLAM"]
+    path.write_text(json.dumps([item]), encoding="utf-8")
+
+    with pytest.raises(EvidenceFileError, match="One cell type per item"):
+        load_records(path)

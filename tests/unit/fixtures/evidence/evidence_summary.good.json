@@ -1,8 +1,6 @@
 [
   {
-    "cell_label": [
-      "Iron-recycling macrophage"
-    ],
+    "cell_label": "Iron-recycling macrophage",
     "source_paper": {
       "corpus_id": "CorpusId:2762329",
       "doi": "10.1038/s41586-024-08002-x",
@@ -18,9 +16,7 @@
     ]
   },
   {
-    "cell_label": [
-      "Iron-recycling macrophage"
-    ],
+    "cell_label": "Iron-recycling macrophage",
     "source_paper": {
       "corpus_id": "CorpusId:252635104",
       "role": "external"

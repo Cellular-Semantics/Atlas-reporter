@@ -1,8 +1,6 @@
 [
   {
-    "cell_label": [
-      "Iron-recycling macrophage"
-    ],
+    "cell_label": "Iron-recycling macrophage",
     "source_title": "A prenatal skin atlas",
     "section": "Results",
     "score": 0.57,
@@ -18,9 +16,7 @@
     "retrieval_method": "corpus_snippet"
   },
   {
-    "cell_label": [
-      "Iron-recycling macrophage"
-    ],
+    "cell_label": "Iron-recycling macrophage",
     "source_title": "Ferroportin and iron export",
     "section": "Results",
     "score": 0.41,

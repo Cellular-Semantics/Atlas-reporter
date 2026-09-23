@@ -161,9 +161,16 @@ tone.
 ### 4a. Everything is labelled by atlas cell type
 
 Stated here because it is the thing most likely to go wrong: a record's identity
-is the **atlas** `cell_label`, taken from the routing question's `serves`, and a
-question serving three atlas cell sets produces records naming all three. The
-study's own label goes in `subatlas_cell_label` and is never the identity.
+is the **atlas** `cell_label`. The question put to a contributing study is what
+it says about *an atlas cell type* — the study's own label is how the passages
+are found, not what the answer is about — so a routing question serving three
+atlas cell sets is answered three times, once per cell set, and each answer is
+specific to it. The study's own label goes in `subatlas_cell_label` and is never
+the identity.
+
+The routing plan is keyed the other way, by subatlas cell label with a `serves`
+list. That is right for a plan, which says which paper to read and what to look
+at; the reader iterates `serves` within one read of the paper.
 
 The reader is reading a paper that uses its own names throughout, for cells the
 atlas groups differently, so the pull toward filing an answer under the name on
@@ -281,9 +288,9 @@ it, and PR 2 cannot be tested without it, so it starts now.
 paper, no retrieval: the atlas preprint is on disk and the reader works, so the
 new pattern can be produced and consumed for real.
 
-1. `cell_label` on `evidence_summary.schema.json` — a **list**, since one answer
-   can genuinely be about several atlas cell sets and duplicating its prose per
-   cell set reintroduces the drift the layout decision removed. With
+1. `cell_label` on `evidence_summary.schema.json` — one cell type per item. The
+   subatlas paper is asked what it says about *an atlas cell type*, so every
+   answer is about one, whether it agrees with the atlas or not. With
    `check_evidence_summary.py` and its fixtures updated in the same commit, and a
    one-off pass filling it on existing files from their directory name.
 2. The reader writes the new pattern: one file per (paper, cell type) under

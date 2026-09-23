@@ -7,17 +7,16 @@ order suits the other, and making either produce the other's shape means copying
 an answer into several places — which then have to be kept identical.
 
 So nothing is copied, and nothing infers what an item is about from where it
-sits. Each item names the atlas cell sets it is evidence about, and everything
+sits. Each item names the atlas cell set it is evidence about, and everything
 that reads evidence back does it here, by asking for a cell type rather than by
 knowing a path. A consumer that never learns the layout is a consumer that does
 not break when the layout changes.
 
 A file is evidence if it is named as evidence — ``*.evidence.json``, or one of
-the legacy names. A file is usually named after the cell type it mostly
-concerns, which is for whoever runs ``ls``: the name is not the identity and is
-never checked against one. It cannot be, since an item about a boundary between
-three cell sets is tagged with all three and its file can be named after only
-one.
+the legacy names. It is named after its cell type, which is for whoever runs
+``ls``: the name is a label and the item's own ``cell_label`` is the identity.
+Nothing checks one against the other, because a mismatch has no consequence —
+everything reads the field.
 
 Reading is a directory walk and a filter. There is no index, deliberately: an
 index is a second thing that has to be kept true, and at a few hundred small
@@ -111,6 +110,12 @@ def load_records(path: Path) -> list[dict[str, Any]]:
     for i, item in enumerate(items):
         if not isinstance(item, dict):
             raise EvidenceFileError(f"{path}[{i}]: not an evidence item")
+        label = item.get("cell_label")
+        if label is not None and not isinstance(label, str):
+            raise EvidenceFileError(
+                f"{path}[{i}]: cell_label is {type(label).__name__}, not a cell type's name. "
+                "One cell type per item; an answer bearing on two is two answers."
+            )
     return items
 
 
@@ -124,15 +129,14 @@ def collect(traversal_dir: Path, cell_label: str) -> list[dict[str, Any]]:
             not be reading.
 
     Returns:
-        The items, in file order. Each one still carries its own
-        ``cell_label``, so an item that also bears on other cell sets says so —
-        which is what a report needs in order to describe a disagreement
-        honestly rather than as a fact about one cell type.
+        The items, in file order — from every producer that has written about
+        this cell type, whether it filed under the paper it read or under the
+        cell type it searched for.
     """
     out: list[dict[str, Any]] = []
     for path in record_files(traversal_dir):
         items = load_records(path)
-        out.extend(i for i in items if cell_label in (i.get("cell_label") or []))
+        out.extend(i for i in items if i.get("cell_label") == cell_label)
     return out
 
 
@@ -150,7 +154,8 @@ def cell_labels(traversal_dir: Path) -> dict[str, int]:
     counts: dict[str, int] = {}
     for path in record_files(traversal_dir):
         for item in load_records(path):
-            for label in item.get("cell_label") or []:
+            label = item.get("cell_label")
+            if label:
                 counts[label] = counts.get(label, 0) + 1
     return dict(sorted(counts.items()))
 
@@ -186,7 +191,7 @@ def backfill(traversal_dir: Path, *, dry_run: bool = False) -> list[str]:
             )
             continue
         for item in missing:
-            item["cell_label"] = [label]
+            item["cell_label"] = label
         if not dry_run:
             path.write_text(
                 json.dumps(items, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
