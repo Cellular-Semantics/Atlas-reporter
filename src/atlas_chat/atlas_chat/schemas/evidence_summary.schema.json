@@ -6,7 +6,7 @@
   "properties": {
     "cell_label": {
       "type": "string",
-      "description": "The atlas cell set this item is evidence about, by CAS+ `cell_label`. This is the item's identity and the only thing a consumer finds it by, so it is the atlas's own label and never a name a source paper uses for the same cells — an upstream study's name for them belongs in the prose, not here. It is NOT inferred from where the file sits: a producer files under whatever it was dispatched on — a paper read takes one paper and answers for many cell types, a scan across the literature does the reverse — so the directory cannot carry the identity and the item must. Nor is the file's name: a file is named after its cell type for legibility, and that name is a label while this is the identity. One cell type per item: an answer that bears on two is two answers, because what a source says about one atlas cell set is rarely what it says about another.",
+      "description": "The atlas cell set this item is evidence about, by CAS+ `cell_label` — the atlas's own label, never a name a source paper uses for the same cells. One cell type per item: an answer bearing on two is two answers. This field is the identity everything finds the item by; neither the file's name nor the directory it sits in is.",
       "minLength": 1
     },
     "source_paper": {
