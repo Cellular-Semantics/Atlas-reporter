@@ -28,6 +28,7 @@ JOB = {
 
 def _item(*quotes: str, found: bool = True) -> dict:
     return {
+        "cell_label": ["Mesen_OvarianFibs_Outcor"],
         "source_paper": {"doi": "10.1/x", "role": "atlas"},
         "retrieval_method": "corpus_snippet",
         "aspect": "location",

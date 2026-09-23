@@ -1,20 +1,37 @@
 [
   {
+    "cell_label": [
+      "Iron-recycling macrophage"
+    ],
     "source_title": "A prenatal skin atlas",
     "section": "Results",
     "score": 0.57,
     "summary": "Iron-recycling macrophages are one of four macrophage subsets in prenatal skin.",
-    "quotes": ["Iron-recycling macrophages express SLC40A1"],
-    "source_paper": { "corpus_id": "CorpusId:2762329", "doi": "10.1038/s41586-024-08002-x", "role": "atlas" },
+    "quotes": [
+      "Iron-recycling macrophages express SLC40A1"
+    ],
+    "source_paper": {
+      "corpus_id": "CorpusId:2762329",
+      "doi": "10.1038/s41586-024-08002-x",
+      "role": "atlas"
+    },
     "retrieval_method": "corpus_snippet"
   },
   {
+    "cell_label": [
+      "Iron-recycling macrophage"
+    ],
     "source_title": "Ferroportin and iron export",
     "section": "Results",
     "score": 0.41,
     "summary": "Iron is exported from macrophages via ferroportin activity.",
-    "quotes": ["export via ferroportin activity"],
-    "source_paper": { "corpus_id": "CorpusId:252635104", "role": "external" },
+    "quotes": [
+      "export via ferroportin activity"
+    ],
+    "source_paper": {
+      "corpus_id": "CorpusId:252635104",
+      "role": "external"
+    },
     "retrieval_method": "citation_traversal",
     "reached_from": {
       "corpus_id": "CorpusId:231699447",

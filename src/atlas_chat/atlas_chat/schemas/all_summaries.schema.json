@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "AllSummaries",
-  "description": "Citation-traversal evidence written to all_summaries.json: an array of evidence_summary items. The item shape is the canonical EvidenceSummary (evidence_summary.schema.json) \u2014 inlined here because the standalone PostToolUse hook validators cannot resolve cross-file $ref. Keep the two in sync; the schema regression test asserts they agree.",
+  "description": "Citation-traversal evidence written to all_summaries.json: an array of evidence_summary items. The item shape is the canonical EvidenceSummary (evidence_summary.schema.json) — inlined here because the standalone PostToolUse hook validators cannot resolve cross-file $ref. Keep the two in sync; the schema regression test asserts they agree.",
   "type": "array",
   "items": {
     "$ref": "#/$defs/EvidenceSummary"
@@ -105,6 +105,14 @@
       "type": "object",
       "description": "One distilled evidence item (mirror of evidence_summary.schema.json).",
       "properties": {
+        "cell_label": {
+          "type": "array",
+          "description": "The atlas cell set(s) this item is evidence about, by CAS+ `cell_label`. A LIST, because one answer can genuinely be about several: where an upstream study's label was split across several atlas cell sets, what that study meant by it is one finding bearing on all of them, and copying the prose per cell set is how copies drift apart. This is the item's identity and the only thing a consumer finds it by. It is NOT inferred from where the file sits: a producer files under whatever it was dispatched on — a paper read takes one paper and answers for many cell types, a cross-paper scan does the reverse — so the directory cannot carry the identity and the record must.",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
         "source_paper": {
           "$ref": "#/$defs/SourcePaper"
         },
@@ -132,7 +140,7 @@
         },
         "quotes": {
           "type": "array",
-          "description": "Verbatim quotes from the source, each one continuous run of text \u2014 never spliced. They are what every assertion in `summary` rests on, and are checked by searching the source text rather than trusted.",
+          "description": "Verbatim quotes from the source, each one continuous run of text — never spliced. They are what every assertion in `summary` rests on, and are checked by searching the source text rather than trusted.",
           "items": {
             "type": "string"
           }
@@ -154,6 +162,7 @@
         }
       },
       "required": [
+        "cell_label",
         "source_paper",
         "retrieval_method",
         "summary",
