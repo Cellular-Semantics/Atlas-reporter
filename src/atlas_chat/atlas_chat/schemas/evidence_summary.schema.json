@@ -80,8 +80,9 @@
     },
     "retrieval_method": {
       "type": "string",
-      "description": "The MECHANISM by which this item was obtained. Orthogonal to source_paper.role. 'corpus_snippet' = snippet_search scoped to a corpus paper; 'supplement' = extracted from a supplementary file; 'citation_traversal' = reached by following a citation from another paper; 'free_search' = unscoped snippet/literature search.",
+      "description": "The MECHANISM by which this item was obtained. Orthogonal to source_paper.role. 'corpus_snippet' = snippet_search scoped to a corpus paper; 'supplement' = extracted from a supplementary file; 'citation_traversal' = reached by following a citation from another paper; 'free_search' = unscoped snippet/literature search. 'whole_text' = the paper was read whole, from an assembled job file, rather than retrieved in pieces.",
       "enum": [
+        "whole_text",
         "corpus_snippet",
         "supplement",
         "citation_traversal",
