@@ -466,3 +466,62 @@ def test_cli_refuses_an_unresolvable_request(tmp_path) -> None:
     cas_path = tmp_path / "cas.json"
     cas_path.write_text(json.dumps(_cas()), encoding="utf-8")
     assert main(["--cas", str(cas_path), "--label", "Nothing"]) == 2
+
+
+# ------------------------------------------------------------------
+# naming a cell set on a document that has no accessions
+# ------------------------------------------------------------------
+
+
+def _accessionless() -> dict:
+    """Nothing mints accessions, so a document assembled from labels has none."""
+    cas = _cas()
+    cas["annotations"][1]["cell_label"] = "Fibroblasts"  # now used at both levels
+    for annotation in cas["annotations"]:
+        annotation.pop("cell_set_accession", None)
+        annotation.pop("parent_cell_set_accession", None)
+    return cas
+
+
+def test_a_unique_label_needs_no_accession() -> None:
+    got = resolve_requested(_accessionless(), ["Fib_B"])
+    assert [a["cell_label"] for a in got] == ["Fib_B"]
+
+
+def test_an_ambiguous_label_is_refused_with_advice_that_can_be_taken() -> None:
+    with pytest.raises(RoutingError) as exc:
+        resolve_requested(_accessionless(), ["Fibroblasts"])
+    message = str(exc.value)
+    assert "qualify it with its labelset" in message
+    assert "broad:Fibroblasts" in message and "fine:Fibroblasts" in message
+    assert "accession" not in message
+
+
+def test_a_labelset_qualified_label_resolves_one_of_them() -> None:
+    got = resolve_requested(_accessionless(), ["fine:Fibroblasts"])
+    assert [a["labelset"] for a in got] == ["fine"]
+
+
+def test_the_advice_names_accessions_where_the_document_has_them() -> None:
+    cas = _cas()
+    cas["annotations"][1]["cell_label"] = "Fibroblasts"
+    with pytest.raises(RoutingError, match="ask by accession"):
+        resolve_requested(cas, ["Fibroblasts"])
+
+
+def test_a_label_containing_a_colon_resolves_as_itself() -> None:
+    cas = _accessionless()
+    cas["annotations"][3]["cell_label"] = "CD4:CD8 doublet"
+    got = resolve_requested(cas, ["CD4:CD8 doublet"])
+    assert [a["cell_label"] for a in got] == ["CD4:CD8 doublet"]
+
+
+def test_a_table_builds_without_accessions_anywhere() -> None:
+    table = build_table(_accessionless(), ["Fib_B", "Fib_C"], min_overlap_cells=1)
+    jsonschema.Draft202012Validator(load_schema("subatlas_routing_table.schema.json")).validate(
+        table
+    )
+    assert all("cell_set_accession" not in r for r in table["requested"])
+    assert all(
+        "cell_set_accession" not in c for q in table["questions"] for c in q["atlas_cell_sets"]
+    )

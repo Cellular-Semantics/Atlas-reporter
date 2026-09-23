@@ -31,9 +31,16 @@ uv run python -m atlas_chat.cli_route \
   --out projects/{project}/routing/{run}/routing_table.json
 ```
 
-Ask by accession where you have them. A label the atlas uses at two levels is
-refused rather than resolved, and that refusal is correct — it means going back
-for the accession, not picking one.
+A cell set can be named three ways, and which are available depends on the
+document. An accession is unambiguous, but nothing mints one, so a CAS+ built
+from a bare list of labels has none — use them where the document has them. A
+bare `--label` is always available and usually enough. Where the atlas uses a
+label at more than one level, qualify it with its labelset:
+`--label "L2:Pericytes"`.
+
+An ambiguous bare label is refused rather than resolved, and that refusal is
+correct — it means naming which one you meant, not picking either. The error
+says which of the two forms this document supports.
 
 ## How to read the table
 

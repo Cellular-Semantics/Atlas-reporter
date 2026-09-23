@@ -151,19 +151,30 @@ def resolve_requested(
 ) -> list[dict[str, Any]]:
     """The annotations reports were asked for, in the order asked for.
 
+    A cell set can be named three ways, because not every CAS+ document
+    supports all three. An accession is unambiguous but optional — nothing
+    mints one, so a document assembled from a bare list of labels has none. A
+    bare label is always available and usually unique. Where it is not, a
+    label qualified by its labelset — ``L2:Pericytes`` — separates the cases,
+    and ``labelset`` is required by the schema so this is always possible.
+
+    The qualified form is recognised by its prefix matching a labelset the
+    document declares, so a label that happens to contain a colon still
+    resolves as itself.
+
     Args:
         cas_doc: the CAS+ document.
-        cell_labels: labels to resolve. An atlas may use the same label at two
-            levels, and picking either would be wrong, so an ambiguous label is
-            refused rather than resolved.
-        accessions: accessions to resolve, which are never ambiguous.
+        cell_labels: labels to resolve, bare or qualified. An ambiguous bare
+            label is refused rather than resolved, because picking either of
+            two cell sets would be wrong and silently so.
+        accessions: accessions to resolve, where the document has them.
 
     Returns:
         The annotations. All of them where neither argument is given.
 
     Raises:
-        RoutingError: a label or accession is not in the document, or a label
-            names more than one cell set.
+        RoutingError: a label or accession is not in the document, or a bare
+            label names more than one cell set.
     """
     annotations = cas_doc.get("annotations") or []
     if not cell_labels and not accessions:
@@ -171,8 +182,14 @@ def resolve_requested(
 
     by_accession = {a["cell_set_accession"]: a for a in annotations if a.get("cell_set_accession")}
     by_label: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    by_qualified: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     for annotation in annotations:
         by_label[annotation["cell_label"]].append(annotation)
+        by_qualified[(str(annotation.get("labelset", "")), annotation["cell_label"])].append(
+            annotation
+        )
+    labelsets = {str(ls.get("name")) for ls in cas_doc.get("labelsets") or []}
+    labelsets |= {str(a.get("labelset")) for a in annotations if a.get("labelset")}
 
     out: list[dict[str, Any]] = []
     problems: list[str] = []
@@ -181,20 +198,39 @@ def resolve_requested(
             out.append(by_accession[accession])
         else:
             problems.append(f"no cell set with accession {accession}")
-    for label in cell_labels or []:
-        matches = by_label.get(label) or []
+    for given in cell_labels or []:
+        labelset, _, bare = given.partition(":")
+        if bare and labelset in labelsets:
+            matches = by_qualified.get((labelset, bare)) or []
+            shown = f"{bare!r} in {labelset}"
+        else:
+            matches = by_label.get(given) or []
+            shown = repr(given)
         if not matches:
-            problems.append(f"no cell set labelled {label!r}")
+            problems.append(f"no cell set labelled {shown}")
         elif len(matches) > 1:
-            where = ", ".join(f"{m.get('labelset')} {m.get('cell_set_accession')}" for m in matches)
-            problems.append(
-                f"{label!r} names {len(matches)} cell sets ({where}) — ask by accession"
-            )
+            problems.append(f"{shown} names {len(matches)} cell sets — {_disambiguate(matches)}")
         else:
             out.append(matches[0])
     if problems:
         raise RoutingError("; ".join(problems))
     return out
+
+
+def _disambiguate(matches: list[dict[str, Any]]) -> str:
+    """How to ask for one of these in particular, with what the document offers.
+
+    Naming a way that is not available — an accession on a document that has
+    none — is worse than saying nothing, since it sends someone looking for
+    something that was never there.
+    """
+    if all(m.get("cell_set_accession") for m in matches):
+        return "ask by accession: " + ", ".join(
+            f"{m['cell_set_accession']} ({m.get('labelset')})" for m in matches
+        )
+    return "qualify it with its labelset: " + ", ".join(
+        f"{m.get('labelset')}:{m['cell_label']}" for m in matches
+    )
 
 
 # ------------------------------------------------------------------
@@ -521,10 +557,17 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--cas", required=True, help="the CAS+ document")
     parser.add_argument(
-        "--label", action="append", help="repeatable; all cell sets when nothing is named"
+        "--label",
+        action="append",
+        help=(
+            "repeatable; a cell label, or labelset:cell_label where the atlas uses the "
+            "label at more than one level. All cell sets when nothing is named"
+        ),
     )
     parser.add_argument(
-        "--accession", action="append", help="repeatable; for a label used at two levels"
+        "--accession",
+        action="append",
+        help="repeatable; where the document has accessions, the unambiguous way to ask",
     )
     parser.add_argument("--out", help="write JSON here instead of stdout")
     parser.add_argument(
