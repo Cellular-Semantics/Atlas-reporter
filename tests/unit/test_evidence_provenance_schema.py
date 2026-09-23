@@ -137,6 +137,7 @@ def test_good_fixtures_are_independent_copies() -> None:
 
 def _record(**over: object) -> dict:
     base = {
+        "cell_label": "Iron-recycling macrophage",
         "source_paper": {"doi": "10.1/x", "role": "atlas"},
         "retrieval_method": "corpus_snippet",
         "summary": "s",
@@ -191,3 +192,44 @@ def test_the_two_copies_of_the_shape_agree() -> None:
     assert sorted(standalone["required"]) == sorted(mirror["required"])
     assert standalone.get("if") == mirror.get("if")
     assert standalone.get("then") == mirror.get("then")
+
+
+# --- the cell type an item is about, carried on the item itself --------------
+
+BOTH = ["all_summaries.schema.json", "evidence_summary.schema.json"]
+
+
+def _as_written(schema: str, item: dict) -> object:
+    """An item as it appears in that schema's file: an array, or on its own."""
+    return [item] if schema.startswith("all") else item
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize("schema", BOTH)
+def test_an_item_must_say_which_cell_type_it_is_about(schema: str) -> None:
+    """The directory no longer carries the identity, so the item has to.
+
+    A producer files under whatever it was dispatched on — a paper read answers
+    for many cell types from one paper — so an item without `cell_label` cannot
+    be attributed at all.
+    """
+    item = _record()
+    del item["cell_label"]
+    assert _validate(schema, _as_written(schema, item))
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize("schema", BOTH)
+def test_an_empty_cell_label_is_rejected(schema: str) -> None:
+    """Present but empty attributes the item to nothing, which is worse than absent."""
+    assert _validate(schema, _as_written(schema, _record(cell_label="")))
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize("schema", BOTH)
+def test_an_item_is_about_one_cell_type(schema: str) -> None:
+    """A paper read answers per atlas cell type. An answer bearing on two cell
+    sets is two answers, since what a source says about one of them is rarely
+    what it says about another — so there is nothing for a list to hold."""
+    item = _record(cell_label=["Mesen_Prepuce_Fetal", "Mesen_LabioScrotalSwelling_Fetal"])
+    assert _validate(schema, _as_written(schema, item))

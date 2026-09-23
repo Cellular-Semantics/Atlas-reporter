@@ -28,6 +28,7 @@ JOB = {
 
 def _item(*quotes: str, found: bool = True) -> dict:
     return {
+        "cell_label": "Mesen_OvarianFibs_Outcor",
         "source_paper": {"doi": "10.1/x", "role": "atlas"},
         "retrieval_method": "corpus_snippet",
         "aspect": "location",
@@ -37,8 +38,10 @@ def _item(*quotes: str, found: bool = True) -> dict:
     }
 
 
-def _run(out_dir: Path, payload: object) -> subprocess.CompletedProcess:
-    target = out_dir / "all_summaries.json"
+def _run(
+    out_dir: Path, payload: object, name: str = "all_summaries.json"
+) -> subprocess.CompletedProcess:
+    target = out_dir / name
     hook_input = json.dumps(
         {"tool_input": {"file_path": str(target), "content": json.dumps(payload)}}
     )
@@ -113,3 +116,37 @@ def test_a_job_file_shared_by_several_cell_types_is_found(tmp_path):
     out.mkdir()
     assert _run(out, [_item("sits in the outer cortex")]).returncode == 0
     assert _run(out, [_item("never written anywhere")]).returncode == 2
+
+
+def test_an_evidence_file_is_recognised_by_its_new_name(tmp_path):
+    """`*.evidence.json` is what a producer writes now. The hook and the
+    collector share one rule for which files that is."""
+    out = _with_job(tmp_path)
+    result = _run(out, [_item("nothing like this appears")], name="Immune_oLAM.evidence.json")
+    assert result.returncode == 2
+
+
+def test_a_job_file_in_the_same_directory_is_found(tmp_path):
+    """A paper read files its evidence next to the paper it quoted, so the job
+    file is neither in a `papers/` subdirectory nor one level up."""
+    out = tmp_path / "papers" / "celltype_Lorenzi2025"
+    out.mkdir(parents=True)
+    (out / "paper.json").write_text(json.dumps(JOB))
+    result = _run(out, [_item("sits in the outer cortex")], name="Immune_oLAM.evidence.json")
+    assert result.returncode == 0
+
+
+def test_evidence_beside_evidence_is_not_mistaken_for_a_source(tmp_path):
+    """A quote must be found in a paper, not in another item's prose. Searching
+    the output's own directory means the files beside it are candidates, so
+    evidence files have to be excluded from the sources."""
+    out = tmp_path / "papers" / "celltype_Lorenzi2025"
+    out.mkdir(parents=True)
+    (out / "paper.json").write_text(json.dumps(JOB))
+    (out / "Immune_uftLAM.evidence.json").write_text(
+        json.dumps([_item("The cells glowed faintly in the dark.")])
+    )
+    result = _run(
+        out, [_item("The cells glowed faintly in the dark.")], name="Immune_oLAM.evidence.json"
+    )
+    assert result.returncode == 2

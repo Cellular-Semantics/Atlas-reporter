@@ -59,14 +59,16 @@ something that looks close enough.
 ```bash
 uv run --extra text-access --extra supplements python -m atlas_chat.cli_paper_ingest \
   --text <paper text> --doi <doi> --store <supplement store> \
-  --out <traversal output>/papers/<paper>.json
+  --out <traversal output>/papers/<paper>/paper.json
 ```
 
 This assembles the paper's narrative, its figure legends, its cited sentences
 and the supplementary prose already judged to bear on describing cell types.
-**Write it under `papers/` above the per-cell-type directories**, not inside
-one: it is one paper serving every cell type in this batch, and that is where
-the quote check looks for it.
+
+`<paper>` is a short name for this paper — `atlas`, or the registry label of a
+contributing study. **Everything from this read goes in that one directory**:
+the paper itself and the evidence you write from it. That is where the quote
+check looks for the text your quotes have to be found in.
 
 `truncated: true` means you have a ranked slice rather than the paper, and every
 gap it lists is something you will not be able to find however hard you look —
@@ -163,21 +165,37 @@ is not failing; guessing is.
 
 ## What you write
 
-One file per cell type, at the output path you were given for it, conforming to
-`all_summaries.schema.json` — an array of evidence items, one per aspect:
+One file per cell type, beside the paper you read it from, at
+`<traversal output>/papers/<paper>/<cell type>.evidence.json` — an array of
+evidence items, one per aspect:
 
 ```json
 [
   {
+    "cell_label": "Immune_oLAM",
     "aspect": "location",
     "found": true,
     "summary": "…what the paper says, and what it did to establish it…",
     "quotes": ["…the claim, verbatim…", "…its basis, verbatim…"],
     "source_paper": {"doi": "…", "role": "atlas"},
-    "retrieval_method": "corpus_snippet"
+    "retrieval_method": "whole_text"
   }
 ]
 ```
+
+**`cell_label` is what the item is about, and the only way anything finds it
+again.** It is the atlas's own label for the cell set, exactly as the subject
+block gives it — never a name this paper uses, however much better that name
+reads.
+
+One cell type per item. You are answering about one cell type at a time, and an
+answer that would bear on a second is a second answer: what a paper says about
+one cell set is rarely quite what it says about another, and the difference is
+usually the interesting part.
+
+The filename is a convenience for anyone listing the directory. It is not the
+identity: getting it wrong costs nothing, getting `cell_label` wrong loses the
+item.
 
 `summary` is yours to write. `quotes` is not: it is the paper's words, and every
 assertion in `summary` must rest on one of them. An item with `found: true` and

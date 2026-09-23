@@ -4,6 +4,11 @@
   "description": "The distilled evidence item the report synthesizer reads (one element of all_summaries.json). Produced by the snippet-summarizer from an annotated_snippet. Traversal machinery (refMentions / sentences) does NOT leak here; provenance (source_paper / retrieval_method / reached_from) does.",
   "type": "object",
   "properties": {
+    "cell_label": {
+      "type": "string",
+      "description": "The atlas cell set this item is evidence about, by CAS+ `cell_label` — the atlas's own label, never a name a source paper uses for the same cells. One cell type per item: an answer bearing on two is two answers. This field is the identity everything finds the item by; neither the file's name nor the directory it sits in is.",
+      "minLength": 1
+    },
     "source_paper": {
       "$ref": "#/$defs/SourcePaper"
     },
@@ -23,7 +28,7 @@
     },
     "score": {
       "type": "number",
-      "description": "ASTA retrieval relevance score for the source snippet (carried through unchanged \u2014 not an LLM re-score)."
+      "description": "ASTA retrieval relevance score for the source snippet (carried through unchanged — not an LLM re-score)."
     },
     "summary": {
       "type": "string",
@@ -31,7 +36,7 @@
     },
     "quotes": {
       "type": "array",
-      "description": "Verbatim quotes from the source, each one continuous run of text \u2014 never spliced. They are what every assertion in `summary` rests on, and are checked by searching the source text rather than trusted.",
+      "description": "Verbatim quotes from the source, each one continuous run of text — never spliced. They are what every assertion in `summary` rests on, and are checked by searching the source text rather than trusted.",
       "items": {
         "type": "string"
       }
@@ -53,6 +58,7 @@
     }
   },
   "required": [
+    "cell_label",
     "source_paper",
     "retrieval_method",
     "summary",
@@ -71,8 +77,9 @@
     },
     "retrieval_method": {
       "type": "string",
-      "description": "The MECHANISM by which this item was obtained. Orthogonal to source_paper.role. 'corpus_snippet' = snippet_search scoped to a corpus paper; 'supplement' = extracted from a supplementary file; 'citation_traversal' = reached by following a citation from another paper; 'free_search' = unscoped snippet/literature search.",
+      "description": "The MECHANISM by which this item was obtained. Orthogonal to source_paper.role. 'corpus_snippet' = snippet_search scoped to a corpus paper; 'supplement' = extracted from a supplementary file; 'citation_traversal' = reached by following a citation from another paper; 'free_search' = unscoped snippet/literature search. 'whole_text' = the paper was read whole, from an assembled job file, rather than retrieved in pieces.",
       "enum": [
+        "whole_text",
         "corpus_snippet",
         "supplement",
         "citation_traversal",
