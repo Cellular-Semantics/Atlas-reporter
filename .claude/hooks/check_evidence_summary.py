@@ -30,8 +30,14 @@ SCHEMA_PATH = Path("src/atlas_chat/atlas_chat/schemas/evidence_summary.schema.js
 
 
 def _targets(file_path: str) -> bool:
-    name = Path(file_path).name
-    return name == "all_summaries.json" or name.endswith("evidence_summary.json")
+    """Whether this write is an evidence file.
+
+    The rule lives in the service, so the validator and the collector cannot
+    disagree about which files it applies to.
+    """
+    from atlas_chat.services.evidence_store import is_evidence_file
+
+    return is_evidence_file(file_path)
 
 
 def _errors(data: object, schema: dict) -> list[str]:
@@ -53,15 +59,17 @@ def _errors(data: object, schema: dict) -> list[str]:
 def _quote_errors(data: object, file_path: Path) -> list[str]:
     """Look for every quote in the job files beside the output, if there are any."""
     try:
+        from atlas_chat.services.evidence_store import is_evidence_file
         from atlas_chat.validation.quote_search import check_items, load_sources
     except ImportError:
         return []
 
-    # Beside the output, and one level up: a read covering several cell types
-    # produces one job file and one output directory per cell type, so the
-    # shared paper sits above them rather than being copied into each.
-    searched = [file_path.parent / "papers", file_path.parent.parent / "papers"]
-    job_paths = sorted({p for d in searched for p in d.glob("*.json")})
+    # Three places, because two filing orders are in use. A read files its
+    # evidence next to the paper it quoted, so the job file is in the same
+    # directory. A scan files under the cell type, and the paper it quoted sits
+    # in a `papers/` directory beside or above that.
+    searched = [file_path.parent, file_path.parent / "papers", file_path.parent.parent / "papers"]
+    job_paths = sorted({p for d in searched for p in d.glob("*.json") if not is_evidence_file(p)})
     if not job_paths:
         print(
             "no job files under " + " or ".join(str(d) for d in searched) + " — quotes not checked",
@@ -86,7 +94,12 @@ def main() -> int:
 
     tool_input = hook_input.get("tool_input", {})
     file_path = tool_input.get("file_path", "")
-    if not file_path or not _targets(file_path):
+    try:
+        targeted = bool(file_path) and _targets(file_path)
+    except ImportError:
+        print("atlas_chat not importable — skipping evidence_summary check", file=sys.stderr)
+        return 0
+    if not targeted:
         return 0
 
     content = tool_input.get("content", "")

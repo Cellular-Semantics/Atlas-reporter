@@ -12,6 +12,13 @@ that reads evidence back does it here, by asking for a cell type rather than by
 knowing a path. A consumer that never learns the layout is a consumer that does
 not break when the layout changes.
 
+A file is evidence if it is named as evidence — ``*.evidence.json``, or one of
+the legacy names. A file is usually named after the cell type it mostly
+concerns, which is for whoever runs ``ls``: the name is not the identity and is
+never checked against one. It cannot be, since an item about a boundary between
+three cell sets is tagged with all three and its file can be named after only
+one.
+
 Reading is a directory walk and a filter. There is no index, deliberately: an
 index is a second thing that has to be kept true, and at a few hundred small
 files the walk is not what anyone will be waiting for.
@@ -31,34 +38,47 @@ from collections.abc import Iterator
 from pathlib import Path
 from typing import Any
 
-#: Fields every evidence item carries. Used to tell an evidence file from the
-#: other JSON in a traversal directory without depending on filenames — job
-#: files, subject blocks and selections all live there too, and a producer is
-#: free to name its output what it likes.
-_RECORD_FIELDS = ("source_paper", "summary", "quotes")
+#: What a new evidence file is called. Anything ending this way is evidence,
+#: wherever it sits and whatever wrote it.
+EVIDENCE_SUFFIX = ".evidence.json"
+
+#: Names from before the suffix existed, still written and still read. The
+#: single-item form is what a producer writing one answer at a time used.
+LEGACY_NAMES = ("all_summaries.json",)
+LEGACY_SUFFIX = "evidence_summary.json"
 
 
-def looks_like_record(value: Any) -> bool:
-    """Whether this object is an evidence item.
+class EvidenceFileError(RuntimeError):
+    """A file named as evidence that cannot be read as evidence.
+
+    Raised rather than skipped. A file that claims to be evidence and is not
+    readable is a producer fault someone has to see: quietly passing over it
+    returns a short collection, and a consumer cannot tell a cell type with
+    little evidence from one whose evidence failed to load.
+    """
+
+
+def is_evidence_file(path: Path | str) -> bool:
+    """Whether this path names an evidence file.
+
+    By name, not by content. The alternative — opening every JSON file in the
+    tree and deciding from its shape — has to parse assembled papers to reject
+    them, silently drops a file holding one malformed item, and gives a second
+    definition of "evidence file" that can drift from this one. The hook that
+    validates these files calls this, so there is only ever one answer.
 
     Args:
-        value: anything parsed out of a JSON file.
+        path: any path; it need not exist.
 
     Returns:
-        True if it carries the fields every evidence item has. Duck-typing
-        rather than schema validation: this decides whether a file is worth
-        looking at, and a malformed item should be reported by the validator
-        that owns that judgement, not skipped silently here.
+        True for ``*.evidence.json`` and the legacy names.
     """
-    return isinstance(value, dict) and all(f in value for f in _RECORD_FIELDS)
+    name = Path(path).name
+    return name.endswith(EVIDENCE_SUFFIX) or name in LEGACY_NAMES or name.endswith(LEGACY_SUFFIX)
 
 
 def record_files(traversal_dir: Path) -> Iterator[Path]:
-    """Every file under this directory that holds evidence items.
-
-    A traversal directory also holds assembled papers, subject blocks and cell
-    type selections. Those are JSON objects; an evidence file is an array, so
-    the top-level type rules most of them out before anything is inspected.
+    """Every evidence file under this directory.
 
     Args:
         traversal_dir: the project's ``traversal_output``.
@@ -66,13 +86,32 @@ def record_files(traversal_dir: Path) -> Iterator[Path]:
     Yields:
         Paths, in sorted order, so a collection is stable between runs.
     """
-    for path in sorted(traversal_dir.rglob("*.json")):
-        try:
-            data = json.loads(path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
-            continue
-        if isinstance(data, list) and data and all(looks_like_record(i) for i in data):
-            yield path
+    yield from sorted(p for p in traversal_dir.rglob("*.json") if is_evidence_file(p))
+
+
+def load_records(path: Path) -> list[dict[str, Any]]:
+    """The evidence items in one file.
+
+    Args:
+        path: an evidence file.
+
+    Returns:
+        Its items. A single-item file is returned as a list of one.
+
+    Raises:
+        EvidenceFileError: the file does not parse, or holds something that is
+            not evidence.
+    """
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise EvidenceFileError(f"{path}: not readable as JSON ({exc})") from exc
+
+    items = data if isinstance(data, list) else [data]
+    for i, item in enumerate(items):
+        if not isinstance(item, dict):
+            raise EvidenceFileError(f"{path}[{i}]: not an evidence item")
+    return items
 
 
 def collect(traversal_dir: Path, cell_label: str) -> list[dict[str, Any]]:
@@ -92,7 +131,7 @@ def collect(traversal_dir: Path, cell_label: str) -> list[dict[str, Any]]:
     """
     out: list[dict[str, Any]] = []
     for path in record_files(traversal_dir):
-        items = json.loads(path.read_text(encoding="utf-8"))
+        items = load_records(path)
         out.extend(i for i in items if cell_label in (i.get("cell_label") or []))
     return out
 
@@ -110,7 +149,7 @@ def cell_labels(traversal_dir: Path) -> dict[str, int]:
     """
     counts: dict[str, int] = {}
     for path in record_files(traversal_dir):
-        for item in json.loads(path.read_text(encoding="utf-8")):
+        for item in load_records(path):
             for label in item.get("cell_label") or []:
                 counts[label] = counts.get(label, 0) + 1
     return dict(sorted(counts.items()))
@@ -135,7 +174,7 @@ def backfill(traversal_dir: Path, *, dry_run: bool = False) -> list[str]:
     """
     report: list[str] = []
     for path in record_files(traversal_dir):
-        items = json.loads(path.read_text(encoding="utf-8"))
+        items = load_records(path)
         missing = [i for i in items if not i.get("cell_label")]
         if not missing:
             continue

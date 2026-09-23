@@ -13,10 +13,12 @@ from pathlib import Path
 
 import pytest
 from atlas_chat.services.evidence_store import (
+    EvidenceFileError,
     backfill,
     cell_labels,
     collect,
-    looks_like_record,
+    is_evidence_file,
+    load_records,
     record_files,
 )
 
@@ -45,7 +47,7 @@ def traversal(tmp_path: Path) -> Path:
     out = tmp_path / "traversal_output"
     # A paper read: one paper, several cell types, filed under the paper.
     _write(
-        out / "papers" / "lorenzi2025" / "Mesen_Prepuce_Fetal.json",
+        out / "papers" / "lorenzi2025" / "Mesen_Prepuce_Fetal.evidence.json",
         [
             _item(
                 "Mesen_Prepuce_Fetal",
@@ -56,7 +58,7 @@ def traversal(tmp_path: Path) -> Path:
         ],
     )
     _write(
-        out / "papers" / "lorenzi2025" / "Immune_oLAM.json",
+        out / "papers" / "lorenzi2025" / "Immune_oLAM.evidence.json",
         [_item("Immune_oLAM", aspect="function")],
     )
     # A cell-type scan: one cell type, several papers, filed under the cell type.
@@ -64,23 +66,32 @@ def traversal(tmp_path: Path) -> Path:
         out / "Immune_oLAM" / "all_summaries.json",
         [_item("Immune_oLAM", aspect="naming"), _item("Immune_oLAM", aspect="location")],
     )
-    # Not evidence: an assembled paper, sitting where evidence also sits.
-    (out / "papers" / "lorenzi2025.json").write_text(
+    # Not evidence, and sitting right where evidence sits: the assembled paper
+    # the read quoted from, and a subject block, which is also a list of dicts.
+    (out / "papers" / "lorenzi2025" / "paper.json").write_text(
         json.dumps({"narrative": {"text": "..."}, "legends": []}), encoding="utf-8"
+    )
+    (out / "subjects.json").write_text(
+        json.dumps([{"cell_label": "Immune_oLAM", "cell_fullname": "ovary LAM"}]),
+        encoding="utf-8",
     )
     return out
 
 
 @pytest.mark.unit
-def test_an_assembled_paper_is_not_evidence(traversal: Path) -> None:
-    """Job files, subject blocks and selections share the directory with evidence.
+def test_only_files_named_as_evidence_are_evidence(traversal: Path) -> None:
+    """Job files, subject blocks and selections share the tree with evidence.
 
-    Telling them apart by shape rather than by filename is what lets a producer
-    name its output whatever suits it.
+    A subject block is a list of dicts too, so shape does not separate them —
+    and deciding by shape means opening every assembled paper to reject it.
     """
     found = {p.name for p in record_files(traversal)}
     assert "lorenzi2025.json" not in found
-    assert found == {"Mesen_Prepuce_Fetal.json", "Immune_oLAM.json", "all_summaries.json"}
+    assert found == {
+        "Mesen_Prepuce_Fetal.evidence.json",
+        "Immune_oLAM.evidence.json",
+        "all_summaries.json",
+    }
 
 
 @pytest.mark.unit
@@ -182,7 +193,54 @@ def test_an_unattributable_item_is_reported_not_guessed(tmp_path: Path) -> None:
 
 
 @pytest.mark.unit
-def test_looks_like_record_wants_all_three_fields() -> None:
-    assert looks_like_record(_item("X"))
-    assert not looks_like_record({"summary": "s", "quotes": []})
-    assert not looks_like_record("a string")
+@pytest.mark.parametrize(
+    "name",
+    ["Immune_oLAM.evidence.json", "all_summaries.json", "location_evidence_summary.json"],
+)
+def test_the_evidence_names(name: str) -> None:
+    """One new name and two legacy ones, so nothing already written stops being read."""
+    assert is_evidence_file(Path("anywhere") / name)
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize("name", ["paper.json", "subjects.json", "cell_type_selection.json"])
+def test_what_is_not_evidence(name: str) -> None:
+    assert not is_evidence_file(Path("anywhere") / name)
+
+
+# --- a file that claims to be evidence and is not ----------------------------
+
+
+@pytest.mark.unit
+def test_a_broken_evidence_file_is_an_error_not_a_skip(traversal: Path) -> None:
+    """The failure this arrangement exists to avoid.
+
+    Skipping an unreadable file returns a short collection, and a consumer
+    cannot tell a cell type with little evidence from one whose evidence would
+    not load.
+    """
+    broken = traversal / "papers" / "lorenzi2025" / "Immune_oLAM.evidence.json"
+    broken.write_text("{ not json", encoding="utf-8")
+
+    with pytest.raises(EvidenceFileError) as caught:
+        collect(traversal, "Immune_oLAM")
+
+    assert str(broken) in str(caught.value)
+
+
+@pytest.mark.unit
+def test_an_evidence_file_holding_something_else_is_an_error(tmp_path: Path) -> None:
+    path = tmp_path / "x.evidence.json"
+    path.write_text(json.dumps(["a string, not an item"]), encoding="utf-8")
+
+    with pytest.raises(EvidenceFileError):
+        load_records(path)
+
+
+@pytest.mark.unit
+def test_a_lone_item_is_read_as_a_list_of_one(tmp_path: Path) -> None:
+    """The legacy single-item form the hook has always accepted."""
+    path = tmp_path / "location_evidence_summary.json"
+    path.write_text(json.dumps(_item("Immune_oLAM")), encoding="utf-8")
+
+    assert load_records(path) == [_item("Immune_oLAM")]
