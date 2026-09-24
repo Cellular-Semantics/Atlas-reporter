@@ -6,51 +6,51 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_annotated_snippet.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_annotated_snippet.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_evidence_summary.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_evidence_summary.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_follow_set.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_follow_set.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_cas_annotation.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_cas_annotation.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_cl_mapping.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_cl_mapping.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_cl_term_request.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_cl_term_request.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_supplement_manifest.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_supplement_manifest.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_report_refs.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_report_refs.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_degs.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_degs.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_paper_retrieval.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_paper_retrieval.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_subatlas_routing_table.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_subatlas_routing_table.py\""
           },
           {
             "type": "command",
-            "command": "uv run python .claude/hooks/check_subatlas_routing_plan.py"
+            "command": "uv run --directory \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_subatlas_routing_plan.py\""
           }
         ]
       }

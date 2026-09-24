@@ -103,6 +103,11 @@ Then read both files. Do not paste either into anything.
 - `supplement_prose` — supplementary documents judged to bear on describing cell
   types
 
+`narrative` and each `supplement_prose` entry carry their text as `blocks` — the
+paragraphs it is made of, one per line — so `offset` and `limit` page the file
+normally. A whole paper is more than one read; take it in sections rather than
+reaching for the whole file and getting a silently truncated view of it.
+
 ## The questions
 
 Take the cell types **one at a time**, in the order given.

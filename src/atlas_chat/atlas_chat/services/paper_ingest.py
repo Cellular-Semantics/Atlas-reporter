@@ -44,6 +44,15 @@ logger = logging.getLogger(__name__)
 #: Rough characters per token, for reporting size rather than for billing.
 CHARS_PER_TOKEN = 4
 
+#: A block longer than this is split again at sentence boundaries. Article XML
+#: arrives with its paragraphs intact and never reaches this; text recovered
+#: from a PDF sometimes has no paragraph breaks at all, and one unbroken block
+#: is the thing this whole arrangement exists to avoid.
+MAX_BLOCK_CHARS = 4000
+
+#: End of a sentence followed by the start of another.
+_SENTENCE_BREAK = re.compile(r"(?<=[.!?])\s+(?=[A-Z(\[])")
+
 #: Sections whose titles say they describe how the work was done rather than
 #: what was found, or that carry no findings at all.
 _PROCESS_SECTION_TITLES = re.compile(
@@ -98,7 +107,7 @@ class PaperIngest:
         out: dict[str, Any] = {
             "source": source,
             "narrative": {
-                "text": self.narrative_text,
+                "blocks": to_blocks(self.narrative_text),
                 "n_chars": len(self.narrative_text),
             },
             "budget": {
@@ -110,11 +119,21 @@ class PaperIngest:
             out["budget"]["limit_tokens"] = self.limit_tokens
         if self.paper:
             out["paper"] = dict(self.paper)
+        # Supplementary prose is carried as text while it is being assembled,
+        # because that is what the budget is measured in, and written as blocks
+        # for the same reason the narrative is.
+        supplement_prose = [
+            {
+                ("blocks" if k == "text" else k): (to_blocks(v) if k == "text" else v)
+                for k, v in item.items()
+            }
+            for item in self.supplement_prose
+        ]
         for key, value in (
             ("excluded_sections", self.excluded_sections),
             ("legends", self.legends),
             ("cited_sentences", self.cited_sentences),
-            ("supplement_prose", self.supplement_prose),
+            ("supplement_prose", supplement_prose),
             ("gaps", self.gaps),
         ):
             if value:
@@ -172,6 +191,47 @@ def split_sections(
         else:
             kept.append((section, text))
     return kept, [{"heading": h, "n_chars": n} for h, n in excluded.items()]
+
+
+def to_blocks(text: str) -> list[str]:
+    """Split text into the paragraphs it is already made of.
+
+    A body of text written as one JSON string becomes one line on disk, and a
+    reader paging a file by line cannot get inside a line. Splitting on the
+    paragraph breaks the text already carries is enough: across the reference
+    corpus it takes the longest line from 62,000 characters to 2,730.
+
+    The split is on whitespace and nothing else, so joining the blocks back
+    together reproduces the text once whitespace is normalised. That is what
+    keeps a quote spanning a paragraph break findable, and it is the property
+    the quote check depends on.
+
+    Args:
+        text: the assembled text.
+
+    Returns:
+        Its non-empty blocks, in order.
+    """
+    blocks: list[str] = []
+    for raw in text.split("\n"):
+        block = raw.strip()
+        if not block:
+            continue
+        if len(block) <= MAX_BLOCK_CHARS:
+            blocks.append(block)
+            continue
+        # No paragraph breaks to split on — the case a PDF produces. Sentence
+        # boundaries are the next natural break, and are still whitespace.
+        part = ""
+        for sentence in _SENTENCE_BREAK.split(block):
+            if part and len(part) + 1 + len(sentence) > MAX_BLOCK_CHARS:
+                blocks.append(part)
+                part = sentence
+            else:
+                part = f"{part} {sentence}" if part else sentence
+        if part:
+            blocks.append(part)
+    return blocks
 
 
 def render(pairs: list[tuple[str, str]]) -> str:

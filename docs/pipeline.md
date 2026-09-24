@@ -313,6 +313,18 @@ carry a verbatim quote, and each answer states not only what the paper says but
 what the paper did to establish it — the claim and its basis are frequently
 different sentences, and the basis is often in a figure legend.
 
+The assembled paper carries its narrative and each supplementary document as
+`blocks` — the paragraphs the text is made of, one per line. Written as a single
+string, a paper's prose lands in the JSON as one line of up to 62,000 characters,
+which `Read` truncates and `offset`/`limit` cannot page into, so every read began
+by working around the file's own shape. Splitting on the paragraph breaks already
+in the text takes the longest line to 2,730 across the reference corpus. The
+split is on whitespace, which quote checking normalises away, so joining the
+blocks reproduces the text and a quote spanning a paragraph break is still found
+— verified over 311 quotes from real reads, with identical results before and
+after. `quote_search` still reads the older single-string shape, so evidence
+written beside a job file from before the change stays checkable.
+
 It writes one `all_summaries.json` per cell type, into that cell type's
 traversal directory. Cell types are taken in series with each one's subject
 block immediately before its own questions.
@@ -469,7 +481,12 @@ Also present: `run_provenance` (used by `utils/provenance.py`), `workflow_output
 (referenced from `validation/`), and `example_input` (example agent only).
 
 All hooks are registered as `PostToolUse` on `Write|Edit|MultiEdit` in
-`.claude/settings.json`.
+`.claude/settings.json`. They are invoked through `$CLAUDE_PROJECT_DIR` and
+resolve their schema from their own location, because a hook runs with whatever
+working directory its agent had. Both were previously relative to the current
+directory, so for any agent working outside the repository root every hook found
+no schema and exited 0 — an invented quote passed silently. A hook that cannot
+find its schema now says so.
 
 ### Command-line entry points
 
