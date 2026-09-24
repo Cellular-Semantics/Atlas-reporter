@@ -26,7 +26,13 @@ import json
 import sys
 from pathlib import Path
 
-SCHEMA_PATH = Path("src/atlas_chat/atlas_chat/schemas/evidence_summary.schema.json")
+#: The checkout this hook belongs to. Taken from the hook's own location,
+#: because a hook runs with whatever working directory its agent had, and an
+#: agent working in a subdirectory would otherwise find no schema and pass
+#: everything it was given.
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+SCHEMA_PATH = REPO_ROOT / "src/atlas_chat/atlas_chat/schemas/evidence_summary.schema.json"
 
 
 def _targets(file_path: str) -> bool:
@@ -114,6 +120,7 @@ def main() -> int:
         return 2
 
     if not SCHEMA_PATH.exists():
+        print(f"no schema at {SCHEMA_PATH} — not checked", file=sys.stderr)
         return 0
     try:
         import jsonschema  # noqa: F401

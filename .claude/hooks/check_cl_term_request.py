@@ -15,7 +15,13 @@ import json
 import sys
 from pathlib import Path
 
-SCHEMA_PATH = Path("src/atlas_chat/atlas_chat/schemas/cl_term_request.schema.json")
+#: The checkout this hook belongs to. Taken from the hook's own location,
+#: because a hook runs with whatever working directory its agent had, and an
+#: agent working in a subdirectory would otherwise find no schema and pass
+#: everything it was given.
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+SCHEMA_PATH = REPO_ROOT / "src/atlas_chat/atlas_chat/schemas/cl_term_request.schema.json"
 
 
 def main() -> int:
@@ -118,8 +124,11 @@ def _validate_inline(data: dict) -> list[str]:
     errors = []
 
     for field in [
-        "cell_type_label", "suggested_label", "definition",
-        "justification", "ntr_markdown",
+        "cell_type_label",
+        "suggested_label",
+        "definition",
+        "justification",
+        "ntr_markdown",
     ]:
         if not isinstance(data.get(field), str) or not data[field].strip():
             errors.append(f"Missing or empty required field: '{field}'")
@@ -149,9 +158,16 @@ def _validate_inline(data: dict) -> list[str]:
         errors.append("'synonyms' must be a list")
 
     allowed_top = {
-        "cell_type_label", "suggested_label", "definition", "parent_term",
-        "anatomical_location", "logical_axioms", "synonyms", "references",
-        "justification", "ntr_markdown",
+        "cell_type_label",
+        "suggested_label",
+        "definition",
+        "parent_term",
+        "anatomical_location",
+        "logical_axioms",
+        "synonyms",
+        "references",
+        "justification",
+        "ntr_markdown",
     }
     extra = set(data.keys()) - allowed_top
     if extra:

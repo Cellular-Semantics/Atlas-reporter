@@ -39,7 +39,10 @@ def _item(*quotes: str, found: bool = True) -> dict:
 
 
 def _run(
-    out_dir: Path, payload: object, name: str = "all_summaries.json"
+    out_dir: Path,
+    payload: object,
+    name: str = "all_summaries.json",
+    cwd: Path | None = None,
 ) -> subprocess.CompletedProcess:
     target = out_dir / name
     hook_input = json.dumps(
@@ -50,7 +53,7 @@ def _run(
         input=hook_input,
         capture_output=True,
         text=True,
-        cwd=REPO_ROOT,
+        cwd=cwd or REPO_ROOT,
     )
 
 
@@ -150,3 +153,33 @@ def test_evidence_beside_evidence_is_not_mistaken_for_a_source(tmp_path):
         out, [_item("The cells glowed faintly in the dark.")], name="Immune_oLAM.evidence.json"
     )
     assert result.returncode == 2
+
+
+def test_the_hook_works_from_a_directory_that_is_not_the_repo_root(tmp_path):
+    """A hook runs with whatever working directory its agent had. Resolving the
+    schema from the current directory meant an agent working anywhere else found
+    none and had everything it wrote passed unchecked."""
+    out = _with_job(tmp_path)
+    elsewhere = tmp_path / "elsewhere"
+    elsewhere.mkdir()
+
+    result = _run(out, [_item("The cells glowed faintly in the dark.")], cwd=elsewhere)
+
+    assert result.returncode == 2
+    assert "not found in any source" in result.stderr
+
+
+def test_a_job_file_written_as_blocks_is_searched(tmp_path):
+    """The shape ingest writes now. Text is split into the paragraphs it is made
+    of so a reader can page the file, and a quote must still be findable."""
+    papers = tmp_path / "papers"
+    papers.mkdir()
+    (papers / "atlas.json").write_text(
+        json.dumps(
+            {
+                "narrative": {"blocks": ["## Results", JOB["narrative"]["text"]]},
+                "legends": JOB["legends"],
+            }
+        )
+    )
+    assert _run(tmp_path, [_item("sits in the outer cortex")]).returncode == 0

@@ -17,7 +17,13 @@ import sys
 from pathlib import Path
 
 # Resolve schema path relative to repo root (hook is run from repo root)
-SCHEMA_PATH = Path("src/atlas_chat/atlas_chat/schemas/cl_mapping.schema.json")
+#: The checkout this hook belongs to. Taken from the hook's own location,
+#: because a hook runs with whatever working directory its agent had, and an
+#: agent working in a subdirectory would otherwise find no schema and pass
+#: everything it was given.
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+SCHEMA_PATH = REPO_ROOT / "src/atlas_chat/atlas_chat/schemas/cl_mapping.schema.json"
 
 
 def _load_schema() -> dict:
@@ -86,9 +92,7 @@ def validate_inline(data: dict) -> list[str]:
                     errors.append(f"other_candidates[{i}] missing field: '{f}'")
             cl_id = cand.get("cl_id", "")
             if cl_id and not cl_id.startswith("CL:"):
-                errors.append(
-                    f"other_candidates[{i}].cl_id '{cl_id}' must start with 'CL:'"
-                )
+                errors.append(f"other_candidates[{i}].cl_id '{cl_id}' must start with 'CL:'")
             # Reject extra fields
             extra = set(cand.keys()) - {"cl_term", "cl_id", "cl_definition", "reason_rejected"}
             if extra:
@@ -96,9 +100,14 @@ def validate_inline(data: dict) -> list[str]:
 
     # Reject extra top-level fields
     allowed_top = {
-        "cell_type_label", "working_definition", "searches_performed",
-        "best_match", "justification", "other_candidates",
-        "recommendation", "new_term_needed",
+        "cell_type_label",
+        "working_definition",
+        "searches_performed",
+        "best_match",
+        "justification",
+        "other_candidates",
+        "recommendation",
+        "new_term_needed",
     }
     extra_top = set(data.keys()) - allowed_top
     if extra_top:
@@ -108,9 +117,7 @@ def validate_inline(data: dict) -> list[str]:
     bm = data.get("best_match")
     if bm is None:
         if data.get("new_term_needed") is not True:
-            errors.append(
-                "When best_match is null, 'new_term_needed' must be true"
-            )
+            errors.append("When best_match is null, 'new_term_needed' must be true")
         return errors
 
     if not isinstance(bm, dict):
@@ -134,21 +141,15 @@ def validate_inline(data: dict) -> list[str]:
 
     mt = bm.get("match_type", "")
     if mt and mt not in VALID_MATCH_TYPES:
-        errors.append(
-            f"best_match.match_type '{mt}' must be one of: {VALID_MATCH_TYPES}"
-        )
+        errors.append(f"best_match.match_type '{mt}' must be one of: {VALID_MATCH_TYPES}")
 
     skos = bm.get("skos_mapping", "")
     if skos and skos not in VALID_SKOS:
-        errors.append(
-            f"best_match.skos_mapping '{skos}' must be one of: {VALID_SKOS}"
-        )
+        errors.append(f"best_match.skos_mapping '{skos}' must be one of: {VALID_SKOS}")
 
     conf = bm.get("confidence", "")
     if conf and conf not in VALID_CONFIDENCE:
-        errors.append(
-            f"best_match.confidence '{conf}' must be one of: {VALID_CONFIDENCE}"
-        )
+        errors.append(f"best_match.confidence '{conf}' must be one of: {VALID_CONFIDENCE}")
 
     # Cross-check: match_type ↔ skos_mapping consistency
     type_to_skos = {
@@ -157,9 +158,7 @@ def validate_inline(data: dict) -> list[str]:
         "narrow match": "skos:narrowMatch",
     }
     if mt in type_to_skos and skos and type_to_skos[mt] != skos:
-        errors.append(
-            f"match_type '{mt}' and skos_mapping '{skos}' are inconsistent"
-        )
+        errors.append(f"match_type '{mt}' and skos_mapping '{skos}' are inconsistent")
 
     # Cross-check: new_term_needed
     ntn = data.get("new_term_needed")
