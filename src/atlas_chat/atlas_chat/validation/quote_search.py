@@ -34,6 +34,23 @@ def normalise(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _body(part: dict[str, Any]) -> str:
+    """One body of text from a job file, however that file writes it.
+
+    Text is written as blocks — the paragraphs it is made of — so that a reader
+    can page the file by line. Joining them is safe because the split was on
+    whitespace, which normalising removes: a quote spanning a paragraph break
+    is found either way.
+
+    ``text`` is the shape job files had before blocks, and is read so that
+    evidence written beside one of them stays checkable without regenerating it.
+    """
+    blocks = part.get("blocks")
+    if blocks:
+        return normalise("\n".join(blocks))
+    return normalise(part.get("text") or "")
+
+
 def sources_from_job(job: dict[str, Any]) -> dict[str, str]:
     """The quotable bodies of text in one job file, keyed by where they came from.
 
@@ -45,15 +62,13 @@ def sources_from_job(job: dict[str, Any]) -> dict[str, str]:
         and ``supplement:<file id>``.
     """
     sources: dict[str, str] = {}
-    narrative = (job.get("narrative") or {}).get("text")
-    if narrative:
-        sources[NARRATIVE] = normalise(narrative)
+    sources[NARRATIVE] = _body(job.get("narrative") or {})
     for index, legend in enumerate(job.get("legends") or []):
         label = legend.get("label") or str(index)
         sources[f"legend:{label}"] = normalise(legend.get("text", ""))
     for item in job.get("supplement_prose") or []:
         name = item.get("file_id") or item.get("text_file") or "supplement"
-        sources[f"supplement:{name}"] = normalise(item.get("text", ""))
+        sources[f"supplement:{name}"] = _body(item)
     return {k: v for k, v in sources.items() if v}
 
 

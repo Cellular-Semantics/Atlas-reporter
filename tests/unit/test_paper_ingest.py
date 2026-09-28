@@ -9,6 +9,7 @@ import jsonschema
 import pytest
 from atlas_chat.services.paper_ingest import (
     CHARS_PER_TOKEN,
+    MAX_BLOCK_CHARS,
     PaperIngestError,
     extract_legends,
     ingest_paper,
@@ -16,6 +17,7 @@ from atlas_chat.services.paper_ingest import (
     render,
     split_sections,
     supplement_prose,
+    to_blocks,
     write_ingest,
 )
 
@@ -417,3 +419,84 @@ def test_pdf_text_records_both_of_the_things_it_cannot_support(tmp_path):
     gaps = [g["what"] for g in ingest_paper(path).gaps]
     assert "cited sentences and the reference list" in gaps
     assert "guaranteed reading order" in gaps
+
+
+# ------------------------------------------------------------------
+# Text a reader can page through
+# ------------------------------------------------------------------
+
+
+def test_text_is_written_as_the_paragraphs_it_is_made_of():
+    """A body of text written as one string becomes one line on disk, and a
+    reader paging a file by line cannot get inside a line."""
+    assert to_blocks("First para.\n\nSecond para.\nThird.") == [
+        "First para.",
+        "Second para.",
+        "Third.",
+    ]
+
+
+def test_a_heading_is_a_block_of_its_own():
+    """`render` puts headings on their own lines, and keeping them there is what
+    makes the section structure visible in a directory listing of lines."""
+    text = render([("Results", "A finding."), ("Discussion", "A reading of it.")])
+    assert "## Results" in to_blocks(text)
+
+
+def test_nothing_is_left_of_a_blank_block():
+    assert to_blocks("\n\n   \n") == []
+
+
+def test_a_block_with_no_paragraph_breaks_is_split_at_sentence_boundaries():
+    """What text recovered from a PDF looks like. One unbroken block is the
+    thing this whole arrangement exists to avoid."""
+    run = " ".join(f"Sentence number {i} runs on for a while." for i in range(400))
+    blocks = to_blocks(run)
+    assert len(blocks) > 1
+    assert max(len(b) for b in blocks) <= MAX_BLOCK_CHARS
+
+
+def test_an_unsplittable_run_is_left_alone_rather_than_cut_mid_word():
+    """Cutting at a fixed width would put a quote boundary inside a word, which
+    is worse than a long line: it makes text that was never written."""
+    run = "x" * (MAX_BLOCK_CHARS * 2)
+    assert to_blocks(run) == [run]
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "One para.\n\nTwo para.\n\n## Heading\n\nThree.",
+        "A single paragraph with no breaks at all.",
+        " ".join(f"Sentence {i}." for i in range(500)),
+    ],
+)
+def test_joining_the_blocks_reproduces_the_text(text):
+    """The property the quote check rests on: a quote spanning a paragraph break
+    must still be findable, which holds because the split is on whitespace and
+    the check normalises whitespace away."""
+    from atlas_chat.validation.quote_search import normalise
+
+    assert normalise("\n".join(to_blocks(text))) == normalise(text)
+
+
+def test_the_written_narrative_is_blocks(tmp_path):
+    ingest = ingest_paper(_write(tmp_path, "a.xml", ARTICLE), doi="10.1234/paper")
+    payload = ingest.to_dict()
+    assert isinstance(payload["narrative"]["blocks"], list)
+    assert "text" not in payload["narrative"]
+    assert payload["narrative"]["n_chars"] == len(ingest.narrative_text)
+
+
+def test_no_line_of_a_written_job_file_is_too_long_to_read(tmp_path):
+    """The failure this fixes: a 62,000-character line that `Read` truncates and
+    `offset`/`limit` cannot page into."""
+    long_article = ARTICLE.replace(
+        "<p>An abstract sentence.</p>",
+        "<p>" + " ".join(f"Sentence {i} of the abstract." for i in range(3000)) + "</p>",
+    )
+    out = write_ingest(
+        ingest_paper(_write(tmp_path, "long.xml", long_article)), tmp_path / "job.json"
+    )
+    longest = max(len(line) for line in out.read_text().splitlines())
+    assert longest <= MAX_BLOCK_CHARS + 100  # the JSON escaping and indent around a block

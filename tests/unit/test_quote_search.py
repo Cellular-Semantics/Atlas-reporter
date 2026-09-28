@@ -108,3 +108,39 @@ def test_an_unreadable_job_file_is_skipped_rather_than_raising(tmp_path):
     (d / "broken.json").write_text("{not json")
     (d / "good.json").write_text(json.dumps({"narrative": {"text": "real text"}}))
     assert set(load_sources(sorted(d.glob("*.json")))) == {"good/narrative"}
+
+
+# --- however the job file writes its text ------------------------------------
+
+BLOCKS_JOB = {
+    "narrative": {"blocks": ["## Results", "The population sits in the outer cortex."]},
+    "legends": JOB["legends"],
+    "supplement_prose": [
+        {"file_id": "s1.docx", "blocks": ["Clusters were named by marker score."]}
+    ],
+}
+
+
+def test_the_two_shapes_of_job_file_give_the_same_sources():
+    """Text is written as blocks so a reader can page the file. `text` is what
+    job files held before that, and is still read so evidence written beside one
+    stays checkable without regenerating it."""
+    assert sources_from_job(BLOCKS_JOB) == sources_from_job(JOB)
+
+
+def test_a_quote_spanning_a_paragraph_break_is_still_found():
+    """The property the split had to preserve. It holds because the split is on
+    whitespace and matching normalises whitespace away."""
+    assert locate("Results The population sits", sources_from_job(BLOCKS_JOB)) == ["narrative"]
+
+
+def test_a_quote_the_paper_does_not_contain_is_not_found_either_way():
+    """Strictness has to be preserved in both directions: the change must not
+    make a quote verifiable that was not verifiable before."""
+    invented = "The cells glowed faintly in the dark."
+    assert locate(invented, sources_from_job(BLOCKS_JOB)) == []
+    assert locate(invented, sources_from_job(JOB)) == []
+
+
+def test_a_narrative_of_empty_blocks_is_no_source_at_all():
+    assert sources_from_job({"narrative": {"blocks": []}}) == {}
