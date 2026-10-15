@@ -1,0 +1,20 @@
+{
+  "request": "multicilliated cells",
+  "requested_on": "2026-09-09",
+  "project": "test_projects/hca_reproductive",
+  "method": "No annotation contains 'multiciliated'; the atlas calls these 'ciliated epithelial'. Located the node 'Ciliated epithelial' (L2, 26304 cells) and took its subtree. A flat substring match on 'cili' agreed with the subtree in this case.",
+  "selected_labelset": "L3",
+  "selected": [
+    {"labelset": "L3", "label": "Fallopian Tube ciliated epithelial", "cells": 14392},
+    {"labelset": "L3", "label": "Endometrial ciliated epithelial", "cells": 11892},
+    {"labelset": "L3", "label": "Epi_OvarianInclCil", "full_name": "Ovarian Inclusion ciliated epithelial", "cells": 20}
+  ],
+  "judgements": [
+    "Reported at L3, not L4: the seven L4 children are mostly cell states (_Cyc cycling, _Diff differentiated, _eProf/_Early maturation stage) rather than distinct cell types.",
+    "Epi_FallopianCil_Fetal (516 cells) excluded although it is a developmental-stage rather than state distinction; user confirmed the L3-only selection.",
+    "Parent L2 'Ciliated epithelial' excluded: it is a three-organ roll-up and would duplicate the union of the three L3 populations.",
+    "Epi_OvarianInclCil included despite only 20 cells; atlas-internal evidence will be thin and the report may lean on literature. Flagged to the user, who confirmed inclusion.",
+    "Excluded as adjacent but not ciliated: Epi_OvarianInclSec, Epi_FallopianSec_*."
+  ],
+  "confirmed_by_user": true
+}

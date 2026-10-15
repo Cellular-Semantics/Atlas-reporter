@@ -1,0 +1,61 @@
+[
+  {
+    "aspect": "naming",
+    "found": true,
+    "summary": "The paper never uses the atlas label 'Fallopian Tube ciliated epithelial' or its synonym 'Epi_FallopianCil' in its prose or legends (searched whole text: the strings 'FallopianCil', 'EndoCil' and 'Epi_' do not occur). What it does name is the general cell type this population is asserted to be: 'ciliated', one of four epithelial sublineages the paper says are shared across the reproductive organs. Figure legends give the abbreviation the atlas uses in its figure labels for that general class: 'Cil, ciliated'. The paper also states that the labels themselves come from a nomenclature framework recorded in Supplementary Table 2 and Supplementary Note 2.1 — material this run could not open (no supplement store; ATLAS_CHAT_CORPUS_ROOT unset), which is where the organ-qualified L3/L4 label almost certainly lives. Broader class containing this subject: 'epithelial', one of the eight major lineages, resolved into 'progressively finer pan-organ and tissue-specific states'. Sibling sublineages named by the paper, which are NOT this subject: 'mucinous', 'squamous' and 'non-ciliated secretory'. The paper's prose does not name the L4 child states (Cyc, Diff, Early, Fetal).",
+    "quotes": [
+      "epithelial cells grouped into four sublineages shared across tissues: mucinous, squamous, ciliated and non-ciliated secretory",
+      "Cil, ciliated; Sec, secretory; Endo, endometrial; Incl, inclusion",
+      "Cells were first classified into eight major lineages (epithelial, mesothelial, mesenchymal, endothelial, immune, granulosa/ovarian supporting, germ cell and peripheral nervous system populations) before being resolved into progressively finer pan-organ and tissue-specific states",
+      "All populations were mapped to a structured nomenclature framework developed within the Human Cell Atlas Reproductive Network in consultation with domain experts and pathologists (Supplementary Table 2 and Supplementary Note 2.1)."
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Mucinous epithelial specialisation across the reproductive tract; Human Female Reproductive System Cell Atlas v1; Figure 1 legend"
+  },
+  {
+    "aspect": "location",
+    "found": true,
+    "summary": "The paper makes no statement locating ciliated epithelial cells within the fallopian tube — no compartment, no region (fimbria/ampulla/isthmus), no spatial figure panel for this population. All it establishes is at the level of the general cell type: the ciliated sublineage is one of four 'shared across tissues', and the fallopian tube is one of the organs integrated, sampled from fetal development through postmenopause. The basis for the 'shared across tissues' claim is the computed cross-organ integration displayed as an epithelial UMAP and an organ-composition bar plot (Figure 4a,b), not imaging. Where the atlas did use imaging to place epithelial cells, the paper says spatial data for the fallopian tube exist and were used for annotation generally — but it reports no ciliated-specific spatial result. Developmental stage: the results sections are stated to focus on paediatric/adult stages, with prenatal donors present in the atlas but referred elsewhere (Lorenzi et al., 2026) — so the paper itself does not describe a fetal fallopian tube ciliated population.",
+    "quotes": [
+      "epithelial cells grouped into four sublineages shared across tissues: mucinous, squamous, ciliated and non-ciliated secretory",
+      "Bar plot showing the cellular composition of epithelial populations (\" broad_celltype \" labels) according to the sampled organ.",
+      "We assembled the unified Human Female Reproductive System Cell Atlas v1 by integrating single-cell transcriptomic datasets from the human ovary, fallopian tube, uterus, cervix and vagina spanning fetal development through postmenopause",
+      "Cell identities were assigned using canonical marker genes, de novo identified markers, sample metadata and spatial localisation with matched Visium or Xenium (for ovaries, fallopian tubes and uterus), with additional spatial data generated for adult fallopian tubes",
+      "The following results sections describe the major cell types and transcriptional programmes identified across organs and lineages, with a focus on paediatric/adult stages."
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Human Female Reproductive System Cell Atlas v1; Mucinous epithelial specialisation across the reproductive tract; Figure 4 legend"
+  },
+  {
+    "aspect": "markers",
+    "found": false,
+    "summary": "The paper names no marker gene for fallopian tube ciliated epithelial cells, and none for the ciliated sublineage generally. FOXJ1 and every other canonical ciliary gene are absent from the whole text (grep for 'FOXJ1' returns nothing). A marker dot plot for the epithelial broad cell types exists as Figure 4c, but its gene list is in the image, not in the caption or prose, and the marker tables the paper points to (Supplementary Table 2, Supplementary Note 2.1) were not reachable in this run because there is no supplement store for this project (ATLAS_CHAT_CORPUS_ROOT is not set). So this is an unavailable-source gap as much as a silence: the paper asserts markers were used to assign identity without stating which ones apply to this population.",
+    "quotes": [],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Figure 4 legend"
+  },
+  {
+    "aspect": "structure",
+    "found": false,
+    "summary": "The paper gives no morphological description of this population — no mention of cilia, apical specialisation, cell shape, or epithelial layer architecture for the ciliated sublineage. Consequently it also makes no claim that any marker gene produces, maintains or marks a structural feature of these cells. The only structural word attached to the population is the sublineage name 'ciliated' itself, which the paper uses as a label without describing what it denotes.",
+    "quotes": [],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet"
+  },
+  {
+    "aspect": "function",
+    "found": true,
+    "summary": "The paper attributes no physiological function to fallopian tube ciliated epithelial cells — nothing about ovum transport, fluid flow, or ciliary beating. The single functional-genomic statement it makes about ciliated cells is at the level of the general cell type and is regulatory rather than physiological: a candidate enhancer for BSPRY, overlapping a female genital tract polyps GWAS locus, is preferentially accessible in ciliated and glandular secretory epithelial cells. The basis is a computed peak-to-gene link in the scATAC-seq atlas (Figure 7g), and the sentence carries a citation for the risk locus itself. This bears on the fallopian tube population only indirectly: the scATAC atlas covers the fallopian tube among its three organs, but the sentence says 'ciliated', not which organ's ciliated cells. The paper does not say what BSPRY does in these cells beyond a carried-from-earlier-work statement about calcium signalling in epithelial tumours, and explicitly leaves the mechanism open.",
+    "quotes": [
+      "We additionally identify BSPRY as a novel candidate effector gene for an FGT polyps risk locus[85], with the associated peak overlapping a putative enhancer 394,800bp downstream of the gene, preferentially accessible in ciliated and glandular secretory epithelial cells (Figure 7g).",
+      "we assembled a harmonised scATAC-seq atlas across the ovary, fallopian tube and endometrium",
+      "Meso, mesothelial; Cil, ciliated; Fun, functionalis; Lum, luminal; Prof/Prolif, proliferative; Sec, secretory"
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "A chromatin accessibility atlas links non-coding variants to cell-type specific regulatory elements; Figure 7 legend"
+  }
+]

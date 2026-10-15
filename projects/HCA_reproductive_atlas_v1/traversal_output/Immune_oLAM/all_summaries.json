@@ -1,0 +1,87 @@
+[
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "naming",
+    "found": true,
+    "summary": "The paper's prose name is \"ovary LAMs\", abbreviated oLAMs; the figure and Extended Data legends expand this as \"oLAM, ovary lipid-associated macrophage\", and the Supplementary Note writes \"ovary LAMs (oLAMs)\". These are the atlas's own labels for this set of cells. The paper states it had described this population previously (Garcia-Alonso et al., biorxiv 2026), so the label is carried from that earlier work. The general cell types asserted, nested: a lipid-associated macrophage (LAM), one of the two subsets sharing \"a canonical lipid-associated macrophage (LAM) transcriptional programme\"; a LYVE1lo macrophage; a macrophage; and a myeloid cell. Populations named alongside it that are NOT this subject: its sibling LAM subset uftLAM (uterine and fallopian tube LAM), the sibling uMac_Inf, the sibling transitional macrophages, and the contrasting broader subtype LYVE1hi macrophages (\"Mac_LYVE1hi\"). The broader classes containing it are LYVE1lo macrophages, macrophages, and the myeloid compartment.",
+    "quotes": [
+      "whereas ovary LAMs (oLAMs), which we described previously (Garcia-Alonso et al., biorxiv 2026), were confined to the ovary, exhibited a retinoic acid signature (e.g., DHRS9 and ALDH1A1), and upregulated CHIT1 (Figure 3d and Extended Data Fig. 4c).",
+      "macrophage; oLAM, ovary lipid-associated macrophage; Inf, inflammatory; Cyc, cycling; cDC,",
+      "The remaining macrophage subsets separated on the basis of LYVE1 expression, where LYVE1lo subsets included uterine and fallopian tube lipid-associated macrophages (uftLAMs), ovary LAMs (oLAMs) and inflammatory uterine macrophages (called “uMac_Inf”).",
+      "By contrast, LYVE1lo macrophages resolved into three organ-enriched subsets, two of which shared a canonical lipid-associated macrophage (LAM) transcriptional programme[51] (Figure 3d and Extended Data Fig. 5f), and a population of inflammatory macrophages constrained to the menstruating endometrium (called “uMac_Inf”) (Extended Data Fig. 5g) (Lorenzi et al., biorxiv 2026).",
+      "LYVE1hi macrophages (called “Mac_LYVE1hi”) were detected across all reproductive organs"
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "location",
+    "found": true,
+    "summary": "The paper places oLAMs in the ovary and states they were confined to it — this is an organ-level statement only; no intra-ovarian compartment, niche or spatial position is given, and unlike uftLAMs no spatial-transcriptomics localisation of oLAMs is reported. The basis is a computed cross-organ composition comparison plus an expression dot plot: Extended Data Fig. 4c is a bar plot of the proportion of all immune cell states within each organ, on which oLAM is one of the bars flagged as a macrophage subset enriched in a particular organ. The Discussion generalises this as organ-specific LAM subsets. Developmental stage is stated only for the ovary bars collectively (both prenatal and postnatal samples contribute), with the results sections focused on paediatric/adult stages.",
+    "quotes": [
+      "whereas ovary LAMs (oLAMs), which we described previously (Garcia-Alonso et al., biorxiv 2026), were confined to the ovary, exhibited a retinoic acid signature (e.g., DHRS9 and ALDH1A1), and upregulated CHIT1 (Figure 3d and Extended Data Fig. 4c).",
+      "depicted in **A. C,** Bar plot displaying the proportion of all immune cell states within each organ.",
+      "numbered with 14 (uftLAM), 15 (oLAM), or 16 (uMac_Inf) indicate macrophage subsets",
+      "Both prenatal and postnatal samples contribute to the ovary. Bars outlined in green and",
+      "Cross-organ integration further resolves organ-specific LAM subsets, indicating that reproductive tissues may establish distinct immune niches tailored to the physiological demands of each organ.",
+      "The following results sections describe the major cell types and transcriptional programmes identified across organs and lineages, with a focus on paediatric/adult stages."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "markers",
+    "found": true,
+    "summary": "Named markers: a retinoic acid signature exemplified by DHRS9 and ALDH1A1, and upregulation of CHIT1. As a LAM, oLAMs are also stated to carry the canonical LAM programme (TREM2, CD9, SPP1) and a lipid metabolism signature (ALDH2, APOE, APOC1, APOC2, LPL) — this statement is made for uftLAMs and oLAMs jointly, i.e. it attaches to the general LAM type rather than to oLAMs alone. Being LYVE1lo is a defining criterion. Basis: expression dot plots (Figure 3d for marker genes of the LYVE1hi and LYVE1lo subsets; Extended Data Fig. 5f for the lipid metabolism genes upregulated in LAMs) and Extended Data Fig. 4c; the Methods list a section headed \"Differential expression analysis between macrophage and ILC3 subsets\", the text of which is not included in this job file.",
+    "quotes": [
+      "whereas ovary LAMs (oLAMs), which we described previously (Garcia-Alonso et al., biorxiv 2026), were confined to the ovary, exhibited a retinoic acid signature (e.g., DHRS9 and ALDH1A1), and upregulated CHIT1 (Figure 3d and Extended Data Fig. 4c).",
+      "uftLAMs and oLAMs express markers consistent with a canonical lipid-associated macrophage (LAM) programme (TREM2, CD9, SPP1) and lipid metabolism signature (ALDH2, APOE, APOC1, APOC2, LPL), and were characterised further in the main text.",
+      "D, Dot plot showing the log-transformed, min-max normalised expression of selected marker genes (x-axis) for identified LYVE1 hi and LYVE1 lo macrophage subsets (y-axis) in the scRNA-seq data.",
+      "**F,** Dot plot showing 114 the log-transformed, min-max normalised expression of (top) _CD14_ and _CD16_ ( _FCGR3A_ ), 115 which differentiate classical and non-classical monocytes, and (bottom) lipid metabolism 116 genes that are upregulated in LAMs.",
+      "The remaining macrophage subsets separated on the basis of LYVE1 expression, where LYVE1lo subsets included uterine and fallopian tube lipid-associated macrophages (uftLAMs), ovary LAMs (oLAMs) and inflammatory uterine macrophages (called “uMac_Inf”).",
+      "Differential expression analysis between macrophage and ILC3 subsets"
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "structure",
+    "found": false,
+    "summary": "The paper gives no morphological or structural description of oLAMs: no size, shape, process, inclusion or ultrastructural feature, and no oLAM marker gene is said to produce or maintain a structural feature. The only structural attribute in the vicinity — lipid accumulation — is asserted of LAMs broadly in a sentence about uftLAMs, not of oLAMs. Recorded as not addressed.",
+    "quotes": []
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "function",
+    "found": true,
+    "summary": "The paper attributes almost no function to oLAMs directly. What it offers is inference from expression: a retinoic acid signature (DHRS9, ALDH1A1) and CHIT1 upregulation, with no statement of what those gene products do in these cells beyond the retinoic-acid label; the shared lipid metabolism signature of LAMs; and a figure-legend schematic explicitly described as summarising *potential* signalling mechanisms of the LYVE1hi, uftLAM and oLAM subsets — i.e. hypothesised, not demonstrated. In the two places where uftLAM function is spelled out, oLAM appears only as the comparison baseline (uftLAMs are more inflammatory than oLAMs), which is a statement about the contrast rather than about oLAM function. The Discussion's only functional gloss is speculative, that organ-specific LAM subsets may reflect distinct immune niches. No experiment, assay or spatial method underpins any oLAM functional claim.",
+    "quotes": [
+      "whereas ovary LAMs (oLAMs), which we described previously (Garcia-Alonso et al., biorxiv 2026), were confined to the ovary, exhibited a retinoic acid signature (e.g., DHRS9 and ALDH1A1), and upregulated CHIT1 (Figure 3d and Extended Data Fig. 4c).",
+      "F, Schematic summarising the potential signalling mechanisms of the LYVE1 hi , uftLAM, and oLAM subsets, alongside their identified tissue location.",
+      "Relative to oLAMs, uftLAMs display a markedly more inflammatory transcriptional state (TNF, CCL5, NLRP3) and distinctive upregulation of IL15, which activates uNK cells enriched in the endometrium (Figure 3d and Supplementary Table 3).",
+      "Cross-organ integration further resolves organ-specific LAM subsets, indicating that reproductive tissues may establish distinct immune niches tailored to the physiological demands of each organ."
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "naming",
+    "found": true,
+    "summary": "The paper's prose name is \"LYVE1hi macrophages\", with the atlas's own short label given explicitly in parentheses as \"Mac_LYVE1hi\"; the Supplementary Note uses \"LYVE1hi macrophages\" as a section heading, and the figure legends give the components \"Mac, macrophage\" and refer to \"LYVE1 hi and LYVE1 lo macrophage subsets\". These are the atlas's labels for this set of cells. The general cell types asserted, nested: a macrophage (one of \"two broader macrophage subtypes distinguished by LYVE1 expression\"), a myeloid cell, and — as an identity claim rather than a name — a perivascular, anti-inflammatory homeostatic macrophage. Populations named alongside it that are NOT this subject: the contrasting broader subtype \"LYVE1lo macrophages\", and within that the three sibling subsets uftLAM, oLAM and uMac_Inf, plus the sibling transitional macrophage population. The broader classes containing it are macrophages and the myeloid compartment; note the paper's top-level myeloid split is macrophages \"divide into LYVE1hi and LAMs\", so \"LAMs\" is a sibling class, not a name for this cell type.",
+    "quotes": [
+      "LYVE1hi macrophages (called “Mac_LYVE1hi”) were detected across all reproductive organs (Extended Data Fig. 4c), consistent with observations in mice[49,50], and their transcriptomic profile pointed to a perivascular localisation and a non-inflammatory, tissue remodelling programme (Extended Data Fig. 5e and Supplementary Note 2.1).",
+      "We also identified two broader macrophage subtypes distinguished by LYVE1 expression (Figure 3d).",
+      "LYVE1hi macrophages\n\nLYVE1hi macrophages, which were shared across all organs (Extended Data Fig. 4c), expressed a suite of genes consistent with a perivascular identity (Extended Data Fig. 5e).",
+      "D, Dot plot showing the log-transformed, min-max normalised expression of selected marker genes (x-axis) for identified LYVE1 hi and LYVE1 lo macrophage subsets (y-axis) in the scRNA-seq data.",
+      "Within the myeloid compartment, macrophages divide into LYVE1hi and LAMs across all reproductive organs, consistent with their distribution in non-reproductive tissues[25,49].",
+      "The remaining macrophage subsets separated on the basis of LYVE1 expression, where LYVE1lo subsets included uterine and fallopian tube lipid-associated macrophages (uftLAMs), ovary LAMs (oLAMs) and inflammatory uterine macrophages (called “uMac_Inf”)."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "location",
+    "found": true,
+    "summary": "Two location claims of different kinds. Organ level: detected across all reproductive organs / shared across all organs, established by a computed cross-organ composition comparison (Extended Data Fig. 4c, the bar plot of the proportion of each immune cell state within each organ), and reinforced by a statement carried from mouse work with citations. Compartment level: a perivascular localisation, which the paper is careful to present as an inference from the transcriptome rather than an observation — \"their transcriptomic profile pointed to a perivascular localisation\", \"expressed a suite of genes consistent with a perivascular identity\", \"Additional markers also suggest perivascular residency\". No imaging or spatial-transcriptomics localisation of this population is reported, in contrast to uftLAMs. Their distribution within uterine tissues and across menstrual cycle stages is quantified in a proportion bar plot. Developmental stage: the immune manifold integrates prenatal, postnatal and adult cells, and prenatal reproductive tract macrophages expressing LYVE1 are explicitly distinguished from the transitional subset.",
+    "quotes": [
+      "LYVE1hi macrophages (called “Mac_LYVE1hi”) were detected across all reproductive organs (Extended Data Fig. 4c), consistent with observations in mice[49,50], and their transcriptomic profile pointed to a perivascular localisation and a non-inflammatory, tissue remodelling programme (Extended Data Fig. 5e and Supplementary Note 2.1).",
+      "LYVE1hi macrophages, which were shared across all organs (Extended Data Fig. 4c), expressed a suite of genes consistent with a perivascular identity (Extended Data Fig. 5e).",
+      "Additional markers also suggest perivascular residency, including ANTXR2, which contributes to extracellular matrix remodelling in the mouse reproductive tract30, and ITGA9, which pairs with β1 to form the α9β1 integrin heterodimer, serving as a receptor for VEGF-C and VEGF-D31.",
+      "depicted in **A. C,** Bar plot displaying the proportion of all immune cell states within each organ.",
+      "**G,** Bar plot displaying the proportion of LYVE1[hi] 117 macrophages, uftLAMs, oLAMs, and inflammatory macrophages within uterine tissues 118 (endometrium, myometrium, menstrual fluid, whole uterus) across menstrual cycle stage 119 (proliferative, secretory, menstrual, postmenopausal).",
+      "Prenatal reproductive tract-derived macrophages, besides those that expressed LYVE1, were present in this subset.",
+      "Within the myeloid compartment, macrophages divide into LYVE1hi and LAMs across all reproductive organs, consistent with their distribution in non-reproductive tissues[25,49]."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "markers",
+    "found": true,
+    "summary": "The defining marker is high LYVE1, the gene on which the two broader macrophage subtypes were split. The Supplementary Note names further markers in two groups: perivascular/ECM-niche genes LYVE1, CEMIP2, ANTXR2 and ITGA9; and angiogenesis/homeostasis genes NRP1, PDGFC, GAS6 and ENPP2, plus MRC1 as an anti-inflammatory homeostatic marker. Basis: a computed differential comparison rendered as an expression dot plot — Extended Data Fig. 5e shows genes upregulated in LYVE1hi macrophages compared to uftLAMs and oLAMs, and Figure 3d shows selected marker genes for the LYVE1hi and LYVE1lo subsets. A Methods section headed \"Differential expression analysis between macrophage and ILC3 subsets\" is listed but its text is not in this job file. The paper also states that the transitional macrophage subset lacks LYVE1, which is how that subset is separated from this one.",
+    "quotes": [
+      "We also identified two broader macrophage subtypes distinguished by LYVE1 expression (Figure 3d).",
+      "These included LYVE1 and CEMIP2, together regulate the ECM niche: LYVE1 binds hyaluronan, a glycosaminoglycan enriched in the perivascular niche28, while CEMIP2 mediates its degradation29.",
+      "Additional markers also suggest perivascular residency, including ANTXR2, which contributes to extracellular matrix remodelling in the mouse reproductive tract30, and ITGA9, which pairs with β1 to form the α9β1 integrin heterodimer, serving as a receptor for VEGF-C and VEGF-D31.",
+      "Beyond their putative perivascular residency, these macrophages actively promote angiogenesis and tissue homeostasis through expression of several genes.",
+      "LYVE1hi macrophages also express additional markers characteristic of anti-inflammatory, homeostatic macrophages, including MRC1 (Figure 3d).",
+      "**E,** 112 Dot plot showing the log-transformed, min-max normalised expression of selected genes 113 upregulated in LYVE1[hi] macrophages compared to uftLAMs and oLAMs.",
+      "These macrophages did not express markers associated with more differentiated macrophages subsets (i.e., LYVE1, FCGBP) or inflammatory markers (i.e., EREG), and were therefore named “transitional” macrophages.",
+      "Differential expression analysis between macrophage and ILC3 subsets"
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "structure",
+    "found": true,
+    "summary": "No morphology of the cell itself (size, shape, processes) is described. What the paper does describe is the extracellular structure these cells engage with, and it ties marker genes directly to it: LYVE1 and CEMIP2 are said to together regulate the ECM niche, with LYVE1 binding hyaluronan — a glycosaminoglycan enriched in the perivascular niche — and CEMIP2 mediating hyaluronan degradation; ANTXR2 is said to contribute to extracellular matrix remodelling. So two markers are asserted to act on a structural feature of the surrounding matrix rather than on a structure of the cell. The basis for the gene-to-structure link is statements carried from earlier work (each of these sentences carries a numbered citation), applied to genes found upregulated here by expression comparison; the ANTXR2 evidence is explicitly from the mouse reproductive tract.",
+    "quotes": [
+      "These included LYVE1 and CEMIP2, together regulate the ECM niche: LYVE1 binds hyaluronan, a glycosaminoglycan enriched in the perivascular niche28, while CEMIP2 mediates its degradation29.",
+      "Additional markers also suggest perivascular residency, including ANTXR2, which contributes to extracellular matrix remodelling in the mouse reproductive tract30, and ITGA9, which pairs with β1 to form the α9β1 integrin heterodimer, serving as a receptor for VEGF-C and VEGF-D31.",
+      "LYVE1hi macrophages, which were shared across all organs (Extended Data Fig. 4c), expressed a suite of genes consistent with a perivascular identity (Extended Data Fig. 5e).",
+      "**E,** 112 Dot plot showing the log-transformed, min-max normalised expression of selected genes 113 upregulated in LYVE1[hi] macrophages compared to uftLAMs and oLAMs."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "function",
+    "found": true,
+    "summary": "Ascribed functions: a non-inflammatory, tissue remodelling programme; active promotion of angiogenesis and tissue homeostasis; and an anti-inflammatory, homeostatic character. Every functional claim is an inference from expression, with the gene-product function itself carried from earlier work: NRP1 as a VEGF co-receptor through which NRP1+ macrophages promote neovascularisation (mouse CNS, adipose tissue and tumours); PDGFC as a secreted ligand for PDGFR-alpha on pericytes and stromal fibroblasts, an axis driving alveogenesis in mice; GAS6 as a ligand for TYRO3/AXL/MERTK promoting survival and efferocytosis; ENPP2 as producing lysophosphatidic acid with pro-angiogenic effects in mice; ITGA9 pairing with beta1 as a receptor for VEGF-C and VEGF-D; and MRC1 as an anti-inflammatory homeostatic marker. These are gene-product-to-function links, and the sentences carrying them carry numbered citations. The paper hedges the underlying residency as \"putative\", and the summary schematic is described as *potential* signalling mechanisms. Note the marker-derived functions overlap the structural claims: LYVE1/CEMIP2/ANTXR2 act on the ECM niche.",
+    "quotes": [
+      "LYVE1hi macrophages (called “Mac_LYVE1hi”) were detected across all reproductive organs (Extended Data Fig. 4c), consistent with observations in mice[49,50], and their transcriptomic profile pointed to a perivascular localisation and a non-inflammatory, tissue remodelling programme (Extended Data Fig. 5e and Supplementary Note 2.1).",
+      "Beyond their putative perivascular residency, these macrophages actively promote angiogenesis and tissue homeostasis through expression of several genes.",
+      "NRP1 encodes a co-receptor for VEGF ligands, through which NRP1+ macrophages promote neovascularisation in the mouse central nervous system, adipose tissue, and tumours32–34; PDGFC encodes a secreted ligand for PDGFR-α expressed by pericytes and stromal fibroblasts (Figure 2c), a signalling axis that drives alveogenesis in mice35; GAS6 encodes a ligand for TAM receptors TYRO3, AXL and MERTK, promoting survival and efferocytosis; and ENPP2 encodes an enzyme that produces lysophosphatidic acid, which exhibits pro-angiogenic effects in mice36.",
+      "LYVE1hi macrophages also express additional markers characteristic of anti-inflammatory, homeostatic macrophages, including MRC1 (Figure 3d).",
+      "F, Schematic summarising the potential signalling mechanisms of the LYVE1 hi , uftLAM, and oLAM subsets, alongside their identified tissue location.",
+      "These included LYVE1 and CEMIP2, together regulate the ECM niche: LYVE1 binds hyaluronan, a glycosaminoglycan enriched in the perivascular niche28, while CEMIP2 mediates its degradation29."
+    ]
+  }
+]

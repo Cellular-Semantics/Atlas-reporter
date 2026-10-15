@@ -1,0 +1,82 @@
+[
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "naming",
+    "found": true,
+    "summary": "The main text calls this \"a population of inflammatory macrophages constrained to the menstruating endometrium\" and gives the atlas's own short label in parentheses as \"uMac_Inf\"; the Supplementary Note gives the full name \"inflammatory uterine macrophages (called “uMac_Inf”)\". An Extended Data legend also refers to it simply as \"inflammatory macrophages\" in the list of uterine macrophage subsets, and the legend abbreviation lists gloss \"Inf, inflammatory\" and \"Mac, macrophage\". These are the atlas's labels. The general cell types asserted, nested: a macrophage, a LYVE1lo macrophage, and a myeloid cell. Populations named alongside it that are NOT this subject: its sibling LYVE1lo subsets uftLAM and oLAM (the two LAM populations), the sibling transitional macrophages, and the contrasting broader subtype LYVE1hi macrophages (\"Mac_LYVE1hi\"). Broader classes containing it: LYVE1lo macrophages, macrophages, the myeloid compartment. Importantly, uMac_Inf is one of three LYVE1lo subsets but is NOT one of the two carrying the LAM programme, so LAM terminology does not apply to it.",
+    "quotes": [
+      "By contrast, LYVE1lo macrophages resolved into three organ-enriched subsets, two of which shared a canonical lipid-associated macrophage (LAM) transcriptional programme[51] (Figure 3d and Extended Data Fig. 5f), and a population of inflammatory macrophages constrained to the menstruating endometrium (called “uMac_Inf”) (Extended Data Fig. 5g) (Lorenzi et al., biorxiv 2026).",
+      "The remaining macrophage subsets separated on the basis of LYVE1 expression, where LYVE1lo subsets included uterine and fallopian tube lipid-associated macrophages (uftLAMs), ovary LAMs (oLAMs) and inflammatory uterine macrophages (called “uMac_Inf”).",
+      "**G,** Bar plot displaying the proportion of LYVE1[hi] 117 macrophages, uftLAMs, oLAMs, and inflammatory macrophages within uterine tissues 118 (endometrium, myometrium, menstrual fluid, whole uterus) across menstrual cycle stage 119 (proliferative, secretory, menstrual, postmenopausal).",
+      "macrophage; oLAM, ovary lipid-associated macrophage; Inf, inflammatory; Cyc, cycling; cDC,",
+      "We also identified two broader macrophage subtypes distinguished by LYVE1 expression (Figure 3d)."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "location",
+    "found": true,
+    "summary": "The paper confines this population to the menstruating endometrium — i.e. the uterus, endometrial compartment, at the menstrual phase of the cycle. The basis is a computed compositional analysis: Extended Data Fig. 5g, a bar plot of the proportion of the uterine macrophage subsets across uterine sampling sites (endometrium, myometrium, menstrual fluid, whole uterus) and menstrual cycle stages (proliferative, secretory, menstrual, postmenopausal). Its designation as \"uterine\" and as one of three organ-enriched LYVE1lo subsets rests on the same compositional evidence plus the cross-organ proportion plot. No imaging or spatial-transcriptomics localisation of uMac_Inf is reported, and no developmental stage other than the adult menstrual cycle context is given.",
+    "quotes": [
+      "By contrast, LYVE1lo macrophages resolved into three organ-enriched subsets, two of which shared a canonical lipid-associated macrophage (LAM) transcriptional programme[51] (Figure 3d and Extended Data Fig. 5f), and a population of inflammatory macrophages constrained to the menstruating endometrium (called “uMac_Inf”) (Extended Data Fig. 5g) (Lorenzi et al., biorxiv 2026).",
+      "**G,** Bar plot displaying the proportion of LYVE1[hi] 117 macrophages, uftLAMs, oLAMs, and inflammatory macrophages within uterine tissues 118 (endometrium, myometrium, menstrual fluid, whole uterus) across menstrual cycle stage 119 (proliferative, secretory, menstrual, postmenopausal).",
+      "The remaining macrophage subsets separated on the basis of LYVE1 expression, where LYVE1lo subsets included uterine and fallopian tube lipid-associated macrophages (uftLAMs), ovary LAMs (oLAMs) and inflammatory uterine macrophages (called “uMac_Inf”).",
+      "numbered with 14 (uftLAM), 15 (oLAM), or 16 (uMac_Inf) indicate macrophage subsets"
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "markers",
+    "found": true,
+    "summary": "The only gene-level criterion this paper gives for uMac_Inf is low LYVE1: it is placed among the LYVE1lo subsets, the split being made on LYVE1 expression as shown in a dot plot (Figure 3d). No positive marker gene is named for it anywhere in the body prose, legends or supplementary notes available here — the paper explicitly defers its characterisation to a parallel study, so the absence is deliberate rather than an omission. Note that EREG appears as an example of an inflammatory marker in this paper, but in a sentence about the transitional macrophages that lack it, not as a stated uMac_Inf marker.",
+    "quotes": [
+      "The remaining macrophage subsets separated on the basis of LYVE1 expression, where LYVE1lo subsets included uterine and fallopian tube lipid-associated macrophages (uftLAMs), ovary LAMs (oLAMs) and inflammatory uterine macrophages (called “uMac_Inf”).",
+      "We also identified two broader macrophage subtypes distinguished by LYVE1 expression (Figure 3d).",
+      "uMac_Inf were characterised in a parallel study (Lorenzi et al. 2026; under review; preprint in bioRxiv).",
+      "These macrophages did not express markers associated with more differentiated macrophages subsets (i.e., LYVE1, FCGBP) or inflammatory markers (i.e., EREG), and were therefore named “transitional” macrophages."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "structure",
+    "found": false,
+    "summary": "The paper says nothing about the morphology or structure of uMac_Inf — no size, shape, process, inclusion or ultrastructural feature, and no marker gene is linked to a structural feature (no positive marker is named at all). Recorded as not addressed.",
+    "quotes": []
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "function",
+    "found": true,
+    "summary": "The paper asserts no function for uMac_Inf beyond what its name implies. It is called an inflammatory macrophage population, but no inflammatory mediator, target cell or process is named, no gene product is linked to any activity, and no basis for the \"inflammatory\" designation is given in this paper: characterisation is explicitly deferred to a parallel study (Lorenzi et al.). The subset is not among the two LAM populations whose lipid-mediator and immunoregulatory functions the paper works out, so none of that functional account transfers to it. Treat the inflammatory label here as an assertion without stated basis in this paper.",
+    "quotes": [
+      "By contrast, LYVE1lo macrophages resolved into three organ-enriched subsets, two of which shared a canonical lipid-associated macrophage (LAM) transcriptional programme[51] (Figure 3d and Extended Data Fig. 5f), and a population of inflammatory macrophages constrained to the menstruating endometrium (called “uMac_Inf”) (Extended Data Fig. 5g) (Lorenzi et al., biorxiv 2026).",
+      "uMac_Inf were characterised in a parallel study (Lorenzi et al. 2026; under review; preprint in bioRxiv).",
+      "uftLAMs and oLAMs express markers consistent with a canonical lipid-associated macrophage (LAM) programme (TREM2, CD9, SPP1) and lipid metabolism signature (ALDH2, APOE, APOC1, APOC2, LPL), and were characterised further in the main text."
+    ]
+  }
+]

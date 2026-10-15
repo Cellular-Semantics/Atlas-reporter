@@ -1,0 +1,380 @@
+[
+  {
+    "cell_label": "Immune_uftLAM",
+    "cell_fullname": "Uterine and fallopian tube lipid-associated macrophages",
+    "labelset": "L4",
+    "n_cells": 2760,
+    "parent": "Macrophages",
+    "context": {
+      "tissue": {
+        "Organ": [
+          "Fallopian Tube",
+          "Uterus",
+          "Reproductive tract",
+          "Ovary"
+        ],
+        "Organ_part": [
+          "Fallopian Tube Ampulla",
+          "Fallopian Tube Fimbria",
+          "Fallopian Tube",
+          "Endometrium",
+          "Fallopian Tube Isthmus",
+          "uterus, cervix, vagina",
+          "Gonad_and_extragonadal",
+          "Myometrium"
+        ],
+        "Tissue_ROI": [
+          "Fallopian Tube Ampulla",
+          "Fallopian Tube Fimbria",
+          "Fallopian Tube",
+          "Endometrium",
+          "Fallopian Tube Isthmus",
+          "uterus, cervix, vagina",
+          "Superficial_Endometrium",
+          "Myometrium",
+          "Gonad_and_extragonadal"
+        ]
+      },
+      "development_stage": {
+        "Developmental_stage": [
+          "Adult",
+          "Fetal"
+        ],
+        "Postnatal_age_years": [
+          "37",
+          "Unknown",
+          "43",
+          "42",
+          "55",
+          "Not applicable",
+          "32",
+          "61",
+          "62",
+          "31",
+          "47",
+          "44",
+          "65",
+          "30",
+          "40",
+          "46",
+          "34",
+          "24"
+        ],
+        "Tanner Stage": [
+          "Pubic V/Genitals-Breast V",
+          "Not applicable"
+        ],
+        "Gestational_age_pcw": [
+          "Not applicable",
+          "18",
+          "20"
+        ]
+      }
+    }
+  },
+  {
+    "cell_label": "Immune_oLAM",
+    "cell_fullname": "Ovarian lipid-associated macrophages",
+    "labelset": "L4",
+    "n_cells": 321,
+    "parent": "Macrophages",
+    "context": {
+      "tissue": {
+        "Organ": [
+          "Ovary",
+          "Uterus",
+          "Fallopian Tube",
+          "Vagina"
+        ],
+        "Organ_part": [
+          "Ovarian Medulla",
+          "Ovarian Cortex",
+          "Endometrium",
+          "Whole_Ovary",
+          "Vagina",
+          "Fallopian Tube Fimbria",
+          "Gonad_and_extragonadal",
+          "Myometrium",
+          "Fallopian Tube Ampulla",
+          "Mentrual fluid",
+          "Whole_Uterus",
+          "Gonad"
+        ],
+        "Tissue_ROI": [
+          "Ovarian Medulla",
+          "Cortex_outer",
+          "Endometrium",
+          "Follicle_Inner_cortex",
+          "Follicle",
+          "Whole_Ovary_right",
+          "Vagina",
+          "Fallopian Tube Fimbria",
+          "Gonad_and_extragonadal",
+          "Myometrium",
+          "Fallopian Tube Ampulla",
+          "Mentrual fluid",
+          "Superficial_Endometrium",
+          "Whole_Ovary",
+          "Gonad"
+        ]
+      },
+      "development_stage": {
+        "Developmental_stage": [
+          "Adult",
+          "paediatric",
+          "Fetal"
+        ],
+        "Postnatal_age_years": [
+          "44",
+          "5",
+          "2",
+          "Not applicable",
+          "26",
+          "10",
+          "31",
+          "37",
+          "55",
+          "35",
+          "42",
+          "52",
+          "32",
+          "11"
+        ],
+        "Tanner Stage": [
+          "Pubic V/Genitals-Breast V",
+          "Pubic I/Genitals-Breast I",
+          "Not applicable",
+          "Unknown"
+        ],
+        "Gestational_age_pcw": [
+          "Not applicable"
+        ]
+      }
+    }
+  },
+  {
+    "cell_label": "Immune_Mac_LYVE1hi",
+    "cell_fullname": "Macrophages LYVE1+",
+    "labelset": "L4",
+    "n_cells": 16783,
+    "parent": "Macrophages",
+    "context": {
+      "tissue": {
+        "Organ": [
+          "Fallopian Tube",
+          "Uterus",
+          "Ovary",
+          "Reproductive tract",
+          "Vagina"
+        ],
+        "Organ_part": [
+          "Gonad_and_extragonadal",
+          "Endometrium",
+          "Fallopian Tube Ampulla",
+          "Fallopian Tube Fimbria",
+          "Myometrium",
+          "Fallopian Tube Isthmus",
+          "Fallopian Tube",
+          "Whole_Ovary",
+          "Ovarian Cortex",
+          "Gonad",
+          "Whole_Uterus",
+          "Vagina",
+          "Mentrual fluid",
+          "Follicle"
+        ],
+        "Tissue_ROI": [
+          "Gonad_and_extragonadal",
+          "Endometrium",
+          "Fallopian Tube Ampulla",
+          "Fallopian Tube Fimbria",
+          "Myometrium",
+          "Fallopian Tube Isthmus",
+          "Superficial_Endometrium",
+          "Cortex_outer",
+          "Fallopian Tube",
+          "Gonad",
+          "Vagina",
+          "Mentrual fluid",
+          "Whole_Ovary",
+          "Antral_follicle"
+        ]
+      },
+      "development_stage": {
+        "Developmental_stage": [
+          "Adult",
+          "Fetal",
+          "paediatric"
+        ],
+        "Postnatal_age_years": [
+          "Not applicable",
+          "31",
+          "37",
+          "52",
+          "32",
+          "43",
+          "30",
+          "62",
+          "65",
+          "61",
+          "35",
+          "26",
+          "42",
+          "28",
+          "46",
+          "40",
+          "34",
+          "55",
+          "33",
+          "47",
+          "23",
+          "24"
+        ],
+        "Tanner Stage": [
+          "Pubic V/Genitals-Breast V",
+          "Not applicable",
+          "Pubic I/Genitals-Breast I"
+        ],
+        "Gestational_age_pcw": [
+          "Not applicable",
+          "17",
+          "14",
+          "11",
+          "7.5",
+          "8.6",
+          "10"
+        ]
+      }
+    }
+  },
+  {
+    "cell_label": "Immune_uMac_Inf",
+    "cell_fullname": "Inflammatory uterine macrophages",
+    "labelset": "L4",
+    "n_cells": 23069,
+    "parent": "Macrophages",
+    "context": {
+      "tissue": {
+        "Organ": [
+          "Uterus"
+        ],
+        "Organ_part": [
+          "Mentrual fluid",
+          "Endometrium"
+        ],
+        "Tissue_ROI": [
+          "Mentrual fluid",
+          "Endometrium"
+        ]
+      },
+      "development_stage": {
+        "Developmental_stage": [
+          "Adult"
+        ],
+        "Postnatal_age_years": [
+          "33",
+          "24",
+          "32",
+          "31",
+          "38",
+          "35"
+        ],
+        "Tanner Stage": [
+          "Pubic V/Genitals-Breast V"
+        ],
+        "Gestational_age_pcw": [
+          "Not applicable"
+        ]
+      }
+    }
+  },
+  {
+    "cell_label": "Immune_Mac_Transitional",
+    "cell_fullname": "Intermediate monocyte-derived macrophages",
+    "labelset": "L4",
+    "n_cells": 1787,
+    "parent": "Macrophages",
+    "context": {
+      "tissue": {
+        "Organ": [
+          "Uterus",
+          "Ovary",
+          "Fallopian Tube",
+          "Cervix",
+          "Reproductive tract"
+        ],
+        "Organ_part": [
+          "Endometrium",
+          "Gonad_and_extragonadal",
+          "Ovarian Cortex",
+          "Gonad",
+          "Whole_Uterus",
+          "Mentrual fluid",
+          "Myometrium",
+          "Fallopian Tube Ampulla",
+          "Whole_Ovary",
+          "Fallopian Tube",
+          "cervix",
+          "Fallopian Tube Fimbria"
+        ],
+        "Tissue_ROI": [
+          "Endometrium",
+          "Gonad_and_extragonadal",
+          "Superficial_Endometrium",
+          "Follicle_Inner_cortex",
+          "Gonad",
+          "Cortex_outer",
+          "Mentrual fluid",
+          "Myometrium",
+          "Fallopian Tube Ampulla",
+          "Whole_Ovary",
+          "Fallopian Tube",
+          "Follicle",
+          "unknown",
+          "Fallopian Tube Fimbria"
+        ]
+      },
+      "development_stage": {
+        "Developmental_stage": [
+          "Adult",
+          "Fetal",
+          "paediatric"
+        ],
+        "Postnatal_age_years": [
+          "Not applicable",
+          "31",
+          "33",
+          "2",
+          "35",
+          "28",
+          "24",
+          "42",
+          "52",
+          "32",
+          "37",
+          "30",
+          "35-65",
+          "26",
+          "34",
+          "40",
+          "5",
+          "29"
+        ],
+        "Tanner Stage": [
+          "Pubic V/Genitals-Breast V",
+          "Not applicable",
+          "Pubic I/Genitals-Breast I"
+        ],
+        "Gestational_age_pcw": [
+          "Not applicable",
+          "17",
+          "14",
+          "16",
+          "11",
+          "10",
+          "13"
+        ]
+      }
+    }
+  }
+]

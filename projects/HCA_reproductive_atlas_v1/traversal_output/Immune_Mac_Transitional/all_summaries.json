@@ -1,0 +1,80 @@
+[
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "naming",
+    "found": true,
+    "summary": "The paper calls this \"a transitional macrophage population that co-expressed monocyte and macrophage markers\", and the Supplementary Note states outright that the cells \"were therefore named “transitional” macrophages\" — with the reason for the name given: they lack markers of more differentiated macrophage subsets and lack inflammatory markers. The paper's own descriptive phrase for it in the supplement is \"a broadly distributed macrophage population that shares expression of certain monocyte-associated markers (i.e., S100A9) but lacks others (i.e., S100A12)\". These are the atlas's labels for this set of cells. The general cell type asserted is a macrophage, within the myeloid compartment; the paper positions it between monocytes and the more differentiated macrophage subsets, but note it never uses the phrase \"monocyte-derived\" for this population — the derivation implied by the atlas's full name is not asserted in this paper. Populations named alongside it that are NOT this subject: the two broader macrophage subtypes LYVE1hi (\"Mac_LYVE1hi\") and LYVE1lo, and within LYVE1lo the three subsets uftLAM, oLAM and uMac_Inf; also the classical and non-classical monocytes it shares markers with, and the dendritic cell subsets re-clustered together with it. Broader classes containing it: macrophages and the myeloid compartment.",
+    "quotes": [
+      "Within the myeloid compartment, we resolved conventional and non-conventional dendritic cell (DC) subsets, classical and non-classical monocytes, and a transitional macrophage population that co-expressed monocyte and macrophage markers (Figure 3a, Extended Data Fig. 4b, Extended Data Fig. 5d and Supplementary Note 2.1).",
+      "These macrophages did not express markers associated with more differentiated macrophages subsets (i.e., LYVE1, FCGBP) or inflammatory markers (i.e., EREG), and were therefore named “transitional” macrophages.",
+      "We detected classical (CD14hi, FCGR3Alo) and non-classical (FCGR3Ahi, CD14lo) monocytes across nearly all organs (Extended Data Fig. 5d,f and Extended Data Fig. 4c), alongside a broadly distributed macrophage population that shares expression of certain monocyte-associated markers (i.e., S100A9) but lacks others (i.e., S100A12) (Extended Data Fig. 4b).",
+      "We also identified two broader macrophage subtypes distinguished by LYVE1 expression (Figure 3d).",
+      "The remaining macrophage subsets separated on the basis of LYVE1 expression, where LYVE1lo subsets included uterine and fallopian tube lipid-associated macrophages (uftLAMs), ovary LAMs (oLAMs) and inflammatory uterine macrophages (called “uMac_Inf”)."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "location",
+    "found": true,
+    "summary": "The paper gives only a coarse, non-anatomical location: the population is described as \"broadly distributed\", i.e. not restricted to one organ, in contrast to the organ-enriched LYVE1lo subsets. The basis is a computed compositional analysis — Extended Data Fig. 4c, the bar plot of the proportion of each immune cell state within each organ, and the monocyte/macrophage/cDC2 sub-manifold of Extended Data Fig. 5d. On developmental stage the paper is specific in one respect: prenatal reproductive tract-derived macrophages other than the LYVE1-expressing ones fall into this subset, so the population spans prenatal tissue; the immune analysis as a whole integrates prenatal, postnatal and adult cells. No tissue compartment, niche or spatial-transcriptomics localisation is reported for this population.",
+    "quotes": [
+      "We detected classical (CD14hi, FCGR3Alo) and non-classical (FCGR3Ahi, CD14lo) monocytes across nearly all organs (Extended Data Fig. 5d,f and Extended Data Fig. 4c), alongside a broadly distributed macrophage population that shares expression of certain monocyte-associated markers (i.e., S100A9) but lacks others (i.e., S100A12) (Extended Data Fig. 4b).",
+      "Prenatal reproductive tract-derived macrophages, besides those that expressed LYVE1, were present in this subset.",
+      "depicted in **A. C,** Bar plot displaying the proportion of all immune cell states within each organ.",
+      "**D,** UMAP visualisation manifold of scRNA-seq data of 110 68,198 monocytes, macrophages, and cDC2 from the Human Female Reproductive System 111 Cell Atlas v1.",
+      "Cross-organ integration of prenatal, postnatal and adult immune cells from individuals without exogenous hormone treatment resolved multiple lymphoid, myeloid, and progenitor cell states across 13 broad compartments (Extended Data Fig. 4a): haematopoietic progenitor cells (HPC), myeloid progenitors, megakaryocytes/platelets, erythroid cells, granulocytes, monocytes, macrophages, conventional and non-conventional dendritic cells (DC), B cells, T cells, innate lymphoid cells (ILC) and natural killer (NK) cells."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "markers",
+    "found": true,
+    "summary": "The paper characterises this population largely by what it lacks. Positive: S100A9, a monocyte-associated marker it shares. Negative: S100A12 (another monocyte-associated marker it lacks), LYVE1 and FCGBP (markers of more differentiated macrophage subsets), and EREG (an inflammatory marker). More generally it is said to co-express monocyte and macrophage markers. Basis: expression dot plot of marker genes for all immune cell states (Extended Data Fig. 4b), computed after monocytes, macrophages and cDC2 were clustered and re-annotated separately as a dedicated sub-manifold; a Methods section headed \"Differential expression analysis between macrophage and ILC3 subsets\" is listed but its text is not included in this job file. No de novo positive marker unique to this population is named.",
+    "quotes": [
+      "We detected classical (CD14hi, FCGR3Alo) and non-classical (FCGR3Ahi, CD14lo) monocytes across nearly all organs (Extended Data Fig. 5d,f and Extended Data Fig. 4c), alongside a broadly distributed macrophage population that shares expression of certain monocyte-associated markers (i.e., S100A9) but lacks others (i.e., S100A12) (Extended Data Fig. 4b).",
+      "These macrophages did not express markers associated with more differentiated macrophages subsets (i.e., LYVE1, FCGBP) or inflammatory markers (i.e., EREG), and were therefore named “transitional” macrophages.",
+      "Within the myeloid compartment, we resolved conventional and non-conventional dendritic cell (DC) subsets, classical and non-classical monocytes, and a transitional macrophage population that co-expressed monocyte and macrophage markers (Figure 3a, Extended Data Fig. 4b, Extended Data Fig. 5d and Supplementary Note 2.1).",
+      "To enable the identification of cell states, monocytes, macrophages and cDC2 subsets were clustered and re-annotated separately.",
+      "Differential expression analysis between macrophage and ILC3 subsets"
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "structure",
+    "found": false,
+    "summary": "The paper says nothing about the morphology or structure of the transitional macrophage population — no size, shape, process, inclusion or ultrastructural feature is described, and none of its named genes (S100A9, or the absent S100A12, LYVE1, FCGBP, EREG) is linked to a structural feature. Recorded as not addressed.",
+    "quotes": []
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "function",
+    "found": false,
+    "summary": "The paper attributes no function to this population. It is defined purely by position in the differentiation continuum — co-expressing monocyte and macrophage markers, lacking differentiated-subset and inflammatory markers — and no activity, secreted product, target cell or process is named for it; nor is any gene product linked to a function. The functional accounts the paper develops belong to the sibling LYVE1hi and LAM subsets, and do not transfer. Recorded as not addressed.",
+    "quotes": []
+  }
+]

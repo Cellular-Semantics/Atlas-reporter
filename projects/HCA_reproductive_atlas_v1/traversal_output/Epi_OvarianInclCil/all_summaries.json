@@ -1,0 +1,68 @@
+[
+  {
+    "aspect": "naming",
+    "found": true,
+    "summary": "This is the one of the three ciliated populations the paper names in running prose. The full name used is 'Ovarian Inclusion Ciliated', given in quotation marks as the annotation applied to a set of rare EPCAM+/PAX8+ ovarian epithelial cells. Figure legends give the abbreviations from which the atlas's own label 'Epi_OvarianInclCil' is composed — 'Incl, inclusion; Cil, ciliated' (Figure 5) and 'Cil, ciliated; ... Incl, inclusion' (Figure 1) — but the compound label string itself does not appear in the text. Note a discrepancy the reader needs: the paper gives 'n = 202 and n = 20 cells, respectively' for Ovarian Inclusion Ciliated and Ovarian Inclusion Secretory, i.e. 202 for the ciliated population, whereas the atlas records 20 cells for Epi_OvarianInclCil; I cannot resolve which is right from the text. General cell types the paper says this is: 'epithelial' (one of the eight major lineages) and 'ciliated', one of four epithelial sublineages shared across tissues; more broadly the paper classes it as one of the 'unconventional epithelial states' / 'ectopic epithelial populations'. Populations that are NOT this subject but sit beside it in the same passage: 'Ovarian Inclusion Secretory' (a sibling), the mesothelial 'ovarian surface epithelium', and the 'paratubal inclusion' epithelium consistent with Walthard cell rests.",
+    "quotes": [
+      "In ovarian samples, beyond the mesothelial cells of the ovarian surface epithelium, we detected rare EPCAM+/PAX8+ epithelial cells annotated as “Ovarian Inclusion Ciliated” and “Ovarian Inclusion Secretory” (n = 202 and n = 20 cells, respectively; Figure 4b), which mapped to reproductive tract epithelial states (Figure 4a).",
+      "Incl, inclusion; Cil, ciliated; Sec, secretory; Fib, fibroblast.",
+      "Cil, ciliated; Sec, secretory; Endo, endometrial; Incl, inclusion",
+      "epithelial cells grouped into four sublineages shared across tissues: mucinous, squamous, ciliated and non-ciliated secretory",
+      "We identified three epithelial populations outside their usual anatomical location: two ovarian cortical epithelial inclusions, one of which was compatible with focal ovarian endometriosis, and one paratubal inclusion consistent with Walthard cell rests."
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Unconventional epithelial states sampled in reference tissues; Figure 1 legend; Figure 5 legend"
+  },
+  {
+    "aspect": "location",
+    "found": true,
+    "summary": "The paper places these cells in the ovary, inside discrete intraovarian epithelial inclusions — an ectopic position, since their transcriptional programme is that of the reproductive tract epithelium rather than the ovary. Two methods establish this. First, imaging: spatial transcriptomics localised the cells to discrete intraovarian inclusions, and the paper uses that placement to argue they are genuinely tissue-resident and not dissociation contaminants; the imaging was bespoke 480-gene Xenium plus adjacent Visium HD sections of ovarian cortex, with label transfer by TACCO (Figure 5a,b legend). Second, a computed comparison: the cells mapped onto reproductive tract epithelial states in the integrated epithelial manifold, which is what identified them as out of place. Developmental stage is postnatal/adult — the imaged cortex sections are from named adult and paediatric donors (28 years and 14 years). The paper does not say which layer or which side of the ovary, beyond 'cortex' for the sections imaged, and does not report whether the ciliated cells specifically (as opposed to the secretory cells) were the ones seen in the cyst lining.",
+    "quotes": [
+      "Spatial transcriptomics localised these cells to discrete intraovarian inclusions, supporting their interpretation as tissue-resident epithelial populations rather than sampling contaminants.",
+      "The strong tissue-specific identities of reproductive epithelial populations (Figure 4a and Extended Data Fig. 6b) allowed us to identify rare epithelial cells whose transcriptional programmes matched that of different reproductive organs.",
+      "Gene panels show log-transformed expression of PAX8 (reproductive tract epithelium), OVGP1 (fallopian tube-like epithelium), WNT7A (endometrial-like epithelium) and HOXA10 (lumbosacral HOX factor characteristic of the uterine segment).",
+      "In ovarian samples, beyond the mesothelial cells of the ovarian surface epithelium, we detected rare EPCAM+/PAX8+ epithelial cells annotated as “Ovarian Inclusion Ciliated” and “Ovarian Inclusion Secretory” (n = 202 and n = 20 cells, respectively; Figure 4b), which mapped to reproductive tract epithelial states (Figure 4a)."
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Unconventional epithelial states sampled in reference tissues; Figure 5 legend"
+  },
+  {
+    "aspect": "markers",
+    "found": true,
+    "summary": "Two genes are named for this population directly: EPCAM and PAX8, in the sentence that introduces and annotates it. The basis is expression in the single-cell data — the sentence reads as an inference from expression, and the same genes are then used as imaging probes, with the Figure 5 legends glossing PAX8 as marking 'reproductive tract epithelium' and EPCAM as the 'canonical epithelial marker'. Both are markers of the epithelial identity of these cells, not of their ciliated character: the paper names no ciliary gene at all (FOXJ1 and equivalents are absent from the whole text). OVGP1 and WNT7A appear in the same passage but are attributed to the secretory cells and to the endometrial-like structure respectively, so they are not markers of this subject. Marker tables the paper points to (Supplementary Table 2, Supplementary Note 2.1) could not be opened in this run — there is no supplement store for this project (ATLAS_CHAT_CORPUS_ROOT is not set) — so a fuller marker set may exist there unread.",
+    "quotes": [
+      "In ovarian samples, beyond the mesothelial cells of the ovarian surface epithelium, we detected rare EPCAM+/PAX8+ epithelial cells annotated as “Ovarian Inclusion Ciliated” and “Ovarian Inclusion Secretory” (n = 202 and n = 20 cells, respectively; Figure 4b), which mapped to reproductive tract epithelial states (Figure 4a).",
+      "Colours indicate EPCAM (blue; canonical epithelial marker), OVGP1 (green; fallopian tube epithelium), GATA3 (yellow; urothelial epithelium) and TP63 (red; squamous epithelium).",
+      "Gene panels show log-transformed expression of PAX8 (reproductive tract epithelium), OVGP1 (fallopian tube-like epithelium), WNT7A (endometrial-like epithelium) and HOXA10 (lumbosacral HOX factor characteristic of the uterine segment).",
+      "All populations were mapped to a structured nomenclature framework developed within the Human Cell Atlas Reproductive Network in consultation with domain experts and pathologists (Supplementary Table 2 and Supplementary Note 2.1)."
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Unconventional epithelial states sampled in reference tissues; Figure 5 legend"
+  },
+  {
+    "aspect": "structure",
+    "found": true,
+    "summary": "The paper describes the tissue structure these cells belong to, not the morphology of the cells themselves. The structures are 'discrete intraovarian inclusions', identified by spatial transcriptomics and read by expert histopathologists as ovarian cortical inclusion cysts — one such cyst described as lined by tubal-type epithelium, captured in five donors. Note the attribution limit: the sentence describing the cyst lining names PAX8+/OVGP1+ secretory cells, so the paper does not state that the ciliated cells form that lining. On the cells' own morphology the paper is silent: no cilia, no apical structure, no cell shape, and it names no gene as producing or marking a structural feature. The 'ciliated' in the name is used as a label, never described.",
+    "quotes": [
+      "Spatial transcriptomics localised these cells to discrete intraovarian inclusions, supporting their interpretation as tissue-resident epithelial populations rather than sampling contaminants.",
+      "One structure contained PAX8+/OVGP1+ secretory cells, consistent with an ovarian cortical inclusion cyst lined by tubal-type epithelium, long proposed as a site of origin of epithelial ovarian carcinoma[59] (Figure 5a,b).",
+      "These interpretations were reviewed with expert histopathologists, who supported the diagnosis of Walthard cell rests, ovarian cortical inclusion cysts, and focal ovarian endometriosis in the corresponding regions.",
+      "We also captured ovarian cortical inclusion cysts of tubal origin in five donors, which have historically been considered possible precursors of epithelial ovarian carcinoma[29,59]."
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Unconventional epithelial states sampled in reference tissues; Discussion"
+  },
+  {
+    "aspect": "function",
+    "found": false,
+    "summary": "The paper assigns this population no biological function. Its significance in the paper is diagnostic and pathogenic rather than functional: detecting it is presented as evidence that a cross-tissue reference can surface ectopic epithelium and possible preclinical disease in control donors, and the inclusion cysts it occupies are discussed as candidate precursors of epithelial ovarian carcinoma. But that is a claim about what the structure may become, carried by citation to earlier work, not a statement of what these cells do; and no gene is said to carry out or enable any activity of theirs. I am recording found: false for function proper rather than reclassifying the disease-origin discussion as a function.",
+    "quotes": [],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Unconventional epithelial states sampled in reference tissues; Discussion"
+  }
+]

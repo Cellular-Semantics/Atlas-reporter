@@ -1,0 +1,61 @@
+[
+  {
+    "aspect": "naming",
+    "found": true,
+    "summary": "The paper never uses the atlas label 'Endometrial ciliated epithelial' or its synonym 'Epi_EndoCil' in prose or legends (the strings 'EndoCil' and 'Epi_' do not occur anywhere in the text). What it names is the general cell type this population is asserted to be: 'ciliated', one of four epithelial sublineages said to be shared across the reproductive organs. Figure legends supply the abbreviations the atlas uses in its own figure labels, and these are the closest the paper comes to the atlas label components: 'Cil, ciliated' appears alongside 'Endo, endometrial' in the Figure 1 legend, and 'Cil, ciliated' appears in the Figure 6 and Figure 7 legends among endometrial epithelial cell-state abbreviations. The label itself is stated to come from a nomenclature framework held in Supplementary Table 2 and Supplementary Note 2.1 — material this run could not open (no supplement store for this project; ATLAS_CHAT_CORPUS_ROOT is not set). Broader class: 'epithelial', one of the eight major lineages. Sibling sublineages the paper names, which are NOT this subject: 'mucinous', 'squamous', 'non-ciliated secretory'. The paper does not name the L4 child states (Cyc, Diff, eProf).",
+    "quotes": [
+      "epithelial cells grouped into four sublineages shared across tissues: mucinous, squamous, ciliated and non-ciliated secretory",
+      "Cil, ciliated; Sec, secretory; Endo, endometrial; Incl, inclusion",
+      "Prof/Prolif, proliferative; Sec, secretory; emSec, early/mid secretory; lSec, late secretory; Cil, ciliated; Lum, luminal; Bas, basalis",
+      "All populations were mapped to a structured nomenclature framework developed within the Human Cell Atlas Reproductive Network in consultation with domain experts and pathologists (Supplementary Table 2 and Supplementary Note 2.1)."
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Mucinous epithelial specialisation across the reproductive tract; Figure 1 legend; Figure 6 legend"
+  },
+  {
+    "aspect": "location",
+    "found": true,
+    "summary": "The paper places this population no more precisely than the organ. It makes no statement locating ciliated cells within the endometrium — not to the functionalis or basalis, not to gland versus lumen, and no Xenium or Visium panel is reported for them, even though the paper does exactly that kind of spatial localisation for the neighbouring mucinous population in the same results section. The only positive evidence is the computed cross-organ integration: ciliated cells are one of four epithelial sublineages 'shared across tissues', shown as an epithelial UMAP and an organ-composition bar plot over 205,208 postnatal epithelial cells (Figure 4a,b), with the uterus among the five integrated organs. Developmental stage is adult/paediatric by the paper's own framing of its results sections.",
+    "quotes": [
+      "epithelial cells grouped into four sublineages shared across tissues: mucinous, squamous, ciliated and non-ciliated secretory",
+      "Batch-corrected UMAP visualisation manifold of the scRNA-seq dataset of all epithelial cells (n=205,208; \" broad_celltype \" labels) from the postnatal donors in the Human Female Reproductive System Cell Atlas v1, coloured by broad cell state.",
+      "Bar plot showing the cellular composition of epithelial populations (\" broad_celltype \" labels) according to the sampled organ.",
+      "We assembled the unified Human Female Reproductive System Cell Atlas v1 by integrating single-cell transcriptomic datasets from the human ovary, fallopian tube, uterus, cervix and vagina spanning fetal development through postmenopause",
+      "The following results sections describe the major cell types and transcriptional programmes identified across organs and lineages, with a focus on paediatric/adult stages."
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Human Female Reproductive System Cell Atlas v1; Mucinous epithelial specialisation across the reproductive tract; Figure 4 legend"
+  },
+  {
+    "aspect": "markers",
+    "found": false,
+    "summary": "The paper names no marker gene for endometrial ciliated epithelial cells, and none for the ciliated sublineage at all. FOXJ1 and other ciliary genes are absent from the whole text. The paper asserts that identities were assigned from canonical and de novo markers, but the genes concerned are shown only inside the Figure 4c image and in Supplementary Table 2 / Supplementary Note 2.1, neither of which was reachable in this run because there is no supplement store for this project (ATLAS_CHAT_CORPUS_ROOT is not set). This is therefore an unreachable-source gap, not a demonstrated silence about markers in general.",
+    "quotes": [],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "Figure 4 legend"
+  },
+  {
+    "aspect": "structure",
+    "found": false,
+    "summary": "No morphological description of this population appears anywhere in the paper — no cilia, no apical structure, no cell shape, no account of the epithelium it sits in. With no markers named for the population either, the paper makes no claim connecting any gene to a structural feature of these cells.",
+    "quotes": [],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet"
+  },
+  {
+    "aspect": "function",
+    "found": true,
+    "summary": "The paper ascribes no physiological role to endometrial ciliated epithelial cells. Its one functional statement about ciliated cells concerns the general cell type and is regulatory: a putative enhancer 394,800 bp downstream of BSPRY, overlapping a female genital tract polyps GWAS locus, is preferentially accessible in ciliated and glandular secretory epithelial cells. The basis is a computed peak-to-gene link in the scATAC-seq atlas rendered as a coverage track (Figure 7g); the locus itself is carried by citation. The endometrium is one of the three organs in that scATAC atlas, so the finding covers endometrial ciliated cells, but the sentence does not resolve which organ's ciliated cells carry the accessible peak. The paper offers no mechanism, only a carried-from-earlier-work statement about BSPRY in calcium signalling, and says the mechanistic role in polyp formation remains to be established.",
+    "quotes": [
+      "We additionally identify BSPRY as a novel candidate effector gene for an FGT polyps risk locus[85], with the associated peak overlapping a putative enhancer 394,800bp downstream of the gene, preferentially accessible in ciliated and glandular secretory epithelial cells (Figure 7g).",
+      "we assembled a harmonised scATAC-seq atlas across the ovary, fallopian tube and endometrium",
+      "Meso, mesothelial; Cil, ciliated; Fun, functionalis; Lum, luminal; Prof/Prolif, proliferative; Sec, secretory"
+    ],
+    "source_paper": {"doi": "10.64898/2026.06.10.731198", "role": "atlas"},
+    "retrieval_method": "corpus_snippet",
+    "section": "A chromatin accessibility atlas links non-coding variants to cell-type specific regulatory elements; Figure 7 legend"
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "naming",
+    "found": true,
+    "summary": "The paper's running-prose name for this population is \"uterine and fallopian tubes LAMs\", abbreviated uftLAMs; the figure legends and Extended Data legends expand the abbreviation as \"uterine and fallopian tube lipid-associated macrophage\", and the Supplementary Note writes it \"uterine and fallopian tube lipid-associated macrophages (uftLAMs)\". These are the atlas's own labels for this set of cells. The general cell types the paper asserts it to be are, in nested order: a lipid-associated macrophage (LAM) — one of two populations sharing \"a canonical lipid-associated macrophage (LAM) transcriptional programme\"; a LYVE1lo macrophage; a macrophage; and a member of the myeloid compartment. Populations that are NOT this subject but are named alongside it: its sibling LAM subset oLAM (ovary LAM), the sibling inflammatory subset uMac_Inf, the sibling transitional macrophage population, and the contrasting broader subtype LYVE1hi macrophages (“Mac_LYVE1hi”); the broader classes containing it are \"LYVE1lo macrophages\", macrophages, and the myeloid compartment.",
+    "quotes": [
+      "The two LAM populations were distinct between organs: uterine and fallopian tubes LAMs (uftLAMs) were defined by expression of FCGBP and CX3CR1",
+      "uftLAM, uterine and fallopian tube lipid-associated macrophage",
+      "The remaining macrophage subsets separated on the basis of LYVE1 expression, where LYVE1lo subsets included uterine and fallopian tube lipid-associated macrophages (uftLAMs), ovary LAMs (oLAMs) and inflammatory uterine macrophages (called “uMac_Inf”).",
+      "By contrast, LYVE1lo macrophages resolved into three organ-enriched subsets, two of which shared a canonical lipid-associated macrophage (LAM) transcriptional programme[51] (Figure 3d and Extended Data Fig. 5f), and a population of inflammatory macrophages constrained to the menstruating endometrium (called “uMac_Inf”) (Extended Data Fig. 5g) (Lorenzi et al., biorxiv 2026).",
+      "We also identified two broader macrophage subtypes distinguished by LYVE1 expression (Figure 3d).",
+      "Within the myeloid compartment, we resolved conventional and non-conventional dendritic cell (DC) subsets, classical and non-classical monocytes, and a transitional macrophage population that co-expressed monocyte and macrophage markers (Figure 3a, Extended Data Fig. 4b, Extended Data Fig. 5d and Supplementary Note 2.1)."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "location",
+    "found": true,
+    "summary": "uftLAMs are placed in the mucosal epithelium of both the uterus (endometrium) and the fallopian tube, and are described in the Discussion as shared between the uterine endometrium and fallopian tube. The basis is a spatial method: imaging of the uftLAM marker FCGBP alongside the pan-macrophage marker CD68 in a fallopian tube cross-section and an endometrial section taken during day 5 of menstruation, using the Xenium 5k panel. Compartment resolution comes from the same legend, which marks the boundary between the inner mucosal folds and the smooth muscle layer of the tube and the endometrial-myometrial border. Developmental stage is given only indirectly: the results sections focus on paediatric/adult stages, and the immune manifold combines prenatal, postnatal and adult cells.",
+    "quotes": [
+      "Spatial transcriptomics localised uftLAMs to the mucosal epithelium in both the uterus (endometrium) and the fallopian tube (Figure 3e), situating them at a lipid-rich interface consistent with their lipid-associated signature.",
+      "E, (Top) Spatial distribution of transcripts for CD68 (left column, pan-macrophage marker) and FCGBP (right column, uftLAM marker) within a fallopian tube cross-section stained by the Xenium 5k panel. Bottom two images are a zoom in of the inset indicated by the white square. Dotted shape indicates the boundary between the inner mucosal folds and the smooth muscle layer of the tube. (Bottom) visualisation of the same genes within an endometrial tissue section taken during day 5 of menstruation. Dotted line indicates the endometrial-myometrial border.",
+      "Amongst them, uftLAMs, shared between the uterine endometrium and fallopian tube, upregulate IL15, which can activate the unique uNK cells characteristic of the endometrial niche[95], and co-express inflammatory and immunoregulatory markers, including FCGBP, reflecting the dual requirement for immune vigilance and tolerance that characterises the uterine microenvironment during pregnancy[96].",
+      "The following results sections describe the major cell types and transcriptional programmes identified across organs and lineages, with a focus on paediatric/adult stages.",
+      "Cross-organ integration of prenatal, postnatal and adult immune cells from individuals without exogenous hormone treatment resolved multiple lymphoid, myeloid, and progenitor cell states across 13 broad compartments (Extended Data Fig. 4a): haematopoietic progenitor cells (HPC), myeloid progenitors, megakaryocytes/platelets, erythroid cells, granulocytes, monocytes, macrophages, conventional and non-conventional dendritic cells (DC), B cells, T cells, innate lymphoid cells (ILC) and natural killer (NK) cells."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "markers",
+    "found": true,
+    "summary": "The defining markers are FCGBP and CX3CR1. Further named genes, all established by computed differential comparison against the other macrophage subsets and displayed as expression dot plots: inflammatory genes IL18, OSM, C3, CLEC5A; the anti-angiogenic mediator VASH1; a more inflammatory state relative to oLAMs (TNF, CCL5, NLRP3) plus IL15; anti-inflammatory mediators FCGBP, SIGLEC10, RGS1; and a lipid-mediator biosynthetic programme (PLA2G4A, ALOX5, ALOX5AP, PTGS1, LPCAT2, DAGLB, CH25H). As a LAM, it also carries the canonical LAM programme (TREM2, CD9, SPP1) and a lipid metabolism signature (ALDH2, APOE, APOC1, APOC2, LPL) — note these last are stated for uftLAMs and oLAMs jointly, i.e. for the general LAM type. Basis: expression dot plots (Figure 3d, Extended Data Fig. 5f) and a differential expression analysis reported in Supplementary Table 3; the Methods carry a section headed \"Differential expression analysis between macrophage and ILC3 subsets\", whose text is not included in this job file. Being LYVE1lo is itself a defining criterion.",
+    "quotes": [
+      "The two LAM populations were distinct between organs: uterine and fallopian tubes LAMs (uftLAMs) were defined by expression of FCGBP and CX3CR1",
+      "Compared with LYVE1hi macrophages and oLAMs, uftLAMs are transcriptionally poised toward pro-inflammatory lipid mediator production, upregulating inflammatory genes (IL18, OSM, C3, CLEC5A) and anti-angiogenic mediators (VASH1) alongside CX3CR1, which is a hallmark of mucosal macrophage motility (Figure 3d and Supplementary Table 3).",
+      "Relative to oLAMs, uftLAMs display a markedly more inflammatory transcriptional state (TNF, CCL5, NLRP3) and distinctive upregulation of IL15, which activates uNK cells enriched in the endometrium (Figure 3d and Supplementary Table 3).",
+      "However, concurrent expression of anti-inflammatory mediators (FCGBP, SIGLEC10, RGS1) places uftLAMs outside a canonical M1 classification (Figure 3d), pointing instead to a tissue-adapted, mixed inflammatory state.",
+      "Beyond lipid accumulation, which is characteristic of LAMs broadly, uftLAMs also deploy a dedicated biosynthetic programme: upregulation of PLA2G4A, ALOX5, ALOX5AP, PTGS1, LPCAT2, DAGLB and CH25H (Figure 3d and Supplementary Table 3) equips these cells to produce leukotrienes, prostaglandins, platelet-activating factor, and endocannabinoids, which are bioactive lipids that can act on neighbouring stromal and immune cells[52–56].",
+      "uftLAMs and oLAMs express markers consistent with a canonical lipid-associated macrophage (LAM) programme (TREM2, CD9, SPP1) and lipid metabolism signature (ALDH2, APOE, APOC1, APOC2, LPL), and were characterised further in the main text.",
+      "D, Dot plot showing the log-transformed, min-max normalised expression of selected marker genes (x-axis) for identified LYVE1 hi and LYVE1 lo macrophage subsets (y-axis) in the scRNA-seq data.",
+      "Differential expression analysis between macrophage and ILC3 subsets"
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "structure",
+    "found": true,
+    "summary": "The paper gives no morphological description of uftLAMs — no size, shape, process or ultrastructural feature. The only structural attribute mentioned is lipid accumulation, and that is asserted of LAMs broadly (the general cell type) rather than demonstrated for uftLAMs, in a sentence carrying citations. No uftLAM marker gene is said to produce or maintain a structural feature; the lipid-handling genes are described as equipping the cells to produce secreted bioactive lipids, which is a functional rather than a structural claim. The nearest thing to a structural placement is positional, not morphological: the cells sit at a lipid-rich interface in the mucosal epithelium.",
+    "quotes": [
+      "Beyond lipid accumulation, which is characteristic of LAMs broadly, uftLAMs also deploy a dedicated biosynthetic programme: upregulation of PLA2G4A, ALOX5, ALOX5AP, PTGS1, LPCAT2, DAGLB and CH25H (Figure 3d and Supplementary Table 3) equips these cells to produce leukotrienes, prostaglandins, platelet-activating factor, and endocannabinoids, which are bioactive lipids that can act on neighbouring stromal and immune cells[52–56].",
+      "Spatial transcriptomics localised uftLAMs to the mucosal epithelium in both the uterus (endometrium) and the fallopian tube (Figure 3e), situating them at a lipid-rich interface consistent with their lipid-associated signature."
+    ]
+  },
+  {
+    "source_paper": {
+      "doi": "10.64898/2026.06.10.731198",
+      "role": "atlas"
+    },
+    "retrieval_method": "corpus_snippet",
+    "source_title": "Human Female Reproductive System Cell Atlas v1",
+    "aspect": "function",
+    "found": true,
+    "summary": "Functions attributed, all inferred from expression rather than assayed: production of pro-inflammatory lipid mediators (PLA2G4A, ALOX5, ALOX5AP, PTGS1, LPCAT2, DAGLB, CH25H are said to equip the cells to make leukotrienes, prostaglandins, platelet-activating factor and endocannabinoids acting on neighbouring stromal and immune cells — a gene-to-function link, and the sentence carries citations); activation of endometrial uNK cells via IL15 (again a gene-product-to-function link, carried from earlier work in the Discussion with a citation); anti-angiogenic signalling via VASH1; mucosal motility via CX3CR1, stated as a hallmark carried from prior knowledge; and a mixed, tissue-adapted inflammatory state combining inflammatory and immunoregulatory output rather than canonical M1 polarisation. The Discussion frames this as the dual requirement for immune vigilance and tolerance in the uterus (citation-carried), and the figure legend labels the summary schematic as potential signalling mechanisms, i.e. hypothesised. Disease relevance is posed as an open question, not a finding.",
+    "quotes": [
+      "Compared with LYVE1hi macrophages and oLAMs, uftLAMs are transcriptionally poised toward pro-inflammatory lipid mediator production, upregulating inflammatory genes (IL18, OSM, C3, CLEC5A) and anti-angiogenic mediators (VASH1) alongside CX3CR1, which is a hallmark of mucosal macrophage motility (Figure 3d and Supplementary Table 3).",
+      "Beyond lipid accumulation, which is characteristic of LAMs broadly, uftLAMs also deploy a dedicated biosynthetic programme: upregulation of PLA2G4A, ALOX5, ALOX5AP, PTGS1, LPCAT2, DAGLB and CH25H (Figure 3d and Supplementary Table 3) equips these cells to produce leukotrienes, prostaglandins, platelet-activating factor, and endocannabinoids, which are bioactive lipids that can act on neighbouring stromal and immune cells[52–56].",
+      "Relative to oLAMs, uftLAMs display a markedly more inflammatory transcriptional state (TNF, CCL5, NLRP3) and distinctive upregulation of IL15, which activates uNK cells enriched in the endometrium (Figure 3d and Supplementary Table 3).",
+      "However, concurrent expression of anti-inflammatory mediators (FCGBP, SIGLEC10, RGS1) places uftLAMs outside a canonical M1 classification (Figure 3d), pointing instead to a tissue-adapted, mixed inflammatory state.",
+      "Amongst them, uftLAMs, shared between the uterine endometrium and fallopian tube, upregulate IL15, which can activate the unique uNK cells characteristic of the endometrial niche[95], and co-express inflammatory and immunoregulatory markers, including FCGBP, reflecting the dual requirement for immune vigilance and tolerance that characterises the uterine microenvironment during pregnancy[96].",
+      "F, Schematic summarising the potential signalling mechanisms of the LYVE1 hi , uftLAM, and oLAM subsets, alongside their identified tissue location.",
+      "LAMs have emerged as pathologically relevant in multiple tissues[97], and how uftLAMs modulate inflammatory reproductive disorders such as endometriosis is an important open question."
+    ]
+  }
+]
