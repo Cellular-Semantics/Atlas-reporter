@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "SupplementManifest",
-  "description": "What supplementary material exists for ONE paper, where it is on disk, and what each part of it contains. A fetch cache plus a content index: the fetch half records how each file arrived (including by hand), the index half names the tables worth reading and their columns, so a later reader can go straight to a sheet instead of re-scanning heterogeneous files. Not curated config \u2014 never merge this into cas.json.",
+  "description": "What supplementary material exists for ONE paper, where it is on disk, and what each part of it contains. A fetch cache plus a content index: the fetch half records how each file arrived (including by hand), the index half names the tables worth reading and their columns, so a later reader can go straight to a sheet instead of re-scanning heterogeneous files. Not curated config — never merge this into cas.json.",
   "type": "object",
   "properties": {
     "manifest_version": {
@@ -33,7 +33,7 @@
     },
     "prose": {
       "type": "array",
-      "description": "The content index for supplementary material that is prose rather than a table: a Supplementary Discussion, a Methods section, a table-legends document. It has no header row and no columns, so `tables` cannot hold it, and a bundle whose legends document is unrepresentable reads as though it were absent. Prose is not sliced by a query the way a table is \u2014 it is read whole into a reader's context \u2014 so each pointer carries the path to its extracted text, and `sections` carries the spans of it worth reading.",
+      "description": "The content index for supplementary material that is prose rather than a table: a Supplementary Discussion, a Methods section, a table-legends document. It has no header row and no columns, so `tables` cannot hold it, and a bundle whose legends document is unrepresentable reads as though it were absent. Prose is not sliced by a query the way a table is — it is read whole into a reader's context — so each pointer carries the path to its extracted text, and `sections` carries the spans of it worth reading.",
       "items": {
         "$ref": "#/$defs/ProsePointer"
       }
@@ -55,7 +55,7 @@
   "$defs": {
     "Paper": {
       "type": "object",
-      "description": "Which paper this manifest belongs to. `doi` is the store key. Deliberately minimal: role, title, organism and the rest belong to the CAS+ document that defines the corpus, and duplicating them into a fetch cache only creates something that can drift out of date.",
+      "description": "Which paper this manifest belongs to. `doi` is the store key. Deliberately minimal: role, title, organism and the rest belong to the CAS+ document that defines the corpus, and duplicating them into a fetch cache only creates something that can drift out of date. `license` is the exception, because it is a fact about the bytes in this store rather than about the paper as a citation, and the question it answers — may this text be redistributed — has to be answerable from the store alone.",
       "properties": {
         "doi": {
           "type": "string",
@@ -64,6 +64,9 @@
         "pmcid": {
           "type": "string",
           "description": "Cached because the fetch routes are keyed on it and resolving DOI -> PMCID costs a network call. A fetch detail, not curated metadata."
+        },
+        "license": {
+          "$ref": "#/$defs/License"
         }
       },
       "required": [
@@ -85,7 +88,7 @@
         },
         "caption": {
           "type": "string",
-          "description": "The publisher's caption, verbatim, e.g. 'Supplementary Tables 1-40.'. From JATS <caption>. Often the cheapest description of the contents there is \u2014 read this before opening anything."
+          "description": "The publisher's caption, verbatim, e.g. 'Supplementary Tables 1-40.'. From JATS <caption>. Often the cheapest description of the contents there is — read this before opening anything."
         },
         "media_type": {
           "type": "string",
@@ -104,7 +107,7 @@
         },
         "status": {
           "type": "string",
-          "description": "'present' = on disk. 'listed' = we know it exists but have not fetched it. 'skipped' = deliberately not fetched (see retrieval.note \u2014 usually a size cap or a video). 'unavailable' = no route exists (closed access, needs a manual drop). 'failed' = a route was tried and errored.",
+          "description": "'present' = on disk. 'listed' = we know it exists but have not fetched it. 'skipped' = deliberately not fetched (see retrieval.note — usually a size cap or a video). 'unavailable' = no route exists (closed access, needs a manual drop). 'failed' = a route was tried and errored.",
           "enum": [
             "present",
             "listed",
@@ -122,7 +125,7 @@
         },
         "relevance": {
           "type": "string",
-          "description": "Whether this file bears on describing cell types, their properties, or the data supporting them \u2014 the only reason this store exists. 'irrelevant' is a positive finding, not a failure to look: it is what stops a 13 MB peer-review PDF being re-examined on every pass and explains why a stored file has no table pointers. 'unknown' means the cheap signals did not settle it and a reader should.",
+          "description": "Whether this file bears on describing cell types, their properties, or the data supporting them — the only reason this store exists. 'irrelevant' is a positive finding, not a failure to look: it is what stops a 13 MB peer-review PDF being re-examined on every pass and explains why a stored file has no table pointers. 'unknown' means the cheap signals did not settle it and a reader should.",
           "enum": [
             "relevant",
             "irrelevant",
@@ -142,7 +145,7 @@
     },
     "Retrieval": {
       "type": "object",
-      "description": "How this file arrived. A file dropped in by hand is a first-class route, not a failure \u2014 it is the only route for closed-access papers.",
+      "description": "How this file arrived. A file dropped in by hand is a first-class route, not a failure — it is the only route for closed-access papers.",
       "properties": {
         "route": {
           "type": "string",
@@ -205,7 +208,7 @@
         },
         "relevance": {
           "type": "string",
-          "description": "Whether this file bears on describing cell types, their properties, or the data supporting them \u2014 the only reason this store exists. 'irrelevant' is a positive finding, not a failure to look: it is what stops a 13 MB peer-review PDF being re-examined on every pass and explains why a stored file has no table pointers. 'unknown' means the cheap signals did not settle it and a reader should.",
+          "description": "Whether this file bears on describing cell types, their properties, or the data supporting them — the only reason this store exists. 'irrelevant' is a positive finding, not a failure to look: it is what stops a 13 MB peer-review PDF being re-examined on every pass and explains why a stored file has no table pointers. 'unknown' means the cheap signals did not settle it and a reader should.",
           "enum": [
             "relevant",
             "irrelevant",
@@ -224,7 +227,7 @@
     },
     "TablePointer": {
       "type": "object",
-      "description": "A table worth reading, located precisely enough to slice without searching, and carrying its own relevance verdict. One pointer per table \u2014 a sheet, not a workbook \u2014 because a 42-sheet supplement routinely mixes differential expression with antibody lists, and a verdict on the file as a whole cannot express that. Describes the table and its columns; it records WHETHER cell types are named but deliberately does NOT enumerate WHICH (a query-time question). A table is never read into a reader's context wholesale \u2014 that is what the locator and columns are for.",
+      "description": "A table worth reading, located precisely enough to slice without searching, and carrying its own relevance verdict. One pointer per table — a sheet, not a workbook — because a 42-sheet supplement routinely mixes differential expression with antibody lists, and a verdict on the file as a whole cannot express that. Describes the table and its columns; it records WHETHER cell types are named but deliberately does NOT enumerate WHICH (a query-time question). A table is never read into a reader's context wholesale — that is what the locator and columns are for.",
       "properties": {
         "file_id": {
           "type": "string",
@@ -244,7 +247,7 @@
         },
         "content_type": {
           "type": "string",
-          "description": "What kind of table this is. 'deg_results' differential expression; 'marker_list' asserted markers; 'cluster_annotation' a cluster-to-name mapping; 'cell_metadata' one row per cell; 'sample_metadata' one row per sample or donor; 'enrichment' GSEA/GO results; 'interaction' ligand-receptor or cell-cell interactions; 'gene_set' the gene lists an analysis consumed (an input, not a finding); 'reagents' antibodies, primers and probes; 'legend' the contents or data-dictionary sheet that describes the others \u2014 worth reading first. 'other' is a real answer, not a default: use it when the table is none of these.",
+          "description": "What kind of table this is. 'deg_results' differential expression; 'marker_list' asserted markers; 'cluster_annotation' a cluster-to-name mapping; 'cell_metadata' one row per cell; 'sample_metadata' one row per sample or donor; 'enrichment' GSEA/GO results; 'interaction' ligand-receptor or cell-cell interactions; 'gene_set' the gene lists an analysis consumed (an input, not a finding); 'reagents' antibodies, primers and probes; 'legend' the contents or data-dictionary sheet that describes the others — worth reading first. 'other' is a real answer, not a default: use it when the table is none of these.",
           "enum": [
             "deg_results",
             "marker_list",
@@ -261,7 +264,7 @@
         },
         "relevance": {
           "type": "string",
-          "description": "Whether THIS TABLE bears on describing cell types, their properties or the data supporting them. Recorded per table because relevance varies within a file: the same workbook holds the DEG table a report needs and the antibody list it never will. 'irrelevant' is a positive finding \u2014 the pointer still exists so the table is accounted for rather than silently absent.",
+          "description": "Whether THIS TABLE bears on describing cell types, their properties or the data supporting them. Recorded per table because relevance varies within a file: the same workbook holds the DEG table a report needs and the antibody list it never will. 'irrelevant' is a positive finding — the pointer still exists so the table is accounted for rather than silently absent.",
           "enum": [
             "relevant",
             "irrelevant",
@@ -278,7 +281,7 @@
         },
         "columns": {
           "type": "array",
-          "description": "The table's columns in order, each with what it holds. The point of the manifest: a reader picks a table by its columns without opening it. For a very wide table (one column per cell state, say) this may be a prefix \u2014 compare its length against n_columns.",
+          "description": "The table's columns in order, each with what it holds. The point of the manifest: a reader picks a table by its columns without opening it. For a very wide table (one column per cell state, say) this may be a prefix — compare its length against n_columns.",
           "items": {
             "$ref": "#/$defs/Column"
           }
@@ -373,7 +376,7 @@
         },
         "folds_in": {
           "type": "boolean",
-          "description": "Whether any of this prose bears on the six report dimensions in `ProseSection.dimensions` \u2014 names or synonyms, hierarchy, location, markers, structure, function. This is the fold-in decision for the document as a whole, and for a unit with no sections it is the only one there is. It replaces an earlier `mentions_cell_types`, which asked whether the prose named cell types at all: on an atlas corpus that is true of essentially every supplement, so it excluded nothing and the fold-in it gated was the entire bundle. Where `sections` carry their own `folds_in`, this is true if any of them is."
+          "description": "Whether any of this prose bears on the six report dimensions in `ProseSection.dimensions` — names or synonyms, hierarchy, location, markers, structure, function. This is the fold-in decision for the document as a whole, and for a unit with no sections it is the only one there is. It replaces an earlier `mentions_cell_types`, which asked whether the prose named cell types at all: on an atlas corpus that is true of essentially every supplement, so it excluded nothing and the fold-in it gated was the entire bundle. Where `sections` carry their own `folds_in`, this is true if any of them is."
         },
         "folds_in_note": {
           "type": "string",
@@ -428,7 +431,7 @@
         },
         "folds_in": {
           "type": "boolean",
-          "description": "Whether this span is read into a reader's context. Set when the document was judged section-wise, which is the only thing that makes a long supplement affordable: across the reproductive corpus this decision removes about 42% of long-form prose, and on a methods-dominated document up to 92%. ABSENT IS NOT FALSE. The outline handed to a judge omits the smallest sections, so a span with no `folds_in` was never shown to anyone and is unjudged \u2014 fold it in, or judge it, but do not read the silence as a decision. A `false` means a judge saw the heading and ruled it out."
+          "description": "Whether this span is read into a reader's context. Set when the document was judged section-wise, which is the only thing that makes a long supplement affordable: across the reproductive corpus this decision removes about 42% of long-form prose, and on a methods-dominated document up to 92%. ABSENT IS NOT FALSE. The outline handed to a judge omits the smallest sections, so a span with no `folds_in` was never shown to anyone and is unjudged — fold it in, or judge it, but do not read the silence as a decision. A `false` means a judge saw the heading and ruled it out."
         },
         "dimensions": {
           "type": "array",
@@ -443,7 +446,7 @@
               "structure",
               "function"
             ],
-            "description": "'names' \u2014 what a population is called, its synonyms, or a cluster-ID-to-name mapping. 'hierarchy' \u2014 broad lineage against fine subtype, or parent/child relations between populations. 'location' \u2014 tissue, compartment, spatial or developmental-stage context. 'markers' \u2014 genes or proteins that identify a population. 'structure' \u2014 its morphology. 'function' \u2014 what it does."
+            "description": "'names' — what a population is called, its synonyms, or a cluster-ID-to-name mapping. 'hierarchy' — broad lineage against fine subtype, or parent/child relations between populations. 'location' — tissue, compartment, spatial or developmental-stage context. 'markers' — genes or proteins that identify a population. 'structure' — its morphology. 'function' — what it does."
           },
           "uniqueItems": true
         }
@@ -496,6 +499,50 @@
       },
       "required": [
         "reason"
+      ],
+      "additionalProperties": false
+    },
+    "License": {
+      "type": "object",
+      "description": "The licence the article and its supplements are published under, and whether it lets their text be redistributed. The store holds verbatim article text, extracted supplement text and prose units, and the repository it sits in is public, so this is the field that decides what may be committed. ABSENT IS NOT PERMISSION: a manifest with no `license` means nobody has checked, and the default stays 'do not redistribute'. Record it even when the answer is no — a recorded 'all-rights-reserved' is what stops the same paper being looked up again on every pass.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The licence, as an SPDX identifier where one applies — 'CC-BY-4.0', 'CC-BY-NC-4.0', 'CC0-1.0'. Two values are not SPDX and are used deliberately: 'all-rights-reserved' for a standard closed-access publisher licence, and 'unknown' for a check that was made and settled nothing. 'unknown' is a verdict and an absent `license` object is not — that distinction is the whole point of recording it.",
+          "minLength": 1
+        },
+        "redistributable": {
+          "type": "boolean",
+          "description": "Whether this paper's verbatim text may be redistributed, with attribution, from a public repository. The operational question the ignore rules ask, kept separate from `id` because answering it from an identifier means every reader re-deciding what 'CC-BY-NC-4.0' permits here. False for 'unknown': an unsettled licence is not a permissive one."
+        },
+        "url": {
+          "type": "string",
+          "description": "Where the licence terms are stated, for a reader who needs to check the claim."
+        },
+        "source": {
+          "type": "string",
+          "description": "Where the licence claim came from. 'europepmc' = the article's Europe PMC record. 'biorxiv' = the preprint server's API. 'publisher_page' = read off the article page. 'manual' = asserted by a person, which is the only route for a publisher that states terms nowhere machine-readable.",
+          "enum": [
+            "europepmc",
+            "biorxiv",
+            "publisher_page",
+            "manual"
+          ]
+        },
+        "asserted_at": {
+          "type": "string",
+          "description": "ISO-8601 UTC timestamp of when the licence was determined.",
+          "format": "date-time"
+        },
+        "note": {
+          "type": "string",
+          "description": "Anything a reader needs beyond the identifier — most usefully when the supplements are licensed differently from the article, which happens, and which `id` alone cannot say."
+        }
+      },
+      "required": [
+        "id",
+        "redistributable",
+        "source"
       ],
       "additionalProperties": false
     }
