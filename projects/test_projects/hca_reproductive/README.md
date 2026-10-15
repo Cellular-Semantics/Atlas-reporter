@@ -13,8 +13,16 @@ contributor cutoff has to survive.
 
 ## Where `cas.json` came from
 
-Copied verbatim (byte-identical) from `projects/HCA_reproductive_atlas_v1/cas.json` on
-branch `origin/HCA_reproductive_atlas_v1`, which is where it is maintained. It was built
+**This file is generated. Do not edit it.** It is a byte-identical copy of
+`projects/HCA_reproductive_atlas_v1/cas.json`, which is where it is maintained, and
+both now sit in the same worktree:
+
+```bash
+python scripts/sync_test_project_cas.py --check   # exit 1 if the copy has drifted
+python scripts/sync_test_project_cas.py           # refresh it
+```
+
+The source was built
 there from the atlas h5ad `obs` (2.24M cells × 66 columns, pulled obs-only over HTTP
 range reads) plus the authors' supplementary tables, then enriched in place by
 `scripts/subatlas_registry.py` with `source.subatlas_papers` and the measures that
@@ -131,12 +139,16 @@ the thing worth seeing.
 Per the test-project convention, only `cas.json` and this README are tracked.
 `traversal_output/`, `reports/`, `selections/`, `runs/` and `local_index/` are ignored.
 
-Two large inputs live outside the repo and are needed for anything that recomputes counts
-or reads papers:
+Two large inputs are needed for anything that recomputes counts or reads papers. Both
+used to live outside the repo; both are now in this worktree, git-ignored for size and
+licence rather than absent:
 
-- the `obs` parquet (150 MB) — on the `Atlas-reporter_three` checkout under
-  `projects/HCA_reproductive_atlas_v1/h5ad_obs/`, rebuildable via `pull_obs.py` there
-  (Sanger VPN required);
-- the paper corpus (494 MB) — `Atlas-reporter-corpora/hca_reproductive/`, holding
-  retrieved supplements for the atlas and its 21 subatlas publications, plus prose units.
-  Rebuildable from its own `corpus.json`.
+- the `obs` parquet (150 MB) — `projects/HCA_reproductive_atlas_v1/h5ad_obs/obs.parquet`,
+  rebuildable via `pull_obs.py` beside it (Sanger VPN required). The compact
+  `obs.categoricals.parquet` is committed; the full table is not.
+- the paper corpus (524 MB) — `projects/HCA_reproductive_atlas_v1/supplements/` and
+  `units/`, holding retrieved supplements for the atlas and its 21 subatlas publications
+  plus the prose units extracted from them. Rebuildable from `paper_corpus.json` with
+  `scripts/corpus/{fetch,index,prose}_all.sh` in that project. None of it is committed:
+  it is verbatim article text, mostly closed-access, with no licence recorded to weigh
+  it against.
