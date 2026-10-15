@@ -7,12 +7,26 @@ __pycache__/
 .ruff_cache/
 .mypy_cache/
 .pytest_cache/
+.coverage
+coverage.xml
 dist/
 build/
 docs/_build/
 .claude/settings.local.json
 
-#projects/
+# Test projects: commit setup only (cas.json, README); ignore generated outputs
+projects/test_projects/**/traversal_output/
+projects/test_projects/**/reports/
+projects/test_projects/**/selections/
+projects/test_projects/**/runs/
+projects/test_projects/**/routing/
+
+# Supplement store: retrieved/manually-dropped files and unpacked archives are
+# never committed; the manifests describing them are.
+projects/**/supplements/**/files/
+projects/**/supplements/incoming/*
+!projects/**/supplements/incoming/README.md
+
 # Large remote-pulled obs table (92.8GB source h5ad; reproducible via h5ad_obs/pull_obs.py).
 # Full obs is 151MB (>GitHub limit); commit the compact obs.categoricals.parquet instead.
 projects/**/h5ad_obs/obs.parquet

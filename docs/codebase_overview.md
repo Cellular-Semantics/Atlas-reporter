@@ -36,6 +36,13 @@
 **Agentic (Claude Code) workflows:**
 - `/run-workflow` → `.claude/commands/run-workflow.md` → spawns orchestrator following `CLAUDE.md`
 
+**Supplementary prose CLI:**
+- `python -m atlas_chat.cli_supplement_prose` — `units` extracts every prose supplement
+  (docx, PDF, txt) to disk and hands back one block per document: the whole text when it is
+  short, its PDF section outline or a head/middle/tail sample when it is not. `record` merges
+  what a reader concluded into the manifest's `prose`; `cas-uptake` notes that a pointer fed
+  CAS+. Spreadsheets are untouched — those are `cli_supplements` outline/slice.
+
 **Local index CLI** (secondary entry point within `local_snippet_index.py`):
 - `src/atlas_chat/atlas_chat/services/local_snippet_index.py:main()` — `build`, `add`, `remove`, `list`, `search` subcommands
 
@@ -93,6 +100,8 @@ cli.py:main()
 
 **Local snippet index** (`local_snippet_index.py`) — self-contained vector search engine: JATS XML or PDF → paragraph segments → chunks → sentence-transformers embeddings (`all-MiniLM-L6-v2`) → ASTA-shape `snippets.json`. The `search()` function returns the same dict shape as ASTA snippets, so downstream code is source-agnostic. Multi-paper corpus model with one `atlas` paper and zero or more `subatlas` papers. `@lru_cache` on `_load_index()` keeps embeddings in memory across calls.
 
+A chunk (~2800 chars) is the unit stored and returned, but the model only reads 256 word pieces, so each chunk is embedded as one or more overlapping windows that fit and `chunks/window_index.json` maps every row of `embeddings.npy` back to its chunk. A chunk scores as the best of its windows and is returned once, with its full text. Indexes built before this carry truncated vectors and no window index; `_load_index()` skips them with a warning, and `setup_local_index.py rebuild` re-embeds a whole corpus from the sources on disk (reusing the cached reference resolution, which is far slower than the embedding).
+
 **`report_checker.py`** — shared between the Python graph (node `ValidateReport`) and the Claude Code hook (`.claude/hooks/check_report_refs.py`). `check_quotes()` does normalised substring matching with ellipsis splitting; `check_references()` validates DOIs and CorpusIds against the catalogue.
 
 **Prompt YAML files** — co-located with agents in `src/atlas_chat/atlas_chat/agents/*.prompt.yaml`. Each has `system_prompt` / `user_prompt` keys with `{variable}` placeholders. `prompt_loader.py:render_prompt()` uses `str.format_map` with a default-passthrough dict so missing variables are left intact rather than raising.
@@ -134,7 +143,8 @@ The GitHub App private key file path is configured separately — the key itself
 | `python-dotenv` | `.env` loading (delegated to `cellsem_llm_client`) |
 | `sentence-transformers` | `all-MiniLM-L6-v2` embeddings for local snippet index (optional dep under `[local-index]` extra) |
 | `numpy` | Vector math for cosine similarity in local search |
-| `pymupdf4llm` | PDF-to-markdown extraction for closed-access papers in local index (optional) |
+| `pymupdf4llm` | PDF-to-markdown extraction, used by the supplement store and the local index (optional dep under `[text-access]` extra) |
+| `curl-cffi` | Fetching preprint JATS past Cloudflare (optional dep under `[text-access]` extra) |
 | `PyJWT` + `cryptography` | GitHub App JWT minting in `github_app_posting/auth.py` |
 | `ruff`, `mypy`, `pytest`, `sphinx` | Dev tooling (lint, type check, tests, docs) |
 

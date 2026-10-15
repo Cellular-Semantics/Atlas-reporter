@@ -1,5 +1,6 @@
 # atlas-chat — Developer Guide (agentic workflows & skills)
 
+
 **How to build and extend this project's agentic workflow, skills, and supporting code.**
 
 > **This is the dev-mode guide. Load it explicitly when doing development work.**
@@ -14,6 +15,38 @@
 > subagents), not as graph nodes.** See "Deprecated: programmatic path" at the end.
 
 ---
+
+## Writing style
+
+Avoid CLAUDE-ish! 
+
+Write/interact like a human being.  Write like a literate senior developer, using plain English.  Some chattiness and humour is OK, but standard claude-code prose structure is increasinhly exahausting to read. Avoid flight metaphors (lands), no seams please. Don't develop your own terminology in one response to use in the next...  
+
+Examples:
+Write "The data is correct, but the format is hard to read"
+NOT: "The data clears the correctness gate, readability not substance is the load-bearing blocker"
+
+ALWAYS AVOID THE LATTER PATTERN - I don't want to hear about gates or load-bearing blockers and I don't want to see plain English mangled into constructions like this.
+
+Some particularly egregious past examples:
+
+"The agent's context/session already is its run state — forcing it to also marshal a batch manifest is ceremony."
+
+"That's not defensive hygiene, it's the absence of a trust anchor showing through."
+
+"every seam I hit sits exactly there. That's not coincidence."
+
+"So the inversion converts one type-2 enumerative question (retrieval-hostile, needs a union over scattered passages) into a batch of type-1 localised verifications (retrieval-easy)."
+
+(In this example you invented a typology and one response and then folded into subsequent responses)
+
+"This is the cheap way to build the span-grounded gold I was pushing for. Generate candidates from priors, sweep lexically (free), then human-adjudicate a 5-way relation label on a short span"
+
+(5-way relation label???!!! Really??!!!)
+
+## Skills
+
+A major part of your job is writing new skills.  Please refer to docs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf to remind yourself of best practice before you do.
 
 ## Schema-first commandment
 
@@ -43,11 +76,17 @@ schema = load_schema("cl_mapping.schema.json")
 - Reuse components; the validation package imports from `atlas_chat.schemas`, never
   re-declares.
 
-Current schemas: `cl_mapping.schema.json`, `cl_term_request.schema.json`,
-`cell_type_annotation.schema.json`, `run_provenance.schema.json`,
-`ontology_lookup_input.schema.json` (+ `example_*` / `workflow_output` placeholders).
-
 ---
+
+## DO NOT OVERFIT
+
+In discussion and development of prompts, skills, schemas we will inevitably use examples in discussion and testing.  Be very careful about making generalising assumptions about the shape of inputs based on the limited examples you have seen.  If you do make such assumptions in a proposal/plan  - examine them all critically - are they needed, do they fit the most general/minimal use cases & ASK before assuming.
+
+Details of examples, test results and plans DO NOT belong in prompts, schema descriptions, code doc or comments. 
+
+## DO NOT OVERENGINEER
+
+When prosing increased complexity in workflow, skill, schema, code - ask if it is necessary.  Be particularly wary of bespoke enmum fillers in schemas.  Are they really necessary?  Do they represent some semi-abitrary, congintent set of possible fillers or do they both plausibly cover the domain AND do useful work.
 
 ## Modular orchestrations with declared shapes
 
@@ -82,6 +121,33 @@ output:
 - **Discoverable** — `grep -rn "schema:" .claude/agents .claude/skills` lists every
   contract in the workflow.
 
+
+
+**Build it so it can be lifted out.** When adding functionality, ask: *how would someone
+use this in a different project?* Not because we plan to package everything, but because
+the answer forces the right boundaries. A unit that can be lifted out is one that doesn't
+reach into our repo layout, doesn't assume our directory names, and states what it needs.
+
+In practice:
+- **Take paths as input; don't derive them.** `projects/{project}/...` belongs in the
+  orchestrator's call, not baked into the skill or the service it calls. A skill that
+  computes its own output path is welded to this repo.
+- **Depend on the schema, not on the project.** The contract is the JSON Schema and the
+  object it describes. Anything that reads `cas.json` should accept a CAS+ document, not
+  a project name it resolves itself.
+- **Put the real work in `services/` behind a CLI.** The skill/subagent is thin — it
+  decides and gates; the service does the fetching, parsing and writing, and is callable
+  by anything (`python -m atlas_chat.cli_annotate ...` is the pattern). Reusable code
+  should never require a Claude Code session to run.
+- **Keep atlas-reporter-specific glue in the orchestration layer**, so the underlying
+  service stays general. `local_snippet_index` is a paper index that happens to be used
+  by this workflow, not a piece of this workflow.
+- **Name the external requirements** — API keys, optional extras, network services — in
+  the unit's front-matter or docstring rather than assuming the ambient environment.
+
+If a new piece of functionality can't be described without referring to atlas-reporter's
+directory structure, that's the signal to split it.
+
 **Conventions:**
 - One orchestration = one clear input shape + one output shape. If a unit needs two
   unrelated outputs, it is probably two orchestrations.
@@ -92,6 +158,41 @@ output:
   `synthesize-report`, `cl-term-request`, and the `.claude/skills/*`) with
   `input:`/`output:` front-matter and matching schemas is follow-up work** — do it
   as you touch each one.
+
+
+### Anti Hallucination check
+
+***CRITICAL SPECIFICATION!***
+
+Build infrastructure to ensure tha all JSON artefacts and markdown reports written by agents are checked for halluncination whenever they are written/edited.:
+ - Validate all JSON against schema
+ - Check ontology name:ID pairs against authoritative source
+ - Check publication IDs (DOIs etc) against authoritative source on metadata (e.g. titles) 
+
+ Use Claude hooks to drive this process - write/edit triggers check for changes in output files triggering programatic checks. Specific errors are fed back to agent to fix.  As a backup, orchestration should also trigger checks in case the agent has edited output files using code and so not triggered the claude hook.
+
+
+---
+
+## Definition of done: the pipeline doc
+
+`docs/pipeline.md` is the implementation map — for each stage of processing, what
+runs, what it reads and writes, which schema its output conforms to, and which hook
+checks it. It is ordered by the chain of processing, from project setup through
+literature search to a finished report.
+
+**A piece of work is not complete until `docs/pipeline.md` reflects it.** Update it
+in the same commit as the change, on the branch where the change happens, so the
+doc arrives with the merge. That covers a new or changed skill, subagent, service,
+CLI, schema or hook; a change to what a stage reads or writes; and anything that
+closes or opens one of the gaps the doc lists.
+
+It also carries a "Not yet incorporated" section describing work finished on other
+branches. Move an entry out of that section as part of merging it.
+
+Single file for now, on purpose — the workflow is changing too fast for the
+bookkeeping of managed subdocuments to pay off. Split it (per-skill and per-agent
+pages, say) once the churn settles.
 
 ---
 
@@ -190,6 +291,12 @@ api_key = os.getenv("SOME_API_KEY")
 ```
 
 **Precedence:** explicit constructor args → environment (`.env`) → sensible defaults.
+
+**Tracing:** Langfuse tracing of the programmatic graph is opt-in via
+`--trace` / `ATLAS_CHAT_TRACING=1` (module: `atlas_chat.observability`; guide:
+`docs/tracing.md`). Off by default — no client, no export. The agentic
+(Claude Code) workflow is traced separately, via Langfuse's Claude Code
+integration; see the same guide.
 
 ---
 

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "subatlas_routing_plan.schema.json",
+  "title": "SubatlasRoutingPlan",
+  "description": "Which contributing papers to read for a requested set of cell sets, in what order, and what to ask each one. Written against a routing table by an agent, because the decision turns on what the labels mean and not only on how many cells they share: a label spanning many cell sets often does so by being vague, and a label covering a few hundred cells is sometimes the one the population was named after.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["papers", "atlas_only"],
+  "properties": {
+    "table_source": {
+      "type": "string",
+      "description": "Path of the routing table this plan was written against. Every question here has to appear there."
+    },
+    "papers": {
+      "type": "array",
+      "description": "Papers to read, most worth reading first. One entry per paper however many of its labels are asked about, because a paper is read once.",
+      "items": { "$ref": "#/$defs/PaperToRead" }
+    },
+    "not_reading": {
+      "type": "array",
+      "description": "Papers the table offered that are deliberately being skipped, with the reason. Present so a skip is a decision on the record rather than an omission.",
+      "items": { "$ref": "#/$defs/NotReading" }
+    },
+    "atlas_only": {
+      "type": "array",
+      "description": "Requested cell sets for which the atlas paper is the only source. Carried over from the table, and added to where every contributing label turns out to say nothing about the cell set.",
+      "items": { "$ref": "#/$defs/AtlasOnly" }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Anything about the selection as a whole that belongs with the plan rather than with one paper — a contributor with no publication accounting for much of it, say."
+    }
+  },
+  "$defs": {
+    "PaperToRead": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subatlas_paper", "reason", "questions"],
+      "properties": {
+        "subatlas_paper": {
+          "type": "string",
+          "description": "The contributing study, copied from the table exactly as it names it."
+        },
+        "doi": { "type": "string", "description": "DOI of the paper to read." },
+        "reason": {
+          "type": "string",
+          "description": "Why this paper is at this position. Plain prose, and specific: which of its labels earns the place and what the reading is expected to establish, including where the expectation is that it will turn out not to distinguish the cell sets at all."
+        },
+        "from_background_knowledge": {
+          "type": "boolean",
+          "description": "This position rests on what is known about the paper rather than on the counts in the table — that it is where the population was first described, say, or that its label is a generic one. Marked so a ranking made on a prior can be told from one made on the data, and checked."
+        },
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Which of this paper's labels to ask about. Each must be a question the table carries for this paper.",
+          "items": { "$ref": "#/$defs/Question" }
+        }
+      }
+    },
+    "Question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subatlas_cell_label", "serves"],
+      "properties": {
+        "subatlas_cell_label": {
+          "type": "string",
+          "description": "The contributing study's own label, verbatim from the table."
+        },
+        "serves": {
+          "type": "array",
+          "minItems": 1,
+          "description": "The requested cell sets this reading answers for. Each must be listed as a claimant of this question in the table.",
+          "items": { "type": "string" }
+        },
+        "ask": {
+          "type": "string",
+          "description": "What to put to the paper about this label, where the overlap suggests something more particular than the standard questions — whether the label describes the cells the atlas gave it to, or whether the study drew a distinction the atlas did not."
+        }
+      }
+    },
+    "NotReading": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subatlas_paper", "reason"],
+      "properties": {
+        "subatlas_paper": { "type": "string", "description": "The contributing study, copied from the table." },
+        "reason": {
+          "type": "string",
+          "description": "Why it is being skipped — a label too generic to say anything about these cell sets, a contribution that is spillover from a neighbouring cell type, or no text to reach."
+        }
+      }
+    },
+    "AtlasOnly": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cell_label", "reason"],
+      "properties": {
+        "cell_label": { "type": "string", "description": "The requested cell set." },
+        "reason": {
+          "type": "string",
+          "description": "Why nothing upstream is being read for it — copied from the table, or the agent's own where a contribution survived the floor but its label says nothing about this cell set."
+        }
+      }
+    }
+  }
+}

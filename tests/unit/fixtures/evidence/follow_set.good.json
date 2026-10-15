@@ -1,0 +1,7 @@
+{
+  "hop": 1,
+  "follow_set": ["CorpusId:234484741", "CorpusId:41350702"],
+  "rejected": [
+    { "corpus_id": "CorpusId:999999", "reason": "not_in_refmentions" }
+  ]
+}

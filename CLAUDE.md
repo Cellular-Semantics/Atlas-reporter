@@ -51,15 +51,31 @@ workflow and the programmatic Python graph.
 
 Given a **project name** and **cell type label**:
 
-### 1. Load Project Config
+### 1. Load Project Config (CAS+)
 
-Read `projects/{project}/cell_type_annotations.json`:
-- Extract atlas DOI, title
-- Validate the cell type label exists in annotations
-- Get scope and granularity for the cell type
-- **If scope indicates integrated external annotations** (e.g. adult annotations
-  from Reynolds integrated into Gopee), identify the source atlas early and
-  pivot supplementary fetching to that paper.
+The project config is a **CAS+** document at `projects/{project}/cas.json`
+(schema: `src/atlas_chat/atlas_chat/schemas/cas_annotation.schema.json`). CAS+
+supersedes the legacy flat `cell_type_annotations.json`.
+
+- **If `projects/{project}/cas.json` exists and validates**, load it and move on.
+- **Otherwise**, invoke the `generate-cas` skill
+  (`.claude/skills/generate-cas/SKILL.md`) to build it from the project's
+  source(s), asking the user for anything not derivable (DOI, organism, which
+  column is the cell-type label). The `check_cas_annotation` PostToolUse hook
+  enforces schema compliance on write.
+
+From the loaded CAS+ document:
+- Extract atlas DOI + title from `source`.
+- Validate the requested cell type label exists as an annotation `cell_label`.
+- Read its `labelset` (granularity) and context from `composition`
+  (e.g. developmental stage / organism / tissue).
+- **If an annotation's provenance points to an integrated subatlas** (via
+  `transferred_annotations[].subatlas_paper` / `source_taxonomy`), identify that
+  source paper early and pivot supplementary fetching to it.
+
+> Migration note: downstream steps below still reference the legacy `label` /
+> `scope` fields; their input contracts move to CAS+ `cell_label` / `composition`
+> as part of the query-decomposer work.
 
 ### 2. Fetch Supplementary Material
 

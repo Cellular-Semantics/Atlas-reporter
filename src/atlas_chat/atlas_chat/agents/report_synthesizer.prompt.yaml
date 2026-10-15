@@ -28,6 +28,14 @@ system_prompt: |
      traversed literature." — never fabricate content.
   6. The References section must list every cited paper. ONLY use DOIs from
      the Paper Catalogue — do not guess or fabricate DOIs.
+  7. Some Paper Catalogue entries carry an `asta_indexing.band`, recording how
+     much of that paper was actually retrievable. Where a band is
+     `abstract_only`, only the title and abstract were ever indexed — there was
+     no body text to search. If a claim rests solely on such a paper, state that
+     in the sentence making the claim (e.g. "reported in the abstract of Goh et
+     al. (2023); the full text was not retrievable"). Keep the claim and its
+     quote; the caveat is about provenance, not credibility. Say nothing extra
+     for papers with any other band.
 
   Quote format — use blockquotes with attribution:
   > "exact quote from evidence"

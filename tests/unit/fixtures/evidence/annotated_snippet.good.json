@@ -1,0 +1,32 @@
+[
+  {
+    "text": "Iron-recycling macrophages express SLC40A1, aligned with BWA [42].",
+    "section": "Results",
+    "score": 0.577,
+    "source_paper": { "corpus_id": "CorpusId:2762329", "doi": "10.1038/s41586-024-08002-x", "role": "atlas" },
+    "retrieval_method": "corpus_snippet",
+    "sentences": [
+      { "start": 0, "end": 43 },
+      { "start": 44, "end": 66 }
+    ],
+    "refMentions": [
+      { "start": 61, "end": 65, "corpus_id": "CorpusId:41350702", "resolved": true }
+    ]
+  },
+  {
+    "text": "Ferroportin activity exports macrophage iron [7].",
+    "section": "Discussion",
+    "score": 0.41,
+    "source_paper": { "corpus_id": "CorpusId:252635104", "role": "external" },
+    "retrieval_method": "citation_traversal",
+    "sentences": [{ "start": 0, "end": 49 }],
+    "refMentions": [
+      { "start": 45, "end": 48, "corpus_id": null, "resolved": false }
+    ],
+    "reached_from": {
+      "corpus_id": "CorpusId:231699447",
+      "hop": 1,
+      "citation_context": "Macrophages recycle iron and export it via ferroportin activity."
+    }
+  }
+]

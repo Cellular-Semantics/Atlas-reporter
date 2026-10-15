@@ -1,0 +1,29 @@
+{
+  "markers": [
+    {
+      "gene": "SLC40A1",
+      "evidence_type": "DE analysis",
+      "source_paper": { "doi": "10.1038/s41586-024-08002-x", "corpus_id": "CorpusId:2762329", "role": "atlas" },
+      "retrieval_method": "supplement",
+      "supplement_ref": { "file": "media-4.xlsx", "sheet": "B", "table": "Supplementary Table 3" }
+    }
+  ],
+  "other_findings": [
+    {
+      "finding": "Involved in iron recycling from senescent erythrocytes",
+      "category": "function",
+      "source_paper": { "doi": "10.1038/s41586-024-08002-x", "role": "atlas" },
+      "retrieval_method": "supplement",
+      "supplement_ref": { "file": "media-6.pdf", "table": "Extended Data Fig. 5" }
+    }
+  ],
+  "evidence_quotes": [
+    {
+      "quote": "Iron-recycling macrophages: CD5L, APOE, VCAM, TIMD4, SLC40A1",
+      "context": "marker gene list",
+      "source_paper": { "corpus_id": "CorpusId:2762329", "role": "atlas" },
+      "retrieval_method": "supplement",
+      "supplement_ref": { "file": "media-4.xlsx", "table": "Supplementary Table 3" }
+    }
+  ]
+}

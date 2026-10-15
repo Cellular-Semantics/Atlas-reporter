@@ -1,0 +1,79 @@
+{
+  "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+  "cellannotation_schema_version": "0.1.0-local",
+  "source": {
+    "doi": "10.1038/s41586-024-08002-x",
+    "title": "A prenatal skin atlas reveals immune regulation of human skin morphogenesis",
+    "atlas_name": "Prenatal Skin Atlas (Gopee et al. 2024)"
+  },
+  "labelsets": [
+    { "name": "broad", "rank": 1, "annotation_method": "manual" },
+    { "name": "fine", "rank": 0, "annotation_method": "manual" }
+  ],
+  "annotations": [
+    {
+      "labelset": "broad",
+      "cell_label": "Macrophage",
+      "cell_set_accession": "FS_macro",
+      "composition": {
+        "developmental_stage": { "author_field_name": "scope", "values": [ { "author_value": "fetal" } ] },
+        "organism": { "values": [ { "author_value": "human", "ontology_term_id": "NCBITaxon:9606" } ] },
+        "tissue": { "values": [ { "author_value": "skin", "ontology_term_id": "UBERON:0002097" } ] }
+      }
+    },
+    {
+      "labelset": "fine",
+      "cell_label": "TML macrophage",
+      "cell_set_accession": "FS_tml",
+      "parent_cell_set_accession": "FS_macro",
+      "composition": {
+        "developmental_stage": { "author_field_name": "scope", "values": [ { "author_value": "fetal" } ] },
+        "organism": { "values": [ { "author_value": "human", "ontology_term_id": "NCBITaxon:9606" } ] },
+        "tissue": { "values": [ { "author_value": "skin", "ontology_term_id": "UBERON:0002097" } ] }
+      }
+    },
+    {
+      "labelset": "fine",
+      "cell_label": "Iron-recycling macrophage",
+      "cell_set_accession": "FS_iron",
+      "parent_cell_set_accession": "FS_macro",
+      "composition": {
+        "developmental_stage": { "author_field_name": "scope", "values": [ { "author_value": "fetal" } ] },
+        "organism": { "values": [ { "author_value": "human", "ontology_term_id": "NCBITaxon:9606" } ] },
+        "tissue": { "values": [ { "author_value": "skin", "ontology_term_id": "UBERON:0002097" } ] }
+      }
+    },
+    {
+      "labelset": "fine",
+      "cell_label": "LYVE1++ macrophage",
+      "cell_set_accession": "FS_lyve1",
+      "parent_cell_set_accession": "FS_macro",
+      "composition": {
+        "developmental_stage": { "author_field_name": "scope", "values": [ { "author_value": "fetal" } ] },
+        "organism": { "values": [ { "author_value": "human", "ontology_term_id": "NCBITaxon:9606" } ] },
+        "tissue": { "values": [ { "author_value": "skin", "ontology_term_id": "UBERON:0002097" } ] }
+      }
+    },
+    {
+      "labelset": "fine",
+      "cell_label": "MHCII+ macrophage",
+      "cell_set_accession": "FS_mhcii",
+      "parent_cell_set_accession": "FS_macro",
+      "composition": {
+        "developmental_stage": { "author_field_name": "scope", "values": [ { "author_value": "fetal" } ] },
+        "organism": { "values": [ { "author_value": "human", "ontology_term_id": "NCBITaxon:9606" } ] },
+        "tissue": { "values": [ { "author_value": "skin", "ontology_term_id": "UBERON:0002097" } ] }
+      }
+    },
+    {
+      "labelset": "fine",
+      "cell_label": "Dermal papilla",
+      "cell_set_accession": "FS_dp",
+      "composition": {
+        "developmental_stage": { "author_field_name": "scope", "values": [ { "author_value": "fetal" } ] },
+        "organism": { "values": [ { "author_value": "human", "ontology_term_id": "NCBITaxon:9606" } ] },
+        "tissue": { "values": [ { "author_value": "skin", "ontology_term_id": "UBERON:0002097" } ] }
+      }
+    }
+  ]
+}

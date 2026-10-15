@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "draft/data_provenance.schema.json",
+  "title": "DataProvenance (DRAFT — parked, not part of the active contract)",
+  "description": "Extracted verbatim from cas_annotation.schema.json $defs.DataProvenance as it stood on branch cxg-entrypoint-reader-discovery, then removed from the active CAS+ contract in PR #17 (semi-redundant with matrix_file_id / source.links / source.local_text_path / Labelset.name; source_type enum mixes format/locality/platform/authoring axes). Parked for possible future folding-in. NOT loaded by schemas.load_schema and NOT referenced by any active schema. See draft/README.md.",
+  "type": "object",
+  "required": ["source_type"],
+  "properties": {
+    "source_type": {
+      "type": "string",
+      "enum": ["manual", "published_zarr", "local_h5ad", "local_zarr", "cellxgene", "cap", "spreadsheet"]
+    },
+    "dataset_id": { "type": "string" },
+    "source_url": { "type": "string" },
+    "file_path": { "type": "string" },
+    "obs_column": { "type": "string" },
+    "n_cells_total": { "type": "integer" },
+    "extracted_at": { "type": "string" }
+  },
+  "additionalProperties": false
+}

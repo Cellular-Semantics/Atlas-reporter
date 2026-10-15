@@ -52,16 +52,35 @@ uv run python scripts/setup_local_index.py search \
 projects/<name>/local_index/
   corpus.json                # version, atlas_doi, use_in_fanout flag, papers list
   papers/<paper_slug>/
-    manifest.json            # role, source_type, hash, n_chunks, paper metadata
+    manifest.json            # role, source_type, hash, n_chunks, n_windows, paper metadata
     source/{paper.jats.xml | paper.pdf}
-    chunks/{chunks.jsonl, embeddings.npy, chunks.fulltext.txt}
+    chunks/{chunks.jsonl, embeddings.npy, window_index.json, chunks.fulltext.txt}
     citations/{sentences.jsonl, ref_resolution.json}   # JATS papers only
     snippet_index/snippets.json
 ```
 
 `paper_slug` = DOI lowercased with `/` → `_` (e.g. `10.1126_science.adf1226`), sha1 fallback for pathological DOIs.
 
-Builds are idempotent — per-paper hash short-circuits a rebuild unless `--force` or the source changed. Adding or removing one paper never re-embeds the others.
+Builds are idempotent — per-paper hash short-circuits a rebuild unless `--force` or the source changed. Adding or removing one paper never re-embeds the others. The hash covers the source bytes, the embedding model, `MANIFEST_VERSION`, and the chunk/window sizes, so changing any of those invalidates existing indexes instead of leaving stale vectors in place.
+
+**Chunks vs embedding windows.** A chunk (~2800 chars) is the unit stored, returned and quoted. The embedding model only reads its first 256 word pieces, so each chunk is embedded as one or more overlapping windows that fit, and `window_index.json` maps every row of `embeddings.npy` back to its chunk. A chunk scores as the best of its windows and is returned once, with its full text. Papers built before this (no `window_index.json`) are skipped at load with a warning — rebuild them.
+
+**Rebuilding a whole corpus.** `init-corpus --force` only re-does the atlas paper and the JATS subatlas papers named in the project config, so papers added from a PDF are left behind. Use `rebuild` instead — it walks `corpus.json` and force-rebuilds each paper from the source already on disk:
+
+```bash
+python scripts/setup_local_index.py rebuild --project <project>          # whole corpus
+python scripts/setup_local_index.py rebuild --project <project> --paper 10.1234/x
+```
+
+It prints the chunk and window counts before and after per paper, and exits non-zero if any paper failed.
+
+**Checking before you rely on it.** `check` reports any paper whose vectors cannot be used and why, and exits non-zero if there are any:
+
+```bash
+python scripts/setup_local_index.py check --project <project>
+```
+
+Worth running before a batch of reports. A corpus that can serve no papers returns `[]` from `search`, which looks the same as a corpus with nothing relevant to say — so that case is also logged at ERROR level, not just as a warning.
 
 ## Integration with fan-out
 

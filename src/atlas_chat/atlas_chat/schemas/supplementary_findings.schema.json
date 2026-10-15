@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SupplementaryFindings",
+  "description": "Findings extracted from an atlas (or subatlas) paper's supplementary material by the scan-supplements subagent, written to supplementary_findings.json. Every finding carries an explicit source_paper (the parent paper is no longer assumed to be the atlas) and retrieval_method (see issue #12).",
+  "type": "object",
+  "properties": {
+    "markers": {
+      "type": "array",
+      "description": "Marker genes for the cell type with provenance.",
+      "items": { "$ref": "#/$defs/MarkerFinding" }
+    },
+    "other_findings": {
+      "type": "array",
+      "description": "Non-marker findings (function, spatial, trajectory, etc.) with provenance.",
+      "items": { "$ref": "#/$defs/OtherFinding" }
+    },
+    "evidence_quotes": {
+      "type": "array",
+      "description": "Exact-substring quotes from the supplementary material with provenance.",
+      "items": { "$ref": "#/$defs/EvidenceQuote" }
+    }
+  },
+  "required": ["markers", "other_findings", "evidence_quotes"],
+  "additionalProperties": false,
+  "$defs": {
+    "role": {
+      "type": "string",
+      "description": "What the source paper IS relative to the corpus. For supplement findings this MUST be 'atlas' or 'subatlas' — a supplement always belongs to a corpus member (enforced by report_checker).",
+      "enum": ["atlas", "subatlas", "external"]
+    },
+    "retrieval_method": {
+      "type": "string",
+      "description": "The MECHANISM by which this finding was obtained. Supplement findings are 'supplement'.",
+      "enum": ["corpus_snippet", "supplement", "citation_traversal", "free_search"]
+    },
+    "SourcePaper": {
+      "type": "object",
+      "description": "The paper the supplement belongs to. At least one of doi / corpus_id must be present, and it must resolve to a corpus member in paper_catalogue.json (enforced by report_checker).",
+      "properties": {
+        "doi": { "type": "string", "description": "DOI of the parent paper." },
+        "corpus_id": {
+          "type": "string",
+          "description": "Semantic Scholar CorpusId, formatted 'CorpusId:NNNN'.",
+          "pattern": "^CorpusId:\\d+$"
+        },
+        "role": { "$ref": "#/$defs/role" }
+      },
+      "required": ["role"],
+      "anyOf": [
+        { "required": ["doi"] },
+        { "required": ["corpus_id"] }
+      ],
+      "additionalProperties": false
+    },
+    "SupplementRef": {
+      "type": "object",
+      "description": "Locator for the supplementary source (replaces the old free-text source_table/source_file).",
+      "properties": {
+        "file": { "type": "string", "description": "Supplement file name, e.g. media-4.xlsx." },
+        "sheet": { "type": "string", "description": "Sheet/tab name within the file, if applicable." },
+        "table": { "type": "string", "description": "Human-readable table/figure label, e.g. 'Supplementary Table 2B'." }
+      },
+      "required": ["file"],
+      "additionalProperties": false
+    },
+    "MarkerFinding": {
+      "type": "object",
+      "properties": {
+        "gene": { "type": "string", "description": "Gene symbol." },
+        "evidence_type": { "type": "string", "description": "How the marker was derived (DE analysis, known markers, immunostaining, etc.)." },
+        "source_paper": { "$ref": "#/$defs/SourcePaper" },
+        "retrieval_method": { "$ref": "#/$defs/retrieval_method" },
+        "supplement_ref": { "$ref": "#/$defs/SupplementRef" }
+      },
+      "required": ["gene", "evidence_type", "source_paper", "retrieval_method"],
+      "additionalProperties": false
+    },
+    "OtherFinding": {
+      "type": "object",
+      "properties": {
+        "finding": { "type": "string", "description": "The finding text." },
+        "category": { "type": "string", "description": "Category (function, location, trajectory, morphology, etc.)." },
+        "source_paper": { "$ref": "#/$defs/SourcePaper" },
+        "retrieval_method": { "$ref": "#/$defs/retrieval_method" },
+        "supplement_ref": { "$ref": "#/$defs/SupplementRef" }
+      },
+      "required": ["finding", "category", "source_paper", "retrieval_method"],
+      "additionalProperties": false
+    },
+    "EvidenceQuote": {
+      "type": "object",
+      "properties": {
+        "quote": { "type": "string", "description": "Exact substring of the supplementary text." },
+        "context": { "type": "string", "description": "Brief note on what the quote covers." },
+        "source_paper": { "$ref": "#/$defs/SourcePaper" },
+        "retrieval_method": { "$ref": "#/$defs/retrieval_method" },
+        "supplement_ref": { "$ref": "#/$defs/SupplementRef" }
+      },
+      "required": ["quote", "source_paper", "retrieval_method"],
+      "additionalProperties": false
+    }
+  }
+}

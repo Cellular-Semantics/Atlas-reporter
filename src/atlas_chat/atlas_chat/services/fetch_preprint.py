@@ -87,8 +87,12 @@ def _try_europepmc(doi: str, out_path: Path) -> tuple[bool, str]:
 # ------------------------------------------------------------------
 
 
-def _biorxiv_metadata(doi: str) -> dict | None:
-    """Hit api.biorxiv.org/details (no CF) for the JATS URL + metadata."""
+def biorxiv_metadata(doi: str) -> dict | None:
+    """Hit api.biorxiv.org/details (no CF) for the JATS URL + metadata.
+
+    Returns None for a DOI bioRxiv does not host, which is also the cheapest
+    test of whether a paper is a bioRxiv preprint at all.
+    """
     url = f"{BIORXIV_API}/{doi}/na/json"
     try:
         with urllib.request.urlopen(url, timeout=20) as fh:
@@ -118,7 +122,7 @@ def _try_biorxiv_curlcffi(meta: dict, out_path: Path) -> tuple[bool, str]:
     try:
         from curl_cffi import requests as cf_requests  # type: ignore[import-not-found]
     except ImportError:
-        return False, "curl_cffi not installed (pip install atlas_chat[local-index])"
+        return False, "curl_cffi not installed (uv sync --extra text-access)"
     try:
         resp = cf_requests.get(jats_url, impersonate="chrome120", timeout=60)
         if resp.status_code != 200:
@@ -195,7 +199,7 @@ def fetch_preprint(doi: str, out_dir: Path) -> FetchedPreprint:
         return FetchedPreprint(doi=doi, jats_path=jats_path, source_used="europepmc")
 
     # Paths 2 + 3 need bioRxiv metadata first
-    meta = _biorxiv_metadata(doi)
+    meta = biorxiv_metadata(doi)
     if not meta:
         attempts.append(("biorxiv_api", "metadata lookup failed"))
         raise PreprintFetchError(doi, attempts)

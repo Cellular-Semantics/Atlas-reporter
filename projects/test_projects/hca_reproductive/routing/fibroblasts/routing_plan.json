@@ -1,0 +1,465 @@
+{
+  "table_source": "projects/test_projects/hca_reproductive/routing/fibroblasts/routing_table.json",
+  "notes": "Of the 37 requested cell sets, 27 have a readable upstream source and 10 do not. Six of the ten are ovarian (Mesen_OvarianFibs_InncorMedulla, _Perifol, _Outcor, _Medulla_SMCsLike, Mesen_OvarianFibs_AdvLike, Mesen_OvarianInclFibs) and all six are unreadable for the same reason: their contributor, celltype_OvarySanger2026, has no DOI. That one source put 179,450 cells into 21 of the 37 cell sets, including the single largest adult ovarian cell set in the selection (Mesen_OvarianFibs_InncorMedulla, 125,985 cells). No amount of reading reaches it. Any report on the adult ovarian fibroblast cell sets rests on the atlas paper alone, and that ceiling should be stated in those reports rather than discovered at synthesis time.\n\nThe selection splits cleanly into three blocks with different evidential characters, and the reading order follows them. (1) The fetal block (19 cell sets) is the strongest: Lorenzi 2025 names the same regional mesenchymal populations the atlas names, mostly one-to-one. (2) The endometrial block collapses into one enormous cell set (Endometrial functionalis stroma, 508,382 cells, 45% of the selection) whose 11 menstrual-phase children are exactly what the endometrial papers resolve; the atlas here is coarser than every one of its sources. (3) The adult fallopian/adventitial block is the weakest: its two dominant contributors both used a single generic stromal label, so reading them is expected to establish that the upstream studies did not make the distinctions the atlas makes, rather than to characterise anything.\n\nshare_of_subatlas_label is populated throughout, so both correspondence directions were available for this ranking.",
+  "papers": [
+    {
+      "subatlas_paper": "celltype_Lorenzi2025",
+      "doi": "10.1038/s41586-025-09875-2",
+      "reason": "First by a wide margin. This is a developmental atlas of the same tract, and its labels are regional mesenchymal populations named the way the atlas names its fetal fibroblasts — so for most of the 19 fetal cell sets the atlas cell set and the Lorenzi label are the same population under two spellings, with both correspondence measures high at once (Labia, Glans, Corpus Cavernosum, Upper Vagina Mese, Fallopian Mese, Uterus Mese, Wolffian/Mesonephros Mese). It is the only readable source for Mesen_LabiaFib_Fetal, Mesen_GlansFib_Fetal, Mesen_Prepuce_Fetal, Mesen_LabioScrotalSwelling_Fetal, Mesen_CorpusCavernosumFib_Fetal, Mesen_CorpusSpongiosumFib_Fetal, Mesen_UGSFib_Lower and Mesen_UGSLig. The reading should establish, for each regional population, what defines it, where it sits, and how it relates to its neighbours — and separately settle three places where the atlas and Lorenzi disagree about where boundaries fall: the cervix, the urogenital sinus, and the external genital primordia.",
+      "questions": [
+        {
+          "subatlas_cell_label": "Labia",
+          "serves": [
+            "Mesen_LabiaFib_Fetal"
+          ],
+          "ask": "Near-total correspondence in both directions and the only source for this cell set. Take the full characterisation: markers, anatomical location, developmental timing, and whether labial mesenchyme is held to be distinct from the labio-scrotal swelling it derives from."
+        },
+        {
+          "subatlas_cell_label": "Glans",
+          "serves": [
+            "Mesen_GlansFib_Fetal",
+            "Mesen_Prepuce_Fetal"
+          ],
+          "ask": "Sole source for glans fibroblasts. Also ask how glans and prepuce mesenchyme are distinguished, since a slice of this label went to the atlas's prepuce cell set and the Prepuce label returns the favour."
+        },
+        {
+          "subatlas_cell_label": "Prepuce",
+          "serves": [
+            "Mesen_Prepuce_Fetal",
+            "Mesen_LabioScrotalSwelling_Fetal",
+            "Mesen_CorpusCavernosumFib_Fetal"
+          ],
+          "ask": "This label is the one external-genital population Lorenzi did NOT keep clean: it splits roughly three ways across the atlas's prepuce, labio-scrotal swelling and corpus cavernosum cell sets. Ask directly whether Lorenzi treats preputial mesenchyme as a distinct population or as a positional subset of the genital tubercle mesenchyme — the answer decides whether the atlas's three-way split has upstream support."
+        },
+        {
+          "subatlas_cell_label": "Labio-Scrotal Swelling",
+          "serves": [
+            "Mesen_LabioScrotalSwelling_Fetal"
+          ],
+          "ask": "Sole clean source. Ask what distinguishes labio-scrotal swelling mesenchyme from labial and preputial mesenchyme, and whether sex-dimorphic differences are reported."
+        },
+        {
+          "subatlas_cell_label": "Corpus Cavernosum",
+          "serves": [
+            "Mesen_CorpusCavernosumFib_Fetal"
+          ],
+          "ask": "Sole source and a clean one-to-one match. Full characterisation, plus how erectile-tissue mesenchyme is told from corpus spongiosum."
+        },
+        {
+          "subatlas_cell_label": "Corpus Spongiosum",
+          "serves": [
+            "Mesen_CorpusSpongiosumFib_Fetal"
+          ],
+          "ask": "Most of this label went to the atlas cell set, but the cell set draws on three other Lorenzi labels besides. Ask what defines corpus spongiosum mesenchyme and whether Lorenzi treats it as continuous with lower urogenital sinus and lower vaginal mesenchyme."
+        },
+        {
+          "subatlas_cell_label": "Fallopian Mese",
+          "serves": [
+            "Mesen_FallopianFib_Fetal"
+          ],
+          "ask": "Clean correspondence in both directions. Full characterisation of fetal fallopian tube mesenchyme: markers, position along the Mullerian duct, timing."
+        },
+        {
+          "subatlas_cell_label": "Fallopian Lig",
+          "serves": [
+            "Mesen_FallopianLig_Fetal",
+            "Mesen_FallopianFib_Fetal"
+          ],
+          "ask": "Lorenzi separates ligamentous from tubal mesenchyme and the atlas keeps that split, but a quarter of this label landed in the atlas's fallopian fibroblast cell set. Ask what marks ligament mesenchyme as distinct from the tube wall it attaches to."
+        },
+        {
+          "subatlas_cell_label": "Uterus Mese",
+          "serves": [
+            "Mesen_UterusFibs_Fetal",
+            "Mesen_UGSFib_Upper"
+          ],
+          "ask": "Clean match to the fetal uterine cell set. Also ask where Lorenzi puts the boundary between uterine and upper urogenital sinus mesenchyme, since a quarter of what Lorenzi gave the atlas's upper-UGS cell set it had called uterine."
+        },
+        {
+          "subatlas_cell_label": "Uterus Lig",
+          "serves": [
+            "Mesen_UterusLig_Fetal"
+          ],
+          "ask": "Good two-way correspondence. Characterise uterine ligament mesenchyme and ask whether Lorenzi regards the uterine and fallopian ligament populations as one lineage."
+        },
+        {
+          "subatlas_cell_label": "Cervix Mese",
+          "serves": [
+            "Mesen_CervixFib_Fetal",
+            "Mesen_UterusFibs_Fetal"
+          ],
+          "ask": "The atlas's fetal cervical fibroblast cell set is assembled from three separate Lorenzi labels and none of them dominates it; conversely this label splits between the atlas's cervical and uterine cell sets. The specific question is whether Lorenzi draws a cervix/corpus boundary in fetal mesenchyme at all, or treats it as a gradient the atlas has cut."
+        },
+        {
+          "subatlas_cell_label": "Cervix/Vagina Lig",
+          "serves": [
+            "Mesen_CervixFib_Fetal",
+            "Mesen_UterusLig_Fetal"
+          ],
+          "ask": "Most of this label went to the atlas's cervical fibroblasts, which means the atlas merged cervicovaginal ligament mesenchyme into cervical stroma. Ask what Lorenzi takes the ligament population to be and whether it is spatially separable from cervical stroma."
+        },
+        {
+          "subatlas_cell_label": "Upper Vagina Mese",
+          "serves": [
+            "Mesen_VaginaFibs_Upper_Fetal"
+          ],
+          "ask": "Clean two-way match. Full characterisation, and ask specifically about Mullerian versus urogenital sinus origin of upper vaginal mesenchyme, since the atlas separates upper from lower vagina."
+        },
+        {
+          "subatlas_cell_label": "Lower Vagina Mese",
+          "serves": [
+            "Mesen_CorpusSpongiosumFib_Fetal",
+            "Mesen_UGSFib_Lower"
+          ],
+          "ask": "Important negative: the atlas's own Mesen_VaginaFib_Lower_Fetal has no upstream support above the floor, and Lorenzi's lower vaginal mesenchyme instead went mostly to corpus spongiosum and lower urogenital sinus. Ask whether Lorenzi distinguishes lower vaginal mesenchyme from urogenital sinus derivatives — this is the evidence for or against the atlas's lower-vagina cell set existing as a separate population."
+        },
+        {
+          "subatlas_cell_label": "Lower Urogenital Sinus Mese",
+          "serves": [
+            "Mesen_UGSFib_Lower",
+            "Mesen_CorpusSpongiosumFib_Fetal"
+          ],
+          "ask": "Sole source for the atlas's lower-UGS cell set. Characterise it, and ask how far it extends into the structures the atlas calls corpus spongiosum and lower vagina."
+        },
+        {
+          "subatlas_cell_label": "Upper Urogenital Sinus Mese",
+          "serves": [
+            "Mesen_UGSFib_Upper",
+            "Mesen_VaginaFibs_Upper_Fetal"
+          ],
+          "ask": "One of three Lorenzi UGS labels the atlas merged into a single upper-UGS cell set. Ask what separates upper from lower urogenital sinus mesenchyme, and where the upper UGS meets the upper vagina."
+        },
+        {
+          "subatlas_cell_label": "Urogenital Sinus Lig",
+          "serves": [
+            "Mesen_UGSFib_Upper",
+            "Mesen_UGSLig",
+            "Mesen_UGSFib_Lower"
+          ],
+          "ask": "The largest single contributor to the atlas's upper-UGS cell set, and the ONLY label offered for Mesen_UGSLig — where it accounts for only a few per cent of the cell set, so treat any conclusion about Mesen_UGSLig as thin and say so. Ask what the urogenital sinus ligament population is and whether it is distinguishable from UGS mesenchyme proper."
+        },
+        {
+          "subatlas_cell_label": "Wolffian/Mesonephros Mese",
+          "serves": [
+            "Mesen_MesonephricFibs_Fetal",
+            "Mesen_GonadalFibs_Undiff"
+          ],
+          "ask": "Strong two-way match to the atlas's mesonephric fibroblasts. Also note that nearly half of what Lorenzi contributed to the undifferentiated gonadal cell set carried this label: ask where Lorenzi puts the mesonephros/gonad boundary, which is the same boundary Garcia-Alonso 2022 and Lardenois are asked about."
+        },
+        {
+          "subatlas_cell_label": "Epoophron Mese",
+          "serves": [
+            "Mesen_EpoophronFib_Fetal",
+            "Mesen_MesonephricFibs_Fetal"
+          ],
+          "ask": "The atlas keeps epoophoron and mesonephric fibroblasts apart; Lorenzi's epoophoron label divides between them (roughly 58/32). Ask whether Lorenzi regards the epoophoron as a distinct population or as the persisting cranial mesonephros — the atlas's split may be finer than the source supports."
+        },
+        {
+          "subatlas_cell_label": "Müllerian Mese",
+          "serves": [
+            "Mesen_MullerianFib"
+          ],
+          "ask": "Most of this label went to the atlas's Mullerian fibroblast cell set, but the cell set is small and also drew on Garcia-Alonso 2022's coarse mesenchymal category. Ask what defines Mullerian duct mesenchyme before regional specification, and at what stage it resolves into the tubal, uterine and cervical populations above."
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "celltype_GarciaAlonso2022",
+      "doi": "10.1038/s41586-022-04918-4",
+      "reason": "Second because it is the only readable source for the two fetal gonadal fibroblast cell sets (Mesen_OvarianFibs_Fetal, Mesen_GonadalFibs_Undiff), and because its Oi and Gi labels are named, characterised interstitial populations rather than residual categories — this is where ovarian and gonadal interstitial cells were described. Its third label, Mesenchymal_GATA2, is a different kind of read and is included for a different reason: it reaches eleven of the requested cell sets and accounts for nearly all of this study's contribution to each, while no one cell set holds more than a quarter of the label. That is the signature of one coarse category where the atlas has eleven regions. Expect the reading to establish that Garcia-Alonso 2022 did not regionalise tract mesenchyme, which is a useful negative for every Lorenzi question above, not a characterisation.",
+      "questions": [
+        {
+          "subatlas_cell_label": "Oi",
+          "serves": [
+            "Mesen_OvarianFibs_Fetal",
+            "Mesen_GonadalFibs_Undiff"
+          ],
+          "ask": "Strong two-way match to the fetal ovarian fibroblast cell set and the best read available for it. Full characterisation of ovarian interstitial cells: markers, position relative to germ cells and pre-granulosa, timing, and relation to the undifferentiated gonadal interstitium."
+        },
+        {
+          "subatlas_cell_label": "Gi",
+          "serves": [
+            "Mesen_GonadalFibs_Undiff",
+            "Mesen_OvarianFibs_Fetal"
+          ],
+          "ask": "Most of this label sits in the atlas's undifferentiated gonadal fibroblast cell set even though it is a small part of that cell set. Ask what gonadal interstitium is before sex determination, what distinguishes Gi from Oi, and whether the transition is staged."
+        },
+        {
+          "subatlas_cell_label": "Mesenchymal_GATA2",
+          "serves": [
+            "Mesen_MesonephricFibs_Fetal",
+            "Mesen_FallopianFib_Fetal",
+            "Mesen_EpoophronFib_Fetal",
+            "Mesen_UGSFib_Upper",
+            "Mesen_FallopianLig_Fetal",
+            "Mesen_GonadalFibs_Undiff",
+            "Mesen_MullerianFib",
+            "Mesen_UterusFibs_Fetal",
+            "Mesen_UterusLig_Fetal",
+            "Mesen_VaginaFibs_Upper_Fetal"
+          ],
+          "ask": "One pass, and the question is a negative one: does this study treat GATA2+ mesenchyme as a single population, or does it report regional substructure within it? Record what defines the category and what it is contrasted with. Do not attribute region-specific properties to any of the eleven cell sets from this label."
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "celltype_GarciaAlonso2021",
+      "doi": "10.1038/s41588-021-00972-2",
+      "reason": "Third, and ranked above its cell counts for two separate reasons. First, eS and dS are the original description of the oestrogen-responsive and decidualised endometrial stromal states, and nearly every cell carrying either label went into Endometrial functionalis stroma — the largest cell set in the selection. The later endometrial papers resolve those states more finely, but this is where they were named. Second, and more sharply, Fibroblast C7 contributed only a few hundred cells yet almost the whole label landed in Mesen_AdvFibsIntr, and the atlas records 'FibC3'/'C7-Fibroblast' among that cell set's synonyms: this is a small contribution that is very likely the paper the population is named after. Read it before the two papers that merely point at it.",
+      "from_background_knowledge": true,
+      "questions": [
+        {
+          "subatlas_cell_label": "Fibroblast C7",
+          "serves": [
+            "Mesen_AdvFibsIntr"
+          ],
+          "ask": "Small in cells, but almost the entire label went to this one cell set and the atlas carries C7-Fibroblast as a synonym for it. Establish what C7 fibroblasts are: the C7/complement marker basis, where in the endometrium they sit (basalis versus functionalis), and whether they are described as an adventitial or perivascular-adjacent population. This is the primary read for Mesen_AdvFibsIntr."
+        },
+        {
+          "subatlas_cell_label": "eS",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Almost the whole label sits in this cell set, but forms a small fraction of it because the atlas collapsed eleven phase states together. Establish what oestrogen-responsive stroma is, its markers, and its place in the cycle — then note explicitly that the atlas cell set does not separate it from dS."
+        },
+        {
+          "subatlas_cell_label": "dS",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Same shape as eS. Establish the decidualised stromal phenotype and the eS-to-dS transition, and treat the pairing as evidence that the atlas cell set is one level coarser than its sources."
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "celltype_HECA",
+      "doi": "10.1038/s41588-024-01873-w",
+      "reason": "Fourth. This is the integrated endometrial reference, and its stromal labels are phase- and state-resolved (eStromal, cycling, early/mid/late decidualised, plus rare MMP-high, hormone-responsive and HOXA13 states). Almost every cell of each of those labels went into Endometrial functionalis stroma, and each is a small share of it — the cleanest demonstration in this selection that the atlas cell set is a collapse of exactly the states the source resolves. Since the atlas records eleven menstrual-phase and cycling children beneath that cell set, the reading should be used to check whether the split the atlas records below the collapsed level is the split HECA makes. Also carries an assertion worth testing: the atlas names Fibroblast_basalis as a synonym of Mesen_AdvFibsIntr on a label of only a few dozen cells.",
+      "questions": [
+        {
+          "subatlas_cell_label": "eStromal",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "The single largest stromal label in this reference and almost entirely inside this cell set. Establish the proliferative/oestrogen-phase stromal phenotype and its markers."
+        },
+        {
+          "subatlas_cell_label": "eStromal_cycling",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Ask whether cycling stroma is a distinct state or a cell-cycle phase of eStromal, since the atlas records cycling states among this cell set's children."
+        },
+        {
+          "subatlas_cell_label": "dStromal_early",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Establish the decidualisation series. Ask what distinguishes early from mid and late decidualised stroma, and by which markers — this is the distinction the atlas collapsed."
+        },
+        {
+          "subatlas_cell_label": "dStromal_mid",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "As above; take the mid-secretory phenotype and its timing."
+        },
+        {
+          "subatlas_cell_label": "dStromal_late",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "As above; take the late-secretory/pre-menstrual phenotype, and ask whether it connects to menstrual breakdown."
+        },
+        {
+          "subatlas_cell_label": "eStromal_MMPs",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Small, specific and almost entirely inside this cell set. Ask whether this is the menstrual-breakdown stromal state, given the MMP signature."
+        },
+        {
+          "subatlas_cell_label": "sHormones",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Small and specific. Establish what this hormone-responsive stromal state is and whether it maps onto one of the atlas cell set's children."
+        },
+        {
+          "subatlas_cell_label": "HOXA13",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Small and specific, nearly all inside this cell set. HOXA13 is a posterior/cervical positional marker: ask whether this is a lower-segment or cervical-origin stromal population that the atlas has folded into functionalis stroma."
+        },
+        {
+          "subatlas_cell_label": "Fibroblast_basalis",
+          "serves": [
+            "Mesen_AdvFibsIntr"
+          ],
+          "ask": "The atlas asserts this as a synonym of Mesen_AdvFibsIntr, but the label is only a few dozen cells and most of it went here. Test the assertion: is basalis fibroblast in this reference the same population as the C7 fibroblast of Garcia-Alonso 2021, or a different one? Report the disagreement if the description does not support the synonym."
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "celltype_Ulrich2024",
+      "doi": "10.1073/pnas.2404775121",
+      "reason": "Fifth, and included mainly for two things the other endometrial papers cannot supply. It is the only source that says anything substantive about Mesen_EndoGlandBas: its dS2 label accounts for nearly the whole of that small cell set, even though that is a fraction of a per cent of dS2 — so the question is not what dS2 is in general but why the atlas carved a basalis glandular stromal cell set out of it. And its C7-Fibroblast label is recorded by the atlas as a synonym of Mesen_AdvFibsIntr with most of the label landing there, making it the confirmation read for the population Garcia-Alonso 2021 described. Its dS1/dS2/dS3 series is a third decidualisation parameterisation of the same collapsed cell set; read it for whether it agrees with HECA's, not for new content.",
+      "questions": [
+        {
+          "subatlas_cell_label": "C7-Fibroblast",
+          "serves": [
+            "Mesen_AdvFibsIntr",
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Recorded by the atlas as a synonym of Mesen_AdvFibsIntr and most of the label went there. Confirm or contradict the Garcia-Alonso 2021 account: same population, same markers, same location? Note that a fifth of the label went to the functionalis stroma cell set instead."
+        },
+        {
+          "subatlas_cell_label": "dS2",
+          "serves": [
+            "Mesen_EndoGlandBas",
+            "Endometrial functionalis stroma",
+            "Mesen_AdvFibsIntr"
+          ],
+          "ask": "This label accounts for nearly the whole of Mesen_EndoGlandBas and is its only real source, yet those cells are a tiny tail of dS2. Ask whether Ulrich describes any basalis-associated or gland-associated subset within dS2 — if not, the honest finding is that the atlas's glandular basalis stromal cell set has no upstream counterpart and the report should say so."
+        },
+        {
+          "subatlas_cell_label": "dS3",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Take the decidualisation stage definition and compare with HECA's early/mid/late series."
+        },
+        {
+          "subatlas_cell_label": "dS1",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "As above; establish whether dS1-3 is a trajectory or three discrete states."
+        },
+        {
+          "subatlas_cell_label": "eS-proliferative",
+          "serves": [
+            "Endometrial functionalis stroma"
+          ],
+          "ask": "Nearly all inside this cell set. Compare with HECA's eStromal_cycling — same state under two names, or different?"
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "celltype_Weigert2025",
+      "doi": "10.1038/s41467-024-55440-2",
+      "reason": "Sixth. Weigert is the dominant contributor to five adult cell sets and is effectively the whole of what the atlas knows upstream about Mesen_AdvFibs_PI16hi and Mesen_UterotubalJunctionFibs — but it offered exactly one fibroblast label, 'stromal cell', which took essentially all of its contribution to every one of them. This is the clearest case in the selection of an atlas being finer than its source: the PI16-high/PI16-low adventitial distinction and the uterotubal junction are atlas-level calls with no upstream label behind them. Read it once, to characterise fallopian tube stroma across cycle and menopause and to record that the subdivisions were not made here. Ranked below the endometrial papers because the expected yield is a boundary statement, not a characterisation of any of the five cell sets individually.",
+      "questions": [
+        {
+          "subatlas_cell_label": "stromal cell",
+          "serves": [
+            "Mesen_FallopianFibs",
+            "Mesen_AdvFibs_PI16low",
+            "Mesen_AdvFibsIntr",
+            "Mesen_AdvFibs_PI16hi",
+            "Mesen_UterotubalJunctionFibs"
+          ],
+          "ask": "One generic label covering all five cell sets. Two things to settle: what characterises fallopian tube stromal cells (markers, location in the tube wall, variation across menstrual cycle and menopause, which this study is specifically about); and whether the paper reports ANY substructure within stromal cells — PI16 or DPT expression, adventitial versus intramural position, regional difference at the uterotubal junction. If it does not, state plainly that the atlas's adventitial subdivisions are not supported or contradicted here, and do not attach this label's general description to Mesen_AdvFibs_PI16hi or Mesen_UterotubalJunctionFibs as if it were about them."
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "celltype_Ulrich2022",
+      "doi": "10.1016/j.devcel.2022.02.017",
+      "reason": "Seventh. Small and coarsely labelled, but it earns a read for one specific reason that the counts alone would bury: almost the entire 'myofibroblast cell' label went to Mesen_FallopianFibs, and it took most of this study's contribution to that cell set. That is a phenotypic claim the atlas did not carry forward — the atlas calls these fibroblasts, a prior source called them myofibroblasts. Worth settling, since a contractile phenotype would change how the cell set is described. Its second label, 'fibroblast', is generic and spans the three adventitial cell sets the same way Weigert's does; read it only for the same negative.",
+      "from_background_knowledge": true,
+      "questions": [
+        {
+          "subatlas_cell_label": "myofibroblast cell",
+          "serves": [
+            "Mesen_FallopianFibs"
+          ],
+          "ask": "Why myofibroblast? Establish the basis for the call — ACTA2/MYH11/TAGLN expression, contractile programme, position in the tube wall — and whether these cells are distinguished from smooth muscle on one side and plain fibroblasts on the other. If the myofibroblast identity is well supported, it belongs in the Mesen_FallopianFibs report as a competing characterisation."
+        },
+        {
+          "subatlas_cell_label": "fibroblast",
+          "serves": [
+            "Mesen_AdvFibs_PI16low",
+            "Mesen_AdvFibsIntr",
+            "Mesen_AdvFibs_PI16hi",
+            "Mesen_FallopianFibs"
+          ],
+          "ask": "Generic label split across all three adventitial cell sets. Ask only whether this study distinguishes fibroblast subsets within the tube wall and what separates its 'fibroblast' from its 'myofibroblast'. Expect a negative on the PI16 split."
+        }
+      ]
+    },
+    {
+      "subatlas_paper": "celltype_Lardenois2026",
+      "doi": "10.1016/j.devcel.2025.09.011",
+      "reason": "Last, and confirmatory rather than primary. It is a small, focused study of gonadal somatic lineage specification, and both of its useful labels overlap cleanly with cell sets Garcia-Alonso 2022 and Lorenzi 2025 already serve better: 'Interstitial' took nearly all of this study's contribution to both fetal gonadal cell sets, and 'Mesonephric_mesenchymal' is small but mostly landed in the atlas's mesonephric fibroblasts. Read it after the other two, for one thing they may not settle — whether gonadal interstitium arises from mesonephric mesenchyme or from a separate somatic progenitor. If the earlier reads answer that, this can be dropped.",
+      "from_background_knowledge": true,
+      "questions": [
+        {
+          "subatlas_cell_label": "Interstitial",
+          "serves": [
+            "Mesen_GonadalFibs_Undiff",
+            "Mesen_OvarianFibs_Fetal"
+          ],
+          "ask": "Took nearly all of this study's contribution to both gonadal cell sets but is divided between them. Ask whether Lardenois distinguishes undifferentiated gonadal interstitium from ovarian interstitium at all, or treats them as one population across the sex-determination window — a direct test of the split Garcia-Alonso 2022's Gi/Oi supports."
+        },
+        {
+          "subatlas_cell_label": "Mesonephric_mesenchymal",
+          "serves": [
+            "Mesen_MesonephricFibs_Fetal",
+            "Mesen_GonadalFibs_Undiff"
+          ],
+          "ask": "A small label, most of it in the atlas's mesonephric fibroblasts and a substantial further share in the gonadal cell set. Ask whether mesonephric mesenchyme is reported as a source of gonadal interstitial cells — the lineage question that the Lorenzi and Garcia-Alonso reads both raise at this boundary."
+        }
+      ]
+    }
+  ],
+  "not_reading": [
+    {
+      "subatlas_paper": "celltype_OvarySanger2026",
+      "reason": "No DOI and no text to reach. This is the largest gap in the selection, not a minor one: it contributed 179,450 cells across 21 of the 37 requested cell sets and is the sole contributor to six adult ovarian cell sets totalling over 206,000 cells. Those six are carried in atlas_only; the reports for them rest on the atlas paper alone, and should say so."
+    }
+  ],
+  "atlas_only": [
+    {
+      "cell_label": "Mesen_OvarianFibs_InncorMedulla",
+      "reason": "no_readable_source - only contributor is celltype_OvarySanger2026, which has no DOI. The largest cell set in the selection after the endometrial stroma (125,985 cells) and there is nothing upstream to read for it."
+    },
+    {
+      "cell_label": "Mesen_OvarianFibs_Perifol",
+      "reason": "no_readable_source - celltype_OvarySanger2026 only, no DOI."
+    },
+    {
+      "cell_label": "Mesen_OvarianFibs_Outcor",
+      "reason": "no_readable_source - celltype_OvarySanger2026 only, no DOI."
+    },
+    {
+      "cell_label": "Mesen_OvarianFibs_Medulla_SMCsLike",
+      "reason": "no_readable_source - celltype_OvarySanger2026 only, no DOI."
+    },
+    {
+      "cell_label": "Mesen_OvarianFibs_AdvLike",
+      "reason": "no_readable_source - celltype_OvarySanger2026 only, no DOI."
+    },
+    {
+      "cell_label": "Mesen_OvarianInclFibs",
+      "reason": "no_readable_source - celltype_OvarySanger2026 only, no DOI."
+    },
+    {
+      "cell_label": "Mesen_CervixFibs",
+      "reason": "no_provenance - the atlas records no contributing study for these cells. Note this is the adult cervical stroma cell set, distinct from Mesen_CervixFib_Fetal, which Lorenzi 2025 serves; the adult cervix has no upstream source here at all."
+    },
+    {
+      "cell_label": "Mesen_VaginaFibs",
+      "reason": "no_provenance - the atlas records no contributing study for these cells. As with the cervix, the adult vaginal fibroblasts are atlas-only while the fetal upper-vagina cell set is well served by Lorenzi 2025."
+    },
+    {
+      "cell_label": "Mesen_VaginaFib_Lower_Fetal",
+      "reason": "all_below_floor - several studies put cells here but no label in any quantity. Lorenzi 2025's 'Lower Vagina Mese' label, which one would expect to serve this cell set, instead went mostly to corpus spongiosum and lower urogenital sinus; that question is being asked under Lorenzi so the negative is on the record, but no reading can be attributed to this cell set."
+    },
+    {
+      "cell_label": "Mesen_AdvFibs",
+      "reason": "all_below_floor - a 19-cell residual L3 cell set with no label above the floor. Nothing upstream corresponds to it."
+    }
+  ]
+}
