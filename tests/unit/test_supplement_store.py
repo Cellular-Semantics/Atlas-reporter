@@ -1013,3 +1013,78 @@ def test_xlsx_dimensions_ignores_whitespace_only_cells() -> None:
             yield ("   ", "")
 
     assert store._xlsx_dimensions(Sheet()) == (2, 2)
+
+
+# ------------------------------------------------------------------
+# Licence
+# ------------------------------------------------------------------
+
+
+def _with_license(**fields: object) -> dict:
+    manifest = _minimal_manifest()
+    manifest["paper"]["license"] = fields
+    return manifest
+
+
+def test_a_permissive_licence_validates() -> None:
+    manifest = _with_license(
+        id="CC-BY-4.0",
+        redistributable=True,
+        source="biorxiv",
+        url="https://creativecommons.org/licenses/by/4.0/",
+        asserted_at="2026-10-15T00:00:00Z",
+    )
+
+    store.validate_manifest(manifest)
+    assert store.cross_check_manifest(manifest) == []
+
+
+def test_a_reserved_licence_validates_when_it_grants_nothing() -> None:
+    manifest = _with_license(
+        id="all-rights-reserved", redistributable=False, source="publisher_page"
+    )
+
+    store.validate_manifest(manifest)
+    assert store.cross_check_manifest(manifest) == []
+
+
+@pytest.mark.parametrize("license_id", ["unknown", "all-rights-reserved"])
+def test_a_licence_that_grants_nothing_cannot_claim_redistributable(license_id: str) -> None:
+    """The failure mode this field exists to prevent, so it is checked, not trusted."""
+    manifest = _with_license(id=license_id, redistributable=True, source="manual")
+
+    # It satisfies the schema; only the cross-check catches the contradiction.
+    store.validate_manifest(manifest)
+    problems = store.cross_check_manifest(manifest)
+
+    assert any(license_id in problem for problem in problems), problems
+
+
+def test_an_absent_licence_is_not_a_problem_to_report() -> None:
+    """Absence means unchecked. It is the ignore rules' default, not an error here."""
+    manifest = _minimal_manifest()
+    assert "license" not in manifest["paper"]
+
+    store.validate_manifest(manifest)
+    assert store.cross_check_manifest(manifest) == []
+
+
+@pytest.mark.parametrize(
+    "license_fields",
+    [
+        pytest.param({"id": "CC-BY-4.0", "redistributable": True}, id="no-source"),
+        pytest.param({"id": "CC-BY-4.0", "source": "manual"}, id="no-redistributable"),
+        pytest.param({"redistributable": False, "source": "manual"}, id="no-id"),
+        pytest.param(
+            {"id": "CC-BY-4.0", "redistributable": True, "source": "a-hunch"},
+            id="unknown-source",
+        ),
+        pytest.param(
+            {"id": "CC-BY-4.0", "redistributable": True, "source": "manual", "spdx": "x"},
+            id="extra-field",
+        ),
+    ],
+)
+def test_the_schema_rejects_an_ill_formed_licence(license_fields: dict) -> None:
+    with pytest.raises(store.SupplementStoreError):
+        store.validate_manifest(_with_license(**license_fields))

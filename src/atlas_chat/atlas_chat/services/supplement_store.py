@@ -1086,6 +1086,14 @@ def write_manifest(store_root: Path, doi: str, manifest: dict[str, Any]) -> Path
     return path
 
 
+#: Licence identifiers that can never carry ``redistributable: true``.
+#: ``unknown`` records that a check was made and settled nothing, which is the
+#: opposite of permission; ``all-rights-reserved`` is the standard closed-access
+#: publisher licence. Everything else is judged case by case and recorded, since
+#: what a given licence permits *here* is not derivable from its identifier.
+NON_REDISTRIBUTABLE_IDS = frozenset({"unknown", "all-rights-reserved"})
+
+
 def validate_manifest(manifest: dict[str, Any]) -> None:
     """Validate against ``supplement_manifest.schema.json``.
 
@@ -1115,6 +1123,17 @@ def cross_check_manifest(manifest: dict[str, Any]) -> list[str]:
     """
     problems: list[str] = []
     files = {entry["file_id"]: entry for entry in manifest.get("files", [])}
+
+    # A licence that was never settled cannot grant redistribution. The schema
+    # can hold the two fields but not the relation between them, and getting it
+    # wrong is what puts closed-access text into a public repository.
+    license_ = manifest.get("paper", {}).get("license")
+    if license_ and license_.get("redistributable") and license_["id"] in NON_REDISTRIBUTABLE_IDS:
+        problems.append(
+            f"licence {license_['id']!r} claims redistributable: true — "
+            f"{'an unsettled' if license_['id'] == 'unknown' else 'a reserved'} "
+            "licence grants nothing"
+        )
 
     for entry in manifest.get("files", []):
         if entry["status"] == "present" and not entry.get("path"):
