@@ -27,6 +27,13 @@ projects/**/supplements/**/files/
 projects/**/supplements/incoming/*
 !projects/**/supplements/incoming/README.md
 
+# THIS REPO IS PUBLIC, and the rule above only covers `files/`. The store also
+# holds fetched article source, extracted supplement text and prose evidence
+# units — all verbatim, mostly from closed-access publishers, and no manifest
+# in the store records a licence. The whole store stays local.
+projects/**/supplements/
+projects/**/units/
+
 # Large remote-pulled obs table (92.8GB source h5ad; reproducible via h5ad_obs/pull_obs.py).
 # Full obs is 151MB (>GitHub limit); commit the compact obs.categoricals.parquet instead.
 projects/**/h5ad_obs/obs.parquet

@@ -1,0 +1,1704 @@
+=== 10.64898/2026.06.10.731198
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.64898_2026.06.10.731198/manifest.json
+{
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.64898/2026.06.10.731198",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.64898/2026.06.10.731198 into incoming/ and run adopt"
+    }
+  ]
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.64898_2026.06.10.731198/manifest.json
+INFO 10.64898/2026.06.10.731198: 0 relevant, 0 irrelevant, 0 unknown
+{
+  "doi": "10.64898/2026.06.10.731198",
+  "verdicts": {},
+  "to_index": []
+}
+=== 10.1172/jci.insight.195254
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1172_jci.insight.195254/manifest.json
+{
+  "files": [
+    {
+      "file_id": "jciinsight-11-195254-s111.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-11-195254-s112.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-11-195254-s113.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-11-195254-s114.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-11-195254-s115.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-11-195254-s116.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-11-195254-s117.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-11-195254-s118.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-11-195254-s119.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-11-195254-s120.xlsx",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1172_jci.insight.195254/manifest.json
+INFO 10.1172/jci.insight.195254: 9 relevant, 0 irrelevant, 1 unknown
+{
+  "doi": "10.1172/jci.insight.195254",
+  "verdicts": {
+    "unknown": 1,
+    "relevant": 9
+  },
+  "to_index": [
+    {
+      "file_id": "jciinsight-11-195254-s111.pdf",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s111.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "jciinsight-11-195254-s112.xlsx",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s112.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Sheet1] columns age/bmi (kg/m^2)/e2 (pg/ml)/ethnicity -> sample metadata"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s113.xlsx",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s113.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable2_early-vs-pro] columns description/ensembl_gene_id/f/fdr -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s114.xlsx",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s114.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable3_prolif-vs-mi] columns description/f/fdr/gene_biotype -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s115.xlsx",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s115.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable4_early-vs-mid] columns description/ensembl_gene_id/f/fdr -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s116.xlsx",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s116.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable5_late-vs-mid] columns description/ensembl_gene_id/f/fdr -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s117.xlsx",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s117.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable6_epithelium-s] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s118.xlsx",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s118.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable7_Secretory gl] columns avg_log2fc/gene id/p_val/p_val_adj -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s119.xlsx",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s119.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable8_GERM] columns description/ensembl_gene_id/f/fdr -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s120.xlsx",
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s120.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Figure 1B] columns bmi/phase/subject -> sample metadata"
+    }
+  ]
+}
+=== 10.1038/s41588-021-00972-2
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41588-021-00972-2/manifest.json
+{
+  "files": [
+    {
+      "file_id": "41588_2021_972_MOESM1_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41588_2021_972_MOESM2_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41588_2021_972_MOESM3_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41588_2021_972_MOESM4_ESM.csv",
+      "members": 0
+    },
+    {
+      "file_id": "41588_2021_972_MOESM5_ESM.xlsx",
+      "members": 0
+    }
+  ],
+  "gaps": [
+    {
+      "file_id": "10.1038/s41588-021-00972-2",
+      "reason": "bundle returned HTTP 500",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41588-021-00972-2/manifest.json
+INFO 10.1038/s41588-021-00972-2: 1 relevant, 1 irrelevant, 3 unknown
+{
+  "doi": "10.1038/s41588-021-00972-2",
+  "verdicts": {
+    "unknown": 3,
+    "irrelevant": 1,
+    "relevant": 1
+  },
+  "to_index": [
+    {
+      "file_id": "41588_2021_972_MOESM1_ESM.pdf",
+      "path": "papers/10.1038_s41588-021-00972-2/files/41588_2021_972_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41588_2021_972_MOESM3_ESM.xlsx",
+      "path": "papers/10.1038_s41588-021-00972-2/files/41588_2021_972_MOESM3_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Table1] columns 10x kit/age (yo)/cell cycle determination/clinical information -> sample metadata"
+    },
+    {
+      "file_id": "41588_2021_972_MOESM4_ESM.csv",
+      "path": "papers/10.1038_s41588-021-00972-2/files/41588_2021_972_MOESM4_ESM.csv",
+      "relevance": "unknown",
+      "relevance_note": "[41588_2021_972_MOESM4_ESM.csv] columns code/cycle stage/file/fullfilename/gland area matched no signature"
+    },
+    {
+      "file_id": "41588_2021_972_MOESM5_ESM.xlsx",
+      "path": "papers/10.1038_s41588-021-00972-2/files/41588_2021_972_MOESM5_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[ExDaFig9d_organoid1 ] columns ct/detector/stddev ct/target/timepoint matched no signature"
+    }
+  ]
+}
+=== 10.1038/s41586-022-04918-4
+INFO unpacked 41586_2022_4918_MOESM3_ESM.zip → 12 members
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41586-022-04918-4/manifest.json
+{
+  "files": [
+    {
+      "file_id": "41586_2022_4918_MOESM1_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM2_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "members": 12
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM4_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM5_ESM.xlsx",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41586-022-04918-4/manifest.json
+INFO 10.1038/s41586-022-04918-4: 9 relevant, 2 irrelevant, 5 unknown
+{
+  "doi": "10.1038/s41586-022-04918-4",
+  "verdicts": {
+    "unknown": 5,
+    "irrelevant": 2,
+    "relevant": 9
+  },
+  "to_index": [
+    {
+      "file_id": "41586_2022_4918_MOESM1_ESM.pdf",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table1.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table1.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[HUMAN scRNA seq] columns 10xkit/cryo/dig_protocol/donor -> sample metadata"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table11.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table11.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[novel_cellcell_interactions] columns annotation_strategy/curator/is_ppi/partner_a -> curated interactions"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table2.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table2.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[A_cellranger10x_RNA_library_sta] columns cell ranger/genes per cell/number of cells/reads per cell/sample matched no signature"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table3.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table3.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[A_human_scRNAseq_females] columns coelepi/endothelial/epithelial/erythroid -> sample metadata"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table4.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table4.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[human_germcells] columns fgc/oocyte/oogonia_meiotic/oogonia_stra8 -> sample metadata"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table5.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table5.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Supplementary_Table5] columns atac_pwm/atac_tfact/atac_tfact.avg_logfc/atac_tfact.p_val -> differential expression"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table6.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table6.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[human_somatic] columns coelepi_gata2/coelepi_lhx9/early_somatic/early_spax8 -> sample metadata"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table7.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table7.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Supplementary_Table7] columns atac_pwm/atac_tfact/atac_tfact.avg_logfc/atac_tfact.p_val -> differential expression"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table8.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table8.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Supplementary_Table8] columns gene_a/gene_b/germ.gc---germ.gc/germ.gc---germ.pgc -> cell-cell interaction matrix"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "2021-05-07278C-Supplementary_Table9.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table9.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[A immune_gonads_absolutecounts] columns b cell/cdc1/cdc2/early t -> sample metadata"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "member_path": "legends for Supplementary Tables 1-11.docx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/legends for Supplementary Tables 1-11.docx",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: docx \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM4_ESM.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM4_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[ED Fig.1f SVM_early_E11.5] columns annotation/human_svm/prob_coelepi/prob_endothelial/prob_epithelial matched no signature"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM5_ESM.xlsx",
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM5_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[ED Fig.8a SVM_supp_E12.5E16.5] columns annotation/prob_coelepi_lhx9/prob_early_supporting/prob_ose/prob_pregc_i matched no signature"
+    }
+  ]
+}
+=== 10.1126/science.adx0659
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1126_science.adx0659/manifest.json
+{
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1126/science.adx0659",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.1126/science.adx0659 into incoming/ and run adopt"
+    }
+  ]
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1126_science.adx0659/manifest.json
+INFO 10.1126/science.adx0659: 0 relevant, 0 irrelevant, 0 unknown
+{
+  "doi": "10.1126/science.adx0659",
+  "verdicts": {},
+  "to_index": []
+}
+=== 10.1038/s42003-022-04384-8
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s42003-022-04384-8/manifest.json
+{
+  "files": [
+    {
+      "file_id": "42003_2022_4384_MOESM1_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM2_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM3_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM4_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM5_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM6_ESM.pdf",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s42003-022-04384-8/manifest.json
+INFO 10.1038/s42003-022-04384-8: 1 relevant, 2 irrelevant, 3 unknown
+{
+  "doi": "10.1038/s42003-022-04384-8",
+  "verdicts": {
+    "irrelevant": 2,
+    "unknown": 3,
+    "relevant": 1
+  },
+  "to_index": [
+    {
+      "file_id": "42003_2022_4384_MOESM2_ESM.pdf",
+      "path": "papers/10.1038_s42003-022-04384-8/files/42003_2022_4384_MOESM2_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM3_ESM.pdf",
+      "path": "papers/10.1038_s42003-022-04384-8/files/42003_2022_4384_MOESM3_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM4_ESM.xlsx",
+      "path": "papers/10.1038_s42003-022-04384-8/files/42003_2022_4384_MOESM4_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[AllCells] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM5_ESM.xlsx",
+      "path": "papers/10.1038_s42003-022-04384-8/files/42003_2022_4384_MOESM5_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Fig 4d. EdU] columns anpep/cyp17/thmd matched no signature"
+    }
+  ]
+}
+=== 10.1002/ctm2.1219
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1002_ctm2.1219/manifest.json
+{
+  "files": [
+    {
+      "file_id": "CTM2-13-e1219-s001.pdf",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1002_ctm2.1219/manifest.json
+INFO 10.1002/ctm2.1219: 0 relevant, 0 irrelevant, 1 unknown
+{
+  "doi": "10.1002/ctm2.1219",
+  "verdicts": {
+    "unknown": 1
+  },
+  "to_index": [
+    {
+      "file_id": "CTM2-13-e1219-s001.pdf",
+      "path": "papers/10.1002_ctm2.1219/files/CTM2-13-e1219-s001.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    }
+  ]
+}
+=== 10.1093/cei/uxad029
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1093_cei_uxad029/manifest.json
+{
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1093/cei/uxad029",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.1093/cei/uxad029 into incoming/ and run adopt"
+    }
+  ]
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1093_cei_uxad029/manifest.json
+INFO 10.1093/cei/uxad029: 0 relevant, 0 irrelevant, 0 unknown
+{
+  "doi": "10.1093/cei/uxad029",
+  "verdicts": {},
+  "to_index": []
+}
+=== 10.1126/sciadv.adm7506
+INFO unpacked sciadv.adm7506_data_s1_to_s8.zip → 8 members
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1126_sciadv.adm7506/manifest.json
+{
+  "files": [
+    {
+      "file_id": "sciadv.adm7506_sm.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "members": 8
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1126_sciadv.adm7506/manifest.json
+INFO 10.1126/sciadv.adm7506: 3 relevant, 0 irrelevant, 6 unknown
+{
+  "doi": "10.1126/sciadv.adm7506",
+  "verdicts": {
+    "unknown": 6,
+    "relevant": 3
+  },
+  "to_index": [
+    {
+      "file_id": "sciadv.adm7506_sm.pdf",
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_sm.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "member_path": "adm7506_Data_S1.xlsx",
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S1.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Donor 1] columns *yellow denotes sample excluded from analysis/aoi subcategorization/nuclei count/roi # -> abundance per cell type"
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "member_path": "adm7506_Data_S2.xlsx",
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S2.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Donor 1] columns donor 1 cluster 1/donor 1 cluster 2/donor 1 cluster 3/donor 1 cluster 4 -> sample metadata"
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "member_path": "adm7506_Data_S3.xlsx",
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S3.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Donor 1 ST - DE Genes] columns cd68+_adj.pval/cd68+_fc/cd68+_p.value/cd68+_t.stat/cluster1vs2_adj.pval matched no signature"
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "member_path": "adm7506_Data_S4.xlsx",
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S4.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Donor 1 LRPath] columns #genes/c1_fdr/c1_or/c1_p-value -> differential expression"
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "member_path": "adm7506_Data_S5.xlsx",
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S5.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Granulosa - 96 Genes] columns 1/2/3/4/gene name matched no signature"
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "member_path": "adm7506_Data_S6.xlsx",
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S6.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Donor 3] columns endothelial/immune/pericyte/stromal matched no signature"
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "member_path": "adm7506_Data_S7.xlsx",
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S7.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[immu4_mean_detect] columns macrophage/mast/nk/t matched no signature"
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "member_path": "adm7506_Data_S8.xlsx",
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S8.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Sheet 1] columns endothelial/macrophage/mast cell/nk cell/pericyte matched no signature"
+    }
+  ]
+}
+=== 10.1016/j.devcel.2025.09.011
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2025.09.011/manifest.json
+{
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1016/j.devcel.2025.09.011",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.1016/j.devcel.2025.09.011 into incoming/ and run adopt"
+    }
+  ]
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2025.09.011/manifest.json
+INFO 10.1016/j.devcel.2025.09.011: 0 relevant, 0 irrelevant, 0 unknown
+{
+  "doi": "10.1016/j.devcel.2025.09.011",
+  "verdicts": {},
+  "to_index": []
+}
+=== 10.1038/s41467-020-20358-y
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-020-20358-y/manifest.json
+{
+  "files": [
+    {
+      "file_id": "41467_2020_20358_MOESM1_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM2_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM3_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM4_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM5_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM6_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM7_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM8_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM9_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM10_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM11_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM12_ESM.pdf",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-020-20358-y/manifest.json
+INFO 10.1038/s41467-020-20358-y: 7 relevant, 2 irrelevant, 3 unknown
+{
+  "doi": "10.1038/s41467-020-20358-y",
+  "verdicts": {
+    "unknown": 3,
+    "irrelevant": 2,
+    "relevant": 7
+  },
+  "to_index": [
+    {
+      "file_id": "41467_2020_20358_MOESM1_ESM.pdf",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM3_ESM.pdf",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM3_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM4_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM4_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Sheet1] columns age (years)/birth weight of infants/bmi (kg/m2)/diabetes mellitus -> sample metadata"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM5_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM5_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Epithelial cells] columns barcode/cell types/sample -> per-cell table"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM6_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM6_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[EP] columns avg_logfc/gene/p-value -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM7_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM7_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[upregulated] columns gene id/logfc/p-value/symbol -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM8_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM8_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[upregulated] columns bgratio/count/description/gene id -> enrichment results"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM9_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM9_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[EP-upregulated] columns gene/logfc/p-value -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM10_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM10_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[cell clusters] columns cell/control/log2fc/pop -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM11_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM11_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[FIB subtype] columns con 1/con 2/con 3/con 4/con 5 matched no signature"
+    }
+  ]
+}
+=== 10.1038/s41586-025-09875-2
+INFO unpacked 41586_2025_9875_MOESM6_ESM.zip → 11 members
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41586-025-09875-2/manifest.json
+{
+  "files": [
+    {
+      "file_id": "41586_2025_9875_MOESM1_ESM.docx",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM2_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM3_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM4_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM5_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "members": 11
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM7_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM8_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM9_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM10_ESM.xlsx",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41586-025-09875-2/manifest.json
+INFO 10.1038/s41586-025-09875-2: 11 relevant, 1 irrelevant, 8 unknown
+{
+  "doi": "10.1038/s41586-025-09875-2",
+  "verdicts": {
+    "unknown": 8,
+    "irrelevant": 1,
+    "relevant": 11
+  },
+  "to_index": [
+    {
+      "file_id": "41586_2025_9875_MOESM1_ESM.docx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM1_ESM.docx",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: docx \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM3_ESM.pdf",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM3_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM4_ESM.pdf",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM4_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM5_ESM.pdf",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM5_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable1_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable1_revision.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[scRNAseq_invivo] columns developmental stage (cs)/developmental stage (pcw)/donor id/library id -> sample metadata"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable10_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable10_revision.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[drug2cell_<10PCW] columns atc code/au tga pregnancy category/au tga pregnancy category explained/cell type/chembl drug matched no signature"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable2_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable2_revision.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[scRNA-seq_QC_invivo_metrics] columns library id/median genes per cell/median umi counts per cell/notes/number of cells matched no signature"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable3_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable3_revision.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[ISS_gene_panel] columns hox panel ensembl id/hox panel gene name/original panel ensembl id/original panel gene name matched no signature"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable4_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable4_revision.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[scRNA-seq_pre10pcw_TFIDF_marker] columns cluster/gene/genefrequency/genefrequencyglobal -> TF-IDF marker table"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable5_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable5_revision.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[TradeSeq_M\u00fcllerianMesenchymalMa] columns df (all lineages)/df_1  (mesenchymal male lineage)/df_2 (epithelial lineage)/df_3 (mesenchymal female lineage) -> differential expression"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable6_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable6_revision.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Wolffian_to_Mullerian_signallin] columns gene_a/gene_b/interacting_cells/interacting_pair -> curated interactions"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable7_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable7_revision.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[M\u00fcllerianAxis_Mese_Cytassist] columns df/gene/meanlogfc/pvalue -> differential expression"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable8_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable8_revision.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[FallopianAxis_Epi_Cytassist] columns df/gene/meanlogfc/pvalue -> differential expression"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/SupplementaryTable9_revision.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/SupplementaryTable9_revision.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[CorpusSpongiosum_UrethralEpi_si] columns gene_a/gene_b/interacting_cells/interacting_pair -> curated interactions"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "member_path": "2024-08-16755D-s6/Supplementary-Tables.docx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM6_ESM__unpacked/2024-08-16755D-s6/Supplementary-Tables.docx",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: docx \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM7_ESM.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM7_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[panel_c] columns basemean/lfcse/log2foldchange/padj -> differential expression"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM8_ESM.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM8_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[panel_f] columns adj.p.val_0/adj.p.val_1/geneid/logfc_0 -> differential expression"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM9_ESM.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM9_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[panel_l] columns basemean/lfcse/log2foldchange/padj -> differential expression"
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM10_ESM.xlsx",
+      "path": "papers/10.1038_s41586-025-09875-2/files/41586_2025_9875_MOESM10_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[panel_h] columns adj.p.val_0/adj.p.val_1/geneid/logfc_0 -> differential expression"
+    }
+  ]
+}
+=== 10.1038/s41588-024-01873-w
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41588-024-01873-w/manifest.json
+{
+  "files": [
+    {
+      "file_id": "41588_2024_1873_MOESM1_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41588_2024_1873_MOESM2_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41588_2024_1873_MOESM3_ESM.xlsx",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41588-024-01873-w/manifest.json
+INFO 10.1038/s41588-024-01873-w: 1 relevant, 1 irrelevant, 1 unknown
+{
+  "doi": "10.1038/s41588-024-01873-w",
+  "verdicts": {
+    "unknown": 1,
+    "irrelevant": 1,
+    "relevant": 1
+  },
+  "to_index": [
+    {
+      "file_id": "41588_2024_1873_MOESM1_ESM.pdf",
+      "path": "papers/10.1038_s41588-024-01873-w/files/41588_2024_1873_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41588_2024_1873_MOESM3_ESM.xlsx",
+      "path": "papers/10.1038_s41588-024-01873-w/files/41588_2024_1873_MOESM3_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Table3_cell_type_counts] columns 1 | sox9 basalis/10 | preluminal/11 | luminal/12 | preciliated -> sample metadata"
+    }
+  ]
+}
+=== 10.1172/jci.insight.153921
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1172_jci.insight.153921/manifest.json
+{
+  "files": [
+    {
+      "file_id": "jciinsight-7-153921-s253.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-7-153921-s256.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-7-153921-s257.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-7-153921-s258.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-7-153921-s259.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-7-153921-s260.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-7-153921-s261.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-7-153921-s262.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-7-153921-s254.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "jciinsight-7-153921-s255.xlsx",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1172_jci.insight.153921/manifest.json
+INFO 10.1172/jci.insight.153921: 8 relevant, 0 irrelevant, 2 unknown
+{
+  "doi": "10.1172/jci.insight.153921",
+  "verdicts": {
+    "unknown": 2,
+    "relevant": 8
+  },
+  "to_index": [
+    {
+      "file_id": "jciinsight-7-153921-s253.pdf",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s253.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "jciinsight-7-153921-s256.xlsx",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s256.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SMCs_topmarkers] columns avg_log2fc/celltype/cluster/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s257.xlsx",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s257.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Stromals_topmarkers] columns avg_log2fc/celltype/cluster/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s258.xlsx",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s258.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Macrophages_topmarkers] columns avg_log2fc/celltype/cluster/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s259.xlsx",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s259.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[list of DEGs (q<0.1)] columns basemean/cell_type/gene_name/kbid -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s260.xlsx",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s260.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[pathways_DEgenes_celltypes_role] columns 1/col4a1, col4a2, sdc4, itgb8, itgb1, itgav/collagen/ilc, monocyte, myofibroblast, smooth muscle cells-1/myofibroblast, stromal-1, stromal-2 matched no signature"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s261.xlsx",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s261.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Supplemental Table 8] columns avg_logfc/cluster/ensg/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s262.xlsx",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s262.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Quality metrics] columns # cell count/# genes detected per cell/# umis per cell/fraction reads in cells -> per-cell table"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s254.xlsx",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s254.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Supplemental Table 10] columns avg_log2fc/celltype/cluster/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s255.xlsx",
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s255.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Supplemental Table 11] columns cell type/gene/lfcse/log2fc -> differential expression"
+    }
+  ]
+}
+=== 10.1016/j.devcel.2024.01.006
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2024.01.006/manifest.json
+{
+  "files": [
+    {
+      "file_id": "mmc1.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "mmc2.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "mmc3.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "mmc4.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "mmc5.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "mmc6.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "mmc7.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "mmc8.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "mmc9.pdf",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2024.01.006/manifest.json
+INFO 10.1016/j.devcel.2024.01.006: 7 relevant, 0 irrelevant, 2 unknown
+{
+  "doi": "10.1016/j.devcel.2024.01.006",
+  "verdicts": {
+    "unknown": 2,
+    "relevant": 7
+  },
+  "to_index": [
+    {
+      "file_id": "mmc1.pdf",
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc1.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "mmc2.xlsx",
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc2.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[jasin_male_filtered_markers_mnn] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc3.xlsx",
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc3.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[rete.age.DEGs] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc4.xlsx",
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc4.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[male.meso.markergenes.res0.3] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc5.xlsx",
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc5.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[jasin_female_filtered_markers_m] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc6.xlsx",
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc6.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[fmeso.markers.markergene.res.0.] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc7.xlsx",
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc7.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[1T_male_rete_reproductive.tract] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc8.xlsx",
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc8.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[1T_female_rete_reproductive.tra] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc9.pdf",
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc9.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    }
+  ]
+}
+=== 10.1038/s41556-022-00961-5
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41556-022-00961-5/manifest.json
+{
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1038/s41556-022-00961-5",
+      "reason": "Europe PMC has PMC9901845 but serves no article XML, so the publisher's supplement filenames and captions are unavailable",
+      "action": "drop the supplements into incoming/ and run adopt"
+    },
+    {
+      "file_id": "10.1038/s41556-022-00961-5",
+      "reason": "bundle is not a zip (164 bytes) \u2014 Europe PMC has no open supplementary files for this article",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41556-022-00961-5/manifest.json
+INFO 10.1038/s41556-022-00961-5: 0 relevant, 0 irrelevant, 0 unknown
+{
+  "doi": "10.1038/s41556-022-00961-5",
+  "verdicts": {},
+  "to_index": []
+}
+=== 10.1016/j.devcel.2022.02.017
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2022.02.017/manifest.json
+{
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1016/j.devcel.2022.02.017",
+      "reason": "Europe PMC has PMC9007916 but serves no article XML, so the publisher's supplement filenames and captions are unavailable",
+      "action": "drop the supplements into incoming/ and run adopt"
+    },
+    {
+      "file_id": "10.1016/j.devcel.2022.02.017",
+      "reason": "bundle is not a zip (164 bytes) \u2014 Europe PMC has no open supplementary files for this article",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2022.02.017/manifest.json
+INFO 10.1016/j.devcel.2022.02.017: 0 relevant, 0 irrelevant, 0 unknown
+{
+  "doi": "10.1016/j.devcel.2022.02.017",
+  "verdicts": {},
+  "to_index": []
+}
+=== 10.1073/pnas.2404775121
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1073_pnas.2404775121/manifest.json
+{
+  "files": [
+    {
+      "file_id": "pnas.2404775121.sapp.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd01.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd02.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd03.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd04.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd05.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd06.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd07.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd08.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd09.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd10.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd11.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd12.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd13.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd14.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd15.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "pnas.2404775121.sd16.xlsx",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1073_pnas.2404775121/manifest.json
+INFO 10.1073/pnas.2404775121: 5 relevant, 0 irrelevant, 12 unknown
+{
+  "doi": "10.1073/pnas.2404775121",
+  "verdicts": {
+    "unknown": 12,
+    "relevant": 5
+  },
+  "to_index": [
+    {
+      "file_id": "pnas.2404775121.sapp.pdf",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sapp.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "pnas.2404775121.sd01.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd01.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Dataset S1A] columns d1/d2/d3/d4 -> sample metadata"
+    },
+    {
+      "file_id": "pnas.2404775121.sd02.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd02.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Dataset 2A Major cell types] columns 1/2/3/4/4_1 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd03.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd03.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[3B major cell type markers] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "pnas.2404775121.sd04.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd04.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[4A Cycle -Major type counts] columns 1/2/3/4 -> sample metadata"
+    },
+    {
+      "file_id": "pnas.2404775121.sd05.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd05.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[5A Major cell type centroids] columns 1_l_endo/2_endo/3_stro/4_1_cili_epi/4_epi matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd06.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd06.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[6A Major cell type DEGs] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "pnas.2404775121.sd07.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd07.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[7A 20Us C12 endo markers] columns 1_artery/2_endomt/3_pcv/4_tpcv/5_capillary matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd08.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd08.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[8A Centroid rank correlations] columns 3_1/3_2/3_3/3_4/3_5 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd09.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd09.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[9A Centroid rank correlations] columns 4_1/4_2/4_3/4_4/4_5 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd10.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd10.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[10A Centroid rank correlations] columns 1/2_1/2_2/2_3/2_4 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd11.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd11.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[11A Centroid rank correlations] columns 5_1/5_2/5_3/5_4/5_5 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd12.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd12.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[TF575-endo] columns 2_1/2_2/2_3/2_4/2_5 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd13.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd13.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Stro-cycle-endoOnly] columns 3_1 early sec/3_1 mid-late sec/3_1 prolif/3_10 early sec/3_10 mid-late sec matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd14.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd14.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[C2-14DE] columns avg_log2fc 2_1 prolif vs early-sec/avg_log2fc 2_2 early-sec vs mid-late-sec/avg_log2fc 2_2 prolif vs early-sec/avg_log2fc 2_3 early-sec vs mid-late-sec -> differential expression"
+    },
+    {
+      "file_id": "pnas.2404775121.sd15.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd15.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[C2-14GSEA] columns missing in 14/nes 2_1 prolif vs early-sec/nes 2_2 early-sec vs mid-late-sec/nes 2_2 prolif vs early-sec/nes 2_3 early-sec vs mid-late-sec matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd16.xlsx",
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd16.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[stro33_phaseDE] columns x3_1.early.sec/x3_1.mid.late.sec/x3_1.prolif/x3_10.early.sec/x3_10.mid.late.sec matched no signature"
+    }
+  ]
+}
+=== 10.1038/s41467-020-14936-3
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-020-14936-3/manifest.json
+{
+  "files": [
+    {
+      "file_id": "41467_2020_14936_MOESM1_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM2_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM3_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM4_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM5_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM6_ESM.pdf",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-020-14936-3/manifest.json
+INFO 10.1038/s41467-020-14936-3: 3 relevant, 1 irrelevant, 2 unknown
+{
+  "doi": "10.1038/s41467-020-14936-3",
+  "verdicts": {
+    "unknown": 2,
+    "relevant": 3,
+    "irrelevant": 1
+  },
+  "to_index": [
+    {
+      "file_id": "41467_2020_14936_MOESM1_ESM.pdf",
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM2_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM2_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Variable genes clusters] columns avg_logfc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM3_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM3_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Variable genes clusters] columns avg_logfc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM4_ESM.xlsx",
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM4_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Up Down] columns avg_logcpm/de/entrez/fdr -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM6_ESM.pdf",
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM6_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    }
+  ]
+}
+=== 10.1016/j.devcel.2023.07.014
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2023.07.014/manifest.json
+{
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1016/j.devcel.2023.07.014",
+      "reason": "Europe PMC has PMC10615783 but serves no article XML, so the publisher's supplement filenames and captions are unavailable",
+      "action": "drop the supplements into incoming/ and run adopt"
+    },
+    {
+      "file_id": "10.1016/j.devcel.2023.07.014",
+      "reason": "bundle is not a zip (165 bytes) \u2014 Europe PMC has no open supplementary files for this article",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2023.07.014/manifest.json
+INFO 10.1016/j.devcel.2023.07.014: 0 relevant, 0 irrelevant, 0 unknown
+{
+  "doi": "10.1016/j.devcel.2023.07.014",
+  "verdicts": {},
+  "to_index": []
+}
+=== 10.1038/s41591-020-1040-z
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41591-020-1040-z/manifest.json
+{
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1038/s41591-020-1040-z",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.1038/s41591-020-1040-z into incoming/ and run adopt"
+    }
+  ]
+}
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41591-020-1040-z/manifest.json
+INFO 10.1038/s41591-020-1040-z: 0 relevant, 0 irrelevant, 0 unknown
+{
+  "doi": "10.1038/s41591-020-1040-z",
+  "verdicts": {},
+  "to_index": []
+}
+=== 10.1038/s41467-024-55440-2
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-024-55440-2/manifest.json
+{
+  "files": [
+    {
+      "file_id": "41467_2024_55440_MOESM1_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM2_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM3_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM4_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM5_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM6_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM7_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM8_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM9_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM10_ESM.csv",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM11_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM12_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM13_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM14_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM15_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM16_ESM.xlsx",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM17_ESM.pdf",
+      "members": 0
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM18_ESM.xlsx",
+      "members": 0
+    }
+  ],
+  "gaps": []
+}
+/Users/do12/Documents/GitHub/Atlas-reporter-wt/pdf-text-extract/.venv/lib/python3.14/site-packages/openpyxl/worksheet/header_footer.py:48: UserWarning: Cannot parse header or footer so it will be ignored
+  warn("""Cannot parse header or footer so it will be ignored""")
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-024-55440-2/manifest.json
+INFO 10.1038/s41467-024-55440-2: 13 relevant, 2 irrelevant, 3 unknown
+{
+  "doi": "10.1038/s41467-024-55440-2",
+  "verdicts": {
+    "unknown": 3,
+    "irrelevant": 2,
+    "relevant": 13
+  },
+  "to_index": [
+    {
+      "file_id": "41467_2024_55440_MOESM1_ESM.pdf",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM3_ESM.pdf",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM3_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf \u2014 only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM4_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM4_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM5_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM5_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM6_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM6_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM7_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM7_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM8_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM8_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM9_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM9_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM10_ESM.csv",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM10_ESM.csv",
+      "relevance": "unknown",
+      "relevance_note": "[41467_2024_55440_MOESM10_ESM.csv] columns b \ufffd\ufffd(\ufffd\ufffdm\ufffdl\u007f\ufffdj\ufffdd\t\u0001\ufffd\ufffd\ufffd\ufffdf\u001d\ufffd\ufffd-\ufffd6v\ufffd\ufffd\ufffd\ufffd{\ufffd$\u0012$e\ufffd\ufffd\ufffd\ufffd\\\ufffd\u0001\ufffdpp\u007f\u05df\ufffd=`\ufffd\ufffd\u0016sq\u0011\ufffdg)\ufffd\ufffd\ufffdq\ufffd9\u000f\ufffdwj\u0017\u001ae\ufffd\u0019f\u04abb\ufffdf {\ufffd\u03c3/\u007f\u07c9ytu/\ufffd%\ufffd\ufffdr\ufffd!\u0006\ufffdw(\u0562\ufffd\ufffdm\u017f7j\ufffd\u0257\ufffde\ufffd\ufffd\ufffd\u0285\ufffd6\ufffd\"\u0016*\ufffdv\ufffd!i]y\ufffd\u0002\ufffd+\u0016 matched no signature"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM11_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM11_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM12_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM12_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM13_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM13_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM14_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM14_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM15_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM15_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM16_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM16_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM18_ESM.xlsx",
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM18_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Figure 4] columns cluster/description/fdr adjusted p-value/gene count -> differential expression"
+    }
+  ]
+}
+DONE

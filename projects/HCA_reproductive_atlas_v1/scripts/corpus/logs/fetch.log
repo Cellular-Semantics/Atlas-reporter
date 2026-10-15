@@ -1,0 +1,1191 @@
+=== [1/22] 10.64898/2026.06.10.731198
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.64898%2F2026.06.10.731198%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.64898/2026.06.10.731198 -> (no PMCID)
+INFO 10.64898/2026.06.10.731198: 0 file(s) to fetch
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.64898_2026.06.10.731198/manifest.json
+INFO 10.64898/2026.06.10.731198: 0/0 file(s) present
+{
+  "doi": "10.64898/2026.06.10.731198",
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.64898/2026.06.10.731198",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.64898/2026.06.10.731198 into incoming/ and run adopt"
+    }
+  ]
+}
+--- exit 0
+=== [2/22] 10.1172/jci.insight.195254
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1172%2Fjci.insight.195254%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1172/jci.insight.195254 -> PMC12892900
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12892900/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 10 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1172_jci.insight.195254/source/paper.jats.xml
+INFO 10.1172/jci.insight.195254: 10 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12892900/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   jciinsight-11-195254-s111.pdf via europepmc_bundle (389839 bytes)
+INFO   jciinsight-11-195254-s112.xlsx via europepmc_bundle (10087 bytes)
+INFO   jciinsight-11-195254-s113.xlsx via europepmc_bundle (2620204 bytes)
+INFO   jciinsight-11-195254-s114.xlsx via europepmc_bundle (2695668 bytes)
+INFO   jciinsight-11-195254-s115.xlsx via europepmc_bundle (2699605 bytes)
+INFO   jciinsight-11-195254-s116.xlsx via europepmc_bundle (2611699 bytes)
+INFO   jciinsight-11-195254-s117.xlsx via europepmc_bundle (603496 bytes)
+INFO   jciinsight-11-195254-s118.xlsx via europepmc_bundle (802458 bytes)
+INFO   jciinsight-11-195254-s119.xlsx via europepmc_bundle (77801 bytes)
+INFO   jciinsight-11-195254-s120.xlsx via europepmc_bundle (25722 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1172_jci.insight.195254/manifest.json
+INFO 10.1172/jci.insight.195254: 10/10 file(s) present
+{
+  "doi": "10.1172/jci.insight.195254",
+  "files": [
+    {
+      "file_id": "jciinsight-11-195254-s111.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 389839
+    },
+    {
+      "file_id": "jciinsight-11-195254-s112.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 10087
+    },
+    {
+      "file_id": "jciinsight-11-195254-s113.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 2620204
+    },
+    {
+      "file_id": "jciinsight-11-195254-s114.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 2695668
+    },
+    {
+      "file_id": "jciinsight-11-195254-s115.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 2699605
+    },
+    {
+      "file_id": "jciinsight-11-195254-s116.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 2611699
+    },
+    {
+      "file_id": "jciinsight-11-195254-s117.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 603496
+    },
+    {
+      "file_id": "jciinsight-11-195254-s118.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 802458
+    },
+    {
+      "file_id": "jciinsight-11-195254-s119.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 77801
+    },
+    {
+      "file_id": "jciinsight-11-195254-s120.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 25722
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [3/22] 10.1038/s41588-021-00972-2
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41588-021-00972-2%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s41588-021-00972-2 -> PMC8648563
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8648563/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 5 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41588-021-00972-2/source/paper.jats.xml
+INFO 10.1038/s41588-021-00972-2: skipping 1 process artefact(s)
+INFO 10.1038/s41588-021-00972-2: 4 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8648563/supplementaryFiles "HTTP/1.1 500 Internal Server Error"
+INFO 10.1038/s41588-021-00972-2: bundle unusable — bundle returned HTTP 500
+INFO HTTP Request: GET https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-021-00972-2/MediaObjects/41588_2021_972_MOESM1_ESM.pdf "HTTP/1.1 200 OK"
+INFO   41588_2021_972_MOESM1_ESM.pdf via publisher_direct (478242 bytes)
+INFO HTTP Request: GET https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-021-00972-2/MediaObjects/41588_2021_972_MOESM3_ESM.xlsx "HTTP/1.1 200 OK"
+INFO   41588_2021_972_MOESM3_ESM.xlsx via publisher_direct (35702391 bytes)
+INFO HTTP Request: GET https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-021-00972-2/MediaObjects/41588_2021_972_MOESM4_ESM.csv "HTTP/1.1 200 OK"
+INFO   41588_2021_972_MOESM4_ESM.csv via publisher_direct (25591 bytes)
+INFO HTTP Request: GET https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-021-00972-2/MediaObjects/41588_2021_972_MOESM5_ESM.xlsx "HTTP/1.1 200 OK"
+INFO   41588_2021_972_MOESM5_ESM.xlsx via publisher_direct (44427 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41588-021-00972-2/manifest.json
+INFO 10.1038/s41588-021-00972-2: 4/5 file(s) present
+{
+  "doi": "10.1038/s41588-021-00972-2",
+  "files": [
+    {
+      "file_id": "41588_2021_972_MOESM1_ESM.pdf",
+      "status": "present",
+      "route": "publisher_direct",
+      "size_bytes": 478242
+    },
+    {
+      "file_id": "41588_2021_972_MOESM2_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    },
+    {
+      "file_id": "41588_2021_972_MOESM3_ESM.xlsx",
+      "status": "present",
+      "route": "publisher_direct",
+      "size_bytes": 35702391
+    },
+    {
+      "file_id": "41588_2021_972_MOESM4_ESM.csv",
+      "status": "present",
+      "route": "publisher_direct",
+      "size_bytes": 25591
+    },
+    {
+      "file_id": "41588_2021_972_MOESM5_ESM.xlsx",
+      "status": "present",
+      "route": "publisher_direct",
+      "size_bytes": 44427
+    }
+  ],
+  "gaps": [
+    {
+      "file_id": "10.1038/s41588-021-00972-2",
+      "reason": "bundle returned HTTP 500",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}
+--- exit 0
+=== [4/22] 10.1038/s41586-022-04918-4
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-022-04918-4%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s41586-022-04918-4 -> PMC9300467
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9300467/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 5 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41586-022-04918-4/source/paper.jats.xml
+INFO 10.1038/s41586-022-04918-4: skipping 1 process artefact(s)
+INFO 10.1038/s41586-022-04918-4: 4 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9300467/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   41586_2022_4918_MOESM1_ESM.pdf via europepmc_bundle (642722 bytes)
+INFO   41586_2022_4918_MOESM3_ESM.zip via europepmc_bundle (3229816 bytes)
+INFO   41586_2022_4918_MOESM4_ESM.xlsx via europepmc_bundle (22544807 bytes)
+INFO   41586_2022_4918_MOESM5_ESM.xlsx via europepmc_bundle (1466407 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41586-022-04918-4/manifest.json
+INFO 10.1038/s41586-022-04918-4: 4/5 file(s) present
+{
+  "doi": "10.1038/s41586-022-04918-4",
+  "files": [
+    {
+      "file_id": "41586_2022_4918_MOESM1_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 642722
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM2_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 3229816
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM4_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 22544807
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM5_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1466407
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [5/22] 10.1126/science.adx0659
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.adx0659%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1126/science.adx0659 -> (no PMCID)
+INFO 10.1126/science.adx0659: 0 file(s) to fetch
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1126_science.adx0659/manifest.json
+INFO 10.1126/science.adx0659: 0/0 file(s) present
+{
+  "doi": "10.1126/science.adx0659",
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1126/science.adx0659",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.1126/science.adx0659 into incoming/ and run adopt"
+    }
+  ]
+}
+--- exit 0
+=== [6/22] 10.1038/s42003-022-04384-8
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs42003-022-04384-8%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s42003-022-04384-8 -> PMC9812973
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9812973/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 6 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s42003-022-04384-8/source/paper.jats.xml
+INFO 10.1038/s42003-022-04384-8: skipping 2 process artefact(s)
+INFO 10.1038/s42003-022-04384-8: 4 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9812973/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   42003_2022_4384_MOESM2_ESM.pdf via europepmc_bundle (2332876 bytes)
+INFO   42003_2022_4384_MOESM3_ESM.pdf via europepmc_bundle (489473 bytes)
+INFO   42003_2022_4384_MOESM4_ESM.xlsx via europepmc_bundle (1390806 bytes)
+INFO   42003_2022_4384_MOESM5_ESM.xlsx via europepmc_bundle (14674 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s42003-022-04384-8/manifest.json
+INFO 10.1038/s42003-022-04384-8: 4/6 file(s) present
+{
+  "doi": "10.1038/s42003-022-04384-8",
+  "files": [
+    {
+      "file_id": "42003_2022_4384_MOESM1_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM2_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 2332876
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM3_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 489473
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM4_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1390806
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM5_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 14674
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM6_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [7/22] 10.1002/ctm2.1219
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1002%2Fctm2.1219%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1002/ctm2.1219 -> PMC10040725
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10040725/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 1 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1002_ctm2.1219/source/paper.jats.xml
+INFO 10.1002/ctm2.1219: 1 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10040725/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   CTM2-13-e1219-s001.pdf via europepmc_bundle (2662660 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1002_ctm2.1219/manifest.json
+INFO 10.1002/ctm2.1219: 1/1 file(s) present
+{
+  "doi": "10.1002/ctm2.1219",
+  "files": [
+    {
+      "file_id": "CTM2-13-e1219-s001.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 2662660
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [8/22] 10.1093/cei/uxad029
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1093%2Fcei%2Fuxad029%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1093/cei/uxad029 -> (no PMCID)
+INFO 10.1093/cei/uxad029: 0 file(s) to fetch
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1093_cei_uxad029/manifest.json
+INFO 10.1093/cei/uxad029: 0/0 file(s) present
+{
+  "doi": "10.1093/cei/uxad029",
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1093/cei/uxad029",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.1093/cei/uxad029 into incoming/ and run adopt"
+    }
+  ]
+}
+--- exit 0
+=== [9/22] 10.1126/sciadv.adm7506
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fsciadv.adm7506%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1126/sciadv.adm7506 -> PMC10997207
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10997207/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 2 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1126_sciadv.adm7506/source/paper.jats.xml
+INFO 10.1126/sciadv.adm7506: 2 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10997207/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   sciadv.adm7506_sm.pdf via europepmc_bundle (1240591 bytes)
+INFO   sciadv.adm7506_data_s1_to_s8.zip via europepmc_bundle (52376257 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1126_sciadv.adm7506/manifest.json
+INFO 10.1126/sciadv.adm7506: 2/2 file(s) present
+{
+  "doi": "10.1126/sciadv.adm7506",
+  "files": [
+    {
+      "file_id": "sciadv.adm7506_sm.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1240591
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 52376257
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [10/22] 10.1016/j.devcel.2025.09.011
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.devcel.2025.09.011%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1016/j.devcel.2025.09.011 -> (no PMCID)
+INFO 10.1016/j.devcel.2025.09.011: 0 file(s) to fetch
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2025.09.011/manifest.json
+INFO 10.1016/j.devcel.2025.09.011: 0/0 file(s) present
+{
+  "doi": "10.1016/j.devcel.2025.09.011",
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1016/j.devcel.2025.09.011",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.1016/j.devcel.2025.09.011 into incoming/ and run adopt"
+    }
+  ]
+}
+--- exit 0
+=== [11/22] 10.1038/s41467-020-20358-y
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-020-20358-y%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s41467-020-20358-y -> PMC7782707
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7782707/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 12 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-020-20358-y/source/paper.jats.xml
+INFO 10.1038/s41467-020-20358-y: skipping 2 process artefact(s)
+INFO 10.1038/s41467-020-20358-y: 10 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7782707/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   41467_2020_20358_MOESM1_ESM.pdf via europepmc_bundle (2552602 bytes)
+INFO   41467_2020_20358_MOESM3_ESM.pdf via europepmc_bundle (49806 bytes)
+INFO   41467_2020_20358_MOESM4_ESM.xlsx via europepmc_bundle (13966 bytes)
+INFO   41467_2020_20358_MOESM5_ESM.xlsx via europepmc_bundle (3756447 bytes)
+INFO   41467_2020_20358_MOESM6_ESM.xlsx via europepmc_bundle (106545 bytes)
+INFO   41467_2020_20358_MOESM7_ESM.xlsx via europepmc_bundle (134556 bytes)
+INFO   41467_2020_20358_MOESM8_ESM.xlsx via europepmc_bundle (96708 bytes)
+INFO   41467_2020_20358_MOESM9_ESM.xlsx via europepmc_bundle (1110271 bytes)
+INFO   41467_2020_20358_MOESM10_ESM.xlsx via europepmc_bundle (14774 bytes)
+INFO   41467_2020_20358_MOESM11_ESM.xlsx via europepmc_bundle (14306 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-020-20358-y/manifest.json
+INFO 10.1038/s41467-020-20358-y: 10/12 file(s) present
+{
+  "doi": "10.1038/s41467-020-20358-y",
+  "files": [
+    {
+      "file_id": "41467_2020_20358_MOESM1_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 2552602
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM2_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM3_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 49806
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM4_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 13966
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM5_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 3756447
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM6_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 106545
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM7_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 134556
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM8_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 96708
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM9_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1110271
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM10_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 14774
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM11_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 14306
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM12_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [12/22] 10.1038/s41586-025-09875-2
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-025-09875-2%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s41586-025-09875-2 -> PMC12893920
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12893920/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 10 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41586-025-09875-2/source/paper.jats.xml
+INFO 10.1038/s41586-025-09875-2: skipping 1 process artefact(s)
+INFO 10.1038/s41586-025-09875-2: 9 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12893920/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   41586_2025_9875_MOESM1_ESM.docx via europepmc_bundle (1698932 bytes)
+INFO   41586_2025_9875_MOESM3_ESM.pdf via europepmc_bundle (5655738 bytes)
+INFO   41586_2025_9875_MOESM4_ESM.pdf via europepmc_bundle (5933388 bytes)
+INFO   41586_2025_9875_MOESM5_ESM.pdf via europepmc_bundle (3980975 bytes)
+INFO   41586_2025_9875_MOESM6_ESM.zip via europepmc_bundle (5454082 bytes)
+INFO   41586_2025_9875_MOESM7_ESM.xlsx via europepmc_bundle (1104462 bytes)
+INFO   41586_2025_9875_MOESM8_ESM.xlsx via europepmc_bundle (717137 bytes)
+INFO   41586_2025_9875_MOESM9_ESM.xlsx via europepmc_bundle (398640 bytes)
+INFO   41586_2025_9875_MOESM10_ESM.xlsx via europepmc_bundle (728389 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41586-025-09875-2/manifest.json
+INFO 10.1038/s41586-025-09875-2: 9/10 file(s) present
+{
+  "doi": "10.1038/s41586-025-09875-2",
+  "files": [
+    {
+      "file_id": "41586_2025_9875_MOESM1_ESM.docx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1698932
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM2_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM3_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 5655738
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM4_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 5933388
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM5_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 3980975
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM6_ESM.zip",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 5454082
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM7_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1104462
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM8_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 717137
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM9_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 398640
+    },
+    {
+      "file_id": "41586_2025_9875_MOESM10_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 728389
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [13/22] 10.1038/s41588-024-01873-w
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41588-024-01873-w%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s41588-024-01873-w -> PMC11387200
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11387200/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 3 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41588-024-01873-w/source/paper.jats.xml
+INFO 10.1038/s41588-024-01873-w: skipping 1 process artefact(s)
+INFO 10.1038/s41588-024-01873-w: 2 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11387200/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   41588_2024_1873_MOESM1_ESM.pdf via europepmc_bundle (602802 bytes)
+INFO   41588_2024_1873_MOESM3_ESM.xlsx via europepmc_bundle (400034 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41588-024-01873-w/manifest.json
+INFO 10.1038/s41588-024-01873-w: 2/3 file(s) present
+{
+  "doi": "10.1038/s41588-024-01873-w",
+  "files": [
+    {
+      "file_id": "41588_2024_1873_MOESM1_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 602802
+    },
+    {
+      "file_id": "41588_2024_1873_MOESM2_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    },
+    {
+      "file_id": "41588_2024_1873_MOESM3_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 400034
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [14/22] 10.1172/jci.insight.153921
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1172%2Fjci.insight.153921%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1172/jci.insight.153921 -> PMC8983148
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8983148/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 10 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1172_jci.insight.153921/source/paper.jats.xml
+INFO 10.1172/jci.insight.153921: 0 file(s) to fetch
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1172_jci.insight.153921/manifest.json
+INFO 10.1172/jci.insight.153921: 10/10 file(s) present
+{
+  "doi": "10.1172/jci.insight.153921",
+  "files": [
+    {
+      "file_id": "jciinsight-7-153921-s253.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 2450158
+    },
+    {
+      "file_id": "jciinsight-7-153921-s256.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 27229
+    },
+    {
+      "file_id": "jciinsight-7-153921-s257.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 19518
+    },
+    {
+      "file_id": "jciinsight-7-153921-s258.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 32560
+    },
+    {
+      "file_id": "jciinsight-7-153921-s259.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 664404
+    },
+    {
+      "file_id": "jciinsight-7-153921-s260.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 17376
+    },
+    {
+      "file_id": "jciinsight-7-153921-s261.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 51280
+    },
+    {
+      "file_id": "jciinsight-7-153921-s262.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 13634
+    },
+    {
+      "file_id": "jciinsight-7-153921-s254.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1794534
+    },
+    {
+      "file_id": "jciinsight-7-153921-s255.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 13097
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [15/22] 10.1016/j.devcel.2024.01.006
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.devcel.2024.01.006%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1016/j.devcel.2024.01.006 -> PMC10898717
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10898717/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 9 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2024.01.006/source/paper.jats.xml
+INFO 10.1016/j.devcel.2024.01.006: 9 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10898717/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   mmc1.pdf via europepmc_bundle (3798899 bytes)
+INFO   mmc2.xlsx via europepmc_bundle (580304 bytes)
+INFO   mmc3.xlsx via europepmc_bundle (32006 bytes)
+INFO   mmc4.xlsx via europepmc_bundle (203171 bytes)
+INFO   mmc5.xlsx via europepmc_bundle (492656 bytes)
+INFO   mmc6.xlsx via europepmc_bundle (172499 bytes)
+INFO   mmc7.xlsx via europepmc_bundle (78666 bytes)
+INFO   mmc8.xlsx via europepmc_bundle (86504 bytes)
+INFO   mmc9.pdf via europepmc_bundle (17787196 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2024.01.006/manifest.json
+INFO 10.1016/j.devcel.2024.01.006: 9/9 file(s) present
+{
+  "doi": "10.1016/j.devcel.2024.01.006",
+  "files": [
+    {
+      "file_id": "mmc1.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 3798899
+    },
+    {
+      "file_id": "mmc2.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 580304
+    },
+    {
+      "file_id": "mmc3.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 32006
+    },
+    {
+      "file_id": "mmc4.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 203171
+    },
+    {
+      "file_id": "mmc5.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 492656
+    },
+    {
+      "file_id": "mmc6.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 172499
+    },
+    {
+      "file_id": "mmc7.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 78666
+    },
+    {
+      "file_id": "mmc8.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 86504
+    },
+    {
+      "file_id": "mmc9.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 17787196
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [16/22] 10.1038/s41556-022-00961-5
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41556-022-00961-5%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s41556-022-00961-5 -> PMC9901845
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9901845/fullTextXML "HTTP/1.1 404 Not Found"
+INFO PMC9901845: fullTextXML 404 — no article XML, so no captions
+INFO 10.1038/s41556-022-00961-5: 0 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9901845/supplementaryFiles "HTTP/1.1 200 OK"
+INFO 10.1038/s41556-022-00961-5: bundle unusable — bundle is not a zip (164 bytes) — Europe PMC has no open supplementary files for this article
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41556-022-00961-5/manifest.json
+INFO 10.1038/s41556-022-00961-5: 0/0 file(s) present
+{
+  "doi": "10.1038/s41556-022-00961-5",
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1038/s41556-022-00961-5",
+      "reason": "Europe PMC has PMC9901845 but serves no article XML, so the publisher's supplement filenames and captions are unavailable",
+      "action": "drop the supplements into incoming/ and run adopt"
+    },
+    {
+      "file_id": "10.1038/s41556-022-00961-5",
+      "reason": "bundle is not a zip (164 bytes) \u2014 Europe PMC has no open supplementary files for this article",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}
+--- exit 0
+=== [17/22] 10.1016/j.devcel.2022.02.017
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.devcel.2022.02.017%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1016/j.devcel.2022.02.017 -> PMC9007916
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9007916/fullTextXML "HTTP/1.1 404 Not Found"
+INFO PMC9007916: fullTextXML 404 — no article XML, so no captions
+INFO 10.1016/j.devcel.2022.02.017: 0 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9007916/supplementaryFiles "HTTP/1.1 200 OK"
+INFO 10.1016/j.devcel.2022.02.017: bundle unusable — bundle is not a zip (164 bytes) — Europe PMC has no open supplementary files for this article
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2022.02.017/manifest.json
+INFO 10.1016/j.devcel.2022.02.017: 0/0 file(s) present
+{
+  "doi": "10.1016/j.devcel.2022.02.017",
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1016/j.devcel.2022.02.017",
+      "reason": "Europe PMC has PMC9007916 but serves no article XML, so the publisher's supplement filenames and captions are unavailable",
+      "action": "drop the supplements into incoming/ and run adopt"
+    },
+    {
+      "file_id": "10.1016/j.devcel.2022.02.017",
+      "reason": "bundle is not a zip (164 bytes) \u2014 Europe PMC has no open supplementary files for this article",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}
+--- exit 0
+=== [18/22] 10.1073/pnas.2404775121
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1073%2Fpnas.2404775121%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1073/pnas.2404775121 -> PMC11551439
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11551439/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 17 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1073_pnas.2404775121/source/paper.jats.xml
+INFO 10.1073/pnas.2404775121: 17 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11551439/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   pnas.2404775121.sapp.pdf via europepmc_bundle (2639172 bytes)
+INFO   pnas.2404775121.sd01.xlsx via europepmc_bundle (15346 bytes)
+INFO   pnas.2404775121.sd02.xlsx via europepmc_bundle (13914109 bytes)
+INFO   pnas.2404775121.sd03.xlsx via europepmc_bundle (704125 bytes)
+INFO   pnas.2404775121.sd04.xlsx via europepmc_bundle (39031 bytes)
+INFO   pnas.2404775121.sd05.xlsx via europepmc_bundle (22267863 bytes)
+INFO   pnas.2404775121.sd06.xlsx via europepmc_bundle (463272 bytes)
+INFO   pnas.2404775121.sd07.xlsx via europepmc_bundle (77653 bytes)
+INFO   pnas.2404775121.sd08.xlsx via europepmc_bundle (657120 bytes)
+INFO   pnas.2404775121.sd09.xlsx via europepmc_bundle (593591 bytes)
+INFO   pnas.2404775121.sd10.xlsx via europepmc_bundle (246083 bytes)
+INFO   pnas.2404775121.sd11.xlsx via europepmc_bundle (838926 bytes)
+INFO   pnas.2404775121.sd12.xlsx via europepmc_bundle (162842 bytes)
+INFO   pnas.2404775121.sd13.xlsx via europepmc_bundle (45222598 bytes)
+INFO   pnas.2404775121.sd14.xlsx via europepmc_bundle (80739221 bytes)
+INFO   pnas.2404775121.sd15.xlsx via europepmc_bundle (25885838 bytes)
+INFO   pnas.2404775121.sd16.xlsx via europepmc_bundle (1467280 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1073_pnas.2404775121/manifest.json
+INFO 10.1073/pnas.2404775121: 17/17 file(s) present
+{
+  "doi": "10.1073/pnas.2404775121",
+  "files": [
+    {
+      "file_id": "pnas.2404775121.sapp.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 2639172
+    },
+    {
+      "file_id": "pnas.2404775121.sd01.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 15346
+    },
+    {
+      "file_id": "pnas.2404775121.sd02.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 13914109
+    },
+    {
+      "file_id": "pnas.2404775121.sd03.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 704125
+    },
+    {
+      "file_id": "pnas.2404775121.sd04.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 39031
+    },
+    {
+      "file_id": "pnas.2404775121.sd05.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 22267863
+    },
+    {
+      "file_id": "pnas.2404775121.sd06.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 463272
+    },
+    {
+      "file_id": "pnas.2404775121.sd07.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 77653
+    },
+    {
+      "file_id": "pnas.2404775121.sd08.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 657120
+    },
+    {
+      "file_id": "pnas.2404775121.sd09.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 593591
+    },
+    {
+      "file_id": "pnas.2404775121.sd10.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 246083
+    },
+    {
+      "file_id": "pnas.2404775121.sd11.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 838926
+    },
+    {
+      "file_id": "pnas.2404775121.sd12.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 162842
+    },
+    {
+      "file_id": "pnas.2404775121.sd13.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 45222598
+    },
+    {
+      "file_id": "pnas.2404775121.sd14.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 80739221
+    },
+    {
+      "file_id": "pnas.2404775121.sd15.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 25885838
+    },
+    {
+      "file_id": "pnas.2404775121.sd16.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1467280
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [19/22] 10.1038/s41467-020-14936-3
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-020-14936-3%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s41467-020-14936-3 -> PMC7052271
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7052271/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 6 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-020-14936-3/source/paper.jats.xml
+INFO 10.1038/s41467-020-14936-3: skipping 1 process artefact(s)
+INFO 10.1038/s41467-020-14936-3: 5 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7052271/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   41467_2020_14936_MOESM1_ESM.pdf via europepmc_bundle (13572363 bytes)
+INFO   41467_2020_14936_MOESM2_ESM.xlsx via europepmc_bundle (549963 bytes)
+INFO   41467_2020_14936_MOESM3_ESM.xlsx via europepmc_bundle (1064658 bytes)
+INFO   41467_2020_14936_MOESM4_ESM.xlsx via europepmc_bundle (1364336 bytes)
+INFO   41467_2020_14936_MOESM6_ESM.pdf via europepmc_bundle (63307 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-020-14936-3/manifest.json
+INFO 10.1038/s41467-020-14936-3: 5/6 file(s) present
+{
+  "doi": "10.1038/s41467-020-14936-3",
+  "files": [
+    {
+      "file_id": "41467_2020_14936_MOESM1_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 13572363
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM2_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 549963
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM3_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1064658
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM4_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 1364336
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM5_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM6_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 63307
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+=== [20/22] 10.1016/j.devcel.2023.07.014
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.devcel.2023.07.014%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1016/j.devcel.2023.07.014 -> PMC10615783
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10615783/fullTextXML "HTTP/1.1 404 Not Found"
+INFO PMC10615783: fullTextXML 404 — no article XML, so no captions
+INFO 10.1016/j.devcel.2023.07.014: 0 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10615783/supplementaryFiles "HTTP/1.1 200 OK"
+INFO 10.1016/j.devcel.2023.07.014: bundle unusable — bundle is not a zip (165 bytes) — Europe PMC has no open supplementary files for this article
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1016_j.devcel.2023.07.014/manifest.json
+INFO 10.1016/j.devcel.2023.07.014: 0/0 file(s) present
+{
+  "doi": "10.1016/j.devcel.2023.07.014",
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1016/j.devcel.2023.07.014",
+      "reason": "Europe PMC has PMC10615783 but serves no article XML, so the publisher's supplement filenames and captions are unavailable",
+      "action": "drop the supplements into incoming/ and run adopt"
+    },
+    {
+      "file_id": "10.1016/j.devcel.2023.07.014",
+      "reason": "bundle is not a zip (165 bytes) \u2014 Europe PMC has no open supplementary files for this article",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}
+--- exit 0
+=== [21/22] 10.1038/s41591-020-1040-z
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41591-020-1040-z%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s41591-020-1040-z -> (no PMCID)
+INFO 10.1038/s41591-020-1040-z: 0 file(s) to fetch
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41591-020-1040-z/manifest.json
+INFO 10.1038/s41591-020-1040-z: 0/0 file(s) present
+{
+  "doi": "10.1038/s41591-020-1040-z",
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1038/s41591-020-1040-z",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.1038/s41591-020-1040-z into incoming/ and run adopt"
+    }
+  ]
+}
+--- exit 0
+=== [22/22] 10.1038/s41467-024-55440-2
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-024-55440-2%22&format=json&pageSize=1&resultType=core "HTTP/1.1 200 OK"
+INFO 10.1038/s41467-024-55440-2 -> PMC11698969
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11698969/fullTextXML "HTTP/1.1 200 OK"
+INFO JATS listed 18 supplementary files in /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-024-55440-2/source/paper.jats.xml
+INFO 10.1038/s41467-024-55440-2: skipping 2 process artefact(s)
+INFO 10.1038/s41467-024-55440-2: 16 file(s) to fetch
+INFO HTTP Request: GET https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11698969/supplementaryFiles "HTTP/1.1 200 OK"
+INFO   41467_2024_55440_MOESM1_ESM.pdf via europepmc_bundle (12458267 bytes)
+INFO   41467_2024_55440_MOESM3_ESM.pdf via europepmc_bundle (109432 bytes)
+INFO   41467_2024_55440_MOESM4_ESM.xlsx via europepmc_bundle (30447 bytes)
+INFO   41467_2024_55440_MOESM5_ESM.xlsx via europepmc_bundle (37941 bytes)
+INFO   41467_2024_55440_MOESM6_ESM.xlsx via europepmc_bundle (17943 bytes)
+INFO   41467_2024_55440_MOESM7_ESM.xlsx via europepmc_bundle (257707 bytes)
+INFO   41467_2024_55440_MOESM8_ESM.xlsx via europepmc_bundle (19087 bytes)
+INFO   41467_2024_55440_MOESM9_ESM.xlsx via europepmc_bundle (19808 bytes)
+INFO   41467_2024_55440_MOESM10_ESM.csv via europepmc_bundle (187839 bytes)
+INFO   41467_2024_55440_MOESM11_ESM.xlsx via europepmc_bundle (269196 bytes)
+INFO   41467_2024_55440_MOESM12_ESM.xlsx via europepmc_bundle (3147830 bytes)
+INFO   41467_2024_55440_MOESM13_ESM.xlsx via europepmc_bundle (38457 bytes)
+INFO   41467_2024_55440_MOESM14_ESM.xlsx via europepmc_bundle (411253 bytes)
+INFO   41467_2024_55440_MOESM15_ESM.xlsx via europepmc_bundle (154423 bytes)
+INFO   41467_2024_55440_MOESM16_ESM.xlsx via europepmc_bundle (33554 bytes)
+INFO   41467_2024_55440_MOESM18_ESM.xlsx via europepmc_bundle (20738130 bytes)
+INFO wrote /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/papers/10.1038_s41467-024-55440-2/manifest.json
+INFO 10.1038/s41467-024-55440-2: 16/18 file(s) present
+{
+  "doi": "10.1038/s41467-024-55440-2",
+  "files": [
+    {
+      "file_id": "41467_2024_55440_MOESM1_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 12458267
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM2_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM3_ESM.pdf",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 109432
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM4_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 30447
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM5_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 37941
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM6_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 17943
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM7_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 257707
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM8_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 19087
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM9_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 19808
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM10_ESM.csv",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 187839
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM11_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 269196
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM12_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 3147830
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM13_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 38457
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM14_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 411253
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM15_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 154423
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM16_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 33554
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM17_ESM.pdf",
+      "status": "skipped",
+      "route": "none",
+      "size_bytes": null
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM18_ESM.xlsx",
+      "status": "present",
+      "route": "europepmc_bundle",
+      "size_bytes": 20738130
+    }
+  ],
+  "gaps": []
+}
+--- exit 0
+DONE
