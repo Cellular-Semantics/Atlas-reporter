@@ -108,6 +108,15 @@
         "cell_fullname": { "type": "string", "description": "Full-length name (name_resolver)." },
         "cell_ontology_term_id": { "type": "string", "description": "CL (or CL-extending) term id (ontology-term-lookup)." },
         "cell_ontology_term": { "type": "string", "description": "Human-readable label for cell_ontology_term_id." },
+        "cell_ontology_match_type": {
+          "type": "string",
+          "enum": ["exact match", "broad match", "narrow match"],
+          "description": "How closely cell_ontology_term_id matches what this cell set actually is, in the SKOS sense used by cl_mapping.schema.json. 'exact match' means the term and the cell set denote the same thing; 'broad match' means the term is more general, which is the honest state whenever the ontology has no term at the cell set's grain; 'narrow match' means the term is more specific than the cell set. Carry a curator's own grading through rather than re-deriving it: a source that distinguishes a perfect from a nearest/closest match is recording exactly this, and dropping it presents a knowingly approximate mapping as if it were settled. Absent means the match quality was never assessed, which is not the same as an exact match."
+        },
+        "cell_ontology_mapping_notes": {
+          "type": "string",
+          "description": "Free-text caveats on the ontology mapping itself: why this term and not a named rival, what a broad match fails to capture, an alternative term worth revisiting, or a dependency on evidence not yet gathered. Scoped to the mapping — where the cell_label came from goes in comment, and what the cell set is goes in rationale."
+        },
         "cell_set_accession": { "type": "string", "description": "Stable id for this cell set, independent of cell_label." },
         "parent_cell_set_accession": { "type": ["string", "null"], "description": "Accession of the cell set that subsumes this one (hierarchy); null for root cell sets." },
         "n_cells": { "type": "integer", "minimum": 0, "description": "Local extension: number of cells in the set." },
