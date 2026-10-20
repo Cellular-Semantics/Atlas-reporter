@@ -4,8 +4,9 @@ Thin entry point:
 
 .. code-block:: bash
 
-    python -m atlas_chat.cli_report annotations --cas projects/<p>/cas.json
-    python -m atlas_chat.cli_report annotations --cas <cas.json> --labelset L4 --out table.tsv
+    python -m atlas_chat.cli_report annotations --cas <cas.json> --out table.xlsx
+    python -m atlas_chat.cli_report annotations --cas <cas.json> --minimal --out table.xlsx
+    python -m atlas_chat.cli_report annotations --cas <cas.json> --labelset L4 --format tsv
 
 The implementation lives in :mod:`atlas_chat.services.cas_report`.
 """

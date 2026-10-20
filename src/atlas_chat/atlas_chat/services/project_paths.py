@@ -185,16 +185,14 @@ def outline(
     synonyms: bool = False,
 ) -> str:
     """The annotation hierarchy as lines. See :func:`cas_report.annotations_table`."""
-    from atlas_chat.services.cas_report import annotations_table
+    from atlas_chat.services.cas_report import LEGACY_OUTLINE, annotations_table
 
     return annotations_table(
         cas,
         labelset=labelset,
         match=match,
         under=under,
-        accession_column=False,
-        ontology=False,
-        synonyms=synonyms,
+        only=[*LEGACY_OUTLINE, "synonyms"] if synonyms else list(LEGACY_OUTLINE),
     )
 
 
