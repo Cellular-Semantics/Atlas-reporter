@@ -496,6 +496,7 @@ Everything reusable is callable without a Claude Code session:
 | --- | --- |
 | `python -m atlas_chat.cli_degs` | check a differential-expression store |
 | `python -m atlas_chat.cli_project` | `paths`: a project's locations, from its name under `projects/`. `outline`: its annotation hierarchy |
+| `python -m atlas_chat.cli_report` | `annotations`: the annotation hierarchy, its ontology mappings and its evidence, as a spreadsheet (xlsx, or tsv/csv) |
 | `python -m atlas_chat.cli_paper` | retrieval waterfall: fetch, adopt, candidates, show, text |
 | `python -m atlas_chat.cli_paper_ingest` | a paper plus its indexed supplementary prose, assembled for reading |
 | `python -m atlas_chat.cli_subject_block` | what a reader is told about a cell set, from CAS+ |
