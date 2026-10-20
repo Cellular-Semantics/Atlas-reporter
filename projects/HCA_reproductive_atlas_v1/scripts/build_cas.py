@@ -32,13 +32,46 @@ wb = openpyxl.load_workbook("inputs/cell_ontology_mapping.xlsx"); ws = wb["Final
 # fetal tree and an adult tree and duplicated 4 L3 region nodes. Merge singular -> plural so
 # fetal + adult stroma unify under one L2 (and the duplicated L3s / artefactual chains dissolve).
 CANON = {"Stromal-interstitial fibroblast": "Stromal-interstitial fibroblasts"}
+# The sheet grades its own CL mappings in PAIRS: G/H are the perfect match and its
+# id, I/J the nearest match and its id. Column K is a third, ungraded copy of the id.
+# Taking the id from K and the label from G-or-I (as this script used to) pairs them
+# from different columns, and K disagrees with both graded columns on 5 rows — so
+# those shipped an id and a label naming different cell types (uNK1/2/3 shipped the
+# parent CL:4052028 under the uNK1/2/3 labels; the two squamous-granulosa rows
+# shipped CL:0000501 under the label 'squamous granulosa cell'). Read the id and the
+# label from the SAME pair, prefer the perfect match, and carry the grade through:
+# 174 of the 223 shipped mappings are a nearest match, which downstream must be able
+# to see.
+#
+# One source error cannot be fixed by reading the right columns. Immune_T_Cyc is
+# graded 'cycling T cell' / CL:0000076 — self-consistent in the sheet, but CL:0000076
+# IS squamous epithelial cell; cycling T cell is CL:4033069. Overridden here and
+# reported to the atlas team; drop the override once the sheet is corrected.
+SHEET_ID_FIX = {
+    "Immune_T_Cyc": ("CL:4033069", "cycling T cell",
+                     "Sheet gave CL:0000076 for 'cycling T cell'; CL:0000076 is "
+                     "squamous epithelial cell. Corrected to CL:4033069."),
+}
+
 sheet = {}
 for r in list(ws.iter_rows(values_only=True))[1:]:
     leaf = cln(r[0])
     if not leaf: continue
     path = [cln(r[2]), cln(r[3]), cln(r[4]), cln(r[5])]        # L1,L2,L3,L4
     path = [CANON.get(v, v) for v in path]
-    sheet[leaf] = {"path": path, "cl_id": cln(r[10]), "cl_label": cln(r[6]) or cln(r[8])}
+    perfect, perfect_id = cln(r[6]), cln(r[7])                 # G, H
+    nearest, nearest_id = cln(r[8]), cln(r[9])                 # I, J
+    if perfect_id or perfect:
+        cl_id, cl_label, grade = perfect_id or cln(r[10]), perfect, "exact match"
+    elif nearest_id or nearest:
+        cl_id, cl_label, grade = nearest_id or cln(r[10]), nearest, "broad match"
+    else:
+        cl_id, cl_label, grade = cln(r[10]), None, None
+    note = None
+    if leaf in SHEET_ID_FIX:
+        cl_id, cl_label, note = SHEET_ID_FIX[leaf]
+    sheet[leaf] = {"path": path, "cl_id": cl_id, "cl_label": cl_label,
+                   "cl_grade": grade, "cl_note": note}
 wb.close()
 
 # ---------------------------------------------------------------- object obs
@@ -90,7 +123,8 @@ key2acc = {k: f"HCArepro:L{v['level']}:{i:04d}" for i, (k, v) in enumerate(nodes
 
 # CL term per node (from the code(s) that terminate there)
 for k, v in nodes.items():
-    cls = {(sheet[code2key[c]]["cl_id"], sheet[code2key[c]]["cl_label"])
+    cls = {(sheet[code2key[c]]["cl_id"], sheet[code2key[c]]["cl_label"],
+            sheet[code2key[c]]["cl_grade"], sheet[code2key[c]]["cl_note"])
            for c in v["codes_terminal"] if code2key[c]}
     v["cl"] = list(cls)
 
@@ -179,6 +213,8 @@ for key, v in nodes.items():
         if len(ids) == 1:
             ann["cell_ontology_term_id"] = ids[0][0]
             ann["cell_ontology_term"]   = ids[0][1]
+            if ids[0][2]: ann["cell_ontology_match_type"] = ids[0][2]
+            if ids[0][3]: ann["cell_ontology_mapping_notes"] = ids[0][3]
         elif len(ids) > 1:
             ann["cell_ontology_term_id"] = [c[0] for c in ids]   # ambiguous -> list (flagged)
     # author annotations (own labels + descriptors), each a value distribution
@@ -233,6 +269,8 @@ for key, v in nodes.items():
         k = code2key.get(code)
         cl_id = sheet[k]["cl_id"] if k else None
         cl_lab = sheet[k]["cl_label"] if k else None
+        cl_grade = sheet[k]["cl_grade"] if k else None
+        cl_note = sheet[k]["cl_note"] if k else None
         leaf_lvl = parent_lvl + 1
         acc = f"HCArepro:L{leaf_lvl}:m{mint_i:03d}"; mint_i += 1
         leaf = {
@@ -250,6 +288,8 @@ for key, v in nodes.items():
         if cl_id:
             leaf["cell_ontology_term_id"] = cl_id
             leaf["cell_ontology_term"] = cl_lab
+            if cl_grade: leaf["cell_ontology_match_type"] = cl_grade
+            if cl_note: leaf["cell_ontology_mapping_notes"] = cl_note
         leaf["author_annotations"] = [
             {"field": f, "values": vals} for f, vals in aa_raw]
         ta = []
@@ -525,7 +565,8 @@ for a in annotations:
 # stable, readable key order (cell_fullname next to cell_label)
 _KEY_ORDER = ["labelset", "cell_label", "cell_fullname", "cell_set_accession",
               "parent_cell_set_accession", "n_cells", "cell_ontology_term_id",
-              "cell_ontology_term", "synonyms", "marker_gene_evidence",
+              "cell_ontology_term", "cell_ontology_match_type",
+              "cell_ontology_mapping_notes", "synonyms", "marker_gene_evidence",
               "negative_marker_gene_evidence"]
 annotations = [{**{k: a[k] for k in _KEY_ORDER if k in a},
                 **{k: v for k, v in a.items() if k not in _KEY_ORDER}}
@@ -651,7 +692,8 @@ print("composition categories:", dict(_n_cat))
 
 _KEY_ORDER2 = ["labelset", "cell_label", "cell_fullname", "cell_set_accession",
                "parent_cell_set_accession", "n_cells", "cell_ontology_term_id",
-               "cell_ontology_term", "synonyms", "marker_gene_evidence",
+               "cell_ontology_term", "cell_ontology_match_type",
+               "cell_ontology_mapping_notes", "synonyms", "marker_gene_evidence",
                "negative_marker_gene_evidence", "comment", "rationale", "rationale_dois",
                "composition", "transferred_annotations"]
 annotations = [{**{k: a[k] for k in _KEY_ORDER2 if k in a},
