@@ -121,46 +121,88 @@ def build(
     return block
 
 
+def _ambiguity(label: str, matches: list[dict[str, Any]]) -> str:
+    lines = [f"{label!r} names {len(matches)} cell sets:"]
+    lines += [
+        f"  {m.get('cell_set_accession', '?')}  ({m.get('labelset', '?')},"
+        f" {m.get('n_cells', '?')} cells)"
+        for m in matches
+    ]
+    lines.append("name one with --accession")
+    return "\n".join(lines)
+
+
 def build_all(
     cas_doc: dict[str, Any],
     cell_labels: list[str] | None = None,
     *,
+    accessions: list[str] | None = None,
     categories: tuple[str, ...] = CONTEXT_CATEGORIES,
     min_ratio: float = DEFAULT_MIN_RATIO,
 ) -> list[dict[str, Any]]:
     """Blocks for the named cell sets, in the order asked for.
 
+    A cell set is named by label or by accession. Only the accession is
+    guaranteed unique: an atlas may use one label at two levels of its
+    hierarchy, for cell sets with different members and different terms.
+
     Args:
         cas_doc: the CAS+ document.
-        cell_labels: which cell sets to build for. All of them when omitted.
+        cell_labels: labels to build for. All cell sets when this and
+            ``accessions`` are both omitted.
+        accessions: accessions to build for, for labels that name more than one.
         categories: descriptor categories to carry as context.
         min_ratio: floor on a value's share of the cell set.
 
     Returns:
-        One block per requested label.
+        One block per cell set asked for, in the order asked for.
 
     Raises:
-        SubjectBlockError: a requested label is not in the document. A silently
-            missing subject would become a cell type nobody was asked about.
+        SubjectBlockError: something asked for is not in the document, or a
+            label names more than one cell set. A silently missing subject
+            would become a cell type nobody was asked about, and a silently
+            chosen one would be a different cell type from the one meant.
     """
     annotations = cas_doc.get("annotations") or []
     label_of, children = relations(annotations)
-    by_label: dict[str, dict[str, Any]] = {a["cell_label"]: a for a in annotations}
 
-    wanted = cell_labels if cell_labels is not None else [a["cell_label"] for a in annotations]
-    missing = [label for label in wanted if label not in by_label]
-    if missing:
-        raise SubjectBlockError(f"not in the document: {', '.join(sorted(missing))}")
+    by_label: dict[str, list[dict[str, Any]]] = {}
+    for a in annotations:
+        by_label.setdefault(a["cell_label"], []).append(a)
+    by_accession = {
+        a["cell_set_accession"]: a for a in annotations if a.get("cell_set_accession")
+    }
+
+    if cell_labels is None and accessions is None:
+        wanted = list(annotations)
+    else:
+        wanted = []
+        missing: list[str] = []
+        for accession in accessions or []:
+            if accession in by_accession:
+                wanted.append(by_accession[accession])
+            else:
+                missing.append(accession)
+        for label in cell_labels or []:
+            matches = by_label.get(label) or []
+            if not matches:
+                missing.append(label)
+            elif len(matches) > 1:
+                raise SubjectBlockError(_ambiguity(label, matches))
+            else:
+                wanted.append(matches[0])
+        if missing:
+            raise SubjectBlockError(f"not in the document: {', '.join(sorted(missing))}")
 
     return [
         build(
-            by_label[label],
+            annotation,
             label_of=label_of,
             children=children,
             categories=categories,
             min_ratio=min_ratio,
         )
-        for label in wanted
+        for annotation in wanted
     ]
 
 
@@ -176,6 +218,11 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--cas", required=True, help="the CAS+ document")
     parser.add_argument("--label", action="append", help="repeatable; all cell sets when omitted")
+    parser.add_argument(
+        "--accession",
+        action="append",
+        help="repeatable; names a cell set exactly, for a label used at more than one level",
+    )
     parser.add_argument("--out", help="write JSON here instead of stdout")
     parser.add_argument(
         "--min-ratio",
@@ -198,6 +245,7 @@ def main(argv: list[str] | None = None) -> int:
         blocks = build_all(
             cas_doc,
             args.label,
+            accessions=args.accession,
             categories=tuple(args.category) if args.category else CONTEXT_CATEGORIES,
             min_ratio=args.min_ratio,
         )

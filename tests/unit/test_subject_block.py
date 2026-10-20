@@ -176,3 +176,48 @@ def test_cli_exits_nonzero_on_an_unknown_label(tmp_path, capsys):
     cas.write_text(json.dumps(_cas()), encoding="utf-8")
     assert main(["--cas", str(cas), "--label", "Nope"]) == 2
     assert "not in the document" in capsys.readouterr().out
+
+
+# ------------------------------------------------------------------
+# A label does not identify a cell set
+# ------------------------------------------------------------------
+
+
+def _cas_with_a_reused_label() -> dict:
+    """One label at two levels, as an atlas that nests its nomenclature produces."""
+    cas = _cas()
+    cas["annotations"].append(
+        {
+            "labelset": "broad",
+            "cell_label": "Subject",
+            "cell_set_accession": "S2",
+            "n_cells": 900,
+        }
+    )
+    return cas
+
+
+def test_a_label_naming_two_cell_sets_is_refused_rather_than_guessed():
+    with pytest.raises(SubjectBlockError) as exc:
+        build_all(_cas_with_a_reused_label(), ["Subject"])
+    message = str(exc.value)
+    assert "S" in message and "S2" in message
+    assert "--accession" in message
+
+
+def test_an_accession_names_the_one_meant():
+    blocks = build_all(_cas_with_a_reused_label(), accessions=["S2"])
+    assert [b["n_cells"] for b in blocks] == [900]
+
+
+def test_every_cell_set_appears_when_none_is_named():
+    """The whole-document path must not drop a cell set whose label is reused."""
+    cas = _cas_with_a_reused_label()
+    blocks = build_all(cas)
+    assert len(blocks) == len(cas["annotations"])
+    assert [b["n_cells"] for b in blocks if b["cell_label"] == "Subject"] == [60, 900]
+
+
+def test_an_unknown_accession_is_reported_like_an_unknown_label():
+    with pytest.raises(SubjectBlockError, match="NOPE"):
+        build_all(_cas(), accessions=["NOPE"])
