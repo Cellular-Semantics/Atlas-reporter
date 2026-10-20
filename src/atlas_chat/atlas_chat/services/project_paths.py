@@ -172,25 +172,8 @@ def resolve(
 # ------------------------------------------------------------------
 # The annotation hierarchy, small enough to read
 # ------------------------------------------------------------------
-
-#: Columns of the outline, in order.
-OUTLINE_COLUMNS = ("labelset", "label", "full name", "parent", "cells", "synonyms")
-
-
-def _searchable(annotation: dict[str, Any]) -> str:
-    parts = [annotation.get("cell_label", ""), annotation.get("cell_fullname") or ""]
-    parts.extend(annotation.get("synonyms") or [])
-    return " ".join(parts).lower()
-
-
-def _descendants(root: str, by_parent: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
-    out: list[dict[str, Any]] = []
-    stack = list(by_parent.get(root, []))
-    while stack:
-        node = stack.pop()
-        out.append(node)
-        stack.extend(by_parent.get(node.get("cell_set_accession") or "", []))
-    return out
+# Moved to services/cas_report.py, which reports on CAS+ generally rather than
+# on where a project's files are. Re-exported so existing callers keep working.
 
 
 def outline(
@@ -201,69 +184,18 @@ def outline(
     under: str | None = None,
     synonyms: bool = False,
 ) -> str:
-    """The annotation hierarchy as lines, without the composition that dwarfs it.
+    """The annotation hierarchy as lines. See :func:`cas_report.annotations_table`."""
+    from atlas_chat.services.cas_report import annotations_table
 
-    A CAS+ document is mostly the breakdown of every descriptor over every cell,
-    which says nothing about what a cell type is called or where it sits. What is
-    left is small enough to read, and reading it is what lets a vague request —
-    all the macrophages, only the ones at this level — be answered by judgement
-    rather than by pattern.
-
-    The parent is here because matching on text alone is not enough: a cell type's
-    label need not contain the word for what it is, and its siblings' labels need
-    not resemble each other. Finding a node by name and taking what sits under it
-    catches those; a substring does not.
-
-    Args:
-        cas: the CAS+ document.
-        labelset: keep only this level.
-        match: keep annotations whose label, full name or synonyms contain this.
-        under: keep everything beneath the annotation with this label.
-        synonyms: include them in the output.
-
-    Returns:
-        A header line and one line per annotation, tab-separated, in document
-        order. Empty where a field is absent, so the columns stay aligned.
-    """
-    annotations = cas.get("annotations") or []
-    by_accession = {
-        a.get("cell_set_accession"): a for a in annotations if a.get("cell_set_accession")
-    }
-    by_parent: dict[str, list[dict[str, Any]]] = {}
-    for a in annotations:
-        by_parent.setdefault(a.get("parent_cell_set_accession") or "", []).append(a)
-
-    kept = list(annotations)
-    if under:
-        roots = [a for a in annotations if a.get("cell_label") == under]
-        wanted = {
-            id(a)
-            for root in roots
-            for a in _descendants(root.get("cell_set_accession") or "", by_parent)
-        }
-        kept = [a for a in kept if id(a) in wanted]
-    if labelset:
-        kept = [a for a in kept if a.get("labelset") == labelset]
-    if match:
-        needle = match.lower()
-        kept = [a for a in kept if needle in _searchable(a)]
-
-    columns = OUTLINE_COLUMNS if synonyms else OUTLINE_COLUMNS[:-1]
-    lines = ["\t".join(columns)]
-    for a in kept:
-        parent = by_accession.get(a.get("parent_cell_set_accession") or "")
-        fullname = a.get("cell_fullname") or ""
-        row = [
-            a.get("labelset", ""),
-            a.get("cell_label", ""),
-            "" if fullname == a.get("cell_label") else fullname,
-            parent.get("cell_label", "") if parent else "",
-            str(a.get("n_cells", "")),
-        ]
-        if synonyms:
-            row.append(";".join(a.get("synonyms") or []))
-        lines.append("\t".join(row))
-    return "\n".join(lines)
+    return annotations_table(
+        cas,
+        labelset=labelset,
+        match=match,
+        under=under,
+        accession_column=False,
+        ontology=False,
+        synonyms=synonyms,
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:
