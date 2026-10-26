@@ -5,11 +5,12 @@
     "pmcid": "PMC11698969",
     "license": {
       "id": "CC-BY-NC-ND-4.0",
-      "redistributable": false,
+      "redistributable": true,
       "source": "europepmc",
       "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-      "asserted_at": "2026-10-15T09:15:37Z",
-      "note": "NonCommercial-NoDerivatives. The store holds chunked and extracted text, which are derivative works, so ND rules them out however NC is read here."
+      "asserted_at": "2026-10-26T11:34:18Z",
+      "verbatim_only": true,
+      "note": "NonCommercial-NoDerivatives. The article may be redistributed verbatim non-commercially, and this repository's distribution is recorded as non-commercial. NoDerivatives still forbids sharing anything adapted from it, so the fetched article source may be committed and the extracted text and chunked index derived from it may not."
     }
   },
   "files": [

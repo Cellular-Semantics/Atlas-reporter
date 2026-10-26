@@ -42,10 +42,12 @@ projects/**/supplements/**
 !projects/**/supplements/papers/*/
 !projects/**/supplements/papers/*/manifest.json
 
-# Article XML and extracted text ARE the paper. Re-included only where the
-# manifest records `license.redistributable: true` (CC-BY-4.0 or CC0). The
-# slugs are written out because .gitignore cannot read a manifest; re-derive
-# them from the manifests rather than editing this list by hand.
+# Article XML and extracted text ARE the paper, so these are re-included only
+# where the manifest records `license.redistributable: true`. Two tiers, because
+# a NoDerivatives licence permits the article as it stands and not what is
+# adapted from it: papers marked `verbatim_only` get their fetched source and
+# nothing else. The slugs are written out because .gitignore cannot read a
+# manifest; re-derive them from the manifests rather than editing by hand.
 !projects/**/supplements/papers/10.1002_ctm2.1219/source/
 !projects/**/supplements/papers/10.1002_ctm2.1219/source/paper.jats.xml
 !projects/**/supplements/papers/10.1002_ctm2.1219/text/
@@ -78,6 +80,10 @@ projects/**/supplements/**
 !projects/**/supplements/papers/10.1038_s42003-022-04384-8/source/paper.jats.xml
 !projects/**/supplements/papers/10.1038_s42003-022-04384-8/text/
 !projects/**/supplements/papers/10.1038_s42003-022-04384-8/text/*.txt
+!projects/**/supplements/papers/10.1126_sciadv.adm7506/source/
+!projects/**/supplements/papers/10.1126_sciadv.adm7506/source/paper.jats.xml
+!projects/**/supplements/papers/10.1126_sciadv.adm7506/text/
+!projects/**/supplements/papers/10.1126_sciadv.adm7506/text/*.txt
 !projects/**/supplements/papers/10.1172_jci.insight.153921/source/
 !projects/**/supplements/papers/10.1172_jci.insight.153921/source/paper.jats.xml
 !projects/**/supplements/papers/10.1172_jci.insight.153921/text/
@@ -90,6 +96,14 @@ projects/**/supplements/**
 !projects/**/supplements/papers/10.64898_2026.06.10.731198/source/paper.jats.xml
 !projects/**/supplements/papers/10.64898_2026.06.10.731198/text/
 !projects/**/supplements/papers/10.64898_2026.06.10.731198/text/*.txt
+
+# verbatim_only (NoDerivatives): fetched article source, no extracted text.
+!projects/**/supplements/papers/10.1016_j.devcel.2024.01.006/source/
+!projects/**/supplements/papers/10.1016_j.devcel.2024.01.006/source/paper.jats.xml
+!projects/**/supplements/papers/10.1038_s41467-024-55440-2/source/
+!projects/**/supplements/papers/10.1038_s41467-024-55440-2/source/paper.jats.xml
+!projects/**/supplements/papers/10.1073_pnas.2404775121/source/
+!projects/**/supplements/papers/10.1073_pnas.2404775121/source/paper.jats.xml
 
 # Prose evidence units hold full extracted text, so they stay local whatever
 # the licence — the manifests' `prose` block already carries the structure.

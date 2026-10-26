@@ -39,27 +39,53 @@ URL_TO_SPDX = {
     "publicdomain/zero/1.0": "CC0-1.0",
 }
 
-#: Only these grant redistribution of the text *and* of what is derived from it
-#: (chunks, extracted plain text, prose units — all of which this store holds).
+#: This repository's distribution is academic and non-commercial: it sells
+#: nothing, carries no advertising, and is not directed towards commercial
+#: advantage. Recorded here because the NonCommercial licences turn on it, and
+#: as a decision about this repository rather than a fact about any licence.
+#: Being hosted on a commercial platform does not make a use commercial.
+NON_COMMERCIAL = True
+
+#: Grant redistribution of the text *and* of what is derived from it (chunks,
+#: extracted plain text, prose units — all of which this store holds).
 REDISTRIBUTABLE_SPDX = {"CC-BY-4.0", "CC0-1.0"}
+if NON_COMMERCIAL:
+    REDISTRIBUTABLE_SPDX = REDISTRIBUTABLE_SPDX | {"CC-BY-NC-4.0"}
+
+#: Grant redistribution of the article verbatim but not of anything adapted
+#: from it. `redistributable` is true for these, because that field asks about
+#: verbatim text — but only the fetched article source may be committed, never
+#: the extracted text or the chunked index derived from it.
+VERBATIM_ONLY_SPDX = {"CC-BY-ND-4.0"}
+if NON_COMMERCIAL:
+    VERBATIM_ONLY_SPDX = VERBATIM_ONLY_SPDX | {"CC-BY-NC-ND-4.0"}
 
 #: Licences that need a person, not a script, and why. Recorded as not
 #: redistributable meanwhile, because the default when unsure is no.
-NEEDS_HUMAN_CALL = {
+NEEDS_HUMAN_CALL: dict[str, str] = {}
+
+#: Why a verdict says what it does, where it rests on the NON_COMMERCIAL
+#: decision or on the difference between a verbatim copy and an adaptation.
+#: A bare boolean cannot carry either, and both are the kind of thing somebody
+#: will want to re-examine.
+SCOPE_NOTE = {
     "CC-BY-NC-4.0": (
-        "NonCommercial. Redistribution is permitted non-commercially, and "
-        "whether this repository's distribution counts as that is a decision "
-        "for a person rather than a fact derivable from the licence. Recorded "
-        "as not redistributable until someone makes it."
+        "NonCommercial. Redistribution and adaptation are both permitted "
+        "non-commercially, and this repository's distribution is recorded as "
+        "non-commercial — see NON_COMMERCIAL in record_licenses.py."
     ),
     "CC-BY-NC-ND-4.0": (
-        "NonCommercial-NoDerivatives. The store holds chunked and extracted "
-        "text, which are derivative works, so ND rules them out however NC is "
-        "read here."
+        "NonCommercial-NoDerivatives. The article may be redistributed "
+        "verbatim non-commercially, and this repository's distribution is "
+        "recorded as non-commercial. NoDerivatives still forbids sharing "
+        "anything adapted from it, so the fetched article source may be "
+        "committed and the extracted text and chunked index derived from it "
+        "may not."
     ),
     "CC-BY-ND-4.0": (
-        "NoDerivatives. The article may be redistributed verbatim, but the "
-        "chunks and extracts in this store are derivative works and may not be."
+        "NoDerivatives. The article may be redistributed verbatim, so the "
+        "fetched article source may be committed; the extracted text and "
+        "chunked index derived from it may not."
     ),
 }
 
@@ -127,12 +153,16 @@ def license_for(paper_dir: Path, doi: str, now: str) -> dict[str, object]:
     spdx, url = found
     entry: dict[str, object] = {
         "id": spdx,
-        "redistributable": spdx in REDISTRIBUTABLE_SPDX,
+        "redistributable": spdx in REDISTRIBUTABLE_SPDX or spdx in VERBATIM_ONLY_SPDX,
         "source": "europepmc",
         "url": url,
         "asserted_at": now,
     }
-    if spdx in NEEDS_HUMAN_CALL:
+    if spdx in VERBATIM_ONLY_SPDX:
+        entry["verbatim_only"] = True
+    if spdx in SCOPE_NOTE:
+        entry["note"] = SCOPE_NOTE[spdx]
+    elif spdx in NEEDS_HUMAN_CALL:
         entry["note"] = NEEDS_HUMAN_CALL[spdx]
     return entry
 

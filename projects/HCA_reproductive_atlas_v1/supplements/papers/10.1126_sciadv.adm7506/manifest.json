@@ -5,11 +5,11 @@
     "pmcid": "PMC10997207",
     "license": {
       "id": "CC-BY-NC-4.0",
-      "redistributable": false,
+      "redistributable": true,
       "source": "europepmc",
       "url": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "asserted_at": "2026-10-15T09:15:37Z",
-      "note": "NonCommercial. Redistribution is permitted non-commercially, and whether this repository's distribution counts as that is a decision for a person rather than a fact derivable from the licence. Recorded as not redistributable until someone makes it."
+      "asserted_at": "2026-10-26T11:34:18Z",
+      "note": "NonCommercial. Redistribution and adaptation are both permitted non-commercially, and this repository's distribution is recorded as non-commercial — see NON_COMMERCIAL in record_licenses.py."
     }
   },
   "files": [

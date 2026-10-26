@@ -515,6 +515,10 @@
           "type": "boolean",
           "description": "Whether this paper's verbatim text may be redistributed, with attribution, from a public repository. The operational question the ignore rules ask, kept separate from `id` because answering it from an identifier means every reader re-deciding what 'CC-BY-NC-4.0' permits here. False for 'unknown': an unsettled licence is not a permissive one."
         },
+        "verbatim_only": {
+          "type": "boolean",
+          "description": "Set where the licence permits redistributing the article as it stands but not anything adapted from it — a NoDerivatives term. `redistributable` stays true, because that field asks about verbatim text; this one says the permission stops there. The store holds both kinds of thing, so the distinction decides what may be committed: the fetched article source may, and the extracted text and chunked index derived from it may not. Absent means the licence imposes no such limit."
+        },
         "url": {
           "type": "string",
           "description": "Where the licence terms are stated, for a reader who needs to check the claim."

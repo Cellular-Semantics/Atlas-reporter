@@ -8,7 +8,7 @@
       "source": "biorxiv",
       "url": "https://creativecommons.org/licenses/by/4.0/",
       "note": "bioRxiv reports `license: cc_by` for this preprint. This is the licence the local snippet index relies on: the preprint is the only paper whose chunks and snippets are committed, and the `.gitignore` re-include for `10.64898_*` rests on it.",
-      "asserted_at": "2026-10-15T09:15:37Z"
+      "asserted_at": "2026-10-26T11:34:18Z"
     }
   },
   "files": [

@@ -1,0 +1,231 @@
+Corresponding author: Jun Z. Li, junzli@med.umich.edu; Ariella Shikanov, shikanov@umich.edu
+
+_Sci. Adv._ **10** , eadm7506 (2024) DOI: 10.1126/sciadv.adm7506
+
+Figs. S1 to S6 Legends for data S1 to S8 References
+
+|**D**|**onor**|**Age**|**Age**|**BMI**|**Race**|**Race**|**Is**<br>**Ti**|**Cold**<br>**chemic**<br>**me (hr)**|**Cold**<br>**chemic**<br>**me (hr)**|**Total Cells**<br>**Sequenced**|**Cells**<br>**Retained**<br>**a�er Filtering**|**Average**<br>**nCount_RNA**|**Average**<br>**nFeature_RNA**|**Average %**<br>**MT**| |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---| ||1|27||28.9|Black|||21.2||N/A|N/A|N/A|N/A|N/A| ||2|18||33.5|White|||7.4||N/A|N/A|N/A|N/A|N/A| ||3|28||26.4|Asian|||25.4||14,322|7,571|4,741|1,559|7.73| ||4|37||30.5|Black|||26.6||13,901|7,288|8,494|2,441|5.68| ||5|31||31.6|White|||14.7||9,149|6,339|7,182|2,242|6.47| |**B**<br>**D**||||||||**Donor 2,**<br>**#ROIs**<br>**Donor 1,**<br>**#ROIs**<br>0<br>2<br>0<br>3<br>47<br>11<br>6<br>0<br>0<br>5<br>0<br>15<br>3<br>5<br>31<br>0<br>0<br>4<br>5<br>0<br>5<br>0<br>6<br>0<br>6<br>3<br>0<br>8<br>11<br>0<br>0<br>1<br>12<br>4<br>9<br>7<br>9<br>5<br>**C**<br>**E**<br>Theca<br>Granulosa<br>Other ROIs<br>Cumulus Granulosa<br>Follicle #1<br>Follicle #2<br>Follicle #3<br>Other ROIs||||||| ||**ROI Type #**||**ROI Type**<br>**Descrip�on**|||**Tissue Region**|||**Donor 1,**<br>**#ROIs**|**Donor 2,**<br>**#ROIs**||||| ||1||Ovarian Surface|||Cortex|||2|0||||| ||2||Cortex||||||3|0||||| ||3||Cortex Series||||||11|47||||| ||5||Primary Follicle<br>Rings||||||0|6||||| ||10||Secondary Follicle||||||5|0||||| ||6||Medulla|||Medulla|||15|0||||| ||7||Follicle -Adjacent<br>Medulla||||||5|3||||| ||8||Medulla Series||||||0|31||||| ||9||Vascular Regions||||||4|0||||| ||15||Cyst – Inner Layer||||||0|5||||| ||16||Cyst—Outer Layer||||||0|5||||| ||19||Target-Enriched<br>(PGR)||||||0|6||||| ||17||Target-Enriched<br>(CD68)||||||3|6||||| ||18||Target-Enriched<br>(SMA)||||||8|0||||| ||4||Primordial/Primary<br>Follicles|||Follicle|||0|11||||| ||11||Oocyte from Antral<br>Follicle||||||1|0||||| ||12||Cumulus Granulosa||||||4|12||||| ||13||Granulosa||||||7|9||||| ||14||Theca||||||5|9||||| ||||||||||||||||
+
+A. Demographic information for the five donors, and scRNAseq data summary for Donors 3-5. "nCount_RNA": number of transcripts per cell; "nFeature_RNA": number of unique genes detected per cell; "% MT": percent of transcripts accounted for by mitochondria-coded genes. B. Description of ROI types and the number of samples for each ROI type for Donors 1 and 2 . C. PC1-3 plot for Donor 1 samples (PC1-2 shown is Figure 1D), highlighting that the individual oocyte (in purple) was separated in PC3. D. IF (left) and H&E (right) images of Follicles 1-3 from Donor 2 (scale bar = 700 µm). E. PC1-2 plot of Donor 2 samples shown in Figure 1E, highlighting the theca- and granulosa- enriched samples by color, and Follicles 1-3 samples by symbol shape. The granulosa samples are well clustered, but the theca samples are scattered due to the shift of Follicle #1 theca samples.
+
+A. Two of the primordial/primary oocytes in Donor 2, where we sampled the oocyte and three rings, showing ROI #7 on top and ROI #10 on bottom, without (left) and with (right) overlay of ROI segments, scale bar = 30 µm. B. PC1-2 plot of Donor 2 samples shown in Figure 1E, highlighting the 9 DAZL+ samples (purple, forming Cluster 9) and their paired DAZL- samples (blue, falling in cortex clusters).
+
+**Fig. S4. Projections from serial sampling of the cortex and medulla.**
+
+A. PC1-2 plot of the 11 cortex surface samples in Donor 1, showing their ordered progression of transcriptome profiles according to sampling depth. B. PC1-2 plot of the 3 cortex and 2 medulla series plus the 9 DAZL- subareas, shown in the same colors as in their PC1-3 plot in Figure 4D. C. PC1-3 plot of the 3 cortex and 2 medulla series as in Figure 4D, with lines added to link the samples in each series. Cortex samples 1 to 15/16 were ordered with #1 near the surface and #15/16 as the deepest. D. PC1-3 plot as in Figure 4D, highlighting the 9 DAZL- samples and the three surface-most cortex samples used in DE analysis in Figure 4E.
+
+**Figure S5. Single-cell sequencing projections and scores for follicular cell marker expression.**
+
+A. Analogous to Figure 5A, which showed the projection and annotation of cells from Donor 5, here are t-SNE projections for Donors 3 (left, 7,571 cells) and 4 (right, 7,288 cells), colored by the four major cell types identified. B. Attempts to identify theca- or granulosa-like cells among the stromal cells. Shown are UMAP projections of the large-library-size subset of stromal cells from Donors 3, 4, and 5 (in top, middle, and bottom rows), with colorscales showing the same cells scored for three alternative cell type-specific marker gene panels. From left to right, the scores were calculated using the 76 oocyte-specific genes (Figure 2D), and the 94 granulosaspecific and 45 theca-specific genes (Figure 3C).
+
+A. Correlation coefficients between Fan et al.’s ( _13_ ) five cluster centroids and those of our ROI clusters. Expected matches for the granulosa and theca cells/ROIs are marked by the yellow and green boxes, respectively. Abbreviations: Th/S: theca/stromal; G: granulosa; Imm: immune; E: endothelial; SmMusc: smooth muscle. B. Expression heatmap for the five clusters in Fan et al. ( _13_ ) and three marker gene panels for granulosa, oocyte, and theca ROIs as shown in Figure 2D and 3C. The expected high expression for the granulosa and theca marker genes are marked by the yellow and green boxes, respectively. Note that there is no oocyte cluster in Fan et al. ( _13_ ), so no conclusion can be drawn for the oocyte marker panel. C. Correlation coefficients between Wagner et al.’s ( _9_ ) six cluster centroids and those of our ROI clusters. Expected matches for the granulosa and oocyte cells/ROIs are marked by the yellow and purple boxes, respectively. Note that the row-wise specificity is high, even when the column-wise correlation values may not seem specific. D. Expression heatmap for the six clusters in Wagner et al. ( _9_ ) and three marker gene panels, in a similar format as in Panel B. The expected high expression for granulosa and oocyte marker genes are marked by the yellow and purple boxes, respectively. Note that there is no theca cluster in Wagner et al. ( _9_ ). Abbreviations: peri - pericytes. E-F. Centroid-centroid correlation values between our four major cell types and Fan et al. ( _13_ ) and Wagner et al. ( _9_ ) cell clusters. The four matches are marked by the green boxes. G. Left. t-SNE projection of Fan et al. ( _13_ ) cells, colored by the finer subtypes based on their Supplementary Data Table 2. Middle, on the same projection, colored by a "theca score" for each cell, calculated by aggregating the log(CPM+1) expression level of the 45 theca marker genes from our study. H. Correlation values between four immune cell subtypes from our study with the finer subtypes in Fan et al. ( _13_ ), with the three matched immune cell subtypes highlighted in yellow boxes. Color scales for all panels explained in Methods.
+
+ROI info for Donor 1/Donor 2 ST analyses. This file contains two sheets, one for each donor. Each sheet contains information on each ROI (ROI #, surface area, nuclei count, ROI Type, ROI #, and cluster assignment). For ROIs with multiple AOI subregions, there is a column “AOI Subcategorization” that clarifies layer number for contour-based ROIs and antibody-enrichment for segmentation-based ROIs.
+
+Centroid data for Donor 1/Donor 2 ST analyses. This file contains two sheets, one for each donor. The first sheet contains gene expression for 18,676 genes for each of the six clusters in Donor 1. The second sheet contains gene expression information for the same 18,676 genes for each of the nine clusters in Donor 2. Analysis for Donor 1 and 2 clustering is outlined in Methods.
+
+DE gene results for all DE comparisons for Donor 1/Donor 2. This file contains two sheets, one for each donor. The first sheet contains differential gene expression analysis results for the 17 DE comparisons made using Donor 1 ROIs. For each DE comparison, fold change, t-statistic, p-value, and adjusted p-value are reported for all 18,676 genes. The second sheet contains the same
+
+differential gene expression analysis results for the 12 DE comparisons made using Donor 2 ROIs. Descriptions for each DE comparison are outlined in Methods.
+
+LRpath results for all DE gene results in Source Data 3. This file contains two sheets, one for each donor. The first sheet contains LRpath results for each DE comparison made using Donor 1 ROIs. For each DE comparison, odds ratio, p-value, and false discovery rate are reported. The second sheet contains the same DE comparison results for the 12 comparisons made using Donor 2 ROIs. All gene ontology terms (biological process, molecular function, and cell compartment) were included in the analysis, as well as all KEGG terms.
+
+Marker genes for oocytes, granulosa cells, and theca cells. This file contains three sheets, each with cell-type specific marker genes identified through ST analysis: 96 granulosa-specific genes, 76 oocyte-specific genes, and 45 theca-specific genes. For each sheet, gene expression is reported for each ROI in Donor 2, and each ROI is labeled by its cluster assignment (i.e. #1-9).
+
+Centroid data for the 4 major cell types identified in scRNAseq. This file contains three sheets, one for each scRNAseq donor. For each sheet, expression of 20,886 genes and detection rate is reported for the centroid of each major cell type cluster (Endothelial, Immune, Pericyte, and Stromal). This data is used for the dot plot in Figure 5C.
+
+Centroid data for the 4 immune cell subtypes identified in scRNAseq. This file contains one sheet of gene expression information for the three donors’ immune cells combined (n = 836). For each of 20,886 we report gene expression and detection rate for each of the four immune cell subtypes (NK cells, T cells, macrophages, and mast cells).
+
+Centroid data for marker genes for 3 major cell types and 4 immune cell subtypes. This file contains one sheet of gene expression for 331 marker genes portrayed in Figure 5D, with a number of markers for each cell type (endothelial, pericyte, stromal, NK cell, T cell, macrophage, and mast cell).
+
+1. K. Hummitzsch, H. F. Irving-Rodgers, J. Schwartz, R. J. Rodgers, Development of the mammalian ovary and follicles, in _The Ovary_ (Elsevier, 2019), pp. 71–82.
+
+2. K. E. O’Neill, J. Y. Maher, M. M. Laronda, F. E. Duncan, R. D. LeDuc, M. E. Lujan, K. H. Oktay, A. M. Pouch, J. H. Segars, E. L. Tsui, M. B. Zelinski, L. M. Halvorson, V. GomezLobo, Anatomic nomenclature and 3-dimensional regional model of the human ovary: Call for a new paradigm. _Am. J. Obstet. Gynecol._ **228** , 270–275.e4 (2023).
+
+3. D. L. Russell, R. L. Robker, Ovulation: The coordination of intrafollicular networks to ensure oocyte release, in _The Ovary_ (Elsevier, 2019), pp. 217–234.
+
+4. H. M. Kinnear, C. E. Tomaszewski, F. L. Chang, M. B. Moravek, M. Xu, V. Padmanabhan, A. Shikanov, The ovarian stroma as a new frontier. _Reproduction_ **160** , R25–R39 (2020).
+
+5. A. S. K. Jones, A. Shikanov, Follicle development as an orchestrated signaling network in a 3D organoid. _J. Biol. Eng._ **13** , 2 (2019).
+
+6. J. K. Findlay, K. R. Dunning, R. B. Gilchrist, K. J. Hutt, D. L. Russell, K. A. Walters, Follicle selection in mammalian ovaries, in _The Ovary_ (Elsevier, 2019), pp. 3–21.
+
+7. E. Nilsson, M. K. Skinner, Cellular interactions that control primordial follicle development and folliculogenesis. _J. Soc. Gynecol. Invest._ **8** , S17–S20 2001.
+
+8. M. E. Morris, M. C. Meinsohn, M. Chauvin, H. D. Saatcioglu, A. Kashiwagi, N. A. Sicher, N. Nguyen, S. Yuan, R. Stavely, M. Hyun, P. K. Donahoe, B. L. Sabatini, D. Pépin, A single-cell atlas of the cycling murine ovary. _eLife_ **11** , e77239 (2022).
+
+9. M. Wagner, M. Yoshihara, I. Douagi, A. Damdimopoulos, S. Panula, S. Petropoulos, H. Lu, K. Pettersson, K. Palm, S. Katayama, O. Hovatta, J. Kere, F. Lanner, P. Damdimopoulou, Single-cell analysis of human ovarian cortex identifies distinct cell populations but no oogonial stem cells. _Nat. Commun._ **11** , 1147 (2020).
+
+10. E. Ouni, D. Vertommen, M. C. Chiti, M.-M. Dolmans, C. A. Amorim, A draft map of the human ovarian proteome for tissue engineering and clinical applications. _Mol. Cell. Proteomics_ **18** , S159–S173 (2019).
+
+11. O. Hovatta, C. Wright, T. Krausz, K. Hardy, R. M. L. Winston, Human primordial, primary and secondary ovarian follicles in long-term culture: Effect of partial isolation. _Hum. Reprod._ **14** , 2519–2524 (1999).
+
+12. E. E. Telfer, M. McLaughlin, C. Ding, K. J. Thong, A two-step serum-free culture system supports development of human oocytes from primordial follicles in the presence of activin. _Hum. Reprod._ **23** , 1151–1158 (2008).
+
+13. X. Fan, M. Bialecka, I. Moustakas, E. Lam, V. Torrens-Juaneda, N. V. Borggreven, L. Trouw, L. A. Louwe, G. S. K. Pilgram, H. Mei, L. van der Westerlaken, , Single-cell
+
+reconstruction of follicular remodeling in the human adult ovary. _Nat. Commun._ **10** , 3164 (2019).
+
+14. P. Yurttas, A. M. Vitale, R. J. Fitzhenry, L. Cohen-Gould, W. Wu, J. A. Gossen, S. A. Coonrod, Role for PADI6 and the cytoplasmic lattices in ribosomal storage in oocytes and translational control in the early mouse embryo. _Development_ **135** , 2627–2636 (2008).
+
+15. I. M. A. Jentoft, F. J. B. Bäuerlein, L. M. Welp, B. H. Cooper, A. Petrovic, C. So, S. M. Penir, A. Z. Politi, Y. Horokhovskyi, I. Takala, H. Eckel, R. Moltrecht, P. Lénárt, T. Cavazza, J. Liepe, N. Brose, H. Urlaub, R. Fernández-Busnadiego, M. Schuh, Mammalian oocytes store proteins for the early embryo on cytoplasmic lattices. _Cell_ **186** , 5308–5327.e25 (2023).
+
+16. G. Esposito, A. M. Vitale, F. P. J. Leijten, A. M. Strik, A. M. C. B. Koonen-Reemst, P. Yurttas, T. J. A. A. Robben, S. Coonrod, J. A. Gossen, Peptidylarginine deiminase (PAD) 6 is essential for oocyte cytoskeletal sheet formation and female fertility. _Mol. Cell. Endocrinol._ **273** , 25–31 (2007).
+
+17. N. R. Mtango, M. Sutovsky, A. Susor, Z. Zhong, K. E. Latham, P. Sutovsky, Essential role of maternal UCHL1 and UCHL3 in fertilization and preimplantation embryo development. _J. Cell. Physiol._ **227** , 1592–1603 (2012).
+
+18. R. Kumar, C. Oliver, C. Brun, A. B. Juarez-Martinez, Y. Tarabay, J. Kadlec, B. De Massy, Mouse REC114 is essential for meiotic DNA double-strand break formation and forms a complex with MEI4. _Life Sci. Alliance_ **1** , e201800259 (2018).
+
+19. S. Llonch, M. Barragán, P. Nieto, A. Mallol, M. Elosua-Bayes, P. Lorden, S. Ruiz, F. Zambelli, H. Heyn, R. Vassena, B. Payer, Single human oocyte transcriptome analysis reveals distinct maturation stage-dependent pathways impacted by age. _Aging Cell_ **20** , 1–18 (2021).
+
+20. A. Abedini, G. Zamberlam, E. Lapointe, C. Tourigny, A. Boyer, M. Paquet, K. Hayashi, H. Honda, A. Kikuchi, C. Price, D. Boerboom, WNT5a is required for normal ovarian follicle development and antagonizes gonadotropin responsiveness in granulosa cells by suppressing canonical WNT signaling. _FASEB J._ **30** , 1534–1547 (2016).
+
+21. P. J. Ansell, Y. Zhou, B.-M. Schjeide, A. Kerner, J. Zhao, X. Zhang, A. Klibanski, Regulation of growth hormone expression by delta-like protein 1 (Dlk1). _Mol Cell Endocrinol._ **271** , 55–63 2007.
+
+22. P. Puri, L. Little-Ihrig, U. Chandran, N. C. Law, M. Hunzicker-Dunn, A. J. Zeleznik, Protein kinase A: A master kinase of granulosa cell differentiation. _Sci. Rep._ **6** , 1 (2016).
+
+23. E. Ouni, C. Bouzin, M. M. Dolmans, E. Marbaix, Spatiotemporal changes in mechanical matrisome components of the human ovary from prepuberty to menopause. _Hum. Reprod._ **35** , 1391 –1410 (2020).
+
+24. B. Bagalad, K. Mohan Kumar, H. Puneeth, Myofibroblasts: Master of disguise. _J. Oral Maxillofac. Pathol._ **21** , 462–463 (2017).
+
+25. S. C. Hewitt, K. S. Korach, Estrogen receptors: New directions in the new millennium. _Endocr. Rev._ **39** , 664–675 (2018).
+
+26. H. Zhou, Y. Pon, A. Wong, HGF/MET signaling in ovarian cancer. _Curr. Mol. Med._ **8** , 469– 480 (2008).
+
+27. F. Chen, Y. Wu, L. Ke, X. Lin, F. Wang, Y. Qin, ARHGEF15 in Sertoli cells contributes to germ cell development and testicular immune privilege. _Biol. Reprod._ **107** , 1565–1579 (2022).
+
+28. Q. Zhuge, Z. Wu, L. Huang, B. Zhao, M. Zhong, W. Zheng, C. Gourong, X. Mao, L. Xie, X. Wang, K. Jin, Notch4 is activated in endothelial and smooth muscle cells in human brain arteriovenous malformations. _J. Cell. Mol. Med._ **17** , 1458–1464 (2013).
+
+29. H. Pinkas, B. Fisch, G. Rozansky, C. Felz, G. Kessler-Icekson, H. Krissi, S. Nitke, A. Ao, R. Abir, Platelet-derived growth factors (PDGF-A and -B) and their receptors in human fetal and adult ovaries. _Mol. Hum. Reprod._ **14** , 199–206 (2008).
+
+30. A. Naba, K. R. Clauser, S. Hoersch, H. Liu, S. A. Carr, R. O. Hynes, The matrisome: In silico definition and in vivo characterization by proteomics of normal and tumor extracellular matrices. _Mol. Cell. Proteomics_ **11** , M111.014647 (2012).
+
+31. Y. Ni, C. Ji, B. Wang, J. Qiu, J. Wang, X. Guo, A novel pro-adipogenesis factor abundant in adipose tissues and over-expressed in obesity acts upstream of PPARγ and C/EBPα. _J. Bioenerg. Biomembr._ **45** , 219–228 (2013).
+
+32. L. L. Espey, T. Ujioka, D. L. Russell, M. Skelsey, B. Vladu, R. L. Robker, H. Okamura, J. S. Richards, Induction of early growth response protein-1 gene expression in the rat ovary in response to an ovulatory dose of human chorionic gonadotropin. _Endocrinology_ **141** , 2385– 2391 (2000).
+
+33. P. Asiabi, M. M. Dolmans, J. Ambroise, A. Camboni, C. A. Amorim, In vitro differentiation of theca cells from ovarian cells isolated from postmenopausal women. _Hum. Reprod._ **35** , 2793 –2807 (2020).
+
+34. J. A. S. Richards, Y. A. Ren, N. Candelaria, J. E. Adams, A. Rajkovic, Ovarian follicular theca cell recruitment, differentiation, and impact on fertility: 2017 update. _Endocr. Rev._ **39** , 1–20 (2018).
+
+35. N. L. Guahmich, L. Man, J. Wang, L. Arazi, E. Kallinos, A. Topper-Kroog, G. Grullon, K. Zhang, J. Stewart, N. Schatz-Siemers, S. H. Jones, R. Bodine, N. Zaninovic, G. Schattman, Z. Rosenwaks, D. James, Human theca arises from ovarian stroma and is comprised of three discrete subtypes. _Commun. Biol._ **6** , 1–15 (2023).
+
+36. K. Ridinger, S100A13: Biochemical characterization and subcellular localization in different cell lines. _J. Biol. Chem._ **275** , 8686–8694 (2000).
+
+37. R. A. Harris, J. M. McAllister, J. F. Strauss, Single-cell RNA-seq identifies pathways and genes contributing to the hyperandrogenemia associated with polycystic ovary syndrome. _Int. J. Mol. Sci._ **24** , 10611 (2023).
+
+38. T. Yazawa, Y. Imamichi, T. Sekiguchi, K. Miyamoto, J. Uwada, M. R. I. Khan, N. Suzuki, A. Umezawa, T. Taniguchi, Transcriptional regulation of ovarian steroidogenic genes: Recent findings obtained from stem cell-derived steroidogenic cells. _Biomed. Res. Int._ **2019** (2019).
+
+39. T. Liu, Q. Y. Qin, J. X. Qu, H. Y. Wang, J. Yan, Where are the theca cells from: The mechanism of theca cells derivation and differentiation. _Chin. Med. J. (Engl)._ **133** , 1711–1718 (2020).
+
+40. J. Jin, P. Ren, X. Li, Y. Zhang, W. Yang, Y. Ma, M. Lai, C. Yu, S. Zhang, Y. L. Zhang, Ovulatory signal-triggered chromatin remodeling in ovarian granulosa cells by HDAC2 phosphorylation activation-mediated histone deacetylation. _Epigenetics Chromatin_ **16** , 11 (2023).
+
+41. E. Madogwe, D. K. Tanwar, M. Taibi, Y. Schuermann, A. St-Yves, R. Duggavathi, Global analysis of FSH-regulated gene expression and histone modification in mouse granulosa cells. _Mol. Reprod. Dev._ **87** , 1082–1096 (2020).
+
+42. T. Kawai, J. A. S. Richards, M. Shimada, Large-scale DNA demethylation occurs in proliferating ovarian granulosa cells during mouse follicular development. _Commun. Biol._ **4** , 1334 (2021).
+
+43. D. A. Demanno, J. E. Cottom, M. P. Kline, C. A. Peters, E. T. Maizels, M. Hunzicker-Dunn, Follicle-stimulating hormone promotes histone H3 phosphorylation on serine-10. _Mol. Endocrinol._ **13** , 91–105 (1999).
+
+44. J. Jankovičová, P. Sečová, K. Michalková, J. Antalíková, Tetraspanins, more than markers of extracellular vesicles in reproduction. _Int. J. Mol. Sci._ **21** , 7568 (2020).
+
+45. H. C. Alberico, D. C. Woods, Role of granulosa cells in the aging ovarian landscape: A focus on mitochondrial and metabolic function. _Front. Physiol._ **12** , 800739 (2021).
+
+46. T. B. Papler, E. V. Bokal, A. Maver, A. N. Kopitar, L. Lovrečić, Transcriptomic analysis and meta-analysis of human granulosa and cumulus cells. _PLOS ONE_ **10** , e0136473 (2015).
+
+47. N. Hatzirodos, K. Hummitzsch, H. F. Irving-Rodgers, M. L. Harland, S. E. Morris, R. J. Rodgers, Transcriptome profiling of granulosa cells from bovine ovarian follicles during atresia. _BMC Genomics_ **15** , 24 (2014).
+
+48. J. H. Kim, A. Karnovsky, V. Mahavisno, T. Weymouth, M. Pande, D. C. Dolinoy, L. S. Rozek, M. A. Sartor, LRpath analysis reveals common pathways dysregulated via DNA methylation across cancer types. _BMC Genomics_ **13** , 1 (2012).
+
+49. Y. Ichikawa, M. Matsuzaki, S. Mizushima, T. Sasanami, Possible involvement of annexin A6 in preferential sperm penetration in the germinal disk region. _Reprod. Fertil._ **3** , 152 –161 (2022).
+
+50. A. Girard, I. Dufort, G. Douville, M. A. Sirard, Global gene expression in granulosa cells of growing, plateau and atretic dominant follicles in cattle. _Reprod. Biol. Endocrinol._ **13** , 17 (2015).
+
+51. Y. Han, G. Xia, B. K. Tsang, Regulation of cyclin d2 expression and degradation by folliclestimulating hormone during rat granulosa cell proliferation in vitro. _Biol. Reprod._ **88** , 57 (2013).
+
+52. Chronowska, E. High-throughput analysis of ovarian granulosa cell transcriptome. _Biomed. Res. Int._ **2014** , 1–7 (2014).
+
+53. F. Li, H. Jang, M. Puttabyatappa, M. Jo, T. E. Curry, Ovarian FAM110C (family with sequence similarity 110C): Induction during the periovulatory period and regulation of granulosa cell cycle kinetics in rats. _Biol. Reprod._ **86** , 185 (2012).
+
+54. N. Hatzirodos, K. Hummitzsch, H. F. Irving-Rodgers, R. J. Rodgers, Transcriptome comparisons identify new cell markers for theca interna and granulosa cells from small and large antral ovarian follicles. _PLOS ONE_ **10** , e0119800 (2015).
+
+55. N. Qin, T. L. Tyasi, X. Sun, X. Chen, H. Zhu, J. Zhao, R. Xu, Determination of the roles of GREM1 gene in granulosa cell proliferation and steroidogenesis of hen ovarian prehierarchical follicles. _Theriogenology_ **151** , 28 –40 (2020).
+
+56. Y. Yamaguma, N. Sugita, N. Choijookhuu, K. Yano, D. Lee, M. Ikenoue, Fidya, S. Shirouzu, T. Ishizuka, M. Tanaka, Y. Yamashita, E. Chosa, N. Taniguchi, Y. Hishikawa, Crucial role of high-mobility group box 2 in mouse ovarian follicular development through estrogen receptor beta. _Histochem. Cell Biol._ **157** , 359 –369 (2022).
+
+57. L. K. Christenson, S. Gunewardena, X. Hong, M. Spitschak, A. Baufeld, J. Vanselow, Research resource: Preovulatory LH surge effects on follicular theca and granulosa transcriptomes. _Mol. Endocrinol._ **27** , 1153 –1171 (2013).
+
+58. Y. Ma, J. Jin, X. Tong, W. Yang, P. Ren, Y. Dai, Y. Pan, Y. L. Zhang, S. Zhang, ADAMTS1 and HSPG2 mRNA levels in cumulus cells are related to human oocyte quality and controlled ovarian hyperstimulation outcomes. _J. Assist. Reprod. Genet._ **37** , 657 –667 (2020).
+
+59. K. H. Burns, G. E. Owens, J. M. Fernandez, J. H. Nilson, M. M. Matzuk, Characterization of integrin expression in the mouse ovary. _Biol. Reprod._ **67** , 743–751 (2002).
+
+60. A. D. Stapp, B. I. Gómez, C. A. Gifford, D. M. Hallford, J. A. Hernandez Gifford, Canonical WNT signaling inhibits follicle stimulating hormone mediated steroidogenesis in primary cultures of rat granulosa cells. _PLOS ONE_ **9** , 86432 (2014).
+
+61. S. Granados-Aparici, A. Volodarsky-Perel, Q. Yang, S. Anam, T. Tulandi, W. Buckett, W. Y. Son, G. Younes, J. T. Chung, S. Jin, M. E. Terret, H. J. Clarke, MYO10 promotes transzonal projection-dependent germ line-somatic contact during mammalian folliculogenesis. _Biol. Reprod._ **107** , 474–487 (2022).
+
+62. R. Kawagishi, M. Tahara, K. Morishige, M. Sakata, K. Tasaka, W. Ikeda, K. Morimoto, Y. Takai, Y. Murata, Expression of nectin-2 in mouse granulosa cells. _Eur. J. Obstet. Gynecol. Reprod. Biol._ **121** , 71 –76 (2005).
+
+63. H. Yoon, H. Jang, E. Y. Kim, S. Moon, S. Lee, M. Cho, H. J. Cho, J. J. Ko, E. M. Chang, K. A. Lee, Y. Choi, Knockdown of PRKAR2B results in the failure of oocyte maturation. _Cell. Physiol. Biochem._ **45** , 2009 –2020 (2018).
+
+64. Dong, J. peng Dai Z.H., Jiang Z.X., He Y., Wang L., Liao Q.Y., Sun N.X., Wang Y.N., Sun S.H., Lin W., Li W., Yang F. CD24: A marker of granulosa cell subpopulation and a mediator of ovulation. _Cell Death Dis._ **10** , 791 (2019).
+
+65. A. Baufeld, J. Vanselow, Lactate-induced effects on bovine granulosa cells are mediated via PKA signaling. _Cell Tissue Res_ . 388, 471 –477 (2022).
+
+66. Dou, Y. De, STMN1 promotes progesterone production via StAR up-regulation in mouse granulosa cells. _Sci. Rep._ **6** , 1–10 (2016).
+
+67. X. Sun, X. Chen, J. Zhao, C. Ma, C. Yan, S. Liswaniso, R. Xu, N. Qin, Transcriptome comparative analysis of ovarian follicles reveals the key genes and signaling pathways implicated in hen egg production. _BMC Genomics_ **22** , 899 (2021).
+
+68. D. L. Russell, S. A. Ochsner, M. Hsieh, S. Mulders, J. S. Richards, Hormone-regulated expression and localization of versican in the rodent ovary. _Endocrinology_ **144** , 1020 –1031 (2003).
+
+69. S. G. Kim, S. J. Jang, J. Soh, K. Lee, J. K. Park, W. K. Chang, E. W. Park, S. Y. Chun, Expression of ectodermal neural cortex 1 and its association with actin during the ovulatory process in the rat. _Endocrinology_ **150** , 3800 –3806 (2009).
+
+70. I. Kugathas, H. K. L. Johansson, E. Chan Sock Peng, M. Toupin, B. Evrard, T. A. Darde, J. Boberg, M. K. Draskau, A. D. Rolland, S. Mazaud-Guittot, F. Chalmel, T. Svingen, Transcriptional profiling of the developing rat ovary following intrauterine exposure to the endocrine disruptors diethylstilbestrol and ketoconazole. _Arch. Toxicol._ **97** , 849–863 (2023).
+
+71. S. C. Baumgarten, S. M. Convissar, A. M. Zamah, M. A. Fierro, N. J. Winston, B. Scoccia, C. Stocco, FSH regulates IGF-2 expression in human granulosa cells in an AKT-dependent manner. _J. Clin. Endocrinol. Metab._ **100** , E1046 –E1055 (2015).
+
+72. J. Lim, U. Luderer, Oxidative damage increases and antioxidant gene expression decreases with aging in the mouse ovary. _Biol. Reprod._ **84** , 775–782 (2011).
+
+73. L. M. Jiménez, M. Binelli, K. Bertolin, R. M. Pelletier, B. D. Murphy, Scavenger receptorB1 and luteal function in mice. _J. Lipid Res._ **51** , 2362–2371 (2010).
+
+74. S. Itami, S. Tamotsu, A. Sakai, K. Yasuda, The roles of THY1 and integrin beta3 in cell adhesion during theca cell layer formation and the effect of follicle-stimulating hormone on THY1 and integrin beta3 localization in mouse ovarian follicles. _Biol. Reprod._ **84** , 986–995 (2011).
+
+75. C. Joseph, M. G. Hunter, K. D. Sinclair, R. S. Robinson, The expression, regulation and function of secreted protein, acidic, cysteine-rich in the follicle-luteal transition. _Reproduction_ **144** , 361–372 (2012).
+
+76. M. Lim, H. M. Brown, R. D. Rose, J. G. Thompson, K. R. Dunning, Dysregulation of bisphosphoglycerate mutase during in vitro maturation of oocytes. _J. Assist. Reprod. Genet._ **38** , 1363–1372 (2021).
+
+77. W. Fujii, T. Nishimura, K. Kano, K. Sugiura, K. Naito, CDK7 and CCNH are components of CDK-activating kinase and are required for meiotic progression of pig oocytes. _Biol. Reprod._ **85** , 1124 –1132 (2011).
+
+78. Y. Li, Z. Zhang, J. Chen, W. Liu, W. Lai, B. Liu, X. Li, L. Liu, S. Xu, Q. Dong, M. Wang, X. Duan, J. Tan, Y. Zheng, P. Zhang, G. Fan, J. Wong, G. L. Xu, Z. Wang, H. Wang, S. Gao, B. Zhu, Stella safeguards the oocyte methylome by preventing de novo methylation mediated by DNMT1. _Nature_ **564** , 136–140 (2018).
+
+79. M. Zhao, F. Feng, C. Chu, W. Yue, L. Li, A novel EIF4ENIF1 mutation associated with a diminished ovarian reserve and premature ovarian insufficiency identified by whole-exome sequencing. _J. Ovarian Res._ **12** , 119 (2019).
+
+80. L. Yu, Loss of ESRP1 blocks mouse oocyte development and leads to female infertility. _Development_ **148** , 1 (2021).
+
+81. S. Markholt, M. L. Grøndahl, E. H. Ernst, C. Y. Andersen, E. Ernst, K. Lykke-Hartmann, Global gene analysis of oocytes from early stages in human folliculogenesis shows high expression of novel genes in reproduction. _Mol. Hum. Reprod._ **18** , 96–110 (2012).
+
+82. Y. Tanaka, S. Kato, M. Tanaka, N. Kuji, Y. Yoshimura, Structure and expression of the human oocyte-specific histone H1 gene elucidated by direct RT-nested PCR of a single oocyte. _Biochem. Biophys. Res. Commun._ **304** , 351–357 (2003).
+
+83. A. Metchat, M. Åkerfelt, C. Bierkamp, V. Delsinne, L. Sistonen, H. Alexandre, E. S. Christians, Mammalian heat shock factor 1 is essential for oocyte meiosis and directly regulates Hsp90α expression. _J. Biol. Chem._ **284** , 9521–9528 (2009).
+
+84. X. Wang, K. E. Park, S. Koser, S. Liu, L. Magnani, R. A. Cabot, KPNA7, an oocyte- and embryo-specific karyopherin α subtype, is required for porcine embryo development. _Reprod. Fertil. Dev._ **24** , 382 –391 (2012).
+
+85. P. Zhang, M. Dixon, M. Zucchelli, F. Hambiliki, L. Levkov, O. Hovatta, J. Kere, Expression analysis of the NLRP gene family suggests a role in human preimplantation development. _PLOS ONE_ **3** , e2755 (2008).
+
+86. X. Wang, W. Rosikiewicz, Y. Sedkov, T. Martinez, B. S. Hansen, P. Schreiner, J. Christensen, B. Xu, S. M. Pruett-Miller, K. Helin, H. M. Herz, PROSER1 mediates TET2 O- GlcNAcylation to regulate DNA demethylation on UTX-dependent enhancers and CpG islands. _Life Sci. Alliance_ **5** , e202101228 (2022).
+
+87. M. H. Sun, L. L. Hu, C. Y. Zhao, X. Lu, Y. P. Ren, J. L. Wang, X. S. Cui, S. C. Sun, Ral GTPase is essential for actin dynamics and Golgi apparatus distribution in mouse oocyte maturation. _Cell Div._ **16** , 1–12 (2021).
+
+88. M. L. Bernhardt, K. M. Lowther, E. Padilla-Banks, C. E. McDonough, K. N. Lee, A. V. Evsikov, T. F. Uliasz, P. Chidiac, C. J. Williams, L. M. Mehlmann, Regulator of G-protein signaling 2 (RGS2) suppresses premature calcium release in mouse eggs. _Development (Cambridge)_ **142** , 2633–2640 (2015).
+
+89. Y. Jiang, M. Tian, W. Lin, X. Wang, X. Wang, Protein kinase serine/threonine kinase 24 positively regulates interleukin 17-induced inflammation by promoting IKK complex activation. _Front. Immunol._ **9** , 921 (2018).
+
+90. J. Zhao, B. Wang, H. Yu, Y. Wang, X. Liu, Q. Zhang, tdrd1 is a germline-specific and sexually dimorphically expressed gene in Paralichthys olivaceus. _Gene_ **673** , 61–69 (2018).
+
+91. G. Hamamoto, T. Suzuki, M. G. Suzuki, F. Aoki, Regulation of transketolase like 1 gene expression in the murine one-cell stage embryos. _PLOS ONE_ **9** , e82087 (2014).
+
+92. K.-Y. Ryu, S. A. Sinnar, L. G. Reinholdt, S. Vaccari, S. Hall, M. A. Garcia, T. S. Zaitseva, D. M. Bouley, K. Boekelheide, M. A. Handel, M. Conti, R. R. Kopito, The mouse polyubiquitin gene Ubb is essential for meiotic progression. _Mol. Cell. Biol._ **28** , 1136–1146 (2008).
+
+93. S. Maenohara, M. Unoki, H. Toh, H. Ohishi, J. Sharif, H. Koseki, H. Sasaki, Role of UHRF1 in de novo DNA methylation in oocytes and maintenance methylation in preimplantation embryos. _PLOS Genet._ **13** , e1007042 (2017).
+
+94. X. Liu, Y. Wang, P. Zhu, J. Wang, J. Liu, N. Li, W. Wang, W. Zhang, C. Zhang, Y. Wang, X. Shen, F. Liu, Human follicular fluid proteome reveals association between overweight status and oocyte maturation abnormality. _Clin. Proteomics_ **17** , 22 (2020).
+
+95. Y. Rong, S. Y. Ji, Y. Z. Zhu, Y. W. Wu, L. Shen, H. Y. Fan, ZAR1 and ZAR2 are required for oocyte meiotic maturation by regulating the maternal transcriptome and mRNA translational activation. _Nucleic Acids Res._ **47** , 11387–11402 (2019).
