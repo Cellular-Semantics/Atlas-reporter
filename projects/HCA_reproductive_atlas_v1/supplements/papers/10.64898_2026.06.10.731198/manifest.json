@@ -1,0 +1,1083 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.64898/2026.06.10.731198",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "biorxiv",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "note": "bioRxiv reports `license: cc_by` for this preprint. This is the licence the local snippet index relies on: the preprint is the only paper whose chunks and snippets are committed, and the `.gitignore` re-include for `10.64898_*` rests on it.",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "media-1.docx",
+      "media_type": "docx",
+      "size_bytes": 3570325,
+      "path": "papers/10.64898_2026.06.10.731198/files/media-1.docx",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-09-08T14:15:29+00:00",
+        "sha256": "27c122ca4d0b1ad64ac5d13fd451763cac9b72676dd69dbebebfc64865d1adf0",
+        "note": "copied from /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/incoming/10.64898_2026.06.10.731198"
+      },
+      "relevance": "unknown",
+      "relevance_note": "not inspected: docx — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "media-2.pdf",
+      "media_type": "pdf",
+      "size_bytes": 11650975,
+      "path": "papers/10.64898_2026.06.10.731198/files/media-2.pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-09-08T14:15:29+00:00",
+        "sha256": "2f09dbbc1ce25876ed9378696713c7df6c191577181d055836222317412f4252",
+        "note": "copied from /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/incoming/10.64898_2026.06.10.731198"
+      },
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "media-3.xlsx",
+      "media_type": "xlsx",
+      "size_bytes": 320675,
+      "path": "papers/10.64898_2026.06.10.731198/files/media-3.xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-09-08T14:15:29+00:00",
+        "sha256": "6c7eaca15434f10fefce773b34d6067ffcfa89d0c23977b515f0f75dfa7d89fa",
+        "note": "copied from /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/incoming/10.64898_2026.06.10.731198"
+      },
+      "relevance": "relevant",
+      "relevance_note": "[B. Newly generated Fallopian Tu] columns clinical_diagnosis/developmental_stage/digestion_protocol/disease -> sample metadata"
+    },
+    {
+      "file_id": "media-4.xlsx",
+      "media_type": "xlsx",
+      "size_bytes": 105614,
+      "path": "papers/10.64898_2026.06.10.731198/files/media-4.xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-09-08T14:15:29+00:00",
+        "sha256": "72c0538fe029eb724b46a266d8b74c6c4d1763a92cb2063c2ca8eed18d5c9089",
+        "note": "copied from /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/incoming/10.64898_2026.06.10.731198"
+      },
+      "relevance": "relevant",
+      "relevance_note": "[B. HCA_femaleRepSys_v1_celltype] columns alternative_celltype_labels/celltype_description/celltype_hca/l1 -> marker list"
+    },
+    {
+      "file_id": "media-5.xlsx",
+      "media_type": "xlsx",
+      "size_bytes": 152800,
+      "path": "papers/10.64898_2026.06.10.731198/files/media-5.xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-09-08T14:15:29+00:00",
+        "sha256": "6589b72f0f430b71e04bb92fe845c1e5b9f6ceaec865d1055a222ac9b6237b92",
+        "note": "copied from /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/incoming/10.64898_2026.06.10.731198"
+      },
+      "relevance": "relevant",
+      "relevance_note": "[B. DEGs_uftLAM_vs_oLAM_PW] columns celltype_hca/gene_name/log2fc/padj -> differential expression"
+    },
+    {
+      "file_id": "media-6.xlsx",
+      "media_type": "xlsx",
+      "size_bytes": 260330,
+      "path": "papers/10.64898_2026.06.10.731198/files/media-6.xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-09-08T14:15:29+00:00",
+        "sha256": "0ed875e8e783bab5d445b1eb22eb11316fde1351e4dad99e334b07360368382a",
+        "note": "copied from /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/incoming/10.64898_2026.06.10.731198"
+      },
+      "relevance": "relevant",
+      "relevance_note": "[D. LOO-LDSC-fGSEA results] columns celltype/es/gwas/leadingedge -> enrichment results"
+    },
+    {
+      "file_id": "media-7.xlsx",
+      "media_type": "xlsx",
+      "size_bytes": 100145,
+      "path": "papers/10.64898_2026.06.10.731198/files/media-7.xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "manual",
+        "retrieved_at": "2026-09-08T14:15:29+00:00",
+        "sha256": "0c04a6457245628f578c0b51033a2bb7d617ecb940d770c01fddf773c6f95527",
+        "note": "copied from /Users/do12/Documents/GitHub/Atlas-reporter-corpora/hca_reproductive/supplements/incoming/10.64898_2026.06.10.731198"
+      },
+      "relevance": "relevant",
+      "relevance_note": "[A. scATAC-seq sample metadata] columns assay_type/clinical_diagnosis/dataset/dataset_id -> sample metadata"
+    }
+  ],
+  "gaps": [],
+  "tables": [
+    {
+      "file_id": "media-3.xlsx",
+      "locator": "A. scRNAseq samples metadata",
+      "content_type": "sample_metadata",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "Organ"
+        },
+        {
+          "name": "Dataset"
+        },
+        {
+          "name": "Sample_id"
+        },
+        {
+          "name": "Library_id"
+        },
+        {
+          "name": "Donor_id"
+        },
+        {
+          "name": "Sex"
+        },
+        {
+          "name": "Postnatal_age_years"
+        },
+        {
+          "name": "Gestational_age_pcw"
+        },
+        {
+          "name": "Developmental_stage"
+        },
+        {
+          "name": "Tanner Stage"
+        },
+        {
+          "name": "Menstrual_stage"
+        },
+        {
+          "name": "Disease"
+        },
+        {
+          "name": "Clinical_diagnosis"
+        },
+        {
+          "name": "Organ_part"
+        },
+        {
+          "name": "Tissue_ROI"
+        },
+        {
+          "name": "Specimen_type"
+        },
+        {
+          "name": "Sampled_site_condition"
+        },
+        {
+          "name": "Observed_pathology"
+        },
+        {
+          "name": "Tissue_status"
+        },
+        {
+          "name": "Dissociation_method"
+        },
+        {
+          "name": "Cell_enrichment"
+        },
+        {
+          "name": "Preservation_method"
+        },
+        {
+          "name": "Target_cell_population"
+        },
+        {
+          "name": "Sorting_method"
+        },
+        {
+          "name": "Assay_type"
+        }
+      ],
+      "n_columns": 33,
+      "header_row": 0,
+      "n_rows": 440,
+      "evidence": "headers",
+      "description": "One row per single-cell RNA-seq library across every dataset in the atlas, giving organ, source dataset, sample, library and donor identifiers alongside the donor descriptors the atlas reports composition over: sex, postnatal age, gestational age, developmental stage, Tanner stage, menstrual stage, disease and clinical diagnosis. The place to establish which donors and conditions any cell set was observed in."
+    },
+    {
+      "file_id": "media-3.xlsx",
+      "locator": "B. Newly generated Fallopian Tu",
+      "content_type": "sample_metadata",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "Sample_id"
+        },
+        {
+          "name": "Library_id"
+        },
+        {
+          "name": "Donor_id"
+        },
+        {
+          "name": "Postnatal_age_years"
+        },
+        {
+          "name": "Developmental_stage"
+        },
+        {
+          "name": "Menstrual_stage"
+        },
+        {
+          "name": "Disease"
+        },
+        {
+          "name": "Clinical_diagnosis"
+        },
+        {
+          "name": "Digestion_Protocol"
+        },
+        {
+          "name": "FACS-enrichment"
+        },
+        {
+          "name": "Region"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 0,
+      "n_rows": 7,
+      "evidence": "headers",
+      "description": "Sample metadata for the fallopian tube libraries generated for this study, adding the dissociation protocol, FACS enrichment and sampled region to the donor descriptors. Narrower than sheet A and specific to the newly generated data."
+    },
+    {
+      "file_id": "media-3.xlsx",
+      "locator": "C. Spatial transcriptomics samp",
+      "content_type": "sample_metadata",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "Organ"
+        },
+        {
+          "name": "Organ_part"
+        },
+        {
+          "name": "Donor_id"
+        },
+        {
+          "name": "Technology"
+        },
+        {
+          "name": "Postnatal_age_years"
+        },
+        {
+          "name": "Developmental_stage"
+        },
+        {
+          "name": "Menstrual_stage"
+        },
+        {
+          "name": "Sample_name"
+        },
+        {
+          "name": "Sample_id"
+        }
+      ],
+      "n_columns": 9,
+      "header_row": 0,
+      "n_rows": 12,
+      "evidence": "headers",
+      "description": "One row per spatial transcriptomics sample, with organ, organ part, donor, technology and developmental stage. Use it to establish which spatial data support a claim about where a cell type sits."
+    },
+    {
+      "file_id": "media-3.xlsx",
+      "locator": "D. scRNAseq libraries QC",
+      "content_type": "other",
+      "relevance": "irrelevant",
+      "columns": [
+        {
+          "name": "libary accession"
+        },
+        {
+          "name": "Estimated Number of Cells"
+        },
+        {
+          "name": "Mean Reads per Cell"
+        },
+        {
+          "name": "Median Genes per Cell"
+        },
+        {
+          "name": "Median UMI Counts per Cell"
+        },
+        {
+          "name": "Number of Reads"
+        },
+        {
+          "name": "Valid Barcodes"
+        },
+        {
+          "name": "Sequencing Saturation"
+        },
+        {
+          "name": "Chemistry"
+        },
+        {
+          "name": "Dataset"
+        },
+        {
+          "name": "Sample_id"
+        },
+        {
+          "name": "Library_id"
+        },
+        {
+          "name": "Donor_id"
+        },
+        {
+          "name": "Sex"
+        },
+        {
+          "name": "Postnatal_age_years"
+        },
+        {
+          "name": "Gestational_age_pcw"
+        },
+        {
+          "name": "Developmental_stage"
+        },
+        {
+          "name": "Disease"
+        },
+        {
+          "name": "Clinical_diagnosis"
+        },
+        {
+          "name": "Organ"
+        },
+        {
+          "name": "Organ_part"
+        },
+        {
+          "name": "Tissue_ROI"
+        },
+        {
+          "name": "Specimen_type"
+        },
+        {
+          "name": "Sampled_site_condition"
+        },
+        {
+          "name": "Tissue_status"
+        }
+      ],
+      "n_columns": 31,
+      "header_row": 0,
+      "n_rows": 417,
+      "evidence": "headers",
+      "description": "Per-library sequencing quality metrics: estimated cells, reads and genes per cell, saturation and chemistry, keyed by library accession. Describes the sequencing rather than the cells, so it carries nothing about any cell type."
+    },
+    {
+      "file_id": "media-4.xlsx",
+      "locator": "A. HCA_femaleRepSys_v1_celltype",
+      "content_type": "cluster_annotation",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "celltype_HCA_lineage"
+        },
+        {
+          "name": "celltype_HCA_broad"
+        },
+        {
+          "name": "celltype_HCA_fine"
+        }
+      ],
+      "n_columns": 3,
+      "header_row": 5,
+      "n_rows": 209,
+      "evidence": "legend_sheet",
+      "description": "The atlas's cell type classification system: every label decomposed into its lineage, broad and fine components, one row per fine label. This is the authority for how a label is constructed and what sits above it, so it is where a bare label is resolved to its place in the hierarchy."
+    },
+    {
+      "file_id": "media-4.xlsx",
+      "locator": "B. HCA_femaleRepSys_v1_celltype",
+      "content_type": "marker_list",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "celltype_HCA"
+        },
+        {
+          "name": "L1"
+        },
+        {
+          "name": "L2"
+        },
+        {
+          "name": "L3"
+        },
+        {
+          "name": "L4"
+        },
+        {
+          "name": "Markers_positive"
+        },
+        {
+          "name": "Markers_negative (optional)"
+        },
+        {
+          "name": "Celltype_description"
+        },
+        {
+          "name": "Alternative_celltype_labels"
+        }
+      ],
+      "n_columns": 9,
+      "header_row": 5,
+      "n_rows": 240,
+      "evidence": "legend_sheet",
+      "description": "The structured classification behind the atlas labels: for each label, its four nomenclature levels, positive and optional negative marker genes as semicolon-separated symbols, a prose description of the cell type, and alternative labels used for it. Both the naming authority and the asserted marker panel, so it answers what a label means and what the authors say identifies it — distinct from the differential expression in Supplementary Table 3, which is computed."
+    },
+    {
+      "file_id": "media-5.xlsx",
+      "locator": "A. DEGs_macrophages_OnevRest",
+      "content_type": "deg_results",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "uftLAM"
+        },
+        {
+          "name": "Mac_LYVE1hi"
+        },
+        {
+          "name": "oLAM"
+        }
+      ],
+      "n_columns": 14,
+      "header_row": 6,
+      "n_rows": 776,
+      "evidence": "legend_sheet",
+      "description": "Differential expression between three macrophage populations, each computed against the rest by a one-versus-rest test. Laid out as one block of columns per population, split into upregulated and downregulated genes, each block giving gene name, cell type label, log fold change and adjusted p-value."
+    },
+    {
+      "file_id": "media-5.xlsx",
+      "locator": "B. DEGs_uftLAM_vs_oLAM_PW",
+      "content_type": "deg_results",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "gene_name"
+        },
+        {
+          "name": "celltype_HCA"
+        },
+        {
+          "name": "log2FC"
+        },
+        {
+          "name": "padj"
+        }
+      ],
+      "n_columns": 9,
+      "header_row": 3,
+      "n_rows": 1075,
+      "evidence": "legend_sheet",
+      "description": "Pairwise differential expression between two macrophage populations, upregulated and downregulated genes in adjacent column blocks, with log fold change and adjusted p-value. A direct comparison of two populations rather than either against a background."
+    },
+    {
+      "file_id": "media-5.xlsx",
+      "locator": "C. ILC3_NCRhi_Repro_vs_nonRepro",
+      "content_type": "deg_results",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "gene_name"
+        },
+        {
+          "name": "TISSUE_BROAD"
+        },
+        {
+          "name": "log2FC"
+        },
+        {
+          "name": "padj"
+        }
+      ],
+      "n_columns": 9,
+      "header_row": 3,
+      "n_rows": 179,
+      "evidence": "legend_sheet",
+      "description": "Differential expression for one innate lymphoid population between reproductive-tract and non-reproductive-tract tissue, so the contrast is anatomical site rather than cell type. Upregulated and downregulated genes in adjacent blocks with log fold change and adjusted p-value."
+    },
+    {
+      "file_id": "media-6.xlsx",
+      "locator": "A. GWAS",
+      "content_type": "other",
+      "relevance": "irrelevant",
+      "columns": [
+        {
+          "name": "Trait"
+        },
+        {
+          "name": "Author"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Other"
+        }
+      ],
+      "n_columns": 4,
+      "header_row": 2,
+      "n_rows": 8,
+      "evidence": "legend_sheet",
+      "description": "The genome-wide association studies selected for the enrichment analyses, one row per study with trait, first author and year. A source list for the analyses in the other sheets; it says nothing about any cell type."
+    },
+    {
+      "file_id": "media-6.xlsx",
+      "locator": "B. LDSC results",
+      "content_type": "enrichment",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "gwas"
+        },
+        {
+          "name": "specificity_id"
+        },
+        {
+          "name": "celltype"
+        },
+        {
+          "name": "beta"
+        },
+        {
+          "name": "beta_se"
+        },
+        {
+          "name": "pvalue"
+        },
+        {
+          "name": "qval"
+        },
+        {
+          "name": "log10pval"
+        },
+        {
+          "name": "h2_obs"
+        },
+        {
+          "name": "h2_se"
+        },
+        {
+          "name": "n_snps"
+        },
+        {
+          "name": "sd"
+        },
+        {
+          "name": "tau_star"
+        },
+        {
+          "name": "tau_star_se"
+        },
+        {
+          "name": "lineage"
+        }
+      ],
+      "n_columns": 15,
+      "header_row": 2,
+      "n_rows": 534,
+      "evidence": "legend_sheet",
+      "description": "Heritability enrichment of each GWAS trait in each cell type, across the atlas, with effect size, standard error, p-value and q-value alongside observed heritability per trait. One row per trait and cell type, so it is where a claimed disease association for a cell type can be checked."
+    },
+    {
+      "file_id": "media-6.xlsx",
+      "locator": "C. LDSC results within fibs",
+      "content_type": "enrichment",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "gwas"
+        },
+        {
+          "name": "specificity_id"
+        },
+        {
+          "name": "celltype"
+        },
+        {
+          "name": "beta"
+        },
+        {
+          "name": "beta_se"
+        },
+        {
+          "name": "pvalue"
+        },
+        {
+          "name": "qval"
+        },
+        {
+          "name": "log10pval"
+        },
+        {
+          "name": "h2_obs"
+        },
+        {
+          "name": "h2_se"
+        },
+        {
+          "name": "n_snps"
+        },
+        {
+          "name": "sd"
+        },
+        {
+          "name": "tau_star"
+        },
+        {
+          "name": "tau_star_se"
+        }
+      ],
+      "n_columns": 14,
+      "header_row": 2,
+      "n_rows": 6,
+      "evidence": "legend_sheet",
+      "description": "The same heritability enrichment restricted to endometrial fibroblast subsets, so the comparison is within one lineage rather than across the atlas. Same columns as the cross-atlas sheet."
+    },
+    {
+      "file_id": "media-6.xlsx",
+      "locator": "D. LOO-LDSC-fGSEA results",
+      "content_type": "enrichment",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "gwas"
+        },
+        {
+          "name": "celltype"
+        },
+        {
+          "name": "pathway"
+        },
+        {
+          "name": "pval"
+        },
+        {
+          "name": "padj"
+        },
+        {
+          "name": "log2err"
+        },
+        {
+          "name": "ES"
+        },
+        {
+          "name": "NES"
+        },
+        {
+          "name": "size"
+        },
+        {
+          "name": "leadingEdge"
+        },
+        {
+          "name": "qvalue"
+        }
+      ],
+      "n_columns": 11,
+      "header_row": 2,
+      "n_rows": 422,
+      "evidence": "legend_sheet",
+      "description": "Gene set enrichment for the strongest trait–cell type associations, one row per trait, cell type and pathway, with nominal and adjusted p-values, enrichment score and the leading-edge genes. Restricted to nominally significant results with a positive enrichment score."
+    },
+    {
+      "file_id": "media-7.xlsx",
+      "locator": "A. scATAC-seq sample metadata",
+      "content_type": "sample_metadata",
+      "relevance": "relevant",
+      "columns": [
+        {
+          "name": "Organ"
+        },
+        {
+          "name": "Dataset"
+        },
+        {
+          "name": "Sample_id"
+        },
+        {
+          "name": "Library_id"
+        },
+        {
+          "name": "Donor_id"
+        },
+        {
+          "name": "RNA_matched_sample_id"
+        },
+        {
+          "name": "Sex"
+        },
+        {
+          "name": "Postnatal_age_years"
+        },
+        {
+          "name": "Gestational_age_pcw"
+        },
+        {
+          "name": "Developmental_stage"
+        },
+        {
+          "name": "Tanner Stage"
+        },
+        {
+          "name": "Menstrual_stage"
+        },
+        {
+          "name": "Disease"
+        },
+        {
+          "name": "Clinical_diagnosis"
+        },
+        {
+          "name": "Organ_part"
+        },
+        {
+          "name": "Tissue_ROI"
+        },
+        {
+          "name": "Specimen_type"
+        },
+        {
+          "name": "Sampled_site_condition"
+        },
+        {
+          "name": "Preservation_method"
+        },
+        {
+          "name": "Assay_type"
+        },
+        {
+          "name": "Library_chemistry"
+        },
+        {
+          "name": "Sequencing_platform"
+        },
+        {
+          "name": "Multiplexed"
+        },
+        {
+          "name": "Dataset_id"
+        }
+      ],
+      "n_columns": 24,
+      "header_row": 2,
+      "n_rows": 59,
+      "evidence": "legend_sheet",
+      "description": "One row per single-cell ATAC-seq library, with the same donor and condition descriptors as the RNA sample metadata plus the identifier of the matched RNA sample where one exists."
+    },
+    {
+      "file_id": "media-7.xlsx",
+      "locator": "B. Disease peak–gene links",
+      "content_type": "other",
+      "relevance": "unknown",
+      "columns": [
+        {
+          "name": "peak"
+        },
+        {
+          "name": "diseaseName"
+        },
+        {
+          "name": "publications"
+        },
+        {
+          "name": "pValue"
+        },
+        {
+          "name": "l2g_top_geneId"
+        },
+        {
+          "name": "l2g_top_score"
+        },
+        {
+          "name": "l2g_genes"
+        },
+        {
+          "name": "l2g_scores"
+        },
+        {
+          "name": "Correlation"
+        },
+        {
+          "name": "FDR"
+        },
+        {
+          "name": "geneName"
+        },
+        {
+          "name": "genes"
+        },
+        {
+          "name": "peak_info"
+        }
+      ],
+      "n_columns": 13,
+      "header_row": 2,
+      "n_rows": 290,
+      "evidence": "legend_sheet",
+      "description": "Accessible chromatin peaks overlapping disease-associated loci, linked to their likely effector gene with the supporting publications, association p-value and locus-to-gene scores. Carries no cell type column, so a reader would have to reach it through the peaks rather than by looking a cell type up."
+    }
+  ],
+  "indexed_at": "2026-09-08T14:18:21Z",
+  "prose": [
+    {
+      "file_id": "media-1.docx",
+      "text_file": "papers/10.64898_2026.06.10.731198/text/media-1.txt",
+      "n_chars": 65349,
+      "extractor": "docx",
+      "evidence": "outline",
+      "sections": [
+        {
+          "heading": "Supplementary notes",
+          "char_start": 0,
+          "char_end": 1351,
+          "folds_in": false
+        },
+        {
+          "heading": "Note 1.1. Building the Human Female Reproductive System Cell Atlas v1",
+          "char_start": 1353,
+          "char_end": 2806,
+          "folds_in": false
+        },
+        {
+          "heading": "Data collection and inclusion criteria",
+          "char_start": 2808,
+          "char_end": 6952,
+          "folds_in": false
+        },
+        {
+          "heading": "Read alignment, quantification and ambient RNA removal",
+          "char_start": 6954,
+          "char_end": 7691,
+          "folds_in": false
+        },
+        {
+          "heading": "Per-cell quality control",
+          "char_start": 7693,
+          "char_end": 8098,
+          "folds_in": false
+        },
+        {
+          "heading": "Per-cell phenotypic scores",
+          "char_start": 8100,
+          "char_end": 10135,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "Data integration and clustering",
+          "char_start": 10137,
+          "char_end": 12271,
+          "folds_in": false
+        },
+        {
+          "heading": "Integration hierarchy",
+          "char_start": 12273,
+          "char_end": 14373,
+          "folds_in": true,
+          "dimensions": [
+            "hierarchy",
+            "names"
+          ]
+        },
+        {
+          "heading": "Cell type annotation",
+          "char_start": 14375,
+          "char_end": 18878,
+          "folds_in": true,
+          "dimensions": [
+            "names"
+          ]
+        },
+        {
+          "heading": "Nomenclature and Cell Classification mapping",
+          "char_start": 18880,
+          "char_end": 19163,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "Computationally friendly labels",
+          "char_start": 19165,
+          "char_end": 21624,
+          "folds_in": true,
+          "dimensions": [
+            "names"
+          ]
+        },
+        {
+          "heading": "Integration of reproductive tract-derived NCRhi ILC3s with those from other muco",
+          "char_start": 21626,
+          "char_end": 22847,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy",
+            "location"
+          ]
+        },
+        {
+          "heading": "Note 2.1 Novel insights from postnatal Human Female Reproductive System Cell Atl",
+          "char_start": 22849,
+          "char_end": 23676,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy",
+            "location",
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "Organisation of the epithelium and mesothelium",
+          "char_start": 23678,
+          "char_end": 28702,
+          "folds_in": true,
+          "dimensions": [
+            "location",
+            "hierarchy",
+            "structure",
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "Organisation of the mesenchyme",
+          "char_start": 28704,
+          "char_end": 39929,
+          "folds_in": true,
+          "dimensions": [
+            "location",
+            "hierarchy",
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "Organisation of the vascular endothelial cells",
+          "char_start": 39931,
+          "char_end": 41506,
+          "folds_in": true,
+          "dimensions": [
+            "location",
+            "hierarchy",
+            "structure",
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "Organisation of the immune cells",
+          "char_start": 41508,
+          "char_end": 48223,
+          "folds_in": true,
+          "dimensions": [
+            "location",
+            "hierarchy",
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "Organisation of the peripheral nervous system cells",
+          "char_start": 48225,
+          "char_end": 48697,
+          "folds_in": true,
+          "dimensions": [
+            "location",
+            "hierarchy",
+            "structure",
+            "function"
+          ]
+        },
+        {
+          "heading": "Organisation of ovarian follicular cells",
+          "char_start": 48699,
+          "char_end": 51377,
+          "folds_in": true,
+          "dimensions": [
+            "location",
+            "hierarchy",
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "Note 2.2. Expression of steroid receptors along all the cell types of the female",
+          "char_start": 51379,
+          "char_end": 51702,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "Note 2.3. GWAS integration with the Human Female Reproductive System Cell Atlas ",
+          "char_start": 51704,
+          "char_end": 55515,
+          "folds_in": false
+        },
+        {
+          "heading": "Note 2.4. snATAC-seq Human Female Reproductive System Cell Atlas",
+          "char_start": 55517,
+          "char_end": 57358,
+          "folds_in": false
+        },
+        {
+          "heading": "Supplementary Notes References",
+          "char_start": 57360,
+          "char_end": 65349,
+          "folds_in": false
+        }
+      ],
+      "description": "Supplementary notes for the atlas: how it was built, how its cell types were annotated and named, and then a compartment-by-compartment account of the populations themselves — epithelium and mesothelium, mesenchyme, vascular endothelium, immune, peripheral nervous system and ovarian follicular cells. The characterisation sections are where a population's location, subdivision and role are described in prose.",
+      "folds_in": true,
+      "folds_in_note": "Judged from the section outline rather than the text. Fourteen of twenty-three sections were kept: the annotation, nomenclature and label sections, and every 'Organisation of' compartment account. Dropped are the sequencing and integration methods, the GWAS and ATAC notes, and a 7,989-character reference list."
+    },
+    {
+      "file_id": "media-2.pdf",
+      "text_file": "papers/10.64898_2026.06.10.731198/text/media-2.txt",
+      "n_chars": 20141,
+      "extractor": "pdf",
+      "evidence": "full_text",
+      "sections": [
+        {
+          "heading": "1 Extended Data Figures",
+          "char_start": 0,
+          "char_end": 20141
+        }
+      ],
+      "description": "Extended Data figure legends. They carry the three-level label encoding and the dendrogram relating lineage, broad and fine cell types, per-population cell counts and the breakdown by dataset, organ and developmental stage, confusion matrices against the labels the contributing studies used, and spatial co-occurrence and marker visualisations. Read for how a population is named and placed rather than for a result.",
+      "folds_in": true,
+      "folds_in_note": "Read in full; the document is short. Legends throughout describe populations, their hierarchy and their anatomical distribution, and they point at the supplementary table that holds the annotation abbreviations."
+    }
+  ]
+}

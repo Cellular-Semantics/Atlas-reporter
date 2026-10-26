@@ -1,0 +1,348 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1038/s41586-022-04918-4",
+    "pmcid": "PMC9300467",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "41586_2022_4918_MOESM1_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:17+00:00",
+        "sha256": "01104e2c4deb021b1afb4db961a2489ead07b0daa9b8d53d576630d9aa070628"
+      },
+      "label": "Supplementary Information",
+      "caption": "Supplementary Notes 1–7 and reference.",
+      "size_bytes": 642722,
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM2_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Reporting Summary",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Reporting Summary"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "media_type": "zip",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:17+00:00",
+        "sha256": "7d28d3f92e701f581e744576f103c3621f21590dd8ff5a41700bc359d8e6f513"
+      },
+      "label": "Supplementary Tables",
+      "caption": "Supplementary Tables 1–11 and legends to the tables.",
+      "size_bytes": 3229816,
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM.zip",
+      "members": [
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table1.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 182796,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table1.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[HUMAN scRNA seq] columns 10xkit/cryo/dig_protocol/donor -> sample metadata"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table10.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 6463,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table10.xlsx",
+          "relevance": "irrelevant",
+          "relevance_note": "[RNAscope probes] columns probe/product number/supplier/target gene -> reagent list"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table11.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 411508,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table11.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[novel_cellcell_interactions] columns annotation_strategy/curator/is_ppi/partner_a -> curated interactions"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table2.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 105205,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table2.xlsx",
+          "relevance": "unknown",
+          "relevance_note": "[A_cellranger10x_RNA_library_sta] columns cell ranger/genes per cell/number of cells/reads per cell/sample matched no signature"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table3.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 31274,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table3.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[A_human_scRNAseq_females] columns coelepi/endothelial/epithelial/erythroid -> sample metadata"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table4.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 10952,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table4.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[human_germcells] columns fgc/oocyte/oogonia_meiotic/oogonia_stra8 -> sample metadata"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table5.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 2184576,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table5.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[Supplementary_Table5] columns atac_pwm/atac_tfact/atac_tfact.avg_logfc/atac_tfact.p_val -> differential expression"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table6.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 14071,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table6.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[human_somatic] columns coelepi_gata2/coelepi_lhx9/early_somatic/early_spax8 -> sample metadata"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table7.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 796661,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table7.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[Supplementary_Table7] columns atac_pwm/atac_tfact/atac_tfact.avg_logfc/atac_tfact.p_val -> differential expression"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table8.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 106170,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table8.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[Supplementary_Table8] columns gene_a/gene_b/germ.gc---germ.gc/germ.gc---germ.pgc -> cell-cell interaction matrix"
+        },
+        {
+          "member_path": "2021-05-07278C-Supplementary_Table9.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 373180,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/2021-05-07278C-Supplementary_Table9.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[A immune_gonads_absolutecounts] columns b cell/cdc1/cdc2/early t -> sample metadata"
+        },
+        {
+          "member_path": "legends for Supplementary Tables 1-11.docx",
+          "media_type": "docx",
+          "size_bytes": 15989,
+          "extracted": true,
+          "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM3_ESM__unpacked/legends for Supplementary Tables 1-11.docx",
+          "relevance": "unknown",
+          "relevance_note": "not inspected: docx — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+        }
+      ],
+      "relevance": "relevant",
+      "relevance_note": "9 of 12 members relevant"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM4_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:17+00:00",
+        "sha256": "34ca9469e2f9c8eea52aa6080a15af91d89c1701bf7ffa9a3aa05eaac1a8e332"
+      },
+      "caption": "Source Data Extended Data Fig. 1.",
+      "size_bytes": 22544807,
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM4_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[ED Fig.1f SVM_early_E11.5] columns annotation/human_svm/prob_coelepi/prob_endothelial/prob_epithelial matched no signature"
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM5_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:17+00:00",
+        "sha256": "01f8ff417393fd5b68c81b4c40229aba853cd3d08f0835d26eb4a2a9f09d4828"
+      },
+      "caption": "Source Data Extended Data Fig. 8.",
+      "size_bytes": 1466407,
+      "path": "papers/10.1038_s41586-022-04918-4/files/41586_2022_4918_MOESM5_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[ED Fig.8a SVM_supp_E12.5E16.5] columns annotation/prob_coelepi_lhx9/prob_early_supporting/prob_ose/prob_pregc_i matched no signature"
+    }
+  ],
+  "gaps": [
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "reason": "prose|41586_2022_4918_MOESM3_ESM.zip|legends for Supplementary Tables 1-11.docx was not characterised: no verdict was returned for it. It is unread, not empty — read it or fold it in rather than dropping it.",
+      "action": "read papers/10.1038_s41586-022-04918-4/text/legends for Supplementary Tables 1-11.txt and record what it contains",
+      "member_path": "legends for Supplementary Tables 1-11.docx"
+    }
+  ],
+  "prose": [
+    {
+      "file_id": "41586_2022_4918_MOESM1_ESM.pdf",
+      "text_file": "papers/10.1038_s41586-022-04918-4/text/41586_2022_4918_MOESM1_ESM.txt",
+      "n_chars": 52327,
+      "extractor": "pdf",
+      "evidence": "outline",
+      "sections": [
+        {
+          "heading": "**Single-cell roadmap of human gonadal development**",
+          "char_start": 44,
+          "char_end": 94,
+          "folds_in": false
+        },
+        {
+          "heading": "**Supplementary Information for** Single-cell roadmap of human gonadal developme",
+          "char_start": 96,
+          "char_end": 1430,
+          "folds_in": false
+        },
+        {
+          "heading": "Supplementary Note 1. Annotation of main cell lineages.",
+          "char_start": 1432,
+          "char_end": 9139,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "Supplementary Note 2. Cross-species comparison of cell types.",
+          "char_start": 9141,
+          "char_end": 12559,
+          "folds_in": true,
+          "dimensions": [
+            "hierarchy",
+            "location"
+          ]
+        },
+        {
+          "heading": "3.1. Annotation of cell types",
+          "char_start": 12561,
+          "char_end": 15550,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "3.2. Identification of key transcription factor (TF) regulatory programs",
+          "char_start": 15552,
+          "char_end": 27642,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "Supplementary Note 5. Annotation of supporting PAX8+ cells (sPAX8s).",
+          "char_start": 27644,
+          "char_end": 30120,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "markers"
+          ]
+        },
+        {
+          "heading": "6.1. Annotation of sell types",
+          "char_start": 30122,
+          "char_end": 34474,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "6.2. Human-mouse comparison",
+          "char_start": 34476,
+          "char_end": 35483,
+          "folds_in": true,
+          "dimensions": [
+            "hierarchy",
+            "location"
+          ]
+        },
+        {
+          "heading": "6.3. Identification of key TF regulatory programs",
+          "char_start": 35485,
+          "char_end": 36979,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "6.4. Germ-supporting cellular crosstalk",
+          "char_start": 36981,
+          "char_end": 45675,
+          "folds_in": true,
+          "dimensions": [
+            "function",
+            "structure"
+          ]
+        },
+        {
+          "heading": "Supplementary References",
+          "char_start": 45677,
+          "char_end": 52327,
+          "folds_in": false
+        }
+      ],
+      "description": "Supplementary material for a single-cell atlas of human gonadal development, containing cell type annotations, cross-species comparisons, transcription factor identification, and characterizations of specific cell populations and their crosstalk.",
+      "folds_in": true,
+      "folds_in_note": "Outline view only; text not shown. Multiple annotation and cell-type identification sections present, which are kept by exception rule. Cross-species and cellular crosstalk headings are kept due to ambiguity asymmetry (wrong drop loses evidence). Sections lack detail to confirm all content, but headings strongly suggest hits on names, hierarchy, markers, and function."
+    },
+    {
+      "file_id": "41586_2022_4918_MOESM3_ESM.zip",
+      "text_file": "papers/10.1038_s41586-022-04918-4/text/legends for Supplementary Tables 1-11.txt",
+      "n_chars": 7330,
+      "extractor": "docx",
+      "evidence": "full_text",
+      "sections": [
+        {
+          "heading": "Supplementary Tables Legends",
+          "char_start": 0,
+          "char_end": 7330
+        }
+      ],
+      "member_path": "legends for Supplementary Tables 1-11.docx",
+      "description": "Legends for Supplementary Tables 1-11 of a human and mouse fetal gonad atlas, giving each table's file name (Extended_Table1-11.xlsx), its sub-table lettering, and per-column definitions. Tables 3, 4, 6 and 9 are per-library cell counts by cell type or cell state; 5 and 7 are cross-species transcription-factor prioritisation with full DEG and motif-accessibility column glossaries; 8 and 11 are CellPhoneDB interactions. This is the key to which Extended_Table file answers which question.",
+      "folds_in": true,
+      "folds_in_note": "Read whole. Carries names and hierarchy (germ cells, somatic cells, female supporting cells, gonadal immune and myeloid cell types; the `cluster` column of Tables 5 and 7 holds the cell type) and marker/DEG column semantics."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+- 3 **Extended Data Fig. 1. Fine cell type taxonomy and metadata composition of the Human**
+
+- 4 **Female Reproductive System Cell Atlas v1 in the postnatal (pediatric & adult) dataset.**
+
+- 5 **A,** Batch-corrected Uniform Manifold Approximation and Projection (UMAP) visualisation
+
+- 6 manifold of the scRNA-seq dataset (n = 2,235,448 cells; n = 291 donors), coloured by dataset
+
+- 7 related to Figure 1c-e. Datasets color legend depicted in D. **B,** Dendrogram showing the three-
+
+- 8 level cell type hierarchy encoded in the `fine_celltype` annotation labels (structured label
+
+- 9 encoding `lineage_broad_fine` ). Lineages are shown on the left, broad cell types in the
+
+- 10 middle and fine cell types as leaves on the right. Fine cell types are ordered by lineage and
+
+- 11 ranked by relative abundance within each broad cell type. Each fine cell type is assigned to 12 its broad cell type, and each broad cell type to its lineage, based on the components of the
+
+- 13 structured label. **C,** Total number of cells per `fine_celltype` in the Human Female
+
+- 14 Reproductive System Cell Atlas v1. **D,** Bar plots showing, for each `fine_celltype` , the
+
+- 15 proportional contribution of each dataset (n = 22 datasets; left barplot); contribution of each
+
+- 16 organ of origin (ovary, fallopian tube, uterus, cervix, vagina; middle barplot); and contribution
+
+- 17 of developmental stage at time of sample collection: paediatric (postpubertal), reproductive
+
+- 18 age (adult), and postmenopausal (including perimenopausal). Prenatal-specific cell labels are
+
+- 19 shown in Extended Data Fig. 2. Please refer to **Supplementary Table 2b** for all cell 20 annotation-associated abbreviations. Dev, developmental.
+
+23 **Extended Data Fig. 2. Fine cell type taxonomy and metadata composition of the Human** 24 **Female Reproductive System Cell Atlas v1 in the prenatal dataset. A,** Batch-corrected 25 UMAP visualisation manifold of the scRNA-seq dataset (n = 2,235,448 cells; n = 291 donors), 26 coloured by prenatal dataset, related to Figure 1c-e. Dataset color legend depicted in E. **B.**
+
+- 27 Batch-corrected UMAP visualisation manifold of the scRNA-seq dataset, coloured by 28 `broad_celltype` annotation in prenatal donors. Postnatal `broad_celltype` categories 29 are shown in Figure 1e. **C.** Dendrogram showing the three-level cell type hierarchy encoded 30 in the `fine_celltype` annotation labels (structured label encoding
+
+- 31 `lineage_broad_fine` ). Lineages are shown on the left, broad cell types in the middle and
+
+- 32 fine cell types as leaves on the right. Fine cell types are ordered by lineage and ranked by 33 relative abundance within each broad cell type. Each fine cell type is assigned to its broad cell
+
+- 34 type, and each broad cell type to its lineage, based on the components of the structured label. 35 **D.** Total number of cells per `fine_celltype` in the Human Female Reproductive System
+
+- 36 Cell Atlas v1, prenatal dataset subset. **E.** Bar plots showing, for each `fine_celltype` , the
+
+- 37 proportional contribution of each dataset (n = 4 datasets; left bar plot); organ of origin (ovary, 38 or reproductive tract; middle bar plot); and developmental stage at sample collection (all 39 prenatal; right bar plot). Please refer to **Supplementary Table 2b** for all cell annotation40 associated abbreviations. Dev, developmental.
+
+- 43 **Extended Data Fig. 3. Overview of mesenchymal cells in the Human Female** 44 **Reproductive System Cell Atlas v1. A.** Confusion matrices comparing mesenchymal broad 45 categories in the Human Female Reproductive System Cell Atlas v1 – adventitial, interstitial, 46 pericyte, smooth muscle cells (SMCs) and vascular smooth muscle cells (vSMCs) – with 47 analogous author-defined labels from the original published datasets, including two fallopian 48 tubes, two ovarian and two uterine datasets. **B.** Bar plot showing the cellular composition of
+
+- 49 mesenchymal populations according to sampled organ and organ region. Colors indicate the
+
+- 50 different populations: interstitial populations are shown at the broad_celltype level, while non-
+
+- 51 interstitial populations are shown at the fine_celltype level. Population “AdvFibs PI16hi” 52 highlighted in red. Organs shown include ovary, fallopian tube and uterus. **C.** Bar plots 53 showing log2 spatial co-occurrence, predicted using TACCO, between adventitial populations 54 and selected representative anatomical populations, including smooth muscle cells (SMCs), 55 vascular smooth muscle cells (vSMCs), interstitial fibroblasts and epithelium. Co-occurrence 56 was assessed in three ovarian sections representing the cortex from three donors, one 57 fallopian tube section representing the ampulla, and two whole-uterus samples, both 58 proliferative stages of the menstrual cycle, profiled using Visium HD. **D.** Visualisation of 59 selected vascular and perivascular marker transcripts in one representative whole uterine 60 section from adult donor A30 (reproductive age, mid-secretory phase), profiled using a 61 bespoke Xenium 480-gene panel. The top panels show the corresponding haematoxylin and 62 eosin (H&E) histology and a magnified view of the inset, alongside Xenium visualisation 63 (bottom panels) of marker genes for arterial endothelium ( _SEMA3G_ ; red), spiral artery 64 pericytes ( _SLC38A11_ ; yellow), venous/vessel endothelium ( _ACKR1_ ; pink), decidualised 65 interstitial fibroblast of the secretory phase (DKK1; purple) and classical pericytes ( _STEAP4_ 66 blue). Arrows point to spiral arteries in the tissues. Scale bar = 500µm in full thickness H&E 67 images and 100µm in magnified insets. Adv, adventitial; Fib, fibroblast; SMC, smooth muscle 68 cell; vSMC, vascular smooth muscle cell; InnCor, inner cortex; OutCor, outer cortex; Foll, 69 follicle; Perifoll, perifollicular; PV, perivascular; eStromal/eS, endometrial stromal; 70 dStromal/dS, decidualized stromal; ePV, endometrial perivascular; mPV, myometrial 71 perivascular; uSMC, uterine smooth muscle cell; prog, progenitor; Incl, inclusion; Intr,
+
+- 72 interstitial; Cyc, cycling; Art, arteries; OSE, ovarian surface epithelium; Sec, secretory; EstrInd, 73 estrogen induced; Fun, functionalis; Lum, luminal; Prof/Prolif, proliferative.
+
+- 80 genes (x-axis) for all immune cell states (y-axis), excluding cycling cells. The colours of the
+
+- 81 bars, dotted squares, and cell state names correspond to the broad immune cell types
+
+- 82 depicted in **A. C,** Bar plot displaying the proportion of all immune cell states within each organ.
+
+- 83 Both prenatal and postnatal samples contribute to the ovary. Bars outlined in green and
+
+- 84 numbered with 14 (uftLAM), 15 (oLAM), or 16 (uMac_Inf) indicate macrophage subsets
+
+- 85 enriched in certain organs. Bar colour to cell states depicted in Figure 3a. DC, dendritic cell;
+
+- 86 ILC3, type 3 innate lymphoid cell; NK, natural killer; Prog, progenitor; HPC, haematopoietic
+
+- 87 progenitor cell; MEMP, megakaryocyte-erythroid-mast progenitor; NMP, neutrophil-myeloid
+
+- 88 progenitor; Baso, basophil; Eosino, eosinophil; MegaPlat, megakaryocyte/platelet; MO, 89 monocyte; Mac, macrophage; uftLAM, uterine and fallopian tube lipid-associated
+
+- 90 macrophage; oLAM, ovary lipid-associated macrophage; Inf, inflammatory; Cyc, cycling; cDC,
+
+- 91 conventional dendritic cell; pDC, plasmacytoid dendritic cell; ASDC, AXL/SIGLEC6+ dendritic
+
+- 92 cell; mregDC, mature regulatory dendritic cell; tolDC, tolerizing dendritic cell; SCM, stem cell 93 memory; Treg, regulatory T cell; MAIT, mucosal-associated invariant T cell; RA, retinoic acid. 94 Rep_age, reproductive age; expr, expression.
+
+- 97 **Extended Data Fig. 5. Characterisation of ILC3 and macrophage subsets. A,** (Left) UMAP 98 visualisation manifold of integrated scRNA-seq data of 51,708 innate lymphoid cells (ILCs), 99 both from the Human Female Reproductive System Cell Atlas v1 (ILC3, NK cells) and from
+
+- 100 single-cell studies of diseases related to the lung[1,2] , oral cavity[3] , and colon[4] . Integration was
+
+- 101 performed with healthy control cells from each study. Colours indicate cell type or state, which 102 was determined via manual annotation. (Right) Each public dataset’s contribution to the 103 integrated object. **B,** Dot plot showing the log-transformed, min-max normalised expression of 104 selected marker genes (x-axis) for the ILC cell states (y-axis) depicted in **A. C,** Spatial 105 distribution of transcripts for _TOX2_ (left column, pan-ILC3 marker) and _SORCS1_ (right column, 106 NCR[hi] ILC3 marker) within an endometrial tissue section, taken during day 5 of menstruation, 107 stained by the Xenium 5k panel. Bottom two images are a zoom in of the inset indicated by 108 the white square. Dotted line indicates the endometrial-myometrial border. Generated by 10x 109 Genomics Xenium Explorer 4.1.1. **D,** UMAP visualisation manifold of scRNA-seq data of 110 68,198 monocytes, macrophages, and cDC2 from the Human Female Reproductive System 111 Cell Atlas v1. Cell state colours and numbers correspond to those depicted in Figure 3a. **E,** 112 Dot plot showing the log-transformed, min-max normalised expression of selected genes 113 upregulated in LYVE1[hi] macrophages compared to uftLAMs and oLAMs. **F,** Dot plot showing 114 the log-transformed, min-max normalised expression of (top) _CD14_ and _CD16_ ( _FCGR3A_ ), 115 which differentiate classical and non-classical monocytes, and (bottom) lipid metabolism 116 genes that are upregulated in LAMs. **G,** Bar plot displaying the proportion of LYVE1[hi] 117 macrophages, uftLAMs, oLAMs, and inflammatory macrophages within uterine tissues 118 (endometrium, myometrium, menstrual fluid, whole uterus) across menstrual cycle stage 119 (proliferative, secretory, menstrual, postmenopausal). Bar colors correspond to the cell states 120 depicted in **D.** ILC3, type 3 innate lymphoid cell; NK, natural killer; Cyc, cycling; expr, 121 expression; MO, monocyte; Mac, macrophage; uftLAM, uterine and fallopian tube lipid122 associated macrophage; oLAM, ovary lipid-associated macrophage; Inf, inflammatory; cDC, 123 conventional dendritic cell; tolDC, tolerizing dendritic cell. 124
+
+- 126 **Extended Data Fig. 6. Overview of endometrial/endocervical mucinous epithelial cells**
+
+- 127 **in the Human Female Reproductive System Cell Atlas v1. A.** Bar plot showing the number 128 of donors with at least five cells classified as “EndoMucinous” epithelial cells per dataset.
+
+- 129 Numbers above the bars indicate donors passing this threshold, while numbers in parentheses 130 indicate the total number of donors in each dataset. **B.** Batch-corrected Uniform Manifold
+
+- 131 Approximation and Projection (UMAP) embedding of the scRNA-seq dataset of all epithelial 132 cells (n=205,208; "broad_celltype" labels) from the postnatal donors in the Human Female 133 Reproductive System Cell Atlas v1, coloured by organ (matching **Figure 4a** ). **C.** Visualisation
+
+- 134 of haematoxylin and eosin (H&E) histology and the magnified view of the inset (matching 135 **Figure 4D** ) for one endocervical section from donor D72 (reproductive age, proliferative 136 phase) with a magnified view of the endocervical glands (left column); one whole uterine 137 section from donor A30 (reproductive age, secretory phase) with three magnified regions “a138 c” showing _MUC5B_ detection in the basalis, functionalis and lumen, respectively (middle 139 columns); and one whole uterine section from donor A66 (reproductive age, proliferative 140 phase) with one magnified region showing _MUC5B_ detection in the basalis (right column). Epi, 141 epithelial.
+
+143 chr6 (Mb) chr4 (Mb) chr13 (Mb) chr19 (Mb) 144 **Extended Data Fig. 7. Integration of GWAS with the Human Female Reproductive** 145 **System Cell Atlas v1 and leave-one-out gene decomposition analysis. A,** Cell type 146 enrichment of disease heritability in the specifically expressed genes per cell type in the fetal 147 Human Female Reproductive System Cell Atlas v1. The dot plots show enrichment for both 148 uterine and ovary specific traits (x-axis) computed using LDSC, with ovary-specific and uterus149 specific cell types respectively highlighted in pink and blue and non-specific cell types not 150 highlighted. Cell types (y-axis) are grouped by lineages and enrichment is shown in dots where
+
+- 151 the size represents the standardised effect !* – the additive change in heritability explained 152 by a 1 standard deviation increase in the gene expression specificity (CELLEX) annotation – 153 and the colour represents significance q-value as -log10(q), corrected for multiple testing. Bold 154 black circles indicate enrichment at q<0.05 and light black circles indicate enrichment at 155 q<0.10. Data points with !*<0 were set to 0 and corresponding q-values set to 1. **B,** fGSEA
+
+- 156 results from the leave-one-out gene decomposition analysis from the adult HCA enrichment 157 analysis. For each top trait–cell type association per trait, we computed the contribution ΔZ of 158 each gene to the enrichment. Given that Gene Ontology pathways are often redundant and 159 not transferrable to uterine or ovary-specific processes, we highlight specific pathways among 160 the top nominally significant gene sets **(Supplementary Table 4d)** and leading edge genes 161 relevant to known biological processes in the female reproductive system. **C,** Scatter plots of 162 GWAS associations with HMB in genomic windows around _BMP2_ , _KLF10_ , _CCDC117_ 163 _DNAJA1_ , _KLF16_ , _PKIB_ , _SERPINE3_ , _SNCA_ . The x-axis shows genomic coordinates in 164 megabases across the specified chromosome, extended by 100kb windows from either end 165 of each gene body which is highlighted and labelled in blue. The y-axis shows -log10 p-values 166 for association between each SNP and HMB, with genome-wide significance (5e-8) as a red 167 dotted line and suggestive significance (1e-5) as an orange dotted line. DC, dendritic cell; NK, 168 natural killer; ILC, innate lymphoid cell; PCOS, polycystic ovary syndrome; PMOS, 169 polyendocrine metabolic ovarian syndrome; ADHD, attention deficit hyperactivity disorder; 170 HMB, heavy menstrual bleeding; FGT, female genital tract; GOBP, Gene Ontology biological 171 processes; GOCC, Gene Ontology cellular components; GOMF, Gene Ontology molecular 172 function; GWAS, genome-wide association study.
+
+174 175 **Extended Data Fig. 8. Chromatin accessibility atlas cell type annotation. A,** Heatmap of 176 marker gene activity scores in annotated cell types from the Human Female Reproductive 177 System Cell Atlas v1. Gene activity scores were computed using chromatin accessibility in 178 and around each gene body in ArchR. The colour of each square is the row-wise Z-score of
+
+179 gene activity for each given gene (y-axis) in a given cell type (x-axis). Marker genes are 180 grouped by relevant cell type or lineage on the right-hand y-axis. **B,** Heatmap of HCA top 20 181 marker genes gene activity scores in annotated cell types. The Human Female Reproductive 182 System Cell Atlas v1 transcriptomic atlas was regrouped according to the scATAC-seq cell 183 types and top 20 marker genes per cell type computed using a TF-IDF approach. The colour 184 of each square is the row-wise Z-score of gene activity for each given gene (y-axis) in a given 185 cell type (x-axis). The genes are grouped by cell type, where the order of the colour bars 186 corresponding to 20 genes for each cell type is the same as the cell types on the x-axis. **C,** 187 Ovarian mesenchymal cell markers in annotated cell types. Due to the difficulty of 188 characterising ovarian fibroblasts and marker genes distinguishing between ovarian 189 fibroblasts not being specific to ovarian fibroblasts, these markers were not included in **A** . Here 190 we replotted **A** with cell types on the y-axis and genes on the x-axis to show distinction 191 between different annotated ovarian fibroblast cell types consistent with RNA-derived 192 markers. **D,** Proportion of cells from different menstrual stages in donors across the menstrual 193 cycle. Within each group of cell types (Epi_EndoGlandFun – epithelial endometrial glandular 194 functional, Epi_EndoGlandLum – epithelial endometrial glandular luminal, 195 Mesen_EndoStromalFib – mesenchymal endometrial stromal fibroblasts), we show the 196 proportion of cells per donor annotated as different cell states associated with menstrual cycle 197 progression, ordering donors by menstrual cycle day. The two proliferative donors did not have 198 menstrual cycle day information so were randomly added in the middle. Endo, 199 endothelial/endometrial; Mesen, mesenchymal; Epi, epithelial; Meso, mesothelial; cap, 200 capillary; ven, venule; lymph, lymphatic; DC, dendritic cell; Mono, monocyte; Mac, 201 macrophage; Inf, inflammatory; uftLAM, uterine and fallopian tube lipid-associated 202 macrophage; oLAM, ovary lipid-associated macrophage; NK, natural killer; NKT, natural killer 203 T cell; MAIT, mucosal-associated invariant T cell; Perifol, perifollicular; Fib, fibroblast; Inncor, 204 inner cortex; Outcor, outer cortex; Prolif/Prof, proliferative; Sec, secretory; Art, arteries; vSMC, 205 vascular smooth muscle cell; SMC, smooth muscle cell; Adv, adventitial; Intr, interstitial; Lum, 206 luminal; Fun, functionalis; eSec, early secretory; emSec, early/mid secretory; mlSec, mid/late 207 secretory; Cil, ciliated; sq, squamous; OSE, ovarian surface epithelium. 208
+
+209 210 **Extended Data Fig. 9. Peak calling and peak–gene linkage. A,** Summary of peak calling in 211 the chromatin accessibility atlas. Peaks (y-axis) were called iteratively per cell type (x-axis) 212 then overlapped to find consensus peaks (“UnionPeaks” on the x-axis) to avoid losing cell type 213 specific peaks during peak calling. Peaks are classified into distal peaks (>1kb from a gene 214 body), exonic, intronic, or promoter (within 1kb upstream of the transcription start site), 215 differentiated by colour. **B,** Histogram of the number of genes (y-axis) linked to different 216 numbers of peaks (x-axis), showing a right tail of genes associated with many peaks. **C,** 217 Histogram of the number of peaks (y-axis) linked to different numbers of genes (x-axis), 218 showing a much smaller right tail of peaks associated with many genes than **B** . **D,** Relative 219 enrichment of peaks with a gene linked versus unlinked peaks for different ENCODE 220 annotations, considering all peaks (blue) and removing peaks within gene bodies (intergenic 221 peaks in pink). The annotations are promoter-like signatures (PLS), proximal enhancer-like 222 signatures (pELS), distal enhancer-like signatures (dELS), the intersection of ENCODE 223 chromatin accessibility and predicted transcription factor binding sites (CA-TF), the 224 intersection of ENCODE chromatin accessibility and H3K4me3 sites (CA-H3K4me3), the 225 intersection of ENCODE chromatin accessibility and CTCF sites (CA-CTCF), predicted 226 transcription factor binding sites (TF) and ENCODE chromatin accessibility (CA). All 227 enrichments (>0) and depletions (<0) shown were significant after multiple testing, shown with 228 an asterisk. Endo, endothelial/endometrial; Epi, epithelial; Mesen, mesenchymal; Meso,
+
+229 mesothelial; cap, capillary; ven, venule; lymph, lymphatic; Cil, ciliated; Fun, functionalis; 230 emSec, early/mid secretory; eSec, early secretory; mlSec, mid/late secretory; Prof/Prolif, 231 proliferative; Lum, luminal; Sec, secretory; sq, squamous; DC, dendritic cell; Mac, 232 macrophage; uftLAM, uterine and fallopian tube lipid-associated macrophage; oLAM, ovary 233 lipid-associated macrophage; MAIT, mucosal-associated invariant T cell; Mono, monocyte; 234 Inf, inflammatory; NK, natural killer; NKT, natural killer T cell; Adv, adventitial; Fib, fibroblast; 235 Intr, interstitial; Inncor, inner cortex; Outcor, outer cortex; Perifol, perifollicular; Art, arteries; 236 SMC, smooth muscle cell; vSMC, vascular smooth muscle cell; OSE, ovarian surface 237 epithelium. 238

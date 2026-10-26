@@ -1,0 +1,282 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1038/s41467-024-55440-2",
+    "pmcid": "PMC11698969",
+    "license": {
+      "id": "CC-BY-NC-ND-4.0",
+      "redistributable": false,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z",
+      "note": "NonCommercial-NoDerivatives. The store holds chunked and extracted text, which are derivative works, so ND rules them out however NC is read here."
+    }
+  },
+  "files": [
+    {
+      "file_id": "41467_2024_55440_MOESM1_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "702b433413de5f2f3912f6172a0c4b7fe965436f034a753a3cae2b04cec959c3"
+      },
+      "caption": "Supplementary Information",
+      "size_bytes": 12458267,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM2_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Peer Review File",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Peer Review File"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM3_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "6ae1c80a3e70cc129158d41c85e879ae7aa5c6633d88545ed325a40c9d5f0912"
+      },
+      "caption": "Description of Additional Supplementary Files",
+      "size_bytes": 109432,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM3_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM4_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "fbf5c322826bf9414f882c92d9978ef0ba4722068d42af36060c7dbc7349dc90"
+      },
+      "caption": "Supplementary Data 1",
+      "size_bytes": 30447,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM4_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM5_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "9386e150396ae0c0d1226042e72cb7c92adaf086bf61d3ee0868a9ecdabb66e3"
+      },
+      "caption": "Supplementary Data 2",
+      "size_bytes": 37941,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM5_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM6_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "3417e582ae7e6ae8cb09ea088196a0de76ca179a49f4bc01787ada41355cad37"
+      },
+      "caption": "Supplementary Data 3",
+      "size_bytes": 17943,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM6_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM7_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "ef295ccfc6bb367df1c9acb44aac4fd4be4fb4d468199c06e6f19e67a589f61f"
+      },
+      "caption": "Supplementary Data 4",
+      "size_bytes": 257707,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM7_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM8_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "228c521f655ba865278d2898c77114beb134a8bf4c9cf77ca9dba7f2b4854611"
+      },
+      "caption": "Supplementary Data 5",
+      "size_bytes": 19087,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM8_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM9_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "c78f842b1c1b0ffdce398d621ba631f7e49e0ae00a54d9009b9731cfb1ca70fe"
+      },
+      "caption": "Supplementary Data 6",
+      "size_bytes": 19808,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM9_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM10_ESM.csv",
+      "media_type": "csv",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "e3093225cd797bd23526cbfe3153fc3255a73aa8b5e693c5b1eee27bcb1247fc"
+      },
+      "caption": "Supplementary Data 7",
+      "size_bytes": 187839,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM10_ESM.csv",
+      "relevance": "unknown",
+      "relevance_note": "[41467_2024_55440_MOESM10_ESM.csv] columns b ��(��m�l�j�d\t\u0001����f\u001d��-�6v����{�$\u0012$e����\\�\u0001�ppן�=`��\u0016sq\u0011�g)���q�9\u000f�wj\u0017\u001ae�\u0019fҫb�f {�σ/߉ytu/�%��r�!\u0006�w(բ��mſ7j�ɗ�e���ʅ�6�\"\u0016*�v�!i]y�\u0002�+\u0016 matched no signature"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM11_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "9f0d9a5b465ac653838c1e14c74487b32be2de1180099c6c43a6e68dc028b363"
+      },
+      "caption": "Supplementary Data 8",
+      "size_bytes": 269196,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM11_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM12_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "22f2121515dad619b86a1693c3d6aa594ee1f95086fa9fb434c18a8dfc88dc6e"
+      },
+      "caption": "Supplementary Data 9",
+      "size_bytes": 3147830,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM12_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM13_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "1e2c5e380153783b13ac9ee99892cc4eaced8843c056c0a73d940b118ff805cd"
+      },
+      "caption": "Supplementary Data 10",
+      "size_bytes": 38457,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM13_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM14_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "6c5c3b5b85ab232364fee9c85510bcc8038946d146b330be745640c3d6666fda"
+      },
+      "caption": "Supplementary Data 11",
+      "size_bytes": 411253,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM14_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM15_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "eb337c82d335e86481aa746f33f83c34524576babd541f84431861d5c1423b3f"
+      },
+      "caption": "Supplementary Data 12",
+      "size_bytes": 154423,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM15_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM16_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "4db751861bd8189cf262e8de129c3504679d9db1a6580e50f3a3845bbf9b7fb4"
+      },
+      "caption": "Supplementary Data 13",
+      "size_bytes": 33554,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM16_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Abbreviations] columns column/description -> data dictionary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM17_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Reporting Summary",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Reporting Summary"
+    },
+    {
+      "file_id": "41467_2024_55440_MOESM18_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:09:02+00:00",
+        "sha256": "53466eff193ed698d4e90ccb0f31fd31a1f9a3ba7cad1eacd74a66c55f940fbc"
+      },
+      "caption": "Source Data",
+      "size_bytes": 20738130,
+      "path": "papers/10.1038_s41467-024-55440-2/files/41467_2024_55440_MOESM18_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Figure 4] columns cluster/description/fdr adjusted p-value/gene count -> differential expression"
+    }
+  ],
+  "gaps": []
+}

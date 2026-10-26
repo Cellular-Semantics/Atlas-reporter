@@ -1,0 +1,101 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1038/s42003-022-04384-8",
+    "pmcid": "PMC9812973",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "42003_2022_4384_MOESM1_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Peer Review File",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Peer Review File"
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM2_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:27+00:00",
+        "sha256": "fcf55ba18d09356d05aeb21eb00a6ce9cb65cc74ab74ec29e2d464ec92c7f32b"
+      },
+      "caption": "Supplementary Information",
+      "size_bytes": 2332876,
+      "path": "papers/10.1038_s42003-022-04384-8/files/42003_2022_4384_MOESM2_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM3_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:27+00:00",
+        "sha256": "e0765bc6d3472489f1abbcbdaf10e5500bd98454ad20ffca9a8ef99dc812577f"
+      },
+      "caption": "Description of Additional Supplementary Files",
+      "size_bytes": 489473,
+      "path": "papers/10.1038_s42003-022-04384-8/files/42003_2022_4384_MOESM3_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM4_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:27+00:00",
+        "sha256": "71b904800ff05e0bc3055d529141a4f8eed180dd4e1f3d3c43bb1b4de69cbfc3"
+      },
+      "caption": "Supplementary Data 1",
+      "size_bytes": 1390806,
+      "path": "papers/10.1038_s42003-022-04384-8/files/42003_2022_4384_MOESM4_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[AllCells] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM5_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:27+00:00",
+        "sha256": "b336f35fb4cf80b06209091f40acbc755ace884251dd7908f14a3064e5c4a5b7"
+      },
+      "caption": "Supplementary Data 2",
+      "size_bytes": 14674,
+      "path": "papers/10.1038_s42003-022-04384-8/files/42003_2022_4384_MOESM5_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Fig 4d. EdU] columns anpep/cyp17/thmd matched no signature"
+    },
+    {
+      "file_id": "42003_2022_4384_MOESM6_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Reporting Summary",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Reporting Summary"
+    }
+  ],
+  "gaps": []
+}

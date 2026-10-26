@@ -1,0 +1,102 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1038/s41588-021-00972-2",
+    "pmcid": "PMC8648563",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "41588_2021_972_MOESM1_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "publisher_direct",
+        "retrieved_at": "2026-09-06T19:06:35+00:00",
+        "sha256": "d22be42bc6eaf7b631498f6bcf78204b6f40cefdbf5e1f86b98d5590f3d2f9a1",
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-021-00972-2/MediaObjects/41588_2021_972_MOESM1_ESM.pdf"
+      },
+      "label": "Supplementary Information",
+      "caption": "Supplementary Methods, statistics and reproducibility, and supplementary references.",
+      "size_bytes": 478242,
+      "path": "papers/10.1038_s41588-021-00972-2/files/41588_2021_972_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41588_2021_972_MOESM2_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Reporting Summary",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Reporting Summary"
+    },
+    {
+      "file_id": "41588_2021_972_MOESM3_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "publisher_direct",
+        "retrieved_at": "2026-09-06T19:06:36+00:00",
+        "sha256": "1fdb0e0409cc50812d88803a50f7e634ae5a5eb8fea0c3af04b9155781fdc304",
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-021-00972-2/MediaObjects/41588_2021_972_MOESM3_ESM.xlsx"
+      },
+      "caption": "Supplementary Tables. Table 1: Metadata of samples, including biopsies and deceased transplant donors, for scRNA-seq, snRNA-seq and Visium analysis. Table 2: Excel file containing the quality control uterine atlas. Table 3a: Relative contribution of single-cell-derived signals from healthy endometrium in explaining bulk transcriptomes of endometrial cancers (430 endometrioid and 122 serous endometrial). Table 3b: Correlations of SOX9+LRG5+ exposures to clinical TCGA data found within the 313 endometrial adenocarcinomas that have an exposure for either SOX9+LRG5+ or SOX9+LRG5− above the intercept value. Statistical significance of these correlations is reported by a two-sided t-test and by a two-sided Wilcoxon test. Table 3c: Table containing metadata of patients with endometriosis from GSE141549 included in our analysis. Table 4a: Table containing differentially expressed genes in the main epithelial subpopulations detected in the scRNA-seq dataset. Statistical significance of differentially expressed genes is reported with DESeq2 and Wilcoxon, where reported P values correspond to two-sided tests before and after FDR correction. Table 4b: Table containing Dorothea TF activities estimated in the epithelial subpopulations in the scRNA-seq dataset. Each row represents a TF/cluster analysis. Table 4c: TFs predicted to be both differentially active and expressed. Table 5: Table containing differentially expressed genes in the main epithelial clusters detected in the Visium dataset. Reported P values correspond to two-sided tests before and after FDR correction. Table 6a: Differentially expressed genes in the main and epithelial subsets in vivo. Statistical significance of differentially expressed genes is reported with DESeq2 and Wilcoxon, where reported P values correspond to two-sided tests before and after FDR correction. Table 6b–f: Table containing CellPhoneDB interactions (epithelial–epithelial & fibroblasts–epithelial) predicted for the lumenal proliferative, lumenal secretory, functional proliferative, functional secretory and basal microenvironments. Columns represent interaction cell pairs, and rows represent the interactions. Table is binary, with 1 indicating that all the members of the interaction are expressed in at least 10% of cells and at least one member is a differentially expressed gene in any cell type in the pair with a positive log fold change and FDR < 0.001. Table 7: Metadata of samples to derive endometrial organoids. Table 8: Quality control details of the scRNA-seq dataset obtained from organoid cultures, which detail the list of samples obtained with hormone and inhibitor treatments. Table 9a: Number of cells from the organoid populations predicted to correspond to cell type classes learned by a logistic regression model defined using the in vivo epithelial cells as a reference. Table 9b: Corresponding confusion matrix for the proportion of cells predicted in each class. Table 9c: Expected in vivo epithelial class posterior probability for a cell randomly sampled from a cell type cluster defined in the organoid cultures. Table 10a: Table containing differentially expressed genes in the organoid experiment detected by scRNA-seq. Statistical significance of differentially expressed genes is reported with DESeq2 and Wilcoxon, where reported P values correspond to two-sided tests before and after FDR correction. Table 10b: Table containing Dorothea TF activities estimated for the organoid subpopulations. Table 10c,d: Transcription factor comparison between epithelial subpopulations in vivo and organoid experiment for the glandular and ciliated lineages, respectively. Table 11a,b: Table containing the cell counts and corresponding proportions identified as estrogen-induced, preciliated, ciliated or secretory in the organoids on days 2 and 6, in relation to the three genotypes and inhibitor treatments considered targeting NOTCH and WNT. Table 11c: Table containing the fold change for the frequency of a given cell type observed from the influence of an inhibitor treatment. Table 11d,e: The statistical significance of detected changes was reported for all three genotypes independently using the hypergeometric test, and robustness of the detected effects across genotypes was then evaluated using a paired t-test for the three efficiencies reported without inhibitor treatment against the three reported with NOTCH and WNT inhibitors (one-sided tests). Table 12a: Number of cells from the organoid populations, which include organoids treated with NOTCH and WNT inhibitors, predicted to correspond to cell type classes learned by a logistic regression model defined using the in vivo epithelial cells as a reference. Table 12b: Corresponding confusion matrix for the proportion of cells predicted in each class. Table 12c: Expected in vivo epithelial class posterior probability for a cell randomly sampled from a cell type cluster defined in the organoid cultures. Table 13a: Table containing two pairwise differential expression analyses in the organoid experiment with inhibitors: (1) measuring E + P effect in the secretory WNTi population where the Secretory_WNTi population is compared against NH_WNTi and (2) measuring WNTi effect in the secretory lineage where the Secretory_WNTi population is compared against Secretory_Ctrl. Statistical significance of differentially expressed genes is reported with DESeq2 and Wilcoxon, where reported P values correspond to two-sided tests before and after FDR correction. Table 13b: Table containing Dorothea TF activities estimated from DEGs resulting from the Wilcoxon test reported in sheet (13a). Table 14: Components of ExM for culturing human endometrial organoids. Table 15a: New manually curated TF–target interactions. Table 15b: Table containing TF regulons and scores used to quantify TF activities from differentially expressed genes. Table 16: Table containing new curated CellPhoneDB interactions. Table 17: TaqMan probes used for RT–qPCR. Table 18a: List of primary antibodies. Table 18b: List of secondary antibodies. Table 19: Probes used for smFISH.",
+      "size_bytes": 35702391,
+      "path": "papers/10.1038_s41588-021-00972-2/files/41588_2021_972_MOESM3_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Table1] columns 10x kit/age (yo)/cell cycle determination/clinical information -> sample metadata"
+    },
+    {
+      "file_id": "41588_2021_972_MOESM4_ESM.csv",
+      "media_type": "csv",
+      "status": "present",
+      "retrieval": {
+        "route": "publisher_direct",
+        "retrieved_at": "2026-09-06T19:06:36+00:00",
+        "sha256": "0c97f4b3fcb0b3bee013f343fa0505026abc643ba86a68c58c2535da458342b9",
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-021-00972-2/MediaObjects/41588_2021_972_MOESM4_ESM.csv"
+      },
+      "label": "Source Data Fig. 4",
+      "caption": "Statistical source data.",
+      "size_bytes": 25591,
+      "path": "papers/10.1038_s41588-021-00972-2/files/41588_2021_972_MOESM4_ESM.csv",
+      "relevance": "unknown",
+      "relevance_note": "[41588_2021_972_MOESM4_ESM.csv] columns code/cycle stage/file/fullfilename/gland area matched no signature"
+    },
+    {
+      "file_id": "41588_2021_972_MOESM5_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "publisher_direct",
+        "retrieved_at": "2026-09-06T19:06:36+00:00",
+        "sha256": "f5c9c4bf17baeb20d49e04b7dcb9dbf29aa53bc2ebeababa307cf127662e407b",
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-021-00972-2/MediaObjects/41588_2021_972_MOESM5_ESM.xlsx"
+      },
+      "label": "Source Data Extended Data Fig. 9",
+      "caption": "Statistical source data.",
+      "size_bytes": 44427,
+      "path": "papers/10.1038_s41588-021-00972-2/files/41588_2021_972_MOESM5_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[ExDaFig9d_organoid1 ] columns ct/detector/stddev ct/target/timepoint matched no signature"
+    }
+  ],
+  "gaps": [
+    {
+      "file_id": "10.1038/s41588-021-00972-2",
+      "reason": "bundle returned HTTP 500",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}

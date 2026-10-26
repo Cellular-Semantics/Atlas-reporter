@@ -1,0 +1,5 @@
+**Description:** Cell Ranger metrics and gene expression analysis of unsorted ovarian cortex cells.
+
+**Description:** Cell Ranger metrics and gene expression analysis of sorted ovarian cortex cells.
+
+**Description:** Upregulated genes in cultured human ovarian DDX4 Ab+ and DDX4 Ab- cells.

@@ -1,0 +1,244 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1126/sciadv.adm7506",
+    "pmcid": "PMC10997207",
+    "license": {
+      "id": "CC-BY-NC-4.0",
+      "redistributable": false,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z",
+      "note": "NonCommercial. Redistribution is permitted non-commercially, and whether this repository's distribution counts as that is a decision for a person rather than a fact derivable from the licence. Recorded as not redistributable until someone makes it."
+    }
+  },
+  "files": [
+    {
+      "file_id": "sciadv.adm7506_sm.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:41+00:00",
+        "sha256": "e4f6c45aa3699e250726358be1c8a77bbe2f51f7f67926ede88511a66cbbfb9c"
+      },
+      "caption": "Figs. S1 to S6Legends for data S1 to S8References",
+      "size_bytes": 1240591,
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_sm.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "sciadv.adm7506_data_s1_to_s8.zip",
+      "media_type": "zip",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:41+00:00",
+        "sha256": "24f301b03c8c096d602ffc63c501f39986af8a867d633dab308cb8c0691dbeab"
+      },
+      "caption": "Data S1 to S8",
+      "size_bytes": 52376257,
+      "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8.zip",
+      "members": [
+        {
+          "member_path": "adm7506_Data_S1.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 24450,
+          "extracted": true,
+          "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S1.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[Donor 1] columns *yellow denotes sample excluded from analysis/aoi subcategorization/nuclei count/roi # -> abundance per cell type"
+        },
+        {
+          "member_path": "adm7506_Data_S2.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 3594628,
+          "extracted": true,
+          "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S2.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[Donor 1] columns donor 1 cluster 1/donor 1 cluster 2/donor 1 cluster 3/donor 1 cluster 4 -> sample metadata"
+        },
+        {
+          "member_path": "adm7506_Data_S3.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 30528507,
+          "extracted": true,
+          "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S3.xlsx",
+          "relevance": "unknown",
+          "relevance_note": "[Donor 1 ST - DE Genes] columns cd68+_adj.pval/cd68+_fc/cd68+_p.value/cd68+_t.stat/cluster1vs2_adj.pval matched no signature"
+        },
+        {
+          "member_path": "adm7506_Data_S4.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 9893997,
+          "extracted": true,
+          "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S4.xlsx",
+          "relevance": "relevant",
+          "relevance_note": "[Donor 1 LRPath] columns #genes/c1_fdr/c1_or/c1_p-value -> differential expression"
+        },
+        {
+          "member_path": "adm7506_Data_S5.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 816986,
+          "extracted": true,
+          "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S5.xlsx",
+          "relevance": "unknown",
+          "relevance_note": "[Granulosa - 96 Genes] columns 1/2/3/4/gene name matched no signature"
+        },
+        {
+          "member_path": "adm7506_Data_S6.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 5814970,
+          "extracted": true,
+          "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S6.xlsx",
+          "relevance": "unknown",
+          "relevance_note": "[Donor 3] columns endothelial/immune/pericyte/stromal matched no signature"
+        },
+        {
+          "member_path": "adm7506_Data_S7.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 1828260,
+          "extracted": true,
+          "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S7.xlsx",
+          "relevance": "unknown",
+          "relevance_note": "[immu4_mean_detect] columns macrophage/mast/nk/t matched no signature"
+        },
+        {
+          "member_path": "adm7506_Data_S8.xlsx",
+          "media_type": "xlsx",
+          "size_bytes": 48830,
+          "extracted": true,
+          "path": "papers/10.1126_sciadv.adm7506/files/sciadv.adm7506_data_s1_to_s8__unpacked/adm7506_Data_S8.xlsx",
+          "relevance": "unknown",
+          "relevance_note": "[Sheet 1] columns endothelial/macrophage/mast cell/nk cell/pericyte matched no signature"
+        }
+      ],
+      "relevance": "relevant",
+      "relevance_note": "3 of 8 members relevant"
+    }
+  ],
+  "gaps": [],
+  "prose": [
+    {
+      "file_id": "sciadv.adm7506_sm.pdf",
+      "text_file": "papers/10.1126_sciadv.adm7506/text/sciadv.adm7506_sm.txt",
+      "n_chars": 32212,
+      "extractor": "pdf",
+      "evidence": "outline",
+      "sections": [
+        {
+          "heading": "**Cellular atlas of the human ovary using morphologically guided spatial transcr",
+          "char_start": 0,
+          "char_end": 157,
+          "folds_in": false
+        },
+        {
+          "heading": "**The PDF file includes:**",
+          "char_start": 159,
+          "char_end": 210,
+          "folds_in": false
+        },
+        {
+          "heading": "**A**",
+          "char_start": 212,
+          "char_end": 2179,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy",
+            "markers"
+          ]
+        },
+        {
+          "heading": "**Fig. S1. Supplementary donor information and spatial sample projections.**",
+          "char_start": 2181,
+          "char_end": 3052,
+          "folds_in": true,
+          "dimensions": [
+            "location"
+          ]
+        },
+        {
+          "heading": "**Fig. S2. Follicular region images and DAZL sample projections.**",
+          "char_start": 3054,
+          "char_end": 4989,
+          "folds_in": true,
+          "dimensions": [
+            "location",
+            "structure",
+            "markers"
+          ]
+        },
+        {
+          "heading": "**Figure S6. Correlation analysis comparing to prior single cell sequencing stud",
+          "char_start": 4991,
+          "char_end": 7154,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "hierarchy",
+            "function"
+          ]
+        },
+        {
+          "heading": "**Data S1. (separate file)**",
+          "char_start": 7156,
+          "char_end": 7555,
+          "folds_in": false
+        },
+        {
+          "heading": "**Data S2. (separate file)**",
+          "char_start": 7557,
+          "char_end": 7937,
+          "folds_in": false
+        },
+        {
+          "heading": "**Data S3. (separate file)**",
+          "char_start": 7939,
+          "char_end": 8480,
+          "folds_in": false
+        },
+        {
+          "heading": "**Data S4. (separate file)**",
+          "char_start": 8482,
+          "char_end": 9011,
+          "folds_in": false
+        },
+        {
+          "heading": "**Data S5. (separate file)**",
+          "char_start": 9013,
+          "char_end": 9395,
+          "folds_in": false
+        },
+        {
+          "heading": "**Data S6. (separate file)**",
+          "char_start": 9397,
+          "char_end": 9741,
+          "folds_in": false
+        },
+        {
+          "heading": "**Data S7. (separate file)**",
+          "char_start": 9743,
+          "char_end": 10082,
+          "folds_in": false
+        },
+        {
+          "heading": "**Data S8. (separate file)**",
+          "char_start": 10084,
+          "char_end": 10380,
+          "folds_in": false
+        },
+        {
+          "heading": "**REFERENCES AND NOTES**",
+          "char_start": 10382,
+          "char_end": 32212,
+          "folds_in": false
+        }
+      ],
+      "description": "Supplementary material for a spatial transcriptomics atlas of the human ovary. Contains donor information, spatial projections, regional images, and comparative analysis against prior single-cell studies.",
+      "folds_in": true,
+      "folds_in_note": "Outline only — no text shown. Kept sections based on headings suggesting location (spatial projections, follicular anatomy), markers (DAZL gene mention, correlation analysis), and hierarchy (comparison to prior studies). Sections S1 and separate data files omitted from judgment as their content headings are identical or minimal."
+    }
+  ]
+}

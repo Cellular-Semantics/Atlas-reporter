@@ -1,0 +1,263 @@
+https://doi.org/10.1038/s41586-022-04918-4
+
+In the format provided by the authors and unedited
+
+Luz Garcia-Alonso †, Valentina Lorenzi †, Cecilia Icoresi Mazzeo, João Pedro Alves-Lopes, Kenny Roberts, Carmen Sancho-Serra, Justin Engelbert, Magda Marečková, Wolfram H Gruhn, Rachel A Botting, Tong Li, Berta Crespo, Stijn van Dongen, Vladimir Kiselev, Elena Prigmore, Mary Herbert, Ashley Moffett, Alain Chedotal, Omer Bayraktar, Azim Surani, Muzlifah Haniffa, Roser Vento-Tormo*
+
+|**Table of Contents**|| |---|---| |**Supplementary Notes**|**2**| |Supplementary Note 1. Annotation of main cell lineages.|2| |Supplementary Note 2. Cross-species comparison of cell types.|4| |Supplementary Note 3. Characterisation of germ cells.|5| |3.1. Annotation of cell types|5| |3.2. Identification of key transcription factor (TF) regulatory programs|6| |Supplementary Note 4. Annotation of early gonadal somatic cells.|6| |Supplementary Note 5. Annotation of supporting PAX8+ cells (sPAX8s).|9| |Supplementary Note 6. Characterisation of the two waves of human granulosa cells.|10| |6.1. Annotation of sell types|10| |6.2. Human-mouse comparison|11| |6.3. Identification of key TF regulatory programs|11| |6.4. Germ-supporting cellular crosstalk|12| |Supplementary Note 7. Characterisation of testis-specific resident macrophages.|13| |**Supplementary References**|**15**|
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **1**
+
+The sexually undifferentiated gonadal ridge (pregursor of the ovary and testis) emerges from the thickening of the mesothelial layer of the peritoneum (i.e. the coelomic epithelium) of the mesonephros. Around 6 post-conceptional weeks (PCWs), the bipotent gonad adopts either female (default program) or male fate, being the first of the reproductive organs to differentiate. Here, we acquired developing human gonadal (i.e., gonadal ridge, testes and ovaries) and extragonadal tissue (i.e., mesonephros, mesonephric ducts and paramesonephric ducts) in the first and second trimester of gestation (n=55) ranging from 6 post-conceptional weeks (PCWs; Carnegie Stage CS16) to 21 PCWs **(Fig. 1a-b, Supplementary Table 1-3)** . Samples were classified as female (n=33) or male (n=22) based on karyotype and expression of male-specific marker genes (i.e., _SRY, RPS4Y1_ and _DDX3Y_ ).
+
+We analysed these samples using multiple genomics methods: i) single-cell RNA sequencing (scRNA-seq), ii) single-cell accessible chromatin sequencing (scATAC-seq), iii) combined single nuclei RNA and ATAC sequencing (snRNA-seq/scATAC-seq) and iv) spatial transcriptomics (10X Genomics Visium, **Extended Data Fig. 1a-d, 2a-c)** . We also profiled single-cell transcriptomes from murine gonadal and extragonadal tissue around the time of sex determination: embryonic days (E) 10.5, 11.5 and 12.5 **(Extended Data Fig. 1a-d, 2a-c)** . Human gonadal and extragonadal tissues were loaded in the same channel of the 10x Genomics chip. For selected human and mouse samples, we separated gonadal from extragonadal tissue and loaded them in different 10x Genomics channels **(Extended Data Fig. 3a)** .
+
+Human and mouse scRNAseq data from male and female samples were analysed separately using a state-of-the-art pipeline (see method _Downstream scRNA-seq analysis_ ). Mouse scRNA-seq was combined with a publicly available dataset including later gestational stages and postnatal samples (E11.5 to postnatal day (P) 5) to cover equivalent ovarian developmental landmarks such as folliculogenesis. Altogether, after quality control, we recovered 347,709 (human) and 63,929 (mouse) single-cell gene expression profiles that we integrated using scVI to correct for batch effects ( **Fig. 1c, Extended Data Fig. 1a-d, 2a-c** ). We identify sixteen main populations based on their expression of known markers ( **Extended Data Fig. 1d, Supplementary Table 3** ). Germ ( _DAZL+_ ), early supporting ( _GATA4_ +, _WNT6+_ ), pre-granulosa (female-specific supporting cells) ( _WNT6+_ , _FOXL2+_ ) and Sertoli (males-specific supporting cells) ( _WNT6+, SOX9+_ ) are exclusive to the gonads **(Extended Data Fig. 3a)** . Epithelial cells ( _EPCAM+_ ) are only observed in extragonadal tissue, likely from the mesonephric tubules or the mesonephric (i.e., Wolffian) and paramesonephric (i.e., Müllerian) ducts **(Extended Data Fig. 3a)** . Nervous system cells are mostly in samples at CS16-18 (=<7 PCWs). Mesenchymal ( _PDGFRA+_ ), mesothelial ( _UPK3B+,_ including the coelomic epithelium), endothelial ( _PECAM+_ ), perivascular (PV; _ACTA2+_ ), erythroid ( _HBA1+_ ) and immune ( _CD45+_ ) subsets are common to both gonads and extragonadal tissue **(Extended Data Fig. 3a)** . The major cell types identified in our analysis have been described in another single-cell transcriptomic study of human gonads[1] **,** however, the highly granular annotation of somatic cell lineages is only resolved in our dataset
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **2**
+
+(332,862 versus 677 somatic cells analysed in our and Li _et at._ datasets[1] , respectively) **(Extended Data Fig. 1e)** .
+
+The gonadal ridge emerges from the coelomic epithelium on the ventral surface of the mesonephros, forming a continuous with the mesonephros. As the gonad develops, it gradually separates from the mesonephros. To define the full map of somatic cell populations specific to the human gonad, we further characterised and located mesenchymal and mesothelial (i.e., coelomic epithelial) subsets by looking at their markers and mapping the cells in the tissue **(Extended Data Fig. 3a,d)** . Mesenchymal and mesothelial subsets display mutually exclusive expression of the transcription factors _GATA4/LHX9/ARX/NR5A1_ (i.e., gonadal markers) or _GATA2_ **(Extended Data Fig. 3d)** . Using multiplexed smFISH, we find that the expression of _GATA4_ is exclusive to the gonads, including the gonadal coelomic epithelium ( _UPK3B+_ ), while expression of _GATA2_ is restricted to extragonadal tissue at CS17 (~6 PCWs) in humans **(Extended Data Fig. 3c)** . Visium analysis shows that _GATA4/LHX9/ARX_ expression is gonad-specific in later stages (8-12 PCWs), while _GATA2_ expression is restricted to extragonadal tissue **(Extended Data Fig. 3e)** . Accordingly, deconvolution of Visium spots with cell2location locates mesenchymal _GATA4_ + subsets (i.e., gonadal interstitial (Gi), ovarian interstitial (Oi), testis interstitial (Ti) and male Fetal Leydig cells) inside the gonad, while mesenchymal _GATA2+_ cells are outside the gonad **(Extended Data Fig. 3b)** . Separation by microdissection of the gonad from the extragonadal tissue followed by single cell transcriptomics, further confirmed that _Gata4+/Lhx9+/Arx+_ cells are exclusive to the gonadal tissue from E10.5 in mice, while _Gata2+_ is restricted to extragonadal tissue **(Extended Data Fig. 3a)** . This is in line with _GATA4_ expression being required for differentiation of the genital ridge and the initial thickening of the coelomic epithelium of the gonadal primordium, the suggested precursor of the supporting and interstitial/steroidogenic lineages of the gonad[2] . The transcription factor _WT1,_ a classical gonadal marker required in the mouse for the formation of the gonadal ridge, is broadly expressed in extragonadal subsets (e.g., mesenchymal _GATA2+_ and coelomic epithelium _GATA2+_ , **Extended Data Fig. 3d** ) in both human and mouse. _NR5A1_ , another transcription factor key for the establishment of the genital ridge[3] , is downregulated by differentiated ovarian and testicular interstitial cells. Hereafter, we use _GATA4+_ to label mesenchymal and coelomic epithelial cells residing in the gonad.
+
+To gain insights into the chromatin landscape that shapes developing gonadal cells in humans, we profiled 96,174 cells with single-cell open chromatin sequencing (10x scATAC-seq) and 40,742 cells with combined single-nucleus RNA and ATAC sequencing (snRNA-seq/scATAC-seq) ( **Fig. 1c, Extended Data Fig. 2, Supplementary Table 1-2** ). We integrated the ATAC modalities from both technologies in the same manifold for each biological sex, females and males, separately ( **Fig. 1c, Extended Data Fig. 2b,** see Methods _Alignment, quantification, and quality control of ATAC data,_ **Extended Data Fig. 2a** ). Briefly, we first aggregated unimodal and multimodal scATAC-seq reads from all the samples of each sex and called the peaks using our in-house _cellatac_ tool. The resulting male or female matrices were corrected for sample effect using Harmony. Finally, we transferred cell annotation labels from scRNA-seq to scATAC-seq[4] from matched individuals ( **Extended Data Fig. 2c** ). To validate the transferred cell identity, we manually annotated snRNA-seq cell barcodes from the multimodal snRNA-seq/snATAC-seq using bona fide markers and visualised the annotation on the ATAC manifold ( **Extended Data Fig. 2d** ). This
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **3**
+
+approach enabled us to align the two omics modalities and identify the same cell states defined by the scRNAseq analysis ( **Fig. 1c)** .
+
+We compared the transcriptional signatures of the main cell types identified in humans to those of their murine counterparts considering all developmental stages combined ( **Extended Data Fig. 1f** ). We trained a Support Vector Machine (SVM) classifier on human scRNA-seq dataset and projected the cell type annotations onto the mouse scRNA-seq datasets. Predicted annotations based on the classifier were compared to “ground truth” annotations assigned to cells in the mouse datasets manually using marker genes. The details of our workflow are specified below:
+
+- (i) Gene ID harmonisation and filtering: Mouse gene identifiers were converted to human genes using ENSEMBL Biomart multi-species comparison filter. Genes with multiple mappings were discarded. Additionally, genes associated with the cell cycle were removed to avoid biases.
+
+- (ii) Human training data: Human cell types were downsampled to the cell type with the lowest number of cells to obtain a balanced dataset. 75% of the data were used for training the model and 25% of the data were used to test the model. Raw counts were normalised and log-transformed. The 300 most highly variable genes were selected as features for model training.
+
+- (iii) Model training with the human dataset: We then trained an SVM classifier (sklearn.svm.SVC) on the human training data with 5-fold cross validation. We evaluated the performance of the model on the human test data by reporting the precision, recall and F1-score per cell type label.
+
+- (iv) Model predictions on the mouse dataset: The trained model was then used to project the human cell type labels onto the mouse datasets, after gene ID harmonisation. We obtained a predicted probability value that each cell in the mouse datasets corresponds to every given human cell type annotation. The estimated probabilities between human-mouse matching cell types were calculated and used as a similarity score. The probabilities were visualised with boxplots, where the y-axis represents the predicted probabilities of the SVM model, and the x-axis the cell types. As an example, in the human-mouse boxplot for endothelial, for each cell that was annotated as endothelial in mouse we show the probability of that cell being called endothelial by the SVM model trained on human data.
+
+When comparing the main cell lineages ( **Extended Data Fig. 1f** ) between human and mouse, our results show great transcriptional similarity for the majority of cell lineages. Notable exceptions include the early supporting and gonadal mesenchymal lineages in both sexes, as well as pre-granulosa cells in females (median prediction probability < 0.4). To verify the robustness of our results, we repeated the analyses by restricting the time windows to: (i) time around sex determination: 6-7 PCWs in humans, E11.5 in mice; and (ii) following sex differentiation in testis and gonads: 8-14 PCWs in humans, E12.5 in mice. For the sex-determination time window, we considered males and females together, while for the later time window we performed the label transfer separately for ovaries and testes. Somatic gonadal cells consistently display the lowest predicted probability, regardless of the
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **4**
+
+considered developmental time window, indicating that the divergence in the transcriptomic profile between human and mouse is maintained at all stages.
+
+During fetal development, primordial germ cells (PGCs) differentiate into pre-spermatogonia in testis or oogonia and oocytes in ovaries. Pre-spermatogonia are arrested in mitosis while oogonia enter meiosis asynchronously. After synapsis and recombination of homologous chromosomes, oogonia are arrested at the diplotene stage of the first meiotic prophase. At the oogonia-oocyte transition, these upregulate the TF _FIGLA_ to induce granulosa cells to surround the oocyte and form primordial follicles, which will remain mostly quiescent until reproductive age.
+
+To comprehensively characterise the process of germ cell differentiation in humans, we re-analysed the transcriptomic profile of the germ cells ( **Extended Data Fig. 4a-b** ). To annotate the resulting germ cell clusters, we combined: (i) the expression of known markers ( **Extended Data Fig. 4c** ) (ii) the real developmental time at which these cells appear ( **Extended Data Fig. 4a,d** ) (iii) pseudotime trajectory ( **Extended Data Fig. 4e** ), and (iv) co-expression from imaging RNAscope ( **Extended Data Fig. 5f-g** ). Our analysis resolved five major germ cell states:
+
+1. PGCs: PGCs express _NANOS3_ and pluripotency markers ( _POU5F1+, NANOG+_ ). They are found at all stages of development, but their proportion decreases with fetal age, representing 100% of total germ cells at 6-7 PCWs and dropping to 12% and 40% at 18-21 PCWs in human ovaries and testis, respectively. In human fetal ovaries, PGCs are enriched in the outer cortex at least until 19 PCWs (the latest stage analysed by Visium).
+
+2. Fetal Germ Cells (FGCs): FGCs downregulate pluripotency genes ( _NANOG-)_ and upregulate canonical germ cell markers ( _DDX4+, DAZL+_ ). Trajectory analysis places this population between PGCs and oogonia (females) or pre-spermatogonia (males).
+
+3. Oogonia, including pre-meiotic ( _DAZL+/STRA8+_ ; 3a) and those initiating meiosis ( _DAZL+/SYCP1+_ ; 3b). Oogonia are ovary-specific, emerge around 11 PCWs and account for 50% of the germ cells until 21 PCWs in humans. Trajectory and spatial analyses place this population between FGC and oocytes.
+
+4. Pre-oocytes ( _FIGLA+_ ; 4a) and primary oocytes ( _FIGLA+/GDF9+_ ; 4b). Pre-oocytes are apparent by 14 PCWs, while primary oocytes emerge around 16 PCWs. These subsets increase in frequency as the ovary develops, accounting for 30% of germ cells in 18-21 PCWs in humans. Trajectory analysis places this population as the terminal state of the female germ cell differentiation in the studied developmental window. Spatial analysis locates oocytes in the inner cortex of developing human ovaries.
+
+5. Pre-spermatogonia ( _PIWIL4_ +): Pre-spermatogonia appear in the human developing testis around 11 PCWs and increase to nearly 60% by 18-21 PCWs. Trajectory
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **5**
+
+analysis places this population as the terminal state of the male germ cell differentiation in the studied developmental window.
+
+Next, we set to identify the TFs regulating germ cell development in humans. For this purpose, we reanalysed the scATAC-seq data of the human germ cells ( **Extended Data Fig. 5a** ) and transferred cell annotation labels from scRNA-seq to scATAC-seq[4] in matching individuals ( **Extended Data Fig. 5b** ). To validate the transferred cell identities, we annotated snRNA-seq cell barcodes from the multimodal snRNA-seq/snATAC-seq data using the markers described before, and visualised the annotations on the ATAC manifold ( **Extended Data Fig. 5c** ). This approach enabled us to align the two omic modalities and resolve the same states identified in our transcriptomics analysis ( **Extended Data Fig. 4a** ).
+
+The aligned multimodal scRNA-seq/scATAC-seq germ cell atlas offers a unique opportunity to investigate the TFs mediating the differentiation from PGCs into either pre-spermatogonia in males or oogonia in females. Here, we combined TF expression and activity measurements, the latter estimated from (i) the expression of consensus targets; and/or (ii) the chromatin accessibility of their binding sites (see Methods _Transcription Factor analysis_ ). We prioritised those TF that were differentially expressed and activated in each human germ cell state ( **Extended Data Fig. 5e** ).
+
+To study the expression pattern of these TF during PGC differentiation in other mammals, we integrated our human and mouse transcriptomic atlas with scRNA-seq data from mouse testicular and ovarian[5,6] and macaque ovarian[7] germ cells covering analogous developmental stages ( **Extended Data Fig. 4a** ). We resolved the same cell states in all species using canonical markers ( **Extended Data Fig. 4c** ). To compare the expression dynamics of the prioritised TFs among humans, macaques and mice we used differential expression analysis (i.e., Wilcoxon Rank Sum test) and retrieved the significantly overexpressed TFs in each germ cell state (log2-fold change > 0 and FDR < 0.05) across species. TFs with conserved expression dynamics (i.e. upregulated by the same germ cell state in all species) are highlighted with bold-coloured labels in **Extended Data Fig. 5e** .
+
+Overall, our multiomics analysis of germ cell differentiation builds on previous work profiling the transcriptome of human germ cells[8–10] , and reveals novel TFs involved in germ cell differentiation ( **Extended Data Fig. 5e** ). Our cross-species comparison highlights a conserved TF network in primates with some differences from their murine counterparts, in agreement with previous murine-human comparisons of primordial germ cells[8] and spermatogonia[11] . We define novel TFs in humans at the meiotic stage, including _ZIC1_ (involved in retinoic acid production), _DMRTB1_ and HOX factors ( _HOXA1_ , _HOXD8_ ). A role for HOX factors in oocyte maturation has been postulated previously[12,13] , but their potential activity in oogenesis is unexplored. Our work also reinforces the relevance of development in postnatal diseases. For example, our analysis highlights the conserved activation of _TP63_ in oocytes, a gene associated with ovarian insufficiency[14] and, more recently, with ovarian ageing[15] .
+
+Supplementary Note 4. Annotation of early gonadal somatic cells.
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **6**
+
+Sex determination starts with the expression of _SRY_ , the Y-linked testis sex-determining TF[16] , in the somatic cells arising from the coelomic epithelium of the bipotential gonadal ridge. Expression of _SRY_ in the somatic lineage leads to the specification of the supporting Sertoli cells around 6 PCWs in humans[17] . In the absence of _SRY_ expression, somatic cells differentiate into supporting pre-granulosa (preGC) cells _via_ RSPO1/WNT4-β-catenin signalling[18,19] . In humans, the bipotent somatic cells giving rise to the first wave of male and female supporting cells have not yet been defined.
+
+To resolve the cellular heterogeneity of the gonadal somatic compartment, we reanalysed the transcriptomic profile of the mesothelial (i.e. coelomic epithelium and OSE), supporting (including early supporting, Sertoli and pre-granulosa), and _GATA4+_ mesenchymal cells along all stages in humans and mice ( **Fig. 2a-b, Extended Data Fig. 6a** ). Additionally, to further resolve the annotation at the time of sex differentiation, we reanalysed these three somatic populations from samples between 6-8 PCWs. We inferred the ontogeny of gonadal somatic cells by combining multiple layers of information: (i) expression of known marker genes and distinctly expressed genes ( **Fig. 2b** ) (ii) developmental time at which these cells appear ( **Fig. 2d** ), (iii) pseudotime trajectory inferred by scRNA-seq data ( **Fig. 2c, Extended Data Fig. 6b-c** ), and (iv) co-expression of markers using multiplexed smFISH ( **Extended Data Fig. 6i** ). Altogether, we resolved the following cell states at the time of sex determination.
+
+- - Early somatic cells appear in both XX and XY gonads and are detected in our scRNA-seq dataset as early as 6 PCWs ( **Fig. 2d** ). Early somatic cells downregulate general mesothelial markers ( _UPK3B-, LRRN4-_ ) but maintain the expression of the TFs characteristic of all the gonadal populations, sharing TFs with the gonadal coelomic epithelium ( _GATA4+, LHX9+, NR5A1+_ ) and the gonadal interstitial lineage ( _ARX+, TCF21+_ ), and upregulate markers characteristic of the supporting lineage ( _WNT6+_ , **Fig. 2b** ). In human samples at 7 PCWs, trajectory analysis places this population as an intermediate state emerging from the coelomic epithelium _GATA4_ +, and connecting more differentiated supporting and interstitial cells ( **Fig. 2c, Extended Data Fig. 6a** ). We do not observe this population in mice gonads at the stages profiled.
+
+- Gonadal interstitial (Gi) cells appear in both XX and XY gonads and are present in our scRNA-seq dataset as early as 6 PCWs. Gi are the first mesenchymal _GATA4+_ cells to emerge, and express _COL1A1, DCN and PDGFRA,_ as well as TFs characteristic of the gonadal coelomic epithelium ( _GATA4+, LHX9+, NR5A1+, ARX+, TCF21+_ ). Gi are distinct from the coelomic epithelium in that they do not express mesothelial markers ( _UPK3B-, LRRN4-_ , **Fig. 2d** ). Trajectory analysis connects Gi with the “early somatic” population in humans and the coelomic epithelium in mice ( **Fig. 2c, Extended Data Fig. 6b-c** ). Gi proportions decrease around 9 PCWs, when interstitial cells that are ovarian-specific (i.e., ovarian interstitial (Oi)) or testis-specific (i.e., testicular interstitial (Ti) and Fetal Leydig) emerge ( **Fig. 2d; Extended Data Fig. 3b,d** ), suggesting that sexually undifferentiated Gi acquire different states in XX and XY gonads after sex determination.
+
+- Early Supporting Gonadal Cells (ESGCs) appear in both XX and XY gonads. ESGCs are detected from 6 PCWs in humans and E11.5 in mice, and upregulate the supporting marker _WNT6_ as well as _DMRT1, CPA2_ and _GPR37_ ( **Fig. 2b** ). Human ESGCs upregulate the known stem-cell markers _LGR5_ , _TSPAN8 and CXCR4_ ( **Fig. 2e** ) _._ Although mouse ESGCs display basal _Lgr5_ expression ( **Extended Data Fig.**
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **7**
+
+**6h** ), _Lgr5_ and _Tspan8_ are instead upregulated at later stages by the murine ovarian surface epithelium ( **Extended Data Fig. 8f** ), which is a trend we do not observe in humans ( **Fig. 4a** ). Thus, LGR5/TSPAN8 mark different populations in humans and mice.
+
+Trajectory inference (human and mice; **Fig. 2c, Extended Data Fig. 6b-c** ) and smFISH imaging of key makers (human; **Extended Data Fig. 6i** ) are consistent with ESGCs being the progenitors of Sertoli and the first wave of pre-granulosa cells.
+
+- In the testis, ESGCs are detected around 6-7 PCWs and E11.5 in humans and mice, respectively. XY ESGCs are the first population expressing _SRY_ in both species, in agreement with being the progenitors of Sertoli cells. We validated the presence of human ESGCs at 6-7 PCWs in an independent XY gonadal dataset[2021] ( **Extended Data Fig. 6d-f** ). The fact that ESGCs are present in males for a shorter time than in females agrees with previous experiments demonstrating a finite time window for _SRY_ activation[22] and switching from ovarian (default) to testis program.
+
+- In the ovaries, ESGCs are detected up to 8 PCWs and E12.5 in humans and mice, respectively. At those stages, female ESGCs upregulate _FOXL2_ , a canonical marker of pre-granulosa cells, and genes of the RSPO1/WNT4-β-catenin pathway ( _WNT4+, RSPO1+, AXIN2+,_ **Extended Data Fig. 6g** ), characteristic of the first wave of pre-granulosa cells in mice. This is in agreement with ESGCs maturing into pre-granulosa cells. In humans, ovarian ESGCs also upregulate the transcription factor _OSR1+_ , characteristic of the first wave of pre-granulosa cells (preGC-I, **Fig. 2e, Extended Data Fig. 6h** ).
+
+- Supporting-like PAX8+ cells (sPAX8s) are _PAX8+/EPCAM[low]_ cells that express TFs characteristic of the gonadal coelomic epithelium ( _GATA4+, LHX9+, NR5A1+_ ) and the supporting lineage ( _WNT6+_ ), but downregulate interstitial lineage markers ( _ARX+, TCF21+_ , **Fig. 2b, Supplementary Note 5** ). sPAX8 are present in our scRNA-seq dataset as early as 6 PCWs ( **Fig. 2d** ). Spatial transcriptomics with Visium and smFISH imaging locate this population in the gonads close to the mesonephric interface ( **Fig. 2c, Fig. 3a-c, Extended Data Fig. 7a,f-g** ).
+
+Taken together, our analyses align with the hypothesis that _GATA4+_ coelomic epithelium gives rise to three main somatic cell lineages: (i) supporting (ESGC, differentiating into Sertoli or preGC-I), (ii) interstitial (Gi, differentiating into Oi or Ti) and, (iii) the previously uncharacterised sPAX8s . Sex determination occurs in ESGCs, which gives rise to the first wave of sex-specific supporting cells in both human and mouse gonads. The table below summarises the distinctive features used to annotate the somatic cells at the time of sex determination, with changing genes highlighted in bold.
+
+|**Gonadal**<br>**Somatic**<br>**Population**|**Markers and**<br>**dynamics of gene**<br>**expression**|**Developmental**<br>**stages***|**Location**<br>(human)|**Trajectory pseudotime**<br>**analysis**<br>at 7 PCWs (human) /<br>E11.5 (mouse)| |---|---|---|---|---| |Coelomic<br>epithelium<br>GATA4+|_GATA4+, LHX9+,_<br>_NR5A1+,_**_ARX+, TCF21+,_**<br>**_UPK3B+, LRRN4+_**|HUMAN: 6-9 PCWs<br>MOUSE: E10.5-14.5|Gonadal surface<br>(Figure 1d)|Initial state|
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **8**
+
+|Early somatic|_GATA4+, LHX9+,_<br>_NR5A1+,_**_ARX+, TCF21+,_**<br>**_WNT6+_**|HUMAN: 6-7 PCWs<br>MOUSE: not found in<br>the analysed stages||Intermediate state.<br>Differentiates from the<br>_GATA4+_Coelomic<br>Epithelium| |---|---|---|---|---| |Gonadal interstitial<br>(Gi)|_GATA4+, LHX9+,_<br>_NR5A1+,_**_ARX+, TCF21+_**<br>**_COLA1A+_**|HUMAN: 6-8 PCWs<br>MOUSE: E10.5-11.5||Intermediate state.<br>Differentiates from<br>Coelomic Epithelium<br>GATA4+ or early somatic<br>(human).| |Early sPAX8s|_GATA4+, LHX9+,_<br>_NR5A1+,_**_WNT6+, PAX8+_**|HUMAN: 6-8 PCWs<br>MOUSE: E11.5-|Gonads, at the<br>interface with the<br>mesonephros<br>(Figure 4a)|Intermediate state.<br>Differentiates from<br>Coelomic Epithelium<br>GATA4+ or ESGCs.| |Early Supporting<br>Gonadal Cells<br>(ESGCs)|_GATA4+, LHX9+,_<br>_NR5A1+,_**_WNT6+,_**<br>**_DMRT1+, CPA2+,_**<br>**_GPR37+_**<br>_-_XY gonads_:_**_SRY+_**<br>**_-_**XX gonads_:_**_FOXL2+_**<br>_- Human gonads:_ **_LGR5+,_**<br>**_TSPAN8+_**|HUMAN:<br>XY gonads: 6-7<br>PCWs<br>XX gonads: 6-8<br>PCWs<br>MOUSE:<br>XY gonads: E11.5<br>XX gonads:<br>E11.5-12.5|Gonadal medulla<br>(Figure 3g-h)|Intermediate state.<br>Differentiates from early<br>somatic (human) or<br>coelomic epithelium<br>(mouse).<br>Differentiates into Sertoli<br>(XY) or preGC-I (XX).|
+
+_(*) Note 6 PCWs is the earliest time point included in the human study; while E10.5 is the earliest in the mouse study._
+
+We define novel gonadal sPAX8s cells clustering with the supporting lineage ( **Supplementary Note 4** ). sPAX8s distinctively express _PAX8,_ which is a characteristic marker of the epithelial cells from the developing reproductive ducts (i.e., Wolffian and Müllerian ducts; **Fig. 2a-b** ). Joint analyses of gonadal (including sPAX8s) and extragonadal epithelial cells (i.e., reproductive duct precursors and mesonephric kidney) reveal independent clustering ( **Extended Data Fig. 7b-c** ), indicating that they are two independent cellular identities. Accordingly, sPAX8s express low levels of epithelial markers ( _EPCAM_[low] , _KRT19_[low] ) and do not express mesonephric duct markers ( _PAX2-_ , **Extended Data Fig. 7c** ). Instead, sPAX8s share multiple markers with the gonadal supporting population ( _GATA4+, LHX9+, NR5A1+, WNT6_ +), which are not expressed by the epithelial cells from the reproductive ducts or the mesonephric kidney ( **Extended Data Fig. 7c** ) Thus, sPAX8s is a population distinct from the epithelial cells of the reproductive ducts and mesonephros, and it is found in both humans and mice.
+
+We used spatial transcriptomics (Visium) and multiplexed smFISH to trace sPAX8s population in different developmental stages. Early sPAX8s ( _PAX8+/EPCAM[low]_ ) around ~ 7 PCWs (CS19-CS20) form a gradient of expression in the gonads, with higher concentration at the gonadal-mesonephros interface and lower concentration in the cortex ( **Fig. 3a; Extended Data Fig. 7d** ). Late sPAX8s ( _PAX8+/EPCAM[low]_ ) appear at ~8 PCWs in males ( **Fig. 2d)** , and, in the testis, are in contact with the Sertoli cells at the poles of the developing
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **9**
+
+testis cords ( **Fig. 3b** zoomed-in gonadal section **, Fig. 3c, Extended Data Fig. 7f** ). This is different from the location of the epithelial cells (PAX8+/EPCAM[high] ) in the developing Wolffian ducts outside the gonad ( **Fig. 3b** ; whole gonadal section, **Fig. 3c** ). Epithelial cells of the Wolffian ducts are outside the gonad and do not establish contact with the developing testis cords. After 8 PCWs in humans, this population is residual in females ( **Extended Data Fig. 7g** ). This result is in keeping with the presence of a rudimentary _rete ovarii_ at this location early in development; this degenerates at later stages[23] .
+
+Supplementary Note 6. Characterisation of the two waves of human granulosa cells.
+
+To annotate the supporting pre-granulosa cell states in humans we considered: (i) the expression of _bona fide_ marker genes ( **Fig. 4a** ), (ii) the developmental time at which these cells appear ( **Fig. 2d** ), and (iii) their spatial coordinates, as inferred by integrating single-cell transcriptomics with Spatial Transcriptomics (Visium) ( **Fig. 4b** ).
+
+- Pre-granulosa cells of the 1st wave (preGC-I) are the first ovarian-specific supporting cells that emerge around early 8 PCWs ( **Fig. 2d** ). They are transcriptionally similar to the bipotent ESGCs but upregulate the canonical marker of pre-granulosa cells ( _FOXL2+_ ). preGC-I also expresses _WNT4_ and _RSPO1_ , both genes upstream regulators of the RSPO1/WNT4-β-catenin pathway, and the downstream canonical WNT target _AXIN2_ ( **Fig. 4a** ). Human preGC-I are steroidogenic, as shown by the upregulation of enzymes involved in estrogen biosynthesis, ( _HSD17B6+_ , _CYP19A1+)_ , and the TF _OSR1+_ ( **Fig. 4a** ). Spatial transcriptomics analysis in human ovaries between 11 and 19 PCWs shows that preGC-I become restricted to the ovarian medulla as the ovary differentiates ( **Fig. 4b** ). This is a likely consequence of the novel 2nd wave of pre-granulosa cells proliferating in the cortex, spatially constraining preGC-I to the medulla.
+
+- Ovarian Surface Epithelium (OSE), is a mesothelial population ( _UPK3B+_ ) specific to the developing ovaries that expresses _IRX3_ . In humans, OSE is present from late 8 PCWs, when the number of the gonadal coelomic epithelium _GATA4+_ cells decline ( **Fig. 2d** ). Spatial transcriptomics analysis maps OSE cells to the outer cortex of the ovaries. OSE displays different markers between human and mouse ( **Fig. 4b** ). Human OSE distinctively upregulates, among others, the transcription factor _LHX2_ , proposed as a marker of OSE in humans[24] ( **Fig. 4a** ). In contrast, mouse OSE lacks _Lhx2_ expression but upregulates the stem cell markers _Lgr5_ and _Tspan8_ ( **Extended Data Fig. 8f** ), both characteristic of human ESGCs instead ( **Fig. 4a** ).
+
+- Pre-granulosa cells of the 2nd wave (preGC-II). Emerging with the establishment of the OSE, we define two subsets of preGC-IIa/b that share expression of _LHX2_ with OSE, but downregulate _RSPO1/WNT4_ genes.
+
+- PreGC-IIa co-appear with OSE at mid 8 PCWs ( **Fig. 2d** ). They express the retinoic acid inhibitor _CYP26B1_ (meiosis inhibitor) and low levels of the
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **10**
+
+granulosa marker _FOXL2_ ( **Fig. 4a, Extended Data Fig. 8f** ). Spatial transcriptomics analysis co-localises preGC-IIa with OSE cells in the outer cortex of the ovaries ( **Fig. 4b** ).
+
+- PreGC-IIb appear around 11 PCWs ( **Fig. 2d** ). This subset is transcriptomically similar to preGC-IIa, but expresses the oogenesis activation marker _BMP2_ and higher levels of _FOXL2_ ( **Fig. 4a, Extended Data Fig. 8f** ). Spatial transcriptomics analysis localises preGC-IIb in the inner cortex, between cortical preGC-IIa and medullary preGC-I ( **Fig. 4b** ).
+
+- Developing or follicular granulosa cells upregulate retinol dehydrogenase (RDH10), the NOTCH receptors ( _NOTCH2+_ and _NOTCH3+_ ) and their downstream folliculogenesis effectors ( _HES1+, HEY1+, HEY2+, HEYL+ and HES4+_ ), and additional receptors whose cognate ligands are specifically expressed by primary oocytes ( **Fig. 4a,d** ). Developing granulosa cells co-appear in the inner cortex with primary oocytes ( **Fig. 4b, Extended Data Fig. 5f-g** ) around 17 PCWs ( **Fig. 2d, Extended Data Fig. 4d** ).
+
+Transcriptional similarity, pseudotime analysis and the spatio-temporal co-appearance (i.e., at 8 PCWs in the ovarian medulla) strongly support that the first wave of granulosa cells (preGC-I) in humans originates from ESGCs upregulating RSPO1/WNT4-β-catenin pathway. After sex determination, in developing ovaries, the coelomic epithelium _GATA4_ + activates a set of TFs (including _LHX2_ ) and differentiates into OSE. OSE initiates a 2nd wave of _LHX2+_ cortical granulosa cells (preGC-II) independent of RSPO1/WNT4-β-catenin, likely restricting preGC-I to the ovarian medulla. In keeping with OSE as the progenitor of 2nd wave of pre-granulosa cells, OSE has a higher proportion of cycling cells (i.e., at S or G2/M stages) than preGC-II (27% versus 3%).
+
+The spatiotemporal dynamics of human preGC agrees with the two waves of pre-granulosa cells described in mice[6,25] . Yet the markers defining these populations are distinct between species ( **Fig. 4a, Extended Data Fig. 8f** ). Using the cross-species comparison workflow described in **Supplementary Note 2** , we compared the transcriptomic profiles of human female supporting cells to their murine counterparts ( **Extended Data Fig. 8a** ). We computed the predicted probabilities of the label transfer from human to mouse ovaries around the time of the second wave of preGC cells (8-16 PCWs human, E12.5-E16.5 mouse) and around the time of folliculogenesis (17-21 PCWs human, E18.5-P5 mouse). Coelomic epithelium _GATA4+_ is consistently predicted with high probability across species. On the other hand, ESGCs, preGC-I, OSE and granulosa are consistently poorly predicted across species (median predicted probability < 0.4), suggesting a divergent transcriptomic profile at all developmental stages.
+
+We used the same approach as described in **Supplementary Note 3.2** to prioritise the TFs relevant for granulosa-cell differentiation. First, we reanalysed the human scATAC-seq data of the supporting lineage and resolved the same cell states identified in our human scRNA-seq analysis ( **Fig. 2a, Extended Data Fig. 8b-c** ). Second, we used the aligned
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **11**
+
+multimodal scRNA-seq/scATAC-seq human data to estimate expression and activity of the TFs on each supporting cell state ( **Extended Data Fig. 8d** ). Third, we combined the expression and activity measurements to prioritise those TF that were differentially expressed and active along the different granulosa states ( **Fig. 4c** ).
+
+To investigate the conservation in the dynamics of these TF during 1st and 2nd wave of granulosa, we integrated our atlas with mouse and macaque ovarian scRNAseq datasets covering analogous developmental stages ( **Fig. 2a, Extended Data Fig. 8e-f** ). We resolved the same cell states in all species using canonical markers and developmental stage information, and compared the expression dynamics of the prioritised TF between humans, macaques and mice. Significantly overexpressed TFs in each granulosa state (log2-fold change > 0 and FDR < 0.05) were estimated with differential expression analysis (i.e., Wilcoxon Rank Sum test). TFs with conserved expression dynamics are highlighted with bold-coloured labels in **Fig. 4c** .
+
+In developing ovaries, there is a spatiotemporal gradient of co-differentiating granulosa ( **Fig. 4b** ) and germ cells ( **Extended Data Fig. 5f-g** ). To investigate the communication between granulosa and germ cells in the different human ovarian microenvironments (i.e., outer cortex, inner cortex, medullary region and follicles), we updated CellPhoneDB to v4 ( **Extended Data Fig. 8g** ). This updated version of CellPhoneDB doubles the number of manually curated interactions, and includes interactions mediated by small molecules, such as steroid hormones. In addition, we developed CellSign, a novel extension of the database that links receptors with their downstream TFs, as assessed by manual curation (see _Methods CellPhoneDB and CellSign_ ). TFs are used as sensors of ligand-receptor binding, allowing us to prioritise functional cell–cell interactions that affect downstream signalling.
+
+- In the outer cortex microenvironment, PGC co-locate with coelomic epithelium or the OSE and preGC-IIa **(Extended Data Fig. 5f-g, Fig. 4b)** . These cortical supporting cells are a major source of paracrine factors required for the chemotaxis and survival of PGC, including _BMP4_ (coelomic epithelium) and _KITLG_ (preGC-IIa), with _STAT3_ downstream of _KIT_ active in PGC ( **Fig. 4d, Extended Data Fig. 8h** ). There is also a unique composition of extracellular matrix (ECM) proteins that potentially mediates adhesion of PGC to supporting cells in the outer cortex **(Extended Data Fig. 8i)** . PGCs specifically express collagen IV ( _COL4A1/COL4A2_ ), which is replaced by collagens VI when oogonia become responsive to retinoic acid.
+
+- In the inner cortex and medullary microenvironments, preGC-IIb and preGC-I support oogonia differentiation **(Extended Data Fig. 8k-l, Fig. 4b)** . PreGC-I upregulate enzymes involved in estrogen production, _HSD17B6_ and _CYP19A1_ , suggesting that they may be capable of producing estrogen locally for oogonia _STRA8+_ , which overexpress the estrogen receptor _ESR1_ **(Fig. 4d)** . preGC-IIb express the enzyme _ALDH1A1_ involved in retinoic acid synthesis, whose product may potentially bind to their receptor ( _RARA)_ and transporter ( _CRABP2)_ , both of them expressed by oogonia _STRA8+_ **(Fig. 4d).** Accordingly, with CellSign we detect upregulation of _RARA_ transcriptional activity in oogonia _STRA8+_ ( **Extended Data Fig. 8h** ). PreGC-IIb and developing granulosa cells also overexpress _BMP2_ , recently shown in mice to activate the oogenesis factor _ZGLP1[26]_ , which we predict to be
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **12**
+
+active in oogonia _STRA8+_ **(Fig. 4d, Extended Data Fig. 8h)** . Novel interactions involve the parathyroid hormone ligand ( _PTHLH_ ) and its receptor ( _PTH1R)_ , overexpressed by preGC-IIb and oogonia, respectively, and associated with BMP-2 signalling[27,28] ( **Fig. 4d).**
+
+- After 17 PCWs in the inner cortex, primary oocytes are enclosed by flattened granulosa cells to form primordial follicles ( **Fig. 4b)** , following bidirectional crosstalk. Germ cells generate a gradient of folliculogenesis factors: PGCs express the Notch inhibitor _DLK1_ , while oocytes express Notch activator _JAG1_ as well as _GDF9_ , _TGFɑ_ ( **Fig. 4d)** . Accordingly, with CellSign we detect upregulation of the Notch signalling targets ( _HES1+, HEY1+, HEY2+ and HES4+,_ **Fig. 4c** ). Additional signals from oocytes to supporting cells in follicles include the histamine- _HRH1_ and neuregulin- _ERBB4_ receptors ( **Fig. 4d)** . We uncover novel granulosa to oocyte interactions candidates to mediate successful follicular assembly, such as the Netrin-1 ( _NTN1_ ) and its receptor _DCC_ ( **Fig. 4d** ), that may regulate axon guidance, cell migration and apoptosis. We validated this interaction in human follicles using multiplexed smFISH ( **Extended Data Fig. 8j** ). Accordingly, _OTX2,_ a TF required for cell migration via NTN1- _DCC,_ is active in oocytes ( **Extended Data Fig. 8h** ). There is also a unique composition of ECM proteins that potentially mediates adhesion of the oocytes to the follicular granulosa cells **(Extended Data Fig. 8i).**
+
+Altogether, we provide the main factors required to support germ cell differentiation and survival, together with the upregulated TFs **(Extended Data Fig. 8k)** .
+
+Supplementary Note 7. Characterisation of testis-specific resident macrophages.
+
+To comprehensively characterise the immune compartment of the fetal gonads, we sorted cells from 11 samples using the pan-leukocyte marker CD45 and integrated them with immune cells from the main analyses ( **Extended Data Fig. 9a-c** ). Our immune dataset defined 19 clusters, including haematopoietic stem cells/multipotent progenitors (HSC/MPP), megakaryocytes and mast cells, B cells and other innate lymphocyte lineages, and myeloid cells ( **Fig. 5a** ). Cell type identities of gonadal immune cells were assigned based on the expression of known marker genes as well as by transferring labels from a human fetal liver haematopoiesis dataset using a SVM model ( **Extended Data Fig. 9d-e** )[29] .
+
+Tissue-resident myeloid cells likely play a role in testicular development and function[30,31] . Our analysis revealed that the majority (43%) of gonadal immune cells are macrophages with a tissue-repair phenotype _(LYVE1, FOLR2)_ ( **Extended Data Fig. 9f-g** ). Specific to the developing testes, we also identify _SIGLEC15+_ and _TREM2+_ fetal testicular macrophages (ftM) with an osteoclast-like and microglia-like profile, respectively ( **Fig. 5a-b,d** , **Extended Data Fig. 9g-h, Extended Data Fig. 10a** ). A distinctive expression pattern of molecules affecting immune cell function in both populations suggests that they may seed an immunoregulatory environment previously described in prepubertal testes ( **Extended Data Fig. 9m** )[32,33] .
+
+_SIGLEC15+_ ftM are found in the peritubular spaces surrounding the testis cords, interacting with endothelial and mesenchymal cells via extracellular matrix proteins ( **Fig. 5d** , **Extended**
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **13**
+
+**Data Fig. 9l** , **Extended Data Fig. 10b** ). Their numbers peak ~8-14 PCWs, coinciding with the period of mesonephric endothelial cell migration[34] . We confirmed the developmental window of _SIGLEC15+_ ftM by re-analysing data from an independent fetal testes scRNA-seq study ( **Extended Data Fig. 10c** )[21] . Endothelial cells from the mesonephros migrate into the developing testes and assemble in the coelomic artery, a process that is required for testis cord formation[34] . This is redolent of findings that osteoclasts contribute to bone angiogenesis via metalloproteinase-9[35] . With such lines of evidence in mind, it is reasonable to speculate that macrophages with an osteoclast-like phenotype might allow for ECM remodelling that is needed in neovascularization processes, such as the formation of the coelomic artery in the fetal testis. Moreover, testicular tissue-resident macrophages in mice have been shown to play a role in controlling vascular and tissue pruning[36] .
+
+_TREM2+_ ftM are the first immune population found mainly inside the forming testis cords ( **Fig. 5d, Extended Data Fig. 10d-e** ). Although microglia-like cells have been previously identified in association with peripheral nerves in other tissues (skin, gut, sciatic nerve)[37–39] , they lack expression of core microglial genes, including _SALL1_ . Testicular _TREM2+_ ftM have _40,41_ an identical transcriptomic profile to brain microglia, including _SALL1_ ; this probably reflects a shared origin and function. Our integration analysis of myeloid cells from multiple developing organs revealed that _TREM2+_ macrophages with a microglia-like signature are also present in the fetal skin ( **Fig. 5c** ). To further rule out the hypothesis that _TREM2+_ ftM could be nerve-associated macrophages, we used markers specific to fetal macrophages with a microglia-like profile ( _CD68, P2RY12_ ) and co-stained a full transversal embryo section with a marker for neural cells ( _ELAVL3_ ). Microglia in the central nervous system ( _CD68, P2RY12_ ) are located close to the _ELAVL3+_ expressing cells, but we could not find this pattern for _TREM2+_ ftM and fetal skin macrophages ( **Extended Data Fig. 10d** ). Additionally, interactions resulting from the association of _TREM2+_ ftM with Sertoli cells and spermatogonia within the seminiferous tubules suggest that they could play a role in removing apoptotic germ cells ( **Extended Data Fig. 9l** ).
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **14**
+
+1. Li, L. _et al._ Single-Cell RNA-Seq Analysis Maps Development of Human Germline Cells and Gonadal Niche Interactions. _Cell Stem Cell_ **20** , 858–873.e4 (2017).
+
+2. Hu, Y.-C., Okumura, L. M. & Page, D. C. Gata4 is required for formation of the genital ridge in mice. _PLoS Genet._ **9** , e1003629 (2013).
+
+3. Luo, X., Ikeda, Y. & Parker, K. L. A cell-specific nuclear receptor is essential for adrenal and gonadal development and sexual differentiation. _Cell_ **77** , 481–490 (1994).
+
+4. Stuart, T. _et al._ Comprehensive Integration of Single-Cell Data. _Cell_ **177** , 1888–1902.e21 (2019).
+
+5. Mayère, C. _et al._ Single-cell transcriptomics reveal temporal dynamics of critical regulators of germ cell fate during mouse sex determination. _FASEB J._ **35** , e21452 (2021).
+
+6. Niu, W. & Spradling, A. C. Two distinct pathways of pregranulosa cell differentiation support follicle formation in the mouse ovary. _Proc. Natl. Acad. Sci. U. S. A._ **117** , 20015–20026 (2020).
+
+7. Zhao, Z.-H. _et al._ Single-cell RNA sequencing reveals regulation of fetal ovary development in the monkey (Macaca fascicularis). _Cell Discov_ **6** , 97 (2020).
+
+8. Tang, W. W. C. _et al._ A Unique Gene Regulatory Network Resets the Human Germline Epigenome for Development. _Cell_ **161** , 1453–1467 (2015).
+
+9. Gkountela, S. _et al._ DNA Demethylation Dynamics in the Human Prenatal Germline. _Cell_ **161** , 1425–1436 (2015).
+
+10. Guo, F. _et al._ The Transcriptome and DNA Methylome Landscapes of Human Primordial Germ Cells. _Cell_ **161** , 1437–1452 (2015).
+
+11. Shami, A. N. _et al._ Single-Cell RNA Sequencing of Human, Macaque, and Mouse Testes Uncovers Conserved and Divergent Features of Mammalian Spermatogenesis. _Dev. Cell_ **54** , 529–547.e12 (2020).
+
+12. Adjaye, J. & Monk, M. Transcription of homeobox-containing genes detected in cDNA libraries derived from human unfertilized oocytes and preimplantation embryos. _Mol. Hum. Reprod._ **6** , 707–711 (2000).
+
+13. Villaescusa, J. C., Verrotti, A. C., Ferretti, E., Farookhi, R. & Blasi, F. Expression of Hox cofactor genes during mouse ovarian follicular development and oocyte maturation. _Gene_ **330** , 1–7 (2004).
+
+14. Tucker, E. J. _et al._ TP63-truncating variants cause isolated premature ovarian insufficiency. _Hum. Mutat._ **40** , 886–892 (2019).
+
+15. Ruth, K. S. _et al._ Genetic insights into biological mechanisms governing human ovarian ageing. _Nature_ **596** , 393–397 (2021).
+
+16. Albrecht, K. H. & Eicher, E. M. Evidence that Sry is expressed in pre-Sertoli cells and Sertoli and granulosa cells have a common precursor. _Dev. Biol._ **240** , 92–107 (2001).
+
+17. Hanley, N. A. _et al._ SRY, SOX9, and DAX1 expression patterns during human sex determination and gonadal development. _Mech. Dev._ **91** , 403–407 (2000).
+
+18. Chassot, A.-A. _et al._ Activation of -catenin signaling by Rspo1 controls differentiation of the mammalian ovary. _Human Molecular Genetics_ vol. 17 1264–1277 (2008).
+
+19. Vainio, S., Heikkilä, M., Kispert, A., Chin, N. & McMahon, A. P. Female development in mammals is regulated by Wnt-4 signalling. _Nature_ **397** , 405–409 (1999).
+
+20. Chitiashvili, T. _et al._ Female human primordial germ cells display X-chromosome dosage
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **15**
+
+compensation despite the absence of X-inactivation. _Nat. Cell Biol._ **22** , 1436–1446 (2020).
+
+21. Guo, J. _et al._ Single-cell analysis of the developing human testis reveals somatic niche cell specification and fetal germline stem cell establishment. _Cell Stem Cell_ **28** , 764–778.e4 (2021).
+
+22. Hiramatsu, R. _et al._ A critical time window of Sry action in gonadal sex determination in mice. _Development_ **136** , 129–138 (2009).
+
+23. Pansky, B. Review of MEDICAL EMBRYOLOGY. (1982).
+
+24. Bowen, N. J. _et al._ Gene expression profiling supports the hypothesis that human ovarian surface epithelia are multipotent and capable of serving as ovarian cancer initiating cells. _BMC Med. Genomics_ **2** , 71 (2009).
+
+25. Mork, L. _et al._ Temporal differences in granulosa cell specification in the ovary reflect distinct follicle fates in mice. _Biol. Reprod._ **86** , 37 (2012).
+
+26. Nagaoka, S. I. _et al._ ZGLP1 is a determinant for the oogenic fate in mice. _Science_ **367** , (2020).
+
+27. Liu, F. _et al._ Involvement of parathyroid hormone-related protein in vascular calcification of chronic haemodialysis patients. _Nephrology_ **17** , 552–560 (2012).
+
+28. Minina, E. _et al._ BMP and Ihh/PTHrP signaling interact to coordinate chondrocyte proliferation and differentiation. _Development_ **128** , 4523–4534 (2001).
+
+29. Popescu, D.-M. _et al._ Decoding human fetal liver haematopoiesis. _Nature_ **574** , 365–371 (2019).
+
+30. Shechter, R., London, A. & Schwartz, M. Orchestrated leukocyte recruitment to immune-privileged sites: absolute barriers versus educational gates. _Nat. Rev. Immunol._ **13** , 206–218 (2013).
+
+31. Mossadegh-Keller, N. & Sieweke, M. H. Testicular macrophages: Guardians of fertility. _Cell. Immunol._ **330** , 120–125 (2018).
+
+32. Chen, Q., Deng, T. & Han, D. Testicular immunoregulation and spermatogenesis. _Semin. Cell Dev. Biol._ **59** , 157–165 (2016).
+
+33. Meinhardt, A. & Hedger, M. P. Immunological, paracrine and endocrine aspects of testicular immune privilege. _Mol. Cell. Endocrinol._ **335** , 60–68 (2011).
+
+34. Combes, A. N. _et al._ Endothelial cell migration directs testis cord formation. _Dev. Biol._ **326** , 112–120 (2009).
+
+35. Cackowski, F. C. _et al._ Osteoclasts are important for bone angiogenesis. _Blood_ vol. 115 140–149 (2010).
+
+36. DeFalco, T. & Bhattacharya, I. Yolk-sac–derived macrophages regulate fetal testis vascularization and morphogenesis. _Proceedings of the_ (2014).
+
+37. Ydens, E., Amann, L., Asselbergh, B. & Scott, C. L. Profiling peripheral nerve macrophages reveals two macrophage subsets with distinct localization, transcriptome and response to injury. _Nature_ (2020).
+
+38. Kolter, J. _et al._ A Subset of Skin Macrophages Contributes to the Surveillance and Regeneration of Local Nerves. _Immunity_ **50** , 1482–1497.e7 (2019).
+
+39. De Schepper, S. _et al._ Self-Maintaining Gut Macrophages Are Essential for Intestinal Homeostasis. _Cell_ **176** , 676 (2019).
+
+40. Buttgereit, A. _et al._ Sall1 is a transcriptional regulator defining microglia identity and function. _Nat. Immunol._ **17** , 1397–1406 (2016).
+
+41. Bennett, F. C. _et al._ A Combination of Ontogeny and CNS Environment Establishes Microglial Identity. _Neuron_ **98** , 1170–1183.e8 (2018).
+
+Supplementary Information (Garcia-Alonso, Lorenzi et al 2022) **16**

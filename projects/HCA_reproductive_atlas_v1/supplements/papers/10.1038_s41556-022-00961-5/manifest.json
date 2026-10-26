@@ -1,0 +1,27 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1038/s41556-022-00961-5",
+    "pmcid": "PMC9901845",
+    "license": {
+      "id": "unknown",
+      "redistributable": false,
+      "source": "manual",
+      "asserted_at": "2026-10-15T09:15:37Z",
+      "note": "No JATS in the store and no licence recorded elsewhere, so nothing local settles this. A verdict rather than an absence: the check was made here and came up empty. It does not rule out the paper being open access."
+    }
+  },
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1038/s41556-022-00961-5",
+      "reason": "Europe PMC has PMC9901845 but serves no article XML, so the publisher's supplement filenames and captions are unavailable",
+      "action": "drop the supplements into incoming/ and run adopt"
+    },
+    {
+      "file_id": "10.1038/s41556-022-00961-5",
+      "reason": "bundle is not a zip (164 bytes) — Europe PMC has no open supplementary files for this article",
+      "action": "add a publisher-direct template, or drop the files into incoming/"
+    }
+  ]
+}

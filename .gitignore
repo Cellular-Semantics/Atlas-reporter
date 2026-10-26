@@ -28,10 +28,71 @@ projects/**/supplements/incoming/*
 !projects/**/supplements/incoming/README.md
 
 # THIS REPO IS PUBLIC, and the rule above only covers `files/`. The store also
-# holds fetched article source, extracted supplement text and prose evidence
-# units — all verbatim, mostly from closed-access publishers, and no manifest
-# in the store records a licence. The whole store stays local.
-projects/**/supplements/
+# holds fetched article source and extracted supplement text — verbatim, and
+# mostly from publishers whose licence does not permit redistribution. So
+# everything in the store is ignored by default, and re-included by exception.
+projects/**/supplements/**
+
+# A manifest is a finding aid, not the paper: filenames, media types, sizes,
+# checksums, the publisher's own captions, and section headings with character
+# offsets. It carries no article body text, so it travels whatever the paper's
+# licence says — and without it nobody can tell what the corpus even contains.
+!projects/**/supplements/
+!projects/**/supplements/papers/
+!projects/**/supplements/papers/*/
+!projects/**/supplements/papers/*/manifest.json
+
+# Article XML and extracted text ARE the paper. Re-included only where the
+# manifest records `license.redistributable: true` (CC-BY-4.0 or CC0). The
+# slugs are written out because .gitignore cannot read a manifest; re-derive
+# them from the manifests rather than editing this list by hand.
+!projects/**/supplements/papers/10.1002_ctm2.1219/source/
+!projects/**/supplements/papers/10.1002_ctm2.1219/source/paper.jats.xml
+!projects/**/supplements/papers/10.1002_ctm2.1219/text/
+!projects/**/supplements/papers/10.1002_ctm2.1219/text/*.txt
+!projects/**/supplements/papers/10.1038_s41467-020-14936-3/source/
+!projects/**/supplements/papers/10.1038_s41467-020-14936-3/source/paper.jats.xml
+!projects/**/supplements/papers/10.1038_s41467-020-14936-3/text/
+!projects/**/supplements/papers/10.1038_s41467-020-14936-3/text/*.txt
+!projects/**/supplements/papers/10.1038_s41467-020-20358-y/source/
+!projects/**/supplements/papers/10.1038_s41467-020-20358-y/source/paper.jats.xml
+!projects/**/supplements/papers/10.1038_s41467-020-20358-y/text/
+!projects/**/supplements/papers/10.1038_s41467-020-20358-y/text/*.txt
+!projects/**/supplements/papers/10.1038_s41586-022-04918-4/source/
+!projects/**/supplements/papers/10.1038_s41586-022-04918-4/source/paper.jats.xml
+!projects/**/supplements/papers/10.1038_s41586-022-04918-4/text/
+!projects/**/supplements/papers/10.1038_s41586-022-04918-4/text/*.txt
+!projects/**/supplements/papers/10.1038_s41586-025-09875-2/source/
+!projects/**/supplements/papers/10.1038_s41586-025-09875-2/source/paper.jats.xml
+!projects/**/supplements/papers/10.1038_s41586-025-09875-2/text/
+!projects/**/supplements/papers/10.1038_s41586-025-09875-2/text/*.txt
+!projects/**/supplements/papers/10.1038_s41588-021-00972-2/source/
+!projects/**/supplements/papers/10.1038_s41588-021-00972-2/source/paper.jats.xml
+!projects/**/supplements/papers/10.1038_s41588-021-00972-2/text/
+!projects/**/supplements/papers/10.1038_s41588-021-00972-2/text/*.txt
+!projects/**/supplements/papers/10.1038_s41588-024-01873-w/source/
+!projects/**/supplements/papers/10.1038_s41588-024-01873-w/source/paper.jats.xml
+!projects/**/supplements/papers/10.1038_s41588-024-01873-w/text/
+!projects/**/supplements/papers/10.1038_s41588-024-01873-w/text/*.txt
+!projects/**/supplements/papers/10.1038_s42003-022-04384-8/source/
+!projects/**/supplements/papers/10.1038_s42003-022-04384-8/source/paper.jats.xml
+!projects/**/supplements/papers/10.1038_s42003-022-04384-8/text/
+!projects/**/supplements/papers/10.1038_s42003-022-04384-8/text/*.txt
+!projects/**/supplements/papers/10.1172_jci.insight.153921/source/
+!projects/**/supplements/papers/10.1172_jci.insight.153921/source/paper.jats.xml
+!projects/**/supplements/papers/10.1172_jci.insight.153921/text/
+!projects/**/supplements/papers/10.1172_jci.insight.153921/text/*.txt
+!projects/**/supplements/papers/10.1172_jci.insight.195254/source/
+!projects/**/supplements/papers/10.1172_jci.insight.195254/source/paper.jats.xml
+!projects/**/supplements/papers/10.1172_jci.insight.195254/text/
+!projects/**/supplements/papers/10.1172_jci.insight.195254/text/*.txt
+!projects/**/supplements/papers/10.64898_2026.06.10.731198/source/
+!projects/**/supplements/papers/10.64898_2026.06.10.731198/source/paper.jats.xml
+!projects/**/supplements/papers/10.64898_2026.06.10.731198/text/
+!projects/**/supplements/papers/10.64898_2026.06.10.731198/text/*.txt
+
+# Prose evidence units hold full extracted text, so they stay local whatever
+# the licence — the manifests' `prose` block already carries the structure.
 projects/**/units/
 
 # Large remote-pulled obs table (92.8GB source h5ad; reproducible via h5ad_obs/pull_obs.py).

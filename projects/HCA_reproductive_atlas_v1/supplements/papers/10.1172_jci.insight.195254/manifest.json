@@ -1,0 +1,167 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1172/jci.insight.195254",
+    "pmcid": "PMC12892900",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "jciinsight-11-195254-s111.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:28+00:00",
+        "sha256": "85e6fc46b2662d3fb8d01d5f1cda84d5b204eef53a493f768f2800fe150b37e0"
+      },
+      "caption": "Supplemental data",
+      "size_bytes": 389839,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s111.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "jciinsight-11-195254-s112.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:28+00:00",
+        "sha256": "7eb57c3c43c07122b8ca4ab351a4238a13b9493b78aa3329fd4243e79acbcc4e"
+      },
+      "caption": "Supplemental table 1",
+      "size_bytes": 10087,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s112.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Sheet1] columns age/bmi (kg/m^2)/e2 (pg/ml)/ethnicity -> sample metadata"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s113.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:28+00:00",
+        "sha256": "288d0b4eec2f5f29e5a7ae2efed47e7a0fee18779d235ef1a68b63928a9179aa"
+      },
+      "caption": "Supplemental table 2",
+      "size_bytes": 2620204,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s113.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable2_early-vs-pro] columns description/ensembl_gene_id/f/fdr -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s114.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:29+00:00",
+        "sha256": "2bcc0327009d5e09474ab8a2631a38e384bdeebf2d201ed87d01821f9e85b055"
+      },
+      "caption": "Supplemental table 3",
+      "size_bytes": 2695668,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s114.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable3_prolif-vs-mi] columns description/f/fdr/gene_biotype -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s115.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:29+00:00",
+        "sha256": "d5092ff59e9ed19451381c7eef596a8e9806c571e9bcf62457c54c64c37be1c0"
+      },
+      "caption": "Supplemental table 4",
+      "size_bytes": 2699605,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s115.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable4_early-vs-mid] columns description/ensembl_gene_id/f/fdr -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s116.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:29+00:00",
+        "sha256": "7269f1b41561621c91fd080c97221f69a2141175e20bc3691d069bcbb5dae203"
+      },
+      "caption": "Supplemental table 5",
+      "size_bytes": 2611699,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s116.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable5_late-vs-mid] columns description/ensembl_gene_id/f/fdr -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s117.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:29+00:00",
+        "sha256": "04c3e4b57c7c946342d899d940a8a5ce6767c761257f8d1ad93fe2a115db5f9b"
+      },
+      "caption": "Supplemental table 6",
+      "size_bytes": 603496,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s117.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable6_epithelium-s] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s118.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:29+00:00",
+        "sha256": "a547cdb260b36b73f50f87814bf228cd11d612929c4287068482f7c00da3b7a2"
+      },
+      "caption": "Supplemental table 7",
+      "size_bytes": 802458,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s118.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable7_Secretory gl] columns avg_log2fc/gene id/p_val/p_val_adj -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s119.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:29+00:00",
+        "sha256": "60678bd9a3049303da16b87f2ab23d0315d39eba0bb4136f050a60086e1977a3"
+      },
+      "caption": "Supplemental table 8",
+      "size_bytes": 77801,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s119.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SupplementalTable8_GERM] columns description/ensembl_gene_id/f/fdr -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-11-195254-s120.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:29+00:00",
+        "sha256": "1083c231d5072b156a268f8eaeff651115d8bcc2d2a68004a7d5128c3c4c9a78"
+      },
+      "caption": "Supporting data values",
+      "size_bytes": 25722,
+      "path": "papers/10.1172_jci.insight.195254/files/jciinsight-11-195254-s120.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Figure 1B] columns bmi/phase/subject -> sample metadata"
+    }
+  ],
+  "gaps": []
+}

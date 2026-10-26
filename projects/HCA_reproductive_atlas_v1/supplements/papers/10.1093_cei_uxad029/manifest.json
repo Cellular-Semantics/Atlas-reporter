@@ -1,0 +1,21 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1093/cei/uxad029",
+    "license": {
+      "id": "unknown",
+      "redistributable": false,
+      "source": "manual",
+      "asserted_at": "2026-10-15T09:15:37Z",
+      "note": "No JATS in the store and no licence recorded elsewhere, so nothing local settles this. A verdict rather than an absence: the check was made here and came up empty. It does not rule out the paper being open access."
+    }
+  },
+  "files": [],
+  "gaps": [
+    {
+      "file_id": "10.1093/cei/uxad029",
+      "reason": "no PMC record in Europe PMC, so no programmatic route exists",
+      "action": "download from https://doi.org/10.1093/cei/uxad029 into incoming/ and run adopt"
+    }
+  ]
+}

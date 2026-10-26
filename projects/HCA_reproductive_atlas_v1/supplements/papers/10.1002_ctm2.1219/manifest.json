@@ -1,0 +1,160 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1002/ctm2.1219",
+    "pmcid": "PMC10040725",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "CTM2-13-e1219-s001.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:29+00:00",
+        "sha256": "d163bbe76a3c918b00a3a3489a23cb51697070b4c79c2eb72b6207e4dddcab6b"
+      },
+      "caption": "Supporting Information",
+      "size_bytes": 2662660,
+      "path": "papers/10.1002_ctm2.1219/files/CTM2-13-e1219-s001.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    }
+  ],
+  "gaps": [],
+  "prose": [
+    {
+      "file_id": "CTM2-13-e1219-s001.pdf",
+      "text_file": "papers/10.1002_ctm2.1219/text/CTM2-13-e1219-s001.txt",
+      "n_chars": 25759,
+      "extractor": "pdf",
+      "evidence": "outline",
+      "sections": [
+        {
+          "heading": "**Fig S5 The expression of CD274 and IDO1 in pDCs among four clinical groups.**",
+          "char_start": 2231,
+          "char_end": 2924,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "names"
+          ]
+        },
+        {
+          "heading": "**microenvironment of cervix**",
+          "char_start": 2926,
+          "char_end": 3582,
+          "folds_in": true,
+          "dimensions": [
+            "location",
+            "names"
+          ]
+        },
+        {
+          "heading": "**Fig S7 The expression of markers in three HPV-related clusters among four clin",
+          "char_start": 3584,
+          "char_end": 4220,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "names"
+          ]
+        },
+        {
+          "heading": "_**Patient and tissue sample collection**_",
+          "char_start": 4222,
+          "char_end": 5183,
+          "folds_in": false
+        },
+        {
+          "heading": "_**Preparation of single-cell suspensions**_",
+          "char_start": 5185,
+          "char_end": 6234,
+          "folds_in": false
+        },
+        {
+          "heading": "_**Preparation of ST samples**_",
+          "char_start": 6236,
+          "char_end": 6847,
+          "folds_in": false
+        },
+        {
+          "heading": "_ST barcoded microarray slide information_",
+          "char_start": 6849,
+          "char_end": 7180,
+          "folds_in": false
+        },
+        {
+          "heading": "_Tissue optimization_",
+          "char_start": 7182,
+          "char_end": 11707,
+          "folds_in": false
+        },
+        {
+          "heading": "_**Single-cell RNA-seq data preprocessing**_",
+          "char_start": 11709,
+          "char_end": 14531,
+          "folds_in": false
+        },
+        {
+          "heading": "_**ST 10X Visium data preprocessing**_",
+          "char_start": 14533,
+          "char_end": 16407,
+          "folds_in": false
+        },
+        {
+          "heading": "_**Immunohistochemistry (IHC) and the Immunocore**_",
+          "char_start": 16409,
+          "char_end": 17904,
+          "folds_in": false
+        },
+        {
+          "heading": "_Cell cycle analysis_",
+          "char_start": 17906,
+          "char_end": 18196,
+          "folds_in": false
+        },
+        {
+          "heading": "_Pseudotime analysis_",
+          "char_start": 18198,
+          "char_end": 19355,
+          "folds_in": false
+        },
+        {
+          "heading": "_SCENIC analysis_",
+          "char_start": 19357,
+          "char_end": 22509,
+          "folds_in": false
+        },
+        {
+          "heading": "_Gene set variation analysis (GSVA)_",
+          "char_start": 22511,
+          "char_end": 22961,
+          "folds_in": false
+        },
+        {
+          "heading": "_CNV analysis_",
+          "char_start": 22963,
+          "char_end": 23856,
+          "folds_in": false
+        },
+        {
+          "heading": "**Methods-only references**",
+          "char_start": 23858,
+          "char_end": 25759,
+          "folds_in": false
+        }
+      ],
+      "description": "Supplementary material PDF for a single-cell study of cervical microenvironment. Contains results figures showing marker expression in immune cell populations and an extensive methods section covering sample processing, sequencing data preprocessing, and computational analyses.",
+      "folds_in": true,
+      "folds_in_note": "First three sections present cell-type characterization data: marker genes (CD274, IDO1) in pDCs and HPV-related clusters, and tissue microenvironment context. All subsequent sections are wet-lab and computational methods (sample prep, RNA-seq/ST preprocessing, pseudotime, SCENIC, GSVA, CNV analysis) and are excluded. Judgment based on section outline only; text content not examined."
+    }
+  ]
+}

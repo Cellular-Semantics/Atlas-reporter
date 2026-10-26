@@ -1,0 +1,257 @@
+- 3 Self-identified Black and Hispanic women, aged 23-41 years, with regular, ovulatory
+
+- 4 menstrual cycles and at least one prior pregnancy were prospectively enrolled between
+
+- 5 November 2020 and December 2022. Study participants were consented for the review
+
+- 6 of their medical records and collection of blood and endometrial samples. Women with
+
+- 7 endocrine or autoimmune disorders, including antiphospholipid syndrome and polycystic 8 ovary syndrome, or anatomic disorders of the reproductive tract, including hydrosalpinges
+
+- 9 or submucosal fibroids, were excluded. Women with a history of pregnancy
+
+- 10 complications, including recurrent pregnancy loss, preeclampsia or fetal growth restriction
+
+- 11 were also excluded. The demographic characteristics of participants are presented in 12 **Table S1** .
+
+- 13 **Sample collection and processing**
+
+- 14 For the collection of endometrial tissue samples, study participants reported that they
+
+- 15 were not actively trying to conceive and had not used hormonal treatment in the 3 months
+
+- 16 prior to recruitment. Once enrolled, study participants were instructed to use condoms
+
+- 17 during sexual intercourse for the duration of their enrollment. Endometrial biopsies were
+
+- 18 performed with the Endocell®, a disposable endometrial tissue sampler (Wallach Surgical
+
+- 19 Devices, Trumbull, CT, USA) in the proliferative phase between cycle days 10-13 (n = 6)
+
+- 20 and during the early (n = 10), mid (n = 8), or late (n = 3) secretory phases, timed based
+
+- 21 on the urinary LH surge (early secretory = LH + 1-2 days, mid-secretory = LH + 8-9 days,
+
+- 22 late secretory = LH + 12-13 days). On the day of the endometrial biopsy, blood (5 mL) 23 was collected in nonheparinized, serum separator tubes, allowed to clot, and centrifuged
+
+- 24 at 4C. Serum estradiol (E2) and progesterone (P4) levels were determined (LabCorp,
+
+- 25 Raritan, NJ). Correct timing of biopsies was confirmed with serum E2 and P4 levels and
+
+- 26 endometrial histopathology as determined by two gynecological pathologists who were
+
+- 27 blinded to the timing of the tissue collection (1).
+
+- 28 For collection of endometrial deciduae, women scheduled for an elective
+
+- 29 termination of an uncomplicated pregnancy in the first trimester at 6-8 weeks gestation
+
+- 30 were eligible for inclusion. Study participants (n = 3) were recruited and enrolled prior to
+
+- 31 their scheduled surgical procedure. After dilation and curettage, tissue samples were
+
+- 32 floated in phosphate buffered saline (PBS, pH 7.2) and the endometrial decidua was
+
+- 33 isolated from the gestational sac and chorionic villi by mechanical separation using 34 forceps.
+
+- 35 After collection, endometrial tissue was placed in a tissue culture dish and rinsed
+
+- 36 with ice-cold PBS to remove blood and mucus. Using fine forceps, each sample was
+
+- 37 separated such that approximately 100 mg endometrial tissue was fixed in formalin and
+
+- 38 stored at room temperature for immunohistology; approximately 100 mg was preserved
+
+- 39 in RNAprotect (Qiagen, #76160) and stored at -80ºC for RNA extraction for bulk RNA
+
+- 40 sequencing; and the remaining tissue was placed on ice, minced and processed within
+
+- 41 one hour of collection for scRNA-Seq.
+
+- 42 **Isolation of endometrial and decidual cells**
+
+- 43 Cells were isolated from minced endometrial tissues for scRNA-Seq by incubation at 37°C
+
+- 44 in digestion media (DMEM/F12, 3% charcoal-stripped fetal bovine serum (FBS), 1 mg/mL
+
+- 45 collagenase A (Roche, #11088793001), 0.1 mg/mL DNAse type I (Roche, #10104159001)
+
+- 46 with agitation on a benchtop shaker at 250 rpm for 15 minutes. The tissue was then further
+
+- 47 dissociated by repeatedly passing it through a 16G needle attached to a 10 mL syringe.
+
+- 48 The shaking and needle passage steps were repeated once more to ensure thorough
+
+- 49 dissociation. The cell suspension was centrifuged at 300 × 𝑔 for 5 minutes. The resulting
+
+- 50 pellet was resuspended in 1 mL of TrypLE Select Enzyme (Thermo Fisher #12563011)
+
+- 51 containing 0.1 mg/mL DNase I and incubated at 37°C on a shaker at 250 rpm for 15
+
+- 52 minutes. 10 mL of ice-cold digestion media was added, and the cell suspension was
+
+- 53 filtered through a 40 µm cell strainer. Red blood cells (RBC) were lysed using RBC lysis
+
+- 54 buffer (ThermoFisher, #00-4333-57) and dead cells were removed using the Dead Cell
+
+- 55 Removal Kit (Miltenyi Biotec, #130-090-101). The resulting single-cell suspension was
+
+- 56 used for Chromium (10X Genomics) sequencing.
+
+- 57 **RNA isolation, library preparation, and sequencing**
+
+- 58 Total RNA was isolated from endometrial tissue using a RNeasy mini kit (Qiagen,
+
+- 59 #74136). RNA was quantified by Qubit (Invitrogen) and quality was assessed with a
+
+- 60 Fragment Analyzer (Advanced Analytical Technologies, Inc.) at Albert Einstein College of
+
+- 61 Medicine Epigenomics Shared Facility (RRID:SCR_023284). Libraries were prepared
+
+- 62 using the KAPA Stranded RNA-Seq Kit with RiboErase for Illumina Platforms
+
+- 63 (Kapa Biosystems #KK8483) with the addition of Ambion External RNA Controls
+
+- 64 Consortium (ERCC) spike-in controls (Invitrogen #4456740). Libraries were quantified,
+
+- 65 multiplexed, and sequenced as single end (1 x 75 bp) on an Illumina NextSeq 500
+
+- 66 instrument (RRID:SCR_014983) to yield approximately 50 million reads per sample.
+
+- 67 FASTQ files were generated using picard (v2.26.10, RRID:SCR_006525) module
+
+- 68 ExtractIlluminaBarcodes followed by IlluminaBasecallsToFastq with default parameters,
+
+- 69 except “INCLUDE_NON_PF_READS = false”. Raw FASTQ files were trimmed of flanking
+
+- 70 adapter sequences using Trim Galore (v0.6.7, RRID:SCR_011847)(2) with default
+
+- 71 parameters and “adapter = AGATCGGAAGAGC”. Read quality was assessed using
+
+- 72 FastQC (v0.11.9, RRID:SCR_014583) and FastQ Screen (v0.6.5, RRID:SCR_000141).
+
+- 73 For scRNA-Seq, libraries were generated and sequenced using the 10X Chromium
+
+- 74 Single Cell 3ʹ GEM kit (10X Genomics, v2). Paired end, 2 x 75 bp, sequencing was
+
+- 75 performed on an Illumina NextSeq 500 instrument (RRID:SCR_014983). Output was
+
+- 76 demultiplexed and converted to FASTQ format with Cell Ranger (10X Genomics, v3.1.0).
+
+- 78 Trimmed reads were mapped to Homo sapiens genome assembly GRCh38 (hg38) using
+
+- 79 STAR (v2.7.9a, RRID:SCR_004463)(3). Reads overlapping Ensembl (4) annotations 80 (v110) were quantified with STAR prior to model-based differential expression analysis
+
+- 81 using the edgeR-robust method (5-7). A read counts matrix was used as input for the
+
+- 82 endest (8) R package (v0.1.1) results were visualized with ggplot2 (v3.5.1, 83 RRID:SCR_014601). For differential expression analysis, genes with low counts per 84 million (CPM) were removed using the filterByExpr function from edgeR 85 (RRID:SCR_012802). Genes were considered differentially expressed if the FDR-
+
+- 86 corrected p-values were less than 0.05. Venn diagrams were generated with the R 87 package eulerr (v7.0.2, RRID:SCR_022753).
+
+- 88 For scRNA-Seq, demultiplexed sequencing reads were processed and aligned to
+
+- 89 the _Homo sapiens_ genome assembly GRCh38 (hg38) using STAR (v2.7.9a) with 10X 90 Genomics Cell Ranger (v3.1.0, RRID:SCR_017344). Samples were merged using the
+
+- 91 integration anchors function of the Seurat package (v5.1.0, RRID:SCR_016341) in R (9).
+
+- 92 Genes expressed in fewer than three cells in a sample were excluded, as well as cells
+
+- 93 that expressed fewer than 200 genes and mitochondrial gene content >5% of the total
+
+- 94 unique molecular identifier count. Data were normalized using a global-scaling 95 normalization method (9) that normalizes the feature expression measurements for each 96 cell by the total expression, multiplies this by a scale factor (10,000), and then log97 transforms the results. High _HLA-G_ and _CGA_ cells were identified in pregnant biopsies 98 as trophoblast were removed from our analysis. The top 2,000 most variable genes that
+
+- 99 were used for cell clustering were found using the _FindVariableFeatures_ function and
+
+- 100 were then normalized using the _ScaleData_ function. Based on an elbow plot generated
+
+- 101 using the _Elbowplot_ function of Seurat, we selected 20 principal components (PC) for
+
+- 102 downstream analyses. Cell clusters were generated using _FindNeighbors_ and
+
+- 103 _FindClusters_ functions. For visualization, UMAPs were generated using the _RunUMAP_ , 104 _FeaturePlot_ and _DimPlot_ functions. The _DotPlot_ Seurat function was used to generate dot 105 plots to visualize gene expression for each assigned cluster. The Seurat function
+
+- 106 _AddModuleScore_ was used to calculate ERA and decidualization scores. Ligand-receptor
+
+- 107 cellular communication analysis was determined with the CellChat (v2.1.2, 108 RRID:SCR_021946) (10, 11) R package. Briefly, communication probabilities were 109 calculated between cell types using the functions identifyOverExpressedGenes and 110 identifyOverExpressedInteractions. Signaling sources, influencers, targets, mediators,
+
+- 111 and high-order information were obtained by communication network analysis. The 112 resulting interactions were visualized using the included plotting functions.
+
+- 113 **Glandular Epithelium Receptivity Module (GERM) score calculation** 114 The receptivity module signature genes (n = 556, Table S7) were separated by positive
+
+- 115 or negative fold change and described as “GERM_up” or “GERM_down”, respectively,
+
+- 116 where “GERM_up” genes were increased at mid-secretory phase. The resulting
+
+- 117 dataframe was used as input for _fgsea_ (12) enrichment analysis implementation in 118 clusterProfiler (v4.12.6, RRID:SCR_016884) (13) with multiple datasets. Microarray and 119 bulk RNA-Seq experiment results were downloaded from NCBI GEO 120 (RRID:SCR_005012), using the GEO2R tool, as a list of genes and fold changes for early
+
+- 121 versus mid-secretory endometrium. Human endometrial epithelial organoid culture data 122 (14) were not available for evaluation with GEO2R; therefore, raw read counts were
+
+- 123 downloaded from GEO and analyzed with DESeq2 (v1.48.2, RRID:SCR_015687) (15) 124 using the same parameters. Spatial and scRNA-Seq datasets were subset for the
+
+- 125 glandular or secretory glandular epithelium cell types. A combined normalized enrichment
+
+- 126 score (NES) was calculated as 𝐺𝐸𝑅𝑀 𝑠𝑐𝑜𝑟𝑒= 𝐺𝐸𝑅𝑀_𝑢𝑝 + −1 (𝐺𝐸𝑅𝑀_𝑑𝑜𝑤𝑛) and
+
+- 127 adjusted p-values were combined using the metap package with the _sumlog_ function. The
+
+- 128 results were compiled and then visualized as a dotplot with ggplot2 (v3.5.1, 129 RRID:SCR_014601).
+
+- 131 Formalin-fixed and paraffin-embedded endometrial tissue was sectioned at 5 mm, placed 132 on charged glass slides (StatLab, Millenia 1000), air-dried and stored at room
+
+- 133 temperature before use. Sections were stained with hematoxylin and eosin (H&E) or 134 immunohistochemistry (IHC) staining. For IHC, sections were deparaffinized followed by 135 antigen retrieval with BOND Epitope Retrieval Solution 2 (Leica Biosystems, USA) for 40
+
+- 136 minutes. Primary antibodies to detect the estrogen receptor alpha (clone 6F11, Leica 137 Biosystems) and progesterone receptor (clone 16, Leica Biosystems) were applied for 20 138 and 24 minutes, respectively. Bound primary antibodies were detected with BOND
+
+- 139 Polymer Refine Detection kit. Sections were washed with distilled water, counterstained
+
+- 140 with hematoxylin, dehydrated through graded alcohols, cleared in xylene, and mounted
+
+- 144 1. Chemerinski A, Shen M, Valero-Pacheco N, Zhao Q, Murphy T, George L, et al. The impact 145 of ovarian stimulation on the human endometrial microenvironment. _Hum Reprod._ 146 2024;39(5):1023-41.
+
+- 147 2. Martin M. Cutadapt removes adapter sequences from high-throughput sequencing reads. 148 _EMBnetjournal._ 2011;17(1):pp-10.
+
+- 149 3. Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, et al. STAR: ultrafast 150 universal RNA-seq aligner. _Bioinformatics._ 2013;29(1):15-21.
+
+- 151 4. Aken BL, Ayling S, Barrell D, Clarke L, Curwen V, Fairley S, et al. The Ensembl gene 152 annotation system. _Database (Oxford)._ 2016;2016:1-19.
+
+- 153 5. Robinson MD, McCarthy DJ, and Smyth GK. edgeR: a Bioconductor package for 154 differential expression analysis of digital gene expression data. _Bioinformatics._ 155 2010;26(1):139-40.
+
+- 156 6. McCarthy DJ, Chen Y, and Smyth GK. Differential expression analysis of multifactor RNA157 Seq experiments with respect to biological variation. _Nucleic Acids Res._ 158 2012;40(10):4288-97.
+
+- 159 7. Zhou X, Lindsay H, and Robinson MD. Robustly detecting differential expression in RNA 160 sequencing data using observation weights. _Nucleic Acids Res._ 2014;42(11):e91.
+
+- 161 8. Agarwal V, Bell GW, Nam JW, and Bartel DP. Predicting effective microRNA target sites in 162 mammalian mRNAs. _Elife._ 2015;4:e05005.
+
+- 163 9. Hao Y, Hao S, Andersen-Nissen E, Mauck WM, 3rd, Zheng S, Butler A, et al. Integrated 164 analysis of multimodal single-cell data. _Cell._ 2021;184(13):3573-87.e29.
+
+- 165 10. Jin S, Guerrero-Juarez CF, Zhang L, Chang I, Ramos R, Kuan CH, et al. Inference and 166 analysis of cell-cell communication using CellChat. _Nat Commun._ 2021;12(1):1088.
+
+- 167 11. Jin S, Plikus MV, and Nie Q. CellChat for systematic analysis of cell-cell communication 168 from single-cell transcriptomics. _Nat Protoc._ 2024.
+
+- 169 12. Korotkevich G, Sukhov V, Budin N, Shpak B, Artyomov MN, and Sergushichev A. Fast 170 gene set enrichment analysis. _bioRxiv._ 2021:060012.
+
+- 171 13. Wu T, Hu E, Xu S, Chen M, Guo P, Dai Z, et al. clusterProfiler 4.0: A universal enrichment 172 tool for interpreting omics data. _Innovation (Camb)._ 2021;2(3):100141.
+
+- 173 14. Fitzgerald HC, Dhakal P, Behura SK, Schust DJ, and Spencer TE. Self-renewing 174 endometrial epithelial organoids of the human uterus. _Proc Natl Acad Sci U S A._ 175 2019;116(46):23132-42.
+
+- 176 15. Love MI, Huber W, and Anders S. Moderated estimation of fold change and dispersion for 177 RNA-seq data with DESeq2. _Genome Biol._ 2014;15(12):550.
+
+181 **Figure S1. Additional information related to menstrual cycle phase.** ( **A** ) Boxplot of
+
+- 182 sample staging from bulk mRNA-seq ( _n_ = 26) using the eldest package from Teh and
+
+- 183 colleagues (33). ( **B** ) Uniform Manifold Approximation and Projection (UMAP) visualization
+
+- 184 of scRNA-Seq data from endometrial biopsies from the early ( _n_ = 4), mid- ( _n_ = 4), and
+
+- 185 late secretory ( _n_ = 3) phases, and first trimester decidua samples ( _n_ = 3).
+
+- 188 **Figure S2. Epithelium subclusters and distribution across cycle stages.** ( **A** ) UMAP
+
+- 189 visualization of scRNA-Seq data from human epithelium sub-clusters. ( **B** ) Dot plot of
+
+- 190 marker genes for each sub cluster. ( **C** ) Stacked bar plots showing the contribution of each
+
+- 191 cycle stage to the epithelial sub-clusters and ( **D** ) the proportion of epithelial sub-clusters
+
+195 **Figure S3. Expression of in vitro senescence markers is not restricted to a specific** 196 **stroma subcluster.** Dotplot of in vitro senescence markers in the stroma sub-clusters.

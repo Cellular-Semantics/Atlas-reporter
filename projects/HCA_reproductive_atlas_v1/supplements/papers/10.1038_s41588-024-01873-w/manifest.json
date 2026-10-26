@@ -1,0 +1,292 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1038/s41588-024-01873-w",
+    "pmcid": "PMC11387200",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "41588_2024_1873_MOESM1_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:58+00:00",
+        "sha256": "9fb395112e4fe74e2f0b3adabb8ea2a6e4fe64ff9d89367556ce8ca53297c3e4"
+      },
+      "label": "Supplementary Information",
+      "caption": "Supplementary Notes 1–9. 1. Datasets integration and comparison. 2. Computational resources from the HECA. 3. Annotation of the epithelial cells. 4. Annotation of the stromal cells. 5. Differential cell abundance (DCA). 6. Cell type enrichment analysis for endometriosis GWAS genes. 7. Differential gene expression endometriosis versus controls. 8. Tissue processing and cryopreservation. 9. Donor genotyping.",
+      "size_bytes": 602802,
+      "path": "papers/10.1038_s41588-024-01873-w/files/41588_2024_1873_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41588_2024_1873_MOESM2_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Reporting Summary",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Reporting Summary"
+    },
+    {
+      "file_id": "41588_2024_1873_MOESM3_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:58+00:00",
+        "sha256": "f70030404af3f6070c10f22a064e20188b0fb3251c1042605563c0aea00d2ed3"
+      },
+      "label": "Supplementary Tables 1–9",
+      "caption": "Supplementary Table 1. Harmonized metadata of samples analyzed. Supplementary Table 2. Cell Ranger QC outputs for all newly generated data. Supplementary Table 3. Absolute cell counts per donor and dataset in the HECA. Supplementary Table 4. Cell–cell interactions identified using LIANA. Supplementary Table 5. Differentially expressed genes reported for stromal cells between controls and endometriosis cases. Differential expression analysis was performed using limma v.3.54.2. The table reports the magnitude of differential expression (log2 fold change) and false discovery rate-adjusted P values using the Benjamini–Hochberg method. Supplementary Table 6. Differentially expressed genes reported for macrophages between controls and endometriosis cases. Differential expression analysis was performed using limma v.3.54.2. The table reports the magnitude of differential expression (log2 fold change) and false discovery rate-adjusted P values using the Benjamini–Hochberg method. Supplementary Table 7. Reagents used for the snRNA-seq homogenization buffer. Supplementary Table 8. Reagents used for the snRNA-seq wash buffer. Supplementary Table 9. List of smFISH probes used for smFISH imagining.",
+      "size_bytes": 400034,
+      "path": "papers/10.1038_s41588-024-01873-w/files/41588_2024_1873_MOESM3_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Table3_cell_type_counts] columns 1 | sox9 basalis/10 | preluminal/11 | luminal/12 | preciliated -> sample metadata"
+    }
+  ],
+  "gaps": [],
+  "prose": [
+    {
+      "file_id": "41588_2024_1873_MOESM1_ESM.pdf",
+      "text_file": "papers/10.1038_s41588-024-01873-w/text/41588_2024_1873_MOESM1_ESM.txt",
+      "n_chars": 71078,
+      "extractor": "pdf",
+      "evidence": "outline",
+      "sections": [
+        {
+          "heading": "**ArticleSupplementary information** https://doi.org/10.1038/s41588-024-01873-w ",
+          "char_start": 44,
+          "char_end": 1528,
+          "folds_in": false
+        },
+        {
+          "heading": "Supplementary Note 1. Datasets integration and comparison",
+          "char_start": 1530,
+          "char_end": 2296,
+          "folds_in": false
+        },
+        {
+          "heading": "1.1 Integration and identification of cell states",
+          "char_start": 2298,
+          "char_end": 10199,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "**1.2.1 Single-cell RNA-seq datasets in HECA**",
+          "char_start": 10201,
+          "char_end": 11146,
+          "folds_in": false
+        },
+        {
+          "heading": "**1.2.2 Single-nuclei RNA-seq validation dataset**",
+          "char_start": 11148,
+          "char_end": 11482
+        },
+        {
+          "heading": "**1.3.1 Across scRNA-seq datasets**",
+          "char_start": 11484,
+          "char_end": 17328,
+          "folds_in": false
+        },
+        {
+          "heading": "**1.3.2 scRNA-seq versus snRNA-seq**",
+          "char_start": 17330,
+          "char_end": 20853,
+          "folds_in": false
+        },
+        {
+          "heading": "Supplementary Note 2. Computational resources from the HECA.",
+          "char_start": 20855,
+          "char_end": 21176
+        },
+        {
+          "heading": "2.1 Atlas visualisation and query with CellxGene",
+          "char_start": 21178,
+          "char_end": 21760,
+          "folds_in": false
+        },
+        {
+          "heading": "2.2 Cell-cell communication visualisation and query with CellPhoneDBViz",
+          "char_start": 21762,
+          "char_end": 22854,
+          "folds_in": false
+        },
+        {
+          "heading": "**2.3.1 scANVI model weights**",
+          "char_start": 22856,
+          "char_end": 24727,
+          "folds_in": false
+        },
+        {
+          "heading": "**2.3.2 Query-to-HECA mapping: scArches tutorial**",
+          "char_start": 24729,
+          "char_end": 25100
+        },
+        {
+          "heading": "Supplementary Note 3. Annotation of the epithelial cells.",
+          "char_start": 25102,
+          "char_end": 27788,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "_SOX9_ + cells:",
+          "char_start": 27790,
+          "char_end": 32750,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "markers",
+            "structure"
+          ]
+        },
+        {
+          "heading": "Glandular cells",
+          "char_start": 32752,
+          "char_end": 34661,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "Luminal cells",
+          "char_start": 34663,
+          "char_end": 36366,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "Ciliated cells",
+          "char_start": 36368,
+          "char_end": 37285,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "structure"
+          ]
+        },
+        {
+          "heading": "MUC5B cells in endocervix/cervix and _MUC5B_ gene expression in endometrium",
+          "char_start": 37287,
+          "char_end": 38660,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "markers",
+            "location"
+          ]
+        },
+        {
+          "heading": "KRT5 cells",
+          "char_start": 38662,
+          "char_end": 39195
+        },
+        {
+          "heading": "Supplementary Note 4. Annotation of the stromal cells.",
+          "char_start": 39197,
+          "char_end": 41110,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "eStromal cells",
+          "char_start": 41112,
+          "char_end": 42495,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "dStromal cells",
+          "char_start": 42497,
+          "char_end": 44471,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "Supplementary Note 5. Differential cell abundance (DCA).",
+          "char_start": 44473,
+          "char_end": 47143,
+          "folds_in": false
+        },
+        {
+          "heading": "Supplementary Note 6. Cell type enrichment analysis for Endometriosis-GWAS genes",
+          "char_start": 47145,
+          "char_end": 48602,
+          "folds_in": false
+        },
+        {
+          "heading": "Supplementary Note 7. Differential gene expression endometriosis vs controls.",
+          "char_start": 48604,
+          "char_end": 49541,
+          "folds_in": false
+        },
+        {
+          "heading": "8.1. Tissue cryopreservation",
+          "char_start": 49543,
+          "char_end": 49880
+        },
+        {
+          "heading": "8.2. Tissue dissociation for single-cell RNA-sequencing",
+          "char_start": 49882,
+          "char_end": 51863,
+          "folds_in": false
+        },
+        {
+          "heading": "8.3. Tissue dissociation for single-nucleus RNA-sequencing",
+          "char_start": 51865,
+          "char_end": 54434,
+          "folds_in": false
+        },
+        {
+          "heading": "Supplementary Note 9. Donor genotyping.",
+          "char_start": 54436,
+          "char_end": 55416,
+          "folds_in": false
+        },
+        {
+          "heading": "Supplementary References",
+          "char_start": 55418,
+          "char_end": 71078,
+          "folds_in": false
+        }
+      ],
+      "description": "Supplementary PDF for a human endometrial and cervical atlas study. Contains integrated cell-state identification, detailed annotation sections for epithelial and stromal cell types, and analysis of cell abundance and gene expression.",
+      "folds_in": true,
+      "folds_in_note": "Outline view only — no text sample provided, judgment rests on section headings. Explicit annotation sections present ('Annotation of the epithelial cells', 'Annotation of the stromal cells') plus named subsections (SOX9+ cells, Glandular cells, Luminal cells, Ciliated cells, MUC5B cells, eStromal cells, dStromal cells). These are robust signals for cell-type naming and characterization despite the absence of text."
+    }
+  ]
+}

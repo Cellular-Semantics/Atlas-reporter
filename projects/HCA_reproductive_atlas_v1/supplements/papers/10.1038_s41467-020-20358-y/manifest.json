@@ -1,0 +1,191 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1038/s41467-020-20358-y",
+    "pmcid": "PMC7782707",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "41467_2020_20358_MOESM1_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "ae14fab9db499bc22d08e510f4190c832e4f29f2c555bf2274b0a6fea99c6a4e"
+      },
+      "caption": "Supplementary Information",
+      "size_bytes": 2552602,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM2_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Peer Review File",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Peer Review File"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM3_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "31ebfba840c85b594797441459bc4b7797fcfaeda89f77bb40f9dbd6e6d3e98a"
+      },
+      "caption": "Description of Additional Supplementary Files",
+      "size_bytes": 49806,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM3_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM4_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "3fe45ca4e5f337277a48a6efb0e2214aa7995dc7515b7fed4482ae27a20ab73c"
+      },
+      "caption": "Supplementary Data 1",
+      "size_bytes": 13966,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM4_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Sheet1] columns age (years)/birth weight of infants/bmi (kg/m2)/diabetes mellitus -> sample metadata"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM5_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "ed1e5afb28c4af069c0c71ff071b14e4e65d1e7cbd9493210a2c7576ee932728"
+      },
+      "caption": "Supplementary Data 2",
+      "size_bytes": 3756447,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM5_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Epithelial cells] columns barcode/cell types/sample -> per-cell table"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM6_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "ea9eeb38e67c4a0bc1a6850db53ae712bf1b964fa4accdffbf5363dfaec24175"
+      },
+      "caption": "Supplementary Data 3",
+      "size_bytes": 106545,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM6_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[EP] columns avg_logfc/gene/p-value -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM7_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "91c27c552bd886e53f8e6c1d01f0c4bf63f24dc8a7bcced97d02d4853ed8f4dd"
+      },
+      "caption": "Supplementary Data 4",
+      "size_bytes": 134556,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM7_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[upregulated] columns gene id/logfc/p-value/symbol -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM8_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "ec2a76537521d1845553fcf57481b71a32cf4e8e70826bd399f537cc01020fbf"
+      },
+      "caption": "Supplementary Data 5",
+      "size_bytes": 96708,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM8_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[upregulated] columns bgratio/count/description/gene id -> enrichment results"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM9_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "2c3d185a278952bc848ebf93d83d1daa91835bb9254c9eeb63c53035be622a7c"
+      },
+      "caption": "Supplementary Data 6",
+      "size_bytes": 1110271,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM9_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[EP-upregulated] columns gene/logfc/p-value -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM10_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "b06df36a1fb38bb22e4f6a50c5af91b324ac247a8116005d9cb9cde0c276ca4a"
+      },
+      "caption": "Supplementary Data 7",
+      "size_bytes": 14774,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM10_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[cell clusters] columns cell/control/log2fc/pop -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM11_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:07:45+00:00",
+        "sha256": "fccf1876050e11a4dc37f31155b73cf1bbb8a15f128c0afbe61cc5c62fff9bba"
+      },
+      "caption": "Supplementary Data 8",
+      "size_bytes": 14306,
+      "path": "papers/10.1038_s41467-020-20358-y/files/41467_2020_20358_MOESM11_ESM.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[FIB subtype] columns con 1/con 2/con 3/con 4/con 5 matched no signature"
+    },
+    {
+      "file_id": "41467_2020_20358_MOESM12_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Reporting Summary",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Reporting Summary"
+    }
+  ],
+  "gaps": []
+}

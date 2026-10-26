@@ -1,0 +1,104 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1038/s41467-020-14936-3",
+    "pmcid": "PMC7052271",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "41467_2020_14936_MOESM1_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:51+00:00",
+        "sha256": "fbbf1153e78737ab28fcc7da20f08e80d16d007a33bd56dda2b13b3e76526895"
+      },
+      "caption": "Supplementary Information",
+      "size_bytes": 13572363,
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM1_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM2_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:51+00:00",
+        "sha256": "1770a85b4d9e8b2dc0c265fb26dcfc6be777c2dd81d74ce9189aa6a17d96184d"
+      },
+      "caption": "Supplementary Dataset 1",
+      "size_bytes": 549963,
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM2_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Variable genes clusters] columns avg_logfc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM3_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:51+00:00",
+        "sha256": "d029bede1d37491741ba57eaa6fba924a531b577d3d9fc4a786e1dbbc1258e08"
+      },
+      "caption": "Supplementary Dataset 2",
+      "size_bytes": 1064658,
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM3_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Variable genes clusters] columns avg_logfc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM4_ESM.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:51+00:00",
+        "sha256": "1760d92fb9237157eeb18f4808f46f5b9a8e5ed9f42e5690c68f708df71ab1e4"
+      },
+      "caption": "Supplementary Dataset 3",
+      "size_bytes": 1364336,
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM4_ESM.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Up Down] columns avg_logcpm/de/entrez/fdr -> differential expression"
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM5_ESM.pdf",
+      "media_type": "pdf",
+      "status": "skipped",
+      "retrieval": {
+        "route": "none",
+        "note": "publishing artefact by its own caption, not evidence"
+      },
+      "caption": "Reporting Summary",
+      "relevance": "irrelevant",
+      "relevance_note": "caption: Reporting Summary"
+    },
+    {
+      "file_id": "41467_2020_14936_MOESM6_ESM.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:51+00:00",
+        "sha256": "961f23b1d1721beff321cb39a3d6228707f2f932fb67d21e3d56447b3a1d9135"
+      },
+      "caption": "Description of Additional Supplementary Files",
+      "size_bytes": 63307,
+      "path": "papers/10.1038_s41467-020-14936-3/files/41467_2020_14936_MOESM6_ESM.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    }
+  ],
+  "gaps": []
+}

@@ -1,0 +1,397 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1172/jci.insight.153921",
+    "pmcid": "PMC8983148",
+    "license": {
+      "id": "CC-BY-4.0",
+      "redistributable": true,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z"
+    }
+  },
+  "files": [
+    {
+      "file_id": "jciinsight-7-153921-s253.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "faf18e79bef425aaa66b87fd2c45177b7e46dcfd5cfdce39ea39f95ce873590e"
+      },
+      "caption": "Supplemental data",
+      "size_bytes": 2450158,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s253.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "jciinsight-7-153921-s256.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "c97c3517402175ed7d833eb80f835d6bc6476b4a677f143564750587b4b39bbe"
+      },
+      "caption": "Supplemental table 3",
+      "size_bytes": 27229,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s256.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[SMCs_topmarkers] columns avg_log2fc/celltype/cluster/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s257.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "9aebafd3a5e138984fbde42de85648484f2176ff7052c0d2477f81c6f2dd895a"
+      },
+      "caption": "Supplemental table 4",
+      "size_bytes": 19518,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s257.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Stromals_topmarkers] columns avg_log2fc/celltype/cluster/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s258.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "1c09bbc21ecd4e5d4e998f89f73d776ff5fe99fc52c204969565798e7161418a"
+      },
+      "caption": "Supplemental table 5",
+      "size_bytes": 32560,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s258.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Macrophages_topmarkers] columns avg_log2fc/celltype/cluster/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s259.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "1f1713dcc3f7fe0bfefd1853ad5dc5dd2516de3ef7fed451626d78888c03a286"
+      },
+      "caption": "Supplemental table 6",
+      "size_bytes": 664404,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s259.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[list of DEGs (q<0.1)] columns basemean/cell_type/gene_name/kbid -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s260.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "9348ad386695bd29b9dd71646b334f7304ba57e3008af8766be880ef98ceefb1"
+      },
+      "caption": "Supplemental table 7",
+      "size_bytes": 17376,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s260.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[pathways_DEgenes_celltypes_role] columns 1/col4a1, col4a2, sdc4, itgb8, itgb1, itgav/collagen/ilc, monocyte, myofibroblast, smooth muscle cells-1/myofibroblast, stromal-1, stromal-2 matched no signature"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s261.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "5332b9eada86207d4b084f0f5880b39375c79dcfc184a4a93c02baef0205a0e4"
+      },
+      "caption": "Supplemental table 8",
+      "size_bytes": 51280,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s261.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Supplemental Table 8] columns avg_logfc/cluster/ensg/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s262.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "53a0ee66767d4658f614935b2319c1b9a023229009cb975ab4c5d91a76a3e85b"
+      },
+      "caption": "Supplemental table 9",
+      "size_bytes": 13634,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s262.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Quality metrics] columns # cell count/# genes detected per cell/# umis per cell/fraction reads in cells -> per-cell table"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s254.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "4ea34d14a0025bc212590670f7828cb02aec0b779b87c716a32b9d199ef688c6"
+      },
+      "caption": "Supplemental table 10",
+      "size_bytes": 1794534,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s254.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Supplemental Table 10] columns avg_log2fc/celltype/cluster/gene -> differential expression"
+    },
+    {
+      "file_id": "jciinsight-7-153921-s255.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:05:13+00:00",
+        "sha256": "0e8bd352c73b9eab654ef17f2dcba6affa9649d5d22f679aace1a0b72801ce46"
+      },
+      "caption": "Supplemental table 11",
+      "size_bytes": 13097,
+      "path": "papers/10.1172_jci.insight.153921/files/jciinsight-7-153921-s255.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Supplemental Table 11] columns cell type/gene/lfcse/log2fc -> differential expression"
+    }
+  ],
+  "gaps": [],
+  "prose": [
+    {
+      "file_id": "jciinsight-7-153921-s253.pdf",
+      "text_file": "papers/10.1172_jci.insight.153921/text/jciinsight-7-153921-s253.txt",
+      "n_chars": 53422,
+      "extractor": "pdf",
+      "evidence": "outline",
+      "sections": [
+        {
+          "heading": "**A Single-Cell Atlas of the Myometrium in Human Parturition**",
+          "char_start": 0,
+          "char_end": 1749,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "location"
+          ]
+        },
+        {
+          "heading": "**Provided as separate files:**",
+          "char_start": 1751,
+          "char_end": 3067,
+          "folds_in": false
+        },
+        {
+          "heading": "_**Study design**_",
+          "char_start": 3069,
+          "char_end": 3839,
+          "folds_in": false
+        },
+        {
+          "heading": "_Sample Collection_",
+          "char_start": 3841,
+          "char_end": 4597,
+          "folds_in": false
+        },
+        {
+          "heading": "_Hematoxylin & eosin staining_",
+          "char_start": 4599,
+          "char_end": 5072
+        },
+        {
+          "heading": "_Smooth muscle actin (SMA) immunohistochemistry_",
+          "char_start": 5074,
+          "char_end": 6367,
+          "folds_in": true,
+          "dimensions": [
+            "markers"
+          ]
+        },
+        {
+          "heading": "_Multiplex immunofluorescence_",
+          "char_start": 6369,
+          "char_end": 8408,
+          "folds_in": true,
+          "dimensions": [
+            "markers"
+          ]
+        },
+        {
+          "heading": "_Placental histopathological examination_",
+          "char_start": 8410,
+          "char_end": 8976,
+          "folds_in": false
+        },
+        {
+          "heading": "_Myometrial tissue dissociation_",
+          "char_start": 8978,
+          "char_end": 10299,
+          "folds_in": false
+        },
+        {
+          "heading": "_Cytospin preparations from myometrial cell suspensions_",
+          "char_start": 10301,
+          "char_end": 10845,
+          "folds_in": false
+        },
+        {
+          "heading": "_Single-cell GEM generation and library construction_",
+          "char_start": 10847,
+          "char_end": 12338,
+          "folds_in": false
+        },
+        {
+          "heading": "_RNA sequencing_",
+          "char_start": 12340,
+          "char_end": 13442,
+          "folds_in": false
+        },
+        {
+          "heading": "_1. Genotyping analysis_",
+          "char_start": 13444,
+          "char_end": 14021,
+          "folds_in": false
+        },
+        {
+          "heading": "_2. scRNA-seq data normalization and pre-processing_",
+          "char_start": 14023,
+          "char_end": 15977,
+          "folds_in": false
+        },
+        {
+          "heading": "_3. Cell type annotation_",
+          "char_start": 15979,
+          "char_end": 18756,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "_4. Differential gene expression for cell type analysis_",
+          "char_start": 18758,
+          "char_end": 19711,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "_5. Differential gene expression in parturition_",
+          "char_start": 19713,
+          "char_end": 20214
+        },
+        {
+          "heading": "_6. Gene ontology and pathway enrichment analysis of genes affected by parturiti",
+          "char_start": 20216,
+          "char_end": 21302,
+          "folds_in": true,
+          "dimensions": [
+            "function"
+          ]
+        },
+        {
+          "heading": "_7. Multivariate Adaptive Shrinkage (MASH) analysis of parturition associated ge",
+          "char_start": 21304,
+          "char_end": 22265,
+          "folds_in": false
+        },
+        {
+          "heading": "_8. Cell-cell communication analysis_",
+          "char_start": 22267,
+          "char_end": 24078,
+          "folds_in": true,
+          "dimensions": [
+            "function"
+          ]
+        },
+        {
+          "heading": "_9. Comparison to myometrial bulk transcriptomic studies at term pregnancy_",
+          "char_start": 24080,
+          "char_end": 24740,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "_10. Deconvolution analysis_",
+          "char_start": 24742,
+          "char_end": 26070,
+          "folds_in": false
+        },
+        {
+          "heading": "_11. Comparison to maternal peripheral blood bulk transcriptomic longitudinal da",
+          "char_start": 26072,
+          "char_end": 26912,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "function"
+          ]
+        },
+        {
+          "heading": "_12. Comparison to maternal peripheral blood bulk transcriptomic studies at term",
+          "char_start": 26914,
+          "char_end": 27428
+        },
+        {
+          "heading": "_13. Statistical analysis of the demographic data_",
+          "char_start": 27430,
+          "char_end": 27709
+        },
+        {
+          "heading": "**REFERENCES**",
+          "char_start": 27711,
+          "char_end": 36453,
+          "folds_in": false
+        },
+        {
+          "heading": "**SMC-1**",
+          "char_start": 36455,
+          "char_end": 39398,
+          "folds_in": true,
+          "dimensions": [
+            "names"
+          ]
+        },
+        {
+          "heading": "**B**",
+          "char_start": 39400,
+          "char_end": 39789
+        },
+        {
+          "heading": "**C**",
+          "char_start": 39791,
+          "char_end": 41796,
+          "folds_in": true,
+          "dimensions": [
+            "names"
+          ]
+        },
+        {
+          "heading": "KEGG database",
+          "char_start": 41798,
+          "char_end": 53422,
+          "folds_in": true,
+          "dimensions": [
+            "function"
+          ]
+        }
+      ],
+      "description": "Supplementary document for a single-cell atlas of human myometrium during parturition. Contains cell type annotation methods, differential expression analysis, and pathway/functional characterization.",
+      "folds_in": true,
+      "folds_in_note": "Cell type annotation section [15979:18756] is present (the mandatory exception to dropping methods). Two named cell types appear as headings (SMC-1, C). Multiple characterization sections (differential gene expression, pathway enrichment, cell-cell communication, comparative transcriptomics) carry markers and function dimensions. Working from outline only; no text was seen."
+    }
+  ]
+}

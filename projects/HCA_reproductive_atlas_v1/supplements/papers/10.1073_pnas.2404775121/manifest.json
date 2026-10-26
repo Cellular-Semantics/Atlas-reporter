@@ -1,0 +1,402 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1073/pnas.2404775121",
+    "pmcid": "PMC11551439",
+    "license": {
+      "id": "CC-BY-NC-ND-4.0",
+      "redistributable": false,
+      "source": "europepmc",
+      "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "asserted_at": "2026-10-15T09:15:37Z",
+      "note": "NonCommercial-NoDerivatives. The store holds chunked and extracted text, which are derivative works, so ND rules them out however NC is read here."
+    }
+  },
+  "files": [
+    {
+      "file_id": "pnas.2404775121.sapp.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "df3117339d8df2f64cf7d5866a036d9f80a140aad1f11d230298c316bdb793e3"
+      },
+      "caption": "Appendix 01 (PDF)",
+      "size_bytes": 2639172,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sapp.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "pnas.2404775121.sd01.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "d84ddda7000dfb6872f78495abea765fbbde0479eaa4eb5c54c76c9773e226a3"
+      },
+      "caption": "Dataset S01 (XLSX)",
+      "size_bytes": 15346,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd01.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[Dataset S1A] columns d1/d2/d3/d4 -> sample metadata"
+    },
+    {
+      "file_id": "pnas.2404775121.sd02.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "ac0b32f3b28bd9529e47442c1ea1382f6047cfa6e5f3ddfc21f1c31389b406c2"
+      },
+      "caption": "Dataset S02 (XLSX)",
+      "size_bytes": 13914109,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd02.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Dataset 2A Major cell types] columns 1/2/3/4/4_1 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd03.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "30eb61983ce31a14a899050a85623ab00f03cb33309e8c98cdde930b662eb06c"
+      },
+      "caption": "Dataset S03 (XLSX)",
+      "size_bytes": 704125,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd03.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[3B major cell type markers] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "pnas.2404775121.sd04.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "af8ee792a54077cdf8769002945861364dd54957b70a2e69d1b2fc7b71a1b019"
+      },
+      "caption": "Dataset S04 (XLSX)",
+      "size_bytes": 39031,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd04.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[4A Cycle -Major type counts] columns 1/2/3/4 -> sample metadata"
+    },
+    {
+      "file_id": "pnas.2404775121.sd05.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "c7f6bfcdc415d70e74893628a578e7447b44f8f5eea8ed010a1b68472c4dc3ed"
+      },
+      "caption": "Dataset S05 (XLSX)",
+      "size_bytes": 22267863,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd05.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[5A Major cell type centroids] columns 1_l_endo/2_endo/3_stro/4_1_cili_epi/4_epi matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd06.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "ecff2fa5c1f701bd5f55edf26832844247ec5031a5bc7dea23691ca94371e299"
+      },
+      "caption": "Dataset S06 (XLSX)",
+      "size_bytes": 463272,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd06.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[6A Major cell type DEGs] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "pnas.2404775121.sd07.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "0ad50f8d767089a34ae3bffdff6ad335ab3d7b076a8dbf849e16ae3398265992"
+      },
+      "caption": "Dataset S07 (XLSX)",
+      "size_bytes": 77653,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd07.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[7A 20Us C12 endo markers] columns 1_artery/2_endomt/3_pcv/4_tpcv/5_capillary matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd08.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "b5d04869d0c0b21182028a4009318d353fc0e7073b224b2e8d56672c7fe195de"
+      },
+      "caption": "Dataset S08 (XLSX)",
+      "size_bytes": 657120,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd08.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[8A Centroid rank correlations] columns 3_1/3_2/3_3/3_4/3_5 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd09.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "046ef6a52891fdd8b807112a6406c817d51f060e660c8febf5cb557675f3474c"
+      },
+      "caption": "Dataset S09 (XLSX)",
+      "size_bytes": 593591,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd09.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[9A Centroid rank correlations] columns 4_1/4_2/4_3/4_4/4_5 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd10.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "24d62861da4fdb59cb86020a13d386ca6580be88e6bbb700e822886affa23ece"
+      },
+      "caption": "Dataset S10 (XLSX)",
+      "size_bytes": 246083,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd10.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[10A Centroid rank correlations] columns 1/2_1/2_2/2_3/2_4 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd11.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "3e7a45b28bf94c84202ee8b1be02d5231346c1715db5b4de7eb8be29c7950700"
+      },
+      "caption": "Dataset S11 (XLSX)",
+      "size_bytes": 838926,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd11.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[11A Centroid rank correlations] columns 5_1/5_2/5_3/5_4/5_5 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd12.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "b7c2bdb056258a9a0754fafd4c5dd1be9968da2ff71b0415bfa4f12d0e3cb6c6"
+      },
+      "caption": "Dataset S12 (XLSX)",
+      "size_bytes": 162842,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd12.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[TF575-endo] columns 2_1/2_2/2_3/2_4/2_5 matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd13.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "41958d5ae70f35d25f691c691ea6df1380e5a94c42e766d219fdae74e4e6cd6f"
+      },
+      "caption": "Dataset S13 (XLSX)",
+      "size_bytes": 45222598,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd13.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[Stro-cycle-endoOnly] columns 3_1 early sec/3_1 mid-late sec/3_1 prolif/3_10 early sec/3_10 mid-late sec matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd14.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "8955b845104e39549af1e2d135c67fd949f45eabf7f4a1ca13b2dbadfd134284"
+      },
+      "caption": "Dataset S14 (XLSX)",
+      "size_bytes": 80739221,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd14.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[C2-14DE] columns avg_log2fc 2_1 prolif vs early-sec/avg_log2fc 2_2 early-sec vs mid-late-sec/avg_log2fc 2_2 prolif vs early-sec/avg_log2fc 2_3 early-sec vs mid-late-sec -> differential expression"
+    },
+    {
+      "file_id": "pnas.2404775121.sd15.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "4cc9e346551f0e6514663f63337febf2f89e0054efdbadcfbb3c287327b8e563"
+      },
+      "caption": "Dataset S15 (XLSX)",
+      "size_bytes": 25885838,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd15.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[C2-14GSEA] columns missing in 14/nes 2_1 prolif vs early-sec/nes 2_2 early-sec vs mid-late-sec/nes 2_2 prolif vs early-sec/nes 2_3 early-sec vs mid-late-sec matched no signature"
+    },
+    {
+      "file_id": "pnas.2404775121.sd16.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:46+00:00",
+        "sha256": "ba32b0572dcdb1030469a24108cf3e6d040c5b248041625ff25547274c6b0150"
+      },
+      "caption": "Dataset S16 (XLSX)",
+      "size_bytes": 1467280,
+      "path": "papers/10.1073_pnas.2404775121/files/pnas.2404775121.sd16.xlsx",
+      "relevance": "unknown",
+      "relevance_note": "[stro33_phaseDE] columns x3_1.early.sec/x3_1.mid.late.sec/x3_1.prolif/x3_10.early.sec/x3_10.mid.late.sec matched no signature"
+    }
+  ],
+  "gaps": [],
+  "prose": [
+    {
+      "file_id": "pnas.2404775121.sapp.pdf",
+      "text_file": "papers/10.1073_pnas.2404775121/text/pnas.2404775121.sapp.txt",
+      "n_chars": 97534,
+      "extractor": "pdf",
+      "evidence": "outline",
+      "sections": [
+        {
+          "heading": "**Cellular heterogeneity and dynamics of the human uterus in healthy premenopaus",
+          "char_start": 0,
+          "char_end": 432,
+          "folds_in": true,
+          "dimensions": [
+            "location"
+          ]
+        },
+        {
+          "heading": "**This PDF file includes:**",
+          "char_start": 434,
+          "char_end": 538,
+          "folds_in": false
+        },
+        {
+          "heading": "**Supporting Materials and Methods**",
+          "char_start": 540,
+          "char_end": 8880,
+          "folds_in": false
+        },
+        {
+          "heading": "**Supporting Computational methods**",
+          "char_start": 8882,
+          "char_end": 15106,
+          "folds_in": false
+        },
+        {
+          "heading": "**Integrated analyses of 20-uterus donors by combining scRNAseq data from Garcia",
+          "char_start": 15108,
+          "char_end": 39557,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy",
+            "markers",
+            "location"
+          ]
+        },
+        {
+          "heading": "**SI Summaries and Discussions**",
+          "char_start": 39559,
+          "char_end": 60347,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy",
+            "markers",
+            "structure",
+            "function",
+            "location"
+          ]
+        },
+        {
+          "heading": "**Summary of cross-study annotation:**",
+          "char_start": 60349,
+          "char_end": 62167,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "**Supplemental References:**",
+          "char_start": 62169,
+          "char_end": 81821,
+          "folds_in": false
+        },
+        {
+          "heading": "**Dataset 1. Summary information of the five donors, uterus samples, and scRNA d",
+          "char_start": 81823,
+          "char_end": 82402,
+          "folds_in": false
+        },
+        {
+          "heading": "**Dataset 2. Gene expression centroids from the five-sample analysis.**",
+          "char_start": 82404,
+          "char_end": 83029,
+          "folds_in": false
+        },
+        {
+          "heading": "**Dataset 3. Markers for major cell types based on differential expression in th",
+          "char_start": 83031,
+          "char_end": 84030,
+          "folds_in": true,
+          "dimensions": [
+            "markers"
+          ]
+        },
+        {
+          "heading": "**Dataset 4: Metadata and cell counts by sample-subtype in the 20-sample joint a",
+          "char_start": 84032,
+          "char_end": 85126,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "**Dataset 5. Gene expression centroids from the 20-sample analysis.**",
+          "char_start": 85128,
+          "char_end": 85550,
+          "folds_in": false
+        },
+        {
+          "heading": "**Dataset 6. Markers for major cell types based on differential expression in th",
+          "char_start": 85552,
+          "char_end": 97534,
+          "folds_in": true,
+          "dimensions": [
+            "markers"
+          ]
+        }
+      ],
+      "description": "Supplementary material for a PNAS paper on cellular heterogeneity and dynamics in the human uterus. Includes integrated analyses of 20 uterus donors, cross-study annotation summaries, and marker genes for major cell types.",
+      "folds_in": true,
+      "folds_in_note": "Outline only; no text viewed. Judgment rests on section headings. High-value sections include annotation summaries (cell-type identification), integrated analyses, and marker datasets for major cell types. Methods sections (computational, lab) are ruled out. Characterisation sections kept as evidence for uterine cell-type identity, markers, and hierarchy."
+    }
+  ]
+}

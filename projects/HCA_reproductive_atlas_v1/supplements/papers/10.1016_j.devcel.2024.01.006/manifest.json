@@ -1,0 +1,508 @@
+{
+  "manifest_version": 1,
+  "paper": {
+    "doi": "10.1016/j.devcel.2024.01.006",
+    "pmcid": "PMC10898717",
+    "license": {
+      "id": "CC-BY-NC-ND-4.0",
+      "redistributable": false,
+      "source": "europepmc",
+      "url": "http://creativecommons.org/licenses/by-nc-nd/4.0/).",
+      "asserted_at": "2026-10-15T09:15:37Z",
+      "note": "NonCommercial-NoDerivatives. The store holds chunked and extracted text, which are derivative works, so ND rules them out however NC is read here."
+    }
+  },
+  "files": [
+    {
+      "file_id": "mmc1.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:09+00:00",
+        "sha256": "fcc1036a781da9f2948746ebb6c389d9f20411d5427312153ac52bb1e42fdd59"
+      },
+      "caption": "Document S1. Figures S1–S7",
+      "size_bytes": 3798899,
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc1.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    },
+    {
+      "file_id": "mmc2.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:09+00:00",
+        "sha256": "b95530e52ab9f5f89c7891bbab0f9d2feb45dcdfee31e515ff9448c4bce6594f"
+      },
+      "caption": "Table S1. Differentially expressed genes in human fetal male dataset, related to Figures 2, S1, and S2",
+      "size_bytes": 580304,
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc2.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[jasin_male_filtered_markers_mnn] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc3.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:09+00:00",
+        "sha256": "0e5b4ec261a8cccbd37bdbf98ff02a450e82df6b40839d241b455c7b09c90c04"
+      },
+      "caption": "Table S2. Differentially expressed genes in rete testis of different age groups, related to Figures 3 and S3",
+      "size_bytes": 32006,
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc3.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[rete.age.DEGs] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc4.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:09+00:00",
+        "sha256": "9c5f71f44e3590c7c808194d4a58e17f960f7e4b6cdb1f5d780f50c20b0664ce"
+      },
+      "caption": "Table S3. Differentially expressed genes in male mesonephric epithelial cells dataset, related to Figures 4 and S3",
+      "size_bytes": 203171,
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc4.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[male.meso.markergenes.res0.3] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc5.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:09+00:00",
+        "sha256": "8e9eea6100428a5b1bcf270a49ae9928f8afa395ad5e687495d037de634e9dbb"
+      },
+      "caption": "Table S4. Differentially expressed genes in human fetal female dataset, related to Figures 5 and S4",
+      "size_bytes": 492656,
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc5.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[jasin_female_filtered_markers_m] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc6.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:09+00:00",
+        "sha256": "b5b21bf96d48401cfa417384380ddb9d760c3e3f8f443d36ca3950cacf0cdba7"
+      },
+      "caption": "Table S5. Differentially expressed genes in female mesonephric epithelial cells dataset, related to Figures 6 and S5",
+      "size_bytes": 172499,
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc6.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[fmeso.markers.markergene.res.0.] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc7.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:09+00:00",
+        "sha256": "2891e816f562a7a5d94238bd486b1ae476e0f0b50f43280534c28593982c0cee"
+      },
+      "caption": "Table S6. Differentially expressed genes in 1T male rete and mesonephric epithelial cells dataset, related to Figures 7 and S6",
+      "size_bytes": 78666,
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc7.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[1T_male_rete_reproductive.tract] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc8.xlsx",
+      "media_type": "xlsx",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:09+00:00",
+        "sha256": "683936767f47757d92aee0f1fcd69e883fb472b1a12287bd50c3a42289658e96"
+      },
+      "caption": "Table S7. Differentially expressed genes in 1T female rete and mesonephric epithelial cells dataset, related to Figures 7 and S6",
+      "size_bytes": 86504,
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc8.xlsx",
+      "relevance": "relevant",
+      "relevance_note": "[1T_female_rete_reproductive.tra] columns avg_log2fc/cluster/gene/p_val -> differential expression"
+    },
+    {
+      "file_id": "mmc9.pdf",
+      "media_type": "pdf",
+      "status": "present",
+      "retrieval": {
+        "route": "europepmc_bundle",
+        "retrieved_at": "2026-09-06T19:08:09+00:00",
+        "sha256": "04ec7e7b1249acb1574040889b64aaf5931c7b18a4d9cdbf96bec0bf74426cb5"
+      },
+      "caption": "Document S2. Article plus supplemental information",
+      "size_bytes": 17787196,
+      "path": "papers/10.1016_j.devcel.2024.01.006/files/mmc9.pdf",
+      "relevance": "unknown",
+      "relevance_note": "not inspected: pdf — only spreadsheet and delimited files are read for columns. Its content may still be useful."
+    }
+  ],
+  "gaps": [
+    {
+      "file_id": "mmc1.pdf",
+      "reason": "prose|mmc1.pdf| was not characterised: no verdict was returned for it. It is unread, not empty — read it or fold it in rather than dropping it.",
+      "action": "read papers/10.1016_j.devcel.2024.01.006/text/mmc1.txt and record what it contains"
+    }
+  ],
+  "prose": [
+    {
+      "file_id": "mmc1.pdf",
+      "text_file": "papers/10.1016_j.devcel.2024.01.006/text/mmc1.txt",
+      "n_chars": 5824,
+      "extractor": "pdf",
+      "evidence": "full_text",
+      "sections": [
+        {
+          "heading": "reproductive tract by single-cell transcriptomics",
+          "char_start": 0,
+          "char_end": 5824
+        }
+      ],
+      "description": "Legends for Supplementary Figures S1-S7 of a human fetal gonad and reproductive tract study, describing UMAP cluster plots, per-donor cell counts, immunofluorescence validation of markers, and DEG/GO heatmaps. S7 is a summary of every marker validated by immunofluorescence, separated by cell type, so it is the quickest route from a marker to its protein-level evidence.",
+      "folds_in": true,
+      "folds_in_note": "Read whole. Carries names (rete testis, rete ovarii, pre-granulosa, mesonephric epithelial cells, and cluster IDs mCL11, fCL4, m.meCL0/1/3/5, f.meCL0/1/4), markers validated by immunofluorescence, and their tissue location."
+    },
+    {
+      "file_id": "mmc9.pdf",
+      "text_file": "papers/10.1016_j.devcel.2024.01.006/text/mmc9.txt",
+      "n_chars": 89766,
+      "extractor": "pdf",
+      "evidence": "outline",
+      "sections": [
+        {
+          "heading": "Authors",
+          "char_start": 0,
+          "char_end": 118
+        },
+        {
+          "heading": "Correspondence",
+          "char_start": 120,
+          "char_end": 170
+        },
+        {
+          "heading": "In brief",
+          "char_start": 172,
+          "char_end": 540
+        },
+        {
+          "heading": "Highlights",
+          "char_start": 542,
+          "char_end": 1007
+        },
+        {
+          "heading": "Characterization of the human fetal gonad and reproductive tract by single-cell ",
+          "char_start": 1009,
+          "char_end": 1876
+        },
+        {
+          "heading": "SUMMARY",
+          "char_start": 1878,
+          "char_end": 2835,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "function",
+            "location",
+            "markers"
+          ]
+        },
+        {
+          "heading": "INTRODUCTION",
+          "char_start": 2837,
+          "char_end": 8826,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "location",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "Human fetal rete testis expresses PAX8 and KRT19 and can contain germ cells",
+          "char_start": 8828,
+          "char_end": 9136
+        },
+        {
+          "heading": "Resource",
+          "char_start": 9138,
+          "char_end": 10973,
+          "folds_in": false
+        },
+        {
+          "heading": "Identification of main cell types in human fetal testis and male reproductive tr",
+          "char_start": 10975,
+          "char_end": 12549,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy",
+            "location"
+          ]
+        },
+        {
+          "heading": "Resource",
+          "char_start": 12551,
+          "char_end": 18703,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "markers",
+            "location"
+          ]
+        },
+        {
+          "heading": "Transcriptional analysis of fetal rete testis cells",
+          "char_start": 18705,
+          "char_end": 20996,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "function",
+            "location"
+          ]
+        },
+        {
+          "heading": "Transcriptional analysis of the male mesonephroi and epididymal tubular compartm",
+          "char_start": 20998,
+          "char_end": 25503,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "location",
+            "function"
+          ]
+        },
+        {
+          "heading": "Identification of main cell types in human fetal ovary and female reproductive t",
+          "char_start": 25505,
+          "char_end": 29212,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "hierarchy",
+            "location"
+          ]
+        },
+        {
+          "heading": "Transcriptional analysis of female mesonephroi and fallopian tube tubular compar",
+          "char_start": 29214,
+          "char_end": 31353,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "location",
+            "function"
+          ]
+        },
+        {
+          "heading": "Resource",
+          "char_start": 31355,
+          "char_end": 33502,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "location",
+            "function"
+          ]
+        },
+        {
+          "heading": "Comparison of the first trimester reproductive tract between sexes",
+          "char_start": 33504,
+          "char_end": 38020,
+          "folds_in": true,
+          "dimensions": [
+            "location",
+            "hierarchy",
+            "function"
+          ]
+        },
+        {
+          "heading": "DISCUSSION",
+          "char_start": 38022,
+          "char_end": 41034,
+          "folds_in": true,
+          "dimensions": [
+            "function",
+            "markers",
+            "hierarchy"
+          ]
+        },
+        {
+          "heading": "Resource",
+          "char_start": 41036,
+          "char_end": 45641,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "location",
+            "function"
+          ]
+        },
+        {
+          "heading": "Limitations of the study",
+          "char_start": 45643,
+          "char_end": 45822
+        },
+        {
+          "heading": "STAR+METHODS",
+          "char_start": 45824,
+          "char_end": 47301,
+          "folds_in": false
+        },
+        {
+          "heading": "SUPPLEMENTAL INFORMATION",
+          "char_start": 47303,
+          "char_end": 47397
+        },
+        {
+          "heading": "ACKNOWLEDGMENTS",
+          "char_start": 47399,
+          "char_end": 48403,
+          "folds_in": false
+        },
+        {
+          "heading": "AUTHOR CONTRIBUTIONS",
+          "char_start": 48405,
+          "char_end": 48952
+        },
+        {
+          "heading": "DECLARATION OF INTERESTS",
+          "char_start": 48954,
+          "char_end": 49107
+        },
+        {
+          "heading": "REFERENCES",
+          "char_start": 49109,
+          "char_end": 53935,
+          "folds_in": false
+        },
+        {
+          "heading": "Resource",
+          "char_start": 53937,
+          "char_end": 67366,
+          "folds_in": true,
+          "dimensions": [
+            "names",
+            "markers",
+            "location"
+          ]
+        },
+        {
+          "heading": "KEY RESOURCES TABLE",
+          "char_start": 67368,
+          "char_end": 70062,
+          "folds_in": true,
+          "dimensions": [
+            "names"
+          ]
+        },
+        {
+          "heading": "**ll**",
+          "char_start": 70064,
+          "char_end": 73075,
+          "folds_in": false
+        },
+        {
+          "heading": "Resource",
+          "char_start": 73077,
+          "char_end": 74981,
+          "folds_in": false
+        },
+        {
+          "heading": "Lead contact",
+          "char_start": 74983,
+          "char_end": 75165
+        },
+        {
+          "heading": "Materials availability",
+          "char_start": 75167,
+          "char_end": 75215
+        },
+        {
+          "heading": "Data and code availability",
+          "char_start": 75217,
+          "char_end": 75638
+        },
+        {
+          "heading": "Ethical statement and sample collection",
+          "char_start": 75640,
+          "char_end": 76499
+        },
+        {
+          "heading": "Preparation and sequencing of single-cell RNA-Seq libraries",
+          "char_start": 76501,
+          "char_end": 78348,
+          "folds_in": false
+        },
+        {
+          "heading": "Association with disease-related genes",
+          "char_start": 78350,
+          "char_end": 78657
+        },
+        {
+          "heading": "Immunofluorescence",
+          "char_start": 78659,
+          "char_end": 80173,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "location"
+          ]
+        },
+        {
+          "heading": "Image analysis",
+          "char_start": 80175,
+          "char_end": 80492
+        },
+        {
+          "heading": "Processing and analysis of single cell RNA-Seq data",
+          "char_start": 80494,
+          "char_end": 81319
+        },
+        {
+          "heading": "Resource",
+          "char_start": 81321,
+          "char_end": 82714,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "location",
+            "function"
+          ]
+        },
+        {
+          "heading": "Differential gene expression analysis and GO term enrichment",
+          "char_start": 82716,
+          "char_end": 83940,
+          "folds_in": false
+        },
+        {
+          "heading": "reproductive tract by single-cell transcriptomics",
+          "char_start": 83942,
+          "char_end": 89766,
+          "folds_in": true,
+          "dimensions": [
+            "markers",
+            "location",
+            "function"
+          ]
+        }
+      ],
+      "description": "Supplementary material describing identification and transcriptional characterization of cell types in human fetal reproductive tracts (testis and ovary), with developmental and comparative sex-specific analysis.",
+      "folds_in": true,
+      "folds_in_note": "Outline view only; headings explicitly referencing cell-type identification and transcriptional analysis of fetal reproductive tissues indicate substantial content about names, location, markers, and function. Sections labeled 'Identification of main cell types' are direct annotation/identification hits. Generic 'Resource' section headings are kept under ambiguity (outline omits small sections; without text, cannot rule these out as methods-only). Methods sections involving pure sequencing protocol or differential-expression calculation are dropped; Immunofluorescence is kept (could be marker validation)."
+    }
+  ]
+}
